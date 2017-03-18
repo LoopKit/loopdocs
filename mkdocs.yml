@@ -1,0 +1,7 @@
+site_name: Loop Docs
+theme: flatly
+
+pages:
+- 'index.md'
+- 'requirements.md'
+- 'installing.md'
