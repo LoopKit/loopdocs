@@ -112,7 +112,7 @@ Dexcom G5 receives CGM data directly to the iPhone via bluetooth and the Dexcom 
 
 Dexcom G4 transmits CGM data to a Dexcom G4 Share Receiver.  The receiver, in turn, connects to the Dexcom Share2 app on your iPhone via Bluetooth.  The Share2 app uploads CGM data to the Dexcom servers.  With a Dexcom G4 Share system, Loop can be run offline.
 
-### Medtronic CGM <img src="img/enlite.png" width="150" alt="Enlite">
+### Medtronic CGM <img src="../img/enlite.png" width="150" alt="Enlite">
 
 The Minimed Enlite CGM, available with the Medtronic 523/723 and 554/754, wirelessly sends blood glucose readings to the pump.  Loop can read the Medtronic CGM data directly from the pump using the RileyLink.  This solution can be used with Loop offline.
 
