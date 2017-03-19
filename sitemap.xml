@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-03-18</lastmod>
+     <lastmod>2017-03-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/requirements/</loc>
-     <lastmod>2017-03-18</lastmod>
+     <lastmod>2017-03-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,9 +20,37 @@
     
     <url>
      <loc>/installing/</loc>
-     <lastmod>2017-03-18</lastmod>
+     <lastmod>2017-03-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+        
+    <url>
+     <loc>/algorithm/overview/</loc>
+     <lastmod>2017-03-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/algorithm/prediction/</loc>
+     <lastmod>2017-03-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/algorithm/temp_basal/</loc>
+     <lastmod>2017-03-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/algorithm/bolus/</loc>
+     <lastmod>2017-03-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>

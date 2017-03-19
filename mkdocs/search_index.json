@@ -204,6 +204,76 @@
             "location": "/installing/#commit-to-github", 
             "text": "Optional Step:  If you would like to commit customizations back into your GitHub repository, you can do that quite easily IF you used the GitHub desktop client to get your Loop source code.  The advantage of doing this is that when Loop releases a new version, you can use GitHub to update your Loop\u2019s code to the new version without needing to redo your code customizations.  You will also have a copy of your customized Loop code available online if you need to do a Loop app rebuild while away from home.  After you\u2019ve made your customizations to your Loop code, go to the XCode Source Control menu and choose \u201cCommit\u201d.   Once you have committed the changes, you will be able to see the changes highlighted in your GitHub desktop client   Finally, go to the same Source Control menu in XCode that you just used to \u201cCommit\u201d and this time choose \u201cPush\u201d.  This will push your code customizations up to your GitHub repository.  You can confirm this by finding the Loop.xcconfig file and looking at the MAIN_APP_BUNDLE_IDENTIFIER.  It should no longer say  com.loopkit .", 
             "title": "Commit to GitHub"
+        }, 
+        {
+            "location": "/algorithm/overview/", 
+            "text": "Overview\n\n\nLoop\u2019s algorithm for adjusting insulin delivery is oriented around making a glucose prediction.  Every five minutes, triggered by new BG data, it generates a new prediction.  Both \nbolus recommendations\n and \ntemporary basal rates\n are set based on this prediction.\n\n\nTerminology\n\n\nThis graph and legend illustrates terms commonly used in discussing Loop's algorithm,\nand shows them in the context of historical and forecasted BG in a style similar to the\nstatus screen of Loop.\n\n\n\n\n\n\nInsulin Action Duration\nA configuration value that provides an estimate of how long insulin stays active after delivery.\n\n\nTarget Range\n\n\nThis is the low and high BG values that Loop will attempt to keep you between.\n\n\nPredicted Glucose\n\n\nLoop makes a prediction of glucose values out for a length of time equal to your Insulin Action Duration.\n\n\nEventual BG\n\n\nThe last value of the prediction.\n\n\nMinimum BG\n\n\nThe lowest glucose value at any point in time within the prediction.\n\n\nMinimum BG Guard\n\n\nA configuration value below which Loop will suspend all insulin delivery.\n\n\nCGM Data\n\n\nActual glucose measurements made by a continuous glucose monitor.\n\n\nInsulin Sensitivity\n\n\nA configuration value that provides an estimate of how much blood glucose will drop given a unit of insulin.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/algorithm/overview/#overview", 
+            "text": "Loop\u2019s algorithm for adjusting insulin delivery is oriented around making a glucose prediction.  Every five minutes, triggered by new BG data, it generates a new prediction.  Both  bolus recommendations  and  temporary basal rates  are set based on this prediction.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/algorithm/overview/#terminology", 
+            "text": "This graph and legend illustrates terms commonly used in discussing Loop's algorithm,\nand shows them in the context of historical and forecasted BG in a style similar to the\nstatus screen of Loop.    Insulin Action Duration A configuration value that provides an estimate of how long insulin stays active after delivery.  Target Range  This is the low and high BG values that Loop will attempt to keep you between.  Predicted Glucose  Loop makes a prediction of glucose values out for a length of time equal to your Insulin Action Duration.  Eventual BG  The last value of the prediction.  Minimum BG  The lowest glucose value at any point in time within the prediction.  Minimum BG Guard  A configuration value below which Loop will suspend all insulin delivery.  CGM Data  Actual glucose measurements made by a continuous glucose monitor.  Insulin Sensitivity  A configuration value that provides an estimate of how much blood glucose will drop given a unit of insulin.", 
+            "title": "Terminology"
+        }, 
+        {
+            "location": "/algorithm/prediction/", 
+            "text": "Glucose Prediction\n\n\nLoop makes a new glucose prediction every five minutes by computing the effects\nof insulin that has been administered from the pump, and carbohydrate records that\nhave been entered into Loop. Two additional terms, glucose momentum, and optionally\nretrospective correction will also be used.\n\n\nYou can see the individual contributions of these effects by tapping on the\npredicted glucose graph on Loop's status screen.\n\n\nThis section needs to be fleshed out with details of how insulin and carb\neffects are calculated, and how momentum and retrospective correction work. For\nnow, refer to:\n\n\n\n\nCarbStore.getGlucoseEffects()\n\n\nDoseStore.getGlucoseEffects()\n\n\nGlucoseStore.getRecentMomentumEffect()\n\n\nLoopDataManager.updateRetrospectiveGlucoseEffect()", 
+            "title": "Glucose Prediction"
+        }, 
+        {
+            "location": "/algorithm/prediction/#glucose-prediction", 
+            "text": "Loop makes a new glucose prediction every five minutes by computing the effects\nof insulin that has been administered from the pump, and carbohydrate records that\nhave been entered into Loop. Two additional terms, glucose momentum, and optionally\nretrospective correction will also be used.  You can see the individual contributions of these effects by tapping on the\npredicted glucose graph on Loop's status screen.  This section needs to be fleshed out with details of how insulin and carb\neffects are calculated, and how momentum and retrospective correction work. For\nnow, refer to:   CarbStore.getGlucoseEffects()  DoseStore.getGlucoseEffects()  GlucoseStore.getRecentMomentumEffect()  LoopDataManager.updateRetrospectiveGlucoseEffect()", 
+            "title": "Glucose Prediction"
+        }, 
+        {
+            "location": "/algorithm/temp_basal/", 
+            "text": "Temp Basal Adjustments\n\n\nIf blood glucose is predicted to stray outside of the desired target range, Loop will adjust the basal rate temporarily in an attempt to keep actual blood glucose in range.  To illustrate how it does this, we\u2019ll go through a few examples.\n\n\nEventual BG Above Target Range\n\n\n\n\nWhen eventual BG is predicted to go above the current target range, Loop will calculate a delta from eventual bg to the midpoint of the target range.  Using the currently scheduled insulin sensitivity factor, loop calculates a temporary basal rate above your currently scheduled basal rate that would deliver, over 30 minutes, enough insulin to bring glucose levels back into range, capped at the max basal rate.\n\n\nEventual BG Below Target Range\n\n\n\n\nWhen eventual BG is predicted to go below the current target range, Loop will calculate a delta from eventual bg to the midpoint of the target range.  Using the currently scheduled insulin sensitivity factor, loop calculates a temporary basal rate below your currently scheduled basal rate that would reduce insulin delivery, over 30 minutes, enough to bring glucose levels back into range.  It will reduce delivery to zero if needed.\n\n\nTemporary Excursion Below Range\n\n\n\n\nIf the prediction has a temporary excursion below range, but Eventual BG is in range, Loop will revert to using your normal basal schedule, as long as Minimum BG is above the guard.\n\n\nMinimum BG Below Minimum BG Guard\n\n\n\n\nIf Minimum BG drops below Minimum BG Guard, Loop will zero temp your pump regardless of where Eventual BG is.", 
+            "title": "Temp Basal Adjustments"
+        }, 
+        {
+            "location": "/algorithm/temp_basal/#temp-basal-adjustments", 
+            "text": "If blood glucose is predicted to stray outside of the desired target range, Loop will adjust the basal rate temporarily in an attempt to keep actual blood glucose in range.  To illustrate how it does this, we\u2019ll go through a few examples.", 
+            "title": "Temp Basal Adjustments"
+        }, 
+        {
+            "location": "/algorithm/temp_basal/#eventual-bg-above-target-range", 
+            "text": "When eventual BG is predicted to go above the current target range, Loop will calculate a delta from eventual bg to the midpoint of the target range.  Using the currently scheduled insulin sensitivity factor, loop calculates a temporary basal rate above your currently scheduled basal rate that would deliver, over 30 minutes, enough insulin to bring glucose levels back into range, capped at the max basal rate.", 
+            "title": "Eventual BG Above Target Range"
+        }, 
+        {
+            "location": "/algorithm/temp_basal/#eventual-bg-below-target-range", 
+            "text": "When eventual BG is predicted to go below the current target range, Loop will calculate a delta from eventual bg to the midpoint of the target range.  Using the currently scheduled insulin sensitivity factor, loop calculates a temporary basal rate below your currently scheduled basal rate that would reduce insulin delivery, over 30 minutes, enough to bring glucose levels back into range.  It will reduce delivery to zero if needed.", 
+            "title": "Eventual BG Below Target Range"
+        }, 
+        {
+            "location": "/algorithm/temp_basal/#temporary-excursion-below-range", 
+            "text": "If the prediction has a temporary excursion below range, but Eventual BG is in range, Loop will revert to using your normal basal schedule, as long as Minimum BG is above the guard.", 
+            "title": "Temporary Excursion Below Range"
+        }, 
+        {
+            "location": "/algorithm/temp_basal/#minimum-bg-below-minimum-bg-guard", 
+            "text": "If Minimum BG drops below Minimum BG Guard, Loop will zero temp your pump regardless of where Eventual BG is.", 
+            "title": "Minimum BG Below Minimum BG Guard"
+        }, 
+        {
+            "location": "/algorithm/bolus/", 
+            "text": "Bolus Recommendations\n\n\nLoop also uses the forecast to generate recommendations for bolus amounts. Carbs are not directly used in bolus calculations, but rather indirectly through the forecast. After carbs are entered, the forecast is updated using the carb amounts, and then a recommendation is generated using the forecast.\n\n\nThe forecast used for bolusing is slightly different than the forecast used for adjust temp basals in that positive BG momentum is not included.\n\n\nEventual BG Above Target Range\n\n\n\n\nA bolus recommendation is given if Eventual BG is above Target Range.  The delta between Eventual BG and the top of the Target Range is used, along with your current Insulin Sensitivity to calculate the recommendation.", 
+            "title": "Bolus Recommendations"
+        }, 
+        {
+            "location": "/algorithm/bolus/#bolus-recommendations", 
+            "text": "Loop also uses the forecast to generate recommendations for bolus amounts. Carbs are not directly used in bolus calculations, but rather indirectly through the forecast. After carbs are entered, the forecast is updated using the carb amounts, and then a recommendation is generated using the forecast.  The forecast used for bolusing is slightly different than the forecast used for adjust temp basals in that positive BG momentum is not included.", 
+            "title": "Bolus Recommendations"
+        }, 
+        {
+            "location": "/algorithm/bolus/#eventual-bg-above-target-range", 
+            "text": "A bolus recommendation is given if Eventual BG is above Target Range.  The delta between Eventual BG and the top of the Target Range is used, along with your current Insulin Sensitivity to calculate the recommendation.", 
+            "title": "Eventual BG Above Target Range"
         }
     ]
 }
