@@ -13,9 +13,9 @@ The installation of Carthage has a few different ways it can be done, but the ea
 
 [Carthage.pkg download](https://github.com/Carthage/Carthage/releases/download/0.18.1/Carthage.pkg)       
 
-Double-click on the download and follow the directions to install (basically give your computer’s password and it does the rest).  Done.  Nothing more needs to happen with Carthage (it runs in the background).
-
-
+Find the downloaded `carthage.pkg` in your Downloads folder (option-command-L while in Finder will bring up your Downloads folder).  Double-click the file and follow the directions to install (basically give your computer’s password and it does the rest).  Done.  Nothing more needs to happen with Carthage (it runs in the background).
+</br>
+</br>
 
 IF you have problems with that method, you can use the “Homebrew method”.  And here’s how it is done:
 Open the Terminal application on your Apple computer (it is located in the Utilities application folder)
@@ -39,20 +39,20 @@ You’ll need to obtain the Loop’s source code in order to build the app on yo
 
 {Note: What’s the disadvantage of the Super Easy option below?  Any customizations you do in XCode will remain on your local computer only.  If Loop’s source code updates to a new version, you will have to re-enter your customizations if/when you decide to update your Loop to subsequent versions.  However, most customizations are probably going to be fairly quick and easy to redo, just like they were the first time.}
 
-### Direct Download (Super Easy)
+### Option 1: Direct Download (Super Easy)
 
 If you click on the link below, a copy of the Loop source code’s master branch will be downloaded to your downloads folder.
 
 [Loop Master branch](https://github.com/LoopKit/Loop/archive/master.zip)
 
 
-### Clone with Terminal (Sorta easy)
+### Option 2: Clone with Terminal (Sorta easy)
 
 Open Terminal Application, copy and paste the line below.  This will download a clone of the master branch to your root directory of your computer user account:
 
 `git clone https://github.com/LoopKit/Loop.git`
 
-### GitHub Desktop, Fork and Pull the Repo (Advanced)
+### Option 3: GitHub Desktop, Fork and Pull the Repo (Advanced)
 
 Login to your GitHub account and fork a copy of the [Loop repository](https://github.com/LoopKit/Loop).  
 
