@@ -28,7 +28,7 @@ There will be a prompt asking if you want to continue (press return to continue,
 
 Type `brew update` and press return.
 
-Type `brew install carthage` (without the quotes) and press return.
+Type `brew install carthage` and press return.
 
 You can close the Terminal application now.  You’re done with it.  Phew.
 
@@ -133,7 +133,7 @@ Finally, you need to make sure to sign all FOUR “targets” to the application
 ![Targets View](img/target_view.jpg)
 
 ********************************
-<b>At this point in the process, you should make any custom configurations to your Loop app before you finish with the installation of Loop on your iPhone.  If you want to make any of the customizations yourself, the step-by-step instructions are provided.  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.</b>
+<b>At this point in the process, you should make any custom configurations to your Loop app before you finish with the installation of Loop on your iPhone.  If you want to make any of the customizations yourself, the step-by-step instructions are provided below (or by clicking on the link to the left).  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.</b>
 ********************************
 
 All done with customizations? Let’s finish the installation of the Loop app onto your iPhone.  Select your device and then press the “play” button (or build button) to start XCode on its way.  [You may be prompted to add the iPhone to your Developer Account...go ahead and do so.]  You’ll see the progression of the build in the status window.  If the build is successful, it will say “finished running Loop” in the status bar.  If the build fails, it will show you red error alerts and you can read what the failure was.  Yellow error alerts do not cause the build to fail, those are just warnings.
@@ -150,3 +150,88 @@ You can confirm Loop has installed on your phone simply by looking on the iphone
 CONGRATS!  YOU JUST INSTALLED LOOP!
 
 ...
+
+## Code Customizations
+Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.
+
+<b>[Note: To help you find the Line numbers in XCode, it may be helpful to turn them on now.  Go to XCode Preferences, under Text Editing, click the box to Show Line Numbers.  Every effort will be made to update the line numbers as the code is updated periodically, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.]</b>
+
+### Default Carb Absorption Times
+
+<img style="float: right;" width="200" src="../img/carb_screen.png">
+
+Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <i>Think Like A Pancreas</i> by Gary Scheiner.  Currently the lollipop icon is set for 120 minutes, taco icon for 180 minutes, and pizza icon for 240 minutes.  These default values may not work for everyone, you will need to find what works for you.
+
+You can modify these defaults to suit your needs, however it would be best to test your own carb absorption patterns before necessarily adjusting the defaults.  You can always modify these after you’ve had some Loop experience and simply reinstall the Loop.  (after all, you’re a pro at that now)  Section 6 provides some examples of analyzing meal and Loop behaviors to determine if your carb absorption times are accurate.
+
+If you would like to modify those defaults, you can do so in the DeviceDataManager.swift Line 1040.  Note, the times are in hours, not minutes, in the code.
+
+![Xcode Carb Abs Time changes](img/carb_times.jpg)
+
+### Loop Logo
+If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/) and just drag and drop your source image. The site will email you a zip file.  Double click the zip file, choose the “ios” folder, and copy the contents of the Appicon.appiconset as shown highlighted below.
+
+![Appicon download](img/appicon1.jpg)
+
+Now navigate to the corresponding Loop folder as shown below.  Replace the contents of the Appicon.appiconset with your copied images.
+
+![Appicon to asset folder](img/appicon2.jpg)
+
+You can confirm the successful change by looking in XCode.  You should see your custom logo in the Appicon set now.  You will also likely see a yellow alert that there are “5 unassigned children”.  This alert will not prevent your app from building, it’s simply because the zipfile contained more sizes of images than Loop app uses.  You can just leave the unassigned images as is. 
+
+![Assets replaced](img/appicon3.jpg)
+
+### Loop Graph hours
+If you want the Loop’s graphs to display different time length than the default, you will go to the StatusTableViewController.swift line 181. This code keeps track of how many hours to display in total and how far into the future to display on your graphs. For total hours it does a calculation based upon your screen size and how granular to display between each segment. For how far forward to display, it currently uses your Insulin Action Duration setting to determine this (and if that number is missing for some reason it defaults to 4 hours). 
+
+Please note, using this will make it more difficult to see changes in other charts on your screen (like length of temp basal).
+
+![Chart Time](img/chart_history.jpg)
+
+Here are a couple of ways you could modify line 181 based on your specific wants:
+
+Want double the amount of total hours shown?
+`let historyHours = (totalHours * 2) - (dataManager.insulinActionDuration ?? TimeInterval(hours: 4)).hours`
+
+Want 1/2 of my Insulin Action Duration to show in the future?
+`let historyHours = totalHours - ((dataManager.insulinActionDuration / 2) ?? TimeInterval(hours: 4)).hours`
+
+Want 2.5 x the total time and only 2 hours forward within that?
+`let historyHours = (totalHours * 2.5) - (TimeInterval(hours: 2)).hours`
+
+### Workout Range Duration
+
+<img style="float: right;" width="200" src="../img/workout_default.png">
+If you’d like more than just the standard 1 or 2 hour duration for the Workout Range, you can add or modify the code to add another time interval or edit the existing ones.
+
+Go to the Loop>>Extensions>>UIAlertController.swift and modify Line 30.  The default has 1 and 2 hours as shown where the arrow is pointing in the screenshot.  You can edit those to whatever duration you want (in units of hours) and add a duration if you prefer.  If you’d like 1, 2, and 3 hours options...simply edit the numbers in the brackets to read [1, 2, 3]. It is possible to enter less than 1 hour intervals such as 15min, 30 min, 45 min by editing the brackets to read [0.25, 0.5, 0.75].
+
+![Chart Time](img/workout_add.jpg)
+
+
+### Apple Watch Customizations
+
+#### Recommended Bolus Autofill
+The Apple Watch's default is to autofill to 75% of the recommended bolus.  If you wish, you can customize so that the watch autofills a different percentage. To do this, the multiplier can be changed from 0.75 to a value of your choice. A value of 1 will autofill 100% of the recommended bolus. A value of 0 will autofill 0% of the recommended bolus.   Go to the Loop Watchapp Extension Folder, within that go to the controllers folder, within that go to BolusInterfaceController.swift. Edit the section of line 97 as indicated on the picture below.
+
+![Watch Bolus Recommendation](img/watch_bolus.jpg)
+
+#### Adjust sensitivity of digital crown for carb and bolus entry
+The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. Navigate to the WatchApp Extension folder and within that the Controllers folder. Edit line 130 of AddCarbsInterfaceController.swift and line 161 of BolusInterfaceController.swift. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.
+
+### Commit to GitHub
+
+Optional Step:  If you would like to commit customizations back into your GitHub repository, you can do that quite easily IF you used the GitHub desktop client to get your Loop source code.  The advantage of doing this is that when Loop releases a new version, you can use GitHub to update your Loop’s code to the new version without needing to redo your code customizations.  You will also have a copy of your customized Loop code available online if you need to do a Loop app rebuild while away from home.
+
+After you’ve made your customizations to your Loop code, go to the XCode Source Control menu and choose “Commit”.
+
+![Source](img/source_control.jpg)
+
+
+Once you have committed the changes, you will be able to see the changes highlighted in your GitHub desktop client
+
+![Source](img/github_desktop.jpg)
+
+Finally, go to the same Source Control menu in XCode that you just used to “Commit” and this time choose “Push”.  This will push your code customizations up to your GitHub repository.  You can confirm this by finding the Loop.xcconfig file and looking at the MAIN_APP_BUNDLE_IDENTIFIER.  It should no longer say `com.loopkit`.
+
+![Source](img/github_updated.jpg)
