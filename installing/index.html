@@ -104,6 +104,8 @@
         
             <li><a href="#install-loop-using-xcode">Install Loop using XCode</a></li>
         
+            <li><a href="#code-customizations">Code Customizations</a></li>
+        
     
     </ul>
 </div></div>
@@ -125,7 +127,7 @@ Open the Terminal application on your Apple computer (it is located in the Utili
 <p><code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></p>
 <p>There will be a prompt asking if you want to continue (press return to continue, then it may prompt for your password.  enter your computer user password.).  Wait while the script does its thing...you’ll see info scroll by and then it will pause for awhile.  Eventually, it will be done and you’ll see something that says “Installation successful” and you’ll have a ready terminal prompt again.</p>
 <p>Type <code>brew update</code> and press return.</p>
-<p>Type <code>brew install carthage</code> (without the quotes) and press return.</p>
+<p>Type <code>brew install carthage</code> and press return.</p>
 <p>You can close the Terminal application now.  You’re done with it.  Phew.</p>
 <p><img alt="Carthage" src="../img/carthage.jpg" /></p>
 <h2 id="download-loop-source-code">Download Loop Source Code</h2>
@@ -181,7 +183,7 @@ Open the Terminal application on your Apple computer (it is located in the Utili
 <p>Finally, you need to make sure to sign all FOUR “targets” to the application; Loop, Loop Status Extension, WatchApp, and WatchApp Extension.  So far, we have only signed the Loop target.  Click on the blue “Loop” on the left and then the box with the vertical line to drop down the targets list.  Choose each of the remaining three targets and then select the signing team that you selected previously in the Loop target signing. Make sure you have signed all four targets.  If the “loopkit” still appears on the Bundle Identifier line, don’t worry about it.  Xcode will update that to your chosen MAIN_APP name when it builds.  Sometimes Xcode is just slow to rename.  Just leave that Bundle Identifier line untouched.</p>
 <p><img alt="Targets View" src="../img/target_view.jpg" /></p>
 <hr />
-<p><b>At this point in the process, you should make any custom configurations to your Loop app before you finish with the installation of Loop on your iPhone.  If you want to make any of the customizations yourself, the step-by-step instructions are provided.  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.</b></p>
+<p><b>At this point in the process, you should make any custom configurations to your Loop app before you finish with the installation of Loop on your iPhone.  If you want to make any of the customizations yourself, the step-by-step instructions are provided below (or by clicking on the link to the left).  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.</b></p>
 <hr />
 <p>All done with customizations? Let’s finish the installation of the Loop app onto your iPhone.  Select your device and then press the “play” button (or build button) to start XCode on its way.  [You may be prompted to add the iPhone to your Developer Account...go ahead and do so.]  You’ll see the progression of the build in the status window.  If the build is successful, it will say “finished running Loop” in the status bar.  If the build fails, it will show you red error alerts and you can read what the failure was.  Yellow error alerts do not cause the build to fail, those are just warnings.</p>
 <p><img alt="Select build device" src="../img/select_device.jpg" /></p>
@@ -189,7 +191,53 @@ Open the Terminal application on your Apple computer (it is located in the Utili
 <p><img alt="Trust Device and Developer" src="../img/trust_device.jpg" /></p>
 <p>You can confirm Loop has installed on your phone simply by looking on the iphone.  Turn it on and check if the Loop app is running, or locating the Loop app icon.  If you don’t see it, try pressing the build (play) button again.  There should be a message at the top of Xcode window indicating a successful build.  Once you get confirmation and can see Loop on your iPhone, you can simply unplug from computer.  </p>
 <p>CONGRATS!  YOU JUST INSTALLED LOOP!</p>
-<p>...</p></div>
+<p>...</p>
+<h2 id="code-customizations">Code Customizations</h2>
+<p>Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.</p>
+<p><b>[Note: To help you find the Line numbers in XCode, it may be helpful to turn them on now.  Go to XCode Preferences, under Text Editing, click the box to Show Line Numbers.  Every effort will be made to update the line numbers as the code is updated periodically, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.]</b></p>
+<h3 id="default-carb-absorption-times">Default Carb Absorption Times</h3>
+<p><img style="float: right;" width="200" src="../img/carb_screen.png"></p>
+<p>Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <i>Think Like A Pancreas</i> by Gary Scheiner.  Currently the lollipop icon is set for 120 minutes, taco icon for 180 minutes, and pizza icon for 240 minutes.  These default values may not work for everyone, you will need to find what works for you.</p>
+<p>You can modify these defaults to suit your needs, however it would be best to test your own carb absorption patterns before necessarily adjusting the defaults.  You can always modify these after you’ve had some Loop experience and simply reinstall the Loop.  (after all, you’re a pro at that now)  Section 6 provides some examples of analyzing meal and Loop behaviors to determine if your carb absorption times are accurate.</p>
+<p>If you would like to modify those defaults, you can do so in the DeviceDataManager.swift Line 1040.  Note, the times are in hours, not minutes, in the code.</p>
+<p><img alt="Xcode Carb Abs Time changes" src="../img/carb_times.jpg" /></p>
+<h3 id="loop-logo">Loop Logo</h3>
+<p>If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> and just drag and drop your source image. The site will email you a zip file.  Double click the zip file, choose the “ios” folder, and copy the contents of the Appicon.appiconset as shown highlighted below.</p>
+<p><img alt="Appicon download" src="../img/appicon1.jpg" /></p>
+<p>Now navigate to the corresponding Loop folder as shown below.  Replace the contents of the Appicon.appiconset with your copied images.</p>
+<p><img alt="Appicon to asset folder" src="../img/appicon2.jpg" /></p>
+<p>You can confirm the successful change by looking in XCode.  You should see your custom logo in the Appicon set now.  You will also likely see a yellow alert that there are “5 unassigned children”.  This alert will not prevent your app from building, it’s simply because the zipfile contained more sizes of images than Loop app uses.  You can just leave the unassigned images as is. </p>
+<p><img alt="Assets replaced" src="../img/appicon3.jpg" /></p>
+<h3 id="loop-graph-hours">Loop Graph hours</h3>
+<p>If you want the Loop’s graphs to display different time length than the default, you will go to the StatusTableViewController.swift line 181. This code keeps track of how many hours to display in total and how far into the future to display on your graphs. For total hours it does a calculation based upon your screen size and how granular to display between each segment. For how far forward to display, it currently uses your Insulin Action Duration setting to determine this (and if that number is missing for some reason it defaults to 4 hours). </p>
+<p>Please note, using this will make it more difficult to see changes in other charts on your screen (like length of temp basal).</p>
+<p><img alt="Chart Time" src="../img/chart_history.jpg" /></p>
+<p>Here are a couple of ways you could modify line 181 based on your specific wants:</p>
+<p>Want double the amount of total hours shown?
+<code>let historyHours = (totalHours * 2) - (dataManager.insulinActionDuration ?? TimeInterval(hours: 4)).hours</code></p>
+<p>Want 1/2 of my Insulin Action Duration to show in the future?
+<code>let historyHours = totalHours - ((dataManager.insulinActionDuration / 2) ?? TimeInterval(hours: 4)).hours</code></p>
+<p>Want 2.5 x the total time and only 2 hours forward within that?
+<code>let historyHours = (totalHours * 2.5) - (TimeInterval(hours: 2)).hours</code></p>
+<h3 id="workout-range-duration">Workout Range Duration</h3>
+<p><img style="float: right;" width="200" src="../img/workout_default.png">
+If you’d like more than just the standard 1 or 2 hour duration for the Workout Range, you can add or modify the code to add another time interval or edit the existing ones.</p>
+<p>Go to the Loop&gt;&gt;Extensions&gt;&gt;UIAlertController.swift and modify Line 30.  The default has 1 and 2 hours as shown where the arrow is pointing in the screenshot.  You can edit those to whatever duration you want (in units of hours) and add a duration if you prefer.  If you’d like 1, 2, and 3 hours options...simply edit the numbers in the brackets to read [1, 2, 3]. It is possible to enter less than 1 hour intervals such as 15min, 30 min, 45 min by editing the brackets to read [0.25, 0.5, 0.75].</p>
+<p><img alt="Chart Time" src="../img/workout_add.jpg" /></p>
+<h3 id="apple-watch-customizations">Apple Watch Customizations</h3>
+<h4 id="recommended-bolus-autofill">Recommended Bolus Autofill</h4>
+<p>The Apple Watch's default is to autofill to 75% of the recommended bolus.  If you wish, you can customize so that the watch autofills a different percentage. To do this, the multiplier can be changed from 0.75 to a value of your choice. A value of 1 will autofill 100% of the recommended bolus. A value of 0 will autofill 0% of the recommended bolus.   Go to the Loop Watchapp Extension Folder, within that go to the controllers folder, within that go to BolusInterfaceController.swift. Edit the section of line 97 as indicated on the picture below.</p>
+<p><img alt="Watch Bolus Recommendation" src="../img/watch_bolus.jpg" /></p>
+<h4 id="adjust-sensitivity-of-digital-crown-for-carb-and-bolus-entry">Adjust sensitivity of digital crown for carb and bolus entry</h4>
+<p>The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. Navigate to the WatchApp Extension folder and within that the Controllers folder. Edit line 130 of AddCarbsInterfaceController.swift and line 161 of BolusInterfaceController.swift. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.</p>
+<h3 id="commit-to-github">Commit to GitHub</h3>
+<p>Optional Step:  If you would like to commit customizations back into your GitHub repository, you can do that quite easily IF you used the GitHub desktop client to get your Loop source code.  The advantage of doing this is that when Loop releases a new version, you can use GitHub to update your Loop’s code to the new version without needing to redo your code customizations.  You will also have a copy of your customized Loop code available online if you need to do a Loop app rebuild while away from home.</p>
+<p>After you’ve made your customizations to your Loop code, go to the XCode Source Control menu and choose “Commit”.</p>
+<p><img alt="Source" src="../img/source_control.jpg" /></p>
+<p>Once you have committed the changes, you will be able to see the changes highlighted in your GitHub desktop client</p>
+<p><img alt="Source" src="../img/github_desktop.jpg" /></p>
+<p>Finally, go to the same Source Control menu in XCode that you just used to “Commit” and this time choose “Push”.  This will push your code customizations up to your GitHub repository.  You can confirm this by finding the Loop.xcconfig file and looking at the MAIN_APP_BUNDLE_IDENTIFIER.  It should no longer say <code>com.loopkit</code>.</p>
+<p><img alt="Source" src="../img/github_updated.jpg" /></p></div>
         </div>
 
         <footer class="col-md-12">
