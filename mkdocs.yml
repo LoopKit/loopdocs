@@ -5,3 +5,8 @@ pages:
 - 'index.md'
 - 'requirements.md'
 - 'installing.md'
+- Algorithm:
+    - 'Overview': 'algorithm/overview.md'
+    - 'Glucose Prediction': 'algorithm/prediction.md'
+    - 'Temp Basal Adjustments': 'algorithm/temp_basal.md'
+    - 'Bolus Recommendations': 'algorithm/bolus.md'
