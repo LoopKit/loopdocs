@@ -1,19 +1,21 @@
 # Installing Loop
 You’re ready to get to the real stuff now, right?  Excited to get Looping?  Let’s do it.  Let’s put that Loop on your iPhone.
 
-# Setup your Apple Computer
+## Setup your Apple Computer
 
-## Install XCode
+### Install XCode
 Did you go to the [Apple App Store](https://developer.apple.com/xcode/)? It’s an application on your Apple Computer.  Open it and search for XCode.  Download and install it for free.  Easy peasy.  Except it takes about 20-40 minutes to download depending on your internet speed.
 
 ![Xcode](img/xcode.jpg)
 
-## Install Carthage
+### Install Carthage
 The installation of Carthage has a few different ways it can be done, but the easiest is to download the Carthage package here:
 
 [Carthage.pkg download](https://github.com/Carthage/Carthage/releases/download/0.18.1/Carthage.pkg)       
 
 Double-click on the download and follow the directions to install (basically give your computer’s password and it does the rest).  Done.  Nothing more needs to happen with Carthage (it runs in the background).
+
+
 
 IF you have problems with that method, you can use the “Homebrew method”.  And here’s how it is done:
 Open the Terminal application on your Apple computer (it is located in the Utilities application folder)
@@ -24,9 +26,9 @@ Copy and paste the line below into the prompt in Terminal.  Press return after y
 
 There will be a prompt asking if you want to continue (press return to continue, then it may prompt for your password.  enter your computer user password.).  Wait while the script does its thing...you’ll see info scroll by and then it will pause for awhile.  Eventually, it will be done and you’ll see something that says “Installation successful” and you’ll have a ready terminal prompt again.
 
-Type “brew update” (without the quotes) and press return.
+Type `brew update` and press return.
 
-Type “brew install carthage” (without the quotes) and press return.
+Type `brew install carthage` (without the quotes) and press return.
 
 You can close the Terminal application now.  You’re done with it.  Phew.
 
@@ -100,7 +102,10 @@ Note: You may need to close Xcode and restart to see your Apple account for sign
 
 ![Apple ID added in Xcode](img/apple_id.jpg)
 
-Beginning of SIDE NOTE about signing and Provisioning Profiles.
+
+********************************
+
+<b>Beginning of SIDE NOTE about signing and Provisioning Profiles.</b>
 
 The 7-day free Provisioning Profiles are signed from “(Personal Team)”.
 
@@ -114,7 +119,8 @@ Many people think “Hey I’ll try to build this Loop for free and if I like it
 * When you rebuild your app, choose a new MAIN_APP_BUNDLE_IDENTIFIER different than your previous one.  For example, if you used “com.yourname” on the free app then choose “com.yourname2” for the new paid app.  
 * You will have to re-enter your Loop settings on your new app once it is installed (hopefully, you took written notes of them from when you were running your free app..hint hint).
 
-End of SIDE NOTE
+<b>End of SIDE NOTE</b>
+********************************
 
 When you return to the main screen, select your team name and you may see two status warnings.  The first warning may appear if you do not have an iPhone plugged into the Mac.  The “failed to create a provisioning profile” has details that should alert you to plug in your device (iPhone).  Once you connect your iPhone via cable to the Mac, select your iPhone from the hidden drop down list (see red arrow below).  Your device’s personal name should be at the top of the list.  Select your personal device. You may need to “register the device” if this is your first time using Xcode with that iphone, follow the prompt if that’s the case.
 
@@ -126,7 +132,9 @@ Finally, you need to make sure to sign all FOUR “targets” to the application
 
 ![Targets View](img/target_view.jpg)
 
-<b>At this point in the process, you should make any custom configurations to your Loop app before you finish with the installation of Loop on your iPhone.  Section 4.3 lists some common customizations many Loop users have done.  If you want to make any of the customizations yourself, the step-by-step instructions are provided.  Skip over to Section 4.3 and see if any of them interest you.  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.</b>
+********************************
+<b>At this point in the process, you should make any custom configurations to your Loop app before you finish with the installation of Loop on your iPhone.  If you want to make any of the customizations yourself, the step-by-step instructions are provided.  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.</b>
+********************************
 
 All done with customizations? Let’s finish the installation of the Loop app onto your iPhone.  Select your device and then press the “play” button (or build button) to start XCode on its way.  [You may be prompted to add the iPhone to your Developer Account...go ahead and do so.]  You’ll see the progression of the build in the status window.  If the build is successful, it will say “finished running Loop” in the status bar.  If the build fails, it will show you red error alerts and you can read what the failure was.  Yellow error alerts do not cause the build to fail, those are just warnings.
 
