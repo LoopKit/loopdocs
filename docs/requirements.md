@@ -2,12 +2,12 @@
 
 Loop has both Hardware and Software requirements.  In general, to use Loop you need to have six components.
 
-Compatible insulin pump
-Compatible CGM
-RileyLink
-Compatible iPhone/iPod Touch
-Apple computer running Mac OS X 10.11.5 or later
-Xcode (a free Apple application)
+- Compatible insulin pump
+- Compatible CGM
+- RileyLink
+- Compatible iPhone/iPod Touch
+- Apple computer running Mac OS X 10.11.5 or later
+- Xcode (a free Apple application)
 
 You will need to be able to install software on your computer and possibly sign up as an Apple Developer to install the Loop app to your iPhone.  For the most part, if you are comfortable with installing software programs on your computer, you will have no problem building and running Loop. There are detailed step-by-step instructions included in this guide.  You should be doing this yourself so you can understand how to fix it WHEN it breaks. You may want to help another person get set up on Loop, and that is noble, but you will serve them much better if you support them doing the work themselves, rather than doing it for them.
 
@@ -155,16 +155,16 @@ The following software, licenses, and services are used to manage, build, compil
 
 So the most obvious thing you will need to run Loop is the “source code” itself.  The code resides on [GitHub](https://github.com). You’ll be downloading the Loop code from GitHub so that you can use it on your computer.  Section 4.1.3 describes how to do that. You will need to make sure you are using a computer and internet access that allows for downloading from GitHub.
 
-### XCode (Required)
+### Xcode (Required)
 
-To build and install Loop on your iPhone, you are going to use the XCode application on your Apple computer.  XCode is available for free from the [Apple App Store](https://developer.apple.com/xcode/).  Go ahead, download it!
+To build and install Loop on your iPhone, you are going to use the Xcode application on your Apple computer.  Xcode is available for free from the [Apple App Store](https://developer.apple.com/xcode/).  Go ahead, download it!
 
-XCode 8.2.1 is the most recent version.  If your iPhone is running iOS 10.1, you must use XCode 8.1 or newer. Xcode 8.2.1 requires an Apple computer running OSX Sierra, or OS X El Capitan 10.11.5 or later.
+Xcode 8.2.1 is the most recent version.  If your iPhone is running iOS 10.1, you must use Xcode 8.1 or newer. Xcode 8.2.1 requires an Apple computer running OSX Sierra, or OS X El Capitan 10.11.5 or later.
 
 Legacy versions:
 
-- XCode 8.0 can also be used to build Loop.  XCode 8.0 will only work with iPhones using iOS 10.0 or earlier.  Xcode 8.0, similar to XCode 8.1, requires an Apple computer running OSX Sierra, or OS X El Capitan 10.11.5 or later.  You should use the Master branch of Loop v1.1 to build with XCode 8.0.
-- XCode 7.3 can be used but only up to Loop v0.13.  Subsequent versions of Loop require a more current version of XCode.  
+- Xcode 8.0 can also be used to build Loop.  Xcode 8.0 will only work with iPhones using iOS 10.0 or earlier.  Xcode 8.0, similar to Xcode 8.1, requires an Apple computer running OSX Sierra, or OS X El Capitan 10.11.5 or later.  You should use the Master branch of Loop v1.1 to build with Xcode 8.0.
+- Xcode 7.3 can be used but only up to Loop v0.13.  Subsequent versions of Loop require a more current version of Xcode.  
 
 ### Apple Developer Program Enrollment (Not Required, but HIGHLY recommended)
 
