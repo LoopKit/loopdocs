@@ -4,7 +4,11 @@ Regardless of whether you are on Azure or Heroku for Nightscout, you are using a
 
 The good news?  Loop can still run just fine until you cleanout your mLab database.  The bad news?  You just won’t be able to remotely monitor Loop through NS until you clear up some storage space in mLab.
 
-## mLab cleanup
+There are two ways to cleanout some space or otherwise get into your mLab database
+* mLab direct access
+* Nightscout admin tools
+
+## mLab direct access
 
 1.  Login to your mLab database.  
 
@@ -31,3 +35,10 @@ Click on a collection’s name to open it.
 4.  You can confirm that your cleanout has resolved the problem, by checking that your database size is below 500 MB now.  Click on the “Home” link in top left.  Then review the size of the database as shown.
 
 ![Mlab Size check](img/mlab_size.jpg)
+
+## Nightscout Admin Tools
+
+If you go to your Nightscout site's settings (the three horizontal bars in the upper right of your nightscout site), you will be able to access your Admin Tools for the site.  These include some useful quick mLab actions, includig deleting documents from the devicestatus collection similar to the action we took in the steps above.  But, it's worth noting that if you have errant future data in your Nightscout site that is causing problems (usually during time changes or overseas travel), you can clean-out future entries through this portal too.
+
+![NS Admin Tools](img/admin_tools.jpg)
+
