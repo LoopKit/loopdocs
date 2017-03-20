@@ -2,9 +2,7 @@
 
 Nightscout (NS) is an excellent tool to remotely view Loop's actions.  It allows for easy remote monitoring of Loop activities, troubleshooting of Loop errors, history of CGM, carbs, boluses, & temp basals, reports to analyze data trends and patterns. There is a Nightscout app in your iPhone App Store, or you can use a web browser to view the data.  Setting up Nightscout is free and fairly quick.  Once setup, the site can be accessed by anyone that you share your unique Nightscout URL with.  
 
-Nightscout is highly recommended for Loop users, especially those using Loop as caregivers to t1ds.  Nightscout displays are often the easiest way to troubleshoot Loop settings, if you are having problems and seeking input from others.  Below is some discussions about the general Nightscout display, as well as some Loop-specific display information.
-
-Below is an example screen of Nightscout using Loop.
+Nightscout is highly recommended for Loop users, especially those using Loop as caregivers to t1ds.  Nightscout displays are often the easiest way to troubleshoot Loop settings, if you are having problems and seeking input from others.  Below is some discussion about the general Nightscout display, as well as some Loop-specific display information.
 
 ![Nightscout example](img/example.jpg)
 
