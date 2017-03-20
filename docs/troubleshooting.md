@@ -26,11 +26,13 @@ X  	= error in Loop (see below for troubleshooting)</br>
 
 •	Check/change pump battery
 
+•	Move RileyLink closer to the pump
+
 •	Check if remote ID is on in pump settings</td>
     </tr>
     <tr>
       <th>rF comms failure (Unable to set TempBasal)</th>
-      <td>Pump settings are not allowing or comms are poor</td>
+      <td>Pump settings are not allowing temp basal</td>
       <td>•	Check if max temp basal in pump > Loop’s max temp basal
 
 •	Check if temp basal type is set to u/hr in pump
@@ -57,7 +59,11 @@ X  	= error in Loop (see below for troubleshooting)</br>
 
 •	Charge RileyLink
 
+•	Toggle iPhone's BT off and then on
+
 </td>
     </tr>
   </tbody>
 </table>
+
+## If these steps do not resolve your problem, try shutting down Loop app and restarting
