@@ -27,13 +27,13 @@ Below is an example screen of Nightscout using Loop.
 
 <dt>Predicted BG</dt>
 
-The purple line to the right of the BG is Loop's predicted BG.  Watching the behavior of that purple line can help you understand why Loop is making decisions regarding high or low temps.  You can read more on that topic in the Algorithm section of these docs.</dd>
+<dd>The purple line to the right of the BG is Loop's predicted BG.  Watching the behavior of that purple line can help you understand why Loop is making decisions regarding high or low temps.  You can read more on that topic in the Algorithm section of these docs.</dd>
 
 <dt>Loop pill</dt>
 
-The Loop pill is the little display box which when hovered over, or clicked, will provide additional information about recent Loop activities and status.  Information included is the last time Loop ran, the temp basal set, IOB, and COB.  Looking at the Loop pill is a quick method for assessing if you loop is currently active, as well.  The small symbols to the right of the word Loop have specific meaning.  The small horizontal lightning bolt, shown in this example, is an active loop which recently enacted a temp basal.  You can read the section on Troubleshooting using the Loop Pill for additional information about the various symbols.</dd>
+<dd>The Loop pill is the little display box which when hovered over, or clicked, will provide additional information about recent Loop activities and status.  Information included is the last time Loop ran, the temp basal set, IOB, and COB.  Looking at the Loop pill is a quick method for assessing if you loop is currently active, as well.  The small symbols to the right of the word Loop have specific meaning.  The small horizontal lightning bolt, shown in this example, is an active loop which recently enacted a temp basal.  You can read the section on Troubleshooting using the Loop Pill for additional information about the various symbols.</dd>
 
 <dt>SAGE and CAGE pills</dt>
 
-The SAGE and CAGE pills are for Sensor Age and Cannula Age.  These optional pills track the time since your CGM sensor and Pump site were last changed.  You can set up custom alerts to remind you when it is time to change the devices, or simply use the visuals to keep track of your particular timing for site/sensor changes.</dd>
+<dd>The SAGE and CAGE pills are for Sensor Age and Cannula Age.  These optional pills track the time since your CGM sensor and Pump site were last changed.  You can set up custom alerts to remind you when it is time to change the devices, or simply use the visuals to keep track of your particular timing for site/sensor changes.</dd>
 </dl>
