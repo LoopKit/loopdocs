@@ -10,19 +10,19 @@ Two options exist for easy hosting of NS; Azure or Heroku. Both hosting services
 
 2.  Create an account at [GitHub](https://github.com)
 
-2.  Go to the [Nightscout cgm-remote-monitor repository](https://github.com/nightscout/cgm-remote-monitor)
+3.  Go to the [Nightscout cgm-remote-monitor repository](https://github.com/nightscout/cgm-remote-monitor)
 
-3.   Click the “Fork” button in the upper right corner
+4.   Click the “Fork” button in the upper right corner
 
 ![Nightscout fork](img/ns_fork.jpg)
 
-4. Scroll down until you see the purple “deploy to Heroku” button.  Click that button.
+5. Scroll down until you see the purple “deploy to Heroku” button.  Click that button.
 
 ![Deploy to Heroku](img/deploy_heroku.jpg)
 
-5. Give your app a name, this will be the prefix of your NS site’s URL. For example, https://yourappname.herokuapp.com
+6. Give your app a name, this will be the prefix of your NS site’s URL. For example, https://yourappname.herokuapp.com
 
-6.  Fill out the information lines in the “Config Variables” Section of that page, as shown below.  Some of the lines can stay with the default entries already provided.
+7.  Fill out the information lines in the “Config Variables” Section of that page, as shown below.  Some of the lines can stay with the default entries already provided.
 
 <dl>
 <dt>API_SECRET</dt>
@@ -72,15 +72,15 @@ Two options exist for easy hosting of NS; Azure or Heroku. Both hosting services
 <dt>The remaining variables can be left at their default values.<dt>
 </dl>
 
-7.   Click the purple Deploy button at the bottom of screen
+8.   Click the purple Deploy button at the bottom of screen
 
 ![deploy button for setup](img/deploy_button.jpg)
 
-8.  Wait a little bit while Heroku builds your NS app.  You’ll see some text scroll by in the Build App box, and then finally, you will have a message that the NS app was successfully deployed.
+9.  Wait a little bit while Heroku builds your NS app.  You’ll see some text scroll by in the Build App box, and then finally, you will have a message that the NS app was successfully deployed.
 
 ![successful deployment message](img/deploy_success.jpg)
 
-9.  You can verify your site’s successful build by clicking View (you should see black site with a profile warning).  You will be redirected to a profile set-up page.  (If it doesn't redirect automatically, refresh your webpage).  
+10.  You can verify your site’s successful build by clicking View (you should see black site with a profile warning).  You will be redirected to a profile set-up page.  (If it doesn't redirect automatically, refresh your webpage).  
 
 ![Profile warning](img/no_profile.jpg)
 
@@ -88,11 +88,11 @@ You do not have to enter all the information in the Profile if you are using Loo
 
 ![Profile setup](img/profile.jpg)
 
-10.  Assuming your previous browser tab is still open for "Create a new App | Heroku", let's go back to that tab.  This time instead of choosing the "View app" option, we are going to select the "Manage App" button. Then, select the “settings” tab near the top of the screen on your Heroku app.
+11.  Assuming your previous browser tab is still open for "Create a new App | Heroku", let's go back to that tab.  This time instead of choosing the "View app" option, we are going to select the "Manage App" button. Then, select the “settings” tab near the top of the screen on your Heroku app.
 
 ![Settings in Heroku](img/settings_heroku.jpg)
 
-11.  Click on “Reveal Config  Vars”.  Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add several additional lines of config vars for Loop use; the DEVICESTATUS_ADVANCED is a required line, the others just make Nightscout more useful when Looping.
+12.  Click on “Reveal Config  Vars”.  Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add several additional lines of config vars for Loop use; the DEVICESTATUS_ADVANCED is a required line, the others just make Nightscout more useful when Looping.
 
 ![Loop add vars](img/add_vars.jpg)
 
@@ -142,11 +142,11 @@ You do not have to enter all the information in the Profile if you are using Loo
 (same as the alert above, but will be red in color and have a shorter snooze option)
 </dl>
 
-12. Click on “Open App” in the top right corner of your Heroku site.
+13. Click on “Open App” in the top right corner of your Heroku site.
 
 ![Open NS App](img/open_app.jpg)
 
-13.  Click on the settings (those three horizontal lines in upper right corner).  Now check  that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like pills showing for info on your NS site in the SHOW PLUGINS (usually all of them), and then press save.
+14.  Click on the settings (those three horizontal lines in upper right corner).  Now check  that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like pills showing for info on your NS site in the SHOW PLUGINS (usually all of them), and then press save.
 
 ![Settings for NS site](img/settings_ns.jpg)
 
