@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Bolus Recommendations - Loop Docs</title>
+	<title>mLab - Loop Docs</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -68,8 +68,41 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithm <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../algorithm/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../algorithm/prediction/">Glucose Prediction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../algorithm/temp_basal/">Temp Basal Adjustments</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../algorithm/bolus/">Bolus Recommendations</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
@@ -80,64 +113,31 @@
                     
                         
 <li >
-    <a href="../prediction/">Glucose Prediction</a>
+    <a href="../new_user/">Setup New Site</a>
 </li>
 
                     
                         
 <li >
-    <a href="../temp_basal/">Temp Basal Adjustments</a>
+    <a href="../update_user/">Update Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../azure_migration/">Azure to Heroku</a>
 </li>
 
                     
                         
 <li class="active">
-    <a href="./">Bolus Recommendations</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="../../nightscout/overview/">Overview</a>
+    <a href="./">mLab</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../nightscout/new_user/">Setup New Site</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/update_user/">Update Site</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/azure_migration/">Azure to Heroku</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/mlab_cleanup/">mLab</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/troubleshooting/">Loop Pill</a>
+    <a href="../troubleshooting/">Loop Pill</a>
 </li>
 
                     
@@ -155,12 +155,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../temp_basal/">
+                    <a rel="next" href="../azure_migration/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../../nightscout/overview/">
+                    <a rel="prev" href="../troubleshooting/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -174,21 +174,47 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#bolus-recommendations">Bolus Recommendations</a></li>
+        <li class="main active"><a href="#mlab-database-maintenance">mLab Database Maintenance</a></li>
         
-            <li><a href="#eventual-bg-above-target-range">Eventual BG Above Target Range</a></li>
+            <li><a href="#mlab-direct-access">mLab direct access</a></li>
+        
+            <li><a href="#nightscout-admin-tools">Nightscout Admin Tools</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="bolus-recommendations">Bolus Recommendations</h1>
-<p>Loop also uses the forecast to generate recommendations for bolus amounts. Carbs are not directly used in bolus calculations, but rather indirectly through the forecast. After carbs are entered, the forecast is updated using the carb amounts, and then a recommendation is generated using the forecast.</p>
-<p>The forecast used for bolusing is slightly different than the forecast used for adjust temp basals in that positive BG momentum is not included.</p>
-<h2 id="eventual-bg-above-target-range">Eventual BG Above Target Range</h2>
-<p><img alt="Eventual BG Above Range" src="../img/bolus_eventual_above_range.png" /></p>
-<p>A bolus recommendation is given if Eventual BG is above Target Range.  The delta between Eventual BG and the top of the Target Range is used, along with your current Insulin Sensitivity to calculate the recommendation.</p></div>
+<h1 id="mlab-database-maintenance">mLab Database Maintenance</h1>
+<p>Regardless of whether you are on Azure or Heroku for Nightscout, you are using an mLab database for storing your Loop data.  mLab allows you to store up to 500 MB for free.  When you hit that data cap, your NS will stop working.  Your Share Bridge will not pull data and your site will be “stale”.  </p>
+<p>The good news?  Loop can still run just fine until you cleanout your mLab database.  The bad news?  You just won’t be able to remotely monitor Loop through NS until you clear up some storage space in mLab.</p>
+<p>There are two ways to cleanout some space or otherwise get into your mLab database
+<em> mLab direct access
+</em> Nightscout admin tools</p>
+<h2 id="mlab-direct-access">mLab direct access</h2>
+<ol>
+<li>Login to your mLab database.  </li>
+</ol>
+<p>•   IF you setup your own Azure site and mLab database, go directly to http://mlab.com and login.</p>
+<p>•   If you setup your own Azure site and mLab database, then setup a Heroku account and pointed back to your old mLab database (i.e., copy and pasted the MONGODB_URI from Azure), go directly to http://mlab.com and login.</p>
+<p>•   IF you setup a Heroku site and let Heroku setup an mLab database for you (which is typical for new Heroku sites), you will access mLab through your Heroku account main page.   Login to your Heroku account and click on the mLab logo as shown below.</p>
+<p><img alt="mlab link in heroku" src="../img/mlab_link.jpg" /></p>
+<ol>
+<li>(Users coming directly from a Heroku click will see the screen below.  If you had to login to mLab with a name and password, you will first see a line with your MongoDB deployment.  Click on your database name to see the screen below with all the collection names.) </li>
+</ol>
+<p>Your various collections are shown, similar to the screen shot below.  The amount of data each collection is using is listed to the far right of each collection’s line.  I recommend emptying the “loop” collection first and then "devicestatus" to free up database storage.  If you need any of the information in the database, you may want to do a selective delete of data. For example, if you are headed into an endocrinologist appointment and want to print out recent Nightscout reports to take with you. Eventually you may need to empty more collections.  It should be awhile though, as the other collections are significantly smaller and will take a long time to fill.</p>
+<p>Click on a collection’s name to open it.</p>
+<p><img alt="Mlab collections" src="../img/collections.jpg" />
+ 
+3.  Click on the button that says “Delete all documents in collection” and then confirm the deletion.</p>
+<p><img alt="delete a collection contents" src="../img/delete.jpg" /></p>
+<ol>
+<li>You can confirm that your cleanout has resolved the problem, by checking that your database size is below 500 MB now.  Click on the “Home” link in top left.  Then review the size of the database as shown.</li>
+</ol>
+<p><img alt="Mlab Size check" src="../img/mlab_size.jpg" /></p>
+<h2 id="nightscout-admin-tools">Nightscout Admin Tools</h2>
+<p>If you go to your Nightscout site's settings (the three horizontal bars in the upper right of your nightscout site), you will be able to access your Admin Tools for the site.  These include some useful quick mLab actions, includig deleting documents from the devicestatus collection similar to the action we took in the steps above.  But, it's worth noting that if you have errant future data in your Nightscout site that is causing problems (usually during time changes or overseas travel), you can clean-out future entries through this portal too.</p>
+<p><img alt="NS Admin Tools" src="../img/admin_tools.jpg" /></p></div>
         </div>
 
         <footer class="col-md-12">

@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-03-19</lastmod>
+     <lastmod>2017-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/requirements/</loc>
-     <lastmod>2017-03-19</lastmod>
+     <lastmod>2017-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +20,7 @@
     
     <url>
      <loc>/installing/</loc>
-     <lastmod>2017-03-19</lastmod>
+     <lastmod>2017-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -29,25 +29,65 @@
         
     <url>
      <loc>/algorithm/overview/</loc>
-     <lastmod>2017-03-19</lastmod>
+     <lastmod>2017-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/algorithm/prediction/</loc>
-     <lastmod>2017-03-19</lastmod>
+     <lastmod>2017-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/algorithm/temp_basal/</loc>
-     <lastmod>2017-03-19</lastmod>
+     <lastmod>2017-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/algorithm/bolus/</loc>
-     <lastmod>2017-03-19</lastmod>
+     <lastmod>2017-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/nightscout/overview/</loc>
+     <lastmod>2017-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/nightscout/new_user/</loc>
+     <lastmod>2017-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/nightscout/update_user/</loc>
+     <lastmod>2017-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/nightscout/azure_migration/</loc>
+     <lastmod>2017-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/nightscout/mlab_cleanup/</loc>
+     <lastmod>2017-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/nightscout/troubleshooting/</loc>
+     <lastmod>2017-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
