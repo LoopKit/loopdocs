@@ -1,6 +1,6 @@
 # Migrating from Azure to Heroku
 
-If you are a current Azure user who wants to move to Heroku, but not loose all your old NS data, you will do the following steps:
+If you are a current Azure user who wants to move to Heroku, but not lose all your old NS data, you will need do the following steps:
 
 * update your repository in GitHub
 * create a new heroku nightscout site
