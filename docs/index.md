@@ -1,7 +1,7 @@
 # Welcome to Loop
 
 <img src="img/phones.png" width="300" alt="iPhone Screenshot">
-<img src="img/watch.png" width="350" alt="Apple Watch Screenshots">
+<img src="img/watch.png" alt="Apple Watch Screenshots">
 
 ## Introduction
 
