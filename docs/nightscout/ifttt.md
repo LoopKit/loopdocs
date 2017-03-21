@@ -80,15 +80,6 @@ CGM Sensor Start
 {"enteredBy": "IFTTT-button", "eventType": "Sensor Start", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
 ```
 
-### Understanding the JSON in the Body:
-
-* enteredBy: Will show up on the NS website this way - enter what you want
-* eventType: defines what we are doing - leave as is
-* reason: will show up on the NS website - enter what you want
-* targets: specify the range you want - enter what you want
-* duration: you can make them as long or as short as you want - enter what you want
-* secret: your hashed API secret key
-
 * Click the "Create Action" button on the bottom of the screen when you finish.
 
 
