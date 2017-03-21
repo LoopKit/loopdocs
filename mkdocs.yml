@@ -3,20 +3,20 @@ theme: flatly
 
 pages:
 - 'index.md'
-- Requirements
+- Requirements:
     - 'Overview': 'requirements/overview.md'
     - 'Insulin Pump': 'requirements/pump.md'
     - 'CGM': 'requirements/cgm.md'
     - 'RileyLink': 'requirements/rileylink.md'
     - 'Computer': 'requirements/computer.md'
     - 'iPhone': 'requirements/iphone.md'
-- Build
+- Build:
     - 'Overview': 'build/overview.md'
     - 'Installing': 'build/installing.md'
     - 'Configuration': 'build/configuration.md'
     - 'Updating': 'build/updating.md'
     - 'Troubleshooting': 'build/troubleshooting.md'
-- Use
+- Use:
     - 'Overview': 'use/overview.md'
     - 'Open Loop': 'use/open-loop.md'
     - 'Close Loop': 'use/close-loop.md'
