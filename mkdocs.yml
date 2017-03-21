@@ -10,3 +10,11 @@ pages:
     - 'Glucose Prediction': 'algorithm/prediction.md'
     - 'Temp Basal Adjustments': 'algorithm/temp_basal.md'
     - 'Bolus Recommendations': 'algorithm/bolus.md'
+- Nightscout:
+    - 'Overview': 'nightscout/overview.md'
+    - 'Setup New Site': 'nightscout/new_user.md'
+    - 'Update Site': 'nightscout/update_user.md'
+    - 'Azure to Heroku': 'nightscout/azure_migration.md'
+    - 'mLab': 'nightscout/mlab_cleanup.md'
+    - 'Loop Pill': 'nightscout/troubleshooting.md'
+    - 'IFTTT': 'nightscout/ifttt.md'
