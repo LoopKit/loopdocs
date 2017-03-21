@@ -17,3 +17,4 @@ pages:
     - 'Azure to Heroku': 'nightscout/azure_migration.md'
     - 'mLab': 'nightscout/mlab_cleanup.md'
     - 'Loop Pill': 'nightscout/troubleshooting.md'
+    - 'IFTTT': 'nightscout/ifttt.md'
