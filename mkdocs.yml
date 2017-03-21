@@ -22,6 +22,7 @@ pages:
     - 'Close Loop': 'use/close-loop.md'
     - 'Green Loop': 'use/green-loop.md'
     - 'Carb Entries': 'use/carbs.md'
+    - 'Bolus': 'use/bolus.md'
     - 'Priming and Sites': 'use/priming.md'
     - 'Time Changes': 'use/time-change.md'
     - 'RileyLink': 'use/rileylink.md'
