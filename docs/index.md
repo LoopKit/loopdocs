@@ -25,3 +25,7 @@ You should undertake this project in stages. For example, first “open loop” 
 Join the gitter chat at [https://gitter.im/LoopKit/Loop](https://gitter.im/LoopKit/Loop)
 
 There is also a [Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf) that you might wish to join for support.
+
+## Contribute
+
+Please consider submitting any updates and improvements to the docmentation that you want to share by submitting PRs to the [loopdocs repo](https://github.com/LoopKit/loopdocs).  Also, read the [LICENSE](https://github.com/LoopKit/Loop/blob/master/LICENSE.md) and [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md).
