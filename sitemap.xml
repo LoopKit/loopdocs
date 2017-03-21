@@ -91,6 +91,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>/nightscout/ifttt/</loc>
+     <lastmod>2017-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>

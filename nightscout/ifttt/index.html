@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>IFTTT - Loop Docs</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Loop Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../requirements/">Requirements</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../installing/">Installing</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithm <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../algorithm/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../algorithm/prediction/">Glucose Prediction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../algorithm/temp_basal/">Temp Basal Adjustments</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../algorithm/bolus/">Bolus Recommendations</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../new_user/">Setup New Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../update_user/">Update Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../azure_migration/">Azure to Heroku</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../mlab_cleanup/">mLab</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../troubleshooting/">Loop Pill</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">IFTTT</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../troubleshooting/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#ifttt-integration">IFTTT Integration</a></li>
+        
+            <li><a href="#ifttt-setup-for-phones">IFTTT Setup for phones</a></li>
+        
+            <li><a href="#enable-ifttt-in-your-nightscout-site">Enable IFTTT in your Nightscout site</a></li>
+        
+            <li><a href="#install-ifttt-app-on-your-iphoneandroid">Install IFTTT app on your iPhone/Android</a></li>
+        
+            <li><a href="#alexa-integration">Alexa integration</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="ifttt-integration">IFTTT Integration</h1>
+<p>If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, you can have single button presses that you can deploy from your iPhone to put a note in your NS site, enter low treatments, log a site change, or log a sensor change. </p>
+<h2 id="ifttt-setup-for-phones">IFTTT Setup for phones</h2>
+<ul>
+<li>First we need to gather one thing called your "hashed API Secret". In your internet browser, open a console window while viewing your Nightscout site.  Make sure you have "authenticated" your site by using your API secret in the Nightscout settings area (hint: if you see a little padlock in the upper left corner of the site, you haven't authenticated it).  Refresh the site and your hashed secret key will be shown as "apisecrethash: "xxxxxxxxxx...""  For Safari users on Mac, you can open the console window by selecting "Develop" from the Safari top menu, and then "Show Page Source" (if you do not see "Develop" in the top menu, activate it by going to Safari &gt; Preferences... &gt; Advanced, and checking the "Show Develop menu in menu bar" option).  If you're having problems seeing the apisecrethash, click the little grey triangle next to the "status isAuthenticated" line and the objects below it will display (see screenshot).  Your hashed API secret can be copied and pasted from that line, as shown below.  Save that somewhere easy to get to again, because you will be using it later.</li>
+</ul>
+<p><img alt="IFTTT sign up" src="../img/hashed_API.png" /></p>
+<ul>
+<li>Get an <a href="https://ifttt.com/join">IFTTT account</a> </li>
+</ul>
+<p><img alt="IFTTT sign up" src="../img/IFTTT_signup.png" /></p>
+<ul>
+<li>Login to your IFTTT.com account and select the "New Applet" button.</li>
+</ul>
+<p><img alt="IFTTT new applet" src="../img/IFTTT_newapplet.png" /></p>
+<ul>
+<li>In the screen that appears, click on the blue "+this" part of the screen</li>
+</ul>
+<p><img alt="IFTTT this" src="../img/IFTTT_this.png" /></p>
+<ul>
+<li>In the next screen, type "button" in the search field and then click on the red box labelled "ButtonWidget"</li>
+</ul>
+<p><img alt="IFTTT button widget" src="../img/IFTTT_button.png" /></p>
+<ul>
+<li>Connect the buttonwidget by clicking on the large red "connect" button (You will only have to "connect" the widgets for the first applet you make.  After that the widgets will already connected to your IFTTT account.)</li>
+</ul>
+<p><img alt="IFTTT button connect" src="../img/IFTTT_connect1.png" /></p>
+<ul>
+<li>Click on the large red "button press" box </li>
+</ul>
+<p><img alt="IFTTT button press" src="../img/IFTTT_buttonpress.png" /></p>
+<ul>
+<li>Click on the blue "+that" text</li>
+</ul>
+<p><img alt="IFTTT then" src="../img/IFTTT_that.png" /></p>
+<ul>
+<li>Enter "maker" in the search field and click on the Maker app</li>
+</ul>
+<p><img alt="IFTTT maker" src="../img/IFTTT_maker.png" /></p>
+<ul>
+<li>Connect the Maker app</li>
+</ul>
+<p><img alt="IFTTT maker connect" src="../img/IFTTT_connect2.png" /></p>
+<ul>
+<li>Select the grey "Make a Web Request" box</li>
+</ul>
+<p><img alt="IFTTT web request" src="../img/IFTTT_webrequest.png" /></p>
+<ul>
+<li>Now you will have a blank web request template to complete.  </li>
+</ul>
+<p><img alt="IFTTT action fields" src="../img/IFTTT_actionfields.png" /></p>
+<p>The following info should be filled in:</p>
+<p>URL: https://yoursite.herokuapp.com/api/v1/treatments.json (change the "yoursite" part to your NS info)</p>
+<p>Method: POST</p>
+<p>Content Type: application/json</p>
+<p>Body:  The content of the body will depend on the action that you would like this particular button press to perform.  You can only do ONE of the actions per button.  Some sample content:</p>
+<p>Note</p>
+<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;eventType&quot;: &quot;Note&quot;, &quot;notes&quot;: &quot;Hi mom, I love you!&quot;, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
+</code></pre>
+
+<p>Low Treatment</p>
+<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;reason&quot;: &quot;low treatment&quot;, &quot;carbs&quot;: 15, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
+</code></pre>
+
+<p>Pump Site Change</p>
+<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;eventType&quot;: &quot;Site Change&quot;, &quot;duration&quot;: 0, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
+</code></pre>
+
+<p>CGM Sensor Start</p>
+<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;eventType&quot;: &quot;Sensor Start&quot;, &quot;duration&quot;: 0, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
+</code></pre>
+
+<h3 id="understanding-the-json-in-the-body">Understanding the JSON in the Body:</h3>
+<ul>
+<li>enteredBy: Will show up on the NS website this way - enter what you want</li>
+<li>eventType: defines what we are doing - leave as is</li>
+<li>reason: will show up on the NS website - enter what you want</li>
+<li>targets: specify the range you want - enter what you want</li>
+<li>duration: you can make them as long or as short as you want - enter what you want</li>
+<li>
+<p>secret: your hashed API secret key</p>
+</li>
+<li>
+<p>Click the "Create Action" button on the bottom of the screen when you finish.</p>
+</li>
+<li>
+<p>Now is your chance to change the title of your Applet now to something meaningful.  You can turn on notifications, too, using the slider shown.  If you turn on the notifications, you will get an alert on your phone and pebble watch when the button press has been successfully deployed.  Finish the IFTTT button by clicking on the Finish button that appears.  </p>
+</li>
+</ul>
+<p><img alt="IFTTT finish" src="../img/IFTTT_finish.png" /></p>
+<ul>
+<li>Repeat the setup for New Applets for as many automated actions as you would like to setup.</li>
+</ul>
+<p><img alt="IFTTT applets" src="../img/IFTTT_applets.png" /></p>
+<h2 id="enable-ifttt-in-your-nightscout-site">Enable IFTTT in your Nightscout site</h2>
+<ul>
+<li>Find your Maker Key by going to your IFTTT account, Services and then clicking on Maker, then Maker settings.</li>
+</ul>
+<p><img alt="IFTTT services account" src="../img/IFTTT_services.png" /></p>
+<p><img alt="IFTTT services2" src="../img/IFTTT_services2.png" /></p>
+<ul>
+<li>You will see your Maker Key as the last part of the URL; copy and paste that last part (the red underlined part as shown)</li>
+</ul>
+<p><img alt="IFTTT markerkey" src="../img/IFTTT_makerkey.png" /></p>
+<ul>
+<li>Login to your Nightscout site host (azure or heroku) and (1) add your Maker Key to the MAKER_KEY line and (2) add "maker" to your ENABLE line.</li>
+</ul>
+<p><img alt="IFTTT NS marker key" src="../img/IFTTT_NSkey.png" /></p>
+<p><img alt="IFTTT NS enable" src="../img/IFTTT_enable.png" /></p>
+<h2 id="install-ifttt-app-on-your-iphoneandroid">Install IFTTT app on your iPhone/Android</h2>
+<ul>
+<li>
+<p>Download the IFTTT app on your phone and log in.</p>
+</li>
+<li>
+<p>You can add homescreen quick buttons.  Click on your IFTTT app and login, click on My Applets in the bottom right corner, and then click on the applet that you'd like to work with.  From the the middle of the applet, click on the Widget Settings, and then click on the Add button for the Homescreen Icon.</p>
+</li>
+</ul>
+<p><img alt="IFTTT homescreen" src="../img/IFTTT_homescreen.PNG" /></p>
+<ul>
+<li>For iPhone users, if you downswipe from the top of your iPhone screen, you will have the Today view or Notifications showing.  They are separate pages; Today view is on the left, Notifications is on the right.  You can left/right swipe to go between them.  Go into the Today view and scroll to the bottom, click "edit". This should show a list of existing widgets, followed by a list of "more widgets" with green + signs.  Click on the IFTTT's green circle and the widget will be moved to the top, active widgets area.  You can hold your finger on the three left lines of the IFTTT widget row to drag it to the top of your widget panel, if you prefer to have it as the top-most widget. </li>
+</ul>
+<p><img alt="IFTTT Today View" src="../img/IFTTT_today.PNG" /></p>
+<p>If you end up with more than four IFTTT applets, they will appear in reverse-order of when they were created...which may not be the same as you'd prefer them to appear on your widget bar.  If you'd like to reorder them:</p>
+<ul>
+<li>go into your iPhone's IFTTT app</li>
+<li>click on My Applets</li>
+<li>click on the gear icon in upper left of screen</li>
+<li>click on Widgets</li>
+<li>click on the pencil icon in upper right of screen</li>
+<li>click and hold the three lines that appear on the right side of the widget that you want to move.  Drag the widget to the order in the list that you'd like it to appear in your widget quickscreen.</li>
+</ul>
+<h2 id="alexa-integration">Alexa integration</h2>
+<ul>
+<li>Since you have IFTTT/Maker requests working, you can get it to work with anything that supports IFTTT, including Alexa. You will need to add "alexa" to your ENABLE line in your Nightscout host settings (azure) or config vars (heroku).  And then repeat the steps above, but instead of using "ButtonWidget" service we started with earlier (the "+if" part of the setup)...you will use the "AmazonAlexa" service.</li>
+</ul>
+<p><img alt="Maker Request" src="../img/alexa_maker.png" />
+  * Alexa requests do not need underscores, FYI.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
