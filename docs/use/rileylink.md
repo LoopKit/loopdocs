@@ -65,3 +65,4 @@ Keep your RileyLink and lipo battery protected from damage.  Lipo batteries are 
 <p align="center">
 <img src="../img/rl_case.jpg" width="400">
 </p> 
+

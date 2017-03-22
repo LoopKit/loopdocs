@@ -140,3 +140,4 @@ For new Loopers (but old Nightscout users), you will need to add some variables 
 ## EVENT HISTORY
 
 Don't forget to keep you Loop App's Preferred Source set to `Event History` if you want your NS site to smoothly integrate.  Preferred Source set to `Reservoir` will result in carbs not being uploaded and temp basals not being displayed.
+

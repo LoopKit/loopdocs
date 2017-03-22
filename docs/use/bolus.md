@@ -35,3 +35,4 @@ While you adapt to new bolusing techniques, it is important to monitor closely t
 Many Loop users use a combination of (1) splitting individual boluses and/or (2) setting carbs in the future before a slower, larger carb meal to help control BG levels that would otherwise rise without an extended bolus.
 
 Using the [Glucodyn](https://perceptus.org) model can help you simulate new bolusing strategies.  Glucodyn allows you to simulate your post-prandial BGs based on your particular ISF, carb ratio, and carbs.  You can simulate split boluses and watch their impact on simulated BG responses.  The underlying math of the Glucodyn model is the basis of Loop's insulin/carb calculations.
+

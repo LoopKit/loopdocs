@@ -5,7 +5,9 @@ Now that you have the Loop app installed on your iPhone, we need to input the se
 ## Settings	 
 
 <p align="center">
+
 <img src="../img/loop_settings.jpg" width="450">
+
 </p> 
 
 Normally, we would start by explaining the displays on an application, but your Loop won’t have much showing initially until we get some basic settings input.  So, let’s start by clicking on the Loop Settings button in the tool bar.  It looks like a little sprocket.
@@ -14,10 +16,13 @@ Normally, we would start by explaining the displays on an application, but your 
 ### Loop Version 
 
 <p align="center">
-<img src="../img/loop_version.png" width="400">
+
+<img src="../img/loop_version.jpg" width="400">
+
 </p> 
 
 The first graphic at the top of the Loop settings display shows the version of the software, e.g.,  Loop v1.3 in this example.  This can be helpful when working with other users of the software to know what version you are running.
+
 
 
 ### Closed Loop
@@ -167,6 +172,7 @@ The settings under the Device section are mostly for your information only.  How
 
 The `Signal Strength` showing under this area of the menu is the signal strength of the BT with the iPhone.  It is **not** the signal strength of the radio communications with the pump.
 
+
 ### Pump
 The Pump ID should be automatically filled in from the setting you have already entered previously.  The pump model will say unknown until we proceed with “Tune Radio Frequency.” 
 
@@ -180,6 +186,7 @@ The Pump ID should be automatically filled in from the setting you have already 
 * MySentry Pair:  MySentry Pairing is for x23 and x54 pumps.  Follow the directions as shown in the RileyLink command screen for MySentry.  You do not have to worry about this command if you are using an x15 or x22 model pump, as they do not have MySentry.  If you do not perform a MySentry pairing and have an x23 or x54 pump, your loop will only turn green every 15 minutes.
 
 * Fetch Recent History, Fetch Recent Glucose, Write Glucose History Timestamp, Get Pump Model, and Send Button Press, Read Pump Status are all ways of asking the pump for information you might be interested in.  They are not part of setting up the Loop.  Send Button Press can be useful to see if the communication between the RileyLink and pump is working.  If successful, the screen on the pump will light up and Loop will confirm the button press with a “success” message.  Read Pump Status is also nice quick pump read for reservoir volume, pump battery voltage, and pump status (bolusing or suspending).
+
 
 ## Pump Setup
 Now that you are done with your Loop app settings, you need to finish setting up your pump for Loop use.  Generally, the setup of the pump is similar to setting up any pump for non-looping use.  One notable exception: you will need to change those batteries more often with Looping.  Loop will drain pump batteries much faster than regular pump regimes, and Loop failures will increase in frequency as the pump battery gets low.}
