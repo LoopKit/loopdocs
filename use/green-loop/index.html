@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Green Loop - Loop Docs</title>
+	<title>Getting a Green Loop - Loop Docs</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -125,6 +125,12 @@
                     
                         
 <li >
+    <a href="../../build/widget/">iPhone widget</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../build/watch/">Apple Watch</a>
 </li>
 
@@ -132,12 +138,6 @@
                         
 <li >
     <a href="../../build/updating/">Updating</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../build/troubleshooting/">Troubleshooting</a>
 </li>
 
                     
@@ -152,7 +152,13 @@
                     
                         
 <li >
-    <a href="../overview/">Overview</a>
+    <a href="../overview/">Loop Display</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Getting a Green Loop</a>
 </li>
 
                     
@@ -169,12 +175,6 @@
 
                     
                         
-<li class="active">
-    <a href="./">Green Loop</a>
-</li>
-
-                    
-                        
 <li >
     <a href="../carbs/">Carb Entries</a>
 </li>
@@ -183,6 +183,12 @@
                         
 <li >
     <a href="../bolus/">Bolus</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../workout/">Workout Targets</a>
 </li>
 
                     
@@ -201,6 +207,12 @@
                         
 <li >
     <a href="../rileylink/">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../notifications/">Loop Notifications</a>
 </li>
 
                     
@@ -314,12 +326,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../close-loop/">
+                    <a rel="next" href="../overview/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../carbs/">
+                    <a rel="prev" href="../open-loop/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -333,23 +345,46 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#loop-fails-to-turn-green">Loop fails to turn green</a></li>
+        <li class="main active"><a href="#loop-fails-to-turn-green">Loop fails to turn green?</a></li>
         
-            <li><a href="#pump">Pump</a></li>
+            <li><a href="#check-your-pump">Check your Pump</a></li>
         
-            <li><a href="#loopcgm">Loop/CGM</a></li>
+            <li><a href="#check-your-rileylink">Check your RileyLink</a></li>
         
-            <li><a href="#rileylink">RileyLink</a></li>
+            <li><a href="#check-your-loop">Check your Loop</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="loop-fails-to-turn-green">Loop fails to turn green</h1>
-<h2 id="pump">Pump</h2>
-<h2 id="loopcgm">Loop/CGM</h2>
-<h2 id="rileylink">RileyLink</h2></div>
+<h1 id="loop-fails-to-turn-green">Loop fails to turn green?</h1>
+<p>If you are initially starting the Loop app, wait about 15-30 minutes for the Loop to turn green and start working.  If the Loop remains grey, there are several possible causes for this:</p>
+<h2 id="check-your-pump">Check your Pump</h2>
+<ul>
+<li>Your max basal setting on your pump needs to be equal to (or greater than) the max basal setting in Loop.  </li>
+<li>Your temp basal type needs to be set to units/hr, not %.</li>
+<li>Your Remote ID options on your pump needs to be "on" with a code (any code) entered.</li>
+<li>Your pump cannot be suspended.  Resume insulin deliveries.</li>
+<li>Your pump battery may be low.  Replace the battery.</li>
+</ul>
+<h2 id="check-your-rileylink">Check your RileyLink</h2>
+<ul>
+<li>Your RileyLink battery needs to be securely plugged in, check those connections.</li>
+<li>Your RileyLink battery needs adequate charge (usually for first time users...batteries aren't shipped fully charged)</li>
+<li>Double check your Pump ID (serial number) is correct</li>
+<li>Double check that your G5 transmitter ID is correct (remember to update this when you change transmitters)</li>
+<li>Loop may be having trouble communicating with the pump. Try tuning.  Move RileyLink closer to pump.</li>
+<li>Check that the iPhone has a bluetooth connection with RL. The RL's green light should remain on when BT is connected with iPhone.</li>
+</ul>
+<h2 id="check-your-loop">Check your Loop</h2>
+<ul>
+<li>Check that you have the Minimum BG Guard value set in Loop app settings</li>
+<li><strong>Check that your CGM data is updating...if the CGM reading has a yellow alert showing or CGM data older than 5 minutes, loop will stay grey</strong></li>
+<li>Check that you don't have another Loop app running at the same time on same iPhone (for users who install multiple Loop apps)</li>
+<li>If a recommended basal is showing, and this is your first loop, try clicking on the recommendation to enact it.</li>
+</ul>
+<p>I<strong>f all of those things are set correctly and your loop is still not working, try closing the Loop app and restarting.  Finally, if that does not correct the problem, restart the iPhone.</strong></p></div>
         </div>
 
         <footer class="col-md-12">

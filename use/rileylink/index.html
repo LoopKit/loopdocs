@@ -125,6 +125,12 @@
                     
                         
 <li >
+    <a href="../../build/widget/">iPhone widget</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../build/watch/">Apple Watch</a>
 </li>
 
@@ -132,12 +138,6 @@
                         
 <li >
     <a href="../../build/updating/">Updating</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../build/troubleshooting/">Troubleshooting</a>
 </li>
 
                     
@@ -152,7 +152,13 @@
                     
                         
 <li >
-    <a href="../overview/">Overview</a>
+    <a href="../overview/">Loop Display</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../green-loop/">Getting a Green Loop</a>
 </li>
 
                     
@@ -170,12 +176,6 @@
                     
                         
 <li >
-    <a href="../green-loop/">Green Loop</a>
-</li>
-
-                    
-                        
-<li >
     <a href="../carbs/">Carb Entries</a>
 </li>
 
@@ -183,6 +183,12 @@
                         
 <li >
     <a href="../bolus/">Bolus</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../workout/">Workout Targets</a>
 </li>
 
                     
@@ -201,6 +207,12 @@
                         
 <li class="active">
     <a href="./">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../notifications/">Loop Notifications</a>
 </li>
 
                     
@@ -319,7 +331,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../../algorithm/overview/">
+                    <a rel="prev" href="../notifications/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -333,36 +345,78 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#riley-link">Riley Link</a></li>
+        <li class="main active"><a href="#rileylink">RileyLink</a></li>
         
-            <li><a href="#tuning">tuning</a></li>
+            <li><a href="#tuning-the-radio">Tuning the Radio</a></li>
         
-            <li><a href="#bluetooth">bluetooth</a></li>
+            <li><a href="#bluetooth">Bluetooth</a></li>
         
-            <li><a href="#charging">charging</a></li>
+            <li><a href="#lights">Lights</a></li>
         
-            <li><a href="#lights">lights</a></li>
+            <li><a href="#charging">Charging</a></li>
         
-            <li><a href="#range">range</a></li>
+            <li><a href="#range">Range</a></li>
         
-            <li><a href="#lipo-battery-care">lipo battery care</a></li>
+            <li><a href="#lipo-battery">Lipo Battery</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="riley-link">Riley Link</h1>
-<h2 id="tuning">tuning</h2>
-<p>Note:  The strength of the radio communications with the pump is shown by the last number of the tune.  Tuning with -99 means NO communications were established.  Generally, if you have tuning in the -90s, your RileyLink-pump communications will not work.  If you have tuning in the -80s, you may have periodic communication failures.  If your tuning is in the -70s or better, your communications should be pretty stable.</p>
-<h2 id="bluetooth">bluetooth</h2>
-<h2 id="charging">charging</h2>
-<h2 id="lights">lights</h2>
-<h2 id="range">range</h2>
-<h2 id="lipo-battery-care">lipo battery care</h2>
+<h1 id="rileylink">RileyLink</h1>
+<h2 id="tuning-the-radio">Tuning the Radio</h2>
+<p>The RileyLink communicates with the pump through radio frequency communications.  Numerous factors can influence how well those communications can function...interferences from other devices, temperature, physical blocking, etc.</p>
+<p>Knowing a little about the strength of the radio communications will help you troubleshoot Loop errors.  When you <code>Tune Radio Frequency</code> in the Riley Link menu, it is testing for the strongest frequency to communicate with the pump.  Usually this frequency is pretty constant, but during temperature changes it may be that the best frequency is not the one currently set.  The tuning results also show which frequency is the strongest. </p>
+<p>For example, in the screenshot below, the strength of the radio communications with the pump is shown by the last number of the tune.  Frequencies with tuning results of -99 means NO communications were established at that frequency.  RileyLink will use the strongest frequency tune for its pump communications.  In the screenshot, the best frequency returned a result of <code>-37</code> at a frequency of <code>916.60 MHz</code>, so RileyLink will set that <code>916.60 MHz</code> for its pump communications.</p>
+<p align="center">
+<img src="../img/rl_tune.jpg" width="400">
+</p>
+
+<p>Generally, if you have tuning in the -90s, your RileyLink-pump communications will not work.  If you have tuning in the -80s, you may have periodic communication failures.  If your tuning is in the -70s or better, your communications should be pretty stable.  </p>
+<p>Experiment with your RileyLink by moving it closer and farther away from the pump.  Try putting it on the other side of your body, or put it in a purse.  Test the tuning results in real world situations that you think you'd be encountering, such as where you will have the RileyLink placed during overnight charging. Perform tunes at the various distances and situations.  This will help you understand how far from the pump your RileyLink can get before it will affect Loop performance.  </p>
+<h2 id="bluetooth">Bluetooth</h2>
+<p>RileyLink communicates with your iPhone and Loop app through Bluetooth.  If your iPhone has BT issues, your Loop will have failures.  There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interferring with the Loop.  If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.</p>
+<p>Your BT signal strength can be seen in the Loop settings, under the RileyLink menu, on the <code>Signal Strength</code> line.  As you move closer and further away from your phone, you can watch that number dynamically change. This line is <strong>not</strong> displaying the signal strength of your pump communications discussed above (those are shown in the tuning results screen).</p>
+<h2 id="lights">Lights</h2>
+<p>RileyLink has several lights that you may notice from time to time.  Depending on the model of RileyLink that you have, you may see lights more or less frequently.  The older models of RileyLink have more lights on typically.</p>
+<ul>
+<li>
+<p>Red light: Charging light.  The red light will remain on while RileyLink is charging, and it will turn off when charging is complete.  You may notice the red light turn on periodically even after charging is complete...it's just "topping off".</p>
+</li>
+<li>
+<p>Green light: BT light.  The green light will remain on while you have BT connection with your iPhone.  If that green light fails to stay on, you should troubleshoot your BT connections.  Try restarting BT on your iPhone and/or turning the RileyLink off/on by its power switch.</p>
+</li>
+<li>
+<p>Blue light: Pump communications.  The blue light will flash periodically as it is communicating with the pump.  It's just letting you know that it is busy talking and collecting info.  You will see the blue light flash especially when you do a <code>Fetch History</code> command as that pulls a lot of information from the pump.</p>
+</li>
+</ul>
+<h2 id="charging">Charging</h2>
+<p>The battery that comes with RileyLink will easily last a full day of constant Loop use.  Typically, it can go into the 30-hour range without problem.  Most people charge their RileyLink each night when they are sleeping.  You don't have to worry about leaving the RileyLink plugged in "too long" for charging.  It will automatically stop charging the battery when it is fully charged.</p>
+<h2 id="range">Range</h2>
+<p>The range that your RileyLink will function is <strong>heavily</strong> dependent on the environment that you are in. Read the section about Tuning to help determine how far your RileyLink can dependably maintain an adequate signal strength in your particular environment.  Most people wear the RileyLink in a pocket or carry a belt holster during the day.  Typically, RileyLink will need to be closer to the pump than the iPhone.  The radio frequency communications will have a shorter range than the BT communications.</p>
+<h2 id="lipo-battery">Lipo Battery</h2>
 <p>If you ordered your RileyLink preassembled, you should plug in the battery cable.  Please make sure your RileyLink’s battery cable is securely pushed all the way into the socket.  Poor battery cable connection can make the Loop communications fail.</p>
-<p>RileyLink with loose battery cable.</p>
-<p>RileyLink with properly secured battery cable.</p></div>
+<p align="center">
+<b>RileyLink with loose battery cable.</b>
+</p>
+
+<p align="center" >
+<img src="../img/loose_battery.jpg" width="400">
+</p>
+
+<p align="center">
+<b>RileyLink with properly secured battery cable.</b>
+</p>
+
+<p align="center">
+<img src="../img/secure_battery.jpg" width="400">
+</p>
+
+<p>Keep your RileyLink and lipo battery protected from damage.  Lipo batteries are unsafe when damaged or punctured, so the case is an important part of safe Looping.</p>
+<p align="center">
+<img src="../img/rl_case.jpg" width="400">
+</p></div>
         </div>
 
         <footer class="col-md-12">

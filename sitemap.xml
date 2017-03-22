@@ -70,6 +70,12 @@
     </url>
         
     <url>
+     <loc>/build/widget/</loc>
+     <lastmod>2017-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/build/watch/</loc>
      <lastmod>2017-03-22</lastmod>
      <changefreq>daily</changefreq>
@@ -81,18 +87,18 @@
      <changefreq>daily</changefreq>
     </url>
         
-    <url>
-     <loc>/build/troubleshooting/</loc>
-     <lastmod>2017-03-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     
 
     
         
     <url>
      <loc>/use/overview/</loc>
+     <lastmod>2017-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/green-loop/</loc>
      <lastmod>2017-03-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -110,12 +116,6 @@
     </url>
         
     <url>
-     <loc>/use/green-loop/</loc>
-     <lastmod>2017-03-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/use/carbs/</loc>
      <lastmod>2017-03-22</lastmod>
      <changefreq>daily</changefreq>
@@ -123,6 +123,12 @@
         
     <url>
      <loc>/use/bolus/</loc>
+     <lastmod>2017-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/workout/</loc>
      <lastmod>2017-03-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -141,6 +147,12 @@
         
     <url>
      <loc>/use/rileylink/</loc>
+     <lastmod>2017-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/notifications/</loc>
      <lastmod>2017-03-22</lastmod>
      <changefreq>daily</changefreq>
     </url>

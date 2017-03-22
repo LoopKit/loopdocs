@@ -125,6 +125,12 @@
                     
                         
 <li >
+    <a href="../widget/">iPhone widget</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../watch/">Apple Watch</a>
 </li>
 
@@ -132,12 +138,6 @@
                         
 <li class="active">
     <a href="./">Updating</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../troubleshooting/">Troubleshooting</a>
 </li>
 
                     
@@ -152,7 +152,13 @@
                     
                         
 <li >
-    <a href="../../use/overview/">Overview</a>
+    <a href="../../use/overview/">Loop Display</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../use/green-loop/">Getting a Green Loop</a>
 </li>
 
                     
@@ -170,12 +176,6 @@
                     
                         
 <li >
-    <a href="../../use/green-loop/">Green Loop</a>
-</li>
-
-                    
-                        
-<li >
     <a href="../../use/carbs/">Carb Entries</a>
 </li>
 
@@ -183,6 +183,12 @@
                         
 <li >
     <a href="../../use/bolus/">Bolus</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../use/workout/">Workout Targets</a>
 </li>
 
                     
@@ -201,6 +207,12 @@
                         
 <li >
     <a href="../../use/rileylink/">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../use/notifications/">Loop Notifications</a>
 </li>
 
                     
@@ -319,7 +331,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../troubleshooting/">
+                    <a rel="prev" href="../../use/overview/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -333,14 +345,43 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#how-to-update-your-loop-app">How to update your Loop app</a></li>
+        <li class="main active"><a href="#how-to-update-loop">How to Update Loop</a></li>
+        
+            <li><a href="#direct-download">Direct download</a></li>
+        
+            <li><a href="#xcode-source-control-and-github-git">Xcode Source Control and GitHub git</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="how-to-update-your-loop-app">How to update your Loop app</h1></div>
+<h1 id="how-to-update-loop">How to Update Loop</h1>
+<p>When a new version of Loop is released, you can click <a href="https://github.com/LoopKit/Loop/releases">HERE</a> to read what features or fixes were a part of the new release.  If you decide you'd like to update to the new version, your upgrade process will depend on how you initially installed Loop.</p>
+<h2 id="direct-download">Direct download</h2>
+<p>If you used a direct download of the .zip file from GitHub (aka Option 1 Super Easy), then you will simply do the same again.  </p>
+<ul>
+<li>
+<p>Directly download the current version's zip file <a href="https://github.com/LoopKit/Loop/archive/master.zip">HERE (for master branch)</a> or <a href="https://github.com/LoopKit/Loop/archive/dev.zip">HERE (for dev branch)</a></p>
+</li>
+<li>
+<p>Follow the guide for installation as you did before, beginning with the changing of the MAIN_APP_BUNDLE_IDENTIFIER.  If you wish to keep your existing Loop app's settings, then use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation.  If you can't remember it, you can open your old folder on your computer and check what it was.  Or alternatively, open your Loop settings, open up the Issue Report and look for a line titled <code>appGroupName</code>.  </p>
+</li>
+</ul>
+<p align="center">
+<img src="../img/app_group_name.jpg" width="400">
+</p>
+
+<ul>
+<li>
+<p>Make any customizations you are interested.</p>
+</li>
+<li>
+<p>Build Loop onto iPhone and you've completed your upgrade.  Your old Loop app will have been updated to the new version and your settings will carry forward to the new version.</p>
+</li>
+</ul>
+<h2 id="xcode-source-control-and-github-git">Xcode Source Control and GitHub git</h2>
+<p>If you used Clone with GitHub (Option 2 Sorta Easy) or GitHub Desktop (Option 3 Advanced), you will want to <code>cd</code> into your Loop repository on your local computer and <code>git pull https://github.com/LoopKit/Loop.git</code> to update your Loop repository.  Then you can navigate to the Loop.xcodeproj and update as described above.</p></div>
         </div>
 
         <footer class="col-md-12">

@@ -125,6 +125,12 @@
                     
                         
 <li >
+    <a href="../../build/widget/">iPhone widget</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../build/watch/">Apple Watch</a>
 </li>
 
@@ -132,12 +138,6 @@
                         
 <li >
     <a href="../../build/updating/">Updating</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../build/troubleshooting/">Troubleshooting</a>
 </li>
 
                     
@@ -152,7 +152,13 @@
                     
                         
 <li >
-    <a href="../overview/">Overview</a>
+    <a href="../overview/">Loop Display</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../green-loop/">Getting a Green Loop</a>
 </li>
 
                     
@@ -170,12 +176,6 @@
                     
                         
 <li >
-    <a href="../green-loop/">Green Loop</a>
-</li>
-
-                    
-                        
-<li >
     <a href="../carbs/">Carb Entries</a>
 </li>
 
@@ -183,6 +183,12 @@
                         
 <li class="active">
     <a href="./">Bolus</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../workout/">Workout Targets</a>
 </li>
 
                     
@@ -201,6 +207,12 @@
                         
 <li >
     <a href="../rileylink/">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../notifications/">Loop Notifications</a>
 </li>
 
                     
@@ -319,7 +331,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../priming/">
+                    <a rel="prev" href="../workout/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -333,29 +345,48 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#bolus-with-loop">Bolus with Loop</a></li>
+        <li class="main active"><a href="#bolus">Bolus</a></li>
         
-            <li><a href="#bolus-guard">bolus guard</a></li>
+            <li><a href="#meal-bolus">Meal Bolus</a></li>
         
-            <li><a href="#bolus-strategies">bolus strategies</a></li>
+            <li><a href="#correction-bolus">Correction Bolus</a></li>
         
-            <li><a href="#correction-bolus">correction bolus</a></li>
+            <li><a href="#bolus-failure-notifications">Bolus Failure Notifications</a></li>
         
-            <li><a href="#bolus-failure-notifications">bolus failure notifications</a></li>
+            <li><a href="#eating-soon">Eating Soon</a></li>
         
-            <li><a href="#pending-bolus">pending bolus</a></li>
+            <li><a href="#bolus-strategies">Bolus Strategies</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="bolus-with-loop">Bolus with Loop</h1>
-<h2 id="bolus-guard">bolus guard</h2>
-<h2 id="bolus-strategies">bolus strategies</h2>
-<h2 id="correction-bolus">correction bolus</h2>
-<h2 id="bolus-failure-notifications">bolus failure notifications</h2>
-<h2 id="pending-bolus">pending bolus</h2></div>
+<h1 id="bolus">Bolus</h1>
+<p align="center">
+<img src="../img/toolbar.jpg" width="400">
+</p>
+
+<p>Bolus entries can be made manually through the bolus tool (double orange triangles) in the toolbar, either as part of a meal bolus or as a correction for a high BG.</p>
+<h2 id="meal-bolus">Meal Bolus</h2>
+<p>Loop has a Bolus Wizard, similar to a pump’s bolus wizard.  After a carb entry is made, Loop will provide a bolus screen with a recommended bolus amount.  If you want to deliver the total amount of the recommended bolus, simply tap on the recommended amount of units and the bolus delivery line will automatically be filled-in with the same units.  If you want to give fewer units than the recommended amount, you can manually enter the desired amount to be delivered.   </p>
+<p>The Bolus Wizard will not offer a recommended bolus if your BG is below, or predicted to go below, your specified Minimum BG Guard.  A screen will appear letting you know the reason no bolus is being recommended as well as the status of your active COB and IOB.  You can choose to override that warning and give a bolus, or treat the low BG and come back to the bolus tool when your BG has recovered.</p>
+<p align="center">
+<img src="../img/below_min.png" width="400">
+</p>
+
+<h2 id="correction-bolus">Correction Bolus</h2>
+<p>Occasionally, a recommended bolus will be offered in the bolus screen unrelated to a recent carb entry.  In those cases, Loop is calculating that it will not be able to stay in target range through the use of max temp basals alone and is offering a “correction bolus”.  Correction boluses will not be delivered automatically by Loop, they must be delivered by the user.  Loop will also not give an alert when a correction bolus is being offered, the bolus entry tool must be clicked to check for one.  In a well-run loop with decent carb counting, correction boluses should be infrequently needed.</p>
+<p>Part of Loop's predictions for future BG changes include a component called BG momentum. Loop looks at the previous three BG readings and calculates a best-fit-straight-line for those three points. In other words, it tries to draw a future trend line using the last three BG data points. Loop extends that line 30 minutes into the future and gives a fair amount of weight to that component of the BG prediction. In instances of rapidly changing BGs, BG momentum may overestimate the rise/fall of BG. Therefore, please be cautious giving corrective boluses using Loop recommendations during times of rapid change.</p>
+<h2 id="bolus-failure-notifications">Bolus Failure Notifications</h2>
+<p>On occasion, you will receive notification that a bolus may have failed. In some of these cases, the bolus actually will begin delivery. Therefore, you should always check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.</p>
+<h2 id="eating-soon">Eating Soon</h2>
+<p>You can modify your Workout Target range to help prebolus for meals.  If you set your Workout Target to 80 mg/dl - 80 mg/dl for an hour before a meal, this will help Loop to deliver additional insulin prior to the meal, and help control post-prandial BGs.  The Loop will account for the amount of insulin it has prebolused when it offers the recommended bolus for the meal.</p>
+<h2 id="bolus-strategies">Bolus Strategies</h2>
+<p>Unfortunately, Loop cannot enact temp basals while the pump is delivering a square wave or dual wave bolus.  Therefore, we recommend that you find alternate bolusing strategies for situation where you would've previously used those extended bolusing techniques.</p>
+<p>While you adapt to new bolusing techniques, it is important to monitor closely to see what works for you.  It will take some trial and error to get it right.  In particular, pay close attention to what you enter for the carb absorption time for the food.  If you are used to using a square wave or extended bolus, then it is for food that takes a longer than normal period of time to digest so adjust accordingly. </p>
+<p>Many Loop users use a combination of (1) splitting individual boluses and/or (2) setting carbs in the future before a slower, larger carb meal to help control BG levels that would otherwise rise without an extended bolus.</p>
+<p>Using the <a href="https://perceptus.org">Glucodyn</a> model can help you simulate new bolusing strategies.  Glucodyn allows you to simulate your post-prandial BGs based on your particular ISF, carb ratio, and carbs.  You can simulate split boluses and watch their impact on simulated BG responses.  The underlying math of the Glucodyn model is the basis of Loop's insulin/carb calculations.</p></div>
         </div>
 
         <footer class="col-md-12">
