@@ -4,7 +4,8 @@ Regardless of whether you are on Azure or Heroku for Nightscout, you are using a
 
 The good news?  Loop can still run just fine until you cleanout your mLab database.  The bad news?  You just won’t be able to remotely monitor Loop through NS until you clear up some storage space in mLab.
 
-There are two ways to cleanout some space or otherwise get into your mLab database
+There are two ways to cleanout some space or otherwise get into your mLab database:
+
 * mLab direct access
 * Nightscout admin tools
 

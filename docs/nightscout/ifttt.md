@@ -144,7 +144,9 @@ CGM Sensor Start
 </p> 
 
 <p align="center">
-<img src="../img/IFTTT_.enable.png" width="550">
+
+<img src="../img/IFTTT_enable.png" width="550">
+
 </p> 
 
 ## Install IFTTT app on your iPhone/Android

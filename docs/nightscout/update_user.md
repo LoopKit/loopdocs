@@ -129,7 +129,7 @@ For new Loopers (but old Nightscout users), you will need to add some variables 
 <img src="../img/open_app.jpg" width="450">
 </p> 
 
-* Click on the settings (those three horizontal lines in upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then press save.
+* Click on the settings (those three horizontal lines in upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then press save.  Your NIGHTSCOUT site is all set-up.  Congrats!
 
 <p align="center">
 <img src="../img/settings_ns.jpg" width="450">
@@ -137,8 +137,7 @@ For new Loopers (but old Nightscout users), you will need to add some variables 
 
 * Double check that your NS Profile settings are current and that you have a basal profile entered, if you want to see the temp basals that Loop is setting.
 
-Your NIGHTSCOUT site is all set-up.  Congrats!
-
 ## EVENT HISTORY
 
-Don't forget to keep you Loop App's Preferred Source set to `Event History` if you want your NS site to smoothly integrate.  Preferred Source set to `Reservoir Volume` will result in carbs not being uploaded and temp basals not being displayed.
+Don't forget to keep you Loop App's Preferred Source set to `Event History` if you want your NS site to smoothly integrate.  Preferred Source set to `Reservoir` will result in carbs not being uploaded and temp basals not being displayed.
+
