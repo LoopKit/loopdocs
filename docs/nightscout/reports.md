@@ -1,4 +1,4 @@
-# Reports available from NS
+# Reports
 
 ## visits to endo
 ## treatments report
