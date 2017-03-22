@@ -3,7 +3,7 @@
 This section of the docs will go over the Loop displays available and what information they offer.  Information about your Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app.  
 
 ## Status Screen
-The Status Screen is the main root navigation screen in Loop.  It is broken up into 3 main display areas; Heads Up display (HUD), Charts, and Toolbar. The HUD is the top area of the screen.  This shows status of the last time loop ran, current BG Reading, current temp-basal, current insulin reservoir volume remaining, and current pump percentage battery remaining. The next area is the charting area. This includes, glucose trend and prediction, Insulin on Board, Temp Basal, and Carbohydrates.  The final display area is the toolbar which has buttons for Carbohydrate Bolus/Wizard, Manual Bolus, Workout Mode, and Settings.
+The Status Screen is the main root navigation screen in Loop.  It is broken up into 3 main display areas; Heads Up display (HUD), Charts, and Toolbar. The HUD is the top area of the screen.  This shows status of the last time loop ran, current BG Reading, current temp-basal, current insulin reservoir volume remaining, and current pump percentage battery remaining. The next area is the charting area. This includes, glucose trend and prediction, Active Insulin, Insulin Delivery, and Carbohydrates.  The final display area is the toolbar which has buttons for Carbohydrate, Insulin Bolus, Workout Mode, and Settings.
 
 ![Main Status Screen](img/main_screen.jpg)
 
@@ -12,13 +12,13 @@ The Status Screen is the main root navigation screen in Loop.  It is broken up i
 #### Loop Status
 The Loop Status is the colored circle in the upper left corner of the main Loop display.  There are four colors that are typically displayed.  
 
-<img src="img/grey_loop.jpg" width="50">A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.
+<img src="img/grey_loop.jpg" width="50">A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.  If you can't get the loop to turn grey, try reading the Use guide for Green Loop.
 
-<img src="img/green_loop.jpg" width="50">A Green Circle indicates the Loop has been successfully completed within the last 5 minutes.  The time since the loop last completed will be displayed under the circle.
+<img src="img/green_loop.jpg" width="50">A green circle indicates the Loop has been successfully completed within the last 5 minutes.  The time since the loop last completed will be displayed under the circle.
 
-<img src="img/yellow_loop.jpg" width="50">A Yellow Circle indicates the Loop has not completed in the last 5-15 minutes.  It is not unusual to have a few instances of yellow circles throughout a day of looping.  They can be caused by temporarily getting too far away from RileyLink or iPhone (more than about 3-10 feet depending on conditions), CGM failing to read or being in ???, radio frequency “noise” interference, and such.  Generally, most yellow circles will self-resolve without needing any special troubleshooting. 
+<img src="img/yellow_loop.jpg" width="50">A yellow circle indicates the Loop has not completed in the last 5-15 minutes.  It is not unusual to have a few instances of yellow circles throughout a day of looping.  They can be caused by temporarily getting too far away from RileyLink or iPhone (more than about 3-10 feet depending on conditions), CGM failing to read or being in ???, radio frequency “noise” interference, and such.  Generally, most yellow circles will self-resolve without needing any special troubleshooting. 
 
-<img src="img/red_loop.jpg" width="50">A Red Circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the wiki page for Loop fails to Turn Green.   If you have Nightscout integration, you can use the Loop Pill to help troubleshoot.
+<img src="img/red_loop.jpg" width="50">A red circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the Use sections' Green Loop page for troubleshooting tips.   If you have Nightscout integration, you can also use the Loop Pill to help troubleshoot.  Clicking on the red circle will also popup the last error message to help guide your troubleshooting.
 
 <img src="img/open_loop.jpg" width="50">When the circle is notched and not complete, that means the Loop is operating in “open loop” mode.  When the “closed loop” setting is turned on, the loop status will show a completed circle.
 
@@ -30,7 +30,7 @@ The loop status circle will pulse slightly when RileyLink is giving the pump a n
 
 <img src="img/cgm_cloud.jpg" width="50">If the BG is being read from the Dexcom Share Servers, a small cloud icon will be in the corner of the BG reading.  Internet access is required to run in this mode.
 
-<img src="img/cgm_alert.jpg" width="50">When you first start Loop, there may be a small yellow alert next to the BG.  This should go away within a short period of time (around 5 minutes or less).  If the yellow alert remains, something is wrong with fetching BG data.  You can try restarting the Loop app (double tap home button, upswipe on Loop app to close) to see if BG data will resume.  Loop will not work when a yellow BG alert is shown (*note G5 exception below).
+<img src="img/cgm_alert.jpg" width="50">When you first start Loop, there may be a small yellow alert next to the BG.  This should go away within a short period of time (around 5 minutes or less).  If the yellow alert remains, something is wrong with fetching BG data.  You can try restarting the Loop app (double tap home button, upswipe on app to close) to see if BG data will resume.  Loop will not work when a yellow BG alert is shown (*note G5 exception below).
 
 *For Dexcom G5 users, a yellow alert will appear when a calibration is needed.  The alert will clear once the calibration is given, but typically Loop will work IF the yellow alert is only for a needed G5 calibration. 
 
@@ -44,9 +44,7 @@ The loop status circle will pulse slightly when RileyLink is giving the pump a n
 
 #### Battery 
 
-<img src="img/battery.jpg" width="50">For x23, x54 pumps, the battery icon will show 100/75/50/25% increments just as the pump does.  As the battery level decreases, the icon will turn from grey to yellow to red.  
-
-For x22 pumps, the battery icon will read discrete % values.  
+<img src="img/battery.jpg" width="50">For x23, x54 pumps, the battery icon will show 100/75/50/25% increments just as the pump does.  As the battery level decreases, the icon will turn from grey to yellow to red.  For x22 pumps, the battery icon will read discrete % values.  
 
 ## Charts
 
@@ -58,9 +56,13 @@ There are several charts that help you navigate your Loop actions.  Clicking on 
 <img src="img/glucose_graph.jpg" width="400">
 </p> 
 
-The glucose chart displays BG values in your preferred units. The vertical scale of the chart is calculated on the fly by Loop to be as granular as possible while including the highest and lowest readings in the chart.
+The glucose chart displays BG values in your preferred units. The vertical scale of the chart is calculated on the fly by Loop to be as useful as possible while including the highest and lowest readings in the chart.
 
-The horizontal axis is set to go forward from the current time until your DIA forward (so you can see what Loop eventually thinks BG will be). It then goes back in time as far as it can based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time. If you would like to see further back in time you can use Nightscout (see 5.1.6.2) or you can modify your Loop Graph hours (see 4.3.4).
+The horizontal axis is set to go forward from the current time until your DIA forward (so you can see what Loop eventually thinks BG will be). It then goes back in time as far as it can based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time. If you would like to see further back in time you can use Nightscout or you can modify your Loop Graph hours (see the customizations available when you build your Loop app).
+
+The target BG range is shown as a blue bar on the glucose chart.  If you have a single-value target BG range (such as 100-100 mg/dl), no blue range will appear.
+
+The eventual BG displayed in the right side of the chart does NOT take into account a recently enacted temp basal.  In other words, if you are above BG target and Loop just enacted a high temp basal to help, the eventual BG does not reflect the expected lowering of BGs that would result from that recently enacted temp basal.  Loop waits until the insulin has actually been delivery before it "uses" the insulin in its calculations for BG impacts.  If you suspended your pump or had a "no delivery" alarm shortly after the temp basal was started, you would want that accurately reflected in the insulin on board and associated eventual BG.
 
 If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart
 
@@ -70,11 +72,9 @@ If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart
 <img src="img/glucose_hidden.png" width="200">
 </p>
 
-The predicted glucose view is a great way to gain insight into the various components’ importance in Loop’s prediction of eventual BG. You can get to this view by tapping on the Glucose Chart in the Loop Display.
+The predicted glucose view is a great way to gain insight into the various components’ importance in Loop’s prediction of eventual BG. The graph at the top of this view will match your Glucose Chart. Below this chart you will see a very detailed explanation of all of the variables that Loop takes into account in predicting your future BG value. Each of those effects (including Carbohydrates, Insulin, Glucose Momentum and Retrospective Correction) includes details of the calculation use. You can tap on any of the entries to turn them off and on for visualization. The resulting changes can be viewed by the changes in the dashed lines.
 
-The graph at the top of this view will match your Glucose Chart. Below this chart you will see a very detailed explanation of all of the variables that Loop takes into account in predicting your future BG value. Each of those effects (including Carbohydrates, Insulin, Glucose Momentum and Retrospective Correction) includes details of the calculation use. You can tap on any of the entries to turn them off and on. The resulting changes can be viewed in the graph above.
-
-Additionally, at the bottom of this screen there is a setting to “Enable Retrospective Correction”. By enabling it, it will more aggressively increase or decrease basal delivery when BG movement doesn’t match the carbohydrates and insulin-based model.
+Additionally, at the bottom of this screen there is a setting to “Enable Retrospective Correction”. By enabling it, it will more aggressively increase or decrease basal delivery when BG movement doesn’t match the carbohydrates and insulin-based model.  You can read more about this setting in the Algorithm section of these docs.
 
 ### Active Insulin Chart
 
@@ -119,3 +119,5 @@ The Carbohydrate chart displays the carbs used by Loop to predict BG changes.  T
 <p align="center">
 <img src="img/toolbar.jpg" width="400">
 </p> 
+
+The tool bar is where your inputs to the Loop behavior take place.  The individual components of the tool bar are discussed in further detail in separate sections of the docs.
