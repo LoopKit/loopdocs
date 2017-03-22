@@ -1,4 +1,4 @@
-### RileyLink (Required) <img src="../img/rileylink.png" width="150" alt="RileyLink">
+### RileyLink <img src="../img/rileylink.png" width="150" alt="RileyLink">
 
 The RileyLink is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to 916MHz wireless communication. What does that mean to you? It means RileyLink is the communication highway between your insulin pump, CGM, and iPhone.
 
