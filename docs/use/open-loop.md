@@ -1,1 +1,25 @@
-# Open Loop mode
+# Open Loop
+
+Open loop is a great place to start with Loop. When you are operating in open loop mode, Loop is offering recommedendations for temp basals and will display them on the main screen.  The recommendations will not be enacted unless you specifically choose to enact the temp basal.  
+
+It is understandable to want to jump straight away into close loop mode, but a lot can be learned by watching Loop operate.  Becoming familiar with the algorithm can be easier by watching it in action rather than only reading about it in docs.
+
+## Eventual BG
+
+One of the best things you can do is to train yourself to watch the eventual BG rather than the current BG for helping understand Loop recommendations for temp basals.  So many of us have become accustomed to dealing with current BGs and perhaps IOB at the same time...but Loop is also looking at BG momentum, carbs on board, restrospective trends.  Loop is utilizing all of those variables to predict an eventual BG.  It's current decisions are based on that eventual BG.  Training yourself to watch that eventual BG will help you understand the temp basals being offered at any given time.
+
+## Carb Absorption
+
+Probably the next most difficult transition involves using carb absorption as a component to every meal bolus.  Understand that the default carb absorption times in Loop may not work for your particular body.  Similar to how you perhaps had used extended boluses for meals that impacted BGs longer than the duration of your insulin...that same idea applies to estimating your carb absorption times.  Watch your meals and try to estimate how long they are impacting your BG for various types of food.  Watch the times when Loop would've wanted to suspend or high temp basal...ask yourself why it would be doing that.  Especially ask yourself if that is the same decision as you would've made at that time in a meal normally.  Would you be worried that you might go low later if you see Loop offering high temp basal early after a meal?  Would you be worried about going high later if Loop wants to suspend basals instead?  If you put some effort into this effort before closing the loop, it will pay off with a smoother transition to closed loop.
+
+## Connectivity
+
+Get used to carrying the RileyLink around.  Find how far your connectivity stretches before you have pump communication problems.  Get used to troubleshooting yellow and red loops, finding out the pattern/cause of any potential loop issues.  You'll be less frustrated starting on closed loop if you aren't dealing with learning new electronics at the same time as you are learning carb absorption times in a closed loop.  Learn how to retune your RL. 
+
+## Bolus
+
+Bolus meals from the Loop, rather than the pump.  Become familiar with entering carbs into the Loop, as well as editing them.  Watch how long it takes for Loop app to display the bolus after you enact it (hint: there's a delay until the bolus finishes delivery and the pump gets read).  Familiarize yourself with the "Bolus May Have Failed" notifications and how to handle them.  Double check the pump and watch to see if the bolus indeed didn't enact before trying to give the bolus again.  
+
+## Caregiver training
+
+If you are the parent of a t1d kid using Loop, make sure you take the time to educate caregivers around your family and school for how to use Loop.  Perhaps you want to draft individualized quick info sheets for those caregivers to use with Loop.  Try to watch Nightscout while you get to know Loop so that you can become better at remote troubleshooting of any problems that you might encounter.
