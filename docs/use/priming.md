@@ -1,4 +1,4 @@
-# Priming and Site Changes with Loop
+# Priming and Site Changes
 
 Loop uses event history and reservoir levels to determine how much insulin has actually been delivered through the pump, and correspondingly the Insulin On Board (IOB).  **If you manually prime your tubing WITHOUT changing reservoirs**, Loop will detect that prime as an insulin delivery and count it as IOB.  Therefore, here are some suggestions for priming, set changes, and reservoir changes with Loop in mind.
 
