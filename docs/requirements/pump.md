@@ -86,9 +86,9 @@ To find your pump’s firmware you will need to power it up.  If the pump has no
 
 If the pump has been active recently or has a reservoir installed, follow these steps:
 
-1. Press the <img src="img/esc.png" width="40" alt="ESC"> button on your pump.  
+1. Press the <img src="../img/esc.png" width="40" alt="ESC"> button on your pump.  
 
-1. Scroll down with the <img src="img/light_button.png" width="40" alt="Down Arrow"> button to the bottom of the status display.  
+1. Scroll down with the <img src="../img/light_button.png" width="40" alt="Down Arrow"> button to the bottom of the status display.  
 
 1. Read the bottom line of the display.
 

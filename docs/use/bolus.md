@@ -1,7 +1,7 @@
 # Bolus with Loop
 
 ## bolus guard
-## regular bolus
+## bolus strategies
 ## correction bolus
 ## bolus failure notifications
 ## pending bolus

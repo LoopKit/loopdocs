@@ -7,7 +7,7 @@ You’re ready to get to the real stuff now, right?  Excited to get Looping?  Le
 Did you go to the [Apple App Store](https://developer.apple.com/xcode/)? It’s an application on your Apple Computer.  Open it and search for Xcode.  Download and install it for free.  Easy peasy.  Except it takes about 20-40 minutes to download depending on your internet speed.
 
 <p align="center">
-<img src="img/xcode.jpg" width="450">
+<img src="../img/xcode.jpg" width="450">
 </p>
 
 ### Install Carthage
@@ -35,7 +35,7 @@ Type `brew install carthage` and press return.
 You can close the Terminal application now.  You’re done with it.  Phew.
 
 <p align="center">
-<img src="img/carthage.jpg" width="450">
+<img src="../img/carthage.jpg" width="450">
 </p>
 
 ## Download Loop Source Code
@@ -65,7 +65,7 @@ Setup a sync between your GitHub repository and your computer by installing [Git
 Go back to your Loop repository in GitHub and press the green “Clone or download” button and choose “open in desktop”.  You will now have a copy of the selected branch in stored in your local folder.  
 
 <p align="center">
-<img src="img/open_desktop.jpg" width="450">
+<img src="../img/open_desktop.jpg" width="450">
 </p>
 
 You can later go into the GitHub desktop client and commit your changes, change branches, etc as you test various configurations.  See Section 4.3.6 for further information about how to commit those changes back to your repository.
@@ -77,7 +77,7 @@ Here’s where the fun really begins.  You’re about to build your Loop app.
 If you’ve used the direct download option (super easy), go to your Downloads folder, open the Loop folder, and double click on Loop.xcodeproj.  
 
 <p align="center">
-<img src="img/loop_code.jpg" width="450">
+<img src="../img/loop_code.jpg" width="450">
 </p>
 
 If you used another option, find the Loop folder on your computer and double click on Loop.xcodeproj
@@ -85,19 +85,19 @@ If you used another option, find the Loop folder on your computer and double cli
 A warning may appear asking if you really want to open it, click Open.  Xcode will open the project, and take a few moments to organize the files.
 
 <p align="center">
-<img src="img/loop_open.jpg" width="450">
+<img src="../img/loop_open.jpg" width="450">
 </p>
 
 Once Xcode has finished indexing, the Loop project will appear in the far left column.  Click on the blue Loop icon, and then click on the file called Loop.xcconfig.  The middle portion of Xcode window will populate and this is where you will find the MAIN_APP_BUNDLE_IDENTIFIER. The default is com.loopkit
 
 <p align="center">
-<img src="img/main_app_id.jpg" width="450">
+<img src="../img/main_app_id.jpg" width="450">
 </p>
 
 You need to change the MAIN_APP_BUNDLE_IDENTIFIER  to your own unique identifier.  Keep it in the reverse-domain syntax, meaning start with “com.” (no quotes though).  After you enter your new MAIN_APP_BUNDLE_IDENTIFIER, save the project using Command-S, and then click on the blue “Loop” file in the far left column.
 
 <p align="center">
-<img src="img/your_id.jpg" width="450">
+<img src="../img/your_id.jpg" width="450">
 </p>
 
 The next steps are to “sign” the application so that Apple will allow its use on the iPhone.  You will need to select a “team”.  If you already have a team from previous Xcode projects, you may see teams listed.  Use the dropdown menu to select the appropriate team.  Make sure you keep the “automatically manage signing” box checked.  
@@ -105,13 +105,13 @@ The next steps are to “sign” the application so that Apple will allow its us
 If, however, this is your first time signing an app in Xcode, your screen may instead look like the screen to the right.  In which case, you will need to add a developer account (either free or paid) by clicking on “Add Account”.  
 
 <p align="center">
-<img src="img/add_account.jpg" width="450">
+<img src="../img/add_account.jpg" width="450">
 </p>
 
 “Add Account” will open the Xcode preferences window, as shown below.  You will need to sign in with your Apple ID (or create one, if you don’t already have one).
 
 <p align="center">
-<img src="img/xcode_account.jpg" width="450">
+<img src="../img/xcode_account.jpg" width="450">
 </p>
 
 Once you get signed in, your Apple ID will appear under the Accounts section as shown below.  Close that window by pressing the little red circle in the upper left corner, and you will return to the main Xcode screen again.
@@ -119,7 +119,7 @@ Once you get signed in, your Apple ID will appear under the Accounts section as 
 Note: You may need to close Xcode and restart to see your Apple account for signing to appear in the Signing section.
 
 <p align="center">
-<img src="img/apple_id.jpg" width="450">
+<img src="../img/apple_id.jpg" width="450">
 </p>
 
 ********************************
@@ -131,7 +131,7 @@ The 7-day free Provisioning Profiles are signed from “(Personal Team)”.
 The full-year paid Provisioning Profiles do NOT have “(Personal Team)”
 
 <p align="center">
-<img src="img/team.jpg" width="450">
+<img src="../img/team.jpg" width="450">
 </p>
 
 Many people think “Hey I’ll try to build this Loop for free and if I like it, then I’ll buy the $99 Apple Developer license.”  If that’s you right now, please come back here when you are ready to reinstall as a paid developer account.  You will need to:
@@ -146,7 +146,7 @@ Many people think “Hey I’ll try to build this Loop for free and if I like it
 When you return to the main screen, select your team name and you may see two status warnings.  The first warning may appear if you do not have an iPhone plugged into the Mac.  The “failed to create a provisioning profile” has details that should alert you to plug in your device (iPhone).  Once you connect your iPhone via cable to the Mac, select your iPhone from the hidden drop down list (see red arrow below).  Your device’s personal name should be at the top of the list.  Select your personal device. You may need to “register the device” if this is your first time using Xcode with that iphone, follow the prompt if that’s the case.
 
 <p align="center">
-<img src="img/two_fails.jpg" width="450">
+<img src="../img/two_fails.jpg" width="450">
 </p>
 
 Once you select your device, Xcode should resolve the warnings and generate a Provisioning Profile.  If you click on the information icon (little “i” in the circle), for the Provisioning Profile, you can verify the signing date and mark your calendar for rebuilding in 7 days if you are using a free Apple Developer account.  If you are enrolled in the Apple Developer Program (aka paid the $99), the expiration date will be for a year from the creation date.
@@ -154,7 +154,7 @@ Once you select your device, Xcode should resolve the warnings and generate a Pr
 Finally, you need to make sure to sign all FOUR “targets” to the application; Loop, Loop Status Extension, WatchApp, and WatchApp Extension.  So far, we have only signed the Loop target.  Click on the blue “Loop” on the left and then the box with the vertical line to drop down the targets list.  Choose each of the remaining three targets and then select the signing team that you selected previously in the Loop target signing. Make sure you have signed all four targets.  If the “loopkit” still appears on the Bundle Identifier line, don’t worry about it.  Xcode will update that to your chosen MAIN_APP name when it builds.  Sometimes Xcode is just slow to rename.  Just leave that Bundle Identifier line untouched.
 
 <p align="center">
-<img src="img/target_view.jpg" width="450">
+<img src="../img/target_view.jpg" width="450">
 </p>
 
 ********************************
@@ -164,13 +164,13 @@ Finally, you need to make sure to sign all FOUR “targets” to the application
 All done with customizations? Let’s finish the installation of the Loop app onto your iPhone.  Select your device and then press the “play” button (or build button) to start Xcode on its way.  [You may be prompted to add the iPhone to your Developer Account...go ahead and do so.]  You’ll see the progression of the build in the status window.  If the build is successful, it will say “finished running Loop” in the status bar.  If the build fails, it will show you red error alerts and you can read what the failure was.  Yellow error alerts do not cause the build to fail, those are just warnings.
 
 <p align="center">
-<img src="img/select_device.jpg" width="450">
+<img src="../img/select_device.jpg" width="450">
 </p>
 
 If this is the first time you have installed an app on your iPhone using your Developer Account, you may get a warning like this.  Just follow the directions in the warning, and the issue resolves very quickly.  Click ok and you can safely disconnect your iPhone from the computer.  (If you don’t get a warning and the Loop app installs but does not open, you may still need to go to Settings->General->Device Management and enable trust for your Developer Account.)
 
 <p align="center">
-<img src="img/trust_device.jpg" width="450">
+<img src="../img/trust_device.jpg" width="450">
 </p>
 
 You can confirm Loop has installed on your phone simply by looking on the iphone.  Turn it on and check if the Loop app is running, or locating the Loop app icon.  If you don’t see it, try pressing the build (play) button again.  There should be a message at the top of Xcode window indicating a successful build.  Once you get confirmation and can see Loop on your iPhone, you can simply unplug from computer.  
@@ -187,7 +187,7 @@ Based on Loop users’ experience, there are some customizations that you may wa
 
 ### Default Carb Absorption Times
 
-<img style="float: right;" width="200" src="img/carb_screen.png">
+<img style="float: right;" width="200" src="../img/carb_screen.png">
 
 Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <i>Think Like A Pancreas</i> by Gary Scheiner.  Currently the lollipop icon is set for 120 minutes, taco icon for 180 minutes, and pizza icon for 240 minutes.  These default values may not work for everyone, you will need to find what works for you.
 
@@ -196,26 +196,26 @@ You can modify these defaults to suit your needs, however it would be best to te
 If you would like to modify those defaults, you can do so in the DeviceDataManager.swift Line 1040.  Note, the times are in hours, not minutes, in the code.
 
 <p align="center">
-<img src="img/carb_times.jpg" width="450">
+<img src="../img/carb_times.jpg" width="500">
 </p>
 
 ### Loop Logo
 If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/) and just drag and drop your source image. The site will email you a zip file.  Double click the zip file, choose the “ios” folder, and copy the contents of the Appicon.appiconset as shown highlighted below.
 
 <p align="center">
-<img src="img/appicon1.jpg" width="450">
+<img src="../img/appicon1.jpg" width="450">
 </p>
 
 Now navigate to the corresponding Loop folder as shown below.  Replace the contents of the Appicon.appiconset with your copied images.
 
 <p align="center">
-<img src="img/appicon2.jpg" width="450">
+<img src="../img/appicon2.jpg" width="450">
 </p>
 
 You can confirm the successful change by looking in Xcode.  You should see your custom logo in the Appicon set now.  You will also likely see a yellow alert that there are “5 unassigned children”.  This alert will not prevent your app from building, it’s simply because the zipfile contained more sizes of images than Loop app uses.  You can just leave the unassigned images as is.
 
 <p align="center">
-<img src="img/appicon3.jpg" width="450">
+<img src="../img/appicon3.jpg" width="450">
 </p>
 
 ### Loop Graph hours
@@ -224,7 +224,7 @@ If you want the Loop’s graphs to display different time length than the defaul
 Please note, using this will make it more difficult to see changes in other charts on your screen (like length of temp basal).
 
 <p align="center">
-<img src="img/chart_history.jpg" width="450">
+<img src="../img/chart_history.jpg" width="500">
 </p>
 
 Here are a couple of ways you could modify line 181 based on your specific wants:
@@ -240,13 +240,13 @@ Want 2.5 x the total time and only 2 hours forward within that?
 
 ### Workout Range Duration
 
-<img style="float: right;" width="200" src="img/workout_default.png">
+<img style="float: right;" width="200" src="../img/workout_default.png">
 If you’d like more than just the standard 1 or 2 hour duration for the Workout Range, you can add or modify the code to add another time interval or edit the existing ones.
 
 Go to the Loop>>Extensions>>UIAlertController.swift and modify Line 30.  The default has 1 and 2 hours as shown where the arrow is pointing in the screenshot.  You can edit those to whatever duration you want (in units of hours) and add a duration if you prefer.  If you’d like 1, 2, and 3 hours options...simply edit the numbers in the brackets to read [1, 2, 3]. It is possible to enter less than 1 hour intervals such as 15min, 30 min, 45 min by editing the brackets to read [0.25, 0.5, 0.75].
 
 <p align="center">
-<img src="img/workout_add.jpg" width="450">
+<img src="../img/workout_add.jpg" width="500">
 </p>
 
 ### Apple Watch Customizations
@@ -255,7 +255,7 @@ Go to the Loop>>Extensions>>UIAlertController.swift and modify Line 30.  The def
 The Apple Watch's default is to autofill to 75% of the recommended bolus.  If you wish, you can customize so that the watch autofills a different percentage. To do this, the multiplier can be changed from 0.75 to a value of your choice. A value of 1 will autofill 100% of the recommended bolus. A value of 0 will autofill 0% of the recommended bolus.   Go to the Loop Watchapp Extension Folder, within that go to the controllers folder, within that go to BolusInterfaceController.swift. Edit the section of line 97 as indicated on the picture below.
 
 <p align="center">
-<img src="img/watch_bolus.jpg" width="450">
+<img src="../img/watch_bolus.jpg" width="500">
 </p>
 
 #### Adjust sensitivity of digital crown for carb and bolus entry
@@ -268,18 +268,18 @@ Optional Step:  If you would like to commit customizations back into your GitHub
 After you’ve made your customizations to your Loop code, go to the Xcode Source Control menu and choose “Commit”.
 
 <p align="center">
-<img src="img/source_control.jpg" width="450">
+<img src="../img/source_control.jpg" width="450">
 </p>
 
 Once you have committed the changes, you will be able to see the changes highlighted in your GitHub desktop client
 
 <p align="center">
-<img src="img/github_desktop.jpg" width="450">
+<img src="../img/github_desktop.jpg" width="450">
 </p>
 
 Finally, go to the same Source Control menu in Xcode that you just used to “Commit” and this time choose “Push”.  This will push your code customizations up to your GitHub repository.  You can confirm this by finding the Loop.xcconfig file and looking at the MAIN_APP_BUNDLE_IDENTIFIER.  It should no longer say `com.loopkit`.
 
 <p align="center">
-<img src="img/github_updated.jpg" width="450">
+<img src="../img/github_updated.jpg" width="450">
 </p>
 
