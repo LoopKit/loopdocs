@@ -25,13 +25,13 @@ The Closed Loop switch controls the Loop operation mode for the application. Thi
 <img src="img/open_loop.png" width="400">
 </p> 
 
-When the Closed Loop switch is in the (Off   ) position, Loop WILL NOT enact recommended temp basals automatically.  Instead, it will display Recommended Temp Basals on the main status display, just above the Glucose graph.  This is called “Open Loop”, and is a good way to understand how Loop will function, and what type of recommendations it would make.  
+When the Closed Loop switch is in the (Off&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ) position, Loop WILL NOT enact recommended temp basals automatically.  Instead, it will display Recommended Temp Basals on the main status display, just above the Glucose graph.  This is called “Open Loop”, and is a good way to understand how Loop will function, and what type of recommendations it would make.  
 
 <p align="center">
 <img src="img/closed_loop.png" width="400">
 </p> 
 
-When the Closed Loop switch is in the (   On) position, Loop WILL automatically enact recommended temp basals on the configured insulin pump. This is known as a “Closed Loop”.  Typically, Loop will show the recommended temp basal just above the Glucose graph prior to automatically enacting it.  It may take a minute or so for the Loop to enact the recommended basal.  Once the temp basal has been enacted successfully on the pump, the recommended temp basal will disappear from the screen and the new temp basal will be represented in the insulin delivery graphics.
+When the Closed Loop switch is in the (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   On) position, Loop WILL automatically enact recommended temp basals on the configured insulin pump. This is known as a “Closed Loop”.  Typically, Loop will show the recommended temp basal just above the Glucose graph prior to automatically enacting it.  It may take a minute or so for the Loop to enact the recommended basal.  Once the temp basal has been enacted successfully on the pump, the recommended temp basal will disappear from the screen and the new temp basal will be represented in the insulin delivery graphics.
 
 ### Preferred Data Source
 
