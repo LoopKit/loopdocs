@@ -4,50 +4,172 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
     <url>
-     <loc>/requirements/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <loc>/requirements/overview/</loc>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/requirements/pump/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/requirements/cgm/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/requirements/rileylink/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/requirements/computer/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/requirements/iphone/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
+        
     <url>
-     <loc>/installing/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <loc>/build/overview/</loc>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/build/installing/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/configuration/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/watch/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/updating/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/troubleshooting/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/use/overview/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/open-loop/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/close-loop/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/green-loop/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/carbs/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/bolus/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/priming/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/time-change/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/use/rileylink/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
         
     <url>
      <loc>/algorithm/overview/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/algorithm/prediction/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/algorithm/temp_basal/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/algorithm/bolus/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -57,43 +179,55 @@
         
     <url>
      <loc>/nightscout/overview/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nightscout/new_user/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nightscout/update_user/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nightscout/azure_migration/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nightscout/mlab_cleanup/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nightscout/troubleshooting/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nightscout/ifttt/</loc>
-     <lastmod>2017-03-20</lastmod>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/nightscout/pushover/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/nightscout/reports/</loc>
+     <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
