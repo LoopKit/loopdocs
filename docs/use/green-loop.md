@@ -21,5 +21,6 @@ If you are initially starting the Loop app, wait about 15-30 minutes for the Loo
 * Check that you have the Minimum BG Guard value set in Loop app settings
 * **Check that your CGM data is updating...if the CGM reading has a yellow alert showing or CGM data older than 5 minutes, loop will stay grey**
 * Check that you don't have another Loop app running at the same time on same iPhone (for users who install multiple Loop apps)
+* If a recommended basal is showing, and this is your first loop, try clicking on the recommendation to enact it.
 
 I**f all of those things are set correctly and your loop is still not working, try closing the Loop app and restarting.  Finally, if that does not correct the problem, restart the iPhone.**
