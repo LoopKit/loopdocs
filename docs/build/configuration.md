@@ -1,4 +1,4 @@
-# Configuring your Loop app
+# Configuring your Loop
 
 Now that you have the Loop app installed on your iPhone, we need to input the settings so that the Loop can work for you.  In this section, we cover the details and provide information about the Loop displays.  Finally, we will cover some extras like Apple Watch and useful external integrations.
 
