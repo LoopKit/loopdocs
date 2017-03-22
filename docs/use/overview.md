@@ -104,7 +104,7 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 
 Loop’s default is to use actual reservoir volumes for determining the insulin delivered.  When there is a gap of 30 minutes or more in reservoir history, Loop classifies these readings as “not continuous” and therefore unreliable for the purposes of determining insulin deliveries.  Therefore in those instances, Loop will rely on the event histories to determine insulin deliveries during the non-continuous times.  
 
-The reservoir volume history can also be intentionally edited to cause a “not continuous” instance.  Please see the Priming and Site Changes wiki page for important information regarding IOB considerations during those activities, and how a “not continuous” edit may help resolve erroneous IOB.
+The reservoir volume history can also be intentionally edited to cause a “not continuous” instance.  Please see the Priming and Site Changes section of these docs for important information regarding IOB considerations during those activities, and how a “not continuous” edit may help resolve erroneous IOB.
 
 ### Carbohydrate Chart
 
