@@ -16,7 +16,6 @@ pages:
     - 'Configuration': 'build/configuration.md'
     - 'Apple Watch': 'build/watch.md'
     - 'Updating': 'build/updating.md'
-    - 'Troubleshooting': 'build/troubleshooting.md'
 - Use:
     - 'Loop Display': 'use/overview.md'
     - 'Open Loop': 'use/open-loop.md'
