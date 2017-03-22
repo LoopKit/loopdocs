@@ -18,14 +18,16 @@ pages:
     - 'Updating': 'build/updating.md'
 - Use:
     - 'Loop Display': 'use/overview.md'
+    - 'Getting a Green Loop': 'use/green-loop.md'
     - 'Open Loop': 'use/open-loop.md'
     - 'Close Loop': 'use/close-loop.md'
-    - 'Green Loop': 'use/green-loop.md'
     - 'Carb Entries': 'use/carbs.md'
     - 'Bolus': 'use/bolus.md'
+    - 'Workout Targets': 'use/workout.md'
     - 'Priming and Sites': 'use/priming.md'
     - 'Time Changes': 'use/time-change.md'
     - 'RileyLink': 'use/rileylink.md'
+    - 'Loop Notifications': 'use/notifications.md'
 - Algorithm:
     - 'Overview': 'algorithm/overview.md'
     - 'Glucose Prediction': 'algorithm/prediction.md'
