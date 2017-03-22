@@ -16,7 +16,7 @@ One of the best things you can do is to train yourself to watch the eventual BG 
 
 Probably the next most difficult transition involves using carb absorption as a component to every meal bolus.  Understand that the default carb absorption times in Loop may not work for your particular body.  Similar to how you perhaps had used extended boluses for meals that impacted BGs longer than the duration of your insulin...that same idea applies to estimating your carb absorption times.  Watch your meals and try to estimate how long they are impacting your BG for various types of food.  Watch the times when Loop would've wanted to suspend or high temp basal...ask yourself why it would be doing that.  Especially ask yourself if that is the same decision as you would've made at that time in a meal normally.  Would you be worried that you might go low later if you see Loop offering high temp basal early after a meal?  Would you be worried about going high later if Loop wants to suspend basals instead?  If you put some effort into this effort before closing the loop, it will pay off with a smoother transition to closed loop.
 
-## Connectivity
+## Troubleshooting
 
 Get used to carrying the RileyLink around.  Find how far your connectivity stretches before you have pump communication problems.  Get used to troubleshooting yellow and red loops, finding out the pattern/cause of any potential loop issues.  You'll be less frustrated starting on closed loop if you aren't dealing with learning new electronics at the same time as you are learning carb absorption times in a closed loop.  Learn how to retune your RL. 
 
