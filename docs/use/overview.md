@@ -24,7 +24,7 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 
 The loop status circle will pulse slightly when RileyLink is giving the pump a new temp basal setting.  The pulsing will stop when the temp basal has been set by the pump.
 
-### Glucose
+#### Glucose
 
 <img src="img/cgm.jpg" width="50">The current BG reading from the CGM will display, including trending arrow and time the reading was taken.  If the BG is being read straight from the G5 transmitter or G4 receiver, no special symbols will appear.  
 
