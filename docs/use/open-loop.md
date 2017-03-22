@@ -2,7 +2,11 @@
 
 Open loop is a great place to start with Loop. When you are operating in open loop mode, Loop is offering recommedendations for temp basals and will display them on the main screen.  The recommendations will not be enacted unless you specifically choose to enact the temp basal.  
 
-It is understandable to want to jump straight away into close loop mode, but a lot can be learned by watching Loop operate.  Becoming familiar with the algorithm can be easier by watching it in action rather than only reading about it in docs.
+It is understandable to want to jump straight away into close loop mode, but a lot can be learned by watching Loop operate in open mode.  Becoming familiar with the algorithm can be easier by watching it in action rather than only reading about it in docs.
+
+## Basals
+
+A great benefit of open loop mode is that you can establish a baseline of BG trends without the influence of temp basals from Loop.  This is particularly helpful if you haven't used Medtronic sites/pumps prior to Loop.  You may find that your basal rates change significantly coming from other brands of pumps.  Taking the time to establish a good Medtronic pump basal profile will set you up for a smoother transition to close loop mode.
 
 ## Eventual BG
 
