@@ -14,6 +14,7 @@ pages:
     - 'Overview': 'build/overview.md'
     - 'Installing': 'build/installing.md'
     - 'Configuration': 'build/configuration.md'
+    - 'iPhone widget': 'build/widget.md'
     - 'Apple Watch': 'build/watch.md'
     - 'Updating': 'build/updating.md'
 - Use:
