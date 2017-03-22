@@ -18,7 +18,7 @@ pages:
     - 'Updating': 'build/updating.md'
     - 'Troubleshooting': 'build/troubleshooting.md'
 - Use:
-    - 'Overview': 'use/overview.md'
+    - 'Loop Display': 'use/overview.md'
     - 'Open Loop': 'use/open-loop.md'
     - 'Close Loop': 'use/close-loop.md'
     - 'Green Loop': 'use/green-loop.md'
