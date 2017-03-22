@@ -3,8 +3,30 @@ theme: flatly
 
 pages:
 - 'index.md'
-- 'requirements.md'
-- 'installing.md'
+- Requirements:
+    - 'Overview': 'requirements/overview.md'
+    - 'Insulin Pump': 'requirements/pump.md'
+    - 'CGM': 'requirements/cgm.md'
+    - 'RileyLink': 'requirements/rileylink.md'
+    - 'Computer': 'requirements/computer.md'
+    - 'iPhone': 'requirements/iphone.md'
+- Build:
+    - 'Overview': 'build/overview.md'
+    - 'Installing': 'build/installing.md'
+    - 'Configuration': 'build/configuration.md'
+    - 'Apple Watch': 'build/watch.md'
+    - 'Updating': 'build/updating.md'
+    - 'Troubleshooting': 'build/troubleshooting.md'
+- Use:
+    - 'Overview': 'use/overview.md'
+    - 'Open Loop': 'use/open-loop.md'
+    - 'Close Loop': 'use/close-loop.md'
+    - 'Green Loop': 'use/green-loop.md'
+    - 'Carb Entries': 'use/carbs.md'
+    - 'Bolus': 'use/bolus.md'
+    - 'Priming and Sites': 'use/priming.md'
+    - 'Time Changes': 'use/time-change.md'
+    - 'RileyLink': 'use/rileylink.md'
 - Algorithm:
     - 'Overview': 'algorithm/overview.md'
     - 'Glucose Prediction': 'algorithm/prediction.md'
@@ -18,3 +40,5 @@ pages:
     - 'mLab': 'nightscout/mlab_cleanup.md'
     - 'Loop Pill': 'nightscout/troubleshooting.md'
     - 'IFTTT': 'nightscout/ifttt.md'
+    - 'Remote Notifications': 'nightscout/pushover.md'
+    - 'Reports': 'nightscout/reports.md'
