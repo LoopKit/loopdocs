@@ -26,4 +26,4 @@ Bolus meals from the Loop, rather than the pump.  Become familiar with entering 
 
 ## Caregiver training
 
-If you are the parent of a t1d kid using Loop, make sure you take the time to educate caregivers around your family and school for how to use Loop.  Perhaps you want to draft individualized quick info sheets for those caregivers to use with Loop.  Try to watch Nightscout while you get to know Loop so that you can become better at remote troubleshooting of any problems that you might encounter.
+If you are the parent of a t1d kid using Loop, make sure you take the time to educate caregivers around your family and school for how to use Loop.  Perhaps you want to draft individualized quick info sheets for those caregivers to use with Loop.  If your child needs a site change at school, school staff or your child need to know how to delete reservoir history or change to open loop for the duration of DIA.  Try to watch Nightscout while you get to know Loop so that you can become better at remote troubleshooting of any problems that you might encounter.
