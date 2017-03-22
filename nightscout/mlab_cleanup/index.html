@@ -335,7 +335,7 @@
     
         <li class="main active"><a href="#mlab-database-maintenance">mLab Database Maintenance</a></li>
         
-            <li><a href="#mlab-direct-access">mLab direct access</a></li>
+            <li><a href="#mlab-direct-access">mLab Direct Access</a></li>
         
             <li><a href="#nightscout-admin-tools">Nightscout Admin Tools</a></li>
         
@@ -350,30 +350,57 @@
 <p>There are two ways to cleanout some space or otherwise get into your mLab database
 <em> mLab direct access
 </em> Nightscout admin tools</p>
-<h2 id="mlab-direct-access">mLab direct access</h2>
-<ol>
-<li>Login to your mLab database.  </li>
-</ol>
-<p>•   IF you setup your own Azure site and mLab database, go directly to http://mlab.com and login.</p>
-<p>•   If you setup your own Azure site and mLab database, then setup a Heroku account and pointed back to your old mLab database (i.e., copy and pasted the MONGODB_URI from Azure), go directly to http://mlab.com and login.</p>
-<p>•   IF you setup a Heroku site and let Heroku setup an mLab database for you (which is typical for new Heroku sites), you will access mLab through your Heroku account main page.   Login to your Heroku account and click on the mLab logo as shown below.</p>
-<p><img alt="mlab link in heroku" src="../img/mlab_link.jpg" /></p>
-<ol>
-<li>(Users coming directly from a Heroku click will see the screen below.  If you had to login to mLab with a name and password, you will first see a line with your MongoDB deployment.  Click on your database name to see the screen below with all the collection names.) </li>
-</ol>
+<h2 id="mlab-direct-access">mLab Direct Access</h2>
+<ul>
+<li>
+<p>Login to your mLab database.  </p>
+<ul>
+<li>
+<p>If you setup your own Azure site and mLab database, go directly to <a href="http://mlab.com">mLab</a> and login, or</p>
+</li>
+<li>
+<p>If you setup your own Azure site and mLab database, then setup a Heroku account and pointed back to your old mLab database (i.e., copy and pasted the MONGODB_URI from Azure), go directly to <a href="http://mlab.com">mLab</a> and login, or</p>
+</li>
+<li>
+<p>If you setup a Heroku site and let Heroku setup an mLab database for you (which is typical for new Heroku sites), you will access mLab through your Heroku account main page.   Login to your Heroku account and click on the mLab logo as shown below.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p align="center">
+<img src="../img/mlab_link.jpg" width="650">
+</p>
+
+<ul>
+<li>
+<p>(Users coming directly from a Heroku click will see the screen below.  If you had to login to mLab with a name and password, you will first see a line with your MongoDB database.  Click on your database name to see the screen below with all the collection names.) </p>
 <p>Your various collections are shown, similar to the screen shot below.  The amount of data each collection is using is listed to the far right of each collection’s line.  I recommend emptying the “loop” collection first and then "devicestatus" to free up database storage.  If you need any of the information in the database, you may want to do a selective delete of data. For example, if you are headed into an endocrinologist appointment and want to print out recent Nightscout reports to take with you. Eventually you may need to empty more collections.  It should be awhile though, as the other collections are significantly smaller and will take a long time to fill.</p>
 <p>Click on a collection’s name to open it.</p>
-<p><img alt="Mlab collections" src="../img/collections.jpg" />
- 
-3.  Click on the button that says “Delete all documents in collection” and then confirm the deletion.</p>
-<p><img alt="delete a collection contents" src="../img/delete.jpg" /></p>
-<ol>
+</li>
+</ul>
+<p align="center">
+<img src="../img/collections.jpg" width="650">
+</p>
+
+<ul>
+<li>Click on the button that says “Delete all documents in collection” and then confirm the deletion.</li>
+</ul>
+<p align="center">
+<img src="../img/delete.jpg" width="650">
+</p>
+
+<ul>
 <li>You can confirm that your cleanout has resolved the problem, by checking that your database size is below 500 MB now.  Click on the “Home” link in top left.  Then review the size of the database as shown.</li>
-</ol>
-<p><img alt="Mlab Size check" src="../img/mlab_size.jpg" /></p>
+</ul>
+<p align="center">
+<img src="../img/mlab_size.jpg" width="650">
+</p>
+
 <h2 id="nightscout-admin-tools">Nightscout Admin Tools</h2>
-<p>If you go to your Nightscout site's settings (the three horizontal bars in the upper right of your nightscout site), you will be able to access your Admin Tools for the site.  These include some useful quick mLab actions, includig deleting documents from the devicestatus collection similar to the action we took in the steps above.  But, it's worth noting that if you have errant future data in your Nightscout site that is causing problems (usually during time changes or overseas travel), you can clean-out future entries through this portal too.</p>
-<p><img alt="NS Admin Tools" src="../img/admin_tools.jpg" /></p></div>
+<p>If you go to your Nightscout site's settings (the three horizontal bars in the upper right of your Nightscout site), you will be able to access your Admin Tools for the site.  These include some useful quick mLab actions, includig deleting documents from the devicestatus collection similar to the action we took in the steps above.  But, it's worth noting that if you have errant future data in your Nightscout site that is causing problems (usually during time changes or overseas travel), you can clean-out future entries through this portal, too.</p>
+<p align="center">
+<img src="../img/admin_tools.jpg" width="650">
+</p></div>
         </div>
 
         <footer class="col-md-12">
