@@ -4,9 +4,9 @@ Loop uses event history and reservoir levels to determine how much insulin has a
 
 ## Site Changes
 
-* If you change sites and <u>increase reservoir volume</u> (i.e., start a new reservoir), don't worry. So long as you are putting in a reservoir that has more insulin than the old one, IOB will be accurate in Loop.  When Loop sees a rewind and an increase in reservoir volume, it will not count any tubing primes as IOB.
+* If you change sites and increase reservoir volume (i.e., start a new reservoir), don't worry. So long as you are putting in a reservoir that has more insulin than the old one, IOB will be accurate in Loop.  When Loop sees a rewind and an increase in reservoir volume, it will not count any tubing primes as IOB.
 
-* If you change sites but <u>do NOT increase reservoir volume</u> (i.e., you keep existing reservoir going), you will need to go into Loop's reservoir history and delete 30 minutes of continuous reservoir history including the prime event.  By deleting 30 minutes of reservoir history, Loop will use Event History to determine insulin deliveries and IOB. If you cannot get the prime to clear from the IOB, operate in Open Loop mode until the insulin action duration time has passed.  Deleting history is done by:
+* If you change sites but **do NOT increase reservoir volume** (i.e., you keep existing reservoir going), you will need to go into Loop's reservoir history and delete 30 minutes of continuous reservoir history including the prime event.  By deleting 30 minutes of reservoir history, Loop will use Event History to determine insulin deliveries and IOB. If you cannot get the prime to clear from the IOB, operate in Open Loop mode until the insulin action duration time has passed.  Deleting history is done by:
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. clicking on the Insulin Delivery Chart  
 
