@@ -3,8 +3,9 @@
 Now that you have the Loop app installed on your iPhone, we need to input the settings so that the Loop can work for you.  In this section, we cover the details and provide information about the Loop displays.  Finally, we will cover some extras like Apple Watch and useful external integrations.
 
 ## Settings	 
+
 <p align="center">
-<img src="../img/toolbar.jpg" width="400">
+<img src="../img/loop_settings.jpg" width="450">
 </p> 
 
 Normally, we would start by explaining the displays on an application, but your Loop won’t have much showing initially until we get some basic settings input.  So, let’s start by clicking on the Loop Settings button in the tool bar.  It looks like a little sprocket.
@@ -13,10 +14,10 @@ Normally, we would start by explaining the displays on an application, but your 
 ### Loop Version 
 
 <p align="center">
-<img src="../img/loop_version.jpg" width="400">
+<img src="../img/loop_version.png" width="400">
 </p> 
 
-The first graphic at the top of the Loop settings display shows the version of the software, e.g.,  Loop v1.1 in this example.  This can be helpful when working with other users of the software to know what version you are running.
+The first graphic at the top of the Loop settings display shows the version of the software, e.g.,  Loop v1.3 in this example.  This can be helpful when working with other users of the software to know what version you are running.
 
 
 ### Closed Loop
@@ -52,8 +53,11 @@ Reservoir = Improved pump battery economy by using MySentry data for Reservoir R
 ### Issue Report
 If you run into problems or errors with your Loop, the Issue Report can be used to help identify where the problem is occurring.  The Issue Report is automatically generated and you can share it via email.  Frequently, if you go to Gitter or Facebook for help with a technical problem, an Issue Report will provide insight to what the potential problem is.
 
+###Devices
+If your RileyLink is turned on and nearby, you will see a RileyLink in this area of the settings (like the first screenshot on this page).  We are going to take care of the RileyLink settings later in this page...for now we are going to skip the RileyLink line.
+
 ### Pump ID
-Fairly self-explanatory.  You need to enter your pump’s six-digit ID here.  To find your pump ID, press ESC button on the pump, scroll down.  You will find a the six digit ID as the “S/N#”.  You will also find the same ID number on the back of the pump as six numbers beneath the pump’s model number.  There are also explanations so you can identify if the pump’s region.  This makes a difference for how the RileyLink will tune its frequency for pump communications.
+Fairly self-explanatory.  You need to enter your pump’s six-digit ID here.  To find your pump ID, press ESC button on the pump, scroll down.  You will find a the six-digit ID as the “S/N#”.  You will also find the same ID on the back of the pump as six numbers beneath the pump’s model number.  There are also explanations so you can identify the pump’s region.  This makes a difference for how the RileyLink will tune its frequency for pump communications.
 
 ### Pump Battery Type
 Again fairly self-explanatory.  Click which battery type you are using so that the battery percentages are more accurately displayed in your HUD.  The battery displays are designed to give you approximately 8-10 hours notice before looping would fail.  However, every battery manufacturer has its own decay curve for its specific batteries.  Typically, low battery levels will cause looping failures prior to the actual pump failing to delivery insulin. 
@@ -76,10 +80,10 @@ You can also set the “override” targets here to temporarily use alternate BG
 
 Target range can be a single number, such as 100-100 mg/dL, but is not necessarily advised or “better”.
 
-### Minimum BG Guard (Loop v1.3 or newer)
-Minimum BG Guard is a required data entry for successful configuration of Loop.  This feature was added in Loop version v1.3 and later.  **Your Loop will not turn green without setting this value.**  
+### Minimum BG Guard
+Minimum BG Guard is a required data entry for successful configuration of Loop. **Your Loop will not turn green without setting this value.**  
 
-Minimum BG Guard allows a user to bolus when their BG is below their “Target Range” but not below the value of the Minimum BG Guard.  To help users understand how this setting is affecting their usage of Loop, users will see a new notification icon and details of why there is no recommended bolus if the predicted BG is below the Minimum BG Guard.  
+Minimum BG Guard allows a user to bolus when their BG is below their target range but not below the value of the Minimum BG Guard.  To help users understand how this setting is affecting their usage of Loop, users will see a new notification icon and details of why there is no recommended bolus if the predicted BG is below the Minimum BG Guard.  
 
 ### Insulin Action Duration (DIA)
 Enter your insulin action duration here in hours.  This is also called Duration of Insulin Action (DIA).  Typically, close-loopers use between 3-4 hours with good success.  However, your diabetes may vary.  This number is a real number so decimals work here for fractions of hours. Like (2.5) = 2hrs 30 mins
@@ -161,6 +165,8 @@ RileyLink is turned on with a little switch on the side of the circuit board (li
 ### Device  
 The settings under the Device section are mostly for your information only.  However, you can rename your RileyLink to something more unique.  This is a good idea if you own more than one or are ever in the presence of more than one RileyLink...you will be able to pick out your connection easier amongst a crowd of “RileyLinks”.
 
+The `Signal Strength` showing under this area of the menu is the signal strength of the BT with the iPhone.  It is **not** the signal strength of the radio communications with the pump.
+
 ### Pump
 The Pump ID should be automatically filled in from the setting you have already entered previously.  The pump model will say unknown until we proceed with “Tune Radio Frequency.” 
 
@@ -173,7 +179,7 @@ The Pump ID should be automatically filled in from the setting you have already 
 
 * MySentry Pair:  MySentry Pairing is for x23 and x54 pumps.  Follow the directions as shown in the RileyLink command screen for MySentry.  You do not have to worry about this command if you are using an x15 or x22 model pump, as they do not have MySentry.  If you do not perform a MySentry pairing and have an x23 or x54 pump, your loop will only turn green every 15 minutes.
 
-* Fetch Recent History, Fetch Recent Glucose, Get Pump Model, and Send Button Press are all ways of asking the pump for information you might be interested in.  They are not part of setting up the Loop.  Send Button Press can be useful to see if the communication between the RileyLink and pump is working.  If successful, the screen on the pump will light up and Loop will confirm the button press with a “success” message.
+* Fetch Recent History, Fetch Recent Glucose, Write Glucose History Timestamp, Get Pump Model, and Send Button Press, Read Pump Status are all ways of asking the pump for information you might be interested in.  They are not part of setting up the Loop.  Send Button Press can be useful to see if the communication between the RileyLink and pump is working.  If successful, the screen on the pump will light up and Loop will confirm the button press with a “success” message.  Read Pump Status is also nice quick pump read for reservoir volume, pump battery voltage, and pump status (bolusing or suspending).
 
 ## Pump Setup
 Now that you are done with your Loop app settings, you need to finish setting up your pump for Loop use.  Generally, the setup of the pump is similar to setting up any pump for non-looping use.  One notable exception: you will need to change those batteries more often with Looping.  Loop will drain pump batteries much faster than regular pump regimes, and Loop failures will increase in frequency as the pump battery gets low.}

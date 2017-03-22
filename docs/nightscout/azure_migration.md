@@ -48,11 +48,9 @@ For **dev** branch deployments:
 <img src="../img/heroku_signup.jpg" width="450">
 </p> 
 
-* Create an account at [GitHub](https://github.com)
-
 * Go to your Nightscout cgm-remote-monitor repository in GitHub (https://github.com/yourGitHubname/cgm-remote-monitor)
 
-* Scroll down until you see the purple `deploy to Heroku` button.  Click that button.
+* Scroll down until you see the purple `Deploy to Heroku` button.  Click that button.
 
 <p align="center">
 <img src="../img/deploy_heroku.jpg" width="450">
@@ -95,7 +93,7 @@ For **dev** branch deployments:
 <td>Enter the numeric value of BG you’d like as an urgent high alarm.</td>
 </tr>
 <tr>
-<th>BG_TARGET TOP</th>
+<th>BG_TARGET_TOP</th>
 <td>Enter the numeric value of the top of your target BG.</td>
 </tr>
 <tr>
@@ -238,7 +236,6 @@ You do not have to enter all the information in the profile if you are using Loo
 </tbody>
 </table>
 
-The remaining variables can be left at their default values.</br></br>
 
 * Click on `Open App` in the top right corner of your Heroku site.
 
@@ -246,13 +243,12 @@ The remaining variables can be left at their default values.</br></br>
 <img src="../img/open_app.jpg" width="450">
 </p> 
 
-* Click on the settings (those three horizontal lines in upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then press save.
+* Click on the settings (those three horizontal lines in upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then press save. Your new Nightscout site is all set-up.  Congrats!
 
 <p align="center">
 <img src="../img/settings_ns.jpg" width="450">
 </p> 
 
-Your new Nightscout site is all set-up.  Congrats!
 
 ## Migrate mLab database
 
@@ -264,7 +260,7 @@ If you’d like to seamlessly keep all your old Azure NS data showing in your ne
 
 ## EVENT HISTORY
 
-Don't forget to keep you Loop App's Preferred Source set to `Event History` if you want your NS site to smoothly integrate.  Preferred Source set to `Reservoir Volume` will result in carbs not being uploaded and temp basals not being displayed.
+Don't forget to keep you Loop App's Preferred Source set to `Event History` if you want your NS site to smoothly integrate.  Preferred Source set to `Reservoir` will result in carbs not being uploaded and temp basals not being displayed.
 
 
 

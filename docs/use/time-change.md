@@ -12,6 +12,11 @@ That offset is stored by Loop the first time the pump ID is changed, and every t
 
 **Do not change the pump's time directly on the pump.** Instead, always use Loop's RileyLink "Change Pump Time".
 
+<p align="center">
+<img src="../img/change_time.png" width="400">
+</p> 
+
+
 ## Dexcom CGM
 No particular input is needed on your part for Loop to work with Dexcom CGM data. All times are UTC.  However, at time changes you may want to manually change your G4 receiver time setting just so the time visually appears correct when you are viewing the screen.
 
