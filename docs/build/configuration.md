@@ -50,9 +50,6 @@ Reservoir = Improved pump battery economy by using MySentry data for Reservoir R
 ### Issue Report
 If you run into problems or errors with your Loop, the Issue Report can be used to help identify where the problem is occurring.  The Issue Report is automatically generated and you can share it via email.  Frequently, if you go to Gitter or Facebook for help with a technical problem, an Issue Report will provide insight to what the potential problem is.
 
-### RileyLink
-Let's save this discussion for its own section down below.  It's a bigger topic.
-
 ### Pump ID
 Fairly self-explanatory.  You need to enter your pump’s six-digit ID here.  To find your pump ID, press ESC button on the pump, scroll down.  You will find a the six digit ID as the “S/N#”.  You will also find the same ID number on the back of the pump as six numbers beneath the pump’s model number.  There are also explanations so you can identify if the pump’s region.  This makes a difference for how the RileyLink will tune its frequency for pump communications.
 
@@ -130,7 +127,7 @@ Enter your database name and API Key here.
 #### Amplitude
 Enter your API Key and click “add account”.
 
-### RileyLink
+## RileyLink
 If you ordered your RileyLink preassembled, you should plug in the battery cable.  Please make sure your RileyLink’s battery cable is securely pushed all the way into the socket.  Poor battery cable connection can make the Loop communications fail.
 
 RileyLink with loose battery cable.
@@ -139,13 +136,13 @@ RileyLink with properly secured battery cable.
 
 RileyLink is turned on with a little switch on the side of the circuit board (little blue lights will flash briefly and then turn off).  The “on” position is with the switch towards the battery plug.  Now that you have it turned on, go back to your Loop settings and under “Devices”, there will be a connection to turn on.  Turn it on (slide to green) and then click on the arrow to the right of the green slider to open the RileyLink settings area.  {Note: your RileyLink will now have a solid green light showing.  The solid green light indicates a working bluetooth connection with your iPhone.}
 
-#### Device  
+### Device  
 The settings under the Device section are mostly for your information only.  However, you can rename your RileyLink to something more unique.  This is a good idea if you own more than one or are ever in the presence of more than one RileyLink...you will be able to pick out your connection easier amongst a crowd of “RileyLinks”
 
-#### Pump
+### Pump
 The Pump ID should be automatically filled in from the setting you have already entered previously.  The pump model will say unknown until we proceed with “Tune Radio Frequency.” 
 
-#### Commands
+### Commands
 * Tune Radio Frequency: Choose “Tune Radio Frequency”. (This may be seen as Settings/Commands/916.65MHz with a right arrow to enter the screen.)  It may take about a minute, but soon you will see a list of frequencies and you can exit back to the main RileyLink settings.  The Command line will now show the frequency (916.60 MHz in this case) in the first command line and the timestamp of the tune.  Now your pump and RileyLink are tuned to talk to each other.
 
 Note:  The strength of the radio communications with the pump is shown by the last number of the tune.  Tuning with -99 means NO communications were established.  Generally, if you have tuning in the -90s, your RileyLink-pump communications will not work.  If you have tuning in the -80s, you may have periodic communication failures.  If your tuning is in the -70s or better, your communications should be pretty stable.
