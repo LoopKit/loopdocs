@@ -174,6 +174,10 @@ If you end up with more than four IFTTT applets, they will appear in reverse-ord
   * click on the pencil icon in upper right of screen
   * click and hold the three lines that appear on the right side of the widget that you want to move.  Drag the widget to the order in the list that you'd like it to appear in your widget quickscreen.
 
+<p align="center">
+<img src="../img/IFTTT_reorder.png" width="550">
+</p> 
+
 ## Alexa integration
 * Since you have IFTTT/Maker requests working, you can get it to work with anything that supports IFTTT, including Alexa. You will need to add "alexa" to your ENABLE line in your Nightscout host settings (azure) or config vars (heroku).  And then repeat the steps above, but instead of using "ButtonWidget" service we started with earlier (the "+if" part of the setup)...you will use the "AmazonAlexa" service.
 
