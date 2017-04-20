@@ -213,13 +213,11 @@ You do not have to enter all the information in the profile if you are using Loo
 <img src="../img/open_app.jpg" width="450">
 </p> 
 
-
 * Click on the settings (those three horizontal lines in upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then press save. Your NIGHTSCOUT site is all set-up.  Congrats!
 
 <p align="center">
 <img src="../img/settings_ns.jpg" width="450">
 </p> 
-
 
 ## EVENT HISTORY
 
