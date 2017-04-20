@@ -96,6 +96,12 @@
 </li>
 
                     
+                        
+<li >
+    <a href="../../requirements/appledev/">Apple Developer</a>
+</li>
+
+                    
                     </ul>
                 </li>
             
@@ -302,6 +308,12 @@
                     
                         
 <li >
+    <a href="../pebble/">Pebble</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../pushover/">Remote Notifications</a>
 </li>
 
@@ -347,9 +359,9 @@
     
         <li class="main active"><a href="#mlab-database-maintenance">mLab Database Maintenance</a></li>
         
-            <li><a href="#mlab-direct-access">mLab Direct Access</a></li>
+            <li><a href="#cleanout-mlab">Cleanout mLab</a></li>
         
-            <li><a href="#nightscout-admin-tools">Nightscout Admin Tools</a></li>
+            <li><a href="#compact-mlab">Compact mLab</a></li>
         
     
     </ul>
@@ -358,13 +370,19 @@
 
 <h1 id="mlab-database-maintenance">mLab Database Maintenance</h1>
 <p>Regardless of whether you are on Azure or Heroku for Nightscout, you are using an mLab database for storing your Loop data.  mLab allows you to store up to 500 MB for free.  When you hit that data cap, your NS will stop working.  Your Share Bridge will not pull data and your site will be “stale”.  </p>
-<p>The good news?  Loop can still run just fine until you cleanout your mLab database.  The bad news?  You just won’t be able to remotely monitor Loop through NS until you clear up some storage space in mLab.</p>
-<p>There are two ways to cleanout some space or otherwise get into your mLab database:</p>
+<p>The good news?  Loop can still run just fine until you cleanout and/or compact your mLab database.  The bad news?  You just won’t be able to remotely monitor Loop through NS until you clear up some storage space in mLab.</p>
+<p>Note there are two areas where the 500 MB data limit can be an issue.  One is called the <code>size</code> which is the actual data stored in your database.  The other is called <code>size on disk</code> which is the virtual space that your database takes up.  As data is written onto your free database, sometimes it is written inefficiently and virtually "spreads out" to take up more room.  Depending on where your issue is, you may need to delete or cleanout data (if <code>size</code> is the issue) or you may just need to compact data (if <code>size on disk</code> is the issue).</p>
+<p align="center">
+<img src="../img/mlab_size2.jpg" width="650">
+</p>
+
+<h2 id="cleanout-mlab">Cleanout mLab</h2>
+<p>There are two ways to cleanout space and delete data in your mLab database:</p>
 <ul>
 <li>mLab direct access</li>
 <li>Nightscout admin tools</li>
 </ul>
-<h2 id="mlab-direct-access">mLab Direct Access</h2>
+<h3 id="mlab-direct-access">mLab Direct Access</h3>
 <ul>
 <li>
 <p>Login to your mLab database.  </p>
@@ -404,16 +422,37 @@
 </p>
 
 <ul>
-<li>You can confirm that your cleanout has resolved the problem, by checking that your database size is below 500 MB now.  Click on the “Home” link in top left.  Then review the size of the database as shown.</li>
+<li>You can confirm that your cleanout has resolved the problem, by checking that your database size is below 500 MB now.  Click on the <code>Home</code> link in top left.  Then review the size of the database as shown.</li>
 </ul>
 <p align="center">
 <img src="../img/mlab_size.jpg" width="650">
 </p>
 
-<h2 id="nightscout-admin-tools">Nightscout Admin Tools</h2>
+<h3 id="nightscout-admin-tools">Nightscout Admin Tools</h3>
 <p>If you go to your Nightscout site's settings (the three horizontal bars in the upper right of your Nightscout site), you will be able to access your Admin Tools for the site.  These include some useful quick mLab actions, includig deleting documents from the devicestatus collection similar to the action we took in the steps above.  But, it's worth noting that if you have errant future data in your Nightscout site that is causing problems (usually during time changes or overseas travel), you can clean-out future entries through this portal, too.</p>
 <p align="center">
 <img src="../img/admin_tools.jpg" width="650">
+</p>
+
+<h2 id="compact-mlab">Compact mLab</h2>
+<p>You may get an email from mLab, even after cleaning out enough space in your database, alerting you that your "file size limit" may have been exceeded. </p>
+<p align="center">
+<img src="../img/mlab_compact.jpg" width="650">
+</p>
+
+<p>To begin the compaction process, click on your database name.</p>
+<p align="center">
+<img src="../img/mlab_compact1.png" width="650">
+</p>
+
+<p>Then click on the <code>Tools</code> tab in the screen that opens.  Click on the <code>commands</code> button and then select the <code>repairDatabase</code> from the dropdown menu of available commands.  At the bottom of the screen, select the <code>Run Command</code> button. </p>
+<p align="center">
+<img src="../img/mlab_compact2.png" width="650">
+</p>
+
+<p>Return to your home screen and you will be able to verify the <code>Size on Disk</code> has decreased.</p>
+<p align="center">
+<img src="../img/mlab_compact3.png" width="650">
 </p></div>
         </div>
 

@@ -96,6 +96,12 @@
 </li>
 
                     
+                        
+<li >
+    <a href="../../requirements/appledev/">Apple Developer</a>
+</li>
+
+                    
                     </ul>
                 </li>
             
@@ -302,6 +308,12 @@
                     
                         
 <li >
+    <a href="../pebble/">Pebble</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../pushover/">Remote Notifications</a>
 </li>
 
@@ -331,7 +343,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../pushover/">
+                    <a rel="prev" href="../pebble/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -420,21 +432,21 @@
 </p>
 
 <ul>
-<li>Enter "maker" in the search field and click on the Maker app</li>
+<li>Enter "maker" in the search field and click on the Maker Webhooks app</li>
 </ul>
 <p align="center">
 <img src="../img/IFTTT_maker.png" width="550">
 </p>
 
 <ul>
-<li>Connect the Maker app</li>
+<li>Connect the Maker Webhooks app</li>
 </ul>
 <p align="center">
 <img src="../img/IFTTT_connect2.png" width="550">
 </p>
 
 <ul>
-<li>Select the grey "Make a Web Request" box</li>
+<li>Select the green "Make a Web Request" box</li>
 </ul>
 <p align="center">
 <img src="../img/IFTTT_webrequest.png" width="550">
@@ -452,20 +464,20 @@
 <p>Method: POST</p>
 <p>Content Type: application/json</p>
 <p>Body:  The content of the body will depend on the action that you would like this particular button press to perform.  You can only do ONE of the actions per button.  Some sample content:</p>
-<p>Note</p>
-<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;eventType&quot;: &quot;Note&quot;, &quot;notes&quot;: &quot;Hi mom, I love you!&quot;, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
-</code></pre>
-
-<p>Low Treatment</p>
-<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;reason&quot;: &quot;low treatment&quot;, &quot;carbs&quot;: 15, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
-</code></pre>
-
 <p>Pump Site Change</p>
 <pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;eventType&quot;: &quot;Site Change&quot;, &quot;duration&quot;: 0, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
 </code></pre>
 
 <p>CGM Sensor Start</p>
 <pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;eventType&quot;: &quot;Sensor Start&quot;, &quot;duration&quot;: 0, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
+</code></pre>
+
+<p>Note</p>
+<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;eventType&quot;: &quot;Note&quot;, &quot;notes&quot;: &quot;Hi mom, starting track practice!&quot;, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
+</code></pre>
+
+<p>Low Treatment</p>
+<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;reason&quot;: &quot;low treatment&quot;, &quot;carbs&quot;: 15, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
 </code></pre>
 
 <ul>
