@@ -193,7 +193,7 @@ Loop’s default carb absorption times are based on the high, medium, and low gl
 
 You can modify these defaults to suit your needs, however it would be best to test your own carb absorption patterns before necessarily adjusting the defaults.  You can always modify these after you’ve had some Loop experience and simply reinstall the Loop.  (after all, you’re a pro at that now)  Section 6 provides some examples of analyzing meal and Loop behaviors to determine if your carb absorption times are accurate.
 
-If you would like to modify those defaults, you can do so in the DeviceDataManager.swift Line 1040.  Note, the times are in hours, not minutes, in the code.
+If you would like to modify those defaults, you can do so in the LoopDataManager.swift Line 57.  Note, the times are in hours, not minutes, in the code.
 
 <p align="center">
 <img src="../img/carb_times.jpg" width="500">
