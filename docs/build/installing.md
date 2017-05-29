@@ -102,7 +102,7 @@ You need to change the MAIN_APP_BUNDLE_IDENTIFIER  to your own unique identifier
 
 The next steps are to “sign” the application so that Apple will allow its use on the iPhone.  You will need to select a “team”.  If you already have a team from previous Xcode projects, you may see teams listed.  Use the dropdown menu to select the appropriate team.  Make sure you keep the “automatically manage signing” box checked.  
 
-If, however, this is your first time signing an app in Xcode, your screen may instead look like the screen to the right.  In which case, you will need to add a developer account (either free or paid) by clicking on “Add Account”.  
+If, however, this is your first time signing an app in Xcode, your screen may instead look like the screen below.  In which case, you will need to add a developer account (either free or paid) by clicking on “Add Account”.  
 
 <p align="center">
 <img src="../img/add_account.jpg" width="450">
@@ -161,12 +161,28 @@ Finally, you need to make sure to sign all FOUR “targets” to the application
 <b>At this point in the process, you should make any custom configurations to your Loop app before you finish with the installation of Loop on your iPhone.  If you want to make any of the customizations yourself, the step-by-step instructions are provided below (or by clicking on the link to the left).  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.</b>
 ********************************
 
-All done with customizations? Let’s finish the installation of the Loop app onto your iPhone.  Select your device and then press the “play” button (or build button) to start Xcode on its way.  [You may be prompted to add the iPhone to your Developer Account...go ahead and do so.]  You’ll see the progression of the build in the status window.  If the build is successful, it will say “finished running Loop” in the status bar.  If the build fails, it will show you red error alerts and you can read what the failure was.  Yellow error alerts do not cause the build to fail, those are just warnings.
+All done with customizations? Let’s finish the installation of the Loop app onto your iPhone.  Select your device and then press the “play” button (or build button) to start Xcode on its way.  [You may be prompted to add the iPhone to your Developer Account...go ahead and do so.]  You’ll see the progression of the build in the status window.  If the build is successful, it will say "running Loop" or "finished running Loop" in the status bar.  
 
 <p align="center">
 <img src="../img/select_device.jpg" width="450">
 </p>
 
+Yellow error alerts do not cause the build to fail, those are just warnings.  The current version of Loop (v1.3.3) has a yellow alert that will appear when you build, as shown below, regarding GetRecentGlucoseChange.  You can ignore that alert.
+
+<p align="center">
+<img src="../img/master-done.png" width="450">
+</p>
+
+Red error alerts will prevent Loop from building on your phone, and you can read what the failure was.  The most common red error alerts are: 
+
+1. "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement."  You'll need to log onto your Developer account at developer.apple.com and accept the latest license agreement.
+
+2. "Could not locate device support files.  This iPhone is running iOS 10.3.2 which may not be supported by this version of Xcode."  You will need to go to your Mac's App Store and download & install the Xcode app update.
+
+3. "Swift Compilier Error.  Module compiled with Swift 3.0.2 cannot be imported in Swift 3.1"  Make sure your Xcode app is updated (see item above) and make sure you have a fresh download of the Loop source code.  Older Loop versions will not compile with the new Xcode app.
+
+4.  "The app ID "com.loopkit.Loop" cannot be registered to your development team. Change your bundle identifier to a unique string to try again.  Provisioning profile "iOS Team Provisioning Profile: *" doesn't support the App Groups and HealthKit capabilities"  These error commonly appears when you have forgotten to press command-s to save your project after changing the main app bundle identifier.  When this error occurs, it is best to simply delete your Loop folder from the downloads folder and start again.  Make a fresh download and this time remember to press command-s after you change the main app bundle identifier and before you sign and build the app.
+  
 If this is the first time you have installed an app on your iPhone using your Developer Account, you may get a warning like this.  Just follow the directions in the warning, and the issue resolves very quickly.  Click ok and you can safely disconnect your iPhone from the computer.  (If you don’t get a warning and the Loop app installs but does not open, you may still need to go to Settings->General->Device Management and enable trust for your Developer Account.)
 
 <p align="center">
