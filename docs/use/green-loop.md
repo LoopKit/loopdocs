@@ -29,4 +29,71 @@ If you are initially starting the Loop app, wait about 15-30 minutes for the Loo
 ## Patience
 * It may be that everything is working properly, but you need to wait for the next cgm data to arrive **and** for Loop to fetch latest dose data from the pump; this is normally 5 minutes, but if something happens, it could be 10-15 minutes.
 
-**If all of those things are set correctly and your loop is still not working, try closing the Loop app and restarting.  If that does not correct the problem, restart the iPhone.**
+## Common Problems
+
+<table>
+<thead>
+<tr>
+<th>Problem / Error Message</th>
+<th>Possible Cause</th>
+<th>Troubleshooting Ideas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>unknownResponse (xxxx “Sent Pump Message”…)</th>
+<td>Pump communications are not working</td>
+<td>
+•	Be patient, usually self-resolves within 15 minutes</br></br>
+•	Retune in RileyLink; check tune strength</br></br>
+•	Check/change pump battery</br></br>
+•	Move RileyLink closer to the pump</br></br>
+•	Check if Remote ID is on in pump settings</br></br></td>
+</tr>
+<tr>
+<th>rF comms failure (Unable to set TempBasal)</th>
+<td>Pump settings are not allowing temp basal</td>
+<td>
+•	Check if max temp basal in pump > Loop’s max temp basal</br></br>
+•	Check if temp basal type is set to u/hr in pump</br></br>
+•	Go through steps in “unknownResponse” above</br></br>
+</td>
+</tr>
+<tr>
+<th>staleDataError</th>
+<td>Loop can’t complete because either the CGM or pump data are old</td>
+<td>
+•	Check the error to see which data has the older date.</br></br>
+•	If it is pump data that is old, try fetching event history and “unknownResponse” steps.  Set pump date using RileyLink</br></br>
+•	If it is CGM data that is old, troubleshoot CGM device (does it have ???, did transmitter quit, did your session end, update transmitter ID in Loop if new)</br></br>
+</td>
+</tr>
+<tr>
+<th>RL timeout</th>
+<td>RileyLink or iPhone's Bluetooth isn’t working</td>
+<td>
+•	Toggle RL on/off switch  (physical switch)</br></br>
+•	Check battery connection in RileyLink</br></br>
+•	Charge RileyLink</br></br>
+•	Toggle iPhone's BT off and then on</br></br>
+</td>
+</tr>
+<tr>
+<th>Loop works intermittently</th>
+<td>Communications are not stable or reliable</td>
+<td>
+•	Is something interfering with the RileyLink's RF radio antenna. That component should not be any metal touching or surrounding it.</br></br>
+•	Has MySentry Pair <a href='/build/configuration/?#commands'>Command</a> been run? (x23 and x54 pumps only).</br></br>
+</td>
+</tr>
+<tr>
+<th>Some other problem</th>
+<td></td>
+<td>
+•	Are errors being logged to mLab errors collection?</br></br>
+•	Has mLab database quota been exceeded?</br></br>
+•	Are two Loop applications running?</br></br>
+</td>
+</tr>
+</tbody>
+</table>
