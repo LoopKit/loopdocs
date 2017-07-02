@@ -10,8 +10,6 @@ If you are initially starting the Loop app, wait about 15-30 minutes for the Loo
 ## Check your CGM
 CGM updates drive Loop. Without fresh CGM data, Loop cannot run.
 
-<img src="img/cgm_statuses.jpg" width="400">
-
 * Loop needs glucose data from your CGM.
 * The latest glucose timestamp must be less than 5 minutes old.
 * A **yellow alert symbol** indicates the glucose data is older than 5 minutes.
@@ -28,8 +26,6 @@ CGM updates drive Loop. Without fresh CGM data, Loop cannot run.
 
 ## Check your Pump
 Reliable communication with your pump is required so that Loop knows about all insulin delivered, as well as other pump settings.
-
-<img src="img/pump_statuses.jpg" width="400">
 
 * The latest insulin reservoir timestamp must be less than 5 minutes old.
 * If you set Event History as your [Preferred Data Source](/build/configuration/#preferred-data-source), the pump's event history is frequently retrieved from the pump. While this is the recommended setting, this command can take a while and therefore may increase failures if you are already having communication problems with your pump.
