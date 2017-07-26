@@ -10,7 +10,7 @@ The Minimed pump doesn't expose a universal clock, instead it exposes the compon
 
 That offset is stored by Loop the first time the pump ID is changed, and every time the pump's time is changed from the RileyLink Settings screen.
 
-!!! warning
+!!! warning ""
     Do not change the pump's time directly on the pump. Instead, always use Loop's RileyLink "Change Pump Time".
 
 <p align="center">

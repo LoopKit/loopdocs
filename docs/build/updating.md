@@ -21,7 +21,7 @@ You will want to choose this option if you are fairly comfortable with the new f
 
 * First you will need to download the current Loop version's zip file [HERE (for master branch)](https://github.com/LoopKit/Loop/archive/master.zip) or [HERE (for dev branch)](https://github.com/LoopKit/Loop/archive/dev.zip)
 
-* Follow the guide for installation as you did before, beginning with the changing of the MAIN_APP_BUNDLE_IDENTIFIER.  **Use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation.**  If you can't remember it, you can open your old Loop folder in Downloads on your computer and check.  Alternatively, open your Loop settings, open the Issue Report and look for a line titled `appGroupName`.  If you use a different MAIN_APP_BUNDLE_IDENTIFIER, your Loop app will automatically build as a separate, second Loop app as described below.</br></br>
+* Follow the guide for installation as you did before, beginning [HERE](https://loopkit.github.io/loopdocs/build/installing/#install-loop-using-xcode) to navigate to your new source code folder in the Downloads folder.  **Use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation.**  If you can't remember it, you can open your old Loop folder in Downloads on your computer and check.  Alternatively, open your Loop settings, open the Issue Report and look for a line titled `appGroupName`.  If you use a different MAIN_APP_BUNDLE_IDENTIFIER, your Loop app will automatically build as a separate, second Loop app as described below.</br></br>
 
 <p align="center">
 <img src="../img/app_group_name.jpg" width="400">
@@ -40,9 +40,9 @@ This method is appropriate if you are testing out dev features or unsure that yo
 
 * First you will need to download the current Loop version's zip file [HERE (for master branch)](https://github.com/LoopKit/Loop/archive/master.zip) or [HERE (for dev branch)](https://github.com/LoopKit/Loop/archive/dev.zip)
 
-* Follow the guide for installation as you did before, beginning with the changing of the MAIN_APP_BUNDLE_IDENTIFIER.  **Use a different MAIN_APP_BUNDLE_IDENTIFIER than you used in the first installation.**  
+* Follow the guide for installation as you did before, beginning [HERE](https://loopkit.github.io/loopdocs/build/installing/#install-loop-using-xcode) to navigate to your new source code folder in the Downloads folder.  **Use a different MAIN_APP_BUNDLE_IDENTIFIER than you used in the first installation.**  
 
-* Customization of the second Loop app's display name, and potentially the logo, is a good idea if you have more than one version of Loop app installed on your iPhone.
+* Customization of the second Loop app's display name, and potentially the logo, is a good idea if you have more than one version of Loop app installed on your iPhone.  The display name you input here will also be displayed as the Nightscout site's Loop pill.
 
 <p align="center">
 <img src="../img/display-name.png" width="900">

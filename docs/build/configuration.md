@@ -2,6 +2,16 @@
 
 Now that you have the Loop app installed on your iPhone, we need to input the settings so that the Loop can work for you.  In this section, we cover the details and provide information about the Loop displays.  Finally, we will cover some extras like Apple Watch and useful external integrations.
 
+## Health App
+
+Loop app uses the iPhone's Health app to store BG and carbohydrate data.  The Health app will be one of the first prompts that you see as your Loop app is built.  The first prompt will ask if you want to allow the Loop app access to read/write Blood Glucose data into the Health app.  You will want to click on the line that says `Turn All Categories On` and then click on the `Allow` button.
+
+Later in the configuration of your Loop app, when you first setup carb ratios, you will again be prompted whether to allow Loop app access to read/write to the Health app.  This time the access will be for carbohydrate data.  This time you should turn on only the first toggle to allow Loop to write data (not to read data) and click the `Allow` button.  See discussion regarding [Third Party Apps](https://loopkit.github.io/loopdocs/use/carbs/#third-party-apps) for the reasoning behind this selection.
+
+<p align="center">
+<img src="../img/healthapp.png" width="450">
+</p>
+
 ## Settings	 
 
 <p align="center">
@@ -14,13 +24,10 @@ Normally, we would start by explaining the displays on an application, but your 
 ### Loop Version 
 
 <p align="center">
-<img src="../img/loop_version.jpg" width="400">
+<img src="../img/loop_version.png" width="400">
 </p> 
 
 The first graphic at the top of the Loop settings display shows the version of the software, e.g.,  Loop v1.3 in this example.  This can be helpful when working with other users of the software to know what version you are running.
-
-
-
 
 ### Closed Loop
 
@@ -44,13 +51,11 @@ When the Closed Loop switch is in the (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   On) posi
 <img src="../img/preferred_source.jpg" width="300">
 </p> 
 
-If Preferred Data Source is set to “Event History”, then the pump will periodically be polled for treatment events.  This will cause your battery to be used at a faster rate, but will allow Loop to upload “treatments” to Nightscout.  **Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.**
+If Preferred Data Source is set to “Event History”, then the pump will periodically be polled for treatment events.  This will cause your battery to be used at a faster rate, but there are benefits.  
 
-Even with Preferred Data Source set to “Event History”, the reservoir volume will still be used to determine IOB, except in a few cases, such as when reservoir volumes have increased (in other words, reservoir was changed or refilled), or when the reservoir history is missing at least 30 minutes of continuous readings.
+!!!info ""
+    **Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.**  Event History must also be selected in order for prime events to be detected and NOT contribute to iob during site changes.
 
-Event History = More Accurate Treatment Data, and Upload of Treatments to Nightscout
-
-Reservoir = Improved pump battery economy by using MySentry data for Reservoir Readings (x23 and x54 pumps only) 
 
 ### Issue Report
 If you run into problems or errors with your Loop, the Issue Report can be used to help identify where the problem is occurring.  The Issue Report is automatically generated and you can share it via email.  Frequently, if you go to Gitter or Facebook for help with a technical problem, an Issue Report will provide insight to what the potential problem is.
@@ -88,7 +93,7 @@ Minimum BG Guard is a required data entry for successful configuration of Loop. 
 Minimum BG Guard allows a user to bolus when their BG is below their target range but not below the value of the Minimum BG Guard.  To help users understand how this setting is affecting their usage of Loop, users will see a new notification icon and details of why there is no recommended bolus if the predicted BG is below the Minimum BG Guard.  
 
 ### Insulin Action Duration (DIA)
-Enter your insulin action duration here in hours.  This is also called Duration of Insulin Action (DIA).  Typically, close-loopers use between 3-4 hours with good success.  However, your diabetes may vary.  This number is a real number so decimals work here for fractions of hours. Like (2.5) = 2hrs 30 mins
+Enter your insulin action duration here in hours.  This is also called Duration of Insulin Action (DIA).  Typically, close-loopers use between 3-5 hours with good success.  However, your diabetes may vary.  This number is a real number so decimals work here for fractions of hours. Like (3.5) = 3hrs 30 mins
 
 ### Basal Rates
 Enter your basal rates here.  These should match the values entered in your pump. Entering them here will not override your pump’s values, so make sure they match. This is fairly standard stuff that most T1Ds are already familiar with.  However, if you are new to Medtronic pumps...keep in mind that your insulin needs may change slightly when changing pump systems.  If in doubt, try some basal testing to see if your old basal rates may need adjustments with the switch to Medtronic pumps and infusion sets.
@@ -103,22 +108,22 @@ If you choose to have duplicate Loop apps, you will need to use different MAIN_A
 ### Carb Ratios
 Click the + in the upper right to add carb ratios for various times of day. Loop works best if you have tested and optimized your carb ratio settings for accuracy.
 
+The first time you setup carb ratios, you will be prompted to allow Loop app access to write/read data in your iPhone's Health App, choose only the selection for `write` data so that Loop does not inadvertently read third party app's carbohydrate inputs.  See [Carb Entries with Third Party apps](https://loopkit.github.io/loopdocs/use/carbs/#third-party-apps) for more information about this setting.
+
 ### Insulin Sensitivities
 Click the + in the upper right to add insulin sensitivities for various times of day. Loop works best if you have tested and optimized your ISF settings for accuracy.  Insulin sensitivities can change for many reasons including waiting too long to change your infusion set.  Loop will not auto-detect changes in ISF.
 
 ### Maximum Basal Rate
 Maximum basal rate is the maximum temporary basal rate that the Loop is allowed to enact to correct to your target BG range.  See the Use section discussion for Close Loop for some suggestions regarding appropriate Maximum Basal Rate.
 
-NOTE:  A frequent error for new Loop users is when they set their maximum basal rate here to a value HIGHER than the corresponding setting on the pump.  This will result in an error message that the temp basal failed to enact.  For example, Loop cannot successfully tell the pump to deliver 4 units per hour if the pump’s maximum is set to only 3.8 units per hour.  If you are seeing failures of the Loop to set a high temp basal, check to see if your pump’s maximum basal is at greater than or equal to the Loop’s maximum basal.
+!!!info ""
+    A frequent error for new Loop users is when they set their maximum basal rate here to a value HIGHER than the corresponding setting on the pump.  This will result in an error message that the temp basal failed to enact.  For example, Loop cannot successfully tell the pump to deliver 4 units per hour if the pump’s maximum is set to only 3.8 units per hour.  If you are seeing failures of the Loop to set a high temp basal, check to see if your pump’s maximum basal is at greater than or equal to the Loop’s maximum basal.
 
 ### Maximum Bolus
 Enter your desired single bolus maximum here.
 
 ## Services
 The services listed in this section are **OPTIONAL**.  You can choose to leave them empty and your Loop will still work.  
-
-### Dexcom Share
-Adding your Dexcom Share account information here will allow Loop to pull CGM data from the Dexcom servers in the event the Loop is not able to pull the data directly from the G4 receiver or G5 transmitter.  When Loop is receiving CGM data using this option, a little cloud icon will appear on the CGM reading in the Loop’s mainscreen.  Use your same dexcom account info as you use in the Share2 or G5 Mobile apps.
 
 ### Nightscout
 If you have an existing Nightscout site, add the Site URL and API Secret to have your Loop data transmitted to your Nightscout site. If you can’t remember your API Secret, it can be found under Settings, Reveal Config Vars for Heroku sites (or Application Settings, Connection Strings for Azure sites). 
@@ -155,6 +160,13 @@ If you have any problems with integration, you can try regenerating the API key 
 <img src="../img/mlab_api.jpg" width="500">
 </p> 
 
+### Loggly
+[Loggly](https://loggly.com) is a free logging service.  If you sign up for an account, you'll need to go under Source Setup and then Customer Tokens.  Copy and paste your customer token into your Loop App settings for Loggly.
+
+<p align="center">
+<img src="../img/loggly.png" width="500">
+</p> 
+
 ### Amplitude
 [Amplitude](https://amplitude.com) is a remote event monitoring service and can be used to quickly identify errors and events with Loop.  Amplitude stores the events and allows you to view those events as points in time.  To retrieve the details of the events you will need to look at corresponding mLab data entries to get a complete picture of the issues.  If you sign up for a free account with Amplitude, you will be given an API Key that you can enter here to have Loop integration setup.
 
@@ -174,15 +186,21 @@ The `Signal Strength` showing under this area of the menu is the signal strength
 The Pump ID should be automatically filled in from the setting you have already entered previously.  The pump model will say unknown until we proceed with “Tune Radio Frequency.” 
 
 ### Commands
-* Tune Radio Frequency: Choose “Tune Radio Frequency”.  It may take about a minute, but soon you will see a list of frequencies and you can exit back to the main RileyLink settings.  The Command line will now show the frequency (916.xx MHz) in the first command line and the timestamp of the tune.  Now your pump and RileyLink are tuned to talk to each other.
+* Tune Radio Frequency: Choose “Tune Radio Frequency”.  It may take about a minute, but soon you will see a list of frequencies and you can exit back to the main RileyLink settings.  The Command line will now show the frequency (916.xx MHz) in the first command line and the timestamp of the tune.  Now your pump and RileyLink are tuned to talk to each other.  When people suggest "did you retune your RileyLink?" they are referring to this line's command.
 
 (Note: for the rest of these items you may first need to set a Remote ID as discussed in the Pump Setup below.)
 
-* Change Time:  Choose “change time” so that pump and Loop times will match exactly.  **You should never use the pump itself to set the pump’s time.**  Always use the RileyLink to set pump time.
+* Change Time:  Choose “change time” so that pump and Loop times will match exactly.  
 
-* MySentry Pair:  MySentry Pairing is for x23 and x54 pumps.  Follow the directions as shown in the RileyLink command screen for MySentry.  You do not have to worry about this command if you are using an x15 or x22 model pump, as they do not have MySentry.  If you do not perform a MySentry pairing and have an x23 or x54 pump, your loop will only turn green every 15 minutes.
+!!!warning ""
+    **You should never use the pump itself to set the pump’s time.**  Always use the RileyLink to set pump time.
 
-* Fetch Recent History, Fetch Recent Glucose, Write Glucose History Timestamp, Get Pump Model, and Send Button Press, Read Pump Status are all ways of asking the pump for information you might be interested in.  They are not part of setting up the Loop.  Send Button Press can be useful to see if the communication between the RileyLink and pump is working.  If successful, the screen on the pump will light up and Loop will confirm the button press with a “success” message.  Read Pump Status is also nice quick pump read for reservoir volume, pump battery voltage, and pump status (bolusing or suspending).
+* MySentry Pair:  MySentry Pairing is for x23 and x54 pumps.  Follow the directions as shown in the RileyLink command screen for MySentry.  You do not have to worry about this command if you are using an x15 or x22 model pump, as they do not have MySentry.  
+
+!!!info ""
+    **If you do not perform a MySentry pairing and have an x23 or x54 pump, your loop will only turn green every 15 minutes.**
+
+* Fetch Recent History, Fetch Recent Glucose, Write Glucose History Timestamp, Get Pump Model, and Send Button Press, Read Pump Status, and Read Basal Schedule are all ways of asking the pump for information you might be interested in.  They are not part of setting up the Loop.  Send Button Press can be useful to see if the communication between the RileyLink and pump is working.  If successful, the screen on the pump will light up and Loop will confirm the button press with a “success” message.  Read Pump Status is also nice quick pump read for reservoir volume, pump battery voltage, and pump status (bolusing or suspending).
 
 ## Pump Setup
 Now that you are done with your Loop app settings, you need to finish setting up your pump for Loop use.  Generally, the setup of the pump is similar to setting up any pump for non-looping use.  One notable exception: you will need to change those batteries more often with Looping.  Loop will drain pump batteries much faster than regular pump regimes, and Loop failures will increase in frequency as the pump battery gets low.}
@@ -196,13 +214,11 @@ While not every setting NEEDS to match between Loop and pump, it is safer to hav
 * Insulin action duration
 * BG targets
 
-**Three settings in particular need to be done, OR ELSE YOUR LOOP WON'T WORK:**
-
-* Set “max temp basal” in pump to at least equal to (or slightly greater) than the Loop’s max basal
-
-* Set “temp basal type” to “insulin rate (u/h)”
-
-* Set Remote ID to "on" and enter any random ID (000000 will work). This is found in the pump's Utilities (for x23 continue to Connect Devices, Remotes) and turn ON the Remote Options.
+!!!info ""
+    **Three settings in particular need to be done, OR ELSE YOUR LOOP WON'T WORK:**</br></br>
+        * Set “max temp basal” in pump to at least equal to (or slightly greater) than the Loop’s max basal</br></br>
+        * Set “temp basal type” to “insulin rate (u/h)”</br></br>
+        * Set Remote ID to "on" and enter any random ID (000000 will work). This is found in the pump's Utilities (for x23 continue to Connect Devices, Remotes) and turn ON the Remote Options.</br>
 
 
 CONGRATS...your Loop is ready for use.  But are you?  Have you read through the algorithm?  Have you watched the pump in open loop mode?  Have you read about how to safely do site changes and priming?  Do you know how to troubleshoot your Loop?  Please take the time to read the other sections of this guide as they will help you navigate safe looping practices.
