@@ -3,8 +3,18 @@ You’re ready to get to the real stuff now, right?  Excited to get Looping?  Le
 
 ## Setup your Apple Computer
 
+### Verify OS X
+
+You need to be running OS X Sierra, so verify by clicking the apple logo in your computer display's upper left corner and selecting "About this Mac"
+
+<p align="center">
+<img src="../img/macosx.png" width="450">
+</p>
+
+If your OS X is not Sierra, click on the `Software Update` button and update to Sierra.  If your computer is older than late 2009, you may not be able to update to Sierra.  You can check Sierra compatibility [here](https://www.apple.com/macos/how-to-upgrade/#hardware-requirements). 
+
 ### Install Xcode
-Did you go to the [Apple App Store](https://developer.apple.com/xcode/)? It’s an application on your Apple Computer.  Open it and search for Xcode.  Download and install it for free.  Easy peasy.  Except it takes about 20-40 minutes to download depending on your internet speed.
+Go to the [Apple App Store](https://developer.apple.com/xcode/)? It’s an application on your Apple Computer.  Open it and search for Xcode.  Download and install it for free.  Easy peasy.  Except it takes about 20-40 minutes to download depending on your internet speed.
 
 <p align="center">
 <img src="../img/xcode.jpg" width="450">
@@ -39,48 +49,26 @@ You can close the Terminal application now.  You’re done with it.  Phew.
 </p>
 
 ## Download Loop Source Code
-You’ll need to obtain the Loop’s source code in order to build the app on your computer.  There are various ways of doing that; from super easy to more advanced. Pick whichever method you are comfortable with.  The first two options do not require a GitHub account.  The last option will require you to have a GitHub account.
 
-{Note: What’s the disadvantage of the Super Easy option below?  Any customizations you do in Xcode will remain on your local computer only.  If Loop’s source code updates to a new version, you will have to re-enter your customizations if/when you decide to update your Loop to subsequent versions.  However, most customizations are probably going to be fairly quick and easy to redo, just like they were the first time.}
+You’ll need to obtain the Loop’s source code in order to build the app on your computer.  If you click on the link below, a copy of the Loop source code’s master branch will be downloaded to your Downloads folder.
+</br></br>
 
-### Option 1: Direct Download (Super Easy)
+[Loop: Master branch source code](https://github.com/LoopKit/Loop/archive/master.zip)
 
-If you click on the link below, a copy of the Loop source code’s master branch will be downloaded to your downloads folder.
+</br>
+Advanced method: Alternatively, if you are already familiar with git and Terminal app use, you could save a local copy of Loop source code to your computer using `git clone https://github.com/LoopKit/Loop.git`.  This method would allow for saving local changes and updating, but does require some familiarity with git commands.  For new users, or those unfamiliar with git, we recommend using the direct download of master branch, above.
 
-[Loop Master branch](https://github.com/LoopKit/Loop/archive/master.zip)
-
-
-### Option 2: Clone with Terminal (Sorta easy)
-
-Open Terminal Application, copy and paste the line below.  This will download a clone of the master branch to your root directory of your computer user account:
-
-`git clone https://github.com/LoopKit/Loop.git`
-
-### Option 3: GitHub Desktop, Fork and Pull the Repo (Advanced)
-
-Login to your GitHub account and fork a copy of the [Loop repository](https://github.com/LoopKit/Loop).  
-
-Setup a sync between your GitHub repository and your computer by installing [Github Desktop](https://desktop.github.com/) onto your computer.
-
-Go back to your Loop repository in GitHub and press the green “Clone or download” button and choose “open in desktop”.  You will now have a copy of the selected branch in stored in your local folder.  
-
-<p align="center">
-<img src="../img/open_desktop.jpg" width="450">
-</p>
-
-You can later go into the GitHub desktop client and commit your changes, change branches, etc as you test various configurations.  See Section 4.3.6 for further information about how to commit those changes back to your repository.
 
 ## Install Loop using Xcode
 
 Here’s where the fun really begins.  You’re about to build your Loop app.
 
-If you’ve used the direct download option (super easy), go to your Downloads folder, open the Loop folder, and double click on Loop.xcodeproj.  
+Go to your Downloads folder, open the Loop folder, and double click on Loop.xcodeproj.  
 
 <p align="center">
 <img src="../img/loop_code.jpg" width="450">
 </p>
 
-If you used another option, find the Loop folder on your computer and double click on Loop.xcodeproj
 
 A warning may appear asking if you really want to open it, click Open.  Xcode will open the project, and take a few moments to organize the files.
 
@@ -94,7 +82,7 @@ Once Xcode has finished indexing, the Loop project will appear in the far left c
 <img src="../img/main_app_id.jpg" width="450">
 </p>
 
-You need to change the MAIN_APP_BUNDLE_IDENTIFIER  to your own unique identifier.  Keep it in the reverse-domain syntax, meaning start with “com.” (no quotes though).  After you enter your new MAIN_APP_BUNDLE_IDENTIFIER, save the project using Command-S, and then click on the blue “Loop” file in the far left column.
+You need to change the MAIN_APP_BUNDLE_IDENTIFIER  to your own unique identifier.  Keep it in the reverse-domain syntax, meaning start with “com.” (no quotes though).  **After you enter your new MAIN_APP_BUNDLE_IDENTIFIER, save the project using Command-S**, and then click on the blue “Loop” file in the far left column.
 
 <p align="center">
 <img src="../img/your_id.jpg" width="450">
@@ -122,31 +110,28 @@ Note: You may need to close Xcode and restart to see your Apple account for sign
 <img src="../img/apple_id.jpg" width="450">
 </p>
 
-********************************
 
-<b>Beginning of SIDE NOTE about signing and Provisioning Profiles.</b>
 
-The 7-day free Provisioning Profiles are signed from “(Personal Team)”.
+!!!info "Sidenote about signing teams and developer account"
+       If you sign using a team with “(Personal Team)”, these apps will expire after 7 days as they have been created with the free developer account profiles.
 
-The full-year paid Provisioning Profiles do NOT have “(Personal Team)”
+    If you sign using a team WITHOUT “(Personal Team)”, as shown below, the app will be valid for the full duration of your apple developer account enrollment (one-year subscriptions).
 
-<p align="center">
-<img src="../img/team.jpg" width="450">
-</p>
+    <p align="center">
+    <img src="../img/team.jpg" width="450">
+    </p>
 
-Many people think “Hey I’ll try to build this Loop for free and if I like it, then I’ll buy the $99 Apple Developer license.”  If that’s you right now, please come back here when you are ready to reinstall as a paid developer account.  You will need to:
+    Many people think “Hey I’ll try to build this Loop for free and if I like it, then I’ll buy the $99 Apple Developer license.”  If that’s you right now, please come back here when you are ready to reinstall as a paid developer account.  You will need to:
 
-* Select the correct team because now there will be two to choose from.  Use the one without the “(Personal Team)” to build apps that last a full 12 months.
-* When you rebuild your app, choose a new MAIN_APP_BUNDLE_IDENTIFIER different than your previous one.  For example, if you used “com.yourname” on the free app then choose “com.yourname2” for the new paid app.  
-* You will have to re-enter your Loop settings on your new app once it is installed (hopefully, you took written notes of them from when you were running your free app..hint hint).
+    * Select the correct team because now there will be two to choose from.  Use the one without the “(Personal Team)” to build apps that last a full 12 months.
+    * When you rebuild your app, choose a new MAIN_APP_BUNDLE_IDENTIFIER different than your previous one.  For example, if you used “com.yourname” on the free app then choose “com.yourname2” for the new paid app.  
+    * You will have to re-enter your Loop settings on your new app once it is installed.
 
-<b>End of SIDE NOTE</b>
-********************************
 
 When you return to the main screen, select your team name and you may see two status warnings.  The first warning may appear if you do not have an iPhone plugged into the Mac.  The “failed to create a provisioning profile” has details that should alert you to plug in your device (iPhone).  Once you connect your iPhone via cable to the Mac, select your iPhone from the hidden drop down list (see red arrow below).  Your device’s personal name should be at the top of the list.  Select your personal device. You may need to “register the device” if this is your first time using Xcode with that iphone, follow the prompt if that’s the case.
 
 <p align="center">
-<img src="../img/two_fails.jpg" width="450">
+<img src="../img/two_fails.jpg" width="600">
 </p>
 
 Once you select your device, Xcode should resolve the warnings and generate a Provisioning Profile.  If you click on the information icon (little “i” in the circle), for the Provisioning Profile, you can verify the signing date and mark your calendar for rebuilding in 7 days if you are using a free Apple Developer account.  If you are enrolled in the Apple Developer Program (aka paid the $99), the expiration date will be for a year from the creation date.
@@ -157,31 +142,19 @@ Finally, you need to make sure to sign all FOUR “targets” to the application
 <img src="../img/target_view.jpg" width="450">
 </p>
 
-********************************
-<b>At this point in the process, you should make any custom configurations to your Loop app before you finish with the installation of Loop on your iPhone.  If you want to make any of the customizations yourself, the step-by-step instructions are provided below (or by clicking on the link to the left).  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.</b>
-********************************
 
-All done with customizations? Let’s finish the installation of the Loop app onto your iPhone.  Select your device and then press the “play” button (or build button) to start Xcode on its way.  [You may be prompted to add the iPhone to your Developer Account...go ahead and do so.]  You’ll see the progression of the build in the status window.  If the build is successful, it will say "running Loop" or "finished running Loop" in the status bar.  
+!!!info "Customizations"
+    **New Loop users**: Customizations are not a required part of any Loop build.  As you gain experience in how you use your Loop app, you may want to customize some of the features.  You can always update your Loop app to add customizations at a later time.</br></br>
+    If you want any custom configurations to your Loop app, now is the time to make them before you finish with the installation of Loop on your iPhone.  Follow the step-by-step instructions (found by clicking on the "Code Customizations" link to the left).  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.
+    
+
+
+All done with customizations? Let’s finish the installation of the Loop app onto your iPhone.  Select your iPhone's name and then press the “play” button (or build button) to start Xcode on its way.  You may be prompted to add the iPhone to your Developer Account...go ahead and do so.  You’ll see the progression of the build in the status window.  If the build is successful, it will say "running Loop" or "finished running Loop" in the status bar.  
 
 <p align="center">
 <img src="../img/select_device.jpg" width="450">
 </p>
 
-Yellow error alerts do not cause the build to fail, those are just warnings.  The current version of Loop (v1.3.3) has a yellow alert that will appear when you build, as shown below, regarding GetRecentGlucoseChange.  You can ignore that alert.
-
-<p align="center">
-<img src="../img/master-done.png" width="450">
-</p>
-
-Red error alerts will prevent Loop from building on your phone, and you can read what the failure was.  The most common red error alerts are: 
-
-1. "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement."  You'll need to log onto your Developer account at developer.apple.com and accept the latest license agreement.
-
-2. "Could not locate device support files.  This iPhone is running iOS 10.3.2 which may not be supported by this version of Xcode."  You will need to go to your Mac's App Store and download & install the Xcode app update.
-
-3. "Swift Compilier Error.  Module compiled with Swift 3.0.2 cannot be imported in Swift 3.1"  Make sure your Xcode app is updated (see item above) and make sure you have a fresh download of the Loop source code.  Older Loop versions will not compile with the new Xcode app.
-
-4.  "The app ID "com.loopkit.Loop" cannot be registered to your development team. Change your bundle identifier to a unique string to try again.  Provisioning profile "iOS Team Provisioning Profile: *" doesn't support the App Groups and HealthKit capabilities"  These error commonly appears when you have forgotten to press command-s to save your project after changing the main app bundle identifier.  When this error occurs, it is best to simply delete your Loop folder from the downloads folder and start again.  Make a fresh download and this time remember to press command-s after you change the main app bundle identifier and before you sign and build the app.
   
 If this is the first time you have installed an app on your iPhone using your Developer Account, you may get a warning like this.  Just follow the directions in the warning, and the issue resolves very quickly.  Click ok and you can safely disconnect your iPhone from the computer.  (If you don’t get a warning and the Loop app installs but does not open, you may still need to go to Settings->General->Device Management and enable trust for your Developer Account.)
 
@@ -189,12 +162,31 @@ If this is the first time you have installed an app on your iPhone using your De
 <img src="../img/trust_device.jpg" width="450">
 </p>
 
-You can confirm Loop has installed on your phone simply by looking on the iphone.  Turn it on and check if the Loop app is running, or locating the Loop app icon.  If you don’t see it, try pressing the build (play) button again.  There should be a message at the top of Xcode window indicating a successful build.  Once you get confirmation and can see Loop on your iPhone, you can simply unplug from computer.  
+You can confirm Loop has installed on your phone simply by looking on the iPhone.  Turn it on and check if the Loop app is running, or locating the Loop app icon.  If you don’t see it, try pressing the build (play) button again.  There should be a message at the top of Xcode window indicating a successful build.  Once you get confirmation and can see Loop on your iPhone, you can simply unplug from computer and begin the configuration steps within the Loop app.  
 
 
 CONGRATS!  YOU JUST INSTALLED LOOP!
 
-...
+### Build Errors
+
+**Yellow error alerts** do not cause the build to fail, those are just warnings.  The current version of Loop (v1.3.3) has a yellow alert that will appear when you build, as shown below, regarding GetRecentGlucoseChange.  You can ignore that alert.
+
+<p align="center">
+<img src="../img/master-done.png" width="450">
+</p>
+
+**Red error alerts** will prevent Loop from building on your phone, and you can read what the failure was.  The most common red error alerts are: 
+
+1. "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement."  You'll need to log onto your Developer account at developer.apple.com and accept the latest license agreement.
+
+2. "Could not locate device support files.  This iPhone is running iOS 10.3.2 which may not be supported by this version of Xcode."  You will need to go to your Mac's App Store and download & install the Xcode app update.
+
+3. "Swift Compilier Error.  Module compiled with Swift 3.0.2 cannot be imported in Swift 3.1"  Make sure your Xcode app is updated (see item above) and make sure you have a fresh download of the Loop source code.  Older Loop versions will not compile with the new Xcode app.
+
+4.  "The app ID "com.loopkit.Loop" cannot be registered to your development team. Change your bundle identifier to a unique string to try again.  Provisioning profile "iOS Team Provisioning Profile: *" doesn't support the App Groups and HealthKit capabilities"  These error commonly appears when you have forgotten to press command-s to save your project after changing the main app bundle identifier.  When this error occurs, it is best to simply delete your Loop folder from the downloads folder and start again.  Make a fresh download of Loop source code, and this time remember to press command-s after you change the main app bundle identifier and before you sign and build the app.
+
+
+************
 
 ## Code Customizations
 Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.
@@ -276,26 +268,4 @@ The Apple Watch's default is to autofill to 75% of the recommended bolus.  If yo
 
 #### Adjust sensitivity of digital crown for carb and bolus entry
 The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. Navigate to the WatchApp Extension folder and within that the Controllers folder. Edit line 130 of AddCarbsInterfaceController.swift and line 161 of BolusInterfaceController.swift. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.
-
-### Commit to GitHub
-
-Optional Step:  If you would like to commit customizations back into your GitHub repository, you can do that quite easily IF you used the GitHub desktop client to get your Loop source code.  The advantage of doing this is that when Loop releases a new version, you can use GitHub to update your Loop’s code to the new version without needing to redo your code customizations.  You will also have a copy of your customized Loop code available online if you need to do a Loop app rebuild while away from home.
-
-After you’ve made your customizations to your Loop code, go to the Xcode Source Control menu and choose “Commit”.
-
-<p align="center">
-<img src="../img/source_control.jpg" width="450">
-</p>
-
-Once you have committed the changes, you will be able to see the changes highlighted in your GitHub desktop client
-
-<p align="center">
-<img src="../img/github_desktop.jpg" width="450">
-</p>
-
-Finally, go to the same Source Control menu in Xcode that you just used to “Commit” and this time choose “Push”.  This will push your code customizations up to your GitHub repository.  You can confirm this by finding the Loop.xcconfig file and looking at the MAIN_APP_BUNDLE_IDENTIFIER.  It should no longer say `com.loopkit`.
-
-<p align="center">
-<img src="../img/github_updated.jpg" width="450">
-</p>
 

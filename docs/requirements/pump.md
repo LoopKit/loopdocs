@@ -13,10 +13,10 @@ The Loop-compatible pumps are as follows:
       <th colspan="4">Insulin Pump</th>
     </tr>
     <tr>
-      <th>MM 515/715<sup><a href="#hw2">2</a></sup></th>
-      <th>MM 522/722<sup><a href="#hw2">2</a></sup></th>
+      <th>MM 515/715</th>
+      <th>MM 522/722<sup><a href="#hw3">2</a></sup></th>
       <th>MM 523/723<sup><a href="#hw3">3</a></sup></th>
-      <th>MM 554/754<sup><a href="#hw3">3</a></sup></th>
+      <th>MM 554/754<sup><a href="#hw3">4</a></sup></th>
     </tr>
   </thead>
   <tbody>
@@ -45,12 +45,17 @@ The Loop-compatible pumps are as follows:
   </tbody>
 </table>
 
-<br/><a name="hw1">1</a>. Offline access to glucose requires a Receiver with Share and the [Share2 app](https://itunes.apple.com/us/app/dexcom-share2/id834775275?mt=8) to be running on the same device. Internet-dependent access via Share servers is also supported.
-<br/><a name="hw2">2</a>. Pump must have a remote ID added in the [Remote Options](https://www.medtronicdiabetes.com/sites/default/files/library/download-library/workbooks/x22_menu_map.pdf) menu.
-<br/><a name="hw3">3</a>. Early firmware (US <= 2.4A, AU/EUR <= 2.6A) is required for using Closed Loop and Bolus features.
+<br/><a name="hw1">1</a>. Offline access to glucose requires a Receiver with Share and the [Share2 app](https://itunes.apple.com/us/app/dexcom-share2/id834775275?mt=8) to be running on the same iPhone as the Loop app is installed. Internet-dependent access via Share servers is also supported.
+<br/><a name="hw2">2</a>. x22 model pumps were produced before firmware security patches were implemented, therefore these models are compatible because they will have firmware 2.4A or lower only.  You can double check, but thus far all x22 pumps we have seen have compatible firmware.
+<br/><a name="hw2">3</a>. Firmware 2.4A or lower is required for using Closed Loop and Bolus features.
+<br/><a name="hw3">4</a>. Worldwide Veo (2.6A or lower) or Canadian/Australian Veo (2.7A or lower) is required for using Closed Loop and Bolus features. US version of this pump is not available.
 
 *****************************
-And if you want to triple check compatibility, you can check for presence/absence of "PC connect" in the pump.  If PC Connect is present, then the pump is NOT compatible.  You can find PC connect in the Medtronic's Main Menu, Utilities, Connect Devices.  PC Connect, if present, will be the first option showing in that menu, above the word "Meters".  If you don't see PC Connect there...good!
+If you want to triple check compatibility, you can check for presence/absence of "PC connect" in the pump.  If PC Connect is present, then the pump is NOT compatible.  You can find PC connect in the Medtronic's Main Menu, Utilities, Connect Devices.  PC Connect, if present, will be the first option showing in that menu, above the word "Meters".  If you do **NOT** see PC Connect there...good!
+
+<p align="center">
+<img src="../img/pc-connect.jpg" width="450">
+</p>
 *****************************
 
 ## Pump Model
@@ -61,26 +66,28 @@ To determine your pump model, look at the back side of your pump.  There should 
 
 In the example above, it says the pump model is:  MMT-722NAS
 
-    MMT         Pump Manufacturer Model (MiniMed Medtronic)
-    722         Pump Model Number
-    NA          Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)
-    S           Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)
+```
+MMT         Pump Manufacturer Model (MiniMed Medtronic)
+722         Pump Model Number
+NA          Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)
+S           Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)
+```
 
 Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a model number like MMT-LNAS.  This does not affect Loop compatibility.
 
 The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180 unit reservoir, and the 700 series pumps use a 300 unit reservoir (or smaller 180 unit reservoir, if you want).
 
-The difference between the Medtronic x22 pumps and the x23 pumps is primarily three features.  
+The differences between Medtronic x22 pumps and x23/x54 pumps are primarily three features.  
 
-* The x23 pumps will allow for increments of 0.025 units, whereas the x22 pumps have larger increments of 0.05 units.  Loop will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Loop’s use of temp basals.  
+* The x23/x54 pumps will allow for increments of 0.025 units, whereas the x22 pumps have larger increments of 0.05 units.  Loop will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Loop’s use of temp basals.  
 
-* Additionally, because of the way Loop fetches information from the pump, the x23 series of pumps are slightly better at conserving battery life through the use of the MySentry.  x22 pumps do not use MySentry.  
+* Additionally, because of the way Loop fetches information from the pump, the x23/x54 series of pumps are slightly better at conserving battery life through the use of the MySentry.  x22 pumps do not use MySentry.  
 
-* The x23 series pumps are also faster at delivering large boluses (up to several times faster for boluses > 10 units).
+* The x23/x54 series pumps are also faster at delivering large boluses (up to several times faster for boluses > 10 units).
 
 ## Pump Firmware
 
-A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows Loop to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  So before you buy a used pump, make sure you are getting one with compatible firmware.
+A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows Loop to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure you are getting one with compatible firmware.
 
 To find your pump’s firmware you will need to power it up.  If the pump has not been powered on for some time (i.e., has been in storage without a battery for awhile), it will run through a start-up count and the firmware version will appear on the bottom right of the pump’s screen.  Don’t turn away, as the version number will only be displayed for a little while before the screen moves onto other information displays.  
 
@@ -134,4 +141,4 @@ Red flags that may indicate a scam:
 
 ## Pump Supplies
 
-Medtronic will not sell pump supplies directly to customers who do not have an in-warranty Medtronic pump registered in their system.  Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider.  If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any in particular.
+Medtronic will not typically want to sell pump supplies directly to customers who do not have an in-warranty Medtronic pump registered in their system.  Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider.  If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any in particular.
