@@ -15,6 +15,7 @@
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/admonitions.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -296,7 +297,7 @@
                     
                         
 <li >
-    <a href="../../nightscout/troubleshooting/">Loop Pill</a>
+    <a href="../../nightscout/loop_pill/">Loop Pill</a>
 </li>
 
                     
@@ -357,7 +358,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#loop-fails-to-turn-green">Loop fails to turn green?</a></li>
+        <li class="main active"><a href="#getting-a-green-loop">Getting a Green Loop</a></li>
         
             <li><a href="#check-your-cgm">Check your CGM</a></li>
         
@@ -369,46 +370,160 @@
         
             <li><a href="#patience">Patience</a></li>
         
+            <li><a href="#common-problems">Common Problems</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="loop-fails-to-turn-green">Loop fails to turn green?</h1>
-<p>If you are initially starting the Loop app, wait about 15-30 minutes for the Loop to turn green and start working.  If the Loop remains grey, there are several possible causes for this:</p>
-<h2 id="check-your-cgm">Check your CGM</h2>
+<h1 id="getting-a-green-loop">Getting a Green Loop<a class="headerlink" href="#getting-a-green-loop" title="Permanent link">⌁</a></h1>
+<p><strong>Troubleshooting tips for when your Loop fails to turn green.</strong></p>
+<p>If you are initially starting the Loop app, wait about 15-30 minutes for the Loop to turn green and start working.  If the Loop remains grey, there are several possible causes for this. Use the sections below to help determine which part of the system is causing the problem.</p>
+<div class="admonition info">
+<p>To see the latest Loop status messages, touch the Loop Status circle on the main screen. If an error message is available it will appear in a dialog window. Additional information may be available from the Nightscout <a href="../../nightscout/loop_pill/">Loop pill</a>.</p>
+</div>
+<h2 id="check-your-cgm">Check your CGM<a class="headerlink" href="#check-your-cgm" title="Permanent link">⌁</a></h2>
+<p>CGM updates drive Loop. Without fresh CGM data, Loop cannot run.</p>
 <ul>
-<li>CGM updates drive loop. If you're not getting fresh CGM data, Loop will not run.</li>
-<li>Check the time on the latest CGM reading in loop on the top of the status screen.</li>
+<li>Loop needs glucose data from your CGM.</li>
+<li>The latest glucose timestamp must be less than 5 minutes old.</li>
+<li>A <strong>yellow alert symbol</strong> indicates the glucose data is older than 5 minutes.</li>
+<li>A <strong>cloud symbol</strong> indicates that Loop is trying to retrieve glucose values from Nightscout.</li>
 </ul>
-<h2 id="check-your-pump">Check your Pump</h2>
+<h3 id="troubleshoot-your-cgm">Troubleshoot your CGM<a class="headerlink" href="#troubleshoot-your-cgm" title="Permanent link">⌁</a></h3>
 <ul>
-<li>Your max basal setting on your pump needs to be equal to (or greater than) the max basal setting in Loop.  </li>
-<li>Your temp basal type needs to be set to units/hr, not %.</li>
+<li>Verify your CGM device is operating properly.</li>
+<li>Verify your CGM data is available on your phone (if applicable).</li>
+<li>Verify your CGM device has a Bluetooth connection to your phone (if applicable).</li>
+<li>Verify you have enabled the correct <a href="../../build/configuration/#cgm-selection">CGM Selection</a> in Loop settings.</li>
+<li>Verify Bluetooth is turned on and your device is connected.</li>
+<li>For Dexcom 5, verify your <a href="../../build/configuration/#cgm-selection">transmitter ID</a> is set correctly in Loop settings.</li>
+<li>For Dexcom 4, verify the Dexcom Share app is running on your phone and that your [Dexcom Share]](/build/configuration/#dexcom-share) settings are correct.</li>
+</ul>
+<h2 id="check-your-pump">Check your Pump<a class="headerlink" href="#check-your-pump" title="Permanent link">⌁</a></h2>
+<p>Reliable communication with your pump is required so that Loop knows about all insulin delivered, as well as other pump settings.</p>
+<ul>
+<li>The latest insulin reservoir timestamp must be less than 5 minutes old.</li>
+<li>If you set Event History as your <a href="../../build/configuration/#preferred-data-source">Preferred Data Source</a>, the pump's event history is frequently retrieved from the pump. While this is the recommended setting, this command can take a while and therefore may increase failures if you are already having communication problems with your pump.</li>
+</ul>
+<h3 id="troubleshoot-your-pump">Troubleshoot your pump<a class="headerlink" href="#troubleshoot-your-pump" title="Permanent link">⌁</a></h3>
+<ul>
+<li>Your pump maximum basal rate setting on your pump needs to be equal to (or greater than) the [Maximum Basal Rate]((/build/configuration/#maximum-basal-rate) setting in Loop.  </li>
+<li>Your pump temporary basal type needs to be <strong>set to units/hr (aka absolute)</strong>, not % (percentage).</li>
 <li>Your Remote ID options on your pump needs to be "on" with a code (any code) entered.</li>
 <li>Your pump cannot be suspended.  Resume insulin deliveries.</li>
 <li>Your pump battery may be low.  Replace the battery.</li>
+<li>Try <a href="../rileylink/#tuning-the-radio">Tuning the Radio</a></li>
+<li>Try running the <a href="../rileylink/#commands">Fetch Event History</a> command. Some people have found it helpful to run it a second time if it fails.</li>
 </ul>
-<h2 id="check-your-rileylink">Check your RileyLink</h2>
+<h2 id="check-your-rileylink">Check your RileyLink<a class="headerlink" href="#check-your-rileylink" title="Permanent link">⌁</a></h2>
+<p>Bluetooth and Radio communication is orchestrated by the RileyLink device.</p>
+<ul>
+<li>Your RileyLink battery needs adequate charge.</li>
+<li>A Bluetooth connection to your phone is required.</li>
+<li>Your RileyLink device must be turned on under <strong>Devices</strong> in the Loop settings screen.</li>
+<li>Your <a href="../../build/configuration/#pump-id">Pump ID</a> (serial number) must be set in Loop settings.</li>
+</ul>
+<h3 id="troubleshoot-your-rileylink">Troubleshoot your RileyLink<a class="headerlink" href="#troubleshoot-your-rileylink" title="Permanent link">⌁</a></h3>
 <ul>
 <li>Your RileyLink battery needs to be securely plugged in, check those connections.</li>
-<li>Your RileyLink battery needs adequate charge (usually for first time users...batteries aren't shipped fully charged)</li>
-<li>Double check your Pump ID (serial number) is correct</li>
-<li>Double check that your G5 transmitter ID is correct (remember to update this when you change transmitters)</li>
-<li>Loop may be having trouble communicating with the pump. Try tuning.  Move RileyLink closer to pump.</li>
+<li>Your batteries must be fully charged.</li>
+<li>Verify your Pump ID (serial number) is correct</li>
+<li>Verify your <a href="../../build/configuration/#cgm-selection">G5 transmitter ID</a> is correct. Remember to update this when you change transmitters.</li>
+<li>Loop may be having trouble communicating with the pump. Try <a href="../rileylink/#tuning-the-radio">Tuning the Radio</a>.  Move RileyLink closer to pump.</li>
 <li>Check that the iPhone has a bluetooth connection with RL. The RL's green light should remain on when BT is connected with iPhone.</li>
+<li>Check that the correct RL devices on the Settings screen are turned on. Running multiple RL devices at the same time can work, but turn on only one at a time when troubleshooting a problem.</li>
 </ul>
-<h2 id="check-your-loop">Check your Loop</h2>
+<h2 id="check-your-loop">Check your Loop<a class="headerlink" href="#check-your-loop" title="Permanent link">⌁</a></h2>
+<p>A green circle (notched for open loop, and complete for closed loop) indicates Loop is operating properly.</p>
+<h3 id="troubleshoot-your-loop">Troubleshoot your Loop<a class="headerlink" href="#troubleshoot-your-loop" title="Permanent link">⌁</a></h3>
 <ul>
-<li>Check that you have the Minimum BG Guard value set in Loop app settings</li>
-<li>Check that you don't have another Loop app running at the same time on same iPhone (for users who install multiple Loop apps)</li>
+<li>Touch the Loop Status circle to retrieve the latest error message. If there are no message available, none are displayed.</li>
+<li>Check that you have the <a href="../../build/configuration/#minimum-bg-guard">Minimum BG Guard</a> value set in Loop app settings.</li>
+<li>Check that you don't have another Loop app running at the same time on same iPhone (for users who install multiple Loop apps).</li>
 <li>If a recommended basal is showing, and this is your first loop, try clicking on the recommendation to enact it.</li>
 </ul>
-<h2 id="patience">Patience</h2>
+<h2 id="patience">Patience<a class="headerlink" href="#patience" title="Permanent link">⌁</a></h2>
+<p>It may be that everything is working properly, but you need to wait for Loop to update.</p>
 <ul>
-<li>It may be that everything is working properly, but you need to wait for the next cgm data to arrive <strong>and</strong> for Loop to fetch latest dose data from the pump; this is normally 5 minutes, but if something happens, it could be 10-15 minutes.</li>
+<li>CGM data is retrieved every 5 minutes.</li>
+<li>Pump event history data is retrieved every 5 minutes.</li>
+<li>Intermittent errors can cause this cycle to be 10-15 minutes or longer.</li>
+<li>If all else fails after verifying the settings above, you can:<ul>
+<li>Close and restart the Loop app</li>
+<li>Restart the iPhone</li>
+<li>Restart the RileyLink</li>
 </ul>
-<p><strong>If all of those things are set correctly and your loop is still not working, try closing the Loop app and restarting.  If that does not correct the problem, restart the iPhone.</strong></p></div>
+</li>
+</ul>
+<h2 id="common-problems">Common Problems<a class="headerlink" href="#common-problems" title="Permanent link">⌁</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problem / Error Message</th>
+<th>Possible Cause</th>
+<th>Troubleshooting Ideas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>unknownResponse (xxxx “Sent Pump Message”…)</th>
+<td>Pump communications are not working</td>
+<td>
+•   Be patient, usually self-resolves within 15 minutes</br></br>
+•   Retune in RileyLink; check tune strength</br></br>
+•   Check/change pump battery</br></br>
+•   Move RileyLink closer to the pump</br></br>
+•   Check if Remote ID is on in pump settings</br></br></td>
+</tr>
+<tr>
+<th>rF comms failure (Unable to set TempBasal)</th>
+<td>Pump settings are not allowing temp basal</td>
+<td>
+•   Check if max temp basal in pump > Loop’s max temp basal</br></br>
+•   Check if temp basal type is set to u/hr in pump</br></br>
+•   Go through steps in “unknownResponse” above</br></br>
+</td>
+</tr>
+<tr>
+<th>staleDataError</th>
+<td>Loop can’t complete because either the CGM or pump data are old</td>
+<td>
+•   Check the error to see which data has the older date.</br></br>
+•   If it is pump data that is old, try fetching event history and “unknownResponse” steps.  Set pump date using RileyLink</br></br>
+•   If it is CGM data that is old, troubleshoot CGM device (does it have ???, did transmitter quit, did your session end, update transmitter ID in Loop if new)</br></br>
+</td>
+</tr>
+<tr>
+<th>RL timeout</th>
+<td>RileyLink or iPhone's Bluetooth isn’t working</td>
+<td>
+•   Toggle RL on/off switch  (physical switch)</br></br>
+•   Check battery connection in RileyLink</br></br>
+•   Charge RileyLink</br></br>
+•   Toggle iPhone's BT off and then on</br></br>
+</td>
+</tr>
+<tr>
+<th>Loop works intermittently</th>
+<td>Communications are not stable or reliable</td>
+<td>
+•   Is something interfering with the RileyLink's RF radio antenna. That component should not have any metal touching or surrounding it.</br></br>
+•   Has MySentry Pair <a href='/build/configuration/?#commands'>Command</a> been run? (x23 and x54 pumps only).</br></br>
+</td>
+</tr>
+<tr>
+<th>Some other problem</th>
+<td></td>
+<td>
+•   Are errors being logged to mLab errors collection?</br></br>
+•   Has mLab database quota been exceeded?</br></br>
+•   Are two Loop applications running?</br></br>
+</td>
+</tr>
+</tbody>
+</table></div>
         </div>
 
         <footer class="col-md-12">

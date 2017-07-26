@@ -15,6 +15,7 @@
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/admonitions.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -296,7 +297,7 @@
                     
                         
 <li >
-    <a href="../troubleshooting/">Loop Pill</a>
+    <a href="../loop_pill/">Loop Pill</a>
 </li>
 
                     
@@ -338,7 +339,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../troubleshooting/">
+                    <a rel="next" href="../loop_pill/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
@@ -372,9 +373,9 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="ifttt-integration">IFTTT Integration</h1>
+<h1 id="ifttt-integration">IFTTT Integration<a class="headerlink" href="#ifttt-integration" title="Permanent link">⌁</a></h1>
 <p>If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, you can have single button presses that you can deploy from your iPhone to put a note in your NS site, enter low treatments, log a site change, or log a sensor change. </p>
-<h2 id="ifttt-setup-for-phones">IFTTT Setup for phones</h2>
+<h2 id="ifttt-setup-for-phones">IFTTT Setup for phones<a class="headerlink" href="#ifttt-setup-for-phones" title="Permanent link">⌁</a></h2>
 <ul>
 <li>First we need to gather one thing called your "hashed API Secret". In your internet browser, open a console window while viewing your Nightscout site.  Make sure you have "authenticated" your site by using your API secret in the Nightscout settings area (hint: if you see a little padlock in the upper left corner of the site, you haven't authenticated it).  Refresh the site and your hashed secret key will be shown as "apisecrethash: "xxxxxxxxxx...""  For Safari users on Mac, you can open the console window by selecting "Develop" from the Safari top menu, and then "Show Page Source" (if you do not see "Develop" in the top menu, activate it by going to Safari &gt; Preferences... &gt; Advanced, and checking the "Show Develop menu in menu bar" option).  If you're having problems seeing the apisecrethash, click the little grey triangle next to the "status isAuthenticated" line and the objects below it will display (see screenshot).  Your hashed API secret can be copied and pasted from that line, as shown below.  Save that somewhere easy to get to again, because you will be using it later.</li>
 </ul>
@@ -499,7 +500,7 @@
 <img src="../img/IFTTT_applets.png" width="550">
 </p>
 
-<h2 id="enable-ifttt-in-your-nightscout-site">Enable IFTTT in your Nightscout site</h2>
+<h2 id="enable-ifttt-in-your-nightscout-site">Enable IFTTT in your Nightscout site<a class="headerlink" href="#enable-ifttt-in-your-nightscout-site" title="Permanent link">⌁</a></h2>
 <ul>
 <li>Find your Maker Key by going to your IFTTT account, Services and then clicking on Maker, then Maker settings.</li>
 </ul>
@@ -531,7 +532,7 @@
 
 </p>
 
-<h2 id="install-ifttt-app-on-your-iphoneandroid">Install IFTTT app on your iPhone/Android</h2>
+<h2 id="install-ifttt-app-on-your-iphoneandroid">Install IFTTT app on your iPhone/Android<a class="headerlink" href="#install-ifttt-app-on-your-iphoneandroid" title="Permanent link">⌁</a></h2>
 <ul>
 <li>
 <p>Download the IFTTT app on your phone and log in.</p>
@@ -564,7 +565,7 @@
 <img src="../img/IFTTT_reorder.png" width="550">
 </p>
 
-<h2 id="alexa-integration">Alexa integration</h2>
+<h2 id="alexa-integration">Alexa integration<a class="headerlink" href="#alexa-integration" title="Permanent link">⌁</a></h2>
 <ul>
 <li>Since you have IFTTT/Maker requests working, you can get it to work with anything that supports IFTTT, including Alexa. You will need to add "alexa" to your ENABLE line in your Nightscout host settings (azure) or config vars (heroku).  And then repeat the steps above, but instead of using "ButtonWidget" service we started with earlier (the "+if" part of the setup)...you will use the "AmazonAlexa" service.</li>
 </ul>

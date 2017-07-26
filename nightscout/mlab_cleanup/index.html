@@ -15,6 +15,7 @@
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/admonitions.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -296,7 +297,7 @@
                     
                         
 <li >
-    <a href="../troubleshooting/">Loop Pill</a>
+    <a href="../loop_pill/">Loop Pill</a>
 </li>
 
                     
@@ -343,7 +344,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../troubleshooting/">
+                    <a rel="prev" href="../loop_pill/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -368,7 +369,7 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="mlab-database-maintenance">mLab Database Maintenance</h1>
+<h1 id="mlab-database-maintenance">mLab Database Maintenance<a class="headerlink" href="#mlab-database-maintenance" title="Permanent link">⌁</a></h1>
 <p>Regardless of whether you are on Azure or Heroku for Nightscout, you are using an mLab database for storing your Loop data.  mLab allows you to store up to 500 MB for free.  When you hit that data cap, your NS will stop working.  Your Share Bridge will not pull data and your site will be “stale”.  </p>
 <p>The good news?  Loop can still run just fine until you cleanout and/or compact your mLab database.  The bad news?  You just won’t be able to remotely monitor Loop through NS until you clear up some storage space in mLab.</p>
 <p>Note there are two areas where the 500 MB data limit can be an issue.  One is called the <code>size</code> which is the actual data stored in your database.  The other is called <code>size on disk</code> which is the virtual space that your database takes up.  As data is written onto your free database, sometimes it is written inefficiently and virtually "spreads out" to take up more room.  Depending on where your issue is, you may need to delete or cleanout data (if <code>size</code> is the issue) or you may just need to compact data (if <code>size on disk</code> is the issue).</p>
@@ -376,13 +377,13 @@
 <img src="../img/mlab_size2.jpg" width="650">
 </p>
 
-<h2 id="cleanout-mlab">Cleanout mLab</h2>
+<h2 id="cleanout-mlab">Cleanout mLab<a class="headerlink" href="#cleanout-mlab" title="Permanent link">⌁</a></h2>
 <p>There are two ways to cleanout space and delete data in your mLab database:</p>
 <ul>
 <li>mLab direct access</li>
 <li>Nightscout admin tools</li>
 </ul>
-<h3 id="mlab-direct-access">mLab Direct Access</h3>
+<h3 id="mlab-direct-access">mLab Direct Access<a class="headerlink" href="#mlab-direct-access" title="Permanent link">⌁</a></h3>
 <ul>
 <li>
 <p>Login to your mLab database.  </p>
@@ -428,13 +429,13 @@
 <img src="../img/mlab_size.jpg" width="650">
 </p>
 
-<h3 id="nightscout-admin-tools">Nightscout Admin Tools</h3>
+<h3 id="nightscout-admin-tools">Nightscout Admin Tools<a class="headerlink" href="#nightscout-admin-tools" title="Permanent link">⌁</a></h3>
 <p>If you go to your Nightscout site's settings (the three horizontal bars in the upper right of your Nightscout site), you will be able to access your Admin Tools for the site.  These include some useful quick mLab actions, includig deleting documents from the devicestatus collection similar to the action we took in the steps above.  But, it's worth noting that if you have errant future data in your Nightscout site that is causing problems (usually during time changes or overseas travel), you can clean-out future entries through this portal, too.</p>
 <p align="center">
 <img src="../img/admin_tools.jpg" width="650">
 </p>
 
-<h2 id="compact-mlab">Compact mLab</h2>
+<h2 id="compact-mlab">Compact mLab<a class="headerlink" href="#compact-mlab" title="Permanent link">⌁</a></h2>
 <p>You may get an email from mLab, even after cleaning out enough space in your database, alerting you that your "file size limit" may have been exceeded. </p>
 <p align="center">
 <img src="../img/mlab_compact.jpg" width="650">

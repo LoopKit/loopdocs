@@ -15,6 +15,7 @@
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/admonitions.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -296,7 +297,7 @@
                     
                         
 <li >
-    <a href="../../nightscout/troubleshooting/">Loop Pill</a>
+    <a href="../../nightscout/loop_pill/">Loop Pill</a>
 </li>
 
                     
@@ -376,7 +377,7 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="insulin-pump">Insulin Pump</h1>
+<h1 id="insulin-pump">Insulin Pump<a class="headerlink" href="#insulin-pump" title="Permanent link">⌁</a></h1>
 <p><img alt="insulin pumps" src="../img/pump.png" /></p>
 <p>There are a number of insulin pumps manufactured between 2006 – 2012 by Medtronic which are compatible.  Compatibility has two requirements; (1) pump model and (2) firmware.  </p>
 <p>The Loop-compatible pumps are as follows:</p>
@@ -387,10 +388,10 @@
       <th colspan="4">Insulin Pump</th>
     </tr>
     <tr>
-      <th>MM 515/715<sup><a href="#hw2">2</a></sup></th>
-      <th>MM 522/722<sup><a href="#hw2">2</a></sup></th>
+      <th>MM 515/715</th>
+      <th>MM 522/722<sup><a href="#hw3">2</a></sup></th>
       <th>MM 523/723<sup><a href="#hw3">3</a></sup></th>
-      <th>MM 554/754<sup><a href="#hw3">3</a></sup></th>
+      <th>MM 554/754<sup><a href="#hw3">4</a></sup></th>
     </tr>
   </thead>
   <tbody>
@@ -419,13 +420,18 @@
   </tbody>
 </table>
 
-<p><br/><a name="hw1">1</a>. Offline access to glucose requires a Receiver with Share and the <a href="https://itunes.apple.com/us/app/dexcom-share2/id834775275?mt=8">Share2 app</a> to be running on the same device. Internet-dependent access via Share servers is also supported.
-<br/><a name="hw2">2</a>. Pump must have a remote ID added in the <a href="https://www.medtronicdiabetes.com/sites/default/files/library/download-library/workbooks/x22_menu_map.pdf">Remote Options</a> menu.
-<br/><a name="hw3">3</a>. Early firmware (US &lt;= 2.4A, AU/EUR &lt;= 2.6A) is required for using Closed Loop and Bolus features.</p>
+<p><br/><a name="hw1">1</a>. Offline access to glucose requires a Receiver with Share and the <a href="https://itunes.apple.com/us/app/dexcom-share2/id834775275?mt=8">Share2 app</a> to be running on the same iPhone as the Loop app is installed. Internet-dependent access via Share servers is also supported.
+<br/><a name="hw2">2</a>. x22 model pumps were produced before firmware security patches were implemented, therefore these models are compatible because they will have firmware 2.4A or lower only.  You can double check, but thus far all x22 pumps we have seen have compatible firmware.
+<br/><a name="hw2">3</a>. Firmware 2.4A or lower is required for using Closed Loop and Bolus features.
+<br/><a name="hw3">4</a>. Worldwide Veo (2.6A or lower) or Canadian/Australian Veo (2.7A or lower) is required for using Closed Loop and Bolus features. US version of this pump is not available.</p>
 <hr />
-<p>And if you want to triple check compatibility, you can check for presence/absence of "PC connect" in the pump.  If PC Connect is present, then the pump is NOT compatible.  You can find PC connect in the Medtronic's Main Menu, Utilities, Connect Devices.  PC Connect, if present, will be the first option showing in that menu, above the word "Meters".  If you don't see PC Connect there...good!</p>
+<p>If you want to triple check compatibility, you can check for presence/absence of "PC connect" in the pump.  If PC Connect is present, then the pump is NOT compatible.  You can find PC connect in the Medtronic's Main Menu, Utilities, Connect Devices.  PC Connect, if present, will be the first option showing in that menu, above the word "Meters".  If you do <strong>NOT</strong> see PC Connect there...good!</p>
+<p align="center">
+<img src="../img/pc-connect.jpg" width="450">
+</p>
+
 <hr />
-<h2 id="pump-model">Pump Model</h2>
+<h2 id="pump-model">Pump Model<a class="headerlink" href="#pump-model" title="Permanent link">⌁</a></h2>
 <p>To determine your pump model, look at the back side of your pump.  There should be a sticker on the underside of the pump.  On the right hand side of the sticker, it says REF MMT-XXXXXX</p>
 <p><img alt="Pump" src="../img/pump_model.jpg" /></p>
 <p>In the example above, it says the pump model is:  MMT-722NAS</p>
@@ -434,22 +440,23 @@
 NA          Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)
 S           Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)
 </code></pre>
+
 <p>Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a model number like MMT-LNAS.  This does not affect Loop compatibility.</p>
 <p>The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180 unit reservoir, and the 700 series pumps use a 300 unit reservoir (or smaller 180 unit reservoir, if you want).</p>
-<p>The difference between the Medtronic x22 pumps and the x23 pumps is primarily three features.  </p>
+<p>The differences between Medtronic x22 pumps and x23/x54 pumps are primarily three features.  </p>
 <ul>
 <li>
-<p>The x23 pumps will allow for increments of 0.025 units, whereas the x22 pumps have larger increments of 0.05 units.  Loop will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Loop’s use of temp basals.  </p>
+<p>The x23/x54 pumps will allow for increments of 0.025 units, whereas the x22 pumps have larger increments of 0.05 units.  Loop will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Loop’s use of temp basals.  </p>
 </li>
 <li>
-<p>Additionally, because of the way Loop fetches information from the pump, the x23 series of pumps are slightly better at conserving battery life through the use of the MySentry.  x22 pumps do not use MySentry.  </p>
+<p>Additionally, because of the way Loop fetches information from the pump, the x23/x54 series of pumps are slightly better at conserving battery life through the use of the MySentry.  x22 pumps do not use MySentry.  </p>
 </li>
 <li>
-<p>The x23 series pumps are also faster at delivering large boluses (up to several times faster for boluses &gt; 10 units).</p>
+<p>The x23/x54 series pumps are also faster at delivering large boluses (up to several times faster for boluses &gt; 10 units).</p>
 </li>
 </ul>
-<h2 id="pump-firmware">Pump Firmware</h2>
-<p>A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows Loop to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  So before you buy a used pump, make sure you are getting one with compatible firmware.</p>
+<h2 id="pump-firmware">Pump Firmware<a class="headerlink" href="#pump-firmware" title="Permanent link">⌁</a></h2>
+<p>A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows Loop to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure you are getting one with compatible firmware.</p>
 <p>To find your pump’s firmware you will need to power it up.  If the pump has not been powered on for some time (i.e., has been in storage without a battery for awhile), it will run through a start-up count and the firmware version will appear on the bottom right of the pump’s screen.  Don’t turn away, as the version number will only be displayed for a little while before the screen moves onto other information displays.  </p>
 <p>If the pump has been active recently or has a reservoir installed, follow these steps:</p>
 <ol>
@@ -464,9 +471,9 @@ S           Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)
 </li>
 </ol>
 <p><img alt="Firmware" src="../img/pump_firmware.png" /></p>
-<h2 id="other-pumps">Other pumps</h2>
+<h2 id="other-pumps">Other pumps<a class="headerlink" href="#other-pumps" title="Permanent link">⌁</a></h2>
 <p>While we all would love to have our {insert your favorite manufacturer} pump be compatible with a DIY closed-loop system like Loop, unfortunately it just isn't possible right now.  There are efforts being made to crack the software code on other pumps (like Animas and Omnipod), and when they are successful...believe me...we will tell you about it!</p>
-<h2 id="finding-a-medtronic-pump">Finding a Medtronic pump</h2>
+<h2 id="finding-a-medtronic-pump">Finding a Medtronic pump<a class="headerlink" href="#finding-a-medtronic-pump" title="Permanent link">⌁</a></h2>
 <p>Finding a compatible Medtronic pump is probably the most difficult part for most new Loopers.  Our suggestion:</p>
 <ul>
 <li>
@@ -488,7 +495,7 @@ S           Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)
 <p>Search <a href="http://medwow.com">Medwow</a> for used Medtronic pumps</p>
 </li>
 </ul>
-<h2 id="safe-purchasing">Safe Purchasing</h2>
+<h2 id="safe-purchasing">Safe Purchasing<a class="headerlink" href="#safe-purchasing" title="Permanent link">⌁</a></h2>
 <p>If you choose to purchase from a remote or unknown seller, here are some tips for safe purchasing:</p>
 <ul>
 <li>
@@ -513,8 +520,8 @@ S           Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)
 <p>Not able to provide new pictures of the pump when requested.  Sure they posted some pictures with the ad, but what if they just downloaded them from other people's ads?  The seller should be able to furnish a couple "new" photos are your request.  A good one to ask for is the battery and reservoir tops so you can see the condition of those.</p>
 </li>
 </ul>
-<h2 id="pump-supplies">Pump Supplies</h2>
-<p>Medtronic will not sell pump supplies directly to customers who do not have an in-warranty Medtronic pump registered in their system.  Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider.  If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any in particular.</p></div>
+<h2 id="pump-supplies">Pump Supplies<a class="headerlink" href="#pump-supplies" title="Permanent link">⌁</a></h2>
+<p>Medtronic will not typically want to sell pump supplies directly to customers who do not have an in-warranty Medtronic pump registered in their system.  Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider.  If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any in particular.</p></div>
         </div>
 
         <footer class="col-md-12">

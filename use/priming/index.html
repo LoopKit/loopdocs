@@ -15,6 +15,7 @@
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/admonitions.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -296,7 +297,7 @@
                     
                         
 <li >
-    <a href="../../nightscout/troubleshooting/">Loop Pill</a>
+    <a href="../../nightscout/loop_pill/">Loop Pill</a>
 </li>
 
                     
@@ -368,9 +369,14 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="priming-and-site-changes">Priming and Site Changes</h1>
-<p>Loop uses event history and reservoir levels to determine how much insulin has actually been delivered through the pump, and correspondingly the Insulin On Board (IOB).  <strong>If you manually prime your tubing WITHOUT changing reservoirs</strong>, Loop will detect that prime as an insulin delivery and count it as IOB.  Therefore, here are some suggestions for priming, set changes, and reservoir changes with Loop in mind.</p>
-<h2 id="site-changes">Site Changes</h2>
+<h1 id="priming-and-site-changes">Priming and Site Changes<a class="headerlink" href="#priming-and-site-changes" title="Permanent link">⌁</a></h1>
+<p>Loop uses event history and reservoir levels to determine how much insulin has actually been delivered through the pump, and correspondingly the Insulin On Board (IOB).  </p>
+<h2 id="site-changes">Site Changes<a class="headerlink" href="#site-changes" title="Permanent link">⌁</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Loop v1.3.2 and newer</p>
+<p>Loop v1.3.2 and newer will automatically detect prime events and that insulin will not be counted to IOB.  You will need to have your Preferred Data Source set to Event History for the automatic detection of primes to work.  Reservoir Volumes will not detect prime events.</p>
+</div>
+<p>If you are using a version of Loop older than v1.3.2 (or using Preferred Data Source of Reservoir Volume), you will need to be aware of the following regarding prime events at site changes:</p>
 <ul>
 <li>
 <p>If you change sites and increase reservoir volume (i.e., start a new reservoir), don't worry. So long as you are putting in a reservoir that has more insulin than the old one, IOB will be accurate in Loop.  When Loop sees a rewind and an increase in reservoir volume, it will not count any tubing primes as IOB.</p>
@@ -383,8 +389,12 @@
 <p>(4)  delete at least 30 minutes of reservoir readings, including the readings that involved priming events</p>
 </li>
 </ul>
-<h2 id="prime-menu">Prime Menu</h2>
-<p>When you finish priming on a Medtronic pump, please make sure to complete the priming menu.  In other words, finish all the prompts so that you get back to the (nearly blank) normal Medtronic pump screen.  If you don't finish the priming menu, the pump will not begin basal insulin delivery, nor does it alarm.  It is equivalent to the pump being suspended...but you won't be able to see any indication of that in Nightscout as a remotely monitoring parent.  Loop will not detect the prime screen issue and will keep sending temp basal messages...but the pump won't enact them.  On Loop, you could notice it by the active IOB continually going down and then eventually negative IOB, as the basal is not delivered and the reservoir level remains constant.  However, the temp basal graph will still show the bars from the temp basal commands loop has been sending.</p>
+<h2 id="prime-menu">Prime Menu<a class="headerlink" href="#prime-menu" title="Permanent link">⌁</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When you prime tubing on a Medtronic pump, make sure to complete the priming menu commands.</p>
+</div>
+<p>In other words, finish all the prompts so that you get back to the (nearly blank) normal Medtronic pump screen.  If you don't finish the priming menu, the pump will not begin basal insulin delivery, nor does it alarm.  It is equivalent to the pump being suspended...but you won't be able to see any indication of that in Nightscout as a remotely monitoring parent.  Loop will not detect the prime screen issue and will keep sending temp basal messages...but the pump won't enact them.  On Loop, you could notice it by the active IOB continually going down and then eventually negative IOB, as the basal is not delivered and the reservoir level remains constant.  However, the temp basal graph will still show the bars from the temp basal commands loop has been sending.</p>
 <p>So, remember to finish those prime menu screens through to the end.</p></div>
         </div>
 
