@@ -1,5 +1,11 @@
 site_name: Loop Docs
 theme: flatly
+extra_css:
+    - css/admonitions.css
+markdown_extensions:
+    - admonition
+    - toc:
+        permalink: ⌁
 
 pages:
 - 'index.md'
@@ -41,7 +47,7 @@ pages:
     - 'Update Site': 'nightscout/update_user.md'
     - 'Azure to Heroku': 'nightscout/azure_migration.md'
     - 'mLab': 'nightscout/mlab_cleanup.md'
-    - 'Loop Pill': 'nightscout/troubleshooting.md'
+    - 'Loop Pill': 'nightscout/loop_pill.md'
     - 'IFTTT': 'nightscout/ifttt.md'
     - 'Pebble': 'nightscout/pebble.md'
     - 'Remote Notifications': 'nightscout/pushover.md'
