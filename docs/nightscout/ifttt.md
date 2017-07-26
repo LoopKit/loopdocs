@@ -53,19 +53,19 @@ If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, 
 <img src="../img/IFTTT_that.png" width="550">
 </p> 
 
-* Enter "maker" in the search field and click on the Maker app
+* Enter "maker" in the search field and click on the Maker Webhooks app
 
 <p align="center">
 <img src="../img/IFTTT_maker.png" width="550">
 </p> 
 
-* Connect the Maker app
+* Connect the Maker Webhooks app
 
 <p align="center">
 <img src="../img/IFTTT_connect2.png" width="550">
 </p> 
 
-* Select the grey "Make a Web Request" box
+* Select the green "Make a Web Request" box
 
 <p align="center">
 <img src="../img/IFTTT_webrequest.png" width="550">
@@ -87,14 +87,6 @@ Content Type: application/json
 
 Body:  The content of the body will depend on the action that you would like this particular button press to perform.  You can only do ONE of the actions per button.  Some sample content:
 
-Note
-```
-{"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, I love you!", "secret": "your_hashed_api_goes_here!!!"}
-```
-Low Treatment
-```
-{"enteredBy": "IFTTT-button", "reason": "low treatment", "carbs": 15, "secret": "your_hashed_api_goes_here!!!"}
-```
 Pump Site Change
 ```
 {"enteredBy": "IFTTT-button", "eventType": "Site Change", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
@@ -102,6 +94,14 @@ Pump Site Change
 CGM Sensor Start
 ```
 {"enteredBy": "IFTTT-button", "eventType": "Sensor Start", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
+```
+Note
+```
+{"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, starting track practice!", "secret": "your_hashed_api_goes_here!!!"}
+```
+Low Treatment
+```
+{"enteredBy": "IFTTT-button", "reason": "low treatment", "carbs": 15, "secret": "your_hashed_api_goes_here!!!"}
 ```
 
 * Click the `Create Action` button on the bottom of the screen when you finish.
@@ -144,7 +144,9 @@ CGM Sensor Start
 </p> 
 
 <p align="center">
+
 <img src="../img/IFTTT_enable.png" width="550">
+
 </p> 
 
 ## Install IFTTT app on your iPhone/Android
@@ -171,6 +173,10 @@ If you end up with more than four IFTTT applets, they will appear in reverse-ord
   * click on Widgets
   * click on the pencil icon in upper right of screen
   * click and hold the three lines that appear on the right side of the widget that you want to move.  Drag the widget to the order in the list that you'd like it to appear in your widget quickscreen.
+
+<p align="center">
+<img src="../img/IFTTT_reorder.png" width="550">
+</p> 
 
 ## Alexa integration
 * Since you have IFTTT/Maker requests working, you can get it to work with anything that supports IFTTT, including Alexa. You will need to add "alexa" to your ENABLE line in your Nightscout host settings (azure) or config vars (heroku).  And then repeat the steps above, but instead of using "ButtonWidget" service we started with earlier (the "+if" part of the setup)...you will use the "AmazonAlexa" service.
