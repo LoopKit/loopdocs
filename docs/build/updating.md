@@ -7,7 +7,8 @@ When a new version of Loop is released, you can click [HERE](https://github.com/
         * [Check your Apple developer account](http://developer.apple.com) and accept any updated license agreements.</br>
         * Update to Sierra OS X on your Apple (El Capitan OS X is not compatible)</br>
         * Update your Xcode app to at least v8.3</br>
-        * Update your iPhone (iOS 10.3.3) and Apple Watch OS (v 3.2.3)</br>
+        * Update your iPhone (iOS 10.3.3) and Apple Watch OS (v 3.2.3)</br></br>
+    You will also need to update your carthage installation.  To do this, open you Terminal App (found in Applications folder, and then the Utilities folder) and type this command `brew upgrade carthage`
 
 
 You have two options when building a new Loop app:
