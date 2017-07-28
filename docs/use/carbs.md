@@ -22,13 +22,13 @@ Pressing the `Save` button in the top right corner will save the carbs into the 
 <img src="../img/food_icons_times.png" width="400">
 </p>
 
-These default carb absorption times are average representations for high, medium, and low glycemic index foods.  Loop app has been updated in v1.3.4 to incorporate dynamic carb absorption.  Previous Loop versions were based on a curve that assumed the rate of carb absorption would start out slow, increase to a mid-point, and then taper off.  However, in the real world, carb absorption is quite variable.  Dynamic carb absorption model is able to model some of this variability and allow Loop to respond more reasonably when actual carb absorption is not matching well with the selected carb absorption time for a meal.  In short, while entering a carb absorption time is still part of recording meals in Loop, it is much less critical to get it right.  Now your entry serves more as a guideline, than a rule, for Loop to model carb absorption. 
+These default carb absorption times are average representations for high, medium, and low glycemic index foods.  Loop app has been updated in v1.4.0 to incorporate dynamic carb absorption.  Previous Loop versions were based on a curve that assumed the rate of carb absorption would start out slow, increase to a mid-point, and then taper off.  However, in the real world, carb absorption is quite variable.  Dynamic carb absorption model is able to model some of this variability and allow Loop to respond more reasonably when actual carb absorption is not matching well with the selected carb absorption time for a meal.  In short, while entering a carb absorption time is still part of recording meals in Loop, it is much less critical to get it right.  Now your entry serves more as a guideline, than a rule, for Loop to model carb absorption. 
 
 For a more detailed explanation of the new dynamic carb absorption model, please read about it [here](https://github.com/LoopKit/Loop/pull/507).
 
 To select your carb entry's absorption time, you can either click on the default food emojis or manually enter carb absoprtion time by selecting the `absorption time` line in the carb entry tool.  
 
-A new feature of Loop v1.3.4 is the plate emoji, found to the right of the pizza emoji.  If you select the plate icon, you can use new food emojis and add text to your `food type`.  Updating and deploying your Nightscout cgm-remote-monitor repository to the latest dev branch will allow those entries to be displayed on your graph.
+A new feature of Loop v1.4.0 is the plate emoji, found to the right of the pizza emoji.  If you select the plate icon, you can use new food emojis and add text to your `food type`.  Updating and deploying your Nightscout cgm-remote-monitor repository to the latest dev branch will allow those entries to be displayed on your graph.
 
 <p align="center">
 <img src="../img/plate.png" width="300">
