@@ -380,7 +380,7 @@
     * Update to Sierra OS X on your Apple (El Capitan OS X is not compatible)</br>
     * Update your Xcode app to at least v8.3</br>
     * Update your iPhone (iOS 10.3.3) and Apple Watch OS (v 3.2.3)</br></br>
-You will also need to update your carthage installation.  To do this, open your Terminal app (found in Applications folder, and then the Utilities subfolder) and run this command <code>brew upgrade carthage</code></p>
+You will also need to update your carthage installation to version 0.24.0.  You can check your carthage version by opening Terminal app (found in Applications folder, and then the Utilities subfolder) and run this command <code>carthage version</code>. If the returned version is 0.18.1, then download the updated version <a href="https://github.com/Carthage/Carthage/releases/download/0.24.0/Carthage.pkg">here</a> and install it just like <a href="https://loopkit.github.io/loopdocs/build/installing/#install-carthage">you did originally</a>.  If you have homebrew installed, you could instead use <code>brew carthage upgrade</code> as an alternative way of updating carthage. </p>
 </div>
 <p>You have two options when building a new Loop app:</p>
 <ol>
@@ -394,7 +394,13 @@ You will also need to update your carthage installation.  To do this, open your 
 <p>First you will need to download the current Loop version's zip file <a href="https://github.com/LoopKit/Loop/archive/master.zip">HERE (for master branch)</a> or <a href="https://github.com/LoopKit/Loop/archive/dev.zip">HERE (for dev branch)</a></p>
 </li>
 <li>
-<p>Follow the guide for installation as you did before, beginning <a href="https://loopkit.github.io/loopdocs/build/installing/#install-loop-using-xcode">HERE</a> to navigate to your new source code folder in the Downloads folder.  <strong>Use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation.</strong>  If you can't remember it, you can open your old Loop folder in Downloads on your computer and check.  Alternatively, open your Loop settings, open the Issue Report and look for a line titled <code>appGroupName</code>.  If you use a different MAIN_APP_BUNDLE_IDENTIFIER, your Loop app will automatically build as a separate, second Loop app as described below.</br></br></p>
+<p>Follow the guide for installation as you did before, beginning <a href="https://loopkit.github.io/loopdocs/build/installing/#install-loop-using-xcode">HERE</a> to navigate to your new source code folder in the Downloads folder.</p>
+</li>
+<li>
+<p>When you've opened the project in Xcode, choose <code>Product</code> from the Xcode top menu and then select <code>Clean</code>.  This will help clean out any legacy issues from previous builds.</p>
+</li>
+<li>
+<p><strong>Use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation.</strong>  If you can't remember it, you can open your old Loop folder in Downloads on your computer and check.  Alternatively, open your Loop settings, open the Issue Report and look for a line titled <code>appGroupName</code>.  If you use a different MAIN_APP_BUNDLE_IDENTIFIER, your Loop app will automatically build as a separate, second Loop app as described below.</br></br></p>
 </li>
 </ul>
 <p align="center">
@@ -420,7 +426,13 @@ You will also need to update your carthage installation.  To do this, open your 
 <p>First you will need to download the current Loop version's zip file <a href="https://github.com/LoopKit/Loop/archive/master.zip">HERE (for master branch)</a> or <a href="https://github.com/LoopKit/Loop/archive/dev.zip">HERE (for dev branch)</a></p>
 </li>
 <li>
-<p>Follow the guide for installation as you did before, beginning <a href="https://loopkit.github.io/loopdocs/build/installing/#install-loop-using-xcode">HERE</a> to navigate to your new source code folder in the Downloads folder.  <strong>Use a different MAIN_APP_BUNDLE_IDENTIFIER than you used in the first installation.</strong>  </p>
+<p>Follow the guide for installation as you did before, beginning <a href="https://loopkit.github.io/loopdocs/build/installing/#install-loop-using-xcode">HERE</a> to navigate to your new source code folder in the Downloads folder.  </p>
+</li>
+<li>
+<p>When you've opened the project in Xcode, choose <code>Product</code> from the Xcode top menu and then select <code>Clean</code>.  This will help clean out any legacy issues from previous builds.</p>
+</li>
+<li>
+<p><strong>Use a different MAIN_APP_BUNDLE_IDENTIFIER than you used in the first installation.</strong>  </p>
 </li>
 <li>
 <p>Customization of the second Loop app's display name, and potentially the logo, is a good idea if you have more than one version of Loop app installed on your iPhone.  The display name you input here will also be displayed as the Nightscout site's Loop pill.</p>
