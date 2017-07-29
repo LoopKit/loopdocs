@@ -10,6 +10,9 @@ When a new version of Loop is released, you can click [HERE](https://github.com/
         * Update your iPhone (iOS 10.3.3) and Apple Watch OS (v 3.2.3)</br></br>
     You will also need to update your carthage installation to version 0.24.0.  You can check your carthage version by opening Terminal app (found in Applications folder, and then the Utilities subfolder) and run this command `carthage version`. If the returned version is 0.18.1, then download the updated version [here](https://github.com/Carthage/Carthage/releases/download/0.24.0/Carthage.pkg) and install it just like [you did originally](https://loopkit.github.io/loopdocs/build/installing/#install-carthage).  If you have homebrew installed, you could instead use `brew carthage upgrade` as an alternative way of updating carthage. 
 
+!!!warning ""
+    Do not build your Loop app by downloading your source code to iCloud.  There are problems with building Loop, related to carthage, when using iCloud.  Make sure you download Loop code directly to your local computer for building Loop app.
+
 
 You have two options when building a new Loop app:
 
