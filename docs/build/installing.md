@@ -59,7 +59,7 @@ You’ll need to obtain the Loop’s source code in order to build the app on yo
 Advanced method: Alternatively, if you are already familiar with git and Terminal app use, you could save a local copy of Loop source code to your computer using `git clone https://github.com/LoopKit/Loop.git`.  This method would allow for saving local changes and updating, but does require some familiarity with git commands.  For new users, or those unfamiliar with git, we recommend using the direct download of master branch, above.
 
 !!!warning ""
-Do not build your Loop app by downloading your source code to iCloud.  There are problems with building Loop, related to carthage, when using iCloud.  Make sure you download Loop code directly to your local computer for building Loop app.
+    Do not build your Loop app by downloading your source code to iCloud.  There are problems with building Loop, related to carthage, when using iCloud.  Make sure you download Loop code directly to your local computer for building Loop app.
 
 
 ## Install Loop using Xcode
