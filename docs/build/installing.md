@@ -23,9 +23,9 @@ Go to the [Apple App Store](https://developer.apple.com/xcode/)? It’s an appli
 ### Install Carthage
 The installation of Carthage has a few different ways it can be done, but the easiest is to download the Carthage package here:
 
-[Carthage.pkg download](https://github.com/Carthage/Carthage/releases/download/0.18.1/Carthage.pkg)       
+[Carthage.pkg download](https://github.com/Carthage/Carthage/releases/download/0.24.0/Carthage.pkg)       
 
-Find the downloaded `carthage.pkg` in your Downloads folder (option-command-L while in Finder will bring up your Downloads folder).  Double-click the file and follow the directions to install (basically give your computer’s password and it does the rest).  Done.  Nothing more needs to happen with Carthage (it runs in the background).
+Find the downloaded `carthage.pkg` in your Downloads folder (option-command-L while in Finder will bring up your Downloads folder).  Double-click the file and follow the directions to install (basically give your computer’s password and it does the rest).  Done.  Nothing more needs to happen with Carthage (it runs in the background). Note: if you get a message that says "Carthage.pkg can't be opened because it is from an unidentified developer.", then click OK and go to your computer's System Preferences app.  Choose `Security and Privacy` and then click on the "Open Anyway" button for the Carthage.pkg.
 </br>
 </br>
 
