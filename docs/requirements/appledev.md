@@ -1,6 +1,6 @@
 # Apple Developer Account
 
-The [Apple Developer Program](https://developer.apple.com/programs/how-it-works/) is Apple's system to provide the [tools and resources](https://developer.apple.com/programs/whats-included/) for building, sharing, and using apps for Apple products.  Members of Apple's Developer Program can test apps on their own devices prior to submitting the App Store for distribution or sale.  Developers also get access to beta releases of new OS and iOS versions.  
+The [Apple Developer Program](https://developer.apple.com/programs/how-it-works/) is Apple's system to provide the [tools and resources](https://developer.apple.com/programs/whats-included/) for building, sharing, and using apps for Apple products.  Members of Apple's Developer Program can test apps on their own devices prior to submitting the App Store for distribution or sale.  Developers also get access to beta releases of new macOS and iOS versions.  
 
 The Loop app is not available for download in the App Store.  It needs to be built and installed by the individual users.  This means Loop users need to enroll as an individual (not an organization) in the Apple Developer Program in order to install the Loop app on their iPhone.  There are two types of individual [enrollment in the Developer Program](https://developer.apple.com/programs/enroll/); free and paid.  You will need to have an Apple ID to sign up for the Apple Developer Program.
 

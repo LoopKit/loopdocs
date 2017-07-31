@@ -2,10 +2,10 @@
 
 When a new version of Loop is released, you can click [HERE](https://github.com/LoopKit/Loop/releases) to read what features or fixes were a part of the new release.  If you decide you'd like to update to the new version, your upgrade process will depend on how you initially installed Loop.
 
-!!!info "Update OS X and Xcode before updating Loop"
-    Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app; your Apple Developer license agreement, your iPhone's iOS, your computer's OS X, your Xcode app, and/or your Apple Watch's OS.  If you don't install the updates, you will likely run into build problems.  You can check for OS X and Xcode updates using the App Store link under the apple logo in your computer display's upper left corner.</br></br>
+!!!info "Update macOS and Xcode before updating Loop"
+    Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app; your Apple Developer license agreement, your iPhone's iOS, your computer's macOS, your Xcode app, and/or your Apple Watch's OS.  If you don't install the updates, you will likely run into build problems.  You can check for macOS and Xcode updates using the App Store link under the apple logo in your computer display's upper left corner.</br></br>
         * [Check your Apple developer account](http://developer.apple.com) and accept any updated license agreements.</br>
-        * Update to Sierra OS X on your Apple (El Capitan OS X is not compatible)</br>
+        * Update to macOS Sierra on your Apple (macOS El Capitan is not compatible)</br>
         * Update your Xcode app to at least v8.3</br>
         * Update your iPhone (iOS 10.3.3) and Apple Watch OS (v 3.2.3)</br></br>
     You will also need to update your carthage installation to version 0.24.0.  You can check your carthage version by opening Terminal app (found in Applications folder, and then the Utilities subfolder) and run this command `carthage version`. If the returned version is 0.18.1, then download the updated version [here](https://github.com/Carthage/Carthage/releases/download/0.24.0/Carthage.pkg) and install it just like [you did originally](https://loopkit.github.io/loopdocs/build/installing/#install-carthage).  If you have homebrew installed, you could instead use `brew carthage upgrade` as an alternative way of updating carthage. 

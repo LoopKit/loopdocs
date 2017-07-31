@@ -3,15 +3,15 @@ You’re ready to get to the real stuff now, right?  Excited to get Looping?  Le
 
 ## Setup your Apple Computer
 
-### Verify OS X
+### Verify macOS
 
-You need to be running OS X Sierra, so verify by clicking the apple logo in your computer display's upper left corner and selecting "About this Mac"
+You need to be running macOS Sierra, so verify by clicking the apple logo in your computer display's upper left corner and selecting "About this Mac"
 
 <p align="center">
 <img src="../img/macosx.png" width="450">
 </p>
 
-If your OS X is not Sierra, click on the `Software Update` button and update to Sierra.  If your computer is older than late 2009, you may not be able to update to Sierra.  You can check Sierra compatibility [here](https://www.apple.com/macos/how-to-upgrade/#hardware-requirements). 
+If your macOS is not Sierra, click on the `Software Update` button and update to Sierra.  If your computer is older than late 2009, you may not be able to update to Sierra.  You can check Sierra compatibility [here](https://www.apple.com/macos/how-to-upgrade/#hardware-requirements). 
 
 ### Install Xcode
 Go to the [Apple App Store](https://developer.apple.com/xcode/)? It’s an application on your Apple Computer.  Open it and search for Xcode.  Download and install it for free.  Easy peasy.  Except it takes about 20-40 minutes to download depending on your internet speed.
