@@ -25,22 +25,25 @@ The installation of Carthage has a few different ways it can be done, but the ea
 
 [Carthage.pkg download](https://github.com/Carthage/Carthage/releases/download/0.24.0/Carthage.pkg)       
 
-Find the downloaded `carthage.pkg` in your Downloads folder (option-command-L while in Finder will bring up your Downloads folder).  Double-click the file and follow the directions to install (basically give your computer’s password and it does the rest).  Done.  Nothing more needs to happen with Carthage (it runs in the background). Note: if you get a message that says "Carthage.pkg can't be opened because it is from an unidentified developer.", then click OK and go to your computer's System Preferences app.  Choose `Security and Privacy` and then click on the "Open Anyway" button for the Carthage.pkg.
-</br>
+Find the downloaded `carthage.pkg` in your Downloads folder.  Double-click the file and follow the directions to install (basically give your computer’s password and it does the rest).  Done.  Nothing more needs to happen with Carthage (it runs in the background). 
+
+!!!info ""
+    If you get a message that says "Carthage.pkg can't be opened because it is from an unidentified developer," click OK and go to your computer's System Preferences app.  Choose `Security and Privacy` and then click on the "Open Anyway" button for the Carthage.pkg.
 </br>
 
-IF you have problems with that method, you can use the “Homebrew method”.  And here’s how it is done:
-Open the Terminal application on your Apple computer (it is located in the Utilities application folder)
+IF you have problems with the installation method above, you can use the “Homebrew method”.  And here’s how it is done:
 
-Copy and paste the line below into the prompt in Terminal.  Press return after you paste it in.
+* Open the Terminal application on your Apple computer (it is located in the Utilities application folder)
+
+* Copy and paste the line below into Terminal prompt.  Press return after you paste it in.
 
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-There will be a prompt asking if you want to continue (press return to continue, then it may prompt for your password.  enter your computer user password.).  Wait while the script does its thing...you’ll see info scroll by and then it will pause for awhile.  Eventually, it will be done and you’ll see something that says “Installation successful” and you’ll have a ready terminal prompt again.
+* There will be a prompt asking if you want to continue.  Press return to continue, then it may prompt for your password.  Enter your computer user password.  Wait while the script does its thing...you’ll see info scroll by and then it will pause for awhile.  Eventually, it will be done and you’ll see something that says “Installation successful” and you’ll have a ready terminal prompt again.
 
-Type `brew update` and press return.
+* Type `brew update` and press return.
 
-Type `brew install carthage` and press return.  You can confirm carthage has been installed by running `carthage version` and it should return 0.24.0.  
+* Type `brew install carthage` and press return.  You can confirm carthage has been installed by running `carthage version` and it should return 0.24.0.  
 
 You can close the Terminal application now.  You’re done with it.  Phew.
 
@@ -55,12 +58,16 @@ You’ll need to obtain the Loop’s source code in order to build the app on yo
 
 [Loop: Master branch source code](https://github.com/LoopKit/Loop/archive/master.zip)
 
+
+
+!!!info ""
+    If you have your browser preferences set to download to a different drive than Downloads, make sure the specified drive is **not** an iCloud drive.  iCloud drives can cause problems with the frameworks for the project and Loop may not build properly.  If you have your System Preferences for iCloud set as shown below, you should **NOT** download Loop source code to your Documents or Desktop.  Holding the control key while you click on the download link will allow you to choose a specific download folder.
+    <p align="center">
+    <img src="../img/icloud-drive.png" width="650">
+    </p>
+
 </br>
 Advanced method: Alternatively, if you are already familiar with git and Terminal app use, you could save a local copy of Loop source code to your computer using `git clone https://github.com/LoopKit/Loop.git`.  This method would allow for saving local changes and updating, but does require some familiarity with git commands.  For new users, or those unfamiliar with git, we recommend using the direct download of master branch, above.
-
-!!!warning ""
-    Do not build your Loop app by downloading your source code to iCloud.  There are problems with building Loop, related to carthage, when using iCloud.  Make sure you download Loop code directly to your local computer for building Loop app.
-
 
 ## Install Loop using Xcode
 
