@@ -152,7 +152,6 @@ Finally, you need to make sure to sign all FOUR “targets” to the application
 <img src="../img/target_view.jpg" width="450">
 </p>
 
-
 !!!info "Customizations"
     **New Loop users**: Customizations are not a required part of any Loop build.  As you gain experience in how you use your Loop app, you may want to customize some of the features.  You can always update your Loop app to add customizations at a later time.</br></br>
     If you want any custom configurations to your Loop app, now is the time to make them before you finish with the installation of Loop on your iPhone.  Follow the step-by-step instructions (found by clicking on the "Code Customizations" link to the left).  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.
@@ -161,10 +160,10 @@ Finally, you need to make sure to sign all FOUR “targets” to the application
 
 All done with customizations? Let’s finish the installation of the Loop app onto your iPhone.  Select your iPhone's name and then press the “play” button (or build button) to start Xcode on its way.  You may be prompted to add the iPhone to your Developer Account...go ahead and do so.  You’ll see the progression of the build in the status window.  If the build is successful, it will say "running Loop" or "finished running Loop" in the status bar.  
 
+
 <p align="center">
 <img src="../img/select_device.jpg" width="450">
 </p>
-
   
 If this is the first time you have installed an app on your iPhone using your Developer Account, you may get a warning like this.  Just follow the directions in the warning, and the issue resolves very quickly.  Click ok and you can safely disconnect your iPhone from the computer.  (If you don’t get a warning and the Loop app installs but does not open, you may still need to go to Settings->General->Device Management and enable trust for your Developer Account.)
 

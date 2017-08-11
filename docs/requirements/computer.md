@@ -1,6 +1,6 @@
 # Apple Computer
 
-Apple regularly updates their iPhone software (iOS), computer software (macOS), Apple Watch software (watchOS) and Xcode application.  Depending on what version of those you are using on your iPhone, you may have to update your computer and Xcode to build Loop on your iPhone.
+Apple regularly updates their iPhone software (iOS), computer software (OSX) and Xcode application.  Depending on what version of those you are using on your iPhone, you may have to update your computer and Xcode to build Loop on your iPhone.
 
 ********
 The most recent version of iOS is 10.3.3
