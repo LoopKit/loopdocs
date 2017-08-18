@@ -881,6 +881,56 @@
             "title": "Notifications in Loop"
         }, 
         {
+            "location": "/use/issues/", 
+            "text": "Issues/Problems\n\u2301\n\n\nAfter you have been using Loop for awhile, there's a potential that you will run across a behavior or issue that you wonder if it is normal or intended.  When that happens, there's a few things that we'd recommend doing to resolve the issue.\n\n\nGather information\n\u2301\n\n\nCheck the Docs\n\u2301\n\n\nThe Loop docs are updated regularly.  If you built your Loop app awhile ago, chances are good that more information has been upated and changed since you first read them.  Please can the topics and look for a section that may be applicable.  For example, if your Nightscout isn't working, try looking at the docs there.  A good read of ALL the pages at the beginning of using Loop is encouraged.  Many FAQs from new Loop users are covered in the docs.\n\n\nScreenshots\n\u2301\n\n\nTake a screenshot of your Loop main display screen\n, or other screens (such as Tuning results of RileyLink) that may help troubleshooters better understand your issue.  A lot of times a picture is worth a thousand words.  Being able to see recent Loop basal adjustments, predicted BG curve, and carb entries really helps fill in the full story of the current Loop status.  If you didn't manage to get a screenshot when the issue was happening, you can also go to Nightscout and scroll back over the previous 48 hours to obtain much of the same information.  Try to capture a Nightscout screen from the time period in question.\n\n\nIssue Report\n\u2301\n\n\nUnder the Loop app settings, there is a selection called \nIssue Report\n.  Within the Issue Report is important information about your Loop's actions and status that can be very useful for troubleshooters...particularly with unexplained behaviors.  The upper right corner of the Issue Report includes a button so that you can email the Issue Report to yourself (or others).  If you're seeing something unusual in your Loop, capture an Issue Report while it is happening and save it.  A troubleshooter may want to see that information.\n\n\nCheck Resources\n\u2301\n\n\nGitHub Issues\n\u2301\n\n\nCheck the current list of \nGitHub Loop Issues\n for known issues.  Many times other users have noticed the same issue previously and opened an Issue so that more information can be added to help develop a solution.  If you see your same issue has already been reported, please add to the open issue instead of creating a new one.\n\n\n\n\n\n\n\n\n\nGitter and Facebook\n\u2301\n\n\nSearch in \nGitter\n or \nFacebook\n.  Quite possibly someone else has already posted about the same issue and perhaps a resolution has already been provided.  \n\n\nAsk for Help\n\u2301\n\n\nIf you can't find any information in the Loop docs, GitHub Issues, Gitter, or Faceboook...PLEASE post and ask for help.  GitHub Issues list is an EXCELLENT place to post issues of unexpected Loop behavior (that you believe are errant or need improvement).  However, if you are just seeking clarifications on Loop, but don't necessarily expect that there's a problem with the underlying code, then Facebook and Gitter would be a good place.  For example, Gitter and Facebook are great for asking about bolus strategies or exercise target use...those are not really code issues.\n\n\nWhen you post, provide a description along with any screenshots of the issue you are having.  You don't necessarily have to tag any particular person, the community is fairly active in replying to messages.\n\n\nIf you are posting to GitHub issues list, you can label the Issue appropriately too...such as Bug, Enhancement, or Documentation.", 
+            "title": "Issues/Troubles"
+        }, 
+        {
+            "location": "/use/issues/#issuesproblems", 
+            "text": "After you have been using Loop for awhile, there's a potential that you will run across a behavior or issue that you wonder if it is normal or intended.  When that happens, there's a few things that we'd recommend doing to resolve the issue.", 
+            "title": "Issues/Problems"
+        }, 
+        {
+            "location": "/use/issues/#gather-information", 
+            "text": "", 
+            "title": "Gather information"
+        }, 
+        {
+            "location": "/use/issues/#check-the-docs", 
+            "text": "The Loop docs are updated regularly.  If you built your Loop app awhile ago, chances are good that more information has been upated and changed since you first read them.  Please can the topics and look for a section that may be applicable.  For example, if your Nightscout isn't working, try looking at the docs there.  A good read of ALL the pages at the beginning of using Loop is encouraged.  Many FAQs from new Loop users are covered in the docs.", 
+            "title": "Check the Docs"
+        }, 
+        {
+            "location": "/use/issues/#screenshots", 
+            "text": "Take a screenshot of your Loop main display screen , or other screens (such as Tuning results of RileyLink) that may help troubleshooters better understand your issue.  A lot of times a picture is worth a thousand words.  Being able to see recent Loop basal adjustments, predicted BG curve, and carb entries really helps fill in the full story of the current Loop status.  If you didn't manage to get a screenshot when the issue was happening, you can also go to Nightscout and scroll back over the previous 48 hours to obtain much of the same information.  Try to capture a Nightscout screen from the time period in question.", 
+            "title": "Screenshots"
+        }, 
+        {
+            "location": "/use/issues/#issue-report", 
+            "text": "Under the Loop app settings, there is a selection called  Issue Report .  Within the Issue Report is important information about your Loop's actions and status that can be very useful for troubleshooters...particularly with unexplained behaviors.  The upper right corner of the Issue Report includes a button so that you can email the Issue Report to yourself (or others).  If you're seeing something unusual in your Loop, capture an Issue Report while it is happening and save it.  A troubleshooter may want to see that information.", 
+            "title": "Issue Report"
+        }, 
+        {
+            "location": "/use/issues/#check-resources", 
+            "text": "", 
+            "title": "Check Resources"
+        }, 
+        {
+            "location": "/use/issues/#github-issues", 
+            "text": "Check the current list of  GitHub Loop Issues  for known issues.  Many times other users have noticed the same issue previously and opened an Issue so that more information can be added to help develop a solution.  If you see your same issue has already been reported, please add to the open issue instead of creating a new one.", 
+            "title": "GitHub Issues"
+        }, 
+        {
+            "location": "/use/issues/#gitter-and-facebook", 
+            "text": "Search in  Gitter  or  Facebook .  Quite possibly someone else has already posted about the same issue and perhaps a resolution has already been provided.", 
+            "title": "Gitter and Facebook"
+        }, 
+        {
+            "location": "/use/issues/#ask-for-help", 
+            "text": "If you can't find any information in the Loop docs, GitHub Issues, Gitter, or Faceboook...PLEASE post and ask for help.  GitHub Issues list is an EXCELLENT place to post issues of unexpected Loop behavior (that you believe are errant or need improvement).  However, if you are just seeking clarifications on Loop, but don't necessarily expect that there's a problem with the underlying code, then Facebook and Gitter would be a good place.  For example, Gitter and Facebook are great for asking about bolus strategies or exercise target use...those are not really code issues.  When you post, provide a description along with any screenshots of the issue you are having.  You don't necessarily have to tag any particular person, the community is fairly active in replying to messages.  If you are posting to GitHub issues list, you can label the Issue appropriately too...such as Bug, Enhancement, or Documentation.", 
+            "title": "Ask for Help"
+        }, 
+        {
             "location": "/algorithm/overview/", 
             "text": "Overview\n\u2301\n\n\nLoop\u2019s algorithm for adjusting insulin delivery is oriented around making a glucose prediction.  Every five minutes, triggered by new BG data, it generates a new prediction.  Both \nbolus recommendations\n and \ntemporary basal rates\n are set based on this prediction.\n\n\nTerminology\n\u2301\n\n\nThis graph and legend illustrates terms commonly used in discussing Loop's algorithm,\nand shows them in the context of historical and forecasted BG in a style similar to the\nstatus screen of Loop.\n\n\n\n\n\n\nInsulin Action Duration\nA configuration value that provides an estimate of how long insulin stays active after delivery.\n\n\nTarget Range\n\n\nThis is the low and high BG values that Loop will attempt to keep you between.\n\n\nPredicted Glucose\n\n\nLoop makes a prediction of glucose values out for a length of time equal to your Insulin Action Duration.\n\n\nEventual BG\n\n\nThe last value of the prediction.\n\n\nMinimum BG\n\n\nThe lowest glucose value at any point in time within the prediction.\n\n\nMinimum BG Guard\n\n\nA configuration value below which Loop will suspend all insulin delivery.\n\n\nCGM Data\n\n\nActual glucose measurements made by a continuous glucose monitor.\n\n\nInsulin Sensitivity\n\n\nA configuration value that provides an estimate of how much blood glucose will drop given a unit of insulin.", 
             "title": "Overview"

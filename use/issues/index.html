@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Glucose Prediction - Loop Docs</title>
+	<title>Issues/Troubles - Loop Docs</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -153,79 +153,79 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Use <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
 <li >
-    <a href="../../use/overview/">Loop Display</a>
+    <a href="../overview/">Loop Display</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/green-loop/">Getting a Green Loop</a>
+    <a href="../green-loop/">Getting a Green Loop</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/open-loop/">Open Loop</a>
+    <a href="../open-loop/">Open Loop</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/close-loop/">Close Loop</a>
+    <a href="../close-loop/">Close Loop</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/carbs/">Carb Entries</a>
+    <a href="../carbs/">Carb Entries</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/bolus/">Bolus</a>
+    <a href="../bolus/">Bolus</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/workout/">Workout Targets</a>
+    <a href="../workout/">Workout Targets</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/priming/">Priming and Sites</a>
+    <a href="../priming/">Priming and Sites</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/time-change/">Time Changes</a>
+    <a href="../time-change/">Time Changes</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/rileylink/">RileyLink</a>
+    <a href="../rileylink/">RileyLink</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/notifications/">Loop Notifications</a>
+    <a href="../notifications/">Loop Notifications</a>
 </li>
 
                     
                         
-<li >
-    <a href="../../use/issues/">Issues/Troubles</a>
+<li class="active">
+    <a href="./">Issues/Troubles</a>
 </li>
 
                     
@@ -234,31 +234,31 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithm <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
 <li >
-    <a href="../overview/">Overview</a>
-</li>
-
-                    
-                        
-<li class="active">
-    <a href="./">Glucose Prediction</a>
+    <a href="../../algorithm/overview/">Overview</a>
 </li>
 
                     
                         
 <li >
-    <a href="../temp_basal/">Temp Basal Adjustments</a>
+    <a href="../../algorithm/prediction/">Glucose Prediction</a>
 </li>
 
                     
                         
 <li >
-    <a href="../bolus/">Bolus Recommendations</a>
+    <a href="../../algorithm/temp_basal/">Temp Basal Adjustments</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../algorithm/bolus/">Bolus Recommendations</a>
 </li>
 
                     
@@ -345,12 +345,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../overview/">
+                    <a rel="next" href="../notifications/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../temp_basal/">
+                    <a rel="prev" href="../../algorithm/overview/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -364,29 +364,41 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#glucose-prediction">Glucose Prediction</a></li>
+        <li class="main active"><a href="#issuesproblems">Issues/Problems</a></li>
+        
+            <li><a href="#gather-information">Gather information</a></li>
+        
+            <li><a href="#check-resources">Check Resources</a></li>
+        
+            <li><a href="#ask-for-help">Ask for Help</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="glucose-prediction">Glucose Prediction<a class="headerlink" href="#glucose-prediction" title="Permanent link">⌁</a></h1>
-<p>Loop makes a new glucose prediction every five minutes by computing the effects
-of insulin that has been administered from the pump, and carbohydrate records that
-have been entered into Loop. Two additional terms, glucose momentum, and optionally
-retrospective correction will also be used.</p>
-<p>You can see the individual contributions of these effects by tapping on the
-predicted glucose graph on Loop's status screen.</p>
-<p>This section needs to be fleshed out with details of how insulin and carb
-effects are calculated, and how momentum and retrospective correction work. For
-now, refer to:</p>
-<ul>
-<li><a href="https://github.com/LoopKit/LoopKit/blob/master/CarbKit/CarbStore.swift#L615">CarbStore.getGlucoseEffects()</a></li>
-<li><a href="https://github.com/LoopKit/LoopKit/blob/master/InsulinKit/DoseStore.swift#L936">DoseStore.getGlucoseEffects()</a></li>
-<li><a href="https://github.com/LoopKit/LoopKit/blob/master/GlucoseKit/GlucoseStore.swift#L244">GlucoseStore.getRecentMomentumEffect()</a></li>
-<li><a href="https://github.com/LoopKit/Loop/blob/master/Loop/Managers/LoopDataManager.swift#L445">LoopDataManager.updateRetrospectiveGlucoseEffect()</a></li>
-</ul></div>
+<h1 id="issuesproblems">Issues/Problems<a class="headerlink" href="#issuesproblems" title="Permanent link">⌁</a></h1>
+<p>After you have been using Loop for awhile, there's a potential that you will run across a behavior or issue that you wonder if it is normal or intended.  When that happens, there's a few things that we'd recommend doing to resolve the issue.</p>
+<h2 id="gather-information">Gather information<a class="headerlink" href="#gather-information" title="Permanent link">⌁</a></h2>
+<h3 id="check-the-docs">Check the Docs<a class="headerlink" href="#check-the-docs" title="Permanent link">⌁</a></h3>
+<p>The Loop docs are updated regularly.  If you built your Loop app awhile ago, chances are good that more information has been upated and changed since you first read them.  Please can the topics and look for a section that may be applicable.  For example, if your Nightscout isn't working, try looking at the docs there.  A good read of ALL the pages at the beginning of using Loop is encouraged.  Many FAQs from new Loop users are covered in the docs.</p>
+<h3 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">⌁</a></h3>
+<p><strong>Take a screenshot of your Loop main display screen</strong>, or other screens (such as Tuning results of RileyLink) that may help troubleshooters better understand your issue.  A lot of times a picture is worth a thousand words.  Being able to see recent Loop basal adjustments, predicted BG curve, and carb entries really helps fill in the full story of the current Loop status.  If you didn't manage to get a screenshot when the issue was happening, you can also go to Nightscout and scroll back over the previous 48 hours to obtain much of the same information.  Try to capture a Nightscout screen from the time period in question.</p>
+<h3 id="issue-report">Issue Report<a class="headerlink" href="#issue-report" title="Permanent link">⌁</a></h3>
+<p>Under the Loop app settings, there is a selection called <code>Issue Report</code>.  Within the Issue Report is important information about your Loop's actions and status that can be very useful for troubleshooters...particularly with unexplained behaviors.  The upper right corner of the Issue Report includes a button so that you can email the Issue Report to yourself (or others).  If you're seeing something unusual in your Loop, capture an Issue Report while it is happening and save it.  A troubleshooter may want to see that information.</p>
+<h2 id="check-resources">Check Resources<a class="headerlink" href="#check-resources" title="Permanent link">⌁</a></h2>
+<h3 id="github-issues">GitHub Issues<a class="headerlink" href="#github-issues" title="Permanent link">⌁</a></h3>
+<p>Check the current list of <a href="https://github.com/LoopKit/Loop/issues">GitHub Loop Issues</a> for known issues.  Many times other users have noticed the same issue previously and opened an Issue so that more information can be added to help develop a solution.  If you see your same issue has already been reported, please add to the open issue instead of creating a new one.</p>
+<p align="center">
+<img src="../img/loop-issues.png" width="800">
+</p>
+
+<h3 id="gitter-and-facebook">Gitter and Facebook<a class="headerlink" href="#gitter-and-facebook" title="Permanent link">⌁</a></h3>
+<p>Search in <a href="https://gitter.im/LoopKit/Loop">Gitter</a> or <a href="https://www.facebook.com/groups/TheLoopedGroup/?fref=nf">Facebook</a>.  Quite possibly someone else has already posted about the same issue and perhaps a resolution has already been provided.  </p>
+<h2 id="ask-for-help">Ask for Help<a class="headerlink" href="#ask-for-help" title="Permanent link">⌁</a></h2>
+<p>If you can't find any information in the Loop docs, GitHub Issues, Gitter, or Faceboook...PLEASE post and ask for help.  GitHub Issues list is an EXCELLENT place to post issues of unexpected Loop behavior (that you believe are errant or need improvement).  However, if you are just seeking clarifications on Loop, but don't necessarily expect that there's a problem with the underlying code, then Facebook and Gitter would be a good place.  For example, Gitter and Facebook are great for asking about bolus strategies or exercise target use...those are not really code issues.</p>
+<p>When you post, provide a description along with any screenshots of the issue you are having.  You don't necessarily have to tag any particular person, the community is fairly active in replying to messages.</p>
+<p>If you are posting to GitHub issues list, you can label the Issue appropriately too...such as Bug, Enhancement, or Documentation.</p></div>
         </div>
 
         <footer class="col-md-12">
