@@ -6,7 +6,7 @@ When a new version of Loop is released, you can click [HERE](https://github.com/
     Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app; your Apple Developer license agreement, your iPhone's iOS, your computer's macOS, your Xcode app, and/or your watchOS.  If you don't install the updates, you will likely run into build problems.  You can check for macOS and Xcode updates using the App Store link under the apple logo in your computer display's upper left corner.</br></br>
         * [Check your Apple developer account](http://developer.apple.com) and accept any updated license agreements.</br>
         * Update to macOS Sierra on your Apple</br>
-        * Update your Xcode app to at least v8.3</br>
+        * Update your Xcode app to at least v8.3  (do NOT use beta versions of Xcode)</br>
         * Update your iPhone (iOS 10.3.3) and Apple Watch (watchOS 3.2.3)</br></br>
 
 
@@ -16,16 +16,22 @@ When a new version of Loop is released, you can click [HERE](https://github.com/
 * First you will need to download the current Loop version's zip file [HERE (for master branch)](https://github.com/LoopKit/Loop/archive/master.zip) or [HERE (for dev branch)](https://github.com/LoopKit/Loop/archive/dev.zip)
 
 !!!warning ""
-    If you have your browser preferences set to download to a different drive than Downloads, make sure the specified drive is **not** an iCloud drive.  iCloud drives can cause problems with the frameworks for the project and Loop may not build properly.  If you have your System Preferences for iCloud set as shown below, you should **NOT** download Loop source code to your Documents or Desktop.  Holding the control key while you click on the download link will allow you to choose a specific download folder.
+    If you have your browser preferences set to download to a different drive than Downloads, make sure the specified drive is **not** an iCloud drive.  iCloud drives can cause problems with the frameworks for the project and Loop may not build properly.  If you have your System Preferences for iCloud set as shown below, you should **NOT** download or store Loop source code to your Documents or Desktop.  Holding the control key while you click on the download link will allow you to choose a specific download folder.
     <p align="center">
     <img src="../img/icloud-drive.png" width="650">
+    </p>
+
+!!!info ""
+    Depending on your browser and settings, your Loop download may or may not automatically unzip.  If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility.  This will create a blue folder called Loop-master.  HOWEVER, if you already have a Loop-master folder, the name may be something like Loop-master (1).  The problem with that folder name is that it contains a space...and spaces in the name will cause building problems.  So, either delete old copies of Loop before downloading/unzipping or rename the folder(s) to ensure that NO SPACES are in the folder name.
+    <p align="center">
+    <img src="../img/folder-name.png" width="650">
     </p>
 
 * Follow the guide for installation as you did before, beginning [HERE](https://loopkit.github.io/loopdocs/build/installing/#install-loop-using-xcode) to navigate to your newly downloaded source code.
 
 * When you've opened the project in Xcode, choose `Product` from the Xcode top menu and then select `Clean`.  This will help clean out any legacy issues from previous builds.
 
-* **Use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation.**  If you can't remember it, you can open your old Loop folder on your computer and check.  Alternatively, open your Loop settings, open the Issue Report and look for a line titled `appGroupName`.  Save your project after changing the MAIN_APP_BUNDLE_IDENTIFIER.
+* **Use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation.**  If you can't remember it, you can open your old Loop folder on your computer and check.  Alternatively, open your Loop settings, open the Issue Report and look for a line titled `appGroupName`.  **Save your project after changing the MAIN_APP_BUNDLE_IDENTIFIER.**
 
 <p align="center">
 <img src="../img/app_group_name.jpg" width="400">
