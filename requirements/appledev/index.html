@@ -368,14 +368,16 @@
         
             <li><a href="#app-ids">App IDs</a></li>
         
+            <li><a href="#multiple-loop-apps">Multiple Loop apps</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
 <h1 id="apple-developer-account">Apple Developer Account<a class="headerlink" href="#apple-developer-account" title="Permanent link">⌁</a></h1>
-<p>The <a href="https://developer.apple.com/programs/how-it-works/">Apple Developer Program</a> is Apple's system to provide the <a href="https://developer.apple.com/programs/whats-included/">tools and resources</a> for building, sharing, and using apps for Apple products.  Members of Apple's Developer Program can test apps on their own devices prior to submitting the App Store for distribution or sale.  Developers also get access to beta releases of new macOS and iOS versions.  </p>
-<p>The Loop app is not available for download in the App Store.  It needs to be built and installed by the individual users.  This means Loop users need to enroll as an individual (not an organization) in the Apple Developer Program in order to install the Loop app on their iPhone.  There are two types of individual <a href="https://developer.apple.com/programs/enroll/">enrollment in the Developer Program</a>; free and paid.  You will need to have an Apple ID to sign up for the Apple Developer Program.</p>
+<p>The <a href="https://developer.apple.com/programs/how-it-works/">Apple Developer Program</a> is Apple's system to provide the <a href="https://developer.apple.com/programs/whats-included/">tools and resources</a> for building, sharing, and using apps for Apple products.  Members of Apple's Developer Program can test apps on their own devices prior to submitting the App Store for distribution or sale.  Developers also get access to beta releases of new OS and iOS versions.  </p>
+<p>The Loop app is not available for download in the App Store.  It needs to be built and installed by the individual users.  This means Loop users need to enroll as an individual (not an organization) in the Apple Developer Program in order to install the Loop app on their iPhone.  There are two types of individual <a href="https://developer.apple.com/programs/enroll/">enrollment in the Developer Program</a>; free and paid.  You will need to have an Apple ID to sign up for in the Apple Developer Program.</p>
 <p>Sometimes, Apple will send an email requiring confirmation before enrollment can be activated.  Other times, you may have to login to your developer account to confirm enrollment.  Be sure to check for those items if you are having problems when trying to add your Apple ID and developer account in Xcode preferences during build.</p>
 <h2 id="free-membership">Free membership<a class="headerlink" href="#free-membership" title="Permanent link">⌁</a></h2>
 <p>Free membership comes with an important restriction.  While you can build the Loop app onto your iPhone, the app will expire after 7 days and need to be rebuilt in order to work again.  This means, every 7 days you will need access to an Apple computer, Xcode application, and your iPhone to rebuild the app.</p>
@@ -390,7 +392,11 @@
 <p>When you build the Loop app in Xcode, you will select a signing "team" and Xcode will automatically generate a Provisioning Profile to "sign" the app...this is Apple's way of tracking the validity and safety of the app.  Free developer accounts will have a signing team that includes a "(Personal Team)" designation in the name.  Paid developer accounts will not have "(Personal Team)" in the name.  </p>
 <p align="center">
 <img src="../img/team.jpg" width="450">
-</p></div>
+</p>
+
+<h2 id="multiple-loop-apps">Multiple Loop apps<a class="headerlink" href="#multiple-loop-apps" title="Permanent link">⌁</a></h2>
+<p>You can have multiple Loop apps built onto the same iPhone.  Many people who have the need to swtich between different profiles on a regular basis (such as t1ds who need school vs weekend profiles) use two different Loop apps to track the different profiles.  To build two Loop apps onto same phone, you simply need to use two different Main App Bundle Identifiers.  When switching between Loop apps, simply remember to close the unused Loop app so that the RileyLink can connect properly in the desired Loop app.  You can enable "Patterns" in your Medtronic pump to also switch quickly between basal profile patterns that correspond to the active Loop app.</p>
+<p>Users of multiple Loop apps find it is helpful to rename the apps and use different app icons to differentiate between the two Loop apps.  Customizing app icons can be done following the instructions in the Build section of these docs.  </p></div>
         </div>
 
         <footer class="col-md-12">
