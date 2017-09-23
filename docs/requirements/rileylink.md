@@ -33,6 +33,6 @@ But, if you're familiar with your medtronic pump and dexcom, here's some ideas:
 12. Fill in the pump settings in your Loop app
 13. Set up a Nightscout site or update your existing site (optional)
 14. Bookmark the Loop Docs page for future reference
-15. Join Gitter and/or Facebook group
+15. Join [Gitter Loop channel](https://gitter.im/LoopKit/Loop) and/or [the Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf)
 
 BUT, then you must wait.  You can't go any further with Loop operations until you get the RileyLink.  However, if you do all those things above while you wait...you will be ready to go as soon as the postman knocks on your door with the delivery.

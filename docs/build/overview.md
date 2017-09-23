@@ -4,3 +4,12 @@ Building your Loop app is actually quite easy.  The harder part will be having t
 
 If you have any questions, these docs have a nice search feature that may help you find your answers pretty quickly too.
 
+The basic installation involves:
+
+1. Making sure you have macOS Sierra and the application Xcode 9
+2. Downloading the Loop code
+3. Adding your Apple developer account to Xcode
+4. Making some basic edits to the Loop code using Xcode
+5. Signing your app with your Apple developer account
+5. Pressing a "build" button to install the Loop app onto your iPhone
+6. Entering the needed information (basals, etc) into Loop app to start using the looping features
