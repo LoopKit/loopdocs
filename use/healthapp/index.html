@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Bolus Recommendations - Loop Docs</title>
+	<title>Health App - Loop Docs</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -153,85 +153,85 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Use <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
 <li >
-    <a href="../../use/overview/">Loop Display</a>
+    <a href="../overview/">Loop Display</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/green-loop/">Getting a Green Loop</a>
+    <a href="../green-loop/">Getting a Green Loop</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/open-loop/">Open Loop</a>
+    <a href="../open-loop/">Open Loop</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/close-loop/">Close Loop</a>
+    <a href="../close-loop/">Close Loop</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/carbs/">Carb Entries</a>
+    <a href="../carbs/">Carb Entries</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/bolus/">Bolus</a>
+    <a href="../bolus/">Bolus</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/workout/">Workout Targets</a>
+    <a href="../workout/">Workout Targets</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/priming/">Priming and Sites</a>
+    <a href="../priming/">Priming and Sites</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/time-change/">Time Changes</a>
+    <a href="../time-change/">Time Changes</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/rileylink/">RileyLink</a>
+    <a href="../rileylink/">RileyLink</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/notifications/">Loop Notifications</a>
+    <a href="../notifications/">Loop Notifications</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Health App</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../use/healthapp/">Health App</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../use/issues/">Issues/Troubles</a>
+    <a href="../issues/">Issues/Troubles</a>
 </li>
 
                     
@@ -240,31 +240,31 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithm <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
 <li >
-    <a href="../overview/">Overview</a>
+    <a href="../../algorithm/overview/">Overview</a>
 </li>
 
                     
                         
 <li >
-    <a href="../prediction/">Glucose Prediction</a>
+    <a href="../../algorithm/prediction/">Glucose Prediction</a>
 </li>
 
                     
                         
 <li >
-    <a href="../temp_basal/">Temp Basal Adjustments</a>
+    <a href="../../algorithm/temp_basal/">Temp Basal Adjustments</a>
 </li>
 
                     
                         
-<li class="active">
-    <a href="./">Bolus Recommendations</a>
+<li >
+    <a href="../../algorithm/bolus/">Bolus Recommendations</a>
 </li>
 
                     
@@ -351,12 +351,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../temp_basal/">
+                    <a rel="next" href="../notifications/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../../nightscout/overview/">
+                    <a rel="prev" href="../issues/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -370,21 +370,28 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#bolus-recommendations">Bolus Recommendations</a></li>
-        
-            <li><a href="#eventual-bg-above-target-range">Eventual BG Above Target Range</a></li>
+        <li class="main active"><a href="#health-app">Health App</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="bolus-recommendations">Bolus Recommendations<a class="headerlink" href="#bolus-recommendations" title="Permanent link">⌁</a></h1>
-<p>Loop also uses the forecast to generate recommendations for bolus amounts. Carbs are not directly used in bolus calculations, but rather indirectly through the forecast. After carbs are entered, the forecast is updated using the carb amounts, and then a recommendation is generated using the forecast.</p>
-<p>The forecast used for bolusing is slightly different than the forecast used for adjust temp basals in that positive BG momentum is not included.</p>
-<h2 id="eventual-bg-above-target-range">Eventual BG Above Target Range<a class="headerlink" href="#eventual-bg-above-target-range" title="Permanent link">⌁</a></h2>
-<p><img alt="Eventual BG Above Range" src="../img/bolus_eventual_above_range.png" /></p>
-<p>A bolus recommendation is given if Eventual BG is above Target Range.  The delta between Eventual BG and the top of the Target Range is used, along with your current Insulin Sensitivity to calculate the recommendation.</p></div>
+<h1 id="health-app">Health App<a class="headerlink" href="#health-app" title="Permanent link">⌁</a></h1>
+<p>Loop app uses the iPhone's Health app to store BGs, insulin, and carbohydrate data.  Insulin Data is a new feature with iOS 11.  You can check your Health App settings for Loop by opening the Health App, clicking on Sources at the bottom bar, and then clicking on the Loop app.</p>
+<p align="center">
+<img src="../img/healthapp.jpg" width="450">
+</p>
+
+<p>Summaries of your carbohydrates, insulin, and BG results can be found by clicking on the Health Data at the bottom bar, and then selecting either the large Nutrition box (for carbohydrates) or smaller Results line (for insulin deliveries and BG results).</p>
+<p align="center">
+<img src="../img/health1.jpg" width="750">
+</p>
+
+<p>If you toggle on the "add to favorites" slider like the carbohydrates view in the screenshot above, the data from those categories will be added to your Today view for easy quick reference and access.</p>
+<p align="center">
+<img src="../img/todayhealth.jpg" width="450">
+</p></div>
         </div>
 
         <footer class="col-md-12">
