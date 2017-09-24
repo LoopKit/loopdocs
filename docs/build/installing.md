@@ -4,7 +4,7 @@ The overall installation process is pretty simple.  Loop is written in code that
 
 While all of this is straight forward...I'll tell you some hints upfront to save time.
 
-* Check your watchOS, iPhone OS, macOS first to see if they need updates.  Currently you'll need at least watch OS 4, iOS 10.3.3 or newer, macOS 10.12.6
+* Check your watchOS, iPhone OS, macOS first to see if they need updates.  Currently you'll need at least watchOS 4, iOS 10.3.3 (or iOS 11 if you are using an Apple watch) , macOS 10.12.6
 * Downloading Xcode 9 can take 20-45 minutes depending on your internet connection speed.  You can do that ahead of time if you want to save yourself some waiting when you're ready to build.
 * Apple watches need to be paired with the iPhone BEFORE the Loop app is built onto the phone in order to have the Loop on the watch, too.  If you pair a new Apple watch later, you'll have to rebuild the Loop app onto the iPhone again, before the watch will work with Loop functions.
 
@@ -253,14 +253,15 @@ CONGRATS!  YOU JUST INSTALLED LOOP!  You can now begin configuring your Loop set
 <p align="center">
 <img src="../img/bundle_fail.jpg" width="750">
 </p>
-5. "Abort with payload"  This error message is cause by having your Loop folder either (1) saved into an iCloud mapped drive or (2) having a space in the name of your downloaded Loop source code folder.  Rename the folder to have no spaces and/or move it back to the Downloads folder, then rebuild.
+5. "Abort with payload"  Your app will only open briefly with a with screen and then close, if you build with this error.  This error message is cause by having your Loop folder either (1) saved into an iCloud mapped drive or (2) having a space in the name of your downloaded Loop source code folder.  Rename the folder to have no spaces and/or move it back to the Downloads folder, then rebuild.
 <p align="center">
 <img src="../img/abort_payload.png" width="750">
 </p>
-6. "Shell Script Invocation Error.  Command /bin/sh failed with exit code 127"  This error code is happening for Loopers updating to Loop who used carthage.pkg and don't have homebrew installed.  We have since updated the installation docs, so new users likely won't run into this error.  But, if you are an existing Looper encountering this error message while trying to update to Loop v1.5, please open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`.  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
+6. "Shell Script Invocation Error.  Command /bin/sh failed with exit code 127"  This error code is happening for Loopers updating to Loop who used carthage.pkg and don't have homebrew installed.  We have since updated the installation docs, so new users likely won't run into this error.  But, if you are an existing Looper encountering this error message while trying to update to Loop v1.5, please open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
 <p align="center">
 <img src="../img/exit127.jpg" width="450">
 </p>
+7.  Apple watch app is not appearing.  Usually because you have not updated to watchOS 4 prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.
 ************
 
 ## Code Customizations
@@ -299,6 +300,19 @@ If you would like to modify those defaults, you can do so in the Loop>>Managers>
 
 <p align="center">
 <img src="../img/carb_times.png" width="800">
+</p>
+
+### Exponential Insulin Curve
+The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, and Fiasp) are defaulted to an insulin duration of 360 minutes...but the peak activity of the various curves differs:
+
+* Rapid-acting adult curve peaks at 75 minutes
+* Rapid-acting child curve peaks at 65 minutes
+* Fiasp peaks curve peaks at 55 minutes
+
+If you wish to customize these values, you can adjust them on Lines 20-38 in the Loop>>Models>>Insulin>>ExponentialInsulinModelPreset.swift file
+
+<p align="center">
+<img src="../img/exponential.png" width="750">
 </p>
 
 ### Loop Logo

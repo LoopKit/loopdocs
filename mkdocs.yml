@@ -36,6 +36,7 @@ pages:
     - 'Time Changes': 'use/time-change.md'
     - 'RileyLink': 'use/rileylink.md'
     - 'Loop Notifications': 'use/notifications.md'
+    - 'Health App': 'use/healthapp.md'
     - 'Issues/Troubles': 'use/issues.md'
 - Algorithm:
     - 'Overview': 'algorithm/overview.md'
