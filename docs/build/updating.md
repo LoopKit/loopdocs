@@ -29,6 +29,8 @@ You can use these links to download new versions of the Loop source code:
 [Loop: Dev branch source code](https://github.com/LoopKit/Loop/archive/dev.zip)
 </p></br>
 
+FYI: The Loop source code resides in [GitHub](https://github.com/LoopKit/Loop) within a repository.  A repository is kind of like a project's bookshelf, holding various books (aka branches) of a project.  The master branch is considered a stable version.  Any new features or options are first tested in a dev (short for "development") branch of the Loop.  New or inexperienced users should not build from the dev branch of Loop.  So if you hear of "new features in dev", these are things that may be eventually merged into the master branch once any bugs are worked out.
+
 !!!info ""
     IMPORTANT NOTES: Best practice is to leave your Loop source code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
     <p align="center">
@@ -50,8 +52,9 @@ If you **use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first instal
 <p align="center">
 <img src="../img/app_group_name2.png" width="750">
 </p></br>
+
 <p align="center">
-<img src="../img/app_group_name.png" width="400">
+<img src="../img/app_group_name.PNG" width="400">
 </p>
 
 Add or redo any customizations, if needed.  These will not be carried over automatically from the old app.
