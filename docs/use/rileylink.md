@@ -55,7 +55,7 @@ If you ordered your RileyLink preassembled, you should plug in the battery cable
   <figcaption>RileyLink with properly secured battery cable.</figcaption>
 </figure></p>
 
-Keep your RileyLink and lipo battery protected from damage.  Lipo batteries are unsafe when damaged or punctured, so the case is an important part of safe Looping.  If your battery is damaged in some way, please disconnect it immediately, and dispose of it (they should be recycled). You can order new batteries on the [GetRileyLink website](http://getrileylink.azurewebsites.net/)
+Keep your RileyLink and lipo battery protected from damage.  Lipo batteries are unsafe when damaged or punctured, so the case is an important part of safe Looping.  If your battery is damaged in some way, please disconnect it immediately, and dispose of it (they should be recycled). You can order new batteries on the [GetRileyLink website](http://getrileylink.org/)
 
 <p align="center">
 <img src="../img/rl_case.jpg" width="400">

@@ -43,25 +43,31 @@ You can close the Terminal application now.  You’re done with it.  You do not 
 
 ## Setup your Apple Developer Account
 
-In order to build your own copy of the Loop app onto your iPhone, you will need an Apple developer account.  Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to sign-up for your individual account.  (Note: The Apple ID you use to sign up for the developer account does not need to be the same Apple ID as the Looping iPhone uses, for example parent's installing Loop on kid's iPhone.  Typically for the developer account, use the Apple ID of the person who will be doing the Loop app building.)  You will have two options for your individual account; free or paid.
-
-After you enroll, make sure you look for a confirmation email.  Apple says it can take up to 24 hours to confirm and setup a new Apple developer account, however some people have had the process only take minutes.  It can vary.
+In order to build your own copy of the Loop app onto your iPhone, you will need an Apple developer account.  You will have two options for your individual account; free or paid.
 
 If you decide to enroll in a **FREE** developer account, here's what you need to know:
 
 1. Loop apps signed with a free developer team will expire after 7 days.  On the 7th day, your Loop app will simply turn white when you open it and then immediately close.  To rebuild the Loop app, you will have to find a computer and rebuild the app onto your iPhone again.  You cannot rebuild the app on day 5 (when it is convenient, for example)...hoping to reset the 7-day clock.  The app will still expire on the 7th day from when it was first signed and created.</br></br>
 2. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app with a new main app bundle identifier (this will make sense when you go through the rest of these instructions...just make a mental note for now) and sign with the new team name.
+
+To activate enrollment in a free developer account, you simply need to add your Apple ID to the Xcode application's Preferences in the Accounts tab, as outlined in the Xcode section below.  (Note: The Apple ID you use to sign up for the developer account does not need to be the same Apple ID as the Looping iPhone uses, for example parent's installing Loop on kid's iPhone.  Typically for the developer account, use the Apple ID of the person who will be doing the Loop app building.)  You don't have to specifically go into the Apple Developer Program website to enroll...Xcode automatically amends your Apple ID to include the free developer signing.  Once you add your Apple ID, you will see a team name listed, like the screenshot below, with a `(personal team)` designation to indicate that is a free developer team.
+
+<p align="center">
+<img src="../img/free-enroll.png" width="650">
+</p>
     
 If you decide to enroll in a **PAID** developer account, here's what you need to know:
     
 1. Loop apps signed with a paid developer team will last for a full year.</br></br>
 2. The paid developer account is $99 per year and is default set to auto-renew annually.  You can change that selection in your developer account settings at any time.</br></br>
 
+To activate a paid account, go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to sign-up for your individual account.  (Note: The Apple ID you use to sign up for the developer account does not need to be the same Apple ID as the Looping iPhone uses, for example parent's installing Loop on kid's iPhone.  Typically for the developer account, use the Apple ID of the person who will be doing the Loop app building.)   After you enroll, make sure you look for a confirmation email.  Apple says it can take up to 24 hours to confirm and setup a new Apple developer account, however some people have had the process only take minutes.  It can vary.
+
 Periodically, Apple will update the license agreement for the Developer Program.  When that happens, you'll need to login to your developer account and accept the new license agreement before you can sign a new/updated Loop app again.
 
 
 ## Setup Xcode
-Open the App Store application on your computer.  Search for Xcode and click on the link to download/install Xcode for free.  The file size is fairly large so expect about 20-45 minutes to download depending on your internet speed.  You will need Xcode 9 at least to build the Loop app.  If you have a previous installation of Xcode, please make sure to check for updates first, before building Loop.
+Open the App Store application on your computer.  Search for Xcode and click on the link to download/install Xcode for free.  The file size is fairly large so expect about 20-45 minutes to download depending on your internet speed.  You will need Xcode 9 at least to build the current Loop app.  If you have a previous installation of Xcode, please make sure to check for updates first, before building Loop.
 
 <p align="center">
 <img src="../img/xcode.jpg" width="450">
@@ -75,7 +81,7 @@ Go to the Xcode main menu (top left of your screen) and select Preferences from 
 <img src="../img/xcode_account.png" width="750">
 </p>
 
-Enter the same Apple ID as you used to signup in the Apple developer program earlier.  If you enrolled as a free membership, your team name will have a (personal team) in the name.  If you enrolled in the paid account, your team name will not have an extension.  If you never enrolled in the free account, you will not have a (personal team) showing.  The screenshot is what will appear if you have used both types of enrollment under the same Apple ID.
+If you are establishing a free developer account, you will simply enter your Apple ID in this section and Xcode will automatically create your free developer account. If you enrolled in the paid account, enter the Apple ID of the paid developer account.  If you never enrolled in the free account, you will not have a (personal team) showing.  The screenshot is what will appear if you have used both types of enrollment under the same Apple ID.
 
 <p align="center">
 <img src="../img/apple_id.png" width="750">
