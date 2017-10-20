@@ -247,10 +247,10 @@ The Pump ID should be automatically filled in from the setting you have already 
     !!!info ""
         **A common troubleshooting recommendation is to tune your RL when you have poor pump communications.  Just keep in mind that the Loop code has a function that it will automatically retune in the event of poor pump communications.  Loop does this automatically.  Manually retuning is only useful for impatience purposes.  If Loop has failed longer than 20 minutes, it will have already likely tried a retune...but knock yourself out if you want to try it again manually.**
 
-* **Change Time**:  Choose “change time” so that pump and Loop times will match exactly.
+* **Change Time**:  Choose “change time” so that pump and Loop times will match exactly.   Under normal circumstances, you do not have to redo this command.  Some older pumps may have an issue between battery changes that they require a rewind, prime, and resetting of clock time.  This is due to the tiny internal capacitor inside the pump (that you cannot change out) no longer holding a charge.  If your pump resets like this (or resets due to any other functional errors), make sure you reset the clock time via RileyLink.  If you are traveling through timezones or dealing with daylight savings time, please read up on how to safely change your pump time here (https://loopkit.github.io/loopdocs/use/time-change/#traveling-across-time-zones-and-daylight-savings).
 
     !!!warning ""
-        **You should never use the pump itself to change the pump’s time.**  Always use the RileyLink to change pump time.
+        **Always use the RileyLink to change pump time.  If you fail to set the pump time by using the RileyLink, Loop will not function properly.**
 
 * **MySentry Pair**:  MySentry Pairing is for x23 and x54 pumps.  Follow the directions as shown in the RileyLink command screen for MySentry.  You do not have to worry about this command if you are using an x15 or x22 model pump, as they do not have MySentry.
 
