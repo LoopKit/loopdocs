@@ -600,11 +600,11 @@ If you want any custom configurations to your Loop or Watch apps, now is the tim
 <h3 id="red-error-alerts">Red Error Alerts<a class="headerlink" href="#red-error-alerts" title="Permanent link">⌁</a></h3>
 <p><strong>Red error alerts</strong> will prevent Loop from building on your phone, and you can read what the failure was.  The most common red error alerts are:</p>
 <ol>
-<li>"The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement."  You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.
+<li>"<strong><u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u></strong>"  You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.
 <p align="center">
 <img src="../img/license.png" width="750">
 </p></li>
-<li>"Swift Language Version” (SWIFT_VERSION) is required to be configured correctly for targets which use Swift. Use the [Edit &gt; Convert &gt; To Current Swift Syntax…] menu to choose a Swift version or use the Build Settings editor to configure the build setting directly"  or also "Could not locate device support files.  This iPhone is running iOS 11, which may not be supported by this version of Xcode."  You will need to go to your computer's App Store and install the Xcode app update.
+<li>"<strong><u>Swift Language Version” (SWIFT_VERSION) is required to be configured correctly</u></strong> for targets which use Swift. Use the [Edit &gt; Convert &gt; To Current Swift Syntax…] menu to choose a Swift version or use the Build Settings editor to configure the build setting directly"  or also "Could not locate device support files.  This iPhone is running iOS 11, which may not be supported by this version of Xcode."  You will need to go to your computer's App Store and install the Xcode app update.
 <p align="center">
 <img src="../img/old_xcode.jpg" width="750">
 </p>
@@ -614,23 +614,54 @@ If you want any custom configurations to your Loop or Watch apps, now is the tim
 <p align="center">
 <img src="../img/update.jpg" width="750">
 </p></li>
-<li>"Swift Compilier Error.  Module compiled with Swift 3.1 cannot be imported in Swift 3.2"  Make sure your Xcode and Loop source code are updated (see item above). <strong>Older Loop versions (older than v1.5) will not compile with the new Xcode 9 app.</strong>
+<li>"<strong><u>Swift Compilier Error.  Module compiled with Swift 4.0 cannot be imported in Swift 4.0.2</u></strong>"  Xcode was recently updated to version 9.1, and the currently Loop master branch will produce this error message if you are building with Xcode 9.1.
+<p align="center">
+<img src="../img/xcode9_1.png" width="750">
+</p>
+You can build with the Loop's dev branch (the dev branch has the fix built in) or just perform the following steps, if building with master branch:<ul>
+<li>Close Xcode</li>
+<li>Open Terminal App</li>
+<li>Navigate to your Loop download by doing the command:
+    <code>cd downloads/Loop-master</code>
+    (or whatever you named your Loop folder...go check)</li>
+<li>Now use the command:
+    <code>carthage bootstrap</code>
+    It will run for about 4-5 minutes and then show you a screen like below.
+        <p align="center">
+        <img src="../img/carthage-bootstrap.png" width="750">
+        </p></li>
+<li>If during the run of <code>carthage bootstrap</code>, you instead see an error message like below:
+                </p>
+                <p align="center">
+                <img src="../img/exit-code-72.jpg" width="550">
+                </p>
+                Please go to your Xcode preferences, under the Locations tab, select <code>Xcode 9.1</code> under the Command Line Tools
+                <p align="center">
+                <img src="../img/command-line-tools.png" width="750">
+                </p></li>
+<li>Reopen your Loop project in Xcode, select your iPhone, and press the build button. You'll still see some yellow alerts, but those are fine.
+        <p align="center">
+        <img src="../img/yellow-update.png" width="750">
+        </p></li>
+</ul>
+</li>
+<li>"<strong><u>Swift Compilier Error.  Module compiled with Swift 3.1 cannot be imported in Swift 3.2</u></strong>"  Make sure your Xcode and Loop source code are updated (see item above). <strong>Older Loop versions (older than v1.5) will not compile with the new Xcode 9 app.</strong>
 <p align="center">
 <img src="../img/swift_errors.png" width="750">
 </p></li>
-<li>"Embedded Binary Validation Utility.  error: Embedded binary's bundle identifier is not prefixed with the parent app's bundle identifier".  This error usually happens because you've used an incorrect syntax in the MAIN_APP_BUNDLE_ID (like adding an extension to it) or forgotten to save project after the MAIN_APP_BUNDLE_ID was changed (the save forces Xcode to update all the targets to use the Main App Bundle ID within their individual bundle names).  In any case however, usually this error is most easily solved by closing out your project, deleting the download folder, and starting with a fresh download of Loop app.  The next time you build, make sure to follow the directions carefully to use a MAIN_APP_BUNDLE_ID in the right format and press <code>command-s</code> to force Xcode to update the targets' naming scheme correction.
+<li>"<strong><u>Embedded Binary Validation Utility.  error: Embedded binary's bundle identifier is not prefixed with the parent app's bundle identifier</u></strong>".  This error usually happens because you've used an incorrect syntax in the MAIN_APP_BUNDLE_ID (like adding an extension to it) or forgotten to save project after the MAIN_APP_BUNDLE_ID was changed (the save forces Xcode to update all the targets to use the Main App Bundle ID within their individual bundle names).  In any case however, usually this error is most easily solved by closing out your project, deleting the download folder, and starting with a fresh download of Loop app.  The next time you build, make sure to follow the directions carefully to use a MAIN_APP_BUNDLE_ID in the right format and press <code>command-s</code> to force Xcode to update the targets' naming scheme correction.
 <p align="center">
 <img src="../img/bundle_fail.jpg" width="750">
 </p></li>
-<li>"Abort with payload"  Your app will only open briefly with a with screen and then close, if you build with this error.  This error message is cause by having your Loop folder either (1) saved into an iCloud mapped drive or (2) having a space in the name of your downloaded Loop source code folder.  Rename the folder to have no spaces and/or move it back to the Downloads folder, then rebuild.
+<li>"<strong><u>Abort with payload</u></strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.  This error message is cause by having your Loop folder either (1) saved into an iCloud mapped drive or (2) having a space in the name of your downloaded Loop source code folder.  Rename the folder to have no spaces and/or move it back to the Downloads folder, then rebuild.
 <p align="center">
 <img src="../img/abort_payload.png" width="750">
 </p></li>
-<li>"Shell Script Invocation Error.  Command /bin/sh failed with exit code 127"  This error code is happening for Loopers updating to Loop who used carthage.pkg and don't have homebrew installed.  We have since updated the installation docs, so new users likely won't run into this error.  But, if you are an existing Looper encountering this error message while trying to update to Loop v1.5, please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
+<li>"<strong><u>Shell Script Invocation Error.  Command /bin/sh failed with exit code 127</u></strong>"  This error code is happening for Loopers updating to Loop who used carthage.pkg and don't have homebrew installed.  We have since updated the installation docs, so new users likely won't run into this error.  But, if you are an existing Looper encountering this error message while trying to update to Loop v1.5, please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
 <p align="center">
 <img src="../img/exit127.jpg" width="450">
 </p></li>
-<li>Apple watch app is not appearing.  Usually because you have not updated to watchOS 4 prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.</li>
+<li><strong><u>Apple watch app is not appearing</u></strong>.  Usually because you have not updated to watchOS 4 prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</li>
 </ol>
 <hr />
 <h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Permanent link">⌁</a></h2>
