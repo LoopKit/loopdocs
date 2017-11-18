@@ -53,7 +53,7 @@ These new models are quite a bit different than the Walsh model.  I recommend wa
 If you fail to select an insulin model you will see this error "Missing data: Glucose effects"</br></br>
 
 <p align="center">
-<img src="../img/v1.5/select_model.jpg" width="250">
+<img src="../loop/img/loop_select_model.jpg" width="250">
 </p>
 </br></br>
 
@@ -98,7 +98,7 @@ Users that had noticed increased font size setting in their iPhones were not ren
 A new status line will appear when Loop is sending a bolus command to the pump.  Just above the Glucose Chart, you will see a "stating bolus" indicator.
 
 <p align="center">
-<img src="../img/starting_bolus.png" width="250">
+<img src="../img/v1.5/starting_bolus.png" width="250">
 </p>
 </br></br>
 
