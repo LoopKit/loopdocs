@@ -37,13 +37,13 @@ There are two ways to cleanout space and delete data in your mLab database:
     Click on a collection’s name to open it.
 
 <p align="center">
-<img src="../img/collections.jpg" width="650">
+<img src="../img/mlab_collections.jpg" width="650">
 </p> 
 
 *  Click on the button that says “Delete all documents in collection” and then confirm the deletion.
 
 <p align="center">
-<img src="../img/delete.jpg" width="650">
+<img src="../img/mlab_delete.jpg" width="650">
 </p> 
 
 *  You can confirm that your cleanout has resolved the problem, by checking that your database size is below 500 MB now.  Click on the `Home` link in top left.  Then review the size of the database as shown.
@@ -57,7 +57,7 @@ There are two ways to cleanout space and delete data in your mLab database:
 If you go to your Nightscout site's settings (the three horizontal bars in the upper right of your Nightscout site), you will be able to access your Admin Tools for the site.  These include some useful quick mLab actions, includig deleting documents from the devicestatus collection similar to the action we took in the steps above.  But, it's worth noting that if you have errant future data in your Nightscout site that is causing problems (usually during time changes or overseas travel), you can clean-out future entries through this portal, too.
 
 <p align="center">
-<img src="../img/admin_tools.jpg" width="650">
+<img src="../img/mlab_admin_tools.jpg" width="650">
 </p> 
 
 ## Compact mLab

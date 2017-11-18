@@ -1,4 +1,4 @@
-# Issues/Problems
+# Troubleshooting
 
 After you have been using Loop for awhile, there's a potential that you will run across a behavior or issue that you wonder if it is normal or intended.  When that happens, there's a few things that we'd recommend doing to resolve the issue.
 

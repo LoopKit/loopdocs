@@ -13,7 +13,7 @@ Loop v1.5 will also required an update to macOS 10.12.6 and Xcode 9.  Because of
 Open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  Confirm the homebrew installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and finish the rest of your installation just as always.  If you fail to do these steps, you will likely see this error message when you build.
 
 <p align="center">
-<img src="../img/exit127.jpg" width="450">
+<img src="../img/v1.5/exit127.jpg" width="450">
 </p>
 
 **Once you update to Xcode 9, be aware that old versions of Loop will no longer build successfully.**
@@ -24,7 +24,7 @@ Open your Terminal app found in the Applications>>Utilities folder and then ente
 There are name changes to a couple old settings, and a new setting has been added.
 
 <p align="center">
-<img src="../img/new_settings.jpg" width="250">
+<img src="../img/v1.5/new_settings.jpg" width="250">
 </p>
 </br></br>
 
@@ -53,7 +53,7 @@ These new models are quite a bit different than the Walsh model.  I recommend wa
 If you fail to select an insulin model you will see this error "Missing data: Glucose effects"</br></br>
 
 <p align="center">
-<img src="../img/select_model.jpg" width="250">
+<img src="../img/v1.5/select_model.jpg" width="250">
 </p>
 </br></br>
 
@@ -63,13 +63,13 @@ If you fail to select an insulin model you will see this error "Missing data: Gl
 </br>
 
 <p align="center">
-<img src="../img/HUD.png" width="450">
+<img src="../img/v1.5/HUD.png" width="450">
 </p>
 </br></br>
 You will notice a new logo of a plate with utensils next to the carb entry tool, at the bottom of the Loop main screen.  This icon will remain grey until you go into the Correction Targets area and set the "pre-meal" target range.  The pre-meal target is designed to be used to as an easy pre-bolus before a meal (similar to the "eating-soon" mode discussed in OpenAPS).
 
 <p align="center">
-<img src="../img/premeal_entry.jpg" width="250">
+<img src="../img/v1.5/premeal_entry.jpg" width="250">
 </p>
 </br></br>
 
@@ -87,7 +87,7 @@ Loop will adjust any insulin bolus as needed based on the insulin provided durin
 Users that had noticed increased font size setting in their iPhones were not rendering properly (as shown below)...this has been fixed in Loop v1.5
 
 <p align="center">
-<img src="../img/font_size_HUD.png" width="250">
+<img src="../img/v1.5/font_size_HUD.png" width="250">
 </p>
 </br></br>
 
@@ -111,7 +111,7 @@ When local BG readings aren't being pulled by Loop, but are still fine on the De
 Deleting your transmitter ID for G5 users is no longer a useful troubleshooting step, since this change makes that switch happen automatically now.
 
 <p align="center">
-<img src="../img/server_pull.png" width="250">
+<img src="../img/v1.5/server_pull.png" width="250">
 </p>
 </br></br>
 
@@ -122,7 +122,7 @@ Deleting your transmitter ID for G5 users is no longer a useful troubleshooting 
 New to iOS 11 users, the Apple Health app will now track insulin delivery data.  Loop integrates with that feature.  A new docs page for Health app has been added too.  You can find more about that [here](https://loopkit.github.io/loopdocs/use/healthapp/)
 
 <p align="center">
-<img src="../img/todayhealth.jpg" width="250">
+<img src="../img/v1.5/todayhealth.jpg" width="250">
 </p>
 </br></br>
 

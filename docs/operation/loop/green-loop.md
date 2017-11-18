@@ -57,7 +57,7 @@ We can use a combination of the display and the error message to narrow down the
 A healthy green loop will have timestamps less than 5 minutes old below the green loop, BG reading, and reservoir level.  This indicates that the Loop was run less than 5 minutes ago, fresh BGs have been coming in, temp basals have been enacted by the pump, and the pump is communicating with Loop.  The screenshot below is a very happy Loop.
 
 <p align="center">
-<img src="../img/less_than_five.jpg" width="550">
+<img src="../../img/loop_less_than_five.jpg" width="550">
 </p>
 </br></br>
 *************************
@@ -67,10 +67,10 @@ A healthy green loop will have timestamps less than 5 minutes old below the gree
 If your Loop turns yellow or red, easiest to start by checking the timestamps on the BG.  If the BG reading is more than 5 minutes older than your iPhone time, your Loop will not be green.  The screenshot below is a good example of missing BG data preventing the Loop from staying green.  The pump is still communicating (reservoir reading is only 2 minutes old)...BGs appear to be the problem.</br></br>
 
 <p align="center">
-<img src="../img/oldbg2.jpg" width="550">
+<img src="../img/loop_oldbg2.jpg" width="550">
 </p></br>
 <p align="center">
-<img src="../img/missing_BG.png" width="250">
+<img src="../img/loop_missing_BG.png" width="250">
 </p>
 
 BG troubleshooting steps:
@@ -89,7 +89,7 @@ BG troubleshooting steps:
 If your pump reading is older than 5 minutes, but BGs are fine, then you will need to troubleshoot the pump communications.  The screenshot below is a good example of missing pump data preventing the Loop from staying green.  The CGM is still communicating (BG reading is only 2 minutes old)...but pump reservoir reading is older than 5 min.</br></br>
 
 <p align="center">
-<img src="../img/old_pump.png" width="550">
+<img src="../img/loop_old_pump.png" width="550">
 </p>
 </br></br>
 
@@ -107,7 +107,7 @@ Pump troubleshooting steps:
     These types of pump error messages almost always represent short-term pump comms issues that will resolve on their own without necessary intervention, if the pump and RL are within rf-talking distance of each other.
 
     <p align="center">
-    <img src="../img/framerate.jpg" width="750">
+    <img src="../img/loop_framerate.jpg" width="750">
     </p>
     </br></br>
 
@@ -118,7 +118,7 @@ Pump troubleshooting steps:
 And here's an interesting problem.  BGs are current, but notice that the pump time is 2 hours into the future of the current iPhone time.  In this case, the Loop user had manually set their pump time during travels and caused the pump time to be out of sync with Loop.  Remember, **<u>do not change your pump time manually...always use the RL to set the pump time</u>**.  This red loop was resolved as soon as the Looper used RL to set the pump time.</br></br>
 
 <p align="center">
-<img src="../img/bad_pump_time.jpg" width="550">
+<img src="../img/loop_bad_pump_time.jpg" width="550">
 </p>
 </br></br>
 
@@ -129,7 +129,7 @@ And here's an interesting problem.  BGs are current, but notice that the pump ti
 If you see messages about "Could not verify TempBasal on attempt  2", that is likely one of just a few issues.  The message indicates that Loop has BGs and pump data, has sent a recommended basal to the pump, but the pump does not appear to be enacting those basals.</br></br>
 
 <p align="center">
-<img src="../img/verify.jpg" width="250">
+<img src="../img/loop_verify.jpg" width="250">
 </p>
 </br></br>
 
@@ -144,7 +144,7 @@ If you see messages about "Could not verify TempBasal on attempt  2", that is li
 Sometimes the RilleyLink and iPhone fail to communicate via BT.  You need to determine if this is due to RL's problems, iPhone's problems, or just BT communications problem.  There can be messages when BT fails, such as the message below, or "RileyLink Timeout" error messages.</br></br>
 
 <p align="center">
-<img src="../img/bt_error.jpg" width="250">
+<img src="../img/loop_bt_error.jpg" width="250">
 </p>
 </br></br>
 
@@ -162,7 +162,7 @@ Sometimes the RilleyLink and iPhone fail to communicate via BT.  You need to det
 If you see messages about "Missing data: Glucose effects", you likely have **forgotten to set your Insulin Curve Model**.  The message indicates that Loop is missing a component of its algorithm inputs to calculate glucose effects on predicted BGs.   Return to your Loop app settings and pick an Insulin Curve.</br></br>
 
 <p align="center">
-<img src="../img/select_model.jpg" width="250">
+<img src="../img/loop_select_model.jpg" width="250">
 </p>
 </br></br>
 **********************
