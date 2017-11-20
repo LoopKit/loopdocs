@@ -7,9 +7,9 @@ This is the repo that contains the source files for the [Loop Docs](https://loop
 To suggest changes, fork this repository, edit the files, and submit your changes as a pull request.
 
 ### Previewing Changes
-To preview your work as you edit you'll want to set up two python packages, `mkdocs`, and `mkdocs-bootswatch`.
+To preview your work as you edit you must set up two python packages that are used to create this site using [MkDocs](http://www.mkdocs.org/). They are `mkdocs`, and `mkdocs-bootswatch`.
 
-Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help getting Python installed. Python 3 is generally preferred, but Python 2 should work.
+Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help getting Python installed. MkDocs works with Python 2.7, 3.3+, and pypy.
 
 * Install python modules
 
