@@ -201,7 +201,7 @@ If instead, you saw an error message like below then you will need to make a cor
 
 !!!info "Do you want customizations before you finish building?"
     **New Loop users**: Customizations are not a required part of any Loop build.  As you gain experience in how you use your Loop app, you may want to customize some of the features.  You can always update your Loop app to add customizations at a later time.  Really though, building with the standard, default installation is JUST FINE.</br></br>
-    If you want any custom configurations to your Loop or Watch apps, now is the time to make them before you finish with the last step of Loop installation on your iPhone.  Follow the step-by-step instructions on the [Code Customizations](customization.md) page.  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.
+    If you want any custom configurations to your Loop or Watch apps, now is the time to make them before you finish with the last step of Loop installation on your iPhone.  Follow the step-by-step instructions on the [Code Customizations](code_customization.md) page.  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.
 
 !!!info "Have you paired your Apple Watch already?"
     **New Apple Watch users**: If you have an unopened Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)</br></br>

@@ -31,4 +31,4 @@ Mouseover or Touch the Loop pill to view a tool tip containing one or more of th
 
 
 ## Troubleshooting Loop
-If you are getting unexpected status, review the [Getting a Green Loop](../use/green-loop) page. To learn more about a specific error message, review the [Common Error Messages](../use/green-loop?#common-problems) section on that page.
+If you are getting unexpected status, review the [Getting a Green Loop](../operation/loop/green-loop) page. To learn more about a specific error message, review the [Common Error Messages](../use/green-loop?#common-problems) section on that page.

@@ -151,7 +151,7 @@ Sometimes the RilleyLink and iPhone fail to communicate via BT.  You need to det
 * Has your RL been fully charged? Try charging your RL for an hour or two
 * Is your lipo battery old and perhaps dying earlier in the day?  Order a new battery
 * Your RL battery needs to be securely plugged in, check those connections.
-* Check if your RL is on and says "connected" in the [status screen for bluetooth](https://loopkit.github.io/loopdocs/build/configuration/#device).  If it says "connecting" or "disconnected", you have a BT problem with RL and iPhone.
+* Check if your RL is on and says "connected" in the [status screen for bluetooth](../../setup/build/configuration/#device). If it says "connecting" or "disconnected", you have a BT problem with RL and iPhone.
 * Make sure your iPhone's BT is turned on, and BT is not being affected by other BT systems (such as car audio)
 * Check if any of the RL command buttons work...such as Send Button press.  If the commands are frozen, toggle your RL power switch and turn your iPhone BT off/on.
 
