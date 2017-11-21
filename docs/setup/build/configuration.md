@@ -139,13 +139,13 @@ If you choose to have duplicate Loop apps, you will need to use different MAIN_A
 ### Carb Ratios
 Click the + in the upper right to add carb ratios for various times of day. Loop works best if you have tested and optimized your carb ratio settings for accuracy.
 
-The first time you setup carb ratios, you will be prompted to allow Loop app access to write/read data in your iPhone's Health App, choose only the selection for `write` data so that Loop does not inadvertently read third party app's carbohydrate inputs.  See [Carb Entries with Third Party apps](https://loopkit.github.io/loopdocs/use/carbs/#third-party-apps) for more information about this setting.
+The first time you setup carb ratios, you will be prompted to allow Loop app access to write/read data in your iPhone's Health App, choose only the selection for `write` data so that Loop does not inadvertently read third party app's carbohydrate inputs.  See [Carb Entries with Third Party apps](/operation/features/carbs.md#third-party-apps) for more information about this setting.
 
 ### Insulin Sensitivities
 Click the + in the upper right to add insulin sensitivities for various times of day. Loop works best if you have tested and optimized your ISF settings for accuracy.  Insulin sensitivities can change for many reasons including waiting too long to change your infusion set.  Loop will not auto-detect changes in ISF.
 
 ### Maximum Basal Rate
-Maximum basal rate is the maximum temporary basal rate that the Loop is allowed to enact to correct to your target BG range.  See the Use section discussion for [Close Loop](https://loopkit.github.io/loopdocs/use/close-loop/) for some suggestions regarding appropriate Maximum Basal Rate.
+Maximum basal rate is the maximum temporary basal rate that the Loop is allowed to enact to correct to your target BG range.  See the Use section discussion for [Close Loop](/operation/loop/close-loop.md) for some suggestions regarding appropriate Maximum Basal Rate.
 
 !!!info ""
     A frequent error for new Loop users is when they set their maximum basal rate here to a value HIGHER than the corresponding setting on the pump.  This will result in an error message that the temp basal failed to enact.  For example, Loop cannot successfully tell the pump to deliver 4 units per hour if the pump’s maximum is set to only 3.8 units per hour.  If you are seeing failures of the Loop to set a high temp basal, check to see if your pump’s maximum basal is at greater than or equal to the Loop’s maximum basal.
@@ -247,7 +247,7 @@ The Pump ID should be automatically filled in from the setting you have already 
     !!!info ""
         **A common troubleshooting recommendation is to tune your RL when you have poor pump communications.  Just keep in mind that the Loop code has a function that it will automatically retune in the event of poor pump communications.  Loop does this automatically.  Manually retuning is only useful for impatience purposes.  If Loop has failed longer than 20 minutes, it will have already likely tried a retune...but knock yourself out if you want to try it again manually.**
 
-* **Change Time**:  Choose “change time” so that pump and Loop times will match exactly.   Under normal circumstances, you do not have to redo this command.  Some older pumps may have an issue between battery changes that they require a rewind, prime, and resetting of clock time.  This is due to the tiny internal capacitor inside the pump (that you cannot change out) no longer holding a charge.  If your pump resets like this (or resets due to any other functional errors), make sure you reset the clock time via RileyLink.  If you are traveling through timezones or dealing with daylight savings time, please read up on how to safely change your pump time here (https://loopkit.github.io/loopdocs/use/time-change/#traveling-across-time-zones-and-daylight-savings).
+* **Change Time**:  Choose “change time” so that pump and Loop times will match exactly.   Under normal circumstances, you do not have to redo this command.  Some older pumps may have an issue between battery changes that they require a rewind, prime, and resetting of clock time.  This is due to the tiny internal capacitor inside the pump (that you cannot change out) no longer holding a charge.  If your pump resets like this (or resets due to any other functional errors), make sure you reset the clock time via RileyLink.  If you are traveling through timezones or dealing with daylight savings time, please read up on [how to safely change your pump time](/troubleshooting/time-change.md#traveling-across-time-zones-and-daylight-savings).
 
     !!!warning ""
         **Always use the RileyLink to change pump time.  If you fail to set the pump time by using the RileyLink, Loop will not function properly.**

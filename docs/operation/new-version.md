@@ -46,7 +46,7 @@ Suspend Threshold is the new term for the old Minimum BG Guard.  The name was ch
 
 This section is brand new to Loop v1.5.  Loop still has the option for the old model (Walsh curve), as well as three new models.
 
-You can read up on the new curves [here](https://loopkit.github.io/loopdocs/build/configuration/#insulin-model).  There is also a new customization section for the curves [here](https://loopkit.github.io/loopdocs/build/installing/#exponential-insulin-curve).
+You can read up on the new curves [here](../setup/build/configuration.md#insulin-model).  There is also a new customization section for the curves [here](/setup/build/code_customization.md#exponential-insulin-curve).
 
 These new models are quite a bit different than the Walsh model.  I recommend watching the bolusing recommendations and how meals are behaving with your curve selection.  Because the timing of the peak activity has changed, this will impact how the Loop recommends boluses in some instances.  Overall, most users are finding that the changes have resulted in a bit more conservative bolusing recommendations (less insulin), especially for long slow carb meals.  Developers are looking at options to assess and address that.
 
@@ -119,7 +119,7 @@ Deleting your transmitter ID for G5 users is no longer a useful troubleshooting 
 ###<p align="center">**Insulin Delivery in Health App**</p>
 </br>
 
-New to iOS 11 users, the Apple Health app will now track insulin delivery data.  Loop integrates with that feature.  A new docs page for Health app has been added too.  You can find more about that [here](https://loopkit.github.io/loopdocs/use/healthapp/)
+New to iOS 11 users, the Apple Health app will now track insulin delivery data.  Loop integrates with that feature.  A new docs page for Health app has been added too.  You can find more about that [here](/operation/features/healthapp.md)
 
 <p align="center">
 <img src="../img/v1.5/todayhealth.jpg" width="250">

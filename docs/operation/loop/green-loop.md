@@ -32,7 +32,7 @@ CGM
 RileyLink
 
 * RL is charged (it does not ship completely charged)
-* RL battery needs to be securely plugged in, [check those connections](https://loopkit.github.io/loopdocs/use/rileylink/#lipo-battery)
+* RL battery needs to be securely plugged in, [check those connections](/troubleshooting/rileylink.md#lipo-battery)
 
 If all of those items are double-checked, try closing both the Loop and Dexcom apps (double-tap home button and up-swipe to close apps).  Toggle your BT on iPhone off/on.  Reopen the Loop app, then reopen Dexcom app.
 
@@ -57,7 +57,7 @@ We can use a combination of the display and the error message to narrow down the
 A healthy green loop will have timestamps less than 5 minutes old below the green loop, BG reading, and reservoir level.  This indicates that the Loop was run less than 5 minutes ago, fresh BGs have been coming in, temp basals have been enacted by the pump, and the pump is communicating with Loop.  The screenshot below is a very happy Loop.
 
 <p align="center">
-<img src="../../img/loop_less_than_five.jpg" width="550">
+<img src="../img/loop_less_than_five.jpg" width="550">
 </p>
 </br></br>
 *************************
@@ -75,8 +75,8 @@ If your Loop turns yellow or red, easiest to start by checking the timestamps on
 
 BG troubleshooting steps:
 
-* Verify you have enabled the correct [CGM Selection](/build/configuration/#cgm-selection) in Loop settings
-* For G5, verify your [transmitter ID](/build/configuration/#cgm-selection) is set correctly in Loop settings
+* Verify you have enabled the correct [CGM Selection](/setup/build/configuration.md#cgm-selection) in Loop settings
+* For G5, verify your [transmitter ID](/setup/build/configuration.md#cgm-selection) is set correctly in Loop settings
 * For G4, verify the Dexcom Share app is running on your phone
 * Fetch Recent Glucose command in RL only works for Medtronic CGM users, by the way.
 * If your local CGM is working fine on the Dexcom apps, but Loop isn't reading it:
@@ -151,7 +151,7 @@ Sometimes the RilleyLink and iPhone fail to communicate via BT.  You need to det
 * Has your RL been fully charged? Try charging your RL for an hour or two
 * Is your lipo battery old and perhaps dying earlier in the day?  Order a new battery
 * Your RL battery needs to be securely plugged in, check those connections.
-* Check if your RL is on and says "connected" in the [status screen for bluetooth](../../setup/build/configuration/#device). If it says "connecting" or "disconnected", you have a BT problem with RL and iPhone.
+* Check if your RL is on and says "connected" in the [status screen for bluetooth](../../setup/build/configuration.md#device). If it says "connecting" or "disconnected", you have a BT problem with RL and iPhone.
 * Make sure your iPhone's BT is turned on, and BT is not being affected by other BT systems (such as car audio)
 * Check if any of the RL command buttons work...such as Send Button press.  If the commands are frozen, toggle your RL power switch and turn your iPhone BT off/on.
 

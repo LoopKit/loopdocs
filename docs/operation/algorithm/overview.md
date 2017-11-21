@@ -1,6 +1,6 @@
 # Overview
 
-Loop’s algorithm for adjusting insulin delivery is oriented around making a glucose prediction.  Every five minutes, triggered by new BG data, it generates a new prediction.  Both [bolus recommendations](bolus) and [temporary basal rates](temp_basal) are set based on this prediction.
+Loop’s algorithm for adjusting insulin delivery is oriented around making a glucose prediction.  Every five minutes, triggered by new BG data, it generates a new prediction.  Both [bolus recommendations](bolus.md) and [temporary basal rates](temp_basal.md) are set based on this prediction.
 
 ## Terminology
 
