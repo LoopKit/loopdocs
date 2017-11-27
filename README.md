@@ -35,7 +35,7 @@ $ mkdocs serve
 * Preview docs in browser. Most changes will update automatically as you edit. Configuration and navigation changes will require restarting the mkdocs server.
 * Optionally, you can share the preview with others by uploading them to your repository's `gh-pages` branch
 ```bash
-$ mkdocs deploy
+$ mkdocs gh-deploy
 ```
 
 ## Conventions
