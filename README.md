@@ -6,11 +6,37 @@ This is the repo that contains the source files for the [Loop Docs](https://loop
 
 To suggest changes, fork this repository, edit the files, and submit your changes as a pull request.
 
-To preview your work as you edit you'll want to set up two python packages with `pip install <package>`:
-* [mkdocs](http://www.mkdocs.org/), and
-* mkdocs-bootswatch
+### Previewing Changes
+To preview your work as you edit you must set up two python packages that are used to create this site using [MkDocs](http://www.mkdocs.org/). They are `mkdocs`, and `mkdocs-bootswatch`.
 
-At that point you can run `mkdocs serve` in the project directory to view your changes.
+Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help getting Python installed. MkDocs works with Python 2.7, 3.3+, and pypy.
+
+* Install python modules
+
+```bash
+$ cd <loopdocs project location>
+$ pip install -r requirements.txt
+```
+
+**mkdocs Version Warning:** Use the latest `0.16.x` patch version of `mkdocs`, but don't upgrade `mkdocs` to version `0.17.x`. It is NOT compatible with the theme being used.
+
+* Or, install modules individually
+```bash
+$ pip install mkdocs<0.17
+$ pip install mkdocs-bootswatch
+```
+
+* Run mkdocs server locally
+```bash
+$ cd <loopdocs project location>
+$ mkdocs serve
+```
+
+* Preview docs in browser. Most changes will update automatically as you edit. Configuration and navigation changes will require restarting the mkdocs server.
+* Optionally, you can share the preview with others by uploading them to your repository's `gh-pages` branch
+```bash
+$ mkdocs gh-deploy
+```
 
 ## Conventions
 
