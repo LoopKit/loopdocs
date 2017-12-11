@@ -48,12 +48,12 @@ The range that your RileyLink will function is **heavily** dependent on the envi
 If you ordered your RileyLink preassembled, you should plug in the battery cable.  Please make sure your RileyLink’s battery cable is securely pushed all the way into the socket.  Poor battery cable connection can make the Loop communications fail.
 
 <p><figure align="center">
-  <img src="../img/loose_battery.jpg" width="400">
+  <img src="../img/rl_loose_battery.jpg" width="400">
   <figcaption>RileyLink with loose battery cable.</figcaption>
 </figure></p>
 
 <p><figure align="center">
-  <img src="../img/secure_battery.jpg" width="400">
+  <img src="../img/rl_secure_battery.jpg" width="400">
   <figcaption>RileyLink with properly secured battery cable.</figcaption>
 </figure></p>
 

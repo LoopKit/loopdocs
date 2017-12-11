@@ -6,7 +6,7 @@ Loop is built to fully work across time zone and daylight savings time changes a
     **Always use RileyLink to change pump time.  If you fail to set the pump time by using the RileyLink, Loop will not function properly.**
 
 <p align="center">
-<img src="../img/change_time.png" width="400">
+<img src="../img/time_change.png" width="400">
 </p>
 
 ## iPhone

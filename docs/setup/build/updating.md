@@ -43,7 +43,7 @@ FYI: The Loop source code resides in [GitHub](https://github.com/LoopKit/Loop) w
 
 ### Change Main App Bundle ID and Build
 
-**<u>Follow the guide for installation as you did before, beginning [HERE](https://loopkit.github.io/loopdocs/build/installing/#install-loop-using-xcode) to navigate to your newly downloaded source code.</u>**
+**<u>Follow the guide for installation as you did before, beginning [HERE](/setup/build/installing.md#installing-loop-using-xcode) to navigate to your newly downloaded source code.</u>**
 
 The most common error in updating a Loop app is to use a different MAIN_APP_BUNDLE_IDENTIFIER than you used in your original Loop build.  If you use a different MAIN_APP_BUNDLE_IDENTIFIER, your iPhone will have a brand new second Loop app and none of the settings from the original Loop app will carry over.  While some people use this technique intentionally, you will have to be aware that you cannot successfully loop with two different Loop apps actively running (opened) at the same time on the same iPhone.  So, you will have to make sure you double-tap the home button and up-swipe to close out any unused Loop apps that you don't need running.
 
@@ -59,7 +59,7 @@ If you **use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first instal
 
 Add or redo any customizations, if needed.  These will not be carried over automatically from the old app.
 
-Sign the four targets and rebuild.  If you get any build errors, please check [this section](https://loopkit.github.io/loopdocs/build/installing/#build-errors) for fixes.
+Sign the four targets and rebuild.  If you get any build errors, please check [this section](/setup/build/build_errors.md) for fixes.
 
 
 

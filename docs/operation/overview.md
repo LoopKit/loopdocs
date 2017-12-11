@@ -120,7 +120,7 @@ The Carbohydrate chart displays the carbs used by Loop to predict BG changes.  T
 ## Tool Bar
 
 <p align="center">
-<img src="../img/toolbar.jpg" width="400">
+<img src="../features/img/toolbar.jpg" width="400">
 </p>
 
 The tool bar is where your inputs to the Loop behavior take place.  The individual components of the tool bar are discussed in further detail in separate sections of the docs.
