@@ -1,18 +1,18 @@
-# Installing Loop
+# Overview
 
 The overall installation process is pretty simple.  Loop is written in code that is stored online; available for us to download for free.  In order to compile all that code into a useable app on your iPhone, we need to use a free Apple program called Xcode.  Xcode takes all that code & makes an app...but Apple is particular about apps and installation on devices.  So, in order to put this app on our iPhones, we have to enroll in Apple's Developer Program.  Once you enroll as a developer, you will be able to "sign" the Loop app in Xcode so that it will properly install onto your iPhone.
 
 While all of this is straight forward...I'll tell you some hints upfront to save time.
 
-* Check your watchOS, iPhone OS, macOS first to see if they need updates.  Currently you'll need at least watchOS 4, iOS 10.3.3 (or iOS 11 if you are using an Apple watch) , macOS 10.12.6
-* Downloading Xcode 9 can take 20-45 minutes depending on your internet connection speed.  You can do that ahead of time if you want to save yourself some waiting when you're ready to build.
+* Check your watchOS, iPhone OS, macOS first to see if they need updates.  Currently you'll need at least watchOS 4, iOS 10.3.3 (or iOS 11 if you are using an Apple watch) , macOS 10.12.6.  Newer versions of these will work, too.
+* Downloading Xcode can take hours depending on your internet connection speed.  You can do that ahead of time if you want to save yourself some waiting when you're ready to build.
 * Apple watches need to be paired with the iPhone BEFORE the Loop app is built onto the phone in order to have the Loop on the watch, too.  If you pair a new Apple watch later, you'll have to rebuild the Loop app onto the iPhone again, before the watch will work with Loop functions.
 
 ## Setup your Apple Computer
 
 ### Verify macOS
 
-You need to be running macOS Sierra, at least version 10.12.6, so verify by clicking the apple logo in your computer display's upper left corner and selecting "About this Mac"
+You need to be running macOS Sierra, at least version 10.12.6, so verify by clicking the apple logo in your computer display's upper left corner and selecting `About this Mac`.  If you have High Sierra (macOS 10.13), that is also compatible.
 
 <p align="center">
 <img src="../img/macosx.png" width="450">
@@ -59,7 +59,8 @@ To activate enrollment in a free developer account, you simply need to add your 
 If you decide to enroll in a **PAID** developer account, here's what you need to know:
     
 1. Loop apps signed with a paid developer team will last for a full year.</br></br>
-2. The paid developer account is $99 per year and is default set to auto-renew annually.  You can change that selection in your developer account settings at any time.</br></br>
+2. The paid developer account is $99 per year and is default set to auto-renew annually.  You can change that selection in your developer account settings at any time.
+3. If your household has multiple T1D Loop users, only one developer account is needed.  That one developer account can be used to sign multiple Loop apps.</br></br>
 
 To activate a paid account, go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to sign-up for your individual account.  (Note: The Apple ID you use to sign up for the developer account does not need to be the same Apple ID as the Looping iPhone uses, for example parent's installing Loop on kid's iPhone.  Typically for the developer account, use the Apple ID of the person who will be doing the Loop app building.)   After you enroll, make sure you look for a confirmation email.  Apple says it can take up to 24 hours to confirm and setup a new Apple developer account, however some people have had the process only take minutes.  It can vary.
 
@@ -67,13 +68,13 @@ Periodically, Apple will update the license agreement for the Developer Program.
 
 
 ## Setup Xcode
-Open the App Store application on your computer.  Search for Xcode and click on the link to download/install Xcode for free.  The file size is fairly large so expect about 20-45 minutes to download depending on your internet speed.  You will need Xcode 9 at least to build the current Loop app.  If you have a previous installation of Xcode, please make sure to check for updates first, before building Loop.
+Open the App Store application on your computer.  Search for Xcode and click on the link to download/install Xcode for free.  The file size is fairly large so expect about 45 minutes, or even multiple hours, to download depending on your internet speed.  You will need Xcode 9 at least to build the current Loop app, or Xcode 9.2 if you have iOS 11.2 on your iPhone.  If you have a previous installation of Xcode, please make sure to check for updates first, before building Loop.
 
 <p align="center">
 <img src="../img/xcode.jpg" width="450">
 </p>
 
-Once you have Xcode downloaded, open it from your Applications folder.  There may be a short delay as Xcode installs new command lines that the app uses.  Once Xcode is open and ready, we will start with adding your new developer account to Xcode.
+Once you have Xcode downloaded, open it from your Applications folder.  There may be a short delay as Xcode installs new Command Line Tools that the app uses.  Once Xcode is open and ready, we will start with adding your new developer account to Xcode.
 
 Go to the Xcode main menu (top left of your screen) and select Preferences from the Xcode dropdown menu.  Then, click on the “Accounts” tab in the Preferences window and then press the `+` in the lower left corner to add an Apple ID account.
 

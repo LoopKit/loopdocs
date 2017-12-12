@@ -12,11 +12,11 @@ Dexcom G4 Share system transmits CGM data from the transmitter to a Dexcom G4 Sh
 
 ## Medtronic CGM <img src="../img/enlite.png" width="150" alt="Enlite">
 
-The Minimed Enlite CGM, available with the Medtronic 523/723 and 554/754, wirelessly sends blood glucose readings to the pump.  Loop can read the Medtronic CGM data directly from the pump using the RileyLink.  
+The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends blood glucose readings to the pump.  Loop can read the Medtronic CGM data directly from the pump using the RileyLink.
 
 ## Offline Use
 
-Offline use means using Loop when there is no cell data or internet available.  For the offline Loop use, the iPhone's Bluetooth still needs to be active; and for Dexcom system's, the Share2 or G5 Mobile apps also still need to be active.  If you put your iPhone into Airplane mode, remember to turn back on the Bluetooth to keep your Loop running.
+Offline use means using Loop when there is no cell data or internet available.  Loop does not require any special setup to operate offline.  You will not need to do anything special if you go camping or find yourself out in the wilderness.  For offline Loop use, the iPhone's Bluetooth still needs to be active; and for Dexcom system's, the Share2 or G5 Mobile app also still needs to be open (but don't have to be actively "sharing" to the internet).  If you put your iPhone into Airplane mode, remember to turn Bluetooth back on to keep your Loop running.
 
 ## Dexcom Servers
 

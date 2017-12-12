@@ -23,12 +23,12 @@ But, if you're familiar with your medtronic pump and dexcom, here's some ideas:
 2.  Make the pump settings required for Loop to work
 3.  Update your iPhone's iOS, if needed, and back it up
 4.  Update your Apple's OS X, if needed.
-5.  Update your Apple Watch's OS (3.1)
-6.  Download Xcode from the Apple App Store on your Apple computer (this takes more time than you'd expect)
+5.  Update your Apple Watch's OS
+6.  Download Xcode from the Apple App Store on your Apple computer (**this takes more time than you'd expect, it is a large download**)
 7.  Sign up for a Developer Account, if you intend to.  Confirm your enrollment by checking your email afterwards.
-8.  Install Carthage (see Build page)
-9.  Download Loop source code (see Build page) and get started with Loop building
-10. Make customizations (see Build page)
+8.  Download Loop source code and get started with Loop building
+9.  Install Carthage
+10. Make customizations
 11. Build Loop app onto your iPhone
 12. Fill in the pump settings in your Loop app
 13. Set up a Nightscout site or update your existing site (optional)

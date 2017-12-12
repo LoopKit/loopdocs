@@ -18,18 +18,24 @@ pages:
         - 'Computer': 'setup/requirements/computer.md'
         - 'iPhone': 'setup/requirements/iphone.md'
         - 'Apple Developer': 'setup/requirements/appledev.md'
-    - 'Build and Install':
-        - 'Installing': 'setup/build/installing.md'
+    - 'Install Loop':
+        - 'Building App': 'setup/build/installing.md'
         - 'Build Errors': 'setup/build/build_errors.md'
         - 'Code Customization': 'setup/build/code_customization.md'
-        - 'Configuration': 'setup/build/configuration.md'
-        - 'Updating': 'setup/build/updating.md'
+    - 'Loop App setup':
+        - 'Health App': 'setup/loop-settings/health_app.md'
+        - 'Settings': 'setup/loop-settings/settings.md'
+        - 'Services': 'setup/loop-settings/services.md'
+        - 'RileyLink menu': 'setup/loop-settings/rileylink_menu.md'
+        - 'Pump settings': 'setup/loop-settings/pump.md'
+    - 'Update':
+        - 'Updating': 'setup/update/updating.md'
+        - 'New Version Info': 'setup/update/new-version.md'
 - Operation:
     - 'App Screens': 'operation/overview.md'
     - 'How To Loop':
         - 'Open Loop': 'operation/loop/open-loop.md'
         - 'Closed Loop': 'operation/loop/close-loop.md'
-        - 'Getting a Green Loop': 'operation/loop/green-loop.md'
     - Features:
         - 'Apple Watch': 'operation/features/watch.md'
         - 'Bolus': 'operation/features/bolus.md'
@@ -43,10 +49,11 @@ pages:
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
         - 'Glucose Prediction': 'operation/algorithm/prediction.md'
         - 'Temp Basal Adjustments': 'operation/algorithm/temp_basal.md'
-    - 'New Version Info': 'operation/new-version.md'
 - Troubleshooting:
     - 'Overview': 'troubleshooting/overview.md'
-    - 'mLab': 'troubleshooting/mlab_cleanup.md'
+    - 'Grey Loop': 'troubleshooting/green-loop.md'
+    - 'Yellow/Red Loop': 'troubleshooting/yellow-red-loop.md'
+    - 'NS display': 'troubleshooting/mlab_cleanup.md'
     - 'Priming and Sites': 'troubleshooting/priming.md'
     - 'RileyLink': 'troubleshooting/rileylink.md'
     - 'Time Changes': 'troubleshooting/time-change.md'
