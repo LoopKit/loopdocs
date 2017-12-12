@@ -5,6 +5,7 @@ The overall installation process is pretty simple.  Loop is written in code that
 While all of this is straight forward...I'll tell you some hints upfront to save time.
 
 * Check your watchOS, iPhone OS, macOS first to see if they need updates.  Currently you'll need at least watchOS 4, iOS 10.3.3 (or iOS 11 if you are using an Apple watch) , macOS 10.12.6.  Newer versions of these will work, too.
+* If you are using iOS 11.2, you will need at least Xcode 9.2
 * Downloading Xcode can take hours depending on your internet connection speed.  You can do that ahead of time if you want to save yourself some waiting when you're ready to build.
 * Apple watches need to be paired with the iPhone BEFORE the Loop app is built onto the phone in order to have the Loop on the watch, too.  If you pair a new Apple watch later, you'll have to rebuild the Loop app onto the iPhone again, before the watch will work with Loop functions.
 
@@ -68,13 +69,16 @@ Periodically, Apple will update the license agreement for the Developer Program.
 
 
 ## Setup Xcode
-Open the App Store application on your computer.  Search for Xcode and click on the link to download/install Xcode for free.  The file size is fairly large so expect about 45 minutes, or even multiple hours, to download depending on your internet speed.  You will need Xcode 9 at least to build the current Loop app, or Xcode 9.2 if you have iOS 11.2 on your iPhone.  If you have a previous installation of Xcode, please make sure to check for updates first, before building Loop.
+Open the App Store application on your computer.  Search for Xcode and click on the link to download/install Xcode for free.  The most current version of Xcode is 9.2.  The file size is fairly large so expect about 45 minutes, or even multiple hours, to download depending on your internet speed.  You will need version Xcode 9 at least to build the current Loop app; or Xcode 9.2 if you have iOS 11.2 on your iPhone.  If you have a previous installation of Xcode, please make sure to check for updates first, before building Loop.
 
 <p align="center">
 <img src="../img/xcode.jpg" width="450">
 </p>
 
 Once you have Xcode downloaded, open it from your Applications folder.  There may be a short delay as Xcode installs new Command Line Tools that the app uses.  Once Xcode is open and ready, we will start with adding your new developer account to Xcode.
+
+!!!info ""
+    IMPORTANT NOTES: Do not stop the installation of Command Line Tools, that is an important installation for Xcode to work properly.  Additionally, if you see a pop-up window later during this Loop building process asking for `Keychain Access`, answer Always Allow.  This will let Xcode have access to the signing certificates that it needs for your Apple Developer account.  You will have to enter a password to allow keychain access.  That password is the admin password for your computer.
 
 Go to the Xcode main menu (top left of your screen) and select Preferences from the Xcode dropdown menu.  Then, click on the “Accounts” tab in the Preferences window and then press the `+` in the lower left corner to add an Apple ID account.
 
@@ -98,12 +102,15 @@ You are now done setting up your Xcode environment.  Great job!  You will not ne
 
 ## Download Loop Source Code
 
-Next, you’ll need to obtain the Loop’s source code in order to build the app on your computer.  If you click on the link below, a copy of the Loop source code’s master branch will be downloaded to your Downloads folder.
+Next, you’ll need to obtain the Loop’s source code in order to build the app on your computer.  Click on ONE of the links below to download your Loop source code.  **We recommend Master branch source code be used to build your Loop.**
+
+Master vs Dev?  What is the difference? The Loop source code resides in [GitHub](https://github.com/LoopKit/Loop) within a repository.  A repository is kind of like a project's bookshelf, holding various books versions (aka branches) of a project.  The master branch is considered a stable version.  Any new features or options are first tested in a dev (short for "development") branch of the Loop.  New or inexperienced users should not build from the dev branch of Loop.  So if you hear of "new features in dev", these are things that may be eventually merged into the master branch once any bugs are worked out.
 </br></br>
 <p align="center">
-[Loop: Master branch source code](https://github.com/LoopKit/Loop/archive/master.zip)
+[Loop: Master branch source code](https://github.com/LoopKit/Loop/archive/master.zip)</br></br>
+[Loop: Dev branch source code](https://github.com/LoopKit/Loop/archive/dev.zip)
 </p></br>
-FYI: The Loop source code resides in [GitHub](https://github.com/LoopKit/Loop) within a repository.  A repository is kind of like a project's bookshelf, holding various books (aka branches) of a project.  The master branch is considered a stable version.  Any new features or options are first tested in a dev (short for "development") branch of the Loop.  New or inexperienced users should not build from the dev branch of Loop.  So if you hear of "new features in dev", these are things that may be eventually merged into the master branch once any bugs are worked out.
+
 
 !!!info ""
     IMPORTANT NOTES: Best practice is to leave your Loop source code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
@@ -115,7 +122,6 @@ FYI: The Loop source code resides in [GitHub](https://github.com/LoopKit/Loop) w
     <img src="../img/folder-name.png" width="650">
     </p>
 
-Advanced method: Alternatively, if you are already familiar with git and Terminal app use, you could save a local copy of Loop source code to your computer using `git clone https://github.com/LoopKit/Loop.git`.  This method would allow for saving local changes and updating, but does require some familiarity with git commands.  For new users, or those unfamiliar with git, we recommend using the direct download of master branch, above.  Loop is easily rebuilt and doesn't need to be saved locally long-term.
 
 ## Installing Loop using Xcode
 
@@ -139,19 +145,21 @@ Once Xcode has finished indexing, the Loop project's various folders and files w
 <img src="../img/main_app_id.png" width="750">
 </p>
 
-You need to change the MAIN_APP_BUNDLE_IDENTIFIER  to your own unique identifier.  Keep it in the reverse-domain syntax, meaning start with `com.` and without any extensions after your chosen identifier.  The example below uses `dynamicloop` to replace the default `loopkit`...you choose your own phrase/name without spaces or periods.   If some other Looper has already used the same phrase, you will get a build error later in this build process...so make your name somehow slightly personal to you.   Hint: you can't use `com.dynamicloop` or `com.loopkit` or `com.loudnate` for example because other Loopers have already used them. **<u>After you enter your new MAIN_APP_BUNDLE_IDENTIFIER, save the project using Command-S</u>**
+You need to change the MAIN_APP_BUNDLE_IDENTIFIER  to your own unique identifier.  Keep it in the reverse-domain syntax, meaning start with `com.` and without any extensions after your chosen identifier.  The example below uses `dynamicloop` to replace the default `loopkit`...you choose your own phrase/name without spaces or periods.   If some other Looper has already used the same phrase, you will get a build error later in this build process...so make your name somehow slightly personal to you.   Hint: you can't use `com.dynamicloop` or `com.loopkit` or `com.loudnate` for example because other Loopers have already used them. **<u>After you enter your new MAIN_APP_BUNDLE_IDENTIFIER, save the project using command-s</u>**
 
 <p align="center">
 <img src="../img/your_id.png" width="750">
 </p>
 
-After saving the project, scroll back up to the top of the file list in the left-hand column.  At the very top, click on the blue Loop main project folder.  Then click on the box in the middle screen to reveal the targets' column.  The four targets we will sign in the upcoming steps are now easily viewable.
+After saving the project, scroll back up to the top of the file list in the left-hand column.  Just a check...**did you remember to save your project like it said above?**  Underlined and bold?  That is an important step.  If you have, keep going.  If you haven't, press command-s now before continuing.  If you aren't sure, go ahead and do it again just in case.  Thanks!
+
+At the very top, click on the blue Loop main project folder.  Then click on the box in the middle screen to reveal the targets' column.  The four targets we will sign in the upcoming steps are now easily viewable.
 
 <p align="center">
 <img src="../img/target_view.png" width="750">
 </p>
 
-Connect your iPhone via cable to the computer, select your iPhone from the very top of the drop down list.  Your **<u>iPhone’s personal name</u>** should be at the top of the list.  Don't accidentally select the generic iOS simulators listed below your iPhone's name.  If your iPhone has a lock enabled, it may be helpful to temporarily disable the lock until you finish building Loop app.  Xcode has a hard time building to locked iPhones.  You can reset your lock once Loop is done building onto the phone.
+Connect your iPhone via cable to the computer, select your iPhone from the very top of the drop down list.  Your **<u>iPhone’s personal name</u>** should be at the top of the list.  Don't accidentally select the generic iOS simulators listed below your iPhone's name.  If your iPhone has a lock enabled, it is helpful to temporarily disable the lock until you finish building Loop app.  Xcode has a hard time building to locked iPhones.  You can reset your lock once Loop is done building onto the phone.
 
 <p align="center">
 <img src="../img/select_device.png" width="750">
@@ -194,7 +202,7 @@ A successfully signed target will have a provisioning profile and signing certif
 <img src="../img/success.png" width="750">
 </p>
 
-If instead, you saw an error message like below then you will need to make a correction.  Remember how we said you needed to make a unique name in the previous steps?  You have either (1) failed to use a unique-to-you main app bundle ID or (2) failed to save the project after changing the main app bundle ID earlier.  Go back to the starting steps in building the Loop app, in the Loop.xcconfig file where you changed `com.loopkit`.  Pick a new main app bundle ID and press command-s to save the project.  Then return to re-sign the targets with the updated info.
+If instead, you saw an error message like below then you will need to make a correction.  Remember how we said you needed to make a unique name in the previous steps?  You have either (1) failed to use a unique-to-you main app bundle ID or (2) failed to save the project after changing the main app bundle ID earlier.  Go back to the step in building the Loop app, in the Loop.xcconfig file where you changed `com.loopkit`.  Pick a new main app bundle ID (one that might be even more unique than your previous attempt) and press command-s to save the project.  Then return to re-sign the targets with the updated info.
 
 <p align="center">
 <img src="../img/name_error.png" width="750">
@@ -206,10 +214,10 @@ If instead, you saw an error message like below then you will need to make a cor
 
 !!!info "Have you paired your Apple Watch already?"
     **New Apple Watch users**: If you have an unopened Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)</br></br>
-    **Existing Apple Watch users**: Please update your watchOS prior to building Loop app.  The current version of Loop (v1.5) requires watchOS 4.
+    **Existing Apple Watch users**: Please update your watchOS prior to building Loop app.  The current version of Loop (v1.5) requires watchOS 4 or newer.
     
 
-All done with any customizations? Have your Apple watch paired and updated?  Let’s finish the installation of the Loop app onto your iPhone.  Double check to make sure your iPhone's name is still selected and then press the “play” button (or build button) to start Xcode on its way.  You’ll see the progression of the build in the status window.  If the build is successful, you'll see a brief pop-up graphic saying "Build succeeded" and then it will say "running Loop" in the status bar. (Troubleshooting tips for common build errors are below, too...scroll down)
+All done with any customizations? Have your Apple watch paired and updated?  Let’s finish the installation of the Loop app onto your iPhone.  Double check to make sure your iPhone's name is still selected and then press the “play” button (or build button) to start Xcode on its way.  You’ll see the progression of the build in the status window.  If the build is successful, you'll see a brief pop-up graphic saying "Build succeeded" and then it will say "running Loop" in the status bar.
 
 <p align="center">
 <img src="../img/build_button.png" width="750">
@@ -224,7 +232,7 @@ If this is the first time you have installed an app on your iPhone using your De
 You can confirm Loop has installed on your phone simply by looking on the iPhone.  Turn it on and check if the Loop app is running.  Brand new Loop apps will usually have a screen open immediately asking about allowing Loop notifications and Health App access.  Updated Loop apps won't usually show any special screen after a successful build.
 
 !!!info "CONGRATS!  YOU JUST INSTALLED LOOP!"
-    You can now begin configuring your Loop settings.
+    While the Loop app has been built...you are not done with these docs yet.  There are some very valuable pieces of information you will need to read in order to get your Loop working (green loop).  Please continue on with the Loop App Setup section of these docs.
 
 !!!warning
     If you encountered any build errors in Xcode, please review the [Build Errors](build_errors.md) page.

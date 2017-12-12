@@ -1,7 +1,8 @@
 ## Code Customizations
 Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.
 
-<b>[Note: To help you find the Line numbers in Xcode, it may be helpful to turn them on now.  Go to Xcode Preferences, under Text Editing, click the box to Show Line Numbers.  Every effort will be made to update the line numbers as the code is updated periodically, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.]</b>
+!!!info ""
+    Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.
 
 ### Disable TouchID for Bolus
 

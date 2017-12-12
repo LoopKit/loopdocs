@@ -8,13 +8,13 @@ When a new version of Loop is released, you can click [HERE](https://github.com/
     Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app; your Apple Developer license agreement, your iPhone's iOS, your computer's macOS, your Xcode app, and/or your watchOS.  <u>If you don't install the updates, you will run into build problems.</u>  You can check for macOS and Xcode updates using the App Store link under the apple logo in your computer display's upper left corner.</br></br>
         * [Check your Apple developer account](http://developer.apple.com) and accept any updated license agreements.</br>
         * Update to macOS Sierra on your Apple.  Currently you will need macOS 10.12.6 at a minimum.</br>
-        * Update to Xcode 9 </br>
+        * Update Xcode </br>
         * Update your iPhone (iOS 10.3.3 at least), or if you use an Apple watch you'll need iOS 11 and watchOS 4.</br></br>
 
 !!!warning "Special note about upgrading to Loop v1.5 for existing Loopers"
     If you are an existing Looper encountering this error message below while trying to update to Loop v1.5, please open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  Confirm the homebrew installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.  This error is a legacy for people who installed carthage using the carthage.pkg option (the primary installation method on the old docs)...installing homebrew with these directions will resolve the conflict between carthage installations.
     <p align="center">
-    <img src="../img/exit127.jpg" width="450">
+    <img src="../img/exit127.jpg" width="350">
     </p>
 
 ### Download new Loop source code

@@ -23,12 +23,9 @@ A small icon in the middle of the pill indicates the latest known status.
 
 ## Status Information
 
-Mouseover or Touch the Loop pill to view a tool tip containing one or more of the latest status messages. For example:
+Mouseover or Touch the Loop pill to view a tool tip containing one or more of the latest status messages. The most up-to-date NS also includes information in the Loop pill for the minimum and maximum predicted BG, eventual predicted BG, BLE comms strength, and pump comms strength (for x23 and x54 model users).
 
-<img src="../img/loop_pill_message.jpg" width="350">
-
-<img src="../img/loop_pill_message_error.jpg" width="350">
-
+<img src="../img/loop_pill_message.png" width="750">
 
 ## Troubleshooting Loop
-If you are getting unexpected status, review the [Getting a Green Loop](../operation/loop/green-loop.md) page. To find a specific error message, search the site for all or part of the message.
+If you are getting unexpected status, review the Troubleshooting pages. To find a specific error message, search the site for all or part of the message.

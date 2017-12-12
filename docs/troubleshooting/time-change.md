@@ -24,6 +24,6 @@ No particular input is needed on your part for Loop to work with Dexcom CGM data
 ## Traveling across time zones and daylight savings
 When traveling, there is no urgency to update the pump's time to match the wall-clocks in your geography. Configuration schedules—basal rates, target ranges, carb ratios, and insulin sensitivities—will all remain in the pump's time zone. The app's graphs and status will always display in the time zone of the iPhone, and Loop will understand the difference in offset between the two, highlighting it when attempting to change configuration schedules.
 
-When you're ready to update the pump's time, simply <u>**use the Loop's RileyLink "Change Pump Time"**</u>. This will also shift your configuration schedules to the current time zone.
+When you're ready to update the pump's time, simply <u>**use the Loop's RileyLink "Change Time"**</u>. This will also shift your configuration schedules to the current time zone.
 
 
