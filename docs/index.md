@@ -31,9 +31,9 @@ Loop has been developed as an open-source, shared project.  For a really interes
 
 * Use the navigation menu at the top of the screen to find the info you are looking for.
 * A Table of Contents for the current page is always displayed on the left side of the screen.
-* You can search the Loop Docs site by clicking the <img src="../img/search_icon.png" width="50px"> icon.
+* You can search the Loop Docs site by clicking the <img src="img/search_icon.png" width="50px"> icon.
 
-    <img src="../img/search_example.png" width="400">
+    <img src="img/search_example.png" width="400">
 
 
 ## Stay in the Loop!
