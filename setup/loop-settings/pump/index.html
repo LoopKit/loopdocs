@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>Pump settings - Loop Docs</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link href="../../../css/admonitions.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Loop Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Requirements</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../requirements/pump/">Insulin Pump</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/cgm/">CGM</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/rileylink/">RileyLink</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/computer/">Computer</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/iphone/">iPhone</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/appledev/">Apple Developer</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Install Loop</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../build/installing/">Building App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../build/build_errors/">Build Errors</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../build/code_customization/">Code Customization</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Loop App setup</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../health_app/">Health App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../settings/">Settings</a>
+</li>
+
+        
+            
+<li >
+    <a href="../services/">Services</a>
+</li>
+
+        
+            
+<li >
+    <a href="../rileylink_menu/">RileyLink menu</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Pump settings</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Update</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../update/updating/">Updating</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../update/new-version/">New Version Info</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../operation/overview/">App Screens</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">How To Loop</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/loop/open-loop/">Open Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/loop/close-loop/">Closed Loop</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Features</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/features/watch/">Apple Watch</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/bolus/">Bolus</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/carbs/">Carb Entries</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/healthapp/">Health App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/widget/">iPhone widget</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/notifications/">Loop Notifications</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/workout/">Workout Targets</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Algorithm</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/algorithm/overview/">Overview</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/bolus/">Bolus Recommendations</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/prediction/">Glucose Prediction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/temp_basal/">Temp Basal Adjustments</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/green-loop/">Grey Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/mlab_cleanup/">NS display</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/priming/">Priming and Sites</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/rileylink/">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/time-change/">Time Changes</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../nightscout/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/new_user/">Setup New Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/update_user/">Update Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/azure_migration/">Azure to Heroku</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/loop_pill/">Loop Pill</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/ifttt/">IFTTT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/pebble/">Pebble</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/pushover/">Remote Notifications</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/reports/">Reports</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../rileylink_menu/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../../update/updating/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#configuring-your-loop">Configuring your Loop</a></li>
+        
+            <li><a href="#health-app">Health App</a></li>
+        
+            <li><a href="#settings">Settings</a></li>
+        
+            <li><a href="#services">Services</a></li>
+        
+            <li><a href="#pump-setup">Pump Setup</a></li>
+        
+            <li><a href="#rileylink">RileyLink</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="configuring-your-loop">Configuring your Loop<a class="headerlink" href="#configuring-your-loop" title="Permanent link">⌁</a></h1>
+<p>Now that you have the Loop app installed on your iPhone, we need to input the settings so that the Loop can work for you.  In this section, we cover the details and provide information about the Loop displays.  Finally, we will cover some extras like Apple Watch and useful external integrations.</p>
+<h2 id="health-app">Health App<a class="headerlink" href="#health-app" title="Permanent link">⌁</a></h2>
+<p>Loop app uses the iPhone's Health app to store BGs, insulin, and carbohydrate data.  Insulin Data is a new feature with iOS 11.  The Health app will be one of the first prompts that you see as your Loop app is built.  The first prompt will ask if you want to allow the Loop app access to read/write Blood Glucose data into the Health app.  You will want to click on the line that says <code>Turn All Categories On</code> and then click on the <code>Allow</code> button.</p>
+<p>Later in the configuration of your Loop app, when you first setup carb ratios, you will again be prompted whether to allow Loop app access to read/write to the Health app.</p>
+<p align="center">
+<img src="../img/healthapp.png" width="450">
+</p>
+
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">⌁</a></h2>
+<p align="center">
+<img src="../img/loop_settings.jpg" width="450">
+</p>
+
+<p>Normally, we would start by explaining the displays on an application, but your Loop won’t have much showing initially until we get some basic settings input.  So, let’s start by clicking on the Loop Settings button in the tool bar.  It looks like a little sprocket.</p>
+<h3 id="loop-version">Loop Version<a class="headerlink" href="#loop-version" title="Permanent link">⌁</a></h3>
+<p align="center">
+<img src="../img/loop_version.jpg" width="400">
+</p>
+
+<p>The first graphic at the top of the Loop settings display shows the version of the software, e.g.,  Loop v1.3 in this example.  This can be helpful when working with other users of the software to know what version you are running.</p>
+<h3 id="closed-loop">Closed Loop<a class="headerlink" href="#closed-loop" title="Permanent link">⌁</a></h3>
+<p>The Closed Loop switch controls the Loop operation mode for the application. This operation mode determines whether Loop automatically enacts recommendations (i.e., sets temp basals) to the insulin pump.  </p>
+<p align="center">
+<img src="../img/open_loop.png" width="400">
+</p>
+
+<p>When the Closed Loop switch is in the (Off&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ) position, Loop WILL NOT enact recommended temp basals automatically.  Instead, it will display Recommended Temp Basals on the main status display, just above the Glucose graph.  This is called “Open Loop”, and is a good way to understand how Loop will function, and what type of recommendations it would make.  </p>
+<p align="center">
+<img src="../img/closed_loop.png" width="400">
+</p>
+
+<p>When the Closed Loop switch is in the (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   On) position, Loop WILL automatically enact recommended temp basals on the configured insulin pump. This is known as a “Closed Loop”.  Typically, Loop will show the recommended temp basal just above the Glucose graph prior to automatically enacting it.  It may take a minute or so for the Loop to enact the recommended basal.  Once the temp basal has been enacted successfully on the pump, the recommended temp basal will disappear from the screen and the new temp basal will be represented in the insulin delivery graphics.</p>
+<h3 id="preferred-data-source">Preferred Data Source<a class="headerlink" href="#preferred-data-source" title="Permanent link">⌁</a></h3>
+<p align="center">
+<img src="../img/preferred_source.jpg" width="300">
+</p>
+
+<p>If Preferred Data Source is set to “Event History”, then the pump will periodically be polled for treatment events.  This will cause your battery to be used at a faster rate, but there are benefits.  </p>
+<div class="admonition info">
+<p><strong>Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.</strong>  Event History must also be selected in order for prime events to be detected and NOT contribute to iob during site changes.</p>
+</div>
+<h3 id="issue-report">Issue Report<a class="headerlink" href="#issue-report" title="Permanent link">⌁</a></h3>
+<p>If you run into problems or errors with your Loop, the Issue Report can be used to help identify where the problem is occurring.  The Issue Report is automatically generated and you can share it via email.  Frequently, if you go to Gitter or Facebook for help with a technical problem, an Issue Report will provide insight to what the potential problem is.</p>
+<h3 id="devices">Devices<a class="headerlink" href="#devices" title="Permanent link">⌁</a></h3>
+<p>If your RileyLink is turned on and nearby, you will see a RileyLink in this area of the settings.  Actually, you will see a list of any RileyLinks that are in the nearby area.  If you are ever going to be near other Loop users, you may want to consider renaming your RileyLink to a new name (like this one is renamed ToughRL).  We will cover RL naming and use in the later sections...for now you can just slide the switch on and RileyLink will connect.</p>
+<p align="center">
+<img src="../img/rileylink_on.jpg" width="300">
+</p>
+
+<h3 id="pump-id">Pump ID<a class="headerlink" href="#pump-id" title="Permanent link">⌁</a></h3>
+<p>Fairly self-explanatory.  You need to enter your pump’s six-digit ID here.  To find your pump ID, press ESC button on the pump, scroll down.  You will find a the six-digit ID as the “S/N#”.  You will also find the same ID on the back of the pump as six numbers beneath the pump’s model number.  There are also explanations so you can identify the pump’s region.  This makes a difference for how the RileyLink will tune its frequency for pump communications.</p>
+<h3 id="pump-battery-type">Pump Battery Type<a class="headerlink" href="#pump-battery-type" title="Permanent link">⌁</a></h3>
+<p>Again fairly self-explanatory.  Click which battery type you are using so that the battery percentages are more accurately displayed in your Loop display.  The battery displays are designed to give you approximately 8-10 hours notice before looping would fail.  However, every battery manufacturer has its own decay curve for its specific batteries.  <strong><u>Typically, low battery levels will cause loop failures due to poor pump communications, prior to the actual pump failing to delivery insulin.</u></strong></p>
+<h3 id="cgm-selection">CGM Selection<a class="headerlink" href="#cgm-selection" title="Permanent link">⌁</a></h3>
+<p>Select one of the options from the menu:</p>
+<ul>
+<li>Sof-Sensor/Enlite</li>
+<li>G4 Share Receiver</li>
+<li>G5 Transmitter</li>
+</ul>
+<p>If you select the G5 Transmitter, you will be prompted to enter the transmitter ID number.  Don't forget to update your transmitter ID when you change transmitters, otherwise your loop will not work.</p>
+<p>If you are a G4 or G5 user, don't forget to enter your Dexcom Share information (this will be the same as your Nightscout Bridge username and password, too).  By entering your Dexcom Share account info, Loop will be able to fetch from the Dexcom servers via the internet when local BG readings from spying on the receiver/transmitter directly are not working.  The switch between local readings to server data pull will happen automatically when needed.  When Loop is using data from Dexcom servers, a small cloud will appear above the BG reading in Loop.</p>
+<h3 id="correction-range">Correction Range<a class="headerlink" href="#correction-range" title="Permanent link">⌁</a></h3>
+<p>This is where you set your target blood glucose range. This is the low and high BG values that Loop will attempt to keep you between.  Click the + in the upper right corner to add target BG range(s).  You can have multiple targets based on time of day, but the first setting of the day needs to begin at midnight to be consistent with your Medtronic pump.</p>
+<p>Targets will be entered in mg/dl or mmoL automatically based upon how your BG values appear your BG chart. By default they are set to mg/dl, however once BG values arrive in mmoL these settings can be entered in mmoL. If you are planning to use mmoL, be sure to wait to set your correction range until after you have started to receive BG values. If you do these in the wrong order, then your chart may have incorrect Y axis. If you come across this issue, you can also remove all of your target ranges and enter them again. Once you are receiving BG values in mmoL, you can add your correction range(s) in mmoL.</p>
+<p>Correction ranges can be a single number, such as 100-100 mg/dL, but is not necessarily advised or “better”.  Generally, you don't want to keep correction ranges too wide otherwise Loop will be sluggish to correct.</p>
+<p>You can also set the “override” ranges here for temporary alternate correction ranges.  These override ranges will only be enacted when you specifically activate "Pre-Meal or “Workout Mode”.</p>
+<h3 id="suspend-threshold">Suspend Threshold<a class="headerlink" href="#suspend-threshold" title="Permanent link">⌁</a></h3>
+<p>Suspend Threshold is a required data entry for successful configuration of Loop. <strong>Your Loop will not turn green without setting this value.</strong>  This value affects both bolus and basal recommendations by Loop.</p>
+<h4 id="bolus">Bolus<a class="headerlink" href="#bolus" title="Permanent link">⌁</a></h4>
+<ul>
+<li>
+<p>If you are trying to bolus a meal while below this suspend threshold value, Loop will not recommend a bolus.  Instead, you will need to wait until you are above the suspend threshold value in order to bolus.</p>
+</li>
+<li>
+<p>If you are above the suspend threshold but predicted to go below the suspend threshold in future predicted BGs, you will also not get a recommended bolus. Instead, you will need to wait until your predicted BG curve's lowest point is above the suspend threshold value in order to bolus.</p>
+</li>
+</ul>
+<h4 id="basal">Basal<a class="headerlink" href="#basal" title="Permanent link">⌁</a></h4>
+<ul>
+<li>If your current or forecasted BG is below the suspend threshold, Loop will always recommend a temp basal rate of 0 u/hr.</li>
+</ul>
+<h3 id="insulin-model">Insulin Model<a class="headerlink" href="#insulin-model" title="Permanent link">⌁</a></h3>
+<p>There are four Insulin Models to choose from; Walsh, Rapid-Acting Adults, Rapid-Acting Children, and Fiasp.  If you want to read the nitty-gritty discussion that went into the development of these new curves, you can see that in GitHub <a href="https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473">here</a>.</p>
+<p>You can click on each model and see what each model's insulin activity curve looks like.  If you select the Walsh model, and adjust the insulin action duration (DIA default is 6 hours), the curve will be adjusted accordingly based on your selection.</p>
+<p align="center">
+<img src="../img/models.jpg" width="350">
+</p>
+
+<p>The differences between the new (Rapid-Acting and Fiasp) models have to do with the timing of the Peak Activity of the insulin.  Currently, all the models are defaulted [in the code]( to an insulin duration of 360 minutes...but the peak activity of the various curves differs:</p>
+<ul>
+<li>Rapid-acting adult curve peaks at 75 minutes</li>
+<li>Rapid-acting child curve peaks at 65 minutes</li>
+<li>Fiasp peaks curve peaks at 55 minutes</li>
+</ul>
+<p>As the peak time decreases, the Loop will expect a quicker insulin impact on BG AND the tail of the insulin dose will be slightly less agressive compared to a curve with a later peak time.  In other words, Fiasp will be more powerful soon after a bolus and less powerful 5 hours later than an equal amount of insulin modeled using the other models.</p>
+<p>The Walsh model's insulin duration can be set by the user from within the app.  The peak time of the Walsh curve is 100 min at a DIA of 4 hours.  As user adjusts DIA, the peak time will be dynamically adjusted.</p>
+<h3 id="basal-rates">Basal Rates<a class="headerlink" href="#basal-rates" title="Permanent link">⌁</a></h3>
+<p>Enter your basal rates here.  These should match the values entered in your pump. Entering them here will not override your pump’s values, so make sure they match. This is fairly standard stuff that most T1Ds are already familiar with.  However, if you are new to Medtronic pumps...keep in mind that your insulin needs may change slightly when changing pump systems.  If in doubt, try some basal testing to see if your old basal rates may need adjustments with the switch to Medtronic pumps and infusion sets.</p>
+<p>Only one basal pattern may be set in each Loop app.  If you are accustomed to switching between two or more basal patterns frequently, you have two options:</p>
+<ol>
+<li>manually editing the basal profiles in this area each time you change basals, or</li>
+<li>installing a duplicate Loop app for each basal pattern and switching when needed.</li>
+</ol>
+<p>If you choose to have duplicate Loop apps, you will need to use different MAIN_APP_BUNDLE_IDENTIFIERs for each app.  Additionally, you must remember to close  the unused Loop app (double-click iPhone home button and up-swipe Loop app).  Only one Loop app can run successfully at a time.  When you switch to the new Loop app, it may take 5-15 minutes for the Loop to turn green.  The good news is that all your carb entries, insulin doses and such will automatically populate in the new Loop within a relatively short amount of time and the transition is therefore seamless for Loop functionality.  </p>
+<h3 id="carb-ratios">Carb Ratios<a class="headerlink" href="#carb-ratios" title="Permanent link">⌁</a></h3>
+<p>Click the + in the upper right to add carb ratios for various times of day. Loop works best if you have tested and optimized your carb ratio settings for accuracy.</p>
+<p>The first time you setup carb ratios, you will be prompted to allow Loop app access to write/read data in your iPhone's Health App, choose only the selection for <code>write</code> data so that Loop does not inadvertently read third party app's carbohydrate inputs.  See <a href="../../../operation/features/carbs/#third-party-apps">Carb Entries with Third Party apps</a> for more information about this setting.</p>
+<h3 id="insulin-sensitivities">Insulin Sensitivities<a class="headerlink" href="#insulin-sensitivities" title="Permanent link">⌁</a></h3>
+<p>Click the + in the upper right to add insulin sensitivities for various times of day. Loop works best if you have tested and optimized your ISF settings for accuracy.  Insulin sensitivities can change for many reasons including waiting too long to change your infusion set.  Loop will not auto-detect changes in ISF.</p>
+<h3 id="maximum-basal-rate">Maximum Basal Rate<a class="headerlink" href="#maximum-basal-rate" title="Permanent link">⌁</a></h3>
+<p>Maximum basal rate is the maximum temporary basal rate that the Loop is allowed to enact to correct to your target BG range.  See the Use section discussion for <a href="../../../operation/loop/close-loop/">Close Loop</a> for some suggestions regarding appropriate Maximum Basal Rate.</p>
+<div class="admonition info">
+<p>A frequent error for new Loop users is when they set their maximum basal rate here to a value HIGHER than the corresponding setting on the pump.  This will result in an error message that the temp basal failed to enact.  For example, Loop cannot successfully tell the pump to deliver 4 units per hour if the pump’s maximum is set to only 3.8 units per hour.  If you are seeing failures of the Loop to set a high temp basal, check to see if your pump’s maximum basal is at greater than or equal to the Loop’s maximum basal.</p>
+</div>
+<h3 id="maximum-bolus">Maximum Bolus<a class="headerlink" href="#maximum-bolus" title="Permanent link">⌁</a></h3>
+<p>Enter your desired single bolus maximum here.  Same caution applies here...you max bolus on the pump will need to be at least as great as the Loop's max bolus setting.</p>
+<h2 id="services">Services<a class="headerlink" href="#services" title="Permanent link">⌁</a></h2>
+<p>The services listed in this section are <strong>OPTIONAL</strong>.  You can choose to leave them empty and your Loop will still work.  </p>
+<h3 id="nightscout">Nightscout<a class="headerlink" href="#nightscout" title="Permanent link">⌁</a></h3>
+<p>If you have an existing Nightscout site, add the Site URL and API Secret to have your Loop data transmitted to your Nightscout site. If you can’t remember your API Secret, it can be found under Settings, Reveal Config Vars for Heroku sites (or Application Settings, Connection Strings for Azure sites). </p>
+<h4 id="mlab">mLab<a class="headerlink" href="#mlab" title="Permanent link">⌁</a></h4>
+<p>This service integration will add an extra collection to your existing Nightscout mLab for Loop error messages in particular.  The messages stored are the same messages as the Loop user could see on their Loop screen (press the red loop to see your error message), or a  remote parent could see by tapping the Loop pill in Nightscout.  This integration just stores and saves all the error messages throughout time.  As the screen shot below shows, this integration will log the errors from your Loop app and help you troubleshoot if you notice a pattern of problems.</p>
+<p align="center">
+<img src="../img/mlab_errors.jpg" width="500">
+</p>
+
+<p><strong>To get your database name:</strong></p>
+<p>If you have Nightscout, access your mLab.  If you manually built your mLab database, you can login to mLab <a href="http://mlab.com">here</a>.  If you had Heroku automatically deploy your site, you can access mLab from your Heroku dashboard. Find the screen, like shown below, to get your database name.  The database name is the part after the “dsXXXXXXX/”.  In this case, “annat1d”  </p>
+<p align="center">
+<img src="../img/mlab_dbname.jpg" width="500">
+</p>
+
+<p><strong>To obtain your API Key:</strong></p>
+<p>1) Click your username (not the account name) in the upper right-hand corner to open your account user profile</p>
+<p>2) If you are already in the account details page, then click on the row with your username in the Account Users section</p>
+<p>3) If the status is showing as “Data API Access: Disabled” in the “API Key” section, click the “Enable Data API access” button</p>
+<p>4) Once Data API access is enabled, your current API key will be displayed in the “API key”</p>
+<p>If you have any problems with integration, you can try regenerating the API key and that should solve the problem.</p>
+<p align="center">
+<img src="../img/mlab_api.jpg" width="500">
+</p>
+
+<h4 id="loggly">Loggly<a class="headerlink" href="#loggly" title="Permanent link">⌁</a></h4>
+<p><a href="https://loggly.com">Loggly</a> is a free logging service.  If you sign up for an account, you'll need to go under Source Setup and then Customer Tokens.  Copy and paste your customer token into your Loop App settings for Loggly.</p>
+<p align="center">
+<img src="../img/loggly.png" width="500">
+</p>
+
+<h4 id="amplitude">Amplitude<a class="headerlink" href="#amplitude" title="Permanent link">⌁</a></h4>
+<p><a href="https://amplitude.com">Amplitude</a> is a remote event monitoring service and can be used to quickly identify errors and events with Loop.  Amplitude stores the events and allows you to view those events as points in time.  To retrieve the details of the events you will need to look at corresponding mLab data entries to get a complete picture of the issues.  If you sign up for a free account with Amplitude, you will be given an API Key that you can enter here to have Loop integration setup.</p>
+<p align="center">
+<img src="../img/amplitude.png" width="500">
+</p>
+
+<h2 id="pump-setup">Pump Setup<a class="headerlink" href="#pump-setup" title="Permanent link">⌁</a></h2>
+<p>Now that you are done with your Loop's version of your pump settings, you also need to setup your pump similarly.  Generally, the setup of the pump is similar to setting up any pump for non-looping use.  One notable exception: you will need to change those batteries more often with Looping.  Loop will drain pump batteries much faster than regular pump regimes, and Loop failures will increase in frequency as the pump battery gets low.  Roughly, a lithium AAA battery lasts about 15-16 days on an x23 or x54 pump using Loop.</p>
+<p>While not every setting NEEDS to match between Loop and pump, it is safer to have them match in case your Loop fails and you revert back to normal pump use.  You should program the pump settings to match for:</p>
+<ul>
+<li>Carb ratio</li>
+<li>Basal schedule</li>
+<li>ISF</li>
+<li>Max bolus</li>
+<li>Insulin action duration (5 hours is reasonable, this setting won't be used by Loop anyways...Loop uses it's own Insulin curves)</li>
+<li>BG targets</li>
+</ul>
+<p>Basal schedule the one pump setting that is occassionally used by Loop app during normal looping.  When your Loop app decides that the basal rate scheduled in the Loop app is sufficient (i.e., Loop doesn't need to set a temp basal different than the regularly scheduled basal), Loop will cancel any currently running temp basals and let the pump just implement the scheduled basal.  IF your pump's basal schedule doesn't match the Loop's basal schedule, this could result in your insulin delivery being different than Loop expected.  This won't be dangerous if the rates are fairly close, as Loop will read the reservoir volumes to determine actual insulin deliveries and adjust accordingly on the next pump read.</p>
+<div class="admonition info">
+<p><strong>Three settings in particular need to be done, OR ELSE YOUR LOOP WON'T WORK:</strong></br></br>
+    * Set “max temp basal” in pump to at least equal to (or slightly greater) than the Loop’s max basal</br></br>
+    * Set “temp basal type” to “insulin rate (u/h)”</br></br>
+    * Set Remote ID to "on" and enter any random ID (000000 will work). This is found in the pump's Utilities (for x23 continue to Connect Devices, Remotes) and turn ON the Remote Options.</br></p>
+</div>
+<h2 id="rileylink">RileyLink<a class="headerlink" href="#rileylink" title="Permanent link">⌁</a></h2>
+<p>RileyLink is turned on with a little switch on the side of the circuit board (little blue lights will flash briefly and then turn off).  The “on” position is with the switch towards the battery plug.  Now that you have it turned on, go back to your Loop settings and under “Devices”, there will be a connection to turn on.  Turn it on (slide to green) and then click on the arrow to the right of the green slider to open the RileyLink settings area.  Your RileyLink will now have a solid green light showing.  The solid green light indicates a working bluetooth connection with your iPhone. </p>
+<h3 id="device">Device<a class="headerlink" href="#device" title="Permanent link">⌁</a></h3>
+<p>The settings under the Device section are mostly for your information only.  However, you can rename your RileyLink to something more unique.  This is a good idea if you own more than one or are ever in the presence of more than one RileyLink...you will be able to pick out your connection easier amongst a crowd of “RileyLinks”.</p>
+<p>The <code>Signal Strength</code> showing under this area of the menu is the signal strength of the BT with the iPhone.  It is <strong>not</strong> the signal strength of the radio communications with the pump.  The lower the number, the stronger the BT.  As you move the RL and iPhone closer/farther apart, you will be able to see the signal strength change.</p>
+<p align="center">
+<img src="../img/RL_bt.jpg" width="450">
+</p>
+
+<h3 id="pump">Pump<a class="headerlink" href="#pump" title="Permanent link">⌁</a></h3>
+<p>The Pump ID should be automatically filled in from the setting you have already entered previously.  The pump model will say unknown until the RileyLink has tuned communications with the pump.</p>
+<h3 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">⌁</a></h3>
+<ul>
+<li>
+<p><strong>Tune Radio Frequency</strong>  It may take about a minute, but soon you will see a list of frequencies and you can exit back to the main RileyLink settings.  The Command line will now show the frequency (916.xx MHz) in the first command line and the timestamp of the tune.  Now your pump and RileyLink are tuned to talk to each other.  When people suggest "did you retune your RileyLink?" they are referring to this line's command.</p>
+<div class="admonition info">
+<p><strong>A common troubleshooting recommendation is to tune your RL when you have poor pump communications.  Just keep in mind that the Loop code has a function that it will automatically retune in the event of poor pump communications.  Loop does this automatically.  Manually retuning is only useful for impatience purposes.  If Loop has failed longer than 20 minutes, it will have already likely tried a retune...but knock yourself out if you want to try it again manually.</strong></p>
+</div>
+</li>
+<li>
+<p><strong>Change Time</strong>:  Choose “change time” so that pump and Loop times will match exactly.   Under normal circumstances, you do not have to redo this command.  Some older pumps may have an issue between battery changes that they require a rewind, prime, and resetting of clock time.  This is due to the tiny internal capacitor inside the pump (that you cannot change out) no longer holding a charge.  If your pump resets like this (or resets due to any other functional errors), make sure you reset the clock time via RileyLink.  If you are traveling through timezones or dealing with daylight savings time, please read up on <a href="../../../troubleshooting/time-change/#traveling-across-time-zones-and-daylight-savings">how to safely change your pump time</a>.</p>
+<div class="admonition warning">
+<p><strong>Always use the RileyLink to change pump time.  If you fail to set the pump time by using the RileyLink, Loop will not function properly.</strong></p>
+</div>
+</li>
+<li>
+<p><strong>MySentry Pair</strong>:  MySentry Pairing is for x23 and x54 pumps.  Follow the directions as shown in the RileyLink command screen for MySentry.  You do not have to worry about this command if you are using an x15 or x22 model pump, as they do not have MySentry.</p>
+<div class="admonition info">
+<p><strong>If you do not perform a MySentry pairing and have an x23 or x54 pump, your loop will only turn green every 15 minutes.</strong></p>
+</div>
+</li>
+<li>
+<p><strong>Fetch Recent History, Fetch Recent Glucose, Write Glucose History Timestamp, Get Pump Model, and Send Button Press, Read Pump Status, and Read Basal Schedule</strong> are all ways of asking the pump for information you might be interested in.  They are not part of setting up the Loop.  Send Button Press can be useful to see if the communication between the RileyLink and pump is working.  If successful, the screen on the pump will light up and Loop will confirm the button press with a “success” message.  Read Pump Status is also nice quick pump read for reservoir volume, pump battery voltage, and pump status (bolusing or suspending).</p>
+</li>
+</ul>
+<p>CONGRATS...your Loop is ready for use.  But are you?  Have you read through the algorithm?  Have you watched the pump in open loop mode?  Have you read about how to safely do site changes and priming?  Do you know how to troubleshoot your Loop?  Please take the time to read the other sections of this guide as they will help you navigate safe looping practices.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

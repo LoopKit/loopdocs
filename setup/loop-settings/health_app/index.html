@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>Health App - Loop Docs</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link href="../../../css/admonitions.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Loop Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Requirements</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../requirements/pump/">Insulin Pump</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/cgm/">CGM</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/rileylink/">RileyLink</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/computer/">Computer</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/iphone/">iPhone</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/appledev/">Apple Developer</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Install Loop</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../build/installing/">Building App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../build/build_errors/">Build Errors</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../build/code_customization/">Code Customization</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Loop App setup</a>
+    <ul class="dropdown-menu">
+        
+            
+<li class="active">
+    <a href="./">Health App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../settings/">Settings</a>
+</li>
+
+        
+            
+<li >
+    <a href="../services/">Services</a>
+</li>
+
+        
+            
+<li >
+    <a href="../rileylink_menu/">RileyLink menu</a>
+</li>
+
+        
+            
+<li >
+    <a href="../pump/">Pump settings</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Update</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../update/updating/">Updating</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../update/new-version/">New Version Info</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../operation/overview/">App Screens</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">How To Loop</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/loop/open-loop/">Open Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/loop/close-loop/">Closed Loop</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Features</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/features/watch/">Apple Watch</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/bolus/">Bolus</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/carbs/">Carb Entries</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/healthapp/">Health App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/widget/">iPhone widget</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/notifications/">Loop Notifications</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/workout/">Workout Targets</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Algorithm</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/algorithm/overview/">Overview</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/bolus/">Bolus Recommendations</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/prediction/">Glucose Prediction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/temp_basal/">Temp Basal Adjustments</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/green-loop/">Grey Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/mlab_cleanup/">NS display</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/priming/">Priming and Sites</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/rileylink/">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/time-change/">Time Changes</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../nightscout/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/new_user/">Setup New Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/update_user/">Update Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/azure_migration/">Azure to Heroku</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/loop_pill/">Loop Pill</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/ifttt/">IFTTT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/pebble/">Pebble</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/pushover/">Remote Notifications</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/reports/">Reports</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../../build/code_customization/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../settings/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#health-app">Health App</a></li>
+        
+            <li><a href="#blood-glucose-data">Blood Glucose data</a></li>
+        
+            <li><a href="#carb-data">Carb data</a></li>
+        
+            <li><a href="#insulin-data">Insulin data</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h2 id="health-app">Health App<a class="headerlink" href="#health-app" title="Permanent link">⌁</a></h2>
+<p>Loop app uses the iPhone's Health app to store BGs, insulin, and carbohydrate data.  You'll need to setup a few basics to allow Loop access to the Health app.  Additional details about how to use the Health app to interpret your longer term looping data can be found <a href="https://loopkit.github.io/loopdocs/oepration/features/healthapp.md/">here</a> in the Operation section of these docs.</p>
+<h3 id="blood-glucose-data">Blood Glucose data<a class="headerlink" href="#blood-glucose-data" title="Permanent link">⌁</a></h3>
+<p>When you first build the Loop app onto your phone, you will be prompted if you want to allow the Loop app access to read/write Blood Glucose data into the Health app.  You will want to click on the line that says <code>Turn All Categories On</code> and then click on the <code>Allow</code> button.  If you accidentally said no, you will want to go back into the Health app and change that setting.</p>
+<p align="center">
+<img src="../img/healthapp.png" width="550">
+</p>
+
+<p>You will also want to enable your Dexcom app to write to the Health app.  You can find this in your G5 app's Settings, under Health.  Click on the <code>Enable</code> button and then <code>Turn All Categories On</code> so that the toggle for allowing dexcom to write data is now a green color.  By enabling this setting, Loop will display BGs older than three hours in the Loop's main BG chart.</p>
+<p align="center">
+<img src="../img/health_g5.jpg" width="550">
+</p>
+
+<p></br></br></p>
+<h3 id="carb-data">Carb data<a class="headerlink" href="#carb-data" title="Permanent link">⌁</a></h3>
+<p>Later in the configuration of your Loop app, when you first setup carb ratios, you will again be prompted whether to allow Loop app access to read/write to the Health app.</p>
+<p>As shown in the first screenshot above, turn on circled the slider for turning on Loop's ability to Write data.</p>
+<h3 id="insulin-data">Insulin data<a class="headerlink" href="#insulin-data" title="Permanent link">⌁</a></h3>
+<p>New to iOS 11, Loop app will now be able to write insulin delivery to your Health app.  This can provide a nice integration for helping you watching total daily insulin use,</p>
+<p>When all your settings are input correctly, your Health app settings should look like the following:</p>
+<p align="center">
+<img src="../img/healthapp.jpg" width="350">
+</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

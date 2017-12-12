@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>Code Customization - Loop Docs</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link href="../../../css/admonitions.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Loop Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Requirements</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../requirements/pump/">Insulin Pump</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/cgm/">CGM</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/rileylink/">RileyLink</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/computer/">Computer</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/iphone/">iPhone</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../requirements/appledev/">Apple Developer</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Install Loop</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../installing/">Building App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../build_errors/">Build Errors</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Code Customization</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Loop App setup</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../loop-settings/health_app/">Health App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../loop-settings/settings/">Settings</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../loop-settings/services/">Services</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../loop-settings/rileylink_menu/">RileyLink menu</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../loop-settings/pump/">Pump settings</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Update</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../update/updating/">Updating</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../update/new-version/">New Version Info</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../operation/overview/">App Screens</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">How To Loop</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/loop/open-loop/">Open Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/loop/close-loop/">Closed Loop</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Features</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/features/watch/">Apple Watch</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/bolus/">Bolus</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/carbs/">Carb Entries</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/healthapp/">Health App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/widget/">iPhone widget</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/notifications/">Loop Notifications</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/features/workout/">Workout Targets</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Algorithm</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../operation/algorithm/overview/">Overview</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/bolus/">Bolus Recommendations</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/prediction/">Glucose Prediction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../operation/algorithm/temp_basal/">Temp Basal Adjustments</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/green-loop/">Grey Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/mlab_cleanup/">NS display</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/priming/">Priming and Sites</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/rileylink/">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/time-change/">Time Changes</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../nightscout/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/new_user/">Setup New Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/update_user/">Update Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/azure_migration/">Azure to Heroku</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/loop_pill/">Loop Pill</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/ifttt/">IFTTT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/pebble/">Pebble</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/pushover/">Remote Notifications</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/reports/">Reports</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../build_errors/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../../loop-settings/health_app/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#code-customizations">Code Customizations</a></li>
+        
+            <li><a href="#disable-touchid-for-bolus">Disable TouchID for Bolus</a></li>
+        
+            <li><a href="#workout-range-duration">Workout Range Duration</a></li>
+        
+            <li><a href="#default-carb-absorption-times">Default Carb Absorption Times</a></li>
+        
+            <li><a href="#exponential-insulin-curve">Exponential Insulin Curve</a></li>
+        
+            <li><a href="#loop-logo">Loop Logo</a></li>
+        
+            <li><a href="#loop-graph-hours">Loop Graph hours</a></li>
+        
+            <li><a href="#apple-watch-customizations">Apple Watch Customizations</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Permanent link">⌁</a></h2>
+<p>Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.</p>
+<div class="admonition info">
+<p>Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.</p>
+</div>
+<h3 id="disable-touchid-for-bolus">Disable TouchID for Bolus<a class="headerlink" href="#disable-touchid-for-bolus" title="Permanent link">⌁</a></h3>
+<p>If you have TouchID enabled as part of your iPhone security (thumbprint), you will have to confirm each bolus with a thumbprint as part of standard Loop build.  If you would like to disable the TouchID for bolusing (but still keep TouchID for the rest of your normal iPhone use), you can do that by modifying Line 191 in the Loop&gt;&gt;View Controllers&gt;&gt;BolusViewController.swift.  Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
+<p align="center">
+<img src="../img/custom-id.png" width="800">
+</p>
+
+<h3 id="workout-range-duration">Workout Range Duration<a class="headerlink" href="#workout-range-duration" title="Permanent link">⌁</a></h3>
+<p><img style="float: right;" width="200" src="../img/workout_default.png">
+If you’d like more than just the standard 1 or 2 hour duration for the Workout Range, you can add or modify the code to add another time interval or edit the existing ones.</p>
+<p>Go to the Loop&gt;&gt;Extensions&gt;&gt;UIAlertController.swift and modify Line 30.  The default has 1 and 2 hours as shown where the arrow is pointing in the screenshot.  You can edit those to whatever duration you want (in units of hours) and add a duration if you prefer.  If you’d like 1, 2, and 3 hours options...simply edit the numbers in the brackets to read [1, 2, 3]. It is possible to enter less than 1 hour intervals such as 15min, 30 min, 45 min by editing the brackets to read [0.25, 0.5, 0.75].</p>
+<p align="center">
+<img src="../img/workout_add.jpg" width="500">
+</p>
+
+<h3 id="default-carb-absorption-times">Default Carb Absorption Times<a class="headerlink" href="#default-carb-absorption-times" title="Permanent link">⌁</a></h3>
+<p><img style="float: right;" width="200" src="../img/carb_screen.png"></p>
+<p>Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <i>Think Like A Pancreas</i> by Gary Scheiner.  Currently the lollipop icon is set for 2 hours, taco icon for 3 hours, and pizza icon for 4 hours.  </p>
+<p>You can modify these defaults to suit your needs, however modification of these values it not as helpful/common as previous Loop versions.  Ever since Loop v1.4, Loop has included dynamic carb absorption means that Loop will start with your entered carb absoprtion time, mutliply it by 1.5, and then dynamically adjust the absorption time (either shorter or longer) based on the observed BG impacts.  So, typically, most people are finding that modification of the default carb absorption times is no longer necessary.</p>
+<p>If you would like to modify those defaults, you can do so in the Loop&gt;&gt;Managers&gt;&gt;LoopDataManager.swift Lines 63-65.  Note the times are in hours, not minutes, in the code.</p>
+<p align="center">
+<img src="../img/carb_times.png" width="800">
+</p>
+
+<h3 id="exponential-insulin-curve">Exponential Insulin Curve<a class="headerlink" href="#exponential-insulin-curve" title="Permanent link">⌁</a></h3>
+<p>The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, and Fiasp) are defaulted to an insulin duration of 360 minutes...but the peak activity of the various curves differs:</p>
+<ul>
+<li>Rapid-acting adult curve peaks at 75 minutes</li>
+<li>Rapid-acting child curve peaks at 65 minutes</li>
+<li>Fiasp peaks curve peaks at 55 minutes</li>
+</ul>
+<p>If you wish to customize these values, you can adjust them on Lines 20-38 in the Loop&gt;&gt;Models&gt;&gt;Insulin&gt;&gt;ExponentialInsulinModelPreset.swift file</p>
+<p align="center">
+<img src="../img/exponential.png" width="750">
+</p>
+
+<h3 id="loop-logo">Loop Logo<a class="headerlink" href="#loop-logo" title="Permanent link">⌁</a></h3>
+<p>If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file.  Double click the zip file, choose the “ios” folder, and copy the contents of the Appicon.appiconset as shown highlighted below.</p>
+<p align="center">
+<img src="../img/appicon1.jpg" width="450">
+</p>
+
+<p>Now navigate to the corresponding Loop folder as shown below.  Replace the contents of the Appicon.appiconset with your copied images.</p>
+<p align="center">
+<img src="../img/appicon2.jpg" width="450">
+</p>
+
+<p>You can confirm the successful change by looking in Xcode.  You should see your custom logo in the Appicon set now.  You will also likely see a yellow alert that there are “5 unassigned children”.  This alert will not prevent your app from building, it’s simply because the zipfile contained more sizes of images than Loop app uses.  You can just leave the unassigned images as is.</p>
+<p align="center">
+<img src="../img/appicon3.jpg" width="450">
+</p>
+
+<h3 id="loop-graph-hours">Loop Graph hours<a class="headerlink" href="#loop-graph-hours" title="Permanent link">⌁</a></h3>
+<p>If you want the Loop’s graphs to display different time length than the default, you will go to the StatusTableViewController.swift line 157. This code keeps track of how many hours to display in total and how far into the future to display on your graphs. For total hours it does a calculation based upon your screen size and how granular to display between each segment. For how far forward to display, it currently uses your Insulin Action Duration setting to determine this (and if that number is missing for some reason it defaults to 4 hours).</p>
+<p>Please note, using this will make it more difficult to see changes in other charts on your screen (like length of temp basal).</p>
+<p align="center">
+<img src="../img/chart_history.png" width="800">
+</p>
+
+<p>Here are a couple of ways you could modify line 157 based on your specific wants:</p>
+<p>Want double the amount of total hours shown?
+<code>let historyHours = (totalHours * 2) - (dataManager.insulinActionDuration ?? TimeInterval(hours: 4)).hours</code></p>
+<p>Want 1/2 of my Insulin Action Duration to show in the future?
+<code>let historyHours = totalHours - ((dataManager.insulinActionDuration / 2) ?? TimeInterval(hours: 4)).hours</code></p>
+<p>Want 2.5 x the total time and only 2 hours forward within that?
+<code>let historyHours = (totalHours * 2.5) - (TimeInterval(hours: 2)).hours</code></p>
+<h3 id="apple-watch-customizations">Apple Watch Customizations<a class="headerlink" href="#apple-watch-customizations" title="Permanent link">⌁</a></h3>
+<h4 id="recommended-bolus-autofill">Recommended Bolus Autofill<a class="headerlink" href="#recommended-bolus-autofill" title="Permanent link">⌁</a></h4>
+<p>The Apple Watch's default is to autofill to 75% of the recommended bolus.  If you wish, you can customize so that the watch autofills a different percentage. To do this, the multiplier can be changed from 0.75 to a value of your choice. A value of 1 will autofill 100% of the recommended bolus. A value of 0 will autofill 0% of the recommended bolus.   Go to the Watchapp Extension&gt;&gt;Controllers&gt;&gt;BolusInterfaceController.swift. Edit the section of line 97 for your customization.</p>
+<p align="center">
+<img src="../img/watch_bolus.jpg" width="500">
+</p>
+
+<h4 id="adjust-sensitivity-of-digital-crown-for-carb-and-bolus-entry">Adjust sensitivity of digital crown for carb and bolus entry<a class="headerlink" href="#adjust-sensitivity-of-digital-crown-for-carb-and-bolus-entry" title="Permanent link">⌁</a></h4>
+<p>The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension&gt;&gt;Controllers folder.  In AddCarbsInterfaceController.swift edit line 130, and in BolusInterfaceController.swift edit line 161. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.</p>
+<p align="center">
+<img src="../img/sensitivity2.png" width="800">
+</p>
+
+<p align="center">
+<img src="../img/sensitivity1.png" width="800">
+</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
