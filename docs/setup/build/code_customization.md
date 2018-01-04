@@ -37,6 +37,26 @@ If you would like to modify those defaults, you can do so in the Loop>>Managers>
 <img src="../img/carb_times.png" width="800">
 </p>
 
+### Neutral Temp Basals
+
+With the default installation, when Loop calculates that the recommended temp basal matches the basal rate in your Loop basal rate schedule (aka "neutral temp basal") rather than setting a temp basal, Loop will cancel any currently running temp basal and let the pump just run the scheduled basal.  This setting assumes that the Loop's basal schedule matches your pump's basal schedule.  If they do not match, this may result short periods of time where Loop is implementing a different basal rate than Loop had intended to have.
+
+If you would like Loop to instead set neutral temp basals, you can edit lines 159 and 163 in the Loop>>Managers>>DoseMath.swift file to read `return self` as shown in screenshot below.  This will result in Loop setting neutral temp basals when the recommended temp basal matches the Loop's basal schedule.  The potential downsides are slightly more battery consumption, and slightly greater opportunity for temp basal failures as it is a longer pump communication than simply canceling a temp basal.
+
+<p align="center">
+<img src="../img/neutral_temp.png" width="750">
+</p>
+
+### Separate Minimum Bolus Guard
+
+With the default installation, Loop's suspend threshold is not just used to determine when to suspend basals, but also whether to recommend a bolus.  If the BG is below or predicted to go below the suspend threshold, then no bolus will be offered even if carbs were recently entered.
+
+If you would prefer to have a bolus still offered while below the suspend threshold, you can customize the code to make a different minimum BG guard for bolusing.  Edit line 426 in the Loop>>Managers>>DoseMath.swift to read `suspendThreshold: HKQuantity(unit: HKUnit.milligramsPerDeciliter(), doubleValue: 60.0),`  For that example, Loop would offer bolus recommendations when BG (or predicted BG) is greater than 60 mg/dl, even if your suspend threshold was greater, such as 75 mg/dl.  Presumably, this feature would be most useful when eating a meal where you are starting below suspend threshold, yet still want to give a bolus at the time of eating (vs waiting for BGs to rise above suspend threshold and bolusing then).  Be aware that until BGs rise above the suspend threshold, Loop will still provide temp basals of 0 u/hr after the bolus.
+
+<p align="center">
+<img src="../img/min_BG_guard.png" width="750">
+</p>
+
 ### Exponential Insulin Curve
 The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, and Fiasp) are defaulted to an insulin duration of 360 minutes...but the peak activity of the various curves differs:
 
@@ -70,25 +90,17 @@ You can confirm the successful change by looking in Xcode.  You should see your 
 </p>
 
 ### Loop Graph hours
-If you want the Loop’s graphs to display different time length than the default, you will go to the StatusTableViewController.swift line 157. This code keeps track of how many hours to display in total and how far into the future to display on your graphs. For total hours it does a calculation based upon your screen size and how granular to display between each segment. For how far forward to display, it currently uses your Insulin Action Duration setting to determine this (and if that number is missing for some reason it defaults to 4 hours).
-
-Please note, using this will make it more difficult to see changes in other charts on your screen (like length of temp basal).
+If you want the Loop’s graphs to display different time length than the default, you will go to the StatusTableViewController.swift line 192. This code keeps track of how many hours to display in total and how far into the future to display on your graphs. For total hours, Loop calculates the value based upon your screen size and how granular to display between each segment. For how far forward to display, Loop currently uses your Insulin Action Duration setting (and if that number is missing for some reason, the future hours default to 4 hours of display).
 
 <p align="center">
 <img src="../img/chart_history.png" width="800">
 </p>
 
-Here are a couple of ways you could modify line 157 based on your specific wants:
+Line 192 says the length of history hours to display will be the maximum of 1 hour or the value of totalHours minus futureHours.  For an iPhone 7+, this translates to a history display of 1.5 hours.  If you want more history to be shown, it will come at the expense of less future hours showing, just based on display size available.  As an example, the photo on the left below shows the default code display on the iPhone 7+.  The photo on the right is if line 192 is edited to read `let historyHours = max(2.5, totalHours - futureHours)`.  With that modification, the history shows 2.5 hours of previous data, but shorter future projection.  The balance of how much data you'd like displayed at any one time and where you'd like the most info (in the history or in future) is up to you.  Just be aware that by modifying the values, you may lose some displayed data simply because of iPhone screen size.
 
-Want double the amount of total hours shown?
-`let historyHours = (totalHours * 2) - (dataManager.insulinActionDuration ?? TimeInterval(hours: 4)).hours`
-
-Want 1/2 of my Insulin Action Duration to show in the future?
-`let historyHours = totalHours - ((dataManager.insulinActionDuration / 2) ?? TimeInterval(hours: 4)).hours`
-
-Want 2.5 x the total time and only 2 hours forward within that?
-`let historyHours = (totalHours * 2.5) - (TimeInterval(hours: 2)).hours`
-
+<p align="center">
+<img src="../img/chart_comp.jpg" width="600">
+</p>
 
 ### Apple Watch Customizations
 
@@ -100,7 +112,7 @@ The Apple Watch's default is to autofill to 75% of the recommended bolus.  If yo
 </p>
 
 #### Adjust sensitivity of digital crown for carb and bolus entry
-The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension>>Controllers folder.  In AddCarbsInterfaceController.swift edit line 130, and in BolusInterfaceController.swift edit line 161. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.
+The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension>>Controllers folder.  In AddCarbsInterfaceController.swift edit line 190, and in BolusInterfaceController.swift edit line 161. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.
 
 <p align="center">
 <img src="../img/sensitivity2.png" width="800">
