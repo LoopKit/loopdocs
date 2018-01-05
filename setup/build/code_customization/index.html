@@ -486,8 +486,6 @@
         
             <li><a href="#neutral-temp-basals">Neutral Temp Basals</a></li>
         
-            <li><a href="#separate-minimum-bg-bolus-guard">Separate Minimum BG Bolus Guard</a></li>
-        
             <li><a href="#exponential-insulin-curve">Exponential Insulin Curve</a></li>
         
             <li><a href="#loop-logo">Loop Logo</a></li>
@@ -534,13 +532,6 @@ If you’d like more than just the standard 1 or 2 hour duration for the Workout
 <p>If you would like Loop to instead set neutral temp basals, you can edit lines 159 and 163 in the Loop&gt;&gt;Managers&gt;&gt;DoseMath.swift file to read <code>return self</code> as shown in screenshot below.  This will result in Loop setting neutral temp basals when the recommended temp basal matches the Loop's basal schedule.  The potential downsides are slightly more battery consumption, and slightly greater opportunity for temp basal failures as it is a longer pump communication than simply canceling a temp basal.</p>
 <p align="center">
 <img src="../img/neutral_temp.png" width="750">
-</p>
-
-<h3 id="separate-minimum-bg-bolus-guard">Separate Minimum BG Bolus Guard<a class="headerlink" href="#separate-minimum-bg-bolus-guard" title="Permanent link">⌁</a></h3>
-<p>With the default installation, Loop's suspend threshold is not just used to determine when to suspend basals, but also whether to recommend a bolus.  If the BG is below or predicted to go below the suspend threshold, then no bolus will be offered even if carbs were recently entered.</p>
-<p>If you would prefer to have a bolus still offered while below the suspend threshold, you can customize the code to make a different minimum BG guard for bolusing.  Edit line 426 in the Loop&gt;&gt;Managers&gt;&gt;DoseMath.swift to read <code>suspendThreshold: HKQuantity(unit: HKUnit.milligramsPerDeciliter(), doubleValue: 60.0),</code>  For that example, Loop would have a minimum BG bolus guard of 60 mg/dl.  Without this customization, for example, if your suspend threshold was 75 mg/dl but BG was 70 mg/dl, you would not be offered a bolus even with a carb entry.  With this customization, you would be offered a bolus recommendation, and then Loop would still provide temp basals of 0 u/hr after the bolus until BGs got above 75 mg/dl.  Presumably, this feature would be most useful when eating a meal where you are starting below your suspend threshold, yet still want to give a bolus at the time of eating (vs waiting for BGs to rise above suspend threshold and bolusing then).</p>
-<p align="center">
-<img src="../img/min_BG_guard.png" width="750">
 </p>
 
 <h3 id="exponential-insulin-curve">Exponential Insulin Curve<a class="headerlink" href="#exponential-insulin-curve" title="Permanent link">⌁</a></h3>
