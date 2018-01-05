@@ -47,16 +47,6 @@ If you would like Loop to instead set neutral temp basals, you can edit lines 15
 <img src="../img/neutral_temp.png" width="750">
 </p>
 
-### Separate Minimum BG Bolus Guard
-
-With the default installation, Loop's suspend threshold is not just used to determine when to suspend basals, but also whether to recommend a bolus.  If the BG is below or predicted to go below the suspend threshold, then no bolus will be offered even if carbs were recently entered.
-
-If you would prefer to have a bolus still offered while below the suspend threshold, you can customize the code to make a different minimum BG guard for bolusing.  Edit line 426 in the Loop>>Managers>>DoseMath.swift to read `suspendThreshold: HKQuantity(unit: HKUnit.milligramsPerDeciliter(), doubleValue: 60.0),`  For that example, Loop would have a minimum BG bolus guard of 60 mg/dl.  Without this customization, for example, if your suspend threshold was 75 mg/dl but BG was 70 mg/dl, you would not be offered a bolus even with a carb entry.  With this customization, you would be offered a bolus recommendation, and then Loop would still provide temp basals of 0 u/hr after the bolus until BGs got above 75 mg/dl.  Presumably, this feature would be most useful when eating a meal where you are starting below your suspend threshold, yet still want to give a bolus at the time of eating (vs waiting for BGs to rise above suspend threshold and bolusing then).
-
-<p align="center">
-<img src="../img/min_BG_guard.png" width="750">
-</p>
-
 ### Exponential Insulin Curve
 The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, and Fiasp) are defaulted to an insulin duration of 360 minutes...but the peak activity of the various curves differs:
 
