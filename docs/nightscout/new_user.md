@@ -207,6 +207,24 @@ You do not have to enter all the information in the profile if you are using Loo
 </tbody>
 </table>
 
+!!!info ""
+    If you are using Dexcom Share outside the United States, you will need to add one additional variable.
+    </br>
+    <table>
+    <thead>
+    <tr>
+    <th>KEY</th>
+    <th>VALUE</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <th>BRIDGE_SERVER</th>
+    <p alighn="left"><td>EU</td>
+    </tr>
+    </tbody>
+    </table>
+
 * Click on `Open App` in the top right corner of your Heroku site.
 
 <p align="center">
