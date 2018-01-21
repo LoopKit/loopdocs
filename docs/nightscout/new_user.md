@@ -235,7 +235,16 @@ You do not have to enter all the information in the profile if you are using Loo
 
 <p align="center">
 <img src="../img/settings_ns.jpg" width="450">
-</p> 
+</p>
+
+!!!info "Troubleshooting Tip"
+    If you are using Dexcom Share, don't forget to turn on "Sharing" toggle in the G5 app (or Share in the G4 receiver) and have a follower (even if it's yourself)...otherwise Nightscout won't get your BG data through the bridge.
+    <p align="center">
+    <img src="../img/sharing.jpg" width="250">
+    </p>
+</br>
+
+
 
 ## EVENT HISTORY
 
