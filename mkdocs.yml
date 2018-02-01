@@ -24,10 +24,10 @@ pages:
         - 'Build Errors': 'setup/build/build_errors.md'
         - 'Code Customization': 'setup/build/code_customization.md'
     - 'Loop App setup':
-        - 'Settings': 'setup/loop-settings/settings.md'
-        - 'Services': 'setup/loop-settings/services.md'
+        - 'Loop Settings': 'setup/loop-settings/settings.md'
+        - 'Loop Services': 'setup/loop-settings/services.md'
         - 'RileyLink menu': 'setup/loop-settings/rileylink_menu.md'
-        - 'Pump settings': 'setup/loop-settings/pump.md'
+        - 'Pump Setup': 'setup/loop-settings/pump.md'
     - 'Update':
         - 'Updating': 'setup/update/updating.md'
         - 'New Version Info': 'setup/update/new-version.md'
