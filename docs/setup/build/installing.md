@@ -229,11 +229,30 @@ If this is the first time you have installed an app on your iPhone using your De
 <img src="../img/trust_device.jpg" width="750">
 </p>
 
-You can confirm Loop has installed on your phone simply by looking on the iPhone.  Turn it on and check if the Loop app is running.  Brand new Loop apps will usually have a screen open immediately asking about allowing Loop notifications and Health App access.  Updated Loop apps won't usually show any special screen after a successful build.
+!!!warning ""
+    You can confirm Loop has installed on your phone simply by looking on the iPhone.  Brand new Loop apps will have a screen open immediately asking about allowing Loop notifications and Health App access.  Updated Loop apps won't usually show any special screen after a successful build.</br></br>
+    **If you encountered any build errors in Xcode, please review the [Build Errors](build_errors.md) page.**
+
+## Health App
+
+Loop app uses the iPhone's Health app to store BGs, insulin, and carbohydrate data.  Insulin Data is a new feature with iOS 11.  The Health app will be one of the first prompts that you see as your Loop app is built.  The first prompt will ask if you want to allow the Loop app access to read/write Blood Glucose data into the Health app.  You will want to click on the line that says `Turn All Categories On` and then click on the `Allow` button.
+
+(Later in the configuration of your Loop app, when you first setup carb ratios, you will again be prompted whether to allow Loop app access to read/write to the Health app.)
+
+<p align="center">
+<img src="../img/healthapp.png" width="450">
+</p>
+
+You will also want to enable your Dexcom app to write to the Health app.  You can find this in your G5 app's Settings, under Health.  Click on the `Enable` button and then `Turn All Categories On` so that the toggle for allowing dexcom to write data is now a green color.  By enabling this setting, Loop will display BGs older than three hours in the Loop's main BG chart.
+
+<p align="center">
+<img src="../img/health_g5.jpg" width="550">
+</p>
+</br></br>
 
 !!!info "CONGRATS!  YOU JUST INSTALLED LOOP!"
-    While the Loop app has been built...you are not done with these docs yet.  There are some very valuable pieces of information you will need to read in order to get your Loop working (green loop).  Please continue on with the Loop App Setup section of these docs.
+    While the Loop app has been built...you are not done with these docs yet.  There are valuable pieces of information you will need to read in order to get your Loop working (green loop).  Please continue on with the [Loop App Setup section(/setup/loop-settings/settings.md) of these docs.
 
-!!!warning
-    If you encountered any build errors in Xcode, please review the [Build Errors](build_errors.md) page.
+
+
 

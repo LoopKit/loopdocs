@@ -24,7 +24,6 @@ pages:
         - 'Build Errors': 'setup/build/build_errors.md'
         - 'Code Customization': 'setup/build/code_customization.md'
     - 'Loop App setup':
-        - 'Health App': 'setup/loop-settings/health_app.md'
         - 'Settings': 'setup/loop-settings/settings.md'
         - 'Services': 'setup/loop-settings/services.md'
         - 'RileyLink menu': 'setup/loop-settings/rileylink_menu.md'

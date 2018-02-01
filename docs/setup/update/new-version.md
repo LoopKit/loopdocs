@@ -1,22 +1,14 @@
 # Loop v1.5 Features
 
-This is an experimental new page in the docs.  Many people updating are not reading through the docs when they update their Loops, and therefore missing many of the new features (and requirements)...so we are adding a page to try to encourage docs use when updating.
+This is a new page in the docs.  Many people updating are not reading through the docs when they update their Loops, and therefore missing many of the new features (and requirements)...so we are adding a page to try to encourage docs use when updating.
 
-As always though, the [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.5.0) still has great release notes about the features and changes since the previous Loop v1.4  (Note: the first notes about watchOS 4 update appears to be incorrect.  If you use Master branch, you do need at least watchOS 4)
+As always though, the [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.5.0) still has great release notes about the features and changes since the previous Loop v1.4
 
-## Building and OS updates
+## OS updates
 
-If you are using iOS 11.x, you will need to update your Apple watch to watchOS 4 for Loop v1.5 master.  If you don't do that ahead of building Loop v1.5, your Apple watch will not have Loop available.
-
-Loop v1.5 will also required an update to macOS 10.12.6 and Xcode 9, at a minimum.  Because of those updates, some of the old methods of installation (specifically carthage) have caused some build issues in Xcode.  If you originally installed carthage the old way (through carthage.pkg download..like 99% of the people have), you will need to install homebrew now and use two commands in Terminal app prior to building your Loop v1.5.  If you aren't sure how you installed carthage originally...don't fret...it won't hurt anything to run these commands regardless.
-
-Open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  Confirm the homebrew installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and finish the rest of your installation just as always.  If you fail to do these steps, you will likely see this error message when you build.
-
-<p align="center">
-<img src="../img/exit127.jpg" width="350">
-</p>
-
-If you are using iOS 11.2, you will need to update to Xcode 9.2 at a minimum.
+* **macOS Sierra**: macOS 10.12.6 Sierra at a minimum, but High Sierra will work, too.</br>
+* **Xcode**: Xcode 9.2, older versions will not work </br>
+* **iPhone**: iOS 10.3.3 at a minimum, but iOS 11.2.5 is the most current and works well.</br></br>
 
 
 ## Loop Settings
@@ -66,14 +58,14 @@ If you fail to select an insulin model you will see this error "Missing data: Gl
 <img src="../img/HUD.png" width="450">
 </p>
 </br></br>
-You will notice a new logo of a plate with utensils next to the carb entry tool, at the bottom of the Loop main screen.  This icon will remain grey until you go into the Correction Targets area and set the "pre-meal" target range.  The pre-meal target is designed to be used to as an easy pre-bolus before a meal (similar to the "eating-soon" mode discussed in OpenAPS).
+You will notice a new logo of a plate with utensils next to the carb entry tool, at the bottom of the Loop main screen.  This icon will remain grey until you go into the Correction Targets area and set the "pre-meal" target range.  The pre-meal target is designed to be used to as an easy way to get a small amount of insulin delivered before a meal (similar to the "eating-soon" mode discussed in OpenAPS) in order to help control post-meal BG spikes.
 
 <p align="center">
 <img src="../img/premeal_entry.jpg" width="250">
 </p>
 </br></br>
 
-If you set your pre-meal target to 80-80 mg/dl for example, Loop will give you an extra push to get you to the lower target number before the meal.  The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
+If your normal target is 100-100 and pre-meal target is 80-80 mg/dl, for example, Loop will give you an extra push to get you to the lower target number before the meal.  The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
 Loop will adjust any insulin bolus as needed based on the insulin provided during this pre-meal time.
 

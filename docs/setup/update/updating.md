@@ -1,25 +1,30 @@
 # How to Update Loop
 
-When a new version of Loop is released, you can click [HERE](https://github.com/LoopKit/Loop/releases) to read what features or fixes were a part of the new release. 
+When a new version of Loop is released, you can click [HERE](https://github.com/LoopKit/Loop/releases) to read what features or fixes were a part of the new release.
+
+!!!info ""
+    The process to update is very similar to the original building of Loop app, except you get to skip several of the first steps.  The basic steps are:
+
+    * Update iOS, macOS, Xcode, or watchOS as needed
+    * Download new Loop source code
+    * Change the MAIN_APP_BUNDLE_IDENTIFIER
+    * Save project
+    * Add any customizations
+    * Sign all four targets
+    * Build app
 
 ### Update Apple devices
 
-!!!info "IMPORTANT INFO, PLEASE READ"
-    Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app; your Apple Developer license agreement, your iPhone's iOS, your computer's macOS, your Xcode app, and/or your watchOS.  <u>If you don't install the updates, you will run into build problems.</u>  You can check for macOS and Xcode updates using the App Store link under the apple logo in your computer display's upper left corner.</br></br>
-        * [Check your Apple developer account](http://developer.apple.com) and accept any updated license agreements.</br>
-        * Update to macOS Sierra on your Apple.  Currently you will need macOS 10.12.6 at a minimum.</br>
-        * Update Xcode </br>
-        * Update your iPhone (iOS 10.3.3 at least), or if you use an Apple watch you'll need iOS 11 and watchOS 4.</br></br>
+Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app; your Apple Developer license agreement, your iPhone's iOS, your computer's macOS, your Xcode app, and/or your watchOS.  <u>If you miss some of the updates, you may run into build problems.</u>  You can check for macOS and Xcode updates using the App Store link under the apple logo in your computer display's upper left corner.  Check below to make sure your equipment is running the minimum versions of the programs.</br></br>
 
-!!!warning "Special note about upgrading to Loop v1.5 for existing Loopers"
-    If you are an existing Looper encountering this error message below while trying to update to Loop v1.5, please open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  Confirm the homebrew installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.  This error is a legacy for people who installed carthage using the carthage.pkg option (the primary installation method on the old docs)...installing homebrew with these directions will resolve the conflict between carthage installations.
-    <p align="center">
-    <img src="../img/exit127.jpg" width="350">
-    </p>
+* **macOS Sierra**: macOS 10.12.6 Sierra at a minimum, but High Sierra will work, too.</br>
+* **Xcode**: Xcode 9.2 (if using iOS 11 or newer), Xcode 9 or newer (if using iOS 10.3.3) </br>
+* **iPhone**: iOS 10.3.3 at a minimum, but iOS 11.2.5 is the most current and works well.</br></br>
+
 
 ### Download new Loop source code
 
-You can use these links to download new versions of the Loop source code:
+You can use these links to download new versions of the Loop source code.  These links will always provide the most recent version of Loop:
 </br></br>
 <p align="center">
 [Loop: Master branch source code](https://github.com/LoopKit/Loop/archive/master.zip)
@@ -43,11 +48,11 @@ FYI: The Loop source code resides in [GitHub](https://github.com/LoopKit/Loop) w
 
 ### Change Main App Bundle ID and Build
 
-**<u>Follow the guide for installation as you did before, beginning [HERE](/setup/build/installing.md#installing-loop-using-xcode) to navigate to your newly downloaded source code.</u>**
+**<u>You can follow the guide for installation as you did before, beginning [HERE](/setup/build/installing.md#installing-loop-using-xcode) to navigate to your newly downloaded source code.</u>**
 
-The most common error in updating a Loop app is to use a different MAIN_APP_BUNDLE_IDENTIFIER than you used in your original Loop build.  If you use a different MAIN_APP_BUNDLE_IDENTIFIER, your iPhone will have a brand new second Loop app and none of the settings from the original Loop app will carry over.  While some people use this technique intentionally, you will have to be aware that you cannot successfully loop with two different Loop apps actively running (opened) at the same time on the same iPhone.  So, you will have to make sure you double-tap the home button and up-swipe to close out any unused Loop apps that you don't need running.
+**The most common error in updating a Loop app is to use a different MAIN_APP_BUNDLE_IDENTIFIER than you used in your original Loop build.**  If you use a different MAIN_APP_BUNDLE_IDENTIFIER, your iPhone will have a brand new second Loop app and none of the settings from the original Loop app will carry over.  While some people use this technique intentionally, you will have to be aware that you cannot successfully loop with two different Loop apps actively running (opened) at the same time on the same iPhone.  So, you will have to make sure you double-tap the home button and up-swipe to close out any unused Loop apps that you don't need running.
 
-If you **use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation**, all your old settings will be preserved and you will not have to re-enter them.  If you can't remember what you used on your current Loop app, you can open your old Loop folder on your computer, click on the `Loop.xcconfig` file, and check what you used.  Alternatively, open your Loop settings, open the Issue Report and look for a line titled `appGroupName` that is within the RileyLinkDevice section of the Issue Report.  Your MAIN_APP_BUNDLE_IDENTIFIER is shown within that area.  **Don't forget to save your project after changing the MAIN_APP_BUNDLE_IDENTIFIER.**
+If you **use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation**, all your old settings will be preserved and you will not have to re-enter them.  If you can't remember what you used on your current Loop app, you can open your old Loop folder on your computer, click on the `Loop.xcconfig` file, and check what you used.  Alternatively, open your Loop settings, open the Issue Report and look for a line titled `appGroupName` that is within the RileyLinkDevice section of the Issue Report.  Your MAIN_APP_BUNDLE_IDENTIFIER is shown within that area. 
 
 <p align="center">
 <img src="../img/app_group_name2.png" width="750">
@@ -57,9 +62,21 @@ If you **use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first instal
 <img src="../img/app_group_name.PNG" width="400">
 </p>
 
-Add or redo any customizations, if needed.  These will not be carried over automatically from the old app.
+###  Save Project
 
-Sign the four targets and rebuild.  If you get any build errors, please check [this section](/setup/build/build_errors.md) for fixes.
+**Don't forget to save your project after changing the MAIN_APP_BUNDLE_IDENTIFIER.**  Saving the project forces Xcode to update the individual bundle identifiers that are associated with the four targets.  If you don't save the project and Xcode doesn't update the bundle identifiers, you will get a build error.  SO...please remember to save project after you change your MAIN_APP_BUNDLE_IDENTIFIER.
+
+### Add customizations
+
+Add or redo any customizations, if needed.  These will not be carried over automatically from the old app.  Be sure to read up in the [code customizations section](/setup/build/code_customization.md) before building, as there may be new customizations available since the previous build.
+
+### Sign Targets and Build
+
+Sign the four targets and rebuild.  Nothing is changed here.  Just make sure to pick your paid developer team, if you have one.
+
+### Build Errors
+
+**If you get any build errors, please check [this section](/setup/build/build_errors.md) for fixes.**
 
 
 
