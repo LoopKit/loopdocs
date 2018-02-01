@@ -10,7 +10,7 @@ Normally, we would start by explaining the displays on an application, but your 
 
 ## Loop Version
 
-The first graphic at the top of the Loop settings display shows the version of the software, e.g.,  Loop v1.3 in this example.  This can be helpful when working with other users of the software to know what version you are running.
+The first graphic at the top of the Loop settings display shows the version of the software, e.g.,  Loop v1.5 in this example.  This can be helpful when working with other users of the software to know what version you are running.
 
 <p align="center">
 <img src="../img/loop_version.jpg" width="400">
