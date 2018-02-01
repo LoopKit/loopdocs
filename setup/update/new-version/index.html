@@ -156,19 +156,13 @@
         
             
 <li >
-    <a href="../../loop-settings/health_app/">Health App</a>
+    <a href="../../loop-settings/settings/">Loop Settings</a>
 </li>
 
         
             
 <li >
-    <a href="../../loop-settings/settings/">Settings</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../loop-settings/services/">Services</a>
+    <a href="../../loop-settings/services/">Loop Services</a>
 </li>
 
         
@@ -180,7 +174,7 @@
         
             
 <li >
-    <a href="../../loop-settings/pump/">Pump settings</a>
+    <a href="../../loop-settings/pump/">Pump Setup</a>
 </li>
 
         
@@ -478,7 +472,7 @@
     
         <li class="main active"><a href="#loop-v15-features">Loop v1.5 Features</a></li>
         
-            <li><a href="#building-and-os-updates">Building and OS updates</a></li>
+            <li><a href="#os-updates">OS updates</a></li>
         
             <li><a href="#loop-settings">Loop Settings</a></li>
         
@@ -490,17 +484,14 @@
             <div class="col-md-9" role="main">
 
 <h1 id="loop-v15-features">Loop v1.5 Features<a class="headerlink" href="#loop-v15-features" title="Permanent link">⌁</a></h1>
-<p>This is an experimental new page in the docs.  Many people updating are not reading through the docs when they update their Loops, and therefore missing many of the new features (and requirements)...so we are adding a page to try to encourage docs use when updating.</p>
-<p>As always though, the <a href="https://github.com/LoopKit/Loop/releases/tag/v1.5.0">GitHub page</a> still has great release notes about the features and changes since the previous Loop v1.4  (Note: the first notes about watchOS 4 update appears to be incorrect.  If you use Master branch, you do need at least watchOS 4)</p>
-<h2 id="building-and-os-updates">Building and OS updates<a class="headerlink" href="#building-and-os-updates" title="Permanent link">⌁</a></h2>
-<p>If you are using iOS 11.x, you will need to update your Apple watch to watchOS 4 for Loop v1.5 master.  If you don't do that ahead of building Loop v1.5, your Apple watch will not have Loop available.</p>
-<p>Loop v1.5 will also required an update to macOS 10.12.6 and Xcode 9, at a minimum.  Because of those updates, some of the old methods of installation (specifically carthage) have caused some build issues in Xcode.  If you originally installed carthage the old way (through carthage.pkg download..like 99% of the people have), you will need to install homebrew now and use two commands in Terminal app prior to building your Loop v1.5.  If you aren't sure how you installed carthage originally...don't fret...it won't hurt anything to run these commands regardless.</p>
-<p>Open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm the homebrew installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and finish the rest of your installation just as always.  If you fail to do these steps, you will likely see this error message when you build.</p>
-<p align="center">
-<img src="../img/exit127.jpg" width="350">
-</p>
-
-<p>If you are using iOS 11.2, you will need to update to Xcode 9.2 at a minimum.</p>
+<p>This is a new page in the docs.  Many people updating are not reading through the docs when they update their Loops, and therefore missing many of the new features (and requirements)...so we are adding a page to try to encourage docs use when updating.</p>
+<p>As always though, the <a href="https://github.com/LoopKit/Loop/releases/tag/v1.5.0">GitHub page</a> still has great release notes about the features and changes since the previous Loop v1.4</p>
+<h2 id="os-updates">OS updates<a class="headerlink" href="#os-updates" title="Permanent link">⌁</a></h2>
+<ul>
+<li><strong>macOS Sierra</strong>: macOS 10.12.6 Sierra at a minimum, but High Sierra will work, too.</br></li>
+<li><strong>Xcode</strong>: Xcode 9.2, older versions will not work </br></li>
+<li><strong>iPhone</strong>: iOS 10.3.3 at a minimum, but iOS 11.2.5 is the most current and works well.</br></br></li>
+</ul>
 <h2 id="loop-settings">Loop Settings<a class="headerlink" href="#loop-settings" title="Permanent link">⌁</a></h2>
 <p>There are name changes to a couple old settings, and a new setting has been added.</p>
 <p align="center">
@@ -536,13 +527,13 @@
 </p>
 
 <p></br></br>
-You will notice a new logo of a plate with utensils next to the carb entry tool, at the bottom of the Loop main screen.  This icon will remain grey until you go into the Correction Targets area and set the "pre-meal" target range.  The pre-meal target is designed to be used to as an easy pre-bolus before a meal (similar to the "eating-soon" mode discussed in OpenAPS).</p>
+You will notice a new logo of a plate with utensils next to the carb entry tool, at the bottom of the Loop main screen.  This icon will remain grey until you go into the Correction Targets area and set the "pre-meal" target range.  The pre-meal target is designed to be used to as an easy way to get a small amount of insulin delivered before a meal (similar to the "eating-soon" mode discussed in OpenAPS) in order to help control post-meal BG spikes.</p>
 <p align="center">
 <img src="../img/premeal_entry.jpg" width="250">
 </p>
 
 <p></br></br></p>
-<p>If you set your pre-meal target to 80-80 mg/dl for example, Loop will give you an extra push to get you to the lower target number before the meal.  The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.</p>
+<p>If your normal target is 100-100 and pre-meal target is 80-80 mg/dl, for example, Loop will give you an extra push to get you to the lower target number before the meal.  The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.</p>
 <p>Loop will adjust any insulin bolus as needed based on the insulin provided during this pre-meal time.</p>
 <hr />
 <h2 id="loop-use">Loop Use<a class="headerlink" href="#loop-use" title="Permanent link">⌁</a></h2>

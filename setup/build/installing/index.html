@@ -156,19 +156,13 @@
         
             
 <li >
-    <a href="../../loop-settings/health_app/">Health App</a>
+    <a href="../../loop-settings/settings/">Loop Settings</a>
 </li>
 
         
             
 <li >
-    <a href="../../loop-settings/settings/">Settings</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../loop-settings/services/">Services</a>
+    <a href="../../loop-settings/services/">Loop Services</a>
 </li>
 
         
@@ -180,7 +174,7 @@
         
             
 <li >
-    <a href="../../loop-settings/pump/">Pump settings</a>
+    <a href="../../loop-settings/pump/">Pump Setup</a>
 </li>
 
         
@@ -488,6 +482,8 @@
         
             <li><a href="#installing-loop-using-xcode">Installing Loop using Xcode</a></li>
         
+            <li><a href="#health-app">Health App</a></li>
+        
     
     </ul>
 </div></div>
@@ -689,14 +685,26 @@ If you want any custom configurations to your Loop or Watch apps, now is the tim
 <img src="../img/trust_device.jpg" width="750">
 </p>
 
-<p>You can confirm Loop has installed on your phone simply by looking on the iPhone.  Turn it on and check if the Loop app is running.  Brand new Loop apps will usually have a screen open immediately asking about allowing Loop notifications and Health App access.  Updated Loop apps won't usually show any special screen after a successful build.</p>
+<div class="admonition warning">
+<p>You can confirm Loop has installed on your phone simply by looking on the iPhone.  Brand new Loop apps will have a screen open immediately asking about allowing Loop notifications and Health App access.  Updated Loop apps won't usually show any special screen after a successful build.</br></br>
+<strong>If you encountered any build errors in Xcode, please review the <a href="../build_errors/">Build Errors</a> page.</strong></p>
+</div>
+<h2 id="health-app">Health App<a class="headerlink" href="#health-app" title="Permanent link">⌁</a></h2>
+<p>Loop app uses the iPhone's Health app to store BGs, insulin, and carbohydrate data.  Insulin Data is a new feature with iOS 11.  The Health app will be one of the first prompts that you see as your Loop app is built.  The first prompt will ask if you want to allow the Loop app access to read/write Blood Glucose data into the Health app.  You will want to click on the line that says <code>Turn All Categories On</code> and then click on the <code>Allow</code> button.</p>
+<p>(Later in the configuration of your Loop app, when you first setup carb ratios, you will again be prompted whether to allow Loop app access to read/write to the Health app.)</p>
+<p align="center">
+<img src="../img/healthapp.png" width="450">
+</p>
+
+<p>You will also want to enable your Dexcom app to write to the Health app.  You can find this in your G5 app's Settings, under Health.  Click on the <code>Enable</code> button and then <code>Turn All Categories On</code> so that the toggle for allowing dexcom to write data is now a green color.  By enabling this setting, Loop will display BGs older than three hours in the Loop's main BG chart.</p>
+<p align="center">
+<img src="../img/health_g5.jpg" width="550">
+</p>
+
+<p></br></br></p>
 <div class="admonition info">
 <p class="admonition-title">CONGRATS!  YOU JUST INSTALLED LOOP!</p>
-<p>While the Loop app has been built...you are not done with these docs yet.  There are some very valuable pieces of information you will need to read in order to get your Loop working (green loop).  Please continue on with the Loop App Setup section of these docs.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If you encountered any build errors in Xcode, please review the <a href="../build_errors/">Build Errors</a> page.</p>
+<p>While the Loop app has been built...you are not done with these docs yet.  There are valuable pieces of information you will need to read in order to get your Loop working (green loop).  Please continue on with the [Loop App Setup section(/setup/loop-settings/settings.md) of these docs.</p>
 </div></div>
         </div>
 
