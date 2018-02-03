@@ -12,7 +12,7 @@ status screen of Loop.
 
 <dl>
 <dt>Insulin Action Duration</dt><dd>A configuration value that provides an estimate of how long insulin stays active after delivery.</dd>
-<dt>Target Range</dt>
+<dt>Correction Range</dt>
 <dd>This is the low and high BG values that Loop will attempt to keep you between.</dd>
 <dt>Predicted Glucose</dt>
 <dd>Loop makes a prediction of glucose values out for a length of time equal to your Insulin Action Duration.</dd>
@@ -20,7 +20,7 @@ status screen of Loop.
 <dd>The last value of the prediction.</dd>
 <dt>Minimum BG</dt>
 <dd>The lowest glucose value at any point in time within the prediction.</dd>
-<dt>Minimum BG Guard</dt>
+<dt>Suspend Threshold</dt>
 <dd>A configuration value below which Loop will suspend all insulin delivery.<dd>
 <dt>CGM Data</dt>
 <dd>Actual glucose measurements made by a continuous glucose monitor.<dd>
