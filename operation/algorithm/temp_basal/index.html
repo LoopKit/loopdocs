@@ -472,13 +472,13 @@
     
         <li class="main active"><a href="#temp-basal-adjustments">Temp Basal Adjustments</a></li>
         
-            <li><a href="#eventual-bg-above-target-range">Eventual BG Above Target Range</a></li>
+            <li><a href="#eventual-bg-above-correction-range">Eventual BG Above Correction Range</a></li>
         
-            <li><a href="#eventual-bg-below-target-range">Eventual BG Below Target Range</a></li>
+            <li><a href="#eventual-bg-below-correction-range">Eventual BG Below Correction Range</a></li>
         
             <li><a href="#temporary-excursion-below-range">Temporary Excursion Below Range</a></li>
         
-            <li><a href="#minimum-bg-below-minimum-bg-guard">Minimum BG Below Minimum BG Guard</a></li>
+            <li><a href="#minimum-bg-below-suspend-threshold">Minimum BG Below Suspend Threshold</a></li>
         
     
     </ul>
@@ -487,18 +487,18 @@
 
 <h1 id="temp-basal-adjustments">Temp Basal Adjustments<a class="headerlink" href="#temp-basal-adjustments" title="Permanent link">⌁</a></h1>
 <p>If blood glucose is predicted to stray outside of the desired target range, Loop will adjust the basal rate temporarily in an attempt to keep actual blood glucose in range.  To illustrate how it does this, we’ll go through a few examples.</p>
-<h3 id="eventual-bg-above-target-range">Eventual BG Above Target Range<a class="headerlink" href="#eventual-bg-above-target-range" title="Permanent link">⌁</a></h3>
+<h3 id="eventual-bg-above-correction-range">Eventual BG Above Correction Range<a class="headerlink" href="#eventual-bg-above-correction-range" title="Permanent link">⌁</a></h3>
 <p><img alt="Eventual BG Above Range" src="../img/eventual_bg_above_range.png" /></p>
-<p>When eventual BG is predicted to go above the current target range, Loop will calculate a delta from eventual bg to the midpoint of the target range.  Using the currently scheduled insulin sensitivity factor, loop calculates a temporary basal rate above your currently scheduled basal rate that would deliver, over 30 minutes, enough insulin to bring glucose levels back into range, capped at the max basal rate.</p>
-<h3 id="eventual-bg-below-target-range">Eventual BG Below Target Range<a class="headerlink" href="#eventual-bg-below-target-range" title="Permanent link">⌁</a></h3>
+<p>When eventual BG is predicted to go above the current correction range, Loop will calculate a delta from eventual bg to the midpoint of the correction range.  Using the currently scheduled insulin sensitivity factor, loop calculates a temporary basal rate above your currently scheduled basal rate that would deliver, over 30 minutes, enough insulin to bring glucose levels back into range, capped at the max basal rate.</p>
+<h3 id="eventual-bg-below-correction-range">Eventual BG Below Correction Range<a class="headerlink" href="#eventual-bg-below-correction-range" title="Permanent link">⌁</a></h3>
 <p><img alt="Eventual BG Below Range" src="../img/eventual_bg_below_range.png" /></p>
-<p>When eventual BG is predicted to go below the current target range, Loop will calculate a delta from eventual bg to the midpoint of the target range.  Using the currently scheduled insulin sensitivity factor, loop calculates a temporary basal rate below your currently scheduled basal rate that would reduce insulin delivery, over 30 minutes, enough to bring glucose levels back into range.  It will reduce delivery to zero if needed.</p>
+<p>When eventual BG is predicted to go below the current correction range, Loop will calculate a delta from eventual bg to the midpoint of the correction range.  Using the currently scheduled insulin sensitivity factor, loop calculates a temporary basal rate below your currently scheduled basal rate that would reduce insulin delivery, over 30 minutes, enough to bring glucose levels back into range.  It will reduce delivery to zero if needed.</p>
 <h3 id="temporary-excursion-below-range">Temporary Excursion Below Range<a class="headerlink" href="#temporary-excursion-below-range" title="Permanent link">⌁</a></h3>
 <p><img alt="Eventual BG Below Range" src="../img/temporary_excursion_below_range.png" /></p>
-<p>If the prediction has a temporary excursion below range, but Eventual BG is in range, Loop will revert to using your normal basal schedule, as long as Minimum BG is above the guard.</p>
-<h3 id="minimum-bg-below-minimum-bg-guard">Minimum BG Below Minimum BG Guard<a class="headerlink" href="#minimum-bg-below-minimum-bg-guard" title="Permanent link">⌁</a></h3>
+<p>If the prediction has a temporary excursion below range, but Eventual BG is in range, Loop will revert to using your normal basal schedule, as long as Minimum BG is above the suspend threshold.</p>
+<h3 id="minimum-bg-below-suspend-threshold">Minimum BG Below Suspend Threshold<a class="headerlink" href="#minimum-bg-below-suspend-threshold" title="Permanent link">⌁</a></h3>
 <p><img alt="Min BG Below Guard" src="../img/min_bg_below_guard.png" /></p>
-<p>If Minimum BG drops below Minimum BG Guard, Loop will zero temp your pump regardless of where Eventual BG is.</p></div>
+<p>If Minimum BG drops below Suspend Threshold, Loop will zero temp your pump regardless of where Eventual BG is.</p></div>
         </div>
 
         <footer class="col-md-12">
