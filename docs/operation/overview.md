@@ -146,7 +146,13 @@ Loop’s default is to use actual reservoir volumes for determining the insulin 
 <img src="../img/carb_graph.jpg" width="400">
 </p>
 
-The Carbohydrate chart displays the carbs used by Loop to predict BG changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit any previous entries through that screen.  Please read the [Carb Entries page](https://loopkit.github.io/loopdocs/operation/features/carbs/) for more information about editing carb entries and using the Insulin Counteraction Effects information to help fine-tune your looping.
+The Carbohydrate chart displays the carbs used by Loop to predict BG changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the [Carb Entries page](https://loopkit.github.io/loopdocs/operation/features/carbs/) for more information about editing carb entries.
+
+<p align="center">
+<img src="../features/img/carb_edit.png" width="300">
+</p>
+
+For more information about the Insulin Counteraction Effects information found in the Carb History, please see here (to do: insert link).
 
 ## Tool Bar
 

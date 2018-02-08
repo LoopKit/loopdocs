@@ -69,9 +69,3 @@ Clicking on the Carbohydrate chart in the Loop's main status screen will open th
 ## Third Party Apps
 If you use a 3rd party app, such as My Fitness Pal, to enter and track carbs and that app also stores the carb values in HealthKit, Loop will read those values from Apple HealthKit and display and use them in calculating temp basal rates. Entries from 3rd party apps can not be removed from within Loop.  You will have to edit them in the third party app, or from the Health app. Because of this potential for confusion, it is recommended to turn off Loop's ability to read other apps' carbohydrate data from HealthKit. You are asked if you want to enable this when Loop is first installed. After installation, you can also go to the Settings App -> Privacy -> Health -> Loop and turn off `Read Data for Carbohydrates`.
 
-## Avoid Double Carb Entries
-
-!!!info "Be Aware"
-    When you press `Save` for a carb entry, Loop will consider that carb entry saved and use it for calculating temp basals and recommended boluses.  Be cautious about repeated attempts to enter the same meal...Loop will continue to save the carb entries UNLESS you push cancel on the carb entry screen.</br></br>
-    **Simply canceling a bolus does not cancel the carb entry.**</br></br>
-    If you have accidentally made multiple entries for the same carbs, click on the Carbs Chart in the main Loop display and you can delete the redundent carb entries by swiping left on the entries.
