@@ -32,18 +32,18 @@ pages:
         - 'Updating': 'setup/update/updating.md'
         - 'New Version Info': 'setup/update/new-version.md'
 - Operation:
-    - 'App Screens': 'operation/overview.md'
-    - 'How To Loop':
+    - 'Loop Displays': 'operation/overview.md'
+    - How to Use Loop App:
+        - 'Carb Entries': 'operation/features/carbs.md'
+        - 'Bolus': 'operation/features/bolus.md'
+        - 'Workout Targets': 'operation/features/workout.md'
+        - 'Apple Watch': 'operation/features/watch.md'
+        - 'iPhone widget': 'operation/features/widget.md'
+        - 'Health App': 'operation/features/healthapp.md'
+        - 'Loop Notifications': 'operation/features/notifications.md'
+    - 'Looping Tips':
         - 'Open Loop': 'operation/loop/open-loop.md'
         - 'Closed Loop': 'operation/loop/close-loop.md'
-    - Features:
-        - 'Apple Watch': 'operation/features/watch.md'
-        - 'Bolus': 'operation/features/bolus.md'
-        - 'Carb Entries': 'operation/features/carbs.md'
-        - 'Health App': 'operation/features/healthapp.md'
-        - 'iPhone widget': 'operation/features/widget.md'
-        - 'Loop Notifications': 'operation/features/notifications.md'
-        - 'Workout Targets': 'operation/features/workout.md'
     - Algorithm:
         - 'Overview': 'operation/algorithm/overview.md'
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
