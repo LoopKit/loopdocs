@@ -214,39 +214,18 @@
                     
                         
 <li >
-    <a href="../../overview/">App Screens</a>
+    <a href="../../overview/">Loop Displays</a>
 </li>
 
                     
                         
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">How To Loop</a>
+    <a tabindex="-1" href="">How to Use Loop App</a>
     <ul class="dropdown-menu">
         
             
 <li >
-    <a href="../../loop/open-loop/">Open Loop</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../loop/close-loop/">Closed Loop</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Features</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../watch/">Apple Watch</a>
+    <a href="../carbs/">Carb Entries</a>
 </li>
 
         
@@ -257,14 +236,14 @@
 
         
             
-<li >
-    <a href="../carbs/">Carb Entries</a>
+<li class="active">
+    <a href="./">Workout Targets</a>
 </li>
 
         
             
 <li >
-    <a href="../healthapp/">Health App</a>
+    <a href="../watch/">Apple Watch</a>
 </li>
 
         
@@ -276,13 +255,34 @@
         
             
 <li >
-    <a href="../notifications/">Loop Notifications</a>
+    <a href="../healthapp/">Health App</a>
 </li>
 
         
             
-<li class="active">
-    <a href="./">Workout Targets</a>
+<li >
+    <a href="../notifications/">Loop Notifications</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Looping Tips</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../loop/open-loop/">Open Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../loop/close-loop/">Closed Loop</a>
 </li>
 
         
@@ -451,12 +451,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../notifications/">
+                    <a rel="next" href="../bolus/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../../algorithm/overview/">
+                    <a rel="prev" href="../watch/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -470,22 +470,27 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#workout-mode">Workout mode</a></li>
+        <li class="main active"><a href="#workout-targets">Workout Targets</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="workout-mode">Workout mode<a class="headerlink" href="#workout-mode" title="Permanent link">⌁</a></h1>
+<h1 id="workout-targets">Workout Targets<a class="headerlink" href="#workout-targets" title="Permanent link">⌁</a></h1>
 <p align="center">
 <img src="../img/workout_screen.png" width="200">
 </p>
 
-<p>Workout mode enables an alternate BG target range from what would normally be scheduled at the time. The alternate target can be enabled for 1 hour, 2 hours, or indefinitely. If you want more options for duration, you can customize them during your Loop build.</p>
-<p>Some people use Workout mode to set temporarily higher targets ahead of exercise that would normally cause BG to drop.  This should give the user less chance of going low during exercise.</p>
-<p>Another use for temporary targets is to prebolus for a meal by setting lower targets for an hour before a meal is expected.  Loop will use temp basals matched to the temporary lower target, and then before the meal is entered/bolused, the targets are adjusted back to normal.  This will leave the user with some active IOB going into the meal and help control post-prandial BG spikes.  Loop will account for the IOB when it makes the recommendation for the meal bolus (just remember to have the BG targets set back to normal before entering the meal carbs).</p>
-<p>Finally, using a lower target for an hour or two (such as 80-80 mg/dl) may help in situations where you are “stuck” on a high BG from some temporary situation such as a bad carb count, slower food absorption, or anxiety from a short-term situation (work meeting, public presentation).</p></div>
+<p>Workout mode enables a temporary override target from what would normally be scheduled. The default durations for the workout mode override target are 1 hour, 2 hours, or indefinitely. If you want more options for duration, you can <a href="https://loopkit.github.io/loopdocs/setup/build/code_customization/#workout-range-duration">customize them during your Loop build</a>.</p>
+<p>Workout mode is used to temporarily set higher BG targets ahead of exercise that would normally cause BG to drop.  This should give the user less chance of going low during exercise because Loop will be less aggressive on setting high temp basals.  The success of the workout targets to control/prevent exercise-related BG drops will depend on the type, duration, and intensity of the activity.  Generally the more intense the workout, the farther in advance you would want to set a workout target.</p>
+<p>If you find that workout targets alone aren't sufficient to prevent exercise related lows, try to implement ways of decreasing the IOB you are carrying into the workout:</p>
+<ul>
+<li>Set the workout target farther in advance of workout activity,</li>
+<li>Set the workout target higher than previously set, and/or</li>
+<li>Decrease meal boluses prior to workout.</li>
+</ul>
+<p>If you are the type to experience lows after workouts due to increased insulin sensitivity, you may want to extend your workout override target for a period of time after workout to help prevent lows. </p></div>
         </div>
 
         <footer class="col-md-12">
