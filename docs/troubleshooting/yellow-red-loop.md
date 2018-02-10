@@ -45,8 +45,8 @@ If your Loop turns yellow or red, easiest to start by checking the timestamps on
 
 BG troubleshooting steps:
 
-* Verify you have enabled the correct [CGM Selection](/setup/loop-settings/settings.md#cgm-selection) in Loop settings; it is easy to accidentally change the selection while scrolling through the settings page
-* For G5, verify your [transmitter ID](/setup/loop-settings/settings.md#cgm-selection) is set correctly in Loop settings
+* Verify you have enabled the correct [CGM Selection](loopdocs/setup/loop-settings/settings.md#cgm-selection) in Loop settings; it is easy to accidentally change the selection while scrolling through the settings page
+* For G5, verify your [transmitter ID](loopdocs/setup/loop-settings/settings.md#cgm-selection) is set correctly in Loop settings
 * For G4, verify the Dexcom Share app is running on your phone
 * **Fetch Recent Glucose** command in RL only works for Medtronic CGM users, by the way...so don't expect that command to solve Dexcom CGM issues
 * If your local CGM is working fine on the Dexcom app, but Loop isn't reading it:
@@ -132,7 +132,7 @@ Sometimes the RilleyLink and iPhone fail to communicate via BT.  You need to det
 * Is your lipo battery old and perhaps dying earlier in the day?  Order a new battery, replace lipo battery
 * Check your lipo battery wires?  If your wires are dislodged from the lipo itself, RL will not likely work for long
 * Your RL battery needs to be securely plugged in, check those connections.
-* Check if your RL is on and says "connected" in the [status screen for bluetooth](../../setup/loop-settings/rileylink_menu.md#device). If it says "connecting" or "disconnected", you have a BT problem with RL and iPhone.
+* Check if your RL is on and says "connected" in the [status screen for bluetooth](loopdocs/setup/loop-settings/rileylink_menu.md#device). If it says "connecting" or "disconnected", you have a BT problem with RL and iPhone.
 * Make sure your iPhone's BT is turned on, and BT is not being affected by other BT systems (such as car audio)
 * Check if any of the RL command buttons work...such as **Send Button Press**.
 * If you've checked all of the above, toggle your RL power switch and turn your iPhone BT off/on.  Try rebooting your phone.  If those steps don't work and the RL is properly charging otherwise, likely you have a bad RileyLink and will need to replace it.
