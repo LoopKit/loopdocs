@@ -472,9 +472,23 @@
     
         <li class="main active"><a href="#build-errors">Build Errors</a></li>
         
-            <li><a href="#yellow-error-alerts">Yellow Error Alerts</a></li>
+            <li><a href="#updated-xcode-but-need-to-carthage-bootstrap">Updated Xcode, but need to Carthage Bootstrap</a></li>
         
-            <li><a href="#red-error-alerts">Red Error Alerts</a></li>
+            <li><a href="#exit-code-1">Exit Code 1</a></li>
+        
+            <li><a href="#developer-license-update">Developer License Update</a></li>
+        
+            <li><a href="#swift-language-version">Swift Language Version</a></li>
+        
+            <li><a href="#embedded-binary-error">Embedded Binary error</a></li>
+        
+            <li><a href="#abort-with-payload">Abort with Payload</a></li>
+        
+            <li><a href="#exit-code-127">Exit Code 127</a></li>
+        
+            <li><a href="#apple-watch-loop-app-not-appearing">Apple Watch: Loop app not appearing</a></li>
+        
+            <li><a href="#apple-watch-loop-app-not-installing">Apple Watch: Loop app not installing</a></li>
         
     
     </ul>
@@ -483,16 +497,13 @@
 
 <h1 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Permanent link">⌁</a></h1>
 <p>There are two types of build errors that happen; yellow alerts and red alerts.  Yellow alerts will not cause a build to fail, and can generally be ignored.  Red alerts will have to be resolved before you can successfully build Loop app.</p>
-<p>The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.</p>
-<h2 id="yellow-error-alerts">Yellow Error Alerts<a class="headerlink" href="#yellow-error-alerts" title="Permanent link">⌁</a></h2>
-<p><strong>Yellow error alerts</strong> do not cause the build to fail, those are just warnings.  Occasionally, a Loop version may have some minor discrepencies that cause a yellow alert...but you can ignore those.</p>
+<p><font color="orange"><strong>Yellow error alerts</strong></font> do not cause the build to fail, those are just warnings.  Occasionally, a Loop version may have some minor discrepencies that cause a yellow alert...but you can ignore those.</p>
 <p align="center">
 <img src="../img/master-done.png" width="750">
 </p>
 
-<h2 id="red-error-alerts">Red Error Alerts<a class="headerlink" href="#red-error-alerts" title="Permanent link">⌁</a></h2>
-<p><strong>Red error alerts</strong> will prevent Loop from building on your phone.  Please take the time to read the error message and find the solution below.</p>
-<h3 id="updated-xcode-but-need-to-carthage-bootstrap">Updated Xcode, but need to Carthage Bootstrap<a class="headerlink" href="#updated-xcode-but-need-to-carthage-bootstrap" title="Permanent link">⌁</a></h3>
+<p><font color="red"><strong>Red error alerts</strong> </font> will have to be resolved before you can successfully build Loop app.  The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.</p>
+<h2 id="updated-xcode-but-need-to-carthage-bootstrap">Updated Xcode, but need to Carthage Bootstrap<a class="headerlink" href="#updated-xcode-but-need-to-carthage-bootstrap" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>Swift Compilier Error.  Module compiled with Swift 4.0 cannot be imported in Swift 4.0.x</u></strong>"
 <p align="center">
 <img src="../img/xcode9_1.png" width="750">
@@ -530,7 +541,7 @@ Please go to your Xcode preferences, under the Locations tab, select <code>Xcode
 <img src="../img/yellow-update.png" width="750">
 </p></li>
 </ul>
-<h3 id="keychain-access">Keychain Access<a class="headerlink" href="#keychain-access" title="Permanent link">⌁</a></h3>
+<h2 id="exit-code-1">Exit Code 1<a class="headerlink" href="#exit-code-1" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>Command /bin/sh failed with exit code 1</u></strong>"</p>
 <p></p>
 <p align="center">
@@ -553,13 +564,13 @@ Please go to your Xcode preferences, under the Locations tab, select <code>Xcode
 <li>In the main Xcode ribbon menu (grey menu bar at the very top of your Apple display area), select the word <code>Product</code> and then select the option for <code>Clean</code>. (keyboard shortcut is shift-command-k)</li>
 <li>Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.</li>
 </ol>
-<h3 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Permanent link">⌁</a></h3>
+<h2 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u></strong>"</p>
 <p>Solution: You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.
 <p align="center">
 <img src="../img/license.png" width="750">
 </p></p>
-<h3 id="out-of-date-xcode">Out of Date Xcode<a class="headerlink" href="#out-of-date-xcode" title="Permanent link">⌁</a></h3>
+<h2 id="swift-language-version">Swift Language Version<a class="headerlink" href="#swift-language-version" title="Permanent link">⌁</a></h2>
 <p>Error message: <strong><u>Swift Language Version” (SWIFT_VERSION) is required to be configured correctly</u></strong> for targets which use Swift. Use the [Edit &gt; Convert &gt; To Current Swift Syntax…] menu to choose a Swift version or use the Build Settings editor to configure the build setting directly" or also <strong>"Could not locate device support files.  This iPhone is running iOS 11.x, which may not be supported by this version of Xcode.</strong>"</p>
 <p>Solution: You will need to go to your computer's App Store and install the Xcode app update.
 <p align="center">
@@ -571,7 +582,7 @@ Please go to your Xcode preferences, under the Locations tab, select <code>Xcode
 <p align="center">
 <img src="../img/update.jpg" width="750">
 </p></p>
-<h3 id="bundle-id-error">Bundle ID error<a class="headerlink" href="#bundle-id-error" title="Permanent link">⌁</a></h3>
+<h2 id="embedded-binary-error">Embedded Binary error<a class="headerlink" href="#embedded-binary-error" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>Embedded Binary Validation Utility.  error: Embedded binary's bundle identifier is not prefixed with the parent app's bundle identifier</u></strong>".
 <p align="center">
 <img src="../img/bundle_fail.jpg" width="750">
@@ -583,7 +594,7 @@ Solution:  This error happens because you've either</p>
 <li>Used an incorrect syntax in the MAIN_APP_BUNDLE_ID.</li>
 </ol>
 <p>In any case however, usually this error is most easily solved by closing out your project, deleting the download folder, and starting with a fresh download of Loop app.  The next time you build, make sure to follow the directions carefully to use a MAIN_APP_BUNDLE_ID in the right format and press <code>command-s</code> to force Xcode to update the targets' naming scheme correction.</p>
-<h3 id="bad-source-code-folder">Bad Source Code Folder<a class="headerlink" href="#bad-source-code-folder" title="Permanent link">⌁</a></h3>
+<h2 id="abort-with-payload">Abort with Payload<a class="headerlink" href="#abort-with-payload" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>Abort with payload</u></strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.
 <p align="center">
 <img src="../img/abort_payload.png" width="750">
@@ -594,15 +605,18 @@ Solution: This error message is caused by either</p>
 <li>Having a space in the name of your Loop download folder.</li>
 </ol>
 <p>Rename the folder to have no spaces and/or move it back to the Downloads folder, then rebuild.</p>
-<h3 id="carthage-installation">Carthage installation<a class="headerlink" href="#carthage-installation" title="Permanent link">⌁</a></h3>
+<h2 id="exit-code-127">Exit Code 127<a class="headerlink" href="#exit-code-127" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>Shell Script Invocation Error.  Command /bin/sh failed with exit code 127</u></strong>"
 <p align="center">
 <img src="../img/exit127.jpg" width="250">
 </p></p>
 <p>Solution: This error code is happening for Loopers updating to Loop who used carthage.pkg and don't have homebrew installed.  We have since updated the installation docs, so new users likely won't run into this error.  But, if you are an existing Looper encountering this error message while trying to update your Loop, please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.</p>
-<h3 id="apple-watch-issues">Apple Watch issues<a class="headerlink" href="#apple-watch-issues" title="Permanent link">⌁</a></h3>
+<h2 id="apple-watch-loop-app-not-appearing">Apple Watch: Loop app not appearing<a class="headerlink" href="#apple-watch-loop-app-not-appearing" title="Permanent link">⌁</a></h2>
 <p>Error: <strong><u>Apple watch app is not appearing</u></strong>.</p>
-<p>Solution: Usually because you have not updated to watchOS 4 prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p></div>
+<p>Solution: Usually because you have not updated to watchOS prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p>
+<h2 id="apple-watch-loop-app-not-installing">Apple Watch: Loop app not installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Permanent link">⌁</a></h2>
+<p>Error: <strong><u>The Loop app appears on the list of app available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL"</u></strong>.</p>
+<p>Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watchface and select the "Trust" button.  Now rebuild your Loop app in Xcode, but look for a pop-up message that warns you that the Watch isn't registered with the Developer portal.  Click on the "register" button that is in the pop-up window and proceed with the Loop app building again.</p></div>
         </div>
 
         <footer class="col-md-12">
