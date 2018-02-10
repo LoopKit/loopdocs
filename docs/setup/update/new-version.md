@@ -38,7 +38,7 @@ Suspend Threshold is the new term for the old Minimum BG Guard.  The name was ch
 
 This section is brand new to Loop v1.5.  Loop still has the option for the old model (Walsh curve), as well as three new models.
 
-You can read up on the new curves [here](../setup/build/configuration.md#insulin-model).  There is also a new customization section for the curves [here](/setup/build/code_customization.md#exponential-insulin-curve).
+You can read up on the new curves [here](https://loopkit.github.io/loopdocs/setup/loop-settings/settings/#insulin-model).  There is also a new customization section for the curves [here](/setup/build/code_customization.md#exponential-insulin-curve).
 
 These new models are quite a bit different than the Walsh model.  I recommend watching the bolusing recommendations and how meals are behaving with your curve selection.  Because the timing of the peak activity has changed, this will impact how the Loop recommends boluses in some instances.  Overall, most users are finding that the changes have resulted in a bit more conservative bolusing recommendations (less insulin), especially for long slow carb meals.  Developers are looking at options to assess and address that.
 
