@@ -2,19 +2,15 @@
 
 There are two types of build errors that happen; yellow alerts and red alerts.  Yellow alerts will not cause a build to fail, and can generally be ignored.  Red alerts will have to be resolved before you can successfully build Loop app.
 
-The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.
-
-## Yellow Error Alerts
-**Yellow error alerts** do not cause the build to fail, those are just warnings.  Occasionally, a Loop version may have some minor discrepencies that cause a yellow alert...but you can ignore those.
+<font color="orange">**Yellow error alerts**</font> do not cause the build to fail, those are just warnings.  Occasionally, a Loop version may have some minor discrepencies that cause a yellow alert...but you can ignore those.
 
 <p align="center">
 <img src="../img/master-done.png" width="750">
 </p>
 
-## Red Error Alerts
-**Red error alerts** will prevent Loop from building on your phone.  Please take the time to read the error message and find the solution below.
+<font color="red">**Red error alerts** </font> will have to be resolved before you can successfully build Loop app.  The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.
 
-### Updated Xcode, but need to Carthage Bootstrap
+## Updated Xcode, but need to Carthage Bootstrap
 Error message: "**<u>Swift Compilier Error.  Module compiled with Swift 4.0 cannot be imported in Swift 4.0.x</u>**"
 <p align="center">
 <img src="../img/xcode9_1.png" width="750">
@@ -53,7 +49,7 @@ It will run for about 4-5 minutes and then show you a screen like below.
 <img src="../img/yellow-update.png" width="750">
 </p>
 
-### Keychain Access
+## Exit Code 1
 
 Error message: "**<u>Command /bin/sh failed with exit code 1</u>**"
 
@@ -80,7 +76,7 @@ Solution:  This error message has been more frequent lately, but I am unsure if 
 5. In the main Xcode ribbon menu (grey menu bar at the very top of your Apple display area), select the word `Product` and then select the option for `Clean`. (keyboard shortcut is shift-command-k)
 6. Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.
 
-### Developer License Update
+## Developer License Update
 Error message: "**<u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u>**"
 
 Solution: You'll need to log onto your developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
@@ -88,7 +84,7 @@ Solution: You'll need to log onto your developer account at [developer.apple.com
 <img src="../img/license.png" width="750">
 </p>
 
-### Out of Date Xcode
+## Swift Language Version
 Error message: **<u>Swift Language Version” (SWIFT_VERSION) is required to be configured correctly</u>** for targets which use Swift. Use the [Edit > Convert > To Current Swift Syntax…] menu to choose a Swift version or use the Build Settings editor to configure the build setting directly" or also **"Could not locate device support files.  This iPhone is running iOS 11.x, which may not be supported by this version of Xcode.**"
 
 Solution: You will need to go to your computer's App Store and install the Xcode app update.
@@ -102,7 +98,7 @@ Solution: You will need to go to your computer's App Store and install the Xcode
 <img src="../img/update.jpg" width="750">
 </p>
 
-### Bundle ID error
+## Embedded Binary error
 Error message: "**<u>Embedded Binary Validation Utility.  error: Embedded binary's bundle identifier is not prefixed with the parent app's bundle identifier</u>**".
 <p align="center">
 <img src="../img/bundle_fail.jpg" width="750">
@@ -115,7 +111,7 @@ Solution:  This error happens because you've either
 
 In any case however, usually this error is most easily solved by closing out your project, deleting the download folder, and starting with a fresh download of Loop app.  The next time you build, make sure to follow the directions carefully to use a MAIN_APP_BUNDLE_ID in the right format and press `command-s` to force Xcode to update the targets' naming scheme correction.
 
-### Bad Source Code Folder
+## Abort with Payload
 Error message: "**<u>Abort with payload</u>**"  Your app will only open briefly with a white screen and then close, if you build with this error.
 <p align="center">
 <img src="../img/abort_payload.png" width="750">
@@ -127,7 +123,7 @@ Solution: This error message is caused by either
 
 Rename the folder to have no spaces and/or move it back to the Downloads folder, then rebuild.
 
-### Carthage installation
+## Exit Code 127
 Error message: "**<u>Shell Script Invocation Error.  Command /bin/sh failed with exit code 127</u>**"
 <p align="center">
 <img src="../img/exit127.jpg" width="250">
@@ -135,7 +131,12 @@ Error message: "**<u>Shell Script Invocation Error.  Command /bin/sh failed with
 
 Solution: This error code is happening for Loopers updating to Loop who used carthage.pkg and don't have homebrew installed.  We have since updated the installation docs, so new users likely won't run into this error.  But, if you are an existing Looper encountering this error message while trying to update your Loop, please open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
 
-### Apple Watch issues
+## Apple Watch: Loop app not appearing
 Error: **<u>Apple watch app is not appearing</u>**.
 
-Solution: Usually because you have not updated to watchOS 4 prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click `Install` for the Loop app listed at the very bottom under "available apps".
+Solution: Usually because you have not updated to watchOS prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click `Install` for the Loop app listed at the very bottom under "available apps".
+
+## Apple Watch: Loop app not installing
+Error: **<u>The Loop app appears on the list of app available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL"</u>**.
+
+Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watchface and select the "Trust" button.  Now rebuild your Loop app in Xcode, but look for a pop-up message that warns you that the Watch isn't registered with the Developer portal.  Click on the "register" button that is in the pop-up window and proceed with the Loop app building again.
