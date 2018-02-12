@@ -57,6 +57,7 @@ pages:
     - 'Priming and Sites': 'troubleshooting/priming.md'
     - 'RileyLink': 'troubleshooting/rileylink.md'
     - 'Time Changes': 'troubleshooting/time-change.md'
+    - 'Pump Errors': 'troubleshooting/pump-errors.md'
 - Nightscout:
     - 'Overview': 'nightscout/overview.md'
     - 'Setup New Site': 'nightscout/new_user.md'

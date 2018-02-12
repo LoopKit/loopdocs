@@ -6,6 +6,9 @@ There are a number of insulin pumps manufactured between 2006 – 2012 by Medtro
 
 The Loop-compatible pumps are as follows:
 
+!!!info ""
+    HINT: The 515/715 and 522/722 pumps are all compatible.  However, the 523/723 and 554/754 pumps will require you to check the firmware to see if the pump is Loop compatible.  See the footnotes 3 and 4 for the required firmwares.
+
 <table>
   <thead>
     <tr>
@@ -64,28 +67,58 @@ To determine your pump model, look at the back side of your pump.  There should 
 
 ![Pump](img/pump_model.jpg)
 
-In the example above, it says the pump model is:  MMT-722NAS
-
 ```
-MMT         Pump Manufacturer Model (MiniMed Medtronic)
-722         Pump Model Number
-NA          Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)
-S           Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)
+    MMT       Pump Manufacturer Model (MiniMed Medtronic)
+    722       Pump Model Number
+    NA        Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)
+    S         Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)
 ```
 
-Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a model number like MMT-LNAS.  This does not affect Loop compatibility.
+Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a model number like MMT-722LNAS.  This does not affect Loop compatibility.
 
-The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180 unit reservoir, and the 700 series pumps use a 300 unit reservoir (or smaller 180 unit reservoir, if you want).
 
-The differences between Medtronic x22 pumps and x23/x54 pumps are primarily three features.  
+## Pump Differences
+The  differences between the pump models are limited.
 
-* The x23/x54 pumps will allow for increments of 0.025 units, whereas the x22 pumps have larger increments of 0.05 units.  Loop will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Loop’s use of temp basals.  
+<font color ="orange">500 vs 700</font>:  The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180 unit reservoir, and the 700 series pumps use a 300 unit reservoir (or smaller 180 unit reservoir, if you want).
 
-* Additionally, because of the way Loop fetches information from the pump, the x23/x54 series of pumps are slightly better at conserving battery life through the use of the MySentry.  x22 pumps do not use MySentry.  
+<font color ="orange">x15/x22 vs x23/x54</font>:  The difference between the x15 and x22 pumps versus the x23 and x54 series pumps has only a few notable mentions:
 
-* The x23/x54 series pumps are also faster at delivering large boluses (up to several times faster for boluses > 10 units).
+* The x23/x54 pumps will allow for smaller insulin deliveries in certain situations, if the smaller scroll rate is selected in the Bolus>Setup>Scroll Rate menu.  **Loop will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Loop’s use of temp basals.  If you want the smaller increments of basal rates, you can still enter those values in Loop app's settings and Loop will use those values for the purposes of insulin delivery calculations.**
+
+<table>
+<thead>
+<tr>
+<th>Pump Model</th>
+<th>Basal increments</th>
+<th>Bolus increments</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>515/715</br>and</br>522/722</th>
+<td>0.05</br>0.1</td>
+<td>0.1</br>0.1</td>
+<td>deliveries less than 10 units</br>greater than 10 units</td>
+</tr>
+<tr>
+<th>523/723</br>and</br>554/754</th>
+<td>0.025</br>0.05</br>0.1</td>
+<td>0.025 </br>0.05 </br>0.1</td>
+<td>between 0.025 to 0.975 units</br>between 1 to 9.95 units</br>greater than 10 units</td>
+</tr>
+</tbody>
+</table>
+
+* Additionally, because of the way Loop fetches information from the pump, the x23/x54 series of pumps are slightly better at conserving battery life through the use of the MySentry packets to collect information from the pump.  x22 pumps do not use MySentry.
+
+* The x23/x54 series pumps are also faster at delivering boluses greater than 10 units.  On an x23 pump, a 13-unit bolus takes 5:00 minutes to complete.  On an x22 pump, a 13-unit bolus takes 8:40 minutes to complete.
 
 ## Pump Firmware
+
+!!!info ""
+    If you are looking to use a 523/723 or 554/754 pump, you will need to check the firmware version for compatibility.
 
 A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows Loop to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure you are getting one with compatible firmware.
 
@@ -109,7 +142,7 @@ While we all would love to have our {insert your favorite manufacturer} pump be 
 
 Finding a compatible Medtronic pump is probably the most difficult part for most new Loopers.  Our suggestion:
 
-* Talk to friends in the diabetic community.  
+* Talk to friends in the diabetic community.
 
 * Ask your endocrinologist.  
 
@@ -117,9 +150,15 @@ Finding a compatible Medtronic pump is probably the most difficult part for most
 
 * Join diabetic supply groups in Facebook; both for-trade and for-sale groups.  
 
-* Check Craigslist often and be willing to expand your search area to include larger cities.  
+* Check Craigslist often and be willing to expand your search area to include larger cities.
+
+* Check out the **HelpAround, NextDoor, OfferUp, and/or LetGo** apps for pumps.
 
 * Search [Medwow](http://medwow.com) for used Medtronic pumps
+
+Medwow has been fairly frustrating for most people; poor response rate, high prices.  The most success appears to come from either one-on-one discussions with fellow diabetics/doctors or using apps (Craigslist, NextDoor, LetGo, HelpAround).  If you are using Craigslist, you may wish to use an app on your iPhone to make the searching easier.  There are apps to search multiple cities at one for your keywords and set up alerts.
+
+![Craigslist](img/craigslist.png)
 
 ## Safe Purchasing
 
