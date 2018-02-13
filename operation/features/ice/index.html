@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>Using ICE info - Loop Docs</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link href="../../../css/admonitions.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-109876065-1', 'loopkit.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Loop Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../setup/overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Requirements</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../setup/requirements/pump/">Insulin Pump</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/requirements/cgm/">CGM</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/requirements/rileylink/">RileyLink</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/requirements/computer/">Computer</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/requirements/iphone/">iPhone</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/requirements/appledev/">Apple Developer</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Install Loop</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../setup/build/installing/">Building App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/build/build_errors/">Build Errors</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/build/code_customization/">Code Customization</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Loop App setup</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../setup/loop-settings/settings/">Loop Settings</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/loop-settings/services/">Loop Services</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/loop-settings/rileylink_menu/">RileyLink menu</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/loop-settings/pump/">Pump Setup</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Update</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../setup/update/updating/">Updating</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../setup/update/new-version/">New Version Info</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../overview/">Loop Displays</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">How to Use Loop App</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../carbs/">Carb Entries</a>
+</li>
+
+        
+            
+<li >
+    <a href="../bolus/">Bolus</a>
+</li>
+
+        
+            
+<li >
+    <a href="../workout/">Workout Targets</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Using ICE info</a>
+</li>
+
+        
+            
+<li >
+    <a href="../watch/">Apple Watch</a>
+</li>
+
+        
+            
+<li >
+    <a href="../widget/">iPhone widget</a>
+</li>
+
+        
+            
+<li >
+    <a href="../healthapp/">Health App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../notifications/">Loop Notifications</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Looping Tips</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../loop/open-loop/">Open Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../loop/close-loop/">Closed Loop</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Algorithm</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../algorithm/overview/">Overview</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../algorithm/bolus/">Bolus Recommendations</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../algorithm/prediction/">Glucose Prediction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../algorithm/temp_basal/">Temp Basal Adjustments</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/green-loop/">Grey Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/mlab_cleanup/">NS display</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/priming/">Priming and Sites</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/rileylink/">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/time-change/">Time Changes</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../troubleshooting/pump-errors/">Pump Errors</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../nightscout/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/new_user/">Setup New Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/update_user/">Update Site</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/azure_migration/">Azure to Heroku</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/loop_pill/">Loop Pill</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/ifttt/">IFTTT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/pebble/">Pebble</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/pushover/">Remote Notifications</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/reports/">Reports</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../workout/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../watch/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#insulin-counteraction-effects">Insulin Counteraction Effects</a></li>
+        
+            <li><a href="#ice-display">ICE display</a></li>
+        
+            <li><a href="#practical-use">Practical use</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="insulin-counteraction-effects">Insulin Counteraction Effects<a class="headerlink" href="#insulin-counteraction-effects" title="Permanent link">⌁</a></h1>
+<p>Tapping on your Carbohydrates graph will open up a page that tracks your carb entries for the day (since midnight).  At the top of the page is a useful graphic called Insulin Counteraction Effects (ICE for short).  What is it?  Bascially, a graphical representation of <strong><i>predicted</i></strong> upward-BG effects vs. <i><strong>encountered</i></strong> upward-BG effects.</p>
+<p>Consider the possible sources of triggers that counteract insulin (in other words, make BGs go up)</p>
+<ul>
+<li>food</li>
+<li>stress</li>
+<li>illness</li>
+<li>someone sat too close to you</li>
+</ul>
+<p>As we all know, this list can be long but, on "normal" days FOOD will be the single strongest "insulin counteracter".  Food will be the most influence on making BGs go up.  There are also other reasons that BGs climb when we may have expected them to be steady; basals being set too low, failed infusion site, etc.</p>
+<p>If we assume that it's a "normal" day (basals are close to correct, illness is not an issue, site is good), Loop will expect most of the UPWARD pressure on BGs are from food.  Loop is calling that upward pressure Insulin Counteraction Effect (ICE).  This is a pretty reasonable assumption so let's use that for the rest of this discussion.</p>
+<h2 id="ice-display">ICE display<a class="headerlink" href="#ice-display" title="Permanent link">⌁</a></h2>
+<p>Let's take a look at an example day using the screenshot below.  The graph at the top of your ICE page represents that upward pressure Loop expects from the food entries.  The predicted ICE is shown as grey bars.  As a meal is tracked by Loop, you'll see green bars of observed ICE.</p>
+<p align="center">
+<img src="../img/ice-3.png" width="700">
+</p>
+
+<p>When you make a food entry originally, Loop will save your entry as you've made it.  On the line below your original entry, Loop will also start tracking your food entry assuming a 1.5 times longer carb absorption time.  This helps Loop track carbs that may actually be absorbing longer than you expected (part of that whole dynamic carb absorption modelling).  Loop will be updating that value of "observed" carb absorption time as well as absorbed carbs as your meal goes on.</p>
+<h2 id="practical-use">Practical use<a class="headerlink" href="#practical-use" title="Permanent link">⌁</a></h2>
+<p>So how can we use this information to make our Looping experience better?  The answer is probably best illustrated using a real world example.  Chinese food...in fact, THIS chinese dish.  General Tso's chicken.  As you can see in the recipe, loads of fast carbs with ingredients like hoisin sauce, brown sugar, and cornstarch.  But also slower carbs like chicken.  Rice can be a difficult one because for us, it acts fast but also seems to have a long tail.</p>
+<p align="center">
+<img src="../img/ice.jpg" width="500">
+</p>
+
+<p>It was a busy day and I really didn't want to count carbs.  Ok, even on the slow days I don't want to count carbs.  I just eyeballed the bowl of food and guessed.  As I entered the food in originally, I was still trying to come up with a good guess on the ratio of fast:slow carbs but kid was in a hurry to eat.  My initial guess around 3:30pm was 70g of carbs at 5 hours absorption (note: it gets edited to 80g in a little bit), we bolused for that and she started to eat.  About 10 minutes later, I decided to add 10g of fast acting carbs at 1 hour absorption to help with the sauce's speedy carbs.</p>
+<p align="center">
+<img src="../img/ice-2.jpg" width="700">
+</p>
+
+<p>Watching what was going on a little later...BGs were rising at a decent clip and I had a feeling I really didn't cover things super well...so I edited the original 70g entry, adding 10g and making it 80g instead.  (That's why there is a 2U bolus around 4:20pm.)  And of course around 5:40pm there was a little bit of nibbling on the leftovers as we put them into the fridge.  We gave 10g for that.  BGs climbed a bit more, not suprising given how we were underestimating fast carbs at this point...but still not so bad at 180 peak BG.  (Anna gave 2 units correction at the peak because there was dessert coming later that night and she wanted to be ready for it without too much prebolus.)</p>
+<p align="center">
+<img src="../img/ice-5.png" width="500">
+</p>
+
+<p>So, how can I use the ICE info to make this meal better?  I can look at the observed ICE information and the observed carb entry Loop has recorded to adjust my insulin bolusing the next time we eat this meal.</p>
+<p>For example, the biggest weakness I had in this (and suspected it even as I did the initial bolus) was that I underestimated the sauce's fast carbs.  I can see this in the observed ICE graph having the early green peaks after the meal, and in the way that the observed carb distribution was more like 7:2 vs my original guess of 8:1 (slow:fast carbs).  Overall looks like I guess on overall carb content pretty close (90g vs. 89g observed).  Next time we have General Tso's chicken, I will likely bolus it as 70g at 5 hours and 20g at 2 hours.</p>
+<p align="center">
+<img src="../img/ice-6.jpg" width="700">
+</p>
+
+<p>So remember to check your ICE page at the end of a meal's absorption.  By checking in on the meal's observed behaviors, you'll have a good starting point to fine-tuning any new or unknown carb breakdown.</p>
+<p>Side note:  remember this conversation is assuming you have basals fairly well set and are not sick.  If other factors could be significantly causing your BGs to swing that Loop doesn't know about (bad sites, illness, or basal rates that need to be adjusted), they may be attributed to ICE when they really aren't food related.  In those cases, address the underlying cause and then use the ICE pages when you've come back to "normal".</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
