@@ -37,6 +37,7 @@ pages:
         - 'Carb Entries': 'operation/features/carbs.md'
         - 'Bolus': 'operation/features/bolus.md'
         - 'Workout Targets': 'operation/features/workout.md'
+        - 'Using ICE info': 'operation/features/ice.md'
         - 'Apple Watch': 'operation/features/watch.md'
         - 'iPhone widget': 'operation/features/widget.md'
         - 'Health App': 'operation/features/healthapp.md'
