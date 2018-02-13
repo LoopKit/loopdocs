@@ -69,6 +69,10 @@ For new Loopers (but old Nightscout users), you will need to add some variables 
 </thead>
 <tbody>
 <tr>
+<th>ENABLE</th>
+<td>bridge loop pump iob cob basal careportal sage cage</br></br>(Double check that you have at least these words on your ENABLE line.  Enter all of the words without commas; just a single space between each word. Make sure autocorrect does not add space between careportal.)</td>
+</tr>
+<tr>
 <th>DEVICESTATUS_ADVANCED</th>
 <td>true</td>
 </tr>

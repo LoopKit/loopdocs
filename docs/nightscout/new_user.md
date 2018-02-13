@@ -177,7 +177,7 @@ You do not have to enter all the information in the profile if you are using Loo
 <td>true</td>
 </tr>
 <tr>
-<th>PUMP_URGENT_BATT_U</th>
+<th>PUMP_URGENT_BATT_P</th>
 <td>30</br></br>(This is the pump battery percentage that will trigger a red, urgent alert in NS.)</td>
 </tr>
 <tr>
