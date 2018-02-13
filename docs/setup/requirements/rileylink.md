@@ -9,6 +9,26 @@ The RileyLink is an open-source hardware device that can bridge Bluetooth Low En
 The RileyLink is available as a set of PCB files and software, with instructions on how to build your own RileyLink hardware module.  All this can be found here: [RileyLink Github](https://github.com/ps2/rileylink)
 If you aren’t up to the task of building your own RileyLink (and most of us aren’t), community members periodically do a production run of RileyLinks. You can place an order here: [RileyLink order site](https://getrileylink.org)
 
+### Assembling RileyLink
+
+Your RL will come with the battery disconnected and the parts not already inside the case.  It will be up to you to put the RL in the case and attach the battery.
+
+Make sure the battery is well plugged into the connection.  Line up the little ridge approriately, and push fairly firmly to get the connection in tight.  Poor battery cable connection can make the Loop communications fail.  See photos below for example.
+
+<p><figure align="center">
+<img src="../img/rl_loose_battery.jpg" width="400">
+<figcaption>RileyLink with loose battery cable.</figcaption>
+</figure></p>
+
+<p><figure align="center">
+<img src="../img/rl_secure_battery.jpg" width="400">
+<figcaption>RileyLink with properly secured battery cable.</figcaption>
+</figure></p>
+
+Finally, the board and the battery fit into the slim case fairly tightly as well.  Please see this video to aid in putting the RL into the slim case.
+
+https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be
+
 ### Waiting for RileyLink
 
 Yes, waiting for RileyLink to arrive is extremely difficult.  PLEASE be patient, since Loop CANNOT work without RileyLink.
