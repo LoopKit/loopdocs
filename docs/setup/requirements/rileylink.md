@@ -25,9 +25,9 @@ Make sure the battery is well plugged into the connection.  Line up the little r
 <figcaption>RileyLink with properly secured battery cable.</figcaption>
 </figure></p>
 
-Finally, the board and the battery fit into the slim case fairly tightly as well.  Please see this video to aid in putting the RL into the slim case.
+Finally, the board and the battery fit into the slim case fairly tightly as well.  Click on the image below to watch a helpful [assembly video](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be).
 
-https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be
+<a href="https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be" target="_blank"><img src="../img/slimcase.png"  title="RileyLink assembly video" /></a>
 
 ### Waiting for RileyLink
 
