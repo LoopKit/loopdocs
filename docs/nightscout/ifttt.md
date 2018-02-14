@@ -53,88 +53,82 @@ If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, 
 <img src="../img/IFTTT_that.png" width="550">
 </p> 
 
-* Enter "maker" in the search field and click on the Maker Webhooks app
+* Enter "Webhooks" in the search field and click on the Webhooks app
 
 <p align="center">
-<img src="../img/IFTTT_maker.png" width="550">
+<img src="../img/webhooks1.png" width="550">
 </p> 
 
-* Connect the Maker Webhooks app
+* Connect the Webhooks app
 
 <p align="center">
-<img src="../img/IFTTT_connect2.png" width="550">
+<img src="../img/webhooks2.png" width="550">
 </p> 
 
-* Select the green "Make a Web Request" box
+* Select the blue "Make a Web Request" box
 
 <p align="center">
-<img src="../img/IFTTT_webrequest.png" width="550">
+<img src="../img/webhooks24.png" width="550">
 </p> 
 
-*  Now you will have a blank web request template to complete.  
+*  Now you will have a blank web request template to complete.  Screenshot below is an example of a completed recipe for eating soon IFTTT action.
 
 <p align="center">
-<img src="../img/IFTTT_actionfields.png" width="550">
+<img src="../img/webhooks25.png" width="550">
 </p> 
 
 The following info should be filled in:
 
-URL: https://yoursite.herokuapp.com/api/v1/treatments.json (change the "yoursite" part to your NS info)
+<font color=orange>**URL**:</font> https://yoursite.herokuapp.com/api/v1/treatments.json (**change the "yoursite" part to your NS info**)
 
-Method: POST
+<font color=orange>**Method**:</font> POST
 
-Content Type: application/json
+<font color=orange>**Content Type**:</font> application/json
 
-Body:  The content of the body will depend on the action that you would like this particular button press to perform.  You can only do ONE of the actions per button.  Some sample content:
+<font color=orange>**Body**:</font>  The content of the body will depend on the action that you would like this particular button press to perform.  You can only do ONE of the actions per button.  There are many recipes available, but not all will work with Loop and NS together.  For example, you can use the Low Treatment recipe to log carbs to NS...but Loop will not read/use those carbs.  That may still be helpful though for remote care givers to leave an indication of when they gave uncovered carbs to treat a low.  You could also set temp targets in NS using IFTTT (recipes can be found on OpenAPS docs), but Loop does not read temp targets from Nightscout at this time.  Some sample content for actions that may be useful in Loop:
 
-Pump Site Change
-```
-{"enteredBy": "IFTTT-button", "eventType": "Site Change", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
-```
-CGM Sensor Start
-```
-{"enteredBy": "IFTTT-button", "eventType": "Sensor Start", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
-```
-Note
-```
-{"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, starting track practice!", "secret": "your_hashed_api_goes_here!!!"}
-```
-Low Treatment
-```
-{"enteredBy": "IFTTT-button", "reason": "low treatment", "carbs": 15, "secret": "your_hashed_api_goes_here!!!"}
-```
+!!!info "Pump Site Change"
+    {"enteredBy": "IFTTT-button", "eventType": "Site Change", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
+
+!!!info "CGM Sensor Start"
+    {"enteredBy": "IFTTT-button", "eventType": "Sensor Start", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
+
+!!!info "Note"
+    {"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, please don't text me for a bit.  I'm taking a test.", "secret": "your_hashed_api_goes_here!!!"}
+
+!!!info "Low Treatment"
+    {"enteredBy": "IFTTT-button", "reason": "low treatment", "carbs": 15, "secret": "your_hashed_api_goes_here!!!"}
 
 * Click the `Create Action` button on the bottom of the screen when you finish.
-
 
 * Now is your chance to change the title of your Applet now to something meaningful.  You can turn on notifications, too, using the slider shown.  If you turn on the notifications, you will get an alert on your phone and pebble watch when the button press has been successfully deployed.  Finish the IFTTT button by clicking on the Finish button that appears.  
 
 <p align="center">
-<img src="../img/IFTTT_finish.png" width="550">
+<img src="../img/webhooks26.png" width="550">
 </p> 
 
 * Repeat the setup for New Applets for as many automated actions as you would like to setup.
 
 <p align="center">
-<img src="../img/IFTTT_applets.png" width="550">
+<img src="../img/webhooks27.png" width="550">
 </p>
 
 ## Enable IFTTT in your Nightscout site
 
-* Find your Maker Key by going to your IFTTT account, Services and then clicking on Maker, then Maker settings.
+* Find your Maker Key by going to your IFTTT account, Services and then click on the Webhooks service, settings.
 
 <p align="center">
-<img src="../img/IFTTT_services.png" width="550">
+<img src="../img/webhooks9.png" width="550">
 </p> 
 ********
 <p align="center">
-<img src="../img/IFTTT_services2.png" width="550">
+<img src="../img/webhooks10.png" width="550">
 </p> 
 
-* You will see your Maker Key as the last part of the URL; copy and paste that last part (the red underlined part as shown)
+* You will see your Maker Key as the last part of the URL; copy and paste that last part (the red circled part as shown)
 
 <p align="center">
-<img src="../img/IFTTT_makerkey.png" width="550">
+<img src="../img/webhooks11.png" width="550">
 </p> 
 
 * Login to your Nightscout site host (azure or heroku) and (1) add your Maker Key to the MAKER_KEY line and (2) add "maker" to your ENABLE line.
@@ -144,9 +138,7 @@ Low Treatment
 </p> 
 
 <p align="center">
-
 <img src="../img/IFTTT_enable.png" width="550">
-
 </p> 
 
 ## Install IFTTT app on your iPhone/Android
