@@ -557,54 +557,54 @@
 </p>
 
 <ul>
-<li>Enter "maker" in the search field and click on the Maker Webhooks app</li>
+<li>Enter "Webhooks" in the search field and click on the Webhooks app</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_maker.png" width="550">
+<img src="../img/webhooks1.png" width="550">
 </p>
 
 <ul>
-<li>Connect the Maker Webhooks app</li>
+<li>Connect the Webhooks app</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_connect2.png" width="550">
+<img src="../img/webhooks2.png" width="550">
 </p>
 
 <ul>
-<li>Select the green "Make a Web Request" box</li>
+<li>Select the blue "Make a Web Request" box</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_webrequest.png" width="550">
+<img src="../img/webhooks24.png" width="550">
 </p>
 
 <ul>
-<li>Now you will have a blank web request template to complete.  </li>
+<li>Now you will have a blank web request template to complete.  Screenshot below is an example of a completed recipe for eating soon IFTTT action.</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_actionfields.png" width="550">
+<img src="../img/webhooks25.png" width="550">
 </p>
 
 <p>The following info should be filled in:</p>
-<p>URL: https://yoursite.herokuapp.com/api/v1/treatments.json (change the "yoursite" part to your NS info)</p>
-<p>Method: POST</p>
-<p>Content Type: application/json</p>
-<p>Body:  The content of the body will depend on the action that you would like this particular button press to perform.  You can only do ONE of the actions per button.  Some sample content:</p>
-<p>Pump Site Change</p>
-<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;eventType&quot;: &quot;Site Change&quot;, &quot;duration&quot;: 0, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
-</code></pre>
-
-<p>CGM Sensor Start</p>
-<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;eventType&quot;: &quot;Sensor Start&quot;, &quot;duration&quot;: 0, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
-</code></pre>
-
-<p>Note</p>
-<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;eventType&quot;: &quot;Note&quot;, &quot;notes&quot;: &quot;Hi mom, starting track practice!&quot;, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
-</code></pre>
-
-<p>Low Treatment</p>
-<pre><code>{&quot;enteredBy&quot;: &quot;IFTTT-button&quot;, &quot;reason&quot;: &quot;low treatment&quot;, &quot;carbs&quot;: 15, &quot;secret&quot;: &quot;your_hashed_api_goes_here!!!&quot;}
-</code></pre>
-
+<p><font color=orange><strong>URL</strong>:</font> https://yoursite.herokuapp.com/api/v1/treatments.json (<strong>change the "yoursite" part to your NS info</strong>)</p>
+<p><font color=orange><strong>Method</strong>:</font> POST</p>
+<p><font color=orange><strong>Content Type</strong>:</font> application/json</p>
+<p><font color=orange><strong>Body</strong>:</font>  The content of the body will depend on the action that you would like this particular button press to perform.  You can only do ONE of the actions per button.  There are many recipes available, but not all will work with Loop and NS together.  For example, you can use the Low Treatment recipe to log carbs to NS...but Loop will not read/use those carbs.  That may still be helpful though for remote care givers to leave an indication of when they gave uncovered carbs to treat a low.  You could also set temp targets in NS using IFTTT (recipes can be found on OpenAPS docs), but Loop does not read temp targets from Nightscout at this time.  Some sample content for actions that may be useful in Loop:</p>
+<div class="admonition info">
+<p class="admonition-title">Pump Site Change</p>
+<p>{"enteredBy": "IFTTT-button", "eventType": "Site Change", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">CGM Sensor Start</p>
+<p>{"enteredBy": "IFTTT-button", "eventType": "Sensor Start", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>{"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, please don't text me for a bit.  I'm taking a test.", "secret": "your_hashed_api_goes_here!!!"}</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Low Treatment</p>
+<p>{"enteredBy": "IFTTT-button", "reason": "low treatment", "carbs": 15, "secret": "your_hashed_api_goes_here!!!"}</p>
+</div>
 <ul>
 <li>
 <p>Click the <code>Create Action</code> button on the bottom of the screen when you finish.</p>
@@ -614,33 +614,33 @@
 </li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_finish.png" width="550">
+<img src="../img/webhooks26.png" width="550">
 </p>
 
 <ul>
 <li>Repeat the setup for New Applets for as many automated actions as you would like to setup.</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_applets.png" width="550">
+<img src="../img/webhooks27.png" width="550">
 </p>
 
 <h2 id="enable-ifttt-in-your-nightscout-site">Enable IFTTT in your Nightscout site<a class="headerlink" href="#enable-ifttt-in-your-nightscout-site" title="Permanent link">⌁</a></h2>
 <ul>
-<li>Find your Maker Key by going to your IFTTT account, Services and then clicking on Maker, then Maker settings.</li>
+<li>Find your Maker Key by going to your IFTTT account, Services and then click on the Webhooks service, settings.</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_services.png" width="550">
+<img src="../img/webhooks9.png" width="550">
 </p>
 
 <hr />
 <p><p align="center">
-<img src="../img/IFTTT_services2.png" width="550">
+<img src="../img/webhooks10.png" width="550">
 </p> </p>
 <ul>
-<li>You will see your Maker Key as the last part of the URL; copy and paste that last part (the red underlined part as shown)</li>
+<li>You will see your Maker Key as the last part of the URL; copy and paste that last part (the red circled part as shown)</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_makerkey.png" width="550">
+<img src="../img/webhooks11.png" width="550">
 </p>
 
 <ul>
@@ -651,9 +651,7 @@
 </p>
 
 <p align="center">
-
 <img src="../img/IFTTT_enable.png" width="550">
-
 </p>
 
 <h2 id="install-ifttt-app-on-your-iphoneandroid">Install IFTTT app on your iPhone/Android<a class="headerlink" href="#install-ifttt-app-on-your-iphoneandroid" title="Permanent link">⌁</a></h2>
