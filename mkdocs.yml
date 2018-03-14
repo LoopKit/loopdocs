@@ -42,6 +42,7 @@ pages:
         - 'iPhone widget': 'operation/features/widget.md'
         - 'Health App': 'operation/features/healthapp.md'
         - 'Loop Notifications': 'operation/features/notifications.md'
+        - 'Pump Battery': 'operation/features/battery.md'
     - 'Looping Tips':
         - 'Open Loop': 'operation/loop/open-loop.md'
         - 'Closed Loop': 'operation/loop/close-loop.md'
