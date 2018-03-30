@@ -528,7 +528,6 @@
 </p></p>
 <p>Soultion: Xcode was recently updated, and the current Loop master branch will produce this error message until the code is updated.  You will need to perform the following steps:</p>
 <ul>
-<li>Close Xcode</li>
 <li>Open Terminal App</li>
 <li>Navigate to your Loop download by doing the command:
 <code>cd downloads/Loop-master</code>
@@ -546,15 +545,15 @@ It will run for about 4-5 minutes and then show you a screen like below.
 <p align="center">
 <img src="../img/exit-code-72.jpg" width="550">
 </p>
-Please go to your Xcode preferences, under the Locations tab, select <code>Xcode 9.2</code> under the Command Line Tools
+Please go to your Xcode preferences, under the Locations tab, select <code>Xcode 9.3</code> under the Command Line Tools
 <p align="center">
 <img src="../img/command-line-tools.png" width="750">
 </p></p>
-<p>If Xcode 9.2 is not available in the dropdown menu, (1) make sure you have update your Xcode from the App store and then (2) go to Terminal app and run the command <code>xcode-select --install</code> which will produce a pop-up window for the installation of command line developer tools.  Select  <code>install</code> in that pop-up window.</p>
+<p>If Xcode 9.3 is not available in the dropdown menu, (1) make sure you have update your Xcode from the App store and then (2) go to Terminal app and run the command <code>xcode-select --install</code> which will produce a pop-up window for the installation of command line developer tools.  Select  <code>install</code> in that pop-up window.</p>
 <p>Return to Terminal app and rerun <code>carthage bootstrap</code> in your Loop download folder.  It should resolve correctly after that.</p>
 </div>
 <ul>
-<li>Reopen your Loop project in Xcode, select your iPhone, and press the build button. You'll still see some yellow alerts, but those are fine.
+<li>Go back to your Loop project in Xcode, select your iPhone, and press the build button. You'll still see some yellow alerts, but those are fine.
 <p align="center">
 <img src="../img/yellow-update.png" width="750">
 </p></li>
