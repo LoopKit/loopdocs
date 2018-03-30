@@ -5,9 +5,9 @@ Apple regularly updates their iPhone software (iOS), computer software (macOS) a
 ********
 The most recent version of iOS is 11.2
 
-The most recent version of macOS is 10.13.2
+The most recent version of macOS is 10.13.4
 
-The most recent version of Xcode is 9.2
+The most recent version of Xcode is 9.3
 
 The most recent version of Loop is 1.5
 
@@ -16,7 +16,7 @@ The most recent version of watchOS is 4.2
 
 The way Apple updates tend to happen is that one equipment's update will tend to require updating other pieces of Apple equipment.  For example, if you update your iOS on the iPhone, you may need an updated version of Xcode to install a new Loop app onto your phone.  And the new Xcode will require the volunteer developers of Loop to make updates to the Loop source code.  Finally, new Xcode updates also frequently come with macOS updates on your computer.
 
-**Currently, you will need Xcode 9.2 and Sierra 10.12.6 (or High Sierra 10.13) to be able to build Loop 1.5 if you are using iOS 11.2.  Older versions of macOS or Xcode are not compatible with Loop v1.5.  Additionally, Loop v1.4 will not build on Xcode 9.**
+**Currently, you will need at a minimum Xcode 9.2 and Sierra 10.12.6 (or High Sierra 10.13) to be able to build Loop 1.5 if you are using iOS 11.2.  Older versions of macOS or Xcode are not compatible with Loop v1.5.**
 
 We do not recommend installing beta releases of Xcode, iOS or macOS on devices running Loop.  If you are considering an update to your Loop app, check to make sure your computer and Xcode have any available updates installed prior to building the new app.
 
