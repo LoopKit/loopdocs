@@ -17,7 +17,7 @@ IF your pump's basal schedule doesn't match the Loop's basal schedule (and you d
 
 !!!info ""
     **Three settings in particular need to be done, OR ELSE YOUR LOOP WON'T WORK:**</br></br>
-        * Set **<font color="orange">max temp basal</font>** in pump to at least equal to (or slightly greater) than the Loop’s max basal</br></br>
+        * Set **<font color="orange">max basal</font>** in pump to at least equal to (or slightly greater) than the Loop’s max basal</br></br>
         * Set **<font color="orange">temp basal type</font>** to `insulin rate (u/h)`</br></br>
         * Set **<font color="orange">Remote Devices</font>** to `ON` and enter any random ID (000000 will work). This settings is found in the pump's Utilities menu (for x23 continue to Connect Devices, Remotes) and turn `ON` the Remote Options.</br>
 

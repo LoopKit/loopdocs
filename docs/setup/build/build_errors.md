@@ -18,7 +18,6 @@ Error message: "**<u>Swift Compilier Error.  Module compiled with Swift 4.0 cann
 
 Soultion: Xcode was recently updated, and the current Loop master branch will produce this error message until the code is updated.  You will need to perform the following steps:
 
-* Close Xcode
 * Open Terminal App
 * Navigate to your Loop download by doing the command:
 `cd downloads/Loop-master`
@@ -36,15 +35,15 @@ It will run for about 4-5 minutes and then show you a screen like below.
     <p align="center">
     <img src="../img/exit-code-72.jpg" width="550">
     </p>
-    Please go to your Xcode preferences, under the Locations tab, select `Xcode 9.2` under the Command Line Tools
+    Please go to your Xcode preferences, under the Locations tab, select `Xcode 9.3` under the Command Line Tools
     <p align="center">
     <img src="../img/command-line-tools.png" width="750">
     </p>
 
-    If Xcode 9.2 is not available in the dropdown menu, (1) make sure you have update your Xcode from the App store and then (2) go to Terminal app and run the command `xcode-select --install` which will produce a pop-up window for the installation of command line developer tools.  Select  `install` in that pop-up window.
+    If Xcode 9.3 is not available in the dropdown menu, (1) make sure you have update your Xcode from the App store and then (2) go to Terminal app and run the command `xcode-select --install` which will produce a pop-up window for the installation of command line developer tools.  Select  `install` in that pop-up window.
 
     Return to Terminal app and rerun `carthage bootstrap` in your Loop download folder.  It should resolve correctly after that.
-* Reopen your Loop project in Xcode, select your iPhone, and press the build button. You'll still see some yellow alerts, but those are fine.
+* Go back to your Loop project in Xcode, select your iPhone, and press the build button. You'll still see some yellow alerts, but those are fine.
 <p align="center">
 <img src="../img/yellow-update.png" width="750">
 </p>
