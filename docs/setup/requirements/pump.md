@@ -2,12 +2,12 @@
 
 ![insulin pumps](img/pump.png)
 
-There are a number of insulin pumps manufactured between 2006 – 2012 by Medtronic which are compatible.  Compatibility has two requirements; (1) pump model and (2) firmware.  
-
-The Loop-compatible pumps are as follows:
+There are a number of insulin pumps manufactured between 2006 – 2012 by Medtronic which are compatible.  Compatibility has two requirements; (1) pump model and (2) firmware.
 
 !!!info ""
-    HINT: The 512/712 pumps are **NOT** compatible with Loop system (you can run a limited OpenAPS setup on a 512/712, however).  The 515/715 and 522/722 pumps are all compatible.  The 523/723 and 554/754 pumps will require you to check the firmware to see if the pump is Loop compatible.  See the footnotes 3 and 4 for the required firmwares.
+    <u>LOOP COMPATIBLE PUMPS:</u>  The 515/715 and 522/722 pumps are all compatible.  The 523/723 and 554/754 pumps will require you to check the firmware to see if the pump is Loop compatible.  See the footnotes 3 and 4 for the required firmwares.
+    
+    <u>LOOP **NOT** COMPATIBLE PUMPS:</u>  The 512/712 pumps are **NOT** compatible with Loop system (you can run a limited OpenAPS setup on a 512/712, however).  The Omnipod, Animas, T-slim, Medtronic 600 series and any other name of pump that you wish to insert are also **NOT** compatible.  Work is being done to make Omnipod work with Loop, but there is no predicted timeline for that.  Believe me...when it happens we will update and announce.
 
 <table>
   <thead>
