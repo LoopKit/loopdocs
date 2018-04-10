@@ -7,7 +7,7 @@ There are a number of insulin pumps manufactured between 2006 – 2012 by Medtro
 The Loop-compatible pumps are as follows:
 
 !!!info ""
-    HINT: The 515/715 and 522/722 pumps are all compatible.  However, the 523/723 and 554/754 pumps will require you to check the firmware to see if the pump is Loop compatible.  See the footnotes 3 and 4 for the required firmwares.
+    HINT: The 512/712 pumps are **NOT** compatible with Loop system (you can run a limited OpenAPS setup on a 512/712, however).  The 515/715 and 522/722 pumps are all compatible.  The 523/723 and 554/754 pumps will require you to check the firmware to see if the pump is Loop compatible.  See the footnotes 3 and 4 for the required firmwares.
 
 <table>
   <thead>
