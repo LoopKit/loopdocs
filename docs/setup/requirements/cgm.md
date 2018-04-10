@@ -21,4 +21,7 @@ Offline use means using Loop when there is no cell data or internet available.  
 ## Dexcom Servers
 
 In some instances, the Loop may fail to eavesdrop on the Bluetooth transmissions of the CGM systems.  When that happens, the Loop can pull directly from Dexcom Servers to get the data (assuming you have entered your Share account information in the Loop settings).  When Loop is operating in this mode, you will see a small cloud in the CGM reading in the Loop app.  Operating in this mode requires a working internet or cell connection.
-  
+
+## CGMs not natively supported in Loop
+
+Libre (with Bluecon or Miao Miao), Eversense, Medtronic Guardian sensors, etc.  Yes, there are other CGM systems available out there.  Loop does not natively support those CGMs.  If you would like to use one of those alternate CGMs and Loop...you will need to look into third-party CGM systems or bridging software to allow Loop to access the data.  These docs do not cover the alternate methods of unsupported CGM systems.
