@@ -17,9 +17,9 @@ When a new version of Loop is released, you can click [HERE](https://github.com/
 
 Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app; your Apple Developer license agreement, your iPhone's iOS, your computer's macOS, your Xcode app, and/or your watchOS.  <u>If you miss some of the updates, you may run into build problems.</u>  You can check for macOS and Xcode updates using the App Store link under the apple logo in your computer display's upper left corner.  Check below to make sure your equipment is running the minimum versions of the programs.</br></br>
 
-* **macOS Sierra**: macOS 10.12.6 Sierra at a minimum, but High Sierra will work, too.</br>
-* **Xcode**: Xcode 9.2 (if using iOS 11 or newer), Xcode 9 or newer (if using iOS 10.3.3) </br>
-* **iPhone**: iOS 10.3.3 at a minimum, but iOS 11.2.5 is the most current and works well.</br></br>
+* **macOS Sierra**: macOS 10.13.2 (High Sierra if using iOS 11.3), macOS 10.12.6 Sierra at a minimum (if using iOS 11)</br>
+* **Xcode**: Xcode 9.3 (if using iOS 11.3 or newer), Xcode 9.2 (if using iOS 11), Xcode 9 or newer (if using iOS 10.3.3) </br>
+* **iPhone**: iOS 10.3.3 at a minimum, but iOS 11.3 is the most current and works well.</br></br>
 
 
 ### Download new Loop source code
