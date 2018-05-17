@@ -4,8 +4,7 @@ The overall installation process is pretty simple.  Loop is written in code that
 
 While all of this is straight forward...I'll tell you some hints upfront to save time.
 
-* Check your watchOS, iPhone OS, macOS first to see if they need updates.  Currently you'll need at least watchOS 4, iOS 10.3.3 (or iOS 11 if you are using an Apple watch) , macOS 10.12.6.  Newer versions of these will work, too.
-* If you are using iOS 11.2, you will need at least Xcode 9.2
+* Check your watchOS, iPhone OS, macOS, Xcode first to see if they need updates.  Currently you'll need to have these versions (or newer) watchOS 4, iOS 11.3, macOS 10.13.2 High Sierra, and Xcode 9.3.
 * Downloading Xcode can take hours depending on your internet connection speed.  You can do that ahead of time if you want to save yourself some waiting when you're ready to build.
 * Apple watches need to be paired with the iPhone BEFORE the Loop app is built onto the phone in order to have the Loop on the watch, too.  If you pair a new Apple watch later, you'll have to rebuild the Loop app onto the iPhone again, before the watch will work with Loop functions.
 
@@ -13,13 +12,13 @@ While all of this is straight forward...I'll tell you some hints upfront to save
 
 ### Verify macOS
 
-You need to be running macOS Sierra, at least version 10.12.6, so verify by clicking the apple logo in your computer display's upper left corner and selecting `About this Mac`.  If you have High Sierra (macOS 10.13), that is also compatible.
+You need to be running macOS High Sierra, at least version 10.13.2, so verify by clicking the apple logo in your computer display's upper left corner and selecting `About this Mac`.
 
 <p align="center">
 <img src="../img/macosx.png" width="450">
 </p>
 
-If your macOS is not Sierra, click on the `Software Update` button and update to Sierra.  If your computer is older than late 2009, you may not be able to update to Sierra.  You can check Sierra compatibility [here](https://www.apple.com/macos/how-to-upgrade/#hardware-requirements).
+If your macOS is not High Sierra, click on the `Software Update` button and update to High Sierra.  If your computer is older than late 2009/2010 (depending on computer model), you may not be able to update to Sierra.  You can check High Sierra compatibility [here](https://www.apple.com/macos/how-to-upgrade/#hardware-requirements).
 
 ### Install Homebrew and Carthage
 
@@ -69,16 +68,16 @@ Periodically, Apple will update the license agreement for the Developer Program.
 
 
 ## Setup Xcode
-Open the App Store application on your computer.  Search for Xcode and click on the link to download/install Xcode for free.  The most current version of Xcode is 9.2.  The file size is fairly large so expect about 45 minutes, or even multiple hours, to download depending on your internet speed.  You will need version Xcode 9 at least to build the current Loop app; or Xcode 9.2 if you have iOS 11.2 on your iPhone.  If you have a previous installation of Xcode, please make sure to check for updates first, before building Loop.
+Open the App Store application on your computer.  Search for Xcode and click on the link to download/install Xcode for free.  The most current version of Xcode is 9.3.  The file size is fairly large so expect about 45 minutes, or even multiple hours, to download depending on your internet speed.  You will need version Xcode 9.3 at least to build the current Loop app.  If you have a previous installation of Xcode, please make sure to check for updates first, before building Loop.
 
 <p align="center">
-<img src="../img/xcode.jpg" width="450">
+<img src="../img/xcode1.png" width="450">
 </p>
 
 Once you have Xcode downloaded, open it from your Applications folder.  There may be a short delay as Xcode installs new Command Line Tools that the app uses.  Once Xcode is open and ready, we will start with adding your new developer account to Xcode.
 
 !!!info ""
-    IMPORTANT NOTES: Do not stop the installation of Command Line Tools, that is an important installation for Xcode to work properly.  Additionally, if you see a pop-up window later during this Loop building process asking for `Keychain Access`, answer Always Allow.  This will let Xcode have access to the signing certificates that it needs for your Apple Developer account.  You will have to enter a password to allow keychain access.  That password is the admin password for your computer.
+    IMPORTANT NOTES: Do not stop the installation of Command Line Tools, that is an important installation for Xcode to work properly.  Additionally, if you see a pop-up window later during this Loop building process asking for `Keychain Access`, answer `Always Allow`.  This will let Xcode have access to the signing certificates that it needs for your Apple Developer account.  You will have to enter a password to allow keychain access.  That password is the admin password for your computer.
 
 Go to the Xcode main menu (top left of your screen) and select Preferences from the Xcode dropdown menu.  Then, click on the “Accounts” tab in the Preferences window and then press the `+` in the lower left corner to add an Apple ID account.
 

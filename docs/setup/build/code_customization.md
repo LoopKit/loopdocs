@@ -102,7 +102,7 @@ The Apple Watch's default is to autofill to 75% of the recommended bolus.  If yo
 </p>
 
 #### Adjust sensitivity of digital crown for carb and bolus entry
-The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension>>Controllers folder.  In AddCarbsInterfaceController.swift edit line 190, and in BolusInterfaceController.swift edit line 161. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.
+The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension>>Controllers folder.  In AddCarbsInterfaceController.swift edit line 194, and in BolusInterfaceController.swift edit line 163. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.
 
 <p align="center">
 <img src="../img/sensitivity2.png" width="800">
