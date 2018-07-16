@@ -4,6 +4,10 @@ RileyLink has a little switch on the side of the circuit board that is the power
 
 The RileyLink menu is accessed by clicking on the name of the connected RileyLink in the Loop Settings.  There are several important commands in the RileyLink menu that you should be aware of.
 
+Side Note: The device searching indicator (circle on the right of Devices line) will always be spinning, even after a RileyLink is successfully connected.  That is an indicator of a healthy Loop app operation.
+
+If you are ever going to be near other Loop users, you may want to consider renaming your RileyLink to a new name (like this one is renamed ToughRL) so that you can pick it out of a crowd.  Click on the RileyLink line, and the RileyLink's menu will be displayed.  At the top of this menu is a line for the device name.  Click on the that line and you will be able to change the name of your RileyLink.  (The new name may need to sit for a few seconds before exiting back out of the naming screen for it to save itself. RileyLink must be connected and on to change the name.)
+
 ## Device
 The settings under the Device section are mostly for your information only.  However, you can rename your RileyLink to something more unique.  This is a good idea if you own more than one or are ever in the presence of more than one RileyLink...you will be able to pick out your connection easier amongst a crowd of “RileyLinks”.
 
