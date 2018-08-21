@@ -1,122 +1,113 @@
-# Loop v1.5 Features
+# Loop v1.5.7 Features
 
-This is a new page in the docs.  Many people updating are not reading through the docs when they update their Loops, and therefore missing many of the new features (and requirements)...so we are adding a page to try to encourage docs use when updating.
+As always, there is a [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.5.7) with release notes about the features and changes since the previous Loop release.  
 
-As always though, the [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.5.0) still has great release notes about the features and changes since the previous Loop v1.4
+## Minimum OS updates required
 
-## OS updates
+Before you start the update process, please make sure you update your devices to the minimum required versions.
 
-* **macOS Sierra**: macOS 10.12.6 Sierra at a minimum, but High Sierra will work, too.</br>
-* **Xcode**: Xcode 9.2, older versions will not work </br>
-* **iPhone**: iOS 10.3.3 at a minimum, but iOS 11.2.5 is the most current and works well.</br></br>
+* **macOS Sierra**: macOS 10.3.2 High Sierra</br>
+* **Xcode**: Xcode 9.4 </br>
+* **iPhone**: iOS 11.1 at a minimum</br>
+* **watchOS**: watchOS 4.3</br></br>
 
+## Automatic Carthage Installation
 
-## Loop Settings
-
-There are name changes to a couple old settings, and a new setting has been added.
+The preparation steps to build Loop have changed.  Old versions of Loop required the manual installation of Homebrew and Carthage before you began the installation of Loop.  The new version only requires you to install Homebrew, Xcode will automatically install Carthage in the background if it is not already installed on your computer.  So if you are building on a new computer and think "Wait, aren't I missing a step in the directions?  I thought I had to install Carthage somewhere."...don't worry.  You haven't missed a step, Loop is just going to do it for you.
 
 <p align="center">
-<img src="../img/new_settings.jpg" width="250">
+<img src="../img/carthage-gone.png" width="750">
 </p>
 </br></br>
 
-****************************
-###<p align="center">**Correction Range**</p>
-</br>
+## Automatic Main App Bundle ID
 
-Correction Range is the new name for what used to be called BG target range.  Reason being...correction range is a little more correct as the phrase represents the targets Loop is trying to correct you too...not necessarily what your ideal BG target range may be.  For example, you may keep a correction target of 100-100 for Loop to aim to, but use a desired BG target range of 90-150 when discussing things with your endo about "time in range".  Correction range is just a little more accurate about how the values are used.
+Remember how the first step used to be that you had to change the `com.loopkit ` to something unique-to-you?  And if you updated you had to remember what you used last time?  No longer.
 
-****************************
-###<p align="center">**Suspend Threshold**</p>
-</br>
-
-Suspend Threshold is the new term for the old Minimum BG Guard.  The name was changed to help people realize that this value is also used in determining when Loop will set zero temp basals (aka suspend basals) as well as its function in bolusing recommendations.  The description below the setting has been updated to help with that understanding.
-
-****************************
-###<p align="center">**Insulin Model**</p>
-</br>
-
-This section is brand new to Loop v1.5.  Loop still has the option for the old model (Walsh curve), as well as three new models.
-
-You can read up on the new curves [here](https://loopkit.github.io/loopdocs/setup/loop-settings/settings/#insulin-model).  There is also a new customization section for the curves [here](/setup/build/code_customization.md#exponential-insulin-curve).
-
-These new models are quite a bit different than the Walsh model.  I recommend watching the bolusing recommendations and how meals are behaving with your curve selection.  Because the timing of the peak activity has changed, this will impact how the Loop recommends boluses in some instances.  Overall, most users are finding that the changes have resulted in a bit more conservative bolusing recommendations (less insulin), especially for long slow carb meals.  Developers are looking at options to assess and address that.
-
-If you fail to select an insulin model you will see this error "Missing data: Glucose effects"</br></br>
+The Main App Bundle Identifier is now going use your unique development team ID that Apple has assigned using your developer account.  You don't have to change anything now.  Just leave that as is.  When you sign your targets, Loop will automatically populate all the necessary bundle IDs with the needed information. 
 
 <p align="center">
-<img src="../img/loop_select_model.jpg" width="250">
+<img src="../img/new-main-id.png" width="750">
 </p>
 </br></br>
 
-*************************
 
-###<p align="center">**Pre-Meal Override Target**</p>
-</br>
+## Initial Loop Build Slower
 
-<p align="center">
-<img src="../img/HUD.png" width="450">
-</p>
-</br></br>
-You will notice a new logo of a plate with utensils next to the carb entry tool, at the bottom of the Loop main screen.  This icon will remain grey until you go into the Correction Targets area and set the "pre-meal" target range.  The pre-meal target is designed to be used to as an easy way to get a small amount of insulin delivered before a meal (similar to the "eating-soon" mode discussed in OpenAPS) in order to help control post-meal BG spikes.
+The new Loop will take awhile longer to build than you are used to.  This is due to some changes in the way Loop deals with integrated frameworks.  BE PATIENT.  Depending on the speed of the computer and internet, your initial build could take between 15-40 mins or so.  Subsequent builds will be fast again, it is just the first build that will take awhile.
+
+You will see this step take the longest...`Building Loop: Cartfile  |  Running 2 of 2 custom shell scripts`  Just wait it out.
 
 <p align="center">
-<img src="../img/premeal_entry.jpg" width="250">
+<img src="../img/step2.png" width="750">
 </p>
 </br></br>
 
-If your normal target is 100-100 and pre-meal target is 80-80 mg/dl, for example, Loop will give you an extra push to get you to the lower target number before the meal.  The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
+## Initial Pump Setup 
 
-Loop will adjust any insulin bolus as needed based on the insulin provided during this pre-meal time.
-
-*************************
-
-## Loop Use
-
-###<p align="center">**Large Font**</p>
-</br>
-
-Users that had noticed increased font size setting in their iPhones were not rendering properly (as shown below)...this has been fixed in Loop v1.5
+You'll notice one of the changes in the update almost immediately when you go to the Loop settings and see an `Add Pump` prompt.
 
 <p align="center">
-<img src="../img/font_size_HUD.png" width="250">
+<img src="../img/pump-manager.PNG" width="250">
+</p>
+
+The new pump setup has pretty self-explanatory steps for setting up your pump in Loop.  
+</br></br>
+
+## Basal Rates and Delivery Limits (save to pump...)
+
+Loop now automatically reads and imports the following settings from the pump during initial setup:
+
+* Basal Rates (Standard basal rates)
+* Delivery Limits (maximum basal rate and maximum bolus)
+
+<p align="center">
+<img src="../img/delivery-limits.png" width="250">
 </p>
 </br></br>
 
-*************************
-###<p align="center">**Starting Bolus Indicator**</p>
-</br>
-
-A new status line will appear when Loop is sending a bolus command to the pump.  Just above the Glucose Chart, you will see a "stating bolus" indicator.
+Even better news?  Loop now saves edits to those settings back to the pump.  There's a new `Save to pump...` button that must be used after you edit those settings in Loop.  If you don't use that button, the edits you make to those Loop settings will not be saved in Loop nor in the pump.  The purpose is to keep Loop and your pump in snyc.  **Now, if Loop fails for whatever reason, you can be sure that the basal rate in the pump will match what you've been using in your Loop.**
 
 <p align="center">
-<img src="../img/starting_bolus.png" width="250">
+<img src="../img/save-to-pump.png" width="250">
 </p>
 </br></br>
 
-*************************
-###<p align="center">**Automatic Dexcom Cloud Fetch**</p>
-</br>
+!!!info ""
+    Loop will read/write to the  Standard basal rates in your pump. If you have Pattern A or Pattern B selected, Loop will automatically switch your pump to Standard basal.  Therefore, make sure that you have updated your Standard basal pattern to reflect your current basal rates before setting up your new Loop.
 
-When local BG readings aren't being pulled by Loop, but are still fine on the Dexcom app, Loop will automatically switch to fetching from the Dexcom Servers to get BG data.  You will notice a small cloud above the BG reading when this occurs.
+## Pump Clock integration
 
-Deleting your transmitter ID for G5 users is no longer a useful troubleshooting step, since this change makes that switch happen automatically now.
+As part of the initial setup, Loop will now automatically prompt you to set your pump's time to exactly match your Loop's time.  Additionally, if you forget the warnings and set the pump time manually using the pump's menu, Loop app will now have RileyLink automatically get the pump back in-sync with Loop.  Loop will fix your mistake.  
+
+As always, you will not have to worry about pump time changes if you travel.  You do not have to change your pump's time when you travel, unless you want to.  If you decide to, remember to use your Loop to set the pump's time...don't actually use the pump buttons for time changes.
 
 <p align="center">
-<img src="../img/server_pull.png" width="250">
+<img src="../img/pump-clock.png" width="250">
 </p>
 </br></br>
 
-*************************
-###<p align="center">**Insulin Delivery in Health App**</p>
-</br>
+## Integral Retrospective Correction
 
-New to iOS 11 users, the Apple Health app will now track insulin delivery data.  Loop integrates with that feature.  A new docs page for Health app has been added too.  You can find more about that [here](/operation/features/healthapp.md)
+Integral Retrospective Correction (IRC) is an optional algorithm change, meaning it will affect how your Loop sets temp basals and recommends boluses compared to older Loop versions.  Just as with standard retrospective correction, IRC was developed to make Loop less dependent on how well carb entries, ISF, carb ratios, or programmed basal rates represent reality, and to improve Loop responses in the presence of "unannounced" factors.
 
-<p align="center">
-<img src="../img/todayhealth.jpg" width="250">
-</p>
-</br></br>
+You can read more about IRC developement [here](https://github.com/LoopKit/Loop/issues/695).
 
-*************************
+## Updated Watch App Display
+
+There is a brand new Loop watch display.  This includes a BG graph and information about IOB and COB.  You can access the new watch screen
+
+## Language Translations
+
+This release includes several new language translations.  If the user has their iPhone's language set to one of the following languages, the Loop app will match:
+
+* English
+* Spanish
+* German
+* French
+* Russian
+* Norwegian Bokmål
+* Dutch
+* Chinese (simplified)
+
 
