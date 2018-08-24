@@ -2,9 +2,9 @@
 
 A continuous glucose monitor (CGM) provides Loop with current blood glucose readings.  These readings allow Loop to predict what the current glucose trend is, and predict the future glucose based on carbohydrate input and basal profiles. The following are the types of CGMs compatible with Loop.  CGM readings are a required part of looping.  If your Loop is unable to retreive BG data, it will not be able to loop.
 
-## Dexcom G5 CGM <img src="../img/g5.jpg" width="150" alt="G5">
+## Dexcom G5 and G6 CGM <img src="../img/g5.jpg" width="150" alt="G5">
 
-Dexcom G5 receives CGM data directly to the Dexcom G5 Mobile app on your iPhone via Bluetooth.  It does not require the use of a G5 stand-alone receiver.
+Dexcom G5 and G6 receives CGM data directly to the Dexcom app on your iPhone via Bluetooth.  Neither of these two systems require the use of a stand-alone receiver.
 
 ## Dexcom G4 CGM with Share Receiver <img src="../img/g4_receiver.png" width="150" alt="G4 With Receiver">
 
@@ -16,7 +16,7 @@ The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/7
 
 ## Offline Use
 
-Offline use means using Loop when there is no cell data or internet available.  Loop does not require any special setup to operate offline.  You will not need to do anything special if you go camping or find yourself out in the wilderness.  For offline Loop use, the iPhone's Bluetooth still needs to be active; and for Dexcom system's, the Share2 or G5 Mobile app also still needs to be open (but don't have to be actively "sharing" to the internet).  If you put your iPhone into Airplane mode, remember to turn Bluetooth back on to keep your Loop running.
+Offline use means using Loop when there is no cell data or internet available.  Loop does not require any special setup to operate offline.  You will not need to do anything special if you go camping or find yourself out in the wilderness.  For offline Loop use, the iPhone's Bluetooth still needs to be active; and for Dexcom system's, the Share2 or G5 Mobile app also still needs to be open (but don't have to be actively "sharing" to the internet).  If you put your iPhone into Airplane mode, remember to turn Bluetooth back on to keep your Loop running.  If your offline use is failing, chances are you have forgotten to update your transmitter ID in Loop settings when you changed transmitters.
 
 ## Dexcom Servers
 
