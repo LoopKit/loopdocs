@@ -512,7 +512,7 @@
 <h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Permanent link">⌁</a></h2>
 <p>Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.</p>
 <div class="admonition info">
-<p>Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v1.5.9.</p>
+<p>Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v1.9.</p>
 </div>
 <h3 id="disable-touchid-for-bolus">Disable TouchID for Bolus<a class="headerlink" href="#disable-touchid-for-bolus" title="Permanent link">⌁</a></h3>
 <p>If you have TouchID enabled as part of your iPhone security (thumbprint), you will have to confirm each bolus with a thumbprint as part of standard Loop build.  If you would like to disable the TouchID for bolusing (but still keep TouchID for the rest of your normal iPhone use), you can do that by modifying Line 191 in the Loop&gt;&gt;View Controllers&gt;&gt;BolusViewController.swift.  Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
@@ -538,7 +538,8 @@ If you’d like more than just the standard 1 or 2 hour duration for the Workout
 </p>
 
 <h3 id="neutral-temp-basals">Neutral Temp Basals<a class="headerlink" href="#neutral-temp-basals" title="Permanent link">⌁</a></h3>
-<p>With the default installation, when Loop calculates that the recommended temp basal matches the basal rate in your Loop basal rate schedule (aka "neutral temp basal") rather than setting a temp basal, Loop will cancel any currently running temp basal and let the pump just run the scheduled basal.  Assuming you are using Loop v1.5.9 and the "save to pump..." command to make basal rate schedule edits, Loop and the pump will be matching and this will not cause any issues.</p>
+<p>With the default installation, when Loop calculates that the recommended temp basal matches the basal rate in your Loop basal rate schedule (aka "neutral temp basal") rather than setting a temp basal, Loop will cancel any currently running temp basal and let the pump just run the scheduled basal.  Assuming you are using Loop v1.
+9 and the "save to pump..." command to make basal rate schedule edits, Loop and the pump will be matching and this will not cause any issues.</p>
 <p>If you would like Loop to instead set neutral temp basals, you can edit lines 151 and 155 in the Loop&gt;&gt;Managers&gt;&gt;DoseMath.swift file to read <code>return self</code> as shown in screenshot below.  This will result in Loop setting neutral temp basals when the recommended temp basal matches the Loop's basal schedule.  The potential downsides are slightly more battery consumption, and slightly greater opportunity for temp basal failures as it is a longer pump communication than simply canceling a temp basal.</p>
 <p align="center">
 <img src="../img/neutral_temp.png" width="750">
