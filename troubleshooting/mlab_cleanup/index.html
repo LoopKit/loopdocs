@@ -490,9 +490,7 @@
     
         <li class="main active"><a href="#nightscout-issues">Nightscout Issues</a></li>
         
-            <li><a href="#cleanout-mlab">Cleanout mLab</a></li>
-        
-            <li><a href="#compact-mlab">Compact mLab</a></li>
+            <li><a href="#repair-process">Repair Process</a></li>
         
     
     </ul>
@@ -501,80 +499,17 @@
 
 <h1 id="nightscout-issues">Nightscout Issues<a class="headerlink" href="#nightscout-issues" title="Permanent link">⌁</a></h1>
 <p>The free Nightscout we use also depends on a free database from mLab.  The free database only has so much room...500 MB to be specific.  After a period of time (it will vary, but usually on the order of months), your mLab database could reach its free limits.  When that happens, your NS site may stop showing data properly.  For example, you may notice your Share Bridge will not pull data and your site will be “stale”.</p>
-<p>The good news?  Loop can still run just fine until you cleanout and/or compact your mLab database.  The bad news?  You just won’t be able to remotely monitor Loop through NS until you clear up some storage space in mLab.</p>
-<div class="admonition info">
-<p><strong>Note there are two areas where the 500 MB data limit can be an issue.</strong>  One is called the <code>size</code> which is the actual data stored in your database.  The other is called <code>size on disk</code> which is the virtual space that your database takes up.  As data is written onto your free database, sometimes it is written inefficiently and virtually "spreads out" to take up more room.  Depending on where your issue is, you may need to delete or cleanout data (if <code>size</code> is the issue) or you may just need to compact data (if <code>size on disk</code> is the issue).  To see the two areas, as shown on the screenshot below, click on the small <code>Home</code> link button as shown.</p>
-<p><p align="center">
-<img src="../img/mlab_size2.jpg" width="650">
-</p></p>
-</div>
-<h2 id="cleanout-mlab">Cleanout mLab<a class="headerlink" href="#cleanout-mlab" title="Permanent link">⌁</a></h2>
-<p>If <code>size</code> is the issue, there are two ways to cleanout space and delete data in your mLab database:</p>
-<ul>
-<li>mLab direct access</li>
-<li>Nightscout admin tools</li>
-</ul>
-<h3 id="mlab-direct-access">mLab Direct Access<a class="headerlink" href="#mlab-direct-access" title="Permanent link">⌁</a></h3>
-<ul>
-<li>
-<p>Login to your mLab database.  </p>
-<ul>
-<li>
-<p>If you setup your own Azure site and mLab database, go directly to <a href="http://mlab.com">mLab</a> and login, or</p>
-</li>
-<li>
-<p>If you setup your own Azure site and mLab database, then setup a Heroku account and pointed back to your old mLab database (i.e., copy and pasted the MONGODB_URI from Azure), go directly to <a href="http://mlab.com">mLab</a> and login, or</p>
-</li>
-<li>
-<p>If you setup a Heroku site and let Heroku setup an mLab database for you (which is typical for new Heroku sites), you will access mLab through your Heroku account main page.   Login to your Heroku account and click on the mLab logo as shown below.</p>
-</li>
-</ul>
-</li>
-</ul>
+<p>The good news?  Loop can still run just fine until you repair your mLab database.  The bad news?  You just won’t be able to remotely monitor Loop through NS until you clear up some storage space in mLab.</p>
+<h2 id="repair-process">Repair Process<a class="headerlink" href="#repair-process" title="Permanent link">⌁</a></h2>
+<p>Go to your Nightscout site's settings (the three horizontal bars in the upper right of your Nightscout site) and open your Admin Tools for the site.  Click on the buttons to "Delete all documents" in your Clean Mongo status database section of the Admin Tools.  For good measure, also click on the buttons for removing future items as well.  </p>
 <p align="center">
-<img src="../img/mlab_link.jpg" width="650">
+<img src="../img/ns_clean.jpeg" width="250">
 </p>
 
-<ul>
-<li>
-<p>(Users coming directly from a Heroku click will see the screen below.  If you had to login to mLab with a name and password, you will first see a line with your MongoDB database.  Click on your database name to see the screen below with all the collection names.) </p>
-<p>Your various collections are shown, similar to the screen shot below.  The amount of data each collection is using is listed to the far right of each collection’s line.  I recommend emptying the “loop” collection first (if you have one, some people won't) and then "devicestatus" to free up database storage.  If you need any of the information in the database, you may want to do a selective delete of data. For example, if you are headed into an endocrinologist appointment and want to print out recent Nightscout reports to take with you. Eventually you may need to empty more collections.  It should be awhile though, as the other collections are significantly smaller and will take a long time to fill.</p>
-<p>Click on a collection’s name to open it.</p>
-</li>
-</ul>
+<p>Now that you cleared out some database space, we can now make the database more efficient by "repairing" the database.</p>
+<p>To begin the repair process, click on the mlab link in your Heroku site control panel.</p>
 <p align="center">
-<img src="../img/mlab_collections.jpg" width="650">
-</p>
-
-<ul>
-<li>Click on the button that says “Delete all documents in collection” and then confirm the deletion.</li>
-</ul>
-<p align="center">
-<img src="../img/mlab_delete.jpg" width="650">
-</p>
-
-<ul>
-<li>You can confirm that your cleanout has resolved the problem, by checking that your database size is below 500 MB now.  Click on the <code>Home</code> link in top left.  Then review the size of the database as shown.</li>
-</ul>
-<p align="center">
-<img src="../img/mlab_size.jpg" width="650">
-</p>
-
-<h3 id="nightscout-admin-tools">Nightscout Admin Tools<a class="headerlink" href="#nightscout-admin-tools" title="Permanent link">⌁</a></h3>
-<p>If you go to your Nightscout site's settings (the three horizontal bars in the upper right of your Nightscout site), you will be able to access your Admin Tools for the site.  These include some useful quick mLab actions, includig deleting documents from the devicestatus collection similar to the action we took in the steps above.  But, it's worth noting that if you have errant future data in your Nightscout site that is causing problems (usually during time changes or overseas travel), you can clean-out future entries through this portal, too.</p>
-<p align="center">
-<img src="../img/mlab_admin_tools.jpg" width="650">
-</p>
-
-<h2 id="compact-mlab">Compact mLab<a class="headerlink" href="#compact-mlab" title="Permanent link">⌁</a></h2>
-<p>You may get an email from mLab, even after cleaning out enough space in your database, alerting you that your "file size limit" may have been exceeded.  However, these emails aren't always sent and sometimes you'll need to compact your mLab even without being notified.</p>
-<p align="center">
-<img src="../img/mlab_compact.jpg" width="650">
-</p>
-
-<p>To begin the compaction process, click on your database name.</p>
-<p align="center">
-<img src="../img/mlab_compact1.png" width="650">
+<img src="../img/mlab_link.jpg" width="750">
 </p>
 
 <p>Then click on the <code>Tools</code> tab in the screen that opens.  Click on the <code>commands</code> button and then select the <code>repairDatabase</code> from the dropdown menu of available commands.  At the bottom of the screen, select the <code>Run Command</code> button. </p>
@@ -582,11 +517,8 @@
 <img src="../img/mlab_compact2.png" width="650">
 </p>
 
-<p>Unfortunately, the <code>repairDatabase</code> command really is glitchy.  Most of the time, the command will simply stall out and not actually produce a successful <code>ok</code> return message.  If you are having problems with the command actually running, try deleting the documents in the devicestatus collection, as described in the section above.  After cleaning out the devicestatus collection, the <code>repairDatabase</code> command should work just fine.</p>
-<p>Return to your home screen and you will be able to verify the <code>Size on Disk</code> has decreased.</p>
-<p align="center">
-<img src="../img/mlab_compact3.png" width="650">
-</p></div>
+<p>After a short time, you should get a return message of "ok" at the bottom of the command menu box.  If you failed to clear out your Mongo status database before running this command, you will likely not get a successful repair and instead your pointer wheel will just keep spinning.  Make sure you first clean out the database section as described above with your Nightscout Admin Tools.</p>
+<p>You can verify that your database housekeeping was successful by returning to your NS site and waiting for the next Loop upload.  You should see all your information back in with the next Loop run.</p></div>
         </div>
 
         <footer class="col-md-12">

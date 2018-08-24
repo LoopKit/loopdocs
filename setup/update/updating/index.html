@@ -494,10 +494,6 @@
         
             <li><a href="#download-new-loop-source-code">Download new Loop source code</a></li>
         
-            <li><a href="#change-main-app-bundle-id-and-build">Change Main App Bundle ID and Build</a></li>
-        
-            <li><a href="#save-project">Save Project</a></li>
-        
             <li><a href="#add-customizations">Add customizations</a></li>
         
             <li><a href="#sign-targets-and-build">Sign Targets and Build</a></li>
@@ -516,8 +512,6 @@
 <ul>
 <li>Update iOS, macOS, Xcode, and/or watchOS</li>
 <li>Download new Loop source code</li>
-<li>Change the MAIN_APP_BUNDLE_IDENTIFIER</li>
-<li>Save project</li>
 <li>Add any customizations</li>
 <li>Sign all four targets</li>
 <li>Build app</li>
@@ -526,8 +520,8 @@
 <h3 id="update-apple-devices">Update Apple devices<a class="headerlink" href="#update-apple-devices" title="Permanent link">⌁</a></h3>
 <p>Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app; your Apple Developer license agreement, your iPhone's iOS, your computer's macOS, your Xcode app, and/or your watchOS.  <u>If you miss some of the updates, you may run into build problems.</u>  You can check for macOS and Xcode updates using the App Store link under the apple logo in your computer display's upper left corner.  Check below to make sure your equipment is running the current versions of the various OS.</br></br></p>
 <ul>
-<li><strong>macOS Sierra</strong>: macOS 10.13.6 </br></li>
-<li><strong>Xcode</strong>: Xcode 9.4</br></li>
+<li><strong>macOS High Sierra</strong>: macOS 10.13.6</br></li>
+<li><strong>Xcode</strong>: Xcode 9.4.1</br></li>
 <li><strong>iPhone</strong>: iOS 11.4</br></br></li>
 </ul>
 <h3 id="download-new-loop-source-code">Download new Loop source code<a class="headerlink" href="#download-new-loop-source-code" title="Permanent link">⌁</a></h3>
@@ -551,25 +545,10 @@ Depending on your browser and settings, your Loop download may or may not automa
 <img src="../img/folder-name.png" width="650">
 </p></p>
 </div>
-<h3 id="change-main-app-bundle-id-and-build">Change Main App Bundle ID and Build<a class="headerlink" href="#change-main-app-bundle-id-and-build" title="Permanent link">⌁</a></h3>
-<p><strong><u>You can follow the guide for installation as you did before, beginning <a href="../../build/installing/#installing-loop-using-xcode">HERE</a> to navigate to your newly downloaded source code.</u></strong></p>
-<p><strong>The most common error in updating a Loop app is to use a different MAIN_APP_BUNDLE_IDENTIFIER than you used in your original Loop build.</strong>  If you use a different MAIN_APP_BUNDLE_IDENTIFIER, your iPhone will have a brand new second Loop app and none of the settings from the original Loop app will carry over.  While some people use this technique intentionally, you will have to be aware that you cannot successfully loop with two different Loop apps actively running (opened) at the same time on the same iPhone.  So, you will have to make sure you double-tap the home button and up-swipe to close out any unused Loop apps that you don't need running.</p>
-<p>If you <strong>use the same MAIN_APP_BUNDLE_IDENTIFIER as you used in the first installation</strong>, all your old settings will be preserved and you will not have to re-enter them.  If you can't remember what you used on your current Loop app, you can open your old Loop folder on your computer, click on the <code>Loop.xcconfig</code> file, and check what you used.  Alternatively, open your Loop settings, open the Issue Report and look for a line titled <code>appGroupName</code> that is within the RileyLinkDevice section of the Issue Report.  Your MAIN_APP_BUNDLE_IDENTIFIER is shown within that area. </p>
-<p align="center">
-<img src="../img/app_group_name2.png" width="750">
-</p>
-
-<p></br></p>
-<p align="center">
-<img src="../img/app_group_name.PNG" width="400">
-</p>
-
-<h3 id="save-project">Save Project<a class="headerlink" href="#save-project" title="Permanent link">⌁</a></h3>
-<p><strong>Don't forget to save your project after changing the MAIN_APP_BUNDLE_IDENTIFIER.</strong>  Saving the project forces Xcode to update the individual bundle identifiers that are associated with the four targets.  If you don't save the project and Xcode doesn't update the bundle identifiers, you will get a build error.  SO...please remember to save project after you change your MAIN_APP_BUNDLE_IDENTIFIER.</p>
 <h3 id="add-customizations">Add customizations<a class="headerlink" href="#add-customizations" title="Permanent link">⌁</a></h3>
 <p>Add or redo any customizations, if needed.  These will not be carried over automatically from the old app.  Be sure to read up in the <a href="../../build/code_customization/">code customizations section</a> before building, as there may be new customizations available since the previous build.</p>
 <h3 id="sign-targets-and-build">Sign Targets and Build<a class="headerlink" href="#sign-targets-and-build" title="Permanent link">⌁</a></h3>
-<p>Sign the four targets and rebuild.  Nothing is changed here.  Just make sure to pick your paid developer team, if you have one.</p>
+<p>Sign the four targets and rebuild.  Just make sure to pick your paid developer team, if you have one.</p>
 <h3 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Permanent link">⌁</a></h3>
 <p><strong>If you get any build errors, please check <a href="../../build/build_errors/">this section</a> for fixes.</strong></p></div>
         </div>
