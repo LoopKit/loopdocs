@@ -1,6 +1,6 @@
-# Loop v1.5.7 Features
+# Loop v1.5.9 Features
 
-As always, there is a [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.5.7) with release notes about the features and changes since the previous Loop release.  This page provides a bit more in-depth information and practical tips about the new release. 
+As always, there is a [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.5.9) with release notes about the features and changes since the previous Loop release.  This page provides a bit more in-depth information and practical tips about the new release. 
 
 ## Minimum OS updates required
 
@@ -13,7 +13,7 @@ Before you start the update process, please make sure you update your devices to
 
 ## Automatic Carthage Installation
 
-The preparation steps to build Loop have changed.  Older versions of Loop required the manual installation of Homebrew and Carthage before you began the installation of Loop.  Loop v1.5.7 only requires you to install Homebrew, Xcode will automatically install Carthage in the background if it is not already installed on your computer.  So if you are building on a new computer and think "Wait, aren't I missing a step in the directions?  I thought I had to install Carthage somewhere."...don't worry.  You haven't missed a step, Loop is just going to do it for you.
+The preparation steps to build Loop have changed.  Older versions of Loop required the manual installation of Homebrew and Carthage before you began the installation of Loop.  Loop v1.5.9 only requires you to install Homebrew, Xcode will automatically install Carthage in the background if it is not already installed on your computer.  So if you are building on a new computer and think "Wait, aren't I missing a step in the directions?  I thought I had to install Carthage somewhere."...don't worry.  You haven't missed a step, Loop is just going to do it for you.
 
 <p align="center">
 <img src="../img/carthage-gone.png" width="750">
@@ -30,6 +30,10 @@ The Main App Bundle Identifier is now going use your unique development team ID 
 <img src="../img/new-main-id.png" width="750">
 </p>
 </br></br>
+
+This does mean that you will have to re-enter your settings in this new app for initial use, but subesquent rebuilds will be easier because the Main App Bundle Identifier will always be consistent and settings will be saved on updates using this new automated ID.  
+
+To prevent any conflicts, please remove your old app from your phone when you are done setting up this new app.
 
 
 ## Initial Loop Build Slower
@@ -111,7 +115,7 @@ Because I know you will ask:
 
 * There is no integral retrospective correction (IRC) or new watch face merged into this release.  The developers are still working out how/what the best form of those features need to be before potentially merging into a release.
 
-* Some x15 pumps will get erroneous "Bolus may not have succeeded.  Pump responded unexpectedly.  Check your pump before retrying" notifications .  This is a known issue, even since before the release of v1.5.7, discussed [here](https://github.com/LoopKit/Loop/issues/587).  You can read the thread and implement the suggested solution until one has been merged into a Loop release.
+* Some x15 pumps will get erroneous "Bolus may not have succeeded.  Pump responded unexpectedly.  Check your pump before retrying" notifications .  This is a known issue, even since before the release of v1.5.9, discussed [here](https://github.com/LoopKit/Loop/issues/587).  You can read the thread and implement the suggested solution until one has been merged into a Loop release.
 
 
 

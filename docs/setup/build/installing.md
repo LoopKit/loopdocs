@@ -4,7 +4,7 @@ The overall installation process is pretty simple.  Loop is written in code that
 
 While all of this is straight forward...I'll tell you some hints upfront to save time.
 
-* Check your watchOS, iPhone OS, macOS, Xcode first to see if they need updates.  Currently you'll need to have these versions (or newer) watchOS 4, iOS 11.4, macOS 10.13.2 High Sierra, and Xcode 9.4.
+* Check your watchOS, iPhone OS, macOS, Xcode first to see if they need updates.  Currently you'll need to have these versions (or newer) watchOS 4.3, iOS 11.1, macOS 10.13.4 High Sierra, and Xcode 9.4.
 * Downloading Xcode can take hours depending on your internet connection speed.  You can do that ahead of time if you want to save yourself some waiting when you're ready to build.
 * Apple watches need to be paired with the iPhone BEFORE the Loop app is built onto the phone in order to have the Loop on the watch, too.  If you pair a new Apple watch later, you'll have to rebuild the Loop app onto the iPhone again, before the watch will work with Loop functions.
 
@@ -12,7 +12,7 @@ While all of this is straight forward...I'll tell you some hints upfront to save
 
 ### Verify macOS
 
-You need to be running macOS High Sierra, at least version 10.13.2, so verify by clicking the apple logo in your computer display's upper left corner and selecting `About this Mac`.
+You need to be running macOS High Sierra, at least version 10.13.4, so verify by clicking the apple logo in your computer display's upper left corner and selecting `About this Mac`.
 
 <p align="center">
 <img src="../img/macosx.png" width="450">
@@ -64,7 +64,7 @@ Periodically, Apple will update the license agreement for the Developer Program.
 
 
 ## Setup Xcode
-Open the App Store application on your computer.  Search for Xcode and click on the link to download/install Xcode for free.  The most current version of Xcode is 9.4.  The file size is fairly large so expect about 45 minutes, or even multiple hours, to download depending on your internet speed.  You will need version Xcode 9.4 at least to build the current Loop app.  If you have a previous installation of Xcode, please make sure to check for updates first, before building Loop.
+Open the App Store application on your computer.  Search for Xcode and click on the link to download/install Xcode for free.  The most current version of Xcode is 9.4.1.  The file size is fairly large so expect about 45 minutes, or even multiple hours, to download depending on your internet speed.  You will need version Xcode 9.4 at least to build the current Loop app.  If you have a previous installation of Xcode, please make sure to check for updates first, before building Loop.
 
 <p align="center">
 <img src="../img/xcode1.png" width="450">
@@ -195,7 +195,7 @@ A successfully signed target will have a provisioning profile and signing certif
     **Existing Apple Watch users**: Please update your watchOS prior to building Loop app.  The current version of Loop requires watchOS 4 or newer.
     
 
-All done with any customizations? Have your Apple watch paired and updated?  Let’s finish the installation of the Loop app onto your iPhone.  Double check to make sure your iPhone's name is still selected and then press the “play” button (or build button) to start Xcode on its way.  You’ll see the progression of the build in the status window.  New builds can take about 10-20 minutes depending on the speed of the computer and internet.  Just be patient.  
+All done with any customizations? Have your Apple watch paired and updated?  Let’s finish the installation of the Loop app onto your iPhone.  Double check to make sure your iPhone's name is still selected and then press the “play” button (or build button) to start Xcode on its way.  You’ll see the progression of the build in the status window.  New builds can take about 15-40 minutes depending on the speed of the computer and internet.  Just be patient.  Subsequent builds from the same download folder will be much faster.
 
 <p align="center">
 <img src="../img/build_button.png" width="750">
