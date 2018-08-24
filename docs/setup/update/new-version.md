@@ -66,14 +66,14 @@ Loop now automatically reads and imports the following settings from the pump du
 * Delivery Limits (maximum basal rate and maximum bolus)
 
 <p align="center">
-<img src="../img/delivery-limits.png" width="250">
+<img src="../img/delivery-limits.PNG" width="250">
 </p>
 </br></br>
 
 Even better news?  Loop now saves edits to those settings back to the pump.  There's a new "Save to pump..." button that must be used after you edit those settings in Loop.  **<u>If you don't use that button, the edits you make to those Loop settings will not be saved in Loop nor in the pump.</u>**  Therefore, please confirm the edits have been successfully saved before exiting the basal rates screen.  The purpose is to keep Loop and your pump in-snyc.  Now if Loop fails for whatever reason, you can be sure that the basal rate in the pump will match what you've been using in your Loop.  
 
 <p align="center">
-<img src="../img/save-to-pump.png" width="250">
+<img src="../img/save-to-pump.PNG" width="250">
 </p>
 </br></br>
 
@@ -93,7 +93,7 @@ As part of the initial setup, Loop will now automatically prompt you to set your
 As always, you will not have to worry about pump time changes if you travel.  You do not have to change your pump's time when you travel, unless you want to.  If you decide to, remember to use your Loop to set the pump's time...don't actually use the pump buttons for time changes.
 
 <p align="center">
-<img src="../img/pump-clock.png" width="250">
+<img src="../img/pump-clock.PNG" width="250">
 </p>
 </br></br>
 
