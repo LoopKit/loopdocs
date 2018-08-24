@@ -97,7 +97,7 @@ Suspend Threshold is a required data entry for successful configuration of Loop.
 Your basal rates have already been initially populated from the pump's standard basal schedule as part of your initial setup, above.  Only one basal schedule may be set in each Loop app.  If you need to edit your basal schedule, simply make the edits as needed and then click on `Save to Pump...` button.  As a safety precaution, Loop will not allow you to only save the edits to the Loop app alone...you must successfully save the changes back to the pump to ensure Loop and the pump are in sync.  
 
 !!!info ""
-    If you make any basal edits and simply use the `Settings` button to go back to the menu without successfully saving to pump, the changes you made will not be saved in Loop app.  Loop v1.5.9 makes saving to pump a mandatory step to successfully editing basal rates.
+    If you make any basal edits and simply use the `Settings` button to go back to the menu without successfully saving to pump, the changes you made will not be saved in Loop app.  Loop v1.9 makes saving to pump a mandatory step to successfully editing basal rates.
 
 ## Delivery Limits
 

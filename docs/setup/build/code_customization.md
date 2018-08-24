@@ -2,7 +2,7 @@
 Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.
 
 !!!info ""
-    Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v1.5.9.
+    Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v1.9.
 
 ### Disable TouchID for Bolus
 
@@ -39,7 +39,7 @@ If you would like to modify those defaults, you can do so in the Loop>>Managers>
 
 ### Neutral Temp Basals
 
-With the default installation, when Loop calculates that the recommended temp basal matches the basal rate in your Loop basal rate schedule (aka "neutral temp basal") rather than setting a temp basal, Loop will cancel any currently running temp basal and let the pump just run the scheduled basal.  Assuming you are using Loop v1.5.9 and the "save to pump..." command to make basal rate schedule edits, Loop and the pump will be matching and this will not cause any issues.
+With the default installation, when Loop calculates that the recommended temp basal matches the basal rate in your Loop basal rate schedule (aka "neutral temp basal") rather than setting a temp basal, Loop will cancel any currently running temp basal and let the pump just run the scheduled basal.  Assuming you are using Loop v1.9 and the "save to pump..." command to make basal rate schedule edits, Loop and the pump will be matching and this will not cause any issues.
 
 If you would like Loop to instead set neutral temp basals, you can edit lines 151 and 155 in the Loop>>Managers>>DoseMath.swift file to read `return self` as shown in screenshot below.  This will result in Loop setting neutral temp basals when the recommended temp basal matches the Loop's basal schedule.  The potential downsides are slightly more battery consumption, and slightly greater opportunity for temp basal failures as it is a longer pump communication than simply canceling a temp basal.
 
