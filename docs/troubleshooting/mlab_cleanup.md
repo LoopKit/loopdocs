@@ -5,6 +5,9 @@ The free Nightscout we use also depends on a free database from mLab.  The free 
 The good news?  Loop can still run just fine until you repair your mLab database.  The bad news?  You just won’t be able to remotely monitor Loop through NS until you clear up some storage space in mLab.
 
 ## Repair Process
+
+NOTE: Before you delete your data, please check out the option to upload (or “donate”) your data anonymously to the [OpenAPS Data Commons](http://openaps.readthedocs.io/en/latest/docs/Give%20Back-Pay%20It%20Forward/data-commons-data-donation.html)  project. The OpenAPS Data Commons was created to enable a simple way to share DIY closed loop data sets (from OpenAPS, Loop, and AndroidAPS), both with traditional researchers who will create traditional research studies, and with groups or individuals from the DIY closed looping community who want to review data as part of their own research projects. So before you delete or cleanout any data from your mLab, consider doing an upload to OpenAPS Data Commons first.
+
 Go to your Nightscout site's settings (the three horizontal bars in the upper right of your Nightscout site) and open your Admin Tools for the site.  Click on the buttons to "Delete all documents" in your Clean Mongo status database section of the Admin Tools.  For good measure, also click on the buttons for removing future items as well.  
 
 <p align="center">
