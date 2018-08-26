@@ -16,7 +16,7 @@ Error message: "**<u>Command /bin/sh failed with exit code 1</u>**"
 
 </p>
 <p align="center">
-<img src="../img/exit-code-1.jpg" width="550">
+<img src="../img/exit-code-1-cartfile.jpg" width="550">
 </p>
 
 
