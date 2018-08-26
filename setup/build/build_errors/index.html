@@ -490,9 +490,11 @@
     
         <li class="main active"><a href="#build-errors">Build Errors</a></li>
         
-            <li><a href="#updated-xcode-but-need-to-carthage-bootstrap">Updated Xcode, but need to Carthage Bootstrap</a></li>
+            <li><a href="#exit-code-1-unrecognized-arguments-cache-builds">Exit Code 1: Unrecognized arguments: --cache-builds</a></li>
         
-            <li><a href="#exit-code-1">Exit Code 1</a></li>
+            <li><a href="#exit-code-1-xcode-select-install">Exit Code 1: xcode-select --install</a></li>
+        
+            <li><a href="#updated-xcode-but-need-to-carthage-bootstrap">Updated Xcode, but need to Carthage Bootstrap</a></li>
         
             <li><a href="#developer-license-update">Developer License Update</a></li>
         
@@ -521,6 +523,32 @@
 </p>
 
 <p><font color="red"><strong>Red error alerts</strong> </font> will have to be resolved before you can successfully build Loop app.  The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.</p>
+<h2 id="exit-code-1-unrecognized-arguments-cache-builds">Exit Code 1: Unrecognized arguments: --cache-builds<a class="headerlink" href="#exit-code-1-unrecognized-arguments-cache-builds" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>Command /bin/sh failed with exit code 1</u></strong>"</p>
+<p></p>
+<p align="center">
+<img src="../img/exit-code-1.jpg" width="550">
+</p></p>
+<p>Solution: Please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.</p>
+<h2 id="exit-code-1-xcode-select-install">Exit Code 1: xcode-select --install<a class="headerlink" href="#exit-code-1-xcode-select-install" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>Command /bin/sh failed with exit code 1</u></strong>"</p>
+<p></p>
+<p align="center">
+<img src="../img/keychain1.jpg" width="550">
+</p></p>
+<p>Solution:  This error message has been more frequent lately, but I am unsure if there is a new underlying change in Xcode or people are inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:</p>
+<ol>
+<li>Close Xcode</li>
+<li>Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)</li>
+<li>In the upper left corner of keychain access, make sure you have the keychain <code>login</code> highlighted and then click the large lock icon above the keychains area.  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
+</p>
+<p align="center">
+<img src="../img/keychain3.png" width="350">
+</p></li>
+<li>Open your Loop project again in Xcode.</li>
+<li>In the main Xcode ribbon menu (grey menu bar at the very top of your Apple display area), select the word <code>Product</code> and then select the option for <code>Clean</code>. (keyboard shortcut is shift-command-k)</li>
+<li>Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.</li>
+</ol>
 <h2 id="updated-xcode-but-need-to-carthage-bootstrap">Updated Xcode, but need to Carthage Bootstrap<a class="headerlink" href="#updated-xcode-but-need-to-carthage-bootstrap" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>Swift Compilier Error.  Module compiled with Swift 4.0 cannot be imported in Swift 4.0.x</u></strong>"
 <p align="center">
@@ -558,29 +586,6 @@ Please go to your Xcode preferences, under the Locations tab, select <code>Xcode
 <img src="../img/yellow-update.png" width="750">
 </p></li>
 </ul>
-<h2 id="exit-code-1">Exit Code 1<a class="headerlink" href="#exit-code-1" title="Permanent link">⌁</a></h2>
-<p>Error message: "<strong><u>Command /bin/sh failed with exit code 1</u></strong>"</p>
-<p></p>
-<p align="center">
-<img src="../img/keychain1.jpg" width="550">
-</p></p>
-<p></p>
-<p align="center">
-<img src="../img/keychain2.jpg" width="350">
-</p></p>
-<p>Solution:  This error message has been more frequent lately, but I am unsure if there is a new underlying change in Xcode or people are inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:</p>
-<ol>
-<li>Close Xcode</li>
-<li>Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)</li>
-<li>In the upper left corner of keychain access, make sure you have the keychain <code>login</code> highlighted and then click the large lock icon above the keychains area.  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
-</p>
-<p align="center">
-<img src="../img/keychain3.png" width="350">
-</p></li>
-<li>Open your Loop project again in Xcode.</li>
-<li>In the main Xcode ribbon menu (grey menu bar at the very top of your Apple display area), select the word <code>Product</code> and then select the option for <code>Clean</code>. (keyboard shortcut is shift-command-k)</li>
-<li>Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.</li>
-</ol>
 <h2 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u></strong>"</p>
 <p>Solution: You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.

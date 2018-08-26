@@ -538,8 +538,7 @@ If you’d like more than just the standard 1 or 2 hour duration for the Workout
 </p>
 
 <h3 id="neutral-temp-basals">Neutral Temp Basals<a class="headerlink" href="#neutral-temp-basals" title="Permanent link">⌁</a></h3>
-<p>With the default installation, when Loop calculates that the recommended temp basal matches the basal rate in your Loop basal rate schedule (aka "neutral temp basal") rather than setting a temp basal, Loop will cancel any currently running temp basal and let the pump just run the scheduled basal.  Assuming you are using Loop v1.
-9 and the "save to pump..." command to make basal rate schedule edits, Loop and the pump will be matching and this will not cause any issues.</p>
+<p>With the default installation, when Loop calculates that the recommended temp basal matches the basal rate in your Loop basal rate schedule (aka "neutral temp basal") rather than setting a temp basal, Loop will cancel any currently running temp basal and let the pump just run the scheduled basal.  Assuming you are using Loop v1.9 and the "save to pump..." command to make basal rate schedule edits, Loop and the pump will be matching and this will not cause any issues.</p>
 <p>If you would like Loop to instead set neutral temp basals, you can edit lines 151 and 155 in the Loop&gt;&gt;Managers&gt;&gt;DoseMath.swift file to read <code>return self</code> as shown in screenshot below.  This will result in Loop setting neutral temp basals when the recommended temp basal matches the Loop's basal schedule.  The potential downsides are slightly more battery consumption, and slightly greater opportunity for temp basal failures as it is a longer pump communication than simply canceling a temp basal.</p>
 <p align="center">
 <img src="../img/neutral_temp.png" width="750">
