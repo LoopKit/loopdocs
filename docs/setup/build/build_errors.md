@@ -10,6 +10,42 @@ There are two types of build errors that happen; yellow alerts and red alerts.  
 
 <font color="red">**Red error alerts** </font> will have to be resolved before you can successfully build Loop app.  The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.
 
+## Exit Code 1: Unrecognized arguments: --cache-builds
+
+Error message: "**<u>Command /bin/sh failed with exit code 1</u>**"
+
+</p>
+<p align="center">
+<img src="../img/exit-code-1.jpg" width="550">
+</p>
+
+
+Solution: Please open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
+
+
+## Exit Code 1: xcode-select --install
+
+Error message: "**<u>Command /bin/sh failed with exit code 1</u>**"
+
+</p>
+<p align="center">
+<img src="../img/keychain1.jpg" width="550">
+</p>
+
+
+Solution:  This error message has been more frequent lately, but I am unsure if there is a new underlying change in Xcode or people are inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:
+
+1. Close Xcode
+2. Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)
+3. In the upper left corner of keychain access, make sure you have the keychain `login` highlighted and then click the large lock icon above the keychains area.  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
+</p>
+<p align="center">
+<img src="../img/keychain3.png" width="350">
+</p>
+4. Open your Loop project again in Xcode.
+5. In the main Xcode ribbon menu (grey menu bar at the very top of your Apple display area), select the word `Product` and then select the option for `Clean`. (keyboard shortcut is shift-command-k)
+6. Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.
+
 ## Updated Xcode, but need to Carthage Bootstrap
 Error message: "**<u>Swift Compilier Error.  Module compiled with Swift 4.0 cannot be imported in Swift 4.0.x</u>**"
 <p align="center">
@@ -47,33 +83,6 @@ It will run for about 4-5 minutes and then show you a screen like below.
 <p align="center">
 <img src="../img/yellow-update.png" width="750">
 </p>
-
-## Exit Code 1
-
-Error message: "**<u>Command /bin/sh failed with exit code 1</u>**"
-
-</p>
-<p align="center">
-<img src="../img/keychain1.jpg" width="550">
-</p>
-
-</p>
-<p align="center">
-<img src="../img/keychain2.jpg" width="350">
-</p>
-
-Solution:  This error message has been more frequent lately, but I am unsure if there is a new underlying change in Xcode or people are inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:
-
-1. Close Xcode
-2. Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)
-3. In the upper left corner of keychain access, make sure you have the keychain `login` highlighted and then click the large lock icon above the keychains area.  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
-</p>
-<p align="center">
-<img src="../img/keychain3.png" width="350">
-</p>
-4. Open your Loop project again in Xcode.
-5. In the main Xcode ribbon menu (grey menu bar at the very top of your Apple display area), select the word `Product` and then select the option for `Clean`. (keyboard shortcut is shift-command-k)
-6. Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.
 
 ## Developer License Update
 Error message: "**<u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u>**"
