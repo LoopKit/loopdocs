@@ -167,12 +167,12 @@
         }, 
         {
             "location": "/setup/requirements/iphone/", 
-            "text": "iPhone\n\u2301\n\n\nLoop will run on on any iPhone that is running iOS 11 or later.\n\n\n\n\n\n\niPhone 7/7s+\n\n\n\n\n\n\niPhone 6/6+/6s/6s+/SE\n\n\n\n\n\n\niPhone 5/5c/5s \n\n\n\n\n\n\nWhere can you find your iPhone\u2019s iOS version?  Go to your iPhone\u2019s Settings\nGeneral\nAbout.  The iOS will be listed under \u201cVersion\u201d\n\n\n\n\n\n\n\n\n\nIf you plan on using a 5th generation iPhone, the use of the \u201cs\u201d model is encouraged (iPhone 5s).  iPhone 5c has an older bluetooth system and battery drain is fairly significant, making it less ideal for Loop use.", 
+            "text": "iPhone\n\u2301\n\n\nLoop will run on on any iPhone that is running iOS 11.1 or later.\n\n\n\n\n\n\niPhone X\n\n\n\n\n\n\niPhone 8/8+\n\n\n\n\n\n\niPhone 7/7s+\n\n\n\n\n\n\niPhone 6/6+/6s/6s+/SE\n\n\n\n\n\n\niPhone 5s \n\n\n\n\n\n\nWhere can you find your iPhone\u2019s iOS version?  Go to your iPhone\u2019s Settings\nGeneral\nAbout.  The iOS will be listed under \u201cVersion\u201d", 
             "title": "iPhone"
         }, 
         {
             "location": "/setup/requirements/iphone/#iphone", 
-            "text": "Loop will run on on any iPhone that is running iOS 11 or later.    iPhone 7/7s+    iPhone 6/6+/6s/6s+/SE    iPhone 5/5c/5s     Where can you find your iPhone\u2019s iOS version?  Go to your iPhone\u2019s Settings General About.  The iOS will be listed under \u201cVersion\u201d     If you plan on using a 5th generation iPhone, the use of the \u201cs\u201d model is encouraged (iPhone 5s).  iPhone 5c has an older bluetooth system and battery drain is fairly significant, making it less ideal for Loop use.", 
+            "text": "Loop will run on on any iPhone that is running iOS 11.1 or later.    iPhone X    iPhone 8/8+    iPhone 7/7s+    iPhone 6/6+/6s/6s+/SE    iPhone 5s     Where can you find your iPhone\u2019s iOS version?  Go to your iPhone\u2019s Settings General About.  The iOS will be listed under \u201cVersion\u201d", 
             "title": "iPhone"
         }, 
         {
