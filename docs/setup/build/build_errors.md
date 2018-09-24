@@ -26,6 +26,8 @@ Carthage update will take about 15 minutes to run successfully.  A successful ca
 <img src="../img/carthage-update-success.png" width="550">
 </p>
 
+Once carthage update has run successfully, you can return to Xcode and press the build button again.  Your project should build successfully.
+
 ## WatchApp Extension: CommandPhaseScriptExecution failed
 
 You may have a similar message as above, but not in the cartfile area.  Instead this may appear in the WatchApp Extension.  If you see a message about updating carthage version, open Terminal app and enter the following command `brew update && brew upgrade carthage`
