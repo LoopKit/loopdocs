@@ -490,6 +490,10 @@
     
         <li class="main active"><a href="#build-errors">Build Errors</a></li>
         
+            <li><a href="#cartfile-error-commandphasescriptexecution-failed">Cartfile Error: CommandPhaseScriptExecution failed</a></li>
+        
+            <li><a href="#watchapp-extension-commandphasescriptexecution-failed">WatchApp Extension: CommandPhaseScriptExecution failed</a></li>
+        
             <li><a href="#exit-code-1-unrecognized-arguments-cache-builds">Exit Code 1: Unrecognized arguments: --cache-builds</a></li>
         
             <li><a href="#exit-code-1-xcode-select-install">Exit Code 1: xcode-select --install</a></li>
@@ -523,18 +527,35 @@
 </p>
 
 <p><font color="red"><strong>Red error alerts</strong> </font> will have to be resolved before you can successfully build Loop app.  The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.</p>
+<h2 id="cartfile-error-commandphasescriptexecution-failed">Cartfile Error: CommandPhaseScriptExecution failed<a class="headerlink" href="#cartfile-error-commandphasescriptexecution-failed" title="Permanent link">⌁</a></h2>
+<p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), then you need to open Terminal app.  You will use the command <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code>.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name.  (note: double clicking on the cartfile red error will likely give more detail...one of the framework builds will likely say it failed with exit code 65.)</p>
+<p></p>
+<p align="center">
+<img src="../img/exit-code-65.png" width="850">
+</p></p>
+<p>Carthage update will take about 15 minutes to run successfully.  A successful carthage update will look like the following:</p>
+<p></p>
+<p align="center">
+<img src="../img/carthage-update-success.png" width="550">
+</p></p>
+<h2 id="watchapp-extension-commandphasescriptexecution-failed">WatchApp Extension: CommandPhaseScriptExecution failed<a class="headerlink" href="#watchapp-extension-commandphasescriptexecution-failed" title="Permanent link">⌁</a></h2>
+<p>You may have a similar message as above, but not in the cartfile area.  Instead this may appear in the WatchApp Extension.  If you see a message about updating carthage version, open Terminal app and enter the following command <code>brew update &amp;&amp; brew upgrade carthage</code></p>
+<p></p>
+<p align="center">
+<img src="../img/carthage-update.jpg" width="850">
+</p></p>
 <h2 id="exit-code-1-unrecognized-arguments-cache-builds">Exit Code 1: Unrecognized arguments: --cache-builds<a class="headerlink" href="#exit-code-1-unrecognized-arguments-cache-builds" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>Command /bin/sh failed with exit code 1</u></strong>"</p>
 <p></p>
 <p align="center">
-<img src="../img/exit-code-1-cartfile.jpg" width="550">
+<img src="../img/exit-code-1-cartfile.jpg" width="850">
 </p></p>
 <p>Solution: Please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.</p>
 <h2 id="exit-code-1-xcode-select-install">Exit Code 1: xcode-select --install<a class="headerlink" href="#exit-code-1-xcode-select-install" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>Command /bin/sh failed with exit code 1</u></strong>"</p>
 <p></p>
 <p align="center">
-<img src="../img/keychain1.jpg" width="550">
+<img src="../img/keychain1.jpg" width="850">
 </p></p>
 <p>Solution:  This error message has been more frequent lately, but I am unsure if there is a new underlying change in Xcode or people are inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:</p>
 <ol>
