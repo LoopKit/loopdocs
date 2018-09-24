@@ -10,13 +10,38 @@ There are two types of build errors that happen; yellow alerts and red alerts.  
 
 <font color="red">**Red error alerts** </font> will have to be resolved before you can successfully build Loop app.  The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.
 
+## Cartfile Error: CommandPhaseScriptExecution failed
+
+If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), then you need to open Terminal app.  You will use the command `cd ~/downloads/loop-master && carthage update`.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name.  (note: double clicking on the cartfile red error will likely give more detail...one of the framework builds will likely say it failed with exit code 65.)
+
+</p>
+<p align="center">
+<img src="../img/exit-code-65.png" width="850">
+</p>
+
+Carthage update will take about 15 minutes to run successfully.  A successful carthage update will look like the following:
+
+</p>
+<p align="center">
+<img src="../img/carthage-update-success.png" width="550">
+</p>
+
+## WatchApp Extension: CommandPhaseScriptExecution failed
+
+You may have a similar message as above, but not in the cartfile area.  Instead this may appear in the WatchApp Extension.  If you see a message about updating carthage version, open Terminal app and enter the following command `brew update && brew upgrade carthage`
+
+</p>
+<p align="center">
+<img src="../img/carthage-update.jpg" width="850">
+</p>
+
 ## Exit Code 1: Unrecognized arguments: --cache-builds
 
 Error message: "**<u>Command /bin/sh failed with exit code 1</u>**"
 
 </p>
 <p align="center">
-<img src="../img/exit-code-1-cartfile.jpg" width="550">
+<img src="../img/exit-code-1-cartfile.jpg" width="850">
 </p>
 
 
@@ -29,7 +54,7 @@ Error message: "**<u>Command /bin/sh failed with exit code 1</u>**"
 
 </p>
 <p align="center">
-<img src="../img/keychain1.jpg" width="550">
+<img src="../img/keychain1.jpg" width="850">
 </p>
 
 
