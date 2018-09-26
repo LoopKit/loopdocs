@@ -539,6 +539,11 @@
 <img src="../img/carthage-update-success.png" width="550">
 </p></p>
 <p>Once carthage update has run successfully, you can return to Xcode and press the build button again.  Your project should build successfully.</p>
+<p>If your carthage update fails, try opening Terminal app and running these commands to clear out your carthage cache and saved derived data in Xcode:</p>
+<p><code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> and <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code></p>
+<p>After running those commands, retry the <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code> (remembering to update the name of your Loop download folder, as needed).</p>
+<p>IF there are still red errors and you post for help in Looped group or Gitter...TAKE A SCREENSHOT of the whole Xcode screen after you double click on the red error message (command-shit-space bar-4 will make a screenshot tool active and the screenshot will save to your desktop).  Or even better, copy and paste the "xcodebuild output can be found at..." log file that is listed in yellow/orange color in the carthage update screen.  You can get to that log file by copy and pasting the file path (in yellow) into your Finder &gt;&gt; Go &gt;&gt; Go to Folder.. Once you open that log file, you can scroll to the bottom of the file and there will be detailed information about why carthage update failed.</p>
+<p>Please do not post without being able to provide detailed information.  It is very difficult to help troubleshoot based on vague "I have errors" information.</p>
 <h2 id="watchapp-extension-commandphasescriptexecution-failed">WatchApp Extension: CommandPhaseScriptExecution failed<a class="headerlink" href="#watchapp-extension-commandphasescriptexecution-failed" title="Permanent link">⌁</a></h2>
 <p>You may have a similar message as above, but not in the cartfile area.  Instead this may appear in the WatchApp Extension.  If you see a message about updating carthage version, open Terminal app and enter the following command <code>brew update &amp;&amp; brew upgrade carthage</code></p>
 <p></p>
