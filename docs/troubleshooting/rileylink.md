@@ -35,7 +35,15 @@ RileyLink has several lights that you may notice from time to time.  There is no
 
 * Green light: Bluetooth connection light.  The green light will remain on while you have BT connection with your iPhone.  If that green light fails to stay on, you should troubleshoot your BT connections.  Try restarting BT on your iPhone and/or turning the RileyLink off/on by its power switch.
 
-* Blue light: Pump communications.  If you have an older firmware on your RileyLink, some of the blue and green lights will flash periodically as it is communicating with the pump.  It's just letting you know that it is busy talking and collecting info.
+* Blue light: Pump communications.  If you have an older firmware on your RileyLink, some of the blue lights will flash periodically as it is communicating with the pump.  It's just letting you know that it is busy talking and collecting info.  You will also see increased blue flashes if you have "Enabled Diagnositic LEDs" for RileyLinks that have the updated firmware (shipping since late August 2018).
+
+A solid blue light that consistenly remains lit on the board could mean one of two things:
+
+* A temporary issue that can be resolved by rebooting the RileyLink physically (turning the switch off/on), or
+
+* An electrical short or damage to the board.  Sweat and moisture are most likely culprits, so try to keep case free from those environments (don't keep in sports bras or waist band next to skin, for example, while exercising)
+
+If your blue light remains on despite trying a restart, it is time to pull out your backup RileyLink.
 
 ## Charging
 
@@ -66,3 +74,11 @@ Keep your RileyLink and lipo battery protected from damage.  Lipo batteries are 
 <p align="center">
 <img src="../img/rl_case.jpg" width="400">
 </p>
+
+## Removing Lipo Battery
+
+To remove the lipo battery from the RileyLink, please do so slowly and patiently.  Work the battery connection side to side slowly to loosen it from the plug.  Some people have reported success using small, curved needle nose pliers such as hemostats.  Others have used small flathead screwdrivers as shown in [this video](https://youtu.be/s2qNPLpfwww).
+
+<a href="https://youtu.be/s2qNPLpfwww" target="_blank"><img src="../img/rileylink_battery_removal.png"  title="RileyLink assembly video" /></a>
+
+
