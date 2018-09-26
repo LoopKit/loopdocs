@@ -28,6 +28,16 @@ Carthage update will take about 15 minutes to run successfully.  A successful ca
 
 Once carthage update has run successfully, you can return to Xcode and press the build button again.  Your project should build successfully.
 
+If your carthage update fails, try opening Terminal app and running these commands to clear out your carthage cache and saved derived data in Xcode:
+
+`rm -rf ~/Library/Caches/org.carthage.CarthageKit` and `rm -rf ~/Library/Developer/Xcode/DerivedData`
+
+After running those commands, retry the `cd ~/downloads/loop-master && carthage update` (remembering to update the name of your Loop download folder, as needed).
+
+IF there are still red errors and you post for help in Looped group or Gitter...TAKE A SCREENSHOT of the whole Xcode screen after you double click on the red error message (command-shit-space bar-4 will make a screenshot tool active and the screenshot will save to your desktop).  Or even better, copy and paste the "xcodebuild output can be found at..." log file that is listed in yellow/orange color in the carthage update screen.  You can get to that log file by copy and pasting the file path (in yellow) into your Finder >> Go >> Go to Folder.. Once you open that log file, you can scroll to the bottom of the file and there will be detailed information about why carthage update failed.
+
+Please do not post without being able to provide detailed information.  It is very difficult to help troubleshoot based on vague "I have errors" information.
+
 ## WatchApp Extension: CommandPhaseScriptExecution failed
 
 You may have a similar message as above, but not in the cartfile area.  Instead this may appear in the WatchApp Extension.  If you see a message about updating carthage version, open Terminal app and enter the following command `brew update && brew upgrade carthage`
