@@ -23,6 +23,10 @@ RileyLink communicates with your iPhone and Loop app through Bluetooth (BT).  If
 
 Your BT signal strength can be seen in the Loop settings, under the RileyLink menu, on the `Signal Strength` line.  As you move closer and further away from your phone, you can watch that number dynamically change. This line is **not** displaying the signal strength of your pump communications discussed above (those are shown in the tuning results screen).
 
+<p align="center">
+<img src="../img/RL_bt.jpg" width="400">
+</p>
+
 ## Lights
 
 RileyLink has several lights that you may notice from time to time.  There is no 'power' light.  If you suspect that your RileyLink is not being powered, try turning it off and on using the small sliding switch.  You should see lights in the middle of the board flash when you do this.  If they flash, that means the board has power.
