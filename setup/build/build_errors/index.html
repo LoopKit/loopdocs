@@ -490,25 +490,19 @@
     
         <li class="main active"><a href="#build-errors">Build Errors</a></li>
         
-            <li><a href="#cartfile-error-commandphasescriptexecution-failed">Cartfile Error: CommandPhaseScriptExecution failed</a></li>
+            <li><a href="#build-failed-in-frameworks">Build Failed in frameworks</a></li>
         
-            <li><a href="#watchapp-extension-commandphasescriptexecution-failed">WatchApp Extension: CommandPhaseScriptExecution failed</a></li>
+            <li><a href="#carthage-update-message">Carthage update message</a></li>
         
-            <li><a href="#exit-code-1-unrecognized-arguments-cache-builds">Exit Code 1: Unrecognized arguments: --cache-builds</a></li>
+            <li><a href="#unrecognized-arguments-cache-builds">Unrecognized arguments: --cache-builds</a></li>
         
-            <li><a href="#exit-code-1-xcode-select-install">Exit Code 1: xcode-select --install</a></li>
-        
-            <li><a href="#updated-xcode-but-need-to-carthage-bootstrap">Updated Xcode, but need to Carthage Bootstrap</a></li>
+            <li><a href="#xcode-select-install">Xcode-select --install</a></li>
         
             <li><a href="#developer-license-update">Developer License Update</a></li>
         
-            <li><a href="#swift-language-version">Swift Language Version</a></li>
-        
-            <li><a href="#embedded-binary-error">Embedded Binary error</a></li>
+            <li><a href="#outdated-xcode">Outdated Xcode</a></li>
         
             <li><a href="#abort-with-payload">Abort with Payload</a></li>
-        
-            <li><a href="#exit-code-127">Exit Code 127</a></li>
         
             <li><a href="#apple-watch-loop-app-not-appearing">Apple Watch: Loop app not appearing</a></li>
         
@@ -527,8 +521,11 @@
 </p>
 
 <p><font color="red"><strong>Red error alerts</strong> </font> will have to be resolved before you can successfully build Loop app.  The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.</p>
-<h2 id="cartfile-error-commandphasescriptexecution-failed">Cartfile Error: CommandPhaseScriptExecution failed<a class="headerlink" href="#cartfile-error-commandphasescriptexecution-failed" title="Permanent link">⌁</a></h2>
-<p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), then you need to open Terminal app.  You will use the command <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code>.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name.  (note: double clicking on the cartfile red error will likely give more detail...one of the framework builds will likely say it failed with exit code 65.)</p>
+<div class="admonition info">
+<p>Before looking at the solutions below...please double click on your red error message to bring up additional information about your particular error message.  Merely seeing the title of the error code on the left column of Xcode is not necessarily enough information to discern what error is causing your build to fail.  And therefore, you need to look at the detailed message and find the matching error message in the sections below.</p>
+</div>
+<h2 id="build-failed-in-frameworks">Build Failed in frameworks<a class="headerlink" href="#build-failed-in-frameworks" title="Permanent link">⌁</a></h2>
+<p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open Terminal app.  You will use the command <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code>.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name. </p>
 <p></p>
 <p align="center">
 <img src="../img/exit-code-65.png" width="850">
@@ -542,23 +539,27 @@
 <p>If your carthage update fails, try opening Terminal app and running these commands to clear out your carthage cache and saved derived data in Xcode:</p>
 <p><code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> and <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code></p>
 <p>After running those commands, retry the <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code> (remembering to update the name of your Loop download folder, as needed).</p>
-<p>IF there are still red errors and you post for help in Looped group or Gitter...TAKE A SCREENSHOT of the whole Xcode screen after you double click on the red error message (command-shit-space bar-4 will make a screenshot tool active and the screenshot will save to your desktop).  Or even better, copy and paste the "xcodebuild output can be found at..." log file that is listed in yellow/orange color in the carthage update screen.  You can get to that log file by copy and pasting the file path (in yellow) into your Finder &gt;&gt; Go &gt;&gt; Go to Folder.. Once you open that log file, you can scroll to the bottom of the file and there will be detailed information about why carthage update failed.</p>
+<p>IF there are still red errors and you post for help in Looped group or Gitter...<strong>TAKE A SCREENSHOT of the whole Xcode screen after you double click on the red error message</strong> (command-shit-space bar-4 will make a screenshot tool active and the screenshot will save to your desktop).  Or even better, copy and paste the "xcodebuild output can be found at..." log file that is listed in yellow/orange color in the carthage update screen.  You can get to that log file by copy and pasting the file path (in yellow) into your Finder &gt;&gt; Go &gt;&gt; Go to Folder.. Once you open that log file, you can scroll to the bottom of the file and there will be detailed information about why carthage update failed.</p>
 <p>Please do not post without being able to provide detailed information.  It is very difficult to help troubleshoot based on vague "I have errors" information.</p>
-<h2 id="watchapp-extension-commandphasescriptexecution-failed">WatchApp Extension: CommandPhaseScriptExecution failed<a class="headerlink" href="#watchapp-extension-commandphasescriptexecution-failed" title="Permanent link">⌁</a></h2>
-<p>You may have a similar message as above, but not in the cartfile area.  Instead this may appear in the WatchApp Extension.  If you see a message about updating carthage version, open Terminal app and enter the following command <code>brew update &amp;&amp; brew upgrade carthage</code></p>
+<h2 id="carthage-update-message">Carthage update message<a class="headerlink" href="#carthage-update-message" title="Permanent link">⌁</a></h2>
+<p>If you see a message about updating carthage version, open Terminal app and enter the following command <code>brew update &amp;&amp; brew upgrade carthage</code></p>
 <p></p>
 <p align="center">
 <img src="../img/carthage-update.jpg" width="850">
 </p></p>
-<h2 id="exit-code-1-unrecognized-arguments-cache-builds">Exit Code 1: Unrecognized arguments: --cache-builds<a class="headerlink" href="#exit-code-1-unrecognized-arguments-cache-builds" title="Permanent link">⌁</a></h2>
-<p>Error message: "<strong><u>Command /bin/sh failed with exit code 1</u></strong>"</p>
+<h2 id="unrecognized-arguments-cache-builds">Unrecognized arguments: --cache-builds<a class="headerlink" href="#unrecognized-arguments-cache-builds" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>Unrecognized arguments: --cache-builds</u></strong>"</p>
+<p></p>
+<p align="center">
+<img src="../img/cache-builds.png" width="850">
+</p></p>
 <p></p>
 <p align="center">
 <img src="../img/exit-code-1-cartfile.jpg" width="850">
 </p></p>
 <p>Solution: Please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.</p>
-<h2 id="exit-code-1-xcode-select-install">Exit Code 1: xcode-select --install<a class="headerlink" href="#exit-code-1-xcode-select-install" title="Permanent link">⌁</a></h2>
-<p>Error message: "<strong><u>Command /bin/sh failed with exit code 1</u></strong>"</p>
+<h2 id="xcode-select-install">Xcode-select --install<a class="headerlink" href="#xcode-select-install" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>xcode-select --install</u></strong>"</p>
 <p></p>
 <p align="center">
 <img src="../img/keychain1.jpg" width="850">
@@ -576,73 +577,19 @@
 <li>In the main Xcode ribbon menu (grey menu bar at the very top of your Apple display area), select the word <code>Product</code> and then select the option for <code>Clean</code>. (keyboard shortcut is shift-command-k)</li>
 <li>Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.</li>
 </ol>
-<h2 id="updated-xcode-but-need-to-carthage-bootstrap">Updated Xcode, but need to Carthage Bootstrap<a class="headerlink" href="#updated-xcode-but-need-to-carthage-bootstrap" title="Permanent link">⌁</a></h2>
-<p>Error message: "<strong><u>Swift Compilier Error.  Module compiled with Swift 4.0 cannot be imported in Swift 4.0.x</u></strong>"
-<p align="center">
-<img src="../img/xcode9_1.png" width="750">
-</p></p>
-<p>Soultion: Xcode was recently updated, and the current Loop master branch will produce this error message until the code is updated.  You will need to perform the following steps:</p>
-<ul>
-<li>Open Terminal App</li>
-<li>Navigate to your Loop download by doing the command:
-<code>cd downloads/Loop-master</code>
-(or whatever you named your Loop folder...go check)</li>
-<li>Now use the command
-<code>carthage bootstrap</code>
-It will run for about 4-5 minutes and then show you a screen like below.
-<p align="center">
-<img src="../img/carthage-bootstrap.png" width="750">
-</p></li>
-</ul>
-<div class="admonition info">
-<p>If during the run of <code>carthage bootstrap</code>, you instead see an error message like below:
-</p>
-<p align="center">
-<img src="../img/exit-code-72.jpg" width="550">
-</p>
-Please go to your Xcode preferences, under the Locations tab, select <code>Xcode 9.3</code> under the Command Line Tools
-<p align="center">
-<img src="../img/command-line-tools.png" width="750">
-</p></p>
-<p>If Xcode 9.3 is not available in the dropdown menu, (1) make sure you have update your Xcode from the App store and then (2) go to Terminal app and run the command <code>xcode-select --install</code> which will produce a pop-up window for the installation of command line developer tools.  Select  <code>install</code> in that pop-up window.</p>
-<p>Return to Terminal app and rerun <code>carthage bootstrap</code> in your Loop download folder.  It should resolve correctly after that.</p>
-</div>
-<ul>
-<li>Go back to your Loop project in Xcode, select your iPhone, and press the build button. You'll still see some yellow alerts, but those are fine.
-<p align="center">
-<img src="../img/yellow-update.png" width="750">
-</p></li>
-</ul>
 <h2 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u></strong>"</p>
 <p>Solution: You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.
 <p align="center">
 <img src="../img/license.png" width="750">
 </p></p>
-<h2 id="swift-language-version">Swift Language Version<a class="headerlink" href="#swift-language-version" title="Permanent link">⌁</a></h2>
-<p>Error message: <strong><u>Swift Language Version” (SWIFT_VERSION) is required to be configured correctly</u></strong> for targets which use Swift. Use the [Edit &gt; Convert &gt; To Current Swift Syntax…] menu to choose a Swift version or use the Build Settings editor to configure the build setting directly" or also <strong>"Could not locate device support files.  This iPhone is running iOS 11.x, which may not be supported by this version of Xcode.</strong>"</p>
-<p>Solution: You will need to go to your computer's App Store and install the Xcode app update.
+<h2 id="outdated-xcode">Outdated Xcode<a class="headerlink" href="#outdated-xcode" title="Permanent link">⌁</a></h2>
+<p>Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10, you will receive the following errors when you try to build:</p>
 <p align="center">
-<img src="../img/old_xcode.jpg" width="750">
+<img src="../img/xcode10-update.png" width="750">
 </p>
-<p align="center">
-<img src="../img/old_xcode2.jpg" width="750">
-</p>
-<p align="center">
-<img src="../img/update.jpg" width="750">
-</p></p>
-<h2 id="embedded-binary-error">Embedded Binary error<a class="headerlink" href="#embedded-binary-error" title="Permanent link">⌁</a></h2>
-<p>Error message: "<strong><u>Embedded Binary Validation Utility.  error: Embedded binary's bundle identifier is not prefixed with the parent app's bundle identifier</u></strong>".
-<p align="center">
-<img src="../img/bundle_fail.jpg" width="750">
-</p>
-Solution:  This error happens because you've either</p>
-<ol>
-<li>Forgotten to save project after the MAIN_APP_BUNDLE_ID was changed (most common cause)</li>
-<li>Tried to manually change one of the Bundle ID names in one of the four targets, or</li>
-<li>Used an incorrect syntax in the MAIN_APP_BUNDLE_ID.</li>
-</ol>
-<p>In any case however, usually this error is most easily solved by closing out your project, deleting the download folder, and starting with a fresh download of Loop app.  The next time you build, make sure to follow the directions carefully to use a MAIN_APP_BUNDLE_ID in the right format and press <code>command-s</code> to force Xcode to update the targets' naming scheme correction.</p>
+
+<p>Solution: You will need to go to your computer's App Store and install the Xcode app update.</p>
 <h2 id="abort-with-payload">Abort with Payload<a class="headerlink" href="#abort-with-payload" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>Abort with payload</u></strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.
 <p align="center">
@@ -654,18 +601,18 @@ Solution: This error message is caused by either</p>
 <li>Having a space in the name of your Loop download folder.</li>
 </ol>
 <p>Rename the folder to have no spaces and/or move it back to the Downloads folder, then rebuild.</p>
-<h2 id="exit-code-127">Exit Code 127<a class="headerlink" href="#exit-code-127" title="Permanent link">⌁</a></h2>
-<p>Error message: "<strong><u>Shell Script Invocation Error.  Command /bin/sh failed with exit code 127</u></strong>"
-<p align="center">
-<img src="../img/exit127.jpg" width="250">
-</p></p>
-<p>Solution: This error code is happening for Loopers updating to Loop who used carthage.pkg and don't have homebrew installed.  We have since updated the installation docs, so new users likely won't run into this error.  But, if you are an existing Looper encountering this error message while trying to update your Loop, please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.</p>
 <h2 id="apple-watch-loop-app-not-appearing">Apple Watch: Loop app not appearing<a class="headerlink" href="#apple-watch-loop-app-not-appearing" title="Permanent link">⌁</a></h2>
 <p>Error: <strong><u>Apple watch app is not appearing</u></strong>.</p>
 <p>Solution: Usually because you have not updated to watchOS prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p>
 <h2 id="apple-watch-loop-app-not-installing">Apple Watch: Loop app not installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Permanent link">⌁</a></h2>
 <p>Error: <strong><u>The Loop app appears on the list of app available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL"</u></strong>.</p>
-<p>Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watchface and select the "Trust" button.  Now rebuild your Loop app in Xcode, but look for a pop-up message that warns you that the Watch isn't registered with the Developer portal.  Click on the "register" button that is in the pop-up window and proceed with the Loop app building again.</p></div>
+<p>Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watchface and select the "Trust" button.  Now rebuild your Loop app in Xcode, but look for a pop-up message that warns you that the Watch isn't registered with the Developer portal.  Click on the "register" button that is in the pop-up window and proceed with the Loop app building again.</p>
+<div class="admonition info">
+<p>WatchOS 5 appears to be an issue for some users currently.  If your Loop app is not properly installing on your watch using watchOS 5, please reopen Loop in Xcode and change the deployment targets in the WatchApp and WatchApp Extension targets to a Deployment Target of 5.0.  Rebuild and your watch app should install properly.</p>
+</div>
+<p align="center">
+<img src="../img/watchOS-5.png" width="750">
+</p></div>
         </div>
 
         <footer class="col-md-12">
