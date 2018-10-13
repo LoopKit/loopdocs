@@ -496,7 +496,7 @@
         
             <li><a href="#unrecognized-arguments-cache-builds">Unrecognized arguments: --cache-builds</a></li>
         
-            <li><a href="#xcode-select-install">Xcode-select --install</a></li>
+            <li><a href="#command-codesign-failed">Command CodeSign failed</a></li>
         
             <li><a href="#developer-license-update">Developer License Update</a></li>
         
@@ -558,23 +558,29 @@
 <img src="../img/exit-code-1-cartfile.jpg" width="850">
 </p></p>
 <p>Solution: Please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.</p>
-<h2 id="xcode-select-install">Xcode-select --install<a class="headerlink" href="#xcode-select-install" title="Permanent link">⌁</a></h2>
-<p>Error message: "<strong><u>xcode-select --install</u></strong>"</p>
+<h2 id="command-codesign-failed">Command CodeSign failed<a class="headerlink" href="#command-codesign-failed" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>errSecInternalComponent,  Command CodeSign failed with a nonzero exit code</u></strong>"</p>
 <p></p>
 <p align="center">
-<img src="../img/keychain1.jpg" width="850">
+<img src="../img/errsecinternal.jpg" width="850">
 </p></p>
-<p>Solution:  This error message has been more frequent lately, but I am unsure if there is a new underlying change in Xcode or people are inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:</p>
+<p>Solution:  This error message has been more frequent lately, but I believe it is due to inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:</p>
 <ol>
 <li>Close Xcode</li>
 <li>Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)</li>
-<li>In the upper left corner of keychain access, make sure you have the keychain <code>login</code> highlighted and then click the large lock icon above the keychains area.  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
+<li>In the upper left corner of keychain access, make sure you have the keychain <code>login</code> highlighted and then click the large lock icon above the keychains area (High Sierra users) or right-click the lock next to the <code>login</code> (Mojave macOS users).  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
 </p>
 <p align="center">
-<img src="../img/keychain3.png" width="350">
+<img src="../img/keychain3.png" width="450">
 </p></li>
+</ol>
+<p></p>
+<p align="center">
+<img src="../img/keychain4.png" width="450">
+</p></p>
+<ol>
 <li>Open your Loop project again in Xcode.</li>
-<li>In the main Xcode ribbon menu (grey menu bar at the very top of your Apple display area), select the word <code>Product</code> and then select the option for <code>Clean</code>. (keyboard shortcut is shift-command-k)</li>
+<li>In the main Xcode menu (grey menu bar at the very top of your Apple display area), select the word <code>Product</code> and then select the option for <code>Clean</code>. (keyboard shortcut is shift-command-k)</li>
 <li>Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.</li>
 </ol>
 <h2 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Permanent link">⌁</a></h2>
