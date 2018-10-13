@@ -492,15 +492,17 @@
         
             <li><a href="#build-failed-in-frameworks">Build Failed in frameworks</a></li>
         
-            <li><a href="#carthage-update-message">Carthage update message</a></li>
+            <li><a href="#outdated-xcode">Outdated Xcode</a></li>
         
-            <li><a href="#unrecognized-arguments-cache-builds">Unrecognized arguments: --cache-builds</a></li>
+            <li><a href="#command-line-tools">Command Line Tools</a></li>
         
             <li><a href="#command-codesign-failed">Command CodeSign failed</a></li>
         
             <li><a href="#developer-license-update">Developer License Update</a></li>
         
-            <li><a href="#outdated-xcode">Outdated Xcode</a></li>
+            <li><a href="#carthage-update-message">Carthage update message</a></li>
+        
+            <li><a href="#unrecognized-arguments-cache-builds">Unrecognized arguments: --cache-builds</a></li>
         
             <li><a href="#abort-with-payload">Abort with Payload</a></li>
         
@@ -541,23 +543,28 @@
 <p>After running those commands, retry the <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code> (remembering to update the name of your Loop download folder, as needed).</p>
 <p>IF there are still red errors and you post for help in Looped group or Gitter...<strong>TAKE A SCREENSHOT of the whole Xcode screen after you double click on the red error message</strong> (command-shit-space bar-4 will make a screenshot tool active and the screenshot will save to your desktop).  Or even better, copy and paste the "xcodebuild output can be found at..." log file that is listed in yellow/orange color in the carthage update screen.  You can get to that log file by copy and pasting the file path (in yellow) into your Finder &gt;&gt; Go &gt;&gt; Go to Folder.. Once you open that log file, you can scroll to the bottom of the file and there will be detailed information about why carthage update failed.</p>
 <p>Please do not post without being able to provide detailed information.  It is very difficult to help troubleshoot based on vague "I have errors" information.</p>
-<h2 id="carthage-update-message">Carthage update message<a class="headerlink" href="#carthage-update-message" title="Permanent link">⌁</a></h2>
-<p>If you see a message about updating carthage version, open Terminal app and enter the following command <code>brew update &amp;&amp; brew upgrade carthage</code></p>
+<h2 id="outdated-xcode">Outdated Xcode<a class="headerlink" href="#outdated-xcode" title="Permanent link">⌁</a></h2>
+<p>Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10, you will receive the following errors when you try to build:</p>
+<p align="center">
+<img src="../img/xcode10-update.png" width="750">
+</p>
+
+<p>Solution: You will need to go to your computer's App Store and install the Xcode app update.</p>
+<h2 id="command-line-tools">Command Line Tools<a class="headerlink" href="#command-line-tools" title="Permanent link">⌁</a></h2>
+<p>Error message:  "<strong><u>Invalid active developer path (/Library/Developer/CommandLineTools)</u></strong>" or "<strong><u>unable to find utility "xcodebuild", not a developer tool or in PATH</u></strong>"</p>
 <p></p>
 <p align="center">
-<img src="../img/carthage-update.jpg" width="850">
-</p></p>
-<h2 id="unrecognized-arguments-cache-builds">Unrecognized arguments: --cache-builds<a class="headerlink" href="#unrecognized-arguments-cache-builds" title="Permanent link">⌁</a></h2>
-<p>Error message: "<strong><u>Unrecognized arguments: --cache-builds</u></strong>"</p>
-<p></p>
-<p align="center">
-<img src="../img/cache-builds.png" width="850">
+<img src="../img/command-line-error-1.jpg" width="550">
 </p></p>
 <p></p>
 <p align="center">
-<img src="../img/exit-code-1-cartfile.jpg" width="850">
+<img src="../img/command-line-error-2.jpg" width="550">
 </p></p>
-<p>Solution: Please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.</p>
+<p>Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 10" in the dropdown menu for Command Line Tools.</p>
+<p></p>
+<p align="center">
+<img src="../img/command-line-error-3.png" width="550">
+</p></p>
 <h2 id="command-codesign-failed">Command CodeSign failed<a class="headerlink" href="#command-codesign-failed" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>errSecInternalComponent,  Command CodeSign failed with a nonzero exit code</u></strong>"</p>
 <p></p>
@@ -589,13 +596,23 @@
 <p align="center">
 <img src="../img/license.png" width="750">
 </p></p>
-<h2 id="outdated-xcode">Outdated Xcode<a class="headerlink" href="#outdated-xcode" title="Permanent link">⌁</a></h2>
-<p>Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10, you will receive the following errors when you try to build:</p>
+<h2 id="carthage-update-message">Carthage update message<a class="headerlink" href="#carthage-update-message" title="Permanent link">⌁</a></h2>
+<p>If you see a message about updating carthage version, open Terminal app and enter the following command <code>brew update &amp;&amp; brew upgrade carthage</code></p>
+<p></p>
 <p align="center">
-<img src="../img/xcode10-update.png" width="750">
-</p>
-
-<p>Solution: You will need to go to your computer's App Store and install the Xcode app update.</p>
+<img src="../img/carthage-update.jpg" width="850">
+</p></p>
+<h2 id="unrecognized-arguments-cache-builds">Unrecognized arguments: --cache-builds<a class="headerlink" href="#unrecognized-arguments-cache-builds" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>Unrecognized arguments: --cache-builds</u></strong>"</p>
+<p></p>
+<p align="center">
+<img src="../img/cache-builds.png" width="850">
+</p></p>
+<p></p>
+<p align="center">
+<img src="../img/exit-code-1-cartfile.jpg" width="850">
+</p></p>
+<p>Solution: Please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.</p>
 <h2 id="abort-with-payload">Abort with Payload<a class="headerlink" href="#abort-with-payload" title="Permanent link">⌁</a></h2>
 <p>Error message: "<strong><u>Abort with payload</u></strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.
 <p align="center">
