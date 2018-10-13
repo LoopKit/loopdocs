@@ -68,27 +68,33 @@ Error message: "**<u>Unrecognized arguments: --cache-builds</u>**"
 Solution: Please open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
 
 
-## Xcode-select --install
+## Command CodeSign failed
 
-Error message: "**<u>xcode-select --install</u>**"
+Error message: "**<u>errSecInternalComponent,  Command CodeSign failed with a nonzero exit code</u>**"
 
 </p>
 <p align="center">
-<img src="../img/keychain1.jpg" width="850">
+<img src="../img/errsecinternal.jpg" width="850">
 </p>
 
 
-Solution:  This error message has been more frequent lately, but I am unsure if there is a new underlying change in Xcode or people are inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:
+Solution:  This error message has been more frequent lately, but I believe it is due to inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:
 
 1. Close Xcode
 2. Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)
-3. In the upper left corner of keychain access, make sure you have the keychain `login` highlighted and then click the large lock icon above the keychains area.  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
+3. In the upper left corner of keychain access, make sure you have the keychain `login` highlighted and then click the large lock icon above the keychains area (High Sierra users) or right-click the lock next to the `login` (Mojave macOS users).  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
 </p>
 <p align="center">
-<img src="../img/keychain3.png" width="350">
+<img src="../img/keychain3.png" width="450">
 </p>
+
+</p>
+<p align="center">
+<img src="../img/keychain4.png" width="450">
+</p>
+
 4. Open your Loop project again in Xcode.
-5. In the main Xcode ribbon menu (grey menu bar at the very top of your Apple display area), select the word `Product` and then select the option for `Clean`. (keyboard shortcut is shift-command-k)
+5. In the main Xcode menu (grey menu bar at the very top of your Apple display area), select the word `Product` and then select the option for `Clean`. (keyboard shortcut is shift-command-k)
 6. Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.
 
 ## Developer License Update
