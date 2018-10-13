@@ -41,32 +41,35 @@ IF there are still red errors and you post for help in Looped group or Gitter...
 
 Please do not post without being able to provide detailed information.  It is very difficult to help troubleshoot based on vague "I have errors" information.
 
-## Carthage update message
+## Outdated Xcode
+Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10, you will receive the following errors when you try to build:
 
- If you see a message about updating carthage version, open Terminal app and enter the following command `brew update && brew upgrade carthage`
+<p align="center">
+<img src="../img/xcode10-update.png" width="750">
+</p>
+
+Solution: You will need to go to your computer's App Store and install the Xcode app update.
+
+## Command Line Tools
+
+Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandLineTools)</u>**" or "**<u>unable to find utility "xcodebuild", not a developer tool or in PATH</u>**"
 
 </p>
 <p align="center">
-<img src="../img/carthage-update.jpg" width="850">
-</p>
-
-## Unrecognized arguments: --cache-builds
-
-Error message: "**<u>Unrecognized arguments: --cache-builds</u>**"
-
-</p>
-<p align="center">
-<img src="../img/cache-builds.png" width="850">
+<img src="../img/command-line-error-1.jpg" width="550">
 </p>
 
 </p>
 <p align="center">
-<img src="../img/exit-code-1-cartfile.jpg" width="850">
+<img src="../img/command-line-error-2.jpg" width="550">
 </p>
 
+Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 10" in the dropdown menu for Command Line Tools.
 
-Solution: Please open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
-
+</p>
+<p align="center">
+<img src="../img/command-line-error-3.png" width="550">
+</p>
 
 ## Command CodeSign failed
 
@@ -105,14 +108,31 @@ Solution: You'll need to log onto your developer account at [developer.apple.com
 <img src="../img/license.png" width="750">
 </p>
 
-## Outdated Xcode
-Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10, you will receive the following errors when you try to build:
+## Carthage update message
 
+If you see a message about updating carthage version, open Terminal app and enter the following command `brew update && brew upgrade carthage`
+
+</p>
 <p align="center">
-<img src="../img/xcode10-update.png" width="750">
+<img src="../img/carthage-update.jpg" width="850">
 </p>
 
-Solution: You will need to go to your computer's App Store and install the Xcode app update.
+## Unrecognized arguments: --cache-builds
+
+Error message: "**<u>Unrecognized arguments: --cache-builds</u>**"
+
+</p>
+<p align="center">
+<img src="../img/cache-builds.png" width="850">
+</p>
+
+</p>
+<p align="center">
+<img src="../img/exit-code-1-cartfile.jpg" width="850">
+</p>
+
+
+Solution: Please open your Terminal app found in the Applications>>Utilities folder and then enter `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
 
 
 ## Abort with Payload
