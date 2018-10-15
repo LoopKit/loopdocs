@@ -21,7 +21,7 @@ Occasionally, a recommended bolus will be offered in the bolus tool unrelated to
 Part of Loop's predictions for future BG changes include a component called BG momentum.  Loop does not use BG momentum component of predicted BGs for bolusing recommendations.  The omission of BG momentum from bolus recommendations helps Loop not over-correct when bolusing during times of rapidly increasing BGs.
 
 ## Starting Bolus Notification
-A new status line will appear when Loop is sending a bolus command to the pump.  Just above the Glucose Chart, you will see a "stating bolus" indicator.
+A new status line will appear when Loop is sending a bolus command to the pump.  Just above the Glucose Chart, you will see a "starting bolus" indicator.
 
 <p align="center">
 <img src="/setup/update/img/starting_bolus.png" width="250">
