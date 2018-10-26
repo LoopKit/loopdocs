@@ -1,12 +1,12 @@
 # iPhone 
 
-Loop will run on on any iPhone that is running iOS 11.1 or later.
+Loop will run on on any iPhone that is running iOS 11.1 or later, but the most current version is iOS 12.0.1
 
-* iPhone X
+* iPhone Xs/Xr
 
 * iPhone 8/8+
 
-* iPhone 7/7s+
+* iPhone 7/7+
 
 * iPhone 6/6+/6s/6s+/SE
 

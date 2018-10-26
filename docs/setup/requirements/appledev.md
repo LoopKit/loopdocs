@@ -34,5 +34,5 @@ When you build the Loop app in Xcode, you will select a signing "team" and Xcode
 
 ## Multiple Loop apps
 
-You can have multiple Loop apps built onto the same iPhone.  However, having multiple Loop apps on a single phone can lead to unexpected conflicts.  For smooth Looping, we recommend having a single Loop app on an iPhone.
+You can have multiple Loop apps built onto the same iPhone.  However, having multiple Loop apps on a single phone may lead to unexpected conflicts.  For smooth Looping, we recommend having a single Loop app on an iPhone.
 
