@@ -500,14 +500,17 @@
             <div class="col-md-9" role="main">
 
 <h2 id="rileylink">RileyLink<a class="headerlink" href="#rileylink" title="Permanent link">⌁</a></h2>
-<p>The RileyLink is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to 916MHz wireless communication. What does that mean to you? It means RileyLink is the communication highway between your insulin pump, CGM, and iPhone.</p>
+<p>The RileyLink (RL) is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to 916MHz wireless communication. What does that mean to you? It means RileyLink is the communication highway between your insulin pump, CGM, and iPhone.</p>
 <p><strong>Loop will not work without the RileyLink.</strong></p>
 <p><img alt="RileyLink Diagram" src="../img/rl_diag.png" /></p>
 <p>The RileyLink is available as a set of PCB files and software, with instructions on how to build your own RileyLink hardware module.  All this can be found here: <a href="https://github.com/ps2/rileylink">RileyLink Github</a>
-If you aren’t up to the task of building your own RileyLink (and most of us aren’t), community members periodically do a production run of RileyLinks. You can place an order here: <a href="https://getrileylink.org">RileyLink order site</a></p>
+If you aren’t up to the task of building your own RileyLink (and most of us aren’t), community members coordinate periodic production runs of RileyLinks. You can place an order here: <a href="https://getrileylink.org">RileyLink order site</a></p>
 <h3 id="assembling-rileylink">Assembling RileyLink<a class="headerlink" href="#assembling-rileylink" title="Permanent link">⌁</a></h3>
-<p>Your RL will come with the battery disconnected and the parts not already inside the case.  It will be up to you to put the RL in the case and attach the battery.</p>
-<p>Make sure the battery is well plugged into the connection.  Line up the little ridge approriately, and push fairly firmly to get the connection in tight.  Poor battery cable connection can make the Loop communications fail.  See photos below for example.</p>
+<p>Your RileyLink will come with the battery disconnected and the parts not already inside the case.  It will be up to you to put the RileyLink in the case and attach the battery.</p>
+<p>Make sure the lipo battery is well-plugged into the connection.  Line up the little ridge appropriately, and push fairly firmly to get the connection tight.  Poor battery cable connection can make the Loop communications fail.  See photos below, for example.</p>
+<div class="admonition info">
+<p>The most common two errors for new RileyLink owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RileyLink.  Compare your lipo battery cable with the photos shown and remember to charge your RileyLink each night.</p>
+</div>
 <p><figure align="center">
 <img src="../img/rl_loose_battery.jpg" width="400">
 <figcaption>RileyLink with loose battery cable.</figcaption>
@@ -521,28 +524,28 @@ If you aren’t up to the task of building your own RileyLink (and most of us ar
 <p>Finally, the board and the battery fit into the slim case fairly tightly as well.  Click on the image below to watch a helpful <a href="https://www.youtube.com/watch?v=-GHxxEJMCZc&amp;feature=youtu.be">assembly video</a>.</p>
 <p><a href="https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be" target="_blank"><img src="../img/slimcase.png"  title="RileyLink assembly video" /></a></p>
 <h3 id="waiting-for-rileylink">Waiting for RileyLink<a class="headerlink" href="#waiting-for-rileylink" title="Permanent link">⌁</a></h3>
-<p>Yes, waiting for RileyLink to arrive is extremely difficult.  PLEASE be patient, since Loop CANNOT work without RileyLink.</p>
+<p>Yes, waiting for RileyLink to arrive is extremely difficult if they are backorder.  PLEASE be patient, since Loop CANNOT work without RileyLink.</p>
 <p>If you're really dying to do something while RileyLink ships, consider these things below.</p>
-<p>FIRST AND FOREMOST:  Get used to Medtronic pump and start using it before Loop.  Sometimes switching pumps will lead to a change in your settings (basals, boluses, etc) simply by the way the new cannula delivers insulin.  It's a great idea to use your Medtronic pump and sets before you ever begin Loop so that you can have one less variable when you do start looping.  At least you can check if you need to adjust basals, etc when you change to Medtronic pumping.  Same with Dexcom.  If you are new to Dexcom, start using it before Loop.  Get to familiar with things like compression lows, sensor variability, and calibration timing before Loop use.</p>
-<p>But, if you're familiar with your medtronic pump and dexcom, here's some ideas:</p>
+<p>FIRST AND FOREMOST:  Get used to Medtronic pump and start using it before Loop.  Sometimes switching pumps will lead to a change in your settings (basals, boluses, etc) simply by the way the new cannula delivers insulin.  It's a great idea to use your Medtronic pump and sets before you ever begin Loop so that you can have one less variable when you do start looping.  At least you can check if you need to adjust basals or other settings when you change to Medtronic pumping.  The same tips apply for Dexcom.  If you are new to Dexcom, start using it before Loop.  Get  familiar with things like compression lows, sensor variability, and calibration timing before Loop use.</p>
+<p>But, if you're familiar with your Medtronic pump and Dexcom, here are some ideas:</p>
 <ol>
 <li>Program your pump with your basal patterns</li>
-<li>Make the pump settings required for Loop to work</li>
-<li>Update your iPhone's iOS, if needed, and back it up</li>
-<li>Update your Apple's OS X, if needed.</li>
-<li>Update your Apple Watch's OS</li>
+<li>Enter the other pump settings required for Loop to work</li>
+<li>Update your iPhone iOS, if needed</li>
+<li>Update your computer's macOS, if needed</li>
+<li>Update your Apple Watch's watchOS, if needed</li>
 <li>Download Xcode from the Apple App Store on your Apple computer (<strong>this takes more time than you'd expect, it is a large download</strong>)</li>
-<li>Sign up for a Developer Account, if you intend to.  Confirm your enrollment by checking your email afterwards.</li>
+<li>Sign up for a Developer Account.  Confirm your enrollment by checking your email afterwards.</li>
+<li>Install Homebrew on your computer</li>
 <li>Download Loop source code and get started with Loop building</li>
-<li>Install Carthage</li>
-<li>Make customizations</li>
+<li>Make customizations, if desired</li>
 <li>Build Loop app onto your iPhone</li>
 <li>Fill in the pump settings in your Loop app</li>
 <li>Set up a Nightscout site or update your existing site (optional)</li>
-<li>Bookmark the Loop Docs page for future reference</li>
+<li>Bookmark the LoopDocs page for future reference</li>
 <li>Join <a href="https://gitter.im/LoopKit/Loop">Gitter Loop channel</a> and/or <a href="https://www.facebook.com/groups/TheLoopedGroup/?fref=nf">the Looped Facebook Group</a></li>
 </ol>
-<p>BUT, then you must wait.  You can't go any further with Loop operations until you get the RileyLink.  However, if you do all those things above while you wait...you will be ready to go as soon as the postman knocks on your door with the delivery.</p></div>
+<p>BUT, then you must wait.  <strong>You can't go any further with Loop operations until you get the RileyLink.</strong>  However, if you do all those things above while you wait...you will be ready to go as soon as the postman knocks on your door with the delivery.</p></div>
         </div>
 
         <footer class="col-md-12">
