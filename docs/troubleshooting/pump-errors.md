@@ -50,7 +50,7 @@ After you finish your fix, another excellent idea is to make sure you add a leng
 
 ## Motor error
 
-Often a motor error is the result of a poorly seated reservoir or tubing cap.  If you get a motor error, the first thing you should do is detech from your infusion site.  Remove and reseat the reservoir, prime again, and see if the motor error resolves.  If it does not, try replacing the tubing cap on the reservoir (new tubing).  If that does not resolve the motor error, also replace the entire reservoir.
+Often a motor error is the result of a poorly seated reservoir or tubing cap.  If you get a motor error, the first thing you should do is detach from your infusion site.  Remove and reseat the reservoir, prime again, and see if the motor error resolves.  If it does not, try replacing the tubing cap on the reservoir (new tubing).  If that does not resolve the motor error, also replace the entire reservoir.
 
 <p align="center">
 <img src="../img/motor-error.jpg" width="400">
