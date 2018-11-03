@@ -1,4 +1,4 @@
-# Loop v1.9 Features
+# Loop v1.9.3 Features
 
 As always, there is a [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.9) with release notes about the features and changes since the previous Loop release.  This page provides a bit more in-depth information and practical tips about the new release. 
 
@@ -13,7 +13,7 @@ Before you start the update process, please make sure you update your devices to
 
 ## Automatic Carthage Installation
 
-The preparation steps to build Loop have changed.  Older versions of Loop required the manual installation of Homebrew and Carthage before you began the installation of Loop.  Loop v1.9 only requires you to install Homebrew, Xcode will automatically install Carthage in the background if it is not already installed on your computer.  So if you are building on a new computer and think "Wait, aren't I missing a step in the directions?  I thought I had to install Carthage somewhere."...don't worry.  You haven't missed a step, Loop is just going to do it for you.
+The preparation steps to build Loop have changed.  Older versions of Loop required the manual installation of Homebrew and Carthage before you began the installation of Loop.  Loop v1.9.3 only requires you to install Homebrew, Xcode will automatically install Carthage in the background if it is not already installed on your computer.  So if you are building on a new computer and think "Wait, aren't I missing a step in the directions?  I thought I had to install Carthage somewhere."...don't worry.  You haven't missed a step, Loop is just going to do it for you.
 
 <p align="center">
 <img src="../img/carthage-gone.png" width="750">
