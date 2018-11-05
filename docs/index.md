@@ -40,7 +40,7 @@ Loop has been developed as an open-source, shared project.  For a really interes
 
 [Sign up for the Loop Users announcement list](https://groups.google.com/forum/#!forum/loop-ios-users) to stay informed of critical issues that may arise.
 
-Join the gitter chat at [https://gitter.im/LoopKit/Loop](https://gitter.im/LoopKit/Loop)
+Join the Zulip chat at [ https://loop.zulipchat.com]( https://loop.zulipchat.com)
 
 There is also a [Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf) that you might wish to join for support.  When you request to join the group, please remember to check your messages box on facebook and respond to the message.
 
