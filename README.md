@@ -18,12 +18,12 @@ $ cd <loopdocs project location>
 $ pip install -r requirements.txt
 ```
 
-**mkdocs Version Warning:** Use the latest `0.16.x` patch version of `mkdocs`, but don't upgrade `mkdocs` to version `0.17.x`. It is NOT compatible with the theme being used.
+**mkdocs Version Warning:** Use the latest `0.16.x` patch version of `mkdocs`, but don't upgrade `mkdocs` to version `0.17.x`. It is NOT compatible with the theme being used.  Same for updated versions of `mkdocs-bootswatch`, do not use the latest version.
 
 * Or, install modules individually
 ```bash
 $ pip install mkdocs<0.17
-$ pip install mkdocs-bootswatch
+$ pip install mkdocs-bootswatch==0.4.0
 ```
 
 * Run mkdocs server locally
