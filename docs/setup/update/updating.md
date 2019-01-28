@@ -45,7 +45,7 @@ FYI: The Loop source code resides in [GitHub](https://github.com/LoopKit/Loop) w
 
 ### Add customizations
 
-Add or redo any customizations, if needed.  These will not be carried over automatically from the old app.  Be sure to read up in the [code customizations section](/setup/build/code_customization.md) before building, as there may be new customizations available since the previous build.
+Add or redo any customizations, if needed.  These will not be carried over automatically from the old app.  Be sure to read up in the [code customizations section](/setup/update/updating/#add-customizations) before building, as there may be new customizations available since the previous build.
 
 ### Sign Targets and Build
 
