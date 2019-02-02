@@ -55,13 +55,13 @@ Solution: This error message has just recently started to appear for some new Lo
 <img src="../img/revoke1.png" width="750">
 </p>
 
-After you do that, return to Xcode and open up Xcode preferences.  Under the Accounts section of Preferences, click on the minus sign to delete your Apple ID
+After you do that, return to Xcode and open up Xcode preferences.  Under the Accounts section of Preferences, click on the minus sign to delete your Apple ID.
 
 <p align="center">
 <img src="../img/account.png" width="650">
 </p>
 
-Re-enter your Apple ID, return to your target signing areas and your error message should have resolved itself now as a new certificate will have been issued and a provisioning profile should have been created automatically.
+Re-enter your Apple ID (yes...add that account right back that you literally just deleted), return to your Loop's target signing areas in Xcode and your error message should have resolved itself now as a new certificate will have been issued and a provisioning profile should have been created automatically.
 
 For double measure, you can verify that the iOS development certificates are all in good working order by clicking on your "Manage Certificates" in your Xcode Preferences, Accounts and viewing the iOS development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.
 
