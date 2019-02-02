@@ -41,6 +41,34 @@ IF there are still red errors and you post for help in Looped group or Gitter...
 
 Please do not post without being able to provide detailed information.  It is very difficult to help troubleshoot based on vague "I have errors" information.
 
+## Pending Certificate Request
+
+Error message: "You already have a current iOS Development certificate or a pending certificate request."
+
+<p align="center">
+<img src="../img/pending_certification_request.jpg" width="750">
+</p>
+
+Solution: This error message has just recently started to appear for some new Loop builders. To resolve the issue, please login to your Developer account at [developer.apple.com](https://developer.apple.com) and then click on "Certificates, Identifiers & Profiles".  Under that screen, you will see "Development" under the "Certificates" section in column on the left.  You will need to click on the certificates, and choose to "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"
+
+<p align="center">
+<img src="../img/revoke1.png" width="750">
+</p>
+
+After you do that, return to Xcode and open up Xcode preferences.  Under the Accounts section of Preferences, click on the minus sign to delete your Apple ID
+
+<p align="center">
+<img src="../img/account.png" width="650">
+</p>
+
+Re-enter your Apple ID, return to your target signing areas and your error message should have resolved itself now as a new certificate will have been issued and a provisioning profile should have been created automatically.
+
+For double measure, you can verify that the iOS development certificates are all in good working order by clicking on your "Manage Certificates" in your Xcode Preferences, Accounts and viewing the iOS development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.
+
+<p align="center">
+<img src="../img/verify_cert.png" width="650">
+</p>
+
 ## Outdated Xcode
 Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10, you will receive the following errors when you try to build:
 
