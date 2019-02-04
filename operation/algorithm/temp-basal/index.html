@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Temp Basal Adjustments - Loop Docs</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+        <link href="../../../css/admonitions.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-109876065-1', 'loopkit.github.io');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Loop Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Welcome to Loop</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../setup/overview/">Overview</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Requirements</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../setup/requirements/pump/">Insulin Pump</a>
+</li>
+            
+<li >
+    <a href="../../../setup/requirements/cgm/">CGM</a>
+</li>
+            
+<li >
+    <a href="../../../setup/requirements/rileylink/">RileyLink</a>
+</li>
+            
+<li >
+    <a href="../../../setup/requirements/computer/">Computer</a>
+</li>
+            
+<li >
+    <a href="../../../setup/requirements/iphone/">iPhone</a>
+</li>
+            
+<li >
+    <a href="../../../setup/requirements/appledev/">Apple Developer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Install Loop</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../setup/build/installing/">Building App</a>
+</li>
+            
+<li >
+    <a href="../../../setup/build/build_errors/">Build Errors</a>
+</li>
+            
+<li >
+    <a href="../../../setup/build/code_customization/">Code Customization</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Loop App setup</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../setup/loop-settings/settings/">Loop Settings</a>
+</li>
+            
+<li >
+    <a href="../../../setup/loop-settings/services/">Loop Services</a>
+</li>
+            
+<li >
+    <a href="../../../setup/loop-settings/rileylink_menu/">RileyLink menu</a>
+</li>
+            
+<li >
+    <a href="../../../setup/loop-settings/pump/">Pump Setup</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Update</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../setup/update/updating/">Updating</a>
+</li>
+            
+<li >
+    <a href="../../../setup/update/new-version/">New Version Info</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../overview/">Loop Displays</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">How to Use Loop App</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../features/carbs/">Carb Entries</a>
+</li>
+            
+<li >
+    <a href="../../features/bolus/">Bolus</a>
+</li>
+            
+<li >
+    <a href="../../features/workout/">Workout Targets</a>
+</li>
+            
+<li >
+    <a href="../../features/ice/">Using ICE info</a>
+</li>
+            
+<li >
+    <a href="../../features/watch/">Apple Watch</a>
+</li>
+            
+<li >
+    <a href="../../features/widget/">iPhone widget</a>
+</li>
+            
+<li >
+    <a href="../../features/healthapp/">Health App</a>
+</li>
+            
+<li >
+    <a href="../../features/notifications/">Loop Notifications</a>
+</li>
+            
+<li >
+    <a href="../../features/battery/">Pump Battery</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Looping Tips</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../loop/open-loop/">Open Loop</a>
+</li>
+            
+<li >
+    <a href="../../loop/close-loop/">Closed Loop</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Algorithm</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../bolus/">Bolus Recommendations</a>
+</li>
+            
+<li >
+    <a href="../prediction/">Glucose Prediction</a>
+</li>
+            
+<li class="active">
+    <a href="./">Temp Basal Adjustments</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../troubleshooting/overview/">Overview</a>
+</li>
+                                    
+<li >
+    <a href="../../../troubleshooting/green-loop/">Grey Loop</a>
+</li>
+                                    
+<li >
+    <a href="../../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
+</li>
+                                    
+<li >
+    <a href="../../../troubleshooting/mlab_cleanup/">NS display</a>
+</li>
+                                    
+<li >
+    <a href="../../../troubleshooting/priming/">Priming and Sites</a>
+</li>
+                                    
+<li >
+    <a href="../../../troubleshooting/rileylink/">RileyLink</a>
+</li>
+                                    
+<li >
+    <a href="../../../troubleshooting/time-change/">Time Changes</a>
+</li>
+                                    
+<li >
+    <a href="../../../troubleshooting/pump-errors/">Pump Errors</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../nightscout/overview/">Overview</a>
+</li>
+                                    
+<li >
+    <a href="../../../nightscout/new_user/">Setup New Site</a>
+</li>
+                                    
+<li >
+    <a href="../../../nightscout/update_user/">Update Site</a>
+</li>
+                                    
+<li >
+    <a href="../../../nightscout/azure_migration/">Azure to Heroku</a>
+</li>
+                                    
+<li >
+    <a href="../../../nightscout/loop_pill/">Loop Pill</a>
+</li>
+                                    
+<li >
+    <a href="../../../nightscout/ifttt/">IFTTT</a>
+</li>
+                                    
+<li >
+    <a href="../../../nightscout/pebble/">Pebble</a>
+</li>
+                                    
+<li >
+    <a href="../../../nightscout/pushover/">Remote Notifications</a>
+</li>
+                                    
+<li >
+    <a href="../../../nightscout/reports/">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../prediction/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../../troubleshooting/overview/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#basal-adjustments">Basal Adjustments</a></li>
+            <li><a href="#four-possbile-actions">Four Possbile Actions</a></li>
+            <li><a href="#determining-the-temporary-basal-rate">Determining the Temporary Basal Rate</a></li>
+            <li><a href="#temporary-basal-rate-calculation-example">Temporary Basal Rate Calculation Example</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="basal-adjustments">Basal Adjustments<a class="headerlink" href="#basal-adjustments" title="Permanent link">⌁</a></h1>
+<p>The Loop algorithm takes one of four actions depending upon the eventual blood glucose, predicted glucose, and suspend threshold. Note that all temporary basal rate commands are issued for 30 minutes, however they may be updated (re-issued) every 5 minutes. Said another way, Loop may enact a new temporary basal rate every 5 minutes. But, if communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates. Note: If a user is operating Loop in open loop mode, the Loop will only recommend basal dosing actions and will not automatically enact those recommendations.</p>
+<h2 id="four-possbile-actions">Four Possbile Actions<a class="headerlink" href="#four-possbile-actions" title="Permanent link">⌁</a></h2>
+<p>Loop implements one of four possible basal actions: <strong>decrease</strong>, <strong>increase</strong>, <strong>suspend</strong>, or <strong>resume</strong> a scheduled basal rate.</p>
+<h3 id="decrease-basal-rate">Decrease Basal Rate<a class="headerlink" href="#decrease-basal-rate" title="Permanent link">⌁</a></h3>
+<p>If the eventual blood glucose is less than the correction range and all of the predicted glucose values are above the suspend threshold, then Loop will issue a temporary basal rate that is lower than the current scheduled basal rate to bring the eventual blood glucose up to the correction target.</p>
+<p><img alt="decrease basal rate example" src="../img/decrease.png" /></p>
+<h3 id="increase-basal-rate">Increase Basal Rate<a class="headerlink" href="#increase-basal-rate" title="Permanent link">⌁</a></h3>
+<p>If the eventual blood glucose is greater than the correction range and all of the predicted glucose values are above the suspend threshold, then Loop will issue a temporary basal rate that is higher than the current basal rate to bring the eventual blood glucose down to the correction target.</p>
+<p><img alt="increase basal rate example" src="../img/increase.png" /></p>
+<h3 id="suspend-basal-rate">Suspend Basal Rate<a class="headerlink" href="#suspend-basal-rate" title="Permanent link">⌁</a></h3>
+<p>If the minimum predicted blood glucose goes below the suspend threshold, then Loop will issue a temporary basal rate of zero units per hour, regardless of the eventual blood glucose.</p>
+<p><img alt="suspend basal rate example" src="../img/suspend.png" /></p>
+<h3 id="resume-basal-rate">Resume Basal Rate<a class="headerlink" href="#resume-basal-rate" title="Permanent link">⌁</a></h3>
+<p>There are three situations where the Loop algorithm will resume the current scheduled basal rate.</p>
+<p>If the eventual blood glucose is within the correction range, and all of the predicted glucose values are above the suspend threshold, then Loop will resume the current scheduled basal rate.</p>
+<p><img alt="first resume basal rate example" src="../img/resume2.png" /></p>
+<p>If the eventual blood glucose is above the correction range, and the predicted glucose values have a temporary excursion below the correction range but still above the suspend threshold, then Loop will resume the current scheduled basal rate.</p>
+<p><img alt="second resume basal rate example" src="../img/resume.png" /></p>
+<p>If the Loop algorithm does not have ALL of the data it needs to make a prediction, it will let the remaining temporary basal rate run its duration (maximum of 30 minutes), and then the basal rate will default back to the current scheduled basal rate, thus returning to the same therapy pattern that they would receive using a traditional insulin pump.</p>
+<h2 id="determining-the-temporary-basal-rate">Determining the Temporary Basal Rate<a class="headerlink" href="#determining-the-temporary-basal-rate" title="Permanent link">⌁</a></h2>
+<p>To determine the corrective temporary basal rate to implement, Loop calculates a “dose” in the same way doses are calculated in both open loop and traditional insulin pump therapy. It's also the same math many people on multiple-daily injection therapy use. The benefit of Loop (and all other closed loop algorithms) is that it does this math every 5 minutes, and is far less prone to error than humans doing math. Loop also does its math based on predicting into the future, which traditional pumps and humans, do not always have the time or inclination to do.</p>
+<p>The amount of insulin needed, or dose, is calculated using the desired reduction in blood glucose and the user’s ISF. For the Loop algorithm, the desired reduction in blood glucose is the delta between the eventual blood glucose and the correction target:</p>
+<p><img alt="basal dose equation" src="../img/dose_equation.png" /></p>
+<div class="admonition note">
+<p>A major difference between traditional pump therapy and how the Loop calculates dose is that in pump therapy the current blood glucose is used to estimate the dose, whereas in the Loop algorithm the eventual and minimum blood glucose predictions are also used in determining dosing decisions.</p>
+</div>
+<p>Loop then converts the dose into a basal rate using the Loop’s temporary basal rate duration of 30 minutes:</p>
+<p><img alt="basal dose equation" src="../img/br.png" /><img alt="basal dose equation" src="../img/br2.png" /></p>
+<p>where BR is the basal rate (U/hr), which is the amount of insulin needed over the next 30 minutes to bring the eventual blood glucose to the correction target. The basal rate, however, is the amount of basal rate needed beyond the user’s scheduled basal rate. As such, the required basal rate can be determined by:</p>
+<p><img alt="recommended basal" src="../img/rbr.png" /></p>
+<p>where RBR is the required basal rate and SBR is the scheduled basal rate.</p>
+<p>Finally, Loop compares the RBR with the user-specified maximum temporary basal rate setting to determine the temporary basal to issue:</p>
+<ul>
+<li>
+<p>If RBR ≥ maximum basal rate, then Loop will issue the maximum basal rate  </p>
+</li>
+<li>
+<p>If RBR &lt; maximum temporary basal rate, then Loop will issue RBR </p>
+</li>
+</ul>
+<p>After running the temporary basal calculation described above, Loop checks whether there is already an appropriate basal running with at least 10 minutes remaining. If so, Loop will not reissue the temporary basal. However, if the recommended temporary basal differs from the currently running temporary basal — or the current scheduled basal if no temporary is running —  then Loop will replace the current basal rate with the recommended temporary basal rate. </p>
+<p>As mentioned at the beginning of this section, the process of determining whether a temporary basal should be issued is repeated every 5 minutes.</p>
+<h2 id="temporary-basal-rate-calculation-example">Temporary Basal Rate Calculation Example<a class="headerlink" href="#temporary-basal-rate-calculation-example" title="Permanent link">⌁</a></h2>
+<p>To illustrate how the Loop calculates the temporary basal rate to issue, consider the calculation for the following scenario:</p>
+<ul>
+<li>
+<p>Eventual blood glucose = 200 mg/dL  </p>
+</li>
+<li>
+<p>Correction target = 100 mg/dL  </p>
+</li>
+<li>
+<p>ISF = 50 mg/dL/U  </p>
+</li>
+<li>
+<p>Current scheduled basal rate (SBR) is 1 U/hr  </p>
+</li>
+<li>
+<p>Maximum basal setting (set by user in Loop) = 6 U/hr  </p>
+</li>
+</ul>
+<p></br>First, calculate the dose:</p>
+<p><img alt="basal dose example" src="../img/basal_dose_example.png" /></p>
+<p>Then, convert the dose into a basal rate to be issued for the next 30 minutes:</p>
+<p><img alt="basal dose br example" src="../img/br.png" /><img alt="basal dose br example" src="../img/basal_dose_br.png" /></p>
+<p>Next, calculate the required basal rate:</p>
+<p><img alt="example rbr" src="../img/rbr_example.png" /></p>
+<p>Lastly, compare the required basal rate to the maximum temporary basal rate, and find that Loop will enact a temporary basal rate of 5 U/hr for 30 minutes since this temporary basal rate is below the maximum temporary basal rate of 6 U/hr, which was set by the user in Loop app settings.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
