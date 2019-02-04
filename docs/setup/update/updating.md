@@ -16,8 +16,8 @@ When a new version of Loop is released, you can click [HERE](https://github.com/
 Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app; your Apple Developer license agreement, your iPhone's iOS, your computer's macOS, your Xcode app, and/or your watchOS.  <u>If you miss some of the updates, you may run into build problems.</u>  You can check for macOS and Xcode updates using the App Store link under the apple logo in your computer display's upper left corner.  Check below to make sure your equipment is running the current versions of the various OS.</br></br>
 
 * **macOS High Sierra**: macOS 10.13.6</br>
-* **Xcode**: Xcode 9.4.1</br>
-* **iPhone**: iOS 11.4</br></br>
+* **Xcode**: Xcode 10.1</br>
+* **iPhone**: iOS 12.1</br></br>
 
 ### Download new Loop source code
 
@@ -53,7 +53,7 @@ Sign the four targets and rebuild.  Just make sure to pick your paid developer t
 
 ### Build Errors
 
-**If you get any build errors, please check [this section](/setup/build/build_errors.md) for fixes.**
+**If you get any build errors, please check [this section](https://loopkit.github.io/loopdocs/setup/build/build_errors/) for fixes.**
 
 
 

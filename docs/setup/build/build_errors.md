@@ -37,9 +37,37 @@ If your carthage update fails, try opening Terminal app and running these comman
 
 After running those commands, retry the `cd ~/downloads/loop-master && carthage update` (remembering to update the name of your Loop download folder, as needed).
 
-IF there are still red errors and you post for help in Looped group or Gitter...**TAKE A SCREENSHOT of the whole Xcode screen after you double click on the red error message** (command-shit-space bar-4 will make a screenshot tool active and the screenshot will save to your desktop).  Or even better, copy and paste the "xcodebuild output can be found at..." log file that is listed in yellow/orange color in the carthage update screen.  You can get to that log file by copy and pasting the file path (in yellow) into your Finder >> Go >> Go to Folder.. Once you open that log file, you can scroll to the bottom of the file and there will be detailed information about why carthage update failed.
+IF there are still red errors and you post for help in Looped group or Gitter...**TAKE A SCREENSHOT of the whole Xcode screen after you double click on the red error message** (command-shift-space bar-4 will make a screenshot tool active and the screenshot will save to your desktop).  Or even better, copy and paste the "xcodebuild output can be found at..." log file that is listed in yellow/orange color in the carthage update screen.  You can get to that log file by copy and pasting the file path (in yellow) into your Finder >> Go >> Go to Folder.. Once you open that log file, you can scroll to the bottom of the file and there will be detailed information about why carthage update failed.
 
 Please do not post without being able to provide detailed information.  It is very difficult to help troubleshoot based on vague "I have errors" information.
+
+## Pending Certificate Request
+
+Error message: "You already have a current iOS Development certificate or a pending certificate request."
+
+<p align="center">
+<img src="../img/pending_certification_request.jpg" width="750">
+</p>
+
+Solution: This error message has just recently started to appear for some new Loop builders. To resolve the issue, please login to your Developer account at [developer.apple.com](https://developer.apple.com) and then click on "Certificates, Identifiers & Profiles".  Under that screen, you will see "Development" under the "Certificates" section in column on the left.  You will need to click on the certificates, and choose to "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"
+
+<p align="center">
+<img src="../img/revoke1.png" width="750">
+</p>
+
+After you do that, return to Xcode and open up Xcode preferences.  Under the Accounts section of Preferences, click on the minus sign to delete your Apple ID.
+
+<p align="center">
+<img src="../img/account.png" width="650">
+</p>
+
+Re-enter your Apple ID (yes...add that account right back that you literally just deleted), return to your Loop's target signing areas in Xcode and your error message should have resolved itself now as a new certificate will have been issued and a provisioning profile should have been created automatically.
+
+For double measure, you can verify that the iOS development certificates are all in good working order by clicking on your "Manage Certificates" in your Xcode Preferences, Accounts and viewing the iOS development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.
+
+<p align="center">
+<img src="../img/verify_cert.png" width="650">
+</p>
 
 ## Outdated Xcode
 Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10, you will receive the following errors when you try to build:
