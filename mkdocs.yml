@@ -50,7 +50,7 @@ pages:
         - 'Overview': 'operation/algorithm/overview.md'
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
         - 'Glucose Prediction': 'operation/algorithm/prediction.md'
-        - 'Temp Basal Adjustments': 'operation/algorithm/temp_basal.md'
+        - 'Temp Basal Adjustments': 'operation/algorithm/temp-basal.md'
 - Troubleshooting:
     - 'Overview': 'troubleshooting/overview.md'
     - 'Grey Loop': 'troubleshooting/green-loop.md'

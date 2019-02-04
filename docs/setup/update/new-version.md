@@ -1,6 +1,6 @@
-# Loop v1.9.3 Features
+# Loop v1.9.4 Features
 
-As always, there is a [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.9) with release notes about the features and changes since the previous Loop release.  This page provides a bit more in-depth information and practical tips about the new release. 
+As always, there is a [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.9.4) with release notes about the features and changes since the previous Loop release.  This page provides a bit more in-depth information and practical tips about the new release. 
 
 ## Minimum OS updates required
 
