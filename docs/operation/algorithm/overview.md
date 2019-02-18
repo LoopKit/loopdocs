@@ -36,7 +36,7 @@ status screen of Loop.
 <dd>The lowest blood glucose value at any point in time within the prediction. In the figure above, this is 77 mg/dL.</dd></br>
 
 <dt>Delta</dt>
-<!--<dd>The delta is the difference between the eventual blood glucose and the correction target. In the overview figure, the eventual blood glucose is 85 mg/dL and the correction target is 105 mg/dL, which means that the delta is  -20 mg/dL. </dd></br>-->
+<dd>The delta is the difference between the eventual blood glucose and the correction target. In the overview figure, the eventual blood glucose is 85 mg/dL and the correction target is 105 mg/dL, which means that the delta is  -20 mg/dL. </dd></br>
 
 <dt>Suspend Threshold</dt>
 <dd>The suspend threshold is a safety feature of the Loop algorithm. If any predicted blood glucose is below this threshold, the Loop algorithm will issue a temporary basal rate of 0</dd></br>

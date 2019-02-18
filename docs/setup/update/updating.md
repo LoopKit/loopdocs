@@ -1,27 +1,41 @@
-# How to Update Loop
+# Updating Loop
 
 When a new version of Loop is released, you can click [HERE](https://github.com/LoopKit/Loop/releases) to read what features or fixes were a part of the new release.
 
-!!!info ""
-    The process to update is very similar to the original building of Loop app, except you get to skip several of the first steps.  The basic steps are:
+The process to update is very similar to the original building of Loop app, except you get to skip a couple of the early steps.  The update steps are:
 
-    * Update iOS, macOS, Xcode, and/or watchOS
-    * Download new Loop source code
-    * Add any customizations
-    * Sign all four targets
-    * Build app
+1. Update macOS, Xcode, iOS, and/or watchOS
+2. Download updated Loop code
+3. Open in Xcode, sign targets
+4. Add optional code customizations
+5. Build onto your iPhone
+6. Resolve Build Errors
 
-### Update Apple devices
+You do not have to delete your existing app. The new app update will simply overwrite the old app and save all your old settings and information.
 
-Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app; your Apple Developer license agreement, your iPhone's iOS, your computer's macOS, your Xcode app, and/or your watchOS.  <u>If you miss some of the updates, you may run into build problems.</u>  You can check for macOS and Xcode updates using the App Store link under the apple logo in your computer display's upper left corner.  Check below to make sure your equipment is running the current versions of the various OS.</br></br>
+## When to Update
 
-* **macOS High Sierra**: macOS 10.13.6</br>
-* **Xcode**: Xcode 10.1</br>
-* **iPhone**: iOS 12.1</br></br>
+You will have to rebuild your Loop app at a minimum once every 12 months. The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process.
 
-### Download new Loop source code
+Under ordinary circumstances, you do not *have to* update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability.
 
-You can use these links to download new versions of the Loop source code.  These links will always provide the most recent version of Loop:
+## Step 1: Update OS and Xcode
+
+<u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u> 
+
+Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app. You need to check the following for updates to prevent build conflicts during your update of Loop:
+
+* update your macOS by clicking on your apple icon in the computer's upper left corner and then selecting "Software Update" button. If your macOS needs an update, this will lead you there. Do this step first before checking for Xcode udpates in the next update step. The macOS needs to be updated to the most current in some situations in order to support the most recent Xcode.  You need macOS High Sierra or Mojave at a minimum.
+
+* update your Xcode by opening the App Store application in your computer and selecting the "Updates" from the left-hand column. If an Xcode update is available, install the update before moving on with Loop updates.  You need Xcode 10.1 at a minimum.
+
+* update your iPhone's iOS. To check if an iOS update is available, click on your iPhone's Settings, General, Software Update and then click on "install update" button if one is available. You need iOS 11.1 at a minimum, but iOS 12 or later is recommended.
+
+* update your Apple Watch's watchOS. To check if a watchOS update is available, click on your Watch App in your paired iPhone and then go to Settings, General, Software Update and then click on "install update" if one is available. You need watchOS 4.1 at a minimum, but watchOS 5 or later is recommended.
+
+## Step 2: Download Updated Loop Code
+
+After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on **ONE** of the links below to download an updated versions of Loop code (most people will use Master, see note below for explanation):
 </br></br>
 <p align="center">
 [Loop: Master branch source code](https://github.com/LoopKit/Loop/archive/master.zip)
@@ -34,26 +48,41 @@ You can use these links to download new versions of the Loop source code.  These
 FYI: The Loop source code resides in [GitHub](https://github.com/LoopKit/Loop) within a repository.  A repository is kind of like a project's bookshelf, holding various books (aka branches) of a project.  The master branch is considered a stable version.  Any new features or options are first tested in a dev (short for "development") branch of the Loop.  New or inexperienced users should not build from the dev branch of Loop.  So if you hear of "new features in dev", these are things that may be eventually merged into the master branch once any bugs are worked out.
 
 !!!info ""
-    IMPORTANT NOTES: Best practice is to leave your Loop source code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
+    IMPORTANT NOTES: Best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
     <p align="center">
-    <img src="../img/icloud-drive.png" width="650">
+    <img src="../img/icloud-drive.png" width="550">
     </p></br>
     Depending on your browser and settings, your Loop download may or may not automatically unzip.  If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility.  This will create a blue folder called `Loop-master`.  HOWEVER, if you already have an existing `Loop-master` folder from a previous download, the name of the next download will be something like `Loop-master (1)`.  The problem with that folder name is that it contains a space...and spaces in the name will cause your Loop build to fail.  So, either delete old copies of Loop before downloading/unzipping or rename the folder(s) to ensure that NO SPACES are in the folder name.
     <p align="center">
-    <img src="../img/folder-name.png" width="650">
+    <img src="../img/folder-name.png" width="550">
     </p>
 
-### Add customizations
+## Step 3: Open in Xcode, Sign Targets
 
-Add or redo any customizations, if needed.  These will not be carried over automatically from the old app.  Be sure to read up in the [code customizations section](/setup/update/updating/#add-customizations) before building, as there may be new customizations available since the previous build.
+Double click the Loop folder in your Downloads folder, and then double click the `Loop.xcodeproj` to open the Loop project in Xcode. Navigate, as you did when you originally built the app, to the four target areas. Sign the four targets with your developer team name. Remember that the "(personal team)" in the signing team's name indicates that is a free account and the app will only last for 7 days if you sign with that team name.
 
-### Sign Targets and Build
+## Step 3: Add Code Customizations
 
-Sign the four targets and rebuild.  Just make sure to pick your paid developer team, if you have one.
+Add or redo any code customizations, if needed.  These will not be carried over automatically from the old app.  Be sure to read up in the [code customizations section](https://loopkit.github.io/loopdocs/setup/build/code_customization/) before building, as there may be new customizations available since the previous build.
 
-### Build Errors
+If you are building with a free account, you will have to remove the Siri capabilities in order to build.
 
-**If you get any build errors, please check [this section](https://loopkit.github.io/loopdocs/setup/build/build_errors/) for fixes.**
+## Step 4: Build to your iPhone
+
+Plug your iPhone into the computer, unlock it so that the phone does not fall asleep during the build process.  You can find this setting under Settings, Display & Brightness, Auto-Lock, set to "Never". You can return to your normal lock settings after the build is done.  
+
+Select your iPhone from the top of the device list near Loop's window's upper left area, and then press the triangle "build" button similar to how you did your original Loop build.
+
+**NOW BE PATIENT.**  Loop will take a long time to build; between 25-45 minutes depending on your computer.  The Loop build process will appear to stall or hang a very long time on one build step in particular. Do not worry. This is normal. One step will take a significant amount of time relative to all the other steps. Once that long step is done, the rest will fly by fairly quickly.
+
+At the end of all the steps, you will either get a Build Succeeded or Build Failed message.
+
+* If your build suceeded, you can unplug your phone and move on with Looping. Your new Loop version will be displayed in the top of your Loop Settings screen.</br></br>
+* If your build failed, you will need to go to Step 5 below.
+
+## Step 5: Resolve Build Errors
+
+**If you get any red build errors or a "Loop Build Failed" message, please check [this section](https://loopkit.github.io/loopdocs/setup/build/build_errors/) for fixes.**
 
 
 

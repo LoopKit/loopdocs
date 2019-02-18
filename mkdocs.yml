@@ -23,14 +23,15 @@ pages:
         - 'Building App': 'setup/build/installing.md'
         - 'Build Errors': 'setup/build/build_errors.md'
         - 'Code Customization': 'setup/build/code_customization.md'
+        - 'New iPhone': 'setup/update/new-iphone.md'
     - 'Loop App setup':
         - 'Loop Settings': 'setup/loop-settings/settings.md'
         - 'Loop Services': 'setup/loop-settings/services.md'
         - 'RileyLink menu': 'setup/loop-settings/rileylink_menu.md'
         - 'Pump Setup': 'setup/loop-settings/pump.md'
-    - 'Update':
-        - 'Updating': 'setup/update/updating.md'
+    - 'Update Loop':
         - 'New Version Info': 'setup/update/new-version.md'
+        - 'Update Loop': 'setup/update/updating.md'
 - Operation:
     - 'Loop Displays': 'operation/overview.md'
     - How to Use Loop App:
@@ -55,17 +56,16 @@ pages:
     - 'Overview': 'troubleshooting/overview.md'
     - 'Grey Loop': 'troubleshooting/green-loop.md'
     - 'Yellow/Red Loop': 'troubleshooting/yellow-red-loop.md'
-    - 'NS display': 'troubleshooting/mlab_cleanup.md'
     - 'Priming and Sites': 'troubleshooting/priming.md'
     - 'RileyLink': 'troubleshooting/rileylink.md'
     - 'Time Changes': 'troubleshooting/time-change.md'
-    - 'Pump Errors': 'troubleshooting/pump-errors.md'
+    - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
 - Nightscout:
     - 'Overview': 'nightscout/overview.md'
-    - 'Setup New Site': 'nightscout/new_user.md'
-    - 'Update Site': 'nightscout/update_user.md'
+    - 'Brand New NS': 'nightscout/new_user.md'
+    - 'Retrofit Existing NS': 'nightscout/update_user.md'
+    - 'NS Stopped Working': 'nightscout/mlab_cleanup.md'
     - 'Azure to Heroku': 'nightscout/azure_migration.md'
-    - 'Loop Pill': 'nightscout/loop_pill.md'
     - 'IFTTT': 'nightscout/ifttt.md'
     - 'Pebble': 'nightscout/pebble.md'
     - 'Remote Notifications': 'nightscout/pushover.md'

@@ -2,7 +2,18 @@
 Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.
 
 !!!info ""
-    Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v1.9.3.
+    Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v1.9.4.
+    
+
+### Disable Siri Capabilities
+
+Free developer accounts will not be able to build Loop app while Siri capabilities are turned on.  In order to turn those features off, you will need to remove the Siri entitlements manually.
+
+In the upper left toolbar of Xcode is a "find" option (magnifying glass just below the build - play button), search for 'Siri'.  Two files will be returned; Loop.entitlements and WatchApp Extension.entitlements.  For each of those files, you will need to click on the file name and then delete the Siri Entitlements files by clicking on the minus sign to the right of the word "Siri". Once you delete the Siri entitlement in those two files, you'll be able to sign the four targets and build with the free developer account.
+
+<p align="center">
+<img src="../img/siri-free.png" width="750">
+</p>
 
 ### Disable Authentication for Bolusing
 
@@ -19,7 +30,7 @@ Depending on your iPhone preferences and model, you may have Face ID or Touch ID
 <img style="float: right;" width="200" src="../img/workout_default.png">
 If you’d like more than just the standard 1 or 2 hour duration for the Workout Range, you can add or modify the code to add another time interval or edit the existing ones.
 
-Go to the Loop>>Extensions>>UIAlertController.swift and modify Line 30.  The default has 1 and 2 hours as shown where the arrow is pointing in the screenshot.  You can edit those to whatever duration you want (in units of hours) and add a duration if you prefer.  If you’d like 1, 2, and 3 hours options...simply edit the numbers in the brackets to read [1, 2, 3]. It is possible to enter less than 1 hour intervals such as 15min, 30 min, 45 min by editing the brackets to read [0.25, 0.5, 0.75].
+Go to the Loop>>Extensions>>UIAlertController.swift and modify Line 32.  The default has 1 and 2 hours as shown where the arrow is pointing in the screenshot.  You can edit those to whatever duration you want (in units of hours) and add a duration if you prefer.  If you’d like 1, 2, and 3 hours options...simply edit the numbers in the brackets to read [1, 2, 3]. It is possible to enter less than 1 hour intervals such as 15min, 30 min, 45 min by editing the brackets to read [0.25, 0.5, 0.75].
 
 <p align="center">
 <img src="../img/workout_add.png" width="750">
@@ -33,7 +44,7 @@ Loop’s default carb absorption times are based on the high, medium, and low gl
 
 You can modify these defaults to suit your needs, however modification of these values it not as helpful/common as previous Loop versions.  Ever since Loop v1.4, Loop has included dynamic carb absorption means that Loop will start with your entered carb absorption time, multiply it by 1.5, and then dynamically adjust the absorption time (either shorter or longer) based on the observed BG impacts.  So, typically, most people are finding that modification of the default carb absorption times is no longer necessary.
 
-If you would like to modify those defaults, you can do so in the Loop>>Managers>>LoopDataManager.swift Lines 67-69.  Note the times are in hours, not minutes, in the code.
+If you would like to modify those defaults, you can do so in the Loop>>Managers>>LoopDataManager.swift Lines 65-67.  Note the times are in hours, not minutes, in the code.
 
 <p align="center">
 <img src="../img/carb_times.png" width="750">
@@ -91,7 +102,7 @@ The Apple Watch's default is to autofill to 75% of the recommended bolus.  If yo
 </p>
 
 #### Adjust sensitivity of digital crown for carb and bolus entry
-The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension>>Controllers folder.  In BolusInterfaceController.swift edit line 162, and in AddCarbsInterfaceController.swift edit line 194. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.
+The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension>>Controllers folder.  In BolusInterfaceController.swift edit line 174, and in AddCarbsInterfaceController.swift edit line 215. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.
 
 <p align="center">
 <img src="../img/sensitivity1.png" width="800">
