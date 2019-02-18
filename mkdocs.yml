@@ -23,7 +23,7 @@ pages:
         - 'Building App': 'setup/build/installing.md'
         - 'Build Errors': 'setup/build/build_errors.md'
         - 'Code Customization': 'setup/build/code_customization.md'
-        - 'New iPhone': 'setup/update/new-iphone.md'
+        - 'New iPhone': 'setup/build/new-iphone.md'
     - 'Loop App setup':
         - 'Loop Settings': 'setup/loop-settings/settings.md'
         - 'Loop Services': 'setup/loop-settings/services.md'
