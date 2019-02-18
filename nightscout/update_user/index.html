@@ -8,404 +8,516 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Update Site - Loop Docs</title>
+
+	<title>Retrofit Existing NS - Loop Docs</title>
+
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <link href="../../css/admonitions.css" rel="stylesheet">
+
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
             ga('create', 'UA-109876065-1', 'loopkit.github.io');
             ga('send', 'pageview');
-        </script> 
+        </script>
+        
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">Loop Docs</a>
-                </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../..">Welcome to Loop</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Loop Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../setup/overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Requirements</a>
+    <a tabindex="-1" href="">Requirements</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../setup/requirements/pump/">Insulin Pump</a>
 </li>
+
+        
             
 <li >
     <a href="../../setup/requirements/cgm/">CGM</a>
 </li>
+
+        
             
 <li >
     <a href="../../setup/requirements/rileylink/">RileyLink</a>
 </li>
+
+        
             
 <li >
     <a href="../../setup/requirements/computer/">Computer</a>
 </li>
+
+        
             
 <li >
     <a href="../../setup/requirements/iphone/">iPhone</a>
 </li>
+
+        
             
 <li >
     <a href="../../setup/requirements/appledev/">Apple Developer</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Install Loop</a>
+    <a tabindex="-1" href="">Install Loop</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../setup/build/installing/">Building App</a>
 </li>
+
+        
             
 <li >
     <a href="../../setup/build/build_errors/">Build Errors</a>
 </li>
+
+        
             
 <li >
     <a href="../../setup/build/code_customization/">Code Customization</a>
 </li>
+
+        
+            
+<li >
+    <a href="../../setup/build/new-iphone/">New iPhone</a>
+</li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Loop App setup</a>
+    <a tabindex="-1" href="">Loop App setup</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../setup/loop-settings/settings/">Loop Settings</a>
 </li>
+
+        
             
 <li >
     <a href="../../setup/loop-settings/services/">Loop Services</a>
 </li>
+
+        
             
 <li >
     <a href="../../setup/loop-settings/rileylink_menu/">RileyLink menu</a>
 </li>
+
+        
             
 <li >
     <a href="../../setup/loop-settings/pump/">Pump Setup</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Update</a>
+    <a tabindex="-1" href="">Update Loop</a>
     <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../setup/update/updating/">Updating</a>
-</li>
+        
             
 <li >
     <a href="../../setup/update/new-version/">New Version Info</a>
 </li>
+
+        
+            
+<li >
+    <a href="../../setup/update/updating/">Update Loop</a>
+</li>
+
+        
     </ul>
   </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../operation/overview/">Loop Displays</a>
 </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">How to Use Loop App</a>
+    <a tabindex="-1" href="">How to Use Loop App</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/features/carbs/">Carb Entries</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/bolus/">Bolus</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/workout/">Workout Targets</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/ice/">Using ICE info</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/watch/">Apple Watch</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/widget/">iPhone widget</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/healthapp/">Health App</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/notifications/">Loop Notifications</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/battery/">Pump Battery</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Looping Tips</a>
+    <a tabindex="-1" href="">Looping Tips</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/loop/open-loop/">Open Loop</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/loop/close-loop/">Closed Loop</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Algorithm</a>
+    <a tabindex="-1" href="">Algorithm</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/algorithm/overview/">Overview</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/algorithm/bolus/">Bolus Recommendations</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/algorithm/prediction/">Glucose Prediction</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
 </li>
+
+        
     </ul>
   </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../troubleshooting/overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../troubleshooting/green-loop/">Grey Loop</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
 </li>
-                                    
-<li >
-    <a href="../../troubleshooting/mlab_cleanup/">NS display</a>
-</li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../troubleshooting/priming/">Priming and Sites</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../troubleshooting/rileylink/">RileyLink</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../troubleshooting/time-change/">Time Changes</a>
 </li>
-                                    
+
+                    
+                        
 <li >
-    <a href="../../troubleshooting/pump-errors/">Pump Errors</a>
+    <a href="../../troubleshooting/pump-errors/">MDT Pump Errors</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
 <li >
-    <a href="../new_user/">Setup New Site</a>
+    <a href="../new_user/">Brand New NS</a>
 </li>
-                                    
+
+                    
+                        
 <li class="active">
-    <a href="./">Update Site</a>
+    <a href="./">Retrofit Existing NS</a>
 </li>
-                                    
+
+                    
+                        
+<li >
+    <a href="../mlab_cleanup/">NS Stopped Working</a>
+</li>
+
+                    
+                        
 <li >
     <a href="../azure_migration/">Azure to Heroku</a>
 </li>
-                                    
-<li >
-    <a href="../loop_pill/">Loop Pill</a>
-</li>
-                                    
+
+                    
+                        
 <li >
     <a href="../ifttt/">IFTTT</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../pebble/">Pebble</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../pushover/">Remote Notifications</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../reports/">Reports</a>
 </li>
-                                </ul>
-                            </li>
-                        </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li >
-                                <a rel="next" href="../new_user/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../azure_migration/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
+                    
                     </ul>
-                </div>
-            </div>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../new_user/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../mlab_cleanup/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
         </div>
+    </div>
+</div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#updating-nightscout-site">UPDATING NIGHTSCOUT SITE</a></li>
-            <li><a href="#updating-your-repository-in-github">Updating your repository in GitHub</a></li>
+    
+        <li class="main active"><a href="#adding-loop-to-existing-ns">Adding Loop to Existing NS</a></li>
+        
             <li><a href="#new-loopers-variables">New Loopers Variables</a></li>
-            <li><a href="#event-history">EVENT HISTORY</a></li>
+        
+            <li><a href="#nightscout-version-update">Nightscout Version Update</a></li>
+        
+    
     </ul>
 </div></div>
-                <div class="col-md-9" role="main">
+            <div class="col-md-9" role="main">
 
-<h1 id="updating-nightscout-site">UPDATING NIGHTSCOUT SITE<a class="headerlink" href="#updating-nightscout-site" title="Permanent link">⌁</a></h1>
-<p>If you are new to Loop and haven’t updated your NS site since before December 1, 2016, you will want to update your NS site.  You can run either the "master" or "dev" branches of cgm-remote-monitor with Loop.  To check what version your Nightscout site is running, go to your Nightscout site and pull open the site settings by clicking on the three horizontal lines at the top right of the screen.  Scroll down and see if you are running 0.9.2-dev-20161201 or newer for "dev" branch.  Notice the “dev” branch is date stamped 0.9.x-dev-YYYMMDD; or you’ll see version 0.9.2 for "master" branch deployments.</p>
-<p>If you are a current NS user and simply want to update your site, this procedure will work as well.</p>
-<h2 id="updating-your-repository-in-github">Updating your repository in GitHub<a class="headerlink" href="#updating-your-repository-in-github" title="Permanent link">⌁</a></h2>
-<ul>
-<li>Copy, paste, and goto the one of the following links depending on which branch of cgm-remote-monitor you are currently running (replace <code>yourgithubname</code> with your actual GitHub user name)</li>
-</ul>
-<p>for master branch deployments:</p>
-<p><code>https://github.com/yourgithubname/cgm-remote-monitor/compare/master...nightscout:master</code></p>
-<p>For dev branch deployments:</p>
-<p><code>https://github.com/yourgithubname/cgm-remote-monitor/compare/dev...nightscout:dev</code></p>
-<p align="center">
-<img src="../img/compare_repo.jpg" width="450">
-</p>
-
-<ul>
-<li>Click the big green <code>Create pull request</code> button. Another screen will appear, fill in a title and click button to create the pull request, and then you can <code>Merge pull request</code>, and finally <code>Confirm merge</code>.</li>
-</ul>
-<hr />
-<p><p align="center">
-<img src="../img/update1.jpg" width="450">
-</p> </p>
-<hr />
-<p><p align="center">
-<img src="../img/update2.jpg" width="550">
-</p> </p>
-<hr />
-<p><p align="center">
-<img src="../img/update3.jpg" width="550">
-</p> </p>
-<hr />
-<ul>
-<li>
-<p>Your cgm-remote-monitor repository is now up-to-date.  Nice work.</p>
-</li>
-<li>
-<p>If you don’t have your Heroku set-up to automatically update when your repository is updated, you may have to go into your Heroku <code>Deploy</code> section and manually deploy your branch now that your repository has been updated.  Make sure you are connected to your GitHub cgm-remote-monitor repository.</p>
-</li>
-</ul>
-<p align="center">
-<img src="../img/deploy_branch.jpg" width="450">
-</p>
-
+<h1 id="adding-loop-to-existing-ns">Adding Loop to Existing NS<a class="headerlink" href="#adding-loop-to-existing-ns" title="Permanent link">⌁</a></h1>
+<p>Many people may already have an existing Nightscout site setup from before adding Loop to their management strategies. In order to make the most of your Looping setup, you will need to modify your existing Nightscout site a bit specifically for Loop. The process is pretty easy and should not take long.</p>
 <h2 id="new-loopers-variables">New Loopers Variables<a class="headerlink" href="#new-loopers-variables" title="Permanent link">⌁</a></h2>
-<p>For new Loopers (but old Nightscout users), you will need to add some variables to your Heroku site to Loop.  </p>
-<ul>
-<li>Login to your Heroku site, select the <code>Settings</code> tab near the top of the screen on your Heroku app.</li>
-</ul>
+<p>The modifications for retrofitting an existing NS site for new Loop users will require you to make some edits to your Heroku site.  There are five steps:</p>
+<ol>
+<li>Login to Heroku, Open Settings Tab</li>
+<li>Edit/Add Config Vars</li>
+<li>Open Nightscout Site</li>
+<li>Turn on Plugins</li>
+<li>Upate Profile Settings</li>
+</ol>
+<h3 id="step-1-login-to-heroku-settings-tab">Step 1: Login to Heroku, Settings Tab<a class="headerlink" href="#step-1-login-to-heroku-settings-tab" title="Permanent link">⌁</a></h3>
+<p><a href="https://id.heroku.com/login">Login to your Heroku account</a>, select the <code>Settings</code> tab near the top of the screen on your Heroku app.</p>
 <p align="center">
 <img src="../img/settings_heroku.jpg" width="450">
 </p>
 
-<ul>
-<li>Click on <code>Reveal Config  Vars</code>.  Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add several additional lines of config vars for Loop use; the DEVICESTATUS_ADVANCED and ENABLE lines are required, the others just make Nightscout more useful when Looping.</li>
-</ul>
+<h3 id="step-2-editadd-config-vars">Step 2: Edit/Add Config Vars<a class="headerlink" href="#step-2-editadd-config-vars" title="Permanent link">⌁</a></h3>
+<p>Click on <code>Reveal Config Vars</code>.  Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add several additional lines of config vars for Loop use; the DEVICESTATUS_ADVANCED and ENABLE lines are required, the others just make Nightscout more useful when Looping.</p>
 <p align="center">
 <img src="../img/add_vars.jpg" width="450">
 </p>
@@ -413,14 +525,15 @@
 <table>
 <thead>
 <tr>
-<th>KEY</th>
-<th>VALUE</th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th>ENABLE</th>
-<td>bridge loop pump iob cob basal careportal sage cage</br></br>(Double check that you have at least these words on your ENABLE line.  Enter all of the words without commas; just a single space between each word. Make sure autocorrect does not add space between careportal.)</td>
+<td>bridge loop pump iob cob basal careportal sage cage </br></br>
+<b>(Note: If you are an existing NS user, you likely already have an ENABLE line in this section of Heroku. Don't add a new one. Simply find the existing ENABLE line, click on the little pencil icon to the right of it, and add the words shown on the ENABLE line below to the existing words already on the enable line.  Avoid duplicates. The remainder of the lines are likely going to be brand new additions to your Heroku settings.)</b></td>
 </tr>
 <tr>
 <th>DEVICESTATUS_ADVANCED</th>
@@ -477,101 +590,95 @@
 </tbody>
 </table>
 
-<ul>
-<li>Click on <code>Open App</code> in the top right corner of your Heroku site.</li>
-</ul>
+<h3 id="step-3-open-your-ns-site">Step 3: Open Your NS Site<a class="headerlink" href="#step-3-open-your-ns-site" title="Permanent link">⌁</a></h3>
+<p>Click on <code>Open App</code> in the top right corner of your Heroku site.</p>
 <p align="center">
 <img src="../img/open_app.jpg" width="450">
 </p>
 
-<ul>
-<li>Click on the settings (those three horizontal lines in upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then press save.  Your NIGHTSCOUT site is all set-up.  Congrats!</li>
-</ul>
+<h3 id="step-4-turn-on-plugins">Step 4: Turn on Plugins<a class="headerlink" href="#step-4-turn-on-plugins" title="Permanent link">⌁</a></h3>
+<p>Click on the settings (those three horizontal lines in upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then press save. If you have not authenticated your site previously, you may be prompted to provide your API Secret prior to Nightscout saving your changes. </p>
 <p align="center">
 <img src="../img/settings_ns.jpg" width="450">
 </p>
 
+<h3 id="step-5-update-profile-settings">Step 5: Update Profile Settings<a class="headerlink" href="#step-5-update-profile-settings" title="Permanent link">⌁</a></h3>
+<p>Double check that your NS Profile settings are current and that you have a basal profile entered, if you want to see the temp basals that Loop is setting. The values in your Nightscout Profile settings will not impact or affect your Loop, but it is just nice to have them match up in the event you are looking at your data with an endocrinologist or retrospectively looking at data.</p>
+<h2 id="nightscout-version-update">Nightscout Version Update<a class="headerlink" href="#nightscout-version-update" title="Permanent link">⌁</a></h2>
+<p>If you are new to Loop and haven’t updated your NS site since before December 1, 2016, you will want to update your NS site. You can run either the "master" or "dev" branches of cgm-remote-monitor with Loop.  To check what version your Nightscout site is running, go to your Nightscout site and pull open the site settings by clicking on the three horizontal lines at the top right of the screen.  The version number is at the bottom.</p>
+<p>Nightscout has a tool to help you update your Nightscout site and you can find the <a href="http://www.nightscout.info/wiki/welcome/how-to-update-to-latest-cgm-remote-monitor-aka-cookie">directions using to the update tool here</a>.</p>
+<p>Simply put, the <a href="http://nightscout.github.io/pages/update-fork/">Update tool</a> will look at your GitHub repository and check if your Nightscout code is old and needs updating.  You will have to be logged into your GitHub account in order for the tool to work, so do that before starting this process.</p>
+<p align="center">
+<img src="../img/ns-tool.png" width="750">
+</p>
+
+<p></br>
+You'll click on the green <code>Continue updating at GitHub</code> button, read the directions that will appear as a pop-up and then finish the update process. </p>
+<p>Click the big green <code>Create pull request</code> button. </p>
 <ul>
-<li>Double check that your NS Profile settings are current and that you have a basal profile entered, if you want to see the temp basals that Loop is setting.</li>
+<li>
+<p>For most people, another screen will appear like shown in the screenshots below with a green <code>Able to merge</code> message. Fill in a title and click button to create the pull request, and then you can <code>Merge pull request</code>, and finally <code>Confirm merge</code>.</br></p>
+</li>
+<li>
+<p>However, for some of you may encounter an red error message <code>x Can't automatically merge</code> message. If you have that message, you may want to post in FB for help on resolving that error message before proceeding any further.</p>
+</li>
 </ul>
-<h2 id="event-history">EVENT HISTORY<a class="headerlink" href="#event-history" title="Permanent link">⌁</a></h2>
-<p>Don't forget to keep you Loop App's Preferred Source set to <code>Event History</code> if you want your NS site to smoothly integrate.  Preferred Source set to <code>Reservoir</code> will result in carbs not being uploaded and temp basals not being displayed.</p></div>
+<hr />
+<p><p align="center">
+<img src="../img/update1.jpg" width="650">
+</p> </p>
+<hr />
+<p><p align="center">
+<img src="../img/update2.jpg" width="650">
+</p> </p>
+<hr />
+<p><p align="center">
+<img src="../img/update3.jpg" width="650">
+</p> </p>
+<hr />
+<p>Your cgm-remote-monitor repository is now up-to-date.  Nice work, and almost done.</p>
+<p>If you don’t have your Heroku set-up to automatically update when your repository is updated, you will have to go into your Heroku <code>Deploy</code> section and manually deploy your branch now that your repository has been updated.  Make sure you are connected to your GitHub cgm-remote-monitor repository.</p>
+<p align="center">
+<img src="../img/deploy_branch.jpg" width="750">
+</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
                     </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
     </body>
 </html>

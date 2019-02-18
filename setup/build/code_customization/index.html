@@ -8,358 +8,521 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Code Customization - Loop Docs</title>
+
+	<title>Code Customization - Loop Docs</title>
+
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
         <link href="../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <link href="../../../css/admonitions.css" rel="stylesheet">
+
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
             ga('create', 'UA-109876065-1', 'loopkit.github.io');
             ga('send', 'pageview');
-        </script> 
+        </script>
+        
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../../..">Loop Docs</a>
-                </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../../..">Welcome to Loop</a>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Loop Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Requirements</a>
+    <a tabindex="-1" href="">Requirements</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../requirements/pump/">Insulin Pump</a>
 </li>
+
+        
             
 <li >
     <a href="../../requirements/cgm/">CGM</a>
 </li>
+
+        
             
 <li >
     <a href="../../requirements/rileylink/">RileyLink</a>
 </li>
+
+        
             
 <li >
     <a href="../../requirements/computer/">Computer</a>
 </li>
+
+        
             
 <li >
     <a href="../../requirements/iphone/">iPhone</a>
 </li>
+
+        
             
 <li >
     <a href="../../requirements/appledev/">Apple Developer</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Install Loop</a>
+    <a tabindex="-1" href="">Install Loop</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../installing/">Building App</a>
 </li>
+
+        
             
 <li >
     <a href="../build_errors/">Build Errors</a>
 </li>
+
+        
             
 <li class="active">
     <a href="./">Code Customization</a>
 </li>
+
+        
+            
+<li >
+    <a href="../new-iphone/">New iPhone</a>
+</li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Loop App setup</a>
+    <a tabindex="-1" href="">Loop App setup</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../loop-settings/settings/">Loop Settings</a>
 </li>
+
+        
             
 <li >
     <a href="../../loop-settings/services/">Loop Services</a>
 </li>
+
+        
             
 <li >
     <a href="../../loop-settings/rileylink_menu/">RileyLink menu</a>
 </li>
+
+        
             
 <li >
     <a href="../../loop-settings/pump/">Pump Setup</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Update</a>
+    <a tabindex="-1" href="">Update Loop</a>
     <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../update/updating/">Updating</a>
-</li>
+        
             
 <li >
     <a href="../../update/new-version/">New Version Info</a>
 </li>
+
+        
+            
+<li >
+    <a href="../../update/updating/">Update Loop</a>
+</li>
+
+        
     </ul>
   </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../../operation/overview/">Loop Displays</a>
 </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">How to Use Loop App</a>
+    <a tabindex="-1" href="">How to Use Loop App</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../../operation/features/carbs/">Carb Entries</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/features/bolus/">Bolus</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/features/workout/">Workout Targets</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/features/ice/">Using ICE info</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/features/watch/">Apple Watch</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/features/widget/">iPhone widget</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/features/healthapp/">Health App</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/features/notifications/">Loop Notifications</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/features/battery/">Pump Battery</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Looping Tips</a>
+    <a tabindex="-1" href="">Looping Tips</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../../operation/loop/open-loop/">Open Loop</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/loop/close-loop/">Closed Loop</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Algorithm</a>
+    <a tabindex="-1" href="">Algorithm</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../../operation/algorithm/overview/">Overview</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/algorithm/bolus/">Bolus Recommendations</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/algorithm/prediction/">Glucose Prediction</a>
 </li>
+
+        
             
 <li >
     <a href="../../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
 </li>
+
+        
     </ul>
   </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../../troubleshooting/overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../../troubleshooting/green-loop/">Grey Loop</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
 </li>
-                                    
-<li >
-    <a href="../../../troubleshooting/mlab_cleanup/">NS display</a>
-</li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../../troubleshooting/priming/">Priming and Sites</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../../troubleshooting/rileylink/">RileyLink</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../../troubleshooting/time-change/">Time Changes</a>
 </li>
-                                    
+
+                    
+                        
 <li >
-    <a href="../../../troubleshooting/pump-errors/">Pump Errors</a>
+    <a href="../../../troubleshooting/pump-errors/">MDT Pump Errors</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../../nightscout/overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
 <li >
-    <a href="../../../nightscout/new_user/">Setup New Site</a>
+    <a href="../../../nightscout/new_user/">Brand New NS</a>
 </li>
-                                    
+
+                    
+                        
 <li >
-    <a href="../../../nightscout/update_user/">Update Site</a>
+    <a href="../../../nightscout/update_user/">Retrofit Existing NS</a>
 </li>
-                                    
+
+                    
+                        
+<li >
+    <a href="../../../nightscout/mlab_cleanup/">NS Stopped Working</a>
+</li>
+
+                    
+                        
 <li >
     <a href="../../../nightscout/azure_migration/">Azure to Heroku</a>
 </li>
-                                    
-<li >
-    <a href="../../../nightscout/loop_pill/">Loop Pill</a>
-</li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../../nightscout/ifttt/">IFTTT</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../../nightscout/pebble/">Pebble</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../../nightscout/pushover/">Remote Notifications</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../../nightscout/reports/">Reports</a>
 </li>
-                                </ul>
-                            </li>
-                        </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li >
-                                <a rel="next" href="../build_errors/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../../loop-settings/settings/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
+                    
                     </ul>
-                </div>
-            </div>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../build_errors/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../new-iphone/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
         </div>
+    </div>
+</div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+    
         <li class="main active"><a href="#code-customizations">Code Customizations</a></li>
+        
+            <li><a href="#disable-siri-capabilities">Disable Siri Capabilities</a></li>
+        
             <li><a href="#disable-authentication-for-bolusing">Disable Authentication for Bolusing</a></li>
+        
             <li><a href="#workout-range-duration">Workout Range Duration</a></li>
+        
             <li><a href="#default-carb-absorption-times">Default Carb Absorption Times</a></li>
+        
             <li><a href="#neutral-temp-basals">Neutral Temp Basals</a></li>
+        
             <li><a href="#exponential-insulin-curve">Exponential Insulin Curve</a></li>
+        
             <li><a href="#loop-logo">Loop Logo</a></li>
+        
             <li><a href="#apple-watch-customizations">Apple Watch Customizations</a></li>
+        
+    
     </ul>
 </div></div>
-                <div class="col-md-9" role="main">
+            <div class="col-md-9" role="main">
 
 <h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Permanent link">⌁</a></h2>
 <p>Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.</p>
 <div class="admonition info">
-<p>Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v1.9.3.</p>
+<p>Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v1.9.4.</p>
 </div>
+<h3 id="disable-siri-capabilities">Disable Siri Capabilities<a class="headerlink" href="#disable-siri-capabilities" title="Permanent link">⌁</a></h3>
+<p>Free developer accounts will not be able to build Loop app while Siri capabilities are turned on.  In order to turn those features off, you will need to remove the Siri entitlements manually.</p>
+<p>In the upper left toolbar of Xcode is a "find" option (magnifying glass just below the build - play button), search for 'Siri'.  Two files will be returned; Loop.entitlements and WatchApp Extension.entitlements.  For each of those files, you will need to click on the file name and then delete the Siri Entitlements files by clicking on the minus sign to the right of the word "Siri". Once you delete the Siri entitlement in those two files, you'll be able to sign the four targets and build with the free developer account.</p>
+<p align="center">
+<img src="../img/siri-free.png" width="750">
+</p>
+
 <h3 id="disable-authentication-for-bolusing">Disable Authentication for Bolusing<a class="headerlink" href="#disable-authentication-for-bolusing" title="Permanent link">⌁</a></h3>
 <p>Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization:</p>
 <p>Modify Line 191 in the Loop&gt;&gt;View Controllers&gt;&gt;BolusViewController.swift.  Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
@@ -370,7 +533,7 @@
 <h3 id="workout-range-duration">Workout Range Duration<a class="headerlink" href="#workout-range-duration" title="Permanent link">⌁</a></h3>
 <p><img style="float: right;" width="200" src="../img/workout_default.png">
 If you’d like more than just the standard 1 or 2 hour duration for the Workout Range, you can add or modify the code to add another time interval or edit the existing ones.</p>
-<p>Go to the Loop&gt;&gt;Extensions&gt;&gt;UIAlertController.swift and modify Line 30.  The default has 1 and 2 hours as shown where the arrow is pointing in the screenshot.  You can edit those to whatever duration you want (in units of hours) and add a duration if you prefer.  If you’d like 1, 2, and 3 hours options...simply edit the numbers in the brackets to read [1, 2, 3]. It is possible to enter less than 1 hour intervals such as 15min, 30 min, 45 min by editing the brackets to read [0.25, 0.5, 0.75].</p>
+<p>Go to the Loop&gt;&gt;Extensions&gt;&gt;UIAlertController.swift and modify Line 32.  The default has 1 and 2 hours as shown where the arrow is pointing in the screenshot.  You can edit those to whatever duration you want (in units of hours) and add a duration if you prefer.  If you’d like 1, 2, and 3 hours options...simply edit the numbers in the brackets to read [1, 2, 3]. It is possible to enter less than 1 hour intervals such as 15min, 30 min, 45 min by editing the brackets to read [0.25, 0.5, 0.75].</p>
 <p align="center">
 <img src="../img/workout_add.png" width="750">
 </p>
@@ -379,7 +542,7 @@ If you’d like more than just the standard 1 or 2 hour duration for the Workout
 <p><img style="float: right;" width="200" src="../img/carb_screen.png"></p>
 <p>Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <i>Think Like A Pancreas</i> by Gary Scheiner.  Currently the lollipop icon is set for 2 hours, taco icon for 3 hours, and pizza icon for 4 hours.  </p>
 <p>You can modify these defaults to suit your needs, however modification of these values it not as helpful/common as previous Loop versions.  Ever since Loop v1.4, Loop has included dynamic carb absorption means that Loop will start with your entered carb absorption time, multiply it by 1.5, and then dynamically adjust the absorption time (either shorter or longer) based on the observed BG impacts.  So, typically, most people are finding that modification of the default carb absorption times is no longer necessary.</p>
-<p>If you would like to modify those defaults, you can do so in the Loop&gt;&gt;Managers&gt;&gt;LoopDataManager.swift Lines 67-69.  Note the times are in hours, not minutes, in the code.</p>
+<p>If you would like to modify those defaults, you can do so in the Loop&gt;&gt;Managers&gt;&gt;LoopDataManager.swift Lines 65-67.  Note the times are in hours, not minutes, in the code.</p>
 <p align="center">
 <img src="../img/carb_times.png" width="750">
 </p>
@@ -427,7 +590,7 @@ If you’d like more than just the standard 1 or 2 hour duration for the Workout
 </p>
 
 <h4 id="adjust-sensitivity-of-digital-crown-for-carb-and-bolus-entry">Adjust sensitivity of digital crown for carb and bolus entry<a class="headerlink" href="#adjust-sensitivity-of-digital-crown-for-carb-and-bolus-entry" title="Permanent link">⌁</a></h4>
-<p>The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension&gt;&gt;Controllers folder.  In BolusInterfaceController.swift edit line 162, and in AddCarbsInterfaceController.swift edit line 194. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.</p>
+<p>The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension&gt;&gt;Controllers folder.  In BolusInterfaceController.swift edit line 174, and in AddCarbsInterfaceController.swift edit line 215. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.</p>
 <p align="center">
 <img src="../img/sensitivity1.png" width="800">
 </p>
@@ -439,78 +602,40 @@ If you’d like more than just the standard 1 or 2 hour duration for the Workout
 
         <footer class="col-md-12">
             <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
-        <script>
-            var base_url = "../../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../../js/base.js" defer></script>
-        <script src="../../../search/main.js" defer></script>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
                     </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
     </body>
 </html>
