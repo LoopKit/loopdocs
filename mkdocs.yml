@@ -28,8 +28,8 @@ pages:
     - Code Customization: 'build/code_customization.md'
     - New iPhone: 'build/new-iphone.md'
     - 'Update Loop':
-        - 'New Version Info': 'setup/update/new-version.md'
-        - 'Update Loop': 'setup/update/updating.md'
+        - 'New Version Info': 'build/update/new-version.md'
+        - 'Update Loop': 'build/update/updating.md'
 - Operation:
     - App setup:
         - 'Loop Settings': 'setup/loop-settings/settings.md'

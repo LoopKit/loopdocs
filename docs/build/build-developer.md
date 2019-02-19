@@ -26,4 +26,4 @@ However, if you've decided to you'd like to use a paid developer account, we nee
 ## License Agreement
 When you enroll in the Developer, you also click a box that you are agreeing to Apple's Develper Program license agreement. Periodically, Apple will update that license agreement and you'll be required to agree to the updates.  When that happens, you'll need to login to your developer account and accept the new license agreement before you can sign a new/updated Loop app again. Not a big deal, just mentioning it for future reference.
 
-Now that you have your Developer Account decision made, and enrolled if you are doing the paid account...you can move onto [Setting up your Xcode](https://loopkit.github.io/loopdocs/setup/requirements/pump/).
+Now that you have your Developer Account decision made, and enrolled if you are doing the paid account...you can move onto [Setting up your Xcode](https://loopkit.github.io/loopdocs/build/build-xcode/).

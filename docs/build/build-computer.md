@@ -34,4 +34,4 @@ Wait while the script does its thing...you’ll see info scroll by and then it w
 
 You can close the Terminal application now.  You’re done with it.  You do not need to do these steps again for any subsequent Loop builds. This is one of those "just do it once" installations.
 
-Now you are ready to move onto the next steps to [Setup Apple Developer Account](https://loopkit.github.io/loopdocs/build/build-developer.md).
+Now you are ready to move onto the next steps to [Setup Apple Developer Account](https://loopkit.github.io/loopdocs/build/build-developer/).
