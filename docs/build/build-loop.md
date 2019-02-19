@@ -106,7 +106,9 @@ A successfully signed target will have a provisioning profile and signing certif
 
 **New Loop users**: Customizations are not a required part of any Loop build.  As you gain experience in how you use your Loop app, you may want to customize some of the features.  You can always update your Loop app to add customizations at a later time.  Really though, building with the standard, default installation is JUST FINE.
 
-If you want any custom configurations to your Loop or Watch apps, now is the time to make them before you finish with the last step of Loop installation on your iPhone.  Follow the step-by-step instructions on the [Code Customizations](code_customization.md) page.  When you’ve completed those customizations, please return here and follow the next steps to finish the installation of Loop.
+If you want any custom configurations to your Loop or Loop Apple Watch apps, now is the time to make them before you finish with the last step of Loop installation on your iPhone.  Follow the step-by-step instructions on the [Code Customizations](code_customization.md) page. If you are a person familiar with Apple's swift language, feel free to make your own customizations as well.
+
+When you've finished your customizations, come on back to this section and continue on with the rest of the build.
 
 ## Pair your Apple Watch
 **New Apple Watch users**: If you have an unopened Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)</br></br>
@@ -129,13 +131,20 @@ Do not give up on the build.  Wait it out...eventually you will either see a Bui
 
 If the build is successful, your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. Allow Loop to send you notifications. In the next screen that follows that, click on the `Turn All Categories On` line and then click `Allow` in the upper right corner.</br></br>
 
-**First time builders:** If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below.  Don't worry, Loop installed on the phone but needs you to do an extra step on the phone before Loop app can open.  Just follow the directions shown in the warning for what you need to do on your iPhone, and the issue resolves very quickly.  Click ok and you can safely disconnect your iPhone from the computer.  (If you don’t get a warning and the Loop app installs but does not open, you may still need to go to Settings->General->Device Management and enable trust for your Developer Account.)
-
-<p align="center">
-<img src="../img/trust_device.jpg" width="750">
-</p>
+!!! info "First time builders"
+    If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below.  Don't worry, Loop installed on the phone but needs you to do an extra step on the phone before Loop app can open.  Just follow the directions shown in the warning for what you need to do on your iPhone, and the issue resolves very quickly.  Click ok and you can safely disconnect your iPhone from the computer.  (If you don’t get a warning and the Loop app installs but does not open, you may still need to go to Settings->General->Device Management and enable trust for your Developer Account.)
+    <p align="center">
+    <img src="../img/trust_device.jpg" width="750">
+    </p>
 
 ## Build Failed
-If you get a message that your build failed, please review the [Build Errors](build_errors.md) page.  Read your error message(s), find the matching error in the Build Errors page, and follow the directions for repairing the error.
+If you get a message that your build failed, you're likely going to see a list of red alerts on your left-hand column of Loop app. Those messages will be the key to resolving your build error.
 
+<p align="center">
+<img src="../img/general-error.jpg" width="750">
+</p>
+
+You'll need to go to the [Build Errors](build_errors.md) page to resolve the error message. Read your error message(s), find the matching error in the Build Errors page's images and descriptions, and follow the directions for repairing the error.
+
+You're done building your Loop app...now you need to move onto Setting up your Loop app.
 

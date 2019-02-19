@@ -21,7 +21,7 @@ pages:
 - Build:
     - Overview: 'build/overview.md'
     - Setup Computer: 'build/build-computer.md'
-    - Setup Developer Account: 'build-developer.md'
+    - Setup Developer Account: 'build/build-developer.md'
     - Setup Xcode: 'build/build-xcode.md'
     - Build Loop: 'build/build-loop.md'
     - Build Errors: 'build/build_errors.md'
