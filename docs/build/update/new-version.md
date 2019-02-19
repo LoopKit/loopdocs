@@ -53,3 +53,5 @@ Because I know you will ask:
 * The uploading of meterBG checks to NS using pump-linked Contour Next meters is temporarily not working.  There is an open ticket to get this restored.  We miss our red dots, too.  
 
 * Some x15 pumps will get erroneous "Bolus may not have succeeded.  Pump responded unexpectedly.  Check your pump before retrying" notifications .  This is a known issue, even since before the release of v1.9, discussed [here](https://github.com/LoopKit/Loop/issues/587).  You can read the thread and implement the suggested solution until one has been merged into a Loop release.
+
+* Series 0 Apple Watches will need a specific manual fix at Loop build time, until the fix is merged into the main code.  You can find the instructions for that fix [here](https://github.com/LoopKit/Loop/issues/886#issuecomment-464133038).

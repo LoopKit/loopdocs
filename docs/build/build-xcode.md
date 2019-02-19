@@ -41,4 +41,4 @@ Finally, we are going to turn on Line Numbers to make some later steps in the bu
 
 You are now done setting up Xcode.  Great job!  You will not need to redo the account setup steps on any subsequent builds or updates of your Loop app.  Xcode will remember these settings.
 
-You are ready to move onto the next part [Building Loop using Xcode](https://loopkit.github.io/loopdocs/setup/requirements/pump/).
+You are ready to move onto the next part [Building Loop using Xcode](https://loopkit.github.io/loopdocs/build/build-loop/).
