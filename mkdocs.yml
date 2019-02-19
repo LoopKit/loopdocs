@@ -32,10 +32,10 @@ pages:
         - 'Update Loop': 'build/update/updating.md'
 - Operation:
     - App setup:
-        - 'Loop Settings': 'setup/loop-settings/settings.md'
-        - 'Loop Services': 'setup/loop-settings/services.md'
-        - 'RileyLink menu': 'setup/loop-settings/rileylink_menu.md'
-        - 'Pump Setup': 'setup/loop-settings/pump.md'
+        - 'Loop Settings': 'operation/loop-settings/settings.md'
+        - 'Loop Services': 'operation/loop-settings/services.md'
+        - 'RileyLink menu': 'operation/loop-settings/rileylink_menu.md'
+        - 'Pump Setup': 'operation/loop-settings/pump.md'
         - 'Loop Displays': 'operation/overview.md'
     - How to Use Loop App:
         - 'Carb Entries': 'operation/features/carbs.md'

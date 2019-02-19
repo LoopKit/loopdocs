@@ -21,7 +21,10 @@ If you decide to use a **PAID** developer account, here's what you need to know:
 ## Developer Enrollment
 If you have decided to use the free developer account, you don't have to do anything right now.  We will create it a little later in this process. 
 
-However, if you've decided to you'd like to use a paid developer account, we need to get you enrolled.  Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual account.  (Note: The Apple ID you use to enroll in the developer program does not need to be the same Apple ID as the Loop iPhone uses, for example parent installing Loop on kid's iPhone.  Typically for the developer enrollment, use the Apple ID of the person who will be doing the Loop app building.)   After you enroll, make sure you look for a confirmation email.  Apple says it can take up to 24 hours to confirm and setup a new Apple developer account, however some people have had the process only take minutes.  It can vary.
+!!! info "Action item here!"
+    If you've decided to you'd like to use a paid developer account, we need to get you enrolled.  Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual account.
+
+Note: The Apple ID you use to enroll in the developer program does not need to be the same Apple ID as the Loop iPhone uses, for example parent installing Loop on kid's iPhone.  Typically for the developer enrollment, use the Apple ID of the person who will be doing the Loop app building.)   After you enroll, make sure you look for a confirmation email.  Apple says it can take up to 24 hours to confirm and setup a new Apple developer account, however some people have had the process only take minutes.  It can vary.
 
 ## License Agreement
 When you enroll in the Developer, you also click a box that you are agreeing to Apple's Develper Program license agreement. Periodically, Apple will update that license agreement and you'll be required to agree to the updates.  When that happens, you'll need to login to your developer account and accept the new license agreement before you can sign a new/updated Loop app again. Not a big deal, just mentioning it for future reference.
