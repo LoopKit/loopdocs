@@ -1,6 +1,22 @@
 # FAQs about getting started
 
-There are lots of new users coming to Loop with the exciting announcement about Omnipod now being supported on Loop. You have probably got a lot of questions.
+There are lots of new users coming to Loop trying to find out information about Omnipod potentially being supported on Loop. You probably have a lot of questions.
+
+## Is Omnipod supported on Loop?
+
+No, not yet. Omnipod has been in the process of being "hacked" for several years now and this has been a tremendous amount of work. The work has been fruitful...but it is not ready for public release yet. When it is ready, we promise to update these documents with instructions and information about Omnipod Loop.
+
+## Which pods will work with Loop?
+
+The Loop system described in these documents (aka DIY Loop) will work with Eros pods...these are the current pods on the market in wide release.  The newer DASH pods will not be compatible with DIY Loop.  Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). The Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
+
+Summary:
+DIY Loop + Eros pods + RileyLink
+Tidepool Loop +DASH pods (no RileyLink)
+
+## Do I need a PDM still with Omnipod Loop?
+
+No, pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your Loop app on your iPhone. When Loop is ready for Omnipod, it will not use a PDM...and in fact you cannot use a PDM for a pod that has been activated with Loop.
 
 ## What do I need to Loop?
 
