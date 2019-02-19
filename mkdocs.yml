@@ -10,7 +10,7 @@ markdown_extensions:
 
 pages:
 - 'index.md'
-- Setup:
+- FAQs/Gear:
     - 'FAQs': 'setup/FAQs.md'
     - 'Insulin Pump': 'setup/requirements/pump.md'
     - 'CGM': 'setup/requirements/cgm.md'
@@ -18,7 +18,7 @@ pages:
     - 'Computer': 'setup/requirements/computer.md'
     - 'iPhone': 'setup/requirements/iphone.md'
     - 'Apple Developer': 'setup/requirements/appledev.md'
-- Build:
+- Build App:
     - Overview: 'build/overview.md'
     - Setup Computer: 'build/build-computer.md'
     - Setup Developer Account: 'build/build-developer.md'
@@ -27,10 +27,9 @@ pages:
     - Build Errors: 'build/build_errors.md'
     - Code Customization: 'build/code_customization.md'
     - New iPhone: 'build/new-iphone.md'
-    - 'Update Loop':
-        - 'New Version Info': 'build/update/new-version.md'
-        - 'Update Loop': 'build/update/updating.md'
-- Operation:
+    - Update Loop: 'build/update/updating.md'
+    - New Version Info: 'build/update/new-version.md'
+- Operate:
     - App setup:
         - 'Loop Settings': 'operation/loop-settings/settings.md'
         - 'Loop Services': 'operation/loop-settings/services.md'
@@ -55,7 +54,7 @@ pages:
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
         - 'Glucose Prediction': 'operation/algorithm/prediction.md'
         - 'Temp Basal Adjustments': 'operation/algorithm/temp-basal.md'
-- Troubleshooting:
+- Troubleshoot:
     - 'Overview': 'troubleshooting/overview.md'
     - 'Grey Loop': 'troubleshooting/green-loop.md'
     - 'Yellow/Red Loop': 'troubleshooting/yellow-red-loop.md'

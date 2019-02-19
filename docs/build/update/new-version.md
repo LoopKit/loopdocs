@@ -17,7 +17,7 @@ You can now use a shortcut phrase, that you'll setup with Siri, to open the "Add
 Assuming you have Siri enabled, you'll navigate to your iPhone Settings, Siri & Search, Shortcuts, and then record the shortcut phrase you'd like to use to for Siri to open the "add carbs" screen in Loop.
 
 <p align="center">
-<img src="../img/siri.PNG" width="850">
+<img src="../img/siri.png" width="850">
 </p>
 
 ## Bug Fix: Future BG data for G6 users
