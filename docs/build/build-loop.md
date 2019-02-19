@@ -146,5 +146,5 @@ If you get a message that your build failed, you're likely going to see a list o
 
 You'll need to go to the [Build Errors](build_errors.md) page to resolve the error message. Read your error message(s), find the matching error in the Build Errors page's images and descriptions, and follow the directions for repairing the error.
 
-You're done building your Loop app...now you need to move onto Setting up your Loop app.
+You're done building your Loop app...but first please read about the [Jaeb Observational Study](https://loopkit.github.io/loopdocs/build/jaeb-study/) before moving onto [Loop App setup](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/)
 
