@@ -2,23 +2,6 @@
 
 There are lots of new users coming to Loop trying to find out information about Omnipod potentially being supported on Loop. You probably have a lot of questions.
 
-## Is Omnipod supported on Loop?
-
-No, not yet. Omnipod has been in the process of being "hacked" for several years now and this has been a tremendous amount of work. The work has been fruitful...but it is not ready for public release yet. When it is ready, we promise to update these documents with instructions and information about Omnipod Loop.
-
-## Which pods will work with Loop?
-
-The Loop system described in these documents (aka DIY Loop) will work with Eros pods...these are the current pods on the market in wide release.  The newer DASH pods will not be compatible with DIY Loop.  Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
-
-Summary:
-
-* DIY Loop + Eros pods + RileyLink</br></br>
-* Tidepool Loop +DASH pods (no RileyLink)
-
-## Do I need a PDM still with Omnipod Loop?
-
-No, pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your Loop app on your iPhone. When Loop is ready for Omnipod, it will not use a PDM...and in fact you cannot use a PDM for a pod that has been activated with Loop.
-
 ## What do I need to Loop?
 
 Loop has both hardware and software requirements.  In general, to use Loop you need to have seven components.
@@ -34,6 +17,27 @@ Loop has both hardware and software requirements.  In general, to use Loop you n
 <p align="center">
 <img src="../requirements/img/loop_gear.jpg" width="500">
 </p>
+
+## Is Omnipod supported on Loop?
+
+No, not yet. Omnipod has been in the process of being "hacked" for several years now and this has been a tremendous amount of work. The work has been fruitful...but it is not ready for public release yet. When it is ready, we promise to update these documents with instructions and information about Omnipod Loop.
+
+## Which pods will work with Loop?
+
+The Loop system described in these documents (aka DIY Loop) will work with Eros pods...these are the current pods on the market in wide release.  The newer DASH pods will not be compatible with DIY Loop.  Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
+
+Summary:
+
+* DIY Loop + Eros pods + RileyLink</br></br>
+* Tidepool Loop +DASH pods (no RileyLink)
+
+## Do I need a PDM still with Omnipod Loop?
+
+No, pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your Loop app on your iPhone. When Loop is ready for Omnipod, it will not use a PDM...and in fact you cannot use a PDM for a pod that has been activated with Loop. That doesn't mean you should get rid of your PDM. You should still keep it around in case your lose your phone or lose your RileyLink. You'd want to swap out to a new pod and pair it with the PDM if you lose a critical part of your Omnipod Loop gear.
+
+## Will one RileyLink work with both Medtronic and Omnipod pumps?
+
+Technically, yes...but it would be frustrating. The updated RileyLink for Omnipod has a coiled copper antenna that is matched to the pods' communication frequency. The original RileyLink has a different antenna that is more appropriate for the Medtronic pumps' communication frequency. Technically you can use either RileyLink because they share the same firmware on the chips, but you would experience a significant decrease in the distance that the RileyLink could be removed from the pump/pod and still communicate. Practically speaking, you'd be missing a lot of looping simply because you'd have to really make a special effort to keep the devices very close. So, in a pinch if all you have is one RileyLink and it is mismatched with the pump/pod you have on-hand, you could use it. But, ultimately you'd want to get a RileyLink with an antenna suited to your particular pump/pod so that you don't have to keep them so close.
 
 ## Can I download Loop from the App store?
 
@@ -57,11 +61,11 @@ The answer is varied, but a few hours from start to finish, depending on where y
 
 If you'd rather break it up into several days of shorter efforts, the advent calendar way of building Loop can be done like this:
 
-Day 1 (15 minutes): Order a RileyLink from [GetRileyLink.org](https://getrileylink.org))
-Day 2 (30 minutes or less): Update macOS on your computer and install Homebrew on your computer.
-Day 3 (20 minutes): Setup an Apple Developer account (wait for enrollment confirmation email)
-Day 4 (1-2 hours): Download and setup Xcode (basically this step is one that you can walk away from since the download just chugs along while you go do other things) 
-Day 5 (50 minutes): Build Loop app using Xcode
+Day 1 (15 minutes): Order a RileyLink from [GetRileyLink.org](https://getrileylink.org)</br></br>
+Day 2 (30 minutes or less): Update macOS and install Homebrew on your computer.</br></br>
+Day 3 (20 minutes): Get an Apple Developer account (wait for enrollment confirmation email)</br></br>
+Day 4 (1-2 hours): Download and setup Xcode (basically this step is one that you can walk away from since the download just chugs along while you go do other things) </br></br>
+Day 5 (50 minutes): Build Loop app using Xcode</br>
 
 ## Does Loop cost money?
 
