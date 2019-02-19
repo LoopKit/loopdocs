@@ -25,6 +25,7 @@ pages:
     - Setup Xcode: 'build/build-xcode.md'
     - Build Loop: 'build/build-loop.md'
     - Build Errors: 'build/build_errors.md'
+    - Jaeb Study: 'build/jaeb-study.md'
     - Code Customization: 'build/code_customization.md'
     - New iPhone: 'build/new-iphone.md'
     - Update Loop: 'build/update/updating.md'
