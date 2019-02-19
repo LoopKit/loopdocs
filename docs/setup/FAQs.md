@@ -10,7 +10,8 @@ No, not yet. Omnipod has been in the process of being "hacked" for several years
 
 The Loop system described in these documents (aka DIY Loop) will work with Eros pods...these are the current pods on the market in wide release.  The newer DASH pods will not be compatible with DIY Loop.  Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
 
-Summary:</br>
+Summary:
+
 * DIY Loop + Eros pods + RileyLink</br></br>
 * Tidepool Loop +DASH pods (no RileyLink)
 
