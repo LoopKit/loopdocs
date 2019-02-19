@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Build Errors - Loop Docs</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/admonitions.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-109876065-1', 'loopkit.github.io');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Loop Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../setup/FAQs/">FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../setup/requirements/pump/">Insulin Pump</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../setup/requirements/cgm/">CGM</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../setup/requirements/rileylink/">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../setup/requirements/computer/">Computer</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../setup/requirements/iphone/">iPhone</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../setup/requirements/appledev/">Apple Developer</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../build-computer/">Setup Computer</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../build-developer/">Setup Developer Account</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../build-xcode/">Setup Xcode</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../build-loop/">Build Loop</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Build Errors</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../code_customization/">Code Customization</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../new-iphone/">New iPhone</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Update Loop</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../setup/update/new-version/">New Version Info</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../setup/update/updating/">Update Loop</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">App setup</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../setup/loop-settings/settings/">Loop Settings</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../setup/loop-settings/services/">Loop Services</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../setup/loop-settings/rileylink_menu/">RileyLink menu</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../setup/loop-settings/pump/">Pump Setup</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/overview/">Loop Displays</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">How to Use Loop App</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../operation/features/carbs/">Carb Entries</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/bolus/">Bolus</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/workout/">Workout Targets</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/ice/">Using ICE info</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/watch/">Apple Watch</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/widget/">iPhone widget</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/healthapp/">Health App</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/notifications/">Loop Notifications</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/battery/">Pump Battery</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Looping Tips</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../operation/loop/open-loop/">Open Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/loop/close-loop/">Closed Loop</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Algorithm</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../operation/algorithm/overview/">Overview</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/algorithm/bolus/">Bolus Recommendations</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/algorithm/prediction/">Glucose Prediction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../troubleshooting/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../troubleshooting/green-loop/">Grey Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../troubleshooting/priming/">Priming and Sites</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../troubleshooting/rileylink/">RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../troubleshooting/time-change/">Time Changes</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../troubleshooting/pump-errors/">MDT Pump Errors</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../nightscout/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/new_user/">Brand New NS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/update_user/">Retrofit Existing NS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/mlab_cleanup/">NS Stopped Working</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/azure_migration/">Azure to Heroku</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/ifttt/">IFTTT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/pebble/">Pebble</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/pushover/">Remote Notifications</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/reports/">Reports</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../build-loop/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../code_customization/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#build-errors">Build Errors</a></li>
+        
+            <li><a href="#build-failed-in-frameworks">Build Failed in frameworks</a></li>
+        
+            <li><a href="#siri-capabilities">Siri Capabilities</a></li>
+        
+            <li><a href="#pending-certificate-request">Pending Certificate Request</a></li>
+        
+            <li><a href="#outdated-xcode">Outdated Xcode</a></li>
+        
+            <li><a href="#command-line-tools">Command Line Tools</a></li>
+        
+            <li><a href="#command-codesign-failed">Command CodeSign failed</a></li>
+        
+            <li><a href="#developer-license-update">Developer License Update</a></li>
+        
+            <li><a href="#carthage-update-message">Carthage update message</a></li>
+        
+            <li><a href="#unrecognized-arguments-cache-builds">Unrecognized arguments: --cache-builds</a></li>
+        
+            <li><a href="#abort-with-payload">Abort with Payload</a></li>
+        
+            <li><a href="#apple-watch-loop-app-not-appearing">Apple Watch: Loop app not appearing</a></li>
+        
+            <li><a href="#apple-watch-loop-app-not-installing">Apple Watch: Loop app not installing</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Permanent link">⌁</a></h1>
+<p>There are two types of build errors that happen; yellow alerts and red alerts.  Yellow alerts will not cause a build to fail, and can generally be ignored.  Red alerts will have to be resolved before you can successfully build Loop app.</p>
+<p><font color="orange"><strong>Yellow error alerts</strong></font> do not cause the build to fail, those are just warnings.  Occasionally, a Loop version may have some minor discrepencies that cause a yellow alert...but you can ignore those.</p>
+<p align="center">
+<img src="../img/master-done.png" width="750">
+</p>
+
+<p><font color="red"><strong>Red error alerts</strong> </font> will have to be resolved before you can successfully build Loop app.  The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.</p>
+<div class="admonition info">
+<p>Before looking at the solutions below...please double click on your red error message to bring up additional information about your particular error message.  Merely seeing the title of the error code on the left column of Xcode is not necessarily enough information to discern what error is causing your build to fail.  And therefore, you need to look at the detailed message and find the matching error message in the sections below.</p>
+</div>
+<h2 id="build-failed-in-frameworks">Build Failed in frameworks<a class="headerlink" href="#build-failed-in-frameworks" title="Permanent link">⌁</a></h2>
+<p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open Terminal app.  You will use the command <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code>.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name. </p>
+<p></p>
+<p align="center">
+<img src="../img/exit-code-65.png" width="850">
+</p></p>
+<p>Carthage update will take about 15 minutes to run successfully.  A successful carthage update will look like the following:</p>
+<p></p>
+<p align="center">
+<img src="../img/carthage-update-success.png" width="550">
+</p></p>
+<p>Once carthage update has run successfully, you can return to Xcode and press the build button again.  Your project should build successfully.</p>
+<p>If your carthage update fails, try opening Terminal app and running these commands to clear out your carthage cache and saved derived data in Xcode:</p>
+<p><code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> and <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code></p>
+<p>After running those commands, retry the <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code> (remembering to update the name of your Loop download folder, as needed).</p>
+<p>IF there are still red errors and you post for help in Looped group or Gitter...<strong>TAKE A SCREENSHOT of the whole Xcode screen after you double click on the red error message</strong> (command-shift-space bar-4 will make a screenshot tool active and the screenshot will save to your desktop).  Or even better, copy and paste the "xcodebuild output can be found at..." log file that is listed in yellow/orange color in the carthage update screen.  You can get to that log file by copy and pasting the file path (in yellow) into your Finder &gt;&gt; Go &gt;&gt; Go to Folder.. Once you open that log file, you can scroll to the bottom of the file and there will be detailed information about why carthage update failed.</p>
+<p>Please do not post without being able to provide detailed information.  It is very difficult to help troubleshoot based on vague "I have errors" information.</p>
+<h2 id="siri-capabilities">Siri Capabilities<a class="headerlink" href="#siri-capabilities" title="Permanent link">⌁</a></h2>
+<p>Error message: "Your development team does not support the Siri capability"</p>
+<p align="center">
+<img src="../img/siri-error.jpg" width="750">
+</p>
+
+<p>Solution: You need to customize your code to remove Siri capabilities when you are building Loop with a free developer account. See the Code Customization section <a href="https://loopkit.github.io/loopdocs/setup/build/code_customization/#disable-siri-capabilities">here</a> for directions.</p>
+<h2 id="pending-certificate-request">Pending Certificate Request<a class="headerlink" href="#pending-certificate-request" title="Permanent link">⌁</a></h2>
+<p>Error message: "You already have a current iOS Development certificate or a pending certificate request."</p>
+<p align="center">
+<img src="../img/pending_certification_request.jpg" width="750">
+</p>
+
+<p>Solution: This error message has just recently started to appear for some new Loop builders. To resolve the issue, please login to your Developer account at <a href="https://developer.apple.com">developer.apple.com</a> and then click on "Certificates, Identifiers &amp; Profiles".  Under that screen, you will see "Development" under the "Certificates" section in column on the left.  You will need to click on the certificates, and choose to "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"</p>
+<p align="center">
+<img src="../img/revoke1.png" width="750">
+</p>
+
+<p>After you do that, return to Xcode and open up Xcode preferences.  Under the Accounts section of Preferences, click on the minus sign to delete your Apple ID.</p>
+<p align="center">
+<img src="../img/account.png" width="650">
+</p>
+
+<p>Re-enter your Apple ID (yes...add that account right back that you literally just deleted), return to your Loop's target signing areas in Xcode and your error message should have resolved itself now as a new certificate will have been issued and a provisioning profile should have been created automatically.</p>
+<p>For double measure, you can verify that the iOS development certificates are all in good working order by clicking on your "Manage Certificates" in your Xcode Preferences, Accounts and viewing the iOS development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.</p>
+<p align="center">
+<img src="../img/verify_cert.png" width="650">
+</p>
+
+<h2 id="outdated-xcode">Outdated Xcode<a class="headerlink" href="#outdated-xcode" title="Permanent link">⌁</a></h2>
+<p>Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10, you will receive the following errors when you try to build:</p>
+<p align="center">
+<img src="../img/xcode10-update.png" width="750">
+</p>
+
+<p>Solution: You will need to go to your computer's App Store and install the Xcode app update.</p>
+<h2 id="command-line-tools">Command Line Tools<a class="headerlink" href="#command-line-tools" title="Permanent link">⌁</a></h2>
+<p>Error message:  "<strong><u>Invalid active developer path (/Library/Developer/CommandLineTools)</u></strong>" or "<strong><u>unable to find utility "xcodebuild", not a developer tool or in PATH</u></strong>"</p>
+<p></p>
+<p align="center">
+<img src="../img/command-line-error-1.jpg" width="550">
+</p></p>
+<p></p>
+<p align="center">
+<img src="../img/command-line-error-2.jpg" width="550">
+</p></p>
+<p>Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 10" in the dropdown menu for Command Line Tools.</p>
+<p></p>
+<p align="center">
+<img src="../img/command-line-error-3.png" width="550">
+</p></p>
+<h2 id="command-codesign-failed">Command CodeSign failed<a class="headerlink" href="#command-codesign-failed" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>errSecInternalComponent,  Command CodeSign failed with a nonzero exit code</u></strong>"</p>
+<p></p>
+<p align="center">
+<img src="../img/errsecinternal.jpg" width="850">
+</p></p>
+<p>Solution:  This error message has been more frequent lately, but I believe it is due to inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:</p>
+<ol>
+<li>Close Xcode</li>
+<li>Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)</li>
+<li>In the upper left corner of keychain access, make sure you have the keychain <code>login</code> highlighted and then click the large lock icon above the keychains area (High Sierra users) or right-click the lock next to the <code>login</code> (Mojave macOS users).  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
+</p>
+<p align="center">
+<img src="../img/keychain3.png" width="450">
+</p></li>
+</ol>
+<p></p>
+<p align="center">
+<img src="../img/keychain4.png" width="450">
+</p></p>
+<ol>
+<li>Open your Loop project again in Xcode.</li>
+<li>In the main Xcode menu (grey menu bar at the very top of your Apple display area), select the word <code>Product</code> and then select the option for <code>Clean</code>. (keyboard shortcut is shift-command-k)</li>
+<li>Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.</li>
+</ol>
+<h2 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u></strong>"</p>
+<p>Solution: You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.
+<p align="center">
+<img src="../img/license.png" width="750">
+</p></p>
+<h2 id="carthage-update-message">Carthage update message<a class="headerlink" href="#carthage-update-message" title="Permanent link">⌁</a></h2>
+<p>If you see a message about updating carthage version, open Terminal app and enter the following command <code>brew update &amp;&amp; brew upgrade carthage</code></p>
+<p></p>
+<p align="center">
+<img src="../img/carthage-update.jpg" width="850">
+</p></p>
+<h2 id="unrecognized-arguments-cache-builds">Unrecognized arguments: --cache-builds<a class="headerlink" href="#unrecognized-arguments-cache-builds" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>Unrecognized arguments: --cache-builds</u></strong>"</p>
+<p></p>
+<p align="center">
+<img src="../img/cache-builds.png" width="850">
+</p></p>
+<p></p>
+<p align="center">
+<img src="../img/exit-code-1-cartfile.jpg" width="850">
+</p></p>
+<p>Solution: Please open your Terminal app found in the Applications&gt;&gt;Utilities folder and then enter <code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command <code>brew link --overwrite carthage</code>.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.</p>
+<h2 id="abort-with-payload">Abort with Payload<a class="headerlink" href="#abort-with-payload" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>Abort with payload</u></strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.
+<p align="center">
+<img src="../img/abort_payload.png" width="750">
+</p>
+Solution: This error message is caused by either</p>
+<ol>
+<li>Saving Loop download folder into an iCloud mapped drive, or</li>
+<li>Having a space in the name of your Loop download folder.</li>
+</ol>
+<p>Rename the folder to have no spaces and/or move it back to the Downloads folder, then rebuild.</p>
+<h2 id="apple-watch-loop-app-not-appearing">Apple Watch: Loop app not appearing<a class="headerlink" href="#apple-watch-loop-app-not-appearing" title="Permanent link">⌁</a></h2>
+<p>Error: <strong><u>Apple watch app is not appearing</u></strong>.</p>
+<p>Solution: Usually because you have not updated to watchOS prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p>
+<h2 id="apple-watch-loop-app-not-installing">Apple Watch: Loop app not installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Permanent link">⌁</a></h2>
+<p>Error: <strong><u>The Loop app appears on the list of app available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL"</u></strong>.</p>
+<p>Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watchface and select the "Trust" button.  Now rebuild your Loop app in Xcode, but look for a pop-up message that warns you that the Watch isn't registered with the Developer portal.  Click on the "register" button that is in the pop-up window and proceed with the Loop app building again.</p>
+<div class="admonition info">
+<p>WatchOS 5 appears to be an issue for some users currently.  If your Loop app is not properly installing on your watch using watchOS 5, please reopen Loop in Xcode and change the deployment targets in the WatchApp and WatchApp Extension targets to a Deployment Target of 5.0.  Rebuild and your watch app should install properly.</p>
+</div>
+<p align="center">
+<img src="../img/watchOS-5.png" width="750">
+</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -12,26 +12,96 @@
     
         
     <url>
-     <loc>/setup/overview/</loc>
+     <loc>/setup/FAQs/</loc>
      <lastmod>2019-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>/setup/requirements/pump/</loc>
+     <lastmod>2019-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>/setup/requirements/cgm/</loc>
+     <lastmod>2019-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>/setup/requirements/rileylink/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/requirements/computer/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/requirements/iphone/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/requirements/appledev/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/build/overview/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/build-computer/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/build-developer/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/build-xcode/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/build-loop/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/build_errors/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/code_customization/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/new-iphone/</loc>
+     <lastmod>2019-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -46,8 +116,8 @@
     
         
     <url>
-     <loc>/operation/overview/</loc>
-     <lastmod>2019-02-18</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
