@@ -106,8 +106,14 @@
     </url>
         
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>/build/update/updating/</loc>
+     <lastmod>2019-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/build/update/new-version/</loc>
+     <lastmod>2019-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
