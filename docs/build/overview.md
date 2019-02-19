@@ -8,7 +8,7 @@ If you are worried about how long this will take and want to break this up into 
 
 * Day 1 (15 minutes): Order a RileyLink from [GetRileyLink.org](https://getrileylink.org)</br></br>
 * Day 2 (30 minutes or less): [Update macOS on your computer and install Homebrew on your computer](https://loopkit.github.io/loopdocs/build/build-computer/).</br></br>
-* Day 3 (20 minutes): [Setup an Apple Developer account](https://loopkit.github.io/loopdocs/build/build-developer/) (wait for enrollment confirmation email)</br></br>
+* Day 3 (20 minutes): [Set up an Apple Developer account](https://loopkit.github.io/loopdocs/build/build-developer/) (wait for enrollment confirmation email)</br></br>
 * Day 4 (1-2 hours): [Download and setup Xcode](https://loopkit.github.io/loopdocs/build/build-xcode/) (basically this step is one that you can walk away from since the download just chugs along while you go do other things) </br></br>
 * Day 5 (50 minutes): [Build Loop app using Xcode](https://loopkit.github.io/loopdocs/build/build-loop/)</br></br>
 

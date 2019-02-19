@@ -1,4 +1,4 @@
-# Setup Apple Developer Account
+# Set up Apple Developer Account
 
 In order to build your own copy of the Loop app onto your iPhone, you will need an Apple developer account.  You will have two options for your individual account; free or paid.
 
@@ -43,6 +43,6 @@ The magic that makes these seamless updates happen is that *Bundle Identifier*. 
 If you start with a free account and build Loop, you'll get a Loop app (let's call it Loop1). When you switch to a paid account and build Loop, you'll be building a totally new and separate Loop app onto your phone (let's call it Loop2). Loop2 will know nothing about the settings and information you had stored in Loop1, so you will need to re-enter all your Loop1 settings (basal rates, ISF, carb ratios, etc.) and configurations into Loop2 when it builds.  After getting your new Loop2 app setup, you should delete your old Loop1 from your iPhone that was based on the free developer account to avoid any conflicts.
 
 ## License Agreement
-When you enroll in the Developer, you also click a box that you are agreeing to Apple's Develper Program license agreement. Periodically, Apple will update that license agreement and you'll be required to agree to the updates.  When that happens, you'll need to login to your developer account and accept the new license agreement before you can sign a new/updated Loop app again. Not a big deal, just mentioning it for future reference.
+When you enroll in the Developer, you also click a box that you are agreeing to Apple's Developer Program license agreement. Periodically, Apple will update that license agreement and you'll be required to agree to the updates.  When that happens, you'll need to login to your developer account and accept the new license agreement before you can sign a new/updated Loop app again. Not a big deal, just mentioning it for future reference.
 
 Now that you have your Developer Account decision made, and enrolled if you are doing the paid account...you can move onto [Setting up your Xcode](https://loopkit.github.io/loopdocs/build/build-xcode/).

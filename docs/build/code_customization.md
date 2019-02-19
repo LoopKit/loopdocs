@@ -30,7 +30,7 @@ Depending on your iPhone preferences and model, you may have Face ID or Touch ID
 <img style="float: right;" width="200" src="../img/workout_default.png">
 If you’d like more than just the standard 1 or 2 hour duration for the Workout Range, you can add or modify the code to add another time interval or edit the existing ones.
 
-Go to the Loop>>Extensions>>UIAlertController.swift and modify Line 32.  The default has 1 and 2 hours as shown where the arrow is pointing in the screenshot.  You can edit those to whatever duration you want (in units of hours) and add a duration if you prefer.  If you’d like 1, 2, and 3 hours options...simply edit the numbers in the brackets to read [1, 2, 3]. It is possible to enter less than 1 hour intervals such as 15min, 30 min, 45 min by editing the brackets to read [0.25, 0.5, 0.75].
+Go to the Loop>>Extensions>>UIAlertController.swift and modify Line 32.  The default has 1 and 2 hours as shown where the arrow is pointing in the screenshot.  You can edit those to whatever duration you want (in units of hours) and add a duration if you prefer.  If you’d like 1, 2, and 3 hours options...simply edit the numbers in the brackets to read [1, 2, 3]. It is possible to enter less than 1 hour intervals such as 15 min, 30 min, 45 min by editing the brackets to read [0.25, 0.5, 0.75].
 
 <p align="center">
 <img src="../img/workout_add.png" width="750">

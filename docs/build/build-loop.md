@@ -15,7 +15,7 @@ Master vs Dev?  What is the difference? The Loop code resides in [GitHub](https:
 
 
 !!!info ""
-    IMPORTANT NOTES: Best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
+    IMPORTANT NOTES: Best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code in a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
     <p align="center">
     <img src="../img/icloud-drive.png" width="650">
     </p></br>

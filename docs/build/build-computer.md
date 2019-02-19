@@ -1,4 +1,4 @@
-# Setup your Apple Computer
+# Set up your Apple Computer
 
 Any Apple computer will work so long as it is running a compatible macOS version and you have administrative rights to be able to install new programs on the computer.
 

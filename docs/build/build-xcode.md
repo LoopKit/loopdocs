@@ -1,4 +1,4 @@
-# Setup Xcode
+# Set up Xcode
 
 You are getting closer.  This next step is simply to download and install a free application called Xcode to your Apple computer.
 
