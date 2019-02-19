@@ -99,7 +99,7 @@ Moral of the story, out of all the way to save money...borrowing someone's devel
 
 ## How can I find a compatible pump? supplies?
 
-There is a [whole section on that topic over on the pump page]((https://loopkit.github.io/loopdocs/setup/requirements/pump/#finding-a-medtronic-pump).
+There is a [whole page about MDT pumps](https://loopkit.github.io/loopdocs/setup/requirements/pump/); how to find them, how to find supplies, and assessing whether your MDT pump is compatible. Go check out that page for more info.
 
 ## Can I pay someone else to do this?
 
@@ -116,4 +116,10 @@ Hey now...let's be grateful for what we have first. The ability to use Loop is t
 ## Can I have more than one Loop app on a phone?
 
 While technically possible, you can have multiple Loop apps built onto the same iPhone.  However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping).  For smooth looping, just keep one Loop app on any phone for looping use.
+
+## Will I be able to Loop on a plane? or in the mountains?
+
+Yes. Loop does not require internet or cell coverage to work. So long as the Looper has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/pod.
+
+## 
 
