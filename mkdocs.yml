@@ -11,29 +11,32 @@ markdown_extensions:
 pages:
 - 'index.md'
 - Setup:
-    - 'Overview': 'setup/overview.md'
-    - Requirements:
-        - 'Insulin Pump': 'setup/requirements/pump.md'
-        - 'CGM': 'setup/requirements/cgm.md'
-        - 'RileyLink': 'setup/requirements/rileylink.md'
-        - 'Computer': 'setup/requirements/computer.md'
-        - 'iPhone': 'setup/requirements/iphone.md'
-        - 'Apple Developer': 'setup/requirements/appledev.md'
-    - 'Install Loop':
-        - 'Building App': 'setup/build/installing.md'
-        - 'Build Errors': 'setup/build/build_errors.md'
-        - 'Code Customization': 'setup/build/code_customization.md'
-        - 'New iPhone': 'setup/build/new-iphone.md'
-    - 'Loop App setup':
-        - 'Loop Settings': 'setup/loop-settings/settings.md'
-        - 'Loop Services': 'setup/loop-settings/services.md'
-        - 'RileyLink menu': 'setup/loop-settings/rileylink_menu.md'
-        - 'Pump Setup': 'setup/loop-settings/pump.md'
+    - 'FAQs': 'setup/FAQs.md'
+    - 'Insulin Pump': 'setup/requirements/pump.md'
+    - 'CGM': 'setup/requirements/cgm.md'
+    - 'RileyLink': 'setup/requirements/rileylink.md'
+    - 'Computer': 'setup/requirements/computer.md'
+    - 'iPhone': 'setup/requirements/iphone.md'
+    - 'Apple Developer': 'setup/requirements/appledev.md'
+- Build:
+    - Overview: 'build/overview.md'
+    - Setup Computer: 'build/build-computer.md'
+    - Setup Developer Account: 'build-developer.md'
+    - Setup Xcode: 'build/build-xcode.md'
+    - Build Loop: 'build/build-loop.md'
+    - Build Errors: 'build/build_errors.md'
+    - Code Customization: 'build/code_customization.md'
+    - New iPhone: 'build/new-iphone.md'
     - 'Update Loop':
         - 'New Version Info': 'setup/update/new-version.md'
         - 'Update Loop': 'setup/update/updating.md'
 - Operation:
-    - 'Loop Displays': 'operation/overview.md'
+    - App setup:
+        - 'Loop Settings': 'setup/loop-settings/settings.md'
+        - 'Loop Services': 'setup/loop-settings/services.md'
+        - 'RileyLink menu': 'setup/loop-settings/rileylink_menu.md'
+        - 'Pump Setup': 'setup/loop-settings/pump.md'
+        - 'Loop Displays': 'operation/overview.md'
     - How to Use Loop App:
         - 'Carb Entries': 'operation/features/carbs.md'
         - 'Bolus': 'operation/features/bolus.md'
