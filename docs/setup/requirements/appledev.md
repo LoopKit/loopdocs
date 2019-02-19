@@ -27,16 +27,3 @@ The magic that makes these seamless updates happen is that *Bundle Identifier*. 
 
 If you start with a free account and build Loop, you'll get a Loop app (let's call it Loop1). When you switch to a paid account and build Loop, you'll be building a totally new and separate Loop app onto your phone (let's call it Loop2). Loop2 will know nothing about the settings and information you had stored in Loop1, so you will need to re-enter all your Loop1 settings (basal rates, ISF, carb ratios, etc.) and configurations into Loop2 when it builds.  After getting your new Loop2 app setup, you should delete your old Loop1 from your iPhone that was based on the free developer account to avoid any conflicts.
 
-
-## Differentiating between Free and Paid in Xcode
-
-When you build the Loop app in Xcode, you will select a signing "team" and Xcode will automatically generate a Provisioning Profile to "sign" the app...this is Apple's way of tracking the validity and safety of the app.  Free developer accounts will have a signing team that includes a "(Personal Team)" designation in the name. Paid developer accounts will not have "(Personal Team)" in the name.  
-
-<p align="center">
-<img src="../img/team.jpg" width="450">
-</p>
-
-## Multiple Loop apps
-
-While technically possible, you can have multiple Loop apps built onto the same iPhone.  However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping).  For smooth looping, just keep one Loop app on any phone for looping use. The only time you should have two Loops on a single iPhone is in the event that you are switching signing teams and are temporarily transferring settings and configuration information between the two apps manually. Once that transfer is complete, delete the old Loop app.
-

@@ -1,4 +1,4 @@
-# FAQs about getting started
+# Loop FAQs
 
 There are lots of new users coming to Loop trying to find out information about Omnipod potentially being supported on Loop. You probably have a lot of questions.
 
@@ -107,3 +107,7 @@ You go back to old school pump use until you buy a [new iPhone and can rebuild](
 ## What about other pumps? When will they Loop?
 
 Hey now...let's be grateful for what we have first. The ability to use Loop is the effort of tremendous amounts of effort, time, and sacrifice by volunteers. Cracking the pump's for Loop use is a large undertaking. If and when another set of people spend a large amount of time figuring out other pumps, then they could conceivably be added to Loop.  But, you don't need to let us know that you'd love to see more pumps compatible with Loop.  So would we..there is just an awful lot of work that needs to happen and it is not easy nor quick.
+
+## Can I have more than one Loop app on a phone?
+
+While technically possible, you can have multiple Loop apps built onto the same iPhone.  However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping).  For smooth looping, just keep one Loop app on any phone for looping use.
