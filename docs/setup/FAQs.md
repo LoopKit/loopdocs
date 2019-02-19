@@ -8,11 +8,11 @@ No, not yet. Omnipod has been in the process of being "hacked" for several years
 
 ## Which pods will work with Loop?
 
-The Loop system described in these documents (aka DIY Loop) will work with Eros pods...these are the current pods on the market in wide release.  The newer DASH pods will not be compatible with DIY Loop.  Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). The Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
+The Loop system described in these documents (aka DIY Loop) will work with Eros pods...these are the current pods on the market in wide release.  The newer DASH pods will not be compatible with DIY Loop.  Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
 
-Summary:
-DIY Loop + Eros pods + RileyLink
-Tidepool Loop +DASH pods (no RileyLink)
+Summary:</br>
+* DIY Loop + Eros pods + RileyLink</br></br>
+* Tidepool Loop +DASH pods (no RileyLink)
 
 ## Do I need a PDM still with Omnipod Loop?
 
@@ -111,3 +111,4 @@ Hey now...let's be grateful for what we have first. The ability to use Loop is t
 ## Can I have more than one Loop app on a phone?
 
 While technically possible, you can have multiple Loop apps built onto the same iPhone.  However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping).  For smooth looping, just keep one Loop app on any phone for looping use.
+

@@ -50,6 +50,7 @@ pages:
     - 'Looping Tips':
         - 'Open Loop': 'operation/loop/open-loop.md'
         - 'Closed Loop': 'operation/loop/close-loop.md'
+        - 'Loop Tips': 'operation/loop/looptips.md'
     - Algorithm:
         - 'Overview': 'operation/algorithm/overview.md'
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
