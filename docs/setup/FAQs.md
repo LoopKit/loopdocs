@@ -107,7 +107,9 @@ NOOOO...you really need to figure this out yourself. This is an automated insuli
 
 ## What if I lose my phone or RileyLink?
 
-You go back to old school pump use until you buy a [new iPhone and can rebuild](https://loopkit.github.io/loopdocs/setup/build/new-iphone/) or get a new RileyLink.
+For Medtronic users, you simply go back to old school pump use until you buy a [new iPhone and can rebuild](https://loopkit.github.io/loopdocs/setup/build/new-iphone/) or get a new RileyLink.
+
+For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone or RileyLink however, you will not be able to affect any pod use; no basal change, suspend, or bolus. You will need to remove the Loop pod and put on a new pod paired with your PDM until you can get a new RileyLink and/or phone. If you only have lost the RileyLink (not the phone) and have a backup RileyLink, you can simply connect to the new RileyLink on the same Loop app and it will work with the existing pod session.
 
 ## What about other pumps? When will they Loop?
 
@@ -120,6 +122,4 @@ While technically possible, you can have multiple Loop apps built onto the same 
 ## Will I be able to Loop on a plane? or in the mountains?
 
 Yes. Loop does not require internet or cell coverage to work. So long as the Looper has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/pod.
-
-## 
 
