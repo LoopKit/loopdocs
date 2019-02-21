@@ -94,6 +94,12 @@
     </url>
         
     <url>
+     <loc>/build/health/</loc>
+     <lastmod>2019-02-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/build/jaeb-study/</loc>
      <lastmod>2019-02-21</lastmod>
      <changefreq>daily</changefreq>
