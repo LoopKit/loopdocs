@@ -25,6 +25,7 @@ pages:
     - Install Xcode: 'build/build-xcode.md'
     - Build Loop: 'build/build-loop.md'
     - Build Errors: 'build/build_errors.md'
+    - Health Permissions: 'build/health.md'
     - Jaeb Study: 'build/jaeb-study.md'
     - Code Customization: 'build/code_customization.md'
     - New iPhone: 'build/new-iphone.md'
@@ -44,7 +45,6 @@ pages:
         - 'Using ICE info': 'operation/features/ice.md'
         - 'Apple Watch': 'operation/features/watch.md'
         - 'iPhone widget': 'operation/features/widget.md'
-        - 'Health App': 'operation/features/healthapp.md'
         - 'Loop Notifications': 'operation/features/notifications.md'
         - 'Pump Battery': 'operation/features/battery.md'
     - 'Looping Tips':
