@@ -61,7 +61,6 @@ pages:
     - 'Grey Loop': 'troubleshooting/green-loop.md'
     - 'Yellow/Red Loop': 'troubleshooting/yellow-red-loop.md'
     - 'Priming and Sites': 'troubleshooting/priming.md'
-    - 'RileyLink': 'troubleshooting/rileylink.md'
     - 'Time Changes': 'troubleshooting/time-change.md'
     - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
 - Nightscout:
