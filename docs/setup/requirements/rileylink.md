@@ -1,61 +1,175 @@
-## RileyLink
+# RileyLink
 
-The RileyLink (RL) is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to 916MHz wireless communication. What does that mean to you? It means RileyLink is the communication highway between your insulin pump, CGM, and iPhone.
+The RileyLink (RL) is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to 916MHz or 433MHz wireless communication. What does that mean to you? It means RL is the communication highway between your insulin pump, CGM, and iPhone.</br></br>
 
-**Loop will not work without the RileyLink.**
+<p align="center"><b>Loop will not work without the RileyLink.</b></p></br></br>
 
-![RileyLink Diagram](img/rl_diag.png)
+<p align="center">
+<img src="../img/rl_diag.png" width="450">
+</p>
 
-The RileyLink is available as a set of PCB files and software, with instructions on how to build your own RileyLink hardware module.  All this can be found here: [RileyLink Github](https://github.com/ps2/rileylink)
-If you aren’t up to the task of building your own RileyLink (and most of us aren’t), community members coordinate periodic production runs of RileyLinks. You can place an order here: [RileyLink order site](https://getrileylink.org)
+## RL FAQs
 
-### Assembling RileyLink
+* **How long will my RL last?** I am still using the original RL from 2.5 years ago, so would seem like a long time.
 
-Your RileyLink will come with the battery disconnected and the parts not already inside the case.  It will be up to you to put the RileyLink in the case and attach the battery.
+* **How long will my RL battery last?** Eventually, lipo batteries will lose charging capacity and you would want to replace if you notice the battery not lasting the full day. We've been over 1.5 years on the same battery without issue currently.
 
-Make sure the lipo battery is well-plugged into the connection.  Line up the little ridge appropriately, and push fairly firmly to get the connection tight.  Poor battery cable connection can make the Loop communications fail.  See photos below, for example.
+* **How can I tell how much charge my RL has?** You can't. There is no charge level indicator. Just charge it nightly, and you won't have a problem. Full battery charge should last about 30-36 hours depending on battery health.
 
-!!!info ""
-    The most common two errors for new RileyLink owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RileyLink.  Compare your lipo battery cable with the photos shown and remember to charge your RileyLink each night.
+* **Is RL waterproof?** NO.
+
+* **What is the most common issue for RL?** People not pushing the lipo battery in all the way.
+
+* **Can I use more than one RL at a time? Will it improve anything?** Yes you can have two turned on, but it won't help anything really. Loop only uses one RL at a time. IF you have several RLs turned on in Loop settings, your Loop will only look for another RL after looping fails for over 15 minutes on the original RL. In my experience, it is rare that looping would fail for more than 15 minutes and a second RL would help in the same environment. If one RL gets damaged though and you need to swap out to a second RL, there's no issues with that. That will work fine for either Medtronic or Omnipod.
+
+## Buying or Building RL
+The RL is available as a set of PCB files and software, with instructions on how to build your own RL hardware module. All this can be found here: [RileyLink Github](https://github.com/ps2/rileylink)</br></br>
+If you aren’t up to the task of building your own RL (and most of us aren’t), community members coordinate periodic production runs of RLs. You can place an order here: [RileyLink order site](https://getrileylink.org)
+
+## Types of RL
+
+There are two different sets of RL currently; the difference being the antenna is optimized for the pump you are using.
+
+<p align="center">
+<img src="../img/two-rl.png" width="650">
+</p>
+
+**What will happen if you use a Medtronic-916MHz antenna RL with an Omnipod? Or vice versa?** The answer will first depend on exactly how old that RL is and what firmware it has installed.
+
+Before August 2018, RLs had a firmware that works for only Medtronic pump communication. So, if you have the older firmware on a RL, your pod will never pair in Loop using that RL. The GetRileyLink site does offer a [RL firmware update service](https://getrileylink.org/product/rileylink-fw-update/), if you want to update to the newer pod-usable firmware.
+
+RLs produced after August 2018, include newer firmware that is needed for Omnipod pump communications as well. The newer firmware will say `subg_rfspy 2.2/ble_rfspy 2.0` in the RL menu, like below when paired in Loop.
+
+<p align="center">
+<img src="../img/rl-firmware.jpg" width="350">
+</p>
+
+Assuming your has the newer RL firmware, you can *technically* use that RL with either pump on Loop. But, you will have significant frustrations with the short distances required between the pump/pod and RL when using the "wrong" antenna. Even keeping RL in the pocket on opposite of where pod is on your body can cause issues with the 916MHz antenna. With mismatched antenna/pump, the RL needs to be very close and in clear line-of-sight to pump/pod, that it makes everyday living a bit hard. If you use the appropriate-antenna-for-your-pump RL, the distances the pump/pod and RL can tolerate from each other is much more "real world" friendly and stable.
+
+In summary, definitely use the appropriate RL with the antenna that matches your pump so that you are less frustrated. In a pinch, your old RL might work as a backup, but you won't love it.
+
+**Can you swap out the antenna on a RL?** Yes, the antenna swap is not a hard swap if you just have basic soldering skills. The old antenna can be removed easily by reheating the solder. New 433MHz helical antennas can be found on eBay or Amazon pretty readily, but GetRileyLink site may have an antenna swap service in the future (TBD).
+
+## Assembling RL
+
+Your RL will come with the battery disconnected and the parts not already inside the case. It will be up to you to put the RL in the case and attach the battery.
+
+Make sure the lipo battery is well-plugged into the connection. Line up the little ridge appropriately, and push fairly firmly to get the connection tight.  Poor battery cable connection can make the Loop communications fail.  See photos below, for example.
+
+!!!info "Common new user errors"
+    The most common two errors for new RL owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RL. Compare your lipo battery cable with the photos; it takes a bit of oomph to push that plug fully in like the photos show below. Remember to charge your RL each night.
 
 <p><figure align="center">
 <img src="../img/rl_loose_battery.jpg" width="400">
-<figcaption>RileyLink with loose battery cable.</figcaption>
+<figcaption>RL with loose battery cable.</figcaption>
 </figure></p>
 
 <p><figure align="center">
 <img src="../img/rl_secure_battery.jpg" width="400">
-<figcaption>RileyLink with properly secured battery cable.</figcaption>
+<figcaption>RL with properly secured battery cable.</figcaption>
 </figure></p>
 
 Finally, the board and the battery fit into the slim case fairly tightly as well.  Click on the image below to watch a helpful [assembly video](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be).
 
 <a href="https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be" target="_blank"><img src="../img/slimcase.png"  title="RileyLink assembly video" /></a>
 
-### Waiting for RileyLink
+## Radio communications
 
-Yes, waiting for RileyLink to arrive is extremely difficult if they are backorder.  PLEASE be patient, since Loop CANNOT work without RileyLink.
+The RL communicates with the pump through radio frequency communications.  Numerous factors can influence how well those communications can function...interferences from other devices, temperature, physical blocking, etc.
 
-If you're really dying to do something while RileyLink ships, consider these things below.
+When your RL and pump first pair together, Loop performs a series of tests that you won't see...they are tuning tests. Basically, RL sends little test messages to the pump and waits for a response. The RL tries this same "ping" to the pump a range of various radio frequencies. The range of radio frequencies it tries is based on the pump you've told RL to expect (Omnipod, Medtronic NA/CA, or Medtronic WW).  RL will then record the radio frequencies that provided the strongest response and use that frequency for future pump communications.
 
-FIRST AND FOREMOST:  Get used to Medtronic pump and start using it before Loop.  Sometimes switching pumps will lead to a change in your settings (basals, boluses, etc) simply by the way the new cannula delivers insulin.  It's a great idea to use your Medtronic pump and sets before you ever begin Loop so that you can have one less variable when you do start looping.  At least you can check if you need to adjust basals or other settings when you change to Medtronic pumping.  The same tips apply for Dexcom.  If you are new to Dexcom, start using it before Loop.  Get  familiar with things like compression lows, sensor variability, and calibration timing before Loop use.
+Usually this best frequency is pretty constant for any given pump+RL, but during temperature changes it may be that the best frequency is not the one currently set. In the event that RL has problems communicating with the pump, Loop has code built-in that will automatically tell the RL "Hey, try that tuning pump thing again...maybe there's a better frequency we need to try." This retuning is started automatically if pump communications fail for 14 minutes (in other words, two looping cycles).
 
-But, if you're familiar with your Medtronic pump and Dexcom, here are some ideas:
+## Bluetooth communications
+
+RL communicates with your iPhone and Loop app through Bluetooth (BT).  If your iPhone has BT issues, your Loop will have failures.  There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interfering with the Loop.  If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.
+
+Your BT signal strength can be seen in the Loop settings, under the RL menu, on the `Signal Strength` line. As you move closer and further away from your phone, you can watch that number dynamically change. This line is **not** displaying the signal strength of your pump communications discussed above.
+
+<p align="center">
+<img src="../img/RL_bt.jpg" width="400">
+</p>
+
+## Lights
+
+RL has several lights that you may notice from time to time. There is no 'power' light. If you suspect that your RL is not being powered, try turning it off and on using the small sliding switch. You should see lights in the middle of the board flash when you do this.  If they flash, that means the board has power.
+
+* Red light: Charging light. The red light will remain on while RL is charging, and it will turn off when charging is complete. You may notice the red light turn on periodically even after charging is complete...it's just "topping off".
+
+* Green light: Bluetooth connection light. The green light will remain on while you have BT connection with your iPhone.  If that green light fails to stay on, you should troubleshoot your BT connections. Try restarting BT on your iPhone and/or turning the RL off/on by its power switch.
+
+* Blue light: Pump communications.  If you have an older firmware on your RL, some of the blue lights will flash periodically as it is communicating with the pump. It's just letting you know that it is busy talking and collecting info. You will also see increased blue flashes if you have "Enabled Diagnositic LEDs" for MDT users that have the RLs with updated firmware (shipping since late August 2018).
+
+A solid blue light that consistenly remains lit on the board could mean one of two things:
+
+* A temporary issue that can be resolved by rebooting the RL physically (turning the switch off/on), or
+
+* An electrical short or damage to the board.  Sweat and moisture are most likely culprits, so try to keep case free from those environments. Don't keep RL in sports bras or waist band next to skin, for example, while exercising.
+
+If your blue light remains on despite trying a restart, it is time to pull out your backup RL.
+
+## Charging
+
+The battery that comes with RL is not likely charged completely when it is shipped, so feel free to charge it up.  You'll need a [mini-USB cable](https://www.amazon.com/AmazonBasics-USB-2-0-Cable--Male/dp/B00NH13S44) and [0.5A USB charging power supply](https://www.amazon.com/Cellet-Powered-Charger-iPhones-Smartphones-/dp/B00FE8WFCO) like your iPhone power supply.  RL takes about 2 hours to fully charge (the red light will turn off when fully charged, read note above about red light patterns) and should easily last at least a full day of constant Loop use.  Typically, it can go into the 30-hour range without problem.  Most people charge their RL each night when they are sleeping.  You don't have to worry about leaving the RL plugged in "too long" for charging.  It will automatically stop charging the battery when it is fully charged.
+
+Since the best practice is to charge your RL overnight while you sleep, and the battery lasts safely over 24 hours, there is no battery level indicator for the RL.  The RL's charge level is not viewable on Nightscout, nor within the Loop app.  If you forget to charge your RL overnight, you can recharge it with a portable USB battery in a pinch.  A [short mini-USB cable](https://www.adafruit.com/product/899) could be a good addition to a small gear bag.
+
+## Range
+
+The range that your RL will function is **heavily** dependent on the environment that you are in. Most people wear the RL in a pocket or carry a belt holster during the day. The radio frequency communications will have a shorter range than the BT communications, therefore RL will do better closer to the pump rather than the iPhone if you are deciding on options for carrying gear. 
+
+Problematic environments will be places like technical conferences, sports arenas, and other places where wireless communications are heavy and plenty.
+
+## Lipo Battery
+
+If you ordered your RL kit, you will need to plug in the battery cable.  Please make sure your RL’s battery cable is securely pushed all the way into the socket.  Poor battery cable connection can make the Loop communications fail.
+
+<p><figure align="center">
+<img src="../img/rl_loose_battery.jpg" width="400">
+<figcaption>RL with loose battery cable.</figcaption>
+</figure></p>
+
+<p><figure align="center">
+<img src="../img/rl_secure_battery.jpg" width="400">
+<figcaption>RL with properly secured battery cable.</figcaption>
+</figure></p>
+
+Keep your RL and lipo battery protected from damage.  Lipo batteries are unsafe when damaged or punctured, so the case is an important part of safe Looping.  If your battery is damaged in some way, please disconnect it immediately, and dispose of it (they should be recycled). You can order new batteries on the [GetRileyLink website](http://getrileylink.org/)
+
+<p align="center">
+<img src="../img/rl_case.jpg" width="400">
+</p>
+
+## Removing Lipo Battery
+
+To remove the lipo battery from the RL, please do so slowly and patiently. Work the battery connection side to side slowly to loosen it from the plug. Some people have reported success using small, curved needle nose pliers such as hemostats. Others have used small flathead screwdrivers as shown in [this video](https://youtu.be/s2qNPLpfwww).
+
+<a href="https://youtu.be/s2qNPLpfwww" target="_blank"><img src="../img/rileylink_battery_removal.png"  title="RileyLink assembly video" /></a>
+
+## Waiting for RL
+
+Yes, waiting for RL to arrive is extremely difficult if they are backorder.  PLEASE be patient, since Loop CANNOT work without RL.
+
+If you're really dying to do something while RL ships, consider these things below.
+
+FIRST AND FOREMOST: If you switched pumps in order to Loop, get used to the pump and start using it before Loop.  Sometimes switching pumps will lead to a change in your settings (basals, boluses, etc) simply by the way the new cannula delivers insulin. It's a great idea to use your pump and sets before you ever begin Loop so that you can have one less variable when you do start looping. At least you can check if you need to adjust basals or other settings.  The same tips apply for Dexcom.  If you are new to Dexcom, start using it before Loop. Get familiar with things like compression lows, sensor variability, and calibration timing before Loop use.
+
+But, if you're familiar with your pump and Dexcom, here are some ideas:
 
 1.  Program your pump with your basal patterns
 2.  Enter the other pump settings required for Loop to work
-3.  Update your iPhone iOS, if needed
+3.  Update your iPhone/iPod touch's iOS, if needed
 4.  Update your computer's macOS, if needed
 5.  Update your Apple Watch's watchOS, if needed
 6.  Download Xcode from the Apple App Store on your Apple computer (**this takes more time than you'd expect, it is a large download**)
-7.  Sign up for a Developer Account.  Confirm your enrollment by checking your email afterwards.
+7.  Sign up for a Developer Account. Confirm your enrollment by checking your email afterwards.
 8.  Install Homebrew on your computer
 9.  Download Loop source code and get started with Loop building
 10. Make customizations, if desired
-11. Build Loop app onto your iPhone
-12. Fill in the pump settings in your Loop app
-13. Set up a Nightscout site or update your existing site (optional)
-14. Bookmark the LoopDocs page for future reference
-15. Join [Gitter Loop channel](https://gitter.im/LoopKit/Loop) and/or [the Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf)
+11. Build Loop app onto your iPhone/iPod touch
+12. Set up a Nightscout site or update your existing site (optional)
+13. Bookmark the LoopDocs page for future reference
+14. Join [Zulipchat](https://loop.zulipchat.com) and/or [the Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf)
 
-BUT, then you must wait.  **You can't go any further with Loop operations until you get the RileyLink.**  However, if you do all those things above while you wait...you will be ready to go as soon as the postman knocks on your door with the delivery.
+BUT, then you must wait.  **You can't go any further with Loop operations until you get the RL.**  However, if you do all those things above while you wait...you will be ready to go as soon as the postman knocks on your door with the delivery.

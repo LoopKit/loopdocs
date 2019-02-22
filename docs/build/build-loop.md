@@ -151,7 +151,7 @@ Once your build is successful, please do the following:
 
 And longer term:
 
-* Bookmark [LoopDocs.org](loopdocs.org) and [LoopTips.org](looptips.org) so that you can come back to these resources to learn more if you have any questions.
+* Bookmark [LoopDocs.org](https://loopdocs.org) and [LoopTips.org](https://looptips.org) so that you can come back to these resources to learn more if you have any questions.
 * Join the [Looped Group](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf) in Facebook
 * Join the [Loop Users group](https://groups.google.com/forum/#!forum/loop-ios-users) in case of urgent notifications
 

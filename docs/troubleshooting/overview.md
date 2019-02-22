@@ -2,6 +2,10 @@
 
 After you have been using Loop for awhile, there's a potential that you will run across a behavior or issue that you wonder if it is normal or intended.  When that happens, there's a few things that we'd recommend doing to resolve the issue.
 
+## Issues with 
+
+
+
 ## Gather information
 
 ### Check the Docs
@@ -23,12 +27,11 @@ Check the current list of [GitHub Loop Issues](https://github.com/LoopKit/Loop/i
 <img src="../img/loop-issues.png" width="800">
 </p>
 
-### Gitter and Facebook
-Search in [Gitter](https://gitter.im/LoopKit/Loop) or [Facebook](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf).  Quite possibly someone else has already posted about the same issue and perhaps a resolution has already been provided.  
+### Zulipchat and Facebook
+Search in [Zulipchat]( https://loop.zulipchat.com) or [Facebook](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf).  Quite possibly someone else has already posted about the same issue and perhaps a resolution has already been provided.  
 
 ## Ask for Help
-If you can't find any information in the Loop docs, GitHub Issues, Gitter, or Faceboook...PLEASE post and ask for help.  GitHub Issues list is an EXCELLENT place to post issues of unexpected Loop behavior (that you believe are errant or need improvement).  However, if you are just seeking clarifications on Loop, but don't necessarily expect that there's a problem with the underlying code, then Facebook and Gitter would be a good place.  For example, Gitter and Facebook are great for asking about bolus strategies or exercise target use...those are not really code issues.
+If you can't find any information in the Loop docs, GitHub Issues, Zulipchat, or Faceboook...PLEASE post and ask for help.  GitHub Issues list is an EXCELLENT place to post issues of unexpected Loop behavior (that you believe are errant or need improvement).  However, if you are just seeking clarifications on Loop, but don't necessarily expect that there's a problem with the underlying code, then Facebook and Gitter would be a good place.  For example, Zulipchat and Facebook are great for asking about bolus strategies or exercise target use...those are not really code issues.
 
 When you post, provide a description along with any screenshots of the issue you are having.  You don't necessarily have to tag any particular person, the community is fairly active in replying to messages.
 
-If you are posting to GitHub issues list, you can label the Issue appropriately too...such as Bug, Enhancement, or Documentation.
