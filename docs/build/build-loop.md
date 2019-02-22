@@ -76,15 +76,7 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
 
 ## Signing Targets
 
-Once you select your device (your iPhone's name), we are ready to start signing the four targets.  However, before we go any further, it is important to be ready for a codesign/keychain access prompt that you will see sometime soon during the subsequent steps.  We are bringing it to your attention now so that you don't accidentally dismiss this too quickly.</br></br>
-
-<p align="center">
-<img src="../img/keychain-prompt.png" width="450">
-</p></br>
-
-This prompt above, when you see it, requires you to enter your computer password and then select "Always Allow".  This prompt is a curious one though, and many times the prompt will ask several times in a row.  In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel.  **Don't deny.**  Keep entering your computer password and pressing the Always Allow button...as many times as it takes.  Eventually, the necessary amount of access points will be resolved and the prompt won't return again.  This is only needed for first time Xcode users.
-
-Now that we have that advisory out of the way, let's get back to signing those four targets.  We will start with the Loop target, the first one on the target list.  Under the "Signing" area, select the dropdown menu where it currently says "none".  Choose your team that you'd like to sign with.  If you select a team name with (personal team), your app will expire after 7 days.  If you select a team name without that (personal team), your app will last a full year.  If you never signed up for a free developer account, you will not have a (personal team) showing.  Make sure you keep the "automatically manage signing" box checked above the team selection area.
+Once you select your device (your iPhone's name), we are ready to start signing the four targets. We will start with the Loop target, the first one on the target list.  Under the "Signing" area, select the dropdown menu where it currently says "none". Choose your team that you'd like to sign with. If you select a team name with (personal team), your app will expire after 7 days. If you select a team name without that (personal team), your app will last a full year.  If you never signed up for a free developer account, you will not have a (personal team) showing. Make sure you keep the "automatically manage signing" box checked above the team selection area.
 
 <p align="center">
 <img src="../img/team.png" width="750">
@@ -119,13 +111,51 @@ When you've finished your customizations, come on back to this section and conti
 
 Signed the four targets? All done with any customizations? Have your Apple watch paired and updated? iPhone is unlocked and plugged into computer?
 
-Let’s finish the installation of the Loop app onto your iPhone.  Double check to make sure your iPhone's name is still selected and then press the “play” button (or build button) to start Xcode on its way.  You’ll see the progression of the build in the status window.  New builds can take about 40 minutes depending on the speed of the computer and internet.  **Just be patient.**  The progress will get "stuck" on one step for a very long time, and then the others will fly by when that one slow step is done. Not every step is equal in duration.
+Let’s finish the installation of the Loop app onto your iPhone.  Double check to make sure your iPhone's name is still selected and then press the “play” button (or build button) to start Xcode on its way.  You’ll see the progression of the build in the status window.  New builds can take about 40 minutes depending on the speed of the computer and internet.  **Just be patient.**  The progress will get "stuck" on one step for a very long time, and then the others will fly by when that one slow step is done. Not every step is equal in duration. Do not give up on the build. You will be interrupted during the build for the codesign/keychain access prompt discussed below though. However, you can remain useful during the wait by reading the section below titled "While it's building...." 
 
 <p align="center">
 <img src="../img/build_button.png" width="750">
 </p>
 
-Do not give up on the build.  Wait it out...eventually you will either see a Build Succeeded or Build Failed message.
+Be aware though! Sometime during your first ever build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.</br></br>
+
+<p align="center">
+<img src="../img/keychain-prompt.png" width="450">
+</p></br>
+
+This prompt above, when you see it, requires you to enter your computer password and then select "Always Allow". Normal behavior, this prompt will come up four times in a row even after you enter the correct password. In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel.  **Don't deny.**  Keep entering your computer password and pressing the Always Allow button...as many times as it takes (four times to be exact; one for each target that Xcode is saving the password for).  After four times of successful password entry, the build will keep proceeding.
+
+While it is building...read the next section below.
+
+## While it's building...
+ 
+ While you are waiting for this build to finish, please take a moment to read this section. You're about to see a really crazy cool and amazing app on your phone that you've waited a long time for. It will suck you in immediately. And you will be so excited by how easy it is to use, that you will push your chair back from this computer screen and forget about any further instructions.</br>
+ 
+<p align="center"><b>DON'T DO THAT!!</b></p>
+<p align="center"><b>DON'T BE THAT PERSON!!</b></p>
+
+There is SUPER valuable information contained in these documents that really needs to be reviewed and read. Such as:
+
+* How to resolve any [build errors](https://loopkit.github.io/loopdocs/build/build_errors/) that you might get
+* What all the settings mean in your Loop app and what reasonable ones might be
+* How to enter carbs and what carb absorption duration means to bolusing
+* How to handle sick days
+* How to use override targets
+* What the difference is between insulin models
+
+Once your build is successful, please do the following:
+
+* Read the [Jaeb Observational Study page](https://loopkit.github.io/loopdocs/build/jaeb-study/)
+* Read the [Health Permissions page](https://loopkit.github.io/loopdocs/build/health/) to make sure you get your Loop data recording properly
+* Use the all the pages listed under the Operate tab of this site to read up; starting with following the directions at [App Setup/Loop Settings](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/) as you input your initial Loop settings and get started. Keep that page open and follow its step-by-step explanation of the settings.
+
+And longer term:
+
+* Bookmark [LoopDocs.org](loopdocs.org) and [LoopTips.org](looptips.org) so that you can come back to these resources to learn more if you have any questions.
+* Join the [Looped Group](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf) in Facebook
+* Join the [Loop Users group](https://groups.google.com/forum/#!forum/loop-ios-users) in case of urgent notifications
+
+Many of the greatest challenges in starting Loop can be helped by reading the pages in these docs and in Looptips.org. Please don't underestimate the help that a little reading can provide.
 
 ## Build Succeeded
 
