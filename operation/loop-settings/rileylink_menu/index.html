@@ -394,12 +394,6 @@
                     
                         
 <li >
-    <a href="../../../troubleshooting/rileylink/">RileyLink</a>
-</li>
-
-                    
-                        
-<li >
     <a href="../../../troubleshooting/time-change/">Time Changes</a>
 </li>
 
@@ -538,7 +532,7 @@
 <p>There are many useful commands that the RileyLink can issue to the pump.  Most are simply for gathering information from the pump, but several are important commands to getting your Loop to turn and stay green.</p>
 <h3 id="tune-radio-frequency">Tune Radio Frequency<a class="headerlink" href="#tune-radio-frequency" title="Permanent link">⌁</a></h3>
 <p>The pump and RileyLink communicate via radio frequency.  In order to have the best possible communications, RileyLink will test a range of frequencies in order to see which provides the strongest response with the pump.  In the event that pump comms fail for over 14 minutes, Loop will automatically retune the RileyLink to see if perhaps the strongest frequency has changed since it was last tuned.</p>
-<p>When you first setup your Loop app, RileyLink will automatically perform a  <strong><font color="orange">Tune Radio Frequency</strong></font> to get pump comms started.  You can manually tune your radio frequency at any time by clicking on the command.  It may take about a minute, but soon you will see a list of frequencies with the tuning strength results beside each frequency.  The signal with the lowest value is the strongest and RileyLink will use that frequency (read more about that <a href="../../../troubleshooting/rileylink/">here</a>).  Exit out of that screen and the command line will now show the frequency (916.xx MHz for North American pumps) and the timestamp of the tune.  Now your pump and RileyLink are tuned to talk to each other.  When people suggest "did you (re)tune your RileyLink?" they are referring to this line's command.</p>
+<p>When you first setup your Loop app, RileyLink will automatically perform a  <strong><font color="orange">Tune Radio Frequency</strong></font> to get pump comms started.  You can manually tune your radio frequency at any time by clicking on the command.  It may take about a minute, but soon you will see a list of frequencies with the tuning strength results beside each frequency.  The signal with the lowest value is the strongest and RileyLink will use that frequency (read more about that <a href="/../troubleshooting/rileylink.md">here</a>).  Exit out of that screen and the command line will now show the frequency (916.xx MHz for North American pumps) and the timestamp of the tune.  Now your pump and RileyLink are tuned to talk to each other.  When people suggest "did you (re)tune your RileyLink?" they are referring to this line's command.</p>
 <div class="admonition info">
 <p><strong>A common troubleshooting recommendation is to tune your RL when you have poor pump communications.  Just keep in mind that the Loop code has a function that it will automatically retune in the event of poor pump communications within 14 minutes.  Loop does this automatically.  Manually retuning is only useful for impatience purposes.  If Loop has failed longer than 20 minutes, it will have already likely tried a retune...but knock yourself out if you want to try it again manually.</strong></p>
 </div>
