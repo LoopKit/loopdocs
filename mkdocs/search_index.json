@@ -231,9 +231,29 @@
             "title": "Can I run Loop without a RL?"
         }, 
         {
+            "location": "/faqs/algorithm-faqs/", 
+            "text": "Algorithm FAQs\n\u2301\n\n\nDoes Loop \"learn\" or detect changes in your insulin needs?\n\u2301\n\n\nNo. Loop assumes the settings you've provided are correct. If outside factors (such as hormones, illness, exercise, medications, etc) affect your underlying settings that determine insulin needs (basals, insulin sensitivity factor, carb ratio) you may need to manually adjust your settings. Loop will not \"learn\" or \"assume\" that your underlying needs have changed. Instead, Loop is designed to react to the changes in blood glucose and its insulin dosing decisions are based on the settings that you have entered in the app.\n\n\nThere is a short-term retrospective analysis built into Loop which will apply a weighted-correction based on the past 60 minutes of blood glucose changes. While this does help some, larger-scale \"learning\" is not currently a part of Loop's algorithm.\n\n\nPerhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings need upating or make temporary adjustments for short term issues. If you want to read more about why your settings matter, check out \nLooptips.org\n.\n\n\nWhat does negative Active Insulin mean?\n\u2301\n\n\nWhen Loop withholds or suspends some of your expected basal insulin, that starts an accumulation of insulin deficit. Similar to if you have a kinked cannula and insulin is not delivered, you'd call yourself \"lacking insulin\". That is the same concept of having negative active insulin (aka negative insulin on board). When you have negative insulin on board, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative insulin on board regularly, you probably need to \nadjust/test your settings\n.\n\n\n\u2301", 
+            "title": "Algorithm FAQs"
+        }, 
+        {
+            "location": "/faqs/algorithm-faqs/#algorithm-faqs", 
+            "text": "", 
+            "title": "Algorithm FAQs"
+        }, 
+        {
+            "location": "/faqs/algorithm-faqs/#does-loop-learn-or-detect-changes-in-your-insulin-needs", 
+            "text": "No. Loop assumes the settings you've provided are correct. If outside factors (such as hormones, illness, exercise, medications, etc) affect your underlying settings that determine insulin needs (basals, insulin sensitivity factor, carb ratio) you may need to manually adjust your settings. Loop will not \"learn\" or \"assume\" that your underlying needs have changed. Instead, Loop is designed to react to the changes in blood glucose and its insulin dosing decisions are based on the settings that you have entered in the app.  There is a short-term retrospective analysis built into Loop which will apply a weighted-correction based on the past 60 minutes of blood glucose changes. While this does help some, larger-scale \"learning\" is not currently a part of Loop's algorithm.  Perhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings need upating or make temporary adjustments for short term issues. If you want to read more about why your settings matter, check out  Looptips.org .", 
+            "title": "Does Loop \"learn\" or detect changes in your insulin needs?"
+        }, 
+        {
+            "location": "/faqs/algorithm-faqs/#what-does-negative-active-insulin-mean", 
+            "text": "When Loop withholds or suspends some of your expected basal insulin, that starts an accumulation of insulin deficit. Similar to if you have a kinked cannula and insulin is not delivered, you'd call yourself \"lacking insulin\". That is the same concept of having negative active insulin (aka negative insulin on board). When you have negative insulin on board, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative insulin on board regularly, you probably need to  adjust/test your settings .", 
+            "title": "What does negative Active Insulin mean?"
+        }, 
+        {
             "location": "/faqs/safety-faqs/", 
             "text": "Safety Tips\n\u2301\n\n\nBeware the Medtronic Easy Bolus button\n\u2301\n\n\nMedtronic's easy bolus button has been the cause of several accidental boluses when the pump has been carried in a pocket. Best practice would be to disable the Easy Bolus button since you will be doing boluses from the phone anyways.\n\n\nHealth app permissions\n\u2301\n\n\nDo not let other apps, such as Spike App or MyFitnessPal, on your iPhone write carbohydrates to Health app. Loop could read those carbohydrates and you could be dosed for those carbohydrates. You can read more about Health permissions \nhere\n.\n\n\nFinish your Medtronic priming\n\u2301\n\n\nAfter a site change and reservoir rewind, Medtronic's pump will have a menu on the pump screen related to finishing your prime. Make sure you complete that screen and always return to the main menu. Medtronic's pump won't resume basal insulin delivery until that priming screen is completed.\n\n\n\u2301", 
-            "title": "Safety FAQs"
+            "title": "Safety Tips"
         }, 
         {
             "location": "/faqs/safety-faqs/#safety-tips", 
@@ -254,26 +274,6 @@
             "location": "/faqs/safety-faqs/#finish-your-medtronic-priming", 
             "text": "After a site change and reservoir rewind, Medtronic's pump will have a menu on the pump screen related to finishing your prime. Make sure you complete that screen and always return to the main menu. Medtronic's pump won't resume basal insulin delivery until that priming screen is completed.", 
             "title": "Finish your Medtronic priming"
-        }, 
-        {
-            "location": "/faqs/algorithm-faqs/", 
-            "text": "Algorithm FAQs\n\u2301\n\n\nDoes Loop \"learn\" or detect changes in your insulin needs?\n\u2301\n\n\nNo. Loop assumes the settings you've provided are correct. If outside factors (such as hormones, illness, exercise, medications, etc) affect your underlying settings that determine insulin needs (basals, insulin sensitivity factor, carb ratio) you may need to manually adjust your settings. Loop will not \"learn\" or \"assume\" that your underlying needs have changed. Instead, Loop is designed to react to the changes in blood glucose and its insulin dosing decisions are based on the settings that you have entered in the app.\n\n\nThere is a short-term retrospective analysis built into Loop which will apply a weighted-correction based on the past 60 minutes of blood glucose changes. While this does help some, larger-scale \"learning\" is not currently a part of Loop's algorithm.\n\n\nPerhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings need upating or make temporary adjustments for short term issues. If you want to read more about why your settings matter, check out \nLooptips.org\n.\n\n\nWhat does negative Active Insulin mean?\n\u2301\n\n\nWhen Loop withholds or suspends some of your expected basal insulin, that starts an accumulation of insulin deficit. Similar to if you have a kinked cannula and insulin is not delivered, you'd call yourself \"lacking insulin\". That is the same concept of having negative active insulin (aka negative insulin on board). When you have negative insulin on board, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative insulin on board regularly, you probably need to \nadjust/test your settings\n.\n\n\n\u2301", 
-            "title": "Algorithm FAQs"
-        }, 
-        {
-            "location": "/faqs/algorithm-faqs/#algorithm-faqs", 
-            "text": "", 
-            "title": "Algorithm FAQs"
-        }, 
-        {
-            "location": "/faqs/algorithm-faqs/#does-loop-learn-or-detect-changes-in-your-insulin-needs", 
-            "text": "No. Loop assumes the settings you've provided are correct. If outside factors (such as hormones, illness, exercise, medications, etc) affect your underlying settings that determine insulin needs (basals, insulin sensitivity factor, carb ratio) you may need to manually adjust your settings. Loop will not \"learn\" or \"assume\" that your underlying needs have changed. Instead, Loop is designed to react to the changes in blood glucose and its insulin dosing decisions are based on the settings that you have entered in the app.  There is a short-term retrospective analysis built into Loop which will apply a weighted-correction based on the past 60 minutes of blood glucose changes. While this does help some, larger-scale \"learning\" is not currently a part of Loop's algorithm.  Perhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings need upating or make temporary adjustments for short term issues. If you want to read more about why your settings matter, check out  Looptips.org .", 
-            "title": "Does Loop \"learn\" or detect changes in your insulin needs?"
-        }, 
-        {
-            "location": "/faqs/algorithm-faqs/#what-does-negative-active-insulin-mean", 
-            "text": "When Loop withholds or suspends some of your expected basal insulin, that starts an accumulation of insulin deficit. Similar to if you have a kinked cannula and insulin is not delivered, you'd call yourself \"lacking insulin\". That is the same concept of having negative active insulin (aka negative insulin on board). When you have negative insulin on board, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative insulin on board regularly, you probably need to  adjust/test your settings .", 
-            "title": "What does negative Active Insulin mean?"
         }, 
         {
             "location": "/faqs/glossary/", 
