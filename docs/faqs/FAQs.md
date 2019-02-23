@@ -1,4 +1,4 @@
-# Loop FAQs
+# General Loop FAQs
 
 There are lots of new users coming to Loop trying to find out information about Omnipod potentially being supported on Loop. You probably have a lot of questions.
 
@@ -6,7 +6,7 @@ There are lots of new users coming to Loop trying to find out information about 
 
 Loop has both hardware and software requirements.  In general, to use Loop you need to have seven components.
 
-- [Compatible insulin pump](https://loopkit.github.io/loopdocs/setup/requirements/pump/)
+- [Compatible insulin pump](https://loopkit.github.io/loopdocs/setup/requirements/mdt-pump/)
 - [Compatible CGM](https://loopkit.github.io/loopdocs/setup/requirements/cgm/)
 - [RileyLink](https://loopkit.github.io/loopdocs/setup/requirements/rileylink/)
 - [Compatible iPhone/iPod Touch](https://loopkit.github.io/loopdocs/setup/requirements/iphone/)
@@ -17,27 +17,6 @@ Loop has both hardware and software requirements.  In general, to use Loop you n
 <p align="center">
 <img src="../requirements/img/loop_gear.jpg" width="500">
 </p>
-
-## Is Omnipod supported on Loop?
-
-No, not yet. Omnipod has been in the process of being "hacked" for several years now and this has been a tremendous amount of work. The work has been fruitful...but it is not ready for public release yet. When it is ready, we promise to update these documents with instructions and information about Omnipod Loop.
-
-## Which pods will work with Loop?
-
-The Loop system described in these documents (aka DIY Loop) will work with Eros pods...these are the current pods on the market in wide release.  The newer DASH pods will not be compatible with DIY Loop.  Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
-
-Summary:
-
-* DIY Loop + Eros pods + RileyLink</br></br>
-* Tidepool Loop +DASH pods (no RileyLink)
-
-## Do I need a PDM still with Omnipod Loop?
-
-No, pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your Loop app on your iPhone. When Loop is ready for Omnipod, it will not use a PDM...and in fact you cannot use a PDM for a pod that has been activated with Loop. That doesn't mean you should get rid of your PDM. You should still keep it around in case your lose your phone or lose your RileyLink. You'd want to swap out to a new pod and pair it with the PDM if you lose a critical part of your Omnipod Loop gear.
-
-## Will one RileyLink work with both Medtronic and Omnipod pumps?
-
-Technically, yes...but it would be frustrating. The updated RileyLink for Omnipod has a coiled copper antenna that is matched to the pods' communication frequency. The original RileyLink has a different antenna that is more appropriate for the Medtronic pumps' communication frequency. Technically you can use either RileyLink because they share the same firmware on the chips, but you would experience a significant decrease in the distance that the RileyLink could be removed from the pump/pod and still communicate. Practically speaking, you'd be missing a lot of looping simply because you'd have to really make a special effort to keep the devices very close. So, in a pinch if all you have is one RileyLink and it is mismatched with the pump/pod you have on-hand, you could use it. But, ultimately you'd want to get a RileyLink with an antenna suited to your particular pump/pod so that you don't have to keep them so close.
 
 ## Can I download Loop from the App store?
 
@@ -89,6 +68,10 @@ The short answer is (1) when you first build and (2) once per year minimum after
 
 The longer answer is that Loop code is updated periodically to include new features and bug fixes.  When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app upate yourself with [update instructions here](https://loopkit.github.io/loopdocs/setup/update/updating/). In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.
 
+## Will I need to build a new Loop if I switch between Medtronic and Omnipod regularly?
+
+No. Loop will have the option to move between different pump types from within the same Loop app.
+
 ## Can I use someone else's Apple Developer account?
 
 Technically, yes...however there are major drawbacks. The person's developer account can only be "linked" to a limited number of build computers. So one person "loaning out" their developer license to a lot of people will quickly exceed the number of allowed computers. In those cases, that person will be told they need to revoke the certificates on some computers (essentially dropping old ones to make room for new ones). When they do that, they may have forgotten that about your Loop app on your computer. When they revoke your computer's certificate (and they can do that without you knowing through their developer portal), your Loop app will immediately stop working and not even open.
@@ -99,7 +82,7 @@ Moral of the story, out of all the way to save money...borrowing someone's devel
 
 ## How can I find a compatible pump? supplies?
 
-There is a [whole page about MDT pumps](https://loopkit.github.io/loopdocs/setup/requirements/pump/); how to find them, how to find supplies, and assessing whether your MDT pump is compatible. Go check out that page for more info.
+There is a [whole page about MDT pumps](https://loopkit.github.io/loopdocs/setup/requirements/mdt-pump/); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Go check out that page for more info.
 
 ## Can I pay someone else to do this?
 

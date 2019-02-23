@@ -10,8 +10,14 @@ markdown_extensions:
 
 pages:
 - 'index.md'
-- FAQs/Gear:
-    - 'FAQs': 'setup/FAQs.md'
+- FAQs:
+    - 'General Loop FAQs': 'faqs/FAQs.md'
+    - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
+    - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
+    - 'Safety FAQs': 'faqs/safety-faqs.md'
+    - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
+    - 'Glossary': 'faqs/glossary.md'
+- Gear:
     - 'Medtronic': 'setup/requirements/mdt-pump.md'
     - 'CGM': 'setup/requirements/cgm.md'
     - 'RileyLink': 'setup/requirements/rileylink.md'
@@ -56,13 +62,13 @@ pages:
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
         - 'Glucose Prediction': 'operation/algorithm/prediction.md'
         - 'Temp Basal Adjustments': 'operation/algorithm/temp-basal.md'
-- Troubleshoot:
-    - 'Overview': 'troubleshooting/overview.md'
-    - 'Grey Loop': 'troubleshooting/green-loop.md'
-    - 'Yellow/Red Loop': 'troubleshooting/yellow-red-loop.md'
-    - 'Priming and Sites': 'troubleshooting/priming.md'
-    - 'Time Changes': 'troubleshooting/time-change.md'
-    - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
+    - Troubleshoot:
+        - 'Overview': 'troubleshooting/overview.md'
+        - 'Grey Loop': 'troubleshooting/green-loop.md'
+        - 'Yellow/Red Loop': 'troubleshooting/yellow-red-loop.md'
+        - 'Priming and Sites': 'troubleshooting/priming.md'
+        - 'Time Changes': 'troubleshooting/time-change.md'
+        - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
 - Nightscout:
     - 'Overview': 'nightscout/overview.md'
     - 'Brand New NS': 'nightscout/new_user.md'
