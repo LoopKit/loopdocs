@@ -12,10 +12,44 @@
     
         
     <url>
-     <loc>/setup/FAQs/</loc>
+     <loc>/faqs/FAQs/</loc>
      <lastmod>2019-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/faqs/omnipod-faqs/</loc>
+     <lastmod>2019-02-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/faqs/rileylink-faqs/</loc>
+     <lastmod>2019-02-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/faqs/safety-faqs/</loc>
+     <lastmod>2019-02-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/faqs/algorithm-faqs/</loc>
+     <lastmod>2019-02-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/faqs/glossary/</loc>
+     <lastmod>2019-02-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
         
     <url>
      <loc>/setup/requirements/mdt-pump/</loc>
@@ -157,43 +191,9 @@
      <changefreq>daily</changefreq>
     </url>
         
-    
-
-    
-        
     <url>
-     <loc>/troubleshooting/overview/</loc>
-     <lastmod>2019-02-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/troubleshooting/green-loop/</loc>
-     <lastmod>2019-02-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/troubleshooting/yellow-red-loop/</loc>
-     <lastmod>2019-02-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/troubleshooting/priming/</loc>
-     <lastmod>2019-02-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/troubleshooting/time-change/</loc>
-     <lastmod>2019-02-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/troubleshooting/pump-errors/</loc>
-     <lastmod>2019-02-22</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
