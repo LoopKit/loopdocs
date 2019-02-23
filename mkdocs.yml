@@ -12,7 +12,7 @@ pages:
 - 'index.md'
 - FAQs/Gear:
     - 'FAQs': 'setup/FAQs.md'
-    - 'Insulin Pump': 'setup/requirements/pump.md'
+    - 'Medtronic': 'setup/requirements/mdt-pump.md'
     - 'CGM': 'setup/requirements/cgm.md'
     - 'RileyLink': 'setup/requirements/rileylink.md'
     - 'Computer': 'setup/requirements/computer.md'

@@ -1,13 +1,13 @@
-# Insulin Pump
+# Medtronic Insulin Pump
 
 ![insulin pumps](img/pump.png)
 
-There are a number of insulin pumps manufactured between 2006 – 2012 by Medtronic which are compatible.  Compatibility has two requirements; (1) pump model and (2) firmware.
+There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are Loop compatible.  Compatibility has two requirements; (1) pump model and (2) firmware.
 
 !!!info ""
-    <u>LOOP COMPATIBLE PUMPS:</u>  The 515/715 and 522/722 pumps are all compatible.  The 523/723 and 554/754 pumps will require you to check the firmware to see if the pump is Loop compatible.  See the footnotes 3 and 4 for the required firmwares.
+    <u>LOOP COMPATIBLE MEDTRONIC PUMPS:</u> The 515/715 and 522/722 pumps are all compatible.  The 523/723 and 554/754 pumps will require you to check the firmware to see if the pump is Loop compatible.  See the footnotes 3 and 4 for the required firmwares.
     
-    <u>LOOP **NOT** COMPATIBLE PUMPS:</u>  The 512/712 pumps are **NOT** compatible with Loop system (you can run a limited OpenAPS setup on a 512/712, however).  The Omnipod, Animas, T-slim, Medtronic 600 series and any other name of pump that you wish to insert are also **NOT** compatible.  Work is being done to make Omnipod work with Loop, but there is no predicted timeline for that.  Believe me...when it happens we will update and announce.
+    <u>LOOP **NOT** COMPATIBLE PUMPS:</u> The 512/712, 551, 751, 530, 670G pumps are **NOT** compatible with Loop system. Animas, T-slim, Dana-RS, Roche Combo, Medtronic 600 series and any other name of pump that you wish to insert are also **NOT** compatible.
 
 <table>
   <thead>
@@ -39,8 +39,15 @@ There are a number of insulin pumps manufactured between 2006 – 2012 by Medtro
       <td>✅</td>
     </tr>
     <tr>
+    <th>Dexcom G6</th>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    </tr>
+    <tr>
       <th>MM CGM</th>
-      <td>✅</td>
+      <td>--</td>
       <td>✅</td>
       <td>✅</td>
       <td>✅</td>
@@ -134,10 +141,6 @@ If the pump has been active recently or has a reservoir installed, follow these 
 
 ![Firmware](img/pump_firmware.png)
 
-## Other pumps
-
-While we all would love to have our {insert your favorite manufacturer} pump be compatible with a DIY closed loop system like Loop, unfortunately it just isn't possible right now.  There are efforts being made to crack the software code on other pumps (like Omnipod), and when they are successful...believe me...we will tell you about it!
-
 ## Finding a Medtronic pump
 
 Finding a compatible Medtronic pump is probably the most difficult part for most new Loopers.  Our suggestion:
@@ -154,7 +157,7 @@ Finding a compatible Medtronic pump is probably the most difficult part for most
 
 * Check out the **HelpAround, NextDoor, OfferUp, and/or LetGo** apps for pumps.
 
-* Search [Medwow](http://medwow.com) for used Medtronic pumps
+* Search [Medwow](http://medwow.com) for used Medtronic pumps.
 
 Medwow has been fairly frustrating for most people; poor response rate, high prices.  The most success appears to come from either one-on-one discussions with fellow diabetics/doctors or using apps (Craigslist, NextDoor, LetGo, HelpAround).  If you are using Craigslist, you may wish to use an app on your iPhone to make the searching easier.  There are apps to search multiple cities at once for your keywords and set up alerts.
 
@@ -164,20 +167,24 @@ Medwow has been fairly frustrating for most people; poor response rate, high pri
 
 If you choose to purchase from a remote or unknown seller, here are some tips for safe purchasing:
 
-* Use PayPal and purchase using the "Goods and Services" payment option.  This costs nothing for the buyer, but the seller will lose 2.95% of the sale to PayPal fees.  PayPal offers some protection for both buyer and seller in the event of fraud.  
+* Use PayPal and purchase using the "Goods and Services" payment option. This costs nothing for the buyer, but the seller will lose 2.95% of the sale to PayPal fees. PayPal offers some protection for both buyer and seller in the event of fraud.  
 
-* Ask for photos of the pump.  Check to make sure the serial number of the pump on the backside matches the serial number of the pump showing in the display menu.  Ask for a short video of the pump, or at least a photo of the pump turned on, so that you can see the pump's firmware and model number.  Cracks and some wear on these pumps is expected.  These pumps are not usually free of marks.  Many people are successfully looping on pumps that have cracks and rub marks, but you may want to ask if you are concerned.  
+* Ask for photos of the pump. Check to make sure the serial number of the pump on the backside matches the serial number of the pump showing in the display menu. Ask for a short video of the pump, or at least a photo of the pump turned on, so that you can see the pump's firmware and model number. Cracks and some wear on these pumps is expected. These pumps are not usually free of marks. Many people are successfully looping on pumps that have cracks and rub marks, but you may want to ask if you are concerned about any you see in photos.
 
-* Ask for shipping that includes a tracking number.  USPS Priority Mail's smallest box is a great option.  It's only $7.20 domestically in US and includes tracking.  Ask the seller to add a small bit of packing protection such as bubble wrap around the pump to keep it safe during shipping.  Make sure you get a tracking number within a reasonable period of time after you have paid.  
+* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#motor-error). Those pumps will generally not work (or only work intermittently), however some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.
+
+* Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#crackmissing-piece-repairs).
+
+* Ask for shipping that includes a tracking number. USPS Priority Mail's smallest box is a great option.  It's only $7.20 domestically in US and includes tracking. Ask the seller to add a small bit of packing protection such as bubble wrap around the pump to keep it safe during shipping. Make sure you get a tracking number within a reasonable period of time after you have paid.  
 
 Red flags that may indicate a scam:
 
-* Asking for payment through "friends and family" on PayPal, especially if you don't know the person or have any solid references for them.  Paying in that way offers you no buyer protection.  It's just like giving the seller cash, so you had better trust the seller.  
+* Asking for payment through "friends and family" on PayPal, especially if you don't know the person or have any solid references for them. Paying in that way offers you no buyer protection. It's just like giving the seller cash, so you had better trust the seller.  
 
-* Offering an "almost new" pump is a big red flag.  These pumps should be at least 5 years old by now.  Do you really think a 5 year old pump should be unused and sitting in shrink wrap at this point?  Seems highly suspicious.  There are some out there, but they are very infrequent.  
+* Offering an "almost new" pump is a big red flag. These pumps should be at least 5 years old by now. Do you really think a 5 year old pump should be unused and sitting in shrink wrap at this point? Seems highly suspicious. There are some out there, but they are very infrequent.  
 
-* Not able to provide new pictures of the pump when requested.  Sure they posted some pictures with the ad, but what if they just downloaded them from other people's ads?  The seller should be able to furnish a couple "new" photos are your request.  A good one to ask for is the battery and reservoir tops so you can see the condition of those.
+* Not able to provide new pictures of the pump when requested. Sure they posted some pictures with the ad, but what if they just downloaded them from other people's ads? The seller should be able to furnish a couple "new" photos are your request. A good one to ask for is the battery and reservoir tops so you can see the condition of those.
 
 ## Pump Supplies
 
-Medtronic will not typically sell pump supplies directly to customers who have not previously purchased a registered Medtronic pump.  Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider.  Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies.  If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any type in particular.
+Medtronic will not typically sell pump supplies directly to customers who have not previously purchased a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any type in particular.

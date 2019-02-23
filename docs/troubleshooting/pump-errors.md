@@ -48,6 +48,22 @@ After you finish your fix, another excellent idea is to make sure you add a leng
 <img src="../img/taped-pump.jpg" width="400">
 </p>
 
+## Crack/Missing Piece Repairs
+
+Another common issue on these Medtronic pumps are cracks and/or missing bits of plastic near the battery cap or reservoir sleeve. You can repair these fairly easily. For filling small cracks, [Testor's plastic cement](https://www.amazon.com/Cement-Glue-Value-Testors-tubes/dp/B0013D53CS/ref=sr_1_2?s=toys-and-games&ie=UTF8&qid=1550883077&sr=1-2&keywords=testors+plastic+cement) or [Gorilla epoxy](https://www.amazon.com/Gorilla-Epoxy-Minute-ounce-Syringe/dp/B001Z3C3AG/ref=sr_1_1_sspa?ie=UTF8&qid=1550883118&sr=8-1-spons&keywords=gorilla+epoxy&psc=1) are good choices.
+
+For more extensive repairs to replace missing chunks of plastic, [Gorilla epoxy](https://www.amazon.com/Gorilla-Epoxy-Minute-ounce-Syringe/dp/B001Z3C3AG/ref=sr_1_1_sspa?ie=UTF8&qid=1550883118&sr=8-1-spons&keywords=gorilla+epoxy&psc=1) or [Sugru](https://www.amazon.com/Sugru-Mouldable-Glue-Original-Formula/dp/B01BFE0KNQ/ref=sr_1_4?ie=UTF8&qid=1550883178&sr=8-4&keywords=sugru) are excellent choices.  
+
+You can use [teflon thread tape](https://www.amazon.com/LASCO-11-1033-Sealant-2-Inch-100-Inch/dp/B00ITPHXZI/ref=sr_1_17?ie=UTF8&qid=1550883881&sr=8-17&keywords=teflon+thread+tape) on the battery cap to make sure the epoxy or Sugru don't stick to the battery cap, but still recreate the threads.  The first photos are of a Sugru repair and second set of photos are Gorilla epoxy repair.
+
+<p align="center">
+<img src="../img/after-sugru.jpg" width="750">
+</p>
+
+<p align="center">
+<img src="../img/epoxy-1.jpg" width="750">
+</p>
+
 ## Motor error
 
 Often a motor error is the result of a poorly seated reservoir or tubing cap.  If you get a motor error, the first thing you should do is detach from your infusion site.  Remove and reseat the reservoir, prime again, and see if the motor error resolves.  If it does not, try replacing the tubing cap on the reservoir (new tubing).  If that does not resolve the motor error, also replace the entire reservoir.
