@@ -14,8 +14,8 @@ pages:
     - 'General Loop FAQs': 'faqs/FAQs.md'
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
-    - 'Safety FAQs': 'faqs/safety-faqs.md'
     - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
+    - 'Safety Tips': 'faqs/safety-faqs.md'
     - 'Glossary': 'faqs/glossary.md'
 - Gear:
     - 'Medtronic': 'setup/requirements/mdt-pump.md'

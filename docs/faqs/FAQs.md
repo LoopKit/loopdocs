@@ -15,7 +15,7 @@ Loop has both hardware and software requirements.  In general, to use Loop you n
 - [Apple Developer Membership](https://loopkit.github.io/loopdocs/setup/requirements/appledev/)
 
 <p align="center">
-<img src="../requirements/img/loop_gear.jpg" width="500">
+<img src="../img/loop_gear.jpg" width="500">
 </p>
 
 ## Can I download Loop from the App store?

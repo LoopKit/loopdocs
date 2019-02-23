@@ -27,5 +27,5 @@ Yes, likely there will be an increase in your usual pod failure ("screaming pod"
 Screaming pods can be silenced by carrying a paperclip. Simply put the paperclip in the small hole that is on the bottom (the side opposite where the cannula is) of the pod as shown. Push the paperclip in until you hear a little click, that click is breaking the circuit that let's the audible scream go.
 
 <p align="center">
-<img src="../requirements/img/paperclip.jpg" width="500">
+<img src="../img/paperclip.jpg" width="500">
 </p>
