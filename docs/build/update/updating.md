@@ -63,7 +63,7 @@ Double click the Loop folder in your Downloads folder, and then double click the
 
 ## Step 3: Add Code Customizations
 
-Add or redo any code customizations, if needed.  These will not be carried over automatically from the old app.  Be sure to read up in the [code customizations section](https://loopkit.github.io/loopdocs/setup/build/code_customization/) before building, as there may be new customizations available since the previous build.
+Add or redo any code customizations, if needed.  These will not be carried over automatically from the old app.  Be sure to read up in the [code customizations section](https://loopkit.github.io/loopdocs/build/code_customization/) before building, as there may be new customizations available since the previous build.
 
 If you are building with a free account, you will have to remove the Siri capabilities in order to build.
 
@@ -82,7 +82,7 @@ At the end of all the steps, you will either get a Build Succeeded or Build Fail
 
 ## Step 5: Resolve Build Errors
 
-**If you get any red build errors or a "Loop Build Failed" message, please check [this section](https://loopkit.github.io/loopdocs/setup/build/build_errors/) for fixes.**
+**If you get any red build errors or a "Loop Build Failed" message, please check [this section](https://loopkit.github.io/loopdocs/build/build_errors/) for fixes.**
 
 
 

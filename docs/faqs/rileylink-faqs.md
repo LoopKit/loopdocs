@@ -8,7 +8,11 @@ There are two different types of RL currently; the difference being the antenna 
 <img src="../img/two-rl.png" width="650">
 </p>
 
-## What will happen if you use a Medtronic-916MHz antenna RL with an Omnipod? Or vice versa?
+## Is the new antenna an "upgrade" in Loop performance?
+
+It is a bit of a misnomer to think of the newer copper coil antenna as an "upgrade". It is only an upgrade if you want to pod Loop. The new antenna will actually decrease your range if you try to use it with a Medtronic Loop.  See the next FAQ for more detailed description and chart.
+
+## What will happen if you use a 916MHz antenna RL with an Omnipod? Or vice versa?
 
 The answer will first depend on exactly how old that RL is and what firmware it has installed.
 
@@ -24,8 +28,12 @@ Assuming your has the newer RL firmware, you can *technically* use that RL with 
 
 In summary, definitely use the appropriate RL with the antenna that matches your pump so that you are less frustrated. In a pinch, your old RL might work as a backup, but you won't love it.
 
-## Can you swap out the antenna on a RL?
-Yes, the antenna swap is not a hard swap if you just have basic soldering skills. The old antenna can be removed easily by reheating the solder. New 433MHz helical antennas can be found on eBay or Amazon pretty readily, but GetRileyLink site may have an antenna swap service in the future (TBD).
+<p align="center">
+<img src="../img/rl-antenna-chart.png" width="750">
+</p>
+
+## Can you swap out the old antenna on a RL?
+Yes, the antenna swap is not a hard swap if you just have basic soldering skills. The old antenna can be removed easily by reheating the solder. New 433MHz antennas and a cap can be found on [GetRileyLink site](https://getrileylink.org/product/433diyupgrade/).
 
 ## How long will my RL last?
 I am still using the original RL from 2.5 years ago, so would seem like a long time.
@@ -43,7 +51,7 @@ In general, you want to get in the habit of carrying RL with you, yes. A pocket,
 Nope. Nor is it sweat-proof. Be careful.
 
 ## What is the most common issue for RL?
-People not pushing the lipo battery in all the way.
+People not pushing the lipo battery in all the way and therefore the Loop will have more frequent problems.
 
 ## Can I use more than one RL at a time? Will it improve anything?
 Yes, you can have two turned on, but it won't help anything really. Loop only uses one RL at a time. IF you have several RLs turned on in Loop settings, your Loop will only look for another RL after looping fails for over 15 minutes on the original RL. In my experience, it is rare that looping would fail for more than 15 minutes and a second RL would help in the same environment. If one RL gets damaged though and you need to swap out to a second RL, there's no issues with that. That will work fine for either Medtronic or Omnipod.
