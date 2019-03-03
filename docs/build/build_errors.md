@@ -49,7 +49,7 @@ Error message: "Your development team does not support the Siri capability"
 <img src="../img/siri-error.jpg" width="750">
 </p>
 
-Solution: You need to customize your code to remove Siri capabilities when you are building Loop with a free developer account. See the Code Customization section [here](https://loopkit.github.io/loopdocs/setup/build/code_customization/#disable-siri-capabilities) for directions.
+Solution: You need to customize your code to remove Siri capabilities when you are building Loop with a free developer account. See the Code Customization section [here](https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities) for directions.
 
 ## Pending Certificate Request
 
