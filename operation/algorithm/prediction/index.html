@@ -8,555 +8,381 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-
-	<title>Glucose Prediction - Loop Docs</title>
-
+        <title>Glucose Prediction - LoopDocs</title>
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <link href="../../../css/admonitions.css" rel="stylesheet">
-
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
             ga('create', 'UA-109876065-1', 'loopkit.github.io');
             ga('send', 'pageview');
-        </script>
-        
+        </script> 
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+            <div class="container">
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">LoopDocs</a>
+                </div>
 
-            <!-- Main title -->
-            <a class="navbar-brand" href="../../..">Loop Docs</a>
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            <!-- Main navigation -->
-            <ul class="nav navbar-nav">
-            
-            
-                <li >
-                    <a href="../../..">Home</a>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../../faqs/FAQs/">General Loop FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../faqs/omnipod-faqs/">Omnipod FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../faqs/rileylink-faqs/">RileyLink FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../faqs/algorithm-faqs/">Algorithm FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../faqs/safety-faqs/">Safety Tips</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../faqs/glossary/">Glossary</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gear <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gear <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../../setup/requirements/mdt-pump/">Medtronic</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../setup/requirements/cgm/">CGM</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../setup/requirements/rileylink/">RileyLink</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../setup/requirements/computer/">Computer</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../setup/requirements/iphone/">iPhone</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../setup/requirements/appledev/">Apple Developer</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../../build/overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/build-computer/">Prep Computer</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/build-developer/">Get Developer Account</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/build-xcode/">Install Xcode</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/build-loop/">Build Loop</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/build_errors/">Build Errors</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/health/">Health Permissions</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/jaeb-study/">Jaeb Study</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/code_customization/">Code Customization</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/new-iphone/">New iPhone</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/update/updating/">Update Loop</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../build/update/new-version/">New Version Info</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">App setup</a>
+    <a href="#">App setup</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../loop-settings/settings/">Loop Settings</a>
 </li>
-
-        
             
 <li >
     <a href="../../loop-settings/services/">Loop Services</a>
 </li>
-
-        
             
 <li >
     <a href="../../loop-settings/rileylink_menu/">RileyLink menu</a>
 </li>
-
-        
             
 <li >
     <a href="../../loop-settings/pump/">Pump Setup</a>
 </li>
-
-        
             
 <li >
     <a href="../../overview/">Loop Displays</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">How to Use Loop App</a>
+    <a href="#">How to Use Loop App</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../features/carbs/">Carb Entries</a>
 </li>
-
-        
             
 <li >
     <a href="../../features/bolus/">Bolus</a>
 </li>
-
-        
             
 <li >
     <a href="../../features/workout/">Workout Targets</a>
 </li>
-
-        
             
 <li >
     <a href="../../features/ice/">Using ICE info</a>
 </li>
-
-        
             
 <li >
     <a href="../../features/watch/">Apple Watch</a>
 </li>
-
-        
             
 <li >
     <a href="../../features/widget/">iPhone widget</a>
 </li>
-
-        
             
 <li >
     <a href="../../features/notifications/">Loop Notifications</a>
 </li>
-
-        
             
 <li >
     <a href="../../features/battery/">Pump Battery</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Looping Tips</a>
+    <a href="#">Looping Tips</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../loop/open-loop/">Open Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../loop/close-loop/">Closed Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../loop/looptips/">Loop Tips</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Algorithm</a>
+    <a href="#">Algorithm</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../overview/">Overview</a>
 </li>
-
-        
             
 <li >
     <a href="../bolus/">Bolus Recommendations</a>
 </li>
-
-        
             
 <li class="active">
     <a href="./">Glucose Prediction</a>
 </li>
-
-        
             
 <li >
     <a href="../temp-basal/">Temp Basal Adjustments</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Troubleshoot</a>
+    <a href="#">Troubleshoot</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../../troubleshooting/overview/">Overview</a>
 </li>
-
-        
             
 <li >
     <a href="../../../troubleshooting/green-loop/">Grey Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../../troubleshooting/priming/">Priming and Sites</a>
 </li>
-
-        
             
 <li >
     <a href="../../../troubleshooting/time-change/">Time Changes</a>
 </li>
-
-        
             
 <li >
     <a href="../../../troubleshooting/pump-errors/">MDT Pump Errors</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../../nightscout/overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../nightscout/new_user/">Brand New NS</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../nightscout/update_user/">Retrofit Existing NS</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../nightscout/mlab_cleanup/">NS Stopped Working</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../nightscout/azure_migration/">Azure to Heroku</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../nightscout/ifttt/">IFTTT</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../nightscout/pebble/">Pebble</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../nightscout/pushover/">Remote Notifications</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../../nightscout/reports/">Reports</a>
 </li>
+                                </ul>
+                            </li>
+                        </ul>
 
-                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../bolus/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../temp-basal/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
-                </li>
-            
-            
-            </ul>
-
-            <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                <li >
-                    <a rel="next" href="../bolus/">
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </li>
-                <li >
-                    <a rel="prev" href="../temp-basal/">
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </li>
-                
-            </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
         <div class="container">
-            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
         <li class="main active"><a href="#blood-glucose-prediction">Blood Glucose Prediction</a></li>
-        
             <li><a href="#overview">Overview</a></li>
-        
             <li><a href="#insulin-effect">Insulin Effect</a></li>
-        
             <li><a href="#carbohydrate-effect">Carbohydrate Effect</a></li>
-        
             <li><a href="#retrospective-correction-effect">Retrospective Correction Effect</a></li>
-        
             <li><a href="#blood-glucose-momentum-effect">Blood Glucose Momentum Effect</a></li>
-        
             <li><a href="#predicting-glucose">Predicting Glucose</a></li>
-        
-    
     </ul>
 </div></div>
-            <div class="col-md-9" role="main">
+                <div class="col-md-9" role="main">
 
 <h1 id="blood-glucose-prediction">Blood Glucose Prediction<a class="headerlink" href="#blood-glucose-prediction" title="Permanent link">⌁</a></h1>
 <p>Loop uses an algorithm to maintain blood glucose in a correction range by predicting the contributions from four individual effects (insulin, carbohydrates, retrospective correction, and blood glucose momentum) at any time <em>t</em> to recommend temporary basal rate corrections and boluses. </p>
@@ -616,11 +442,11 @@
 <p>where MAR is the minimum absorption rate (g/hr), CA is the amount of carbohydrates (g) and d is the expected duration (hr) it will take the carbohydrates to absorb. </p>
 <h3 id="dynamic-carbohydrate-absorption">Dynamic Carbohydrate Absorption<a class="headerlink" href="#dynamic-carbohydrate-absorption" title="Permanent link">⌁</a></h3>
 <p>The linear model above is modulated by an additional calculation that uses recent observed blood glucose data to estimate how fast carbohydrates have been absorbing. The expected change in blood glucose due to insulin effects alone is compared to the actual observed changes in blood glucose. This difference is termed the insulin counteraction effect (ICE):</p>
-<p><img alt="dynamic carb effect equation " src="../img/dynamic_carb_effect_equation.png" /></p>
+<p><img alt="dynamic carb effect equation " src="img/dynamic_carb_effect_equation.png" /></p>
 <p>where, ICE (mg/dL/5 min) is the insulin counteraction effect, OA is the observed activity (mg/dL/5min) or observed change in blood glucose at time <i>t</i>, and IA is the insulin activity (mg/dL/5min). </p>
 <p>Insulin counteraction effects are caused by more than just carbohydrates, and can include exercise, sensitivity changes, or mis-set insulin delivery settings (e.g., basal rate, ISF, etc.). However, since the effect of carbohydrates is often dominant (after insulin), Loop can still make useful ongoing adjustments to its carbohydrate model by assuming that the an increase in blood glucose is mainly carbohydrate absorption in the period following recorded meal entries.  </p>
 <p>The insulin counteraction effect is converted into an estimated carbohydrate absorption amount by using the current carbohydrate-to-insulin ratio and the insulin sensitivity factor at the time of the recorded meal entry.</p>
-<p><img alt="ice carb effect equation " src="../img/ice_carb_effect.png" /></p>
+<p><img alt="ice carb effect equation " src="img/ice_carb_effect.png" /></p>
 <p>where AC is the amount of carbohydrates absorbed (g/5min), ICE is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U), and ISF is the insulin sensitivity factor (mg/dL/U) at time <i>t</i>. </p>
 <p>If multiple meal entries are active (i.e., still absorbing), the estimated absorption is split between each carbohydrate entry in proportion to each carbohydrate entry’s minimum absorption rate. For example, if 72g carbohydrates with an expected absorption time of 4 hours was consumed at 12 pm, and another 72g of carbohydrates with an expected absorption time of 2 hours was consumed at 3 pm, then the minimum absorption rate (see MAR equation above) would be 12 g/hr and 6 g/hr respectively, or 1 g/5min and 0.5 g/5min.</p>
 <p><img alt="mar meal 1 equation " src="../img/mar_12.png" /></p>
@@ -808,40 +634,78 @@
 
         <footer class="col-md-12">
             <hr>
-            
-            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-
-        <script src="../../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../../js/highlight.pack.js"></script>
-        <script>var base_url = '../../..';</script>
-        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
-        <script src="../../../js/base.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
-                    <div class="modal-body">
-                        <p>
-                            From here you can search these documents. Enter
-                            your search terms below.
-                        </p>
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                            </div>
-                        </form>
-                        <div id="mkdocs-search-results"></div>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
             </div>
         </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
     </body>
 </html>
