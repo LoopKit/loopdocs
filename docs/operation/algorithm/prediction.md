@@ -106,7 +106,7 @@ where MAR is the minimum absorption rate (g/hr), CA is the amount of carbohydrat
 ### Dynamic Carbohydrate Absorption
 The linear model above is modulated by an additional calculation that uses recent observed blood glucose data to estimate how fast carbohydrates have been absorbing. The expected change in blood glucose due to insulin effects alone is compared to the actual observed changes in blood glucose. This difference is termed the insulin counteraction effect (ICE):
 
-![dynamic carb effect equation ](img/dynamic_carb_effect_equation.png)
+![dynamic carb effect equation ](img/dynamic_carb_effect.png)
 
 where, ICE (mg/dL/5 min) is the insulin counteraction effect, OA is the observed activity (mg/dL/5min) or observed change in blood glucose at time <i>t</i>, and IA is the insulin activity (mg/dL/5min). 
 
@@ -114,7 +114,7 @@ Insulin counteraction effects are caused by more than just carbohydrates, and ca
 
 The insulin counteraction effect is converted into an estimated carbohydrate absorption amount by using the current carbohydrate-to-insulin ratio and the insulin sensitivity factor at the time of the recorded meal entry.
 
-![ice carb effect equation ](img/ice_carb_effect.png)
+![ice carb effect equation ](img/ice_carb_effect_equation.png)
 
 where AC is the amount of carbohydrates absorbed (g/5min), ICE is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U), and ISF is the insulin sensitivity factor (mg/dL/U) at time <i>t</i>. 
 

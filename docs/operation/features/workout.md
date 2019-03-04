@@ -4,7 +4,7 @@
 <img src="../img/workout_screen.png" width="200">
 </p>
 
-Workout mode enables a temporary override target from what would normally be scheduled. The default durations for the workout mode override target are 1 hour, 2 hours, or indefinitely. If you want more options for duration, you can [customize them during your Loop build](https://loopkit.github.io/loopdocs/setup/build/code_customization/#workout-range-duration).
+Workout mode enables a temporary override target from what would normally be scheduled. The default durations for the workout mode override target are 1 hour, 2 hours, or indefinitely. If you want more options for duration, you can [customize them during your Loop build](https://loopkit.github.io/loopdocs/build/code_customization/#workout-range-duration).
 
 Workout mode is used to temporarily set higher BG targets ahead of exercise that would normally cause BG to drop.  This should give the user less chance of going low during exercise because Loop will be less aggressive on setting high temp basals.  The success of the workout targets to control/prevent exercise-related BG drops will depend on the type, duration, and intensity of the activity.  Generally the more intense the workout, the farther in advance you would want to set a workout target.
 
