@@ -2,7 +2,7 @@
 
 ## What are the differences between RileyLinks?
 
-There are two different types of RL currently; the difference being the antenna is optimized for the pump you are using.
+There are two different types of RileyLink (RL) currently; the difference being the antenna is optimized for the pump you are using.
 
 <p align="center">
 <img src="../img/two-rl.png" width="650">
@@ -33,13 +33,13 @@ In summary, definitely use the appropriate RL with the antenna that matches your
 </p>
 
 ## Can you swap out the old antenna on a RL?
-Yes, the antenna swap is not a hard swap if you just have basic soldering skills. The old antenna can be removed easily by reheating the solder. New 433MHz antennas and a cap can be found on [GetRileyLink site](https://getrileylink.org/product/433diyupgrade/).
+Yes, the antenna swap is not a hard swap if you just have basic soldering skills. The old antenna can be removed easily by reheating the solder. New 433MHz antennas and a cap can be found on [GetRileyLink site](https://getrileylink.org/product/433diyupgrade/). Tips: use flux and clean the antenna stub before soldering. Poorly DIY-soldered antennas can lead to decreased range and frequent communication drops between Loop and the pods.
 
 ## How long will my RL last?
 I am still using the original RL from 2.5 years ago, so would seem like a long time.
 
 ## How long will my RL battery last?
-Eventually, lipo batteries will lose charging capacity and you would want to replace if you notice the battery not lasting the full day. We've been over 1.5 years on the same battery without issue currently.
+Eventually, lipo batteries will lose charging capacity and you would want to replace if you notice the battery not lasting the full day. We've been using our current battery for nearly 2 years without issue.
 
 ## How can I tell how much charge my RL has?
 You can't. There is no charge level indicator. Just charge it nightly, and you won't have a problem. Full battery charge should last about 30-36 hours depending on battery health. Charging takes less than 2 hours.
@@ -51,10 +51,10 @@ In general, you want to get in the habit of carrying RL with you, yes. A pocket,
 Nope. Nor is it sweat-proof. Be careful.
 
 ## What is the most common issue for RL?
-People not pushing the lipo battery in all the way and therefore the Loop will have more frequent problems.
+People not [pushing the lipo battery](https://loopkit.github.io/loopdocs/setup/requirements/rileylink/#assembling-rl) in all the way when they first assemble their RL. It takes quite a bit of push to get the plug in well enough. If not secured well, Loop will have more frequent problems.
 
 ## Can I use more than one RL at a time? Will it improve anything?
-Yes, you can have two turned on, but it won't help anything really. Loop only uses one RL at a time. IF you have several RLs turned on in Loop settings, your Loop will only look for another RL after looping fails for over 15 minutes on the original RL. In my experience, it is rare that looping would fail for more than 15 minutes and a second RL would help in the same environment. If one RL gets damaged though and you need to swap out to a second RL, there's no issues with that. That will work fine for either Medtronic or Omnipod.
+Yes, you can have two turned on, but it won't help anything really. Loop only uses one RL at a time. IF you have several RLs turned on in Loop settings, your Loop will only look for another RL after Loop fails for over 15 minutes on the original RL. In my experience, it is rare that Loop would fail for more than 15 minutes and a second RL would help in the same environment. If one RL gets damaged though and you need to swap out to a second RL, there's no issues with that. 
 
 ## Can I run Loop without a RL?
 Nope.

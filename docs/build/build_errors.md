@@ -1,18 +1,62 @@
 # Build Errors
 
-There are two types of build errors that happen; yellow alerts and red alerts.  Yellow alerts will not cause a build to fail, and can generally be ignored.  Red alerts will have to be resolved before you can successfully build Loop app.
+There are two types of build errors that happen; yellow warnings and red alerts. You'll see the warnings and alerts in the left-hand column of the Xcode window.
 
-<font color="orange">**Yellow error alerts**</font> do not cause the build to fail, those are just warnings.  Occasionally, a Loop version may have some minor discrepencies that cause a yellow alert...but you can ignore those.
+<font color="orange">**Yellow warnings**</font> do not cause the build to fail, those are just warnings.  Occasionally, a Loop version may have some minor discrepencies that cause a yellow alert...ignore those. Do not try to do anything to fix those...leave them alone.
 
+<font color="red">**Red error alerts** </font> will have to be resolved before you can successfully build Loop app. The steps below explain how to resolve them based on the messages you are seeing.
+
+## Start with the obvious error causes
+
+Before you start trying to resolve your red errors...start with the most obvious things that can cause a red error message:
+
+1. DO NOT USE BETA VERSIONS.  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
+
+2. Did you check for Xcode updates in your computer's App Store? The most current version of Xcode is 10.1. Older versions of Xcode will not work with newer iOS. Failing to update Xcode is a frequent cause of red error messages.
+
+3. Get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago. That old version may not be compatible with new iOS and new Xcode versions.
+
+4. If you are using a free developer account, you need to have finished the [code customizations to remove Siri capabilties](https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities).
+
+## Posting for help
+
+STOP!!  Read this section! Important!
+
+Before you post in Zulipchat or Looped Group asking for help with build errors, <u>do your work first</u>. The build errors listed below (and the obvious checks listed above) are very successful ***IF PEOPLE READ THIS PAGE***. The volunteer group of people answering questions in Looped and Zulipchat would love to spend more time on improving Loop in other ways than answering build error questions that can be answered by using this page as a first step.
+
+Therefore, first use the error topics (listed in sections below) to try to resolve your build error yourself. Then, if you need to post for help because this page did not fix your problem, you'll need to include information with the post so we (the troubleshooters) know you read this page and where you are in your troubleshooting attempts:
+
+* Version of Xcode you are using
+* Version of Loop you are building with
+* Version of iOS on your Loop iPhone
+* Specify if you are using a free or paid account, and if free...confirm you deleted Siri capabilities
+* In your post, confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)
+* Screenshots of your Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.
+* List which of the fixes listed below you have already tried.
+
+Helpful tip #1: Shift-Command-4 will give you a little screenshot tool that you can click-and-drag to highlight the area you'd like to screenshot. When you release the drag, the screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information.
+
+Helpful tip #2: When taking screenshots for a post, include the whole Xcode window. Don't zoom in on any one area. There is information in all parts of the Xcode window that are helpful to the troubleshooters, so it saves time to simply see the whole Xcode window at once.
+
+## Find your error message(s)
+
+To start your error fix (assuming you didn't have one of the obvious issues listed above), the key is to (1) ***READ THE ERROR MESSAGE*** and then (2) ***FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW***.
+
+Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail. Look at the detailed message to really help guide your search for the matching solution.
+
+Notice how in the screenshots in the topics below, there are red circles highlighting certain error messages? Read your error messages similar to where those red circles are in the screenshots below. Once you find your error message (hint: not "exit code"), you can either:
+
+* Take the error message from your Xcode screen and use LoopDoc's search function to enter in some of that phrase to bring up the appropriate solution topic, or
+
+* Take the error message from your Xcode screen and read through EACH OF THE TOPICS BELOW. Check each of the red circles to see if you have a match. Kind of like a matching puzzle.
+
+For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with simply "invalid active". You will get a couple links and one is the Command Line Tools fix for that error message. Click on the link and you'll find your solution.
+
+</p>
 <p align="center">
-<img src="../img/master-done.png" width="750">
+<img src="../img/search-errors.png" width="650">
 </p>
 
-<font color="red">**Red error alerts** </font> will have to be resolved before you can successfully build Loop app.  The most common cause of red alerts comes from being out of sync between the various parts of Apple's infrastructure (iOS, Xcode, Swift, watchOS, macOS) that are frequently updated.  For every update to iOS/Xcode, the volunteer Loop developers have to make changes to the underlying source code.  This takes time...so when Apple updates are pushed out, sometimes there may be a short period of time until the code is updated to match.  If you encounter a build error that is not listed below, please get on the Facebook Looped group or Gitter to let us know.
-
-!!!info ""
-    Before looking at the solutions below...please double click on your red error message to bring up additional information about your particular error message.  Merely seeing the title of the error code on the left column of Xcode is not necessarily enough information to discern what error is causing your build to fail.  And therefore, you need to look at the detailed message and find the matching error message in the sections below.
-    
 ## Build Failed in frameworks
 
 If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open Terminal app.  You will use the command `cd ~/downloads/loop-master && carthage update`.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name. 
@@ -36,10 +80,6 @@ If your carthage update fails, try opening Terminal app and running these comman
 `rm -rf ~/Library/Caches/org.carthage.CarthageKit` and `rm -rf ~/Library/Developer/Xcode/DerivedData`
 
 After running those commands, retry the `cd ~/downloads/loop-master && carthage update` (remembering to update the name of your Loop download folder, as needed).
-
-IF there are still red errors and you post for help in Looped group or Gitter...**TAKE A SCREENSHOT of the whole Xcode screen after you double click on the red error message** (command-shift-space bar-4 will make a screenshot tool active and the screenshot will save to your desktop).  Or even better, copy and paste the "xcodebuild output can be found at..." log file that is listed in yellow/orange color in the carthage update screen.  You can get to that log file by copy and pasting the file path (in yellow) into your Finder >> Go >> Go to Folder.. Once you open that log file, you can scroll to the bottom of the file and there will be detailed information about why carthage update failed.
-
-Please do not post without being able to provide detailed information.  It is very difficult to help troubleshoot based on vague "I have errors" information.
 
 ## Siri Capabilities
 
@@ -79,8 +119,8 @@ For double measure, you can verify that the iOS development certificates are all
 <img src="../img/verify_cert.png" width="650">
 </p>
 
-## Outdated Xcode
-Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10, you will receive the following errors when you try to build:
+## Not using Xcode 10.1
+Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10.1, you will receive the following errors when you try to build:
 
 <p align="center">
 <img src="../img/xcode10-update.png" width="750">
@@ -88,7 +128,7 @@ Error message: The error message may change over time and Xcode versions...curre
 
 Solution: You will need to go to your computer's App Store and install the Xcode app update.
 
-## Command Line Tools
+## Missing Command Line Tools
 
 Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandLineTools)</u>**" or "**<u>unable to find utility "xcodebuild", not a developer tool or in PATH</u>**"
 
@@ -119,7 +159,7 @@ Error message: "**<u>errSecInternalComponent,  Command CodeSign failed with a no
 </p>
 
 
-Solution:  This error message has been more frequent lately, but I believe it is due to inadvertently saying "no" to allowing Keychain Access. Regardless the solution is as follows:
+Solution:  This error message is likely due to inadvertently saying "no" to allowing Keychain Access or changing your computer or AppleID password. Regardless, the solution is as follows:
 
 1. Close Xcode
 2. Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)
