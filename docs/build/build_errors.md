@@ -142,7 +142,7 @@ Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandL
 <img src="../img/command-line-error-2.jpg" width="550">
 </p>
 
-Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 10" in the dropdown menu for Command Line Tools.
+Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 10.1" in the dropdown menu for Command Line Tools.
 
 </p>
 <p align="center">
