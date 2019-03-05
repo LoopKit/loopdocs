@@ -15,7 +15,7 @@ If you already had a previous installation of Xcode, you can just check your App
 Once you have Xcode downloaded, open it from your Applications folder.  There may be a short delay as Xcode installs new Command Line Tools that the app uses. Don't close that window out, let it finish. Once Xcode is open and ready, we will start with adding your new developer account to Xcode.
 
 !!!info ""
-    IMPORTANT NOTES: Do not stop the installation of Command Line Tools, that is an important installation for Xcode to work properly.  When the installation is done, please check that your Command Line Tools installed correctly by opening your Xcode preferences and checking the Locations tab to make sure you have Xcode 10 selected.
+    IMPORTANT NOTES: Do not stop the installation of Command Line Tools, that is an important installation for Xcode to work properly.  When the installation is done, please check that your Command Line Tools installed correctly by opening your Xcode preferences and checking the Locations tab to make sure you have Xcode 10.1 selected.
     <p align="center">
     <img src="../img/command-line-error-3.png" width="550">
     </p>
