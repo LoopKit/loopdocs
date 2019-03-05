@@ -10,7 +10,7 @@ Your Loop won’t have much showing initially until we get some basic settings i
 
 !!! warning "Medtronic Users: MUST DO"
     Before you begin the rest of the setup process, go to your Medtronic pump menu and:</br></br>
-    1. Turn off Patterns under the basal menu settings. </br></br>2. Make sure your basal rate schedule is up-to-date and accurate.</br></br>3. Set your pump's `Temp Basal Type` to `Absolute (U/hr)`. Do NOT use percentage. Your Loop will not run unless your temp basal type is set to units/hour.</br></br>4. Make sure your maximum basal rate and maximum bolus (those are particular settings in the pump) are reasonably set for your particular needs. For new Loop users, a maximum basal rate equal to approximately 2-4 times your highest scheduled basal rate is a good starting point as you learn Loop and dial in your other settings. You can adjust as your comfort and use of Loop develop.</br></br>
+    1. Turn off Patterns under the basal menu settings. </br></br>2. Make sure your basal rate schedule is up-to-date and accurate.</br></br>3. Set your pump's `Temp Basal Type` to `Insulin Rate (U/hr)`. Do NOT use percentage. Your Loop will not run unless your temp basal type is set to units/hour.</br></br>4. Make sure your maximum basal rate and maximum bolus (those are particular settings in the pump) are reasonably set for your particular needs. For new Loop users, a maximum basal rate equal to approximately 2-4 times your highest scheduled basal rate is a good starting point as you learn Loop and dial in your other settings. You can adjust as your comfort and use of Loop develop.</br></br>
 
 ## Add Pump
 

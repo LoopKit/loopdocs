@@ -5,28 +5,21 @@ When you are initially starting the Loop app, the Loop will be colored grey.  Wa
 ## Pump
 
 * Max basal rate in Loop app is no greater than max basal rate in pump settings
-* Temp basal type is set to unit/hour
-* Remote devices is set to on and an ID is entered
-
+* Temp basal type in the pump's basal menu is set to "Insulin Rate (U/hr)" and not "Percent of Basal"
 
 ## CGM
 
-* Share app installed on the looping iPhone and open
+* Dexcom app installed on the looping iPhone and open
 * CGM getting current values without interruption
 * Loop app has a CGM value displayed in the top bar of the main display
 
 ## RileyLink
 
 * RL is charged (it does not ship completely charged)
-* RL battery needs to be securely plugged in, [check those connections](/troubleshooting/rileylink.md#lipo-battery)
-* Use the RL's **Tune Radio Frequency** option to make sure the pump-RileyLink are talking
-* Use the RL's **Change Time** option to make sure the pump time matches the Loop time
-* Use the RL's **Mysentry Pair** option if you are using a x23 or x54 pump model
+* RL battery needs to be securely plugged in, [check those connections](https://loopkit.github.io/loopdocs/setup/requirements/rileylink/#assembling-rl)
 
 ## Loop Settings
 
-* Correct Region selected for your pump
-* Pump's serial number entered correctly
 * Correct CGM system has been selected in Loop settings
 * Insulin curve has been selected
 * Suspend Threshold has been entered

@@ -34,6 +34,10 @@ No, this is purely iPhone or iPod touch.
 
 No. You do not need any experience in code or computers to build Loop. If you have already owned an Apple computer and iPhone, you already have the required level of experience. Beyond that, simply read the directions slowly and diligently...all the information you will need are in these documents.
 
+## Is there a cheat sheet for school nurse to use?
+
+Sure, you can give this one a try. [School nurse's cheat sheet download](https://github.com/Kdisimone/images/raw/master/school_nurse.pdf)
+
 ## How long does it take to build Loop?
 
 The answer is varied, but a few hours from start to finish, depending on where you are starting.

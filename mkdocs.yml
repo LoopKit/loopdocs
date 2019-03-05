@@ -9,6 +9,7 @@ markdown_extensions:
         permalink: ⌁
 
 pages:
+- Home: 'index.md'
 - FAQs:
     - 'General Loop FAQs': 'faqs/FAQs.md'
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
