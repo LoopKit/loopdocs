@@ -6,7 +6,7 @@ There are lots of new users coming to Loop trying to find out information about 
 
 Loop has both hardware and software requirements.  In general, to use Loop you need to have seven components.
 
-- [Compatible insulin pump](https://loopkit.github.io/loopdocs/setup/requirements/mdt-pump/)
+- Compatible insulin pump: [Medtronic](https://loopkit.github.io/loopdocs/setup/requirements/mdt-pump/) or [Omnipod](https://loopkit.github.io/loopdocs/setup/requirements/omnipod-pump/)
 - [Compatible CGM](https://loopkit.github.io/loopdocs/setup/requirements/cgm/)
 - [RileyLink](https://loopkit.github.io/loopdocs/setup/requirements/rileylink/)
 - [Compatible iPhone/iPod Touch](https://loopkit.github.io/loopdocs/setup/requirements/iphone/)

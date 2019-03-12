@@ -18,7 +18,9 @@ pages:
     - 'Safety Tips': 'faqs/safety-faqs.md'
     - 'Glossary': 'faqs/glossary.md'
 - Gear:
-    - 'Medtronic': 'setup/requirements/mdt-pump.md'
+    - 'Insulin Pump':
+        - 'Medtronic': 'setup/requirements/mdt-pump.md'
+        - 'Omnipod': 'setup/requirements/omnipod-pump.md'
     - 'CGM': 'setup/requirements/cgm.md'
     - 'RileyLink': 'setup/requirements/rileylink.md'
     - 'Computer': 'setup/requirements/computer.md'
@@ -37,13 +39,17 @@ pages:
     - New iPhone: 'build/new-iphone.md'
     - Update Loop: 'build/update/updating.md'
     - New Version Info: 'build/update/new-version.md'
+- Set up App:
+    - 'Overview': 'operation/overview.md'
+    - 'Add Pump':
+        - 'Add Medtronic': 'operation/loop-settings/mdt-pump.md'
+        - 'Add Omnipod': 'operation/loop-settings/omnipod-pump.md'
+    - 'Add CGM': 'operation/loop-settings/cgm.md'
+    - 'Configurations': 'operation/loop-settings/configurations.md'
+    - 'Loop Services': 'operation/loop-settings/services.md'
+    - 'Loop Displays': 'operation/loop-settings/displays.md'
+    - 'RileyLink menu': 'operation/loop-settings/rileylink.md'
 - Operate:
-    - App setup:
-        - 'Loop Settings': 'operation/loop-settings/settings.md'
-        - 'Loop Services': 'operation/loop-settings/services.md'
-        - 'RileyLink menu': 'operation/loop-settings/rileylink_menu.md'
-        - 'Pump Setup': 'operation/loop-settings/pump.md'
-        - 'Loop Displays': 'operation/overview.md'
     - How to Use Loop App:
         - 'Carb Entries': 'operation/features/carbs.md'
         - 'Bolus': 'operation/features/bolus.md'

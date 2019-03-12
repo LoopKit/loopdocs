@@ -4,14 +4,18 @@ Now that all of your setup for the building blocks are done, now we can jump int
 
 ## Download Loop Code
 
-You’ll need to download the Loop code in order to build the app on your computer.  Click on ONE of the links below to download your Loop source code.  **We recommend Master branch be used to build your Loop.**
+You’ll need to download the Loop code in order to build the app on your computer.  Click on ONE of the links below to download your Loop source code.  Wondering which to choose? Read the blue box below **<u>ESPECIALLY IF YOU ARE AN OMNIPOD USER</u>**
+
 </br></br>
 <p align="center">
 [Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)</br></br>
 [Loop: Dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)
 </p></br>
 
-Master vs Dev?  What is the difference? The Loop code resides in [GitHub](https://github.com/LoopKit/Loop) within a repository.  A repository is kind of like a project's bookshelf, holding various books versions (aka branches) of a project.  The master branch is considered a stable version.  Any new features or options are first tested in a dev (short for "development") branch of the Loop.  New or inexperienced users should not build from the dev branch of Loop, as there is a greater likelihood of encountering bugs or glitches.  If you hear of "new features in dev", these are things that may be eventually merged into the master branch once any bugs are worked out.
+!!!info "MASTER VS DEV -- Which to choose?"
+    Master vs Dev?  What is the difference? The Loop code resides in a website called [GitHub](https://github.com/LoopKit/Loop). The various projects in GitHub use "repositories". A repository is kind of like a project's bookshelf, holding various books versions (aka branches) of a project. The master branch is considered a stable version of the project. Any new features or options are first tested in a dev (short for "development") branch of the Loop. If you hear of "new features in dev", these are things that may be eventually merged into the master branch once any bugs are worked out. New or inexperienced users should not build from the dev branch of Loop, as there is a greater likelihood of encountering bugs or glitches. 
+    
+    **Omnipod support in Loop is considered experimental and in-development. If you want to build a version of Loop that supports Omnipod, you will need to select the Dev branch download above.** Keep in mind, dev branch represents a greater likelihood of encountering bugs or glitches. As you encounter those, please check the docs first to see if that issue is already answered. If you think you truly are seeing strange behavior, report the bug to Loop's GitHub by [creating a "New Issue" here](https://github.com/loopkit/loop/issues). You can also look through the list of known issues already reported, as there is a chance your issue has already been seen by others.
 
 
 !!!info ""
@@ -143,11 +147,13 @@ There is SUPER valuable information contained in these documents that really nee
 * How to use override targets
 * What the difference is between insulin models
 
-Once your build is successful, please do the following:
+### Once your build is successful, DO NOT JUST GO ENTERING SETTINGS IN BY YOURSELF!
+
+Instead, work step-by-step to make sure you get through these pieces of helpful information:
 
 * Read the [Jaeb Observational Study page](https://loopkit.github.io/loopdocs/build/jaeb-study/)
 * Read the [Health Permissions page](https://loopkit.github.io/loopdocs/build/health/) to make sure you get your Loop data recording properly
-* Use the all the pages listed under the Operate tab of this site to read up; starting with following the directions at [App Setup/Loop Settings](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/) as you input your initial Loop settings and get started. Keep that page open and follow its step-by-step explanation of the settings.
+* Start with following the step-by-step directions for setting up your Loop correctly. THIS IS IMPORTANT! There are safety considerations in how you setup your app...so please follow along with the setup guides. [Loop App Overview and Setup Pages](https://loopkit.github.io/loopdocs/operation/overview/)</br></br>
 
 And longer term:
 
@@ -160,6 +166,9 @@ Many of the greatest challenges in starting Loop can be helped by reading the pa
 ## Build Succeeded
 
 If the build is successful, your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. Allow Loop to send you notifications. In the next screen that follows that, click on the `Turn All Categories On` line and then click `Allow` in the upper right corner.</br></br>
+
+And now that you're built, I'm going to remind you again to use the guides to help you setup and understand your Loop app:
+[Loop App Overview and Setup Pages](https://loopkit.github.io/loopdocs/operation/overview/)</br></br>
 
 !!! info "First time builders"
     If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below.  Don't worry, Loop installed on the phone but needs you to do an extra step on the phone before Loop app can open.  Just follow the directions shown in the warning for what you need to do on your iPhone, and the issue resolves very quickly.  Click ok and you can safely disconnect your iPhone from the computer.  (If you don’t get a warning and the Loop app installs but does not open, you may still need to go to Settings->General->Device Management and enable trust for your Developer Account.)
