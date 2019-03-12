@@ -1,9 +1,10 @@
 # Insulet Omnipods - Eros
 
-Through the work of incredible people, Insulet's Omnipod (Eros) system is now Loop compatible. 
+!!!warning "Reminder and Disclaimer"
+    Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read the documents and familiarize yourself with Loop before using. 
 
 !!!info "Loop with Omnipod is still considered 'in-testing'"
-    Despite your excitement that Loop's code for Omnipod use has been released publicly, please consider the following information. This is considered an experimental feature branch. People using an experimental feature branch should expect issues and be willing to participate in reporting and capturing any observed issues. The branch will be likely updated at a more frequent rate than a stable branch would be to push bug fixes. Therefore, testers should also be willing and able to regularly update their Loop app to capture those updates. Testers should ensure they have adequate supply of replacement pods in case of an increase in unexpected pod failure due to Loop testing. 
+    Loop with Omnipod considered an experimental feature branch. People using an experimental feature branch should expect issues and be willing to participate in reporting and capturing any observed issues. The branch will be likely updated at a more frequent rate than a stable branch would be to push bug fixes. Therefore, testers should also be willing and able to regularly update their Loop app to capture those updates. Testers should ensure they have adequate supply of replacement pods in case of an increase in unexpected pod failure due to Loop testing. 
 
 ## Eros
 

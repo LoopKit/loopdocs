@@ -17,6 +17,16 @@ Summary of eventual systems:
 
 No, pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your Loop app on your iPhone. When Loop is ready for Omnipod, it will not use a PDM...and in fact you cannot use a PDM for a pod that has been activated with Loop. That doesn't mean you should get rid of your PDM. You should still keep it around in case your lose your phone or lose your RileyLink. You'd want to swap out to a new pod and pair it with the PDM if you lose a critical part of your Omnipod Loop gear.
 
+## Can I cancel a temp basal Loop sets? How about a bolus?
+
+Yes, you will be able to cancel a temp basal or a bolus in progress. There is a "suspend delivery" command that is easy to access by tapping on the [pod age icon in your Heads Up Display, upper right area](https://loopkit.github.io/loopdocs/operation/loop-settings/displays/#pod-age-omnipod-users). Suspending insulin delivery will cancel any running temp basal or bolus in progress. The suspend command will run indefinitely. A banner notification will be displayed on the Loop main screen while insulin delivery is suspended.
+
+<p align="center">
+<img src="../img/pump-suspend-banner.png" width="300">
+</p>
+
+Insulin will remain suspended until the user either clicks on the "Tap to Resume" command from Loop's main screen or the "resume delivery" command accessed by tapping the pod age icon. Once insulin delivery is resumed, you will be resumed at your scheduled basal rate. If a bolus was interrupted, the bolus will not resume. If you don't turn on open loop mode, within 5 minutes of resuming insulin delivery, your Loop should resume automatic temp basal adjustments.
+
 ## What if I lose my phone or RileyLink?
 For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone or RileyLink however, you will not be able to affect any pod use; no basal change, suspend, or bolus. You will need to remove the Loop pod and put on a new pod paired with your PDM until you can get a new RileyLink and/or phone. If you only have lost the RileyLink (not the phone) and have a backup RileyLink, you can simply connect to the new RileyLink on the same Loop app and it will work with the existing pod session.
 
