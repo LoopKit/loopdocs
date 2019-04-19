@@ -7,7 +7,7 @@ The most recent version of iOS is 12.1.4
 
 The most recent version of macOS is 10.14.3
 
-The most recent version of Xcode is 10.1
+The most recent version of Xcode is 10.2
 
 The most recent version of Loop is 1.9.4
 
