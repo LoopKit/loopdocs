@@ -39,4 +39,4 @@ Users who are using Spike app to access other CGM types (or to avoid using the D
 
 ## Next Step: Configuration
 
-Now that you have added your CGM source, we need to complete the configuration and settings in your Loop. Please head over to the [Configuration page](https://loopkit.github.io/loopdocs/operation/loop-settings/configuration) for guidance with this important part of Loop's setup.
+Now that you have added your CGM source, we need to complete the configuration and settings in your Loop. Please head over to the [Configuration page](https://loopkit.github.io/loopdocs/operation/loop-settings/configurations/) for guidance with this important part of Loop's setup.

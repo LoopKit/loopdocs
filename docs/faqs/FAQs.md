@@ -72,6 +72,10 @@ The short answer is (1) when you first build and (2) once per year minimum after
 
 The longer answer is that Loop code is updated periodically to include new features and bug fixes.  When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app upate yourself with [update instructions here](https://loopkit.github.io/loopdocs/setup/update/updating/). In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.
 
+## Can I use a VirtualMachine to build?
+
+Yes, you can. These documents will not provide instructions on how to do that however. You'll need to figure that part out on your own.
+
 ## Will I need to build a new Loop if I switch between Medtronic and Omnipod regularly?
 
 No. Loop will have the option to move between different pump types from within the same Loop app.
@@ -88,6 +92,8 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 There is a [whole page about MDT pumps](https://loopkit.github.io/loopdocs/setup/requirements/mdt-pump/); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Go check out that page for more info.
 
+With the addition of omnipod support, you can also now use omnipod suppliers however you'd normally source them.
+
 ## Can I pay someone else to do this?
 
 NOOOO...you really need to figure this out yourself. This is an automated insulin delivery system and you really need to know how to build and operate this yourself.
@@ -96,7 +102,7 @@ NOOOO...you really need to figure this out yourself. This is an automated insuli
 
 For Medtronic users, you simply go back to old school pump use until you get a new RileyLink. You can either let your temp basal finish by itself (30 minutes or less) or cancel the temp basal on the pump's menu. For bolusing, you'd go back to using the pump's blus commands. When you get a RileyLink (either finding your old one or getting your backup RileyLink out) and Loop running again, you'll want to do one thing. Enter in any carbs to Loop that you may have eaten in the recent past that could still be affecting blood glucose. While Loop will read whatever insulin deliveries had happened while the RileyLink was missing, it will not read any carbs you entered into the pump...so make sure to add those to Loop and backdate them to the time they were eaten. That will help make the transition smoother to Looping again.
 
-For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a RileyLink, you will not be able to affect any pod use; no basal changes, suspends, or boluses. If you only have a backup RileyLink, you can simply connect to the new RileyLink on the same Loop app and it will work with the existing pod session. If you don't have a backup RileyLink, you'll have to remove the pod and start a new pod paired with your PDM until you get a new RileyLink.
+For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a RileyLink, you will not be able to affect any pod use; no basal changes, suspends, or boluses. If you have a backup RileyLink, you can simply connect to the new RileyLink on the same Loop app and it will work with the existing pod session. If you don't have a backup RileyLink, you'll have to remove the pod and start a new pod paired with your PDM until you get a new RileyLink.
 
 ## What if I lose or get a new iPhone?
 

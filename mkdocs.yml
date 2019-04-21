@@ -15,6 +15,7 @@ pages:
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
     - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
+    - 'CGM FAQs': 'faqs/cgm-faqs.md'
     - 'Safety Tips': 'faqs/safety-faqs.md'
     - 'Glossary': 'faqs/glossary.md'
 - Gear:
@@ -34,7 +35,7 @@ pages:
     - Build Loop: 'build/build-loop.md'
     - Build Errors: 'build/build_errors.md'
     - Health Permissions: 'build/health.md'
-    - Jaeb Study: 'build/jaeb-study.md'
+    - Loop Study: 'build/jaeb-study.md'
     - Code Customization: 'build/code_customization.md'
     - New iPhone: 'build/new-iphone.md'
     - Update Loop: 'build/update/updating.md'
