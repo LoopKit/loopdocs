@@ -593,35 +593,46 @@
         
             <li><a href="#install-homebrew">Install Homebrew</a></li>
         
+            <li><a href="#next-step-setup-apple-developer-account">Next Step: Setup Apple Developer Account</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
 <h1 id="set-up-your-apple-computer">Set up your Apple Computer<a class="headerlink" href="#set-up-your-apple-computer" title="Permanent link">⌁</a></h1>
-<p>Any Apple computer will work so long as it is running a compatible macOS version and you have administrative rights to be able to install new programs on the computer.</p>
+<p>Any Apple computer will work so long as it is running a compatible macOS version, you have administrative rights to be able to install new programs on the computer, and a connection to the internet.</p>
 <h2 id="verify-macos">Verify macOS<a class="headerlink" href="#verify-macos" title="Permanent link">⌁</a></h2>
-<p>You need to be running macOS 10.13.6 (High Sierra) or 10.14 (Mojave), so verify by clicking the apple logo in your computer display's upper left corner and selecting <code>About this Mac</code>.</p>
+<p><strong>You MUST use macOS 10.14.3 (Mojave) at a minimum, if:</strong></p>
+<ul>
+<li>You want to use omnipod or Loop-dev branches, and/or</li>
+<li>Your iPhone or iPod touch is using iOS 12.2 or newer</li>
+</ul>
+<p>(You can only use macOS 10.13.6 High Sierra if you are building with Loop master branch <u>and</u> have iOS 12 or 12.1. The next version of Loop will require Mojave at a minimum, so keep that in your planning for the future.)</p>
+<p>Verify by clicking the apple logo in your computer display's upper left corner and selecting <code>About this Mac</code>.</p>
 <p align="center">
-<img src="../img/macOS.png" width="450">
+<img src="../img/macosx.png" width="450">
 </p>
 
 <p>If your macOS is not the minimum version, click on the <code>Software Update</code> button and update.  If your computer is older than late 2009/2010 (depending on computer model), you may not be able to update macOS sufficiently to use the most recent Xcode.  You can check the latest macOS compatibility <a href="https://www.apple.com/macos/how-to-upgrade/#hardware-requirements">here</a>.</p>
 <h2 id="install-homebrew">Install Homebrew<a class="headerlink" href="#install-homebrew" title="Permanent link">⌁</a></h2>
-<p>Homebrew is a program that will allow us to install the needed packages to build Loop.  Open the Terminal application on your computer.  It is located in the Applications folder, and then look in the Utilities subfolder for the Terminal application.</p>
+<p>Homebrew is a program that will allow us to install the needed packages to build Loop. Open the Terminal application on your computer. It is located in the Applications folder, and then look in the Utilities subfolder for the Terminal application.</p>
 <p align="center">
 <img src="../img/terminal.png" width="550">
 </p>
 
-<p>Terminal app is very plain looking when you open it.  That is normal. Copy and paste the line below into Terminal prompt.  Press return after you paste it in.</p>
+<p>Terminal app is very plain looking when you open it. That is normal. Copy and paste the line below into Terminal prompt.  Press return after you paste it in.</p>
 <p><code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></p>
-<p>There will be a prompt asking if you want to continue.  Press return to continue, then it may prompt for your password.  Enter your computer user password (don't worry, Terminal app doesn't show keystrokes when you enter passwords, but it is still reading your typing).  </p>
-<p>Wait while the script does its thing...you’ll see info scroll by and then it will pause for awhile.  Eventually, it will be done and you’ll see something that says “Installation successful” and you’ll have a ready Terminal prompt again.</p>
+<p>There will be a prompt asking if you want to continue.  Press return to continue, then it will prompt for your password.  </p>
+<p><strong><u><font color = "red">Don't freak out that you can't see your password while you type. That is normal. Terminal app doesn't show keystrokes when you enter passwords, but it is still recording your password entry. If you think you messed up because you were confused, press the delete key a bunch of times and then start fresh with the password entry.</font></u></strong>  </p>
+<p>Wait while the script does its thing...you’ll see info scroll by and then it will pause for awhile. Eventually, it will be done and you’ll see something that says “Installation successful” and you’ll have a ready Terminal prompt again.</br></br></p>
 <p align="center">
 <img src="../img/carthage.jpg" width="450">
 </p>
 
-<p>You can close the Terminal application now.  You’re done with it.  You do not need to do these steps again for any subsequent Loop builds. This is one of those "just do it once" installations.</p>
+<p></br></p>
+<p>You can close the Terminal application now.  You’re done with it. You do not need to do these steps again for any subsequent Loop builds. This is one of those "just do it once" installations.</p>
+<h2 id="next-step-setup-apple-developer-account">Next Step: Setup Apple Developer Account<a class="headerlink" href="#next-step-setup-apple-developer-account" title="Permanent link">⌁</a></h2>
 <p>Now you are ready to move onto the next steps to <a href="https://loopkit.github.io/loopdocs/build/build-developer/">Setup Apple Developer Account</a>.</p></div>
         </div>
 
