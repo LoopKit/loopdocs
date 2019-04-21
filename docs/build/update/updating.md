@@ -19,23 +19,32 @@ You will have to rebuild your Loop app at a minimum once every 12 months. The ap
 
 Under ordinary circumstances, you do not *have to* update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability.
 
-## Step 1: Update OS and Xcode
+## Step 1: Update macOS and Xcode
 
-<u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u> 
+!!!info "Omnipod and iOS 12.2 users"
+    If you are going to use either Omnipod-testing branch, Dev branch, or iOS 12.2, you will need to update to macOS 10.14.3 (Mojave) at a minimum. After you update your macOS, make sure you grab updated Xcode of 10.2 at a minimum. **Both those updates are required.**
 
-Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app. You need to check the following for updates to prevent build conflicts during your update of Loop:
+!!!info "Update to Homebrew and Carthage"
+    For people who have already built Loop before, there's an extra step needed for your first update since the recent round of updates. We need you to update Homebrew and Carthage, but this is quick and easy. Please open Terminal app and copy & paste the following `brew update && brew upgrade carthage`. When the update finishes, you should have carthage 0.33.0 installed. All done! 
 
-* update your macOS by clicking on your apple icon in the computer's upper left corner and then selecting "Software Update" button. If your macOS needs an update, this will lead you there. Do this step first before checking for Xcode udpates in the next update step. The macOS needs to be updated to the most current in some situations in order to support the most recent Xcode.  You need macOS High Sierra or Mojave at a minimum.
+Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app. <u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u> 
 
-* update your Xcode by opening the App Store application in your computer and selecting the "Updates" from the left-hand column. If an Xcode update is available, install the update before moving on with Loop updates.  You need Xcode 10.1 at a minimum.
+* update your macOS by clicking on your apple icon in the computer's upper left corner and then selecting "Software Update" button. If your macOS needs an update, this will lead you there. **You MUST use macOS 10.14.3 (Mojave) at a minimum, if:**
 
-* update your iPhone's iOS. To check if an iOS update is available, click on your iPhone's Settings, General, Software Update and then click on "install update" button if one is available. You need iOS 11.1 at a minimum, but iOS 12 or later is recommended.
+    * You want to use omnipod or Loop-dev branches, and/or
+    * Your iPhone or iPod touch is using iOS 12.2 or newer</br></br>
+
+    (You can only use macOS 10.13.6 High Sierra if you are building with Loop master branch <u>and</u> have iOS 12 or 12.1. The next version of Loop will require Mojave at a minimum, so keep that in your planning for the future.)
+
+* update your Xcode by opening the App Store application in your computer and selecting the "Updates" from the left-hand column. If an Xcode update is available, install the update before moving on with Loop updates.  You need Xcode 10.2 at a minimum if you are building with Omnipod-testing, dev, or iOS 12.2.
+
+* update your iPhone's iOS. To check if an iOS update is available, click on your iPhone's Settings, General, Software Update and then click on "install update" button if one is available. You need iOS 12 at a minimum.
 
 * update your Apple Watch's watchOS. To check if a watchOS update is available, click on your Watch App in your paired iPhone and then go to Settings, General, Software Update and then click on "install update" if one is available. You need watchOS 4.1 at a minimum, but watchOS 5 or later is recommended.
 
 ## Step 2: Download Updated Loop Code
 
-After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on **ONE** of the links below to download an updated versions of Loop code (most people will use Master, see note below for explanation):
+After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on **ONE** of the links below to download an updated versions of Loop code:
 </br></br>
 <p align="center">
 [Loop: Master branch source code](https://github.com/LoopKit/Loop/archive/master.zip)
@@ -44,11 +53,13 @@ After you've finished the updates to your devices listed above, you can move ont
 **OR**</br></br>
 [Loop: Dev branch source code](https://github.com/LoopKit/Loop/archive/dev.zip)
 </p></br>
+<p align="center">
+**OR**</br></br>
+[Loop: Omnipod-testing branch source code](https://github.com/LoopKit/Loop/archive/omnipod-testing.zip)
+</p></br>
 
-FYI: The Loop source code resides in [GitHub](https://github.com/LoopKit/Loop) within a repository.  A repository is kind of like a project's bookshelf, holding various books (aka branches) of a project.  The master branch is considered a stable version.  Any new features or options are first tested in a dev (short for "development") branch of the Loop.  New or inexperienced users should not build from the dev branch of Loop.  So if you hear of "new features in dev", these are things that may be eventually merged into the master branch once any bugs are worked out.
-
-!!!info ""
-    IMPORTANT NOTES: Best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
+!!!info "Reminder"
+    Best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
     <p align="center">
     <img src="../img/icloud-drive.png" width="550">
     </p></br>

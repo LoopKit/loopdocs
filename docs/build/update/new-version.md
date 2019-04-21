@@ -1,6 +1,8 @@
-# Loop v1.9.4 Features
+# Loop v1.9.4/1.9.5 Features
 
-As always, there is a [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.9.4) with release notes about the features and changes since the previous Loop release.  This page provides a bit more in-depth information and practical tips about the new release. 
+As always, there is a [GitHub page](https://github.com/LoopKit/Loop/releases/tag/v1.9.5) with release notes about the features and changes since the previous Loop release.  This page provides a bit more in-depth information and practical tips about the new release. 
+
+Loop v1.9.5  is only different from Loop v1.9.4 to allow for building on both Xcode 10.1 and 10.2 and minor German touch-ups.
 
 ## Apple Watch Loop App BG Chart
 

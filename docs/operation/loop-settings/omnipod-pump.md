@@ -84,9 +84,9 @@ There are two commands that you can issue through Loop to the pod.
 </p></br>
 
 
-* Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your pod. However, if you are going to be away from home for longer periods of time, you will want to udpate your pod's basal schedule to match local time by selecting the `Change Time Zone` command when convenient.
+* Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your pod. However, if you are going to be away from home for longer periods of time, you will want to udpate your pod's basal schedule to match local time by selecting the `Change Time Zone` command when convenient. Using this command will move your basal schedule on your current pod to the new time. If you start a new pod session the new time zone will be used. Please wait until you see `Succeeded` appear on the page to ensure the command has successfully been received by the pod.
 
-* Test Command: IGNORE THIS LINE. This line is a residual command from when we were in early testing of omnipod Loop. It will eventually be removed from this screen.
+* Test Command: This command is used only by the developers to test Omnipod commands in Loop. It currently issues a "get status" command and can be used to update your screen details if needed or force a fault error to generate in the issue report after getting a screaming pod.
 
 #### Status
 
