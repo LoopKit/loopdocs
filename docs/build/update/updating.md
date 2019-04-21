@@ -55,7 +55,7 @@ After you've finished the updates to your devices listed above, you can move ont
 </p></br>
 <p align="center">
 **OR**</br></br>
-[Loop: Omnipod-testing branch source code](https://github.com/LoopKit/Loop/archive/omnipod-testing.zip)
+[Loop: Omnipod-testing branch source code](https://github.com/LoopKit/Loop/archive/omnipod-testing.zip) <---not live yet, don't freak out
 </p></br>
 
 !!!info "Reminder"
