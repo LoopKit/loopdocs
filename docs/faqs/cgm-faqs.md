@@ -4,7 +4,7 @@
 
 Loop works Dexcom G4 with share, G5, G6, Share and the Medtronic CGM systems compatible with Looping pumps.
 
-Read the details [here](https://loopkit.github.io/loopdocs/setup/requirements/cgm/) for details.
+Read the details [here](https://loopkit.github.io/loopdocs/setup/requirements/cgm/).
 
 ## Can I use Libre sensors with a reader like Miao Miao?
 

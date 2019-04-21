@@ -35,7 +35,7 @@ pages:
     - Build Loop: 'build/build-loop.md'
     - Build Errors: 'build/build_errors.md'
     - Health Permissions: 'build/health.md'
-    - Jaeb Study: 'build/jaeb-study.md'
+    - Loop Study: 'build/jaeb-study.md'
     - Code Customization: 'build/code_customization.md'
     - New iPhone: 'build/new-iphone.md'
     - Update Loop: 'build/update/updating.md'
