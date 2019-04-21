@@ -77,6 +77,7 @@ There are two commands that you can issue through Loop to the pod.
 * Replace Pod: This command should be used to deactivate a pod prior to replacing it.
 
 #### Configuration
+* Expiration Reminder:
 
 * Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your pod. However, if you are going to be away from home for longer periods of time, you will want to udpate your pod's basal schedule to match local time by selecting the `Change Time Zone` command when convenient.
 
