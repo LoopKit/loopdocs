@@ -8,6 +8,8 @@
 
 ## Eros
 
+!!!info "Loop will work with these pods"
+
 Eros pods were launched in 2013 and continue to be sold by Insulet. As far as we know, there have been no plans or timelines announced for the discontinuation of Eros pods for existing customers. Insulet doesn't specifically call these "Eros" anymore, they just use the term "omnipod system". For clarity, from [Insulet's webpage](https://www.myomnipod.com/about):
 
 Eros system has that PDM we all recognize from the last several years.
@@ -17,6 +19,8 @@ Eros system has that PDM we all recognize from the last several years.
 </p></br>
 
 ## DASH
+
+!!!info "Loop will not work with DASH pods"
 
 Insulet has announced their DASH system as an eventual replacement for Eros/Omnipod System. There has already been a limited release of DASH to a select group of users, with a wider public rollout of DASH expected in 2019. The DASH system has the newer, slimmer locked-android PDM and built in BLE communications in pod. Loop will not be compatible with the DASH system.
 
