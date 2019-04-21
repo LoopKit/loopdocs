@@ -117,9 +117,24 @@
                     <ul class="dropdown-menu">
                     
                         
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Insulin Pump</a>
+    <ul class="dropdown-menu">
+        
+            
 <li >
     <a href="../../../setup/requirements/mdt-pump/">Medtronic</a>
 </li>
+
+        
+            
+<li >
+    <a href="../../../setup/requirements/omnipod-pump/">Omnipod</a>
+</li>
+
+        
+    </ul>
+  </li>
 
                     
                         
@@ -239,47 +254,74 @@
             
             
                 <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
+<li >
+    <a href="../../overview/">Overview</a>
+</li>
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">App setup</a>
+    <a tabindex="-1" href="">Add Pump</a>
     <ul class="dropdown-menu">
         
             
 <li >
-    <a href="../settings/">Loop Settings</a>
-</li>
-
-        
-            
-<li class="active">
-    <a href="./">Loop Services</a>
+    <a href="../mdt-pump/">Add Medtronic</a>
 </li>
 
         
             
 <li >
-    <a href="../rileylink_menu/">RileyLink menu</a>
-</li>
-
-        
-            
-<li >
-    <a href="../pump/">Pump Setup</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../overview/">Loop Displays</a>
+    <a href="../omnipod-pump/">Add Omnipod</a>
 </li>
 
         
     </ul>
   </li>
 
+                    
+                        
+<li >
+    <a href="../cgm/">Add CGM</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../configurations/">Configurations</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Loop Services</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../displays/">Loop Displays</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../rileylink/">RileyLink menu</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
                     
                         
   <li class="dropdown-submenu">
@@ -520,12 +562,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../settings/">
+                    <a rel="next" href="../configurations/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../rileylink_menu/">
+                    <a rel="prev" href="../displays/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -539,7 +581,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#configuring-loop-services">Configuring Loop - Services</a></li>
+        <li class="main active"><a href="#loop-services">Loop Services</a></li>
         
             <li><a href="#nightscout">Nightscout</a></li>
         
@@ -547,33 +589,40 @@
         
             <li><a href="#amplitude">Amplitude</a></li>
         
+            <li><a href="#next-step-loop-displays">Next Step: Loop Displays</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="configuring-loop-services">Configuring Loop - Services<a class="headerlink" href="#configuring-loop-services" title="Permanent link">⌁</a></h1>
-<div class="admonition info">
-<p>The services listed in this section are <strong>OPTIONAL</strong>.  You can choose to leave them empty and your Loop will still work.</p>
-</div>
+<h1 id="loop-services">Loop Services<a class="headerlink" href="#loop-services" title="Permanent link">⌁</a></h1>
+<p>At the bottom of your Loop settings screen is a section called "Services". <u>The services listed in this section are all <strong>OPTIONAL</strong>.  You can choose to leave them empty and your Loop will still work.</u></p>
+<p align="center">
+<img src="../img/services.jpeg" width="350">
+</p>
+
 <h2 id="nightscout">Nightscout<a class="headerlink" href="#nightscout" title="Permanent link">⌁</a></h2>
 <p>If you have an existing Nightscout site, add the Site URL and API Secret to have your Loop data transmitted to your Nightscout site. If you can’t remember your API Secret, it can be found under Settings, Reveal Config Vars for Heroku sites (or Application Settings, Connection Strings for Azure sites). </p>
 <p>The two most common errors in filling out this section are:</p>
 <ol>
-<li>Failure to use <code>https://</code>  in the site URL.  If you use <code>http://</code> (see how that doesn't have the "s" at the end?), you will get an error message about a App Transport Security policy.  Take a look at the example site in the field before you start filling in that line, if you want an example.</br></br></li>
-<li>Having a trailing slash on the end of the URL.  If you copy and paste from a web browser, make sure to delete the trailing slash on the URL entry.</li>
+<li>Failure to use <code>https://</code>  in the site URL.  If you use <code>http://</code> (see how that doesn't have the "s" at the end?), you will get an error message about a App Transport Security policy.  Take a look at the sample URL in the field before you start filling in that line, if you want an example to follow.</br></br></li>
+<li>Having a trailing slash on the end of the URL. If you copy and paste from a web browser, make sure to delete the trailing slash on the URL entry.</li>
 </ol>
 <h2 id="loggly">Loggly<a class="headerlink" href="#loggly" title="Permanent link">⌁</a></h2>
-<p><a href="https://loggly.com">Loggly</a> is a free logging service.  If you sign up for an account, you'll need to go under Source Setup and then Customer Tokens.  Copy and paste your customer token into your Loop App settings for Loggly.</p>
+<p><a href="https://loggly.com">Loggly</a> is a free logging service. If you sign up for an account, you'll need to go under Source Setup and then Customer Tokens. Copy and paste your customer token into your Loop App settings for Loggly.</p>
 <p align="center">
 <img src="../img/loggly.png" width="500">
 </p>
 
 <h2 id="amplitude">Amplitude<a class="headerlink" href="#amplitude" title="Permanent link">⌁</a></h2>
-<p><a href="https://amplitude.com">Amplitude</a> is a remote event monitoring service and can be used to quickly identify errors and events with Loop.  Amplitude stores the events and allows you to view those events as points in time.  To retrieve the details of the events you will need to look at corresponding mLab data entries to get a complete picture of the issues.  If you sign up for a free account with Amplitude, you will be given an API Key that you can enter here to have Loop integration setup.</p>
+<p><a href="https://amplitude.com">Amplitude</a> is a remote event monitoring service and can be used to quickly identify errors and events with Loop. Amplitude stores the events and allows you to view those events as points in time. To retrieve the details of the events you will need to look at corresponding mLab data entries to get a complete picture of the issues. If you sign up for a free account with Amplitude, you will be given an API Key that you can enter here to have Loop integration setup.</p>
 <p align="center">
 <img src="../img/amplitude.png" width="500">
-</p></div>
+</p>
+
+<h2 id="next-step-loop-displays">Next Step: Loop Displays<a class="headerlink" href="#next-step-loop-displays" title="Permanent link">⌁</a></h2>
+<p>Great job, almost finished! Now that you have completed your services, let's move onto understanding your <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/displays">Loop displays</a>. Understanding the Loop displays can be a valuable tool to understanding your Loop's actions, and also for troubleshooting, if you are having issues.</p></div>
         </div>
 
         <footer class="col-md-12">

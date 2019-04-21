@@ -117,9 +117,24 @@
                     <ul class="dropdown-menu">
                     
                         
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Insulin Pump</a>
+    <ul class="dropdown-menu">
+        
+            
 <li >
     <a href="../../setup/requirements/mdt-pump/">Medtronic</a>
 </li>
+
+        
+            
+<li >
+    <a href="../../setup/requirements/omnipod-pump/">Omnipod</a>
+</li>
+
+        
+    </ul>
+  </li>
 
                     
                         
@@ -239,47 +254,74 @@
             
             
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
+<li >
+    <a href="../../operation/overview/">Overview</a>
+</li>
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">App setup</a>
+    <a tabindex="-1" href="">Add Pump</a>
     <ul class="dropdown-menu">
         
             
 <li >
-    <a href="../../operation/loop-settings/settings/">Loop Settings</a>
+    <a href="../../operation/loop-settings/mdt-pump/">Add Medtronic</a>
 </li>
 
         
             
 <li >
-    <a href="../../operation/loop-settings/services/">Loop Services</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/loop-settings/rileylink_menu/">RileyLink menu</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/loop-settings/pump/">Pump Setup</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/overview/">Loop Displays</a>
+    <a href="../../operation/loop-settings/omnipod-pump/">Add Omnipod</a>
 </li>
 
         
     </ul>
   </li>
 
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/cgm/">Add CGM</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/configurations/">Configurations</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/services/">Loop Services</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/displays/">Loop Displays</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/rileylink/">RileyLink menu</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
                     
                         
   <li class="dropdown-submenu">
@@ -569,13 +611,17 @@
 <h1 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Permanent link">⌁</a></h1>
 <p>Now that all of your setup for the building blocks are done, now we can jump into building Loop app.</p>
 <h2 id="download-loop-code">Download Loop Code<a class="headerlink" href="#download-loop-code" title="Permanent link">⌁</a></h2>
-<p>You’ll need to download the Loop code in order to build the app on your computer.  Click on ONE of the links below to download your Loop source code.  <strong>We recommend Master branch be used to build your Loop.</strong>
-</br></br>
+<p>You’ll need to download the Loop code in order to build the app on your computer.  Click on ONE of the links below to download your Loop source code.  Wondering which to choose? Read the blue box below <strong><u>ESPECIALLY IF YOU ARE AN OMNIPOD USER</u></strong></p>
+<p></br></br>
 <p align="center">
 <a href="https://github.com/LoopKit/Loop/archive/master.zip">Loop: Master branch</a></br></br>
 <a href="https://github.com/LoopKit/Loop/archive/dev.zip">Loop: Dev branch</a>
 </p></br></p>
-<p>Master vs Dev?  What is the difference? The Loop code resides in <a href="https://github.com/LoopKit/Loop">GitHub</a> within a repository.  A repository is kind of like a project's bookshelf, holding various books versions (aka branches) of a project.  The master branch is considered a stable version.  Any new features or options are first tested in a dev (short for "development") branch of the Loop.  New or inexperienced users should not build from the dev branch of Loop, as there is a greater likelihood of encountering bugs or glitches.  If you hear of "new features in dev", these are things that may be eventually merged into the master branch once any bugs are worked out.</p>
+<div class="admonition info">
+<p class="admonition-title">MASTER VS DEV -- Which to choose?</p>
+<p>Master vs Dev?  What is the difference? The Loop code resides in a website called <a href="https://github.com/LoopKit/Loop">GitHub</a>. The various projects in GitHub use "repositories". A repository is kind of like a project's bookshelf, holding various books versions (aka branches) of a project. The master branch is considered a stable version of the project. Any new features or options are first tested in a dev (short for "development") branch of the Loop. If you hear of "new features in dev", these are things that may be eventually merged into the master branch once any bugs are worked out. New or inexperienced users should not build from the dev branch of Loop, as there is a greater likelihood of encountering bugs or glitches. </p>
+<p><strong>Omnipod support in Loop is considered experimental and in-development. If you want to build a version of Loop that supports Omnipod, you will need to select the Dev branch download above.</strong> Keep in mind, dev branch represents a greater likelihood of encountering bugs or glitches. As you encounter those, please check the docs first to see if that issue is already answered. If you think you truly are seeing strange behavior, report the bug to Loop's GitHub by <a href="https://github.com/loopkit/loop/issues">creating a "New Issue" here</a>. You can also look through the list of known issues already reported, as there is a chance your issue has already been seen by others.</p>
+</div>
 <div class="admonition info">
 <p>IMPORTANT NOTES: Best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code in a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is <strong>not</strong> an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and <strong>NOT</strong> appropriate places to save your Loop download.
 <p align="center">
@@ -685,11 +731,12 @@ Depending on your browser and settings, your Loop download may or may not automa
 <li>How to use override targets</li>
 <li>What the difference is between insulin models</li>
 </ul>
-<p>Once your build is successful, please do the following:</p>
+<h3 id="once-your-build-is-successful-do-not-just-go-entering-settings-in-by-yourself">Once your build is successful, DO NOT JUST GO ENTERING SETTINGS IN BY YOURSELF!<a class="headerlink" href="#once-your-build-is-successful-do-not-just-go-entering-settings-in-by-yourself" title="Permanent link">⌁</a></h3>
+<p>Instead, work step-by-step to make sure you get through these pieces of helpful information:</p>
 <ul>
 <li>Read the <a href="https://loopkit.github.io/loopdocs/build/jaeb-study/">Jaeb Observational Study page</a></li>
 <li>Read the <a href="https://loopkit.github.io/loopdocs/build/health/">Health Permissions page</a> to make sure you get your Loop data recording properly</li>
-<li>Use the all the pages listed under the Operate tab of this site to read up; starting with following the directions at <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/settings/">App Setup/Loop Settings</a> as you input your initial Loop settings and get started. Keep that page open and follow its step-by-step explanation of the settings.</li>
+<li>Start with following the step-by-step directions for setting up your Loop correctly. THIS IS IMPORTANT! There are safety considerations in how you setup your app...so please follow along with the setup guides. <a href="https://loopkit.github.io/loopdocs/operation/overview/">Loop App Overview and Setup Pages</a></br></br></li>
 </ul>
 <p>And longer term:</p>
 <ul>
@@ -700,6 +747,8 @@ Depending on your browser and settings, your Loop download may or may not automa
 <p>Many of the greatest challenges in starting Loop can be helped by reading the pages in these docs and in Looptips.org. Please don't underestimate the help that a little reading can provide.</p>
 <h2 id="build-succeeded">Build Succeeded<a class="headerlink" href="#build-succeeded" title="Permanent link">⌁</a></h2>
 <p>If the build is successful, your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. Allow Loop to send you notifications. In the next screen that follows that, click on the <code>Turn All Categories On</code> line and then click <code>Allow</code> in the upper right corner.</br></br></p>
+<p>And now that you're built, I'm going to remind you again to use the guides to help you setup and understand your Loop app:
+<a href="https://loopkit.github.io/loopdocs/operation/overview/">Loop App Overview and Setup Pages</a></br></br></p>
 <div class="admonition info">
 <p class="admonition-title">First time builders</p>
 <p>If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below.  Don't worry, Loop installed on the phone but needs you to do an extra step on the phone before Loop app can open.  Just follow the directions shown in the warning for what you need to do on your iPhone, and the issue resolves very quickly.  Click ok and you can safely disconnect your iPhone from the computer.  (If you don’t get a warning and the Loop app installs but does not open, you may still need to go to Settings-&gt;General-&gt;Device Management and enable trust for your Developer Account.)

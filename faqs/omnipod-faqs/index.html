@@ -117,9 +117,24 @@
                     <ul class="dropdown-menu">
                     
                         
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Insulin Pump</a>
+    <ul class="dropdown-menu">
+        
+            
 <li >
     <a href="../../setup/requirements/mdt-pump/">Medtronic</a>
 </li>
+
+        
+            
+<li >
+    <a href="../../setup/requirements/omnipod-pump/">Omnipod</a>
+</li>
+
+        
+    </ul>
+  </li>
 
                     
                         
@@ -239,47 +254,74 @@
             
             
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
+<li >
+    <a href="../../operation/overview/">Overview</a>
+</li>
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">App setup</a>
+    <a tabindex="-1" href="">Add Pump</a>
     <ul class="dropdown-menu">
         
             
 <li >
-    <a href="../../operation/loop-settings/settings/">Loop Settings</a>
+    <a href="../../operation/loop-settings/mdt-pump/">Add Medtronic</a>
 </li>
 
         
             
 <li >
-    <a href="../../operation/loop-settings/services/">Loop Services</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/loop-settings/rileylink_menu/">RileyLink menu</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/loop-settings/pump/">Pump Setup</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/overview/">Loop Displays</a>
+    <a href="../../operation/loop-settings/omnipod-pump/">Add Omnipod</a>
 </li>
 
         
     </ul>
   </li>
 
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/cgm/">Add CGM</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/configurations/">Configurations</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/services/">Loop Services</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/displays/">Loop Displays</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/rileylink/">RileyLink menu</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
                     
                         
   <li class="dropdown-submenu">
@@ -547,6 +589,8 @@
         
             <li><a href="#do-i-still-need-a-pdm-with-omnipod-loop">Do I still need a PDM with Omnipod Loop?</a></li>
         
+            <li><a href="#can-i-cancel-a-temp-basal-loop-sets-how-about-a-bolus">Can I cancel a temp basal Loop sets? How about a bolus?</a></li>
+        
             <li><a href="#what-if-i-lose-my-phone-or-rileylink">What if I lose my phone or RileyLink?</a></li>
         
             <li><a href="#is-there-an-increase-in-pod-failures-on-loop">Is there an increase in pod failures on Loop?</a></li>
@@ -570,6 +614,13 @@
 </ul>
 <h2 id="do-i-still-need-a-pdm-with-omnipod-loop">Do I still need a PDM with Omnipod Loop?<a class="headerlink" href="#do-i-still-need-a-pdm-with-omnipod-loop" title="Permanent link">⌁</a></h2>
 <p>No, pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your Loop app on your iPhone. When Loop is ready for Omnipod, it will not use a PDM...and in fact you cannot use a PDM for a pod that has been activated with Loop. That doesn't mean you should get rid of your PDM. You should still keep it around in case your lose your phone or lose your RileyLink. You'd want to swap out to a new pod and pair it with the PDM if you lose a critical part of your Omnipod Loop gear.</p>
+<h2 id="can-i-cancel-a-temp-basal-loop-sets-how-about-a-bolus">Can I cancel a temp basal Loop sets? How about a bolus?<a class="headerlink" href="#can-i-cancel-a-temp-basal-loop-sets-how-about-a-bolus" title="Permanent link">⌁</a></h2>
+<p>Yes, you will be able to cancel a temp basal or a bolus in progress. There is a "suspend delivery" command that is easy to access by tapping on the <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/displays/#pod-age-omnipod-users">pod age icon in your Heads Up Display, upper right area</a>. Suspending insulin delivery will cancel any running temp basal or bolus in progress. The suspend command will run indefinitely. A banner notification will be displayed on the Loop main screen while insulin delivery is suspended.</p>
+<p align="center">
+<img src="../img/pump-suspend-banner.png" width="300">
+</p>
+
+<p>Insulin will remain suspended until the user either clicks on the "Tap to Resume" command from Loop's main screen or the "resume delivery" command accessed by tapping the pod age icon. Once insulin delivery is resumed, you will be resumed at your scheduled basal rate. If a bolus was interrupted, the bolus will not resume. If you don't turn on open loop mode, within 5 minutes of resuming insulin delivery, your Loop should resume automatic temp basal adjustments.</p>
 <h2 id="what-if-i-lose-my-phone-or-rileylink">What if I lose my phone or RileyLink?<a class="headerlink" href="#what-if-i-lose-my-phone-or-rileylink" title="Permanent link">⌁</a></h2>
 <p>For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone or RileyLink however, you will not be able to affect any pod use; no basal change, suspend, or bolus. You will need to remove the Loop pod and put on a new pod paired with your PDM until you can get a new RileyLink and/or phone. If you only have lost the RileyLink (not the phone) and have a backup RileyLink, you can simply connect to the new RileyLink on the same Loop app and it will work with the existing pod session.</p>
 <h2 id="is-there-an-increase-in-pod-failures-on-loop">Is there an increase in pod failures on Loop?<a class="headerlink" href="#is-there-an-increase-in-pod-failures-on-loop" title="Permanent link">⌁</a></h2>
