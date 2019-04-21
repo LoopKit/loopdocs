@@ -15,6 +15,7 @@ pages:
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
     - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
+    - 'CGM FAQs': 'faqs/cgm-faqs.md'
     - 'Safety Tips': 'faqs/safety-faqs.md'
     - 'Glossary': 'faqs/glossary.md'
 - Gear:
