@@ -20,7 +20,7 @@ Your Loop won’t have much showing initially until we get some basic settings i
 Let’s start by clicking on the Loop Settings button in the tool bar at the bottom of your Loop app. It looks like a little sprocket. On the settings screen that opens, click on `Add Pump` and select the **Medtronic pump** option that appears.
 
 <p align="center">
-<img src="../img/loop_settings.png" width="450">
+<img src="../img/loop_settings_add_pump.png" width="450">
 </p></br>
 
 ## Pump Pairing
