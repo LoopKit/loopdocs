@@ -4,13 +4,13 @@ There are lots of new users coming to Loop trying to find out information about 
 
 ## What is Loop?
 
-Click on the image below to watch an short [Introduction to Loop video](https://youtu.be/qw_u1lqboCs).
+Click on the image below to watch a short [Introduction to Loop video](https://youtu.be/qw_u1lqboCs).
 
 <a href="https://youtu.be/qw_u1lqboCs" target="_blank"><img src="../img/intro-to-loop.png"  title="Introduction to Loop video" /></a>
 
 ## What do I need to Loop?
 
-Loop has both hardware and software requirements.  In general, to use Loop you need to have seven components.
+Loop has both hardware and software requirements. In general, to use Loop you need to have seven components.
 
 - Compatible insulin pump: [Medtronic](https://loopkit.github.io/loopdocs/setup/requirements/mdt-pump/) or [Omnipod](https://loopkit.github.io/loopdocs/setup/requirements/omnipod-pump/)
 - [Compatible CGM](https://loopkit.github.io/loopdocs/setup/requirements/cgm/)
@@ -28,7 +28,7 @@ Loop has both hardware and software requirements.  In general, to use Loop you n
 
 No. Loop is not available for download. You must build your own Loop app.
 
-But don't worry, building your Loop app is actually quite easy and that's what these docs are all about. The harder part will be having the patience to read all the documents before you start.  New Loop users are so excited to get started that they skip reading all the great info that these docs contain.  So, as you begin the build...please include time to read the documents that follow what happens AFTER you successfully build your Loop app.
+But don't worry, building your Loop app is actually quite easy and that's what these docs are all about. The harder part will be having the patience to read all the documents before you start. New Loop users are so excited to get started that they skip reading all the great info that these docs contain. So, as you begin the build...please include time to read the documents that follow what happens AFTER you successfully build your Loop app.
 
 If you have any questions, these docs have a nice search feature in the dark blue top menu bar that may help you find your answers pretty quickly too.
 
