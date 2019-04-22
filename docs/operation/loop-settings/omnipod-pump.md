@@ -52,7 +52,6 @@ When you finish entering in these values, press the blue `Continue` button on th
 4. Listen to the clicks filling the canula, wait for insertion and the progress bar to complete. The number of clicks to insertion is not consistent. The cannula will deploy before the progress bar is completed.
 5. Confirm cannula has deployed by looking through the peep hole on pod
 6. Press the `Continue` button
-7. Setup is complete and your pod is ready for use when you press the final `Continue` button
 
 <p align="center">
 <img src="../img/pod-setup-02-insert.png" width="650">
@@ -60,7 +59,7 @@ When you finish entering in these values, press the blue `Continue` button on th
 
 ## Expiration Reminder
 
-Finish the setup with using the default expiration reminder time (2 hours before a full 3-days usage) or set the expiration notification to a more convenient time to your liking which will show up in your locked screen and vibrates at that time.
+Finish the setup with using the default expiration reminder time (2 hours before a full 3-days usage) or set the expiration notification to a more convenient time to your liking which will show up in your locked screen and vibrates at that time. Setup is complete and your pod is ready for use when you press the final button.
 
 <p align="center">
 <img src="../img/pod-setup-03-complete.png" width="650">
@@ -68,7 +67,7 @@ Finish the setup with using the default expiration reminder time (2 hours before
 
 ## Pod Settings
 
-After pod pairing is completed, you will be on the Pod Settings screen. This screen will provide a variety of important information about your pod. You can always come back to this screen later by tapping on the Omnipod image in your Loop settings.
+After pod setup is completed, you will be on the Pod Settings screen. This screen will provide a variety of important information about your pod. You can always come back to this screen later by tapping on the Omnipod image in your Loop settings.
 
 <p align="center">
 <img src="../img/long-pod-settings.jpeg" width="250">
