@@ -4,10 +4,10 @@ Your Loop won’t have much showing initially until we get some basic settings i
 
 ## Select Pump Type
 
-Let’s start by clicking on the Loop Settings button in the tool bar at the bottom of your Loop app. It looks like a little sprocket. On the settings screen that opens, click on `Add Pump` and select the **Omnipod pump** option that appears.
+Let’s start by clicking on the Loop Settings button in the tool bar at the bottom of your Loop app. It looks like a little sprocket. On the settings screen that opens, click on `Add Pump` and select the **Omnipod** option that appears.
 
 <p align="center">
-<img src="../img/loop_settings.png" width="450">
+<img src="../img/loop_settings_add_pump.png" width="650">
 </p></br>
 
 ## Select RileyLink
@@ -27,7 +27,7 @@ The next screen will offer two areas where you will need to enter information:
 * Basal Rates: Enter your scheduled basal rates, beginning at midnight. Consistent with pod use, the scheduled basal rates have a maximum of 24 entries, no 0 u/hr entries allows, and rate increments of 0.05 u/hr.
 
 <p align="center">
-<img src="../img/pod-settings-screen.png" width="550">
+<img src="../img/pod-settings-screen.png" width="650">
 </p></br>
 
 When you finish entering in these values, press the blue `Continue` button on the bottom of the Pod Settings screen to continue with the next steps of pod setup.
@@ -41,7 +41,7 @@ When you finish entering in these values, press the blue `Continue` button on th
 5. Press the `Continue` button when the blue checkmark confirms priming is complete
 
 <p align="center">
-<img src="../img/pod-pair.png" width="550">
+<img src="../img/pod-setup-01-pair.png" width="650">
 </p></br>
 
 ## Insert Cannula
@@ -49,13 +49,21 @@ When you finish entering in these values, press the blue `Continue` button on th
 1. Prepare your insertion site
 2. Remove the pod's needle cap and adhesive backing
 3. If cannula is safely tucked away, apply pod to your desired infusion site. If cannula is sticking out, press `cancel` in the upper right corner of screen and try a new pod.
-4. Listen to the clicks and watch for progress bar for insertion and completion of the pod start.
+4. Listen to the clicks filling the canula, wait for insertion and the progress bar to complete. The number of clicks to insertion is not consistent. The cannula will deploy before the progress bar is completed.
 5. Confirm cannula has deployed by looking through the peep hole on pod
 6. Press the `Continue` button
 7. Setup is complete and your pod is ready for use when you press the final `Continue` button
 
 <p align="center">
-<img src="../img/pod-insert.png" width="550">
+<img src="../img/pod-setup-02-insert.png" width="650">
+</p></br>
+
+## Expiration Reminder
+
+Finish the setup with using the default expiration reminder time (2 hours before a full 3-days usage) or set the expiration notification to a more convenient time to your liking which will show up in your locked screen and vibrates at that time.
+
+<p align="center">
+<img src="../img/pod-setup-03-complete.png" width="650">
 </p></br>
 
 ## Pod Settings
