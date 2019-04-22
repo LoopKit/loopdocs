@@ -7,7 +7,7 @@ Your Loop won’t have much showing initially until we get some basic settings i
 Let’s start by clicking on the Loop Settings button in the tool bar at the bottom of your Loop app. It looks like a little sprocket. On the settings screen that opens, click on `Add Pump` and select the **Omnipod** option that appears.
 
 <p align="center">
-<img src="../img/loop_settings_add_pump.png" width="550">
+<img src="../img/loop_settings_add_pump.png" width="650">
 </p></br>
 
 ## Select RileyLink
@@ -41,7 +41,7 @@ When you finish entering in these values, press the blue `Continue` button on th
 5. Press the `Continue` button when the blue checkmark confirms priming is complete
 
 <p align="center">
-<img src="../img/pod-pairing-01-fill-priming.png" width="650">
+<img src="../img/pod-setup-01-pair.png" width="650">
 </p></br>
 
 ## Insert Cannula
@@ -55,7 +55,7 @@ When you finish entering in these values, press the blue `Continue` button on th
 7. Setup is complete and your pod is ready for use when you press the final `Continue` button
 
 <p align="center">
-<img src="../img/pod-insert.png" width="550">
+<img src="../img/pod-setup-02-insert.png" width="650">
 </p></br>
 
 ## Pod Settings
