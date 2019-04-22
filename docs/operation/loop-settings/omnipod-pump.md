@@ -60,6 +60,14 @@ When you finish entering in these values, press the blue `Continue` button on th
 
 \* Unfortunately you cannot count the number of clicks to know when the insertion happens, it will be different every time. The inserting mechanism is separate from the pump step mechanism.
 
+## Expiration Reminder
+
+Finish the setup with using the default expiration reminder time (2 hours before a full 3-days usage) or set the expiration notification to a more convenient time to your liking which will show up in your locked screen and vibrates at that time.
+
+<p align="center">
+<img src="../img/pod-setup-03-complete.png" width="650">
+</p></br>
+
 ## Pod Settings
 
 After pod pairing is completed, you will be on the Pod Settings screen. This screen will provide a variety of important information about your pod. You can always come back to this screen later by tapping on the Omnipod image in your Loop settings.
