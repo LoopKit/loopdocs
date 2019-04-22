@@ -27,7 +27,7 @@ The next screen will offer two areas where you will need to enter information:
 * Basal Rates: Enter your scheduled basal rates, beginning at midnight. Consistent with pod use, the scheduled basal rates have a maximum of 24 entries, no 0 u/hr entries allows, and rate increments of 0.05 u/hr.
 
 <p align="center">
-<img src="../img/pod-settings-screen.png" width="550">
+<img src="../img/pod-settings-screen.png" width="650">
 </p></br>
 
 When you finish entering in these values, press the blue `Continue` button on the bottom of the Pod Settings screen to continue with the next steps of pod setup.
@@ -41,7 +41,7 @@ When you finish entering in these values, press the blue `Continue` button on th
 5. Press the `Continue` button when the blue checkmark confirms priming is complete
 
 <p align="center">
-<img src="../img/pod-pair.png" width="550">
+<img src="../img/pod-pairing-01-fill-priming.png" width="650">
 </p></br>
 
 ## Insert Cannula
