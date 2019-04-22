@@ -10,11 +10,14 @@ There are two types of build errors that happen; yellow warnings and red alerts.
 
 Before you start trying to resolve your red errors...start with the most obvious things that can cause a red error message:
 
-1. DO NOT USE BETA VERSIONS.  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
+1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
 
-2. Did you check for Xcode updates in your computer's App Store? The most current version of Xcode is 10.1. Older versions of Xcode will not work with newer iOS. Failing to update Xcode is a frequent cause of red error messages.
+2. **Did you check for updates?** 
 
-3. Get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago. That old version may not be compatible with new iOS and new Xcode versions.
+    !!!info "Minimum Versions"
+        If you are building for Omnipod Loop, Loop dev, or have iOS 12.2 installed, make sure you have macOS 10.14.3 (Mojave) and Xcode 10.2 at a minimum. You will not be able to build for those without the minimum updates.
+
+3. **Get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago.** That old version may not be compatible with new iOS and new Xcode versions.
 
 4. If you are using a free developer account, you need to have finished the [code customizations to remove Siri capabilties](https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities).
 
@@ -24,14 +27,15 @@ STOP!!  Read this section! Important!
 
 Before you post in Zulipchat or Looped Group asking for help with build errors, <u>do your work first</u>. The build errors listed below (and the obvious checks listed above) are very successful ***IF PEOPLE READ THIS PAGE***. The volunteer group of people answering questions in Looped and Zulipchat would love to spend more time on improving Loop in other ways than answering build error questions that can be answered by using this page as a first step.
 
-Therefore, first use the error topics (listed in sections below) to try to resolve your build error yourself. Then, if you need to post for help because this page did not fix your problem, you'll need to include information with the post so we (the troubleshooters) know you read this page and where you are in your troubleshooting attempts:
+Therefore, first use the error topics (listed in sections below) to try to resolve your build error yourself. Then, if you need to post for help because this page did not fix your problem, you'll need to include information with the post so we (the troubleshooters) know you read this page and where you are in your troubleshooting attempts
 
+    Include in your post: 
 * Version of Xcode you are using
 * Version of Loop you are building with
 * Version of iOS on your Loop iPhone
 * Specify if you are using a free or paid account, and if free...confirm you deleted Siri capabilities
-* In your post, confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)
-* Screenshots of your Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.
+* Confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)
+* Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.
 * List which of the fixes listed below you have already tried.
 
 Helpful tip #1: Shift-Command-4 will give you a little screenshot tool that you can click-and-drag to highlight the area you'd like to screenshot. When you release the drag, the screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information.
@@ -57,7 +61,7 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 <img src="../img/search-errors.png" width="650">
 </p>
 
-## Build Failed in frameworks
+## No such module 'LoopKit'
 
 If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open Terminal app.  You will use the command `cd ~/downloads/loop-master && carthage update`.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name. 
 
@@ -66,7 +70,7 @@ If you see a **Cartfile failure** and several other red errors (in particular sa
 <img src="../img/exit-code-65.png" width="850">
 </p>
 
-Carthage update will take about 15 minutes to run successfully.  A successful carthage update will look like the following:
+Carthage update will take about 15-25 minutes to run successfully.  A successful carthage update will look like the following:
 
 </p>
 <p align="center">
@@ -80,6 +84,46 @@ If your carthage update fails, try opening Terminal app and running these comman
 `rm -rf ~/Library/Caches/org.carthage.CarthageKit` and `rm -rf ~/Library/Developer/Xcode/DerivedData`
 
 After running those commands, retry the `cd ~/downloads/loop-master && carthage update` (remembering to update the name of your Loop download folder, as needed).
+
+## Carthage version outdated
+
+If you see a message about updating carthage version, open Terminal app and enter the following command `brew update && brew upgrade carthage`
+
+</p>
+<p align="center">
+<img src="../img/carthage-update.jpg" width="850">
+</p>
+
+## Not using Xcode 10.2
+Error message: The error message may change over time and Xcode versions...currently if you use iOS 12.2, Omnipod-testing branch, or dev branch and have not updated to macOS 10.14.3 and Xcode 10.2 at a minimum, you will receive the following errors when you try to build:
+
+<p align="center">
+<img src="../img/xcode10-update.png" width="750">
+</p>
+
+Solution: You will need to update you macOS and then use your computer's App Store to install the Xcode app update.
+
+## Missing Command Line Tools
+
+Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandLineTools)</u>**" or "**<u>unable to find utility "xcodebuild", not a developer tool or in PATH</u>**"
+
+</p>
+<p align="center">
+<img src="../img/command-line-error-1.jpg" width="550">
+</p>
+
+</p>
+<p align="center">
+<img src="../img/command-line-error-2.jpg" width="550">
+</p>
+
+Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 10.1" in the dropdown menu for Command Line Tools.
+
+</p>
+<p align="center">
+<img src="../img/command-line-error-3.png" width="550">
+</p>
+
 
 ## Siri Capabilities
 
@@ -119,35 +163,6 @@ For double measure, you can verify that the iOS development certificates are all
 <img src="../img/verify_cert.png" width="650">
 </p>
 
-## Not using Xcode 10.1
-Error message: The error message may change over time and Xcode versions...currently if you use iOS 12 and have not updated to Xcode 10.1, you will receive the following errors when you try to build:
-
-<p align="center">
-<img src="../img/xcode10-update.png" width="750">
-</p>
-
-Solution: You will need to go to your computer's App Store and install the Xcode app update.
-
-## Missing Command Line Tools
-
-Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandLineTools)</u>**" or "**<u>unable to find utility "xcodebuild", not a developer tool or in PATH</u>**"
-
-</p>
-<p align="center">
-<img src="../img/command-line-error-1.jpg" width="550">
-</p>
-
-</p>
-<p align="center">
-<img src="../img/command-line-error-2.jpg" width="550">
-</p>
-
-Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 10.1" in the dropdown menu for Command Line Tools.
-
-</p>
-<p align="center">
-<img src="../img/command-line-error-3.png" width="550">
-</p>
 
 ## Command CodeSign failed
 
@@ -184,15 +199,6 @@ Error message: "**<u>The Apple Developer Program License Agreement has been upda
 Solution: You'll need to log onto your developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
 <p align="center">
 <img src="../img/license.png" width="750">
-</p>
-
-## Carthage update message
-
-If you see a message about updating carthage version, open Terminal app and enter the following command `brew update && brew upgrade carthage`
-
-</p>
-<p align="center">
-<img src="../img/carthage-update.jpg" width="850">
 </p>
 
 ## Unrecognized arguments: --cache-builds
