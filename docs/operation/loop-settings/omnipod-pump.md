@@ -126,7 +126,7 @@ This section provides information about your pod's status.
 <img src="../img/pod-settings-bolus-status.png" width="250">
 </p> 
 
-* Basal Delivery: This line will let you know  basal delivery is active ("schedule") or if it is suspended.
+* Basal Delivery: This line will let you know what is active: The normal basal _schedule_,the _U/hour_ of a 30 minute Temp Basal or if the pod is _suspended_.
 
 <p align="center">
 <img src="../img/pod-settings-basal-delivery.png" width="250">
