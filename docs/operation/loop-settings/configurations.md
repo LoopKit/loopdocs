@@ -46,7 +46,7 @@ The correction range is your blood glucose range that you would like Loop to cor
 
 Click the + in the upper right corner to add correction BG range(s). You can have multiple ranges based on time of day, but the first setting of the day needs to begin at midnight.
 
-Correction ranges can be a single number, such as 100-100 mg/dL.  Generally, you don't want to keep correction ranges too wide otherwise Loop will be sluggish to correct. Most users keep correction range no wider than about 0 to 30 mg/dL between the minimum and maximum values.
+Correction ranges can be a single number, such as 100-100 mg/dL, or a range such as 100-120 mg/dL. Generally speaking, if you choose to use a range, keeping the range between about 10-30 mg/dL between the lowest and highest value is a good starting place.
 
 ### Override Ranges
 Below the Correction Range entry is a section called "Overrides". Override ranges provide temporary alternate correction ranges. These override ranges will only be enacted when you specifically activate pre-meal or workout mode using the buttons on the main Loop display or watchface. While active, they replace the correction range for Loop's recommendations. If the override ranges are not entered in this section, the buttons will remain grey and unusable on the main screen's toolbar.
@@ -54,12 +54,12 @@ Below the Correction Range entry is a section called "Overrides". Override range
 **Pre-Meal:**
 The pre-meal override target can be used to as an easy way to get a small amount of insulin delivered before a meal in order to help control post-meal blood glucose spikes.
 
-If your normal target is 100-100 mg/dL and pre-meal target is 80-80 mg/dL, for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
+If your normal target is 100-110 mg/dL and pre-meal target is 80-80 mg/dL, for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
 Loop will adjust any insulin bolus as needed based on the extra insulin provided during this pre-meal time.
 
 **Workout Mode:**
-Workout override target is designed to temporarily set your target higher in anticipation of exercise or other activities which tend to make the user more insulin sensitive or need less insulin. By setting a higher temp target ahead of activity, Loop will recommend less basal rate(s) than normally scheduled in order to to bring blood glucose up to the higher target.
+Workout override target is designed to temporarily set your target higher in anticipation of exercise or other activities which tend to make the user more insulin sensitive or need less insulin. By setting a higher temp target such as 140-160 mg/dL ahead of activity, Loop will recommend smaller basal rate(s) than normally scheduled in order to to bring blood glucose up to the higher target.
 
 The success of this strategy will be dependent on how far in advance of activity the override target is set. Generally, users set the target approximately 1-2 hours in advance of planned activities, but the optimal timing will depend on the activity, duration, and intensity. Additionally, any insulin on board from recent boluses may overwhelm the Loop's ability to counteract exercise-induced lows through lower temp basals alone. Please see LoopTips.org for additional information about [exercise and Loop](https://kdisimone.github.io/looptips/how-to/exercise/).
 

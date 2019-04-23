@@ -47,15 +47,15 @@ Between Loop app builds, there's a high liklihood that Apple has updated one or 
 After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on **ONE** of the links below to download an updated versions of Loop code:
 </br></br>
 <p align="center">
-[Loop: Master branch source code](https://github.com/LoopKit/Loop/archive/master.zip)
+[Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)
 </p></br>
 <p align="center">
 **OR**</br></br>
-[Loop: Dev branch source code](https://github.com/LoopKit/Loop/archive/dev.zip)
+[Loop: Dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)
 </p></br>
 <p align="center">
 **OR**</br></br>
-[Loop: Omnipod-testing branch source code](https://github.com/LoopKit/Loop/archive/omnipod-testing.zip) <---not live yet, don't freak out
+[Loop: Omnipod-testing branch](https://github.com/LoopKit/Loop/archive/omnipod-testing.zip)
 </p></br>
 
 !!!info "Reminder"

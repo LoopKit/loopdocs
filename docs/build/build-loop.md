@@ -10,7 +10,7 @@ You’ll need to download the Loop code in order to build the app on your comput
 <p align="center">
 [Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)</br></br>
 [Loop: Dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)</br></br>
-[Loop: Omnipod-testing branch](https://github.com/LoopKit/Loop/archive/omnipod-testing.zip) (<---not live yet, don't freak out)
+[Loop: Omnipod-testing branch](https://github.com/LoopKit/Loop/archive/omnipod-testing.zip)
 </p></br>
 
 !!!info "MASTER VS DEV -- Which to choose?"
