@@ -1,6 +1,6 @@
-# Jaeb Observational Study
+# Loop Observational Study
 
-## Announcement
+## Official Announcement
 Are you using (or planning to use) the do-it-yourself Loop automated insulin delivery system? If so, you may be eligible to join an observational study of Loop users.
 
 The study is being done in collaboration with Loop developers to collect information from adults and children with type 1 diabetes using Loop. It is being paid for by the Helmsley Charitable Trust. The purpose of the study is to collect information from 300 – 1,000 adults and children with T1D using Loop in the United States. This information will be used to learn more about how well Loop works, what problems users have, how often severe hypoglycemia and diabetic ketoacidosis occur, and how well the system controls blood sugar levels.
@@ -12,23 +12,27 @@ Visit: [http://www.jaeb.org/loopstudy](http://www.jaeb.org/loopstudy) for more i
 <img src="https://i2.wp.com/getrileylink.org/wp-content/uploads/2018/11/helmsly.png?w=353&ssl=1" width="20%">
 </p>
 
-## Cohort A
+## Why you?
 
-(DIY Katie, LoopDocs author, here clearing up some FAQs that we've had lately in Looped Group re: the Jaeb study. I'm posting this as an interested party, not as a representative of Jaeb.)
+Loop has proven very exciting for many people. A really simple way for you to contribute back to the project would be to enroll in this observational study. It costs you nothing (in fact, you can rewarded a bit), takes very little time and you participation would be VERY appreciated.
 
-As part of that observational study, there's a particular set of participants anticipated that are users that are within their first 7 days of Loop use. Many users have private messaged me and said they were waiting to enroll in the study until they had more time to get used to the system.
+**It is simply the easiest and most meaningful way to say "thank you" to the countless volunteer hours that have gone into the last four years of Loop development and three years of Omnipod work.**
 
-Just to clarify, the study is actually very interested in new users (within 7 days of starting Loop); they even have a name of Cohort A.
+Don't count yourself out. Your data is valuable. Honestly...don't worry about your A1C, don't worry about your carb consumption, etc.  The study is open to ALL participants so long as you are using Loop and live in the USA.
 
-The study is observational and open to a wide-variety of users. If you fall into Cohort A, please don't self-exclude because you had an impression that your data isn't valuable.
+## New Loop Users are EXTRA important
 
-If you are close to 7 days, but maybe just a bit over...please don't self-exclude either. Just send an email to Loopstudy@jaeb.org and let them know that you're a Cohort A possibility and tell them what your situation is.
+(DIY Katie, LoopDocs author, here clearing up some FAQs that we've had lately in Looped Group re: the Jaeb study. I'm posting this as an interested party wanting to see the study participation thrive, not as a representative of Jaeb.)
+
+!!!info "Omnipod users please read"
+    As part of that observational study, there's a particular set of participants anticipated that are users that are within their first days of Loop use; ideally enrolling before 7 days of Loop use, but up to 14 days. Almost all Omnipod Loop users will fall into that category called Cohort A.
+    
+    Many users have private messaged me and said they were waiting to enroll in the study until they had more time to get used to the system. <---don't be that person, early enrollment is important.
+    
+    If you fall into Cohort A, please don't self-exclude because you had an impression that your data isn't valuable or that enrollment could wait. **<font color = "red">Enroll soon, even before you start Loop use is fine.</font>**
 
 ## Tidepool Mobile
-
-If you aren't familiar with Tidepool previously, it is a non-profit dedicated to making diabetes data more accessible, actionable, and meaningful for people with diabetes, their care teams and researchers. You can read more about what you can use Tidepool for, beyond just the use associated with the Jaeb Study, over on [LoopTips data tools section](https://kdisimone.github.io/looptips/data/tidepool/).
-
-The Jaeb Observational Study uses Tidepool Mobile app on the Looper's iPhone to upload diabetes-related Health data. For information about installing and using the Tidepool Mobile app, please check out these useful [help articles at Tidepool](https://support.tidepool.org/category/31-tidepool-mobile).
+After you enroll in the study, the study will need access to your Looping data. The study uses the Tidepool Mobile app on the Looper's iPhone to upload diabetes-related Health data. For information about installing and using the Tidepool Mobile app, please check out these useful [help articles at Tidepool](https://support.tidepool.org/category/31-tidepool-mobile).
 
 In a nutshell, you will:
 
@@ -46,3 +50,10 @@ Just an FYI: The most frequent issue with Jaeb enrollment process, based on feed
 <img src="../img/jaeb-share.png" width="550">
 </p>
 
+Side Note: If you aren't familiar with Tidepool previously, it is a non-profit dedicated to making diabetes data more accessible, actionable, and meaningful for people with diabetes, their care teams and researchers. You can read more about what you can use Tidepool for, beyond just the use associated with the Loop Observational Study, over on [LoopTips data tools section](https://kdisimone.github.io/looptips/data/tidepool/).
+
+## Next Step: Setup Loop App
+
+Now that you've read about the Loop Observational Study, and hopefully realized how valuable early enrollment and participation is to Loop, head on over to the next part about [setting up the Loop app](https://loopkit.github.io/loopdocs/operation/overview/).
+
+Don't forget to go to the [Jaeb Loop Observational Study page](http://www.jaeb.org/loopstudy) within the first 7-14 days of Loop use if you plan to enroll in order to provide that Cohort A data.

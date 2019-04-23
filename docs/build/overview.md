@@ -13,5 +13,7 @@ If you are worried about how long this will take and want to break this up into 
 * Day 5 (50 minutes): [Build Loop app using Xcode](https://loopkit.github.io/loopdocs/build/build-loop/)</br></br>
 
 !!! info "Time Saving Tips"
-    * Check your watchOS, iPhone OS, macOS, Xcode first to see if they need updates.  If you have iOS 12 (or newer), you will need at a minimum watchOS 4.1, macOS 10.13.6, and Xcode 10.1.  If you have newer versions than the minimum, that is fine.</br></br>
+    * Check your watchOS, iOS, macOS, Xcode first to see if they need updates.  </br></br>
+    * If you have iOS 12.2 (or newer), you will need at a minimum watchOS 4.1, macOS 10.14.3 (Mojave), and Xcode 10.2.  If you have newer versions than the minimum, that is fine.</br></br>
+    * If you want to build for Omnipod Loop, you will need at a minimum watchOS 4.1, macOS 10.14.3 (Mojave), and Xcode 10.2.  If you have newer versions than the minimum, that is fine.</br></br>
     * Apple watches need to be paired with the iPhone BEFORE the Loop app is built onto the phone in order to have the Loop on the watch, too.  If you pair a new Apple watch later, you'll have to rebuild the Loop app onto the iPhone again, before the watch will work with Loop functions.</br></br>

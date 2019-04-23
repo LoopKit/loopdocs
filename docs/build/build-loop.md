@@ -4,18 +4,19 @@ Now that all of your setup for the building blocks are done, now we can jump int
 
 ## Download Loop Code
 
-You’ll need to download the Loop code in order to build the app on your computer.  Click on ONE of the links below to download your Loop source code.  Wondering which to choose? Read the blue box below **<u>ESPECIALLY IF YOU ARE AN OMNIPOD USER</u>**
+You’ll need to download the Loop code in order to build the app on your computer.  Click on ONE of the links below to download your Loop source code.  Wondering which to choose? Read the blue box below
 
 </br></br>
 <p align="center">
 [Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)</br></br>
-[Loop: Dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)
+[Loop: Dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)</br></br>
+[Loop: Omnipod-testing branch](https://github.com/LoopKit/Loop/archive/omnipod-testing.zip) (<---not live yet, don't freak out)
 </p></br>
 
 !!!info "MASTER VS DEV -- Which to choose?"
-    Master vs Dev?  What is the difference? The Loop code resides in a website called [GitHub](https://github.com/LoopKit/Loop). The various projects in GitHub use "repositories". A repository is kind of like a project's bookshelf, holding various books versions (aka branches) of a project. The master branch is considered a stable version of the project. Any new features or options are first tested in a dev (short for "development") branch of the Loop. If you hear of "new features in dev", these are things that may be eventually merged into the master branch once any bugs are worked out. New or inexperienced users should not build from the dev branch of Loop, as there is a greater likelihood of encountering bugs or glitches. 
+    Master vs Dev?  What is the difference? The Loop code resides in a website called [GitHub](https://github.com/LoopKit/Loop). The various projects in GitHub use "repositories". A repository is kind of like a project's bookshelf, holding various books versions (aka branches) of a project. The master branch is considered a stable version of the project. Any new features or options are first tested in a public feature branch or dev (short for "development") branch of the Loop. If you hear of "new features" being tested, these are things that may be eventually merged into the master branch once any bugs are worked out. If you are choosing to use a testing branch, such as dev or omnipod, please be prepared to update you Loop app to get bug fixes as they are released. 
     
-    **Omnipod support in Loop is considered experimental and in-development. If you want to build a version of Loop that supports Omnipod, you will need to select the Dev branch download above.** Keep in mind, dev branch represents a greater likelihood of encountering bugs or glitches. As you encounter those, please check the docs first to see if that issue is already answered. If you think you truly are seeing strange behavior, report the bug to Loop's GitHub by [creating a "New Issue" here](https://github.com/loopkit/loop/issues). You can also look through the list of known issues already reported, as there is a chance your issue has already been seen by others.
+    **Omnipod support in Loop is considered experimental and in-development. If you want to build a version of Loop that supports Omnipod, you will need to select the Omnipod-testing branch download above.** Keep in mind, dev branch represents a greater likelihood of encountering bugs or glitches. As you encounter those, please check the docs first to see if that issue is already answered. If you think you truly are seeing strange behavior, report the bug to Loop's GitHub by [creating a "New Issue" here](https://github.com/loopkit/loop/issues). You can also look through the list of known issues already reported, as there is a chance your issue has already been seen by others.
 
 
 !!!info ""
@@ -30,7 +31,7 @@ You’ll need to download the Loop code in order to build the app on your comput
 
 ## Open Loop project in Xcode
 
-Go to your Downloads folder, open the `Loop-master` folder (or whatever you named it...double check that the folder does not contain any spaces in the folder name, as described above), and double click on Loop.xcodeproj.
+Go to your Downloads folder, open the `Loop-master` folder (or whatever you named it...double check that the folder does not contain any spaces in the folder name, as described above), and double click on Loop.xcodeproj. For Omnipod Loop, the folder will likely be named `Loop-omnipod-testing`.
 
 <p align="center">
 <img src="../img/loop_code.png" width="750">
@@ -151,7 +152,7 @@ There is SUPER valuable information contained in these documents that really nee
 
 Instead, work step-by-step to make sure you get through these pieces of helpful information:
 
-* Read the [Jaeb Observational Study page](https://loopkit.github.io/loopdocs/build/jaeb-study/)
+* For USA Loopers, read the [Jaeb Observational Study page](https://loopkit.github.io/loopdocs/build/jaeb-study/)
 * Read the [Health Permissions page](https://loopkit.github.io/loopdocs/build/health/) to make sure you get your Loop data recording properly
 * Start with following the step-by-step directions for setting up your Loop correctly. THIS IS IMPORTANT! There are safety considerations in how you setup your app...so please follow along with the setup guides. [Loop App Overview and Setup Pages](https://loopkit.github.io/loopdocs/operation/overview/)</br></br>
 
@@ -185,5 +186,6 @@ If you get a message that your build failed, you're likely going to see a list o
 
 You'll need to go to the [Build Errors](build_errors.md) page to resolve the error message. Read your error message(s), find the matching error in the Build Errors page's images and descriptions, and follow the directions for repairing the error.
 
-You're done building your Loop app...but first please read about the [Jaeb Observational Study](https://loopkit.github.io/loopdocs/build/jaeb-study/) before moving onto [Loop App setup](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/)
+## Next Step: Jaeb's Loop Observational Study
+You're done building your Loop app...but first, if you are a USA Loop user, please read about the [Jaeb Observational Study](https://loopkit.github.io/loopdocs/build/jaeb-study/) before moving onto [Loop App setup](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/)
 

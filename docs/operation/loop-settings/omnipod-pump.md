@@ -85,10 +85,16 @@ There are two commands that you can issue through Loop to the pod.
 * Replace Pod: This command should be used to deactivate a pod prior to replacing it.
 
 #### Configuration
+* Expiration Reminder: With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting Loop sets it default to a full 3 days. You can set the reminder to any day and time up until 80 hours. This changes the PDM default which sets the alert always to 2 hours before a full 3-day (72 hours) run. This assumes you will not have run out of insulin before that time. In the event your pod runs out of insulin, then you will get an pod empty notification.
 
-* Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your pod. However, if you are going to be away from home for longer periods of time, you will want to udpate your pod's basal schedule to match local time by selecting the `Change Time Zone` command when convenient.
+<p align="center">
+<img src="../img/pod-settings-screen-expiration-reminder.png" width="250">
+</p></br>
 
-* Test Command: IGNORE THIS LINE. This line is a residual command from when we were in early testing of omnipod Loop. It will eventually be removed from this screen.
+
+* Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your pod. However, if you are going to be away from home for longer periods of time, you will want to udpate your pod's basal schedule to match local time by selecting the `Change Time Zone` command when convenient. Using this command will move your basal schedule on your current pod to the new time. If you start a new pod session the new time zone will be used. Please wait until you see `Succeeded` appear on the page to ensure the command has successfully been received by the pod.
+
+* Test Command: This command is used only by the developers to test Omnipod commands in Loop. It currently issues a "get status" command and can be used to update your screen details if needed or force a fault error to generate in the issue report after getting a screaming pod.
 
 #### Status
 

@@ -2,6 +2,12 @@
 
 There are lots of new users coming to Loop trying to find out information about Omnipod potentially being supported on Loop. You probably have a lot of questions.
 
+## What is Loop?
+
+Click on the image below to watch an short [Introduction to Loop video](https://youtu.be/qw_u1lqboCs).
+
+<a href="https://youtu.be/qw_u1lqboCs" target="_blank"><img src="../img/intro-to-loop.png"  title="Introduction to Loop video" /></a>
+
 ## What do I need to Loop?
 
 Loop has both hardware and software requirements.  In general, to use Loop you need to have seven components.
