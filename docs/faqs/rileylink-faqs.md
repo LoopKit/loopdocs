@@ -35,8 +35,8 @@ In summary, definitely use the appropriate RL with the antenna that matches your
 ## Can you swap out the old antenna on a RL?
 Yes, the antenna swap is not a hard swap if you just have basic soldering skills. The old antenna can be removed easily by reheating the solder. New 433MHz antennas and a cap can be found on [GetRileyLink site](https://getrileylink.org/product/433diyupgrade/). Tips: use flux and clean the antenna stub before soldering. Poorly DIY-soldered antennas can lead to decreased range and frequent communication drops between Loop and the pods.
 
-## How long will my RL last?
-I am still using the original RL from 2.5 years ago, so would seem like a long time.
+## How long will my RL go between charging?
+RileyLink's can go about 30-32 hours (more or less) on a single charge. There is no way to see the remaining charge level, so most people just get into the habit of charing overnight while they sleep. The actual time to fully recharge is about 1 or 2 hours; you'll know it is fully charged when the red light turns off. After a full charge, the red light will turn off and then periodically turn on for short times while it "tops off" while still on charger.
 
 ## How long will my RL battery last?
 Eventually, lipo batteries will lose charging capacity and you would want to replace if you notice the battery not lasting the full day. We've been using our current battery for nearly 2 years without issue.
