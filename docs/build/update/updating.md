@@ -25,7 +25,9 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
     If you are going to use either Omnipod-testing branch, Dev branch, or iOS 12.2, you will need to update to macOS 10.14.3 (Mojave) at a minimum. After you update your macOS, make sure you grab updated Xcode of 10.2 at a minimum. **Both those updates are required.**
 
 !!!info "Update to Homebrew and Carthage"
-    For people who have already built Loop before, there's an extra step needed for your first update since the recent round of updates. We need you to update Homebrew and Carthage, but this is quick and easy. Please open Terminal app and copy & paste the following `brew update && brew upgrade carthage`. When the update finishes, you should have carthage 0.33.0 installed. All done! 
+    For people who have already built Loop before, there's an extra step needed for your first update since the recent round of updates. We need you to update Homebrew and Carthage, but this is quick and easy. Please open Terminal app and copy & paste the following `brew update && brew upgrade carthage`. When the update finishes, you should have carthage 0.33.0 (or later) installed. If you don't see the version, you can use `carthage version` to have the version displayed.</br>
+    
+    If you don't have 0.33.0 installed at a minimum, then you will need to use `brew link --overwrite carthage` and then repeat the `brew update && brew upgrade carthage` command. That should succeed in updating you properly, and you can again check that with `carthage version`.
 
 Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app. <u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u> 
 
