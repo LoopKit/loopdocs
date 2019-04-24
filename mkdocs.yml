@@ -76,6 +76,7 @@ pages:
         - 'Priming and Sites': 'troubleshooting/priming.md'
         - 'Time Changes': 'troubleshooting/time-change.md'
         - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
+        - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
 - Nightscout:
     - 'Overview': 'nightscout/overview.md'
     - 'Brand New NS': 'nightscout/new_user.md'
