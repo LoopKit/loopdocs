@@ -11,6 +11,7 @@ markdown_extensions:
 pages:
 - Home: 'index.md'
 - FAQs:
+    - 'Using This Site FAQs': 'faqs/docs-faqs.md'
     - 'General Loop FAQs': 'faqs/FAQs.md'
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
