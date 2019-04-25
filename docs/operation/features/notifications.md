@@ -58,7 +58,8 @@ Normally you will have 5-30 minutes to replace the pod, but do know the pod can 
 
 ## Pod Expiration (Omnipod)
  
-You can customise the time of notification when to replace your pod any time up to 3 days and 8 hours [after staring a new pod](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#expiration-reminder) or you change the time later in the [pod configuration settings](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#configuration).
+You can customise the time of notification when to replace your pod any time from 1 hour up to 71 hours (3 days - 1 hour) [after staring a new pod](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#expiration-reminder) or you change the time later in the [pod configuration settings](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#configuration).
+The expiry notification will always show when the pod reaches a running full 3 days (72 hours). 
 
 <p align="center">
 <img src="../img/pod-expiration-notice.png" width="250">
