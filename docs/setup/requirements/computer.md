@@ -21,11 +21,11 @@ The way Apple updates happen is that one equipment's update will tend to require
 ## When can you use Xcode 10.1 and macOS 10.13.6?
 These versions are being phased out because Apple has moved onto newer versions. For now, if you can't upgrade your Apple computer to Mojave (and are stuck at macOS 10.13.6), you can still build so long as you:
 
-* Use Loop master branch (so you will be able to use Omnipod Loop or Loop dev branches)
+* Use Loop master branch (so you will not be able to use Omnipod Loop or Loop dev branches), and
 * Have not updated your iPhone to iOS 12.2
 
-If you want to use omnipod or Loop-dev branches, you will have to use Mojave macOS and Xcode 10.2.
-If you updated your iPhone to iOS 12.2, you will also have to use Mojave macOS and Xcode 10.2
+If you want to use Omnipod-testing or Loop-dev branches, you will have to use Mojave macOS and Xcode 10.2.
+If you updated your iPhone to iOS 12.2, you will also have to use Mojave macOS and Xcode 10.2 at a minimum.
 
 ## Omnipod and dev users
 In order to build Omnipod Loop, you will be required to use macOS 10.14.3 (Mojave) and Xcode 10.2 at a minimum. The version of Loop that supports Omnipod and Loop's dev branch both require the updated versions of macOS and Xcode.
