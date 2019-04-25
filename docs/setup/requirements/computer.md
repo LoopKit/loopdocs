@@ -28,7 +28,7 @@ If you want to use omnipod or Loop-dev branches, you will have to use Mojave mac
 If you updated your iPhone to iOS 12.2, you will also have to use Mojave macOS and Xcode 10.2
 
 ## Omnipod and dev users
-In order to build Omnipod Loop, you will be required to use macOS 10.4.3 (Mojave) and Xcode 10.2 at a minimum. The version of Loop that supports Omnipod and Loop's dev branch both require the updated versions of macOS and Xcode.
+In order to build Omnipod Loop, you will be required to use macOS 10.14.3 (Mojave) and Xcode 10.2 at a minimum. The version of Loop that supports Omnipod and Loop's dev branch both require the updated versions of macOS and Xcode.
 
 ## Computer access
 Computer access is only required when you are initially installing the Loop app, updating to a newer release, or making changes to the underlying Loop code.  You do NOT need access to an Apple computer in order to troubleshoot or change Loop settings, such as basal profiles or carb ratios.
