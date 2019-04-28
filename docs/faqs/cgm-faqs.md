@@ -16,6 +16,6 @@ Loop does not read from, nor upload to, CGM data for Nightscout. You would need 
 
 ## Can Spike or Xdrip be used with Loop?
 
-Spike and Xdrip are not supported by Loop. You will need to implement community-based modifications to Loop in order to use those apps with Loop. Please search the Looped group in Facebook for posts regarding those options, as they are not a part of standrad Loop use.
+Spike and Xdrip are not supported by Loop. You will need to implement community-based modifications to Loop in order to use those apps with Loop. Please search the Looped group in Facebook for posts regarding those options, as they are not a part of standard Loop use.
 
 
