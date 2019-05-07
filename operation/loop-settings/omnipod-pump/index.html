@@ -493,6 +493,12 @@
 </li>
 
         
+            
+<li >
+    <a href="../../../troubleshooting/omnipod-faults/">Omnipod Faults</a>
+</li>
+
+        
     </ul>
   </li>
 
@@ -694,13 +700,25 @@
 <h4 id="pod-commands">Pod commands<a class="headerlink" href="#pod-commands" title="Permanent link">⌁</a></h4>
 <p>There are two commands that you can issue through Loop to the pod. </p>
 <ul>
-<li>
-<p>Suspend Delivery: This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery will stop indefinitely. A banner notice will appear on the Loop's main screen when insulin delivery is suspended. You will need to press the <code>Resume Delivery</code> button to resume your scheduled basal rate and let Loop get back to action. Bolus deliveries will not be resumed, if they were interrupted.</p>
-</li>
-<li>
-<p>Replace Pod: This command should be used to deactivate a pod prior to replacing it.</p>
-</li>
+<li>Suspend Delivery: This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery will stop indefinitely. </li>
 </ul>
+<p align="center">
+<img src="../img/pod-settings-resume.png" width="250">
+</p>
+
+<p>A banner notice will appear on the Loop's main screen when insulin delivery is suspended. </p>
+<p align="center">
+<img src="../img/pod-hud-suspended.png" width="250">
+</p>
+
+<p>You will need to press <code>Tap to Resume</code> in the banner or the <code>Resume Delivery</code> button in the pod settings to resume your scheduled basal rate and let Loop get back to action. Bolus deliveries will not be resumed, if they were interrupted.</p>
+<ul>
+<li>Replace Pod: This command should be used to deactivate a pod prior to replacing it.</li>
+</ul>
+<p align="center">
+<img src="../img/pod-settings-replace-pod.png" width="250">
+</p>
+
 <h4 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">⌁</a></h4>
 <ul>
 <li>Expiration Reminder: With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting Loop sets it default to a full 3 days. You can set the reminder to any day and time up until 80 hours. This changes the PDM default which sets the alert always to 2 hours before a full 3-day (72 hours) run. This assumes you will not have run out of insulin before that time. In the event your pod runs out of insulin, then you will get an pod empty notification.</li>
@@ -711,32 +729,52 @@
 
 <p></br></p>
 <ul>
-<li>
-<p>Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your pod. However, if you are going to be away from home for longer periods of time, you will want to udpate your pod's basal schedule to match local time by selecting the <code>Change Time Zone</code> command when convenient. Using this command will move your basal schedule on your current pod to the new time. If you start a new pod session the new time zone will be used. Please wait until you see <code>Succeeded</code> appear on the page to ensure the command has successfully been received by the pod.</p>
-</li>
-<li>
-<p>Test Command: This command is used only by the developers to test Omnipod commands in Loop. It currently issues a "get status" command and can be used to update your screen details if needed or force a fault error to generate in the issue report after getting a screaming pod.</p>
-</li>
+<li>Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your pod. However, if you are going to be away from home for longer periods of time, you will want to udpate your pod's basal schedule to match local time by selecting the <code>Change Time Zone</code> command when convenient. Using this command will move your basal schedule on your current pod to the new time. If you start a new pod session the new time zone will be used. Please wait until you see <code>Succeeded</code> appear on the page to ensure the command has successfully been received by the pod.</li>
+</ul>
+<p align="center">
+<img src="../img/pod-change-timezone.png" width="250">
+</p>
+
+<ul>
+<li>Test Command: This command is used only by the developers to test Omnipod commands in Loop. It currently issues a "get status" command and can be used to update your screen details if needed or force a fault error to generate in the issue report after getting a screaming pod.</li>
 </ul>
 <h4 id="status">Status<a class="headerlink" href="#status" title="Permanent link">⌁</a></h4>
 <p>This section provides information about your pod's status. </p>
 <ul>
-<li>
-<p>Bolus Delivery: This line will let you know the % progress of any ongoing bolus. </p>
-</li>
-<li>
-<p>Basal Delivery: This line will let you know if basal delivery is active ("schedule") or if it is suspended.</p>
-</li>
-<li>
-<p>Alarms: If your pod is screaming or beeping an alarm, this line will display information about the alarm. By clicking on this line, you can clear or "snooze" the alarm status.</p>
-</li>
-<li>
-<p>Reservoir: Pods do not report the volume of insulin remaining in the reservoir until there is less than 50 units remaining. So, typically you will see "50+ U" in this line for quite sometime in a new pod.</p>
-</li>
-<li>
-<p>Insulin Delivered: This line is the total amount of insulin, both basal and bolus, delivered by the pod since it was activated.</p>
-</li>
+<li>Bolus Delivery: This line will let you know the % progress of any ongoing bolus. </li>
 </ul>
+<p align="center">
+<img src="../img/pod-settings-bolus-status.png" width="250">
+</p>
+
+<ul>
+<li>Basal Delivery: This line will let you know what is active: The normal basal <em>schedule</em>,the <em>U/hour</em> of a 30 minute Temp Basal or if the pod is <em>suspended</em>.</li>
+</ul>
+<p align="center">
+<img src="../img/pod-settings-basal-delivery.png" width="250">
+</p>
+
+<ul>
+<li>Alarms: If your pod is screaming or beeping an alarm, this line will display information about the alarm. By clicking on this line, you can clear or "snooze" the alarm status.</li>
+</ul>
+<p align="center">
+<img src="../img/pod-settings-alarms.png" width="250">
+</p>
+
+<ul>
+<li>Reservoir: Pods do not report the volume of insulin remaining in the reservoir until there is less than 50 units remaining. So, typically you will see "50+ U" in this line for quite sometime in a new pod.</li>
+</ul>
+<p align="center">
+<img src="../img/pod-settings-reservoir.png" width="250">
+</p>
+
+<ul>
+<li>Insulin Delivered: This line is the total amount of insulin, both basal and bolus, delivered by the pod since it was activated.</li>
+</ul>
+<p align="center">
+<img src="../img/pod-settings-insulin-delivered.png" width="250">
+</p>
+
 <h2 id="next-step-add-cgm">Next Step: Add CGM<a class="headerlink" href="#next-step-add-cgm" title="Permanent link">⌁</a></h2>
 <p>Congrats! You've added your pod to your Loop app. Now, click on the <code>Done</code> button in the upper right corner of your Pump Settings screen to take you back to the Loop's settings. Your next step is to <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/cgm/">Add CGM</a> to your Loop app. After all, without CGM data, your Loop won't loop.</p></div>
         </div>

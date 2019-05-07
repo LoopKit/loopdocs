@@ -493,6 +493,12 @@
 </li>
 
         
+            
+<li >
+    <a href="../../../troubleshooting/omnipod-faults/">Omnipod Faults</a>
+</li>
+
+        
     </ul>
   </li>
 
@@ -593,36 +599,89 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#notifications-in-loop">Notifications in Loop</a></li>
+        <li class="main active"><a href="#loop-notifications">Loop Notifications</a></li>
+        
+            <li><a href="#notication-settings-for-loop">Notication settings for Loop</a></li>
+        
+            <li><a href="#loop-failure">Loop Failure</a></li>
+        
+            <li><a href="#bolus-failure">Bolus Failure</a></li>
+        
+            <li><a href="#low-reservoir">Low Reservoir</a></li>
+        
+            <li><a href="#empty-reservoir">Empty Reservoir</a></li>
+        
+            <li><a href="#pod-expiration-omnipod">Pod Expiration (Omnipod)</a></li>
+        
+            <li><a href="#low-battery-medtronic">Low Battery (Medtronic)</a></li>
+        
+            <li><a href="#remote-notifications">Remote Notifications</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="notifications-in-loop">Notifications in Loop<a class="headerlink" href="#notifications-in-loop" title="Permanent link">⌁</a></h1>
+<h1 id="loop-notifications">Loop Notifications<a class="headerlink" href="#loop-notifications" title="Permanent link">⌁</a></h1>
+<p>Loop provides discrete notifications on the iPhone and Watch which will appear on the (locked) screen and vibrate, depending on your notification settings of Loop.</p>
+<p><font color ="orange"><strong>Omnipod</strong></font><br />
+Most beep alarms are disabled for a much more discrete use of the omnipod. Only the following audible acknowledgements or alarms are currently used:</p>
+<ul>
+<li>Pod activated acknowledgement when filling the pod with enough insulin when pairing a new Pod.</li>
+<li>Pod expiration advisory alarm at 72 hours/3 days (which you can silence in the <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#status">pod status  settings</a>)</li>
+<li>Pod empty reservoir (which you can silence in the <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#status">pod status  settings</a>)</li>
+<li>Pod deactivation acknowledgement </li>
+<li>Pod fault alarm (also called a screamer) when reaching the max life of the Pod: 80 hours (3 days + 8 hours) or a fault/occlusion happens. (which you can silence using the <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#pod-commands">replace pod</a>) command in the pod settings page)</li>
+</ul>
+<h2 id="notication-settings-for-loop">Notication settings for Loop<a class="headerlink" href="#notication-settings-for-loop" title="Permanent link">⌁</a></h2>
+<p>You can customise the way notifications of Loop are behaving in the Settings App of the iPhone:
 <p align="center">
-<img src="../img/loop_notifications.png" width="200">
+<img src="../img/iphone-settings-notifications.png" width="250">
+</p> </p>
+<p>Settings of Loop:
+<p align="center">
+<img src="../img/iphone-notifications-loop.png" width="250">
+</p> </p>
+<h2 id="loop-failure">Loop Failure<a class="headerlink" href="#loop-failure" title="Permanent link">⌁</a></h2>
+<p>At 20, 40, 60, and 120 minutes, there is a Loop Failure notification.
+This mostly happens when the connection is lost for a longer period of time between the CGM or the Rileylink and Loop.</p>
+<p align="center">
+<img src="../img/loop-failure.png" width="250">
 </p>
 
-<p>Loop provides the following local notifications on the Loop iPhone:</p>
-<ul>
-<li>
-<p><font color ="orange"><strong>Loop failure</strong></font>  At 20, 40, 60, and 120 minutes, there is a Loop Failure notification.</p>
-</li>
-<li>
-<p><font color ="orange"><strong>Low Reservoir</strong></font>  At 20% and 10% remaining reservoir volume, there is a Low Reservoir notification.</p>
-</li>
-<li>
-<p><font color ="orange"><strong>Empty Reservoir</strong></font>  Loop will notify when reservoir is empty.</p>
-</li>
-<li>
-<p><font color ="orange"><strong>Low Battery</strong></font> Loop will notify when battery levels have approximately 8-10 hours of battery life remaining.</p>
-</li>
-<li>
-<p><font color ="orange"><strong>Bolus failure</strong></font>  If Loop detects that a bolus was not able to be delivered, it will provide a notification.  Bolus failures are usually due to stale pump data.  Try fetching recent history from the RileyLink menu to update pump data.  Loop will also notify of partial bolus deliveries.</p>
-</li>
-</ul>
+<h2 id="bolus-failure">Bolus Failure<a class="headerlink" href="#bolus-failure" title="Permanent link">⌁</a></h2>
+<p>If Loop detects that a bolus was not able to be delivered, it will provide a notification.  Bolus failures are usually due to stale pump data.  Try fetching recent history from the RileyLink menu to update pump data.  Loop will also notify of partial bolus deliveries.</p>
+<p align="center">
+<img src="../img/loop-bolus-failure.png" width="250">
+</p>
+
+<h2 id="low-reservoir">Low Reservoir<a class="headerlink" href="#low-reservoir" title="Permanent link">⌁</a></h2>
+<p><font color ="orange"><strong>Medtronic</strong></font><br />
+At 20% and 10% remaining reservoir volume, there is a Low Reservoir notification.</p>
+<p><font color ="orange"><strong>Omnipod</strong></font><br />
+At &lt;30U, &lt;20U, &lt;10U  </p>
+<p align="center">
+<img src="../img/pod-reservoir-10U.png" width="250">
+</p>
+
+<h2 id="empty-reservoir">Empty Reservoir<a class="headerlink" href="#empty-reservoir" title="Permanent link">⌁</a></h2>
+<p>Loop will notify when the reservoir is empty. Loop will notify you every minute with this notification. </p>
+<p><font color ="orange"><strong>Omnipod</strong></font><br />
+Normally you will have 5-30 minutes to replace the pod, but do know the pod can <a href="https://soundcloud.com/eelke-jager/1f-nibble-f">scream</a> at any moment from this point on.</p>
+<p align="center">
+<img src="../img/loop-reservoir-empty.png" width="250">
+</p>
+
+<h2 id="pod-expiration-omnipod">Pod Expiration (Omnipod)<a class="headerlink" href="#pod-expiration-omnipod" title="Permanent link">⌁</a></h2>
+<p>You can customise the time of notification when to replace your pod any time from 1 hour up to 71 hours (3 days - 1 hour) <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#expiration-reminder">after staring a new pod</a> or you change the time later in the <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#configuration">pod configuration settings</a>.
+The expiry alarm will always sound when the pod reaches a running full 3 days (72 hours) which you can silence <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#status">in the pod status settings</a>.</p>
+<p align="center">
+<img src="../img/pod-expiration-notice.png" width="250">
+</p>
+
+<h2 id="low-battery-medtronic">Low Battery (Medtronic)<a class="headerlink" href="#low-battery-medtronic" title="Permanent link">⌁</a></h2>
+<p>Loop will notify when battery levels have approximately 8-10 hours of battery life remaining.</p>
+<h2 id="remote-notifications">Remote Notifications<a class="headerlink" href="#remote-notifications" title="Permanent link">⌁</a></h2>
 <p>Loop does not have remote notification to other devices.  If you are a remotely monitoring parent, you will want to read <a href="https://loopkit.github.io/loopdocs/nightscout/pushover/#pushover">here</a> about setting up pushover alerts using your Nightscout site if you want proactive notifications of looping related information.</p></div>
         </div>
 
