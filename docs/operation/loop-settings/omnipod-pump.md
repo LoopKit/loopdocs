@@ -79,9 +79,26 @@ The first section has information regarding how long the pod has been active, ex
 #### Pod commands
 There are two commands that you can issue through Loop to the pod. 
 
-* Suspend Delivery: This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery will stop indefinitely. A banner notice will appear on the Loop's main screen when insulin delivery is suspended. You will need to press the `Resume Delivery` button to resume your scheduled basal rate and let Loop get back to action. Bolus deliveries will not be resumed, if they were interrupted.
+* Suspend Delivery: This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery will stop indefinitely. 
+
+<p align="center">
+<img src="../img/pod-settings-resume.png" width="250">
+</p> 
+
+A banner notice will appear on the Loop's main screen when insulin delivery is suspended. 
+
+<p align="center">
+<img src="../img/pod-hud-suspended.png" width="250">
+</p> 
+
+You will need to press `Tap to Resume` in the banner or the `Resume Delivery` button in the pod settings to resume your scheduled basal rate and let Loop get back to action. Bolus deliveries will not be resumed, if they were interrupted.
+
 
 * Replace Pod: This command should be used to deactivate a pod prior to replacing it.
+
+<p align="center">
+<img src="../img/pod-settings-replace-pod.png" width="250">
+</p> 
 
 #### Configuration
 * Expiration Reminder: With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting Loop sets it default to a full 3 days. You can set the reminder to any day and time up until 80 hours. This changes the PDM default which sets the alert always to 2 hours before a full 3-day (72 hours) run. This assumes you will not have run out of insulin before that time. In the event your pod runs out of insulin, then you will get an pod empty notification.
@@ -93,6 +110,10 @@ There are two commands that you can issue through Loop to the pod.
 
 * Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your pod. However, if you are going to be away from home for longer periods of time, you will want to udpate your pod's basal schedule to match local time by selecting the `Change Time Zone` command when convenient. Using this command will move your basal schedule on your current pod to the new time. If you start a new pod session the new time zone will be used. Please wait until you see `Succeeded` appear on the page to ensure the command has successfully been received by the pod.
 
+<p align="center">
+<img src="../img/pod-change-timezone.png" width="250">
+</p> 
+
 * Test Command: This command is used only by the developers to test Omnipod commands in Loop. It currently issues a "get status" command and can be used to update your screen details if needed or force a fault error to generate in the issue report after getting a screaming pod.
 
 #### Status
@@ -101,13 +122,34 @@ This section provides information about your pod's status.
 
 * Bolus Delivery: This line will let you know the % progress of any ongoing bolus. 
 
-* Basal Delivery: This line will let you know if basal delivery is active ("schedule") or if it is suspended.
+<p align="center">
+<img src="../img/pod-settings-bolus-status.png" width="250">
+</p> 
+
+* Basal Delivery: This line will let you know what is active: The normal basal _schedule_,the _U/hour_ of a 30 minute Temp Basal or if the pod is _suspended_.
+
+<p align="center">
+<img src="../img/pod-settings-basal-delivery.png" width="250">
+</p> 
 
 * Alarms: If your pod is screaming or beeping an alarm, this line will display information about the alarm. By clicking on this line, you can clear or "snooze" the alarm status.
 
+
+<p align="center">
+<img src="../img/pod-settings-alarms.png" width="250">
+</p> 
+
 * Reservoir: Pods do not report the volume of insulin remaining in the reservoir until there is less than 50 units remaining. So, typically you will see "50+ U" in this line for quite sometime in a new pod.
 
+<p align="center">
+<img src="../img/pod-settings-reservoir.png" width="250">
+</p> 
+
 * Insulin Delivered: This line is the total amount of insulin, both basal and bolus, delivered by the pod since it was activated.
+
+<p align="center">
+<img src="../img/pod-settings-insulin-delivered.png" width="250">
+</p> 
 
 ## Next Step: Add CGM
 
