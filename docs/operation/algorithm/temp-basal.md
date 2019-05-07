@@ -2,7 +2,7 @@
 
 The Loop algorithm takes one of four actions depending upon the eventual blood glucose, predicted glucose, and suspend threshold. Note that all temporary basal rate commands are issued for 30 minutes, however they may be updated (re-issued) every 5 minutes. Said another way, Loop may enact a new temporary basal rate every 5 minutes. But, if communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates. Note: If a user is operating Loop in open loop mode, the Loop will only recommend basal dosing actions and will not automatically enact those recommendations.
 
-## Four Possbile Actions
+## Four Possible Actions
 Loop implements one of four possible basal actions: **decrease**, **increase**, **suspend**, or **resume** a scheduled basal rate.
 
 ###  Decrease Basal Rate
