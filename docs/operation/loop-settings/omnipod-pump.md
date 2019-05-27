@@ -49,9 +49,10 @@ When you finish entering in these values, press the blue `Continue` button on th
 1. Prepare your insertion site
 2. Remove the pod's needle cap and adhesive backing
 3. If cannula is safely tucked away, apply pod to your desired infusion site. If cannula is sticking out, press `cancel` in the upper right corner of screen and try a new pod.
-4. Listen to the clicks filling the canula, wait for insertion and the progress bar to complete. The number of clicks to insertion is not consistent. The cannula will deploy before the progress bar is completed.
-5. Confirm cannula has deployed by looking through the peep hole on pod
-6. Press the `Continue` button
+4. Press the `Insert Cannula` button.
+5. Listen to the clicks filling the canula, wait for insertion and the progress bar to complete. The number of clicks to insertion is not consistent. The cannula will deploy before the progress bar is completed.
+6. Confirm cannula has deployed by looking through the peep hole on pod
+7. Press the `Continue` button
 
 <p align="center">
 <img src="../img/pod-setup-02-insert.png" width="650">
