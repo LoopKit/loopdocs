@@ -43,5 +43,5 @@ Where can you find your computer’s macOS version?  Click on the Apple icon in 
 If your computer is running an out-of-date macOS, you can read whether you can upgrade to the latest macOS version [here](http://www.apple.com/macos/how-to-upgrade/#hardware-requirements).  The degree to which you can upgrade an older Apple computer will depend on the age and model of the computer. The minimum age of various Apple computers to run Mojave is shown below:
 
 <p align="center">
-<img src="../img/mojave-minimum.png" width="500">
+<img src="../img/mojave-minimum.png" width="750">
 </p>
