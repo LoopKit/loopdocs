@@ -10,10 +10,16 @@ NOTE: The #1 reason why BGs aren't showing is because you have mismatched passwo
 
 ### Heroku Settings
 
-From within Heroku settings, under `Config Vars` double check the following:
+Login to your Heroku account and from within Heroku settings, click on the  `Reveal Config Vars`
+
+<p align="center">
+<img src="../img/config-vars.png" width="800">
+</p> 
+
+Now from the `Config Vars` area, check the following:
 
 1. You must use the same `BRIDGE_PASSWORD` or `BRIDGE_USER_NAME` that your Dexcom mobile app is using.
-2. You must have `bridge` and/or `careportal` on the ENABLE line in Heroku settings (you can have other values there...but don't forget these two).
+2. You must have `bridge` and `careportal` on the ENABLE line in Heroku Settings >> Config Vars area (you can have other values there...but don't forget these two).
 3. If you are outside the USA, you must add `BRIDGE_SERVER` set to `EU` in Heroku settings.
 4. Your `careportal` must be one word in the ENABLE line, sometimes autocorrect makes it two words.
 5. If using `mmol`, make sure you have spelled that value correctly in the `DISPLAY_UNITS`.
