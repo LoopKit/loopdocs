@@ -615,7 +615,7 @@
         
             <li><a href="#dexcom-data-not-showing">Dexcom data not showing</a></li>
         
-            <li><a href="#loop-data-not-appearing-in-nightscout">Loop data not appearing in Nightscout</a></li>
+            <li><a href="#loop-data-not-showing">Loop data not showing</a></li>
         
     
     </ul>
@@ -630,7 +630,7 @@
 <h3 id="heroku-settings">Heroku Settings<a class="headerlink" href="#heroku-settings" title="Permanent link">⌁</a></h3>
 <p>From within Heroku settings, under <code>Config Vars</code> double check the following:</p>
 <ol>
-<li>You must use the same <code>BRIDGE_PASSWORD</code> or <code>BRIDGE_USER_NAME</code> than your Dexcom mobile app is using.</li>
+<li>You must use the same <code>BRIDGE_PASSWORD</code> or <code>BRIDGE_USER_NAME</code> that your Dexcom mobile app is using.</li>
 <li>You must have <code>bridge</code> and/or <code>careportal</code> on the ENABLE line in Heroku settings (you can have other values there...but don't forget these two).</li>
 <li>If you are outside the USA, you must add <code>BRIDGE_SERVER</code> set to <code>EU</code> in Heroku settings.</li>
 <li>Your <code>careportal</code> must be one word in the ENABLE line, sometimes autocorrect makes it two words.</li>
@@ -650,7 +650,7 @@
 <img src="../img/sharing.jpg" width="250">
 </p>
 
-<h2 id="loop-data-not-appearing-in-nightscout">Loop data not appearing in Nightscout<a class="headerlink" href="#loop-data-not-appearing-in-nightscout" title="Permanent link">⌁</a></h2>
+<h2 id="loop-data-not-showing">Loop data not showing<a class="headerlink" href="#loop-data-not-showing" title="Permanent link">⌁</a></h2>
 <p>If your Loop data is not showing in Nightscout, please delete your Nightscout account in Loop settings area. Enter the information in freshly. Make sure to use <code>https://</code> to start the site URL. Make sure you have <code>loop</code> on the ENABLE line in Heroku settings. Finally, make sure your Loop app is still set to <code>Event History</code> from within the pump's section in Loop settings.</p></div>
         </div>
 
