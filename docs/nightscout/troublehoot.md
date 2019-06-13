@@ -16,12 +16,12 @@ Login to your Heroku account and from within Heroku settings, click on the  `Rev
 <img src="../img/config-vars.png" width="800">
 </p> 
 
-Now from the `Config Vars` area, check the following:
+Now from the `Config Vars` area, check the following (see screenshot below for reference):
 
 1. You must use the same `BRIDGE_PASSWORD` or `BRIDGE_USER_NAME` that your Dexcom mobile app is using.
-2. You must have `bridge` and `careportal` on the ENABLE line in Heroku Settings >> Config Vars area (you can have other values there...but don't forget these two).
+2. You must have `bridge` and `careportal` on the `ENABLE` line (you can have other values there...but don't forget these two).
 3. If you are outside the USA, you must add `BRIDGE_SERVER` set to `EU` in Heroku settings.
-4. Your `careportal` must be one word in the ENABLE line, sometimes autocorrect makes it two words.
+4. Your `careportal` must be one word in the `ENABLE` line, sometimes autocorrect makes it two words.
 5. If using `mmol`, make sure you have spelled that value correctly in the `DISPLAY_UNITS`.
 
 <p align="center">
