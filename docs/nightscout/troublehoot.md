@@ -12,7 +12,7 @@ NOTE: The #1 reason why BGs aren't showing is because you have mismatched passwo
 
 From within Heroku settings, under `Config Vars` double check the following:
 
-1. You must use the same `BRIDGE_PASSWORD` or `BRIDGE_USER_NAME` than your Dexcom mobile app is using.
+1. You must use the same `BRIDGE_PASSWORD` or `BRIDGE_USER_NAME` that your Dexcom mobile app is using.
 2. You must have `bridge` and/or `careportal` on the ENABLE line in Heroku settings (you can have other values there...but don't forget these two).
 3. If you are outside the USA, you must add `BRIDGE_SERVER` set to `EU` in Heroku settings.
 4. Your `careportal` must be one word in the ENABLE line, sometimes autocorrect makes it two words.
@@ -32,6 +32,6 @@ Make sure you have Dexcom Share turned ON in your Dexcom app. In the Dexcom app'
 <img src="../img/sharing.jpg" width="250">
 </p>
 
-## Loop data not appearing in Nightscout
+## Loop data not showing
 
 If your Loop data is not showing in Nightscout, please delete your Nightscout account in Loop settings area. Enter the information in freshly. Make sure to use `https://` to start the site URL. Make sure you have `loop` on the ENABLE line in Heroku settings. Finally, make sure your Loop app is still set to `Event History` from within the pump's section in Loop settings.
