@@ -83,6 +83,7 @@ pages:
     - 'Overview': 'nightscout/overview.md'
     - 'Brand New NS': 'nightscout/new_user.md'
     - 'Retrofit Existing NS': 'nightscout/update_user.md'
+    - 'Setup Troubleshooting': 'nightscout/troublehoot.md'
     - 'NS Stopped Working': 'nightscout/mlab_cleanup.md'
     - 'Azure to Heroku': 'nightscout/azure_migration.md'
     - 'IFTTT': 'nightscout/ifttt.md'
