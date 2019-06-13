@@ -628,10 +628,15 @@
 <p>If you are using a Dexcom system, and your data is not appearing in Nightscout, there are only a limited number of reasons for that. You should check your (1) Heroku settings and (2) Dexcom Share.</p>
 <p>NOTE: The #1 reason why BGs aren't showing is because you have mismatched password and user names in Heroku settings and Dexcom. Please see blue box below for that error.</p>
 <h3 id="heroku-settings">Heroku Settings<a class="headerlink" href="#heroku-settings" title="Permanent link">⌁</a></h3>
-<p>From within Heroku settings, under <code>Config Vars</code> double check the following:</p>
+<p>Login to your Heroku account and from within Heroku settings, click on the  <code>Reveal Config Vars</code></p>
+<p align="center">
+<img src="../img/config-vars.png" width="800">
+</p>
+
+<p>Now from the <code>Config Vars</code> area, check the following:</p>
 <ol>
 <li>You must use the same <code>BRIDGE_PASSWORD</code> or <code>BRIDGE_USER_NAME</code> that your Dexcom mobile app is using.</li>
-<li>You must have <code>bridge</code> and/or <code>careportal</code> on the ENABLE line in Heroku settings (you can have other values there...but don't forget these two).</li>
+<li>You must have <code>bridge</code> and <code>careportal</code> on the ENABLE line in Heroku Settings &gt;&gt; Config Vars area (you can have other values there...but don't forget these two).</li>
 <li>If you are outside the USA, you must add <code>BRIDGE_SERVER</code> set to <code>EU</code> in Heroku settings.</li>
 <li>Your <code>careportal</code> must be one word in the ENABLE line, sometimes autocorrect makes it two words.</li>
 <li>If using <code>mmol</code>, make sure you have spelled that value correctly in the <code>DISPLAY_UNITS</code>.</li>
