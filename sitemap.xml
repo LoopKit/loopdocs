@@ -272,6 +272,12 @@
     </url>
         
     <url>
+     <loc>/nightscout/troublehoot/</loc>
+     <lastmod>2019-06-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/nightscout/mlab_cleanup/</loc>
      <lastmod>2019-06-12</lastmod>
      <changefreq>daily</changefreq>
