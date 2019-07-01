@@ -5,9 +5,9 @@
 
 ## Einleitung
 
-[Loop](https://github.com/LoopKit/Loop) ist eine App-Vorlage, um ein automatisiertes Insulinabgabesystem zu erstellen Es ist ein kleiner Baustein, der nur entstehen konnte, weil er sich auf reichliche Arbeiten vieler Beteiligter stützt.  
+[Loop](https://github.com/LoopKit/Loop) ist eine App-Vorlage, um ein automatisiertes Insulinabgabesystem zu erstellen Es ist ein kleiner Baustein, der nur entstehen konnte, weil er sich auf reichlich Arbeit vieler Beteiligter stützt.  
 
-Die App setzt direkt auf die Arbeit von [LoopKit](https://github.com/LoopKit/LoopKit) auf. LoopKit ist eine Ansammlung von Frameworks, die die Speicherung und Abfrage von Daten und Berechnungen sowie den Gebrauch von szandardmäßigen Ansichtscontrollern in Loop ermöglicht.
+Die App setzt direkt auf die Arbeit von [LoopKit](https://github.com/LoopKit/LoopKit) auf. LoopKit ist eine Ansammlung von Frameworks, die die Speicherung und Abfrage von Daten und Berechnungen sowie den Gebrauch von standardmäßigen Ansichtscontrollern in Loop ermöglicht.
 
 !!!WARNUNG "Wichtig"
 
@@ -19,32 +19,32 @@ Die App setzt direkt auf die Arbeit von [LoopKit](https://github.com/LoopKit/Loo
       **Sie tragen die alleinige Verantwortung für die Erstellung und den Betrieb des Systems und 
       tragen daher die Risiken komplett selbst.**
 
-Mit der opensource App-Vorlage Loop können Sie ein Insulinabgabesystem erstellen, das aus ausgewählter kommerzieller und opensource Hardware- und Softwaretechnologien wie einer Insulinpumpe, einer kontinuierlichen Glukosemessung (CGM) und einem Insulindosierungs-Algorithmus besteht. Der Algorithmus ermöglicht einen kontinuierlichen Basalinsulindosierungs-“Loop”.  Dieser Loop errechnet zukünftige Glukosewertee anhand von Basalratenprofilen, eingegebenen Kohlenhydratenc arbohydrate intake, insulin on board, and current CGM readings.  These glucose forecasts provide Loop with the information needed to recommend a temporary basal rate to attain a targeted glucose range in the future.  The system can either operate as an “open loop” by making recommendations to the user for their approval before enacting or as a “closed loop” by automatically setting the recommended temporary basal rate. 
+Mit der Open-Source-App-Vorlage Loop können Sie ein Insulinabgabesystem erstellen, das aus ausgewählter kommerzieller und Open-Source-Hardware- und Softwaretechnologien wie einer Insulinpumpe, einer kontinuierlichen Glukosemessung (CGM) und einem Insulindosierungs-Algorithmus besteht. Der Algorithmus ermöglicht einen kontinuierlichen Basalinsulindosierungs-“Loop”.  Dieser Loop errechnet zukünftige Glukosewerte anhand von einem Basalratenprofil, der eingegebenen Kohlenhydratmenge,dem aktiven Insulin und dem aktuellen CGM-Wert. Diese Glukosewertvorhersage ist die Grundlage für Loop, um temporäre Basalraten zu bestimmen, um zukünftig die Glukosewerte innerhalb des Korrekturbereichs zu erreichen. Das System kann als “open loop” betrieben werden, indem dem Nutzer Basalraten empfohlen werden, die der Nutzer bestätigen muss, bevor die Basalrate angwendet wird. Oder es wird als “closed loop” betrieben, wobei die empfohlenen Basalraten automatisch angewendet werden. 
 
-You should undertake this project in stages. For example, first “open loop” to familiarize yourself with Loop’s operation. Also, investigate the code to ensure you understand what it is recommending and why. Then when you progress to “closed loop”, do so safely by starting with appropriate safety limits and only progress to higher limits after several days of no lows. Please ask questions at this point about why Loop is making the recommendations it does.  It should be similar to the therapy decisions you would make yourself.  If the recommendations it makes are different than you would make, try to figure out why.
+Sie sollten den Beginn des Loopens in Phasen aufteilen. Fangen Sie zum Beispiel mit dem “open loop” an, um sich mit der Vorgehensweise von Loop vertraut zu machen. Machen Sie sich ebenfalls mit dem Quellcode vertraut, damit Sie verstehen, was Ihnen und warum es Ihnen vorgeschlagen wird. Wenn Sie dann den “closed loop” betreiben, starten Sie mit angemessenen Sicherheitsgrenzen, die Sie fortschreitend erweitern können, wenn Sie mehrere Tage keine Hypos hatten. Stellen Sie sich zu diesem Zeitpunkt, die Frage, warum Loop Ihnen diesen Vorschlag unterbreitet. Die Antwort sollte der Entscheidung ähneln, die Sie aufgrund Ihrer bisherigen Therapie selber getroffen hätten. Sollten die Vorschläge von Ihren Entscheidungen differieren, versuchen Sie den Grund für den Unterschied herauszufinden.
 
-## Development History
+## Entwicklungsverlauf
 
-Loop has been developed as an open-source, shared project.  For a really interesting read about the history of Loop development, check out this [History of Loop and LoopKit](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805) post, written by Loop developer Nate Racklyeft.  The project continues to be a labor-of-love by a community of users; maintained and improved by volunteers.
+Loop wird bisher als ein geteiltes Open-Source-Projekt betrieben. Um weitere, interessante Details über die Entwicklung von Loop zu erfahren, besuchen Sie diesen [History of Loop and LoopKit](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805) Beitrag (nur auf Englisch verfügbar), der von dem Loop Entwickler Nate Racklyeft verfasst wurde.  Das Projekt ist eine Herzensangelegenheit aller Beteiligter, das mithilfe ehrenamtlicher Mitarbeit unterhalten, entwickelt und verbessert wird.
 
 
-## How to Use These Docs
+## Wo finden Sie was in den Docs?
 
-* Use the navigation menu at the top of the screen to find the info you are looking for.
-* A Table of Contents for the current page is always displayed on the left side of the screen.
-* You can search the Loop Docs site by clicking the <img src="img/search_icon.png" width="50px"> icon.
+* Nutzen Sie das Navigationsmenü im oberen Bereich, um Informationen, die Sie suchen, direkt zu finden.
+* Eine Inhaltsangabe von der aktuellen Webseite wird Ihnen immer links angezeigt.
+* Wenn Sie in den Loop Docs etwas suchen möchten, klicken Sie auf das <img src="img/search_icon.png" width="50px"> Symbol.
 
     <img src="img/search_example.png" width="400">
 
 
-## Stay in the Loop!
+## Bleiben Sie auf dem Laufenden!
 
-[Sign up for the Loop Users announcement list](https://groups.google.com/forum/#!forum/loop-ios-users) to stay informed of critical issues that may arise.
+[Melden Sie sich bei der Loop Users announcement list an](https://groups.google.com/forum/#!forum/loop-ios-users), um über Kritisches, das auftauchen kann, informiert zu werden. (nur auf Englisch verfügbar)
 
-Join the gitter chat at [https://gitter.im/LoopKit/Loop](https://gitter.im/LoopKit/Loop)
+Schließen Sie sich dem Gitter-Chat an [https://gitter.im/LoopKit/Loop](https://gitter.im/LoopKit/Loop) (nur auf Englisch verfügbar)
 
-There is also a [Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf) that you might wish to join for support.  When you request to join the group, please remember to check your messages box on facebook and respond to the message.
+Es gibt auch eine [Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf), der Sie beitreten können, um Supportanfragen zu stellen.  Um der Gruppe beizutreten, vergessen Sie bitte nicht, den Posteingang bei Facebook auf eine neue Nachricht von der Gruppe zu überprüfen und auf die Nachricht zu antworten.(nur auf Englisch verfügbar)
 
-## Contribute
+## Ihr Beitrag
 
-Please consider submitting any updates and improvements to the docmentation that you want to share by submitting a Pull Request to the [loopdocs repo](https://github.com/LoopKit/loopdocs). For more information on how to contribute to an open source project, this [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/) guide may be useful. Also, please review the Loop [LICENSE](https://github.com/LoopKit/Loop/blob/master/LICENSE.md) and Loop [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md).
+Bitte ziehen  Sie in Erwägung, Updates und Verbesserungsvorschläge zur Dokumentation, die Sie teilen möchten, mithilfe eines Pull Request an [loopdocs repo](https://github.com/LoopKit/loopdocs) einzureichen. Weitere Informationen über Beiträge zu einem Open-Source-Projekt erhalten Sie hier [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/) (nur auf Englisch verfügbar). Bittte beachten Sie ebenfalls Loop [LICENSE](https://github.com/LoopKit/Loop/blob/master/LICENSE.md) and Loop [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md).(nur auf Englisch verfügbar)
