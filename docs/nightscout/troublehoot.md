@@ -23,6 +23,7 @@ Now from the `Config Vars` area, check the following (see screenshot below for r
 3. If you are outside the USA, you must add `BRIDGE_SERVER` set to `EU` in Heroku settings.
 4. Your `careportal` must be one word in the `ENABLE` line, sometimes autocorrect makes it two words.
 5. If using `mmol`, make sure you have spelled that value correctly in the `DISPLAY_UNITS`.
+6. If BG is arriving late, and you want it to be pulled from Dexcom Share sooner, you can change the polling interval by setting `BRIDGE_INTERVAL` to for example 60000 (one minute in milliseconds). The default value is 150000 which is 2.5 minutes.
 
 <p align="center">
 <img src="../img/bridge-settings.jpg" width="800">
