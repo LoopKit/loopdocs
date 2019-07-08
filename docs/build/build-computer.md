@@ -30,7 +30,7 @@ Terminal app is very plain looking when you open it. That is normal. Copy and pa
 
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-There will be a prompt asking if you want to continue.  Press return to continue, then it will prompt for your password.  
+There will be a prompt asking if you want to continue.  Press return to continue, then it will prompt for your password.  The password is your computer's password.
 
 **<u><font color = "red">Don't freak out that you can't see your password while you type. That is normal. Terminal app doesn't show keystrokes when you enter passwords, but it is still recording your password entry. If you think you messed up because you were confused, press the delete key a bunch of times and then start fresh with the password entry.</font></u>**  
 

@@ -81,6 +81,9 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
 
 ## Signing Targets
 
+!!!info "Free Developer Account Users: READ ME"
+    If you are using a free developer account to sign your targets in this next step, you will need to do a code customization first. As a free developer account, you are restricted from building apps that have Siri capabilities built-in. Loop has Siri capabilities...so you will need to disable them before proceeding on with signing and building your app. Please click [here to find instructions](https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities) on how to disable your Siri capabilities before moving on with signing your targets. Once you finish that step, come back here and finish the rest of the instructions.
+
 Once you select your device (your iPhone's name), we are ready to start signing the four targets. We will start with the Loop target, the first one on the target list.  Under the "Signing" area, select the dropdown menu where it currently says "none". Choose your team that you'd like to sign with. If you select a team name with (personal team), your app will expire after 7 days. If you select a team name without that (personal team), your app will last a full year.  If you never signed up for a free developer account, you will not have a (personal team) showing. Make sure you keep the "automatically manage signing" box checked above the team selection area.
 
 <p align="center">
@@ -112,11 +115,15 @@ When you've finished your customizations, come on back to this section and conti
 
 **Existing Apple Watch users**: Please update your watchOS prior to building Loop app.  The current version of Loop requires watchOS 4.1 or newer.
 
+**Series 0 Apple Watch users**: Please you will need to do a minor change in Loop code for your watch to use Loop. Select the WatchApp Extension target and under the 'Linked Frameworks and Libraries' section, click the '+' and type 'ClockKit' and press 'Add'. In the 'Status' column of the new row where ClockKit been added, change 'Required' to 'Optional'. You can move on with the rest of the instructions below now that you've completed that step. Whew, that old Apple Watch is still gonna work with this modern app.
+
 ## Build Loop
 
 Signed the four targets? All done with any customizations? Have your Apple watch paired and updated? iPhone is unlocked and plugged into computer?
 
-Let’s finish the installation of the Loop app onto your iPhone.  Double check to make sure your iPhone's name is still selected and then press the “play” button (or build button) to start Xcode on its way.  You’ll see the progression of the build in the status window.  New builds can take about 40 minutes depending on the speed of the computer and internet.  **Just be patient.**  The progress will get "stuck" on one step for a very long time, and then the others will fly by when that one slow step is done. Not every step is equal in duration. Do not give up on the build. You will be interrupted during the build for the codesign/keychain access prompt discussed below though. However, you can remain useful during the wait by reading the section below titled "While it's building...." 
+Let’s finish the installation of the Loop app onto your iPhone.  Double check to make sure your iPhone's name is still selected and then press the “play” button (or build button) to start Xcode on its way.  You’ll see the progression of the build in the status window.  New builds can take about 40-60 minutes depending on the speed of the computer and internet.  **Just be patient.**  The progress will get "stuck" on one step for a very long time, and then the others will fly by when that one slow step is done. Not every step is equal in duration. Do not give up on the build. Xcode will ALWAYS tell you eventually that the build either succeeded or failed...it will not just leave you hanging without an answer. 
+
+You will be interrupted during the build for the codesign/keychain access prompt discussed below though. However, you can remain useful during the wait by reading the section below titled "While it's building...." 
 
 <p align="center">
 <img src="../img/build_button.png" width="750">
@@ -184,7 +191,9 @@ If you get a message that your build failed, you're likely going to see a list o
 <img src="../img/general-error.jpg" width="750">
 </p>
 
-You'll need to go to the [Build Errors](build_errors.md) page to resolve the error message. Read your error message(s), find the matching error in the Build Errors page's images and descriptions, and follow the directions for repairing the error.
+!!!info "IF YOUR BUILD FAILS..."
+    You'll need to go to the [Build Errors](build_errors.md) page to resolve the error message. Read your error message(s), find the matching error in the Build Errors page's images and descriptions, and follow the directions for repairing the error.
+    If you need help after trying the Build Errors page, please don't forget to provide the information requested in that page's "Posting for Help" section to help streamline the troubleshooting...including screenshots.
 
 ## Next Step: Jaeb's Loop Observational Study
 You're done building your Loop app...but first, if you are a USA Loop user, please read about the [Jaeb Observational Study](https://loopkit.github.io/loopdocs/build/jaeb-study/) before moving onto [Loop App setup](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/)
