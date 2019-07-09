@@ -111,11 +111,12 @@ If you want any custom configurations to your Loop or Loop Apple Watch apps, now
 When you've finished your customizations, come on back to this section and continue on with the rest of the build.
 
 ## Pair your Apple Watch
-**New Apple Watch users**: If you have an unopened Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)</br></br>
+**New Apple Watch users**: If you have an unopened Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)</br>
 
 **Existing Apple Watch users**: Please update your watchOS prior to building Loop app.  The current version of Loop requires watchOS 4.1 or newer.
 
-**Series 0 Apple Watch users**: Please you will need to do a minor change in Loop code for your watch to use Loop. Select the WatchApp Extension target and under the 'Linked Frameworks and Libraries' section, click the '+' and type 'ClockKit' and press 'Add'. In the 'Status' column of the new row where ClockKit been added, change 'Required' to 'Optional'. You can move on with the rest of the instructions below now that you've completed that step. Whew, that old Apple Watch is still gonna work with this modern app.
+!!!info "Series 0 Apple Watch users: Read Me"
+    **Series 0 Apple Watch users**: Please you will need to do a minor change in Loop code for your watch to use Loop. Select the WatchApp Extension target and under the 'Linked Frameworks and Libraries' section, click the '+' and type 'ClockKit' and press 'Add'. In the 'Status' column of the new row where ClockKit been added, change 'Required' to 'Optional'. You can move on with the rest of the instructions below now that you've completed that step. Whew, that old Apple Watch is still gonna work with this modern app.
 
 ## Build Loop
 
