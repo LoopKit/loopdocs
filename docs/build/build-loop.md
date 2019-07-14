@@ -118,6 +118,35 @@ When you've finished your customizations, come on back to this section and conti
 !!!info "Series 0 Apple Watch users: Read Me"
     **Series 0 Apple Watch users**: Please you will need to do a minor change in Loop code for your watch to use Loop. Select the WatchApp Extension target and under the 'Linked Frameworks and Libraries' section, click the '+' and type 'ClockKit' and press 'Add'. In the 'Status' column of the new row where ClockKit been added, change 'Required' to 'Optional'. You can move on with the rest of the instructions below now that you've completed that step. Whew, that old Apple Watch is still gonna work with this modern app.
 
+## INTERMISSION
+
+STOP STOP STOP
+
+You guys...this is about safety.
+
+People keep ignoring this advice and I'm frankly a little peeved, as it is ABOUT SAFETY. So, I'm moving this advice up in the process so that you don't ignore it. This is me getting in your face.
+
+![attention](https://media.giphy.com/media/EqVipgL5iu0ivcddvA/source.gif)
+
+!!!warning "DO NOT WING THE SETUP"
+I have warnings all over these instructions to **continue to use these docs to finish setting up your app after it builds. DO NOT IGNORE THAT ADVICE. DO NOT ENTER ONE SETTING WITHOUT HAVING THE DOCS OPEN AND FOLLOWING ALONG AT THE SAME TIME.**
+
+The section in these docs called "Set up App" (See it? Look for it now...at the top of your webpage) needs to be used to input all the settings in your app. READ ALONG WITH THE DOCS to enter those settings. There are important safety tips and advice in there. And then after you finish setup, you need to read the "Operate" section...like BEFORE YOU OPERATE LOOP. Don't bolus for a meal, or enter a meal, until you've read through the Operate section. 
+
+I'm worried you will fail to heed the advice about using the setup and operate sections. People have ignored it before. They skim read and think that's good enough. DO NOT BE LIKE THAT. Read each section. 
+
+![attention](https://media.giphy.com/media/xT9DPJVjlYHwWsZRxm/source.gif)
+
+BUT, to mitigate the inevitable people who will ignore that advice....here's the two most important safety tips that I feel obliged to present out of order because (damn it), people will ignore my advice still.
+
+!!!warning "TOP TWO SAFETY MISTAKES YOU SHOULD AVOID"
+1. DO NOT ENTER SETTINGS YOU ARE UNSURE OF. If you don't know your settings or know what the terms mean, stop. Read the docs, all the settings entries are explained there. Ask your endo if you don't have established values for those settings. Don't just guess an ISF, carb ratio, basal rate, or maximum delivery limits.</br></br>
+
+2. DO NOT ENTER DOUBLE CARB ENTRIES ACCIDENTALLY. When you enter a meal in Loop and press the `save` button...those carbs are saved. Let me repeat: THOSE CARBS ARE SAVED...even if you cancel the bolus for them. This is an automated insulin delivery system and if it thinks you have carbs on board, it will try to give you appropriate insulin for those carbs. Most common new user mistake: enters a meal, saves the carbs, has change of heart or gets confused, and cancels the bolus screen...thinking they've just canceled the entire meal entry. BUT YOU HAVEN'T. You only canceled the bolus...remember, you pressed SAVE earlier for the carbs. If you make a mistake or change your mind on a carb entry after you pressed save, then tap the green carb chart in Loop's main display and edit or delete that entry.
+
+Ok, so now that I've got your attention, you can continue on with the last step in building you app...but remember, we just pinky swore that you would use the setup and operate sections to finish this all? Don't break my heart, keep your promise.
+
+
 ## Build Loop
 
 Signed the four targets? All done with any customizations? Have your Apple watch paired and updated? iPhone is unlocked and plugged into computer?
