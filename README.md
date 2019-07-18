@@ -43,7 +43,7 @@ $ mkdocs gh-deploy
 * Use images for clarity whenever appropriate
 
 ### Admonitions
-[Admonitions](https://pythonhosted.org/Markdown/extensions/admonition.html) are a markdown extension that enable formatted blocks for visually calling out information. The types are: note, info, warning, and danger. Here are some examples of how to write the markdown:
+[Admonitions](https://python-markdown.github.io/extensions/admonition/) are a markdown extension that enable formatted blocks for visually calling out information. The types are: note, info, warning, and danger. Here are some examples of how to write the markdown:
 
 ```markdown
 !!! note
