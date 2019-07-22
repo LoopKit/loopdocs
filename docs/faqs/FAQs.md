@@ -76,7 +76,7 @@ If you are borrowing an Apple computer, you should ask the person to (1) update 
 
 The short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)
 
-The longer answer is that Loop code is updated periodically to include new features and bug fixes.  When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app upate yourself with [update instructions here](https://loopkit.github.io/loopdocs/setup/update/updating/). In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.
+The longer answer is that Loop code is updated periodically to include new features and bug fixes.  When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store... instead you do the app update yourself with the [update instructions here](https://loopkit.github.io/loopdocs/build/update/updating/). In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.
 
 ## Can I use a VirtualMachine to build?
 
