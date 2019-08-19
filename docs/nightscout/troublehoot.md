@@ -40,4 +40,4 @@ Make sure you have Dexcom Share turned ON in your Dexcom app. In the Dexcom app'
 
 ## Loop data not showing
 
-If your Loop data is not showing in Nightscout, please delete your Nightscout account in Loop settings area. Enter the information in freshly. Make sure to use `https://` to start the site URL. Make sure you have `loop` on the ENABLE line in Heroku settings. Finally, make sure your Loop app is still set to `Event History` from within the pump's section in Loop settings.
+If your BG data is showing, but Loop data is not (like Loop pill is empty and carbs and boluses are not showing), please delete your Nightscout account in Loop settings area. Enter the information in freshly. Make sure to use `https://` to start the site URL. Make sure there is no trailing slash at the end of the URL. Make sure you have `loop` on the ENABLE line in Heroku settings.
