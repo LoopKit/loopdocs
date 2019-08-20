@@ -20,9 +20,11 @@ Loop has proven very exciting for many people. A really simple way for you to co
 
 Don't count yourself out. Your data is valuable. Honestly...don't worry about your A1C, don't worry about your carb consumption, etc.  The study is open to ALL participants so long as you are using Loop and live in the USA.
 
-## New Loop Users are EXTRA important
+## New Loop Users
 
 (DIY Katie, LoopDocs author, here clearing up some FAQs that we've had lately in Looped Group re: the Jaeb study. I'm posting this as an interested party wanting to see the study participation thrive, not as a representative of Jaeb.)
+
+Jaeb enrollment is open to people who are 18 years old and younger AND are new Loopers (under 2 weeks of use). The allotment of adults and seasoned Loop users has been met....THANK YOU!
 
 !!!info "Omnipod users please read"
     As part of that observational study, there's a particular set of participants anticipated that are users that are within their first days of Loop use; ideally enrolling before 7 days of Loop use, but up to 14 days. Almost all Omnipod Loop users will fall into that category called Cohort A.

@@ -6,7 +6,7 @@ You are getting closer.  This next step is simply to download and install a free
     If you are building for Omnipod Loop, Loop dev, or have iOS 12.2 installed, make sure you have followed the previous section for updating to macOS 10.14.3 at a minimum...you won't be able to download and use Xcode 10.2 without that update first.
 
 ## Download Xcode
-Open the App Store application on your computer (it is in your Applications folder).  Search for Xcode and click on the link to download/install Xcode for free.  The most current version of Xcode is 10.2.1.  Do not download the Xcode beta program, just get the regular version of the program. The file size is fairly large so expect about 45 minutes, or even multiple hours, to download depending on your internet speed. 
+Open the App Store application on your computer (it is in your Applications folder). Search for Xcode and click on the link to download/install Xcode for free. The most current version of Xcode is 10.3.  Do not download the Xcode beta program, just get the regular version of the program. The file size is fairly large so expect about 45 minutes, or even multiple hours, to download depending on your internet speed. 
 
 If you already had a previous installation of Xcode, you can just check your App Store for macOS and then Xcode updates before building Loop.
 
