@@ -18,7 +18,6 @@ pages:
     - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
     - 'CGM FAQs': 'faqs/cgm-faqs.md'
     - 'Safety Tips': 'faqs/safety-faqs.md'
-    - 'Glossary': 'faqs/glossary.md'
 - Gear:
     - 'Insulin Pump':
         - 'Medtronic': 'setup/requirements/mdt-pump.md'
