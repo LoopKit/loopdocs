@@ -26,18 +26,17 @@
 
 /* Variations */
 .admonition.danger {
-  border-left-color: #d9534f;
-  background-color: #FFADAB;
+  border-left-color: #7dc991;
+  background-color: #d1e8d7;
 }
 .admonition.danger .admonition-title {
-  color: #961512;
+  color: #7dc991;
 }
 .admonition.warning {
   border-left-color: #f0ad4e;
   background-color: #FFD8A0;
 }
 .admonition.warning .admonition-title {
-  /*color: #f0ad4e;*/
   color: #AD6D11;
 }
 .admonition.info {

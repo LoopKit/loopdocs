@@ -8,677 +8,455 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-
-	<title>General Loop FAQs - LoopDocs</title>
-
+        <title>General Loop FAQs - LoopDocs</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <link href="../../css/admonitions.css" rel="stylesheet">
-
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
             ga('create', 'UA-109876065-1', 'loopkit.github.io');
             ga('send', 'pageview');
-        </script>
-        
+        </script> 
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+            <div class="container">
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">LoopDocs</a>
+                </div>
 
-            <!-- Main title -->
-            <a class="navbar-brand" href="../..">LoopDocs</a>
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            <!-- Main navigation -->
-            <ul class="nav navbar-nav">
-            
-            
-                <li >
-                    <a href="../..">Home</a>
-                </li>
-            
-            
-            
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../docs-faqs/">Using This Site FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li class="active">
     <a href="./">General Loop FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../omnipod-faqs/">Omnipod FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../rileylink-faqs/">RileyLink FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../algorithm-faqs/">Algorithm FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../cgm-faqs/">CGM FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../safety-faqs/">Safety Tips</a>
 </li>
-
-                    
-                        
-<li >
-    <a href="../glossary/">Glossary</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gear <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Insulin Pump</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../setup/requirements/mdt-pump/">Medtronic</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../setup/requirements/omnipod-pump/">Omnipod</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                        
-<li >
-    <a href="../../setup/requirements/cgm/">CGM</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../setup/requirements/rileylink/">RileyLink</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../setup/requirements/computer/">Computer</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../setup/requirements/iphone/">iPhone</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../setup/requirements/appledev/">Apple Developer</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../build/overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/build-computer/">Prep Computer</a>
+    <a href="../../build/step1/">Step 1 Compatible Computer</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/build-developer/">Get Developer Account</a>
+    <a href="../../build/step2/">Step 2 Compatible iPhone/iPod touch</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/build-xcode/">Install Xcode</a>
+    <a href="../../build/step3/">Step 3 Compatible Pump</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/build-loop/">Build Loop</a>
+    <a href="../../build/step4/">Step 4 Compatible CGM</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/build_errors/">Build Errors</a>
+    <a href="../../build/step5/">Step 5 Order a RileyLink</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/health/">Health Permissions</a>
+    <a href="../../build/step6/">Step 6 Enroll in Apple Developer Program</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/jaeb-study/">Loop Study</a>
+    <a href="../../build/step7/">Step 7 Install Homebrew</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/code_customization/">Code Customization</a>
+    <a href="../../build/step8/">Step 8 Download Xcode</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/new-iphone/">New iPhone</a>
+    <a href="../../build/step9/">Step 9 Xcode Preferences</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/update/updating/">Update Loop</a>
+    <a href="../../build/step10/">Step 10 Test Settings</a>
 </li>
-
-                    
-                        
+                                    
 <li >
-    <a href="../../build/update/new-version/">New Version Info</a>
+    <a href="../../build/step11/">Step 11 Make plans for Loop Data</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                    
+<li >
+    <a href="../../build/step12/">Step 12 Meet Community</a>
+</li>
+                                    
+<li >
+    <a href="../../build/step13/">Step 13 Download Loop code</a>
+</li>
+                                    
+<li >
+    <a href="../../build/step14/">Step 14 Build Loop app</a>
+</li>
+                                    
+<li >
+    <a href="../../build/build_errors/">Oh dear! Build errors?</a>
+</li>
+                                    
+<li >
+    <a href="../../build/jaeb-study/">Jaeb Loop Study</a>
+</li>
+                                    
+<li >
+    <a href="../../build/code_customization/">Customize your Loop</a>
+</li>
+                                    
+<li >
+    <a href="../../build/updating/">Ready to Update your Loop?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../operation/overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
+<li >
+    <a href="../../build/health/">Health Permissions</a>
+</li>
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Add Pump</a>
+    <a href="#">Add Pump</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/loop-settings/mdt-pump/">Add Medtronic</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/loop-settings/omnipod-pump/">Add Omnipod</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/cgm/">Add CGM</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/configurations/">Configurations</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/services/">Loop Services</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/displays/">Loop Displays</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/rileylink/">RileyLink menu</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">How to Use Loop App</a>
+    <a href="#">How to Use Loop App</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/features/carbs/">Carb Entries</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/bolus/">Bolus</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/workout/">Workout Targets</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/ice/">Using ICE info</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/watch/">Apple Watch</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/widget/">iPhone widget</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/notifications/">Loop Notifications</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/battery/">Pump Battery</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Looping Tips</a>
+    <a href="#">Looping Tips</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/loop/open-loop/">Open Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/loop/close-loop/">Closed Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/loop/looptips/">Loop Tips</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Algorithm</a>
+    <a href="#">Algorithm</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/algorithm/overview/">Overview</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/algorithm/bolus/">Bolus Recommendations</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/algorithm/prediction/">Glucose Prediction</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Troubleshoot</a>
+    <a href="#">Troubleshoot</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../troubleshooting/overview/">Overview</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/loop-crashing/">Loop crashes</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/green-loop/">Grey Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/pod-pairing/">Pod Pairing Failures</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/priming/">MDT Priming and Sites</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/time-change/">Time Changes</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/pump-errors/">MDT Pump Errors</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/omnipod-faults/">Omnipod Faults</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../nightscout/overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/new_user/">Brand New NS</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/update_user/">Retrofit Existing NS</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/troublehoot/">Setup Troubleshooting</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/mlab_cleanup/">NS Stopped Working</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/azure_migration/">Azure to Heroku</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/ifttt/">IFTTT</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/pebble/">Pebble</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/pushover/">Remote Notifications</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/reports/">Reports</a>
 </li>
+                                </ul>
+                            </li>
+                        </ul>
 
-                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../docs-faqs/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../omnipod-faqs/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
-                </li>
-            
-            
-            </ul>
-
-            <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                <li >
-                    <a rel="next" href="../docs-faqs/">
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </li>
-                <li >
-                    <a rel="prev" href="../omnipod-faqs/">
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </li>
-                
-            </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
         <div class="container">
-            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
         <li class="main active"><a href="#general-loop-faqs">General Loop FAQs</a></li>
-        
             <li><a href="#what-is-loop">What is Loop?</a></li>
-        
             <li><a href="#what-do-i-need-to-loop">What do I need to Loop?</a></li>
-        
             <li><a href="#can-i-download-loop-from-the-app-store">Can I download Loop from the App store?</a></li>
-        
             <li><a href="#can-i-use-an-android-phone-for-loop">Can I use an android phone for Loop?</a></li>
-        
             <li><a href="#do-i-have-to-be-tech-smart-to-build-loop">Do I have to be "tech-smart" to build Loop?</a></li>
-        
             <li><a href="#is-there-a-cheat-sheet-for-school-nurse-to-use">Is there a cheat sheet for school nurse to use?</a></li>
-        
             <li><a href="#how-long-does-it-take-to-build-loop">How long does it take to build Loop?</a></li>
-        
             <li><a href="#does-loop-cost-money">Does Loop cost money?</a></li>
-        
             <li><a href="#do-i-need-to-own-my-own-apple-computer">Do I need to own my own Apple computer?</a></li>
-        
+            <li><a href="#can-i-use-a-pc-or-windows-computer-to-build">Can I use a PC or Windows computer to build?</a></li>
             <li><a href="#how-often-do-i-need-to-get-on-the-computer-for-loop">How often do I need to get on the computer for Loop?</a></li>
-        
-            <li><a href="#can-i-use-a-virtualmachine-to-build">Can I use a VirtualMachine to build?</a></li>
-        
-            <li><a href="#will-i-need-to-build-a-new-loop-if-i-switch-between-medtronic-and-omnipod-regularly">Will I need to build a new Loop if I switch between Medtronic and Omnipod regularly?</a></li>
-        
-            <li><a href="#can-i-use-someone-elses-apple-developer-account">Can I use someone else's Apple Developer account?</a></li>
-        
+            <li><a href="#will-i-need-to-build-a-new-loop-if-i-switch-between-medtronic-and-omnipod">Will I need to build a new Loop if I switch between Medtronic and Omnipod?</a></li>
+            <li><a href="#can-i-use-someone-elses-apple-developer-account-for-my-loop-build">Can I use someone else's Apple Developer account for my Loop build?</a></li>
+            <li><a href="#can-i-use-my-apple-developer-account-to-build-for-others">Can I use MY Apple Developer account to build for others?</a></li>
             <li><a href="#how-can-i-find-a-compatible-pump-supplies">How can I find a compatible pump? supplies?</a></li>
-        
             <li><a href="#can-i-pay-someone-else-to-do-this">Can I pay someone else to do this?</a></li>
-        
             <li><a href="#what-if-i-lose-my-rileylink">What if I lose my RileyLink?</a></li>
-        
             <li><a href="#what-if-i-lose-or-get-a-new-iphone">What if I lose or get a new iPhone?</a></li>
-        
             <li><a href="#what-about-other-pumps-when-will-they-loop">What about other pumps? When will they Loop?</a></li>
-        
             <li><a href="#can-i-have-more-than-one-loop-app-on-a-phone">Can I have more than one Loop app on a phone?</a></li>
-        
             <li><a href="#will-i-be-able-to-loop-on-a-plane-or-in-the-mountains">Will I be able to Loop on a plane? or in the mountains?</a></li>
-        
-    
     </ul>
 </div></div>
-            <div class="col-md-9" role="main">
+                <div class="col-md-9" role="main">
 
 <h1 id="general-loop-faqs">General Loop FAQs<a class="headerlink" href="#general-loop-faqs" title="Permanent link">⌁</a></h1>
-<p>There are lots of new users coming to Loop trying to find out information about Omnipod potentially being supported on Loop. You probably have a lot of questions.</p>
+<p>Welcome to LoopDocs place for all things Frequently Asked.</p>
 <h2 id="what-is-loop">What is Loop?<a class="headerlink" href="#what-is-loop" title="Permanent link">⌁</a></h2>
 <p>Click on the image below to watch a short <a href="https://youtu.be/qw_u1lqboCs">Introduction to Loop video</a>.</p>
 <p><a href="https://youtu.be/qw_u1lqboCs" target="_blank"><img src="../img/intro-to-loop.png"  title="Introduction to Loop video" /></a></p>
 <h2 id="what-do-i-need-to-loop">What do I need to Loop?<a class="headerlink" href="#what-do-i-need-to-loop" title="Permanent link">⌁</a></h2>
 <p>Loop has both hardware and software requirements. In general, to use Loop you need to have seven components.</p>
 <ul>
-<li>Compatible insulin pump: <a href="https://loopkit.github.io/loopdocs/setup/requirements/mdt-pump/">Medtronic</a> or <a href="https://loopkit.github.io/loopdocs/setup/requirements/omnipod-pump/">Omnipod</a></li>
-<li><a href="https://loopkit.github.io/loopdocs/setup/requirements/cgm/">Compatible CGM</a></li>
-<li><a href="https://loopkit.github.io/loopdocs/setup/requirements/rileylink/">RileyLink</a></li>
-<li><a href="https://loopkit.github.io/loopdocs/setup/requirements/iphone/">Compatible iPhone/iPod Touch</a></li>
-<li><a href="https://loopkit.github.io/loopdocs/setup/requirements/computer/">Apple computer running High Sierra/Mojave macOS 10.13.6/10.14 or later</a></li>
-<li><a href="https://loopkit.github.io/loopdocs/setup/build/installing/#setup-xcode">Xcode (a free Apple application)</a></li>
-<li><a href="https://loopkit.github.io/loopdocs/setup/requirements/appledev/">Apple Developer Membership</a></li>
+<li>Compatible insulin pump: <a href="https://loopkit.github.io/loopdocs/build/step3/">Medtronic or Omnipod</a></li>
+<li><a href="https://loopkit.github.io/loopdocs/build/step4/">Compatible CGM</a></li>
+<li><a href="https://loopkit.github.io/loopdocs/build/step5/">RileyLink</a></li>
+<li><a href="https://loopkit.github.io/loopdocs/build/step2/">Compatible iPhone/iPod Touch</a></li>
+<li><a href="https://loopkit.github.io/loopdocs/build/step1/">Apple computer running Mojave macOS 10.14.3 or later</a></li>
+<li><a href="https://loopkit.github.io/loopdocs/build/step8/">Xcode (a free Apple application)</a></li>
+<li><a href="https://loopkit.github.io/loopdocs/build/step6/">Apple Developer Membership</a></li>
 </ul>
 <p align="center">
 <img src="../img/loop_gear.jpg" width="500">
@@ -692,38 +470,37 @@
 <p>No, this is purely iPhone or iPod touch.</p>
 <h2 id="do-i-have-to-be-tech-smart-to-build-loop">Do I have to be "tech-smart" to build Loop?<a class="headerlink" href="#do-i-have-to-be-tech-smart-to-build-loop" title="Permanent link">⌁</a></h2>
 <p>No. You do not need any experience in code or computers to build Loop. If you have already owned an Apple computer and iPhone, you already have the required level of experience. Beyond that, simply read the directions slowly and diligently...all the information you will need are in these documents.</p>
+<p>Often times the not-tech people do better than the tech people in building Loop. Why? Because the not-tech people take the time to read slowly and look at the screenshots in the directions. The tech people often skim read and miss sentences...which then leads to build errors that have to be retraced and fixed.</p>
 <h2 id="is-there-a-cheat-sheet-for-school-nurse-to-use">Is there a cheat sheet for school nurse to use?<a class="headerlink" href="#is-there-a-cheat-sheet-for-school-nurse-to-use" title="Permanent link">⌁</a></h2>
 <p>Sure, you can give this one a try. <a href="https://github.com/Kdisimone/images/raw/master/school_nurse.pdf">School nurse's cheat sheet download</a></p>
 <h2 id="how-long-does-it-take-to-build-loop">How long does it take to build Loop?<a class="headerlink" href="#how-long-does-it-take-to-build-loop" title="Permanent link">⌁</a></h2>
-<p>The answer is varied, but a few hours from start to finish, depending on where you are starting.</p>
-<p>If you'd rather break it up into several days of shorter efforts, the advent calendar way of building Loop can be done like this:</p>
-<p>Day 1 (15 minutes): Order a RileyLink from <a href="https://getrileylink.org">GetRileyLink.org</a></br></br>
-Day 2 (30 minutes or less): Update macOS and install Homebrew on your computer.</br></br>
-Day 3 (20 minutes): Get an Apple Developer account (wait for enrollment confirmation email)</br></br>
-Day 4 (1-2 hours): Download and setup Xcode (basically this step is one that you can walk away from since the download just chugs along while you go do other things) </br></br>
-Day 5 (50 minutes): Build Loop app using Xcode</br></p>
+<p>The answer is varied, but a few hours from start to finish, depending on where you are starting and how comfortable you are with your computer.</p>
+<p>If you'd rather break it up into several shorter bits of effort, the <code>Build App</code> section is divided into convenient stopping points with Time Estimates for each step. You can do one or more steps depending on what kind of time you have available.</p>
 <h2 id="does-loop-cost-money">Does Loop cost money?<a class="headerlink" href="#does-loop-cost-money" title="Permanent link">⌁</a></h2>
 <p>Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.</p>
-<p>The <a href="https://getrileylink.org/">RileyLink kit</a> costs $150. This is a one-time cost and many people still have their original RileyLinks from nearly 3 years ago running just fine. There is a <a href="https://getrileylink.org/product/850lionbattery/">lipo battery</a> that may need to periodically be swapped out after a couple years of use, and that is approximately $15. I highly recommend purchasing two RileyLinks when financially feasible, to have one as a backup in case of accidental damage.</p>
+<p>The <a href="https://getrileylink.org/">RileyLink kit</a> costs $150. This is a one-time cost and many people still have their original RileyLinks from nearly 3 years ago running just fine. I highly recommend purchasing two RileyLinks when financially feasible, to have one as a backup in case of accidental damage.</p>
 <p>The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days. That could get very tedious. The $99 annual Apple developer program enrollment is an excellent investment.</p>
 <p>There are no other costs, ongoing or initial, to Loop use.</p>
 <h2 id="do-i-need-to-own-my-own-apple-computer">Do I need to own my own Apple computer?<a class="headerlink" href="#do-i-need-to-own-my-own-apple-computer" title="Permanent link">⌁</a></h2>
-<p>You don't have to own your own Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for <a href="https://loopkit.github.io/loopdocs/build/update/updating/#when-to-update">updating Loop</a> later, when needed.</p>
-<p>If you are borrowing an Apple computer, you should ask the person to (1) update to at least High Sierra or Mojave and (2) <a href="https://developer.apple.com/xcode/">download Xcode for free</a> before you get together to build your Loop app.  The updates and download of Xcode can take a couple hours depending on the person's internet speed...so best to do those steps well ahead of time to save trouble.</p>
+<p>You don't have to own your own Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for <a href="https://loopkit.github.io/loopdocs/build/updating/#when-to-update">updating Loop</a> later, when needed.</p>
+<p>If you are borrowing an Apple computer, you should ask the person to (1) update to Mojave and (2) <a href="https://developer.apple.com/xcode/">download Xcode for free</a> before you get together to build your Loop app. The updates and download of Xcode can take a couple hours depending on the person's internet speed...so best to do those steps well ahead of time to save trouble.</p>
+<h2 id="can-i-use-a-pc-or-windows-computer-to-build">Can I use a PC or Windows computer to build?<a class="headerlink" href="#can-i-use-a-pc-or-windows-computer-to-build" title="Permanent link">⌁</a></h2>
+<p>Yes, you can...sort of. There is a hacked way of installing macOS on a Windows computer called "Virtual Machine". <a href="https://techsviewer.com/install-macos-mojave-vmware-windows/?fbclid=IwAR3o2u7iEnCEQoJhnhEy0fn8m_Q2w5gFmIpSA5ybLLY_5q_F3Jf3Z4XwcGM">This link</a> may provide some helpful information for that if you want to learn more...but it's up to you and Google if you hit a road block. These docs do not provide troubleshooting tips for Virtual Machine installation or use.</p>
 <h2 id="how-often-do-i-need-to-get-on-the-computer-for-loop">How often do I need to get on the computer for Loop?<a class="headerlink" href="#how-often-do-i-need-to-get-on-the-computer-for-loop" title="Permanent link">⌁</a></h2>
 <p>The short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)</p>
-<p>The longer answer is that Loop code is updated periodically to include new features and bug fixes.  When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app upate yourself with <a href="https://loopkit.github.io/loopdocs/setup/update/updating/">update instructions here</a>. In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.</p>
-<h2 id="can-i-use-a-virtualmachine-to-build">Can I use a VirtualMachine to build?<a class="headerlink" href="#can-i-use-a-virtualmachine-to-build" title="Permanent link">⌁</a></h2>
-<p>Yes, you can. These documents will not provide instructions on how to do that however. You'll need to figure that part out on your own.</p>
-<h2 id="will-i-need-to-build-a-new-loop-if-i-switch-between-medtronic-and-omnipod-regularly">Will I need to build a new Loop if I switch between Medtronic and Omnipod regularly?<a class="headerlink" href="#will-i-need-to-build-a-new-loop-if-i-switch-between-medtronic-and-omnipod-regularly" title="Permanent link">⌁</a></h2>
-<p>No. Loop will have the option to move between different pump types from within the same Loop app.</p>
-<h2 id="can-i-use-someone-elses-apple-developer-account">Can I use someone else's Apple Developer account?<a class="headerlink" href="#can-i-use-someone-elses-apple-developer-account" title="Permanent link">⌁</a></h2>
+<p>The longer answer is that Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app upate yourself with <a href="https://loopkit.github.io/loopdocs/build/updating/">update instructions here</a>. In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.</p>
+<h2 id="will-i-need-to-build-a-new-loop-if-i-switch-between-medtronic-and-omnipod">Will I need to build a new Loop if I switch between Medtronic and Omnipod?<a class="headerlink" href="#will-i-need-to-build-a-new-loop-if-i-switch-between-medtronic-and-omnipod" title="Permanent link">⌁</a></h2>
+<p>No. Loop will have the option to move between different pump types from within the same Loop app. You'll simply use the "Switch from Omnipods" or "Delete Pump" options to move to the other kind of pump.</p>
+<h2 id="can-i-use-someone-elses-apple-developer-account-for-my-loop-build">Can I use someone else's Apple Developer account for my Loop build?<a class="headerlink" href="#can-i-use-someone-elses-apple-developer-account-for-my-loop-build" title="Permanent link">⌁</a></h2>
 <p>Technically, yes...however there are major drawbacks. The person's developer account can only be "linked" to a limited number of build computers. So one person "loaning out" their developer license to a lot of people will quickly exceed the number of allowed computers. In those cases, that person will be told they need to revoke the certificates on some computers (essentially dropping old ones to make room for new ones). When they do that, they may have forgotten about your Loop app on your computer. When they revoke your computer's certificate (and they can do that without you knowing through their developer portal), your Loop app will immediately stop working and not even open.</p>
-<p>You Loop app will also die immediately if their developer account is not renewed or expires. Your Loop updates will also not be able to be built unless that person maintains the developer license agreement updates.</p>
-<p>Moral of the story, out of all the ways to save money...borrowing someone's developer account is not a good place to save money.</p>
+<p>Your Loop app will also die immediately if their developer account is not renewed or expires. Your Loop updates will also not be able to be built unless that person maintains the developer license agreement updates.</p>
+<p>Moral of the story, out of all the ways to save money...borrowing someone's developer account is not a good place to save money. You could find yourself unexpectedly without a Loop app without notice.</p>
+<h2 id="can-i-use-my-apple-developer-account-to-build-for-others">Can I use MY Apple Developer account to build for others?<a class="headerlink" href="#can-i-use-my-apple-developer-account-to-build-for-others" title="Permanent link">⌁</a></h2>
+<p>Technically yes...however, there are reasons this is discouraged. When you build for others, you must be careful to not unintentionally revoke the signing certificate that had been used for other people's apps (see note in FAQ above). You also need to let the people know that MAXIMUM their app will last 12 months. It will need to be rebuilt no matter what every 12 months.</p>
+<p>But the biggest issue with building for others is that they may be left without a decent method of getting Loop updates. There are a lot of new Loopers on Omnipod system and their apps will likely need updating on a regular basis over the first year. Unless you plan on meeting with that person regularly to update their app, you could leave them on an old app that doesn' work as well as the new versions.</p>
 <h2 id="how-can-i-find-a-compatible-pump-supplies">How can I find a compatible pump? supplies?<a class="headerlink" href="#how-can-i-find-a-compatible-pump-supplies" title="Permanent link">⌁</a></h2>
-<p>There is a <a href="https://loopkit.github.io/loopdocs/setup/requirements/mdt-pump/">whole page about MDT pumps</a>; how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Go check out that page for more info.</p>
-<p>With the addition of omnipod support, you can also now use omnipod suppliers however you'd normally source them.</p>
+<p>There is a <a href="https://loopkit.github.io/loopdocs/build/step3/">whole page with detailed information about Medtronic pumps</a>; how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.</p>
+<p>With the addition of Omnipod support, you can also now use Omnipod suppliers the way you'd normally source them.</p>
 <h2 id="can-i-pay-someone-else-to-do-this">Can I pay someone else to do this?<a class="headerlink" href="#can-i-pay-someone-else-to-do-this" title="Permanent link">⌁</a></h2>
 <p>NOOOO...you really need to figure this out yourself. This is an automated insulin delivery system and you really need to know how to build and operate this yourself.</p>
 <h2 id="what-if-i-lose-my-rileylink">What if I lose my RileyLink?<a class="headerlink" href="#what-if-i-lose-my-rileylink" title="Permanent link">⌁</a></h2>
@@ -732,49 +509,91 @@ Day 5 (50 minutes): Build Loop app using Xcode</br></p>
 <h2 id="what-if-i-lose-or-get-a-new-iphone">What if I lose or get a new iPhone?<a class="headerlink" href="#what-if-i-lose-or-get-a-new-iphone" title="Permanent link">⌁</a></h2>
 <p>When you get a new iPhone, Loop will need to be built onto that new iPhone in the same way that you built on your old iPhone. Loop will not restore from any iCloud or iTunes backups, so make sure you plan on finding an Apple computer to rebuild on before you plan on Looping with the new iPhone.</p>
 <h2 id="what-about-other-pumps-when-will-they-loop">What about other pumps? When will they Loop?<a class="headerlink" href="#what-about-other-pumps-when-will-they-loop" title="Permanent link">⌁</a></h2>
-<p>Hey now...let's be grateful for what we have first. The ability to use Loop is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Cracking the pumps for Loop use is a large undertaking. If and when another set of people spend a large amount of time figuring out other pumps, then they could conceivably be added to Loop.  But, you don't need to let us know that you'd love to see more pumps compatible with Loop.  So would we. There is just an awful lot of work that needs to happen and it is not easy nor quick.</p>
+<p>Hey now...let's be grateful for what we have first. The ability to use Loop is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Cracking the pumps for Loop use is a large undertaking. If and when another set of people spend a large amount of time figuring out other pumps, then they could conceivably be added to Loop. But, you don't need to let us know that you'd love to see more pumps compatible with Loop. So would we. There is just an awful lot of work that needs to happen and it is not easy nor quick.</p>
+<p>Tandem pumps are not Loop compatible.
+Animas pumps are not Loop compatible.
+DASH pods are not Loop compatible.
+And those all likely won't be compatible anytime in the future.</p>
 <h2 id="can-i-have-more-than-one-loop-app-on-a-phone">Can I have more than one Loop app on a phone?<a class="headerlink" href="#can-i-have-more-than-one-loop-app-on-a-phone" title="Permanent link">⌁</a></h2>
-<p>While technically possible, you can have multiple Loop apps built onto the same iPhone.  However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping).  For smooth looping, just keep one Loop app on any phone for looping use.</p>
+<p>Yes, technically possible. You can have multiple Loop apps built onto the same iPhone. However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping). Additionally, your pod will only work on one Loop app at a time anyways. So for smooth looping, just keep one Loop app on any phone for looping use. </p>
 <h2 id="will-i-be-able-to-loop-on-a-plane-or-in-the-mountains">Will I be able to Loop on a plane? or in the mountains?<a class="headerlink" href="#will-i-be-able-to-loop-on-a-plane-or-in-the-mountains" title="Permanent link">⌁</a></h2>
 <p>Yes. Loop does not require internet or cell coverage to work. So long as the Looper has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/pod.</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-            
-            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-
-        <script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
-                    <div class="modal-body">
-                        <p>
-                            From here you can search these documents. Enter
-                            your search terms below.
-                        </p>
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                            </div>
-                        </form>
-                        <div id="mkdocs-search-results"></div>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
             </div>
         </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
     </body>
 </html>
