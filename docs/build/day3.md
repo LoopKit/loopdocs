@@ -14,16 +14,16 @@ So by default that means any pump NOT mentioned above is NOT compatible. Your Me
 
 Wondering how to find where the firmware is listed? Check out [this page's info](https://loopkit.github.io/loopdocs/setup/requirements/mdt-pump/#pump-firmware).
 
-!!!danger "Step 3: Time Estimate to Finish"
+!!!danger "Time Estimate"
     * Omnipod users: 3 seconds to remember how big your PDM is
     * Medtronic users: 10 minutes to put a battery in and look at model and firmware
     * Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump
 
-!!!warning "Step 3: FAQs"
+!!!warning "FAQs"
     * **"But what about the other pumps?"** Too bad, so sad.
     * **"Can I change the firmware of my Medtronic pump?"** Do you work at Medtronic with insider access to the secret tools and firmware versions to do that? Might lose your job, but I'd bet you could then. We don't have access to that though.
 
-!!!info "Step 3: Summary"
+!!!info "Summary"
     * If you have a big clunky PDM with built-in BG meter...you can use your pods for Loop.
     * If you have a slim touch screen android-looking PDM...you can NOT use your pods for Loop.
     * If you have a Medtronic, check the list above to ensure compatible model/firmware.
