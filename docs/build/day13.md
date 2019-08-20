@@ -1,6 +1,6 @@
-# Day 12: Build Loop app
+# Step 13: Build Loop app
 
-# Open Loop project in Xcode
+## Open Loop project in Xcode
 
 Go to your Downloads folder, open the `Loop-master` folder (or whatever you named it...double check that the folder does not contain any spaces in the folder name, as described above), and double click on Loop.xcodeproj. For Omnipod Loop, the folder will likely be named `Loop-omnipod-testing`.
 

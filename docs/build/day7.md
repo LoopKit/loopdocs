@@ -1,4 +1,4 @@
-# Day 7: Download Xcode
+# Step 7: Download Xcode
 
 Today is an easy one, but probably takes the longest of most of any of the days in terms of time...only because the download takes awhile. The good news is that you don't have to watch this. Instead, you can start the download and simply walk away for the rest of it.
 
@@ -12,9 +12,12 @@ If you already had a previous installation of Xcode, you can just check your App
 <img src="https://loopkit.github.io/loopdocs/build/img/xcode1.png" width="550">
 </p>
 
-!!!warning "Day 5: FAQs"
-* **"Why isn't my Xcode installing?"** I can't see your computer to know exactly why...but the two most common reasons are (1) lack of internet connection or (2) not enough free space on the computer's hard drive. Xcode is a pretty beefy sized download...and needs even a little more space to properly unpack itself and install. Best to try to have about 12-15GB of free space on your hard drive before starting to be on the safe side. If you get below 5GB of free space, I've seen installation failures around then. You can check your free space by clicking on the `About this Mac` (like in Day 1) and clicking the `Storage` tab.
+!!!danger "Time Estimate"
+    * 45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.
 
-!!!info "Day 5: Work Summary"
-* After making sure your Mojave is up-to-date, download Xcode from your computer's App Store application.
+!!!warning "FAQs"
+    * **"Why isn't my Xcode installing?"** I can't see your computer to know exactly why...but the two most common reasons are (1) lack of internet connection or (2) not enough free space on the computer's hard drive. Xcode is a pretty beefy sized download...and needs even a little more space to properly unpack itself and install. Best to try to have about 12-15GB of free space on your hard drive before starting to be on the safe side. If you get below 5GB of free space, I've seen installation failures around then. You can check your free space by clicking on the `About this Mac` (like in Day 1) and clicking the `Storage` tab.
+
+!!!info "Summary"
+    * After making sure your Mojave is up-to-date, download Xcode from your computer's App Store application.
 
