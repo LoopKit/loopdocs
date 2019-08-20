@@ -13,6 +13,8 @@
     * Register the device
     * Sign the 4 targets
     * Press the build button
+    * Enter computer password four times during the build
+    * Watch in awe as you just built your very own Loop app
 
 !!!warning "FAQs"
     * **"I got a build error! YIKES...what do I do?"** Check out the Build Errors page for all the solutions you'd need.

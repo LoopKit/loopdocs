@@ -39,7 +39,7 @@ Technically, the iPhone SE and iPhone 5s will likely not be able to update to iO
 Your phone's iOS version can be found under the Settings app, General, About as shown below.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/setup/requirements/img/ios.jpg" width="300">
+<img src="https://loopkit.github.io/loopdocs/build/img/ios.jpg" width="300">
 </p>
 
 ## Next Step: Compatible Pump
