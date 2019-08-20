@@ -1,4 +1,15 @@
-# Step 12: Download Loop code
+# Step 13: Download Loop code
+
+!!!danger "Time Estimate"
+    * 5 minutes
+    
+]!!!info "Summary"
+    * If you want to use Omnipod Loop, you will need to select either Dev or Omnipod-testing branches
+    * All branches of Loop that have Omnipod support will also support Medtronic pumps.
+    
+!!!warning "FAQs"
+    * **"What the heck is a branch?"** 
+    * **"How can I tell which version I have downloaded?"**
 
 You’ll need to download the Loop code in order to build the app on your computer.  Click on ONE of the links below to download your Loop source code.  Wondering which to choose? Read the discussion below
 
@@ -26,4 +37,6 @@ Master vs Dev?  What is the difference? The Loop code resides in a website calle
     <img src="../img/folder-name.png" width="650">
     </p>
 
+## Next Step: Build Loop app
 
+Now you are ready to move onto Step 14 to [Build Loop app](https://loopkit.github.io/loopdocs/build/step14/).

@@ -1,4 +1,14 @@
-# Step 6: Install Homebrew
+# Step 7: Install Homebrew
+
+!!!danger "Time Estimate"
+    * 10-15 minutes assuming you know your computer's password
+    * 35 minutes if you can't remember your password and have to guess
+    
+!!!info "Summary"
+    * Install Homebrew by simply copying and pasting a long line of gibberish into the ugly Terminal application.
+
+!!!warning "FAQs"
+    * **"What if I don't get an "Installation successful" message?"** If you don't see an installation successful message, then please try the copy paste again. If you fail to get Homebrew installed, your Loop build will also fail. You can't just skip this step. The most common cause of errors are failing to copy the ENTIRE line of code ...people sometimes fail get that last `"` at end of the line. Also, you need to be using a user account on the computer that has "admin" rights, since this process is installing a program on the computer.
 
 Breath deep...this step looks kind of "programmer code" weirdness. BUT, it isn't. Well, it is...but we will be just smply copying and pasting one line of the weirdness and then walking away. We don't actually have to know much about Homebrew itself or what the line of code means exactly.
 
@@ -32,13 +42,6 @@ Wait while the script does its thing...you’ll see info scroll by and then it w
 
 You can close the Terminal application now. You’re done with it. You do not need to do these steps again for any subsequent Loop builds. This is one of those "just do it once" installations. If you get a new computer though, you will have to repeat this step for the new computer.
 
-!!!danger "Time Estimate"
-    * 10-15 minutes assuming you know your computer's password
-    * 35 minutes if you can't remember your password and have to guess
+## Next Step: Download Xcode
 
-!!!warning "FAQs"
-    * **"What if I don't get an "Installation successful" message?"** If you don't see an installation successful message, then please try the copy paste again. If you fail to get Homebrew installed, your Loop build will also fail. You can't just skip this step. The most common cause of errors are failing to copy the ENTIRE line of code ...people sometimes fail get that last `"` at end of the line. Also, you need to be using a user account on the computer that has "admin" rights, since this process is installing a program on the computer.
-
-!!!info "Summary"
-    * Install Homebrew by simply copying and pasting that long line of gibberish into the ugly Terminal application.
-
+Now you are ready to move onto Step 8 to [download Xcode](https://loopkit.github.io/loopdocs/build/step8/).

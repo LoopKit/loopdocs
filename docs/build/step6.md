@@ -1,5 +1,19 @@
-# Step 5: Enroll in Apple Developer Program
+# Step 6: Enroll in Apple Developer Program
 
+
+!!!danger "Time Estimate"
+    * 15-20 minutes to complete the enrollment forms
+    * up to 2 days to wait for confirmation email that enrollment has been activated
+
+!!!info "Summary"
+    * If you've decided to you'd like to use a paid developer account, you need to enroll now. Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual account.
+    * If you've decided you'd like too use a free developer account, you don't need to do anything now. We'll get you covered later.
+
+!!!warning "FAQs"
+    * **"Can I use someone else's Apple Developer account?"** Great question...answer is [here](https://loopkit.github.io/loopdocs/faqs/FAQs/#can-i-use-someone-elses-apple-developer-account).
+    * **"Do I use my Apple ID or my kid's Apple ID to enroll in the Apple Developer program?"** The Apple ID you use to enroll in the developer program does not need to be the same Apple ID as the Loop iPhone or Looper uses, for example a parent installing Loop on kid's iPhone. Typically for the developer enrollment, use the Apple ID of the person who will be doing the Loop app building. 
+    * **"How long does it take to have my Apple Development account active after I enroll?"** After you enroll, make sure you look for a confirmation email. Apple says it can take up to 24-48 hours to confirm and setup a new Apple developer account, however some people have had the process only take minutes. It can vary. One SURE way to make it take longer? Use a different credit card to pay for the Apple Developer account enrollment than is already associated with the Apple ID you'll be enrollng with. When you do that, I've heard Apple makes you send in a xerox copy of your driver's license and a bunch of other hassle.
+    
 In order to build your own Loop app, you will need to use an Apple developer account.  You will have two options for an individual account; free or paid.
 
 ## Free Developer Account
@@ -30,17 +44,6 @@ So, when switching from Free to Paid Loop builds...try to remember that you'll h
 
 Paid account enrollment is all through Apple's Developer Program website. Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual paid account. If you instead want the free account, you don't have to do anything on that website. You'll just wait for Step 8 Xcode Preferences and we will get your free account then.
 
+## Next Step: Install Homebrew
 
-!!!danger "Time Estimate"
-    * 15-20 minutes to complete the enrollment forms
-    * up to 2 days to wait for confirmation email that enrollment has been activated
-
-!!!warning "FAQs"
-    * **"Can I use someone else's Apple Developer account?"** Great question...answer is [here](https://loopkit.github.io/loopdocs/faqs/FAQs/#can-i-use-someone-elses-apple-developer-account).
-    * **"Do I use my Apple ID or my kid's Apple ID to enroll in the Apple Developer program?"** The Apple ID you use to enroll in the developer program does not need to be the same Apple ID as the Loop iPhone or Looper uses, for example a parent installing Loop on kid's iPhone. Typically for the developer enrollment, use the Apple ID of the person who will be doing the Loop app building. 
-    * **"How long does it take to have my Apple Development account active after I enroll?"** After you enroll, make sure you look for a confirmation email. Apple says it can take up to 24-48 hours to confirm and setup a new Apple developer account, however some people have had the process only take minutes. It can vary. One SURE way to make it take longer? Use a different credit card to pay for the Apple Developer account enrollment than is already associated with the Apple ID you'll be enrollng with. When you do that, I've heard Apple makes you send in a xerox copy of your driver's license and a bunch of other hassle.
-
-!!!info "Summary"
-    * If you've decided to you'd like to use a paid developer account, we need to get you enrolled. Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual account.
-    * If you've decided you'd like too use a free developer account, you don't need to do anything now. We'll get you covered later.
-
+Now you are ready to move onto Step 7 to [install Hombrew](https://loopkit.github.io/loopdocs/build/step7/).

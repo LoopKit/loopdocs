@@ -1,4 +1,17 @@
-# Step 9: Test Settings
+# Step 10: Test Settings
+
+!!!danger "Time Estimate"
+    * 2 hours to read the web pages thoroughly and thoughtfully
+    * 1-3 days to test settings if you are a normal person who wants to get the most out of Loop
+
+!!!info "Summary"
+    * A small amount of effort to test/validate basals, carb ratios, and ISF (correction factor) will eliminate a lot of uncertainty when you start Looping.
+    * Keep an open mind that settings may need to change just as you start Loop. Hormones, illness, and failed sites can still happen just like always.
+
+!!!warning "FAQs"
+    * **"My endo makes my pump settings, so do I really need to test them?"** Well, nobody is going to force you...but testing your settings even just a couple days will give you a tremendous advantage going into Loop. Your endo may have very conservative overnight ISF and carb ratios that normally don't get used in traditional pump therapy, but will be used by Loop for sure. So, keep an open mind as you head into Looping on old settings if you haven't tested them recently.
+    * **"I have great control, why would I need to test my settings?"** Awesome for you! However, it is quite possible that your "great control" comes with a lot of little adjustments all the time. We all got used to needing little bumps and nudges of insulin or carbs over time...and sometimes those bumps and nudges are covering for underlying settings that need adjustment. Testing your settings will help...especially if you are coming from a treatment style that involves memorizing your insulin doses for meals...you may not know your actual carb ratio or ISF as a result of "just knowing" your boluses.
+    * **"I can't basal test with my 2 year old. What can I do?"** I agree, that would be pretty tough. Consult your endo, watch your patterns, and do the best you can...little kiddos are a difficult group to do settings testing with. I feel ya.
 
 Loop is just a fancy calculator underneath the hood. The math problems that it is solving depend on some settings that you will be providing it. A good idea is to make sure you do a bit of settings testing before using Loop.
 
@@ -10,16 +23,6 @@ Loop is just a fancy calculator underneath the hood. The math problems that it i
 
 Check [LoopTips.org](https://looptips.org) for a discussion on how to [check all these settings](https://kdisimone.github.io/looptips/settings/settings/) and [why they are important](https://kdisimone.github.io/looptips/settings/overview/). If you’re fascinated by this topic, read the book <i>Think Like A Pancreas</i> for a really great discussion. Finally remember settings can change periodically. Hormone cycles, steroids, illness, etc may lead to a [need to change settings](https://kdisimone.github.io/looptips/settings/adjust/).
 
-!!!danger "Time Estimate"
-    * 1-2 hours to read the web pages thoroughly and thoughtfully
-    * 0 minutes if you happen to be an extreme diabadass (or impatient and think this doens't apply to you)
-    * 1-3 days to test settings if you are a normal person who wants to get the most out of Loop
+## Next Step: Make Plans for Loop Data
 
-!!!warning "FAQs"
-    * **"My endo makes my pump settings, so do I really need to test them?"** Well, nobody is going to force you...but testing your settings even just a couple days will give you a tremendous advantage going into Loop. Your endo may have very conservative overnight ISF and carb ratios that normally don't get used in traditional pump therapy, but will be used by Loop for sure. So, keep an open mind as you head into Looping on old settings if you haven't tested them recently.
-    * **"I have great control, why would I need to test my settings?"** Awesome for you! However, it is quite possible that your "great control" comes with a lot of little adjustments all the time. We all got used to needing little bumps and nudges of insulin or carbs over time...and sometimes those bumps and nudges are covering for underlying settings that need adjustment. Testing your settings will help...especially if you are coming from a treatment style that involves memorizing your insulin doses for meals...you may not know your actual carb ratio or ISF as a result of "just knowing" your boluses.
-    * **"I can't basal test with my 2 year old. What can I do?"** I agree, that would be pretty tough. Consult your endo, watch your patterns, and do the best you can...little kiddos are a difficult group to do settings testing with. I feel ya.
-    
-!!!info "Summary"
-    * A small amount of effort to test/validate basals, carb ratios, and ISF (correction factor) will eliminate a lot of uncertainty when you start Looping.
-    * Keep an open mind that settings may need to change just as you start Loop. Hormones, illness, and failed sites can still happen just like always.
+Now you are ready to move onto Step 11 to [Make Plans for Loop Data](https://loopkit.github.io/loopdocs/build/step11/).

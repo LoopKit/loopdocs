@@ -1,6 +1,17 @@
-# Step 8: Xcode Preferences
+# Step 9: Xcode Preferences
 
-Since you've been working in order, you will now have Xcode installed on your computer from Step 7. You will also have enrolled in the Apple Developer program with a paid account, if that was your selection, in Step 5. Now we need to tell Xcode about your Developer Account.
+!!danger "Time Estimate"
+    * about 10-15 minutes to install the Command Line Tools
+    * 5 minutes to add your Apple ID, assuming you remember your password
+
+!!!info "Summary"
+    * Open Xcode Preferences and add your Apple ID under the Accounts tab.
+    * Verify that Command Line Tools has been properly installed under Xcode Preferences under the Locations tab.
+
+!!!warning "FAQs"
+    * **"I still only see an account with `(personal team)` beside it even though I enrolled in the paid Developer Account program...what should I do?"** You should check your spam email box in case Apple sent you an email there. Make sure you've waited the 48 hours that Apple says it may take to get your account approved. If it's been 48 hours and you still don't see anything in your email, contact Apple support and ask them about the status of your enrollment. It may be held up by something on their end.
+
+Since you've been working in order, you will now have Xcode installed on your computer from Step 8. You will also have enrolled in the Apple Developer program with a paid account, if that was your selection, in Step 6. Now we need to tell Xcode about your Developer Account.
 
 Open Xcode from your Applications folder. 
 
@@ -25,14 +36,7 @@ If you want to use a free developer account, you will simply enter your Apple ID
 
 You are now done setting up Xcode.  Great job!  You will not need to redo the account setup steps on any subsequent builds or updates of your Loop app.  Xcode will remember these settings.
 
-!!!danger "Time Estimate"
-    * about 10-15 minutes to install the Command Line Tools
-    * 5 minutes to add your Apple ID, assuming you remember your password
+## Next Step: Test Settings
 
-!!!warning "FAQs"
-    * **"I still only see an account with `(personal team)` beside it even though I enrolled in the paid Developer Account program...what should I do?"** You should check your spam email box in case Apple sent you an email there. Make sure you've waited the 48 hours that Apple says it may take to get your account approved. If it's been 48 hours and you still don't see anything in your email, contact Apple support and ask them about the status of your enrollment. It may be held up by something on their end.
-
-!!!info "Summary"
-    * Open Xcode Preferences and add your Apple ID under the Accounts tab.
-    * Verify that Command Line Tools has been properly installed under Xcode Preferences under the Locations tab.
+Now you are ready to move onto Step 10 to [Test Your Settings](https://loopkit.github.io/loopdocs/build/step10/).
 
