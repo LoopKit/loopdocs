@@ -155,7 +155,7 @@ If the build is successful, your brand new Loop app will have a screen open imme
 And now that you're built, I'm going to remind you again to use the guides to help you setup and understand your Loop app:
 [Loop App Overview and Setup Pages](https://loopkit.github.io/loopdocs/operation/overview/)</br></br>
 
-!!! info "First time builders"
+!!! info "Quick note for first time builders"
     If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below. Don't worry, Loop installed on the phone but needs you to do an extra step on the phone before Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone, and the issue resolves very quickly. Click ok and you can safely disconnect your iPhone from the computer.  (If you don’t get a warning and the Loop app installs but does not open, you may still need to go to Settings->General->Device Management and enable trust for your Developer Account.)
     <p align="center">
     <img src="../img/trust_device.jpg" width="750">

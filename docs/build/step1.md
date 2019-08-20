@@ -21,13 +21,13 @@
 You need an Apple computer that has at least macOS 10.14.3 (or newer) installed. This macOS is called Mojave. To find out if you have Mojave installed, click on the little Apple icon in your computer's upper left corner and select the `About this Mac`. It doesn't matter if the computer is a MacBook, iMac, macMini, etc...just so long as it has macOS Mojave. If your computer does not have Mojave, you'll need to check the `Software Update` button on that screen to see if you can update to Mojave.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/setup/requirements/img/macosx.png" width="500">
+<img src="https://loopkit.github.io/loopdocs/build/img/macosx.png" width="500">
 </p>
 
 If your computer does not give you the option to upgrade to Mojave...it is quite possible that Apple has decided your computer is too old to run Mojave. How old is too old? That will depend on your computer model and year as shown below:
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/setup/requirements/img/mojave-minimum.png" width="750">
+<img src="https://loopkit.github.io/loopdocs/build/img/mojave-minimum.png" width="750">
 </p>
 
 ## Next Step: Compatible iPhone/iPod touch

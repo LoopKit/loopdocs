@@ -1,6 +1,6 @@
 # Step 9: Xcode Preferences
 
-!!danger "Time Estimate"
+!!!danger "Time Estimate"
     * about 10-15 minutes to install the Command Line Tools
     * 5 minutes to add your Apple ID, assuming you remember your password
 
