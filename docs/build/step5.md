@@ -5,7 +5,7 @@
     * 15-20 minutes to assemble the RileyLink once you get it in the mail
     * 15-20 minutes to read about the RileyLink
 
-!!!info "Work Summary"
+!!!info "Summary"
     * Order your [Omnipod RileyLink](https://getrileylink.org/product/rileylink433) or [Medtronic RileyLink](https://getrileylink.org/product/rileylink916).
     * Assemble the RileyLink, after hugging the postman
     * Read the "extra details" to learn about RileyLink lights, charging, range, etc.

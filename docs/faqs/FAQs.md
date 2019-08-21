@@ -70,7 +70,7 @@ If you are borrowing an Apple computer, you should ask the person to (1) update 
 
 ## Can I use a PC or Windows computer to build?
 
-Yes, you can...sort of. There is a hacked way of installing macOS on a Windows computer called "Virtual Machine". [This link](https://techsviewer.com/install-macos-mojave-vmware-windows/?fbclid=IwAR3o2u7iEnCEQoJhnhEy0fn8m_Q2w5gFmIpSA5ybLLY_5q_F3Jf3Z4XwcGM) may provide some helpful information for that if you want to learn more...but it's up to you and Google if you hit a road block. These docs do not provide troubleshooting tips for Virtual Machine installation or use.
+Yes, you can...sort of. There is a hacked way of installing macOS on a Windows computer called "Virtual Machine". [This link](https://macosvmware.tech.blog/) may provide some helpful information for that if you want to learn more...but it's up to you and Google if you hit a road block. These docs do not provide troubleshooting tips for Virtual Machine installation or use.
 
 ## How often do I need to get on the computer for Loop?
 
