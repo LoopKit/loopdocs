@@ -41,7 +41,7 @@ Do your logs have "SSO authentication errors" like in the red box highlighted ab
 
 2. Delete your BRIDGE entries within heroku settings.  Don't delete the rows, just delete the entries within BRIDGE_PASSWORD and BRIDGE_USER_NAME.
 
-3. Wait 15 minutes and then follow the directions in the blue box below.
+3. Wait 15 minutes and then follow the directions in the blue box below. It is important to wait the 15 minutes...the reason you can't login right now is that your Dexcom account has a temporary lock from one of the passwords in step 1 or 2 being incorrect. The temporary lock will expire after 10-15 minutes of giving the account login a break from the incorrect logins. So, definitely wait or else you'll just keep prolonging the issue.
 
 
 !!!info "About your Bridge password and user name"
