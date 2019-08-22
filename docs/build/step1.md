@@ -6,7 +6,7 @@
 
 !!!info "Summary"
     * Check your macOS and make sure it is Mojave.
-    * Do use any of the beta macOS versions. (If you don't know what that means, don't worry...that means you aren't using one.)
+    * Do not use any of the beta macOS versions. (If you don't know what that means, don't worry...that means you aren't using one.)
     * If your macOS is not Mojave, check to see if you can up update your macOS to Mojave and do so.
     * If you cannot upgrade your existing computer to Mojave, you'll need to check into a borrowed computer, patcher tool, or perhaps a new/used computer compatible with Mojave.
     * Check the `Software Update` to see if your Mojave version has any updates available since you first installed it.
