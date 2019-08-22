@@ -630,12 +630,29 @@
 <li>If using <code>mmol</code>, make sure you have spelled that value correctly in the <code>DISPLAY_UNITS</code>.</li>
 </ol>
 <p align="center">
-<img src="../img/bridge-settings.jpg" width="800">
+<img src="../img/bridge-settings.jpg" width="600">
 </p>
 
+<p>One things that can happen if you have an incorrect Dexcom login/password in Loop's CGM Share account settings and/or in your Nightscout BRIDGE settings is that Dexcom will lock your account...and you won't see CGM data in Nightscout. If you notice your CGM readings disappeared, but everything else is flowing...check your heroku logs that are viewable by selecting "View Logs" from the drop down menu underneath the "More" option. </p>
+<p align="center">
+<img src="../img/heroku-logs.png" width="800">
+</p>
+
+<p>Do your logs have "SSO authentication errors" like in the red box highlighted above? If you do, then:</p>
+<ol>
+<li>
+<p>Delete your share account entry from your Loop's CGM account settings...like you should have NO ENTRY in your share account settings WITHIN LOOP CGM SETTINGS.</p>
+</li>
+<li>
+<p>Delete your BRIDGE entries within heroku settings.  Don't delete the rows, just delete the entries within BRIDGE_PASSWORD and BRIDGE_USER_NAME.</p>
+</li>
+<li>
+<p>Wait 15 minutes and then follow the directions in the blue box below.</p>
+</li>
+</ol>
 <div class="admonition info">
 <p class="admonition-title">About your Bridge password and user name</p>
-<p>The <code>BRIDGE_PASSWORD</code> and <code>BRIDGE_USER_NAME</code> are NOT visible from within your Dexcom mobile app or online account. The values of them are what you entered into your Dexcom mobile app when you VERY FIRST logged into that app however long ago. If you have double-checked everything else that could be incorrect and BGs still aren't showing in Nightscout, then you likely have those Bridge values incorrect. To fix that, delete your Dexcom app (don't stop the session before deleting the app...just keep it going). Download the app again from the iPhone's App store and login to the freshly-downloaded Dexcom app. <strong>Take note</strong> that deleting the app will not stop your session, your session will pick right back up once the transmitter pairs again. The <code>BRIDGE_USER_NAME</code> is not an email address. Use that exact same login now in your Heroku settings.</p>
+<p>The <code>BRIDGE_PASSWORD</code> and <code>BRIDGE_USER_NAME</code> are NOT visible from within your Dexcom mobile app or online account. The values of them are what you entered into your Dexcom mobile app when you VERY FIRST logged into that app however long ago. If you have double-checked everything else that could be incorrect and BGs still aren't showing in Nightscout, then you likely have those Bridge values incorrect. To fix that, delete your Dexcom app (don't stop the session before deleting the app...just keep it going). Download the app again from the iPhone's App store and login to the freshly-downloaded Dexcom app. <strong>Take note</strong> that deleting the app will not stop your session, your session will pick right back up once the transmitter pairs again. The <code>BRIDGE_USER_NAME</code> is not an email address. Use that exact same login now in your Heroku settings. You can leave your Loop's Share account info blank...you just need the transmitter ID going forward.</p>
 </div>
 <h3 id="dexcom-share">Dexcom Share<a class="headerlink" href="#dexcom-share" title="Permanent link">⌁</a></h3>
 <p>Make sure you have Dexcom Share turned ON in your Dexcom app. In the Dexcom app's main screen, find the triangle made of dots. If the dots are grey, you do not have Share turned on. Tap the triangle, and follow the directions to add a follower (yourself if you don't have someone else you'd like to invite) and turn on Share.</p>
