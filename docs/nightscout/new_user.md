@@ -96,10 +96,6 @@ Now scroll down a bit and we are going to fill out the information lines in the 
 <td>bridge loop pump iob cob basal careportal sage cage bage openaps override</br></br>(Enter all of the words above without commas. Just a single space between each word. Make sure autocorrect does not add space between careportal. Typically, the words basal and careportal will already be there waiting for you.)</td>
 </tr>
 <tr>
-<th>THEME</th>
-<td>change this entry from default to colors</td>
-</tr>
-<tr>
 <th>BRIDGE_USER_NAME</th>
 <td>Enter your Dexcom Share Account login name. This is not an email address. This should be the same account name used in the Looper's Dexcom app.</td>
 </tr>
