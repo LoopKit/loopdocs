@@ -189,7 +189,6 @@ There is SUPER valuable information contained in these documents that really nee
 
 Instead, work step-by-step to make sure you get through these pieces of helpful information:
 
-* For USA Loopers, read the [Jaeb Observational Study page](https://loopkit.github.io/loopdocs/build/jaeb-study/)
 * Read the [Health Permissions page](https://loopkit.github.io/loopdocs/build/health/) to make sure you get your Loop data recording properly
 * Start with following the step-by-step directions for setting up your Loop correctly. THIS IS IMPORTANT! There are safety considerations in how you setup your app...so please follow along with the setup guides. [Loop App Overview and Setup Pages](https://loopkit.github.io/loopdocs/operation/overview/)</br></br>
 
