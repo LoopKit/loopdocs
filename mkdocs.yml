@@ -35,7 +35,6 @@ pages:
     - 'Step 13 Download Loop code': 'build/step13.md'
     - 'Step 14 Build Loop app': 'build/step14.md'
     - 'Oh dear! Build errors?': 'build/build_errors.md'
-    - 'Jaeb Loop Study': 'build/jaeb-study.md'
     - 'Customize your Loop': 'build/code_customization.md'
     - 'Ready to Update your Loop?': 'build/updating.md'
 - Set up App:
