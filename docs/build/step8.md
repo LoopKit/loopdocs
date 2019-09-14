@@ -13,12 +13,19 @@ Today is an easy one, but probably takes the longest of most of any of the days 
 
 Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" code into an iOS application and install it onto your iPhone/iPod. **Make sure you have updated your macOS to Mojave AND checked the `Software Updates` button before proceeding...in other words, make sure you did Step 1's work.**
 
-Open the App Store application on your computer (it is in your Applications folder). Search for Xcode and click on the link to download/install Xcode for free. The most current version of Xcode is 10.3. Do not download the Xcode beta program, just get the regular version of the program. The file size is fairly large so expect about 45 minutes, or even a couple hours, to download depending on your internet speed. 
-
-If you already had a previous installation of Xcode, you can just check your App Store for Xcode updates which will take a much shorter time to download.
+!!!danger "IMPORTANT UPDATE"
+    Normally, you would obtain Xcode by simply downloading it from the App Store application on your computer. HOWEVER, we are going to need you to do something different for about the next week. Loop's dev code has been updated in preparation for iOS 13. In order for that new code to compile correctly, you will need to use Xcode 11 GM (golden master) version. This version of Xcode is not available in the App Store on your computer quite yet (should be available around Sept 19th). Therefore in the meantime, you will need to download Xcode 11 GM directly from your developer account. 
+    
+    1. Click on the "Account" link at the top right corner of <a href="https://developer.apple.com" target="_blank">the Apple Developer page</a> and login to your account.</br></br>
+    
+    2. Once you are logged in, you can click [here]( https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_11_GM_Seed/Xcode_11_GM_Seed.xip) to start the download of Xcode 11 GM seed...or navigate to the download link yourself (click on Downloads in left column of your developer console, then click on Applications icon, and then click on the link to the Xcode 11 GM seed download.)</br></br>
+    
+    3. Wait awhile as almost 8GB of download happens...</br></br>
+    
+    4. Double click the download to open it and follow the steps to finish installing Xcode 11 GM.</br></br>
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/build/img/xcode1.png" width="550">
+<img src="../../build/img/xcode11gm.png" width="650">
 </p>
 
 ## Next Step: Xcode Preferences
