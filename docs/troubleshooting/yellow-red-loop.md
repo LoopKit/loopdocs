@@ -1,6 +1,6 @@
 # Yellow and Red Loops
 
-A properly operating Loop will remain green for 5 minutes.  To stay green, there are several things that Loop must do:
+A properly operating Loop will remain green for 5 minutes.  To remain green, there are several things that Loop must do:
 
 * Loop obtains a BG value from your CGM source, and
 * Loop reads your pump history to know about insulin deliveries and recent events, and
