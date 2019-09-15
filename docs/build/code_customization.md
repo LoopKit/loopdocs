@@ -3,17 +3,6 @@ Based on Loop users’ experience, there are some customizations that you may wa
 
 !!!info ""
     Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v1.9.4.
-    
-
-### Disable Siri Capabilities
-
-Free developer accounts will not be able to build Loop app while Siri capabilities are turned on.  In order to turn those features off, you will need to remove the Siri entitlements manually.
-
-In the upper left toolbar of Xcode is a "find" option (magnifying glass just below the build - play button), search for 'Siri'.  Two files will be returned; Loop.entitlements and WatchApp Extension.entitlements.  For each of those files, you will need to click on the file name and then delete the Siri Entitlements files by clicking on the minus sign to the right of the word "Siri". Once you delete the Siri entitlement in those two files, you'll be able to sign the four targets and build with the free developer account.
-
-<p align="center">
-<img src="../img/siri-free.png" width="750">
-</p>
 
 ### Disable Authentication for Bolusing
 

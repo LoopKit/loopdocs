@@ -1,17 +1,23 @@
 # Updating Loop
 
-When a new version of Loop is released, you can click [HERE](https://github.com/LoopKit/Loop/releases) to read what features or fixes were a part of the new release.
+!!!danger "Time Estimate"
+    * 25 minutes, if already have updates done
+    * 40-90 minutes, if need to install Apple update(s)
 
-The process to update is very similar to the original building of Loop app, except you get to skip a couple of the early steps.  The update steps are:
+!!!info "Summary"
+    1. Update macOS, Xcode, iOS, and/or watchOS
+    2. Download updated Loop code
+    3. Open in Xcode, sign targets
+    4. Add optional code customizations
+    5. Build onto your iPhone
+    6. Resolve Build Errors
 
-1. Update macOS, Xcode, iOS, and/or watchOS
-2. Download updated Loop code
-3. Open in Xcode, sign targets
-4. Add optional code customizations
-5. Build onto your iPhone
-6. Resolve Build Errors
-
-You do not have to delete your existing app. The new app update will simply overwrite the old app and save all your old settings and information.
+!!!warning "FAQs"
+    * **"What is an update?"** Anytime you want to change branches (i.e., go from omnipod-testing to dev branch), change customizations, or grab updates to your same branch you built with before...that is an "update" of your Loop app.
+    * **"Do I delete my old Loop app first?"** Definitely not! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
+    * **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account as your existing app was built with (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
+    * **"What if it is a new computer but same developer account?"** No big deal...you just want to make sure the computer has Homebrew installed already and you've added your developer account to Xcode preferences.
+    * **"Where can I find the list of features in a new release?"** When a new version of Loop is released, you can click [HERE](https://github.com/LoopKit/Loop/releases) to read what features or fixes were a part of the new release.
 
 ## When to Update
 
@@ -21,28 +27,26 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 
 ## Step 1: Update macOS and Xcode
 
-!!!info "Omnipod and iOS 12.2 users"
-    If you are going to use either Omnipod-testing branch, Dev branch, or iOS 12.2, you will need to update to macOS 10.14.3 (Mojave) at a minimum. After you update your macOS, make sure you grab updated Xcode of 10.2 at a minimum. **Both those updates are required.**
-
-!!!info "Update to Homebrew and Carthage"
-    For people who have already built Loop before, there's an extra step needed for your first update since the recent round of updates. We need you to update Homebrew and Carthage, but this is quick and easy. Please open Terminal app and copy & paste the following `brew update && brew upgrade carthage`. When the update finishes, you should have carthage 0.33.0 (or later) installed. If you don't see the version, you can use `carthage version` to have the version displayed.</br>
+!!!danger "Minimum Requirements"
+    Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app. <u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u>  You will need the following minimum versions:</br></br>
     
-    If you don't have 0.33.0 installed at a minimum, then you will need to use `brew link --overwrite carthage` and then repeat the `brew update && brew upgrade carthage` command. That should succeed in updating you properly, and you can again check that with `carthage version`.
+    * macOS 10.14.3 (Mojave)</br></br>
+    * iOS 12.2</br></br>
+    * Xcode 11</br></br>
+    
+    But why be minimum? Go ahead and install any available updates in all areas; macOS, Xcode, iOS, and watchOS.
+    
+    Please refer to the updated page on [Xcode installation](https://loopkit.github.io/loopdocs/build/step8/) for help with getting Xcode 11, until it is released officially in the App Store (expected September 19th).
+    
+    (You can only use macOS 10.13.6 High Sierra if you are building with Loop master branch <u>and</u> have at least iOS 12 or 12.1. The next version of Loop master branch will require Mojave at a minimum, so keep that in your planning for the future. If building dev, omnipod-testing, or any other branch that supports omnipod users, then you will need the minimum versions listed above.)
 
-Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app. <u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u> 
+!!!info "Check Homebrew and Carthage"
+    Depending on when you last built, you may need to update Homebrew and Carthage. Please open Terminal app and copy & paste  `carthage version` into Terminal. If you see 0.33.0 returned, then you don't need to do anything additional.
+    
+    If you got a number other than 0.33.0 for your carthage version, then copy & paste `brew update && brew upgrade carthage` into Terminal app. When the update finishes, you should have carthage 0.33.0 (or later) installed.</br>
+    
+    If you don't have 0.33.0 installed after that update, then you will need to use `brew link --overwrite carthage` and then repeat the `brew update && brew upgrade carthage` command. That should succeed in updating you properly.
 
-* update your macOS by clicking on your apple icon in the computer's upper left corner and then selecting "Software Update" button. If your macOS needs an update, this will lead you there. **You MUST use macOS 10.14.3 (Mojave) at a minimum, if:**
-
-    * You want to use omnipod or Loop-dev branches, and/or
-    * Your iPhone or iPod touch is using iOS 12.2 or newer</br></br>
-
-    (You can only use macOS 10.13.6 High Sierra if you are building with Loop master branch <u>and</u> have iOS 12 or 12.1. The next version of Loop will require Mojave at a minimum, so keep that in your planning for the future.)
-
-* update your Xcode by opening the App Store application in your computer and selecting the "Updates" from the left-hand column. If an Xcode update is available, install the update before moving on with Loop updates.  You need Xcode 10.2 at a minimum if you are building with Omnipod-testing, dev, or iOS 12.2.
-
-* update your iPhone's iOS. To check if an iOS update is available, click on your iPhone's Settings, General, Software Update and then click on "install update" button if one is available. You need iOS 12 at a minimum.
-
-* update your Apple Watch's watchOS. To check if a watchOS update is available, click on your Watch App in your paired iPhone and then go to Settings, General, Software Update and then click on "install update" if one is available. You need watchOS 4.1 at a minimum, but watchOS 5 or later is recommended.
 
 ## Step 2: Download Updated Loop Code
 
@@ -70,32 +74,11 @@ After you've finished the updates to your devices listed above, you can move ont
     <img src="../img/folder-name.png" width="550">
     </p>
 
-## Step 3: Open in Xcode, Sign Targets
+## Step 3: Build Like Normal
 
-Double click the Loop folder in your Downloads folder, and then double click the `Loop.xcodeproj` to open the Loop project in Xcode. Navigate, as you did when you originally built the app, to the four target areas. Sign the four targets with your developer team name. Remember that the "(personal team)" in the signing team's name indicates that is a free account and the app will only last for 7 days if you sign with that team name.
+From here it is just like the old directions...you can go straight to [Step 14 Build Loop app](https://loopkit.github.io/loopdocs/build/step14/) and do just like you did the first time. Open the project, plug in the phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
 
-## Step 3: Add Code Customizations
-
-Add or redo any code customizations, if needed.  These will not be carried over automatically from the old app.  Be sure to read up in the [code customizations section](https://loopkit.github.io/loopdocs/build/code_customization/) before building, as there may be new customizations available since the previous build.
-
-If you are building with a free account, you will have to remove the Siri capabilities in order to build.
-
-## Step 4: Build to your iPhone
-
-Plug your iPhone into the computer, unlock it so that the phone does not fall asleep during the build process.  You can find this setting under Settings, Display & Brightness, Auto-Lock, set to "Never". You can return to your normal lock settings after the build is done.  
-
-Select your iPhone from the top of the device list near Loop's window's upper left area, and then press the triangle "build" button similar to how you did your original Loop build.
-
-**NOW BE PATIENT.**  Loop will take a long time to build; between 25-45 minutes depending on your computer.  The Loop build process will appear to stall or hang a very long time on one build step in particular. Do not worry. This is normal. One step will take a significant amount of time relative to all the other steps. Once that long step is done, the rest will fly by fairly quickly.
-
-At the end of all the steps, you will either get a Build Succeeded or Build Failed message.
-
-* If your build suceeded, you can unplug your phone and move on with Looping. Your new Loop version will be displayed in the top of your Loop Settings screen.</br></br>
-* If your build failed, you will need to go to Step 5 below.
-
-## Step 5: Resolve Build Errors
-
-**If you get any red build errors or a "Loop Build Failed" message, please check [this section](https://loopkit.github.io/loopdocs/build/build_errors/) for fixes.**
+Note: If this is a computer that hasn't built Loop before, you would want to make sure to do [Step 7: install Homebrew](https://loopkit.github.io/loopdocs/build/step7/) before doing your build on that computer.
 
 
 
