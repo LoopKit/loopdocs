@@ -215,7 +215,8 @@ You're done building your Loop app...
 <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="400">
 </p>
 
-Remember your promise though? You still owe me that you will use the [`Setup App`](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/) section of this website now to keep proceeding safely.
+
+Remember your promise though? You still owe me that you will use the [`Setup App`](https://loopkit.github.io/loopdocs/operation/overview/) section of this website now to keep proceeding safely.
 
 
 
