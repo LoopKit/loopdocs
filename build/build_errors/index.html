@@ -631,9 +631,9 @@
             <div class="col-md-9" role="main">
 
 <h1 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Permanent link">⌁</a></h1>
-<p>There are two types of build errors that happen; yellow warnings and red alerts. You'll see the warnings and alerts in the left-hand column of the Xcode window.</p>
-<p><font color="orange"><strong>Yellow warnings</strong></font> do not cause the build to fail, those are just warnings.  Occasionally, a Loop version may have some minor discrepencies that cause a yellow alert...ignore those. Do not try to do anything to fix those...leave them alone.</p>
-<p><font color="red"><strong>Red error alerts</strong> </font> will have to be resolved before you can successfully build Loop app. The steps below explain how to resolve them based on the messages you are seeing.</p>
+<p>There are two types of build errors that happen; they are yellow warnings and red alerts. You'll see the warnings and alerts in the left-hand column of the Xcode window.</p>
+<p><font color="orange"><strong>Yellow warnings</strong></font> do not cause the build to fail, those are just warnings.  Occasionally, a Loop version may have some minor discrepancies that cause a yellow alert...ignore those. Do not try to do anything to fix those...leave them alone.</p>
+<p><font color="red"><strong>Red error alerts</strong> </font> will have to be resolved before you can successfully build the Loop app. The steps below explain how to resolve them based on the messages you are seeing.</p>
 <h2 id="start-with-the-obvious-error-causes">Start with the obvious error causes<a class="headerlink" href="#start-with-the-obvious-error-causes" title="Permanent link">⌁</a></h2>
 <p>Before you start trying to resolve your red errors...start with the most obvious things that can cause a red error message:</p>
 <ol>
@@ -651,7 +651,7 @@
 <p><strong>Get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago.</strong> That old version may not be compatible with new iOS and new Xcode versions.</p>
 </li>
 <li>
-<p>If you are using a free developer account, you need to have finished the <a href="https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities">code customizations to remove Siri capabilties</a>.</p>
+<p>If you are using a free developer account, you need to have finished the <a href="https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities">code customizations to remove Siri capabilities</a>.</p>
 </li>
 </ol>
 <h2 id="posting-for-help">Posting for help<a class="headerlink" href="#posting-for-help" title="Permanent link">⌁</a></h2>
@@ -661,18 +661,18 @@
 <pre><code>Include in your post:
 </code></pre>
 <ul>
-<li>Version of Xcode you are using</li>
-<li>Version of Loop you are building with</li>
-<li>Version of iOS on your Loop iPhone</li>
+<li>The version of Xcode you are using</li>
+<li>The version of Loop you are building with</li>
+<li>The version of iOS on your Loop iPhone</li>
 <li>Specify if you are using a free or paid account, and if free...confirm you deleted Siri capabilities</li>
 <li>Confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)</li>
 <li>Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.</li>
-<li>List which of the fixes listed below you have already tried.</li>
+<li>State which fixes from the below list that you have already tried.</li>
 </ul>
 <p>Helpful tip #1: Shift-Command-4 will give you a little screenshot tool that you can click-and-drag to highlight the area you'd like to screenshot. When you release the drag, the screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information.</p>
-<p>Helpful tip #2: When taking screenshots for a post, include the whole Xcode window. Don't zoom in on any one area. There is information in all parts of the Xcode window that are helpful to the troubleshooters, so it saves time to simply see the whole Xcode window at once.</p>
+<p>Helpful tip #2: When taking screenshots for a post, include the whole Xcode window. Don't zoom in on any one area. There is information in all parts of the Xcode window that are helpful to the troubleshooters, so it saves time to see the whole Xcode window at once.</p>
 <h2 id="find-your-error-messages">Find your error message(s)<a class="headerlink" href="#find-your-error-messages" title="Permanent link">⌁</a></h2>
-<p>To start your error fix (assuming you didn't have one of the obvious issues listed above), the key is to (1) <strong><em>READ THE ERROR MESSAGE</em></strong> and then (2) <strong><em>FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW</em></strong>.</p>
+<p>To begin fixing the error (assuming you didn't have one of the obvious issues listed above), the key is to (1) <strong><em>READ THE ERROR MESSAGE</em></strong> and then (2) <strong><em>FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW</em></strong>.</p>
 <p>Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail. Look at the detailed message to really help guide your search for the matching solution.</p>
 <p>Notice how in the screenshots in the topics below, there are red circles highlighting certain error messages? Read your error messages similar to where those red circles are in the screenshots below. Once you find your error message (hint: not "exit code"), you can either:</p>
 <ul>
@@ -683,13 +683,13 @@
 <p>Take the error message from your Xcode screen and read through EACH OF THE TOPICS BELOW. Check each of the red circles to see if you have a match. Kind of like a matching puzzle.</p>
 </li>
 </ul>
-<p>For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with simply "invalid active". You will get a couple links and one is the Command Line Tools fix for that error message. Click on the link and you'll find your solution.</p>
+<p>For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with simply "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find your solution.</p>
 <p></p>
 <p align="center">
 <img src="../img/search-errors.png" width="650">
 </p></p>
 <h2 id="no-such-module-loopkit">No such module 'LoopKit'<a class="headerlink" href="#no-such-module-loopkit" title="Permanent link">⌁</a></h2>
-<p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open Terminal app.  You will use the command <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code>.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name. </p>
+<p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open the Terminal app.  You will use the command <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code>.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name. </p>
 <p></p>
 <p align="center">
 <img src="../img/exit-code-65.png" width="850">
@@ -700,7 +700,7 @@
 <img src="../img/carthage-update-success.png" width="550">
 </p></p>
 <p>Once carthage update has run successfully, you can return to Xcode and press the build button again.  Your project should build successfully.</p>
-<p>If your carthage update fails, try opening Terminal app and running these commands to clear out your carthage cache and saved derived data in Xcode:</p>
+<p>If your carthage update fails, try opening the Terminal app and running these commands to clear out your carthage cache and saved derived data in Xcode:</p>
 <p><code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> and <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code></p>
 <p>After running those commands, retry the <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code> (remembering to update the name of your Loop download folder, as needed).</p>
 <h2 id="carthage-version-outdated">Carthage version outdated<a class="headerlink" href="#carthage-version-outdated" title="Permanent link">⌁</a></h2>
@@ -744,7 +744,7 @@
 <img src="../img/pending_certification_request.jpg" width="750">
 </p>
 
-<p>Solution: This error message has just recently started to appear for some new Loop builders. To resolve the issue, please login to your Developer account at <a href="https://developer.apple.com">developer.apple.com</a> and then click on "Certificates, Identifiers &amp; Profiles".  Under that screen, you will see "Development" under the "Certificates" section in column on the left.  You will need to click on the certificates, and choose to "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"</p>
+<p>Solution: This error message has just recently started to appear for some new Loop builders. To resolve the issue, please log in to your Developer account at <a href="https://developer.apple.com">developer.apple.com</a> and then click on "Certificates, Identifiers &amp; Profiles".  Under that screen, you will see "Development" under the "Certificates" section in the column on the left.  You will need to click on the certificates, and choose to "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"</p>
 <p align="center">
 <img src="../img/revoke1.png" width="750">
 </p>
@@ -817,8 +817,8 @@ Solution: This error message is caused by either</p>
 <p>Error: <strong><u>Apple watch app is not appearing</u></strong>.</p>
 <p>Solution: Usually because you have not updated to watchOS prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p>
 <h2 id="apple-watch-loop-app-not-installing">Apple Watch: Loop app not installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Permanent link">⌁</a></h2>
-<p>Error: <strong><u>The Loop app appears on the list of app available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL"</u></strong>.</p>
-<p>Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watchface and select the "Trust" button.  Now rebuild your Loop app in Xcode, but look for a pop-up message that warns you that the Watch isn't registered with the Developer portal.  Click on the "register" button that is in the pop-up window and proceed with the Loop app building again.</p>
+<p>Error: <strong><u>The Loop app appears on the list of apps available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL"</u></strong>.</p>
+<p>Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watch face and select the "Trust" button.  Now rebuild your Loop app in Xcode, but look for a pop-up message that warns you that the Watch isn't registered with the Developer portal.  Click on the "register" button that is in the pop-up window and proceed with the Loop app-building again.</p>
 <div class="admonition info">
 <p>WatchOS 5 appears to be an issue for some users currently.  If your Loop app is not properly installing on your watch using watchOS 5, please reopen Loop in Xcode and change the deployment targets in the WatchApp and WatchApp Extension targets to a Deployment Target of 5.0.  Rebuild and your watch app should install properly.</p>
 </div>
