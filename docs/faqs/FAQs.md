@@ -42,7 +42,7 @@ No. You do not need any experience in code or computers to build Loop. If you ha
 
 Often times the not-tech people do better than the tech people in building Loop. Why? Because the not-tech people take the time to read slowly and look at the screenshots in the directions. The tech people often skim read and miss sentences...which then leads to build errors that have to be retraced and fixed.
 
-## Is there a cheat sheet for school nurse to use?
+## Is there a cheat sheet for a school nurse to use?
 
 Sure, you can give this one a try. [School nurse's cheat sheet download](https://github.com/Kdisimone/images/raw/master/school_nurse.pdf)
 
