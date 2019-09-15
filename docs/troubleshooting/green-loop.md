@@ -4,7 +4,7 @@ When you are initially starting the Loop app, the Loop will be colored grey.  Wa
 
 ## Pump
 
-* Max basal rate in Loop app is no greater than max basal rate in pump settings
+* Max basal rate in Loop app is no greater than the max basal rate in pump settings
 * Temp basal type in the pump's basal menu is set to "Insulin Rate (U/hr)" and not "Percent of Basal"
 
 ## CGM
