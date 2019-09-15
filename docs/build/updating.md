@@ -13,10 +13,10 @@
     6. Resolve Build Errors
 
 !!!warning "FAQs"
-    * **"What is an update?"** Anytime you want to change branches (i.e., go from omnipod-testing to dev branch), change customizations, or grab updates to your same branch you built with before...that is an "update" of your Loop app.
+    * **"What is an update?"** Anytime you want to change branches (i.e., go from omnipod-testing to dev branch), change customizations, or grab updates to the same branch you built with before...that is an "update" of your Loop app.
     * **"Do I delete my old Loop app first?"** Definitely not! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
     * **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account as your existing app was built with (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
-    * **"What if it is a new computer but same developer account?"** No big deal...you just want to make sure the computer has Homebrew installed already and you've added your developer account to Xcode preferences.
+    * **"What if it is a new computer but the same developer account?"** No big deal...you just want to make sure the computer has Homebrew installed already and you've added your developer account to Xcode preferences.
     * **"Where can I find the list of features in a new release?"** When a new version of Loop is released, you can click [HERE](https://github.com/LoopKit/Loop/releases) to read what features or fixes were a part of the new release.
 
 ## When to Update
@@ -28,13 +28,13 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 ## Step 1: Update macOS and Xcode
 
 !!!danger "Minimum Requirements"
-    Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app. <u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u>  You will need the following minimum versions:</br></br>
+    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. <u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u>  You will need the following minimum versions:</br></br>
     
     * macOS 10.14.3 (Mojave)</br></br>
     * iOS 12.2</br></br>
     * Xcode 11</br></br>
     
-    But why be minimum? Go ahead and install any available updates in all areas; macOS, Xcode, iOS, and watchOS.
+    But why be a minimalist? Go ahead and install any available updates in all areas; macOS, Xcode, iOS, and watchOS.
     
     Please refer to the updated page on [Xcode installation](https://loopkit.github.io/loopdocs/build/step8/) for help with getting Xcode 11, until it is released officially in the App Store (expected September 19th).
     
@@ -50,7 +50,7 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 
 ## Step 2: Download Updated Loop Code
 
-After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on **ONE** of the links below to download an updated versions of Loop code:
+After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on **ONE** of the links below to download an updated version of the Loop code:
 </br></br>
 <p align="center">
 [Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)
@@ -65,7 +65,7 @@ After you've finished the updates to your devices listed above, you can move ont
 </p></br>
 
 !!!info "Reminder"
-    Best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
+    It is best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
     <p align="center">
     <img src="../img/icloud-drive.png" width="550">
     </p></br>
