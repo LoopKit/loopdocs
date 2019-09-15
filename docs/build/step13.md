@@ -5,7 +5,7 @@
     * 10 minutes to read this page
     
 !!!info "Summary"
-    * If you want to use Omnipod Loop, you will should use the omnipod-testing branch
+    * If you want to use Omnipod Loop, you should use the omnipod-testing branch
     * Dev branch technically has Omnipod support now, but is still considered less stable than omnipod-testing branch for the average user
     * Medtronic pumps are supported on all branches of Loop
     
