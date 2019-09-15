@@ -630,10 +630,10 @@
 <div class="admonition warning">
 <p class="admonition-title">FAQs</p>
 <ul>
-<li><strong>"What is an update?"</strong> Anytime you want to change branches (i.e., go from omnipod-testing to dev branch), change customizations, or grab updates to your same branch you built with before...that is an "update" of your Loop app.</li>
+<li><strong>"What is an update?"</strong> Anytime you want to change branches (i.e., go from omnipod-testing to dev branch), change customizations, or grab updates to the same branch you built with before...that is an "update" of your Loop app.</li>
 <li><strong>"Do I delete my old Loop app first?"</strong> Definitely not! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.</li>
 <li><strong>"What if I'm using a new/different developer account?"</strong> If you aren't building with the same developer account as your existing app was built with (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.</li>
-<li><strong>"What if it is a new computer but same developer account?"</strong> No big deal...you just want to make sure the computer has Homebrew installed already and you've added your developer account to Xcode preferences.</li>
+<li><strong>"What if it is a new computer but the same developer account?"</strong> No big deal...you just want to make sure the computer has Homebrew installed already and you've added your developer account to Xcode preferences.</li>
 <li><strong>"Where can I find the list of features in a new release?"</strong> When a new version of Loop is released, you can click <a href="https://github.com/LoopKit/Loop/releases">HERE</a> to read what features or fixes were a part of the new release.</li>
 </ul>
 </div>
@@ -643,13 +643,13 @@
 <h2 id="step-1-update-macos-and-xcode">Step 1: Update macOS and Xcode<a class="headerlink" href="#step-1-update-macos-and-xcode" title="Permanent link">⌁</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">Minimum Requirements</p>
-<p>Between Loop app builds, there's a high liklihood that Apple has updated one or more of the systems involved in your Loop app. <u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u>  You will need the following minimum versions:</br></br></p>
+<p>Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. <u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u>  You will need the following minimum versions:</br></br></p>
 <ul>
 <li>macOS 10.14.3 (Mojave)</br></br></li>
 <li>iOS 12.2</br></br></li>
 <li>Xcode 11</br></br></li>
 </ul>
-<p>But why be minimum? Go ahead and install any available updates in all areas; macOS, Xcode, iOS, and watchOS.</p>
+<p>But why be a minimalist? Go ahead and install any available updates in all areas; macOS, Xcode, iOS, and watchOS.</p>
 <p>Please refer to the updated page on <a href="https://loopkit.github.io/loopdocs/build/step8/">Xcode installation</a> for help with getting Xcode 11, until it is released officially in the App Store (expected September 19th).</p>
 <p>(You can only use macOS 10.13.6 High Sierra if you are building with Loop master branch <u>and</u> have at least iOS 12 or 12.1. The next version of Loop master branch will require Mojave at a minimum, so keep that in your planning for the future. If building dev, omnipod-testing, or any other branch that supports omnipod users, then you will need the minimum versions listed above.)</p>
 </div>
@@ -660,7 +660,7 @@
 <p>If you don't have 0.33.0 installed after that update, then you will need to use <code>brew link --overwrite carthage</code> and then repeat the <code>brew update &amp;&amp; brew upgrade carthage</code> command. That should succeed in updating you properly.</p>
 </div>
 <h2 id="step-2-download-updated-loop-code">Step 2: Download Updated Loop Code<a class="headerlink" href="#step-2-download-updated-loop-code" title="Permanent link">⌁</a></h2>
-<p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on <strong>ONE</strong> of the links below to download an updated versions of Loop code:
+<p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on <strong>ONE</strong> of the links below to download an updated version of the Loop code:
 </br></br>
 <p align="center">
 <a href="https://github.com/LoopKit/Loop/archive/master.zip">Loop: Master branch</a>
@@ -675,7 +675,7 @@
 </p></br></p>
 <div class="admonition info">
 <p class="admonition-title">Reminder</p>
-<p>Best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is <strong>not</strong> an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and <strong>NOT</strong> appropriate places to save your Loop download.
+<p>It is best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is <strong>not</strong> an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and <strong>NOT</strong> appropriate places to save your Loop download.
 <p align="center">
 <img src="../img/icloud-drive.png" width="550">
 </p></br>
