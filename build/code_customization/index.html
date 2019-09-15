@@ -595,8 +595,6 @@
     
         <li class="main active"><a href="#code-customizations">Code Customizations</a></li>
         
-            <li><a href="#disable-siri-capabilities">Disable Siri Capabilities</a></li>
-        
             <li><a href="#disable-authentication-for-bolusing">Disable Authentication for Bolusing</a></li>
         
             <li><a href="#workout-range-duration">Workout Range Duration</a></li>
@@ -621,13 +619,6 @@
 <div class="admonition info">
 <p>Note: Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v1.9.4.</p>
 </div>
-<h3 id="disable-siri-capabilities">Disable Siri Capabilities<a class="headerlink" href="#disable-siri-capabilities" title="Permanent link">⌁</a></h3>
-<p>Free developer accounts will not be able to build Loop app while Siri capabilities are turned on.  In order to turn those features off, you will need to remove the Siri entitlements manually.</p>
-<p>In the upper left toolbar of Xcode is a "find" option (magnifying glass just below the build - play button), search for 'Siri'.  Two files will be returned; Loop.entitlements and WatchApp Extension.entitlements.  For each of those files, you will need to click on the file name and then delete the Siri Entitlements files by clicking on the minus sign to the right of the word "Siri". Once you delete the Siri entitlement in those two files, you'll be able to sign the four targets and build with the free developer account.</p>
-<p align="center">
-<img src="../img/siri-free.png" width="750">
-</p>
-
 <h3 id="disable-authentication-for-bolusing">Disable Authentication for Bolusing<a class="headerlink" href="#disable-authentication-for-bolusing" title="Permanent link">⌁</a></h3>
 <p>Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization:</p>
 <p>Modify Line 191 in the Loop&gt;&gt;View Controllers&gt;&gt;BolusViewController.swift.  Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
