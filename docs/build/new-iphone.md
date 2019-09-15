@@ -12,3 +12,5 @@ To install Loop onto the new iPhone just take a few simple steps.
 
 4. You will need to slide the RileyLink slider "off" in the old iPhone in order for it to pair with the new iPhone's Loop app.
 
+If you are a Omnipod user...yes, a new phone will mean a new pod will be required when you switch devices. Plan accordingly to time your switch when it is also convenient to change pods.
+
