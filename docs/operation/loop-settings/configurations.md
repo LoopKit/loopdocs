@@ -2,7 +2,7 @@
 
 This page will cover two general parts of the Loop's settings, circled in red in the screenshot below. The headings will match the flow of the screen, top to bottom.
 
-* The first circled section covers your Loop's closed/open loop status and Loop's Issue Report.
+* The first circled section covers your Loop's closed/open-loop status and Loop's Issue Report.
 
 * The second circled section is the configuration section. This section contains a lot of really important settings that control how your Loop will calculate your predicted BG curve. Given the importance of your predicted BG curve to Loop's actions, please make sure you read over this page carefully to know how to navigate the selections and entries.
 
@@ -10,24 +10,24 @@ This page will cover two general parts of the Loop's settings, circled in red in
 <img src="../img/configurations.jpg" width="350">
 </p></br>
 
-## Closed/Open Loop
+## Closed/Open-Loop
 
-The Closed Loop switch controls whether Loop automatically enacts its recommended temporary basal adjustments (closed loop mode) or whether you have to manually tap to enact the recommendations (open loop mode). In addition to the visual indicator on this switch discussed below, the [Loop's status icon on the main screen](https://loopkit.github.io/loopdocs/operation/loop-settings/displays/#loop-status) will also appear differently depending on the mode selected. Open loop mode will have an incomplete circle for the Loop's status icon.</br></br>. 
+The Closed-Loop switch controls whether Loop automatically enacts its recommended temporary basal adjustments (closed-loop mode) or whether you have to manually tap to enact the recommendations (open-loop mode). In addition to the visual indicator on this switch discussed below, the [Loop's status icon on the main screen](https://loopkit.github.io/loopdocs/operation/loop-settings/displays/#loop-status) will also appear differently depending on the mode selected. Open-loop mode will have an incomplete circle for the Loop's status icon.</br></br>. 
 
-#### <u>Open Loop Mode</u>
+#### <u>Open-Loop Mode</u>
 
 <p align="center">
 <img src="../img/open_loop.png" width="400">
 </p> 
 
-When the Closed Loop switch is in the (Off&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ) position, Loop WILL NOT enact recommended temp basals automatically. Instead, Loop will display recommended temp basals on the main status display, just above the blood glucose graph. This is called **open loop**, and is a good way to understand how Loop will function, and what type of recommendations it would make. If you click on the recommended temp basal line while in open loop mode, Loop will implement the temp basal.</br></br>
+When the Closed-Loop switch is in the (Off&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ) position, Loop WILL NOT enact recommended temp basals automatically. Instead, Loop will display recommended temp basals on the main status display, just above the blood glucose graph. This is called **open-loop**, and is a good way to understand how Loop will function, and what type of recommendations it would make. If you click on the recommended temp basal line while in open-loop mode, Loop will implement the temp basal.</br></br>
 
-#### <u>Closed Loop Mode</u>
+#### <u>Closed-Loop Mode</u>
 <p align="center">
 <img src="../img/closed_loop.png" width="400">
 </p> 
 
-When the Closed Loop switch is in the (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   On) position, Loop WILL automatically enact recommended temp basals on the configured insulin pump. This is known as **closed loop**. Typically, Loop will show the recommended temp basal just above the blood glucose graph prior to automatically enacting it. It may take a minute or so for the Loop to enact the recommended basal. Once the temp basal has been enacted successfully on the pump, the recommended temp basal will disappear from the screen and the new temp basal rate will be represented in the insulin delivery graphs.
+When the Closed-Loop switch is in the (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   On) position, Loop WILL automatically enact recommended temp basals on the configured insulin pump. This is known as **closed-loop**. Typically, Loop will show the recommended temp basal just above the blood glucose graph prior to automatically enacting it. It may take a minute or so for the Loop to enact the recommended basal. Once the temp basal has been enacted successfully on the pump, the recommended temp basal will disappear from the screen and the new temp basal rate will be represented in the insulin delivery graphs.
 
 ## Issue Report
 If you run into problems or errors with your Loop, an Issue Report can be used to help identify where the problem is occurring. The Issue Report is automatically generated and you can share it via email. Frequently, if you seek help with a technical problem, an Issue Report will provide insight for the developers and troubleshooters. Please email yourself an Issue Report anytime you are questioning Loop actions or displays. You can then use that Issue Report later to help debug the problem.
