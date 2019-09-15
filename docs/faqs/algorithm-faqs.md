@@ -7,7 +7,7 @@ No. Loop assumes the settings you've provided are correct. If outside factors (s
 
 There is a short-term retrospective analysis built into Loop which will apply a weighted-correction based on the past 60 minutes of blood glucose changes. While this does help some, larger-scale "learning" is not currently a part of Loop's algorithm.
 
-Perhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings need upating or make temporary adjustments for short term issues. If you want to read more about why your settings matter, check out [Looptips.org](https://looptips.org).
+Perhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings need updating or make temporary adjustments for short term issues. To understand why your settings matter, check out [Looptips.org](https://looptips.org).
 
 ## What does negative Active Insulin mean?
 
