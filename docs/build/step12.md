@@ -12,7 +12,7 @@
     * **"I'm worried I'll ask a stupid question"** Don't worry about that...instead just focus on asking a **thorough** question. A thorough question explains what you've already tried or read, has screenshots of what you are confused by, and any other details that you can provide.
 
 ## Online groups
-There's a whole wonderful community of people already Looping who willing to help you through the process. You can find them in two main areas; [Looped group in Facebook](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf) and [Zulipchat](https://loop.zulipchat.com).
+There's a whole wonderful community of people already Looping who willing to help you through the process. You can find them in two main areas; [Looped group on Facebook](https://www.facebook.com/groups/TheLoopedGroup/?fref=nf) and [Zulipchat](https://loop.zulipchat.com).
 
 These groups, as with Loop itself, are entirely driven by VOLUNTEERS. None of the people are paid to answer questions or spend time troubleshooting...they do it because they want to help others. Please decrease that support burden by doing some simple steps yourself before turning to others for help. Please click the image below to watch this video full of tips to make the most of your online resources.
 
@@ -24,7 +24,7 @@ One super valuable tool for posting to online groups is the ability to take scre
 Additionally, take a wider screenshot than you may initially think you need. Especially if you are posting asking for help with settings or Xcode build errors. Nightscout and Xcode have lots of valuable information off-to-the-side that many people dismiss, when really it can be valuable for troubleshooters.
 
 ## Descriptive Language
-Descriptive language doesn't mean the four-letter words that get you frowns at the cocktail parties. Instead, this phrase means to use the most accurate, detailed words that you can when asking for help. In summary, try to avoid the word "it" and instead use details and information to help fill in the story about why you're asking for help, what you've already tried, and what happened when you tried those things (including screenshots). Let's illustrate with a couple examples.
+Descriptive language doesn't mean the four-letter words that get you frowns at the cocktail parties. Instead, this phrase means to use the most accurate, detailed words that you can when asking for help. In summary, try to avoid the word "it" and instead use details and information to help fill in the story about why you're asking for help, what you've already tried, and what happened when you tried those things (including screenshots). Let's illustrate with a couple of examples.
 
 ### Example 1
 **Bad:** "It's not working." <----makes me wonder what "it" is? What part of "it" isn't working exactly? The app? The BG control? The pump integration? Alarms? Bolusing? Their Dexcom?
