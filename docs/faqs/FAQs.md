@@ -76,7 +76,7 @@ Yes, you can...sort of. There is a hacked way of installing macOS on a Windows c
 
 The short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)
 
-The longer answer is that Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app upate yourself with [update instructions here](https://loopkit.github.io/loopdocs/build/updating/). In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.
+The longer answer is that Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app update yourself with [update instructions here](https://loopkit.github.io/loopdocs/build/updating/). In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.
 
 ## Will I need to build a new Loop if I switch between Medtronic and Omnipod?
 
@@ -94,7 +94,7 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 Technically yes...however, there are reasons this is discouraged. When you build for others, you must be careful to not unintentionally revoke the signing certificate that had been used for other people's apps (see note in FAQ above). You also need to let the people know that MAXIMUM their app will last 12 months. It will need to be rebuilt no matter what every 12 months.
 
-But the biggest issue with building for others is that they may be left without a decent method of getting Loop updates. There are a lot of new Loopers on Omnipod system and their apps will likely need updating on a regular basis over the first year. Unless you plan on meeting with that person regularly to update their app, you could leave them on an old app that doesn' work as well as the new versions.
+But the biggest issue with building for others is that they may be left without a decent method of getting Loop updates. There are a lot of new Loopers on Omnipod system and their apps will likely need updating on a regular basis over the first year. Unless you plan on meeting with that person regularly to update their app, you could leave them on an old app that doesn't work as well as the new versions.
 
 ## How can I find a compatible pump? supplies?
 
