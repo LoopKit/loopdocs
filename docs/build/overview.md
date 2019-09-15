@@ -1,6 +1,6 @@
 # Overview of Build Process
 
-The overall installation process is pretty simple. We start with checking that you have compatible gear needed to Loop, do a couple preparation steps on the computer, and then move onto building the Loop app.
+The overall installation process is pretty simple. We start with checking that you have the compatible gear needed to Loop, do a couple of  preparation steps on the computer, and then move onto building the Loop app.
 
 While all of this is probably quite intimidating at first, I promise that it is quite doable by the average computer user. 
 
