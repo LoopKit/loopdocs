@@ -1,14 +1,14 @@
 # Migrating from Azure to Heroku
 
-If you are a current Azure user who wants to move to Heroku, but not lose all your old NS data, you will need do the following steps:
+If you are a current Azure user who wants to move to Heroku, but you do not want to lose all your old NS data, you will need complete the following steps:
 
-* update your repository in GitHub
-* create a new heroku nightscout site
-* migrate your mLab database to new site
+* update your repository on GitHub
+* create a new Heroku Nightscout site
+* migrate your mLab database to your new site
 
 ## Updating your repository in GitHub
 
-* Copy, paste, and goto the one of the following links depending on which branch of cgm-remote-monitor you are currently running (replace `yourgithubname` with your actual GitHub user name)
+* Copy, paste, and click on one of the one of the following links depending on which branch of cgm-remote-monitor you are currently running (replace `yourgithubname` with your actual GitHub user name)
 
 for **master** branch deployments:
 
@@ -23,7 +23,7 @@ For **dev** branch deployments:
 <img src="../img/compare_repo.jpg" width="450">
 </p> 
 
-* Click the big green `Create pull request` button. Another screen will appear, fill in a title and click button to create the pull request, and then you can `Merge pull request`, and finally `Confirm merge`.
+* Click the big green `Create pull request` button. Another screen will appear, fill in a title and click the button to create the pull request, and then you can `Merge pull request`, and finally `Confirm merge`.
 *********
 <p align="center">
 <img src="../img/update1.jpg" width="450">
@@ -48,7 +48,7 @@ For **dev** branch deployments:
 <img src="../img/heroku_signup.jpg" width="450">
 </p> 
 
-* Go to your Nightscout cgm-remote-monitor repository in GitHub (https://github.com/yourGitHubname/cgm-remote-monitor)
+* Go to your Nightscout cgm-remote-monitor repository on GitHub (https://github.com/yourGitHubname/cgm-remote-monitor)
 
 * Scroll down until you see the purple `Deploy to Heroku` button.  Click that button.
 
@@ -138,7 +138,7 @@ For **dev** branch deployments:
 
 **The remaining variables can be left at their default values.**</br></br>
 
-* Click the purple `Deploy` button at the bottom of screen
+* Click the purple `Deploy` button at the bottom of the screen.
 
 <p align="center">
 <img src="../img/deploy_button.jpg" width="450">
@@ -150,7 +150,7 @@ For **dev** branch deployments:
 <img src="../img/deploy_success.jpg" width="450">
 </p> 
 
-* You can verify your site’s successful build by clicking `View` (you should see black site with a profile warning).  You will be redirected to a profile set-up page.  (If it doesn't redirect automatically, refresh your webpage).  
+* You can verify your site’s successful build by clicking `View` (you should see a black site with a profile warning).  You will be redirected to a profile set-up page.  (If it doesn't redirect automatically, refresh your webpage).  
 
 <p align="center">
 <img src="../img/no_profile.jpg" width="450">
@@ -245,7 +245,7 @@ The remaining variables can be left at their default values.</br></br>
 <img src="../img/open_app.jpg" width="450">
 </p> 
 
-* Click on the settings (those three horizontal lines in upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then press save. Your new Nightscout site is all set-up.  Congrats!
+* Click on the settings (those three horizontal lines in the upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then click save. Your new Nightscout site is all set-up.  Congrats!
 
 <p align="center">
 <img src="../img/settings_ns.jpg" width="450">
@@ -254,7 +254,7 @@ The remaining variables can be left at their default values.</br></br>
 
 ## Migrate mLab database
 
-If you’d like to seamlessly keep all your old Azure NS data showing in your new Heroku NS site, you’ll need to copy and paste your old `MONGODB` string from your Azure site.  Find it in either Application Settings or Connection strings in your Azure control panel and then go to Heroku’s `MONGODB_URI` line.  Replace the content with your copied string from Azure.  Double check that your Azure collection used the “entries” name…if it doesn’t, then you will need to update that variable in Heroku to match as well.
+If you’d like to seamlessly keep all your old Azure NS data showing in your new Heroku NS site, you’ll need to copy and paste your old `MONGODB` string from your Azure site.  Find it in either Application Settings or Connection strings in your Azure control panel and then go to Heroku’s `MONGODB_URI` line.  Replace the content with your copied string from Azure.  Double-check that your Azure collection used the “entries” name…if it doesn’t, then you will need to update that variable in Heroku to match as well.
 
 <p align="center">
 <img src="../img/mongo.jpg" width="450">
@@ -262,7 +262,7 @@ If you’d like to seamlessly keep all your old Azure NS data showing in your ne
 
 ## EVENT HISTORY
 
-Don't forget to keep you Loop App's Preferred Source set to `Event History` if you want your NS site to smoothly integrate.  Preferred Source set to `Reservoir` will result in carbs not being uploaded and temp basals not being displayed.
+Don't forget to keep you Loop App's Preferred Source set to `Event History` if you want your NS site to be smoothly integrated.  Preferred Source set to `Reservoir` will result in carbs not being uploaded and temp basals not being displayed.
 
 
 
