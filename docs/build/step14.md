@@ -189,7 +189,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
     
     <p align="center">
     <img src="../img/health-start.JPEG" width="450">
-     </p></br></br>
+    </p></br></br>
      
      You can unplug your phone from the computer now. And like we promised earlier, you will use the [Set up App section of this website](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/) to keep proceeding safely.
 
