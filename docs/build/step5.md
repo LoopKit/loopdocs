@@ -17,7 +17,7 @@
     * **"Can I swap out RileyLinks at any time?"** Yes, you can. RileyLinks can be replaced quite simply without needing to start a new pod or rebuild Loop app. There's a place in Loop settings that you'd simply find your new RileyLink's name and turn "on" the Bluetooth connection to start using it.
     * **"How close does the RileyLink need to be to me? Do I have to carry it with me?"** Good questions...answered [here](https://loopkit.github.io/loopdocs/faqs/rileylink-faqs/#do-i-have-to-carry-the-rileylink-everywhere).
     * **"Why is it named RileyLink?"** Riley is the name of Pete Schwamb's daughter and he's the guy that created the RileyLink.
-    * **"Can I make my own RileyLink?"** Technically yes, however it is not an easy project. You'll need specialized tools and patience. If you want to explore doing that, I'd highly recommend checking out [Zulipchat](https://loop.zulipchat.com/#narrow/stream/148542-RileyLink) from the other people who have done their own builds successfully over the last several years. Only 3 people have built their own RileyLinks so far...but I guess that technically means it is possble. The PCB files and software, with instructions on how to build your own hardware module can be found at the [RileyLink Github repo](https://github.com/ps2/rileylink).
+    * **"Can I make my own RileyLink?"** Technically yes, however it is not an easy project. You'll need specialized tools and patience. If you want to explore doing that, I'd highly recommend checking out [Zulipchat](https://loop.zulipchat.com/#narrow/stream/148542-RileyLink) from the other people who have done their own builds successfully over the last several years. Only 3 people have built their own RileyLinks so far...but I guess that technically means it is possible. The PCB files and software, with instructions on how to build your own hardware module can be found at the [RileyLink Github repo](https://github.com/ps2/rileylink).
 
 ## What is RileyLink
 The RileyLink (RL) is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to 916MHz or 433MHz wireless communication. What does that mean to you? It means RileyLink is the communication highway between your insulin pump, CGM, and iPhone.</br></br>
@@ -40,7 +40,7 @@ Your RL will come with the battery disconnected and the parts not already inside
 Make sure the lipo battery is well-plugged into the connection. Line up the little ridge appropriately, and push fairly firmly to get the connection tight.  Poor battery cable connection can make the Loop communications fail.  See photos below, for example.
 
 !!!info "Common new user errors"
-    The most common two errors for new RL owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RL. Compare your lipo battery cable with the photos; it takes a bit of oomph to push that plug fully in like the photos show below. Remember to charge your RL each night.
+    The most common two errors for new RL owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RL. Compare your lipo battery cable with the photos; it takes a bit of oomph to push that plug fully in like the photos shown below. Remember to charge your RL each night.
 
 <p><figure align="center">
 <img src="../img/battery-cables.jpg" width="400">
@@ -57,7 +57,7 @@ Finally, the board and the battery fit into the slim case fairly tightly as well
 
 The RL communicates with the pump through radio frequency communications.  Numerous factors can influence how well those communications can function...interferences from other devices, temperature, physical blocking, etc.
 
-When your RL and pump first pair together, Loop performs a series of tests that you won't see...they are tuning tests. Basically, RL sends little test messages to the pump and waits for a response. The RL tries this same "ping" to the pump a range of various radio frequencies. The range of radio frequencies it tries is based on the pump you've told RL to expect (Omnipod, Medtronic NA/CA, or Medtronic WW).  RL will then record the radio frequencies that provided the strongest response and use that frequency for future pump communications.
+When your RL and pump are first paired, Loop performs a series of tests that you won't see...they are tuning tests. Basically, RL sends little test messages to the pump and waits for a response. The RL tries this same "ping" to the pump a range of various radio frequencies. The range of radio frequencies it tries is based on the pump you've told RL to expect (Omnipod, Medtronic NA/CA, or Medtronic WW).  RL will then record the radio frequencies that provided the strongest response and use that frequency for future pump communications.
 
 Usually this best frequency is pretty constant for any given pump+RL, but during temperature changes it may be that the best frequency is not the one currently set. In the event that RL has problems communicating with the pump, Loop has code built-in that will automatically tell the RL "Hey, try that tuning pump thing again...maybe there's a better frequency we need to try." This retuning is started automatically if pump communications fail for 14 minutes (in other words, two looping cycles).
 
@@ -77,21 +77,21 @@ RL has several lights that you may notice from time to time. There is no 'power'
 
 * Red light: Charging light. The red light will remain on while RL is charging, and it will turn off when charging is complete. You may notice the red light turn on periodically even after charging is complete...it's just "topping off".
 
-* Green light: Bluetooth connection light. The green light will remain on while you have BT connection with your iPhone.  If that green light fails to stay on, you should troubleshoot your BT connections. Try restarting BT on your iPhone and/or turning the RL off/on by its power switch.
+* Green light: Bluetooth connection light. The green light will remain on while you have a BT connection with your iPhone.  If that green light fails to stay on, you should troubleshoot your BT connections. Try restarting BT on your iPhone and/or turning the RL off/on by its power switch.
 
-* Blue light: Pump communications.  If you have an older firmware on your RL, some of the blue lights will flash periodically as it is communicating with the pump. It's just letting you know that it is busy talking and collecting info. You will also see increased blue flashes if you have "Enabled Diagnositic LEDs" for MDT users that have the RLs with updated firmware (shipping since late August 2018).
+* Blue light: Pump communications.  If you have an older firmware on your RL, some of the blue lights will flash periodically as it communicates with the pump. It's just letting you know that it is busy talking and collecting info. You will also see increased blue flashes if you have "Enabled Diagnostic LEDs" for MDT users that have the RLs with updated firmware (shipping since late August 2018).
 
-A solid blue light that consistenly remains lit on the board could mean one of two things:
+A solid blue light that consistently remains lit on the board could mean one of two things:
 
 * A temporary issue that can be resolved by rebooting the RL physically (turning the switch off/on), or
 
-* An electrical short or damage to the board.  Sweat and moisture are most likely culprits, so try to keep case free from those environments. Don't keep RL in sports bras or waist band next to skin, for example, while exercising.
+* An electrical short or damage to the board.  Sweat and moisture are most likely culprits, so try to keep case free from those environments. Don't keep RL in sports bras or waistband next to skin, for example, while exercising.
 
 If your blue light remains on despite trying a restart, it is time to pull out your backup RL.
 
 ### Charging
 
-The battery that comes with RL is not likely charged completely when it is shipped, so feel free to charge it up.  You'll need a [mini-USB cable](https://www.amazon.com/AmazonBasics-USB-2-0-Cable--Male/dp/B00NH13S44) and [0.5A USB charging power supply](https://www.amazon.com/Cellet-Powered-Charger-iPhones-Smartphones-/dp/B00FE8WFCO) like your iPhone power supply.  RL takes about 2 hours to fully charge (the red light will turn off when fully charged, read note above about red light patterns) and should easily last at least a full day of constant Loop use.  Typically, it can go into the 30-hour range without problem.  Most people charge their RL each night when they are sleeping.  You don't have to worry about leaving the RL plugged in "too long" for charging.  It will automatically stop charging the battery when it is fully charged.
+The battery that comes with RL is not likely charged completely when it is shipped, so feel free to charge it up.  You'll need a [mini-USB cable](https://www.amazon.com/AmazonBasics-USB-2-0-Cable--Male/dp/B00NH13S44) and [0.5A USB charging power supply](https://www.amazon.com/Cellet-Powered-Charger-iPhones-Smartphones-/dp/B00FE8WFCO) like your iPhone power supply.  RL takes about 2 hours to fully charge (the red light will turn off when fully charged, read note above about red light patterns) and should easily last at least a full day of constant Loop use.  Typically, it can go into the 30-hour range without any problems.  Most people charge their RL each night when they are sleeping.  You don't have to worry about leaving the RL plugged in "too long" for charging.  It will automatically stop charging the battery when it is fully charged.
 
 Since the best practice is to charge your RL overnight while you sleep, and the battery lasts safely over 24 hours, there is no battery level indicator for the RL.  The RL's charge level is not viewable on Nightscout, nor within the Loop app.  If you forget to charge your RL overnight, you can recharge it with a portable USB battery in a pinch.  A [short mini-USB cable](https://www.adafruit.com/product/899) could be a good addition to a small gear bag.
 
@@ -107,7 +107,7 @@ Keep your RL and lipo battery protected from damage.  Lipo batteries are unsafe 
 
 ### Removing Lipo Battery
 
-To remove the lipo battery from the RL, please do so slowly and patiently. Work the battery connection side to side slowly to loosen it from the plug. Some people have reported success using small, curved needle nose pliers such as hemostats. Others have used small flathead screwdrivers as shown in [this video](https://youtu.be/s2qNPLpfwww).
+To remove the lipo battery from the RL, please do so slowly and patiently. Work the battery connection side to side slowly to loosen it from the plug. Some people have reported success using small, curved needle-nose pliers such as hemostats. Others have used small flathead screwdrivers as shown in [this video](https://youtu.be/s2qNPLpfwww).
 
 <a href="https://youtu.be/s2qNPLpfwww" target="_blank"><img src="../img/rileylink_battery_removal.png"  title="RileyLink assembly video" /></a>
 
@@ -115,7 +115,7 @@ To remove the lipo battery from the RL, please do so slowly and patiently. Work 
 
 Yes, waiting for RL to arrive is extremely difficult if they are backorder.  PLEASE be patient, since Loop CANNOT work without RL.
 
-If you're really dying to do something while RL ships, you can proceed with finishing these build directions all the way through Step 14...but after that you'll have to wait for the RileyLink. You can't properly enter any settings or pump info in Loop app without the RileyLink.
+If you're really dying to do something while RL ships, you can proceed with finishing these build directions all the way through Step 14...but after that you'll have to wait for the RileyLink.  You can't properly enter any settings or pump info in Loop app without the RileyLink.
 
 ## Next Step: Enroll in Apple Developer Program
 
