@@ -5,7 +5,7 @@ Loop’s algorithm for adjusting insulin delivery is oriented around making a bl
 ## Terminology
 
 This graph and legend illustrates terms commonly used in discussing Loop's algorithm,
-and shows them in the context of historical and forecasted blood glucose in a style similar to the
+and shows them in the context of historical and forecasted blood glucose in style similar to the
 status screen of Loop.
 
 ![Chart illustrating terms](img/terms_graph.png)
