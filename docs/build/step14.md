@@ -188,7 +188,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
     Congrats! If the build is successful, your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. `Allow` Loop to send you notifications. In the next screen that follows that, click on the `Turn All Categories On` line and then click `Allow` in the upper right corner. 
     
     <p align="center">
-    <img src="../img/health-start.jpeg" width="450">
+    <img src="../img/health-start.JPEG" width="450">
      </p></br></br>
      
      You can unplug your phone from the computer now. And like we promised earlier, you will use the [Set up App section of this website](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/) to keep proceeding safely.
