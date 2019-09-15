@@ -42,7 +42,7 @@ The last section of entries to your Loop app, [Services](https://loopkit.github.
 
 ## Loop Displays
 
-After you are done setting up all your information, you will also need to familiarzie yourself with the Loop's various information displays. [This page](https://loopkit.github.io/loopdocs/operation/loop-settings/displays/) will help you recognize what all the icons, graphs, and data mean.
+After you are done setting up all your information, you will also need to familiarize yourself with the Loop's various information displays. [This page](https://loopkit.github.io/loopdocs/operation/loop-settings/displays/) will help you recognize what all the icons, graphs, and data mean.
 
 ## RileyLink menu
 
