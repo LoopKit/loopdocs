@@ -7,7 +7,7 @@ The Medtronic pumps are used and typically not under warranty.  Use this section
 This error message is common when a pump has been stored for a period of time without a battery.  Most pumps will show an A21 error when you first purchase them on the used market.  Not a big deal.  Press the down arrow (also has the symbol of a light bulb on it) and the pump screen message will scroll down to let you know how to clear that error message (press ESC then ACT).  If the message is coming up on a pump that hasn't been in storage, pull the battery out and replace with a fresh, new battery.  Chances are your battery or battery cap are old.  Look for signs of dirt or rust in the battery cap, give it a little cleaning.
 
 !!!info "Display Tip"
-    When the pump screen has a little black/white bar on the right side, that is a scroll bar.  Use the arrow keys on the right of the the pump screen to scroll and see the additional information.
+    When the pump screen has a little black/white bar on the right side, that is a scroll bar.  Use the arrow keys on the right of the pump screen to scroll and see the additional information.
 
 <p align="center">
 <img src="../img/A21.jpg" width="400">
@@ -15,7 +15,7 @@ This error message is common when a pump has been stored for a period of time wi
 
 ## Batt Out Limit
 
-This error message "battery out of limits" has to do with the internal pump battery, not the AAA battery you replace.  The internal battery cannot be replaced, and unfortunately also has a finite lifespan.  The error message is more of an annoyance than a true problem.  You can try to change the AAA battery faster.  But, the worst case scenario is that you'll have to re-enter the time and date when you get this message more often.  (Don't forget to use RileyLink to set the time after you get this message.)
+This error message "battery out of limits" has to do with the internal pump battery, not the AAA battery you replace.  The internal battery cannot be replaced, and unfortunately also has a finite lifespan.  The error message is more of an annoyance than a true problem.  You can try to change the AAA battery faster.  But, the worst-case scenario is that you'll have to re-enter the time and date when you get this message more often.  (Don't forget to use RileyLink to set the time after you get this message.)
 
 <p align="center">
 <img src="../img/batt-out.jpg" width="400">
