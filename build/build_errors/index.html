@@ -609,8 +609,6 @@
         
             <li><a href="#missing-command-line-tools">Missing Command Line Tools</a></li>
         
-            <li><a href="#siri-capabilities">Siri Capabilities</a></li>
-        
             <li><a href="#pending-certificate-request">Pending Certificate Request</a></li>
         
             <li><a href="#command-codesign-failed">Command CodeSign failed</a></li>
@@ -731,13 +729,6 @@
 <p align="center">
 <img src="../img/command-line-error-3.png" width="550">
 </p></p>
-<h2 id="siri-capabilities">Siri Capabilities<a class="headerlink" href="#siri-capabilities" title="Permanent link">⌁</a></h2>
-<p>Error message: "Your development team does not support the Siri capability"</p>
-<p align="center">
-<img src="../img/siri-error.jpg" width="750">
-</p>
-
-<p>Solution: You need to customize your code to remove Siri capabilities when you are building Loop with a free developer account. See the Code Customization section <a href="https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities">here</a> for directions.</p>
 <h2 id="pending-certificate-request">Pending Certificate Request<a class="headerlink" href="#pending-certificate-request" title="Permanent link">⌁</a></h2>
 <p>Error message: "You already have a current iOS Development certificate or a pending certificate request."</p>
 <p align="center">
@@ -818,13 +809,9 @@ Solution: This error message is caused by either</p>
 <p>Solution: Usually because you have not updated to watchOS prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p>
 <h2 id="apple-watch-loop-app-not-installing">Apple Watch: Loop app not installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Permanent link">⌁</a></h2>
 <p>Error: <strong><u>The Loop app appears on the list of apps available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL"</u></strong>.</p>
-<p>Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watch face and select the "Trust" button.  Now rebuild your Loop app in Xcode, but look for a pop-up message that warns you that the Watch isn't registered with the Developer portal.  Click on the "register" button that is in the pop-up window and proceed with the Loop app-building again.</p>
-<div class="admonition info">
-<p>WatchOS 5 appears to be an issue for some users currently.  If your Loop app is not properly installing on your watch using watchOS 5, please reopen Loop in Xcode and change the deployment targets in the WatchApp and WatchApp Extension targets to a Deployment Target of 5.0.  Rebuild and your watch app should install properly.</p>
-</div>
-<p align="center">
-<img src="../img/watchOS-5.png" width="750">
-</p></div>
+<p>Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watch face and select the "Trust" button.  </p>
+<p>Now we need to do one step before rebuilding Loop app again. Go to the top menu bar of Xcode and select "Clean Build Folder" from the Product menu option. Rebuild your Loop app. </p>
+<p>For an unknown reason (developers are working on fixing it currently), if you do repeated builds in the same Loop project folder...the watch app can fail to install properly after the first build. Therefore, a simple "Clean Build Folder" will reset the folder back to new and you'll be able to install the watch after that fresh build.</p></div>
         </div>
 
         <footer class="col-md-12">

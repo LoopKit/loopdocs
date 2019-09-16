@@ -609,19 +609,19 @@
             <div class="col-md-9" role="main">
 
 <h1 id="omnipod-faults">Omnipod Faults<a class="headerlink" href="#omnipod-faults" title="Permanent link">⌁</a></h1>
-<p>Pod fault shown in HUD:
+<p>Pod faults are shown in the HUD:
 <p align="center">
 <img src="../img/pod-hud-fault.png" width="250">
 </p></br></p>
 <p>Loop will put a higher battery load on a pod than the PDM due to its regular and repeated communications. A pod with lower battery level appears to be more likely to fault for conditions like static electricity and occlusions/pump issues that Loop is not directly causing, like internal fault codes 052, 061, 064 and 066. Pods always perform safety checks and if a potential problem is found, the pod will end itself by screaming and stop with the insulin delivery.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>During extensive tests after getting all commands working properly, many failures due to one specific safety check were still encountered. This check needed to recover its counter within 30 minutes after a temp basal returning to a normal basal schedule, or else the the pod would scream. Eventually, this was resolved this by disabling <em>only</em> this particular check. Therefore the 096-106 faults are always ignored in the current configuration of Loop.</p>
+<p>During extensive tests after getting all commands working properly, many failures due to one specific safety check were still encountered. This check needed to recover its counter within 30 minutes after a temp basal returning to a normal basal schedule, or else the pod would scream. Eventually, this was resolved by disabling <em>only</em> this particular check. Therefore the 096-106 faults are always ignored in the current configuration of Loop.</p>
 </div>
 <h2 id="known-internal-pod-fault-codes">Known internal pod fault codes<a class="headerlink" href="#known-internal-pod-fault-codes" title="Permanent link">⌁</a></h2>
 <p>The currently known pod faults are listed here on the openomni wiki page: <a href="https://github.com/openaps/openomni/wiki/Fault-event-codes">Pod Fault codes</a></p>
 <h2 id="ways-to-reduce-the-possibility-of-a-fault">Ways to reduce the possibility of a fault<a class="headerlink" href="#ways-to-reduce-the-possibility-of-a-fault" title="Permanent link">⌁</a></h2>
-<p>None of the ways listed here are certain to reduce the possibility of a screaming pod, but they could be worth considering if the hypothesis of low battery is indeed the cause of some late-in-life pods.</p>
+<p>None of the ways listed here are certain to reduce the possibility of a screaming pod, but they could be worth considering if the hypothesis of a low battery is indeed the cause of some late-in-life pods.</p>
 <ul>
 <li>Keep the Loop app up to date; newer versions might include improvements to reduce pod battery load</li>
 <li>Do not use the "neutral temp basal" code customization</li>
@@ -634,12 +634,12 @@
 <h2 id="replacement-pod-situations">Replacement pod situations<a class="headerlink" href="#replacement-pod-situations" title="Permanent link">⌁</a></h2>
 <p>You can always call Insulet tech support if a pod has a clear failure on the pod, such as:</p>
 <ul>
-<li>A cannula sticking out when the end cap was removed.</li>
+<li>A cannula was sticking out when the end cap was removed.</li>
 <li>Visual inspection of the pod's cannula window indicating the cannula insertion was not successful.</li>
-<li>Leaking or kinked cannula causing insulin delivery issues.</li>
-<li>The adhesive not working properly when trying top place it on your body.</li>
+<li>Leaking or kinked cannula was causing insulin delivery issues.</li>
+<li>The adhesive was not working properly when trying to place it on your body.</li>
 </ul>
-<p>If the pod fails during use with Loop, a replacement might still be possible. However, the software which communicates with the pod isn't developed or supported by Insulet. Generally speaking, calling in failed pods for reasons not listed, above mid-pod life, may be a bit of a reach for the DIY community. There is a grey area here that we should be careful of and acknowledge that Looping may be a cause in certain faults.</p></div>
+<p>If the pod fails during use with Loop, a replacement might still be possible. However, the software which communicates with the pod isn't developed or supported by Insulet. Generally speaking, calling in failed pods for reasons not listed, above mid-pod life, maybe a bit of a reach for the DIY community. There is a grey area here that we should be careful of and acknowledge that Looping may be a cause in certain faults.</p></div>
         </div>
 
         <footer class="col-md-12">

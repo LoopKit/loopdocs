@@ -609,7 +609,7 @@
             <div class="col-md-9" role="main">
 
 <h1 id="time-changes-with-loop">Time Changes with Loop<a class="headerlink" href="#time-changes-with-loop" title="Permanent link">⌁</a></h1>
-<p>Loop is built to fully work across time zone and daylight savings time changes as long as a few basic instructions are followed.</p>
+<p>Loop is built to operate fully across time zone and daylight savings time changes as long as a few basic instructions are followed.</p>
 <div class="admonition warning">
 <p class="admonition-title">IMPORTANT</p>
 <p><strong>Always use RileyLink to change pump time instead of the Medtronic Pump's screen.  If you fail to set the pump time by using the RileyLink, Loop will not function properly.</strong></p>
@@ -619,7 +619,7 @@
 </p>
 
 <h2 id="iphone">iPhone<a class="headerlink" href="#iphone" title="Permanent link">⌁</a></h2>
-<p>Loop will assume your iPhone's time (UTC, not time zone) is always correct. This theoretically may not be the case if a nearby cell tower is improperly configured (though there are likely resilience mechanisms in iOS to handle this). Automatic time setting can always be disabled in Settings.</p>
+<p>Loop will assume your iPhone's time (UTC, not timezone) is always correct. This theoretically may not be the case if a nearby cell tower is improperly configured (though there are likely resilience mechanisms in iOS to handle this). Automatic time setting can always be disabled in Settings.</p>
 <h2 id="minimed-pump-and-cgm">Minimed Pump and CGM<a class="headerlink" href="#minimed-pump-and-cgm" title="Permanent link">⌁</a></h2>
 <p>The Minimed pump doesn't expose a universal clock, instead it exposes the components of a date (YMDHIS). It has no concept of political time zones, and just continues to increment its components on schedule. Therefore, Loop assumes that the pump's date, until changed, remains at a fixed offset from UTC.</p>
 <p>That offset is stored by Loop the first time the pump ID is changed, and every time the pump's time is changed from the RileyLink Settings screen.</p>
