@@ -31,7 +31,7 @@ Go to the Loop>>Extensions>>UIAlertController.swift and modify Line 32.  The def
 
 Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <i>Think Like A Pancreas</i> by Gary Scheiner.  Currently the lollipop icon is set for 2 hours, taco icon for 3 hours, and pizza icon for 4 hours.  
 
-You can modify these defaults to suit your needs, however modification of these values it not as helpful/common as previous Loop versions.  Ever since Loop v1.4, Loop has included dynamic carb absorption means that Loop will start with your entered carb absorption time, multiply it by 1.5, and then dynamically adjust the absorption time (either shorter or longer) based on the observed BG impacts.  So, typically, most people are finding that modification of the default carb absorption times is no longer necessary.
+You can modify these defaults to suit your needs, however modification of these values is not as helpful/common as previous Loop versions.  Ever since Loop v1.4, Loop has included dynamic carb absorption means that Loop will start with your entered carb absorption time, multiply it by 1.5, and then dynamically adjust the absorption time (either shorter or longer) based on the observed BG impacts.  So, typically, most people are finding that modification of the default carb absorption times is no longer necessary.
 
 If you would like to modify those defaults, you can do so in the Loop>>Managers>>LoopDataManager.swift Lines 65-67.  Note the times are in hours, not minutes, in the code.  For Omnipod-testing branch users, this code is instead found in Loop Core >> LoopSettings.swift Line 16.
 
