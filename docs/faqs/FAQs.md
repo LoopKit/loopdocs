@@ -40,7 +40,7 @@ No, this is purely iPhone or iPod touch.
 
 No. You do not need any experience in code or computers to build Loop. If you have already owned an Apple computer and iPhone, you already have the required level of experience. Beyond that, simply read the directions slowly and diligently...all the information you will need are in these documents.
 
-Often times the not-tech people do better than the tech people in building Loop. Why? Because the not-tech people take the time to read slowly and look at the screenshots in the directions. The tech people often skim read and miss sentences...which then leads to build errors that have to be retraced and fixed.
+Often times the non-tech people do better than the tech people in building Loop. Why? Because the non-tech people take the time to read slowly and look at the screenshots in the directions. The tech people often skim read and miss sentences...which then leads to build errors that have to be retraced and fixed.
 
 ## Is there a cheat sheet for a school nurse to use?
 
@@ -60,7 +60,7 @@ The [RileyLink kit](https://getrileylink.org/) costs $150. This is a one-time co
 
 The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days. That could get very tedious. The $99 annual Apple developer program enrollment is an excellent investment.
 
-There are no other costs, ongoing or initial, to Loop use.
+There are no other costs, ongoing or initial, to use Loop.
 
 ## Do I need to own my own Apple computer?
 
@@ -92,7 +92,7 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 ## Can I use MY Apple Developer account to build for others?
 
-Technically yes...however, there are reasons this is discouraged. When you build for others, you must be careful to not unintentionally revoke the signing certificate that had been used for other people's apps (see note in FAQ above). You also need to let the people know that MAXIMUM their app will last 12 months. It will need to be rebuilt no matter what every 12 months.
+Technically yes...however, there are reasons this is discouraged. When you build for others, you must be careful to not unintentionally revoke the signing certificate that had been used for other people's apps (see note in FAQ above). You also need to let the people know that the MAXIMUM their app will last is 12 months. It will need to be rebuilt no matter what every 12 months.
 
 But the biggest issue with building for others is that they may be left without a decent method of getting Loop updates. There are a lot of new Loopers on Omnipod system and their apps will likely need updating on a regular basis over the first year. Unless you plan on meeting with that person regularly to update their app, you could leave them on an old app that doesn't work as well as the new versions.
 
