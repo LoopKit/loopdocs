@@ -104,5 +104,5 @@ From what we know, this set of error codes seems like a pump killer.  A call to 
 A32 - failure of flash memory
 E22 - software re-installation is necessary
 
-We don't have any reports of a good fix for these error codes.  When seen, usually the E22 error comes up and as soon as it is cleared, the A32 errror comes up.  And the loop continues with a pump restart.
+We don't have any reports of a good fix for these error codes.  When seen, usually the E22 error comes up and as soon as it is cleared, the A32 error comes up.  And the loop continues with a pump restart.
 

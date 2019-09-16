@@ -10,7 +10,7 @@ The modifications for retrofitting an existing NS site for new Loop users will r
 2. Edit/Add Config Vars
 3. Open Nightscout Site
 4. Turn on Plugins
-5. Upate Profile Settings
+5. Update Profile Settings
 
 ### Step 1: Login to Heroku, Settings Tab
 
@@ -133,7 +133,7 @@ Click the big green `Create pull request` button.
 
 * For most people, another screen will appear like shown in the screenshots below with a green `Able to merge` message. Fill in a title and click button to create the pull request, and then you can `Merge pull request`, and finally `Confirm merge`.</br>
 
-* However, for some of you may encounter an red error message `x Can't automatically merge` message. If you have that message, you may want to post in FB for help on resolving that error message before proceeding any further.
+* However, for some of you may encounter a red error message `x Can't automatically merge` message. If you have that message, you may want to post in FB for help on resolving that error message before proceeding any further.
 *********
 <p align="center">
 <img src="../img/update1.jpg" width="650">
