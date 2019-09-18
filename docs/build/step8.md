@@ -18,7 +18,7 @@ Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" 
     
     1. Click on the "Account" link at the top right corner of <a href="https://developer.apple.com" target="_blank">the Apple Developer page</a> and log in to your account.</br></br>
     
-    2. Once you are logged in, you can click [here]( https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_11_GM_Seed/Xcode_11_GM_Seed.xip) to start the download of Xcode 11 GM seed...or navigate to the download link yourself (click on Downloads in the left column of your developer console, then click on Applications icon, and then click on the link to the Xcode 11 GM seed download.)</br></br>
+    2. Once you are logged in, you can click [here]( https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_11_GM_Seed_2/Xcode_11_GM_Seed_2.xip) to start the download of Xcode 11 GM seed 2...or navigate to the download link yourself (click on Downloads in the left column of your developer console, then click on Applications icon, and then click on the link to the Xcode 11 GM seed 2 download.)</br></br>
     
     3. Wait a while as almost 8GB of download happens...</br></br>
     
