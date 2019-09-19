@@ -13,7 +13,7 @@
     * **"What about Libre sensors?"** Libre sensors are not designed to be continuous glucose monitors. All use of Libre sensors as continuous glucose monitors involves the use of third-party applications (Xdrip or Spike) and reader devices (BluCon or Miao Miao). Loop developers have not seen data demonstrating sufficient safeguards from those readers and applications to feel comfortable adding main line Loop integration for those devices. If you use a Libre sensor, you'll have to use a "not-main line" branch of Loop that someone (or yourself) has modified to allow for use with those sensors/applications.
     * **"What about Eversense?"** Eversense's application does not integrate with Apple Health, nor has the communications protocols for Eversense been reverse engineered. Therefore, Eversense is not compatible with Loop use currently.
 
-A continuous glucose monitor (CGM) provides Loop with current blood glucose readings. These readings allow Loop to predict what the current glucose trend is, and predict future blood glucose based on carbohydrate input and your Loop settings. The following are the types of CGMs compatible with Loop. CGM readings are a required part of looping. If your Loop is unable to retreive BG data, it will not be able to loop.
+A continuous glucose monitor (CGM) provides Loop with current blood glucose readings. These readings allow Loop to predict what the current glucose trend is, and predict future blood glucose based on carbohydrate input and your Loop settings. The following are the types of CGMs compatible with Loop. CGM readings are a required part of looping. If your Loop is unable to retrieve BG data, it will not be able to loop.
 
 ## Dexcom G5 and G6 CGM <img src="../img/g5.jpg" width="150" alt="G5">
 
