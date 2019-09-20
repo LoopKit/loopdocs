@@ -34,7 +34,7 @@ No. Loop does not allow you to pick your own temp basal rate or prime insulin in
 If you find yourself in a situation where you would like to specify an exact temp basal rate of your own, you would need to (1) change your scheduled basal rate for the time(s) that you'd like a temp basal rate to run, and (2) suspend/resume insulin delivery (in order to cancel any currently running temp basal that Loop has running) and then (3) turn the slider so that you are running in "open loop" mode for the duration of the time you want to use that specific basal rate. 
 
 ## What if I lose my phone or RileyLink?
-For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone or RileyLink however, you will not be able to affect any pod use; no basal change, suspend, cancel, or bolus. To do anything other than let basals continue, you will need to take action depending on the situation.
+For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone or RileyLink however, you will not be able to effect any pod use; no basal change, suspend, cancel, or bolus. To do anything other than let basals continue, you will need to take action depending on the situation.
 
 * Lost RileyLink only: You can find replace your missing RileyLink with one from your backup supplies. No problem to switch out to a different Rileylink mid-pod session. If you don't have a backup RileyLink to use, then you will need to remove the pod and put on a new pod paired with your PDM until you can get a new RileyLink.
 
