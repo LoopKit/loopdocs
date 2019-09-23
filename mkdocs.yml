@@ -14,6 +14,9 @@ pages:
     - 'Using This Site FAQs': 'faqs/docs-faqs.md'
     - 'General Loop FAQs': 'faqs/FAQs.md'
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
+    - 'Branch FAQs': 'faqs/branch-faqs.md'
+    - 'Updating Loop FAQs': 'faqs/update-faqs.md'
+    - 'iOS 13 FAQs': 'faqs/ios13.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
     - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
     - 'CGM FAQs': 'faqs/cgm-faqs.md'
@@ -39,7 +42,7 @@ pages:
     - 'Ready to Update your Loop?': 'build/updating.md'
 - Set up App:
     - 'Overview': 'operation/overview.md'
-    - Health Permissions: 'build/health.md'
+    - 'Health Permissions': 'build/health.md'
     - 'Add Pump':
         - 'Add Medtronic': 'operation/loop-settings/mdt-pump.md'
         - 'Add Omnipod': 'operation/loop-settings/omnipod-pump.md'

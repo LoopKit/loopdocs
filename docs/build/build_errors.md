@@ -15,11 +15,13 @@ Before you start trying to resolve your red errors...start with the most obvious
 2. **Did you check for updates?** 
 
     !!!info "Minimum Versions"
-        If you are building for Omnipod Loop, Loop dev, or have iOS 12.2 installed, make sure you have macOS 10.14.3 (Mojave) and Xcode 10.2 at a minimum. You will not be able to build for those without the minimum updates.
+        If you are building for Omnipod Loop, Loop dev, or have iOS 13 installed, make sure you have macOS 10.14.3 (Mojave) and Xcode 11 at a minimum. You will not be able to build for those without the minimum updates. Download Xcode 11 from the App Store to replace your Xcode 11 GM if you downloaded that previously.
 
-3. **Get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago.** That old version may not be compatible with new iOS and new Xcode versions.
+3. **Did you reboot your computer after updating Xcode?** Yup...that was in the message on the Update Loop page...did you ignore it? ;)
 
-4. If you are using a free developer account, you need to have finished the [code customizations to remove Siri capabilities](https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities).
+4. **Get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago.** That old version may not be compatible with new iOS and new Xcode versions.
+
+5. If you are using a free developer account, you need to have finished the [removal of Siri capabilities](https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets).
 
 ## Posting for help
 
@@ -29,14 +31,14 @@ Before you post in Zulipchat or Looped Group asking for help with build errors, 
 
 Therefore, first use the error topics (listed in sections below) to try to resolve your build error yourself. Then, if you need to post for help because this page did not fix your problem, you'll need to include information with the post so we (the troubleshooters) know you read this page and where you are in your troubleshooting attempts
 
-    Include in your post: 
-* The version of Xcode you are using
-* The version of Loop you are building with
-* The version of iOS on your Loop iPhone
-* Specify if you are using a free or paid account, and if free...confirm you deleted Siri capabilities
-* Confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)
-* Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.
-* State which fixes from the below list that you have already tried.
+!!!danger "Must include in your post" 
+    * The version of Xcode you are using
+    * The version of Loop you are building with
+    * The version of iOS on your Loop iPhone
+    * Specify if you are using a free or paid account, and if free...confirm you deleted Siri capabilities
+    * Confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)
+    * Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.
+    * **<u>State which fixes from the below list that you have already tried AND post the screenshots of the results of those fix attempts.</u>**
 
 Helpful tip #1: Shift-Command-4 will give you a little screenshot tool that you can click-and-drag to highlight the area you'd like to screenshot. When you release the drag, the screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information.
 
@@ -61,7 +63,7 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 <img src="../img/search-errors.png" width="650">
 </p>
 
-## No such module 'LoopKit'
+## No such module 'LoopKit' or similar message
 
 If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open the Terminal app.  You will use the command `cd ~/downloads/loop-master && carthage update`.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name. 
 
@@ -94,15 +96,6 @@ If you see a message about updating carthage version, open Terminal app and ente
 <img src="../img/carthage-update.jpg" width="850">
 </p>
 
-## Not using Xcode 10.2
-Error message: The error message may change over time and Xcode versions...currently if you use iOS 12.2, Omnipod-testing branch, or dev branch and have not updated to macOS 10.14.3 and Xcode 10.2 at a minimum, you will receive the following errors when you try to build:
-
-<p align="center">
-<img src="../img/xcode10-update.png" width="750">
-</p>
-
-Solution: You will need to update you macOS and then use your computer's App Store to install the Xcode app update.
-
 ## Missing Command Line Tools
 
 Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandLineTools)</u>**" or "**<u>unable to find utility "xcodebuild", not a developer tool or in PATH</u>**"
@@ -117,7 +110,7 @@ Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandL
 <img src="../img/command-line-error-2.jpg" width="550">
 </p>
 
-Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 10.1" in the dropdown menu for Command Line Tools.
+Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 11" in the dropdown menu for Command Line Tools.
 
 </p>
 <p align="center">

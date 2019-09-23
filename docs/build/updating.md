@@ -36,11 +36,15 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
     
     But why be a minimalist? Go ahead and install any available updates in all areas; macOS, Xcode, iOS, and watchOS.
     
-    Please refer to the updated page on [Xcode installation](https://loopkit.github.io/loopdocs/build/step8/) for help with getting Xcode 11, until it is released officially in the App Store (expected September 19th).
-    
     (You can only use macOS 10.13.6 High Sierra if you are building with Loop master branch <u>and</u> have at least iOS 12 or 12.1. The next version of Loop master branch will require Mojave at a minimum, so keep that in your planning for the future. If building dev, omnipod-testing, or any other branch that supports omnipod users, then you will need the minimum versions listed above.)
 
-!!!info "Check Homebrew and Carthage"
+!!!info "Download Xcode 11 from the App store"
+    Yes, this is important. If you downloaded Xcode 11 GM previously in the last couple weeks, go to the App store and get the Xcode update waiting for you now. Xcode 11 GM is not what you need anymore...you need to get Xcode 11 from the App store.
+        
+!!!warning "Restart computer after updating Xcode"
+        Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simultors or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough.
+
+!!!danger "Check Homebrew and Carthage"
     Depending on when you last built, you may need to update Homebrew and Carthage. Please open Terminal app and copy & paste  `carthage version` into Terminal. If you see 0.33.0 returned, then you don't need to do anything additional.
     
     If you got a number other than 0.33.0 for your carthage version, then copy & paste `brew update && brew upgrade carthage` into Terminal app. When the update finishes, you should have carthage 0.33.0 (or later) installed.</br>
@@ -80,6 +84,9 @@ From here it is just like the old directions...you can go straight to [Step 14 B
 
 Note: If this is a computer that hasn't built Loop before, you would want to make sure to do [Step 7: install Homebrew](https://loopkit.github.io/loopdocs/build/step7/) before doing your build on that computer.
 
-
+## Step 4: Check Build Errors page if needed
+    
+!!!danger "CHECK BUILD ERRORS PAGE"
+    If you get a build error...still check the [Build Errors page](https://loopkit.github.io/loopdocs/build/build_errors/). Because even if your exact error isn't there...the information you NEED to provide when asking for help is listed out on that page. And that information is critical. CRITICAL to be able to troubleshoot your build error.
 
 
