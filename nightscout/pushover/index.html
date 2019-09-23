@@ -91,6 +91,24 @@
                     
                         
 <li >
+    <a href="../../faqs/branch-faqs/">Branch FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/update-faqs/">Updating Loop FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/ios13/">iOS 13 FAQs</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../faqs/rileylink-faqs/">RileyLink FAQs</a>
 </li>
 
@@ -665,7 +683,7 @@
 <img src="../img/google3.png" width="550">
 </p>
 
-<p>This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spreadsheets, one for each NS alarm or infomation that is logged.  As new alarms are triggered, the IFTTT applet we are about to write will add a row to the appropriate spreadsheet logging the time of the alarm and any other reported details that go with the entry.  For now though, your drive will be blank...screenshot below just to give you an idea of where we are going.</p>
+<p>This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spreadsheets, one for each NS alarm or information that is logged.  As new alarms are triggered, the IFTTT applet we are about to write will add a row to the appropriate spreadsheet logging the time of the alarm and any other reported details that go with the entry.  For now though, your drive will be blank...screenshot below just to give you an idea of where we are going.</p>
 <p align="center">
 <img src="../img/google4.png" width="550">
 </p>
@@ -957,13 +975,13 @@ If you choose option 1, here's a partial list of some of the filenames you could
 <h2 id="final-notes">Final notes<a class="headerlink" href="#final-notes" title="Permanent link">⌁</a></h2>
 <ul>
 <li>
-<p>You can use other notification services than Pushover in the last part of the second applet.  For example, you could use the SMS service to send text notifications to your iphone instead of Pushover.  The downside for that is that the SMS service is limited to 100 message each month...some users may exceed that pretty easily.  Another alternative notification would be IFTTT's own Notification service.  This would work well, but does not have the ability to distinguish between devices the way Pushover allows.  If you use IFTTT's Notifications service, every phone using your IFTTT account will get the notices.</p>
+<p>You can use other notification services than Pushover in the last part of the second applet.  For example, you could use the SMS service to send text notifications to your iPhone instead of Pushover.  The downside for that is that the SMS service is limited to 100 message each month...some users may exceed that pretty easily.  Another alternative notification would be IFTTT's own Notification service.  This would work well, but does not have the ability to distinguish between devices the way Pushover allows.  If you use IFTTT's Notifications service, every phone using your IFTTT account will get the notices.</p>
 </li>
 <li>
 <p>To be clear, you do <i><strong>NOT</strong></i> need to have pushover on your ENABLE line nor have <code>PUSHOVER_USER_KEY</code>, <code>PUSHOVER_API_TOKEN</code>, or <code>PUSHOVER_ANNOUNCEMENT_KEY</code> entered into your Heroku settings in order for any of the above to work.  This is not the same Pushover as NS has integrated into it's code.  This is actually through IFTTT services, you just need a Pushover account to link to during the 2nd applet setup.</p>
 </li>
 <li>
-<p>To create more notifications, simply repeat the steps for the 2nd applet you created, only this time use a new filename that corresponds to the spreadsheet tracking the alert you'd like notifications for.  You'll end up with multiple applets of the dark blue type (the pushover notifiers) and only a single light blue (NS alarm general collecter).</p>
+<p>To create more notifications, simply repeat the steps for the 2nd applet you created, only this time use a new filename that corresponds to the spreadsheet tracking the alert you'd like notifications for.  You'll end up with multiple applets of the dark blue type (the pushover notifiers) and only a single light blue (NS alarm general collector).</p>
 </li>
 </ul>
 <p align="center">

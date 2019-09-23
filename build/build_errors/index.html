@@ -91,6 +91,24 @@
                     
                         
 <li >
+    <a href="../../faqs/branch-faqs/">Branch FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/update-faqs/">Updating Loop FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/ios13/">iOS 13 FAQs</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../faqs/rileylink-faqs/">RileyLink FAQs</a>
 </li>
 
@@ -601,11 +619,9 @@
         
             <li><a href="#find-your-error-messages">Find your error message(s)</a></li>
         
-            <li><a href="#no-such-module-loopkit">No such module 'LoopKit'</a></li>
+            <li><a href="#no-such-module-loopkit-or-similar-message">No such module 'LoopKit' or similar message</a></li>
         
             <li><a href="#carthage-version-outdated">Carthage version outdated</a></li>
-        
-            <li><a href="#not-using-xcode-102">Not using Xcode 10.2</a></li>
         
             <li><a href="#missing-command-line-tools">Missing Command Line Tools</a></li>
         
@@ -642,22 +658,25 @@
 <p><strong>Did you check for updates?</strong> </p>
 <div class="admonition info">
 <p class="admonition-title">Minimum Versions</p>
-<p>If you are building for Omnipod Loop, Loop dev, or have iOS 12.2 installed, make sure you have macOS 10.14.3 (Mojave) and Xcode 10.2 at a minimum. You will not be able to build for those without the minimum updates.</p>
+<p>If you are building for Omnipod Loop, Loop dev, or have iOS 13 installed, make sure you have macOS 10.14.3 (Mojave) and Xcode 11 at a minimum. You will not be able to build for those without the minimum updates. Download Xcode 11 from the App Store to replace your Xcode 11 GM if you downloaded that previously.</p>
 </div>
+</li>
+<li>
+<p><strong>Did you reboot your computer after updating Xcode?</strong> Yup...that was in the message on the Update Loop page...did you ignore it? ;)</p>
 </li>
 <li>
 <p><strong>Get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago.</strong> That old version may not be compatible with new iOS and new Xcode versions.</p>
 </li>
 <li>
-<p>If you are using a free developer account, you need to have finished the <a href="https://loopkit.github.io/loopdocs/build/code_customization/#disable-siri-capabilities">code customizations to remove Siri capabilities</a>.</p>
+<p>If you are using a free developer account, you need to have finished the <a href="https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets">removal of Siri capabilities</a>.</p>
 </li>
 </ol>
 <h2 id="posting-for-help">Posting for help<a class="headerlink" href="#posting-for-help" title="Permanent link">⌁</a></h2>
 <p>STOP!!  Read this section! Important!</p>
 <p>Before you post in Zulipchat or Looped Group asking for help with build errors, <u>do your work first</u>. The build errors listed below (and the obvious checks listed above) are very successful <strong><em>IF PEOPLE READ THIS PAGE</em></strong>. The volunteer group of people answering questions in Looped and Zulipchat would love to spend more time on improving Loop in other ways than answering build error questions that can be answered by using this page as a first step.</p>
 <p>Therefore, first use the error topics (listed in sections below) to try to resolve your build error yourself. Then, if you need to post for help because this page did not fix your problem, you'll need to include information with the post so we (the troubleshooters) know you read this page and where you are in your troubleshooting attempts</p>
-<pre><code>Include in your post:
-</code></pre>
+<div class="admonition danger">
+<p class="admonition-title">Must include in your post</p>
 <ul>
 <li>The version of Xcode you are using</li>
 <li>The version of Loop you are building with</li>
@@ -665,8 +684,9 @@
 <li>Specify if you are using a free or paid account, and if free...confirm you deleted Siri capabilities</li>
 <li>Confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)</li>
 <li>Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.</li>
-<li>State which fixes from the below list that you have already tried.</li>
+<li><strong><u>State which fixes from the below list that you have already tried AND post the screenshots of the results of those fix attempts.</u></strong></li>
 </ul>
+</div>
 <p>Helpful tip #1: Shift-Command-4 will give you a little screenshot tool that you can click-and-drag to highlight the area you'd like to screenshot. When you release the drag, the screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information.</p>
 <p>Helpful tip #2: When taking screenshots for a post, include the whole Xcode window. Don't zoom in on any one area. There is information in all parts of the Xcode window that are helpful to the troubleshooters, so it saves time to see the whole Xcode window at once.</p>
 <h2 id="find-your-error-messages">Find your error message(s)<a class="headerlink" href="#find-your-error-messages" title="Permanent link">⌁</a></h2>
@@ -686,7 +706,7 @@
 <p align="center">
 <img src="../img/search-errors.png" width="650">
 </p></p>
-<h2 id="no-such-module-loopkit">No such module 'LoopKit'<a class="headerlink" href="#no-such-module-loopkit" title="Permanent link">⌁</a></h2>
+<h2 id="no-such-module-loopkit-or-similar-message">No such module 'LoopKit' or similar message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Permanent link">⌁</a></h2>
 <p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open the Terminal app.  You will use the command <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code>.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name. </p>
 <p></p>
 <p align="center">
@@ -707,13 +727,6 @@
 <p align="center">
 <img src="../img/carthage-update.jpg" width="850">
 </p></p>
-<h2 id="not-using-xcode-102">Not using Xcode 10.2<a class="headerlink" href="#not-using-xcode-102" title="Permanent link">⌁</a></h2>
-<p>Error message: The error message may change over time and Xcode versions...currently if you use iOS 12.2, Omnipod-testing branch, or dev branch and have not updated to macOS 10.14.3 and Xcode 10.2 at a minimum, you will receive the following errors when you try to build:</p>
-<p align="center">
-<img src="../img/xcode10-update.png" width="750">
-</p>
-
-<p>Solution: You will need to update you macOS and then use your computer's App Store to install the Xcode app update.</p>
 <h2 id="missing-command-line-tools">Missing Command Line Tools<a class="headerlink" href="#missing-command-line-tools" title="Permanent link">⌁</a></h2>
 <p>Error message:  "<strong><u>Invalid active developer path (/Library/Developer/CommandLineTools)</u></strong>" or "<strong><u>unable to find utility "xcodebuild", not a developer tool or in PATH</u></strong>"</p>
 <p></p>
@@ -724,7 +737,7 @@
 <p align="center">
 <img src="../img/command-line-error-2.jpg" width="550">
 </p></p>
-<p>Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 10.1" in the dropdown menu for Command Line Tools.</p>
+<p>Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 11" in the dropdown menu for Command Line Tools.</p>
 <p></p>
 <p align="center">
 <img src="../img/command-line-error-3.png" width="550">

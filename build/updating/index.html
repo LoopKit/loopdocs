@@ -91,6 +91,24 @@
                     
                         
 <li >
+    <a href="../../faqs/branch-faqs/">Branch FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/update-faqs/">Updating Loop FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/ios13/">iOS 13 FAQs</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../faqs/rileylink-faqs/">RileyLink FAQs</a>
 </li>
 
@@ -603,6 +621,8 @@
         
             <li><a href="#step-3-build-like-normal">Step 3: Build Like Normal</a></li>
         
+            <li><a href="#step-4-check-build-errors-page-if-needed">Step 4: Check Build Errors page if needed</a></li>
+        
     
     </ul>
 </div></div>
@@ -650,10 +670,17 @@
 <li>Xcode 11</br></br></li>
 </ul>
 <p>But why be a minimalist? Go ahead and install any available updates in all areas; macOS, Xcode, iOS, and watchOS.</p>
-<p>Please refer to the updated page on <a href="https://loopkit.github.io/loopdocs/build/step8/">Xcode installation</a> for help with getting Xcode 11, until it is released officially in the App Store (expected September 19th).</p>
 <p>(You can only use macOS 10.13.6 High Sierra if you are building with Loop master branch <u>and</u> have at least iOS 12 or 12.1. The next version of Loop master branch will require Mojave at a minimum, so keep that in your planning for the future. If building dev, omnipod-testing, or any other branch that supports omnipod users, then you will need the minimum versions listed above.)</p>
 </div>
 <div class="admonition info">
+<p class="admonition-title">Download Xcode 11 from the App store</p>
+<p>Yes, this is important. If you downloaded Xcode 11 GM previously in the last couple weeks, go to the App store and get the Xcode update waiting for you now. Xcode 11 GM is not what you need anymore...you need to get Xcode 11 from the App store.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Restart computer after updating Xcode<p>Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simultors or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough.</p>
+</p>
+</div>
+<div class="admonition danger">
 <p class="admonition-title">Check Homebrew and Carthage</p>
 <p>Depending on when you last built, you may need to update Homebrew and Carthage. Please open Terminal app and copy &amp; paste  <code>carthage version</code> into Terminal. If you see 0.33.0 returned, then you don't need to do anything additional.</p>
 <p>If you got a number other than 0.33.0 for your carthage version, then copy &amp; paste <code>brew update &amp;&amp; brew upgrade carthage</code> into Terminal app. When the update finishes, you should have carthage 0.33.0 (or later) installed.</br></p>
@@ -686,7 +713,12 @@ Depending on your browser and settings, your Loop download may or may not automa
 </div>
 <h2 id="step-3-build-like-normal">Step 3: Build Like Normal<a class="headerlink" href="#step-3-build-like-normal" title="Permanent link">⌁</a></h2>
 <p>From here it is just like the old directions...you can go straight to <a href="https://loopkit.github.io/loopdocs/build/step14/">Step 14 Build Loop app</a> and do just like you did the first time. Open the project, plug in the phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.</p>
-<p>Note: If this is a computer that hasn't built Loop before, you would want to make sure to do <a href="https://loopkit.github.io/loopdocs/build/step7/">Step 7: install Homebrew</a> before doing your build on that computer.</p></div>
+<p>Note: If this is a computer that hasn't built Loop before, you would want to make sure to do <a href="https://loopkit.github.io/loopdocs/build/step7/">Step 7: install Homebrew</a> before doing your build on that computer.</p>
+<h2 id="step-4-check-build-errors-page-if-needed">Step 4: Check Build Errors page if needed<a class="headerlink" href="#step-4-check-build-errors-page-if-needed" title="Permanent link">⌁</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">CHECK BUILD ERRORS PAGE</p>
+<p>If you get a build error...still check the <a href="https://loopkit.github.io/loopdocs/build/build_errors/">Build Errors page</a>. Because even if your exact error isn't there...the information you NEED to provide when asking for help is listed out on that page. And that information is critical. CRITICAL to be able to troubleshoot your build error.</p>
+</div></div>
         </div>
 
         <footer class="col-md-12">

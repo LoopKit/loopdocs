@@ -91,6 +91,24 @@
                     
                         
 <li >
+    <a href="../../../faqs/branch-faqs/">Branch FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../faqs/update-faqs/">Updating Loop FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../faqs/ios13/">iOS 13 FAQs</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../../faqs/rileylink-faqs/">RileyLink FAQs</a>
 </li>
 
@@ -631,14 +649,14 @@
 <p class="admonition-title">Be Aware</p>
 <p>When you press <code>Save</code> for a carb entry, Loop will consider that carb entry saved and use it for calculating temp basals and recommended boluses.  Be cautious about repeated attempts to enter the same meal...Loop will continue to save the carb entries UNLESS you push cancel on the carb entry screen.</br></br>
 <strong>Simply canceling a bolus does not cancel the carb entry.</strong></br></br>
-If you have accidentally made multiple entries for the same carbs, click on the Carbs Chart in the main Loop display and you can delete the redundent carb entries by swiping left on the entries.</p>
+If you have accidentally made multiple entries for the same carbs, click on the Carbs Chart in the main Loop display and you can delete the redundant carb entries by swiping left on the entries.</p>
 </div>
 <h2 id="carb-absorption-time">Carb Absorption Time<a class="headerlink" href="#carb-absorption-time" title="Permanent link">⌁</a></h2>
 <p align="center">
 <img src="../img/food_icons_times.png" width="300">
 </p>
 
-<p>To select your carb entry's absorption time, you can either click on the default food emojis or manually enter carb absoprtion time by selecting the <code>absorption time</code> line in the carb entry tool.</p>
+<p>To select your carb entry's absorption time, you can either click on the default food emojis or manually enter carb absorption time by selecting the <code>absorption time</code> line in the carb entry tool.</p>
 <p>The plate emoji, found to the right of the pizza emoji, can also be used if you are unsure of a new food.  There are other food emojis grouped into fast, medium, and slow absorbing foods.  This may be particularly useful for teens that are trying to learn new foods/meals.  Additionally, if you select the plate icon, you can add text to your <code>food type</code> by selecting the <code>abc</code> button in the bottom left corner of the screen.</p>
 <p align="center">
 <img src="../img/plate.png" width="300">
@@ -651,7 +669,7 @@ If you have accidentally made multiple entries for the same carbs, click on the 
 <p>The default carb absorption times in Loop app are average representations for high, medium, and low glycemic index foods.  Ever since Loop v1.4.0, the algorithm incorporates dynamic carb absorption.  Previous Loop versions were based on a curve that assumed the rate of carb absorption would start out slow, increase to a mid-point, and then taper off.  However, in the real world, carb absorption is quite variable.  Dynamic carb absorption model is able to model some of this variability and allow Loop to respond more reasonably when actual carb absorption is not matching well with the selected carb absorption time for a meal.  In short, while entering a carb absorption time is still part of recording meals in Loop, it is much less critical to get it right.  Now your entry serves more as a guideline, than a rule, for Loop to model carb absorption.  For a more detailed explanation of the new dynamic carb absorption model, please read about it <a href="https://github.com/LoopKit/Loop/pull/507">here</a>.</p>
 <p>To help Loop adjust for carbs that may digest slower than your original estimate, Loop will initially apply a 1.5x multiplier to your entered carb absorption time.  So, a meal entered using the taco icon will initially be treated as a 4.5 hour absorption meal.  As Loop observes the BG impacts of the meal, Loop will shorten the meal's absorption time if BGs are showing quicker impacts than expected, as well as adjust insulin deliveries (e.g., increase temp basals).  You can watch the progression of the Loop's observations of your meal by clicking on the Carbs Chart and watching the insulin counteraction effects.</p>
 <h2 id="mixed-carb-meals">Mixed Carb Meals<a class="headerlink" href="#mixed-carb-meals" title="Permanent link">⌁</a></h2>
-<p>You do not have to enter all carbs for a meal at the same absoption or eating time.  If you want to enter some of the meal's carbs as faster, and some slower, you can log the meal over several individual carb entries.  For example, for meals that have sugary carbs as well as slow acting carbs (Chinese food), you may wish to do part of the carbs as lollipop and part of the carbs as pizza.</p>
+<p>You do not have to enter all carbs for a meal at the same absorption or eating time.  If you want to enter some of the meal's carbs as faster, and some slower, you can log the meal over several individual carb entries.  For example, for meals that have sugary carbs as well as slow acting carbs (Chinese food), you may wish to do part of the carbs as lollipop and part of the carbs as pizza.</p>
 <p>Pressing the <code>Save</code> button in the top right corner will save the carbs into the Loop app and bring up the Loop's bolus tool.  When entering multiple carb absorption durations for a single meal, press save on the carb entry and then press cancel on the bolus tool when it appears.  When you have entered your last carb entry for the meal, then use the bolus tool to deliver the bolus for the entire meal.  Loop will provide a recommendation based on all the saved carbs and their respective absorption durations in total.</p>
 <h2 id="prebolus">Prebolus<a class="headerlink" href="#prebolus" title="Permanent link">⌁</a></h2>
 <p>You can let Loop know you are going to prebolus a meal by adjusting the time of the carb entry on the “date” line of the carb entry.  If you are prebolusing by 20 minutes, simply add 20 minutes to the carb entry time.  </p>
