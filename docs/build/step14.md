@@ -49,7 +49,7 @@ Once Xcode has finished indexing, the Loop project's various folders and files w
     <img src="../../build/img/loop-second-click.png" width="550">
     </p>
 
-3. Third Click: Click on the "Signing & Capabilities" up near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of your middle window. 
+3. Third Click: Click on the "Signing & Capabilities" up near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of your middle window. If you are missing the "Signing & Capabilities" section and didn't have to click somewhere else to see that part...that means you have missed updating to Xcode 11 from an older version of Xcode. Please go back and update Xcode now. Thanks.
 
     <p align="center">
     <img src="../../build/img/loop-third-click.png" width="550">
