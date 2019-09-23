@@ -32,7 +32,7 @@ When the code got to a stable, reliable state and was ready for a larger audienc
 
 Also, omnipod-testing branch was not going to undergo a lot of active revisions to it when it was released. The intent was to keep it as a fairly known, un-changed product for people rather than a constantly changing code set...that way if people noted a bug, it would be a more "known" code base to work to debug.
 
-So, omnipod-testing branch has undergone very little revision since it was first released. In face, since its release in late April/early May 2019, there has only been two updates; one for the newer style Dexcom G6 transmitters and one for iOS 13 compatibility. Nothing major has been done in that branch, intentionally. As described above, the branch is serving as a stable platform for users and has helped catch bugs as a result of NOT being changed constantly.
+So, omnipod-testing branch has undergone very little revision since it was first released. In fact, since its release in late April/early May 2019, there has only been two updates; one for the newer style Dexcom G6 transmitters and one for iOS 13 compatibility. Nothing major has been done in that branch, intentionally. As described above, the branch is serving as a stable platform for users and has helped catch bugs as a result of NOT being changed constantly.
 
 ## What is the future of omnipod-testing branch? Will it be updated?
 
@@ -58,7 +58,7 @@ First, subscribe to the Loop repo's Issues list by "watching" the [Loop repo](ht
 </p>
 
 ### Subscribe to the Zulipchat channels
-Second, use [Zulipchat](https://loop.zulipchat.com) forums for Loop. This forum has several "streams" of conversions depending on interest. I highly recommend following the #github channel if you are wanting to watch for code changes. Code changes are called "commits" in GitHub. The #github channel will have an automated post whenever a new commit is made and it will give a brief line description of the commit.
+Second, use [Zulipchat](https://loop.zulipchat.com) forums for Loop. This forum has several "streams" of conversations depending on interest. I highly recommend following the #github channel if you are wanting to watch for code changes. Code changes are called "commits" in GitHub. The #github channel will have an automated post whenever a new commit is made and it will give a brief line description of the commit.
 
 <p align="center">
 <img src="../img/zulipchat.png" width="650">
@@ -110,7 +110,7 @@ Sometimes yes, sometimes no. Right now we just happen to be in a time of a lot o
 
 ## Will JoJo branch be updated? Does it have "a fix"?
 
-JoJo branches are my (me, Katie) personal-use branches that incorporated changes I found useful for our Looping. Those are changes that were pieced together from various sources in the open source community. Other people who coded up particular changes that benefitted themselves and I found were useful, too. What JoJo was not designed to be is a branch that bi-forcated users and complicated which branch people selected. The unintended consequence of sharing my personal branches over time is that confusion about branches has grown...and I dont' enjoy that. I am working with Pete to get the features in my personal branches merged/improved into mainline Loop. 
+JoJo branches are my (me, Katie) personal-use branches that incorporated changes I found useful for our Looping. Those are changes that were pieced together from various sources in the open source community. Other people who coded up particular changes that benefitted themselves and I found were useful, too. What JoJo was not designed to be is a branch that bi-forcated users and complicated which branch people selected. The unintended consequence of sharing my personal branches over time is that confusion about branches has grown...and I don't enjoy that. I am working with Pete to get the features in my personal branches merged/improved into mainline Loop. 
 
 Dev branch already has automatic Nightscout profile updating now...and that is a huge feature that I really grew to depend on. It is nice to verify (without asking) that my daughter (or a caregiver) successfully edited a basal rate or setting the way I'd suggested when adjustments were needed during a school day. 
 
