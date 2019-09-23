@@ -6,7 +6,7 @@ YES IT IS!!! WOOHOO!!
 
 ## Which pods will work with Loop?
 
-The Loop system described in these documents (aka DIY Loop) works with Eros pods...these are the current pods on the market in wide release. The newer DASH pods is not compatible with DIY Loop. Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
+The Loop system described in these documents (aka DIY Loop) works with Eros pods...these are the current pods on the market in wide release. The newer DASH pods are not compatible with DIY Loop. Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
 
 Summary of eventual systems:
 
@@ -50,7 +50,7 @@ In the early stages of development, there were. Thankfully to the hard work of P
 The most common time of pod errors on Loop will be during the pairing process. If you get a pod that is failing to pair, please see [this page](https://loopkit.github.io/loopdocs/troubleshooting/pod-pairing/) for steps on how to fix the failure and recover before you lose the pod.
 
 ## What do you do to stop a screaming pod?
-Screaming pods can be silenced by carrying a paperclip. Simply put the paperclip in the small hole that is on the bottom (the side opposite where the cannula is) of the pod as shown. Push the paperclip in until you hear a little click, that click is breaking the circuit that let's the audible scream go. 
+Screaming pods can be silenced by carrying a paperclip. Simply put the paperclip in the small hole that is on the bottom (the side opposite where the cannula is) of the pod as shown. Push the paperclip in until you hear a little click, that click is breaking the circuit that lets the audible scream go. 
 
 <p align="center">
 <img src="../img/paperclip.jpg" width="500">
