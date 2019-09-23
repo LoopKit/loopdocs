@@ -6,7 +6,7 @@ Every time a new iOS release comes out...there's loads of questions and a flurry
 
 That is a question that you should answer separate from Loop considerations. New iOS releases often have bugs in them, so I tend to avoid updating my daughter's phone for a bit. Instead, I update my phone and test things out first. Dexcom's app could have problems even...who knows. But, I certainly want to get a chance to kick-the-tires (or watch other people kick tires) for a bit before I try new iOS releases. Once I see things are ok and working without major issues, then I'll update her phone's iOS. Plus, going backwards once you've updated is a pain and usually not possible shortly after the new version is released.
 
-Also, I don't update iOS until I've had time to update my macOS and Xcode as well. Once you update iOS, you'll likely have to do matching updates to other Apple software for Loop building...so might as make sure you successfully update the other pieces so that everything is squared away.
+Also, I don't update iOS until I've had time to update my macOS and Xcode as well. Once you update iOS, you'll likely have to do matching updates to other Apple software for Loop building...so you might as well make sure you successfully update the other pieces so that everything is squared away.
 
 ## Will my Loop keep working if I don't update to iOS 13?
 
@@ -44,7 +44,7 @@ As of today, September 23rd...things are much easier:
     If you downloaded Xcode 11 GM previously, go to the App store and get the Xcode update waiting for you now. Xcode 11 GM is not what you need anymore...you need to get Xcode 11 from the App store.
     
 !!!warning "Restart computer after updating Xcode"
-    Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simultors or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough.
+    Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simulators or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough.
 
 !!!info "Use the Updating Loop app page in LoopDocs"
     Anytime you want to update your Loop app (aka rebuild your Loop app), always start with the [Updating Loop page](https://loopkit.github.io/loopdocs/build/updating/). That page will have current info to help you get going with what the new minimums are. Always start there. Is it possible there will be a slight delay in updating that page? Yes, I'm human. I have kids, job, house, etc. so it might be slightly delayed sometimes. But, generally during times like this when things are important to update...I make sure the pages reflect that. I'll do my part...your part is to check that page for current info.
