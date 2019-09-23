@@ -28,7 +28,7 @@ If you get stuck, there are several things that can help:
 
 * Scroll back up in the directions and see if you maybe missed a step accidentally. Might even be that you missed a paragraph.</br></br>
 * Check and compare your screen's display with what the screenshots are highlighting. Does your screen seem similar? Or does yours have an error message? If you have an error message, see if it helps guide you to the problem.</br></br>
-* If you just get stumped, post in Looped Group (Facebook) or Zulipchat and ask for help. Lots of people standing by to help each other. If you have a screenshot of where you are stuck and what part of the directions you are on, that will help a lot.
+* If you just get stumped, post in <a href="https://www.facebook.com/groups/TheLoopedGroup/" target="_blank">Looped Group (Facebook)</a> or <a href="https://loop.zulipchat.com/" target="_blank">Zulipchat</a> and ask for help. Lots of people standing by to help each other. If you have a screenshot of where you are stuck and what part of the directions you are on, that will help a lot.
 
 ## So, I build the app and then I'm done?
 
