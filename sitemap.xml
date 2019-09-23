@@ -1,332 +1,363 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
-     <loc>/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
     <url>
-     <loc>/faqs/docs-faqs/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faqs/FAQs/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faqs/omnipod-faqs/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faqs/branch-faqs/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faqs/update-faqs/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faqs/ios13/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faqs/rileylink-faqs/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faqs/algorithm-faqs/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faqs/cgm-faqs/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/faqs/safety-faqs/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/build/overview/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step1/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step2/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step3/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step4/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step5/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step6/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step7/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step8/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step9/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step10/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step11/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step12/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step13/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/step14/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/build_errors/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/code_customization/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/updating/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/operation/overview/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/build/health/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/operation/loop-settings/cgm/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/operation/loop-settings/configurations/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/operation/loop-settings/services/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/operation/loop-settings/displays/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/operation/loop-settings/rileylink/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/nightscout/overview/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/nightscout/new_user/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/nightscout/update_user/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/nightscout/troublehoot/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/nightscout/mlab_cleanup/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/nightscout/azure_migration/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/nightscout/ifttt/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/nightscout/pebble/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/nightscout/pushover/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/nightscout/reports/</loc>
+     <loc>None</loc>
      <lastmod>2019-09-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-09-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
 </urlset>
