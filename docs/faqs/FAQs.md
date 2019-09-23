@@ -58,7 +58,7 @@ Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.
 
 The [RileyLink kit](https://getrileylink.org/) costs $150. This is a one-time cost and many people still have their original RileyLinks from nearly 3 years ago running just fine. I highly recommend purchasing two RileyLinks when financially feasible, to have one as a backup in case of accidental damage.
 
-The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days. That could get very tedious. The $99 annual Apple developer program enrollment is an excellent investment.
+The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days. That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.
 
 There are no other costs, ongoing or initial, to Loop use.
 
@@ -129,7 +129,7 @@ And those all likely won't be compatible anytime in the future.
 
 Yes, technically possible. You can have multiple Loop apps built onto the same iPhone. However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping). Additionally, your pod will only work on one Loop app at a time anyways. So for smooth looping, just keep one Loop app on any phone for looping use. 
 
-## Will I be able to Loop on a plane? or in the mountains?
+## Will I be able to Loop on a plane? Or in the mountains?
 
 Yes. Loop does not require internet or cell coverage to work. So long as the Looper has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/pod.
 
