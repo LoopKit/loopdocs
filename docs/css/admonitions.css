@@ -26,8 +26,11 @@
 
 /* Variations */
 .admonition.danger {
-  border-left-color: #7dc991;
+    border-left-color: #7dc991;
   background-color: #d1e8d7;
+  border-bottom-color:#d1e8d7;
+  border-right-color: #d1e8d7;
+  border-top-color:d1e8d7;
 }
 .admonition.danger .admonition-title {
   color: #7dc991;
