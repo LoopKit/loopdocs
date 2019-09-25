@@ -33,7 +33,7 @@ Offline use means using Loop when there is no cell data or internet available. L
 
 ## Dexcom Servers
 
-In some rare instances, the Loop may fail to eavesdrop on the Bluetooth transmissions of the CGM systems.  When that happens, the Loop can pull directly from Dexcom Servers to get the data (assuming you have entered your Share account information in the Loop settings and have Share turned on). When Loop is operating in this mode, you will see a small cloud in the CGM reading in the Loop app. Operating in this mode requires a working internet or cell connection.
+In some rare instances, the Loop may fail to eavesdrop on the Bluetooth transmissions of the CGM systems. When that happens, the Loop can pull directly from Dexcom Servers to get the data (assuming you have entered your Share account information in the Loop settings and have Share turned on). When Loop is operating in this mode, you will see a small cloud in the CGM reading in the Loop app. Operating in this mode requires a working internet or cell connection. It is normally recommended that you do not add your Dexcom Share account credentials because loop can sometimes get stuck trying to log in and fail to fall back on fetching CGM data directly from the Dexcom app. However, if Loop is failing to fetch your CGM data from the Dexcom app it may be helpful to temporarily enter your Dexcom Share credentials to allow Loop to pull you BG data from the Dexcom servers.
 
 ## CGMs not natively supported in Loop
 
