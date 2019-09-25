@@ -26,7 +26,7 @@
 
 /* Variations */
 .admonition.danger {
-    border-left-color: #7dc991;
+  border-left-color: #7dc991;
   background-color: #d1e8d7;
   border-bottom-color: #d1e8d7;
   border-right-color: #d1e8d7;
@@ -34,6 +34,8 @@
 }
 .admonition.danger .admonition-title {
   color: #7dc991;
+  background-color: #d1e8d7;
+  border-bottom-color: #d1e8d7;
 }
 .admonition.warning {
   border-left-color: #f0ad4e;
@@ -44,6 +46,8 @@
 }
 .admonition.warning .admonition-title {
   color: #AD6D11;
+  background-color: #FFD8A0;
+  border-bottom-color: #FFD8A0;
 }
 .admonition.info {
   border-left-color: #5bc0de;
@@ -54,6 +58,8 @@
 }
 .admonition.info .admonition-title {
   color: #1993B6;
+  background-color: #BAEAF8;
+  border-bottom-color: #BAEAF8;
 }
 
 /* Title */
