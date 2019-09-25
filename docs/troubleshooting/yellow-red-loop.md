@@ -46,12 +46,13 @@ If your Loop turns yellow or red, easiest to start by checking the timestamps on
 BG troubleshooting steps:
 
 * Verify you have enabled the correct [CGM Selection](https://loopkit.github.io/loopdocs/setup/loop-settings/settings/#cgm-selection) in Loop settings; it is easy to accidentally change the selection while scrolling through the settings page
-* For G5, verify your [transmitter ID](https://loopkit.github.io/loopdocs/setup/loop-settings/settings/#cgm-selection) is set correctly in Loop settings
+* For G5 and G6, verify your [transmitter ID](https://loopkit.github.io/loopdocs/setup/loop-settings/settings/#cgm-selection) is set correctly in Loop settings
 * For G4, verify the Dexcom Share app is running on your phone
 * **Fetch Recent Glucose** command in RL only works for Medtronic CGM users, by the way...so don't expect that command to solve Dexcom CGM issues
 * If your local CGM is working fine on the Dexcom app, but Loop isn't reading it:
-    * make sure you enter your Dexcom Share account info in the Loop settings. Loop will automatically switch to pulling from the Dexcom servers if the local reading isn't working.
     * try turning Loop and Dexcom apps off, toggle BT off/on, restart Loop app, and then restart Dexcom app
+    * if you entered your Dexcom Share account info in the Loop settings, delete this information from your settings. Instead, ensure that your transmitter ID is entered correctly so that Loop can pull the CGM information directly from the Dexcom app.
+
 ****************************
 
 ## Pump Issues
