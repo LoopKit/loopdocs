@@ -29,7 +29,7 @@ Dexcom G4 users will need the Dexcom G4 Share2 app active on their iPhone and pa
 
 ## Dexcom Share
 
-The Dexcom Share selection is primarily for people who wish to test Loop function without a local CGM source and who are not running the Dexcom app on their Loop iPhone. This selection will require login access to a Dexcom Share account with live data and active internet connection in order to work.
+The Dexcom Share selection is primarily for people who wish to test Loop function without a local CGM source and who are not running the Dexcom app on their Loop iPhone. This selection will require login access to a Dexcom Share account with live data and active internet connection in order to work.  It is generally preferable for Loop to fetch CGM data directly from the Dexcom app by entering the transmitter ID in the Loop settings, so the Dexcom Share setup is not normally recommended.
 
 ## About Dexcom Share credentials
 In most cases, it is recommended that you do not add your Dexcom Share account credentials because loop can sometimes get stuck trying to log in and fail to fall back on fetching CGM data directly from the Dexcom app. If you do enter share credentials, take note of the following information.
