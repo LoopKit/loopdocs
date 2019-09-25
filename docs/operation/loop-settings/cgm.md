@@ -18,7 +18,7 @@ The standard selections available will be:
 
 ## Dexcom G5 and G6
 
-The Dexcom G5 and G6 options only require the addition of the active transmitter ID, and the matching Dexcom app to be running on the Loop iPhone. You do not have to add your Dexcom Share account credentials, but if you do, make sure they match what you originally entered into your Dexcom app. 
+The Dexcom G5 and G6 options only require the addition of the active transmitter ID, and the matching Dexcom app to be running on the Loop iPhone. It is recommended that you do not add your Dexcom Share account credentials because loop can sometimes get stuck trying to log in and fail to fall back on fetching CGM data directly from the Dexcom app. If you do enter share credentials, make sure they match what you originally entered into your Dexcom app. 
 
 When you change transmitters, you will need to select the `Delete CGM` button at the very bottom of the CGM info page in Loop. Then you will select your Dexcom system again and add the new transmitter ID. You cannot just tap on your old transmitter ID to update it. 
 
@@ -32,6 +32,8 @@ Dexcom G4 users will need the Dexcom G4 Share2 app active on their iPhone and pa
 The Dexcom Share selection is primarily for people who wish to test Loop function without a local CGM source and who are not running the Dexcom app on their Loop iPhone. This selection will require login access to a Dexcom Share account with live data and active internet connection in order to work.
 
 ## About Dexcom Share credentials
+In most cases, it is recommended that you do not add your Dexcom Share account credentials because loop can sometimes get stuck trying to log in and fail to fall back on fetching CGM data directly from the Dexcom app. If you do enter share credentials, take note of the following information.
+
 For all selections, the Dexcom Share credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. **Dexcom Share account is not always the same login info as your Dexcom Clarity account.** For G4 users, the Share account is found in the account tab on the app. For G5/G6 users, unfortunately, there is no information in the app displaying what your account name is. The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
 
 ## Spike Users
