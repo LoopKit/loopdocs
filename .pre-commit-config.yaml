@@ -1,0 +1,6 @@
+repos:
+  - repo: https://github.com/prettier/prettier
+    rev: 1.18.2
+    hooks:
+      - id: prettier
+        args: [--write, --prose-wrap=always, "**/*.md", "*.md"]

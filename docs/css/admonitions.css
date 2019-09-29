@@ -5,14 +5,16 @@
   border: 1px solid #eee;
   border-left-width: 8px;
   border-radius: 3px;
-  background-color: #fCfCfc;
+  background-color: #fcfcfc;
 }
 .admonition .admonition-title {
   margin-top: 0;
   padding-top: 0;
   margin-bottom: 5px;
 }
-.admonition p:last-child, .admonition ul:last-child, .admonition ol:last-child {
+.admonition p:last-child,
+.admonition ul:last-child,
+.admonition ol:last-child {
   margin-bottom: 0;
 }
 .admonition code {
@@ -39,27 +41,27 @@
 }
 .admonition.warning {
   border-left-color: #f0ad4e;
-  background-color: #FFD8A0;
-  border-bottom-color: #FFD8A0;
-  border-right-color: #FFD8A0;
-  border-top-color: #FFD8A0;
+  background-color: #ffd8a0;
+  border-bottom-color: #ffd8a0;
+  border-right-color: #ffd8a0;
+  border-top-color: #ffd8a0;
 }
 .admonition.warning .admonition-title {
-  color: #AD6D11;
-  background-color: #FFD8A0;
-  border-bottom-color: #FFD8A0;
+  color: #ad6d11;
+  background-color: #ffd8a0;
+  border-bottom-color: #ffd8a0;
 }
 .admonition.info {
   border-left-color: #5bc0de;
-  background-color: #BAEAF8;
-  border-bottom-color: #BAEAF8;
-  border-right-color: #BAEAF8;
-  border-top-color: #BAEAF8;
+  background-color: #baeaf8;
+  border-bottom-color: #baeaf8;
+  border-right-color: #baeaf8;
+  border-top-color: #baeaf8;
 }
 .admonition.info .admonition-title {
-  color: #1993B6;
-  background-color: #BAEAF8;
-  border-bottom-color: #BAEAF8;
+  color: #1993b6;
+  background-color: #baeaf8;
+  border-bottom-color: #baeaf8;
 }
 
 /* Title */

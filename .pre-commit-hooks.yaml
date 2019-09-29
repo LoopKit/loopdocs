@@ -1,0 +1,6 @@
+- id: prettier
+  name: Prettier Formatter
+  description: This hook wraps markdown lines at 80 characters.
+  entry: prettier
+  language: node
+  types: [markdown]

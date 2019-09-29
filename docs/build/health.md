@@ -1,6 +1,12 @@
 # Health Data
 
-Loop app uses the iPhone's Health app to store blood glucose, insulin, and carbohydrate data. Additional details about how to use Health to interpret your longer-term looping data can be found [here in LoopTips](https://kdisimone.github.io/looptips/data/health/). Health data can also be accessed and uploaded by Tidepool's Mobile app and is an important step in Jaeb Observational Study enrollment. Please review the settings below to ensure you have the proper settings.
+Loop app uses the iPhone's Health app to store blood glucose, insulin, and
+carbohydrate data. Additional details about how to use Health to interpret your
+longer-term looping data can be found
+[here in LoopTips](https://kdisimone.github.io/looptips/data/health/). Health
+data can also be accessed and uploaded by Tidepool's Mobile app and is an
+important step in Jaeb Observational Study enrollment. Please review the
+settings below to ensure you have the proper settings.
 
 ## Loop Permissions
 
@@ -11,10 +17,12 @@ Loop app uses the iPhone's Health app to store blood glucose, insulin, and carbo
 
 ## Dexcom Permissions
 
-You also need to enable your Dexcom app to write to the Health app. You can find this in your Dexcom app's Settings, under Health.  Click on the `Enable` button and then `Turn All Categories On` so that the toggle for allowing Dexcom to write data is now a green color.
+You also need to enable your Dexcom app to write to the Health app. You can find
+this in your Dexcom app's Settings, under Health. Click on the `Enable` button
+and then `Turn All Categories On` so that the toggle for allowing Dexcom to
+write data is now a green color.
 
 <p align="center">
 <img src="../img/health_g5.jpg" width="550">
 </p>
 </br></br>
-
