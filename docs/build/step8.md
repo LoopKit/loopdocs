@@ -19,6 +19,10 @@ Open your App Store in your computer and search for Xcode...you'll either be dow
 <img src="../img/xcode.png" width="750">
 </p></br>
 
+If your download fails to finish, you can try directly downloading from your Apple developer account. Login to your developer account and then use [this link to download Xcode 11 directly](https://download.developer.apple.com/Developer_Tools/Xcode_11/Xcode_11.xip).
+
+If you have anti-virus software, you may also want to grant an exception for downloading Xcode (uncommon issue, but we have had one person using anti-virus report that they needed to disable their virus protection to complete the download).
+
 ## Next Step: Xcode Preferences
 
 Now you are ready to move onto Step 9 to [work on Xcode Preferences](https://loopkit.github.io/loopdocs/build/step9/).
