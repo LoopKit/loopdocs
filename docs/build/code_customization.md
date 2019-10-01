@@ -46,7 +46,9 @@ The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, an
 * Rapid-acting child curve peaks at 65 minutes
 * Fiasp peaks curve peaks at 55 minutes
 
-If you wish to customize these values, you can adjust them on Lines 22-38 in the Common>>Models>>Insulin>>ExponentialInsulinModelPreset.swift file
+If you wish to customize these values, you can adjust them on Lines 22-38 in the Common>>Models>>Insulin>>ExponentialInsulinModelPreset.swift file.
+
+For Omnipod-testing branch users, this code is instead found in LoopCore>>Insulin>>ExponentialInsulinModelPreset.swift.
 
 <p align="center">
 <img src="../img/exponential.png" width="750">
