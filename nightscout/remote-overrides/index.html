@@ -466,42 +466,42 @@
 1. Login to your <a href="https://developer.apple.com/account/">Apple developer account</a></br></br>
 2. Click on "Certificates, Indentifiers &amp; Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" <strong>OR</strong> the "+" icon to add a new key. </p>
 <p align="center">
-<img src="../img/apns-add-key.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-add-key.PNG" width="550">
 </p>
 
 <p></br></br>
 3. In the form that appears, click the checkbox for enabling "Apple Push Notifications service (APNs)" and enter a name for the key such as "Nightscout". Then click the "Continue" button in the upper right of the screen.</p>
 <p align="center">
-<img src="../img/key-apns.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/key-apns.PNG" width="550">
 </p>
 
 <p></br></br>
 4. In the screen that follows, click the blue "Register" button.</p>
 <p align="center">
-<img src="../img/apns-register.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-register.PNG" width="550">
 </p>
 
 <p></br></br>
 5. In the screen that follows, click the blue "Download" button. This step will download a file with a name that starts with "AuthKey" and ends with ".p8".</p>
 <p align="center">
-<img src="../img/apns-download.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-download.PNG" width="550">
 </p>
 
 <p></br></br>
 6. Find your AuthKey download in your downloads folder. Double-click to open it and you will be presented a message asking how you'd like to open it. Click on "Choose Application..." and then select "TextEdit" as your application to open it with.</p>
 <p align="center">
-<img src="../img/apns-open.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-open.PNG" width="550">
 </p>
 
 <p></br></br></p>
 <p align="center">
-<img src="../img/apns-textedit.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-textedit.PNG" width="550">
 </p>
 
 <p></br></br>
 7. When the file opens, it will look similar to the screenshot below. We need to highlight <strong>ALL OF THE CONTENTS</strong> of that file and copy it because we will be pasting it in Heroku later...keep that in mind. Yes, allllll of the contents. So, easiest way is to click inside that file and then press <code>command-a</code> to highlight all the text and then <code>command-c</code> to copy it all to the clipboard.</p>
 <p align="center">
-<img src="../img/apns-copy-key.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key.PNG" width="550">
 </p>
 
 <p></br></br></p>
@@ -529,7 +529,7 @@
 </li>
 </ol>
 <p align="center">
-<img src="../img/deploy-remotes.PNG" width="750">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/deploy-remotes.PNG" width="750">
 </p>
 
 <p></br></br>
@@ -546,14 +546,14 @@
 <th>LOOP_APNS_KEY</th>
 <td>enter ENTIRE contents of the downloaded .ps file including the BEGIN and END lines.
 <p align="center">
-<img src="../img/apns-copy-key2.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key2.PNG" width="550">
 </p> </br></br></td>
 </tr>
 <tr>
 <th>LOOP_APNS_KEY_ID</th>
 <td>string of numbers on the .ps download file, or you can get it from your saved key in your developer account as shown next step, too
 <p align="center">
-<img src="../img/apns-open2.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-open2.PNG" width="550">
 </p> </br></br>
 </td>
 </tr>
@@ -561,7 +561,7 @@
 <th>LOOP_DEVELOPER_TEAM_ID</th>
 <td>get this value from Loop app signing or in your developer account's top right corner under your name
 <p align="center">
-<img src="../img/apns-vars.PNG" width="750">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-vars.PNG" width="750">
 </p> </br></br>
 </td>
 </tr>
@@ -569,7 +569,7 @@
 </table></p>
 <p>When executed properly, you should have something that looks like this:</p>
 <p align="center">
-<img src="../img/override_vars_complete.PNG" width="650">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/override_vars_complete.PNG" width="650">
 </p>
 
 <p></br></br></p>
@@ -586,13 +586,13 @@
 <h2 id="step-5-using-remote-overrides">Step 5: Using Remote Overrides<a class="headerlink" href="#step-5-using-remote-overrides" title="Permanent link">⌁</a></h2>
 <p>To use remote overrides, I'm assuming you've setup your Nightscout site according to the directions <a href="https://loopkit.github.io/loopdocs/nightscout/new_user/#step-4-setup-your-heroku-nightscout-app">here</a> in Loopdocs. Especially the part about your ENABLE line including "override careportal loop" (in addition to other variables you'd be interested in). You'll also need to have your site authenticated so that your careportal is active to send remote overrides. You can authenticate your site by selecting the three horizontal lines in the upper right corner of your Nightscout site and scrolling to the bottom of the settings. There's an "authenicate" link at the very bottom. Once authenticated by entering your API Secret, then there will be a <code>+</code> in the upper right corner of your site. That is your careportal. Tap the careportal <code>+</code> and then scroll down in the "event type" menu to find "Temporary Override". Within there you will find all your Loop override presets already loaded for you.</p>
 <p align="center">
-<img src="../img/careportal-overrides.PNG" width="350">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/careportal-overrides.PNG" width="350">
 </p>
 
 <p></br></br></p>
 <p>The Looper will see a banner notification that an override has been set (or canceled, as the case may be).</p>
 <p align="center">
-<img src="../img/override_notification.jpeg" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/override_notification.jpeg" width="550">
 </p>
 
 <p></br></br></p>
