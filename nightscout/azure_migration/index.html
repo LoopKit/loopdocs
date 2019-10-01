@@ -434,15 +434,15 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="migrating-from-azure-to-heroku">Migrating from Azure to Heroku<a class="headerlink" href="#migrating-from-azure-to-heroku" title="Permanent link">⌁</a></h1>
-<p>If you are a current Azure user who wants to move to Heroku, but not lose all your old NS data, you will need do the following steps:</p>
+<p>If you are a current Azure user who wants to move to Heroku, but you do not want to lose all your old NS data, you will need complete the following steps:</p>
 <ul>
-<li>update your repository in GitHub</li>
-<li>create a new heroku nightscout site</li>
-<li>migrate your mLab database to new site</li>
+<li>update your repository on GitHub</li>
+<li>create a new Heroku Nightscout site</li>
+<li>migrate your mLab database to your new site</li>
 </ul>
 <h2 id="updating-your-repository-in-github">Updating your repository in GitHub<a class="headerlink" href="#updating-your-repository-in-github" title="Permanent link">⌁</a></h2>
 <ul>
-<li>Copy, paste, and goto the one of the following links depending on which branch of cgm-remote-monitor you are currently running (replace <code>yourgithubname</code> with your actual GitHub user name)</li>
+<li>Copy, paste, and click on one of the one of the following links depending on which branch of cgm-remote-monitor you are currently running (replace <code>yourgithubname</code> with your actual GitHub user name)</li>
 </ul>
 <p>for <strong>master</strong> branch deployments:</p>
 <p><code>https://github.com/yourgithubname/cgm-remote-monitor/compare/master...nightscout:master</code></p>
@@ -453,7 +453,7 @@
 </p>
 
 <ul>
-<li>Click the big green <code>Create pull request</code> button. Another screen will appear, fill in a title and click button to create the pull request, and then you can <code>Merge pull request</code>, and finally <code>Confirm merge</code>.</li>
+<li>Click the big green <code>Create pull request</code> button. Another screen will appear, fill in a title and click the button to create the pull request, and then you can <code>Merge pull request</code>, and finally <code>Confirm merge</code>.</li>
 </ul>
 <hr />
 <p><p align="center">
@@ -481,7 +481,7 @@
 
 <ul>
 <li>
-<p>Go to your Nightscout cgm-remote-monitor repository in GitHub (https://github.com/yourGitHubname/cgm-remote-monitor)</p>
+<p>Go to your Nightscout cgm-remote-monitor repository on GitHub (https://github.com/yourGitHubname/cgm-remote-monitor)</p>
 </li>
 <li>
 <p>Scroll down until you see the purple <code>Deploy to Heroku</code> button.  Click that button.</p>
@@ -576,7 +576,7 @@
 
 <p><strong>The remaining variables can be left at their default values.</strong></br></br></p>
 <ul>
-<li>Click the purple <code>Deploy</code> button at the bottom of screen</li>
+<li>Click the purple <code>Deploy</code> button at the bottom of the screen.</li>
 </ul>
 <p align="center">
 <img src="../img/deploy_button.jpg" width="450">
@@ -590,7 +590,7 @@
 </p>
 
 <ul>
-<li>You can verify your site’s successful build by clicking <code>View</code> (you should see black site with a profile warning).  You will be redirected to a profile set-up page.  (If it doesn't redirect automatically, refresh your webpage).  </li>
+<li>You can verify your site’s successful build by clicking <code>View</code> (you should see a black site with a profile warning).  You will be redirected to a profile set-up page.  (If it doesn't redirect automatically, refresh your webpage).  </li>
 </ul>
 <p align="center">
 <img src="../img/no_profile.jpg" width="450">
@@ -605,7 +605,7 @@
 <li>Assuming your previous browser tab is still open for "Create a new App | Heroku", let's go back to that tab.  This time instead of choosing the <code>View</code> option, we are going to select the <code>Manage App</code> button. Then, select the <code>Settings</code> tab near the top of the screen on your Heroku app.</li>
 </ul>
 <p align="center">
-<img src="../img/settings_heroku.jpg" width="450">
+<img src="../img/heroku5.png" width="450">
 </p>
 
 <ul>
@@ -687,20 +687,20 @@
 </p>
 
 <ul>
-<li>Click on the settings (those three horizontal lines in upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then press save. Your new Nightscout site is all set-up.  Congrats!</li>
+<li>Click on the settings (those three horizontal lines in the upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then click save. Your new Nightscout site is all set-up.  Congrats!</li>
 </ul>
 <p align="center">
 <img src="../img/settings_ns.jpg" width="450">
 </p>
 
 <h2 id="migrate-mlab-database">Migrate mLab database<a class="headerlink" href="#migrate-mlab-database" title="Permanent link">⌁</a></h2>
-<p>If you’d like to seamlessly keep all your old Azure NS data showing in your new Heroku NS site, you’ll need to copy and paste your old <code>MONGODB</code> string from your Azure site.  Find it in either Application Settings or Connection strings in your Azure control panel and then go to Heroku’s <code>MONGODB_URI</code> line.  Replace the content with your copied string from Azure.  Double check that your Azure collection used the “entries” name…if it doesn’t, then you will need to update that variable in Heroku to match as well.</p>
+<p>If you’d like to seamlessly keep all your old Azure NS data showing in your new Heroku NS site, you’ll need to copy and paste your old <code>MONGODB</code> string from your Azure site.  Find it in either Application Settings or Connection strings in your Azure control panel and then go to Heroku’s <code>MONGODB_URI</code> line.  Replace the content with your copied string from Azure.  Double-check that your Azure collection used the “entries” name…if it doesn’t, then you will need to update that variable in Heroku to match as well.</p>
 <p align="center">
 <img src="../img/mongo.jpg" width="450">
 </p>
 
 <h2 id="event-history">EVENT HISTORY<a class="headerlink" href="#event-history" title="Permanent link">⌁</a></h2>
-<p>Don't forget to keep you Loop App's Preferred Source set to <code>Event History</code> if you want your NS site to smoothly integrate.  Preferred Source set to <code>Reservoir</code> will result in carbs not being uploaded and temp basals not being displayed.</p></div>
+<p>Don't forget to keep you Loop App's Preferred Source set to <code>Event History</code> if you want your NS site to be smoothly integrated.  Preferred Source set to <code>Reservoir</code> will result in carbs not being uploaded and temp basals not being displayed.</p></div>
         </div>
 
         <footer class="col-md-12">
