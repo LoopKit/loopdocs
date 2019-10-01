@@ -56,7 +56,7 @@ The next part of this will help your Loop app give permissions to your Nightscou
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-textedit.png" width="550">
 </p> </br></br>
-7. When the file opens, it will look similar to the screenshot below. We need to highlight **ALL OF THE CONTENTS** of that file and copy it because we will be pasting it in Heroku later...keep that in mind. Yes, allllll of the contents. So, easiest way is to click inside that file and then press `command-a` to highlight all the text and then `command-c` to copy it all to the clipboard.
+7. When the file opens, it will look similar to the screenshot below. In a few minutes, after we do a few other steps first, we will need to highlight **ALL OF THE CONTENTS** of that file and copy it because we will be pasting it in Heroku. Yes, allllll of the contents. So, easiest way is to click inside that file and then press `command-a` to highlight all the text and then `command-c` to copy it all to the clipboard. You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.
 
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key.png" width="550">
@@ -94,7 +94,7 @@ To get this new branch to your GitHub's cgm-remote-monitor, we need to do some s
 <tbody>
 <tr>
 <th>LOOP_APNS_KEY</th>
-<td>enter ENTIRE contents of the downloaded .ps file including the BEGIN and END lines.
+<td>enter ENTIRE contents of the downloaded .ps file including the BEGIN and END lines. Here's where you can use the `command-a` and `command-c` to hightlight and copy all the text in that file so you can paste it into Heroku here for this new variable you are creating.
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key2.png" width="550">
 </p> </br></br></td>
