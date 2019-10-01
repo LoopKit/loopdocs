@@ -325,11 +325,11 @@ Putting all these notifications together may cause you to want to revisit the al
 
 ## Final notes
 
-* You can use other notification services than Pushover in the last part of the second applet.  For example, you could use the SMS service to send text notifications to your iPhone instead of Pushover.  The downside for that is that the SMS service is limited to 100 messages per month...some users may exceed that pretty easily.  Another alternative notification would be IFTTT's own Notification service.  This would work well, but does not have the ability to distinguish between devices the way Pushover allows.  If you use IFTTT's Notifications service, every phone using your IFTTT account will get the notices.
+* You can use other notification services than Pushover in the last part of the second applet.  For example, you could use the SMS service to send text notifications to your iPhone instead of Pushover.  The downside for that is that the SMS service is limited to 100 message each month...some users may exceed that pretty easily.  Another alternative notification would be IFTTT's own Notification service.  This would work well, but does not have the ability to distinguish between devices the way Pushover allows.  If you use IFTTT's Notifications service, every phone using your IFTTT account will get the notices.
 
 * To be clear, you do <i>**NOT**</i> need to have pushover on your ENABLE line nor have `PUSHOVER_USER_KEY`, `PUSHOVER_API_TOKEN`, or `PUSHOVER_ANNOUNCEMENT_KEY` entered into your Heroku settings in order for any of the above to work.  This is not the same Pushover as NS has integrated into its code.  This is actually through IFTTT services, you just need a Pushover account to link to during the 2nd applet setup.
 
-* To create more notifications, simply repeat the steps for the 2nd applet you created, only this time use a new filename that corresponds to the spreadsheet tracking the alert you'd like notifications for.  You'll end up with multiple applets of the dark blue type (the pushover notifiers) and only a single light blue (NS alarm general collecter).
+* To create more notifications, simply repeat the steps for the 2nd applet you created, only this time use a new filename that corresponds to the spreadsheet tracking the alert you'd like notifications for.  You'll end up with multiple applets of the dark blue type (the pushover notifiers) and only a single light blue (NS alarm general collector).
 
 <p align="center">
 <img src="../img/webhooks23.png" width="550">

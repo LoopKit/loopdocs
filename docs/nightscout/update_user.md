@@ -17,7 +17,7 @@ The modifications for retrofitting an existing NS site for new Loop users will r
 [Login to your Heroku account](https://id.heroku.com/login), select the `Settings` tab near the top of the screen on your Heroku app.
 
 <p align="center">
-<img src="../img/settings_heroku.jpg" width="450">
+<img src="../img/heroku5.png" width="450">
 </p> 
 
 ### Step 2: Edit/Add Config Vars
@@ -133,7 +133,8 @@ Click the big green `Create pull request` button.
 
 * For most people, another screen will appear like shown in the screenshots below with a green `Able to merge` message. Fill in a title and click the button to create the pull request, and then you can `Merge pull request`, and finally `Confirm merge`.</br>
 
-* However, for some of you may encounter a red error message `x Can't automatically merge` message. If you have that message, you may want to post on FB for help on resolving that error message before proceeding any further.
+* However, for some of you may encounter a red error message `x Can't automatically merge` message. If you have that message, you may want to post in FB for help on resolving that error message before proceeding any further.
+
 *********
 <p align="center">
 <img src="../img/update1.jpg" width="650">

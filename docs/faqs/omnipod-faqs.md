@@ -6,12 +6,12 @@ YES IT IS!!! WOOHOO!!
 
 ## Which pods will work with Loop?
 
-The Loop system described in these documents (aka DIY Loop) works with Eros pods...these are the current pods on the market in wide release. The newer DASH pods is not compatible with DIY Loop. Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
+The Loop system described in these documents (aka DIY Loop) works with Eros pods...these are the current pods on the market in wide release. The newer DASH pods are not compatible with DIY Loop. Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop). 
 
 Summary of eventual systems:
 
 * DIY Loop + Eros pods + RileyLink</br></br>
-* Tidepool Loop +DASH pods (no RileyLink)
+* Tidepool Loop + DASH pods (no RileyLink)
 
 ## Do I still need a PDM with Omnipod Loop?
 
@@ -36,7 +36,7 @@ If you find yourself in a situation where you would like to specify an exact tem
 ## What if I lose my phone or RileyLink?
 For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone or RileyLink however, you will not be able to affect any pod use; no basal change, suspend, cancel, or bolus. To do anything other than let basals continue, you will need to take action depending on the situation.
 
-* Lost RileyLink only: You can find replace your missing RileyLink with one from your backup supplies. No problem to switch out to a different Rileylink mid-pod session. If you don't have a backup RileyLink to use, then you will need to remove the pod and put on a new pod paired with your PDM until you can get a new RileyLink.
+* Lost RileyLink only: You can replace your missing RileyLink with one from your backup supplies. No problem to switch out to a different Rileylink mid-pod session. If you don't have a backup RileyLink to use, then you will need to remove the pod and put on a new pod paired with your PDM until you can get a new RileyLink.
 
 * Lost iPhone only: You will need to remove the pod and put on a new pod paired with your PDM until you can get a new phone and Loop app built onto it.
 
@@ -50,7 +50,7 @@ In the early stages of development, there were. Thankfully to the hard work of P
 The most common time of pod errors on Loop will be during the pairing process. If you get a pod that is failing to pair, please see [this page](https://loopkit.github.io/loopdocs/troubleshooting/pod-pairing/) for steps on how to fix the failure and recover before you lose the pod.
 
 ## What do you do to stop a screaming pod?
-Screaming pods can be silenced by carrying a paperclip. Simply put the paperclip in the small hole that is on the bottom (the side opposite where the cannula is) of the pod as shown. Push the paperclip in until you hear a little click, that click is breaking the circuit that let's the audible scream go. 
+Screaming pods can be silenced by carrying a paperclip. Simply put the paperclip in the small hole that is on the bottom (the side opposite where the cannula is) of the pod as shown. Push the paperclip in until you hear a little click, that click is breaking the circuit that lets the audible scream go. 
 
 <p align="center">
 <img src="../img/paperclip.jpg" width="500">

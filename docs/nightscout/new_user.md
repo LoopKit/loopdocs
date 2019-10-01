@@ -239,6 +239,8 @@ Click `Save` when you have entered the information.  You will be prompted to aut
 
 </br></br>
 
+Close out of the Profile Editor to return to the main Nightscout page and configure your NS settings.
+
 ## Step 7: Nightscout Settings
 The last step is to finish your Nightscout's settings. Click on the settings (those three horizontal lines in upper right corner).  Now check that you have everything displaying correctly:
 

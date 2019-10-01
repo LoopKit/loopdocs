@@ -1,6 +1,6 @@
 # Yellow and Red Loops
 
-A properly operating Loop will remain green for 5 minutes.  To stay green, there are several things that Loop must do:
+A properly operating Loop will remain green for 5 minutes.  To remain green, there are several things that Loop must do:
 
 * Loop obtains a BG value from your CGM source, and
 * Loop reads your pump history to know about insulin deliveries and recent events, and
@@ -71,15 +71,15 @@ Pump troubleshooting steps:
 * Your pump battery may be low.  Replace the battery...even if the percentage doesn't look low, this is a good starting point
 * If you have an x23 or x54 model pump, make sure your mysentry is paired
 * Have the pump and RL gotten too far away from each other?  Try bringing them closer
-* Try retuning the RL.  Just a note though, the Loop has code embedded to automatically retunes RL when the pump comms are failing for 20 minutes.  So, manual retuning is more about speeding things along rather than being a necessary intervention to fixing pump comms.
+* Try retuning the RL.  Just a note though, the Loop has code embedded to automatically retune RL when the pump comms are failing for 20 minutes.  So, manual retuning is more about speeding things along rather than being a necessary intervention to fixing pump comms.
 * Try a **Send Button Press** to "wake up the pump" a bit.
 * Try a **Fetch Pump History**.  Same as retuning though, the Loop has code embedded to automatically pull pump history.  Manual fetching of pump history is more about speeding things along than being a necessary step to fixing pump comms.
 * If you have a backup pump, try switching to that pump and see whether the issue persists.
 
 !!! info "About Pump Communications"
-    Pump communications errors can and will happen. Just be patient, and they almost always correct themselves.  Yellow loops happen sometimes, and aren't usually worth troubleshooting.  Red loops are more infrequent and usually a good time to start investigating possible source.  **Some environments will be noisy for rf comms (such as concerts, amusement parks, tech venues, conferences with OpenAPS users in attendance, etc.), and your loop may not stay green as often as usual.  Just be patient. When you leave that environment, looping will go back to normal.**  Wireless microphones, baby monitors, and other similar types of devices can interfer with pump communications if there are lots of competing radio devices in a tight environment.  If you find you have areas of your house that consistently have poor pump communications, look for potential sources of interference from wireless devices.
+    Pump communications errors can and will happen. Just be patient, and they almost always correct themselves.  Yellow loops happen sometimes, and aren't usually worth troubleshooting.  Red loops are more infrequent and usually a good time to start investigating possible source.  **Some environments will be noisy for rf comms (such as concerts, amusement parks, tech venues, conferences with OpenAPS users in attendance, etc.), and your loop may not stay green as often as usual.  Just be patient. When you leave that environment, looping will go back to normal.**  Wireless microphones, baby monitors, and other similar types of devices can interfere with pump communications if there are lots of competing radio devices in a tight environment.  If you find you have areas of your house that consistently have poor pump communications, look for potential sources of interference from wireless devices.
     
-    Another common area for failed pump communications are at night if you tend to sleep on your pump, or otherwise "body block" the RL's ability to communicate with the pump.  Try to place your pump and RL such that your body will not block the signal to/from RL.  Standing the RL on it's base with antenna pointing up, on a nearby nightstand should be sufficient proximity/orientation for overnight looping.
+    Another common area for failed pump communications are at night if you tend to sleep on your pump, or otherwise "body block" the RL's ability to communicate with the pump.  Try to place your pump and RL such that your body will not block the signal to/from RL.  Standing the RL on its base with antenna pointing up, on a nearby nightstand should be sufficient proximity/orientation for overnight looping.
     
     These examples below are pump error messages.  Notice they all mention the pump specifically.
 

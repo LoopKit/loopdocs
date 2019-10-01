@@ -165,7 +165,7 @@ You do not have to enter all the information in the profile if you are using Loo
 * Assuming your previous browser tab is still open for "Create a new App | Heroku", let's go back to that tab.  This time instead of choosing the `View` option, we are going to select the `Manage App` button. Then, select the `Settings` tab near the top of the screen on your Heroku app.
 
 <p align="center">
-<img src="../img/settings_heroku.jpg" width="450">
+<img src="../img/heroku5.png" width="450">
 </p> 
 
 * Click on `Reveal Config  Vars`. Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add several additional lines of config vars for Loop use; the DEVICESTATUS_ADVANCED is a required line, the others just make Nightscout more useful when Looping.
