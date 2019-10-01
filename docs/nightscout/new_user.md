@@ -1,6 +1,6 @@
 # New Nightscout Users
 
-Two options exist for easy hosting of NS; Azure or Heroku. Both hosting services are free.  However,  Azure has data quotas monthly and shorter term CPU quotas.  If you exceed those quotas, you may be facing a monthly data-use bill or being locked out of NS for about 12 hours until the quotas reset.  As you start to use NS more intensively for alarms, pebble watches, etc…it is possible that you may exceed your monthly data cap on Azure.  Many Loop users have transitioned their old sites from Azure over to Heroku and have found the hosting change to be beneficial.  Heroku also has some memory limits, but those limits have been more than adequate for Loop users.  Therefore, we recommend new users start with Heroku.
+Two options exist for easy hosting of NS; Azure or Heroku. Both hosting services are free.  However,  Azure has data quotas monthly and shorter-term CPU quotas.  If you exceed those quotas, you may be facing a monthly data-use bill or being locked out of NS for about 12 hours until the quotas reset.  As you start to use NS more intensively for alarms, pebble watches, etc…it is possible that you may exceed your monthly data cap on Azure.  Many Loop users have transitioned their old sites from Azure over to Heroku and have found the hosting change to be beneficial.  Heroku also has some memory limits, but those limits have been more than adequate for Loop users.  Therefore, we recommend new users start with Heroku.
 
 If you are the person who enjoys videos...here's a YouTube video that you can use to walk-through with these directions. Just give it a click.
 
@@ -18,7 +18,7 @@ Enter your name, email address, role ("Hobbyist" is fine) and choose "Node.js" a
 <img src="../img/heroku1.png" width="450">
 </p> 
 
-Now follow the directions and check your email to confirm your Heroku account. You'll be asked to create a password...save that password somewhere. You'll likely be logging into heroku as part of Looping in the future, so this is a good password to save.
+Now follow the directions and check your email to confirm your Heroku account. You'll be asked to create a password...save that password somewhere. You'll likely be logging into Heroku as part of Looping in the future, so this is a good password to save.
 
 When you finish creating the password, you'll see a screen like below.
 
@@ -38,7 +38,7 @@ Once you finish that, you can just leave that page/tab alone and move on down to
 
 ## Step 2: Create an account at GitHub
 
-Go to <a href="https://github.com/join" target="_blank">GitHub's signup page</a>. Fill out the information to create your own unique username (write it down), email address, and password (also write this one down). Verify the you are a real person by tossing an animal's image around until it is upright...and then you'll be able to click the green "create an account" at the bottom of the page
+Go to <a href="https://github.com/join" target="_blank">GitHub's signup page</a>. Fill out the information to create your own unique username (write it down), email address, and password (also write this one down). Verify that you are a real person by tossing an animal's image around until it is upright...and then you'll be able to click the green "create an account" at the bottom of the page
 
 <p align="center">
 <img src="../img/github1.png" width="450">
@@ -73,7 +73,7 @@ Pretty quickly, you should see a Heroku screen popup for "Create New App".  If y
 
 Heroku calls the code that you just deployed an "app"...but probably easier for most people to imagine it as a website. 
 
-The first step is to give your "app" a name, this will be the prefix of your soon-to-be-created Nightscout site’s URL. For example, if you enter "janehasthesugars" then your nightscout site's URL will be `https://janehasthesugars.herokuapp.com`
+The first step is to give your "app" a name, this will be the prefix of your soon-to-be-created Nightscout site’s URL. For example, if you enter "janehasthesugars" then your Nightscout site's URL will be `https://janehasthesugars.herokuapp.com`
 
 <p align="center">
 <img src="../img/heroku4.png" width="650">
@@ -99,7 +99,7 @@ Now scroll down a bit and we are going to fill out the information lines in the 
 </tr>
 <tr>
 <th>ENABLE</th>
-<td>bridge loop pump iob cob basal careportal sage cage bage openaps override</br></br>(Enter all of the words above without commas. Just a single space between each word. Make sure autocorrect does not add space between careportal. Typically, the words basal and careportal will already be there waiting for you.)</td>
+<td>bridge loop pump iob cob basal careportal sage cage bage openaps override</br></br>(Enter all of the words above without commas.  Just add a single space between each word. Make sure autocorrect does not add space between careportal. Typically, the words basal and careportal will already be there waiting for you.)</td>
 </tr>
 <tr>
 <th>BRIDGE_USER_NAME</th>
