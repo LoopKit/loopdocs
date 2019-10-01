@@ -15,7 +15,7 @@ pages:
     - 'General Loop FAQs': 'faqs/FAQs.md'
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
     - 'Branch FAQs': 'faqs/branch-faqs.md'
-    - 'Updating Loop FAQs': 'faqs/update-faqs.md'
+    - 'Update/Rebuild Loop FAQs': 'faqs/update-faqs.md'
     - 'iOS 13 FAQs': 'faqs/ios13.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
     - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
@@ -42,13 +42,13 @@ pages:
     - 'Ready to Update your Loop?': 'build/updating.md'
 - Set up App:
     - 'Overview': 'operation/overview.md'
-    - 'Health Permissions': 'build/health.md'
-    - 'Add Pump':
+    - 'Step 1: Health Permissions': 'build/health.md'
+    - 'Step 2: Add Pump':
         - 'Add Medtronic': 'operation/loop-settings/mdt-pump.md'
         - 'Add Omnipod': 'operation/loop-settings/omnipod-pump.md'
-    - 'Add CGM': 'operation/loop-settings/cgm.md'
-    - 'Configurations': 'operation/loop-settings/configurations.md'
-    - 'Loop Services': 'operation/loop-settings/services.md'
+    - 'Step 3: Add CGM': 'operation/loop-settings/cgm.md'
+    - 'Step 4: Configurations': 'operation/loop-settings/configurations.md'
+    - 'Step 5: Loop Services': 'operation/loop-settings/services.md'
     - 'Loop Displays': 'operation/loop-settings/displays.md'
     - 'RileyLink menu': 'operation/loop-settings/rileylink.md'
 - Operate:

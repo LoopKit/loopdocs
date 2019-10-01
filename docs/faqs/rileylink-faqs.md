@@ -60,25 +60,25 @@ In summary, definitely use the appropriate RileyLink with the antenna that match
 Yes, the antenna swap is not a hard swap if you just have basic soldering skills. The old antenna can be removed easily by reheating the solder. New 433MHz antennas and a cap can be found on [GetRileyLink site](https://getrileylink.org/product/433diyupgrade/). Tips: use flux and clean the antenna stub before soldering. Poorly DIY-soldered antennas can lead to a decreased range and frequent communication drops between Loop and the pods.
 
 ## How long will my RileyLink go between charging?
-RileyLink's can go about 30-32 hours (more or less) on a single charge. There is no way to see the remaining charge level, so most people just get into the habit of charing overnight while they sleep. The actual time to fully recharge is about 1 or 2 hours; you'll know it is fully charged when the red light turns off. After a full charge, the red light will turn off and then periodically turn on for short times while it "tops off" while still on a charger.
+RileyLinks can go about 30-32 hours (more or less) on a single charge. There is no way to see the remaining charge level, so most people just get into the habit of charging overnight while they sleep. The actual time to fully recharge is about 1 or 2 hours; you'll know it is fully charged when the red light turns off. After a full charge, the red light will turn off and then periodically turn on for short times while it "tops off" while still on a charger.
 
 ## How long will my RileyLink battery last?
-Eventually, lipo batteries will lose charging capacity and you would want to replace if you notice the battery not lasting the full day. We've been using our current battery for nearly 2 years without issue.
+Eventually, lithium polymer (LiPo) batteries will lose charging capacity and you would want to replace if you notice the battery not lasting the full day. We've been using our current battery for nearly 2 years without issue.
 
 ## How can I tell how much charge my RileyLink has?
 You can't. There is no charge level indicator. Just charge it nightly, and you won't have a problem. Full battery charge should last about 30-36 hours depending on battery health. Charging takes less than 2 hours.
 
 ## How should I carry the RileyLink? Does it make a difference?
-In general, you want to get in the habit of carrying RileyLink with you, yes. A pocket, carabiner, lanyard, SPIbelt...the options are endless. What you don't want to do is put the RileyLink in a blocking bag that has Rf-ID blocking (some travel fanny packs have that). The distance that your RileyLink can be away from your pump will depend heavily on the environment you are in.
+In general, you want to get in the habit of carrying RileyLink with you, yes. A pocket, carabiner, lanyard, SPIbelt...the options are endless. What you don't want to do is put the RileyLink in a blocking bag that has RFID blocking (some travel fanny packs have that). The distance that your RileyLink can be away from your pump will depend heavily on the environment you are in.
 
 ## Is RileyLink waterproof?
 Nope. Nor is it sweat-proof. Be careful.
 
 ## What is the most common issue for RileyLink?
-People not [pushing the lipo battery](https://loopkit.github.io/loopdocs/setup/requirements/rileylink/#assembling-rl) in all the way when they first assemble their RileyLink. It takes quite a bit of push to get the plug inserted far enough. If not secured well, Loop will have more frequent problems.
+People not [pushing the LiPo battery](https://loopkit.github.io/loopdocs/setup/requirements/rileylink/#assembling-rl) in all the way when they first assemble their RileyLink. It takes quite a bit of push to get the plug inserted far enough. If not secured well, Loop will have more frequent problems.
 
 ## Can I use more than one RileyLink at a time? Will it improve anything?
-Yes, you can have two turned on, but it won't help anything really. Loop only uses one RileyLink at a time. IF you have several RileyLinks turned on in Loop settings, your Loop will only look for another RileyLink after Loop fails for over 15 minutes on the original RileyLink. In my experience, it is rare that Loop would fail for more than 15 minutes and a second RileyLink would help in the same environment. If one RileyLink gets damaged though and you need to swap out to a second RileyLink, there are no issues with that. 
+Yes, you can have two turned on, but it won't help anything really. Loop only uses one RileyLink at a time. If you have several RileyLinks turned on in Loop settings, your Loop will only look for another RileyLink after Loop fails for over 15 minutes on the original RileyLink. In my experience, it is rare that Loop would fail for more than 15 minutes and a second RileyLink would help in the same environment. If one RileyLink gets damaged though and you need to swap out to a second RileyLink, there are no issues with that. 
 
 ## Can I run Loop without a RileyLink?
 Nope.

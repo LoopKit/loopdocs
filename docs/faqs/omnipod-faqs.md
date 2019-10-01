@@ -11,7 +11,7 @@ The Loop system described in these documents (aka DIY Loop) works with Eros pods
 Summary of eventual systems:
 
 * DIY Loop + Eros pods + RileyLink</br></br>
-* Tidepool Loop +DASH pods (no RileyLink)
+* Tidepool Loop + DASH pods (no RileyLink)
 
 ## Do I still need a PDM with Omnipod Loop?
 
@@ -36,7 +36,7 @@ If you find yourself in a situation where you would like to specify an exact tem
 ## What if I lose my phone or RileyLink?
 For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone or RileyLink however, you will not be able to affect any pod use; no basal change, suspend, cancel, or bolus. To do anything other than let basals continue, you will need to take action depending on the situation.
 
-* Lost RileyLink only: You can find replace your missing RileyLink with one from your backup supplies. No problem to switch out to a different Rileylink mid-pod session. If you don't have a backup RileyLink to use, then you will need to remove the pod and put on a new pod paired with your PDM until you can get a new RileyLink.
+* Lost RileyLink only: You can replace your missing RileyLink with one from your backup supplies. No problem to switch out to a different Rileylink mid-pod session. If you don't have a backup RileyLink to use, then you will need to remove the pod and put on a new pod paired with your PDM until you can get a new RileyLink.
 
 * Lost iPhone only: You will need to remove the pod and put on a new pod paired with your PDM until you can get a new phone and Loop app built onto it.
 
