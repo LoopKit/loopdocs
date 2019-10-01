@@ -17,7 +17,7 @@ The modifications for retrofitting an existing NS site for new Loop users will r
 [Login to your Heroku account](https://id.heroku.com/login), select the `Settings` tab near the top of the screen on your Heroku app.
 
 <p align="center">
-<img src="../img/settings_heroku.jpg" width="450">
+<img src="../img/heroku5.png" width="450">
 </p> 
 
 ### Step 2: Edit/Add Config Vars
