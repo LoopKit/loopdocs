@@ -227,3 +227,15 @@ Now we need to do one step before rebuilding Loop app again. Go to the top menu 
 
 For an unknown reason (developers are working on fixing it currently), if you do repeated builds in the same Loop project folder...the watch app can fail to install properly after the first build. Therefore, a simple "Clean Build Folder" will reset the folder back to new and you'll be able to install the watch after that fresh build.
 
+## Xcode path not set correctly after using Xcode 11 GM
+Error: **<u>xcrun: error: active developer path ("/Users/pops/Downloads/Xcode.app/Contents/Developer") does not exist
+Use sudo xcode-select --switch path/to/Xcode.app to specify the Xcode that you wish to use for command line developer tools, or use xcode-select --install to install the standalone command line developer tools.
+See man xcode-select for more details.</u>**.
+
+Please note that the path in the example error above is just an example. Your path in the error may be different.
+
+Solution:  This may occur if you have installed Xcode 11 GM before you installed the updated general release version. So, Xcode may get confused on which path to be using. Run the command below:
+
+`sudo xcode-select --switch /Applications/Xcode.app`
+
+Enter your password that you use to login to your Mac with and press Enter. You may now proceed with your build commands.
