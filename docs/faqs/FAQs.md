@@ -1,6 +1,6 @@
 # General Loop FAQs
 
-Welcome to LoopDocs place for all things Frequently Asked.
+Welcome to LoopDocs - a place for all things Frequently Asked.
 
 ## What is Loop?
 
@@ -50,7 +50,7 @@ Sure, you can give this one a try. [School nurse's cheat sheet download](https:/
 
 The answer is varied, but a few hours from start to finish, depending on where you are starting and how comfortable you are with your computer.
 
-If you'd rather break it up into several shorter bits of effort, the `Build App` section is divided into convenient stopping points with Time Estimates for each step. You can do one or more steps depending on what kind of time you have available.
+If you'd rather break it up into several shorter bits of effort, the [`Build App`](https://loopkit.github.io/loopdocs/build/step1/) section is divided into convenient stopping points with Time Estimates for each step. You can do one or more steps depending on what kind of time you have available.
 
 ## Does Loop cost money?
 
@@ -108,7 +108,7 @@ NOOOO...you really need to figure this out yourself. This is an automated insuli
 
 ## What if I lose my RileyLink?
 
-For Medtronic users, you simply go back to old school pump use until you get a new RileyLink. You can either let your temp basal finish by itself (30 minutes or less) or cancel the temp basal on the pump's menu. For bolusing, you'd go back to using the pump's blus commands. When you get a RileyLink (either finding your old one or getting your backup RileyLink out) and Loop running again, you'll want to do one thing. Enter in any carbs to Loop that you may have eaten in the recent past that could still be affecting blood glucose. While Loop will read whatever insulin deliveries had happened while the RileyLink was missing, it will not read any carbs you entered into the pump...so make sure to add those to Loop and backdate them to the time they were eaten. That will help make the transition smoother to Looping again.
+For Medtronic users, you simply go back to old school pump use until you get a new RileyLink. You can either let your temp basal finish by itself (30 minutes or less) or cancel the temp basal on the pump's menu. For bolusing, you'd go back to using the pump's bolus commands. When you get a RileyLink (either finding your old one or getting your backup RileyLink out) and Loop running again, you'll want to do one thing. Enter in any carbs to Loop that you may have eaten in the recent past that could still be affecting blood glucose. While Loop will read whatever insulin deliveries had happened while the RileyLink was missing, it will not read any carbs you entered into the pump...so make sure to add those to Loop and backdate them to the time they were eaten. That will help make the transition smoother to Looping again.
 
 For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a RileyLink, you will not be able to affect any pod use; no basal changes, suspends, or boluses. If you have a backup RileyLink, you can simply connect to the new RileyLink on the same Loop app and it will work with the existing pod session. If you don't have a backup RileyLink, you'll have to remove the pod and start a new pod paired with your PDM until you get a new RileyLink.
 
