@@ -29,36 +29,37 @@ The next part of this will help your Loop app give permissions to your Nightscou
 2. Click on "Certificates, Indentifiers & Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" **OR** the "+" icon to add a new key. 
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-add-key.PNG" width="550">
-</p> </br></br>
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-add-key.png" width="550">
+</p> 
+</br></br>
 3. In the form that appears, click the checkbox for enabling "Apple Push Notifications service (APNs)" and enter a name for the key such as "Nightscout". Then click the "Continue" button in the upper right of the screen.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/key-apns.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/key-apns.png" width="550">
 </p> </br></br>
 4. In the screen that follows, click the blue "Register" button.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-register.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-register.png" width="550">
 </p> </br></br>
 5. In the screen that follows, click the blue "Download" button. This step will download a file with a name that starts with "AuthKey" and ends with ".p8".
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-download.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-download.png" width="550">
 </p> </br></br>
 6. Find your AuthKey download in your downloads folder. Double-click to open it and you will be presented a message asking how you'd like to open it. Click on "Choose Application..." and then select "TextEdit" as your application to open it with.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-open.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-open.png" width="550">
 </p> </br></br>
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-textedit.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-textedit.png" width="550">
 </p> </br></br>
 7. When the file opens, it will look similar to the screenshot below. We need to highlight **ALL OF THE CONTENTS** of that file and copy it because we will be pasting it in Heroku later...keep that in mind. Yes, allllll of the contents. So, easiest way is to click inside that file and then press `command-a` to highlight all the text and then `command-c` to copy it all to the clipboard.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key.png" width="550">
 </p> </br></br>
 
 ## Step 3: Update Nightscout site
@@ -80,7 +81,7 @@ To get this new branch to your GitHub's cgm-remote-monitor, we need to do some s
 6. Login to your Heroku account. Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-temp-overrides" in the drop down menu of the branchs and then press the black deploy button.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/deploy-remotes.PNG" width="750">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/deploy-remotes.png" width="750">
 </p> </br></br>
 7. Final step is to add the variables needed in Heroku settings. Click on the Settings tab in Heroku and click on "reveal config vars". We are going to add three new lines to the variables.
 <table>
@@ -95,14 +96,14 @@ To get this new branch to your GitHub's cgm-remote-monitor, we need to do some s
 <th>LOOP_APNS_KEY</th>
 <td>enter ENTIRE contents of the downloaded .ps file including the BEGIN and END lines.
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key2.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key2.png" width="550">
 </p> </br></br></td>
 </tr>
 <tr>
 <th>LOOP_APNS_KEY_ID</th>
 <td>string of numbers on the .ps download file, or you can get it from your saved key in your developer account as shown next step, too
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-open2.PNG" width="550">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-open2.png" width="550">
 </p> </br></br>
 </td>
 </tr>
@@ -110,7 +111,7 @@ To get this new branch to your GitHub's cgm-remote-monitor, we need to do some s
 <th>LOOP_DEVELOPER_TEAM_ID</th>
 <td>get this value from Loop app signing or in your developer account's top right corner under your name
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-vars.PNG" width="750">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-vars.png" width="750">
 </p> </br></br>
 </td>
 </tr>
@@ -120,7 +121,7 @@ To get this new branch to your GitHub's cgm-remote-monitor, we need to do some s
 When executed properly, you should have something that looks like this:
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/override_vars_complete.PNG" width="650">
+<img src="https://loopkit.github.io/loopdocs/nightscout/img/override_vars_complete.png" width="650">
 </p> </br></br>
 
 ## Step 4: FAQs on Remote Overrides
