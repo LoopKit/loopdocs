@@ -48,7 +48,8 @@ pages:
         - 'Add Omnipod': 'operation/loop-settings/omnipod-pump.md'
     - 'Step 3: Add CGM': 'operation/loop-settings/cgm.md'
     - 'Step 4: Configurations': 'operation/loop-settings/configurations.md'
-    - 'Step 5: Loop Services': 'operation/loop-settings/services.md'
+    - 'Step 5: Override Presets': 'operation/loop-settings/overrides.md'
+    - 'Step 6: Loop Services': 'operation/loop-settings/services.md'
     - 'Loop Displays': 'operation/loop-settings/displays.md'
     - 'RileyLink menu': 'operation/loop-settings/rileylink.md'
 - Operate:
@@ -86,7 +87,7 @@ pages:
     - 'Retrofit Existing NS': 'nightscout/update_user.md'
     - 'Setup Troubleshooting': 'nightscout/troublehoot.md'
     - 'NS Stopped Working': 'nightscout/mlab_cleanup.md'
-    - 'Azure to Heroku': 'nightscout/azure_migration.md'
+    - 'Remote Overrides': 'nightscout/remote-overrides.md'
     - 'IFTTT': 'nightscout/ifttt.md'
     - 'Pebble': 'nightscout/pebble.md'
     - 'Remote Notifications': 'nightscout/pushover.md'
