@@ -25,7 +25,7 @@ Note: If you are using and familiar with LoopWorkspace, you can use `git clone -
 
 ## Step 2: Apple Push Notifications
 The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it.</br></br>
-1. Login to your [Apple developer account](https://developer.apple.com/account/)</br></br>
+1. Login to your [Apple developer account](https://developer.apple.com/account/) with the Apple ID associated with your developer team that you used to sign your Loop app.</br></br>
 2. Click on "Certificates, Indentifiers & Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" **OR** the "+" icon to add a new key. 
 
 <p align="center">
@@ -76,7 +76,7 @@ To get this new branch to your GitHub's cgm-remote-monitor, we need to do some s
 
 4. Next command is `git checkout remote-loop-overrides`  This command switches the local clone to the new branch.
 
-5. Next command is `git push --set-upstream origin remote-temp-overrides`  This command will push your new branch up to your online GitHub account so we can use it in Heroku.
+5. Next command is `git push --set-upstream origin remote-loop-overrides`  This command will push your new branch up to your online GitHub account so we can use it in Heroku.
 
 6. [Login to your Heroku account](https://id.heroku.com/login),  Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-temp-overrides" in the drop down menu of the branchs and then press the black deploy button.
 
