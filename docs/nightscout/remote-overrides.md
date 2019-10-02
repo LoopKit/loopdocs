@@ -78,12 +78,21 @@ To get this new branch to your GitHub's cgm-remote-monitor, we need to do some s
 
 5. Next command is `git push --set-upstream origin remote-temp-overrides`  This command will push your new branch up to your online GitHub account so we can use it in Heroku.
 
-6. Login to your Heroku account. Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-temp-overrides" in the drop down menu of the branchs and then press the black deploy button.
+6. [Login to your Heroku account](https://id.heroku.com/login),  Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-temp-overrides" in the drop down menu of the branchs and then press the black deploy button.
 
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/deploy-remotes.png" width="750">
 </p> </br></br>
-7. Final step is to add the variables needed in Heroku settings. Click on the Settings tab in Heroku and click on "reveal config vars". We are going to add three new lines to the variables.
+7. Final step is to add the variables needed in Heroku settings. Select the `Settings` tab near the top of the screen on your Heroku app and then click on `Reveal Config Vars`.  
+
+<p align="center">
+<img src="../img/heroku5.png" width="650">
+</p> </br></br>
+Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add three new rows of config vars for remote overrides as shown below:
+
+<p align="center">
+<img src="../img/add_vars.jpg" width="650">
+</p> 
 <table>
 <thead>
 <tr>
@@ -118,7 +127,7 @@ To get this new branch to your GitHub's cgm-remote-monitor, we need to do some s
 </tbody>
 </table>
 
-When executed properly, you should have something that looks like this:
+When executed properly, you should have something that looks like this for your three new variables that you added:
 
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/override_vars_complete.png" width="650">
