@@ -463,7 +463,7 @@
 <p>Note: If you are using and familiar with LoopWorkspace, you can use <code>git clone --branch=remote-overrides --recursive https://github.com/LoopKit/LoopWorkspace</code>. These directions will not explain how to use LoopWorkspace...that's out-of-scope for this page's purpose.</p>
 <h2 id="step-2-apple-push-notifications">Step 2: Apple Push Notifications<a class="headerlink" href="#step-2-apple-push-notifications" title="Permanent link">⌁</a></h2>
 <p>The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it.</br></br>
-1. Login to your <a href="https://developer.apple.com/account/">Apple developer account</a></br></br>
+1. Login to your <a href="https://developer.apple.com/account/">Apple developer account</a> with the Apple ID associated with your developer team that you used to sign your Loop app.</br></br>
 2. Click on "Certificates, Indentifiers &amp; Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" <strong>OR</strong> the "+" icon to add a new key. </p>
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-add-key.png" width="550">
@@ -522,7 +522,7 @@
 <p>Next command is <code>git checkout remote-loop-overrides</code>  This command switches the local clone to the new branch.</p>
 </li>
 <li>
-<p>Next command is <code>git push --set-upstream origin remote-temp-overrides</code>  This command will push your new branch up to your online GitHub account so we can use it in Heroku.</p>
+<p>Next command is <code>git push --set-upstream origin remote-loop-overrides</code>  This command will push your new branch up to your online GitHub account so we can use it in Heroku.</p>
 </li>
 <li>
 <p><a href="https://id.heroku.com/login">Login to your Heroku account</a>,  Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-temp-overrides" in the drop down menu of the branchs and then press the black deploy button.</p>
