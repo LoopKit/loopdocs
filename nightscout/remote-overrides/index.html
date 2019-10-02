@@ -525,7 +525,7 @@
 <p>Next command is <code>git push --set-upstream origin remote-temp-overrides</code>  This command will push your new branch up to your online GitHub account so we can use it in Heroku.</p>
 </li>
 <li>
-<p>Login to your Heroku account. Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-temp-overrides" in the drop down menu of the branchs and then press the black deploy button.</p>
+<p><a href="https://id.heroku.com/login">Login to your Heroku account</a>,  Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-temp-overrides" in the drop down menu of the branchs and then press the black deploy button.</p>
 </li>
 </ol>
 <p align="center">
@@ -533,8 +533,18 @@
 </p>
 
 <p></br></br>
-7. Final step is to add the variables needed in Heroku settings. Click on the Settings tab in Heroku and click on "reveal config vars". We are going to add three new lines to the variables.
-<table>
+7. Final step is to add the variables needed in Heroku settings. Select the <code>Settings</code> tab near the top of the screen on your Heroku app and then click on <code>Reveal Config Vars</code>.  </p>
+<p align="center">
+<img src="../img/heroku5.png" width="650">
+</p>
+
+<p></br></br>
+Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add three new rows of config vars for remote overrides as shown below:</p>
+<p align="center">
+<img src="../img/add_vars.jpg" width="650">
+</p>
+
+<p><table>
 <thead>
 <tr>
 <th>KEY</th>
@@ -567,7 +577,7 @@
 </tr>
 </tbody>
 </table></p>
-<p>When executed properly, you should have something that looks like this:</p>
+<p>When executed properly, you should have something that looks like this for your three new variables that you added:</p>
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/override_vars_complete.png" width="650">
 </p>
