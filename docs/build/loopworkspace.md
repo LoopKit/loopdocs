@@ -2,7 +2,7 @@
 
 This page is for the "advanced" user. Well, maybe there is a better word for it. Adventurous? Curious? But, if you are a newbie and not into crazy stuff...everything in here is completely and totally just optional. Using or not using LoopWorkspace does not affect your looping nor access to Loop. This page is about me finding an efficient way to answer questions about a topic that takes a lot of words to answer usually...so I'm saving time by making this page.
 
-Traditionally, Loopdocs has only told you about the option of downloading Loop as a zip file through those links. But, there's another way of getting that code to your computer called "git". Git is a system of "distributed version control" that allows remotely (as in not located in same place) collaborating people to work on one project and still track their changes to the same place. For example, if I sent 5 people one document to proof-read at the same time...it is quite possible that the edits I will gett back from those 5 people would conflict with each other. Bob may have entirely deleted a sentence while Mary would have added words to that sentence. Git lets these remotely collaborating people deal with "resolving conflict" between versions more easily and merging suggestions (pull requests) into a coordinated space.
+Traditionally, Loopdocs has only told you about the option of downloading Loop as a zip file through those links. But, there's another way of getting that code to your computer called "git". Git is a system of "distributed version control" that allows remotely (as in not located in same place) collaborating people to work on one project and still track their changes to the same place. For example, if I sent 5 people one document to proof-read at the same time...it is quite possible that the edits I will get back from those 5 people would conflict with each other. Bob may have entirely deleted a sentence while Mary would have added words to that sentence. Git lets these remotely collaborating people deal with "resolving conflict" between versions more easily and merging suggestions (pull requests) into a coordinated space.
 
 So, in using Git, we can do things with "git commands". Like "Hey git...make me an exact copy of that guy's work over there." or "Hey git, I'd like to compare my version of this page with Joe's version of the same page." Or using my old cookbook analogy..."Hey git, I'd like to start a new cookbook called Italian Desserts."
 
@@ -38,7 +38,7 @@ In order to use a LoopWorkspace, you need to start using git commands in the Ter
 
 Now...look carefully...that is getting LoopKit's version of LoopWorkspace and grabbing the dev branch as the one you want to start working with.
 
-If DeveloperBob had forked a copy of LoopKit's LoopWorkspace and made some changes he wanted to test, and then you wanted to grab them...you'd need to change the command to get DeveloperBob's version. And, you'd want to make sure you specify the branch that the new feature is on, too. DeveloperBod should usually include the branch name when he posts/shares. So, it might be something like:
+If DeveloperBob had forked a copy of LoopKit's LoopWorkspace and made some changes he wanted to test, and then you wanted to grab them...you'd need to change the command to get DeveloperBob's version. And, you'd want to make sure you specify the branch that the new feature is on, too. DeveloperBob should usually include the branch name when he posts/shares. So, it might be something like:
 
 `git clone --branch=bitching-new-feature --recurse-submodules https://github.com/DeveloperBob/LoopWorkspace`
 
@@ -74,6 +74,8 @@ Once you get your workspace cloned, you simply find that cloned folder (wherever
 </p>
 
 Once you are in LoopWorkspace, everything is pretty similar for building with only two notable exceptions. You need to click on that blue Loop folder to see the signing targets, and you need to change the build scheme to the left of your phone to "Loop (Workspace)" in order to build properly.
+
+Oh wait...there is a noticable difference...the speed! LoopWorkspace will build Loop much faster than Loop because of the way it uses submodules. I do rather like that benefit to using LoopWorkspaces too.
 
 ## Updating Loop using LoopWorkspace
 
