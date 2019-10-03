@@ -497,7 +497,12 @@
 <p>And with that ends the super basic "How can I build with a LoopWorkspace?" questions and use for 90% of the users.</p>
 <h2 id="pushing-commits-from-loopworkspace">Pushing commits from LoopWorkspace<a class="headerlink" href="#pushing-commits-from-loopworkspace" title="Permanent link">⌁</a></h2>
 <p>More advanced users...I'm not going to explain this in quite so much detail, but yes, you can push commits from your forked/cloned LoopWorkspace to your various repos in your own GitHub account. </p>
-<p>In short, if you edit your .gitmodules directory in LoopWorkspace, you can specify other repos to use (and add a line to specify branches, too). Then if you do a <code>git submodule sync</code> the workspace will sync to new submodules. Then <code>git submodule update --init --recursive --remote</code> will update all the submodules to the right branches and get HEADs detached correctly, etc. From there you can work as you'd like. When you are ready to commit changes, just cd into the directory you'd like to make the commits/pushes in (aka <code>cd rileylink_ios</code>) and you'll be good to go.</p></div>
+<p>In short, if you edit your .gitmodules directory in LoopWorkspace, you can specify other repos to use (and add a line to specify branches, too). This way the cartfiles being mismatched is not a problem while using submodules, for example:</p>
+<p></p>
+<p align="center">
+<img src="../img/gitmodules.png" width="750">
+</p></p>
+<p>Then if you do a <code>git submodule sync</code> the workspace will sync to new submodules. Then <code>git submodule update --init --recursive --remote</code> will update all the submodules to the right branches and get HEADs detached correctly, etc. From there you can work as you'd like. When you are ready to commit changes, just cd into the directory you'd like to make the commits/pushes in (aka <code>cd rileylink_ios</code>) and you'll be good to go.</p></div>
         </div>
 
         <footer class="col-md-12">
