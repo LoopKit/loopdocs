@@ -8,526 +8,726 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>IFTTT - LoopDocs</title>
+
+	<title>IFTTT - LoopDocs</title>
+
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <link href="../../css/admonitions.css" rel="stylesheet">
+
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
             ga('create', 'UA-109876065-1', 'loopkit.github.io');
             ga('send', 'pageview');
-        </script> 
+        </script>
+        
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">LoopDocs</a>
-                </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../..">Home</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">LoopDocs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../faqs/docs-faqs/">Using This Site FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/FAQs/">General Loop FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/omnipod-faqs/">Omnipod FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/branch-faqs/">Branch FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/update-faqs/">Update/Rebuild Loop FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/ios13/">iOS 13 FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/rileylink-faqs/">RileyLink FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/algorithm-faqs/">Algorithm FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/cgm-faqs/">CGM FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/safety-faqs/">Safety Tips</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../build/overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step1/">Step 1 Compatible Computer</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step2/">Step 2 Compatible iPhone/iPod touch</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step3/">Step 3 Compatible Pump</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step4/">Step 4 Compatible CGM</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step5/">Step 5 Order a RileyLink</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step6/">Step 6 Enroll in Apple Developer Program</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step7/">Step 7 Install Homebrew</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step8/">Step 8 Download Xcode</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step9/">Step 9 Xcode Preferences</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step10/">Step 10 Test Settings</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step11/">Step 11 Make plans for Loop Data</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step12/">Step 12 Meet Community</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step13/">Step 13 Download Loop code</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step14/">Step 14 Build Loop app</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/build_errors/">Oh dear! Build errors?</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/code_customization/">Customize your Loop</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/updating/">Ready to Update your Loop?</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../operation/overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/health/">Step 1: Health Permissions</a>
 </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Step 2: Add Pump</a>
+    <a tabindex="-1" href="">Step 2: Add Pump</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/loop-settings/mdt-pump/">Add Medtronic</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/loop-settings/omnipod-pump/">Add Omnipod</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/cgm/">Step 3: Add CGM</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/configurations/">Step 4: Configurations</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/overrides/">Step 5: Override Presets</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/services/">Step 6: Loop Services</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/displays/">Loop Displays</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/rileylink/">RileyLink menu</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">How to Use Loop App</a>
+    <a tabindex="-1" href="">How to Use Loop App</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/features/carbs/">Carb Entries</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/bolus/">Bolus</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/workout/">Workout Targets</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/ice/">Using ICE info</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/watch/">Apple Watch</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/widget/">iPhone widget</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/notifications/">Loop Notifications</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/battery/">Pump Battery</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Looping Tips</a>
+    <a tabindex="-1" href="">Looping Tips</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/loop/open-loop/">Open Loop</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/loop/close-loop/">Closed Loop</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/loop/looptips/">Loop Tips</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Algorithm</a>
+    <a tabindex="-1" href="">Algorithm</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/algorithm/overview/">Overview</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/algorithm/bolus/">Bolus Recommendations</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/algorithm/prediction/">Glucose Prediction</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Troubleshoot</a>
+    <a tabindex="-1" href="">Troubleshoot</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../troubleshooting/overview/">Overview</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/loop-crashing/">Loop crashes</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/green-loop/">Grey Loop</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/pod-pairing/">Pod Pairing Failures</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/priming/">MDT Priming and Sites</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/time-change/">Time Changes</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/pump-errors/">MDT Pump Errors</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/omnipod-faults/">Omnipod Faults</a>
 </li>
+
+        
     </ul>
   </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../new_user/">Brand New NS</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../update_user/">Retrofit Existing NS</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../troublehoot/">Setup Troubleshooting</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../mlab_cleanup/">NS Stopped Working</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../remote-overrides/">Remote Overrides</a>
 </li>
-                                    
+
+                    
+                        
 <li class="active">
     <a href="./">IFTTT</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../pebble/">Pebble</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../pushover/">Remote Notifications</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../reports/">Reports</a>
 </li>
-                                </ul>
-                            </li>
-                        </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li >
-                                <a rel="next" href="../remote-overrides/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../pebble/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
+                    
                     </ul>
-                </div>
-            </div>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../remote-overrides/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../pebble/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
         </div>
+    </div>
+</div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+    
         <li class="main active"><a href="#ifttt-integration">IFTTT Integration</a></li>
-            <li><a href="#ifttt-setup-for-phones">IFTTT Setup for phones</a></li>
-            <li><a href="#enable-ifttt-in-your-nightscout-site">Enable IFTTT in your Nightscout site</a></li>
-            <li><a href="#install-ifttt-app-on-your-iphoneandroid">Install IFTTT app on your iPhone/Android</a></li>
-            <li><a href="#alexa-integration">Alexa integration</a></li>
+        
+            <li><a href="#step-1-get-your-api-secret-hash">Step 1: Get your API Secret Hash</a></li>
+        
+            <li><a href="#step-2-create-your-applets">Step 2: Create your "Applets"</a></li>
+        
+            <li><a href="#step-3-enable-ifttt-in-your-nightscout-site">Step 3: Enable IFTTT in your Nightscout site</a></li>
+        
+            <li><a href="#step-4-install-ifttt-app-on-your-iphoneandroid">Step 4: Install IFTTT app on your iPhone/Android</a></li>
+        
+            <li><a href="#extra-credit-alexa-integration">Extra Credit: Alexa integration</a></li>
+        
+    
     </ul>
 </div></div>
-                <div class="col-md-9" role="main">
+            <div class="col-md-9" role="main">
 
 <h1 id="ifttt-integration">IFTTT Integration<a class="headerlink" href="#ifttt-integration" title="Permanent link">⌁</a></h1>
-<p>If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, you can have single button presses that you can deploy from your iPhone to put a note in your NS site, enter low treatments, log a site change, or log a sensor change. </p>
-<h2 id="ifttt-setup-for-phones">IFTTT Setup for phones<a class="headerlink" href="#ifttt-setup-for-phones" title="Permanent link">⌁</a></h2>
-<ul>
-<li>First we need to gather one thing called your "hashed API Secret". In your internet browser, open a console window while viewing your Nightscout site.  Make sure you have "authenticated" your site by using your API secret in the Nightscout settings area (hint: if you see a little padlock in the upper left corner of the site, you haven't authenticated it).  Refresh the site and your hashed secret key will be shown as "apisecrethash: "xxxxxxxxxx...""  For Safari users on Mac, you can open the console window by selecting "Develop" from the Safari top menu, and then "Show Page Source" (if you do not see "Develop" in the top menu, activate it by going to Safari &gt; Preferences... &gt; Advanced, and checking the "Show Develop menu in menu bar" option).  If you're having problems seeing the apisecrethash, click the little grey triangle next to the "status isAuthenticated" line and the objects below it will display (see screenshot).  Your hashed API secret can be copied and pasted from that line, as shown below.  Save that somewhere easy to get to again, because you will be using it later.</li>
-</ul>
+<p>If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, you can have single button presses on your iPhone that will set an override, log a cannula change, log a sensor change and much more. </p>
+<h2 id="step-1-get-your-api-secret-hash">Step 1: Get your API Secret Hash<a class="headerlink" href="#step-1-get-your-api-secret-hash" title="Permanent link">⌁</a></h2>
+<p>First we need to gather one thing called your "hashed API Secret". In your internet browser, open a "console" window while viewing your Nightscout site.  Make sure you have "authenticated" your site by using your API secret in the Nightscout settings area (hint: if you see a little padlock in the upper left corner of the site, you haven't authenticated it).  Refresh the site and your hashed secret key will be shown as "apisecrethash: "xxxxxxxxxx...""  </p>
+<p><strong>For Safari users on Mac</strong>, you can open the console window by selecting "Develop" from the Safari top menu, and then "Show Page Source" (if you do not see "Develop" in the top menu, activate it by going to Safari &gt; Preferences... &gt; Advanced, and checking the "Show Develop menu in menu bar" option).  If you're having problems seeing the apisecrethash, click the little grey triangle next to the "status isAuthenticated" line and the objects below it will display (see screenshot).  Your hashed API secret can be copied and pasted from that line, as shown below.  Save that somewhere easy to get to again, because you will be using it later.</p>
 <p align="center">
-<img src="../img/hashed_API.png" width="550">
+<img src="../img/hashed_API.png" width="750">
 </p>
 
+<p><strong>For Chrome users</strong>, the console window is found through the View &gt;&gt; Developer &gt;&gt; View Source. Click on the Console tab and scroll to find the "status isAuthenticated" row to find your apisecrethash. Copy your API hash to somewhere you can retreive it again, we will be copy/pasting it in Step 2.</p>
+<p align="center">
+<img src="../img/hashed_API2.png" width="750">
+</p>
+
+<h2 id="step-2-create-your-applets">Step 2: Create your "Applets"<a class="headerlink" href="#step-2-create-your-applets" title="Permanent link">⌁</a></h2>
+<p>IFTTT calls their little actions that you'll create an "applet". I have no idea why. But, I will go along and use their terminology so we are all consistent. We are basically interested in creating applets that will be buttons on your phone to do cool things in Nightscout. So, you'll have a button that will log when you changed your sensor last...letting you see in Nightscout easily just how old a sensor is at any given time. Or you can create a button that will turn on an "exercise" override that you already programmed into your kid's Loop app. So, let's make our first applet (aka button).</p>
 <ul>
 <li>Get an <a href="https://ifttt.com/join">IFTTT account</a> </li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_signup.png" width="550">
+<img src="../img/IFTTT_signup.png" width="650">
 </p>
 
 <ul>
-<li>Login to your IFTTT.com account and select click <a href="https://ifttt.com/create">this link</a> to get to the page for creating your first "New Applet". (You can also get to this Applet creation page by selecting your Account icon in the upper right of the IFTTT website, then clicking on "My Applets", then "Get More", then finally scroll down a bit and there's a ridiculously hidden button about a third fo the way down the page that says "Create your own"...it is insane how hard that button is to find now.)</li>
+<li>
+<p>Login to your IFTTT.com account and select click <a href="https://ifttt.com/create">this link</a> to get to the page for creating your first "New Applet". (You can also get to this Applet creation page by selecting your Account icon in the upper right of the IFTTT website, then clicking on "Create".)</p>
+</li>
+<li>
+<p>In the screen that appears, click on the black "+this" part of the screen</p>
+</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_newapplet.png" width="550">
-</p>
-
-<ul>
-<li>In the screen that appears, click on the black "+this" part of the screen</li>
-</ul>
-<p align="center">
-<img src="../img/IFTTT_this.png" width="550">
+<img src="../img/IFTTT_this.png" width="650">
 </p>
 
 <ul>
 <li>In the next screen, type "button" in the search field and then click on the red box labelled "ButtonWidget"</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_button.png" width="550">
+<img src="../img/IFTTT_button.png" width="650">
 </p>
 
 <ul>
 <li>Connect the button widget by clicking on the large black"connect" button twice, once on the main screen and then second on the pop-up window that will appear immediately after that. (You will only have to "connect" the widgets for the first applet you make.  After that the widgets will already connected to your IFTTT account.)</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_connect1.png" width="550">
+<img src="../img/IFTTT_connect1.png" width="650">
 </p>
 
 <ul>
 <li>Click on the large red "button press" box </li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_buttonpress.png" width="550">
+<img src="../img/IFTTT_buttonpress.png" width="650">
 </p>
 
 <ul>
 <li>Click on the black "+that" text</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_that.png" width="550">
+<img src="../img/IFTTT_that.png" width="650">
 </p>
 
 <ul>
 <li>Enter "Webhooks" in the search field and click on the Webhooks app</li>
 </ul>
 <p align="center">
-<img src="../img/webhooks1.png" width="550">
+<img src="../img/webhooks1.png" width="650">
 </p>
 
 <ul>
 <li>Connect the Webhooks app</li>
 </ul>
 <p align="center">
-<img src="../img/webhooks2.png" width="550">
+<img src="../img/webhooks2.png" width="650">
 </p>
 
 <ul>
 <li>Select the blue "Make a Web Request" box</li>
 </ul>
 <p align="center">
-<img src="../img/webhooks24.png" width="550">
+<img src="../img/webhooks24.png" width="650">
 </p>
 
 <ul>
 <li>Now you will have a blank web request template to complete.  Screenshot below is an example of a completed recipe for eating soon IFTTT action. There are four parts you will need to fill in, and they are described below the screenshot.</li>
 </ul>
 <p align="center">
-<img src="../img/webhooks25.png" width="550">
+<img src="../img/webhooks25.png" width="650">
 </p>
 
 <div class="admonition danger">
 <p class="admonition-title">URL</p>
-<p><code>https://yoursite.herokuapp.com/api/v1/treatments.json</code> for all IFTTT recipes that are NOT remote overrides.</br></br>
-<strong>NOTE: Remote overrides will use</strong></br> <code>https://yoursite/herokuapp.com/api/v2/notifications/loop</code></br></br>
+<p><code>https://yoursite.herokuapp.com/api/v1/treatments.json</code> (for all IFTTT recipes that are NOT remote overrides...so things like cannula changes, sensor changes, pump battery changes, etc.)</br></br>
 Change the "yoursite" to your actual site's info.</p>
 </div>
 <div class="admonition warning">
@@ -549,14 +749,19 @@ Change the "yoursite" to your actual site's info.</p>
 {"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, please don't text me for a bit.  I'm taking a test.", "secret": "your_hashed_api_goes_here!!!"}</br></br></p>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">Remote Override body messages</p>
-<p>special note about remote overrides and IFTTTT. You could also set overrides in NS using IFTTT, assuming you have followed <a href="https://loopkit.github.io/loopdocs/nightscout/remote-overrides/">the directions for setting up remote overrides</a>. To setup the overrides, you need to match the Body message of the applet with the override already programmed in Loop app. A sample body message would be as follows. Notice how the duration is giving in minutes, and if the override is one that is "enabled indefinitely" then the duration is "infinite". The reason is the name of the override but NO EMOJI, and the reasonDisplay is the override name with the emoji.</br></br>
-<strong>Override named "hormones"</strong></br>
-{"enteredBy": "IFTTT-button", "eventType": "Temporary Override", "reason": "hormones", "duration": "infinite", "reasonDisplay": "🧟‍♀️ hormones", "secret": "your_hashed_api_goes_here!!!"}</br></br>
-<strong>Override named "running"</strong></br>
-{"enteredBy": "IFTTT-button", "eventType": "Temporary Override", "reason": "running", "duration": "180", "reasonDisplay": "🏃‍♀️ running", "secret": "your_hashed_api_goes_here!!!"}
-<strong>Override named "Low Treatment"</strong></br>
-{"enteredBy": "IFTTT-button", "eventType": "Temporary Override", "reason": "Low Treatment", "duration": "60", "reasonDisplay": "🍬 Low Treatment", "secret": "your_hashed_api_goes_here!!!"}</p>
+<p class="admonition-title">Special note for IFTTT to set a Remote Override</p>
+<p>Triggering a remote override with IFTTT takes a couple considerations;</br></br>
+1. You have followed <a href="https://loopkit.github.io/loopdocs/nightscout/remote-overrides/">the directions for setting up remote overrides</a> in Nightscout already.</br></br>
+2. Remote overrides will use <strong><code>https://yoursite/herokuapp.com/api/v2/notifications/loop</code></strong> for the URL line of the applet. Notice that is different from the other type of applets' URL.</br></br>
+3. The Body message of the applet needs to match the override already programmed in Loop app; the reason, reasonDisplay, and duration all need to match what is preset in your Loop app. The "duration" is giving in minutes in the body message (vs hours in Loop), and if the override is one that is "enabled indefinitely" then the duration is "infinite". The "reason" is the name of the override but NO EMOJI, and the "reasonDisplay" is the override name with the emoji. Check out the samples Body messages for overrides below. You will have to edit your body messages to match your duration, reason, and reasonDisplay. The target range of the override does not need to be specified. </br></br>
+<strong>Body message for override named "hormones"</strong></br>
+{"eventType": "Temporary Override", "reason": "hormones", "duration": "infinite", "reasonDisplay": "🧟‍♀️ hormones", "secret": "your_hashed_api_goes_here!!!"}</br></br>
+<strong>Body message for override named "running"</strong></br>
+{"eventType": "Temporary Override", "reason": "running", "duration": "180", "reasonDisplay": "🏃‍♀️ running", "secret": "your_hashed_api_goes_here!!!"}</br></br>
+<strong>Body message for override named "Low Treatment"</strong></br>
+{"eventType": "Temporary Override", "reason": "Low Treatment", "duration": "60", "reasonDisplay": "🍬 Low Treatment", "secret": "your_hashed_api_goes_here!!!"}</br></br>
+<strong>Body message to cancel any override</strong></br>
+{"eventType": "Temporary Override Cancel", "secret": "your_hashed_api_goes_here!!!"}</br></br></p>
 </div>
 <ul>
 <li>
@@ -567,61 +772,52 @@ Change the "yoursite" to your actual site's info.</p>
 </li>
 </ul>
 <p align="center">
-<img src="../img/webhooks26.png" width="550">
+<img src="../img/webhooks26.png" width="650">
 </p>
 
 <ul>
 <li>Repeat the setup for new applets for as many automated actions/overrides as you would like to setup.</li>
 </ul>
 <p align="center">
-<img src="../img/webhooks27.png" width="550">
+<img src="../img/webhooks27.png" width="650">
 </p>
 
-<h2 id="enable-ifttt-in-your-nightscout-site">Enable IFTTT in your Nightscout site<a class="headerlink" href="#enable-ifttt-in-your-nightscout-site" title="Permanent link">⌁</a></h2>
+<h2 id="step-3-enable-ifttt-in-your-nightscout-site">Step 3: Enable IFTTT in your Nightscout site<a class="headerlink" href="#step-3-enable-ifttt-in-your-nightscout-site" title="Permanent link">⌁</a></h2>
+<p>Now that we have cool applets made, we need to give Nightscout some information so that it will accept commands from our applets. It's pretty simple to do...just a couple additions to your Heroku settings.</p>
 <ul>
-<li>Find your Maker Key by going to your IFTTT account, Services and then click on the Webhooks service, settings.</li>
+<li>Find your Maker Key by going to your IFTTT account icon in upper right corner, choose "My services" and then click on the Webhooks service, settings.</li>
 </ul>
-<p align="center">
-<img src="../img/webhooks9.png" width="550">
-</p>
-
 <hr />
 <p><p align="center">
-<img src="../img/webhooks10.png" width="550">
+<img src="../img/webhooks10.png" width="650">
 </p> </p>
 <ul>
-<li>You will see your Maker Key as the last part of the URL; copy and paste that last part (the red circled part as shown)</li>
+<li>You will see your Maker Key as the last part of the URL after the <code>use/</code>; copy and paste that last part (the red circled part as shown)</li>
 </ul>
 <p align="center">
-<img src="../img/webhooks11.png" width="550">
+<img src="../img/webhooks11.png" width="650">
 </p>
 
 <ul>
 <li>Login to your Nightscout site host (azure or heroku) and (1) add your Maker Key to the MAKER_KEY line and (2) add "maker" to your ENABLE line.</li>
 </ul>
 <p align="center">
-<img src="../img/IFTTT_NSkey.png" width="550">
+<img src="../img/IFTTT_NSkey.png" width="650">
 </p>
 
 <p align="center">
-<img src="../img/IFTTT_enable.png" width="550">
+<img src="../img/IFTTT_enable.png" width="650">
 </p>
 
-<h2 id="install-ifttt-app-on-your-iphoneandroid">Install IFTTT app on your iPhone/Android<a class="headerlink" href="#install-ifttt-app-on-your-iphoneandroid" title="Permanent link">⌁</a></h2>
+<h2 id="step-4-install-ifttt-app-on-your-iphoneandroid">Step 4: Install IFTTT app on your iPhone/Android<a class="headerlink" href="#step-4-install-ifttt-app-on-your-iphoneandroid" title="Permanent link">⌁</a></h2>
+<p>Now that all the hard work is done, we can take easy street and just add that work to the phone via the IFTTT app. By accessing the IFTTT widget on your iPhone, you'll be able to easily and quickly access the useful buttons you've just created.</p>
 <ul>
 <li>
-<p>Download the IFTTT app on your phone and log in.</p>
+<p>Download the IFTTT app on your phone and log in using your IFTTT account.</p>
 </li>
 <li>
-<p>You can add homescreen quick buttons.  Click on your IFTTT app and login, click on My Applets in the bottom right corner, and then click on the applet that you'd like to work with.  From the the middle of the applet, click on the Widget Settings, and then click on the Add button for the Homescreen Icon.</p>
+<p>For iPhone users, if you swipe right from your iPhone's home screen, you will have the Today view showing.  Scroll to the bottom, click "edit". This should show a list of existing widgets, followed by a list of "more widgets" with green + signs.  Click on the IFTTT's green circle and the widget will be moved to the top, active widgets area.  You can hold your finger on the three left lines of the IFTTT widget row to drag it to the top of your widget panel, if you prefer to have it as the top-most widget. </p>
 </li>
-</ul>
-<p align="center">
-<img src="../img/IFTTT_homescreen.PNG" width="550">
-</p>
-
-<ul>
-<li>For iPhone users, if you downswipe from the top of your iPhone screen, you will have the Today view or Notifications showing.  They are separate pages; Today view is on the left, Notifications is on the right.  You can left/right swipe to go between them.  Go into the Today view and scroll to the bottom, click "edit". This should show a list of existing widgets, followed by a list of "more widgets" with green + signs.  Click on the IFTTT's green circle and the widget will be moved to the top, active widgets area.  You can hold your finger on the three left lines of the IFTTT widget row to drag it to the top of your widget panel, if you prefer to have it as the top-most widget. </li>
 </ul>
 <p align="center">
 <img src="../img/IFTTT_today.PNG" width="550">
@@ -640,12 +836,12 @@ Change the "yoursite" to your actual site's info.</p>
 <img src="../img/IFTTT_reorder.png" width="550">
 </p>
 
-<h2 id="alexa-integration">Alexa integration<a class="headerlink" href="#alexa-integration" title="Permanent link">⌁</a></h2>
+<h2 id="extra-credit-alexa-integration">Extra Credit: Alexa integration<a class="headerlink" href="#extra-credit-alexa-integration" title="Permanent link">⌁</a></h2>
 <ul>
-<li>Since you have IFTTT/Maker requests working, you can get it to work with anything that supports IFTTT, including Alexa. You will need to add "alexa" to your ENABLE line in your Nightscout host settings (azure) or config vars (heroku).  And then repeat the steps above, but instead of using "ButtonWidget" service we started with earlier (the "+if" part of the setup)...you will use the "AmazonAlexa" service.</li>
+<li>Since you have IFTTT/Maker requests working, you can get it to work with anything that supports IFTTT, including Alexa. You will need to add "alexa" to your ENABLE line in your Heroku settings.  And then repeat the steps above, but instead of using "ButtonWidget" service we started with earlier (the "+if" part of the setup)...you will use the "AmazonAlexa" service.</li>
 </ul>
 <p align="center">
-<img src="../img/alexa_maker.png" width="550">
+<img src="../img/alexa_maker.png" width="750">
 </p>
 
 <ul>
@@ -655,78 +851,40 @@ Change the "yoursite" to your actual site's info.</p>
 
         <footer class="col-md-12">
             <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
                     </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
     </body>
 </html>
