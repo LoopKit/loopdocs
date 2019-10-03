@@ -75,6 +75,11 @@ Once you get your workspace cloned, you simply find that cloned folder (wherever
 
 Once you are in LoopWorkspace, everything is pretty similar for building with only two notable exceptions. You need to click on that blue Loop folder to see the signing targets, and you need to change the build scheme to the left of your phone to "Loop (Workspace)" in order to build properly.
 
+</p>
+<p align="center">
+<img src="../img/workspace-use.png" width="750">
+</p>
+
 Oh wait...there is a noticable difference...the speed! LoopWorkspace will build Loop much faster than Loop because of the way it uses submodules. I do rather like that benefit to using LoopWorkspaces too.
 
 ## Updating Loop using LoopWorkspace
