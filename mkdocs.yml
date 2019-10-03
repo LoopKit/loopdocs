@@ -40,6 +40,7 @@ pages:
     - 'Oh dear! Build errors?': 'build/build_errors.md'
     - 'Customize your Loop': 'build/code_customization.md'
     - 'Ready to Update your Loop?': 'build/updating.md'
+    - 'LoopWorkspace': 'build/loopworkspace.md'
 - Set up App:
     - 'Overview': 'operation/overview.md'
     - 'Step 1: Health Permissions': 'build/health.md'
