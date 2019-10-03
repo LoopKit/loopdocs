@@ -492,6 +492,10 @@
 <img src="../img/workspace-file.png" width="550">
 </p></p>
 <p>Once you are in LoopWorkspace, everything is pretty similar for building with only two notable exceptions. You need to click on that blue Loop folder to see the signing targets, and you need to change the build scheme to the left of your phone to "Loop (Workspace)" in order to build properly.</p>
+<p></p>
+<p align="center">
+<img src="../img/workspace-use.png" width="750">
+</p></p>
 <p>Oh wait...there is a noticable difference...the speed! LoopWorkspace will build Loop much faster than Loop because of the way it uses submodules. I do rather like that benefit to using LoopWorkspaces too.</p>
 <h2 id="updating-loop-using-loopworkspace">Updating Loop using LoopWorkspace<a class="headerlink" href="#updating-loop-using-loopworkspace" title="Permanent link">⌁</a></h2>
 <p>When you want to update your Loop app using LoopWorkspace, you'd just do a <code>git pull --recurse</code> while in the LoopWorkspace directory in Terminal. That will grab the lastest updates and then you can build. If you still have signing team filled in, you may get a conflict on the command...so either unsign before the git pull or do a <code>git stash</code> and then pull.</p>
