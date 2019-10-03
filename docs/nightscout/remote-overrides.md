@@ -19,7 +19,7 @@ Here's the breaking information on this:
 
 This is not currently in dev branch, but rather is in a branch called "remote-overrides" while the bugs get worked out. Basically this remote-overrides branch is an exact copy of dev branch (as of October 1st) and just has remote override capabilities added to it.
 
-You can download remote-overrides branch [here](https://github.com/LoopKit/Loop/archive/master.zip).
+You can download remote-overrides branch [here](https://github.com/LoopKit/Loop/archive/remote-overrides.zip).
 
 Note: If you are using and familiar with LoopWorkspace, you can use `git clone --branch=remote-overrides --recursive https://github.com/LoopKit/LoopWorkspace`. These directions will not explain how to use LoopWorkspace...that's out-of-scope for this page's purpose.
 
@@ -159,4 +159,6 @@ The Looper will see a banner notification that an override has been set (or canc
 </p> </br></br>
 
 Canceling an override through Nightscout careportal is as simple as selecting the event type "Temporary Override Cancel" and submitting. 
+
+If you're feeling adventurous and want to make your life even more efficient, check out [setting up IFTTT to trigger your overrides](https://loopkit.github.io/loopdocs/nightscout/ifttt/) through Nightscout, too.
 

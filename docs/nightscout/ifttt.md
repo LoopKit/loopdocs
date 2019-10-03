@@ -17,13 +17,13 @@ If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, 
 <img src="../img/IFTTT_signup.png" width="550">
 </p> 
 
-* Login to your IFTTT.com account and select the "New Applet" button.
+* Login to your IFTTT.com account and select click [this link](https://ifttt.com/create) to get to the page for creating your first "New Applet". (You can also get to this Applet creation page by selecting your Account icon in the upper right of the IFTTT website, then clicking on "My Applets", then "Get More", then finally scroll down a bit and there's a ridiculously hidden button about a third fo the way down the page that says "Create your own"...it is insane how hard that button is to find now.)
 
 <p align="center">
 <img src="../img/IFTTT_newapplet.png" width="550">
 </p> 
 
-* In the screen that appears, click on the blue "+this" part of the screen
+* In the screen that appears, click on the black "+this" part of the screen
 
 <p align="center">
 <img src="../img/IFTTT_this.png" width="550">
@@ -35,7 +35,7 @@ If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, 
 <img src="../img/IFTTT_button.png" width="550">
 </p> 
 
-* Connect the buttonwidget by clicking on the large red "connect" button (You will only have to "connect" the widgets for the first applet you make.  After that the widgets will already connected to your IFTTT account.)
+* Connect the button widget by clicking on the large black"connect" button twice, once on the main screen and then second on the pop-up window that will appear immediately after that. (You will only have to "connect" the widgets for the first applet you make.  After that the widgets will already connected to your IFTTT account.)
 
 <p align="center">
 <img src="../img/IFTTT_connect1.png" width="550">
@@ -47,7 +47,7 @@ If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, 
 <img src="../img/IFTTT_buttonpress.png" width="550">
 </p> 
 
-* Click on the blue "+that" text
+* Click on the black "+that" text
 
 <p align="center">
 <img src="../img/IFTTT_that.png" width="550">
@@ -71,43 +71,51 @@ If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, 
 <img src="../img/webhooks24.png" width="550">
 </p> 
 
-*  Now you will have a blank web request template to complete.  Screenshot below is an example of a completed recipe for eating soon IFTTT action.
+*  Now you will have a blank web request template to complete.  Screenshot below is an example of a completed recipe for eating soon IFTTT action. There are four parts you will need to fill in, and they are described below the screenshot.
 
 <p align="center">
 <img src="../img/webhooks25.png" width="550">
 </p> 
 
-The following info should be filled in:
+!!!danger "URL"
+    `https://yoursite.herokuapp.com/api/v1/treatments.json` for all IFTTT recipes that are NOT remote overrides.</br></br>
+    **NOTE: Remote overrides will use**</br> `https://yoursite/herokuapp.com/api/v2/notifications/loop`</br></br>
+    Change the "yoursite" to your actual site's info.
+    
+!!!warning "Method"
+    The method will be `POST`
 
-<font color=orange>**URL**:</font> https://yoursite.herokuapp.com/api/v1/treatments.json (**change the "yoursite" part to your NS info**)
+!!!info "Content Type"
+    The content type will be `application/json`. 
 
-<font color=orange>**Method**:</font> POST
+!!!danger "Body"
+    The content of the body will depend on the action that you would like this particular button press to perform. While many recipes are available, any recipe that log carbs to NS will only display the carbs in Nightscout...Loop will not "use" those carbs in treatment or prediction math. The display of carbs in NS though may still be helpful for remote care givers to leave an indication that a low is being noticed and treated.  Some sample content for actions that may be useful in Loop:</br></br>
+    **Pump Site Change**</br>
+    {"enteredBy": "IFTTT-button", "eventType": "Site Change", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}</br></br>
+    **CGM Sensor Start**</br>
+    {"enteredBy": "IFTTT-button", "eventType": "Sensor Start", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}</br></br>
+    **Note**</br>
+    {"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, please don't text me for a bit.  I'm taking a test.", "secret": "your_hashed_api_goes_here!!!"}</br></br>
 
-<font color=orange>**Content Type**:</font> application/json
+!!!warning "Remote Override body messages"
+     special note about remote overrides and IFTTTT. You could also set overrides in NS using IFTTT, assuming you have followed [the directions for setting up remote overrides](https://loopkit.github.io/loopdocs/nightscout/remote-overrides/). To setup the overrides, you need to match the Body message of the applet with the override already programmed in Loop app. A sample body message would be as follows. Notice how the duration is giving in minutes, and if the override is one that is "enabled indefinitely" then the duration is "infinite". The reason is the name of the override but NO EMOJI, and the reasonDisplay is the override name with the emoji.</br></br>
+    **Override named "hormones"**</br>
+    {"enteredBy": "IFTTT-button", "eventType": "Temporary Override", "reason": "hormones", "duration": "infinite", "reasonDisplay": "🧟‍♀️ hormones", "secret": "your_hashed_api_goes_here!!!"}</br></br>
+    **Override named "running"**</br>
+    {"enteredBy": "IFTTT-button", "eventType": "Temporary Override", "reason": "running", "duration": "180", "reasonDisplay": "🏃‍♀️ running", "secret": "your_hashed_api_goes_here!!!"}
+    **Override named "Low Treatment"**</br>
+    {"enteredBy": "IFTTT-button", "eventType": "Temporary Override", "reason": "Low Treatment", "duration": "60", "reasonDisplay": "🍬 Low Treatment", "secret": "your_hashed_api_goes_here!!!"}
 
-<font color=orange>**Body**:</font>  The content of the body will depend on the action that you would like this particular button press to perform.  You can only do ONE of the actions per button.  There are many recipes available, but not all will work with Loop and NS together.  For example, you can use the Low Treatment recipe to log carbs to NS...but Loop will not read/use those carbs.  That may still be helpful though for remote care givers to leave an indication of when they gave uncovered carbs to treat a low.  You could also set temp targets in NS using IFTTT (recipes can be found on OpenAPS docs), but Loop does not read temp targets from Nightscout at this time.  Some sample content for actions that may be useful in Loop:
-
-!!!info "Pump Site Change"
-    {"enteredBy": "IFTTT-button", "eventType": "Site Change", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
-
-!!!info "CGM Sensor Start"
-    {"enteredBy": "IFTTT-button", "eventType": "Sensor Start", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
-
-!!!info "Note"
-    {"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, please don't text me for a bit.  I'm taking a test.", "secret": "your_hashed_api_goes_here!!!"}
-
-!!!info "Low Treatment"
-    {"enteredBy": "IFTTT-button", "reason": "low treatment", "carbs": 15, "secret": "your_hashed_api_goes_here!!!"}
 
 * Click the `Create Action` button on the bottom of the screen when you finish.
 
-* Now is your chance to change the title of your Applet now to something meaningful.  You can turn on notifications, too, using the slider shown.  If you turn on the notifications, you will get an alert on your phone and pebble watch when the button press has been successfully deployed.  Finish the IFTTT button by clicking on the Finish button that appears.  
+* Now is your chance to change the title of your applet now to something meaningful.  You can turn on notifications, too, using the slider shown. If you turn on the notifications, you will get an alert on your phone and pebble watch when the button press has been successfully deployed.  Finish the IFTTT button by clicking on the Finish button that appears.  
 
 <p align="center">
 <img src="../img/webhooks26.png" width="550">
 </p> 
 
-* Repeat the setup for New Applets for as many automated actions as you would like to setup.
+* Repeat the setup for new applets for as many automated actions/overrides as you would like to setup.
 
 <p align="center">
 <img src="../img/webhooks27.png" width="550">
