@@ -11,6 +11,13 @@ The good news?  Loop can still run just fine until you repair your mLab database
 
 There are two steps to getting your Nightscout site running again. You will need to do both steps.  The first step clears out some space in your database.  The second step consolidates the remaining data into a more compact space, and therefore makes the data take up less room overall in your database. You need to do both steps to help keep your NS humming along.
 
+If you'd like a video demonstration of the steps needed to do this...here ya go. The video uses just a slightly different way to do Step 1...either way is totally fine. Click the image or click this [Nightscout Cleanup link](https://youtu.be/_ifis2G11qs)...you'll end up at the same place.</br>
+
+
+<p align="center">
+<a href="https://youtu.be/_ifis2G11qs" target="_blank"><img src="../img/cleanup-video.jpg"  title="Nightscout Cleanup" /></a>
+</p> 
+
 ## Step 1: Delete Data
 
 Go to your Nightscout site's settings (the three horizontal bars in the upper right of your Nightscout site) and open your Admin Tools for the site.  Click on the buttons to "Delete all documents" in your Clean Mongo status database section of the Admin Tools.  For good measure, also click on the buttons for removing future items as well.  
