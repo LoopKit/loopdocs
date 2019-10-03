@@ -162,3 +162,10 @@ Canceling an override through Nightscout careportal is as simple as selecting th
 
 If you're feeling adventurous and want to make your life even more efficient, check out [setting up IFTTT to trigger your overrides](https://loopkit.github.io/loopdocs/nightscout/ifttt/) through Nightscout, too.
 
+## Step 6: Known Issues
+
+Just a brief mention so you are aware:
+
+1. Nightscout's display of overrides, similar to temp targets you may have used previously, involves displaying a grey bar across the bottom of the BG graph in Nightscout. This grey bar sometimes has some glitchy quirks, sticking around in the display even after the override may have been canceled early. Also, if lots of overrides are set "on top" of each other in near-time, visually they will look clustered and overlapping. These visuals are a Nightscout thing...if you want to give back...this would be a place to help offer code assistance. There are improvements to the displays of those grey bars that could be made. If you can't give back with code, then give back by reading these notices and not posting "hey, my grey bars are overlapping." You can delete old override entries in Nightscout using your mlab database's "treatments" collection. Go to mlab using your link in Heroku, find your override treatment that you want to delete (it is likely near the last of the recoords in the collection) and click on the trashcan to delete it. 
+2. The override pill will display information about what override is currenly active in the Looper's phone. BUT, there can be a slight delay as that information is only transmitted every 5 minutes at best (it is tied to Loop runs and Nightscout upload events in Loop). So, wait 5 minutes to see that the information has gone through a refresh cycle before assuming the override message failed to enact.
+3. When you add a new override preset in Loop, that preset has to be uploaded to Nightscout before it will be available in careportal as a remote override. To trigger that upload, you can simply enact that new override for a few seconds and turn it off again. that will get the Nightscout upload going. 
