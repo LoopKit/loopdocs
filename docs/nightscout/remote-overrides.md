@@ -179,7 +179,7 @@ A couple notes about Shortcuts:
 
 ### IFTTT
 
-If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remottely by [setting up IFTTT](https://loopkit.github.io/loopdocs/nightscout/ifttt/), too.
+If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by [setting up IFTTT](https://loopkit.github.io/loopdocs/nightscout/ifttt/), too.
 
 ## Step 6: Known Issues
 
