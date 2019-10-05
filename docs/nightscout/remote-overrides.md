@@ -78,7 +78,7 @@ To get this new branch to your GitHub's cgm-remote-monitor, we need to do some s
 
 5. Next command is `git push --set-upstream origin remote-loop-overrides`  This command will push your new branch up to your online GitHub account so we can use it in Heroku.
 
-6. [Login to your Heroku account](https://id.heroku.com/login),  Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-temp-overrides" in the drop down menu of the branchs and then press the black deploy button.
+6. [Login to your Heroku account](https://id.heroku.com/login),  Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-temp-overrides" in the drop down menu of the branchs and then press the black deploy button. (If you don't have a black deploy button option...then click on the Github icon to connect to your Github account and cgm-remote-monitor repo.)
 
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/deploy-remotes.png" width="750">
@@ -146,6 +146,9 @@ Don't forget to read Loopdocs pages about how regular overrides work. For remote
 
 ## Step 5: Using Remote Overrides
 
+There are three ways you can trigger your override presets remotely; careportal, Shortcuts, and IFTTT.
+
+### Careportal
 To use remote overrides, I'm assuming you've setup your Nightscout site according to the directions [here](https://loopkit.github.io/loopdocs/nightscout/new_user/#step-4-setup-your-heroku-nightscout-app) in Loopdocs. Especially the part about your ENABLE line including "override careportal loop" (in addition to other variables you'd be interested in). You'll also need to have your site authenticated so that your careportal is active to send remote overrides. You can authenticate your site by selecting the three horizontal lines in the upper right corner of your Nightscout site and scrolling to the bottom of the settings. There's an "authenicate" link at the very bottom. Once authenticated by entering your API Secret, then there will be a `+` in the upper right corner of your site. That is your careportal. Tap the careportal `+` and then scroll down in the "event type" menu to find "Temporary Override". Within there you will find all your Loop override presets already loaded for you.
 
 <p align="center">
@@ -160,7 +163,23 @@ The Looper will see a banner notification that an override has been set (or canc
 
 Canceling an override through Nightscout careportal is as simple as selecting the event type "Temporary Override Cancel" and submitting. 
 
-If you're feeling adventurous and want to make your life even more efficient, check out [setting up IFTTT to trigger your overrides](https://loopkit.github.io/loopdocs/nightscout/ifttt/) through Nightscout, too.
+### Shortcuts
+If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple shortcuts for you that integrate Loop overrides with Nightscout. 
+
+Click these links on your iphone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser in iPhone):
+
+[Loop Remote Overrides shortcut](https://www.icloud.com/shortcuts/a700d7f1f39b43c6b2ae8f830df851da)
+
+[Cancel Override shortcut](https://www.icloud.com/shortcuts/27be8282bce3433b83b4751cd8c43f6e)
+
+A couple notes about Shortcuts:
+
+1. You will need iOS 13 on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than iOS 13, but your phone as the shortcut user would need iOS 13.
+2. If you haven't ever used a shortcut yet, you may see a message "This shortcut cannot be opened because your Shortcuts security system settings don't allow untrusted shortcuts." You will need to go to your iPhone Settings, Shortcuts, and then turn on the slider for "Allow Untrusted Shortcuts". If the slider is not there, go to the Shortcuts app, and download/enact a shortcut from tthe Gallery. This should allow the slider appear then. (iOS 13 glitch they still need to work out.)
+
+### IFTTT
+
+If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remottely by [setting up IFTTT](https://loopkit.github.io/loopdocs/nightscout/ifttt/), too.
 
 ## Step 6: Known Issues
 
