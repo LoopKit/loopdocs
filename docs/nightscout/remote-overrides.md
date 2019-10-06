@@ -78,7 +78,7 @@ To get this new branch to your GitHub's cgm-remote-monitor, we need to do some s
 
 5. Next command is `git push --set-upstream origin remote-loop-overrides`  This command will push your new branch up to your online GitHub account so we can use it in Heroku.
 
-6. [Login to your Heroku account](https://id.heroku.com/login),  Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-temp-overrides" in the drop down menu of the branchs and then press the black deploy button. (If you don't have a black deploy button option...then click on the Github icon to connect to your Github account and cgm-remote-monitor repo.)
+6. [Login to your Heroku account](https://id.heroku.com/login),  Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-loop-overrides" in the drop down menu of the branches and then press the black deploy button. (If you don't have a black deploy button...then click on the Github icon to connect to your Github account and cgm-remote-monitor repo.)
 
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/deploy-remotes.png" width="750">
