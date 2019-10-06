@@ -19,7 +19,7 @@ Here's the breaking information on this:
 
 This is not currently in dev branch, but rather is in a branch called "remote-overrides" while the bugs get worked out. Basically this remote-overrides branch is an exact copy of dev branch (as of October 1st) and just has remote override capabilities added to it.
 
-You can download remote-overrides branch [here](https://github.com/LoopKit/Loop/archive/remote-overrides.zip).
+You can download remote-overrides branch [here](https://github.com/LoopKit/Loop/archive/remote-overrides.zip).  Be sure to review all the steps for updating your Loop app [here](https://loopkit.github.io/loopdocs/build/updating/https://loopkit.github.io/loopdocs/build/updating/).
 
 Note: If you are using and familiar with LoopWorkspace, you can use `git clone --branch=remote-overrides --recursive https://github.com/LoopKit/LoopWorkspace`. These directions will not explain how to use LoopWorkspace...that's out-of-scope for this page's purpose.
 
@@ -68,7 +68,7 @@ This step may take some of you into uncomfortable territory just because it look
 
 To get this new branch to your GitHub's cgm-remote-monitor, we need to do some special steps. At some point in this process, you may be asked for your GitHub login information if you have never cloned to your computer before. 
 
-1. Open Terminal app in your computer and enter this command, **replacing "your-account" with your actual account name**: `cd && git clone https://github.com/your-account/cgm-remote-monitor.git`  This command makes a copy of your GitHub repository onto your computer's root directory.
+1. Open Terminal app in your computer and enter this command, **replacing "your-account" with your actual account name**: `cd && git clone https://github.com/your-account/cgm-remote-monitor.git`  This command makes a copy of your GitHub repository onto your computer's root directory.  **Note:** This is your GitHub account name.  Be sure to include that, not your Heroku account name.
 
 2. Next command is `cd cgm-remote-monitor`  This command changes into the directory we just cloned ont your computer.
 
