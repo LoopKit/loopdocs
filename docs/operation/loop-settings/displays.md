@@ -153,7 +153,7 @@ Additionally, at the bottom of this screen there is a setting to `Enable Retrosp
 <img src="../img/active_insulin.jpg" width="400">
 </p>
 
-The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive and negative IOB.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered).  So long as you have Event History as the Preferred Data Source in Loop settings, primed insulin deliveries (e.g., cannula fills or manual primes) will not be counted towards IOB.
+The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive and negative IOB.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered).  So long as you have Event History as the Preferred Data Source in Loop settings (does not apply to Omnipod, Minimed Only), primed insulin deliveries (e.g., cannula fills or manual primes) will not be counted towards IOB.
 
 ### Insulin Delivery Chart
 
