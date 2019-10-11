@@ -113,7 +113,7 @@ The loop status circle will pulse slightly when the RileyLink is giving the pump
 <table>
 <tr>
 <td><img src="../img/pod-age.jpg" width="250"></td>
-<td>The pod's age typical 3-day lifespan is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red. When you reach 80 hours of pod use, the pod will alarm and the pod age icon will show a "replace pod" message in the HUD.</td>
+<td>The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red. When you reach 80 hours of pod use, the pod will alarm and the pod age icon will show a "replace pod" message in the HUD.</td>
 </tr>
 </table>
 
@@ -129,7 +129,7 @@ There are several charts that help you navigate your Loop actions.  Clicking on 
 
 The glucose chart displays BG values in your preferred units. The vertical scale of the chart is calculated on the fly by Loop to be as useful as possible while including the highest and lowest readings in the chart.
 
-The horizontal axis is set to go forward from the current time until your DIA forward (so you can see what Loop eventually thinks BG will be). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.
+The horizontal axis is set to go forward from the current time until your DIA (insulin duration) forward (so you can see what Loop thinks BG will be eventually). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.
 
 The BG correction range is shown as a blue bar on the glucose chart.  Single-value target BG range (such as 100-100 mg/dl), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction target in lighter blue.
 
