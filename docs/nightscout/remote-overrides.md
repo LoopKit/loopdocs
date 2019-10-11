@@ -19,7 +19,7 @@ Here's the breaking information on this:
 
 This is not currently in dev branch, but rather is in a branch called "remote-overrides" while the bugs get worked out. Basically this remote-overrides branch is an exact copy of dev branch (as of October 1st) and just has remote override capabilities added to it.
 
-You can download remote-overrides branch [here](https://github.com/LoopKit/Loop/archive/remote-overrides.zip).  Be sure to review all the steps for updating your Loop app [here](https://loopkit.github.io/loopdocs/build/updating/https://loopkit.github.io/loopdocs/build/updating/).
+You can download remote-overrides branch [here](https://github.com/LoopKit/Loop/archive/remote-overrides.zip).  Be sure to review all the steps for updating your Loop app [here](https://loopkit.github.io/loopdocs/build/updating/).
 
 Note: If you are using and familiar with LoopWorkspace, you can use `git clone --branch=remote-overrides --recursive https://github.com/LoopKit/LoopWorkspace`. These directions will not explain how to use LoopWorkspace...that's out-of-scope for this page's purpose.
 
