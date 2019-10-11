@@ -8,627 +8,434 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-
-	<title>Reports - LoopDocs</title>
-
+        <title>Reports - LoopDocs</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <link href="../../css/admonitions.css" rel="stylesheet">
-
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
             ga('create', 'UA-109876065-1', 'loopkit.github.io');
             ga('send', 'pageview');
-        </script>
-        
+        </script> 
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+            <div class="container">
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">LoopDocs</a>
+                </div>
 
-            <!-- Main title -->
-            <a class="navbar-brand" href="../..">LoopDocs</a>
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            <!-- Main navigation -->
-            <ul class="nav navbar-nav">
-            
-            
-                <li >
-                    <a href="../..">Home</a>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../faqs/docs-faqs/">Using This Site FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/FAQs/">General Loop FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/omnipod-faqs/">Omnipod FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/branch-faqs/">Branch FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/update-faqs/">Update/Rebuild Loop FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/ios13/">iOS 13 FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/rileylink-faqs/">RileyLink FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/algorithm-faqs/">Algorithm FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/cgm-faqs/">CGM FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/safety-faqs/">Safety Tips</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../build/overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step1/">Step 1 Compatible Computer</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step2/">Step 2 Compatible iPhone/iPod touch</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step3/">Step 3 Compatible Pump</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step4/">Step 4 Compatible CGM</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step5/">Step 5 Order a RileyLink</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step6/">Step 6 Enroll in Apple Developer Program</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step7/">Step 7 Install Homebrew</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step8/">Step 8 Download Xcode</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step9/">Step 9 Xcode Preferences</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step10/">Step 10 Test Settings</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step11/">Step 11 Make plans for Loop Data</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step12/">Step 12 Meet Community</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step13/">Step 13 Download Loop code</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step14/">Step 14 Build Loop app</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/build_errors/">Oh dear! Build errors?</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/code_customization/">Customize your Loop</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/updating/">Ready to Update your Loop?</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/loopworkspace/">LoopWorkspace</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../operation/overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/health/">Step 1: Health Permissions</a>
 </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Step 2: Add Pump</a>
+    <a href="#">Step 2: Add Pump</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/loop-settings/mdt-pump/">Add Medtronic</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/loop-settings/omnipod-pump/">Add Omnipod</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/cgm/">Step 3: Add CGM</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/configurations/">Step 4: Configurations</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/overrides/">Step 5: Override Presets</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/services/">Step 6: Loop Services</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/displays/">Loop Displays</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/rileylink/">RileyLink menu</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">How to Use Loop App</a>
+    <a href="#">How to Use Loop App</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/features/carbs/">Carb Entries</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/bolus/">Bolus</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/workout/">Workout Targets</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/ice/">Using ICE info</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/watch/">Apple Watch</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/widget/">iPhone widget</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/notifications/">Loop Notifications</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/battery/">Pump Battery</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Looping Tips</a>
+    <a href="#">Looping Tips</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/loop/open-loop/">Open Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/loop/close-loop/">Closed Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/loop/looptips/">Loop Tips</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Algorithm</a>
+    <a href="#">Algorithm</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/algorithm/overview/">Overview</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/algorithm/bolus/">Bolus Recommendations</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/algorithm/prediction/">Glucose Prediction</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Troubleshoot</a>
+    <a href="#">Troubleshoot</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../troubleshooting/overview/">Overview</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/loop-crashing/">Loop crashes</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/green-loop/">Grey Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/pod-pairing/">Pod Pairing Failures</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/priming/">MDT Priming and Sites</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/time-change/">Time Changes</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/pump-errors/">MDT Pump Errors</a>
 </li>
-
-        
             
 <li >
     <a href="../../troubleshooting/omnipod-faults/">Omnipod Faults</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../new_user/">Brand New NS</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../update_user/">Retrofit Existing NS</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../troublehoot/">Setup Troubleshooting</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../mlab_cleanup/">NS Stopped Working</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../remote-overrides/">Remote Overrides</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../ifttt/">IFTTT</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../pebble/">Pebble</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../pushover/">Remote Notifications</a>
 </li>
-
-                    
-                        
+                                    
 <li class="active">
     <a href="./">Reports</a>
 </li>
+                                </ul>
+                            </li>
+                        </ul>
 
-                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../pushover/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
-                </li>
-            
-            
-            </ul>
-
-            <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                <li >
-                    <a rel="next" href="../pushover/">
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </li>
-                <li class="disabled">
-                    <a rel="prev" >
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </li>
-                
-            </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
         <div class="container">
-            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
         <li class="main active"><a href="#reports">Reports</a></li>
-        
-    
     </ul>
 </div></div>
-            <div class="col-md-9" role="main">
+                <div class="col-md-9" role="main">
 
 <h1 id="reports">Reports<a class="headerlink" href="#reports" title="Permanent link">⌁</a></h1>
 <p>Nightscout offers some fantastic data-crunching report tools in the settings area (the upper right corner, three horizontal lines).  You can play around with various date ranges, target ranges, and provide reports to your endocrinologist to review.</p>
@@ -643,40 +450,78 @@
 
         <footer class="col-md-12">
             <hr>
-            
-            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-
-        <script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
-                    <div class="modal-body">
-                        <p>
-                            From here you can search these documents. Enter
-                            your search terms below.
-                        </p>
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                            </div>
-                        </form>
-                        <div id="mkdocs-search-results"></div>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
             </div>
         </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
     </body>
 </html>
