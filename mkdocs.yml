@@ -78,6 +78,7 @@ pages:
         - 'Grey Loop': 'troubleshooting/green-loop.md'
         - 'Yellow/Red Loop': 'troubleshooting/yellow-red-loop.md'
         - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
+        - 'Pod Uncertain Boluses': 'troubleshooting/uncertain-bolus.md'
         - 'MDT Priming and Sites': 'troubleshooting/priming.md'
         - 'Time Changes': 'troubleshooting/time-change.md'
         - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
