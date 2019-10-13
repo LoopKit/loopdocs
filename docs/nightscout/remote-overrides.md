@@ -17,11 +17,8 @@ Here's the breaking information on this:
 
 ## Step 1: Updating Loop for remote-overrides
 
-This is not currently in dev branch, but rather is in a branch called "remote-overrides" while the bugs get worked out. Basically this remote-overrides branch is an exact copy of dev branch (as of October 1st) and just has remote override capabilities added to it.
+Remote overrides are in dev branch now (as of October 13th), so you'll have to update your Loop to use this upated dev branch if you want to get this feature working.  Be sure to review all the steps for updating your Loop app [here](https://loopkit.github.io/loopdocs/build/updating/).
 
-You can download remote-overrides branch [here](https://github.com/LoopKit/Loop/archive/remote-overrides.zip).  Be sure to review all the steps for updating your Loop app [here](https://loopkit.github.io/loopdocs/build/updating/).
-
-Note: If you are using and familiar with LoopWorkspace, you can use `git clone --branch=remote-overrides --recursive https://github.com/LoopKit/LoopWorkspace`. These directions will not explain how to use LoopWorkspace...that's out-of-scope for this page's purpose.
 
 ## Step 2: Apple Push Notifications
 The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it.</br></br>
@@ -64,7 +61,7 @@ The next part of this will help your Loop app give permissions to your Nightscou
 
 ## Step 3: Update Nightscout site
 
-This step may take some of you into uncomfortable territory just because it looks weird, but we need to use a special branch of Nightscout for now to test the remote overrides features. Eventually, this special branch should be merged into the regular Nightscout repository on GitHub, but for testing purposes it is separate for now. Just keep that in mind...this is a temporary situation.
+This step may take some of you into uncomfortable territory just because it looks weird, but we need to use a special branch of Nightscout for now to test the remote overrides features. Eventually, this special branch should be merged into the regular Nightscout repository on GitHub, but for testing purposes it is separate for now. Just keep that in mind...this is a temporary situation. And these instructions will change when that merge happens...likely in a few days or so.
 
 To get this new branch to your GitHub's cgm-remote-monitor, we need to do some special steps. At some point in this process, you may be asked for your GitHub login information if you have never cloned to your computer before. 
 
@@ -166,16 +163,25 @@ Canceling an override through Nightscout careportal is as simple as selecting th
 ### Shortcuts
 If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple shortcuts for you that integrate Loop overrides with Nightscout. 
 
+Important note: Before you click that download below...save some trouble. Download the Shortcuts app if you don't have it yet and choose to run any shortcut from the Gallery. It can be the laundry timer...I don't care, just pick one and run it.  THEN go to download the shortcut of your choice below. The shortcuts that aren't run through the Gallery option are called "untrusted". And you need a slider in your iPhone to trust the "untrusted" shortcuts you would be downloading here. But...in lovely iOS glitch...that slider doesn't appear unless you've run a trusted shortcut first. So, run one now. Then you'll have the slider in iPhone Settings, Shortcuts app to turn "Allow Untrusted Shortcuts" on when you will see a message "This shortcut cannot be opened because your Shortcuts security system settings don't allow untrusted shortcuts."
+
 Click these links on your iphone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser in iPhone):
 
-[Loop Remote Overrides shortcut](https://www.icloud.com/shortcuts/a700d7f1f39b43c6b2ae8f830df851da)
+[Loop Shortcut...includes Set Remote Override, Cancel Override, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.](https://www.icloud.com/shortcuts/9b3ec245bbe24dee846529a7c27d6ed1)
 
-[Cancel Override shortcut](https://www.icloud.com/shortcuts/27be8282bce3433b83b4751cd8c43f6e)
+And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:
 
-A couple notes about Shortcuts:
+[Set Remote Override only shortcut](https://www.icloud.com/shortcuts/0a90db779cd24bdb8c7c9d97485eb4d2)
+
+[Cancel Override only shortcut](https://www.icloud.com/shortcuts/27be8282bce3433b83b4751cd8c43f6e)
+
+**A couple notes about these shortcuts:**
 
 1. You will need iOS 13 on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than iOS 13, but your phone as the shortcut user would need iOS 13.
-2. If you haven't ever used a shortcut yet, you may see a message "This shortcut cannot be opened because your Shortcuts security system settings don't allow untrusted shortcuts." You will need to go to your iPhone Settings, Shortcuts, and then turn on the slider for "Allow Untrusted Shortcuts". If the slider is not there, go to the Shortcuts app, and download/enact a shortcut from tthe Gallery. This should allow the slider appear then. (iOS 13 glitch they still need to work out.)
+2. You need to open those links in the Safari browser on your iPhone. When you do that click the button to get the shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.
+3. When a remote override is set properly, you'll see an "ok" message displayed. If there is an error, you'll see an error message. Most errors will be that you have an API secret wrong (make sure there isn't a space at the end of you API Secret that you don't see) or you failed to do the steps to setup NS and update your Loop app as described in steps 1-3 above.
+4. You can absolutely customize these bits and pieces within the shortcut. Change the text messages, change the links...totally up to you.
+
 
 ### IFTTT
 
@@ -185,6 +191,5 @@ If you want to walk uphill both ways in the snow carrying bags of uneven groceri
 
 Just a brief mention so you are aware:
 
-1. **You will definitely encounter grey bars sticking around longer than you expect in Loop display. KNOWN ISSUE. Check override pill for status info, it updates with the next Loop run if you want to confirm a remote trigger.** Nightscout's display of overrides, similar to temp targets you may have used previously, involves displaying a grey bar across the bottom of the BG graph in Nightscout. This grey bar sometimes has some glitchy quirks, sticking around in the display even after the override may have been canceled early. Also, if lots of overrides are set "on top" of each other in near-time, visually they will look clustered and overlapping. These visuals are a Nightscout thing...if you want to give back...this would be a place to help offer code assistance. There are improvements to the displays of those grey bars that could be made. If you can't give back with code, then give back by reading these notices and not posting "hey, my grey bars are overlapping." You can delete old override entries in Nightscout using your mlab database's "treatments" collection. Go to mlab using your link in Heroku, find your override treatment that you want to delete (it is likely near the last of the recoords in the collection) and click on the trashcan to delete it. Failed IFTTT triggers will leave a pretty lasting glitch too...so make sure your recipes are correct in IFTTT. If they were incorrect, delete the errant attempt in mlab and fix your error before trying again. For example, an extra comma in an IFTTT recipe can cause grey bars to linger from the bad entry, just FYI.
-2. The override pill will display information about what override is currenly active in the Looper's phone. BUT, there can be a slight delay as that information is only transmitted every 5 minutes at best (it is tied to Loop runs and Nightscout upload events in Loop). So, wait 5 minutes to see that the information has gone through a refresh cycle before assuming the override message failed to enact.
-3. When you add a new override preset in Loop, that preset has to be uploaded to Nightscout before it will be available as a remote override. To trigger that upload, you can simply enact that new override for a few seconds and turn it off again. that will get the Nightscout upload going.
+1. The override pill will display information about what override is currently active in the Looper's phone. BUT, there can be a slight delay as that information is only transmitted every 5 minutes at best (it is tied to Loop runs and Nightscout upload events in Loop). So, wait 5 minutes to see that the information has gone through a refresh cycle before assuming the override message failed to enact.
+2. When you add a new override preset in Loop, that preset has to be uploaded to Nightscout before it will be available as a remote override. To trigger that upload, you can simply enact that new override for a few seconds and turn it off again. that will get the Nightscout upload going.
