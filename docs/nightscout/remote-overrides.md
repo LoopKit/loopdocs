@@ -171,7 +171,7 @@ Click these links on your iphone and you'll be prompted to download the premade 
 
 And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:
 
-[Set Remote Override only shortcut](https://www.icloud.com/shortcuts/c3832f1869994e4b99ae64e4e8dbe68c)
+[Set Remote Override only shortcut](https://www.icloud.com/shortcuts/d52d7aefb62b47c1b2e71d3724a3b5ab)
 
 [Cancel Override only shortcut](https://www.icloud.com/shortcuts/27be8282bce3433b83b4751cd8c43f6e)
 
