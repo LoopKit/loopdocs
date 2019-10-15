@@ -63,7 +63,10 @@ The next part of this will help your Loop app give permissions to your Nightscou
 
 This step may take some of you into uncomfortable territory just because it looks weird, but we need to use a special branch of Nightscout for now to test the remote overrides features. Eventually, this special branch should be merged into the regular Nightscout repository on GitHub, but for testing purposes it is separate for now. Just keep that in mind...this is a temporary situation. And these instructions will change when that merge happens...likely in a few days or so.
 
-To get this new branch to your GitHub's cgm-remote-monitor, we need to do some special steps. At some point in this process, you may be asked for your GitHub login information if you have never cloned to your computer before. 
+To get this new branch to your GitHub's cgm-remote-monitor, we need to do some special steps. 
+
+!!!danger "Terminal and passwords"
+    At some point in this process, you may be asked for your GitHub login information if you have never cloned to your computer before. Terminal app does not show your keystrokes when you type your password but it is logging them. So just keep typing even though you won't see the evidence of typing. Secondly, if you have two factor authentication turned on in Github, you will need to use your personal access token rather than your github password when you enter your "password" in Terminal. Yes, that's not obvious...agreed.
 
 1. Open Terminal app in your computer and enter this command, **replacing "your-account" with your actual account name**: `cd && git clone https://github.com/your-account/cgm-remote-monitor.git`  This command makes a copy of your GitHub repository onto your computer's root directory.  **Note:** This is your GitHub account name.  Be sure to include that, not your Heroku account name.
 
@@ -163,7 +166,8 @@ Canceling an override through Nightscout careportal is as simple as selecting th
 ### Shortcuts
 If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple shortcuts for you that integrate Loop overrides with Nightscout. 
 
-Important note: Before you click that download below...save some trouble. Download the Shortcuts app if you don't have it yet and choose to run any shortcut from the Gallery. It can be the laundry timer...I don't care, just pick one and run it.  THEN go to download the shortcut of your choice below. The shortcuts that aren't run through the Gallery option are called "untrusted". And you need a slider in your iPhone to trust the "untrusted" shortcuts you would be downloading here. But...in lovely iOS glitch...that slider doesn't appear unless you've run a trusted shortcut first. So, run one now. Then you'll have the slider in iPhone Settings, Shortcuts app to turn "Allow Untrusted Shortcuts" on when you will see a message "This shortcut cannot be opened because your Shortcuts security system settings don't allow untrusted shortcuts."
+!!!info "Important note"
+    Before you click that download below...save some trouble. Download the Shortcuts app if you don't have it yet and choose to run any shortcut from the Gallery. It can be the laundry timer...I don't care, just pick one and run it.  THEN go to download the shortcut of your choice below. The shortcuts that aren't run through the Gallery option are called "untrusted". And you need a slider in your iPhone to trust the "untrusted" shortcuts you would be downloading here. But...in lovely iOS glitch...that slider doesn't appear unless you've run a trusted shortcut first. So, run one now. Then you'll have the slider in iPhone Settings, Shortcuts app to turn "Allow Untrusted Shortcuts" on when you will see a message "This shortcut cannot be opened because your Shortcuts security system settings don't allow untrusted shortcuts."
 
 Click these links on your iphone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser in iPhone):
 
@@ -171,7 +175,7 @@ Click these links on your iphone and you'll be prompted to download the premade 
 
 And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:
 
-[Set Remote Override only shortcut](https://www.icloud.com/shortcuts/0a90db779cd24bdb8c7c9d97485eb4d2)
+[Set Remote Override only shortcut](https://www.icloud.com/shortcuts/d52d7aefb62b47c1b2e71d3724a3b5ab)
 
 [Cancel Override only shortcut](https://www.icloud.com/shortcuts/27be8282bce3433b83b4751cd8c43f6e)
 
