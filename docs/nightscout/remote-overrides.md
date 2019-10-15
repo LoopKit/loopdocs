@@ -142,7 +142,7 @@ Don't forget to read Loopdocs pages about how regular overrides work. For remote
 3. **"Can I override a Loop-set override with a Nightscout-set override?"** Answer: Yes. 
 3. **If I have multiple Nightscout sites because I have multiple kiddos with T1D looping, do I need multiple APNs Keys?** Answer: No. If you have multiple kids looping, you can use the one APNs key in each of their Nightscout sites. 
 4. **What if I see glitches?** Answer: report it in Zulipchat for now [here](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Remote.20overrides), but do be aware that Nightscout still needs some work. In particular, sometimes the grey bars showing where an override is active can "leave a residue", even after you cancel them, until you refresh the display.
-5. **How can I tell if it worked?** Answer: You should see your override pill in Nightscout, with the NEXT Loop cycle, reflecting that the desired override action took place. If you are near the Loop app, you should see the new override within less than 30 seconds or so.
+5. **How can I tell if it worked?** Answer: You should see your override pill in Nightscout, with the NEXT Loop cycle, reflecting that the desired override action took place. If you are near the Loop app, you should see the new override within less than 30 seconds or so. You can also setup IFTTT with Pushover to receive remote notifications when the override is set by Loop by following the directions [here](/nightscout/pushover/).
 
 ## Step 5: Using Remote Overrides
 
