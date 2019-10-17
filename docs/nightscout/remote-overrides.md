@@ -103,14 +103,14 @@ Scroll down the bottom of the Config Vars lines until you find the last blank on
 <tbody>
 <tr>
 <th>LOOP_APNS_KEY</th>
-<td>enter ENTIRE contents of the downloaded .ps file including the BEGIN and END lines. Here's where you can use the `command-a` and `command-c` to hightlight and copy all the text in that file so you can paste it into Heroku here for this new variable you are creating.
+<td>enter ENTIRE contents of the downloaded .p8 file including the BEGIN and END lines. Here's where you can use the `command-a` and `command-c` to hightlight and copy all the text in that file so you can paste it into Heroku here for this new variable you are creating.
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-copy-key2.png" width="550">
 </p> </br></br></td>
 </tr>
 <tr>
 <th>LOOP_APNS_KEY_ID</th>
-<td>string of characters on the .ps download file immediately following the underscore (  _  ), or you can get it from your saved key in your developer account as shown next step, too
+<td>string of characters on the .p8 download file immediately following the underscore (  _  ) and not including the file extension ( .p8 ), or you can get it from your saved key in your developer account as shown next step, too
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/nightscout/img/apns-open2.png" width="550">
 </p> </br></br>
