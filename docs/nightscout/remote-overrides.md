@@ -171,7 +171,8 @@ If you want to make your life SUPER AMAZING, check out using the iPhone's Shortc
 
 Click these links on your iphone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser in iPhone):
 
-[Loop Shortcut...includes Set Remote Override, Cancel Override, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.](https://www.icloud.com/shortcuts/9b3ec245bbe24dee846529a7c27d6ed1)
+[Comprehensive Loop Shortcut](https://www.icloud.com/shortcuts/b8c0998a61e54b6eba2325fa78b4cf3a)
+ *includes Set Remote Override, Cancel Override, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.*
 
 And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:
 
