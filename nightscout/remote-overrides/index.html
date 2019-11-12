@@ -8,466 +8,665 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Remote Overrides - LoopDocs</title>
+
+	<title>Remote Overrides - LoopDocs</title>
+
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <link href="../../css/admonitions.css" rel="stylesheet">
+
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
             ga('create', 'UA-109876065-1', 'loopkit.github.io');
             ga('send', 'pageview');
-        </script> 
+        </script>
+        
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">LoopDocs</a>
-                </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../..">Home</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">LoopDocs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../faqs/docs-faqs/">Using This Site FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/FAQs/">General Loop FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/omnipod-faqs/">Omnipod FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/branch-faqs/">Branch FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/update-faqs/">Update/Rebuild Loop FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/ios13/">iOS 13 FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/rileylink-faqs/">RileyLink FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/algorithm-faqs/">Algorithm FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/cgm-faqs/">CGM FAQs</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../faqs/safety-faqs/">Safety Tips</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../build/overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step1/">Step 1 Compatible Computer</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step2/">Step 2 Compatible iPhone/iPod touch</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step3/">Step 3 Compatible Pump</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step4/">Step 4 Compatible CGM</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step5/">Step 5 Order a RileyLink</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step6/">Step 6 Enroll in Apple Developer Program</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step7/">Step 7 Install Homebrew</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step8/">Step 8 Download Xcode</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step9/">Step 9 Xcode Preferences</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step10/">Step 10 Test Settings</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step11/">Step 11 Make plans for Loop Data</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step12/">Step 12 Meet Community</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step13/">Step 13 Download Loop code</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/step14/">Step 14 Build Loop app</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/build_errors/">Oh dear! Build errors?</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/code_customization/">Customize your Loop</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/updating/">Ready to Update your Loop?</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/loopworkspace/">LoopWorkspace</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../../operation/overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../build/health/">Step 1: Health Permissions</a>
 </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Step 2: Add Pump</a>
+    <a tabindex="-1" href="">Step 2: Add Pump</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/loop-settings/mdt-pump/">Add Medtronic</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/loop-settings/omnipod-pump/">Add Omnipod</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/cgm/">Step 3: Add CGM</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/configurations/">Step 4: Configurations</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/overrides/">Step 5: Override Presets</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/services/">Step 6: Loop Services</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/displays/">Loop Displays</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../../operation/loop-settings/rileylink/">RileyLink menu</a>
 </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">How to Use Loop App</a>
+    <a tabindex="-1" href="">How to Use Loop App</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/features/carbs/">Carb Entries</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/bolus/">Bolus</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/workout/">Workout Targets</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/ice/">Using ICE info</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/watch/">Apple Watch</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/widget/">iPhone widget</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/notifications/">Loop Notifications</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/features/battery/">Pump Battery</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Looping Tips</a>
+    <a tabindex="-1" href="">Looping Tips</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/loop/open-loop/">Open Loop</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/loop/close-loop/">Closed Loop</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/loop/looptips/">Loop Tips</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Algorithm</a>
+    <a tabindex="-1" href="">Algorithm</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../operation/algorithm/overview/">Overview</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/algorithm/bolus/">Bolus Recommendations</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/algorithm/prediction/">Glucose Prediction</a>
 </li>
+
+        
             
 <li >
     <a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
 </li>
+
+        
     </ul>
   </li>
-                                    
+
+                    
+                        
   <li class="dropdown-submenu">
-    <a href="#">Troubleshoot</a>
+    <a tabindex="-1" href="">Troubleshoot</a>
     <ul class="dropdown-menu">
+        
             
 <li >
     <a href="../../troubleshooting/overview/">Overview</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/loop-crashing/">Loop crashes</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/green-loop/">Grey Loop</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/yellow-red-loop/">Yellow/Red Loop</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/pod-pairing/">Pod Pairing Failures</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/uncertain-bolus/">Pod Uncertain Boluses</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/priming/">MDT Priming and Sites</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/time-change/">Time Changes</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/pump-errors/">MDT Pump Errors</a>
 </li>
+
+        
             
 <li >
     <a href="../../troubleshooting/omnipod-faults/">Omnipod Faults</a>
 </li>
+
+        
     </ul>
   </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
 <li >
     <a href="../overview/">Overview</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../new_user/">Brand New NS</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../update_user/">Retrofit Existing NS</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../troublehoot/">Setup Troubleshooting</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../mlab_cleanup/">NS Stopped Working</a>
 </li>
-                                    
+
+                    
+                        
 <li class="active">
     <a href="./">Remote Overrides</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../ifttt/">IFTTT</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../pebble/">Pebble</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../pushover/">Remote Notifications</a>
 </li>
-                                    
+
+                    
+                        
 <li >
     <a href="../reports/">Reports</a>
 </li>
-                                </ul>
-                            </li>
-                        </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li >
-                                <a rel="next" href="../mlab_cleanup/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../ifttt/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
+                    
                     </ul>
-                </div>
-            </div>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../mlab_cleanup/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../ifttt/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
         </div>
+    </div>
+</div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+    
         <li class="main active"><a href="#setup-remote-overrides">Setup Remote Overrides</a></li>
-            <li><a href="#step-1-updating-loop-for-remote-overrides">Step 1: Updating Loop for remote-overrides</a></li>
+        
+            <li><a href="#step-1-updating-loop-app">Step 1: Updating Loop app</a></li>
+        
             <li><a href="#step-2-apple-push-notifications">Step 2: Apple Push Notifications</a></li>
+        
             <li><a href="#step-3-update-nightscout-site">Step 3: Update Nightscout site</a></li>
+        
             <li><a href="#step-4-faqs-on-remote-overrides">Step 4: FAQs on Remote Overrides</a></li>
+        
             <li><a href="#step-5-using-remote-overrides">Step 5: Using Remote Overrides</a></li>
+        
             <li><a href="#step-6-known-issues">Step 6: Known Issues</a></li>
+        
+    
     </ul>
 </div></div>
-                <div class="col-md-9" role="main">
+            <div class="col-md-9" role="main">
 
 <h1 id="setup-remote-overrides">Setup Remote Overrides<a class="headerlink" href="#setup-remote-overrides" title="Permanent link">⌁</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">PLEASE READ</p>
-<p>Remote overrides in Loop is in its initial testing. <strong>This is by no means bug-free.</strong> If you choose to do this, there are some special setup steps for deploying a special branch of Nightscout and using a testing branch of Loop called "remote-overrides". If you do not feel you are capable of doing these special steps right now, please wait until some more testing is done by others. This page is created only to help answer questions in bulk...NOT AS AN ANNOUNCEMENT THAT REMOTE OVERRIDES IS PRIME-TIME READY. REPEAT: This is still an initial testing branch...if things work out though, the only part of these directions that will change is Step 3: Update Nightscout Site will be slightly different procedure, but will still need to be done. You'd still need to update your Loop, you'd still need to create a key for Apple Push Notification services.</p>
-</div>
 <p>You can now use your Nightscout site to remotely set and cancel your override presets in your Loop app.</p>
 <p>What?! Yes, really...you can set/cancel an override remotely for your child's Loop.</p>
-<p>Here's the breaking information on this:</p>
+<div class="admonition info">
+<p class="admonition-title">What you will need to do..</p>
 <ol>
 <li>
-<p>You will need to update your Loop app. </p>
+<p>Update your Loop app and use "dev" branch for the update</p>
 </li>
 <li>
-<p>You will need to create a Key for an Apple Push Notifications service (APNs)</p>
+<p>Create a Key for an Apple Push Notifications service (APNs)</p>
 </li>
 <li>
-<p>You will then need to update your Nightscout site and add some "config vars" lines in your Heroku settings.</p>
+<p>Update your Nightscout site and add some "config vars" lines in your Heroku settings.</p>
 </li>
 </ol>
-<h2 id="step-1-updating-loop-for-remote-overrides">Step 1: Updating Loop for remote-overrides<a class="headerlink" href="#step-1-updating-loop-for-remote-overrides" title="Permanent link">⌁</a></h2>
-<p>Remote overrides are in dev branch now (as of October 13th), so you'll have to update your Loop to use this upated dev branch if you want to get this feature working.  Be sure to review all the steps for updating your Loop app <a href="https://loopkit.github.io/loopdocs/build/updating/">here</a>.</p>
+</div>
+<h2 id="step-1-updating-loop-app">Step 1: Updating Loop app<a class="headerlink" href="#step-1-updating-loop-app" title="Permanent link">⌁</a></h2>
+<p>Remote overrides are in dev branch now, so you'll have to update your Loop to use this upated dev branch if you want to get this feature working.  Be sure to review all the steps for updating your Loop app <a href="https://loopkit.github.io/loopdocs/build/updating/">here</a>.</p>
 <h2 id="step-2-apple-push-notifications">Step 2: Apple Push Notifications<a class="headerlink" href="#step-2-apple-push-notifications" title="Permanent link">⌁</a></h2>
 <p>The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it.</br></br>
 1. Login to your <a href="https://developer.apple.com/account/">Apple developer account</a> with the Apple ID associated with your developer team that you used to sign your Loop app.</br></br>
@@ -513,38 +712,20 @@
 
 <p></br></br></p>
 <h2 id="step-3-update-nightscout-site">Step 3: Update Nightscout site<a class="headerlink" href="#step-3-update-nightscout-site" title="Permanent link">⌁</a></h2>
-<p>This step may take some of you into uncomfortable territory just because it looks weird, but we need to use a special branch of Nightscout for now to test the remote overrides features. Eventually, this special branch should be merged into the regular Nightscout repository on GitHub, but for testing purposes it is separate for now. Just keep that in mind...this is a temporary situation. And these instructions will change when that merge happens...likely in a few days or so.</p>
-<p>To get this new branch to your GitHub's cgm-remote-monitor, we need to do some special steps. </p>
+<p>You'll need to update your Nightscout site to use the latest dev branch of cgm-remote-monitor. The easiest way to do this is to follow this video here.</p>
 <div class="admonition danger">
-<p class="admonition-title">Terminal and passwords</p>
-<p>At some point in this process, you may be asked for your GitHub login information if you have never cloned to your computer before. Terminal app does not show your keystrokes when you type your password but it is logging them. So just keep typing even though you won't see the evidence of typing. Secondly, if you have two factor authentication turned on in Github, you will need to use your personal access token rather than your github password when you enter your "password" in Terminal. Yes, that's not obvious...agreed.</p>
-</div>
-<ol>
-<li>
-<p>Open Terminal app in your computer and enter this command, <strong>replacing "your-account" with your actual account name</strong>: <code>cd &amp;&amp; git clone https://github.com/your-account/cgm-remote-monitor.git</code>  This command makes a copy of your GitHub repository onto your computer's root directory.  <strong>Note:</strong> This is your GitHub account name.  Be sure to include that, not your Heroku account name.</p>
-</li>
-<li>
-<p>Next command is <code>cd cgm-remote-monitor</code>  This command changes into the directory we just cloned ont your computer.</p>
-</li>
-<li>
-<p>Next command is <code>git fetch https://github.com/ps2/cgm-remote-monitor remote-loop-overrides:remote-loop-overrides</code>  This command grabs a copy of Pete's test branch of Nightscout, called remote-loop-overrides, that we will need to use.</p>
-</li>
-<li>
-<p>Next command is <code>git checkout remote-loop-overrides</code>  This command switches the local clone to the new branch.</p>
-</li>
-<li>
-<p>Next command is <code>git push --set-upstream origin remote-loop-overrides</code>  This command will push your new branch up to your online GitHub account so we can use it in Heroku.</p>
-</li>
-<li>
-<p><a href="https://id.heroku.com/login">Login to your Heroku account</a>,  Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-loop-overrides" in the drop down menu of the branches and then press the black deploy button. (If you don't have a black deploy button...then click on the Github icon to connect to your Github account and cgm-remote-monitor repo.)</p>
-</li>
-</ol>
+<p>Use this video for an easy process to update your Nightscout site:
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/deploy-remotes.png" width="750">
-</p>
-
-<p></br></br>
-7. Final step is to add the variables needed in Heroku settings. Select the <code>Settings</code> tab near the top of the screen on your Heroku app and then click on <code>Reveal Config Vars</code>.  </p>
+<a href="https://youtu.be/C0edTQhO21g"><strong>Easy Nightscout Update Video</strong></a></p>
+<p>Two notes about the video instructions:
+</p> 
+1. At the end of this video, it shows me selecting and deploying the master branch in Heroku. You instead will select the dev branch. This video was made for general purposes, so it isn't specific to the updating for dev branch. Easy peasy to just select the dev branch towards the end of the video in the "deployment" part.</p>
+<ol>
+<li>If you don't see any branches to select to deploy and are missing the deploy button when you get to that step...you need to do one easy step. Select/click the "GitHub" icon from the middle of your Heroku screen. Then enter your GitHub account name to connect to that account. Once connected to your account, enter <code>cgm-remote-monitor</code> as the repo you'd like to use to connect with specifically. That will fix the issue and you'll then see the deploy buttons like in the video.</li>
+</ol>
+</div>
+<p>Once you have your deployment updated to the latest dev branch, now we need to add a couple new variables.</p>
+<p>Go to the <code>Settings</code> tab near the top of the screen on your Heroku app and then click on <code>Reveal Config Vars</code>.  </p>
 <p align="center">
 <img src="../img/heroku5.png" width="650">
 </p>
@@ -651,78 +832,40 @@ Scroll down the bottom of the Config Vars lines until you find the last blank on
 
         <footer class="col-md-12">
             <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
                     </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
     </body>
 </html>
