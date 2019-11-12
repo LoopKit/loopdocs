@@ -1,23 +1,20 @@
 # Setup Remote Overrides
 
-!!!warning "PLEASE READ"
-    Remote overrides in Loop is in its initial testing. **This is by no means bug-free.** If you choose to do this, there are some special setup steps for deploying a special branch of Nightscout and using a testing branch of Loop called "remote-overrides". If you do not feel you are capable of doing these special steps right now, please wait until some more testing is done by others. This page is created only to help answer questions in bulk...NOT AS AN ANNOUNCEMENT THAT REMOTE OVERRIDES IS PRIME-TIME READY. REPEAT: This is still an initial testing branch...if things work out though, the only part of these directions that will change is Step 3: Update Nightscout Site will be slightly different procedure, but will still need to be done. You'd still need to update your Loop, you'd still need to create a key for Apple Push Notification services.
-
 You can now use your Nightscout site to remotely set and cancel your override presets in your Loop app.
 
 What?! Yes, really...you can set/cancel an override remotely for your child's Loop.
 
-Here's the breaking information on this:
+!!!info "What you will need to do.."
 
-1. You will need to update your Loop app. 
+    1. Update your Loop app and use "dev" branch for the update
 
-2. You will need to create a Key for an Apple Push Notifications service (APNs)
+    2. Create a Key for an Apple Push Notifications service (APNs)
 
-3. You will then need to update your Nightscout site and add some "config vars" lines in your Heroku settings.
+    3. Update your Nightscout site and add some "config vars" lines in your Heroku settings.
 
-## Step 1: Updating Loop for remote-overrides
+## Step 1: Updating Loop app
 
-Remote overrides are in dev branch now (as of October 13th), so you'll have to update your Loop to use this upated dev branch if you want to get this feature working.  Be sure to review all the steps for updating your Loop app [here](https://loopkit.github.io/loopdocs/build/updating/).
+Remote overrides are in dev branch now, so you'll have to update your Loop to use this upated dev branch if you want to get this feature working.  Be sure to review all the steps for updating your Loop app [here](https://loopkit.github.io/loopdocs/build/updating/).
 
 
 ## Step 2: Apple Push Notifications
@@ -61,29 +58,22 @@ The next part of this will help your Loop app give permissions to your Nightscou
 
 ## Step 3: Update Nightscout site
 
-This step may take some of you into uncomfortable territory just because it looks weird, but we need to use a special branch of Nightscout for now to test the remote overrides features. Eventually, this special branch should be merged into the regular Nightscout repository on GitHub, but for testing purposes it is separate for now. Just keep that in mind...this is a temporary situation. And these instructions will change when that merge happens...likely in a few days or so.
+You'll need to update your Nightscout site to use the latest dev branch of cgm-remote-monitor. The easiest way to do this is to follow this video here.
 
-To get this new branch to your GitHub's cgm-remote-monitor, we need to do some special steps. 
+!!!danger ""
+    Use this video for an easy process to update your Nightscout site:
+    <p align="center">
+    [**Easy Nightscout Update Video**](https://youtu.be/C0edTQhO21g)
 
-!!!danger "Terminal and passwords"
-    At some point in this process, you may be asked for your GitHub login information if you have never cloned to your computer before. Terminal app does not show your keystrokes when you type your password but it is logging them. So just keep typing even though you won't see the evidence of typing. Secondly, if you have two factor authentication turned on in Github, you will need to use your personal access token rather than your github password when you enter your "password" in Terminal. Yes, that's not obvious...agreed.
+    Two notes about the video instructions:
+    </p> 
+    1. At the end of this video, it shows me selecting and deploying the master branch in Heroku. You instead will select the dev branch. This video was made for general purposes, so it isn't specific to the updating for dev branch. Easy peasy to just select the dev branch towards the end of the video in the "deployment" part.
 
-1. Open Terminal app in your computer and enter this command, **replacing "your-account" with your actual account name**: `cd && git clone https://github.com/your-account/cgm-remote-monitor.git`  This command makes a copy of your GitHub repository onto your computer's root directory.  **Note:** This is your GitHub account name.  Be sure to include that, not your Heroku account name.
+    2. If you don't see any branches to select to deploy and are missing the deploy button when you get to that step...you need to do one easy step. Select/click the "GitHub" icon from the middle of your Heroku screen. Then enter your GitHub account name to connect to that account. Once connected to your account, enter `cgm-remote-monitor` as the repo you'd like to use to connect with specifically. That will fix the issue and you'll then see the deploy buttons like in the video.
 
-2. Next command is `cd cgm-remote-monitor`  This command changes into the directory we just cloned ont your computer.
+Once you have your deployment updated to the latest dev branch, now we need to add a couple new variables.
 
-3. Next command is `git fetch https://github.com/ps2/cgm-remote-monitor remote-loop-overrides:remote-loop-overrides`  This command grabs a copy of Pete's test branch of Nightscout, called remote-loop-overrides, that we will need to use.
-
-4. Next command is `git checkout remote-loop-overrides`  This command switches the local clone to the new branch.
-
-5. Next command is `git push --set-upstream origin remote-loop-overrides`  This command will push your new branch up to your online GitHub account so we can use it in Heroku.
-
-6. [Login to your Heroku account](https://id.heroku.com/login),  Find your "Deploy" tab and click it. Now scroll to the very bottom of the page and find the Manual Deploy section. Choose "remote-loop-overrides" in the drop down menu of the branches and then press the black deploy button. (If you don't have a black deploy button...then click on the Github icon to connect to your Github account and cgm-remote-monitor repo.)
-
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/nightscout/img/deploy-remotes.png" width="750">
-</p> </br></br>
-7. Final step is to add the variables needed in Heroku settings. Select the `Settings` tab near the top of the screen on your Heroku app and then click on `Reveal Config Vars`.  
+Go to the `Settings` tab near the top of the screen on your Heroku app and then click on `Reveal Config Vars`.  
 
 <p align="center">
 <img src="../img/heroku5.png" width="650">
