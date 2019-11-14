@@ -111,9 +111,9 @@ Remember to use the [LoopKit Github Issues page](https://github.com/LoopKit/Loop
 
 ## Carb Model changes in Dev
 
-Dev branch has recently been updated with a new carb model. Let's give some info about the carb model update.
+Dev branch has recently been updated with a new carb model, slo et's give some info about the update.
 
-Previously, the carb model Loop used (and still uses in Master branch now) had a linear absorption predicted with dynamic carbs adjustments. What this means is that food absorption was modeled as a flat, even effect (like the straight grey graph that you'll see in the [Insulin Counteraction Effects chart](https://loopkit.github.io/loopdocs/operation/features/ice/) after you added a carb entry. But looking at large groups of meals' datasets (and supported by personal, anecdotal experiences), food really has a bit more of a non-linear absorption. Meaning, we usually see more of a food impact up-front than the old carb model in Loop predicted.
+Previously, the carb model Loop used had a linear absorption predicted with dynamic carbs adjustments (Master and omnipod-testing branch still use that model). What this means is that food absorption was modeled as a flat, even effect (like the straight grey graph that you'll see in the [Insulin Counteraction Effects chart](https://loopkit.github.io/loopdocs/operation/features/ice/) after you added a carb entry. But looking at large groups of meals' datasets (and supported by personal, anecdotal experiences), food really has a bit more of a non-linear absorption. Meaning, we usually see more of a food impact up-front than the old carb model in Loop predicted.
 
 What did that mismatch mean for us if the model predicts a linear absorption, but the meal actually behaves differently? 
 
