@@ -88,45 +88,42 @@ Another useful thing if you'll be on dev branches undergoing a lot of active cha
 
 ## What are the differences in branches now?
 
-Roughly speaking...right now (September 23nd):
+Roughly speaking...right now (November 14th):
 
-* Master: No Omnipod support, only Medtronic users. Stable. No updates planned in near future. The next update will depend on how long dev takes to settle down and get some good testing showing stability.
+* Master: No Omnipod support, only Medtronic users. Stable. The next update will depend on how long dev takes to settle down and get some good testing showing stability.
 
-* Omnipod-testing branch: [known bug for IOB tracking](https://github.com/LoopKit/Loop/issues/1034) that has been discussed a lot in Looped group (go ahead and search group if you want to read up on it) for Pod users. The fix for this bug has been implemented in dev branch...the fix is NOT in omnipod-testing branch for reasons discussed above. Jenga. 
+* Omnipod-testing branch: [known bug for IOB tracking](https://github.com/LoopKit/Loop/issues/1034) that has been discussed a lot in Looped group (go ahead and search group if you want to read up on it) for Pod users. The fix for this bug has been implemented in dev branch...the fix is NOT in omnipod-testing branch for reasons discussed above.
 
-* Dev: Dev branch has a fix for the IOB tracking for Pod users. Dev branch also has new features that have not previously been a part of mainline Loop branches...overrides and Nightscout profile automatic updating. These two features are new and improved versions of the ones previously a part of JoJo branches (if you've tried those).
+* Dev: Dev branch has the following noticeable differences from omnipod-testing and master braches
+    * fix for the IOB tracking for Pod users
+    * [Overrides](https://loopkit.github.io/loopdocs/operation/loop-settings/overrides/)
+    * [Remote Overrides](https://loopkit.github.io/loopdocs/nightscout/remote-overrides/)
+    * Nightscout profile automatic updating when you update basals, carb ratios, or ISF in Loop
+    * Updated carb absorption model (called non-linear)
+</br>
 
-    Dev branches also has some known bugs still being addressed. For example, when the Loop cancels a temp basal to revert back to scheduled basals...the timestamp below the HUD's temp basal indicator goes back to the time when Loop was first opened. When the next temp basal is set, the timestamp operates properly again. Little stuff like that comes up a lot in dev...and you'll need to do your homework to read up on known issues please. Don't assume that dev branch is supposed to be glitch free...instead look at issues list, scroll through recent posts in Zulipchat and see if others have already noted/discussed the same.
+Known issues in Dev branch currently:
 
-## Should I update to dev branch?
+* [Settings can sometimes temporarily "disappear"](https://github.com/LoopKit/Loop/issues/1170)
+* [Medtronic users timestamp for scheduled basals in HUD may be wrong](https://github.com/LoopKit/Loop/issues/1110)
+    
+Remember to use the [LoopKit Github Issues page](https://github.com/LoopKit/Loop/issues) to check for any reported issues that might resemble things you are wondering about. If you'd like to report a bug, check the list and see if someone has already opened an issue for it.
 
-You mean after all that you can't answer that question yourself? Really?
+## Carb Model changes in Dev
 
-Ask yourself some questions. Are you the type that will have access to a computer? Be willing to update more frequently if needed? Be willing to do some leg work to stay current with possible reported issues? Be willing to watch a little closer after each time you update your Loop app to make sure no code regressions or new bugs came in with the update? If you can't commit to those things, then you should stay on master or omnipod-testing for awhile longer until dev settles down a bit.
+Dev branch has recently been updated with a new carb model. Let's give some info about the carb model update.
 
-## Is dev branch always changing frequently?
+Previously, the carb model Loop used (and still uses in Master branch now) had a linear absorption predicted. What this means is that food absorption was modeled like a triangle, with food absorption ramping up evenly, and then peaking before decreasing in a mirror-image to the increase. But looking at large groups of meals' datasets (and supported by personal, anecdotal experiences), food really has a bit more of a non-linear absorption. Meaning, we usually see more of a food impact up-front than the old carb model in Loop predicted.
 
-Sometimes yes, sometimes no. Right now we just happen to be in a time of a lot of changes. Pod updates, insulin tracking code changes (which get into the very core of Loop code), Nightscout integration updates, iOS updates...there's just a lot going on right now.
+What did that mismatch mean for us if the model predicts a linear absorption, but the meal actually behaves differently? 
 
-## Will JoJo branch be updated? Does it have "a fix"?
+1. Bolusing: You've probably seen smaller upfront boluses for meals than you would have preferred. This is because the insulin was predicted to over-power the linear (slower) carb model soon after a bolus is given.
+2. Early low temp basals: You've also probably seen a tendency to have early zero basal or low basals set by Loop for the first 30-60 minutes after a meal bolus if you don't have a significant blood glucose spike immediately after the carb entry. This might have been even more obvious for those of you who are regularly waiting to eat after a bolus, too.
 
-JoJo branches are my (me, Katie) personal-use branches that incorporated changes I found useful for our Looping. Those are changes that were pieced together from various sources in the open source community. Other people who coded up particular changes that benefited themselves and I found were useful, too. What JoJo was not designed to be is a branch that bifurcated users and complicated which branch people selected. The unintended consequence of sharing my personal branches over time is that confusion about branches has grown...and I don't enjoy that. I am working with Pete to get the features in my personal branches merged/improved into mainline Loop.
+With a non-linear absorption model (that is now in dev), the carb absorption will more closely match observed blood glucose impacts we've seen after meals. And when the model is more closely matching actual experience, that means the predicted blood glucose curves will do a better job at providing more upfront bolus and not having the tendency to have overly conservative temp basals soon after a meal.
 
-Dev branch already has automatic Nightscout profile updating now...and that is a huge feature that I really grew to depend on. It is nice to verify (without asking) that my daughter (or a caregiver) successfully edited a basal rate or setting the way I'd suggested when adjustments were needed during a school day. 
+What do you have to do to use the new model? Nothing. It is baked into the dev branch now. Simply update your Loop app using dev branch code and you will be using the new model.
 
-Dev branch also has overrides included now, in a way that improves upon the original version used in JoJo. Michael Pangburn is the author of that AMAZING set of features and I'll be forever in debt to him for the work he's put into overrides. Those have been a super tool to add to Loop and I'm so happy to see them in dev branch. 
-
-Dev branch is also hopefully getting remote overrides...not sure when, but my fingers are crossed. 
-
-The Integral Retrospective Correction is not in dev branch and may/may not be in the future (I don't know). We only used IRC for a short period of time and I think that it may be undergoing some code revision...so it may be "dormant" for a bit in the near future. Take a deep breath...you will be fine if IRC is dormant.
-
-There are other minor things in Jojo that I expect could get fixed in dev (meter BG uploading to NS for Medtronic Loopers). Insulin delay will probably not be going into dev and instead there's some talk in the development channels about carb modelling improvements which would better address the reason insulin delay was helpful (to the extent it helped improve bolus amounts up-front). Finally, the bolusing below suspend threshold is a one-line code customization that I expect people could do on their own if it is added to LoopDocs. 
-
-So...in short...NO. JoJo will not be updated with any new code. Instead, JoJo will go into retirement and dev branch (and eventually master branch) will have all you'd need...the IOB tracking fix, overrides, NS profile updating, etc.
-
-We have been running dev branch live on Anna (my daughter) for several weeks now on both Pods and Medtronic (she's been going between the two), with regular updates to get new code and test/watch. 
-
-The girl who maintains JoJo branches isn't even using JoJo branches. I think that says something, don't you?  
 
 
 
