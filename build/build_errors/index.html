@@ -639,7 +639,7 @@
         
             <li><a href="#no-such-module-loopkit-or-similar-message">No such module 'LoopKit' or similar message</a></li>
         
-            <li><a href="#carthage-version-outdated">Carthage version outdated</a></li>
+            <li><a href="#could-not-get-a-container-directory-url">Could not get a container directory URL</a></li>
         
             <li><a href="#missing-command-line-tools">Missing Command Line Tools</a></li>
         
@@ -675,11 +675,7 @@
 <p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.</p>
 </li>
 <li>
-<p><strong>Did you check for updates?</strong> </p>
-<div class="admonition info">
-<p class="admonition-title">Minimum Versions</p>
-<p>If you are building for Omnipod Loop, Loop dev, or have iOS 13 installed, make sure you have macOS 10.14.3 (Mojave) and Xcode 11 at a minimum. You will not be able to build for those without the minimum updates. Download Xcode 11 from the App Store to replace your Xcode 11 GM if you downloaded that previously.</p>
-</div>
+<p><strong>Did you check for updates?</strong> Cannot emphasize this one enough...you should check for Xcode updates (and install them) before building.</p>
 </li>
 <li>
 <p><strong>Did you reboot your computer after updating Xcode?</strong> Yup...that was in the message on the Update Loop page...did you ignore it? ;)</p>
@@ -707,10 +703,14 @@
 <li><strong><u>State which fixes from the below list that you have already tried AND post the screenshots of the results of those fix attempts.</u></strong></li>
 </ul>
 </div>
-<p>Helpful tip #1: Shift-Command-4 will give you a little screenshot tool that you can click-and-drag to highlight the area you'd like to screenshot. When you release the drag, the screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information.</p>
-<p>Helpful tip #2: When taking screenshots for a post, include the whole Xcode window. Don't zoom in on any one area. There is information in all parts of the Xcode window that are helpful to the troubleshooters, so it saves time to see the whole Xcode window at once.</p>
+<p>Helpful tip: Shift-Command-4-spacebar will give you a screenshot tool that you can use to click on the Xcode window to grab a screenshot. The screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information and often cuts off valuable information that we look for in the various parts of the Xcode window. Use the whole Xcode window's screenshot when posting for help.</p>
 <h2 id="find-your-error-messages">Find your error message(s)<a class="headerlink" href="#find-your-error-messages" title="Permanent link">⌁</a></h2>
-<p>To begin fixing the error (assuming you didn't have one of the obvious issues listed above), the key is to (1) <strong><em>READ THE ERROR MESSAGE</em></strong> and then (2) <strong><em>FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW</em></strong>.</p>
+<p>To begin fixing the error, use the Report Navigator view to find your error message. </p>
+<p></p>
+<p align="center">
+<img src="../img/report-nav.png" width="750">
+</p></p>
+<p>The key is to (1) <strong><em>READ THE ERROR MESSAGE</em></strong> and then (2) <strong><em>FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW</em></strong>.</p>
 <p>Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail. Look at the detailed message to really help guide your search for the matching solution.</p>
 <p>Notice how in the screenshots in the topics below, there are red circles highlighting certain error messages? Read your error messages similar to where those red circles are in the screenshots below. Once you find your error message (hint: not "exit code"), you can either:</p>
 <ul>
@@ -727,7 +727,7 @@
 <img src="../img/search-errors.png" width="650">
 </p></p>
 <h2 id="no-such-module-loopkit-or-similar-message">No such module 'LoopKit' or similar message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Permanent link">⌁</a></h2>
-<p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open the Terminal app.  You will use the command <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code>.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name. </p>
+<p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open the Terminal app (remember it is located in your Applications folder under the Utilities group of applications).  You will use the command <code>cd ~/downloads/loop-dev &amp;&amp; carthage update</code>.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-dev and instead is loop-dev-2 or loop-master or some other folder name...change the command to match your folder's actual name. </p>
 <p></p>
 <p align="center">
 <img src="../img/exit-code-65.png" width="850">
@@ -741,12 +741,22 @@
 <p>If your carthage update fails, try opening the Terminal app and running these commands to clear out your carthage cache and saved derived data in Xcode:</p>
 <p><code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> and <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code></p>
 <p>After running those commands, retry the <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code> (remembering to update the name of your Loop download folder, as needed).</p>
-<h2 id="carthage-version-outdated">Carthage version outdated<a class="headerlink" href="#carthage-version-outdated" title="Permanent link">⌁</a></h2>
-<p>If you see a message about updating carthage version, open Terminal app and enter the following command <code>brew update &amp;&amp; brew upgrade carthage</code></p>
+<h2 id="could-not-get-a-container-directory-url">Could not get a container directory URL<a class="headerlink" href="#could-not-get-a-container-directory-url" title="Permanent link">⌁</a></h2>
+<p>Error message: "<strong><u>Could not get a container directory URL. Please ensure App Groups are set up correctly in entitlements.</u></strong>"</p>
 <p></p>
 <p align="center">
-<img src="../img/carthage-update.jpg" width="850">
+<img src="../img/container-1.png" width="750">
 </p></p>
+<p></p>
+<p align="center">
+<img src="../img/container-2.png" width="750">
+</p></p>
+<p></p>
+<p align="center">
+<img src="../img/container-3.png" width="750">
+</p></p>
+<p>To resolve this error, you will need to click on the Loop target's signing area and then the plus-sign in the App Groups area under the signing. Copy and paste the bundle indentifier into the new container that starts with <code>group.</code> and then add <code>Group</code> to the end of the name. Click OK to save.</p>
+<p>The final App Group should now have a blue check box, the name should start with <code>group</code> and end with <code>LoopGroup</code>. See the screenshot as an example. Click the build button after your App Group is setup similarly and you should be good.</p>
 <h2 id="missing-command-line-tools">Missing Command Line Tools<a class="headerlink" href="#missing-command-line-tools" title="Permanent link">⌁</a></h2>
 <p>Error message:  "<strong><u>Invalid active developer path (/Library/Developer/CommandLineTools)</u></strong>" or "<strong><u>unable to find utility "xcodebuild", not a developer tool or in PATH</u></strong>"</p>
 <p></p>
@@ -757,7 +767,7 @@
 <p align="center">
 <img src="../img/command-line-error-2.jpg" width="550">
 </p></p>
-<p>Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 11" in the dropdown menu for Command Line Tools.</p>
+<p>Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 11.2.1" in the dropdown menu for Command Line Tools.</p>
 <p></p>
 <p align="center">
 <img src="../img/command-line-error-3.png" width="550">
