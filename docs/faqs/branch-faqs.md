@@ -124,7 +124,7 @@ With a non-linear absorption model (that is now in dev), the carb absorption wil
 
 **What do you have to do to use the new model?** Nothing. It is baked into the dev branch now. Simply update your Loop app using dev branch code and you will be using the new model.
 
-**How do you know if you got the update done properly?** You can check the top of your Issue Report in Loop settings and it should say the `buildDateString` in the top area. If your date there matches the date you updated...that's a good start. Also, you can check the ICE chart after a meal entry. It should no longer be a simple grey rectangle for the predicted impacts, but rather have a little shape to it now.
+**How do you know if you got the update done properly?** You can check the top of your Issue Report in Loop settings and it should say the `buildDateString` in the top area. If your date there matches the date you updated...that's a good start. 
 
 **What should you expect?** Like the description above, you'll likely see more complete bolus recommendations and less low temping after a bolus. With that in mind, if you've made adjustments to your Loop habits or settings to overcome those issues previously, you may want to undo those habits. Like if you shortened carb absorption times to help get larger boluses upfront, you may want to go back to standard times. Keep an eye on things and you should adjust as needed.
 
