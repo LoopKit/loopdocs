@@ -159,7 +159,7 @@ Let’s finish the installation of the Loop app onto your iPhone. Double-check t
 <img src="../img/build_button.png" width="750">
 </p>
 
-You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take about 40-60 minutes depending on the speed of the computer and the internet.  **Just be patient.**  The progress will get "stuck" on one step/task for a very long time, and then the others will fly by when that one slow step is done. Not every step is equal in duration. Do not give up on the build. <u>**Xcode will ALWAYS tell you eventually that the build either succeeded or failed...it will not just leave you hanging without an answer.**</u>  
+You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take about 40-60 minutes depending on the speed of the computer and the internet.  **Just be patient.**  The progress will get "stuck" on one step/task for a very long time, and then the others will fly by when that one slow step is done. Not every step is equal in duration. Do not give up on the build. <u>**Xcode will ALWAYS tell you eventually that the build either succeeded or failed via a short pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Build Failed" (failure) message where the step progress was previously counting down.**</u>  
 
 !!!danger "Are you the impatient type?"
     If you just simply can't bear the uncertainty of not seeing that things are progressing, you can take a peek "under the hood" and watch the individual build steps by clicking on the report navigator icon and then the build row at the top of the list. You can watch the slow list of scheme building while you wait.
@@ -185,7 +185,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
     </p>
 
 !!!danger "BUILD SUCCEEDED"
-    Congrats! If the build is successful, your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. `Allow` Loop to send you notifications. In the next screen that follows that, click on the `Turn All Categories On` line and then click `Allow` in the upper right corner. 
+Congrats! If the build is successful, you'll see the message or "Running Loop..." across the top of the Xcode window. Your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. `Allow` Loop to send you notifications. In the next screen that follows that, click on the `Turn All Categories On` line and then click `Allow` in the upper right corner. 
     
     <p align="center">
     <img src="../img/health-start.JPEG" width="450">

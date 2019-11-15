@@ -15,11 +15,12 @@
 !!!warning "FAQs"
     * **"What is an update?"** Anytime you want to change branches (i.e., go from omnipod-testing to dev branch), change customizations, or grab updates to the same branch you built with before...that is an "update" of your Loop app.
     * **"Do I delete my old Loop app first?"** Definitely not! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
+    * **"Do I need to start a new pod when I update?"** No. Your existing pod session will continue seamlessly if you are using the same Developer Account to sign the Loop app targets as you did the last time you built.
     * **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account as your existing app was built with (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
     * **"What if it is a new computer but the same developer account?"** No big deal...you just want to make sure the computer has Homebrew installed already and you've added your developer account to Xcode preferences.
-    * **"Where can I find the list of features in a new release?"** When a new version of Loop is released, you can click [HERE](https://github.com/LoopKit/Loop/releases) to read what features or fixes were a part of the new release.
 
-## When to Update
+
+## When to Update Loop
 
 You will have to rebuild your Loop app at a minimum once every 12 months. The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process.
 
@@ -27,29 +28,12 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 
 ## Step 1: Update macOS and Xcode
 
-!!!danger "Minimum Requirements"
-    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. <u>If you miss macOS or Xcode updates, you may run into build problems. Do not skip these steps before updating Loop.</u>  You will need the following minimum versions:</br></br>
-    
-    * macOS 10.14.3 (Mojave)</br></br>
-    * iOS 12.2</br></br>
-    * Xcode 11</br></br>
-    
-    But why be a minimalist? Go ahead and install any available updates in all areas; macOS, Xcode, iOS, and watchOS.
-    
-    (You can only use macOS 10.13.6 High Sierra if you are building with Loop master branch <u>and</u> have at least iOS 12 or 12.1. The next version of Loop master branch will require Mojave at a minimum, so keep that in your planning for the future. If building dev, omnipod-testing, or any other branch that supports omnipod users, then you will need the minimum versions listed above.)
+!!!danger "Update Xcode"
+Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS on your phone requires the newest Xcode version to properly build Loop.  Currently the most recent version of Xcode is 11.2.1. **UPDATE YOUR XCODE BEFORE UPDATING YOUR LOOP APP. **Check the App Store on your computer to see if there is an available update for Xcode.</u>  
 
-!!!info "Download Xcode 11 from the App store"
-    Yes, this is important. If you downloaded Xcode 11 GM previously in the last couple weeks, go to the App store and get the Xcode update waiting for you now. Xcode 11 GM is not what you need anymore...you need to get Xcode 11 from the App store.
         
 !!!warning "Restart computer after updating Xcode"
         Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simultors or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough.
-
-!!!danger "Check Homebrew and Carthage"
-    Depending on when you last built, you may need to update Homebrew and Carthage. Please open Terminal app and copy & paste  `carthage version` into Terminal. If you see 0.33.0 returned, then you don't need to do anything additional.
-    
-    If you got a number other than 0.33.0 for your carthage version, then copy & paste `brew update && brew upgrade carthage` into Terminal app. When the update finishes, you should have carthage 0.33.0 (or later) installed.</br>
-    
-    If you don't have 0.33.0 installed after that update, then you will need to use `brew link --overwrite carthage` and then repeat the `brew update && brew upgrade carthage` command. That should succeed in updating you properly.
 
 
 ## Step 2: Download Updated Loop Code
@@ -62,10 +46,6 @@ After you've finished the updates to your devices listed above, you can move ont
 <p align="center">
 **OR**</br></br>
 [Loop: Dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)
-</p></br>
-<p align="center">
-**OR**</br></br>
-[Loop: Omnipod-testing branch](https://github.com/LoopKit/Loop/archive/omnipod-testing.zip)
 </p></br>
 
 !!!info "Reminder"

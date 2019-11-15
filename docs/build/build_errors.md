@@ -12,10 +12,7 @@ Before you start trying to resolve your red errors...start with the most obvious
 
 1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
 
-2. **Did you check for updates?** 
-
-    !!!info "Minimum Versions"
-        If you are building for Omnipod Loop, Loop dev, or have iOS 13 installed, make sure you have macOS 10.14.3 (Mojave) and Xcode 11 at a minimum. You will not be able to build for those without the minimum updates. Download Xcode 11 from the App Store to replace your Xcode 11 GM if you downloaded that previously.
+2. **Did you check for updates?** Cannot emphasize this one enough...you should check for Xcode updates (and install them) before building.
 
 3. **Did you reboot your computer after updating Xcode?** Yup...that was in the message on the Update Loop page...did you ignore it? ;)
 
@@ -40,13 +37,18 @@ Therefore, first use the error topics (listed in sections below) to try to resol
     * Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.
     * **<u>State which fixes from the below list that you have already tried AND post the screenshots of the results of those fix attempts.</u>**
 
-Helpful tip #1: Shift-Command-4 will give you a little screenshot tool that you can click-and-drag to highlight the area you'd like to screenshot. When you release the drag, the screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information.
-
-Helpful tip #2: When taking screenshots for a post, include the whole Xcode window. Don't zoom in on any one area. There is information in all parts of the Xcode window that are helpful to the troubleshooters, so it saves time to see the whole Xcode window at once.
+Helpful tip: Shift-Command-4-spacebar will give you a screenshot tool that you can use to click on the Xcode window to grab a screenshot. The screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information and often cuts off valuable information that we look for in the various parts of the Xcode window. Use the whole Xcode window's screenshot when posting for help.
 
 ## Find your error message(s)
 
-To begin fixing the error (assuming you didn't have one of the obvious issues listed above), the key is to (1) ***READ THE ERROR MESSAGE*** and then (2) ***FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW***.
+To begin fixing the error, use the Report Navigator view to find your error message. 
+
+</p>
+<p align="center">
+<img src="../img/report-nav.png" width="750">
+</p>
+
+The key is to (1) ***READ THE ERROR MESSAGE*** and then (2) ***FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW***.
 
 Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail. Look at the detailed message to really help guide your search for the matching solution.
 
@@ -65,7 +67,7 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ## No such module 'LoopKit' or similar message
 
-If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open the Terminal app.  You will use the command `cd ~/downloads/loop-master && carthage update`.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-master and instead is loop-master-2 or loop-dev or some other folder name...change the command to match your folder's actual name. 
+If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open the Terminal app (remember it is located in your Applications folder under the Utilities group of applications).  You will use the command `cd ~/downloads/loop-dev && carthage update`.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-dev and instead is loop-dev-2 or loop-master or some other folder name...change the command to match your folder's actual name. 
 
 </p>
 <p align="center">
@@ -87,14 +89,30 @@ If your carthage update fails, try opening the Terminal app and running these co
 
 After running those commands, retry the `cd ~/downloads/loop-master && carthage update` (remembering to update the name of your Loop download folder, as needed).
 
-## Carthage version outdated
+## Could not get a container directory URL
 
-If you see a message about updating carthage version, open Terminal app and enter the following command `brew update && brew upgrade carthage`
+Error message: "**<u>Could not get a container directory URL. Please ensure App Groups are set up correctly in entitlements.</u>**"
 
 </p>
 <p align="center">
-<img src="../img/carthage-update.jpg" width="850">
+<img src="../img/container-1.png" width="750">
 </p>
+
+</p>
+<p align="center">
+<img src="../img/container-2.png" width="750">
+</p>
+
+</p>
+<p align="center">
+<img src="../img/container-3.png" width="750">
+</p>
+
+To resolve this error, you will need to click on the Loop target's signing area and then the plus-sign in the App Groups area under the signing. Copy and paste the bundle indentifier into the new container that starts with `group.` and then add `Group` to the end of the name. Click OK to save.
+
+The final App Group should now have a blue check box, the name should start with `group` and end with `LoopGroup`. See the screenshot as an example. Click the build button after your App Group is setup similarly and you should be good.
+
+
 
 ## Missing Command Line Tools
 
@@ -110,7 +128,7 @@ Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandL
 <img src="../img/command-line-error-2.jpg" width="550">
 </p>
 
-Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 11" in the dropdown menu for Command Line Tools.
+Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 11.2.1" in the dropdown menu for Command Line Tools.
 
 </p>
 <p align="center">
