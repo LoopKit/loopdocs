@@ -29,7 +29,7 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 ## Step 1: Update macOS and Xcode
 
 !!!danger "Update Xcode"
-Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS on your phone requires the newest Xcode version to properly build Loop.  Currently the most recent version of Xcode is 11.2.1. **UPDATE YOUR XCODE BEFORE UPDATING YOUR LOOP APP. **Check the App Store on your computer to see if there is an available update for Xcode.</u>  
+    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS on your phone requires the newest Xcode version to properly build Loop.  Currently the most recent version of Xcode is 11.2.1. **UPDATE YOUR XCODE BEFORE UPDATING YOUR LOOP APP. **Check the App Store on your computer to see if there is an available update for Xcode.</u>  
 
         
 !!!warning "Restart computer after updating Xcode"
@@ -48,12 +48,8 @@ After you've finished the updates to your devices listed above, you can move ont
 [Loop: Dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)
 </p></br>
 
-!!!info "Reminder"
-    It is best practice is to leave your Loop code in your Downloads folder.  If you store your Loop code a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive.  Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive?  Check your System Preferences.  If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.
-    <p align="center">
-    <img src="../img/icloud-drive.png" width="550">
-    </p></br>
-    Depending on your browser and settings, your Loop download may or may not automatically unzip.  If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility.  This will create a blue folder called `Loop-master`.  HOWEVER, if you already have an existing `Loop-master` folder from a previous download, the name of the next download will be something like `Loop-master (1)`.  The problem with that folder name is that it contains a space...and spaces in the name will cause your Loop build to fail.  So, either delete old copies of Loop before downloading/unzipping or rename the folder(s) to ensure that NO SPACES are in the folder name.
+!!!info "Reminder: DO NOT HAVE A SPACE IN YOUR DOWNLOAD FOLDER NAME"
+    If you already have an existing `Loop-master` folder from a previous download, the name of the next download will be something like `Loop-master (1)`.  The problem with that folder name is that it contains a space...and spaces in the name will cause your Loop build to fail.  So, either delete old copies of Loop before downloading/unzipping or rename the folder(s) to ensure that NO SPACES are in the folder name.
     <p align="center">
     <img src="../img/folder-name.png" width="550">
     </p>

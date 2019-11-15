@@ -10,15 +10,17 @@ There are two types of build errors that happen; they are yellow warnings and re
 
 Before you start trying to resolve your red errors...start with the most obvious things that can cause a red error message:
 
-1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
+1. **DO NOT HAVE A SPACE IN YOUR LOOP FOLDER NAME**. If you downloaded multiple Loop codes without deleting the old ones first, there's a good chace you have a space in the folder name. REMEMBER TO AVOID SPACES IN THE FOLDER'S NAME. Fix it if there is one.
 
-2. **Did you check for updates?** Cannot emphasize this one enough...you should check for Xcode updates (and install them) before building.
+2. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
 
-3. **Did you reboot your computer after updating Xcode?** Yup...that was in the message on the Update Loop page...did you ignore it? ;)
+3. **Did you check for updates?** Cannot emphasize this one enough...you should check for Xcode updates (and install them) before building.
 
-4. **Get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago.** That old version may not be compatible with new iOS and new Xcode versions.
+4. **Did you reboot your computer after updating Xcode?** Yup...that was in the message on the Update Loop page...did you ignore it? ;)
 
-5. If you are using a free developer account, you need to have finished the [removal of Siri capabilities](https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets).
+5. **Get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago.** That old version may not be compatible with new iOS and new Xcode versions.
+
+6. If you are using a free developer account, you need to have finished the [removal of Siri capabilities](https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets).
 
 ## Posting for help
 
