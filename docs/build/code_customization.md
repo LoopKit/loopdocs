@@ -8,7 +8,7 @@ Based on Loop users’ experience, there are some customizations that you may wa
 
 Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization:
 
- Modify Line 191 in the Loop>>View Controllers>>BolusViewController.swift.  Add the `false &&` as shown in the screenshot below:
+Go to Loop>>View Controllers>>BolusViewController.swift and find the "deviceOwnerAuthentication" section.  Add `false &&` as shown in the screenshot below:
 
 <p align="center">
 <img src="../img/custom-id.png" width="750">
