@@ -8,815 +8,597 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-
-	<title>Yellow/Red Loop - LoopDocs</title>
-
+        <title>Red Loop - LoopDocs</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <link href="../../css/admonitions.css" rel="stylesheet">
-
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
             ga('create', 'UA-109876065-1', 'loopkit.github.io');
             ga('send', 'pageview');
-        </script>
-        
+        </script> 
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+            <div class="container">
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">LoopDocs</a>
+                </div>
 
-            <!-- Main title -->
-            <a class="navbar-brand" href="../..">LoopDocs</a>
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            <!-- Main navigation -->
-            <ul class="nav navbar-nav">
-            
-            
-                <li >
-                    <a href="../..">Home</a>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../faqs/docs-faqs/">Using This Site FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/FAQs/">General Loop FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/omnipod-faqs/">Omnipod FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/branch-faqs/">Branch FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/update-faqs/">Update/Rebuild Loop FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/ios13/">iOS 13 FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/rileylink-faqs/">RileyLink FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/algorithm-faqs/">Algorithm FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/cgm-faqs/">CGM FAQs</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../faqs/safety-faqs/">Safety Tips</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../build/overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step1/">Step 1 Compatible Computer</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step2/">Step 2 Compatible iPhone/iPod touch</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step3/">Step 3 Compatible Pump</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step4/">Step 4 Compatible CGM</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step5/">Step 5 Order a RileyLink</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step6/">Step 6 Enroll in Apple Developer Program</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step7/">Step 7 Install Homebrew</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step8/">Step 8 Download Xcode</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step9/">Step 9 Xcode Preferences</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step10/">Step 10 Test Settings</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step11/">Step 11 Make plans for Loop Data</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step12/">Step 12 Meet Community</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step13/">Step 13 Download Loop code</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/step14/">Step 14 Build Loop app</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/build_errors/">Oh dear! Build errors?</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/code_customization/">Customize your Loop</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/updating/">Ready to Update your Loop?</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/loopworkspace/">LoopWorkspace</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../operation/overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../build/health/">Step 1: Health Permissions</a>
 </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Step 2: Add Pump</a>
+    <a href="#">Step 2: Add Pump</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/loop-settings/mdt-pump/">Add Medtronic</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/loop-settings/omnipod-pump/">Add Omnipod</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/cgm/">Step 3: Add CGM</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/configurations/">Step 4: Configurations</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/overrides/">Step 5: Override Presets</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/services/">Step 6: Loop Services</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/displays/">Loop Displays</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../operation/loop-settings/rileylink/">RileyLink menu</a>
 </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">How to Use Loop App</a>
+    <a href="#">How to Use Loop App</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/features/carbs/">Carb Entries</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/bolus/">Bolus</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/workout/">Workout Targets</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/ice/">Using ICE info</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/watch/">Apple Watch</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/widget/">iPhone widget</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/notifications/">Loop Notifications</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/features/battery/">Pump Battery</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Looping Tips</a>
+    <a href="#">Looping Tips</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/loop/open-loop/">Open Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/loop/close-loop/">Closed Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/loop/looptips/">Loop Tips</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Algorithm</a>
+    <a href="#">Algorithm</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../../operation/algorithm/overview/">Overview</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/algorithm/bolus/">Bolus Recommendations</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/algorithm/prediction/">Glucose Prediction</a>
 </li>
-
-        
             
 <li >
     <a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                        
+                                    
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Troubleshoot</a>
+    <a href="#">Troubleshoot</a>
     <ul class="dropdown-menu">
-        
             
 <li >
     <a href="../overview/">Overview</a>
 </li>
-
-        
             
 <li >
-    <a href="../loop-crashing/">Loop crashes</a>
+    <a href="../loop-crashing/">Loop App crashes</a>
 </li>
-
-        
-            
-<li >
-    <a href="../green-loop/">Grey Loop</a>
-</li>
-
-        
             
 <li class="active">
-    <a href="./">Yellow/Red Loop</a>
+    <a href="./">Red Loop</a>
 </li>
-
-        
             
 <li >
     <a href="../pod-pairing/">Pod Pairing Failures</a>
 </li>
-
-        
             
 <li >
     <a href="../uncertain-bolus/">Pod Uncertain Boluses</a>
 </li>
-
-        
             
 <li >
     <a href="../priming/">MDT Priming and Sites</a>
 </li>
-
-        
             
 <li >
     <a href="../time-change/">Time Changes</a>
 </li>
-
-        
             
 <li >
     <a href="../pump-errors/">MDT Pump Errors</a>
 </li>
-
-        
             
 <li >
     <a href="../omnipod-faults/">Omnipod Faults</a>
 </li>
-
-        
     </ul>
   </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
 <li >
     <a href="../../nightscout/overview/">Overview</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/new_user/">Brand New NS</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/update_user/">Retrofit Existing NS</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/troublehoot/">Setup Troubleshooting</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/mlab_cleanup/">NS Stopped Working</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/remote-overrides/">Remote Overrides</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/ifttt/">IFTTT</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/pebble/">Pebble</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/pushover/">Remote Notifications</a>
 </li>
-
-                    
-                        
+                                    
 <li >
     <a href="../../nightscout/reports/">Reports</a>
 </li>
+                                </ul>
+                            </li>
+                        </ul>
 
-                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../loop-crashing/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../pod-pairing/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
-                </li>
-            
-            
-            </ul>
-
-            <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                <li >
-                    <a rel="next" href="../green-loop/">
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </li>
-                <li >
-                    <a rel="prev" href="../pod-pairing/">
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </li>
-                
-            </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
         <div class="container">
-            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
-        <li class="main active"><a href="#yellow-and-red-loops">Yellow and Red Loops</a></li>
-        
-            <li><a href="#cgm-issues">CGM issues</a></li>
-        
-            <li><a href="#pump-issues">Pump Issues</a></li>
-        
-            <li><a href="#bluetoothrl-issues">Bluetooth/RL issues</a></li>
-        
-            <li><a href="#loop-settings-issues">Loop Settings Issues</a></li>
-        
-    
+        <li class="main active"><a href="#red-loops">Red Loops</a></li>
+        <li class="main "><a href="#resolving-a-red-loop">Resolving a Red Loop</a></li>
+            <li><a href="#option-1-easy-steps">Option 1: Easy Steps</a></li>
+            <li><a href="#option-2-look-for-cause">Option 2: Look for Cause</a></li>
+            <li><a href="#rileylink-is-broken">RileyLink is broken</a></li>
+            <li><a href="#cgm-values-are-not-being-collected-by-loop">CGM Values are not being collected by Loop</a></li>
+            <li><a href="#pump-is-not-responding">Pump is not responding</a></li>
+        <li class="main "><a href="#resolving-frequent-red-loops">Resolving Frequent Red Loops</a></li>
+        <li class="main "><a href="#posting-for-help">Posting for Help</a></li>
     </ul>
 </div></div>
-            <div class="col-md-9" role="main">
+                <div class="col-md-9" role="main">
 
-<h1 id="yellow-and-red-loops">Yellow and Red Loops<a class="headerlink" href="#yellow-and-red-loops" title="Permanent link">⌁</a></h1>
-<p>A properly operating Loop will remain green for 5 minutes.  To remain green, there are several things that Loop must do:</p>
+<h1 id="red-loops">Red Loops<a class="headerlink" href="#red-loops" title="Permanent link">⌁</a></h1>
+<p>Let's divide this page up into two parts. The first part deals with individual red loops. Like it just happened and you want to solve it. The second part will deal with situations where you are repeatedly having red loops "more often" than you think is "normal" (both of those of course are subjective terms).</p>
+<h1 id="resolving-a-red-loop">Resolving a Red Loop<a class="headerlink" href="#resolving-a-red-loop" title="Permanent link">⌁</a></h1>
+<p>So you are here for help with getting your Loop green again? It's red and not working? Wondering what is happening? You can click on the red loop icon to read an error message that you may or may not understand. If you understand it, great...that should help you fix the problem. If you don't understand it, then there are two options to fix the red loop; the first is quick and easy, the second is more in-depth. Let's look at both.</p>
+<p>Quick side note: Do not quickly decide to pull an omnipod that isn't responding and has a red loop. Usually the issue is that the RileyLink needs a reset as described below in Option 1, rather than the pod needing to be changed. If you don't fix the RileyLink's problem first, the problem will likely carry forward to the new pod pairing attempt and you'll get a bunch of problems pairing the new pod because the RileyLink still isn't working. So, please try getting the RileyLink working properly before deciding to ditch a pod because of a red loop.</p>
+<h2 id="option-1-easy-steps">Option 1: Easy Steps<a class="headerlink" href="#option-1-easy-steps" title="Permanent link">⌁</a></h2>
+<div class="admonition danger">
+<p>You don't care what the heck is causing the issue, you just want to get on with life as quickly as possible? Ok, fair enough, then do the following:</p>
 <ul>
-<li>Loop obtains a BG value from your CGM source, and</li>
-<li>Loop reads your pump history to know about insulin deliveries and recent events, and</li>
-<li>Loop completes a run of its calculations based on those inputs</li>
-<li>Loop recommends a temp basal and sends that instruction to the pump</li>
-<li>Pump enacts the recommended temp basal</li>
-<li>Loop confirms the pump enacted the recommended temp basal</li>
+<li>Turn your RileyLink off/on at its physical power switch located on the side of the RileyLink. Use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a <a href="https://loopkit.github.io/loopdocs/faqs/omnipod-faqs/#what-do-you-do-to-stop-a-screaming-pod">screaming pod silencer tool</a>.</li>
+<li>Close your Loop app (upswiping it in the iPhone's app selector) and reopen it.</li>
 </ul>
-<p>If something goes wrong in those steps and more than 5 minutes goes by, the Loop will turn yellow until it can solve the problem.  If more than 15 minutes goes by and the problem still exists, Loop will turn red.</p>
-<div class="admonition info">
-<p>To see the latest Loop error messages, touch the yellow or red Loop Status circle on the main screen. If an error message is available, it will appear in a dialog window. Use that error message to help guide your next troubleshooting steps, as laid out in the discussion below.</p>
+<p><p align="center">
+<img src="../img/riley-switch.png" width="450">
+</p></br></p>
+<p>That's pretty much all you need to do for option 1 to restore a green Loop within 5 minutes, 99% of the time. You can confirm things are back to working order by seeing a green loop again and/or issuing a "test command" or "button press" successfully through the RileyLink menu.</p>
 </div>
-<p>A healthy green loop will have timestamps less than 5 minutes old below the green loop, BG reading, and reservoir level.  This indicates that the Loop was run less than 5 minutes ago, fresh BGs have been coming in, temp basals have been enacted by the pump, and the pump is communicating with Loop.  The screenshot below is a very happy Loop.</p>
+<h2 id="option-2-look-for-cause">Option 2: Look for Cause<a class="headerlink" href="#option-2-look-for-cause" title="Permanent link">⌁</a></h2>
+<div class="admonition info">
+<p>So if Option 1 didn't work to fix your problem...next you'll need to look a little deeper. There can be a variety of causes for why Option 1 did not work to restore your Loop's function, so you'll need to sort out the root cause. There are a few basic categories:</p>
+<ol>
+<li>RileyLink is broken</li>
+<li>CGM values are not being collected by Loop</li>
+<li>Pump is not responding</li>
+</ol>
+</div>
+<h2 id="rileylink-is-broken">RileyLink is broken<a class="headerlink" href="#rileylink-is-broken" title="Permanent link">⌁</a></h2>
+<p>How can you tell if your RileyLink has a problem? The answer is mostly within the LED lights that display on the board.</p>
+<p><strong>Red light</strong>: comes on during charging and will turn off/on periodically, while still plugged in, after charge is complete.</p>
+<p><strong>Green light</strong>: Indicates an active BT connection with the phone. You want the green light to stay on all the time on the RileyLink. If the green light is not on, then make sure your iPhone's bluetooth is still switched on.</p>
+<p><strong>Blue light</strong>: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol <a href="https://youtu.be/s2qNPLpfwww">(unplug the battery first</a>). If you still can't get the blue light off, then contact GetRileyLink about getting a new RileyLink.</p>
+<h2 id="cgm-values-are-not-being-collected-by-loop">CGM Values are not being collected by Loop<a class="headerlink" href="#cgm-values-are-not-being-collected-by-loop" title="Permanent link">⌁</a></h2>
+<h3 id="new-transmitter">New transmitter<a class="headerlink" href="#new-transmitter" title="Permanent link">⌁</a></h3>
+<p>If you recently changed a transmitter, you need to also update your Loop settings to reflect the new transmitter ID. Go to the CGM section of Loop settings and <code>Delete CGM</code> (it's a button on the bottom of that page). Then use the <code>Add CGM</code> in Loop settings to include the new transmitter ID.</p>
+<h3 id="firefly-style-transmitter">Firefly-style transmitter<a class="headerlink" href="#firefly-style-transmitter" title="Permanent link">⌁</a></h3>
+<p>If you have not updated your Loop app since late July 2019 and use Dexcom G6, you will need to update your Loop app to continue to be able to loop without internet connection. In July 2019, we started to see a new style of Dexcom G6 transmittters on the market. These new transmitters required a rework of some of the Loop's code to continue to "spy" on the transmitter. Without the update, your Loop will not get CGM data unless it is pulling from Share servers (which is not a recommended mode of operation). So, update your Loop app if you have a new transmitter type and haven't updated since July 2019.</p>
+<h3 id="delete-share-account">Delete Share account<a class="headerlink" href="#delete-share-account" title="Permanent link">⌁</a></h3>
+<p>Finally, we see a lot of errors reported because people have problems with their Share server information in Loop app. <strong>Please delete your Share account information from within Loop settings.</strong> In other words, the credentials portion of the Share account info, as shown in the screenshot below, should say <code>Tap to Set</code> and not have your account info. It is unnecessary to have this portion filled out as local, non-internet spying of a transmitter is the preferred CGM source anyways. In fact, by leaving this information out, it will help you remember to change your transmitter ID when you change transmitters because CGM data won't appear in Loop. By not including Share account in Loop, you will prevent yourself from accidentally becoming internet dependent.</p>
 <p align="center">
-<img src="../img/loop_less_than_five.jpg" width="550">
+<img src="../img/no-share.jpg" width="600">
 </p>
 
-<p></br></br></p>
-<p>For Loopers who have already been successfully getting green loops, but suddenly find themselves with problems...we need to figure out which area your loop is failing in.</p>
-<hr />
-<p><strong><p align="center">The displayed error message should help you narrow in on the cause of the red loop:</p>
-    <p align="center">Is this a CGM issue?</p>
-    <p align="center">Is this a pump issue?</p>
-    <p align="center">Is this a RileyLink/BT issue?</p></strong></p>
-<hr />
-<h2 id="cgm-issues">CGM issues<a class="headerlink" href="#cgm-issues" title="Permanent link">⌁</a></h2>
-<h3 id="old-bg-data-cgm-issue"><p align="center"><strong>Old BG data (CGM issue)</strong></p><a class="headerlink" href="#old-bg-data-cgm-issue" title="Permanent link">⌁</a></h3>
 <p></br></p>
-<p>If your Loop turns yellow or red, easiest to start by checking the timestamps on the BG.  <strong>If the BG reading is more than 5 minutes older than your iPhone time, your Loop will not be green.</strong>  The screenshot below is a good example of missing BG data preventing the Loop from staying green.  The pump is still communicating (reservoir reading is only 2 minutes old)...BGs appear to be the problem.</br></br></p>
-<p align="center">
-<img src="../img/loop_oldbg2.jpg" width="550">
-</p>
-
-<p></br>
-<p align="center">
-<img src="../img/loop_missing_BG.png" width="250">
-</p></p>
-<p>BG troubleshooting steps:</p>
-<ul>
-<li>Verify you have enabled the correct <a href="https://loopkit.github.io/loopdocs/setup/loop-settings/settings/#cgm-selection">CGM Selection</a> in Loop settings; it is easy to accidentally change the selection while scrolling through the settings page</li>
-<li>For G5, verify your <a href="https://loopkit.github.io/loopdocs/setup/loop-settings/settings/#cgm-selection">transmitter ID</a> is set correctly in Loop settings</li>
-<li>For G4, verify the Dexcom Share app is running on your phone</li>
-<li><strong>Fetch Recent Glucose</strong> command in RL only works for Medtronic CGM users, by the way...so don't expect that command to solve Dexcom CGM issues</li>
-<li>If your local CGM is working fine on the Dexcom app, but Loop isn't reading it:<ul>
-<li>make sure you enter your Dexcom Share account info in the Loop settings. Loop will automatically switch to pulling from the Dexcom servers if the local reading isn't working.</li>
-<li>try turning Loop and Dexcom apps off, toggle BT off/on, restart Loop app, and then restart Dexcom app</li>
+<h2 id="pump-is-not-responding">Pump is not responding<a class="headerlink" href="#pump-is-not-responding" title="Permanent link">⌁</a></h2>
+<p>The obvious fix is to make sure the RileyLink is not so far away from the pump or Pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps. For Pod Loopers, Option 1 almost always fixes this issue. For Medtronic Loopers, you will see some times where the pump is not responding and you may see "decoding" errors or various other messages about pump responses. For Medtronic users, try the following:</p>
+<ol>
+<li>Change pump battery. Low pump battery will cause radio communications to fail.</li>
+<li>Use the <code>Change Time</code> command in the RileyLink menu to update the pump's clock. If you've accidentally changed the pump's time in the pump itself, this will get the Loop app and pump back in sync.</li>
+<li>If using a x23 or x54 pump, try deleting all the IDs under the "Other Devices" submenu in the pump's "Connect Devices" menu.  Then go to the RileyLink menu and use the MySentry pairing command to get a fresh ID issued. Follow the directions listed in the MySentry pairing command's screen to scan for devices. A fresh ID can help prevent recurring red loops for x23 and x54 users, particularly if they started to occur after a recent Loop update.</li>
+<li>Make sure the following are checked in the pump:<ul>
+<li>Your pump cannot be suspended.  Resume insulin deliveries.</li>
+<li>Temp basal type must be set to unit/hour, not percent, in pump's Basal menu.</li>
 </ul>
-<hr />
+</li>
+</ol>
+<h1 id="resolving-frequent-red-loops">Resolving Frequent Red Loops<a class="headerlink" href="#resolving-frequent-red-loops" title="Permanent link">⌁</a></h1>
+<p>Here's some things to check if you have frequent red loops:</p>
+<ul>
+<li>
+<p>Have you <a href="https://loopkit.github.io/loopdocs/nightscout/mlab_cleanup/">cleaned your mLab database in Nightscout</a> recently? If your database gets backlogged (or Nightscout otherwise isn't working properly), Loop can get clogged up with a bunch of unfinished Nightscout uploads. This clogged condition can cause red loops. So, make sure you are periodically checking your mLab and cleaning it. Try deleting your Nightscout account from Loop settings and see if your Loop stops having red loops. If it does, then you'll need to assess what's going wrong in your Nightscout site and fix it. Most of the time that is your mLab database cleanup needing to be done.</p>
+</li>
+<li>
+<p>Is your <a href="https://loopkit.github.io/loopdocs/build/step5/#assemble-rileylink">RileyLink battery plugged in all the way</a> on the board? </p>
+</li>
+<li>
+<p>Has your RL been fully charged? Try charging your RL for an hour or two, make sure the red light comes on while charging. Try a new charger.</p>
+</li>
+<li>
+<p>Oddly, some people have found that turning off Siri integrations for Loop and Dexcom apps in your iPhone settings has helped. I don't know if this is coincidental or an actual help yet, but I'll mention it here.</p>
+</li>
+<li>
+<p>Check for sources of wireless interference. If you have a certain environment that seems to have more drops than others, it is likely that there is a source of wireless communication interfering with your Loop. Lots of Medtronic Loopers in a room together will often interfere with each other and get "cross-talk" red loop error messages. If it is a bedroom at night causing problems, try moving other wireless devices such as routers or baby monitors farther away from where you and your RileyLink are.</p>
 </li>
 </ul>
-<h2 id="pump-issues">Pump Issues<a class="headerlink" href="#pump-issues" title="Permanent link">⌁</a></h2>
-<h3 id="old-pump-data-pump-issue"><p align="center"><strong>Old Pump data (Pump Issue)</strong></p><a class="headerlink" href="#old-pump-data-pump-issue" title="Permanent link">⌁</a></h3>
-<p></br></p>
-<p>If your pump reading is older than 5 minutes, but BGs are fine, then you will need to troubleshoot the pump communications.  The screenshot below is a good example of missing pump data preventing the Loop from staying green.  The CGM is still communicating (BG reading is only 2 minutes old)...but pump reservoir reading is older than 5 min.</br></br></p>
-<p align="center">
-<img src="../img/loop_old_pump.png" width="550">
-</p>
-
-<p></br></br></p>
-<p>Pump troubleshooting steps:</p>
-<ul>
-<li>Your pump battery may be low.  Replace the battery...even if the percentage doesn't look low, this is a good starting point</li>
-<li>If you have an x23 or x54 model pump, make sure your mysentry is paired</li>
-<li>Have the pump and RL gotten too far away from each other?  Try bringing them closer</li>
-<li>Try retuning the RL.  Just a note though, the Loop has code embedded to automatically retune RL when the pump comms are failing for 20 minutes.  So, manual retuning is more about speeding things along rather than being a necessary intervention to fixing pump comms.</li>
-<li>Try a <strong>Send Button Press</strong> to "wake up the pump" a bit.</li>
-<li>Try a <strong>Fetch Pump History</strong>.  Same as retuning though, the Loop has code embedded to automatically pull pump history.  Manual fetching of pump history is more about speeding things along than being a necessary step to fixing pump comms.</li>
-<li>If you have a backup pump, try switching to that pump and see whether the issue persists.</li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title">About Pump Communications</p>
-<p>Pump communications errors can and will happen. Just be patient, and they almost always correct themselves.  Yellow loops happen sometimes, and aren't usually worth troubleshooting.  Red loops are more infrequent and usually a good time to start investigating possible source.  <strong>Some environments will be noisy for rf comms (such as concerts, amusement parks, tech venues, conferences with OpenAPS users in attendance, etc.), and your loop may not stay green as often as usual.  Just be patient. When you leave that environment, looping will go back to normal.</strong>  Wireless microphones, baby monitors, and other similar types of devices can interfere with pump communications if there are lots of competing radio devices in a tight environment.  If you find you have areas of your house that consistently have poor pump communications, look for potential sources of interference from wireless devices.</p>
-<p>Another common area for failed pump communications are at night if you tend to sleep on your pump, or otherwise "body block" the RL's ability to communicate with the pump.  Try to place your pump and RL such that your body will not block the signal to/from RL.  Standing the RL on its base with antenna pointing up, on a nearby nightstand should be sufficient proximity/orientation for overnight looping.</p>
-<p>These examples below are pump error messages.  Notice they all mention the pump specifically.</p>
-<p><p align="center">
-<img src="../img/loop_framerate.jpg" width="750">
-</p>
-</br></br></p>
-</div>
-<hr />
-<h3 id="incorrect-pump-time-pump-issue"><p align="center"><strong>Incorrect Pump Time (Pump Issue)</strong></p><a class="headerlink" href="#incorrect-pump-time-pump-issue" title="Permanent link">⌁</a></h3>
-<p></br></p>
-<p>And here's an interesting problem.  BGs are current, but notice that the pump time is 2 hours into the future of the current iPhone time.  In this case, the Loop user had manually set their pump time during travels and caused the pump time to be out of sync with Loop.  Remember, <strong><u>do not change your pump time manually...always use the RL to set the pump time</u></strong>.  This red loop was resolved as soon as the Looper used RL to set the pump time.</br></br></p>
-<p align="center">
-<img src="../img/loop_bad_pump_time.jpg" width="550">
-</p>
-
-<p></br></br></p>
-<hr />
-<h3 id="failure-to-enact-temp-basals-pump-issue"><p align="center"><strong>Failure to Enact Temp Basals (Pump Issue)</strong></p><a class="headerlink" href="#failure-to-enact-temp-basals-pump-issue" title="Permanent link">⌁</a></h3>
-<p></br></p>
-<p>If you see messages about "Could not verify TempBasal on attempt  2", that is likely one of just a few issues.  The message indicates that Loop has BGs and pump data, has sent a recommended basal to the pump, but the pump does not appear to be enacting those basals.</br></br></p>
-<p align="center">
-<img src="../img/loop_verify.jpg" width="250">
-</p>
-
-<p></br></br></p>
-<ul>
-<li>Your pump cannot be suspended.  Resume insulin deliveries</li>
-<li>Max basal rate in Loop app cannot be greater than max basal rate in pump settings</li>
-<li>Temp basal type must be set to unit/hour, not percent, in pump</li>
-</ul>
-<hr />
-<h2 id="bluetoothrl-issues">Bluetooth/RL issues<a class="headerlink" href="#bluetoothrl-issues" title="Permanent link">⌁</a></h2>
-<h3 id="bluetooth-failures-rl-or-iphone-issue"><p align="center"><strong>Bluetooth failures (RL or iPhone issue)</strong></p><a class="headerlink" href="#bluetooth-failures-rl-or-iphone-issue" title="Permanent link">⌁</a></h3>
-<p></br></p>
-<p>Sometimes the RilleyLink and iPhone fail to communicate via BT.  You need to determine if this is due to RL's problems, iPhone's problems, or just BT communications problem.  There can be messages when BT fails, such as the message below, or "RileyLink Timeout" error messages.</br></br></p>
-<p align="center">
-<img src="../img/loop_bt_error.jpg" width="250">
-</p>
-
-<p></br></br></p>
-<ul>
-<li>Has your RL been fully charged? Try charging your RL for an hour or two, make sure the red light comes on while charging</li>
-<li>Is your lipo battery old and perhaps dying earlier in the day?  Order a new battery, replace lipo battery</li>
-<li>Check your lipo battery wires?  If your wires are dislodged from the lipo itself, RL will not likely work for long</li>
-<li>Your RL battery needs to be securely plugged in, check those connections.</li>
-<li>Check if your RL is on and says "connected" in the <a href="https://loopkit.github.io/loopdocs/setup/loop-settings/rileylink_menu/#device">status screen for bluetooth</a>. If it says "connecting" or "disconnected", you have a BT problem with RL and iPhone.</li>
-<li>Make sure your iPhone's BT is turned on, and BT is not being affected by other BT systems (such as car audio)</li>
-<li>Check if any of the RL command buttons work...such as <strong>Send Button Press</strong>.</li>
-<li>If you've checked all of the above, toggle your RL power switch and turn your iPhone BT off/on.  Try rebooting your phone.  If those steps don't work and the RL is properly charging otherwise, likely you have a bad RileyLink and will need to replace it.</li>
-</ul>
-<hr />
-<h2 id="loop-settings-issues">Loop Settings Issues<a class="headerlink" href="#loop-settings-issues" title="Permanent link">⌁</a></h2>
-<h3 id="failure-to-set-insulin-curve-model-loop-settings"><p align="center"><strong>Failure to set Insulin Curve Model (Loop settings)</strong></p><a class="headerlink" href="#failure-to-set-insulin-curve-model-loop-settings" title="Permanent link">⌁</a></h3>
-<p></br></p>
-<p>If you see messages about "Missing data: Glucose effects", you likely have <strong>forgotten to set your Insulin Curve Model</strong>.  The message indicates that Loop is missing a component of its algorithm inputs to calculate glucose effects on predicted BGs.   Return to your Loop app settings and pick an Insulin Curve.</br></br></p>
-<p align="center">
-<img src="../img/loop_select_model.jpg" width="250">
-</p>
-
-<p></br></br></p>
-<hr /></div>
+<h1 id="posting-for-help">Posting for Help<a class="headerlink" href="#posting-for-help" title="Permanent link">⌁</a></h1>
+<p>Before you post on Looped group for help with a red loop, please make sure you've tried Option 1 and have restarted your RileyLink and Loop app. </p>
+<p>Before you post for help, please also check your mLab and Nightscout status. This step is often overlooked and yet solves a lot of problems. </p>
+<p>When posting for help, include two screenshots of Loop's main screen; one with the red loop's error message and the other just the plain Loop main screen. Include a detailed description of what you have tried doing from the troubleshooting list above. For example, state if you've double checked the transmitter ID, deleted the Share account info from Loop settings, and updated your Loop app since July 19, 2019 so that we can rule out some of the causes of CGM issues.</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-            
-            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-
-        <script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
-                    <div class="modal-body">
-                        <p>
-                            From here you can search these documents. Enter
-                            your search terms below.
-                        </p>
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                            </div>
-                        </form>
-                        <div id="mkdocs-search-results"></div>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
             </div>
         </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
     </body>
 </html>
