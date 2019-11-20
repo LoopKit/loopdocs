@@ -74,9 +74,8 @@ pages:
         - 'Temp Basal Adjustments': 'operation/algorithm/temp-basal.md'
     - Troubleshoot:
         - 'Overview': 'troubleshooting/overview.md'
-        - 'Loop crashes': 'troubleshooting/loop-crashing.md'
-        - 'Grey Loop': 'troubleshooting/green-loop.md'
-        - 'Yellow/Red Loop': 'troubleshooting/yellow-red-loop.md'
+        - 'Loop App crashes': 'troubleshooting/loop-crashing.md'
+        - 'Red Loop': 'troubleshooting/yellow-red-loop.md'
         - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
         - 'Pod Uncertain Boluses': 'troubleshooting/uncertain-bolus.md'
         - 'MDT Priming and Sites': 'troubleshooting/priming.md'
