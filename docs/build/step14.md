@@ -176,7 +176,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
     This prompt above, when you see it, requires you to enter your computer password and then select "Always Allow". Normal behavior, this prompt will come up four times in a row even after you enter the correct password. In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel. **Don't press deny.** Keep entering your computer password and pressing the "Always Allow" button...as many times as it takes (four times to be exact; one for each target that Xcode is saving the password for). After four times of successful password entry, the build will keep proceeding.
 
-!!!warn "While I have you here..."
+!!!warning "While I have you here..."
     While I have you here, I'm going to give you a piece of Loop troubleshooting advice. This is a little out of order, but too many people miss this super simple troubleshooting step when their Loop app turns red and stops working. Try turning your RileyLink off/on at it's physical switch on the side of the case. Carrying a paperclip on the keychain can help you access that recessed switch. The other useful troubleshooting step is to simply close the Loop app (upswipe in iPhone app selector) and reopen it. Wait 5 minutes after each of these steps and see if your issue resolves. It usually will. Ok, back to the building instructions.
     
 ## Build Finished
