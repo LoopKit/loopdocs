@@ -12,9 +12,12 @@ What?! Yes, really...you can set/cancel an override remotely for your child's Lo
 
     3. Update your Nightscout site and add some "config vars" lines in your Heroku settings.
 
-## Step 1: Updating Loop app
+## Step 1: Updating Loop app and iPhone settings
 
 Remote overrides are in dev branch now, so you'll have to update your Loop to use this upated dev branch if you want to get this feature working.  Be sure to review all the steps for updating your Loop app [here](https://loopkit.github.io/loopdocs/build/updating/).
+
+!!!danger "iPhone settings specific for remote overrides"
+    For remote overrides to successfully deploy on a Looper's iPhone, they will need to have two settings on the iPhone enabled. First, Loop's slider in iPhone Settings, Notifications needs to be turned on.  Without notifications, the person trying to set a remote override will see the message about "no deviceToken" and no remote override will actually enact. Second, the Looper's iphone needs the slide on in iPhone Settings, General, Background App Refresh. If this is not enabled, the remote overrides will not enact if the Loop app is not actively open on the phone's main screen.
 
 
 ## Step 2: Apple Push Notifications
