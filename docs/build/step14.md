@@ -115,12 +115,6 @@ When you've finished your customizations, come on back to this section and conti
 
 **Existing Apple Watch users**: Please update your watchOS prior to building the Loop app.  The current version of Loop requires watchOS 4.1 or newer.
 
-!!!info "Series 0 Apple Watch users: Read Me"
-    **Series 0 Apple Watch users**: Please you will need to do a minor change in Loop code for your watch to use Loop. Select the WatchApp Extension target and under the 'Linked Frameworks and Libraries' section, click the '+' and type 'ClockKit' and press 'Add'. In the 'Status' column of the new row where ClockKit been added, change 'Required' to 'Optional'. You can move on with the rest of the instructions below now that you've completed that step. Whew, that old Apple Watch is still gonna work with this modern app.
-    <p align="center">
-    <img src="../img/series0-watch-change.png" width="750">
-    </p>
-
 ## INTERMISSION
 
 STOP STOP STOP
