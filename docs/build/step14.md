@@ -90,7 +90,7 @@ Once you choose your signing team, Xcode will automatically generate provisionin
 </p>
 
 !!!danger "Free Developer Account Users: READ ME"
-    If you are using a free developer account to sign your targets, you will need to do an extra step. As a free developer, you are restricted from building apps that have Siri capabilities built-in. Loop has Siri capabilities...so you will need to disable them before proceeding on with signing and building your app. Click on the small x next to the Siri line located at the bottom of your Signing & Capabilities page. You need to do this in both the Loop and WatchApp Extension targets.
+    If you are using a free developer account to sign your targets, you will need to do an extra step. As a free developer, you are restricted from building apps that have Siri and Push capabilities built-in. Loop has both Siri and Push capabilities...so you will need to disable them before proceeding on with signing and building your app. Click on the small x next to the Siri and Push lines located at the bottom of your Signing & Capabilities page. You need to do this in both the Loop (Siri and Push) and WatchApp Extension (Siri only) targets. 
     <p align="center">
     <img src="../img/siri-errors.png" width="750">
     </p>
@@ -176,6 +176,9 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
     This prompt above, when you see it, requires you to enter your computer password and then select "Always Allow". Normal behavior, this prompt will come up four times in a row even after you enter the correct password. In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel. **Don't press deny.** Keep entering your computer password and pressing the "Always Allow" button...as many times as it takes (four times to be exact; one for each target that Xcode is saving the password for). After four times of successful password entry, the build will keep proceeding.
 
+!!!warn "While I have you here..."
+    While I have you here, I'm going to give you a piece of Loop troubleshooting advice. This is a little out of order, but too many people miss this super simple troubleshooting step when their Loop app turns red and stops working. Try turning your RileyLink off/on at it's physical switch on the side of the case. Carrying a paperclip on the keychain can help you access that recessed switch. The other useful troubleshooting step is to simply close the Loop app (upswipe in iPhone app selector) and reopen it. Wait 5 minutes after each of these steps and see if your issue resolves. It usually will. Ok, back to the building instructions.
+    
 ## Build Finished
 
 !!! info "First time building on a new device?"
@@ -185,13 +188,13 @@ You’ll see the progression of the build in the status window (top middle of Xc
     </p>
 
 !!!danger "BUILD SUCCEEDED"
-Congrats! If the build is successful, you'll see the message or "Running Loop..." across the top of the Xcode window. Your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. `Allow` Loop to send you notifications. In the next screen that follows that, click on the `Turn All Categories On` line and then click `Allow` in the upper right corner. 
-    
+    Congrats! If the build is successful, you'll see the message or "Running Loop..." across the top of the Xcode window. Your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. `Allow` Loop to send you notifications. In the next screen that follows that, click on the `Turn All Categories On` line and then click `Allow` in the upper right corner. 
+
     <p align="center">
     <img src="../img/health-start.JPEG" width="450">
     </p></br></br>
-     
-     You can unplug your phone from the computer now. And like we promised earlier, you will use the [Setup App section of this website](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/) to keep proceeding safely.
+
+    **You can unplug your phone from the computer now.** And like we promised earlier, you will use the [Setup App section of this website](https://loopkit.github.io/loopdocs/operation/loop-settings/settings/) to keep proceeding safely.
 
 !!!warning "FAQ: But what about those yellow alerts that remain in Xcode? Should I worry about them?"
     If you see yellow alerts after your build is done...those are not an issue. Whether your build succeeded or failed...the yellow warnings play no role in either outcome. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.
@@ -207,14 +210,18 @@ Congrats! If the build is successful, you'll see the message or "Running Loop...
     </p>
 
 
-## Next Step: Loop App Setup
+## Summary
 
-You're done building your Loop app...
+If your build failed, you need to proceed to the [Build Errors](build_errors.md) page to find the solution. Please head there to find the help you need.
+
+If no build errors, you're done building your Loop app...
 
 <p align="center">
 <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="400">
 </p>
 
+
+## Next steps
 
 Remember your promise though? You still owe me that you will use the [`Setup App`](https://loopkit.github.io/loopdocs/operation/overview/) section of this website now to keep proceeding safely.
 
