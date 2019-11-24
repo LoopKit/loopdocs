@@ -25,7 +25,7 @@ And now you press the pair button to tell Loop to go find a pod. Loop listens fo
 <img src="../img/pod-pair-fail-cassie.jpg" width="300">
 </p>
 
-And worse some people blame the pod without understanding why this all failed. And the error message kinda seems blames the pod (not the best worded error message for this situation, perhaps)..so logically some people assume a new pod will fix it. But that won't work either. Jane and Cassandra are both outta luck because Loop is bound and determined that it has a friend named Cassie somewhere around, and it will not stop looking for Cassie in particular. Two pods down and no closer to a pairing. 
+And worse, some people blame the pod without understanding why this all failed. The error message does seems to blame the pod (not the best-worded error message for this situation, perhaps)..so logically some people assume a new pod will fix it. But that won't work either. Jane and Cassandra are both outta luck because Loop is bound and determined that it has a friend named Cassie somewhere around, and it will not stop looking for Cassie in particular. Two pods down and no closer to a pairing. 
 
 <p align="center">
 <img src="../img/cass-and-jane.png" width="300">
