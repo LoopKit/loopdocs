@@ -17,12 +17,14 @@ So...here's how to fix that issue. We need to get the Loop to stop looking for C
 
 1. Take your RileyLink and iPhone and walk far away from all the beeping pods (Cassandras and Janes) looking to pair. How far away? Far enough away that there's no chance the beeping pods will hear the Loop app. We do not want the beeping pods to connect to the RileyLink or hear the commands we are about to do. (If you want, you could put the pods in a faraday bag or your microwave to shield them similar to what you might already do for Dexcom restarts.)
 
-2. While you are out-of-range from the beeping pods, click on the `cancel` button in the upper right corner of the pairing screen you've been stuck on.
+2. While you are out-of-range from the beeping pods, click on the `cancel` button in the upper right corner of the pairing screen you've been stuck on. Click `cancel` as many times as it takes to get to a screen with `Deactivate Pod` button at the bottom...that's the next screen we are interested in getting to.
 
 <p align="center">
 <img src="../img/pod-pair-fail.jpg" width="300">
 </p>
 
-3. On the next screen, click on the button to `Deactivate Pod`. This will make the Loop app forget about the "Cassie" it has been trying to use to pair with, leaving Loop free to make a fresh pairing.
+3. On the next screen, click on the button to `Deactivate Pod`. This will make the Loop app forget about the "Cassie" it has been trying to use to pair with, leaving Loop free to make a fresh pairing. Click `Deactivate Pod` a couple times and you'll likely see a failure of that too (after all, we put all the pods in the mircowave that were beeping right?).
 
-4. After you finish that deactivation, now come back into range of ONE of your beeping pods....just one of them. Pull that pod close to RileyLink and do the usual steps for pairing in Loop again. This should now give the pod and Loop a chance to get their pairing done properly.
+4. If you hit `cancel` for the deactivation screen you will eventually be put back at a `pair new pod` or `add pump` screen again (depending on how far back you go in the process). Go ahead and get through all the steps again for getting a pod going to the beeping phase. 
+
+4. Pull ONE of your beeping, insulin-containing pod from the microwave and press the `Pair` button. This should now give the pod and Loop a chance to get their pairing done properly.
