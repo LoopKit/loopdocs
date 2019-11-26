@@ -7,19 +7,20 @@
     * After making sure your Mojave is up-to-date, download Xcode from your computer's App Store application.
 
 !!!warning "FAQs"
-    * **"Why isn't my Xcode installing?"** I can't see your computer to know exactly why...but the two most common reasons are (1) lack of internet connection or (2) not enough free space on the computer's hard drive. Xcode is a pretty beefy sized download...and needs even a little more space to properly unpack itself and install. Best to try to have about 12-15GB of free space on your hard drive before starting to be on the safe side. If you get below 5GB of free space, I've seen installation failures around then. You can check your free space by clicking on the `About this Mac` (like in Step 1) and clicking the `Storage` tab.
+    * **"Why isn't my Xcode installing?"** I can't see your computer to know exactly why...but the two most common reasons are (1) lack of internet connection or (2) not enough free space on the computer's hard drive. Xcode is a pretty beefy-sized download...and needs even a little more space to properly unpack and install itself. Best to try to have about 12-15GB of free space on your hard drive before starting to be on the safe side. If you get low on free space, I've seen installation failures. You can check your free space by clicking on the `About this Mac` (like in Step 1) and clicking the `Storage` tab.
 
-Today is an easy one, but probably takes the longest of most of any of the days in terms of time...only because the download takes awhile. The good news is that you don't have to watch this. Instead, you can start the download and simply walk away for the rest of it.
+Today is an easy one, but probably takes the longest of most of any of the days in terms of time...only because the download takes a while. The good news is that you don't have to watch this. Instead, you can start the download and simply walk away for the rest of it.
 
 Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" code into an iOS application and install it onto your iPhone/iPod. **Make sure you have updated your macOS to Mojave AND checked the `Software Updates` button before proceeding...in other words, make sure you did Step 1's work.**
 
-Open the App Store application on your computer (it is in your Applications folder). Search for Xcode and click on the link to download/install Xcode for free. The most current version of Xcode is 10.3. Do not download the Xcode beta program, just get the regular version of the program. The file size is fairly large so expect about 45 minutes, or even a couple hours, to download depending on your internet speed. 
-
-If you already had a previous installation of Xcode, you can just check your App Store for Xcode updates which will take a much shorter time to download.
+Open your App Store in your computer and search for Xcode...you'll either be downloading it brand new or updating an existing installation. The version you are looking for is Xcode 11.2.1 at the minimum. It should be showing in the "what's new" description as shown in the image below. This is a big download (over 7GB) so don't expected this to be fast.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/build/img/xcode1.png" width="550">
-</p>
+<img src="../img/xcode.png" width="750">
+</p></br>
+
+
+If you have anti-virus software, you may also want to grant an exception for downloading Xcode (uncommon issue, but we have had one person using anti-virus report that they needed to disable their virus protection to complete the download).
 
 ## Next Step: Xcode Preferences
 

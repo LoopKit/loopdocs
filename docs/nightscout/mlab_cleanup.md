@@ -5,11 +5,18 @@ The free Nightscout we use also depends on a free database from mLab.  The free 
 The good news?  Loop can still run just fine until you repair your mLab database.  The bad news?  You just won’t be able to remotely monitor Loop through NS until you clear up some storage space in mLab.
 
 !!! info ""
-    These steps **WILL BE NEEDED BY EVERYONE AT SOME POINT IN TIME**...so please don't ignore this troubleshooting. If you see anything suddenly strange about your NS site after it had been working fine, start with these steps below. 
+    These steps **WILL BE NEEDED BY EVERYONE AT SOME POINT IN TIME**...so please don't ignore these troubleshooting steps. If you see anything suddenly strange about your NS site after it had been working fine, start with these steps below. 
 
 ## mLab Cleanup
 
-There are two steps to getting your Nightscout site running again. You will need to do both steps.  The first step clears out some space in your database.  The second steps consolidates the remaining data into a more compact space, and therefore makes the data take up less room overall in your database. You need to do both steps to help keep your NS humming along.
+There are two steps to getting your Nightscout site running again. You will need to do both steps.  The first step clears out some space in your database.  The second step consolidates the remaining data into a more compact space, and therefore makes the data take up less room overall in your database. You need to do both steps to help keep your NS humming along.
+
+If you'd like a video demonstration of the steps needed to do this...here ya go. The video uses just a slightly different way to do Step 1...either way is totally fine. Click the image or click this [Nightscout Cleanup link](https://youtu.be/_ifis2G11qs)...you'll end up at the same place.</br>
+
+
+<p align="center">
+<a href="https://youtu.be/_ifis2G11qs" target="_blank"><img src="../img/cleanup-video.jpg"  title="Nightscout Cleanup" /></a>
+</p> 
 
 ## Step 1: Delete Data
 

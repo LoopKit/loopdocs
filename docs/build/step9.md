@@ -16,13 +16,13 @@ Since you've been working in order, you will now have Xcode installed on your co
 Open Xcode from your Applications folder. 
 
 ## Command Line Tools
-There may be a short delay the very first time you open Xcode because it will install a package of "Command Line Tools". Don't close that window out, let it finish...we will need those Command Line Tools. Helpful tip: When the Command Line Tools installation is done and the pop-up window closes, check that your Command Line Tools installed correctly. Open Xcode's Preferences by clicking on the word **`Xcode` ** in the top menu bar (just to the right of the Apple icon in upper left corner) and selecting `Preferences` in the drop down menu. The keyboard shortcut to open Xcode Preferences is `command-comma` if that's easier for you. Then select the `Locations` tab of Preferences window and you'll see the dropdown menu for Command Line Tools. Make sure that Xcode 10.3 (or newer) is selected there.
+There may be a short delay the very first time you open Xcode because it will install a package of tools. Don't close that window out, let it finish...we will need those Command Line Tools. Helpful tip: When the Command Line Tools installation is done and the pop-up window closes, check that your Command Line Tools installed correctly. Open Xcode's Preferences by clicking on the word **`Xcode` ** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and selecting `Preferences` in the drop-down menu. The keyboard shortcut to open Xcode Preferences is `command-comma` if that's easier for you. Then select the `Locations` tab of Preferences window and you'll see the dropdown menu for Command Line Tools. Make sure that Xcode 11 (or newer) is selected there.
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/build/img/command-line-error-3.png" width="550">
 </p>
 
 ## Add Apple ID
-Go to the Xcode Preferences window from above, click on the `Accounts` tab and then press the `+` in the lower left corner to add an Apple ID account.
+Go to the Xcode Preferences window from above, click on the `Accounts` tab and then press the `+` in the lower-left corner to add an Apple ID account.
 
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/build/img/xcode_account.png" width="750">

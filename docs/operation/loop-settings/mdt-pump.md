@@ -49,7 +49,7 @@ Now that your pump is paired with Loop, you will be finishing these steps:
 3. Select your pump's battery type (lithium or alakine)</br></br>
 4. Leave the Preferred Data Souce on Event History </br></br>
 
-**Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.**  Event History must also be selected in order for prime events to be detected and NOT contribute to iob during site changes. Please just leave the Preferred Data Source on Event History.</br></br>
+**Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.**  Event History must also be selected in order for prime events to be detected and NOT contribute to IOB during site changes. Please just leave the Preferred Data Source on Event History.</br></br>
     
 <p align="center">
 <img src="../img/add_pump2.png" width="750">
@@ -57,5 +57,5 @@ Now that your pump is paired with Loop, you will be finishing these steps:
  
 ## Next Step: Add CGM
  
- Congrats! You've added your Medtronic pump to your Loop app. Now, click on the settings button in the upper left corner to take you back to the Loop's settings menu. Your next step is to [Add CGM](https://loopkit.github.io/loopdocs/operation/loop-settings/cgm/) to your Loop app. After all, without CGM data, your Loop won't loop.
+ Congrats! You've added your Medtronic pump to your Loop app. Now, click on the settings button in the upper left corner to take you back to Loop's settings menu. Your next step is to [Add CGM](https://loopkit.github.io/loopdocs/operation/loop-settings/cgm/) to your Loop app. After all, without CGM data, your Loop won't loop.
  

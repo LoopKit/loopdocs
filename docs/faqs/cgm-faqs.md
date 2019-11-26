@@ -12,11 +12,11 @@ If you want to use a Libre sensor you will need to modify Loop to accomplish tha
 
 ## Can I use Eversense?
 
-Nope. Eversense does not write to Apple Health nor has the BT communications protocol been reverse engineered the way the it has been done with Dexcom.  
+Nope. Eversense does not write to Apple Health nor has the BT communications protocol been reverse engineered the way it has been done with Dexcom.  
 
 ## Can Loop read CGM data from Nightscout?
 
-Loop does not read from, nor upload to, CGM data for Nightscout. You would need to use a solution such as NightscoutShareServer and make changes to Loop code in order to do that. Please search the Looped group in Facebook for posts regarding that option, as it is not a part of standard Loop use and is a community-based modification. You will need to do your homework and research to make that happen. At this time, there is not an active version of a modified Loop that appears to support this option easily.
+Loop does not read from, nor upload to, CGM data for Nightscout. You would need to use a solution such as NightscoutShareServer and make changes to Loop code in order to do that. Please search the Looped group on Facebook for posts regarding that option, as it is not a part of standard Loop use and is a community-based modification. You will need to do your homework and research to make that happen. At this time, there is not an active version of a modified Loop that appears to support this option easily.
 
 ## Can Spike or Xdrip be used with Loop?
 
