@@ -38,7 +38,7 @@ Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines 
 <tbody>
 <tr>
 <th>ENABLE</th>
-<td>bridge loop pump iob cob basal careportal sage cage </br></br>
+<td>bridge loop pump iob cob basal careportal sage cage basal</br></br>
 <b>(Note: If you are an existing NS user, you likely already have an ENABLE line in this section of Heroku. Don't add a new one. Simply find the existing ENABLE line, click on the little pencil icon to the right of it, and add the words shown on the ENABLE line below to the existing words already on the enable line.  Avoid duplicates. The remainder of the lines are likely going to be brand new additions to your Heroku settings.)</b></td>
 </tr>
 <tr>
@@ -92,6 +92,10 @@ Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines 
 <tr>
 <th>LOOP_URGENT</th>
 <td>60</br></br>(Same as the alert above, but will be red in color and have a shorter snooze option.)</td>
+</tr>
+<tr>
+<th>BASAL_RENDER</th>
+<td>default</td>
 </tr>
 </tbody>
 </table>
