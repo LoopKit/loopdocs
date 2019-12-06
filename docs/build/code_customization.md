@@ -76,6 +76,7 @@ You can confirm the successful change by looking in Xcode.  You should see your 
 ### Apple Watch Customizations
 
 #### Recommended Bolus Autofill
+(does not apply to versions of Dev branch built after <a href="https://github.com/LoopKit/Loop/pull/1132">6 Oct 2019</a>)
 The Apple Watch's default is to auto-fill to 75% of the recommended bolus.  If you wish, you can customize so that the watch auto-fills a different percentage. To do this, the multiplier can be changed from 0.75 to a value of your choice. A value of 1 will autofill 100% of the recommended bolus. A value of 0 will autofill 0% of the recommended bolus.   Go to the Watchapp Extension>>Controllers>>BolusInterfaceController.swift. Edit the section of line 96 for your customization.
 
 <p align="center">
