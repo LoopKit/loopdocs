@@ -8,7 +8,9 @@ If you add an Apple Watch after building Loop, you will need to pair your watch 
 
 Loop is currently supported with all released versions of the Apple Watch and Apple watchOS 4.1 and newer.  The cool factor is increased since the Loop user can directly enter carbs and boluses straight from the watch, without needing to access the iPhone.  The Loop watch app shows the Loop status, current BG, eventual BG, carb tool, and bolus tool.
 
-By tapping on the carb or bolus tools, you can adjust the entries using the crown to dial in more/less.  The default installation of the Loop's watch app auto-fills in 75% of the recommended bolus, and you can manually scroll to get the full bolus amount.  Please check the [Apple Watch customizations section](https://loopkit.github.io/loopdocs/build/code_customization/#apple-watch-customizations) if you wish to change that to 100% recommended bolus as the initial autofill.
+By tapping on the carb or bolus tools, you can adjust the entries using the crown to dial in more/less.  In Loop versions other than Dev branch, the default installation of the Loop's watch app auto-fills in 75% of the recommended bolus, and you can manually scroll to get the full bolus amount.  Please check the [Apple Watch customizations section](https://loopkit.github.io/loopdocs/build/code_customization/#apple-watch-customizations) if you wish to change that to 100% recommended bolus as the initial autofill.
+
+If you are already running Dev branch, Apple Watch will already auto-fill 100%. If there is any questions, check your phone before bolusing. If the numbers match, then your version of Loop is set to auto-fill 100%.
 
 If you swipe the Apple Watch Loop screen from right-to-left, a second screen is available.  This second screen displays a graph of recent BG and predicted BG data.  The crown can be turned to display IOB and COB as well.
 
