@@ -17,7 +17,7 @@
 
 Ok, technically this step could wait until after you build Loop app...but I have your attention now, so I'm taking advantage of it.
 
-With Loop use, you will no longer be using your PDM (if you use Omnipods) and your pump (if you use Medtronic) will so full of temp basals that the endos will have nothing to download at your next visit. This [lack of data](https://kdisimone.github.io/looptips/data/overview/) will cause a little friction with the health care industry; not good for your insurance records, not good for your endo to feel comfortable, and not good for you to know how your Loop use might be improved with settings tweaks.
+With Loop use, you will no longer be using your PDM (if you use Omnipods) and your pump (if you use Medtronic) will be so full of temp basals that the endos will have nothing to download at your next visit. This [lack of data](https://kdisimone.github.io/looptips/data/overview/) will cause a little friction with the health care industry; not good for your insurance records, not good for your endo to feel comfortable, and not good for you to know how your Loop use might be improved with settings tweaks.
 
 So let's explore options for your Loop data. There are three great options for where your Loop data can be stored and retrieved:
 
