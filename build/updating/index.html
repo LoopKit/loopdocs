@@ -633,7 +633,7 @@
         
             <li><a href="#when-to-update-loop">When to Update Loop</a></li>
         
-            <li><a href="#step-1-update-macos-and-xcode">Step 1: Update macOS and Xcode</a></li>
+            <li><a href="#step-1-avoid-build-errors-in-advance">Step 1: Avoid Build Errors in advance</a></li>
         
             <li><a href="#step-2-download-updated-loop-code">Step 2: Download Updated Loop Code</a></li>
         
@@ -678,17 +678,22 @@
 <h2 id="when-to-update-loop">When to Update Loop<a class="headerlink" href="#when-to-update-loop" title="Permanent link">⌁</a></h2>
 <p>You will have to rebuild your Loop app at a minimum once every 12 months. The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process.</p>
 <p>Under ordinary circumstances, you do not <em>have to</em> update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability.</p>
-<h2 id="step-1-update-macos-and-xcode">Step 1: Update macOS and Xcode<a class="headerlink" href="#step-1-update-macos-and-xcode" title="Permanent link">⌁</a></h2>
+<p>Since omnipod-testing branch has been retired and Loop v2.0 has been released, this is a good time to update your Loop app to the master branch. There will be some translations fixes in the near future. If you encounter any strange translations in master branch, please report them in in this <a href="https://www.facebook.com/groups/TheLoopedGroup/permalink/2454410898108895/">Looped Group thread</a> so that I can get them fixed.  Thank you!</p>
+<h2 id="step-1-avoid-build-errors-in-advance">Step 1: Avoid Build Errors in advance<a class="headerlink" href="#step-1-avoid-build-errors-in-advance" title="Permanent link">⌁</a></h2>
 <div class="admonition danger">
-<p class="admonition-title">Update Xcode</p>
-<p>Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS on your phone requires the newest Xcode version to properly build Loop.  Currently the most recent version of Xcode is 11.2.1. <strong>UPDATE YOUR XCODE BEFORE UPDATING YOUR LOOP APP. </strong>Check the App Store on your computer to see if there is an available update for Xcode.</u>  </p>
+<p class="admonition-title">Update to Xcode 11.3</p>
+<p>Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS on your phone requires the newest Xcode version to properly build Loop.  Currently the most recent version of Xcode is 11.3. <strong>UPDATE TO XCODE 11.3 BEFORE UPDATING YOUR LOOP APP. </strong></u> </p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Check your Apple Developer Account</p>
+<p>On October 28, 2019, Apple updated its License Agreement for the Developer Program. You need to login to your <a href="https://developer.apple.com/account/">developer account</a> and accept the new agreement, or you will get a build error.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Restart computer after updating Xcode<p>Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simultors or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough.</p>
 </p>
 </div>
 <h2 id="step-2-download-updated-loop-code">Step 2: Download Updated Loop Code<a class="headerlink" href="#step-2-download-updated-loop-code" title="Permanent link">⌁</a></h2>
-<p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on <strong>ONE</strong> of the links below to download an updated version of the Loop code:
+<p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on <strong>ONE</strong> of the links below to download an updated version of the Loop code. Almost every user should be using Master branch of Loop now. On December 31, 2019, Loop v2.0 was released and offers support for Omnipod and Medtronic users, as well as numerous features that have been in development and testing for awhile.
 </br></br>
 <p align="center">
 <a href="https://github.com/LoopKit/Loop/archive/master.zip">Loop: Master branch</a>
@@ -697,13 +702,6 @@
 <strong>OR</strong></br></br>
 <a href="https://github.com/LoopKit/Loop/archive/dev.zip">Loop: Dev branch</a>
 </p></br></p>
-<div class="admonition info">
-<p class="admonition-title">Reminder: DO NOT HAVE A SPACE IN YOUR DOWNLOAD FOLDER NAME</p>
-<p>If you already have an existing <code>Loop-master</code> folder from a previous download, the name of the next download will be something like <code>Loop-master (1)</code>.  The problem with that folder name is that it contains a space...and spaces in the name will cause your Loop build to fail.  So, either delete old copies of Loop before downloading/unzipping or rename the folder(s) to ensure that NO SPACES are in the folder name.
-<p align="center">
-<img src="../img/folder-name.png" width="550">
-</p></p>
-</div>
 <h2 id="step-3-build-like-normal">Step 3: Build Like Normal<a class="headerlink" href="#step-3-build-like-normal" title="Permanent link">⌁</a></h2>
 <p>From here it is just like the old directions...you can go straight to <a href="https://loopkit.github.io/loopdocs/build/step14/">Step 14 Build Loop app</a> and do just like you did the first time. Open the project, plug in the phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.</p>
 <p>Note: If this is a computer that hasn't built Loop before, you would want to make sure to do <a href="https://loopkit.github.io/loopdocs/build/step7/">Step 7: install Homebrew</a> before doing your build on that computer.</p>
