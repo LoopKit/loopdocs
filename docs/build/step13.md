@@ -5,23 +5,23 @@
     * 10 minutes to read this page
     
 !!!info "Summary"
-    * If you want to use Omnipod Loop, you should use the dev branch
-    * Medtronic pumps are supported on all branches of Loop
+    * Master branch of Loop has been recently updated to Loop v2.0
+    * All branches of Loop support both Medtronic and Omnipod pump users.
     
 !!!warning "FAQs"
     * **"What the heck is a branch?"** That's a great question. We have a page all about [Branch FAQs](https://loopkit.github.io/loopdocs/faqs/branch-faqs/)
     * **"How can I tell which version I have downloaded if I'm unsure?"** The downloaded Loop folder's name will give you an indication of which branch you downloaded. The folder name will be in the format `Loop-BranchName`. 
     * **"When do I need to download new Loop code?"** Anytime you want to update your Loop app to get new features, you'll simply download the code again by clicking on the links below. The links always go to the most recent version of each of the branches. It's a good idea is to delete your old downloads before making a new one, just to avoid confusion.
 
-You’ll need to download the Loop code in order to build the app on your computer.  **If you want to build a version of Loop that supports Omnipod, you should select the dev branch download, because Master branch only supports Medtronic pumps currently.** 
+## Pick a branch to download
+You’ll need to download the Loop code in order to build the app on your computer. Various versions of Loop code are stored in "branches". You have a choice of branches to build from...you'll pick one to download. Not sure what a branch is or what it means? You can read more details on the [Branch FAQs page](https://loopkit.github.io/loopdocs/faqs/branch-faqs/).
+
+Master vs Dev branch? Generally speaking, most users should stick to using Master branch. Experimental features and new code changes will be testing in the dev branch first...so that dev branch can be prone to having periodic glitches or regressions as the new features are developed. If you aren't a developer or debugging, stick to Master branch.  Click on ONE of the links below to download Loop code...hint hint...click on the Master branch for 99% of users.
 
 </br></br>
 <p align="center">
 [Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)</br></br>
 [Loop: Dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)</br></br>
-
-## Loop Branches
-Master vs Dev? Wondering which to choose? For now, if you are a pod user, you should choose dev branch. If you are a Medtronic user, you can choose either Master or Dev. To learn about the differences, please see the [Branch FAQs page](https://loopkit.github.io/loopdocs/faqs/branch-faqs/).
 
 ## Store and name your download properly
 It is best practice to leave your Loop code in your Downloads folder. If you store your Loop code in a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is **not** an iCloud drive. Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive? Check your System Preferences. If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and **NOT** appropriate places to save your Loop download.

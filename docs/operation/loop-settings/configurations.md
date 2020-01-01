@@ -36,7 +36,6 @@ If you run into problems or errors with your Loop, an Issue Report can be used t
     Entries into the configuration section will be available in mg/dL or mmol/L automatically, based upon how your blood glucose values are received. By default they are set to mg/dL, however once CGM values arrive in mmol/L these Loop settings can be entered in mmol/L. **If you are planning to use mmol/L, be sure to wait to set your entries until after you have started to receive CGM values in Loop.** If you do these in the wrong order, then your charts and entries may have incorrect units.
 
 ## Correction Range
-
 The correction range is your blood glucose range that you would like Loop to correct to. Correction range is not necessarily the same target blood glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction target of 100-110 for Loop to aim to, but use a desired BG target range of 80-180 when discussing things with your endo about "time in range".
 
 <p align="center">
@@ -49,19 +48,13 @@ Click the + in the upper right corner to add correction BG range(s). You can hav
 Correction ranges can be a single number, such as 100-100 mg/dL, or a range such as 100-120 mg/dL. Generally speaking, if you choose to use a range, keeping the range between about 10-30 mg/dL between the lowest and highest value is a good starting place.
 
 ### Override Ranges
-Below the Correction Range entry is a section called "Overrides". Override ranges provide temporary alternate correction ranges. These override ranges will only be enacted when you specifically activate pre-meal or workout mode using the buttons on the main Loop display or watchface. While active, they replace the correction range for Loop's recommendations. If the override ranges are not entered in this section, the buttons will remain grey and unusable on the main screen's toolbar.
+Below the Correction Range entry is a section called "Overrides" with a Pre-Meal setting. While active, the pre-meal targets will replace the usual correction range for Loop's temp basal recommendations. If a pre-meal range is not entered in this section, the icon will remain grey and unusable on the main screen's toolbar.
 
-**Pre-Meal:**
 The pre-meal override target can be used to as an easy way to get a small amount of insulin delivered before a meal in order to help control post-meal blood glucose spikes.
 
 If your normal target is 100-110 mg/dL and pre-meal target is 80-80 mg/dL, for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
 Loop will adjust any insulin bolus as needed based on the extra insulin provided during this pre-meal time.
-
-**Workout Mode:**
-Workout override target is designed to temporarily set your target higher in anticipation of exercise or other activities which tend to make the user more insulin sensitive or need less insulin. By setting a higher temp target such as 140-160 mg/dL ahead of activity, Loop will recommend smaller basal rate(s) than normally scheduled in order to to bring blood glucose up to the higher target.
-
-The success of this strategy will be dependent on how far in advance of activity the override target is set. Generally, users set the target approximately 1-2 hours in advance of planned activities, but the optimal timing will depend on the activity, duration, and intensity. Additionally, any insulin on board from recent boluses may overwhelm the Loop's ability to counteract exercise-induced lows through lower temp basals alone. Please see LoopTips.org for additional information about [exercise and Loop](https://kdisimone.github.io/looptips/how-to/exercise/).
 
 ## Suspend Threshold
 The suspend threshold must be set up for successful configuration of Loop. **Your Loop will not turn green without setting this value.** This value affects both bolus and basal recommendations by Loop.
@@ -78,7 +71,11 @@ Reasonable settings for suspend threshold will depend on user preference, but re
 
 ## Basal Rates
 
-Your basal rates have already been initially populated when you finished the `Add Pump` part of the setup previously.  Only one basal schedule may be set in each Loop app. The basal increments are available according to the increments of the particular pump/pod you are using. Not all pumps provide the same increments for basal deliveries. Basal schedule must start at midnight and cannot contain rates of 0 U/hr.
+
+!!!danger ""
+    **Note: You cannot enter basal rates until you first add a pump in Loop settings.** Your basal rates will be initially populated when you walk through the `Add Pump` part of the setup at the beginning of this setup guide.  
+    
+Only one basal schedule may be set in each Loop app. The basal increments are available according to the increments of the particular pump/pod you are using. Not all pumps provide the same increments for basal deliveries. Basal schedule must start at midnight and cannot contain rates of 0 U/hr.
 
 If you need to edit your basal schedule, simply make the edits as needed and then click on `Save to Pump...` or `Sync With Pod` button, depending on which pump you are using. 
 

@@ -1,8 +1,8 @@
 # Override Presets
 
-Overrides are a new feature to Loop; currently available on dev branch only. Overrides were developed as a method of more easily letting Loop know that you have a situation which is affecting your overall insulin needs, without needing to manually edit your basal schedule/ISF/carb ratios individually. Examples where this can be helpful include hormone cycles, steroid medications, exercise, and other situations which may temporarily (either shorter or longer term) affect your underlying insulin needs.
+Overrides were developed as a method of letting Loop know that you have a situation affecting your overall insulin needs, without needing to manually edit your basal schedule/ISF/carb ratios individually. Examples where this can be helpful include hormone cycles, steroid medications, exercise, and other situations which may temporarily (either shorter or longer term) affect your underlying insulin needs.
 
-Override presets are (1) optional and (2) can be configured within Loop settings. Override presets take the place of the old Workout override. Once override presets are configured in Loop settings, they can be turned on/off by using the old Workout icon (heart icon in the toolbar) on the home screen of Loop.
+Override presets are (1) optional and (2) can be configured within Loop's workout icon (the little blue heart icon in the Loop toolbar). Once override presets are created, they can be turned on/off by using the workout icon as well.
 
 <p align="center">
 <img src="../img/toolbar.png" width="450">

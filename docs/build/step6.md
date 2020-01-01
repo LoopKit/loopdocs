@@ -22,7 +22,7 @@ If you decide to use a **FREE** developer account, here's what you need to know:
 
 1. Loop apps signed with a free developer team will expire after 7 days.  On the 7th day, your Loop app will simply turn white when you open it and then immediately close. To rebuild the Loop app, you will have to find a computer and rebuild the app onto your iPhone again. You cannot rebuild the app on day 5 (when it is convenient, for example)...hoping to reset the 7-day clock.  The app will still expire on the 7th day from when it was first signed and created.</br></br>
 2. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app in order to sign it with the new paid account.</br></br>
-3. You will have to do an extra step during the build process to remove Siri capabilities in order to build with free accounts.</br></br>
+3. You will have to do an extra step during the build process to remove Siri and Apple Push capabilities in order to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use remote overrides through Nightscout.</br></br>
 
 ## Paid Developer Account
 

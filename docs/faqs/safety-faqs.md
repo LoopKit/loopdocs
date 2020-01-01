@@ -13,4 +13,7 @@ Do not let other apps, such as Spike App or MyFitnessPal, on your iPhone write c
 
 After a site change and reservoir rewind, Medtronic's pump will have a menu on the pump screen related to finishing your prime. Make sure you complete that screen and always return to the main menu. Medtronic's pump won't resume basal insulin delivery until that priming screen is completed.
 
-## 
+## Know your settings
+
+Do not enter in settings that you are unsure of. For example, if you haven't any idea what your carb ratio is, please don't enter a zero or a wild guess. Instead, test your settings and talk to your health care provider about what your appropriate settings should be.
+
