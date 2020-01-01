@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
 
-	<title>Step 5: Override Presets - LoopDocs</title>
+	<title>Pre-meal target - LoopDocs</title>
 
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -259,7 +259,7 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -282,13 +282,13 @@
         
             
 <li >
-    <a href="../mdt-pump/">Add Medtronic</a>
+    <a href="../../loop-settings/mdt-pump/">Add Medtronic</a>
 </li>
 
         
             
 <li >
-    <a href="../omnipod-pump/">Add Omnipod</a>
+    <a href="../../loop-settings/omnipod-pump/">Add Omnipod</a>
 </li>
 
         
@@ -298,37 +298,31 @@
                     
                         
 <li >
-    <a href="../cgm/">Step 3: Add CGM</a>
+    <a href="../../loop-settings/cgm/">Step 3: Add CGM</a>
 </li>
 
                     
                         
 <li >
-    <a href="../configurations/">Step 4: Configurations</a>
-</li>
-
-                    
-                        
-<li class="active">
-    <a href="./">Step 5: Override Presets</a>
+    <a href="../../loop-settings/configurations/">Step 4: Configurations</a>
 </li>
 
                     
                         
 <li >
-    <a href="../services/">Step 6: Loop Services</a>
+    <a href="../../loop-settings/services/">Step 5: Loop Services</a>
 </li>
 
                     
                         
 <li >
-    <a href="../displays/">Loop Displays</a>
+    <a href="../../loop-settings/displays/">Loop Displays</a>
 </li>
 
                     
                         
 <li >
-    <a href="../rileylink/">RileyLink menu</a>
+    <a href="../../loop-settings/rileylink/">RileyLink menu</a>
 </li>
 
                     
@@ -337,7 +331,7 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -348,49 +342,61 @@
         
             
 <li >
-    <a href="../../features/carbs/">Carb Entries</a>
+    <a href="../carbs/">Carb Entries</a>
 </li>
 
         
             
 <li >
-    <a href="../../features/bolus/">Bolus</a>
+    <a href="../bolus/">Bolus</a>
 </li>
 
         
             
 <li >
-    <a href="../../features/workout/">Workout Targets</a>
+    <a href="../workout/">Overrides</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Pre-meal target</a>
 </li>
 
         
             
 <li >
-    <a href="../../features/ice/">Using ICE info</a>
+    <a href="../healthapp/">Health app</a>
 </li>
 
         
             
 <li >
-    <a href="../../features/watch/">Apple Watch</a>
+    <a href="../ice/">Using ICE info</a>
 </li>
 
         
             
 <li >
-    <a href="../../features/widget/">iPhone widget</a>
+    <a href="../watch/">Apple Watch</a>
 </li>
 
         
             
 <li >
-    <a href="../../features/notifications/">Loop Notifications</a>
+    <a href="../widget/">iPhone widget</a>
 </li>
 
         
             
 <li >
-    <a href="../../features/battery/">Pump Battery</a>
+    <a href="../notifications/">Loop Notifications</a>
+</li>
+
+        
+            
+<li >
+    <a href="../battery/">Pump Battery</a>
 </li>
 
         
@@ -604,12 +610,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../configurations/">
+                    <a rel="next" href="../workout/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../services/">
+                    <a rel="prev" href="../healthapp/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -623,74 +629,23 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#override-presets">Override Presets</a></li>
-        
-            <li><a href="#how-overrides-work">How overrides work</a></li>
-        
-            <li><a href="#how-overrides-do-not-work">How overrides do NOT work</a></li>
-        
-            <li><a href="#making-your-override-presets">Making your override presets</a></li>
-        
-            <li><a href="#activating-your-override">Activating your override</a></li>
-        
-            <li><a href="#deactivating-your-override">Deactivating your override</a></li>
-        
-            <li><a href="#remote-overrides-in-initial-testing">Remote overrides (in initial testing)</a></li>
+        <li class="main active"><a href="#pre-meal-targets">Pre-meal targets</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="override-presets">Override Presets<a class="headerlink" href="#override-presets" title="Permanent link">⌁</a></h1>
-<p>Overrides are a new feature to Loop; currently available on dev branch only. Overrides were developed as a method of more easily letting Loop know that you have a situation which is affecting your overall insulin needs, without needing to manually edit your basal schedule/ISF/carb ratios individually. Examples where this can be helpful include hormone cycles, steroid medications, exercise, and other situations which may temporarily (either shorter or longer term) affect your underlying insulin needs.</p>
-<p>Override presets are (1) optional and (2) can be configured within Loop settings. Override presets take the place of the old Workout override. Once override presets are configured in Loop settings, they can be turned on/off by using the old Workout icon (heart icon in the toolbar) on the home screen of Loop.</p>
+<h1 id="pre-meal-targets">Pre-meal targets<a class="headerlink" href="#pre-meal-targets" title="Permanent link">⌁</a></h1>
 <p align="center">
 <img src="../img/toolbar.png" width="450">
 </p>
 
 <p></br></p>
-<h2 id="how-overrides-work">How overrides work<a class="headerlink" href="#how-overrides-work" title="Permanent link">⌁</a></h2>
-<p>Overrides allow you to specify an overall iinsulin needs adjustment, a target range, and a duration for the override with each preset. The overall insulin needs adjustment is a multiplier adjustment to your scheduled basal rates, carb ratios, and insulin sensitivities all together. In other words, overall insulin needs percent will affect boluses and temp basal recommendations both.  </p>
-<p>Notice the fine-print below the orange bar showing the overall adjustment graphic..."Basal, bolus, and correction insulin dose amounts are increased by 20%" in the example with a 120% overall insulin needs adjustment. So, 100% overall needs means no multiplier will be applied to your basal, insulin sensitivities, or carb ratio...but you could still use a 100% preset simply to define a different target range for a period of time. </p>
-<p>Recapping: If you set an overall insulin needs adjustment below 100%, you are telling Loop that you are more insulin sensitive and will need a lighter touch with all things insulin. If you set an overall insulin needs adjustment above 100%, you are telling Loop that you are less insulin sensitive and will need a more aggressive touch with all things insulin.</p>
-<p align="center">
-<img src="https://loopkit.github.io/loopdocs/operation/loop-settings/img/override-entry.jpeg" width="350">
-</p>
-
-<p></br></p>
-<h2 id="how-overrides-do-not-work">How overrides do NOT work<a class="headerlink" href="#how-overrides-do-not-work" title="Permanent link">⌁</a></h2>
-<p>Overrides will work while you are Looping. Sounds obvious, right? But, the thing to remember is that the adjustments (multipliers) that overrides make are not saved back to your Medtronic pump or Omnipod. They only exist in the Loop app.</p>
-<div class="admonition danger">
-<p class="admonition-title">If you walk away from iPhone and/or RileyLink...</p>
-<p>If you stop Looping (i.e., walk away from your gear), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates AS DEFINED IN YOUR LOOP SETTINGS. Your adjusted needs as set-up in any override will not continue if your Loop is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and RileyLink and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals.</p>
-</div>
-<h2 id="making-your-override-presets">Making your override presets<a class="headerlink" href="#making-your-override-presets" title="Permanent link">⌁</a></h2>
-<p>To make your override presets, simply tap on the override presets row in Loop settings' configurations (below the Insulin Sensitivities row). Then click the <code>+</code> sign in the upper right corner to start a new preset entry.</p>
-<p>All the rows need to be filled out in the preset in order to save your new preset</p>
-<ul>
-<li>Pick an emoji</li>
-<li>Enter a name for the preset (the default "Running" is just a placeholder)</li>
-<li>Enter an overall insulin needs adjustment (10% to 200% in increments of ten percent, with 100% being your regularly scheduled insulin needs)</li>
-<li>Enter a target range (<strong>make sure to enter the target range low-high</strong> or you could crash your app...do not enter the range high-low)</li>
-<li>Select whether you want the override to run indefinitely or for a finite time.</li>
-</ul>
-<p>When you've made all those adjustments, save the the preset using the "Save" button in the upper right corner.</p>
-<h2 id="activating-your-override">Activating your override<a class="headerlink" href="#activating-your-override" title="Permanent link">⌁</a></h2>
-<p>To enact your override preset, you simply tap on the workout icon in the Loop's main screen toolbar and select your override from your list of presets that you programmed in previously in the step above.</p>
-<p align="center">
-<img src="../img/override-selection.PNG" width="300">
-</p>
-
-<p>The heart will be highlighted in a blue square while active and a banner notification will appear at the top of the Loop's main screen. Additionally, you'll see a darker blue target area indicating the override's target range and duration in your Loop's blood glucose graph.</p>
-<p align="center">
-<img src="../img/override-enacted.PNG" width="300">
-</p>
-
-<h2 id="deactivating-your-override">Deactivating your override<a class="headerlink" href="#deactivating-your-override" title="Permanent link">⌁</a></h2>
-<p>This is simple...just tap the heart icon to turn off your override at any time. Override presets that have been programmed with a finite duration will automatically deactivate when their time's duration reaches the end.</p>
-<h2 id="remote-overrides-in-initial-testing">Remote overrides (in initial testing)<a class="headerlink" href="#remote-overrides-in-initial-testing" title="Permanent link">⌁</a></h2>
-<p><strong>Under very initial testing...</strong> You can also use your Nightscout site to activate/deactivate your Loop's override presets. To accomplish this, you will need to do some legwork as outlined on <a href="https://loopkit.github.io/loopdocs/nightscout/remote-overrides/">this page for how how to setup Remote Overrides in Nightscout</a></p></div>
+<p>The Loop toolbar's second icon from the left is a small clock with a knife and fork on the sides. This is the pre-meal tool. The tool will be colored grey until you define a set of blood glucose targets for it in Loop settings (within the Correction Range section). Once you set pre-meal targets in that section, the icon will be colored green and available for use.</p>
+<p>The pre-meal override target can be used to as an easy way to get a small amount of insulin delivered before a meal in order to help control post-meal blood glucose spikes. It's not designed to replace a traditional pre-bolus, but rather as a more gentle way to build up some pre-meal insulin activity.</p>
+<p>If your normal target is 100-110 mg/dL and pre-meal target is 80-80 mg/dL, for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first. Setting an override will also cancel pre-meal target.</p>
+<p>Loop will adjust any insulin bolus as needed based on the extra insulin provided during this pre-meal time.</p></div>
         </div>
 
         <footer class="col-md-12">

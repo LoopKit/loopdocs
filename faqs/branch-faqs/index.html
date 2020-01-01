@@ -310,13 +310,7 @@
                     
                         
 <li >
-    <a href="../../operation/loop-settings/overrides/">Step 5: Override Presets</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/services/">Step 6: Loop Services</a>
+    <a href="../../operation/loop-settings/services/">Step 5: Loop Services</a>
 </li>
 
                     
@@ -360,7 +354,19 @@
         
             
 <li >
-    <a href="../../operation/features/workout/">Workout Targets</a>
+    <a href="../../operation/features/workout/">Overrides</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/premeal/">Pre-meal target</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/healthapp/">Health app</a>
 </li>
 
         
@@ -625,17 +631,17 @@
     
         <li class="main active"><a href="#branch-faqs">Branch FAQs</a></li>
         
-            <li><a href="#what-are-all-these-branches">What are all these branches?</a></li>
+            <li><a href="#what-are-branches">What are branches?</a></li>
         
-            <li><a href="#so-what-wasis-omnipod-testing-branch">So what was/is Omnipod-testing branch?</a></li>
+            <li><a href="#what-happened-to-omnipod-testing-branch">What happened to Omnipod-testing branch?</a></li>
         
-            <li><a href="#what-is-the-future-of-omnipod-testing-branch-will-it-be-updated">What is the future of omnipod-testing branch? Will it be updated?</a></li>
+            <li><a href="#loop-v20">Loop v2.0</a></li>
         
             <li><a href="#how-can-i-stay-current-with-whats-going-on-in-the-branches">How can I stay current with what's going on in the branches?</a></li>
         
-            <li><a href="#what-are-the-differences-in-branches-now">What are the differences in branches now?</a></li>
+            <li><a href="#what-is-expected-in-the-future">What is expected in the future?</a></li>
         
-            <li><a href="#carb-model-changes-in-dev">Carb Model changes in Dev</a></li>
+            <li><a href="#carb-model-changes">Carb Model changes</a></li>
         
     
     </ul>
@@ -644,7 +650,7 @@
 
 <h1 id="branch-faqs">Branch FAQs<a class="headerlink" href="#branch-faqs" title="Permanent link">⌁</a></h1>
 <p>This page is mostly suited to people who have built the app once already and then are coming back to update. In the course of updating, you may be wondering about the different branches, what the differences are, and such...so let's try to answer some of those questions as best we can.</p>
-<h2 id="what-are-all-these-branches">What are all these branches?<a class="headerlink" href="#what-are-all-these-branches" title="Permanent link">⌁</a></h2>
+<h2 id="what-are-branches">What are branches?<a class="headerlink" href="#what-are-branches" title="Permanent link">⌁</a></h2>
 <p>Yes, there are a lot of "branches" in Loop talk but the concept is simple. I'll use an analogy to help. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.</p>
 <p>To really understand what branches are, we should probably explain a little more about Loop's code and how development works.</p>
 <p>Loop developers own an account in GitHub called <a href="https://github.com/LoopKit">LoopKit</a>.  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.</p>
@@ -657,18 +663,18 @@
 <p>So let's imagine Loop as a cookbook. The developers are the authors/chefs of the recipes (code) in the cookbook. The authors spend countless hours testing new recipes, taste testing, documenting improvements. They send the drafts to the editor, who makes suggestions and eventually the cookbook is finalized. There are no grammar issues, no typos, the photos are beautiful and the recipes are yummy. They publish the book and you see a gorgeous final product on the shelves. That is called a "release" and it is the master branch. This book has been well-tested and is super stable. Every time you cook with those recipes, you know exactly what you're getting and lots of people have had a chance before you to make sure that it all tastes good. Master branch is stable and tested.</p>
 <p>But then...the chefs/developers go on a trip. They are inspired by new cuisine and want to add new recipes to the old cookbook. (Things like omnipod support and overrides are new "recipes" that were developed since the last master release, for example.) But, the process for developing a recipe is arduous. Lots of trial and error involved. Lots of tweaking ingredients (code). The editors try out the new recipes and offer feedback (similar to the <a href="https://github.com/LoopKit/Loop/issues">Issues List in GitHub</a>). While the recipes are being developed, they have a version of the old cookbook that gets marked up...edited in pencil a lot. Scribbles and notes in the side. Revisions happen frequently, because that's what testing new recipes is all about. These marked-up versions of the cookbook are called "dev" branch. Short for "development" branch. Like the name sounds...this is where new developments are happening, new recipes and tweaks. </p>
 <p>After much testing and tweaking, eventually the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in Loop, Loop's master branch is updated with the new features coming from dev (aka, "dev branch is merged into master branch"). When that happens, master branch gets another "release" version (you can see release history <a href="https://github.com/LoopKit/Loop/releases">here</a>) and for that one day...dev and master are exactly the same. They stay the same until the Loop developers start working on the next batch of improvements, could be the next hour even or days later, but the process begins again. The developers will start editing the code again and dropping those edits in dev branch for further development.</p>
-<h2 id="so-what-wasis-omnipod-testing-branch">So what was/is Omnipod-testing branch?<a class="headerlink" href="#so-what-wasis-omnipod-testing-branch" title="Permanent link">⌁</a></h2>
+<h2 id="what-happened-to-omnipod-testing-branch">What happened to Omnipod-testing branch?<a class="headerlink" href="#what-happened-to-omnipod-testing-branch" title="Permanent link">⌁</a></h2>
 <p>Omnipod Loop development testing (not talking about the actual hacking work that preceded that) was done by a smaller group of people privately for months and months before public release of the omnipod-testing branch. This smaller group of people (several dozen) were actively watching their Omnipod Loops and capturing bug reports. There was a lot of work put in by the testers and Pete Schwamb (Loop Developer) to get the code fairly stable and reliable. </p>
-<p>When the code got to a stable, reliable state and was ready for a larger audience, omnipod-testing branch was made available as a "public testing" branch. This branch is slightly different than a dev branch. What it means is that it was pretty well tested, but not necessarily going to be perfect for everyone right away. There were expectations that some user-interface requests might be asked for after having a wider audience of users (bolus beeps is a good example of that kind of testing outcome). </p>
+<p>When the code got to a stable, reliable state and was ready for a larger audience, omnipod-testing branch was made available as a "public testing" branch. This branch was pretty well-tested prior to public release, but not necessarily going to be perfect for everyone right away. There were expectations that some user-interface requests might be asked for after having a wider audience of users. </p>
 <p>Also, omnipod-testing branch was not going to undergo a lot of active revisions to it when it was released. The intent was to keep it as a fairly known, unchanged product for people rather than a constantly changing code set...that way if people noted a bug, it would be a more "known" code base to work to debug.</p>
-<p>So, omnipod-testing branch has undergone very little revision since it was first released. In fact, since its release in late April/early May 2019, there has only been two updates; one for the newer style Dexcom G6 transmitters and one for iOS 13 compatibility. Nothing major has been done in that branch, intentionally. As described above, the branch is serving as a stable platform for users and has helped catch bugs as a result of NOT being changed constantly.</p>
-<h2 id="what-is-the-future-of-omnipod-testing-branch-will-it-be-updated">What is the future of omnipod-testing branch? Will it be updated?<a class="headerlink" href="#what-is-the-future-of-omnipod-testing-branch-will-it-be-updated" title="Permanent link">⌁</a></h2>
-<p>No. Omnipod-testing branch is not going to be "updated" in the way many people are asking about. Little code fixes going in constantly will not happen. The reasons are given above. Omnipod-testing branch was just for that...testing that code in a static, fairly unchanged format to learn the most from it in a clean way.</p>
-<p>As I just mentioned, bugs have been found in omnipod-testing branch. Those bugs are being squashed in dev branch and not in omnipod-testing branch. WHY? Because dev branch is the place for new code testing. Like playing a game of Jenga, changing code to squash one bug may result in unintended consequences that cause another bug. So the playground for that kind of testing is most appropriate for dev branch. Omnipod-testing branch is not a place to be testing bug squashes and code changes.</p>
-<p>When dev gets more stable and the bugs are squashed/cleaned up, eventually that cleaned up code will be announced as a recommended replacement for omnipod-testing branch. Don't worry...there will be LoopDocs updates, pinned announcements in Looped and Zulipchat, Instagram posts, etc. You shouldn't be able to miss it.</p>
+<p>Omnipod-testing branch has served its purpose as an initial platform to test Pod looping. It has been officially retired now and is no longer needed. Omnipod support has been folded into the normal master and dev branches now.  Thank you, omnipod-testing branch...you served us well. Happy retirement.</p>
+<h2 id="loop-v20">Loop v2.0<a class="headerlink" href="#loop-v20" title="Permanent link">⌁</a></h2>
+<p>On December 31, 2020, Loop released Loop v2.0. This means that the cookbook from dev branch (to use our earlier analogy) was merged into master. On December 31st, master and dev branches were identical.</p>
+<p>From that date forward though, dev branch will start to work on its new recipes again. Dev branch will start to diverge from master branch with untested changes and development of new code. Dev branch may start to have some bugs and regressions as a result of the coming/going of code changes that will happen without much announcement or discussion.</p>
+<p>So, most all users should now start building with master branch again. That branch will stay in the same stable condition it has been for awhile now. Only use dev branch if you are interested in actively testing new features and have the ability to track/document bugs.</p>
 <h2 id="how-can-i-stay-current-with-whats-going-on-in-the-branches">How can I stay current with what's going on in the branches?<a class="headerlink" href="#how-can-i-stay-current-with-whats-going-on-in-the-branches" title="Permanent link">⌁</a></h2>
-<p>Now we've learned that master and omnipod-testing branches really aren't changing much. They've each had some "hot-fixes" for late-breaking things that were needed for users in a timely fashion; the updated G6 transmitters and iOS update compatibility...but mostly the essential core of the code remains intentionally unchanged in those branches. ("Hot-fixes" are code changes to keep core functions when one of the outside pieces triggered the need. Apple and Dexcom changing their gear represent times when hot-fixes are most likely, but do not represent a major release change. Most people will want to update their Loop apps after a hot-fix is merged into the branch because those help ensure your gear works as expected.)</p>
-<p>So it's just dev branch that changes often. The developers need YOU to know that dev is a constantly shifting, moving place. If you choose to come into a dev branch build...you need to be aware that is what dev does...moves, shakes, changes, and will update code frequently and unannounced in the traditional sense that most users in Looped group or Instagram would see. Developers are not helped by people being in a dev branch if those users are mistakenly thinking of it as a stable master branch with lots of detailed docs to go with it. People should only use a dev branch build if they EDUCATE themselves on the expectations and how to properly manage dev information and updates. People using dev branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified. </p>
+<p>Like we said earlier, master branch won't really be changing much. You don't really need to watch that one for changes.</p>
+<p>But, dev branch is a constantly shifting, moving place. If you choose to come into a dev branch build...you need to be aware that is what dev does...moves, shakes, changes, and will update code frequently and unannounced in the traditional sense that most users in Looped group or Instagram would see. Developers are not helped by people being in a dev branch if those users are mistakenly thinking of it as a stable master branch with lots of detailed docs to go with it. People should only use a dev branch build if they EDUCATE themselves on the expectations and how to properly manage dev information and updates. People using dev branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified. </p>
 <p>If you choose to use a dev build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy Loopdocs page updated regularly with current "dev updates"...that's just not the way dev branch works.</p>
 <h3 id="watch-the-loop-repo-and-issues-list">Watch the Loop Repo and Issues list<a class="headerlink" href="#watch-the-loop-repo-and-issues-list" title="Permanent link">⌁</a></h3>
 <p>First, subscribe to the Loop repo's Issues list by "watching" the <a href="https://github.com/LoopKit/Loop">Loop repo</a>. You can choose to watch the repo so that you get emails when new Issues are reported. This is a good way to find out if there's other people reporting odd behavior that you are wondering about. If you use dev and wonder about something you are seeing in Loop, you can check <a href="https://github.com/LoopKit/Loop/issues">Issues list</a> to see if others are noticing the same. If so, you can help by capturing information and reporting it. Not super helpful to just say "yeah, me too..." but better if you can attach screenshots, Issue Reports from Loop settings, and a thorough description of the problem you are seeing. Be a part of the solution by thoughtfully providing information to help debug.</p>
@@ -685,7 +691,6 @@
 <p>You can also go directly to the commit history for each of the branches if you'd like.</p>
 <p><a href="https://github.com/LoopKit/Loop/commits/master">Loop master branch commit history</a></p>
 <p><a href="https://github.com/LoopKit/Loop/commits/dev">Loop dev branch commit history</a></p>
-<p><a href="https://github.com/LoopKit/Loop/commits/omnipod-testing">Loop omnipod-testing branch commit history</a></p>
 <p>If you click on the commit, you can see exactly what changes to the code were made. It's an interesting learning experience. In red are the code that is old, in green is the updated code. The line numbers and file names of the edited code are also there to help.</p>
 <p align="center">
 <img src="../img/commit.png" width="650">
@@ -696,44 +701,26 @@
 <p>Third, keep watching Looped group. Major concerns/issues are brought up there...so no harm in scrolling through and seeing what's going on there.</p>
 <h3 id="become-familiar-with-your-data-sources">Become familiar with your data sources<a class="headerlink" href="#become-familiar-with-your-data-sources" title="Permanent link">⌁</a></h3>
 <p>Another useful thing if you'll be on dev branches undergoing a lot of active change...know how Loop works and where to look for additional information about what you are seeing. For example, if you see an IOB value that looks odd, you should know to look at the insulin deliveries are stored in Health app. Knowing to pull an Issue Report when you see a problem so you can provide that if asked. Knowing <a href="https://youtu.be/Ac4MguvUO7M">how to capture debugging logs if the developers ask for that kind of info</a> is also a good skill. </p>
-<h2 id="what-are-the-differences-in-branches-now">What are the differences in branches now?<a class="headerlink" href="#what-are-the-differences-in-branches-now" title="Permanent link">⌁</a></h2>
-<p>Roughly speaking...right now (November 14th):</p>
+<h2 id="what-is-expected-in-the-future">What is expected in the future?<a class="headerlink" href="#what-is-expected-in-the-future" title="Permanent link">⌁</a></h2>
+<p>Roughly speaking...right now (December 31st):</p>
 <ul>
 <li>
-<p>Master: No Omnipod support, only Medtronic users. Stable. The next update will depend on how long dev takes to settle down and get some good testing showing stability.</p>
+<p>Master: we know that there will need to be cleanup of the new translations. There were lots of new phrases and development with a lot of new languages, as well. Master (and dev) branch will be updated with fixes for the translations. When those translation fixes are done, there will be a Loop v2.1 released.</p>
 </li>
 <li>
-<p>Omnipod-testing branch: <a href="https://github.com/LoopKit/Loop/issues/1034">known bug for IOB tracking</a> that has been discussed a lot in Looped group (go ahead and search group if you want to read up on it) for Pod users. The fix for this bug has been implemented in dev branch...the fix is NOT in omnipod-testing branch for reasons discussed above.</p>
-</li>
-<li>
-<p>Dev: Dev branch has the following noticeable differences from omnipod-testing and master braches</p>
-<ul>
-<li>fix for the IOB tracking for Pod users</li>
-<li><a href="https://loopkit.github.io/loopdocs/operation/loop-settings/overrides/">Overrides</a></li>
-<li><a href="https://loopkit.github.io/loopdocs/nightscout/remote-overrides/">Remote Overrides</a></li>
-<li>Nightscout profile automatic updating when you update basals, carb ratios, or ISF in Loop</li>
-<li>Updated carb absorption model (called non-linear)
-</br></li>
-</ul>
+<p>Dev: Dev branch's future development is best tracked by watching and reviewing <a href="https://github.com/loopkit/loop/pulls">pull requests in GitHub</a>. This is the list where code changes are initially proposed and discussed.</p>
 </li>
 </ul>
-<p>Known issues in Dev branch currently:</p>
-<ul>
-<li><a href="https://github.com/LoopKit/Loop/issues/1170">Settings can sometimes temporarily "disappear"</a></li>
-<li><a href="https://github.com/LoopKit/Loop/issues/1110">Medtronic users timestamp for scheduled basals in HUD may be wrong</a></li>
-</ul>
-<p>Remember to use the <a href="https://github.com/LoopKit/Loop/issues">LoopKit Github Issues page</a> to check for any reported issues that might resemble things you are wondering about. If you'd like to report a bug, check the list and see if someone has already opened an issue for it.</p>
-<h2 id="carb-model-changes-in-dev">Carb Model changes in Dev<a class="headerlink" href="#carb-model-changes-in-dev" title="Permanent link">⌁</a></h2>
-<p>Dev branch has recently been updated with a new carb model, so let's give some info about the update.</p>
+<h2 id="carb-model-changes">Carb Model changes<a class="headerlink" href="#carb-model-changes" title="Permanent link">⌁</a></h2>
+<p>All branches (master and dev) were recently updated with a new carb model, so let's give some info about the update.</p>
 <p>Previously, the carb model Loop used had a linear absorption predicted with dynamic carbs adjustments (Master and omnipod-testing branch still use that model). What this means is that food absorption was modeled as a flat, even effect (like the straight grey graph that you'll see in the <a href="https://loopkit.github.io/loopdocs/operation/features/ice/">Insulin Counteraction Effects chart</a> after you added a carb entry. But looking at large groups of meals' datasets (and supported by personal, anecdotal experiences), food really has a bit more of a non-linear absorption. Meaning, we usually see more of a food impact up-front than the old carb model in Loop predicted.</p>
 <p>What did that mismatch mean for us if the model predicts a linear absorption, but the meal actually behaves differently? </p>
 <ol>
 <li>Bolusing: You've probably seen smaller upfront boluses for meals than you would have preferred. This is because the insulin was predicted to over-power the linear (slower) carb model soon after a bolus is given.</li>
 <li>Early low temp basals: You've also probably seen a tendency to have early zero basal or low basals set by Loop for the first 30-60 minutes after a meal bolus if you don't have a significant blood glucose spike immediately after the carb entry. This might have been even more obvious for those of you who are regularly waiting to eat after a bolus, too.</li>
 </ol>
-<p>With a non-linear absorption model (that is now in dev), the carb absorption will more closely match observed blood glucose impacts we've seen after meals. And when the model is more closely matching actual experience, that means the predicted blood glucose curves will do a better job at providing more upfront bolus and not having the tendency to have overly conservative temp basals soon after a meal.</p>
-<p><strong>What do you have to do to use the new model?</strong> Nothing. It is baked into the dev branch now. Simply update your Loop app using dev branch code and you will be using the new model.</p>
-<p><strong>How do you know if you got the update done properly?</strong> You can check the top of your Issue Report in Loop settings and it should say the <code>buildDateString</code> in the top area. If your date there matches the date you updated...that's a good start. </p>
+<p>With a non-linear absorption model, the carb absorption will more closely match observed blood glucose impacts we've seen after meals. And when the model is more closely matching actual experience, that means the predicted blood glucose curves will do a better job at providing more upfront bolus and not having the tendency to have overly conservative temp basals soon after a meal.</p>
+<p><strong>What do you have to do to use the new model?</strong> Nothing. It is baked into master and dev branches now. Simply update your Loop app and you will be using the new model.</p>
 <p><strong>What should you expect?</strong> Like the description above, you'll likely see more complete bolus recommendations and less low temping after a bolus. With that in mind, if you've made adjustments to your Loop habits or settings to overcome those issues previously, you may want to undo those habits. Like if you shortened carb absorption times to help get larger boluses upfront, you may want to go back to standard times. Keep an eye on things and you should adjust as needed.</p>
 <p><strong>What if you want to go back to the old model?</strong> You will have to edit a line in LoopKit's LoopKit code <a href="https://github.com/LoopKit/LoopKit/blob/dev/LoopKit/CarbKit/CarbStore.swift#L207">here</a> to use <code>.linear</code> if you wanted to go back to the old carb model. If you want to read more about the model, please check out the <a href="https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Possible.20Carb.20Model.20Changes">Zulipchat thread here</a>. But realize that the code edit for changing models would be easiest done using a <a href="https://loopkit.github.io/loopdocs/build/loopworkspace/">LoopWorkspace</a> because the edit is in one of the frameworks that Loop uses (rather than Loop code itself), so this is one of those instances where you will have to do some work to learn how to use a LoopWorkspace properly.</p></div>
         </div>

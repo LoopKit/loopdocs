@@ -310,13 +310,7 @@
                     
                         
 <li >
-    <a href="../overrides/">Step 5: Override Presets</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../services/">Step 6: Loop Services</a>
+    <a href="../services/">Step 5: Loop Services</a>
 </li>
 
                     
@@ -360,7 +354,19 @@
         
             
 <li >
-    <a href="../../features/workout/">Workout Targets</a>
+    <a href="../../features/workout/">Overrides</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../features/premeal/">Pre-meal target</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../features/healthapp/">Health app</a>
 </li>
 
         
@@ -641,7 +647,7 @@
 <h1 id="loop-displays">Loop Displays<a class="headerlink" href="#loop-displays" title="Permanent link">⌁</a></h1>
 <p>This section of the docs will go over the Loop displays available and what information they offer.  Information about your Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app.  </p>
 <h2 id="status-screen">Status Screen<a class="headerlink" href="#status-screen" title="Permanent link">⌁</a></h2>
-<p>The Status Screen is the main root navigation screen in Loop. It is broken up into 3 main display areas; Heads Up Display (HUD), Charts, and Toolbar. The HUD is the top area of the screen. This shows the status of the last time loop ran, current BG Reading, current temp basal, and current pump information. The next area is the charting area. This includes, glucose trend and prediction, Active Insulin, Insulin Delivery, and Carbohydrates. The final display area is the toolbar which has buttons for Carbs, Pre-Meal, Bolus, Workout Mode, and Settings.</p>
+<p>The Status Screen is the main root navigation screen in Loop. It is broken up into 3 main display areas; Heads Up Display (HUD), Charts, and Toolbar. The HUD is the top area of the screen. This shows the status of the last time loop ran, current BG Reading, current temp basal, and current pump information. The next area is the charting area. This includes, glucose trend and prediction, Active Insulin, Insulin Delivery, and Carbohydrates. The final display area is the toolbar which has buttons for Carbs, Pre-Meal, Bolus, Overrides, and Settings.</p>
 <p align="center">
 <img src="../img/main_screen.jpg" width="550">
 </p>
@@ -810,13 +816,13 @@
 <p><strong>Carb entry tool</strong>- click on this tool to enter carbs into the Loop app.  Loop will not read carb entries from the pump or Nightscout, so you must use the carb entry tool in Loop app in order to have carbs accounted for by the Loop.  Detailed info regarding how to enter, save, and edit carb entries can be found in the <a href="https://loopkit.github.io/loopdocs/operation/features/carbs/">Carb Entries page</a>.</p>
 </li>
 <li>
-<p><strong>Pre-meal target</strong> - click this tool to set the <a href="https://loopkit.github.io/loopdocs/setup/loop-settings/configurations/#override-ranges">Pre-Meal temporary override target</a>.  This target will remain in effect (1) for 60 minutes, (2) until a carb entry is saved, or (3) until the target is toggled off manually, whichever comes first.  The background coloring of the Pre-Meal target will turn green when active and there will be a dark blue line on the BG chart indicating where the override target is enabled.  For more information about the use of the Pre-Meal target, see the <a href="https://loopkit.github.io/loopdocs/operation/features/bolus/">Bolus Entries page</a>.</p>
+<p><strong>Pre-meal target</strong> - click this tool to set the <a href="https://loopkit.github.io/loopdocs/operation/features/premeal/">Pre-Meal temporary override target</a>.  This target will remain in effect (1) for 60 minutes, (2) until a carb entry is saved, or (3) until the target is toggled off manually, whichever comes first.  The background coloring of the Pre-Meal target will turn green when active and there will be a dark blue line on the BG chart indicating where the override target is enabled.</p>
 </li>
 <li>
 <p><strong>Bolus tool</strong> - click on this tool to bring up the bolus tool.  Normally, this screen will automatically open on its own and function as a bolus wizard when a meal is saved on the carb entry tool screen.  The only time the bolus tool will not automatically open is if the amount of carbs saved is determined to be adequately covered by the insulin on board already.  During rapidly rising BGs, where Loop doesn't have an adequate temp basal rate to cover the pace at which BGs are rising, you may try clicking on the bolus tool to see if Loop is recommending a correction bolus to help control the BG spike.  For more information about the Bolus tool features and use, see the <a href="https://loopkit.github.io/loopdocs/operation/features/bolus/">Bolus Entries page</a>.</p>
 </li>
 <li>
-<p><strong>Workout Target</strong> - click this tool to set the <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/configurations/#override-ranges">Workout temporary override target</a>.  This target will remain in effect for the duration you select.  The standard duration selections available are 1-hour, 2-hour, or indefinitely.  You can add or modify those options, before building the Loop app, by using the <a href="https://loopkit.github.io/loopdocs/build/code_customization/#workout-range-duration">Workout mode customization option</a>.  For more information about using the Workout Mode, see <a href="https://loopkit.github.io/loopdocs/operation/features/workout/">here</a>.</p>
+<p><strong>Overrides</strong> - click this tool to set an <a href="https://loopkit.github.io/loopdocs/operation/features/workout/">temporary override preset</a>.</p>
 </li>
 <li>
 <p><strong>Loop Settings</strong> - click on this tool to make changes to any of your <a href="https://loopkit.github.io/loopdocs/operation/overview">Loop settings</a>.</p>

@@ -310,13 +310,7 @@
                     
                         
 <li >
-    <a href="../overrides/">Step 5: Override Presets</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../services/">Step 6: Loop Services</a>
+    <a href="../services/">Step 5: Loop Services</a>
 </li>
 
                     
@@ -360,7 +354,19 @@
         
             
 <li >
-    <a href="../../features/workout/">Workout Targets</a>
+    <a href="../../features/workout/">Overrides</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../features/premeal/">Pre-meal target</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../features/healthapp/">Health app</a>
 </li>
 
         
@@ -609,7 +615,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../overrides/">
+                    <a rel="prev" href="../services/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -694,14 +700,10 @@
 <p>Click the + in the upper right corner to add correction BG range(s). You can have multiple ranges based on time of day, but the first setting of the day needs to begin at midnight.</p>
 <p>Correction ranges can be a single number, such as 100-100 mg/dL, or a range such as 100-120 mg/dL. Generally speaking, if you choose to use a range, keeping the range between about 10-30 mg/dL between the lowest and highest value is a good starting place.</p>
 <h3 id="override-ranges">Override Ranges<a class="headerlink" href="#override-ranges" title="Permanent link">⌁</a></h3>
-<p>Below the Correction Range entry is a section called "Overrides". Override ranges provide temporary alternate correction ranges. These override ranges will only be enacted when you specifically activate pre-meal or workout mode using the buttons on the main Loop display or watchface. While active, they replace the correction range for Loop's recommendations. If the override ranges are not entered in this section, the buttons will remain grey and unusable on the main screen's toolbar.</p>
-<p><strong>Pre-Meal:</strong>
-The pre-meal override target can be used to as an easy way to get a small amount of insulin delivered before a meal in order to help control post-meal blood glucose spikes.</p>
+<p>Below the Correction Range entry is a section called "Overrides" with a Pre-Meal setting. While active, the pre-meal targets will replace the usual correction range for Loop's temp basal recommendations. If a pre-meal range is not entered in this section, the icon will remain grey and unusable on the main screen's toolbar.</p>
+<p>The pre-meal override target can be used to as an easy way to get a small amount of insulin delivered before a meal in order to help control post-meal blood glucose spikes.</p>
 <p>If your normal target is 100-110 mg/dL and pre-meal target is 80-80 mg/dL, for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.</p>
 <p>Loop will adjust any insulin bolus as needed based on the extra insulin provided during this pre-meal time.</p>
-<p><strong>Workout Mode:</strong>
-Workout override target is designed to temporarily set your target higher in anticipation of exercise or other activities which tend to make the user more insulin sensitive or need less insulin. By setting a higher temp target such as 140-160 mg/dL ahead of activity, Loop will recommend smaller basal rate(s) than normally scheduled in order to to bring blood glucose up to the higher target.</p>
-<p>The success of this strategy will be dependent on how far in advance of activity the override target is set. Generally, users set the target approximately 1-2 hours in advance of planned activities, but the optimal timing will depend on the activity, duration, and intensity. Additionally, any insulin on board from recent boluses may overwhelm the Loop's ability to counteract exercise-induced lows through lower temp basals alone. Please see LoopTips.org for additional information about <a href="https://kdisimone.github.io/looptips/how-to/exercise/">exercise and Loop</a>.</p>
 <h2 id="suspend-threshold">Suspend Threshold<a class="headerlink" href="#suspend-threshold" title="Permanent link">⌁</a></h2>
 <p>The suspend threshold must be set up for successful configuration of Loop. <strong>Your Loop will not turn green without setting this value.</strong> This value affects both bolus and basal recommendations by Loop.</p>
 <h4 id="bolus">Bolus<a class="headerlink" href="#bolus" title="Permanent link">⌁</a></h4>
@@ -714,7 +716,10 @@ Workout override target is designed to temporarily set your target higher in ant
 </ul>
 <p>Reasonable settings for suspend threshold will depend on user preference, but recommended not set lower than 65 mg/dL.</p>
 <h2 id="basal-rates">Basal Rates<a class="headerlink" href="#basal-rates" title="Permanent link">⌁</a></h2>
-<p>Your basal rates have already been initially populated when you finished the <code>Add Pump</code> part of the setup previously.  Only one basal schedule may be set in each Loop app. The basal increments are available according to the increments of the particular pump/pod you are using. Not all pumps provide the same increments for basal deliveries. Basal schedule must start at midnight and cannot contain rates of 0 U/hr.</p>
+<div class="admonition danger">
+<p><strong>Note: You cannot enter basal rates until you first add a pump in Loop settings.</strong> Your basal rates will be initially populated when you walk through the <code>Add Pump</code> part of the setup at the beginning of this setup guide.  </p>
+</div>
+<p>Only one basal schedule may be set in each Loop app. The basal increments are available according to the increments of the particular pump/pod you are using. Not all pumps provide the same increments for basal deliveries. Basal schedule must start at midnight and cannot contain rates of 0 U/hr.</p>
 <p>If you need to edit your basal schedule, simply make the edits as needed and then click on <code>Save to Pump...</code> or <code>Sync With Pod</code> button, depending on which pump you are using. </p>
 <div class="admonition info">
 <p>If you make any basal edits and use the <code>Cancel</code> button to go back to the menu without successfully saving/syncing to pump/pod, the changes you made will not be saved. Loop makes saving/syncing to pump a mandatory step to successfully editing basal rates. If you get an error message while trying to save/sync the edited basal rates, please retry until successful.</p>

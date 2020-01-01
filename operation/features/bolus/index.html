@@ -310,13 +310,7 @@
                     
                         
 <li >
-    <a href="../../loop-settings/overrides/">Step 5: Override Presets</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../loop-settings/services/">Step 6: Loop Services</a>
+    <a href="../../loop-settings/services/">Step 5: Loop Services</a>
 </li>
 
                     
@@ -360,7 +354,19 @@
         
             
 <li >
-    <a href="../workout/">Workout Targets</a>
+    <a href="../workout/">Overrides</a>
+</li>
+
+        
+            
+<li >
+    <a href="../premeal/">Pre-meal target</a>
+</li>
+
+        
+            
+<li >
+    <a href="../healthapp/">Health app</a>
 </li>
 
         
@@ -633,8 +639,6 @@
         
             <li><a href="#bolus-failure-notifications">Bolus Failure Notifications</a></li>
         
-            <li><a href="#pre-meal">Pre-Meal</a></li>
-        
             <li><a href="#square-or-dual-waves">Square or Dual Waves</a></li>
         
             <li><a href="#glucodyn">Glucodyn</a></li>
@@ -667,13 +671,6 @@
 
 <h2 id="bolus-failure-notifications">Bolus Failure Notifications<a class="headerlink" href="#bolus-failure-notifications" title="Permanent link">⌁</a></h2>
 <p>On occasion, you will receive notification that a bolus may have failed. In some of these cases, the bolus actually will begin delivery. Therefore, you should always check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.</p>
-<div class="admonition info">
-<p>There is a known issue with some x15 WW pumps falsely stating bolus failure notifications with every bolus.  Please read <a href="https://github.com/LoopKit/Loop/issues/587">here</a> for additional information about how to fix the issue until Loop code is updated with a permanent fix.</p>
-</div>
-<h2 id="pre-meal">Pre-Meal<a class="headerlink" href="#pre-meal" title="Permanent link">⌁</a></h2>
-<p>The pre-meal override target can be used prior to bolusing in order to help control post-prandial BGs. Most users will set a lower pre-meal target than what their normal correction range is. For example, a pre-meal target might be 80 - 80 mg/dL while your normal correction range might be 100-110 mg/dL. If you engage the pre-meal targets up to an hour before the meal, Loop will deliver an "extra" amount of insulin while it aims for that lower BG target. By getting the insulin in a little sooner, there will be more active insulin awaiting the carb absorption when the meal is eaten.</p>
-<p>The pre-meal target will remain active until (1) 60 minutes has passed since it was activated, or (2) a carbohydrate entry has been saved in Loop, or (3) the Loop user manually cancels the pre-meal target by tapping on the icon again. Whichever of these happens first will cancel the pre-meal targets. If no action is taken, the pre-meal target will end on its own after 60 minutes.</p>
-<p>If you are using the pre-meal target and save the carbs for the meal entry, Loop will cancel the pre-meal target and revert back to your normal correction range. Loop will account for the insulin it has "pre-bolused" while trying to reach the lower pre-meal target, and use your normal correction range when making the bolus recommendation.</p>
 <h2 id="square-or-dual-waves">Square or Dual Waves<a class="headerlink" href="#square-or-dual-waves" title="Permanent link">⌁</a></h2>
 <p>Unfortunately, Loop cannot enact temp basals while the pump is delivering a square- or dual-wave bolus. Therefore, you will need to use alternate bolusing strategies for situation where you would've previously used those extended bolusing techniques.</p>
 <p>The good news is that Loop has the only "smart" bolus tool available in any DIY or commercial loop. Because you are entering a carb absorption time with each carb entry, Loop is also using that information to predict how well your insulin bolusing and carb absorption will align. So when Loop offers you a bolus, it may actually offer less of a bolus upfront for long, slow-carb meals...and will make up the remaining bolus amount via high temp basals later.</p>
