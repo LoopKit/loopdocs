@@ -224,11 +224,7 @@ Solution:  This error message is likely due to inadvertently saying "no" to allo
 
 1. Close Xcode
 2. Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)
-3. In the upper left corner of keychain access, make sure you have the keychain `login` highlighted and then click the large lock icon above the keychains area (High Sierra users) or right-click the lock next to the `login` (Mojave macOS users).  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
-</p>
-<p align="center">
-<img src="../img/keychain3.png" width="450">
-</p>
+3. In the upper left corner of keychain access, make sure you have the keychain `login` highlighted and then right-click the lock next to the `login`.  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
 
 </p>
 <p align="center">

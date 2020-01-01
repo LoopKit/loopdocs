@@ -15,7 +15,7 @@ Breath deep...this step looks kind of "programmer code" weirdness. BUT, it isn't
 Homebrew is a program that will allow us to install the needed packages to build Loop. Before installing Homebrew, we need to double check one thing...that the user account on the computer that you are using to build Loop, that **user account needs to have Administrative rights on the computer**. How can you tell? Go to the computer's System Preferences application, open the Users & Groups section. If your account that you are using doesn't say "Admin" under your name, then you need to click the lock and change that to an Admin account before proceeding. If you are using a work computer, you may not have admin rights on that computer...so be aware that you may have restrictions on company owned computers.
 
 <p align="center">
-<img src="../img/admin-user.PNG" width="550">
+<img src="../img/admin-user.png" width="550">
 </p>
 
 Side note: If you are a (1) computer-savvy person and (2) already installed Homebrew on a different user account on the computer previously...please go use that user account on the computer to build Loop. Or, delete Homebrew from that User account and install on your account. Homebrew is a bit picky.
