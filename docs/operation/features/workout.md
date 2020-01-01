@@ -18,8 +18,8 @@ Recapping: If you set an overall insulin needs adjustment below 100%, you are te
 
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/operation/loop-settings/img/override-entry.jpeg" width="350">
-</p></br>
+<img src="../img/override-entry.jpeg" width="300">
+</p> 
 
 ## How overrides do NOT work
 
