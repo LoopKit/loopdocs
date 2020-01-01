@@ -18,7 +18,7 @@ Recapping: If you set an overall insulin needs adjustment below 100%, you are te
 
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/operation/loop-settings/img/override-entry.jpeg" width="350">
+<img src="../img/override-entry.jpeg" width="500">
 </p></br>
 
 ## How overrides do NOT work
@@ -47,13 +47,13 @@ When you've made all those adjustments, save the the preset using the "Save" but
 To enact your override preset, you simply tap on the workout icon in the Loop's main screen toolbar and select your override from your list of presets that you programmed in previously in the step above.
 
 <p align="center">
-<img src="../img/override-selection.PNG" width="300">
+<img src="../img/override-selection.PNG" width="450">
 </p> 
 
 The heart will be highlighted in a blue square while active and a banner notification will appear at the top of the Loop's main screen. Additionally, you'll see a darker blue target area indicating the override's target range and duration in your Loop's blood glucose graph.
 
 <p align="center">
-<img src="../img/override-enacted.PNG" width="300">
+<img src="../img/override-enacted.PNG" width="350">
 </p> 
 
 ## Deactivating your override

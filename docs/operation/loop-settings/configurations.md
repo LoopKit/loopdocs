@@ -7,7 +7,7 @@ This page will cover two general parts of the Loop's settings, circled in red in
 * The second circled section is the configuration section. This section contains a lot of really important settings that control how your Loop will calculate your predicted BG curve. Given the importance of your predicted BG curve to Loop's actions, please make sure you read over this page carefully to know how to navigate the selections and entries.
 
 <p align="center">
-<img src="../img/configurations.jpg" width="350">
+<img src="../img/configurations.JPG" width="350">
 </p></br>
 
 ## Closed/Open Loop

@@ -3,7 +3,7 @@
 At the bottom of your Loop settings screen is a section called "Services". <u>The services listed in this section are all **OPTIONAL**.  You can choose to leave them empty and your Loop will still work.</u>
 
 <p align="center">
-<img src="../img/services.jpg" width="350">
+<img src="../img/services.JPG" width="350">
 </p> 
 
 ## Nightscout
