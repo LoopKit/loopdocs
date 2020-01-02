@@ -67,7 +67,7 @@ iOS 13 brought about a quirky little bug where you could suddenly lose settings 
 To prevent an accidental watch bolus, there is a new "spin" to confirm you bolus after you pretty the old bolus button. You'll see a graphic like below on the watch face. As you spin the digital crown, the two triangles will begin to merge. Once they merge, the bolus is confirmed through a little haptic and a white checkmark will appear on the watch screen.
 
 <p align="center">
-<img src="../img/loopkit.png" width="650">
+<img src="../img/spin-to-confirm.png" width="250">
 </p>
 
 ### Watch recommended bolus
@@ -186,7 +186,7 @@ You can also go directly to the commit history for each of the branches if you'd
 If you click on the commit, you can see exactly what changes to the code were made. It's an interesting learning experience. In red are the code that is old, in green is the updated code. The line numbers and file names of the edited code are also there to help.
 
 <p align="center">
-<img src="../img/commit.png" width="650">
+<img src="../img/commit.png" width="550">
 </p>
 
 I don't expect many of you would understand exactly what the edits mean, or how the new code might function...but I bring up the topic of commit history so that you can use that to realize just how often dev is updated. Go ahead and look at the number and frequency of commits in that dev branch...that is why there is no way someone is going to keep a "loopdocs" of dev changes. It's just too much a moving target.
