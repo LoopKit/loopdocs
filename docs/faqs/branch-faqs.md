@@ -60,11 +60,11 @@ Loop v2.0 has an option to upload your BG data to Nightscout directly. It is a n
 
 ### A fix for settings loss
 
-iOS 13 brought about a quirky little bug where you could suddenly lose settings in Loop. But, it wasn't just limite to Loop, sometimes people lose Dexcom app settings too. The issue is most commone when the phone goes through a power cycle, but it has happened at other times, too. There's a fix for that in Loop now...so that's a good reason to update.
+iOS 13 brought about a quirky little bug where you could suddenly lose settings in Loop. But, it wasn't just limited to Loop, sometimes people lost Dexcom app settings too. The issue is most common when the phone goes through a power cycle, but it has happened at other times, too. There's a fix for that new bug in Loop now...so that's a good reason to update. (If you encounter that bug appear before you have a chance to update your Loop app, simply restart the Loop app and your settings should reappear. )
 
 ### Spin for Watch Bolus
 
-To prevent an accidental watch bolus, there is a new "spin" to confirm you bolus after you pretty the old bolus button. You'll see a graphic like below on the watch face. As you spin the digital crown, the two triangles will begin to merge. Once they merge, the bolus is confirmed through a little haptic and a white checkmark will appear on the watch screen.
+To prevent an accidental bolus from your Watch app, don't let your kids hold your watch. Just kidding, we've added an even better option. There is a new "spin" to confirm the bolus after you press the bolus button. You'll see a graphic like below on the watch face. As you spin the digital crown, the two triangles will begin to merge. Once they merge, the bolus is confirmed through a little haptic and a white checkmark will appear on the watch screen.
 
 <p align="center">
 <img src="../img/spin-to-confirm.png" width="250">
@@ -76,7 +76,7 @@ A common code customization is also now no longer needed. Many people used to ed
 
 ### Recent carbs list on Watch
 
-You can review the recent carb entries on your Apple Watch now, too. Simple swipe left to see the blood glucose graph screen on your watch. Scroll down with the digital crown to the "active carbs" row beneath the graph, and tap that row. You can see the list of recent carb entries. 
+You can review the recent carb entries on your Apple Watch now. Simply swipe left to see the blood glucose graph screen on your watch. Scroll down with the digital crown to the "active carbs" row beneath the graph, and tap that row. You can see the list of recent carb entries. 
 
 ### Fix for Medtronic x15 "bolus may have failed" message
 
@@ -88,7 +88,7 @@ Confirmation beeps have been expanded based on user feedback...we heard parents 
 
 ### Read Pod Status added
 
-There's a new command in the RileyLink menu for "Read Pod Status" that is analogous to the existing command for Medtronic users. You can query your Pod for it's current status info using that command.
+There's a new command in the RileyLink menu for "Read Pod Status" that is analogous to the existing command for Medtronic users. You can query your Pod for its current status info using that command.
 
 ### Bug fixes generally
 
@@ -96,11 +96,11 @@ There are a lot of niggly little bug fixes too which were merged in the last cou
 
 ### User interface improvements
 
-You'll notice dashed lines in the HUD for the CGM value if the CGM data goes older than 15 min (that way you don't accidentally miss the fact that your CGM has failed). The API Secret is hidden after it is saved in Loop Settings now, and if you accidentally leave a trailing slash on the Nightscout URL...Loop will ignore it.  The bolus progress row is new to master branch now, although many of you have been accustomed to that visual in dev branch for awhile now. The "Scenarios" screen, that would sometimes appear when a phone was shaken, is also disabled by default now. The Issue Report has more information about your Loop app's build date and version so that you can more easily track its build history. The Apple 
+You'll notice dashed lines in the HUD for the CGM value if the CGM data goes older than 15 min (that way you don't accidentally miss the fact that your CGM has failed). The API Secret is hidden after it is saved in Loop Settings now, and if you accidentally leave a trailing slash on the Nightscout URL...Loop will ignore it.  The bolus progress row is new to master branch now, although many of you have been accustomed to that visual in dev branch for awhile now. The "Scenarios" screen, that would sometimes appear when a phone was shaken, is also disabled by default now. The Issue Report has more information about your Loop app's build date and version so that you can more easily track its build history.
 
 ### Common build error squashed
 
-One of the common build errors occured if people left a space in their Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  Ahhhhh! I love it!!!
+One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  Ahhhhh! I love it!!!
 
 ### Nightscout profile uploading
 
@@ -129,7 +129,7 @@ With a non-linear absorption model, the carb absorption will more closely match 
 
 ### Overrides
 
-Loop v2.0 marks the first time Loop master branch has had overrides included. Additionally, this release moves overrides setup from the configurations area of Loop settings to the workout icon in the Loop toolbar. There has also been bug squashing in dev branch for overrides over the recent past, so updating is a good idea even if you already have overrides on your current build. Want to learn more about overrides? Read about them [here](https://loopkit.github.io/loopdocs/operation/features/workout/)
+Loop v2.0 marks the first time Loop master branch has overrides included. Additionally, this release moves overrides setup from the configurations area of Loop settings to the workout icon in the Loop toolbar. There has also been bug squashing in dev branch for overrides over the recent past, so updating is a good idea even if you already have overrides on your current build. Want to learn more about overrides? Read about them [here](https://loopkit.github.io/loopdocs/operation/features/workout/).
 
 ### Retrospective Correction always on
 
@@ -141,19 +141,19 @@ Yes, most of you are already using Omnipod with your Loop...but this is the firs
 
 ### Dark mode support
 
-iOS 13 brought darkmode option for application developers, and Loop's developer was all over that. We now have a wickedly cool looking dark mode Loop app for those who prefer the dark side.
+iOS 13 brought dark mode for application developers, and Loop's developer was all over that. We now have a wickedly cool dark mode Loop for those who prefer the dark side.
 
 ### ISF and correction range guardrails and UI change
 
-Loop v2.0 also brings about the first time master branch has the lovely little scroll wheel to set values of ISF and correction range. This helps mitigate an old bug where backwards entered correction range values would crash Loop app.
+Loop v2.0 also brings about the first time master branch has the useful scroll wheel to set values of ISF and correction range. This helps mitigate an old bug where backwards entered correction range values would crash Loop app. Also less prone to fat-finger mistakes on entry.
 
 ### Simulator pump and CGM
 
-If you don't have compatible gear yet and just want to test Loop app, the new ability to add a simuated pump and/or CGM is a great new feature. 
+If you don't have compatible gear yet and just want to test Loop app, the new ability to add a simulated pump and/or CGM is a great new feature. 
 
 ### New style of Dexcom transmitters supported
 
-Dexcom launched a new style of transmitters this summer. The new style transmitters took some work by Loop developer (PETE! YEAH!) to get them working in offline Looping, but the fix was pushed into all branches shortly after in August 2019. If you haven't updated your Loop since before August 2019 and use a Dexcom G6, you should update now.
+Dexcom launched a new style of transmitters this summer. The new transmitters took some work by Loop developer (PETE! YEAH!) to get them working in offline Looping, but the fix was pushed into all branches shortly thereafter in August 2019. If you haven't updated your Loop since August 2019 and use a Dexcom G6, you should update now.
 
 ## How can I stay current with what's going on in the branches?
 
