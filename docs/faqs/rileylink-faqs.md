@@ -20,9 +20,13 @@ The short answer is yes. If you want your Loop to keep automatically adjusting b
 
 I'm shocked that this question comes up so often...but here's some ideas. Please do not post in Looped group or Zulipchat for more ideas. This horse has been well-beaten, so use the search function in Looped group to see the previous responses. But, here's some samples for those of you who won't use the search function. ;)
 
+
 [Post 1](https://www.facebook.com/groups/TheLoopedGroup/permalink/2340802992803020/)
+
 [Post 2](https://www.facebook.com/groups/TheLoopedGroup/permalink/2470906669792651/)
+
 [Post 3](https://www.facebook.com/groups/TheLoopedGroup/permalink/2469724099910908/)
+
 [Post 4](https://www.facebook.com/groups/TheLoopedGroup/permalink/2324172164466103/)
 
 ## How far away can the RileyLink be?
