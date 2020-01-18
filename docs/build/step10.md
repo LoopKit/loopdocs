@@ -1,7 +1,7 @@
 # Step 10: Test Settings
 
 !!!danger "Time Estimate"
-    * 2 hours to read the web pages thoroughly and thoughtfully
+    * 2 hours to read the the rest of LoopDocs (particularly "Set up App", "Operate", and "FAQ" sections) and [LoopTips](https://kdisimone.github.io/looptips/) thoroughly and thoughtfully
     * 1-3 days to test settings if you are a normal person who wants to get the most out of Loop
 
 !!!info "Summary"
