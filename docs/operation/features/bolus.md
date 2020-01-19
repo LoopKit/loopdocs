@@ -22,7 +22,7 @@ Occasionally, a recommended bolus will be offered in the bolus tool unrelated to
 A new status line will appear when Loop is sending a bolus command to the pump. Just above the main screen's glucose chart, you will see a "starting bolus" indicator.
 
 <p align="center">
-<img src="/operation/features/img/starting_bolus.png" width="250">
+<img src="../img/starting_bolus.png" width="250">
 </p>
 
 ## Bolus Failure Notifications
