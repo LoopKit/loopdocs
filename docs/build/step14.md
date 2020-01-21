@@ -5,7 +5,7 @@
     * 10-15 minutes if a repeat builder
 
 !!!info "Summary"
-    * Open the Loop code you downloaded in Step 13
+    * Open the Loop code you downloaded in [Step 13](https://loopkit.github.io/loopdocs/build/step13/)
     * Connect the phone to the computer
     * Set the phone to not lock for awhile
     * Trust the computer (on the phone)
@@ -13,11 +13,11 @@
     * Register the device
     * Sign the 4 targets
     * Press the build button
-    * Enter computer password four times during the build
+    * Enter computer password four times during the build (if this is your first ever build)
     * Watch in awe as you just built your very own Loop app
 
 !!!warning "FAQs"
-    * **"I got a build error! YIKES...what do I do?"** Check out the Build Errors page for all the solutions you'd need.
+    * **"I got a build error! YIKES...what do I do?"** Check out the [Build Errors](https://loopkit.github.io/loopdocs/build/build_errors/) page for all the solutions you'd need.
     * **"The build seems to take a long time, is that normal?"** Yes, the first build of a new download will take quite a long time. Just be patient...one of the build steps to take *much* longer than all the others. The build process does always end in a success or failure message, so just wait it out until you see one of those displayed.
 
 ## Open Loop project in Xcode
@@ -65,7 +65,7 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
     * If this is the first time your iPhone has been plugged into this computer, you will need to open the iPhone and select "Trust this Computer" before your device will be useable in the menu selection.</br></br>
     
 !!!danger "Most Common Mistake"
-    * The most common mistake in this step is not selecting your actual phone as shown in the second screenshot below. The default list is just a name of general phone models under a subheading called "iOS Simulators"...don't be fooled by those. Your ACTUAL phone will be up above that list of all the various simulator phone models. Make sure you select your actual phone, not just a simulator phone model.
+    * The most common mistake in this step is not selecting your actual phone as shown in the second screenshot below. The default list is just a name of general phone models under a subheading called "iOS Simulators"...don't be fooled by those. Your ACTUAL phone will be up above that list of all the various simulator phone models.  You may need to scroll to the top of the list in order to see it.  Make sure you select your actual phone, not just a simulator phone model.
 
 <p align="center">
 <img src="../img/select_device.png" width="750">
