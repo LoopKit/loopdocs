@@ -2,6 +2,7 @@
 
 !!!danger "Time Estimate"
     * 2 hours to read the the rest of LoopDocs (particularly "Set up App", "Operate", and "FAQ" sections) and [LoopTips](https://kdisimone.github.io/looptips/) thoroughly and thoughtfully
+    * 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to make sure you've familiarized yourself with Loop's expected behavior
     * 1-3 days to test settings if you are a normal person who wants to get the most out of Loop
 
 !!!info "Summary"
