@@ -62,7 +62,7 @@ As you can see, I have a lot of cloned things in my home directory from GitHub t
 
 How would you do that? Simple `cd && mkdir DeveloperJane` would make the new folder in your home directory. And then `cd DeveloperJane` would move your Terminal app to be working inside the new DeveloperJane folder. So if you wanted to clone DeveloperJane's LoopWorkspace, that would be a good way to keep track of where the code came from.
 
-If you ever get in doubt and can't remember where your code was clone from, you can `cd LoopWorkspace` to get into your cloned directory and then use `git remote -v` to tell you where it came from.
+If you ever get in doubt and can't remember where your code was cloned from, you can `cd LoopWorkspace` to get into your cloned directory and then use `git remote -v` to tell you where it came from.
 
 ## Using LoopWorkspace
 
