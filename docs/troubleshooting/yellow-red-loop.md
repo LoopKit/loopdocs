@@ -1,156 +1,90 @@
-# Yellow and Red Loops
+# Red Loops
 
-A properly operating Loop will remain green for 5 minutes.  To remain green, there are several things that Loop must do:
+Let's divide this page up into two parts. The first part deals with individual red loops. Like it just happened and you want to solve it. The second part will deal with situations where you are repeatedly having red loops "more often" than you think is "normal" (both of those of course are subjective terms).
 
-* Loop obtains a BG value from your CGM source, and
-* Loop reads your pump history to know about insulin deliveries and recent events, and
-* Loop completes a run of its calculations based on those inputs
-* Loop recommends a temp basal and sends that instruction to the pump
-* Pump enacts the recommended temp basal
-* Loop confirms the pump enacted the recommended temp basal
+# Resolving a Red Loop
+So you are here for help with getting your Loop green again? It's red and not working? Wondering what is happening? You can click on the red loop icon to read an error message that you may or may not understand. If you understand it, great...that should help you fix the problem. If you don't understand it, then there are two options to fix the red loop; the first is quick and easy, the second is more in-depth. Let's look at both.
 
-If something goes wrong in those steps and more than 5 minutes goes by, the Loop will turn yellow until it can solve the problem.  If more than 15 minutes goes by and the problem still exists, Loop will turn red.
+Quick side note: Do not quickly decide to pull an omnipod that isn't responding and has a red loop. Usually the issue is that the RileyLink needs a reset as described below in Option 1, rather than the pod needing to be changed. If you don't fix the RileyLink's problem first, the problem will likely carry forward to the new pod pairing attempt and you'll get a bunch of problems pairing the new pod because the RileyLink still isn't working. So, please try getting the RileyLink working properly before deciding to ditch a pod because of a red loop.
 
-!!! info ""
-    To see the latest Loop error messages, touch the yellow or red Loop Status circle on the main screen. If an error message is available, it will appear in a dialog window. Use that error message to help guide your next troubleshooting steps, as laid out in the discussion below.
+## Option 1: Easy Steps
 
-A healthy green loop will have timestamps less than 5 minutes old below the green loop, BG reading, and reservoir level.  This indicates that the Loop was run less than 5 minutes ago, fresh BGs have been coming in, temp basals have been enacted by the pump, and the pump is communicating with Loop.  The screenshot below is a very happy Loop.
+!!!danger ""
+    You don't care what the heck is causing the issue, you just want to get on with life as quickly as possible? Ok, fair enough, then do the following:
 
-<p align="center">
-<img src="../img/loop_less_than_five.jpg" width="550">
-</p>
-</br></br>
-
-For Loopers who have already been successfully getting green loops, but suddenly find themselves with problems...we need to figure out which area your loop is failing in.
-
-****************************
-**<p align="center">The displayed error message should help you narrow in on the cause of the red loop:</p>
-    <p align="center">Is this a CGM issue?</p>
-    <p align="center">Is this a pump issue?</p>
-    <p align="center">Is this a RileyLink/BT issue?</p>**
-
-****************************
-## CGM issues
-###<p align="center">**Old BG data (CGM issue)**</p>
-</br>
-
-If your Loop turns yellow or red, easiest to start by checking the timestamps on the BG.  **If the BG reading is more than 5 minutes older than your iPhone time, your Loop will not be green.**  The screenshot below is a good example of missing BG data preventing the Loop from staying green.  The pump is still communicating (reservoir reading is only 2 minutes old)...BGs appear to be the problem.</br></br>
-
-<p align="center">
-<img src="../img/loop_oldbg2.jpg" width="550">
-</p></br>
-<p align="center">
-<img src="../img/loop_missing_BG.png" width="250">
-</p>
-
-BG troubleshooting steps:
-
-* Verify you have enabled the correct [CGM Selection](https://loopkit.github.io/loopdocs/setup/loop-settings/settings/#cgm-selection) in Loop settings; it is easy to accidentally change the selection while scrolling through the settings page
-* For G5, verify your [transmitter ID](https://loopkit.github.io/loopdocs/setup/loop-settings/settings/#cgm-selection) is set correctly in Loop settings
-* For G4, verify the Dexcom Share app is running on your phone
-* **Fetch Recent Glucose** command in RL only works for Medtronic CGM users, by the way...so don't expect that command to solve Dexcom CGM issues
-* If your local CGM is working fine on the Dexcom app, but Loop isn't reading it:
-    * make sure you enter your Dexcom Share account info in the Loop settings. Loop will automatically switch to pulling from the Dexcom servers if the local reading isn't working.
-    * try turning Loop and Dexcom apps off, toggle BT off/on, restart Loop app, and then restart Dexcom app
-****************************
-
-## Pump Issues
-
-###<p align="center">**Old Pump data (Pump Issue)**</p>
-</br>
-
-If your pump reading is older than 5 minutes, but BGs are fine, then you will need to troubleshoot the pump communications.  The screenshot below is a good example of missing pump data preventing the Loop from staying green.  The CGM is still communicating (BG reading is only 2 minutes old)...but pump reservoir reading is older than 5 min.</br></br>
-
-<p align="center">
-<img src="../img/loop_old_pump.png" width="550">
-</p>
-</br></br>
-
-Pump troubleshooting steps:
-
-* Your pump battery may be low.  Replace the battery...even if the percentage doesn't look low, this is a good starting point
-* If you have an x23 or x54 model pump, make sure your mysentry is paired
-* Have the pump and RL gotten too far away from each other?  Try bringing them closer
-* Try retuning the RL.  Just a note though, the Loop has code embedded to automatically retune RL when the pump comms are failing for 20 minutes.  So, manual retuning is more about speeding things along rather than being a necessary intervention to fixing pump comms.
-* Try a **Send Button Press** to "wake up the pump" a bit.
-* Try a **Fetch Pump History**.  Same as retuning though, the Loop has code embedded to automatically pull pump history.  Manual fetching of pump history is more about speeding things along than being a necessary step to fixing pump comms.
-* If you have a backup pump, try switching to that pump and see whether the issue persists.
-
-!!! info "About Pump Communications"
-    Pump communications errors can and will happen. Just be patient, and they almost always correct themselves.  Yellow loops happen sometimes, and aren't usually worth troubleshooting.  Red loops are more infrequent and usually a good time to start investigating possible source.  **Some environments will be noisy for rf comms (such as concerts, amusement parks, tech venues, conferences with OpenAPS users in attendance, etc.), and your loop may not stay green as often as usual.  Just be patient. When you leave that environment, looping will go back to normal.**  Wireless microphones, baby monitors, and other similar types of devices can interfere with pump communications if there are lots of competing radio devices in a tight environment.  If you find you have areas of your house that consistently have poor pump communications, look for potential sources of interference from wireless devices.
+    * Turn your RileyLink off/on at its physical power switch located on the side of the RileyLink. Use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a [screaming pod silencer tool](https://loopkit.github.io/loopdocs/faqs/omnipod-faqs/#what-do-you-do-to-stop-a-screaming-pod).
+    * Close your Loop app (upswiping it in the iPhone's app selector) and reopen it.
     
-    Another common area for failed pump communications are at night if you tend to sleep on your pump, or otherwise "body block" the RL's ability to communicate with the pump.  Try to place your pump and RL such that your body will not block the signal to/from RL.  Standing the RL on its base with antenna pointing up, on a nearby nightstand should be sufficient proximity/orientation for overnight looping.
-    
-    These examples below are pump error messages.  Notice they all mention the pump specifically.
-
     <p align="center">
-    <img src="../img/loop_framerate.jpg" width="750">
-    </p>
-    </br></br>
+    <img src="../img/riley-switch.png" width="450">
+    </p></br>
 
-*************************
-###<p align="center">**Incorrect Pump Time (Pump Issue)**</p>
-</br>
+    That's pretty much all you need to do for option 1 to restore a green Loop within 5 minutes, 99% of the time. You can confirm things are back to working order by seeing a green loop again and/or issuing a "test command" or "button press" successfully through the RileyLink menu.
+    
 
-And here's an interesting problem.  BGs are current, but notice that the pump time is 2 hours into the future of the current iPhone time.  In this case, the Loop user had manually set their pump time during travels and caused the pump time to be out of sync with Loop.  Remember, **<u>do not change your pump time manually...always use the RL to set the pump time</u>**.  This red loop was resolved as soon as the Looper used RL to set the pump time.</br></br>
+## Option 2: Look for Cause
 
-<p align="center">
-<img src="../img/loop_bad_pump_time.jpg" width="550">
-</p>
-</br></br>
+!!!info ""
+    So if Option 1 didn't work to fix your problem...next you'll need to look a little deeper. There can be a variety of causes for why Option 1 did not work to restore your Loop's function, so you'll need to sort out the root cause. There are a few basic categories:
 
-****************************
-###<p align="center">**Failure to Enact Temp Basals (Pump Issue)**</p>
-</br>
+    1. RileyLink is broken
+    2. CGM values are not being collected by Loop
+    3. Pump is not responding
 
-If you see messages about "Could not verify TempBasal on attempt  2", that is likely one of just a few issues.  The message indicates that Loop has BGs and pump data, has sent a recommended basal to the pump, but the pump does not appear to be enacting those basals.</br></br>
+## RileyLink is broken
 
-<p align="center">
-<img src="../img/loop_verify.jpg" width="250">
-</p>
-</br></br>
+How can you tell if your RileyLink has a problem? The answer is mostly within the LED lights that display on the board.
 
-* Your pump cannot be suspended.  Resume insulin deliveries
-* Max basal rate in Loop app cannot be greater than max basal rate in pump settings
-* Temp basal type must be set to unit/hour, not percent, in pump
+**Red light**: comes on during charging and will turn off/on periodically, while still plugged in, after charge is complete.
 
-****************************
+**Green light**: Indicates an active BT connection with the phone. You want the green light to stay on all the time on the RileyLink. If the green light is not on, then make sure your iPhone's bluetooth is still switched on.
 
-## Bluetooth/RL issues
+**Blue light**: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol [(unplug the battery first](https://youtu.be/s2qNPLpfwww)). If you still can't get the blue light off, then contact GetRileyLink about getting a new RileyLink.
 
-###<p align="center">**Bluetooth failures (RL or iPhone issue)**</p>
-</br>
+## CGM Values are not being collected by Loop
 
-Sometimes the RilleyLink and iPhone fail to communicate via BT.  You need to determine if this is due to RL's problems, iPhone's problems, or just BT communications problem.  There can be messages when BT fails, such as the message below, or "RileyLink Timeout" error messages.</br></br>
+### New transmitter
+If you recently changed a transmitter, you need to also update your Loop settings to reflect the new transmitter ID. Go to the CGM section of Loop settings and `Delete CGM` (it's a button on the bottom of that page). Then use the `Add CGM` in Loop settings to include the new transmitter ID.
+
+### Firefly-style transmitter
+If you have not updated your Loop app since late July 2019 and use Dexcom G6, you will need to update your Loop app to continue to be able to loop without internet connection. In July 2019, we started to see a new style of Dexcom G6 transmittters on the market. These new transmitters required a rework of some of the Loop's code to continue to "spy" on the transmitter. Without the update, your Loop will not get CGM data unless it is pulling from Share servers (which is not a recommended mode of operation). So, update your Loop app if you have a new transmitter type and haven't updated since July 2019.
+
+### Delete Share account
+Finally, we see a lot of errors reported because people have problems with their Share server information in Loop app. **Please delete your Share account information from within Loop settings.** In other words, the credentials portion of the Share account info, as shown in the screenshot below, should say `Tap to Set` and not have your account info. It is unnecessary to have this portion filled out as local, non-internet spying of a transmitter is the preferred CGM source anyways. In fact, by leaving this information out, it will help you remember to change your transmitter ID when you change transmitters because CGM data won't appear in Loop. By not including Share account in Loop, you will prevent yourself from accidentally becoming internet dependent.
 
 <p align="center">
-<img src="../img/loop_bt_error.jpg" width="250">
-</p>
-</br></br>
+<img src="../img/no-share.jpg" width="600">
+</p></br>
 
-* Has your RL been fully charged? Try charging your RL for an hour or two, make sure the red light comes on while charging
-* Is your lipo battery old and perhaps dying earlier in the day?  Order a new battery, replace lipo battery
-* Check your lipo battery wires?  If your wires are dislodged from the lipo itself, RL will not likely work for long
-* Your RL battery needs to be securely plugged in, check those connections.
-* Check if your RL is on and says "connected" in the [status screen for bluetooth](https://loopkit.github.io/loopdocs/setup/loop-settings/rileylink_menu/#device). If it says "connecting" or "disconnected", you have a BT problem with RL and iPhone.
-* Make sure your iPhone's BT is turned on, and BT is not being affected by other BT systems (such as car audio)
-* Check if any of the RL command buttons work...such as **Send Button Press**.
-* If you've checked all of the above, toggle your RL power switch and turn your iPhone BT off/on.  Try rebooting your phone.  If those steps don't work and the RL is properly charging otherwise, likely you have a bad RileyLink and will need to replace it.
+## Pump is not responding
 
-**********************
+The obvious fix is to make sure the RileyLink is not so far away from the pump or Pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps. For Pod Loopers, Option 1 almost always fixes this issue. For Medtronic Loopers, you will see some times where the pump is not responding and you may see "decoding" errors or various other messages about pump responses. For Medtronic users, try the following:
 
-## Loop Settings Issues
+1. Change pump battery. Low pump battery will cause radio communications to fail.
+2. Use the `Change Time` command in the RileyLink menu to update the pump's clock. If you've accidentally changed the pump's time in the pump itself, this will get the Loop app and pump back in sync.
+3. If using a x23 or x54 pump, try deleting all the IDs under the "Other Devices" submenu in the pump's "Connect Devices" menu.  Then go to the RileyLink menu and use the MySentry pairing command to get a fresh ID issued. Follow the directions listed in the MySentry pairing command's screen to scan for devices. A fresh ID can help prevent recurring red loops for x23 and x54 users, particularly if they started to occur after a recent Loop update.
+4. Make sure the following are checked in the pump:
+    * Your pump cannot be suspended.  Resume insulin deliveries.
+    * Temp basal type must be set to unit/hour, not percent, in pump's Basal menu.
 
-###<p align="center">**Failure to set Insulin Curve Model (Loop settings)**</p>
-</br>
+# Resolving Frequent Red Loops
 
-If you see messages about "Missing data: Glucose effects", you likely have **forgotten to set your Insulin Curve Model**.  The message indicates that Loop is missing a component of its algorithm inputs to calculate glucose effects on predicted BGs.   Return to your Loop app settings and pick an Insulin Curve.</br></br>
+Here's some things to check if you have frequent red loops:
 
-<p align="center">
-<img src="../img/loop_select_model.jpg" width="250">
-</p>
-</br></br>
+* Have you [cleaned your mLab database in Nightscout](https://loopkit.github.io/loopdocs/nightscout/mlab_cleanup/) recently? If your database gets backlogged (or Nightscout otherwise isn't working properly), Loop can get clogged up with a bunch of unfinished Nightscout uploads. This clogged condition can cause red loops. So, make sure you are periodically checking your mLab and cleaning it. Try deleting your Nightscout account from Loop settings and see if your Loop stops having red loops. If it does, then you'll need to assess what's going wrong in your Nightscout site and fix it. Most of the time that is your mLab database cleanup needing to be done.
 
-**********************
+* Is your [RileyLink battery plugged in all the way](https://loopkit.github.io/loopdocs/build/step5/#assemble-rileylink) on the board? 
 
+* Has your RL been fully charged? Try charging your RL for an hour or two, make sure the red light comes on while charging. Try a new charger.
 
+* Oddly, some people have found that turning off Siri integrations for Loop and Dexcom apps in your iPhone settings has helped. I don't know if this is coincidental or an actual help yet, but I'll mention it here.
+
+* Check for sources of wireless interference. If you have a certain environment that seems to have more drops than others, it is likely that there is a source of wireless communication interfering with your Loop. Lots of Medtronic Loopers in a room together will often interfere with each other and get "cross-talk" red loop error messages. If it is a bedroom at night causing problems, try moving other wireless devices such as routers or baby monitors farther away from where you and your RileyLink are.
+
+# Posting for Help
+
+Before you post on Looped group for help with a red loop, please make sure you've tried Option 1 and have restarted your RileyLink and Loop app. 
+
+Before you post for help, please also check your mLab and Nightscout status. This step is often overlooked and yet solves a lot of problems. 
+
+When posting for help, include two screenshots of Loop's main screen; one with the red loop's error message and the other just the plain Loop main screen. Include a detailed description of what you have tried doing from the troubleshooting list above. For example, state if you've double checked the transmitter ID, deleted the Share account info from Loop settings, and updated your Loop app since July 19, 2019 so that we can rule out some of the causes of CGM issues.

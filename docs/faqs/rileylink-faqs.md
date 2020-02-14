@@ -16,6 +16,19 @@ RileyLinks are made in batch productions (meaning sometimes they can go on backo
 
 The short answer is yes. If you want your Loop to keep automatically adjusting basals and issuing commands to your pump, you will need the RileyLink so that these communications can happen. Put it in a purse, pocket, SPIbelt. Clip it to a backpack, belt, or bra...but please do bring it with you.
 
+## What are some ideas for carrying the RileyLink?
+
+I'm shocked that this question comes up so often...but here's some ideas. Please do not post in Looped group or Zulipchat for more ideas. This horse has been well-beaten, so use the search function in Looped group to see the previous responses. But, here's some samples for those of you who won't use the search function. ;)
+
+
+[Post 1](https://www.facebook.com/groups/TheLoopedGroup/permalink/2340802992803020/)
+
+[Post 2](https://www.facebook.com/groups/TheLoopedGroup/permalink/2470906669792651/)
+
+[Post 3](https://www.facebook.com/groups/TheLoopedGroup/permalink/2469724099910908/)
+
+[Post 4](https://www.facebook.com/groups/TheLoopedGroup/permalink/2324172164466103/)
+
 ## How far away can the RileyLink be?
 
 That answer will depend, it is environmentally dependent. Generally speaking, RileyLink is solid about 10-12 feet away in most environments. In some situations, you could have RileyLink work fine even at 20+feet away. Other times, you may need to get RileyLink closer. What influences this distance? The biggest influences are (1) body-blocking and (2) "noisy" environments. The human body is a lot of water, and water is an excellent blocker of wireless communication.  So, sleeping on a pod and smothering it entirely with your body will possibly decrease the ability of RileyLink to communicate with the pod. Environments with a high concentration of wireless signals can also interfere with RileyLink's communications and make closer proximity a benefit. Where might those kinds of situations happen? Concerts, conferences, and sporting arenas are pretty prone to interference.

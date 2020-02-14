@@ -3,7 +3,7 @@
 This section of the docs will go over the Loop displays available and what information they offer.  Information about your Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app.  
 
 ## Status Screen
-The Status Screen is the main root navigation screen in Loop. It is broken up into 3 main display areas; Heads Up Display (HUD), Charts, and Toolbar. The HUD is the top area of the screen. This shows the status of the last time loop ran, current BG Reading, current temp basal, and current pump information. The next area is the charting area. This includes, glucose trend and prediction, Active Insulin, Insulin Delivery, and Carbohydrates. The final display area is the toolbar which has buttons for Carbs, Pre-Meal, Bolus, Workout Mode, and Settings.
+The Status Screen is the main root navigation screen in Loop. It is broken up into 3 main display areas; Heads Up Display (HUD), Charts, and Toolbar. The HUD is the top area of the screen. This shows the status of the last time loop ran, current BG Reading, current temp basal, and current pump information. The next area is the charting area. This includes, glucose trend and prediction, Active Insulin, Insulin Delivery, and Carbohydrates. The final display area is the toolbar which has buttons for Carbs, Pre-Meal, Bolus, Overrides, and Settings.
 
 <p align="center">
 <img src="../img/main_screen.jpg" width="550">
@@ -113,7 +113,7 @@ The loop status circle will pulse slightly when the RileyLink is giving the pump
 <table>
 <tr>
 <td><img src="../img/pod-age.jpg" width="250"></td>
-<td>The pod's age typical 3-day lifespan is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red. When you reach 80 hours of pod use, the pod will alarm and the pod age icon will show a "replace pod" message in the HUD.</td>
+<td>The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red. When you reach 80 hours of pod use, the pod will alarm and the pod age icon will show a "replace pod" message in the HUD.</td>
 </tr>
 </table>
 
@@ -129,7 +129,7 @@ There are several charts that help you navigate your Loop actions.  Clicking on 
 
 The glucose chart displays BG values in your preferred units. The vertical scale of the chart is calculated on the fly by Loop to be as useful as possible while including the highest and lowest readings in the chart.
 
-The horizontal axis is set to go forward from the current time until your DIA forward (so you can see what Loop eventually thinks BG will be). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.
+The horizontal axis is set to go forward from the current time until your DIA (insulin duration) forward (so you can see what Loop thinks BG will be eventually). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.
 
 The BG correction range is shown as a blue bar on the glucose chart.  Single-value target BG range (such as 100-100 mg/dl), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction target in lighter blue.
 
@@ -153,7 +153,7 @@ Additionally, at the bottom of this screen there is a setting to `Enable Retrosp
 <img src="../img/active_insulin.jpg" width="400">
 </p>
 
-The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive and negative IOB.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered).  So long as you have Event History as the Preferred Data Source in Loop settings, primed insulin deliveries (e.g., cannula fills or manual primes) will not be counted towards IOB.
+The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive and negative IOB.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered).  So long as you have Event History as the Preferred Data Source in Loop settings (does not apply to Omnipod, Minimed Only), primed insulin deliveries (e.g., cannula fills or manual primes) will not be counted towards IOB.
 
 ### Insulin Delivery Chart
 
@@ -201,11 +201,11 @@ The toolbar is where your inputs to the Loop behavior take place.  The individua
 
 * **Carb entry tool**- click on this tool to enter carbs into the Loop app.  Loop will not read carb entries from the pump or Nightscout, so you must use the carb entry tool in Loop app in order to have carbs accounted for by the Loop.  Detailed info regarding how to enter, save, and edit carb entries can be found in the [Carb Entries page](https://loopkit.github.io/loopdocs/operation/features/carbs/).
 
-* **Pre-meal target** - click this tool to set the [Pre-Meal temporary override target](https://loopkit.github.io/loopdocs/setup/loop-settings/configurations/#override-ranges).  This target will remain in effect (1) for 60 minutes, (2) until a carb entry is saved, or (3) until the target is toggled off manually, whichever comes first.  The background coloring of the Pre-Meal target will turn green when active and there will be a dark blue line on the BG chart indicating where the override target is enabled.  For more information about the use of the Pre-Meal target, see the [Bolus Entries page](https://loopkit.github.io/loopdocs/operation/features/bolus/).
+* **Pre-meal target** - click this tool to set the [Pre-Meal temporary override target](https://loopkit.github.io/loopdocs/operation/features/premeal/).  This target will remain in effect (1) for 60 minutes, (2) until a carb entry is saved, or (3) until the target is toggled off manually, whichever comes first.  The background coloring of the Pre-Meal target will turn green when active and there will be a dark blue line on the BG chart indicating where the override target is enabled.
 
 * **Bolus tool** - click on this tool to bring up the bolus tool.  Normally, this screen will automatically open on its own and function as a bolus wizard when a meal is saved on the carb entry tool screen.  The only time the bolus tool will not automatically open is if the amount of carbs saved is determined to be adequately covered by the insulin on board already.  During rapidly rising BGs, where Loop doesn't have an adequate temp basal rate to cover the pace at which BGs are rising, you may try clicking on the bolus tool to see if Loop is recommending a correction bolus to help control the BG spike.  For more information about the Bolus tool features and use, see the [Bolus Entries page](https://loopkit.github.io/loopdocs/operation/features/bolus/).
 
-* **Workout Target** - click this tool to set the [Workout temporary override target](https://loopkit.github.io/loopdocs/operation/loop-settings/configurations/#override-ranges).  This target will remain in effect for the duration you select.  The standard duration selections available are 1-hour, 2-hour, or indefinitely.  You can add or modify those options, before building the Loop app, by using the [Workout mode customization option](https://loopkit.github.io/loopdocs/build/code_customization/#workout-range-duration).  For more information about using the Workout Mode, see [here](https://loopkit.github.io/loopdocs/operation/features/workout/).
+* **Overrides** - click this tool to set an [temporary override preset](https://loopkit.github.io/loopdocs/operation/features/workout/).
 
 * **Loop Settings** - click on this tool to make changes to any of your [Loop settings](https://loopkit.github.io/loopdocs/operation/overview).
 

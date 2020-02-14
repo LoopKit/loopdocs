@@ -1,13 +1,13 @@
 # Step 2: Compatible iPhone or iPod touch
 
 !!!danger "Time Estimate"
-    * 5 minutes, if already have iOS 12.2 or newer
-    * 20 minutes, if need to update your compatible device to iOS 12.2 or newer
+    * 5 minutes, if already have iOS 12.4 or newer
+    * 20 minutes, if need to update your compatible device to iOS 12.4 or newer
     * 10 minutes, if you need to order a device from Apple website
     * 0 minutes, if you own an Android and won't buy Apple products...that's fine, too.
 
 !!!info "Summary"
-    * Check your iOS version and make sure you have 12.2 minimum.
+    * Check your iOS version and make sure you have 12.4 minimum.
     * Do not use any of the beta iOS versions. (Don't worry...if you don't know what that means, then you aren't using one.)
     * If using Dexcom CGM, your Looping iPhone/iPod touch will need the Dexcom app installed on it in order to Loop without an internet connection.
 
@@ -17,8 +17,11 @@
     * **"Can I use an iPad?"** No. iPads do not support Apple Health and that is an important part of Loop's inner workings.
     * **"Does my iPhone need cell plan?"** No. Loop will work without an internet connection...however you will not have Dexcom Follow data or Nightscout data if you choose to use a device that doesn't have an internet connection. In other words Loop will work, but remotely watching followers won't see Looping data unless the Loop device has an internet connection.
 
-## iOS check
-Loop is compatible with iPhone and iPod touch devices that can run iOS 12.2 or newer. Therefore, compatible devices include:
+## iOS and Health App
+
+Why is Loop limited to just iPhones and iPod touches? Why can't you use an iPad? Because Loop uses the Apple Health app to store and retreive your blood glucose, carbohydrate, and insulin data records. iPads do not have the Apple Health app, so those devices will not work with Loop. iPhones and iPod touches have the Apple Health app, so they will work with Loop.
+
+The next compatibility check is that we need a minimum version of the operating software on those iPhones and iPod touches. Loop is compatible with iPhone and iPod touch devices with iOS 12.4 or newer. Therefore, assuming the iOS is updated to iOS 12.4 or newer, the compatible devices include:
 
 * iPhone X, XS, XR, XS Max
 
@@ -34,11 +37,12 @@ Loop is compatible with iPhone and iPod touch devices that can run iOS 12.2 or n
 
 * iPod Touch, 6th generation or newer
 
+
 ## iOS 13 update
 
-On September 19, 2019, iOS 13 will be released. The iPhone 5s, 6, 6+ models will not be able to update to iOS 13. This does not pose a problem currently. You can still build Loop. HOWEVER, there are upcoming Loop changes that will require users to have iOS 13 on their devices. There is no timeframe for when these Loop changes will be coming, but just be aware that we do anticipate all Loopers will need to be using iOS 13 in the future if they want the new versions of Loop.
+On September 19, 2019, iOS 13 was released. The iPhone 5s, 6, 6+ models will not be able to update to iOS 13. This does not pose a problem currently. You can still build Loop so long as you have iOS 12.4 at a minimum. HOWEVER, there are upcoming Loop changes that will require users to have iOS 13 on their devices in future versions of Loop. There is no timeframe for when these Loop changes will be coming, but just be aware that we do anticipate all Loopers will need to be using iOS 13 in the future if they want the new versions of Loop.
 
-Until then, you can use iOS 12.2 (or newer through iOS 13) without issue. Updating to iOS 13 is optional as far as Loop is concerned. Your Loop app on your phone will continue to run fine if you choose to update to iOS 13. It will also continue to run fine if you do not update to iOS 13. 
+Until then, you can use iOS 12.4 (or newer through iOS 13+) without issue. Updating to iOS 13 is optional as far as Loop is concerned. Your Loop app on your phone will continue to run fine if you choose to update to iOS 13. It will also continue to run fine if you do not update to iOS 13. 
 
 Your phone's iOS version can be found under the Settings app, General, About as shown below.
 
