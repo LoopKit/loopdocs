@@ -730,7 +730,7 @@
 <p><img alt="combined meal entries" src="../img/meal2.png" /></p>
 <p>resulting in 2g of absorption being attributed to Meal 1 and 1g attributed to Meal 2.</p>
 <h3 id="minimum-carbohydrate-absorption-rate">Minimum Carbohydrate Absorption Rate<a class="headerlink" href="#minimum-carbohydrate-absorption-rate" title="Permanent link">⌁</a></h3>
-<p>If the estimated carbohydrate absorption of a meal entry is less what would have been absorbed using the minimum absorption rate, then the minimum absorption rate is used instead. This is to ensure that meal entries expire in a reasonable amount of time.</p>
+<p>If the estimated carbohydrate absorption of a meal entry is less than what would have been absorbed using the minimum absorption rate, then the minimum absorption rate is used instead. This is to ensure that meal entries expire in a reasonable amount of time.</p>
 <h3 id="modeling-remaining-active-carbohydrates">Modeling Remaining Active Carbohydrates<a class="headerlink" href="#modeling-remaining-active-carbohydrates" title="Permanent link">⌁</a></h3>
 <p>After the estimated absorbed carbohydrates have been subtracted from each meal entry, the remaining carbohydrates (for each entry) are then forecasted to decay or absorb using the minimum absorption rate. Loop uses this forecast to estimate the effect (active carbohydrates, or carbohydrate activity) of the remaining carbohydrates. The carbohydrate effect can be expressed mathematically using the terms described above:</p>
 <p><img alt="combined meal entries" src="../img/combined_bgc.png" /></p>
