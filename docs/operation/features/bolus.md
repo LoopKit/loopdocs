@@ -22,22 +22,11 @@ Occasionally, a recommended bolus will be offered in the bolus tool unrelated to
 A new status line will appear when Loop is sending a bolus command to the pump. Just above the main screen's glucose chart, you will see a "starting bolus" indicator.
 
 <p align="center">
-<img src="/operation/features/img/starting_bolus.png" width="250">
+<img src="../img/starting_bolus.png" width="250">
 </p>
 
 ## Bolus Failure Notifications
 On occasion, you will receive notification that a bolus may have failed. In some of these cases, the bolus actually will begin delivery. Therefore, you should always check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.
-
-!!!info ""
-    There is a known issue with some x15 WW pumps falsely stating bolus failure notifications with every bolus.  Please read [here](https://github.com/LoopKit/Loop/issues/587) for additional information about how to fix the issue until Loop code is updated with a permanent fix.
-
-## Pre-Meal
-
-The pre-meal override target can be used prior to bolusing in order to help control post-prandial BGs. Most users will set a lower pre-meal target than what their normal correction range is. For example, a pre-meal target might be 80 - 80 mg/dL while your normal correction range might be 100-110 mg/dL. If you engage the pre-meal targets up to an hour before the meal, Loop will deliver an "extra" amount of insulin while it aims for that lower BG target. By getting the insulin in a little sooner, there will be more active insulin awaiting the carb absorption when the meal is eaten.
-
-The pre-meal target will remain active until (1) 60 minutes has passed since it was activated, or (2) a carbohydrate entry has been saved in Loop, or (3) the Loop user manually cancels the pre-meal target by tapping on the icon again. Whichever of these happens first will cancel the pre-meal targets. If no action is taken, the pre-meal target will end on its own after 60 minutes.
-
-If you are using the pre-meal target and save the carbs for the meal entry, Loop will cancel the pre-meal target and revert back to your normal correction range. Loop will account for the insulin it has "pre-bolused" while trying to reach the lower pre-meal target, and use your normal correction range when making the bolus recommendation.
 
 ## Square or Dual Waves
 Unfortunately, Loop cannot enact temp basals while the pump is delivering a square- or dual-wave bolus. Therefore, you will need to use alternate bolusing strategies for situation where you would've previously used those extended bolusing techniques.

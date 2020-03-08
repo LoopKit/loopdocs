@@ -11,9 +11,9 @@
 
 Today is an easy one, but probably takes the longest of most of any of the days in terms of time...only because the download takes a while. The good news is that you don't have to watch this. Instead, you can start the download and simply walk away for the rest of it.
 
-Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" code into an iOS application and install it onto your iPhone/iPod. **Make sure you have updated your macOS to Mojave AND checked the `Software Updates` button before proceeding...in other words, make sure you did Step 1's work.**
+Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" code into an iOS application and install it onto your iPhone/iPod. **Make sure you have updated your macOS to Mojave or Catalina AND checked the `Software Updates` button before proceeding...in other words, make sure you did Step 1's work.**
 
-Open your App Store in your computer and search for Xcode...you'll either be downloading it brand new or updating an existing installation. The version you are looking for is Xcode 11.2.1 at the minimum. It should be showing in the "what's new" description as shown in the image below. This is a big download (over 7GB) so don't expected this to be fast.
+Open your App Store in your computer and search for Xcode...you'll either be downloading it brand new or updating an existing installation. The version you are looking for is Xcode 11.3 at the minimum. It should be showing in the "what's new" description as shown in the image below. This is a big download (over 7GB) so don't expected this to be fast.
 
 <p align="center">
 <img src="../img/xcode.png" width="750">

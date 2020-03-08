@@ -26,9 +26,9 @@ Loop has both hardware and software requirements. In general, to use Loop you ne
 
 ## Can I download Loop from the App store?
 
-No. Loop is not available for download. You must build your own Loop app.
+No. Loop is not available for download. You must build your own Loop app. Loop app will not be available in the Apple App store because that would be distribution of a medical device, and we are not in that "business".  You can build yourself, but we are not distributors.
 
-But don't worry, building your Loop app is actually quite easy and that's what these docs are all about. The harder part will be having the patience to read all the documents before you start. New Loop users are so excited to get started that they skip reading all the great info that these docs contain. So, as you begin the build...please include time to read the documents that follow what happens AFTER you successfully build your Loop app.
+Don't worry though, building your Loop app is actually quite easy and that's what these docs are all about. The harder part will be having the patience to read all the documents before you start. New Loop users are so excited to get started that they skip reading all the great info that these docs contain. So, as you begin the build...please include time to read the documents that follow what happens AFTER you successfully build your Loop app.
 
 If you have any questions, these docs have a nice search feature in the dark blue top menu bar that may help you find your answers pretty quickly too.
 
@@ -70,7 +70,7 @@ If you are borrowing an Apple computer, you should ask the person to (1) update 
 
 ## Can I use a PC or Windows computer to build?
 
-Yes, you can...sort of. There is a hacked way of installing macOS on a Windows computer called "Virtual Machine". [This link](https://macosvmware.tech.blog/) may provide some helpful information for that if you want to learn more...but it's up to you and Google if you hit a road block. These docs do not provide troubleshooting tips for Virtual Machine installation or use.
+Yes, you can...sort of. There is a hacked way of installing macOS on a Windows computer called "Virtual Machine". [This link](https://macosvmware.tech.blog/) may provide some helpful information for that if you want to learn more...but it's up to you and Google if you hit a road block. This Virtual Machine method will not work on PCs that have AMD processors either, so double check your computer before to confirm you don't have an old AMD processor. These docs do not provide troubleshooting tips for Virtual Machine installation or use.
 
 ## How often do I need to get on the computer for Loop?
 
@@ -110,7 +110,7 @@ NOOOO...you really need to figure this out yourself. This is an automated insuli
 
 For Medtronic users, you simply go back to old school pump use until you get a new RileyLink. You can either let your temp basal finish by itself (30 minutes or less) or cancel the temp basal on the pump's menu. For bolusing, you'd go back to using the pump's bolus commands. When you get a RileyLink (either finding your old one or getting your backup RileyLink out) and Loop running again, you'll want to do one thing. Enter in any carbs to Loop that you may have eaten in the recent past that could still be affecting blood glucose. While Loop will read whatever insulin deliveries had happened while the RileyLink was missing, it will not read any carbs you entered into the pump...so make sure to add those to Loop and backdate them to the time they were eaten. That will help make the transition smoother to Looping again.
 
-For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a RileyLink, you will not be able to affect any pod use; no basal changes, suspends, or boluses. If you have a backup RileyLink, you can simply connect to the new RileyLink on the same Loop app and it will work with the existing pod session. If you don't have a backup RileyLink, you'll have to remove the pod and start a new pod paired with your PDM until you get a new RileyLink.
+For Pod users, your Pod will finish any currently running temporary basal rate (maximum of 30 minutes) and then revert back to your scheduled basal rate. Without a RileyLink, you will not be able to affect any Pod use other than normal basals. No temp basals, suspends, or boluses will be possible, similar to if you were to lose your PDM. If you have a backup RileyLink, you can simply connect to the new RileyLink on the same Loop app and it will work with the existing pod session. If you don't have a backup RileyLink, you'll have to remove the pod and start a new pod paired with your PDM until you get a new RileyLink.
 
 ## What if I lose or get a new iPhone?
 
@@ -127,9 +127,9 @@ And those all likely won't be compatible anytime in the future.
 
 ## Can I have more than one Loop app on a phone?
 
-Yes, technically possible. You can have multiple Loop apps built onto the same iPhone. However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping). Additionally, your pod will only work on one Loop app at a time anyways. So for smooth looping, just keep one Loop app on any phone for looping use. 
+Yes, technically possible. You can have multiple Loop apps built onto the same iPhone. However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping). Additionally, your Pod will only work on one Loop app at a time anyways. So for smooth looping, just keep one Loop app on any phone for looping use. 
 
 ## Will I be able to Loop on a plane? Or in the mountains?
 
-Yes. Loop does not require internet or cell coverage to work. So long as the Looper has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/pod.
+Yes. Loop does not require internet or cell coverage to work. So long as the Loop user has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/Pod.
 

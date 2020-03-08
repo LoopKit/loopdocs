@@ -10,17 +10,17 @@ There are two types of build errors that happen; they are yellow warnings and re
 
 Before you start trying to resolve your red errors...start with the most obvious things that can cause a red error message:
 
-1. **DO NOT HAVE A SPACE IN YOUR LOOP FOLDER NAME**. If you downloaded multiple Loop codes without deleting the old ones first, there's a good chace you have a space in the folder name. REMEMBER TO AVOID SPACES IN THE FOLDER'S NAME. Fix it if there is one.
+1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
 
-2. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
+2. **Did you check for Xcode updates?** Cannot emphasize this one enough...you should check for Xcode updates (and install them) before building. Current version of Xcode is 11.3, make sure you have it!
 
-3. **Did you check for Xcode updates?** Cannot emphasize this one enough...you should check for Xcode updates (and install them) before building.
+3. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there's a new license agreement.
 
-4. **Did you reboot your computer after updating Xcode?** Yup...that was in the message on the Update Loop page...did you ignore it? ;)
+4. **Did you reboot your computer after updating Xcode?** Yup...that was in the reminder on the page about updating your Loop app...did you ignore it? ;)
 
-5. **Get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago.** That old version may not be compatible with new iOS and new Xcode versions.
+5. **Did you get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago?** That old version may not be compatible with new iOS and new Xcode versions.
 
-6. If you are using a free developer account, you need to have finished the [removal of Siri and Push Notification capabilities](https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets).
+6. **Are you are using a free developer account?** Make sure you finished the [removal of Siri and Push Notification capabilities](https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets).
 
 ## Posting for help
 
@@ -34,9 +34,9 @@ Therefore, first use the error topics (listed in sections below) to try to resol
     * The version of Xcode you are using
     * The version of Loop you are building with
     * The version of iOS on your Loop iPhone
-    * Specify if you are using a free or paid account, and if free...confirm you deleted Siri capabilities
+    * Specify if you are using a free or paid account, and if free...confirm you deleted Siri and Push Notification capabilities
     * Confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)
-    * Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.
+    * Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.  NOT phone pics.  See below for instructions on how to do this.
     * **<u>State which fixes from the below list that you have already tried AND post the screenshots of the results of those fix attempts.</u>**
 
 Helpful tip: Shift-Command-4-spacebar will give you a screenshot tool that you can use to click on the Xcode window to grab a screenshot. The screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information and often cuts off valuable information that we look for in the various parts of the Xcode window. Use the whole Xcode window's screenshot when posting for help.
@@ -52,7 +52,7 @@ To begin fixing the error, use the Report Navigator view to find your error mess
 
 The key is to (1) ***READ THE ERROR MESSAGE*** and then (2) ***FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW***.
 
-Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail. Look at the detailed message to really help guide your search for the matching solution.
+Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail - some exit codes can have multiple causes. Look at the detailed message to really help guide your search for the matching solution.
 
 Notice how in the screenshots in the topics below, there are red circles highlighting certain error messages? Read your error messages similar to where those red circles are in the screenshots below. Once you find your error message (hint: not "exit code"), you can either:
 
@@ -91,6 +91,33 @@ If your carthage update fails, try opening the Terminal app and running these co
 
 After running those commands, retry the `cd ~/downloads/loop-master && carthage update` (remembering to update the name of your Loop download folder, as needed).
 
+## Developer License Update
+Error message: "**<u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u>**"
+
+Solution: You'll need to log onto your developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
+<p align="center">
+<img src="../img/license.png" width="750">
+</p>
+
+## Problems with Homebrew
+Error message: This one could be a variety of error messages, so there's not one in particular. You may see "Command PhaseScriptExecution failed with a nonzero exit code", but that same message could apply to other sources of error. So look for more identifying information about the error code. If you see something about "unable to create /user/local/Homebrew/.git/index.lock: file exists" then you have a Homebrew problem, as shown in the red circle below.
+
+<p align="center">
+<img src="../img/homebrew-git-lock.jpg" width="750">
+</p>
+
+Solution: You'll need to uninstall Homebrew and then resinstall. Two simple copy and paste commands in Terminal.
+
+First you need to uninstal using this command in Terminal app:
+
+`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"`
+
+And then repeat the installation command from step 7 in the build process by using this command in Terminal app:
+
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+Now try building your Loop app again, you shouldn't have any problems.
+
 ## Could not get a container directory URL
 
 Error message: "**<u>Could not get a container directory URL. Please ensure App Groups are set up correctly in entitlements.</u>**"
@@ -114,8 +141,6 @@ To resolve this error, you will need to click on the Loop target's signing area 
 
 The final App Group should now have a blue check box, the name should start with `group` and end with `LoopGroup`. See the screenshot as an example. Click the build button after your App Group is setup similarly and you should be good.
 
-
-
 ## Missing Command Line Tools
 
 Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandLineTools)</u>**" or "**<u>unable to find utility "xcodebuild", not a developer tool or in PATH</u>**"
@@ -130,12 +155,31 @@ Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandL
 <img src="../img/command-line-error-2.jpg" width="550">
 </p>
 
-Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 11.2.1" in the dropdown menu for Command Line Tools.
+Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 11.3" in the dropdown menu for Command Line Tools.
 
 </p>
 <p align="center">
 <img src="../img/command-line-error-3.png" width="550">
 </p>
+
+## Device Management could not launch Loop
+
+Error message: "Could not launch "Loop". Verify the Developer App certificate for your account is trusted on your device. Open Settings and navigate to General -> Device Management, then select your Developer App certificate to trust it."
+
+<p align="center">
+<img src="../img/trust_device.jpg" width="750">
+</p>
+
+Solution: If you get this message and are unable to find the Device Management option in your phone settings, then we need to do a little extra step to clear out some old info.
+
+1. Plug phone in and open Loop in Xcode
+2. Click the "Window" menu item in Xcode and then choose "Devices and Simulators"
+3. Right click your phone on the left and pick "Show Provisioning Profiles"
+4. Delete all of the items in the list that have Loop in the name
+5. Go to your four signing targets and change the signing team back to "None" for a quick bit, and then change back to your regular signing team name again.
+6. Rebuild Loop
+
+That should clear out the old, unworking profiles and give you a successful build.
 
 ## Pending Certificate Request
 
@@ -180,11 +224,7 @@ Solution:  This error message is likely due to inadvertently saying "no" to allo
 
 1. Close Xcode
 2. Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)
-3. In the upper left corner of keychain access, make sure you have the keychain `login` highlighted and then click the large lock icon above the keychains area (High Sierra users) or right-click the lock next to the `login` (Mojave macOS users).  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
-</p>
-<p align="center">
-<img src="../img/keychain3.png" width="450">
-</p>
+3. In the upper left corner of keychain access, make sure you have the keychain `login` highlighted and then right-click the lock next to the `login`.  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
 
 </p>
 <p align="center">
@@ -194,14 +234,6 @@ Solution:  This error message is likely due to inadvertently saying "no" to allo
 4. Open your Loop project again in Xcode.
 5. In the main Xcode menu (grey menu bar at the very top of your Apple display area), select the word `Product` and then select the option for `Clean`. (keyboard shortcut is shift-command-k)
 6. Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to Always Allow.
-
-## Developer License Update
-Error message: "**<u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u>**"
-
-Solution: You'll need to log onto your developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
-<p align="center">
-<img src="../img/license.png" width="750">
-</p>
 
 ## Unrecognized arguments: --cache-builds
 
@@ -226,12 +258,7 @@ Error message: "**<u>Abort with payload</u>**"  Your app will only open briefly 
 <p align="center">
 <img src="../img/abort_payload.png" width="750">
 </p>
-Solution: This error message is caused by either
-
-1. Saving Loop download folder into an iCloud mapped drive, or
-2. Having a space in the name of your Loop download folder.
-
-Rename the folder to have no spaces and/or move it back to the Downloads folder, then rebuild.
+Solution: This error message is caused by having Loop download folder in an iCloud mapped drive.  Move your download folder back to the Downloads folder, then rebuild.
 
 ## Apple Watch: Loop app not appearing
 Error: **<u>Apple watch app is not appearing</u>**.
@@ -245,17 +272,8 @@ Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, l
 
 Now we need to do one step before rebuilding Loop app again. Go to the top menu bar of Xcode and select "Clean Build Folder" from the Product menu option. Rebuild your Loop app. 
 
-For an unknown reason (developers are working on fixing it currently), if you do repeated builds in the same Loop project folder...the watch app can fail to install properly after the first build. Therefore, a simple "Clean Build Folder" will reset the folder back to new and you'll be able to install the watch after that fresh build.
+For an unknown reason (developers are working on fixing it currently), if you do repeated builds in the same Loop project folder...the watch app can fail to install properly after the first build. Therefore, a simple "Clean Build Folder" will reset the folder back to new and you should be able to install the watch after that fresh build.
 
-## Xcode path not set correctly after using Xcode 11 GM
-Error: **<u>xcrun: error: active developer path ("/Users/pops/Downloads/Xcode.app/Contents/Developer") does not exist
-Use sudo xcode-select --switch path/to/Xcode.app to specify the Xcode that you wish to use for command line developer tools, or use xcode-select --install to install the standalone command line developer tools.
-See man xcode-select for more details.</u>**.
+Sometimes, if the problem is really a bugger...you have to do a more painful troubleshooting. If you still can't get the Loop app to install on the watch after a "Clean Build Folder" attempt at rebuilding, we need to start at square one. Unpair your watch from the iPhone and setup as a brand new device. Yes, pain in the butt. But, usually wiping the watch, re-pairing fresh, and then building Loop again on the phone will fix the issue. Sorry, wish I had a shorter path to fixing that problem, but this is where the current state is.
 
-Please note that the path in the example error above is just an example. Your path in the error may be different.
 
-Solution:  This may occur if you have installed Xcode 11 GM before you installed the updated general release version. So, Xcode may get confused on which path to be using. Run the command below:
-
-`sudo xcode-select --switch /Applications/Xcode.app`
-
-Enter your password that you use to login to your Mac with and press Enter. You may now proceed with your build commands.

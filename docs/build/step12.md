@@ -50,7 +50,7 @@ Descriptive language doesn't mean the four-letter words that get you frowns at t
 
 ## Be ok with links
 
-A lot of time, the answer to your question for help will be answered with a link. Please don't take offense to getting a quick link back to LoopDocs or LoopTips. This is most often because the question is already answered there and the person is simply saving time by not typing out what already exists elsewhere. 
+A lot of time, the answer to your question for help will be answered with a link. Please don't take offense to getting a quick link back to LoopDocs or LoopTips. This is most often because the question is already answered there and the person is simply saving time by not typing out what already exists elsewhere.  There's a ton of information between these two sites, so it can be easy to overlook something if you're not sure what to search for.
 
 If you've searched the docs and read the info already, then please include that in your post. That way you don't get linked back to the same part you're already confused about. Plus, letting us know when these docs can be improved is very useful. 
 
