@@ -709,7 +709,12 @@
 <p>When your RL and pump are first paired, Loop performs a series of tests that you won't see...they are tuning tests. Basically, RL sends little test messages to the pump and waits for a response. The RL tries this same "ping" to the pump a range of various radio frequencies. The range of radio frequencies it tries is based on the pump you've told RL to expect (Omnipod, Medtronic NA/CA, or Medtronic WW).  RL will then record the radio frequencies that provided the strongest response and use that frequency for future pump communications.</p>
 <p>Usually this best frequency is pretty constant for any given pump+RL, but during temperature changes it may be that the best frequency is not the one currently set. In the event that RL has problems communicating with the pump, Loop has code built-in that will automatically tell the RL "Hey, try that tuning pump thing again...maybe there's a better frequency we need to try." This retuning is started automatically if pump communications fail for 14 minutes (in other words, two looping cycles).</p>
 <h3 id="bluetooth-communications">Bluetooth communications<a class="headerlink" href="#bluetooth-communications" title="Permanent link">⌁</a></h3>
-<p>RL communicates with your iPhone and Loop app through Bluetooth (BT).  If your iPhone has BT issues, your Loop will have failures.  There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interfering with the Loop.  If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.</p>
+<p>RL communicates with your iPhone and Loop app through Bluetooth (BT).  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+</div>
+<p>Bluetooth Troublehsooting
+If your iPhone has BT issues, your Loop will have failures.  There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interfering with the Loop.  If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.</p>
 <p>Your BT signal strength can be seen in the Loop settings, under the RL menu, on the <code>Signal Strength</code> line. As you move closer and further away from your phone, you can watch that number dynamically change. This line is <strong>not</strong> displaying the signal strength of your pump communications discussed above.</p>
 <p align="center">
 <img src="../img/RL_bt.jpg" width="400">

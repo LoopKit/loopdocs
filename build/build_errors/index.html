@@ -702,9 +702,9 @@
 <li>The version of Xcode you are using</li>
 <li>The version of Loop you are building with</li>
 <li>The version of iOS on your Loop iPhone</li>
-<li>Specify if you are using a free or paid account, and if free...confirm you deleted Siri capabilities</li>
+<li>Specify if you are using a free or paid account, and if free...confirm you deleted Siri and Push Notification capabilities</li>
 <li>Confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)</li>
-<li>Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.</li>
+<li>Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.  NOT phone pics.  See below for instructions on how to do this.</li>
 <li><strong><u>State which fixes from the below list that you have already tried AND post the screenshots of the results of those fix attempts.</u></strong></li>
 </ul>
 </div>
@@ -716,7 +716,7 @@
 <img src="../img/report-nav.png" width="750">
 </p></p>
 <p>The key is to (1) <strong><em>READ THE ERROR MESSAGE</em></strong> and then (2) <strong><em>FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW</em></strong>.</p>
-<p>Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail. Look at the detailed message to really help guide your search for the matching solution.</p>
+<p>Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail - some exit codes can have multiple causes. Look at the detailed message to really help guide your search for the matching solution.</p>
 <p>Notice how in the screenshots in the topics below, there are red circles highlighting certain error messages? Read your error messages similar to where those red circles are in the screenshots below. Once you find your error message (hint: not "exit code"), you can either:</p>
 <ul>
 <li>
@@ -753,7 +753,7 @@
 <img src="../img/license.png" width="750">
 </p></p>
 <h2 id="problems-with-homebrew">Problems with Homebrew<a class="headerlink" href="#problems-with-homebrew" title="Permanent link">⌁</a></h2>
-<p>Error message: This one could be a variety of error messages, so there's not one in particular. You may see Command PhaseScriptExecution failed with a nonzero exit code, but that same message could apply to other sources of error. So look for more identifying information about the error code. If you see something about "unable to create /user/local/Homebrew/.git/index.lock: file exists" then you have a Homebrew problem, as shown in the red circle below.</p>
+<p>Error message: This one could be a variety of error messages, so there's not one in particular. You may see "Command PhaseScriptExecution failed with a nonzero exit code", but that same message could apply to other sources of error. So look for more identifying information about the error code. If you see something about "unable to create /user/local/Homebrew/.git/index.lock: file exists" then you have a Homebrew problem, as shown in the red circle below.</p>
 <p align="center">
 <img src="../img/homebrew-git-lock.jpg" width="750">
 </p>
