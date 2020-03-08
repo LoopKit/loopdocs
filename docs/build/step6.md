@@ -7,7 +7,7 @@
 
 !!!info "Summary"
     * If you've decided to you'd like to use a paid developer account, you need to enroll now. Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual account.
-    * If you've decided you'd like too use a free developer account, you don't need to do anything now. We'll get you covered later.
+    * If you've decided you'd like to use a free developer account, you don't need to do anything now. We'll get you covered later.
 
 !!!warning "FAQs"
     * **"Can I use someone else's Apple Developer account?"** Great question...answer is [here](https://loopkit.github.io/loopdocs/faqs/FAQs/#can-i-use-someone-elses-apple-developer-account).

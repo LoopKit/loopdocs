@@ -29,10 +29,7 @@ It is best practice to leave your Loop code in your Downloads folder. If you sto
 <img src="../img/icloud-drive.png" width="650">
 </p></br>
 
-Depending on your browser and settings, your Loop download may or may not automatically unzip. If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility. This will create a blue folder called `Loop-master`.  HOWEVER, if you already have an existing `Loop-master` folder from a previous download, the name of the next download will be something like `Loop-master (1)`.  The problem with that folder name is that it contains a space...and spaces in the name will cause your Loop build to fail. So, either delete old copies of Loop before downloading/unzipping -OR- rename the folder(s) to ensure that NO SPACES are in the folder name.
-<p align="center">
-<img src="../img/folder-name.png" width="650">
-</p>
+Depending on your browser and settings, your Loop download may or may not automatically unzip. If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility. This will create a blue folder called `Loop-master`.  HOWEVER, if you already have an existing `Loop-master` folder from a previous download, the name of the next download will be something like `Loop-master (1)`.
 
 ## Next Step: Build Loop app
 

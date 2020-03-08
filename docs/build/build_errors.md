@@ -34,9 +34,9 @@ Therefore, first use the error topics (listed in sections below) to try to resol
     * The version of Xcode you are using
     * The version of Loop you are building with
     * The version of iOS on your Loop iPhone
-    * Specify if you are using a free or paid account, and if free...confirm you deleted Siri capabilities
+    * Specify if you are using a free or paid account, and if free...confirm you deleted Siri and Push Notification capabilities
     * Confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)
-    * Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.
+    * Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.  NOT phone pics.  See below for instructions on how to do this.
     * **<u>State which fixes from the below list that you have already tried AND post the screenshots of the results of those fix attempts.</u>**
 
 Helpful tip: Shift-Command-4-spacebar will give you a screenshot tool that you can use to click on the Xcode window to grab a screenshot. The screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information and often cuts off valuable information that we look for in the various parts of the Xcode window. Use the whole Xcode window's screenshot when posting for help.
@@ -52,7 +52,7 @@ To begin fixing the error, use the Report Navigator view to find your error mess
 
 The key is to (1) ***READ THE ERROR MESSAGE*** and then (2) ***FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW***.
 
-Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail. Look at the detailed message to really help guide your search for the matching solution.
+Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail - some exit codes can have multiple causes. Look at the detailed message to really help guide your search for the matching solution.
 
 Notice how in the screenshots in the topics below, there are red circles highlighting certain error messages? Read your error messages similar to where those red circles are in the screenshots below. Once you find your error message (hint: not "exit code"), you can either:
 
@@ -100,7 +100,7 @@ Solution: You'll need to log onto your developer account at [developer.apple.com
 </p>
 
 ## Problems with Homebrew
-Error message: This one could be a variety of error messages, so there's not one in particular. You may see Command PhaseScriptExecution failed with a nonzero exit code, but that same message could apply to other sources of error. So look for more identifying information about the error code. If you see something about "unable to create /user/local/Homebrew/.git/index.lock: file exists" then you have a Homebrew problem, as shown in the red circle below.
+Error message: This one could be a variety of error messages, so there's not one in particular. You may see "Command PhaseScriptExecution failed with a nonzero exit code", but that same message could apply to other sources of error. So look for more identifying information about the error code. If you see something about "unable to create /user/local/Homebrew/.git/index.lock: file exists" then you have a Homebrew problem, as shown in the red circle below.
 
 <p align="center">
 <img src="../img/homebrew-git-lock.jpg" width="750">

@@ -46,21 +46,21 @@ So...if you are trying to grab someone's LoopWorkspace to use it, you'll need to
 
 ## Where does the clone go?
 
-The cloned version of the LoopWorkspace will go into whatever directory you were sitting in in Terminal app when you did the command. Terminal app by default drops you into your User account's root directory when you first open it, so that's a good assumption on where your cloned LoopWorkspace will go.
+The cloned version of the LoopWorkspace will go into whatever directory you were sitting in in Terminal app when you did the command. Terminal app by default drops you into your User account's home directory when you first open it, so that's a good assumption on where your cloned LoopWorkspace will go.
 
-How can you find your root directory?
+How can you find your home directory?
 
 1. In Terminal, if you use `cd` that will take you there automatically.</br>
-2. In Finder, shift-command-H will open your "home" folder (aka root directory).
+2. In Finder, shift-command-H will open your "home" folder.
 
 </p>
 <p align="center">
 <img src="../img/root-finder.png" width="750">
 </p>
 
-As you can see, I have a lot of cloned things in my root directory from GitHub that involve Loop. You may have fewer...but be aware, you can always delete and reclone if you are in doubt or confused. You can't clone mutliple "LoopWorkspaces" into the exact same root directory (because they will have the same name), so you may want to create a subdirectory to put them in. Like you could make a folder called "DeveloperJane" and then move into that directory in Terminal before you clone DeveloperJane's LoopWorkspace. 
+As you can see, I have a lot of cloned things in my home directory from GitHub that involve Loop. You may have fewer...but be aware, you can always delete and reclone if you are in doubt or confused. You can't clone mutliple "LoopWorkspaces" into the exact same home directory (because they will have the same name), so you may want to create a subdirectory to put them in. Like you could make a folder called "DeveloperJane" and then move into that directory in Terminal before you clone DeveloperJane's LoopWorkspace. 
 
-How would you do that? Simple `cd && mkdir DeveloperJane` would make the new folder in your root directory. And then `cd DeveloperJane` would move your Terminal app to be working inside the new DeveloperJane folder. So if you wanted to clone DeveloperJane's LoopWorkspace, that would be a good way to keep track of where the code came from.
+How would you do that? Simple `cd && mkdir DeveloperJane` would make the new folder in your home directory. And then `cd DeveloperJane` would move your Terminal app to be working inside the new DeveloperJane folder. So if you wanted to clone DeveloperJane's LoopWorkspace, that would be a good way to keep track of where the code came from.
 
 If you ever get in doubt and can't remember where your code was cloned from, you can `cd LoopWorkspace` to get into your cloned directory and then use `git remote -v` to tell you where it came from.
 
