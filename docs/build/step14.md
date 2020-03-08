@@ -22,7 +22,7 @@
 
 ## Open Loop project in Xcode
 
-Go to your Downloads folder, open your downloaded Loop code folder and double click on Loop.xcodeproj. For most everyone, this folder will be named  `Loop-master`.
+Go to your Downloads folder, open your downloaded Loop code folder and double click on Loop.xcodeproj. If you downloaded dev branch, your folder would be named `Loop-dev` and similar for `Loop-master` download.
 
 <p align="center">
 <img src="../../build/img/loop_code.png" width="750">
