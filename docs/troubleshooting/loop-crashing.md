@@ -25,8 +25,11 @@ If your app expires, you simply need to plug your phone back into the computer a
     
     * An example of a properly entered correction range: 100-120 mg/dL
     * An example of an improperly entered correction range: 120-100 mg/dL
-    
-If your app crashes because of an improperly set correction range, you will need to entirely delete your Loop app in order to fix the problem. Unfortunately, simply rebuilding Loop app will not be sufficient because settings are saved from just rebuilding on top of an existing Loop app. And, these bad settings need to be deleted, not saved. So...if you are podding...you'll also need to start a new pod after rebuilding. Make sure to move your existing pod far away from the room when starting a new pod as that old pod may interfere with pairing a new one, since the old one was not properly deactivated before removing.
 
-Because of the obvious hassle to fix an incorrect entry, please be careful when entering in the correction range. Follow the greyed out text suggestions in the Loop user interface that say `min-max`.
+    Please be careful when entering in the correction range. Follow the greyed out text suggestions in the Loop user interface that say `min-max`.
+
+This issue has been fixed in the latest release of Loop.  If your app crashes because of an improperly set correction range, verify you are running Loop v2.0.
+
+If you continue to experience similar crashes with Loop v2.0 or later, generate an [Issue Report](https://loopkit.github.io/loopdocs/troubleshooting/overview/#issue-report) and submit it to the Loop developers via GitHub.
+
 
