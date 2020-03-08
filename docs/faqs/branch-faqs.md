@@ -36,7 +36,7 @@ Omnipod-testing branch has served its purpose as an initial platform to test Pod
 
 ## Loop v2.0
 
-On December 31, 2020, Loop released Loop v2.0 (also said as "Loop updated Master branch"). This means that the cookbook from dev branch (to use our earlier analogy) was merged into master. On December 31st, master and dev branches were identical.
+On December 31, 2019, Loop released Loop v2.0 (also said as "Loop updated Master branch"). This means that the cookbook from dev branch (to use our earlier analogy) was merged into master. On December 31st, master and dev branches were identical.
 
 From that date forward though, dev branch will start to work on its new recipes again. Dev branch will start to diverge from master branch with untested changes and development of new code. Dev branch may start to have some bugs and regressions as a result of the coming/going of code changes that will happen without much announcement or discussion.
 
