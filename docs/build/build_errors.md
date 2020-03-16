@@ -67,29 +67,31 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 <img src="../img/search-errors.png" width="650">
 </p>
 
-## No such module 'LoopKit' or similar message
+## First good step to all errors
 
-If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then you need to open the Terminal app (remember it is located in your Applications folder under the Utilities group of applications).  You will use the command `cd ~/downloads/loop-dev && carthage update`.  NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY.  If your loop folder isn't named loop-dev and instead is loop-dev-2 or loop-master or some other folder name...change the command to match your folder's actual name. 
-
-</p>
-<p align="center">
-<img src="../img/exit-code-65.png" width="850">
-</p>
-
-Carthage update will take about 15-25 minutes to run successfully.  A successful carthage update will look like the following:
+1. Open your project in Xcode as normal. Then go to the Xcode menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.
+2. Open the Terminal app on your computer.
+3. Copy and paste this command and press return: `rm -rf ~/Library/Caches/org.carthage.CarthageKit` Note: you won't see any message back if the command runs successfully.
+4. Copy and paste this command and press return: `rm -rf ~/Library/Developer/Xcode/DerivedData` Note: you won't see any message back if the command runs successfully.
+5. Enter the command `cd ~/downloads/loop-master && carthage update`.  **NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY if your folder isn't named loop-master as shown in the command.**  If your loop folder isn't named loop-master and instead is loop-dev or some other folder name...change the command to match your folder's actual name. Replace the "loop-master" with your folder's actual name. Carthage update will take about 15-25 minutes to run successfully.  A successful carthage update will look like the following:
 
 </p>
 <p align="center">
 <img src="../img/carthage-update-success.png" width="550">
 </p>
 
-Once carthage update has run successfully, you can return to Xcode and press the build button again.  Your project should build successfully.
+6. Return to Xcode and now trying building your app again.
 
-If your carthage update fails, try opening the Terminal app and running these commands to clear out your carthage cache and saved derived data in Xcode:
+If the build fails again, look through the list below and see if you can match up your error message with one of the ones below.
 
-`rm -rf ~/Library/Caches/org.carthage.CarthageKit` and `rm -rf ~/Library/Developer/Xcode/DerivedData`
+## No such module 'LoopKit' or similar message
 
-After running those commands, retry the `cd ~/downloads/loop-master && carthage update` (remembering to update the name of your Loop download folder, as needed).
+If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then re-run the fix listed above.
+
+</p>
+<p align="center">
+<img src="../img/exit-code-65.png" width="850">
+</p>
 
 ## Developer License Update
 Error message: "**<u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u>**"
@@ -180,6 +182,13 @@ Solution: If you get this message and are unable to find the Device Management o
 6. Rebuild Loop
 
 That should clear out the old, unworking profiles and give you a successful build.
+
+If your problem persists after that, then you can use a total reset to clear out the pesky problem:
+
+1. Wipe the iPhone clean and setup as a new device
+2. Delete all certificates from your Developer account (you'll need to login to your Developer account to do that)
+3. Delete your old Loop code download and get a new one.
+4. Rebuild Loop on the phone with the new download of Loop code.
 
 ## Pending Certificate Request
 
@@ -274,6 +283,6 @@ Now we need to do one step before rebuilding Loop app again. Go to the top menu 
 
 For an unknown reason (developers are working on fixing it currently), if you do repeated builds in the same Loop project folder...the watch app can fail to install properly after the first build. Therefore, a simple "Clean Build Folder" will reset the folder back to new and you should be able to install the watch after that fresh build.
 
-Sometimes, if the problem is really a bugger...you have to do a more painful troubleshooting. If you still can't get the Loop app to install on the watch after a "Clean Build Folder" attempt at rebuilding, we need to start at square one. Unpair your watch from the iPhone and setup as a brand new device. Yes, pain in the butt. But, usually wiping the watch, re-pairing fresh, and then building Loop again on the phone will fix the issue. Sorry, wish I had a shorter path to fixing that problem, but this is where the current state is.
+Sometimes, if the problem is really a bugger...you have to do a more painful troubleshooting. If you still can't get the Loop app to install on the watch after a "Clean Build Folder" attempt at rebuilding, we need to start at square one. Unpair your watch from the iPhone and setup as a brand new device. Yes, pain in the butt. But, usually wiping the watch, re-pairing fresh, and then building Loop again on the phone will fix the issue. Sorry, wish I had a shorter path to fixing that problem, but this is where the current state is. This is a known bug and may take several tries and include wiping devices of content. It is a pain...but we really don't have a magic bullet solution other than keep trying...and starting your devices from scratch is a pain for sure...but also the most likely to get rid of the bug.
 
 
