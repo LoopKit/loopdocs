@@ -19,7 +19,7 @@ To begin a new meal entry, simply enter the number of carbs to be eaten in the `
 !!!info "Be Aware"
     When you press `Save` for a carb entry, Loop will consider that carb entry saved and use it for calculating temp basals and recommended boluses.  Be cautious about repeated attempts to enter the same meal...Loop will continue to save the carb entries UNLESS you push cancel on the carb entry screen.</br></br>
     **Simply canceling a bolus does not cancel the carb entry.**</br></br>
-    If you have accidentally made multiple entries for the same carbs, click on the Carbs Chart in the main Loop display and you can delete the redundent carb entries by swiping left on the entries.
+    If you have accidentally made multiple entries for the same carbs, click on the Carbs Chart in the main Loop display and you can delete the redundant carb entries by swiping left on the entries.
 
 
 ## Carb Absorption Time
@@ -28,7 +28,7 @@ To begin a new meal entry, simply enter the number of carbs to be eaten in the `
 <img src="../img/food_icons_times.png" width="300">
 </p>
 
-To select your carb entry's absorption time, you can either click on the default food emojis or manually enter carb absoprtion time by selecting the `absorption time` line in the carb entry tool.
+To select your carb entry's absorption time, you can either click on the default food emojis or manually enter carb absorption time by selecting the `absorption time` line in the carb entry tool.
 
 The plate emoji, found to the right of the pizza emoji, can also be used if you are unsure of a new food.  There are other food emojis grouped into fast, medium, and slow absorbing foods.  This may be particularly useful for teens that are trying to learn new foods/meals.  Additionally, if you select the plate icon, you can add text to your `food type` by selecting the `abc` button in the bottom left corner of the screen.
 
@@ -46,7 +46,7 @@ To help Loop adjust for carbs that may digest slower than your original estimate
 
 ## Mixed Carb Meals
 
-You do not have to enter all carbs for a meal at the same absoption or eating time.  If you want to enter some of the meal's carbs as faster, and some slower, you can log the meal over several individual carb entries.  For example, for meals that have sugary carbs as well as slow acting carbs (Chinese food), you may wish to do part of the carbs as lollipop and part of the carbs as pizza.
+You do not have to enter all carbs for a meal at the same absorption or eating time.  If you want to enter some of the meal's carbs as faster, and some slower, you can log the meal over several individual carb entries.  For example, for meals that have sugary carbs as well as slow acting carbs (Chinese food), you may wish to do part of the carbs as lollipop and part of the carbs as pizza.
 
 Pressing the `Save` button in the top right corner will save the carbs into the Loop app and bring up the Loop's bolus tool.  When entering multiple carb absorption durations for a single meal, press save on the carb entry and then press cancel on the bolus tool when it appears.  When you have entered your last carb entry for the meal, then use the bolus tool to deliver the bolus for the entire meal.  Loop will provide a recommendation based on all the saved carbs and their respective absorption durations in total.
 

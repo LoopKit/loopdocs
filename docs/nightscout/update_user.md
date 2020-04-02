@@ -10,14 +10,14 @@ The modifications for retrofitting an existing NS site for new Loop users will r
 2. Edit/Add Config Vars
 3. Open Nightscout Site
 4. Turn on Plugins
-5. Upate Profile Settings
+5. Update Profile Settings
 
 ### Step 1: Login to Heroku, Settings Tab
 
 [Login to your Heroku account](https://id.heroku.com/login), select the `Settings` tab near the top of the screen on your Heroku app.
 
 <p align="center">
-<img src="../img/settings_heroku.jpg" width="450">
+<img src="../img/heroku5.png" width="450">
 </p> 
 
 ### Step 2: Edit/Add Config Vars
@@ -106,7 +106,7 @@ Click on `Open App` in the top right corner of your Heroku site.
 
 ### Step 4: Turn on Plugins
 
-Click on the settings (those three horizontal lines in upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then press save. If you have not authenticated your site previously, you may be prompted to provide your API Secret prior to Nightscout saving your changes. 
+Click on the settings (those three horizontal lines in the upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then click save. If you have not authenticated your site previously, you may be prompted to provide your API Secret prior to Nightscout saving your changes. 
 
 <p align="center">
 <img src="../img/settings_ns.jpg" width="450">
@@ -114,7 +114,7 @@ Click on the settings (those three horizontal lines in upper right corner).  Now
 
 ### Step 5: Update Profile Settings
 
-Double check that your NS Profile settings are current and that you have a basal profile entered, if you want to see the temp basals that Loop is setting. The values in your Nightscout Profile settings will not impact or affect your Loop, but it is just nice to have them match up in the event you are looking at your data with an endocrinologist or retrospectively looking at data.
+Double-check that your NS Profile settings are current and that you have a basal profile entered, if you want to see the temp basals that Loop is setting. The values in your Nightscout Profile settings will not impact or affect your Loop, but it is just nice to have them match up in the event you are looking at your data with an endocrinologist or retrospectively looking at data.
 
 ## Nightscout Version Update
 If you are new to Loop and haven’t updated your NS site since before December 1, 2016, you will want to update your NS site. You can run either the "master" or "dev" branches of cgm-remote-monitor with Loop.  To check what version your Nightscout site is running, go to your Nightscout site and pull open the site settings by clicking on the three horizontal lines at the top right of the screen.  The version number is at the bottom.
@@ -131,9 +131,10 @@ You'll click on the green `Continue updating at GitHub` button, read the directi
 
 Click the big green `Create pull request` button. 
 
-* For most people, another screen will appear like shown in the screenshots below with a green `Able to merge` message. Fill in a title and click button to create the pull request, and then you can `Merge pull request`, and finally `Confirm merge`.</br>
+* For most people, another screen will appear like shown in the screenshots below with a green `Able to merge` message. Fill in a title and click the button to create the pull request, and then you can `Merge pull request`, and finally `Confirm merge`.</br>
 
-* However, for some of you may encounter an red error message `x Can't automatically merge` message. If you have that message, you may want to post in FB for help on resolving that error message before proceeding any further.
+* However, for some of you may encounter a red error message `x Can't automatically merge` message. If you have that message, you may want to post in FB for help on resolving that error message before proceeding any further.
+
 *********
 <p align="center">
 <img src="../img/update1.jpg" width="650">

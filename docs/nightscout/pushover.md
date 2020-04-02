@@ -2,9 +2,9 @@
 
 While Loop app currently sends notifications locally on Loop user's iPhone, parents and caregivers likely want those messages on their phones, too.  We can achieve this functionality through a combination of Nightscout, IFTTT, Google, and Pushover.
 
-Traditionally, most people may already know of Pushover alerts through their NS site.  The old Loop docs had setup for how to add your `PUSHOVER_ANNOUNCEMENT_KEY` , `PUSHOVER_API_TOKEN`, and `PUSHOVER_USER_KEY` in your Heroku settings to get notifications on the non-looping phones of parents and caregivers.  The drawback for that method is that you could not necessarily fine tune the alerts (maybe you wanted battery alarms on your NS website, but not get pushovers for them...a bit hard to separate out the environments that way) and Pushover had a demanding acknowledgement requirement.  If you failed to acknowledge an alert, you may end up getting alarm fatigue fairly quickly as the alarm repeated itself.
+Traditionally, most people may already know of Pushover alerts through their NS site.  The old Loop docs had set up for how to add your `PUSHOVER_ANNOUNCEMENT_KEY` , `PUSHOVER_API_TOKEN`, and `PUSHOVER_USER_KEY` in your Heroku settings to get notifications on the non-looping phones of parents and caregivers.  The drawback for that method is that you could not necessarily fine-tune the alerts (maybe you wanted battery alarms on your NS website, but not get pushovers for them...a bit hard to separate out the environments that way) and Pushover had a demanding acknowledgment requirement.  If you failed to acknowledge an alert, you may end up getting alarm fatigue fairly quickly as the alarm repeated itself.
 
-Using Pushover <i>**THROUGH**</i> IFTTT however, we can improve the possible notifications and who receives which ones.  For example, a teenage Looper may want notifications when his/her pump site needs changing and when his/her dexcom is about to expire in the next day.  S/he already gets local notifications on his/her phone via Loop for low reservoir volumes, low pump battery, and Loop failures.  Dexcom app provides high/low BG notifications locally, too.  If s/he were to get those same alarms via Pushover, s/he would inevitably get alarm fatigue.  A remotely-monitoring parent may want additional information, like a pushover alerts when the school nurse bolused for lunch, as well as Loop failures, low iPhone battery level for the child, low pump battery, and other such information that might be useful.  Perhaps there's also an emergency contact person that you only want to get high/low BG alerts...you can set that up as well quite easily.
+Using Pushover <i>**THROUGH**</i> IFTTT however, we can improve the possible notifications and who receives which ones.  For example, a teenage Looper may want notifications when his/her pump site needs changing and when his/her Dexcom is about to expire in the next day.  S/he already gets local notifications on his/her phone via Loop for low reservoir volumes, low pump battery, and Loop failures.  Dexcom app provides high/low BG notifications locally, too.  If s/he were to get those same alarms via Pushover, s/he would inevitably get alarm fatigue.  A remotely-monitoring parent may want additional information, like a pushover alert when the school nurse boluses for lunch, as well as Loop failures, low iPhone battery level for the child, low pump battery, and other such information that might be useful.  Perhaps there's also an emergency contact person that you only want to get high/low BG alerts...you can set that up as well quite easily.
 
 The basic concept is that NS puts out an event that triggers the IFTTT service called Webhooks (old name was "Maker Webhooks" hence you may see references to "maker" in NS docs).  Actually, there are several types of events that NS has programmed in all ready to use in IFTTT.
 
@@ -54,7 +54,7 @@ If you don't already have these steps done, you will need them.  Skip any that y
 <img src="../img/google3.png" width="550">
 </p>
 
-This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spreadsheets, one for each NS alarm or infomation that is logged.  As new alarms are triggered, the IFTTT applet we are about to write will add a row to the appropriate spreadsheet logging the time of the alarm and any other reported details that go with the entry.  For now though, your drive will be blank...screenshot below just to give you an idea of where we are going.
+This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spreadsheets, one for each NS alarm or information that is logged.  As new alarms are triggered, the IFTTT applet we are about to write will add a row to the appropriate spreadsheet logging the time of the alarm and any other reported details that go with the entry.  For now though, your drive will be blank...screenshot below just to give you an idea of where we are going.
 
 <p align="center">
 <img src="../img/google4.png" width="550">
@@ -86,7 +86,7 @@ This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spre
 <img src="../img/webhooks2.png" width="550">
 </p>
 
-* Click on the "receive a web request" blue box, and then fill in the Event Name as `ns-event` and then press the "Create trigger" button.  (Side note:  the event name used here corresponds to the triggers discussed above for core events that NS already has integrated for IFTTT users.  If you want to instead use the other triggers such as ns-warn or ns-urgent, you can.  This example is using the most general trigger so that the options are wider for most users.)
+* Click on the "receive a web request" blue box, and then fill in the Event Name as `ns-event` and then press the "Create trigger" button.  (Side note:  the event name used here corresponds to the triggers discussed above for core events that NS already has integrated for IFTTT users.  If you want to, instead, use the other triggers such as ns-warn or ns-urgent, you can.  This example is using the most general trigger so that the options are wider for most users.)
 
 <p align="center">
 <img src="../img/webhooks3.png" width="550">
@@ -122,7 +122,7 @@ This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spre
 <img src="../img/webhooks7.png" width="550">
 </p>
 
-* You'll now have the finished IFTTT applet that will cause a row to be added to a Google spreadsheet...tracking all your NS notifications and alarms.  If it is the first time that alarm has been logged, the applet will also create the spreadsheet itself.  After awhile, your IFTTT/Nightscout-Alarms folder will start to look like the screenshot posted above with numerous spreadsheets for each alarm type.
+* You'll now have the finished IFTTT applet that will cause a row to be added to a Google spreadsheet...tracking all your NS notifications and alarms.  If it is the first time that alarm has been logged, the applet will also create the spreadsheet itself.  After a while, your IFTTT/Nightscout-Alarms folder will start to look like the screenshot posted above with numerous spreadsheets for each alarm type.
 
 <p align="center">
 <img src="../img/webhooks8.png" width="550">
@@ -185,7 +185,7 @@ This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spre
 <img src="../img/webhooks13.png" width="550">
 </p>
 
-* Enter the following information:  Folder path is `IFTTT/Nightscout-Alarms` and for filename you are going to enter the name of the particular NS alarm or information that you would like to get pushover alerts for.  Click on the "Create trigger" button to save the trigger.
+* Enter the following information:  Folder path is `IFTTT/Nightscout-Alarms` and for the filename you are going to enter the name of the particular NS alarm or information that you would like to get pushover alerts for.  Click on the "Create trigger" button to save the trigger.
 
 <p align="center">
 <img src="../img/webhooks14.png" width="550">
@@ -201,6 +201,7 @@ This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spre
     * Meal Bolus
     * Warning, Pump Reservoir Low
     * Warning Uploader Battery is Low
+    * Temporary Override
     
     Depending on your alert levels you specified in NS, some of the hours in the titles may vary to match your settings
 
@@ -222,8 +223,7 @@ This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spre
 <img src="../img/webhooks16.png" width="550">
 </p>
 
-*  Delete the contents of the "Title" and "Message" and "URL" boxes.  For the Title, click the "Add Ingredient" button and add `ColumnC`.  For the "Message", click the "Add Ingredient" button and add the values of various columns from your spreadsheet for the infomation you would like to include.  For the alerts: `ColumnC` contains the alarm name, `ColumnA` is the date/time of the alarm, and `ColumnD` has the more detailed information about the info/alarm.  This is a pretty decent recipe to follow to get the useful information in your notification.
-
+*  Delete the contents of the "Title" and "Message" and "URL" boxes.  For the Title, click the "Add Ingredient" button and add `ColumnC`.  For the "Message", click the "Add Ingredient" button and add the values of various columns from your spreadsheet for the information you would like to include.  For the alerts: `ColumnC` contains the alarm name, `ColumnA` is the date/time of the alarm, and `ColumnD` has more detailed information about the info/alarm.  This is a pretty decent recipe to follow to get the useful information in your notification.
 <p align="center">
 <img src="../img/webhooks17.png" width="550">
 </p>
@@ -326,17 +326,17 @@ Putting all these notifications together may cause you to want to revisit the al
 
 ## Final notes
 
-* You can use other notification services than Pushover in the last part of the second applet.  For example, you could use the SMS service to send text notifications to your iphone instead of Pushover.  The downside for that is that the SMS service is limited to 100 message each month...some users may exceed that pretty easily.  Another alternative notification would be IFTTT's own Notification service.  This would work well, but does not have the ability to distinguish between devices the way Pushover allows.  If you use IFTTT's Notifications service, every phone using your IFTTT account will get the notices.
+* You can use other notification services than Pushover in the last part of the second applet.  For example, you could use the SMS service to send text notifications to your iPhone instead of Pushover.  The downside for that is that the SMS service is limited to 100 message each month...some users may exceed that pretty easily.  Another alternative notification would be IFTTT's own Notification service.  This would work well, but does not have the ability to distinguish between devices the way Pushover allows.  If you use IFTTT's Notifications service, every phone using your IFTTT account will get the notices.
 
-* To be clear, you do <i>**NOT**</i> need to have pushover on your ENABLE line nor have `PUSHOVER_USER_KEY`, `PUSHOVER_API_TOKEN`, or `PUSHOVER_ANNOUNCEMENT_KEY` entered into your Heroku settings in order for any of the above to work.  This is not the same Pushover as NS has integrated into it's code.  This is actually through IFTTT services, you just need a Pushover account to link to during the 2nd applet setup.
+* To be clear, you do <i>**NOT**</i> need to have pushover on your ENABLE line nor have `PUSHOVER_USER_KEY`, `PUSHOVER_API_TOKEN`, or `PUSHOVER_ANNOUNCEMENT_KEY` entered into your Heroku settings in order for any of the above to work.  This is not the same Pushover as NS has integrated into its code.  This is actually through IFTTT services, you just need a Pushover account to link to during the 2nd applet setup.
 
-* To create more notifications, simply repeat the steps for the 2nd applet you created, only this time use a new filename that corresponds to the spreadsheet tracking the alert you'd like notifications for.  You'll end up with multiple applets of the dark blue type (the pushover notifiers) and only a single light blue (NS alarm general collecter).
+* To create more notifications, simply repeat the steps for the 2nd applet you created, only this time use a new filename that corresponds to the spreadsheet tracking the alert you'd like notifications for.  You'll end up with multiple applets of the dark blue type (the pushover notifiers) and only a single light blue (NS alarm general collector).
 
 <p align="center">
 <img src="../img/webhooks23.png" width="550">
 </p>
 
-* Here's examples of the Meal Bolus and Temp Basal ns-event logging spreadsheets
+* Here are examples of the Meal Bolus and Temp Basal ns-event logging spreadsheets
 
 <p align="center">
 <img src="../img/webhooks21.png" width="550">
@@ -346,5 +346,5 @@ Putting all these notifications together may cause you to want to revisit the al
 <img src="../img/webhooks22.png" width="550">
 </p>
 
-* The 1st applet can only create up to 2000 active rows in a given spreadsheet.  After that, the applet will automatically create a new spreadsheet.  For most alarms, it may take quite sometime to reach 2000 rows of info.  For other alerts, such as temp basals being set, that may fill up rather fast for the average looper.  You can either clean out the data rows periodically to make room, or update your filename in the 2nd applet periodically when a new spreadsheet is made.
+* The 1st applet can only create up to 2000 active rows in a given spreadsheet.  After that, the applet will automatically create a new spreadsheet.  For most alarms, it may take quite some time to reach 2000 rows of info.  For other alerts, such as temp basals being set, that may fill up rather fast for the average looper.  You can either clean out the data rows periodically to make room, or update your filename in the 2nd applet periodically when a new spreadsheet is made.
 

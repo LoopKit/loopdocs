@@ -1,157 +1,174 @@
 # IFTTT Integration
 
-If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, you can have single button presses that you can deploy from your iPhone to put a note in your NS site, enter low treatments, log a site change, or log a sensor change. 
+If This, Then That (IFTTT) is a useful Nightscout integration.  By using IFTTT, you can have single button presses on your iPhone that will set an override, log a cannula change, log a sensor change and much more. 
 
 
-## IFTTT Setup for phones
+## Step 1: Get your API Secret Hash
 
-* First we need to gather one thing called your "hashed API Secret". In your internet browser, open a console window while viewing your Nightscout site.  Make sure you have "authenticated" your site by using your API secret in the Nightscout settings area (hint: if you see a little padlock in the upper left corner of the site, you haven't authenticated it).  Refresh the site and your hashed secret key will be shown as "apisecrethash: "xxxxxxxxxx...""  For Safari users on Mac, you can open the console window by selecting "Develop" from the Safari top menu, and then "Show Page Source" (if you do not see "Develop" in the top menu, activate it by going to Safari > Preferences... > Advanced, and checking the "Show Develop menu in menu bar" option).  If you're having problems seeing the apisecrethash, click the little grey triangle next to the "status isAuthenticated" line and the objects below it will display (see screenshot).  Your hashed API secret can be copied and pasted from that line, as shown below.  Save that somewhere easy to get to again, because you will be using it later.
+First we need to gather one thing called your "hashed API Secret". In your internet browser, open a "console" window while viewing your Nightscout site.  Make sure you have "authenticated" your site by using your API secret in the Nightscout settings area (hint: if you see a little padlock in the upper left corner of the site, you haven't authenticated it).  Refresh the site and your hashed secret key will be shown as "apisecrethash: "xxxxxxxxxx...""  
+
+**For Safari users on Mac**, you can open the console window by selecting "Develop" from the Safari top menu, and then "Show Page Source" (if you do not see "Develop" in the top menu, activate it by going to Safari > Preferences... > Advanced, and checking the "Show Develop menu in menu bar" option).  If you're having problems seeing the apisecrethash, click the little grey triangle next to the "status isAuthenticated" line and the objects below it will display (see screenshot).  Your hashed API secret can be copied and pasted from that line, as shown below.  Save that somewhere easy to get to again, because you will be using it later.
 
 <p align="center">
-<img src="../img/hashed_API.png" width="550">
+<img src="../img/hashed_API.png" width="750">
 </p> 
+
+**For Chrome users**, the console window is found through the View >> Developer >> View Source. Click on the Console tab and scroll to find the "status isAuthenticated" row to find your apisecrethash. Copy your API hash to somewhere you can retreive it again, we will be copy/pasting it in Step 2.
+
+<p align="center">
+<img src="../img/hashed_API2.png" width="750">
+</p> 
+
+
+
+## Step 2: Create your "Applets"
+
+IFTTT calls their little actions that you'll create an "applet". I have no idea why. But, I will go along and use their terminology so we are all consistent. We are basically interested in creating applets that will be buttons on your phone to do cool things in Nightscout. So, you'll have a button that will log when you changed your sensor last...letting you see in Nightscout easily just how old a sensor is at any given time. Or you can create a button that will turn on an "exercise" override that you already programmed into your kid's Loop app. So, let's make our first applet (aka button).
 
 * Get an [IFTTT account](https://ifttt.com/join) 
 
 <p align="center">
-<img src="../img/IFTTT_signup.png" width="550">
+<img src="../img/IFTTT_signup.png" width="650">
 </p> 
 
-* Login to your IFTTT.com account and select the "New Applet" button.
+* Login to your IFTTT.com account and select click [this link](https://ifttt.com/create) to get to the page for creating your first "New Applet". (You can also get to this Applet creation page by selecting your Account icon in the upper right of the IFTTT website, then clicking on "Create".)
+
+* In the screen that appears, click on the black "+this" part of the screen
 
 <p align="center">
-<img src="../img/IFTTT_newapplet.png" width="550">
-</p> 
-
-* In the screen that appears, click on the blue "+this" part of the screen
-
-<p align="center">
-<img src="../img/IFTTT_this.png" width="550">
+<img src="../img/IFTTT_this.png" width="650">
 </p> 
 
 * In the next screen, type "button" in the search field and then click on the red box labelled "ButtonWidget"
 
 <p align="center">
-<img src="../img/IFTTT_button.png" width="550">
+<img src="../img/IFTTT_button.png" width="650">
 </p> 
 
-* Connect the buttonwidget by clicking on the large red "connect" button (You will only have to "connect" the widgets for the first applet you make.  After that the widgets will already connected to your IFTTT account.)
+* Connect the button widget by clicking on the large black"connect" button twice, once on the main screen and then second on the pop-up window that will appear immediately after that. (You will only have to "connect" the widgets for the first applet you make.  After that the widgets will already connected to your IFTTT account.)
 
 <p align="center">
-<img src="../img/IFTTT_connect1.png" width="550">
+<img src="../img/IFTTT_connect1.png" width="650">
 </p> 
 
 * Click on the large red "button press" box 
 
 <p align="center">
-<img src="../img/IFTTT_buttonpress.png" width="550">
+<img src="../img/IFTTT_buttonpress.png" width="650">
 </p> 
 
-* Click on the blue "+that" text
+* Click on the black "+that" text
 
 <p align="center">
-<img src="../img/IFTTT_that.png" width="550">
+<img src="../img/IFTTT_that.png" width="650">
 </p> 
 
 * Enter "Webhooks" in the search field and click on the Webhooks app
 
 <p align="center">
-<img src="../img/webhooks1.png" width="550">
+<img src="../img/webhooks1.png" width="650">
 </p> 
 
 * Connect the Webhooks app
 
 <p align="center">
-<img src="../img/webhooks2.png" width="550">
+<img src="../img/webhooks2.png" width="650">
 </p> 
 
 * Select the blue "Make a Web Request" box
 
 <p align="center">
-<img src="../img/webhooks24.png" width="550">
+<img src="../img/webhooks24.png" width="650">
 </p> 
 
-*  Now you will have a blank web request template to complete.  Screenshot below is an example of a completed recipe for eating soon IFTTT action.
+*  Now you will have a blank web request template to complete.  Screenshot below is an example of a completed recipe for eating soon IFTTT action. There are four parts you will need to fill in, and they are described below the screenshot.
 
 <p align="center">
-<img src="../img/webhooks25.png" width="550">
+<img src="../img/webhooks25.png" width="650">
 </p> 
 
-The following info should be filled in:
+!!!danger "URL"
+    `https://yoursite.herokuapp.com/api/v1/treatments.json` (for all IFTTT recipes that are NOT remote overrides...so things like cannula changes, sensor changes, pump battery changes, etc.)</br></br>
+    Change the "yoursite" to your actual site's info.
+    
+!!!warning "Method"
+    The method will be `POST`
 
-<font color=orange>**URL**:</font> https://yoursite.herokuapp.com/api/v1/treatments.json (**change the "yoursite" part to your NS info**)
+!!!info "Content Type"
+    The content type will be `application/json`. 
 
-<font color=orange>**Method**:</font> POST
+!!!danger "Body"
+    The content of the body will depend on the action that you would like this particular button press to perform. While many recipes are available, any recipe that log carbs to NS will only display the carbs in Nightscout...Loop will not "use" those carbs in treatment or prediction math. The display of carbs in NS though may still be helpful for remote care givers to leave an indication that a low is being noticed and treated.  Some sample content for actions that may be useful in Loop:</br></br>
+    **Pump Site Change**</br>
+    {"enteredBy": "IFTTT-button", "eventType": "Site Change", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}</br></br>
+    **CGM Sensor Start**</br>
+    {"enteredBy": "IFTTT-button", "eventType": "Sensor Start", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}</br></br>
+    **Note**</br>
+    {"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, please don't text me for a bit.  I'm taking a test.", "secret": "your_hashed_api_goes_here!!!"}</br></br>
 
-<font color=orange>**Content Type**:</font> application/json
+!!!warning "Special note for IFTTT to set a Remote Override with dev branch"
+    Triggering a remote override with IFTTT takes a couple considerations;</br></br>
+    1. You have followed [the directions for setting up remote overrides](https://loopkit.github.io/loopdocs/nightscout/remote-overrides/) in Nightscout already.</br></br>
+    2. Remote overrides will use **`https://yoursite.herokuapp.com/api/v2/notifications/loop`** for the URL line of the applet. Notice that is different from the other type of applets' URL.</br></br>
+    3. The Body message of the applet needs to match the override already programmed in Loop app; the reason, reasonDisplay, and duration all need to match what is preset in your Loop app. The "duration" is giving in minutes in the body message (vs hours in Loop), and if the override is one that is "enabled indefinitely" then the duration is "infinite". The "reason" is the name of the override but NO EMOJI, and the "reasonDisplay" is the override name with the emoji. Check out the samples Body messages for overrides below. You will have to edit your body messages to match your reason and reasonDisplay. The target range and duration of the override does not need to be specified. </br></br>
+    **Body message for override named "hormones"**</br>
+    {"eventType": "Temporary Override", "reason": "hormones", "reasonDisplay": "🧟‍♀️ hormones", "secret": "your_hashed_api_goes_here!!!"}</br></br>
+    **Body message for override named "running"**</br>
+    {"eventType": "Temporary Override", "reason": "running", "reasonDisplay": "🏃‍♀️ running", "secret": "your_hashed_api_goes_here!!!"}</br></br>
+    **Body message for override named "Low Treatment"**</br>
+    {"eventType": "Temporary Override", "reason": "Low Treatment", "reasonDisplay": "🍬 Low Treatment", "secret": "your_hashed_api_goes_here!!!"}</br></br>
+    **Body message to cancel any override**</br>
+    {"eventType": "Temporary Override Cancel", "secret": "your_hashed_api_goes_here!!!"}</br></br>
 
-<font color=orange>**Body**:</font>  The content of the body will depend on the action that you would like this particular button press to perform.  You can only do ONE of the actions per button.  There are many recipes available, but not all will work with Loop and NS together.  For example, you can use the Low Treatment recipe to log carbs to NS...but Loop will not read/use those carbs.  That may still be helpful though for remote care givers to leave an indication of when they gave uncovered carbs to treat a low.  You could also set temp targets in NS using IFTTT (recipes can be found on OpenAPS docs), but Loop does not read temp targets from Nightscout at this time.  Some sample content for actions that may be useful in Loop:
-
-!!!info "Pump Site Change"
-    {"enteredBy": "IFTTT-button", "eventType": "Site Change", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
-
-!!!info "CGM Sensor Start"
-    {"enteredBy": "IFTTT-button", "eventType": "Sensor Start", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}
-
-!!!info "Note"
-    {"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, please don't text me for a bit.  I'm taking a test.", "secret": "your_hashed_api_goes_here!!!"}
-
-!!!info "Low Treatment"
-    {"enteredBy": "IFTTT-button", "reason": "low treatment", "carbs": 15, "secret": "your_hashed_api_goes_here!!!"}
 
 * Click the `Create Action` button on the bottom of the screen when you finish.
 
-* Now is your chance to change the title of your Applet now to something meaningful.  You can turn on notifications, too, using the slider shown.  If you turn on the notifications, you will get an alert on your phone and pebble watch when the button press has been successfully deployed.  Finish the IFTTT button by clicking on the Finish button that appears.  
+* Now is your chance to change the title of your applet now to something meaningful.  You can turn on notifications, too, using the slider shown. If you turn on the notifications, you will get an alert on your phone and pebble watch when the button press has been successfully deployed.  Finish the IFTTT button by clicking on the Finish button that appears.  
 
 <p align="center">
-<img src="../img/webhooks26.png" width="550">
+<img src="../img/webhooks26.png" width="650">
 </p> 
 
-* Repeat the setup for New Applets for as many automated actions as you would like to setup.
+* Repeat the setup for new applets for as many automated actions/overrides as you would like to setup.
 
 <p align="center">
-<img src="../img/webhooks27.png" width="550">
+<img src="../img/webhooks27.png" width="650">
 </p>
 
-## Enable IFTTT in your Nightscout site
+## Step 3: Enable IFTTT in your Nightscout site
 
-* Find your Maker Key by going to your IFTTT account, Services and then click on the Webhooks service, settings.
+Now that we have cool applets made, we need to give Nightscout some information so that it will accept commands from our applets. It's pretty simple to do...just a couple additions to your Heroku settings.
 
-<p align="center">
-<img src="../img/webhooks9.png" width="550">
-</p> 
+* Find your Maker Key by going to your IFTTT account icon in upper right corner, choose "My services" and then click on the Webhooks service, settings.
+
 ********
 <p align="center">
-<img src="../img/webhooks10.png" width="550">
+<img src="../img/webhooks10.png" width="650">
 </p> 
 
-* You will see your Maker Key as the last part of the URL; copy and paste that last part (the red circled part as shown)
+* You will see your Maker Key as the last part of the URL after the `use/`; copy and paste that last part (the red circled part as shown)
 
 <p align="center">
-<img src="../img/webhooks11.png" width="550">
+<img src="../img/webhooks11.png" width="650">
 </p> 
 
 * Login to your Nightscout site host (azure or heroku) and (1) add your Maker Key to the MAKER_KEY line and (2) add "maker" to your ENABLE line.
 
 <p align="center">
-<img src="../img/IFTTT_NSkey.png" width="550">
+<img src="../img/IFTTT_NSkey.png" width="650">
 </p> 
 
 <p align="center">
-<img src="../img/IFTTT_enable.png" width="550">
+<img src="../img/IFTTT_enable.png" width="650">
 </p> 
 
-## Install IFTTT app on your iPhone/Android
+## Step 4: Install IFTTT app on your iPhone/Android
 
-* Download the IFTTT app on your phone and log in.
+Now that all the hard work is done, we can take easy street and just add that work to the phone via the IFTTT app. By accessing the IFTTT widget on your iPhone, you'll be able to easily and quickly access the useful buttons you've just created.
 
-* You can add homescreen quick buttons.  Click on your IFTTT app and login, click on My Applets in the bottom right corner, and then click on the applet that you'd like to work with.  From the the middle of the applet, click on the Widget Settings, and then click on the Add button for the Homescreen Icon.
+* Download the IFTTT app on your phone and log in using your IFTTT account.
 
-<p align="center">
-<img src="../img/IFTTT_homescreen.PNG" width="550">
-</p> 
-
-* For iPhone users, if you downswipe from the top of your iPhone screen, you will have the Today view or Notifications showing.  They are separate pages; Today view is on the left, Notifications is on the right.  You can left/right swipe to go between them.  Go into the Today view and scroll to the bottom, click "edit". This should show a list of existing widgets, followed by a list of "more widgets" with green + signs.  Click on the IFTTT's green circle and the widget will be moved to the top, active widgets area.  You can hold your finger on the three left lines of the IFTTT widget row to drag it to the top of your widget panel, if you prefer to have it as the top-most widget. 
+* For iPhone users, if you swipe right from your iPhone's home screen, you will have the Today view showing.  Scroll to the bottom, click "edit". This should show a list of existing widgets, followed by a list of "more widgets" with green + signs.  Click on the IFTTT's green circle and the widget will be moved to the top, active widgets area.  You can hold your finger on the three left lines of the IFTTT widget row to drag it to the top of your widget panel, if you prefer to have it as the top-most widget. 
 
 <p align="center">
 <img src="../img/IFTTT_today.PNG" width="550">
@@ -170,11 +187,11 @@ If you end up with more than four IFTTT applets, they will appear in reverse-ord
 <img src="../img/IFTTT_reorder.png" width="550">
 </p> 
 
-## Alexa integration
-* Since you have IFTTT/Maker requests working, you can get it to work with anything that supports IFTTT, including Alexa. You will need to add "alexa" to your ENABLE line in your Nightscout host settings (azure) or config vars (heroku).  And then repeat the steps above, but instead of using "ButtonWidget" service we started with earlier (the "+if" part of the setup)...you will use the "AmazonAlexa" service.
+## Extra Credit: Alexa integration
+* Since you have IFTTT/Maker requests working, you can get it to work with anything that supports IFTTT, including Alexa. You will need to add "alexa" to your ENABLE line in your Heroku settings.  And then repeat the steps above, but instead of using "ButtonWidget" service we started with earlier (the "+if" part of the setup)...you will use the "AmazonAlexa" service.
 
 <p align="center">
-<img src="../img/alexa_maker.png" width="550">
+<img src="../img/alexa_maker.png" width="750">
 </p> 
 
   * Alexa requests do not need underscores, FYI.

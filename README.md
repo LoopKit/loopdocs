@@ -18,8 +18,6 @@ $ cd <loopdocs project location>
 $ pip install -r requirements.txt
 ```
 
-**mkdocs Version Warning:** Use the latest `0.16.x` patch version of `mkdocs`, but don't upgrade `mkdocs` to version `0.17.x`. It is NOT compatible with the theme being used.  Same for updated versions of `mkdocs-bootswatch`, do not use the latest version.
-
 * Or, install modules individually
 ```bash
 $ pip install mkdocs<0.17
@@ -43,7 +41,7 @@ $ mkdocs gh-deploy
 * Use images for clarity whenever appropriate
 
 ### Admonitions
-[Admonitions](https://pythonhosted.org/Markdown/extensions/admonition.html) are a markdown extension that enable formatted blocks for visually calling out information. The types are: note, info, warning, and danger. Here are some examples of how to write the markdown:
+[Admonitions](https://python-markdown.github.io/extensions/admonition/) are a markdown extension that enable formatted blocks for visually calling out information. The types are: note, info, warning, and danger. Here are some examples of how to write the markdown:
 
 ```markdown
 !!! note
