@@ -195,8 +195,9 @@ Third, keep watching Looped group. Major concerns/issues are brought up there...
 
 ### Loop-Dashboard
 You can always check out the <a href="https://loopdashboard.azurewebsites.net/">LoopDashboard</a>  which summarize all the github activities in Loops 7 different repositories for dev and master branches. Here you can always see the latest "news" and  the history of Loop. 
+<br>
+On the first page of loopdashboard you can see all the activities in one list, but you can also go to other pages and see more details about commits, issues and pull requests. There are also stats about who is doing the pull requests and commits.<br>
 The dashboard is updated every 12 hours.
-On the first page of loopdashboard you can see all the activities in one list, but you can also go to other pages and see more details about commits, issues and pull requests. There are also stats about who is doing the pull requests and commits.
 <p align="center">
 <img src="../img/loopdashboard.png" width="550">
 </p>
