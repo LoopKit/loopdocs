@@ -188,11 +188,18 @@ If you click on the commit, you can see exactly what changes to the code were ma
 <p align="center">
 <img src="../img/commit.png" width="550">
 </p>
-
 I don't expect many of you would understand exactly what the edits mean, or how the new code might function...but I bring up the topic of commit history so that you can use that to realize just how often dev is updated. Go ahead and look at the number and frequency of commits in that dev branch...that is why there is no way someone is going to keep a "loopdocs" of dev changes. It's just too much a moving target.
 
 ### Keep checking Looped group
 Third, keep watching Looped group. Major concerns/issues are brought up there...so no harm in scrolling through and seeing what's going on there.
+
+### Loop-Dashboard
+You can always check out the <a href="https://loopdashboard.azurewebsites.net/">LoopDashboard</a>  which summarize all the github activities in Loops 7 different repositories for dev and master branches. Here you can always see the latest "news" and  the history of Loop. 
+The dashboard is updated every 12 hours.
+On the first page of loopdashboard you can see all the activities in one list, but you can also go to other pages and see more details about commits, issues and pull requests. There are also stats about who is doing the pull requests and commits.
+<p align="center">
+<img src="../img/loopdashboard.png" width="550">
+</p>
 
 ### Become familiar with your data sources
 Another useful thing if you'll be on dev branches undergoing a lot of active change...know how Loop works and where to look for additional information about what you are seeing. For example, if you see an IOB value that looks odd, you should know to look at the insulin deliveries are stored in Health app. Knowing to pull an Issue Report when you see a problem so you can provide that if asked. Knowing [how to capture debugging logs if the developers ask for that kind of info](https://youtu.be/Ac4MguvUO7M) is also a good skill. 
