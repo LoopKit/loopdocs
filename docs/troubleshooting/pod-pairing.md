@@ -118,6 +118,6 @@ If you do that, good practice is to make sure that you get that loser pod far aw
 
 To help fix pairing bugs, some improvements have also been made in our ability to save the communications between the pods and Loop app during the pairing process. So, please help us leverage these new improvements and better squash bugs.
 
-If you are using Loop v2.2 (April 2020) or later and you run into any pairing problems which required "Switch from Omnipod" pod pairing recovery to be able to pair or a pod that had to be abandoned, it would be helpful to generate an "Issue Report" after you finally get a pod paired (whether is was the original pod or if a different pod) and then submitting the resulting "Loop Report" on [Zulipchat here](https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Omnipod.20Pairing.20Issues) with a short explanation of what happened.
+If you are using Loop v2.2 (April 2020) or later and you run into any pairing problems which required "Switch from Omnipod" pod pairing recovery to be able to pair or you had a pod that had to be abandoned, it would be helpful to generate an "Issue Report" after you finally get a pod paired (whether is was the original pod or if a different pod) and then post the resulting "Loop Report" on [Zulipchat here](https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Omnipod.20Pairing.20Issues) with a short explanation of what happened.
 
 
