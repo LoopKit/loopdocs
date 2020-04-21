@@ -104,12 +104,6 @@ Now hit the **Pair** button at the bottom of the screen and hopefully Loop will 
 
 If you cannot get the pairing to complete with the pod (after trying following the Pod Pairing Recovery procedure described above a few times with multiple **Pair** during each try), then you should completely abandon that the pod before attempting to pair using another pod. "Completely abandon" means take that failed loser pod far, far away or in a microwave after doing the "switch from omnipods". You do not want that beeping pod or failed pod to be any way able to plague your next pod's communications with Loop during the pairing process for next pod.
 
-### What about the older recovery process?
-
-If you are using a version of Loop prior to Loop v.2.2 (April 2020), the pairing restart process described above is probably the easiest way to recover from many of the failed pairings causes. 
-
-The older recovery processes (involving putting a pod in the microwave or temporarily disabling the RileyLink to do a fake pod "deactivate") can still work as an alternate way to force Loop to start pairing from a clean slate...but the process described above may be much easier for many people.
-
 ### What about other pod start-up failures?
 
 If you have a pod that has already started the priming operation and then has problems either finishing the priming operation or the cannula insertion, then forcing a pod pairing recovery is not possible. If a pod fails during priming or cannula insertion, the pod is no good and it should be deactivated and disposed of properly.
