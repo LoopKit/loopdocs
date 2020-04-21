@@ -85,7 +85,7 @@ Next select **Add Pump** in blue and then select **Omnipod** from the `Add Pump`
 The Pod Settings screen should have the previous Basal Rates and Delivery Limits in effect from your previous run which can be verified at this time. Once ready, select **Continue** on the bottom of the screen.
 
 <p align="center">
-<img src="../img/pod-settings-delivery-Limits.png" width="300">
+<img src="../img/pod-settings-delivery-limits.png" width="300">
 </p>
 
 Finally, you will be back to the `Pod Pairing` screen.
