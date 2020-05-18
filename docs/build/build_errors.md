@@ -12,7 +12,7 @@ Before you start trying to resolve your red errors...start with the most obvious
 
 1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
 
-2. **Did you check for Xcode updates?** Cannot emphasize this one enough...you should check for Xcode updates (and install them) before building. Current version of Xcode is 11.3, make sure you have it!
+2. **Did you check for Xcode updates?** Cannot emphasize this one enough...you should check for Xcode updates (and install them) before building. If you are updating your Loop app, you often have updated your iOS since the previous build. This may require a macOS update in order to have the App Store tell you there's an even newer Xcode available. So...check both macOS and then Xcode for updates!!
 
 3. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there's a new license agreement.
 
@@ -87,6 +87,27 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 </p>
 
 ## Specific Error Messages
+
+### Could not locate device support files
+
+If you see an error message that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone. Update your Xcode version.
+
+<p align="center">
+<img src="../img/device-support-files.jpg" width="750">
+</p></br>
+
+Often people get confused at this point because their App Store may not be telling them that they don't have an Xcode update available, so they incorrectly assume that they have the most current Xcode. 
+
+Instead, realize that the App Store only shows the updates available for your macOS version. If you macOS version falls behind...then the App Store will not show you Xcode versions that are incompatible with your older macOS. How are the versions all related? Use the figure below to determine your minimum.  
+
+(Source for the figure below is [wikipedia](https://en.wikipedia.org/wiki/Xcode#11.x_series))
+
+<p align="center">
+<img src="../img/minimum-related.png" width="750">
+</p></br>
+
+If you're using iOS 13.4.x on your iPhone, you'll need Catalina macOS 10.15.x at a minimum to be able to see Xcode 11.4.x in the App Store for download. Therefore, update to Catalina and then update to Xcode 11.4.x to resolve your build error message about "device support logs missing". 
+
 
 ### No such module 'LoopKit' or similar message
 
