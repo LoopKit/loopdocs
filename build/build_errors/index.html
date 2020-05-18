@@ -657,7 +657,7 @@
 <p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.</p>
 </li>
 <li>
-<p><strong>Did you check for Xcode updates?</strong> Cannot emphasize this one enough...you should check for Xcode updates (and install them) before building. Current version of Xcode is 11.3, make sure you have it!</p>
+<p><strong>Did you check for Xcode updates?</strong> Cannot emphasize this one enough...you should check for Xcode updates (and install them) before building. If you are updating your Loop app, you often have updated your iOS since the previous build. This may require a macOS update in order to have the App Store tell you there's an even newer Xcode available. So...check both macOS and then Xcode for updates!!</p>
 </li>
 <li>
 <p><strong>Did you check your Apple developer account for new license agreement?</strong> Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. <a href="https://developer.apple.com/account">Login to your Apple developer account</a> to check if there's a new license agreement.</p>
@@ -729,6 +729,22 @@
 <img src="../img/search-errors.png" width="650">
 </p></p>
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Permanent link">⌁</a></h2>
+<h3 id="could-not-locate-device-support-files">Could not locate device support files<a class="headerlink" href="#could-not-locate-device-support-files" title="Permanent link">⌁</a></h3>
+<p>If you see an error message that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone. Update your Xcode version.</p>
+<p align="center">
+<img src="../img/device-support-files.jpg" width="750">
+</p>
+
+<p></br></p>
+<p>Often people get confused at this point because their App Store may not be telling them that they don't have an Xcode update available, so they incorrectly assume that they have the most current Xcode. </p>
+<p>Instead, realize that the App Store only shows the updates available for your macOS version. If you macOS version falls behind...then the App Store will not show you Xcode versions that are incompatible with your older macOS. How are the versions all related? Use the figure below to determine your minimum.  </p>
+<p>(Source for the figure below is <a href="https://en.wikipedia.org/wiki/Xcode#11.x_series">wikipedia</a>)</p>
+<p align="center">
+<img src="../img/minimum-related.png" width="750">
+</p>
+
+<p></br></p>
+<p>If you're using iOS 13.4.x on your iPhone, you'll need Catalina macOS 10.15.x at a minimum to be able to see Xcode 11.4.x in the App Store for download. Therefore, update to Catalina and then update to Xcode 11.4.x to resolve your build error message about "device support logs missing". </p>
 <h3 id="no-such-module-loopkit-or-similar-message">No such module 'LoopKit' or similar message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Permanent link">⌁</a></h3>
 <p>If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then re-run the fix listed above.</p>
 <p></p>
