@@ -9,7 +9,7 @@
 !!!warning "FAQs"
     * **"Why isn't my Xcode installing?"** I can't see your computer to know exactly why...but the two most common reasons are (1) lack of internet connection or (2) not enough free space on the computer's hard drive. Xcode is a pretty beefy-sized download...and needs even a little more space to properly unpack and install itself. Best to try to have about 20-25GB of free space on your hard drive before starting to be on the safe side. If you get low on free space, I've seen installation failures. You can check your free space by clicking on the `About this Mac` (like in Step 1) and clicking the `Storage` tab.
 
-Today is an easy one, but probably takes the longest of most of any of the days in terms of time...only because the download takes a while. The good news is that you don't have to watch this. Instead, you can start the download and simply walk away for the rest of it.
+Today is an easy one, but probably takes the longest of most of any of the steps in terms of time...only because the download takes a while. The good news is that you don't have to watch this. Instead, you can start the download and simply walk away for the rest of it.
 
 Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" code into an iOS application and install it onto your iPhone/iPod. **Make sure you have updated your macOS AND checked the `Software Updates` button before proceeding...in other words, make sure you did Step 1's work.**
 
@@ -19,8 +19,9 @@ Open your App Store in your computer and search for Xcode...you'll either be dow
 <img src="../img/xcode.png" width="750">
 </p></br>
 
-!!!danger"Two important facts"
-    1. The minimum version of Xcode that you need is dependent on the version of iOS you have on the iPhone. The newer the version of iOS, the newer of Xcode you'll also need. 
+!!!warning "Two important facts"
+    
+    1. The minimum version of Xcode that you need is dependent on the version of iOS you have on the iPhone. The newer the version of iOS, the newer of Xcode you'll also need.</br></br> 
     2. The newest Xcode version **may also require you to update your macOS version**. If you have an old version of macOS, then the App Store will not show you that a newer version of Xcode is available. This can create confusion because your iOS could be requiring a newer Xcode, but the App Store won't show it as available. 
     
 ## How do all the minimum versions relate to each other?
@@ -41,7 +42,7 @@ It isn't some catastrophic failure if you try to build with an outdated Xcode wi
 <img src="../img/device-support-files.jpg" width="750">
 </p></br>
     
-So, if you see that error message realize you may have to update your macOS to be able to see the newest Xcode version. 
+So, if you see that error message realize you may have to update your macOS to be able to see the newest Xcode version that you will need. Make sure to check that chart to see what your minimum versions are for the iOS you are running on your iPhone.
     
 ## Next Step: Xcode Preferences
 

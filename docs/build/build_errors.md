@@ -98,7 +98,9 @@ If you see an error message that says "Could not locate device support files." T
 
 Often people get confused at this point because their App Store may not be telling them that they don't have an Xcode update available, so they incorrectly assume that they have the most current Xcode. 
 
-Instead, realize that the App Store only shows the updates available for your macOS version. If you macOS version falls behind...then the App Store will not show you Xcode versions that are incompatible with your older macOS. How are the versions all related? Use the figure below to determine your minimum.  
+Instead, realize that the App Store only shows the updates available for your macOS version. If you macOS version falls behind...then the App Store will not show you Xcode versions that are incompatible with your older macOS. In other words if you are running Mojave macOS, you won't see newer versions of Xcode that require you to have the newer Catalina macOS. 
+
+How are the versions all related? Use the figure below to determine your minimum.  
 
 (Source for the figure below is [wikipedia](https://en.wikipedia.org/wiki/Xcode#11.x_series))
 
