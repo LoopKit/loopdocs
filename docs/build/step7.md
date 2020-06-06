@@ -28,7 +28,7 @@ Ok, now that we have the user account confirmed, let's open the Terminal applica
 
 The Terminal app is very plain looking when you open it. That is normal. Copy and paste the line in the little grey box below into Terminal prompt. 
 
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
 
 Your screen should look like something like this after you copy it in...if it does, then go ahead and press return to continue on with the installation command. 
 
