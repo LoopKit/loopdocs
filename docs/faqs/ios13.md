@@ -36,26 +36,3 @@ So, iOS updates are a big deal (for Loopers) because they involve needing to do 
 
 It's not so much about Loop when you update iOS...the issue is about what other things you need to update BEFORE you build Loop again and AFTER you update iOS.
 
-## What do I need to do to build now with iOS 13?
-
-As of today, September 23rd...things are much easier:
-
-!!!danger "Download Xcode 11 from the App store"
-    If you downloaded Xcode 11 GM previously, go to the App store and get the Xcode update waiting for you now. Xcode 11 GM is not what you need anymore...you need to get Xcode 11 from the App store.
-    
-!!!warning "Restart computer after updating Xcode"
-    Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simulators or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough.
-
-!!!info "Use the Updating Loop app page in LoopDocs"
-    Anytime you want to update your Loop app (aka rebuild your Loop app), always start with the [Updating Loop page](https://loopkit.github.io/loopdocs/build/updating/). That page will have current info to help you get going with what the new minimums are. Always start there. Is it possible there will be a slight delay in updating that page? Yes, I'm human. I have kids, job, house, etc. so it might be slightly delayed sometimes. But, generally during times like this when things are important to update...I make sure the pages reflect that. I'll do my part...your part is to check that page for current info.
-    
-!!!danger "CHECK BUILD ERRORS PAGE"
-    If you get a build error...still check the [Build Errors page](https://loopkit.github.io/loopdocs/build/build_errors/). Because even if your exact error isn't there...the information you NEED to provide when asking for help is listed out on that page. And that information is critical. CRITICAL to be able to troubleshoot your build error.
-
-## What if I don't have Xcode 11? Can I still build?
-
-I cannot understand why you wouldn't update to Xcode 11 at this point..but since you asked the answer depends on which version of iOS **AND** which branch of Loop you are using. If you are using iOS 13, YES...in any branch of Loop you want to build ever, you will need Xcode 11. If you are using dev branch, YES. No matter what iOS you are using with dev branch, you'll need Xcode 11.  Checkout out this chart to find out specifically about your combination of ios/branch and the needed Xcode minimum. (But really...just pull off the band-aid and install Xcode 11 anyways.)
-
-<p align="center">
-<img src="../img/xcode11.png" width="650">
-</p>

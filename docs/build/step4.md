@@ -29,7 +29,7 @@ The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/7
 
 ## Offline Use
 
-Offline use means using Loop when there is no cell data or internet available. Loop does not require any special setup to operate offline. You will not need to do anything special if you go camping or find yourself out in the wilderness. For offline Loop use, the iPhone's Bluetooth still needs to be active; and for Dexcom systems, the Share2, G5, or G6 app also still needs to be open (but don't have to be actively "sharing" to the internet). If you put your iPhone into Airplane mode, remember to turn Bluetooth back on to keep your Loop running. If your offline use is failing, chances are you have forgotten to update your transmitter ID in Loop settings when you changed transmitters.
+Offline use means using Loop when there is no cell data or internet available. Loop does not require any special setup to operate offline. You will not need to do anything special if you go camping or find yourself out in the wilderness. For offline Loop use, the iPhone's Bluetooth still needs to be active; and for Dexcom users, the Share2, G5, or G6 app also still needs to be open (but don't have to be actively "sharing" to the internet). If you put your iPhone into Airplane mode, remember to turn Bluetooth back on to keep your Loop running. If your offline use is failing, chances are you have forgotten to update your transmitter ID in Loop settings when you changed transmitters.
 
 ## Dexcom Servers
 

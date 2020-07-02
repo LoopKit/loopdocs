@@ -4,7 +4,7 @@
     * Nightscout: 1-2 hours if you've never done it before and work slowly
     * Nightscout: 20-30 minutes if you have experience in Github and Heroku previously
     * Tidepool: 30-40 minutes to set up account and Tidepool Mobile app
-    * Apple Health: 0 minutes
+    * Apple Health: 0 minutes, already a part of your system
 
 !!!info "Summary"
     * Review the three major systems that can store and show your Loop data. 
