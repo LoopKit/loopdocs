@@ -209,7 +209,7 @@ You are going to add several additional lines of variables specifically for Loop
 </tr>
 <tr>
 <th>SHOW_PLUGINS</th>
-<td>loop pump cob iob sage cage careportal</td>
+<td>loop pump cob iob sage cage careportal basal</td>
 </tr>
 <tr>
 <th>LOOP_ENABLE_ALERTS</th>
@@ -222,6 +222,10 @@ You are going to add several additional lines of variables specifically for Loop
 <tr>
 <th>LOOP_URGENT</th>
 <td>60</br></br>(Same as the alert above, but will be red in color and have a shorter snooze option.)</td>
+</tr>
+<tr>
+<th>BASAL_RENDER</th>
+<td>default</td>
 </tr>
 </tbody>
 </table>
