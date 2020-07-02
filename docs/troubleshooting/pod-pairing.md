@@ -47,7 +47,6 @@ The placement of the pod and the RileyLink relative to each other is critical va
 
 **How close should they be?** Most people assume "the closer the better", but it has been measured that if the RileyLink and pod are *too close together*, the pairing process may not succeed either. The current recommendation is for the RileyLink to be placed a few inches to the side of the pod being paired.
 
-
 !!!info "If **Pair** fails, RETRY"
     * If the **Pair** operation is not succeeding, try repositioning the relative placement of the RileyLink and the pod multiple times. A little closer together if you had them far apart? A bit farther apart if they were really close? RileyLink on its side? It doesn't hurt to move them around and try again.
     * If the pairing is still unsuccessful with multiple repositioning attempts, move yourself, the RileyLink, and the pod to another area/room (preferably away from other radio frequency signals that might be interfering), and try **Pair** again. Again don't be shy to try repositioning the RileyLink and pod's relative position, if needed, in this new area/room too.
@@ -70,32 +69,16 @@ Now we will have to press the **Cancel** button in the upper right corner of the
 If you press the **Cancel** button and see a screen like below, you're going to select **Switch from Omnipod Pumps** in red. While this appears to confirm that you want to stop using the Omnipod, we will be adding pods back soon. Don't worry.
 
 <p align="center">
-<img src="../img/pod-settings-switch-pumps.png" width="300">
-</p>
-
-<p align="center">
 <img src="../img/delete-omnipod-confirmation.png" width="300">
 </p>
 
-None of your Loop settings including the basal schedule and delivery limits will be lost deleting the Omnipod pump manager. Select **Delete Omnipod** to proceed which will take you back to the Loop home screen.  From here, select the gear icon at the bottom right to go the Loop `Settings` page.
-
-<p align="center">
-<img src="../img/settings.png" width="300">
-</p>
-
-Next select **Add Pump** in blue and then select **Omnipod** from the `Add Pump` list displayed.
+Don't fret. None of your Loop settings including the basal schedule and delivery limits, will be lost deleting the Omnipod pump. Select **Delete Omnipod** to proceed which will take you back to the Loop home screen.  From here, select the gear icon at the bottom right to go the Loop `Settings` page. Then select **Add Pump** in blue and then select **Omnipod** from the `Add Pump` list displayed.
 
 <p align="center">
 <img src="../img/add-pump-list.png" width="300">
 </p>
 
- Verify that the green LED on the RileyLink goes on and off as you touch the switch for RileyLink you are using indicating a successful Bluetooth connection between the RileyLink and your iPhone. Leave the RileyLink enabled with its green LED and slider turned on, and then touch the **Continue** button on the bottom.
-
-<p align="center">
-<img src="../img/rileylink-setup-on.png" width="300">
-</p>
-
-The Pod Settings screen should have the previous Basal Rates and Delivery Limits in effect from your previous run which can be verified at this time. Once ready, select **Continue** on the bottom of the screen.
+ Verify that the green LED on the RileyLink goes on and off as you touch the switch for RileyLink you are using indicating a successful Bluetooth connection between the RileyLink and your iPhone. Leave the RileyLink enabled with its green LED and slider turned on, and then touch the **Continue** button on the bottom. The Pod Settings screen should have the previous Basal Rates and Delivery Limits in effect from your previous run which can be verified at this time. Once ready, select **Continue** on the bottom of the screen.
 
 <p align="center">
 <img src="../img/pod-settings-delivery-limits.png" width="300">
