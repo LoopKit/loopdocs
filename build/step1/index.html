@@ -631,6 +631,8 @@
     
         <li class="main active"><a href="#step-1-compatible-computer">Step 1: Compatible Computer</a></li>
         
+            <li><a href="#minimum-macos">Minimum macOS</a></li>
+        
             <li><a href="#check-your-macos">Check your macOS</a></li>
         
             <li><a href="#next-step-compatible-iphoneipod-touch">Next Step: Compatible iPhone/iPod touch</a></li>
@@ -651,10 +653,10 @@
 <div class="admonition info">
 <p class="admonition-title">Summary</p>
 <ul>
-<li>Check your macOS and make sure it is Mojave or Catalina.</li>
+<li>Check your macOS and make sure it is Mojave or Catalina. <strong>If you have the latest iOS version on the iPhone that will be using Loop...then you need Catalina.</strong></li>
 <li>Do not use any of the beta macOS versions. (If you don't know what that means, don't worry...that means you aren't using one.)</li>
 <li>If your macOS is not Mojave or Catalina, check to see if you can up update your macOS to one of those.</li>
-<li>If you cannot upgrade your existing computer to Mojave or Catalina, you'll need to check into a borrowed computer, patcher tool, or perhaps a new/used computer compatible with Mojave.</li>
+<li>If you cannot upgrade your existing computer to Mojave or Catalina, you'll need to check into a borrowed computer, patcher tool, or perhaps a new/used computer compatible with Mojave or Catalina.</li>
 <li>Check the <code>Software Update</code> to see if your computer has any updates available since you first installed it.</li>
 </ul>
 </div>
@@ -662,23 +664,26 @@
 <p class="admonition-title">FAQs</p>
 <ul>
 <li><strong>"Can I use a PC or Windows computer? I don't own an Apple computer."</strong> Yes...sort of. Please see <a href="https://loopkit.github.io/loopdocs/faqs/FAQs/#can-i-use-a-pc-or-windows-computer-to-build">this FAQ about using Virtual Machine</a>. Windows computers with AMD processors will not be able to successfully build using Virtual Machine, so please make sure you check your processor type before embarking down the Virtual Machine path.</li>
-<li><strong>"What can I do if my computer is too old to be upgraded to Mojave?"</strong> You could take a look at using <a href="http://dosdude1.com/mojave/">Mojave Patcher</a>, but this is totally on your own and not part of these instructions. Just offering the answer to the FAQ...it is up to you to read about the patcher tool and what risks it may involve for you.</li>
+<li><strong>"What can I do if my computer is too old to be upgraded to Mojave/Catalina?"</strong> You could take a look at using <a href="http://dosdude1.com/mojave/">Mojave Patcher</a>, but this is totally on your own and not part of these instructions. Just offering the answer to the FAQ...it is up to you to read about the patcher tool and what risks it may involve for you.</li>
 <li><strong>"Can I borrow someone else's Apple computer?"</strong> Yes, please see <a href="https://loopkit.github.io/loopdocs/faqs/FAQs/#do-i-need-to-own-my-own-apple-computer">this FAQ about borrowing a computer</a> to learn more.</li>
 <li><strong>"How often do I need to use the computer?"</strong> Computer access is only required when you are initially installing the Loop app or updating to a newer Loop release. You do NOT need access to an Apple computer in order to troubleshoot or change Loop settings, such as basal profiles or carb ratios.</li>
 </ul>
 </div>
+<h2 id="minimum-macos">Minimum macOS<a class="headerlink" href="#minimum-macos" title="Permanent link">⌁</a></h2>
+<p>The minimum macOS version you'll need is dictated by the iOS version that is installed on your iPhone that you'll be using for Loop.</p>
+<p><strong>If you have iOS 12.4 to 13.2</strong>, you can use macOS 10.14.4 (Mojave) or 10.15.2 or newer (Catalina). But, be forewarned...soon you will need access to a Catalina computer because you'll likely update your iOS soon..and once you do that, you'll need Catalina to do your next Loop update/rebuild.</p>
+<p><strong>If you have iOS 13.4 or newer</strong>, you will need not be able to use Mojave and will need Catalina at a minimum. In other words, you'll need macOS 10.15.2 at a minimum to build Loop onto an iPhone running iOS 13.4 or newer.</p>
 <h2 id="check-your-macos">Check your macOS<a class="headerlink" href="#check-your-macos" title="Permanent link">⌁</a></h2>
-<p>You need an Apple computer that has at least macOS 10.14.3 (or newer) installed. This macOS is called Mojave. To find out if you have Mojave installed, click on the little Apple icon in your computer's upper left corner and select the <code>About this Mac</code>. It doesn't matter if the computer is a MacBook, iMac, macMini, etc...just so long as it has macOS Mojave. If your computer does not have Mojave at a minimum, you'll need to check the <code>Software Update</code> button on that screen to see if you can update to Mojave.</p>
+<p>You need an Apple computer that has at least the minimum macOS version as described above; Mojave macOS 10.14.4 (or newer) or Catalina macOS 10.15 (or newer). To find out which version you have installed, click on the little Apple icon in your computer's upper left corner and select the <code>About this Mac</code>. It doesn't matter if the computer is a MacBook, iMac, macMini, etc...just so long as it has the minimum you'll need. If your computer does not have the required minimum version, you'll need to check the <code>Software Update</code> button on that screen to see if you can update.</p>
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/build/img/macosx.png" width="500">
 </p>
 
-<p>If your computer does not give you the option to update to the minimum macOS (in other words you are stuck on High Sierra)...it is quite possible that Apple has decided your computer is too old to run Mojave. How old is too old? That will depend on your computer model and year as shown below:</p>
+<p>If your computer does not give you the option to update to the minimum macOS (in other words you are stuck on older versions)...it is quite possible that Apple has decided your computer is too old to run the latest and greatest. How old is too old? That will depend on your computer model and year as shown below:</p>
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/build/img/mojave-minimum.png" width="750">
 </p>
 
-<p>Note: Catalina is also a compatible macOS system. Catalina is the newest macOS version, and it replaces Mojave. At current time, you can use either Mojave (at least v10.14.3 of Mojave) or Catalina without issue.</p>
 <h2 id="next-step-compatible-iphoneipod-touch">Next Step: Compatible iPhone/iPod touch<a class="headerlink" href="#next-step-compatible-iphoneipod-touch" title="Permanent link">⌁</a></h2>
 <p>Now you are ready to move onto Step 2 to check if you have a <a href="https://loopkit.github.io/loopdocs/build/step2/">Compatible iPhone/iPod touch</a>.</p></div>
         </div>
