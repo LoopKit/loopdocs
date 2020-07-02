@@ -3,7 +3,7 @@
 Have you seen an error message during the pairing process for a new pod? The most common messages are "No response from pod" or "Pod sent ack instead of response", as shown below.
 
 <p align="center">
-<img src="../img/pod-pair-fail.jpg" width="300">
+<img src="../img/pod-pair-fail.jpg" width="550">
 </p>
 
 During pairing a number of possible errors can leave the pod in an apparent non-responding state. This page will help you walk through some easy troubleshooting steps to hopefully recover that pod into good working order.
@@ -48,7 +48,7 @@ The placement of the pod and the RileyLink relative to each other is critical va
 **How close should they be?** Most people assume "the closer the better", but it has been measured that if the RileyLink and pod are *too close together*, the RileyLink may not be able to pick up the pairing response. The current recommendation is for the RileyLink to be placed a few inches to the side of the pod being paired.
 
 <p align="center">
-<img src="../img/pod-rileylink-positinging.jpg" width="400">
+<img src="../img/pod-rileylink-positioning.jpg" width="600">
 </p>
 
 !!!info "If **Pair** fails, move a bit and RETRY"
@@ -97,8 +97,8 @@ Instead of filling a new pod with insulin, attempt to pair again using the origi
 ### Step 5B "Deactivate pod"
 If you press the **Cancel** button and see an option for "Deactivate pod", we're going to do a little different than Step 5A.
 
-!!!warning "You *may* lose your pod by attempting this procedure"
-    This is a point of no return for certain pod pairing situations and it is possible that the pod will be lost by attempting this procedure. Before attempting this procedure it is important to have already exhausted other possibilities described above in Steps 1-4. Specifically, (1) attempting to pair several times using varied relative positions of the RileyLink and pod (2) trying different rooms that might have less interferene, and (3) verifying your RileyLink is connected and functioning correctly.
+!!!warning "You *might* lose your pod by attempting this procedure"
+    This is a point of no return for certain pod pairing situations and it is possible that the pod will be lost by attempting this procedure depending on the pod state. Some will recover fine, others may not. Since you can't know in advance if you might lose the pod, it is important to have already exhausted other possibilities described above in Steps 1-4 to try pairing. Specifically, (1) attempting to pair several times using varied relative positions of the RileyLink and pod (2) trying different rooms that might have less interferene, and (3) verifying your RileyLink is connected and functioning correctly.
 
 For this next part, we want to make sure that the pod doesn't accidentally receive the deactivation command we are about to use. We want Loop to do the command...we just really don't want the pod to hear it. There's two ways we can keep the pod from hearing it, either (1) prevent the RileyLink from hearing Loop's command (and thus the command cannot reach the pod) or (2) prevent the pod from hearing the command from RileyLink. To accomplish our keep-the-pod-ignorant goal, you can try either option like so:
 
@@ -108,7 +108,7 @@ For this next part, we want to make sure that the pod doesn't accidentally recei
     * Put the pod in a not-turned-on-but-door-is-closed microwave. 
     * Put the pod in a faraday bag, if you own one.
 
-Ok. Have the pod nice and ignorant? Good. Now press the "Deactivate Pod" button. It might take a few attempts, and you might see some failure messages about how the deactivation failed (of course it did...we hid the pod!) Eventually, you'll be given an "Pair a new pod" button that you'll want to use.
+Ok. Have the pod nice and ignorant? Good. Now press the "Deactivate Pod" button. It will take a few attempts, and you will see some failure messages about how the deactivation failed (of course it did...we hid the pod!) Eventually, you'll be given an "Pair a new pod" button that you'll want to use.
 
 Press the "Pair a new pod" button. The instructions start with "fill a new pod with insulin"...BUT DO NOT!  Instead, bring that beeping pod back to the hearing range. Turn that RileyLink back on if you turned it off. Once you get the RileyLink on and the pod back in range, you'll just press the **Pair** button and hopefully you'll find success with the process. 
 
