@@ -643,6 +643,8 @@
         
             <li><a href="#step-6-known-issues">Step 6: Known Issues</a></li>
         
+            <li><a href="#step-7-common-errors">Step 7: Common Errors</a></li>
+        
     
     </ul>
 </div></div>
@@ -839,6 +841,14 @@ Scroll down the bottom of the Config Vars lines until you find the last blank on
 <ol>
 <li>The override pill will display information about what override is currently active in the Looper's phone. BUT, there can be a slight delay as that information is only transmitted every 5 minutes at best (it is tied to Loop runs and Nightscout upload events in Loop). So, wait 5 minutes to see that the information has gone through a refresh cycle before assuming the override message failed to enact.</li>
 <li>When you add a new override preset in Loop, that preset has to be uploaded to Nightscout before it will be available as a remote override. To trigger that upload, you can simply enact that new override for a few seconds and turn it off again. that will get the Nightscout upload going.</li>
+</ol>
+<h2 id="step-7-common-errors">Step 7: Common Errors<a class="headerlink" href="#step-7-common-errors" title="Permanent link">⌁</a></h2>
+<p>Once you've set up remote overrides, you may encounter errors when trying to run them via Nightscout or iOS Shortcuts.  Below are the most common and the typical solutions.</p>
+<ol>
+<li><strong>Error: Loop notification failed: Could not find deviceToken in loopSettings</strong> You might see this in either Nightscout or Shortcuts.  The error is most commonly caused by 3 issues: incorrect version of Loop, Loop is not pointing to the right Nightscout instance, or you haven't yet run an override locally (with the Loop app) before trying to run one remotely.  <strong>Solution:</strong> check you have the latest version of the Dev branch installed, confirm the Loop app is pointing to the right Nightscout site (and there are not extra spaces or a slash (/) at the end, and always run an override for a few seconds in the Loop app before you try to run one remotely.</li>
+<li><strong>Error: cannot POST/api/v2/notifications/loop</strong> You might see this in iOS Shortcuts.  This means Nightscout is not updated correctly and you are running a version of Nightscout that doesn't yet support remote overrides.  <strong>Solution:</strong> Follow the steps above again on how to update to the version of Nightscout that supports remote overrides.</li>
+<li><strong>Error: {“status”:401,”message”:”Unauthorized”,”description”:Invalid\/Missing”}</strong> You might see this in iOS Shortcuts.  This is caused by having the incorrect API Secret in the Shortcut.  <strong>Solution:</strong> Double check the API Secret is correct and that there are no spaces at the end.</li>
+<li><strong>Error: APNs delivery failed: InvalidProviderToken</strong> You might see this in either Nightscout or Shortcuts.  This is caused because your LOOP_APNS_KEY_ID and LOOP_DEVELOPER_TEAM_ID are swapped in Heroku.  <strong>Solution:</strong> Double check what's listed in your Apple Developer Account and compare to the config variables in Heroku. Your Team_ID is next to your name in the top right corner.  The other code is your Key_ID. Get the IDs in the correct location in Heroku to resolve the error.</li>
 </ol></div>
         </div>
 

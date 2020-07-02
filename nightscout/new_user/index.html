@@ -631,6 +631,10 @@
     
         <li class="main active"><a href="#new-nightscout-users">New Nightscout Users</a></li>
         
+            <li><a href="#t1pal-set-up">T1Pal SET-UP</a></li>
+        
+            <li><a href="#traditional-diy">Traditional DIY</a></li>
+        
             <li><a href="#step-1-heroku-account">Step 1: Heroku Account</a></li>
         
             <li><a href="#step-2-create-an-account-at-github">Step 2: Create an account at GitHub</a></li>
@@ -657,7 +661,18 @@
             <div class="col-md-9" role="main">
 
 <h1 id="new-nightscout-users">New Nightscout Users<a class="headerlink" href="#new-nightscout-users" title="Permanent link">⌁</a></h1>
-<p>Two options exist for easy hosting of NS; Azure or Heroku. Both hosting services are free.  However,  Azure has data quotas monthly and shorter-term CPU quotas.  If you exceed those quotas, you may be facing a monthly data-use bill or being locked out of NS for about 12 hours until the quotas reset.  As you start to use NS more intensively for alarms, pebble watches, etc…it is possible that you may exceed your monthly data cap on Azure.  Many Loop users have transitioned their old sites from Azure over to Heroku and have found the hosting change to be beneficial.  Heroku also has some memory limits, but those limits have been more than adequate for Loop users.  Therefore, we recommend new users start with Heroku.</p>
+<p><a href="https://t1pal.com/">T1Pal is only dedicated NS hosting</a> company.  There is a hosting fee required which is used to help ensure Nightscout runs without limits and receives improvements.  Setup is simple and loop plugins are configured automatically during the setup guide.</p>
+<h2 id="t1pal-set-up">T1Pal SET-UP<a class="headerlink" href="#t1pal-set-up" title="Permanent link">⌁</a></h2>
+<ul>
+<li>Select <a href="https://www.t1pal.com/getting-started/starting/home">Get Started</a> to register an account at <a href="https://www.t1pal.com/">T1Pal</a>.  You will need to enter your credit card, which helps ensure Nightscout is running correctly.</li>
+<li>Select "visualize treatments" in the setup menu and select "loop."</li>
+</ul>
+<p align="center">
+<img src="../img/t1pal_configure.png" width="450">
+</p>
+
+<h2 id="traditional-diy">Traditional DIY<a class="headerlink" href="#traditional-diy" title="Permanent link">⌁</a></h2>
+<p>Two options exist for easy DIY hosting of NS; Azure or Heroku. Both hosting services are free.  However,  Azure has data quotas monthly and shorter-term CPU quotas.  If you exceed those quotas, you may be facing a monthly data-use bill or being locked out of NS for about 12 hours until the quotas reset.  As you start to use NS more intensively for alarms, pebble watches, etc…it is possible that you may exceed your monthly data cap on Azure.  Many Loop users have transitioned their old sites from Azure over to Heroku and have found the hosting change to be beneficial.  Heroku also has some memory limits, but those limits have been more than adequate for Loop users.  Therefore, we recommend new users start with Heroku.</p>
 <p>If you are the person who enjoys videos...here's a YouTube video that you can use to walk-through with these directions. Just give it a click.</p>
 <p align="center">
 <a href="https://youtu.be/5WREY465eII" target="_blank"><img src="../img/thumbnail.png" width="650" title="How to build a Nightscout site: Loop Users" /></a>
@@ -829,7 +844,7 @@ You are going to add several additional lines of variables specifically for Loop
 </tr>
 <tr>
 <th>SHOW_PLUGINS</th>
-<td>loop pump cob iob sage cage careportal</td>
+<td>loop pump cob iob sage cage careportal basal</td>
 </tr>
 <tr>
 <th>LOOP_ENABLE_ALERTS</th>
@@ -842,6 +857,10 @@ You are going to add several additional lines of variables specifically for Loop
 <tr>
 <th>LOOP_URGENT</th>
 <td>60</br></br>(Same as the alert above, but will be red in color and have a shorter snooze option.)</td>
+</tr>
+<tr>
+<th>BASAL_RENDER</th>
+<td>default</td>
 </tr>
 </tbody>
 </table>
