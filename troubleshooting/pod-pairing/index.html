@@ -657,7 +657,7 @@
 <h1 id="pod-pairing-failures">Pod Pairing Failures<a class="headerlink" href="#pod-pairing-failures" title="Permanent link">⌁</a></h1>
 <p>Have you seen an error message during the pairing process for a new pod? The most common messages are "No response from pod" or "Pod sent ack instead of response", as shown below.</p>
 <p align="center">
-<img src="../img/pod-pair-fail.jpg" width="300">
+<img src="../img/pod-pair-fail.jpg" width="550">
 </p>
 
 <p>During pairing a number of possible errors can leave the pod in an apparent non-responding state. This page will help you walk through some easy troubleshooting steps to hopefully recover that pod into good working order.</p>
@@ -692,7 +692,7 @@
 <p>The placement of the pod and the RileyLink relative to each other is critical variable because the pod operates in a low power radio mode during pairing which can lead to a number of potential faulty and half-paired pod situations, particularly with earlier versions of Loop. </p>
 <p><strong>How close should they be?</strong> Most people assume "the closer the better", but it has been measured that if the RileyLink and pod are <em>too close together</em>, the RileyLink may not be able to pick up the pairing response. The current recommendation is for the RileyLink to be placed a few inches to the side of the pod being paired.</p>
 <p align="center">
-<img src="../img/pod-rileylink-positinging.jpg" width="400">
+<img src="../img/pod-rileylink-positioning.jpg" width="600">
 </p>
 
 <div class="admonition info">
@@ -739,8 +739,8 @@
 <h3 id="step-5b-deactivate-pod">Step 5B "Deactivate pod"<a class="headerlink" href="#step-5b-deactivate-pod" title="Permanent link">⌁</a></h3>
 <p>If you press the <strong>Cancel</strong> button and see an option for "Deactivate pod", we're going to do a little different than Step 5A.</p>
 <div class="admonition warning">
-<p class="admonition-title">You <em>may</em> lose your pod by attempting this procedure</p>
-<p>This is a point of no return for certain pod pairing situations and it is possible that the pod will be lost by attempting this procedure. Before attempting this procedure it is important to have already exhausted other possibilities described above in Steps 1-4. Specifically, (1) attempting to pair several times using varied relative positions of the RileyLink and pod (2) trying different rooms that might have less interferene, and (3) verifying your RileyLink is connected and functioning correctly.</p>
+<p class="admonition-title">You <em>might</em> lose your pod by attempting this procedure</p>
+<p>This is a point of no return for certain pod pairing situations and it is possible that the pod will be lost by attempting this procedure depending on the pod state. Some will recover fine, others may not. Since you can't know in advance if you might lose the pod, it is important to have already exhausted other possibilities described above in Steps 1-4 to try pairing. Specifically, (1) attempting to pair several times using varied relative positions of the RileyLink and pod (2) trying different rooms that might have less interferene, and (3) verifying your RileyLink is connected and functioning correctly.</p>
 </div>
 <p>For this next part, we want to make sure that the pod doesn't accidentally receive the deactivation command we are about to use. We want Loop to do the command...we just really don't want the pod to hear it. There's two ways we can keep the pod from hearing it, either (1) prevent the RileyLink from hearing Loop's command (and thus the command cannot reach the pod) or (2) prevent the pod from hearing the command from RileyLink. To accomplish our keep-the-pod-ignorant goal, you can try either option like so:</p>
 <ol>
@@ -752,7 +752,7 @@
 </ul>
 </li>
 </ol>
-<p>Ok. Have the pod nice and ignorant? Good. Now press the "Deactivate Pod" button. It might take a few attempts, and you might see some failure messages about how the deactivation failed (of course it did...we hid the pod!) Eventually, you'll be given an "Pair a new pod" button that you'll want to use.</p>
+<p>Ok. Have the pod nice and ignorant? Good. Now press the "Deactivate Pod" button. It will take a few attempts, and you will see some failure messages about how the deactivation failed (of course it did...we hid the pod!) Eventually, you'll be given an "Pair a new pod" button that you'll want to use.</p>
 <p>Press the "Pair a new pod" button. The instructions start with "fill a new pod with insulin"...BUT DO NOT!  Instead, bring that beeping pod back to the hearing range. Turn that RileyLink back on if you turned it off. Once you get the RileyLink on and the pod back in range, you'll just press the <strong>Pair</strong> button and hopefully you'll find success with the process. </p>
 <h2 id="step-6-help-improve-pod-pairing-process">Step 6: Help improve pod pairing process<a class="headerlink" href="#step-6-help-improve-pod-pairing-process" title="Permanent link">⌁</a></h2>
 <p>To help fix pairing bugs, some improvements have also been made in our ability to save the communications between the pods and Loop app during the pairing process. So, please help us leverage these new improvements and better squash bugs.</p>
