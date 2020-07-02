@@ -57,9 +57,6 @@ The placement of the pod and the RileyLink relative to each other is critical va
 
 When you have a pod that continues to appear non-responsive after several retries **Pair** attempts while trying to properly reposition the RileyLink, it may be possible to recover by forcing Loop to start the pairing process from the beginning. This Step 5 process is particularly needed when running older versions of Loop (prior to April 2020 with Loop v2.2 release). Loop v2.2 brought various improvements to the basic communications code and the pairing logic, as well as improved user-facing messages, to reduce instances of pairing failures.
 
-!!!warning "You *may* lose your pod by attempting this procedure"
-    This is a point of no return for certain pod pairing situations and it is possible that the pod will be lost by attempting this procedure. Before attempting this procedure it is important to have already exhausted other possibilities described above in Steps 1-4. Specifically, (1) attempting to pair several times using varied relative positions of the RileyLink and pod (2) trying different rooms that might have less interferene, and (3) verifying your RileyLink is connected and functioning correctly.
-
 Let's walk through the the steps of doing a Pod Pairing recovery assuming you've retried a number of times and you're still stuck getting no response errors on each **Pair** attempt. 
 
 Now we will have to press the **Cancel** button in the upper right corner of the pairing screen. Depending on which state the pod is stuck at in the pairing process...you'll see one of two screens after you select the **Cancel** button. Follow the directions (Step 5A vs Step 5B) for whichever screen corresponds to what you see after pressing **Cancel**.
@@ -114,6 +111,9 @@ Instead of filling a new pod with insulin, attempt to pair again using the origi
 
 ### Step 5B "Deactivate pod"
 If you press the **Cancel** button and see an option for "Deactivate pod", we're going to do a little different than Step 5A.
+
+!!!warning "You *may* lose your pod by attempting this procedure"
+    This is a point of no return for certain pod pairing situations and it is possible that the pod will be lost by attempting this procedure. Before attempting this procedure it is important to have already exhausted other possibilities described above in Steps 1-4. Specifically, (1) attempting to pair several times using varied relative positions of the RileyLink and pod (2) trying different rooms that might have less interferene, and (3) verifying your RileyLink is connected and functioning correctly.
 
 For this next part, we want to make sure that the pod doesn't accidentally receive the deactivation command we are about to use. We want Loop to do the command...we just really don't want the pod to hear it. There's two ways we can keep the pod from hearing it:
 
