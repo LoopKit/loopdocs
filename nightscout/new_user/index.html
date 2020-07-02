@@ -631,9 +631,9 @@
     
         <li class="main active"><a href="#new-nightscout-users">New Nightscout Users</a></li>
         
-            <li><a href="#t1pal-set-up">T1Pal SET-UP</a></li>
+            <li><a href="#t1pal-paid-service">T1Pal (paid service)</a></li>
         
-            <li><a href="#traditional-diy">Traditional DIY</a></li>
+            <li><a href="#traditional-diy-free-do-it-yourself">Traditional DIY (free, do-it-yourself)</a></li>
         
             <li><a href="#step-1-heroku-account">Step 1: Heroku Account</a></li>
         
@@ -651,9 +651,9 @@
         
             <li><a href="#step-8-loop-settings">Step 8: Loop Settings</a></li>
         
-            <li><a href="#troubleshooting">Troubleshooting</a></li>
+            <li><a href="#diy-troubleshooting">DIY Troubleshooting</a></li>
         
-            <li><a href="#future-warning">Future warning</a></li>
+            <li><a href="#future-warning-for-diy-users">Future warning (for DIY users)</a></li>
         
     
     </ul>
@@ -661,8 +661,9 @@
             <div class="col-md-9" role="main">
 
 <h1 id="new-nightscout-users">New Nightscout Users<a class="headerlink" href="#new-nightscout-users" title="Permanent link">⌁</a></h1>
+<p>There are two options for setting up Nightscout; one option requires a small fee but automates both the setup and periodic updating/cleaning database, the other option is free but requires your effort to build and update. You choose which works best for you. Isn't it nice to have options?</p>
+<h2 id="t1pal-paid-service">T1Pal (paid service)<a class="headerlink" href="#t1pal-paid-service" title="Permanent link">⌁</a></h2>
 <p><a href="https://t1pal.com/">T1Pal is only dedicated NS hosting</a> company.  There is a hosting fee required which is used to help ensure Nightscout runs without limits and receives improvements.  Setup is simple and loop plugins are configured automatically during the setup guide.</p>
-<h2 id="t1pal-set-up">T1Pal SET-UP<a class="headerlink" href="#t1pal-set-up" title="Permanent link">⌁</a></h2>
 <ul>
 <li>Select <a href="https://www.t1pal.com/getting-started/starting/home">Get Started</a> to register an account at <a href="https://www.t1pal.com/">T1Pal</a>.  You will need to enter your credit card, which helps ensure Nightscout is running correctly.</li>
 <li>Select "visualize treatments" in the setup menu and select "loop."</li>
@@ -671,13 +672,14 @@
 <img src="../img/t1pal_configure.png" width="450">
 </p>
 
-<h2 id="traditional-diy">Traditional DIY<a class="headerlink" href="#traditional-diy" title="Permanent link">⌁</a></h2>
+<h2 id="traditional-diy-free-do-it-yourself">Traditional DIY (free, do-it-yourself)<a class="headerlink" href="#traditional-diy-free-do-it-yourself" title="Permanent link">⌁</a></h2>
 <p>Two options exist for easy DIY hosting of NS; Azure or Heroku. Both hosting services are free.  However,  Azure has data quotas monthly and shorter-term CPU quotas.  If you exceed those quotas, you may be facing a monthly data-use bill or being locked out of NS for about 12 hours until the quotas reset.  As you start to use NS more intensively for alarms, pebble watches, etc…it is possible that you may exceed your monthly data cap on Azure.  Many Loop users have transitioned their old sites from Azure over to Heroku and have found the hosting change to be beneficial.  Heroku also has some memory limits, but those limits have been more than adequate for Loop users.  Therefore, we recommend new users start with Heroku.</p>
 <p>If you are the person who enjoys videos...here's a YouTube video that you can use to walk-through with these directions. Just give it a click.</p>
 <p align="center">
 <a href="https://youtu.be/5WREY465eII" target="_blank"><img src="../img/thumbnail.png" width="650" title="How to build a Nightscout site: Loop Users" /></a>
 </p>
 
+<p>If you don't enjoy videos, then here is a step-by-step guide for completing your own Nightscout site DIY style.</p>
 <h2 id="step-1-heroku-account">Step 1: Heroku Account<a class="headerlink" href="#step-1-heroku-account" title="Permanent link">⌁</a></h2>
 <p>Create an account at <a href="https://signup.heroku.com/login" target="_blank">Heroku's signup page</a>. </p>
 <p>Enter your name, email address, role ("Hobbyist" is fine) and choose "Node.js" as the Primary Development Language.  When you get all those entered, confirm that you are not a robot and click the blue "Create Free Account" button</p>
@@ -900,9 +902,9 @@ Finally, I recommend deleting the <code>PAPERTRAIL_API_TOKEN</code> line. Heroku
 <h2 id="step-8-loop-settings">Step 8: Loop Settings<a class="headerlink" href="#step-8-loop-settings" title="Permanent link">⌁</a></h2>
 <p>Don't forget to enter your new Nightscout site into your Loop settings! That way Loop can upload all the juicy great info directly to your Nightscout site (except CGM data...that is all handled by that BRIDGE info you put in earlier)</p>
 <p>Directions <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/services/#nightscout">here</a> as well as warnings about the two most common errors when people add the URL to Loop settings. (Hint hint hint)</p>
-<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">⌁</a></h2>
+<h2 id="diy-troubleshooting">DIY Troubleshooting<a class="headerlink" href="#diy-troubleshooting" title="Permanent link">⌁</a></h2>
 <p>If your site is not showing CGM (and Loop, if you are Looping) data within about 10 minutes of finishing your setup, then please follow these steps <a href="https://loopkit.github.io/loopdocs/nightscout/troublehoot/">here</a> to troubleshoot.</p>
-<h2 id="future-warning">Future warning<a class="headerlink" href="#future-warning" title="Permanent link">⌁</a></h2>
+<h2 id="future-warning-for-diy-users">Future warning (for DIY users)<a class="headerlink" href="#future-warning-for-diy-users" title="Permanent link">⌁</a></h2>
 <p>At some point in the future months, your Nightscout site will likely stop in some quirky way...like CGM data won't be showing is the most common. This won't affect Looping, but it might be kind of annoying if you are a parent using Nightscout for remote info. The reason? The database Heroku gives us for free has some size limitations. After several months of Looping, you'll likely fill up that free amount of space and we will need to cleanout in order to make room.</p>
 <p>So...keep it in your head that if you see something odd with your NS site (like no CGM even though Dexcom is working), then please check <a href="https://loopkit.github.io/loopdocs/nightscout/mlab_cleanup/">this page to learn how you can cleanout the database</a>. It is easy and fast...no worries.</p></div>
         </div>
