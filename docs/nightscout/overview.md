@@ -45,7 +45,7 @@ Nightscout is highly recommended for Loop users, especially those using Loop as 
     Loop is continuing with last temp basal, no change
 
     <font style='font-size: 1.5em;'>⚠</font> &nbsp;
-    Warning (Loop has not completed since since the time set on your LOOP_WARN setting in NS)
+    Warning indicating Loop is either red or has failed to upload to Nightscout for a longer period of time.
 Mouseover or Touch the Loop pill to view a tool tip containing one or more of the latest status messages. The most up-to-date NS also includes information in the Loop pill for the minimum and maximum predicted BG, eventual and predicted BG.
 
 <img src="../img/loop_pill_message.png" width="750"></dd>
