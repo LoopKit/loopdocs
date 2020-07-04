@@ -114,7 +114,7 @@ Ok. Have the pod nice and ignorant? Good. Now press the "Deactivate Pod" button.
 <img src="../img/deactivate-pod.png" width="600">
 </p>
 
-Press the "Continue" button. The instructions start with "fill a new pod with insulin"...BUT DO NOT!  Instead, bring that beeping pod back to the hearing range. Turn that RileyLink back on if you turned it off. Once you get the RileyLink on and the pod back in range, you'll just press the **Pair** button and hopefully you'll find success with the process. 
+Press the "Continue" button. The instructions start with "fill a new pod with insulin"...BUT DO NOT!  Instead, bring that beeping pod back to the hearing range. Turn that RileyLink back on if you turned it off. Once you get the RileyLink on and the pod back in range, you'll just press the **Pair** button and hopefully you'll find success with the process. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.
 
 <p align="center">
 <img src="../img/deactivate-pod2.png" width="600">
