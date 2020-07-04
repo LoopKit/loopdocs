@@ -71,19 +71,19 @@ To start we will have to press the **Cancel** button in the upper right corner o
 If you press the **Cancel** button and see a screen like below, you're going to select **Switch from Omnipod Pumps** in red. While this appears to confirm that you want to stop using the Omnipod, we will be adding pods back soon. Don't worry.
 
 <p align="center">
-<img src="../img/delete-omnipod-confirmation.png" width="300">
+<img src="../img/delete-omnipod-confirmation.png" width="400">
 </p>
 
 Don't fret. None of your Loop settings including the basal schedule and delivery limits, will be lost deleting the Omnipod pump. Select **Delete Omnipod** to proceed which will take you back to the Loop home screen.  From here, select the gear icon at the bottom right to go the Loop `Settings` page. Then select **Add Pump** in blue and then select **Omnipod** from the `Add Pump` list displayed.
 
 <p align="center">
-<img src="../img/add-pump-list.png" width="300">
+<img src="../img/add-pump-list.png" width="400">
 </p>
 
  Verify that the green LED on the RileyLink goes on and off as you touch the switch for RileyLink you are using indicating a successful Bluetooth connection between the RileyLink and your iPhone. Leave the RileyLink enabled with its green LED and slider turned on, and then touch the **Continue** button on the bottom. The Pod Settings screen should have the previous Basal Rates and Delivery Limits in effect from your previous run which can be verified at this time. Once ready, select **Continue** on the bottom of the screen.
 
 <p align="center">
-<img src="../img/pod-settings-delivery-limits.png" width="300">
+<img src="../img/pod-settings-delivery-limits.png" width="400">
 </p>
 
 Finally, you will be back to the `Pod Pairing` screen.
@@ -92,13 +92,13 @@ Finally, you will be back to the `Pod Pairing` screen.
 <img src="../img/pod-pairing.png" width="200">
 </p>
 
-Instead of filling a new pod with insulin, attempt to pair again using the original pod which was previously filled but unable to complete the pairing process successfully. That pod should still be occassionally giving reminder beeps. Place the RielyLink a few inches to the side of the pod and press the **Pair** button at the bottom of the screen and hopefully Loop will be able to successfully pair this time after starting from a fresh slate. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.
+Instead of filling a new pod with insulin, attempt to pair again using the original pod which was previously filled but unable to complete the pairing process successfully. That pod should still be occassionally giving reminder beeps. Place the RileyLink a few inches to the side of the pod and press the **Pair** button at the bottom of the screen and hopefully Loop will be able to successfully pair this time after starting from a fresh slate. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.
 
 ### Step 5B "Deactivate pod"
 If you press the **Cancel** button and see an option for "Deactivate pod", we're going to do a little different than Step 5A.
 
 !!!warning "You *might* lose your pod by attempting this procedure"
-    This is a point of no return for certain pod pairing situations and it is possible that the pod will be lost by attempting this procedure depending on the pod state. Some will recover fine, others may not. Since you can't know in advance if you might lose the pod, it is important to have already exhausted other possibilities described above in Steps 1-4 to try pairing. Specifically, (1) attempting to pair several times using varied relative positions of the RileyLink and pod (2) trying different rooms that might have less interferene, and (3) verifying your RileyLink is connected and functioning correctly.
+    This is a point of no return for certain pod pairing situations and it is possible that the pod will be lost by attempting this procedure depending on the pod state. Some will recover fine, others may not. Since you can't know in advance if you might lose the pod, it is important to have already exhausted other possibilities described above in Steps 1-4 to try pairing. Specifically, (1) attempting to pair several times using varied relative positions of the RileyLink and pod (2) trying the pairing again but in a different room/location that might have less wireless interference, and (3) verifying your RileyLink is connected and functioning correctly.
 
 For this next part, we want to make sure that the pod doesn't accidentally receive the deactivation command we are about to use. We want Loop to do the command...we just really don't want the pod to hear it. There's two ways we can keep the pod from hearing it, either (1) prevent the RileyLink from hearing Loop's command (and thus the command cannot reach the pod) or (2) prevent the pod from hearing the command from RileyLink. To accomplish our keep-the-pod-ignorant goal, you can try either option like so:
 
@@ -108,9 +108,17 @@ For this next part, we want to make sure that the pod doesn't accidentally recei
     * Put the pod in a not-turned-on-but-door-is-closed microwave. 
     * Put the pod in a faraday bag, if you own one.
 
-Ok. Have the pod nice and ignorant? Good. Now press the "Deactivate Pod" button. It will take a few attempts, and you will see some failure messages about how the deactivation failed (of course it did...we hid the pod!) Eventually, you'll be given an "Pair a new pod" button that you'll want to use.
+Ok. Have the pod nice and ignorant? Good. Now press the "Deactivate Pod" button. It will take a few attempts, and you will see some failure messages about how the deactivation failed (of course it did...we hid the pod!) Eventually, you'll be given an "Continue" button that you'll want to use.
 
-Press the "Pair a new pod" button. The instructions start with "fill a new pod with insulin"...BUT DO NOT!  Instead, bring that beeping pod back to the hearing range. Turn that RileyLink back on if you turned it off. Once you get the RileyLink on and the pod back in range, you'll just press the **Pair** button and hopefully you'll find success with the process. 
+<p align="center">
+<img src="../img/deactivate-pod.png" width="600">
+</p>
+
+Press the "Continue" button. The instructions start with "fill a new pod with insulin"...BUT DO NOT!  Instead, bring that beeping pod back to the hearing range. Turn that RileyLink back on if you turned it off. Once you get the RileyLink on and the pod back in range, you'll just press the **Pair** button and hopefully you'll find success with the process. 
+
+<p align="center">
+<img src="../img/deactivate-pod2.png" width="600">
+</p>
 
 ## Step 6: Help improve pod pairing process
 
