@@ -5,7 +5,7 @@
     
 !!!info "Summary"
     * If you use a Dexcom G4 Share, G5, or G6 CGM system...you are good to use Loop.
-    * If you use a Medtronic sensor compatible with a Loop-compatble Medtronic pump...you are good to use Loop.
+    * If you use a Medtronic sensor compatible with a Loop-compatible Medtronic pump...you are good to use Loop.
     * If you have an Eversense...you cannot use Loop with that CGM.
     * If you use Libre...you will need to seek out a modified Loop
 
