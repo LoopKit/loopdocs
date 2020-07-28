@@ -65,7 +65,7 @@ Usually this best frequency is pretty constant for any given pump+RL, but during
 
 RL communicates with your iPhone and Loop app through Bluetooth (BT).  
 
-!!!info Bluetooth Troublehsooting
+!!!info Bluetooth Troubleshooting
 If your iPhone has BT issues, your Loop will have failures.  There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interfering with the Loop.  If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.
 
 Your BT signal strength can be seen in the Loop settings, under the RL menu, on the `Signal Strength` line. As you move closer and further away from your phone, you can watch that number dynamically change. This line is **not** displaying the signal strength of your pump communications discussed above.
