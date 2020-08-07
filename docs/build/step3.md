@@ -161,7 +161,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 ## Extra Details on Omnipods
 
 !!!warning "Reminder and Disclaimer"
-    Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read the documents and familiarize yourself with Loop before using. 
+    Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read these documents and familiarize yourself with Loop before using. 
 
 ### Eros
 

@@ -26,11 +26,15 @@ You will have to rebuild your Loop app at a minimum once every 12 months. The ap
 
 Under ordinary circumstances, you do not *have to* update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability.
 
-## Step 1: Update macOS and Xcode
+Since omnipod-testing branch has been retired and Loop v2.0 has been released, this is a good time to update your Loop app to the master branch. There will be some translations fixes in the near future. If you encounter any strange translations in master branch, please report them in in this [Looped Group thread](https://www.facebook.com/groups/TheLoopedGroup/permalink/2454410898108895/) so that I can get them fixed.  Thank you!
 
-!!!danger "Update Xcode"
-    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS on your phone requires the newest Xcode version to properly build Loop.  Currently the most recent version of Xcode is 11.2.1. **UPDATE YOUR XCODE BEFORE UPDATING YOUR LOOP APP. **Check the App Store on your computer to see if there is an available update for Xcode.</u>  
+## Step 1: Avoid Build Errors in advance
 
+!!!danger "Update to Xcode 11.3"
+    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS on your phone requires the newest Xcode version to properly build Loop.  Currently the most recent version of Xcode is 11.3. **UPDATE TO XCODE 11.3 BEFORE UPDATING YOUR LOOP APP. **</u> 
+
+!!!info "Check your Apple Developer Account"
+    On October 28, 2019, Apple updated its License Agreement for the Developer Program. You need to login to your [developer account](https://developer.apple.com/account/) and accept the new agreement, or you will get a build error.
         
 !!!warning "Restart computer after updating Xcode"
         Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simultors or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough.
@@ -38,7 +42,7 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 
 ## Step 2: Download Updated Loop Code
 
-After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on **ONE** of the links below to download an updated version of the Loop code:
+After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on **ONE** of the links below to download an updated version of the Loop code. Almost every user should be using Master branch of Loop now. On December 31, 2019, Loop v2.0 was released and offers support for Omnipod and Medtronic users, as well as numerous features that have been in development and testing for awhile.
 </br></br>
 <p align="center">
 [Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)
@@ -47,12 +51,6 @@ After you've finished the updates to your devices listed above, you can move ont
 **OR**</br></br>
 [Loop: Dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)
 </p></br>
-
-!!!info "Reminder: DO NOT HAVE A SPACE IN YOUR DOWNLOAD FOLDER NAME"
-    If you already have an existing `Loop-master` folder from a previous download, the name of the next download will be something like `Loop-master (1)`.  The problem with that folder name is that it contains a space...and spaces in the name will cause your Loop build to fail.  So, either delete old copies of Loop before downloading/unzipping or rename the folder(s) to ensure that NO SPACES are in the folder name.
-    <p align="center">
-    <img src="../img/folder-name.png" width="550">
-    </p>
 
 ## Step 3: Build Like Normal
 
