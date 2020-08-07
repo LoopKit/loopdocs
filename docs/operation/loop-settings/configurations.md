@@ -39,13 +39,15 @@ If you run into problems or errors with your Loop, an Issue Report can be used t
 The correction range is your blood glucose range that you would like Loop to correct to. Correction range is not necessarily the same target blood glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction target of 100-110 for Loop to aim to, but use a desired BG target range of 80-180 when discussing things with your endo about "time in range".
 
 <p align="center">
-<img src="../img/premeal_entry.jpg" width="250">
+<img src="../img/CorrectionRange.png" width="250">
 </p>
 </br></br>
 
 Click the + in the upper right corner to add correction BG range(s). You can have multiple ranges based on time of day, but the first setting of the day needs to begin at midnight.
 
 Correction ranges can be a single number, such as 100-100 mg/dL, or a range such as 100-120 mg/dL. Generally speaking, if you choose to use a range, keeping the range between about 10-30 mg/dL between the lowest and highest value is a good starting place.
+
+Loop uses the correction range at the end of its prediction. By default, the prediction curve is 6 hours. Set the correction range you want 6 hours ahead of the desired affect. For example, if you want a correction range of 90-90 from midnight to 8am, you would create a slot from 6 am to 2 pm. See the screenshot above as a reference. 
 
 ### Override Ranges
 Below the Correction Range entry is a section called "Overrides" with a Pre-Meal setting. While active, the pre-meal targets will replace the usual correction range for Loop's temp basal recommendations. If a pre-meal range is not entered in this section, the icon will remain grey and unusable on the main screen's toolbar.
