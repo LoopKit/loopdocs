@@ -201,6 +201,7 @@ This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spre
     * Meal Bolus
     * Warning, Pump Reservoir Low
     * Warning Uploader Battery is Low
+    * Temporary Override
     
     Depending on your alert levels you specified in NS, some of the hours in the titles may vary to match your settings
 

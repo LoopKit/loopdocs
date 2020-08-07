@@ -1,8 +1,8 @@
 # Override Presets
 
-Overrides are a new feature to Loop; currently available on dev branch only. Overrides were developed as a method of more easily letting Loop know that you have a situation which is affecting your overall insulin needs, without needing to manually edit your basal schedule/ISF/carb ratios individually. Examples where this can be helpful include hormone cycles, steroid medications, exercise, and other situations which may temporarily (either shorter or longer term) affect your underlying insulin needs.
+Overrides were developed as a method of letting Loop know that you have a situation affecting your overall insulin needs, without needing to manually edit your basal schedule/ISF/carb ratios individually. Examples where this can be helpful include hormone cycles, steroid medications, exercise, and other situations which may temporarily (either shorter or longer term) affect your underlying insulin needs.
 
-Override presets are (1) optional and (2) can be configured within Loop settings. Override presets take the place of the old Workout override. Once override presets are configured in Loop settings, they can be turned on/off by using the old Workout icon (heart icon in the toolbar) on the home screen of Loop.
+Override presets are (1) optional and (2) can be configured within Loop's workout icon (the little blue heart icon in the Loop toolbar). Once override presets are created, they can be turned on/off by using the workout icon as well.
 
 <p align="center">
 <img src="../img/toolbar.png" width="450">
@@ -18,7 +18,7 @@ Recapping: If you set an overall insulin needs adjustment below 100%, you are te
 
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/operation/loop-settings/img/override-entry.jpeg" width="350">
+<img src="../img/override-entry.jpeg" width="500">
 </p></br>
 
 ## How overrides do NOT work
@@ -47,13 +47,13 @@ When you've made all those adjustments, save the the preset using the "Save" but
 To enact your override preset, you simply tap on the workout icon in the Loop's main screen toolbar and select your override from your list of presets that you programmed in previously in the step above.
 
 <p align="center">
-<img src="../img/override-selection.PNG" width="300">
+<img src="../img/override-selection.PNG" width="450">
 </p> 
 
 The heart will be highlighted in a blue square while active and a banner notification will appear at the top of the Loop's main screen. Additionally, you'll see a darker blue target area indicating the override's target range and duration in your Loop's blood glucose graph.
 
 <p align="center">
-<img src="../img/override-enacted.PNG" width="300">
+<img src="../img/override-enacted.PNG" width="350">
 </p> 
 
 ## Deactivating your override
