@@ -4,6 +4,9 @@ There are two options for setting up Nightscout; one option requires a small fee
 
 ## T1Pal (paid service)
 
+!!! warning "European Nightscout Dexcom Devices"
+    T1Pal does NOT support European Dexcom Devices at this time.
+
 [T1Pal is only dedicated NS hosting](https://t1pal.com/) company.  There is a hosting fee required which is used to help ensure Nightscout runs without limits and receives improvements.  Setup is simple and loop plugins are configured automatically during the setup guide.
 
 * Select [Get Started](https://www.t1pal.com/getting-started/starting/home) to register an account at [T1Pal](https://www.t1pal.com/).  You will need to enter your credit card, which helps ensure Nightscout is running correctly.
