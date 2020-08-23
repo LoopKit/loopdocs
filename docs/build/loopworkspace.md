@@ -88,11 +88,16 @@ When you want to update your Loop app using LoopWorkspace, you'd just do a `git 
 
 And with that ends the super basic "How can I build with a LoopWorkspace?" questions and use for 90% of the users.
 
-## Pushing commits from LoopWorkspace
+## Checking out different branches within the LoopWorkspace
 
-More advanced users...I'm not going to explain this in quite so much detail, but yes, you can push commits from your forked/cloned LoopWorkspace to your various repos in your own GitHub account. 
+More advanced users...I'm not going to explain this in quite so much detail, but yes, you can individually change the branches in the LoopWorkspace. 
 
-In short, if you edit your .gitmodules directory in LoopWorkspace, you can specify other repos to use (and add a line to specify branches, too). This way the cartfiles being mismatched is not a problem while using submodules, for example:
+There are 2 main ways to do this. 
+
+If you're already familiar with Git, the easiest way is to `cd` into the appropriate repository (like `cd rileylink_ios`) and `checkout` the desired branch.
+
+
+If you're not as familiar with Git, if you edit your .gitmodules directory in LoopWorkspace, you can specify other repos to use (and add a line to specify branches, too).
 
 </p>
 <p align="center">
@@ -100,4 +105,16 @@ In short, if you edit your .gitmodules directory in LoopWorkspace, you can speci
 </p>
 
 
-Then if you do a `git submodule sync` the workspace will sync to new submodules. Then `git submodule update --init --recursive --remote` will update all the submodules to the right branches and get HEADs detached correctly, etc. From there you can work as you'd like. When you are ready to commit changes, just cd into the directory you'd like to make the commits/pushes in (aka `cd rileylink_ios`) and you'll be good to go.
+Then if you do a `git submodule sync` the workspace will sync to new submodules. Then `git submodule update --init --recursive --remote` will update all the submodules to the right branches and get HEADs detached correctly, etc. 
+
+## Pushing commits from LoopWorkspace
+
+So you've got a great idea for a new feature, made those changes to your LoopWorkspace and want to get them into Github. Awesome!
+
+To understand how to do this, we'll need to understand a bit more about how Git keeps track of changes. In Git, developers can have different "branches" (see the [branch FAQs page](https://loopkit.github.io/loopdocs/faqs/branch-faqs/) for more details about what a branch is). There are two different types of branches: remote and local. If you were to fork Loop on Github, then the branches that you can see on Github are "remote" branches - they're hosted on the Github server. On the other hand, you can also create "local" branches that are stored directly on your computer by "checking out" the remote branch. You'll need to "commit" your changes to the local branch, then "push" those changes to the remote branch in order to be able to see them in Github. There are specific commands that you can type into the command line to do all of these actions, but I'm not going to go into detail about them because there are different ways (like graphic Git editors) that can an easier way to do them.
+
+It's a little easier to think about this with an analogy. Let's say you're working at a company that's creating a cookbook. There's a centralized, production-ready version of the cookbook on their website that all the employees can view. Think of the website version of this cookbook as being like the remote branch. You're assigned to change the pancake recipe in the cookbook. Since the company doesn't want employees to make changes directly to the version of the cookbook that the customers see, you need to make a copy of it on your computer so you can make your changes to the pancake recipe. When you make the personal copy on your computer, it's like checking out the remote branch. Your copy is like the local branch - you can make whatever changes you want without having to worry about customers accidentally seeing them. When you make an important change to the recipe (like adding a photo or changing the ingredients), you might want to make a note in the edit history so that you can go back to that version of the recipe in case you accidentally make unintended changes - those notes you make would be "commits". Once you're happy with the recipe, you'll put it back into the production version of the cookbook on the website, which is similar to what you're doing when you "push" your changes. 
+
+Where do the submodules fit in? Each submodule is actually a branch, so when you make changes to multiple submodules, you'll need to commit those changes to their respective branches. Let's say you've made changes to Loop and LoopKit. You'll need to go into Loop and commit + push the changes, then go into LoopKit and commit + push the changes. 
+
+There are a few different ways to keep track of all these different branches. Some people like using the command line (which is what you're using when you do commands like `git clone`) because it's very customizable and has the largest variety of commands. Others like to use graphic Git editors, which make it easier to see changes and be able to do a variety of common actions (like cloning, committing, and pushing) with the push of a button. Everyone has their own preferences, but some methods that Loop contributors have used in the past include the command line, (Gitkraken) [https://www.gitkraken.com/], and (SourceTree) [https://www.sourcetreeapp.com/].
