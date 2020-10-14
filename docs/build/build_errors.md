@@ -30,13 +30,12 @@ If you have checked all those steps above and think you have a true build error.
 2. Open the Terminal app on your computer.
 3. Copy and paste this command and press return: `rm -rf ~/Library/Caches/org.carthage.CarthageKit` Note: you won't see any message back if the command runs successfully.
 4. Copy and paste this command and press return: `rm -rf ~/Library/Developer/Xcode/DerivedData` Note: you won't see any message back if the command runs successfully.
-5. Enter the command `cd ~/downloads/loop-master && carthage update`.  **NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY if your folder isn't named loop-master as shown in the command.**  If your loop folder isn't named loop-master and instead is loop-dev or some other folder name...change the command to match your folder's actual name. Replace the "loop-master" with your folder's actual name. Carthage update will take about 15-25 minutes to run successfully.  A successful carthage update will look like the following:
+5. **(As of October 12, 2020...please ignore this step for now.  Don't do it as Amplitude framework will cause this command to fail prematurely right now. When Amplitude is fixed, then I'll delete this note.) **Enter the command `cd ~/downloads/loop-master && carthage update`.  **NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY if your folder isn't named loop-master as shown in the command.**  If your loop folder isn't named loop-master and instead is loop-dev or some other folder name...change the command to match your folder's actual name. Replace the "loop-master" with your folder's actual name. Carthage update will take about 15-25 minutes to run successfully.  A successful carthage update will look like the following:
 
 </p>
 <p align="center">
 <img src="../img/carthage-update-success.png" width="550">
 </p>
-
 6. Return to Xcode and now trying building your app again.
 
 If the build fails again, look through the list below and see if you can match up your error message with one specific error messages listed in the later section of this page. If you really can't find your solution (PLEASE LOOK for it...you need to see the circled bits to know where to look perhaps. There's a section below to help you with finding the error message), then post for help. BUT, use the section below to post. WE CANNOT HELP without that info covered in the section. 

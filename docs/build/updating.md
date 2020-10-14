@@ -61,7 +61,7 @@ After you've finished the updates to your devices listed above, you can move ont
 
 *********************
 
-## Step 4: Delete old provisioning profiles
+## Step 4a: Delete old provisioning profiles
 
 This is a new step in the updating process. Everyone should do this step every time they rebuild or update their Loop apps now. Older versions of Xcode used to automatically create a "provisioning profile" as part of your Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.
 
@@ -73,7 +73,7 @@ You can always check the expiration date at the time of building your loop app b
 
 Here's what started happening about a year ago with Xcode 11...the provisioning profiles weren't updating "created" date with new builds. Instead, Xcode was simply using the old profile's "created" date. This change has resulted in many people's apps expiring (and therefore dying suddenly) despite having updated/rebuilt within less than 12 months ago and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).
 
-To solve this new issue...we have an easy solution. Honest...easy. You can do this. Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward.
+To solve this new issue...we have an easy solution. Honest...easy. You can do this. Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)
 
 !!!warning "How to delete old provisioning profiles"
     * Find your Terminal app (the same one you used to install Homebrew in Step 7 of the build process if you forgot how to find it).</br></br>
@@ -86,6 +86,19 @@ To solve this new issue...we have an easy solution. Honest...easy. You can do th
     <img src="../img/empty-profiles.png" width="650">
     </p>
 
+## Step 4b: Clean cache and dervied data
+
+An ounce of prevention is worth a pound of cure.  Since we already have Terminal app open, let's prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.
+
+!!!danger "Clean cache and derived data"
+    Using Terminal app that should still be open from Step 4a just now, </br></br>
+    1. Copy and paste this command and press return: `rm -rf ~/Library/Caches/org.carthage.CarthageKit` Note: you won't see any message back if the command runs successfully.</br></br>
+    2. Copy and paste this command and press return: `rm -rf ~/Library/Developer/Xcode/DerivedData` Note: you won't see any message back if the command runs successfully.
+    </br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.
+    <p align="center">
+    <img src="../img/cleaned-terminal.png" width="650">
+    </p>
+    
 
 ## Step 5: Build like normal
 From here, go straight to [Step 14 Build Loop app](https://loopkit.github.io/loopdocs/build/step14/) and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
