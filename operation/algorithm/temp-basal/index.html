@@ -244,7 +244,7 @@
                     
                         
 <li >
-    <a href="../../../build/updating/">Ready to Update your Loop?</a>
+    <a href="../../../build/updating/">Updating/Rebuilding your Loop</a>
 </li>
 
                     
@@ -650,7 +650,7 @@
 <p>If the eventual blood glucose is less than the correction range and all of the predicted glucose values are above the suspend threshold, then Loop will issue a temporary basal rate that is lower than the current scheduled basal rate to bring the eventual blood glucose up to the correction target.</p>
 <p><img alt="decrease basal rate example" src="../img/decrease.png" /></p>
 <h3 id="increase-basal-rate">Increase Basal Rate<a class="headerlink" href="#increase-basal-rate" title="Permanent link">⌁</a></h3>
-<p>If the eventual blood glucose is greater than the correction range and all of the predicted glucose values are above the suspend threshold, then Loop will issue a temporary basal rate that is higher than the current basal rate to bring the eventual blood glucose down to the correction target.</p>
+<p>If the eventual blood glucose is greater than the correction range and all of the predicted glucose values are both above the suspend threshold and equal to or above the correction range, then Loop will issue a temporary basal rate that is higher than the current basal rate to bring the eventual blood glucose down to the correction target.</p>
 <p><img alt="increase basal rate example" src="../img/increase.png" /></p>
 <h3 id="suspend-basal-rate">Suspend Basal Rate<a class="headerlink" href="#suspend-basal-rate" title="Permanent link">⌁</a></h3>
 <p>If the minimum predicted blood glucose goes below the suspend threshold, then Loop will issue a temporary basal rate of zero units per hour, regardless of the eventual blood glucose.</p>

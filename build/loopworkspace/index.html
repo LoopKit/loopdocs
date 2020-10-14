@@ -244,7 +244,7 @@
                     
                         
 <li >
-    <a href="../updating/">Ready to Update your Loop?</a>
+    <a href="../updating/">Updating/Rebuilding your Loop</a>
 </li>
 
                     
@@ -643,6 +643,8 @@
         
             <li><a href="#updating-loop-using-loopworkspace">Updating Loop using LoopWorkspace</a></li>
         
+            <li><a href="#checking-out-different-branches-within-a-loopworkspace">Checking out different branches within a LoopWorkspace</a></li>
+        
             <li><a href="#pushing-commits-from-loopworkspace">Pushing commits from LoopWorkspace</a></li>
         
     
@@ -706,14 +708,27 @@
 <h2 id="updating-loop-using-loopworkspace">Updating Loop using LoopWorkspace<a class="headerlink" href="#updating-loop-using-loopworkspace" title="Permanent link">⌁</a></h2>
 <p>When you want to update your Loop app using LoopWorkspace, you'd just do a <code>git pull --recurse</code> while in the LoopWorkspace directory in Terminal. That will grab the lastest updates and then you can build. If you still have signing team filled in, you may get a conflict on the command...so either unsign before the git pull or do a <code>git stash</code> and then pull.</p>
 <p>And with that ends the super basic "How can I build with a LoopWorkspace?" questions and use for 90% of the users.</p>
-<h2 id="pushing-commits-from-loopworkspace">Pushing commits from LoopWorkspace<a class="headerlink" href="#pushing-commits-from-loopworkspace" title="Permanent link">⌁</a></h2>
-<p>More advanced users...I'm not going to explain this in quite so much detail, but yes, you can push commits from your forked/cloned LoopWorkspace to your various repos in your own GitHub account. </p>
-<p>In short, if you edit your .gitmodules directory in LoopWorkspace, you can specify other repos to use (and add a line to specify branches, too). This way the cartfiles being mismatched is not a problem while using submodules, for example:</p>
+<h2 id="checking-out-different-branches-within-a-loopworkspace">Checking out different branches within a LoopWorkspace<a class="headerlink" href="#checking-out-different-branches-within-a-loopworkspace" title="Permanent link">⌁</a></h2>
+<p>More advanced users...I'm not going to explain this in quite so much detail, but yes, you can individually change the branches in a LoopWorkspace. </p>
+<p>There are 2 main ways to do this. </p>
+<ol>
+<li>
+<p>If you're already familiar with Git, the easiest way is to <code>cd</code> into the appropriate repository (like <code>cd rileylink_ios</code>) and <code>checkout</code> the desired branch.</p>
+</li>
+<li>
+<p>If you're not as familiar with Git, if you edit your .gitmodules directory in LoopWorkspace, you can specify other repos to use (and add a line to specify branches, too). Then if you do a <code>git submodule sync</code> the workspace will sync to new submodules. Then <code>git submodule update --init --recursive --remote</code> will update all the submodules to the right branches and get HEADs detached correctly, etc. </p>
+</li>
+</ol>
 <p></p>
 <p align="center">
 <img src="../img/gitmodules.png" width="750">
 </p></p>
-<p>Then if you do a <code>git submodule sync</code> the workspace will sync to new submodules. Then <code>git submodule update --init --recursive --remote</code> will update all the submodules to the right branches and get HEADs detached correctly, etc. From there you can work as you'd like. When you are ready to commit changes, just cd into the directory you'd like to make the commits/pushes in (aka <code>cd rileylink_ios</code>) and you'll be good to go.</p></div>
+<h2 id="pushing-commits-from-loopworkspace">Pushing commits from LoopWorkspace<a class="headerlink" href="#pushing-commits-from-loopworkspace" title="Permanent link">⌁</a></h2>
+<p>So you've got a great idea for a new feature, made those changes to your LoopWorkspace and want to get them into Github. Awesome!</p>
+<p>To understand how to do this, we'll need to understand a bit more about how Git keeps track of changes. In Git, developers can have different "branches" (see the <a href="https://loopkit.github.io/loopdocs/faqs/branch-faqs/">branch FAQs page</a> for more details about what a branch is). There are two different types of branches: remote and local. If you were to fork Loop on Github, then the branches that you can see on Github are "remote" branches - they're hosted on the Github server. On the other hand, you can also create "local" branches that are stored directly on your computer by "checking out" the remote branch. You'll need to "commit" your changes to the local branch, then "push" those changes to the remote branch in order to be able to see them in Github. There are specific commands that you can type into the command line to do all of these actions, but I'm not going to go into detail because there are different ways (like graphic Git editors) that can an easier way to do them.</p>
+<p>It's a little easier to think about this with an analogy. Let's say you're working at a company that's creating a cookbook. There's a centralized, production-ready version of the cookbook on their website that all the employees can view. Think of the website version of this cookbook as being like the remote branch. You're assigned to change the pancake recipe in the cookbook. Since the company doesn't want employees to make changes directly to the version of the cookbook that the customers see, you need to make a copy of it on your computer so you can make your changes to the pancake recipe. When you make the personal copy on your computer, it's like "checking out" the remote branch. Your copy is like the local branch - you can make whatever changes you want without having to worry about customers accidentally seeing them. When you make an important change to the recipe (like adding a photo or changing the ingredients), you might want to make a note in the edit history so that you can go back to that version of the recipe in case you accidentally make unintended changes - those notes you make would be "commits". Once you're happy with the recipe, you'll add it back into the production version of the cookbook on the website, which is similar to what you're doing when you "push" your changes. </p>
+<p>Where do the submodules fit in? Each submodule is actually a branch, so when you make changes to multiple submodules, you'll need to commit those changes to their respective branches. Let's say you've made changes to Loop and LoopKit. You'll need to go into Loop and commit + push the changes, then go into LoopKit and commit + push the changes. </p>
+<p>There are a few different ways to keep track of all these different branches. Some people like using the command line (which is what you're using when you do commands like <code>git clone</code>) because it's very customizable and has the largest variety of commands. Others like to use graphic Git editors, which make it easier to see changes and be able to do a variety of common actions (like cloning, committing, and pushing) with the push of a button. Everyone has their own preferences, but some methods that Loop contributors have used in the past include the command line, <a href="https://www.gitkraken.com/">Gitkraken</a>, and <a href="https://www.sourcetreeapp.com/">SourceTree</a>.</p></div>
         </div>
 
         <footer class="col-md-12">
