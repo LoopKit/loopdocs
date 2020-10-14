@@ -73,7 +73,7 @@ You can always check the expiration date at the time of building your loop app b
 
 Here's what started happening about a year ago with Xcode 11...the provisioning profiles weren't updating "created" date with new builds. Instead, Xcode was simply using the old profile's "created" date. This change has resulted in many people's apps expiring (and therefore dying suddenly) despite having updated/rebuilt within less than 12 months ago and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).
 
-To solve this new issue...we have an easy solution. Honest...easy. You can do this.
+To solve this new issue...we have an easy solution. Honest...easy. You can do this. Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward.
 
 !!!warning "How to delete old provisioning profiles"
     * Find your Terminal app (the same one you used to install Homebrew in Step 7 of the build process if you forgot how to find it).</br></br>
