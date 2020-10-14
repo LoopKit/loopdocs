@@ -30,8 +30,8 @@ Since omnipod-testing branch has been retired and Loop v2.0 has been released, t
 
 ## Step 1: Avoid Build Errors in advance
 
-!!!danger "Update to Xcode 11.3"
-    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS on your phone requires the newest Xcode version to properly build Loop.  Currently the most recent version of Xcode is 11.3. **UPDATE TO XCODE 11.3 BEFORE UPDATING YOUR LOOP APP. **</u> 
+!!!danger "Update to Xcode 11.6"
+    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS on your phone requires the newest Xcode version to properly build Loop.  Currently the most recent version of Xcode is 11.6. **UPDATE TO XCODE 11.6 BEFORE UPDATING YOUR LOOP APP. **</u> 
 
 !!!info "Check your Apple Developer Account"
     On October 28, 2019, Apple updated its License Agreement for the Developer Program. You need to login to your [developer account](https://developer.apple.com/account/) and accept the new agreement, or you will get a build error.
