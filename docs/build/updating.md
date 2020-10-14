@@ -88,7 +88,7 @@ To solve this new issue...we have an easy solution. Honest...easy. You can do th
 
 
 ## Step 5: Build like normal
-From here, go straight to [Step 14 Build Loop app](https://loopkit.github.io/loopdocs/build/step14/) and do just like you did the first time. Open the project, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
+From here, go straight to [Step 14 Build Loop app](https://loopkit.github.io/loopdocs/build/step14/) and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
 
 !!!info "Double check expiration date"
     If you want to make sure that step 4 above (deleting the provisioning profiles) went well...go ahead and check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app will safely function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.
