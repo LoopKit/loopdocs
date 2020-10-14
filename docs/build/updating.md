@@ -37,7 +37,7 @@ Since omnipod-testing branch has been retired and Loop v2.0 has been released, t
     On October 28, 2019, Apple updated its License Agreement for the Developer Program. You need to login to your [developer account](https://developer.apple.com/account/) and accept the new agreement, or you will get a build error.
         
 !!!warning "Restart computer after updating Xcode"
-        Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simultors or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough.
+        Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simulators or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough.
 
 
 ## Step 2: Download Updated Loop Code
