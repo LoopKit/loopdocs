@@ -669,7 +669,7 @@
 <p><strong>Did you get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago?</strong> That old version may not be compatible with new iOS and new Xcode versions.</p>
 </li>
 <li>
-<p><strong>Are you are using a free developer account?</strong> Make sure you finished the <a href="https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets">removal of Siri and Push Notification capabilities</a>. And if you are using iOS 13.3.1 on your iphone, there's a known bug in Apple's programs right now that will not let you build Loop with a free developer account onto phones using 13.3.1...so until that gets resolved by Apple...sorry. Out of luck.</p>
+<p><strong>Are you are using a free developer account?</strong> Make sure you finished the <a href="https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets">removal of Siri and Push Notification capabilities</a>. </p>
 </li>
 </ol>
 <h2 id="first-good-step-to-95-of-all-errors">First good step to 95% of all errors<a class="headerlink" href="#first-good-step-to-95-of-all-errors" title="Permanent link">⌁</a></h2>
@@ -679,15 +679,13 @@
 <li>Open the Terminal app on your computer.</li>
 <li>Copy and paste this command and press return: <code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> Note: you won't see any message back if the command runs successfully.</li>
 <li>Copy and paste this command and press return: <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code> Note: you won't see any message back if the command runs successfully.</li>
-<li>Enter the command <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code>.  <strong>NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY if your folder isn't named loop-master as shown in the command.</strong>  If your loop folder isn't named loop-master and instead is loop-dev or some other folder name...change the command to match your folder's actual name. Replace the "loop-master" with your folder's actual name. Carthage update will take about 15-25 minutes to run successfully.  A successful carthage update will look like the following:</li>
+<li><strong>(As of October 12, 2020...please ignore this step for now.  Don't do it as Amplitude framework will cause this command to fail prematurely right now. When Amplitude is fixed, then I'll delete this note.) </strong>Enter the command <code>cd ~/downloads/loop-master &amp;&amp; carthage update</code>.  <strong>NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY if your folder isn't named loop-master as shown in the command.</strong>  If your loop folder isn't named loop-master and instead is loop-dev or some other folder name...change the command to match your folder's actual name. Replace the "loop-master" with your folder's actual name. Carthage update will take about 15-25 minutes to run successfully.  A successful carthage update will look like the following:</li>
 </ol>
 <p></p>
 <p align="center">
 <img src="../img/carthage-update-success.png" width="550">
-</p></p>
-<ol>
-<li>Return to Xcode and now trying building your app again.</li>
-</ol>
+</p>
+6. Return to Xcode and now trying building your app again.</p>
 <p>If the build fails again, look through the list below and see if you can match up your error message with one specific error messages listed in the later section of this page. If you really can't find your solution (PLEASE LOOK for it...you need to see the circled bits to know where to look perhaps. There's a section below to help you with finding the error message), then post for help. BUT, use the section below to post. WE CANNOT HELP without that info covered in the section. </p>
 <h2 id="posting-for-help">Posting for help<a class="headerlink" href="#posting-for-help" title="Permanent link">⌁</a></h2>
 <p>STOP!!  Read this section! Important!</p>
