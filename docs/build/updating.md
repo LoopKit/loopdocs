@@ -35,8 +35,14 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 !!!danger "Update to Xcode (12.0.1 minimum currently for iOS 14)"
     Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode (12.0.1 or newer) in the App Store on your computer. **UPDATE TO XCODE 12.0.1 BEFORE UPDATING YOUR LOOP APP. **</u> Phones running iOS 14 will not be able to have Loop installed using older Xcode versions.
         
-!!!warning "Restart computer after updating Xcode"
+!!!info "Restart computer after updating Xcode"
         Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simulators or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough. It's not always required...but this is a good easy ounce of problem prevention.
+
+If you think you are immune from needing to update and want to skip this Step 1...I HIGHLY recommend actually checking this chart to make sure your macOS and Xcode meet their minimums based on your device's iOS before proceeding.  I cannot emphasize how many people try to build without meeting the minimum versions because they ASSUME they are ok.
+
+<p align="center">
+<img src="../img/minimum-related.png" width="750">
+</p></br>
 
 ## Step 2: Check your Developer Account
 

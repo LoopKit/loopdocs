@@ -20,7 +20,7 @@ Before you start trying to resolve your red errors...start with the most obvious
 
 5. **Did you get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago?** That old version may not be compatible with new iOS and new Xcode versions.
 
-6. **Are you are using a free developer account?** Make sure you finished the [removal of Siri and Push Notification capabilities](https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets). And if you are using iOS 13.3.1 on your iphone, there's a known bug in Apple's programs right now that will not let you build Loop with a free developer account onto phones using 13.3.1...so until that gets resolved by Apple...sorry. Out of luck.
+6. **Are you are using a free developer account?** Make sure you finished the [removal of Siri and Push Notification capabilities](https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets). 
 
 ## First good step to 95% of all errors
 
