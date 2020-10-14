@@ -23,7 +23,7 @@ The minimum macOS version you'll need is dictated by the iOS version that is ins
 
 **If you have iOS 12.4 to 13.2**, you can use macOS 10.14.4 (Mojave) or 10.15.2 or newer (Catalina). But, be forewarned...soon you will need access to a Catalina computer because you'll likely update your iOS soon..and once you do that, you'll need Catalina to do your next Loop update/rebuild.
 
-**If you have iOS 13.4 or newer**, you will need not be able to use Mojave and will need Catalina at a minimum. In other words, you'll need macOS 10.15.2 at a minimum to build Loop onto an iPhone running iOS 13.4 or newer.
+**If you have iOS 13.4 or newer**, you will not be able to use Mojave and will need Catalina at a minimum. In other words, you'll need macOS 10.15.2 at a minimum to build Loop onto an iPhone running iOS 13.4 or newer.
 
 ## Check your macOS
 You need an Apple computer that has at least the minimum macOS version as described above; Mojave macOS 10.14.4 (or newer) or Catalina macOS 10.15 (or newer). To find out which version you have installed, click on the little Apple icon in your computer's upper left corner and select the `About this Mac`. It doesn't matter if the computer is a MacBook, iMac, macMini, etc...just so long as it has the minimum you'll need. If your computer does not have the required minimum version, you'll need to check the `Software Update` button on that screen to see if you can update.
