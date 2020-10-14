@@ -39,7 +39,7 @@ pages:
     - 'Step 14 Build Loop app': 'build/step14.md'
     - 'Oh dear! Build errors?': 'build/build_errors.md'
     - 'Customize your Loop': 'build/code_customization.md'
-    - 'Ready to Update your Loop?': 'build/updating.md'
+    - 'Updating/Rebuilding your Loop': 'build/updating.md'
     - 'LoopWorkspace': 'build/loopworkspace.md'
 - Set up App:
     - 'Overview': 'operation/overview.md'
@@ -64,7 +64,7 @@ pages:
         - 'iPhone widget': 'operation/features/widget.md'
         - 'Loop Notifications': 'operation/features/notifications.md'
         - 'Pump Battery': 'operation/features/battery.md'
-    - 'Looping Tips':
+    - Looping Tips:
         - 'Open Loop': 'operation/loop/open-loop.md'
         - 'Closed Loop': 'operation/loop/close-loop.md'
         - 'Loop Tips': 'operation/loop/looptips.md'
