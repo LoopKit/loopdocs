@@ -30,23 +30,26 @@ Many of the frameworks also have their own cartfiles embedded in them. So, when 
 
 And this is where LoopWorkspace comes in. LoopWorkspace uses submodules instead of cartfiles to define how the frameworks are coordinated for building. The workspace puts all the frameworks closer together and this makes the development process a LOT easier than managing cartfiles. A LOT EASIER. So, as new features might come out for testing, you may see LoopWorkspaces offered for that testing option instead of simply a downloaded zip. The ease of using workspace for developers is the reason why.
 
-## How do you "get" LoopWorkspace(s)?
+## How do you "get" LoopWorkspace?
 
-In order to use a LoopWorkspace, you need to start using git commands in the Terminal app. The main LoopWorkspace is [here in the LoopKit account](https://github.com/LoopKit/LoopWorkspace).  To get that to your computer, you'll need to "clone" it with this command:
+In order to use a LoopWorkspace, you need to get a copy of the code (it's different set of code compared to the usual Loop downloads). BUT...don't go to github and simply "download" the code like perhaps you are used to. Instead, we need to open Terminal app and do a set of commands to do a special sort of download called "git clone".
 
-`git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace`
+To get that LoopWorkspace code to your computer, you'll need to use a "git clone" command LIKE THIS (but not exactly the same...you're going to edit the "branch-name" part in there):
 
-Now...look carefully...that is getting LoopKit's version of LoopWorkspace and grabbing the dev branch as the one you want to start working with.
+`git clone --branch=branch-name --recurse-submodules https://github.com/LoopKit/LoopWorkspace`
 
-If DeveloperBob had forked a copy of LoopKit's LoopWorkspace and made some changes he wanted to test, and then you wanted to grab them...you'd need to change the command to get DeveloperBob's version. And, you'd want to make sure you specify the branch that the new feature is on, too. DeveloperBob should usually include the branch name when he posts/shares. So, it might be something like:
+Now...look carefully and notice two things...that command is getting (1) LoopKit's version of LoopWorkspace and (2) also specifying the branch you want to start working with when the clone is done.
 
-`git clone --branch=bitching-new-feature --recurse-submodules https://github.com/DeveloperBob/LoopWorkspace`
+So, you will need to edit that "branch-name" before using the command so that you are getting started with the branch you want. For example:
 
-So...if you are trying to grab someone's LoopWorkspace to use it, you'll need to make sure you get the command correct if they don't specify it for you.
+Automatic-bolus branch command would be: `git clone --branch=automatic-bolus --recurse-submodules https://github.com/LoopKit/LoopWorkspace`
+
+Dev branch command would be: `git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace`
+
 
 ## Where does the clone go?
 
-The cloned version of the LoopWorkspace will go into whatever directory you were sitting in in Terminal app when you did the command. Terminal app by default drops you into your User account's home directory when you first open it, so that's a good assumption on where your cloned LoopWorkspace will go.
+A cloned version of Loop doesn't go to your "Downloads" folder like you are used to with the usual version of building Loop app.  Instead, the cloned version of the LoopWorkspace will go into whatever directory you were sitting in in Terminal app when you did the command. Terminal app by default drops you into your User account's home directory when you first open it, so that's a good assumption on where your cloned LoopWorkspace will go.
 
 How can you find your home directory?
 
@@ -58,35 +61,66 @@ How can you find your home directory?
 <img src="../img/root-finder.png" width="750">
 </p>
 
-As you can see, I have a lot of cloned things in my home directory from GitHub that involve Loop. You may have fewer...but be aware, you can always delete and reclone if you are in doubt or confused. You can't clone mutliple "LoopWorkspaces" into the exact same home directory (because they will have the same name), so you may want to create a subdirectory to put them in. Like you could make a folder called "DeveloperJane" and then move into that directory in Terminal before you clone DeveloperJane's LoopWorkspace. 
+As you can see, I have a lot of cloned things in my home directory from GitHub that involve Loop. You may have fewer...but be aware, you can always delete and reclone if you are in doubt or confused. 
 
-How would you do that? Simple `cd && mkdir DeveloperJane` would make the new folder in your home directory. And then `cd DeveloperJane` would move your Terminal app to be working inside the new DeveloperJane folder. So if you wanted to clone DeveloperJane's LoopWorkspace, that would be a good way to keep track of where the code came from.
+## Non-LoopKit clones
 
-If you ever get in doubt and can't remember where your code was cloned from, you can `cd LoopWorkspace` to get into your cloned directory and then use `git remote -v` to tell you where it came from.
+!!!info "Average Loopers can skip this whole section...it's for Developers mostly"
+    This whole section about non-LoopKit workspace clones is something almost every Looper can totally skip over. I'm only writing up this section for people who are interested in dabbling in code collaborations/customizations that they would want to maintain separate from LoopKit proper. 
+
+Scenario: You have a friend named DeveloperBob who has his own version of LoopWorkspace that he's customized. DeveloperBob wants you to look at his code customizations and collaborate with him. You need to change the "git clone" command to get DeveloperBob's version, not LoopKit's version. And, you'd want to make sure you specify the branch that the new feature is on, too. DeveloperBob should usually include the branch name when he posts/shares. So, the command line might be edited to something like:
+
+`git clone --branch=new-features --recurse-submodules https://github.com/DeveloperBob/LoopWorkspace`
+
+So...if you are trying to grab someone's LoopWorkspace to use it, you'll need to make sure you get the command correct if they don't specify it for you.
+You can't clone mutliple "LoopWorkspaces" into the exact same home directory (because they will have the same name), so you may want to create a subdirectory to put them in. Like you could make a folder called "DeveloperBob" and then move into that directory in Terminal before you clone DeveloperBob's LoopWorkspace. 
+
+How would you do that? Simple `cd && mkdir DeveloperBob` would make the new folder in your home directory. And then `cd DeveloperBob` would move your Terminal app to be working inside the new DeveloperBob folder. So if you wanted to clone DeveloperBob's LoopWorkspace, that would be a good way to keep track of where the code came from.
+
+If you ever get in doubt and can't remember where your code was cloned from, you can `cd LoopWorkspace` to get into the directory and then use `git remote -v` to tell you where it came from.
 
 ## Using LoopWorkspace
 
-Once you get your workspace cloned, you simply find that cloned folder (wherever you cloned it to...use Finder to find it) and double-click on the Loop.xcworkspace file to open the project in Xcode.
+So to summarize, you need to clone LoopWorkspace by:
+
+1. Open Terminal app and enter the command  `cd` to make sure you are at the root directory.
+2. Copy and paste the "git command" of your choosing (making sure to edit the command properly for the branch you want to use) into Terminal app. Press return.
+3. Wait a couple minutes as the clone finishes. You'll be back at a plain Terminal prompt when it's done.
+4. Close Terminal app.
+5. Find that cloned folder, by opening the Finder app. Click `shift-command-H` and Finder will open your "home" or root folder. Scroll down and you'll see a folder called `LoopWorkspace`.
+6. From withing the LoopWorkspace folder, double-click on the `Loop.xcworkspace` file to open the project in Xcode.
 
 </p>
 <p align="center">
 <img src="../img/workspace-file.png" width="550">
 </p>
 
-Once you are in LoopWorkspace, everything is pretty similar for building with only two notable exceptions. You need to click on that blue Loop folder to see the signing targets, and you need to change the build scheme to the left of your phone to "Loop (Workspace)" in order to build properly.
+!!!warning "Two things to notice"
+    Once you are in LoopWorkspace opened in Xcode, everything is pretty similar for building with only two notable exceptions. You need to click on that blue Loop folder to see the signing targets, and you need to change the build scheme to the left of your phone to "Loop (Workspace)" in order to build properly.
 
-</p>
-<p align="center">
-<img src="../img/workspace-use.png" width="750">
-</p>
+    </p>
+    <p align="center">
+    <img src="../img/workspace-use.png" width="750">
+    </p>
 
-Oh wait...there is a noticable difference...the speed! LoopWorkspace will build Loop much faster than Loop because of the way it uses submodules. I do rather like that benefit to using LoopWorkspaces too.
+    Oh wait...there is a noticable difference...the speed! LoopWorkspace will build Loop much faster than Loop because of the way it uses submodules. I do rather like that benefit to using LoopWorkspaces too.
 
 ## Updating Loop using LoopWorkspace
 
-When you want to update your Loop app using LoopWorkspace, you'd just do a `git pull --recurse` while in the LoopWorkspace directory in Terminal. That will grab the lastest updates and then you can build. If you still have signing team filled in, you may get a conflict on the command...so either unsign before the git pull or do a `git stash` and then pull.
+When you want to update your Loop app using LoopWorkspace, you'll need to use  `git pull --recurse` command while in the LoopWorkspace directory in Terminal. That will grab the lastest updates and then you can build. If you still have signing team filled in, you may get a conflict on the command...so either unsign before the git pull or do a `git stash` and then pull.
 
 And with that ends the super basic "How can I build with a LoopWorkspace?" questions and use for 90% of the users.
+
+So to recap the update process:
+
+1. Open Terminal app
+2. Enter `cd && cd LoopWorkspace`
+3. Enter `git stash`
+4. Enter `git pull --recurse`
+5. Open the project in Xcode by double clicking on the `Loop.xcworkspace` file
+6. Click on the blue Loop folder and sign four targets
+7. Select **Loop (Workspace)** as the build scheme (left of the phone selection) and your phone 
+8. Press build button
 
 ## Checking out different branches within a LoopWorkspace
 

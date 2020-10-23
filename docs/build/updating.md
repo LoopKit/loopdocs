@@ -30,10 +30,10 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 ## Step 1: Install macOS and Xcode updates
 
 !!!warning "Update to macOS (10.15.4 minimum currently for iOS 14)"
-    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS 14 on your phone requires the newest Xcode version to properly build Loop.  In order to get that update, you need to be running macOS 10.15.4 at a minimum. Check for macOS updates and install as needed. 
+    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS 14.1 on your phone requires the newest Xcode version to properly build Loop.  In order to get that update, you need to be running macOS 10.15.4 at a minimum. Check for macOS updates and install as needed. 
 
-!!!danger "Update to Xcode (12.0.1 minimum currently for iOS 14)"
-    Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode (12.0.1 or newer) in the App Store on your computer. **UPDATE TO XCODE 12.0.1 BEFORE UPDATING YOUR LOOP APP. **</u> Phones running iOS 14 will not be able to have Loop installed using older Xcode versions.
+!!!danger "Update to Xcode (12.1 minimum currently for iOS 14.1)"
+    Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode (12.1 is the latest release) in the App Store on your computer. **UPDATE TO XCODE 12.1 BEFORE UPDATING YOUR LOOP APP. **</u> Phones running iOS 14.1 will not be able to have Loop installed using older Xcode versions.
         
 !!!info "Restart computer after updating Xcode"
         Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simulators or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough. It's not always required...but this is a good easy ounce of problem prevention.
