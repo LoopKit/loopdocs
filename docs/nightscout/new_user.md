@@ -116,7 +116,7 @@ Now scroll down a bit and we are going to fill out the information lines in the 
 </tr>
 <tr>
 <th>ENABLE</th>
-<td>bridge loop pump iob cob basal careportal sage cage bage openaps override</br></br>(Enter all of the words above without commas.  Just add a single space between each word. Make sure autocorrect does not add space between careportal. Typically, the words basal and careportal will already be there waiting for you.)</td>
+<td>bridge loop pump iob cob basal careportal sage cage bage override dbsize</br></br>(Enter all of the words above without commas.  Just add a single space between each word. Make sure autocorrect does not add space between careportal. Typically, the words basal and careportal will already be there waiting for you.)</td>
 </tr>
 <tr>
 <th>BRIDGE_USER_NAME</th>
@@ -213,7 +213,7 @@ You are going to add several additional lines of variables specifically for Loop
 </tr>
 <tr>
 <th>SHOW_PLUGINS</th>
-<td>loop pump cob iob sage cage careportal basal</td>
+<td>loop pump cob iob sage cage careportal basal override dbsize</td>
 </tr>
 <tr>
 <th>LOOP_ENABLE_ALERTS</th>
