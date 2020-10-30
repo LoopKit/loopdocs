@@ -30,7 +30,7 @@ To begin a new meal entry, simply enter the number of carbs to be eaten in the `
 
 To select your carb entry's absorption time, you can either click on the default food emojis or manually enter carb absorption time by selecting the `absorption time` line in the carb entry tool.
 
-The plate emoji, found to the right of the pizza emoji, can also be used if you are unsure of a new food.  There are other food emojis grouped into fast, medium, and slow absorbing foods.  This may be particularly useful for teens that are trying to learn new foods/meals.  Additionally, if you select the plate icon, you can add text to your `food type` by selecting the `abc` button in the bottom left corner of the screen.
+Tapping the `Food Type` row can also be used if you are unsure of a new food.  There are other food emojis grouped into fast, medium, and slow absorbing foods.  This may be particularly useful for teens that are trying to learn new foods/meals.  Additionally, you can add text to your `food type` by selecting the `abc` button in the bottom left corner of the screen.
 
 <p align="center">
 <img src="../img/plate.png" width="300">
