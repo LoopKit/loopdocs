@@ -17,6 +17,16 @@
     * **"Can I borrow someone else's Apple computer?"** Yes, please see [this FAQ about borrowing a computer](https://loopkit.github.io/loopdocs/faqs/FAQs/#do-i-need-to-own-my-own-apple-computer) to learn more.
     * **"How often do I need to use the computer?"** Computer access is only required when you are initially installing the Loop app or updating to a newer Loop release. You do NOT need access to an Apple computer in order to troubleshoot or change Loop settings, such as basal profiles or carb ratios.
 
+## New M1 chip Apple Computers
+
+Yes, the newest Apple computers just released in November 2020 are compatible with Loop building. There is ONE little step to be aware of with the new computers, and that is on the Step 7 Install Homebrew page. I've highlighted in a colored boxes on that page the parts that M1 users will need to do. I promise, it's quick and painless.
+
+And...with that...I'm extremely jealous that you have the new computer. They will make Loop building extremely fast and the time estimates on these docs will be ridiculously slower than you will be experiencing. Lucky duck, I have FOMO.
+
+## Big Sur MacOS
+
+Yes, Big Sur is compatible with Loop building...I'm working on updating this page for that soon. Hang tight.
+
 ## Catalina vs Mojave, which do you need?
 
 Do you need Catalina or Mojave? The answer will depend on the iOS of your iPhone you'll install Loop onto.
