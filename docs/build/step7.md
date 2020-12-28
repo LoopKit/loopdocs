@@ -3,7 +3,7 @@
 !!!danger "Time Estimate"
     * 10-15 minutes assuming you know your computer's password
     * 35 minutes if you can't remember your password and have to guess
-    
+
 !!!info "Summary"
     * Install Homebrew by simply copying and pasting a long line of gibberish into the ugly Terminal application.
 
@@ -31,22 +31,22 @@ Ok, now that we have the user account confirmed, let's open the Terminal applica
 
 !!!info "New Apple M1 chip users: IMPORTANT STEP"
     If you purchased one of the new Apple computers that have the brand new Apple M1 chip, you will need to do a little step to start with. Homebrew doesn't run natively on the new M1 chips...so we have to open Terminal app using a little "converter" app, in these situations, called Rosetta. It's no big deal...simply find the Terminal app like was described above and instead of opening it by double clicking...I want you to click on the Terminal app's name just once so it is highlighted. Then right-click on the Terminal app's name to bring up some additional choices. You will want to select the "Get Info" option.</br></br>
-    
+
     <p align="center">
     <img src="../img/get-info.png" width="550">
     </p>
-    
+
     Now in the informational window that appears...you'll see a checkbox that says "Open using Rosetta". Check that box...that will allow Terminal app to open in such a way that we can install Homebrew in the next steps.  You can close that informational window, after you check the box for "Open using Rosetta", and proceed with the rest of the directions just like normal. Thanks!
     <p align="center">
     <img src="../img/rosetta.png" width="350">
     </p>
-    
 
-Now that you've located where the Terminal app is located in the Utilities folder (and already turned on Rosetta check box, if you are an M1 user)...double-click the Terminal app's name so that the app opens. The Terminal app is very plain looking when you open it. That is normal. Copy and paste the line in the little grey box below into Terminal prompt. 
 
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+Now that you've located where the Terminal app is located in the Utilities folder (and already turned on Rosetta check box, if you are an M1 user)...double-click the Terminal app's name so that the app opens. The Terminal app is very plain looking when you open it. That is normal. Copy and paste the line in the little grey box below into Terminal prompt.
 
-Your screen should look like something like this after you copy it in...if it does, then go ahead and press return to continue on with the installation command. 
+ `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+Your screen should look like something like this after you copy it in...if it does, then go ahead and press return to continue on with the installation command.
 
 <p align="center">
 <img src="https://loopkit.github.io/loopdocs/build/img/homebrew-copy-line.png" width="450">
@@ -67,13 +67,6 @@ Wait while the script does its thing...you’ll see info scroll by and then it w
 ## Install Carthage
 
 We are going to finish with one little last installation of something called Carthage. It's a helper that does some of the work during Loop building. Technically, Loop has an automated script that will use Homebrew to install Carthage when you first build Loop.
-
-!!!warning "new M1 chip computer users (aka the new Apples just released in November 2020)"
-    For M1 users, the automatic installation won't work currently (because Homebrew isn't quite updated for the M1 chips). So, we are going to do it manually. You cannot skip this step. You must perform this installation as described below.
-
-
-!!!danger "non-M1 chip computer users (older apple computers)"
-    TECHNICALLY, non-M1 computer users can skip this carthage installation step.  BUT, this step also won't do any harm to do now...so if you want to install carthage, it just saves the automated step later. Totally up to you. 
 
 Now that Homebrew has successfully installed, copy and paste the line in the little grey box below into Terminal prompt (similar to how you did for Homebrew installation line above).
 
