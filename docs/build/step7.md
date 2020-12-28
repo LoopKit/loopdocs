@@ -64,6 +64,7 @@ Wait while the script does its thing...you’ll see info scroll by and then it w
 </p>
 </br>
 
+
 ## Install Carthage
 
 We are going to finish with one little last installation of something called Carthage. It's a helper that does some of the work during Loop building. Technically, Loop has an automated script that will use Homebrew to install Carthage when you first build Loop.
@@ -81,11 +82,21 @@ You should see something like below when the command has finished running succes
 
 You can close the Terminal application now. You’re done with it. You do not need to do these steps again for any subsequent Loop builds. This is one of those "just do it once" on new computer installations. If you get a new computer though, you will have to repeat this step for the new computer.
 
+!!!info "If you get an error about homebrew-core being a "shallow clone""
+    You will need to follow the instructions given in the error, and update your homebrew installation with the following command:
+
+    `git -C "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core" fetch --unshallow`
+
+    This command can take a long time to run. After it finishes, re-attempt the carthage installation with:
+
+    `brew install carthage`
+
+
 ## Uninstall Homebrew
 
 If you have something go wrong in Homebrew installation, want to delete it and start fresh, the uninstall command is:
 
-`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"`
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"`
 
 Copy and paste that entire line into Terminal application. Then you can retry the installation of Homebrew using the install command listed earlier in this page.
 
