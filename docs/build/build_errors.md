@@ -87,6 +87,13 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ## Specific Error Messages
 
+### Error: homebrew-core is a shallow clone.
+
+If you get an error about homebrew-core being a "shallow clone""
+You will need to follow the instructions given in the error, and update your homebrew installation with the following command:
+
+`git -C "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core" fetch --unshallow`
+
 ### Could not locate device support files
 
 If you see an error message that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone. Update your Xcode version.
