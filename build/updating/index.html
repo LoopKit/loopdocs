@@ -8,455 +8,649 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Updating/Rebuilding your Loop - LoopDocs</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+
+	<title>Updating/Rebuilding your Loop - LoopDocs</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <link href="../../css/admonitions.css" rel="stylesheet">
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
             ga('create', 'UA-109876065-1', 'loopkit.github.io');
             ga('send', 'pageview');
-        </script> 
+        </script>
+        
     </head>
 
     <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="../..">LoopDocs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../overview/" class="dropdown-item">Overview</a>
-</li>
-                                    
-<li>
-    <a href="../step1/" class="dropdown-item">Step 1 Compatible Computer</a>
-</li>
-                                    
-<li>
-    <a href="../step2/" class="dropdown-item">Step 2 Compatible iPhone/iPod touch</a>
-</li>
-                                    
-<li>
-    <a href="../step3/" class="dropdown-item">Step 3 Compatible Pump</a>
-</li>
-                                    
-<li>
-    <a href="../step4/" class="dropdown-item">Step 4 Compatible CGM</a>
-</li>
-                                    
-<li>
-    <a href="../step5/" class="dropdown-item">Step 5 Order a RileyLink</a>
-</li>
-                                    
-<li>
-    <a href="../step6/" class="dropdown-item">Step 6 Enroll in Apple Developer Program</a>
-</li>
-                                    
-<li>
-    <a href="../step7/" class="dropdown-item">Step 7 Install Homebrew</a>
-</li>
-                                    
-<li>
-    <a href="../step8/" class="dropdown-item">Step 8 Download Xcode</a>
-</li>
-                                    
-<li>
-    <a href="../step9/" class="dropdown-item">Step 9 Xcode Preferences</a>
-</li>
-                                    
-<li>
-    <a href="../step10/" class="dropdown-item">Step 10 Test Settings</a>
-</li>
-                                    
-<li>
-    <a href="../step11/" class="dropdown-item">Step 11 Make plans for Loop Data</a>
-</li>
-                                    
-<li>
-    <a href="../step12/" class="dropdown-item">Step 12 Meet Community</a>
-</li>
-                                    
-<li>
-    <a href="../step13/" class="dropdown-item">Step 13 Download Loop code</a>
-</li>
-                                    
-<li>
-    <a href="../step14/" class="dropdown-item">Step 14 Build Loop app</a>
-</li>
-                                    
-<li>
-    <a href="../build_errors/" class="dropdown-item">Oh dear! Build errors?</a>
-</li>
-                                    
-<li>
-    <a href="../code_customization/" class="dropdown-item">Customize your Loop</a>
-</li>
-                                    
-<li>
-    <a href="./" class="dropdown-item active">Updating/Rebuilding your Loop</a>
-</li>
-                                    
-<li>
-    <a href="../loopworkspace/" class="dropdown-item">LoopWorkspace</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../operation/overview/" class="dropdown-item">Overview</a>
-</li>
-                                    
-<li>
-    <a href="../health/" class="dropdown-item">Step 1: Health Permissions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Step 2: Add Pump</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../operation/loop-settings/mdt-pump/" class="dropdown-item">Add Medtronic</a>
-</li>
-            
-<li>
-    <a href="../../operation/loop-settings/omnipod-pump/" class="dropdown-item">Add Omnipod</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/cgm/" class="dropdown-item">Step 3: Add CGM</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/configurations/" class="dropdown-item">Step 4: Configurations</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/services/" class="dropdown-item">Step 5: Loop Services</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/displays/" class="dropdown-item">Loop Displays</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink menu</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">How to Use Loop App</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../operation/features/carbs/" class="dropdown-item">Carb Entries</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/bolus/" class="dropdown-item">Bolus</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/workout/" class="dropdown-item">Overrides</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/premeal/" class="dropdown-item">Pre-meal target</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/healthapp/" class="dropdown-item">Health app</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/ice/" class="dropdown-item">Using ICE info</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/watch/" class="dropdown-item">Apple Watch</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/widget/" class="dropdown-item">iPhone widget</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/notifications/" class="dropdown-item">Loop Notifications</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/battery/" class="dropdown-item">Pump Battery</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Looping Tips</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../operation/loop/open-loop/" class="dropdown-item">Open Loop</a>
-</li>
-            
-<li>
-    <a href="../../operation/loop/close-loop/" class="dropdown-item">Closed Loop</a>
-</li>
-            
-<li>
-    <a href="../../operation/loop/looptips/" class="dropdown-item">Loop Tips</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Algorithm</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../operation/algorithm/overview/" class="dropdown-item">Overview</a>
-</li>
-            
-<li>
-    <a href="../../operation/algorithm/bolus/" class="dropdown-item">Bolus Recommendations</a>
-</li>
-            
-<li>
-    <a href="../../operation/algorithm/prediction/" class="dropdown-item">Glucose Prediction</a>
-</li>
-            
-<li>
-    <a href="../../operation/algorithm/temp-basal/" class="dropdown-item">Temp Basal Adjustments</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Troubleshoot</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../troubleshooting/overview/" class="dropdown-item">Overview</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/loop-crashing/" class="dropdown-item">Loop App crashes</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/yellow-red-loop/" class="dropdown-item">Red Loop</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/pod-pairing/" class="dropdown-item">Pod Pairing Failures</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/uncertain-bolus/" class="dropdown-item">Pod Uncertain Boluses</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/priming/" class="dropdown-item">MDT Priming and Sites</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/time-change/" class="dropdown-item">Time Changes</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/pump-errors/" class="dropdown-item">MDT Pump Errors</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/omnipod-faults/" class="dropdown-item">Omnipod Faults</a>
-</li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../nightscout/overview/" class="dropdown-item">Overview</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/new_user/" class="dropdown-item">Brand New NS</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/update_user/" class="dropdown-item">Retrofit Existing NS</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/troublehoot/" class="dropdown-item">Setup Troubleshooting</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/mlab_cleanup/" class="dropdown-item">NS Stopped Working</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/remote-overrides/" class="dropdown-item">Remote Overrides</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/ifttt/" class="dropdown-item">IFTTT</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/pebble/" class="dropdown-item">Pebble</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/pushover/" class="dropdown-item">Remote Notifications</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/reports/" class="dropdown-item">Reports</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../code_customization/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../loopworkspace/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">LoopDocs</a>
         </div>
 
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
             
-            <li class="nav-item" data-level="1"><a href="#updating-loop" class="nav-link">Updating Loop</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#when-to-update-loop" class="nav-link">When to Update Loop</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#step-1-install-macos-and-xcode-updates" class="nav-link">Step 1: Install macOS and Xcode updates</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#step-2-check-your-developer-account" class="nav-link">Step 2: Check your Developer Account</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#step-3-download-updated-loop-code" class="nav-link">Step 3: Download Updated Loop Code</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../faqs/docs-faqs/">Using This Site FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/FAQs/">General Loop FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/omnipod-faqs/">Omnipod FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/branch-faqs/">Branch FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/update-faqs/">Update/Rebuild Loop FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/ios13/">iOS 13 FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/rileylink-faqs/">RileyLink FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/algorithm-faqs/">Algorithm FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/cgm-faqs/">CGM FAQs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faqs/safety-faqs/">Safety Tips</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step1/">Step 1 Compatible Computer</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step2/">Step 2 Compatible iPhone/iPod touch</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step3/">Step 3 Compatible Pump</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step4/">Step 4 Compatible CGM</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step5/">Step 5 Order a RileyLink</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step6/">Step 6 Enroll in Apple Developer Program</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step7/">Step 7 Install Homebrew</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step8/">Step 8 Download Xcode</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step9/">Step 9 Xcode Preferences</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step10/">Step 10 Test Settings</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step11/">Step 11 Make plans for Loop Data</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step12/">Step 12 Meet Community</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step13/">Step 13 Download Loop code</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../step14/">Step 14 Build Loop app</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../build_errors/">Oh dear! Build errors?</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../code_customization/">Customize your Loop</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Updating/Rebuilding your Loop</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../loopworkspace/">LoopWorkspace</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../operation/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../health/">Step 1: Health Permissions</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Step 2: Add Pump</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../operation/loop-settings/mdt-pump/">Add Medtronic</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/loop-settings/omnipod-pump/">Add Omnipod</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/cgm/">Step 3: Add CGM</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/configurations/">Step 4: Configurations</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/services/">Step 5: Loop Services</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/displays/">Loop Displays</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../operation/loop-settings/rileylink/">RileyLink menu</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">How to Use Loop App</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../operation/features/carbs/">Carb Entries</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/bolus/">Bolus</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/workout/">Overrides</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/premeal/">Pre-meal target</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/healthapp/">Health app</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/ice/">Using ICE info</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/watch/">Apple Watch</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/widget/">iPhone widget</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/notifications/">Loop Notifications</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/features/battery/">Pump Battery</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Looping Tips</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../operation/loop/open-loop/">Open Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/loop/close-loop/">Closed Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/loop/looptips/">Loop Tips</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Algorithm</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../operation/algorithm/overview/">Overview</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/algorithm/bolus/">Bolus Recommendations</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/algorithm/prediction/">Glucose Prediction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Troubleshoot</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../troubleshooting/overview/">Overview</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../troubleshooting/loop-crashing/">Loop App crashes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../troubleshooting/yellow-red-loop/">Red Loop</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../troubleshooting/pod-pairing/">Pod Pairing Failures</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../troubleshooting/uncertain-bolus/">Pod Uncertain Boluses</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../troubleshooting/priming/">MDT Priming and Sites</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../troubleshooting/time-change/">Time Changes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../troubleshooting/pump-errors/">MDT Pump Errors</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../troubleshooting/omnipod-faults/">Omnipod Faults</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../nightscout/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/new_user/">Brand New NS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/update_user/">Retrofit Existing NS</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/troublehoot/">Setup Troubleshooting</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/mlab_cleanup/">NS Stopped Working</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/remote-overrides/">Remote Overrides</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/ifttt/">IFTTT</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/pebble/">Pebble</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/pushover/">Remote Notifications</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../nightscout/reports/">Reports</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../code_customization/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../loopworkspace/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
     </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#updating-loop">Updating Loop</a></li>
+        
+            <li><a href="#when-to-update-loop">When to Update Loop</a></li>
+        
+            <li><a href="#step-1-install-macos-and-xcode-updates">Step 1: Install macOS and Xcode updates</a></li>
+        
+            <li><a href="#step-2-check-your-developer-account">Step 2: Check your Developer Account</a></li>
+        
+            <li><a href="#step-3-download-updated-loop-code">Step 3: Download Updated Loop Code</a></li>
+        
+            <li><a href="#step-4a-delete-old-provisioning-profiles">Step 4a: Delete old provisioning profiles</a></li>
+        
+            <li><a href="#step-4b-clean-cache-and-dervied-data">Step 4b: Clean cache and dervied data</a></li>
+        
+            <li><a href="#step-5-build-like-normal">Step 5: Build like normal</a></li>
+        
+            <li><a href="#step-6-check-build-errors-page-if-needed">Step 6: Check Build Errors page if needed</a></li>
+        
+    
+    </ul>
 </div></div>
-                    <div class="col-md-9" role="main">
+            <div class="col-md-9" role="main">
 
 <h1 id="updating-loop">Updating Loop<a class="headerlink" href="#updating-loop" title="Permanent link">⌁</a></h1>
 <div class="admonition danger">
@@ -507,6 +701,7 @@
 <p align="center">
 <img src="../img/minimum-related.png" width="750">
 </p>
+
 <p></br></p>
 <h2 id="step-2-check-your-developer-account">Step 2: Check your Developer Account<a class="headerlink" href="#step-2-check-your-developer-account" title="Permanent link">⌁</a></h2>
 <p>Apple updates its License Agreement for the Developer Program frequently. You need to login to your <a href="https://developer.apple.com/account/">developer account</a> to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.</p>
@@ -516,144 +711,97 @@
 
 <h2 id="step-3-download-updated-loop-code">Step 3: Download Updated Loop Code<a class="headerlink" href="#step-3-download-updated-loop-code" title="Permanent link">⌁</a></h2>
 <p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on <strong>ONE</strong> of the links below to download an updated version of the Loop code. If you aren't a developer or debugging, stick to Master branch.  Click on ONE of the links below to download Loop code...hint hint...<strong><u>click on the Master branch for 99% of users</u></strong>.</p>
-<p></br></br></p>
+<p></br></br>
 <p align="center">
-[Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)</br></br>
-********************
-
-[Dev branch---in very rough shape right now, please only build if developer interested in debugging](https://github.com/LoopKit/Loop/archive/dev.zip)</br></br>
-[Automatic-bolus branch---do your research before using as well, if you are asking what it is then you haven't researched enough yet](https://github.com/LoopKit/Loop/archive/automatic-bolus.zip)</br></br>
-
-*********************
-
-## Step 4a: Delete old provisioning profiles
-
-This is a new step in the updating process. Everyone should do this step every time they rebuild or update their Loop apps now. Older versions of Xcode used to automatically create a "provisioning profile" as part of your Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.
-
-You can always check the expiration date at the time of building your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death.
-
+<a href="https://github.com/LoopKit/Loop/archive/master.zip">Loop: Master branch</a></br></br></p>
+<hr />
+<p><a href="https://github.com/LoopKit/Loop/archive/dev.zip">Dev branch---in very rough shape right now, please only build if developer interested in debugging</a></br></br>
+<a href="https://github.com/LoopKit/Loop/archive/automatic-bolus.zip">Automatic-bolus branch---do your research before using as well, if you are asking what it is then you haven't researched enough yet</a></br></br></p>
+<hr />
+<h2 id="step-4a-delete-old-provisioning-profiles">Step 4a: Delete old provisioning profiles<a class="headerlink" href="#step-4a-delete-old-provisioning-profiles" title="Permanent link">⌁</a></h2>
+<p>This is a new step in the updating process. Everyone should do this step every time they rebuild or update their Loop apps now. Older versions of Xcode used to automatically create a "provisioning profile" as part of your Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.</p>
+<p>You can always check the expiration date at the time of building your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death.</p>
 <p align="center">
 <img src="../img/provisioning-profile-date.png" width="850">
 </p>
 
-Here's what started happening about a year ago with Xcode 11...the provisioning profiles weren't updating "created" date with new builds. Instead, Xcode was simply using the old profile's "created" date. This change has resulted in many people's apps expiring (and therefore dying suddenly) despite having updated/rebuilt within less than 12 months ago and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).
-
-To solve this new issue...we have an easy solution. Honest...easy. You can do this. Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)
-
-!!!warning "How to delete old provisioning profiles"
-    * Find your Terminal app (the same one you used to install Homebrew in Step 7 of the build process if you forgot how to find it).</br></br>
-    * Open your Terminal app.</br></br>
-    * Copy and paste the line in the little grey box below into the Terminal prompt. Press enter after you paste it.</br></br>
-
-    `rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision`
-    </br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.
-    <p align="center">
-    <img src="../img/empty-profiles.png" width="650">
-    </p>
-
-## Step 4b: Clean cache and dervied data
-
-An ounce of prevention is worth a pound of cure.  Since we already have Terminal app open, let's prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.
-
-!!!danger "Clean cache and derived data"
-    Using Terminal app that should still be open from Step 4a just now, </br></br>
-    1. Copy and paste this command and press return: `rm -rf ~/Library/Caches/org.carthage.CarthageKit` Note: you won't see any message back if the command runs successfully.</br></br>
-    2. Copy and paste this command and press return: `rm -rf ~/Library/Developer/Xcode/DerivedData` Note: you won't see any message back if the command runs successfully.
-    </br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.
-    <p align="center">
-    <img src="../img/cleaned-terminal.png" width="650">
-    </p>
-
-
-## Step 5: Build like normal
-From here, go straight to [Step 14 Build Loop app](https://loopkit.github.io/loopdocs/build/step14/) and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
-
-!!!info "Double check expiration date"
-    If you want to make sure that step 4 above (deleting the provisioning profiles) went well...go ahead and check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app will safely function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.
-
-Note: If this is a computer that hasn't built Loop before, you would want to make sure to do the [Build Step 7: install Homebrew](https://loopkit.github.io/loopdocs/build/step7/) before trying to build Loop using that computer.
-
-## Step 6: Check Build Errors page if needed
-
-!!!danger "CHECK BUILD ERRORS PAGE"
-    If you get a build error...still check the [Build Errors page](https://loopkit.github.io/loopdocs/build/build_errors/). Because even if your exact error isn't there...the information you NEED to provide when asking for help is listed out on that page. And that information is critical. CRITICAL to be able to troubleshoot your build error.</div>
-            </div>
+<p>Here's what started happening about a year ago with Xcode 11...the provisioning profiles weren't updating "created" date with new builds. Instead, Xcode was simply using the old profile's "created" date. This change has resulted in many people's apps expiring (and therefore dying suddenly) despite having updated/rebuilt within less than 12 months ago and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).</p>
+<p>To solve this new issue...we have an easy solution. Honest...easy. You can do this. Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)</p>
+<div class="admonition warning">
+<p class="admonition-title">How to delete old provisioning profiles</p>
+<ul>
+<li>Find your Terminal app (the same one you used to install Homebrew in Step 7 of the build process if you forgot how to find it).</br></br></li>
+<li>Open your Terminal app.</br></br></li>
+<li>Copy and paste the line in the little grey box below into the Terminal prompt. Press enter after you paste it.</br></br></li>
+</ul>
+<p><code>rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision</code>
+</br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.
+<p align="center">
+<img src="../img/empty-profiles.png" width="650">
+</p></p>
+</div>
+<h2 id="step-4b-clean-cache-and-dervied-data">Step 4b: Clean cache and dervied data<a class="headerlink" href="#step-4b-clean-cache-and-dervied-data" title="Permanent link">⌁</a></h2>
+<p>An ounce of prevention is worth a pound of cure.  Since we already have Terminal app open, let's prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.</p>
+<div class="admonition danger">
+<p class="admonition-title">Clean cache and derived data</p>
+<p>Using Terminal app that should still be open from Step 4a just now, </br></br>
+1. Copy and paste this command and press return: <code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> Note: you won't see any message back if the command runs successfully.</br></br>
+2. Copy and paste this command and press return: <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code> Note: you won't see any message back if the command runs successfully.
+</br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.
+<p align="center">
+<img src="../img/cleaned-terminal.png" width="650">
+</p></p>
+</div>
+<h2 id="step-5-build-like-normal">Step 5: Build like normal<a class="headerlink" href="#step-5-build-like-normal" title="Permanent link">⌁</a></h2>
+<p>From here, go straight to <a href="https://loopkit.github.io/loopdocs/build/step14/">Step 14 Build Loop app</a> and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.</p>
+<div class="admonition info">
+<p class="admonition-title">Double check expiration date</p>
+<p>If you want to make sure that step 4 above (deleting the provisioning profiles) went well...go ahead and check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app will safely function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.</p>
+</div>
+<p>Note: If this is a computer that hasn't built Loop before, you would want to make sure to do the <a href="https://loopkit.github.io/loopdocs/build/step7/">Build Step 7: install Homebrew</a> before trying to build Loop using that computer.</p>
+<h2 id="step-6-check-build-errors-page-if-needed">Step 6: Check Build Errors page if needed<a class="headerlink" href="#step-6-check-build-errors-page-if-needed" title="Permanent link">⌁</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">CHECK BUILD ERRORS PAGE</p>
+<p>If you get a build error...still check the <a href="https://loopkit.github.io/loopdocs/build/build_errors/">Build Errors page</a>. Because even if your exact error isn't there...the information you NEED to provide when asking for help is listed out on that page. And that information is critical. CRITICAL to be able to troubleshoot your build error.</p>
+</div></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
                     </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
     </body>
 </html>
