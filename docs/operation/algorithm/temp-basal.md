@@ -11,7 +11,7 @@ If the eventual blood glucose is less than the correction range and all of the p
 ![decrease basal rate example](img/decrease.png)
 
 ### Increase Basal Rate
-If the eventual blood glucose is greater than the correction range and all of the predicted glucose values are above the suspend threshold, then Loop will issue a temporary basal rate that is higher than the current basal rate to bring the eventual blood glucose down to the correction target.
+If the eventual blood glucose is greater than the correction range and all of the predicted glucose values are both above the suspend threshold and equal to or above the correction range, then Loop will issue a temporary basal rate that is higher than the current basal rate to bring the eventual blood glucose down to the correction target.
 
 ![increase basal rate example](img/increase.png)
 

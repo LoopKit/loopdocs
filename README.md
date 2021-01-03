@@ -9,7 +9,7 @@ To suggest changes, fork this repository, edit the files, and submit your change
 ### Previewing Changes
 To preview your work as you edit you must set up two python packages that are used to create this site using [MkDocs](http://www.mkdocs.org/). They are `mkdocs`, and `mkdocs-bootswatch`.
 
-Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help getting Python installed. MkDocs works with Python 2.7, 3.3+, and pypy.
+Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help getting Python installed. MkDocs works with Python 2.7, 3.3-3.6, and pypy.
 
 * Install python modules
 

@@ -17,33 +17,37 @@
     * **"Can I use an iPad?"** No. iPads do not support Apple Health and that is an important part of Loop's inner workings.
     * **"Does my iPhone need cell plan?"** No. Loop will work without an internet connection...however you will not have Dexcom Follow data or Nightscout data if you choose to use a device that doesn't have an internet connection. In other words Loop will work, but remotely watching followers won't see Looping data unless the Loop device has an internet connection.
 
-## iOS and Health App
+## Which Devices are compatible? Why those?
 
-Why is Loop limited to just iPhones and iPod touches? Why can't you use an iPad? Because Loop uses the Apple Health app to store and retreive your blood glucose, carbohydrate, and insulin data records. iPads do not have the Apple Health app, so those devices will not work with Loop. iPhones and iPod touches have the Apple Health app, so they will work with Loop.
+Why is Loop limited to just iPhones and iPod touches? Why can't you use an iPad? Because Loop uses the Apple Health app to store and retrieve your blood glucose, carbohydrate, and insulin data records. iPads do not have the Apple Health app, so those devices will not work with Loop. iPhones and iPod touches have the Apple Health app, so they will work with Loop.
 
-The next compatibility check is that we need a minimum version of the operating software on those iPhones and iPod touches. Loop is compatible with iPhone and iPod touch devices with iOS 12.4 or newer. Therefore, assuming the iOS is updated to iOS 12.4 or newer, the compatible devices include:
+The next compatibility check is that we need a minimum version of the operating software, called the phone's "iOS", on those iPhones and iPod touches. Loop is compatible with iPhone and iPod touch devices with iOS 12.4 or newer. Therefore, the compatible devices include:
 
-* iPhone X, XS, XR, XS Max
+* iPhone 11, 11 Pro, 11 Pro Max 
 
-* iPhone 8, 8+
+* iPhone X, XS, XR, XS Max 
 
-* iPhone 7, 7+
+* iPhone 8, 8+ 
 
-* iPhone 6, 6+, 6s, 6s+
+* iPhone 7, 7+ 
 
-* iPhone SE
+* iPhone 6s, 6s+ 
 
-* iPhone 5s
+* iPhone SE 
 
-* iPod Touch, 6th generation or newer
+* iPod Touch, 7th generation 
 
+## Devices that will be incompatible "soon"
 
-## iOS 13 update
+* iPhone 5s, 6, 6+
 
-On September 19, 2019, iOS 13 was released. The iPhone 5s, 6, 6+ models will not be able to update to iOS 13. This does not pose a problem currently. You can still build Loop so long as you have iOS 12.4 at a minimum. HOWEVER, there are upcoming Loop changes that will require users to have iOS 13 on their devices in future versions of Loop. There is no timeframe for when these Loop changes will be coming, but just be aware that we do anticipate all Loopers will need to be using iOS 13 in the future if they want the new versions of Loop.
+* iPod Touch, 6th generation 
 
-Until then, you can use iOS 12.4 (or newer through iOS 13+) without issue. Updating to iOS 13 is optional as far as Loop is concerned. Your Loop app on your phone will continue to run fine if you choose to update to iOS 13. It will also continue to run fine if you do not update to iOS 13. 
+Apple has decided that those models have lived their useful life and can no longer be be updated past iOS 12.4. They've reached the end of their "apple supported" update life cycle. Apple released iOS 13 and iOS 14 in the recent past and those models cannot be updated to use them. This does not pose a problem currently...you can still build Loop's master branch so long as your device has iOS 12.4 at a minimum. HOWEVER, there are upcoming Loop changes that will require users to have iOS 13 on their devices to build Loop onto the device. There is no set timeframe for when that minimum requirement will be changed.  We will make an announcement when it does and the docs will be updated here.
 
+Side note for people who are seasoned Loop users and know about branches and such: Currently (as of October 2020), Loop's dev branch requires devices to have iOS 13 or newer. There's no set timeframe for when dev will next be merged into master.
+
+## Find your device's iOS
 Your phone's iOS version can be found under the Settings app, General, About as shown below.
 
 <p align="center">
