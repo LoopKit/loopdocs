@@ -216,7 +216,7 @@ You are going to add several additional lines of variables specifically for Loop
 </tr>
 <tr>
 <th>SHOW_PLUGINS</th>
-<td>loop pump cob iob sage cage careportal basal dbsize</td>
+<td>loop pump cob iob sage cage careportal basal override dbsize</td>
 </tr>
 <tr>
 <th>LOOP_ENABLE_ALERTS</th>

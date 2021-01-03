@@ -38,7 +38,7 @@ Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines 
 <tbody>
 <tr>
 <th>ENABLE</th>
-<td>bridge loop pump iob cob basal careportal sage cage basal dbsize</br></br>
+<td>bridge loop pump iob cob basal careportal sage cage basal override dbsize</br></br>
 <b>(Note: If you are an existing NS user, you likely already have an ENABLE line in this section of Heroku. Don't add a new one. Simply find the existing ENABLE line, click on the little pencil icon to the right of it, and add the words shown on the ENABLE line below to the existing words already on the enable line.  Avoid duplicates. The remainder of the lines are likely going to be brand new additions to your Heroku settings.)</b></td>
 </tr>
 <tr>
@@ -59,7 +59,7 @@ Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines 
 </tr>
 <tr>
 <th>SHOW_PLUGINS</th>
-<td>loop pump cob iob sage cage careportal dbsize</td>
+<td>loop pump cob iob sage cage careportal basal override dbsize</td>
 </tr>
 <tr>
 <th>PUMP_ENABLE_ALERTS</th>
