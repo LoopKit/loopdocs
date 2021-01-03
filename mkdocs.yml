@@ -88,7 +88,6 @@ pages:
     - 'Brand New NS': 'nightscout/new_user.md'
     - 'Retrofit Existing NS': 'nightscout/update_user.md'
     - 'Setup Troubleshooting': 'nightscout/troublehoot.md'
-    - 'NS Stopped Working': 'nightscout/mlab_cleanup.md'
     - 'Remote Overrides': 'nightscout/remote-overrides.md'
     - 'IFTTT': 'nightscout/ifttt.md'
     - 'Pebble': 'nightscout/pebble.md'
