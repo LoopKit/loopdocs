@@ -298,12 +298,6 @@
     </url>
         
     <url>
-     <loc>/nightscout/mlab_cleanup/</loc>
-     <lastmod>2021-01-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/nightscout/remote-overrides/</loc>
      <lastmod>2021-01-02</lastmod>
      <changefreq>daily</changefreq>
