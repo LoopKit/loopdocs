@@ -46,4 +46,4 @@ Paid account enrollment is all through Apple's Developer Program website. Go to 
 
 ## Next Step: Install Homebrew
 
-Now you are ready to move onto Step 7 to [install Hombrew](https://loopkit.github.io/loopdocs/build/step7/).
+Now you are ready to move onto Step 7 to [install Homebrew](https://loopkit.github.io/loopdocs/build/step7/).

@@ -113,7 +113,7 @@ The loop status circle will pulse slightly when the RileyLink is giving the pump
 <table>
 <tr>
 <td><img src="../img/pod-age.jpg" width="250"></td>
-<td>The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red. When you reach 80 hours of pod use, the pod will alarm and the pod age icon will show a "replace pod" message in the HUD.</td>
+<td>The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red, the pod will begin the periodic alarm, and the pod age icon will show a "replace pod" message in the HUD. When you reach 80 hours of pod use, the pod will have a sustained alarm and stop working.</td>
 </tr>
 </table>
 
