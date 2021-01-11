@@ -1,0 +1,32 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CopyFiles
+
+# Controls when the action will run. 
+on:
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+       - name: Copycat Action
+         uses: andstor/copycat-action@v3.2.3
+         with:
+          src_path: docs
+                # The destination path to copy the file(s) or folder(s) to
+          dst_path: docs_da_test
+                # The name of the owner of the repository to push to
+          dst_owner: loopdocs
+                # The name of the repository to push to
+          dst_repo_name: loopdocs.da
+                # The branch name of the source repository
+          src_branch: master-da
+                # The branch name of the destination repository
+          dst_branch: master-da
+
