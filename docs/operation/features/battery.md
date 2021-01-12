@@ -43,8 +43,8 @@ In summary, that little pump battery indicator on the Medtronic pump screen is O
 * in the temperature environment similar to their testing.
 
 !!!info ""
-    Loop users should not rely on their Medtronic pump screen's pump battery indicator, and instead use the Loop's pump battery level indicator.
 
+    Loop users should not rely on their Medtronic pump screen's pump battery indicator, and instead use the Loop's pump battery level indicator.
 
 ## Loop's Pump Battery Level Indicator
 
@@ -54,7 +54,6 @@ Keeping the information about battery discharge curves in mind, Loop developers 
 * For x15 and x22 model users, the Loop's pump battery level will move in discrete % increments.
 
 Based on the battery type selected and the pump model being used, the Loop's pump battery level notifications are designed to give the user about 8 hours of notice before pump communications are likely to fail.  The Loop user should have some additional time after pump comms fail before actual insulin delivery would stop.
-
 
 ## Nightscout Pump Battery Display
 

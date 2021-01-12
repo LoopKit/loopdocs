@@ -43,12 +43,12 @@ Do your logs have "SSO authentication errors" like in the red box highlighted ab
 
 3. Wait 15 minutes and then follow the directions in the blue box below. It is important to wait the 15 minutes...the reason you can't log in right now is that your Dexcom account has a temporary lock from one of the passwords in step 1 or 2 being incorrect. The temporary lock will expire after 10-15 minutes of giving the account login a break from the incorrect logins. So, definitely wait or else you'll just keep prolonging the issue.
 
-
 !!!info "About your Bridge password and user name"
+
     The `BRIDGE_PASSWORD` and `BRIDGE_USER_NAME` are NOT visible from within your Dexcom mobile app or online account. The values of them are what you entered into your Dexcom mobile app when you VERY FIRST logged into that app however long ago. If you have double-checked everything else that could be incorrect and BGs still aren't showing in Nightscout, then you likely have those Bridge values incorrect. To fix that, delete your Dexcom app (don't stop the session before deleting the app...just keep it going). Download the app again from the iPhone's App Store and login to the freshly-downloaded Dexcom app. **Take note** that deleting the app will not stop your session, your session will pick right back up once the transmitter pairs again. The `BRIDGE_USER_NAME` is not an email address. Use that exact same login now in your Heroku settings. You can leave your Loop's Share account info blank...you just need the transmitter ID going forward.
-    
 
 ### Dexcom Share
+
 Make sure you have Dexcom Share turned ON in your Dexcom app. In the Dexcom app's main screen, find the triangle made of dots. If the dots are grey, you do not have Share turned on. Tap the triangle, and follow the directions to add a follower (yourself if you don't have someone else you'd like to invite) and turn on Share.
 
 <p align="center">

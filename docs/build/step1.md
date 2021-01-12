@@ -36,6 +36,7 @@ Do you need Catalina or Mojave? The answer will depend on the iOS of your iPhone
 **If you have iOS 13.4 or newer**, you will not be able to use Mojave and will need Catalina at a minimum. In other words, you'll need macOS 10.15.2 at a minimum to build Loop onto an iPhone running iOS 13.4 or newer.
 
 !!!danger "iOS dictates your computer needs"
+
     Put simply for Loopers...the more up-to-date you keep your iOS, the more up-to-date your computer and macOS will need to be, too. That's not necessarily a bad thing, and you can't avoid iOS updates forever...you just do need to be aware of how they relate to each other if your computer is "getting on the older side".
 
 ## Check your macOS

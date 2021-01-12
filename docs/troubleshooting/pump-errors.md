@@ -7,6 +7,7 @@ The Medtronic pumps are used and typically not under warranty.  Use this section
 This error message is common when a pump has been stored for a period of time without a battery.  Most pumps will show an A21 error when you first purchase them on the used market.  Not a big deal.  Press the down arrow (also has the symbol of a light bulb on it) and the pump screen message will scroll down to let you know how to clear that error message (press ESC then ACT).  If the message is coming up on a pump that hasn't been in storage, pull the battery out and replace with a fresh, new battery.  Chances are your battery or battery cap are old.  Look for signs of dirt or rust in the battery cap, give it a little cleaning.
 
 !!!info "Display Tip"
+
     When the pump screen has a little black/white bar on the right side, that is a scroll bar.  Use the arrow keys on the right of the pump screen to scroll and see the additional information.
 
 <p align="center">
@@ -20,7 +21,6 @@ This error message "battery out of limits" has to do with the internal pump batt
 <p align="center">
 <img src="../img/batt-out.jpg" width="400">
 </p>
-
 
 ## Button Error
 
@@ -75,6 +75,7 @@ Often a motor error is the result of a poorly seated reservoir or tubing cap.  I
 ## A33 error
 
 !!!warning "Safety warning"
+
     If you get this error, DO NOT push on the bulged out end cap.  Always detach your tubing from your infusion set before addressing this error message.  If you push on the end cap in an attempt to get it back flush, you may delivery a dangerous amount of insulin mistakenly.
 
 This error is a bit more involved to repair.  The problem is that there is a loose drive support cap.  Most of the time this error message will appear during a priming event as the end cap of the drive will slip, releasing the ability of the reservoir plunger to get pressure to delivery insulin.  The pump senses the lack of pressure and delivers the A33 error.

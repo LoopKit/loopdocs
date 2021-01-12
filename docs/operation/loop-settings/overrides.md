@@ -6,20 +6,19 @@ Override presets are (1) optional and (2) can be configured within Loop's workou
 
 <p align="center">
 <img src="../img/toolbar.png" width="450">
-</p></br>
+</p>
 
 ## How overrides work
 
 Overrides allow you to specify an overall iinsulin needs adjustment, a target range, and a duration for the override with each preset. The overall insulin needs adjustment is a multiplier adjustment to your scheduled basal rates, carb ratios, and insulin sensitivities all together. In other words, overall insulin needs percent will affect boluses and temp basal recommendations both.  
 
-Notice the fine-print below the orange bar showing the overall adjustment graphic..."Basal, bolus, and correction insulin dose amounts are increased by 20%" in the example with a 120% overall insulin needs adjustment. So, 100% overall needs means no multiplier will be applied to your basal, insulin sensitivities, or carb ratio...but you could still use a 100% preset simply to define a different target range for a period of time. 
+Notice the fine-print below the orange bar showing the overall adjustment graphic..."Basal, bolus, and correction insulin dose amounts are increased by 20%" in the example with a 120% overall insulin needs adjustment. So, 100% overall needs means no multiplier will be applied to your basal, insulin sensitivities, or carb ratio...but you could still use a 100% preset simply to define a different target range for a period of time.
 
 Recapping: If you set an overall insulin needs adjustment below 100%, you are telling Loop that you are more insulin sensitive and will need a lighter touch with all things insulin. If you set an overall insulin needs adjustment above 100%, you are telling Loop that you are less insulin sensitive and will need a more aggressive touch with all things insulin.
 
-
 <p align="center">
 <img src="../img/override-entry.jpeg" width="500">
-</p></br>
+</p>
 
 ## How overrides do NOT work
 
@@ -48,13 +47,13 @@ To enact your override preset, you simply tap on the workout icon in the Loop's 
 
 <p align="center">
 <img src="../img/override-selection.PNG" width="450">
-</p> 
+</p>
 
 The heart will be highlighted in a blue square while active and a banner notification will appear at the top of the Loop's main screen. Additionally, you'll see a darker blue target area indicating the override's target range and duration in your Loop's blood glucose graph.
 
 <p align="center">
 <img src="../img/override-enacted.PNG" width="350">
-</p> 
+</p>
 
 ## Deactivating your override
 

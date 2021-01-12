@@ -9,13 +9,15 @@ You can see the individual contributions of these effects by tapping on the pred
 Just a note, this whole section is fairly technical. While perhaps not the most interesting topic for many readers, if you are seeking the detailed view of the Loop algorithm this discussion is quite useful. If you want a more surface understanding, the overview and temporary basal recommendations sections alone are probably sufficient.
 
 ## Overview
-Before we delve into each of the four individual effects, a general overview figure may be a helpful start. There are four effects summed together to produce Loop's final predicted blood glucose curve. Each individual effect, along with their combined effect, is illustrated in the figure below. Insulin, from boluses and temporary basals, will have a decreasing effect on the prediction. Carbohydrates will have an increasing effect on the prediction. Blood glucose momentum effect can have a positive or negative effect, depending on how blood glucose is trending in the most recent CGM values. As shown in the example below, blood glucose is trending slightly upwards at the time of the prediction. Therefore, the blood glucose momentum effect’s contribution is pulling up the overall prediction from the other three effects for a short time. Retrospective correction is having a decreasing effect on the prediction, indicating that the recent rise in blood glucose was not as large as had been previously predicted by Loop in the recent past. 
+
+Before we delve into each of the four individual effects, a general overview figure may be a helpful start. There are four effects summed together to produce Loop's final predicted blood glucose curve. Each individual effect, along with their combined effect, is illustrated in the figure below. Insulin, from boluses and temporary basals, will have a decreasing effect on the prediction. Carbohydrates will have an increasing effect on the prediction. Blood glucose momentum effect can have a positive or negative effect, depending on how blood glucose is trending in the most recent CGM values. As shown in the example below, blood glucose is trending slightly upwards at the time of the prediction. Therefore, the blood glucose momentum effect’s contribution is pulling up the overall prediction from the other three effects for a short time. Retrospective correction is having a decreasing effect on the prediction, indicating that the recent rise in blood glucose was not as large as had been previously predicted by Loop in the recent past.
 
 ![combined effects curve](img/combined_effects.png)
 
-The sections below provide detailed information on each of the four contributions. 
+The sections below provide detailed information on each of the four contributions.
 
 ## Insulin Effect
+
 Most traditional pump users and caregivers are already familiar with the concept of an insulin activity curve, where the insulin’s effect is time-dependent. Insulin takes a little while to affect blood glucose. The insulin effect typically peaks around one hour after giving insulin and then gradually decays. 
 
 ![insulin activity curve](img/insulin_activity_curve.png)
@@ -26,7 +28,6 @@ Loop provides users with two different classes of insulin models (i.e., an expon
 
 The amount of insulin effect remaining, or percent of remaining active insulin after an insulin bolus is delivered, is modeled mathematically in Loop with an exponential decay curve.
 
-
 ### Insulin Effect Remaining
 
 ![insulin percent remaining](img/insulin_percent_remaining.png)
@@ -34,6 +35,7 @@ The amount of insulin effect remaining, or percent of remaining active insulin a
 If a user’s insulin sensitivity factor (ISF) is 50 mg/dL per 1 unit of insulin and the user gives 2 units of insulin, then the user’s blood glucose would be expected to drop 100 mg/dL within the 6 hours following the insulin delivery. This insulin effect can be visualized in several different ways: the expected active insulin, expected drop in blood glucose every 5 minutes after delivery, and the expected cumulative drop in blood glucose. The figures below use the Rapid Acting - Adult insulin model in Loop.
 
 ### Active Insulin
+
 This figure shows that 2 units of insulin are given initially, and the corresponding active insulin (i.e., insulin on board IOB) decays according to the curve below. 
 
 ![insulin remaining example](img/insulin_remaining_example.png)
@@ -42,19 +44,22 @@ The active insulin at any time is the product of original insulin delivered and 
 
 ![bg drop from 2 units](img/bg_drop.png)
 
-NOTE: ISF is also a function of time, which means if the user’s scheduled ISF changes during the insulin activity time, it will change the expected drop in blood glucose due to the insulin effect. 
+NOTE: ISF is also a function of time, which means if the user’s scheduled ISF changes during the insulin activity time, it will change the expected drop in blood glucose due to the insulin effect.
 
 ### Expected Change in Blood Glucose
+
 Lastly, taking the first derivative (i.e., the rate of change) of the cumulative drop in the blood glucose curve yields the expected change in blood glucose over the insulin activity duration. For each dose of insulin given, Loop calculates the expected discrete drop in blood glucose at each 5-minute period for the insulin activity duration, as shown below.
 
 ![rate of bg change](img/derivative.png)
 
 ###  Insulin Effect on Blood Glucose
-For this example, assuming a user’s blood glucose was 205 mg/dL at the time of insulin delivery, Loop would predict a drop in blood glucose due to the two units delivered at 12 pm as shown in the figure below. 
+
+For this example, assuming a user’s blood glucose was 205 mg/dL at the time of insulin delivery, Loop would predict a drop in blood glucose due to the two units delivered at 12 pm as shown in the figure below.
 
 ![two unit example](img/two_units.png)
 
 ### Scheduled Basal Rates
+
 In traditional basal/bolus pump therapy, basal rates are set to accommodate the user's endogenous glucose production (EGP) that causes blood glucose to rise. If a user's basal settings were exactly right in traditional pump therapy, the user would have perfectly flat blood glucose all day, all other factors being equal.
 
 In reality, people with type 1 diabetes, and their caregivers, know that basal settings are never exactly right. Every day is a little different, and a myriad of factors that affect blood glucose (e.g., including stress, hormones, sleep, etc.) may affect insulin needs. Some people have different basal profiles to accommodate these variations. Some people regularly tune and adjust their basal rates, and/or do so at their endocrinology clinic visits.
@@ -74,6 +79,7 @@ Here is a real-world example where Loop is setting many temporary basal rates ov
 ![Loop's temp basal chart over day](img/temp_basal_day.png)
 
 ###  Total Insulin Effect (combining boluses and temporary basal rates)
+
 Loop will combine or stack the active insulin of all the discrete (individual) boluses and temporary basal rates over the past insulin activity duration (6 hours), to predict the active insulin for the next 6 hours. As demonstrated above, using the predicted active insulin Loop can predict the blood glucose drop over the next 6 hours. 
 
 Lastly, the combined effect of bolus and basal insulin are visually represented for the user by Loop’s insulin charts:
@@ -95,7 +101,8 @@ Because carbohydrate absorption can be quite variable, Loop has a model that dyn
 For all carbohydrate entries, Loop assumes carbohydrates will not start absorbing for 10 minutes, so there is a 10-minute period of no absorption that is modeled prior to the absorption modeled in the next sections.
 
 ### Linear Carbohydrate Absorption
-Loop takes a conservative view of how fast the remaining carbohydrates will absorb.  Because it is safer to under-deliver insulin for long-duration meals, Loop starts out at a minimum rate of absorption based on extending the entered carbohydrate duration by 50%. Said another way, the minimum carbohydrate absorption rate is the total number of grams of carbohydrates over 150% of the entered duration. 
+
+Loop takes a conservative view of how fast the remaining carbohydrates will absorb.  Because it is safer to under-deliver insulin for long-duration meals, Loop starts out at a minimum rate of absorption based on extending the entered carbohydrate duration by 50%. Said another way, the minimum carbohydrate absorption rate is the total number of grams of carbohydrates over 150% of the entered duration.
 
 Using this initial minimum absorption rate, the remaining carbohydrates are modeled to absorb linearly. For example, if the user enters a 72g carbohydrate meal, and selects an estimated absorption time of 4 hours, then Loop will forecast a 12g/hr absorption rate for the next 6 hours. This rate can be termed the minimum absorption rate, which can be represented mathematically as:
 
@@ -104,11 +111,12 @@ Using this initial minimum absorption rate, the remaining carbohydrates are mode
 where MAR is the minimum absorption rate (g/hr), CA is the number of carbohydrates (g) and d is the expected duration (hr) it will take the carbohydrates to absorb. 
 
 ### Dynamic Carbohydrate Absorption
+
 The linear model above is modulated by an additional calculation that uses recently observed blood glucose data to estimate how fast carbohydrates have been absorbing. The expected change in blood glucose due to insulin effects alone is compared to the actual observed changes in blood glucose. This difference is termed the insulin counteraction effect (ICE):
 
 ![dynamic carb effect equation ](img/dynamic_carb_effect.png)
 
-where, ICE (mg/dL/5 min) is the insulin counteraction effect, OA is the observed activity (mg/dL/5min) or observed change in blood glucose at time <i>t</i>, and IA is the insulin activity (mg/dL/5min). 
+where, ICE (mg/dL/5 min) is the insulin counteraction effect, OA is the observed activity (mg/dL/5min) or observed change in blood glucose at time <i>t</i>, and IA is the insulin activity (mg/dL/5min).
 
 Insulin counteraction effects are caused by more than just carbohydrates, and can include exercise, sensitivity changes, or incorrectly configured insulin delivery settings (e.g., basal rate, ISF, etc.). However, since the effect of carbohydrates is often dominant (after insulin), Loop can still make useful ongoing adjustments to its carbohydrate model by assuming that the increase in blood glucose is mainly carbohydrate absorption in the period following recorded meal entries.  
 
@@ -116,7 +124,7 @@ The insulin counteraction effect is converted into an estimated carbohydrate abs
 
 ![ice carb effect equation ](img/ice_carb_effect_equation.png)
 
-where AC is the number of carbohydrates absorbed (g/5min), ICE is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U), and ISF is the insulin sensitivity factor (mg/dL/U) at time <i>t</i>. 
+where AC is the number of carbohydrates absorbed (g/5min), ICE is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U), and ISF is the insulin sensitivity factor (mg/dL/U) at time <i>t</i>.
 
 If multiple meal entries are active (i.e., still absorbing), the estimated absorption is split between each carbohydrate entry in proportion to each carbohydrate entry’s minimum absorption rate. For example, if 72g carbohydrates with an expected absorption time of 4 hours was consumed at 12 pm, and another 72g of carbohydrates with an expected absorption time of 2 hours was consumed at 3 pm, then the minimum absorption rate (see MAR equation above) would be 12 g/hr and 6 g/hr respectively, or 1 g/5min and 0.5 g/5min.
 
@@ -130,8 +138,8 @@ Examining just the simple linear carbohydrate effect of these two meals:
 
 If we further expand this example, by assuming the following at 4pm:
 
-* that there are still carbohydrates left to be absorbed from both meals, 
-* that the estimated insulin counteraction effect (ICE) is +15 ![ICE units](img/ice_units.png), and 
+* that there are still carbohydrates left to be absorbed from both meals,
+* that the estimated insulin counteraction effect (ICE) is +15 ![ICE units](img/ice_units.png), and
 * the user’s CIR is 10 g/U and the ISF is 50 mg/dL/U,
 
 then the estimated amount of carbohydrates absorbed at 4pm would be 3g:
@@ -156,7 +164,8 @@ After the estimated absorbed carbohydrates have been subtracted from each meal e
 
 ## Retrospective Correction Effect
 
-!!!note ""
+!!!note
+
     The retrospective correction effect allows the Loop algorithm to account for effects that are not modeled with the insulin and carbohydrate effects, by comparing historical predictions to the actual blood glucose.
 
 In addition to the modeled effects of insulin and carbohydrates, there are many other factors that affect blood glucose (e.g., exercise, stress, hormones, etc.). Many of these effects are active for a period of time. By observing its own forecast error, Loop can estimate the magnitude of these effects and, by assuming that they will continue for some short period of time, incorporate them into the forecast to improve forecast accuracy.
@@ -252,22 +261,23 @@ Here’s an example below that shows the retrospective correction effect when th
 
 ![bg retrospective graph example](img/bgrc_graphic.png)
 
-## Blood Glucose Momentum Effect 
+## Blood Glucose Momentum Effect
 
-!!!note ""
+!!!note
+
     The blood glucose momentum effect incorporates a prediction component based on the assumption that recent blood glucose trends tend to persist for a short period of time. In other words, the best predictor of the future is the recent past.
 
-The blood glucose momentum portion of the algorithm gives weight or importance to recent blood glucose to improve the near-future forecast. Loop calculates the slope of the last 3 continuous CGM readings (i.e., the last 15 minutes) using linear regression. Using multiple points helps filter out noise in the CGM data while still responding fast to changing situations. That momentum slope (Mslope) is the approximate or average rate of change over the last 15 minutes, though it is normalized to 5 minutes so that the units are (mg/dL/5min). 
+The blood glucose momentum portion of the algorithm gives weight or importance to recent blood glucose to improve the near-future forecast. Loop calculates the slope of the last 3 continuous CGM readings (i.e., the last 15 minutes) using linear regression. Using multiple points helps filter out noise in the CGM data while still responding fast to changing situations. That momentum slope (Mslope) is the approximate or average rate of change over the last 15 minutes, though it is normalized to 5 minutes so that the units are (mg/dL/5min).
 
 The momentum slope is then blended into the next 20 minutes of predicted blood glucose from the other effects (i.e., insulin, carbohydrates, and retrospective correction effects). This, in essence, makes the next 20 minutes of blood glucose prediction more sensitive to recent blood glucose trends. The blending of the recent trend slope into the next 20 minutes is weighted so that the first prediction point (5 minutes into the future) is highly influenced by the slope, and the influence of the slope gradually decays over the 20 minute time period. The momentum effect can be expressed mathematically as:
 
 ![blood glucose momentum equation](img/momentum_equation.png)
 
-NOTE: The term ![blood glucose momentum term](img/momentum_term.png) is also applied to the combined insulin, carbohydrates, and retrospective correction effects to get the delta blood glucose prediction. 
+NOTE: The term ![blood glucose momentum term](img/momentum_term.png) is also applied to the combined insulin, carbohydrates, and retrospective correction effects to get the delta blood glucose prediction.
 
 The momentum effect can be illustrated with an example: if the last 3 blood glucose readings were 100, 103, and 106 mg/dL, then the slope would be 3 mg/dL per 5 minutes (0.6 mg/dL per minute). The amount of that recent trend or slope applied to the next 20 minutes of predictions (i.e., the next 4 predictions from the other effects) is roughly 100% (3 mg/dL per 5 min) at 5 minutes, 66% (2 mg/dL per 5 min) at 10 minutes, 33% (1 mg/dL per 5 min) at 15 minutes, and 0% (0 mg/dL per 5 min) at 20 minutes.
 
-Also, if the combined effect from the insulin, carbohydrates, and retrospective correction is assumed to be a constant 6 mg/dL/5min over the next 20 minutes, then the expected overall effect and the predicted blood glucose can be calculated as follows. 
+Also, if the combined effect from the insulin, carbohydrates, and retrospective correction is assumed to be a constant 6 mg/dL/5min over the next 20 minutes, then the expected overall effect and the predicted blood glucose can be calculated as follows.
 
 <table>
 <thead>

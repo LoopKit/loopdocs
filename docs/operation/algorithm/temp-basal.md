@@ -41,6 +41,7 @@ The amount of insulin needed, or dose, is calculated using the desired reduction
 ![basal dose equation](img/dose_equation.png)
 
 !!!note ""
+
     A major difference between traditional pump therapy and how the Loop calculates dose is that in pump therapy the current blood glucose is used to estimate the dose, whereas in the Loop algorithm the eventual and minimum blood glucose predictions are also used in determining dosing decisions.
 
 Loop then converts the dose into a basal rate using the Loop’s temporary basal rate duration of 30 minutes:

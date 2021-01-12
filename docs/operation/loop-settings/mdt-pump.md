@@ -5,6 +5,7 @@ Your Loop won’t have much showing initially until we get some basic settings i
 ## Prepare Medtronic Pump
 
 !!!info ""
+
     Before you begin the rest of the setup process, there are several steps on your Medtronic pump that you will need to complete prior to moving on with Loop setup. **DO NOT SKIP THESE STEPS OR YOUR LOOP WILL NOT WORK.**
 
 1. Turn off Patterns under the basal menu settings. This will force Loop to use your "Standard" basal rate schedule.</br></br>
@@ -40,8 +41,7 @@ You now need to follow a few simple screen prompts to add your Medtronic pump to
     <th><p align="inline"><img src="../img/pump_broadcasts.png" width="550"></p></th>
     <td>For x23 and x54 Medtronic pump users, there is a packet of information special to those pumps called MySentry messages. If you have never setup this part of the pump previously, you may see a screen, called "Pump Broadcasts", at this point in the setup process.</br></br>Follow the directions on the screen. They will require you to take some manual steps on your pump to "pair" it with your Loop app.</br></br>Basically, you will need to go to your pump's main menu, scroll down to Utilities, then Connect Devices, then Other Devices, turn that setting On, and then select Find Device. Once you do that, click on the `Continue` button in Loop app and the pairing will take place. This will allow those MySentry packets of information to flow to Loop app.</br></br>This step does not apply for x22 or x15 pump users, since those pumps do not have MySentry capabilities.</td>
     </table>
-    
-    
+
 Now that your pump is paired with Loop, you will be finishing these steps:
 
 1. Change your pump time using the Loop app (and read all the info on that screen)</br></br>
@@ -50,12 +50,11 @@ Now that your pump is paired with Loop, you will be finishing these steps:
 4. Leave the Preferred Data Souce on Event History </br></br>
 
 **Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.**  Event History must also be selected in order for prime events to be detected and NOT contribute to IOB during site changes. Please just leave the Preferred Data Source on Event History.</br></br>
-    
+
 <p align="center">
 <img src="../img/add_pump2.png" width="750">
 </p>
- 
+
 ## Next Step: Add CGM
- 
- Congrats! You've added your Medtronic pump to your Loop app. Now, click on the settings button in the upper left corner to take you back to Loop's settings menu. Your next step is to [Add CGM](https://loopkit.github.io/loopdocs/operation/loop-settings/cgm/) to your Loop app. After all, without CGM data, your Loop won't loop.
- 
+
+ Congrats! You've added your Medtronic pump to your Loop app. Now, click on the settings button in the upper left corner to take you back to Loop's settings menu. Your next step is to [Add CGM](cgm.md) to your Loop app. After all, without CGM data, your Loop won't loop.

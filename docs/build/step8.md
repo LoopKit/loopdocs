@@ -32,6 +32,7 @@ Because the update looks so innocuous and we all lead busy lives, we forget that
 
 
 !!!danger "Loop and iOS updates"
+
     For Loopers...the consequence to an iOS update is nothing immediate. Your Loop app won't die, it will keep humming along. </br></br>BUT, before you ***<u>update or rebuild</u>*** your Loop app on that phone, you will likely need to update your macOS and Xcode applications because of the newer iOS.  And you will need to do the updates/checks in a certain order:</br></br>
     1st: Check if your macOS has updates</br></br>
     2nd: Check for an Xcode update.</br></br>

@@ -130,7 +130,8 @@ This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spre
 
 ## Enable IFTTT Webhooks in your Nightscout site
 
-!!!info ""
+!!!info
+
     If you already have created IFTTT buttons previously to work with your NS site, you can skip this section.  If those buttons are working, then you've already added your MAKER_KEY and "maker" to your ENABLE line in Heroku.
 
 * To actually make that first applet work, we need to enter a "Maker Key" to get NS and IFTTT talking to each other.  Find your Maker Key by going to your IFTTT account, Services and then clicking on Webhooks.  (Your screen may not have as many services showing; the example account below just happens to already use several services.)
@@ -191,10 +192,11 @@ This IFTTT/Nightscout-Alarms folder will eventually contain numerous Google Spre
 <img src="../img/webhooks14.png" width="550">
 </p>
 
-!!!info ""
+!!!info
+
     This applet can't be created unless your filename (alarm spreadsheet) already exists.  If your 1st applet we created above hasn't run for a long time, the spreadsheets may not exist yet because the alarms haven't triggered.  You have two options...(1) manually create the file in your Google Drive so that you can finish the applet now or (2) wait several days/weeks for the alarms to happen and that will automatically create the files in your Google drive.</br></br>
     If you choose option 1, here's a partial list of some of the filenames you could create in advance:
-    
+
     * Loop isn't looping
     * Cannula age 48 hours
     * Cannula age 72 hours

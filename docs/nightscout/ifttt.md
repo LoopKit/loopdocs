@@ -19,8 +19,6 @@ First we need to gather one thing called your "hashed API Secret". In your inter
 <img src="../img/hashed_API2.png" width="750">
 </p> 
 
-
-
 ## Step 2: Create your "Applets"
 
 IFTTT calls their little actions that you'll create an "applet". I have no idea why. But, I will go along and use their terminology so we are all consistent. We are basically interested in creating applets that will be buttons on your phone to do cool things in Nightscout. So, you'll have a button that will log when you changed your sensor last...letting you see in Nightscout easily just how old a sensor is at any given time. Or you can create a button that will turn on an "exercise" override that you already programmed into your kid's Loop app. So, let's make our first applet (aka button).
@@ -88,16 +86,20 @@ IFTTT calls their little actions that you'll create an "applet". I have no idea 
 </p> 
 
 !!!danger "URL"
+
     `https://yoursite.herokuapp.com/api/v1/treatments.json` (for all IFTTT recipes that are NOT remote overrides...so things like cannula changes, sensor changes, pump battery changes, etc.)</br></br>
     Change the "yoursite" to your actual site's info.
-    
+
 !!!warning "Method"
+
     The method will be `POST`
 
 !!!info "Content Type"
+
     The content type will be `application/json`. 
 
 !!!danger "Body"
+
     The content of the body will depend on the action that you would like this particular button press to perform. While many recipes are available, any recipe that log carbs to NS will only display the carbs in Nightscout...Loop will not "use" those carbs in treatment or prediction math. The display of carbs in NS though may still be helpful for remote care givers to leave an indication that a low is being noticed and treated.  Some sample content for actions that may be useful in Loop:</br></br>
     **Pump Site Change**</br>
     {"enteredBy": "IFTTT-button", "eventType": "Site Change", "duration": 0, "secret": "your_hashed_api_goes_here!!!"}</br></br>
@@ -107,6 +109,7 @@ IFTTT calls their little actions that you'll create an "applet". I have no idea 
     {"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, please don't text me for a bit.  I'm taking a test.", "secret": "your_hashed_api_goes_here!!!"}</br></br>
 
 !!!warning "Special note for IFTTT to set a Remote Override with dev branch"
+
     Triggering a remote override with IFTTT takes a couple considerations;</br></br>
     1. You have followed [the directions for setting up remote overrides](https://loopkit.github.io/loopdocs/nightscout/remote-overrides/) in Nightscout already.</br></br>
     2. Remote overrides will use **`https://yoursite.herokuapp.com/api/v2/notifications/loop`** for the URL line of the applet. Notice that is different from the other type of applets' URL.</br></br>
@@ -120,10 +123,9 @@ IFTTT calls their little actions that you'll create an "applet". I have no idea 
     **Body message to cancel any override**</br>
     {"eventType": "Temporary Override Cancel", "secret": "your_hashed_api_goes_here!!!"}</br></br>
 
-
 * Click the `Create Action` button on the bottom of the screen when you finish.
 
-* Now is your chance to change the title of your applet now to something meaningful.  You can turn on notifications, too, using the slider shown. If you turn on the notifications, you will get an alert on your phone and pebble watch when the button press has been successfully deployed.  Finish the IFTTT button by clicking on the Finish button that appears.  
+* Now is your chance to change the title of your applet now to something meaningful.  You can turn on notifications, too, using the slider shown. If you turn on the notifications, you will get an alert on your phone and pebble watch when the button press has been successfully deployed.  Finish the IFTTT button by clicking on the Finish button that appears.
 
 <p align="center">
 <img src="../img/webhooks26.png" width="650">
