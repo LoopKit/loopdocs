@@ -26,7 +26,7 @@ Side note: If you are a (1) computer-savvy person and (2) already installed Home
 Ok, now that we have the user account confirmed, let's open the Terminal application on your computer. It is located in your Applications folder and then look in the Utilities subfolder...the Terminal application is in there like shown in the screenshot below.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/build/img/terminal.png" width="550">
+<img src="../img/terminal.png" width="550">
 </p>
 
 !!!info "New Apple M1 chip users: IMPORTANT STEP"
@@ -49,7 +49,7 @@ Now that you've located where the Terminal app is located in the Utilities folde
 Your screen should look like something like this after you copy it in...if it does, then go ahead and press return to continue on with the installation command.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/build/img/homebrew-copy-line.png" width="450">
+<img src="../img/homebrew-copy-line.png" width="450">
 </p>
 </br>
 
@@ -60,7 +60,7 @@ There will be a prompt asking if you want to continue.  Press return to continue
 Wait while the script does its thing...you’ll see info scroll by and then it will pause for a while. Eventually, it will be done and you’ll see something that says “Installation successful” and you’ll have a ready Terminal prompt again.</br></br>
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/build/img/carthage.jpg" width="450">
+<img src="../img/carthage.jpg" width="450">
 </p>
 </br>
 
@@ -99,4 +99,4 @@ Copy and paste that entire line into Terminal application. Then you can retry th
 
 ## Next Step: Download Xcode
 
-Now you are ready to move onto Step 8 to [download Xcode](https://loopkit.github.io/loopdocs/build/step8/).
+Now you are ready to move onto Step 8 to [download Xcode](step8.md).

@@ -29,9 +29,9 @@ Please visit [The Nightscout site](http://nightscout.github.io/nightscout/new_us
 
 ## Add Nightscout to Loop
 
-Once you finish setting up your new Nightscout site, don't forget to [enter the website into your Loop settings](https://loopkit.github.io/loopdocs/operation/loop-settings/services/#nightscout)! This way Loop will have access to your Nightscout site to upload all the wonderful data.
+Once you finish setting up your new Nightscout site, don't forget to [enter the website into your Loop settings](../operation/loop-settings/services.md#nightscout)! This way Loop will have access to your Nightscout site to upload all the wonderful data.
 
 ## Troubleshooting
 
-If your Nightscout site is not showing CGM (and Loop, if you are Looping) data within about 10 minutes of finishing your setup, then please follow these steps [here](https://loopkit.github.io/loopdocs/nightscout/troublehoot/) to troubleshoot.
+If your Nightscout site is not showing CGM (and Loop, if you are Looping) data within about 10 minutes of finishing your setup, then please follow these steps [here](troublehoot.md) to troubleshoot.
 

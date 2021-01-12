@@ -108,7 +108,7 @@ IFTTT calls their little actions that you'll create an "applet". I have no idea 
 
 !!!warning "Special note for IFTTT to set a Remote Override with dev branch"
     Triggering a remote override with IFTTT takes a couple considerations;</br></br>
-    1. You have followed [the directions for setting up remote overrides](https://loopkit.github.io/loopdocs/nightscout/remote-overrides/) in Nightscout already.</br></br>
+    1. You have followed [the directions for setting up remote overrides](remote-overrides.md) in Nightscout already.</br></br>
     2. Remote overrides will use **`https://yoursite.herokuapp.com/api/v2/notifications/loop`** for the URL line of the applet. Notice that is different from the other type of applets' URL.</br></br>
     3. The Body message of the applet needs to match the override already programmed in Loop app; the reason, reasonDisplay, and duration all need to match what is preset in your Loop app. The "duration" is giving in minutes in the body message (vs hours in Loop), and if the override is one that is "enabled indefinitely" then the duration is "infinite". The "reason" is the name of the override but NO EMOJI, and the "reasonDisplay" is the override name with the emoji. Check out the samples Body messages for overrides below. You will have to edit your body messages to match your reason and reasonDisplay. The target range and duration of the override does not need to be specified. </br></br>
     **Body message for override named "hormones"**</br>

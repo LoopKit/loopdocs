@@ -6,10 +6,10 @@ Loop provides discrete notifications on the iPhone and Watch which will appear o
 Most beep alarms are disabled for a much more discrete use of the omnipod. Only the following audible acknowledgments or alarms are currently used:
 
 * Pod activated acknowledgment when filling the pod with enough insulin when pairing a new Pod.
-* Pod expiration advisory alarm at 72 hours/3 days (which you can silence in the [pod status  settings](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#status))
-* Pod empty reservoir (which you can silence in the [pod status  settings](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#status))
-* Pod deactivation acknowledgment 
-* Pod fault alarm (also called a screamer) when reaching the max life of the Pod: 80 hours (3 days + 8 hours) or a fault/occlusion happens. (which you can silence using the [replace pod](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#pod-commands)) command in the pod settings page)
+* Pod expiration advisory alarm at 72 hours/3 days (which you can silence in the [pod status  settings](../loop-settings/omnipod-pump.md#status))
+* Pod empty reservoir (which you can silence in the [pod status  settings](../loop-settings/omnipod-pump/#status))
+* Pod deactivation acknowledgment
+* Pod fault alarm (also called a screamer) when reaching the max life of the Pod: 80 hours (3 days + 8 hours) or a fault/occlusion happens. (which you can silence using the [replace pod](../loop-settings/omnipod-pump.md#pod-commands)) command in the pod settings page)
 ## Notification settings for Loop
 
 You can customize the way notifications of Loop are behaving in the Settings App of the iPhone:
@@ -64,8 +64,8 @@ Normally you will have 5-30 minutes to replace the pod, but do know the pod can 
 
 ## Pod Expiration (Omnipod)
  
-You can customize the time of notification when to replace your pod any time from 1 hour up to 71 hours (3 days - 1 hour) [after staring a new pod](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#expiration-reminder) or you change the time later in the [pod configuration settings](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#configuration).
-The expiry alarm will always sound when the pod reaches a running full 3 days (72 hours) which you can silence [in the pod status settings](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/#status).
+You can customize the time of notification when to replace your pod any time from 1 hour up to 71 hours (3 days - 1 hour) [after staring a new pod](../loop-settings/omnipod-pump.md#expiration-reminder) or you change the time later in the [pod configuration settings]../loop-settings/omnipod-pump.md#configuration).
+The expiry alarm will always sound when the pod reaches a running full 3 days (72 hours) which you can silence [in the pod status settings](../loop-settings/omnipod-pump.md#status).
 
 <p align="center">
 <img src="../img/pod-expiration-notice.png" width="250">
@@ -75,7 +75,6 @@ The expiry alarm will always sound when the pod reaches a running full 3 days (7
 
 Loop will notify when battery levels have approximately 8-10 hours of battery life remaining.
 
-
 ## Remote Notifications
 
-Loop does not have a remote notification to other devices.  If you are a remotely monitoring parent, you will want to read [here](https://loopkit.github.io/loopdocs/nightscout/pushover/#pushover) about setting up pushover alerts using your Nightscout site if you want proactive notifications of looping related information.
+Loop does not have a remote notification to other devices.  If you are a remotely monitoring parent, you will want to read [here](../nightscout/../../nightscout/pushover.md#pushover) about setting up pushover alerts using your Nightscout site if you want proactive notifications of looping related information.

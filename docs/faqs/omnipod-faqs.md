@@ -19,7 +19,7 @@ No, pods are monogamous little creatures. They will pair with only one device at
 
 ## Can I cancel a temp basal Loop sets? How about a bolus?
 
-Yes, you can cancel a temp basal or a bolus in progress. There is a "suspend delivery" command that is easy to access by tapping on the [pod age icon in your Heads Up Display, upper right area](https://loopkit.github.io/loopdocs/operation/loop-settings/displays/#pod-age-omnipod-users). Suspending insulin delivery will cancel any running temp basal or bolus in progress. The suspend command will run indefinitely. A banner notification will be displayed on the Loop main screen while insulin delivery is suspended.
+Yes, you can cancel a temp basal or a bolus in progress. There is a "suspend delivery" command that is easy to access by tapping on the [pod age icon in your Heads Up Display, upper right area](../operation/loop-settings/displays.md#pod-age-omnipod-users). Suspending insulin delivery will cancel any running temp basal or bolus in progress. The suspend command will run indefinitely. A banner notification will be displayed on the Loop main screen while insulin delivery is suspended.
 
 <p align="center">
 <img src="../img/pump-suspend-banner.png" width="300">
@@ -47,7 +47,7 @@ In the early stages of development, there were. Thankfully to the hard work of P
 
 ## What do I do if a pod fails to pair?
 
-The most common time of pod errors on Loop will be during the pairing process. If you get a pod that is failing to pair, please see [this page](https://loopkit.github.io/loopdocs/troubleshooting/pod-pairing/) for steps on how to fix the failure and recover before you lose the pod.
+The most common time of pod errors on Loop will be during the pairing process. If you get a pod that is failing to pair, please see [this page](../troubleshooting/pod-pairing.md) for steps on how to fix the failure and recover before you lose the pod.
 
 ## What do you do to stop a screaming pod?
 Screaming pods can be silenced by carrying a paperclip. Simply put the paperclip in the small hole that is on the bottom (the side opposite where the cannula is) of the pod as shown. Push the paperclip in until you hear a little click, that click is breaking the circuit that lets the audible scream go. 

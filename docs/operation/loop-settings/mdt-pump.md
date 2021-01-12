@@ -1,6 +1,6 @@
 # Medtronic Pump Users
 
-Your Loop won’t have much showing initially until we get some basic settings input. The beginning step will be to add a pump to your Loop. If you are using a Medtronic pump, you can follow along for the rest of this page. If, however, you are using an Omnipod pump, please head over to [this page](https://loopkit.github.io/loopdocs/operation/loop-settings/omnipod-pump/) instead.
+Your Loop won’t have much showing initially until we get some basic settings input. The beginning step will be to add a pump to your Loop. If you are using a Medtronic pump, you can follow along for the rest of this page. If, however, you are using an Omnipod pump, please head over to [this page](omnipod-pump.md) instead.
 
 ## Prepare Medtronic Pump
 
@@ -57,5 +57,5 @@ Now that your pump is paired with Loop, you will be finishing these steps:
  
 ## Next Step: Add CGM
  
- Congrats! You've added your Medtronic pump to your Loop app. Now, click on the settings button in the upper left corner to take you back to Loop's settings menu. Your next step is to [Add CGM](https://loopkit.github.io/loopdocs/operation/loop-settings/cgm/) to your Loop app. After all, without CGM data, your Loop won't loop.
+ Congrats! You've added your Medtronic pump to your Loop app. Now, click on the settings button in the upper left corner to take you back to Loop's settings menu. Your next step is to [Add CGM](cgm.md) to your Loop app. After all, without CGM data, your Loop won't loop.
  

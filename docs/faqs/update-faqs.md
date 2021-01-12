@@ -10,7 +10,7 @@ Updating Loop is the same idea as what happens to your other apps on your iPhone
 
 ## Where should I start when I want to update my Loop?
 
-**ALWAYS start with the [Update Loop page](https://loopkit.github.io/loopdocs/build/updating/) before any new build that you'd be doing.** That page is important because it will offer information on the updates you need to do before building, as well as any late breaking things that might need to be considered.
+**ALWAYS start with the [Update Loop page](../build/updating.md) before any new build that you'd be doing.** That page is important because it will offer information on the updates you need to do before building, as well as any late breaking things that might need to be considered.
 
 Do not simply build with your old downloaded folder from months ago. There is a high likelihood that your original code from awhile ago is outdated. Grab new code and you will get the version that has all the latest and greatest features and bug fixes.
 

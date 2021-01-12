@@ -12,7 +12,7 @@ Quick side note: Do not quickly decide to pull an omnipod that isn't responding 
 !!!danger ""
     You don't care what the heck is causing the issue, you just want to get on with life as quickly as possible? Ok, fair enough, then do the following:
 
-    * Turn your RileyLink off/on at its physical power switch located on the side of the RileyLink. Use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a [screaming pod silencer tool](https://loopkit.github.io/loopdocs/faqs/omnipod-faqs/#what-do-you-do-to-stop-a-screaming-pod).
+    * Turn your RileyLink off/on at its physical power switch located on the side of the RileyLink. Use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a [screaming pod silencer tool](../../faqs/omnipod-faqs/#what-do-you-do-to-stop-a-screaming-pod).
     * Close your Loop app (upswiping it in the iPhone's app selector) and reopen it.
     
     <p align="center">
@@ -71,9 +71,9 @@ The obvious fix is to make sure the RileyLink is not so far away from the pump o
 
 Here's some things to check if you have frequent red loops:
 
-* Have you [cleaned your mLab database in Nightscout](https://loopkit.github.io/loopdocs/nightscout/mlab_cleanup/) recently? If your database gets backlogged (or Nightscout otherwise isn't working properly), Loop can get clogged up with a bunch of unfinished Nightscout uploads. This clogged condition can cause red loops. So, make sure you are periodically checking your mLab and cleaning it. Try deleting your Nightscout account from Loop settings and see if your Loop stops having red loops. If it does, then you'll need to assess what's going wrong in your Nightscout site and fix it. Most of the time that is your mLab database cleanup needing to be done.
+* Have you [cleaned your mLab database in Nightscout](../nightscout/mlab_cleanup/) recently? If your database gets backlogged (or Nightscout otherwise isn't working properly), Loop can get clogged up with a bunch of unfinished Nightscout uploads. This clogged condition can cause red loops. So, make sure you are periodically checking your mLab and cleaning it. Try deleting your Nightscout account from Loop settings and see if your Loop stops having red loops. If it does, then you'll need to assess what's going wrong in your Nightscout site and fix it. Most of the time that is your mLab database cleanup needing to be done.
 
-* Is your [RileyLink battery plugged in all the way](https://loopkit.github.io/loopdocs/build/step5/#assemble-rileylink) on the board? 
+* Is your [RileyLink battery plugged in all the way](../build/step5.md#assemble-rileylink) on the board? 
 
 * Has your RL been fully charged? Try charging your RL for an hour or two, make sure the red light comes on while charging. Try a new charger.
 

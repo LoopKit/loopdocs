@@ -140,9 +140,9 @@ If you choose to purchase from a remote or unknown seller, here are some tips fo
 
 * Ask for photos of the pump. Check to make sure the serial number of the pump on the backside matches the serial number of the pump showing in the display menu. Ask for a short video of the pump, or at least a photo of the pump turned on, so that you can see the pump's firmware and model number. Cracks and some wear on these pumps are expected. These pumps are not usually free of marks. Many people are successfully looping on pumps that have cracks and rub marks, but you may want to ask if you are concerned about any you see in photos.
 
-* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#motor-error). Those pumps will generally not work (or only work intermittently), however some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.
+* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](/troubleshooting/pump-errors/#motor-error). Those pumps will generally not work (or only work intermittently), however some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.
 
-* Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#crackmissing-piece-repairs).
+* Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](/troubleshooting/pump-errors/#crackmissing-piece-repairs).
 
 * Ask for shipping that includes a tracking number. USPS Priority Mail's smallest box is a great option.  It's only $7.20 domestically in the US and includes tracking. Ask the seller to add a small bit of packing protection such as bubble wrap around the pump to keep it safe during shipping. Make sure you get a tracking number within a reasonable period of time after you have paid.  
 
@@ -187,5 +187,5 @@ Insulet has announced their DASH system as an eventual replacement for Eros/Omni
 
 ## Next Step: Compatible CGM
 
-Now you are ready to move onto Step 4 to check if you have a [Compatible CGM](https://loopkit.github.io/loopdocs/build/step4/).
+Now you are ready to move onto Step 4 to check if you have a [Compatible CGM](step4.md).
 

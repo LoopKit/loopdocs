@@ -41,4 +41,4 @@ Libre (with BluCon or Miao Miao), Eversense, Medtronic Guardian sensors, etc.  Y
 
 ## Next Step: Order a RileyLink
 
-Now you are ready to move onto Step 5 to [Order a RileyLink](https://loopkit.github.io/loopdocs/build/step5/).
+Now you are ready to move onto Step 5 to [Order a RileyLink](step5.md).

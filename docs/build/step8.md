@@ -38,7 +38,7 @@ Because the update looks so innocuous and we all lead busy lives, we forget that
 
 The chart below is a helpful visual of the minimum versions you'll need based on your iOS. 
 
-* macOS: If you are running an iPhone with iOS 14, you need to make sure your macOS is 10.15.4 at a minimum as the first step. If you don't have the minimum version, go to [Step 1 Compatible Computer](https://loopkit.github.io/loopdocs/build/step1/#check-your-macos) and follow directions for updating your macOS. 
+* macOS: If you are running an iPhone with iOS 14, you need to make sure your macOS is 10.15.4 at a minimum as the first step. If you don't have the minimum version, go to [Step 1 Compatible Computer](step1.md#check-your-macos) and follow directions for updating your macOS. 
 
 * Xcode: Now that your macOS is updated to 10.15.4 minimum, the App Store in your computer will have Xcode 12.0.1 (or newer) available for you to download/update. 
 
@@ -62,5 +62,5 @@ So, if you see that error message realize you may have to update your macOS to b
     
 ## Next Step: Xcode Preferences
 
-Now you are ready to move onto Step 9 to [work on Xcode Preferences](https://loopkit.github.io/loopdocs/build/step9/).
+Now you are ready to move onto Step 9 to [work on Xcode Preferences](step9.md).
 

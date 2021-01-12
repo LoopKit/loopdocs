@@ -49,23 +49,22 @@ If you think you are immune from needing to update and want to skip this Step 1.
 Apple updates its License Agreement for the Developer Program frequently. You need to login to your [developer account](https://developer.apple.com/account/) to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/build/img/license.png" width="550">
+<img src="../img/license.png" width="550">
 </p>
 
 
 ## Step 3: Download Updated Loop Code
 
-After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on **ONE** of the links below to download an updated version of the Loop code. If you aren't a developer or debugging, stick to Master branch.  Click on ONE of the links below to download Loop code...hint hint...**<u>click on the Master branch for 99% of users</u>**.
+After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want). Click on **ONE** of the links below to download an updated version of the Loop code. If you aren't a developer or debugging, stick to Master branch.  Click on ONE of the links below to download Loop code...hint hint...**click on the Master branch for 99% of users**.
 
-</br></br>
-<p align="center">
-[Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)</br></br>
-********************
+[Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)
 
-[Dev branch---in very rough shape right now, please only build if developer interested in debugging](https://github.com/LoopKit/Loop/archive/dev.zip)</br></br>
-[Automatic-bolus branch---do your research before using as well, if you are asking what it is then you haven't researched enough yet](https://github.com/LoopKit/Loop/archive/automatic-bolus.zip)</br></br>
+---
 
-*********************
+[Dev branch---in very rough shape right now, please only build if developer interested in debugging](https://github.com/LoopKit/Loop/archive/dev.zip)
+[Automatic-bolus branch---do your research before using as well, if you are asking what it is then you haven't researched enough yet](https://github.com/LoopKit/Loop/archive/automatic-bolus.zip)
+
+---
 
 ## Step 4a: Delete old provisioning profiles
 
@@ -107,16 +106,16 @@ An ounce of prevention is worth a pound of cure.  Since we already have Terminal
     
 
 ## Step 5: Build like normal
-From here, go straight to [Step 14 Build Loop app](https://loopkit.github.io/loopdocs/build/step14/) and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
+From here, go straight to [Step 14 Build Loop app](step14.md) and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
 
 !!!info "Double check expiration date"
     If you want to make sure that step 4 above (deleting the provisioning profiles) went well...go ahead and check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app will safely function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.
 
-Note: If this is a computer that hasn't built Loop before, you would want to make sure to do the [Build Step 7: install Homebrew](https://loopkit.github.io/loopdocs/build/step7/) before trying to build Loop using that computer.
+Note: If this is a computer that hasn't built Loop before, you would want to make sure to do the [Build Step 7: install Homebrew](step7.md) before trying to build Loop using that computer.
 
 ## Step 6: Check Build Errors page if needed
     
 !!!danger "CHECK BUILD ERRORS PAGE"
-    If you get a build error...still check the [Build Errors page](https://loopkit.github.io/loopdocs/build/build_errors/). Because even if your exact error isn't there...the information you NEED to provide when asking for help is listed out on that page. And that information is critical. CRITICAL to be able to troubleshoot your build error.
+    If you get a build error...still check the [Build Errors page](build_errors.md). Because even if your exact error isn't there...the information you NEED to provide when asking for help is listed out on that page. And that information is critical. CRITICAL to be able to troubleshoot your build error.
 
 

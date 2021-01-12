@@ -7,7 +7,7 @@ Medtronic's easy bolus button has been the cause of several accidental boluses w
 
 ## Health app permissions
 
-Do not let other apps, such as Spike App or MyFitnessPal, on your iPhone write carbohydrates to Health app. Loop could read those carbohydrates and you could be dosed for those carbohydrates. You can read more about Health permissions [here](https://loopkit.github.io/loopdocs/build/health/#loop-permissions).
+Do not let other apps, such as Spike App or MyFitnessPal, on your iPhone write carbohydrates to Health app. Loop could read those carbohydrates and you could be dosed for those carbohydrates. You can read more about Health permissions [here](../build/health.md#loop-permissions).
 
 ## Finish your Medtronic priming
 

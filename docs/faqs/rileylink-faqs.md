@@ -88,10 +88,11 @@ In general, you want to get in the habit of carrying RileyLink with you, yes. A 
 Nope. Nor is it sweat-proof. Be careful.
 
 ## What is the most common issue for RileyLink?
-People not [pushing the LiPo battery](https://loopkit.github.io/loopdocs/setup/requirements/rileylink/#assembling-rl) in all the way when they first assemble their RileyLink. It takes quite a bit of push to get the plug inserted far enough. If not secured well, Loop will have more frequent problems.
+People not [pushing the LiPo battery](../build/step5.md#assemble-rileylink) in all the way when they first assemble their RileyLink. It takes quite a bit of push to get the plug inserted far enough. If not secured well, Loop will have more frequent problems.
 
 ## Can I use more than one RileyLink at a time? Will it improve anything?
-Yes, you can have two turned on, but it won't help anything really. Loop only uses one RileyLink at a time. If you have several RileyLinks turned on in Loop settings, your Loop will only look for another RileyLink after Loop fails for over 15 minutes on the original RileyLink. In my experience, it is rare that Loop would fail for more than 15 minutes and a second RileyLink would help in the same environment. If one RileyLink gets damaged though and you need to swap out to a second RileyLink, there are no issues with that. 
+Yes, you can have two turned on, but it won't help anything really. Loop only uses one RileyLink at a time. If you have several RileyLinks turned on in Loop settings, your Loop will only look for another RileyLink after Loop fails for over 15 minutes on the original RileyLink. In my experience, it is rare that Loop would fail for more than 15 minutes and a second RileyLink would help in the same environment. If one RileyLink gets damaged though and you need to swap out to a second RileyLink, there are no issues with that.
 
 ## Can I run Loop without a RileyLink?
+
 Nope.

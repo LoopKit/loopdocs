@@ -4,7 +4,7 @@
 
 Loop works Dexcom G4 with share, G5, G6, Share and the Medtronic CGM systems compatible with Looping pumps.
 
-Read the details [here](https://loopkit.github.io/loopdocs/build/step4/).
+Read the details [here](../build/step4.md).
 
 ## Do I need wait for a new sensor session to start Loop?
 

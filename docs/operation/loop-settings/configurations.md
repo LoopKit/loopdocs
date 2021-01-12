@@ -12,7 +12,7 @@ This page will cover two general parts of the Loop's settings, circled in red in
 
 ## Closed/Open Loop
 
-The Closed Loop switch controls whether Loop automatically enacts its recommended temporary basal adjustments (closed loop mode) or whether you have to manually tap to enact the recommendations (open loop mode). In addition to the visual indicator on this switch discussed below, the [Loop's status icon on the main screen](https://loopkit.github.io/loopdocs/operation/loop-settings/displays/#loop-status) will also appear differently depending on the mode selected. Open loop mode will have an incomplete circle for the Loop's status icon.</br></br>. 
+The Closed Loop switch controls whether Loop automatically enacts its recommended temporary basal adjustments (closed loop mode) or whether you have to manually tap to enact the recommendations (open loop mode). In addition to the visual indicator on this switch discussed below, the [Loop's status icon on the main screen](displays.md#loop-status) will also appear differently depending on the mode selected. Open loop mode will have an incomplete circle for the Loop's status icon.</br></br>.
 
 #### <u>Open Loop Mode</u>
 
@@ -115,7 +115,7 @@ The differences between the three exponential models (two Rapid-Acting and Fiasp
 Click the + in the upper right to add carb ratios for various times of day. Loop works best if you have [tested and optimized](https://kdisimone.github.io/looptips/settings/settings/) your carb ratio settings for accuracy.
 
 !!!info "Beware of other apps writing carbs to Health app"
-    If you are using a third-party app (such as Spike or MyFitness) that can write carbohydrates to the phone's Health app, you will need to edit the permissions to make sure Loop doesn't double carb entries.  You should disable the third-party app's permissions in Health so that they can only `read` and not `write`.  See [Carb Entries with Third Party apps](https://loopkit.github.io/loopdocs/operation/features/carbs/#third-party-apps) for more information about this setting.
+    If you are using a third-party app (such as Spike or MyFitness) that can write carbohydrates to the phone's Health app, you will need to edit the permissions to make sure Loop doesn't double carb entries.  You should disable the third-party app's permissions in Health so that they can only `read` and not `write`.  See [Carb Entries with Third Party apps](../features/carbs.md#third-party-apps) for more information about this setting.
 
 ## Insulin Sensitivities
 Insulin Sensitivity Factor (ISF) is the same term as Correction Factor used in some clinics and endocrinology offices. ISF represents the drop in blood glucose levels expected from one unit of insulin. Click the + in the upper right to add insulin sensitivities for various times of day. Loop works best if you have [tested and optimized](https://kdisimone.github.io/looptips/settings/settings/) your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
@@ -124,7 +124,6 @@ Incorrectly set ISF is the most common cause of roller coaster BGs for new Loop 
 
 ## Next Step: Loop Services
 
-You have completed the required configurations and settings in your Loop app. If you have a Nightscout site you'd like to connect Loop to, please continue on to the [Loop Services page](https://loopkit.github.io/loopdocs/operation/loop-settings/services). 
+You have completed the required configurations and settings in your Loop app. If you have a Nightscout site you'd like to connect Loop to, please continue on to the [Loop Services page](services.md).
 
-If you are not integrating with a Nightscout site and don't want any optional logging services connected, then please proceed to the [Loop's displays page](https://loopkit.github.io/loopdocs/operation/loop-settings/displays). Understanding the Loop displays can be a valuable tool to understanding your Loop's actions, and also for troubleshooting, if you are having issues.
-
+If you are not integrating with a Nightscout site and don't want any optional logging services connected, then please proceed to the [Loop's displays page](displays.md). Understanding the Loop displays can be a valuable tool to understanding your Loop's actions, and also for troubleshooting, if you are having issues.

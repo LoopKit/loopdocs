@@ -30,4 +30,4 @@ The two most common errors in filling out this section are:
 
 ## Next Step: Loop Displays
 
-Great job, almost finished! Now that you have completed your services, let's move onto understanding your [Loop displays](https://loopkit.github.io/loopdocs/operation/loop-settings/displays). Understanding the Loop displays can be a valuable tool for understanding your Loop's actions, and also for troubleshooting, if you are having issues.
+Great job, almost finished! Now that you have completed your services, let's move onto understanding your [Loop displays](displays.md). Understanding the Loop displays can be a valuable tool for understanding your Loop's actions, and also for troubleshooting, if you are having issues.

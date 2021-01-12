@@ -56,5 +56,5 @@ If you've searched the docs and read the info already, then please include that 
 
 ## Next Step: Download Loop Code
 
-Now you are ready to move onto Step 13 to [Download Loop Code](https://loopkit.github.io/loopdocs/build/step13/).
+Now you are ready to move onto Step 13 to [Download Loop Code](step13.md).
 

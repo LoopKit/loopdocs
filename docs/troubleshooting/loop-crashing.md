@@ -30,6 +30,6 @@ If your app expires, you simply need to plug your phone back into the computer a
 
 This issue has been fixed in the latest release of Loop.  If your app crashes because of an improperly set correction range, verify you are running Loop v2.0.
 
-If you continue to experience similar crashes with Loop v2.0 or later, generate an [Issue Report](https://loopkit.github.io/loopdocs/troubleshooting/overview/#issue-report) and submit it to the Loop developers via GitHub.
+If you continue to experience similar crashes with Loop v2.0 or later, generate an [Issue Report](overview.md#issue-report) and submit it to the Loop developers via GitHub.
 
 

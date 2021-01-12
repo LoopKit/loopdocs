@@ -62,4 +62,4 @@ This is simple...just tap the heart icon to turn off your override at any time. 
 
 ## Remote overrides (in initial testing)
 
-**Under very initial testing...** You can also use your Nightscout site to activate/deactivate your Loop's override presets. To accomplish this, you will need to do some legwork as outlined on [this page for how how to setup Remote Overrides in Nightscout](https://loopkit.github.io/loopdocs/nightscout/remote-overrides/)
+**Under very initial testing...** You can also use your Nightscout site to activate/deactivate your Loop's override presets. To accomplish this, you will need to do some legwork as outlined on [this page for how how to setup Remote Overrides in Nightscout](../nightscout/../../nightscout/remote-overrides.md)

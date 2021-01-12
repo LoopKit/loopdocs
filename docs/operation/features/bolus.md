@@ -41,7 +41,7 @@ You can read another example of this extended bolusing technique over on [LoopTi
 
 While you adapt to new bolusing techniques, it is important to monitor closely to see what works for you. It will take some trial and error to get it right. For meals like Chinese food, where there is a mix of fast carbs and slow carbs, you may want to break the total meal entry into a couple mixed carb entries to help Loop provide the best bolus recommendation upfront. Additionally, some people account for the fats/proteins that digest by adding slow carbs with long absorption times for meals that cause late BG rises.
 
-A very useful tool is to check back on your Insulin Counteraction Effects graph to see how your original entry compared to how Loop perceived your final meal impacts. You can read more about that tool [here](https://loopkit.github.io/loopdocs/operation/features/ice/).
+A very useful tool is to check back on your Insulin Counteraction Effects graph to see how your original entry compared to how Loop perceived your final meal impacts. You can read more about that tool [here](ice.md).
 
 ## Glucodyn
 Using the [Glucodyn](http://perceptus.org) model can help you simulate new bolusing strategies.  Glucodyn allows you to simulate your post-prandial BGs based on your particular ISF, carb ratio, and carbs. You can simulate split boluses and watch their impact on simulated BG responses.  The underlying math of the Glucodyn model was the basis of Loop's insulin/carb calculations in early Loop versions. The math has changed since then, however the model still provides a useful visualization about the interactions between DIA, carb absorption times and insulin dosing.

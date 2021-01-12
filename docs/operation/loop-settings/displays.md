@@ -32,7 +32,7 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 <table>
 <tr>
 <td><img style="float: left;" src="../img/grey_loop.jpg" width="250"></td>
-<td>A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.  If you can't get your grey loop to turn green, please see the <a href="https://loopkit.github.io/loopdocs/troubleshooting/green-loop/" target="blank">Grey Loop troubleshooting page</a> for tips.</td>
+<td>A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.  If you can't get your grey loop to turn green, please see the  <a href="/troubleshooting/green-loop/" target="blank">Grey Loop troubleshooting page</a> for tips.</td>
 </tr>
 <tr>
 <td><img style="float: left;" src="../img/green_loop.jpg" width="250"></td>
@@ -44,7 +44,7 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 </tr>
 <tr>
 <td><img style="float: left;" src="../img/red_loop.jpg" width="250"></td>
-<td>A red circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the <a href="https://loopkit.github.io/loopdocs/troubleshooting/yellow-red-loop/" target="blank">Yellow and Red Loop troubleshooting page</a> for tips on how to get your green Loop back.  Clicking on the red circle will also pop-up the last error message to help guide your troubleshooting.</td>
+<td>A red circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the <a href="../../../troubleshooting/yellow-red-loop/" target="blank">Yellow and Red Loop troubleshooting page</a> for tips on how to get your green Loop back.  Clicking on the red circle will also pop-up the last error message to help guide your troubleshooting.</td>
 </tr>
 <tr>
 <td><img style="float: left;" src="../img/open_loop.jpg" width="250"></td>
@@ -183,13 +183,13 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 <img src="../img/carb_graph.jpg" width="400">
 </p>
 
-The Carbohydrate chart displays the carbs used by Loop to predict BG changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the [Carb Entries page](https://loopkit.github.io/loopdocs/operation/features/carbs/) for more information about editing carb entries.
+The Carbohydrate chart displays the carbs used by Loop to predict BG changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the [Carb Entries page](../features/carbs.md) for more information about editing carb entries.
 
 <p align="center">
 <img src="../img/carb_edit.png" width="300">
 </p>
 
-For more information about the Insulin Counteraction Effects information found in the Carb History, please see [here](https://loopkit.github.io/loopdocs/operation/features/ice/).
+For more information about the Insulin Counteraction Effects information found in the Carb History, please see [here](../features/ice.md).
 
 ## Tool Bar
 
@@ -199,16 +199,16 @@ For more information about the Insulin Counteraction Effects information found i
 
 The toolbar is where your inputs to the Loop behavior take place.  The individual components of the toolbar are, left to right:
 
-* **Carb entry tool**- click on this tool to enter carbs into the Loop app.  Loop will not read carb entries from the pump or Nightscout, so you must use the carb entry tool in Loop app in order to have carbs accounted for by the Loop.  Detailed info regarding how to enter, save, and edit carb entries can be found in the [Carb Entries page](https://loopkit.github.io/loopdocs/operation/features/carbs/).
+* **Carb entry tool**- click on this tool to enter carbs into the Loop app.  Loop will not read carb entries from the pump or Nightscout, so you must use the carb entry tool in Loop app in order to have carbs accounted for by the Loop.  Detailed info regarding how to enter, save, and edit carb entries can be found in the [Carb Entries page](../features/carbs.md).
 
-* **Pre-meal target** - click this tool to set the [Pre-Meal temporary override target](https://loopkit.github.io/loopdocs/operation/features/premeal/).  This target will remain in effect (1) for 60 minutes, (2) until a carb entry is saved, or (3) until the target is toggled off manually, whichever comes first.  The background coloring of the Pre-Meal target will turn green when active and there will be a dark blue line on the BG chart indicating where the override target is enabled.
+* **Pre-meal target** - click this tool to set the [Pre-Meal temporary override target](../features/premeal.md).  This target will remain in effect (1) for 60 minutes, (2) until a carb entry is saved, or (3) until the target is toggled off manually, whichever comes first.  The background coloring of the Pre-Meal target will turn green when active and there will be a dark blue line on the BG chart indicating where the override target is enabled.
 
-* **Bolus tool** - click on this tool to bring up the bolus tool.  Normally, this screen will automatically open on its own and function as a bolus wizard when a meal is saved on the carb entry tool screen.  The only time the bolus tool will not automatically open is if the amount of carbs saved is determined to be adequately covered by the insulin on board already.  During rapidly rising BGs, where Loop doesn't have an adequate temp basal rate to cover the pace at which BGs are rising, you may try clicking on the bolus tool to see if Loop is recommending a correction bolus to help control the BG spike.  For more information about the Bolus tool features and use, see the [Bolus Entries page](https://loopkit.github.io/loopdocs/operation/features/bolus/).
+* **Bolus tool** - click on this tool to bring up the bolus tool.  Normally, this screen will automatically open on its own and function as a bolus wizard when a meal is saved on the carb entry tool screen.  The only time the bolus tool will not automatically open is if the amount of carbs saved is determined to be adequately covered by the insulin on board already.  During rapidly rising BGs, where Loop doesn't have an adequate temp basal rate to cover the pace at which BGs are rising, you may try clicking on the bolus tool to see if Loop is recommending a correction bolus to help control the BG spike.  For more information about the Bolus tool features and use, see the [Bolus Entries page](../features/bolus.md).
 
-* **Overrides** - click this tool to set an [temporary override preset](https://loopkit.github.io/loopdocs/operation/features/workout/).
+* **Overrides** - click this tool to set an [temporary override preset](../features/workout.md).
 
-* **Loop Settings** - click on this tool to make changes to any of your [Loop settings](https://loopkit.github.io/loopdocs/operation/overview).
+* **Loop Settings** - click on this tool to make changes to any of your [Loop settings](../overview.md).
 
 ## Next Step: RileyLink Menu
 
-You are almost there! One more Loop menu that you need to know about is your RileyLink. You can access your RileyLink menu by tapping on your pump/pod image in Loop settings. Click [here](https://loopkit.github.io/loopdocs/operation/loop-settings/rileylink/) to read more about your RileyLink menu.
+You are almost there! One more Loop menu that you need to know about is your RileyLink. You can access your RileyLink menu by tapping on your pump/pod image in Loop settings. Click [here](rileylink.md) to read more about your RileyLink menu.

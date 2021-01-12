@@ -26,4 +26,4 @@ Check [LoopTips.org](https://looptips.org) for a discussion on how to [check all
 
 ## Next Step: Make Plans for Loop Data
 
-Now you are ready to move onto Step 11 to [Make Plans for Loop Data](https://loopkit.github.io/loopdocs/build/step11/).
+Now you are ready to move onto Step 11 to [Make Plans for Loop Data](step11.md).

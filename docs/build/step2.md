@@ -48,12 +48,13 @@ Apple has decided that those models have lived their useful life and can no long
 Side note for people who are seasoned Loop users and know about branches and such: Currently (as of October 2020), Loop's dev branch requires devices to have iOS 13 or newer. There's no set timeframe for when dev will next be merged into master.
 
 ## Find your device's iOS
+
 Your phone's iOS version can be found under the Settings app, General, About as shown below.
 
 <p align="center">
-<img src="https://loopkit.github.io/loopdocs/build/img/ios.jpg" width="300">
+<img src="../img/ios.jpg" width="300">
 </p>
 
 ## Next Step: Compatible Pump
 
-Now you are ready to move onto Step 3 to check if you have a [Compatible pump](https://loopkit.github.io/loopdocs/build/step3/).
+Now you are ready to move onto Step 3 to check if you have a [Compatible pump](step3.md).
