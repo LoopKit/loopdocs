@@ -75,6 +75,7 @@ The Nightscout alarms are based on the Heroku settings that you have input speci
 Nightscout pump battery levels, if you leave things at default installation, will not trigger alarms.  If however you add a setting of `PUMP_ENABLE_ALERTS` to `true`, you will receive pump battery notifications according to the levels shown in the parenthesis above.  For example, your x23 pump is reporting its levels in percent, therefore you'd receive a yellow warning alarm at 30% and an urgent red alarm at 20%.  Your x22 pump however is reporting its levels at voltage readings, therefore you'd receive a warning yellow alarm at 1.35v and an urgent red alarm at 1.30v.
 
 !!!info ""
+
     Are the default NS alarm levels going to work for you?  The answer depends on what type of battery level you are using, what model pump you are using, and how much advance notification you want to receive before needing to change a pump battery.  There is a bit of personal preference and experimentation to finding what works for you.
 
 <p align="center">

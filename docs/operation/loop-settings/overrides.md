@@ -25,6 +25,7 @@ Recapping: If you set an overall insulin needs adjustment below 100%, you are te
 Overrides will work while you are Looping. Sounds obvious, right? But, the thing to remember is that the adjustments (multipliers) that overrides make are not saved back to your Medtronic pump or Omnipod. They only exist in the Loop app.
 
 !!!danger "If you walk away from iPhone and/or RileyLink..."
+
     If you stop Looping (i.e., walk away from your gear), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates AS DEFINED IN YOUR LOOP SETTINGS. Your adjusted needs as set-up in any override will not continue if your Loop is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and RileyLink and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals.
 
 ## Making your override presets

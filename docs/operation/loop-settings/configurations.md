@@ -35,6 +35,7 @@ When the Closed Loop switch is in the (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   On) posi
 If you run into problems or errors with your Loop, an Issue Report can be used to help identify where the problem is occurring. The Issue Report is automatically generated and you can share it via email. Frequently, if you seek help with a technical problem, an Issue Report will provide insight for the developers and troubleshooters. Please email yourself an Issue Report anytime you are questioning Loop actions or displays. You can then use that Issue Report later to help debug the problem.
 
 !!!info "Before you continue further, a word about BG units"
+
     Entries into the configuration section will be available in mg/dL or mmol/L automatically, based upon how your blood glucose values are received. By default they are set to mg/dL, however once CGM values arrive in mmol/L these Loop settings can be entered in mmol/L. **If you are planning to use mmol/L, be sure to wait to set your entries until after you have started to receive CGM values in Loop.** If you do these in the wrong order, then your charts and entries may have incorrect units.
 
 ## Correction Range
