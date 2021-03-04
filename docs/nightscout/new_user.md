@@ -29,7 +29,7 @@ There's great news though! The documentation and instructions for building your 
 Please visit [The Nightscout site](http://nightscout.github.io/nightscout/new_user/) for directions on how to set up your new Nightscout website. 
 
 ### Add Loop Variables
-There are a few Loop-specific variables you should configure to get the most out of your Nightscout site. Follow the [instructions to retrofit an existing Nightscout site](http://nightscout.github.io/nightscout/update_user/) or use the "Next ->" button at the top of the screen.
+There are a few Loop-specific variables you should configure to get the most out of your Nightscout site. Follow the [instructions to retrofit an existing Nightscout site](https://loopkit.github.io/loopdocs/nightscout/update_user/) or use the "Next ->" button at the top of the screen.
 
 ## Add Nightscout to Loop
 
