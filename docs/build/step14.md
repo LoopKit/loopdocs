@@ -5,7 +5,7 @@
     * 10-15 minutes if a repeat builder
 
 !!!info "Summary"
-    * Open the Loop code you downloaded in Step 13
+    * Open the Loop code you downloaded in [Step 13](https://loopkit.github.io/loopdocs/build/step13/)
     * Connect the phone to the computer
     * Set the phone to not lock for awhile
     * Trust the computer (on the phone)
@@ -13,16 +13,16 @@
     * Register the device
     * Sign the 4 targets
     * Press the build button
-    * Enter computer password four times during the build
+    * Enter computer password four times during the build (if this is your first ever build)
     * Watch in awe as you just built your very own Loop app
 
 !!!warning "FAQs"
-    * **"I got a build error! YIKES...what do I do?"** Check out the Build Errors page for all the solutions you'd need.
+    * **"I got a build error! YIKES...what do I do?"** Check out the [Build Errors](https://loopkit.github.io/loopdocs/build/build_errors/) page for all the solutions you'd need.
     * **"The build seems to take a long time, is that normal?"** Yes, the first build of a new download will take quite a long time. Just be patient...one of the build steps to take *much* longer than all the others. The build process does always end in a success or failure message, so just wait it out until you see one of those displayed.
 
 ## Open Loop project in Xcode
 
-Go to your Downloads folder, open your downloaded Loop code folder and double click on Loop.xcodeproj. For most everyone, this folder will be named  `Loop-master`.
+Go to your Downloads folder, open your downloaded Loop code folder and double click on Loop.xcodeproj. If you downloaded dev branch, your folder would be named `Loop-dev` and similar for `Loop-master` download.
 
 <p align="center">
 <img src="../../build/img/loop_code.png" width="750">
@@ -65,7 +65,7 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
     * If this is the first time your iPhone has been plugged into this computer, you will need to open the iPhone and select "Trust this Computer" before your device will be useable in the menu selection.</br></br>
     
 !!!danger "Most Common Mistake"
-    * The most common mistake in this step is not selecting your actual phone as shown in the second screenshot below. The default list is just a name of general phone models under a subheading called "iOS Simulators"...don't be fooled by those. Your ACTUAL phone will be up above that list of all the various simulator phone models. Make sure you select your actual phone, not just a simulator phone model.
+    * The most common mistake in this step is not selecting your actual phone as shown in the second screenshot below. The default list is just a name of general phone models under a subheading called "iOS Simulators"...don't be fooled by those. Your ACTUAL phone will be up above that list of all the various simulator phone models.  You may need to scroll to the top of the list in order to see it.  Make sure you select your actual phone, not just a simulator phone model.
 
 <p align="center">
 <img src="../img/select_device.png" width="750">
@@ -77,7 +77,7 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
 
 ## Sign Four Targets
 
-Once you select your device (your iPhone's name), we are ready to start signing the four targets. We will start with the Loop target, the first one on the target list.  Under the "Signing" area, select the dropdown menu where it currently says "none". Choose your team that you'd like to sign with. If you select a team name with (personal team), your app will expire after 7 days. If you select a team name without that (personal team), your app will last a full year.  If you never signed up for a free developer account, you will not have a (personal team) showing. Make sure you keep the "automatically manage signing" box checked above the team selection area.
+Once you select your device (your iPhone's name), we are ready to start signing the four targets. We will start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have "All" selected near the top and then select the dropdown menu where it currently says "none". Choose your team that you'd like to sign with. If you select a team name with (personal team), your app will expire after 7 days. If you select a team name without that (personal team), your app will last a full year.  If you never signed up for a free developer account, you will not have a (personal team) showing. Make sure you keep the "automatically manage signing" box checked above the team selection area.
 
 <p align="center">
 <img src="../img/team.png" width="750">
@@ -90,7 +90,8 @@ Once you choose your signing team, Xcode will automatically generate provisionin
 </p>
 
 !!!danger "Free Developer Account Users: READ ME"
-    If you are using a free developer account to sign your targets, you will need to do an extra step. As a free developer, you are restricted from building apps that have Siri and Push capabilities built-in. Loop has both Siri and Push capabilities...so you will need to disable them before proceeding on with signing and building your app. Click on the small x next to the Siri and Push lines located at the bottom of your Signing & Capabilities page. You need to do this in both the Loop (Siri and Push) and WatchApp Extension (Siri only) targets. 
+    If you are using a free developer account to sign your targets, you will need to do an extra step. As a free developer, you are restricted from building apps that have Siri or push notification capabilities built-in. Loop has both of these capabilities...so you will need to disable them before proceeding on with signing and building your app. The push notification capability is used for setting remote overrides; disabling it will not affect regular notifications (like ones for Loop not looping). Click on the small x next to the Siri and push notification lines located at the bottom of your Signing & Capabilities page. You need to do this in both the Loop and WatchApp Extension targets.
+
     <p align="center">
     <img src="../img/siri-errors.png" width="750">
     </p>
@@ -180,7 +181,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 ## Build Finished
 
 !!! info "First time building on a new device?"
-    If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings->General->Device Management (or rofiles, Profiles & Device Management on newer iOS) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to [this Build Error section](https://loopkit.github.io/loopdocs/build/build_errors/#device-management-could-not-launch-loop) to find the solution.
+    If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings->General->Device Management (or profiles, Profiles & Device Management on newer iOS) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to [this Build Error section](https://loopkit.github.io/loopdocs/build/build_errors/#device-management-could-not-launch-loop) to find the solution.
     <p align="center">
     <img src="../img/trust_device.jpg" width="750">
     </p>

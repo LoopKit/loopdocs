@@ -27,7 +27,7 @@ The next screen will offer two areas where you will need to enter information:
 
 * Delivery Limits: Delivery Limits are both your maximum basal rate and your maximum bolus amount. Your maximum basal rate will limit how aggressive your Loop will be able to set temporary basals to treat high blood glucose. Typically, new users should set this value conservatively around 3 times your highest scheduled basal rate until your comfort and experience with Loop develops.
 
-* Basal Rates: Enter your scheduled basal rates, beginning at midnight. Consistent with PO use, the scheduled basal rates have a maximum of 24 entries, no 0 u/hr entries allows, and rate increments of 0.05 u/hr.
+* Basal Rates: Enter your scheduled basal rates, beginning at midnight. Consistent with Omnipod use, the scheduled basal rates have a maximum of 24 entries, no 0 u/hr entries allows, and rate increments of 0.05 u/hr.
 
 <p align="center">
 <img src="../img/pod-settings-screen.png" width="650">

@@ -21,7 +21,7 @@ This is a pretty simple step...check that you have a compatible pump to use Loop
 
 * Medtronic 515 or 715 (any firmware)
 * Medtronic 522 or 722 (any firmware)
-* Medtronic 523 or 723 (firmware 2.4 or older)
+* Medtronic 523 or 723 (firmware 2.4 or lower)
 * Medtronic Worldwide Veo 554 or 754 (firmware 2.6A or lower)
 * Medtronic Canadian/Australian Veo 554 or 754 (firmware 2.7A or lower)
 * Omnipod "Eros" pods
@@ -56,7 +56,7 @@ A pump’s firmware is the internal software that runs your pump.  Older Medtron
     The firmware on all 515/715 and 522/722 model Medtronic pumps are all compatible with Loop. You will only need to check the firmware version for 523/723 and 554/754 model Medtronic pumps.</br></br>
     + Medtronic 515 or 715 --> any firmware</br>
     + Medtronic 522 or 722  --> any firmware</br>
-    + Medtronic 523 or 723 --> firmware 2.4 or older</br>
+    + Medtronic 523 or 723 --> firmware 2.4 or lower</br>
     + Medtronic Worldwide Veo 554 or 754 --> firmware 2.6A or lower</br>
     + Medtronic Canadian/Australian Veo 554 or 754 --> firmware 2.7A or lower</br>
 
@@ -161,7 +161,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 ## Extra Details on Omnipods
 
 !!!warning "Reminder and Disclaimer"
-    Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read the documents and familiarize yourself with Loop before using. 
+    Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read these documents and familiarize yourself with Loop before using. 
 
 ### Eros
 
