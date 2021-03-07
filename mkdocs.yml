@@ -8,7 +8,7 @@ markdown_extensions:
     - toc:
         permalink: ⌁
 
-pages:
+nav:
 - Home: 'index.md'
 - FAQs:
     - 'Using This Site FAQs': 'faqs/docs-faqs.md'
