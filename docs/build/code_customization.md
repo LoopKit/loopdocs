@@ -2,13 +2,13 @@
 Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.
 
 !!!info "Line numbers may change"
-    Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers are slightly different than the current version of Loop code.  These instructions have been updated for Loop v2.0 master branch. If you can't find the same exact line on that line number listed, then look nearby and you'll likely find it just a couple lines away.
+    Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code. These instructions have been updated for Loop v2.2.4 master branch. If you don't see an exact match on the line number listed, then use the Xcode / Find / Find in Project (or Workspace) menu to search for a Keyword or Phrase shown in the associated line. If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help.
 
 ### Disable Authentication for Bolusing
 
 Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization:
 
- Modify Line 201 in the Loop>>View Controllers>>BolusViewController.swift.  Add the `false &&` as shown in the screenshot below:
+ Modify Line 529 in the Loop>>View Controllers>>BolusViewController.swift.  This is a perfect example of how line numbers might be different.  The screenshot below was taken with Loop v2.0 when the line number was 201; with v2.2.4, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
 
 <p align="center">
 <img src="../img/custom-id.png" width="750">
@@ -83,5 +83,3 @@ The rate of change of the carb and bolus entry pickers when using the digital cr
 <p align="center">
 <img src="../img/sensitivity2.png" width="800">
 </p>
-
-
