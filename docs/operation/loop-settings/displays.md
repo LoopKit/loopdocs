@@ -206,7 +206,7 @@ For more information about the Insulin Counteraction Effects information found i
 
 The toolbar is where your inputs to the Loop behavior take place.  The individual components of the toolbar are, left to right:
 
-* **Carb entry tool**- click on this tool to enter carbs into the Loop app.  Loop will not read carb entries from a Medtronic pump or Nightscout, so you must use the carb entry tool in Loop app in order to have carbs accounted for by the Loop.  Detailed info regarding how to enter, save, and edit carb entries can be found in the [Carb Entries page](../../features/carbs/).
+* **Carb entry tool**- click on this tool to enter carbs into the Loop app.  Loop will not read carb entries from a Medtronic pump or Nightscout, so you must use the carb entry tool in Loop app in order to have carbs accounted for by the Loop.  Detailed info regarding how to enter, save, and edit carb entries can be found in the [Carb Entry page](../../features/carbs/).
 
 * **Pre-meal target** - click this tool to set the [Pre-Meal temporary override target](../../features/premeal/).  (If you have not configured a pre-meal target under Loop Settings, this icon will be inactive - some people prefer this to avoid accidently tapping it.) This target will remain in effect (1) for 60 minutes, (2) until a carb entry is saved, or (3) until the target is toggled off manually or by tapping on the override icon, whichever comes first.  The background coloring of the Pre-Meal target will turn green when active and there will be a dark blue line on the BG chart indicating where the override target is enabled.
 
