@@ -96,7 +96,7 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 <table>
 <tr>
 <td><img src="../img/battery.jpg" width="200"></td>
-<td>For x23, x54 pumps, the battery icon will show 100/75/50/25% increments just as the pump does.  As the battery level decreases, the icon will turn from grey to yellow to red.  For x22 pumps, the battery icon will read discrete % values.  </br></br>The warning colors/levels on Loop's battery indicator work in conjunction with the type of battery selected.  If you change battery types, please make sure to update your battery selection in the Loop app settings.   </br></br>The pump's on-screen battery indicator is not a good indicator of remaining battery life for the purposes of looping.  Loop's pump communications will fail from low battery levels sooner than the insulin delivery will fail.  The Loop's battery level warnings are designed to give you approximately 8 hours of notice before the pump battery will need changing.</td>
+<td>For x54 pumps, the battery icon will show 100/75/50/25% increments just as the pump does.  As the battery level decreases, the icon will turn from grey to yellow to red.  For x22, x23 pumps, the battery icon will read discrete % values.  </br></br>The warning colors/levels on Loop's battery indicator work in conjunction with the type of battery selected.  If you change battery types, please make sure to update your battery selection in the Loop app settings.   </br></br>The pump's on-screen battery indicator is not a good indicator of remaining battery life for the purposes of looping.  Loop's pump communications will fail from low battery levels sooner than the insulin delivery will fail.  The Loop's battery level warnings are designed to give you approximately 8 hours of notice before the pump battery will need changing.</td>
 </tr>
 </table>
 
@@ -105,7 +105,7 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 <table>
 <tr>
 <td><img src="../img/pod-reservoir.jpg" width="175"></td>
-<td>The pod icon will remain grey and plain until insulin volume decreases.  At 50 units or less insulin remaining, the reservoir icon will turn yellow. At 20 units or less remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds. When the reading is 0 units, there may be up to 4 unit of insulin available but don't count on it. If the pod senses insulin can no longer be delivered, the pod will have a sustained audible alarm (the scream). Tapping Replace Pod in Loop should silence the alarm.</td>
+<td>The pod icon will remain grey and plain until insulin volume decreases.  At 50 units or less insulin remaining, the reservoir icon will turn yellow. At 20 units or less remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds. </br></br>When the reading is 0 units, there may be up to 4 unit of insulin available but don't count on it. If the pod senses insulin can no longer be delivered, the pod will have a sustained audible alarm (the scream). Tapping Replace Pod in Loop->Pod->Settings should silence the alarm.</td>
 </tr>
 </table>
 
@@ -114,7 +114,7 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 <table>
 <tr>
 <td><img src="../img/pod-age.jpg" width="250"></td>
-<td>The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red, the pod will begin the periodic alarm, and the pod age icon will show a "replace pod" message in the HUD. When you reach 80 hours of pod use, the pod will have a sustained audible alarm (the scream) and stops all insulin delivery. Tapping Replace Pod in Loop should silence the alarm.</td>
+<td>The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red, the pod will begin the periodic alarm, and the pod age icon will show a "replace pod" message in the HUD. </br></br>When you reach 80 hours of pod use, the pod will have a sustained audible alarm (the scream) and stops all insulin delivery. Tapping Replace Pod in Loop->Pod->Settings should silence the alarm.</td>
 </tr>
 </table>
 
@@ -189,7 +189,7 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 </p>
 
 
-The Carbohydrate chart displays the carbs used by Loop to predict BG changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen. Please read the [Carb Entries page](../../features/carbs/) for more information about editing carb entries.
+The Carbohydrate chart displays the carbs used by Loop to predict BG changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carbohydrates history and you can edit/delete any previous entries through that screen. Please read the [Carb Entry page](../../features/carbs/) for more information about editing carb entries.
 
 
 <p align="center">
@@ -210,12 +210,14 @@ The toolbar is where your inputs to the Loop behavior take place.  The individua
 
 * **Pre-meal target** - click this tool to set the [Pre-Meal temporary override target](../../features/premeal/).  (If you have not configured a pre-meal target under Loop Settings, this icon will be inactive - some people prefer this to avoid accidently tapping it.) This target will remain in effect (1) for 60 minutes, (2) until a carb entry is saved, or (3) until the target is toggled off manually or by tapping on the override icon, whichever comes first.  The background coloring of the Pre-Meal target will turn green when active and there will be a dark blue line on the BG chart indicating where the override target is enabled.
 
-* **Bolus tool** - click on this tool to bring up the bolus tool.  Normally, this screen will automatically open on its own and function as a bolus wizard when a meal is saved on the carb entry tool screen. But you can click on this icon anytime to manually bolus. During rapidly rising BGs, where Loop doesn't have an adequate temp basal rate to cover the pace at which BGs are rising, you may try clicking on the bolus tool to see if Loop is recommending a correction bolus to help control the BG spike. Or if you know want to super bolus (trade basal later for bolus now), you might use this to enter an hour of so of basal rate in addition to the recommendation - Loop will set zero Temp Basal next cycle. For more information about the Bolus tool features and use, see the [Bolus Entries page](../../features/bolus/).
+* **Bolus tool** - click on this tool to bring up the bolus tool. Normally, this screen will automatically open on its own and function as a bolus wizard when a meal is saved on the carb entry tool screen. But you can click on this icon anytime to manually bolus. During rapidly rising BGs, where Loop doesn't have an adequate temp basal rate to cover the pace at which BGs are rising, you may try clicking on the bolus tool to see if Loop is recommending a correction bolus to help control the BG spike. Or if you want to trade bolus now for basal later (super bolus), you can enter a bolus greater than Loop recommends - Loop will set zero Temp Basal next cycle. For more information about the Bolus tool features and use, see the [Bolus page](../../features/bolus/).
 
-* **Overrides** - click this tool to set an [temporary override preset](../../features/workout/).
+* **Overrides** - click this tool to set an [Override](../../features/workout/).
 
-* **Loop Settings** - click on this tool to make changes to any of your [Loop settings](../../overview).
+* **Loop Settings** - click on this tool to make changes to any of your [Loop settings](../../overview/#configurations).
 
 ## Next Step: RileyLink Menu
 
-You are almost there! One more Loop menu that you need to know about is your RileyLink (or other radio-link). You can access your RileyLink menu by tapping on your pump/pod image in Loop settings. Click [here](../rileylink/) to read more about your RileyLink menu.
+You are almost there! One more Loop menu that you need to know about is your RileyLink (or other radio-link) Device. You can access your device menu by tapping on the pump/pod image in Loop settings (or HUD), look for the DEVICES section and tap on a "My Device Name" row that has a green slider. If you don't know what that means, check out the Pump Pairing section for Adding a Pump [Medtronic](../mdt-pump/#pump-pairing) or [OmniPod](../omnipod-pump/#select-rileylink).
+
+Click [here](../rileylink/) to read more about what to expect to see when you tap on "My Device Name".
