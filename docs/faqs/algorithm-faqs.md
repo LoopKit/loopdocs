@@ -1,6 +1,5 @@
 # Algorithm FAQs
 
-
 ## Does Loop "learn" or detect changes in your insulin needs?
 
 No. Loop assumes the settings you've provided are correct. If outside factors (such as hormones, illness, exercise, medications, etc) affect your underlying settings that determine insulin needs (basals, insulin sensitivity factor, carb ratio) you may need to manually adjust your settings. Loop will not "learn" or "assume" that your underlying needs have changed. Instead, Loop is designed to react to the changes in blood glucose and its insulin dosing decisions are based on the settings that you have entered in the app.
@@ -12,5 +11,3 @@ Perhaps in subsequent versions of Loop, auto-adjustment of settings or machine l
 ## What does negative Active Insulin mean?
 
 When Loop withholds or suspends some of your expected basal insulin, that starts an accumulation of insulin deficit. Similar to if you have a kinked cannula and insulin is not delivered, you'd call yourself "lacking insulin". That is the same concept of having negative active insulin (aka negative insulin on board). When you have negative insulin on board, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative insulin on board regularly, you probably need to [adjust/test your settings](https://kdisimone.github.io/looptips/settings/settings/).
-
-## 

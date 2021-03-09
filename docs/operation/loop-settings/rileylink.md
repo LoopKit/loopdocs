@@ -6,9 +6,7 @@ Helpful tip: If you are ever going to be near other Loop users, you may want to 
 
 Depending on which pump you have connected to your Loop app, your RL menu will look different. On the left below is the typical RL menu when using Medtronic pump, and on the right is with an Omnipod. As you can see, both have in common a section called "Device", but after that only the Medtronic pumps will have additional commands in the RileyLink menu.
 
-<p align="center">
-<img src="../img/rl-comp.png" width="450">
-</p>
+![img/rl-comp.png](img/rl-comp.png)
 
 ## Device
 
@@ -18,11 +16,10 @@ The settings under the Device section are mostly for your information only. The 
 
 * The Signal Strength is the strength of the Bluetooth signal between the iPhone and RileyLink.  It is **not** the signal strength of the radio communications with the pump/pod.  The lower the number, the stronger the connection. As you move the RL and iPhone closer/farther apart, you will be able to see the signal strength change. In a pinch, this can be used to help locate a lost RileyLink in the house.
 
-<p align="center">
-<img src="../img/RL_bt.jpg" width="350">
-</p>
+![img/RL_bt.jpg](img/RL_bt.jpg)
 
 ## Pump
+
 The Pump ID and Pump Model will be automatically filled in from your pump.
 
 ## Commands

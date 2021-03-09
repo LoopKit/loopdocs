@@ -24,7 +24,7 @@ If you are using a version of Loop older than v1.3.2 (or using Preferred Data So
 
 ## Prime Menu
 
-!!!Warning
+!!!warning
 
     When you prime tubing on a Medtronic pump, make sure to complete the priming menu commands.
 
