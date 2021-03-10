@@ -20,7 +20,7 @@ Before you start trying to resolve your red errors...start with the most obvious
 
 5. **Did you get a fresh download of Loop code, don't just recycle an old download that you built with a long time ago?** That old version may not be compatible with new iOS and new Xcode versions.
 
-6. **Are you are using a free developer account?** Make sure you finished the [removal of Siri and Push Notification capabilities](https://loopkit.github.io/loopdocs/build/step14/#sign-four-targets).
+6. **Are you are using a free developer account?** Make sure you finished the [removal of Siri and Push Notification capabilities](/build/step14/#sign-four-targets).
 
 ## First good step to 95% of all errors
 
@@ -32,10 +32,8 @@ If you have checked all those steps above and think you have a true build error.
 4. Copy and paste this command and press return: `rm -rf ~/Library/Developer/Xcode/DerivedData` Note: you won't see any message back if the command runs successfully.
 5. **(As of October 12, 2020...please ignore this step for now.  Don't do it as Amplitude framework will cause this command to fail prematurely right now. When Amplitude is fixed, then I'll delete this note.) **Enter the command `cd ~/downloads/loop-master && carthage update`.  **NOTE:  YOU MAY HAVE TO CHANGE THE COMMAND SLIGHTLY if your folder isn't named loop-master as shown in the command.**  If your loop folder isn't named loop-master and instead is loop-dev or some other folder name...change the command to match your folder's actual name. Replace the "loop-master" with your folder's actual name. Carthage update will take about 15-25 minutes to run successfully.  A successful carthage update will look like the following:
 
-</p>
-<p align="center">
-<img src="../img/carthage-update-success.png" width="550">
-</p>
+![img/carthage-update-success.png](img/carthage-update-success.png)
+
 6. Return to Xcode and now trying building your app again.
 
 If the build fails again, look through the list below and see if you can match up your error message with one specific error messages listed in the later section of this page. If you really can't find your solution (PLEASE LOOK for it...you need to see the circled bits to know where to look perhaps. There's a section below to help you with finding the error message), then post for help. BUT, use the section below to post. WE CANNOT HELP without that info covered in the section.
@@ -44,7 +42,7 @@ If the build fails again, look through the list below and see if you can match u
 
 STOP!!  Read this section! Important!
 
-Before you post in Zulipchat or Looped Group asking for help with build errors, <u>do your work first</u>. The build errors listed below (and the obvious checks listed above) are very successful ***IF PEOPLE READ THIS PAGE***. The volunteer group of people answering questions in Looped and Zulipchat would love to spend more time on improving Loop in other ways than answering build error questions that can be answered by using this page as a first step.
+Before you post in Zulipchat or Looped Group asking for help with build errors, do your work first. The build errors listed below (and the obvious checks listed above) are very successful ***IF PEOPLE READ THIS PAGE***. The volunteer group of people answering questions in Looped and Zulipchat would love to spend more time on improving Loop in other ways than answering build error questions that can be answered by using this page as a first step.
 
 Therefore, first use the error topics (listed in sections below) to try to resolve your build error yourself. Then, if you need to post for help because this page did not fix your problem, you'll need to include information with the post so we (the troubleshooters) know you read this page and where you are in your troubleshooting attempts
 
@@ -55,7 +53,7 @@ Therefore, first use the error topics (listed in sections below) to try to resol
     * Specify if you are using a free or paid account, and if free...confirm you deleted Siri and Push Notification capabilities
     * Confirm you are not using an Xcode beta or iOS beta version (so we don't have to ask, actually type "I am not using beta versions"...this will save a lot of time and hassle)
     * Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.  NOT phone pics.  See below for instructions on how to do this.
-    * **<u>State which fixes from the below list that you have already tried AND post the screenshots of the results of those fix attempts.</u>**
+    * State which fixes from the below list that you have already tried AND post the screenshots of the results of those fix attempts.
 
 Helpful tip: Shift-Command-4-spacebar will give you a screenshot tool that you can use to click on the Xcode window to grab a screenshot. The screenshot will save to your desktop so you can include it in your post. Phone photos of your computer screen won't likely be of sufficient clarity to read the needed information and often cuts off valuable information that we look for in the various parts of the Xcode window. Use the whole Xcode window's screenshot when posting for help.
 
@@ -63,10 +61,7 @@ Helpful tip: Shift-Command-4-spacebar will give you a screenshot tool that you c
 
 To begin fixing the error, use the Report Navigator view to find your error message.
 
-</p>
-<p align="center">
-<img src="../img/report-nav.png" width="750">
-</p>
+![img/report-nav.png](img/report-nav.png)
 
 The key is to (1) ***READ THE ERROR MESSAGE*** and then (2) ***FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW***.
 
@@ -80,14 +75,11 @@ Notice how in the screenshots in the topics below, there are red circles highlig
 
 For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with simply "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find your solution.
 
-</p>
-<p align="center">
-<img src="../img/search-errors.png" width="650">
-</p>
+![img/search-errors.png](img/search-errors.png)
 
 ## Specific Error Messages
 
-### Error: homebrew-core is a shallow clone.
+### Error: homebrew-core is a shallow clone
 
 If you get an error about homebrew-core being a "shallow clone""
 You will need to follow the instructions given in the error, and update your homebrew installation with the following command:
@@ -98,9 +90,7 @@ You will need to follow the instructions given in the error, and update your hom
 
 If you see an error message that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone. Update your Xcode version.
 
-<p align="center">
-<img src="../img/device-support-files.jpg" width="750">
-</p></br>
+![img/device-support-files.jpg](img/device-support-files.jpg)
 
 Often people get confused at this point because their App Store may be telling them "no updates available" for Xcode, so they incorrectly assume that they have the most current Xcode.  
 
@@ -110,36 +100,29 @@ How are the versions all related? Use the figure below to determine your minimum
 
 (Source for the figure below is [wikipedia](https://en.wikipedia.org/wiki/Xcode#11.x_series))
 
-<p align="center">
-<img src="../img/minimum-related.png" width="750">
-</p></br>
+![img/minimum-related.png](img/minimum-related.png)
 
 If you're using iOS 13.4.x on your iPhone, you'll need Catalina macOS 10.15.x at a minimum to be able to see Xcode 11.4.x in the App Store for download. Therefore, update to Catalina and then update to Xcode 11.4.x to resolve your build error message about "device support logs missing".
-
 
 ### No such module 'LoopKit' or similar message
 
 If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then re-run the fix listed above.
 
-</p>
-<p align="center">
-<img src="../img/exit-code-65.png" width="850">
-</p>
+![img/exit-code-65.png](img/exit-code-65.png)
 
 ### Developer License Update
-Error message: "**<u>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.</u>**"
+
+Error message: "**The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement.**"
 
 Solution: You'll need to log onto your developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
-<p align="center">
-<img src="../img/license.png" width="750">
-</p>
+
+![img/license.png](img/license.png)
 
 ### Problems with Homebrew
+
 Error message: This one could be a variety of error messages, so there's not one in particular. You may see "Command PhaseScriptExecution failed with a nonzero exit code", but that same message could apply to other sources of error. So look for more identifying information about the error code. If you see something about "unable to create /user/local/Homebrew/.git/index.lock: file exists" then you have a Homebrew problem, as shown in the red circle below.
 
-<p align="center">
-<img src="../img/homebrew-git-lock.jpg" width="750">
-</p>
+![img/homebrew-git-lock.jpg](img/homebrew-git-lock.jpg)
 
 Solution: You'll need to uninstall Homebrew and then resinstall. Two simple copy and paste commands in Terminal.
 
@@ -155,22 +138,13 @@ Now try building your Loop app again, you shouldn't have any problems.
 
 ### Could not get a container directory URL
 
-Error message: "**<u>Could not get a container directory URL. Please ensure App Groups are set up correctly in entitlements.</u>**"
+Error message: "**Could not get a container directory URL. Please ensure App Groups are set up correctly in entitlements.**"
 
-</p>
-<p align="center">
-<img src="../img/container-1.png" width="750">
-</p>
+![img/container-1.png](img/container-1.png)
 
-</p>
-<p align="center">
-<img src="../img/container-2.png" width="750">
-</p>
+![img/container-2.png](img/container-2.png)
 
-</p>
-<p align="center">
-<img src="../img/container-3.png" width="750">
-</p>
+![img/container-3.png](img/container-3.png)
 
 To resolve this error, you will need to click on the Loop target's signing area and then the plus-sign in the App Groups area under the signing. Copy and paste the bundle indentifier into the new container that starts with `group.` and then add `Group` to the end of the name. Click OK to save.
 
@@ -178,32 +152,21 @@ The final App Group should now have a blue check box, the name should start with
 
 ### Missing Command Line Tools
 
-Error message:  "**<u>Invalid active developer path (/Library/Developer/CommandLineTools)</u>**" or "**<u>unable to find utility "xcodebuild", not a developer tool or in PATH</u>**"
+Error message:  "**Invalid active developer path (/Library/Developer/CommandLineTools)**" or "**unable to find utility "xcodebuild", not a developer tool or in PATH**"
 
-</p>
-<p align="center">
-<img src="../img/command-line-error-1.jpg" width="550">
-</p>
+![img/command-line-error-1.jpg](img/command-line-error-1.jpg)
 
-</p>
-<p align="center">
-<img src="../img/command-line-error-2.jpg" width="550">
-</p>
+![img/command-line-error-2.jpg](img/command-line-error-2.jpg)
 
 Solution: Go to your Xcode preferences and under the Locations tab, select "Xcode 11.3" in the dropdown menu for Command Line Tools.
 
-</p>
-<p align="center">
-<img src="../img/command-line-error-3.png" width="550">
-</p>
+![img/command-line-error-3.png](img/command-line-error-3.png)
 
 ### Device Management could not launch Loop
 
 Error message: "Could not launch "Loop". Verify the Developer App certificate for your account is trusted on your device. Open Settings and navigate to General -> Device Management, then select your Developer App certificate to trust it."
 
-<p align="center">
-<img src="../img/trust_device.jpg" width="750">
-</p>
+![img/trust_device.jpg](img/trust_device.jpg)
 
 Solution: If you get this message and are unable to find the Device Management option in your phone settings, then we need to do a little extra step to clear out some old info.
 
@@ -227,40 +190,27 @@ If your problem persists after that, then you can use a total reset to clear out
 
 Error message: "You already have a current iOS Development certificate or a pending certificate request."
 
-<p align="center">
-<img src="../img/pending_certification_request.jpg" width="750">
-</p>
+![img/pending_certification_request.jpg](img/pending_certification_request.jpg)
 
 Solution: This error message has just recently started to appear for some new Loop builders. To resolve the issue, please log in to your Developer account at [developer.apple.com](https://developer.apple.com) and then click on "Certificates, Identifiers & Profiles".  Under that screen, you will see "Development" under the "Certificates" section in the column on the left.  You will need to click on the certificates, and choose to "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"
 
-<p align="center">
-<img src="../img/revoke1.png" width="750">
-</p>
+![img/revoke1.png](img/revoke1.png)
 
 After you do that, return to Xcode and open up Xcode preferences.  Under the Accounts section of Preferences, click on the minus sign to delete your Apple ID.
 
-<p align="center">
-<img src="../img/account.png" width="650">
-</p>
+![img/account.png](img/account.png)
 
 Re-enter your Apple ID (yes...add that account right back that you literally just deleted), return to your Loop's target signing areas in Xcode and your error message should have resolved itself now as a new certificate will have been issued and a provisioning profile should have been created automatically.
 
 For double measure, you can verify that the iOS development certificates are all in good working order by clicking on your "Manage Certificates" in your Xcode Preferences, Accounts and viewing the iOS development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.
 
-<p align="center">
-<img src="../img/verify_cert.png" width="650">
-</p>
-
+![img/verify_cert.png](img/verify_cert.png)
 
 ### Command CodeSign failed
 
-Error message: "**<u>errSecInternalComponent,  Command CodeSign failed with a nonzero exit code</u>**"
+Error message: "**errSecInternalComponent,  Command CodeSign failed with a nonzero exit code**"
 
-</p>
-<p align="center">
-<img src="../img/errsecinternal.jpg" width="850">
-</p>
-
+![img/errsecinternal.jpg](img/errsecinternal.jpg)
 
 Solution:  This error message is likely due to inadvertently saying "no" to allowing Keychain Access or changing your computer or AppleID password. Regardless, the solution is as follows:
 
@@ -268,10 +218,7 @@ Solution:  This error message is likely due to inadvertently saying "no" to allo
 2. Open your Keychain Access application (found in Applications within the Utilities folder, similar to where Terminal app is found)
 3. In the upper left corner of keychain access, make sure you have the keychain `login` highlighted and then right-click the lock next to the `login`.  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.
 
-</p>
-<p align="center">
-<img src="../img/keychain4.png" width="450">
-</p>
+![img/keychain4.png](img/keychain4.png)
 
 4. Open your Loop project again in Xcode.
 5. In the main Xcode menu (grey menu bar at the very top of your Apple display area), select the word `Product` and then select the option for `Clean`. (keyboard shortcut is shift-command-k)
@@ -279,36 +226,31 @@ Solution:  This error message is likely due to inadvertently saying "no" to allo
 
 ### Unrecognized arguments: --cache-builds
 
-Error message: "**<u>Unrecognized arguments: --cache-builds</u>**"
+Error message: "**Unrecognized arguments: --cache-builds**"
 
-</p>
-<p align="center">
-<img src="../img/cache-builds.png" width="850">
-</p>
+![img/cache-builds.png](img/cache-builds.png)
 
-</p>
-<p align="center">
-<img src="../img/exit-code-1-cartfile.jpg" width="850">
-</p>
-
+![img/exit-code-1-cartfile.jpg](img/exit-code-1-cartfile.jpg)
 
 Solution: Please open your Terminal app found in the Applications>>Utilities folder and then enter `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`  Confirm installation by pressing enter, and then typing in your computer password.  When the installation finishes, use the command `brew link --overwrite carthage`.  After those two steps, you can close out Terminal app, return to Xcode and press the build/play button again.
 
-
 ### Abort with Payload
-Error message: "**<u>Abort with payload</u>**"  Your app will only open briefly with a white screen and then close, if you build with this error.
-<p align="center">
-<img src="../img/abort_payload.png" width="750">
-</p>
+
+Error message: "**Abort with payload**"  Your app will only open briefly with a white screen and then close, if you build with this error.
+
+![img/abort_payload.png](img/abort_payload.png)
+
 Solution: This error message is caused by having Loop download folder in an iCloud mapped drive.  Move your download folder back to the Downloads folder, then rebuild.
 
 ### Apple Watch: Loop app not appearing
-Error: **<u>Apple watch app is not appearing</u>**.
+
+Error: **Apple watch app is not appearing**.
 
 Solution: Usually because you have not updated to watchOS prior to when you built Loop, or you didn't have your Apple watch paired at the time of building Loop.  Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click `Install` for the Loop app listed at the very bottom under "available apps".
 
 ### Apple Watch: Loop app not installing
-Error: **<u>The Loop app appears on the list of apps available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL"</u>**.
+
+Error: **The Loop app appears on the list of apps available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL"**.
 
 Solution:  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watch face and select the "Trust" button.  
 

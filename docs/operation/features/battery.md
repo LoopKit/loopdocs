@@ -10,15 +10,11 @@ To understand pump battery levels, you first need to know a little about **batte
 
 Alkaline batteries have a relatively steady voltage drop over time, as shown below.  Notice the shape of the curve has a significant amount of time in the 1.3 to 1.2 volts range, and a relatively smooth decline to about 1.2 volts.
 
-<p align="center">
-<img src="../img/alkaline.jpg" width="250">
-</p>
+![img/alkaline.jpg](img/alkaline.jpg)
 
 Lithium batteries have a much steadier voltage output over time, as shown below.  Notice how the shape of the curve is relatively flat for a large portion of the battery life before suddenly off around 1.3 volts.
 
-<p align="center">
-<img src="../img/lithium.jpg" width="250">
-</p>
+![img/lithium.jpg](img/lithium.jpg)
 
 What does the above information mean in terms of Looping?  A lithium battery at 1.3v is going to have a much quicker time to death than an alkaline battery sitting at 1.3v.  You might only get a couple of hours of looping left when a lithium battery is at 1.3v, but an alkaline battery at 1.3v might go for several more days.  So when we talk about setting alarm levels in either system, your battery type is an important consideration.
 
@@ -43,8 +39,8 @@ In summary, that little pump battery indicator on the Medtronic pump screen is O
 * in the temperature environment similar to their testing.
 
 !!!info ""
-    Loop users should not rely on their Medtronic pump screen's pump battery indicator, and instead use the Loop's pump battery level indicator.
 
+    Loop users should not rely on their Medtronic pump screen's pump battery indicator, and instead use the Loop's pump battery level indicator.
 
 ## Loop's Pump Battery Level Indicator
 
@@ -54,7 +50,6 @@ Keeping the information about battery discharge curves in mind, Loop developers 
 * For x15 and x22 model users, the Loop's pump battery level will move in discrete % increments.
 
 Based on the battery type selected and the pump model being used, the Loop's pump battery level notifications are designed to give the user about 8 hours of notice before pump communications are likely to fail.  The Loop user should have some additional time after pump comms fail before actual insulin delivery would stop.
-
 
 ## Nightscout Pump Battery Display
 
@@ -69,31 +64,28 @@ The Nightscout information regarding pump battery levels will depend on pump mod
 
 The Nightscout alarms are based on the Heroku settings that you have input specifically.  If you don't specifically set them, Nightscout will use the default settings for pump battery alerts as shown below:
 
-<p align="center">
-<img src="../img/pump-ns.png" width="650">
-</p>
+![img/pump-ns.png](img/pump-ns.png)
 
 Nightscout pump battery levels, if you leave things at default installation, will not trigger alarms.  If however you add a setting of `PUMP_ENABLE_ALERTS` to `true`, you will receive pump battery notifications according to the levels shown in the parenthesis above.  For example, your x23 pump is reporting its levels in percent, therefore you'd receive a yellow warning alarm at 30% and an urgent red alarm at 20%.  Your x22 pump however is reporting its levels at voltage readings, therefore you'd receive a warning yellow alarm at 1.35v and an urgent red alarm at 1.30v.
 
 !!!info ""
+
     Are the default NS alarm levels going to work for you?  The answer depends on what type of battery level you are using, what model pump you are using, and how much advance notification you want to receive before needing to change a pump battery.  There is a bit of personal preference and experimentation to finding what works for you.
 
-<p align="center">
-<u><b>For x22 or x15 pump users, the NS alert settings that may need to be adjusted are the ones based on voltage.</b></u>
-</p>
+***For x22 or x15 pump users, the NS alert settings that may need to be adjusted are the ones based on voltage.***
+
 Generally speaking, for a x22 or x15 pump using alkaline batteries, the default NS alarm levels will be too early to be useful and lead you to change out your battery too frequently.  Alkaline batteries can go to low 1.2s or high 1.1s before Looping starts to have communication problems.  How much lower than the default voltage 1.35/1.30 alarm levels you want to go will depend on how far in advance you want to be warned about an upcoming battery change.
 
 If however, you are using a x22 or x15 pump with lithium batteries, the default 1.35v/1.30v alarm levels may be completely appropriate.  Remember how the lithium battery curves at the start of this discussion died off quickly around 1.3v?  You won't get hardly any heads-up notice for a lithium battery if you set the alarm below 1.3v.
 
-<p align="center">
-<u><b>For x23 or x54 pump users, the NS alert settings that may need to be adjusted are the ones based on percentage settings.</b></u>
-</p>
+***For x23 or x54 pump users, the NS alert settings that may need to be adjusted are the ones based on percentage settings.***
 
 Alkaline and lithium batteries should have automatically had their percentage-remaining based on the correct battery type in your Loop settings.  So, generally speaking the default NS alert levels don't generally need adjusting.  However, if you are using lithium batteries, the drop off between 75% to 25% can be quite dramatic and not be easy to anticipate (especially if the drop happens overnight).
 
 As an alternative method of tracking pump battery changes, you could use the insulin age (IAGE) plug-in to anticipate your pump battery changes as well.  For example, after tracking pump battery life on my 723 using energizer batteries lithium batteries for the last several months, I know that we get about 15 days plus a handful of hours.  The amount of hours more beyond 15 days varies depending on how much we've interacted with the pump buttons directly, whether we've looped the full 15-days solid, and if the pump has been in extreme weather (cold weather can sap pump battery life).  By tracking the pump battery changes with NS's careportal "insulin cartridge change", I can see in advance if we are nearing an overnight on a 15 day battery and decide to change batteries before overnight to prevent any middle-of-night battery issues.
 
 !!!info ""
-    * Lithium batteries will get a significantly longer life than an alkaline battery.
-    * Experiment and track your particular pump model and battery type to understand what NS settings will work best for you.
-    * Do not rely on the pump's on-screen pump battery indicator, especially when using lithium batteries.
+
+    - Lithium batteries will get a significantly longer life than an alkaline battery.
+    - Experiment and track your particular pump model and battery type to understand what NS settings will work best for you.
+    - Do not rely on the pump's on-screen pump battery indicator, especially when using lithium batteries.

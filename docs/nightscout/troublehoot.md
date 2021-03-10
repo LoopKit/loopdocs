@@ -12,9 +12,7 @@ NOTE: The #1 reason why BGs aren't showing is that you have mismatched password 
 
 Login to your Heroku account and from within Heroku settings, click on the  `Reveal Config Vars`
 
-<p align="center">
-<img src="../img/config-vars.png" width="800">
-</p> 
+![img/config-vars.png](img/config-vars.png)
 
 Now from the `Config Vars` area, check the following (see screenshot below for reference):
 
@@ -24,16 +22,11 @@ Now from the `Config Vars` area, check the following (see screenshot below for r
 4. Your `careportal` must be one word in the `ENABLE` line, sometimes autocorrect makes it two words.
 5. If using `mmol`, make sure you have spelled that value correctly in the `DISPLAY_UNITS`.
 
-<p align="center">
-<img src="../img/bridge-settings.jpg" width="600">
-</p> 
+![img/bridge-settings.jpg](img/bridge-settings.jpg)
 
-One thing that can happen if you have an incorrect Dexcom login/password in Loop's CGM Share account settings and/or in your Nightscout BRIDGE settings is that Dexcom will lock your account...and you won't see CGM data in Nightscout. If you notice your CGM readings disappeared, but everything else is flowing...check your Heroku logs that are viewable by selecting "View Logs" from the drop-down menu underneath the "More" option. 
+One thing that can happen if you have an incorrect Dexcom login/password in Loop's CGM Share account settings and/or in your Nightscout BRIDGE settings is that Dexcom will lock your account...and you won't see CGM data in Nightscout. If you notice your CGM readings disappeared, but everything else is flowing...check your Heroku logs that are viewable by selecting "View Logs" from the drop-down menu underneath the "More" option.
 
-<p align="center">
-<img src="../img/heroku-logs.png" width="800">
-</p> 
-
+![img/heroku-logs.png](img/heroku-logs.png)
 
 Do your logs have "SSO authentication errors" like in the red box highlighted above? If you do, then:
 
@@ -43,17 +36,15 @@ Do your logs have "SSO authentication errors" like in the red box highlighted ab
 
 3. Wait 15 minutes and then follow the directions in the blue box below. It is important to wait the 15 minutes...the reason you can't log in right now is that your Dexcom account has a temporary lock from one of the passwords in step 1 or 2 being incorrect. The temporary lock will expire after 10-15 minutes of giving the account login a break from the incorrect logins. So, definitely wait or else you'll just keep prolonging the issue.
 
-
 !!!info "About your Bridge password and user name"
+
     The `BRIDGE_PASSWORD` and `BRIDGE_USER_NAME` are NOT visible from within your Dexcom mobile app or online account. The values of them are what you entered into your Dexcom mobile app when you VERY FIRST logged into that app however long ago. If you have double-checked everything else that could be incorrect and BGs still aren't showing in Nightscout, then you likely have those Bridge values incorrect. To fix that, delete your Dexcom app (don't stop the session before deleting the app...just keep it going). Download the app again from the iPhone's App Store and login to the freshly-downloaded Dexcom app. **Take note** that deleting the app will not stop your session, your session will pick right back up once the transmitter pairs again. The `BRIDGE_USER_NAME` is not an email address. Use that exact same login now in your Heroku settings. You can leave your Loop's Share account info blank...you just need the transmitter ID going forward.
-    
 
 ### Dexcom Share
+
 Make sure you have Dexcom Share turned ON in your Dexcom app. In the Dexcom app's main screen, find the triangle made of dots. If the dots are grey, you do not have Share turned on. Tap the triangle, and follow the directions to add a follower (yourself if you don't have someone else you'd like to invite) and turn on Share.
 
-<p align="center">
-<img src="../img/sharing.jpg" width="250">
-</p>
+![img/sharing.jpg](img/sharing.jpg)
 
 ## Loop data not showing
 

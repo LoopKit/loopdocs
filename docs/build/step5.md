@@ -1,37 +1,37 @@
 # Step 5: Order a RileyLink
 
 !!!danger "Time Estimate"
-    * 15 minutes to order a RileyLink
-    * 15-20 minutes to assemble the RileyLink once you get it in the mail
-    * 15-20 minutes to read about the RileyLink
+    - 15 minutes to order a RileyLink
+    - 15-20 minutes to assemble the RileyLink once you get it in the mail
+    - 15-20 minutes to read about the RileyLink
 
 !!!info "Summary"
-    * Order your [Omnipod RileyLink](https://getrileylink.org/product/rileylink433) or [Medtronic RileyLink](https://getrileylink.org/product/rileylink916).
-    * Assemble the RileyLink, after hugging the postman
-    * Read the "extra details" to learn about RileyLink lights, charging, range, etc.
+    - Order your [Omnipod RileyLink](https://getrileylink.org/product/rileylink433) or [Medtronic RileyLink](https://getrileylink.org/product/rileylink916).
+    - Assemble the RileyLink, after hugging the postman
+    - Read the "extra details" to learn about RileyLink lights, charging, range, etc.
 
 !!!warning "FAQs"
-    * **"Do I need a RileyLink?"** Yes. Loop will not work without a RileyLink. Omnipod users will not be able to bolus from their looping pod without a RileyLink.
-    * **"What happens if I lose my RileyLink or walk away from it?"** Good question...answered [here](https://loopkit.github.io/loopdocs/faqs/rileylink-faqs/#what-happens-if-i-walk-away-from-my-rileylink).
-    * **"Can I use an Omnipod RileyLink with a Medtronic pump? or vice versa?"** Good question...answered [here](https://loopkit.github.io/loopdocs/faqs/rileylink-faqs/#what-will-happen-if-you-use-a-916mhz-antenna-rileylink-with-an-omnipod-or-vice-versa).
-    * **"Can I swap out RileyLinks at any time?"** Yes, you can. RileyLinks can be replaced quite simply without needing to start a new pod or rebuild Loop app. There's a place in Loop settings that you'd simply find your new RileyLink's name and turn "on" the Bluetooth connection to start using it.
-    * **"How close does the RileyLink need to be to me? Do I have to carry it with me?"** Good questions...answered [here](https://loopkit.github.io/loopdocs/faqs/rileylink-faqs/#do-i-have-to-carry-the-rileylink-everywhere).
-    * **"Why is it named RileyLink?"** Riley is the name of Pete Schwamb's daughter and he's the guy that created the RileyLink.
-    * **"Can I make my own RileyLink?"** Technically yes, however it is not an easy project. You'll need specialized tools and patience. If you want to explore doing that, I'd highly recommend checking out [Zulipchat](https://loop.zulipchat.com/#narrow/stream/148542-RileyLink) from the other people who have done their own builds successfully over the last several years. Only 3 people have built their own RileyLinks so far...but I guess that technically means it is possible. The PCB files and software, with instructions on how to build your own hardware module can be found at the [RileyLink Github repo](https://github.com/ps2/rileylink).
+    - **"Do I need a RileyLink?"** Yes. Loop will not work without a RileyLink. Omnipod users will not be able to bolus from their looping pod without a RileyLink.
+    - **"What happens if I lose my RileyLink or walk away from it?"** Good question...answered [here](/faqs/rileylink-faqs/#what-happens-if-i-walk-away-from-my-rileylink).
+    - **"Can I use an Omnipod RileyLink with a Medtronic pump? or vice versa?"** Good question...answered [here](/faqs/rileylink-faqs/#what-will-happen-if-you-use-a-916mhz-antenna-rileylink-with-an-omnipod-or-vice-versa).
+    - **"Can I swap out RileyLinks at any time?"** Yes, you can. RileyLinks can be replaced quite simply without needing to start a new pod or rebuild Loop app. There's a place in Loop settings that you'd simply find your new RileyLink's name and turn "on" the Bluetooth connection to start using it.
+    - **"How close does the RileyLink need to be to me? Do I have to carry it with me?"** Good questions...answered [here](/faqs/rileylink-faqs/#do-i-have-to-carry-the-rileylink-everywhere).
+    - **"Why is it named RileyLink?"** Riley is the name of Pete Schwamb's daughter and he's the guy that created the RileyLink.
+    - **"Can I make my own RileyLink?"** Technically yes, however it is not an easy project. You'll need specialized tools and patience. If you want to explore doing that, I'd highly recommend checking out [Zulipchat](https://loop.zulipchat.com/#narrow/stream/148542-RileyLink) from the other people who have done their own builds successfully over the last several years. Only 3 people have built their own RileyLinks so far...but I guess that technically means it is possible. The PCB files and software, with instructions on how to build your own hardware module can be found at the [RileyLink Github repo](https://github.com/ps2/rileylink).
 
 ## What is RileyLink
-The RileyLink (RL) is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to 916MHz or 433MHz wireless communication. What does that mean to you? It means RileyLink is the communication highway between your insulin pump, CGM, and iPhone.</br></br>
 
-<p align="center">Loop will not work without the RileyLink.</b></p></br></br>
+The RileyLink (RL) is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to 916MHz or 433MHz wireless communication. What does that mean to you? It means RileyLink is the communication highway between your insulin pump, CGM, and iPhone.
 
-<p align="center">
-<img src="../img/rl_diag.png" width="450">
-</p>
+**Loop will not work without the RileyLink.**
+
+![img/rl_diag.png](img/rl_diag.png)
 
 ## Order RileyLink
-This is an easy step. You need to order a RileyLink from the [GetRiley website](https://getrileylink.org). 
 
-There are two types of RileyLinks; [one for Omnipod](https://getrileylink.org/product/rileylink433) users and [one for Medtronic](https://getrileylink.org/product/rileylink916) users. Order the RileyLink specifically for the pump you'll be Looping with. 
+This is an easy step. You need to order a RileyLink from the [GetRiley website](https://getrileylink.org).
+
+There are two types of RileyLinks; [one for Omnipod](https://getrileylink.org/product/rileylink433) users and [one for Medtronic](https://getrileylink.org/product/rileylink916) users. Order the RileyLink specifically for the pump you'll be Looping with.
 
 ## Assemble RileyLink
 
@@ -40,16 +40,16 @@ Your RL will come with the battery disconnected and the parts not already inside
 Make sure the lipo battery is well-plugged into the connection. Line up the little ridge appropriately, and push fairly firmly to get the connection tight.  Poor battery cable connection can make the Loop communications fail.  See photos below, for example.
 
 !!!info "Common new user errors"
+
     The most common two errors for new RL owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RL. Compare your lipo battery cable with the photos; it takes a bit of oomph to push that plug fully in like the photos shown below. Remember to charge your RL each night.
 
-<p><figure align="center">
-<img src="../img/battery-cables.jpg" width="400">
-<figcaption>Loose battery cable on left, Proper battery cable on right</figcaption>
-</figure></p>
+![img/battery-cables.jpg](img/battery-cables.jpg)
+
+Loose battery cable on left, Proper battery cable on right
 
 Finally, the board and the battery fit into the slim case fairly tightly as well.  Click on the image below to watch a helpful [assembly video](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be).
 
-<a href="https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be" target="_blank"><img src="../img/slimcase.png"  title="RileyLink assembly video" /></a>
+[![img/slimcase.png](img/slimcase.png)](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be)
 
 ## Extra Details about RileyLink
 
@@ -65,14 +65,13 @@ Usually this best frequency is pretty constant for any given pump+RL, but during
 
 RL communicates with your iPhone and Loop app through Bluetooth (BT).  
 
-!!!info Bluetooth Troubleshooting
-If your iPhone has BT issues, your Loop will have failures.  There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interfering with the Loop.  If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.
+!!!info "Bluetooth Troubleshooting"
+
+    If your iPhone has BT issues, your Loop will have failures.  There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interfering with the Loop.  If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.
 
 Your BT signal strength can be seen in the Loop settings, under the RL menu, on the `Signal Strength` line. As you move closer and further away from your phone, you can watch that number dynamically change. This line is **not** displaying the signal strength of your pump communications discussed above.
 
-<p align="center">
-<img src="../img/RL_bt.jpg" width="400">
-</p>
+![img/RL_bt.jpg](img/RL_bt.jpg)
 
 ### Lights
 
@@ -100,7 +99,7 @@ Since the best practice is to charge your RL overnight while you sleep, and the 
 
 ### Range
 
-The range that your RL will function is **heavily** dependent on the environment that you are in. Most people wear the RL in a pocket or carry a belt holster during the day. The radio frequency communications will have a shorter range than the BT communications, therefore RL will do better closer to the pump rather than the iPhone if you are deciding on options for carrying gear. 
+The range that your RL will function is **heavily** dependent on the environment that you are in. Most people wear the RL in a pocket or carry a belt holster during the day. The radio frequency communications will have a shorter range than the BT communications, therefore RL will do better closer to the pump rather than the iPhone if you are deciding on options for carrying gear.
 
 Problematic environments will be places like technical conferences, sports arenas, and other places where wireless communications are heavy and plenty.
 
@@ -112,7 +111,7 @@ Keep your RL and lipo battery protected from damage.  Lipo batteries are unsafe 
 
 To remove the lipo battery from the RL, please do so slowly and patiently. Work the battery connection side to side slowly to loosen it from the plug. Some people have reported success using small, curved needle-nose pliers such as hemostats. Others have used small flathead screwdrivers as shown in [this video](https://youtu.be/s2qNPLpfwww).
 
-<a href="https://youtu.be/s2qNPLpfwww" target="_blank"><img src="../img/rileylink_battery_removal.png"  title="RileyLink assembly video" /></a>
+[![img/rileylink_battery_removal.png](img/rileylink_battery_removal.png)](https://youtu.be/s2qNPLpfwww)
 
 ## Waiting for RileyLink
 
@@ -122,4 +121,4 @@ If you're really dying to do something while RL ships, you can proceed with fini
 
 ## Next Step: Enroll in Apple Developer Program
 
-Now you are ready to move onto Step 6 to [enroll in the Apple Developer Program](https://loopkit.github.io/loopdocs/build/step6/).
+Now you are ready to move onto Step 6 to [enroll in the Apple Developer Program](step6.md).
