@@ -19,9 +19,15 @@ There are two options for setting up Nightscout; one option requires a small fee
 
 Two options exist for easy DIY hosting of NS; Azure or Heroku. Both hosting services are free.  However,  Azure has data quotas monthly and shorter-term CPU quotas.  If you exceed those quotas, you may be facing a monthly data-use bill or being locked out of NS for about 12 hours until the quotas reset.  As you start to use NS more intensively for alarms, watches, etc…it is possible that you may exceed your monthly data cap on Azure.  Many Loop users have transitioned their old sites from Azure over to Heroku and have found the hosting change to be beneficial.  Heroku also has some memory limits, but those limits have been more than adequate for Loop users.  Therefore, we recommend new users start with Heroku.
 
+### Setup Nightscout
+
 There's great news though! The documentation and instructions for building your own Nightscout site have recently been completely overhauled and are WONDERFUL!
 
 Please visit [The Nightscout site](http://nightscout.github.io/nightscout/new_user/) for directions on how to set up your new Nightscout website.
+
+### Add Loop variables to Nightscout
+
+There are a few Loop-specific variables you should configure to get the most out of your Nigghtscout site. Follow the [instructions to retrofit an existing Nightscout site](update_user.md#step-2-editadd-config-vars).
 
 ## Add Nightscout to Loop
 
