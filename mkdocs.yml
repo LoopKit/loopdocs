@@ -1,6 +1,6 @@
 site_name: LoopDocs
 theme: flatly
-
+google_analytics: ['UA-109876065-1', 'loopkit.github.io']
 extra_css:
     - css/admonitions.css
     
