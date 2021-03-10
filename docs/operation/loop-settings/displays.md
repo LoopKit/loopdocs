@@ -26,20 +26,23 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 
 |||
 |---|---|
-|![img/grey_loop.jpg](img/grey_loop.jpg)|>A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.  If you can't get your grey loop to turn green, please see the [Grey Loop troubleshooting page](/troubleshooting/yellow-red-loop.md)  for tips.|
+|![img/grey_loop.jpg](img/grey_loop.jpg)|>A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.  If you can't get your grey loop to turn green, please see the [Yellow and Red Loop troubleshooting page](../../troubleshooting/yellow-red-loop.md) for tips.|
 |![img/green_loop.jpg](img/green_loop.jpg)|A green circle indicates the Loop has been successfully completed within the last 5 minutes.  The time since the loop last completed will be displayed under the circle.|
 |![img/yellow_loop.jpg](img/yellow_loop.jpg)|A yellow circle indicates the Loop has not completed in the last 5-15 minutes.  It is not unusual to have a few instances of yellow circles throughout a day of looping.  They can be caused by temporarily getting too far away from RileyLink or iPhone (more than about 3-10 feet depending on conditions), CGM failing to read or being in ???, radio frequency “noise” interference, and such.  Generally, most yellow circles will self-resolve without needing any special troubleshooting.|
-|![img/red_loop.jpg](img/red_loop.jpg)|A red circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the [Yellow and Red Loop troubleshooting page](/troubleshooting/yellow-red-loop.md) for tips on how to get your green Loop back.  Clicking on the red circle will also pop-up the last error message to help guide your troubleshooting.|
+|![img/red_loop.jpg](img/red_loop.jpg)|A red circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the [Yellow and Red Loop troubleshooting page](../../troubleshooting/yellow-red-loop.md) for tips on how to get your green Loop back.  Clicking on the red circle will also pop-up the last error message to help guide your troubleshooting.|
 |![img/open_loop.jpg](img/open_loop.jpg)|When the circle is notched and not complete, that means the Loop is operating in “open-loop” mode.  When the “closed-loop” setting is turned on, the loop status will show a completed circle.|
+
+!!! info "Fun Fact"
+    The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).
 
 
 #### Glucose
 
 |||
 |---|---|
-|![img/cgm.jpg](img/cgm.jpg)|The current BG reading from the CGM will display, including trending arrow and time the reading was taken.  If the BG is being read straight from the G5 transmitter or G4 receiver, no special symbols will appear.|
+|![img/cgm.jpg](img/cgm.jpg)|The current BG reading from the CGM will display, including trending arrow and time the reading was taken.  If the BG is being read straight from the G5/G6 transmitter or G4 receiver, no special symbols will appear.|
 |![img/cgm_cloud.jpg](img/cgm_cloud.jpg)|If the BG is being read from the Dexcom Share Servers, a small cloud icon will be in the corner of the BG reading.  Internet access is required to run in this mode.|
-|![img/cgm_alert.jpg](img/cgm_alert.jpg)|When you first start Loop, there may be a small yellow alert next to the BG.  This should go away within a short period of time (around 5 minutes or less).  If the yellow alert remains, something may be wrong with fetching BG data.  You can try restarting the Loop app (double tap home button, up-swipe on the app to close it) to see if BG data will resume. </br></br> **Special note for Dexcom G5 users**>, a yellow alert will appear when calibration is needed.  The alert will clear once the calibration is given, but typically Loop will work IF the yellow alert is only for a needed G5 calibration.|
+|![img/cgm_alert.jpg](img/cgm_alert.jpg)|When you first start Loop, there may be a small yellow alert next to the BG.  This should go away within a short period of time (around 5 minutes or less).  If the yellow alert remains, something may be wrong with fetching BG data.  You can try restarting the Loop app to see if BG data will resume. </br></br> **Special note for Dexcom G5/G6 users**>, a yellow alert will appear when calibration is needed.  The alert will clear once the calibration is given, but typically Loop will work IF the yellow alert is only for a needed G5/G6 calibration.|
 
 #### Temp Basal
 
@@ -57,19 +60,19 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 
 |||
 |---|---|
-|![img/battery.jpg](img/battery.jpg)|For x23, x54 pumps, the battery icon will show 100/75/50/25% increments just as the pump does.  As the battery level decreases, the icon will turn from grey to yellow to red.  For x22 pumps, the battery icon will read discrete % values.  </br></br>The warning colors/levels on Loop's battery indicator work in conjunction with the type of battery selected.  If you change battery types, please make sure to update your battery selection in the Loop app settings.   </br></br>The pump's on-screen battery indicator is not a good indicator of remaining battery life for the purposes of looping.  Loop's pump communications will fail from low battery levels sooner than the insulin delivery will fail.  The Loop's battery level warnings are designed to give you approximately 8 hours of notice before the pump battery will need changing.|
+|![img/battery.jpg](img/battery.jpg)|For x54 pumps, the battery icon will show 100/75/50/25% increments just as the pump does.  As the battery level decreases, the icon will turn from grey to yellow to red.  For x22, x23 pumps, the battery icon will read discrete % values.  </br></br>The warning colors/levels on Loop's battery indicator work in conjunction with the type of battery selected.  If you change battery types, please make sure to update your battery selection in the Loop app settings.   </br></br>The pump's on-screen battery indicator is not a good indicator of remaining battery life for the purposes of looping.  Loop's pump communications will fail from low battery levels sooner than the insulin delivery will fail.  The Loop's battery level warnings are designed to give you approximately 8 hours of notice before the pump battery will need changing.|
 
 #### Reservoir (Omnipod Users)
 
 |||
 |---|---|
-|![img/pod-reservoir.jpg](img/pod-reservoir.jpg)|The pod icon will remain grey and plain until insulin volume decreases.  At 50 units or less insulin remaining, the reservoir icon will turn yellow. At 20 units or less remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds.|
+|![img/pod-reservoir.jpg](img/pod-reservoir.jpg)|The pod icon will remain grey and plain until insulin volume decreases. At 50 units or less insulin remaining, the reservoir icon will turn yellow. At 20 units or less remaining, the reservoir icon will turn red. The remaining units will be displayed when it gets to these lower thresholds. </br></br>When the reading is 0 units, there may be up to 4 unit of insulin available but don't count on it. If the pod senses insulin can no longer be delivered, the pod will have a sustained audible alarm (the scream). Tapping Replace Pod in Loop->Pod->Settings should silence the alarm.|
 
 #### Pod Age (Omnipod Users)
 
 |||
 |---|---|
-|![img/pod-age.jpg](img/pod-age.jpg)|The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red, the pod will begin the periodic alarm, and the pod age icon will show a "replace pod" message in the HUD. When you reach 80 hours of pod use, the pod will have a sustained alarm and stop working.|
+|![img/pod-age.jpg](img/pod-age.jpg)|The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red, the pod will begin the periodic warning beep, and the pod age icon will show a "replace pod" message in the HUD. </br></br>When you reach 80 hours of pod use, the pod will have a sustained audible alarm (the scream) and stops all insulin delivery. Tapping Replace Pod in Loop->Pod->Settings should silence the alarm.|
 
 ## Charts
 
@@ -86,7 +89,7 @@ The horizontal axis is set to go forward from the current time until your DIA (i
 The BG correction range is shown as a blue bar on the glucose chart.  Single-value target BG range (such as 100-100 mg/dl), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction target in lighter blue.
 
 !!! warning ""
-    If you have a crazy negative prediction - it is likely that you set an [override](../../features/workout/) with a tiny sensitivity. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny sensitivity to force less insulin, simply increase the correction range in your override - Loop will reduce your basal rate at the next cycle (within 5 minutes).
+    If you have a crazy negative prediction - it is likely that you set an [override](../features/workout.md) with a tiny sensitivity. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny sensitivity to force less insulin, simply increase the correction range in your override - Loop will reduce your basal rate at the next cycle (within 5 minutes).
 
 
 The eventual BG displayed on the right side of the chart does NOT take into account a recently enacted temp basal.  In other words, if you are above BG target and Loop just enacted a high temp basal to help, the eventual BG does not reflect the expected lowering of BGs that would result from that recently enacted temp basal.  Loop waits until the insulin has actually been delivered before it "uses" the insulin in its calculations for BG impacts.  If you suspended your pump or had a "no delivery" alarm shortly after the temp basal was started, you would want that accurately reflected in the insulin on board and associated eventual BG.
@@ -95,9 +98,13 @@ If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart
 
 ### Predicted Glucose Chart
 
-![img/glucose_hidden.png](img/glucose_hidden.png)
+The predicted glucose view is a great way to gain insight into the various components’ importance in Loop’s prediction of eventual BG.
 
-The predicted glucose view is a great way to gain insight into the various components’ importance in Loop’s prediction of eventual BG. The graph at the top of this view will match your Glucose Chart. Below this chart you will see a very detailed explanation of all of the variables that Loop takes into account in predicting your future BG value. Each of those effects (including Carbohydrates, Insulin, Glucose Momentum and Retrospective Correction) includes details of the calculation used. You can tap on any of the entries to turn them off and on for visualization. The resulting changes can be viewed by the changes in the dashed lines. Note - these elements are not turned on and off in the Loop predictions. This is just so you can view the relative effects.
+![img/glucose_hidden.svg](img/glucose_hidden.svg)
+
+The graph at the top of this view will match your Glucose Chart. Below this chart you will see a very detailed explanation of all of the variables that Loop takes into account in predicting your future BG value. Each of those effects (including Carbohydrates, Insulin, Glucose Momentum and Retrospective Correction) includes details of the calculation used. You can tap on any of the entries to turn them off and on for visualization. The resulting changes can be viewed by the changes in the dashed lines.
+
+Note - these elements are not turned on and off in the Loop predictions. They just modify the graph so you can view the relative effects.
 
 ### Active Insulin Chart
 
@@ -141,7 +148,7 @@ For more information about the Insulin Counteraction Effects information found i
 
 The toolbar is where your inputs to the Loop behavior take place.  The individual components of the toolbar are, left to right:
 
-* **Carb entry tool**- click on this tool to enter carbs into the Loop app.  Loop will not read carb entries from a Medtronic or Nightscout, so you must use the carb entry tool in Loop app in order to have carbs accounted for by the Loop.  Detailed info regarding how to enter, save, and edit carb entries can be found in the [Carb Entry page](../features/carbs.md).
+* **Carb entry tool**- click on this tool to enter carbs into the Loop app.  Loop will not read carb entries from a Medtronic pump or Nightscout, so you must use the carb entry tool in Loop app in order to have carbs accounted for by the Loop.  Detailed info regarding how to enter, save, and edit carb entries can be found in the [Carb Entry page](../features/carbs.md).
 
 * **Pre-meal target** - click this tool to set the [Pre-Meal temporary override target](../features/premeal.md). (If you have not configured a pre-meal target under Loop Settings, this icon will be inactive - some people prefer this to avoid accidently tapping it.) This target will remain in effect (1) for 60 minutes, (2) until a carb entry is saved, or (3) until the target is toggled off manually or by tapping on the override icon, whichever comes first.  The background coloring of the Pre-Meal target will turn green when active and there will be a dark blue line on the BG chart indicating where the override target is enabled.
 
@@ -149,10 +156,10 @@ The toolbar is where your inputs to the Loop behavior take place.  The individua
 
 * **Overrides** - click this tool to set an [Override](../features/workout.md).
 
-* **Loop Settings** - click on this tool to make changes to any of your [Loop settings](../overview.md/#configurations).
+* **Loop Settings** - click on this tool to make changes to any of your [Loop settings](../overview.md#configurations).
 
 ## Next Step: RileyLink Menu
 
-You are almost there! One more Loop menu that you need to know about is your RileyLink (or other radio-link) Device. You can access your device menu by tapping on the pump/pod image in Loop settings (or HUD), look for the DEVICES section and tap on a "My Device Name" row that has a green slider. If you don't know what that means, check out the Pump Pairing section for Adding a Pump [Medtronic](/mdt-pump.md/#pump-pairing) or [OmniPod](/omnipod-pump.md/#select-rileylink).
+You are almost there! One more Loop menu that you need to know about is your RileyLink (or other radio-link) Device. You can access your device menu by tapping on the pump/pod image in Loop settings (or HUD), look for the DEVICES section and tap on a "My Device Name" row that has a green slider. If you don't know what that means, check out the Pump Pairing section for Adding a Pump [Medtronic](mdt-pump.md#pump-pairing) or [OmniPod](omnipod-pump.md#select-rileylink).
 
 Click [here](rileylink.md) to read more about what to expect to see when you tap on "My Device Name".
