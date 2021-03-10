@@ -2,7 +2,7 @@
 
 Many people may already have an existing Nightscout site setup from before adding Loop to their management strategies. In order to make the most of your Looping setup, you will need to modify your existing Nightscout site a bit specifically for Loop. The process is pretty easy and should not take long.
 
-## New Loopers Variables
+## New Variables for Loopers
 
 The modifications for retrofitting an existing NS site for new Loop users will require you to make some edits to your Heroku site.  There are five steps:
 
@@ -60,38 +60,4 @@ Double-check that your NS Profile settings are current and that you have a basal
 
 ## Nightscout Version Update
 
-If you are new to Loop and haven’t updated your NS site since before December 1, 2016, you will want to update your NS site. You can run either the "master" or "dev" branches of cgm-remote-monitor with Loop.  To check what version your Nightscout site is running, go to your Nightscout site and pull open the site settings by clicking on the three horizontal lines at the top right of the screen.  The version number is at the bottom.
-
-Nightscout has a tool to help you update your Nightscout site and you can find the [directions using to the update tool here](http://www.nightscout.info/wiki/welcome/how-to-update-to-latest-cgm-remote-monitor-aka-cookie).
-
-Simply put, the [Update tool](http://nightscout.github.io/pages/update-fork/) will look at your GitHub repository and check if your Nightscout code is old and needs updating.  You will have to be logged into your GitHub account in order for the tool to work, so do that before starting this process.
-
-![img/ns-tool.png](img/ns-tool.png)
-
-You'll click on the green `Continue updating at GitHub` button, read the directions that will appear as a pop-up and then finish the update process.
-
-Click the big green `Create pull request` button.
-
-* For most people, another screen will appear like shown in the screenshots below with a green `Able to merge` message. Fill in a title and click the button to create the pull request, and then you can `Merge pull request`, and finally `Confirm merge`.</br>
-
-* However, for some of you may encounter a red error message `x Can't automatically merge` message. If you have that message, you may want to post in FB for help on resolving that error message before proceeding any further.
-
----
-
-![img/update1.jpg](img/update1.jpg)
-
----
-
-![img/update2.jpg](img/update2.jpg)
-
----
-
-![img/update3.jpg](img/update3.jpg)
-
----
-
-Your cgm-remote-monitor repository is now up-to-date.  Nice work, and almost done.
-
-If you don’t have your Heroku set-up to automatically update when your repository is updated, you will have to go into your Heroku `Deploy` section and manually deploy your branch now that your repository has been updated.  Make sure you are connected to your GitHub cgm-remote-monitor repository.
-
-![img/deploy_branch.jpg](img/deploy_branch.jpg)
+If you are new to Loop and haven’t updated your Nightscout site for a while, check to see if there's an available update. Visit [The Nightscout Update Instructions](http://nightscout.github.io/update/update/) for directions on updating.
