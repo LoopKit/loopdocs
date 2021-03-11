@@ -24,23 +24,77 @@ Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines 
 
 ![img/add_vars.jpg](img/add_vars.jpg)
 
-|  |  |
-|---------|---------|
-|ENABLE     |bridge loop pump iob cob basal careportal sage cage bage override dbsize</br></br> **(Note: If you are an existing NS user, you likely already have an ENABLE line in this section of Heroku. Don't add a new one. Simply find the existing ENABLE line, click on the little pencil icon to the right of it, and add the words shown on the ENABLE line above to the existing words already on the enable line.  Avoid duplicates. The remainder of the lines are likely going to be brand new additions to your Heroku settings.)** |
-|DEVICESTATUS_ADVANCED     |true        |
-|PUMP_FIELDS     |battery reservoir clock status         |
-|PUMP_RETRO_FIELDS|battery reservoir clock status|
-|SHOW_FORECAST|loop|
-|SHOW_PLUGINS|loop pump cob iob sage cage careportal basal override dbsize|
-|PUMP_ENABLE_ALERTS|true|
-|PUMP_URGENT_BATT_U|30</br></br>(This is the pump battery percentage that will trigger a red, urgent alert in NS.)|
-|PUMP_URGENT_BATT_V|1.25</br></br>(This is the pump battery voltage that will trigger a red, urgent alert in NS.)|
-|PUMP_URGENT_RES|10</br></br>(This is the reservoir volume that will trigger a red, urgent alert in NS.)|
-|PUMP_URGENT_CLOCK|30|
-LOOP_ENABLE_ALERTS|true |
-|LOOP_WARN|20</br></br>(This is the minutes since Loop last successfully looped, the t1d will have a similar notification at this time through the Loop app.  This will be a yellow alert in NS.)|
-|LOOP_URGENT|60</br></br>(Same as the alert above, but will be red in color and have a shorter snooze option.)|
-|BASAL_RENDER|default|
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>ENABLE</th>
+<td>bridge loop pump iob cob basal careportal sage cage bage override dbsize</br></br>
+<b>(Note: If you are an existing NS user, you likely already have an ENABLE line in this section of Heroku. Don't add a new one. Simply find the existing ENABLE line, click on the little pencil icon to the right of it, and add the words shown on the ENABLE line above to the existing words already on the enable line.  Avoid duplicates. The remainder of the lines are likely going to be brand new additions to your Heroku settings.)</b></td>
+</tr>
+<tr>
+<th>DEVICESTATUS_ADVANCED</th>
+<td>true</td>
+</tr>
+<tr>
+<th>PUMP_FIELDS</th>
+<td>battery reservoir clock status</td>
+</tr>
+<tr>
+<th>PUMP_RETRO_FIELDS</th>
+<td>battery reservoir clock status</td>
+</tr>
+<tr>
+<th>SHOW_FORECAST</th>
+<td>loop</td>
+</tr>
+<tr>
+<th>SHOW_PLUGINS</th>
+<td>loop pump cob iob sage cage careportal basal override dbsize</td>
+</tr>
+<tr>
+<th>PUMP_ENABLE_ALERTS</th>
+<td>true</td>
+</tr>
+<tr>
+<th>PUMP_URGENT_BATT_U</th>
+<td>30</br></br>(This is the pump battery percentage that will trigger a red, urgent alert in NS.)</td>
+</tr>
+<tr>
+<th>PUMP_URGENT_BATT_V</th>
+<td>1.25</br></br>(This is the pump battery voltage that will trigger a red, urgent alert in NS.)</td>
+</tr>
+<tr>
+<th>PUMP_URGENT_RES</th>
+<td>10</br></br>(This is the reservoir volume that will trigger a red, urgent alert in NS.)</td>
+</tr>
+<tr>
+<th>PUMP_URGENT_CLOCK</th>
+<td>30</td>
+</tr>
+<tr>
+<th>LOOP_ENABLE_ALERTS</th>
+<td>true</td>
+</tr>
+<tr>
+<th>LOOP_WARN</th>
+<td>20</br></br>(This is the minutes since Loop last successfully looped, the t1d will have a similar notification at this time through the Loop app.  This will be a yellow alert in NS.)</td>
+</tr>
+<tr>
+<th>LOOP_URGENT</th>
+<td>60</br></br>(Same as the alert above, but will be red in color and have a shorter snooze option.)</td>
+</tr>
+<tr>
+<th>BASAL_RENDER</th>
+<td>default</td>
+</tr>
+</tbody>
+</table>
 
 ### Step 3: Open Your NS Site
 

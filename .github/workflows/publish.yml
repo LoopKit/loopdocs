@@ -1,0 +1,24 @@
+name: publish
+
+# Controls when the action will run. 
+on: 
+ workflow_dispatch
+  # Triggers the workflow on push events but only for the main branch
+  #push:
+  #  branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - run: pip install -r requirements.txt
+      - run: mkdocs build
+              
+     # - uses: JamesIves/github-pages-deploy-action@3.7.1
+      #  with:
+       #   BRANCH: gh-pages
+        #  FOLDER: site
