@@ -22,7 +22,7 @@ Before you start trying to resolve your red errors...start with the most obvious
 
 6. **Are you are using a free developer account?** Make sure you finished the [removal of Siri and Push Notification capabilities](/build/step14/#sign-four-targets).
 
-1. **Are you doing a WorkSpace build?** Make sure you selected LoopWorkspace instead of Loop.
+1. **Are you doing a WorkSpace build?** Make sure you selected Loop (Workspace) instead of Loop.
 
 ## Fix 95% of errors
 
@@ -39,7 +39,7 @@ If the build fails again, look through the list below and see if you can match u
 - Confirm it really is an error not already on this page; read all the circled bits in the images in the Specific Error Messages section
 - Follow the steps in the Posting for Help section
 - WE CANNOT HELP without version numbers and screenshots
-- Do not do not take pictures of your computer screen with your phone
+- Do not take pictures of your computer screen with your phone
 
 
 ## Posting for help
@@ -125,7 +125,7 @@ With Xcode 12, the simulators are no longer being downloaded automatically. If y
 
 If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says that the build failed in one of the schemes, as shown in the screenshot below, then re-run the fix listed above.
 
-Make sure to download a fresh version of code!  Anything downloaded before Jan 21, 2021 will not work.  That's when the need for carthage was removed.
+Solution: Make sure to download a fresh version of code!  Anything downloaded before Jan 21, 2021 will not work.  That's when the need for carthage was removed.
 
 ![img/exit-code-65.png](img/exit-code-65.png)
 
@@ -159,7 +159,7 @@ Error message:  "**Invalid active developer path (/Library/Developer/CommandLine
 
 ![img/command-line-error-2.jpg](img/command-line-error-2.jpg)
 
-Solution: Go to your Xcode preferences and under the Locations tab, select your Xcode version (the figure shows 12.0.1 - yours will probably be a bigger number) in the dropdown menu for Command Line Tools.
+Solution: Go to your Xcode preferences and under the Locations tab, select your Xcode version (the figure shows 12.0.1 - yours should match your Xcode version) in the dropdown menu for Command Line Tools.
 
 ![img/command-line-error-3.png](img/command-line-error-3.png)
 
@@ -244,6 +244,10 @@ Error message: "**Abort with payload**"  Your app will only open briefly with a 
 ![img/abort_payload.png](img/abort_payload.png)
 
 Solution: This error message is caused by having Loop download folder in an iCloud mapped drive.  Move your download folder back to the Downloads folder, then rebuild.
+
+
+## Apple Watch Issues
+
 
 ### Apple Watch: Loop app not appearing
 
