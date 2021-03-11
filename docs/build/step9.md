@@ -11,15 +11,31 @@
 !!!warning "FAQs"
     - **"I still only see an account with `(personal team)` beside it even though I enrolled in the paid Developer Account program...what should I do?"** You should check your spam email box in case Apple sent you an email there. Make sure you've waited the 48 hours that Apple says it may take to get your account approved. If it's been 48 hours and you still don't see anything in your email, contact Apple support and ask them about the status of your enrollment. It may be held up by something on their end.
 
-Since you've been working in order, you will now have Xcode installed on your computer from Step 8. You will also have enrolled in the Apple Developer program with a paid account, if that was your selection, in Step 6. Now we need to tell Xcode about your Developer Account.
+Since you've been working in order, you will now have Xcode installed on your computer from Step 8. You will also have enrolled in the Apple Developer program with a paid account, if that was your selection, in Step 6. Now we need to tell Xcode about your Developer Account. But first a few more steps.
+
+Did your computer reboot following the Xcode installation. If not, reboot now.
 
 Open Xcode from your Applications folder.
 
 ## Command Line Tools
 
-There may be a short delay the very first time you open Xcode because it will install a package of tools. Don't close that window out, let it finish...we will need those Command Line Tools. Helpful tip: When the Command Line Tools installation is done and the pop-up window closes, check that your Command Line Tools installed correctly. Open Xcode's Preferences by clicking on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and selecting `Preferences` in the drop-down menu. The keyboard shortcut to open Xcode Preferences is `command-comma` if that's easier for you. Then select the `Locations` tab of Preferences window and you'll see the dropdown menu for Command Line Tools. Make sure that Xcode 12.0.1 (or newer) is selected there.
+There may be a short delay the very first time you open Xcode because it will install a package of tools. Don't close that window out, let it finish...we will need those Command Line Tools. Helpful tip: When the Command Line Tools installation is done and the pop-up window closes, check that your Command Line Tools installed correctly. Open Xcode's Preferences by clicking on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and selecting `Preferences` in the drop-down menu. The keyboard shortcut to open Xcode Preferences is `command-comma` if that's easier for you. Then select the `Locations` tab of Preferences window and you'll see the dropdown menu for Command Line Tools. Make sure the Xcode version listed matches what you just installed. If it's blank, use the blue arrows to the right of the Command Line Tools row to select it.
 
 ![img/command-line-error-3.png](img/command-line-error-3.png)
+
+## Simulator Download
+
+Starting with Xcode 12, the simulators are no longer being downloaded automatically.  You may be required to download them yourself. While still on the Xcode Preferences window, after adding command line tools using the Locations tab, click on the Components tab.  It should look similar to the first figure below.
+
+Choose the iOS operating system closest to the one on your phone and click the down arrow to install it. (If your phone has iOS 14.4, and the biggest number simulator you see is iOS 14.3, download that one. If you phone has iOS 13.3, first we recommend updating, but if you choose not to, then select iOS 13.3 from the list.)
+
+Then scroll down to find the watchOS lines and choose the operating system on your watch (or biggest number if you don't have a watch paired) and click the down arrow to install it.
+
+Simulator download is now initiated. You can continue with the next steps, but let download complete before trying to build.
+
+![img/download-simulators-1.svg](img/download-simulators-1.svg)
+
+![img/download-simulators-2.svg](img/download-simulators-2.svg)
 
 ## Add Apple ID
 
