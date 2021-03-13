@@ -19,7 +19,8 @@ Breath deep...this step looks kind of "programmer code" weirdness. BUT, it isn't
 
 Homebrew is a program that will allow us to install the needed packages to build Loop. Before installing Homebrew, we need to double check one thing...that the user account on the computer that you are using to build Loop, that **user account needs to have Administrative rights on the computer**. How can you tell? Go to the computer's System Preferences application, open the Users & Groups section. If your account that you are using doesn't say "Admin" under your name, then you need to click the lock and change that to an Admin account before proceeding. If you are using a work computer, you may not have admin rights on that computer...so be aware that you may have restrictions on company owned computers.
 
-![img/admin-user.png](img/admin-user.png)
+![img/admin-user.png](img/admin-user.png){width="550"}
+{align="center"}
 
 Side note: If you are a (1) computer-savvy person and (2) already installed Homebrew on a different user account on the computer previously...please go use that user account on the computer to build Loop. Or, delete Homebrew from that User account and install on your account. Homebrew is a bit picky.
 
@@ -33,11 +34,13 @@ Ok, now that we have the user account confirmed, let's open the Terminal applica
 
     If you purchased one of the new Apple computers that have the brand new Apple M1 chip, you will need to do a little step to start with. Homebrew doesn't run natively on the new M1 chips...so we have to open Terminal app using a little "converter" app, in these situations, called Rosetta. It's no big deal...simply find the Terminal app like was described above and instead of opening it by double clicking...I want you to click on the Terminal app's name just once so it is highlighted. Then right-click on the Terminal app's name to bring up some additional choices. You will want to select the "Get Info" option.
     
-    ![img/get-info.png](img/get-info.png)
+    ![img/get-info.png](img/get-info.png){width="550"}
+{align="center"}
     
     Now in the informational window that appears...you'll see a checkbox that says "Open using Rosetta". Check that box...that will allow Terminal app to open in such a way that we can install Homebrew in the next steps.  You can close that informational window, after you check the box for "Open using Rosetta", and proceed with the rest of the directions just like normal. Thanks!
     
-    ![img/rosetta.png](img/rosetta.png)
+    ![img/rosetta.png](img/rosetta.png){width="350"}
+{align="center"}
 
 Now that you've located where the Terminal app is located in the Utilities folder (and already turned on Rosetta check box, if you are an M1 user)...double-click the Terminal app's name so that the app opens. The Terminal app is very plain looking when you open it. That is normal. Copy and paste the line in the little grey box below into Terminal prompt.
 
@@ -73,7 +76,8 @@ Now that Homebrew has successfully installed, copy and paste the line in the lit
 
 You should see something like below when the command has finished running successfully. Your messages might look slightly different (version number might be newer, for example), but the summary should look similar to seeing a carthage version installed and complete.
 
-![img/carthage-done.png](img/carthage-done.png)
+![img/carthage-done.png](img/carthage-done.png){width="550"}
+{align="center"}
 
 You can close the Terminal application now. You’re done with it. You do not need to do these steps again for any subsequent Loop builds. This is one of those "just do it once" on new computer installations. If you get a new computer though, you will have to repeat this step for the new computer.
 

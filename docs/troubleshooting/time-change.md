@@ -24,7 +24,8 @@ When you're ready to update the pump's time, simply ***use the Loop's "Change Ti
 
     **Always use RileyLink to change pump time instead of the Medtronic Pump's screen.  If you fail to set the pump time by using the RileyLink, Loop will not function properly.**
     
-    ![img/time_change.png](img/time_change.png)
+    ![img/time_change.png](img/time_change.png){width="400"}
+    {align="center"}
 
 ## iPhone
 

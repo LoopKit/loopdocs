@@ -25,7 +25,8 @@ The RileyLink (RL) is an open-source hardware device that can bridge Bluetooth L
 
 **Loop will not work without the RileyLink.**
 
-![img/rl_diag.png](img/rl_diag.png)
+![img/rl_diag.png](img/rl_diag.png){width="450"}
+{align="center"}
 
 ## Order RileyLink
 
@@ -43,7 +44,8 @@ Make sure the lipo battery is well-plugged into the connection. Line up the litt
 
     The most common two errors for new RL owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RL. Compare your lipo battery cable with the photos; it takes a bit of oomph to push that plug fully in like the photos shown below. Remember to charge your RL each night.
 
-![img/battery-cables.jpg](img/battery-cables.jpg)
+![img/battery-cables.jpg](img/battery-cables.jpg){width="400"}
+{align="center"}
 
 Loose battery cable on left, Proper battery cable on right
 
@@ -71,7 +73,8 @@ RL communicates with your iPhone and Loop app through Bluetooth (BT).
 
 Your BT signal strength can be seen in the Loop settings, under the RL menu, on the `Signal Strength` line. As you move closer and further away from your phone, you can watch that number dynamically change. This line is **not** displaying the signal strength of your pump communications discussed above.
 
-![img/RL_bt.jpg](img/RL_bt.jpg)
+![img/RL_bt.jpg](img/RL_bt.jpg){width="400"}
+{align="center"}
 
 ### Lights
 

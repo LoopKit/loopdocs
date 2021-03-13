@@ -18,7 +18,8 @@ Quick side note: Do not quickly decide to pull an omnipod that isn't responding 
     * Close your Loop app (upswiping it in the iPhone's app selector) and reopen it.
     
     
-    ![img/riley-switch.png](img/riley-switch.png)
+    ![img/riley-switch.png](img/riley-switch.png){width="450"}
+    {align="center"}
     
 
     That's pretty much all you need to do for option 1 to restore a green Loop within 5 minutes, 99% of the time. You can confirm things are back to working order by seeing a green loop again and/or issuing a "test command" or "button press" successfully through the RileyLink menu.
@@ -57,7 +58,8 @@ If you have not updated your Loop app since late July 2019 and use Dexcom G6, yo
 
 Finally, we see a lot of errors reported because people have problems with their Share server information in Loop app. **Please delete your Share account information from within Loop settings.** In other words, the credentials portion of the Share account info, as shown in the screenshot below, should say `Tap to Set` and not have your account info. It is unnecessary to have this portion filled out as local, non-internet spying of a transmitter is the preferred CGM source anyways. In fact, by leaving this information out, it will help you remember to change your transmitter ID when you change transmitters because CGM data won't appear in Loop. By not including Share account in Loop, you will prevent yourself from accidentally becoming internet dependent.
 
-![img/no-share.jpg](img/no-share.jpg)
+![img/no-share.jpg](img/no-share.jpg){width="600"}
+{align="center"}
 
 ## Pump is not responding
 

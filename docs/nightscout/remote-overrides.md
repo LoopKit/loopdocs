@@ -67,11 +67,13 @@ Once you have your Nightscout deployment updated to the latest master branch of 
 
 Go to the `Settings` tab near the top of the screen on your Heroku app and then click on `Reveal Config Vars`.  
 
-![img/heroku5.png](img/heroku5.png)
+![img/heroku5.png](img/heroku5.png){width="650"}
+{align="center"}
 
 Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add three new rows of config vars for remote overrides as shown below:
 
-![img/add_vars.jpg](img/add_vars.jpg)
+![img/add_vars.jpg](img/add_vars.jpg){width="650"}
+{align="center"}
 
 |KEY|VALUE|
 |---------|---------|

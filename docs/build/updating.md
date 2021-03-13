@@ -44,7 +44,8 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 
 If you think you are immune from needing to update and want to skip this Step 1...I HIGHLY recommend actually checking this chart to make sure your macOS and Xcode meet their minimums based on your device's iOS before proceeding.  I cannot emphasize how many people try to build without meeting the minimum versions because they ASSUME they are ok.
 
-![img/minimum-related.png](img/minimum-related.png)
+![img/minimum-related.png](img/minimum-related.png){width="750"}
+{align="center"}
 
 ## Step 2: Check your Developer Account
 
@@ -72,7 +73,8 @@ This is a new step in the updating process. Everyone should do this step every t
 
 You can always check the expiration date at the time of building your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death.
 
-![img/provisioning-profile-date.png](img/provisioning-profile-date.png)
+![img/provisioning-profile-date.png](img/provisioning-profile-date.png){width="850"}
+{align="center"}
 
 Here's what started happening about a year ago with Xcode 11...the provisioning profiles weren't updating "created" date with new builds. Instead, Xcode was simply using the old profile's "created" date. This change has resulted in many people's apps expiring (and therefore dying suddenly) despite having updated/rebuilt within less than 12 months ago and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).
 
@@ -86,7 +88,8 @@ To solve this new issue...we have an easy solution. Honest...easy. You can do th
     `rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision`
     </br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.
     
-    ![img/empty-profiles.png](img/empty-profiles.png)
+    ![img/empty-profiles.png](img/empty-profiles.png){width="650"}
+{align="center"}
 
 ## Step 4b: Clean cache and dervied data
 
@@ -99,7 +102,8 @@ An ounce of prevention is worth a pound of cure.  Since we already have Terminal
     2. Copy and paste this command and press return: `rm -rf ~/Library/Developer/Xcode/DerivedData` Note: you won't see any message back if the command runs successfully.
     </br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.
     
-    ![img/cleaned-terminal.png](img/cleaned-terminal.png)
+    ![img/cleaned-terminal.png](img/cleaned-terminal.png){width="650"}
+{align="center"}
 
 ## Step 5: Build like normal
 

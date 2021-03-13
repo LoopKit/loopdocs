@@ -8,11 +8,13 @@ First we need to gather one thing called your "hashed API Secret". In your inter
 
 **For Safari users on Mac**, you can open the console window by selecting "Develop" from the Safari top menu, and then "Show Page Source" (if you do not see "Develop" in the top menu, activate it by going to Safari > Preferences... > Advanced, and checking the "Show Develop menu in menu bar" option).  If you're having problems seeing the apisecrethash, click the little grey triangle next to the "status isAuthenticated" line and the objects below it will display (see screenshot).  Your hashed API secret can be copied and pasted from that line, as shown below.  Save that somewhere easy to get to again, because you will be using it later.
 
-![img/hashed_API.png](img/hashed_API.png)
+![img/hashed_API.png](img/hashed_API.png){width="750"}
+{align="center"}
 
 **For Chrome users**, the console window is found through the View >> Developer >> View Source. Click on the Console tab and scroll to find the "status isAuthenticated" row to find your apisecrethash. Copy your API hash to somewhere you can retreive it again, we will be copy/pasting it in Step 2.
 
-![img/hashed_API2.png](img/hashed_API2.png)
+![img/hashed_API2.png](img/hashed_API2.png){width="750"}
+{align="center"}
 
 ## Step 2: Create your "Applets"
 
@@ -20,45 +22,55 @@ IFTTT calls their little actions that you'll create an "applet". I have no idea 
 
 * Get an [IFTTT account](https://ifttt.com/join)
 
-![img/IFTTT_signup.png](img/IFTTT_signup.png)
+![img/IFTTT_signup.png](img/IFTTT_signup.png){width="650"}
+{align="center"}
 
 * Login to your IFTTT.com account and select click [this link](https://ifttt.com/create) to get to the page for creating your first "New Applet". (You can also get to this Applet creation page by selecting your Account icon in the upper right of the IFTTT website, then clicking on "Create".)
 
 * In the screen that appears, click on the black "+this" part of the screen
 
-![img/IFTTT_this.png](img/IFTTT_this.png)
+![img/IFTTT_this.png](img/IFTTT_this.png){width="650"}
+{align="center"}
 
 * In the next screen, type "button" in the search field and then click on the red box labelled "ButtonWidget"
 
-![img/IFTTT_button.png](img/IFTTT_button.png)
+![img/IFTTT_button.png](img/IFTTT_button.png){width="650"}
+{align="center"}
 
 * Connect the button widget by clicking on the large black"connect" button twice, once on the main screen and then second on the pop-up window that will appear immediately after that. (You will only have to "connect" the widgets for the first applet you make.  After that the widgets will already connected to your IFTTT account.)
 
-![img/IFTTT_connect1.png](img/IFTTT_connect1.png)
+![img/IFTTT_connect1.png](img/IFTTT_connect1.png){width="650"}
+{align="center"}
 
 * Click on the large red "button press" box
 
-![img/IFTTT_buttonpress.png](img/IFTTT_buttonpress.png)
+![img/IFTTT_buttonpress.png](img/IFTTT_buttonpress.png){width="650"}
+{align="center"}
 
 * Click on the black "+that" text
 
-![img/IFTTT_that.png](img/IFTTT_that.png)
+![img/IFTTT_that.png](img/IFTTT_that.png){width="650"}
+{align="center"}
 
 * Enter "Webhooks" in the search field and click on the Webhooks app
 
-![img/webhooks1.png](img/webhooks1.png)
+![img/webhooks1.png](img/webhooks1.png){width="650"}
+{align="center"}
 
 * Connect the Webhooks app
 
-![img/webhooks2.png](img/webhooks2.png)
+![img/webhooks2.png](img/webhooks2.png){width="650"}
+{align="center"}
 
 * Select the blue "Make a Web Request" box
 
-![img/webhooks24.png](img/webhooks24.png)
+![img/webhooks24.png](img/webhooks24.png){width="650"}
+{align="center"}
 
 * Now you will have a blank web request template to complete.  Screenshot below is an example of a completed recipe for eating soon IFTTT action. There are four parts you will need to fill in, and they are described below the screenshot.
 
-![img/webhooks25.png](img/webhooks25.png)
+![img/webhooks25.png](img/webhooks25.png){width="650"}
+{align="center"}
 
 !!!danger "URL"
 
@@ -102,11 +114,13 @@ IFTTT calls their little actions that you'll create an "applet". I have no idea 
 
 * Now is your chance to change the title of your applet now to something meaningful.  You can turn on notifications, too, using the slider shown. If you turn on the notifications, you will get an alert on your phone and pebble watch when the button press has been successfully deployed.  Finish the IFTTT button by clicking on the Finish button that appears.
 
-![img/webhooks26.png](img/webhooks26.png)
+![img/webhooks26.png](img/webhooks26.png){width="650"}
+{align="center"}
 
 * Repeat the setup for new applets for as many automated actions/overrides as you would like to setup.
 
-![img/webhooks27.png](img/webhooks27.png)
+![img/webhooks27.png](img/webhooks27.png){width="650"}
+{align="center"}
 
 ## Step 3: Enable IFTTT in your Nightscout site
 
@@ -116,17 +130,21 @@ Now that we have cool applets made, we need to give Nightscout some information 
 
 ********
 
-![img/webhooks10.png](img/webhooks10.png)
+![img/webhooks10.png](img/webhooks10.png){width="650"}
+{align="center"}
 
 * You will see your Maker Key as the last part of the URL after the `use/`; copy and paste that last part (the red circled part as shown)
 
-![img/webhooks11.png](img/webhooks11.png)
+![img/webhooks11.png](img/webhooks11.png){width="650"}
+{align="center"}
 
 * Login to your Nightscout site host (azure or heroku) and (1) add your Maker Key to the MAKER_KEY line and (2) add "maker" to your ENABLE line.
 
-![img/IFTTT_NSkey.png](img/IFTTT_NSkey.png)
+![img/IFTTT_NSkey.png](img/IFTTT_NSkey.png){width="650"}
+{align="center"}
 
-![img/IFTTT_enable.png](img/IFTTT_enable.png)
+![img/IFTTT_enable.png](img/IFTTT_enable.png){width="650"}
+{align="center"}
 
 ## Step 4: Install IFTTT app on your iPhone/Android
 
@@ -136,7 +154,8 @@ Now that all the hard work is done, we can take easy street and just add that wo
 
 * For iPhone users, if you swipe right from your iPhone's home screen, you will have the Today view showing.  Scroll to the bottom, click "edit". This should show a list of existing widgets, followed by a list of "more widgets" with green + signs.  Click on the IFTTT's green circle and the widget will be moved to the top, active widgets area.  You can hold your finger on the three left lines of the IFTTT widget row to drag it to the top of your widget panel, if you prefer to have it as the top-most widget.
 
-![img/IFTTT_today.PNG](img/IFTTT_today.PNG)
+![img/IFTTT_today.PNG](img/IFTTT_today.PNG){width="550"}
+{align="center"}
 
 If you end up with more than four IFTTT applets, they will appear in reverse-order of when they were created...which may not be the same as you'd prefer them to appear on your widget bar.  If you'd like to reorder them:
 
@@ -147,12 +166,14 @@ If you end up with more than four IFTTT applets, they will appear in reverse-ord
 * click on the pencil icon in upper right of screen
 * click and hold the three lines that appear on the right side of the widget that you want to move.  Drag the widget to the order in the list that you'd like it to appear in your widget quickscreen.
 
-![img/IFTTT_reorder.png](img/IFTTT_reorder.png)
+![img/IFTTT_reorder.png](img/IFTTT_reorder.png){width="550"}
+{align="center"}
 
 ## Extra Credit: Alexa integration
 
 * Since you have IFTTT/Maker requests working, you can get it to work with anything that supports IFTTT, including Alexa. You will need to add "alexa" to your ENABLE line in your Heroku settings.  And then repeat the steps above, but instead of using "ButtonWidget" service we started with earlier (the "+if" part of the setup)...you will use the "AmazonAlexa" service.
 
-![img/alexa_maker.png](img/alexa_maker.png)
+![img/alexa_maker.png](img/alexa_maker.png){width="750"}
+{align="center"}
 
 * Alexa requests do not need underscores, FYI.

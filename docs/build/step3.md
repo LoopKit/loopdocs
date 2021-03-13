@@ -68,9 +68,9 @@ To find your pump’s firmware you will need to power it on. If the pump has not
 
 If the pump has been active recently or has a reservoir installed, follow these steps:
 
-1. Press the ![img/esc.png](img/esc.png) button on your pump.  
+1. Press the ![img/esc.png](img/esc.png){width="40"} button on your pump.  
 
-2. Scroll down with the ![img/light_button.png](img/light_button.png) button to the bottom of the status display.  
+2. Scroll down with the ![img/light_button.png](img/light_button.png){width="40"} button to the bottom of the status display.  
 
 3. Read the bottom line of the display.
 
@@ -155,13 +155,15 @@ Eros pods were launched in 2013 and continue to be sold by Insulet. As far as we
 
 Eros system has that PDM we all recognize from the last several years.
 
-![img/eros.png](img/eros.png)
+![img/eros.png](img/eros.png){width="750"}
+{align="center"}
 
 ### DASH - Loop will not work with DASH pods
 
 Insulet has announced their DASH system as an eventual replacement for Eros/Omnipod System. There has already been a limited release of DASH to a select group of users, with a wider public rollout of DASH expected in 2019. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop will not be compatible with the DASH system.
 
-![img/dash.png](img/dash.png)
+![img/dash.png](img/dash.png){width="750"}
+{align="center"}
 
 ## Next Step: Compatible CGM
 

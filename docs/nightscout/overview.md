@@ -4,7 +4,8 @@ Nightscout (NS) is an excellent tool for remotely viewing Loop's actions.  It al
 
 Nightscout is highly recommended for Loop users, especially those using Loop as caregivers to t1ds.  Nightscout displays are often the easiest way to troubleshoot Loop settings, if you are having problems and seeking input from others.  Below is some discussion about the general Nightscout display, as well as some Loop-specific display information.
 
-![img/example.jpg](img/example.jpg)
+![img/example.jpg](img/example.jpg){width="600"}
+{align="center"}
 
 ## Blood Glucose
 
@@ -52,6 +53,6 @@ The Loop pill is the little display box which when hovered over, or clicked, wil
     Warning indicating Loop is either red or has failed to upload to Nightscout for a longer period of time.
 Mouseover or Touch the Loop pill to view a tool tip containing one or more of the latest status messages. The most up-to-date NS also includes information in the Loop pill for the minimum and maximum predicted BG, eventual and predicted BG.
 
-![img/loop_pill_message.png](img/loop_pill_message.png)</dd>
+![img/loop_pill_message.png](img/loop_pill_message.png){width="750"}</dd>
 
 </dl>

@@ -20,7 +20,8 @@ When you change transmitters, you will need to update the transmitter ID in your
 
 When you change transmitters, select the `Delete CGM` button at the very bottom of the CGM info page in Loop. Then you will select your Dexcom system again and add the new transmitter ID. You cannot just tap on your old transmitter ID to update it.
 
-![img/delete-cgm.jpg](img/delete-cgm.jpg)
+![img/delete-cgm.jpg](img/delete-cgm.jpg){width="400"}
+{align="center"}
 
 If you don't update your transmitter ID when you change active transmitters, your Loop will be forced to go to your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID.
 

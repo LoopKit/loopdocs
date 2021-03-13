@@ -16,13 +16,15 @@ The modifications for retrofitting an existing NS site for new Loop users will r
 
 [Login to your Heroku account](https://id.heroku.com/login), select the `Settings` tab near the top of the screen on your Heroku app.
 
-![img/heroku5.png](img/heroku5.png)
+![img/heroku5.png](img/heroku5.png){width="450"}
+{align="center"}
 
 ### Step 2: Edit/Add Config Vars
 
 Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add several additional lines of config vars for Loop use; the DEVICESTATUS_ADVANCED and ENABLE lines are required, the others just make Nightscout more useful when Looping.
 
-![img/add_vars.jpg](img/add_vars.jpg)
+![img/add_vars.jpg](img/add_vars.jpg){width="450"}
+{align="center"}
 
 <table>
 <thead>
@@ -100,13 +102,15 @@ Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines 
 
 Click on `Open App` in the top right corner of your Heroku site.
 
-![img/open_app.jpg](img/open_app.jpg)
+![img/open_app.jpg](img/open_app.jpg){width="450"}
+{align="center"}
 
 ### Step 4: Turn on Plugins
 
 Click on the settings (those three horizontal lines in the upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then click save. If you have not authenticated your site previously, you may be prompted to provide your API Secret prior to Nightscout saving your changes.
 
-![img/settings_ns.jpg](img/settings_ns.jpg)
+![img/settings_ns.jpg](img/settings_ns.jpg){width="450"}
+{align="center"}
 
 ### Step 5: Update Profile Settings
 
@@ -120,7 +124,8 @@ Nightscout has a tool to help you update your Nightscout site and you can find t
 
 Simply put, the [Update tool](http://nightscout.github.io/pages/update-fork/) will look at your GitHub repository and check if your Nightscout code is old and needs updating.  You will have to be logged into your GitHub account in order for the tool to work, so do that before starting this process.
 
-![img/ns-tool.png](img/ns-tool.png)
+![img/ns-tool.png](img/ns-tool.png){width="750"}
+{align="center"}
 
 You'll click on the green `Continue updating at GitHub` button, read the directions that will appear as a pop-up and then finish the update process.
 
@@ -132,15 +137,18 @@ Click the big green `Create pull request` button.
 
 ---
 
-![img/update1.jpg](img/update1.jpg)
+![img/update1.jpg](img/update1.jpg){width="650"}
+{align="center"}
 
 ---
 
-![img/update2.jpg](img/update2.jpg)
+![img/update2.jpg](img/update2.jpg){width="650"}
+{align="center"}
 
 ---
 
-![img/update3.jpg](img/update3.jpg)
+![img/update3.jpg](img/update3.jpg){width="650"}
+{align="center"}
 
 ---
 
@@ -148,4 +156,5 @@ Your cgm-remote-monitor repository is now up-to-date.  Nice work, and almost don
 
 If you don’t have your Heroku set-up to automatically update when your repository is updated, you will have to go into your Heroku `Deploy` section and manually deploy your branch now that your repository has been updated.  Make sure you are connected to your GitHub cgm-remote-monitor repository.
 
-![img/deploy_branch.jpg](img/deploy_branch.jpg)
+![img/deploy_branch.jpg](img/deploy_branch.jpg){width="750"}
+{align="center"}

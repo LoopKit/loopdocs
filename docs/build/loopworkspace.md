@@ -22,7 +22,8 @@ I'm going to retread some info that you may have read in the Branches FAQs page 
 
 When you build Loop, in the background, Loop pulls those other frameworks (7 in total) into the build process using "Carthage".  Carthage is like a personal shopper. You give it a shopping list (the cartfile in Loop code is that shopping list) and it goes and fetches that for you during the build process. The cartfile shows where the various frameworks are (exactly which GitHub account) and which branch to use. This is an example of what the cartfile looks like for dev branch right now.
 
-![img/cartfile.png](img/cartfile.png)
+![img/cartfile.png](img/cartfile.png){width="750"}
+{align="center"}
 
 Many of the frameworks also have their own cartfiles embedded in them. So, when developers are doing code changes in one of those frameworks, it gets to be a nest of effort to keep the cartfiles pointing to the right places and consistent in the embedded cartfiles for the various frameworks.
 
@@ -53,7 +54,8 @@ How can you find your home directory?
 1. In Terminal, if you use `cd` that will take you there automatically.
 2. In Finder, shift-command-H will open your "home" folder.
 
-![img/root-finder.png](img/root-finder.png)
+![img/root-finder.png](img/root-finder.png){width="750"}
+{align="center"}
 
 As you can see, I have a lot of cloned things in my home directory from GitHub that involve Loop. You may have fewer...but be aware, you can always delete and reclone if you are in doubt or confused.
 
@@ -85,7 +87,8 @@ So to summarize, you need to clone LoopWorkspace by:
 5. Find that cloned folder, by opening the Finder app. Click `shift-command-H` and Finder will open your "home" or root folder. Scroll down and you'll see a folder called `LoopWorkspace`.
 6. From withing the LoopWorkspace folder, double-click on the `Loop.xcworkspace` file to open the project in Xcode.
 
-![img/workspace-file.png](img/workspace-file.png)
+![img/workspace-file.png](img/workspace-file.png){width="550"}
+{align="center"}
 
 !!!warning "Two things to notice"
 
@@ -93,7 +96,8 @@ So to summarize, you need to clone LoopWorkspace by:
 
     
     
-    ![img/workspace-use.png](img/workspace-use.png)
+    ![img/workspace-use.png](img/workspace-use.png){width="750"}
+{align="center"}
     
 
     Oh wait...there is a noticable difference...the speed! LoopWorkspace will build Loop much faster than Loop because of the way it uses submodules. I do rather like that benefit to using LoopWorkspaces too.
@@ -125,7 +129,8 @@ There are 2 main ways to do this.
 
 2. If you're not as familiar with Git, if you edit your .gitmodules directory in LoopWorkspace, you can specify other repos to use (and add a line to specify branches, too). Then if you do a `git submodule sync` the workspace will sync to new submodules. Then `git submodule update --init --recursive --remote` will update all the submodules to the right branches and get HEADs detached correctly, etc.
 
-![img/gitmodules.png](img/gitmodules.png)
+![img/gitmodules.png](img/gitmodules.png){width="750"}
+{align="center"}
 
 ## Pushing commits from LoopWorkspace
 

@@ -20,7 +20,9 @@ Your Loop won’t have much showing initially until we get some basic settings i
 
 Let’s start by clicking on the Loop Settings button in the tool bar at the bottom of your Loop app. It looks like a little sprocket. On the settings screen that opens, click on `Add Pump` and select the **Medtronic pump** option that appears.
 
-![img/loop_settings_add_pump.png](img/loop_settings_add_pump.png)
+![img/loop_settings_add_pump.png](img/loop_settings_add_pump.png){width="750"}
+{align="center"}{width="450"}
+{align="center"}
 
 ## Pump Pairing
 
@@ -30,13 +32,14 @@ You now need to follow a few simple screen prompts to add your Medtronic pump to
 2. Add your pump's region, color, and serial number.
 3. Click the `Continue` button to finish the addition of your pump.
 
-![img/add_pump.png](img/add_pump.png)
+![img/add_pump.png](img/add_pump.png){width="750"}
+{align="center"}
 
 !!!info "For x23 and x54 Medtronic pump users only"
 
     |||
     |---|---|
-    |![img/pump_broadcasts.png](img/pump_broadcasts.png)|For x23 and x54 Medtronic pump users, there is a packet of information special to those pumps called MySentry messages. If you have never setup this part of the pump previously, you may see a screen, called "Pump Broadcasts", at this point in the setup process.</br></br>Follow the directions on the screen. They will require you to take some manual steps on your pump to "pair" it with your Loop app.</br></br>Basically, you will need to go to your pump's main menu, scroll down to Utilities, then Connect Devices, then Other Devices, turn that setting On, and then select Find Device. Once you do that, click on the `Continue` button in Loop app and the pairing will take place. This will allow those MySentry packets of information to flow to Loop app.</br></br>This step does not apply for x22 or x15 pump users, since those pumps do not have MySentry capabilities.|
+    |![img/pump_broadcasts.png](img/pump_broadcasts.png){width="550"}|For x23 and x54 Medtronic pump users, there is a packet of information special to those pumps called MySentry messages. If you have never setup this part of the pump previously, you may see a screen, called "Pump Broadcasts", at this point in the setup process.</br></br>Follow the directions on the screen. They will require you to take some manual steps on your pump to "pair" it with your Loop app.</br></br>Basically, you will need to go to your pump's main menu, scroll down to Utilities, then Connect Devices, then Other Devices, turn that setting On, and then select Find Device. Once you do that, click on the `Continue` button in Loop app and the pairing will take place. This will allow those MySentry packets of information to flow to Loop app.</br></br>This step does not apply for x22 or x15 pump users, since those pumps do not have MySentry capabilities.|
 
 Now that your pump is paired with Loop, you will be finishing these steps:
 
@@ -47,7 +50,8 @@ Now that your pump is paired with Loop, you will be finishing these steps:
 
 **Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.**  Event History must also be selected in order for prime events to be detected and NOT contribute to IOB during site changes. Please just leave the Preferred Data Source on Event History.
 
-![img/add_pump2.png](img/add_pump2.png)
+![img/add_pump2.png](img/add_pump2.png){width="750"}
+{align="center"}
 
 ## Next Step: Add CGM
 

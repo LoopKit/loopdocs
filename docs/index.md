@@ -1,6 +1,6 @@
 # Welcome to Loop
 
-![img/phones.png](img/phones.png)
+![img/phones.png](img/phones.png){width="300"}
 ![img/phones.png](img/watch.png)
 
 ## Introduction
@@ -27,9 +27,8 @@ Loop has been developed as an open-source, shared project.  For a really interes
 
 * Use the navigation menu at the top of the screen to find the info you are looking for.
 * A Table of Contents for the current page is always displayed on the left side of the screen.
-* You can search the Loop Docs site by clicking the ![img/search_icon.png](img/search_icon.png) icon.
-
-![img/search_example.png](img/search_example.png)
+* You can search the Loop Docs site by clicking the ![img/search_icon.png](img/search_icon.png){width="50px"} icon.
+![img/search_example.png](img/search_example.png){width="400"}
 
 ## Stay in the Loop!
 
