@@ -10,11 +10,13 @@ To understand pump battery levels, you first need to know a little about **batte
 
 Alkaline batteries have a relatively steady voltage drop over time, as shown below.  Notice the shape of the curve has a significant amount of time in the 1.3 to 1.2 volts range, and a relatively smooth decline to about 1.2 volts.
 
-![img/alkaline.jpg](img/alkaline.jpg)
+![img/alkaline.jpg](img/alkaline.jpg){width="250"}
+{align="center"}
 
 Lithium batteries have a much steadier voltage output over time, as shown below.  Notice how the shape of the curve is relatively flat for a large portion of the battery life before suddenly off around 1.3 volts.
 
-![img/lithium.jpg](img/lithium.jpg)
+![img/lithium.jpg](img/lithium.jpg){width="250"}
+{align="center"}
 
 What does the above information mean in terms of Looping?  A lithium battery at 1.3v is going to have a much quicker time to death than an alkaline battery sitting at 1.3v.  You might only get a couple of hours of looping left when a lithium battery is at 1.3v, but an alkaline battery at 1.3v might go for several more days.  So when we talk about setting alarm levels in either system, your battery type is an important consideration.
 
@@ -64,7 +66,8 @@ The Nightscout information regarding pump battery levels will depend on pump mod
 
 The Nightscout alarms are based on the Heroku settings that you have input specifically.  If you don't specifically set them, Nightscout will use the default settings for pump battery alerts as shown below:
 
-![img/pump-ns.png](img/pump-ns.png)
+![img/pump-ns.png](img/pump-ns.png){width="650"}
+{align="center"}
 
 Nightscout pump battery levels, if you leave things at default installation, will not trigger alarms.  If however you add a setting of `PUMP_ENABLE_ALERTS` to `true`, you will receive pump battery notifications according to the levels shown in the parenthesis above.  For example, your x23 pump is reporting its levels in percent, therefore you'd receive a yellow warning alarm at 30% and an urgent red alarm at 20%.  Your x22 pump however is reporting its levels at voltage readings, therefore you'd receive a warning yellow alarm at 1.35v and an urgent red alarm at 1.30v.
 

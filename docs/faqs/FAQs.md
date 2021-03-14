@@ -20,7 +20,8 @@ Loop has both hardware and software requirements. In general, to use Loop you ne
 - [Xcode (a free Apple application)](../build/step8.md)
 - [Apple Developer Membership](../build/step6.md)
 
-![img/loop_gear.jpg](img/loop_gear.jpg)
+![img/loop_gear.jpg](img/loop_gear.jpg){width="500"}
+{align="center"}
 
 ## Can I download Loop from the App store?
 

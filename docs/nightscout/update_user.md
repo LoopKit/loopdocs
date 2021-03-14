@@ -16,13 +16,15 @@ The modifications for retrofitting an existing NS site for new Loop users will r
 
 [Login to your Heroku account](https://id.heroku.com/login), select the `Settings` tab near the top of the screen on your Heroku app.
 
-![img/heroku5.png](img/heroku5.png)
+![img/heroku5.png](img/heroku5.png){width="600"}
+{align="center"}
 
 ### Step 2: Edit/Add Config Vars
 
 Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add several additional lines of config vars for Loop use; the DEVICESTATUS_ADVANCED and ENABLE lines are required, the others just make Nightscout more useful when Looping.
 
-![img/add_vars.jpg](img/add_vars.jpg)
+![img/add_vars.jpg](img/add_vars.jpg){width="600"}
+{align="center"}
 
 <table>
 <thead>
@@ -100,13 +102,15 @@ Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines 
 
 Click on `Open App` in the top right corner of your Heroku site.
 
-![img/open_app.jpg](img/open_app.jpg)
+![img/open_app.jpg](img/open_app.jpg){width="600"}
+{align="center"}
 
 ### Step 4: Turn on Plugins
 
 Click on the settings (those three horizontal lines in the upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then click save. If you have not authenticated your site previously, you may be prompted to provide your API Secret prior to Nightscout saving your changes.
 
-![img/settings_ns.jpg](img/settings_ns.jpg)
+![img/settings_ns.jpg](img/settings_ns.jpg){width="600"}
+{align="center"}
 
 ### Step 5: Update Profile Settings
 

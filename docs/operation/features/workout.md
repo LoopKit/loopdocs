@@ -4,7 +4,8 @@ Overrides were developed as a method of letting Loop know that you have a situat
 
 Override presets are (1) optional and (2) can be configured within Loop's workout icon (the little blue heart icon in the Loop toolbar). Once override presets are created, they can be turned on/off by using the workout icon as well.
 
-![img/toolbar.png](img/toolbar.png)
+![img/toolbar.png](img/toolbar.png){width="450"}
+{align="center"}
 
 ## How overrides work
 
@@ -14,7 +15,8 @@ Notice the fine-print below the orange bar showing the overall adjustment graphi
 
 Recapping: If you set an overall insulin needs adjustment below 100%, you are telling Loop that you are more insulin sensitive and will need a lighter touch with all things insulin. If you set an overall insulin needs adjustment above 100%, you are telling Loop that you are less insulin sensitive and will need a more aggressive touch with all things insulin.
 
-![img/override-entry.jpeg](img/override-entry.jpeg)
+![img/override-entry.jpeg](img/override-entry.jpeg){width="300"}
+{align="center"}
 
 ## How overrides do NOT work
 
@@ -44,11 +46,13 @@ When you've made all those adjustments, save the the preset using the "Save" but
 
 To enact your override preset, you simply tap on the workout icon toolbar and select your override from your list of presets that you programmed in previously in the step above.
 
-![img/override-selection.PNG](img/override-selection.PNG)
+![img/override-selection.PNG](img/override-selection.PNG){width="300"}
+{align="center"}
 
 The heart will be highlighted in a blue square while active and a banner notification will appear at the top of the Loop's main screen. Additionally, you'll see a darker blue target area indicating the override's target range and duration in your Loop's blood glucose graph.
 
-![img/override-enacted.PNG](img/override-enacted.PNG)
+![img/override-enacted.PNG](img/override-enacted.PNG){width="300"}
+{align="center"}
 
 You can also setup a future start time for the override by selecting the override preset and setting the "Start time" row. Save the future override by pressing the "Enable" button in the top right corner. A future override can be very helpful, for example, to set an exercise override the night before your workout. Set your exercise override to activate 2 hours before you wake up for your 5am spin class in the morning. You'll wake up with less insulin on board and at your desired exercise targets, without needing to set an alarm to wake up simply to set an override.
 

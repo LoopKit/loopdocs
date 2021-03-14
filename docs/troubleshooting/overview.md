@@ -24,7 +24,8 @@ Under the Loop app settings, there is a selection called `Issue Report`.  Within
 
 Check the current list of [GitHub Loop Issues](https://github.com/LoopKit/Loop/issues) for known issues.  Many times other users have noticed the same issue previously and opened an Issue so that more information can be added to help develop a solution.  If you see your same issue has already been reported, please add to the open issue instead of creating a new one.
 
-![img/loop-issues.png](img/loop-issues.png)
+![img/loop-issues.png](img/loop-issues.png){width="800"}
+{align="center"}
 
 ### Zulipchat and Facebook
 

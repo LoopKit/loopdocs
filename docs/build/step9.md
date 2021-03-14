@@ -21,7 +21,8 @@ Open Xcode from your Applications folder.
 
 There may be a short delay the very first time you open Xcode because it will install a package of tools. Don't close that window out, let it finish...we will need those Command Line Tools. Helpful tip: When the Command Line Tools installation is done and the pop-up window closes, check that your Command Line Tools installed correctly. Open Xcode's Preferences by clicking on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and selecting `Preferences` in the drop-down menu. The keyboard shortcut to open Xcode Preferences is `command-comma` if that's easier for you. Then select the `Locations` tab of Preferences window and you'll see the dropdown menu for Command Line Tools. Make sure the Xcode version listed matches what you just installed. If it's blank, use the blue arrows to the right of the Command Line Tools row to select it.
 
-![img/command-line-error-3.png](img/command-line-error-3.png)
+![img/command-line-error-3.png](img/command-line-error-3.png){width="750"}
+{align="center"}
 
 ## Simulator Download
 
@@ -33,19 +34,23 @@ Then scroll down to find the watchOS lines and choose the operating system on yo
 
 Simulator download is now initiated. You can continue with the next steps, but let download complete before trying to build.
 
-![img/download-simulators-1.svg](img/download-simulators-1.svg)
+![img/download-simulators-1.svg](img/download-simulators-1.svg){width="750"}
+{align="center"}
 
-![img/download-simulators-2.svg](img/download-simulators-2.svg)
+![img/download-simulators-2.svg](img/download-simulators-2.svg){width="750"}
+{align="center"}
 
 ## Add Apple ID
 
 Go to the Xcode Preferences window from above, click on the `Accounts` tab and then press the `+` in the lower-left corner to add an Apple ID account.
 
-![img/xcode_account.png](img/xcode_account.png)
+![img/xcode_account.png](img/xcode_account.png){width="750"}
+{align="center"}
 
 If you want to use a free developer account, you will simply enter your Apple ID in this section and Xcode will automatically enroll your Apple ID in the free developer program. If you enrolled in the paid account already and have confirmation that your account is active, enter the Apple ID of the paid developer account. The screenshot below shows the labeling of team names based on whether from free account vs. paid account. Free teams will have `(personal team)` after the name.
 
-![img/apple_id.png](img/apple_id.png)
+![img/apple_id.png](img/apple_id.png){width="750"}
+{align="center"}
 
 You are now done setting up Xcode.  Great job!  You will not need to redo the account setup steps on any subsequent builds or updates of your Loop app.  Xcode will remember these settings.
 

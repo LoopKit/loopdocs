@@ -6,7 +6,8 @@ This page will cover two general parts of the Loop's settings, circled in red in
 
 * The second circled section is the configuration section. This section contains a lot of really important settings that control how your Loop will calculate your predicted BG curve. Given the importance of your predicted BG curve to Loop's actions, please make sure you read over this page carefully to know how to navigate the selections and entries.
 
-![img/configurations.jpg](img/configurations.jpg)
+![img/configurations.jpg](img/configurations.jpg){width="350"}
+{align="center"}
 
 ## Closed/Open Loop
 
@@ -14,13 +15,15 @@ The Closed Loop switch controls whether Loop automatically enacts its recommende
 
 ### Open Loop Mode
 
-![img/open_loop.png](img/open_loop.png)
+![img/open_loop.png](img/open_loop.png){width="400"}
+{align="center"}
 
 When the Closed Loop switch is in the (Off&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ) position, Loop WILL NOT enact recommended temp basals automatically. Instead, Loop will display recommended temp basals on the main status display, just above the blood glucose graph. This is called **open loop**, and is a good way to understand how Loop will function, and what type of recommendations it would make. If you click on the recommended temp basal line while in open loop mode, Loop will implement the temp basal.
 
 ### Closed Loop Mode
 
-![img/closed_loop.png](img/closed_loop.png)
+![img/closed_loop.png](img/closed_loop.png){width="400"}
+{align="center"}
 
 When the Closed Loop switch is in the (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   On) position, Loop WILL automatically enact recommended temp basals on the configured insulin pump. This is known as **closed loop**. Typically, Loop will show the recommended temp basal just above the blood glucose graph prior to automatically enacting it. It may take a minute or so for the Loop to enact the recommended basal. Once the temp basal has been enacted successfully on the pump, the recommended temp basal will disappear from the screen and the new temp basal rate will be represented in the insulin delivery graphs.
 
@@ -36,7 +39,8 @@ If you run into problems or errors with your Loop, an Issue Report can be used t
 
 The correction range is your blood glucose range that you would like Loop to correct to. Correction range is not necessarily the same target blood glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction target of 100-110 for Loop to aim to, but use a desired BG target range of 80-180 when discussing things with your endo about "time in range".
 
-![img/premeal_entry.jpg](img/premeal_entry.jpg)
+![img/premeal_entry.jpg](img/premeal_entry.jpg){width="250"}
+{align="center"}
 
 Click the + in the upper right corner to add correction BG range(s). You can have multiple ranges based on time of day, but the first setting of the day needs to begin at midnight.
 
@@ -102,7 +106,8 @@ A common new Loop user error is to select Walsh model in order to easily shorten
 
 You can click on each model and see what each model's insulin activity curve looks like, active one selected in blue.
 
-![img/models.jpg](img/models.jpg)
+![img/models.jpg](img/models.jpg){width="350"}
+{align="center"}
 
 The differences between the three exponential models (two Rapid-Acting and Fiasp) models has to do with the timing of the peak insulin activity timing. Not surprising, since Fiasp is marketed as the "faster acting" insulin. Currently all the exponential models are defaulted to an insulin duration of 6 hours, but the peak activity of the curves differs:
 

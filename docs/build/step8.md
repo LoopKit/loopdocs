@@ -15,7 +15,8 @@ Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" 
 
 Open your App Store in your computer and search for Xcode...you'll either be downloading it brand new or updating an existing installation. The minimum version you need will depend on the iOS your iPhone is running. The version number should be showing in the "what's new" description as shown in the image below. This is a big download, so don't expected this to be fast.
 
-![img/xcode.png](img/xcode.png)
+![img/xcode.png](img/xcode.png){width="750"}
+{align="center"}
 
 !!!warning "Two important facts"
 
@@ -51,13 +52,15 @@ If you have a brainfart and leave your macOS back at 10.15.2...the App Store won
 
 (Source for the chart is [wikipedia](https://en.wikipedia.org/wiki/Xcode))
 
-![img/minimum-related.png](img/minimum-related.png)
+![img/minimum-related.png](img/minimum-related.png){width="750"}
+{align="center"}
 
 ## What happens if you try using too old of Xcode?
 
 It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
 
-![img/device-support-files.jpg](img/device-support-files.jpg)
+![img/device-support-files.jpg](img/device-support-files.jpg){width="750"}
+{align="center"}
 
 So, if you see that error message realize you may have to update your macOS to be able to see the newest Xcode version that you will need. Make sure to check that chart to see what your minimum versions are for the iOS you are running on your iPhone.
 

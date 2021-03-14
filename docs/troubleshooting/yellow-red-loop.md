@@ -21,7 +21,8 @@ So you are here for help with getting your Loop green again? It's red and not wo
         * For RileyLink (without wireless charging) use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a [screaming pod silencer tool](../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod).
 
 
-    ![img/riley-switch.png](img/riley-switch.png)
+        ![img/riley-switch.png](img/riley-switch.png){width="450"}
+        {align="center"}
 
 
     That's pretty much all you need to do for option 1 to restore a green Loop within 5 minutes, 99% of the time. You know Loop is working again by waiting 5 minutes for a green Loop or (if you're impatient) issue a "Read Pod Status" or "Button Press" successfully through the Pod/Pump menu.
@@ -62,7 +63,8 @@ Leaving this in for historical interest only. It illustrates the need to keep Lo
 
 Finally, we see a lot of errors reported because people have problems with their Share server information in Loop app. **Please delete your Share account information from within Loop settings.** In other words, the credentials portion of the Share account info, as shown in the screenshot below, should say `Tap to Set` and not have your account info. It is unnecessary to have this portion filled out as local, non-internet spying of a transmitter is the preferred CGM source anyways. In fact, by leaving this information out, it will help you remember to change your transmitter ID when you change transmitters because CGM data won't appear in Loop. By not including Share account in Loop, you will prevent yourself from accidentally becoming internet dependent.
 
-![img/no-share.jpg](img/no-share.jpg)
+![img/no-share.jpg](img/no-share.jpg){width="450"}
+{align="center"}
 
 ## Pump is not responding
 

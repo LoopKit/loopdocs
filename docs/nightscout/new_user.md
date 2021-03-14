@@ -13,7 +13,8 @@ There are two options for setting up Nightscout; one option requires a small fee
 * Select [Get Started](https://www.t1pal.com/getting-started/starting/home) to register an account at [T1Pal](https://www.t1pal.com/).  You will need to enter your credit card, which helps ensure Nightscout is running correctly.
 * Select "visualize treatments" in the setup menu and select "loop."
 
-![img/t1pal_configure.png](img/t1pal_configure.png)
+![img/t1pal_configure.png](img/t1pal_configure.png){width="450"}
+{align="center"}
 
 ## Traditional DIY (free, do-it-yourself)
 

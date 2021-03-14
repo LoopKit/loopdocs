@@ -12,7 +12,8 @@ NOTE: The #1 reason why BGs aren't showing is that you have mismatched password 
 
 Login to your Heroku account and from within Heroku settings, click on the  `Reveal Config Vars`
 
-![img/config-vars.png](img/config-vars.png)
+![img/config-vars.png](img/config-vars.png){width="800"}
+{align="center"}
 
 Now from the `Config Vars` area, check the following (see screenshot below for reference):
 
@@ -22,11 +23,13 @@ Now from the `Config Vars` area, check the following (see screenshot below for r
 4. Your `careportal` must be one word in the `ENABLE` line, sometimes autocorrect makes it two words.
 5. If using `mmol`, make sure you have spelled that value correctly in the `DISPLAY_UNITS`.
 
-![img/bridge-settings.jpg](img/bridge-settings.jpg)
+![img/bridge-settings.jpg](img/bridge-settings.jpg){width="600"}
+{align="center"}
 
 One thing that can happen if you have an incorrect Dexcom login/password in Loop's CGM Share account settings and/or in your Nightscout BRIDGE settings is that Dexcom will lock your account...and you won't see CGM data in Nightscout. If you notice your CGM readings disappeared, but everything else is flowing...check your Heroku logs that are viewable by selecting "View Logs" from the drop-down menu underneath the "More" option.
 
-![img/heroku-logs.png](img/heroku-logs.png)
+![img/heroku-logs.png](img/heroku-logs.png){width="800"}
+{align="center"}
 
 Do your logs have "SSO authentication errors" like in the red box highlighted above? If you do, then:
 
@@ -44,7 +47,8 @@ Do your logs have "SSO authentication errors" like in the red box highlighted ab
 
 Make sure you have Dexcom Share turned ON in your Dexcom app. In the Dexcom app's main screen, find the triangle made of dots. If the dots are grey, you do not have Share turned on. Tap the triangle, and follow the directions to add a follower (yourself if you don't have someone else you'd like to invite) and turn on Share.
 
-![img/sharing.jpg](img/sharing.jpg)
+![img/sharing.jpg](img/sharing.jpg){width="250"}
+{align="center"}
 
 ## Loop data not showing
 

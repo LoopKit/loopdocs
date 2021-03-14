@@ -1,6 +1,7 @@
 # Apple Watch
 
-![img/watch.png](img/watch.png)
+![img/watch.png](img/watch.png){width="150"}
+{align="center"}
 
 If you add an Apple Watch after building Loop, you will need to pair your watch to your iPhone and then rebuild Loop to enable the Loop watch app to show up as an available watch app.
 

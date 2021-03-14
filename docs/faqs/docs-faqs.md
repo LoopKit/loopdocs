@@ -35,4 +35,5 @@ If you get stuck, there are several things that can help:
 
 Nope...we wouldn't just leave you dangling like that. There's also an important walk-thru for how to set up your app for the first time. The new displays and settings are all explained in the "Set up App" section of this website. Check it out and follow along with each page step-by-step, just like you did for building. This way you'll learn valuable tips along the way too. Do similar for the "Operate" section of these docs...those are very helpful for understanding how you will use the app to enter meals, edit entries, bolus, etc.
 
-![img/setup-app.png](img/setup-app.png)
+![img/setup-app.png](img/setup-app.png){width="700"}
+{align="center"}

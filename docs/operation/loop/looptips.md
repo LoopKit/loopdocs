@@ -15,4 +15,5 @@ All of those usability questions and more are addressed over in the companion si
 
 Please head over to Looptips in order to read some really helpful tips to make your Looping easier.
 
-![img/looptips.png](img/looptips.png)
+![img/looptips.png](img/looptips.png){width="550"}
+{align="center"}

@@ -39,7 +39,8 @@ While you are out of the communication range for your RileyLink, any running tem
 
 There are two different types of RileyLink currently; the difference being the antenna is optimized for the pump you are using. Otherwise they are identical.
 
-![img/two-rl.png](img/two-rl.png)
+![img/two-rl.png](img/two-rl.png){width="650"}
+{align="center"}
 
 ## Is the new antenna an "upgrade" in Loop performance?
 
@@ -53,13 +54,15 @@ Before August 2018, RileyLinks had a firmware that works for only Medtronic pump
 
 RileyLinks produced after August 2018, include newer firmware that is needed for Omnipod pump communications as well. The newer firmware will say `subg_rfspy 2.2/ble_rfspy 2.0` in the RileyLink menu, like below when paired in Loop.
 
-![img/rl-firmware.jpg](img/rl-firmware.jpg)
+![img/rl-firmware.jpg](img/rl-firmware.jpg){width="350"}
+{align="center"}
 
 Assuming your has the newer RileyLink firmware, you can *technically* use that RileyLink with either pump on Loop. But, you will have significant frustrations with the short distances required between the pump/pod and RileyLink when using the "wrong" antenna. Even keeping RileyLink in the pocket on the opposite of where the POD is on your body can cause issues with the 916MHz antenna. With mismatched antenna/pump, the RileyLink needs to be very close and in clear line-of-sight to pump/pod, that it makes everyday living a bit hard. If you use the appropriate-antenna-for-your-pump RileyLink, the distances the pump/pod and RileyLink can tolerate from each other is much more "real world" friendly and stable.
 
 In summary, definitely use the appropriate RileyLink with the antenna that matches your pump so that you are less frustrated. In a pinch, your old RileyLink might work as a backup, but you won't love it.
 
-![img/rl-antenna-chart.png](img/rl-antenna-chart.png)
+![img/rl-antenna-chart.png](img/rl-antenna-chart.png){width="750"}
+{align="center"}
 
 ## Can you swap out the old antenna on a RileyLink?
 

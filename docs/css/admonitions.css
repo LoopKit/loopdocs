@@ -1,16 +1,25 @@
-/* Common styles for all types */
+
 .admonition {
-  padding: 10px;
+  padding-bottom: 10px;
   margin: 20px 0;
   border: 1px solid #eee;
   border-left-width: 8px;
   border-radius: 3px;
   background-color: #fCfCfc;
 }
+
+.admonition > *:not(.admonition-title):first-of-type, .admonition > .admonition-title + * {
+  margin-top: 0.1rem;
+}
+
 .admonition .admonition-title {
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 5px;
+  padding: 0em 1em;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  font-size: 1.6em;
+  font-family: inherit;
+  font-weight: 500;
+ 
 }
 .admonition p:last-child, .admonition ul:last-child, .admonition ol:last-child {
   margin-bottom: 0;
@@ -64,8 +73,5 @@
 
 /* Title */
 .admonition-title {
-  font-size: 1.4em;
-  font-family: inherit;
-  font-weight: 500;
-  /*line-height: 1.1;*/
+  padding: 1rem 1rem;
 }

@@ -16,24 +16,28 @@ Most beep alarms are disabled for a much more discrete use of the omnipod. Only 
 
 You can customize the way notifications of Loop are behaving in the Settings App of the iPhone:
 
-![img/iphone-settings-notifications.png](img/iphone-settings-notifications.png)
+![img/iphone-settings-notifications.png](img/iphone-settings-notifications.png){width="250"}
+{align="center"}
 
 Settings of Loop:
 
-![img/iphone-notifications-loop.png](img/iphone-notifications-loop.png)
+![img/iphone-notifications-loop.png](img/iphone-notifications-loop.png){width="250"}
+{align="center"}
 
 ## Loop Failure
 
 At 20, 40, 60, and 120 minutes, there is a Loop Failure notification.
 This mostly happens when the connection is lost for a longer period of time between the CGM or the Rileylink and Loop.
 
-![img/loop-failure.png](img/loop-failure.png)
+![img/loop-failure.png](img/loop-failure.png){width="250"}
+{align="center"}
 
 ## Bolus Failure
 
 If Loop detects that a bolus was not able to be delivered, it will provide a notification.  Bolus failures are usually due to stale pump data.  Try fetching recent history from the RileyLink menu to update pump data.  Loop will also notify of partial bolus deliveries.
 
-![img/loop-bolus-failure.png](img/loop-bolus-failure.png)
+![img/loop-bolus-failure.png](img/loop-bolus-failure.png){width="250"}
+{align="center"}
 
 ## Low Reservoir
 
@@ -43,7 +47,8 @@ At 20% and 10% remaining reservoir volume, there is a Low Reservoir notification
 <font color ="orange">**Omnipod**</font>  
 At <30U, <20U, <10U  
 
-![img/pod-reservoir-10U.png](img/pod-reservoir-10U.png)
+![img/pod-reservoir-10U.png](img/pod-reservoir-10U.png){width="250"}
+{align="center"}
 
 ## Empty Reservoir
 
@@ -52,14 +57,16 @@ Loop will notify when the reservoir is empty. Loop will notify you every minute 
 <font color ="orange">**Omnipod**</font>  
 Normally you will have 5-30 minutes to replace the pod, but do know the pod can [scream](https://soundcloud.com/eelke-jager/1f-nibble-f) at any moment from this point on.
 
-![img/loop-reservoir-empty.png](img/loop-reservoir-empty.png)
+![img/loop-reservoir-empty.png](img/loop-reservoir-empty.png){width="250"}
+{align="center"}
 
 ## Pod Expiration (Omnipod)
 
 You can customize the time of notification when to replace your pod any time from 1 hour up to 71 hours (3 days - 1 hour) [after staring a new pod](../loop-settings/omnipod-pump.md#expiration-reminder) or you change the time later in the [pod configuration settings]../loop-settings/omnipod-pump.md#configuration).
 The expiry alarm will always sound when the pod reaches a running full 3 days (72 hours) which you can silence [in the pod status settings](../loop-settings/omnipod-pump.md#status).
 
-![img/pod-expiration-notice.png](img/pod-expiration-notice.png)
+![img/pod-expiration-notice.png](img/pod-expiration-notice.png){width="250"}
+{align="center"}
 
 ## Low Battery (Medtronic)
 

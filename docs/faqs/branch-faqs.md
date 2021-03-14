@@ -12,7 +12,8 @@ Loop developers own an account in GitHub called [LoopKit](https://github.com/Loo
 
 When you build Loop, in the background, Loop pulls those other frameworks (7 in total) into the build process using "Carthage".  Carthage is like a personal shopper. You give it a shopping list (the cartfile in Loop code is that shopping list) and it goes and fetches that for you during the build process. Sometimes your computer has an old shopping list...and that can cause build errors. Hence the "carthage update" fix in the Build Errors page...that command updates the shopping list to get the right versions of those frameworks.
 
-![img/loopkit.png](img/loopkit.png)
+![img/loopkit.png](img/loopkit.png){width="650"}
+{align="center"}
 
 Anyways...so now you know about the general structure of Loop and LoopKit in Github. Now we can discuss Loop itself a little deeper.
 
@@ -64,7 +65,8 @@ iOS 13 brought about a quirky little bug where you could suddenly lose settings 
 
 To prevent an accidental bolus from your Watch app, don't let your kids hold your watch. Just kidding, we've added an even better option. There is a new "spin" to confirm the bolus after you press the bolus button. You'll see a graphic like below on the watch face. As you spin the digital crown, the two triangles will begin to merge. Once they merge, the bolus is confirmed through a little haptic and a white checkmark will appear on the watch screen.
 
-![img/spin-to-confirm.png](img/spin-to-confirm.png)
+![img/spin-to-confirm.png](img/spin-to-confirm.png){width="250"}
+{align="center"}
 
 ### Watch recommended bolus
 
@@ -163,13 +165,15 @@ If you choose to use a dev build, you can stay abreast of developments in a numb
 
 First, subscribe to the Loop repo's Issues list by "watching" the [Loop repo](https://github.com/LoopKit/Loop). You can choose to watch the repo so that you get emails when new Issues are reported. This is a good way to find out if there's other people reporting odd behavior that you are wondering about. If you use dev and wonder about something you are seeing in Loop, you can check [Issues list](https://github.com/LoopKit/Loop/issues) to see if others are noticing the same. If so, you can help by capturing information and reporting it. Not super helpful to just say "yeah, me too..." but better if you can attach screenshots, Issue Reports from Loop settings, and a thorough description of the problem you are seeing. Be a part of the solution by thoughtfully providing information to help debug.
 
-![img/watching.png](img/watching.png)
+![img/watching.png](img/watching.png){width="650"}
+{align="center"}
 
 ### Subscribe to the Zulipchat channels
 
 Second, use [Zulipchat](https://loop.zulipchat.com) forums for Loop. This forum has several "streams" of conversations depending on interest. I highly recommend following the #github channel if you are wanting to watch for code changes. Code changes are called "commits" in GitHub. The #github channel will have an automated post whenever a new commit is made and it will give a brief line description of the commit.
 
-![img/zulipchat.png](img/zulipchat.png)
+![img/zulipchat.png](img/zulipchat.png){width="650"}
+{align="center"}
 
 You can also go directly to the commit history for each of the branches if you'd like.
 
@@ -179,7 +183,8 @@ You can also go directly to the commit history for each of the branches if you'd
 
 If you click on the commit, you can see exactly what changes to the code were made. It's an interesting learning experience. In red are the code that is old, in green is the updated code. The line numbers and file names of the edited code are also there to help.
 
-![img/commit.png](img/commit.png)
+![img/commit.png](img/commit.png){width="550"}
+{align="center"}
 
 I don't expect many of you would understand exactly what the edits mean, or how the new code might function...but I bring up the topic of commit history so that you can use that to realize just how often dev is updated. Go ahead and look at the number and frequency of commits in that dev branch...that is why there is no way someone is going to keep a "loopdocs" of dev changes. It's just too much a moving target.
 
@@ -194,7 +199,8 @@ You can always check out the [LoopDashboard](https://www.loopdashboard.org/) whi
 On the first page of loopdashboard you can see all the activities in one list, but you can also go to other pages and see more details about commits, issues and pull requests. There are also stats about who is doing the pull requests and commits.
 The dashboard is updated every 12 hours.
 
-![img/loopdashboard.png](img/loopdashboard.png)
+![img/loopdashboard.png](img/loopdashboard.png){width="550"}
+{align="center"}
 
 ### Become familiar with your data sources
 

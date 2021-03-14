@@ -1,6 +1,7 @@
 # Pre-meal targets
 
-![img/toolbar.png](img/toolbar.png)
+![img/toolbar.png](img/toolbar.png){width="450"}
+{align="center"}
 
 The Loop toolbar's second icon from the left is a small clock with a knife and fork on the sides. This is the pre-meal tool. The tool will be colored grey until you define a set of blood glucose targets for it in Loop settings (within the Correction Range section). Once you set pre-meal targets in that section, the icon will be colored green and available for use.
 

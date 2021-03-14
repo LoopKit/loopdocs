@@ -21,7 +21,8 @@ No, pods are monogamous little creatures. They will pair with only one device at
 
 Yes, you can cancel a temp basal or a bolus in progress. There is a "suspend delivery" command that is easy to access by tapping on the [pod age icon in your Heads Up Display, upper right area](../operation/loop-settings/displays.md#pod-age-omnipod-users). Suspending insulin delivery will cancel any running temp basal or bolus in progress. The suspend command will run indefinitely. A banner notification will be displayed on the Loop main screen while insulin delivery is suspended.
 
-![img/pump-suspend-banner.png](img/pump-suspend-banner.png)
+![img/pump-suspend-banner.png](img/pump-suspend-banner.png){width="300"}
+{align="center"}
 
 Insulin will remain suspended until the user either clicks on the "Tap to Resume" command from Loop's main screen or the "resume delivery" command accessed by tapping the pod age icon. Once insulin delivery is resumed, you will be resumed at your scheduled basal rate. If a bolus was interrupted, the bolus will not resume. If you don't turn on open loop mode, within 5 minutes of resuming insulin delivery, your Loop should resume automatic temp basal adjustments.
 
@@ -53,4 +54,5 @@ The most common time of pod errors on Loop will be during the pairing process. I
 
 Screaming pods can be silenced by carrying a paperclip. Simply put the paperclip in the small hole that is on the bottom (the side opposite where the cannula is) of the pod as shown. Push the paperclip in until you hear a little click, that click is breaking the circuit that lets the audible scream go.
 
-![img/paperclip.jpg](img/paperclip.jpg)
+![img/paperclip.jpg](img/paperclip.jpg){width="500"}
+{align="center"}

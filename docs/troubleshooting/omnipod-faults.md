@@ -2,12 +2,12 @@
 
 Pod faults are shown in the HUD:
 
-![img/pod-hud-fault.png](img/pod-hud-fault.png)
+![img/pod-hud-fault.png](img/pod-hud-fault.png){width="250"}
+{align="center"}
 
 Loop will put a higher battery load on a pod than the PDM due to its regular and repeated communications. A pod with lower battery level appears to be more likely to fault for conditions like static electricity and occlusions/pump issues that Loop is not directly causing, like internal fault codes 052, 061, 064 and 066. Pods always perform safety checks and if a potential problem is found, the pod will end itself by screaming and stop with the insulin delivery.
 
-!!!note
-
+!!!note ""
     During extensive tests after getting all commands working properly, many failures due to one specific safety check were still encountered. This check needed to recover its counter within 30 minutes after a temp basal returning to a normal basal schedule, or else the pod would scream. Eventually, this was resolved by disabling _only_ this particular check. Therefore the 096-106 faults are always ignored in the current configuration of Loop.
 
 ## Known internal pod fault codes

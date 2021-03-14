@@ -68,9 +68,9 @@ To find your pump’s firmware you will need to power it on. If the pump has not
 
 If the pump has been active recently or has a reservoir installed, follow these steps:
 
-1. Press the ![img/esc.png](img/esc.png) button on your pump.  
+1. Press the ![img/esc.png](img/esc.png){width="40"} button on your pump.  
 
-2. Scroll down with the ![img/light_button.png](img/light_button.png) button to the bottom of the status display.  
+2. Scroll down with the ![img/light_button.png](img/light_button.png){width="40"} button to the bottom of the status display.  
 
 3. Read the bottom line of the display.
 
@@ -125,9 +125,9 @@ If you choose to purchase from a remote or unknown seller, here are some tips fo
 
 * Ask for photos of the pump. Check to make sure the serial number of the pump on the backside matches the serial number of the pump showing in the display menu. Ask for a short video of the pump, or at least a photo of the pump turned on, so that you can see the pump's firmware and model number. Cracks and some wear on these pumps are expected. These pumps are not usually free of marks. Many people are successfully looping on pumps that have cracks and rub marks, but you may want to ask if you are concerned about any you see in photos.
 
-* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](/troubleshooting/pump-errors/#motor-error). Those pumps will generally not work (or only work intermittently), however some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.
+* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](../troubleshooting/pump-errors.md#motor-error). Those pumps will generally not work (or only work intermittently), however some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.
 
-* Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](/troubleshooting/pump-errors/#crackmissing-piece-repairs).
+* Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](../troubleshooting/pump-errors.md#crackmissing-piece-repairs).
 
 * Ask for shipping that includes a tracking number. USPS Priority Mail's smallest box is a great option.  It's only $7.20 domestically in the US and includes tracking. Ask the seller to add a small bit of packing protection such as bubble wrap around the pump to keep it safe during shipping. Make sure you get a tracking number within a reasonable period of time after you have paid.  
 
@@ -147,7 +147,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 
 !!!warning "Reminder and Disclaimer"
 
-    Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read these documents and familiarize yourself with Loop before using. 
+    Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read these documents and familiarize yourself with Loop before using.
 
 ### Eros - Loop will work with these pods
 
@@ -155,13 +155,15 @@ Eros pods were launched in 2013 and continue to be sold by Insulet. As far as we
 
 Eros system has that PDM we all recognize from the last several years.
 
-![img/eros.png](img/eros.png)
+![img/eros.png](img/eros.png){width="750"}
+{align="center"}
 
 ### DASH - Loop will not work with DASH pods
 
 Insulet has announced their DASH system as an eventual replacement for Eros/Omnipod System. There has already been a limited release of DASH to a select group of users, with a wider public rollout of DASH expected in 2019. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop will not be compatible with the DASH system.
 
-![img/dash.png](img/dash.png)
+![img/dash.png](img/dash.png){width="750"}
+{align="center"}
 
 ## Next Step: Compatible CGM
 

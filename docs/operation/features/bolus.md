@@ -1,6 +1,7 @@
 # Bolus
 
-![img/toolbar.png](img/toolbar.png)
+![img/toolbar.png](img/toolbar.png){width="300"}
+{align="center"}
 
 Bolus entries can be made manually through the bolus tool (double orange triangles) in the toolbar, either as part of a meal bolus or as a correction for a high BG.
 
@@ -10,7 +11,8 @@ Loop has a bolus tool, similar to a pump’s bolus wizard. After a carb entry is
 
 The bolus tool will not offer a recommended bolus if your BG is predicted to go below your specified suspend threshold. A screen will appear letting you know the reason no bolus is being recommended, as well as the status of your active COB and IOB. You can choose to override that warning and give a bolus, or treat the low BG and come back to the bolus tool when your BG has recovered.
 
-![img/below_min.png](img/below_min.png)
+![img/below_min.png](img/below_min.png){width="400"}
+{align="center"}
 
 ## Correction Bolus
 
@@ -20,7 +22,8 @@ Occasionally, a recommended bolus will be offered in the bolus tool unrelated to
 
 A new status line will appear when Loop is sending a bolus command to the pump. Just above the main screen's glucose chart, you will see a "starting bolus" indicator.
 
-![img/starting_bolus.png](img/starting_bolus.png)
+![img/starting_bolus.png](img/starting_bolus.png){width="250"}
+{align="center"}
 
 ## Bolus Failure Notifications
 

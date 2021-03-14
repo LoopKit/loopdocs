@@ -1,6 +1,6 @@
 # Welcome to Loop
 
-![img/phones.png](img/phones.png)
+![img/phones.png](img/phones.png){width="300"}
 ![img/phones.png](img/watch.png)
 
 ## Introduction
@@ -9,10 +9,11 @@
 The app is built on top of [LoopKit](https://github.com/LoopKit/LoopKit). LoopKit is a set of frameworks that provide data storage, retrieval, and calculation, as well as boilerplate view controllers used in Loop.
 
 !!!warning "Important"
-
     Please understand that this project:
+
     - Is highly experimental
     - Is not approved for therapy
+
       **You take full responsibility for building and running this system and do so at your own risk.**
 
 Using the open-source Loop app template, you can build an insulin delivery system that uses specific commercial and open-source hardware and software technologies to bring together the insulin pump, continuous glucose monitor (CGM), and insulin dosing algorithm to create a continuous insulin basal dosing “Loop”.  This Loop predicts future glucose based on basal-rate schedules, carbohydrate intake, insulin on board, and current CGM readings.  These glucose forecasts provide Loop with the information needed to recommend a temporary basal rate to attain a targeted glucose range in the future.  The system can either operate as an “open-loop” by making recommendations to the user for their approval before enacting or as a “closed-loop” by automatically setting the recommended temporary basal rate.
@@ -26,8 +27,8 @@ Loop has been developed as an open-source, shared project.  For a really interes
 
 * Use the navigation menu at the top of the screen to find the info you are looking for.
 * A Table of Contents for the current page is always displayed on the left side of the screen.
-* You can search the Loop Docs site by clicking the ![img/search_icon.png](img/search_icon.png) icon.
-![img/search_example.png](img/search_example.png)
+* You can search the Loop Docs site by clicking the ![img/search_icon.png](img/search_icon.png){width="50px"} icon.
+![img/search_example.png](img/search_example.png){width="400"}
 
 ## Stay in the Loop!
 

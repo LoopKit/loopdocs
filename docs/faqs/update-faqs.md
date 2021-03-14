@@ -48,7 +48,8 @@ Yes. So long as you use the same developer team as you originally built the app 
 
 The Loop's version is given at the top of the Loop settings page. Even better though, the new dev branch has very detailed info about the version of Loop you are using at the top of your Loop's Issue Report. This is a great new addition to help identify where, what, and when of your Loop version.
 
-![img/loop-version.jpg](img/loop-version.jpg)
+![img/loop-version.jpg](img/loop-version.jpg){width="450"}
+{align="center"}
 
 ## What if I'm changing branches? Does that matter?
 
