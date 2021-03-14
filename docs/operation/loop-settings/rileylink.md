@@ -40,7 +40,7 @@ When you first setup your Loop app, RileyLink will automatically perform a **Tun
 
 ### Change Time
 
-Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup.  It is important that Loop and your pump share a common time setting, otherwise Looping will fail.  If you are traveling through timezones or dealing with daylight savings time, please read up on [how to safely change your pump time](/troubleshooting/time-change.md#traveling-across-time-zones-and-daylight-savings).
+Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup.  It is important that Loop and your pump share a common time setting, otherwise Looping will fail.  If you are traveling through timezones or dealing with daylight savings time, please read up on [how to safely change your pump time](../../troubleshooting/time-change.md#traveling-across-time-zones-and-daylight-savings).
 
 !!!info ""
 

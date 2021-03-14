@@ -14,7 +14,7 @@ Quick side note: Do not quickly decide to pull an omnipod that isn't responding 
 
     You don't care what the heck is causing the issue, you just want to get on with life as quickly as possible? Ok, fair enough, then do the following:
 
-    * Turn your RileyLink off/on at its physical power switch located on the side of the RileyLink. Use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a [screaming pod silencer tool](../../faqs/omnipod-faqs/#what-do-you-do-to-stop-a-screaming-pod).
+    * Turn your RileyLink off/on at its physical power switch located on the side of the RileyLink. Use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a [screaming pod silencer tool](../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod).
     * Close your Loop app (upswiping it in the iPhone's app selector) and reopen it.
     
     

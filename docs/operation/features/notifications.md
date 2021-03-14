@@ -8,7 +8,7 @@ Most beep alarms are disabled for a much more discrete use of the omnipod. Only 
 
 - Pod activated acknowledgment when filling the pod with enough insulin when pairing a new Pod.
 - Pod expiration advisory alarm at 72 hours/3 days (which you can silence in the [pod status  settings](../loop-settings/omnipod-pump.md#status))
-- Pod empty reservoir (which you can silence in the [pod status  settings](../loop-settings/omnipod-pump/#status))
+- Pod empty reservoir (which you can silence in the [pod status  settings](../loop-settings/omnipod-pump.md#status))
 - Pod deactivation acknowledgment
 - Pod fault alarm (also called a screamer) when reaching the max life of the Pod: 80 hours (3 days + 8 hours) or a fault/occlusion happens. (which you can silence using the [replace pod](../loop-settings/omnipod-pump.md#pod-commands)) command in the pod settings page)
 
