@@ -16,10 +16,9 @@
   padding: 0em 1em;
   padding-top: 0.5em;
   padding-left: 0.5em;
-  font-size: 1.6em;
+  font-size: 1.3rem;
   font-family: inherit;
-  font-weight: 500;
- 
+  font-weight: 600;
 }
 .admonition p:last-child, .admonition ul:last-child, .admonition ol:last-child {
   margin-bottom: 0;
@@ -42,7 +41,7 @@
   border-top-color: #d1e8d7;
 }
 .admonition.danger .admonition-title {
-  color: #7dc991;
+  color: #2b9e49;
   background-color: #d1e8d7;
   border-bottom-color: #d1e8d7;
 }

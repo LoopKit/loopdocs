@@ -43,6 +43,6 @@ So, when switching from Free to Paid Loop builds...try to remember that you'll h
 
 Paid account enrollment is all through Apple's Developer Program website. Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual paid account. If you instead want the free account, you don't have to do anything on that website. You'll just wait for Step 8 Xcode Preferences and we will get your free account then.
 
-## Next Step: Install Homebrew
+## Next Step: Install Xcode
 
-Now you are ready to move onto Step 7 to [install Homebrew](step7.md).
+Now you are ready to skip to Step 8 to [install Xcode](step8.md). And if you've been counting - yes, Step 7 is no longer required.

@@ -1,13 +1,14 @@
 # Step 1: Compatible Computer
 
 !!!danger "Time Estimate"
-    - 5 minutes, if already have Mojave or Catalina macOS
+    - 5 minutes, if already have Mojave, Catalina or Big Sur macOS
     - 30-60 minutes, if need to install macOS updates
 
 !!!info "Summary"
-    - Check your macOS and make sure it is Mojave or Catalina. **If you have the latest iOS version on the iPhone that will be using Loop...then you need Catalina.**
+    - Check your macOS and make sure it is at least Mojave (for iOS 12.4) or Catalina (iOS 13 or later). **If you have the latest iOS version on the iPhone that will be using Loop...then you need at least Catalina.**
+    - And yes, Big Sur is fine (newest macOS).
     - Do not use any of the beta macOS versions. (If you don't know what that means, don't worry...that means you aren't using one.)
-    - If your macOS is not Mojave or Catalina, check to see if you can up update your macOS to one of those.
+    - If your macOS is not Mojave, Catalina or Big Sur, check to see if you can up update your macOS to one of those.
     - If you cannot upgrade your existing computer to Mojave or Catalina, you'll need to check into a borrowed computer, patcher tool, or perhaps a new/used computer compatible with Mojave or Catalina.
     - Check the `Software Update` to see if your computer has any updates available since you first installed it.
 
@@ -19,13 +20,11 @@
 
 ## New M1 chip Apple Computers
 
-Yes, the newest Apple computers just released in November 2020 are compatible with Loop building. There is ONE little step to be aware of with the new computers, and that is on the Step 7 Install Homebrew page. I've highlighted in a colored boxes on that page the parts that M1 users will need to do. I promise, it's quick and painless.
-
-And...with that...I'm extremely jealous that you have the new computer. They will make Loop building extremely fast and the time estimates on these docs will be ridiculously slower than you will be experiencing. Lucky duck, I have FOMO.
+Yes, the newest Apple computers just released in November 2020 are compatible with Loop building. These new computers will make Loop building extremely fast and the time estimates on these docs will be ridiculously slower than you will be experiencing.
 
 ## Big Sur MacOS
 
-Yes, Big Sur is compatible with Loop building...I'm working on updating this page for that soon. Hang tight.
+Yes, Big Sur is compatible with Loop building. The discussion about Mojave and Catalina refer to the minimum versions required.
 
 ## Catalina vs Mojave, which do you need?
 

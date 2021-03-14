@@ -3,6 +3,7 @@ theme: flatly
 
 extra_css:
     - css/admonitions.css
+    - extra.css
 
 markdown_extensions:
     - admonition
