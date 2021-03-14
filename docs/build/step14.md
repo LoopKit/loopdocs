@@ -80,6 +80,8 @@ Once you choose your signing team, Xcode will automatically generate provisionin
 ![img/register_device.png](img/register_device.png){width="750"}
 {align="center"}
 
+## Free Account
+
 !!!danger "Free Developer Account Users: READ ME"
 
     If you are using a free developer account to sign your targets, you will need to do an extra step. As a free developer, you are restricted from building apps that have Siri or push notification capabilities built-in. Loop has both of these capabilities...so you will need to disable them before proceeding on with signing and building your app. The push notification capability is used for setting remote overrides; disabling it will not affect regular notifications (like ones for Loop not looping). Click on the small x next to the Siri and push notification lines located at the bottom of your Signing & Capabilities page. You need to do this in both the Loop and WatchApp Extension targets.
