@@ -53,7 +53,9 @@ In a directory below the current page: [Click here for step 14](build/step14.md)
 
 In a directory "outside" the current directory: [Click here for step 14](../build/step14.md)
 
-Like above, but, linking directly to a heading/anchor in step14.md: [Click here for step 14](../build/step14.md#sign-four-targets)
+Like above, but, linking directly to a heading/anchor in step14.md:
+
+[Click here for step 14](../build/step14.md#sign-four-targets)
 
 ```
 
@@ -69,12 +71,14 @@ The conventions for linking to images is the same as linking to pages as describ
 
 New images should be placed in the "img" directory just below the md-file.
 
+Example of correct link to image.
+
 ```markdown
 ![iPhone](img/phones.png)
 
 ```
 
-With images it is possible to add extra attributes like width and center.
+With images it is possible to add extra attributes like 'width' and 'center'.
 
 ```markdown
 
@@ -82,7 +86,8 @@ With images it is possible to add extra attributes like width and center.
 
 This will get rendered to this: <img alt="iPhone" src="img/phones.png" width="300">
 
-You can also center a image, by adding '{align="center"}' on a new line just below the paragraph you want center:
+You can also center a image, by adding '{align="center"}' on a new line 
+just below the paragraph you want center:
 
 ![Eros](img/eros.png){width="750"}
 {align="center"}
