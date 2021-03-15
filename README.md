@@ -53,7 +53,7 @@ In a directory below the current page: [Click here for step 14](build/step14.md)
 
 In a directory "outside" the current directory: [Click here for step 14](../build/step14.md)
 
-Like above, but, linking directly to a heading/anchor in step14.md:
+Like above, but linking directly to a heading/anchor in step14.md:
 
 [Click here for step 14](../build/step14.md#sign-four-targets)
 
