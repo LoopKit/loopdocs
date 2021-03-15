@@ -63,6 +63,8 @@ Notice about mkdocs: "Using absolute paths with links is not officially supporte
 
 ```markdown
 Do NOT do this : [Click here for step 14](/build/step14.md) 
+
+The link starts with a '/'. Do not do this.
 ```
 
 ### Images
