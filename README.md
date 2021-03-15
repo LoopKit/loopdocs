@@ -62,7 +62,7 @@ Like above, but linking directly to a heading/anchor in step14.md:
 Notice about mkdocs: "Using absolute paths with links is not officially supported. Relative paths are adjusted by MkDocs to ensure they are always relative to the page. Absolute paths are not modified at all. This means that your links using absolute paths might work fine in your local environment but they might break once you deploy them to your production server."
 
 ```markdown
-Do NOT do this : [Click here for step 14](/build/step14.md) 
+Do NOT do this : [Click here for step 14](/build/step14.md)
 
 The link starts with a '/'. Do not do this.
 ```
@@ -84,17 +84,17 @@ With images it is possible to add extra attributes like 'width' and 'center'.
 
 ```markdown
 
-![iPhone](img/phones.png){width="300"} 
+![iPhone](img/phones.png){width="300"}
 
 This will get rendered to this: <img alt="iPhone" src="img/phones.png" width="300">
 
-You can also center a image, by adding '{align="center"}' on a new line 
+You can also center a image, by adding '{align="center"}' on a new line
 just below the paragraph you want center:
 
 ![Eros](img/eros.png){width="750"}
 {align="center"}
 
-This will get rendered to this: 
+This will get rendered to this:
 <p align="center">
     <img alt="Eros" src="../img/eros.png" width="750" />
 </p>
@@ -103,15 +103,45 @@ This will get rendered to this:
 
 ### Admonitions
 
-[Admonitions](https://python-markdown.github.io/extensions/admonition/) are a markdown extension that enable formatted blocks for visually calling out information. The types are: note, info, warning, and danger. Here are some examples of how to write the markdown:
+[Admonitions](https://python-markdown.github.io/extensions/admonition/) are a markdown extension that enable formatted blocks for visually calling out information.
+
+The markdown syntax used by loopdocs is:
 
 ```markdown
-!!! note
-    This admonition uses the default title: 'Note'.
+!!!keyword
+    If no title is given, keyword (first letter capitalized) is used as the title line.
+    This syntax works but is discouraged for loopdocs - please explicitly add the title string if one is desired.
 
-!!! info "My Custom Title"
-    This admonition is blue and has a custom title.
+!!!keyword ""
+    If a blank title is provided, no title is applied.
+    Every indented line is included in the "box" created by this admonition
 
-!!! warning ""
-    This admonition is yellow and has no title.
+!!!keyword "Title String"
+    If an explicit title string is provided, that is used as the title.
+    The displayed title string matches the capitalization provided.
+
+    Every indented line is included in the "box" created by this admonition
+```
+
+The keyword Cascading Style Sheet (css) definitions are found in docs/stylesheets/admonitions.css.
+
+Please use the keywords in the first column, but be aware that older *.md files may use the synonym.
+
+```markdown
+| keyword  | synonym  |  example in build                   | color  |
+| green    |  danger  |  step3.md, Time Estimate            | green  |
+| info     |          |  step3.md, Summary                  | blue   |
+| faqs     |          |  step3.md, FAQs                     | orange |
+| note     |          |  step3.md, MMT pump model/firmware  | grey   |
+| warning  |          |  step3.md, Reminder and Disclaimer  | orange |
+```
+Note that faqs and warning use the same style. However, the meaning is quite different, so moving forward please use the keyword ```faqs``` for FAQs.
+
+The 3 top boxes on many pages, but especially the Build Step series should aways use
+```
+!!!green "Time Estimate"
+
+!!!info "Summary"
+
+!!!faqs "FAQs"
 ```
