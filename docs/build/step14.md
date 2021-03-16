@@ -37,12 +37,12 @@ Once Xcode has finished indexing, the Loop project's various folders and files w
 1. First click: At the very top of all the folders and files listed, click on the blue "Loop". This will populate the middle part of the Xcode window with some information. **If a couple of little boxes appear saying "The folder “DerivedWatchAssets.xcassets” doesn’t exist."...just click the ok buttons and ignore those. They will come up a couple of times during your build if you are using dev branch right now...don't worry, won't be a problem.**
 
     ![img/loop-first-click.png](img/loop-first-click.png){width="550"}
-{align="center"}
+    {align="center"}
 
 2. Second (set of) clicks: Now click on the box in the middle screen to reveal the targets column underneath that box. The four targets we will sign in the upcoming steps are now easily viewable. Now also click on the Loop target like shown in the screenshot below. It will be highlighted in blue to let you know it is selected. Loop, Loop Status Extension, Watch App, and WatchApp Extension are the targets we are interested in later.
 
     ![img/loop-second-click.png](img/loop-second-click.png){width="550"}
-{align="center"}
+    {align="center"}
 
 3. Third Click: With the Loop target selected, click on the "Signing & Capabilities" up near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of your middle window. If you are missing the "Signing & Capabilities" section and didn't have to click somewhere else to see that part...that means you have missed updating to Xcode 11 from an older version of Xcode. Please go back and update Xcode now. Thanks.
 
@@ -80,12 +80,14 @@ Once you choose your signing team, Xcode will automatically generate provisionin
 ![img/register_device.png](img/register_device.png){width="750"}
 {align="center"}
 
+## Free Account
+
 !!!danger "Free Developer Account Users: READ ME"
 
     If you are using a free developer account to sign your targets, you will need to do an extra step. As a free developer, you are restricted from building apps that have Siri or push notification capabilities built-in. Loop has both of these capabilities...so you will need to disable them before proceeding on with signing and building your app. The push notification capability is used for setting remote overrides; disabling it will not affect regular notifications (like ones for Loop not looping). Click on the small x next to the Siri and push notification lines located at the bottom of your Signing & Capabilities page. You need to do this in both the Loop and WatchApp Extension targets.
 
     ![img/siri-errors.png](img/siri-errors.png){width="750"}
-{align="center"}
+    {align="center"}
 
 A successfully signed target will have a provisioning profile and signing certificate similar to the screenshot below.  Click on each of the three remaining targets, and repeat the signing steps by choosing the same team name as you selected in the first target.
 
@@ -146,27 +148,27 @@ You’ll see the progression of the build in the status window (top middle of Xc
 !!!danger "Are you the impatient type?"
 
     If you just simply can't bear the uncertainty of not seeing that things are progressing, you can take a peek "under the hood" and watch the individual build steps by clicking on the report navigator icon and then the build row at the top of the list. You can watch the slow list of scheme building while you wait.
-    
+
     ![img/build-scheme.png](img/build-scheme.png){width="650"}
-{align="center"}
+    {align="center"}
 
 !!!info "First-time builders"
 
     Be aware though! Sometime during your first ever build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.
 
-    
+
     ![img/keychain-prompt.png](img/keychain-prompt.png){width="350"}
-{align="center"}
-    
+    {align="center"}
+
 
     This prompt above, when you see it, requires you to enter your computer password and then select "Always Allow". Normal behavior, this prompt will come up four times in a row even after you enter the correct password. In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel. **Don't press deny.** Keep entering your computer password and pressing the "Always Allow" button...as many times as it takes (four times to be exact; one for each target that Xcode is saving the password for). After four times of successful password entry, the build will keep proceeding.
 
 !!!warning "While I have you here..."
 
     While I have you here, I'm going to give you a piece of Loop troubleshooting advice for once you start looping. This is a little out of order, but too many people miss this super simple **troubleshooting step when their Loop turns red**. Try turning your RileyLink off/on at its physical switch on the side of the case. Carrying a paperclip on the keychain can help you access that recessed switch. The other useful troubleshooting step is to simply close the Loop app (upswipe in iPhone app selector) and reopen it. Wait 5 minutes after each of these steps and see if your issue resolves. It usually will. Don't forget to do these two simple steps to get back to a green loop.  For more red loop troubleshooting, you can check out [this page](../troubleshooting/yellow-red-loop.md).
-    
+
     Also, be aware that there's a **troubleshooting page for Pod pairing** issues, too. If you run into any issues during Pod pairing, PLEASE make sure to read [this page](../troubleshooting/pod-pairing.md) to save yourself from wasting Pods unnecessarily.
-    
+
     Ok, back to the building instructions.
 
 ## Build Finished
@@ -174,34 +176,34 @@ You’ll see the progression of the build in the status window (top middle of Xc
 !!!info "First time building on a new device?"
 
     If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings->General->Device Management (or profiles, Profiles & Device Management on newer iOS) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to [this Build Error section](build_errors.md#device-management-could-not-launch-loop) to find the solution.
-    
+
     ![img/trust_device.jpg](img/trust_device.jpg){width="750"}
-{align="center"}
+    {align="center"}
 
 !!!danger "BUILD SUCCEEDED"
 
     Congrats! If the build is successful, you'll see the message or "Running Loop..." across the top of the Xcode window. Your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. `Allow` Loop to send you notifications. In the next screen that follows that, click on the `Turn All Categories On` line and then click `Allow` in the upper right corner.
 
-    
+
     ![img/health-start.JPEG](img/health-start.JPEG){width="450"}
-{align="center"}
+    {align="center"}
 
     **You can unplug your phone from the computer now.** And like we promised earlier, you will use the [Setup App section of this website](../operation/overview.md) to keep proceeding safely.
 
 !!!warning "FAQ: But what about those yellow alerts that remain in Xcode? Should I worry about them?"
 
     If you see yellow alerts after your build is done...those are not an issue. Whether your build succeeded or failed...the yellow warnings play no role in either outcome. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.
-    
+
     ![img/yellow-warnings.png](img/yellow-warnings.png){width="750"}
-{align="center"}
+    {align="center"}
 
 !!!danger "BUILD FAILED"
 
     Don't despair. Build failures are pretty easily fixed. If you get a message that your build failed and see **RED ERROR** messages, just go to the [Build Errors](build_errors.md) page to find the steps to fix your build error based on the message displayed.
 
-    
+
     ![img/general-error.jpg](img/general-error.jpg){width="750"}
-{align="center"}
+    {align="center"}
 
 ## Summary
 

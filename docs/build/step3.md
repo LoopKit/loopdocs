@@ -1,6 +1,6 @@
 # Step 3: Compatible Pump
 
-!!!danger "Time Estimate"
+!!!green "Time Estimate"
     - Omnipod users: 3 seconds to remember which PDM you've been using.
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
@@ -10,7 +10,7 @@
     - If you have a slim touch screen android-looking PDM...you can NOT use your pods for Loop.
     - If you have a Medtronic, check the list to ensure compatible model/firmware.
 
-!!!warning "FAQs"
+!!!faqs "FAQs"
     - **"How can I find a compatible Medtronic pump?"** That question is answered in the Extra Details section below.
     - **"What are the differences between Medtronic pump models?"** This question is also answered in the Extra Details section below.
     - **"But what about the other types of pumps?"** Too bad, so sad...unless it is a DanaRS, DanaR, Accu-Chek Insight, Accu-Chek Combo. If you have one of those pumps, you could check out [AndroidAPS looping system](https://androidaps.readthedocs.io/en/latest/index.html) instead of Loop. If you have a Medtronic 512 or 712, you could check out [OpenAPS](https://openaps.readthedocs.io/en/latest/) as that system supports the 512 and 712 models in addition to the other Loop-compatible Medtronic pumps. Neither of those systems currently support Omnipod for looping.
@@ -147,7 +147,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 
 !!!warning "Reminder and Disclaimer"
 
-    Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read these documents and familiarize yourself with Loop before using. 
+    Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read these documents and familiarize yourself with Loop before using.
 
 ### Eros - Loop will work with these pods
 
