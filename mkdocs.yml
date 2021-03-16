@@ -1,14 +1,17 @@
 site_name: LoopDocs
 theme: flatly
-google_analytics: ['UA-109876065-1', 'loopkit.github.io']
+
 extra_css:
-    - css/admonitions.css
+    - stylesheets/admonitions.css
+    - stylesheets/extra.css
+
 markdown_extensions:
     - admonition
+    - attr_list
     - toc:
         permalink: ⌁
 
-pages:
+nav:
 - Home: 'index.md'
 - FAQs:
     - 'Using This Site FAQs': 'faqs/docs-faqs.md'
@@ -29,7 +32,7 @@ pages:
     - 'Step 4 Compatible CGM': 'build/step4.md'
     - 'Step 5 Order a RileyLink': 'build/step5.md'
     - 'Step 6 Enroll in Apple Developer Program': 'build/step6.md'
-    - 'Step 7 Install Homebrew': 'build/step7.md'
+    - 'Step 7 Skip Step 7': 'build/step7.md'
     - 'Step 8 Download Xcode': 'build/step8.md'
     - 'Step 9 Xcode Preferences': 'build/step9.md'
     - 'Step 10 Test Settings': 'build/step10.md'

@@ -6,23 +6,22 @@ Welcome to LoopDocs - a place for all things Frequently Asked.
 
 Click on the image below to watch a short [Introduction to Loop video](https://youtu.be/qw_u1lqboCs).
 
-<a href="https://youtu.be/qw_u1lqboCs" target="_blank"><img src="../img/intro-to-loop.png"  title="Introduction to Loop video" /></a>
+[![img/intro-to-loop.png](img/intro-to-loop.png)](https://youtu.be/qw_u1lqboCs)
 
 ## What do I need to Loop?
 
 Loop has both hardware and software requirements. In general, to use Loop you need to have seven components.
 
-- Compatible insulin pump: [Medtronic or Omnipod](https://loopkit.github.io/loopdocs/build/step3/)
-- [Compatible CGM](https://loopkit.github.io/loopdocs/build/step4/)
-- [RileyLink](https://loopkit.github.io/loopdocs/build/step5/)
-- [Compatible iPhone/iPod Touch](https://loopkit.github.io/loopdocs/build/step2/)
-- [Apple computer running Mojave macOS 10.14.3 or later](https://loopkit.github.io/loopdocs/build/step1/)
-- [Xcode (a free Apple application)](https://loopkit.github.io/loopdocs/build/step8/)
-- [Apple Developer Membership](https://loopkit.github.io/loopdocs/build/step6/)
+- Compatible insulin pump: [Medtronic or Omnipod](../build/step3.md)
+- [Compatible CGM](../build/step4.md)
+- [RileyLink](../build/step5.md)
+- [Compatible iPhone/iPod Touch](../build/step2.md)
+- [Apple computer running Mojave macOS 10.14.3 or later](../build/step1.md)
+- [Xcode (a free Apple application)](../build/step8.md)
+- [Apple Developer Membership](../build/step6.md)
 
-<p align="center">
-<img src="../img/loop_gear.jpg" width="500">
-</p>
+![img/loop_gear.jpg](img/loop_gear.jpg){width="500"}
+{align="center"}
 
 ## Can I download Loop from the App store?
 
@@ -50,7 +49,7 @@ Sure, you can give this one a try. [School nurse's cheat sheet download](https:/
 
 The answer is varied, but a few hours from start to finish, depending on where you are starting and how comfortable you are with your computer.
 
-If you'd rather break it up into several shorter bits of effort, the [`Build App`](https://loopkit.github.io/loopdocs/build/step1/) section is divided into convenient stopping points with Time Estimates for each step. You can do one or more steps depending on what kind of time you have available.
+If you'd rather break it up into several shorter bits of effort, the [`Build App`](../build/step1.md) section is divided into convenient stopping points with Time Estimates for each step. You can do one or more steps depending on what kind of time you have available.
 
 ## Does Loop cost money?
 
@@ -64,7 +63,7 @@ There are no other costs, ongoing or initial, to use Loop.
 
 ## Do I need to own my own Apple computer?
 
-You don't have to own your own Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for [updating Loop](https://loopkit.github.io/loopdocs/build/updating/#when-to-update) later, when needed.
+You don't have to own your own Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later, when needed.
 
 If you are borrowing an Apple computer, you should ask the person to (1) update to Mojave and (2) [download Xcode for free](https://developer.apple.com/xcode/) before you get together to build your Loop app. The updates and download of Xcode can take a couple hours depending on the person's internet speed...so best to do those steps well ahead of time to save trouble.
 
@@ -76,7 +75,7 @@ Yes, you can...sort of. There is a hacked way of installing macOS on a Windows c
 
 The short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)
 
-The longer answer is that Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app update yourself with [update instructions here](https://loopkit.github.io/loopdocs/build/updating/). In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.
+The longer answer is that Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app update yourself with [update instructions here](../build/updating.md). In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.
 
 ## Will I need to build a new Loop if I switch between Medtronic and Omnipod?
 
@@ -98,7 +97,7 @@ But the biggest issue with building for others is that they may be left without 
 
 ## How can I find a compatible pump? supplies?
 
-There is a [whole page with detailed information about Medtronic pumps](https://loopkit.github.io/loopdocs/build/step3/); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
+There is a [whole page with detailed information about Medtronic pumps](../build/step3.md); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 
 With the addition of Omnipod support, you can also now use Omnipod suppliers the way you'd normally source them.
 
@@ -127,9 +126,8 @@ And those all likely won't be compatible anytime in the future.
 
 ## Can I have more than one Loop app on a phone?
 
-Yes, technically possible. You can have multiple Loop apps built onto the same iPhone. However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping). Additionally, your Pod will only work on one Loop app at a time anyways. So for smooth looping, just keep one Loop app on any phone for looping use. 
+Yes, technically possible. You can have multiple Loop apps built onto the same iPhone. However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping). Additionally, your Pod will only work on one Loop app at a time anyways. So for smooth looping, just keep one Loop app on any phone for looping use.
 
 ## Will I be able to Loop on a plane? Or in the mountains?
 
 Yes. Loop does not require internet or cell coverage to work. So long as the Loop user has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/Pod.
-

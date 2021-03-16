@@ -6,10 +6,9 @@ Yes, RileyLink is a required part of Loop. The RileyLink is a little device that
 
 ## Where can I buy a RileyLink?
 
-RileyLinks are made in batch productions (meaning sometimes they can go on backorder as another production is in process) and are available at GetRileyLink.org.</br>
+RileyLinks are made in batch productions (meaning sometimes they can go on backorder as another production is in process) and are available at GetRileyLink.org.
 
-* If you want to buy a RileyLink for Omnipods, click [here](https://getrileylink.org/product/rileylink433). </br>
-
+* If you want to buy a RileyLink for Omnipods, click [here](https://getrileylink.org/product/rileylink433).
 * If you want to buy a RileyLink for Loop-compatible Medtronic pumps, click [here](https://getrileylink.org/product/rileylink916).
 
 ## Do I have to carry the RileyLink everywhere?
@@ -19,7 +18,6 @@ The short answer is yes. If you want your Loop to keep automatically adjusting b
 ## What are some ideas for carrying the RileyLink?
 
 I'm shocked that this question comes up so often...but here's some ideas. Please do not post in Looped group or Zulipchat for more ideas. This horse has been well-beaten, so use the search function in Looped group to see the previous responses. But, here's some samples for those of you who won't use the search function. ;)
-
 
 [Post 1](https://www.facebook.com/groups/TheLoopedGroup/permalink/2340802992803020/)
 
@@ -41,9 +39,8 @@ While you are out of the communication range for your RileyLink, any running tem
 
 There are two different types of RileyLink currently; the difference being the antenna is optimized for the pump you are using. Otherwise they are identical.
 
-<p align="center">
-<img src="../img/two-rl.png" width="650">
-</p>
+![img/two-rl.png](img/two-rl.png){width="650"}
+{align="center"}
 
 ## Is the new antenna an "upgrade" in Loop performance?
 
@@ -57,41 +54,48 @@ Before August 2018, RileyLinks had a firmware that works for only Medtronic pump
 
 RileyLinks produced after August 2018, include newer firmware that is needed for Omnipod pump communications as well. The newer firmware will say `subg_rfspy 2.2/ble_rfspy 2.0` in the RileyLink menu, like below when paired in Loop.
 
-<p align="center">
-<img src="../img/rl-firmware.jpg" width="350">
-</p>
+![img/rl-firmware.jpg](img/rl-firmware.jpg){width="350"}
+{align="center"}
 
 Assuming your has the newer RileyLink firmware, you can *technically* use that RileyLink with either pump on Loop. But, you will have significant frustrations with the short distances required between the pump/pod and RileyLink when using the "wrong" antenna. Even keeping RileyLink in the pocket on the opposite of where the POD is on your body can cause issues with the 916MHz antenna. With mismatched antenna/pump, the RileyLink needs to be very close and in clear line-of-sight to pump/pod, that it makes everyday living a bit hard. If you use the appropriate-antenna-for-your-pump RileyLink, the distances the pump/pod and RileyLink can tolerate from each other is much more "real world" friendly and stable.
 
 In summary, definitely use the appropriate RileyLink with the antenna that matches your pump so that you are less frustrated. In a pinch, your old RileyLink might work as a backup, but you won't love it.
 
-<p align="center">
-<img src="../img/rl-antenna-chart.png" width="750">
-</p>
+![img/rl-antenna-chart.png](img/rl-antenna-chart.png){width="750"}
+{align="center"}
 
 ## Can you swap out the old antenna on a RileyLink?
+
 Yes, the antenna swap is not a hard swap if you just have basic soldering skills. The old antenna can be removed easily by reheating the solder. New 433MHz antennas and a cap can be found on [GetRileyLink site](https://getrileylink.org/product/433diyupgrade/). Tips: use flux and clean the antenna stub before soldering. Poorly DIY-soldered antennas can lead to a decreased range and frequent communication drops between Loop and the pods.
 
 ## How long will my RileyLink go between charging?
+
 RileyLinks can go about 30-32 hours (more or less) on a single charge. There is no way to see the remaining charge level, so most people just get into the habit of charging overnight while they sleep. The actual time to fully recharge is about 1 or 2 hours; you'll know it is fully charged when the red light turns off. After a full charge, the red light will turn off and then periodically turn on for short times while it "tops off" while still on a charger.
 
 ## How long will my RileyLink battery last?
+
 Eventually, lithium polymer (LiPo) batteries will lose charging capacity and you would want to replace if you notice the battery not lasting the full day. We've been using our current battery for nearly 2 years without issue.
 
 ## How can I tell how much charge my RileyLink has?
+
 You can't. There is no charge level indicator. Just charge it nightly, and you won't have a problem. Full battery charge should last about 30-36 hours depending on battery health. Charging takes less than 2 hours.
 
 ## How should I carry the RileyLink? Does it make a difference?
+
 In general, you want to get in the habit of carrying RileyLink with you, yes. A pocket, carabiner, lanyard, SPIbelt...the options are endless. What you don't want to do is put the RileyLink in a blocking bag that has RFID blocking (some travel fanny packs have that). The distance that your RileyLink can be away from your pump will depend heavily on the environment you are in.
 
 ## Is RileyLink waterproof?
+
 Nope. Nor is it sweat-proof. Be careful.
 
 ## What is the most common issue for RileyLink?
-People not [pushing the LiPo battery](https://loopkit.github.io/loopdocs/setup/requirements/rileylink/#assembling-rl) in all the way when they first assemble their RileyLink. It takes quite a bit of push to get the plug inserted far enough. If not secured well, Loop will have more frequent problems.
+
+People not [pushing the LiPo battery](../build/step5.md#assemble-rileylink) in all the way when they first assemble their RileyLink. It takes quite a bit of push to get the plug inserted far enough. If not secured well, Loop will have more frequent problems.
 
 ## Can I use more than one RileyLink at a time? Will it improve anything?
-Yes, you can have two turned on, but it won't help anything really. Loop only uses one RileyLink at a time. If you have several RileyLinks turned on in Loop settings, your Loop will only look for another RileyLink after Loop fails for over 15 minutes on the original RileyLink. In my experience, it is rare that Loop would fail for more than 15 minutes and a second RileyLink would help in the same environment. If one RileyLink gets damaged though and you need to swap out to a second RileyLink, there are no issues with that. 
+
+Yes, you can have two turned on, but it won't help anything really. Loop only uses one RileyLink at a time. If you have several RileyLinks turned on in Loop settings, your Loop will only look for another RileyLink after Loop fails for over 15 minutes on the original RileyLink. In my experience, it is rare that Loop would fail for more than 15 minutes and a second RileyLink would help in the same environment. If one RileyLink gets damaged though and you need to swap out to a second RileyLink, there are no issues with that.
 
 ## Can I run Loop without a RileyLink?
+
 Nope.

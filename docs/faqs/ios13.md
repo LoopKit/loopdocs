@@ -18,7 +18,7 @@ Yes. We have not had one iOS update that has broken Loop apps already installed 
 
 ## Do I have to update my Loop if I change to iOS 13?
 
-No. You don't have to. 
+No. You don't have to.
 
 ## Is there a benefit to updating my Loop if I use iOS 13?
 
@@ -35,4 +35,3 @@ And then the cascade continues...that new Xcode will likely require a macOS upda
 So, iOS updates are a big deal (for Loopers) because they involve needing to do some updates to be able to properly build Loop again the next time you want to. And people forget about updates. And then they forget about LoopDocs' page specifically to help with Updating your Loop app. And so they just blindly download and build like they did last time...unaware there were needed updates.
 
 It's not so much about Loop when you update iOS...the issue is about what other things you need to update BEFORE you build Loop again and AFTER you update iOS.
-
