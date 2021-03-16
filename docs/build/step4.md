@@ -1,17 +1,17 @@
 # Step 4: Compatible CGM
 
-!!!danger "Time Estimate"
+!!! danger "Time Estimate"
 
     - 10 minutes to read through this page
 
-!!!info "Summary"
+!!! info "Summary"
 
     - If you use a Dexcom G4 Share, G5, or G6 CGM system...you are good to use Loop.
     - If you use a Medtronic sensor compatible with a Loop-compatible Medtronic pump...you are good to use Loop.
     - If you have an Eversense...you cannot use Loop with that CGM.
     - If you use Libre...you will need to seek out a modified Loop
 
-!!!warning "FAQs"
+!!! warning "FAQs"
 
     - **"What about Libre sensors?"** Libre sensors are not designed to be continuous glucose monitors. All use of Libre sensors as continuous glucose monitors involves the use of third-party applications (Xdrip or Spike) and reader devices (BluCon or Miao Miao). Loop developers have not seen data demonstrating sufficient safeguards from those readers and applications to feel comfortable adding main line Loop integration for those devices. If you use a Libre sensor, you'll have to use a "not-main line" branch of Loop that someone (or yourself) has modified to allow for use with those sensors/applications.
     - **"What about Eversense?"** Eversense's application does not integrate with Apple Health, nor has the communications protocols for Eversense been reverse engineered. Therefore, Eversense is not compatible with Loop use currently.

@@ -12,13 +12,13 @@ The standard selections available will be:
 * Dexcom G4
 * Dexcom Share
 
-!!!info ""
+!!! info ""
 
     If you added a compatible Medtronic pump earlier in the setup process, then you will also see an option for the compatible Medtronic sensor that works with that same pump. If you are using a compatible MDT sensor, select that option and the CGM data will be uploaded to Loop when pump status is updated.
 
 ## About Dexcom Share credentials
 
-!!!danger ""
+!!! danger ""
 
     Note that you do **NOT** need your Share account info listed in Loop settings if you are using a G4, G5, or G6 system. The transmitter ID is sufficient. In fact, I recommend that you leave your Share account empty so that you don't accidentally become internet-dependent for CGM data when you forget to update your transmitter ID when you start a new transmitter. Just leave the Share credentials blank. 
 

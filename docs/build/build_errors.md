@@ -50,7 +50,7 @@ Before you post in Zulipchat or Looped Group asking for help with build errors, 
 
 Therefore, first use the error topics (listed in sections below) to try to resolve your build error yourself. Then, if you need to post for help because this page did not fix your problem, you'll need to include information with the post so we (the troubleshooters) know you read this page and where you are in your troubleshooting attempts
 
-!!!danger "Must include in your post"
+!!! danger "Must include in your post"
     * The version of Xcode you are using
     * The version of Loop you are building with
     * The version of iOS on your Loop iPhone
@@ -89,7 +89,7 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 If you have previously installed carthage and it got updated to a version newer than 0.36.0, you may get a carthage error. The error looks similar to:
 
-!!!info "Wrong Version of Carthage Error"
+!!! info "Wrong Version of Carthage Error"
     Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.
 
 Solution is to manually uninstall carthage:

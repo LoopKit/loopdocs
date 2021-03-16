@@ -108,15 +108,11 @@ This will get rendered to this:
 The markdown syntax used by loopdocs is:
 
 ```markdown
-!!!keyword
-    If no title is given, keyword (first letter capitalized) is used as the title line.
-    This syntax works but is discouraged for loopdocs - please explicitly add the title string if one is desired.
-
-!!!keyword ""
+!!! keyword ""
     If a blank title is provided, no title is applied.
     Every indented line is included in the "box" created by this admonition
 
-!!!keyword "Title String"
+!!! keyword "Title String"
     If an explicit title string is provided, that is used as the title.
     The displayed title string matches the capitalization provided.
 
@@ -137,11 +133,11 @@ Please use the keywords in the first column, but be aware that older *.md files 
 ```
 Note that faqs and warning use the same style. However, the meaning is quite different, so moving forward please use the keyword ```faqs``` for FAQs.
 
-The 3 top boxes on many pages, but especially the Build Step series should aways use
+The 3 top boxes on many pages, but especially the Build Step series should always use
 ```
-!!!green "Time Estimate"
+!!! green "Time Estimate"
 
-!!!info "Summary"
+!!! info "Summary"
 
-!!!faqs "FAQs"
+!!! faqs "FAQs"
 ```

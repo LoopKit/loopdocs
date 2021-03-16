@@ -1,16 +1,16 @@
 # Step 3: Compatible Pump
 
-!!!green "Time Estimate"
+!!! green "Time Estimate"
     - Omnipod users: 3 seconds to remember which PDM you've been using.
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
 
-!!!info "Summary"
+!!! info "Summary"
     - If you have a big clunky PDM with built-in BG meter...you can use your pods for Loop.
     - If you have a slim touch screen android-looking PDM...you can NOT use your pods for Loop.
     - If you have a Medtronic, check the list to ensure compatible model/firmware.
 
-!!!faqs "FAQs"
+!!! faqs "FAQs"
     - **"How can I find a compatible Medtronic pump?"** That question is answered in the Extra Details section below.
     - **"What are the differences between Medtronic pump models?"** This question is also answered in the Extra Details section below.
     - **"But what about the other types of pumps?"** Too bad, so sad...unless it is a DanaRS, DanaR, Accu-Chek Insight, Accu-Chek Combo. If you have one of those pumps, you could check out [AndroidAPS looping system](https://androidaps.readthedocs.io/en/latest/index.html) instead of Loop. If you have a Medtronic 512 or 712, you could check out [OpenAPS](https://openaps.readthedocs.io/en/latest/) as that system supports the 512 and 712 models in addition to the other Loop-compatible Medtronic pumps. Neither of those systems currently support Omnipod for looping.
@@ -41,7 +41,7 @@ To determine your pump model, look at the backside of your pump.  There should b
 
 ![Pump](img/pump_model.jpg)
 
-!!!note ""
+!!! note ""
 
     - MMT ---> Pump Manufacturer Model (MiniMed Medtronic)
     - 722 ---> Pump Model Number
@@ -54,7 +54,7 @@ Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a 
 
 A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows Loop to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure you are getting one with compatible firmware.
 
-!!!note ""
+!!! note ""
 
     The firmware on all 515/715 and 522/722 model Medtronic pumps are all compatible with Loop. You will only need to check the firmware version for 523/723 and 554/754 model Medtronic pumps.
 
@@ -145,7 +145,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 
 ## Extra Details on Omnipods
 
-!!!warning "Reminder and Disclaimer"
+!!! warning "Reminder and Disclaimer"
 
     Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read these documents and familiarize yourself with Loop before using.
 
