@@ -19,7 +19,7 @@ That isn't a question, but I do have an answer. ;) Building Loop app is actually
 * The steps are listed in the order that you'd do each task. So start at step 1 and proceed forward.
 * Each step ends with a "next step" link to guide you to the next steps you'll need to do. Just keep swimming onto the next little step or take a break and come back later.
 
-!!!info "One step at a time..."
+!!! info "One step at a time..."
 
     Don't look at the whole build process at once...that's overwhelming. Instead view it as several smaller tasks to be accomplished and work one step at a time. Start at Step 1 and just read slowly and follow the screenshots. Don't skip steps or skip paragraphs.
 

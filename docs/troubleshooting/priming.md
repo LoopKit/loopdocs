@@ -4,7 +4,7 @@ Loop uses event history and reservoir levels to determine how much insulin has a
 
 ## Site Changes
 
-!!!info "Priming Events and IOB"
+!!! info "Priming Events and IOB"
 
     Loop version 1.3.2 and newer will automatically detect prime events and the primed insulin will not be counted to IOB.  **You will need to have your Preferred Data Source set to Event History for the automatic detection of primes to work (does not apply to Omnipod, Minimed Only.)**  Reservoir Volumes will not detect prime events.
 
@@ -24,7 +24,7 @@ If you are using a version of Loop older than v1.3.2 (or using Preferred Data So
 
 ## Prime Menu
 
-!!!warning
+!!! warning
 
     When you prime tubing on a Medtronic pump, make sure to complete the priming menu commands.
 

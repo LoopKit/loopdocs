@@ -11,7 +11,7 @@ There have been a large number of fixes and improvements to reduce various pairi
 
 Assuming the RileyLink is ok, the most common cause of a pod pairing failure is that Loop incorrectly partially pairs with the pod due to some problems during the fragile pairing process, perhaps aggravated by the placement of the RileyLink and the pod, wireless communications interference, and/or incorrect handling of some fault and retry conditions in versions of Loop prior to V2.2.4 that can leave the pod in an apparent non-responding state. This page will help you walk through some easy troubleshooting steps to recover that pod into good working order.
 
-!!!info "Move Logically"
+!!! info "Move Logically"
 
     Let's walk through the pod pairing/replacement process from the very beginning to make sure that we have all the important steps clearly identified even before you attempt to press that **Pair** button.
 
@@ -37,7 +37,7 @@ You've deactivated your old pod successfully...great! As the first part of pairi
 
 Hopefully, your pod pairing continues uneventfully at this point. You'll press the **Pair** button and the pod pairs, primes, and the cannula insertion is successful. BUT, if not...you'll want to keep reading Steps 4-5 to find out how to recover.
 
-!!!danger "One beeping pod at a time, please"
+!!! danger "One beeping pod at a time, please"
 
     **It is very important to not have two pods giving reminder beeps at the same time** as this can cause even more confusion for you and for Loop. Continue to work with a single pod at a time, retrying the **Pair** attempts multiple times if needed as described in Step 4. 
 
@@ -45,7 +45,7 @@ Hopefully, your pod pairing continues uneventfully at this point. You'll press t
 
 ## Step 4: Check the RileyLink and Pod's Placement
 
-!!!info "Pod pairing failed?"
+!!! info "Pod pairing failed?"
 
     Ok, so you've pressed that **Pair** button and received an error message like shown at the top of screen? It's time to start the stepwise process of seeing if we can get it to recover successfully.
 
@@ -56,7 +56,7 @@ The placement of the pod and the RileyLink relative to each other is critical va
 ![img/pod-rileylink-positioning.jpg](img/pod-rileylink-positioning.jpg){width="600"}
 {align="center"}
 
-!!!info "If **Pair** fails, move a bit and RETRY"
+!!! info "If **Pair** fails, move a bit and RETRY"
 
     * If the **Pair** operation is not succeeding, try repositioning the relative placement of the RileyLink and the pod multiple times. A little closer together if you had them far apart? A bit farther apart if they were really close? RileyLink on its side? Try standing it up with the antenna pointed to the ceiling.
     * If the pairing is still unsuccessful with multiple repositioning attempts, move yourself, the RileyLink, and the pod to another area/room (preferably away from other radio frequency signals that might be interfering), and try **Pair** again. Again don't be shy to try repositioning the RileyLink and pod's relative position, if needed, in this new area/room too.
@@ -100,7 +100,7 @@ Instead of filling a new pod with insulin, attempt to pair again using the origi
 
 If you press the **Cancel** button and see an option for "Deactivate pod", we're going to do a little different than Step 5A.
 
-!!!warning "You *might* lose your pod by attempting this procedure"
+!!! warning "You *might* lose your pod by attempting this procedure"
 
     This is a point of no return for certain pod pairing situations and it is possible that the pod will be lost by attempting this procedure depending on the pod state. Some will recover fine, others may not. Since you can't know in advance if you might lose the pod, it is important to have already exhausted other possibilities described above in Steps 1-4 to try pairing. Specifically, (1) attempting to pair several times using varied relative positions of the RileyLink and pod (2) trying the pairing again but in a different room/location that might have less wireless interference, and (3) verifying your RileyLink is connected and functioning correctly.
 

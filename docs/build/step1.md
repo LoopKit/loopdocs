@@ -1,10 +1,10 @@
 # Step 1: Compatible Computer
 
-!!!danger "Time Estimate"
+!!! danger "Time Estimate"
     - 5 minutes, if already have Mojave, Catalina or Big Sur macOS
     - 30-60 minutes, if need to install macOS updates
 
-!!!info "Summary"
+!!! info "Summary"
     - Check your macOS and make sure it is at least Mojave (for iOS 12.4) or Catalina (iOS 13 or later). **If you have the latest iOS version on the iPhone that will be using Loop...then you need at least Catalina.**
     - And yes, Big Sur is fine (newest macOS).
     - Do not use any of the beta macOS versions. (If you don't know what that means, don't worry...that means you aren't using one.)
@@ -12,7 +12,7 @@
     - If you cannot upgrade your existing computer to Mojave or Catalina, you'll need to check into a borrowed computer, patcher tool, or perhaps a new/used computer compatible with Mojave or Catalina.
     - Check the `Software Update` to see if your computer has any updates available since you first installed it.
 
-!!!warning "FAQs"
+!!! warning "FAQs"
     - **"Can I use a PC or Windows computer? I don't own an Apple computer."** Yes...sort of. Please see [this FAQ about using Virtual Machine](../faqs/FAQs.md#can-i-use-a-pc-or-windows-computer-to-build). Windows computers with AMD processors will not be able to successfully build using Virtual Machine, so please make sure you check your processor type before embarking down the Virtual Machine path.
     - **"What can I do if my computer is too old to be upgraded to Catalina?"** You could take a look at using [Catalina Patcher](http://dosdude1.com/catalina/), but this is totally on your own and not part of these instructions. Just offering the answer to the FAQ...it is up to you to read about the patcher tool and what risks it may involve for you.
     - **"Can I borrow someone else's Apple computer?"** Yes, please see [this FAQ about borrowing a computer](../faqs/FAQs.md#do-i-need-to-own-my-own-apple-computer) to learn more.
@@ -34,7 +34,7 @@ Do you need Catalina or Mojave? The answer will depend on the iOS of your iPhone
 
 **If you have iOS 13.4 or newer**, you will not be able to use Mojave and will need Catalina at a minimum. In other words, you'll need macOS 10.15.2 at a minimum to build Loop onto an iPhone running iOS 13.4 or newer.
 
-!!!danger "iOS dictates your computer needs"
+!!! danger "iOS dictates your computer needs"
 
     Put simply for Loopers...the more up-to-date you keep your iOS, the more up-to-date your computer and macOS will need to be, too. That's not necessarily a bad thing, and you can't avoid iOS updates forever...you just do need to be aware of how they relate to each other if your computer is "getting on the older side".
 

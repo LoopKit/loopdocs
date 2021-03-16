@@ -34,7 +34,7 @@ The pump and RileyLink communicate via radio frequency. In order to have the bes
 
 When you first setup your Loop app, RileyLink will automatically perform a **Tune Radio Frequency** to get pump comms started. You can manually tune your radio frequency at any time by clicking on the command. It may take about a minute, but soon you will see a list of frequencies with the tuning strength results beside each frequency. The signal with the lowest value is the strongest and RileyLink will use that frequency. Exit out of that screen and the command line will now show the frequency (916.xx MHz for North American pumps) and the timestamp of the tune.
 
-!!!info ""
+!!! info ""
 
     **A common troubleshooting recommendation is to tune your RL when you have poor pump communications. Just keep in mind that the Loop code has a function that it will automatically retune in the event of poor pump communications within 14 minutes. Loop does this automatically.  Manually retuning is only useful for impatience purposes. If Loop has failed longer than 20 minutes, it will have already likely tried a retune...but knock yourself out if you want to try it again manually.**
 
@@ -42,7 +42,7 @@ When you first setup your Loop app, RileyLink will automatically perform a **Tun
 
 Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup.  It is important that Loop and your pump share a common time setting, otherwise Looping will fail.  If you are traveling through timezones or dealing with daylight savings time, please read up on [how to safely change your pump time](../../troubleshooting/time-change.md#traveling-across-time-zones-and-daylight-savings).
 
-!!!info ""
+!!! info ""
 
     **Always use the RileyLink's <font color="orange">Change Time</font> command to change pump time.  If you fail to set the pump time by using the RileyLink, Loop will not function properly.  Do not use the pump menus to change your pump's time when Looping.**
 

@@ -10,7 +10,7 @@ So you are here for help with getting your Loop green again? It's red and not wo
 
 ### Option 1: Easy Steps
 
-!!!danger ""
+!!! danger ""
 
     You don't care what the heck is causing the issue, you just want to get on with life as quickly as possible? Ok, fair enough, then do the following steps:
 
@@ -29,7 +29,7 @@ So you are here for help with getting your Loop green again? It's red and not wo
 
 ### Option 2: Look for Cause
 
-!!!info ""
+!!! info ""
 
     So if Option 1 didn't work to fix your problem...next you'll need to look a little deeper. There can be a variety of causes for why Option 1 did not work to restore your Loop's function, so you'll need to sort out the root cause. There are a few basic categories:
 

@@ -4,7 +4,7 @@ Your Loop won’t have much showing initially until we get some basic settings i
 
 ## Prepare Medtronic Pump
 
-!!!info ""
+!!! info ""
 
     Before you begin the rest of the setup process, there are several steps on your Medtronic pump that you will need to complete prior to moving on with Loop setup. **DO NOT SKIP THESE STEPS OR YOUR LOOP WILL NOT WORK.**
 
@@ -35,7 +35,7 @@ You now need to follow a few simple screen prompts to add your Medtronic pump to
 ![img/add_pump.png](img/add_pump.png){width="750"}
 {align="center"}
 
-!!!info "For x23 and x54 Medtronic pump users only"
+!!! info "For x23 and x54 Medtronic pump users only"
 
     |||
     |---|---|

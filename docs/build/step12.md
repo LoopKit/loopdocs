@@ -1,14 +1,14 @@
 # Step 12: Meet the Community
 
-!!!danger "Time Estimate"
+!!! danger "Time Estimate"
     - Joining Looped Group: 5 minutes
     - Joining Zulipchat: 10 minutes
 
-!!!info "Summary"
+!!! info "Summary"
     - Use the search tools in Looped, Zulipchat, Loopdocs, and Looptips
     - If asking for help, remember the motto "Help me help you"...provide information. Avoid vague phrases and the word "it". Aim for details and specifics. Screenshots are gold.
 
-!!!warning "FAQs"
+!!! warning "FAQs"
     - **"I'm worried I'll ask a stupid question"** Don't worry about that...instead just focus on asking a **thorough** question. A thorough question explains what you've already tried or read, has screenshots of what you are confused by, and any other details that you can provide.
 
 ## Online groups

@@ -1,18 +1,18 @@
 # Step 2: Compatible iPhone or iPod touch
 
-!!!danger "Time Estimate"
+!!! danger "Time Estimate"
     - 5 minutes, if already have iOS 12.4 or newer
     - 20 minutes, if need to update your compatible device to iOS 12.4 or newer
     - 10 minutes, if you need to order a device from Apple website
     - 0 minutes, if you own an Android and won't buy Apple products...that's fine, too.
 
-!!!info "Summary"
+!!! info "Summary"
     - Check your iOS version and make sure you have 12.4 minimum.
     - Do not use any of the beta iOS versions. (Don't worry...if you don't know what that means, then you aren't using one.)
     - If using Dexcom CGM, your Looping iPhone/iPod touch will need the Dexcom app installed on it in order to Loop without an internet connection.
     - This is a good time to [Turn Off Automatic Updates](#turn-off-automatic-updates) of your iPhone/iPod operating system
 
-!!!warning "FAQs"
+!!! warning "FAQs"
     - **"Can I use an android?"** No.
     - **"But why not?"** Because Loop is written in Apple's Swift language, which does not compile onto Android operating systems.  Loop also relies on Apple Health, and Android does not have a suitable native equivalent.
     - **"Can I use an iPad?"** No. iPads do not support Apple Health and that is an important part of Loop's inner workings.

@@ -98,7 +98,7 @@ You'll notice dashed lines in the HUD for the CGM value if the CGM data goes old
 
 ### Common build error squashed
 
-One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  Ahhhhh! I love it!!!
+One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  Ahhhhh! I love it!!! 
 
 ### Nightscout profile uploading
 

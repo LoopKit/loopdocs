@@ -1,11 +1,11 @@
 # Updating Loop
 
-!!!danger "Time Estimate"
+!!! danger "Time Estimate"
 
     - 25 minutes, if already have updates done
     - 40-90 minutes, if need to install Apple update(s)
 
-!!!info "Summary"
+!!! info "Summary"
 
     1. Update macOS, Xcode, iOS, and/or watchOS
     2. Download updated Loop code
@@ -14,7 +14,7 @@
     5. Build onto your iPhone
     6. Resolve Build Errors
 
-!!!warning "FAQs"
+!!! warning "FAQs"
 
     - **"What is an update?"** Anytime you want to change branches (i.e., go from omnipod-testing to dev branch), change customizations, or grab updates to the same branch you built with before...that is an "update" of your Loop app.
     - **"Do I delete my old Loop app first?"** Definitely not! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
@@ -30,15 +30,15 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 
 ## Step 1: Install macOS and Xcode updates
 
-!!!warning "Update to macOS (10.15.4 minimum currently for iOS 14)"
+!!! warning "Update to macOS (10.15.4 minimum currently for iOS 14)"
 
     Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you miss macOS or Xcode updates, you may run into build problems. For example, the newest iOS 14.1 on your phone requires the newest Xcode version to properly build Loop.  In order to get that update, you need to be running macOS 10.15.4 at a minimum. Check for macOS updates and install as needed. 
 
-!!!danger "Update to Xcode (12.1 minimum currently for iOS 14.1)"
+!!! danger "Update to Xcode (12.1 minimum currently for iOS 14.1)"
 
     Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode (12.1 is the latest release) in the App Store on your computer. **UPDATE TO XCODE 12.1 BEFORE UPDATING YOUR LOOP APP. ** Phones running iOS 14.1 will not be able to have Loop installed using older Xcode versions.
 
-!!!info "Restart computer after updating Xcode"
+!!! info "Restart computer after updating Xcode"
 
         Make sure to restart your computer after updating Xcode. There's a known issue that happens often enough to be frustrating if you don't reboot. Either a build error about missing simulators or a "device not connected" (even when phone is connected). Just restart computer. It's easy enough. It's not always required...but this is a good easy ounce of problem prevention.
 
@@ -80,7 +80,7 @@ Here's what started happening about a year ago with Xcode 11...the provisioning 
 
 To solve this new issue...we have an easy solution. Honest...easy. You can do this. Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)
 
-!!!warning "How to delete old provisioning profiles"
+!!! warning "How to delete old provisioning profiles"
     - Find your Terminal app (the same one you used to install Homebrew in Step 7 of the build process if you forgot how to find it).
     - Open your Terminal app.
     - Copy and paste the line in the little grey box below into the Terminal prompt. Press enter after you paste it.
@@ -95,7 +95,7 @@ To solve this new issue...we have an easy solution. Honest...easy. You can do th
 
 An ounce of prevention is worth a pound of cure.  Since we already have Terminal app open, let's prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.
 
-!!!danger "Clean cache and derived data"
+!!! danger "Clean cache and derived data"
 
     Using Terminal app that should still be open from Step 4a just now, </br></br>
     1. Copy and paste this command and press return: `rm -rf ~/Library/Caches/org.carthage.CarthageKit` Note: you won't see any message back if the command runs successfully.</br></br>
@@ -109,7 +109,7 @@ An ounce of prevention is worth a pound of cure.  Since we already have Terminal
 
 From here, go straight to [Step 14 Build Loop app](step14.md) and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
 
-!!!info "Double check expiration date"
+!!! info "Double check expiration date"
 
     If you want to make sure that step 4 above (deleting the provisioning profiles) went well...go ahead and check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app will safely function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.
 
@@ -117,6 +117,6 @@ Note: If this is a computer that hasn't built Loop before, you would want to mak
 
 ## Step 6: Check Build Errors page if needed
 
-!!!danger "CHECK BUILD ERRORS PAGE"
+!!! danger "CHECK BUILD ERRORS PAGE"
 
     If you get a build error...still check the [Build Errors page](build_errors.md). Because even if your exact error isn't there...the information you NEED to provide when asking for help is listed out on that page. And that information is critical. CRITICAL to be able to troubleshoot your build error.
