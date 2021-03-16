@@ -1,14 +1,14 @@
 # Step 13: Download Loop code
 
-!!!danger "Time Estimate"
+!!! danger "Time Estimate"
     - 1 minute to download Loop code
     - 10 minutes to read this page
 
-!!!info "Summary"
+!!! info "Summary"
     - Master branch of Loop has been recently updated to Loop v2.0
     - All branches of Loop support both Medtronic and Omnipod pump users.
 
-!!!warning "FAQs"
+!!! warning "FAQs"
     - **"What the heck is a branch?"** That's a great question. We have a page all about [Branch FAQs](../faqs/branch-faqs.md)
     - **"How can I tell which version I have downloaded if I'm unsure?"** The downloaded Loop folder's name will give you an indication of which branch you downloaded. The folder name will be in the format `Loop-BranchName`.
     - **"When do I need to download new Loop code?"** Anytime you want to update your Loop app to get new features, you'll simply download the code again by clicking on the links below. The links always go to the most recent version of each of the branches. It's a good idea is to delete your old downloads before making a new one, just to avoid confusion.

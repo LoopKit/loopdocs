@@ -11,6 +11,6 @@ For recently saved carbohydrates where the projected carbohydrate absorption wil
 
 Finally, Loop checks that the result of the calculations is below the maximum single bolus the Loop user specified in their settings. If the calculated bolus is less than the maximum single bolus setting, then the recommended bolus will be displayed in Loop’s bolus tool.
 
-!!!info "Bolusing safety feature"
+!!! info "Bolusing safety feature"
 
     If the current blood glucose, or any predicted blood glucose, falls below the suspend threshold, Loop will not return a recommended bolus. When the minimum blood glucose rises above the suspend threshold, the bolus tool will provide a recommended bolus.

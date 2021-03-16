@@ -40,7 +40,7 @@ In summary, that little pump battery indicator on the Medtronic pump screen is O
 * using Energizer alkaline batteries, and
 * in the temperature environment similar to their testing.
 
-!!!info ""
+!!! info ""
 
     Loop users should not rely on their Medtronic pump screen's pump battery indicator, and instead use the Loop's pump battery level indicator.
 
@@ -71,7 +71,7 @@ The Nightscout alarms are based on the Heroku settings that you have input speci
 
 Nightscout pump battery levels, if you leave things at default installation, will not trigger alarms.  If however you add a setting of `PUMP_ENABLE_ALERTS` to `true`, you will receive pump battery notifications according to the levels shown in the parenthesis above.  For example, your x23 pump is reporting its levels in percent, therefore you'd receive a yellow warning alarm at 30% and an urgent red alarm at 20%.  Your x22 pump however is reporting its levels at voltage readings, therefore you'd receive a warning yellow alarm at 1.35v and an urgent red alarm at 1.30v.
 
-!!!info ""
+!!! info ""
 
     Are the default NS alarm levels going to work for you?  The answer depends on what type of battery level you are using, what model pump you are using, and how much advance notification you want to receive before needing to change a pump battery.  There is a bit of personal preference and experimentation to finding what works for you.
 
@@ -87,7 +87,7 @@ Alkaline and lithium batteries should have automatically had their percentage-re
 
 As an alternative method of tracking pump battery changes, you could use the insulin age (IAGE) plug-in to anticipate your pump battery changes as well.  For example, after tracking pump battery life on my 723 using energizer batteries lithium batteries for the last several months, I know that we get about 15 days plus a handful of hours.  The amount of hours more beyond 15 days varies depending on how much we've interacted with the pump buttons directly, whether we've looped the full 15-days solid, and if the pump has been in extreme weather (cold weather can sap pump battery life).  By tracking the pump battery changes with NS's careportal "insulin cartridge change", I can see in advance if we are nearing an overnight on a 15 day battery and decide to change batteries before overnight to prevent any middle-of-night battery issues.
 
-!!!info ""
+!!! info ""
 
     - Lithium batteries will get a significantly longer life than an alkaline battery.
     - Experiment and track your particular pump model and battery type to understand what NS settings will work best for you.

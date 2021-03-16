@@ -13,7 +13,7 @@ Let’s start by clicking on the Loop Settings button in the toolbar at the bott
 
 A list of all RileyLinks in the nearby area will display in the RileyLink Setup screen. Select your RileyLink by sliding the toggle to display green and then press the blue `Continue` button at the bottom of the screen. If your RileyLink does not appear, make sure that its switch is turned on (switch slide up toward the case's keyring) and lipo is charged.
 
-!!!info "New RileyLink"
+!!! info "New RileyLink"
 
     New RileyLinks won't have a name listed next to their slider at first. The name will only be displayed after connecting a RileyLink to a Loop for the first time. So, if all you see in the device list is a little toggle off to the left and no "RileyLink" name...go ahead and switch that toggle. The RileyLink name will appear after that toggle is green.
 
