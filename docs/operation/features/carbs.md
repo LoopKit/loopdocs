@@ -14,7 +14,7 @@ To begin a new meal entry, simply enter the number of carbs to be eaten in the `
 
 ## Avoid Double Carb Entries
 
-!!!info "Be Aware"
+!!! info "Be Aware"
 
     When you press `Save` for a carb entry, Loop will consider that carb entry saved and use it for calculating temp basals and recommended boluses.  Be cautious about repeated attempts to enter the same meal...Loop will continue to save the carb entries UNLESS you push cancel on the carb entry screen.
 

@@ -1,16 +1,16 @@
 # Step 5: Order a RileyLink
 
-!!!danger "Time Estimate"
+!!! danger "Time Estimate"
     - 15 minutes to order a RileyLink
     - 15-20 minutes to assemble the RileyLink once you get it in the mail
     - 15-20 minutes to read about the RileyLink
 
-!!!info "Summary"
+!!! info "Summary"
     - Order your [Omnipod RileyLink](https://getrileylink.org/product/rileylink433) or [Medtronic RileyLink](https://getrileylink.org/product/rileylink916).
     - Assemble the RileyLink, after hugging the postman
     - Read the "extra details" to learn about RileyLink lights, charging, range, etc.
 
-!!!warning "FAQs"
+!!! warning "FAQs"
     - **"Do I need a RileyLink?"** Yes. Loop will not work without a RileyLink. Omnipod users will not be able to bolus from their looping pod without a RileyLink.
     - **"What happens if I lose my RileyLink or walk away from it?"** Good question...answered [here](../faqs/rileylink-faqs.md#what-happens-if-i-walk-away-from-my-rileylink).
     - **"Can I use an Omnipod RileyLink with a Medtronic pump? or vice versa?"** Good question...answered [here](../faqs/rileylink-faqs.md#what-will-happen-if-you-use-a-916mhz-antenna-rileylink-with-an-omnipod-or-vice-versa).
@@ -40,7 +40,7 @@ Your RL will come with the battery disconnected and the parts not already inside
 
 Make sure the lipo battery is well-plugged into the connection. Line up the little ridge appropriately, and push fairly firmly to get the connection tight.  Poor battery cable connection can make the Loop communications fail.  See photos below, for example.
 
-!!!info "Common new user errors"
+!!! info "Common new user errors"
 
     The most common two errors for new RL owners are (1) not fully pushing in the lipo battery cable connection and (2) failing to charge the RL. Compare your lipo battery cable with the photos; it takes a bit of oomph to push that plug fully in like the photos shown below. Remember to charge your RL each night.
 
@@ -67,7 +67,7 @@ Usually this best frequency is pretty constant for any given pump+RL, but during
 
 RL communicates with your iPhone and Loop app through Bluetooth (BT).  
 
-!!!info "Bluetooth Troubleshooting"
+!!! info "Bluetooth Troubleshooting"
 
     If your iPhone has BT issues, your Loop will have failures.  There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interfering with the Loop.  If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.
 

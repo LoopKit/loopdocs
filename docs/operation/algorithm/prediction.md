@@ -166,7 +166,7 @@ After the estimated absorbed carbohydrates have been subtracted from each meal e
 
 ## Retrospective Correction Effect
 
-!!!note ""
+!!! note ""
 
     The retrospective correction effect allows the Loop algorithm to account for effects that are not modeled with the insulin and carbohydrate effects, by comparing historical predictions to the actual blood glucose.
 
@@ -207,7 +207,7 @@ Here’s an example below that shows the retrospective correction effect when th
 
 ## Blood Glucose Momentum Effect
 
-!!!note ""
+!!! note ""
 
     The blood glucose momentum effect incorporates a prediction component based on the assumption that recent blood glucose trends tend to persist for a short period of time. In other words, the best predictor of the future is the recent past.
 

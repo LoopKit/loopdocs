@@ -20,7 +20,7 @@ If your app expires, you simply need to plug your phone back into the computer a
 
 ## Incorrectly entered correction range
 
-!!!info "Important To Know"
+!!! info "Important To Know"
 
     Correction ranges in Loop are to be entered in minimum-maximum...in other words, LOW-HIGH. If you enter the range backward, your app will crash as soon as Loop tries to use that backward target range...that could be immediately or at a time in the future, depending on when the backwards entry is in your schedule.
 

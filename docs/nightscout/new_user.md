@@ -1,6 +1,6 @@
 # New Nightscout Users
 
-!!!info "Is Nightscout required for Loop?"
+!!! info "Is Nightscout required for Loop?"
 
     Nope...you don't NEED to have a Nightscout site in order to use Loop. A Nightscout site is completely optional. However, if you want to see Loop's actions anywhere other than the Looper's iPhone...then you will want a Nightscout site. For example, parents of little Loop users may want to see the temporary basal rates Loop is setting, the current insulin on board, or a recent bolus and carb entry.  That's what Nightscout will provide...remote viewing of Loop actions.
 

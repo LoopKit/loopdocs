@@ -1,12 +1,12 @@
 # Step 8: Download Xcode
 
-!!!danger "Time Estimate"
+!!! danger "Time Estimate"
     - 45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.
 
-!!!info "Summary"
+!!! info "Summary"
     - After making sure your macOS is up-to-date for your iPhone's iOS (see the info below), download Xcode from your computer's App Store application.
 
-!!!warning "FAQs"
+!!! warning "FAQs"
     - **"Why isn't my Xcode installing?"** I can't see your computer to know exactly why...but the two most common reasons are (1) lack of internet connection or (2) not enough free space on the computer's hard drive. Xcode is a pretty beefy-sized download...and needs even a little more space to properly unpack and install itself. Best to try to have about 20-25GB of free space on your hard drive before starting to be on the safe side. If you get low on free space, I've seen installation failures. You can check your free space by clicking on the `About this Mac` (like in Step 1) and clicking the `Storage` tab.
 
 Today is an easy one, but probably takes the longest of most of any of the steps in terms of time...only because the download takes a while. The good news is that you don't have to watch this. Instead, you can start the download and simply walk away for the rest of it.
@@ -18,7 +18,7 @@ Open your App Store in your computer and search for Xcode...you'll either be dow
 ![img/xcode.png](img/xcode.png){width="750"}
 {align="center"}
 
-!!!warning "Two important facts"
+!!! warning "Two important facts"
 
     1. The minimum version of Xcode that you need is dependent on the version of iOS you have on the iPhone. The newer the version of iOS, the newer of Xcode you'll also need.
    
@@ -32,7 +32,7 @@ Most often what happens is that people will update their iOS on the iPhones more
 
 Because the update looks so innocuous and we all lead busy lives, we forget that there might be consequences to iOS updates.
 
-!!!danger "Loop and iOS updates"
+!!! danger "Loop and iOS updates"
 
     For Loopers...the consequence to an iOS update is nothing immediate. Your Loop app won't die, it will keep humming along. 
     

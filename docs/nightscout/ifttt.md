@@ -72,20 +72,20 @@ IFTTT calls their little actions that you'll create an "applet". I have no idea 
 ![img/webhooks25.png](img/webhooks25.png){width="650"}
 {align="center"}
 
-!!!danger "URL"
+!!! danger "URL"
 
     `https://yoursite.herokuapp.com/api/v1/treatments.json` (for all IFTTT recipes that are NOT remote overrides...so things like cannula changes, sensor changes, pump battery changes, etc.)</br></br>
     Change the "yoursite" to your actual site's info.
 
-!!!warning "Method"
+!!! warning "Method"
 
     The method will be `POST`
 
-!!!info "Content Type"
+!!! info "Content Type"
 
     The content type will be `application/json`. 
 
-!!!danger "Body"
+!!! danger "Body"
 
     The content of the body will depend on the action that you would like this particular button press to perform. While many recipes are available, any recipe that log carbs to NS will only display the carbs in Nightscout...Loop will not "use" those carbs in treatment or prediction math. The display of carbs in NS though may still be helpful for remote care givers to leave an indication that a low is being noticed and treated.  Some sample content for actions that may be useful in Loop:</br></br>
     **Pump Site Change**</br>
@@ -95,7 +95,7 @@ IFTTT calls their little actions that you'll create an "applet". I have no idea 
     **Note**</br>
     {"enteredBy": "IFTTT-button", "eventType": "Note", "notes": "Hi mom, please don't text me for a bit.  I'm taking a test.", "secret": "your_hashed_api_goes_here!!!"}</br></br>
 
-!!!warning "Special note for IFTTT to set a Remote Override with dev branch"
+!!! warning "Special note for IFTTT to set a Remote Override with dev branch"
 
     Triggering a remote override with IFTTT takes a couple considerations;</br></br>
     1. You have followed [the directions for setting up remote overrides](remote-overrides.md) in Nightscout already.</br></br>
