@@ -3,7 +3,7 @@
 ## Is Omnipod supported on Loop?
 
 !!! green ""
-  YES IT IS! WOOHOO!
+    YES IT IS! WOOHOO!
 
 ## Which pods will work with Loop?
 
