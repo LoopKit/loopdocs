@@ -1,6 +1,6 @@
 # Pod "Uncertain Bolus"
 
-At some point in Loop use, you may run into the situation where you try to bolus and get a message back in Loop that the bolus was "uncertain". 
+At some point in Loop use, you may run into the situation where you try to bolus and get a message back in Loop that the bolus was "uncertain".
 
 ## Why does this happen?
 

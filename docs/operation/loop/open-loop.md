@@ -18,7 +18,7 @@ Probably the next most difficult transition involves using carb absorption as a 
 
 ## Troubleshooting
 
-Get used to carrying the RileyLink around.  Find how far your connectivity stretches before you have pump communication problems.  Get used to troubleshooting yellow and red loops, finding out the pattern/cause of any potential loop issues.  You'll be less frustrated starting on closed loop if you aren't dealing with learning new electronics at the same time as you are learning carb absorption times in a closed loop.  Learn how to retune your RL. 
+Get used to carrying the RileyLink around.  Find how far your connectivity stretches before you have pump communication problems.  Get used to troubleshooting yellow and red loops, finding out the pattern/cause of any potential loop issues.  You'll be less frustrated starting on closed loop if you aren't dealing with learning new electronics at the same time as you are learning carb absorption times in a closed loop.  Learn how to retune your RL.
 
 ## Bolus
 

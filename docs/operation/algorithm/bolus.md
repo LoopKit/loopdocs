@@ -1,6 +1,6 @@
 # Bolus Recommendations
 
-Loop will recommend bolus insulin corrections when the eventual blood glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target. These recommendations are not proactively sent to the Loop user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that Loop never issues a bolus command automatically; all boluses are initiated by the user. 
+Loop will recommend bolus insulin corrections when the eventual blood glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target. These recommendations are not proactively sent to the Loop user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that Loop never issues a bolus command automatically; all boluses are initiated by the user.
 
 The bolus dose calculation is identical to the dose equation given in the basal recommendations section, with the exception that:
 
@@ -12,4 +12,5 @@ For recently saved carbohydrates where the projected carbohydrate absorption wil
 Finally, Loop checks that the result of the calculations is below the maximum single bolus the Loop user specified in their settings. If the calculated bolus is less than the maximum single bolus setting, then the recommended bolus will be displayed in Loop’s bolus tool.
 
 !!!info "Bolusing safety feature"
+
     If the current blood glucose, or any predicted blood glucose, falls below the suspend threshold, Loop will not return a recommended bolus. When the minimum blood glucose rises above the suspend threshold, the bolus tool will provide a recommended bolus.
