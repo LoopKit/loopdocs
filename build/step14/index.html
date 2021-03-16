@@ -8,647 +8,471 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-
-	<title>Step 14 Build Loop app - LoopDocs</title>
-
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
+        <title>Step 14 Build Loop app - LoopDocs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link href="../../css/admonitions.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+        <link href="../../stylesheets/admonitions.css" rel="stylesheet">
+        <link href="../../stylesheets/extra.css" rel="stylesheet">
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-
-        
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-109876065-1', 'loopkit.github.io');
-            ga('send', 'pageview');
-        </script>
-        
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">LoopDocs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../step1/" class="dropdown-item">Step 1 Compatible Computer</a>
+</li>
+                                    
+<li>
+    <a href="../step2/" class="dropdown-item">Step 2 Compatible iPhone/iPod touch</a>
+</li>
+                                    
+<li>
+    <a href="../step3/" class="dropdown-item">Step 3 Compatible Pump</a>
+</li>
+                                    
+<li>
+    <a href="../step4/" class="dropdown-item">Step 4 Compatible CGM</a>
+</li>
+                                    
+<li>
+    <a href="../step5/" class="dropdown-item">Step 5 Order a RileyLink</a>
+</li>
+                                    
+<li>
+    <a href="../step6/" class="dropdown-item">Step 6 Enroll in Apple Developer Program</a>
+</li>
+                                    
+<li>
+    <a href="../step7/" class="dropdown-item">Step 7 Skip Step 7</a>
+</li>
+                                    
+<li>
+    <a href="../step8/" class="dropdown-item">Step 8 Download Xcode</a>
+</li>
+                                    
+<li>
+    <a href="../step9/" class="dropdown-item">Step 9 Xcode Preferences</a>
+</li>
+                                    
+<li>
+    <a href="../step10/" class="dropdown-item">Step 10 Test Settings</a>
+</li>
+                                    
+<li>
+    <a href="../step11/" class="dropdown-item">Step 11 Make plans for Loop Data</a>
+</li>
+                                    
+<li>
+    <a href="../step12/" class="dropdown-item">Step 12 Meet Community</a>
+</li>
+                                    
+<li>
+    <a href="../step13/" class="dropdown-item">Step 13 Download Loop code</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Step 14 Build Loop app</a>
+</li>
+                                    
+<li>
+    <a href="../build_errors/" class="dropdown-item">Oh dear! Build errors?</a>
+</li>
+                                    
+<li>
+    <a href="../code_customization/" class="dropdown-item">Customize your Loop</a>
+</li>
+                                    
+<li>
+    <a href="../updating/" class="dropdown-item">Updating/Rebuilding your Loop</a>
+</li>
+                                    
+<li>
+    <a href="../loopworkspace/" class="dropdown-item">LoopWorkspace</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../operation/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../health/" class="dropdown-item">Step 1: Health Permissions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Step 2: Add Pump</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../operation/loop-settings/mdt-pump/" class="dropdown-item">Add Medtronic</a>
+</li>
+            
+<li>
+    <a href="../../operation/loop-settings/omnipod-pump/" class="dropdown-item">Add Omnipod</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/cgm/" class="dropdown-item">Step 3: Add CGM</a>
+</li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/configurations/" class="dropdown-item">Step 4: Configurations</a>
+</li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/services/" class="dropdown-item">Step 5: Loop Services</a>
+</li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/displays/" class="dropdown-item">Loop Displays</a>
+</li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink menu</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">How to Use Loop App</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../operation/features/carbs/" class="dropdown-item">Carb Entries</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/bolus/" class="dropdown-item">Bolus</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/workout/" class="dropdown-item">Overrides</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/premeal/" class="dropdown-item">Pre-meal target</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/healthapp/" class="dropdown-item">Health app</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/ice/" class="dropdown-item">Using ICE info</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/watch/" class="dropdown-item">Apple Watch</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/widget/" class="dropdown-item">iPhone widget</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/notifications/" class="dropdown-item">Loop Notifications</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/battery/" class="dropdown-item">Pump Battery</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Looping Tips</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../operation/loop/open-loop/" class="dropdown-item">Open Loop</a>
+</li>
+            
+<li>
+    <a href="../../operation/loop/close-loop/" class="dropdown-item">Closed Loop</a>
+</li>
+            
+<li>
+    <a href="../../operation/loop/looptips/" class="dropdown-item">Loop Tips</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Algorithm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../operation/algorithm/overview/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../../operation/algorithm/bolus/" class="dropdown-item">Bolus Recommendations</a>
+</li>
+            
+<li>
+    <a href="../../operation/algorithm/prediction/" class="dropdown-item">Glucose Prediction</a>
+</li>
+            
+<li>
+    <a href="../../operation/algorithm/temp-basal/" class="dropdown-item">Temp Basal Adjustments</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Troubleshoot</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../troubleshooting/overview/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/loop-crashing/" class="dropdown-item">Loop App crashes</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/yellow-red-loop/" class="dropdown-item">Red Loop</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/pod-pairing/" class="dropdown-item">Pod Pairing Failures</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/uncertain-bolus/" class="dropdown-item">Pod Uncertain Boluses</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/priming/" class="dropdown-item">MDT Priming and Sites</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/time-change/" class="dropdown-item">Time Changes</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/pump-errors/" class="dropdown-item">MDT Pump Errors</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/omnipod-faults/" class="dropdown-item">Omnipod Faults</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../nightscout/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/new_user/" class="dropdown-item">Brand New NS</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/update_user/" class="dropdown-item">Retrofit Existing NS</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/troublehoot/" class="dropdown-item">Setup Troubleshooting</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/remote-overrides/" class="dropdown-item">Remote Overrides</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/ifttt/" class="dropdown-item">IFTTT</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/pebble/" class="dropdown-item">Pebble</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/pushover/" class="dropdown-item">Remote Notifications</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/reports/" class="dropdown-item">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <!-- Main title -->
-            <a class="navbar-brand" href="../..">LoopDocs</a>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../step13/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../build_errors/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            <!-- Main navigation -->
-            <ul class="nav navbar-nav">
-            
-            
-                <li >
-                    <a href="../..">Home</a>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="../../faqs/docs-faqs/">Using This Site FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/FAQs/">General Loop FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/omnipod-faqs/">Omnipod FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/branch-faqs/">Branch FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/update-faqs/">Update/Rebuild Loop FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/ios13/">iOS 13 FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/rileylink-faqs/">RileyLink FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/algorithm-faqs/">Algorithm FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/cgm-faqs/">CGM FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/safety-faqs/">Safety Tips</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="../overview/">Overview</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step1/">Step 1 Compatible Computer</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step2/">Step 2 Compatible iPhone/iPod touch</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step3/">Step 3 Compatible Pump</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step4/">Step 4 Compatible CGM</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step5/">Step 5 Order a RileyLink</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step6/">Step 6 Enroll in Apple Developer Program</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step7/">Step 7 Install Homebrew</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step8/">Step 8 Download Xcode</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step9/">Step 9 Xcode Preferences</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step10/">Step 10 Test Settings</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step11/">Step 11 Make plans for Loop Data</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step12/">Step 12 Meet Community</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step13/">Step 13 Download Loop code</a>
-</li>
-
-                    
-                        
-<li class="active">
-    <a href="./">Step 14 Build Loop app</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../build_errors/">Oh dear! Build errors?</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../code_customization/">Customize your Loop</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../updating/">Updating/Rebuilding your Loop</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../loopworkspace/">LoopWorkspace</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="../../operation/overview/">Overview</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../health/">Step 1: Health Permissions</a>
-</li>
-
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Step 2: Add Pump</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../operation/loop-settings/mdt-pump/">Add Medtronic</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/loop-settings/omnipod-pump/">Add Omnipod</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/cgm/">Step 3: Add CGM</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/configurations/">Step 4: Configurations</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/services/">Step 5: Loop Services</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/displays/">Loop Displays</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/rileylink/">RileyLink menu</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">How to Use Loop App</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../operation/features/carbs/">Carb Entries</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/bolus/">Bolus</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/workout/">Overrides</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/premeal/">Pre-meal target</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/healthapp/">Health app</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/ice/">Using ICE info</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/watch/">Apple Watch</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/widget/">iPhone widget</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/notifications/">Loop Notifications</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/battery/">Pump Battery</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Looping Tips</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../operation/loop/open-loop/">Open Loop</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/loop/close-loop/">Closed Loop</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/loop/looptips/">Loop Tips</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Algorithm</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../operation/algorithm/overview/">Overview</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/algorithm/bolus/">Bolus Recommendations</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/algorithm/prediction/">Glucose Prediction</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Troubleshoot</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../troubleshooting/overview/">Overview</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/loop-crashing/">Loop App crashes</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/yellow-red-loop/">Red Loop</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/pod-pairing/">Pod Pairing Failures</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/uncertain-bolus/">Pod Uncertain Boluses</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/priming/">MDT Priming and Sites</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/time-change/">Time Changes</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/pump-errors/">MDT Pump Errors</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/omnipod-faults/">Omnipod Faults</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="../../nightscout/overview/">Overview</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/new_user/">Brand New NS</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/update_user/">Retrofit Existing NS</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/troublehoot/">Setup Troubleshooting</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/remote-overrides/">Remote Overrides</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/ifttt/">IFTTT</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/pebble/">Pebble</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/pushover/">Remote Notifications</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/reports/">Reports</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            </ul>
-
-            <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                <li >
-                    <a rel="next" href="../step13/">
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </li>
-                <li >
-                    <a rel="prev" href="../build_errors/">
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </li>
-                
-            </ul>
-        </div>
-    </div>
-</div>
 
         <div class="container">
-            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
     
-        <li class="main active"><a href="#step-14-build-loop-app">Step 14: Build Loop app</a></li>
-        
-            <li><a href="#open-loop-project-in-xcode">Open Loop project in Xcode</a></li>
-        
-            <li><a href="#connect-your-iphone-to-computer">Connect your iPhone to Computer</a></li>
-        
-            <li><a href="#sign-four-targets">Sign Four Targets</a></li>
-        
-            <li><a href="#code-customizations">Code Customizations</a></li>
-        
-            <li><a href="#pair-your-apple-watch">Pair your Apple Watch</a></li>
-        
-            <li><a href="#intermission">INTERMISSION</a></li>
-        
-            <li><a href="#build-loop">Build Loop</a></li>
-        
-            <li><a href="#build-finished">Build Finished</a></li>
-        
-            <li><a href="#summary">Summary</a></li>
-        
-            <li><a href="#next-steps">Next steps</a></li>
-        
-    
-    </ul>
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#step-14-build-loop-app" class="nav-link">Step 14: Build Loop app</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#open-loop-project-in-xcode" class="nav-link">Open Loop project in Xcode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#connect-your-iphone-to-computer" class="nav-link">Connect your iPhone to Computer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sign-four-targets" class="nav-link">Sign Four Targets</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#free-account" class="nav-link">Free Account</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#code-customizations" class="nav-link">Code Customizations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pair-your-apple-watch" class="nav-link">Pair your Apple Watch</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#intermission" class="nav-link">INTERMISSION</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#build-loop" class="nav-link">Build Loop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#build-finished" class="nav-link">Build Finished</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#summary" class="nav-link">Summary</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#next-steps" class="nav-link">Next steps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-            <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="step-14-build-loop-app">Step 14: Build Loop app<a class="headerlink" href="#step-14-build-loop-app" title="Permanent link">⌁</a></h1>
 <div class="admonition danger">
@@ -661,7 +485,7 @@
 <div class="admonition info">
 <p class="admonition-title">Summary</p>
 <ul>
-<li>Open the Loop code you downloaded in <a href="https://loopkit.github.io/loopdocs/build/step13/">Step 13</a></li>
+<li>Open the Loop code you downloaded in <a href="../step13/">Step 13</a></li>
 <li>Connect the phone to the computer</li>
 <li>Set the phone to not lock for awhile</li>
 <li>Trust the computer (on the phone)</li>
@@ -676,49 +500,37 @@
 <div class="admonition warning">
 <p class="admonition-title">FAQs</p>
 <ul>
-<li><strong>"I got a build error! YIKES...what do I do?"</strong> Check out the <a href="https://loopkit.github.io/loopdocs/build/build_errors/">Build Errors</a> page for all the solutions you'd need.</li>
+<li><strong>"I got a build error! YIKES...what do I do?"</strong> Check out the <a href="../build_errors/">Build Errors</a> page for all the solutions you'd need.</li>
 <li><strong>"The build seems to take a long time, is that normal?"</strong> Yes, the first build of a new download will take quite a long time. Just be patient...one of the build steps to take <em>much</em> longer than all the others. The build process does always end in a success or failure message, so just wait it out until you see one of those displayed.</li>
 </ul>
 </div>
 <h2 id="open-loop-project-in-xcode">Open Loop project in Xcode<a class="headerlink" href="#open-loop-project-in-xcode" title="Permanent link">⌁</a></h2>
 <p>Go to your Downloads folder, open your downloaded Loop code folder and double click on Loop.xcodeproj. If you downloaded dev branch, your folder would be named <code>Loop-dev</code> and similar for <code>Loop-master</code> download.</p>
-<p align="center">
-<img src="../../build/img/loop_code.png" width="750">
-</p>
-
+<p align="center"><img alt="img/loop_code.png" src="../img/loop_code.png" width="750" /></p>
 <p>A warning may appear asking if you really want to open it, click Open. Xcode will get itself organized, this may take a few minutes.  </p>
-<p align="center">
-<img src="../../build/img/loop_open.jpg" width="450">
-</p>
-
+<p align="center"><img alt="img/loop_open.jpg" src="../img/loop_open.jpg" width="450" /></p>
 <p>Once Xcode has finished indexing, the Loop project's various folders and files will appear in the far left column. We are now going to make three important sets of clicks:</p>
 <ol>
 <li>
 <p>First click: At the very top of all the folders and files listed, click on the blue "Loop". This will populate the middle part of the Xcode window with some information. <strong>If a couple of little boxes appear saying "The folder “DerivedWatchAssets.xcassets” doesn’t exist."...just click the ok buttons and ignore those. They will come up a couple of times during your build if you are using dev branch right now...don't worry, won't be a problem.</strong></p>
-<p><p align="center">
-<img src="../../build/img/loop-first-click.png" width="550">
-</p></p>
+<p align="center"><img alt="img/loop-first-click.png" src="../img/loop-first-click.png" width="550" /></p>
 </li>
 <li>
 <p>Second (set of) clicks: Now click on the box in the middle screen to reveal the targets column underneath that box. The four targets we will sign in the upcoming steps are now easily viewable. Now also click on the Loop target like shown in the screenshot below. It will be highlighted in blue to let you know it is selected. Loop, Loop Status Extension, Watch App, and WatchApp Extension are the targets we are interested in later.</p>
-<p><p align="center">
-<img src="../../build/img/loop-second-click.png" width="550">
-</p></p>
+<p align="center"><img alt="img/loop-second-click.png" src="../img/loop-second-click.png" width="550" /></p>
 </li>
 <li>
 <p>Third Click: With the Loop target selected, click on the "Signing &amp; Capabilities" up near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of your middle window. If you are missing the "Signing &amp; Capabilities" section and didn't have to click somewhere else to see that part...that means you have missed updating to Xcode 11 from an older version of Xcode. Please go back and update Xcode now. Thanks.</p>
-<p><p align="center">
-<img src="../../build/img/loop-third-click.png" width="550">
-</p></p>
 </li>
 </ol>
+<p align="center"><img alt="img/loop-third-click.png" src="../img/loop-third-click.png" width="550" /></p>
 <h2 id="connect-your-iphone-to-computer">Connect your iPhone to Computer<a class="headerlink" href="#connect-your-iphone-to-computer" title="Permanent link">⌁</a></h2>
-<p>Connect your iPhone via cable to the computer, select your iPhone from the very top of the drop-down list.  Your <strong><u>iPhone’s personal name</u></strong> should be at the top of the list. Don't accidentally select the generic iOS simulators listed below your iPhone's name.  </p>
+<p>Connect your iPhone via cable to the computer, select your iPhone from the very top of the drop-down list.  Your <strong>iPhone’s personal name</strong> should be at the top of the list. Don't accidentally select the generic iOS simulators listed below your iPhone's name.  </p>
 <div class="admonition info">
 <p class="admonition-title">Helpful Tips</p>
 <ul>
-<li>If your iPhone has a lock enabled, Xcode will not be able to install Loop app once your phone locks during the build progress.  Please temporarily disable the lock until you finish building Loop app.  Go to your iPhone Settings &gt;&gt; Display &amp; Brightness &gt;&gt; Auto-Lock and set it to <code>Never</code>.  You can reset your lock once Loop is done building onto the phone. If you can't or don't want to set the auto-lock to never, then please remember to tap your phone screen periodically during the build process later to keep it "awake".</br></br></li>
-<li>If this is the first time your iPhone has been plugged into this computer, you will need to open the iPhone and select "Trust this Computer" before your device will be useable in the menu selection.</br></br></li>
+<li>If your iPhone has a lock enabled, Xcode will not be able to install Loop app once your phone locks during the build progress.  Please temporarily disable the lock until you finish building Loop app.  Go to your iPhone Settings &gt;&gt; Display &amp; Brightness &gt;&gt; Auto-Lock and set it to <code>Never</code>.  You can reset your lock once Loop is done building onto the phone. If you can't or don't want to set the auto-lock to never, then please remember to tap your phone screen periodically during the build process later to keep it "awake".</li>
+<li>If this is the first time your iPhone has been plugged into this computer, you will need to open the iPhone and select "Trust this Computer" before your device will be useable in the menu selection.</li>
 </ul>
 </div>
 <div class="admonition danger">
@@ -727,64 +539,45 @@
 <li>The most common mistake in this step is not selecting your actual phone as shown in the second screenshot below. The default list is just a name of general phone models under a subheading called "iOS Simulators"...don't be fooled by those. Your ACTUAL phone will be up above that list of all the various simulator phone models.  You may need to scroll to the top of the list in order to see it.  Make sure you select your actual phone, not just a simulator phone model.</li>
 </ul>
 </div>
-<p align="center">
-<img src="../img/select_device.png" width="750">
-</p>
-
-<p align="center">
-<img src="../img/your_device.png" width="650">
-</p>
-
+<p align="center"><img alt="img/select_device.png" src="../img/select_device.png" width="750" /></p>
+<p align="center"><img alt="img/your_device.png" src="../img/your_device.png" width="650" /></p>
 <h2 id="sign-four-targets">Sign Four Targets<a class="headerlink" href="#sign-four-targets" title="Permanent link">⌁</a></h2>
 <p>Once you select your device (your iPhone's name), we are ready to start signing the four targets. We will start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have "All" selected near the top and then select the dropdown menu where it currently says "none". Choose your team that you'd like to sign with. If you select a team name with (personal team), your app will expire after 7 days. If you select a team name without that (personal team), your app will last a full year.  If you never signed up for a free developer account, you will not have a (personal team) showing. Make sure you keep the "automatically manage signing" box checked above the team selection area.</p>
-<p align="center">
-<img src="../img/team.png" width="750">
-</p>
-
+<p align="center"><img alt="img/team.png" src="../img/team.png" width="750" /></p>
 <p>Once you choose your signing team, Xcode will automatically generate provisioning profiles and signing certificates.  If this is the first time you are building on this iPhone with this developer account, you may be prompted to register the device.  Simply click on the "Register Device" button to confirm.</p>
-<p align="center">
-<img src="../img/register_device.png" width="750">
-</p>
-
+<p align="center"><img alt="img/register_device.png" src="../img/register_device.png" width="750" /></p>
+<h2 id="free-account">Free Account<a class="headerlink" href="#free-account" title="Permanent link">⌁</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">Free Developer Account Users: READ ME</p>
 <p>If you are using a free developer account to sign your targets, you will need to do an extra step. As a free developer, you are restricted from building apps that have Siri or push notification capabilities built-in. Loop has both of these capabilities...so you will need to disable them before proceeding on with signing and building your app. The push notification capability is used for setting remote overrides; disabling it will not affect regular notifications (like ones for Loop not looping). Click on the small x next to the Siri and push notification lines located at the bottom of your Signing &amp; Capabilities page. You need to do this in both the Loop and WatchApp Extension targets.</p>
-<p><p align="center">
-<img src="../img/siri-errors.png" width="750">
-</p></p>
+<p align="center"><img alt="img/siri-errors.png" src="../img/siri-errors.png" width="750" /></p>
 </div>
 <p>A successfully signed target will have a provisioning profile and signing certificate similar to the screenshot below.  Click on each of the three remaining targets, and repeat the signing steps by choosing the same team name as you selected in the first target.</p>
-<p align="center">
-<img src="../img/success.png" width="750">
-</p>
-
+<p align="center"><img alt="img/success.png" src="../img/success.png" width="750" /></p>
 <h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Permanent link">⌁</a></h2>
 <p><strong>New Loop users</strong>: Customizations are not a required part of any Loop build. As you gain experience in how you use your Loop app, you may want to customize some of the features. You can always update your Loop app to add customizations at a later time. Really though, building with the standard, the default installation is JUST FINE.</p>
 <p>If you want any custom configurations to your Loop or Loop Apple Watch apps, now is the time to make them before you finish with the last step of Loop installation on your iPhone. Follow the step-by-step instructions on the <a href="../code_customization/">Code Customizations</a> page. If you are a person familiar with Apple's Swift language, feel free to make your own customizations as well.</p>
 <p>When you've finished your customizations, come on back to this section and continue on with the rest of the build.</p>
 <h2 id="pair-your-apple-watch">Pair your Apple Watch<a class="headerlink" href="#pair-your-apple-watch" title="Permanent link">⌁</a></h2>
-<p><strong>New Apple Watch users</strong>: If you have an unopened Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)</br></p>
+<p><strong>New Apple Watch users</strong>: If you have an unopened Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)</p>
 <p><strong>Existing Apple Watch users</strong>: Please update your watchOS prior to building the Loop app.  The current version of Loop requires watchOS 4.1 or newer.</p>
 <h2 id="intermission">INTERMISSION<a class="headerlink" href="#intermission" title="Permanent link">⌁</a></h2>
 <p>STOP STOP STOP</p>
 <p>You guys...this is about safety.</p>
-<p>People keep ignoring this advice and I'm frankly a little stumped as to why. So, I'm moving this advice up in the process so that you don't ignore it.</p>
-<p align="center">
-<img src="https://media.giphy.com/media/xT9DPJVjlYHwWsZRxm/source.gif" width="400">
-</p>
-
+<p>People keep ignoring this advice and I'm frankly a little stumped as to why. So, I'm moving this advice up in the process so that you don't ignore it.
+<img alt="alt" src="https://media.giphy.com/media/xT9DPJVjlYHwWsZRxm/source.gif" /></p>
 <div class="admonition warning">
 <p class="admonition-title">DO NOT WING THE SETUP</p>
 <p>I have warnings all over these instructions to <strong>continue to use these docs to finish setting up your app after it builds. DO NOT IGNORE THAT ADVICE. DO NOT ENTER ONE LOOP APP SETTING WITHOUT HAVING THE DOCS OPEN AND FOLLOWING ALONG AT THE SAME TIME.</strong></p>
 </div>
-<p>The section in these docs called "Set up App" (See it? Look for it now...at the top of your webpage) needs to be used to input all the settings in your Loop app when it is done building. READ ALONG WITH THE DOCS to enter those settings. There are important safety tips and advice in there. And then after you finish setup, you need to read the "Operate" section...like BEFORE YOU OPERATE LOOP. Don't bolus for a meal, or enter a meal, until you've read through the Operate section. </p>
-<p>I'm worried you will fail to heed the advice about using the setup and operate sections. People have ignored it before. They skim read and think that's good enough. DO NOT BE LIKE THAT. Read each section. </p>
+<p>The section in these docs called "Set up App" (See it? Look for it now...at the top of your webpage) needs to be used to input all the settings in your Loop app when it is done building. READ ALONG WITH THE DOCS to enter those settings. There are important safety tips and advice in there. And then after you finish setup, you need to read the "Operate" section...like BEFORE YOU OPERATE LOOP. Don't bolus for a meal, or enter a meal, until you've read through the Operate section.</p>
+<p>I'm worried you will fail to heed the advice about using the setup and operate sections. People have ignored it before. They skim read and think that's good enough. DO NOT BE LIKE THAT. Read each section.</p>
 <p>BUT, to mitigate the inevitable people who will ignore that advice....here's the two most important safety tips that I feel obliged to present out of order because (damn it), people will ignore my advice still.</p>
 <div class="admonition warning">
 <p class="admonition-title">TOP TWO SAFETY MISTAKES YOU SHOULD AVOID</p>
 <ol>
 <li>
-<p>DO NOT ENTER SETTINGS YOU ARE UNSURE OF. If you don't know your settings or know what the terms mean, stop. Read the docs, all the settings entries are explained there. Ask your endo if you don't have established values for those settings. Don't just guess an ISF, carb ratio, basal rate, or maximum delivery limits.</br></br></p>
+<p>DO NOT ENTER SETTINGS YOU ARE UNSURE OF. If you don't know your settings or know what the terms mean, stop. Read the docs, all the settings entries are explained there. Ask your endo if you don't have established values for those settings. Don't just guess an ISF, carb ratio, basal rate, or maximum delivery limits.</p>
 </li>
 <li>
 <p>DO NOT ENTER ACCIDENTAL DUPLICATE CARB ENTRIES. When you enter a meal in Loop and press the <code>save</code> button...those carbs are saved. Let me repeat: THOSE CARBS ARE SAVED...even if you cancel the bolus for them. This is an automated insulin delivery system and if it thinks you have carbs on board, it will try to give you appropriate insulin for those carbs. Most common new user mistake: enters a meal, saves the carbs, has a change of heart or gets confused, and cancels the bolus screen...thinking they've just canceled the entire meal entry. Then they enter in a new carb entry. AND NOW, when you go to bolus...you'll be bolusing for the meal you wanted AND the meal you are mistakenly thinking you had "canceled". You didn't cancel that carb entry though, you had only canceled the bolus...you didn't "unsave" the carbs. If you make a mistake or change your mind on a carb entry after you pressed save, then tap the green carb chart in Loop's main display and edit or delete that entry. <strong>CANCELING A BOLUS DOES NOT CANCEL THE CARB ENTRY THAT GOT YOU THERE. You must delete or edit a saved carb entry if you no longer want Loop to provide insulin for it.</strong></p>
@@ -794,110 +587,131 @@
 <p>Ok, so now that I've got your attention, you can continue on with the last step in building you app...but remember, we just pinky swore that you would use the setup and operate sections to finish this all? Don't break my heart, keep your promise.</p>
 <h2 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Permanent link">⌁</a></h2>
 <p>Have you signed the four targets? Are you all done with any customizations? Has your Apple watch been paired and updated? Is your iPhone unlocked and plugged into the computer?</p>
-<p>Let’s finish the installation of the Loop app onto your iPhone. Double-check to make sure your iPhone's name is still selected and then press the “build” button to start Xcode on its way. </p>
-<p align="center">
-<img src="../img/build_button.png" width="750">
-</p>
-
-<p>You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take about 40-60 minutes depending on the speed of the computer and the internet.  <strong>Just be patient.</strong>  The progress will get "stuck" on one step/task for a very long time, and then the others will fly by when that one slow step is done. Not every step is equal in duration. Do not give up on the build. <u><strong>Xcode will ALWAYS tell you eventually that the build either succeeded or failed via a short (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Build Failed" (failure) message where the step progress was previously counting down.</strong></u>  </p>
+<p>Let’s finish the installation of the Loop app onto your iPhone. Double-check to make sure your iPhone's name is still selected and then press the “build” button to start Xcode on its way.</p>
+<p align="center"><img alt="img/build_button.png" src="../img/build_button.png" width="750" /></p>
+<p>You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take about 40-60 minutes depending on the speed of the computer and the internet.  <strong>Just be patient.</strong>  The progress will get "stuck" on one step/task for a very long time, and then the others will fly by when that one slow step is done. Not every step is equal in duration. Do not give up on the build. <strong>Xcode will ALWAYS tell you eventually that the build either succeeded or failed via a short (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Build Failed" (failure) message where the step progress was previously counting down.</strong></p>
 <div class="admonition danger">
 <p class="admonition-title">Are you the impatient type?</p>
-<p>If you just simply can't bear the uncertainty of not seeing that things are progressing, you can take a peek "under the hood" and watch the individual build steps by clicking on the report navigator icon and then the build row at the top of the list. You can watch the slow list of scheme building while you wait.
-<p align="center">
-<img src="../img/build-scheme.png" width="650">
-</p></br></p>
+<p>If you just simply can't bear the uncertainty of not seeing that things are progressing, you can take a peek "under the hood" and watch the individual build steps by clicking on the report navigator icon and then the build row at the top of the list. You can watch the slow list of scheme building while you wait.</p>
+<p align="center"><img alt="img/build-scheme.png" src="../img/build-scheme.png" width="650" /></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">First-time builders</p>
-<p>Be aware though! Sometime during your first ever build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.</br></br></p>
-<p><p align="center">
-<img src="../img/keychain-prompt.png" width="350">
-</p></br></p>
+<p>Be aware though! Sometime during your first ever build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.</p>
+<p align="center"><img alt="img/keychain-prompt.png" src="../img/keychain-prompt.png" width="350" /></p>
 <p>This prompt above, when you see it, requires you to enter your computer password and then select "Always Allow". Normal behavior, this prompt will come up four times in a row even after you enter the correct password. In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel. <strong>Don't press deny.</strong> Keep entering your computer password and pressing the "Always Allow" button...as many times as it takes (four times to be exact; one for each target that Xcode is saving the password for). After four times of successful password entry, the build will keep proceeding.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">While I have you here...</p>
-<p>While I have you here, I'm going to give you a piece of Loop troubleshooting advice for once you start looping. This is a little out of order, but too many people miss this super simple <strong>troubleshooting step when their Loop turns red</strong>. Try turning your RileyLink off/on at its physical switch on the side of the case. Carrying a paperclip on the keychain can help you access that recessed switch. The other useful troubleshooting step is to simply close the Loop app (upswipe in iPhone app selector) and reopen it. Wait 5 minutes after each of these steps and see if your issue resolves. It usually will. Don't forget to do these two simple steps to get back to a green loop.  For more red loop troubleshooting, you can check out <a href="https://loopkit.github.io/loopdocs/troubleshooting/yellow-red-loop/">this page</a>.</p>
-<p>Also, be aware that there's a <strong>troubleshooting page for Pod pairing</strong> issues, too. If you run into any issues during Pod pairing, PLEASE make sure to read <a href="https://loopkit.github.io/loopdocs/troubleshooting/pod-pairing/">this page</a> to save yourself from wasting Pods unnecessarily.</p>
+<p>While I have you here, I'm going to give you a piece of Loop troubleshooting advice for once you start looping. This is a little out of order, but too many people miss this super simple <strong>troubleshooting step when their Loop turns red</strong>. Try turning your RileyLink off/on at its physical switch on the side of the case. Carrying a paperclip on the keychain can help you access that recessed switch. The other useful troubleshooting step is to simply close the Loop app (upswipe in iPhone app selector) and reopen it. Wait 5 minutes after each of these steps and see if your issue resolves. It usually will. Don't forget to do these two simple steps to get back to a green loop.  For more red loop troubleshooting, you can check out <a href="../../troubleshooting/yellow-red-loop/">this page</a>.</p>
+<p>Also, be aware that there's a <strong>troubleshooting page for Pod pairing</strong> issues, too. If you run into any issues during Pod pairing, PLEASE make sure to read <a href="../../troubleshooting/pod-pairing/">this page</a> to save yourself from wasting Pods unnecessarily.</p>
 <p>Ok, back to the building instructions.</p>
 </div>
 <h2 id="build-finished">Build Finished<a class="headerlink" href="#build-finished" title="Permanent link">⌁</a></h2>
 <div class="admonition info">
 <p class="admonition-title">First time building on a new device?</p>
-<p>If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings-&gt;General-&gt;Device Management (or profiles, Profiles &amp; Device Management on newer iOS) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to <a href="https://loopkit.github.io/loopdocs/build/build_errors/#device-management-could-not-launch-loop">this Build Error section</a> to find the solution.
-<p align="center">
-<img src="../img/trust_device.jpg" width="750">
-</p></p>
+<p>If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings-&gt;General-&gt;Device Management (or profiles, Profiles &amp; Device Management on newer iOS) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to <a href="../build_errors/#device-management-could-not-launch-loop">this Build Error section</a> to find the solution.</p>
+<p align="center"><img alt="img/trust_device.jpg" src="../img/trust_device.jpg" width="750" /></p>
 </div>
 <div class="admonition danger">
 <p class="admonition-title">BUILD SUCCEEDED</p>
-<p>Congrats! If the build is successful, you'll see the message or "Running Loop..." across the top of the Xcode window. Your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. <code>Allow</code> Loop to send you notifications. In the next screen that follows that, click on the <code>Turn All Categories On</code> line and then click <code>Allow</code> in the upper right corner. </p>
-<p><p align="center">
-<img src="../img/health-start.JPEG" width="450">
-</p></br></br></p>
-<p><strong>You can unplug your phone from the computer now.</strong> And like we promised earlier, you will use the <a href="https://loopkit.github.io/loopdocs/operation/loop-settings/settings/">Setup App section of this website</a> to keep proceeding safely.</p>
+<p>Congrats! If the build is successful, you'll see the message or "Running Loop..." across the top of the Xcode window. Your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. <code>Allow</code> Loop to send you notifications. In the next screen that follows that, click on the <code>Turn All Categories On</code> line and then click <code>Allow</code> in the upper right corner.</p>
+<p align="center"><img alt="img/health-start.JPEG" src="../img/health-start.JPEG" width="450" /></p>
+<p><strong>You can unplug your phone from the computer now.</strong> And like we promised earlier, you will use the <a href="../../operation/overview/">Setup App section of this website</a> to keep proceeding safely.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">FAQ: But what about those yellow alerts that remain in Xcode? Should I worry about them?</p>
-<p>If you see yellow alerts after your build is done...those are not an issue. Whether your build succeeded or failed...the yellow warnings play no role in either outcome. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.
-<p align="center">
-<img src="../img/yellow-warnings.png" width="750">
- </p></p>
+<p>If you see yellow alerts after your build is done...those are not an issue. Whether your build succeeded or failed...the yellow warnings play no role in either outcome. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.</p>
+<p align="center"><img alt="img/yellow-warnings.png" src="../img/yellow-warnings.png" width="750" /></p>
 </div>
 <div class="admonition danger">
 <p class="admonition-title">BUILD FAILED</p>
 <p>Don't despair. Build failures are pretty easily fixed. If you get a message that your build failed and see <strong>RED ERROR</strong> messages, just go to the <a href="../build_errors/">Build Errors</a> page to find the steps to fix your build error based on the message displayed.</p>
-<p><p align="center">
-<img src="../img/general-error.jpg" width="750">
-</p></p>
+<p align="center"><img alt="img/general-error.jpg" src="../img/general-error.jpg" width="750" /></p>
 </div>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">⌁</a></h2>
 <p>If your build failed, you need to proceed to the <a href="../build_errors/">Build Errors</a> page to find the solution. Please head there to find the help you need.</p>
 <p>If no build errors, you're done building your Loop app...</p>
-<p align="center">
-<img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="400">
-</p>
-
+<p><img alt="alt" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" /></p>
 <h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">⌁</a></h2>
-<p>Remember your promise though? You still owe me that you will use the <a href="https://loopkit.github.io/loopdocs/operation/overview/"><code>Setup App</code></a> section of this website now to keep proceeding safely.</p></div>
+<p>Remember your promise though? You still owe me that you will use the <a href="../../operation/overview/"><code>Setup App</code></a> section of this website now to keep proceeding safely.</p></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-            
-            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
-        <script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
-                    <div class="modal-body">
-                        <p>
-                            From here you can search these documents. Enter
-                            your search terms below.
-                        </p>
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                            </div>
-                        </form>
-                        <div id="mkdocs-search-results"></div>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
             </div>
         </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
     </body>
 </html>

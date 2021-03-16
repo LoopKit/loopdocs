@@ -8,638 +8,446 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-
-	<title>Step 3 Compatible Pump - LoopDocs</title>
-
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
+        <title>Step 3 Compatible Pump - LoopDocs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link href="../../css/admonitions.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+        <link href="../../stylesheets/admonitions.css" rel="stylesheet">
+        <link href="../../stylesheets/extra.css" rel="stylesheet">
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-
-        
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-109876065-1', 'loopkit.github.io');
-            ga('send', 'pageview');
-        </script>
-        
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">LoopDocs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/branch-faqs/" class="dropdown-item">Branch FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/ios13/" class="dropdown-item">iOS 13 FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
+</li>
+                                    
+<li>
+    <a href="../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../step1/" class="dropdown-item">Step 1 Compatible Computer</a>
+</li>
+                                    
+<li>
+    <a href="../step2/" class="dropdown-item">Step 2 Compatible iPhone/iPod touch</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Step 3 Compatible Pump</a>
+</li>
+                                    
+<li>
+    <a href="../step4/" class="dropdown-item">Step 4 Compatible CGM</a>
+</li>
+                                    
+<li>
+    <a href="../step5/" class="dropdown-item">Step 5 Order a RileyLink</a>
+</li>
+                                    
+<li>
+    <a href="../step6/" class="dropdown-item">Step 6 Enroll in Apple Developer Program</a>
+</li>
+                                    
+<li>
+    <a href="../step7/" class="dropdown-item">Step 7 Skip Step 7</a>
+</li>
+                                    
+<li>
+    <a href="../step8/" class="dropdown-item">Step 8 Download Xcode</a>
+</li>
+                                    
+<li>
+    <a href="../step9/" class="dropdown-item">Step 9 Xcode Preferences</a>
+</li>
+                                    
+<li>
+    <a href="../step10/" class="dropdown-item">Step 10 Test Settings</a>
+</li>
+                                    
+<li>
+    <a href="../step11/" class="dropdown-item">Step 11 Make plans for Loop Data</a>
+</li>
+                                    
+<li>
+    <a href="../step12/" class="dropdown-item">Step 12 Meet Community</a>
+</li>
+                                    
+<li>
+    <a href="../step13/" class="dropdown-item">Step 13 Download Loop code</a>
+</li>
+                                    
+<li>
+    <a href="../step14/" class="dropdown-item">Step 14 Build Loop app</a>
+</li>
+                                    
+<li>
+    <a href="../build_errors/" class="dropdown-item">Oh dear! Build errors?</a>
+</li>
+                                    
+<li>
+    <a href="../code_customization/" class="dropdown-item">Customize your Loop</a>
+</li>
+                                    
+<li>
+    <a href="../updating/" class="dropdown-item">Updating/Rebuilding your Loop</a>
+</li>
+                                    
+<li>
+    <a href="../loopworkspace/" class="dropdown-item">LoopWorkspace</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../operation/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../health/" class="dropdown-item">Step 1: Health Permissions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Step 2: Add Pump</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../operation/loop-settings/mdt-pump/" class="dropdown-item">Add Medtronic</a>
+</li>
+            
+<li>
+    <a href="../../operation/loop-settings/omnipod-pump/" class="dropdown-item">Add Omnipod</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/cgm/" class="dropdown-item">Step 3: Add CGM</a>
+</li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/configurations/" class="dropdown-item">Step 4: Configurations</a>
+</li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/services/" class="dropdown-item">Step 5: Loop Services</a>
+</li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/displays/" class="dropdown-item">Loop Displays</a>
+</li>
+                                    
+<li>
+    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink menu</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">How to Use Loop App</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../operation/features/carbs/" class="dropdown-item">Carb Entries</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/bolus/" class="dropdown-item">Bolus</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/workout/" class="dropdown-item">Overrides</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/premeal/" class="dropdown-item">Pre-meal target</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/healthapp/" class="dropdown-item">Health app</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/ice/" class="dropdown-item">Using ICE info</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/watch/" class="dropdown-item">Apple Watch</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/widget/" class="dropdown-item">iPhone widget</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/notifications/" class="dropdown-item">Loop Notifications</a>
+</li>
+            
+<li>
+    <a href="../../operation/features/battery/" class="dropdown-item">Pump Battery</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Looping Tips</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../operation/loop/open-loop/" class="dropdown-item">Open Loop</a>
+</li>
+            
+<li>
+    <a href="../../operation/loop/close-loop/" class="dropdown-item">Closed Loop</a>
+</li>
+            
+<li>
+    <a href="../../operation/loop/looptips/" class="dropdown-item">Loop Tips</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Algorithm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../operation/algorithm/overview/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../../operation/algorithm/bolus/" class="dropdown-item">Bolus Recommendations</a>
+</li>
+            
+<li>
+    <a href="../../operation/algorithm/prediction/" class="dropdown-item">Glucose Prediction</a>
+</li>
+            
+<li>
+    <a href="../../operation/algorithm/temp-basal/" class="dropdown-item">Temp Basal Adjustments</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Troubleshoot</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../troubleshooting/overview/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/loop-crashing/" class="dropdown-item">Loop App crashes</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/yellow-red-loop/" class="dropdown-item">Red Loop</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/pod-pairing/" class="dropdown-item">Pod Pairing Failures</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/uncertain-bolus/" class="dropdown-item">Pod Uncertain Boluses</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/priming/" class="dropdown-item">MDT Priming and Sites</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/time-change/" class="dropdown-item">Time Changes</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/pump-errors/" class="dropdown-item">MDT Pump Errors</a>
+</li>
+            
+<li>
+    <a href="../../troubleshooting/omnipod-faults/" class="dropdown-item">Omnipod Faults</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../nightscout/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/new_user/" class="dropdown-item">Brand New NS</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/update_user/" class="dropdown-item">Retrofit Existing NS</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/troublehoot/" class="dropdown-item">Setup Troubleshooting</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/remote-overrides/" class="dropdown-item">Remote Overrides</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/ifttt/" class="dropdown-item">IFTTT</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/pebble/" class="dropdown-item">Pebble</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/pushover/" class="dropdown-item">Remote Notifications</a>
+</li>
+                                    
+<li>
+    <a href="../../nightscout/reports/" class="dropdown-item">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <!-- Main title -->
-            <a class="navbar-brand" href="../..">LoopDocs</a>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../step2/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../step4/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            <!-- Main navigation -->
-            <ul class="nav navbar-nav">
-            
-            
-                <li >
-                    <a href="../..">Home</a>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="../../faqs/docs-faqs/">Using This Site FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/FAQs/">General Loop FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/omnipod-faqs/">Omnipod FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/branch-faqs/">Branch FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/update-faqs/">Update/Rebuild Loop FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/ios13/">iOS 13 FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/rileylink-faqs/">RileyLink FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/algorithm-faqs/">Algorithm FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/cgm-faqs/">CGM FAQs</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../faqs/safety-faqs/">Safety Tips</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="../overview/">Overview</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step1/">Step 1 Compatible Computer</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step2/">Step 2 Compatible iPhone/iPod touch</a>
-</li>
-
-                    
-                        
-<li class="active">
-    <a href="./">Step 3 Compatible Pump</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step4/">Step 4 Compatible CGM</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step5/">Step 5 Order a RileyLink</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step6/">Step 6 Enroll in Apple Developer Program</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step7/">Step 7 Install Homebrew</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step8/">Step 8 Download Xcode</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step9/">Step 9 Xcode Preferences</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step10/">Step 10 Test Settings</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step11/">Step 11 Make plans for Loop Data</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step12/">Step 12 Meet Community</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step13/">Step 13 Download Loop code</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../step14/">Step 14 Build Loop app</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../build_errors/">Oh dear! Build errors?</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../code_customization/">Customize your Loop</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../updating/">Updating/Rebuilding your Loop</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../loopworkspace/">LoopWorkspace</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="../../operation/overview/">Overview</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../health/">Step 1: Health Permissions</a>
-</li>
-
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Step 2: Add Pump</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../operation/loop-settings/mdt-pump/">Add Medtronic</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/loop-settings/omnipod-pump/">Add Omnipod</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/cgm/">Step 3: Add CGM</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/configurations/">Step 4: Configurations</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/services/">Step 5: Loop Services</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/displays/">Loop Displays</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../operation/loop-settings/rileylink/">RileyLink menu</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">How to Use Loop App</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../operation/features/carbs/">Carb Entries</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/bolus/">Bolus</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/workout/">Overrides</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/premeal/">Pre-meal target</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/healthapp/">Health app</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/ice/">Using ICE info</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/watch/">Apple Watch</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/widget/">iPhone widget</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/notifications/">Loop Notifications</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/features/battery/">Pump Battery</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Looping Tips</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../operation/loop/open-loop/">Open Loop</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/loop/close-loop/">Closed Loop</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/loop/looptips/">Loop Tips</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Algorithm</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../operation/algorithm/overview/">Overview</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/algorithm/bolus/">Bolus Recommendations</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/algorithm/prediction/">Glucose Prediction</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                        
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Troubleshoot</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../troubleshooting/overview/">Overview</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/loop-crashing/">Loop App crashes</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/yellow-red-loop/">Red Loop</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/pod-pairing/">Pod Pairing Failures</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/uncertain-bolus/">Pod Uncertain Boluses</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/priming/">MDT Priming and Sites</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/time-change/">Time Changes</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/pump-errors/">MDT Pump Errors</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../troubleshooting/omnipod-faults/">Omnipod Faults</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="../../nightscout/overview/">Overview</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/new_user/">Brand New NS</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/update_user/">Retrofit Existing NS</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/troublehoot/">Setup Troubleshooting</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/remote-overrides/">Remote Overrides</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/ifttt/">IFTTT</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/pebble/">Pebble</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/pushover/">Remote Notifications</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../nightscout/reports/">Reports</a>
-</li>
-
-                    
-                    </ul>
-                </li>
-            
-            
-            </ul>
-
-            <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                <li >
-                    <a rel="next" href="../step2/">
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </li>
-                <li >
-                    <a rel="prev" href="../step4/">
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </li>
-                
-            </ul>
-        </div>
-    </div>
-</div>
 
         <div class="container">
-            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
     
-        <li class="main active"><a href="#step-3-compatible-pump">Step 3: Compatible Pump</a></li>
-        
-            <li><a href="#check-pump-version">Check pump version</a></li>
-        
-            <li><a href="#extra-details-on-medtronic">Extra Details on Medtronic</a></li>
-        
-            <li><a href="#extra-details-on-omnipods">Extra Details on Omnipods</a></li>
-        
-            <li><a href="#next-step-compatible-cgm">Next Step: Compatible CGM</a></li>
-        
-    
-    </ul>
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#step-3-compatible-pump" class="nav-link">Step 3: Compatible Pump</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#check-pump-version" class="nav-link">Check pump version</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#extra-details-on-medtronic" class="nav-link">Extra Details on Medtronic</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#extra-details-on-omnipods" class="nav-link">Extra Details on Omnipods</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#next-step-compatible-cgm" class="nav-link">Next Step: Compatible CGM</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-            <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="step-3-compatible-pump">Step 3: Compatible Pump<a class="headerlink" href="#step-3-compatible-pump" title="Permanent link">⌁</a></h1>
-<div class="admonition danger">
+<div class="admonition green">
 <p class="admonition-title">Time Estimate</p>
 <ul>
 <li>Omnipod users: 3 seconds to remember which PDM you've been using.</li>
@@ -652,10 +460,10 @@
 <ul>
 <li>If you have a big clunky PDM with built-in BG meter...you can use your pods for Loop.</li>
 <li>If you have a slim touch screen android-looking PDM...you can NOT use your pods for Loop.</li>
-<li>If you have a Medtronic, check the list to ensure compatible model/firmware.    </li>
+<li>If you have a Medtronic, check the list to ensure compatible model/firmware.</li>
 </ul>
 </div>
-<div class="admonition warning">
+<div class="admonition faqs">
 <p class="admonition-title">FAQs</p>
 <ul>
 <li><strong>"How can I find a compatible Medtronic pump?"</strong> That question is answered in the Extra Details section below.</li>
@@ -682,30 +490,34 @@
 <p>To determine your pump model, look at the backside of your pump.  There should be a sticker on the underside of the pump.  On the right-hand side of the sticker, it says REF MMT-XXXXXX</p>
 <p><img alt="Pump" src="../img/pump_model.jpg" /></p>
 <div class="admonition note">
-<p>MMT ---&gt; Pump Manufacturer Model (MiniMed Medtronic)</br>
-722 ---&gt; Pump Model Number</br>
-NA ---&gt; Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)</br>
-S ---&gt; Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)</br></p>
+<ul>
+<li>MMT ---&gt; Pump Manufacturer Model (MiniMed Medtronic)</li>
+<li>722 ---&gt; Pump Model Number</li>
+<li>NA ---&gt; Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)</li>
+<li>S ---&gt; Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)</li>
+</ul>
 </div>
 <p>Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a model number like MMT-722LNAS.  This does not affect Loop compatibility.</p>
 <h3 id="medtronic-pump-firmware">Medtronic Pump Firmware<a class="headerlink" href="#medtronic-pump-firmware" title="Permanent link">⌁</a></h3>
 <p>A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows Loop to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure you are getting one with compatible firmware.</p>
 <div class="admonition note">
-<p>The firmware on all 515/715 and 522/722 model Medtronic pumps are all compatible with Loop. You will only need to check the firmware version for 523/723 and 554/754 model Medtronic pumps.</br></br>
-+ Medtronic 515 or 715 --&gt; any firmware</br>
-+ Medtronic 522 or 722  --&gt; any firmware</br>
-+ Medtronic 523 or 723 --&gt; firmware 2.4 or lower</br>
-+ Medtronic Worldwide Veo 554 or 754 --&gt; firmware 2.6A or lower</br>
-+ Medtronic Canadian/Australian Veo 554 or 754 --&gt; firmware 2.7A or lower</br></p>
+<p>The firmware on all 515/715 and 522/722 model Medtronic pumps are all compatible with Loop. You will only need to check the firmware version for 523/723 and 554/754 model Medtronic pumps.</p>
+<ul>
+<li>Medtronic 515 or 715 --&gt; any firmware</li>
+<li>Medtronic 522 or 722  --&gt; any firmware</li>
+<li>Medtronic 523 or 723 --&gt; firmware 2.4 or lower</li>
+<li>Medtronic Worldwide Veo 554 or 754 --&gt; firmware 2.6A or lower</li>
+<li>Medtronic Canadian/Australian Veo 554 or 754 --&gt; firmware 2.7A or lower</li>
+</ul>
 </div>
 <p>To find your pump’s firmware you will need to power it on. If the pump has not been powered on for some time (i.e., has been in storage without a battery for a while), it will run through a start-up count and the firmware version will appear on the bottom right of the pump’s screen.  Don’t turn away, as the version number will only be displayed for a little while before the screen moves onto other information displays.  </p>
 <p>If the pump has been active recently or has a reservoir installed, follow these steps:</p>
 <ol>
 <li>
-<p>Press the <img src="../img/esc.png" width="40" alt="ESC"> button on your pump.  </p>
+<p>Press the <img alt="img/esc.png" src="../img/esc.png" width="40" /> button on your pump.  </p>
 </li>
 <li>
-<p>Scroll down with the <img src="../img/light_button.png" width="40" alt="Down Arrow"> button to the bottom of the status display.  </p>
+<p>Scroll down with the <img alt="img/light_button.png" src="../img/light_button.png" width="40" /> button to the bottom of the status display.  </p>
 </li>
 <li>
 <p>Read the bottom line of the display.</p>
@@ -714,8 +526,8 @@ S ---&gt; Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)</br></p>
 <p><img alt="Firmware" src="../img/pump_firmware.png" /></p>
 <h3 id="medtronic-pump-differences">Medtronic Pump Differences<a class="headerlink" href="#medtronic-pump-differences" title="Permanent link">⌁</a></h3>
 <p>If you are in the position of being able to shop around for different pump models, there are some slight differences between the Loop-compatible Medtronic pumps.</p>
-<p><font color ="orange">500 vs 700</font>:  The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180 unit reservoir, and the 700 series pumps use a 300 unit reservoir (or smaller 180 unit reservoir, if you want).</p>
-<p><font color ="orange">x15/x22 vs x23/x54</font>:  The difference between the x15 and x22 pumps versus the x23 and x54 series pumps has only a few notable mentions:</p>
+<p><strong>500 vs 700</strong>:  The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180 unit reservoir, and the 700 series pumps use a 300 unit reservoir (or smaller 180 unit reservoir, if you want).</p>
+<p><strong>x15/x22 vs x23/x54</strong>:  The difference between the x15 and x22 pumps versus the x23 and x54 series pumps has only a few notable mentions:</p>
 <ul>
 <li>The x23/x54 pumps will allow for smaller insulin deliveries in certain situations, if the smaller scroll rate is selected in the Bolus&gt;Setup&gt;Scroll Rate menu.  <strong>Loop will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Loop’s use of temp basals.  If you want the smaller increments of basal rates, you can still enter those values in Loop app's settings and Loop will use those values for the purposes of insulin delivery calculations.</strong></li>
 </ul>
@@ -730,20 +542,19 @@ S ---&gt; Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)</br></p>
 </thead>
 <tbody>
 <tr>
-<th>515/715</br>and</br>522/722</th>
+<td>515/715</br>and</br>522/722</td>
 <td>0.05</br>0.1</td>
 <td>0.1</br>0.1</td>
 <td>deliveries of less than 10 units</br>greater than 10 units</td>
 </tr>
 <tr>
-<th>523/723</br>and</br>554/754</th>
+<td>523/723</br>and</br>554/754</td>
 <td>0.025</br>0.05</br>0.1</td>
 <td>0.025 </br>0.05 </br>0.1</td>
 <td>between 0.025 to 0.975 units</br>between 1 to 9.95 units</br>greater than 10 units</td>
 </tr>
 </tbody>
 </table>
-
 <ul>
 <li>
 <p>Additionally, because of the way Loop fetches information from the pump, the x23/x54 series of pumps are slightly better at conserving battery life through the use of the MySentry packets to collect information from the pump.  x22 pumps do not use MySentry.</p>
@@ -789,10 +600,10 @@ S ---&gt; Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)</br></p>
 <p>Ask for photos of the pump. Check to make sure the serial number of the pump on the backside matches the serial number of the pump showing in the display menu. Ask for a short video of the pump, or at least a photo of the pump turned on, so that you can see the pump's firmware and model number. Cracks and some wear on these pumps are expected. These pumps are not usually free of marks. Many people are successfully looping on pumps that have cracks and rub marks, but you may want to ask if you are concerned about any you see in photos.</p>
 </li>
 <li>
-<p>Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown <a href="https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#motor-error">here</a>. Those pumps will generally not work (or only work intermittently), however some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.</p>
+<p>Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown <a href="../../troubleshooting/pump-errors/#motor_error">here</a>. Those pumps will generally not work (or only work intermittently), however some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.</p>
 </li>
 <li>
-<p>Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those <a href="https://loopkit.github.io/loopdocs/troubleshooting/pump-errors/#crackmissing-piece-repairs">here</a>.</p>
+<p>Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those <a href="../../troubleshooting/pump-errors/#crackmissing-piece-repairs">here</a>.</p>
 </li>
 <li>
 <p>Ask for shipping that includes a tracking number. USPS Priority Mail's smallest box is a great option.  It's only $7.20 domestically in the US and includes tracking. Ask the seller to add a small bit of packing protection such as bubble wrap around the pump to keep it safe during shipping. Make sure you get a tracking number within a reasonable period of time after you have paid.  </p>
@@ -815,64 +626,94 @@ S ---&gt; Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)</br></p>
 <h2 id="extra-details-on-omnipods">Extra Details on Omnipods<a class="headerlink" href="#extra-details-on-omnipods" title="Permanent link">⌁</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Reminder and Disclaimer</p>
-<p>Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read these documents and familiarize yourself with Loop before using. </p>
+<p>Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read these documents and familiarize yourself with Loop before using.</p>
 </div>
-<h3 id="eros">Eros<a class="headerlink" href="#eros" title="Permanent link">⌁</a></h3>
-<p><strong>Loop will work with these pods</strong></p>
+<h3 id="eros-loop-will-work-with-these-pods">Eros - Loop will work with these pods<a class="headerlink" href="#eros-loop-will-work-with-these-pods" title="Permanent link">⌁</a></h3>
 <p>Eros pods were launched in 2013 and continue to be sold by Insulet. As far as we know, there have been no plans or timelines announced for the discontinuation of Eros pods for existing customers. Insulet doesn't specifically call these "Eros" anymore, they just use the term "omnipod system". For clarity, from <a href="https://www.myomnipod.com/about">Insulet's webpage</a>:</p>
 <p>Eros system has that PDM we all recognize from the last several years.</p>
-<p align="center">
-<img src="../img/eros.png" width="750">
-</p>
-
-<p></br></p>
-<h3 id="dash">DASH<a class="headerlink" href="#dash" title="Permanent link">⌁</a></h3>
-<p><strong>Loop will not work with DASH pods</strong></p>
+<p align="center"><img alt="img/eros.png" src="../img/eros.png" width="750" /></p>
+<h3 id="dash-loop-will-not-work-with-dash-pods">DASH - Loop will not work with DASH pods<a class="headerlink" href="#dash-loop-will-not-work-with-dash-pods" title="Permanent link">⌁</a></h3>
 <p>Insulet has announced their DASH system as an eventual replacement for Eros/Omnipod System. There has already been a limited release of DASH to a select group of users, with a wider public rollout of DASH expected in 2019. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop will not be compatible with the DASH system.</p>
-<p align="center">
-<img src="../img/dash.png" width="750">
-</p>
-
+<p align="center"><img alt="img/dash.png" src="../img/dash.png" width="750" /></p>
 <h2 id="next-step-compatible-cgm">Next Step: Compatible CGM<a class="headerlink" href="#next-step-compatible-cgm" title="Permanent link">⌁</a></h2>
-<p>Now you are ready to move onto Step 4 to check if you have a <a href="https://loopkit.github.io/loopdocs/build/step4/">Compatible CGM</a>.</p></div>
+<p>Now you are ready to move onto Step 4 to check if you have a <a href="../step4/">Compatible CGM</a>.</p></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-            
-            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
-        <script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
-                    <div class="modal-body">
-                        <p>
-                            From here you can search these documents. Enter
-                            your search terms below.
-                        </p>
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                            </div>
-                        </form>
-                        <div id="mkdocs-search-results"></div>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
             </div>
         </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
     </body>
 </html>
