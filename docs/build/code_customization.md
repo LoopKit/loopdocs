@@ -2,7 +2,7 @@
 
 Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.
 
-!!!info "Line numbers may change"
+!!! info "Line numbers may change"
     Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code. These instructions have been updated for Loop v2.2.4 master branch. If you don't see an exact match on the line number listed, then use the Xcode / Find / Find in Project (or Workspace) menu to search for a Keyword or Phrase shown in the associated line. If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help.
 
 ## Disable Authentication for Bolusing

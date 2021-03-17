@@ -1,10 +1,10 @@
 # Step 14: Build Loop app
 
-!!!danger "Time Estimate"
+!!! danger "Time Estimate"
     - 60-80 minutes if first time builder
     - 10-15 minutes if a repeat builder
 
-!!!info "Summary"
+!!! info "Summary"
     - Open the Loop code you downloaded in [Step 13](step13.md)
     - Connect the phone to the computer
     - Set the phone to not lock for awhile
@@ -16,7 +16,7 @@
     - Enter computer password four times during the build (if this is your first ever build)
     - Watch in awe as you just built your very own Loop app
 
-!!!warning "FAQs"
+!!! warning "FAQs"
     - **"I got a build error! YIKES...what do I do?"** Check out the [Build Errors](build_errors.md) page for all the solutions you'd need.
     - **"The build seems to take a long time, is that normal?"** Yes, the first build of a new download will take quite a long time. Just be patient...one of the build steps to take *much* longer than all the others. The build process does always end in a success or failure message, so just wait it out until you see one of those displayed.
 
@@ -53,12 +53,12 @@ Once Xcode has finished indexing, the Loop project's various folders and files w
 
 Connect your iPhone via cable to the computer, select your iPhone from the very top of the drop-down list.  Your **iPhone’s personal name** should be at the top of the list. Don't accidentally select the generic iOS simulators listed below your iPhone's name.  
 
-!!!info "Helpful Tips"
+!!! info "Helpful Tips"
 
     - If your iPhone has a lock enabled, Xcode will not be able to install Loop app once your phone locks during the build progress.  Please temporarily disable the lock until you finish building Loop app.  Go to your iPhone Settings >> Display & Brightness >> Auto-Lock and set it to `Never`.  You can reset your lock once Loop is done building onto the phone. If you can't or don't want to set the auto-lock to never, then please remember to tap your phone screen periodically during the build process later to keep it "awake".
     - If this is the first time your iPhone has been plugged into this computer, you will need to open the iPhone and select "Trust this Computer" before your device will be useable in the menu selection.
 
-!!!danger "Most Common Mistake"
+!!! danger "Most Common Mistake"
 
     - The most common mistake in this step is not selecting your actual phone as shown in the second screenshot below. The default list is just a name of general phone models under a subheading called "iOS Simulators"...don't be fooled by those. Your ACTUAL phone will be up above that list of all the various simulator phone models.  You may need to scroll to the top of the list in order to see it.  Make sure you select your actual phone, not just a simulator phone model.
 
@@ -82,7 +82,7 @@ Once you choose your signing team, Xcode will automatically generate provisionin
 
 ## Free Account
 
-!!!danger "Free Developer Account Users: READ ME"
+!!! danger "Free Developer Account Users: READ ME"
 
     If you are using a free developer account to sign your targets, you will need to do an extra step. As a free developer, you are restricted from building apps that have Siri or push notification capabilities built-in. Loop has both of these capabilities...so you will need to disable them before proceeding on with signing and building your app. The push notification capability is used for setting remote overrides; disabling it will not affect regular notifications (like ones for Loop not looping). Click on the small x next to the Siri and push notification lines located at the bottom of your Signing & Capabilities page. You need to do this in both the Loop and WatchApp Extension targets.
 
@@ -117,7 +117,7 @@ You guys...this is about safety.
 People keep ignoring this advice and I'm frankly a little stumped as to why. So, I'm moving this advice up in the process so that you don't ignore it.
 ![alt](https://media.giphy.com/media/xT9DPJVjlYHwWsZRxm/source.gif)
 
-!!!warning "DO NOT WING THE SETUP"
+!!! warning "DO NOT WING THE SETUP"
 
     I have warnings all over these instructions to **continue to use these docs to finish setting up your app after it builds. DO NOT IGNORE THAT ADVICE. DO NOT ENTER ONE LOOP APP SETTING WITHOUT HAVING THE DOCS OPEN AND FOLLOWING ALONG AT THE SAME TIME.**
 
@@ -127,7 +127,7 @@ I'm worried you will fail to heed the advice about using the setup and operate s
 
 BUT, to mitigate the inevitable people who will ignore that advice....here's the two most important safety tips that I feel obliged to present out of order because (damn it), people will ignore my advice still.
 
-!!!warning "TOP TWO SAFETY MISTAKES YOU SHOULD AVOID"
+!!! warning "TOP TWO SAFETY MISTAKES YOU SHOULD AVOID"
     1. DO NOT ENTER SETTINGS YOU ARE UNSURE OF. If you don't know your settings or know what the terms mean, stop. Read the docs, all the settings entries are explained there. Ask your endo if you don't have established values for those settings. Don't just guess an ISF, carb ratio, basal rate, or maximum delivery limits.
 
     2. DO NOT ENTER ACCIDENTAL DUPLICATE CARB ENTRIES. When you enter a meal in Loop and press the `save` button...those carbs are saved. Let me repeat: THOSE CARBS ARE SAVED...even if you cancel the bolus for them. This is an automated insulin delivery system and if it thinks you have carbs on board, it will try to give you appropriate insulin for those carbs. Most common new user mistake: enters a meal, saves the carbs, has a change of heart or gets confused, and cancels the bolus screen...thinking they've just canceled the entire meal entry. Then they enter in a new carb entry. AND NOW, when you go to bolus...you'll be bolusing for the meal you wanted AND the meal you are mistakenly thinking you had "canceled". You didn't cancel that carb entry though, you had only canceled the bolus...you didn't "unsave" the carbs. If you make a mistake or change your mind on a carb entry after you pressed save, then tap the green carb chart in Loop's main display and edit or delete that entry. **CANCELING A BOLUS DOES NOT CANCEL THE CARB ENTRY THAT GOT YOU THERE. You must delete or edit a saved carb entry if you no longer want Loop to provide insulin for it.**
@@ -145,14 +145,14 @@ Let’s finish the installation of the Loop app onto your iPhone. Double-check t
 
 You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take about 40-60 minutes depending on the speed of the computer and the internet.  **Just be patient.**  The progress will get "stuck" on one step/task for a very long time, and then the others will fly by when that one slow step is done. Not every step is equal in duration. Do not give up on the build. **Xcode will ALWAYS tell you eventually that the build either succeeded or failed via a short (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Build Failed" (failure) message where the step progress was previously counting down.**
 
-!!!danger "Are you the impatient type?"
+!!! danger "Are you the impatient type?"
 
     If you just simply can't bear the uncertainty of not seeing that things are progressing, you can take a peek "under the hood" and watch the individual build steps by clicking on the report navigator icon and then the build row at the top of the list. You can watch the slow list of scheme building while you wait.
 
     ![img/build-scheme.png](img/build-scheme.png){width="650"}
     {align="center"}
 
-!!!info "First-time builders"
+!!! info "First-time builders"
 
     Be aware though! Sometime during your first ever build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.
 
@@ -163,7 +163,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
     This prompt above, when you see it, requires you to enter your computer password and then select "Always Allow". Normal behavior, this prompt will come up four times in a row even after you enter the correct password. In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel. **Don't press deny.** Keep entering your computer password and pressing the "Always Allow" button...as many times as it takes (four times to be exact; one for each target that Xcode is saving the password for). After four times of successful password entry, the build will keep proceeding.
 
-!!!warning "While I have you here..."
+!!! warning "While I have you here..."
 
     While I have you here, I'm going to give you a piece of Loop troubleshooting advice for once you start looping. This is a little out of order, but too many people miss this super simple **troubleshooting step when their Loop turns red**. Try turning your RileyLink off/on at its physical switch on the side of the case. Carrying a paperclip on the keychain can help you access that recessed switch. The other useful troubleshooting step is to simply close the Loop app (upswipe in iPhone app selector) and reopen it. Wait 5 minutes after each of these steps and see if your issue resolves. It usually will. Don't forget to do these two simple steps to get back to a green loop.  For more red loop troubleshooting, you can check out [this page](../troubleshooting/yellow-red-loop.md).
 
@@ -173,14 +173,14 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 ## Build Finished
 
-!!!info "First time building on a new device?"
+!!! info "First time building on a new device?"
 
     If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings->General->Device Management (or profiles, Profiles & Device Management on newer iOS) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to [this Build Error section](build_errors.md#device-management-could-not-launch-loop) to find the solution.
 
     ![img/trust_device.jpg](img/trust_device.jpg){width="750"}
     {align="center"}
 
-!!!danger "BUILD SUCCEEDED"
+!!! danger "BUILD SUCCEEDED"
 
     Congrats! If the build is successful, you'll see the message or "Running Loop..." across the top of the Xcode window. Your brand new Loop app will have a screen open immediately on the iPhone asking about allowing Loop notifications and Health App access. `Allow` Loop to send you notifications. In the next screen that follows that, click on the `Turn All Categories On` line and then click `Allow` in the upper right corner.
 
@@ -190,14 +190,14 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
     **You can unplug your phone from the computer now.** And like we promised earlier, you will use the [Setup App section of this website](../operation/overview.md) to keep proceeding safely.
 
-!!!warning "FAQ: But what about those yellow alerts that remain in Xcode? Should I worry about them?"
+!!! warning "FAQ: But what about those yellow alerts that remain in Xcode? Should I worry about them?"
 
     If you see yellow alerts after your build is done...those are not an issue. Whether your build succeeded or failed...the yellow warnings play no role in either outcome. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.
 
     ![img/yellow-warnings.png](img/yellow-warnings.png){width="750"}
     {align="center"}
 
-!!!danger "BUILD FAILED"
+!!! danger "BUILD FAILED"
 
     Don't despair. Build failures are pretty easily fixed. If you get a message that your build failed and see **RED ERROR** messages, just go to the [Build Errors](build_errors.md) page to find the steps to fix your build error based on the message displayed.
 

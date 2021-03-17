@@ -12,7 +12,7 @@ But yes, git commands take awhile to properly use. And they are not plain englis
 
 So why am I about to tell you about a Loop repo that involves git? The answer is because LoopWorkspace is a pretty nice feature that you may run across if you are testing new features. And if you do, I do not want to be answering these How To questions in Zulipchat and Facebook repeatedly...so let's consolidate the info here.
 
-!!!info "You can still download zips"
+!!! info "You can still download zips"
 
     You do not have to use LoopWorkspace. Just to be clear, everything still works like it used to. LoopWorkspace is just a different option to save the amount of git and cartfile work that you would have to do otherwise. Depending on what you'd like to do, it may be a good option. Usually that "good option" is if you are trying new code that involves edits to the Loop frameworks.
 
@@ -61,7 +61,7 @@ As you can see, I have a lot of cloned things in my home directory from GitHub t
 
 ## Non-LoopKit clones
 
-!!!info "Average Loopers can skip this whole section...it's for Developers mostly"
+!!! info "Average Loopers can skip this whole section...it's for Developers mostly"
 
     This whole section about non-LoopKit workspace clones is something almost every Looper can totally skip over. I'm only writing up this section for people who are interested in dabbling in code collaborations/customizations that they would want to maintain separate from LoopKit proper.
 
@@ -90,7 +90,7 @@ So to summarize, you need to clone LoopWorkspace by:
 ![img/workspace-file.png](img/workspace-file.png){width="550"}
 {align="center"}
 
-!!!warning "Two things to notice"
+!!! warning "Two things to notice"
 
     Once you are in LoopWorkspace opened in Xcode, everything is pretty similar for building with only two notable exceptions. You need to click on that blue Loop folder to see the signing targets, and you need to change the build scheme to the left of your phone to "Loop (Workspace)" in order to build properly.
 

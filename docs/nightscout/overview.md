@@ -35,7 +35,7 @@ The purple line to the right of the BG is Loop's predicted BG.  Watching the beh
 
 The Loop pill is the little display box which when hovered over, or clicked, will provide additional information about recent Loop activities and status.  Information included is the last time Loop ran, the temp basal set, IOB, and COB.  Looking at the Loop pill is a quick method for assessing if you loop is currently active, as well.
 
-!!!info "Loop Pill status indicator symbols"
+!!! info "Loop Pill status indicator symbols"
 
     <font style='font-size: 1.2em;'>X</font> &nbsp;
     Error in Loop
