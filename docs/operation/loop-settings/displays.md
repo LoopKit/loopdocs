@@ -35,7 +35,7 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 |![img/red_loop.jpg](img/red_loop.jpg){width="250"}|A red circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the [Yellow and Red Loop troubleshooting page](../../troubleshooting/yellow-red-loop.md) for tips on how to get your green Loop back.  Clicking on the red circle will also pop-up the last error message to help guide your troubleshooting.|
 |![img/open_loop.jpg](img/open_loop.jpg){width="250"}|When the circle is notched and not complete, that means the Loop is operating in “open-loop” mode.  When the “closed-loop” setting is turned on, the loop status will show a completed circle.|
 
-!!! info "Fun Fact"
+!!!  info "Fun Fact"
     The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).
 
 
@@ -92,7 +92,7 @@ The horizontal axis is set to go forward from the current time until your DIA (i
 
 The BG correction range is shown as a blue bar on the glucose chart.  Single-value target BG range (such as 100-100 mg/dl), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction target in lighter blue.
 
-!!! warning ""
+!!!  warning ""
     If you have a crazy negative prediction - it is likely that you set an [override](../features/workout.md) with a tiny sensitivity. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny sensitivity to force less insulin, simply increase the correction range in your override - Loop will reduce your basal rate at the next cycle (within 5 minutes).
 
 
