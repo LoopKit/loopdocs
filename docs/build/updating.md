@@ -30,7 +30,7 @@ The apps built and signed by you in Xcode with a paid developer account will onl
 
 Under ordinary circumstances, you do not *have to* update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability. Also, if you have updated your phone iOS since the last build, you should download a new copy of the code.
 
-## Step 1: Verify/Update macOS and Xcode
+## Step 1: Install macOS and Xcode updates
 
 !!! warning "Verify macOS"
 
@@ -58,7 +58,7 @@ If you think you are immune from needing to update and want to skip Step 1 on th
 
 Apple updates its License Agreement for the Developer Program frequently. You need to login to your [developer account](https://developer.apple.com/account/) to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.
 
-![img/license.png](img/license.png)
+![Screenshot: Account - Apple Developer](img/license.png)
 
 ## Step 3: Download Updated Loop Code
 
@@ -98,7 +98,7 @@ Older versions of Xcode used to automatically create a new "provisioning profile
 
 You can always check the expiration date immediately after a successful build of your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death, which you can record in your calendar.
 
-![img/provisioning-profile-date.png](img/provisioning-profile-date.png){width="850"}
+![Screenshot: Xcode showing Provisioning Profile](img/provisioning-profile-date.png){width="850"}
 {align="center"}
 
 Here's what started happening about September 2019 with Xcode 11, the provisioning profiles were being reused so the date was not updated each time you built. This change resulted in many people's apps expiring unexpectedly (and therefore dying suddenly) starting in September 2020 despite having updated/rebuilt recently and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).
@@ -115,7 +115,7 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
     `rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision`
     </br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.
 
-    ![img/empty-profiles.png](img/empty-profiles.png){width="650"}
+    ![Screenshot: terminal after provisioning profile deletion](img/empty-profiles.png){width="650"}
     {align="center"}
 
 ### Revoke Certificate Issue
@@ -123,7 +123,7 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
 What does it look like if you run into the force new certificate problem? When you prepare to Sign the Targets with Xcode, you'll see the message highlighted in the figure below.  
 
 <br/>
-![img/rejected-cert.svg](img/rejected-cert.svg){width="850"}
+![Screenshot: Xcode showing Revoke Certificate message](img/rejected-cert.svg){width="850"}
 {align="center"}
 
 More information is shown in the orange box below.
@@ -149,7 +149,7 @@ This may not be necessary, but it is one of the first steps to try if you do get
     2. Copy and paste this command and press return: `rm -rf ~/Library/Developer/Xcode/DerivedData` Note: you won't see any message back if the command runs successfully.
     </br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.
 
-    ![img/cleaned-terminal.png](img/cleaned-terminal.png){width="650"}
+    ![Screenshot: terminal after clean cache and derived data](img/cleaned-terminal.png){width="650"}
     {align="center"}
 
 ## Step 5: Build like normal
