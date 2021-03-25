@@ -489,8 +489,10 @@
 </tr>
 </tbody>
 </table>
-<p>!!!  info "Fun Fact"
-    The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).</p>
+<div class="admonition info">
+<p class="admonition-title">Fun Fact</p>
+<p>The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).</p>
+</div>
 <h4 id="glucose">Glucose<a class="headerlink" href="#glucose" title="Permanent link">⌁</a></h4>
 <table>
 <thead>
@@ -596,8 +598,9 @@
 <p>The glucose chart displays BG values in your preferred units. (If not, quit and restart Loop app on your phone.) The vertical scale of the chart is calculated on the fly by Loop to be as useful as possible while including the highest and lowest readings in the chart.</p>
 <p>The horizontal axis is set to go forward from the current time until your DIA (insulin duration) forward (so you can see what Loop thinks BG will be eventually). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.</p>
 <p>The BG correction range is shown as a blue bar on the glucose chart.  Single-value target BG range (such as 100-100 mg/dl), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction target in lighter blue.</p>
-<p>!!!  warning ""
-    If you have a crazy negative prediction - it is likely that you set an <a href="../../features/workout/">override</a> with a tiny sensitivity. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny sensitivity to force less insulin, simply increase the correction range in your override - Loop will reduce your basal rate at the next cycle (within 5 minutes).</p>
+<div class="admonition warning">
+<p>If you have a crazy negative prediction - it is likely that you set an <a href="../../features/workout/">override</a> with a tiny sensitivity. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny sensitivity to force less insulin, simply increase the correction range in your override - Loop will reduce your basal rate at the next cycle (within 5 minutes).</p>
+</div>
 <p>The eventual BG displayed on the right side of the chart does NOT take into account a recently enacted temp basal.  In other words, if you are above BG target and Loop just enacted a high temp basal to help, the eventual BG does not reflect the expected lowering of BGs that would result from that recently enacted temp basal.  Loop waits until the insulin has actually been delivered before it "uses" the insulin in its calculations for BG impacts.  If you suspended your pump or had a "no delivery" alarm shortly after the temp basal was started, you would want that accurately reflected in the insulin on board and associated eventual BG.</p>
 <p>If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart described below.</p>
 <h3 id="predicted-glucose-chart">Predicted Glucose Chart<a class="headerlink" href="#predicted-glucose-chart" title="Permanent link">⌁</a></h3>

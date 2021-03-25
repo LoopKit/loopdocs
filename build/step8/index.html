@@ -423,6 +423,10 @@
             
             <li class="nav-item" data-level="1"><a href="#step-8-download-xcode" class="nav-link">Step 8: Download Xcode</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#install-xcode" class="nav-link">Install Xcode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#how-do-all-the-minimum-versions-relate-to-each-other" class="nav-link">How do all the minimum versions relate to each other?</a>
               <ul class="nav flex-column">
               </ul>
@@ -443,7 +447,7 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="step-8-download-xcode">Step 8: Download Xcode<a class="headerlink" href="#step-8-download-xcode" title="Permanent link">⌁</a></h1>
-<div class="admonition danger">
+<div class="admonition green">
 <p class="admonition-title">Time Estimate</p>
 <ul>
 <li>45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.</li>
@@ -452,57 +456,89 @@
 <div class="admonition info">
 <p class="admonition-title">Summary</p>
 <ul>
-<li>After making sure your macOS is up-to-date for your iPhone's iOS (see the info below), download Xcode from your computer's App Store application.</li>
+<li>Check iPhone/iPod iOS version<ul>
+<li>The iOS version determines minimum Xcode version</li>
+<li>The minimum Xcode version determines minimum macOS version</li>
+<li>If necessary, update macOS</li>
+</ul>
+</li>
+<li>Download Xcode from your computer's App Store application</li>
 </ul>
 </div>
-<div class="admonition warning">
+<div class="admonition faqs">
 <p class="admonition-title">FAQs</p>
 <ul>
-<li><strong>"Why isn't my Xcode installing?"</strong> I can't see your computer to know exactly why...but the two most common reasons are (1) lack of internet connection or (2) not enough free space on the computer's hard drive. Xcode is a pretty beefy-sized download...and needs even a little more space to properly unpack and install itself. Best to try to have about 20-25GB of free space on your hard drive before starting to be on the safe side. If you get low on free space, I've seen installation failures. You can check your free space by clicking on the <code>About this Mac</code> (like in Step 1) and clicking the <code>Storage</code> tab.</li>
+<li><strong>"Why isn't my Xcode installing?"</strong> The two most common reasons are:<ol>
+<li>lack of internet connection or</li>
+<li>not enough free space on the computer hard drive</li>
+</ol>
+</li>
+<li>Xcode is a large download, and it needs space to properly unpack and install itself</li>
+<li>You need at least 50GB of free space on your hard drive before starting</li>
+<li>If you get low on free space, you may have installation failures<ul>
+<li>You can check your free space by clicking on the <code>About this Mac</code> (see Build Step 1) and clicking the <code>Storage</code> tab</li>
+</ul>
+</li>
 </ul>
 </div>
-<p>Today is an easy one, but probably takes the longest of most of any of the steps in terms of time...only because the download takes a while. The good news is that you don't have to watch this. Instead, you can start the download and simply walk away for the rest of it.</p>
-<p>Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" code into an iOS application and install it onto your iPhone/iPod. <strong>Make sure you have updated your macOS AND checked the <code>Software Updates</code> button before proceeding...in other words, make sure you did Step 1's work.</strong></p>
-<p>Open your App Store in your computer and search for Xcode...you'll either be downloading it brand new or updating an existing installation. The minimum version you need will depend on the iOS your iPhone is running. The version number should be showing in the "what's new" description as shown in the image below. This is a big download, so don't expected this to be fast.</p>
+<p>This step may take more time than the other steps, because the download takes a while. The good news is that you don't have to watch it. Instead, you can simply walk away once the download starts. If your laptop goes to sleep when you close the lid or when the screen saver starts - be sure to disable the screen saver and leave the laptop open. This is a big download, so don't expected this to be fast.</p>
+<p>Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" code into an iOS application and install it onto your iPhone/iPod. Make sure you have at least the minimum required macOS for this version of Xcode.</p>
+<h2 id="install-xcode">Install Xcode<a class="headerlink" href="#install-xcode" title="Permanent link">⌁</a></h2>
+<p>If you've done your homework (read this entire page) and are ready to download and install Xcode, here are the instructions:</p>
+<ul>
+<li>Open your App Store in your computer and search for Xcode</li>
+<li>You will be downloading it brand new or updating an existing installation</li>
+<li>If the version number you need is bigger than what is shown, stop and review the rest of this page<ul>
+<li>This image is old - latest Xcode version is 12.4 (March 17, 2021)</li>
+</ul>
+</li>
+</ul>
 <p align="center"><img alt="img/xcode.png" src="../img/xcode.png" width="750" /></p>
-<div class="admonition warning">
-<p class="admonition-title">Two important facts</p>
-<ol>
-<li>
-<p>The minimum version of Xcode that you need is dependent on the version of iOS you have on the iPhone. The newer the version of iOS, the newer of Xcode you'll also need.</p>
-<p>The most current version of iOS (14+) requires Xcode 12 and macOS 10.15.4 at a minimum</p>
-</li>
-<li>
-<p>The newest Xcode version <strong>may also require you to update your macOS version</strong>. If you have an old version of macOS, then the App Store will not show you that a newer version of Xcode is available. This can create confusion because your iOS could be requiring a newer Xcode, but the App Store won't show it as available. </p>
-</li>
-</ol>
-</div>
 <h2 id="how-do-all-the-minimum-versions-relate-to-each-other">How do all the minimum versions relate to each other?<a class="headerlink" href="#how-do-all-the-minimum-versions-relate-to-each-other" title="Permanent link">⌁</a></h2>
-<p>Most often what happens is that people will update their iOS on the iPhones more often than they update their macOS or Xcode.  You know how it goes...you're tapping on your phone one day and it says there's a new version of iOS available for your phone. Want to update it now? Or be reminded of it later? Or maybe you even have the setting on your phone set to automatically install iOS updates.</p>
+<p>Most people will update their iOS on their iPhones more often than they update their macOS or Xcode.  You know how it goes...you're tapping on your phone one day and it says there's a new version of iOS available for your phone. Want to update it now? Or be reminded of it later? Or maybe you even have the setting on your phone set to automatically install iOS updates.</p>
 <p>Because the update looks so innocuous and we all lead busy lives, we forget that there might be consequences to iOS updates.</p>
-<div class="admonition danger">
-<p class="admonition-title">Loop and iOS updates</p>
-<p>For Loopers...the consequence to an iOS update is nothing immediate. Your Loop app won't die, it will keep humming along. </p>
-<p>BUT, before you <strong>update or rebuild</strong> your Loop app on that phone, you will likely need to update your macOS and Xcode applications because of the newer iOS.  And you will need to do the updates/checks in a certain order:</p>
-<p>1st: Check if your macOS has updates</p>
-<p>2nd: Check for an Xcode update.</p>
+<div class="admonition green">
+<p class="admonition-title">Loop and iOS Updates</p>
+<p><strong>Please Wait</strong> - Disable the automatic iOS update.</p>
+<p>Most of the time, the consequence to an iOS update is nothing immediate. Your Loop app won't die, it will keep humming along. But sometimes, there is a problem with either Loop or the Dexcom app.  </p>
+<p>Be patient, check social media for the "OK to Update iOS Message" and then update your iOS. This normally only takes a few days.  </p>
+<p>If there is a problem with the iOS update, it's usually solved quickly. The solution will generally require a rebuild.  So in that case, plan to rebuild before updating the iOS.</p>
 </div>
-<p>The chart below is a helpful visual of the minimum versions you'll need based on your iOS.</p>
+<div class="admonition info">
+<p class="admonition-title">Minimum Xcode Version</p>
+<p>The <strong>minimum</strong> version of Xcode you need is dependent on your version of iOS</p>
+<ul>
+<li>If your phone is running iOS 14.x, that requires at least Xcode 12.x</li>
+<li>If your phone is running iOS 14.1, Xcode 12.1 works, but so does 12.4</li>
+<li>If your phone is running iOS 12.4, Xcode 12.4 on a mac with macOS 11.2.2 (Big Sur) builds Loop just fine</li>
+<li>If you are running iOS 14, we recommended you update to at least iOS 14.4, Xcode to 12.4; some iOS 14 updates were pretty important</li>
+<li>All iOS 14 versions require macOS 10.15.4 as a minimum</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Can't find the required Xcode version</p>
+<ul>
+<li>If your computer is running macOS 10.15.2, the App Store won't show Xcode version 12</li>
+<li>You must use iOS to determine which Xcode, which determines which macOS</li>
+<li>Update your computer to at least that minimum macOS first</li>
+</ul>
+<p>Don't be the person who posts for help saying, "I'm trying to update my Loop app but am getting errors." When asked what Xcode version they have and if they've updated, they respond, "I don't have any Xcode updates available in the App Store...so I must be running the most current version." Actually, they forgot to check for macOS updates and therefore cannot see the needed Xcode update yet.</p>
+</div>
+<p>The chart below is a helpful map of how to read of the minimum versions you'll need based on your iOS. (Note: this graphic is not updated with every iOS update - go to the link provided and use this figure as a map to read the minimum requirements.)  Every attempt will be made to update the words promptly - that's much easier than updating the figure.</p>
 <ul>
 <li>
 <p>macOS: If you are running an iPhone with iOS 14, you need to make sure your macOS is 10.15.4 at a minimum as the first step. If you don't have the minimum version, go to <a href="../step1/#check-your-macos">Step 1 Compatible Computer</a> and follow directions for updating your macOS.</p>
 </li>
 <li>
-<p>Xcode: Now that your macOS is updated to 10.15.4 minimum, the App Store in your computer will have Xcode 12.0.1 (or newer) available for you to download/update.</p>
+<p>Xcode: Now that your macOS is updated to at least 10.15.4, the App Store in your computer will have Xcode 12.4 (or newer) available for you to download/update.</p>
 </li>
 </ul>
-<p>If you have a brainfart and leave your macOS back at 10.15.2...the App Store won't even tell you Xcode version 12 or newer exists. That's why it is important to do the macOS updates FIRST. I can't tell you how many people post for help saying "I'm trying to update my Loop app but am getting errors." If I ask what Xcode version they have and if they've updated, the response is "I don't have any Xcode updates available in the App Store...so I must be running the most current version." When actually what's happened is they have forgotten to check for macOS updates FIRST and therefore cannot see the needed Xcode update yet.</p>
-<p>(Source for the chart is <a href="https://en.wikipedia.org/wiki/Xcode">wikipedia</a>)</p>
+<p>(Source for the chart is <a href="https://en.wikipedia.org/wiki/Xcode">wikipedia</a>. Remember - follow the link and scroll down to the figure to actually check versions - the graphic shown below is a map of how to read the figure at wikipedia.)</p>
 <p align="center"><img alt="img/minimum-related.png" src="../img/minimum-related.png" width="750" /></p>
 <h2 id="what-happens-if-you-try-using-too-old-of-xcode">What happens if you try using too old of Xcode?<a class="headerlink" href="#what-happens-if-you-try-using-too-old-of-xcode" title="Permanent link">⌁</a></h2>
-<p>It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.</p>
+<p>It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.</p>
 <p align="center"><img alt="img/device-support-files.jpg" src="../img/device-support-files.jpg" width="750" /></p>
-<p>So, if you see that error message realize you may have to update your macOS to be able to see the newest Xcode version that you will need. Make sure to check that chart to see what your minimum versions are for the iOS you are running on your iPhone.</p>
+<p>So, if you see that error message, realize you may have to update your macOS to be able to see the newest Xcode version that you will need. Make sure to check that chart to see what your minimum versions are for the iOS you are running on your iPhone.</p>
 <h2 id="next-step-xcode-preferences">Next Step: Xcode Preferences<a class="headerlink" href="#next-step-xcode-preferences" title="Permanent link">⌁</a></h2>
 <p>Now you are ready to move onto Step 9 to <a href="../step9/">work on Xcode Preferences</a>.</p></div>
             </div>
