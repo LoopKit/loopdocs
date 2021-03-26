@@ -450,41 +450,41 @@
 <p>This section of the docs will go over the Loop displays available and what information they offer.  Information about your Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app. (Page updated for Loop v2.2.4 master.)</p>
 <h2 id="status-screen">Status Screen<a class="headerlink" href="#status-screen" title="Permanent link">⌁</a></h2>
 <p>The Status Screen is the main root navigation screen in Loop. It is broken up into 3 main display areas; Heads Up Display (HUD), Charts, and Toolbar. The HUD is the top area of the screen. This shows the status of the last time loop ran, current BG Reading, current temp basal, and current pump information. The next area is the charting area. This includes, glucose trend and prediction, Active Insulin, Insulin Delivery, and Carbohydrates. The final display area is the toolbar which has buttons for Carbs, Pre-Meal, Bolus, Overrides, and Settings.</p>
-<p align="center"><img alt="img/main_screen.jpg" src="../img/main_screen.jpg" width="550" /></p>
+<p align="center"><img alt="Loop Primary Display with Heads-Up Display, Charts and Toolbar" src="../img/main_screen.jpg" width="550" /></p>
 <h3 id="heads-up-display">Heads Up Display<a class="headerlink" href="#heads-up-display" title="Permanent link">⌁</a></h3>
 <p>The Heads Up Display (HUD) is a very useful quick reference guide to your Loop's status. Every 5 minutes, Loop updates CGM and pump/pod data. Loop timestamps the HUD data with the last data point that came in. If a timestamp goes older than 5 minutes old, that is a valuable indicator to where your Loop is failing to get the needed information. The HUD's first three icons, from left to right, are the same no matter whether you are using a Medtronic pump or Omnipod; status of the last time loop ran, current BG Reading, and current relative temp basal. The last two icons will change depending on what type of pump you are using.</p>
 <p>Medtronic users: The last two icons are the most recent (1) pump/reservoir status and (2) pump percentage battery remaining. <a href="./#reservoir-medtronic-users">Details below</a></p>
-<p align="center"><img alt="img/mdt-hud.jpeg" src="../img/mdt-hud.jpeg" width="400" /></p>
+<p align="center"><img alt="Heads-Up Display for Medtronic" src="../img/mdt-hud.jpeg" width="400" /></p>
 <p>Omnipod users: The last two icons are the most recent (1) pod status and (2) hours of pod use. <a href="./#reservoir-omnipod-users">Details below</a></p>
-<p align="center"><img alt="img/pod-hud.jpeg" src="../img/pod-hud.jpeg" width="400" /></p>
+<p align="center"><img alt="Heads-Up Display for Omnipod" src="../img/pod-hud.jpeg" width="400" /></p>
 <h4 id="loop-status">Loop Status<a class="headerlink" href="#loop-status" title="Permanent link">⌁</a></h4>
 <p>The Loop Status is the colored circle in the upper left corner of the main Loop display.  There are four colors that are typically displayed.</p>
 <table>
 <thead>
 <tr>
-<th></th>
+<th><div style="width:55px"></div></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img alt="img/grey_loop.jpg" src="../img/grey_loop.jpg" width="250" /></td>
+<td><img alt="Closed Grey Circle Icon" src="../img/grey_loop.jpg" /></td>
 <td>A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.  If you can't get your grey loop to turn green, please see the <a href="../../../troubleshooting/yellow-red-loop/">Yellow and Red Loop troubleshooting page</a>  for tips.</td>
 </tr>
 <tr>
-<td><img alt="img/green_loop.jpg" src="../img/green_loop.jpg" width="250" /></td>
+<td><img alt="Closed Green Circle Icon" src="../img/green_loop.jpg" /></td>
 <td>A green circle indicates the Loop has been successfully completed within the last 5 minutes.  The time since the loop last completed will be displayed under the circle.</td>
 </tr>
 <tr>
-<td><img alt="img/yellow_loop.jpg" src="../img/yellow_loop.jpg" width="250" /></td>
+<td><img alt="Closed Yellow Circle Icon" src="../img/yellow_loop.jpg" /></td>
 <td>A yellow circle indicates the Loop has not completed in the last 5-15 minutes.  It is not unusual to have a few instances of yellow circles throughout a day of looping.  They can be caused by temporarily getting too far away from RileyLink or iPhone (more than about 3-10 feet depending on conditions), CGM failing to read or being in ???, radio frequency “noise” interference, and such.  Generally, most yellow circles will self-resolve without needing any special troubleshooting.</td>
 </tr>
 <tr>
-<td><img alt="img/red_loop.jpg" src="../img/red_loop.jpg" width="250" /></td>
+<td><img alt="Closed Red Circle Icon" src="../img/red_loop.jpg" /></td>
 <td>A red circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the <a href="../../../troubleshooting/yellow-red-loop/">Yellow and Red Loop troubleshooting page</a> for tips on how to get your green Loop back.  Clicking on the red circle will also pop-up the last error message to help guide your troubleshooting.</td>
 </tr>
 <tr>
-<td><img alt="img/open_loop.jpg" src="../img/open_loop.jpg" width="250" /></td>
+<td><img alt="Green Circle Icon with gap at top denoting open loop" src="../img/open_loop.jpg" /></td>
 <td>When the circle is notched and not complete, that means the Loop is operating in “open-loop” mode.  When the “closed-loop” setting is turned on, the loop status will show a completed circle.</td>
 </tr>
 </tbody>
@@ -497,21 +497,21 @@
 <table>
 <thead>
 <tr>
-<th></th>
+<th><div style="width:55px"></div></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img alt="img/cgm.jpg" src="../img/cgm.jpg" width="200" /></td>
+<td><img alt="Blood Glucose Reading" src="../img/cgm.jpg" /></td>
 <td>The current BG reading from the CGM will display, including trending arrow and time the reading was taken.  If the BG is being read straight from the G5/G6 transmitter or G4 receiver, no special symbols will appear.</td>
 </tr>
 <tr>
-<td><img alt="img/cgm_cloud.jpg" src="../img/cgm_cloud.jpg" width="200" /></td>
+<td><img alt="Blood Glucose with Cloud Icon" src="../img/cgm_cloud.jpg" /></td>
 <td>If the BG is being read from the Dexcom Share Servers, a small cloud icon will be in the corner of the BG reading.  Internet access is required to run in this mode.</td>
 </tr>
 <tr>
-<td><img alt="img/cgm_alert.jpg" src="../img/cgm_alert.jpg" width="200" /></td>
+<td><img alt="Blood Glucose with Alert Symbol" src="../img/cgm_alert.jpg" /></td>
 <td>When you first start Loop, there may be a small yellow alert next to the BG.  This should go away within a short period of time (around 5 minutes or less).  If the yellow alert remains, something may be wrong with fetching BG data.  You can try restarting the Loop app (double tap home button, up-swipe on the app to close it) to see if BG data will resume. </br></br> <strong>Special note for Dexcom G5/G6 users</strong>&gt;, a yellow alert will appear when calibration is needed.  The alert will clear once the calibration is given, but typically Loop will work IF the yellow alert is only for a needed G5/G6 calibration.</td>
 </tr>
 </tbody>
@@ -520,13 +520,13 @@
 <table>
 <thead>
 <tr>
-<th></th>
+<th><div style="width:55px"></div></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img alt="img/temp_basal.jpg" src="../img/temp_basal.jpg" width="175" /></td>
+<td><img alt="Temporary basal delta with respect to scheduled basal" src="../img/temp_basal.jpg" /></td>
 <td>The temp basal will display the enacted temp basal change relative to the scheduled basal.  So if the scheduled basal was 1.0 units per hour and Loop has set a temp basal of 0.2 units per hour, the temp basal icon will display -0.8 U, as shown in the graphic to the left.</td>
 </tr>
 </tbody>
@@ -535,13 +535,13 @@
 <table>
 <thead>
 <tr>
-<th></th>
+<th><div style="width:55px"></div></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img alt="img/red_reservoir.jpg" src="../img/red_reservoir.jpg" width="175" /></td>
+<td><img alt="Medtronic reservoir indicator is red with &lt;10% remaining" src="../img/red_reservoir.jpg" /></td>
 <td>The reservoir icon will remain grey and plain until insulin volume decreases.  At 25% reservoir volume remaining, the reservoir icon will turn yellow.  At 10% reservoir volume remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds.</td>
 </tr>
 </tbody>
@@ -550,13 +550,13 @@
 <table>
 <thead>
 <tr>
-<th></th>
+<th><div style="width:55px"></div></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img alt="img/battery.jpg" src="../img/battery.jpg" width="200" /></td>
+<td><img alt="Medtronic battery indicator is grey showing 100%" src="../img/battery.jpg" /></td>
 <td>For x54 pumps, the battery icon will show 100/75/50/25% increments just as the pump does.  As the battery level decreases, the icon will turn from grey to yellow to red.  For x22, x23 pumps, the battery icon will read discrete % values.  </br></br>The warning colors/levels on Loop's battery indicator work in conjunction with the type of battery selected.  If you change battery types, please make sure to update your battery selection in the Loop app settings.   </br></br>The pump's on-screen battery indicator is not a good indicator of remaining battery life for the purposes of looping.  Loop's pump communications will fail from low battery levels sooner than the insulin delivery will fail.  The Loop's battery level warnings are designed to give you approximately 8 hours of notice before the pump battery will need changing.</td>
 </tr>
 </tbody>
@@ -565,13 +565,13 @@
 <table>
 <thead>
 <tr>
-<th></th>
+<th><div style="width:55px"></div></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img alt="img/pod-reservoir.jpg" src="../img/pod-reservoir.jpg" width="175" /></td>
+<td><img alt="Omnipod reservoir indicator is red with &lt;20u remaining" src="../img/pod-reservoir.jpg" /></td>
 <td>The pod icon will remain grey and plain until insulin volume decreases.  At 50 units or less insulin remaining, the reservoir icon will turn yellow. At 20 units or less remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds. </br></br>When the reading is 0 units, there may be up to 4 unit of insulin available but don't count on it. If the pod senses insulin can no longer be delivered, the pod will have a sustained audible alarm (the scream). Tapping Replace Pod in Loop-&gt;Pod-&gt;Settings should silence the alarm.</td>
 </tr>
 </tbody>
@@ -580,13 +580,13 @@
 <table>
 <thead>
 <tr>
-<th></th>
+<th><div style="width:55px"></div></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img alt="img/pod-age.jpg" src="../img/pod-age.jpg" width="250" /></td>
+<td><img alt="Omnipod age icon is yellow showing 2 hours remaining in guaranteed life, 10 hours until shutdown" src="../img/pod-age.jpg" /></td>
 <td>The pod's age, typically a 3-day lifespan, is represented by three equal segments of the pod age icon. As the pod ages, the segments are converted to a darker grey color. At 54 hours old, the pod age icon will turn yellow. At 72 hours old, the pod age icon will turn red, the pod will begin the periodic warning beep, and the pod age icon will show a "replace pod" message in the HUD. </br></br>When you reach 80 hours of pod use, the pod will have a sustained audible alarm (the scream) and stops all insulin delivery. Tapping Replace Pod in Loop-&gt;Pod-&gt;Settings should silence the alarm.</td>
 </tr>
 </tbody>
@@ -594,7 +594,7 @@
 <h2 id="charts">Charts<a class="headerlink" href="#charts" title="Permanent link">⌁</a></h2>
 <p>There are several charts that help you navigate your Loop actions.  Clicking on each of the charts will also open up additional information.</p>
 <h3 id="glucose-chart">Glucose Chart<a class="headerlink" href="#glucose-chart" title="Permanent link">⌁</a></h3>
-<p align="center"><img alt="img/glucose_graph.jpg" src="../img/glucose_graph.jpg" width="400" /></p>
+<p align="center"><img alt="Graph of Blood Glucose showing measured points and predicted dashed line" src="../img/glucose_graph.jpg" width="400" /></p>
 <p>The glucose chart displays BG values in your preferred units. (If not, quit and restart Loop app on your phone.) The vertical scale of the chart is calculated on the fly by Loop to be as useful as possible while including the highest and lowest readings in the chart.</p>
 <p>The horizontal axis is set to go forward from the current time until your DIA (insulin duration) forward (so you can see what Loop thinks BG will be eventually). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.</p>
 <p>The BG correction range is shown as a blue bar on the glucose chart.  Single-value target BG range (such as 100-100 mg/dl), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction target in lighter blue.</p>
@@ -605,19 +605,19 @@
 <p>If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart described below.</p>
 <h3 id="predicted-glucose-chart">Predicted Glucose Chart<a class="headerlink" href="#predicted-glucose-chart" title="Permanent link">⌁</a></h3>
 <p>The predicted glucose view is a great way to gain insight into the various components’ importance in Loop’s prediction of eventual BG.</p>
-<p align="center"><img alt="img/glucose_hidden.svg" src="../img/glucose_hidden.svg" width="400" /></p>
+<p align="center"><img alt="Tap Graph of Blood Glucose to reveal separate elements of prediction selectable to demonstrate effects" src="../img/glucose_hidden.svg" width="300" /></p>
 <p>The graph at the top of this view will match your Glucose Chart. Below this chart you will see a very detailed explanation of all of the variables that Loop takes into account in predicting your future BG value. Each of those effects (including Carbohydrates, Insulin, Glucose Momentum and Retrospective Correction) includes details of the calculation used. You can tap on any of the entries to turn them off and on for visualization. The resulting changes can be viewed by the changes in the dashed lines.</p>
 <p>Note - these elements are not turned on and off in the Loop predictions. They just modify the graph so you can view the relative effects.</p>
 <h3 id="active-insulin-chart">Active Insulin Chart<a class="headerlink" href="#active-insulin-chart" title="Permanent link">⌁</a></h3>
-<p align="center"><img alt="img/active_insulin.jpg" src="../img/active_insulin.jpg" width="400" /></p>
-<p>The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive and negative IOB.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the (for Medtronic) pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered). The opposite is true for OmniPods. If a message is sent from Loop, it assumes the pod got the message and enacted it - even if the acknowledgement is not received.  Later, when communication is restored, if a command was not enacted by the pod, the Event History is updated.</p>
+<p align="center"><img alt="Plot of insulin on board (IOB); active amount above or below basal using insulin model" src="../img/active_insulin.jpg" width="400" /></p>
+<p>The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive and negative IOB.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the (for Medtronic) pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered). The opposite is true for Omnipods. If a message is sent from Loop, it assumes the pod got the message and enacted it - even if the acknowledgement is not received.  Later, when communication is restored, if a command was not enacted by the pod, the Event History is updated.</p>
 <p><strong>Medtronic Only</strong>: So long as you have Event History as the Preferred Data Source in Loop settings, primed insulin deliveries (e.g., cannula fills or manual primes) will not be counted towards IOB.</p>
 <h3 id="insulin-delivery-chart">Insulin Delivery Chart<a class="headerlink" href="#insulin-delivery-chart" title="Permanent link">⌁</a></h3>
-<p align="center"><img alt="img/insulin_delivery.jpg" src="../img/insulin_delivery.jpg" width="400" /></p>
+<p align="center"><img alt="Plot of insulin delivery shown as bolus triangles and relative temp basal settings" src="../img/insulin_delivery.jpg" width="400" /></p>
 <p>The Insulin Delivery chart displays a history of the temp basals enacted by Loop.  The display is relative to the scheduled basal rates entered in the Loop settings.  So, a rate displayed in this chart as <code>+0 units</code> would indicate no temp basal was set, and Loop defaulted to the scheduled basal rate.  Individual boluses are indicated by an orange triangle on the chart (shown in the graphic above, near the left-most time).  The total insulin delivered since midnight, including all basals and boluses <strong>AND (Medtronic Only) priming insulin</strong>, is given in the upper right corner of the graph.</p>
 <p>Please be patient for a bolus delivery to appear.  There is a lag time from when you press the “deliver” bolus button to when the orange triangle is drawn sometimes.  The insulin has to be delivered and then the (Medtronic Only) pump reservoir needs to be read to confirm delivery, before the triangle will appear and IOB will be added.  Occasionally, the bolus may be temporarily rendered (drawn) as a very high temp basal rate vs. a (triangle) discrete bolus event.  This does NOT mean that the Loop actually enacted a high temp basal rate...only that the bolus is being <strong>drawn</strong> on the chart in the equivalent of a high temp basal rate.</p>
 <h3 id="reservoir-and-event-history">Reservoir and Event History<a class="headerlink" href="#reservoir-and-event-history" title="Permanent link">⌁</a></h3>
-<p align="center"><img alt="img/insulin_hidden.jpg" src="../img/insulin_hidden.jpg" width="500" /></p>
+<p align="center"><img alt="Reservoir and event history shown for Medtronic" src="../img/insulin_hidden.jpg" width="500" /></p>
 <p>Clicking on either the Active Insulin or Insulin Delivery charts will open your Insulin Delivery history.  The top of the screen will display the current IOB and the total insulin delivered for the day since midnight (or since the time the loop became active if you started Loop after midnight). There are two viewing options; Reservoir or Event History.  </p>
 <ul>
 <li>
@@ -628,12 +628,12 @@
 </li>
 </ul>
 <h3 id="carbohydrate-chart">Carbohydrate Chart<a class="headerlink" href="#carbohydrate-chart" title="Permanent link">⌁</a></h3>
-<p align="center"><img alt="img/carb_graph.jpg" src="../img/carb_graph.jpg" width="400" /></p>
+<p align="center"><img alt="Active carbohydrate chart showing measured rise and fall based on entries and settings" src="../img/carb_graph.jpg" width="400" /></p>
 <p>The Carbohydrate chart displays the carbs used by Loop to predict BG changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the <a href="../../features/carbs/">Carb Entry page</a> for more information about editing carb entries.</p>
-<p align="center"><img alt="img/carb_edit.png" src="../img/carb_edit.png" width="300" /></p>
+<p align="center"><img alt="Editable Carbohydrate History with Insulin Counteraction Effects (ICE) graph" src="../img/carb_edit.png" width="300" /></p>
 <p>For more information about the Insulin Counteraction Effects information found in the Carb History, please see <a href="../../features/ice/">here</a>.</p>
 <h2 id="tool-bar">Tool Bar<a class="headerlink" href="#tool-bar" title="Permanent link">⌁</a></h2>
-<p align="center"><img alt="img/toolbar.png" src="../img/toolbar.png" width="400" /></p>
+<p align="center"><img alt="Loop Toolbar showing meal entry, pre-meal, bolus, override and settings icons" src="../img/toolbar.png" width="400" /></p>
 <p>The toolbar is where your inputs to the Loop behavior take place.  The individual components of the toolbar are, left to right:</p>
 <ul>
 <li>
@@ -653,7 +653,7 @@
 </li>
 </ul>
 <h2 id="next-step-rileylink-menu">Next Step: RileyLink Menu<a class="headerlink" href="#next-step-rileylink-menu" title="Permanent link">⌁</a></h2>
-<p>You are almost there! One more Loop menu that you need to know about is your RileyLink (or other radio-link) Device. You can access your device menu by tapping on the pump/pod image in Loop settings (or HUD), look for the DEVICES section and tap on a "My Device Name" row that has a green slider. If you don't know what that means, check out the Pump Pairing section for Adding a Pump <a href="../mdt-pump/#pump-pairing">Medtronic</a> or <a href="../omnipod-pump/#select-rileylink">OmniPod</a>.</p>
+<p>You are almost there! One more Loop menu that you need to know about is your RileyLink (or other radio-link) Device. You can access your device menu by tapping on the pump/pod image in Loop settings (or HUD), look for the DEVICES section and tap on a "My Device Name" row that has a green slider. If you don't know what that means, check out the Pump Pairing section for Adding a Pump <a href="../mdt-pump/#pump-pairing">Medtronic</a> or <a href="../omnipod-pump/#select-rileylink">Omnipod</a>.</p>
 <p>Click <a href="../rileylink/">here</a> to read more about what to expect to see when you tap on "My Device Name".</p></div>
             </div>
         </div>

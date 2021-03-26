@@ -427,7 +427,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#step-1-verifyupdate-macos-and-xcode" class="nav-link">Step 1: Verify/Update macOS and Xcode</a>
+            <li class="nav-item" data-level="2"><a href="#step-1-install-macos-and-xcode-updates" class="nav-link">Step 1: Install macOS and Xcode updates</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -496,7 +496,7 @@
 <h2 id="when-to-update-loop">When to Update Loop<a class="headerlink" href="#when-to-update-loop" title="Permanent link">⌁</a></h2>
 <p>The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process.</p>
 <p>Under ordinary circumstances, you do not <em>have to</em> update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability. Also, if you have updated your phone iOS since the last build, you should download a new copy of the code.</p>
-<h2 id="step-1-verifyupdate-macos-and-xcode">Step 1: Verify/Update macOS and Xcode<a class="headerlink" href="#step-1-verifyupdate-macos-and-xcode" title="Permanent link">⌁</a></h2>
+<h2 id="step-1-install-macos-and-xcode-updates">Step 1: Install macOS and Xcode updates<a class="headerlink" href="#step-1-install-macos-and-xcode-updates" title="Permanent link">⌁</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Verify macOS</p>
 <p>Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS, you cannot build on that phone.</p>
@@ -519,7 +519,7 @@
 <p>If you think you are immune from needing to update and want to skip Step 1 on this page, at least review the compatibility chart in Build Step 8 to make sure your macOS and Xcode meet their minimums based on your device's iOS before proceeding.  Many people try to build without meeting the minimum versions - don't be that person.</p>
 <h2 id="step-2-check-your-developer-account">Step 2: Check your Developer Account<a class="headerlink" href="#step-2-check-your-developer-account" title="Permanent link">⌁</a></h2>
 <p>Apple updates its License Agreement for the Developer Program frequently. You need to login to your <a href="https://developer.apple.com/account/">developer account</a> to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.</p>
-<p><img alt="img/license.png" src="../img/license.png" /></p>
+<p><img alt="Screenshot: Account - Apple Developer" src="../img/license.png" /></p>
 <h2 id="step-3-download-updated-loop-code">Step 3: Download Updated Loop Code<a class="headerlink" href="#step-3-download-updated-loop-code" title="Permanent link">⌁</a></h2>
 <p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want).</p>
 <p>If you aren't a developer or debugging, avoid the dev branch - and be warned once you install dev on a phone, you might have to completely delete the app to return to master or automatic-bolus.  </p>
@@ -547,7 +547,7 @@
 <h3 id="background-information">Background Information<a class="headerlink" href="#background-information" title="Permanent link">⌁</a></h3>
 <p>Older versions of Xcode used to automatically create a new "provisioning profile" as part of the Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.</p>
 <p>You can always check the expiration date immediately after a successful build of your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death, which you can record in your calendar.</p>
-<p align="center"><img alt="img/provisioning-profile-date.png" src="../img/provisioning-profile-date.png" width="850" /></p>
+<p align="center"><img alt="Screenshot: Xcode showing Provisioning Profile" src="../img/provisioning-profile-date.png" width="850" /></p>
 <p>Here's what started happening about September 2019 with Xcode 11, the provisioning profiles were being reused so the date was not updated each time you built. This change resulted in many people's apps expiring unexpectedly (and therefore dying suddenly) starting in September 2020 despite having updated/rebuilt recently and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).</p>
 <p>Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)</p>
 <h3 id="delete-profiles">Delete Profiles<a class="headerlink" href="#delete-profiles" title="Permanent link">⌁</a></h3>
@@ -560,12 +560,12 @@
 </ul>
 <p><code>rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision</code>
 </br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.</p>
-<p align="center"><img alt="img/empty-profiles.png" src="../img/empty-profiles.png" width="650" /></p>
+<p align="center"><img alt="Screenshot: terminal after provisioning profile deletion" src="../img/empty-profiles.png" width="650" /></p>
 </div>
 <h3 id="revoke-certificate-issue">Revoke Certificate Issue<a class="headerlink" href="#revoke-certificate-issue" title="Permanent link">⌁</a></h3>
 <p>What does it look like if you run into the force new certificate problem? When you prepare to Sign the Targets with Xcode, you'll see the message highlighted in the figure below.  </p>
 <p align="center"><br/>
-<img alt="img/rejected-cert.svg" src="../img/rejected-cert.svg" width="850" /></p>
+<img alt="Screenshot: Xcode showing Revoke Certificate message" src="../img/rejected-cert.svg" width="850" /></p>
 <p>More information is shown in the orange box below.</p>
 <div class="admonition warning">
 <p class="admonition-title">Revoke certificate</p>
@@ -583,7 +583,7 @@
 <li>Copy and paste this command and press return: <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code> Note: you won't see any message back if the command runs successfully.
 </br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.</li>
 </ol>
-<p align="center"><img alt="img/cleaned-terminal.png" src="../img/cleaned-terminal.png" width="650" /></p>
+<p align="center"><img alt="Screenshot: terminal after clean cache and derived data" src="../img/cleaned-terminal.png" width="650" /></p>
 </div>
 <h2 id="step-5-build-like-normal">Step 5: Build like normal<a class="headerlink" href="#step-5-build-like-normal" title="Permanent link">⌁</a></h2>
 <p>From here, go straight to <a href="../step14/">Step 14 Build Loop app</a> and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.</p>
