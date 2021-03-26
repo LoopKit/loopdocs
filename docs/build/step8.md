@@ -33,7 +33,7 @@ If you've done your homework (read this entire page) and are ready to download a
     - This image is old - latest Xcode version is 12.4 (March 17, 2021)
 
 
-![img/xcode.png](img/xcode.png){width="750"}
+![Screenshot: Apple Store search for Xcode](img/xcode.png){width="750"}
 {align="center"}
 
 ## How do all the minimum versions relate to each other?
@@ -81,16 +81,16 @@ The chart below is a helpful map of how to read of the minimum versions you'll n
 * Xcode: Now that your macOS is updated to at least 10.15.4, the App Store in your computer will have Xcode 12.4 (or newer) available for you to download/update.
 
 
-(Source for the chart is [wikipedia](https://en.wikipedia.org/wiki/Xcode). Remember - follow the link and scroll down to the figure to actually check versions - the graphic shown below is a map of how to read the figure at wikipedia.)
+(Source for the chart is [Wikipedia](https://en.wikipedia.org/wiki/Xcode). Remember - follow the link and scroll down to the figure to actually check versions - the graphic shown below is a map of how to read the figure at Wikipedia.)
 
-![img/minimum-related.png](img/minimum-related.png){width="750"}
+![Screenshot: Wikipedia Xcode 11.x-12.x example; relationship for iOS, Xcode, macOS; highlights how to read current graphic](img/minimum-related.png){width="750"}
 {align="center"}
 
 ## What happens if you try using too old of Xcode?
 
 It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
 
-![img/device-support-files.jpg](img/device-support-files.jpg){width="750"}
+![Screenshot: Xcode, error message when Xcode too old for iOS or missing simulators](img/device-support-files.jpg){width="750"}
 {align="center"}
 
 So, if you see that error message, realize you may have to update your macOS to be able to see the newest Xcode version that you will need. Make sure to check that chart to see what your minimum versions are for the iOS you are running on your iPhone.
