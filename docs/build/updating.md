@@ -7,7 +7,7 @@
 
 !!! info "Summary"
 
-    1. Verify/Update macOS and Xcode
+    1. Install macOS and Xcode updates
     2. Check your Developer Account
     3. Download Updated Loop code
     4. Recommended Actions<br />
@@ -64,13 +64,15 @@ Apple updates its License Agreement for the Developer Program frequently. You ne
 
 After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want).
 
-If you aren't a developer or debugging, avoid the dev branch - and be warned once you install dev on a phone, you might have to completely delete the app to return to master or automatic-bolus.  
-
 There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for both master and automatic-bolus branches. The [Build Select Script](https://www.loopnlearn.org/build-select/) webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.
 
-If you prefer the zip download method, the links from Build Step 13 are repeated below. (These links always point to the most recent release of the code.) Click on one of the links below to download Loop code and then follow the manual steps on this page until you have a new version on your phone.
+If you prefer the zip download method, the links from Build Step 13 are repeated below.
 
-Both master and automatic-bolus are pretty stable and widely used.  The [Compare Version](https://www.loopnlearn.org/compare-branches/) webpage explains the differences between master and automatic-bolus.
+You’ll need to download the Loop code in order to build the app on your computer. Various versions of Loop code are available. Both master and automatic-bolus are pretty stable and widely used.  The [Compare Version](https://www.loopnlearn.org/compare-branches/) webpage explains the differences between master and automatic-bolus.
+
+Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.)
+
+---
 
 - [Loop: master branch](https://github.com/LoopKit/Loop/archive/master.zip)
 
@@ -78,7 +80,10 @@ Both master and automatic-bolus are pretty stable and widely used.  The [Compare
 
 ---
 
-- [Dev branch---in very rough shape right now, please only build if developer interested in debugging](https://github.com/LoopKit/Loop/archive/dev.zip)
+- [Dev branch---please only build if you're a developer/advanced user interested in testing](https://github.com/LoopKit/Loop/archive/dev.zip)
+    - Note that dev will soon require iOS 14 on your device
+    - Once you install dev on a device, you might have to delete the app to return to master or automatic-bolus
+
 
 ---
 
@@ -90,7 +95,7 @@ If your app will expire soon or you build infrequently, then [Delete Profiles](u
 
 ### Frequent Builder
 
-If you build frequently, you do not need to delete the profiles every time. There is a small chance that deleting the profiles will [force a new certificate](updating.md#revoke-certificate-issue) – that will affect all apps built with your user ID.
+If you build frequently, you do not need to delete the profiles every time. One user reported deleting profiles gave a [Revoke Certificate](updating.md#revoke-certificate-issue) message - follow the link to see other reasons why that might happen.
 
 ### Background Information
 
@@ -120,7 +125,7 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
 
 ### Revoke Certificate Issue
 
-What does it look like if you run into the force new certificate problem? When you prepare to Sign the Targets with Xcode, you'll see the message highlighted in the figure below.  
+What does it look like if you run into the Revoke Certificate message? When you prepare to Sign the Targets with Xcode, you'll see the message highlighted in the figure below.  
 
 <br/>
 ![Screenshot: Xcode showing Revoke Certificate message](img/rejected-cert.svg){width="850"}
@@ -129,12 +134,26 @@ What does it look like if you run into the force new certificate problem? When y
 More information is shown in the orange box below.
 
 !!! warning "Revoke certificate"
-    _"Your account already has an Apple Development signing certificate for this machine . . ."_
+    The important part of this message is:
 
-    You must revoke your certificate to continue - all apps built with this certificate stop working within 24 hours.
+    * ". . . signing certificate . . . private key is not installed in your keychain . . ."
 
-    Your Apple Developer ID is not affected so you can re-build on the existing Loop app on your phone and maintain all your settings with the new certificate
+    **WAIT - You might not need to revoke your certificate**
 
+    1. You might get this if you logged in as a different user, have a new computer or if your computer had to undergo a factory reset
+        * You can transfer your keychain to your new computer (or just revoke and keep going)
+        * To transfer your keychain, check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b)
+    1. Your version of Xcode is way out-of-date
+        * Mentors have seen this with people trying to build with Xcode 11.4 or earlier
+        * Update [Xcode](step8.md) to the most recent version 
+
+    **If you revoke and keep going:**
+
+    * If you do hit Revoke Certificate, you'll be given a new one
+    * Even with the new certificate, your Apple Developer ID is not affected
+    * You can re-build on the existing Loop app on your device(s) and maintain all your settings with the new certificate.
+
+    Be aware that you will have to rebuild to every device that used the certificate you just revoked and if you have other apps built with this certificate, they will stop working too.
 
 
 ## Step 4b: Clean cache and derived data
