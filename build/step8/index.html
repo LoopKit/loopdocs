@@ -500,9 +500,14 @@
 <div class="admonition green">
 <p class="admonition-title">Loop and iOS Updates</p>
 <p><strong>Please Wait</strong> - Disable the automatic iOS update.</p>
-<p>Most of the time, the consequence to an iOS update is nothing immediate. Your Loop app won't die, it will keep humming along. But sometimes, there is a problem with either Loop or the Dexcom app.  </p>
-<p>Be patient, check social media for the "OK to Update iOS Message" and then update your iOS. This normally only takes a few days.  </p>
-<p>If there is a problem with the iOS update, it's usually solved quickly. The solution will generally require a rebuild.  So in that case, plan to rebuild before updating the iOS.</p>
+<ul>
+<li>As far as we know, an iOS update has never prevented Loop from working</li>
+<li>But an iOS update often requires an Xcode update to build Loop on that device</li>
+<li>Rarely, but it has happened, that Xcode update requires a Loop code update</li>
+<li>If a problem is found, the solution is typically posted pretty quickly</li>
+<li>Check on your favorite social media platform to see if a newly released iOS is causing an issue with Loop or your CGM before accepting the update from Apple</li>
+<li>The "All-Clear" or "WAIT there's a problem" is normally posted within a few days</li>
+</ul>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Minimum Xcode Version</p>
@@ -536,6 +541,17 @@
 <p>(Source for the chart is <a href="https://en.wikipedia.org/wiki/Xcode">Wikipedia</a>. Remember - follow the link and scroll down to the figure to actually check versions - the graphic shown below is a map of how to read the figure at Wikipedia.)</p>
 <p align="center"><img alt="Screenshot: Wikipedia Xcode 11.x-12.x example; relationship for iOS, Xcode, macOS; highlights how to read current graphic" src="../img/minimum-related.png" width="750" /></p>
 <h2 id="what-happens-if-you-try-using-too-old-of-xcode">What happens if you try using too old of Xcode?<a class="headerlink" href="#what-happens-if-you-try-using-too-old-of-xcode" title="Permanent link">⌁</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Breaking News</p>
+<ul>
+<li>If you try to build with a version of Xcode older than 11.4.1 you will get a Revoke Certificate message when you try to sign targets</li>
+<li>Go to <a href="../updating/#revoke-certificate-issue">Revoke Certificate Issue</a> to see the error message</li>
+<li>You should update Xcode (on March 27, 2021, Xcode is at version 12.4)<ul>
+<li>Go to <a href="../updating/#step-1-install-macos-and-xcode-updates">Install macOS and Xcode updates</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <p>It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.</p>
 <p align="center"><img alt="Screenshot: Xcode, error message when Xcode too old for iOS or missing simulators" src="../img/device-support-files.jpg" width="750" /></p>
 <p>So, if you see that error message, realize you may have to update your macOS to be able to see the newest Xcode version that you will need. Make sure to check that chart to see what your minimum versions are for the iOS you are running on your iPhone.</p>
