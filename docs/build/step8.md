@@ -46,13 +46,12 @@ Because the update looks so innocuous and we all lead busy lives, we forget that
 
     **Please Wait** - Disable the automatic iOS update.
 
-
-    Most of the time, the consequence to an iOS update is nothing immediate. Your Loop app won't die, it will keep humming along. But sometimes, there is a problem with either Loop or the Dexcom app.  
-
-
-    Be patient, check social media for the "OK to Update iOS Message" and then update your iOS. This normally only takes a few days.  
-
-    If there is a problem with the iOS update, it's usually solved quickly. The solution will generally require a rebuild.  So in that case, plan to rebuild before updating the iOS.
+    - As far as we know, an iOS update has never prevented Loop from working
+    - But an iOS update often requires an Xcode update to build Loop on that device
+    - Rarely, but it has happened, that Xcode update requires a Loop code update
+    - If a problem is found, the solution is typically posted pretty quickly
+    - Check on your favorite social media platform to see if a newly released iOS is causing an issue with Loop or your CGM before accepting the update from Apple
+    - The "All-Clear" or "WAIT there's a problem" is normally posted within a few days
 
 
 !!! info "Minimum Xcode Version"
@@ -87,6 +86,12 @@ The chart below is a helpful map of how to read of the minimum versions you'll n
 {align="center"}
 
 ## What happens if you try using too old of Xcode?
+
+!!! warning "Breaking News"
+    * If you try to build with a version of Xcode older than 11.4.1 you will get a Revoke Certificate message when you try to sign targets
+    * Go to [Revoke Certificate Issue](updating.md#revoke-certificate-issue) to see the error message
+    * You should update Xcode (on March 27, 2021, Xcode is at version 12.4)
+          * Go to [Install macOS and Xcode updates](updating.md#step-1-install-macos-and-xcode-updates)
 
 It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
 

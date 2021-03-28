@@ -5,8 +5,8 @@
     - 10 minutes to read this page
 
 !!! info "Summary"
-    - Master branch of Loop has been recently updated to Loop v2.0
-    - All branches of Loop support both Medtronic and Omnipod pump users.
+    - All branches of Loop support both Medtronic and Omnipod pump users
+    - master and automatic-bolus are at Loop v2.2.4
 
 !!! warning "FAQs"
     - **"What the heck is a branch?"** That's a great question. We have a page all about [Branch FAQs](../faqs/branch-faqs.md)
@@ -15,17 +15,22 @@
 
 ## Pick a branch to download
 
-You’ll need to download the Loop code in order to build the app on your computer. Various versions of Loop code are stored in "branches". You have a choice of branches to build from...you'll pick one to download. Not sure what a branch is or what it means? You can read more details on the [Branch FAQs page](../faqs/branch-faqs.md).
+You’ll need to download the Loop code in order to build the app on your computer. Various versions of Loop code are available. Both master and automatic-bolus are pretty stable and widely used.  The [Compare Version](https://www.loopnlearn.org/compare-branches/) webpage explains the differences between master and automatic-bolus.
 
-Master vs Dev vs some other branch? Generally speaking, most users should stick to using Master branch. Experimental features and new code changes will be testing in the dev branch first...so that dev branch can be prone to having periodic glitches or regressions as the new features are developed. If you aren't a developer or debugging, stick to Master branch.  Click on ONE of the links below to download Loop code...hint hint...**click on the Master branch for 99% of users**.
-
-[Loop: Master branch](https://github.com/LoopKit/Loop/archive/master.zip)
+Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.)
 
 ---
 
-[Dev branch---in very rough shape right now, please only build if developer interested in debugging](https://github.com/LoopKit/Loop/archive/dev.zip)
+- [Loop: master branch](https://github.com/LoopKit/Loop/archive/master.zip)
 
-[Automatic-bolus branch---do your research before using as well, if you are asking what it is then you haven't researched enough yet](https://github.com/LoopKit/Loop/archive/automatic-bolus.zip)
+- [Loop: automatic-bolus branch](https://github.com/LoopKit/Loop/archive/automatic-bolus.zip)
+
+---
+
+- [Dev branch---please only build if you're a developer/advanced user interested in testing](https://github.com/LoopKit/Loop/archive/dev.zip)
+    - Note that dev will soon require iOS 14 on your device
+    - Once you install dev on a device, you might have to delete the app to return to master or automatic-bolus
+
 
 ---
 
