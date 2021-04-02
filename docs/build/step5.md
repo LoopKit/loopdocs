@@ -86,9 +86,9 @@ Many people keep their radio-link on the same side of their body as their pump d
 
 The practical range can vary from type to type and among individual units. Do some experiments - send a communication signal from phone to pump - if it makes the round-trip, extend the distance and repeat the test.  Figure out what works for your devices.
 
-Suggested communication signal to send for **Medtronic** send Button Press
+Suggested communication signal to send for **Medtronic**: Button Press
 
-Suggested communication signal to send for **Omnipod** send Read Pod Status
+Suggested communication signal to send for **Omnipod**: Read Pod Status
 
 * If you have a newer version of Loop, the report from Read Pod status has the Received Signal Strength Indicator (RSSI) between the radio-link and the Pod
 * The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod from the radio-link
