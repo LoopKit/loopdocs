@@ -427,10 +427,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#development-history" class="nav-link">Development History</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#how-to-use-these-docs" class="nav-link">How to Use These Docs</a>
               <ul class="nav flex-column">
               </ul>
@@ -443,6 +439,14 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#development-history" class="nav-link">Development History</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#information-for-coders" class="nav-link">Information for Coders</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -451,11 +455,18 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="welcome-to-loop">Welcome to Loop<a class="headerlink" href="#welcome-to-loop" title="Permanent link">⌁</a></h1>
-<p><img alt="img/phones.png" src="img/phones.png" width="300" />
-<img alt="img/phones.png" src="img/watch.png" /></p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⌁</a></h2>
-<p><a href="https://github.com/LoopKit/Loop">Loop</a> is an app template for building an automated insulin delivery system. It is a stone resting on the boulders of work done by many others.<br />
-The app is built on top of <a href="https://github.com/LoopKit/LoopKit">LoopKit</a>. LoopKit is a set of frameworks that provide data storage, retrieval, and calculation, as well as boilerplate view controllers used in Loop.</p>
+<p>What is Loop?</p>
+<ul>
+<li>Loop is an app that uses a compatible continuous glucose monitor (CGM) and is paired using a radio-link with your compatible pump.</li>
+<li>Loop assists in the many insulin dosing decisions people with diabetes face every day.</li>
+<li>Loop is an app you build yourself and load on your iPhone (or iPod).</li>
+<li>Loop works with older Medtronic pumps and the Eros (not Dash) Omnipods.  </li>
+</ul>
+<p>What CGMs work with Loop?</p>
+<p>The Loop app works with Dexcom’s G4, G5 and G6 CGM. For Medtronic users, Loop also works with first generation Guardian and Guardian 2 Medtronic sensors that are compatible with the 522, 722, 523 and 723 pumps. There are other versions of Loop available that may work for you if you are not using one of these specific CGMs.  These other versions (known as forks) are created by Loop users and are maintained by them. This document does not cover those other CGM options, but check out the <a href=".#stay-in-the-loop">Community Information</a> below.</p>
+<p><img alt="Loop main display on phone" src="img/phone_updated_loop.svg" width="300" />
+<img alt="Loop watch screen on watch" src="img/watch_updated_loop.svg" width="300" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>Please understand that this project:</p>
@@ -465,23 +476,92 @@ The app is built on top of <a href="https://github.com/LoopKit/LoopKit">LoopKit<
 </ul>
 <p><strong>You take full responsibility for building and running this system and do so at your own risk.</strong></p>
 </div>
-<p>Using the open-source Loop app template, you can build an insulin delivery system that uses specific commercial and open-source hardware and software technologies to bring together the insulin pump, continuous glucose monitor (CGM), and insulin dosing algorithm to create a continuous insulin basal dosing “Loop”.  This Loop predicts future glucose based on basal-rate schedules, carbohydrate intake, insulin on board, and current CGM readings.  These glucose forecasts provide Loop with the information needed to recommend a temporary basal rate to attain a targeted glucose range in the future.  The system can either operate as an “open-loop” by making recommendations to the user for their approval before enacting or as a “closed-loop” by automatically setting the recommended temporary basal rate.
-You should undertake this project in stages. For example, first “open loop” to familiarize yourself with Loop’s operation. Also, investigate the code to ensure you understand what it is recommending and why. Then when you progress to “closed-loop”, do so safely by starting with appropriate safety limits and only progress to higher limits after several days of no lows. Please ask questions at this point about why Loop is making the recommendations it does.  It should be similar to the therapy decisions you would make yourself.  If the recommendations it makes are different than you would make, try to figure out why.</p>
-<h2 id="development-history">Development History<a class="headerlink" href="#development-history" title="Permanent link">⌁</a></h2>
-<p>Loop has been developed as an open-source, shared project.  For a really interesting read about the history of Loop development, check out this <a href="https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805">History of Loop and LoopKit</a> post, written by Loop developer Nate Racklyeft.  The project continues to be a labor-of-love by a community of users; maintained and improved by volunteers.</p>
+<p>The Loop algorithm on your phone predicts future glucose based on carbohydrate intake, insulin on board, and current CGM readings. You enter your own settings for desired correction range, basal schedule, insulin sensitivity factor (ISF), carbohydrate ratio (CR) and the type of insulin you are using.  The glucose predictions, using your settings and meal entries, provide Loop with the information needed to recommend a bolus or temporary basal rate to attain a targeted glucose range in the future.</p>
+<p>The system can either operate “open-loop” by making recommendations to the user for their approval before enacting or “closed-loop” by automatically providing the recommended increase or decrease in insulin delivery.</p>
+<p>You may be saying - I can't build an app. But the wonderful volunteers in this community prepared this amazing website with step-by-step instructions containing pictures and arrows (say thank you to Katie DiSimone). The website is updated by more volunteers as improvements are made to the Loop app and when Apple makes changes to their iOS, Xcode and macOS environment. This language may sound scary, but it will become easier. Most people who Loop want to keep looping, so they learn the terminology and how to reach out to mentors for help.</p>
+<p>Once you've built the app, plan to learn to use it in stages. First run “open loop” to familiarize yourself with Loop’s operation. This allows you to understand why Loop is making certain recommendations and determine if you need to adjust Loop settings.</p>
+<p>One thing many new users ask is why do my settings need to be different for Loop?  The main reason is that Loop uses a realistic model of insulin activity in your body including the long tail - and updates its calculations every 5 minutes.  You might have used a linear fall-off model for insulin activity and corrected once every 2 or 3 hours. You might also have traded off higher basal rate to avoid worrying about snacks.  There is a whole section on settings - just giving you a heads up.</p>
+<p>When you progress to “closed-loop”, do so safely by starting with conservative Correction Ranges and Delivery Limits and only progress to more aggressive settings after several days of no lows. Please ask questions at this point about why Loop is making the recommendations it does.  It should be similar to the therapy decisions you would make yourself.  If the recommendations it makes are different than you would make, try to figure out why. Hint - it is probably your settings.</p>
 <h2 id="how-to-use-these-docs">How to Use These Docs<a class="headerlink" href="#how-to-use-these-docs" title="Permanent link">⌁</a></h2>
 <ul>
-<li>Use the navigation menu at the top of the screen to find the info you are looking for.</li>
-<li>A Table of Contents for the current page is always displayed on the left side of the screen.</li>
-<li>You can search the Loop Docs site by clicking the <img alt="img/search_icon.png" src="img/search_icon.png" width="50px" /> icon.
-<img alt="img/search_example.png" src="img/search_example.png" width="400" /></li>
+<li>Use the navigation menu at the top of the screen<ul>
+<li>Most menu items are only one level deep - so you see all the underlying pages by clicking on the menu name</li>
+<li>Operate has 4 drop-down menus, easiest way to go through these pages is hitting Next or the letter <code>n</code><ul>
+<li>Operate-&gt;How To Use Loop App</li>
+<li>Operate-&gt;Looping Tips</li>
+<li>Operate-&gt;Algorithm</li>
+<li>Operate-&gt;Troubleshoot</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Use the Table of Contents for the current page, which is displayed on the left side of the screen<ul>
+<li>On mobile devices, at the top of the page, tap the down arrow on the upper left to display the TOC, tap again to dismiss it</li>
+</ul>
+</li>
+<li>Read pages sequentially first time through<ul>
+<li>Type the letter <code>n</code> for next and <code>p</code> for previous to navigate</li>
+</ul>
+</li>
+<li>Search for topics by clicking the Search icon or typing the letter <code>s</code> on your keyboard<ul>
+<li>As you type in the search box, suggested section headings with the first few rows of content will show up below the search bar</li>
+<li>Scroll down and select the Heading Title of the section of interest</li>
+<li>If you hit return, the Search display vanishes
+<br/><br/><img alt="how to use the search for this site" src="img/search_example.png" width="400" /><br/><br/></li>
+</ul>
+</li>
+<li>There is another website, <a href="https://kdisimone.github.io/looptips/">Looptips</a>, you should review<ul>
+<li>While these articles were written and illustrated with an earlier version of Loop, they are well worth reading</li>
+<li>This link is repeated on the Operate-&gt;Looping Tips-&gt;Loop Tips page</li>
+</ul>
+</li>
 </ul>
 <h2 id="stay-in-the-loop">Stay in the Loop!<a class="headerlink" href="#stay-in-the-loop" title="Permanent link">⌁</a></h2>
-<p><a href="https://groups.google.com/forum/#!forum/loop-ios-users">Sign up for the Loop Users announcement list</a> to stay informed of critical issues that may arise.
-Join the Zulipchat at <a href="https://loop.zulipchat.com">https://loop.zulipchat.com</a>
-There is also a <a href="https://www.facebook.com/groups/TheLoopedGroup/?fref=nf">Looped Facebook Group</a> that you might wish to join for support.  When you request to join the group, please remember to check your messages box on facebook and respond to the message.</p>
+<p>There are a number of social media options. (Read the directions on each of these - some ask you to answer questions - please do so):</p>
+<ul>
+<li>The fastest way to get help (with the most number of mentors) is to join <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a>.</li>
+<li>There is another group, Loop and Learn, that has a lot of Loop-centric information, a Speaker Series covering many topics of general Diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.<ul>
+<li><a href="https://www.facebook.com/groups/LOOPandLEARN">LoopandLearn Facebook Group</a></li>
+<li><a href="https://www.loopandlearn.org">LoopandLearn Website</a></li>
+</ul>
+</li>
+<li>Both the Looped and LoopandLearn Facebook groups provide support for some Loop forks (remember other CGM?) as well as other DIY closed loop options.</li>
+<li>Many Loopers use the Nightscout tool to assist in monitoring their settings in Loop. The fastest Nightscout help can be found in the original #wearenotwaiting community <a href="https://www.facebook.com/groups/CGMinthecloud">CGM in the Cloud</a>.</li>
+<li>For those not interested in Facebook or interested in what is coming next for Loop, join <a href="https://loop.zulipchat.com">Loop Zulipchat</a> and be sure to subscribe to all the channels.  <ul>
+<li>Note - please only post in one channel at zulipchat - the mentors are subscribed to all of them.</li>
+</ul>
+</li>
+<li>And for those interested in delving deeper, see the next few sections.</li>
+</ul>
 <h2 id="contribute">Contribute<a class="headerlink" href="#contribute" title="Permanent link">⌁</a></h2>
-<p>Please consider submitting any updates and improvements to the documentation that you want to share by submitting a Pull Request to the <a href="https://github.com/LoopKit/loopdocs">loopdocs repo</a>. For more information on how to contribute to an open-source project, this <a href="https://opensource.guide/how-to-contribute/">How to Contribute to Open Source</a> guide may be useful. Also, please review the Loop <a href="https://github.com/LoopKit/Loop/blob/master/LICENSE.md">LICENSE</a> and Loop <a href="https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md">CODE_OF_CONDUCT</a>.</p></div>
+<p>Please consider submitting suggestions for updates and improvements to this documentation or the <a href=".#information-for-coders">Loop app code</a>.</p>
+<p>For documentation, please go to the <a href="https://github.com/LoopKit/loopdocs/issues">LoopKit/loopdocs repository Issues page</a>. Review issues that are already open. If your issue is open, you are welcome to add comments or vote to have the issue handled promptly. If your issue is new, please add it by clicking on the <code>New Issue</code> button. Indicate what page or pages need updating with a brief description, and we'll collaborate from there. (Note - you do not have to log in to github to read the Issues, but you cannot comment or add a new Issue without logging in.)</p>
+<p>If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  On Facebook - make sure your post is clear that you have a comment about LoopDocs.  In Loop Zulipchat, please use the <a href="https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue">documentation stream, Loopdocs Issue topic</a></p>
+<p>There are over 70 pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.</p>
+<h2 id="development-history">Development History<a class="headerlink" href="#development-history" title="Permanent link">⌁</a></h2>
+<p>Loop is an open-source, shared project.</p>
+<ul>
+<li>
+<p>Read about the early history of Loop development: <a href="https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805">History of Loop and LoopKit</a>, written by Loop developer Nate Racklyeft</p>
+</li>
+<li>
+<p>Read about the early days and the many advances brought about by the greater Diabetes Community of people who are not waiting: <a href="https://www.artificialpancreasbook.com/">The Artificial Pancreas Book</a> written by Dana Lewis and check out her website <a href="https://diyps.org">DIYPS</a></p>
+</li>
+<li>
+<p>Read about how hard it was to get a new insulin pump (Omnipod) to work with Loop: <a href="https://medium.com/@ps2">Insulin Pumps, Decapped chips and Software Defined Radios</a> written by Loop developer Pete Schwamb and <a href="https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf">Deep dip teardown of tubeless insulin pump</a> by Sergei Skorobogatov</p>
+</li>
+</ul>
+<p>The project continues to be a labor-of-love by a community of users; maintained and improved by volunteers.</p>
+<h2 id="information-for-coders">Information for Coders<a class="headerlink" href="#information-for-coders" title="Permanent link">⌁</a></h2>
+<p><a href="https://github.com/LoopKit/Loop">Loop</a> is an app template for building an automated insulin delivery system. It is a stone resting on the boulders of work done by many others.</p>
+<p>The app is built on top of <a href="https://github.com/LoopKit/LoopKit">LoopKit</a>. LoopKit is a set of frameworks that provide data storage, retrieval, and calculation, as well as boilerplate view controllers used in Loop. Using the open-source Loop app template, you can build an insulin delivery system that uses specific commercial and open-source hardware and software technologies to bring together the insulin pump, continuous glucose monitor (CGM), and insulin dosing algorithm to create a DIY automated insulin delivery system. This version is known as Loop.  </p>
+<p>For more information on how to contribute to an open-source project, please review:</p>
+<ul>
+<li><a href="https://opensource.guide/how-to-contribute/">How to Contribute to Open Source</a></li>
+<li>Review the Loop <a href="https://github.com/LoopKit/Loop/blob/master/LICENSE.md">LICENSE</a></li>
+<li>Review the Loop <a href="https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md">CODE_OF_CONDUCT</a></li>
+</ul>
+<p>Then if you want to contribute, please join <a href="https://loop.zulipchat.com">Loop Zulipchat</a> and be sure to subscribe to all the channels. Meet the developers and testers who make this app the life-changing tool that so many people use. Learn about what is coming next.</p></div>
             </div>
         </div>
 
@@ -565,5 +645,5 @@ There is also a <a href="https://www.facebook.com/groups/TheLoopedGroup/?fref=nf
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-04-02 21:12:55.183479+00:00
+Build Date UTC : 2021-04-04 05:52:22.704486+00:00
 -->
