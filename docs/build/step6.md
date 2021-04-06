@@ -13,6 +13,18 @@
     - **"Do I use my Apple ID or my kid's Apple ID to enroll in the Apple Developer program?"** The Apple ID you use to enroll in the developer program does not need to be the same Apple ID as the Loop iPhone or Looper uses, for example a parent installing Loop on kid's iPhone. Typically for the developer enrollment, use the Apple ID of the person who will be doing the Loop app building.
     - **"How long does it take to have my Apple Development account active after I enroll?"** After you enroll, make sure you look for a confirmation email. Apple says it can take up to 24-48 hours to confirm and setup a new Apple developer account, however some people have had the process only take minutes. It can vary. One SURE way to make it take longer? Use a different credit card to pay for the Apple Developer account enrollment than is already associated with the Apple ID you'll be enrolling with. When you do that, I've heard Apple makes you send in a xerox copy of your driver's license and a bunch of other hassle.
 
+## Loopers Need Their Own Apple ID
+
+It is important to understand that the Apple ID is distinct from the Apple Developer ID.
+
+!!! warning "Apple ID"
+    Parents should set up a different Apple ID for each of their looper children and looper children should not use the parent Apple ID. [Please use Apple's Instructions for adding an Apple ID for your child.](https://support.apple.com/en-us/HT201084)
+
+    Sharing the Apple ID prevents Apple Health features from working properly.  Sharing an Apple ID among two or more loopers can cause safety issues. You don't want Sally to be dosed for Joe's lunch in addition to her own and vice versa. In fact, the recommendation for [Health Permissions](health.md#loop-permissions) has changed because this has happened.
+
+    The Apple Health record is a convenient record of blood glucose, insulin and carbohydrates and should be associated with only one individual.
+
+
 In order to build your own Loop app, you will need to use an Apple developer account.  You will have two options for an individual account; free or paid.
 
 ## Free Developer Account
