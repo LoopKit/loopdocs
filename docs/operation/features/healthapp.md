@@ -1,14 +1,8 @@
 # Health App
 
-Loop app uses the iPhone's Health app to store BGs, insulin, and carbohydrate data. You can check your Health App settings for Loop by opening the Health App, clicking on your account's photo in the upper right corner of Health app, and then clicking on the Apps row in Privacy section.
+Loop app uses the iPhone's Health app to store BGs, insulin, and carbohydrate data. You can check your Health App settings as shown [here](../../build/health.md#loop-permissions).
 
-![img/healthapp.jpeg](img/healthapp.jpeg){width="350"}
-{align="center"}
-
-Your Loop app should have the ability to read and write all three categories. Without these permissions, Loop will not function properly.
-
-![img/healthapp-permissions.PNG](img/healthapp-permissions.PNG){width="350"}
-{align="center"}
+The figure and description from below are from iOS 12, but with the help of your favorite search engine, you can determine how to get similar plots with iOS 14.
 
 Summaries of your carbohydrates, insulin, and BG results can be found by clicking on the Browse option at the bottom toolbar of the Health app. Blood glucose data are located in the Vitals section, Carbohydrates are in the Nutrition section, and insulin data are in the Other Data section.
 
