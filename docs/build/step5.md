@@ -2,11 +2,11 @@
 
 !!! danger "Time Estimate"
     - 15-20 minutes to read about RileyLink compatible devices
-    - 15 minutes to order a RileyLink compatible device
+    - 15 minutes to order a device
 
 !!! info "Summary"
     - Decide what kind of RileyLink compatible device to buy
-    - Order your RileyLink compatible device
+    - Order your compatible device
 
 !!! warning "FAQs"
     - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two).

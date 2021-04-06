@@ -52,9 +52,9 @@ Now that your pump is paired with Loop, you will be finishing these steps:
 ![img/add_pump2.png](img/add_pump2.png){width="750"}
 {align="center"}
 
-## Future Time Changes
+## Change Time Zone
 
-Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup. But there will be other times you need to change the time - traveling or daylight savings time start and end. It is important that Loop and your pump share a common time setting, otherwise Looping will fail.  If you are traveling through timezones or dealing with daylight savings time, please read up on [how to safely change your pump time](../../troubleshooting/time-change.md#traveling-across-time-zones-and-daylight-savings).
+Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup. But there will be other times you need to change the time - traveling or daylight savings time start and end. It is important that Loop and your pump share a common time setting, otherwise Looping will fail.  If you are traveling through time zones or dealing with daylight savings time, please read up on [how to safely change your pump time](../../troubleshooting/time-change.md#traveling-across-time-zones-and-daylight-savings).
 
 !!! info ""
 

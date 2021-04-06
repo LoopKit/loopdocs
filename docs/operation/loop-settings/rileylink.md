@@ -35,7 +35,7 @@ There are several commands that Loop can issue to a Medtronic pump. Most are sim
 
 The frequency used by the device to communicate with the pump is reported along with the time at which it was tuned.  If you tap on that line, Loop will do a manual tune, but this should not be necessary.  If Loop hasn't communicated with the pump in 2 cycles, it will automatically tune the frequency.
 
-There is a Change Time button here, but since it is also found in the pump menu, you are more likely to tap it there.  Both buttons do the same thing - update your pump to match the current time at the current timezone.
+There is a Change Time button here, but since it is also found in the pump menu, you are more likely to tap it there.  Both buttons do the same thing - update your pump to match the current time at the current time zone.
 
 ### Other commands
 
