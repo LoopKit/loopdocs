@@ -4,10 +4,11 @@
 
 What is Loop?
 
-* Loop is an app that uses a compatible continuous glucose monitor (CGM) and is paired using a radio-link with your compatible pump.
-* Loop assists in the many insulin dosing decisions people with diabetes face every day.
-* Loop is an app you build yourself and load on your iPhone (or iPod).
-* Loop works with older Medtronic pumps and the Eros (not Dash) Omnipods.  
+* Loop is an app you build yourself and load on your iPhone (or iPod)
+* Loop assists in the many insulin dosing decisions people with diabetes face every day
+* Loop uses a compatible continuous glucose monitor (CGM) and is paired using the RileyLink protocol with your compatible pump
+    * Loop works with older Medtronic pumps and the Eros (not Dash) Omnipods
+    * Loop requires a [RileyLink compatible device](build/step5.md#rileylink-compatible-devices) to communicate between the phone and pump
 
 What CGMs work with Loop?
 
@@ -63,24 +64,15 @@ When you progress to “closed-loop”, do so safely by starting with conservati
 There are a number of social media options. (Read the directions on each of these - some ask you to answer questions - please do so):
 
   * The fastest way to get help (with the most number of mentors) is to join [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup).
-  * There is another group, Loop and Learn, that has a lot of Loop-centric information, a Speaker Series covering many topics of general Diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
+  * There is another group, Loop and Learn, that has a lot of Loop-centric information, a T1D Speaker Series covering many topics of general diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
       * [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
       * [LoopandLearn Website](https://www.loopandlearn.org)
   * Both the Looped and LoopandLearn Facebook groups provide support for some Loop forks (remember other CGM?) as well as other DIY closed loop options.
   * Many Loopers use the Nightscout tool to assist in monitoring their settings in Loop. The fastest Nightscout help can be found in the original #wearenotwaiting community [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud).
-  * For those not interested in Facebook or interested in what is coming next for Loop, join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels.  
-      * Note - please only post in one channel at zulipchat - the mentors are subscribed to all of them.
-  * And for those interested in delving deeper, see the next few sections.
+  * For those not interested in Facebook or interested in what is coming next for Loop, join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the streams or you'll miss some interesting conversations.  
+  * Note - please only post a question in one group on Facebook or under one stream on zulipchat - many mentors monitor more than one place. If you don't hear an answer in 24 hours, then try a different place. On Facebook, leave your question posted after you've gotten an answer, but edit the original post to say it's been resolved.  This prevents mentors from needing to read all the answers to see if you've been helped. Others may have the same question and will read your post.
 
-## Contribute
-
-Please consider submitting suggestions for updates and improvements to this documentation or the [Loop app code](index.md#information-for-coders).
-
-For documentation, please go to the [LoopKit/loopdocs repository Issues page](https://github.com/LoopKit/loopdocs/issues). Review issues that are already open. If your issue is open, you are welcome to add comments or vote to have the issue handled promptly. If your issue is new, please add it by clicking on the `New Issue` button. Indicate what page or pages need updating with a brief description, and we'll collaborate from there. (Note - you do not have to log in to github to read the Issues, but you cannot comment or add a new Issue without logging in.)
-
-If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  On Facebook - make sure your post is clear that you have a comment about LoopDocs.  In Loop Zulipchat, please use the [documentation stream, Loopdocs Issue topic](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue)
-
-There are over 70 pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.
+For those interested in delving deeper, see the next few sections.
 
 ## Development History
 
@@ -93,6 +85,16 @@ Loop is an open-source, shared project.
   * Read about how hard it was to get a new insulin pump (Omnipod) to work with Loop: [Insulin Pumps, Decapped chips and Software Defined Radios](https://medium.com/@ps2) written by Loop developer Pete Schwamb and [Deep dip teardown of tubeless insulin pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf) by Sergei Skorobogatov
 
 The project continues to be a labor-of-love by a community of users; maintained and improved by volunteers.
+
+## Contribute
+
+Please consider submitting suggestions for updates and improvements to this documentation or the [Loop app code](index.md#information-for-coders).
+
+For documentation, please go to the [LoopKit/loopdocs repository Issues page](https://github.com/LoopKit/loopdocs/issues). Review issues that are already open. If your issue is open, you are welcome to add comments or vote to have the issue handled promptly. If your issue is new, please add it by clicking on the `New Issue` button. Indicate what page or pages need updating with a brief description, and we'll collaborate from there. (Note - you do not have to log in to github to read the Issues, but you cannot comment or add a new Issue without logging in.)
+
+If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  On Facebook - make sure your post is clear that you have a comment about LoopDocs.  In Loop Zulipchat, please use the [documentation stream, Loopdocs Issue topic](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue)
+
+There are over 70 pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.
 
 ## Information for Coders
 
