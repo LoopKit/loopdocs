@@ -81,23 +81,10 @@ You will notice the Signal Strength is a negative number and in units of dB. Rem
 
 The range at which RileyLink compatible devices will function is dependent on the environment that you are in and the specific device design. Both the OrangeLink and some sizes of the EmaLink have reported longer ranges than RileyLink - but they still need to be "near enough".
 
-What influences this distance for a given device? The biggest external influences are (1) body-blocking and (2) "noisy" environments. The human body is a lot of water, and water is an excellent blocker of wireless communication. So, sleeping on a pod and smothering it entirely with your body will possibly decrease the ability of the device to communicate with the pod. Environments with a high concentration of wireless signals can also interfere with device communications and make closer proximity a benefit. Where might those kinds of situations happen? Concerts, conferences, and sporting arenas are pretty prone to interference.
+What influences this distance for a given device? The biggest external influences are (1) body-blocking and (2) "noisy" environments. The human body is a lot of water, and water is an excellent blocker of wireless communication. So, sleeping on a pod and smothering it entirely with your body can decrease the ability of the device to communicate with the pod. Environments with a high concentration of wireless signals can also interfere with device communications and make closer proximity a benefit. Where might those kinds of situations happen? Concerts, conferences, and sporting arenas are pretty prone to interference.
 
 Many people keep their device on the same side of their body as their pump during the day. They use a pocket, carabiner, lanyard, SPIbelt - the options are endless. What you don't want to do is put it in a blocking bag that has RFID blocking (some travel fanny packs have that).  
 
-The practical range can vary by device design and among individual units of the same design. Do some experiments - send a communication signal from phone to pump - if it makes the round-trip, extend the distance and repeat the test.  Figure out what works for your devices.
-
-Suggested communication signals to send:
-
-* **Medtronic**: Button Press
-* **Omnipod**: Read Pod Status
-
-If you use Omnipod and have a newer version of Loop, the report from Read Pod status has the Received Signal Strength Indicator (RSSI) between the RileyLink compatible device and the Pod
-
-* The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod
-* This information complements the BT signal strength reported in the device menu
-
-If you want to be analytic about your range test, you can make a table of distance, Bluetooth strength and, if available, RSSI.
 
 ## Waiting for your RileyLink Compatible Device
 
