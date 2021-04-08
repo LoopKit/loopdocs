@@ -6,7 +6,7 @@ Let's divide this page up into two parts. The first part deals with individual r
 
 So you are here for help with getting your Loop green again? It's red and not working? Wondering what is happening? You can click on the red loop icon to read an error message that you may or may not understand. If you understand it, great...that should help you fix the problem. If you don't understand it, then there are two options to fix the red loop; the first is quick and easy, the second is more in-depth. Let's look at both.
 
-**OmniPod Users**: Do not quickly decide to pull a pod that isn't responding and has a red loop. Usually the issue is that the RileyLink compatible device needs a reset as described below in Option 1, rather than the pod needing to be changed. If you don't fix the device's problem first, the problem may carry forward into a failed pod-pairing attempt because it still isn't working. So, please try getting the device working properly before deciding to ditch a pod because of a red loop.
+**Omnipod Users**: Do not quickly decide to pull a pod that isn't responding and has a red loop. Usually the issue is that the RileyLink compatible device needs a reset as described below in Option 1, rather than the pod needing to be changed. If you don't fix the device's problem first, the problem may carry forward into a failed pod-pairing attempt because it still isn't working. So, please try getting the device working properly before deciding to ditch a pod because of a red loop.
 
 ### Option 1: Easy Steps
 
@@ -70,7 +70,7 @@ Finally, we see a lot of errors reported because people have problems with their
 
 The obvious fix is to make sure the RileyLink compatible device is not so far away from the pump or pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps.
 
-**OmniPod Loopers**: Option 1 almost always fixes this issue.
+**Omnipod Loopers**: Option 1 almost always fixes this issue.
 
 **Medtronic Loopers**: you may have times when the pump is not responding with "decoding" errors or various other messages about pump responses. Try the following:
 
