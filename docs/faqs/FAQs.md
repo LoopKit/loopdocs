@@ -99,7 +99,7 @@ One developer account can only be "linked" to a limited number of devices. So on
 
 Your Loop app will also die immediately if their developer account is not renewed or expires.
 
-Moral of the story, out of all the ways to save money...borrowing someone's developer account is not a good place to save money. You could find yourself unexpectedly without a Loop app without notice.
+Moral of the story, out of all the ways to save money...borrowing someone's developer account is not a good place to save money. You don't want your Loop app to suddenly stop working.
 
 
 ## How can I find a compatible pump? supplies?
