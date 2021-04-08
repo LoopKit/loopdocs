@@ -43,7 +43,7 @@ nav:
     - 'Step 4: Configurations': 'operation/loop-settings/configurations.md'
     - 'Step 5: Loop Services': 'operation/loop-settings/services.md'
     - 'Loop Displays': 'operation/loop-settings/displays.md'
-    - 'Device Menu': 'operation/loop-settings/rileylink.md'
+    - 'RileyLink Menu': 'operation/loop-settings/rileylink.md'
 - Operate:
     - 'Meal Entries': 'operation/features/carbs.md'
     - 'Bolus': 'operation/features/bolus.md'
