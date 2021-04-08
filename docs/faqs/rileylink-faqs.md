@@ -2,7 +2,7 @@
 
 ## What is the RileyLink compatible device? Do I have to have one?
 
-The RileyLink compatible device is a required part of Loop. It is a small device that helps your iPhone and pump/pod speak to each other. The Loop compatible pumps communicate via radio-frequency and the iPhone communicates via Bluetooth. The device is like a translator that can speak both formats so that the pump and iPhone can loop together. The device communicates information to/from your pump by radio communications, and to/from your iPhone using Bluetooth.
+The RileyLink compatible device is a required part of Loop. It is a small device that helps your iPhone and pump/pod speak to each other. The Loop compatible pumps communicate via radio-frequency and the iPhone communicates via Bluetooth. The device is like a translator that can speak both formats so that the pump and iPhone can loop together. The device uses the RileyLink protocol to communicate information to/from your pump by radio communications, and to/from your iPhone using Bluetooth.
 
 Purchase information for these devices is found in [Build Step 5: RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices)
 
