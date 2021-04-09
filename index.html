@@ -63,7 +63,7 @@
 </li>
                                     
 <li>
-    <a href="build/step5/" class="dropdown-item">Step 5 Order a Radio-Link</a>
+    <a href="build/step5/" class="dropdown-item">Step 5 Order a RileyLink</a>
 </li>
                                     
 <li>
@@ -162,7 +162,7 @@
 </li>
                                     
 <li>
-    <a href="operation/loop-settings/rileylink/" class="dropdown-item">RileyLink menu</a>
+    <a href="operation/loop-settings/rileylink/" class="dropdown-item">RileyLink Menu</a>
 </li>
                                 </ul>
                             </li>
@@ -369,7 +369,7 @@
 </li>
                                     
 <li>
-    <a href="faqs/rileylink-faqs/" class="dropdown-item">Radio-link FAQs</a>
+    <a href="faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
 </li>
                                     
 <li>
@@ -435,11 +435,11 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#contribute" class="nav-link">Contribute</a>
+            <li class="nav-item" data-level="2"><a href="#development-history" class="nav-link">Development History</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#development-history" class="nav-link">Development History</a>
+            <li class="nav-item" data-level="2"><a href="#contribute" class="nav-link">Contribute</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -458,10 +458,13 @@
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⌁</a></h2>
 <p>What is Loop?</p>
 <ul>
-<li>Loop is an app that uses a compatible continuous glucose monitor (CGM) and is paired using a radio-link with your compatible pump.</li>
-<li>Loop assists in the many insulin dosing decisions people with diabetes face every day.</li>
-<li>Loop is an app you build yourself and load on your iPhone (or iPod).</li>
-<li>Loop works with older Medtronic pumps and the Eros (not Dash) Omnipods.  </li>
+<li>Loop is an app you build yourself and load on your iPhone (or iPod)</li>
+<li>Loop assists in the many insulin dosing decisions people with diabetes face every day</li>
+<li>Loop uses a compatible continuous glucose monitor (CGM) and is paired using the RileyLink protocol with your compatible pump<ul>
+<li>Loop works with older Medtronic pumps and the Eros (not Dash) Omnipods</li>
+<li>Loop requires a <a href="build/step5/#rileylink-compatible-devices">RileyLink compatible device</a> to communicate between the phone and pump</li>
+</ul>
+</li>
 </ul>
 <p>What CGMs work with Loop?</p>
 <p>The Loop app works with Dexcom’s G4, G5 and G6 CGM. For Medtronic users, Loop also works with first generation Guardian and Guardian 2 Medtronic sensors that are compatible with the 522, 722, 523 and 723 pumps. There are other versions of Loop available that may work for you if you are not using one of these specific CGMs.  These other versions (known as forks) are created by Loop users and are maintained by them. This document does not cover those other CGM options, but check out the <a href=".#stay-in-the-loop">Community Information</a> below.</p>
@@ -520,24 +523,17 @@
 <p>There are a number of social media options. (Read the directions on each of these - some ask you to answer questions - please do so):</p>
 <ul>
 <li>The fastest way to get help (with the most number of mentors) is to join <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a>.</li>
-<li>There is another group, Loop and Learn, that has a lot of Loop-centric information, a Speaker Series covering many topics of general Diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.<ul>
+<li>There is another group, Loop and Learn, that has a lot of Loop-centric information, a T1D Speaker Series covering many topics of general diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.<ul>
 <li><a href="https://www.facebook.com/groups/LOOPandLEARN">LoopandLearn Facebook Group</a></li>
 <li><a href="https://www.loopandlearn.org">LoopandLearn Website</a></li>
 </ul>
 </li>
 <li>Both the Looped and LoopandLearn Facebook groups provide support for some Loop forks (remember other CGM?) as well as other DIY closed loop options.</li>
 <li>Many Loopers use the Nightscout tool to assist in monitoring their settings in Loop. The fastest Nightscout help can be found in the original #wearenotwaiting community <a href="https://www.facebook.com/groups/CGMinthecloud">CGM in the Cloud</a>.</li>
-<li>For those not interested in Facebook or interested in what is coming next for Loop, join <a href="https://loop.zulipchat.com">Loop Zulipchat</a> and be sure to subscribe to all the channels.  <ul>
-<li>Note - please only post in one channel at zulipchat - the mentors are subscribed to all of them.</li>
+<li>For those not interested in Facebook or interested in what is coming next for Loop, join <a href="https://loop.zulipchat.com">Loop Zulipchat</a> and be sure to subscribe to all the streams or you'll miss some interesting conversations.  </li>
+<li>Note - please only post a question in one group on Facebook or under one stream on zulipchat - many mentors monitor more than one place. If you don't hear an answer in 24 hours, then try a different place. On Facebook, leave your question posted after you've gotten an answer, but edit the original post to say it's been resolved.  This prevents mentors from needing to read all the answers to see if you've been helped. Others may have the same question and will read your post.</li>
 </ul>
-</li>
-<li>And for those interested in delving deeper, see the next few sections.</li>
-</ul>
-<h2 id="contribute">Contribute<a class="headerlink" href="#contribute" title="Permanent link">⌁</a></h2>
-<p>Please consider submitting suggestions for updates and improvements to this documentation or the <a href=".#information-for-coders">Loop app code</a>.</p>
-<p>For documentation, please go to the <a href="https://github.com/LoopKit/loopdocs/issues">LoopKit/loopdocs repository Issues page</a>. Review issues that are already open. If your issue is open, you are welcome to add comments or vote to have the issue handled promptly. If your issue is new, please add it by clicking on the <code>New Issue</code> button. Indicate what page or pages need updating with a brief description, and we'll collaborate from there. (Note - you do not have to log in to github to read the Issues, but you cannot comment or add a new Issue without logging in.)</p>
-<p>If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  On Facebook - make sure your post is clear that you have a comment about LoopDocs.  In Loop Zulipchat, please use the <a href="https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue">documentation stream, Loopdocs Issue topic</a></p>
-<p>There are over 70 pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.</p>
+<p>For those interested in delving deeper, see the next few sections.</p>
 <h2 id="development-history">Development History<a class="headerlink" href="#development-history" title="Permanent link">⌁</a></h2>
 <p>Loop is an open-source, shared project.</p>
 <ul>
@@ -552,6 +548,11 @@
 </li>
 </ul>
 <p>The project continues to be a labor-of-love by a community of users; maintained and improved by volunteers.</p>
+<h2 id="contribute">Contribute<a class="headerlink" href="#contribute" title="Permanent link">⌁</a></h2>
+<p>Please consider submitting suggestions for updates and improvements to this documentation or the <a href=".#information-for-coders">Loop app code</a>.</p>
+<p>For documentation, please go to the <a href="https://github.com/LoopKit/loopdocs/issues">LoopKit/loopdocs repository Issues page</a>. Review issues that are already open. If your issue is open, you are welcome to add comments or vote to have the issue handled promptly. If your issue is new, please add it by clicking on the <code>New Issue</code> button. Indicate what page or pages need updating with a brief description, and we'll collaborate from there. (Note - you do not have to log in to github to read the Issues, but you cannot comment or add a new Issue without logging in.)</p>
+<p>If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  On Facebook - make sure your post is clear that you have a comment about LoopDocs.  In Loop Zulipchat, please use the <a href="https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue">documentation stream, Loopdocs Issue topic</a></p>
+<p>There are over 70 pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.</p>
 <h2 id="information-for-coders">Information for Coders<a class="headerlink" href="#information-for-coders" title="Permanent link">⌁</a></h2>
 <p><a href="https://github.com/LoopKit/Loop">Loop</a> is an app template for building an automated insulin delivery system. It is a stone resting on the boulders of work done by many others.</p>
 <p>The app is built on top of <a href="https://github.com/LoopKit/LoopKit">LoopKit</a>. LoopKit is a set of frameworks that provide data storage, retrieval, and calculation, as well as boilerplate view controllers used in Loop. Using the open-source Loop app template, you can build an insulin delivery system that uses specific commercial and open-source hardware and software technologies to bring together the insulin pump, continuous glucose monitor (CGM), and insulin dosing algorithm to create a DIY automated insulin delivery system. This version is known as Loop.  </p>
@@ -645,5 +646,5 @@
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-04-06 06:09:25.163500+00:00
+Build Date UTC : 2021-04-09 23:48:41.670760+00:00
 -->
