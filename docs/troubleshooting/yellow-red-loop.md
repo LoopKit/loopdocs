@@ -6,7 +6,7 @@ Let's divide this page up into two parts. The first part deals with individual r
 
 So you are here for help with getting your Loop green again? It's red and not working? Wondering what is happening? You can click on the red loop icon to read an error message that you may or may not understand. If you understand it, great...that should help you fix the problem. If you don't understand it, then there are two options to fix the red loop; the first is quick and easy, the second is more in-depth. Let's look at both.
 
-**OmniPod Users**: Do not quickly decide to pull a pod that isn't responding and has a red loop. Usually the issue is that the RileyLink (or other radio-link) needs a reset as described below in Option 1, rather than the pod needing to be changed. If you don't fix the radio-link's problem first, the problem may carry forward into a failed pod-pairing attempt because the radio-link still isn't working. So, please try getting the radio-link working properly before deciding to ditch a pod because of a red loop.
+**Omnipod Users**: Do not quickly decide to pull a pod that isn't responding and has a red loop. Usually the issue is that the RileyLink compatible device needs a reset as described below in Option 1, rather than the pod needing to be changed. If you don't fix the device's problem first, the problem may carry forward into a failed pod-pairing attempt because it still isn't working. So, please try getting the device working properly before deciding to ditch a pod because of a red loop.
 
 ### Option 1: Easy Steps
 
@@ -17,7 +17,7 @@ So you are here for help with getting your Loop green again? It's red and not wo
     * Turn off Bluetooth on your phone and then turn it right back on again.
     * Close your Loop app (upswiping it in the iPhone's app selector) and reopen it.
     * Turn your RileyLink off/on at its physical power switch located on the side of the RileyLink.
-        * If you have a different radio-link, make sure you know how to power-cycle the device.
+        * If you have a different device, make sure you know how to power-cycle the device.
         * For RileyLink (without wireless charging) use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a [screaming pod silencer tool](../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod).
 
 
@@ -41,13 +41,13 @@ So you are here for help with getting your Loop green again? It's red and not wo
 
 How can you tell if your RileyLink has a problem? The answer is mostly within the LED lights that display on the board. Some information is listed below, but also review the [FAQs at getrileylink.org](https://getrileylink.org/faq).
 
-If you have a different radio-link, please check the appropriate site for troubleshooting help.
+If you have a different RileyLink compatible device, please check the appropriate site for troubleshooting help.
 
 **Red light**: comes on during charging and will turn off/on periodically, while still plugged in, after charge is complete.
 
 **Green light**: Indicates an active BT connection with the phone. You want the green light to stay on all the time on the RileyLink. If the green light is not on, then make sure your iPhone's bluetooth is still switched on.
 
-**Blue light**: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol [(unplug the battery first](https://youtu.be/s2qNPLpfwww)). If you still can't get the blue light off, then contact GetRileyLink about getting a new RileyLink.
+**Blue light**: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol [(unplug the battery first](https://youtu.be/s2qNPLpfwww)). If you still can't get the blue light off, then contact GetRileyLink for help or check out [RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices) for replacement options.
 
 ## CGM Values are not being collected by Loop
 
@@ -68,14 +68,14 @@ Finally, we see a lot of errors reported because people have problems with their
 
 ## Pump is not responding
 
-The obvious fix is to make sure the radio-link is not so far away from the pump or pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps.
+The obvious fix is to make sure the RileyLink compatible device is not so far away from the pump or pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps.
 
-**OmniPod Loopers**: Option 1 almost always fixes this issue.
+**Omnipod Loopers**: Option 1 almost always fixes this issue.
 
 **Medtronic Loopers**: you may have times when the pump is not responding with "decoding" errors or various other messages about pump responses. Try the following:
 
 1. Change pump battery. Low pump battery will cause radio communications to fail.
-1. Use the `Change Time` command in the RileyLink menu to update the pump's clock. If you've accidentally changed the pump's time in the pump itself, this will get the Loop app and pump back in sync.
+1. Use the `Change Time` command in the pump menu to update the pump's clock. If you've accidentally changed the pump's time in the pump itself, this will get the Loop app and pump back in sync.
 1. If using a x23 or x54 pump, try deleting all the IDs under the "Other Devices" submenu in the pump's "Connect Devices" menu.  Then go to the RileyLink menu and use the MySentry pairing command to get a fresh ID issued. Follow the directions listed in the MySentry pairing command's screen to scan for devices. A fresh ID can help prevent recurring red loops for x23 and x54 users, particularly if they started to occur after a recent Loop update.
 1. Make sure the following are checked in the pump:
     * Your pump cannot be suspended.  Resume insulin deliveries.
@@ -95,7 +95,7 @@ Here's some things to check if you have frequent red loops:
 
 * Oddly, some people have found that turning off Siri integrations for Loop and Dexcom apps in your iPhone settings has helped. This may be coincidental, but if you're still having trouble, you might want to try it.
 
-* Check for sources of wireless interference. If you have a certain environment that seems to have more drops than others, it is likely that there is a source of wireless communication interfering with your Loop. Lots of Medtronic Loopers in a room together will often interfere with each other and get "cross-talk" red loop error messages. If it is a bedroom at night causing problems, try moving other wireless devices such as routers or baby monitors farther away from where you and your radio-link.
+* Check for sources of wireless interference. If you have a certain environment that seems to have more drops than others, it is likely that there is a source of wireless communication interfering with your Loop. Lots of Medtronic Loopers in a room together will often interfere with each other and get "cross-talk" red loop error messages. If it is a bedroom at night causing problems, try moving other wireless devices such as routers or baby monitors farther away from where you and your RileyLink compatible device.
 
 ## Posting for Help
 
