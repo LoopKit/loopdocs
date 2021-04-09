@@ -1,18 +1,18 @@
-# Device Menu
+# RileyLink Menu
 
-The Device menu to view details about your RileyLink compatible device is accessed by clicking on the image of your connected pump in Loop settings. From that pump screen, scroll to the section labeled `DEVICES` and you will see the name(s) of your connected device(s).
+The RileyLink menu is accessed by clicking on the image of your connected pump in Loop settings or Heads Up Display. From that pump screen, scroll down to the section labeled `DEVICES` to view the list of connected RileyLink compatible device(s). Tapping on a name with a green slider by it takes you to the RileyLink Menu for that device.
 
 !!! danger "Helpful Tip"
-    As soon as you connect the device initially - it is strongly encouraged that you rename it from the default name for that device, e.g., RileyLink or OrangeLink or EmaLink. In the Device menu, tap on the Name line and enter your desired name. The new name may need to sit for a few seconds before exiting back out of the naming screen for it to be transferred and saved in the device. The device must be connected and on to change its name.
+    As soon as you connect the device initially - it is strongly encouraged that you rename it from the default name for that device, e.g., RileyLink or OrangeLink or EmaLink. Tap on the device as directed above, then tap on the Name line and enter your desired name. The new name may need to sit for a few seconds before exiting back out of the naming screen for it to be transferred and saved in the device. The device must be connected and on to change its name.
 
-Depending on which pump you have connected to your Loop app, your Device menu will look different. On the left below is the typical Device menu when using Medtronic pump, and on the right is with an Omnipod. As you can see, both have in common a section called "Device", but after that only the Medtronic pumps will have additional commands in the Device menu.
+The name at the top center is whatever you named your RileyLink compatible device. Depending on which pump you have connected to your Loop app, your screen will look different. On the left below is the typical screen when using a Medtronic pump, and on the right is with an Omnipod. As you can see, both have in common a section called `DEVICE`, but after that only the Medtronic pumps will have a `PUMP` and `COMMANDS` section. The corresponding section for Omnipod are in Pod Settings menu (tap Back from RileyLink Menu).
 
 ![img/rl-comp.png](img/rl-comp.png){width="450"}
 {align="center"}
 
 ## Device
 
-The settings under the Device section are mostly for your information only. The two most important lines are the Connection Status and Signal Strength. You can also send a few manual commands to the Medtronic pump to verify that Loop and the pump are communicating. The manual commands for Omnipod are all located in the Omnipod menu, not in the device menu.
+The lines under the Device section provide information on the device. The two most important lines are the Connection Status and Signal Strength.
 
 * The Connections Status should say `connected` if the device is connected to the iPhone's Bluetooth. If the status says `connecting` or `disconnected` then you should toggle the iPhone's BT and/or power cycle the device to help reconnect.
 
@@ -21,9 +21,9 @@ The settings under the Device section are mostly for your information only. The 
 ![img/RL_bt.jpg](img/RL_bt.jpg){width="350"}
 {align="center"}
 
-## Medtronic Device Menu
+## Medtronic
 
-The rest of this page covers the additional items found only on the Medtronic Device menu.
+The rest of this page covers the additional items found only with Medtronic pumps.
 
 ### Pump
 
