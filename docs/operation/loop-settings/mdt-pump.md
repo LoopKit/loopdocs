@@ -21,7 +21,6 @@ Your Loop won’t have much showing initially until we get some basic settings i
 Let’s start by clicking on the Loop Settings button in the tool bar at the bottom of your Loop app. It looks like a little sprocket. On the settings screen that opens, click on `Add Pump` and select the **Medtronic pump** option that appears.
 
 ![img/loop_settings_add_pump.png](img/loop_settings_add_pump.png){width="750"}
-{align="center"}{width="450"}
 {align="center"}
 
 ## Pump Pairing
@@ -35,9 +34,9 @@ You now need to follow a few simple screen prompts to add your Medtronic pump to
 ![img/add_pump.png](img/add_pump.png){width="750"}
 {align="center"}
 
-!!! info "For x23 and x54 Medtronic pump users only"
 
-    |||
+!!! info "For x23 and x54 Medtronic pump users only"
+    | <div style="width:144px"></div> ||
     |---|---|
     |![img/pump_broadcasts.png](img/pump_broadcasts.png){width="550"}|For x23 and x54 Medtronic pump users, there is a packet of information special to those pumps called MySentry messages. If you have never setup this part of the pump previously, you may see a screen, called "Pump Broadcasts", at this point in the setup process.</br></br>Follow the directions on the screen. They will require you to take some manual steps on your pump to "pair" it with your Loop app.</br></br>Basically, you will need to go to your pump's main menu, scroll down to Utilities, then Connect Devices, then Other Devices, turn that setting On, and then select Find Device. Once you do that, click on the `Continue` button in Loop app and the pairing will take place. This will allow those MySentry packets of information to flow to Loop app.</br></br>This step does not apply for x22 or x15 pump users, since those pumps do not have MySentry capabilities.|
 
@@ -52,6 +51,14 @@ Now that your pump is paired with Loop, you will be finishing these steps:
 
 ![img/add_pump2.png](img/add_pump2.png){width="750"}
 {align="center"}
+
+## Change Time Zone
+
+Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup. But there will be other times you need to change the time - traveling or daylight savings time start and end. It is important that Loop and your pump share a common time setting, otherwise Looping will fail.  If you are traveling through time zones or dealing with daylight savings time, please read up on [how to safely change your pump time](../../troubleshooting/time-change.md#traveling-across-time-zones-and-daylight-savings).
+
+!!! info ""
+
+    **Always use the Loop -> Pump -> Change Time command to change pump time. If you fail to set the pump time, Loop will not function properly.  Do not use the Medtronic pump menus to change your pump's time when Looping.**
 
 ## Next Step: Add CGM
 
