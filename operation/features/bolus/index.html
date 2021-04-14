@@ -182,6 +182,10 @@
     <a href="../workout/" class="dropdown-item">Overrides</a>
 </li>
                                     
+<li>
+    <a href="../../loop-settings/pump-commands/" class="dropdown-item">Pump Commands</a>
+</li>
+                                    
   <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">How to Use Loop App</a>
     <ul class="dropdown-menu">
@@ -423,27 +427,15 @@
             
             <li class="nav-item" data-level="1"><a href="#bolus" class="nav-link">Bolus</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#meal-bolus" class="nav-link">Meal Bolus</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#correction-bolus" class="nav-link">Correction Bolus</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#starting-bolus-notification" class="nav-link">Starting Bolus Notification</a>
+            <li class="nav-item" data-level="2"><a href="#bolus-status-line" class="nav-link">Bolus Status Line</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#bolus-failure-notifications" class="nav-link">Bolus Failure Notifications</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#square-or-dual-waves" class="nav-link">Square or Dual Waves</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#glucodyn" class="nav-link">Glucodyn</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -455,29 +447,44 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="bolus">Bolus<a class="headerlink" href="#bolus" title="Permanent link">⌁</a></h1>
-<p align="center"><img alt="img/toolbar.png" src="../img/toolbar.png" width="300" /></p>
-<p>Bolus entries can be made manually through the bolus tool (double orange triangles) in the toolbar, either as part of a meal bolus or as a correction for a high BG.</p>
-<h2 id="meal-bolus">Meal Bolus<a class="headerlink" href="#meal-bolus" title="Permanent link">⌁</a></h2>
-<p>Loop has a bolus tool, similar to a pump’s bolus wizard. After a carb entry is saved, Loop will provide a bolus screen with a recommended bolus amount. The only time the bolus screen wouldn't appear is if Loop believes the insulin-on-board is already sufficient to cover the added carbs or you are missing current blood glucose data. If you want to deliver the total amount of the recommended bolus, simply tap on the recommended amount of units and the bolus delivery line will automatically be filled in with the same units. If you want to give fewer units than the recommended amount, you can manually enter the desired amount to be delivered.</p>
-<p>The bolus tool will not offer a recommended bolus if your BG is predicted to go below your specified suspend threshold. A screen will appear letting you know the reason no bolus is being recommended, as well as the status of your active COB and IOB. You can choose to override that warning and give a bolus, or treat the low BG and come back to the bolus tool when your BG has recovered.</p>
-<p align="center"><img alt="img/below_min.png" src="../img/below_min.png" width="400" /></p>
+<p>To start a bolus entry, tap on the double orange triangles (circled below) in the toolbar at the bottom of the Loop status screen.</p>
+<p align="center"><img alt="Loop toolbar" src="../img/toolbar-bolus.svg" width="300" /></p>
+<p>The Loop app will open to the Bolus screen. This looks similar to the <a href="../carbs/#meal-bolus">Meal Bolus</a> screen, but doesn't list the meal entry. If Loop predicts you need more insulin, there will be a recommended value. In this example, the current glucose is below the correction range, but the prediction is well above the range. Loop allows you to dip below the correction range but its recommended bolus will be limited by your Suspend Threshold. Check back once your blood glucose (BG) starts to rise and there will probably be a bigger recommendation.</p>
+<p>You can tap on the <code>Recommended</code> line and that value will be transferred to the Bolus line or tap on 0.0u on the <code>Bolus</code> row and type in your desired bolus amount. As soon as a value is entered on the <code>Bolus</code> row, the Deliver button turns blue and can be tapped to deliver that amount via your pump.</p>
+<p align="center"><img alt="Bolus when below correction range" src="../img/below-min.svg" width="300" /></p>
 <h2 id="correction-bolus">Correction Bolus<a class="headerlink" href="#correction-bolus" title="Permanent link">⌁</a></h2>
-<p>Occasionally, a recommended bolus will be offered in the bolus tool unrelated to a newly saved carb entry. In those cases, Loop is calculating that it will not be able to stay in the BG correction range through the use of high temp basals alone and is offering a “correction bolus”. Correction boluses will not be delivered automatically by Loop, they must be delivered by the user. Loop will also not give an alert when a correction bolus is being offered, the bolus entry tool must be clicked to check for one. The Loop pill in Nightscout will display when Loop has a recommended bolus calculated. In a well-tuned Loop with decent carb counting, correction boluses should be infrequently needed.</p>
-<h2 id="starting-bolus-notification">Starting Bolus Notification<a class="headerlink" href="#starting-bolus-notification" title="Permanent link">⌁</a></h2>
-<p>A new status line will appear when Loop is sending a bolus command to the pump. Just above the main screen's glucose chart, you will see a "starting bolus" indicator.</p>
-<p align="center"><img alt="img/starting_bolus.png" src="../img/starting_bolus.png" width="250" /></p>
+<p>Loop reassesses your insulin needs every time a new BG reading is detected, typically every 5 minutes. If Loop predicts that your BG will be above the high end of your correction range at the end of the Duration of Insulin Activity (DIA) and that your BG will not dip below the suspend threshold at any point during that time period, it will calculate a Correction Bolus. Loop will not give an alert when a correction bolus is being recommended, the bolus entry tool must be clicked to check for one. The Loop pill in Nightscout will display when Loop is recommending a correction bolus.</p>
+<ul>
+<li>
+<p>If you are using the master branch or the automatic-bolus branch with <code>Dosing Strategy</code> set to <code>Temp Basal</code></p>
+<ul>
+<li>Loop will provide increased temporary basal rates until it has delivered enough insulin to bring predicted BG into range</li>
+<li>The increased temporary basal rates are subject to your Delivery Limits.
+<br/><br/></li>
+</ul>
+</li>
+<li>
+<p>If you are using the automatic-bolus branch with <code>Dosing Strategy</code> set to <code>Automatic Bolus</code></p>
+<ul>
+<li>Loop will recalculate the correction bolus at each successive loop interval, i.e., every 5 minutes</li>
+<li>Loop will then automatically deliver 40% of that new correction value</li>
+<li>Each automatic bolus is subject to your Delivery Limits</li>
+</ul>
+</li>
+</ul>
+<h2 id="bolus-status-line">Bolus Status Line<a class="headerlink" href="#bolus-status-line" title="Permanent link">⌁</a></h2>
+<p align="center"><img alt="Bolus start and progress status indicator" src="../img/bolus-status-line-start-progress.svg" width="900" /></p>
+<p>When the phone is in portrait mode, a bolus status line will appear below the Heads Up Display when Loop is sending a bolus command to the pump. The "starting bolus" indicator is shown in the left screenshot above. Once the bolus begins, the bolused xx of yy with the circle display begins, as shown in the right screenshot above. If you change your mind, just click on the bolus status line while the bolus is in progress to cancel your bolus, as shown in the screenshot below.  If you see a 'pump is suspended notice' in the bolus status line after cancelling your bolus, just tap on it to resume pump operations.</p>
+<p align="center"><img alt="Bolus cancel status indicator" src="../img/bolus-status-line-cancel.svg" width="300" /></p>
 <h2 id="bolus-failure-notifications">Bolus Failure Notifications<a class="headerlink" href="#bolus-failure-notifications" title="Permanent link">⌁</a></h2>
-<p>On occasion, you will receive notification that a bolus may have failed. In some of these cases, the bolus actually will begin delivery. Therefore, you should always check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.</p>
-<h2 id="square-or-dual-waves">Square or Dual Waves<a class="headerlink" href="#square-or-dual-waves" title="Permanent link">⌁</a></h2>
-<p>Unfortunately, Loop cannot enact temp basals while the pump is delivering a square- or dual-wave bolus. Therefore, you will need to use alternate bolusing strategies for situation where you would've previously used those extended bolusing techniques.</p>
-<p>The good news is that Loop has the only "smart" bolus tool available in any DIY or commercial loop. Because you are entering a carb absorption time with each carb entry, Loop is also using that information to predict how well your insulin bolusing and carb absorption will align. So when Loop offers you a bolus, it may actually offer less of a bolus upfront for long, slow-carb meals...and will make up the remaining bolus amount via high temp basals later.</p>
-<p>In understanding Loop's smart bolusing, it may help to think back to the reason you originally used square- or dual-wave boluses. Typically, you used those extended bolusing strategies because if you had entered all the insulin, based on carb ratio alone, upfront at the beginning of the meal...you would have gone low shortly after bolusing. The food would simply be absorbing too slow and the whole amount of insulin working too fast...and you'd go low until the rest of the meal would kick in later. The extended bolusing was a way of avoiding the early low and also addressing the later high for meals like pizza or Chinese food.</p>
-<p>Loop emulates that extended bolusing when you enter long-duration carb absorptions. Let's use an example of a pizza meal where carb ratios alone would've required a 10 unit bolus for the meal.  By telling Loop the meal will take a long (aka 4+ hours) carb absorption time, Loop may only offer 6 units up-front as an initial bolus. After you eat though, Loop knows that it has not provided all the insulin that will be necessary to account for the carbs. Loop will provide the remaining 4 units via high temp basals as soon as predicted BGs are showing that there is no danger of a post-prandial low. In other words, Loop waits until the danger of a quick low is over and then will high temp to cover the late digesting carbs. If you don't want to wait for Loop to deliver the remaining "second" bolus via high temps, you can click on the bolus tool when BGs start to rise and deliver the remaining bolus needed. Loop will have a recommended bolus awaiting when the predicted BGs are above correction range.</p>
-<p>You can read another example of this extended bolusing technique over on <a href="https://kdisimone.github.io/looptips/how-to/bolus/">LoopTips.org</a>.</p>
-<p>While you adapt to new bolusing techniques, it is important to monitor closely to see what works for you. It will take some trial and error to get it right. For meals like Chinese food, where there is a mix of fast carbs and slow carbs, you may want to break the total meal entry into a couple mixed carb entries to help Loop provide the best bolus recommendation upfront. Additionally, some people account for the fats/proteins that digest by adding slow carbs with long absorption times for meals that cause late BG rises.</p>
-<p>A very useful tool is to check back on your Insulin Counteraction Effects graph to see how your original entry compared to how Loop perceived your final meal impacts. You can read more about that tool <a href="../ice/">here</a>.</p>
-<h2 id="glucodyn">Glucodyn<a class="headerlink" href="#glucodyn" title="Permanent link">⌁</a></h2>
-<p>Using the <a href="http://perceptus.org">Glucodyn</a> model can help you simulate new bolusing strategies.  Glucodyn allows you to simulate your post-prandial BGs based on your particular ISF, carb ratio, and carbs. You can simulate split boluses and watch their impact on simulated BG responses.  The underlying math of the Glucodyn model was the basis of Loop's insulin/carb calculations in early Loop versions. The math has changed since then, however the model still provides a useful visualization about the interactions between DIA, carb absorption times and insulin dosing.</p></div>
+<p>On occasion, you will receive a notification that a bolus may have failed. If you're using AB branch, this can happen when an automatic bolus is in progress. In some of these cases, the bolus was delivered. On a Medtronic pump, you should check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.  Omnipod users can hear the clicks if the room is quiet enough.</p>
+<p>If you get an uncertain delivery message, you may still see the "bolused xx of yy" display continue for as long as it would have taken to actually deliver the bolus. This display is driven by a timer and logic on the phone. (Loop is not asking the pump repeatedly - "are you done yet?"). You may want to interrupt an uncertain bolus if it is large, evaluate status and then resume with a fresh bolus. Loop should update the status the next time it contacts the pump. It can determine whether that bolus actually went through or not and will update the screen.  Look at the Event History screen (accessed by tapping the Active Insulin or Insulin Delivery plots). Turn your phone to landscape orientation and you should see either "Certain" or "Uncertain" at the end of each Bolus record. (If you tap on the specific record, even more detail is displayed.)</p>
+<p>If an "uncertain" delivery is not resolved, try this:</p>
+<ul>
+<li>Omnipod: Execute a <a href="../../loop-settings/pump-commands/#read-pod-status">Read Pod Status command</a></li>
+<li>Medtronic: Execute a <a href="../../loop-settings/pump-commands/#fetch-recent-history">Fetch Recent History command</a></li>
+</ul>
+<p>If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then <a href="../../..#stay-in-the-loop">post</a> on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.</p></div>
             </div>
         </div>
 

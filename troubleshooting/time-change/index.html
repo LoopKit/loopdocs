@@ -182,6 +182,10 @@
     <a href="../../operation/features/workout/" class="dropdown-item">Overrides</a>
 </li>
                                     
+<li>
+    <a href="../../operation/loop-settings/pump-commands/" class="dropdown-item">Pump Commands</a>
+</li>
+                                    
   <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">How to Use Loop App</a>
     <ul class="dropdown-menu">
@@ -460,15 +464,14 @@
 <h2 id="airplane-mode">Airplane Mode<a class="headerlink" href="#airplane-mode" title="Permanent link">⌁</a></h2>
 <p>Nothing wrong with airplane mode, but many people forget about it at the time they travel. So, you can do this simple preparation step now:</p>
 <p>Turn airplane mode on. Then make sure your Bluetooth is still slid “on”. If Bluetooth isn’t on, then go slide it on again. Now go ahead and turn airplane mode off again.</p>
-<p>Why did we just do that? Because airplane mode by default turns Bluetooth off for the first time you ever use it.</p>
-<p>But, if you remember to turn Bluetooth back on while in airplane mode, two things happen (1) Dexcom and Loop will work while in airplane and (2) airplane mode will “remember” the next time that you like Bluetooth left on in airplane mode and will not turn it off the next time you slide airplane mode on. So now you’ve just prevented yourself from forgetting to turn Bluetooth on the next time you fly and are in a hurry to meet your lovely seat mate and stow your luggage. You can safely follow cabin instructions and put phone in airplane mode without losing loop or dexcom.</p>
+<p>Why did we just do that? Because in older versions of iOS, airplane mode turned off the first time you ever use it.</p>
+<p>But, if you remember to turn Bluetooth back on while in airplane mode, two things happen (1) Dexcom and Loop will work while in airplane and (2) airplane mode will “remember” the next time that you like Bluetooth left on in airplane mode and will not turn it off the next time you slide airplane mode on. So now you’ve just prevented yourself from forgetting to turn Bluetooth on the next time you fly and are in a hurry to meet your lovely seat mate and stow your luggage. You can safely follow cabin instructions and put phone in airplane mode without losing Loop or Dexcom.</p>
 <h2 id="changing-timezones-and-daylight-savings-time">Changing Timezones and Daylight Savings Time<a class="headerlink" href="#changing-timezones-and-daylight-savings-time" title="Permanent link">⌁</a></h2>
-<p>Loop is built to operate fully across time zone and daylight savings time changes. When traveling, there is no urgency to update the pump's time to match the wall-clocks in your geography. Configuration schedules—basal rates, target ranges, carb ratios, and insulin sensitivities—will all remain in the pump's time zone. The app's graphs and status will always display in the time zone of the iPhone, and Loop will understand the difference in offset between the two, highlighting it when attempting to change configuration schedules.</p>
-<p>When you're ready to update the pump's time, simply <strong><em>use the Loop's "Change Time" command</em></strong>. This will also shift your configuration schedules to the current time zone.</p>
-<div class="admonition danger">
-<p class="admonition-title">Medtronic Users Only</p>
-<p><strong>Always use RileyLink to change pump time instead of the Medtronic Pump's screen.  If you fail to set the pump time by using the RileyLink, Loop will not function properly.</strong></p>
-<p align="center"><img alt="img/time_change.png" src="../img/time_change.png" width="400" /></p>
+<p>Loop is built to operate fully across time zone and daylight savings time changes. When traveling, there is no urgency to update the pump's time to match the wall-clocks in your geography. Configuration schedules—basal rates, target ranges, carb ratios, and insulin sensitivities all remain in the original time zone until modified by Loop command. The app's graphs and status will always display in the time zone of the iPhone, and Loop will understand the difference in offset between the two, highlighting it when attempting to change configuration schedules.</p>
+<p>When you're ready to update the pump's time, use the Loop <a href="../../operation/loop-settings/pump-commands/#change-time-zone">Change Time Zone</a> command. This will also shift your configuration schedules to the current time zone.</p>
+<div class="admonition warning">
+<p class="admonition-title">Medtronic Users</p>
+<p><strong>Do not use the Medtronic pump menus to change your pump's time when Looping.</strong></p>
 </div>
 <h2 id="iphone">iPhone<a class="headerlink" href="#iphone" title="Permanent link">⌁</a></h2>
 <p>Loop will assume your iPhone's time (UTC, not timezone) is always correct. This theoretically may not be the case if a nearby cell tower is improperly configured (though there are likely resilience mechanisms in iOS to handle this). Automatic time setting can always be disabled in Settings.</p>

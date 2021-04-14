@@ -182,6 +182,10 @@
     <a href="../../features/workout/" class="dropdown-item">Overrides</a>
 </li>
                                     
+<li>
+    <a href="../pump-commands/" class="dropdown-item">Pump Commands</a>
+</li>
+                                    
   <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">How to Use Loop App</a>
     <ul class="dropdown-menu">
@@ -503,9 +507,10 @@
 <p><strong>Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.</strong>  Event History must also be selected in order for prime events to be detected and NOT contribute to IOB during site changes. Please just leave the Preferred Data Source on Event History.</p>
 <p align="center"><img alt="img/add_pump2.png" src="../img/add_pump2.png" width="750" /></p>
 <h2 id="change-time-zone">Change Time Zone<a class="headerlink" href="#change-time-zone" title="Permanent link">⌁</a></h2>
-<p>Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup. But there will be other times you need to change the time - traveling or daylight savings time start and end. It is important that Loop and your pump share a common time setting, otherwise Looping will fail.  If you are traveling through time zones or dealing with daylight savings time, please read up on <a href="../../../troubleshooting/time-change/#traveling-across-time-zones-and-daylight-savings">how to safely change your pump time</a>.</p>
-<div class="admonition info">
-<p><strong>Always use the Loop -&gt; Pump -&gt; Change Time command to change pump time. If you fail to set the pump time, Loop will not function properly.  Do not use the Medtronic pump menus to change your pump's time when Looping.</strong></p>
+<p>Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup. There will be other times you need to change the time - traveling or daylight savings time start and end. It is important that you use Loop to change time on your pump; do not adjust time on your pump directly once it is attached to Loop.  </p>
+<p>If you are traveling through time zones, Loop continues to work - just be aware that your basal rate and other configuration settings will be in the original time zone. To change time zones, please follow the <a href="../pump-commands/#change-time-zone">Change Time Zone</a> instructions.</p>
+<div class="admonition warning">
+<p><strong>Always use the Loop -&gt; Pump -&gt; Change Time command to change pump time. Do not use the Medtronic pump menus to change your pump's time when Looping.</strong></p>
 </div>
 <h2 id="next-step-add-cgm">Next Step: Add CGM<a class="headerlink" href="#next-step-add-cgm" title="Permanent link">⌁</a></h2>
 <p>Congrats! You've added your Medtronic pump to your Loop app. Now, click on the settings button in the upper left corner to take you back to Loop's settings menu. Your next step is to <a href="../cgm/">Add CGM</a> to your Loop app. After all, without CGM data, your Loop won't loop.</p></div>
