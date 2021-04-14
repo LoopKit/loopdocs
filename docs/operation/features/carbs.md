@@ -1,69 +1,127 @@
-# Carb Entry
+# Meal Entry
 
-![img/toolbar.png](img/toolbar.png){width="400"}
+To start a new meal entry, tap on the green plate icon (circled below) in the toolbar at the bottom of the Loop status screen. Your Loop app will open to the Add Carb Entry screen.
+
+![Loop toolbar](img/toolbar-meal.svg){width="300"}
 {align="center"}
 
-New carb entries can be made by using the green carb tool in the toolbar at the bottom of the status screen.  Do not use your pump's bolus wizard or pump's carb entry to record carbs into the Loop app.  Nor should you use Nightscout's careportal to enter carbs, as Loop does not read carb entries remotely.
+Many Loopers increase the carbohydrate amount to cover the expected effect of protein and adjust the expected absorption time for fat in their meal entry. For simplicity, the rest of this page only refers to carbs because all the figures show carbs or carbohydrates in the menus. You should consider the whole meal, including fat and protein, especially if you eat lower carb.
 
-## New Carbs
+!!! danger "Meal Entry - Fast Version"
+    There is a lot of information on this page, most of which will become second nature. At first, it may seem incredibly complicated. The short version is here (assuming you accept all the default settings that Loop offers).
 
-To begin a new meal entry, simply enter the number of carbs to be eaten in the `amount consumed` line.  By default, the carb absorption time for a new carb entry will correspond to the taco icon.  If you haven't made any customizations to the lollipop, taco, or pizza icons during your Loop build, then the default carb absorption time will display as 3 hours.  The default time entry is for the current time and date.  Once you press `Save` on the carb entry screen, the Loop's bolus tool will open to provide a recommended bolus.
+      1. Tap meal entry icon on toolbar
+      1. Enter number of grams of carbs in the Add Carb Entry screen
+      1. Tap continue to advance to the Meal Bolus screen
+      1. Tap Recommended line to transfer the value to the Bolus line
+      1. Tap Deliver
 
-![img/carb_entry.png](img/carb_entry.png){width="300"}
+!!! warning "Things to Know"
+    * Do not enter carbs into your Medtronic pump
+        * If you use your Medtronic pump bolus wizard or carb entry screen, the pump will give you insulin but Loop will not know about the carbs
+        * The Loop predictions will be off and next time Loop reads the reservoir history on the pump, it will probably send your basal rate to zero
+    * If you enter carbs in the Nightscout careportal, they will not be detected by Loop
+        * There may be times you want to do this, e.g., you want to indicate a low treatment you don't want Loop to know about
+
+## New Meals
+
+The figure below shows step-by-step instructions on initiating the meal entry in Loop. Note that when you tap continue this takes you to the Meal Bolus screen. The carb entry is not saved until you complete the Meal Bolus screen.
+
+![Add a carb entry](img/add-carb-entry.svg){width="900"}
 {align="center"}
 
-## Avoid Double Carb Entries
+To start recording your meal, simply enter the desired number of carbs in the `Amount Consumed` line.
 
-!!! info "Be Aware"
+The default `Date` is the current date and time, but you can easily scroll the time forward or back.
 
-    When you press `Save` for a carb entry, Loop will consider that carb entry saved and use it for calculating temp basals and recommended boluses.  Be cautious about repeated attempts to enter the same meal...Loop will continue to save the carb entries UNLESS you push cancel on the carb entry screen.
+* If you inadvertently missed recording an earlier meal, just scroll the time back to when that food started to absorb.
+* If you want to prebolus some portion of the meal that you're about to eat, just scroll the time forward.
+* You can prebolus part of your meal with the current time, and then record a second entry by scrolling the time forward for an hour or two to prebolus a slower absorping item, e.g., a steak that may not start absorbing right away.
 
-    **Simply canceling a bolus does not cancel the carb entry.**
-    
-    If you have accidentally made multiple entries for the same carbs, click on the Carbs Chart in the main Loop display and you can delete the redundant carb entries by swiping left on the entries.
+Next, you have the option to select your absorption time and select an icon. This is not required - you can just accept the default taco absorption time and keep going. The standard icons and absorption times are listed below. You may have modified these by doing a [Code Customization](../../build/code_customization.md#default-carb-absorption-times).
 
-## Carb Absorption Time
+* The lollipop corresponds to a 2 hour absorption (FAST)
+* The taco corresponds to a 3 hour absorption (MEDIUM)
+* The pizza corresponds to a 4 hour absorption (SLOW)
 
-![img/food_icons_times.png](img/food_icons_times.png){width="300"}
+If you don't want to use the default taco absorption time, you can tap on the lollipop or the pizza icon to select those absorption times, or manually enter an absorption time between 30 min and 8 hours (method described below). If you want more detail recorded about the meal, there are alternative food icons and even text labels you can select.
+
+The alternative food icons are revealed by tapping anywhere on `Food Type` row that is not a lollipop, taco or pizza icon. These alternative food icons are arranged (scroll left or right) based upon how long each food takes to absorb. From left to right is FAST, MEDIUM, SLOW or OTHER. If you mix two icons from different categories, the absorption time updates to the longest absorption time. With three or more, you should double-check the absorption time and adjust it if necessary. You can also tap on the `abc` that appears in the lower left corner and manually type in your food label.
+
+Note that the lollipop, taco and pizza do not show up on the Nightscout screen whereas the alternative icons and labels are displayed.
+
+Regardless of the choice of icons on the `Food Type` row, you have the option to adjust the `Absorption Time` in half-hour increments from 30 minutes to 8 hours. (Note the dial may go past 8 hours, but it spins back to 8 if you try to exceed that time.) Loop will initially estimate your absorption time at 150% of the time that you enter. As a result, carbs entered using the taco icon will initially be treated as 4.5 hour absorption. More about this later in the [Dynamic Carb Absorption](carbs.md#dynamic-carb-absorption) section.
+
+You do not have to enter all carbs for a meal at the same absorption or eating time. If you want to enter some of the meal's carbs as faster and some as slower, you can log the meal over several individual entries. For example, for meals that have sugary carbs as well as slow acting carbs (Chinese food), you may want to record some carbs as lollipop and some as pizza. Another example would be steak and potatoes, you may want to record the potatoes with a current start time and taco absorption and the steak with a start time of 1-2 hours into the future and a 5 hour absorption time.
+
+When you are done recording a given food entry, press `Continue` and the Meal Bolus tool will open.
+
+## Meal Bolus
+
+![Record a meal bolus](img/meal-bolus.svg){width="900"}
 {align="center"}
 
-To select your carb entry's absorption time, you can either click on the default food emojis or manually enter carb absorption time by selecting the `absorption time` line in the carb entry tool.
+You can tap on the `Recommended` line and that value will be transferred to the Bolus line, OR tap on 0.0u on the `Bolus` row and type in your desired bolus amount OR `Save Without Bolusing` The `Save Without Bolusing` option is used if you'd like to add to your meal entry or do not want to accept a bolus right now. The meal entry is NOT saved until you either `Deliver` or `Save Without Bolusing`. The graph at the top of the Meal Bolus screen will show your BG prediction based upon your meal entry and desired bolus amount. You can adjust your desired bolus amount or click `<Carb Entry` to adjust your meal entry and then return to Meal Bolus to see how your BG prediction changes. When you're ready to bolus, click `Deliver`. If you start a bolus and plan to add additional meal entries, you will probably need to `Save without Bolusing` for the next entry because Loop will mid-bolus, and you cannot initiate a new bolus while one is in progress. After entering the rest of the meal, don't forget to [bolus](bolus.md) manually.
 
-Tapping the `Food Type` row can also be used if you are unsure of a new food.  There are other food emojis grouped into fast, medium, and slow absorbing foods.  This may be particularly useful for teens that are trying to learn new foods/meals.  Additionally, you can add text to your `food type` by selecting the `abc` button in the bottom left corner of the screen.
+!!! warning ""
+    If you need to modify or cancel a bolus in progress, turn the phone to portait orientation and tap the bolus in progress line right below the heads up display (HUD).  Loop will immediately cancel the in-progress bolus.  If you desire, then you can [bolus](bolus.md) manually to modify the insulin to be delivered via bolus.
 
-![img/plate.png](img/plate.png){width="300"}
+    Remember - once the `Deliver` button is tapped, the carb entry associated with that bolus is saved.  Loop will increase insulin delivery based on that entry. So if you canceled a bolus prior to modifying a carb entry, be sure to [edit the carbs](carbs.md#edit-meals) already saved instead of entering a new carb entry.
+
+
+If your BG is below your correction range, Loop's Recommended bolus will have a small warning above it stating that "Current glucose of xx is below correction range". You can either skip the bolus or enter a portion or all of the Recommended bolus.
+
+If your BG is below your suspend threshold, Loop will not recommend a bolus. If this happens, you can calculate the bolus using your carbohydrate ratio and enter a portion or all of this amount or you can set a 15 minute timer and wait for your BG to start to rise and then reassess when and how much to bolus.
+
+## Automatic-Bolus (AB) Branch
+
+Loopers who are using AB still typically prebolus and/or  bolus for meals. The amount of `Recommended` insulin that will appear in the Meal Bolus screen will be the full amount of the bolus Loop recommends (not the 40% partial bolus delivered automatically). As discussed above, you can accept this recommendation or enter a different amount, however, and this is **very important**, if your Dosing Strategy is set to Automatic Bolus, by entering less than the recommended amount and tapping `Deliver` or tapping `Save Without Bolusing`, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of the recommended bolus at each successive Loop interval.
+
+!!! warning ""
+    Note that this same automatic delivery of insulin in response to entered carbs occurs in the master branch, or when Dosing Strategy is set to Temp Basal in AB branch, but the delivery via temporary basal rates is slower, providing more time for an error to be noticed. By the same token, AB branch responds more quickly to increases in blood glucose.
+
+
+## Dynamic Carb Absorption
+
+Loop observes the blood glucose impact of the meal within the 150% absorption time window. Loop calculates how many carbs have been absorbed (regardless of how many you entered) based on your BG pattern and your settings. You can watch the progression of  Loop's observations of your meal by tapping on the Active Carbohydrates chart at the bottom of Loop's main screen and watching the insulin counteraction effects (ICE) on the Carbohydrates screen. An example of the screen is on the left side of the figure below. An explanation of the dual lines for each entry and the color coding scheme is explained below the figure.<br/><br/>
+
+![Edit a carb entry](img/edit-carb-entry.svg){width="900"}
 {align="center"}
 
-![img/ns-plate.png](img/ns-plate.png){width="900"}
-{align="center"}{width="300"}
-{align="center"}
+* Top line of each entry
+    * Amount you entered, time of entry, absorption time entered
+* Bottom line of each entry (changes with each CGM reading)
+    * Amount absorbed, estimated time when amount you entered will be absorbed
+    * Color codes while within the 150% absorption time window
+        * Green: amount absorbed is less than 10% above the entered amount
+        * Yellow: amount absorbed exceeds 10% above the entered amount
+    * Color codes after 150% absorption time window expires
+        * Grey: amount absorbed is within 10% of the entered amount
+        * Yellow: amount absorbed is exceeds 10% above or below the entered amount
 
-The default carb absorption times in Loop app are average representations for high, medium, and low glycemic index foods.  Ever since Loop v1.4.0, the algorithm incorporates dynamic carb absorption.  Previous Loop versions were based on a curve that assumed the rate of carb absorption would start out slow, increase to a mid-point, and then taper off.  However, in the real world, carb absorption is quite variable.  Dynamic carb absorption model is able to model some of this variability and allow Loop to respond more reasonably when actual carb absorption is not matching well with the selected carb absorption time for a meal.  In short, while entering a carb absorption time is still part of recording meals in Loop, it is much less critical to get it right.  Now your entry serves more as a guideline, than a rule, for Loop to model carb absorption.  For a more detailed explanation of the new dynamic carb absorption model, please read about it [here](https://github.com/LoopKit/Loop/pull/507).
+The information available on the Carbohydrates screen disappears for any meals not still active at midnight, so if you're looking for details as to how a particular meal absorbed, you need to screenshot or otherwise capture this information before midnight. Previous entries can be modified or deleted through this screen. To adjust an entry, simply tap on it (you don't need to tap the `Edit Carb Entry` at the top of the screen). You can change a prebolus time, modify carb amounts, or adjust absorption times (even mid-meal). To delete an entry, you first tap `Edit Carb Entry` and tap on the red circle to the left of the entry that you would like to delete. It is a little counterintuitive, but the `Edit Carb Entry` button lets you delete, but not edit an entry.
 
-To help Loop adjust for carbs that may digest slower than your original estimate, Loop will initially apply a 1.5x multiplier to your entered carb absorption time.  So, a meal entered using the taco icon will initially be treated as a 4.5 hour absorption meal.  As Loop observes the BG impacts of the meal, Loop will shorten the meal's absorption time if BGs are showing quicker impacts than expected, as well as adjust insulin deliveries (e.g., increase temp basals).  You can watch the progression of the Loop's observations of your meal by clicking on the Carbs Chart and watching the insulin counteraction effects.
+## Edit Meals
 
-## Mixed Carb Meals
-
-You do not have to enter all carbs for a meal at the same absorption or eating time.  If you want to enter some of the meal's carbs as faster, and some slower, you can log the meal over several individual carb entries.  For example, for meals that have sugary carbs as well as slow acting carbs (Chinese food), you may wish to do part of the carbs as lollipop and part of the carbs as pizza.
-
-Pressing the `Save` button in the top right corner will save the carbs into the Loop app and bring up the Loop's bolus tool.  When entering multiple carb absorption durations for a single meal, press save on the carb entry and then press cancel on the bolus tool when it appears.  When you have entered your last carb entry for the meal, then use the bolus tool to deliver the bolus for the entire meal.  Loop will provide a recommendation based on all the saved carbs and their respective absorption durations in total.
-
-## Prebolus
-
-You can let Loop know you are going to prebolus a meal by adjusting the time of the carb entry on the “date” line of the carb entry.  If you are prebolusing by 20 minutes, simply add 20 minutes to the carb entry time.  
-
-## Edit Carbs
-
-Clicking on the Carbohydrate chart in the Loop's main status screen will open the carb entry history and previous entries can be modified or deleted through this screen.  If you need to change a prebolus time, add/subtract carbs, adjust carb absorption times (even mid-meal), just go into that edit screen and tap on the carb entry you'd like to edit, or left-swipe to delete the entry entirely.  This can be a particularly useful tool when:
+Adjusting a meal entry can be a particularly useful tool when:
 
 * You did not finish an entire meal that you bolused for,
-* You did not get to eat meal at the time you originally expected,
+* You did not get to eat the meal at the time you originally expected,
 * You ate more servings than originally entered, or
-* You suspect your carb count was in error because BGs are rising more/less than expected.
+* You suspect your carb count was in error because BGs are rising more/less than expected.<br/><br/>
 
-![img/carb_edit.png](img/carb_edit.png){width="300"}
+![Delete carb entry](img/delete-carb-entry.svg){width="900"}
 {align="center"}
+
+## Avoid Double Meal Entries
+
+!!! info "Be Aware"
+    If you have accidentally made duplicate entries for the same meal, click on the Active Carbohydrates chart in the main Loop screen and tap `Edit Carb Entry` to delete the redundant entries. Deleting the meal entry will not impact the insulin that has already been delivered, but it will alert Loop to adjust your BG projection for purposes of calculating future insulin delivery.
 
 ## Third Party Apps
 
-If you use a 3rd party app, such as My Fitness Pal, to enter and track carbs and that app also stores the carb values in HealthKit, Loop will read those values from Apple HealthKit and display and use them in calculating temp basal rates. Entries from 3rd party apps can not be removed from within Loop.  You will have to edit them in the third party app, or from the Health app. Because of this potential for confusion, it is recommended to turn off Loop's ability to read other apps' carbohydrate data from HealthKit. You are asked if you want to enable this when Loop is first installed. After installation, you can also go to the Settings App -> Privacy -> Health -> Loop and turn off `Read Data for Carbohydrates`.
+Please see [Loop Permissions](../../build/health.md#loop-permissions).
+
+## Carb Absorption Model
+
+For more information about the way Loop models the effects of carbs, insulin, etc., see the [algorithm page](../algorithm/prediction.md).
