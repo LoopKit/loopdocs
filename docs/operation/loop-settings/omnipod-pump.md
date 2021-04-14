@@ -59,85 +59,16 @@ When you finish entering these values, press the blue `Continue` button on the b
 
 ## Expiration Reminder
 
-Finish the setup with using the default expiration reminder time (2 hours before a full 3-days usage) or set the expiration notification to a more convenient time to your liking which will show up in your locked screen and vibrates at that time. Setup is complete and your Pod is ready for use when you press the final button.
+Finish the setup using the default expiration reminder time (2 hours before a full 3-days usage). You can modify that expiration reminder at any time, see [Expiration Reminder](pump-commands.md#expiration-reminder). The notification will come from Loop; your Pod will not beep at this time. Setup is complete and your Pod is ready for use when you press the final button.
 
 ![img/pod-setup-03-complete.png](img/pod-setup-03-complete.png){width="650"}
 {align="center"}
 
+
 ## Pod Settings
 
-After the Pod setup is completed, you will be on the Pod Settings screen. This screen will provide a variety of important information about your Pod. You can always come back to this screen later by tapping on the Omnipod image in your Loop settings.
+After the Pod setup is completed, you will be on the Pod Settings screen. The information on this screen is described in [Omnipod Pump Commands](pump-commands.md#omnipod-commands).
 
-![img/long-pod-settings.jpeg](img/long-pod-settings.jpeg){width="250"}
-{align="center"}
-
-### Device Information
-
-The first section has information regarding how long the Pod has been active, expiration date and time, Pod identifying information (if you have to call in for a Pod failure).
-
-### Pod commands
-
-There are two commands that you can issue through Loop to the Pod.
-
-* Suspend Delivery: This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery will stop indefinitely.
-
-![img/pod-settings-resume.png](img/pod-settings-resume.png){width="250"}
-{align="center"}
-
-A banner notice will appear on the Loop's main screen when insulin delivery is suspended.
-
-![img/pod-hud-suspended.png](img/pod-hud-suspended.png){width="250"}
-{align="center"}
-
-You will need to press `Tap to Resume` in the banner or the `Resume Delivery` button in the Pod settings to resume your scheduled basal rate and let Loop get back to action. Bolus deliveries will not be resumed, if they were interrupted.
-
-* Replace Pod: This command should be used to deactivate a Pod prior to replacing it.
-
-![img/pod-settings-replace-pod.png](img/pod-settings-replace-pod.png){width="250"}
-{align="center"}
-
-#### Configuration
-
-* Expiration Reminder: With the Expiration Reminder you can set a convenient time to get a notification to replace your Pod. Using the standard setting, Loop sets the default to a full 3 days. You can set the reminder to any day and time up until 80 hours. This changes the PDM default which sets the alert always to 2 hours before a full 3-day (72 hours) run. This assumes you will not have run out of insulin before that time. In the event your Pod runs out of insulin, then you will get a "Pod empty" notification.
-
-![img/pod-settings-screen-expiration-reminder.png](img/pod-settings-screen-expiration-reminder.png){width="250"}
-{align="center"}
-
-* Change Time Zone: If you are traveling for short periods of time, you do not have to worry about changing the time on your Pod. However, if you are going to be away from home for longer periods of time, you will want to update your Pod's basal schedule to match local time by selecting the `Change Time Zone` command when convenient. Using this command will move your basal schedule on your current Pod to the new time. If you start a new Pod session the new time zone will be used. Please wait until you see `Succeeded` appear on the page to ensure the command has successfully been received by the Pod.
-
-![img/pod-change-timezone.png](img/pod-change-timezone.png){width="250"}
-{align="center"}
-
-* Test Command: This command is used only by the developers to test Omnipod commands in Loop. It currently issues a "get status" command and can be used to update your screen details if needed or force a fault error to generate in the issue report after getting a screaming Pod.
-
-#### Status
-
-This section provides information about your Pod's status.
-
-* Bolus Delivery: This line will let you know the % progress of any ongoing bolus.
-
-![img/pod-settings-bolus-status.png](img/pod-settings-bolus-status.png){width="250"}
-{align="center"}
-
-* Basal Delivery: This line will let you know what is active: The normal basal _schedule_,the _U/hour_ of a 30 minute Temp Basal or if the Pod is _suspended_.
-
-![img/pod-settings-basal-delivery.png](img/pod-settings-basal-delivery.png){width="250"}
-{align="center"}
-
-* Alarms: If your Pod is screaming or beeping an alarm, this line will display information about the alarm. By clicking on this line, you can clear or "snooze" the alarm status.
-
-![img/pod-settings-alarms.png](img/pod-settings-alarms.png){width="250"}
-{align="center"}
-
-* Reservoir: Pods do not report the volume of insulin remaining in the reservoir until there are less than 50 units remaining. So, typically you will see "50+ U" in this line for quite a while with a new Pod.
-
-![img/pod-settings-reservoir.png](img/pod-settings-reservoir.png){width="250"}
-{align="center"}
-
-* Insulin Delivered: This line is the total amount of insulin, both basal and bolus, delivered by the Pod since it was activated.
-
-![img/pod-settings-insulin-delivered.png](img/pod-settings-insulin-delivered.png){width="250"}
-{align="center"}
 
 ## Next Step: Add CGM
 
