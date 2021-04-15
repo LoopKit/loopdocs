@@ -54,11 +54,13 @@ Now that your pump is paired with Loop, you will be finishing these steps:
 
 ## Change Time Zone
 
-Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup. But there will be other times you need to change the time - traveling or daylight savings time start and end. It is important that Loop and your pump share a common time setting, otherwise Looping will fail.  If you are traveling through time zones or dealing with daylight savings time, please read up on [how to safely change your pump time](../../troubleshooting/time-change.md#traveling-across-time-zones-and-daylight-savings).
+Loop automatically prompts you to set your pump time using the Loop app as part of initial Loop setup. There will be other times you need to change the time - traveling or daylight savings time start and end. It is important that you use Loop to change time on your pump; do not adjust time on your pump directly once it is attached to Loop.  
 
-!!! info ""
+If you are traveling through time zones, Loop continues to work - just be aware that your basal rate and other configuration settings will be in the original time zone. To change time zones, please follow the [Change Time Zone](pump-commands.md#change-time-zone) instructions.
 
-    **Always use the Loop -> Pump -> Change Time command to change pump time. If you fail to set the pump time, Loop will not function properly.  Do not use the Medtronic pump menus to change your pump's time when Looping.**
+!!! warning ""
+
+    **Always use the Loop -> Pump -> Change Time command to change pump time. Do not use the Medtronic pump menus to change your pump's time when Looping.**
 
 ## Next Step: Add CGM
 
