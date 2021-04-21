@@ -118,4 +118,4 @@ Double-check that your NS Profile settings are current and that you have a basal
 
 ## Nightscout Version Update
 
-If you are new to Loop and haven’t updated your Nightscout site for a while, check to see if there's an available update. Visit [The Nightscout Update Instructions](http://nightscout.github.io/update/update/) for directions on updating.
+If you are new to Loop and haven’t updated your Nightscout site for a while, check to see if there's an available update. Visit [The Nightscout Update Instructions](https://nightscout.github.io/update/update/) for directions on updating.
