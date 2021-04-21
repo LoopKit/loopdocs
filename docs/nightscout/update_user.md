@@ -4,7 +4,7 @@ Many people may already have an existing Nightscout site setup from before addin
 
 ## New Variables for Loopers
 
-The modifications for retrofitting an existing NS site for new Loop users will require you to make some edits to your Heroku site.  There are five steps:
+The modifications for retrofitting an existing NS site for a new Loop user require you to make some edits to your Nightscout Config Vars.  These instructions are for people using Heroku, because that is the most common choice. If your Nightscout site is not on Heroku, this page provides a guide for the Config Vars used by Loop. There are five steps:
 
 1. Login to Heroku, Open Settings Tab
 2. Edit/Add Config Vars
