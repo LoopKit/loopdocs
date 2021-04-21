@@ -9,10 +9,10 @@
     - Order your compatible device
 
 !!! warning "FAQs"
+    - **What is a RileyLink Compatible Device?** RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created [RileyLink Compatible Devices](step5.md#rileylink-compatible-devices) that use the RileyLink protocol. At the current time, RileyLink, OrangeLink and EmaLink devices are available for purchase and all can be used interchangeably with Loop.
     - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two).
-    - **RileyLink Compatible Devices**: RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created [RileyLink Compatible Devices](step5.md#rileylink-compatible-devices) that use the RileyLink protocol. At the current time, RileyLink, OrangeLink and EmaLink devices are available for purchase and all can be used interchangeably with Loop.
     - **"What happens if I lose my RileyLink compatible device or walk away from it?"** Within a half hour, your pump returns to normal scheduled basal rate
-    - **"Can I swap out RileyLink compatible devices at any time?"** Yes, you can. You do not need to start a new pod or rebuild Loop app. Tap on the pump menu in Loop settings to search for new devices and enable Loop to create a Bluetooth connection. You can swap between RileyLink, OrangeLink, EmaLink or some future RileyLink compatible device.
+    - **"Can I swap out RileyLink compatible devices at any time?"** Yes, you can. You do not need to start a new pod or rebuild the Loop app. Tap on the pump menu in Loop settings to search for new devices and enable Loop to create a Bluetooth connection. You can swap between RileyLink, OrangeLink, EmaLink or some future RileyLink compatible device.
     - **"How close does the RileyLink compatible device need to be to me? Do I have to carry it with me?"** See [RileyLink Compatible Device Range](../faqs/rileylink-faqs.md#range).
 
 
@@ -29,7 +29,7 @@ The RileyLink compatible device is an open-source hardware device that can bridg
 
 The RileyLink protocol defines a specific bluetooth interface and way of opening a Sub-GHz radio channel to pumps. All RileyLink compatible devices follow the RileyLink protocol.
 
-There used to be just one option. Now there are more, so you have to make a decision. Depending on your choice, be sure to have the correct charger and cables or batteries handy and add spare sets to your diabetes go-bag.
+There used to be just one option, the original RileyLink. Now there are more options, so you have to make a decision. Depending on your choice, be sure to have the correct charger and cables or batteries handy and add spare compatible supplies to your diabetes go-bag.
 
 - One thing that might affect your choice is where you live and whether you want to charge the device or change batteries
     - If you are in the US, shipping for RileyLink and OrangeLink is less expensive
@@ -41,10 +41,10 @@ There used to be just one option. Now there are more, so you have to make a deci
     - Must order either Omnipod or Medtronic version
 - OrangeLink
     - Designed by Vic Wu, available from [GetRileyLink](https://getrileylink.org)
-    - Uses 2 AAA batteries, weeks or more of use typical (depends on batteries/pump type)
+    - Uses 2 AAA batteries, batteries typically last weeks or more, depending on batteries/pump type
     - Works with either Omnipod or Medtronic
     - Uses new chipsets, reported to have longer range
-    - Matches Apple Airpod form factor, so can use airpod cases
+    - Matches Apple Airpod form factor, so you can use airpod cases
 - EmaLink
     - Designed by Sorin Kupas-Spunei to increase range, offer smaller sizes
     - Rechargable battery (various case/battery sizes available)
@@ -58,12 +58,12 @@ There used to be just one option. Now there are more, so you have to make a deci
 
 ## More information
 
-There is an entire FAQs page on [RileyLink and RileyLink compatible devices](../faqs/rileylink-faqs.md).
+There is an entire FAQs page on [RileyLink Compatible Devices](../faqs/rileylink-faqs.md).
 
 
 ## Waiting for your RileyLink Compatible Device
 
-While you are waiting for the RileyLink compatible device to arrive, you can proceed with finishing these build directions all the way through Step 14. After that you'll have to wait for the device. You can't properly enter any settings or pump info in the Loop app without it.
+While you are waiting for the RileyLink compatible device to arrive, you can proceed with these build directions all the way through Step 14. After that, you'll have to wait for your device. You can't properly enter any settings or pump info in the Loop app without it.
 
 The population of DIY loopers (Loop and Android APS) has grown enough that you might be able to find someone local to loan you their spare.
 

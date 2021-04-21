@@ -7,7 +7,7 @@
 
 !!! info "Summary"
 
-    1. Install macOS and Xcode updates
+    1. Install macOS and Xcode updates based on your phone iOS
     2. Check your Developer Account
     3. Download Updated Loop code
     4. Recommended Actions<br />
@@ -34,8 +34,9 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 
 !!! warning "Verify macOS"
 
-    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS, you cannot build on that phone.
+    Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS, you cannot build on that phone. (Note, the current macOS will build the Loop app for all these iOS versions.)
 
+    - For iOS 14.5 (not yet released), minimum is expected to be macOS 11.x (Big Sur)
     - For iOS 14.x, minimum is macOS 10.15.4 (Catalina)
     - For iOS 13.4 through 13.7, minimum is macOS 10.15.2 (Catalina)
     - For iOS 13.0 through 13.2, minimum is macOS 10.14.4 (Mojave)
@@ -66,26 +67,8 @@ After you've finished the updates to your devices listed above, you can move ont
 
 There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for both master and automatic-bolus branches. The [Build Select Script](https://www.loopnlearn.org/build-select/) webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.
 
-If you prefer the zip download method, the links from Build Step 13 are repeated below.
+If you prefer the zip download method, follow the links from [Build Step 13](step13.md#pick-a-branch-to-download), then return to this page.
 
-You’ll need to download the Loop code in order to build the app on your computer. Various versions of Loop code are available. Both master and automatic-bolus are pretty stable and widely used.  The [Compare Version](https://www.loopnlearn.org/compare-branches/) webpage explains the differences between master and automatic-bolus.
-
-Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.)
-
----
-
-- [Loop: master branch](https://github.com/LoopKit/Loop/archive/master.zip)
-
-- [Loop: automatic-bolus branch](https://github.com/LoopKit/Loop/archive/automatic-bolus.zip)
-
----
-
-- [Dev branch---please only build if you're a developer/advanced user interested in testing](https://github.com/LoopKit/Loop/archive/dev.zip)
-    - Note that dev will soon require iOS 14 on your device
-    - Once you install dev on a device, you might have to delete the app to return to master or automatic-bolus
-
-
----
 
 ## Step 4a: Delete old provisioning profiles
 
@@ -145,7 +128,7 @@ More information is shown in the orange box below.
         * To transfer your keychain, check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b)
     1. Your version of Xcode is way out-of-date
         * Mentors have seen this with people trying to build with Xcode 11.4 or earlier
-        * Update [Xcode](step8.md) to the most recent version 
+        * Update [Xcode](step8.md) to the most recent version
 
     **If you revoke and keep going:**
 
