@@ -477,7 +477,7 @@
 <div class="admonition info">
 <p class="admonition-title">Summary</p>
 <ol>
-<li>Install macOS and Xcode updates</li>
+<li>Install macOS and Xcode updates based on your phone iOS</li>
 <li>Check your Developer Account</li>
 <li>Download Updated Loop code</li>
 <li>Recommended Actions<br />
@@ -503,8 +503,9 @@
 <h2 id="step-1-install-macos-and-xcode-updates">Step 1: Install macOS and Xcode updates<a class="headerlink" href="#step-1-install-macos-and-xcode-updates" title="Permanent link">⌁</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Verify macOS</p>
-<p>Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS, you cannot build on that phone.</p>
+<p>Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS, you cannot build on that phone. (Note, the current macOS will build the Loop app for all these iOS versions.)</p>
 <ul>
+<li>For iOS 14.5 (not yet released), minimum is expected to be macOS 11.x (Big Sur)</li>
 <li>For iOS 14.x, minimum is macOS 10.15.4 (Catalina)</li>
 <li>For iOS 13.4 through 13.7, minimum is macOS 10.15.2 (Catalina)</li>
 <li>For iOS 13.0 through 13.2, minimum is macOS 10.14.4 (Mojave)</li>
@@ -527,27 +528,7 @@
 <h2 id="step-3-download-updated-loop-code">Step 3: Download Updated Loop Code<a class="headerlink" href="#step-3-download-updated-loop-code" title="Permanent link">⌁</a></h2>
 <p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want).</p>
 <p>There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for both master and automatic-bolus branches. The <a href="https://www.loopnlearn.org/build-select/">Build Select Script</a> webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.</p>
-<p>If you prefer the zip download method, the links from Build Step 13 are repeated below.</p>
-<p>You’ll need to download the Loop code in order to build the app on your computer. Various versions of Loop code are available. Both master and automatic-bolus are pretty stable and widely used.  The <a href="https://www.loopnlearn.org/compare-branches/">Compare Version</a> webpage explains the differences between master and automatic-bolus.</p>
-<p>Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.)</p>
-<hr />
-<ul>
-<li>
-<p><a href="https://github.com/LoopKit/Loop/archive/master.zip">Loop: master branch</a></p>
-</li>
-<li>
-<p><a href="https://github.com/LoopKit/Loop/archive/automatic-bolus.zip">Loop: automatic-bolus branch</a></p>
-</li>
-</ul>
-<hr />
-<ul>
-<li><a href="https://github.com/LoopKit/Loop/archive/dev.zip">Dev branch---please only build if you're a developer/advanced user interested in testing</a><ul>
-<li>Note that dev will soon require iOS 14 on your device</li>
-<li>Once you install dev on a device, you might have to delete the app to return to master or automatic-bolus</li>
-</ul>
-</li>
-</ul>
-<hr />
+<p>If you prefer the zip download method, follow the links from <a href="../step13/#pick-a-branch-to-download">Build Step 13</a>, then return to this page.</p>
 <h2 id="step-4a-delete-old-provisioning-profiles">Step 4a: Delete old provisioning profiles<a class="headerlink" href="#step-4a-delete-old-provisioning-profiles" title="Permanent link">⌁</a></h2>
 <h3 id="infrequent-builder-app-expires-soon">Infrequent Builder, App Expires soon<a class="headerlink" href="#infrequent-builder-app-expires-soon" title="Permanent link">⌁</a></h3>
 <p>If your app will expire soon or you build infrequently, then <a href="./#delete-profiles">Delete Profiles</a>. Not sure when your app expires? Here are instructions to check your <a href="https://www.loopandlearn.org/loop-expiration-date/">Loop Expiration Date</a>.</p>
@@ -591,7 +572,7 @@
 </li>
 <li>Your version of Xcode is way out-of-date<ul>
 <li>Mentors have seen this with people trying to build with Xcode 11.4 or earlier</li>
-<li>Update <a href="../step8/">Xcode</a> to the most recent version </li>
+<li>Update <a href="../step8/">Xcode</a> to the most recent version</li>
 </ul>
 </li>
 </ol>

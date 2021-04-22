@@ -427,14 +427,6 @@
             
             <li class="nav-item" data-level="1"><a href="#new-nightscout-users" class="nav-link">New Nightscout Users</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#t1pal-paid-service" class="nav-link">T1Pal (paid service)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#traditional-diy-free-do-it-yourself" class="nav-link">Traditional DIY (free, do-it-yourself)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#add-nightscout-to-loop" class="nav-link">Add Nightscout to Loop</a>
               <ul class="nav flex-column">
               </ul>
@@ -452,23 +444,22 @@
 
 <h1 id="new-nightscout-users">New Nightscout Users<a class="headerlink" href="#new-nightscout-users" title="Permanent link">⌁</a></h1>
 <div class="admonition info">
-<p class="admonition-title">Is Nightscout required for Loop?</p>
-<p>Nope...you don't NEED to have a Nightscout site in order to use Loop. A Nightscout site is completely optional. However, if you want to see Loop's actions anywhere other than the Looper's iPhone...then you will want a Nightscout site. For example, parents of little Loop users may want to see the temporary basal rates Loop is setting, the current insulin on board, or a recent bolus and carb entry.  That's what Nightscout will provide...remote viewing of Loop actions.</p>
-</div>
-<p>There are two options for setting up Nightscout; one option requires a small fee but automates both the setup and periodic updating/cleaning database, the other option is free but requires your effort to build and update. You choose which works best for you. Isn't it nice to have options?</p>
-<h2 id="t1pal-paid-service">T1Pal (paid service)<a class="headerlink" href="#t1pal-paid-service" title="Permanent link">⌁</a></h2>
-<p><a href="https://t1pal.com/">T1Pal is the only dedicated NS hosting</a> company.  There is a hosting fee required which is used to help ensure Nightscout runs without limits and receives improvements.  Setup is simple and loop plugins are configured automatically during the setup guide.</p>
+<p class="admonition-title">Is Nightscout Required for Loop?</p>
+<p>Nightscout is not required, but is recommended for Loop.</p>
 <ul>
-<li>Select <a href="https://www.t1pal.com/getting-started/starting/home">Get Started</a> to register an account at <a href="https://www.t1pal.com/">T1Pal</a>.  You will need to enter your credit card, which helps ensure Nightscout is running correctly.</li>
-<li>Select "visualize treatments" in the setup menu and select "loop."</li>
+<li>A Nightscout site provides a dashboard for remote viewing of Loop actions including the temporary basal rates Loop is setting, the current insulin on board, or a recent bolus and carb entry</li>
+<li>A Nightscout site provides reports for retrospective review of your settings</li>
+<li>You will want a Nightscout site:<ul>
+<li>If you are a parent of a little Loop user</li>
+<li>If you want to see Loop's actions anywhere other than the Looper's iPhone</li>
+<li>If you want to ask a mentor for help adjusting your settings</li>
 </ul>
-<p align="center"><img alt="img/t1pal_configure.png" src="../img/t1pal_configure.png" width="450" /></p>
-<h2 id="traditional-diy-free-do-it-yourself">Traditional DIY (free, do-it-yourself)<a class="headerlink" href="#traditional-diy-free-do-it-yourself" title="Permanent link">⌁</a></h2>
-<p>Two options exist for easy DIY hosting of NS; Azure or Heroku. Both hosting services are free.  However,  Azure has data quotas monthly and shorter-term CPU quotas.  If you exceed those quotas, you may be facing a monthly data-use bill or being locked out of NS for about 12 hours until the quotas reset.  As you start to use NS more intensively for alarms, watches, etc…it is possible that you may exceed your monthly data cap on Azure.  Many Loop users have transitioned their old sites from Azure over to Heroku and have found the hosting change to be beneficial.  Heroku also has some memory limits, but those limits have been more than adequate for Loop users.  Therefore, we recommend new users start with Heroku.</p>
+</li>
+</ul>
+</div>
 <h3 id="setup-nightscout">Setup Nightscout<a class="headerlink" href="#setup-nightscout" title="Permanent link">⌁</a></h3>
-<p>There's great news though! The documentation and instructions for building your own Nightscout site have recently been completely overhauled and are WONDERFUL!</p>
-<p>Please visit <a href="http://nightscout.github.io/nightscout/new_user/">The Nightscout site</a> for directions on how to set up your new Nightscout website.</p>
-<h3 id="add-loop-variables-to-nightscout">Add Loop variables to Nightscout<a class="headerlink" href="#add-loop-variables-to-nightscout" title="Permanent link">⌁</a></h3>
+<p>Please visit <a href="https://nightscout.github.io">The Nightscout site</a> to read the introductory material and then proceed to the Installation page for directions on how to set up your new Nightscout website.</p>
+<h3 id="add-loop-variables-to-nightscout">Add Loop Variables to Nightscout<a class="headerlink" href="#add-loop-variables-to-nightscout" title="Permanent link">⌁</a></h3>
 <p>There are a few Loop-specific variables you should configure to get the most out of your Nigghtscout site. Follow the <a href="../update_user/#step-2-editadd-config-vars">instructions to retrofit an existing Nightscout site</a>.</p>
 <h2 id="add-nightscout-to-loop">Add Nightscout to Loop<a class="headerlink" href="#add-nightscout-to-loop" title="Permanent link">⌁</a></h2>
 <p>Once you finish setting up your new Nightscout site, don't forget to <a href="../../operation/loop-settings/services/#nightscout">enter the website into your Loop settings</a>! This way Loop will have access to your Nightscout site to upload all the wonderful data.</p>

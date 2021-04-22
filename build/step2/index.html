@@ -427,11 +427,11 @@
             
             <li class="nav-item" data-level="1"><a href="#step-2-compatible-iphone-or-ipod-touch" class="nav-link">Step 2: Compatible iPhone or iPod touch</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#which-devices-are-compatible-why-those" class="nav-link">Which Devices are compatible? Why those?</a>
+            <li class="nav-item" data-level="2"><a href="#which-devices-are-compatible" class="nav-link">Which Devices Are Compatible?</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#find-your-devices-ios" class="nav-link">Find your device's iOS</a>
+            <li class="nav-item" data-level="2"><a href="#find-your-devices-ios" class="nav-link">Find Your Device's iOS</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -454,35 +454,34 @@
 <div class="admonition danger">
 <p class="admonition-title">Time Estimate</p>
 <ul>
-<li>5 minutes, if already have iOS 12.4 or newer, iOS 14.4.2 or higher recommended</li>
-<li>20 minutes, if need to update your compatible device to new iOS</li>
-<li>10 minutes, if you need to order a device from Apple website</li>
-<li>0 minutes, if you own an Android and won't buy Apple products...that's fine, too.</li>
+<li>5 minutes, if your iPhone or iPod touch is at iOS 12.4 or newer; iOS 14.4.2 or higher is recommended</li>
+<li>20 minutes, if need to update your compatible device to a new iOS</li>
+<li>10 minutes, if you need to order a <a href="./#compatible-devices">compatible device</a> from Apple website</li>
+<li>0 minutes, if you own an Android and won't buy Apple products; check out <a href="https://androidaps.readthedocs.io/en/latest/">AndroidAPS Documention</a></li>
 </ul>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Summary</p>
 <ul>
-<li>Check your iOS version and make sure you have 12.4 minimum</li>
-<li>WARNING, although the current version of Loop can be built with 12.4, newer iOS is strongly recommended</li>
-<li>Do not use any of the beta iOS versions. (Don't worry...if you don't know what that means, then you aren't using one.)</li>
-<li>If using Dexcom CGM, your Looping iPhone/iPod touch will need the Dexcom app installed on it in order to Loop without an internet connection.</li>
-<li>This is a good time to <a href="#turn-off-automatic-updates">Turn Off Automatic Updates</a> of your iPhone/iPod operating system</li>
+<li>Check your iOS version and make sure you have iOS 12.4 minimum</li>
+<li>WARNING, although the current version of Loop can be built with iOS 12.4, using newer iOS is strongly recommended</li>
+<li>If using Dexcom CGM, your Looping iPhone/iPod touch will need the Dexcom app installed on it to Loop without an internet connection.</li>
+<li>This is a good time to <a href="#turn-off-automatic-updates">Turn Off Automatic Updates</a> in your iPhone/iPod settings</li>
 </ul>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">FAQs</p>
 <ul>
-<li><strong>"Can I use an android?"</strong> No.</li>
-<li><strong>"But why not?"</strong> Because Loop is written in Apple's Swift language, which does not compile onto Android operating systems.  Loop also relies on Apple Health, and Android does not have a suitable native equivalent.</li>
-<li><strong>"Can I use an iPad?"</strong> No. iPads do not support Apple Health and that is an important part of Loop's inner workings.</li>
-<li><strong>"Does my iPhone need cell plan?"</strong> No. Loop will work without an internet connection...however you will not have Dexcom Follow data or Nightscout data if you choose to use a device that doesn't have an internet connection. In other words Loop will work, but remotely watching followers won't see Looping data unless the Loop device has an internet connection.</li>
+<li><strong>"Can I use an android?"</strong> No. Check out <a href="https://androidaps.readthedocs.io/en/latest/">AndroidAPS Documention</a>.</li>
+<li><strong>"Can I use an iPad?"</strong> No. iPads do not support Apple Health and Loop uses Apple Health.</li>
+<li><strong>"Does my iPhone need a scell plan?"</strong> No. Loop works using communication via Bluetooth and the RileyLink compatible device with your CGM and pump; no internet connection required. However, without a cell plan, connection to the internet relies on WiFi availability. If access to Dexcom Follow or Nightscout monitoring of Loop is a priority, then a cell plan may be desired.  </li>
 </ul>
 </div>
-<h2 id="which-devices-are-compatible-why-those">Which Devices are compatible? Why those?<a class="headerlink" href="#which-devices-are-compatible-why-those" title="Permanent link">⌁</a></h2>
-<p>Why is Loop limited to just iPhones and iPod touches? Why can't you use an iPad? Because Loop uses the Apple Health app to store and retrieve your blood glucose, carbohydrate, and insulin data records. iPads do not have the Apple Health app, so those devices will not work with Loop. iPhones and iPod touches have the Apple Health app, so they will work with Loop.</p>
-<p>The next compatibility check is that we need a minimum version of the operating software, called the phone's "iOS", on those iPhones and iPod touches. Loop is compatible with iPhone and iPod touch devices with iOS 12.4 or newer. The next version of Loop may require a minimum of iOS 14.</p>
-<h3 id="the-ios-14-compatible-devices-include">The iOS 14 compatible devices include:<a class="headerlink" href="#the-ios-14-compatible-devices-include" title="Permanent link">⌁</a></h3>
+<h2 id="which-devices-are-compatible">Which Devices Are Compatible?<a class="headerlink" href="#which-devices-are-compatible" title="Permanent link">⌁</a></h2>
+<p>Loop requires an iPhone or iPod touch. Loop uses the Apple Health app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. iPads do not have the Apple Health app, so iPads will not work with Loop.</p>
+<p>You need a minimum version of the mobile operating software, called the phone's "iOS", to be installed on your iPhone or iPod touch. Loop is compatible with iPhone and iPod touch devices with iOS 12.4 or newer. The next version of Loop may require a minimum of iOS 14.</p>
+<h3 id="compatible-devices">Compatible Devices<a class="headerlink" href="#compatible-devices" title="Permanent link">⌁</a></h3>
+<p>These devices are compatible with iOS 14, which is expected to be the minimum iOS required to build the next version of Loop.</p>
 <ul>
 <li>iPhone 12, all variants</li>
 <li>iPhone 11, all variants</li>
@@ -493,20 +492,21 @@
 <li>iPhone SE (2016 or later model)</li>
 <li>iPod Touch, 7th generation</li>
 </ul>
-<h3 id="devices-that-will-be-incompatible-soon-maxed-out-at-ios-124">Devices that will be incompatible "soon", maxed out at iOS 12.4:<a class="headerlink" href="#devices-that-will-be-incompatible-soon-maxed-out-at-ios-124" title="Permanent link">⌁</a></h3>
+<h3 id="devices-that-will-soon-be-incompatible">Devices That Will Soon Be Incompatible<a class="headerlink" href="#devices-that-will-soon-be-incompatible" title="Permanent link">⌁</a></h3>
 <ul>
 <li>iPhone 5s, 6, 6+</li>
 <li>iPod Touch, 6th generation</li>
 </ul>
-<p>Apple has decided that those models have lived their useful life and can no longer be updated past iOS 12.4. They've reached the end of their "apple supported" update life cycle. Apple released iOS 13 and iOS 14 in the recent past and those models cannot be updated to use them. This does not pose a problem currently...you can still build Loop's master and automatic-bolus branch so long as your device has iOS 12.4 at a minimum. HOWEVER, there are upcoming Loop changes that will require users to have iOS 14 on their devices to build Loop. There is no set timeframe for when that minimum requirement will be changed.  We will make an announcement when it does and the docs will be updated here.</p>
-<p>Side note for people who are seasoned Loop users and know about branches and such: Currently (as of October 2020), Loop's dev branch and several popular forks require devices to have iOS 13 or newer, and it is expected dev will soon require iOS 14. There's no set timeframe for when dev will next be merged into master.</p>
-<h2 id="find-your-devices-ios">Find your device's iOS<a class="headerlink" href="#find-your-devices-ios" title="Permanent link">⌁</a></h2>
+<p>Apple stopped providing iOS updates for these devices at iOS 12.4. Apple released iOS 13 and iOS 14 in the recent past and these older devices cannot be updated to use these newer iOS versions. This does not pose a problem currently...you can still build Loop's master and automatic-bolus branch so long as your device has iOS 12.4 at a minimum. HOWEVER, there are upcoming Loop changes that will require users to have iOS 14 on their devices to build Loop. There is no set timeframe for when that minimum requirement will change.  When that happens, the docs will be updated and an announcement made in all the <a href="../..#stay-in-the-loop">Loop Social Media</a> sites.</p>
+<p>Side note for people who are seasoned Loop users and know about branches and such: Currently (April 2021), Loop's dev branch and several popular forks require devices to have iOS 13 or newer, and it is expected dev will soon require iOS 14. There's no set timeframe for when dev will next be merged into master.</p>
+<h2 id="find-your-devices-ios">Find Your Device's iOS<a class="headerlink" href="#find-your-devices-ios" title="Permanent link">⌁</a></h2>
 <p>Your phone's iOS version can be found under the Settings app, General, About as shown below.</p>
 <p><img alt="img/ios.jpg" src="../img/ios.jpg" width="300" /></p>
+<p>Do not use any of the beta iOS versions. (Don't worry...if you don't know what that means, then you aren't using one.)</p>
 <h2 id="turn-off-automatic-updates">Turn Off Automatic Updates<a class="headerlink" href="#turn-off-automatic-updates" title="Permanent link">⌁</a></h2>
 <p>This is important - this allows you to choose when to update your phone. We recommend that updates be installed as soon as the All-Clear is given.  Updates are important.</p>
 <ul>
-<li>As far as we know, an iOS update has never prevented Loop from working</li>
+<li>An iOS update has never prevented Loop from working</li>
 <li>But an iOS update often requires an Xcode update to build Loop on that device</li>
 <li>Rarely, but it has happened, that Xcode update requires a Loop code update</li>
 <li>If a problem is found, the solution is typically posted pretty quickly</li>
@@ -516,7 +516,7 @@
 <li>Do not enable automatic installation of the updates</li>
 </ol>
 </li>
-<li>Check on your favorite social media platform to see if a newly released iOS is causing an issue with Loop or your CGM before accepting the update from Apple</li>
+<li>Check on your favorite <a href="../..#stay-in-the-loop">Loop Social Media</a> site to see if a newly released iOS is causing an issue with Loop or your CGM before accepting the update from Apple</li>
 <li>The "All-Clear" or "WAIT there's a problem" is normally posted within a few days</li>
 </ul>
 <h2 id="next-step-compatible-pump">Next Step: Compatible Pump<a class="headerlink" href="#next-step-compatible-pump" title="Permanent link">⌁</a></h2>
