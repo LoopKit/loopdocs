@@ -67,7 +67,7 @@ And now you'll be the proud new owner of a custom Loop icon.
 ![img/unicorn-logo.jpeg](img/unicorn-logo.jpeg){width="350"}
 {align="center"}
 
-## Adjust the sensitivity of Watch's digital crown for carb and bolus entry
+## Adjust the Sensitivity of Watch's Digital Crown for Carb and Bolus Entry
 
 The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension>>Controllers folder.  In BolusInterfaceController.swift edit line 191, and in AddCarbsInterfaceController.swift edit line 249. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.
 

@@ -15,9 +15,9 @@
         1. lack of internet connection or
         2. not enough free space on the computer hard drive
     - Xcode is a large download, and it needs space to properly unpack and install itself
-    - You need at least 50GB of free space on your hard drive before starting
-    - If you get low on free space, you may have installation failures
-        - You can check your free space by clicking on the `About this Mac` (see Build Step 1) and clicking the `Storage` tab
+    - For a new Xcode installation, at least 50GB of free space on your hard drive is required
+        - If you get low on free space, you may have installation failures
+        - [Check the Space Available](step1.md#check-the-space-available)
 
 This step may take more time than the other steps, because the download takes a while. The good news is that you don't have to watch it. Instead, you can simply walk away once the download starts. If your laptop goes to sleep when you close the lid or when the screen saver starts - be sure to disable the screen saver and leave the laptop open. This is a big download, so don't expected this to be fast.
 

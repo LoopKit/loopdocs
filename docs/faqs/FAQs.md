@@ -91,9 +91,9 @@ If there is more than one Looper in the family, you only need to have one Apple 
 
 If you are helping a Looper in your local diabetes group get an update on their phone, make sure you can text each other. They need to realize the Loop app on the phone is different if the build uses a different Apple Developer ID from the one currently on their phone. So they will have to on-board the new app, enter all the settings again and delete the old app. Because of the limit on the number of devices per Developer ID, be sure to limit the number of people you help.
 
-## Can I use someone else's Apple Developer account for my Loop build?
+## Can I use someone else's Apple Developer account?
 
-It's best that you build your own app using your own Apple Developer ID.
+It's best that you build your own Loop app using your own Apple Developer ID.
 
 One developer account can only be "linked" to a limited number of devices. So one person "loaning out" their developer license to a lot of people will quickly exceed the number of allowed devices. In those cases, that person will be told they need to revoke the certificates on some devices (essentially dropping old ones to make room for new ones). If they revoke your device certificate (and they can do that without you knowing through their developer portal), your Loop app will immediately stop working and not even open.
 
@@ -104,7 +104,7 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 ## How can I find a compatible pump? supplies?
 
-There is a [whole page with detailed information about Medtronic pumps](../build/step3.md#check-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
+There is a [whole page with detailed information about Medtronic pumps](../build/step3.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 
 You can also use Omnipod Eros (not Dash). You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
 
