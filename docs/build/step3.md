@@ -6,26 +6,30 @@
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
 
 !!! info "Summary"
-    - If you have a big clunky PDM with built-in BG meter...you can use your pods for Loop.
-    - If you have a slim touch screen android-looking PDM...you can NOT use your pods for Loop.
+    - If you have a big clunky PDM with a built-in BG meter...you can use your pods for Loop. (These pods have a clear needle cap.)
+    - If you have a slim touch screen android-looking PDM...you can NOT use your pods for Loop. (These pods have a blue needle cap.)
     - If you have a Medtronic, check the list to ensure compatible model/firmware.
 
 !!! faqs "FAQs"
-    - **"How can I find a compatible Medtronic pump?"** That question is answered in the Extra Details section below.
+    - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](finding-a-medtronic-pump)
     - **"What are the differences between Medtronic pump models?"** This question is also answered in the Extra Details section below.
-    - **"But what about the other types of pumps?"** Too bad, so sad...unless it is a DanaRS, DanaR, Accu-Chek Insight, Accu-Chek Combo. If you have one of those pumps, you could check out [AndroidAPS looping system](https://androidaps.readthedocs.io/en/latest/index.html) instead of Loop. If you have a Medtronic 512 or 712, you could check out [OpenAPS](https://openaps.readthedocs.io/en/latest/) as that system supports the 512 and 712 models in addition to the other Loop-compatible Medtronic pumps. Neither of those systems currently support Omnipod for looping.
+    - **"But what about the other types of pumps?"** No other pumps work with Loop at this time.  If you have a DanaRS, DanaR, Accu-Chek Insight, Accu-Chek Combo, you could check out [AndroidAPS looping system](https://androidaps.readthedocs.io/en/latest/index.html). If you have a Medtronic 512 or 712, you could check out [OpenAPS](https://openaps.readthedocs.io/en/latest/) as that system supports the 512 and 712 models in addition to the other Loop-compatible Medtronic pumps. Neither of those systems currently support Omnipod for looping.
     - **"Can I change the firmware of my Medtronic pump?"** Do you work at Medtronic with insider access to the secret tools and firmware versions to do that? Might lose your job, but I'd bet you could do it then. We don't have access to that though.
 
-## Check pump version
+## Pumps Compatible with Loop
 
-This is a pretty simple step...check that you have a compatible pump to use Loop:
+There are two types of pumps compatible with Loop.
+
+* [Older Medtronic pumps](step3.md#check-medtronic-pump-version)
+* [Eros Omnipod pumps](step3.md#omnipod-pumps)
+
+## Check Medtronic Pump Version
 
 * Medtronic 515 or 715 (any firmware)
 * Medtronic 522 or 722 (any firmware)
 * Medtronic 523 or 723 (firmware 2.4 or lower)
 * Medtronic Worldwide Veo 554 or 754 (firmware 2.6A or lower)
 * Medtronic Canadian/Australian Veo 554 or 754 (firmware 2.7A or lower)
-* Omnipod "Eros" pods
 
 If you have one of the pumps listed above, you are good to go on Loop! Congrats!
 
@@ -33,7 +37,7 @@ If you have one of the pumps listed above, you are good to go on Loop! Congrats!
 
 ![insulin pumps](img/pump.png)
 
-There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are Loop compatible.  Compatibility has two requirements; (1) pump model and (2) firmware.
+There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are Loop compatible.  Compatibility has two requirements: (1) pump model and (2) firmware.
 
 ### Medtronic Pump Model
 
@@ -56,7 +60,7 @@ A pump’s firmware is the internal software that runs your pump.  Older Medtron
 
 !!! note ""
 
-    The firmware on all 515/715 and 522/722 model Medtronic pumps are all compatible with Loop. You will only need to check the firmware version for 523/723 and 554/754 model Medtronic pumps.
+    The firmware on all 515/715 and 522/722 model Medtronic pumps is compatible with Loop. You will only need to check the firmware version for 523/723 and 554/754 model Medtronic pumps.
 
     + Medtronic 515 or 715 --> any firmware
     + Medtronic 522 or 722  --> any firmware
@@ -82,9 +86,9 @@ If you are in the position of being able to shop around for different pump model
 
 **500 vs 700**:  The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180 unit reservoir, and the 700 series pumps use a 300 unit reservoir (or smaller 180 unit reservoir, if you want).
 
-**x15/x22 vs x23/x54**:  The difference between the x15 and x22 pumps versus the x23 and x54 series pumps has only a few notable mentions:
+**x15/x22 vs x23/x54**:  The differences noteworthy between the x15 and x22 pumps versus the x23 and x54 series pumps are:
 
-* The x23/x54 pumps will allow for smaller insulin deliveries in certain situations, if the smaller scroll rate is selected in the Bolus>Setup>Scroll Rate menu.  **Loop will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Loop’s use of temp basals.  If you want the smaller increments of basal rates, you can still enter those values in Loop app's settings and Loop will use those values for the purposes of insulin delivery calculations.**
+* The x23/x54 pumps will allow for smaller insulin deliveries in certain situations, if the smaller scroll rate is selected in the Bolus>Setup>Scroll Rate menu.  **Loop will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Loop’s use of temp basals.  If you want the smaller increments of basal rates, you can still enter those values in the Loop app's settings and Loop will use those values for the purposes of insulin delivery calculations.**
 
 |Pump Model  |Basal increments  |Bolus increments  |Range  |
 |---------|---------|---------|---------|
@@ -95,9 +99,9 @@ If you are in the position of being able to shop around for different pump model
 
 * The x23/x54 series pumps are also faster at delivering boluses greater than 10 units.  On an x23 pump, a 13-unit bolus takes 5:00 minutes to complete.  On an x22 pump, a 13-unit bolus takes 8:40 minutes to complete.
 
-### Finding a Medtronic pump
+### Finding a Medtronic Pump
 
-Finding a compatible Medtronic pump is probably the most difficult part for most new Loopers.  Our suggestion:
+Finding a compatible Medtronic pump is probably the most difficult part for most new Loopers.  Our suggestions:
 
 * Talk to friends in the diabetic community.
 
@@ -143,13 +147,13 @@ Red flags that may indicate a scam:
 
 Medtronic will not typically sell pump supplies directly to customers who have not previously purchased a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any type in particular.
 
-## Extra Details on Omnipods
+## Omnipod Pumps
 
 !!! warning "Reminder and Disclaimer"
 
-    Through the work of the DIY community, Insulet's Omnipod (Eros) system is now Loop compatible. Using Eros pods with Loop is not supported by Insulet. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved and you are using this project under your own responsibility and risk. Please read these documents and familiarize yourself with Loop before using.
+    The use of Eros pods with Loop is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved. You are fully responsible for your use of this project and do so at your own risk. Please read these documents and familiarize yourself with Loop before using.
 
-### Eros - Loop will work with these pods
+### Eros - Loop Will Work with These Pods
 
 Eros pods were launched in 2013 and continue to be sold by Insulet. As far as we know, there have been no plans or timelines announced for the discontinuation of Eros pods for existing customers. Insulet doesn't specifically call these "Eros" anymore, they just use the term "omnipod system". For clarity, from [Insulet's webpage](https://www.myomnipod.com/about):
 
@@ -158,9 +162,9 @@ Eros system has that PDM we all recognize from the last several years.
 ![img/eros.png](img/eros.png){width="750"}
 {align="center"}
 
-### DASH - Loop will not work with DASH pods
+### DASH - Loop Will Not Work with DASH Pods
 
-Insulet has announced their DASH system as an eventual replacement for Eros/Omnipod System. There has already been a limited release of DASH to a select group of users, with a wider public rollout of DASH expected in 2019. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop will not be compatible with the DASH system.
+Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop will not be compatible with the DASH system.
 
 ![img/dash.png](img/dash.png){width="750"}
 {align="center"}
