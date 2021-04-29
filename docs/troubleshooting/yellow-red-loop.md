@@ -55,6 +55,10 @@ If you have a different RileyLink compatible device, please check the appropriat
 
 If you recently changed a transmitter, you need to also update your Loop settings to reflect the new transmitter ID. Go to the CGM section of Loop settings and `Delete CGM` (it's a button on the bottom of that page). Then use the `Add CGM` in Loop settings to include the new transmitter ID.
 
+### Apple Health permissions
+
+Make sure both the _Loop_ app and the _Dexcom_ app have permission to write to _Apple Health_ by checking the [Apple Health Data Permissions](../build/health.md)
+
 ### Firefly-style transmitter
 
 Leaving this in for historical interest only. It illustrates the need to keep Loop up-to-date.  Who knows what the next hardware change will be. Enough time has passed that everyone's Loop app must be newer. If you have not updated your Loop app since late July 2019 and use Dexcom G6, you will need to update your Loop app to continue to be able to loop without internet connection. In July 2019, we started to see a new style of Dexcom G6 transmitters on the market. These new transmitters required a rework of some of the Loop's code to continue to "spy" on the transmitter. Without the update, your Loop will not get CGM data unless it is pulling from Share servers (which is not a recommended mode of operation). So, update your Loop app if you have a new transmitter type and haven't updated since July 2019.
