@@ -31,10 +31,7 @@ The RileyLink protocol defines a specific bluetooth interface and way of opening
 
 There used to be just one option, the original RileyLink. Now there are more options, so you have to make a decision. Depending on your choice, be sure to have the correct charger and cables or batteries handy and add spare compatible supplies to your diabetes go-bag.
 
-- One thing that might affect your choice is where you live and whether you want to charge the device or change batteries
-    - If you are in the US, shipping for RileyLink and OrangeLink is less expensive
-    - The EmaLink ships from Europe
-    - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the GetRileyLink organization for all the RileyLink compatible devices listed below
+- A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the GetRileyLink organization for all the RileyLink compatible devices listed below
 - RileyLink
     - Designed by Pete Schwamb, available from [GetRileyLink](https://getrileylink.org)
     - Rechargable battery (max 36 hours per charge)
@@ -53,8 +50,8 @@ There used to be just one option, the original RileyLink. Now there are more opt
         - Maxx: 12 to 14 days
     - Must order either Omnipod or Medtronic version
     - This [EmaLink Information](https://github.com/sks01/EmaLink#emalink) includes photos of various EmaLink configurations as well as photos showing relative sizes of EmaLink, OrangeLink and RileyLink
-    - This device ships from Europe, and is available by sending a private message via github to Sorin (sks01) or you can use this [Ema Order Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdcHBUN6e1yPxxvlaXYRBL1liF9W8OYDOpTR2tWquXESo0bKg/viewform)
-    - Sometimes, a group-buy is organized on Facebook to minimize shipping costs
+    - To obtain this device in Europe, send a private message via github to Sorin (sks01)
+    - To obtain this device in the US, please use this [Ema Order Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdcHBUN6e1yPxxvlaXYRBL1liF9W8OYDOpTR2tWquXESo0bKg/viewform)
 
 ## More information
 
