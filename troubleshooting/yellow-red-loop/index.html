@@ -431,15 +431,15 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#rileylink-is-broken" class="nav-link">RileyLink is broken</a>
+            <li class="nav-item" data-level="2"><a href="#rileylink-is-broken" class="nav-link">RileyLink is Broken</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#cgm-values-are-not-being-collected-by-loop" class="nav-link">CGM Values are not being collected by Loop</a>
+            <li class="nav-item" data-level="2"><a href="#cgm-values-are-not-being-collected-by-loop" class="nav-link">CGM Values Are Not Being Collected by Loop</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#pump-is-not-responding" class="nav-link">Pump is not responding</a>
+            <li class="nav-item" data-level="2"><a href="#pump-is-not-responding" class="nav-link">Pump is Not Responding</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -462,7 +462,7 @@
 <p>Let's divide this page up into two parts. The first part deals with individual red loops. Like it just happened and you want to solve it. The second part will deal with situations where you are repeatedly having red loops "more often" than you think is "normal" (both of those, of course, are subjective terms).</p>
 <h2 id="resolving-a-red-loop">Resolving a Red Loop<a class="headerlink" href="#resolving-a-red-loop" title="Permanent link">⌁</a></h2>
 <p>So you are here for help with getting your Loop green again? It's red and not working? Wondering what is happening? You can click on the red loop icon to read an error message that you may or may not understand. If you understand it, great...that should help you fix the problem. If you don't understand it, then there are two options to fix the red loop; the first is quick and easy, the second is more in-depth. Let's look at both.</p>
-<p><strong>Omnipod Users</strong>: Do not quickly decide to pull a pod that isn't responding and has a red loop. Usually the issue is that the RileyLink compatible device needs a reset as described below in Option 1, rather than the pod needing to be changed. If you don't fix the device's problem first, the problem may carry forward into a failed pod-pairing attempt because it still isn't working. So, please try getting the device working properly before deciding to ditch a pod because of a red loop.</p>
+<p><strong>Omnipod Users</strong>: Do not just pull a pod that isn't responding when there is a red loop. Usually the issue is that the RileyLink compatible device needs to be reset as described below in Option 1. If you don't fix the current communication problem first, the problem will carry forward into a failed pod-pairing attempt. So, please try getting the device working properly before deciding to ditch a pod because of a red loop.</p>
 <h3 id="option-1-easy-steps">Option 1: Easy Steps<a class="headerlink" href="#option-1-easy-steps" title="Permanent link">⌁</a></h3>
 <div class="admonition danger">
 <p>You don't care what the heck is causing the issue, you just want to get on with life as quickly as possible? Ok, fair enough, then do the following steps:</p>
@@ -489,29 +489,30 @@
 <li>Pump is not responding</li>
 </ol>
 </div>
-<h2 id="rileylink-is-broken">RileyLink is broken<a class="headerlink" href="#rileylink-is-broken" title="Permanent link">⌁</a></h2>
+<h2 id="rileylink-is-broken">RileyLink is Broken<a class="headerlink" href="#rileylink-is-broken" title="Permanent link">⌁</a></h2>
 <p>How can you tell if your RileyLink has a problem? The answer is mostly within the LED lights that display on the board. Some information is listed below, but also review the <a href="https://getrileylink.org/faq">FAQs at getrileylink.org</a>.</p>
 <p>If you have a different RileyLink compatible device, please check the appropriate site for troubleshooting help.</p>
 <p><strong>Red light</strong>: comes on during charging and will turn off/on periodically, while still plugged in, after charge is complete.</p>
 <p><strong>Green light</strong>: Indicates an active BT connection with the phone. You want the green light to stay on all the time on the RileyLink. If the green light is not on, then make sure your iPhone's bluetooth is still switched on.</p>
 <p><strong>Blue light</strong>: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol <a href="https://youtu.be/s2qNPLpfwww">(unplug the battery first</a>). If you still can't get the blue light off, then contact GetRileyLink for help or check out <a href="../../build/step5/#rileylink-compatible-devices">RileyLink Compatible Devices</a> for replacement options.</p>
-<h2 id="cgm-values-are-not-being-collected-by-loop">CGM Values are not being collected by Loop<a class="headerlink" href="#cgm-values-are-not-being-collected-by-loop" title="Permanent link">⌁</a></h2>
-<h3 id="new-transmitter">New transmitter<a class="headerlink" href="#new-transmitter" title="Permanent link">⌁</a></h3>
+<h2 id="cgm-values-are-not-being-collected-by-loop">CGM Values Are Not Being Collected by Loop<a class="headerlink" href="#cgm-values-are-not-being-collected-by-loop" title="Permanent link">⌁</a></h2>
+<h3 id="new-transmitter">New Transmitter<a class="headerlink" href="#new-transmitter" title="Permanent link">⌁</a></h3>
 <p>If you recently changed a transmitter, you need to also update your Loop settings to reflect the new transmitter ID. Go to the CGM section of Loop settings and <code>Delete CGM</code> (it's a button on the bottom of that page). Then use the <code>Add CGM</code> in Loop settings to include the new transmitter ID.</p>
-<h3 id="apple-health-permissions">Apple Health permissions<a class="headerlink" href="#apple-health-permissions" title="Permanent link">⌁</a></h3>
-<p>Make sure both the <em>Loop</em> app and the <em>Dexcom</em> app have permission to write to <em>Apple Health</em> by checking the <a href="../../build/health/">Apple Health Data Permissions</a></p>
-<h3 id="firefly-style-transmitter">Firefly-style transmitter<a class="headerlink" href="#firefly-style-transmitter" title="Permanent link">⌁</a></h3>
-<p>Leaving this in for historical interest only. It illustrates the need to keep Loop up-to-date.  Who knows what the next hardware change will be. Enough time has passed that everyone's Loop app must be newer. If you have not updated your Loop app since late July 2019 and use Dexcom G6, you will need to update your Loop app to continue to be able to loop without internet connection. In July 2019, we started to see a new style of Dexcom G6 transmitters on the market. These new transmitters required a rework of some of the Loop's code to continue to "spy" on the transmitter. Without the update, your Loop will not get CGM data unless it is pulling from Share servers (which is not a recommended mode of operation). So, update your Loop app if you have a new transmitter type and haven't updated since July 2019.</p>
-<h3 id="delete-share-account">Delete Share account<a class="headerlink" href="#delete-share-account" title="Permanent link">⌁</a></h3>
+<h3 id="apple-health-permissions">Apple Health Permissions<a class="headerlink" href="#apple-health-permissions" title="Permanent link">⌁</a></h3>
+<p>Make sure both the Loop app and the Dexcom app have permission to write to Apple Health by checking the <a href="../../build/health/">Apple Health Data Permissions</a></p>
+<h3 id="firefly-style-transmitter">Firefly-style Transmitter<a class="headerlink" href="#firefly-style-transmitter" title="Permanent link">⌁</a></h3>
+<p>Leaving this in for historical interest only. It illustrates the need to keep Loop up-to-date.  Who knows what the next hardware change will be. Enough time has passed that everyone's Loop code should be newer.</p>
+<p>In July 2019, we started to see a new style of Dexcom G6 transmitters on the market. These new transmitters required a rework of some of the Loop's code to continue to "spy" on the transmitter. Without that update, your Loop can not get CGM data unless it is pulling from Share servers (which is not a recommended mode of operation). So, download fresh code for your Loop app if you have a new transmitter type and haven't downloaded since July 2019.</p>
+<h3 id="delete-share-account">Delete Share Account<a class="headerlink" href="#delete-share-account" title="Permanent link">⌁</a></h3>
 <p>Finally, we see a lot of errors reported because people have problems with their Share server information in Loop app. <strong>Please delete your Share account information from within Loop settings.</strong> In other words, the credentials portion of the Share account info, as shown in the screenshot below, should say <code>Tap to Set</code> and not have your account info. It is unnecessary to have this portion filled out as local, non-internet spying of a transmitter is the preferred CGM source anyways. In fact, by leaving this information out, it will help you remember to change your transmitter ID when you change transmitters because CGM data won't appear in Loop. By not including Share account in Loop, you will prevent yourself from accidentally becoming internet dependent.</p>
 <p align="center"><img alt="img/no-share.jpg" src="../img/no-share.jpg" width="450" /></p>
-<h2 id="pump-is-not-responding">Pump is not responding<a class="headerlink" href="#pump-is-not-responding" title="Permanent link">⌁</a></h2>
+<h2 id="pump-is-not-responding">Pump is Not Responding<a class="headerlink" href="#pump-is-not-responding" title="Permanent link">⌁</a></h2>
 <p>The obvious fix is to make sure the RileyLink compatible device is not so far away from the pump or pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps.</p>
 <p><strong>Omnipod Loopers</strong>: Option 1 almost always fixes this issue.</p>
 <p><strong>Medtronic Loopers</strong>: you may have times when the pump is not responding with "decoding" errors or various other messages about pump responses. Try the following:</p>
 <ol>
 <li>Change pump battery. Low pump battery will cause radio communications to fail.</li>
-<li>Use the <code>Change Time</code> command in the pump menu to update the pump's clock. If you've accidentally changed the pump's time in the pump itself, this will get the Loop app and pump back in sync.</li>
+<li>Use the <code>Change Time</code> command in the pump menu to update the pump's clock. If you've accidentally changed the pump's time in the pump itself or if the pump time has drifted, this will get the Loop app and pump time back in sync.</li>
 <li>If using a x23 or x54 pump, try deleting all the IDs under the "Other Devices" submenu in the pump's "Connect Devices" menu.  Then go to the RileyLink menu and use the MySentry pairing command to get a fresh ID issued. Follow the directions listed in the MySentry pairing command's screen to scan for devices. A fresh ID can help prevent recurring red loops for x23 and x54 users, particularly if they started to occur after a recent Loop update.</li>
 <li>Make sure the following are checked in the pump:<ul>
 <li>Your pump cannot be suspended.  Resume insulin deliveries.</li>
@@ -539,6 +540,9 @@
 </li>
 <li>
 <p>Check for sources of wireless interference. If you have a certain environment that seems to have more drops than others, it is likely that there is a source of wireless communication interfering with your Loop. Lots of Medtronic Loopers in a room together will often interfere with each other and get "cross-talk" red loop error messages. If it is a bedroom at night causing problems, try moving other wireless devices such as routers or baby monitors farther away from where you and your RileyLink compatible device.</p>
+</li>
+<li>
+<p>In some cases, you may need to clean out Apple Health, or even reset your phone to factory defaults and reload all your personal information and then rebuild the Loop app. Before you do this, you may want to Post for Help (next section).</p>
 </li>
 </ul>
 <h2 id="posting-for-help">Posting for Help<a class="headerlink" href="#posting-for-help" title="Permanent link">⌁</a></h2>
