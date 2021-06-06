@@ -1,6 +1,7 @@
 # Medtronic Pump Users
 
-Your Loop won’t have much showing initially until we get some basic settings input. The beginning step will be to add a pump to your Loop. If you are using a Medtronic pump, you can follow along for the rest of this page. If, however, you are using an Omnipod pump, please head over to [this page](omnipod-pump.md) instead.
+Your Loop will have a lot of blank spots until you input some basic settings. The beginning step is to add a pump to your Loop app. If you are using an Medtronic pump, you can follow along for the rest of this page. If you are using a Medtronic pump, Omnipod pump, please head over to [Add Omnipod](omnipod-pump.md) instead.
+
 
 ## Prepare Medtronic Pump
 
@@ -23,17 +24,25 @@ Let’s start by clicking on the Loop Settings button in the tool bar at the bot
 ![img/loop_settings_add_pump.png](img/loop_settings_add_pump.png){width="750"}
 {align="center"}
 
-## Pump Pairing
+## Connect Pump to Loop
 
-You now need to follow a few simple screen prompts to add your Medtronic pump to Loop:
+!!! danger ""
+    New RileyLink compatible devices won't have a name listed next to their slider at first. The name will only be displayed after connecting the device to Loop for the first time. So, if all you see in the device list is a little toggle and no "RileyLink" name...go ahead and switch that toggle. The default device name will appear after that toggle is green.
 
-1. Make sure your RileyLink is turned on and nearby, then you will see a RileyLink listed in this area of the settings.  Actually, you will see a list of any RileyLinks that are in the nearby area. Slide on the toggle for your RileyLink.
+    You can later [personalize](rileylink.md) the default device name once it is connected to Loop.
+
+![img/pod-rl.png](img/pod-rl.png){width="400"}
+{align="center"}
+
+Continue with these steps to connect your Medtronic pump to Loop.  
+
+1. Make sure your RileyLink is turned on and nearby, then you will see a RileyLink listed in this area of the settings.  Actually, you will see a list of any RileyLinks that are in the nearby area. Slide on the toggle for just one RileyLink.
 2. Add your pump's region, color, and serial number.
 3. Click the `Continue` button to finish the addition of your pump.
+<br/><br/>
 
 ![img/add_pump.png](img/add_pump.png){width="750"}
 {align="center"}
-
 
 !!! info "For x23 and x54 Medtronic pump users only"
     | <div style="width:144px"></div> ||
