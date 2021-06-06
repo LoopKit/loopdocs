@@ -2,7 +2,7 @@
 
 The RileyLink menu is accessed by clicking on the image of your connected pump in Loop settings or the Reservoir (Medtronic) or Pod Age (Omnipod) in the Heads Up Display to bring up the associated pump screen. From that screen, scroll down to the section labeled `DEVICES` to view the list of connected RileyLink compatible device(s). Tapping on a name with a green slider by it takes you to the RileyLink Menu for that device.
 
-!!! danger "Helpful Tip"
+!!! danger "Helpful Tip - Personalize Your Device"
     As soon as you connect the device initially - it is strongly encouraged that you rename it from the default name for that device, e.g., RileyLink or OrangeLink or EmaLink. Tap on the device as directed above, then tap on the Name line and enter your desired name. The new name may need to sit for a few seconds before exiting back out of the naming screen for it to be transferred and saved in the device. The device must be connected and on to change its name.
 
 The name at the top center is whatever you named your RileyLink compatible device. Depending on which pump you have connected to your Loop app, your screen will look different. On the left below is the typical screen when using a Medtronic pump, and on the right is with an Omnipod. As you can see, both have in common a section called `DEVICE`, but after that only the Medtronic pumps will have a `PUMP` and `COMMANDS` section. The corresponding section for Omnipod are in the [Pod Settings](pump-commands.md#omnipod-commands) menu.
