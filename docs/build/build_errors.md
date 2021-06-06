@@ -97,6 +97,8 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 If you previously installed carthage (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a carthage error.
 
+If you are using a Loop fork or a Workspace build with the dev branch, you may still require carthage. This [external link](https://www.loopandlearn.org/carthage-0-36-0/) explains how to install the correct version of carthage on your computer.
+
 **Error Message:**
 
 !!! info "Wrong Version of Carthage Error"

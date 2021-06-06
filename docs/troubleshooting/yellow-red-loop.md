@@ -6,7 +6,7 @@ Let's divide this page up into two parts. The first part deals with individual r
 
 So you are here for help with getting your Loop green again? It's red and not working? Wondering what is happening? You can click on the red loop icon to read an error message that you may or may not understand. If you understand it, great...that should help you fix the problem. If you don't understand it, then there are two options to fix the red loop; the first is quick and easy, the second is more in-depth. Let's look at both.
 
-**Omnipod Users**: Do not quickly decide to pull a pod that isn't responding and has a red loop. Usually the issue is that the RileyLink compatible device needs a reset as described below in Option 1, rather than the pod needing to be changed. If you don't fix the device's problem first, the problem may carry forward into a failed pod-pairing attempt because it still isn't working. So, please try getting the device working properly before deciding to ditch a pod because of a red loop.
+**Omnipod Users**: Do not just pull a pod that isn't responding when there is a red loop. Usually the issue is that the RileyLink compatible device needs to be reset as described below in Option 1. If you don't fix the current communication problem first, the problem will carry forward into a failed pod-pairing attempt. So, please try getting the device working properly before deciding to ditch a pod because of a red loop.
 
 ### Option 1: Easy Steps
 
@@ -37,7 +37,7 @@ So you are here for help with getting your Loop green again? It's red and not wo
     2. CGM values are not being collected by Loop
     3. Pump is not responding
 
-## RileyLink is broken
+## RileyLink is Broken
 
 How can you tell if your RileyLink has a problem? The answer is mostly within the LED lights that display on the board. Some information is listed below, but also review the [FAQs at getrileylink.org](https://getrileylink.org/faq).
 
@@ -49,28 +49,30 @@ If you have a different RileyLink compatible device, please check the appropriat
 
 **Blue light**: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol [(unplug the battery first](https://youtu.be/s2qNPLpfwww)). If you still can't get the blue light off, then contact GetRileyLink for help or check out [RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices) for replacement options.
 
-## CGM Values are not being collected by Loop
+## CGM Values Are Not Being Collected by Loop
 
-### New transmitter
+### New Transmitter
 
 If you recently changed a transmitter, you need to also update your Loop settings to reflect the new transmitter ID. Go to the CGM section of Loop settings and `Delete CGM` (it's a button on the bottom of that page). Then use the `Add CGM` in Loop settings to include the new transmitter ID.
 
-### Apple Health permissions
+### Apple Health Permissions
 
-Make sure both the _Loop_ app and the _Dexcom_ app have permission to write to _Apple Health_ by checking the [Apple Health Data Permissions](../build/health.md)
+Make sure both the Loop app and the Dexcom app have permission to write to Apple Health by checking the [Apple Health Data Permissions](../build/health.md)
 
-### Firefly-style transmitter
+### Firefly-style Transmitter
 
-Leaving this in for historical interest only. It illustrates the need to keep Loop up-to-date.  Who knows what the next hardware change will be. Enough time has passed that everyone's Loop app must be newer. If you have not updated your Loop app since late July 2019 and use Dexcom G6, you will need to update your Loop app to continue to be able to loop without internet connection. In July 2019, we started to see a new style of Dexcom G6 transmitters on the market. These new transmitters required a rework of some of the Loop's code to continue to "spy" on the transmitter. Without the update, your Loop will not get CGM data unless it is pulling from Share servers (which is not a recommended mode of operation). So, update your Loop app if you have a new transmitter type and haven't updated since July 2019.
+Leaving this in for historical interest only. It illustrates the need to keep Loop up-to-date.  Who knows what the next hardware change will be. Enough time has passed that everyone's Loop code should be newer.
 
-### Delete Share account
+In July 2019, we started to see a new style of Dexcom G6 transmitters on the market. These new transmitters required a rework of some of the Loop's code to continue to "spy" on the transmitter. Without that update, your Loop can not get CGM data unless it is pulling from Share servers (which is not a recommended mode of operation). So, download fresh code for your Loop app if you have a new transmitter type and haven't downloaded since July 2019.
+
+### Delete Share Account
 
 Finally, we see a lot of errors reported because people have problems with their Share server information in Loop app. **Please delete your Share account information from within Loop settings.** In other words, the credentials portion of the Share account info, as shown in the screenshot below, should say `Tap to Set` and not have your account info. It is unnecessary to have this portion filled out as local, non-internet spying of a transmitter is the preferred CGM source anyways. In fact, by leaving this information out, it will help you remember to change your transmitter ID when you change transmitters because CGM data won't appear in Loop. By not including Share account in Loop, you will prevent yourself from accidentally becoming internet dependent.
 
 ![img/no-share.jpg](img/no-share.jpg){width="450"}
 {align="center"}
 
-## Pump is not responding
+## Pump is Not Responding
 
 The obvious fix is to make sure the RileyLink compatible device is not so far away from the pump or pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps.
 
@@ -79,7 +81,7 @@ The obvious fix is to make sure the RileyLink compatible device is not so far aw
 **Medtronic Loopers**: you may have times when the pump is not responding with "decoding" errors or various other messages about pump responses. Try the following:
 
 1. Change pump battery. Low pump battery will cause radio communications to fail.
-1. Use the `Change Time` command in the pump menu to update the pump's clock. If you've accidentally changed the pump's time in the pump itself, this will get the Loop app and pump back in sync.
+1. Use the `Change Time` command in the pump menu to update the pump's clock. If you've accidentally changed the pump's time in the pump itself or if the pump time has drifted, this will get the Loop app and pump time back in sync.
 1. If using a x23 or x54 pump, try deleting all the IDs under the "Other Devices" submenu in the pump's "Connect Devices" menu.  Then go to the RileyLink menu and use the MySentry pairing command to get a fresh ID issued. Follow the directions listed in the MySentry pairing command's screen to scan for devices. A fresh ID can help prevent recurring red loops for x23 and x54 users, particularly if they started to occur after a recent Loop update.
 1. Make sure the following are checked in the pump:
     * Your pump cannot be suspended.  Resume insulin deliveries.
@@ -100,6 +102,8 @@ Here's some things to check if you have frequent red loops:
 * Oddly, some people have found that turning off Siri integrations for Loop and Dexcom apps in your iPhone settings has helped. This may be coincidental, but if you're still having trouble, you might want to try it.
 
 * Check for sources of wireless interference. If you have a certain environment that seems to have more drops than others, it is likely that there is a source of wireless communication interfering with your Loop. Lots of Medtronic Loopers in a room together will often interfere with each other and get "cross-talk" red loop error messages. If it is a bedroom at night causing problems, try moving other wireless devices such as routers or baby monitors farther away from where you and your RileyLink compatible device.
+
+* In some cases, you may need to clean out Apple Health, or even reset your phone to factory defaults and reload all your personal information and then rebuild the Loop app. Before you do this, you may want to Post for Help (next section).
 
 ## Posting for Help
 
