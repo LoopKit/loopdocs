@@ -14,6 +14,14 @@ Depending on your iPhone preferences and model, you may have Face ID or Touch ID
 ![img/custom-id.png](img/custom-id.png){width="750"}
 {align="center"}
 
+That is, change this line
+
+    if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+
+to this
+
+    if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+
 ## Default Carb Absorption Times
 
 ![img/carb_screen.png](img/carb_screen.png){width="200"}
