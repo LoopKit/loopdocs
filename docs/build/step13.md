@@ -14,7 +14,7 @@
 
 ## Pick a Branch to Download
 
-You’ll need to download the Loop code. You will then build the app on your computer with Xcode.  Once the app is built. in order to build the app on your computer. Various versions of Loop code are available. Both master and automatic-bolus are pretty stable and widely used.  The [Compare Version](https://www.loopnlearn.org/compare-branches/) webpage explains the differences between master and automatic-bolus.
+You’ll need to download the Loop code. You will then build the app on your computer with Xcode.  Once the app is built. in order to build the app on your computer. Various versions of Loop code are available. Both master and automatic-bolus are pretty stable and widely used.  The [Compare Version](https://www.loopandlearn.org/compare-branches/#which-loop) webpage explains the differences between master and automatic-bolus.
 
 Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.)
 
