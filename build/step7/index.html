@@ -427,6 +427,26 @@
             
             <li class="nav-item" data-level="1"><a href="#step-7-skip-step-7" class="nav-link">Step 7: Skip Step 7</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#check-admin-status" class="nav-link">Check Admin Status</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#configure-terminal-app-for-rosetta-on-m1-computer" class="nav-link">Configure Terminal App for Rosetta on M1 Computer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#open-terminal" class="nav-link">Open Terminal</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#check-carthage-status" class="nav-link">Check carthage Status</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#install-carthage-0360" class="nav-link">Install carthage 0.36.0</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#next-step-download-xcode" class="nav-link">Next Step: Download Xcode</a>
               <ul class="nav flex-column">
               </ul>
@@ -439,10 +459,74 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="step-7-skip-step-7">Step 7: Skip Step 7<a class="headerlink" href="#step-7-skip-step-7" title="Permanent link">⌁</a></h1>
-<p>In the olden days, Loop could only be built on a computer using another tool called carthage that could only be installed with another tool called homebrew.</p>
-<p>No longer needed.  In Jan 2021, when the version of carthage advanced from 0.36.0 to 0.36.1; Loop-building came to a halt. The developers responded and now you don't need to install carthage. That means you can skip this page.</p>
-<p>If you have previously built, so have previously done this step check <a href="../build_errors/#carthage-error">Build Errors: Carthage</a>.</p>
+<p>In the olden days, Loop could only be built on a computer using a tool called carthage that was installed using another tool called homebrew (Mac package manager). For the standard (master and automatic-bolus) branches of Loop, a separate installation of carthage is no longer needed.</p>
+<p><strong>History</strong>: In Jan 2021, when the version of carthage advanced from 0.36.0 to 0.36.1; Loop-building came to a halt. The developers responded and now you typically don't need to install carthage. If you are building one of those branches (most Loop builds), you can skip this page.</p>
+<p>However, there are some forks, or the Workspace method for the dev branch, where carthage is still required; but it needs to be carthage 0.36.0. This page has been updated to just install that version of carthage.</p>
+<p>The instructions for Step 7 (which most folks can skip) are maintained for those people who need to know how to install carthage and how to configure a new M1 computer terminal using Rosetta.</p>
+<div class="admonition danger">
+<p class="admonition-title">Time Estimate</p>
+<p>Some forks and branches of Loop require you to have carthage 0.36.0 installed on your computer.</p>
+<ul>
+<li>10-15 minutes assuming you know your computer's password</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>If you have a new M1 Mac, follow the Rosetta instructions the first time you open a terminal window</li>
+<li>Open a terminal window</li>
+<li>Install carthage 0.36.0 if you need it</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">FAQs</p>
+<ul>
+<li><strong>"What if I don't install carthage?"</strong> For many cases, you do not need to separately install carthage.  But if your build fails with the message that carthage is not installed, then you need to install it.</li>
+</ul>
+</div>
+<p>Remember, follow the steps, read slowly and carefully.  If you get stuck, there are mentors who can assist you: <a href="index.md#stay-in-the-loop">Community Information</a>.</p>
+<h2 id="check-admin-status">Check Admin Status<a class="headerlink" href="#check-admin-status" title="Permanent link">⌁</a></h2>
+<p>Before installing carthage, check that your user account <strong>has Administrative rights on the computer</strong>. How can you tell?</p>
+<p>Click on the Apple icon, select System Preferences, and open the Users &amp; Groups section. If the account you are using doesn't say "Admin", then you need to click the lock and change that to an Admin account before proceeding. If you are using a work computer, you may not have admin rights on that computer...so be aware that you may have restrictions on company owned computers.</p>
+<p><img alt="window showing users" src="../img/admin-user.png" width="650" /></p>
+<h2 id="configure-terminal-app-for-rosetta-on-m1-computer">Configure Terminal App for Rosetta on M1 Computer<a class="headerlink" href="#configure-terminal-app-for-rosetta-on-m1-computer" title="Permanent link">⌁</a></h2>
+<div class="admonition info">
+<p class="admonition-title">New Apple M1 chip users: IMPORTANT STEP</p>
+<p>If you purchased one of the new Apple computers that have the brand new Apple M1 chip, you will need to do this step (one time only) to open the Terminal app using a "converter" app, called Rosetta.</p>
+<p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app but do not double click it to open a Terminal window. Instead, hold down the Control Key on the keyboard and single click on Terminal. This will bring up a menu of choices, select the "Get Info" option.</p>
+<p><img alt="menu tree for get info on terminal app" src="../img/get-info.png" width="650" /></p>
+<p>Now in the informational window that appears...you'll see a checkbox that says "Open using Rosetta". Check that box...that will allow Terminal app to open using Rosetta when you double click on terminal in the future. You can close that informational window, after you check the box for "Open using Rosetta", and proceed with the rest of the directions just like normal.</p>
+<p><img alt="terminal app selection for using rosetta" src="../img/rosetta.png" width="450" /></p>
+</div>
+<h2 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Permanent link">⌁</a></h2>
+<p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="./#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal. Copy and paste the lines below into the terminal window.</p>
+<h2 id="check-carthage-status">Check carthage Status<a class="headerlink" href="#check-carthage-status" title="Permanent link">⌁</a></h2>
+<p>The steps required to install the correct version of carthage depend on whether carthage is already installed.</p>
+<p>First copy and paste this phrase into the terminal and hit return:</p>
+<p><code>carthage version</code></p>
+<ul>
+<li>
+<p>If the response includes "0.36.0", you can move onto Step 8 to <a href="../step8/">download Xcode</a>. You can ignore the instructions to "Please update to the latest Carthage version: . . ." You want to stick with 0.36.0.</p>
+</li>
+<li>
+<p>If the response is, "-bash: carthage: command not found", then skip ahead to the <a href="./#install-carthage-0360">Install carthage 0.36.0 step</a>.</p>
+</li>
+<li>
+<p>Any other response requires you to delete the current version of carthage first.</p>
+</li>
+</ul>
+<p>Copy and paste the following line into the terminal window and hit return.  </p>
+<p><code>rm -rf /usr/local/bin/carthage</code></p>
+<p>Wait for the prompt to appear, then copy and paste this line into the terminal window and hit return:</p>
+<p><code>sudo rm -rf /Library/Frameworks/CarthageKit.framework</code></p>
+<p>You will be prompted for a password when you hit enter on the second line.   It is the same password you use in order to log into the computer.   It will not echo to the screen.</p>
+<h2 id="install-carthage-0360">Install carthage 0.36.0<a class="headerlink" href="#install-carthage-0360" title="Permanent link">⌁</a></h2>
+<p>Go to this link: <a href="https://github.com/Carthage/Carthage/releases/tag/0.36.0">Carthage.pkg</a> to download the carthage 0.36.0 package. After following the preceding link, ignore the warning message, scroll down to the Assets section and click on Carthage.pkg to start the download.</p>
+<p>Once the download has completed, you need to take extra steps to install it - <strong>do not double click to open it</strong>.</p>
+<p>Go to the Finder app, click on Downloads, locate Carthage.pkg. Hold down the Control Key on the keyboard and single click on Carthage.pkg. This will bring up a menu of choices, select Open from the menu and then Open (greyed out) again from the pop up box.  Then run through the install process.  You will need to enter your password. <strong>The password is your computer's password.</strong> Once installation completes, you can discard the Carthage.pkg when prompted.</p>
+<p>If you need more help with this, this external link to the <a href="https://www.loopandlearn.org/carthage-0-36-0/#carthage-install">Loop and Learn website</a> has some graphics to assist in this step.</p>
 <h2 id="next-step-download-xcode">Next Step: Download Xcode<a class="headerlink" href="#next-step-download-xcode" title="Permanent link">⌁</a></h2>
+<p>You can close the Terminal application now. You’re done with it. You do not need to do these steps again for any subsequent Loop builds. This is one of those "just do it once" on new computer installations. If you get a new computer though, you will have to repeat this step for the new computer.</p>
 <p>Now you are ready to move onto Step 8 to <a href="../step8/">download Xcode</a>.</p></div>
             </div>
         </div>

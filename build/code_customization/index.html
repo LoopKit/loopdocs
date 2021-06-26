@@ -427,6 +427,10 @@
             
             <li class="nav-item" data-level="1"><a href="#code-customizations" class="nav-link">Code Customizations</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#instructions-for-finding-the-lines" class="nav-link">Instructions for Finding the Lines</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#disable-authentication-for-bolusing" class="nav-link">Disable Authentication for Bolusing</a>
               <ul class="nav flex-column">
               </ul>
@@ -443,7 +447,11 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#adjust-the-sensitivity-of-watchs-digital-crown-for-carb-and-bolus-entry" class="nav-link">Adjust the Sensitivity of Watch's Digital Crown for Carb and Bolus Entry</a>
+            <li class="nav-item" data-level="2"><a href="#adjust-the-watch-crown-sensitivity" class="nav-link">Adjust the Watch Crown Sensitivity</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#additional-customizations" class="nav-link">Additional Customizations</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -455,22 +463,57 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Permanent link">⌁</a></h1>
-<p>Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself.</p>
+<p>Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself. If you are an experienced builder - you know what to do.</p>
+<p>For new builders, you might want to first build the code and familiarize yourself with the interface.  Later, you can make the customization(s) you desire on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  The downloaded code should be fairly recent - don't try to use code you downloaded a year ago - in that case, get a fresh download.  And be sure to read the <a href="./#instructions-for-finding-the-lines">Instructions for Finding the Lines</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Line numbers may change</p>
-<p>Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code. These instructions have been updated for Loop v2.2.4 master branch. If you don't see an exact match on the line number listed, then use the Xcode / Find / Find in Project (or Workspace) menu to search for a Keyword or Phrase shown in the associated line. If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help.</p>
+<p>Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code. These instructions have been updated for Loop v2.2.4 master branch. If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help.</p>
 </div>
+<h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Permanent link">⌁</a></h2>
+<p>For each customization, you will see the following 4 items.</p>
+<ul>
+<li>Keyword: word or phrase to use for search</li>
+<li>Folder: Loop/subfolder1/subfolder2/etc.</li>
+<li>File: filename.swift</li>
+<li>Line: line number(s)</li>
+</ul>
+<p>The fastest way to find the relevant line(s) is: in Xcode, tap the Find menu item and select Find in Project (or Workspace).  Copy the word or phrase next to Keyword and paste that into the find search-box that opens on upper left of Xcode screen and hit enter.  A series of options show up underneath the find search-box. The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed.  You can click on the one you think is correct and it will display in the main middle window of Xcode with the Keyword highlighted on the line you selected. An attempt is made to have a long enough phrase that only the relevant line is offered. Be sure to highlight everything from the first word after "Keyword: " until the end of the line when filling in the find search-box.</p>
+<p>There may be a figure illustrating the change.</p>
+<p>Below the figure, the original, and in some cases, the modified code will be displayed.</p>
 <h2 id="disable-authentication-for-bolusing">Disable Authentication for Bolusing<a class="headerlink" href="#disable-authentication-for-bolusing" title="Permanent link">⌁</a></h2>
-<p>Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization:</p>
-<p>Modify Line 529 in the Loop&gt;&gt;View Controllers&gt;&gt;BolusViewController.swift.  This is a perfect example of how line numbers might be different.  The screenshot below was taken with Loop v2.0 when the line number was 201; with v2.2.4, that same code is found at line 529. Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
+<p>Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.</p>
+<ul>
+<li>Keyword: canEvaluatePolicy(.deviceOwnerAuthentication</li>
+<li>Folder: Loop/View Controllers</li>
+<li>File: BolusViewController.swift</li>
+<li>Line: 529</li>
+</ul>
+<p>The screenshot below was taken with Loop v2.0 when the line number was 201; with v2.2.4, that same code is found at line 529. Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
 <p align="center"><img alt="img/custom-id.png" src="../img/custom-id.png" width="750" /></p>
+<p><em>Code Before Modification</em></p>
+<pre><code>if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+</code></pre>
+<p><em>Code After Modification</em></p>
+<pre><code>if false &amp;&amp; context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+</code></pre>
 <h2 id="default-carb-absorption-times">Default Carb Absorption Times<a class="headerlink" href="#default-carb-absorption-times" title="Permanent link">⌁</a></h2>
 <p><img alt="img/carb_screen.png" src="../img/carb_screen.png" width="200" /></p>
 <p>Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <em>Think Like A Pancreas</em> by Gary Scheiner.  Currently the lollipop (fast) icon is set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours.  </p>
-<p>If you would like to modify those defaults, you can do so in the Loop Core&gt;&gt;LoopSettings.swift Line 16.</p>
+<ul>
+<li>Keyword: defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes</li>
+<li>Folder: Loop/LoopCore</li>
+<li>File: LoopSettings.swift</li>
+<li>Line: 16</li>
+</ul>
 <p align="center"><img alt="img/carb_times.png" src="../img/carb_times.png" width="750" /></p>
 <p>For example, if you wanted to make lollipop a 30 minute absorption and pizza a 5 hour absorption, the edit would look like below:</p>
 <p align="center"><img alt="img/carb_times_example.png" src="../img/carb_times_example.png" width="750" /></p>
+<p><em>Code Before Modification</em></p>
+<pre><code>public static let defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes = (fast: .hours(2), medium: .hours(3), slow: .hours(4))
+</code></pre>
+<p><em>Code After Modification (if you selected 30m, 3hr, and 5hr)</em></p>
+<pre><code>public static let defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes = (fast: .minutes(30), medium: .hours(3), slow: .hours(5))
+</code></pre>
 <h2 id="exponential-insulin-curve">Exponential Insulin Curve<a class="headerlink" href="#exponential-insulin-curve" title="Permanent link">⌁</a></h2>
 <p>The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, and Fiasp) default to an insulin duration of 360 minutes...but the peak activity of the various curves differs, as follows:</p>
 <ul>
@@ -478,7 +521,18 @@
 <li>Rapid-acting child curve peaks at 65 minutes</li>
 <li>Fiasp peaks curve peaks at 55 minutes</li>
 </ul>
-<p>If you wish to customize these values, you can adjust them on Lines 34-38 in the LoopCore&gt;&gt;Insulin&gt;&gt;ExponentialInsulinModelPreset.swift.</p>
+<p>If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices.</p>
+<ul>
+<li>Keyword: MARK: - Model generation</li>
+<li>Folder: Loop/LoopCore/Insulin</li>
+<li>File: ExponentialInsulinModelPreset.swift</li>
+<li>Lines:<ul>
+<li>actionDuration (20 to 29)</li>
+<li>peakActivity (31 to 40)</li>
+<li>effectDelay (42 to 51)</li>
+</ul>
+</li>
+</ul>
 <p align="center"><img alt="img/exponential.png" src="../img/exponential.png" width="750" /></p>
 <h2 id="loop-logo">Loop Logo<a class="headerlink" href="#loop-logo" title="Permanent link">⌁</a></h2>
 <p>If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
@@ -490,10 +544,26 @@
 <p align="center"><img alt="img/appicon3.png" src="../img/appicon3.png" width="650" /></p>
 <p>And now you'll be the proud new owner of a custom Loop icon.</p>
 <p align="center"><img alt="img/unicorn-logo.jpeg" src="../img/unicorn-logo.jpeg" width="350" /></p>
-<h2 id="adjust-the-sensitivity-of-watchs-digital-crown-for-carb-and-bolus-entry">Adjust the Sensitivity of Watch's Digital Crown for Carb and Bolus Entry<a class="headerlink" href="#adjust-the-sensitivity-of-watchs-digital-crown-for-carb-and-bolus-entry" title="Permanent link">⌁</a></h2>
-<p>The rate of change of the carb and bolus entry pickers when using the digital crown can be altered. You'll need to edit two lines in files within the WatchApp Extension&gt;&gt;Controllers folder.  In BolusInterfaceController.swift edit line 191, and in AddCarbsInterfaceController.swift edit line 249. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.</p>
+<h2 id="adjust-the-watch-crown-sensitivity">Adjust the Watch Crown Sensitivity<a class="headerlink" href="#adjust-the-watch-crown-sensitivity" title="Permanent link">⌁</a></h2>
+<p>The rate of change of the carb and bolus entry pickers when using the digital crown can be altered as can the rotation required to confirm a bolus on the watch.</p>
+<p>For the carb and bolus entry pickers, edit two lines in files within the WatchApp Extension&gt;&gt;Controllers folder.  In AddCarbsInterfaceController.swift edit line 249 and in BolusInterfaceController.swift edit line 191. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.</p>
+<ul>
+<li>Keyword: let rotationsPerIncrement</li>
+<li>Folder: Loop/WatchApp Extension/Controllers</li>
+<li>File: AddCarbsInterfaceController.swift</li>
+<li>Line: 249</li>
+</ul>
+<p align="center"><img alt="img/sensitivity2.png" src="../img/sensitivity2.png" width="800" /></p>
+<ul>
+<li>Keyword: let rotationsPerValue</li>
+<li>Folder: Loop/WatchApp Extension/Controllers</li>
+<li>File: BolusInterfaceController.swift</li>
+<li>Line: 191</li>
+</ul>
 <p align="center"><img alt="img/sensitivity1.png" src="../img/sensitivity1.png" width="800" /></p>
-<p align="center"><img alt="img/sensitivity2.png" src="../img/sensitivity2.png" width="800" /></p></div>
+<p>The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. Detailed instructions are found in this <a href="https://www.loopandlearn.org/custom-code/#bolus-confirmation">Loop and Learn Customization link</a> and are not repeated here.</p>
+<h2 id="additional-customizations">Additional Customizations<a class="headerlink" href="#additional-customizations" title="Permanent link">⌁</a></h2>
+<p>Additional customizations are found on another website which includes customizations requiring workspace builds and for other forks of Loop.  If you did not find the customization you want here on LoopDocs, then try the <a href="https://www.loopandlearn.org/custom-code">Loop and Learn Customization Page</a>.  Note that the other site will point you right back to LoopDocs if the customization is found on this LoopDocs customization page.</p></div>
             </div>
         </div>
 
