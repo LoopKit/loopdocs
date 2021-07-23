@@ -92,6 +92,7 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
 
 Once you select your device (your iPhone's name), you are ready to start signing the targets. Start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have "All" selected near the top and then select the dropdown menu where it currently says "none". Choose the team you'd like to sign with. Make sure you keep the "automatically manage signing" box checked in the signing area.
 
+- If you do not have **"All"** selected near the top (indicated by the red box in the graphic below), your targets won't get signed properly.  Make sure you did not accidentally click on **"Debug"** or **"Release"**. (The previous "Free Account" graphic shows **"Debug"** selected - do NOT do that.)
 - If you select a team name with (personal team), your app will expire after 7 days and you must disable [Push Notification and Siri](step14.md#free-account) as mentioned above.
 - If you select a team name without (personal team), your app will last a full year.  
 - If you never signed up for a [Free Developer Account](step9.md#add-apple-id), you will not have a (personal team) showing.
@@ -99,7 +100,7 @@ Once you select your device (your iPhone's name), you are ready to start signing
 ![img/team.png](img/team.png){width="750"}
 {align="center"}
 
-Once you choose your signing team, Xcode will automatically generate provisioning profiles and signing certificates.  If this is the first time you are building on this iPhone with this developer account, you may be prompted to register the device.  Simply click on the "Register Device" button to confirm. Note - you **must** be connected to the Internet for this step because your computer needs to communicate with Apple to register that device.
+Once you choose your signing team, Xcode will automatically generate provisioning profiles and signing certificates.  If this is the first time you are building on this iPhone with this developer account, you may be prompted to register the device.  Simply click on the "Register Device" button to confirm. Note - you **must** be connected to the Internet for this step because your computer needs to communicate with Apple to register that device. (Sharp-eyed users may notice this Xcode screen looks a little different from the one on your Mac - it's from an older version of Xcode and the graphic was not updated because the relevant information refers to registering your phone.  Don't sweat it if your screen looks a little different from some of the graphics.)
 
 ![img/register_device.png](img/register_device.png){width="750"}
 {align="center"}
@@ -111,12 +112,9 @@ A successfully signed target will have a provisioning profile and signing certif
 
 !!! warning "Advanced Users Only"
 
-    There is one more target, Loop Intent Extension, which must be signed to build the dev branch.
+    There are more targets which must be signed to build the dev branch - should be obvious in the Xcode window.
 
-    - Please only build the dev branch if you're a developer/advanced user interested in testing
-    - Once you install the dev branch on a device, you should delete the Loop app, including all your settings, if you decide to return to master or automatic-bolus
     - **Repeat: only build the dev branch if you're a developer/advanced user**
-    - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see if you build the dev branch
 
 
 ## Code Customizations

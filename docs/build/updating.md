@@ -36,8 +36,8 @@ Under ordinary circumstances, you do not *have to* update your Loop app until yo
 
     Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS, you cannot build on that phone. (Note, the current macOS will build the Loop app for all these iOS versions.)
 
-    - For iOS 14.5 (not yet released), minimum is expected to be macOS 11.x (Big Sur)
-    - For iOS 14.x, minimum is macOS 10.15.4 (Catalina)
+    - For iOS 14.5 and higher, minimum is macOS 11.x (Big Sur)
+    - For iOS 14.0 to 14.4.x, minimum is macOS 10.15.4 (Catalina)
     - For iOS 13.4 through 13.7, minimum is macOS 10.15.2 (Catalina)
     - For iOS 13.0 through 13.2, minimum is macOS 10.14.4 (Mojave)
     - For iOS 12.4, minimum is macOS 10.14.3 (Mojave)

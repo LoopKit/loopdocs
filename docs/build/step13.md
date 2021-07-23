@@ -14,7 +14,9 @@
 
 ## Pick a Branch to Download
 
-You’ll need to download the Loop code. You will then build the app on your computer with Xcode.  Once the app is built. in order to build the app on your computer. Various versions of Loop code are available. Both master and automatic-bolus are pretty stable and widely used.  The [Compare Version](https://www.loopandlearn.org/compare-branches/#which-loop) webpage explains the differences between master and automatic-bolus.
+You’ll need to download the Loop code. You will then build the app on your computer with Xcode, which will transfer the app to your phone or ipod.
+
+Various versions of Loop code are available. Both master and automatic-bolus are stable and widely used.  The [Compare Version](https://www.loopandlearn.org/compare-branches/#which-loop) webpage explains the differences between master and automatic-bolus. (Hint - if you build automatic-bolus, it acts just like master until you modify the Dosing Strategy selection under Settings.  So you can switch back and forth between master, Temp Basal only, and automatic-bolus strategies without a rebuild.)
 
 Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.)
 
@@ -28,12 +30,20 @@ Click on one of the links below to download Loop code and then follow the rest o
 
 !!! warning "Advanced Users Only"
 
-    Only build the dev branch if you're a developer/advanced user: [Loop: dev branch](https://github.com/LoopKit/Loop/archive/dev.zip)
+    **Only build the dev branch if you're a developer/advanced user**
 
-    - Note, the dev branch will soon require iOS 14 on your device
-    - Once you install the dev branch on a device, you might have to delete the app to return to master or automatic-bolus
-    - **Repeat: only build the dev branch if you're a developer/advanced user**
-    - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see if you build the dev branch
+    - Note, the dev branch requires a minimum of iOS 14 on your device
+    - Once you install the dev branch on a device, you must delete the app to return to master or automatic-bolus, which means all settings will need to be entered and a new pod started
+    - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see when you use the Loop app built from the dev branch
+
+    The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.  The links below are to the wiki for LoopWorkspace, the LoopDocs page on building with LoopWorkspace and the instructions for installing carthage 0.36.0 (not needed for master or automatic-bolus branches)  
+
+
+    * [LoopWorkspace wiki](https://github.com/LoopKit/LoopWorkspace#loopworkspace): Replace "<branch\>" in "git clone" line with "dev"
+
+    * LoopDocs page on [LoopWorkspace](loopworkspace.md)
+
+    * LoopDocs page, ["Skip Step 7"](step7.md) for installing carthage 0.36.0
 
 
 ---
