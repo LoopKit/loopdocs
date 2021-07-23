@@ -25,12 +25,17 @@ The next stage is to work through the steps and complete the tasks on each page.
 
 ## Introduction to Loop Video
 
-If you have never used Loop, click on the link to watch a short [Introduction to Loop Video](https://youtu.be/qw_u1lqboCs).
+If you have never used Loop, click on links below for an introduction.
 
-!!! warning "Old Video"
-    * This video was created before the Omnipod version of Loop was released in April 2019 - so yes you can definitely use Omnipod Eros pumps
+!!! warning "Classic Video"
+    * This "classic" Katie DiSimone video [Introduction to Loop Video](https://youtu.be/qw_u1lqboCs) was created before the Omnipod version of Loop was released in April 2019 - so yes you can definitely use Omnipod Eros pumps
     * The menus have been rearranged slightly but the overall concept of how to use Loop is demonstrated in this video
     * The workout target shown in the video has been completely reworked as Overrides
+
+!!! danger "New Video"
+    * This newer [What is Loop](https://youtu.be/64qhgnmkyAE) video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) was created by the Loop and Learn Team
+    * Special thanks to Tina and Reese Hammer for the terrific video
+    * Special thanks to Matthew Fouse for the generous use of his beautiful graphics
 
 !!! info "Take it one step at a time..."
 
