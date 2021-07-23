@@ -10,7 +10,7 @@
     - Check your iOS version and make sure you have iOS 12.4 minimum
     - WARNING, although the current version of Loop can be built with iOS 12.4, using newer iOS is strongly recommended
     - If using Dexcom CGM, your Looping iPhone/iPod touch will need the Dexcom app installed on it to Loop without an internet connection.
-    - This is a good time to [Turn Off Automatic Updates](#turn-off-automatic-updates) in your iPhone/iPod settings
+    - This is a good time to read [Turn Off Automatic Updates](#turn-off-automatic-updates)
 
 !!! warning "FAQs"
     - **"Can I use an android?"** No. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
@@ -42,9 +42,9 @@ These devices are compatible with iOS 14, which is expected to be the minimum iO
 - iPhone 5s, 6, 6+
 - iPod Touch, 6th generation
 
-Apple stopped providing iOS updates for these devices at iOS 12.4. Apple released iOS 13 and iOS 14 in the recent past and these older devices cannot be updated to use these newer iOS versions. This does not pose a problem currently...you can still build Loop's master and automatic-bolus branch so long as your device has iOS 12.4 at a minimum. HOWEVER, there are upcoming Loop changes that will require users to have iOS 14 on their devices to build Loop. There is no set timeframe for when that minimum requirement will change.  When that happens, the docs will be updated and an announcement made in all the [Loop Social Media](../index.md#stay-in-the-loop) sites.
+Apple stopped providing iOS updates for these devices at iOS 12.x. These older devices cannot be updated to use these newer iOS versions, e.g., iOS 13, 14 or above. You can still build Loop master and automatic-bolus branch with these older devices so long as your device has iOS 12.4 at a minimum. HOWEVER, there are upcoming Loop changes that will require users to have iOS 14 on their devices to build Loop. There is no set timeframe for when that minimum requirement will change.  When that happens, the docs will be updated and an announcement made in all the [Loop Social Media](../index.md#stay-in-the-loop) sites.
 
-Side note for people who are seasoned Loop users and know about branches and such: Currently (April 2021), Loop's dev branch and several popular forks require devices to have iOS 13 or newer, and it is expected dev will soon require iOS 14. There's no set timeframe for when dev will next be merged into master.
+Side note for people who are seasoned Loop users and know about branches and such: Currently (July 2021), several popular Loop forks require devices to have iOS 13 or newer, and Loop dev requires iOS 14 as a minimum. There's no set timeframe for when dev will next be merged into master.
 
 ## Find Your Device's iOS
 
@@ -57,18 +57,33 @@ Do not use any of the beta iOS versions. (Don't worry...if you don't know what t
 
 ## Turn Off Automatic Updates
 
-This is important - this allows you to choose when to update your phone. We recommend that updates be installed as soon as the All-Clear is given.  Updates are important.
+Loop mentors recommend that automatic updates be turned off.
+
+Apple provides updates regularly to the iOS.  Often, these updates include critical security patches in addition to improved new features.
+
+* **Why Turn off Automatic Updates?** Once you accept an iOS phone update, you cannot go backwards and this can force a requirement to update your Mac operating system and then Xcode before you can build Loop on that device again
+
+For new people - you may be wondering why you care?
+
+  * Loop must be rebuilt at least once a year (the app expires)
+  * When the Loop app expires, you get a Loop not available message and must rebuild
+  * Although Loop is fairly stable now; in the past, messages were posted to encourage people to rebuild ASAP because:
+      * There were issues found with the code
+      * Important new feature were implemented
+
+When you turn off automatic updates, then you can choose when to update your phone. **Please be proactive - install updates as soon as the "Loop" all-clear is given. If a limitation on your Mac is preventing you from being able to update your phone to the latest iOS, please pay attention to security vulnerabilities.** We recommend that updates be installed as soon as the All-Clear is given.  Updates are important.
 
 - An iOS update has never prevented Loop from working
-- But an iOS update often requires an Xcode update to build Loop on that device
+- But an iOS update often requires an Xcode update to build Loop on that device and in some cases, that also requires a Mac OS update before the required Xcode version can be installed
 - Rarely, but it has happened, that Xcode update requires a Loop code update
 - If a problem is found, the solution is typically posted pretty quickly
-- Most people who Loop want to keep Looping - so do yourself a favor and turn off automatic updates
 - Google the instructions for your device if you cannot figure it out
-    1. It's fine to automatically download the updates
-    1. Do not enable automatic installation of the updates
+    1. Please configure your phone to automatically download the updates
+    1. You should choose to perform the installation of the updates manually
 - Check on your favorite [Loop Social Media](../index.md#stay-in-the-loop) site to see if a newly released iOS is causing an issue with Loop or your CGM before accepting the update from Apple
 - The "All-Clear" or "WAIT there's a problem" is normally posted within a few days
+
+It is expected that iOS 15 will be released soon. This operating system may or may not require some updates to Loop code before being able to rebuild. The developer is running Loop on a beta iOS 15 phone and reports no issues, so it may go smoothly. Many of us remember the iOS 12 to iOS 13 transition was somewhat rocky.  This is a good time to have automatic downloads turned on, with automatic installation of the update turned off.
 
 ## Next Step: Compatible Pump
 
