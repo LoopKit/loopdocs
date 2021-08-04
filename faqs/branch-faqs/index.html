@@ -281,10 +281,6 @@
 </li>
             
 <li>
-    <a href="../../troubleshooting/uncertain-bolus/" class="dropdown-item">Pod Uncertain Boluses</a>
-</li>
-            
-<li>
     <a href="../../troubleshooting/priming/" class="dropdown-item">MDT Priming and Sites</a>
 </li>
             
@@ -365,11 +361,11 @@
 </li>
                                     
 <li>
-    <a href="../update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
+    <a href="../dev-menus/" class="dropdown-item">Menus for dev</a>
 </li>
                                     
 <li>
-    <a href="../ios13/" class="dropdown-item">iOS 13 FAQs</a>
+    <a href="../update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
 </li>
                                     
 <li>
@@ -403,7 +399,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../update-faqs/" class="nav-link">
+                                <a rel="next" href="../dev-menus/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -425,9 +421,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#branch-faqs" class="nav-link">Branch FAQs</a>
+            <li class="nav-item" data-level="1"><a href="#branch-and-version-faqs" class="nav-link">Branch and Version FAQs</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#what-are-branches" class="nav-link">What are branches?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#loop-releases" class="nav-link">Loop Releases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#older-loop-releases" class="nav-link">Older Loop Releases</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -435,15 +439,11 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#loop-v20" class="nav-link">Loop v2.0</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#whats-new-in-loop-v20" class="nav-link">What's new in Loop v2.0?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#how-can-i-stay-current-with-whats-going-on-in-the-branches" class="nav-link">How can I stay current with what's going on in the branches?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#loopdashboardorg" class="nav-link">LoopDashboard.org</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -458,34 +458,115 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="branch-faqs">Branch FAQs<a class="headerlink" href="#branch-faqs" title="Permanent link">⌁</a></h1>
-<p>This page is mostly suited to people who have built the app once already and then are coming back to update. In the course of updating, you may be wondering about the different branches, what the differences are, and such...so let's try to answer some of those questions as best we can.</p>
+<h1 id="branch-and-version-faqs">Branch and Version FAQs<a class="headerlink" href="#branch-and-version-faqs" title="Permanent link">⌁</a></h1>
+<p>This page is mostly suited to people who have built the app once already and then are coming back to update. It was originally created when Loop v2.0 was released.</p>
+<p>In the course of updating Loop, you may be wondering about the different branches, what the differences are, and such...so let's try to answer some of those questions as best we can.</p>
 <h2 id="what-are-branches">What are branches?<a class="headerlink" href="#what-are-branches" title="Permanent link">⌁</a></h2>
-<p>Yes, there are a lot of "branches" in Loop talk but the concept is simple. I'll use an analogy to help. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.</p>
-<p>To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch of video explanation of this process <a href="https://www.youtube.com/watch?v=cWqvYs4Azt0&amp;t=4s">here</a>.</p>
+<p>There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.</p>
+<p>To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone <a href="https://www.youtube.com/watch?v=cWqvYs4Azt0&amp;t=4s">video explanation about branches</a> created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus, which is now an established branch offered for download in <a href="../../build/step13/#pick-a-branch-to-download">Build Step 13</a>. Loop has moved on to Version 2.2.4 and the stable branches now are master and automatic-bolus, with dev recommended for developer/testers.</p>
+<h3 id="loop-github-information">Loop GitHub Information<a class="headerlink" href="#loop-github-information" title="Permanent link">⌁</a></h3>
 <p>Loop developers own an account in GitHub called <a href="https://github.com/LoopKit">LoopKit</a>.  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.</p>
 <p>When you build Loop, in the background, Loop pulls those other frameworks (7 in total) into the build process using "Carthage".  Carthage is like a personal shopper. You give it a shopping list (the cartfile in Loop code is that shopping list) and it goes and fetches that for you during the build process. Sometimes your computer has an old shopping list...and that can cause build errors. Hence the "carthage update" fix in the Build Errors page...that command updates the shopping list to get the right versions of those frameworks.</p>
 <p align="center"><img alt="img/loopkit.png" src="../img/loopkit.png" width="650" /></p>
 <p>Anyways...so now you know about the general structure of Loop and LoopKit in Github. Now we can discuss Loop itself a little deeper.</p>
 <p>So let's imagine Loop as a cookbook. The developers are the authors/chefs of the recipes (code) in the cookbook. The authors spend countless hours testing new recipes, taste testing, documenting improvements. They send the drafts to the editor, who makes suggestions and eventually the cookbook is finalized. There are no grammar issues, no typos, the photos are beautiful and the recipes are yummy. They publish the book and you see a gorgeous final product on the shelves. That is called a "release" and it is the master branch. This book has been well-tested and is super stable. Every time you cook with those recipes, you know exactly what you're getting and lots of people have had a chance before you to make sure that it all tastes good. Master branch is stable and tested.</p>
 <p>But then...the chefs/developers go on a trip. They are inspired by new cuisine and want to add new recipes to the old cookbook. (Things like omnipod support and overrides are new "recipes" that were developed since the last master release, for example.) But, the process for developing a recipe is arduous. Lots of trial and error involved. Lots of tweaking ingredients (code). The editors try out the new recipes and offer feedback (similar to the <a href="https://github.com/LoopKit/Loop/issues">Issues List in GitHub</a>). While the recipes are being developed, they have a version of the old cookbook that gets marked up...edited in pencil a lot. Scribbles and notes in the side. Revisions happen frequently, because that's what testing new recipes is all about. These marked-up versions of the cookbook are called "dev" branch. Short for "development" branch. Like the name sounds...this is where new developments are happening, new recipes and tweaks.</p>
-<p>After much testing and tweaking, eventually the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in Loop, Loop's master branch is updated with the new features coming from dev (aka, "dev branch is merged into master branch"). When that happens, master branch gets another "release" version (you can see release history <a href="https://github.com/LoopKit/Loop/releases">here</a>) and for that one day...dev and master are exactly the same. They stay the same until the Loop developers start working on the next batch of improvements, could be the next hour even or days later, but the process begins again. The developers will start editing the code again and dropping those edits in dev branch for further development.</p>
-<h2 id="what-happened-to-omnipod-testing-branch">What happened to Omnipod-testing branch?<a class="headerlink" href="#what-happened-to-omnipod-testing-branch" title="Permanent link">⌁</a></h2>
-<p>Omnipod Loop development testing (not talking about the actual hacking work that preceded that) was done by a smaller group of people privately for months and months before public release of the omnipod-testing branch. This smaller group of people (several dozen) were actively watching their Omnipod Loops and capturing bug reports. There was a lot of work put in by the testers and Pete Schwamb (Loop Developer) to get the code fairly stable and reliable.</p>
-<p>When the code got to a stable, reliable state and was ready for a larger audience, omnipod-testing branch was made available as a "public testing" branch. This branch was pretty well-tested prior to public release, but not necessarily going to be perfect for everyone right away. There were expectations that some user-interface requests might be asked for after having a wider audience of users.</p>
-<p>Also, omnipod-testing branch was not going to undergo a lot of active revisions to it when it was released. The intent was to keep it as a fairly known, unchanged product for people rather than a constantly changing code set...that way if people noted a bug, it would be a more "known" code base to work to debug.</p>
-<p>Omnipod-testing branch has served its purpose as an initial platform to test Pod looping. It has been officially retired now and is no longer needed. Omnipod support has been folded into the normal master and dev branches now.  Thank you, omnipod-testing branch...you served us well. Happy retirement.</p>
-<h2 id="loop-v20">Loop v2.0<a class="headerlink" href="#loop-v20" title="Permanent link">⌁</a></h2>
-<p>On December 31, 2019, Loop released Loop v2.0 (also said as "Loop updated Master branch"). This means that the cookbook from dev branch (to use our earlier analogy) was merged into master. On December 31st, master and dev branches were identical.</p>
-<p>From that date forward though, dev branch will start to work on its new recipes again. Dev branch will start to diverge from master branch with untested changes and development of new code. Dev branch may start to have some bugs and regressions as a result of the coming/going of code changes that will happen without much announcement or discussion.</p>
-<p>So, most all users should now start building with master branch again...you will be getting the latest Loop release everytime you build with Loop master branch. That branch will stay in the same stable condition it has been for awhile now. Only use dev branch if you are interested in actively testing new code and have the ability to track/document bugs.</p>
-<h2 id="whats-new-in-loop-v20">What's new in Loop v2.0?<a class="headerlink" href="#whats-new-in-loop-v20" title="Permanent link">⌁</a></h2>
-<p>This is definitely a popular question and comes in a few forms...</p>
-<p>What's new in Loop v2.0?
-What is the difference between Loop v2.0 and dev branch?
-Should I update if I use dev branch now?</p>
-<p>The question about what differences someone will notice between their existing Loop app and the new release...well I can only answer that if I knew which version/branch you are currently using (AND what date you built on if you are using dev branch). Because dev branch changes so often, the version someone is using from October 2019 won't necessarily be the same as the version someone built in November 2019.</p>
-<p>So, I'll make a highlights reel compared to the last release and you can check it over to see if any of these seem "new" to you based on the version of Loop you have been using. They are listed roughly in reverse order of when they were merged into dev, so the higher up on the list, the greater the chance is that you haven't seen the feature yet.</p>
+<p>After much testing and tweaking, eventually the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in Loop, Loop's master branch is updated with the new features coming from dev (aka, "dev branch is merged into master branch"). When that happens, master branch gets another "release" version. For that moment, dev and master are exactly the same. They stay the same until the Loop developers start working on the next batch of improvements, could be the next hour even or days later, but the process begins again. The developers will start editing the code again and dropping those edits in dev branch for further development.</p>
+<h2 id="loop-releases">Loop Releases<a class="headerlink" href="#loop-releases" title="Permanent link">⌁</a></h2>
+<p>The current released version (last changed on Jan 19, 2021) for Loop master and automatic-bolus is v2.2.4. The dates and contents for Loop releases from v2.0 through v2.2.4 are summarized below in reverse chronological order (so newest release information comes first).</p>
+<div class="admonition warning">
+<p class="admonition-title">Check Current Release Status</p>
+<p>Release information is always found on the <a href="https://github.com/LoopKit/Loop/releases">GitHub LoopKit/Loop release page</a>. The information on this LoopDocs page is a summary of that information with a little extra explanation. Be aware that updates to LoopDocs may take some time after a new release comes out.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Loop v2.2.4 Stable Branches</p>
+<ul>
+<li>
+<p><strong>master</strong>: uses only Temporary Basals for increased insulin delivery</p>
+</li>
+<li>
+<p><strong>automatic-bolus</strong>: allows user selection of either Temporary Basals or Automatic Bolus for increased insulin delivery with a new Setting: Dosing Strategy</p>
+</li>
+</ul>
+</div>
+<p>Note that the dev branch has diverged significantly from both master and automatic-bolus.  If you are a developer/tester, you will need to build dev from the LoopWorkspace repository, see <a href="../../build/step13/#pick-a-branch-to-download">Build Step 13</a>.</p>
+<h3 id="loop-v224">Loop v2.2.4<a class="headerlink" href="#loop-v224" title="Permanent link">⌁</a></h3>
+<p>Released October 3, 2020 with "fixes" introduced without renumbering the version number. Last change was on January 19, 2021.</p>
+<ul>
+<li>Revert to previous date pickers (Thanks @novalegra!)</li>
+<li>Pod fault handling improvements (Thanks @itsmojo!)</li>
+<li>Fix issue with pod status screen not allowing new pod pairing or continuing of interrupted pairing.</li>
+<li>October 22, 2020, update travis to make it work with Xcode 12</li>
+<li>January 19, 2021, pin the carthage to 0.36.0.  Users no longer required to install homebrew or carthage (Build Step 7 is now skipped.)</li>
+</ul>
+<h2 id="older-loop-releases">Older Loop Releases<a class="headerlink" href="#older-loop-releases" title="Permanent link">⌁</a></h2>
+<h3 id="loop-v223">Loop v2.2.3<a class="headerlink" href="#loop-v223" title="Permanent link">⌁</a></h3>
+<p>Released September 25, 2020</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning - Rebuild ASAP for Pods</p>
+<ul>
+<li>A bug was introduced in this version, quickly fixed in v2.2.4.</li>
+<li>If you use pods, please rebuild using v2.2.4.</li>
+</ul>
+</div>
+<ul>
+<li>Fetch pump and cgm data on manual loop retry (when Loop icon is red or yellow)</li>
+<li>Re-arranged pod status screen to prioritize needed information and actions.</li>
+<li>Pod pairing fixes for more edge cases.</li>
+<li>Translation updates.</li>
+<li>Fix share server integration, pointing to share2.</li>
+<li>Report RSSI and low gain in Read Pod Status command.</li>
+<li>Report failure properly when Play Test Beeps command fails.</li>
+<li>Carthage build fix for Xcode 12.0.1</li>
+</ul>
+<h3 id="loop-v221">Loop v2.2.1<a class="headerlink" href="#loop-v221" title="Permanent link">⌁</a></h3>
+<p>Released August 9, 2020</p>
+<ul>
+<li>Include pending insulin in:<ul>
+<li>forecast uploaded to Nightscout</li>
+<li>status extension forecast</li>
+</ul>
+</li>
+<li>Updated translations, fixes for temp override translations, new Arabic translations.</li>
+<li>Omnipod integration fixes:<ul>
+<li>Avoid suspending during deactivation if pod has a fault, is in setup, or already suspended.</li>
+<li>Show the correct expected address in invalid address error</li>
+<li>Reuse same address during attempts to pair with same pod</li>
+<li>Fix for Medtronic only: when a bolus issued via the Loop interface was canceled by issuing a suspend on the pump itself, Loop will incorrectly track the bolus as if the full amount were delivered</li>
+<li>Updates for omnipod packet parser</li>
+<li>Suggest moving RileyLink to new area on multiple pairing failures</li>
+</ul>
+</li>
+<li>Minimed updates:<ul>
+<li>Detect temp basal cancellation performed on pump</li>
+</ul>
+</li>
+</ul>
+<h3 id="loop-v22">Loop v2.2<a class="headerlink" href="#loop-v22" title="Permanent link">⌁</a></h3>
+<p>Released April 17, 2020</p>
+<ul>
+<li>Updated carb/bolus screens. Thanks @mpangburn!<ul>
+<li>Carbs and boluses are now entered together, which is a more familiar model to many caregivers.</li>
+<li>Forecast preview while entering bolus allows you to see potential impact of your bolus before delivering.</li>
+</ul>
+</li>
+<li>Improvements in Watch updates; sleep data being used to update complications when you are awake. Thanks @novalegra!</li>
+<li>Omnipod pairing improvements. Bug fixes, and better error messaging. Thanks @itsmojo!</li>
+<li>Many performance improvements, especially effecting long time Loop users. Delays in rendering graphs during app launch should be fixed.</li>
+<li>New device communication logging facility- Additional logging across pod swaps, and logging of CGM communication.</li>
+<li>Rendering fixes to prevent insulin graph from drawing outside of bounds.</li>
+<li>Bug fix to align use of 10m insulin delay in dose computation and forecast.</li>
+<li>Include current bg in suspend threshold evaluation.</li>
+</ul>
+<h3 id="loop-v20">Loop v2.0<a class="headerlink" href="#loop-v20" title="Permanent link">⌁</a></h3>
+<p>Released December 31, 2019.</p>
+<div class="admonition danger">
+<p class="admonition-title">For Reference Only</p>
+<p>Enough time has passed that this version should no longer be on anyone's phones (the one-year expiration time should take care of that).</p>
+<p>There is a lot more detail provided in the Loop v2.0 section because it constituted a significant change to parts of Loop from prior releases. This section and the Omnipod-Testing branch sections are left here for historical interest.</p>
+</div>
+<h3 id="what-was-new-in-loop-v20">What was new in Loop v2.0?<a class="headerlink" href="#what-was-new-in-loop-v20" title="Permanent link">⌁</a></h3>
+<p>This is a highlights reel comparing Loop v2.0 to v1.9.6.</p>
 <h3 id="uploading-of-bgs-to-nightscout">Uploading of BGs to Nightscout<a class="headerlink" href="#uploading-of-bgs-to-nightscout" title="Permanent link">⌁</a></h3>
 <p>Loop v2.0 has an option to upload your BG data to Nightscout directly. It is a new slider under the CGM configuration section for Dexcom users. After you add your CGM transmitter ID, go back into the CGM info and you'll see a new slider called "Upload Readings."  Technically, Loop's dev branch had that feature for a hot minute before Loop v2.0 was released...but for almost everyone this will be a brand new feature they haven't had before. This feature can help if/when Dexcom's Share servers ever go through another large outage like we had before. If that happens, you can turn on the "Upload Readings" switch and your CGM data will now be in Nightscout even without Share servers working properly. Good practice would be to temporarily disable your Share bridge in Nightscout while Loop is responsible for CGM uploading so that you don't get duplicate data. You can disable Share bridge by logging into your Heroku account, going to the Settings tab, clicking on "reveal config vars" and then deleting the word "bridge" from the ENABLE line.</p>
 <h3 id="a-fix-for-settings-loss">A fix for settings loss<a class="headerlink" href="#a-fix-for-settings-loss" title="Permanent link">⌁</a></h3>
@@ -508,7 +589,7 @@ Should I update if I use dev branch now?</p>
 <h3 id="user-interface-improvements">User interface improvements<a class="headerlink" href="#user-interface-improvements" title="Permanent link">⌁</a></h3>
 <p>You'll notice dashed lines in the HUD for the CGM value if the CGM data goes older than 15 min (that way you don't accidentally miss the fact that your CGM has failed). The API Secret is hidden after it is saved in Loop Settings now, and if you accidentally leave a trailing slash on the Nightscout URL...Loop will ignore it.  The bolus progress row is new to master branch now, although many of you have been accustomed to that visual in dev branch for awhile now. The "Scenarios" screen that would sometimes appear when a phone was shaken is also disabled by default now. The Issue Report has more information about your Loop app's build date and version so that you can more easily track its build history.</p>
 <h3 id="common-build-error-squashed">Common build error squashed<a class="headerlink" href="#common-build-error-squashed" title="Permanent link">⌁</a></h3>
-<p>One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  Ahhhhh! I love it!!! </p>
+<p>One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  Ahhhhh! I love it!!!</p>
 <h3 id="nightscout-profile-uploading">Nightscout profile uploading<a class="headerlink" href="#nightscout-profile-uploading" title="Permanent link">⌁</a></h3>
 <p>Loop will upload your basal schedule, ISFs, carb ratios, and override presets from Loop settings to your Nightscout profile. If you ever lose your phone and need to setup Loop brand new...your settings will be easy to find in Nightscout now.</p>
 <h3 id="new-languages">New languages<a class="headerlink" href="#new-languages" title="Permanent link">⌁</a></h3>
@@ -538,8 +619,13 @@ Should I update if I use dev branch now?</p>
 <p>If you don't have compatible gear yet and just want to test Loop app, the new ability to add a simulated pump and/or CGM is a great new feature.</p>
 <h3 id="new-style-of-dexcom-transmitters-supported">New style of Dexcom transmitters supported<a class="headerlink" href="#new-style-of-dexcom-transmitters-supported" title="Permanent link">⌁</a></h3>
 <p>Dexcom launched a new style of transmitters this summer. The new transmitters took some work by Loop developer (PETE! YEAH!) to get them working in offline Looping, but the fix was pushed into all branches shortly thereafter in August 2019. If you haven't updated your Loop since August 2019 and use a Dexcom G6, you should update now.</p>
+<h2 id="what-happened-to-omnipod-testing-branch">What happened to Omnipod-testing branch?<a class="headerlink" href="#what-happened-to-omnipod-testing-branch" title="Permanent link">⌁</a></h2>
+<p>Omnipod Loop development testing (not talking about the actual hacking work that preceded that) was done by a smaller group of people privately for months and months before public release of the omnipod-testing branch. This smaller group of people (several dozen) were actively watching their Omnipod Loops and capturing bug reports. There was a lot of work put in by the testers and Pete Schwamb (Loop Developer) to get the code fairly stable and reliable.</p>
+<p>When the code got to a stable, reliable state and was ready for a larger audience, omnipod-testing branch was made available as a "public testing" branch. This branch was pretty well-tested prior to public release, but not necessarily going to be perfect for everyone right away. There were expectations that some user-interface requests might be asked for after having a wider audience of users.</p>
+<p>Also, omnipod-testing branch was not going to undergo a lot of active revisions to it when it was released. The intent was to keep it as a fairly known, unchanged product for people rather than a constantly changing code set...that way if people noted a bug, it would be a more "known" code base to work to debug.</p>
+<p>Omnipod-testing branch has served its purpose as an initial platform to test Pod looping. It has been officially retired now and is no longer needed. Omnipod support has been folded into the normal master and dev branches now.  Thank you, omnipod-testing branch...you served us well. Happy retirement.</p>
 <h2 id="how-can-i-stay-current-with-whats-going-on-in-the-branches">How can I stay current with what's going on in the branches?<a class="headerlink" href="#how-can-i-stay-current-with-whats-going-on-in-the-branches" title="Permanent link">⌁</a></h2>
-<p>Like we said earlier, master branch won't really be changing much. You don't really need to watch that one for changes.</p>
+<p>Like we said earlier, master and automatic-bolus branch are stable. You don't really need to watch those for changes.</p>
 <p>But, dev branch is a constantly shifting, moving place. If you choose to come into a dev branch build...you need to be aware that is what dev does...moves, shakes, changes, and will update code frequently and unannounced in the traditional sense that most users in Looped group or Instagram would see. Developers are not helped by people being in a dev branch if those users are mistakenly thinking of it as a stable master branch with lots of detailed docs to go with it. People should only use a dev branch build if they EDUCATE themselves on the expectations and how to properly manage dev information and updates. People using dev branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.</p>
 <p>If you choose to use a dev build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy Loopdocs page updated regularly with current "dev updates"...that's just not the way dev branch works.</p>
 <h3 id="watch-the-loop-repo-and-issues-list">Watch the Loop Repo and Issues list<a class="headerlink" href="#watch-the-loop-repo-and-issues-list" title="Permanent link">⌁</a></h3>
@@ -556,23 +642,25 @@ Should I update if I use dev branch now?</p>
 <p>I don't expect many of you would understand exactly what the edits mean, or how the new code might function...but I bring up the topic of commit history so that you can use that to realize just how often dev is updated. Go ahead and look at the number and frequency of commits in that dev branch...that is why there is no way someone is going to keep a "loopdocs" of dev changes. It's just too much a moving target.</p>
 <h3 id="keep-checking-looped-group">Keep checking Looped group<a class="headerlink" href="#keep-checking-looped-group" title="Permanent link">⌁</a></h3>
 <p>Third, keep watching Looped group. Major concerns/issues are brought up there...so no harm in scrolling through and seeing what's going on there.</p>
-<h3 id="loopdashboardorg">LoopDashboard.org<a class="headerlink" href="#loopdashboardorg" title="Permanent link">⌁</a></h3>
-<p>You can always check out the <a href="https://www.loopdashboard.org/">LoopDashboard</a> which summarize all the github activities in Loops 7 different repositories for dev and master branches. Here you can always see the latest "news" and  the history of Loop.</p>
-<p>On the first page of loopdashboard you can see all the activities in one list, but you can also go to other pages and see more details about commits, issues and pull requests. There are also stats about who is doing the pull requests and commits.
-The dashboard is updated every 12 hours.</p>
-<p align="center"><img alt="img/loopdashboard.png" src="../img/loopdashboard.png" width="550" /></p>
 <h3 id="become-familiar-with-your-data-sources">Become familiar with your data sources<a class="headerlink" href="#become-familiar-with-your-data-sources" title="Permanent link">⌁</a></h3>
-<p>Another useful thing if you'll be on dev branches undergoing a lot of active change...know how Loop works and where to look for additional information about what you are seeing. For example, if you see an IOB value that looks odd, you should know to look at the insulin deliveries are stored in Health app. Knowing to pull an Issue Report when you see a problem so you can provide that if asked. Knowing <a href="https://youtu.be/Ac4MguvUO7M">how to capture debugging logs if the developers ask for that kind of info</a> is also a good skill.</p>
-<h2 id="what-is-expected-in-the-future">What is expected in the future?<a class="headerlink" href="#what-is-expected-in-the-future" title="Permanent link">⌁</a></h2>
-<p>Roughly speaking...right now (December 31st):</p>
+<p>Another useful thing if you'll be on dev branches undergoing a lot of active change...know how Loop works and where to look for additional information about what you are seeing. For example, if you see an IOB value that looks odd, you should know to look at the insulin deliveries are stored in Health app.</p>
+<h3 id="generate-an-issue-report">Generate an Issue Report<a class="headerlink" href="#generate-an-issue-report" title="Permanent link">⌁</a></h3>
+<p>Know how to generate an Issue Report when you see a problem so you can provide that if asked. An Issue Report is a log file generated by the Loop app that has a lot of information the developers can parse to figure out what Loop was doing when you were having a problem.</p>
 <ul>
-<li>
-<p>Master: we know that there will need to be cleanup of the new translations. There were lots of new phrases and development with a lot of new languages, as well. Master (and dev) branch will be updated with fixes for the translations. When those translation fixes are done, there will be a Loop v2.1 released.</p>
-</li>
-<li>
-<p>Dev: Dev branch's future development is best tracked by watching and reviewing <a href="https://github.com/loopkit/loop/pulls">pull requests in GitHub</a>. This is the list where code changes are initially proposed and discussed.</p>
-</li>
-</ul></div>
+<li>Loop v2.2.4 and earlier: Loop Settings -&gt; Issue Report</li>
+<li>Loop dev: Loop Settings -&gt; Support -&gt; Issue Report</li>
+</ul>
+<p>Do not confuse this with reporting an issue with Loop.  That is done by logging into GitHub and going to the <a href="https://github.com/LoopKit/Loop/issues">Issue page</a> to report a new issue.  You can read about existing issues without logging in, but to report a new one, you must log in to GitHub.</p>
+<h3 id="create-a-debug-report">Create a Debug Report<a class="headerlink" href="#create-a-debug-report" title="Permanent link">⌁</a></h3>
+<p>This 6-minute long, classic Katie DiSimone video shows how to <a href="https://youtu.be/Ac4MguvUO7M">capture debugging logs</a>. If you are testing a new branch, this is a valuable skill to assist developers in identifying problems. In addition to showing you how to generate and save the debug text information, the video explains a method in which you create a gist of the debug information using your GitHub account and file an official Issue on the Loop GitHub repository. This may be required in some cases.  But start by chatting directly on <a href="https://loop.zulipchat.com">zulipchat</a> with the developer. What you are experiencing may already be known. If the developers need a new Issue opened, they will say so on zulipchat.</p>
+<h2 id="loopdashboardorg">LoopDashboard.org<a class="headerlink" href="#loopdashboardorg" title="Permanent link">⌁</a></h2>
+<p>You can always check out the <a href="https://www.loopdashboard.org">LoopDashboard</a> which summarize all the GitHub activities in Loops 7 different repositories for dev and master branches. Here you can always see the latest "news" and  the history of Loop.</p>
+<p>On the first page of loopdashboard you can see all the activities in one list, but you can also go to other pages (click on the &lt; or &gt; at bottom of the page) to see more details about commits, issues and pull requests. There are also stats about who is doing the pull requests and commits.</p>
+<p>The dashboard is automatically updated every 12 hours.</p>
+<p align="center"><img alt="img/loopdashboard.png" src="../img/loopdashboard.png" width="550" /></p>
+<h2 id="what-is-expected-in-the-future">What is expected in the future?<a class="headerlink" href="#what-is-expected-in-the-future" title="Permanent link">⌁</a></h2>
+<p>The dev branch is where a lot of user interface work has been developed with some cross-talk with the open source modifications available from <a href="https://www.tidepool.org/automated-insulin-dosing">Tidepool Loop</a>.</p>
+<p>The menu structure for the dev branch has a different appearance and organization from the version that is familiar to those using Loop v2.2.4 and earlier.  A temporary page under the FAQs menu shows <a href="../dev-menus/">Menus for dev</a> for those who want to see what dev looks like.</p></div>
             </div>
         </div>
 
