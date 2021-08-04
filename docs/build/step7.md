@@ -25,7 +25,7 @@ The instructions for Step 7 (which most folks can skip) are maintained for those
     - **"What if I don't install carthage?"** For many cases, you do not need to separately install carthage.  But if your build fails with the message that carthage is not installed, then you need to install it.
 
 
-Remember, follow the steps, read slowly and carefully.  If you get stuck, there are mentors who can assist you: [Community Information](index.md#stay-in-the-loop).
+Remember, follow the steps, read slowly and carefully.  If you get stuck, there are mentors who can assist you: [Community Information](../index.md#stay-in-the-loop).
 
 ## Check Admin Status
 
