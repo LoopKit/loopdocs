@@ -34,7 +34,7 @@ Click on one of the links below to download Loop code and then follow the rest o
 
     - Note, the dev branch requires a minimum of iOS 14 on your device
     - Once you install the dev branch on a device, you must delete the app to return to master or automatic-bolus, which means all settings will need to be entered and a new pod started
-    - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see when you use the Loop app built from the dev branch
+    - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see when you use the Loop app built from the dev branch. A preview of the [dev branch menus](../faqs/dev-menus.md) is found in the FAQs section.
 
     The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.  The links below are to the wiki for LoopWorkspace, the LoopDocs page on building with LoopWorkspace and the instructions for installing carthage 0.36.0 (not needed for master or automatic-bolus branches)  
 
