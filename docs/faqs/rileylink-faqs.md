@@ -1,10 +1,40 @@
 # RileyLink Compatible Device FAQs
 
-This may be a Frequently Asked Questions page but not all the section headers are crafted in the form of questions.
-
 A RileyLink compatible device is a required part of Loop. The device uses the RileyLink protocol to communicate information to/from your pump by radio communications and to/from your iPhone using Bluetooth. You will need the device within range of your phone and pump so that these communications can happen. Put it in a purse, pocket, SPIbelt. Clip it to a backpack, belt, or bra...but please do bring it with you..
 
 Purchase information for these devices is found in [Build Step 5: RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices)
+
+## Adding or Changing RileyLink
+
+You can add or change the RileyLink compatible device in use without affecting the pump that is connected to the Loop app.  You can even have [more than one connected](#using-more-than-one-device), although only one will be used at a time.
+
+If you are connecting to a new Medtronic pump or switching between Medtronic and Omnipod, please follow the [Add Pump](../operation/overview.md#add-pump) instructions under Set up App.
+
+
+Change Connected Devices:
+
+  * Open the [Pump Menu](../operation/loop-settings/pump-commands.md) for your connected pump
+  * Scroll down to the DEVICES section
+  * There should already be at least one device listed
+  * Power on your new device and look for a new device to appear in the list
+  * If this device has never been connected before, it might appear as a blank line with a slider beside it - if so, slide the slider to turn it green and then the device name should appear
+  * You can now turn sliders on or off to select which device you want to use with your connected pump
+  * Refer to the [RileyLink Menu](../operation/loop-settings/rileylink.md) for instructions on personalizing your device name
+
+![Select an existing or new link under DEVICES in pump menu](img/add-change-rl.svg){width="300"}
+  {align="center"}
+
+## Using More Than One Device
+
+You can have more than one RileyLink compatible device turned on and connected. Loop only uses one device at a time. Remember - if you do have two devices in use, make sure they are both charged (or have batteries).
+
+Example of using more than one device:
+
+* One device is kept in the bedroom and another in the kitchen
+* Loop will automatically switch to the device that is within range at the next cycle (Loop stays green)
+* Caveats:
+    * The phone needs to be close enough to get the CGM update
+    * Do NOT forget to pick up one RileyLink device and take it with you when you leave the house
 
 ## Cases
 
@@ -41,17 +71,13 @@ Many people keep their device on the same side of their body as their pump durin
 
 ## What happens if Loop loses communication?
 
-While you are out of the communication range for your RileyLink compatible device, any running temp basal will keep going until it finishes (the longest temp basal that Loop sets are for 30 minutes duration...so within 30 minutes or less your pump would go back to your regularly scheduled basal). When you come back into range of your device, Loop will pick back up within 5-10 minutes without you needing to do anything.
+While you are out of the communication range for your RileyLink compatible device(s), any running temp basal will keep going until it finishes (the longest temp basal that Loop sets are for 30 minutes duration...so within 30 minutes or less your pump would go back to your regularly scheduled basal). When you come back into range of your device, Loop will pick back up within 5-10 minutes without you needing to do anything.
 
 
 ## Are these devices waterproof?
 
 Nope. Nor sweat-proof. Be careful. There are waterproof cases.
 
-
-## Using more than one device
-
-You can have more than one RileyLink compatible device turned on and connected. Loop only uses one device at a time. If you have several devices turned on in Loop settings, Loop will only look for another device after it fails to connect for over 15 minutes on the original device. If one device is in the bedroom and another in the kitchen, it will automatically switch for you, after the delay.
 
 ## Firmware version
 
@@ -60,7 +86,15 @@ In Loop settings, tap on your pump, find your device (RileyLink or other) and ta
 ![Expected firmware display under device menu for post-Aug 2018 RileyLink](img/rl-firmware.jpg){width="350"}
 {align="center"}
 
-With RileyLink, the firmware displayed should match or be a higher version number than what is shown in the figure above, e.g., `subg_rfspy 2.2/ble_rfspy 2.0`. (If you are running with a very old RileyLink from pre-Aug 2018, it might be a lower number.) Check it when the device is working well and make a note of what it says. If you're having Red Loops, you might want to check firmware and connected state. Make sure, after power cycling your device, that the correct firmware is displayed. If several power cycles do not help, contact the manufacturer for assistance.
+With RileyLink, the firmware displayed should match or be a higher version number than what is shown in the figure above, e.g., `subg_rfspy 2.2/ble_rfspy 2.0`. (If you are running with a very old RileyLink from pre-Aug 2018, it might be a lower number.) Check it when the device is working well and make a note of what it says. If you're having Red Loops, you might want to check firmware and connected state. Make sure, after power cycling your device, that the correct firmware is displayed AND that there are two items shown.  
+
+* In the example above:
+    * `subg_rfspy 2.2` is the sub-gigahertz radio frequency firmware that talks to the insulin pump (if this does not show up, the device will talk to the phone but not the pump)
+    * `ble_rfspy 2.0` is the Bluetooth firmware that talks to the phone (if this is not working, you will not even see the device in the list)
+
+HINT: You might need to quit the Loop app.  (Don't just close it, actually quit.) Then do the power cycle on the RileyLink compatible device to attempt to have both sets of firmware boot up.  When you restart the Loop app, it may show the correct firmware. Don't give up after one failure, try several times.
+
+If several power cycles do not make the correct firmware show up, contact the manufacturer for assistance.
 
 
 ## RileyLink Information
