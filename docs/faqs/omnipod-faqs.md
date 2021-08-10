@@ -7,12 +7,12 @@
 
 ## Which pods will work with Loop?
 
-The Loop system described in these documents (aka DIY Loop) works with Eros pods...these are the current pods on the market in wide release. The newer DASH pods are not compatible with DIY Loop. Tidepool has begun a process to bring [DIY Loop through FDA approval](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop will be using DASH pods, no RileyLink required.  If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop).
+The Loop system described in these documents (aka DIY Loop) works with Eros pods...these are the current pods on the market in wide release. The newer DASH pods are not compatible with DIY Loop. Tidepool is working to bring [DIY Loop through the FDA regulatory process](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop is being developed to work with a future version of the Omnipod system, no RileyLink required. Tidepool Loop was [submitted to the FDA in December 2020](https://www.tidepool.org/blog/99-years-closer-about-our-fda-submission-of-tidepool-loop). If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://tidepool.org/loop).
 
 Summary of eventual systems:
 
 * DIY Loop + Eros pods + RileyLink
-* Tidepool Loop + DASH pods (no RileyLink)
+* Tidepool Loop + Future version of Omnipod system (no RileyLink)
 
 ## Do I still need a PDM with Omnipod Loop?
 
