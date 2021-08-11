@@ -421,9 +421,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#overview" class="nav-link">Overview</a>
+            <li class="nav-item" data-level="1"><a href="#algorithm-overview" class="nav-link">Algorithm Overview</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#terminology" class="nav-link">Terminology</a>
+            <li class="nav-item" data-level="2"><a href="#algorithm-terminology" class="nav-link">Algorithm Terminology</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#algorithm-section-menu" class="nav-link">Algorithm Section Menu</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -434,9 +438,9 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">⌁</a></h1>
-<p>Loop’s algorithm for adjusting insulin delivery is oriented around making a blood glucose prediction. Every five minutes, triggered by new blood glucose data, it generates a new prediction. Both <a href="bolus">bolus recommendations</a> and <a href="temp_basal">temporary basal rates</a> are set based on this prediction.</p>
-<h2 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">⌁</a></h2>
+<h1 id="algorithm-overview">Algorithm Overview<a class="headerlink" href="#algorithm-overview" title="Permanent link">⌁</a></h1>
+<p>Loop’s algorithm for adjusting insulin delivery is oriented around making a blood glucose prediction. Every five minutes, triggered by new blood glucose data, it generates a new prediction. Both <a href="../bolus/">bolus recommendations</a> and <a href="../temp-basal/">temporary basal rate adjustments</a> are set based on this <a href="../prediction/">prediction</a>.</p>
+<h2 id="algorithm-terminology">Algorithm Terminology<a class="headerlink" href="#algorithm-terminology" title="Permanent link">⌁</a></h2>
 <p>This graph and legend illustrates terms commonly used in discussing Loop's algorithm,
 and shows them in the context of historical and forecasted blood glucose in style similar to the
 status screen of Loop.</p>
@@ -499,10 +503,19 @@ status screen of Loop.</p>
 </tr>
 <tr>
 <td>Active insulin</td>
-<td>Active insulin is the remaining amount of insulin activity from boluses and temporary basal rates relative to a user’s scheduled basal rates. More specifically, it is the total amount of insulin activity due to all bolus and basal insulin delivered within the last N hours, where N is determined by the insulin activity duration. The amount of “active” insulin depends upon the insulin activity curve, and also accounts for the insulin withheld via basal suspensions. As such, it is possible that the active insulin can be negative. Negative active insulin will result in an increase in predicted blood glucose. The active insulin displayed in Loop's main display does not reflect the currently enacted temporary basal rate, as that basal rate may be canceled or modified before completion over the next 30 minutes. In others words, Loop doesn't count chickens before the eggs hatch...insulin delivery must be confirmed before being added to the active insulin reporting.</td>
+<td>Active insulin, often referred to as Insulin-on-Board (IOB), is the remaining amount of insulin activity from boluses and temporary basal rates relative to a user’s scheduled basal rates. More specifically, it is the total amount of insulin activity due to all bolus and basal insulin delivered within the last N hours, where N is determined by the insulin activity duration. The amount of “active” insulin depends upon the insulin activity curve, and also accounts for the insulin withheld via basal suspensions. As such, it is possible that the active insulin can be negative. Negative active insulin will result in an increase in predicted blood glucose. The active insulin displayed in Loop's main display does not reflect the currently enacted temporary basal rate, as that basal rate may be canceled or modified before completion over the next 30 minutes. In others words, Loop doesn't count chickens before the eggs hatch...insulin delivery must be confirmed before being added to the active insulin reporting.</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<h2 id="algorithm-section-menu">Algorithm Section Menu<a class="headerlink" href="#algorithm-section-menu" title="Permanent link">⌁</a></h2>
+<ul>
+<li><a href="./">Algorithm Overview</a><ul>
+<li><a href="../bolus/">Bolus Recommendations</a></li>
+<li><a href="../prediction/">Blood Glucose Prediction</a></li>
+<li><a href="../temp-basal/">Temp Basal Adjustments</a></li>
+</ul>
+</li>
+</ul></div>
             </div>
         </div>
 
