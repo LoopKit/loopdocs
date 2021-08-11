@@ -1,10 +1,14 @@
-# Basal Adjustments
+# Temp Basal Adjustments
 
 The Loop algorithm takes one of four actions depending upon the eventual blood glucose, predicted glucose, and suspend threshold. Note that all temporary basal rate commands are issued for 30 minutes, however they may be updated (re-issued) every 5 minutes. Said another way, Loop may enact a new temporary basal rate every 5 minutes. But, if communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates. Note: If a user is operating Loop in open-loop mode, the Loop will only recommend basal dosing actions and will not automatically enact those recommendations.
 
 ## Four Possible Actions
 
-Loop implements one of four possible basal actions: **decrease**, **increase**, **suspend**, or **resume** a scheduled basal rate.
+Loop implements one of four possible temporary basal actions: **decrease**, **increase**, **suspend**, or **resume** a scheduled basal rate.
+
+!!! danger "Note:"
+
+    If you are using an Automatic-Bolus Dosing Strategy in closed Loop mode and Loop predicts you need an **increase** in insulin; this **increase** is provided as a percentage of the recommended bolus instead of an increased temporary basal. The default percentage is 40%.
 
 ### Decrease Basal Rate
 
@@ -97,3 +101,10 @@ Next, calculate the required basal rate:
 ![example rbr](img/rbr_example.png)
 
 Lastly, compare the required basal rate to the maximum temporary basal rate, and find that Loop will enact a temporary basal rate of 5 U/hr for 30 minutes since this temporary basal rate is below the maximum temporary basal rate of 6 U/hr, which was set by the user in Loop app settings.
+
+## Algorithm Section Menu
+
+* [Algorithm Overview](overview.md)
+    * [Bolus Recommendations](bolus.md)
+    * [Blood Glucose Prediction](prediction.md)
+    * [Temp Basal Adjustments](temp-basal.md)
