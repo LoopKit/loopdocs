@@ -14,3 +14,10 @@ Finally, Loop checks that the result of the calculations is below the maximum si
 !!! info "Bolusing safety feature"
 
     If the current blood glucose, or any predicted blood glucose, falls below the suspend threshold, Loop will not return a recommended bolus. When the minimum blood glucose rises above the suspend threshold, the bolus tool will provide a recommended bolus.
+
+## Algorithm Section Menu
+
+* [Algorithm Overview](overview.md)
+    * [Bolus Recommendations](bolus.md)
+    * [Blood Glucose Prediction](prediction.md)
+    * [Temp Basal Adjustments](temp-basal.md)
