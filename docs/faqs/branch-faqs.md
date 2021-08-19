@@ -229,7 +229,7 @@ Also, omnipod-testing branch was not going to undergo a lot of active revisions 
 
 Omnipod-testing branch has served its purpose as an initial platform to test Pod looping. It has been officially retired now and is no longer needed. Omnipod support has been folded into the normal master and dev branches now.  Thank you, omnipod-testing branch...you served us well. Happy retirement.
 
-## How can I stay current with what's going on in the branches?
+## What's going on in the dev branch?
 
 Like we said earlier, master and automatic-bolus branch are stable. You don't really need to watch those for changes.
 
@@ -298,6 +298,8 @@ The dashboard is automatically updated every 12 hours.
 
 ## What is expected in the future?
 
-The dev branch is where a lot of user interface work has been developed with some cross-talk with the open source modifications available from [Tidepool Loop](https://www.tidepool.org/automated-insulin-dosing).
+The dev branch is where a lot of user interface and setting safety work has been developed with some cross-talk with the open source modifications available from [Tidepool Loop](https://www.tidepool.org/automated-insulin-dosing).
 
-The menu structure for the dev branch has a different appearance and organization from the version that is familiar to those using Loop v2.2.4 and earlier.  A temporary page under the FAQs menu shows [Menus for dev](dev-menus.md) for those who want to see what dev looks like.
+There has been some reorganization of code to make it easier to drop in new pump and CGM modules.  These may not be obvious to the user, but are important for moving forward.
+
+Please continue to [Loop dev Preview](dev-menus.md) for preliminary documentation about Loop dev.

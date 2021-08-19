@@ -1,6 +1,15 @@
-# Menus for dev
+# Loop dev Preview
 
-The menu structure for the dev branch has a different appearance and organization from the version that is familiar to those using Loop v2.2.4 and earlier.
+Loop users are directed to select a released version of Loop to download during the build process. The next version of Loop is developed under the dev branch and, when ready for testing, the developers ask for volunteers to assist in testing the new code. Please read [What's going on in the dev branch?](branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch. If you decide to build the dev branch, instructions are found the [Advanced Users Only](../build/step13.md#advanced-users-only) section of Build Step 13.
+
+The Loop dev branch is in a state where there is active testing going on by experienced Loopers.  To assist those Loopers, this preliminary documentation has been prepared. With Loop dev branch (Aug 2021), the app screens have an updated appearance and organization.  People familiar with the layout of features in Loop v2.2.x may need to reorient slightly to find particular settings; but for the most part, the layout will be natural to current Loop users.
+
+!!! danger "The most common question"
+
+    - How do I enter the type of insulin I use?
+        * Therapy Settings -> Insulin Model is used to distinguish between adults and children
+        * Pump Settings -> Insulin Type is used to select the specific brand of insulin, e.g., Novolog, Humalog, Apidra, Fiasp
+
 
 If you build the LoopWorkspace dev branch over an existing Loop build on your phone, the [onboarding](#onboarding) remembers the settings you have.  You are presented with an information screen describing the setting (with a continue button) followed by your current settings, which you must confirm to keep - or can modify and then confirm to change. Depending on the device you are using, you may need to scroll down to see the Continue or Save buttons for each setting. Once you have been walked through all the Therapy Settings, there is a final review and confirm all Therapy Settings screen.
 
@@ -27,17 +36,17 @@ The following graphics are taken from an instance of Loop that has been configur
 
 ### Main Loop Screen
 
-The main Loop screen is similar to earlier versions with a Heads-Up Display at the top (when in portrait mode) with various graphs in the middle and a toolbar at the bottom of the screen. The graphs and the toolbar act similarly to earlier versions, e.g., v2.2.4.  The Menu shown when tapping on the settings (gear icon) is quite different as described [below](#loop-settings-screen).
+The main Loop screen is similar to earlier versions with a Heads-Up Display at the top (when in portrait mode) with various graphs in the middle and a toolbar at the bottom of the screen. The graphs and the toolbar act similarly to earlier versions, e.g., v2.2.x.  The Settings display shown when tapping on the settings (gear icon) is quite different as described [below](#settings-screen).
 
 ![main loop screen when running nominally](img/loop-dev-main.svg){width="300"}
 
-### Loop Heads-Up Display
+### Heads-Up Display
 
-The Heads-Up Display (HUD) for Loop dev branch has been simplified.  There are only 3 icons (instead of the 5 used up through Loop Versions 2.2.4.). The left icon shows the CGM value, the middle icon indicates Loop status and the right icon show pump status.
+The Heads-Up Display (HUD) for Loop dev branch has been simplified.  There are only 3 icons (instead of the 5 used up through Loop Versions 2.2.x.). The left icon shows the CGM value, the middle icon indicates Loop status and the right icon show pump status.
 
 #### CGM Icon
 
-Tapping on the CGM icon shows more information about the last CGM reading. The same menu is obtained by tapping on Loop Settings->CGM.  This menu includes the time of the last reading to the nearest second, along with other information about that sensor and transmitter. It also has an option to go to the Dexcom app on the same phone.
+Tapping on the CGM icon shows more information about the last CGM reading. The same screen is obtained by tapping on Loop Settings->CGM.  This display includes the time of the last reading to the nearest second, along with other information about that sensor and transmitter. It also has an option to go to the Dexcom app on the same phone.
 
 ![dexcom information screen from ](img/dexcom-info-menu.svg){width="250"}
 
@@ -53,13 +62,17 @@ Examples of Green and Yellow Loop Status are shown in the graphic below. The Red
 
 #### Pump Icon
 
-Tapping on the pump icon leads to the [Pump Menu](../operation/loop-settings/pump-commands.md).  These menus has not changed since Loop version 2.2.4.
+Tapping on the pump icon leads to the [Pump Menu](../operation/loop-settings/pump-commands.md).  These screens have the same information as Loop version 2.2.x, although the order may be slightly different.
 
-### Loop Settings Screen
+For Omnipod users who have selected Automatic Bolus Dosing Strategy, you may want to turn on Confirmation Beeps. In earlier Loop versions, the beep happened for all boluses; with the dev branch, only manually entered boluses beep at you, automated boluses are silent.
 
-* Most of the Settings you may be familiar with are reached via Loop -> Settings -> Therapy Settings
-* Nightscout can be added under Loop -> Settings -> Services (if you did not add it as part of onboarding)
-* The menu to issue a Loop Report is reached via Loop -> Settings -> Support
+
+### Settings Screen
+
+* Most of the Settings you may be familiar with are reached from Settings by tapping on Therapy Settings
+* Nightscout can be added from Settings by tapping on Add Service (if you did not add it as part of onboarding)
+* Issue Report is reached from Settings by tapping on Support
+    * The Expiration Date for the Loop app is now included in the Issue Report for dev
 
 ![composite therapy screen](img/loop-dev-settings.svg){width="250"}
 
@@ -74,19 +87,19 @@ Loop has a widget which can be added to the lock screen. The example graphic bel
 
 ## Onboarding
 
-Some of the onboarding menus displayed are shown below. Depending on your phone resolution, you may need to scroll down to see the entire screen. Only the top portion of any given screen is shown in these graphics.
+Some of the onboarding screens are shown below. Depending on your phone resolution, you may need to scroll down to see the entire screen. Only the top portion of any given screen is shown in these graphics.
 
 If you are building over an existing Loop build on your phone, the onboarding remembers the settings you have, you can simply confirm them as you move through onboarding.
 
 &nbsp;
 
-### Welcome Menus:
+### Welcome Screens:
 
 ![first two welcome screens when onboarding](img/welcome-menus-x2.svg){width="500"}
 
 &nbsp;
 
-### Nightscout Menus:
+### Nightscout Selection:
 
 ![Nightscout screens when onboarding if select Use Loop with Nightscout](img/nightscout-menus-x2.svg){width="500"}
 
@@ -134,7 +147,11 @@ Loop shows the following screen indicating you can Add CGM and Add Pump. If you 
 
 ![therapy settings complete, add cgm and pump](img/add-cgm-pump.svg){width="250"}
 
-The CGM and Pump entry screens are similar to those in the Setup App screens for Loop v2.2.4.  The one exception is when adding the pump, the specific type of insulin is requested.  The default is Novolog.  Depending on your screen, you may been to scroll down to see the Fiasp icon.
+The CGM and Pump entry screens are similar to those in the Setup App screens for Loop v2.2.x.  The one exception is when adding the pump, the specific type of insulin is requested.
+
+### Select Insulin type
+
+The default is Novolog.  Depending on your screen, you may have to scroll down to see the Fiasp icon.
 
 
 ![select specific type of insulin when adding pump](img/add-pump-insulin-type.svg){width="500"}
