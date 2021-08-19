@@ -16,7 +16,13 @@
 
 You’ll need to download the Loop code. You will then build the app on your computer with Xcode, which will transfer the app to your phone or ipod.
 
-Various versions of Loop code are available. Both master and automatic-bolus are stable and widely used.  The [Compare Version](https://www.loopandlearn.org/compare-branches/#which-loop) webpage explains the differences between master and automatic-bolus. (Hint - if you build automatic-bolus, it acts just like master until you modify the Dosing Strategy selection under Settings.  So you can switch back and forth between master, Temp Basal only, and automatic-bolus strategies without a rebuild.)
+Both the master and automatic-bolus branches are stable and widely used.
+
+* Hint - if you build the automatic-bolus branch, it acts just like master until you modify the Dosing Strategy selection under Settings.  
+    * You can switch Dosing Strategy without a rebuild
+    * Select Temp Basal Only and automatic-bolus branch acts like master
+    * Select Automatic Bolus and automatic-bolus branch provides 40% of the recommended dose at each Loop cycle
+    * See [Compare Version](https://www.loopandlearn.org/compare-branches/#which-loop) for more explanations
 
 Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.)
 
@@ -28,23 +34,7 @@ Click on one of the links below to download Loop code and then follow the rest o
 
 ---
 
-!!! warning "Advanced Users Only"
-
-    **Only build the dev branch if you're a developer/advanced user**
-
-    - Note, the dev branch requires a minimum of iOS 14 on your device
-    - Once you install the dev branch on a device, you must delete the app to return to master or automatic-bolus, which means all settings will need to be entered and a new pod started
-    - The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see when you use the Loop app built from the dev branch. A preview of the [dev branch menus](../faqs/dev-menus.md) is found in the FAQs section.
-
-    The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.  The links below are to the wiki for LoopWorkspace, the LoopDocs page on building with LoopWorkspace and the instructions for installing carthage 0.36.0 (not needed for master or automatic-bolus branches)  
-
-
-    * [LoopWorkspace wiki](https://github.com/LoopKit/LoopWorkspace#loopworkspace): Replace "<branch\>" in "git clone" line with "dev"
-
-    * LoopDocs page on [LoopWorkspace](loopworkspace.md)
-
-    * LoopDocs page, ["Skip Step 7"](step7.md) for installing carthage 0.36.0
-
+- [Advanced Users Only](#advanced-users-only)
 
 ---
 
@@ -60,3 +50,34 @@ Depending on your browser and settings, your Loop download may or may not automa
 ## Next Step: Build Loop App
 
 Now you are ready to move onto Step 14 to [Build Loop App](step14.md).
+
+## Advanced Users Only
+
+If you are an advanced user who wants to build the dev branch - this section is for you.
+
+!!! warning "Advanced Users Only"
+
+    **Only build the dev branch if you're a developer/advanced user**
+
+    Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch.
+
+    - Note, the dev branch requires a minimum of iOS 14 on your device
+    - Once you install the dev branch on a device, you must delete the app to return to master or automatic-bolus, which means all settings will need to be entered and a new pod started
+    - The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch
+    - [Loop dev Preview](../faqs/dev-menus.md) is found in the FAQs section with some preliminary documentation
+
+    The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.  The links below are to the wiki for LoopWorkspace, the LoopDocs page on building with LoopWorkspace and the instructions for installing carthage 0.36.0 (not needed for master or automatic-bolus branches)  
+
+
+    * [LoopWorkspace README](https://github.com/LoopKit/LoopWorkspace#readme): Replace "<branch\>" in "git clone" line with "dev"
+
+    * LoopDocs page on [LoopWorkspace](loopworkspace.md)
+
+    * LoopDocs page, ["Skip Step 7"](step7.md) for installing carthage 0.36.0
+
+    New trick (dev branch only):
+
+    * Edit the LoopConfigOverride.xcconfig
+    * Uncomment the line starting with `LOOP_DEVELOPMENT_TEAM = `
+    * Insert your developer ID
+    * Build the Loop(Workspace) - all targets are signed automatically
