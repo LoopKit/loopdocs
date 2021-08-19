@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Menus for dev - LoopDocs</title>
+        <title>Loop dev Preview - LoopDocs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -361,7 +361,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Menus for dev</a>
+    <a href="./" class="dropdown-item active">Loop dev Preview</a>
 </li>
                                     
 <li>
@@ -421,7 +421,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#menus-for-dev" class="nav-link">Menus for dev</a>
+            <li class="nav-item" data-level="1"><a href="#loop-dev-preview" class="nav-link">Loop dev Preview</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#loop-is-running" class="nav-link">Loop is Running</a>
               <ul class="nav flex-column">
@@ -438,8 +438,19 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="menus-for-dev">Menus for dev<a class="headerlink" href="#menus-for-dev" title="Permanent link">⌁</a></h1>
-<p>The menu structure for the dev branch has a different appearance and organization from the version that is familiar to those using Loop v2.2.4 and earlier.</p>
+<h1 id="loop-dev-preview">Loop dev Preview<a class="headerlink" href="#loop-dev-preview" title="Permanent link">⌁</a></h1>
+<p>Loop users are directed to select a released version of Loop to download during the build process. The next version of Loop is developed under the dev branch and, when ready for testing, the developers ask for volunteers to assist in testing the new code. Please read <a href="../branch-faqs/#whats-going-on-in-the-dev-branch">What's going on in the dev branch?</a> before deciding to test the dev branch. If you decide to build the dev branch, instructions are found the <a href="../../build/step13/#advanced-users-only">Advanced Users Only</a> section of Build Step 13.</p>
+<p>The Loop dev branch is in a state where there is active testing going on by experienced Loopers.  To assist those Loopers, this preliminary documentation has been prepared. With Loop dev branch (Aug 2021), the app screens have an updated appearance and organization.  People familiar with the layout of features in Loop v2.2.x may need to reorient slightly to find particular settings; but for the most part, the layout will be natural to current Loop users.</p>
+<div class="admonition danger">
+<p class="admonition-title">The most common question</p>
+<ul>
+<li>How do I enter the type of insulin I use?<ul>
+<li>Therapy Settings -&gt; Insulin Model is used to distinguish between adults and children</li>
+<li>Pump Settings -&gt; Insulin Type is used to select the specific brand of insulin, e.g., Novolog, Humalog, Apidra, Fiasp</li>
+</ul>
+</li>
+</ul>
+</div>
 <p>If you build the LoopWorkspace dev branch over an existing Loop build on your phone, the <a href="#onboarding">onboarding</a> remembers the settings you have.  You are presented with an information screen describing the setting (with a continue button) followed by your current settings, which you must confirm to keep - or can modify and then confirm to change. Depending on the device you are using, you may need to scroll down to see the Continue or Save buttons for each setting. Once you have been walked through all the Therapy Settings, there is a final review and confirm all Therapy Settings screen.</p>
 <p>If you are building on a phone that does not have an existing Loop app, then you must add settings (click on + to add) as you are taken through each screen.</p>
 <p>The order of Therapy Setting Screens is:</p>
@@ -464,24 +475,28 @@
 <h2 id="loop-is-running">Loop is Running<a class="headerlink" href="#loop-is-running" title="Permanent link">⌁</a></h2>
 <p>The following graphics are taken from an instance of Loop that has been configured and is operating.</p>
 <h3 id="main-loop-screen">Main Loop Screen<a class="headerlink" href="#main-loop-screen" title="Permanent link">⌁</a></h3>
-<p>The main Loop screen is similar to earlier versions with a Heads-Up Display at the top (when in portrait mode) with various graphs in the middle and a toolbar at the bottom of the screen. The graphs and the toolbar act similarly to earlier versions, e.g., v2.2.4.  The Menu shown when tapping on the settings (gear icon) is quite different as described <a href="#loop-settings-screen">below</a>.</p>
+<p>The main Loop screen is similar to earlier versions with a Heads-Up Display at the top (when in portrait mode) with various graphs in the middle and a toolbar at the bottom of the screen. The graphs and the toolbar act similarly to earlier versions, e.g., v2.2.x.  The Settings display shown when tapping on the settings (gear icon) is quite different as described <a href="#settings-screen">below</a>.</p>
 <p><img alt="main loop screen when running nominally" src="../img/loop-dev-main.svg" width="300" /></p>
-<h3 id="loop-heads-up-display">Loop Heads-Up Display<a class="headerlink" href="#loop-heads-up-display" title="Permanent link">⌁</a></h3>
-<p>The Heads-Up Display (HUD) for Loop dev branch has been simplified.  There are only 3 icons (instead of the 5 used up through Loop Versions 2.2.4.). The left icon shows the CGM value, the middle icon indicates Loop status and the right icon show pump status.</p>
+<h3 id="heads-up-display">Heads-Up Display<a class="headerlink" href="#heads-up-display" title="Permanent link">⌁</a></h3>
+<p>The Heads-Up Display (HUD) for Loop dev branch has been simplified.  There are only 3 icons (instead of the 5 used up through Loop Versions 2.2.x.). The left icon shows the CGM value, the middle icon indicates Loop status and the right icon show pump status.</p>
 <h4 id="cgm-icon">CGM Icon<a class="headerlink" href="#cgm-icon" title="Permanent link">⌁</a></h4>
-<p>Tapping on the CGM icon shows more information about the last CGM reading. The same menu is obtained by tapping on Loop Settings-&gt;CGM.  This menu includes the time of the last reading to the nearest second, along with other information about that sensor and transmitter. It also has an option to go to the Dexcom app on the same phone.</p>
+<p>Tapping on the CGM icon shows more information about the last CGM reading. The same screen is obtained by tapping on Loop Settings-&gt;CGM.  This display includes the time of the last reading to the nearest second, along with other information about that sensor and transmitter. It also has an option to go to the Dexcom app on the same phone.</p>
 <p><img alt="dexcom information screen from " src="../img/dexcom-info-menu.svg" width="250" /></p>
 <h3 id="loop-status-icon">Loop Status Icon<a class="headerlink" href="#loop-status-icon" title="Permanent link">⌁</a></h3>
 <p>Tapping on the Loop Status Icon provides information about Loop Status.</p>
 <p>Examples of Green and Yellow Loop Status are shown in the graphic below. The Red Status says over 15 minutes.  After 20 minutes and every 20 minutes thereafter that Loop stays Red, you will also get a notification (if you enabled notifications).</p>
 <p><img alt="left: tap on green loop; right: tap on yellow loop " src="../img/green-yellow-status-x2.svg" width="500" /></p>
 <h4 id="pump-icon">Pump Icon<a class="headerlink" href="#pump-icon" title="Permanent link">⌁</a></h4>
-<p>Tapping on the pump icon leads to the <a href="../../operation/loop-settings/pump-commands/">Pump Menu</a>.  These menus has not changed since Loop version 2.2.4.</p>
-<h3 id="loop-settings-screen">Loop Settings Screen<a class="headerlink" href="#loop-settings-screen" title="Permanent link">⌁</a></h3>
+<p>Tapping on the pump icon leads to the <a href="../../operation/loop-settings/pump-commands/">Pump Menu</a>.  These screens have the same information as Loop version 2.2.x, although the order may be slightly different.</p>
+<p>For Omnipod users who have selected Automatic Bolus Dosing Strategy, you may want to turn on Confirmation Beeps. In earlier Loop versions, the beep happened for all boluses; with the dev branch, only manually entered boluses beep at you, automated boluses are silent.</p>
+<h3 id="settings-screen">Settings Screen<a class="headerlink" href="#settings-screen" title="Permanent link">⌁</a></h3>
 <ul>
-<li>Most of the Settings you may be familiar with are reached via Loop -&gt; Settings -&gt; Therapy Settings</li>
-<li>Nightscout can be added under Loop -&gt; Settings -&gt; Services (if you did not add it as part of onboarding)</li>
-<li>The menu to issue a Loop Report is reached via Loop -&gt; Settings -&gt; Support</li>
+<li>Most of the Settings you may be familiar with are reached from Settings by tapping on Therapy Settings</li>
+<li>Nightscout can be added from Settings by tapping on Add Service (if you did not add it as part of onboarding)</li>
+<li>Issue Report is reached from Settings by tapping on Support<ul>
+<li>The Expiration Date for the Loop app is now included in the Issue Report for dev</li>
+</ul>
+</li>
 </ul>
 <p><img alt="composite therapy screen" src="../img/loop-dev-settings.svg" width="250" /></p>
 <h3 id="loop-widget-on-lock-screen">Loop Widget on Lock Screen<a class="headerlink" href="#loop-widget-on-lock-screen" title="Permanent link">⌁</a></h3>
@@ -489,13 +504,13 @@
 <p><img alt="widget on lock screen, dex above, loop below" src="../img/dex-loop-dev-widget.svg" width="250" /></p>
 <p>&nbsp;</p>
 <h2 id="onboarding">Onboarding<a class="headerlink" href="#onboarding" title="Permanent link">⌁</a></h2>
-<p>Some of the onboarding menus displayed are shown below. Depending on your phone resolution, you may need to scroll down to see the entire screen. Only the top portion of any given screen is shown in these graphics.</p>
+<p>Some of the onboarding screens are shown below. Depending on your phone resolution, you may need to scroll down to see the entire screen. Only the top portion of any given screen is shown in these graphics.</p>
 <p>If you are building over an existing Loop build on your phone, the onboarding remembers the settings you have, you can simply confirm them as you move through onboarding.</p>
 <p>&nbsp;</p>
-<h3 id="welcome-menus">Welcome Menus:<a class="headerlink" href="#welcome-menus" title="Permanent link">⌁</a></h3>
+<h3 id="welcome-screens">Welcome Screens:<a class="headerlink" href="#welcome-screens" title="Permanent link">⌁</a></h3>
 <p><img alt="first two welcome screens when onboarding" src="../img/welcome-menus-x2.svg" width="500" /></p>
 <p>&nbsp;</p>
-<h3 id="nightscout-menus">Nightscout Menus:<a class="headerlink" href="#nightscout-menus" title="Permanent link">⌁</a></h3>
+<h3 id="nightscout-selection">Nightscout Selection:<a class="headerlink" href="#nightscout-selection" title="Permanent link">⌁</a></h3>
 <p><img alt="Nightscout screens when onboarding if select Use Loop with Nightscout" src="../img/nightscout-menus-x2.svg" width="500" /></p>
 <p>&nbsp;</p>
 <h3 id="therapy-settings">Therapy Settings:<a class="headerlink" href="#therapy-settings" title="Permanent link">⌁</a></h3>
@@ -526,7 +541,9 @@
 <h3 id="add-cgm-and-add-pump">Add CGM and Add Pump:<a class="headerlink" href="#add-cgm-and-add-pump" title="Permanent link">⌁</a></h3>
 <p>Loop shows the following screen indicating you can Add CGM and Add Pump. If you are building over an existing Loop app, the CGM and Pump are remembered so you will not see this screen.</p>
 <p><img alt="therapy settings complete, add cgm and pump" src="../img/add-cgm-pump.svg" width="250" /></p>
-<p>The CGM and Pump entry screens are similar to those in the Setup App screens for Loop v2.2.4.  The one exception is when adding the pump, the specific type of insulin is requested.  The default is Novolog.  Depending on your screen, you may been to scroll down to see the Fiasp icon.</p>
+<p>The CGM and Pump entry screens are similar to those in the Setup App screens for Loop v2.2.x.  The one exception is when adding the pump, the specific type of insulin is requested.</p>
+<h3 id="select-insulin-type">Select Insulin type<a class="headerlink" href="#select-insulin-type" title="Permanent link">⌁</a></h3>
+<p>The default is Novolog.  Depending on your screen, you may have to scroll down to see the Fiasp icon.</p>
 <p><img alt="select specific type of insulin when adding pump" src="../img/add-pump-insulin-type.svg" width="500" /></p></div>
             </div>
         </div>

@@ -361,7 +361,7 @@
 </li>
                                     
 <li>
-    <a href="../../faqs/dev-menus/" class="dropdown-item">Menus for dev</a>
+    <a href="../../faqs/dev-menus/" class="dropdown-item">Loop dev Preview</a>
 </li>
                                     
 <li>
@@ -435,6 +435,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#advanced-users-only" class="nav-link">Advanced Users Only</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -466,7 +470,16 @@
 </div>
 <h2 id="pick-a-branch-to-download">Pick a Branch to Download<a class="headerlink" href="#pick-a-branch-to-download" title="Permanent link">⌁</a></h2>
 <p>You’ll need to download the Loop code. You will then build the app on your computer with Xcode, which will transfer the app to your phone or ipod.</p>
-<p>Various versions of Loop code are available. Both master and automatic-bolus are stable and widely used.  The <a href="https://www.loopandlearn.org/compare-branches/#which-loop">Compare Version</a> webpage explains the differences between master and automatic-bolus. (Hint - if you build automatic-bolus, it acts just like master until you modify the Dosing Strategy selection under Settings.  So you can switch back and forth between master, Temp Basal only, and automatic-bolus strategies without a rebuild.)</p>
+<p>Both the master and automatic-bolus branches are stable and widely used.</p>
+<ul>
+<li>Hint - if you build the automatic-bolus branch, it acts just like master until you modify the Dosing Strategy selection under Settings.  <ul>
+<li>You can switch Dosing Strategy without a rebuild</li>
+<li>Select Temp Basal Only and automatic-bolus branch acts like master</li>
+<li>Select Automatic Bolus and automatic-bolus branch provides 40% of the recommended dose at each Loop cycle</li>
+<li>See <a href="https://www.loopandlearn.org/compare-branches/#which-loop">Compare Version</a> for more explanations</li>
+</ul>
+</li>
+</ul>
 <p>Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.)</p>
 <hr />
 <ul>
@@ -478,18 +491,32 @@
 </li>
 </ul>
 <hr />
+<ul>
+<li><a href="#advanced-users-only">Advanced Users Only</a></li>
+</ul>
+<hr />
+<h2 id="store-and-name-your-download-properly">Store and Name Your Download Properly<a class="headerlink" href="#store-and-name-your-download-properly" title="Permanent link">⌁</a></h2>
+<p>It is best practice to leave your Loop code in your Downloads folder. If you store your Loop code in a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is <strong>not</strong> an iCloud drive. Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive? Check your System Preferences. If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and <strong>NOT</strong> appropriate places to save your Loop download.</p>
+<p align="center"><img alt="img/icloud-drive.png" src="../img/icloud-drive.png" width="650" /></p>
+<p>Depending on your browser and settings, your Loop download may or may not automatically unzip. If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility. This will create a blue folder called <code>Loop-master</code>.  HOWEVER, if you already have an existing <code>Loop-master</code> folder from a previous download, the name of the next download will be something like <code>Loop-master (1)</code>.</p>
+<h2 id="next-step-build-loop-app">Next Step: Build Loop App<a class="headerlink" href="#next-step-build-loop-app" title="Permanent link">⌁</a></h2>
+<p>Now you are ready to move onto Step 14 to <a href="../step14/">Build Loop App</a>.</p>
+<h2 id="advanced-users-only">Advanced Users Only<a class="headerlink" href="#advanced-users-only" title="Permanent link">⌁</a></h2>
+<p>If you are an advanced user who wants to build the dev branch - this section is for you.</p>
 <div class="admonition warning">
 <p class="admonition-title">Advanced Users Only</p>
 <p><strong>Only build the dev branch if you're a developer/advanced user</strong></p>
+<p>Please read <a href="../../faqs/branch-faqs/#whats-going-on-in-the-dev-branch">What's going on in the dev branch?</a> before deciding to test the dev branch.</p>
 <ul>
 <li>Note, the dev branch requires a minimum of iOS 14 on your device</li>
 <li>Once you install the dev branch on a device, you must delete the app to return to master or automatic-bolus, which means all settings will need to be entered and a new pod started</li>
-<li>The dev branch user interface is different, i.e., the documentation in LoopDocs does not match the screens you will see when you use the Loop app built from the dev branch. A preview of the <a href="../../faqs/dev-menus/">dev branch menus</a> is found in the FAQs section.</li>
+<li>The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch</li>
+<li><a href="../../faqs/dev-menus/">Loop dev Preview</a> is found in the FAQs section with some preliminary documentation</li>
 </ul>
 <p>The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.  The links below are to the wiki for LoopWorkspace, the LoopDocs page on building with LoopWorkspace and the instructions for installing carthage 0.36.0 (not needed for master or automatic-bolus branches)  </p>
 <ul>
 <li>
-<p><a href="https://github.com/LoopKit/LoopWorkspace#loopworkspace">LoopWorkspace wiki</a>: Replace "&lt;branch>" in "git clone" line with "dev"</p>
+<p><a href="https://github.com/LoopKit/LoopWorkspace#readme">LoopWorkspace README</a>: Replace "&lt;branch>" in "git clone" line with "dev"</p>
 </li>
 <li>
 <p>LoopDocs page on <a href="../loopworkspace/">LoopWorkspace</a></p>
@@ -498,14 +525,14 @@
 <p>LoopDocs page, <a href="../step7/">"Skip Step 7"</a> for installing carthage 0.36.0</p>
 </li>
 </ul>
-</div>
-<hr />
-<h2 id="store-and-name-your-download-properly">Store and Name Your Download Properly<a class="headerlink" href="#store-and-name-your-download-properly" title="Permanent link">⌁</a></h2>
-<p>It is best practice to leave your Loop code in your Downloads folder. If you store your Loop code in a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is <strong>not</strong> an iCloud drive. Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive? Check your System Preferences. If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and <strong>NOT</strong> appropriate places to save your Loop download.</p>
-<p align="center"><img alt="img/icloud-drive.png" src="../img/icloud-drive.png" width="650" /></p>
-<p>Depending on your browser and settings, your Loop download may or may not automatically unzip. If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility. This will create a blue folder called <code>Loop-master</code>.  HOWEVER, if you already have an existing <code>Loop-master</code> folder from a previous download, the name of the next download will be something like <code>Loop-master (1)</code>.</p>
-<h2 id="next-step-build-loop-app">Next Step: Build Loop App<a class="headerlink" href="#next-step-build-loop-app" title="Permanent link">⌁</a></h2>
-<p>Now you are ready to move onto Step 14 to <a href="../step14/">Build Loop App</a>.</p></div>
+<p>New trick (dev branch only):</p>
+<ul>
+<li>Edit the LoopConfigOverride.xcconfig</li>
+<li>Uncomment the line starting with <code>LOOP_DEVELOPMENT_TEAM =</code></li>
+<li>Insert your developer ID</li>
+<li>Build the Loop(Workspace) - all targets are signed automatically</li>
+</ul>
+</div></div>
             </div>
         </div>
 
