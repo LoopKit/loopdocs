@@ -6,14 +6,17 @@
 
 !!! info "Summary"
     - Open the Loop code you downloaded in [Step 13](step13.md#pick-a-branch-to-download)
-    - Connect the phone to the computer
-    - Trust the computer (on the phone)
-    - Select your phone from the top of the device list in Xcode
-    - Register the phone (if first time building to phone)
-    - Sign the targets
-    - Press the build button
-    - Enter computer password four times during the build (for first build on computer)
-    - Watch in awe as you just built your very own Loop app
+        - Connect the phone to the computer
+        - Trust the computer (on the phone)
+        - Select your phone from the top of the device list in Xcode
+        - Register the phone (if first time building to phone)
+        - Sign the targets
+        - Press the build button
+        - Enter computer password four times during the build (for first build on computer)
+        - Watch in awe as you just built your very own Loop app
+    - Open whatever calendar you like to use and insert a reminder
+        - The app will expire in 7 days or 1 year
+        - Add an alert with enough time before expiration to prepare to rebuild
 
 !!! warning "FAQs"
     - **"I got a build error! YIKES...what do I do?"** Check out the [Build Errors](build_errors.md) page for solutions.
@@ -277,5 +280,10 @@ The next step is the begin the [Set up App](../operation/overview.md) process.
 ![alt](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
 
 ## Next Steps
+
+!!! danger "Add a Calendar Reminder"
+
+    - It is good practice to add a reminder to your calendar when the app will expire (7 days or 1 year).
+    - Be sure to add an alert to that reminder so you have enough time to do all the [Loop Updating](updating.md) steps to build the app again before it expires
 
 Go to the [Set up App](../operation/overview.md) menu to configure your Loop and follow that up with the first [Operate](../operation/features/carbs.md) page and work those pages as you learn to run Loop safely.
