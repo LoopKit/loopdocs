@@ -158,6 +158,12 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 From here, go straight to [Step 14 Build Loop app](step14.md) and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
 
+!!! danger "Add a Calendar Reminder"
+
+    - It is good practice to add a reminder to your calendar when the app will expire (7 days or 1 year).
+    - Be sure to add an alert to that reminder so you have enough time to do all the [Loop Updating](updating.md) steps to build the app again before it expires
+
+
 !!! info "Double check expiration date"
 
     If you want to make sure that step 4 above (deleting the provisioning profiles) went well, check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app, if you successfully build, will function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.
