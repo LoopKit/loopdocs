@@ -6,7 +6,7 @@ This page will cover two general parts of the Loop's settings, circled in red in
 
 * The second circled section is the configuration section. This section contains a lot of really important settings that control how your Loop will calculate your predicted BG curve. Given the importance of your predicted BG curve to Loop's actions, please make sure you read over this page carefully to know how to navigate the selections and entries.
 
-![img/configurations.jpg](img/configurations.jpg){width="350"}
+![settings screen for Loop v2.2.5](img/loop-settings-config-v2-2-5.png){width="350"}
 {align="center"}
 
 ## Closed/Open Loop
@@ -31,6 +31,8 @@ When the Closed Loop switch is in the (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   On) posi
 
 If you run into problems or errors with your Loop, an Issue Report can be used to help identify where the problem is occurring. The Issue Report is automatically generated and you can share it via email. Frequently, if you seek help with a technical problem, an Issue Report will provide insight for the developers and troubleshooters. Please email yourself an Issue Report anytime you are questioning Loop actions or displays. You can then use that Issue Report later to help debug the problem.
 
+## Select BG Units
+
 !!! info "Before you continue further, a word about BG units"
 
     Entries into the configuration section will be available in mg/dL or mmol/L automatically, based upon how your blood glucose values are received. By default they are set to mg/dL, however once CGM values arrive in mmol/L these Loop settings can be entered in mmol/L. **If you are planning to use mmol/L, be sure to wait to set your entries until after you have started to receive CGM values in Loop.** If you do these in the wrong order, then your charts and entries may have incorrect units.
@@ -46,7 +48,7 @@ Click the + in the upper right corner to add correction BG range(s). You can hav
 
 Correction ranges can be a single number, such as 100-100 mg/dL, or a range such as 100-120 mg/dL. Generally speaking, if you choose to use a range, keeping the range between about 10-30 mg/dL between the lowest and highest value is a good starting place.
 
-### Override Ranges
+### Pre-Meal Range
 
 Below the Correction Range entry is a section called "Overrides" with a Pre-Meal setting. While active, the pre-meal targets will replace the usual correction range for Loop's temp basal recommendations. If a pre-meal range is not entered in this section, the icon will remain grey and unusable on the main screen's toolbar.
 
@@ -55,6 +57,7 @@ The pre-meal override target can be used to as an easy way to get a small amount
 If your normal target is 100-110 mg/dL and pre-meal target is 80-80 mg/dL, for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
 Loop will adjust any insulin bolus as needed based on the extra insulin provided during this pre-meal time.
+
 
 ## Suspend Threshold
 
