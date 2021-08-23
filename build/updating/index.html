@@ -496,6 +496,7 @@
 <h2 id="when-to-update-loop">When to Update Loop<a class="headerlink" href="#when-to-update-loop" title="Permanent link">⌁</a></h2>
 <p>The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process.</p>
 <p>Under ordinary circumstances, you do not <em>have to</em> update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability. Also, if you have updated your phone iOS since the last build, you should download a new copy of the code.</p>
+<p>The Loop Developers strongly encourage you to update to Loop v2.2.5 (released Aug 22, 2021) as soon as possible. Please check out <a href="../../faqs/branch-faqs/#loop-v225">Branch FAQs for v2.2.5</a></p>
 <h2 id="step-1-install-macos-and-xcode-updates">Step 1: Install macOS and Xcode updates<a class="headerlink" href="#step-1-install-macos-and-xcode-updates" title="Permanent link">⌁</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Verify macOS</p>
@@ -523,8 +524,8 @@
 <p><img alt="Screenshot: Account - Apple Developer" src="../img/license.png" /></p>
 <h2 id="step-3-download-updated-loop-code">Step 3: Download Updated Loop Code<a class="headerlink" href="#step-3-download-updated-loop-code" title="Permanent link">⌁</a></h2>
 <p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want).</p>
-<p>There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for both master and automatic-bolus branches. The <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.</p>
-<p>If you prefer the zip download method, follow the links from <a href="../step13/#pick-a-branch-to-download">Build Step 13</a>, then return to this page.</p>
+<p>There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for the latest release of master (v2.2.5). The <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.</p>
+<p>If you prefer the zip download method, follow the links from <a href="../step13/#download-loop">Build Step 13</a>, then return to this page.</p>
 <h2 id="step-4a-delete-old-provisioning-profiles">Step 4a: Delete old provisioning profiles<a class="headerlink" href="#step-4a-delete-old-provisioning-profiles" title="Permanent link">⌁</a></h2>
 <h3 id="infrequent-builder-app-expires-soon">Infrequent Builder, App Expires soon<a class="headerlink" href="#infrequent-builder-app-expires-soon" title="Permanent link">⌁</a></h3>
 <p>If your app will expire soon or you build infrequently, then <a href="./#delete-profiles">Delete Profiles</a>. Not sure when your app expires? Here are instructions to check your <a href="https://www.loopandlearn.org/loop-expiration-date/">Loop Expiration Date</a>.</p>
@@ -604,7 +605,7 @@
 <div class="admonition info">
 <p class="admonition-title">Double check expiration date</p>
 <p>If you want to make sure that step 4 above (deleting the provisioning profiles) went well, check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app, if you successfully build, will function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.</p>
-<p>To find out expiration date later, use this <a href="https://www.loopandlearn.org/loop-expiration-date/">procedure</a>.</p>
+<p>To find out expiration date later, read <a href="../../operation/features/notifications/#loop-app-expiration-date">Loop App Expiration Date</a>.</p>
 </div>
 <h2 id="step-6-resolve-build-errors-if-needed">Step 6: Resolve Build Errors if needed<a class="headerlink" href="#step-6-resolve-build-errors-if-needed" title="Permanent link">⌁</a></h2>
 <div class="admonition green">

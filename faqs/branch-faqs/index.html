@@ -463,7 +463,7 @@
 <p>In the course of updating Loop, you may be wondering about the different branches, what the differences are, and such...so let's try to answer some of those questions as best we can.</p>
 <h2 id="what-are-branches">What are branches?<a class="headerlink" href="#what-are-branches" title="Permanent link">⌁</a></h2>
 <p>There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.</p>
-<p>To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone <a href="https://www.youtube.com/watch?v=cWqvYs4Azt0&amp;t=4s">video explanation about branches</a> created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus, which is now an established branch offered for download in <a href="../../build/step13/#pick-a-branch-to-download">Build Step 13</a>. Loop has moved on to Version 2.2.4 and the stable branches now are master and automatic-bolus, with dev recommended for developer/testers.</p>
+<p>To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone <a href="https://www.youtube.com/watch?v=cWqvYs4Azt0&amp;t=4s">video explanation about branches</a> created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus, which is now an established branch offered for download in <a href="../../build/step13/#download-loop">Build Step 13</a>. Loop has moved on to Version 2.2.5 with only one stable branch (master), with dev recommended for developer/testers.</p>
 <h3 id="loop-github-information">Loop GitHub Information<a class="headerlink" href="#loop-github-information" title="Permanent link">⌁</a></h3>
 <p>Loop developers own an account in GitHub called <a href="https://github.com/LoopKit">LoopKit</a>.  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.</p>
 <p>When you build Loop, in the background, Loop pulls those other frameworks (7 in total) into the build process using "Carthage".  Carthage is like a personal shopper. You give it a shopping list (the cartfile in Loop code is that shopping list) and it goes and fetches that for you during the build process. Sometimes your computer has an old shopping list...and that can cause build errors. Hence the "carthage update" fix in the Build Errors page...that command updates the shopping list to get the right versions of those frameworks.</p>
@@ -473,23 +473,20 @@
 <p>But then...the chefs/developers go on a trip. They are inspired by new cuisine and want to add new recipes to the old cookbook. (Things like omnipod support and overrides are new "recipes" that were developed since the last master release, for example.) But, the process for developing a recipe is arduous. Lots of trial and error involved. Lots of tweaking ingredients (code). The editors try out the new recipes and offer feedback (similar to the <a href="https://github.com/LoopKit/Loop/issues">Issues List in GitHub</a>). While the recipes are being developed, they have a version of the old cookbook that gets marked up...edited in pencil a lot. Scribbles and notes in the side. Revisions happen frequently, because that's what testing new recipes is all about. These marked-up versions of the cookbook are called "dev" branch. Short for "development" branch. Like the name sounds...this is where new developments are happening, new recipes and tweaks.</p>
 <p>After much testing and tweaking, eventually the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in Loop, Loop's master branch is updated with the new features coming from dev (aka, "dev branch is merged into master branch"). When that happens, master branch gets another "release" version. For that moment, dev and master are exactly the same. They stay the same until the Loop developers start working on the next batch of improvements, could be the next hour even or days later, but the process begins again. The developers will start editing the code again and dropping those edits in dev branch for further development.</p>
 <h2 id="loop-releases">Loop Releases<a class="headerlink" href="#loop-releases" title="Permanent link">⌁</a></h2>
-<p>The current released version (last changed on Jan 19, 2021) for Loop master and automatic-bolus is v2.2.4. The dates and contents for Loop releases from v2.0 through v2.2.4 are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version (August 22, 2021) for Loop master is v2.2.5. The dates and contents for Loop releases from v2.0 through v2.2.5 are summarized below in reverse chronological order (so newest release information comes first).</p>
 <div class="admonition warning">
 <p class="admonition-title">Check Current Release Status</p>
 <p>Release information is always found on the <a href="https://github.com/LoopKit/Loop/releases">GitHub LoopKit/Loop release page</a>. The information on this LoopDocs page is a summary of that information with a little extra explanation. Be aware that updates to LoopDocs may take some time after a new release comes out.</p>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Loop v2.2.4 Stable Branches</p>
-<ul>
-<li>
-<p><strong>master</strong>: uses only Temporary Basals for increased insulin delivery</p>
-</li>
-<li>
-<p><strong>automatic-bolus</strong>: allows user selection of either Temporary Basals or Automatic Bolus for increased insulin delivery with a new Setting: Dosing Strategy</p>
-</li>
-</ul>
-</div>
-<p>Note that the dev branch has diverged significantly from both master and automatic-bolus.  If you are a developer/tester, you will need to build dev from the LoopWorkspace repository, see <a href="../../build/step13/#pick-a-branch-to-download">Build Step 13</a>.</p>
+<h3 id="loop-v225">Loop v2.2.5<a class="headerlink" href="#loop-v225" title="Permanent link">⌁</a></h3>
+<p>This is an interim release as we prepare for the major changes currently in development. If you are running the previous release, 2.2.4 (master or the automatic bolus branch), or an older version of Loop it is recommended that you update.</p>
+<p>Automatic Bolus (Experimental) - Support for the Automatic Bolus dosing strategy has been included in this release as an option. The default will continue to be the standard Temp Basal strategy. It is marked experimental, as support for tracking automatic vs manual boluses is not yet implemented in the code and databases, and users must approach this feature with caution, as their settings may require changes to work well.</p>
+<p>This version includes a fix to reduce occurrences of overlaps in accounting for insulin via reservoir and dose history, which causes temporary overestimation of IOB. See <a href="https://github.com/LoopKit/LoopKit/pull/344">Loop Pull Request 344</a> for details.</p>
+<p>OrangeLink Support - Connection monitoring, battery level alerting, find device, and light/vibration controls for OrangeLink and OrangeLink Pro. A new option to disable MySentry use can trade pump battery for longer RL battery.</p>
+<p>Miscellaneous Omnipod fixes and improvements: See <a href="https://github.com/ps2/rileylink_ios/pull/676">RileyLink Pull Request 676</a> for details.</p>
+<p>Provisioning Profile Expiration Alerting - When fewer than 20 days remain until profile expiration, you'll get an alert when you open the app, once every 2 days at most. When fewer than 24 hours remain, you'll get an alert when you open the app, once every hour at most. There is an option to navigate to the updating section of LoopDocs in the alert. Expiration date is also included in the issue report for reference.</p>
+<p>Dexcom Share URL for non-US users has been fixed.</p>
+<p>For community support, please use one of the <a href="../..#stay-in-the-loop">Loop Social Media</a> help sites.</p>
 <h3 id="loop-v224">Loop v2.2.4<a class="headerlink" href="#loop-v224" title="Permanent link">⌁</a></h3>
 <p>Released October 3, 2020 with "fixes" introduced without renumbering the version number. Last change was on January 19, 2021.</p>
 <ul>
@@ -506,7 +503,7 @@
 <p class="admonition-title">Warning - Rebuild ASAP for Pods</p>
 <ul>
 <li>A bug was introduced in this version, quickly fixed in v2.2.4.</li>
-<li>If you use pods, please rebuild using v2.2.4.</li>
+<li>If you use pods, please rebuild using v2.2.5.</li>
 </ul>
 </div>
 <ul>
