@@ -34,6 +34,9 @@ Set up App: Step 3 is to add a [CGM source](loop-settings/cgm.md) for your Loop 
 
 Set up App: Step 4 is to configure Loop's settings. Within this section, you will be entering many settings that you are already familiar with such as basal rates, carb ratios, and insulin sensitivity factor (aka correction factor). There are also several new terms that you may be unfamiliar with like insulin model selection, suspend threshold, and override ranges. Make sure to refer to the [Configurations Setup Guide](loop-settings/configurations.md) while entering values - DO NOT GUESS.
 
+WARNING - the following graphics are not updated for v2.2.5, Dosing Strategy switch in Configurations does not show in these figures.
+
+
 ![img/overview.jpg](img/overview.jpg){width="250"}
 {align="center"}
 
