@@ -30,7 +30,7 @@ The apps built and signed by you in Xcode with a paid developer account will onl
 
 Under ordinary circumstances, you do not *have to* update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability. Also, if you have updated your phone iOS since the last build, you should download a new copy of the code.
 
-The Loop Developers strongly encourage you to update to Loop v2.2.5 (released Aug 22, 2021) as soon as possible. Please check out [Branch FAQs for v2.2.5](../faqs/branch-faqs.md#loop-v-2-2-5)
+The Loop Developers strongly encourage you to update to Loop v2.2.5 (released Aug 22, 2021) as soon as possible. Please check out [Branch FAQs for v2.2.5](../faqs/branch-faqs.md#loop-v225)
 
 ## Step 1: Install macOS and Xcode updates
 

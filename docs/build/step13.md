@@ -31,7 +31,7 @@ Most users should click on the master branch link below to download Loop code an
     - The updated master branch (Loop v2.2.5) was released Aug 22, 2021
         - Includes features (as an option) that were previously only available in the automatic-bolus branch
         - Includes a varieties of improvements and the orange-link patch
-        - Please check out [Branch FAQs for v2.2.5](../faqs/branch-faqs.md#loop-v-2-2-5)
+        - Please check out [Branch FAQs for v2.2.5](../faqs/branch-faqs.md#loop-v225)
 
 
 ## Store and Name Your Download Properly
