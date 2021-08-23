@@ -118,6 +118,34 @@ The differences between the three exponential models (two Rapid-Acting and Fiasp
 * Rapid-acting child curve peaks at 65 minutes
 * Fiasp peaks curve peaks at 55 minutes
 
+## Dosing Strategy
+
+A new feature introduced in Loop v2.2.5 is the ability to select the Dosing Strategy.  If you tap on that row, it reveals a selection screen, shown in the graphic below, with some explanation.  Note that this Dosing Strategy feature was available for more than a year in the automatic-bolus branch.  Users who have been using the automatic-bolus feature should update as soon as possible to master v2.2.5 to get the other improvements added to this release, [Branch FAQs for v2.2.5](../faqs/branch-faqs.md#loop-v-2-2-5).
+
+![Dosing Strategy selection screen](img/dosing-strategy.svg){width="350"}
+{align="center"}
+
+The Automatic Bolus selection causes Loop to provide 40% of the recommended dose as a bolus at the beginning of each Loop cycle (when a CGM reading comes in). This is a faster method of getting the recommended insulin delivered. When Loop delivers extra insulin, the scheduled basal rate continues unchanged.
+
+Both Temp Basal Only and Automatic Bolus strategies restrict basal rates to reduce the amount of insulin delivered when appropriate.
+
+### Temp Basal Only
+
+1. When your blood glucose (BG) is at or above target, Loop determines the amount of Recommended Bolus based upon your settings.  Subject to your Delivery Limits, Loop will deliver the Recommended Bolus over 30 minutes using positive temp basals (i.e., increase over your scheduled basal rate) to increase your IOB. This decision is re-evaluated during every Loop interval.
+1. When your blood glucose (BG) is below target, negative temp basals (i.e., reduction of your scheduled basal rate) are used to reduce your IOB. This decision is also re-evaluated during every Loop interval.
+
+You can manually bolus at any time by pressing the Bolus icon in the center of Loop’s Main Screen.
+
+## Automatic Bolus
+
+When you first starting Loop, we encourage you to leave automatic boluses disabled until you are sure your settings are dialed in.  To enable automatic boluses, click on Settings – Dosing Strategy – Automatic Bolus.  This Automatic Bolus checkbox turns-off positive temporary basal so that:
+
+1. When your blood glucose (BG) is at or above target, you receive 40% of the Recommended Bolus at every Loop interval.
+1. When your blood glucose (BG) is below target, negative temp basals (i.e., reduction of your scheduled basal rate) are used to reduce your IOB. This decision is re-evaluated during every Loop interval (same as with the Temp Basal Only dosing strategy).
+
+As with all Loop versions, you can manually bolus at any time by pressing the Bolus icon in the center of Loop's Main Screen.  Any bolus recommendation that you see when you press the Bolus icon will be 100% of the Recommended Bolus.
+
+
 ## Carb Ratios
 
 Click the + in the upper right to add carb ratios for various times of day. Loop works best if you have [tested and optimized](https://kdisimone.github.io/looptips/settings/settings/) your carb ratio settings for accuracy.
