@@ -30,6 +30,8 @@ The apps built and signed by you in Xcode with a paid developer account will onl
 
 Under ordinary circumstances, you do not *have to* update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability. Also, if you have updated your phone iOS since the last build, you should download a new copy of the code.
 
+The Loop Developers strongly encourage you to update to Loop v2.2.5 (released Aug 22, 2021) as soon as possible. Please check out [Branch FAQs for v2.2.5](../faqs/branch-faqs.md#loop-v-2-2-5)
+
 ## Step 1: Install macOS and Xcode updates
 
 !!! warning "Verify macOS"
@@ -65,7 +67,7 @@ Apple updates its License Agreement for the Developer Program frequently. You ne
 
 After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folders now if you want).
 
-There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for both master and automatic-bolus branches. The [Build Select Script](https://www.loopandlearn.org/build-select/) webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.
+There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for the latest release of master (v2.2.5). The [Build Select Script](https://www.loopandlearn.org/build-select/) webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.
 
 If you prefer the zip download method, follow the links from [Build Step 13](step13.md#pick-a-branch-to-download), then return to this page.
 
@@ -168,7 +170,7 @@ From here, go straight to [Step 14 Build Loop app](step14.md) and do just like y
 
     If you want to make sure that step 4 above (deleting the provisioning profiles) went well, check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app, if you successfully build, will function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.
 
-    To find out expiration date later, use this [procedure](https://www.loopandlearn.org/loop-expiration-date/).
+    To find out expiration date later, read [Loop App Expiration Date](../operation/features/notifications.md#loop-app-expiration-date).
 
 
 ## Step 6: Resolve Build Errors if needed
