@@ -8,7 +8,7 @@ In the course of updating Loop, you may be wondering about the different branche
 
 There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.
 
-To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s) created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus, which is now an established branch offered for download in [Build Step 13](../build/step13.md#pick-a-branch-to-download). Loop has moved on to Version 2.2.5 with only one stable branch (master), with dev recommended for developer/testers.
+To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s) created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus, which is now an established branch offered for download in [Build Step 13](../build/step13.md#download-loop). Loop has moved on to Version 2.2.5 with only one stable branch (master), with dev recommended for developer/testers.
 
 ### Loop GitHub Information
 

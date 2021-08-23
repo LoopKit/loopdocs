@@ -69,7 +69,7 @@ After you've finished the updates to your devices listed above, you can move ont
 
 There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for the latest release of master (v2.2.5). The [Build Select Script](https://www.loopandlearn.org/build-select/) webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.
 
-If you prefer the zip download method, follow the links from [Build Step 13](step13.md#pick-a-branch-to-download), then return to this page.
+If you prefer the zip download method, follow the links from [Build Step 13](step13.md#download-loop), then return to this page.
 
 
 ## Step 4a: Delete old provisioning profiles

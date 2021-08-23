@@ -5,7 +5,7 @@
     - 10-15 minutes for a repeat builders
 
 !!! info "Summary"
-    - Open the Loop code you downloaded in [Step 13](step13.md#pick-a-branch-to-download)
+    - Open the Loop code you downloaded in [Step 13](step13.md#download-loop)
         - Connect the phone to the computer
         - Trust the computer (on the phone)
         - Select your phone from the top of the device list in Xcode
