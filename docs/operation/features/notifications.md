@@ -11,7 +11,7 @@ Profile expiration notification is a new feature added to Loop v2.2.5 (released 
 
 * When fewer than 20 days remain until profile expiration, you'll get a notification when you open the app but no more frequently than every 2 days
 * When fewer than 24 hours remain, you'll get a notification when you open the app, once every hour at most
-* There is an option to navigate to the updating section of LoopDocs in the notification
+* Simply tap on the `More Info` button of the notification to go directly to the [LoopDocs Updating](updating.md) page.
 
 ### Free (7-day) Loop App Expiration Notification
 

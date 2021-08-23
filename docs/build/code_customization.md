@@ -142,7 +142,7 @@ The modification required to reduce the watch crown rotation to confirm a bolus 
 
 ## Expiration Notification Customization
 
-With the release of Loop v2.2.5, an expiration notification feature has been added. You get a notification when you open the Loop app to alert you that the expiration is approaching. Simply tap on the `More Info` button of the notification to go directly to the [LoopDocs Updating](updating.md) page.  Pretty nice new feature.
+With the release of Loop v2.2.5, an expiration notification feature has been added. You get a notification when you open the Loop app to alert you that the expiration is approaching.
 
 * Read [Loop App Expiration Notification](../operation/features/notifications.md#loop-app-expiration-notification) to see the expiration reminder
 * Read [Loop App Expiration Date](../operation/features/notifications.md#loop-app-expiration-date) if you have an older version of Loop
@@ -152,7 +152,7 @@ If you prefer a different notification time and frequency, there are two lines y
 * Line 16: modify how long before expiration you get the FIRST notification
 * Line 28: modify how frequently you will be notified
 
-Searching for the phrase below should get you to line 16 for v2.2.5.
+Searching for the phrase below should get you to line 16 for Loop v2.2.5.
 
 * Keyword: expirationAlertWindow: TimeInterval
 * Folder: Loop/Managers
@@ -161,7 +161,7 @@ Searching for the phrase below should get you to line 16 for v2.2.5.
     * 16 first notification
     * 28 two levels of frequency
 
-![Profile expiration notification details](img/expiration-custom.png){width="750"}
+![Profile expiration notification details](img/expiration-custom.png){width="600"}
 {align="center"}
 
 Default code for line 16:
@@ -186,7 +186,7 @@ Modify Frequency of Repeated Notifications (Three Values):
 * This phrase: ```> .hours(24) ? .days(2) : .hours(1)```
 * Rewritten as: ```> Time_A ? Frequency_A : Frequency_B```, means:
     * Use Frequency_A if there is more time between now and the expiration date than Time_A
-    * Use Frequency_B if there is less time between now and the expiration date than Time_A,
+    * Use Frequency_B if there is less time between now and the expiration date than Time_A
 
 You can enter Time or Frequency as ```.days(value)```, ```.hours(value)``` or ```.minutes(value)```.
 
