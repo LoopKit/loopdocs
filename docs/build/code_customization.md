@@ -5,7 +5,7 @@ Based on Loop users’ experience, there are some customizations that you may wa
 For new builders, you might want to first build the code and familiarize yourself with the interface.  Later, you can make the customization(s) you desire on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  The downloaded code should be fairly recent - don't try to use code you downloaded a year ago - in that case, get a fresh download.  And be sure to read the [Instructions for Finding the Lines](code_customization.md#instructions-for-finding-the-lines).
 
 !!! info "Line numbers may change"
-    Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code. These instructions have been updated for Loop v2.2.4 master branch. If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help.
+    Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code. These instructions are unchanged for Loop v2.2.5 master branch. If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help.
 
 ## Instructions for Finding the Lines
 
@@ -31,7 +31,7 @@ Depending on your iPhone preferences and model, you may have Face ID or Touch ID
   * File: BolusViewController.swift
   * Line: 529
 
- The screenshot below was taken with Loop v2.0 when the line number was 201; with v2.2.4, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
+ The screenshot below was taken with Loop v2.0 when the line number was 201; with v2.2.5, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
 
 ![img/custom-id.png](img/custom-id.png){width="750"}
 {align="center"}
