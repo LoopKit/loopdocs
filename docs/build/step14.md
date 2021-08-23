@@ -30,8 +30,7 @@
 
 Open a Finder window.  Open the Downloads folder. Open your "Loop" code folder.
 
-- If you downloaded the master branch, your folder name should be `Loop-master`.
-- If you downloaded the automatic-bolus branch, your folder name should be `Loop-automatic-bolus`.
+- Your folder name should be `Loop-master`.
 
 Open your "Loop" code folder and double click on Loop.xcodeproj.
 
@@ -116,6 +115,8 @@ A successfully signed target will have a provisioning profile and signing certif
 !!! warning "Advanced Users Only"
 
     There are more targets which must be signed to build the dev branch - should be obvious in the Xcode window.
+
+    If you read the hint in [Step 13](step13.md#advanced-users-only) and edited the LoopConfigOverride.xcconfig, your targets are already signed.
 
     - **Repeat: only build the dev branch if you're a developer/advanced user**
 
