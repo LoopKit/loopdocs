@@ -447,6 +447,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#expiration-notification-customization" class="nav-link">Expiration Notification Customization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#additional-customizations" class="nav-link">Additional Customizations</a>
               <ul class="nav flex-column">
               </ul>
@@ -558,8 +562,71 @@
 </ul>
 <p align="center"><img alt="img/sensitivity1.png" src="../img/sensitivity1.png" width="800" /></p>
 <p>The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. Detailed instructions are found in this <a href="https://www.loopandlearn.org/custom-code/#bolus-confirmation">Loop and Learn Customization link</a> and are not repeated here.</p>
+<h2 id="expiration-notification-customization">Expiration Notification Customization<a class="headerlink" href="#expiration-notification-customization" title="Permanent link">⌁</a></h2>
+<p>With the release of Loop v2.2.5, an expiration notification feature has been added. You get a notification when you open the Loop app to alert you that the expiration is approaching.</p>
+<ul>
+<li>Read <a href="../../operation/features/notifications/#loop-app-expiration-notification">Loop App Expiration Notification</a> to see the expiration reminder</li>
+<li>Read <a href="../../operation/features/notifications/#loop-app-expiration-date">Loop App Expiration Date</a> if you have an older version of Loop</li>
+</ul>
+<p>If you prefer a different notification time and frequency, there are two lines you can modify:</p>
+<ul>
+<li>Line 16: modify how long before expiration you get the FIRST notification</li>
+<li>Line 28: modify how frequently you will be notified</li>
+</ul>
+<p>Searching for the phrase below should get you to line 16 for Loop v2.2.5.</p>
+<ul>
+<li>Keyword: expirationAlertWindow: TimeInterval</li>
+<li>Folder: Loop/Managers</li>
+<li>File: ProfileExpirationAlerter.swift</li>
+<li>Lines:<ul>
+<li>16 first notification</li>
+<li>28 two levels of frequency</li>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="Profile expiration notification details" src="../img/expiration-custom.png" width="600" /></p>
+<p>Default code for line 16:</p>
+<pre><code>    static let expirationAlertWindow: TimeInterval = .days(20)
+</code></pre>
+<p>Example modifications to First Notification:</p>
+<ul>
+<li>30 days: change <code>.days(20)</code> to <code>.days(30)</code></li>
+<li>12 hours: change <code>.days(20)</code> to <code>.hours(12)</code></li>
+</ul>
+<p>Default code for line 28:</p>
+<pre><code>    let minimumTimeBetweenAlerts: TimeInterval = timeUntilExpiration &gt; .hours(24) ? .days(2) : .hours(1)
+</code></pre>
+<p>Modify Frequency of Repeated Notifications (Three Values):</p>
+<ul>
+<li>This phrase: <code>&gt; .hours(24) ? .days(2) : .hours(1)</code></li>
+<li>Rewritten as: <code>&gt; Time_A ? Frequency_A : Frequency_B</code>, means:<ul>
+<li>Use Frequency_A if there is more time between now and the expiration date than Time_A</li>
+<li>Use Frequency_B if there is less time between now and the expiration date than Time_A</li>
+</ul>
+</li>
+</ul>
+<p>You can enter Time or Frequency as <code>.days(value)</code>, <code>.hours(value)</code> or <code>.minutes(value)</code>.</p>
+<p>Free App Users:</p>
+<p>An example change that a Free Loop App user (who has to build once a week) might choose is:</p>
+<pre><code>     &gt; .hours(4) ? .days(10) : .hours(2)
+</code></pre>
+<p>Combined with an <code>.hours(12)</code> on line 16, they would get notified at 12 hours, 4 hours and 2 hours before expiration on the day of expiration and only when the app is opened. Since you'll be building once a week, you can play around with these values until you are happy.</p>
 <h2 id="additional-customizations">Additional Customizations<a class="headerlink" href="#additional-customizations" title="Permanent link">⌁</a></h2>
-<p>Additional customizations are found on another website which includes customizations requiring workspace builds and for other forks of Loop.  If you did not find the customization you want here on LoopDocs, then try the <a href="https://www.loopandlearn.org/custom-code">Loop and Learn Customization Page</a>.  Note that the other site will point you right back to LoopDocs if the customization is found on this LoopDocs customization page.</p></div>
+<p>Additional customizations are found on another website. If you did not find the customization you want here on LoopDocs, then try the <a href="https://www.loopandlearn.org/custom-code">Loop and Learn Customization Page</a>. Check that page in case this list is not up to date.</p>
+<ul>
+<li>Add Lyumjev Insulin Model</li>
+<li>Adjust Percent Bolus for Automatic Dosing Strategy</li>
+<li>Adjust Watch Crown Rotation Required for Bolus Confirmation</li>
+<li>Pods: Increase Log File History Hours</li>
+<li>These Require Workspace Builds (use <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a>)<ul>
+<li>Modify Override Sensitivity</li>
+<li>Medtronic: Disable mySentry (Loop v2.2.5 removes need for this)</li>
+<li>Pods: Add Extra Insulin on Insertion</li>
+<li>Pods: Change Default Expiration Reminder</li>
+</ul>
+</li>
+</ul>
+<p>Note that the other site will point you right back to LoopDocs if the customization is found on this LoopDocs customization page.</p></div>
             </div>
         </div>
 
