@@ -4,11 +4,17 @@
 
 What is Loop?
 
-* Loop is an app you build yourself and load on your iPhone (or iPod)
 * Loop assists in the many insulin dosing decisions people with diabetes face every day
 * Loop uses a compatible continuous glucose monitor (CGM) and is paired using the RileyLink protocol with your compatible pump
     * Loop works with older Medtronic pumps and the Eros (not Dash) Omnipods
     * Loop requires a [RileyLink compatible device](build/step5.md#rileylink-compatible-devices) to communicate between the phone and pump
+
+How do I get Loop?
+There are two ways to get get Loop.  The first way is to build
+it yourself.  If needed, the looping community can provide lots
+of help to accomplish building Loop.  The second way is to join T1Pilot CoPilot
+subscription service to get technical support and guidance using Loop.
+See [Getting T1Pal's started with Loop guide](https://www.facebook.com/T1Pal/guides/?filter=176780824522634&post=622054988757497) for more information.
 
 What CGMs work with Loop?
 
