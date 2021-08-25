@@ -5,7 +5,7 @@ Based on Loop users’ experience, there are some customizations that you may wa
 For new builders, you might want to first build the code and familiarize yourself with the interface.  Later, you can make the customization(s) you desire on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  The downloaded code should be fairly recent - don't try to use code you downloaded a year ago - in that case, get a fresh download.  And be sure to read the [Instructions for Finding the Lines](code_customization.md#instructions-for-finding-the-lines).
 
 !!! info "Line numbers may change"
-    Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code. These instructions have been updated for Loop v2.2.4 master branch. If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help.
+    Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code. These instructions are unchanged for Loop v2.2.5 master branch. If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help.
 
 ## Instructions for Finding the Lines
 
@@ -31,7 +31,7 @@ Depending on your iPhone preferences and model, you may have Face ID or Touch ID
   * File: BolusViewController.swift
   * Line: 529
 
- The screenshot below was taken with Loop v2.0 when the line number was 201; with v2.2.4, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
+ The screenshot below was taken with Loop v2.0 when the line number was 201; with v2.2.5, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
 
 ![img/custom-id.png](img/custom-id.png){width="750"}
 {align="center"}
@@ -140,6 +140,79 @@ For the carb and bolus entry pickers, edit two lines in files within the WatchAp
 
 The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. Detailed instructions are found in this [Loop and Learn Customization link](https://www.loopandlearn.org/custom-code/#bolus-confirmation) and are not repeated here.
 
+## Expiration Notification Customization
+
+With the release of Loop v2.2.5, an expiration notification feature has been added. You get a notification when you open the Loop app to alert you that the expiration is approaching.
+
+* Read [Loop App Expiration Notification](../operation/features/notifications.md#loop-app-expiration-notification) to see the expiration reminder
+* Read [Loop App Expiration Date](../operation/features/notifications.md#loop-app-expiration-date) if you have an older version of Loop
+
+If you prefer a different notification time and frequency, there are two lines you can modify:
+
+* Line 16: modify how long before expiration you get the FIRST notification
+* Line 28: modify how frequently you will be notified
+
+Searching for the phrase below should get you to line 16 for Loop v2.2.5.
+
+* Keyword: expirationAlertWindow: TimeInterval
+* Folder: Loop/Managers
+* File: ProfileExpirationAlerter.swift
+* Lines:
+    * 16 first notification
+    * 28 two levels of frequency
+
+![Profile expiration notification details](img/expiration-custom.png){width="600"}
+{align="center"}
+
+Default code for line 16:
+```
+    static let expirationAlertWindow: TimeInterval = .days(20)
+```
+
+Example modifications to First Notification:
+
+* 30 days: change `.days(20)` to `.days(30)`
+* 12 hours: change `.days(20)` to `.hours(12)`
+
+Default code for line 28:
+
+```
+    let minimumTimeBetweenAlerts: TimeInterval = timeUntilExpiration > .hours(24) ? .days(2) : .hours(1)
+```
+
+
+Modify Frequency of Repeated Notifications (Three Values):
+
+* This phrase: ```> .hours(24) ? .days(2) : .hours(1)```
+* Rewritten as: ```> Time_A ? Frequency_A : Frequency_B```, means:
+    * Use Frequency_A if there is more time between now and the expiration date than Time_A
+    * Use Frequency_B if there is less time between now and the expiration date than Time_A
+
+You can enter Time or Frequency as ```.days(value)```, ```.hours(value)``` or ```.minutes(value)```.
+
+Free App Users:
+
+An example change that a Free Loop App user (who has to build once a week) might choose is:
+
+```
+     > .hours(4) ? .days(10) : .hours(2)
+```
+Combined with an ```.hours(12)``` on line 16, they would get notified at 12 hours, 4 hours and 2 hours before expiration on the day of expiration and only when the app is opened. Since you'll be building once a week, you can play around with these values until you are happy.
+
+
 ## Additional Customizations
 
-Additional customizations are found on another website which includes customizations requiring workspace builds and for other forks of Loop.  If you did not find the customization you want here on LoopDocs, then try the [Loop and Learn Customization Page](https://www.loopandlearn.org/custom-code).  Note that the other site will point you right back to LoopDocs if the customization is found on this LoopDocs customization page.
+Additional customizations are found on another website. If you did not find the customization you want here on LoopDocs, then try the [Loop and Learn Customization Page](https://www.loopandlearn.org/custom-code). Check that page in case this list is not up to date.
+
+* Add Lyumjev Insulin Model
+* Adjust Percent Bolus for Automatic Dosing Strategy
+* Adjust Watch Crown Rotation Required for Bolus Confirmation
+* Pods: Increase Log File History Hours
+* These Require Workspace Builds (use [Build Select Script](https://www.loopandlearn.org/build-select/))
+    * Modify Override Sensitivity
+    * Medtronic: Disable mySentry (Loop v2.2.5 removes need for this)
+    * Pods: Add Extra Insulin on Insertion
+    * Pods: Change Default Expiration Reminder
+
+
+Note that the other site will point you right back to LoopDocs if the customization is found on this LoopDocs customization page.
