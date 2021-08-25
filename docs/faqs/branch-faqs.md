@@ -8,7 +8,7 @@ In the course of updating Loop, you may be wondering about the different branche
 
 There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.
 
-To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s) created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus, which is now an established branch offered for download in [Build Step 13](../build/step13.md#pick-a-branch-to-download). Loop has moved on to Version 2.2.4 and the stable branches now are master and automatic-bolus, with dev recommended for developer/testers.
+To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s) created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus, which is now an established branch offered for download in [Build Step 13](../build/step13.md#download-loop). Loop has moved on to Version 2.2.5 with only one stable branch (master), with dev recommended for developer/testers.
 
 ### Loop GitHub Information
 
@@ -29,19 +29,30 @@ After much testing and tweaking, eventually the recipes get the flavors right (b
 
 ## Loop Releases
 
-The current released version (last changed on Jan 19, 2021) for Loop master and automatic-bolus is v2.2.4. The dates and contents for Loop releases from v2.0 through v2.2.4 are summarized below in reverse chronological order (so newest release information comes first).
+The current released version (August 22, 2021) for Loop master is v2.2.5. The dates and contents for Loop releases from v2.0 through v2.2.5 are summarized below in reverse chronological order (so newest release information comes first).
 
 !!! warning "Check Current Release Status"
 
     Release information is always found on the [GitHub LoopKit/Loop release page](https://github.com/LoopKit/Loop/releases). The information on this LoopDocs page is a summary of that information with a little extra explanation. Be aware that updates to LoopDocs may take some time after a new release comes out.
 
-!!! info "Loop v2.2.4 Stable Branches"
+### Loop v2.2.5
 
-    - **master**: uses only Temporary Basals for increased insulin delivery
+This is an interim release as we prepare for the major changes currently in development. If you are running the previous release, 2.2.4 (master or the automatic bolus branch), or an older version of Loop it is recommended that you update.
 
-    - **automatic-bolus**: allows user selection of either Temporary Basals or Automatic Bolus for increased insulin delivery with a new Setting: Dosing Strategy
+Automatic Bolus (Experimental) - Support for the Automatic Bolus dosing strategy has been included in this release as an option. The default will continue to be the standard Temp Basal strategy. It is marked experimental, as support for tracking automatic vs manual boluses is not yet implemented in the code and databases, and users must approach this feature with caution, as their settings may require changes to work well.
 
-Note that the dev branch has diverged significantly from both master and automatic-bolus.  If you are a developer/tester, you will need to build dev from the LoopWorkspace repository, see [Build Step 13](../build/step13.md#pick-a-branch-to-download).
+This version includes a fix to reduce occurrences of overlaps in accounting for insulin via reservoir and dose history, which causes temporary overestimation of IOB. See [Loop Pull Request 344](https://github.com/LoopKit/LoopKit/pull/344) for details.
+
+OrangeLink Support - Connection monitoring, battery level alerting, find device, and light/vibration controls for OrangeLink and OrangeLink Pro. A new option to disable MySentry use can trade pump battery for longer RL battery.
+
+Miscellaneous Omnipod fixes and improvements: See [RileyLink Pull Request 676](https://github.com/ps2/rileylink_ios/pull/676) for details.
+
+Provisioning Profile Expiration Alerting - When fewer than 20 days remain until profile expiration, you'll get an alert when you open the app, once every 2 days at most. When fewer than 24 hours remain, you'll get an alert when you open the app, once every hour at most. There is an option to navigate to the updating section of LoopDocs in the alert. Expiration date is also included in the issue report for reference.
+
+Dexcom Share URL for non-US users has been fixed.
+
+For community support, please use one of the [Loop Social Media](../index.md#stay-in-the-loop) help sites.
+
 
 ### Loop v2.2.4
 
@@ -61,7 +72,7 @@ Released September 25, 2020
 
 !!! warning "Warning - Rebuild ASAP for Pods"
     * A bug was introduced in this version, quickly fixed in v2.2.4.
-    * If you use pods, please rebuild using v2.2.4.
+    * If you use pods, please rebuild using v2.2.5.
 
 * Fetch pump and cgm data on manual loop retry (when Loop icon is red or yellow)
 * Re-arranged pod status screen to prioritize needed information and actions.

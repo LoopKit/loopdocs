@@ -5,38 +5,34 @@
     - 1 minute to download Loop code
 
 !!! info "Summary"
-    - There are two branches suitable for new Loopers
+    - Download the zip file from the master branch link below
 
 !!! warning "FAQs"
     - **"What the heck is a branch?"** That's a great question. We have a page all about [Branch FAQs](../faqs/branch-faqs.md)
-    - **"How can I tell which version I have downloaded if I'm unsure?"** The downloaded Loop folder's name will give you an indication of which branch you downloaded. The folder name will be in the format `Loop-BranchName`.
     - **"When do I need to download new Loop code?"** Anytime you want to update your Loop app to get new features, you'll simply download the code again by clicking on the links below. The links always go to the most recent version of each of the branches. It's a good idea is to delete your old downloads before making a new one, just to avoid confusion.
 
-## Pick a Branch to Download
+## Download Loop
 
 You’ll need to download the Loop code. You will then build the app on your computer with Xcode, which will transfer the app to your phone or ipod.
 
-Both the master and automatic-bolus branches are stable and widely used.
-
-* Hint - if you build the automatic-bolus branch, it acts just like master until you modify the Dosing Strategy selection under Settings.  
-    * You can switch Dosing Strategy without a rebuild
-    * Select Temp Basal Only and automatic-bolus branch acts like master
-    * Select Automatic Bolus and automatic-bolus branch provides 40% of the recommended dose at each Loop cycle
-    * See [Compare Version](https://www.loopandlearn.org/compare-branches/#which-loop) for more explanations
-
-Click on one of the links below to download Loop code and then follow the rest of the steps until you have a new version on your device. (These links always point to the most recent version of the code.)
+Most users should click on the master branch link below to download Loop code and then follow the rest of the steps until you have a new version on your device. (This link always points to the most recent version of the code.)
 
 ---
 
 - [Loop: master branch](https://github.com/LoopKit/Loop/archive/master.zip)
-
-- [Loop: automatic-bolus branch](https://github.com/LoopKit/Loop/archive/automatic-bolus.zip)
 
 ---
 
 - [Advanced Users Only](#advanced-users-only)
 
 ---
+
+!!! danger "What happened to the automatic-bolus branch?"
+    - The updated master branch (Loop v2.2.5) was released Aug 22, 2021
+        - Includes features (as an option) that were previously only available in the automatic-bolus branch
+        - Includes a varieties of improvements and the orange-link patch
+        - Please check out [Branch FAQs for v2.2.5](../faqs/branch-faqs.md#loop-v225)
+
 
 ## Store and Name Your Download Properly
 

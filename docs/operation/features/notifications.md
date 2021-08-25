@@ -2,6 +2,36 @@
 
 Loop provides discrete notifications on the iPhone and Watch which will appear on the (locked) screen and vibrate, depending on your notification settings of Loop.
 
+## Loop App Expiration Notification
+
+Profile expiration notification is a new feature added to Loop v2.2.5 (released August 22, 2021).
+
+![Notification display when near the Loop App expiration date](img/loop-app-expiration-warning.png){width="250"}
+{align="center"}
+
+* When fewer than 20 days remain until profile expiration, you'll get a notification when you open the app but no more frequently than every 2 days
+* When fewer than 24 hours remain, you'll get a notification when you open the app, once every hour at most
+* Simply tap on the `More Info` button of the notification to go directly to the [LoopDocs Updating](updating.md) page.
+
+### Free (7-day) Loop App Expiration Notification
+
+The expiration notification pattern is the same as for the Paid Loop App. You may want to add an [Expiration Notification Customization](../../build/code_customization.md#expiration-notification-customization) to modify the first appearance and frequency of the notification.
+
+
+## Loop App Expiration Date
+
+If you want to see the expiration date at any time (starting with Loop v2.2.5), tap on Settings, then tap on Issue Report.  The expiration date is near the top of the report (to the right of ```profileExpiration```).  Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time is in GMT, so adjust to your own timezone if you procrastinated until the last minute.
+
+![Issue report displays Loop App expiration date](img/loop-app-expiration-issue-report.jpeg){width="250"}
+{align="center"}
+
+If you are running Loop v2.2.4 or older, you might be surprised by a ["Loop App Unavailable"](../../troubleshooting/loop-crashing.md#expired-app) display when the app reaches its expiration date.  
+
+* Workaround is to add a notice to your calendar when you build the app initially so you know that the one year app lifetime is nearing the end
+* This is still a good idea even with v2.2.5 (set your own desired alert window)
+* If you are running Loop v2.2.4 or older, you can use this method to determine [Loop Expiration date](https://www.loopandlearn.org/loop-expiration-date/).
+
+
 ## Omnipod
 
 Most beep alarms are disabled for a much more discrete use of the omnipod. Only the following audible acknowledgments or alarms are currently used:
@@ -65,7 +95,7 @@ Normally you will have 5-30 minutes to replace the pod, but do know the pod can 
 You can customize the time of notification when to replace your pod any time from 1 hour up to 71 hours (3 days - 1 hour) [after staring a new pod](../loop-settings/omnipod-pump.md#expiration-reminder) or you change the time later in the [pod configuration settings]../loop-settings/omnipod-pump.md#configuration).
 The expiry alarm will always sound when the pod reaches a running full 3 days (72 hours) which you can silence [in the pod status settings](../loop-settings/omnipod-pump.md#status).
 
-![img/pod-expiration-notice.png](img/pod-expiration-notice.png){width="250"}
+![img/pod-expiration-notice.png](img/pod-expiration-notice.png){width="300"}
 {align="center"}
 
 ## Low Battery (Medtronic)
