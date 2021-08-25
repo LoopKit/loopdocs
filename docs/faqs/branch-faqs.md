@@ -37,19 +37,51 @@ The current released version (August 22, 2021) for Loop master is v2.2.5. The da
 
 ### Loop v2.2.5
 
-This is an interim release as we prepare for the major changes currently in development. If you are running the previous release, 2.2.4 (master or the automatic bolus branch), or an older version of Loop it is recommended that you update.
+This is an interim release as we prepare for the major changes currently in development. If you are running the previous release, v2.2.4 (master or automatic-bolus branch), or an older version of Loop it is recommended that you update. A summary of modifications with respect to Loop v2.2.4 is listed below.
 
-Automatic Bolus (Experimental) - Support for the Automatic Bolus dosing strategy has been included in this release as an option. The default will continue to be the standard Temp Basal strategy. It is marked experimental, as support for tracking automatic vs manual boluses is not yet implemented in the code and databases, and users must approach this feature with caution, as their settings may require changes to work well.
+### New Features:
 
-This version includes a fix to reduce occurrences of overlaps in accounting for insulin via reservoir and dose history, which causes temporary overestimation of IOB. See [Loop Pull Request 344](https://github.com/LoopKit/LoopKit/pull/344) for details.
+Automatic Bolus (Experimental)
 
-OrangeLink Support - Connection monitoring, battery level alerting, find device, and light/vibration controls for OrangeLink and OrangeLink Pro. A new option to disable MySentry use can trade pump battery for longer RL battery.
+* Default Dosing Strategy continues to be Temp Basal Only
+* Users may now select the Automatic Bolus Dosing Strategy
+* Automatic Bolus is marked experimental
+    * Tracking automatic vs manual boluses is not yet implemented in the code and databases
+    * Users should approach this feature with caution, and may require changes to their settings
 
-Miscellaneous Omnipod fixes and improvements: See [RileyLink Pull Request 676](https://github.com/ps2/rileylink_ios/pull/676) for details.
+OrangeLink Support Added:
 
-Provisioning Profile Expiration Alerting - When fewer than 20 days remain until profile expiration, you'll get an alert when you open the app, once every 2 days at most. When fewer than 24 hours remain, you'll get an alert when you open the app, once every hour at most. There is an option to navigate to the updating section of LoopDocs in the alert. Expiration date is also included in the issue report for reference.
+* RileyLink menu displays: Connection monitoring, battery level alerting, find device, and light/vibration controls for OrangeLink and OrangeLink Pro
+* Option to disable MySentry use can trade pump battery for longer RileyLink compatible device battery life
 
-Dexcom Share URL for non-US users has been fixed.
+Provisioning Profile Expiration Notifications:
+
+* User gets [notified](../operation/features/notifications.md#loop-app-expiration-notification) when Loop app expiration date nears
+* Expiration date is [included](../operation/features/notifications.md#loop-app-expiration-notification) in the issue report
+
+Omnipod Features:
+
+* Fault Codes: PDM style Ref code displayed for pod faults
+* Confirmation beeps: when enabled, all manual pod operations beep
+* Pod Suspended: pod beeps once every 5 minutes until delivery is resumed
+
+### Code Fixes:
+
+Omnipod Code Fixes:
+
+* Make insertion more robust  (LoopKit issue #1369)
+* Fix “Pod already primed” errors when priming cancelled (rileylink_ios issue #661)
+* Prevent 049 pod faults during setup (rileylink_ios issue #627)
+* See [RileyLink Pull Request 676](https://github.com/ps2/rileylink_ios/pull/676) for additional details.
+
+Insulin Accounting:
+
+* Reduced occurrences of overlaps in accounting for insulin via reservoir and dose history, which causes temporary overestimation of IOB
+* See [Loop Pull Request 344](https://github.com/LoopKit/LoopKit/pull/344) for details
+
+Dexcom Non-US Share:
+
+* Dexcom Share URL for non-US users has been fixed.
 
 For community support, please use one of the [Loop Social Media](../index.md#stay-in-the-loop) help sites.
 
