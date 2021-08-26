@@ -5,7 +5,11 @@ Based on Loop users’ experience, there are some customizations that you may wa
 For new builders, you might want to first build the code and familiarize yourself with the interface.  Later, you can make the customization(s) you desire on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  The downloaded code should be fairly recent - don't try to use code you downloaded a year ago - in that case, get a fresh download.  And be sure to read the [Instructions for Finding the Lines](code_customization.md#instructions-for-finding-the-lines).
 
 !!! info "Line numbers may change"
-    Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code. These instructions are unchanged for Loop v2.2.5 master branch. If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help.
+    Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code.
+
+    * You may notice some customizations list line numbers for different branches
+
+    * If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help
 
 ## Instructions for Finding the Lines
 
@@ -16,7 +20,20 @@ For each customization, you will see the following 4 items.
   * File: filename.swift
   * Line: line number(s)
 
-The fastest way to find the relevant line(s) is: in Xcode, tap the Find menu item and select Find in Project (or Workspace).  Copy the word or phrase next to Keyword and paste that into the find search-box that opens on upper left of Xcode screen and hit enter.  A series of options show up underneath the find search-box. The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed.  You can click on the one you think is correct and it will display in the main middle window of Xcode with the Keyword highlighted on the line you selected. An attempt is made to have a long enough phrase that only the relevant line is offered. Be sure to highlight everything from the first word after "Keyword: " until the end of the line when filling in the find search-box.
+If the line numbers are unchanged from the documentation:
+
+* In Xcode, hold down the command key and hit L then type in the line number
+* If the code doesn't match what you expect, use the search option described below
+
+If the line numbers don't match the documentation, search for the phrase that follows `Keyword: `
+
+* In Xcode, tap the Find menu item and select Find in Project (or Workspace)
+* Copy the word or phrase next to Keyword and paste that into the find search-box that opens on upper left of Xcode screen and hit enter
+* A series of options show up underneath the find search-box
+* The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed
+* Click on the one you think is correct and it will display in the main middle window of Xcode with the Keyword highlighted on the line you selected
+    * The phrase by `Keyword: ` should be limit the search so that only the relevant line is offered
+    * Highlight everything from the first word after "Keyword: " until the end of the line when filling in the find search-box
 
 There may be a figure illustrating the change.
 
@@ -53,7 +70,8 @@ Loop’s default carb absorption times are based on the high, medium, and low gl
   * Keyword: defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
   * Folder: Loop/LoopCore
   * File: LoopSettings.swift
-  * Line: 16
+  * Line: 16 (v2.2.4 master), 41 (v2.2.4 AB)
+  * Line: 50 (v2.2.5)
 
 ![img/carb_times.png](img/carb_times.png){width="750"}
 {align="center"}
