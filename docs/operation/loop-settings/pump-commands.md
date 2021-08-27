@@ -27,9 +27,7 @@ This screen provides important information about your Pod and allows you to issu
 
 Other than re-ordering, what is different under the hood with v2.2.5?
 
-* Expires: The expected time for pod expiration (72 hours); pod time drifts over the life of a pod; expiration time is updated to account for that based on pod active clock
-
-* Pod Active Clock: reports the active time as far as the pod is concerned; reports hr and min up to 80 hr 0 min; previous versions switched to days/hours after 24 hours
+* Pod Active Clock: reports the pod time in a different format (always hr and min)
 
 * Enable/Disable Confirmation Beeps: moved to the Configuration section; beeps for all manual pod operations; uses a more efficient implementation
 
@@ -40,12 +38,7 @@ Other than re-ordering, what is different under the hood with v2.2.5?
 
 ### Pod Information
 
-The first section has information regarding how long the Pod has been active and the (72 hour) Pod expiration date/time. These are determined when the Pod is activated by injecting insulin into the reservoir and using actual time to estimate these values.
-
-!!! info ""
-    The Pod has an internal timer that keeps track of minutes that the Pod has been active.  This timer may have a slight drift with respect to actual time, so the 72 hour expiration beeps or the 80 hour Pod shutdown may be a few minutes before or after you expect it, based on this reported expiration date/time.
-
-    The displayed values take this drift into account starting with Loop v2.2.5.
+The first section has the (72 hour) Pod expiration date/time and how long the Pod has been active. These are determined when the Pod is activated by injecting insulin into the reservoir and uses pod active time.
 
 #### Bolus Delivery
 
@@ -115,7 +108,7 @@ You will need to press `Tap to Resume` in the banner or the `Resume Delivery` bu
 This turns confirmation beeps on for the Pod. The Pod beeps when you enable this, but is silent when you disable it.
 
 * Bolus Acknowledgement - the Pod beeps when it has received and accepted the bolus command from Loop (manual or automatic) and then beeps again when the bolus is completed.
-* Other - most of the commands you can issue to the Pod will have an associated confirmation beep, such as updating the basal rate, requesting Pod status, canceling a bolus, suspending or resuming delivery.
+* Other - all the manual commands you can issue to the Pod will have an associated confirmation beep when the message is received by the pod, such as updating the basal rate, requesting Pod status, canceling a bolus, suspending or resuming delivery.
 
 #### Expiration Reminder
 

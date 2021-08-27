@@ -53,7 +53,7 @@ Automatic Bolus (Experimental)
 OrangeLink Support Added:
 
 * RileyLink screen: Connection monitoring, battery level alerting, find device, and light/vibration controls for OrangeLink and OrangeLink Pro
-* Option to disable MySentry use can trade pump battery for longer RileyLink compatible device battery life
+* Option to disable MySentry use can trade Medtronic pump battery for longer RileyLink compatible device battery life
 
 Provisioning Profile Expiration Notifications:
 
@@ -64,7 +64,7 @@ Omnipod Features:
 
 * [Pod Settings](../operation/loop-settings/pump-commands.md#omnipod-commands) layout: improved layout and functionality
 * Fault Codes: PDM style Ref code displayed for pod faults
-* Confirmation beeps: more efficient implementation
+* [Confirmation beeps](../operation/loop-settings/pump-commands.md#enable-confirmation-beeps): improved and more uniform implementation
 * Pod Suspended: pod beeps once every 5 minutes until delivery is resumed or alarm cleared
 
 ### Code Fixes:
