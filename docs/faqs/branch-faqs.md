@@ -46,12 +46,13 @@ Automatic Bolus (Experimental)
 * Default Dosing Strategy continues to be Temp Basal Only
 * Users may now select the Automatic Bolus Dosing Strategy
 * Automatic Bolus is marked experimental
+    * If you used Loop v2.2.4 automatic-bolus branch, this release will behave the same
+    * If you used Loop v2.2.4 master branch, approach this feature with caution; it may require changes to settings
     * Tracking automatic vs manual boluses is not yet implemented in the code and databases
-    * Users should approach this feature with caution, and may require changes to their settings
 
 OrangeLink Support Added:
 
-* RileyLink menu displays: Connection monitoring, battery level alerting, find device, and light/vibration controls for OrangeLink and OrangeLink Pro
+* RileyLink screen: Connection monitoring, battery level alerting, find device, and light/vibration controls for OrangeLink and OrangeLink Pro
 * Option to disable MySentry use can trade pump battery for longer RileyLink compatible device battery life
 
 Provisioning Profile Expiration Notifications:
@@ -61,15 +62,16 @@ Provisioning Profile Expiration Notifications:
 
 Omnipod Features:
 
+* [Pod Settings](../operation/loop-settings/pump-commands.md#omnipod-commands) layout: improved layout and functionality
 * Fault Codes: PDM style Ref code displayed for pod faults
-* Confirmation beeps: when enabled, all manual pod operations beep
-* Pod Suspended: pod beeps once every 5 minutes until delivery is resumed
+* Confirmation beeps: more efficient implementation
+* Pod Suspended: pod beeps once every 5 minutes until delivery is resumed or alarm cleared
 
 ### Code Fixes:
 
 Omnipod Code Fixes:
 
-* Make insertion more robust  (LoopKit issue #1369)
+* Make insertion more robust (LoopKit issue #1369)
 * Fix “Pod already primed” errors when priming cancelled (rileylink_ios issue #661)
 * Prevent 049 pod faults during setup (rileylink_ios issue #627)
 * See [RileyLink Pull Request 676](https://github.com/ps2/rileylink_ios/pull/676) for additional details.
