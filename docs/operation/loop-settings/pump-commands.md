@@ -1,10 +1,10 @@
 # Pump Commands
 
-Initially, Loop was written to interact with Medtronic pumps. Then as Omnipod was added to Loop, the underlying code structure was reorganized to have "pump modules" and "CGM modules". This will make it easier, in future, to drop in new "modules" to Loop. This history is provided as a partial explanation as to why the [Medtronic Pump Command](pump-commands.md#medtronic-commands) commands are embedded in the RileyLink screen, whereas the Omnipod pump commands are in the [Pod Settings](pump-commands.md#omnipod-commands) display.
+With Loop v2.2.5, the pump commands are found only in the associated Pump / Pod Settings screen documented here.  The [RileyLink screen](riley.md) is the same regardless of which pump you use.
 
 ## Change Time Zone
 
-For both Medtronic and Omnipod, use the Loop `Change Time Zone` command to update time.
+For both Medtronic and Omnipod, use the Loop `Change Time Zone` command to update time. The basal rates stay at the pump time even if the user and their phone change time zones or when daylight savings time occurs.  To bring the pump into the same time zone as the phone, use this command with Loop. (Medtronic users - do NOT adjust your pump.)
 
 * **Medtronics**: Tap on the reservoir icon in the Heads Up Display or the image of the pump in the Loop settings screen
 * **Omnipod**: Tap on the Pod Age icon in the Heads Up Display or the image of the Omnipod in the Loop settings screen
@@ -13,10 +13,10 @@ For both Medtronic and Omnipod, use the Loop `Change Time Zone` command to updat
 
     ![Command line to modify the time zone](img/change-time-zone.svg){width="250"}
 
-Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour configuration pattern for basal rates, ISF, CR and correction range to the old time zone
+Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour configuration pattern for basal rates, ISF, CR and correction range to the old time zone.
 
 * **Medtronics**: The time is updated on the Medtronic pump, which aligns the scheduled basal rates configured in Loop to the current time zone
-* **Omnipod**: The basal rates as configured in Loop are sent to the Omnipod for the current time zone
+* **Omnipod**: The [basal rates](#change-time-zone_1) as configured in Loop are sent to the Omnipod for the current time zone
 
 
 ## Omnipod Commands
@@ -143,7 +143,7 @@ This command deactivates a Pod prior to replacing it. Once you tap `Replace Pod`
 
 ![Icon to tap to replace Pod](img/pod-settings-replace-pod.png){width="250"}
 
-### Pod Devices
+### Devices
 
 This allows access to the [RileyLink](rileylink.md) screen for each connected RileyLink compatible device.
 
@@ -181,62 +181,44 @@ This section provides some Pod identifying information. The Lot number and TID n
 
 ## Medtronic Commands
 
-The Medtronic commands are inside the RileyLink screen.
+As of Loop v2.2.5, Medtronic commands are only found in the Pump Settings screen shown in the graphic below. The top sections is configured at the time the pump is connected to Loop and can only be modified by deleting the pump and adding a pump. This screen is the same as for earlier versions with the addition of the `Use MySentry` row.
 
-Tap on the reservoir icon on the Heads Up Display or the image of the pump in the Loop settings screen. From that pump screen, scroll down to the section labeled `DEVICES` to view the list of connected RileyLink compatible device(s). Tap on the name of a device with a green slider by it to view the RileyLink Menu for that device.
 
-The figure below shows the `COMMANDS` section of the [RileyLink Menu](rileylink.md)  for  Medtronic pumps.
+![Medtronic Pump Settings screen for v2.2.5](img/mdt-pump-settings-v225.svg){width="250"}
+{align="center"}
 
-![Commands section of the RileyLink Menu for Medtronic Pumps](img/mdt-pump-commands.svg){width="450"}
+### Suspend Delivery
 
-There are several commands that Loop can issue to a Medtronic pump. Most are simply for gathering information from the pump.
+This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery stops indefinitely and the display changes to say `Resume Delivery`.
 
-The frequency used by the device to communicate with the pump is reported along with the time at which it was tuned.  If you tap on that line, Loop will do a manual tune, but this should not be necessary.  If Loop hasn't communicated with the pump in 2 cycles, it will automatically tune the frequency.
+A banner notice will appear on the Loop's main screen when phone is in portrait mode when insulin delivery is suspended.
 
-There is a Change Time button here, but since it is also found in the pump screen, you are more likely to tap it there.  Both buttons do the same thing. See (Change Time]
+You will need to press `Tap to Resume` in the banner or the `Resume Delivery` button in Pump Settings to resume your scheduled basal rate and let Loop get back to action. If a bolus delivery was interrupted by the Suspend Pod command, it will not be resumed.
 
-### Other commands
 
-MySentry Pair, Fetch Recent History, Fetch Enlite Glucose, Get Pump Model, Send Button Press, Read Pump Status, and Read Basal Schedule are all ways of asking the pump for information you might be interested in. They are not part of setting up the Loop and will not affect Loop operations.
+### Change Time Zone
 
-Enable Diagnostic LEDs, Discover Commands, and RileyLink Statistics are commands that are sometimes used by developers to aid in app troubleshooting and debugging. They don't impact Loop operations.
+Use the [`Change Time Zone`](#change-time-zone) command to align your configuration settings with the current time zone.
 
-#### MySentry Pair
 
-MySentry Pair is for x23 and x54 pumps only, and you will have completed this pairing command as part of the original [Add Pump](mdt-pump.md) process. The MySentry pairing process adds a specific ID to your pump in the pump's Connect Devices, Other Devices menu. This pairing allows Loop to get information from x23 and x54 in an efficient manner. If that is not done, Loop will only be green every other loop. If you ever want to re-pair MySentry, you can follow the directions as shown in the RileyLink command screen. You do not have to worry about this command if you are using an x15 or x22 model pump, as they do not have MySentry.
+### Pump Battery Type
 
-#### Fetch Recent History
+The type of battery used in the Medtronic pump affects how Loop interprets the [battery level for the pump](../features/battery.md#pump-battery).
 
-Fetch Recent History polls the pump for recent pump events such as boluses, temp basals, primes, rewinds, etc.  The amount of information transmitted for a Fetch Recent History is usually quite large and, as a result, may be more prone to an early failure before it succeeds. If the first Fetch Recent History fails, sometimes it is helpful to use the Send Button Press command to sort of "wake up" the pump in preparation for communications.
 
-#### Fetch Enlite Glucose
+### Preferred Data Source
 
-Fetch Enlite Glucose is only useful for Medtronic CGM users. The Fetch Enlite Glucose command will pull the recent glucose values saved in the pump history. Dexcom users do not store any glucose data in the pump.
+Leave the Preferred Data Source set to on Event History for proper functioning of Loop.
 
-#### Get Pump Model
+**Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.**  Event History must also be selected in order for prime events to be detected and NOT contribute to IOB during site changes. Please just leave the Preferred Data Source on Event History.
 
-Get Pump Model returns the pump's model.
+### Use MySentry
 
-#### Send Button Press
+This is a new option provided with Loop v2.2.5.  Using the MySentry feature on some Medtronic pumps when using an OrangeLink causes the batteries to die quickly.  This option allows you to turn off MySentry within the Loop app.
 
-Send Button Press can be useful to see if the communication between the device and pump is working. If successful, the screen on the pump will light up and Loop will confirm the button press with a `success` message. If pump comms are failing, sending a successful button press can help "wake up" a pump that perhaps has not been communicating well.
+![MySentry selection screen for enabling or disabling the option](img/mdt-my-sentry-v225.png){width="250"}
+{align="center"}
 
-#### Read Pump Status
+### Devices
 
-Read Pump Status is also nice quick pump read for reservoir volume, pump battery voltage, and pump status (bolusing or suspending). For x23 and x54 pump users, this command will provide the exact pump battery voltage instead of the 25/50/75/100% levels that are reported otherwise.
-
-#### Read Basal Schedule
-
-Read Basal Schedule will pull the active basal pattern from the pump so you can review what the current settings are without using pump menu.
-
-#### Enable Diagnostic LEDs
-
-Enable Diagnostic LEDs will turn on more LED flashes on the RileyLink while it is operating. You will see more blue flashing lights as the RileyLink communicates with the pump. If you tried turning on this feature and decide later that you just don't want to see so many flashing lights, simply reboot the RileyLink by turning the power switch off/on.  This will reset the LEDs.
-
-#### Discover Commands
-
-Ignore the Discover Commands row.
-
-#### RileyLink Statistics
-
-RileyLink Statistics tracks how long your device has stayed successfully operating and gives the developers some useful information about the stability of the RL operations. It really doesn't provide much to the average Loop user, however.
+This allows access to the [RileyLink](rileylink.md) screen for each connected RileyLink compatible device.
