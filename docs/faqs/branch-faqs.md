@@ -37,18 +37,23 @@ The current released version (August 22, 2021) for Loop master is v2.2.5. The da
 
 ### Loop v2.2.5
 
-This is an interim release as we prepare for the major changes currently in development. If you are running the previous release, v2.2.4 (master or automatic-bolus branch), or an older version of Loop it is recommended that you update. A summary of modifications with respect to Loop v2.2.4 is listed below.
+This is an interim release as we prepare for the major changes currently in development. If you are running an older version of Loop, such as v2.2.4 (master or automatic-bolus branch) or an older version, it is recommended that you update. A summary of modifications with respect to Loop v2.2.4 is listed below.
 
 ### New Features:
 
-Automatic Bolus (Experimental)
+Automatic Bolus (Experimental) Dosing Strategy
 
+* Users may select Dosing Strategy
 * Default Dosing Strategy continues to be Temp Basal Only
-* Users may now select the Automatic Bolus Dosing Strategy
-* Automatic Bolus is marked experimental
+* Automatic Bolus Dosing Strategy is marked experimental
     * If you used Loop v2.2.4 automatic-bolus branch, this release will behave the same
     * If you used Loop v2.2.4 master branch, approach this feature with caution; it may require changes to settings
     * Tracking automatic vs manual boluses is not yet implemented in the code and databases
+
+RileyLink and Pump Displays:
+
+* The [RileyLink compatible device displays](../operation/loop-settings/rileylink.md) are pump independent
+* [Medtronic pump commands](../operation/loop-settings/pump-commands.md#medtronic-commands) are found just in the Pump Settings display
 
 OrangeLink Support Added:
 
