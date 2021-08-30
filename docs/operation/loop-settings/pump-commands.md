@@ -1,6 +1,6 @@
 # Pump Commands
 
-With Loop v2.2.5, the pump commands are found only in the associated Pump / Pod Settings screen documented here.  The [RileyLink screen](riley.md) is the same regardless of which pump you use.
+With Loop v2.2.5, the pump commands are found only in the associated Pump / Pod Settings screen documented here.  The [RileyLink screen](rileylink.md) is the same regardless of which pump you use.
 
 ## Change Time Zone
 
@@ -23,17 +23,13 @@ Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour c
 
 To bring up the Pod Settings display, tap on the Pod Age icon on the Heads Up Display or the image of the Omnipod in the Loop settings display to reach the Pod Settings display.
 
-This screen provides important information about your Pod and allows you to issue some commands to the Pod through Loop. There were some modifications made to the layout and underlying information for some of the rows with Loop v2.2.5.  Both Loop v2.2.4 and Loop v2.2.5 versions are shown in the graphic below.
+This screen provides important information about your Pod and allows you to issue some commands to the Pod through Loop. There were some modifications made to the layout and underlying information for some of the rows with Loop v2.2.5.
 
-Other than re-ordering, what is different under the hood with v2.2.5?
-
-* Pod Active Clock: reports the pod time in a different format (always hr and min)
-
-* Enable/Disable Confirmation Beeps: moved to the Configuration section; beeps for all manual pod operations; uses a more efficient implementation
+* Enable/Disable Confirmation Beeps: moved up to the Configuration section; beeps for all manual pod operations; uses a more efficient implementation
 
 * Suspend/Resume: Pod will beep every 5 minutes when suspended; the beeps can be silenced by tapping on the Alarms line
 
-![Pod Settings Display with v2.2.4 on left, v2.2.5 on right](img/pod-settings-cmp-v224-v225.svg){width="500"}
+![Pod Settings Display for v2.2.5](img/pod-settings-v225.svg){width="250"}
 {align="center"}
 
 ### Pod Information
@@ -136,11 +132,6 @@ Use the `Change Time Zone` command to align your configuration settings with the
 
 This command deactivates a Pod prior to replacing it. Once you tap `Replace Pod`, another screen appears for you to confirm that you mean it.
 
-!!! info ""
-    With Loop v2.2.5, you no longer need to first tap `Suspend Delivery` and then `Replace Pod`.
-
-    In earlier versions of Loop, the scheduled basal rate was assumed after Pod was removed. By first tapping `Suspend Delivery` and then tapping `Replace Pod` the Loop and Apple Health record for basal delivery is more accurate. This is especially important if a longer delay is planned prior to placing a new Pod on your body.
-
 ![Icon to tap to replace Pod](img/pod-settings-replace-pod.png){width="250"}
 
 ### Devices
@@ -155,12 +146,12 @@ This section is labeled Diagnostics, but many Pod users make use of this section
 
 This command requests the status of the Pod and reports some of the returned information.
 
-* The line labeled `Pulses` reports the total number of pulses of insulin delivered by that Pod, converted to units (each pulse is 0.05&nbsp;U of insulin). If you compare this report (for your Pod) to the `Insulin Delivered` line in Pod settings, for your Pod at the same time, the difference is the insulin used to prime the Pod and fill the cannula at insertion.
+* The line labeled `Pulses` reports the total number of pulses of insulin delivered by that Pod since activation (adding insulin to the reservoir). To convert this to units of insulin, multiply by 0.05 units/pulse. If you compare this report (for your Pod) to the `Insulin Delivered` line in Pod settings, for your Pod at the same time, the difference is the insulin used to prime the Pod and fill the cannula at insertion.
 
-* The line label `RSSI` reports the Received Signal Strength Indicator (RSSI) between the RileyLink compatible device and the Pod. The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod. (Older versions of Loop may not report this information on this screen.)
+* The line label `RSSI` reports the Received Signal Strength Indicator (RSSI) between the RileyLink compatible device and the Pod. The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod.
 
 
-    ![result of read Pod status](img/read-pod-status.svg){width="250"}
+    ![result of read Pod status](img/pod-read-status-v225.png){width="250"}
 
 #### Play Test Beeps
 
