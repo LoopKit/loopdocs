@@ -1,23 +1,16 @@
-# Pump Commands
+# Pump Settings
 
-With Loop v2.2.5, the pump commands are found only in the associated Pump / Pod Settings screen documented here.  The [RileyLink screen](rileylink.md) is the same regardless of which pump you use.
+To bring up the Pod/Pump Settings display, tap on the reservoir icon in the Heads Up Display or the image of the pump in the Loop settings screen.
 
 ## Change Time Zone
 
-For both Medtronic and Omnipod, use the Loop `Change Time Zone` command to update time. The basal rates stay at the pump time even if the user and their phone change time zones or when daylight savings time occurs.  To bring the pump into the same time zone as the phone, use this command with Loop. (Medtronic users - do NOT adjust your pump.)
+The basal rates stay at the pump time even if the user and their phone change time zones or when daylight savings time occurs.  To bring the pump into the same time zone as the phone, use this command in Loop. (Medtronic users - do NOT adjust time on your pump - always go through Loop.)
 
-* **Medtronics**: Tap on the reservoir icon in the Heads Up Display or the image of the pump in the Loop settings screen
-* **Omnipod**: Tap on the Pod Age icon in the Heads Up Display or the image of the Omnipod in the Loop settings screen
+Select the Pod/Pump Settings display, scroll down to the Change Time Zone line, example shown in the graphic below.  You can leave the time zone offset unchanged or touch it to change to the current time zone.  Note that the 24 hour configuration pattern for basal rates, insulin sensitivity factor, carb ratio and correction range are aligned with the time zone shown on this line.
 
-    Scroll down to the Change Time Zone line, example shown in the figure below.  You can leave the time zone offset unchanged or touch it to change to the current time zone.  Note that the 24 hour configuration pattern for basal rates, ISF, CR and correction range are aligned with the time zone shown on this line.
+![Command line to modify the time zone](img/change-time-zone.svg){width="250"}
 
-    ![Command line to modify the time zone](img/change-time-zone.svg){width="250"}
-
-Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour configuration pattern for basal rates, ISF, CR and correction range to the old time zone.
-
-* **Medtronics**: The time is updated on the Medtronic pump, which aligns the scheduled basal rates configured in Loop to the current time zone
-* **Omnipod**: The [basal rates](#change-time-zone_1) as configured in Loop are sent to the Omnipod for the current time zone
-
+Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour configuration pattern to the old time zone. Some behavior depends on whether the pump is an [Omnipod](#change-time-zone_1) or [Medtronic](#change-time-zone_2).
 
 ## Omnipod Commands
 
@@ -121,7 +114,7 @@ As with the PDM, Loop allows the Pod to continue operating after expiration unti
 
 #### Change Time Zone
 
-Use the `Change Time Zone` command to align your configuration settings with the current time zone. Note that this updates your basal schedule on your Pod. If you start a new Pod session without modifying the time zone here, the original time zone will be used for the new Pod. Please wait until you see `Succeeded` appear on the page to ensure the command has successfully been received by the Pod.
+Use the [`Change Time Zone`](#change-time-zone) command to align your configuration settings with the current time zone. Note that this updates your basal schedule on your Pod. If you start a new Pod session without modifying the time zone here, the original time zone will be used for the new Pod. Please wait until you see `Succeeded` appear on the page to ensure the command has successfully been received by the Pod.
 
 !!! info ""
     Make sure the phone, RileyLink compatible device and Pod are kept in close proximity until this command has completed. The time zone is updated by Loop issuing the 24-hour basal rate schedule to the Pod based on the current time.
@@ -189,7 +182,9 @@ You will need to press `Tap to Resume` in the banner or the `Resume Delivery` bu
 
 ### Change Time Zone
 
-Use the [`Change Time Zone`](#change-time-zone) command to align your configuration settings with the current time zone.
+Use the [`Change Time Zone`](#change-time-zone) command to align your configuration settings with the current time zone and time of day.
+
+You may need to do this if the time on the pump has drifted with respect to the time on your phone.  A significant discrepancy in time between the Loop phone and the Medtronic pump can cause issues with insulin delivery accounting.
 
 
 ### Pump Battery Type
