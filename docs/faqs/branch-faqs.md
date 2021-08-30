@@ -53,7 +53,7 @@ Automatic Bolus (Experimental) Dosing Strategy
 Provisioning Profile Expiration Notifications:
 
 * User gets [notified](../operation/features/notifications.md#loop-app-expiration-notification) when Loop app expiration date nears
-* Expiration date is [included](../operation/features/notifications.md#loop-app-expiration-notification) in the issue report
+* Expiration date is [included](../operation/features/notifications.md#loop-app-expiration-date) in the issue report
 
 RileyLink Compatible Devices:
 
