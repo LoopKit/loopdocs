@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>RileyLink Menu - LoopDocs</title>
+        <title>RileyLink Display - LoopDocs</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -162,7 +162,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">RileyLink Menu</a>
+    <a href="./" class="dropdown-item active">RileyLink Display</a>
 </li>
                                 </ul>
                             </li>
@@ -183,7 +183,7 @@
 </li>
                                     
 <li>
-    <a href="../pump-commands/" class="dropdown-item">Pump Commands</a>
+    <a href="../pump-commands/" class="dropdown-item">Pump Settings</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -421,13 +421,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#rileylink-menu" class="nav-link">RileyLink Menu</a>
+            <li class="nav-item" data-level="1"><a href="#rileylink" class="nav-link">RileyLink</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#device" class="nav-link">Device</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#medtronic-pump-information" class="nav-link">Medtronic Pump Information</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -438,14 +434,14 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="rileylink-menu">RileyLink Menu<a class="headerlink" href="#rileylink-menu" title="Permanent link">⌁</a></h1>
-<p>The RileyLink menu is accessed by clicking on the image of your connected pump in Loop settings or the Reservoir (Medtronic) or Pod Age (Omnipod) in the Heads Up Display to bring up the associated pump screen. From that screen, scroll down to the section labeled <code>DEVICES</code> to view the list of connected RileyLink compatible device(s). Tapping on a name with a green slider by it takes you to the RileyLink Menu for that device.</p>
+<h1 id="rileylink">RileyLink<a class="headerlink" href="#rileylink" title="Permanent link">⌁</a></h1>
+<p>The RileyLink (or compatible device) screen is accessed by clicking on the image of your connected pump in Loop settings or the Reservoir (Medtronic) or Pod Age (Omnipod) in the Heads Up Display to bring up the associated pump screen. From that screen, scroll down to the section labeled <code>DEVICES</code> to view the list of connected RileyLink compatible device(s). Tapping on a name with a green slider by it takes you to the RileyLink screen for that device.</p>
 <div class="admonition danger">
 <p class="admonition-title">Helpful Tip - Personalize Your Device</p>
 <p>As soon as you connect the device initially - it is strongly encouraged that you rename it from the default name for that device, e.g., RileyLink or OrangeLink or EmaLink. Tap on the device as directed above, then tap on the Name line and enter your desired name. The new name may need to sit for a few seconds before exiting back out of the naming screen for it to be transferred and saved in the device. The device must be connected and on to change its name.</p>
 </div>
-<p>The name at the top center is whatever you named your RileyLink compatible device. Depending on which pump you have connected to your Loop app, your screen will look different. On the left below is the typical screen when using a Medtronic pump, and on the right is with an Omnipod. As you can see, both have in common a section called <code>DEVICE</code>, but after that only the Medtronic pumps will have a <code>PUMP</code> and <code>COMMANDS</code> section. The corresponding section for Omnipod are in the <a href="../pump-commands/#omnipod-commands">Pod Settings</a> menu.</p>
-<p align="center"><img alt="img/rl-comp.png" src="../img/rl-comp.png" width="450" /></p>
+<p>The name at the top center is whatever you named your RileyLink compatible device. With Loop v2.2.5, the RileyLink screen is the same regardless of the pump you are using. Some features available with OrangeLink were added to Loop v2.2.5. For now, the EmaLink battery stats are not displayed so the screen is the same as the RileyLink. The <a href="../../../faqs/rileylink-faqs/#firmware-version">firmware</a> displayed is specific to each device. The left two graphics were taken from Loop v2.2.5 using an original RileyLink and an OrangeLink (not Pro).  The graphic on the right is from the <a href="https://getrileylink.org/product/orangelink#patch">getRileyLink.org</a> page and shows extra rows that will display with Loop if you have the Pro version of the hardware.</p>
+<p align="center"><img alt="example rileylink screens for RileyLink and OrangeList" src="../img/rl-comp-v225.svg" width="600" /></p>
 <h2 id="device">Device<a class="headerlink" href="#device" title="Permanent link">⌁</a></h2>
 <p>The lines under the Device section provide information on the device. The two most important lines are the Connection Status and Signal Strength.</p>
 <ul>
@@ -456,11 +452,7 @@
 <p>The Signal Strength is the strength of the Bluetooth signal between the iPhone and the device.  It is <strong>not</strong> the signal strength of the radio communications with the pump/pod.  This is reported as a negative number so a -50&nbsp;dB signal is stronger than -80&nbsp;dB. As you move the device and iPhone closer/farther apart, you will be able to see the signal strength change. In a pinch, this can be used to help locate a lost device in the house or at the park after dark.</p>
 </li>
 </ul>
-<p align="center"><img alt="img/RL_bt.jpg" src="../img/RL_bt.jpg" width="350" /></p>
-<h2 id="medtronic-pump-information">Medtronic Pump Information<a class="headerlink" href="#medtronic-pump-information" title="Permanent link">⌁</a></h2>
-<p>The Pump ID and Pump Model will be automatically filled in from your pump.</p>
-<h3 id="medtronic-pump-commands">Medtronic Pump Commands<a class="headerlink" href="#medtronic-pump-commands" title="Permanent link">⌁</a></h3>
-<p>Click on the link for the description of the <a href="../pump-commands/#medtronic-commands">Medtronic Pump Commands</a>.</p></div>
+<p align="center"><img alt="img/RL_bt.jpg" src="../img/RL_bt.jpg" width="350" /></p></div>
             </div>
         </div>
 

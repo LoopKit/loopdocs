@@ -162,7 +162,7 @@
 </li>
                                     
 <li>
-    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink Menu</a>
+    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink Display</a>
 </li>
                                 </ul>
                             </li>
@@ -183,7 +183,7 @@
 </li>
                                     
 <li>
-    <a href="../../operation/loop-settings/pump-commands/" class="dropdown-item">Pump Commands</a>
+    <a href="../../operation/loop-settings/pump-commands/" class="dropdown-item">Pump Settings</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -479,13 +479,54 @@
 <p>Release information is always found on the <a href="https://github.com/LoopKit/Loop/releases">GitHub LoopKit/Loop release page</a>. The information on this LoopDocs page is a summary of that information with a little extra explanation. Be aware that updates to LoopDocs may take some time after a new release comes out.</p>
 </div>
 <h3 id="loop-v225">Loop v2.2.5<a class="headerlink" href="#loop-v225" title="Permanent link">⌁</a></h3>
-<p>This is an interim release as we prepare for the major changes currently in development. If you are running the previous release, 2.2.4 (master or the automatic bolus branch), or an older version of Loop it is recommended that you update.</p>
-<p>Automatic Bolus (Experimental) - Support for the Automatic Bolus dosing strategy has been included in this release as an option. The default will continue to be the standard Temp Basal strategy. It is marked experimental, as support for tracking automatic vs manual boluses is not yet implemented in the code and databases, and users must approach this feature with caution, as their settings may require changes to work well.</p>
-<p>This version includes a fix to reduce occurrences of overlaps in accounting for insulin via reservoir and dose history, which causes temporary overestimation of IOB. See <a href="https://github.com/LoopKit/LoopKit/pull/344">Loop Pull Request 344</a> for details.</p>
-<p>OrangeLink Support - Connection monitoring, battery level alerting, find device, and light/vibration controls for OrangeLink and OrangeLink Pro. A new option to disable MySentry use can trade pump battery for longer RL battery.</p>
-<p>Miscellaneous Omnipod fixes and improvements: See <a href="https://github.com/ps2/rileylink_ios/pull/676">RileyLink Pull Request 676</a> for details.</p>
-<p>Provisioning Profile Expiration Alerting - When fewer than 20 days remain until profile expiration, you'll get an alert when you open the app, once every 2 days at most. When fewer than 24 hours remain, you'll get an alert when you open the app, once every hour at most. There is an option to navigate to the updating section of LoopDocs in the alert. Expiration date is also included in the issue report for reference.</p>
-<p>Dexcom Share URL for non-US users has been fixed.</p>
+<p>This is an interim release as we prepare for the major changes currently in development. If you are running an older version of Loop, such as v2.2.4 (master or automatic-bolus branch) or an older version, it is recommended that you update. A summary of modifications with respect to Loop v2.2.4 is listed below.</p>
+<h3 id="new-features">New Features:<a class="headerlink" href="#new-features" title="Permanent link">⌁</a></h3>
+<p>Automatic Bolus (Experimental) Dosing Strategy</p>
+<ul>
+<li>Users may select Dosing Strategy</li>
+<li>Default Dosing Strategy continues to be Temp Basal Only</li>
+<li>Automatic Bolus Dosing Strategy is marked experimental<ul>
+<li>If you used Loop v2.2.4 automatic-bolus branch, this release will behave the same</li>
+<li>If you used Loop v2.2.4 master branch, approach this feature with caution; it may require changes to settings</li>
+<li>Tracking automatic vs manual boluses is not yet implemented in the code and databases</li>
+</ul>
+</li>
+</ul>
+<p>Provisioning Profile Expiration Notifications:</p>
+<ul>
+<li>User gets <a href="../../operation/features/notifications/#loop-app-expiration-notification">notified</a> when Loop app expiration date nears</li>
+<li>Expiration date is <a href="../../operation/features/notifications/#loop-app-expiration-date">included</a> in the issue report</li>
+</ul>
+<p>RileyLink Compatible Devices:</p>
+<ul>
+<li>The <a href="../../operation/loop-settings/rileylink/">RileyLink compatible device displays</a> are pump independent</li>
+<li>OrangeLink Support added for connection monitoring, battery level alerting, find device, and light/vibration controls</li>
+<li><a href="../../operation/loop-settings/pump-commands/#medtronic-commands">Medtronic Pump Settings</a> screen updated with option to disable MySentry use; user can trade Medtronic pump battery for longer RileyLink compatible device battery life</li>
+</ul>
+<p>Omnipod Features:</p>
+<ul>
+<li><a href="../../operation/loop-settings/pump-commands/#omnipod-commands">Pod Settings</a> layout: improved layout and functionality</li>
+<li>Fault Codes: PDM style Ref code displayed for pod faults</li>
+<li><a href="../../operation/loop-settings/pump-commands/#enable-confirmation-beeps">Confirmation beeps</a>: improved and more uniform implementation</li>
+<li>Pod Suspended: pod beeps once every 5 minutes until delivery is resumed or alarm cleared</li>
+</ul>
+<h3 id="code-fixes">Code Fixes:<a class="headerlink" href="#code-fixes" title="Permanent link">⌁</a></h3>
+<p>Omnipod Code Fixes:</p>
+<ul>
+<li>Make insertion more robust (LoopKit issue #1369)</li>
+<li>Fix “Pod already primed” errors when priming cancelled (rileylink_ios issue #661)</li>
+<li>Prevent 049 pod faults during setup (rileylink_ios issue #627)</li>
+<li>See <a href="https://github.com/ps2/rileylink_ios/pull/676">RileyLink Pull Request 676</a> for additional details.</li>
+</ul>
+<p>Insulin Accounting:</p>
+<ul>
+<li>Reduced occurrences of overlaps in accounting for insulin via reservoir and dose history, which causes temporary overestimation of IOB</li>
+<li>See <a href="https://github.com/LoopKit/LoopKit/pull/344">Loop Pull Request 344</a> for details</li>
+</ul>
+<p>Dexcom Non-US Share:</p>
+<ul>
+<li>Dexcom Share URL for non-US users has been fixed.</li>
+</ul>
 <p>For community support, please use one of the <a href="../..#stay-in-the-loop">Loop Social Media</a> help sites.</p>
 <h3 id="loop-v224">Loop v2.2.4<a class="headerlink" href="#loop-v224" title="Permanent link">⌁</a></h3>
 <p>Released October 3, 2020 with "fixes" introduced without renumbering the version number. Last change was on January 19, 2021.</p>

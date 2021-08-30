@@ -162,7 +162,7 @@
 </li>
                                     
 <li>
-    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink Menu</a>
+    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink Display</a>
 </li>
                                 </ul>
                             </li>
@@ -183,7 +183,7 @@
 </li>
                                     
 <li>
-    <a href="../../operation/loop-settings/pump-commands/" class="dropdown-item">Pump Commands</a>
+    <a href="../../operation/loop-settings/pump-commands/" class="dropdown-item">Pump Settings</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -467,7 +467,15 @@
 <p>For new builders, you might want to first build the code and familiarize yourself with the interface.  Later, you can make the customization(s) you desire on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  The downloaded code should be fairly recent - don't try to use code you downloaded a year ago - in that case, get a fresh download.  And be sure to read the <a href="./#instructions-for-finding-the-lines">Instructions for Finding the Lines</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Line numbers may change</p>
-<p>Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code. These instructions are unchanged for Loop v2.2.5 master branch. If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help.</p>
+<p>Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code.</p>
+<ul>
+<li>
+<p>You may notice some customizations list line numbers for different branches</p>
+</li>
+<li>
+<p>If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help</p>
+</li>
+</ul>
 </div>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Permanent link">⌁</a></h2>
 <p>For each customization, you will see the following 4 items.</p>
@@ -477,7 +485,23 @@
 <li>File: filename.swift</li>
 <li>Line: line number(s)</li>
 </ul>
-<p>The fastest way to find the relevant line(s) is: in Xcode, tap the Find menu item and select Find in Project (or Workspace).  Copy the word or phrase next to Keyword and paste that into the find search-box that opens on upper left of Xcode screen and hit enter.  A series of options show up underneath the find search-box. The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed.  You can click on the one you think is correct and it will display in the main middle window of Xcode with the Keyword highlighted on the line you selected. An attempt is made to have a long enough phrase that only the relevant line is offered. Be sure to highlight everything from the first word after "Keyword: " until the end of the line when filling in the find search-box.</p>
+<p>If the line numbers are unchanged from the documentation:</p>
+<ul>
+<li>In Xcode, hold down the command key and hit L then type in the line number</li>
+<li>If the code doesn't match what you expect, use the search option described below</li>
+</ul>
+<p>If the line numbers don't match the documentation, search for the phrase that follows <code>Keyword:</code></p>
+<ul>
+<li>In Xcode, tap the Find menu item and select Find in Project (or Workspace)</li>
+<li>Copy the word or phrase next to Keyword and paste that into the find search-box that opens on upper left of Xcode screen and hit enter</li>
+<li>A series of options show up underneath the find search-box</li>
+<li>The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed</li>
+<li>Click on the one you think is correct and it will display in the main middle window of Xcode with the Keyword highlighted on the line you selected<ul>
+<li>The phrase by <code>Keyword:</code> should be limit the search so that only the relevant line is offered</li>
+<li>Highlight everything from the first word after "Keyword: " until the end of the line when filling in the find search-box</li>
+</ul>
+</li>
+</ul>
 <p>There may be a figure illustrating the change.</p>
 <p>Below the figure, the original, and in some cases, the modified code will be displayed.</p>
 <h2 id="disable-authentication-for-bolusing">Disable Authentication for Bolusing<a class="headerlink" href="#disable-authentication-for-bolusing" title="Permanent link">⌁</a></h2>
@@ -503,7 +527,8 @@
 <li>Keyword: defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes</li>
 <li>Folder: Loop/LoopCore</li>
 <li>File: LoopSettings.swift</li>
-<li>Line: 16</li>
+<li>Line: 16 (v2.2.4 master), 41 (v2.2.4 AB)</li>
+<li>Line: 50 (v2.2.5)</li>
 </ul>
 <p align="center"><img alt="img/carb_times.png" src="../img/carb_times.png" width="750" /></p>
 <p>For example, if you wanted to make lollipop a 30 minute absorption and pizza a 5 hour absorption, the edit would look like below:</p>
