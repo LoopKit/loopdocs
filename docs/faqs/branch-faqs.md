@@ -50,20 +50,16 @@ Automatic Bolus (Experimental) Dosing Strategy
     * If you used Loop v2.2.4 master branch, approach this feature with caution; it may require changes to settings
     * Tracking automatic vs manual boluses is not yet implemented in the code and databases
 
-RileyLink and Pump Displays:
-
-* The [RileyLink compatible device displays](../operation/loop-settings/rileylink.md) are pump independent
-* [Medtronic pump commands](../operation/loop-settings/pump-commands.md#medtronic-commands) are found just in the Pump Settings display
-
-OrangeLink Support Added:
-
-* RileyLink screen: Connection monitoring, battery level alerting, find device, and light/vibration controls for OrangeLink and OrangeLink Pro
-* Option to disable MySentry use can trade Medtronic pump battery for longer RileyLink compatible device battery life
-
 Provisioning Profile Expiration Notifications:
 
 * User gets [notified](../operation/features/notifications.md#loop-app-expiration-notification) when Loop app expiration date nears
 * Expiration date is [included](../operation/features/notifications.md#loop-app-expiration-notification) in the issue report
+
+RileyLink Compatible Devices:
+
+* The [RileyLink compatible device displays](../operation/loop-settings/rileylink.md) are pump independent
+* OrangeLink Support added for connection monitoring, battery level alerting, find device, and light/vibration controls
+* [Medtronic Pump Settings](../operation/loop-settings/pump-commands.md#medtronic-commands) screen updated with option to disable MySentry use; user can trade Medtronic pump battery for longer RileyLink compatible device battery life
 
 Omnipod Features:
 
