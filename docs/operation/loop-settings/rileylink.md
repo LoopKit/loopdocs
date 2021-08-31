@@ -1,13 +1,14 @@
-# RileyLink Menu
+# RileyLink
 
-The RileyLink menu is accessed by clicking on the image of your connected pump in Loop settings or the Reservoir (Medtronic) or Pod Age (Omnipod) in the Heads Up Display to bring up the associated pump screen. From that screen, scroll down to the section labeled `DEVICES` to view the list of connected RileyLink compatible device(s). Tapping on a name with a green slider by it takes you to the RileyLink Menu for that device.
+The RileyLink (or compatible device) screen is accessed by clicking on the image of your connected pump in Loop settings or the Reservoir (Medtronic) or Pod Age (Omnipod) in the Heads Up Display to bring up the associated pump screen. From that screen, scroll down to the section labeled `DEVICES` to view the list of connected RileyLink compatible device(s). Tapping on a name with a green slider by it takes you to the RileyLink screen for that device.
 
 !!! danger "Helpful Tip - Personalize Your Device"
     As soon as you connect the device initially - it is strongly encouraged that you rename it from the default name for that device, e.g., RileyLink or OrangeLink or EmaLink. Tap on the device as directed above, then tap on the Name line and enter your desired name. The new name may need to sit for a few seconds before exiting back out of the naming screen for it to be transferred and saved in the device. The device must be connected and on to change its name.
 
-The name at the top center is whatever you named your RileyLink compatible device. Depending on which pump you have connected to your Loop app, your screen will look different. On the left below is the typical screen when using a Medtronic pump, and on the right is with an Omnipod. As you can see, both have in common a section called `DEVICE`, but after that only the Medtronic pumps will have a `PUMP` and `COMMANDS` section. The corresponding section for Omnipod are in the [Pod Settings](pump-commands.md#omnipod-commands) menu.
+The name at the top center is whatever you named your RileyLink compatible device. With Loop v2.2.5, the RileyLink screen is the same regardless of the pump you are using. Some features available with OrangeLink were added to Loop v2.2.5. For now, the EmaLink battery stats are not displayed so the screen is the same as the RileyLink. The [firmware](../../faqs/rileylink-faqs.md#firmware-version) displayed is specific to each device. The left two graphics were taken from Loop v2.2.5 using an original RileyLink and an OrangeLink (not Pro).  The graphic on the right is from the [getRileyLink.org](https://getrileylink.org/product/orangelink#patch) page and shows extra rows that will display with Loop if you have the Pro version of the hardware.
 
-![img/rl-comp.png](img/rl-comp.png){width="450"}
+
+![example rileylink screens for RileyLink and OrangeList](img/rl-comp-v225.svg){width="600"}
 {align="center"}
 
 ## Device
@@ -20,12 +21,3 @@ The lines under the Device section provide information on the device. The two mo
 
 ![img/RL_bt.jpg](img/RL_bt.jpg){width="350"}
 {align="center"}
-
-
-## Medtronic Pump Information
-
-The Pump ID and Pump Model will be automatically filled in from your pump.
-
-### Medtronic Pump Commands
-
-Click on the link for the description of the [Medtronic Pump Commands](pump-commands.md#medtronic-commands).

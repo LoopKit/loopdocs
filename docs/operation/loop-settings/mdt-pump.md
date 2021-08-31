@@ -54,7 +54,7 @@ Now that your pump is paired with Loop, you will be finishing these steps:
 1. Change your pump time using the Loop app (and read all the info on that screen)
 2. Import your pump's basal rate schedule, maximum basal rate, and maximum bolus (maximums are collectively called "delivery limits" in Loop)
 3. Select your pump's battery type (lithium or alakine)
-4. Leave the Preferred Data Souce on Event History
+4. Leave the Preferred Data Source on Event History
 
 **Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.**  Event History must also be selected in order for prime events to be detected and NOT contribute to IOB during site changes. Please just leave the Preferred Data Source on Event History.
 
