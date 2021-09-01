@@ -42,7 +42,7 @@ These devices are compatible with iOS 14, which is expected to be the minimum iO
 - iPhone 5s, 6, 6+
 - iPod Touch, 6th generation
 
-Apple stopped providing iOS updates for these devices at iOS 12.x. These older devices cannot be updated to use these newer iOS versions, e.g., iOS 13, 14 or above. You can still build Loop master and automatic-bolus branch with these older devices so long as your device has iOS 12.4 at a minimum. HOWEVER, there are upcoming Loop changes that will require users to have iOS 14 on their devices to build Loop. There is no set timeframe for when that minimum requirement will change.  When that happens, the docs will be updated and an announcement made in all the [Loop Social Media](../index.md#stay-in-the-loop) sites.
+Apple stopped providing iOS updates for these devices at iOS 12.x. These older devices cannot be updated to use these newer iOS versions, e.g., iOS 13, 14 or above. You can still build Loop with these older devices so long as your device has iOS 12.4 at a minimum. HOWEVER, there are upcoming Loop changes that will require users to have iOS 14 on their devices to build Loop. There is no set timeframe for when that minimum requirement will change.  When that happens, the docs will be updated and an announcement made in all the [Loop Social Media](../index.md#stay-in-the-loop) sites.
 
 Side note for people who are seasoned Loop users and know about branches and such: Currently (July 2021), several popular Loop forks require devices to have iOS 13 or newer, and Loop dev requires iOS 14 as a minimum. There's no set timeframe for when dev will next be merged into master.
 
@@ -67,6 +67,7 @@ For new people - you may be wondering why you care?
 
   * Loop must be rebuilt at least once a year (the app expires)
   * When the Loop app expires, you get a Loop not available message and must rebuild
+  * With the most recent Loop release, v2.2.5, you get automated [notifications](../operation/features/notifications.md#loop-app-expiration-notification) when expiration is approaching
   * Although Loop is fairly stable now; in the past, messages were posted to encourage people to rebuild ASAP because:
       * There were issues found with the code
       * Important new feature were implemented

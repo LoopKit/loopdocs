@@ -48,25 +48,23 @@ Loop users who have been around for several years will remember this bug - fortu
 
 **Awesome:** "My Loop app was working yesterday. Around lunch time, I went into the settings screen and made some adjustments and ever since it just turns white and closes no matter what I try." <---- DEFINITELY getting closer. Now I have a strong suspicion about where the bug is happening and can help with a couple links.
 
-**GOLD MEDAL WORTHY:** "My Loop app was working yesterday. Around lunch time, I went into the settings screen and made some adjustments to correction ranges. Ever since I did that, the app immediately turns white and shuts down. I have tried restarting my phone, but it has not fixed the problem. I tried searching the docs for 'loop closing' but didn't see results that matched my issue." <----- This person is doing an outstanding job of describing the problem. Lots of good details. Has shown initiative to try to use the resources already. Throw in a screenshot, if it was appropriate, and this person will have done an excellent job of helping all of us help him/her.
+**GOLD MEDAL WORTHY:** "My Loop app was working yesterday. Around lunch time, I went into the settings screen and made some adjustments to correction ranges. Ever since I did that, the app immediately turns white and shuts down. I have tried restarting my phone, but it has not fixed the problem. I tried searching the docs for 'loop closing' but didn't see results that matched my issue." <----- This person is doing an outstanding job of describing the problem. Lots of good details. Has shown initiative to try to use the resources already. This person did an excellent job of helping all of us help him/her.
 
 ### Example 2
 
-**Bad:** "My Loop app won't build." <----- What step are you on? What kind of computer are you using? What macOS? What Xcode version? Have you built successfully before or is this new?
+**Bad:** "My Loop app won't build." <----- What step are you on? What is the iOS on your phone? What kind of computer are you using? What macOS? What Xcode version? Have you built successfully before or is this new?
 
-**Ok:** "I'm trying to update my Loop app to the automatic-bolus branch, and am getting a few errors that I don't understand." <----- Wow, sure would be nice to know what those error messages are. Are they red or yellow? A screenshot sure would help here.
+**Ok:** "I'm trying to update my Loop app to v2.2.5 and am getting a few errors that I don't understand." <----- Wow, sure would be nice to know what those error messages are. Are they red or yellow? A screenshot sure would help here.
 
-**Better:** "I have a macOS Big Sur 11.2.3 computer with Xcode 12.3. Downloaded Loop-automatic-bolus branch this morning and I'm getting some red errors about an exit code that I don't understand." <----- Cool, now I don't have to ask if they updated their macOS like the directions say to do, but I don't know the phone iOS, so I can't rule out Xcode being old. Screenshots are needed to see exact error message.
+**Awesome:** "I have a macOS Big Sur 11.5.3 computer with Xcode 12.5.1 and my phone is running iOS 14.7.1. Downloaded Loop-master (v2.2.5) this morning and I'm getting some red errors about an exit code that I don't understand. I've tried everything in the docs and nothing worked." <---- While I'm super happy they "tried everything", I'm no closer to knowing what the exact error message is nor which "stuff" exactly they tried. But all the version numbers are included.
 
-**Awesome:** "I have a macOS Big Sur 11.2.3 computer with Xcode 12.3 and my phone is running iOS 14.4. Downloaded Loop-automatic-bolus branch this morning and I'm getting some red errors about an exit code that I don't understand. I've tried everything in the docs and nothing worked." <---- While I'm super happy they "tried everything", I'm no closer to knowing what the exact error message is nor which "stuff" exactly they tried. But this time the iOS is included, and iOS 12.4 requires Xcode 12.4.
-
-**GOLD MEDAL WORTHY:** "I have a macOS Big Sur 11.2.3 computer with Xcode 12.3 and my phone is running iOS 14.4. Downloaded Loop-automatic-bolus branch this morning and I'm getting some red errors about an exit code 645 that I don't understand. Here's the screenshot of the error message. I tried searching the docs for "exit code 645" and didn't see any responses that helped. " <---- This is the kind of detail that will get you to an answer very fast.
+**GOLD MEDAL WORTHY:** "I have a macOS Big Sur 11.5.3 computer with Xcode 12.5.1 and my phone is running iOS 14.7.1. Downloaded Loop-master (v2.2.5) this morning and I'm getting some red errors about an exit code 645 that I don't understand. Here's the screenshot of the error message. I tried searching the docs for "exit code 645" and didn't see any responses that helped. " <---- This is the kind of detail that will get you to an answer very fast.
 
 ## Be ok with links
 
 Often, the best answer to your question for help will be answered with a link. Please don't take offense to getting a quick link back to LoopDocs or LoopTips. This is most often because the question is already answered there and the person is simply saving time by not typing out what already exists elsewhere.  There's a ton of information between these two sites, so it can be easy to overlook something if you're not sure what to search for. The mentors know if something is in the docs and they are experts at using the search tool to find the answer and drop the link as a quick response.
 
-If you've searched the docs and read the info already, then please include that in your post. That way you don't get linked back to the same part you're already confused about. Plus, letting us know when these docs can be improved is very useful.
+If you've searched the docs and read the info already, then please include that in your post or your reply. That way you don't get linked back to the same part you're already confused about. And if you have already read the specific section the mentor just linked, be specific about why your problem is not addressed by that link.  Or just say "I'm confused when the doc says this". Letting us know when these docs can be improved is very useful.
 
 ## Next Step: Download Loop Code
 
