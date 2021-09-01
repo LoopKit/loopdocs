@@ -281,10 +281,6 @@
 </li>
             
 <li>
-    <a href="../../../troubleshooting/priming/" class="dropdown-item">MDT Priming and Sites</a>
-</li>
-            
-<li>
     <a href="../../../troubleshooting/time-change/" class="dropdown-item">Time Changes</a>
 </li>
             
@@ -431,7 +427,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#automatic-bolus-ab-branch" class="nav-link">Automatic-Bolus (AB) Branch</a>
+            <li class="nav-item" data-level="2"><a href="#automatic-bolus" class="nav-link">Automatic Bolus</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -522,10 +518,10 @@
 </div>
 <p>If your BG is below your correction range, Loop's Recommended bolus will have a small warning above it stating that "Current glucose of xx is below correction range". You can either skip the bolus or enter a portion or all of the Recommended bolus.</p>
 <p>If your BG is below your suspend threshold, Loop will not recommend a bolus. If this happens, you can calculate the bolus using your carbohydrate ratio and enter a portion or all of this amount or you can set a 15 minute timer and wait for your BG to start to rise and then reassess when and how much to bolus.</p>
-<h2 id="automatic-bolus-ab-branch">Automatic-Bolus (AB) Branch<a class="headerlink" href="#automatic-bolus-ab-branch" title="Permanent link">⌁</a></h2>
-<p>Loopers who are using AB still typically prebolus and/or  bolus for meals. The amount of <code>Recommended</code> insulin that will appear in the Meal Bolus screen will be the full amount of the bolus Loop recommends (not the 40% partial bolus delivered automatically). As discussed above, you can accept this recommendation or enter a different amount, however, and this is <strong>very important</strong>, if your Dosing Strategy is set to Automatic Bolus, by entering less than the recommended amount and tapping <code>Deliver</code> or tapping <code>Save Without Bolusing</code>, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of the recommended bolus at each successive Loop interval.</p>
+<h2 id="automatic-bolus">Automatic Bolus<a class="headerlink" href="#automatic-bolus" title="Permanent link">⌁</a></h2>
+<p>Loopers who are using the Automatic Bolus Dosing Strategy still typically prebolus and/or bolus for meals. The amount of <code>Recommended</code> insulin that will appear in the Meal Bolus screen will be the full amount of the bolus Loop recommends (not the 40% partial bolus delivered automatically). As discussed above, you can accept this recommendation or enter a different amount, however, and this is <strong>very important</strong>, if your Dosing Strategy is set to Automatic Bolus, by entering less than the recommended amount and tapping <code>Deliver</code> or tapping <code>Save Without Bolusing</code>, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of the recommended bolus at each successive Loop interval.</p>
 <div class="admonition warning">
-<p>Note that this same automatic delivery of insulin in response to entered carbs occurs in the master branch, or when Dosing Strategy is set to Temp Basal in AB branch, but the delivery via temporary basal rates is slower, providing more time for an error to be noticed. By the same token, AB branch responds more quickly to increases in blood glucose.</p>
+<p>Note that this same automatic delivery of insulin in response to entered carbs occurs when Dosing Strategy is set to Temp Basal, but the delivery via temporary basal rates is slower, providing more time for an error to be noticed. By the same token, the Automatic Bolus Dosing Strategy responds more quickly to increases in blood glucose.</p>
 </div>
 <h2 id="dynamic-carb-absorption">Dynamic Carb Absorption<a class="headerlink" href="#dynamic-carb-absorption" title="Permanent link">⌁</a></h2>
 <p>Loop observes the blood glucose impact of the meal within the 150% absorption time window. Loop calculates how many carbs have been absorbed (regardless of how many you entered) based on your BG pattern and your settings. You can watch the progression of  Loop's observations of your meal by tapping on the Active Carbohydrates chart at the bottom of Loop's main screen and watching the insulin counteraction effects (ICE) on the Carbohydrates screen. An example of the screen is on the left side of the figure below. An explanation of the dual lines for each entry and the color coding scheme is explained below the figure.<br/><br/></p>

@@ -281,10 +281,6 @@
 </li>
             
 <li>
-    <a href="../../troubleshooting/priming/" class="dropdown-item">MDT Priming and Sites</a>
-</li>
-            
-<li>
     <a href="../../troubleshooting/time-change/" class="dropdown-item">Time Changes</a>
 </li>
             
@@ -454,13 +450,15 @@
 <h2 id="beware-the-medtronic-easy-bolus-button">Beware the Medtronic Easy Bolus button<a class="headerlink" href="#beware-the-medtronic-easy-bolus-button" title="Permanent link">⌁</a></h2>
 <p>Medtronic's easy bolus button has been the cause of several accidental boluses when the pump has been carried in a pocket. Best practice would be to disable the Easy Bolus button since you will be doing boluses from the phone anyways.</p>
 <h2 id="health-app-permissions">Health app permissions<a class="headerlink" href="#health-app-permissions" title="Permanent link">⌁</a></h2>
-<p>Do not let other apps, such as Spike App or MyFitnessPal, on your iPhone write carbohydrates to Health app. Loop could read those carbohydrates and you could be dosed for those carbohydrates. You can read more about Health permissions <a href="../../build/health/#loop-permissions">here</a>.</p>
+<p>Do not let other apps, such as Spike App or MyFitnessPal, on your iPhone write carbohydrates to Health app. Loop could read those carbohydrates and you could be dosed for those carbohydrates. Check your <a href="../../build/health/#loop-permissions">Health</a> permissions.</p>
 <h2 id="finish-your-medtronic-priming">Finish your Medtronic priming<a class="headerlink" href="#finish-your-medtronic-priming" title="Permanent link">⌁</a></h2>
 <p>After a site change and reservoir rewind, Medtronic's pump will have a menu on the pump screen related to finishing your prime. Make sure you complete that screen and always return to the main menu. Medtronic's pump won't resume basal insulin delivery until that priming screen is completed.</p>
 <h2 id="know-your-settings">Know your settings<a class="headerlink" href="#know-your-settings" title="Permanent link">⌁</a></h2>
 <p>Do not enter in settings that you are unsure of. For example, if you haven't any idea what your carb ratio is, please don't enter a zero or a wild guess. Instead, test your settings and talk to your health care provider about what your appropriate settings should be.</p>
 <h2 id="how-to-cancel-carbs">How to Cancel Carbs<a class="headerlink" href="#how-to-cancel-carbs" title="Permanent link">⌁</a></h2>
-<p>DO NOT ENTER ACCIDENTAL DUPLICATE CARB ENTRIES. When you enter a meal in Loop and press the save button...those carbs are saved. Let me repeat: THOSE CARBS ARE SAVED...even if you cancel the bolus for them. This is an automated insulin delivery system and if it thinks you have carbs on board, it will try to give you appropriate insulin for those carbs. Most common new user mistake: enters a meal, saves the carbs, has a change of heart or gets confused, and cancels the bolus screen...thinking they've just canceled the entire meal entry. Then they enter in a new carb entry. AND NOW, when you go to bolus...you'll be bolusing for the meal you wanted AND the meal you are mistakenly thinking you had "canceled". You didn't cancel that carb entry though, you had only canceled the bolus...you didn't "unsave" the carbs. If you make a mistake or change your mind on a carb entry after you pressed save, then tap the green carb chart in Loop's main display and edit or delete that entry. CANCELING A BOLUS DOES NOT CANCEL THE CARB ENTRY THAT GOT YOU THERE. You must delete or edit a saved carb entry if you no longer want Loop to provide insulin for it.</p></div>
+<p>Once carbohydrates are entered into Loop, the algorithm will begin to dose insulin to anticipate those carbs.</p>
+<p>If you entered carbs and then changed your mind on the amount or the time at which they were eaten, use these <a href="../../operation/features/carbs/#edit-meals">instructions</a> to delete or edit them. This will make Loop better able to predict blood glucose and adjust insulin delivery appropriately.</p>
+<p>Make sure <a href="../../build/health/#loop-permissions">Health</a> permissions are set for Loop to <code>Write</code> but not <code>Read</code> carbs. This avoids a scenario where Loops reads entries from a third-party app. These carbs cannot be edited within Loop.</p></div>
             </div>
         </div>
 
