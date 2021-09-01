@@ -182,9 +182,7 @@ You will need to press `Tap to Resume` in the banner or the `Resume Delivery` bu
 
 ### Change Time Zone
 
-Use the [`Change Time Zone`](#change-time-zone) command to align your configuration settings with the current time zone and time of day.
-
-You may need to do this if the time on the pump has drifted with respect to the time on your phone.  A significant discrepancy in time between the Loop phone and the Medtronic pump can cause issues with insulin delivery accounting.
+During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time-zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to [`Change Time Zone`](#change-time-zone) and accounts for time zones when performing insulin delivery accounting.
 
 
 ### Pump Battery Type

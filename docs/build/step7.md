@@ -1,6 +1,6 @@
 # Step 7: Skip Step 7
 
-In the olden days, Loop could only be built on a computer using a tool called carthage that was installed using another tool called homebrew (Mac package manager). For the standard (master and automatic-bolus) branches of Loop, a separate installation of carthage is no longer needed.
+In the olden days, Loop could only be built on a computer using a tool called carthage that was installed using another tool called homebrew (Mac package manager). For the standard Loop, a separate installation of carthage is no longer needed.
 
 **History**: In Jan 2021, when the version of carthage advanced from 0.36.0 to 0.36.1; Loop-building came to a halt. The developers responded and now you typically don't need to install carthage. If you are building one of those branches (most Loop builds), you can skip this page.
 

@@ -6,7 +6,7 @@ Medtronic's easy bolus button has been the cause of several accidental boluses w
 
 ## Health app permissions
 
-Do not let other apps, such as Spike App or MyFitnessPal, on your iPhone write carbohydrates to Health app. Loop could read those carbohydrates and you could be dosed for those carbohydrates. You can read more about Health permissions [here](../build/health.md#loop-permissions).
+Do not let other apps, such as Spike App or MyFitnessPal, on your iPhone write carbohydrates to Health app. Loop could read those carbohydrates and you could be dosed for those carbohydrates. Check your [Health](../build/health.md#loop-permissions) permissions.
 
 ## Finish your Medtronic priming
 
@@ -18,4 +18,8 @@ Do not enter in settings that you are unsure of. For example, if you haven't any
 
 ## How to Cancel Carbs
 
-DO NOT ENTER ACCIDENTAL DUPLICATE CARB ENTRIES. When you enter a meal in Loop and press the save button...those carbs are saved. Let me repeat: THOSE CARBS ARE SAVED...even if you cancel the bolus for them. This is an automated insulin delivery system and if it thinks you have carbs on board, it will try to give you appropriate insulin for those carbs. Most common new user mistake: enters a meal, saves the carbs, has a change of heart or gets confused, and cancels the bolus screen...thinking they've just canceled the entire meal entry. Then they enter in a new carb entry. AND NOW, when you go to bolus...you'll be bolusing for the meal you wanted AND the meal you are mistakenly thinking you had "canceled". You didn't cancel that carb entry though, you had only canceled the bolus...you didn't "unsave" the carbs. If you make a mistake or change your mind on a carb entry after you pressed save, then tap the green carb chart in Loop's main display and edit or delete that entry. CANCELING A BOLUS DOES NOT CANCEL THE CARB ENTRY THAT GOT YOU THERE. You must delete or edit a saved carb entry if you no longer want Loop to provide insulin for it.
+Once carbohydrates are entered into Loop, the algorithm will begin to dose insulin to anticipate those carbs.
+
+If you entered carbs and then changed your mind on the amount or the time at which they were eaten, use these [instructions](../operation/features/carbs.md#edit-meals) to delete or edit them. This will make Loop better able to predict blood glucose and adjust insulin delivery appropriately.
+
+Make sure [Health](../build/health.md#loop-permissions) permissions are set for Loop to `Write` but not `Read` carbs. This avoids a scenario where Loops reads entries from a third-party app. These carbs cannot be edited within Loop.
