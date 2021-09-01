@@ -45,9 +45,10 @@ On occasion, you will receive a notification that a bolus may have failed. If yo
 
 If you get an uncertain delivery message, you may still see the "bolused xx of yy" display continue for as long as it would have taken to actually deliver the bolus. This display is driven by a timer and logic on the phone. (Loop is not asking the pump repeatedly - "are you done yet?"). You may want to interrupt an uncertain bolus if it is large, evaluate status and then resume with a fresh bolus. Loop should update the status the next time it contacts the pump. It can determine whether that bolus actually went through or not and will update the screen.  Look at the Event History screen (accessed by tapping the Active Insulin or Insulin Delivery plots). Turn your phone to landscape orientation and you should see either "Certain" or "Uncertain" at the end of each Bolus record. (If you tap on the specific record, even more detail is displayed.)
 
-If an "uncertain" delivery is not resolved, try this:
+If an "uncertain" delivery is not resolved:
 
-* Omnipod: Execute a [Read Pod Status command](../loop-settings/pump-commands.md#read-pod-status)
-* Medtronic: Execute a [Fetch Recent History command](../loop-settings/pump-commands.md#fetch-recent-history)
+* Make sure the RileyLink compatible device is communicating properly
+* With Omnipod, you can execute a [Read Pod Status](../loop-settings/pump-commands.md#read-pod-status) to ensure communication with the pod is working
+* [Close Loop](https://support.apple.com/en-us/HT201330) (quit the app) and restart it. (Note - this is different from a power cycle of the phone which remembers settings within an app which was running before the power cycle.)
 
 If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then [post](../../index.md#stay-in-the-loop) on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.
