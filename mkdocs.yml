@@ -71,7 +71,6 @@ nav:
         - 'Loop App crashes': 'troubleshooting/loop-crashing.md'
         - 'Red Loop': 'troubleshooting/yellow-red-loop.md'
         - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
-        - 'MDT Priming and Sites': 'troubleshooting/priming.md'
         - 'Time Changes': 'troubleshooting/time-change.md'
         - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
         - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
