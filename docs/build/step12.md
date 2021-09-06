@@ -54,11 +54,11 @@ Loop users who have been around for several years will remember this bug - fortu
 
 **Bad:** "My Loop app won't build." <----- What step are you on? What is the iOS on your phone? What kind of computer are you using? What macOS? What Xcode version? Have you built successfully before or is this new?
 
-**Ok:** "I'm trying to update my Loop app to v2.2.5 and am getting a few errors that I don't understand." <----- Wow, sure would be nice to know what those error messages are. Are they red or yellow? A screenshot sure would help here.
+**Ok:** "I'm trying to update my Loop app to v2.2.6 and am getting a few errors that I don't understand." <----- Wow, sure would be nice to know what those error messages are. Are they red or yellow? A screenshot sure would help here.
 
-**Awesome:** "I have a macOS Big Sur 11.5.3 computer with Xcode 12.5.1 and my phone is running iOS 14.7.1. Downloaded Loop-master (v2.2.5) this morning and I'm getting some red errors about an exit code that I don't understand. I've tried everything in the docs and nothing worked." <---- While I'm super happy they "tried everything", I'm no closer to knowing what the exact error message is nor which "stuff" exactly they tried. But all the version numbers are included.
+**Awesome:** "I have a macOS Big Sur 11.5.3 computer with Xcode 12.5.1 and my phone is running iOS 14.7.1. Downloaded Loop-master (v2.2.6) this morning and I'm getting some red errors about an exit code that I don't understand. I've tried everything in the docs and nothing worked." <---- While I'm super happy they "tried everything", I'm no closer to knowing what the exact error message is nor which "stuff" exactly they tried. But all the version numbers are included.
 
-**GOLD MEDAL WORTHY:** "I have a macOS Big Sur 11.5.3 computer with Xcode 12.5.1 and my phone is running iOS 14.7.1. Downloaded Loop-master (v2.2.5) this morning and I'm getting some red errors about an exit code 645 that I don't understand. Here's the screenshot of the error message. I tried searching the docs for "exit code 645" and didn't see any responses that helped. " <---- This is the kind of detail that will get you to an answer very fast.
+**GOLD MEDAL WORTHY:** "I have a macOS Big Sur 11.5.3 computer with Xcode 12.5.1 and my phone is running iOS 14.7.1. Downloaded Loop-master (v2.2.6) this morning and I'm getting some red errors about an exit code 645 that I don't understand. Here's the screenshot of the error message. I tried searching the docs for "exit code 645" and didn't see any responses that helped. " <---- This is the kind of detail that will get you to an answer very fast.
 
 ## Be ok with links
 

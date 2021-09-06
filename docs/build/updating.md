@@ -30,7 +30,7 @@ The apps built and signed by you in Xcode with a paid developer account will onl
 
 Under ordinary circumstances, you do not *have to* update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability. Also, if you have updated your phone iOS since the last build, you should download a new copy of the code.
 
-The Loop Developers strongly encourage you to update to Loop v2.2.5 (released Aug 22, 2021) as soon as possible. Please check out [Branch FAQs for v2.2.5](../faqs/branch-faqs.md#loop-v225)
+The Loop Developers strongly encourage you to update to Loop v2.2.6 (released Sep 6, 2021) as soon as possible. Please check out [Branch FAQs for v2.2.6](../faqs/branch-faqs.md#loop-v226)
 
 ## Step 1: Install macOS and Xcode updates
 
@@ -73,7 +73,7 @@ After you've finished the updates to your devices listed above, you can move ont
 
     It is always best to do a fresh download. Some people prefer to rename the last build folder old-Loop until the new one is working, and then delete it.
 
-There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for the latest release of master (v2.2.5). The [Build Select Script](https://www.loopandlearn.org/build-select/) webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.
+There is a fast and easy menu-driven script available to build Loop that works once you've updated your macOS and Xcode to versions compatible with your iPhone iOS.  It works for the latest release of master (v2.2.6). The [Build Select Script](https://www.loopandlearn.org/build-select/) webpage has instructions on how to use the script. That script allows you to perform the rest of the steps on this page with a menu-driven interface. Before you head over there, finish reading this page so you understand all the steps that are needed. The steps are explained again over there, but not in quite so much detail.
 
 !!! info "Build Select Folders"
 
