@@ -508,7 +508,7 @@
 <li>File: BolusViewController.swift</li>
 <li>Line: 529</li>
 </ul>
-<p>The screenshot below was taken with Loop v2.0 when the line number was 201; with v2.2.5, that same code is found at line 529. Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
+<p>The screenshot below was taken with Loop v2.0 when the line number was 201; with current Loop, that same code is found at line 529. Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
 <p align="center"><img alt="img/custom-id.png" src="../img/custom-id.png" width="750" /></p>
 <p><em>Code Before Modification</em></p>
 <pre><code>if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
@@ -524,7 +524,7 @@
 <li>Folder: Loop/LoopCore</li>
 <li>File: LoopSettings.swift</li>
 <li>Line: 16 (v2.2.4 master), 41 (v2.2.4 AB)</li>
-<li>Line: 50 (v2.2.5)</li>
+<li>Line: 50 (current)</li>
 </ul>
 <p align="center"><img alt="img/carb_times.png" src="../img/carb_times.png" width="750" /></p>
 <p>For example, if you wanted to make lollipop a 30 minute absorption and pizza a 5 hour absorption, the edit would look like below:</p>
@@ -584,7 +584,7 @@
 <p align="center"><img alt="img/sensitivity1.png" src="../img/sensitivity1.png" width="800" /></p>
 <p>The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. Detailed instructions are found in this <a href="https://www.loopandlearn.org/custom-code/#bolus-confirmation">Loop and Learn Customization link</a> and are not repeated here.</p>
 <h2 id="expiration-notification-customization">Expiration Notification Customization<a class="headerlink" href="#expiration-notification-customization" title="Permanent link">⌁</a></h2>
-<p>With the release of Loop v2.2.5, an expiration notification feature has been added. You get a notification when you open the Loop app to alert you that the expiration is approaching.</p>
+<p>An expiration notification feature has been added to Loop. You get a notification when you open the Loop app to alert you that the expiration is approaching. (Not available with version v2.2.4 and earlier.)</p>
 <ul>
 <li>Read <a href="../../operation/features/notifications/#loop-app-expiration-notification">Loop App Expiration Notification</a> to see the expiration reminder</li>
 <li>Read <a href="../../operation/features/notifications/#loop-app-expiration-date">Loop App Expiration Date</a> if you have an older version of Loop</li>
@@ -594,7 +594,7 @@
 <li>Line 16: modify how long before expiration you get the FIRST notification</li>
 <li>Line 28: modify how frequently you will be notified</li>
 </ul>
-<p>Searching for the phrase below should get you to line 16 for Loop v2.2.5.</p>
+<p>Searching for the phrase below should get you to line 16.</p>
 <ul>
 <li>Keyword: expirationAlertWindow: TimeInterval</li>
 <li>Folder: Loop/Managers</li>
@@ -641,7 +641,7 @@
 <li>Pods: Increase Log File History Hours</li>
 <li>These Require Workspace Builds (use <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a>)<ul>
 <li>Modify Override Sensitivity</li>
-<li>Medtronic: Disable mySentry (Loop v2.2.5 removes need for this)</li>
+<li>Medtronic: Disable mySentry (Current Loop removes need for this)</li>
 <li>Pods: Add Extra Insulin on Insertion</li>
 <li>Pods: Change Default Expiration Reminder</li>
 </ul>
