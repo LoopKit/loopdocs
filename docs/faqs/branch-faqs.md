@@ -39,7 +39,7 @@ The current released version for Loop master is v2.2.6. The dates and contents f
 
 Several users reported issues with IOB accounting in Loop v2.2.5, where IOB was being under-reported, which could cause Loop to continue recommending increases in insulin delivery.
 
-A fix has been made and is available as Loop v2.2.6. This is now the new master, so you build it using the standard zip download from [Build Step 13: Download Loop](..build/step13.md#download-loop) or using the [Build-Select Script](https://www.loopandlearn.org/build-select/) and choosing Build Loop and Master Branch.
+A fix has been made and is available as Loop v2.2.6. This is now the new master, so you build it using the standard zip download from [Build Step 13: Download Loop](../build/step13.md#download-loop) or using the [Build-Select Script](https://www.loopandlearn.org/build-select/) and choosing Build Loop and Master Branch.
 
 This is a serious issue, so updating to this release is strongly recommended for anyone currently running v2.2.5. If you tap on Loop Settings and look at the top, and see LOOP V2.2.5, then rebuild ASAP. The time window when you would have built v2.2.5 is from Aug 22 through Sep 6, 2021.
 
