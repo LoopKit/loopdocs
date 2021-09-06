@@ -4,7 +4,7 @@ Loop provides discrete notifications on the iPhone and Watch which will appear o
 
 ## Loop App Expiration Notification
 
-Profile expiration notification is a new feature added to Loop v2.2.5 (released August 22, 2021).
+Profile expiration notification is a new feature.
 
 ![Notification display when near the Loop App expiration date](img/loop-app-expiration-warning.png){width="250"}
 {align="center"}
@@ -20,7 +20,7 @@ The expiration notification pattern is the same as for the Paid Loop App. You ma
 
 ## Loop App Expiration Date
 
-If you want to see the expiration date at any time (starting with Loop v2.2.5), tap on Settings, then tap on Issue Report.  The expiration date is near the top of the report (to the right of ```profileExpiration```).  Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time is in GMT, so adjust to your own timezone if you procrastinated until the last minute.
+If you want to see the expiration date at any time, tap on Settings, then tap on Issue Report.  The expiration date is near the top of the report (to the right of ```profileExpiration```).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time is in GMT, so adjust to your own timezone if you procrastinated until the last minute.
 
 ![Issue report displays Loop App expiration date](img/loop-app-expiration-issue-report.jpeg){width="250"}
 {align="center"}
@@ -28,7 +28,7 @@ If you want to see the expiration date at any time (starting with Loop v2.2.5), 
 If you are running Loop v2.2.4 or older, you might be surprised by a ["Loop App Unavailable"](../../troubleshooting/loop-crashing.md#expired-app) display when the app reaches its expiration date.  
 
 * Workaround is to add a notice to your calendar when you build the app initially so you know that the one year app lifetime is nearing the end
-* This is still a good idea even with v2.2.5 (set your own desired alert window)
+* This is still a good idea even with automated notifications to set your own desired alert window
 * If you are running Loop v2.2.4 or older, you can use this method to determine [Loop Expiration date](https://www.loopandlearn.org/loop-expiration-date/).
 
 

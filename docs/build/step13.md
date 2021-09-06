@@ -9,7 +9,7 @@
 
 !!! warning "FAQs"
     - **"What the heck is a branch?"** That's a great question. We have a page all about [Branch FAQs](../faqs/branch-faqs.md)
-    - **"When do I need to download new Loop code?"** Anytime you want to update your Loop app to get new features, you'll simply download the code again by clicking on the links below. The links always go to the most recent version of each of the branches. It's a good idea is to delete your old downloads before making a new one, just to avoid confusion.
+    - **"When do I need to download new Loop code?"** Anytime you want to update your Loop app to get new features, you'll simply download the code again by clicking on the links below. The links always go to the most recent version of each of the branches. It's a good idea is to delete your old downloads before making a new one, just to avoid confusion. If you're paranoid, rename the older folder old-loop and wait to delete it after you have a fresh new build on your phone.
 
 ## Download Loop
 
@@ -28,10 +28,8 @@ Most users should click on the master branch link below to download Loop code an
 ---
 
 !!! danger "What happened to the automatic-bolus branch?"
-    - The updated master branch (Loop v2.2.5) was released Aug 22, 2021
-        - Includes features (as an option) that were previously only available in the automatic-bolus branch
-        - Includes a varieties of improvements and the orange-link patch
-        - Please check out [Branch FAQs for v2.2.5](../faqs/branch-faqs.md#loop-v225)
+    - The automatic-bolus branch was retired when the Dosing Strategy feature became part of the master branch
+    - Please check out [Branch FAQs for v2.2.6 and v2.2.5](../faqs/branch-faqs.md#loop-v226)
 
 
 ## Store and Name Your Download Properly
