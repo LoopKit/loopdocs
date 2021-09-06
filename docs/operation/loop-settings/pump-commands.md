@@ -16,13 +16,13 @@ Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour c
 
 To bring up the Pod Settings display, tap on the Pod Age icon on the Heads Up Display or the image of the Omnipod in the Loop settings display to reach the Pod Settings display.
 
-This screen provides important information about your Pod and allows you to issue some commands to the Pod through Loop. There were some modifications made to the layout and underlying information for some of the rows with Loop v2.2.5.
+This screen provides important information about your Pod and allows you to issue some commands to the Pod through Loop. There were some recent modifications made to the layout and underlying information for some of the rows.
 
 * Enable/Disable Confirmation Beeps: moved up to the Configuration section; beeps for all manual pod operations; uses a more efficient implementation
 
 * Suspend/Resume: Pod will beep every 5 minutes when suspended; the beeps can be silenced by tapping on the Alarms line
 
-![Pod Settings Display for v2.2.5](img/pod-settings-v225.svg){width="250"}
+![Pod Settings Display](img/pod-settings-v225.svg){width="250"}
 {align="center"}
 
 ### Pod Information
@@ -55,7 +55,7 @@ This line displays Alerts or Alarms; tapping on it, or on the accompanying banne
     * Expiration Reminder - Loop notification only, no Pod beeps
     * 72 Hours Expiration - Loop notification and Pod beeps (Pod beeps continue  once per hour until alert is acknowledged)
     * 79 Hour Alert - Loop notification and Pod beeps (Pod beeps continue every 15 minutes until alert is acknowledged)
-    * Pod Suspended (v2.2.5 only): Pod beeps once per 5 minute unless this alarm is cleared
+    * Pod Suspended (v2.2.5 or later): Pod beeps once per 5 minute unless this alarm is cleared
 
 ![Alarm line showing Pod expiration advisory](img/pod-settings-alarms.png){width="250"}
 
@@ -82,7 +82,7 @@ This command will suspend all insulin delivery; basals, temp basals, and boluses
 
 ![Line indicates delivery is suspended, tap to resume](img/pod-settings-resume.png){width="250"}
 
-A banner notice will appear on the Loop's main screen when phone is in portrait mode when insulin delivery is suspended. (With v2.2.5, a pod beep is initiated with a frequency of every 5 minutes.  This can be silenced by acknowledging the alarm.)
+A banner notice will appear on the Loop's main screen when phone is in portrait mode when insulin delivery is suspended. Unless you are running v2.2.4 or earlier, a pod beep is initiated with a frequency of every 5 minutes.  This can be silenced by acknowledging the alarm.
 
 ![banner notice on the HUD](img/pod-hud-suspended.png){width="250"}
 
@@ -106,7 +106,7 @@ With the Expiration Reminder you can set a convenient time to get a notification
 As with the PDM, Loop allows the Pod to continue operating after expiration until it reaches the maximum allowed 80 hours of life, at which time, the Pod shuts down and alarms.  Loop detects this message the next time it tries to communicate with the Pod. In the event your Pod runs out of insulin before that time, then you will get a "Pod empty" notification.
 
 !!! info ""
-    The glitch in setting the Expiration Reminder in v2.2.4 is fixed in v2.2.5.
+    The glitch in setting the Expiration Reminder in v2.2.4 is now fixed.
 
     Loop v2.2.4 has a "glitch" in setting the Expiration Reminder.  Tap on the line (can't change time), scroll the entire display up or down until the line no longer is visible and then scroll it back. The Expiration Reminder display should now look like the graphic below. The expiration reminder time can now be selected.
 
@@ -165,10 +165,10 @@ This section provides some Pod identifying information. The Lot number and TID n
 
 ## Medtronic Commands
 
-As of Loop v2.2.5, Medtronic commands are only found in the Pump Settings screen shown in the graphic below. The top sections is configured at the time the pump is connected to Loop and can only be modified by deleting the pump and adding a pump. This screen is the same as for earlier versions with the addition of the `Use MySentry` row.
+Medtronic commands are found in the Pump Settings screen shown in the graphic below. The top sections is configured at the time the pump is connected to Loop and can only be modified by deleting the pump and adding a pump. This screen is the same as for earlier versions with the addition of the `Use MySentry` row.
 
 
-![Medtronic Pump Settings screen for v2.2.5](img/mdt-pump-settings-v225.svg){width="250"}
+![Medtronic Pump Settings screen](img/mdt-pump-settings-v225.svg){width="250"}
 {align="center"}
 
 ### Suspend Delivery
@@ -198,7 +198,7 @@ Leave the Preferred Data Source set to on Event History for proper functioning o
 
 ### Use MySentry
 
-This is a new option provided with Loop v2.2.5.  Using the MySentry feature on some Medtronic pumps when using an OrangeLink causes the batteries to die quickly.  This option allows you to turn off MySentry within the Loop app.
+This is a new option. If you don't see this row, consider updating your Loop app.  Using the MySentry feature on some Medtronic pumps when using an OrangeLink causes the batteries to die quickly.  This option allows you to turn off MySentry within the Loop app.
 
 ![MySentry selection screen for enabling or disabling the option](img/mdt-my-sentry-v225.png){width="250"}
 {align="center"}

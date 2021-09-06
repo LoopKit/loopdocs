@@ -67,7 +67,7 @@ For new people - you may be wondering why you care?
 
   * Loop must be rebuilt at least once a year (the app expires)
   * When the Loop app expires, you get a Loop not available message and must rebuild
-  * With the most recent Loop release, v2.2.5, you get automated [notifications](../operation/features/notifications.md#loop-app-expiration-notification) when expiration is approaching
+  * With the most recent Loop release, v2.2.6, you get automated [notifications](../operation/features/notifications.md#loop-app-expiration-notification) when expiration is approaching
   * Although Loop is fairly stable now; in the past, messages were posted to encourage people to rebuild ASAP because:
       * There were issues found with the code
       * Important new feature were implemented

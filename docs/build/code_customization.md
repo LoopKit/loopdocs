@@ -48,7 +48,7 @@ Depending on your iPhone preferences and model, you may have Face ID or Touch ID
   * File: BolusViewController.swift
   * Line: 529
 
- The screenshot below was taken with Loop v2.0 when the line number was 201; with v2.2.5, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
+ The screenshot below was taken with Loop v2.0 when the line number was 201; with v2.2.6, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
 
 ![img/custom-id.png](img/custom-id.png){width="750"}
 {align="center"}
@@ -71,7 +71,7 @@ Loop’s default carb absorption times are based on the high, medium, and low gl
   * Folder: Loop/LoopCore
   * File: LoopSettings.swift
   * Line: 16 (v2.2.4 master), 41 (v2.2.4 AB)
-  * Line: 50 (v2.2.5)
+  * Line: 50 (v2.2.6)
 
 ![img/carb_times.png](img/carb_times.png){width="750"}
 {align="center"}
@@ -160,7 +160,7 @@ The modification required to reduce the watch crown rotation to confirm a bolus 
 
 ## Expiration Notification Customization
 
-With the release of Loop v2.2.5, an expiration notification feature has been added. You get a notification when you open the Loop app to alert you that the expiration is approaching.
+With the release of Loop v2.2.6, an expiration notification feature has been added. You get a notification when you open the Loop app to alert you that the expiration is approaching.
 
 * Read [Loop App Expiration Notification](../operation/features/notifications.md#loop-app-expiration-notification) to see the expiration reminder
 * Read [Loop App Expiration Date](../operation/features/notifications.md#loop-app-expiration-date) if you have an older version of Loop
@@ -170,7 +170,7 @@ If you prefer a different notification time and frequency, there are two lines y
 * Line 16: modify how long before expiration you get the FIRST notification
 * Line 28: modify how frequently you will be notified
 
-Searching for the phrase below should get you to line 16 for Loop v2.2.5.
+Searching for the phrase below should get you to line 16 for Loop v2.2.6.
 
 * Keyword: expirationAlertWindow: TimeInterval
 * Folder: Loop/Managers
@@ -228,7 +228,7 @@ Additional customizations are found on another website. If you did not find the 
 * Pods: Increase Log File History Hours
 * These Require Workspace Builds (use [Build Select Script](https://www.loopandlearn.org/build-select/))
     * Modify Override Sensitivity
-    * Medtronic: Disable mySentry (Loop v2.2.5 removes need for this)
+    * Medtronic: Disable mySentry (Loop v2.2.6 removes need for this)
     * Pods: Add Extra Insulin on Insertion
     * Pods: Change Default Expiration Reminder
 
