@@ -2,24 +2,23 @@
 
 Many people may already have an existing Nightscout site setup from before adding Loop to their management strategies. In order to make the most of your Looping setup, you will need to modify your existing Nightscout site a bit specifically for Loop. The process is pretty easy and should not take long.
 
-## New Variables for Loopers
+## Variables for Loopers
 
-The modifications for retrofitting an existing NS site for a new Loop user require you to make some edits to your Nightscout Config Vars.  These instructions are for people using Heroku, because that is the most common choice. If your Nightscout site is not on Heroku, this page provides a guide for the Config Vars used by Loop. There are five steps:
+Once you have created a Nightscout site, there are some Nightscout Config Vars specific to Loop.
 
-1. Login to Heroku, Open Settings Tab
-2. Edit/Add Config Vars
-3. Open Nightscout Site
-4. Turn on Plugins
-5. Update Profile Settings
+* First the Config Vars need to be added to the Nightscout site.
 
-### Step 1: Login to Heroku, Settings Tab
+* For each instance of viewing the Nightscout site (i.e., on broswer or phone app), you can individually select which of those configured items are displayed.  This is on a per-view basis. However, Config Vars like the `SHOW_PLUGINS` line allow you to preconfigure what will be shown by default.
+
+
+## Edit/Add Config Vars
+
+These instructions are for people using Heroku, because that is the most common choice. If your Nightscout site is not on Heroku, this page provides a guide for the Config Vars used by Loop.
 
 [Login to your Heroku account](https://id.heroku.com/login), select the `Settings` tab near the top of the screen on your Heroku app.
 
 ![img/heroku5.png](img/heroku5.png){width="600"}
 {align="center"}
-
-### Step 2: Edit/Add Config Vars
 
 Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines until you find the last blank one.  You are going to add several additional lines of config vars for Loop use; the DEVICESTATUS_ADVANCED and ENABLE lines are required, the others just make Nightscout more useful when Looping.
 
@@ -98,23 +97,33 @@ Click on `Reveal Config Vars`.  Scroll down the bottom of the Config Vars lines 
 </tbody>
 </table>
 
-### Step 3: Open Your NS Site
 
 Click on `Open App` in the top right corner of your Heroku site.
 
 ![img/open_app.jpg](img/open_app.jpg){width="600"}
 {align="center"}
 
-### Step 4: Turn on Plugins
+## Plugins Selection
 
-Click on the "hamburger" menu (those three horizontal lines in the upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then click save. (You are saving your display preferences, not modifying anything in the NS database.)
+Once you are viewing an instance of your Nightscout site (browser or app), you can adjust what this instance of the display will show.
 
-If you have not authenticated your site previously, and you want to use the care portal and have access to other tools, you can add your API Secret under this menu.
+Click on the "hamburger" menu - those three horizontal lines in the upper right corner of the main NS display.  
+
+![img/example.jpg](img/example.jpg){width="600"}
+{align="center"}
+
+The graphic below shows some of the check boxes you can select.  Make sure your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), adjust alarms (on or off), check the boxes that you’d like display as pills in the SHOW PLUGINS section (usually all of them), and then click save. (You are saving your display preferences, not modifying anything in the NS database.)
 
 Note - Nightscout has been updated since this figure was generated.
 
 ![img/settings_ns.jpg](img/settings_ns.jpg){width="600"}
 {align="center"}
+
+##  Authenticate Site
+
+If the current display of you NS site has been not authenticated, and you want to use the careportal and have access to other tools such as remote overrides, you can add your API Secret under the hamburger menu mentioned under plugin selection  - or once you've selected the careportal display under plugins - you can click on the Lock symbol in the upper right of the NS Display. You must enter the API Secret for the site to authenticate it.
+
+Once authenticated, the Lock symbol in the upper right turns into a +.  This gives you access to the careportal.
 
 
 ## Nightscout Version Update
