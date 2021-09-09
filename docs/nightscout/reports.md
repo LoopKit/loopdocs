@@ -1,9 +1,15 @@
 # Reports
 
-Nightscout offers some fantastic data-crunching report tools in the settings area (the upper right corner, three horizontal lines).  You can play around with various date ranges, target ranges, and provide reports to your endocrinologist to review.
+Nightscout offers some fantastic data-crunching report tools.
 
-![img/distribution.jpg](img/distribution.jpg){width="700"}
-{align="center"}
+Note - different sets of documentation call the three horizontal lines in the upper right of the Nightscout display different things such as:
 
-![img/percentile.jpg](img/percentile.jpg){width="y00"}
-{align="center"}
+* Settings
+* Hamburger Menu
+* Drawer Menu
+
+Regardless of its name, it takes you to other sections of Nightscout well worth exploring.
+
+The [Nightscout Documentation for Reports](https://nightscout.github.io/nightscout/reports/) has been expanded and updated.  
+
+Therefore it has been removed from LoopDocs to prevent duplication and inconsistency, with the link provided to assist the user.
