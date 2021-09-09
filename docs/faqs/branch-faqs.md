@@ -8,7 +8,7 @@ In the course of updating Loop, you may be wondering about the different branche
 
 There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.
 
-To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s) created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus, which is now an established branch offered for download in [Build Step 13](../build/step13.md#download-loop). Loop has moved on to Version 2.2.5 with only one stable branch (master), with dev recommended for developer/testers.
+To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s) created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into Loop master branch. Loop has moved on to using only one stable branch (master), with dev recommended for developer/testers.
 
 ### Loop GitHub Information
 
@@ -29,15 +29,32 @@ After much testing and tweaking, eventually the recipes get the flavors right (b
 
 ## Loop Releases
 
-The current released version (August 22, 2021) for Loop master is v2.2.5. The dates and contents for Loop releases from v2.0 through v2.2.5 are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for Loop master is v2.2.6. The dates and contents for Loop releases from v2.0 through v2.2.6 are summarized below in reverse chronological order (so newest release information comes first).
 
 !!! warning "Check Current Release Status"
 
     Release information is always found on the [GitHub LoopKit/Loop release page](https://github.com/LoopKit/Loop/releases). The information on this LoopDocs page is a summary of that information with a little extra explanation. Be aware that updates to LoopDocs may take some time after a new release comes out.
 
+### Loop v2.2.6
+
+Several users reported issues with IOB accounting in Loop v2.2.5, where IOB was being under-reported, which could cause Loop to continue recommending increases in insulin delivery.
+
+A fix has been made and is available as Loop v2.2.6. This is now the new master, so you build it using the standard zip download from [Build Step 13: Download Loop](../build/step13.md#download-loop) or using the [Build-Select Script](https://www.loopandlearn.org/build-select/) and choosing Build Loop and Master Branch.
+
+This is a serious issue, so updating to this release is strongly recommended for anyone currently running v2.2.5. If you tap on Loop Settings and look at the top, and see LOOP V2.2.5, then rebuild ASAP. The time window when you would have built v2.2.5 is from Aug 22 through Sep 6, 2021.
+
+The issue appears to be the result of a failure to write to Apple HealthKit, which may occur if the Health app on your phone is having problems, or if you have turned off Loop's ability to write Insulin data to HealthKit. The fix involves reverting a change made in v2.2.5.  This change was an attempt to reduce overlaps of Reservoir and Pump Event reconciliation which intermittently over estimate insulin delivery. Instead, that issue will be fixed in the next major release of Loop.
+
+Thanks to all who helped with reporting, digging, and testing this quickly. It's great to have such a strong community of people eager to help.
+
+Loop v2.2.6 was released on September 6, 2021.
+
+
 ### Loop v2.2.5
 
-This is an interim release as we prepare for the major changes currently in development. If you are running an older version of Loop, such as v2.2.4 (master or automatic-bolus branch) or an older version, it is recommended that you update. A summary of modifications with respect to Loop v2.2.4 is listed below.
+This is an interim release as we prepare for the major changes currently in development. If you are running an older version of Loop, such as v2.2.4 (master or automatic-bolus branch) or an older version, it is recommended that you update to v2.2.6 to get all these new features. A summary of modifications with respect to Loop v2.2.4 is listed below.
+
+Loop v2.2.5 was released on August 22, 2021.
 
 ### New Features:
 
@@ -107,7 +124,7 @@ Released September 25, 2020
 
 !!! warning "Warning - Rebuild ASAP for Pods"
     * A bug was introduced in this version, quickly fixed in v2.2.4.
-    * If you use pods, please rebuild using v2.2.5.
+    * If you use pods, please rebuild using v2.2.6.
 
 * Fetch pump and cgm data on manual loop retry (when Loop icon is red or yellow)
 * Re-arranged pod status screen to prioritize needed information and actions.

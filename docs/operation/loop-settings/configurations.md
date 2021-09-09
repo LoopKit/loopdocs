@@ -6,7 +6,7 @@ This page will cover two general parts of the Loop's settings, circled in red in
 
 * The second circled section is the configuration section. This section contains a lot of really important settings that control how your Loop will calculate your predicted BG curve. Given the importance of your predicted BG curve to Loop's actions, please make sure you read over this page carefully to know how to navigate the selections and entries.
 
-![settings screen for Loop v2.2.5](img/loop-settings-config-v2-2-5.png){width="350"}
+![settings screen for Loop](img/loop-settings-config-v2-2-5.png){width="350"}
 {align="center"}
 
 ## Closed/Open Loop
@@ -120,7 +120,7 @@ The differences between the three exponential models (two Rapid-Acting and Fiasp
 
 ## Dosing Strategy
 
-A new feature introduced in Loop v2.2.5 is the ability to select the Dosing Strategy.  If you tap on that row, it reveals a selection screen, shown in the graphic below, with some explanation.  Note that this Dosing Strategy feature was available for more than a year in the automatic-bolus branch.  Users who have been using the automatic-bolus feature should update as soon as possible to master v2.2.5 to get the other improvements added to this release, [Branch FAQs for v2.2.5](../../faqs/branch-faqs.md#loop-v225).
+This configuration setting gives you the ability to select the Dosing Strategy. (If you do not see this setting, then you are running Loop v2.2.4 or older.) If you tap on that Dosing Strategy, it reveals a selection screen, shown in the graphic below, with some explanation.  Note that this Dosing Strategy feature was available for more than a year in the automatic-bolus branch.  Users who have been using the automatic-bolus feature should update as soon as possible to get the other improvements recently added, [Branch FAQs for v2.2.6 and v2.2.5](../../faqs/branch-faqs.md#loop-v226).
 
 ![Dosing Strategy selection screen](img/dosing-strategy.svg){width="350"}
 {align="center"}
