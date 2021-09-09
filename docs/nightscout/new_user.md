@@ -31,7 +31,7 @@ Once your Nightscout site is operational and you've read the information about u
 
 ## Add Loop Variables to Nightscout
 
-There are a few Loop-specific variables you should configure to get the most out of your Nightscout site. Follow the [instructions to retrofit an existing Nightscout site](update_user.md#step-2-editadd-config-vars).
+There are a few Loop-specific variables you should configure to get the most out of your Nightscout site. Follow the [instructions to retrofit an existing Nightscout site](update_user.md).
 
 ## Add Nightscout to Loop
 
