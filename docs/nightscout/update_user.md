@@ -107,14 +107,15 @@ Click on `Open App` in the top right corner of your Heroku site.
 
 ### Step 4: Turn on Plugins
 
-Click on the settings (those three horizontal lines in the upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then click save. If you have not authenticated your site previously, you may be prompted to provide your API Secret prior to Nightscout saving your changes.
+Click on the "hamburger" menu (those three horizontal lines in the upper right corner).  Now check that your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), check the boxes that you’d like display pills in the SHOW PLUGINS (usually all of them), and then click save. (You are saving your display preferences, not modifying anything in the NS database.)
+
+If you have not authenticated your site previously, and you want to use the care portal and have access to other tools, you can add your API Secret under this menu.
+
+Note - Nightscout has been updated since this figure was generated.
 
 ![img/settings_ns.jpg](img/settings_ns.jpg){width="600"}
 {align="center"}
 
-### Step 5: Update Profile Settings
-
-Double-check that your NS Profile settings are current and that you have a basal profile entered, if you want to see the temp basals that Loop is setting. The values in your Nightscout Profile settings will not impact or affect your Loop, but it is just nice to have them match up in the event you are looking at your data with an endocrinologist or retrospectively looking at data.
 
 ## Nightscout Version Update
 
