@@ -109,6 +109,14 @@ Once you are viewing an instance of your Nightscout site (browser or app), you c
 
 Click on the "hamburger" menu - those three horizontal lines in the upper right corner of the main NS display.  
 
+!!! info ""
+    Different sets of documentation call the three horizontal lines in the upper right of the Nightscout display different things such as:
+
+    * Settings
+    * Hamburger Menu
+    * Drawer Menu
+
+
 ![img/example.jpg](img/example.jpg){width="600"}
 {align="center"}
 
@@ -121,9 +129,22 @@ Note - Nightscout has been updated since this figure was generated.
 
 ##  Authenticate Site
 
-If the current display of you NS site has been not authenticated, and you want to use the careportal and have access to other tools such as remote overrides, you can add your API Secret under the hamburger menu mentioned under plugin selection  - or once you've selected the careportal display under plugins - you can click on the Lock symbol in the upper right of the NS Display. You must enter the API Secret for the site to authenticate it.
+If the current display of your NS site has been not authenticated, you will not be able to access certain portions of Nightscout such as the careportal, administration tools and remote overrides.  There are two ways to authenticate.
 
-Once authenticated, the Lock symbol in the upper right turns into a +.  This gives you access to the careportal.
+* Use API_Secret to access all features of Nightscout
+
+* Use Tokens to generate a URL that opens with predefined role
+
+The use of tokens is documented at this link to the security page in the Nightscout documentation.
+
+* Please see [Nightscout: Tokens](http://nightscout.github.io/nightscout/security/#create-authentication-tokens-for-users)
+
+To authenticate with your API_Secret:
+
+* Click on the hamburger menu and scroll all the way to the bottom, click on authenticate and add your API_Secret
+* Click on the Lock symbol on upper right on main display (requires careportal plugin to be enabled) and add your API Secret
+
+An authenticated site, with careportal plugin enabled, will show a `+` at upper right of the main display instead of a lock symbol. Tapping on the `+` gives you access to the careportal.
 
 
 ## Nightscout Version Update

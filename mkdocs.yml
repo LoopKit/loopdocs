@@ -80,9 +80,7 @@ nav:
     - 'Retrofit Existing NS': 'nightscout/update_user.md'
     - 'Setup Troubleshooting': 'nightscout/troublehoot.md'
     - 'Remote Overrides': 'nightscout/remote-overrides.md'
-    - 'IFTTT': 'nightscout/ifttt.md'
-    - 'Remote Notifications': 'nightscout/pushover.md'
-    - 'Reports': 'nightscout/reports.md'
+    - 'Nightscout Cross Ref': 'nightscout/ns_crossref.md'
 - FAQs:
     - 'Using This Site FAQs': 'faqs/docs-faqs.md'
     - 'General Loop FAQs': 'faqs/FAQs.md'
