@@ -131,18 +131,19 @@ Note - Nightscout has been updated since this figure was generated.
 
 If the current display of your NS site has been not authenticated, you will not be able to access certain portions of Nightscout such as the careportal, administration tools and remote overrides.  There are two ways to authenticate.
 
-* Use API_Secret to access all features of Nightscout
+* Use API_SECRET to access all features of Nightscout
 
-* Use Tokens to generate a URL that opens with predefined role
+* Use Tokens to generate a URL that opens with predefined role(s)
 
 The use of tokens is documented at this link to the security page in the Nightscout documentation.
 
 * Please see [Nightscout: Tokens](http://nightscout.github.io/nightscout/security/#create-authentication-tokens-for-users)
 
-To authenticate with your API_Secret:
+You can authenticate with your API_SECRET using either of these methods:
 
-* Click on the hamburger menu and scroll all the way to the bottom, click on authenticate and add your API_Secret
-* Click on the Lock symbol on upper right on main display (requires careportal plugin to be enabled) and add your API Secret
+* Click on the hamburger menu and scroll all the way to the bottom, click on authenticate and add your API_SECRET
+
+* Click on the Lock symbol on upper right on main display (requires careportal plugin to be enabled) and add your API_SECRET
 
 An authenticated site, with careportal plugin enabled, will show a `+` at upper right of the main display instead of a lock symbol. Tapping on the `+` gives you access to the careportal.
 

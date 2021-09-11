@@ -11,4 +11,4 @@ As part of that troubleshooting, you may need to remove the Nightscout service c
 
 ## Loop data not showing
 
-If your BG data is showing, but Loop data is not (like Loop pill is empty and carbs and boluses are not showing), please delete your Nightscout account in Loop settings area. Enter the information in fresh. Make sure to use `https://` to start the site URL. Make sure there is no trailing slash at the end of the URL. Enter your API Secret correctly. Make sure you have `loop` on the ENABLE line in Heroku settings.
+If your BG data is showing, but Loop data is not (like Loop pill is empty and carbs and boluses are not showing), please delete your Nightscout account in Loop settings area. Enter the information in Loop again. Make sure to use `https://` to start the site URL. Make sure there is no trailing slash at the end of the URL. Enter your API_SECRET correctly. Make sure you have `loop` on the ENABLE line in Heroku settings.
