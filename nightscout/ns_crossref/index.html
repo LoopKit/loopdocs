@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Pebble - LoopDocs</title>
+        <title>Nightscout Cross Ref - LoopDocs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -320,19 +320,7 @@
 </li>
                                     
 <li>
-    <a href="../ifttt/" class="dropdown-item">IFTTT</a>
-</li>
-                                    
-<li>
-    <a href="./" class="dropdown-item active">Pebble</a>
-</li>
-                                    
-<li>
-    <a href="../pushover/" class="dropdown-item">Remote Notifications</a>
-</li>
-                                    
-<li>
-    <a href="../reports/" class="dropdown-item">Reports</a>
+    <a href="./" class="dropdown-item active">Nightscout Cross Ref</a>
 </li>
                                 </ul>
                             </li>
@@ -390,12 +378,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../ifttt/" class="nav-link">
+                                <a rel="prev" href="../remote-overrides/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../pushover/" class="nav-link">
+                                <a rel="next" href="../../faqs/docs-faqs/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -417,8 +405,24 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#pebble-watchface" class="nav-link">Pebble Watchface</a>
+            <li class="nav-item" data-level="1"><a href="#nightscout-documentation" class="nav-link">Nightscout Documentation</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#ifttt-integration" class="nav-link">IFTTT Integration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#remote-notifications" class="nav-link">Remote Notifications</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pebble-watch" class="nav-link">Pebble Watch</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#reports" class="nav-link">Reports</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -426,10 +430,55 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="pebble-watchface">Pebble Watchface<a class="headerlink" href="#pebble-watchface" title="Permanent link">⌁</a></h1>
-<p>The Pebble Watchface called <code>SkyLoop Predict</code> can be used with either Loop or OpenAPS systems.  You will need to have a Nightscout website setup and integrated in order for the watchface to work.  Simply use your Pebble app to search for the watchface and install it.  In the watchface settings, enter your Nightscout URL in the Data Endpoint field, select Loop for the system, and enter <code>iob</code> in the T1 Name field.  By entering <code>iob</code>, the watchface will display the iob on the watchface.  In addition to the information displayed on the main watchface screen, shaking your wrist will bring up information about the pump battery and reservoir levels.</p>
-<p align="center"><img alt="img/skyloop.png" src="../img/skyloop.png" width="700" /></p>
-<p align="center"><img alt="img/skyloop1.jpg" src="../img/skyloop1.jpg" width="700" /></p></div>
+<h1 id="nightscout-documentation">Nightscout Documentation<a class="headerlink" href="#nightscout-documentation" title="Permanent link">⌁</a></h1>
+<p>A number of pages that used to be in LoopDocs have been moved to the Nightscout documentation and are in the process of being integrated into their menu structure. To prevent duplication and inconsistency, those pages have been removed from LoopDocs.  A cross-reference to the Nightscout pages is provided below.</p>
+<ul>
+<li>Warning: As of Sep 2021, some of the pages moved from LoopDocs to Nightscout documentation are not yet in the Nightscout menu structure</li>
+<li>You can always use the search function of the  <a href="https://nightscout.github.io/">Nightscout Documentation</a> site to find any topic</li>
+</ul>
+<h2 id="ifttt-integration">IFTTT Integration<a class="headerlink" href="#ifttt-integration" title="Permanent link">⌁</a></h2>
+<p>If This, Then That (IFTTT) integration is a useful Nightscout capability. By using IFTTT, you can have single button presses on your iPhone that will set an override, log a cannula change, log a sensor change and much more.</p>
+<ul>
+<li>Please see<ul>
+<li><a href="https://nightscout.github.io/nightscout/setup_variables/#ifttt-maker">Nightscout: Configurations: IFTTT Maker</a></li>
+<li><a href="https://nightscout.github.io/nightscout/ifttt/">Nightscout: IFTTT</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="remote-notifications">Remote Notifications<a class="headerlink" href="#remote-notifications" title="Permanent link">⌁</a></h2>
+<p>While the Loop app sends notifications locally on the Loop user's iPhone, parents and caregivers may want those messages on their phones, too.  We can achieve this functionality through a combination of Nightscout, IFTTT, Google, and Pushover.</p>
+<ul>
+<li>Please see<ul>
+<li><a href="https://nightscout.github.io/nightscout/setup_variables/#pushover">Nightscout: Configurations: Pushover</a></li>
+<li><a href="https://nightscout.github.io/nightscout/pushover/">Nightscout: Remote Notifications</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="loop-follow">Loop Follow<a class="headerlink" href="#loop-follow" title="Permanent link">⌁</a></h3>
+<p>Loop Follow was created by Jon Fawcett who took ideas from multiple other apps to create a single app to assist in his caregiving role. It is popular with Loopers who like the display and notifications as well as Loop caregivers. It can work with just the Nightscout URL and allows for easy customization of alerts and alarms.</p>
+<ul>
+<li>Please see<ul>
+<li><a href="https://github.com/jonfawcett/LoopFollow/#loop-follow">Loop Follow github README</a></li>
+<li><a href="https://www.facebook.com/groups/loopfollow">Loop Follow Facebook group</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="pebble-watch">Pebble Watch<a class="headerlink" href="#pebble-watch" title="Permanent link">⌁</a></h2>
+<p>LoopDocs had a page specifically about the Pebble Watchface called <code>SkyLoop Predict</code>, which is no longer being supported. The Nightscout Documentation provides information about many methods for displaying your Nightscout data on a variety of wearable devices.</p>
+<ul>
+<li>Please see<ul>
+<li><a href="https://nightscout.github.io/nightscout/wearable/">Nightscout: On Your Watch</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="reports">Reports<a class="headerlink" href="#reports" title="Permanent link">⌁</a></h2>
+<p>Nightscout offers some fantastic data-crunching report tools.</p>
+<ul>
+<li>Please see<ul>
+<li><a href="https://nightscout.github.io/nightscout/reports/">Nightscout: Reports</a></li>
+</ul>
+</li>
+</ul></div>
             </div>
         </div>
 
