@@ -149,7 +149,7 @@ And if you want to save one click to get to these one functions more directly: t
 
 ### IFTTT
 
-If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by [setting up IFTTT](ifttt.md), too.
+If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by [setting up IFTTT](ns_crossref.md#IFTTT), too.
 
 ## Step 6: Known Issues
 
