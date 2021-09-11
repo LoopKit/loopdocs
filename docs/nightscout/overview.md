@@ -1,8 +1,12 @@
 # Overview
 
-Nightscout (NS) is an excellent tool for remotely viewing Loop's actions.  It allows for easy remote monitoring of Loop activities, troubleshooting of Loop errors, history of CGM, carbs, boluses, & temp basals, reports analyzing data trends and patterns. There is a Nightscout app in your iPhone App Store, or you can use a web browser to view the data.  Setting up Nightscout is free and fairly quick.  Once set up, the site can be accessed by anyone that you share your unique Nightscout URL with.  
+Nightscout (NS) is an excellent tool for remotely viewing Loop's actions.  It allows for easy remote monitoring of Loop activities, troubleshooting of Loop errors, history of CGM, carbs, boluses, & temp basals, reports analyzing data trends and patterns. Setting up a DIY Nightscout site is free and fairly quick. Once set up, the site can be accessed by anyone that you share your unique Nightscout URL with. There is a Nightscout app in your iPhone App Store that allows you to view the NS site after you've configured it, or you can use a web browser to view the data.  
 
-Nightscout is highly recommended for Loop users, especially those using Loop as caregivers to t1ds.  Nightscout displays are often the easiest way to troubleshoot Loop settings, if you are having problems and seeking input from others.  Below is some discussion about the general Nightscout display, as well as some Loop-specific display information.
+* Nightscout is highly recommended for Loop users, especially those using Loop as caregivers.  
+* Nightscout displays are often the easiest way to troubleshoot Loop settings if you are having problems and seeking input from others.  
+* Nightscout also provides reporting features for longer-term review and preparing information for your physician.
+
+Below is some general discussion about the Nightscout display, as well as some Loop-specific display information.
 
 ![img/example.jpg](img/example.jpg){width="600"}
 {align="center"}
@@ -25,15 +29,15 @@ Insulin boluses are also automatically uploaded to NS by the Loop app.  The bolu
 
 ## Temp Basals
 
-Within your NS profile, you will enter in the scheduled basal for your Loop user.  This is not automatically updated when you update the Loop app or your pump; you will have to manually update your basal profile in your NS site if you change your basal profile in Loop and/or pump. (Note: The dev branch does now update NS with the basal schedule from Loop, but dev is considered generally less stable than the master branch).   If you don't update the NS basal profile, it doesn't cause any problems in Loop function...you simply won't have accurate VISUAL representation of high/low temp basals within NS. The dashed blue line represents the scheduled basal profile (as entered in your NS profile).  The solid blue lines indicate the actual basal amounts set for a given time...so as Loop sets temp basals higher or lower than your scheduled basal rate, the solid blue line will jump above or below your dashed blue line.  There is a slight delay (up to 2-5 minutes) in the rendering of basal changes on the blue lines, so if you want the accurate current basal rate, you can check the Loop pill.
+Your current basal profile is automatically updated to NS whenever it is changed by Loop on your pump. The dashed blue line represents the scheduled basal profile (as entered in your NS profile).  The solid blue lines indicate the actual basal amounts set for a given time...so as Loop sets temp basals higher or lower than your scheduled basal rate, the solid blue line will jump above or below your dashed blue line.  There is a slight delay (up to 2-5 minutes) in the rendering of basal changes on the blue lines, so if you want the accurate current basal rate, you can check the Loop pill.
 
 ## Predicted BG
 
-The purple line to the right of the BG is Loop's predicted BG.  Watching the behavior of that purple line can help you understand why Loop is making decisions regarding high or low temps.  You can read more on that topic in the Algorithm section of these docs.
+The purple line to the right of the BG is Loop's predicted BG.  Watching the behavior of that purple line can help you understand why Loop is making decisions regarding high or low temps.  You can read more on that topic in the [Algorithm](operation/algorithm/overview.md) section of these docs. If you don't see the prediction (and all other NS and Loop settings are configured), tap on the 3 dots to the right of the 24 to reveal the choice to display AR2 prediction or Loop prediction.  Adjust the check boxes to show just the Loop prediction.
 
 ## Loop pill
 
-The Loop pill is the little display box which when hovered over, or clicked, will provide additional information about recent Loop activities and status.  Information included is the last time Loop ran, the temp basal set, IOB, and COB.  Looking at the Loop pill is a quick method for assessing if you loop is currently active, as well.
+The Loop pill is the little display box which, when hovered over or clicked, will provide additional information about recent Loop activities and status.  Information included is the last time Loop ran, the temp basal set, IOB, and COB.  Looking at the Loop pill is a quick method for assessing if you loop is currently active, as well.
 
 !!! info "Loop Pill status indicator symbols"
 
@@ -51,7 +55,7 @@ The Loop pill is the little display box which when hovered over, or clicked, wil
 
     <font style='font-size: 1.5em;'>⚠</font> &nbsp;
     Warning indicating Loop is either red or has failed to upload to Nightscout for a longer period of time.
-Mouseover or Touch the Loop pill to view a tool tip containing one or more of the latest status messages. The most up-to-date NS also includes information in the Loop pill for the minimum and maximum predicted BG, eventual and predicted BG.
+Mouse over or Touch the Loop pill to view a tool tip containing one or more of the latest status messages. The most up-to-date NS also includes information in the Loop pill for the minimum and maximum predicted BG, eventual and predicted BG.
 
 ![img/loop_pill_message.png](img/loop_pill_message.png){width="750"}</dd>
 
