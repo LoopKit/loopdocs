@@ -6,8 +6,10 @@ This is the repo that contains the source files for the [Loop Docs](https://loop
 
 The easy way:
 * To suggest changes, please review Issues.  Add your comment if an Issue is already open, otherwise, add a new Issue.
+* If it is a simple typo or wording change, follow the instructions in this video to submit a pull request the easy way.
+  * [LoopDocs Pull Requests](https://youtu.be/6qSppvgGxpg)
 
-If you want to make a fork and provide pull requests, please keep reading.
+If it is a more substantive change and you want to make a fork and provide pull requests, please keep reading.
 
 ### Previewing Changes
 
