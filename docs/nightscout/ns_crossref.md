@@ -24,7 +24,7 @@ While the Loop app sends notifications locally on the Loop user's iPhone, parent
 
 ### Loop Follow
 
-Loop Follow was created by Jon Fawcett who took ideas from multiple other apps to create a single app to assist in his caregiving role. It is popular with Loopers who like the display and notifications as well as Loop caregivers. It can work with just the Nightscout URL and allows for easy customization of alerts and alarms.
+Loop Follow was created by Jon Fawcett who took ideas from multiple other apps to create a single app to assist in his caregiving role. It is popular with Loopers who like the display and notifications as well as Loop caregivers. It can work with just the Dexcom Share credentials and/or the Nightscout URL and allows for easy customization of alerts and alarms.
 
 * Please see
     * [Loop Follow github README](https://github.com/jonfawcett/LoopFollow/#loop-follow)
