@@ -70,7 +70,49 @@ There are a number of social media options. (Read the directions on each of thes
   * Both the Looped and LoopandLearn Facebook groups provide support for some Loop forks, which support other CGM, as well as other DIY closed loop options.
   * Many Loopers use the Nightscout tool to assist them in monitoring their settings in Loop. The fastest Nightscout help can be found in the original #wearenotwaiting community [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud).
   * For those not interested in Facebook or interested in what is coming next for Loop, join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the streams or you'll miss some interesting conversations.  
-  * Note - please only post a question in one group on Facebook or under one stream on zulipchat - many mentors monitor more than one place. If you don't hear an answer in 24 hours, then try a different place. On Facebook, leave your question posted after you've gotten an answer, but edit the original post to say it's been resolved.  This prevents mentors from needing to read all the answers to see if you've been helped. Others may have the same question and will read your post.
+
+### Search Then Post
+
+!!! danger ""
+    It's really easy to panic if Loop is not working for you, but take the time to do a quick search in your favorite social media group before posting a question. You might get an answer immediately.
+
+    Please post your question in only one group on Facebook or under one stream on zulipchat - many mentors monitor more than one place. If you don't hear an answer in 24 hours, then try a different place
+
+    On Facebook the protocol is:
+
+    * Search to see if your question has already been answered
+    * Add a comment if you find an existing post to say "I had this problem too and this post helped" - this bumps that post near the top so other can see it
+    * Make a new post if you still have a question
+    * Leave your question posted after you've gotten an answer, but edit the original post to say it's been resolved (add the word RESOLVED to the beginning of the original post)
+        * Mentors save time - they know you've been helped and don't need to read all the comments on that post
+        * Others may have the same question and will read your post
+
+
+## Contribute
+
+Please submit suggestions for updates and improvements to this documentation. If you notice a typo, poor word choice or some explanation that could be improved or clarified, there are a couple of options (more instructions follow):
+
+* You can issue a Pull Request (best if it is a simple typo or wording update)
+* You can open an Issue (best if a major rewrite is needed or you think a conversation would help)
+* You can post on Facebook or Zulipchat
+
+If you decide to do a Pull Request (PR) or create an Issue, first look to see if someone has already opened a [PR](https://github.com/LoopKit/loopdocs/pulls) or [Issue](https://github.com/LoopKit/loopdocs/issues) on the topic so you don't create a duplicate. Note - you do not have to log in to github to review the PR and Issues, but you cannot comment or add a new PR or Issue without logging in.
+
+* If a PR or Issue on the topic is open, feel free to add your comments (don't be shy)
+* If a PR doesn't exist, watch this [LoopDocs Pull Request video](https://youtu.be/6qSppvgGxpg) on how to create one (it's easy, video is less than 5 minutes)
+* If your Issue is new, please add it by clicking on the `New Issue` button
+    * Give the Issue a descriptive title
+    * Indicate what page or pages need updating with a brief description
+    * This opens the conversation (those who signed up to `watch` the loopdocs repository get a notice)
+    * This collaboration is quite useful in finalizing changes
+
+
+If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  
+
+* On [Facebook](https://www.facebook.com/groups/TheLoopedGroup) - make sure your post is clear that you have a comment about LoopDocs
+* On Loop Zulipchat, please use the [documentation stream, Loopdocs Issue](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue) topic
+
+There are many pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.
 
 For those interested in delving deeper, see the next few sections.
 
@@ -85,16 +127,6 @@ Loop is an open-source, shared project.
   * Read about how hard it was to get a new insulin pump (Omnipod) to work with Loop: [Insulin Pumps, Decapped Chips and Software Defined Radios](https://medium.com/@ps2) written by Loop developer Pete Schwamb and [Deep Dip Teardown of Tubeless Insulin Pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf) by Sergei Skorobogatov
 
 The project continues to be a labor-of-love by a community of users; maintained and improved by volunteers.
-
-## Contribute
-
-Please consider submitting suggestions for updates and improvements to this documentation or the [Loop app code](index.md#information-for-coders).
-
-For documentation, please go to the [LoopKit/loopdocs repository Issues page](https://github.com/LoopKit/loopdocs/issues). Review issues that are already open. If your issue is open, you are welcome to add comments or vote to have the issue handled promptly. If your issue is new, please add it by clicking on the `New Issue` button. Indicate what page or pages need updating with a brief description, and we'll collaborate from there. (Note - you do not have to log in to github to read the Issues, but you cannot comment or add a new Issue without logging in.)
-
-If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  On Facebook - make sure your post is clear that you have a comment about LoopDocs.  In Loop Zulipchat, please use the [documentation stream, Loopdocs Issue topic](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue)
-
-There are over 70 pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.
 
 ## Information for Coders
 
