@@ -90,11 +90,29 @@ The project continues to be a labor-of-love by a community of users; maintained 
 
 Please consider submitting suggestions for updates and improvements to this documentation or the [Loop app code](index.md#information-for-coders).
 
-For documentation, please go to the [LoopKit/loopdocs repository Issues page](https://github.com/LoopKit/loopdocs/issues). Review issues that are already open. If your issue is open, you are welcome to add comments or vote to have the issue handled promptly. If your issue is new, please add it by clicking on the `New Issue` button. Indicate what page or pages need updating with a brief description, and we'll collaborate from there. (Note - you do not have to log in to github to read the Issues, but you cannot comment or add a new Issue without logging in.)
+To contribute to this documentation, there are a couple of options (more instructions follow):
 
-If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  On Facebook - make sure your post is clear that you have a comment about LoopDocs.  In Loop Zulipchat, please use the [documentation stream, Loopdocs Issue topic](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue)
+* You can issue a Pull Request (best if it is a simple typo or wording update)
+* You can open an Issue (best if a major rewrite is needed or you think a conversation would help)
+* You can post on Facebook or Zulipchat
 
-There are over 70 pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.
+If you decide to do a Pull Request or create an Issue, first look to see if someone has already opened a [Pull Request](https://github.com/LoopKit/loopdocs/pulls) or [Issues](https://github.com/LoopKit/loopdocs/issues) on the topic so you don't create a duplicate.
+
+* If a PR or Issue on the topic is open, feel free to add your comments (don't be shy)
+* If a PR doesn't exist, watch this [LoopDocs Pull Request video](https://youtu.be/6qSppvgGxpg)  on how to create one (it's easy, video is less than 5 minutes)
+* If your Issue is new, please add it by clicking on the `New Issue` button
+    * Indicate what page or pages need updating with a brief description
+    * This opens the conversation and all who follow the loopdocs repository get a notice
+    * This collaboration is quite useful in finalizing changes
+
+Note - you do not have to log in to github to review the Pull Requests and Issues, but you cannot comment or add a new Pull Request or Issue without logging in.
+
+If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  
+
+* On [Facebook](https://www.facebook.com/groups/TheLoopedGroup) - make sure your post is clear that you have a comment about LoopDocs
+* On Loop Zulipchat, please use the [documentation stream, Loopdocs Issue](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue) topic
+
+There are many pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.
 
 ## Information for Coders
 
