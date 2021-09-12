@@ -74,7 +74,7 @@ There are a number of social media options. (Read the directions on each of thes
 ### Search Then Post
 
 !!! danger ""
-    It's really easy to panic if Loop is not working for you, but take the time to do a quick search in your favorite social group before posting a question. You might get an answer immediately.
+    It's really easy to panic if Loop is not working for you, but take the time to do a quick search in your favorite social media group before posting a question. You might get an answer immediately.
 
     Please post your question in only one group on Facebook or under one stream on zulipchat - many mentors monitor more than one place. If you don't hear an answer in 24 hours, then try a different place
 
