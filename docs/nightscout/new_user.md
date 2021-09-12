@@ -25,15 +25,17 @@ Please visit the [Nightscout](https://nightscout.github.io) documentation to rea
 Once your Nightscout site is operational and you've read the information about using your site, return to LoopDocs to update your configuration to Add Loop Variables to Nightscout.
 
 !!! info ""
-    The free DIY method provides sufficient storage for a single Loop user, but will require you to delete older data about once a year.
+    The free DIY method provides sufficient storage for a single Loop user, but will require you to delete older data after a year or two of use.
 
-### Add Loop Variables to Nightscout
+    If there are multiple Loopers in your family and you want to stay in the "free" tier, each will need their own site to stay under the monthly usage limitations.
 
-There are a few Loop-specific variables you should configure to get the most out of your Nightscout site. Follow the [instructions to retrofit an existing Nightscout site](update_user.md#step-2-editadd-config-vars).
+## Add Loop Variables to Nightscout
+
+There are a few Loop-specific variables you should configure to get the most out of your Nightscout site. Follow the [instructions to retrofit an existing Nightscout site](update_user.md).
 
 ## Add Nightscout to Loop
 
-Once you finish setting up your new Nightscout site, don't forget to [enter the website into your Loop settings](../operation/loop-settings/services.md#nightscout)! This way Loop will have access to your Nightscout site to upload all the wonderful data.
+Once you finish setting up your new Nightscout site, don't forget to [enter your website URL and API_SECRET into your Loop settings](../operation/loop-settings/services.md#nightscout)! This way Loop will have access to your Nightscout site to upload all the wonderful data.
 
 ## Troubleshooting
 

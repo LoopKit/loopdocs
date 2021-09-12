@@ -7,7 +7,7 @@ At the bottom of your Loop settings screen is a section called "Services". *The 
 
 ## Nightscout
 
-If you have an existing Nightscout site, add the Site URL and API Secret to have your Loop data transmitted to your Nightscout site. If you can’t remember your API Secret, it can be found under Settings, Reveal Config Vars for Heroku sites (or Application Settings, Connection Strings for Azure sites).
+If you have an existing Nightscout site, add the Site URL and API_SECRET to have your Loop data transmitted to your Nightscout site. If you can’t remember your API_SECRET, it can be found under Settings, Reveal Config Vars for Heroku sites (or Application Settings, Connection Strings for Azure sites).
 
 The two most common errors in filling out this section are:
 
