@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Branch FAQs - LoopDocs</title>
+        <title>Releases & Branches - LoopDocs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -341,7 +341,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Branch FAQs</a>
+    <a href="./" class="dropdown-item active">Releases & Branches</a>
 </li>
                                     
 <li>
@@ -405,12 +405,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#branch-and-version-faqs" class="nav-link">Branch and Version FAQs</a>
+            <li class="nav-item" data-level="1"><a href="#loop-releases-and-branches" class="nav-link">Loop Releases and Branches</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#what-are-branches" class="nav-link">What are branches?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#loop-releases" class="nav-link">Loop Releases</a>
               <ul class="nav flex-column">
               </ul>
@@ -420,6 +416,10 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#what-happened-to-omnipod-testing-branch" class="nav-link">What happened to Omnipod-testing branch?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#what-are-branches" class="nav-link">What are branches?</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -442,25 +442,15 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="branch-and-version-faqs">Branch and Version FAQs<a class="headerlink" href="#branch-and-version-faqs" title="Permanent link">⌁</a></h1>
-<p>This page is mostly suited to people who have built the app once already and then are coming back to update. It was originally created when Loop v2.0 was released.</p>
-<p>In the course of updating Loop, you may be wondering about the different branches, what the differences are, and such...so let's try to answer some of those questions as best we can.</p>
-<h2 id="what-are-branches">What are branches?<a class="headerlink" href="#what-are-branches" title="Permanent link">⌁</a></h2>
-<p>There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.</p>
-<p>To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone <a href="https://www.youtube.com/watch?v=cWqvYs4Azt0&amp;t=4s">video explanation about branches</a> created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into Loop master branch. Loop has moved on to using only one stable branch (master), with dev recommended for developer/testers.</p>
-<h3 id="loop-github-information">Loop GitHub Information<a class="headerlink" href="#loop-github-information" title="Permanent link">⌁</a></h3>
-<p>Loop developers own an account in GitHub called <a href="https://github.com/LoopKit">LoopKit</a>.  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.</p>
-<p>When you build Loop, in the background, Loop pulls those other frameworks (7 in total) into the build process using "Carthage".  Carthage is like a personal shopper. You give it a shopping list (the cartfile in Loop code is that shopping list) and it goes and fetches that for you during the build process. Sometimes your computer has an old shopping list...and that can cause build errors. Hence the "carthage update" fix in the Build Errors page...that command updates the shopping list to get the right versions of those frameworks.</p>
-<p align="center"><img alt="img/loopkit.png" src="../img/loopkit.png" width="650" /></p>
-<p>Anyways...so now you know about the general structure of Loop and LoopKit in Github. Now we can discuss Loop itself a little deeper.</p>
-<p>So let's imagine Loop as a cookbook. The developers are the authors/chefs of the recipes (code) in the cookbook. The authors spend countless hours testing new recipes, taste testing, documenting improvements. They send the drafts to the editor, who makes suggestions and eventually the cookbook is finalized. There are no grammar issues, no typos, the photos are beautiful and the recipes are yummy. They publish the book and you see a gorgeous final product on the shelves. That is called a "release" and it is the master branch. This book has been well-tested and is super stable. Every time you cook with those recipes, you know exactly what you're getting and lots of people have had a chance before you to make sure that it all tastes good. Master branch is stable and tested.</p>
-<p>But then...the chefs/developers go on a trip. They are inspired by new cuisine and want to add new recipes to the old cookbook. (Things like omnipod support and overrides are new "recipes" that were developed since the last master release, for example.) But, the process for developing a recipe is arduous. Lots of trial and error involved. Lots of tweaking ingredients (code). The editors try out the new recipes and offer feedback (similar to the <a href="https://github.com/LoopKit/Loop/issues">Issues List in GitHub</a>). While the recipes are being developed, they have a version of the old cookbook that gets marked up...edited in pencil a lot. Scribbles and notes in the side. Revisions happen frequently, because that's what testing new recipes is all about. These marked-up versions of the cookbook are called "dev" branch. Short for "development" branch. Like the name sounds...this is where new developments are happening, new recipes and tweaks.</p>
-<p>After much testing and tweaking, eventually the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in Loop, Loop's master branch is updated with the new features coming from dev (aka, "dev branch is merged into master branch"). When that happens, master branch gets another "release" version. For that moment, dev and master are exactly the same. They stay the same until the Loop developers start working on the next batch of improvements, could be the next hour even or days later, but the process begins again. The developers will start editing the code again and dropping those edits in dev branch for further development.</p>
+<h1 id="loop-releases-and-branches">Loop Releases and Branches<a class="headerlink" href="#loop-releases-and-branches" title="Permanent link">⌁</a></h1>
+<p>The new features added with each Loop release (starting with Loop version 2.0) are provided for reference.</p>
+<p>For more advanced users, there is also information about Loop branches.</p>
 <h2 id="loop-releases">Loop Releases<a class="headerlink" href="#loop-releases" title="Permanent link">⌁</a></h2>
 <p>The current released version for Loop master is v2.2.6. The dates and contents for Loop releases from v2.0 through v2.2.6 are summarized below in reverse chronological order (so newest release information comes first).</p>
 <div class="admonition warning">
 <p class="admonition-title">Check Current Release Status</p>
-<p>Release information is always found on the <a href="https://github.com/LoopKit/Loop/releases">GitHub LoopKit/Loop release page</a>. The information on this LoopDocs page is a summary of that information with a little extra explanation. Be aware that updates to LoopDocs may take some time after a new release comes out.</p>
+<p>Release information is always found on the <a href="https://github.com/LoopKit/Loop/releases">GitHub LoopKit/Loop release page</a>. The information on this LoopDocs page is a summary of that information with a little extra explanation.</p>
+<p>Be aware that updates to LoopDocs may take some time after a new release comes out.</p>
 </div>
 <h3 id="loop-v226">Loop v2.2.6<a class="headerlink" href="#loop-v226" title="Permanent link">⌁</a></h3>
 <p>Several users reported issues with IOB accounting in Loop v2.2.5, where IOB was being under-reported, which could cause Loop to continue recommending increases in insulin delivery.</p>
@@ -510,10 +500,15 @@
 <li>Prevent 049 pod faults during setup (rileylink_ios issue #627)</li>
 <li>See <a href="https://github.com/ps2/rileylink_ios/pull/676">RileyLink Pull Request 676</a> for additional details.</li>
 </ul>
-<p>Insulin Accounting:</p>
+<p>(REMOVED) Insulin Accounting:</p>
 <ul>
 <li>Reduced occurrences of overlaps in accounting for insulin via reservoir and dose history, which causes temporary overestimation of IOB</li>
 <li>See <a href="https://github.com/LoopKit/LoopKit/pull/344">Loop Pull Request 344</a> for details</li>
+<li>This modification (in v2.2.5) was removed for v2.2.6<ul>
+<li>It worked as advertised during testing, but . . .</li>
+<li>If the user's phone had trouble communicating with the Apple HealthKit app, this could cause IOB to be under-reported and cause Loop to provide more insulin than needed</li>
+</ul>
+</li>
 </ul>
 <p>Dexcom Non-US Share:</p>
 <ul>
@@ -654,6 +649,17 @@
 <p>When the code got to a stable, reliable state and was ready for a larger audience, omnipod-testing branch was made available as a "public testing" branch. This branch was pretty well-tested prior to public release, but not necessarily going to be perfect for everyone right away. There were expectations that some user-interface requests might be asked for after having a wider audience of users.</p>
 <p>Also, omnipod-testing branch was not going to undergo a lot of active revisions to it when it was released. The intent was to keep it as a fairly known, unchanged product for people rather than a constantly changing code set...that way if people noted a bug, it would be a more "known" code base to work to debug.</p>
 <p>Omnipod-testing branch has served its purpose as an initial platform to test Pod looping. It has been officially retired now and is no longer needed. Omnipod support has been folded into the normal master and dev branches now.  Thank you, omnipod-testing branch...you served us well. Happy retirement.</p>
+<h2 id="what-are-branches">What are branches?<a class="headerlink" href="#what-are-branches" title="Permanent link">⌁</a></h2>
+<p>There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.</p>
+<p>To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone <a href="https://www.youtube.com/watch?v=cWqvYs4Azt0&amp;t=4s">video explanation about branches</a> created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into Loop master branch. Loop has moved on to using only one stable branch (master), with dev recommended for developer/testers.</p>
+<h3 id="loop-github-information">Loop GitHub Information<a class="headerlink" href="#loop-github-information" title="Permanent link">⌁</a></h3>
+<p>Loop developers own an account in GitHub called <a href="https://github.com/LoopKit">LoopKit</a>.  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.</p>
+<p>When you build Loop, in the background, Loop pulls those other frameworks (7 in total) into the build process using "Carthage".  Carthage is like a personal shopper. You give it a shopping list (the cartfile in Loop code is that shopping list) and it goes and fetches that for you during the build process. Sometimes your computer has an old shopping list...and that can cause build errors. Hence the "carthage update" fix in the Build Errors page...that command updates the shopping list to get the right versions of those frameworks.</p>
+<p align="center"><img alt="img/loopkit.png" src="../img/loopkit.png" width="650" /></p>
+<p>Anyways...so now you know about the general structure of Loop and LoopKit in Github. Now we can discuss Loop itself a little deeper.</p>
+<p>So let's imagine Loop as a cookbook. The developers are the authors/chefs of the recipes (code) in the cookbook. The authors spend countless hours testing new recipes, taste testing, documenting improvements. They send the drafts to the editor, who makes suggestions and eventually the cookbook is finalized. There are no grammar issues, no typos, the photos are beautiful and the recipes are yummy. They publish the book and you see a gorgeous final product on the shelves. That is called a "release" and it is the master branch. This book has been well-tested and is super stable. Every time you cook with those recipes, you know exactly what you're getting and lots of people have had a chance before you to make sure that it all tastes good. Master branch is stable and tested.</p>
+<p>But then...the chefs/developers go on a trip. They are inspired by new cuisine and want to add new recipes to the old cookbook. (Things like omnipod support and overrides are new "recipes" that were developed since the last master release, for example.) But, the process for developing a recipe is arduous. Lots of trial and error involved. Lots of tweaking ingredients (code). The editors try out the new recipes and offer feedback (similar to the <a href="https://github.com/LoopKit/Loop/issues">Issues List in GitHub</a>). While the recipes are being developed, they have a version of the old cookbook that gets marked up...edited in pencil a lot. Scribbles and notes in the side. Revisions happen frequently, because that's what testing new recipes is all about. These marked-up versions of the cookbook are called "dev" branch. Short for "development" branch. Like the name sounds...this is where new developments are happening, new recipes and tweaks.</p>
+<p>After much testing and tweaking, eventually the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in Loop, Loop's master branch is updated with the new features coming from dev (aka, "dev branch is merged into master branch"). When that happens, master branch gets another "release" version. For that moment, dev and master are exactly the same. They stay the same until the Loop developers start working on the next batch of improvements, could be the next hour even or days later, but the process begins again. The developers will start editing the code again and dropping those edits in dev branch for further development.</p>
 <h2 id="whats-going-on-in-the-dev-branch">What's going on in the dev branch?<a class="headerlink" href="#whats-going-on-in-the-dev-branch" title="Permanent link">⌁</a></h2>
 <p>Like we said earlier, master and automatic-bolus branch are stable. You don't really need to watch those for changes.</p>
 <p>But, dev branch is a constantly shifting, moving place. If you choose to come into a dev branch build...you need to be aware that is what dev does...moves, shakes, changes, and will update code frequently and unannounced in the traditional sense that most users in Looped group or Instagram would see. Developers are not helped by people being in a dev branch if those users are mistakenly thinking of it as a stable master branch with lots of detailed docs to go with it. People should only use a dev branch build if they EDUCATE themselves on the expectations and how to properly manage dev information and updates. People using dev branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.</p>
