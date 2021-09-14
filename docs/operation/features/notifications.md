@@ -25,7 +25,7 @@ If you want to see the expiration date at any time, tap on Settings, then tap on
 ![Issue report displays Loop App expiration date](img/loop-app-expiration-issue-report.jpeg){width="250"}
 {align="center"}
 
-If you are running Loop v2.2.4 or older, you might be surprised by a ["Loop App Unavailable"](../../troubleshooting/loop-crashing.md#expired-app) display when the app reaches its expiration date.  
+If you are running Loop v2.2.4 or older, you might be surprised by a ["Loop" is No Longer Available](../../troubleshooting/loop-crashing.md#expired-app) display when the app reaches its expiration date.  
 
 * Workaround is to add a notice to your calendar when you build the app initially so you know that the one year app lifetime is nearing the end
 * This is still a good idea even with automated notifications to set your own desired alert window
