@@ -89,7 +89,9 @@ No. Loop will have the option to move between different pump types from within t
 
 If there is more than one Looper in the family, you only need to have one Apple Developer ID and only one annual payment. The adult who builds can use their Apple Dev ID to put the app on the Looper's phone.  The limit is 99 devices (phone and watch both count).  Unless it's a very large family, you should have no problem supporting everyone in your family. Building Loop on the second phone is much faster than the first one. It's a good idea to let someone else in the family know how to build and have access to your Apple password in case you're out of town. It's also a good idea to build Loop on a backup phone especially for travel. The Apple Developer ID and the Apple ID are two different things. PLEASE read this: [Loopers Need Their Own Apple ID](../../build/step6/#loopers-need-their-own-apple-id).
 
-If you are helping a Looper in your local diabetes group get an update on their phone, make sure you can text each other. They need to realize the Loop app on the phone is different if the build uses a different Apple Developer ID from the one currently on their phone. So they will have to on-board the new app, enter all the settings again and delete the old app. Because of the limit on the number of devices per Developer ID, be sure to limit the number of people you help.
+## What happens when I switch Apple Developer ID?
+
+The Loop app on the phone is different if the build uses a different Apple Developer ID from the one currently on the phone. So if the Apple Developer ID used for a new Loop build is different from the one used for the existing Loop app, there will be two Loop apps on the phone.  The Looper will have to on-board the new app, enter all the settings again and delete the old app. 
 
 ## Can I use someone else's Apple Developer account?
 

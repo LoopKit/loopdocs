@@ -26,11 +26,15 @@
 
 ## When to Update Loop
 
-The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process.
+Under ordinary circumstances, you do not *have to* update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability. Also, if you have updated your phone iOS since the last build, you should download a new copy of the code and you might also need to update the Mac operating system and the version of Xcode to support that phone iOS.
 
-Under ordinary circumstances, you do not *have to* update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability. Also, if you have updated your phone iOS since the last build, you should download a new copy of the code.
+Refer to [Loop Releases](../faqs/branch-faqs.md#loop-releases) for information about current and previous Loop versions.
 
-The Loop Developers strongly encourage you to update to Loop v2.2.6 (released Sep 6, 2021) as soon as possible. Please check out [Branch FAQs for v2.2.6](../faqs/branch-faqs.md#loop-v226)
+The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process. If you do not update and the "provisioning profile" on your phone expires, you will see this message:
+
+### "Loop" is No Longer Available
+
+When you see "Loop" is No Longer Available on your phone, the only solution is to rebuild the app.  All of your settings are still present on your phone, but your "provisioning profile" expired and you need to generate a new one. Once you build Loop on your phone, following the instructions on this page, all your settings will be maintained - assuming you build with the same [Apple Developers ID](../faqs/FAQs.md#what-happens-when-i-switch-apple-developer-id) that was used initially.
 
 ## Step 1: Install macOS and Xcode updates
 
@@ -114,6 +118,8 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
 
     `rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision`
     </br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.
+
+    Note - you are deleting provisioning profiles on your computer to force Xcode to generate new ones with your next build.  This does not affect the provisioning profiles currently on your phone.
 
     ![Screenshot: terminal after provisioning profile deletion](img/empty-profiles.png){width="650"}
     {align="center"}
