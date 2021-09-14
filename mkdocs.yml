@@ -85,7 +85,7 @@ nav:
     - 'Using This Site FAQs': 'faqs/docs-faqs.md'
     - 'General Loop FAQs': 'faqs/FAQs.md'
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
-    - 'Branch FAQs': 'faqs/branch-faqs.md'
+    - 'Releases & Branches': 'faqs/branch-faqs.md'
     - 'Loop dev Preview': 'faqs/dev-menus.md'
     - 'Update/Rebuild Loop FAQs': 'faqs/update-faqs.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
