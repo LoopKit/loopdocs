@@ -478,9 +478,11 @@
 </ul>
 </div>
 <h2 id="when-to-update-loop">When to Update Loop<a class="headerlink" href="#when-to-update-loop" title="Permanent link">⌁</a></h2>
-<p>The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process.</p>
-<p>Under ordinary circumstances, you do not <em>have to</em> update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability. Also, if you have updated your phone iOS since the last build, you should download a new copy of the code.</p>
-<p>The Loop Developers strongly encourage you to update to Loop v2.2.6 (released Sep 6, 2021) as soon as possible. Please check out <a href="../../faqs/branch-faqs/#loop-v226">Branch FAQs for v2.2.6</a></p>
+<p>Under ordinary circumstances, you do not <em>have to</em> update your Loop app until you are ready to grab new features. However, we encourage regular updates when a new version is released because they often contain bug fixes or improvements which may increase operational stability. Also, if you have updated your phone iOS since the last build, you should download a new copy of the code and you might also need to update the Mac operating system and the version of Xcode to support that phone iOS.</p>
+<p>Refer to <a href="../../faqs/branch-faqs/#loop-releases">Loop Releases</a> for information about current and previous Loop versions.</p>
+<p>The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process. If you do not update and the "provisioning profile" on your phone expires, you will see this message:</p>
+<h3 id="loop-is-no-longer-available">"Loop" is No Longer Available<a class="headerlink" href="#loop-is-no-longer-available" title="Permanent link">⌁</a></h3>
+<p>When you see "Loop" is No Longer Available on your phone, the only solution is to rebuild the app.  All of your settings are still present on your phone, but your "provisioning profile" expired and you need to generate a new one. Once you build Loop on your phone, following the instructions on this page, all your settings will be maintained - assuming you build with the same <a href="../../faqs/FAQs/#what-happens-when-i-switch-apple-developer-id">Apple Developers ID</a> that was used initially.</p>
 <h2 id="step-1-install-macos-and-xcode-updates">Step 1: Install macOS and Xcode updates<a class="headerlink" href="#step-1-install-macos-and-xcode-updates" title="Permanent link">⌁</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Verify macOS</p>
@@ -540,6 +542,7 @@
 </ul>
 <p><code>rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision</code>
 </br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.</p>
+<p>Note - you are deleting provisioning profiles on your computer to force Xcode to generate new ones with your next build.  This does not affect the provisioning profiles currently on your phone.</p>
 <p align="center"><img alt="Screenshot: terminal after provisioning profile deletion" src="../img/empty-profiles.png" width="650" /></p>
 </div>
 <h3 id="revoke-certificate-issue">Revoke Certificate Issue<a class="headerlink" href="#revoke-certificate-issue" title="Permanent link">⌁</a></h3>
