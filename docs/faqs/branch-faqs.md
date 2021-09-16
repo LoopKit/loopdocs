@@ -307,7 +307,7 @@ If you choose to use a dev build, you can stay abreast of developments in a numb
 
 ### Subscribe to the Zulipchat channels
 
-Use [Zulipchat](https://loop.zulipchat.com) forums for Loop. This forum has several "streams" of conversations depending on interest. I highly recommend following all the channels so you do not miss conversations.  You can select by channel and by topic within a channel to focus on a given conversation. If you are using dev branch, you must be in the #development channel.  If you want to know when LoopDocs gets updated, follow the #documentation channel. Code changes are called "commits" in GitHub. The #github channel will have an automated post whenever a new commit is made and it will give a brief line description of the commit.
+Use [Zulipchat](https://loop.zulipchat.com) forums for Loop. This forum has several "streams" of conversations depending on interest. I highly recommend following all the streams so you do not miss conversations.  You can select by stream and by topic within a stream to focus on a given conversation. If you are using dev branch, you must be in the #development stream.  If you want to know when LoopDocs gets updated, follow the #documentation stream. Code changes are called "commits" in GitHub. The #github stream will have an automated post whenever a new commit is made and it will give a brief line description of the commit.
 
 ![img/zulipchat.png](img/zulipchat.png){width="650"}
 {align="center"}

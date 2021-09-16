@@ -44,7 +44,7 @@ For example, after Dexcom G6 transmitters had been in-use for a while, a new sty
 
 No. Do not delete your old Loop. In fact, that is a bad idea as you will lose your currently paired pod and/or settings if you do that. So, don't delete (except for two situations below):
 
-1. You broke it: There used to be a glitch in Loop where if you entered the target correction range backwards, then your Loop app stopped working. You can't do that anymore, but it's always possible something else might require you do delete your app.
+1. You broke it: There used to be a glitch in Loop where if you entered the target correction range backwards, then your Loop app stopped working. You can't do that anymore, but it's always possible something else might require you to delete your app.
 
 2. Moving from dev branch back down to master branch. The way the new dev branch is coded may require you to delete your dev build prior to returning to master.
 
