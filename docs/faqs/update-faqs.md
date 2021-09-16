@@ -1,12 +1,18 @@
 # Updating/Rebuilding Loop FAQs
 
-SOOOO many questions about updating or rebuilding Loop. The general answer is that people tend to overthink this. Rebuilding your Loop app is really quite easy...so a short read of these questions should help a lot.
-
 First, please take a minute to understand what the words mean.
 
-"Updating Loop" is the process of getting a new download of Loop's code and using that to update your Loop. You do this when you want to switch branches. You do this when you want to get fixes or new features from the same branch. The process doesn't care if you are moving from omnipod-testing -> dev or jojo -> dev or master -> dev or any other combination.
+"Updating Loop" is the process of getting a new download of Loop's code and using that to update your Loop by building the code with Xcode and then installing the new app on your phone. You do this
+
+* When your one-year expiration date forces you (hint - start a few weeks early and take your time)
+* A new version of Loop is released and you want to install it
+* You want to try a different branch or fork of Loop (this used to be much more common several years ago when new features and improvements were being offered for testing prior to release in Loop)
 
 Updating Loop is the same idea as what happens to your other apps on your iPhone when you update them from the App Store on the phone. A refreshed version of the same app appears on the phone, simply replacing-in-place the same Loop you were using with an updated version.
+
+* Do NOT delete your current app from your phone - even if it says "Loop" is No Longer Available
+* There are files stored on your phone that will be read in as soon as the new Loop app is installed
+* If you deleted your app, then you have to enter all your settings again
 
 ## Where should I start when I want to update my Loop?
 
@@ -16,19 +22,31 @@ Do not simply build with your old downloaded folder from months ago. There is a 
 
 ## When do I have to update/rebuild?
 
-Absolute minimum: 1 year from when you last built (paid account).
+Absolute minimum:
 
-Good idea minimum: If on dev branch, frequently. I've found valuable updates to dev branch at least once a week lately...but I'd say monthly minimum at least for dev right now. Master and omnipod-testing branch do not have changes frequently.
+* 1 year from when you last built (paid account).
 
-Issue specific minimum: There are also times where you may need to update for "hot-fixes" to keep your Loop working when other things change. For example, the new style Dexcom transmitters changed their Bluetooth protocol. Loop's code was updated for the new transmitters so that offline looping can continue to work. If you don't update to get that fix, you will be forced to rely on internet-required looping because older versoin of Loop won't have the updated protocols.
+Good ideas:
+
+* When Apple releases a new iOS version, check to see if that requires an update to [Xcode](../build/step8.md#how-do-all-the-minimum-versions-relate-to-each-other) and if that update to Xcode requires a macOS update
+* Best practice - update your computer before you update your phone iOS so you can always be ready to build if necessary
+* Good practice - build to a phone (it doesn't need to be the Looper's phone) a couple of times year just so you don't forget how - this makes the one year rebuild much easier
+* If on [dev branch](branch-faqs.md#whats-going-on-in-the-dev-branch): Please follow the loop zulipchat forum so you can update when appropriate.
+
+Issue specific minimum:
+
+* There are also times where you may need to update for "hot-fixes" to keep your Loop working when other things change.
+
+For example, after Dexcom G6 transmitters had been in-use for a while, a new style Dexcom G6 transmitters began to be shipped with a different Bluetooth protocol. Loop's code was updated quickly to interface with the new transmitters (this enables offline looping instead of requiring use of Dexcom Share). But you only got that update to Loop by rebuilding the app.
+
 
 ## Will I have to delete my old Loop app?
 
 No. Do not delete your old Loop. In fact, that is a bad idea as you will lose your currently paired pod and/or settings if you do that. So, don't delete (except for two situations below):
 
-1. You broke it: There is a glitch in Loop where if you enter the target correction range backwards, then your Loop app will stop working. Correction range needs to be in minimum-maximum, for example 100-120 mg/dL. If you entered that as 120-100 mg/dL, Loop will not work during the time that backwards correction range is supposed to be active. In this case you would need to delete the app and rebuild.
+1. You broke it: There used to be a glitch in Loop where if you entered the target correction range backwards, then your Loop app stopped working. You can't do that anymore, but it's always possible something else might require you to delete your app.
 
-2. Moving from dev branch back down to jojo branch. The way the new dev branch is coded will require you to delete your dev build prior to going back jojo branch.
+2. Moving from dev branch back down to master branch. The way the new dev branch is coded may require you to delete your dev build prior to returning to master.
 
 ## Does updating make a separate, second Loop app?
 
@@ -46,18 +64,18 @@ Yes. So long as you use the same developer team as you originally built the app 
 
 ## How can I confirm what version was installed?
 
-The Loop's version is given at the top of the Loop settings page. Even better though, the new dev branch has very detailed info about the version of Loop you are using at the top of your Loop's Issue Report. This is a great new addition to help identify where, what, and when of your Loop version.
+The Loop's version is given at the top of the Loop settings page. Even better though, there is very detailed info about the version of Loop you are using at the top of your Loop's Issue Report. This is a great new addition to help identify where, what, and when of your Loop version. Note - the type of information found here has increased since 2019 - yours will look a little different.
 
-![img/loop-version.jpg](img/loop-version.jpg){width="450"}
+![img/loop-version.jpg](img/loop-version.jpg){width="300"}
 {align="center"}
 
 ## What if I'm changing branches? Does that matter?
 
-Does not matter. Moving between branches is an "updating Loop" action. Nothing about the information above changes.
+Does not matter. Moving between branches and forks is an "updating Loop" action. Nothing about the information above changes.
 
 ## What if I'm changing phones?
 
-Changing phones is a little different than updating. You will need to change pods in order to move to the new phone's Loop. And you will have to enter all your setting in again. Loop will not be "restored from backup" the way other apps are when switching phones...so you will have to actually build it fresh.
+Changing phones is a little different than updating. You can find the instructions written up in this [article](https://www.loopandlearn.org/new-device/).
 
 ## How long does it take?
 
