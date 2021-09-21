@@ -453,7 +453,29 @@
 </div>
 <h2 id="download-loop">Download Loop<a class="headerlink" href="#download-loop" title="Permanent link">⌁</a></h2>
 <p>You’ll need to download the Loop code. You will then build the app on your computer with Xcode, which will transfer the app to your phone or ipod.</p>
-<p>Most users should click on the master branch link below to download Loop code and then follow the rest of the steps until you have a new version on your device. (This link always points to the most recent version of the code.)</p>
+<h3 id="xcode-13-ios-15-changes">Xcode 13, iOS 15 changes<a class="headerlink" href="#xcode-13-ios-15-changes" title="Permanent link">⌁</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">DO NOT UPDATE your phone to iOS 15 without reading this</p>
+<p>Any Loop app built with Xcode version prior to Xcode 12.5 runs the risk of their Loop app immediately failing when the phone is updated to iOS 15. (Any one who last built with Catalina should not install iOS 15 without following "safe steps" below.)</p>
+<p>If you don't know what version of Xcode was used to build your app, do NOT update to iOS 15.</p>
+<p>Safe steps to keep Loop going if you want to install iOS 15</p>
+<ul>
+<li>update your macOS</li>
+<li>update your Xcode to version 13</li>
+<li>build the Loop app on your phone</li>
+<li>update phone to iOS 15</li>
+</ul>
+</div>
+<p>Modifications to building Loop with Xcode 13:</p>
+<ul>
+<li>iOS 15 requires Xcode version 13 to build</li>
+<li>You must use the LoopWorkspace method to build the master branch with Xcode 13</li>
+<li>The old download the zip method will not work once you update your Xcode to version 13</li>
+<li>You can use the <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> webpage, which has instructions on how to use a script to download Loop Master</li>
+</ul>
+<h3 id="xcode-12">Xcode 12<a class="headerlink" href="#xcode-12" title="Permanent link">⌁</a></h3>
+<p>If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can still click on the master branch link below to download Loop code and then follow the rest of the steps until you have a new version on your device. (This link always points to the most recent version of the code.)</p>
+<p>However, the <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> is easy to use (just different) and gets you the same Loop app version built on your phone. It is still worth reading Step 14 but some of the steps are done for you by the script.</p>
 <hr />
 <ul>
 <li><a href="https://github.com/LoopKit/Loop/archive/master.zip">Loop: master branch</a></li>
