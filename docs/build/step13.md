@@ -45,7 +45,16 @@ However, the [Build Select Script](https://www.loopandlearn.org/build-select/) i
 
 ---
 
+**WARNING** - Temporary issue with zip download build (Sep 25, 2021) - it will not build without errors
+
 - [Loop: master branch](https://github.com/LoopKit/Loop/archive/master.zip)
+
+If you are an experienced Looper who really wants to use the zip download, change the last line of the carthage.resolved file in the Loop-master directory.
+
+It should say:
+
+`github "ps2/rileylink_ios" "15d19970f589d1678a486a9b7cfa2430111ee3ea"`
+
 
 ---
 
