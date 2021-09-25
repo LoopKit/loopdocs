@@ -51,9 +51,9 @@ However, the [Build Select Script](https://www.loopandlearn.org/build-select/) i
 
 ---
 
-If you are an experienced Looper who really wants to use the zip download now and not wait for this issue to be fixed, you can change the last line of the carthage.resolved file in the Loop-master directory. (This is only for Xcode 12 building onto iOS 14 or earlier devices.  Devices with iOS 15 must use Xcode 13 and must use the workspace build.)
+If you are an experienced Looper who really wants to use the zip download now and not wait for this issue to be fixed, you can change the last line of the Cartfile.resolved file in the Loop-master directory. (This is only for Xcode 12 building onto iOS 14 or earlier devices.  Devices with iOS 15 must use Xcode 13 and must use the workspace build.)
 
-Last line of `carthage.resolved` in the Loop-master folder should say:
+Last line of `Cartfile.resolved` in the Loop-master folder should say:
 
 `github "ps2/rileylink_ios" "15d19970f589d1678a486a9b7cfa2430111ee3ea"`
 
