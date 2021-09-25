@@ -23,6 +23,23 @@ Once you've completed this quick overview of the build steps, return and read th
 
 The next stage is to work through the steps and complete the tasks on each page.  You can do one a day or blaze through them all.  Just be sure to read carefully and if you are confused - reach out for help.
 
+Yes - if you were paying attention, the suggestion is to go from this page through Build Steps 1 through 14 three times:
+
+* Read just the highlights (top three boxes)
+* Skim each page
+* Do the work
+
+### Build-Overview: iOS 15 Requires Xcode 13
+
+!!! warning "iOS 15 Requires Xcode 13"
+
+    In September 2021, Apple released iOS 15 (phone operating system).  
+
+    * In order to build Loop on an iOS 15 device, you must use Xcode 13  
+    * If this terminology confuses you - don't worry, it will be explained step-by-step
+
+    The advent of Xcode 13 modified the way in which Loop is built. In some ways it is easier and faster - but it is different. LoopDocs is being updated to support folks running Xcode 13.  Be patient.
+
 ## Introduction to Loop Video
 
 If you have never used Loop, click on links below for an introduction.
