@@ -25,9 +25,9 @@ The next stage is to work through the steps and complete the tasks on each page.
 
 Yes - if you were paying attention, the suggestion is to go from this page through Build Steps 1 through 14 three times:
 
-* Read just the highlights (top three boxes)
-* Skim each page
-* Do the work
+1. Read just the highlights (top three boxes)
+1. Skim each page
+1. Do the work
 
 ### Build-Overview: iOS 15 Requires Xcode 13
 
