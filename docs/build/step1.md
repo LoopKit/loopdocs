@@ -51,7 +51,7 @@ The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big 
 
 ### Build Step 1: iOS 15 Warning if you built with Catalina
 
-These next few lines are for Loopers who previously built with older iOS.  
+These next few lines are for Loopers who previously built with older macOS.  
 
 * **WARNING** If you built Loop with Catalina - DO NOT UPGRADE your phone to iOS 15 - FIRST upgrade to Xcode 13, build the app on your phone - THEN upgrade to iOS 15. Otherwise you will get the dreaded ["Loop" is no longer available](updating.md#loop-is-no-longer-available) and need to rush through the updating Loop steps.  (Your pod will continue delivering basal, but you will not be able to bolus.)
 
