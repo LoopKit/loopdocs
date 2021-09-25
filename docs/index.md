@@ -74,7 +74,7 @@ There are a number of social media options. (Read the directions on each of thes
 ### Search Then Post
 
 !!! danger ""
-    It's really easy to panic if Loop fails to build or if you are having trouble using your Loop app, but take the time to do a quick search in these docs and in your favorite social media group before posting a question. You might get an answer immediately.n
+    It's really easy to panic if Loop fails to build or if you are having trouble using your Loop app, but take the time to do a quick search in these docs and in your favorite social media group before posting a question. You might get an answer immediately.
 
     Please post your question in only one group on Facebook or under one stream on zulipchat - many mentors monitor more than one place. If you don't hear an answer in 24 hours, then try a different place
 
