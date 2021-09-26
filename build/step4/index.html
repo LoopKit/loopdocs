@@ -407,6 +407,10 @@
             
             <li class="nav-item" data-level="1"><a href="#step-4-compatible-cgm" class="nav-link">Step 4: Compatible CGM</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#continuous-glucose-monitor-cgm" class="nav-link">Continuous Glucose Monitor (CGM)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#dexcom-g5-and-g6-cgm" class="nav-link">Dexcom G5 and G6 CGM</a>
               <ul class="nav flex-column">
               </ul>
@@ -464,7 +468,13 @@
 <li><strong>"What about Eversense?"</strong> Eversense's application does not integrate with Apple Health nor has the communications protocols for Eversense been reverse engineered for iOS. Therefore, Eversense is not currently compatible with Loop.</li>
 </ul>
 </div>
+<h2 id="continuous-glucose-monitor-cgm">Continuous Glucose Monitor (CGM)<a class="headerlink" href="#continuous-glucose-monitor-cgm" title="Permanent link">⌁</a></h2>
 <p>A continuous glucose monitor (CGM) provides Loop with blood glucose readings. These readings allow Loop to model the current glucose trend and predict future blood glucose based on carbohydrate input and your Loop settings. The following are the types of CGMs compatible with Loop. CGM readings are a required part of looping. If your Loop app is unable to retrieve blood glucose (BG) data, it will not be able to loop.</p>
+<div class="admonition warning">
+<p class="admonition-title">Dexcom G4/G5 Support</p>
+<p><a href="https://www.dexcom.com/obsolescence">Dexcom has announced plans to stop supporting the G5 system</a>; in the US the G5 app will stop working.  Because G4 and G5 use the same sensors, this will affect availability of the sensors.</p>
+<p>There are third party apps, which interface with G4 and G5 transmitters, supported by some forks of Loop. The version of Loop supported by these documents only works with the CGM explicitly listed below.</p>
+</div>
 <h2 id="dexcom-g5-and-g6-cgm">Dexcom G5 and G6 CGM <img alt="img/g5.jpg" src="../img/g5.jpg" width="150" /><a class="headerlink" href="#dexcom-g5-and-g6-cgm" title="Permanent link">⌁</a></h2>
 <p>Dexcom G5 and G6 CGM data is transmitted directly to the Dexcom app on your iPhone via Bluetooth. Neither of these two systems require the use of a stand-alone receiver. For Loop to function without an internet connection, you will need the Dexcom app running on the same device as Loop.</p>
 <h2 id="dexcom-g4-cgm-with-share-receiver">Dexcom G4 CGM with Share Receiver <img alt="img/g4_receiver.png" src="../img/g4_receiver.png" width="150" /><a class="headerlink" href="#dexcom-g4-cgm-with-share-receiver" title="Permanent link">⌁</a></h2>

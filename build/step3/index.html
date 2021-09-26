@@ -446,18 +446,21 @@
 <div class="admonition info">
 <p class="admonition-title">Summary</p>
 <ul>
-<li>If you have a big clunky PDM with a built-in BG meter...you can use your pods for Loop. (These pods have a clear needle cap.)</li>
-<li>If you have a slim touch screen android-looking PDM...you can NOT use your pods for Loop. (These pods have a blue needle cap.)</li>
-<li>If you have a Medtronic, check the list to ensure compatible model/firmware.</li>
+<li>If you have a big clunky PDM with a built-in BG meter, you can use your pods for Loop. (These pods, also known as Eros pods, have a clear needle cap.)</li>
+<li>If you have a slim touch screen android-looking PDM, you can NOT use your Dash pods for Loop. (These pods have a blue needle cap.)</li>
+<li>If you have a Medtronic, check the <a href="#check-medtronic-pump-version">Medtronic Pump Version</a> list to ensure compatible model/firmware.</li>
 </ul>
 </div>
 <div class="admonition faqs">
 <p class="admonition-title">FAQs</p>
 <ul>
-<li><strong>"How can I find a compatible Medtronic pump?"</strong> Refer to <a href="finding-a-medtronic-pump">Finding a Medtronic Pump</a></li>
-<li><strong>"What are the differences between Medtronic pump models?"</strong> This question is also answered in the Extra Details section below.</li>
-<li><strong>"But what about the other types of pumps?"</strong> No other pumps work with Loop at this time.  If you have a DanaRS, DanaR, Accu-Chek Insight, Accu-Chek Combo, you could check out <a href="https://androidaps.readthedocs.io/en/latest/index.html">AndroidAPS looping system</a>. If you have a Medtronic 512 or 712, you could check out <a href="https://openaps.readthedocs.io/en/latest/">OpenAPS</a> as that system supports the 512 and 712 models in addition to the other Loop-compatible Medtronic pumps. Neither of those systems currently support Omnipod for looping.</li>
-<li><strong>"Can I change the firmware of my Medtronic pump?"</strong> Do you work at Medtronic with insider access to the secret tools and firmware versions to do that? Might lose your job, but I'd bet you could do it then. We don't have access to that though.</li>
+<li><strong>"How can I find a compatible Medtronic pump?"</strong> Refer to <a href="#finding-a-medtronic-pump">Finding a Medtronic Pump</a></li>
+<li><strong>"What are the differences between Medtronic pump models?"</strong> This question is also answered in the <a href="#extra-details-on-medtronic">Extra Details</a> section</li>
+<li><strong>"But what about the other types of pumps?"</strong> No other pumps work with Loop at this time  <ul>
+<li>There are other open-source closed loop options such as <a href="https://androidaps.readthedocs.io/en/latest/index.html">AAPS: Android Artificial Pancreas System</a> and <a href="https://openaps.readthedocs.io/en/latest/">OpenAPS</a> that support other pumps.</li>
+</ul>
+</li>
+<li><strong>"Can I change the firmware of my Medtronic pump?"</strong> No.</li>
 </ul>
 </div>
 <h2 id="pumps-compatible-with-loop">Pumps Compatible with Loop<a class="headerlink" href="#pumps-compatible-with-loop" title="Permanent link">⌁</a></h2>
@@ -618,14 +621,14 @@
 <h2 id="omnipod-pumps">Omnipod Pumps<a class="headerlink" href="#omnipod-pumps" title="Permanent link">⌁</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Reminder and Disclaimer</p>
-<p>The use of Eros pods with Loop is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved. You are fully responsible for your use of this project and do so at your own risk. Please read these documents and familiarize yourself with Loop before using.</p>
+<p>The use of Eros pods with Loop is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Loop build, setup, or operation. You are fully responsible for your use of this project and do so at your own risk. Please read these documents and familiarize yourself with Loop before using.</p>
 </div>
 <h3 id="eros-loop-will-work-with-these-pods">Eros - Loop Will Work with These Pods<a class="headerlink" href="#eros-loop-will-work-with-these-pods" title="Permanent link">⌁</a></h3>
 <p>Eros pods were launched in 2013 and continue to be sold by Insulet. As far as we know, there have been no plans or timelines announced for the discontinuation of Eros pods for existing customers. Insulet doesn't specifically call these "Eros" anymore, they just use the term "omnipod system". For clarity, from <a href="https://www.myomnipod.com/about">Insulet's webpage</a>:</p>
 <p>Eros system has that PDM we all recognize from the last several years.</p>
 <p align="center"><img alt="img/eros.png" src="../img/eros.png" width="750" /></p>
 <h3 id="dash-loop-will-not-work-with-dash-pods">DASH - Loop Will Not Work with DASH Pods<a class="headerlink" href="#dash-loop-will-not-work-with-dash-pods" title="Permanent link">⌁</a></h3>
-<p>Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop will not be compatible with the DASH system.</p>
+<p>Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop is not currently compatible with the DASH system.</p>
 <p align="center"><img alt="img/dash.png" src="../img/dash.png" width="750" /></p>
 <h2 id="next-step-compatible-cgm">Next Step: Compatible CGM<a class="headerlink" href="#next-step-compatible-cgm" title="Permanent link">⌁</a></h2>
 <p>Now you are ready to move onto Step 4 to check if you have a <a href="../step4/">Compatible CGM</a>.</p></div>

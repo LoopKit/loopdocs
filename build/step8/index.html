@@ -411,6 +411,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#version-relationship-overview" class="nav-link">Version Relationship Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#how-do-all-the-minimum-versions-relate-to-each-other" class="nav-link">How do all the minimum versions relate to each other?</a>
               <ul class="nav flex-column">
               </ul>
@@ -443,7 +447,7 @@
 <li>Check iPhone/iPod iOS version<ul>
 <li>The iOS version determines minimum Xcode version</li>
 <li>The minimum Xcode version determines minimum macOS version</li>
-<li>If necessary, update macOS</li>
+<li>If necessary, update <a href="../step1/#check-your-macos">macOS</a> first and then return to this step</li>
 </ul>
 </li>
 <li>Download Xcode from your computer's App Store application</li>
@@ -472,13 +476,14 @@
 <ul>
 <li>Open your App Store in your computer and search for Xcode</li>
 <li>You will be downloading it brand new or updating an existing installation</li>
-<li>If the version number you need is bigger than what is shown, stop and review the rest of this page<ul>
-<li>This image is old - latest Xcode version is 12.5.1 (July 22, 2021)</li>
+<li>If the version number you need is bigger than what is shown in the App Store, you need to update <a href="../step1/#check-your-macos">macOS</a> first<ul>
+<li>This image is old (ignore the version number in this graphic)</li>
+<li>For example, Xcode version 13 was released September 20, 2021</li>
 </ul>
 </li>
 </ul>
 <p align="center"><img alt="Screenshot: Apple Store search for Xcode" src="../img/xcode.png" width="750" /></p>
-<h2 id="how-do-all-the-minimum-versions-relate-to-each-other">How do all the minimum versions relate to each other?<a class="headerlink" href="#how-do-all-the-minimum-versions-relate-to-each-other" title="Permanent link">⌁</a></h2>
+<h2 id="version-relationship-overview">Version Relationship Overview<a class="headerlink" href="#version-relationship-overview" title="Permanent link">⌁</a></h2>
 <p>Most people will update their iOS on their iPhones more often than they update their macOS or Xcode.  You know how it goes...you're tapping on your phone one day and it says there's a new version of iOS available for your phone. Want to update it now? Or be reminded of it later? Or maybe you even have the setting on your phone set to automatically install iOS updates.</p>
 <p>Because the update looks so innocuous and we all lead busy lives, we forget that there might be consequences to iOS updates.</p>
 <div class="admonition green">
@@ -487,54 +492,47 @@
 </div>
 <div class="admonition info">
 <p class="admonition-title">Minimum Xcode Version</p>
-<p>The <strong>minimum</strong> version of Xcode you need is dependent on your version of iOS. Minimum means that later version of Xcode and Mac OS work with the earlier version of iOS.</p>
-<ul>
-<li>If your phone is running iOS 14.5 and higher, that requires Mac OS 11.x (Big Sur) and Xcode 12.5</li>
-<li>If your phone is running iOS 14.1 - 14.5, that requires at least Xcode 12.# where the # must be as large as the 14.# iOS value (in other words, for many iOS 14.x updates, Xcode also had to be updated - it has settled down now)</li>
-<li>If your phone is running iOS 12.4, Xcode 12.5.1 on a mac with macOS 11.4 (Big Sur) builds Loop just fine</li>
-<li>If you are running iOS 14, we recommended you update to at the latest version; some iOS 14 updates were pretty important<ul>
-<li>iOS 14 versions up through 14.4 require Catalina (macOS 10.15.4) as a minimum</li>
-<li>As of iOS 14.5, your Mac must be running Big Sur (macOS 11.x)</li>
-</ul>
-</li>
-</ul>
+<p>The <strong>minimum</strong> version of Xcode you need is dependent on your version of iOS.</p>
+<p><strong>Please Read</strong>: <a href="#how-do-all-the-minimum-versions-relate-to-each-other">Minimum Version List</a></p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Can't find the required Xcode version</p>
 <ul>
-<li>If your computer is running macOS 10.15.2, the App Store won't show Xcode version 12</li>
+<li>If your computer is not running at least macOS 11.3, the App Store won't show Xcode version 13</li>
 <li>You must use iOS to determine which Xcode, which determines which macOS</li>
 <li>Update your computer to at least that minimum macOS first</li>
 </ul>
-<p>Don't be the person who posts for help saying, "I'm trying to update my Loop app but am getting errors." When asked what Xcode version they have and if they've updated, they respond, "I don't have any Xcode updates available in the App Store...so I must be running the most current version." Actually, they forgot to check for macOS updates and therefore cannot see the needed Xcode update yet.</p>
+<p>Don't be the person who posts for help saying, "I'm trying to update my Loop app but am getting errors." When asked what Xcode version they have and if they've updated, they respond, "I don't have any Xcode updates available in the App Store, so I must be running the most current version."</p>
+<p>Actually, they forgot to check for <a href="../step1/#check-your-macos">macOS</a> updates and therefore cannot see the needed Xcode update yet.</p>
 </div>
-<p>The chart below is a helpful map of how to read of the minimum versions you'll need based on your iOS. (Note: this graphic is not updated with every iOS update - go to the link provided and use this figure as a map to read the minimum requirements.)  Every attempt will be made to update the words promptly - that's much easier than updating the figure.</p>
+<h3 id="after-update-reboot">After Update - Reboot<a class="headerlink" href="#after-update-reboot" title="Permanent link">⌁</a></h3>
+<p>After any update of macOS or Xcode, things might not work the first time you try to build Loop.</p>
+<p>Before posting for help - do a reboot and try again.</p>
+<h2 id="how-do-all-the-minimum-versions-relate-to-each-other">How do all the minimum versions relate to each other?<a class="headerlink" href="#how-do-all-the-minimum-versions-relate-to-each-other" title="Permanent link">⌁</a></h2>
+<p>The list below is for the <strong>minimum</strong> versions you'll need based on your iOS.</p>
+<p><strong>Newer</strong> versions are always OK and should be used if your computer will accept the upgrade.</p>
 <ul>
-<li>
-<p>If you are running an iPhone with iOS 14.5 or greater:</p>
-<ul>
-<li>
-<p>macOS: You need to make sure your macOS is 11.0 (Big Sur) at a minimum as the first step. If you don't have the minimum version, go to <a href="../step1/#check-your-macos">Step 1 Compatible Computer</a> and follow directions for updating your macOS.</p>
-</li>
-<li>
-<p>Xcode: Now that your macOS is updated to at least 11.0, the App Store in your computer will have Xcode 12.5 (or newer) available for you to download/update.</p>
-</li>
+<li>If you are running an iPhone/iPod with iOS 15 or greater:<ul>
+<li><a href="../step1/#check-your-macos">macOS</a>: version 11.3 (Big Sur)</li>
+<li>Xcode: version 13</li>
+<li>Expect the facts associated with iOS 15 to change faster than LoopDocs will be updated</li>
 </ul>
 </li>
-<li>
-<p>If you are running an iPhone with iOS 14 through 14.4.x:</p>
-<ul>
-<li>
-<p>macOS: You need to make sure your macOS is 10.15.4 (Catalina) at a minimum as the first step. If you don't have the minimum version, go to <a href="../step1/#check-your-macos">Step 1 Compatible Computer</a> and follow directions for updating your macOS. If at all possible, update your Mac to Big Sur and your phone to the latest iOS 14.x now before iOS 15 is released.</p>
+<li>If you are running an iPhone/iPod with iOS 14.5 through 14.8:<ul>
+<li><a href="../step1/#check-your-macos">macOS</a>: version 11.0 (Big Sur)</li>
+<li>Xcode: version 12.5</li>
+</ul>
 </li>
-<li>
-<p>Xcode: Now that your macOS is updated to at least 10.15.4, the App Store in your computer will have Xcode 12.4 available for you to download/update.</p>
-</li>
+<li>If you are running an iPhone/iPod with iOS 14 through 14.4.x:<ul>
+<li><a href="../step1/#check-your-macos">macOS</a>: version 10.15.4 (Catalina)</li>
+<li>If you build Loop using <a href="../../faqs/update-faqs/#how-can-i-confirm-xcode-version-i-used">Xcode 12.4 or earlier</a>  - <strong>do NOT upgrade that phone to iOS 15</strong> - the Loop app will immediately stop working</li>
+<li>Xcode: version 12.4</li>
 </ul>
 </li>
 </ul>
-<p>Future update alert - iOS 15 will be released soon and is expected to require macOS 12.0 (Monterey) and Xcode 13. <a href="../step2/#turn-off-automatic-updates">Turn Off Automatic Updates</a></p>
-<p>(Source for the chart is <a href="https://en.wikipedia.org/wiki/Xcode">Wikipedia</a>. Remember - follow the link and scroll down to the figure to actually check versions - the graphic shown below is a map of how to read the figure at Wikipedia.)</p>
+<h3 id="wikipedia-chart-for-apple-versions">Wikipedia Chart for Apple Versions<a class="headerlink" href="#wikipedia-chart-for-apple-versions" title="Permanent link">⌁</a></h3>
+<p>This graphic (copied from Wikipedia) is not updated with every iOS update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the <a href="#how-do-all-the-minimum-versions-relate-to-each-other">Minimum Version List</a> promptly - that's much easier than updating a graphic.</p>
+<p>Follow this link to <a href="https://en.wikipedia.org/wiki/Xcode">Wikipedia</a> and scroll down to the the current version of this figure - the graphic shown below is a map of how to read the current version of this figure at Wikipedia.</p>
 <p align="center"><img alt="Screenshot: Wikipedia Xcode 11.x-12.x example; relationship for iOS, Xcode, macOS; highlights how to read current graphic" src="../img/minimum-related.png" width="750" /></p>
 <h2 id="what-happens-if-you-try-using-too-old-of-xcode">What happens if you try using too old of Xcode?<a class="headerlink" href="#what-happens-if-you-try-using-too-old-of-xcode" title="Permanent link">⌁</a></h2>
 <div class="admonition warning">
@@ -542,7 +540,7 @@
 <ul>
 <li>If you try to build with a version of Xcode older than 11.4.1 you will get a Revoke Certificate message when you try to sign targets</li>
 <li>Go to <a href="../updating/#revoke-certificate-issue">Revoke Certificate Issue</a> to see the error message</li>
-<li>You should update Xcode (on July 27, 2021, Xcode is at version 12.5.1)<ul>
+<li>Solution: update Xcode<ul>
 <li>Go to <a href="../updating/#step-1-install-macos-and-xcode-updates">Install macOS and Xcode updates</a></li>
 </ul>
 </li>
