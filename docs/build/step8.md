@@ -7,7 +7,7 @@
     - Check iPhone/iPod iOS version
         - The iOS version determines minimum Xcode version
         - The minimum Xcode version determines minimum macOS version
-        - If necessary, update macOS
+        - If necessary, update [macOS](step1.md#check-your-macos) first and then return to this step
     - Download Xcode from your computer's App Store application
 
 !!! faqs "FAQs"
@@ -29,14 +29,15 @@ If you've done your homework (read this entire page) and are ready to download a
 
 - Open your App Store in your computer and search for Xcode
 - You will be downloading it brand new or updating an existing installation
-- If the version number you need is bigger than what is shown, stop and review the rest of this page
-    - This image is old - latest Xcode version is 12.5.1 (July 22, 2021)
+- If the version number you need is bigger than what is shown in the App Store, you need to update [macOS](step1.md#check-your-macos) first
+    - This image is old (ignore the version number in this graphic)
+    - For example, Xcode version 13 was released September 20, 2021
 
 
 ![Screenshot: Apple Store search for Xcode](img/xcode.png){width="750"}
 {align="center"}
 
-## How do all the minimum versions relate to each other?
+## Version Relationship Overview
 
 Most people will update their iOS on their iPhones more often than they update their macOS or Xcode.  You know how it goes...you're tapping on your phone one day and it says there's a new version of iOS available for your phone. Want to update it now? Or be reminded of it later? Or maybe you even have the setting on your phone set to automatically install iOS updates.
 
@@ -49,42 +50,52 @@ Because the update looks so innocuous and we all lead busy lives, we forget that
 
 !!! info "Minimum Xcode Version"
 
-    The **minimum** version of Xcode you need is dependent on your version of iOS. Minimum means that later version of Xcode and Mac OS work with the earlier version of iOS.
+    The **minimum** version of Xcode you need is dependent on your version of iOS.
 
-      - If your phone is running iOS 14.5 and higher, that requires Mac OS 11.x (Big Sur) and Xcode 12.5
-      - If your phone is running iOS 14.1 - 14.5, that requires at least Xcode 12.# where the # must be as large as the 14.# iOS value (in other words, for many iOS 14.x updates, Xcode also had to be updated - it has settled down now)
-      - If your phone is running iOS 12.4, Xcode 12.5.1 on a mac with macOS 11.4 (Big Sur) builds Loop just fine
-      - If you are running iOS 14, we recommended you update to at the latest version; some iOS 14 updates were pretty important
-          - iOS 14 versions up through 14.4 require Catalina (macOS 10.15.4) as a minimum
-          - As of iOS 14.5, your Mac must be running Big Sur (macOS 11.x)
+    **Please Read**: [Minimum Version List](#how-do-all-the-minimum-versions-relate-to-each-other)
 
 
 !!! warning "Can't find the required Xcode version"
-    - If your computer is running macOS 10.15.2, the App Store won't show Xcode version 12
+    - If your computer is not running macOS 11.3, the App Store won't show Xcode version 13
     - You must use iOS to determine which Xcode, which determines which macOS
     - Update your computer to at least that minimum macOS first
 
+    Don't be the person who posts for help saying, "I'm trying to update my Loop app but am getting errors." When asked what Xcode version they have and if they've updated, they respond, "I don't have any Xcode updates available in the App Store, so I must be running the most current version."
 
-    Don't be the person who posts for help saying, "I'm trying to update my Loop app but am getting errors." When asked what Xcode version they have and if they've updated, they respond, "I don't have any Xcode updates available in the App Store...so I must be running the most current version." Actually, they forgot to check for macOS updates and therefore cannot see the needed Xcode update yet.
+    Actually, they forgot to check for [macOS](step1.md#check-your-macos) updates and therefore cannot see the needed Xcode update yet.
 
-The chart below is a helpful map of how to read of the minimum versions you'll need based on your iOS. (Note: this graphic is not updated with every iOS update - go to the link provided and use this figure as a map to read the minimum requirements.)  Every attempt will be made to update the words promptly - that's much easier than updating the figure.
+### After Update - Reboot
 
-* If you are running an iPhone with iOS 14.5 or greater:
+After any update of macOS or Xcode, things might not work the first time you try to build Loop.
 
-    * macOS: You need to make sure your macOS is 11.0 (Big Sur) at a minimum as the first step. If you don't have the minimum version, go to [Step 1 Compatible Computer](step1.md#check-your-macos) and follow directions for updating your macOS.
+Before posting for help - do a reboot and try again.
 
-    * Xcode: Now that your macOS is updated to at least 11.0, the App Store in your computer will have Xcode 12.5 (or newer) available for you to download/update.
+## How do all the minimum versions relate to each other?
+
+The list below is for the **minimum** versions you'll need based on your iOS.
+
+Newer versions are always OK and should be used if your computer will accept the upgrade.
+
+* If you are running an iPhone/iPod with iOS 15 or greater:
+    * [macOS](step1.md#check-your-macos): version 11.3 (Big Sur)
+    * Xcode: version 13 (or newer)
+    * Expect the facts associated with iOS 15 to change faster than LoopDocs will be updated
+* If you are running an iPhone/iPod with iOS 14.5 through 14.8:
+    * [macOS](step1.md#check-your-macos): version 11.0 (Big Sur)
+    * Xcode: version 12.5 (or newer)
+* If you are running an iPhone/iPod with iOS 14 through 14.4.x:
+    * [macOS](step1.md#check-your-macos): version 10.15.4 (Catalina)
+    * If you build Loop using [Xcode 12.4 or earlier](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used)  - **do NOT upgrade that phone to iOS 15** - the Loop app will immediately stop working
+    * Xcode: version 12.4
+* If you are running an iPhone/iPod with iOS 12.x, Xcode 13 on a mac with Big Sur still builds Loop just fine
 
 
-* If you are running an iPhone with iOS 14 through 14.4.x:
+### Wikipedia Chart for Apple Versions
 
-    * macOS: You need to make sure your macOS is 10.15.4 (Catalina) at a minimum as the first step. If you don't have the minimum version, go to [Step 1 Compatible Computer](step1.md#check-your-macos) and follow directions for updating your macOS. If at all possible, update your Mac to Big Sur and your phone to the latest iOS 14.x now before iOS 15 is released.
+This graphic (copied from Wikipedia) is not updated with every iOS update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the [Minimum Version List](#how-do-all-the-minimum-versions-relate-to-each-other) promptly - that's much easier than updating a graphic.
 
-    * Xcode: Now that your macOS is updated to at least 10.15.4, the App Store in your computer will have Xcode 12.4 available for you to download/update.
+Follow this link to [Wikipedia](https://en.wikipedia.org/wiki/Xcode) and scroll down to the the current version of this figure - the graphic shown below is a map of how to read the current version of this figure at Wikipedia.
 
-Future update alert - iOS 15 will be released soon and is expected to require macOS 12.0 (Monterey) and Xcode 13. [Turn Off Automatic Updates](step2.md#turn-off-automatic-updates)
-
-(Source for the chart is [Wikipedia](https://en.wikipedia.org/wiki/Xcode). Remember - follow the link and scroll down to the figure to actually check versions - the graphic shown below is a map of how to read the figure at Wikipedia.)
 
 ![Screenshot: Wikipedia Xcode 11.x-12.x example; relationship for iOS, Xcode, macOS; highlights how to read current graphic](img/minimum-related.png){width="750"}
 {align="center"}
@@ -94,7 +105,7 @@ Future update alert - iOS 15 will be released soon and is expected to require ma
 !!! warning "Breaking News"
     * If you try to build with a version of Xcode older than 11.4.1 you will get a Revoke Certificate message when you try to sign targets
     * Go to [Revoke Certificate Issue](updating.md#revoke-certificate-issue) to see the error message
-    * You should update Xcode (on July 27, 2021, Xcode is at version 12.5.1)
+    * Solution: update Xcode
           * Go to [Install macOS and Xcode updates](updating.md#step-1-install-macos-and-xcode-updates)
 
 It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
