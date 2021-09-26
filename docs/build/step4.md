@@ -16,7 +16,15 @@
     - **"What about Libre sensors?"** You will need to seek out a modified version of Loop (search posts and then ask about "forks" that support your CGM in a [Loop Social Media](../index.md#stay-in-the-loop) site.)
     - **"What about Eversense?"** Eversense's application does not integrate with Apple Health nor has the communications protocols for Eversense been reverse engineered for iOS. Therefore, Eversense is not currently compatible with Loop.
 
+## Continuous Glucose Monitor (CGM)
+
 A continuous glucose monitor (CGM) provides Loop with blood glucose readings. These readings allow Loop to model the current glucose trend and predict future blood glucose based on carbohydrate input and your Loop settings. The following are the types of CGMs compatible with Loop. CGM readings are a required part of looping. If your Loop app is unable to retrieve blood glucose (BG) data, it will not be able to loop.
+
+!!! warning "Dexcom G4/G5 Support"
+
+    [Dexcom has announced plans to stop supporting the G5 system](https://www.dexcom.com/obsolescence); in the US the G5 app will stop working.  Because G4 and G5 use the same sensors, this will affect availability of the sensors.
+
+    There are third party apps, which interface with G4 and G5 transmitters, supported by some forks of Loop. The version of Loop supported by these documents only works with the CGM explicitly listed below.
 
 ## Dexcom G5 and G6 CGM ![img/g5.jpg](img/g5.jpg){width="150"}
 

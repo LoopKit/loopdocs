@@ -17,8 +17,8 @@
 
     Minimum macOS for recent iOS:
 
-    - macOS 11.6 (Big Sur) or newer is required for iOS 15 and higher
-    - macOS 11.x (Big Sur) is required for iOS 14.5 and higher
+    - macOS 11.3 (Big Sur) or newer is required for iOS 15 and higher
+    - macOS 11.0 (Big Sur) is required for iOS 14.5 and higher
 
     If your macOS does not meet the minimum, check to see if you can [update your macOS](step1.md#check-your-macos)
 
@@ -45,9 +45,9 @@ The newest Apple computers, released in November 2020, are compatible with build
 
 The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big Sur can be used to build Loop for **any** of the phone iOS versions listed below but is **required** to build on any iPhone with an iOS version starting with iOS 14.5.
 
-* **If you have iOS 15 or newer**, the minimum macOS is Big Sur (11.6)
+* **If you have iOS 15 or newer**, the minimum macOS is Big Sur (11.3)
 
-* **If you have iOS 14.5 or newer**, the minimum macOS is Big Sur (11.x)
+* **If you have iOS 14.5 or newer**, the minimum macOS is Big Sur (11.0)
 
 ### Build Step 1: iOS 15 Warning if you built with Catalina
 

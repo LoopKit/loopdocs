@@ -6,15 +6,16 @@
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
 
 !!! info "Summary"
-    - If you have a big clunky PDM with a built-in BG meter...you can use your pods for Loop. (These pods have a clear needle cap.)
-    - If you have a slim touch screen android-looking PDM...you can NOT use your pods for Loop. (These pods have a blue needle cap.)
-    - If you have a Medtronic, check the list to ensure compatible model/firmware.
+    - If you have a big clunky PDM with a built-in BG meter, you can use your pods for Loop. (These pods, also known as Eros pods, have a clear needle cap.)
+    - If you have a slim touch screen android-looking PDM, you can NOT use your Dash pods for Loop. (These pods have a blue needle cap.)
+    - If you have a Medtronic, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware.
 
 !!! faqs "FAQs"
-    - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](finding-a-medtronic-pump)
-    - **"What are the differences between Medtronic pump models?"** This question is also answered in the Extra Details section below.
-    - **"But what about the other types of pumps?"** No other pumps work with Loop at this time.  If you have a DanaRS, DanaR, Accu-Chek Insight, Accu-Chek Combo, you could check out [AndroidAPS looping system](https://androidaps.readthedocs.io/en/latest/index.html). If you have a Medtronic 512 or 712, you could check out [OpenAPS](https://openaps.readthedocs.io/en/latest/) as that system supports the 512 and 712 models in addition to the other Loop-compatible Medtronic pumps. Neither of those systems currently support Omnipod for looping.
-    - **"Can I change the firmware of my Medtronic pump?"** Do you work at Medtronic with insider access to the secret tools and firmware versions to do that? Might lose your job, but I'd bet you could do it then. We don't have access to that though.
+    - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump)
+    - **"What are the differences between Medtronic pump models?"** This question is also answered in the [Extra Details](#extra-details-on-medtronic) section
+    - **"But what about the other types of pumps?"** No other pumps work with Loop at this time  
+        - There are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/) that support other pumps.
+    - **"Can I change the firmware of my Medtronic pump?"** No.
 
 ## Pumps Compatible with Loop
 
@@ -151,7 +152,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 
 !!! warning "Reminder and Disclaimer"
 
-    The use of Eros pods with Loop is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Loop build, setup, or operation. This project is not FDA-approved. You are fully responsible for your use of this project and do so at your own risk. Please read these documents and familiarize yourself with Loop before using.
+    The use of Eros pods with Loop is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Loop build, setup, or operation. You are fully responsible for your use of this project and do so at your own risk. Please read these documents and familiarize yourself with Loop before using.
 
 ### Eros - Loop Will Work with These Pods
 
@@ -164,7 +165,7 @@ Eros system has that PDM we all recognize from the last several years.
 
 ### DASH - Loop Will Not Work with DASH Pods
 
-Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop will not be compatible with the DASH system.
+Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop is not currently compatible with the DASH system.
 
 ![img/dash.png](img/dash.png){width="750"}
 {align="center"}
