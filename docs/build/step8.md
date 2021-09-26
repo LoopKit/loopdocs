@@ -56,7 +56,7 @@ Because the update looks so innocuous and we all lead busy lives, we forget that
 
 
 !!! warning "Can't find the required Xcode version"
-    - If your computer is not running macOS 11.3, the App Store won't show Xcode version 13
+    - If your computer is not running at least macOS 11.3, the App Store won't show Xcode version 13
     - You must use iOS to determine which Xcode, which determines which macOS
     - Update your computer to at least that minimum macOS first
 
@@ -74,20 +74,19 @@ Before posting for help - do a reboot and try again.
 
 The list below is for the **minimum** versions you'll need based on your iOS.
 
-Newer versions are always OK and should be used if your computer will accept the upgrade.
+**Newer** versions are always OK and should be used if your computer will accept the upgrade.
 
 * If you are running an iPhone/iPod with iOS 15 or greater:
     * [macOS](step1.md#check-your-macos): version 11.3 (Big Sur)
-    * Xcode: version 13 (or newer)
+    * Xcode: version 13
     * Expect the facts associated with iOS 15 to change faster than LoopDocs will be updated
 * If you are running an iPhone/iPod with iOS 14.5 through 14.8:
     * [macOS](step1.md#check-your-macos): version 11.0 (Big Sur)
-    * Xcode: version 12.5 (or newer)
+    * Xcode: version 12.5
 * If you are running an iPhone/iPod with iOS 14 through 14.4.x:
     * [macOS](step1.md#check-your-macos): version 10.15.4 (Catalina)
     * If you build Loop using [Xcode 12.4 or earlier](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used)  - **do NOT upgrade that phone to iOS 15** - the Loop app will immediately stop working
     * Xcode: version 12.4
-* If you are running an iPhone/iPod with iOS 12.x, Xcode 13 on a mac with Big Sur still builds Loop just fine
 
 
 ### Wikipedia Chart for Apple Versions
