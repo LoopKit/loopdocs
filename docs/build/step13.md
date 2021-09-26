@@ -15,11 +15,48 @@
 
 You’ll need to download the Loop code. You will then build the app on your computer with Xcode, which will transfer the app to your phone or ipod.
 
-Most users should click on the master branch link below to download Loop code and then follow the rest of the steps until you have a new version on your device. (This link always points to the most recent version of the code.)
+### Xcode 13, iOS 15 changes
+
+!!! warning "DO NOT UPDATE your phone to iOS 15 without reading this"
+
+    Any Loop app built with Xcode version prior to Xcode 12.5 runs the risk of their Loop app immediately failing when the phone is updated to iOS 15. (Any one who last built with Catalina should not install iOS 15 without following "safe steps" below.)
+
+    If you don't know what version of Xcode was used to build your app, do NOT update to iOS 15.
+
+    Safe steps to keep Loop going if you want to install iOS 15
+
+    * update your macOS
+    * update your Xcode to version 13
+    * build the Loop app on your phone
+    * update phone to iOS 15
+
+Modifications to building Loop with Xcode 13:
+
+* iOS 15 requires Xcode version 13 to build
+* You must use the LoopWorkspace method to build the master branch with Xcode 13
+* The old download the zip method will not work once you update your Xcode to version 13
+* You can use the [Build Select Script](https://www.loopandlearn.org/build-select/) webpage, which has instructions on how to use a script to download Loop Master
+
+### Xcode 12
+
+If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can still click on the master branch link below to download Loop code and then follow the rest of the steps until you have a new version on your device. (This link always points to the most recent version of the code.)
+
+However, the [Build Select Script](https://www.loopandlearn.org/build-select/) is easy to use (just different) and gets you the same Loop app version built on your phone. It is still worth reading Step 14 but some of the steps are done for you by the script.
 
 ---
 
+**WARNING** - Temporary issue with zip download build (Sep 25, 2021) - it will not build without errors
+
 - [Loop: master branch](https://github.com/LoopKit/Loop/archive/master.zip)
+
+---
+
+If you are an experienced Looper who really wants to use the zip download now and not wait for this issue to be fixed, you can change the last line of the Cartfile.resolved file in the Loop-master directory. (This is only for Xcode 12 building onto iOS 14 or earlier devices.  Devices with iOS 15 must use Xcode 13 and must use the workspace build.)
+
+Last line of `Cartfile.resolved` in the Loop-master folder should say:
+
+`github "ps2/rileylink_ios" "15d19970f589d1678a486a9b7cfa2430111ee3ea"`
+
 
 ---
 

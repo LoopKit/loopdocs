@@ -46,7 +46,7 @@ No. Do not delete your old Loop. In fact, that is a bad idea as you will lose yo
 
 1. You broke it: There used to be a glitch in Loop where if you entered the target correction range backwards, then your Loop app stopped working. You can't do that anymore, but it's always possible something else might require you to delete your app.
 
-2. Moving from dev branch back down to master branch. The way the new dev branch is coded may require you to delete your dev build prior to returning to master.
+2. Moving from [dev branch back down to master branch](#what-if-im-changing-branches-does-that-matter). The new dev branch requires you to delete your dev build prior to returning to master.
 
 ## Does updating make a separate, second Loop app?
 
@@ -64,14 +64,29 @@ Yes. So long as you use the same developer team as you originally built the app 
 
 ## How can I confirm what version was installed?
 
-The Loop's version is given at the top of the Loop settings page. Even better though, there is very detailed info about the version of Loop you are using at the top of your Loop's Issue Report. This is a great new addition to help identify where, what, and when of your Loop version. Note - the type of information found here has increased since 2019 - yours will look a little different.
+The Loop version is given at the top of the Loop settings page.
 
-![img/loop-version.jpg](img/loop-version.jpg){width="300"}
-{align="center"}
+There is more detailed information about how the Loop app was built at the top of the Issue Report (Loop -> Settings -> Issue Report) as shown in the graphic in the next section.
+
+## How can I confirm Xcode version I used?
+
+The information in the graphic below includes the Xcode version number used for the build. In this case, the major version for Xcode is 12 and the minor version is 5 (E is the 5th letter of the English alphabet).  The main thing to notice for this example is the Loop app was built with Xcode version 12.5. If this phone was subsequently upgraded to iOS 15, the Loop app would continue to work.
+
+**DO NOT INSTALL iOS 15 if the Xcode version on your Loop build is 12D or earlier - the Loop app will immediately stop working and you will have to rebuild Loop.**
+
+![top of issue report showing loop, xcode and expiration](img/loop-version.svg){width="500"}
+
+!!! danger "Profile Expiration"
+
+    * The profile expiration will not be shown for Loop v2.2.4 or earlier.
+    * For this example, the profile expires much sooner than 12 months after the Loop app was built
+        * [Updating: Step 4A ](../build/updating.md#step-4a-delete-old-provisioning-profiles) provides instructions to delete your old provisioning profile when building your Loop app - this gives you a full year after you build
 
 ## What if I'm changing branches? Does that matter?
 
 Does not matter. Moving between branches and forks is an "updating Loop" action. Nothing about the information above changes.
+
+**The exception to the rule is if you build the dev branch on your phone and want to return to master. In this case, the database storage is different between dev and master. It's a one-way trip.  The dev branch can read the data stored by master, but master cannot read the data stored by dev. If you are downgrading from dev to master, you need to first record settings, delete the old app, build master, enter your settings and (if using Omnipod), start at new pod.**
 
 ## What if I'm changing phones?
 
