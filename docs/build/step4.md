@@ -18,6 +18,12 @@
 
 A continuous glucose monitor (CGM) provides Loop with blood glucose readings. These readings allow Loop to model the current glucose trend and predict future blood glucose based on carbohydrate input and your Loop settings. The following are the types of CGMs compatible with Loop. CGM readings are a required part of looping. If your Loop app is unable to retrieve blood glucose (BG) data, it will not be able to loop.
 
+!!! warning "Dexcom G4/G5 Support"
+
+    [Dexcom has announced plans to stop supporting the G5 system](https://www.dexcom.com/obsolescence); in the US the G5 app will stop working.  Because G4 and G5 use the same sensors, this will affect availability of the sensors.
+
+    There are third party apps, which interface with G4 and G5 transmitters, supported by some forks of Loop. The version of Loop supported by these documents only works with the CGM explicitly listed below.
+
 ## Dexcom G5 and G6 CGM ![img/g5.jpg](img/g5.jpg){width="150"}
 
 Dexcom G5 and G6 CGM data is transmitted directly to the Dexcom app on your iPhone via Bluetooth. Neither of these two systems require the use of a stand-alone receiver. For Loop to function without an internet connection, you will need the Dexcom app running on the same device as Loop.
