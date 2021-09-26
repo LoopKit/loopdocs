@@ -29,7 +29,7 @@ The Loop algorithm on your phone predicts future glucose based on carbohydrate i
 
 The system can either operate “open-loop” where insulin delivery recommendations must be enacted by the user or “closed-loop” where modifications to insulin delivery are enacted automatically.
 
-You may be saying, "I can't build an app." But the wonderful volunteers in this community prepared this amazing website with step-by-step instructions containing pictures and arrows (say thank you to Katie DiSimone). The website is updated by more volunteers as improvements are made to the Loop app and when Apple makes changes to its iOS, Xcode and macOS environment. This language may sound scary, but it will become easier. Most people who Loop want to keep looping, so they learn the terminology and how to reach out to mentors for help.
+You may be saying, "I can't build an app." But the wonderful volunteers in this community prepared this amazing website with step-by-step instructions containing pictures and arrows (say thank you to Katie DiSimone). The website is updated by more volunteers as improvements are made to the Loop app and when Apple makes changes to its iOS, Xcode and macOS environment. This language may sound scary, but it will become easier. As a new Looper don't be afraid to [reach out to mentors](#stay-in-the-loop), learn the terminology and before long you will be Looping. As you continue with Looping, you soon can pass on your knowledge to others.
 
 Once you've built the app, plan to learn to use it in stages. First, run “open loop” to familiarize yourself with Loop’s operation. This allows you to understand why Loop is making certain recommendations and determine if you need to adjust your Loop settings.
 
@@ -74,7 +74,7 @@ There are a number of social media options. (Read the directions on each of thes
 ### Search Then Post
 
 !!! danger ""
-    It's really easy to panic if Loop is not working for you, but take the time to do a quick search in these docs and in your favorite social media group before posting a question. You might get an answer immediately.
+    It's really easy to panic if Loop fails to build or if you are having trouble using your Loop app, but take the time to do a quick search in these docs and in your favorite social media group before posting a question. You might get an answer immediately.
 
     Please post your question in only one group on Facebook or under one stream on zulipchat - many mentors monitor more than one place. If you don't hear an answer in 24 hours, then try a different place
 
