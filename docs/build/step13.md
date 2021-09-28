@@ -23,22 +23,28 @@
 
 ## Download Loop
 
-You’ll need to first download the Loop code and then build the app on your computer with Xcode, which will transfer the app to your iPhone or iPod.
+You’ll need to first download the Loop code and then build the app on your computer with Xcode, which will transfer the app to your iPhone or iPod. This page prepares you to download Loop - you'll actually do the download on the next step.
 
 ## New Loopers
 
-If this is your first time, ignore any comments about old and new methods. Just follow the steps for the [Workspace build](#using-the-workspace-method-for-loop) and move forward.
+If this is your first time, you only need to read the Build Select Script Workspace Method section.
+
+At the end of that section you'll be directed to Step 14.  You are welcome to read the rest of the page, but you can ignore any comments about old and new build methods or instructions for advanced users.
 
 ## Build Select Script Workspace Method
 
-The [Build Select Script](https://www.loopandlearn.org/build-select/) is relatively easy to use, but you need to be aware that it supports more than just Loop.  You will want to run the script twice, first to clear out [provisioning profiles and Derived Data](updating.md#step-4a-delete-old-provisioning-profiles) and then to download and build Loop Master.
+The Build Select script:
 
-It's a good idea to review the page now, but don't take action (copy/paste into your terminal) until [Build Step 14: Build Loop App](step14.md).
+* Builds Loop using the Workspace method
+    * Workspace build is required as of Xcode 13
+* Supports more than just Loop
+* Provided by the Loop and Learn mentors
 
+Please open this page in a new tab: [Build Select Script](https://www.loopandlearn.org/build-select/) and read the page, but don't take action (copy/paste into your terminal) at this time.
 
-## Next Step: Build Loop App
+Once you have reviewed the script page and are ready to move forward, head on to Step 14 in which you will execute the script steps and [Build the Loop App](step14.md).
 
-If you have reviewed the script page and are ready to move forward, head on to Step 14 in which you will execute the script steps and [Build the Loop App](step14.md).
+---
 
 If you are are "Repeat Looper" or interested in the dev branch, there is more information on the the rest of this page.
 
@@ -77,7 +83,7 @@ Modifications to building Loop with Xcode 13:
 
 ### Xcode 12
 
-If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can use the zip download method but it is deprecated.  See this link if you really want to stick with that method. [Deprecated zip download](step14-zip.md)
+If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can use the zip download method but it is not advised.  See this link if you really want to stick with that method. [Deprecated zip download](step14-zip.md)
 
 ## Manual Workspace Method
 
