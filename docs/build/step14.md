@@ -50,7 +50,7 @@ The Build Select script will be executed two times.  The summary is given here w
     - Select Master Branch by typing 1 and return
     - The download of all code needed to build Loop will now happen (see example graphics below)
 1. Review the text on your screen - if any errors are reported, try one more time then ask for help
-1. Type 1 and nit return to continue to the build
+1. Type 1 and hit return to continue to the build
 
 Xcode will open automatically.
 
@@ -124,9 +124,13 @@ If any errors are shown in your terminal window, you need to read the error.  Yo
 
 As soon as the script completes and you type 1 to Continue, Xcode will automatically open for the Workspace you just downloaded and a graphic showing the steps an experienced builder needs to follow will be presented.
 
+Xcode will open automatically.
+
+Your browser will open automatically in front of Xcode and display the same graphic shown below.
+
+Rearrange so you can see the graphic and the Xcode screen and follow the directions.
+
 TODO - finish updating graphics.
-![the beginning of the clone for LoopWorkspace ](img/build-select-07.png){width="750"}
-{align="center"}
 
 
 Once Xcode has finished indexing, the Loop project's various folders and files will appear in the far left column. We are now going to make three important sets of clicks:
