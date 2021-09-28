@@ -13,13 +13,18 @@
 
 Since you've been working in order, you will now have Xcode installed on your computer from Step 8. You will also have enrolled in the Apple Developer program with a paid account, if that was your selection, in Step 6. Now we need to tell Xcode about your Developer Account. But first a few more steps.
 
-Did your computer reboot following the Xcode installation. If not, reboot now.
+**Did your computer reboot following the Xcode installation. If not, reboot now.**
 
 Open Xcode from your Applications folder. If it offers to start a new project with you, just close that window.
 
 ## Command Line Tools
 
-There may be a short delay the very first time you open Xcode because it will install a package of tools. Don't close that window out, let it finish...we will need those Command Line Tools. Helpful tip: When the Command Line Tools installation is done and the pop-up window closes, check that your Command Line Tools installed correctly. Open Xcode's Preferences by clicking on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and selecting `Preferences` in the drop-down menu. The keyboard shortcut to open Xcode Preferences is `command-comma` if that's easier for you. Then select the `Locations` tab of Preferences window and you'll see the dropdown menu for Command Line Tools. Make sure the Xcode version listed matches what you just installed. If it's blank, use the blue arrows to the right of the Command Line Tools row to select it.
+There may be a short delay the very first time you open Xcode because it will install a package of tools. Don't close that window out, let it finish. You need those Command Line Tools.
+
+Helpful tip: When the Command Line Tools installation is done and the pop-up window closes, check that your Command Line Tools installed correctly. Open Xcode's Preferences by clicking on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and selecting `Preferences` in the drop-down menu. Then select the `Locations` tab of Preferences window and you'll see the dropdown menu for Command Line Tools.
+
+* Make sure the Xcode version listed matches what you just installed (not the version in this graphic)
+* If it's blank, use the blue arrows to the right of the Command Line Tools row to select it
 
 ![img/command-line-error-3.png](img/command-line-error-3.png){width="750"}
 {align="center"}
@@ -32,7 +37,7 @@ Choose the iOS operating system closest to the one on your phone and click the d
 
 Then scroll down to find the watchOS lines and choose the operating system on your watch (or biggest number if you don't have a watch paired) and click the down arrow to install it.
 
-Simulator download is now initiated. You can continue with the next steps, but let download complete before trying to build.
+Simulator download is now initiated and will continue in the background. You can keep going with the next steps, but let download complete before trying to build.
 
 ![img/download-simulators-1.svg](img/download-simulators-1.svg){width="750"}
 {align="center"}
@@ -47,9 +52,21 @@ Go to the Xcode Preferences window from above, click on the `Accounts` tab and t
 ![img/xcode_account.png](img/xcode_account.png){width="750"}
 {align="center"}
 
-If you want to use a free developer account, you will simply enter your Apple ID in this section and Xcode will automatically enroll your Apple ID in the free developer program. If you enrolled in the paid account already and have confirmation that your account is active, enter the Apple ID of the paid developer account. The screenshot below shows the labeling of team names based on whether from free account vs. paid account. Free teams will have `(personal team)` after the name.
+### Xcode Accounts Tab
 
-![img/apple_id.png](img/apple_id.png){width="750"}
+The Xcode Accounts Tab, shown in the graphic (from Xcode 13) below allows you to have more than one account available to choose from when you sign your targets (another new term - don't worry about it - this will be explained later).  Normally, you would only have one.  In order to get the Paid (email #1, name #1) and Free developer options to generate this graphic and test building with a free account, a new Apple ID was associated with a different email.  This second account (email #2, name #2) does not have a paid developer account associated with it.
+
+In the graphic, whichever item is selected on the left side (highlighted by Xcode in blue) shows up with more details on the right side of the display. If the Free account had been selected, the information shown in the red inset would have been displayed.
+
+### Free Developer Account
+
+If you want to use a free developer account, you will simply enter your Apple ID in this section and Xcode will automatically enroll your Apple ID in the free developer program. It will show up with the `(Personal Team)` and `User` indication.
+
+### Paid Developer Account
+
+If you enrolled in the paid account already and have confirmation that your account is active, enter the Apple ID of the paid developer account. It will show up with just your name and the `Admin` indication. If you have enrolled and are waiting, the `(Personal Team)` and `User` indication shows up until the paid account is confirmed by Apple.
+
+![accounts tab of xcode preferences](img/xcode_apple_id.svg){width="750"}
 {align="center"}
 
 You are now done setting up Xcode.  Great job!  You will not need to redo the account setup steps on any subsequent builds or updates of your Loop app.  Xcode will remember these settings.
