@@ -23,7 +23,7 @@
 
 ## Download Loop
 
-You’ll need to first download the Loop code and then build the app on your computer with Xcode, which will transfer the app to your iPhone or iPod. This page prepares you to download Loop - you'll actually do the download on the next step.
+You’ll need to first download the Loop code and then build the app on your computer with Xcode, which will transfer the app to your iPhone or iPod. This page prepares you to download Loop - you'll actually do the download in the next step.
 
 ## New Loopers
 
@@ -83,7 +83,7 @@ Modifications to building Loop with Xcode 13:
 
 ### Xcode 12
 
-If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can use the zip download method but it is not advised.  See this link if you really want to stick with that method. [Deprecated zip download](step14-zip.md)
+If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can use the zip download method but it is not advised.  See this link if you really want to stick with that method. [Archived zip download information](step14-zip.md)
 
 ## Manual Workspace Method
 
