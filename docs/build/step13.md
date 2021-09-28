@@ -95,6 +95,8 @@ Confirm there were no errors in the download.
 
   `cd LoopWorkspace; xed .`
 
+At this point, you should move to [Build Step 14: Xcode Steps](step14.md#wait-for-xcode-to-finish-indexing).
+
 
 ## Advanced Users Only
 
