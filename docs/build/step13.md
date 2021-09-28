@@ -29,7 +29,7 @@ You’ll need to first download the Loop code and then build the app on your com
 
 If this is your first time, you only need to read the Build Select Script Workspace Method section.
 
-At the end of that section you'll be directed to Step 14.  You are welcome to read the rest of the page, but you can ignore any comments about old and new build methods or instructions for advanced users.
+At the end of that section you'll be directed to Step 14.  You are welcome to read the rest of this page, but you can ignore any comments about old and new build methods or instructions for advanced users.
 
 ## Build Select Script Workspace Method
 
