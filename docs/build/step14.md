@@ -34,9 +34,9 @@
 
 At this point, you should have reviewed the entire [Build Select Script](https://www.loopandlearn.org/build-select/) page - if not, do it now.
 
-The Build Select script will be executed two times.  The summary is given here with helper graphics below:
+The Build Select script will be executed two times.  The summary is given here with helper graphics below.  The summary includes links so you can click on the link then hit the back button on your browser to return to the list.
 
-1. Open a terminal on your Computer
+1. Open a [terminal](#open-terminal) on your Computer
 1. Open [Execute the Script](https://www.loopandlearn.org/build-select/#use-script)
 1. First time through:
     - Hit the copy button on the page and paste the saved buffer into your terminal, hit return
@@ -58,10 +58,76 @@ Your browser will open automatically in front of Xcode and display the same grap
 
 Rearrange so you can see the graphic and the Xcode screen and follow the directions.
 
-![new graphic(s) to help with Workspace Build](img/new-graphics.svg){width="750"}
+### Open Terminal
+
+Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step7.md#configure-terminal-app-for-rosetta-on-m1-computer) first.) The terminal window is very plain looking when you open it. That is normal.
+
+## Clean Up
+
+The clean up steps are always a good idea.  If you've never built Loop, this will take almost no time and you get in the habit of doing it. If you've ever build Loop, you should take the steps to prevent build problems later.
+
+### Load the Paste Buffer
+
+You will load the paste buffer by clicking on this [link](https://www.loopandlearn.org/build-select/#use-script) and hitting the "Copy" button to the right of step 2. The button that says "Copy" will change to "Copied" once you click it.
+
+Then paste the text into the terminal window; it should look like the next graphic.
+
+![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
 
-TODO - REPLACE THIS WITH WORKSPACE GRAPHICS:
+You must type 1 and hit return in the terminal window to agree that you understand the warning.
+
+Next you will select the Utility Scripts option by typing 3 and return.
+
+![select utilities option](img/build-select-02.png){width="750"}
+{align="center"}
+
+Next you will select the Clean Profiles and Derived Data option by typing 3 and return.
+
+![select clean profiles and derived data option](img/build-select-03.png){width="750"}
+{align="center"}
+
+Once this completes, you should see this in your terminal.  
+
+![clean utility script completed](img/build-select-04.png){width="750"}
+{align="center"}
+
+If instead, you saw something like:
+
+`rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty`
+
+Please quit out of Xcode and repeat the steps for [Clean-Up](#clean-up)
+
+## Download and Build
+
+At this point you can hit the up-arrow key to bring the script command into view and hit return to start it - or repeat the copy paste steps from above. This time, you wil make selections to download the Loop code. After you start the script and accept the warning, type 1 and hit return to Build Loop.
+
+![choose to build Loop](img/build-select-05.png){width="750"}
+{align="center"}
+
+Next you are asked which version of Loop you would like to build. Type 1 and hit return to build the Master Branch.
+
+![choose which Loop to build](img/build-select-06.png){width="750"}
+{align="center"}
+
+This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress.  The download starts out with the "enumeration" of all the submodules that will be downloaded. This is followed by a cloning step for each submodule. The cloning for the first module is included in the first graphic.
+
+![the beginning of the clone for LoopWorkspace ](img/build-select-07.png){width="750"}
+{align="center"}
+
+The final submodule cloning is shown along with the summary of all the Submodule paths in the next graphic.
+
+![the end of LoopWorkspace download](img/build-select-08.png){width="750"}
+{align="center"}
+
+If any errors are shown in your terminal window, you need to read the error.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#stay-in-the-loop) site.
+
+As soon as the script completes and you type 1 to Continue, Xcode will automatically open for the Workspace you just downloaded and a graphic showing the steps an experienced builder needs to follow will be presented.
+
+TODO - finish updating graphics.
+![the beginning of the clone for LoopWorkspace ](img/build-select-07.png){width="750"}
+{align="center"}
+
 
 Once Xcode has finished indexing, the Loop project's various folders and files will appear in the far left column. We are now going to make three important sets of clicks:
 
@@ -163,13 +229,9 @@ When you've finished your customizations, come on back to this section and conti
 
 **Existing Apple Watch users**: Please update your watchOS prior to building the Loop app.  The current version of Loop requires watchOS 4.1 or newer.
 
-## SAFETY INTERMISSION
-
-I removed the safety intermission that was here [Archived Safety Intermission](step14-zip.md#safety-intermission) - feedback?
-
 ## Build Loop
 
-Check that you are ready to build Loop:
+Confirm that you are ready to build Loop:
 
 * Have you signed the four targets?
 * Are you done with any customizations?
