@@ -33,6 +33,7 @@ nav:
     - 'Updating/Rebuilding your Loop': 'build/updating.md'
     - 'LoopWorkspace': 'build/loopworkspace.md'
     - 'Step 7 Skip Step 7': 'build/step7.md'
+    - 'Archived Zip Build': 'build/step14-zip.md'
 - Set up App:
     - 'Overview': 'operation/overview.md'
     - 'Step 1: Health Permissions': 'build/health.md'
