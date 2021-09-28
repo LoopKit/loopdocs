@@ -6,17 +6,16 @@
 
 !!! info "Summary"
     - You should have read the Build-Select Instructions in Step 13
-    - **First Time:** steps are needed if first time with this phone or this computer
+    - **First Time:** steps are needed for first time with this phone or this computer
     - It is now time to execute those Instructions
         - [Run Build Select Script](https://www.loopandlearn.org/build-select/#use-script)
-        - Xcode opens when done
         - Connect the phone to the computer
         - **First Time:** Trust the computer
-        - Select Loop(Workspace) and your phone at top of Xcode
+        - Select Loop (Workspace) and your phone at top of Xcode
         - **First Time:** Register the phone
         - Sign the targets
         - Press the build button
-            - **First Time:** Enter computer password four times during the build
+            - **First Time:** [Enter computer password four times](#codesign-keychain-access) during the build
             - Watch in awe as you just built your very own Loop app
     - Open whatever calendar you like to use and insert a reminder
         - The app will expire in 7 days or 1 year
@@ -34,39 +33,13 @@
 
 At this point, you should have reviewed the entire [Build Select Script](https://www.loopandlearn.org/build-select/) page - if not, do it now.
 
-The Build Select script will be executed two times.  The summary is given here with helper graphics below.  The summary includes links so you can click on the link then hit the back button on your browser to return to the list.
-
-1. Open a [terminal](#open-terminal) on your Computer
-1. Open [Execute the Script](https://www.loopandlearn.org/build-select/#use-script)
-1. First time through:
-    - Hit the copy button on the page and paste the saved buffer into your terminal, hit return
-    - Acknowledge the Warning by typing 1 and return
-    - Select Utility Scripts by typing 3 and return
-    - Select Clean Profiles and Derived Data by typing 3 and return
-1. Second time through:
-    - You can up-arrow and hit return, or paste the saved buffer again, hit return
-    - Acknowledge the Warning by typing 1 and return
-    - Select Build Loop by typing 1 and return
-    - Select Master Branch by typing 1 and return
-    - The download of all code needed to build Loop will now happen (see example graphics below)
-1. Review the text on your screen - if any errors are reported, try one more time then ask for help
-1. Type 1 and hit return to continue to the build
-
-Xcode will open automatically.
-
-Your browser will open automatically in front of Xcode and display the same graphic shown below.
-
-Rearrange so you can see the graphic and the Xcode screen and follow the directions.
 
 ### Open Terminal
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step7.md#configure-terminal-app-for-rosetta-on-m1-computer) first.) The terminal window is very plain looking when you open it. That is normal.
 
-## Clean Up
 
-The clean up steps are always a good idea.  If you've never built Loop, this will take almost no time and you get in the habit of doing it. If you've ever build Loop, you should take the steps to prevent build problems later.
-
-### Load the Paste Buffer
+## Download and Build
 
 You will load the paste buffer by clicking on this [link](https://www.loopandlearn.org/build-select/#use-script) and hitting the "Copy" button to the right of step 2. The button that says "Copy" will change to "Copied" once you click it.
 
@@ -77,30 +50,7 @@ Then paste the text into the terminal window; it should look like the next graph
 
 You must type 1 and hit return in the terminal window to agree that you understand the warning.
 
-Next you will select the Utility Scripts option by typing 3 and return.
-
-![select utilities option](img/build-select-02.png){width="750"}
-{align="center"}
-
-Next you will select the Clean Profiles and Derived Data option by typing 3 and return.
-
-![select clean profiles and derived data option](img/build-select-03.png){width="750"}
-{align="center"}
-
-Once this completes, you should see this in your terminal.  
-
-![clean utility script completed](img/build-select-04.png){width="750"}
-{align="center"}
-
-If instead, you saw something like:
-
-`rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty`
-
-Please quit out of Xcode and repeat the steps for [Clean-Up](#clean-up)
-
-## Download and Build
-
-At this point you can hit the up-arrow key to bring the script command into view and hit return to start it - or repeat the copy paste steps from above. This time, you wil make selections to download the Loop code. After you start the script and accept the warning, type 1 and hit return to Build Loop.
+Next you will select the Build Loop option by typing 1 and return.
 
 ![choose to build Loop](img/build-select-05.png){width="750"}
 {align="center"}
@@ -110,19 +60,19 @@ Next you are asked which version of Loop you would like to build. Type 1 and hit
 ![choose which Loop to build](img/build-select-06.png){width="750"}
 {align="center"}
 
-This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress.  The download starts out with the "enumeration" of all the submodules that will be downloaded. This is followed by a cloning step for each submodule. The cloning for the first module is included in the first graphic.
+This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress.  The download starts out with the "enumeration" of all the submodules that will be downloaded. This is followed by a cloning step for each submodule. The cloning for the first module is included in the first graphic. You do not need to understand the definitions for submodule or enumeration or cloning.  You only need to review the display to look for any errors after the download is finished.
 
 ![the beginning of the clone for LoopWorkspace ](img/build-select-07.png){width="750"}
 {align="center"}
 
-The final submodule cloning is shown along with the summary of all the Submodule paths in the next graphic.
+The final submodule cloning is shown along with the summary of all the submodule paths in the next graphic.
 
 ![the end of LoopWorkspace download](img/build-select-08.png){width="750"}
 {align="center"}
 
-If any errors are shown in your terminal window, you need to read the error.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#stay-in-the-loop) site.
+If any errors are shown in your terminal window, you need to read the error and type 2, return to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#stay-in-the-loop) site.
 
-As soon as the script completes and you type 1 to Continue, Xcode will automatically open for the Workspace you just downloaded and a graphic showing the steps an experienced builder needs to follow will be presented.
+Assuming there are no errors, then type 1, return to Continue.
 
 Xcode will open automatically.
 
@@ -130,27 +80,36 @@ Your browser will open automatically in front of Xcode and display the same grap
 
 Rearrange so you can see the graphic and the Xcode screen and follow the directions.
 
-TODO - finish updating graphics.
+### Wait for Xcode to Finish Indexing
 
+When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build.
 
-Once Xcode has finished indexing, the Loop project's various folders and files will appear in the far left column. We are now going to make three important sets of clicks:
-
-1. First click: At the very top of all the folders and files listed, click on the blue icon next to the word "Loop". This will populate the middle part of the Xcode window with some information.
-
-    ![img/loop-first-click.png](img/loop-first-click.png){width="550"}
-    {align="center"}
-
-2. TODO - not needed for Xcode 13.  Is it needed for Xcode 12?   Change this to Select Loop (Workspace) at top. Second (set of) clicks: Now click on the box in the middle screen to reveal the targets column underneath that box. The four targets we will sign in the upcoming steps are now easily viewable. The four targets are Loop, Loop Status Extension, Watch App, and WatchApp Extension. Select the Loop target, shown in the screenshot below. It will be highlighted in blue to let you know it is selected.
-
-
-
-    ![img/loop-second-click.png](img/loop-second-click.png){width="550"}
-    {align="center"}
-
-3. Third Click: With the Loop target selected, click on "Signing & Capabilities" up near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of the middle window.
-
-![img/loop-third-click.png](img/loop-third-click.png){width="550"}
+![graphic for workspace build](img/workspace-build-loop-from-script_annotated-3-1.svg){width="750"}
 {align="center"}
+
+You can do all the instructions (except the build while waiting for indexing.) There are some additional details about each step, if you need them, in the list below indicated by links.
+
+1. At the very top of all the folders and files listed on the left side, click on the blue icon next to the word "Loop". You might need to click a second time to highlight the Loop folder. This will populate the middle part of the Xcode window.
+1. [Plug in your phone](#connect-your-iphone-to-computer).  If this is the first time for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".
+    * Select Loop (Workspace) from the dropdown at the upper left
+    * Select your phone (not a simulator of the same model as your phone) - it will be near the top of the dropdown list
+    * If you don't see your phone, unplug and plug in again
+1. Click on the "Signing & Capabilities" tab near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of the middle window matching the graphic above.
+1. It is time to Sign the Targets with your [Apple Developer ID](step9.md#add-apple-id)
+    * For [Free Account](#free-account) - you must take additional steps before signing
+    * For Paid Account - [sign the targets](#sign-the-targets) indicated in the graphic above
+1. You are ready to Build (hit the play button) if all the following are completed:
+    * Indexing has completed
+    * You signed the targets
+    * Your iPhone is unlocked and plugged into the computer
+    * You selected Loop (Workspace)
+    * You selected your phone and not a simulator
+    * OPTIONAL: your Apple watch been paired and updated
+    * OPTIONAL: you are done with desired customizations
+
+Time to click on [Build Loop](#build-loop) to skip the extra details you might have needed in the list above.
+
+Not all graphics on the rest of this page show "Loop (Workspace)" on the rest of the page" - they will be updated at some point.
 
 ## Connect Your iPhone to Computer
 
@@ -166,7 +125,7 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
 !!! danger "Most Common Mistake"
 
     - The most common mistake in this step is:
-        - not selecting LoopWorkspace and/or
+        - not selecting Loop (Workspace) (old graphic; yours must be Workspace)
         - not selecting your actual phone as shown in the second screenshot below
     - The default list is just a name of general phone models under a subheading called "iOS Simulators"...don't be fooled by those. Your ACTUAL phone will be up above that list of all the various simulator phone models.  You may need to scroll to the top of the list to see it.  Make sure you select your actual phone, not just a simulator phone model.
 
