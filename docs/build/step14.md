@@ -276,9 +276,9 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! info "Breaking News for Xcode 13"
 
-    There is a new error for Xcode 13. Some people have reported this occurs if you do NOT wait for indexing to finish before building. If you get this error message, follow the [Xcode 13 Restart](#xcode-13-restart) steps below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.
+    There is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build.  Look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the [Xcode 13 Restart](#xcode-13-restart) steps below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.
 
-    ![I am impatient - did not let indexing finish](img/error-xcode13-indexing-still.png){width="300"}
+    ![I am impatient - did not let indexing finish](img/xcode-13-new-error.svg){width="450"}
 
 
     _Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. You can disable this error by setting 'CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION' to 'YES', however this may cause the built product's code signature or provisioning profile to contain incorrect entitlements. (in target 'WatchApp Extension' from project 'Loop')_
