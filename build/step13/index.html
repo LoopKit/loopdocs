@@ -117,6 +117,10 @@
 <li>
     <a href="../step7/" class="dropdown-item">Step 7 Skip Step 7</a>
 </li>
+                                    
+<li>
+    <a href="../step14-zip/" class="dropdown-item">Archived Zip Build</a>
+</li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -411,11 +415,19 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#store-and-name-your-download-properly" class="nav-link">Store and Name Your Download Properly</a>
+            <li class="nav-item" data-level="2"><a href="#new-loopers" class="nav-link">New Loopers</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#next-step-build-loop-app" class="nav-link">Next Step: Build Loop App</a>
+            <li class="nav-item" data-level="2"><a href="#build-select-script-workspace-method" class="nav-link">Build Select Script Workspace Method</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#repeat-loopers" class="nav-link">Repeat Loopers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#manual-workspace-method" class="nav-link">Manual Workspace Method</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -435,29 +447,75 @@
 <p class="admonition-title">Time Estimate</p>
 <ul>
 <li>10 minutes to read this page</li>
-<li>1 minute to download Loop code</li>
+<li>Wait until Step 14 to download Loop code (New Workspace Method)</li>
 </ul>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Summary</p>
 <ul>
-<li>Download the zip file from the master branch link below</li>
+<li>Open the <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> page in a new tab of your browser</li>
+<li>Read the Build Select page but don't take any action yet<ul>
+<li>That page supports more than just Loop</li>
+<li>You will not actually be doing the copy/paste into the terminal until Step 14</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">FAQs</p>
 <ul>
-<li><strong>"What the heck is a branch?"</strong> That's a great question. We have a page all about <a href="../../faqs/branch-faqs/">Branch FAQs</a></li>
-<li><strong>"When do I need to download new Loop code?"</strong> Anytime you want to update your Loop app to get new features, you'll simply download the code again by clicking on the links below. The links always go to the most recent version of each of the branches. It's a good idea is to delete your old downloads before making a new one, just to avoid confusion. If you're paranoid, rename the older folder old-loop and wait to delete it after you have a fresh new build on your phone.</li>
+<li><strong>When do I need to download new Loop code?</strong> There are three times you need to download new code:<ol>
+<li>When you build Loop initially</li>
+<li>When a new release of Loop has features you want</li>
+<li>When your app expires (one year paid, one week free)</li>
+</ol>
+</li>
+<li><strong>What do I do when a new iOS is released?</strong> The short answer is wait a bit:<ul>
+<li>It's a good idea to be prepared to rebuild before updating your phone to the new iOS</li>
+<li>This is even more important when there has been a major change to iOS or Xcode</li>
+<li>Check with the experts - there will be announcements in all the <a href="../..#stay-in-the-loop">Loop Social Media</a> sites</li>
+</ul>
+</li>
+<li><strong>How do I find out about new features?</strong> Please see <a href="../../faqs/branch-faqs/">Loop Releases and Branch FAQs</a></li>
 </ul>
 </div>
 <h2 id="download-loop">Download Loop<a class="headerlink" href="#download-loop" title="Permanent link">⌁</a></h2>
-<p>You’ll need to download the Loop code. You will then build the app on your computer with Xcode, which will transfer the app to your phone or ipod.</p>
+<p>You’ll need to first download the Loop code and then build the app on your computer with Xcode, which will transfer the app to your iPhone or iPod. This page prepares you to download Loop - you'll actually do the download in the next step.</p>
+<h2 id="new-loopers">New Loopers<a class="headerlink" href="#new-loopers" title="Permanent link">⌁</a></h2>
+<p>If this is your first time, you only need to read the Build Select Script Workspace Method section.</p>
+<p>At the end of that section you'll be directed to Step 14.  You are welcome to read the rest of this page, but you can ignore any comments about old and new build methods or instructions for advanced users.</p>
+<h2 id="build-select-script-workspace-method">Build Select Script Workspace Method<a class="headerlink" href="#build-select-script-workspace-method" title="Permanent link">⌁</a></h2>
+<p>The Build Select script:</p>
+<ul>
+<li>Builds Loop using the Workspace method<ul>
+<li>Workspace build is required as of Xcode 13</li>
+</ul>
+</li>
+<li>Supports more than just Loop</li>
+<li>Provided by the Loop and Learn mentors</li>
+</ul>
+<p>Please open this page in a new tab: <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> and read the page, but don't take action (copy/paste into your terminal) at this time.</p>
+<p>Once you have reviewed the script page and are ready to move forward, head on to Step 14 in which you will execute the script steps and <a href="../step14/">Build the Loop App</a>.</p>
+<hr />
+<p>If you are are "Repeat Looper" or interested in the dev branch, there is more information on the the rest of this page.</p>
+<h2 id="repeat-loopers">Repeat Loopers<a class="headerlink" href="#repeat-loopers" title="Permanent link">⌁</a></h2>
+<p>There is a lot of information embedded throughout the Build Steps about building with the old zip download method - this is being transitioned to the Workspace method.</p>
+<ul>
+<li>
+<p>The zip download method had a very fast download, followed by a very long build while Xcode collected more code from the internet to enable you to build the complete app. It is not an option once Xcode 13 is installed.</p>
+</li>
+<li>
+<p>The new method uses Workspace and works for Xcode 12 as well as Xcode 13. This downloads everything you need up front and builds much faster.</p>
+</li>
+<li>
+<p>You may remember information indicating that Workspace is only for experts - that only refers to people working on the new version of Loop (known as the dev branch).</p>
+</li>
+</ul>
 <h3 id="xcode-13-ios-15-changes">Xcode 13, iOS 15 changes<a class="headerlink" href="#xcode-13-ios-15-changes" title="Permanent link">⌁</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">DO NOT UPDATE your phone to iOS 15 without reading this</p>
-<p>Any Loop app built with Xcode version prior to Xcode 12.5 runs the risk of their Loop app immediately failing when the phone is updated to iOS 15. (Any one who last built with Catalina should not install iOS 15 without following "safe steps" below.)</p>
-<p>If you don't know what version of Xcode was used to build your app, do NOT update to iOS 15.</p>
+<p>Any Loop app built with Xcode version prior to Xcode 12.5 will immediately fail when the phone is updated to iOS 15. (Any one who last built with Catalina should not install iOS 15 without following "safe steps" below.)</p>
+<p>These instructions, <a href="../../faqs/update-faqs/#how-can-i-confirm-xcode-version-i-used">Xcode version</a>, tell you how to determine what version was used when building the Loop app currently on your phone.</p>
 <p>Safe steps to keep Loop going if you want to install iOS 15</p>
 <ul>
 <li>update your macOS</li>
@@ -469,40 +527,18 @@
 <p>Modifications to building Loop with Xcode 13:</p>
 <ul>
 <li>iOS 15 requires Xcode version 13 to build</li>
-<li>You must use the LoopWorkspace method to build the master branch with Xcode 13</li>
+<li>You must use the Workspace method to build Loop with Xcode 13</li>
 <li>The old download the zip method will not work once you update your Xcode to version 13</li>
 <li>You can use the <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> webpage, which has instructions on how to use a script to download Loop Master</li>
 </ul>
 <h3 id="xcode-12">Xcode 12<a class="headerlink" href="#xcode-12" title="Permanent link">⌁</a></h3>
-<p>If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can still click on the master branch link below to download Loop code and then follow the rest of the steps until you have a new version on your device. (This link always points to the most recent version of the code.)</p>
-<p>However, the <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> is easy to use (just different) and gets you the same Loop app version built on your phone. It is still worth reading Step 14 but some of the steps are done for you by the script.</p>
-<hr />
-<p><strong>WARNING</strong> - Temporary issue with zip download build (Sep 25, 2021) - it will not build without errors</p>
-<ul>
-<li><a href="https://github.com/LoopKit/Loop/archive/master.zip">Loop: master branch</a></li>
-</ul>
-<hr />
-<p>If you are an experienced Looper who really wants to use the zip download now and not wait for this issue to be fixed, you can change the last line of the Cartfile.resolved file in the Loop-master directory. (This is only for Xcode 12 building onto iOS 14 or earlier devices.  Devices with iOS 15 must use Xcode 13 and must use the workspace build.)</p>
-<p>Last line of <code>Cartfile.resolved</code> in the Loop-master folder should say:</p>
-<p><code>github "ps2/rileylink_ios" "15d19970f589d1678a486a9b7cfa2430111ee3ea"</code></p>
-<hr />
-<ul>
-<li><a href="#advanced-users-only">Advanced Users Only</a></li>
-</ul>
-<hr />
-<div class="admonition danger">
-<p class="admonition-title">What happened to the automatic-bolus branch?</p>
-<ul>
-<li>The automatic-bolus branch was retired when the Dosing Strategy feature became part of the master branch</li>
-<li>Please check out <a href="../../faqs/branch-faqs/#loop-v226">Branch FAQs for v2.2.6 and v2.2.5</a></li>
-</ul>
-</div>
-<h2 id="store-and-name-your-download-properly">Store and Name Your Download Properly<a class="headerlink" href="#store-and-name-your-download-properly" title="Permanent link">⌁</a></h2>
-<p>It is best practice to leave your Loop code in your Downloads folder. If you store your Loop code in a different folder than Downloads (such as your Documents folder or Desktop), make sure the specified folder is <strong>not</strong> an iCloud drive. Storing your Loop code in an iCloud drive folder will prevent Loop from building successfully.  How do you know if a folder is an iCloud drive? Check your System Preferences. If your System Preferences for iCloud is set as shown below, your Documents and Desktop folders are iCloud drives and <strong>NOT</strong> appropriate places to save your Loop download.</p>
-<p align="center"><img alt="img/icloud-drive.png" src="../img/icloud-drive.png" width="650" /></p>
-<p>Depending on your browser and settings, your Loop download may or may not automatically unzip. If it does not unzip automatically, you can right-click on the zip file and choose to "Open With" Archive Utility. This will create a blue folder called <code>Loop-master</code>.  HOWEVER, if you already have an existing <code>Loop-master</code> folder from a previous download, the name of the next download will be something like <code>Loop-master (1)</code>.</p>
-<h2 id="next-step-build-loop-app">Next Step: Build Loop App<a class="headerlink" href="#next-step-build-loop-app" title="Permanent link">⌁</a></h2>
-<p>Now you are ready to move onto Step 14 to <a href="../step14/">Build Loop App</a>.</p>
+<p>If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can use the zip download method but it is not advised.  See this link if you really want to stick with that method. <a href="../step14-zip/">Archived zip download information</a></p>
+<h2 id="manual-workspace-method">Manual Workspace Method<a class="headerlink" href="#manual-workspace-method" title="Permanent link">⌁</a></h2>
+<p>In order to manually create the Loop app using the Workspace method, and not use the script, you need to execute the commands listed below on your computer. You are welcome to do this and put the downloaded code where you prefer. The advantage of using the script is it provides options to do steps that are required when building Loop a second time, creates a date-time stamped folder for the download, clones the code into that folder, automatically opens Xcode in the correct folder and opens the graphic showing you the steps required to finish building the code.</p>
+<p><code>git clone --branch=master  --recurse-submodules https://github.com/LoopKit/LoopWorkspace</code></p>
+<p>Confirm there were no errors in the download.</p>
+<p><code>cd LoopWorkspace; xed .</code></p>
+<p>At this point, you should move to <a href="../step14/#wait-for-xcode-to-finish-indexing">Build Step 14: Xcode Steps</a>.</p>
 <h2 id="advanced-users-only">Advanced Users Only<a class="headerlink" href="#advanced-users-only" title="Permanent link">⌁</a></h2>
 <p>If you are an advanced user who wants to build the dev branch - this section is for you.</p>
 <div class="admonition warning">
@@ -515,7 +551,7 @@
 <li>The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch</li>
 <li><a href="../../faqs/dev-menus/">Loop dev Preview</a> is found in the FAQs section with some preliminary documentation</li>
 </ul>
-<p>The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.  The links below are to the wiki for LoopWorkspace, the LoopDocs page on building with LoopWorkspace and the instructions for installing carthage 0.36.0 (not needed for master or automatic-bolus branches)  </p>
+<p>The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.  The links below are to the wiki for LoopWorkspace, the LoopDocs page on building with LoopWorkspace and the instructions for installing carthage 0.36.0 (not needed for Loop master)  </p>
 <ul>
 <li>
 <p><a href="https://github.com/LoopKit/LoopWorkspace#readme">LoopWorkspace README</a>: Replace "&lt;branch>" in "git clone" line with "dev"</p>
