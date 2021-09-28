@@ -120,7 +120,7 @@ If you are an advanced user who wants to build the dev branch - this section is 
 
     * LoopDocs page on [LoopWorkspace](loopworkspace.md)
 
-    * LoopDocs page, ["Skip Step 7"](step7.md) for installing carthage 0.36.0
+    * LoopDocs page, ["Skip Step 7"](step7.md#install-carthage-0360) for installing carthage 0.36.0
 
     New trick (dev branch only):
 
