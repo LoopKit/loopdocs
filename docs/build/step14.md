@@ -276,7 +276,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! info "Breaking News for Xcode 13"
 
-    There is a new error for Xcode 13 that occurs if you do NOT wait for indexing to finish before building. If you get this error message, follow [Xcode 13 Restart](#xcode-13-restart) steps and the repeat build should be fine. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.
+    There is a new error for Xcode 13. Some people have reported this occurs if you do NOT wait for indexing to finish before building. If you get this error message, follow the [Xcode 13 Restart](#xcode-13-restart) steps below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.
 
     ![I am impatient - did not let indexing finish](img/error-xcode13-indexing-still.png){width="300"}
 
