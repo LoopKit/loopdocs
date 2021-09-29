@@ -530,7 +530,7 @@
 <li>Rearrange screens so you can see the graphic and Xcode and follow the directions</li>
 </ul>
 <h2 id="wait-for-xcode-to-finish-indexing">Wait for Xcode to Finish Indexing<a class="headerlink" href="#wait-for-xcode-to-finish-indexing" title="Permanent link">⌁</a></h2>
-<p>When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build.</p>
+<p>When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build. If you are impatient and don't wait, you will probably see this build failure: <a href="../build_errors/#xcode-13-indexing-not-finished-watchapp-extension-entitlements">WatchApp Extension Error</a></p>
 <p align="center"><img alt="graphic for workspace build" src="../img/workspace-build-loop-from-script_annotated-3-1.svg" width="750" /></p>
 <p>You can do all the instructions (except the build while waiting for indexing.) There are some additional details about each step in the list below, if you need them, indicated by links.</p>
 <ol>
@@ -559,6 +559,9 @@
 </li>
 </ol>
 <p>If you think you are ready, click on <a href="#build-loop">Build Loop</a>. This takes you to the section of this page that walks you through the actual build and, for first time builders, information about when and how to enter passwords.</p>
+<hr />
+<p>Extra details - there are some extra details for some of the steps summarized above.</p>
+<p>Head to <a href="#build-loop">Build Loop</a> when you are ready to build.</p>
 <h3 id="connect-your-iphone-to-computer">Connect Your iPhone to Computer<a class="headerlink" href="#connect-your-iphone-to-computer" title="Permanent link">⌁</a></h3>
 <p><em>The graphics in this section have not been updated to show "Loop (Workspace)".</em></p>
 <p>Make sure your phone is unlocked.</p>
@@ -671,21 +674,10 @@
 <p align="center"><img alt="img/yellow-warnings.png" src="../img/yellow-warnings.png" width="750" /></p>
 </div>
 <h2 id="build-failed">Build Failed<a class="headerlink" href="#build-failed" title="Permanent link">⌁</a></h2>
-<div class="admonition info">
+<div class="admonition warning">
 <p class="admonition-title">Breaking News for Xcode 13</p>
-<p>There is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build.  Look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the <a href="#xcode-13-restart">Xcode 13 Restart</a> steps below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.</p>
-<p><img alt="I am impatient - did not let indexing finish" src="../img/xcode-13-new-error.svg" width="450" /></p>
-<p><em>Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. You can disable this error by setting 'CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION' to 'YES', however this may cause the built product's code signature or provisioning profile to contain incorrect entitlements. (in target 'WatchApp Extension' from project 'Loop')</em></p>
+<p>There is a new error for Xcode 13, "WatchApp Extension.entitlements" that happens if you don't wait for indexing to complete. If you get this, follow this link: <a href="../build_errors/#xcode-13-indexing-not-finished-watchapp-extension-entitlements">WatchApp Extension Solution</a></p>
 </div>
-<h3 id="xcode-13-restart">Xcode 13 Restart<a class="headerlink" href="#xcode-13-restart" title="Permanent link">⌁</a></h3>
-<ol>
-<li>Quit out of Xcode (Xcode-&gt;Quit)</li>
-<li>Start Xcode again (Finder-&gt;Applications-&gt;Xcode)</li>
-<li>Reopen the Workspace in Xcode: File-&gt;Open Recent-&gt;<code>&lt;top line&gt;</code></li>
-<li>Clear the Build Error: Xcode: Product-&gt;Clean Build Folder</li>
-<li>Wait for indexing to complete</li>
-<li>Press the Play button to build</li>
-</ol>
 <p>If you get any other message that your build failed and see <strong>RED ERROR</strong> messages, go to the <a href="../build_errors/">Build Errors</a> page to find the steps to fix your build error. Most build errors are covered on that page along with instructions on how to fix them and how to ask for help.</p>
 <p>Once you've resolved the issue and start the build process again, Xcode will continue to show a red circle on the top line from the previous failure.  Don't worry about it.  As long as the steps of the build are showing across the top line, Xcode is still working on the build.  When the build succeeds, the red circle will disappear.</p>
 <p align="center"><img alt="img/general-error.jpg" src="../img/general-error.jpg" width="750" /></p>

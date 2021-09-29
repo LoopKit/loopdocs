@@ -453,7 +453,7 @@
 <h2 id="start-with-the-obvious-error-causes">Start with The Obvious Error Causes<a class="headerlink" href="#start-with-the-obvious-error-causes" title="Permanent link">⌁</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">New Loop Builders</p>
-<p>This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4 and 6 in the list below. Then, skim the page until your reach <a href="./#find-your-error-messages">Find Your Error Message</a>. Once you've identified your error message, try to resolve it.  Still stuck? Read <a href="./#posting-for-help">Posting for Help</a></p>
+<p>This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4, 6 and 7 in the list below. Then, skim the page until your reach <a href="./#find-your-error-messages">Find Your Error Message</a>. Once you've identified your error message, try to resolve it.  Still stuck? Read <a href="./#posting-for-help">Posting for Help</a></p>
 </div>
 <p>Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:</p>
 <ol>
@@ -484,8 +484,7 @@
 <ol>
 <li>Open your project in Xcode as normal. Then go to the Xcode menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.</li>
 <li>On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.</li>
-<li>Open the Terminal app on your computer.</li>
-<li>Copy and paste this command and press return: <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code> Note: you won't see any message back if the command runs successfully.</li>
+<li>If you are updating Loop and did not do <a href="../updating/#step-4a-delete-old-provisioning-profiles">Steps 4a and 4b</a>, do it now</li>
 <li>Return to Xcode and try building your app again.</li>
 </ol>
 <p>If the build fails again, look through the list below and see if you can match your error message with one of the error messages listed later in this page. If you really can't find your solution, then post for help. But help us help you.</p>
@@ -532,6 +531,20 @@
 <p>For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find the solution.</p>
 <p align="center"><img alt="img/search-errors.png" src="../img/search-errors.png" width="650" /></p>
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Permanent link">⌁</a></h2>
+<h3 id="xcode-13-indexing-not-finished-watchapp-extension-entitlements">Xcode 13 Indexing Not Finished / WatchApp Extension entitlements<a class="headerlink" href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" title="Permanent link">⌁</a></h3>
+<p><strong>Error Message:</strong></p>
+<p>This is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build.   To avoid this: look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the <strong>solution</strong> below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.</p>
+<p><img alt="I am impatient - did not let indexing finish" src="../img/xcode-13-new-error.svg" width="450" /></p>
+<p><em>Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. . .</em></p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>Quit out of Xcode (Xcode-&gt;Quit)</li>
+<li>Start Xcode again (Finder-&gt;Applications-&gt;Xcode)</li>
+<li>Reopen the Workspace in Xcode: File-&gt;Open Recent-&gt;<code>&lt;top line&gt;</code></li>
+<li>Clear the Build Error: Xcode: Product-&gt;Clean Build Folder</li>
+<li>Wait for indexing to complete</li>
+<li>Press the Play button to build</li>
+</ul>
 <h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Permanent link">⌁</a></h3>
 <p>If you previously installed carthage (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a carthage error.</p>
 <p>If you are using a Loop fork or a Workspace build with the dev branch, you may still require carthage. This <a href="https://www.loopandlearn.org/carthage-0-36-0/">external link</a> explains how to install the correct version of carthage on your computer.</p>
