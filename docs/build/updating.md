@@ -86,7 +86,9 @@ Apple updates its License Agreement for the Developer Program frequently. You ne
 
 !!! info ""
 
-    Yes - we do know how to count - but we've changed the order of steps. Steps 4a and 4b are done first and with a new method. A lot of links are used historically, so we try not to change the names of headers (and thus the links) unless it is absolutely necessary.
+    Yes - we do know how to count - but we've changed the order of steps. A lot of links are used historically, so we try not to change the names of headers (and thus the links) unless it is absolutely necessary.
+
+    **Steps 4a and 4b** are completed with this new method.
 
 In order to ensure a full year of use for your Loop app, you need to delete any existing provisioning profile(s) from your computer. If you want to know more information before executing this step - or if you want to do it manually, read the [Background Information](#background-information).
 
