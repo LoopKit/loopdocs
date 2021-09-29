@@ -680,9 +680,10 @@
 <h3 id="xcode-13-restart">Xcode 13 Restart<a class="headerlink" href="#xcode-13-restart" title="Permanent link">⌁</a></h3>
 <ol>
 <li>Quit out of Xcode (Xcode-&gt;Quit)</li>
-<li>In the terminal: enter <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code></li>
 <li>Start Xcode again (Finder-&gt;Applications-&gt;Xcode)</li>
 <li>Reopen the Workspace in Xcode: File-&gt;Open Recent-&gt;<code>&lt;top line&gt;</code></li>
+<li>Clear the Build Error: Xcode: Product-&gt;Clean Build Folder</li>
+<li>Wait for indexing to complete</li>
 <li>Press the Play button to build</li>
 </ol>
 <p>If you get any other message that your build failed and see <strong>RED ERROR</strong> messages, go to the <a href="../build_errors/">Build Errors</a> page to find the steps to fix your build error. Most build errors are covered on that page along with instructions on how to fix them and how to ask for help.</p>
