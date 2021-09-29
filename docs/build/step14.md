@@ -286,9 +286,10 @@ You’ll see the progression of the build in the status window (top middle of Xc
 ### Xcode 13 Restart
 
 1. Quit out of Xcode (Xcode->Quit)
-1. In the terminal: enter `rm -rf ~/Library/Developer/Xcode/DerivedData`
 1. Start Xcode again (Finder->Applications->Xcode)
 1. Reopen the Workspace in Xcode: File->Open Recent->`<top line>`
+1. Clear the Build Error: Xcode: Product->Clean Build Folder
+1. Wait for indexing to complete
 1. Press the Play button to build
 
 
