@@ -11,7 +11,7 @@ Profile expiration notification is a new feature.
 
 * When fewer than 20 days remain until profile expiration, you'll get a notification when you open the app but no more frequently than every 2 days
 * When fewer than 24 hours remain, you'll get a notification when you open the app, once every hour at most
-* Simply tap on the `More Info` button of the notification to go directly to the [LoopDocs Updating](updating.md) page.
+* Simply tap on the `More Info` button of the notification to go directly to the [LoopDocs Updating](../../build/updating.md) page.
 
 ### Free (7-day) Loop App Expiration Notification
 
@@ -104,4 +104,4 @@ Loop will notify when battery levels have approximately 8-10 hours of battery li
 
 ## Remote Notifications
 
-Loop does not have a remote notification to other devices.  If you are a remotely monitoring parent, you will want to read [here](../../nightscout/pushover.md#pushover) about setting up pushover alerts using your Nightscout site if you want proactive notifications of looping related information.
+Loop does not have a remote notification to other devices.  If you are a remotely monitoring parent, you will want to read [here](https://nightscout.github.io/nightscout/setup_variables/#pushover) about setting up pushover alerts using your Nightscout site if you want proactive notifications of looping related information.
