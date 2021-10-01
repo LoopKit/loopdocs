@@ -91,7 +91,7 @@ If there is more than one Looper in the family, you only need to have one Apple 
 
 ## What happens when I switch Apple Developer ID?
 
-The Loop app on the phone is different if the build uses a different Apple Developer ID from the one currently on the phone. So if the Apple Developer ID used for a new Loop build is different from the one used for the existing Loop app, there will be two Loop apps on the phone.  The Looper will have to on-board the new app, enter all the settings again and delete the old app. 
+The Loop app on the phone is different if the build uses a different Apple Developer ID from the one currently on the phone. So if the Apple Developer ID used for a new Loop build is different from the one used for the existing Loop app, there will be two Loop apps on the phone.  The Looper will have to on-board the new app, enter all the settings again and delete the old app.
 
 ## Can I use someone else's Apple Developer account?
 
@@ -122,7 +122,9 @@ For Pod users, your Pod will finish any currently running temporary basal rate (
 
 ## What if I lose or get a new iPhone?
 
-When you get a new iPhone, Loop will need to be built onto that new iPhone in the same way that you built on your old iPhone. Loop will not restore from any iCloud or iTunes backups, but all the settings are transferred from the backup, including the pod information if the backup is recent enough. So once the Loop app is built on the new phone, it should just keep going.  Be prepared to start a new pod and enter all your settings if the transfer doesn't work.
+If you lose your phone - it's the same protocol as if you lost your [rileylink](#what-if-i-lose-my-rileylink-compatible-device).
+
+When you get a new iPhone, you can plan ahead. The information is found under [Updating FAQs for New Phone](update-faqs.md#what-if-im-changing-phones) for more information.
 
 ## What about other pumps? When will they Loop?
 
