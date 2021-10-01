@@ -37,9 +37,9 @@ If you find yourself in a situation where you would like to specify an exact tem
 
 For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone or RileyLink however, you will not be able to affect any pod use; no basal change, suspend, cancel, or bolus. To do anything other than let basals continue, you will need to take action depending on the situation.
 
-* Lost RileyLink only: You can replace your missing RileyLink with one from your backup supplies. No problem to switch out to a different Rileylink mid-pod session. If you don't have a backup RileyLink to use, then you will need to remove the pod and put on a new pod paired with your PDM until you can get a new RileyLink.
+* Lost RileyLink only: You can replace your missing RileyLink with one from your backup supplies. No problem to [switch out to a different Rileylink mid-pod session](rileylink-faqs.md#adding-or-changing-rileylink). If you don't have a backup RileyLink to use, then you will need to remove the pod and put on a new pod paired with your PDM until you can get a new RileyLink. In the interim, you are still getting basal from the pod. If you are taking bolus insulin via injection, just add it to Apple Health under insulin, Loop will read it and keep making predictions for you. Once you inject, then add the carbs that go with that injection into Loop.
 
-* Lost iPhone only: You will need to remove the pod and put on a new pod paired with your PDM until you can get a new phone and Loop app built onto it.
+* Lost iPhone only: You will need to remove the pod and put on a new pod paired with your PDM until you can get a new phone and Loop app built onto it. In the interim, the pod will continue to deliver your scheduled basal until the pod reaches 80 hours. See [Updating FAQs for New Phone](update-faqs.md#what-if-im-changing-phones) for more information.
 
 * Lost both RileyLink and phone: You're having a really bad day. You'll need a hug and follow the same directions as if you lost the phone as shown in the bullet above.
 

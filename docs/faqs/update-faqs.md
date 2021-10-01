@@ -90,7 +90,16 @@ Does not matter. Moving between branches and forks is an "updating Loop" action.
 
 ## What if I'm changing phones?
 
-Changing phones is a little different than updating. You can find the instructions written up in this [article](https://www.loopandlearn.org/new-device/).
+Changing phones is a little different than just [updating](../build/updating.md).
+
+!!! danger "New Phone Checklist"
+
+    * When you change phones, Apple will force you to the latest iOS version
+    * Make sure you can build to that iOS version before trying to transfer Loop to the new phone
+    * You can use the old phone to Loop until you get the new one ready
+    * Once the transfer is completed check [all your settings and all your permissions](../operation/overview.md) on the new phone
+
+You can find the instructions written up in this [article](https://www.loopandlearn.org/new-device).
 
 ## How long does it take?
 
