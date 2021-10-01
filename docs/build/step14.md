@@ -80,7 +80,7 @@ Assuming there are no errors, then type 1, return to Continue.
 
 ## Wait for Xcode to Finish Indexing
 
-When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build.
+When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build. If you are impatient and don't wait, you will probably see this build failure: [WatchApp Extension Error](build_errors.md#xcode-13-indexing-not-finished-watchapp-extension-entitlements)
 
 ![graphic for workspace build](img/workspace-build-loop-from-script_annotated-3-1.svg){width="750"}
 {align="center"}
@@ -106,6 +106,12 @@ You can do all the instructions (except the build while waiting for indexing.) T
     * OPTIONAL: you are done with desired [customizations](#code-customizations)
 
 If you think you are ready, click on [Build Loop](#build-loop). This takes you to the section of this page that walks you through the actual build and, for first time builders, information about when and how to enter passwords.
+
+---
+
+Extra details - there are some extra details for some of the steps summarized above.
+
+Head to [Build Loop](#build-loop) when you are ready to build.
 
 ### Connect Your iPhone to Computer
 
@@ -274,23 +280,9 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 ## Build Failed
 
-!!! info "Breaking News for Xcode 13"
+!!! warning "Breaking News for Xcode 13"
 
-    There is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build.  Look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the [Xcode 13 Restart](#xcode-13-restart) steps below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.
-
-    ![I am impatient - did not let indexing finish](img/xcode-13-new-error.svg){width="450"}
-
-
-    _Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. You can disable this error by setting 'CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION' to 'YES', however this may cause the built product's code signature or provisioning profile to contain incorrect entitlements. (in target 'WatchApp Extension' from project 'Loop')_
-
-### Xcode 13 Restart
-
-1. Quit out of Xcode (Xcode->Quit)
-1. Start Xcode again (Finder->Applications->Xcode)
-1. Reopen the Workspace in Xcode: File->Open Recent->`<top line>`
-1. Clear the Build Error: Xcode: Product->Clean Build Folder
-1. Wait for indexing to complete
-1. Press the Play button to build
+    There is a new error for Xcode 13, "WatchApp Extension.entitlements" that happens if you don't wait for indexing to complete. If you get this, follow this link: [WatchApp Extension Solution](build_errors.md#xcode-13-indexing-not-finished-watchapp-extension-entitlements)
 
 
 If you get any other message that your build failed and see **RED ERROR** messages, go to the [Build Errors](build_errors.md) page to find the steps to fix your build error. Most build errors are covered on that page along with instructions on how to fix them and how to ask for help.

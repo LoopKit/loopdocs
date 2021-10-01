@@ -1,10 +1,20 @@
 # Overview
 
-Nightscout (NS) is an excellent tool for remotely viewing Loop's actions.  It allows for easy remote monitoring of Loop activities, troubleshooting of Loop errors, history of CGM, carbs, boluses, & temp basals, reports analyzing data trends and patterns. Setting up a DIY Nightscout site is free and fairly quick. Once set up, the site can be accessed by anyone that you share your unique Nightscout URL with. There is a Nightscout app in your iPhone App Store that allows you to view the NS site after you've configured it, or you can use a web browser to view the data.  
+Nightscout is an excellent tool for remotely viewing Loop's actions.  It allows for easy remote monitoring of Loop activities, troubleshooting of Loop errors, history of CGM, carbs, boluses, & temp basals, reports analyzing data trends and patterns. Setting up a Nightscout site is fairly quick. Once set up, the site can be accessed by anyone that you share your unique Nightscout URL with. There is a Nightscout app in your iPhone App Store that allows you to view the Nightscout site after you've configured it, or you can use a web browser to view the data.  
 
-* Nightscout is highly recommended for Loop users, especially those using Loop as caregivers.  
-* Nightscout displays are often the easiest way to troubleshoot Loop settings if you are having problems and seeking input from others.  
-* Nightscout also provides reporting features for longer-term review and preparing information for your physician.
+* Nightscout is highly recommended for Loop users, especially those using Loop as caregivers
+* Nightscout displays are often the easiest way to troubleshoot Loop settings if you are having problems and seeking input from others
+* Nightscout provides reporting features for longer-term review and preparing information for your physician
+
+## Nightscout Documentation
+
+There used to be a lot of Nightscout information found only in LoopDocs, but has now been transferred to updated Nightscout Documentation.  The information that remains in LoopDocs is Loop specific.  So you may be jumping back and forth between the two sets of documents.  
+
+!!! info ""
+
+    * If it says Nightscout in upper left you are in the Nightscout Site
+    * If it says LoopDocs in upper left you are in the LoopDocs site
+    * On your computer, open the  [Nightscout Documentation](https://nightscout.github.io) in a separate tab or window of your browser
 
 Below is some general discussion about the Nightscout display, as well as some Loop-specific display information.
 
@@ -33,7 +43,7 @@ Your current basal profile is automatically updated to NS whenever it is changed
 
 ## Predicted BG
 
-The purple line to the right of the BG is Loop's predicted BG.  Watching the behavior of that purple line can help you understand why Loop is making decisions regarding high or low temps.  You can read more on that topic in the [Algorithm](operation/algorithm/overview.md) section of these docs. If you don't see the prediction (and all other NS and Loop settings are configured), tap on the 3 dots to the right of the 24 to reveal the choice to display AR2 prediction or Loop prediction.  Adjust the check boxes to show just the Loop prediction.
+The purple line to the right of the BG is Loop's predicted BG.  Watching the behavior of that purple line can help you understand why Loop is making decisions regarding high or low temps.  You can read more on that topic in the [Algorithm](../operation/algorithm/overview.md) section of these docs. If you don't see the prediction (and all other NS and Loop settings are configured), tap on the 3 dots to the right of the 24 to reveal the choice to display AR2 prediction or Loop prediction.  Adjust the check boxes to show just the Loop prediction.
 
 ## Loop pill
 

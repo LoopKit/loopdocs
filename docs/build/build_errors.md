@@ -9,7 +9,9 @@ There are two types of build errors that happen: they are yellow warnings and re
 ## Start with The Obvious Error Causes
 
 !!! danger "New Loop Builders"
-    This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4 and 6 in the list below. Then, skim the page until your reach [Find Your Error Message](build_errors.md#find-your-error-messages). Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
+    This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4, 6 and 7 in the list below. Then, skim the page until your reach [Find Your Error Message](build_errors.md#find-your-error-messages). Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
+
+
 
 Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:
 
@@ -33,8 +35,7 @@ If you have checked all those steps above and think you have a true build error,
 
 1. Open your project in Xcode as normal. Then go to the Xcode menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.
 1. On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.
-1. Open the Terminal app on your computer.
-1. Copy and paste this command and press return: `rm -rf ~/Library/Developer/Xcode/DerivedData` Note: you won't see any message back if the command runs successfully.
+1. If you are updating Loop and did not do [Steps 4a and 4b](updating.md#step-4a-delete-old-provisioning-profiles), do it now
 1. Return to Xcode and try building your app again.
 
 If the build fails again, look through the list below and see if you can match your error message with one of the error messages listed later in this page. If you really can't find your solution, then post for help. But help us help you.
@@ -92,6 +93,27 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 {align="center"}
 
 ## Specific Error Messages
+
+### Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
+
+**Error Message:**
+
+This is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build.   To avoid this: look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the **solution** below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.
+
+![I am impatient - did not let indexing finish](img/xcode-13-new-error.svg){width="450"}
+
+
+_Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. . ._
+
+**Solution:**
+
+- Quit out of Xcode (Xcode->Quit)
+- Start Xcode again (Finder->Applications->Xcode)
+- Reopen the Workspace in Xcode: File->Open Recent->`<top line>`
+- Clear the Build Error: Xcode: Product->Clean Build Folder
+- Wait for indexing to complete
+- Press the Play button to build
+
 
 ### Carthage Error
 
