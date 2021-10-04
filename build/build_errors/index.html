@@ -533,19 +533,60 @@
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Permanent link">⌁</a></h2>
 <h3 id="xcode-13-indexing-not-finished-watchapp-extension-entitlements">Xcode 13 Indexing Not Finished / WatchApp Extension entitlements<a class="headerlink" href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" title="Permanent link">⌁</a></h3>
 <p><strong>Error Message:</strong></p>
-<p>This is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build.   To avoid this: look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the <strong>solution</strong> below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.</p>
+<p>This is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build - but sometimes it happens even if you did wait.</p>
+<p>To avoid this: look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the <strong>solution</strong> below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.</p>
 <p><img alt="I am impatient - did not let indexing finish" src="../img/xcode-13-new-error.svg" width="450" /></p>
 <p><em>Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. . .</em></p>
 <p><strong>Solution:</strong></p>
 <ul>
-<li>Quit out of Xcode (Xcode-&gt;Quit)</li>
+<li>Quit out of Xcode (Menu at top of Xcode: Select Xcode-&gt;Quit)</li>
 <li>Start Xcode again (Finder-&gt;Applications-&gt;Xcode)</li>
-<li>Reopen the Workspace in Xcode: File-&gt;Open Recent-&gt;<code>&lt;top line&gt;</code></li>
-<li>Clear the Build Error: Xcode: Product-&gt;Clean Build Folder</li>
+<li>
+<p>Reopen the Workspace in Xcode:</p>
+<ul>
+<li>Menu at top of Xcode: Select File-&gt;Open Recent and select the top line offered <strong>if your Open Recent image looks similar to this one</strong></li>
+<li>
+<p>If you do not see Loop.xcworkspace on the left of the top line, use <strong>Alternative Open Step</strong> below</p>
+<p><img alt="example of open recent display" src="../img/xcode-open-recent-view.png" width="600" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Clear the Build Error (Menu at top of Xcode: Select Product-&gt;Clean Build Folder)</p>
+</li>
 <li>Wait for indexing to complete</li>
 <li>Press the Play button to build</li>
 </ul>
+<p><strong>Alternative Open Step:</strong></p>
+<ul>
+<li>
+<p>If your graphic for the File-&gt;Open Recent does <strong>not</strong> show the Loop.xcworkspace on the left:</p>
+<ul>
+<li>Quit out of Xcode again</li>
+<li>Examine the terminal window used for the download to find the folder name where the download was placed and use finder to navigate to that folder.</li>
+<li>
+<p>For example, the graphic above, the information in my terminal app starts out with the text:</p>
+<p><code>Downloading Loop to your Downloads folder.</code></p>
+<p><code>Cloning into 'LoopWorkspace'...</code></p>
+</li>
+<li>
+<p>Then you'll see lines like this that repeat for each submodule:</p>
+<p><code>Cloning into '/Users/marion/Downloads/BuildLoop/Loop-Master-210929-1508/LoopWorkspace/submodule-name-goes-here'...</code></p>
+</li>
+<li>
+<p>For this example, the folder to which you need to navigate using Finder is <code>/Users/marion/Downloads/BuildLoop/Loop-Master-210929-1508/LoopWorkspace</code></p>
+</li>
+<li>Find the file in that folder called <code>Loop.xcworkspace</code> and double click it</li>
+<li>This should open Xcode in the correct folder</li>
+<li>Continue steps above starting at Product-&gt;Clean Build Folder</li>
+</ul>
+</li>
+</ul>
 <h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Permanent link">⌁</a></h3>
+<p>With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-finish-indexing">Build Instructions</a></p>
+<div class="admonition info">
+<p>Advanced builders using dev may need carthage but they should have followed the directions for <a href="../step13/#advanced-users-only">Advanced Users Only</a></p>
+</div>
 <p>If you previously installed carthage (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a carthage error.</p>
 <p>If you are using a Loop fork or a Workspace build with the dev branch, you may still require carthage. This <a href="https://www.loopandlearn.org/carthage-0-36-0/">external link</a> explains how to install the correct version of carthage on your computer.</p>
 <p><strong>Error Message:</strong></p>
