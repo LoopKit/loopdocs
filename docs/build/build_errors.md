@@ -98,7 +98,9 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 **Error Message:**
 
-This is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build.   To avoid this: look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the **solution** below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.
+This is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build - but sometimes it happens even if you did wait.
+
+To avoid this: look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the **solution** below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.
 
 ![I am impatient - did not let indexing finish](img/xcode-13-new-error.svg){width="450"}
 
@@ -107,15 +109,46 @@ _Entitlements file "WatchApp Extension.entitlements" was modified during the bui
 
 **Solution:**
 
-- Quit out of Xcode (Xcode->Quit)
+- Quit out of Xcode (Menu at top of Xcode: Select Xcode->Quit)
 - Start Xcode again (Finder->Applications->Xcode)
-- Reopen the Workspace in Xcode: File->Open Recent->`<top line>`
-- Clear the Build Error: Xcode: Product->Clean Build Folder
+- Reopen the Workspace in Xcode:
+    - Menu at top of Xcode: Select File->Open Recent and select the top line offered **if your Open Recent image looks similar to this one**
+    - If you do not see Loop.xcworkspace on the left of the top line, use **Alternative Open Step** below
+
+        ![example of open recent display](img/xcode-open-recent-view.png){width="600"}
+
+- Clear the Build Error (Menu at top of Xcode: Select Product->Clean Build Folder)
 - Wait for indexing to complete
 - Press the Play button to build
 
+**Alternative Open Step:**
+
+- If your graphic for the File->Open Recent does **not** show the Loop.xcworkspace on the left:
+    - Quit out of Xcode again
+    - Examine the terminal window used for the download to find the folder name where the download was placed and use finder to navigate to that folder.
+    - For example, the graphic above, the information in my terminal app starts out with the text:
+
+        ` Downloading Loop to your Downloads folder.`
+
+        `        Cloning into 'LoopWorkspace'...  `
+
+    - Then you'll see lines like this that repeat for each submodule:
+
+        `Cloning into '/Users/marion/Downloads/BuildLoop/Loop-Master-210929-1508/LoopWorkspace/submodule-name-goes-here'...`
+
+    - For this example, the folder to which you need to navigate using Finder is `/Users/marion/Downloads/BuildLoop/Loop-Master-210929-1508/LoopWorkspace`
+    - Find the file in that folder called `Loop.xcworkspace` and double click it
+    - This should open Xcode in the correct folder
+    - Continue steps above starting at Product->Clean Build Folder
+
 
 ### Carthage Error
+
+With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the new [Build Instructions](step14.md#wait-for-xcode-to-finish-indexing)
+
+
+!!! info ""
+    Advanced builders using dev may need carthage but they should have followed the directions for [Advanced Users Only](step13.md#advanced-users-only)
 
 If you previously installed carthage (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a carthage error.
 

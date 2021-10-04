@@ -90,15 +90,20 @@ You can do all the instructions (except the build while waiting for indexing.) T
 1. At the very top of all the folders and files listed on the left side, click on the blue icon next to the word "Loop". You might need to click a second time to highlight the Loop folder. This will populate the middle part of the Xcode window.
 1. [Plug in your phone](#connect-your-iphone-to-computer) - make sure it is unlocked.  If this is the first time for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".
     * Select Loop (Workspace) from the dropdown at the upper left
-    * Select your phone (not a simulator of the same model as your phone) - it will be near the top of the dropdown list
+        - Examine the Step 2 Detail in the graphic above
+        - The selection (check mark) shown is the default setting of Loop
+        - You need to change the selection to be Loop (Workspace)
+    * Select your phone (not a simulator of the same model as your phone) - it will be near the top of the dropdown list under the heading iOS Device
     * If you don't see your phone, unplug and plug in again
 1. Click on the "Signing & Capabilities" tab near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of the middle window matching the graphic above.
 1. It is time to Sign the Targets with your [Apple Developer ID](step9.md#add-apple-id)
     * For [Free Account](#free-account) - you must take additional steps before signing
     * For Paid Account - [sign the targets](#sign-the-targets) indicated in the graphic above
+    * ONLY sign the 4 targets highlighted in the graphic above
+        - If you sign other targets you might generate errors when you build and they do NOT need to be signed
 1. You are ready to Build Loop if all the following are completed:
     * Indexing has completed
-    * You signed the targets
+    * You signed the 4 targets
     * Your iPhone is unlocked and plugged into the computer
     * You selected Loop (Workspace)
     * You selected your phone and not a simulator
@@ -109,7 +114,9 @@ If you think you are ready, click on [Build Loop](#build-loop). This takes you t
 
 ---
 
-Extra details - there are some extra details for some of the steps summarized above.
+Extra details - there are some extra details for some of the steps summarized above - the links in that list above take you to the appropriate extra details section.
+
+**If you are a first-time builder, please read through all the extra details before you start you build**
 
 Head to [Build Loop](#build-loop) when you are ready to build.
 
