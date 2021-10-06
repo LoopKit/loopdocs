@@ -111,10 +111,10 @@ _Entitlements file "WatchApp Extension.entitlements" was modified during the bui
 
 No need to quit Xcode - the graphic below matches the step numbers in the list.
 
-1. Click on Loop folder to show the `Signing & Capabilities` tab in xcode
+1. Click on `Loop` folder
+1. Click on `WatchApp` target
 1. Click on the `General` tab
-1. Click on Watch target
-1. Click on the `App Icons Source` line and you'll see the dropdown menu shown below
+1. Click on the `App Icons Source` dropdown menu
 1. Click on the item already selected (the line won't change in appearance)
 
 
