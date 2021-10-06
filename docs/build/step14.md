@@ -80,7 +80,9 @@ Assuming there are no errors, then type 1, return to Continue.
 
 ## Wait for Xcode to Finish Indexing
 
-When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build. If you are impatient and don't wait, you will probably see this build failure: [WatchApp Extension Error](build_errors.md#xcode-13-indexing-not-finished-watchapp-extension-entitlements)
+When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build. If you are impatient and don't wait (and sometimes even when you do wait), you may see this build failure: [WatchApp Extension Error](build_errors.md#xcode-13-indexing-not-finished-watchapp-extension-entitlements).
+
+The other thing to know: If there is a space in the path to your LoopWorkspace folder, you will get the [CompileAssetCatalog Error](build_errors.md#compileassetcatalog-error). You can go on and do the "error" fix before you build and then it won't happen.  Or you can wait until you see it. And if you are super fast and do the "fix" first and then don't wait for indexing, you might still get the WatchApp Extension error.  Fortunately, the solutions to both are simple and fast.
 
 ![graphic for workspace build](img/workspace-build-loop-from-script_annotated-3-1.svg){width="750"}
 {align="center"}
