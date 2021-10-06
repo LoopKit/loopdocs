@@ -8,15 +8,27 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="469.99973"
-   height="269.99973"
-   viewBox="0 0 469.99972 269.99973"
+   width="249"
+   height="116"
+   viewBox="0 0 249 116"
    version="1.1"
    id="SVGRoot"
    sodipodi:docname="xcode-13-new-error.svg"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
   <defs
-     id="defs10" />
+     id="defs10">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2136">
+      <rect
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         id="rect2138"
+         width="249"
+         height="116"
+         x="950"
+         y="620" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,9 +36,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="87.674226"
-     inkscape:cy="378.15517"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-68.4437"
+     inkscape:cy="96.733943"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -44,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,9 +64,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-930.00013,-480.00013)">
+     transform="translate(-950,-620)">
     <g
-       id="g1601">
+       id="g1601"
+       clip-path="url(#clipPath2136)">
       <image
          width="249"
          height="116"

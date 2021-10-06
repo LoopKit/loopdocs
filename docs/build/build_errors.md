@@ -98,48 +98,57 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 **Error Message:**
 
-This is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build - but sometimes it happens even if you did wait.
+The solution for this error has been updated with a new, simpler method.
 
-To avoid this: look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the **solution** below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.
+![watchapp entitlements error](img/xcode-13-new-error.svg){width="300"}
 
-![I am impatient - did not let indexing finish](img/xcode-13-new-error.svg){width="450"}
-
+Text in error message:
 
 _Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. . ._
 
 **Solution:**
 
-- Quit out of Xcode (Menu at top of Xcode: Select Xcode->Quit)
-- Start Xcode again (Finder->Applications->Xcode)
-- Reopen the Workspace in Xcode:
-    - Menu at top of Xcode: Select File->Open Recent and select the top line offered **if your Open Recent image looks similar to this one**
-    - If you do not see Loop.xcworkspace on the left of the top line, use **Alternative Open Step** below
+No need to quit Xcode - the graphic below matches the step numbers in the list.
 
-        ![example of open recent display](img/xcode-open-recent-view.png){width="600"}
+1. Click on `Loop` folder
+1. Click on `WatchApp` target
+1. Click on the `General` tab
+1. Click on the `App Icons Source` dropdown menu
+1. Click on the item already selected (the line won't change in appearance)
 
-- Clear the Build Error (Menu at top of Xcode: Select Product->Clean Build Folder)
-- Wait for indexing to complete
-- Press the Play button to build
 
-**Alternative Open Step:**
+![Xcode screen showing App Icons Source with black indication](img/error-watchapp-entitlements.svg){width="900"}
 
-- If your graphic for the File->Open Recent does **not** show the Loop.xcworkspace on the left:
-    - Quit out of Xcode again
-    - Examine the terminal window used for the download to find the folder name where the download was placed and use finder to navigate to that folder.
-    - For example, the graphic above, the information in my terminal app starts out with the text:
+- (Optional) Clear the Build Error (Menu at top of Xcode: Select Product->Clean Build Folder)
+- Press build  
 
-        ` Downloading Loop to your Downloads folder.`
+### CompileAssetCatalog Error
 
-        `        Cloning into 'LoopWorkspace'...  `
+This error is found when there is a space embedded in the path name to your LoopWorspace folder. The good news is that LoopWorkspace seems to be able to build from an iCloud or Dropbox drive.
 
-    - Then you'll see lines like this that repeat for each submodule:
 
-        `Cloning into '/Users/marion/Downloads/BuildLoop/Loop-Master-210929-1508/LoopWorkspace/submodule-name-goes-here'...`
+![CompileAssetCatalog error](img/error-space-in-path.png){width="900"}
 
-    - For this example, the folder to which you need to navigate using Finder is `/Users/marion/Downloads/BuildLoop/Loop-Master-210929-1508/LoopWorkspace`
-    - Find the file in that folder called `Loop.xcworkspace` and double click it
-    - This should open Xcode in the correct folder
-    - Continue steps above starting at Product->Clean Build Folder
+Text in error message:
+
+_Command CompileAssetCatalog failed with a nonzero exit code. . ._
+
+**Solution:**
+
+This is very similar to the steps for the WatchApp Entitlements Error but you need to repeat it for 2 targets: `Loop` and `WatchApp` - the graphic below matches the step numbers in the list.
+
+1. Click on `Loop` folder
+1. Click on `Loop` target
+1. Click on the `General` tab
+1. Click on the `App Icons Source` dropdown menu
+1. Click on the item already selected (the line will change from red to blank)
+
+
+![fix for CompileAssetCatalog error](img/error-compileassetcatalog.svg){width="900"}
+
+- Repeat the `App Icons Source` dropdown menu selection for the `WatchApp` target
+- (Optional) Clear the Build Error (Menu at top of Xcode: Select Product->Clean Build Folder)
+- Press build
 
 
 ### Carthage Error
@@ -184,9 +193,11 @@ With Xcode 12, the simulators are no longer being downloaded automatically. If y
 
 ### No Such Module 'LoopKit' or Similar Message
 
+**Solution**: You probably forgot to select LoopWorkspace. Review the graphic from the new [Build Instructions](step14.md#wait-for-xcode-to-finish-indexing)
+
 **Error Message:** If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the [Carthage Error](build_errors.md#carthage-error) fix listed above.
 
-**Solution**: Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.
+**Solution**: For zip-download (not advised): Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.
 
 ![img/exit-code-65.png](img/exit-code-65.png){width="850"}
 {align="center"}
@@ -324,7 +335,7 @@ You can verify the iOS development certificates are working by clicking on "Mana
 ![img/abort_payload.png](img/abort_payload.png){width="750"}
 {align="center"}
 
-**Solution:** This error message is caused by having the Loop download folder in an iCloud mapped drive.  Move your Loop download folder back to the Downloads folder, then rebuild.
+**Solution:** This error message is caused by having the Loop download folder in an iCloud mapped drive when doing the zip download.  Move your Loop download folder back to the Downloads folder, then rebuild. LoopWorkspace builds with Xcode 13 appear to work fine with an iCloud drive.  You may run into the spaces in your path name problem - which has a different solution.
 
 
 ## Apple Watch Issues
