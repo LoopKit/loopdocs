@@ -98,49 +98,30 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 **Error Message:**
 
-This is a new error for Xcode 13. This often happens if you do not wait for indexing to finish before trying to build - but sometimes it happens even if you did wait.
+Sorry - we are stuck with the header title because this link has been used a lot. It is still a really good idea to wait for indexing to finish.
 
-To avoid this: look for the circle icon at the top of Xcode 13 to change from Indexing to Ready. If you get this error message, follow the **solution** below and build. The graphic shows the error seen on the lower left pane of Xcode (when you scroll down).  The text shows what is presented if you expand the error by clicking on the bottom line.
+The original solution has been updated with a new method.
 
-![I am impatient - did not let indexing finish](img/xcode-13-new-error.svg){width="450"}
+![watchapp entitlements error](img/xcode-13-new-error.svg){width="300"}
 
 
 _Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. . ._
 
 **Solution:**
 
-- Quit out of Xcode (Menu at top of Xcode: Select Xcode->Quit)
-- Start Xcode again (Finder->Applications->Xcode)
-- Reopen the Workspace in Xcode:
-    - Menu at top of Xcode: Select File->Open Recent and select the top line offered **if your Open Recent image looks similar to this one**
-    - If you do not see Loop.xcworkspace on the left of the top line, use **Alternative Open Step** below
+No need to quit Xcode - the graphic below matches the step numbers in the list.
 
-        ![example of open recent display](img/xcode-open-recent-view.png){width="600"}
+1. Click on `Loop` folder
+1. Click on `WatchApp` target
+1. Click on the `General` tab
+1. Click on the `App Icons Source` dropdown menu
+1. Click on the item already selected (the line won't change in appearance)
 
-- Clear the Build Error (Menu at top of Xcode: Select Product->Clean Build Folder)
-- Wait for indexing to complete
-- Press the Play button to build
 
-**Alternative Open Step:**
+![Xcode screen showing App Icons Source with black indication](img/error-watchapp-entitlements.svg){width="900"}
 
-- If your graphic for the File->Open Recent does **not** show the Loop.xcworkspace on the left:
-    - Quit out of Xcode again
-    - Examine the terminal window used for the download to find the folder name where the download was placed and use finder to navigate to that folder.
-    - For example, the graphic above, the information in my terminal app starts out with the text:
-
-        ` Downloading Loop to your Downloads folder.`
-
-        `        Cloning into 'LoopWorkspace'...  `
-
-    - Then you'll see lines like this that repeat for each submodule:
-
-        `Cloning into '/Users/marion/Downloads/BuildLoop/Loop-Master-210929-1508/LoopWorkspace/submodule-name-goes-here'...`
-
-    - For this example, the folder to which you need to navigate using Finder is `/Users/marion/Downloads/BuildLoop/Loop-Master-210929-1508/LoopWorkspace`
-    - Find the file in that folder called `Loop.xcworkspace` and double click it
-    - This should open Xcode in the correct folder
-    - Continue steps above starting at Product->Clean Build Folder
-
+- (Optional) Clear the Build Error (Menu at top of Xcode: Select Product->Clean Build Folder)
+- Press build  
 
 ### Carthage Error
 
