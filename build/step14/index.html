@@ -530,7 +530,8 @@
 <li>Rearrange screens so you can see the graphic and Xcode and follow the directions</li>
 </ul>
 <h2 id="wait-for-xcode-to-finish-indexing">Wait for Xcode to Finish Indexing<a class="headerlink" href="#wait-for-xcode-to-finish-indexing" title="Permanent link">⌁</a></h2>
-<p>When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build. If you are impatient and don't wait, you will probably see this build failure: <a href="../build_errors/#xcode-13-indexing-not-finished-watchapp-extension-entitlements">WatchApp Extension Error</a></p>
+<p>When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build. If you are impatient and don't wait (and sometimes even when you do wait), you may see this build failure: <a href="../build_errors/#xcode-13-indexing-not-finished-watchapp-extension-entitlements">WatchApp Extension Error</a>.</p>
+<p>The other thing to know: If there is a space in the path to your LoopWorkspace folder, you will get the <a href="../build_errors/#compileassetcatalog-error">CompileAssetCatalog Error</a>. You can go on and do the "error" fix before you build and then it won't happen.  Or you can wait until you see it. And if you are super fast and do the "fix" first and then don't wait for indexing, you might still get the WatchApp Extension error.  Fortunately, the solutions to both are simple and fast.</p>
 <p align="center"><img alt="graphic for workspace build" src="../img/workspace-build-loop-from-script_annotated-3-1.svg" width="750" /></p>
 <p>You can do all the instructions (except the build while waiting for indexing.) There are some additional details about each step in the list below, if you need them, indicated by links.</p>
 <ol>

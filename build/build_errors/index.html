@@ -533,9 +533,9 @@
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Permanent link">⌁</a></h2>
 <h3 id="xcode-13-indexing-not-finished-watchapp-extension-entitlements">Xcode 13 Indexing Not Finished / WatchApp Extension entitlements<a class="headerlink" href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" title="Permanent link">⌁</a></h3>
 <p><strong>Error Message:</strong></p>
-<p>Sorry - we are stuck with the header title because this link has been used a lot. It is still a really good idea to wait for indexing to finish.</p>
-<p>The original solution has been updated with a new method.</p>
+<p>The solution for this error has been updated with a new, simpler method.</p>
 <p><img alt="watchapp entitlements error" src="../img/xcode-13-new-error.svg" width="300" /></p>
+<p>Text in error message:</p>
 <p><em>Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. . .</em></p>
 <p><strong>Solution:</strong></p>
 <p>No need to quit Xcode - the graphic below matches the step numbers in the list.</p>
@@ -550,6 +550,26 @@
 <ul>
 <li>(Optional) Clear the Build Error (Menu at top of Xcode: Select Product-&gt;Clean Build Folder)</li>
 <li>Press build  </li>
+</ul>
+<h3 id="compileassetcatalog-error">CompileAssetCatalog Error<a class="headerlink" href="#compileassetcatalog-error" title="Permanent link">⌁</a></h3>
+<p>This error is found when there is a space embedded in the path name to your LoopWorspace folder. The good news is that LoopWorkspace seems to be able to build from an iCloud or Dropbox drive.</p>
+<p><img alt="CompileAssetCatalog error" src="../img/error-space-in-path.png" width="900" /></p>
+<p>Text in error message:</p>
+<p><em>Command CompileAssetCatalog failed with a nonzero exit code. . .</em></p>
+<p><strong>Solution:</strong></p>
+<p>This is very similar to the steps for the WatchApp Entitlements Error but you need to repeat it for 2 targets: <code>Loop</code> and <code>WatchApp</code> - the graphic below matches the step numbers in the list.</p>
+<ol>
+<li>Click on <code>Loop</code> folder</li>
+<li>Click on <code>Loop</code> target</li>
+<li>Click on the <code>General</code> tab</li>
+<li>Click on the <code>App Icons Source</code> dropdown menu</li>
+<li>Click on the item already selected (the line will change from red to blank)</li>
+</ol>
+<p><img alt="fix for CompileAssetCatalog error" src="../img/error-compileassetcatalog.svg" width="900" /></p>
+<ul>
+<li>Repeat the <code>App Icons Source</code> dropdown menu selection for the <code>WatchApp</code> target</li>
+<li>(Optional) Clear the Build Error (Menu at top of Xcode: Select Product-&gt;Clean Build Folder)</li>
+<li>Press build</li>
 </ul>
 <h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Permanent link">⌁</a></h3>
 <p>With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-finish-indexing">Build Instructions</a></p>
@@ -584,8 +604,9 @@
 <p align="center"><img alt="img/device-support-files.jpg" src="../img/device-support-files.jpg" width="750" /></p>
 <p>With Xcode 12, the simulators are no longer being downloaded automatically. If you are missing a simulator, follow the steps under Step 9 <a href="../step9/#simulator-download">Simulator Download</a>.</p>
 <h3 id="no-such-module-loopkit-or-similar-message">No Such Module 'LoopKit' or Similar Message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Permanent link">⌁</a></h3>
+<p><strong>Solution</strong>: You probably forgot to select LoopWorkspace. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-finish-indexing">Build Instructions</a></p>
 <p><strong>Error Message:</strong> If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the <a href="./#carthage-error">Carthage Error</a> fix listed above.</p>
-<p><strong>Solution</strong>: Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.</p>
+<p><strong>Solution</strong>: For zip-download (not advised): Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.</p>
 <p align="center"><img alt="img/exit-code-65.png" src="../img/exit-code-65.png" width="850" /></p>
 <h3 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Permanent link">⌁</a></h3>
 <p><strong>Error message:</strong> "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement"</p>
@@ -663,7 +684,7 @@
 <h3 id="abort-with-payload">Abort with Payload<a class="headerlink" href="#abort-with-payload" title="Permanent link">⌁</a></h3>
 <p><strong>Error message:</strong> "<strong>Abort with payload</strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.</p>
 <p align="center"><img alt="img/abort_payload.png" src="../img/abort_payload.png" width="750" /></p>
-<p><strong>Solution:</strong> This error message is caused by having the Loop download folder in an iCloud mapped drive.  Move your Loop download folder back to the Downloads folder, then rebuild.</p>
+<p><strong>Solution:</strong> This error message is caused by having the Loop download folder in an iCloud mapped drive when doing the zip download.  Move your Loop download folder back to the Downloads folder, then rebuild. LoopWorkspace builds with Xcode 13 appear to work fine with an iCloud drive.  You may run into the spaces in your path name problem - which has a different solution.</p>
 <h2 id="apple-watch-issues">Apple Watch Issues<a class="headerlink" href="#apple-watch-issues" title="Permanent link">⌁</a></h2>
 <h3 id="apple-watch-loop-app-not-appearing">Apple Watch: Loop App Not Appearing<a class="headerlink" href="#apple-watch-loop-app-not-appearing" title="Permanent link">⌁</a></h3>
 <p><strong>Error:</strong> Apple watch app is not appearing.</p>
