@@ -10,6 +10,7 @@
     - Check your iOS version and make sure you have iOS 12.4 minimum
     - WARNING, although the current version of Loop can be built with iOS 12.4, using newer iOS is strongly recommended
     - If using Dexcom CGM, your Looping iPhone/iPod touch will need the Dexcom app installed on it to Loop without an internet connection.
+    - Make sure the phone has good battery life
     - This is a good time to read [Turn Off Automatic Updates](#turn-off-automatic-updates)
 
 !!! warning "FAQs"
@@ -55,6 +56,16 @@ Your phone's iOS version can be found under the phone Settings -> General -> Abo
 
 Do not use any of the beta iOS versions. (Don't worry...if you don't know what that means, then you aren't using one.)
 
+
+## Avoid Low Power Mode
+
+Make sure the battery on your phone is solid. Your phone will become a critical health device - you want it to keep working.
+
+Even with a solid battery, there will be times when your phone battery is low. In this case, the phone will warn you and offer to go into Low Power Mode. One of the things that happens in low power mode is that apps allowed to work in the background, i.e., when the phone is locked, will no longer do that. Loop is one of those apps - you want Loop to keep working when your phone is locked.  Your CGM is also one of those apps.
+
+* Say NO to Low Power Mode
+* Make sure a charger and cord are in your diabetes supplies
+* Consider buying a battery pack, keep it charged and add it to your travel bag
 
 ## Turn Off Automatic Updates
 
