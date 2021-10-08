@@ -89,6 +89,8 @@ If you are running Xcode version 12, suitable for iOS versions 14.x and earlier,
 
 In order to manually create the Loop app using the Workspace method, and not use the script, you need to execute the commands listed below on your computer. You are welcome to do this and put the downloaded code where you prefer. The advantage of using the script is it provides options to do steps that are required when building Loop a second time, creates a date-time stamped folder for the download, clones the code into that folder, automatically opens Xcode in the correct folder and opens the graphic showing you the steps required to finish building the code.
 
+If you decide to do a manual download, please create a folder for it where there are no embedded spaces in the path name. At the current time, embedded spaces are causing a problem when building.  For Loop master, the problem is easy to solve, but you will get a [build error](build_errors.md#compileassetcatalog-error).
+
   `git clone --branch=master  --recurse-submodules https://github.com/LoopKit/LoopWorkspace`
 
 Confirm there were no errors in the download.
@@ -101,6 +103,10 @@ At this point, you should move to [Build Step 14: Xcode Steps](step14.md#wait-fo
 ## Advanced Users Only
 
 If you are an advanced user who wants to build the dev branch - this section is for you.
+
+**At the current time, embedded spaces are causing a problem when building dev and there is no known solution.**
+
+* Be sure to clone into a directory with no embedded spaces in the path
 
 !!! warning "Advanced Users Only"
 
