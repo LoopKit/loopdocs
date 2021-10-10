@@ -31,9 +31,22 @@ The important fact for this discussion on LoopWorkspace is that Loop developers 
 
 When you build Loop from LoopWorkspace, each of those repositories is downloaded to your computer.  This is slower than the old zip-download as far as downloading Loop - but it is much faster when you build Loop because all the files are already on your computer.
 
-LoopWorkspace uses submodules to define how the frameworks are coordinated for building. The graphic below shows the dev branch at a particular point in time.  The precise version, or commit, of each submodule is defined by 7-character hexadecimal codes (look up SHA-1) with the repository for each submodule defined in a text file called `.gitmodules`.  That's a lot to absorb at once, but several key commands will be provided later to assist you.
+LoopWorkspace uses submodules to define how the frameworks are coordinated for building. The graphic below shows the dev branch at a particular point in time.  The precise version, or commit, of each submodule is defined by 7-character hexadecimal codes (look up SHA-1) with the repository for each submodule defined in a text file called `.gitmodules`.
 
-The commit identifier for each submodule is important because that repository can be modified after things are set up and working with Loop.  When you download the code from that repository you want the exact version that was tested. The commit for the LoopKit submodule is highlighted by the red rectangle in the graphic below. Advanced users testing the dev branch (or other branches or forks) need to know how to tell if their current download is up-to-date.
+!!! info ""
+    * Several key `git` and other operating system commands will be provided later to assist you
+    * These commands will not be explained in detail
+    * If you want to know more, search the internet for documentation
+    * Often a series of commands is shown on one line, separated by semicolons
+
+The commit identifier for each submodule is important because that repository can be modified after things are set up and working with Loop.  When you download the code from that repository you want the exact version that was tested.
+
+!!! info ""
+    * Later on there will be information about determining your `git branch` for a given submodule
+    * You'll see language: `(HEAD detached at #)`
+    * That # is the commit identifier for the submodule
+
+The commit for the LoopKit submodule is highlighted by the red rectangle in the graphic below. Advanced users testing the dev branch (or other branches or forks) need to know how to tell if their current download is up-to-date.
 
 
 ![LoopWorkspace repository showing the SHA-1 for each submodule](img/loopworkspace-submodule-sha.svg){width="750"}
@@ -128,12 +141,12 @@ You can check your current submodules with the `git submodule status` command in
 ![current submodules](img/submodule-status.png){width="600"}
 {align="center"}
 
-What are those super-long numbers?  Those are the actual SHA-1 (remember - look it up) for the commits.  But the first 7 characters are sufficient to uniquely identify the commit you need.  So compare the first 7 characters to the LoopKit / LoopWorkspace number and you know whether you need to update or not.
+What are those super-long numbers?  Those are the actual SHA-1 (remember - look it up) for the commits.  But the first 7 characters are sufficient to uniquely identify the commit you need for the repository and branch identified in `.gitmodules`.  So compare the first 7 characters to the LoopKit / LoopWorkspace number and you know whether you need to update or not.
 
 To determine the commit for a single submodule on your computer, use the following commands in the LoopWorkspace folder:
 
 ```
-  cd submodule-name; git branch; cd ..
+  cd <submodule-name>; git branch; cd ..
 ```
 
 The response will be similar to this exchange:
@@ -147,7 +160,9 @@ The response will be similar to this exchange:
     dev
 ```
 
-The phrase `* (HEAD detached at #)` tells you whether your local version version matches the commit identifier on github.
+The asterick indicates the branch that is currently checked out (active).
+
+The phrase `* (HEAD detached at #)` allows you to compare your local version version with the commit identifier on github.
 
 
 ### LoopWorkspace Unchanged
@@ -160,7 +175,9 @@ What happens if you update (`git pull --recurse`) and there are no changes at th
 
 ### LoopWorkspace Updated
 
-What happens if you update (`git pull --recurse`) and there are changes at the LoopWorkspace repository? The changes will be brought down to your clone on your computer.  You'll need to build Loop again to get those changes incorporated in the app on your phone.
+What happens if you update (`git pull --recurse`) and there are changes at the LoopWorkspace repository? The changes will be brought down to your clone on your computer.
+
+**You'll need to build Loop again to get these changes incorporated in the app on your phone.**
 
 * You'll see a series of responses saying:
     * `Fetching submodule submodule-name` for each submodule-name
@@ -177,11 +194,13 @@ First, in zulipchat, in the #github stream of the commit, click on the word `pus
 
 `https://github.com/ps2/rileylink_ios/compare/8ff4bca2bc5f...2541c1c899a9`
 
-This indicates the final commit of that push for rileylink_ios is identified is `2541c1c`.
+This indicates the final commit of that push for rileylink_ios is identified as `2541c1c`.
 
 At this point, the commands to get that commit locally on your computer are as follows, starting from the LoopWorkspace folder:
 
 `cd rileylink_ios; git fetch; git checkout 2541c1c; cd ..`
+
+If you got a error message the # you requested `did not match any file(s) known to git`, you either typed it incorrectly or you forgot the `git fetch` command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.
 
 ### Local Modifications Conflict
 
@@ -213,7 +232,7 @@ There are 2 main ways to do this.
 
 1. If you're already familiar with git, the easiest way is to `cd` into the appropriate repository (like `cd rileylink_ios`) and `checkout` the desired branch.
 
-2. If you're not as familiar with git, if you edit your .gitmodules directory in LoopWorkspace, you can specify other repos to use (and add a line to specify branches, too). Then if you do a `git submodule sync` the workspace will sync to new submodules. Then `git submodule update --init --recursive --remote` will update all the submodules to the right branches and get HEADs detached correctly, etc.
+2. If you're not as familiar with git, if you edit your .gitmodules directory in LoopWorkspace, you can specify other repos to use (and add a line to specify branches, too). Then if you do a `git submodule sync` the workspace will sync to new submodules. Then `git submodule update --init --recursive --remote` will update all the submodules to the right branches and get HEADs detached correctly, etc. Note that the HEADs will be detached at the top of the branch (most recent commit) based off of `.gitmodules`.
 
 ![img/gitmodules.png](img/gitmodules.png){width="750"}
 {align="center"}
