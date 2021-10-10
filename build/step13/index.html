@@ -535,12 +535,17 @@
 <p>If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can use the zip download method but it is not advised.  See this link if you really want to stick with that method. <a href="../step14-zip/">Archived zip download information</a></p>
 <h2 id="manual-workspace-method">Manual Workspace Method<a class="headerlink" href="#manual-workspace-method" title="Permanent link">⌁</a></h2>
 <p>In order to manually create the Loop app using the Workspace method, and not use the script, you need to execute the commands listed below on your computer. You are welcome to do this and put the downloaded code where you prefer. The advantage of using the script is it provides options to do steps that are required when building Loop a second time, creates a date-time stamped folder for the download, clones the code into that folder, automatically opens Xcode in the correct folder and opens the graphic showing you the steps required to finish building the code.</p>
+<p>If you decide to do a manual download, please create a folder for it where there are no embedded spaces in the path name. At the current time, embedded spaces are causing a problem when building.  For Loop master, the problem is easy to solve, but you will get a <a href="../build_errors/#compileassetcatalog-error">build error</a>.</p>
 <p><code>git clone --branch=master  --recurse-submodules https://github.com/LoopKit/LoopWorkspace</code></p>
 <p>Confirm there were no errors in the download.</p>
 <p><code>cd LoopWorkspace; xed .</code></p>
 <p>At this point, you should move to <a href="../step14/#wait-for-xcode-to-finish-indexing">Build Step 14: Xcode Steps</a>.</p>
 <h2 id="advanced-users-only">Advanced Users Only<a class="headerlink" href="#advanced-users-only" title="Permanent link">⌁</a></h2>
 <p>If you are an advanced user who wants to build the dev branch - this section is for you.</p>
+<p><strong>At the current time, embedded spaces are causing a problem when building dev and there is no known solution.</strong></p>
+<ul>
+<li>Be sure to clone into a directory with no embedded spaces in the path</li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Advanced Users Only</p>
 <p><strong>Only build the dev branch if you're a developer/advanced user</strong></p>
