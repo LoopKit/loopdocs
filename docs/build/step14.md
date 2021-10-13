@@ -91,10 +91,10 @@ You can do all the instructions (except the build while waiting for indexing.) T
 
 1. At the very top of all the folders and files listed on the left side, click on the blue icon next to the word "Loop". You might need to click a second time to highlight the Loop folder. This will populate the middle part of the Xcode window.
 1. [Plug in your phone](#connect-your-iphone-to-computer) - make sure it is unlocked.  If this is the first time for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".
-    * Select Loop (Workspace) from the dropdown at the upper left
+    * Select **Loop (Workspace)** from the dropdown at the upper left
         - Examine the Step 2 Detail in the graphic above
-        - The selection (check mark) shown is the default setting of Loop
-        - You need to change the selection to be Loop (Workspace)
+        - The selection when Xcode opens is Loop
+        - You need to change the selection to be **Loop (Workspace)**
     * Select your phone (not a simulator of the same model as your phone) - it will be near the top of the dropdown list under the heading iOS Device
     * If you don't see your phone, unplug and plug in again
 1. Click on the "Signing & Capabilities" tab near the top of the screen. After you click on that, you should see a "Signing" section occupying the bulk of the middle window matching the graphic above.
