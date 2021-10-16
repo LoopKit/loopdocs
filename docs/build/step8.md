@@ -41,6 +41,7 @@ If you've done your homework (read this entire page) and are ready to download a
 
 Most people will update their iOS on their iPhones more often than they update their macOS or Xcode.  You know how it goes...you're tapping on your phone one day and it says there's a new version of iOS available for your phone. Want to update it now? Or be reminded of it later? Or maybe you even have the setting on your phone set to automatically install iOS updates.
 
+
 Because the update looks so innocuous and we all lead busy lives, we forget that there might be consequences to iOS updates.
 
 !!! green "Loop and iOS Updates"
@@ -88,6 +89,10 @@ The list below is for the **minimum** versions you'll need based on your iOS.
     * If you build Loop using [Xcode 12.4 or earlier](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used)  - **do NOT upgrade that phone to iOS 15** - the Loop app will immediately stop working
     * Xcode: version 12.4
 
+Experienced Users:
+
+* Once your macOS is at the correct level
+* Instead of using the Apple Store to update Xcode, you can use the [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
 ### Wikipedia Chart for Apple Versions
 
