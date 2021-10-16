@@ -41,7 +41,6 @@ If you've done your homework (read this entire page) and are ready to download a
 
 Most people will update their iOS on their iPhones more often than they update their macOS or Xcode.  You know how it goes...you're tapping on your phone one day and it says there's a new version of iOS available for your phone. Want to update it now? Or be reminded of it later? Or maybe you even have the setting on your phone set to automatically install iOS updates.
 
-
 Because the update looks so innocuous and we all lead busy lives, we forget that there might be consequences to iOS updates.
 
 !!! green "Loop and iOS Updates"
