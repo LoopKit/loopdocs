@@ -435,6 +435,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#direct-download-of-xcode" class="nav-link">Direct Download of Xcode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -506,8 +510,9 @@
 </div>
 <div class="admonition green">
 <p class="admonition-title">Verify Xcode</p>
-<p>Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode. The information for which Xcode is required is found in <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">Build Step 8</a>.  (It's not repeated because that way we only have to update it on one page.  In the time of rapid iOS changes, that's the best way to keep the information accurate.)</p>
+<p>Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode in the Apple Store. The information for which Xcode is required is found in <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">Build Step 8</a>.  (It's not repeated because that way we only have to update it on one page.  In the time of rapid iOS changes, that's the best way to keep the information accurate.)</p>
 <p>If you see that you need to update (and you probably do), then keep following instruction on that page and the next one (Build Step 9) and then return to this page.</p>
+<p>If you are finding installation of Xcode from the Apple Store incredibly slow, try the alternate method of <a href="#direct-download-of-xcode">Direct Download of Xcode</a></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Follow Build Step 9 after updating Xcode<p>Make sure to restart your computer after updating Xcode and follow the instructions in Build Step 9. There's a known issue that happens often enough to be frustrating if you skip those steps. Either a build error about missing simulators or a "device not connected" (even when phone is connected). It's not always required...but this is a good easy ounce of problem prevention.</p>
@@ -636,7 +641,32 @@
 <p class="admonition-title">Check Build Errors Page</p>
 <p>If you get a build error, check the <a href="../build_errors/">Build Errors page</a>. You might be able to resolve it yourself.</p>
 <p>Even if your exact error isn't there, the information you need to provide when asking for help is listed on that page. And that information is critical to allow mentors to help troubleshoot your build error.</p>
-</div></div>
+</div>
+<h2 id="direct-download-of-xcode">Direct Download of Xcode<a class="headerlink" href="#direct-download-of-xcode" title="Permanent link">⌁</a></h2>
+<p>Many people find updating Xcode from the Apple Store to be incredibly slow - especially when a new version has just been released.  This method still takes time and enough space on your disk, but is faster than going through the Apple Store.  Depending on your internet speed, this download can be done in about an hour. Then once it is downloaded, expect another fifteen minutes to several hours (depending on the speed of your computer) for the "xip" file to "expand".</p>
+<p>The instructions do not hold your hand.</p>
+<ul>
+<li>Your macOS must be at the minimum verion (or newer) to support the version of Xcode you're about the download</li>
+<li>You need to know how to log into your Apple Developer account and navigate those menus</li>
+<li>You need to know how to use Finder to navigate to Downloads</li>
+<li>You need to know how to drag the Xcode icon into your Applications folder (after download and expand completes)</li>
+</ul>
+<p>Here are the different steps you need to follow doing the Direct Download instead of the Apple Store method:</p>
+<ol>
+<li><a href="https://developer.apple.com/account">Login to your Apple developer account</a><ul>
+<li>Examine the menus (on my computer there are buttons on the left hand side)</li>
+<li>Click on Downloads (under Additional Resources)</li>
+<li>Look at menu items (on my computer there are buttons at the top) that say Beta, Release, Profiles and Logs, and More</li>
+<li>Click on More</li>
+<li>Scroll down until you find the item you want (for example, Xcode 13)</li>
+<li>Click on View Details and click on the Download button for the "xip" file</li>
+</ul>
+</li>
+<li>Wait for Download to complete</li>
+<li>Expand the file by clicking on it in Finder</li>
+<li>Move the Xcode icon to Applications after the expansion completes</li>
+<li>Reboot the computer</li>
+</ol></div>
             </div>
         </div>
 
