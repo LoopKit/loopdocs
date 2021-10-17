@@ -88,6 +88,10 @@ The list below is for the **minimum** versions you'll need based on your iOS.
     * If you build Loop using [Xcode 12.4 or earlier](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used)  - **do NOT upgrade that phone to iOS 15** - the Loop app will immediately stop working
     * Xcode: version 12.4
 
+Experienced Users:
+
+* Once your macOS is at the correct level
+* Instead of using the Apple Store to update Xcode, you can use the [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
 ### Wikipedia Chart for Apple Versions
 

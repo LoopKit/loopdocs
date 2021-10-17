@@ -65,9 +65,11 @@ When you see "Loop" is No Longer Available on your phone, the only solution is t
 
 !!! green "Verify Xcode"
 
-    Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode. The information for which Xcode is required is found in [Build Step 8](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).  (It's not repeated because that way we only have to update it on one page.  In the time of rapid iOS changes, that's the best way to keep the information accurate.)
+    Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode in the Apple Store. The information for which Xcode is required is found in [Build Step 8](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).  (It's not repeated because that way we only have to update it on one page.  In the time of rapid iOS changes, that's the best way to keep the information accurate.)
 
     If you see that you need to update (and you probably do), then keep following instruction on that page and the next one (Build Step 9) and then return to this page.
+
+    If you are finding installation of Xcode from the Apple Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode)
 
 !!! info "Follow Build Step 9 after updating Xcode"
 
@@ -256,3 +258,28 @@ From here, go straight to [Step 14 Build Loop app](step14.md) and do just like y
     If you get a build error, check the [Build Errors page](build_errors.md). You might be able to resolve it yourself.
 
     Even if your exact error isn't there, the information you need to provide when asking for help is listed on that page. And that information is critical to allow mentors to help troubleshoot your build error.
+
+## Direct Download of Xcode
+
+Many people find updating Xcode from the Apple Store to be incredibly slow - especially when a new version has just been released.  This method still takes time and enough space on your disk, but is faster than going through the Apple Store.  Depending on your internet speed, this download can be done in about an hour. Then once it is downloaded, expect another fifteen minutes to several hours (depending on the speed of your computer) for the "xip" file to "expand".
+
+The instructions do not hold your hand.
+
+* Your macOS must be at the minimum verion (or newer) to support the version of Xcode you're about the download
+* You need to know how to log into your Apple Developer account and navigate those menus
+* You need to know how to use Finder to navigate to Downloads
+* You need to know how to drag the Xcode icon into your Applications folder (after download and expand completes)
+
+Here are the different steps you need to follow doing the Direct Download instead of the Apple Store method:
+
+1. [Login to your Apple developer account](https://developer.apple.com/account)
+    - Examine the menus (on my computer there are buttons on the left hand side)
+    - Click on Downloads (under Additional Resources)
+    - Look at menu items (on my computer there are buttons at the top) that say Beta, Release, Profiles and Logs, and More
+    - Click on More
+    - Scroll down until you find the item you want (for example, Xcode 13)
+    - Click on View Details and click on the Download button for the "xip" file
+1. Wait for Download to complete
+1. Expand the file by clicking on it in Finder
+1. Move the Xcode icon to Applications after the expansion completes
+1. Reboot the computer
