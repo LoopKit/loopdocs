@@ -24,13 +24,6 @@ $ cd <loopdocs project location>
 $ pip install -r requirements.txt
 ```
 
-* Or, install modules individually
-
-```bash
-$ pip install mkdocs=1.1.2
-$ pip install mkdocs-bootswatch==1.1.0
-```
-
 * Run mkdocs server locally
 
 ```bash
@@ -44,6 +37,8 @@ $ mkdocs serve
 ```bash
 $ mkdocs gh-deploy
 ```
+
+Note that these two branch names: `working-docs` and `master` will automatically be published to your personal repository `gh-pages` by github actions when they are pushed to the github server.
 
 ## Conventions
 
@@ -155,4 +150,17 @@ The 3 top boxes on many pages, but especially the Build Step series should alway
 !!! info "Summary"
 
 !!! warning "FAQs"
+```
+
+## Copy Button
+
+A rudimentary copy button is available, but could be improved.
+
+* pretty rudimentary but it works (tested for Chrome and Safari)
+* each id must be unique (I'm sure there's a way to fix this . . . later)
+* example:
+
+```markdown
+<code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"</code>
+<button type="button" onclick="copyEvent('copy-step14-01')">Copy</button>
 ```
