@@ -41,13 +41,10 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 ## Download and Prepare to Build
 
-You will load the paste buffer by clicking on this [link](https://www.loopandlearn.org/build-select/#use-script) and hitting the "Copy" button to the right of step 2. The button that says "Copy" will change to "Copied" once you click it.
+You have your choice of using the instructions on the [Build-Select page](https://www.loopandlearn.org/build-select/#use-script) or hit the "Copy" button below and proceed on this page (which has more detailed information):
 
-Alternatively, you can just copy and paste this line manually skip following the link:
-
-```
-/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
-```
+<code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"</code>
+<button type="button" onclick="copyEvent('copy-step14-01')">Copy</button>
 
 Then paste the text into the terminal window and hit return; it should look like the next graphic.
 
