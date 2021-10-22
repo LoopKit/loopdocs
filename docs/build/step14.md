@@ -43,6 +43,12 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 You will load the paste buffer by clicking on this [link](https://www.loopandlearn.org/build-select/#use-script) and hitting the "Copy" button to the right of step 2. The button that says "Copy" will change to "Copied" once you click it.
 
+Alternatively, you can just copy and paste this line manually skip following the link:
+
+```
+/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
+```
+
 Then paste the text into the terminal window and hit return; it should look like the next graphic.
 
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
