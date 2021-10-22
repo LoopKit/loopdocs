@@ -5,6 +5,9 @@ extra_css:
     - stylesheets/admonitions.css
     - stylesheets/extra.css
 
+extra_javascript:
+    - stylesheets/copy_button.js
+
 markdown_extensions:
     - admonition
     - attr_list
