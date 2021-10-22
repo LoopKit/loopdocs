@@ -510,10 +510,9 @@
 <h3 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Permanent link">⌁</a></h3>
 <p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step7/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal.</p>
 <h2 id="download-and-prepare-to-build">Download and Prepare to Build<a class="headerlink" href="#download-and-prepare-to-build" title="Permanent link">⌁</a></h2>
-<p>You will load the paste buffer by clicking on this <a href="https://www.loopandlearn.org/build-select/#use-script">link</a> and hitting the "Copy" button to the right of step 2. The button that says "Copy" will change to "Copied" once you click it.</p>
-<p>Alternatively, you can just copy and paste this line manually skip following the link:</p>
-<pre><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
-</code></pre>
+<p>You have your choice of using the instructions on the <a href="https://www.loopandlearn.org/build-select/#use-script">Build-Select page</a> or hit the "Copy" button below and proceed on this page (which has more detailed information):</p>
+<p><code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"</code>
+<button type="button" onclick="copyEvent('copy-step14-01')">Copy</button></p>
 <p>Then paste the text into the terminal window and hit return; it should look like the next graphic.</p>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
 <p>You must type 1 and hit return in the terminal window to agree that you understand the warning.</p>
@@ -726,6 +725,7 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
+        <script src="../../stylesheets/copy_button.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
