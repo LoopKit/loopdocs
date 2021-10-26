@@ -31,7 +31,7 @@ You can have more than one RileyLink compatible device turned on and connected. 
 Example of using more than one device:
 
 * One device is kept in the bedroom and another in the kitchen
-* Loop will automatically switch to the device that is within range at the next cycle (Loop stays green)
+* Loop will automatically switch to the device that is within Bluetooth range at the next cycle (Loop stays green)
 * Caveats:
     * The phone needs to be close enough to get the CGM update
     * Do NOT forget to pick up one RileyLink device and take it with you when you leave the house
@@ -76,12 +76,14 @@ While you are out of the communication range for your RileyLink compatible devic
 
 ## Are these devices waterproof?
 
-Nope. Nor sweat-proof. Be careful. There are waterproof cases.
+The electronics are not waterproof but there waterproof cases available and some have wireless charging available. Check with the manufacturer.
+
+[RileyLink Compatible Device Information](../build/step5.md#rileylink-compatible-devices)
 
 
 ## Firmware version
 
-In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu. The figure below shows firmware specific to the RileyLink. If you have another type of device, the firmware value reported will be different.
+In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu. The figure below shows firmware specific to the RileyLink. If you have another type of device, the firmware value reported will be different. (Note - the displays for Ema, Orange and Riley have been updated to include device-specific features as shown in the [RileyLink Display](../operation/loop-settings/rileylink.md) page.  The graphic below shows the original RileyLink display.)
 
 ![Expected firmware display under device menu for post-Aug 2018 RileyLink](img/rl-firmware.jpg){width="350"}
 {align="center"}
@@ -96,6 +98,34 @@ HINT: You might need to quit the Loop app.  (Don't just close it, actually quit.
 
 If several power cycles do not make the correct firmware show up, contact the manufacturer for assistance.
 
+## OrangeLink Firmware
+
+The OrangeLink devices allow the user to update the firmware on the device using an app on the phone itself (available for iPhone 7 and later devices).
+
+* [OrangeLink Firmware Update](https://getrileylink.org/orangelink-firmware)
+
+A number of OrangeLink Pro devices were shipped with FW2.6 and for people who already had OrangeLink devices, a version of FW2.6 was offered for download. However, this firmware did not work well with Loop (or AndroidAPS).  
+
+* If you are having communication issues, update to the latest firmware FW3.2 using the link above
+* If you are not having communication issues, the update is optional
+    * For OrangeLink (not Pro, HW version 1.0), FW2.5 or FW3.2 are OK
+    * For OrangeLink Pro (HW version 1.1), FW1.0 or FW3.2 are OK
+    * See link above to check if versions newer than FW3.2 have been released, LoopDocs might not have the latest information
+
+!!! note ""
+    Earlier versions of the OrangeLink firmware did not put the hardware (HW) version and the firmware version (FW) in the "correct" location to hand off to Loop for interpretation. Do not worry if you are running on any FW version 1.x or 2.x and your HW version number doesn't say 1.0 or 1.1. This has been fixed for FW versions 3.x.
+
+## EmaLink and OrangeLink Features
+
+Some of the features of the OrangeLink were added to the [RileyLink Display](../operation/loop-settings/rileylink.md) with Loop v2.2.6. However, as mentioned above, the FW and HW information in some OrangeLink firmware was inconsistent in earlier versions. The consequence is that the OrangeLink Pro screen does not show the Find Device feature that many people want to use with the versions of firmware that provide good communication with Loop. The patch listed below fixes this issue.
+
+The EmaLink features were not added with Loop v2.2.6. The patch listed below adds some EmaLink features.
+
+### EmaLink and OrangeLink Patch
+
+A patch was developed to update the RileyLink screen of the Loop app that detects the OrangeLink hardware for all versions of the OrangeLink firmware and adds the battery level reporting and notification to the EmaLink screen. Click on the link below. There are detailed instructions on how to use this patch for Loop v2.2.6.
+
+* [EmaLink and OrangeLink Patch](https://github.com/ps2/rileylink_ios/issues/686)
 
 ## RileyLink Information
 
