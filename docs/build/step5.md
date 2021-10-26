@@ -57,6 +57,11 @@ There used to be just one option, the original RileyLink. Now there are more opt
 
 There is an entire FAQs page on [RileyLink Compatible Devices](../faqs/rileylink-faqs.md).
 
+Sections of interest include:
+
+* [Firmware Update](../faqs/rileylink-faqs.md#orangelink-firmware) information on the OrangeLink
+* [Ema and Orange Patch](../faqs/rileylink-faqs.md#emalink-and-orangelink-features) to see extra features on the Loop app screens
+
 
 ## Waiting for your RileyLink Compatible Device
 
