@@ -5,10 +5,19 @@ The RileyLink (or compatible device) screen is accessed by clicking on the image
 !!! danger "Helpful Tip - Personalize Your Device"
     As soon as you connect the device initially - it is strongly encouraged that you rename it from the default name for that device, e.g., RileyLink or OrangeLink or EmaLink. Tap on the device as directed above, then tap on the Name line and enter your desired name. The new name may need to sit for a few seconds before exiting back out of the naming screen for it to be transferred and saved in the device. The device must be connected and on to change its name.
 
-The name at the top center is whatever you named your RileyLink compatible device. With recent Loop updates, the RileyLink screen is the same regardless of the pump you are using. Some features available with OrangeLink were recently added to Loop. For now, the EmaLink battery stats are not displayed so the screen is the same as the RileyLink. The [firmware](../../faqs/rileylink-faqs.md#firmware-version) displayed is specific to each device. The left two graphics were taken from Loop master using an original RileyLink and an OrangeLink (not Pro).  The graphic on the right is from the [getRileyLink.org](https://getrileylink.org/product/orangelink#patch) page and shows extra rows that will display with Loop if you have the Pro version of the hardware.
+The name at the top center is whatever you named your RileyLink compatible device. With recent Loop updates, the RileyLink screen is the same regardless of the pump you are using.
+
+!!! info "Patch Required"
+
+    Some devices have features not available with other devices.  With Loop 2.2.6 some features were added to the OrangeLink, but there is a mismatch of reported hardware for some versions of OrangeLink firmware which prevents the Find Device row from showing up for OL Pro. The EmaLink extra features did not make it into the Loop v2.2.6 release.
+
+    * To see the displays shown in the graphics below, please follow instructions in the [EmaLink and OrangeLink Feature and Patch sections](../../faqs/rileylink-faqs.md#emalink-and-orangelink-features).
 
 
-![example rileylink screens for RileyLink and OrangeList](img/rl-comp-v225.svg){width="600"}
+The [firmware](../../faqs/rileylink-faqs.md#firmware-version) displayed is specific to each device. The three graphics were taken from Loop master after the patch was applied.
+
+
+![example rileylink screens for riley, ema, orange after patch](img/rl-comp-v225-patched.svg){width="600"}
 {align="center"}
 
 ## Device
