@@ -41,12 +41,11 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 ## Download and Prepare to Build
 
-You have your choice of using the instructions on the [Build-Select page](https://www.loopandlearn.org/build-select/#use-script) or hit the "Copy" button below and proceed on this page (which has more detailed information):
+You have your choice of using the instructions on the [Build-Select page](https://www.loopandlearn.org/build-select/#use-script) or hit the "Copy" button below and proceed using this page (which has more detailed information):
 
-<code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"</code>
-<button type="button" onclick="copyEvent('copy-step14-01')">Copy</button>
+<button type="button" onclick="copyEvent('copy-step14-01')">Copy</button><br><code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"<br><br></code>
 
-Then paste the text into the terminal window and hit return; it should look like the next graphic.
+Then paste the text into the terminal window; it should look like the graphic below.
 
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
@@ -62,6 +61,17 @@ Next you are asked which version of Loop you would like to build. Type 1 and hit
 
 ![choose which Loop to build](img/build-select-06.png){width="750"}
 {align="center"}
+
+!!! note ""
+
+    * If you see an error similar to one of these in the terminal
+        * xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+        * xcode-select: Failed to locate 'git', requesting installation of command line developer tools
+        * xcode-select: error: tool 'xed' requires Xcode
+    * You missed one of these steps:
+        * [Build Step 8: Install Xcode](step8.md)
+        * [Build Step 9: Xcode command line tools](step9.md)
+
 
 This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. You do not need to understand the definitions for enumeration or submodule or cloning.  You only need to review the display to look for any errors after the download is finished. The download starts out with the enumeration of all the submodules that will be downloaded. This is followed by a cloning step for each submodule. The cloning for the first module is included in the first graphic.
 
