@@ -13,40 +13,39 @@ For new builders, you might want to first build the code and familiarize yoursel
 
 ## Instructions for Finding the Lines
 
-For each customization, you will see the following 4 items.
+For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number.
 
-  * Keyword: word or phrase to use for search
   * Folder: Loop/subfolder1/subfolder2/etc.
-  * File: filename.swift
-  * Line: line number(s)
-
-If the line numbers are unchanged from the documentation:
-
-* In Xcode, hold down the command key and hit L then type in the line number
-* If the code doesn't match what you expect, use the search option described below
-
-If the line numbers don't match the documentation, search for the phrase that follows `Keyword: `
-
-* In Xcode, tap the Find menu item and select Find in Project (or Workspace)
-* Copy the word or phrase next to Keyword and paste that into the find search-box that opens on upper left of Xcode screen and hit enter
-* A series of options show up underneath the find search-box
-* The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed
-* Click on the one you think is correct and it will display in the main middle window of Xcode with the Keyword highlighted on the line you selected
-    * The phrase by `Keyword: ` should be limit the search so that only the relevant line is offered
-    * Highlight everything from the first word after "Keyword: " until the end of the line when filling in the find search-box
+  * File: filename.swift, line number(s)
+  * <button type="button" onclick="copyEvent('copy-cc-01')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-01">word or phrase to use for search</code>
 
 There may be a figure illustrating the change.
 
-Below the figure, the original, and in some cases, the modified code will be displayed.
+Below the figure, the original, and in some cases, the modified code will be displayed as text.
+
+To search using the `Key Phrase` (see graphic below for clarification):
+
+* Tap on `Key Phrase` to load that text into your paste buffer
+* In Xcode, tap the Find menu item and select Find in Workspace
+* Paste the text into the find search-box that opens on upper left of Xcode screen and hit enter
+* A series of options show up underneath the find search-box
+* The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed
+* Click on the one you think is correct and it will display in the main middle window of Xcode with the Keyword highlighted on the line you selected
+    * The `Key Phrase` was selected to limit the search to just the relevant line (if possible)
+    * In some cases, the `Key Phrase` gets you close to where you need to make the modifications
+
+![graphic showing how to search using the Key Phrase](img/code-custom-xcode-search.svg){width="750"}
+{align="center"}
+
+<br>
 
 ## Disable Authentication for Bolusing
 
 Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
-  * Keyword: canEvaluatePolicy(.deviceOwnerAuthentication
   * Folder: Loop/View Controllers
-  * File: BolusViewController.swift
-  * Line: 529
+  * File: BolusViewController.swift, Line 529
+  * <button type="button" onclick="copyEvent('copy-cc-02')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-02">canEvaluatePolicy(.deviceOwnerAuthentication</code>
 
  The screenshot below was taken with Loop v2.0 when the line number was 201; with current Loop, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
 
@@ -67,11 +66,10 @@ _Code After Modification_
 
 Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in *Think Like A Pancreas* by Gary Scheiner.  Currently the lollipop (fast) icon is set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours.  
 
-  * Keyword: defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
   * Folder: Loop/LoopCore
   * File: LoopSettings.swift
-  * Line: 16 (v2.2.4 master), 41 (v2.2.4 AB)
-  * Line: 50 (current)
+  * Line: 16 (v2.2.4 master), 41 (v2.2.4 AB), 50 (current)
+  * <button type="button" onclick="copyEvent('copy-cc-03')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-03">defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes</code>
 
 ![img/carb_times.png](img/carb_times.png){width="750"}
 {align="center"}
@@ -99,9 +97,9 @@ The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, an
 
 If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices.
 
-  * Keyword: MARK: - Model generation
   * Folder: Loop/LoopCore/Insulin
   * File: ExponentialInsulinModelPreset.swift
+  * <button type="button" onclick="copyEvent('copy-cc-04')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-04">MARK: - Model generation</code>
   * Lines:
       * actionDuration (20 to 29)
       * peakActivity (31 to 40)
@@ -113,6 +111,21 @@ If you wish to customize these values, please make sure you know what you are do
 ## Loop Logo
 
 If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/) or [appicon.co](https://appicon.co/) and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file
+
+### Custom Icon: Workspace Builds
+
+Use Finder to Navigate to the LoopWorkspace folder. These instructions assume you used the Build-Select Script - if your files are in a different folder, make the appropriate adjustment.
+
+1. Use Finder to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-Master-211006-0524)
+1. Double-click on the LoopWorkspace folder
+1. Double-click on the AdditionaAssets.xcassets folder
+1. Double-click on the CustomLoopIcon.appiconset folder
+1. Replace the contents of the Appicon.appiconset with your copied images and Contents.json file.
+
+
+### Custom Icon: Zip-Download Builds
+
+These instructions are no longer valid for the new Workspace build, but are left for folks who have older code they are still using.
 
 Now navigate to the corresponding Loop folder (DefaultAssessts.xcassets, Appicon.appiconset) as shown below.  
 
@@ -140,23 +153,24 @@ The rate of change of the carb and bolus entry pickers when using the digital cr
 
 For the carb and bolus entry pickers, edit two lines in files within the WatchApp Extension>>Controllers folder.  In AddCarbsInterfaceController.swift edit line 249 and in BolusInterfaceController.swift edit line 191. The 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that twice as many turns would be needed for the same amount of carb or bolus entry.
 
-  * Keyword: let rotationsPerIncrement
   * Folder: Loop/WatchApp Extension/Controllers
-  * File: AddCarbsInterfaceController.swift
-  * Line: 249
+  * File: AddCarbsInterfaceController.swift, Line: 249
+  * <button type="button" onclick="copyEvent('copy-cc-05')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-05">let rotationsPerIncrement</code>
 
 ![img/sensitivity2.png](img/sensitivity2.png){width="800"}
 {align="center"}
 
-  * Keyword: let rotationsPerValue
   * Folder: Loop/WatchApp Extension/Controllers
-  * File: BolusInterfaceController.swift
-  * Line: 191
+  * File: BolusInterfaceController.swift, Line: 191
+  * <button type="button" onclick="copyEvent('copy-cc-06')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-06">let rotationsPerValue</code>
 
 ![img/sensitivity1.png](img/sensitivity1.png){width="800"}
 {align="center"}
 
-The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. Detailed instructions are found in this [Loop and Learn Customization link](https://www.loopandlearn.org/custom-code/#bolus-confirmation) and are not repeated here.
+The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This `Key Phrase` returns the two lines in that file where the change is required:
+
+* <button type="button" onclick="copyEvent('copy-cc-07')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-07">abs(accumulatedRotation)&nbsp;</code>
+
 
 ## Expiration Notification Customization
 
@@ -167,17 +181,13 @@ An expiration notification feature has been added to Loop. You get a notificatio
 
 If you prefer a different notification time and frequency, there are two lines you can modify:
 
-* Line 16: modify how long before expiration you get the FIRST notification
-* Line 28: modify how frequently you will be notified
 
-Searching for the phrase below should get you to line 16.
-
-* Keyword: expirationAlertWindow: TimeInterval
 * Folder: Loop/Managers
 * File: ProfileExpirationAlerter.swift
-* Lines:
-    * 16 first notification
-    * 28 two levels of frequency
+* Line 16: modify how long before expiration you get the FIRST notification
+* Line 28: modify how frequently you will be notified
+* <button type="button" onclick="copyEvent('copy-cc-08')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-08">expirationAlertWindow: TimeInterval</code>
+* <button type="button" onclick="copyEvent('copy-cc-09')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-09"> minimumTimeBetweenAlerts: TimeInterval</code>
 
 ![Profile expiration notification details](img/expiration-custom.png){width="600"}
 {align="center"}
