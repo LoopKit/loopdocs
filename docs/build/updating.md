@@ -178,6 +178,10 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
 
 ### Delete Profiles
 
+- This process deletes the provisioning profiles on your computer to force Xcode to generate new ones with your next build
+- This does not affect the provisioning profiles currently on your phone
+
+
 !!! warning "How to delete old provisioning profiles"
     - Find your Terminal app (in Applications under Utilities)
     - Open your Terminal app
@@ -185,10 +189,9 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
 
     <button type="button" onclick="copyEvent('copy-updating-02')">Copy</button><br><code id="copy-updating-02">rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision<br></br></code>
 
-    You won't see anything special after you paste the command...your Terminal screen should look as boring as shown below when successful.
-
-    - This deletes the provisioning profiles on your computer to force Xcode to generate new ones with your next build
-    - This does not affect the provisioning profiles currently on your phone
+    * No response will be shown in the terminal if you have Provisioning Profiles stored on this computer
+    * If you do not have Provisioning Profiles stored on this computer, the message be similar to this one:
+        * rm: /Users/marion/Library/MobileDevice/Provisioning Profiles/*.mobileprovision: No such file or directory
 
     ![Screenshot: terminal after provisioning profile deletion](img/empty-profiles.png){width="650"}
     {align="center"}
@@ -240,9 +243,16 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 !!! green "Clean cache and derived data"
 
-    Using Terminal app that should still be open from Step 4a, select the "Copy" button to select these two lines of code and paste into the terminal. (You won't see anything special after you paste the commands.)
+    Using Terminal app that should still be open from Step 4a, select the "Copy" button to select these two lines of code and paste into the terminal.
 
     <button type="button" onclick="copyEvent('copy-updating-03')">Copy</button><br><code id="copy-updating-03">rm -rf ~/Library/Caches/org.carthage.CarthageKit</br>rm -rf ~/Library/Developer/Xcode/DerivedData</br><br></code>
+
+    * No response will be shown in the terminal if Xcode is closed or you have never built from this folder
+    * If you have previously built the app from this folder AND Xcode is open, you will get message(s) similar to this
+        * rm: /Users/marion/Library/Developer/Xcode/DerivedData/ModuleCache.noindex: Directory not empty
+        * rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty
+
+
 
 
     ![Screenshot: terminal after clean cache and derived data](img/cleaned-terminal.png){width="650"}
