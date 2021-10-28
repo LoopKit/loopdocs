@@ -71,6 +71,15 @@ When you see "Loop" is No Longer Available on your phone, the only solution is t
 
     If you are finding installation of Xcode from the Apple Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode)
 
+!!! note ""
+
+    If you fail to have [Xcode](step8.md) or [Xcode Command Line Tools](step9.md) installed, you will get one of these error when you attempt to run the build-select script:
+
+    * xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+    * xcode-select: Failed to locate 'git', requesting installation of command line developer tools
+    * xcode-select: error: tool 'xed' requires Xcode
+
+
 !!! info "Follow Build Step 9 after updating Xcode"
 
         Make sure to restart your computer after updating Xcode and follow the instructions in Build Step 9. There's a known issue that happens often enough to be frustrating if you skip those steps. Either a build error about missing simulators or a "device not connected" (even when phone is connected). It's not always required...but this is a good easy ounce of problem prevention.
@@ -100,11 +109,15 @@ The easiest way to delete the old provisioning profiles and clean up derived dat
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step7.md#configure-terminal-app-for-rosetta-on-m1-computer) first.) The terminal window is very plain looking when you open it. That is normal.
 
+If you happen to have Xcode open, go on and quit out of Xcode now.
+
 ### Load the Paste Buffer
 
-You will load the paste buffer by clicking on this [link](https://www.loopandlearn.org/build-select/#use-script) and hitting the "Copy" button to the right of step 2. The button that says "Copy" will change to "Copied" once you click it.
+Select the "Copy" button below to copy this line-of-code:
 
-Then paste the text into the terminal window; it should look like the next graphic.
+<button type="button" onclick="copyEvent('copy-updating-01')">Copy</button><br><code id="copy-updating-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"<br><br></code>
+
+Then paste the text into the terminal window; it should look like the graphic below.
 
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
@@ -128,7 +141,7 @@ Once this completes, you should see this in your terminal.
 
 If instead, you saw something like:
 
-`rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty`
+* `rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty`
 
 Please quit out of Xcode and repeat the steps.
 
@@ -166,14 +179,16 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
 ### Delete Profiles
 
 !!! warning "How to delete old provisioning profiles"
-    - Find your Terminal app (search in Applications)
+    - Find your Terminal app (in Applications under Utilities)
     - Open your Terminal app
-    - Copy and paste the line in the little grey box below into the Terminal prompt. Press enter after you paste it.
+    - Click on the copy button to load your paste buffer, then paste it into the Terminal prompt
 
-    `rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision`
-    </br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.
+    <button type="button" onclick="copyEvent('copy-updating-02')">Copy</button><br><code id="copy-updating-02">rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision<br></br></code>
 
-    Note - you are deleting provisioning profiles on your computer to force Xcode to generate new ones with your next build.  This does not affect the provisioning profiles currently on your phone.
+    You won't see anything special after you paste the command...your Terminal screen should look as boring as shown below when successful.
+
+    - This deletes the provisioning profiles on your computer to force Xcode to generate new ones with your next build
+    - This does not affect the provisioning profiles currently on your phone
 
     ![Screenshot: terminal after provisioning profile deletion](img/empty-profiles.png){width="650"}
     {align="center"}
@@ -225,11 +240,10 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 !!! green "Clean cache and derived data"
 
-    Using Terminal app that should still be open from Step 4a
+    Using Terminal app that should still be open from Step 4a, select the "Copy" button to select these two lines of code and paste into the terminal. (You won't see anything special after you paste the commands.)
 
-    1. Copy and paste this command and press return: `rm -rf ~/Library/Caches/org.carthage.CarthageKit` Note: you won't see any message back if the command runs successfully.</br></br>
-    2. Copy and paste this command and press return: `rm -rf ~/Library/Developer/Xcode/DerivedData` Note: you won't see any message back if the command runs successfully.
-    </br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.
+    <button type="button" onclick="copyEvent('copy-updating-03')">Copy</button><br><code id="copy-updating-03">rm -rf ~/Library/Caches/org.carthage.CarthageKit</br>rm -rf ~/Library/Developer/Xcode/DerivedData</br><br></code>
+
 
     ![Screenshot: terminal after clean cache and derived data](img/cleaned-terminal.png){width="650"}
     {align="center"}
