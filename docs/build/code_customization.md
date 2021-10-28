@@ -13,7 +13,7 @@ For new builders, you might want to first build the code and familiarize yoursel
 
 ## Instructions for Finding the Lines
 
-For each customization, you will see the following 4 items. You can choose to search for the `Key Phrase` (which is copied into your paste buffer by clicking on the button) or find the file in the folder structure and look for (cmd-L #) the line number.
+For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number.
 
   * Folder: Loop/subfolder1/subfolder2/etc.
   * File: filename.swift, line number(s)
