@@ -510,16 +510,30 @@
 <h3 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Permanent link">⌁</a></h3>
 <p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step7/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal.</p>
 <h2 id="download-and-prepare-to-build">Download and Prepare to Build<a class="headerlink" href="#download-and-prepare-to-build" title="Permanent link">⌁</a></h2>
-<p>You have your choice of using the instructions on the <a href="https://www.loopandlearn.org/build-select/#use-script">Build-Select page</a> or hit the "Copy" button below and proceed on this page (which has more detailed information):</p>
-<p><code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"</code>
-<button type="button" onclick="copyEvent('copy-step14-01')">Copy</button></p>
-<p>Then paste the text into the terminal window and hit return; it should look like the next graphic.</p>
+<p>You have your choice of using the instructions on the <a href="https://www.loopandlearn.org/build-select/#use-script">Build-Select page</a> or hit the "Copy" button below and proceed using this page (which has more detailed information):</p>
+<p><button type="button" onclick="copyEvent('copy-step14-01')">Copy</button><br><code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"<br><br></code></p>
+<p>Then paste the text into the terminal window; it should look like the graphic below.</p>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
 <p>You must type 1 and hit return in the terminal window to agree that you understand the warning.</p>
 <p>Next you will select the Build Loop option by typing 1 and return.</p>
 <p align="center"><img alt="choose to build Loop" src="../img/build-select-05.png" width="750" /></p>
 <p>Next you are asked which version of Loop you would like to build. Type 1 and hit return to build the Master Branch.</p>
 <p align="center"><img alt="choose which Loop to build" src="../img/build-select-06.png" width="750" /></p>
+<div class="admonition note">
+<ul>
+<li>If you see an error similar to one of these in the terminal<ul>
+<li>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</li>
+<li>xcode-select: Failed to locate 'git', requesting installation of command line developer tools</li>
+<li>xcode-select: error: tool 'xed' requires Xcode</li>
+</ul>
+</li>
+<li>You missed one of these steps:<ul>
+<li><a href="../step8/">Build Step 8: Install Xcode</a></li>
+<li><a href="../step9/">Build Step 9: Xcode command line tools</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <p>This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. You do not need to understand the definitions for enumeration or submodule or cloning.  You only need to review the display to look for any errors after the download is finished. The download starts out with the enumeration of all the submodules that will be downloaded. This is followed by a cloning step for each submodule. The cloning for the first module is included in the first graphic.</p>
 <p align="center"><img alt="the beginning of the clone for LoopWorkspace " src="../img/build-select-07.png" width="750" /></p>
 <p>The final submodule cloning is shown along with the summary of all the submodule paths in the next graphic.</p>

@@ -514,6 +514,14 @@
 <p>If you see that you need to update (and you probably do), then keep following instruction on that page and the next one (Build Step 9) and then return to this page.</p>
 <p>If you are finding installation of Xcode from the Apple Store incredibly slow, try the alternate method of <a href="#direct-download-of-xcode">Direct Download of Xcode</a></p>
 </div>
+<div class="admonition note">
+<p>If you fail to have <a href="../step8/">Xcode</a> or <a href="../step9/">Xcode Command Line Tools</a> installed, you will get one of these error when you attempt to run the build-select script:</p>
+<ul>
+<li>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</li>
+<li>xcode-select: Failed to locate 'git', requesting installation of command line developer tools</li>
+<li>xcode-select: error: tool 'xed' requires Xcode</li>
+</ul>
+</div>
 <div class="admonition info">
 <p class="admonition-title">Follow Build Step 9 after updating Xcode<p>Make sure to restart your computer after updating Xcode and follow the instructions in Build Step 9. There's a known issue that happens often enough to be frustrating if you skip those steps. Either a build error about missing simulators or a "device not connected" (even when phone is connected). It's not always required...but this is a good easy ounce of problem prevention.</p>
 </p>
@@ -531,9 +539,11 @@
 <p>The easiest way to delete the old provisioning profiles and clean up derived data uses the same build-select script that you will use for building. If you are not familiar with the build-select methods, please read <a href="../step13/">Build Step 13</a>.</p>
 <h3 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Permanent link">⌁</a></h3>
 <p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step7/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal.</p>
+<p>If you happen to have Xcode open, go on and quit out of Xcode now.</p>
 <h3 id="load-the-paste-buffer">Load the Paste Buffer<a class="headerlink" href="#load-the-paste-buffer" title="Permanent link">⌁</a></h3>
-<p>You will load the paste buffer by clicking on this <a href="https://www.loopandlearn.org/build-select/#use-script">link</a> and hitting the "Copy" button to the right of step 2. The button that says "Copy" will change to "Copied" once you click it.</p>
-<p>Then paste the text into the terminal window; it should look like the next graphic.</p>
+<p>Select the "Copy" button below to copy this line-of-code:</p>
+<p><button type="button" onclick="copyEvent('copy-updating-01')">Copy</button><br><code id="copy-updating-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"<br><br></code></p>
+<p>Then paste the text into the terminal window; it should look like the graphic below.</p>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
 <p>You must type 1 and hit return in the terminal window to agree that you understand the warning.</p>
 <p>Next you will select the Utility Scripts option by typing 3 and return.</p>
@@ -543,7 +553,9 @@
 <p>Once this completes, you should see this in your terminal.</p>
 <p align="center"><img alt="clean utility script completed" src="../img/build-select-04.png" width="750" /></p>
 <p>If instead, you saw something like:</p>
-<p><code>rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty</code></p>
+<ul>
+<li><code>rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty</code></li>
+</ul>
 <p>Please quit out of Xcode and repeat the steps.</p>
 <h2 id="step-3-download-updated-loop-code">Step 3: Download Updated Loop Code<a class="headerlink" href="#step-3-download-updated-loop-code" title="Permanent link">⌁</a></h2>
 <p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folder(s) now if you want).</p>
@@ -562,16 +574,25 @@
 <p>Here's what started happening about September 2019 with Xcode 11, the provisioning profiles were being reused so the date was not updated each time you built. This change resulted in many people's apps expiring unexpectedly (and therefore dying suddenly) starting in September 2020 despite having updated/rebuilt recently and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).</p>
 <p>Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)</p>
 <h3 id="delete-profiles">Delete Profiles<a class="headerlink" href="#delete-profiles" title="Permanent link">⌁</a></h3>
+<ul>
+<li>This process deletes the provisioning profiles on your computer to force Xcode to generate new ones with your next build</li>
+<li>This does not affect the provisioning profiles currently on your phone</li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">How to delete old provisioning profiles</p>
 <ul>
-<li>Find your Terminal app (search in Applications)</li>
+<li>Find your Terminal app (in Applications under Utilities)</li>
 <li>Open your Terminal app</li>
-<li>Copy and paste the line in the little grey box below into the Terminal prompt. Press enter after you paste it.</li>
+<li>Click on the copy button to load your paste buffer, then paste it into the Terminal prompt</li>
 </ul>
-<p><code>rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision</code>
-</br></br>You won't see anything special after you enter the command...your Terminal screen should look as boring as shown below when successful.</p>
-<p>Note - you are deleting provisioning profiles on your computer to force Xcode to generate new ones with your next build.  This does not affect the provisioning profiles currently on your phone.</p>
+<p><button type="button" onclick="copyEvent('copy-updating-02')">Copy</button><br><code id="copy-updating-02">rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision<br></br></code></p>
+<ul>
+<li>No response will be shown in the terminal if you have Provisioning Profiles stored on this computer</li>
+<li>If you do not have Provisioning Profiles stored on this computer, the message be similar to this one:<ul>
+<li>rm: /Users/marion/Library/MobileDevice/Provisioning Profiles/*.mobileprovision: No such file or directory</li>
+</ul>
+</li>
+</ul>
 <p align="center"><img alt="Screenshot: terminal after provisioning profile deletion" src="../img/empty-profiles.png" width="650" /></p>
 </div>
 <h3 id="infrequent-builder-app-expires-soon">Infrequent Builder, App Expires soon<a class="headerlink" href="#infrequent-builder-app-expires-soon" title="Permanent link">⌁</a></h3>
@@ -614,12 +635,16 @@
 <p>This may not be necessary, but it is one of the first steps to try if you do get a build error. Since you already have Terminal app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.</p>
 <div class="admonition green">
 <p class="admonition-title">Clean cache and derived data</p>
-<p>Using Terminal app that should still be open from Step 4a</p>
-<ol>
-<li>Copy and paste this command and press return: <code>rm -rf ~/Library/Caches/org.carthage.CarthageKit</code> Note: you won't see any message back if the command runs successfully.</br></br></li>
-<li>Copy and paste this command and press return: <code>rm -rf ~/Library/Developer/Xcode/DerivedData</code> Note: you won't see any message back if the command runs successfully.
-</br></br>You won't see anything special after you enter the commands...your Terminal screen should look as boring as it did in the previous step 4a.</li>
-</ol>
+<p>Using Terminal app that should still be open from Step 4a, select the "Copy" button to select these two lines of code and paste into the terminal.</p>
+<p><button type="button" onclick="copyEvent('copy-updating-03')">Copy</button><br><code id="copy-updating-03">rm -rf ~/Library/Caches/org.carthage.CarthageKit</br>rm -rf ~/Library/Developer/Xcode/DerivedData</br><br></code></p>
+<ul>
+<li>No response will be shown in the terminal if Xcode is closed or you have never built from this folder</li>
+<li>If you have previously built the app from this folder AND Xcode is open, you will get message(s) similar to this<ul>
+<li>rm: /Users/marion/Library/Developer/Xcode/DerivedData/ModuleCache.noindex: Directory not empty</li>
+<li>rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty</li>
+</ul>
+</li>
+</ul>
 <p align="center"><img alt="Screenshot: terminal after clean cache and derived data" src="../img/cleaned-terminal.png" width="650" /></p>
 </div>
 <h3 id="step-5-build-like-normal">Step 5: Build like normal<a class="headerlink" href="#step-5-build-like-normal" title="Permanent link">⌁</a></h3>
