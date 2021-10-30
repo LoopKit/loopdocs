@@ -69,7 +69,7 @@ Now that you have updated your macOS, you should have the ability to see the mos
 
 If you see that you need to update (and you probably do), then keep following instruction on that page and the next one (Build Step 9) and then return to this page.
 
-If you are finding installation of Xcode from the Apple Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the Apple Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download a day early and let your computer work in the background.
+If you are finding installation of Xcode from the Apple Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the Apple Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the Apple Store a day early and let your computer work in the background.
 
 !!! warning ""
 
