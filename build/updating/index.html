@@ -498,28 +498,26 @@
 <p>These instructions, <a href="../../faqs/update-faqs/#how-can-i-confirm-xcode-version-i-used">Xcode version</a>, tell you how to determine what version was used when building the Loop app currently on running on your phone.</p>
 </div>
 <h2 id="step-1-install-macos-and-xcode-updates">Step 1: Install macOS and Xcode updates<a class="headerlink" href="#step-1-install-macos-and-xcode-updates" title="Permanent link">⌁</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Verify macOS</p>
+<h3 id="verify-update-macos">Verify / Update macOS<a class="headerlink" href="#verify-update-macos" title="Permanent link">⌁</a></h3>
 <p>Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS, you cannot build on that phone.</p>
 <ul>
 <li>For iOS 15, minimum is macOS 11.3 (Big Sur)</li>
 <li>For iOS 14.5 though 14.8, minimum is macOS 11.0 (Big Sur)</li>
 </ul>
-<p>Minimum means - newer versions build just fine.</p>
+<p>Minimum means - newer versions build just fine. In other words, macOS 12.x (Monterey) is fine for building Loop, but not requred.</p>
 <p>Loop Master will still run on iPhone 6 running iOS 12.5 and can be built using Xcode 13 with macOS 11.6.</p>
-</div>
-<div class="admonition green">
-<p class="admonition-title">Verify Xcode</p>
+<h3 id="verify-update-xcode">Verify / Update Xcode<a class="headerlink" href="#verify-update-xcode" title="Permanent link">⌁</a></h3>
 <p>Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode in the Apple Store. The information for which Xcode is required is found in <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">Build Step 8</a>.  (It's not repeated because that way we only have to update it on one page.  In the time of rapid iOS changes, that's the best way to keep the information accurate.)</p>
 <p>If you see that you need to update (and you probably do), then keep following instruction on that page and the next one (Build Step 9) and then return to this page.</p>
-<p>If you are finding installation of Xcode from the Apple Store incredibly slow, try the alternate method of <a href="#direct-download-of-xcode">Direct Download of Xcode</a></p>
-</div>
-<div class="admonition note">
-<p>If you fail to have <a href="../step8/">Xcode</a> or <a href="../step9/">Xcode Command Line Tools</a> installed, you will get one of these error when you attempt to run the build-select script:</p>
+<p>If you are finding installation of Xcode from the Apple Store incredibly slow, try the alternate method of <a href="#direct-download-of-xcode">Direct Download of Xcode</a>. Note that once you have used direct download, Xcode will not show up in the Apple Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the Apple Store a day early and let your computer work in the background.</p>
+<div class="admonition warning">
+<p>If you fail to have <a href="../step8/">Xcode</a> or <a href="../step9/">Xcode Command Line Tools</a> installed, you will get one of these error when you attempt to run the build-select script (or something similar):</p>
 <ul>
 <li>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</li>
+<li>xcrun: error: active developer path ("/Applications/Xcode.app/Contents/Developer") does not exist</li>
 <li>xcode-select: Failed to locate 'git', requesting installation of command line developer tools</li>
 <li>xcode-select: error: tool 'xed' requires Xcode</li>
+<li>Scripting Bridge could not launch application . . .</li>
 </ul>
 </div>
 <div class="admonition info">
@@ -675,6 +673,16 @@
 <li>You need to know how to log into your Apple Developer account and navigate those menus</li>
 <li>You need to know how to use Finder to navigate to Downloads</li>
 <li>You need to know how to drag the Xcode icon into your Applications folder (after download and expand completes)</li>
+<li>After you have done a direct download, the Apple Store will not show you updates<ul>
+<li>Either repeat the Direct Download or</li>
+<li>Delete Xcode from Applications folder<ul>
+<li>Open the Apple Store and search for Xcode</li>
+<li>Install fresh</li>
+<li>After you use the Apple Store for a download, then Updates will show in the future</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p>Here are the different steps you need to follow doing the Direct Download instead of the Apple Store method:</p>
 <ol>
@@ -690,6 +698,11 @@
 <li>Wait for Download to complete</li>
 <li>Expand the file by clicking on it in Finder</li>
 <li>Move the Xcode icon to Applications after the expansion completes</li>
+<li>Check the <a href="step9/#command-line-tools">Command Line Tools</a> setting under Xcode-&gt;Preferences<ul>
+<li>The selection cannot be blank or Build-Script will fail to open Xcode automatically</li>
+<li>It should be the same version as your Xcode</li>
+</ul>
+</li>
 <li>Reboot the computer</li>
 </ol></div>
             </div>
