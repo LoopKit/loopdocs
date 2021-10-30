@@ -20,6 +20,8 @@
     - macOS 11.3 (Big Sur) or newer is required for iOS 15 and higher
     - macOS 11.0 (Big Sur) is required for iOS 14.5 and higher
 
+    Minimum means - newer versions build just fine. In other words, macOS 12.x (Monterey) is fine for building Loop, but not requred.
+
     If your macOS does not meet the minimum, check to see if you can [update your macOS](step1.md#check-your-macos)
 
     If you are an existing Looper with an older mac - you can choose to limit the iOS versions you accept - but you need to understand that Apple often provides updates that fix security problems.
@@ -48,6 +50,8 @@ The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big 
 * **If you have iOS 15 or newer**, the minimum macOS is Big Sur (11.3)
 
 * **If you have iOS 14.5 or newer**, the minimum macOS is Big Sur (11.0)
+
+Minimum means - newer versions build just fine. In other words, macOS 12.x (Monterey) is fine for building Loop, but not requred.
 
 ### Build Step 1: iOS 15 Warning if you built with Catalina
 
