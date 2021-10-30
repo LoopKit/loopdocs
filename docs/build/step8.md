@@ -15,6 +15,7 @@
         1. lack of internet connection or
         2. not enough free space on the computer hard drive
     - Xcode is a large download, and it needs space to properly unpack and install itself
+    - After Xcode has finished downloading (looks like the progress bar is almost completed), it takes a long time to unpack and install, be patient
     - For a new Xcode installation, at least 50GB of free space on your hard drive is required
         - If you get low on free space, you may have installation failures
         - [Check the Space Available](step1.md#check-the-space-available)
@@ -33,6 +34,11 @@ If you've done your homework (read this entire page) and are ready to download a
     - This image is old (ignore the version number in this graphic)
     - For example, Xcode version 13 was released September 20, 2021
 
+!!! warning "Direct Download"
+
+    - If you previously did a direct download of Xcode, it will not show up in the Apple Store.
+    - Either do another direct download or follow these directions to reconfigure so it will show up in the Apple Store.
+    - [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
 ![Screenshot: Apple Store search for Xcode](img/xcode.png){width="750"}
 {align="center"}
