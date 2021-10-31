@@ -1,5 +1,7 @@
 site_name: LoopDocs
 
+extra_css:
+    - stylesheets/admonitions.css
 
 extra_javascript:
     - stylesheets/copy_button.js
