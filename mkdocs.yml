@@ -1,5 +1,4 @@
 site_name: LoopDocs
-theme: flatly
 
 extra_css:
     - stylesheets/admonitions.css
@@ -9,10 +8,20 @@ extra_javascript:
     - stylesheets/copy_button.js
 
 markdown_extensions:
+    - meta
     - admonition
     - attr_list
     - toc:
-        permalink: ⌁
+        permalink: true
+
+plugins:
+    - search
+
+theme:
+    name: material
+    language: en
+    features:
+        - navigation.tabs
 
 nav:
 - Home: 'index.md'
