@@ -65,11 +65,11 @@ Loop Master will still run on iPhone 6 running iOS 12.5 and can be built using X
 
 ### Verify / Update Xcode
 
-Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode in the Apple Store. The information for which Xcode is required is found in [Build Step 8](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).  (It's not repeated because that way we only have to update it on one page.  In the time of rapid iOS changes, that's the best way to keep the information accurate.)
+Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode in the App Store. The information for which Xcode is required is found in [Build Step 8](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).  (It's not repeated because that way we only have to update it on one page.  In the time of rapid iOS changes, that's the best way to keep the information accurate.)
 
 If you see that you need to update (and you probably do), then keep following instruction on that page and the next one (Build Step 9) and then return to this page.
 
-If you are finding installation of Xcode from the Apple Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the Apple Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the Apple Store a day early and let your computer work in the background.
+If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.
 
 !!! warning ""
 
@@ -287,7 +287,7 @@ From here, go straight to [Step 14 Build Loop app](step14.md) and do just like y
 
 ## Direct Download of Xcode
 
-Many people find updating Xcode from the Apple Store to be incredibly slow - especially when a new version has just been released.  This method still takes time and enough space on your disk, but is faster than going through the Apple Store.  Depending on your internet speed, this download can be done in about an hour. Then once it is downloaded, expect another fifteen minutes to several hours (depending on the speed of your computer) for the "xip" file to "expand".
+Many people find updating Xcode from the App Store to be incredibly slow - especially when a new version has just been released.  This method still takes time and enough space on your disk, but is faster than going through the App Store.  Depending on your internet speed, this download can be done in about an hour. Then once it is downloaded, expect another fifteen minutes to several hours (depending on the speed of your computer) for the "xip" file to "expand".
 
 The instructions do not hold your hand.
 
@@ -295,14 +295,14 @@ The instructions do not hold your hand.
 * You need to know how to log into your Apple Developer account and navigate those menus
 * You need to know how to use Finder to navigate to Downloads
 * You need to know how to drag the Xcode icon into your Applications folder (after download and expand completes)
-* After you have done a direct download, the Apple Store will not show you updates
+* After you have done a direct download, the App Store will not show you updates
     - Either repeat the Direct Download or
     - Delete Xcode from Applications folder
-        - Open the Apple Store and search for Xcode
+        - Open the App Store and search for Xcode
         - Install fresh
-        - After you use the Apple Store for a download, then Updates will show in the future
+        - After you use the App Store for a download, then Updates will show in the future
 
-Here are the different steps you need to follow doing the Direct Download instead of the Apple Store method:
+Here are the different steps you need to follow doing the Direct Download instead of the App Store method:
 
 1. [Login to your Apple developer account](https://developer.apple.com/account)
     - Examine the menus (on my computer there are buttons on the left hand side)

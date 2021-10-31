@@ -36,11 +36,11 @@ If you've done your homework (read this entire page) and are ready to download a
 
 !!! warning "Direct Download"
 
-    - If you previously did a direct download of Xcode, it will not show up in the Apple Store.
-    - Either do another direct download or follow these directions to reconfigure so it will show up in the Apple Store.
+    - If you previously did a direct download of Xcode, it will not show up in the App Store.
+    - Either do another direct download or follow these directions to reconfigure so it will show up in the App Store.
     - [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
-![Screenshot: Apple Store search for Xcode](img/xcode.png){width="750"}
+![Screenshot: App Store search for Xcode](img/xcode.png){width="750"}
 {align="center"}
 
 ## Version Relationship Overview
@@ -97,7 +97,7 @@ The list below is for the **minimum** versions you'll need based on your iOS.
 Experienced Users:
 
 * Once your macOS is at the correct level
-* Instead of using the Apple Store to update Xcode, you can use the [Direct Download of Xcode](updating.md#direct-download-of-xcode)
+* Instead of using the App Store to update Xcode, you can use the [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
 ### Wikipedia Chart for Apple Versions
 
