@@ -2,6 +2,7 @@ site_name: LoopDocs
 
 extra_css:
     - stylesheets/admonitions.css
+    - stylesheets/extra.css
 
 extra_javascript:
     - stylesheets/copy_button.js
@@ -21,6 +22,11 @@ theme:
     language: en
     features:
         - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.expand
+        - navigation.top
+    logo: loop-logo.png
 
 nav:
 - Home: 'index.md'
