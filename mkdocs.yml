@@ -13,12 +13,14 @@ theme:
         - search.highlight
         - content.code.annotate
     logo: loop-logo.png
+    favicon: loop-logo.png
 
 # repo_url: https://github.com/LoopKit/Loop
 
 extra_css:
     - stylesheets/admonitions.css
     - stylesheets/extra.css
+    - stylesheets/styles.css
 
 extra_javascript:
     - stylesheets/copy_button.js
@@ -27,8 +29,12 @@ markdown_extensions:
     - meta
     - admonition
     - attr_list
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
+    - pymdownx.snippets
     - toc:
-        permalink: true ~
+        permalink: true
         permalink_title: Anchor link to this section for reference
         toc_depth: 2
 
