@@ -6,12 +6,12 @@ theme:
     features:
         - navigation.tabs
         - navigation.tabs.sticky
-        - navigation.sections
-        - navigation.expand
+        - navigation.tracking
         - navigation.top
         - search.suggest
         - search.highlight
         - content.code.annotate
+        - toc.integrate
     logo: loop-logo.png
     favicon: loop-logo.png
 
