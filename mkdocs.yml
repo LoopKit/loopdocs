@@ -35,8 +35,9 @@ markdown_extensions:
     - pymdownx.snippets
     - toc:
         permalink: true
-        permalink_title: Anchor link to this section for reference
-        toc_depth: 2
+        permalink_title: Anchor link to this Header on this Page
+        toc_depth: 3
+        title: Headers on this Page
 
 plugins:
     - search
