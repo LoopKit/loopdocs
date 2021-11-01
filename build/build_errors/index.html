@@ -1,456 +1,1845 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../loop-logo.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
         <title>Oh dear! Build errors? - LoopDocs</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
-        <link href="../../stylesheets/admonitions.css" rel="stylesheet">
-        <link href="../../stylesheets/extra.css" rel="stylesheet">
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/admonitions.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/styles.css">
+    
+    
+      
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="../..">LoopDocs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Build App <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../overview/" class="dropdown-item">Overview</a>
-</li>
-                                    
-<li>
-    <a href="../step1/" class="dropdown-item">Step 1 Compatible Computer</a>
-</li>
-                                    
-<li>
-    <a href="../step2/" class="dropdown-item">Step 2 Compatible iPhone/iPod touch</a>
-</li>
-                                    
-<li>
-    <a href="../step3/" class="dropdown-item">Step 3 Compatible Pump</a>
-</li>
-                                    
-<li>
-    <a href="../step4/" class="dropdown-item">Step 4 Compatible CGM</a>
-</li>
-                                    
-<li>
-    <a href="../step5/" class="dropdown-item">Step 5 Order a RileyLink</a>
-</li>
-                                    
-<li>
-    <a href="../step6/" class="dropdown-item">Step 6 Enroll in Apple Developer Program</a>
-</li>
-                                    
-<li>
-    <a href="../step8/" class="dropdown-item">Step 8 Download Xcode</a>
-</li>
-                                    
-<li>
-    <a href="../step9/" class="dropdown-item">Step 9 Xcode Preferences</a>
-</li>
-                                    
-<li>
-    <a href="../step10/" class="dropdown-item">Step 10 Test Settings</a>
-</li>
-                                    
-<li>
-    <a href="../step11/" class="dropdown-item">Step 11 Make plans for Loop Data</a>
-</li>
-                                    
-<li>
-    <a href="../step12/" class="dropdown-item">Step 12 Meet Community</a>
-</li>
-                                    
-<li>
-    <a href="../step13/" class="dropdown-item">Step 13 Download Loop code</a>
-</li>
-                                    
-<li>
-    <a href="../step14/" class="dropdown-item">Step 14 Build Loop app</a>
-</li>
-                                    
-<li>
-    <a href="./" class="dropdown-item active">Oh dear! Build errors?</a>
-</li>
-                                    
-<li>
-    <a href="../code_customization/" class="dropdown-item">Customize your Loop</a>
-</li>
-                                    
-<li>
-    <a href="../updating/" class="dropdown-item">Updating/Rebuilding your Loop</a>
-</li>
-                                    
-<li>
-    <a href="../loopworkspace/" class="dropdown-item">LoopWorkspace</a>
-</li>
-                                    
-<li>
-    <a href="../step7/" class="dropdown-item">Step 7 Skip Step 7</a>
-</li>
-                                    
-<li>
-    <a href="../step14-zip/" class="dropdown-item">Archived Zip Build</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Set up App <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../operation/overview/" class="dropdown-item">Overview</a>
-</li>
-                                    
-<li>
-    <a href="../health/" class="dropdown-item">Step 1: Health Permissions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Step 2: Add Pump</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../operation/loop-settings/mdt-pump/" class="dropdown-item">Add Medtronic</a>
-</li>
-            
-<li>
-    <a href="../../operation/loop-settings/omnipod-pump/" class="dropdown-item">Add Omnipod</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/cgm/" class="dropdown-item">Step 3: Add CGM</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/configurations/" class="dropdown-item">Step 4: Configurations</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/services/" class="dropdown-item">Step 5: Loop Services</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/displays/" class="dropdown-item">Loop Displays</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/rileylink/" class="dropdown-item">RileyLink Display</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Operate <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../operation/features/carbs/" class="dropdown-item">Meal Entries</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/features/bolus/" class="dropdown-item">Bolus</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/features/workout/" class="dropdown-item">Overrides</a>
-</li>
-                                    
-<li>
-    <a href="../../operation/loop-settings/pump-commands/" class="dropdown-item">Pump Settings</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">How to Use Loop App</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../operation/features/premeal/" class="dropdown-item">Pre-meal target</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/healthapp/" class="dropdown-item">Health app</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/ice/" class="dropdown-item">Using ICE info</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/watch/" class="dropdown-item">Apple Watch</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/widget/" class="dropdown-item">iPhone widget</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/notifications/" class="dropdown-item">Loop Notifications</a>
-</li>
-            
-<li>
-    <a href="../../operation/features/battery/" class="dropdown-item">Pump Battery</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Looping Tips</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../operation/loop/open-loop/" class="dropdown-item">Open Loop</a>
-</li>
-            
-<li>
-    <a href="../../operation/loop/close-loop/" class="dropdown-item">Closed Loop</a>
-</li>
-            
-<li>
-    <a href="../../operation/loop/looptips/" class="dropdown-item">Loop Tips</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Algorithm</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../operation/algorithm/overview/" class="dropdown-item">Overview</a>
-</li>
-            
-<li>
-    <a href="../../operation/algorithm/bolus/" class="dropdown-item">Bolus Recommendations</a>
-</li>
-            
-<li>
-    <a href="../../operation/algorithm/prediction/" class="dropdown-item">Glucose Prediction</a>
-</li>
-            
-<li>
-    <a href="../../operation/algorithm/temp-basal/" class="dropdown-item">Temp Basal Adjustments</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Troubleshoot</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../troubleshooting/overview/" class="dropdown-item">Overview</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/loop-crashing/" class="dropdown-item">Loop App crashes</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/yellow-red-loop/" class="dropdown-item">Red Loop</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/pod-pairing/" class="dropdown-item">Pod Pairing Failures</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/time-change/" class="dropdown-item">Time Changes</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/pump-errors/" class="dropdown-item">MDT Pump Errors</a>
-</li>
-            
-<li>
-    <a href="../../troubleshooting/omnipod-faults/" class="dropdown-item">Omnipod Faults</a>
-</li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nightscout <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../nightscout/overview/" class="dropdown-item">Overview</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/new_user/" class="dropdown-item">Brand New NS</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/update_user/" class="dropdown-item">Retrofit Existing NS</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/troublehoot/" class="dropdown-item">Setup Troubleshooting</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/remote-overrides/" class="dropdown-item">Remote Overrides</a>
-</li>
-                                    
-<li>
-    <a href="../../nightscout/ns_crossref/" class="dropdown-item">Nightscout Cross Ref</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FAQs <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../faqs/docs-faqs/" class="dropdown-item">Using This Site FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/FAQs/" class="dropdown-item">General Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/omnipod-faqs/" class="dropdown-item">Omnipod FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/branch-faqs/" class="dropdown-item">Releases & Branches</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/dev-menus/" class="dropdown-item">Loop dev Preview</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/update-faqs/" class="dropdown-item">Update/Rebuild Loop FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/rileylink-faqs/" class="dropdown-item">RileyLink FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/algorithm-faqs/" class="dropdown-item">Algorithm FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/cgm-faqs/" class="dropdown-item">CGM FAQs</a>
-</li>
-                                    
-<li>
-    <a href="../../faqs/safety-faqs/" class="dropdown-item">Safety Tips</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../step14/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../code_customization/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#build-errors" class="nav-link">Build Errors</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#start-with-the-obvious-error-causes" class="nav-link">Start with The Obvious Error Causes</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#fix-95-of-errors" class="nav-link">Fix 95% of errors</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#posting-for-help" class="nav-link">Posting for help</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#screenshots" class="nav-link">Screenshots</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#find-your-error-messages" class="nav-link">Find Your Error Message(s)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#specific-error-messages" class="nav-link">Specific Error Messages</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#apple-watch-issues" class="nav-link">Apple Watch Issues</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#build-errors" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
 
-<h1 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Permanent link">⌁</a></h1>
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+      
+  <img src="../../loop-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LoopDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Oh dear! Build errors?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../overview/" class="md-tabs__link md-tabs__link--active">
+        Build App
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../operation/overview/" class="md-tabs__link">
+        Set up App
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../operation/features/carbs/" class="md-tabs__link">
+        Operate
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../nightscout/overview/" class="md-tabs__link">
+        Nightscout
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faqs/docs-faqs/" class="md-tabs__link">
+        FAQs
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+      
+  <img src="../../loop-logo.png" alt="logo">
+
+    </a>
+    LoopDocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Build App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Build App" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Build App
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step1/" class="md-nav__link">
+        Step 1 Compatible Computer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step2/" class="md-nav__link">
+        Step 2 Compatible iPhone/iPod touch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step3/" class="md-nav__link">
+        Step 3 Compatible Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step4/" class="md-nav__link">
+        Step 4 Compatible CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step5/" class="md-nav__link">
+        Step 5 Order a RileyLink
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step6/" class="md-nav__link">
+        Step 6 Enroll in Apple Developer Program
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step8/" class="md-nav__link">
+        Step 8 Download Xcode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step9/" class="md-nav__link">
+        Step 9 Xcode Preferences
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step10/" class="md-nav__link">
+        Step 10 Test Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step11/" class="md-nav__link">
+        Step 11 Make plans for Loop Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step12/" class="md-nav__link">
+        Step 12 Meet Community
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step13/" class="md-nav__link">
+        Step 13 Download Loop code
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step14/" class="md-nav__link">
+        Step 14 Build Loop app
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Oh dear! Build errors?
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Oh dear! Build errors?
+      </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#start-with-the-obvious-error-causes" class="md-nav__link">
+    Start with The Obvious Error Causes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-95-of-errors" class="md-nav__link">
+    Fix 95% of errors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posting-for-help" class="md-nav__link">
+    Posting for help
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    Screenshots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#find-your-error-messages" class="md-nav__link">
+    Find Your Error Message(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specific-error-messages" class="md-nav__link">
+    Specific Error Messages
+  </a>
+  
+    <nav class="md-nav" aria-label="Specific Error Messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" class="md-nav__link">
+    Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compileassetcatalog-error" class="md-nav__link">
+    CompileAssetCatalog Error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carthage-error" class="md-nav__link">
+    Carthage Error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#could-not-locate-device-support-files" class="md-nav__link">
+    Could Not Locate Device Support Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-such-module-loopkit-or-similar-message" class="md-nav__link">
+    No Such Module 'LoopKit' or Similar Message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#developer-license-update" class="md-nav__link">
+    Developer License Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#could-not-get-a-container-directory-url" class="md-nav__link">
+    Could Not Get a Container Directory URL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-command-line-tools" class="md-nav__link">
+    Missing Command Line Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-management-could-not-launch-loop" class="md-nav__link">
+    Device Management Could Not Launch Loop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pending-certificate-request" class="md-nav__link">
+    Pending Certificate Request
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-codesign-failed" class="md-nav__link">
+    Command CodeSign Failed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unrecognized-arguments" class="md-nav__link">
+    Unrecognized Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abort-with-payload" class="md-nav__link">
+    Abort with Payload
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apple-watch-issues" class="md-nav__link">
+    Apple Watch Issues
+  </a>
+  
+    <nav class="md-nav" aria-label="Apple Watch Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apple-watch-loop-app-not-appearing" class="md-nav__link">
+    Apple Watch: Loop App Not Appearing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-watch-loop-app-not-installing" class="md-nav__link">
+    Apple Watch: Loop App Not Installing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_customization/" class="md-nav__link">
+        Customize your Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../updating/" class="md-nav__link">
+        Updating/Rebuilding your Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loopworkspace/" class="md-nav__link">
+        LoopWorkspace
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step7/" class="md-nav__link">
+        Step 7 Skip Step 7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step14-zip/" class="md-nav__link">
+        Archived Zip Build
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Set up App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Set up App" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Set up App
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../health/" class="md-nav__link">
+        Step 1: Health Permissions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          Step 2: Add Pump
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Step 2: Add Pump" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Step 2: Add Pump
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
+        Add Medtronic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
+        Add Omnipod
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
+        Step 3: Add CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
+        Step 4: Configurations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/services/" class="md-nav__link">
+        Step 5: Loop Services
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/displays/" class="md-nav__link">
+        Loop Displays
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
+        RileyLink Display
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Operate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Operate" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Operate
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/carbs/" class="md-nav__link">
+        Meal Entries
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/bolus/" class="md-nav__link">
+        Bolus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/workout/" class="md-nav__link">
+        Overrides
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
+        Pump Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5">
+          How to Use Loop App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How to Use Loop App" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          How to Use Loop App
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/premeal/" class="md-nav__link">
+        Pre-meal target
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/healthapp/" class="md-nav__link">
+        Health app
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/ice/" class="md-nav__link">
+        Using ICE info
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/watch/" class="md-nav__link">
+        Apple Watch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/widget/" class="md-nav__link">
+        iPhone widget
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/notifications/" class="md-nav__link">
+        Loop Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/battery/" class="md-nav__link">
+        Pump Battery
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          Looping Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Looping Tips" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          Looping Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/open-loop/" class="md-nav__link">
+        Open Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/close-loop/" class="md-nav__link">
+        Closed Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/looptips/" class="md-nav__link">
+        Loop Tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_7">
+          Algorithm
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Algorithm" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_7">
+          <span class="md-nav__icon md-icon"></span>
+          Algorithm
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/bolus/" class="md-nav__link">
+        Bolus Recommendations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/prediction/" class="md-nav__link">
+        Glucose Prediction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/temp-basal/" class="md-nav__link">
+        Temp Basal Adjustments
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_8">
+          Troubleshoot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Troubleshoot" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_8">
+          <span class="md-nav__icon md-icon"></span>
+          Troubleshoot
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/loop-crashing/" class="md-nav__link">
+        Loop App crashes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/yellow-red-loop/" class="md-nav__link">
+        Red Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/pod-pairing/" class="md-nav__link">
+        Pod Pairing Failures
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/time-change/" class="md-nav__link">
+        Time Changes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/pump-errors/" class="md-nav__link">
+        MDT Pump Errors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/omnipod-faults/" class="md-nav__link">
+        Omnipod Faults
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Nightscout
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nightscout" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Nightscout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/new_user/" class="md-nav__link">
+        Brand New NS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/update_user/" class="md-nav__link">
+        Retrofit Existing NS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/troublehoot/" class="md-nav__link">
+        Setup Troubleshooting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-overrides/" class="md-nav__link">
+        Remote Overrides
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/ns_crossref/" class="md-nav__link">
+        Nightscout Cross Ref
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          FAQs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="FAQs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          FAQs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/docs-faqs/" class="md-nav__link">
+        Using This Site FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/FAQs/" class="md-nav__link">
+        General Loop FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/omnipod-faqs/" class="md-nav__link">
+        Omnipod FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/branch-faqs/" class="md-nav__link">
+        Releases & Branches
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/dev-menus/" class="md-nav__link">
+        Loop dev Preview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/update-faqs/" class="md-nav__link">
+        Update/Rebuild Loop FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/rileylink-faqs/" class="md-nav__link">
+        RileyLink FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/algorithm-faqs/" class="md-nav__link">
+        Algorithm FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/cgm-faqs/" class="md-nav__link">
+        CGM FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/safety-faqs/" class="md-nav__link">
+        Safety Tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Anchor link to this Header on this Page">&para;</a></h1>
 <p>There are two types of build errors that happen: they are yellow warnings and red alerts. You'll see the warnings and alerts in the left-hand column of the Xcode window.</p>
 <p><font color="orange"><strong>Yellow warnings</strong></font> do not cause the build to fail, those are just warnings.  You will often see yellow alerts. Ignore those. Do not try to do anything to fix those.</p>
 <p><font color="red"><strong>Red error alerts</strong> </font> will have to be resolved before you can successfully build the Loop app. The steps below explain how to resolve them based on the messages you are seeing.</p>
-<h2 id="start-with-the-obvious-error-causes">Start with The Obvious Error Causes<a class="headerlink" href="#start-with-the-obvious-error-causes" title="Permanent link">⌁</a></h2>
+<h2 id="start-with-the-obvious-error-causes">Start with The Obvious Error Causes<a class="headerlink" href="#start-with-the-obvious-error-causes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">New Loop Builders</p>
 <p>This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4, 6 and 7 in the list below. Then, skim the page until your reach <a href="./#find-your-error-messages">Find Your Error Message</a>. Once you've identified your error message, try to resolve it.  Still stuck? Read <a href="./#posting-for-help">Posting for Help</a></p>
@@ -479,7 +1868,7 @@
 <p><strong>Are you doing a WorkSpace build?</strong> Make sure you selected Loop (Workspace) instead of Loop.</p>
 </li>
 </ol>
-<h2 id="fix-95-of-errors">Fix 95% of errors<a class="headerlink" href="#fix-95-of-errors" title="Permanent link">⌁</a></h2>
+<h2 id="fix-95-of-errors">Fix 95% of errors<a class="headerlink" href="#fix-95-of-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating Loop code.</p>
 <ol>
 <li>Open your project in Xcode as normal. Then go to the Xcode menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.</li>
@@ -495,7 +1884,7 @@
 <li>WE CANNOT HELP without version numbers and screenshots</li>
 <li>Do not take pictures of your computer screen with your phone</li>
 </ul>
-<h2 id="posting-for-help">Posting for help<a class="headerlink" href="#posting-for-help" title="Permanent link">⌁</a></h2>
+<h2 id="posting-for-help">Posting for help<a class="headerlink" href="#posting-for-help" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>STOP!!  Read this section! Important!</p>
 <p>Before you post in a <a href="../..#stay-in-the-loop">Loop Social Media</a> site asking for help with build errors, do your work first. The build errors listed below (and the checks listed above) will fix most of problems you may encounter. <strong><em>PLEASE READ THIS PAGE</em></strong>. The volunteers answering questions online would love to spend more time helping people use Loop and less time answering questions that can be addressed by using this page.</p>
 <p>Therefore, try to resolve your build error yourself. Then, if you need to post for help, please include enough information with the post so the volunteers know where you are in your troubleshooting attempts.</p>
@@ -511,10 +1900,10 @@
 <li>State which fixes from the list below you have already tried AND post the screenshots of the results of those fix attempts.</li>
 </ul>
 </div>
-<h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">⌁</a></h2>
+<h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Please take screenshots of your issue and use them in your posts. On an Apple computer, press <code>shift-command-4</code> keys at the same time and a little crosshairs tool will appear. Click-and-drag across the area you'd like to screenshot. When you let go of the button, the screenshot will be saved to your desktop with a file name starting with the name "Screen Shot". To capture an entire window, press <code>shift-command-4</code> keys at the same time followed by pressing the space bar and then click on the window of interest.  Use screenshots over cell phone images or words whenever possible. Screenshots are higher resolution and easier to read.</p>
 <p>Use the whole Xcode window screenshot when posting for build help.</p>
-<h2 id="find-your-error-messages">Find Your Error Message(s)<a class="headerlink" href="#find-your-error-messages" title="Permanent link">⌁</a></h2>
+<h2 id="find-your-error-messages">Find Your Error Message(s)<a class="headerlink" href="#find-your-error-messages" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>To begin fixing the error, use the Report Navigator view to find your error message.</p>
 <p align="center"><img alt="img/report-nav.png" src="../img/report-nav.png" width="750" /></p>
 <p>The key is to (1) <strong>READ THE ERROR MESSAGE</strong> and then (2) <strong>FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW</strong>.</p>
@@ -530,8 +1919,8 @@
 </ul>
 <p>For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find the solution.</p>
 <p align="center"><img alt="img/search-errors.png" src="../img/search-errors.png" width="650" /></p>
-<h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Permanent link">⌁</a></h2>
-<h3 id="xcode-13-indexing-not-finished-watchapp-extension-entitlements">Xcode 13 Indexing Not Finished / WatchApp Extension entitlements<a class="headerlink" href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" title="Permanent link">⌁</a></h3>
+<h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="xcode-13-indexing-not-finished-watchapp-extension-entitlements">Xcode 13 Indexing Not Finished / WatchApp Extension entitlements<a class="headerlink" href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong></p>
 <p>The solution for this error has been updated with a new, simpler method.</p>
 <p><img alt="watchapp entitlements error" src="../img/xcode-13-new-error.svg" width="300" /></p>
@@ -551,7 +1940,7 @@
 <li>(Optional) Clear the Build Error (Menu at top of Xcode: Select Product-&gt;Clean Build Folder)</li>
 <li>Press build  </li>
 </ul>
-<h3 id="compileassetcatalog-error">CompileAssetCatalog Error<a class="headerlink" href="#compileassetcatalog-error" title="Permanent link">⌁</a></h3>
+<h3 id="compileassetcatalog-error">CompileAssetCatalog Error<a class="headerlink" href="#compileassetcatalog-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This error is found when there is a space embedded in the path name to your LoopWorspace folder. The good news is that LoopWorkspace seems to be able to build from an iCloud or Dropbox drive.</p>
 <p><img alt="CompileAssetCatalog error" src="../img/error-space-in-path.png" width="900" /></p>
 <p>Text in error message:</p>
@@ -571,7 +1960,7 @@
 <li>(Optional) Clear the Build Error (Menu at top of Xcode: Select Product-&gt;Clean Build Folder)</li>
 <li>Press build</li>
 </ul>
-<h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Permanent link">⌁</a></h3>
+<h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-finish-indexing">Build Instructions</a></p>
 <div class="admonition info">
 <p>Advanced builders using dev may need carthage but they should have followed the directions for <a href="../step13/#advanced-users-only">Advanced Users Only</a></p>
@@ -598,34 +1987,34 @@
 <li>It is the same password you use to log into the computer; you must have admin privileges to do this step</li>
 <li>The password will not display on the screen as you type it</li>
 </ul>
-<h3 id="could-not-locate-device-support-files">Could Not Locate Device Support Files<a class="headerlink" href="#could-not-locate-device-support-files" title="Permanent link">⌁</a></h3>
+<h3 id="could-not-locate-device-support-files">Could Not Locate Device Support Files<a class="headerlink" href="#could-not-locate-device-support-files" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong> "Could not locate device support files." That message is telling you that your iOS on the Loop phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.</p>
 <p><strong>Solution:</strong> Update your Xcode version; this may also require a macOS update. Please review the phone iOS driven requirements for <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">Xcode and macOS</a>.</p>
 <p align="center"><img alt="img/device-support-files.jpg" src="../img/device-support-files.jpg" width="750" /></p>
 <p>With Xcode 12, the simulators are no longer being downloaded automatically. If you are missing a simulator, follow the steps under Step 9 <a href="../step9/#simulator-download">Simulator Download</a>.</p>
-<h3 id="no-such-module-loopkit-or-similar-message">No Such Module 'LoopKit' or Similar Message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Permanent link">⌁</a></h3>
+<h3 id="no-such-module-loopkit-or-similar-message">No Such Module 'LoopKit' or Similar Message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Solution</strong>: You probably forgot to select LoopWorkspace. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-finish-indexing">Build Instructions</a></p>
 <p><strong>Error Message:</strong> If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the <a href="./#carthage-error">Carthage Error</a> fix listed above.</p>
 <p><strong>Solution</strong>: For zip-download (not advised): Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.</p>
 <p align="center"><img alt="img/exit-code-65.png" src="../img/exit-code-65.png" width="850" /></p>
-<h3 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Permanent link">⌁</a></h3>
+<h3 id="developer-license-update">Developer License Update<a class="headerlink" href="#developer-license-update" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement"</p>
 <p><strong>Solution:</strong> You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.</p>
 <p align="center"><img alt="img/license.png" src="../img/license.png" width="750" /></p>
-<h3 id="could-not-get-a-container-directory-url">Could Not Get a Container Directory URL<a class="headerlink" href="#could-not-get-a-container-directory-url" title="Permanent link">⌁</a></h3>
+<h3 id="could-not-get-a-container-directory-url">Could Not Get a Container Directory URL<a class="headerlink" href="#could-not-get-a-container-directory-url" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "Could not get a container directory URL. Please ensure App Groups are set up correctly in entitlements."</p>
 <p align="center"><img alt="img/container-1.png" src="../img/container-1.png" width="750" /></p>
 <p><strong>Solution</strong>: To resolve this error, you will need to click on the Loop target's signing area and then the plus-sign in the App Groups area under the signing. Copy and paste the bundle indentifier into the new container that starts with <code>group.</code> and then add <code>Group</code> to the end of the name. Click OK to save. Note, the line will start with lower case <code>group.</code> followed by your bundle identifier and an upper case <code>Group</code> added to the end of the bundle identifier.</p>
 <p align="center"><img alt="img/container-2.png" src="../img/container-2.png" width="750" /></p>
 <p>The final App Group should now have a blue check box, the name should start with <code>group</code> and end with <code>LoopGroup</code>. See the screenshot as an example. Click the build button after your App Group is setup similarly and you should be good.</p>
 <p align="center"><img alt="img/container-3.png" src="../img/container-3.png" width="750" /></p>
-<h3 id="missing-command-line-tools">Missing Command Line Tools<a class="headerlink" href="#missing-command-line-tools" title="Permanent link">⌁</a></h3>
+<h3 id="missing-command-line-tools">Missing Command Line Tools<a class="headerlink" href="#missing-command-line-tools" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong>  "Invalid active developer path (/Library/Developer/CommandLineTools)" or "unable to find utility "xcodebuild", not a developer tool or in PATH"</p>
 <p align="center"><img alt="img/command-line-error-1.jpg" src="../img/command-line-error-1.jpg" width="550" /></p>
 <p align="center"><img alt="img/command-line-error-2.jpg" src="../img/command-line-error-2.jpg" width="550" /></p>
 <p><strong>Solution:</strong> Go to your Xcode preferences and under the Locations tab, select your Xcode version (the figure shows 12.0.1 - yours should match your Xcode version) in the dropdown menu for Command Line Tools.</p>
 <p align="center"><img alt="img/command-line-error-3.png" src="../img/command-line-error-3.png" width="550" /></p>
-<h3 id="device-management-could-not-launch-loop">Device Management Could Not Launch Loop<a class="headerlink" href="#device-management-could-not-launch-loop" title="Permanent link">⌁</a></h3>
+<h3 id="device-management-could-not-launch-loop">Device Management Could Not Launch Loop<a class="headerlink" href="#device-management-could-not-launch-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "Could not launch "Loop". Verify the Developer App certificate for your account is trusted on your device. Open Settings and navigate to General -&gt; Device Management, then select your Developer App certificate to trust it."</p>
 <p align="center"><img alt="img/trust_device.jpg" src="../img/trust_device.jpg" width="750" /></p>
 <p><strong>Solution:</strong> If you get this message and are unable to find the Device Management option in your phone settings, then we need to do a little extra step to clear out some old info.</p>
@@ -651,7 +2040,7 @@
 <li>Rebuild Loop on the phone with the new download of Loop code.</li>
 <li>Start a new pod with the new Loop app on the reset phone.</li>
 </ol>
-<h3 id="pending-certificate-request">Pending Certificate Request<a class="headerlink" href="#pending-certificate-request" title="Permanent link">⌁</a></h3>
+<h3 id="pending-certificate-request">Pending Certificate Request<a class="headerlink" href="#pending-certificate-request" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "You already have a current iOS Development certificate or a pending certificate request."</p>
 <p align="center"><img alt="img/pending_certification_request.jpg" src="../img/pending_certification_request.jpg" width="750" /></p>
 <p><strong>Solution:</strong> This error message has recently started to appear for some new Loop builders. To resolve the issue, please log in to your Developer account at <a href="https://developer.apple.com">developer.apple.com</a> and then click on "Certificates, Identifiers &amp; Profiles".  Under that screen, you will see "Development" under the "Certificates" section in the column on the left.  You will need to click on the certificates, and choose "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"</p>
@@ -661,7 +2050,7 @@
 <p>Re-enter your Apple ID (yes...add that account right back that you literally just deleted), return to your Loop's target signing areas in Xcode and your error message should have resolved as a new certificate will have been issued and a provisioning profile should have been created automatically.</p>
 <p>You can verify the iOS development certificates are working by clicking on "Manage Certificates" in Xcode Preferences, Accounts and viewing the iOS Development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.</p>
 <p align="center"><img alt="img/verify_cert.png" src="../img/verify_cert.png" width="650" /></p>
-<h3 id="command-codesign-failed">Command CodeSign Failed<a class="headerlink" href="#command-codesign-failed" title="Permanent link">⌁</a></h3>
+<h3 id="command-codesign-failed">Command CodeSign Failed<a class="headerlink" href="#command-codesign-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "errSecInternalComponent,  Command CodeSign failed with a nonzero exit code"</p>
 <p align="center"><img alt="img/errsecinternal.jpg" src="../img/errsecinternal.jpg" width="850" /></p>
 <p><strong>Solution:</strong>  This error message is likely due to inadvertently saying "no" to allowing Keychain Access or changing your computer or AppleID password. Regardless, the solution is as follows:</p>
@@ -676,99 +2065,108 @@
 <li>In the main Xcode menu (grey menu bar at the very top of your Apple display area), select <code>Product</code> and then select the option for <code>Clean</code>. (Keyboard shortcut is shift-command-k)</li>
 <li>Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to click on the option to Always Allow.</li>
 </ol>
-<h3 id="unrecognized-arguments">Unrecognized Arguments<a class="headerlink" href="#unrecognized-arguments" title="Permanent link">⌁</a></h3>
+<h3 id="unrecognized-arguments">Unrecognized Arguments<a class="headerlink" href="#unrecognized-arguments" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "Unrecognized arguments: --cache-builds"</p>
 <p align="center"><img alt="img/cache-builds.png" src="../img/cache-builds.png" width="850" /></p>
 <p align="center"><img alt="img/exit-code-1-cartfile.jpg" src="../img/exit-code-1-cartfile.jpg" width="850" /></p>
 <p><strong>Solution:</strong> This is a homebrew / carthage error, so I don't think you'll see this. If you do, download a fresh copy of Loop code and try again. If it repeats, it is time to request assistance. Please read <a href="./#posting-for-help">Posting for Help</a>.</p>
-<h3 id="abort-with-payload">Abort with Payload<a class="headerlink" href="#abort-with-payload" title="Permanent link">⌁</a></h3>
+<h3 id="abort-with-payload">Abort with Payload<a class="headerlink" href="#abort-with-payload" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "<strong>Abort with payload</strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.</p>
 <p align="center"><img alt="img/abort_payload.png" src="../img/abort_payload.png" width="750" /></p>
 <p><strong>Solution:</strong> This error message is caused by having the Loop download folder in an iCloud mapped drive when doing the zip download.  Move your Loop download folder back to the Downloads folder, then rebuild. LoopWorkspace builds with Xcode 13 appear to work fine with an iCloud drive.  You may run into the spaces in your path name problem - which has a different solution.</p>
-<h2 id="apple-watch-issues">Apple Watch Issues<a class="headerlink" href="#apple-watch-issues" title="Permanent link">⌁</a></h2>
-<h3 id="apple-watch-loop-app-not-appearing">Apple Watch: Loop App Not Appearing<a class="headerlink" href="#apple-watch-loop-app-not-appearing" title="Permanent link">⌁</a></h3>
+<h2 id="apple-watch-issues">Apple Watch Issues<a class="headerlink" href="#apple-watch-issues" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="apple-watch-loop-app-not-appearing">Apple Watch: Loop App Not Appearing<a class="headerlink" href="#apple-watch-loop-app-not-appearing" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error:</strong> Apple watch app is not appearing.</p>
 <p><strong>Solution:</strong> This error usually appears because you have not updated the watchOS prior to building Loop, or you didn't have your Apple watch paired at the time of building Loop.  </p>
 <p>Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p>
-<h3 id="apple-watch-loop-app-not-installing">Apple Watch: Loop App Not Installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Permanent link">⌁</a></h3>
+<h3 id="apple-watch-loop-app-not-installing">Apple Watch: Loop App Not Installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error:</strong> The Loop app appears on the list of apps available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL".</p>
 <p><strong>Solution:</strong>  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watch face and select the "Trust" button. In Xcode, go to the top menu bar and select "Clean Build Folder" from the Product menu option, and then rebuild your Loop app.</p>
-<p>For an unknown reason, the watch app can still fail to install properly. If the "Clean Build Folder" step above, is insufficient, you may need to unpair your watch and then pair as new.  After this, rebuild Loop on your phone while wearing your watch and "Trust this computer" when prompted.  This typically configures the Loop app to install properly on your watch.</p></div>
-            </div>
-        </div>
+<p>For an unknown reason, the watch app can still fail to install properly. If the "Clean Build Folder" step above, is insufficient, you may need to unpair your watch and then pair as new.  After this, rebuild Loop on your phone while wearing your watch and "Trust this computer" when prompted.  This typically configures the Loop app to install properly on your watch.</p>
+                
+              
+              
+                
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../stylesheets/copy_button.js" defer></script>
-        <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+              
+            </article>
+          </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../step14/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Step 14 Build Loop app" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Step 14 Build Loop app
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../code_customization/" class="md-footer__link md-footer__link--next" aria-label="Next: Customize your Loop" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Customize your Loop
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+  </div>
+</footer>
+      
     </div>
-</div>
-
-    </body>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+        <script src="../../stylesheets/copy_button.js"></script>
+      
+    
+  </body>
 </html>
