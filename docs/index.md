@@ -1,5 +1,7 @@
 # Welcome to Loop
 
+[New Look and Feel](#loopdocs-has-a-new-look-and-feel)
+
 ## Introduction
 
 What is Loop?
@@ -39,22 +41,74 @@ When you progress to “closed-loop”, do so safely by starting with conservati
 
 ## How to Use These Docs
 
-* Use the navigation menu at the top of the screen
-    * Most menu items are only one level deep - so you see all the underlying pages by clicking on the menu name
-    * Operate has a few top-level items plus 4 drop-down menus; the easiest way to go through these pages is hitting Next or the letter `n`
-        * Operate->How To Use Loop App
-        * Operate->Looping Tips
-        * Operate->Algorithm
-        * Operate->Troubleshoot
-* Use the Table of Contents for the current page, which is displayed on the left side of the screen
-    * On mobile devices, at the top of the page, tap the down arrow on the upper left to display the TOC, tap again to dismiss it
+Please - if you are new to Loop or haven't looked at the docs for a while:
+
 * Read (or at least skim) pages sequentially the first time through
-    * Type the letter `n` for next and `p` for previous to navigate
+* Navigation shortcuts (might be available with on your browser/keyboard)
+    * Hit the letter `n` for next page
+    * Hit the letter `p` for previous page
+    * Hit the `End` button for end of page
+    * Hit the `Home` button to top of page
+* Pages get updated all the time
+
+New Theme, New Features:
+
+* The new theme has arrows at the bottom of each page to navigate forwards and backwards
+* There is a `Back to top` button to return you to top of the page
+
+If you've already read about the new look and feel of LoopDocs, you can skip to [How-to Search](#how-to-search).
+
+
+## LoopDocs has a New Look and Feel
+
+LoopDocs transitioned to a new theme (November 2021) with a different loop and feel. This theme (thank you [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)) allows  improved customization and much better searching. The top bar looks like this on your browser:
+
+![top tabs showing LoopDocs](img/new-look-logo.png){width="450"}
+{align="center"}
+
+Some details of the display are dependent on whether you are on a mobile device or a computer (with browser width > 1220 pixels).  After the first set of graphics, which show the difference between these two views for this location in LoopDocs, all other graphics show the wide-browser view.
+
+### Wide-Browser View
+
+* If you are on a browser with a screen width of 1220 pixels or more:
+    - There are tabs at the top to quickly skip between Sections
+    - The headings for the Section, Page and Page Table of Contents show up to the left of the documentation found on that page
+    - The headings to the right of the green vertical bar (under `Home` for this Page) is the table of contents for the current page
+    - After clicking on the `How to Use These Docs` heading, it is highlighted on the left hand side and the word to the right of the Loop Logo changes to indicate the name of the page currently being displayed
+    <br/><br/>![new look for site on computer](img/new-look-wide.png){width="600"}<br/><br/>
+
+
+### Narrow-Browser View
+
+* If you are on a mobile device or your browser width is narrow:
+    - This is the view of the same location in LoopDocs as shown above
+    - Note the `Hamburger Menu` (3-parallel-line stack) with the word `Home` (current Page) beside it
+    <br/><br/>![new look for site on mobile](img/new-look-narrow.png){width="450"}<br/><br/>
+    - When you tap on the hamburger menu, this view is shown:
+    <br/><br/>![mobile view of first hamburger](img/new-look-narrow-first-hamburger.png){width="450"}<br/><br/>
+        - The `Home` is highlighted because that's the Page you're currently displaying
+        - From here you have these choices
+            1. Click on the highlighted Page to view the current page Table of Contents
+            1. Click on a Section (for some Pages you may need to use the back button to get to the list of Sections or Pages of interest)
+
+
+## How-to Search
+
 * Search for topics by clicking the Search icon or typing the letter `s` on your keyboard
-    * As you type in the search box, suggested section headings with the first few rows of content will show up below the search bar
-    * Scroll down and select the Heading Title of the section of interest
+    * You don't need to click anything else - just start typing
+    * If you clicked away from the search box, then click in the area above the words `Type to start searching`
+    <br/><br/>![how to use the search for this site](img/new-look-search-blank.png){width="250"}<br/><br/>   
+    * As you begin to type, suggested completions appear which you can choose by hitting the right-arrow key or keep typing
+    * At the same time a series of suggested Pages are displayed
+    <br/><br/>![example of using search](img/new-look-search-example.png){width="600"}<br/><br/>
+    * Scroll down and decide which Page is most likely
+        * If more than one instance of the search term was found on that page, click on the `# more on this page` to reveal the Headers to choose from
+        * If you click (or right-click) on the Page - it opens the page; if you select a Header - it opens to that header.
+        * The contents of the search box will be used the highlight every instance found on the selected page
+    * To keep the list present, right-click and select `Open in New Tab`
+    * Examine any tabs you might open and then return to the list as needed
     * If you hit return, the Search display vanishes
-<br/><br/>![how to use the search for this site](img/search_example.png){width="400"}<br/><br/>
+    * If you click back on your current page, whatever you typed in the search box stays available for reuse
 * There is another website, [Looptips](https://kdisimone.github.io/looptips/), you should review
     * While these articles were written and illustrated with an earlier version of Loop, they are well worth reading
     * This link is repeated on the Operate->Looping Tips->Loop Tips page
@@ -73,8 +127,8 @@ There are a number of social media options. (Read the directions on each of thes
 
 ### Search Then Post
 
-!!! danger ""
-    It's really easy to panic if Loop fails to build or if you are having trouble using your Loop app, but take the time to do a quick search in these docs and in your favorite social media group before posting a question. You might get an answer immediately.
+!!! danger "Don't Panic"
+    It's really easy to panic if Loop fails to build or if you are having trouble using your Loop app, but take the time to do a quick [Search](#how-to-search) in these docs and in your favorite social media group before posting a question. You might get an answer immediately.
 
     Please post your question in only one group on Facebook or under one stream on zulipchat - many mentors monitor more than one place. If you don't hear an answer in 24 hours, then try a different place
 
