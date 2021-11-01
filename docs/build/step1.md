@@ -13,7 +13,7 @@
     * Xcode version determines the **minimum** [macOS](step1.md#macos) version
     * macOS version has hardware and disk space requirements
 
-    If you are procuring a Mac, you'll want to have Big Sur as the operating system. Over the last few years, the amount of disk space required has expanded - do not consider anything with less than 256 GB (512 GB is better). For those new to Apple, the iOS, macOS and Xcode version numbers tend to increase annually.
+    If you are buying a Mac, you'll want to have Big Sur (or newer) as the operating system. Over the last few years, the amount of disk space required has expanded - do not consider anything with less than 256 GB (512 GB is better). For those new to Apple, the iOS, macOS and Xcode version numbers tend to increase annually.
 
     Minimum macOS for recent iOS:
 
