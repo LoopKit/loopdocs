@@ -108,7 +108,7 @@ Some details of the display are dependent on whether you are on a mobile device 
     * To keep the list present, right-click and select `Open in New Tab`
     * Examine any tabs you might open and then return to the list as needed
     * If you hit return, the Search display vanishes
-    * If you click back on your current page, whatever you typed in the search box stays available for reuse
+    * If you click anywhere on your current page, whatever you typed in the search box stays available for reuse
 * There is another website, [Looptips](https://kdisimone.github.io/looptips/), you should review
     * While these articles were written and illustrated with an earlier version of Loop, they are well worth reading
     * This link is repeated on the Operate->Looping Tips->Loop Tips page
