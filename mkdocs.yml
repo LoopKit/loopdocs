@@ -1,5 +1,21 @@
 site_name: LoopDocs
 
+theme:
+    name: material
+    language: en
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.expand
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - content.code.annotate
+    logo: loop-logo.png
+
+# repo_url: https://github.com/LoopKit/Loop
+
 extra_css:
     - stylesheets/admonitions.css
     - stylesheets/extra.css
@@ -12,21 +28,12 @@ markdown_extensions:
     - admonition
     - attr_list
     - toc:
-        permalink: true
+        permalink: true ~
+        permalink_title: Anchor link to this section for reference
+        toc_depth: 2
 
 plugins:
     - search
-
-theme:
-    name: material
-    language: en
-    features:
-        - navigation.tabs
-        - navigation.tabs.sticky
-        - navigation.sections
-        - navigation.expand
-        - navigation.top
-    logo: loop-logo.png
 
 nav:
 - Home: 'index.md'
