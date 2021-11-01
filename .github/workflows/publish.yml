@@ -5,16 +5,10 @@ on:
   # Remark: uncomment one section only
   # Remark: Next 1 line requires manual action, Click on action tab, then publish
   # workflow_dispatch
-  # Remark: Next 2 lines triggers the workflow on push events for the main branch
-  #    and working-docs
-  #    Note - that working-docs should never be a branch on the
-  #           actual LoopKit/loopdocs repository,
-  #           it should only be used by forks that want pages auto-published
+  # Remark: Next 3 lines triggers the workflow on push events for the main branch
   push:
     branches:
       - master
-      - working-docs
-
 
 jobs:
   deploy:
