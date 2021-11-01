@@ -1,18 +1,46 @@
 site_name: LoopDocs
-theme: flatly
+
+theme:
+    name: material
+    language: en
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.tracking
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - content.code.annotate
+        - toc.integrate
+    logo: loop-logo.png
+    favicon: loop-logo.png
+
+# repo_url: https://github.com/LoopKit/Loop
 
 extra_css:
     - stylesheets/admonitions.css
     - stylesheets/extra.css
+    - stylesheets/styles.css
 
 extra_javascript:
     - stylesheets/copy_button.js
 
 markdown_extensions:
+    - meta
     - admonition
     - attr_list
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
+    - pymdownx.snippets
     - toc:
-        permalink: ⌁
+        permalink: true
+        permalink_title: Anchor link to this Header on this Page
+        toc_depth: 3
+        title: Headers on this Page
+
+plugins:
+    - search
 
 nav:
 - Home: 'index.md'

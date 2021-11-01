@@ -13,28 +13,28 @@ For new builders, you might want to first build the code and familiarize yoursel
 
 ## Instructions for Finding the Lines
 
-For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number.
+For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number.
 
   * Folder: Loop/subfolder1/subfolder2/etc.
   * File: filename.swift, line number(s)
-  * <button type="button" onclick="copyEvent('copy-cc-01')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-01">word or phrase to use for search</code>
+  * <button type="button" onclick="copyEvent('copy-cc-01')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-01">word or phrase to use for search</code>
 
 There may be a figure illustrating the change.
 
 Below the figure, the original, and in some cases, the modified code will be displayed as text.
 
-To search using the `Key Phrase` (see graphic below for clarification):
+To search using the `Key_Phrase` (see graphic below for clarification):
 
-* Tap on `Key Phrase` to load that text into your paste buffer
+* Click any where within the words `Key_Phrase` to load that text into your paste buffer (the phrase to be copied will be highlighted)
 * In Xcode, tap the Find menu item and select Find in Workspace
 * Paste the text into the find search-box that opens on upper left of Xcode screen and hit enter
 * A series of options show up underneath the find search-box
 * The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed
 * Click on the one you think is correct and it will display in the main middle window of Xcode with the Keyword highlighted on the line you selected
-    * The `Key Phrase` was selected to limit the search to just the relevant line (if possible)
-    * In some cases, the `Key Phrase` gets you close to where you need to make the modifications
+    * The `Key_Phrase` was selected to limit the search to just the relevant line (if possible)
+    * In some cases, the `Key_Phrase` gets you close to where you need to make the modifications
 
-![graphic showing how to search using the Key Phrase](img/code-custom-xcode-search.svg){width="750"}
+![graphic showing how to search using the Key_Phrase](img/code-custom-xcode-search.svg){width="750"}
 {align="center"}
 
 <br>
@@ -45,7 +45,7 @@ Depending on your iPhone preferences and model, you may have Face ID or Touch ID
 
   * Folder: Loop/View Controllers
   * File: BolusViewController.swift, Line 529
-  * <button type="button" onclick="copyEvent('copy-cc-02')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-02">canEvaluatePolicy(.deviceOwnerAuthentication</code>
+  * <button type="button" onclick="copyEvent('copy-cc-02')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-02">canEvaluatePolicy(.deviceOwnerAuthentication</code>
 
  The screenshot below was taken with Loop v2.0 when the line number was 201; with current Loop, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
 
@@ -69,7 +69,7 @@ Loop’s default carb absorption times are based on the high, medium, and low gl
   * Folder: Loop/LoopCore
   * File: LoopSettings.swift
   * Line: 16 (v2.2.4 master), 41 (v2.2.4 AB), 50 (current)
-  * <button type="button" onclick="copyEvent('copy-cc-03')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-03">defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes</code>
+  * <button type="button" onclick="copyEvent('copy-cc-03')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-03">defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes</code>
 
 ![img/carb_times.png](img/carb_times.png){width="750"}
 {align="center"}
@@ -99,7 +99,7 @@ If you wish to customize these values, please make sure you know what you are do
 
   * Folder: Loop/LoopCore/Insulin
   * File: ExponentialInsulinModelPreset.swift
-  * <button type="button" onclick="copyEvent('copy-cc-04')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-04">MARK: - Model generation</code>
+  * <button type="button" onclick="copyEvent('copy-cc-04')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-04">MARK: - Model generation</code>
   * Lines:
       * actionDuration (20 to 29)
       * peakActivity (31 to 40)
@@ -155,21 +155,21 @@ For the carb and bolus entry pickers, edit two lines in files within the WatchAp
 
   * Folder: Loop/WatchApp Extension/Controllers
   * File: AddCarbsInterfaceController.swift, Line: 249
-  * <button type="button" onclick="copyEvent('copy-cc-05')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-05">let rotationsPerIncrement</code>
+  * <button type="button" onclick="copyEvent('copy-cc-05')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-05">let rotationsPerIncrement</code>
 
 ![img/sensitivity2.png](img/sensitivity2.png){width="800"}
 {align="center"}
 
   * Folder: Loop/WatchApp Extension/Controllers
   * File: BolusInterfaceController.swift, Line: 191
-  * <button type="button" onclick="copyEvent('copy-cc-06')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-06">let rotationsPerValue</code>
+  * <button type="button" onclick="copyEvent('copy-cc-06')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-06">let rotationsPerValue</code>
 
 ![img/sensitivity1.png](img/sensitivity1.png){width="800"}
 {align="center"}
 
-The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This `Key Phrase` returns the two lines in that file where the change is required:
+The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This `Key_Phrase` returns the two lines in that file where the change is required:
 
-* <button type="button" onclick="copyEvent('copy-cc-07')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-07">abs(accumulatedRotation)&nbsp;</code>
+* <button type="button" onclick="copyEvent('copy-cc-07')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-07">abs(accumulatedRotation)&nbsp;</code>
 
 
 ## Expiration Notification Customization
@@ -186,8 +186,8 @@ If you prefer a different notification time and frequency, there are two lines y
 * File: ProfileExpirationAlerter.swift
 * Line 16: modify how long before expiration you get the FIRST notification
 * Line 28: modify how frequently you will be notified
-* <button type="button" onclick="copyEvent('copy-cc-08')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-08">expirationAlertWindow: TimeInterval</code>
-* <button type="button" onclick="copyEvent('copy-cc-09')">Key Phrase</button>&nbsp;&nbsp;<code id="copy-cc-09"> minimumTimeBetweenAlerts: TimeInterval</code>
+* <button type="button" onclick="copyEvent('copy-cc-08')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-08">expirationAlertWindow: TimeInterval</code>
+* <button type="button" onclick="copyEvent('copy-cc-09')">_*Key_Phrase*_</button>&nbsp;&nbsp;<code id="copy-cc-09"> minimumTimeBetweenAlerts: TimeInterval</code>
 
 ![Profile expiration notification details](img/expiration-custom.png){width="600"}
 {align="center"}

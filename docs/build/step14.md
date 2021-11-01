@@ -41,7 +41,7 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 ## Download and Prepare to Build
 
-You have your choice of using the instructions on the [Build-Select page](https://www.loopandlearn.org/build-select/#use-script) or hit the "Copy" button below and proceed using this page (which has more detailed information):
+You have your choice of using the instructions on the [Build-Select page](https://www.loopandlearn.org/build-select/#use-script) or click on the word "Copy" below and proceed using this page (which has more detailed information):
 
 <button type="button" onclick="copyEvent('copy-step14-01')">Copy</button><br><code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"<br><br></code>
 
