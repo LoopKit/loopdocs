@@ -115,7 +115,7 @@ If you happen to have Xcode open, go on and quit out of Xcode now.
 
 ### Load the Paste Buffer
 
-Select the "Copy" button below to copy this line-of-code:
+Click on the word "Copy" below to copy this line-of-code:
 
 <button type="button" onclick="copyEvent('copy-updating-01')">Copy</button><br><code id="copy-updating-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"<br><br></code>
 
@@ -187,7 +187,7 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
 !!! warning "How to delete old provisioning profiles"
     - Find your Terminal app (in Applications under Utilities)
     - Open your Terminal app
-    - Click on the copy button to load your paste buffer, then paste it into the Terminal prompt
+    - Click on the word "Copy" to load your paste buffer, then paste it into the Terminal prompt
 
     <button type="button" onclick="copyEvent('copy-updating-02')">Copy</button><br><code id="copy-updating-02">rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision<br></br></code>
 
@@ -245,7 +245,7 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 !!! green "Clean cache and derived data"
 
-    Using Terminal app that should still be open from Step 4a, select the "Copy" button to select these two lines of code and paste into the terminal.
+    Using Terminal app that should still be open from Step 4a, click on the word "Copy" to select these two lines of code and paste into the terminal.
 
     <button type="button" onclick="copyEvent('copy-updating-03')">Copy</button><br><code id="copy-updating-03">rm -rf ~/Library/Caches/org.carthage.CarthageKit</br>rm -rf ~/Library/Developer/Xcode/DerivedData</br><br></code>
 
