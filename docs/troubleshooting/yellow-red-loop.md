@@ -58,6 +58,8 @@ If this was not successful, check out the [Pump is Not Responding](#pump-is-not-
 
 If you recently changed a transmitter, you need to also update your Loop settings to reflect the new transmitter ID. Go to the CGM section of Loop settings and `Delete CGM` (it's a button on the bottom of that page). Then use the `Add CGM` in Loop settings to include the new transmitter ID.
 
+If you fail to update your Transmitter ID in Loop and you also left Share Credentials in Loop (not recommended), you will see messages such as: `Failed to decode SGV` when the Share server cannot be reached. That's your notice to update the Transmitter ID (or if you think you already did - check for typos in data entry).
+
 #### Delete Share Account
 
 Finally, we see a lot of errors reported because people have problems with their Share server information in Loop app. **Please delete your Share account information from within Loop settings.** In other words, the credentials portion of the Share account info, as shown in the screenshot below, should say `Tap to Set` and not have your account info. It is unnecessary to have this portion filled out as local, non-internet spying of a transmitter is the preferred CGM source anyways. In fact, by leaving this information out, it will help you remember to change your transmitter ID when you change transmitters because CGM data won't appear in Loop. By not including Share account in Loop, you will prevent yourself from accidentally becoming internet dependent.
@@ -73,7 +75,7 @@ In July 2019, we started to see a new style of Dexcom G6 transmitters on the mar
 
 ### Apple Health
 
-Make sure both the Loop app and the Dexcom app have permission to write to Apple Health by checking the [Apple Health Data Permissions](../build/health.md)
+Make sure both the Loop app and the Dexcom app have permission to write to Apple Health by checking the [Apple Health Permissions](../build/health.md)
 
 In the early days of iOS 14, there were problems with the Apple HealthKit.  The consequence is that some people's database was corrupted.  If you tap on the Heart Icon on your phone to go to Apple Health and display data and it is very slow to respond - or never responds, you probably need to get rid of a corrupted database and start fresh.  Be sure to go Open Loop if this is needed. Please get help from your favorite [Loop Social Media](../index.md#stay-in-the-loop) group or from Apple support in this case.
 
