@@ -68,14 +68,21 @@ LoopDocs transitioned to a new theme (November 2021) with a different loop and f
 
 Some details of the display are dependent on whether you are on a mobile device or a computer (with browser width > 1220 pixels).  After the first set of graphics, which show the difference between these two views for this location in LoopDocs, all other graphics show the wide-browser view.
 
+!!! note "Graphics a bit out of date"
+
+    The list of `Headers on this Page` have been moved to the right side for Wide Browsers. The graphics will be updated later and then this comment will be removed.
+
 ### Wide-Browser View
 
 * If you are on a browser with a screen width of 1220 pixels or more:
     - There are tabs at the top to quickly skip between Sections
-    - The headings for the Section, Page and Page Table of Contents show up to the left of the documentation found on that page
-    - The headings to the right of the green vertical bar (under `Home` for this Page) is the table of contents for the current page
-    - After clicking on the `How to Use These Docs` heading, it is highlighted on the left hand side and the word to the right of the Loop Logo changes to indicate the name of the page currently being displayed
-    <br/><br/>![new look for site on computer](img/new-look-wide.png){width="600"}<br/><br/>
+    - Pages available for that section are shown to the left of the documentation
+        - If there is a `>` symbol, click on it to reveal additional pages
+    - Headers on the current page are shown to the right of the documentation
+
+    For example, after clicking on the `How to Use These Docs` heading, it is highlighted and the word to the right of the Loop Logo changes to indicate the name of the page currently being displayed.
+
+    ![new look for site on computer](img/new-look-wide.png){width="600"}
 
 
 ### Narrow-Browser View
