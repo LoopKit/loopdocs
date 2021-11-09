@@ -6,7 +6,7 @@ You can now use your Nightscout site to remotely set and cancel your override pr
     * Requires push notification - only available if you built your Loop app using a paid Apple developer account
     * Is not included in the T1Pal Nightscout account service (check with [T1Pal](https://t1pal.com) to see if it has been added subsequent to approval of the initial submission to the FDA as a secondary display service)
 
-!!! info "What you will need to do.."
+!!! abstract "What you will need to do.."
 
     1. Update the Looper's iPhone Settings
 

@@ -17,7 +17,9 @@ For each customization, you will be given landmarks to find the correct location
 
   * Folder: Loop/subfolder1/subfolder2/etc.
   * File: filename.swift, line number(s)
-  * <button type="button" onclick="copyEvent('copy-cc-01')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-01">word or phrase to use for search</code>
+``` title="Key_Phrase"
+use the copy button at right, paste into search
+```
 
 There may be a figure illustrating the change.
 
@@ -25,7 +27,7 @@ Below the figure, the original, and in some cases, the modified code will be dis
 
 To search using the `Key_Phrase` (see graphic below for clarification):
 
-* Click any where within the words `Key_Phrase` to load that text into your paste buffer (the phrase to be copied will be highlighted)
+* A copy button is available when you hover your mouse in the right-hand side of the block below the title `Key_Phrase`,  click on it to copy the phrase
 * In Xcode, tap the Find menu item and select Find in Workspace
 * Paste the text into the find search-box that opens on upper left of Xcode screen and hit enter
 * A series of options show up underneath the find search-box
@@ -45,7 +47,9 @@ Depending on your iPhone preferences and model, you may have Face ID or Touch ID
 
   * Folder: Loop/View Controllers
   * File: BolusViewController.swift, Line 529
-  * <button type="button" onclick="copyEvent('copy-cc-02')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-02">canEvaluatePolicy(.deviceOwnerAuthentication</code>
+``` title="Key_Phrase"
+canEvaluatePolicy(.deviceOwnerAuthentication
+```
 
  The screenshot below was taken with Loop v2.0 when the line number was 201; with current Loop, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
 
@@ -69,7 +73,10 @@ Loop’s default carb absorption times are based on the high, medium, and low gl
   * Folder: Loop/LoopCore
   * File: LoopSettings.swift
   * Line: 16 (v2.2.4 master), 41 (v2.2.4 AB), 50 (current)
-  * <button type="button" onclick="copyEvent('copy-cc-03')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-03">defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes</code>
+
+``` title="Key_Phrase"
+defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
+```
 
 ![img/carb_times.png](img/carb_times.png){width="750"}
 {align="center"}
@@ -99,11 +106,14 @@ If you wish to customize these values, please make sure you know what you are do
 
   * Folder: Loop/LoopCore/Insulin
   * File: ExponentialInsulinModelPreset.swift
-  * <button type="button" onclick="copyEvent('copy-cc-04')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-04">MARK: - Model generation</code>
   * Lines:
       * actionDuration (20 to 29)
       * peakActivity (31 to 40)
       * effectDelay (42 to 51)
+
+``` title="Key_Phrase"
+MARK: - Model generation
+```
 
 ![img/exponential.png](img/exponential.png){width="750"}
 {align="center"}
@@ -155,21 +165,30 @@ For the carb and bolus entry pickers, edit two lines in files within the WatchAp
 
   * Folder: Loop/WatchApp Extension/Controllers
   * File: AddCarbsInterfaceController.swift, Line: 249
-  * <button type="button" onclick="copyEvent('copy-cc-05')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-05">let rotationsPerIncrement</code>
+
+``` title="Key_Phrase"
+let rotationsPerIncrement
+```
 
 ![img/sensitivity2.png](img/sensitivity2.png){width="800"}
 {align="center"}
 
   * Folder: Loop/WatchApp Extension/Controllers
   * File: BolusInterfaceController.swift, Line: 191
-  * <button type="button" onclick="copyEvent('copy-cc-06')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-06">let rotationsPerValue</code>
+
+``` title="Key_Phrase"
+let rotationsPerValue
+```
 
 ![img/sensitivity1.png](img/sensitivity1.png){width="800"}
 {align="center"}
 
-The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This `Key_Phrase` returns the two lines in that file where the change is required:
+The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This `Key_Phrase` returns 3 lines, the second 2 of which are the ones in that file where the change is required:
 
-* <button type="button" onclick="copyEvent('copy-cc-07')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-07">abs(accumulatedRotation)&nbsp;</code>
+
+``` title="Key_Phrase"
+abs(accumulatedRotation)
+```
 
 
 ## Expiration Notification Customization
@@ -186,8 +205,14 @@ If you prefer a different notification time and frequency, there are two lines y
 * File: ProfileExpirationAlerter.swift
 * Line 16: modify how long before expiration you get the FIRST notification
 * Line 28: modify how frequently you will be notified
-* <button type="button" onclick="copyEvent('copy-cc-08')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-08">expirationAlertWindow: TimeInterval</code>
-* <button type="button" onclick="copyEvent('copy-cc-09')">_*Key_Phrase*_</button>&nbsp;&nbsp;<code id="copy-cc-09"> minimumTimeBetweenAlerts: TimeInterval</code>
+
+``` title="Key_Phrase"
+expirationAlertWindow: TimeInterval
+```
+
+``` title="Key_Phrase"
+ minimumTimeBetweenAlerts: TimeInterval
+```
 
 ![Profile expiration notification details](img/expiration-custom.png){width="600"}
 {align="center"}
@@ -236,7 +261,7 @@ Additional customizations are found on another website. If you did not find the 
 * Adjust Percent Bolus for Automatic Dosing Strategy
 * Adjust Watch Crown Rotation Required for Bolus Confirmation
 * Pods: Increase Log File History Hours
-* These Require Workspace Builds (use [Build Select Script](https://www.loopandlearn.org/build-select/))
+* These Require Workspace Builds (which are now standard)
     * Modify Override Sensitivity
     * Medtronic: Disable mySentry (Current Loop removes need for this)
     * Pods: Add Extra Insulin on Insertion

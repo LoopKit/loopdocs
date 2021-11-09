@@ -6,7 +6,7 @@ The Loop algorithm takes one of four actions depending upon the eventual blood g
 
 Loop implements one of four possible temporary basal actions: **decrease**, **increase**, **suspend**, or **resume** a scheduled basal rate.
 
-!!! danger "Note:"
+!!! info "Automatic Bolus"
 
     If you are using an Automatic-Bolus Dosing Strategy in closed Loop mode and Loop predicts you need an **increase** in insulin; this **increase** is provided as a percentage of the recommended bolus instead of an increased temporary basal. The default percentage is 40%.
 
@@ -50,7 +50,7 @@ The amount of insulin needed, or dose, is calculated using the desired reduction
 
 ![basal dose equation](img/dose_equation.png)
 
-!!! note ""
+!!! info "Loop Dose Calculation"
 
     A major difference between traditional pump therapy and how the Loop calculates dose is that in pump therapy the current blood glucose is used to estimate the dose, whereas in the Loop algorithm the eventual and minimum blood glucose predictions are also used in determining dosing decisions.
 

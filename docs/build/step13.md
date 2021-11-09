@@ -1,16 +1,17 @@
 # Step 13: Download Loop Code
 
-!!! danger "Time Estimate"
+!!! info "Time Estimate"
     - 10 minutes to read this page
     - Wait until Step 14 to download Loop code (New Workspace Method)
 
-!!! info "Summary"
-    - Open the [Build Select Script](https://www.loopandlearn.org/build-select/) page in a new tab of your browser
-    - Read the Build Select page but don't take any action yet
-        - That page supports more than just Loop
-        - You will not actually be doing the copy/paste into the terminal until Step 14
+!!! abstract "Summary"
+    - All Loopers: Loop can only be built with the Workspace Build method
+    - To make it easy, there's a script for you to use
+    - New Builders: Review this page until told to go to Step 14
+    - Repeat Builders: There is important information about iOS updates - don't skip that section
+    - Advanced Users: There is information for you too
 
-!!! warning "FAQs"
+!!! question "FAQs"
     - **When do I need to download new Loop code?** There are three times you need to download new code:
         1. When you build Loop initially
         1. When a new release of Loop has features you want
@@ -33,31 +34,32 @@ At the end of that section you'll be directed to Step 14.  You are welcome to re
 
 ## Build Select Script Workspace Method
 
-The Build Select script:
+The Build Select script is a quick and easy way to build Loop:
 
 * Builds Loop using the Workspace method
     * Workspace build is required as of Xcode 13
+    * Workspace build works fine with Xcode 12
 * Supports more than just Loop
 * Provided by the Loop and Learn mentors
 
-Please open this page in a new tab: [Build Select Script](https://www.loopandlearn.org/build-select/) and read the page, but don't take action (copy/paste into your terminal) at this time.
-
-Once you have reviewed the script page and are ready to move forward, head on to Step 14 in which you will execute the script steps and [Build the Loop App](step14.md).
+New builders - head to Step 14 in which you will execute the script steps and [Build the Loop App](step14.md).
 
 ---
 
-If you are are "Repeat Looper" or interested in the dev branch, there is more information on the the rest of this page.
+If you are a "Repeat Looper" or interested in the dev branch, there is more information on the the rest of this page.
+
+For those "Repeat Loopers" who remember when you had to use a "dev" branch to get features like automatic-bolus, you do not need to do that.  Automatic-bolus Dosing Strategy is included in Loop Master.
 
 
 ## Repeat Loopers
 
-There is a lot of information embedded throughout the Build Steps about building with the old zip download method - this is being transitioned to the Workspace method.
+You may remember building with the old zip download method. The zip download is no longer supported.
 
-* The zip download method had a very fast download, followed by a very long build while Xcode collected more code from the internet to enable you to build the complete app. It is not an option once Xcode 13 is installed.
+* The zip download method had a very fast download, followed by a very long build while Xcode collected more code from the internet to enable you to build the complete app. It is not an option now that Loop needs to support Xcode 13, which is required for iOS 15.
 
 * The new method uses Workspace and works for Xcode 12 as well as Xcode 13. This downloads everything you need up front and builds much faster.
 
-* You may remember information indicating that Workspace is only for experts - that only refers to people working on the new version of Loop (known as the dev branch).
+* You may remember information indicating that Workspace is only for experts - that only refers to people working on the next version of Loop (known as the dev branch).
 
 ### Xcode 13, iOS 15 changes
 
@@ -65,7 +67,7 @@ There is a lot of information embedded throughout the Build Steps about building
 
     Any Loop app built with Xcode version prior to Xcode 12.5 will immediately fail when the phone is updated to iOS 15. (Any one who last built with Catalina should not install iOS 15 without following "safe steps" below.)
 
-    These instructions, [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used), tell you how to determine what version was used when building the Loop app currently on your phone.
+    Follow this link, [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used), for instructions to determine what version was used when building the Loop app currently on your phone.
 
     Safe steps to keep Loop going if you want to install iOS 15
 
@@ -79,11 +81,8 @@ Modifications to building Loop with Xcode 13:
 * iOS 15 requires Xcode version 13 to build
 * You must use the Workspace method to build Loop with Xcode 13
 * The old download the zip method will not work once you update your Xcode to version 13
-* You can use the [Build Select Script](https://www.loopandlearn.org/build-select/) webpage, which has instructions on how to use a script to download Loop Master
+* For earlier iOS versions, you can still use Xcode 12 but should use the Workspace method
 
-### Xcode 12
-
-If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can use the zip download method but it is not advised.  See this link if you really want to stick with that method. [Archived zip download information](step14-zip.md)
 
 ## Manual Workspace Method
 
@@ -91,11 +90,17 @@ In order to manually create the Loop app using the Workspace method, and not use
 
 If you decide to do a manual download, please create a folder for it where there are no embedded spaces in the path name. At the current time, embedded spaces are causing a problem when building.  For Loop master, the problem is easy to solve, but you will get a [build error](build_errors.md#compileassetcatalog-error).
 
-  `git clone --branch=master  --recurse-submodules https://github.com/LoopKit/LoopWorkspace`
+There is a copy button on the right-hand side if you hover your mouse over the text block below. It may be obscured by the long text-string, but it is there.
+
+``` title="Manual Clone command for Loop Master"
+git clone --branch=master  --recurse-submodules https://github.com/LoopKit/LoopWorkspace
+```
 
 Confirm there were no errors in the download.
 
-  `cd LoopWorkspace; xed .`
+``` title="Change directory and automatically open Xcode"
+cd LoopWorkspace; xed .
+```
 
 At this point, you should move to [Build Step 14: Xcode Steps](step14.md#wait-for-xcode-to-finish-indexing).
 
@@ -108,14 +113,14 @@ If you are an advanced user who wants to build the dev branch - this section is 
 
 * Be sure to clone into a directory with no embedded spaces in the path
 
-!!! warning "Advanced Users Only"
+!!! abstract "Advanced Users Only"
 
     **Only build the dev branch if you're a developer/advanced user**
 
     Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch.
 
     - Note, the dev branch requires a minimum of iOS 14 on your device
-    - Once you install the dev branch on a device, you must delete the app to return to master or automatic-bolus, which means all settings will need to be entered and a new pod started
+    - Once you install the dev branch on a device, you must delete the app to return to master, which means all settings will need to be entered and a new pod started
     - The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch
     - [Loop dev Preview](../faqs/dev-menus.md) is found in the FAQs section with some preliminary documentation
 
