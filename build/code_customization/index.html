@@ -36,11 +36,7 @@
     
     
     
-      <link rel="stylesheet" href="../../stylesheets/admonitions.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/styles.css">
+      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
     
     
       
@@ -703,20 +699,6 @@
     <li class="md-nav__item">
       <a href="../step7/" class="md-nav__link">
         Step 7 Skip Step 7
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../step14-zip/" class="md-nav__link">
-        Archived Zip Build
       </a>
     </li>
   
@@ -1867,14 +1849,15 @@
 <p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number.</p>
 <ul>
 <li>Folder: Loop/subfolder1/subfolder2/etc.</li>
-<li>File: filename.swift, line number(s)</li>
-<li><button type="button" onclick="copyEvent('copy-cc-01')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-01">word or phrase to use for search</code></li>
+<li>File: filename.swift, line number(s)
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
+</code></pre></div></li>
 </ul>
 <p>There may be a figure illustrating the change.</p>
 <p>Below the figure, the original, and in some cases, the modified code will be displayed as text.</p>
 <p>To search using the <code>Key_Phrase</code> (see graphic below for clarification):</p>
 <ul>
-<li>Click any where within the words <code>Key_Phrase</code> to load that text into your paste buffer (the phrase to be copied will be highlighted)</li>
+<li>A copy button is available when you hover your mouse in the right-hand side of the block below the title <code>Key_Phrase</code>,  click on it to copy the phrase</li>
 <li>In Xcode, tap the Find menu item and select Find in Workspace</li>
 <li>Paste the text into the find search-box that opens on upper left of Xcode screen and hit enter</li>
 <li>A series of options show up underneath the find search-box</li>
@@ -1891,8 +1874,9 @@
 <p>Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.</p>
 <ul>
 <li>Folder: Loop/View Controllers</li>
-<li>File: BolusViewController.swift, Line 529</li>
-<li><button type="button" onclick="copyEvent('copy-cc-02')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-02">canEvaluatePolicy(.deviceOwnerAuthentication</code></li>
+<li>File: BolusViewController.swift, Line 529
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>canEvaluatePolicy(.deviceOwnerAuthentication
+</code></pre></div></li>
 </ul>
 <p>The screenshot below was taken with Loop v2.0 when the line number was 201; with current Loop, that same code is found at line 529. Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
 <p align="center"><img alt="img/custom-id.png" src="../img/custom-id.png" width="750" /></p>
@@ -1909,8 +1893,9 @@
 <li>Folder: Loop/LoopCore</li>
 <li>File: LoopSettings.swift</li>
 <li>Line: 16 (v2.2.4 master), 41 (v2.2.4 AB), 50 (current)</li>
-<li><button type="button" onclick="copyEvent('copy-cc-03')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-03">defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes</code></li>
 </ul>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
+</code></pre></div>
 <p align="center"><img alt="img/carb_times.png" src="../img/carb_times.png" width="750" /></p>
 <p>For example, if you wanted to make lollipop a 30 minute absorption and pizza a 5 hour absorption, the edit would look like below:</p>
 <p align="center"><img alt="img/carb_times_example.png" src="../img/carb_times_example.png" width="750" /></p>
@@ -1931,7 +1916,6 @@
 <ul>
 <li>Folder: Loop/LoopCore/Insulin</li>
 <li>File: ExponentialInsulinModelPreset.swift</li>
-<li><button type="button" onclick="copyEvent('copy-cc-04')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-04">MARK: - Model generation</code></li>
 <li>Lines:<ul>
 <li>actionDuration (20 to 29)</li>
 <li>peakActivity (31 to 40)</li>
@@ -1939,6 +1923,8 @@
 </ul>
 </li>
 </ul>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>MARK: - Model generation
+</code></pre></div>
 <p align="center"><img alt="img/exponential.png" src="../img/exponential.png" width="750" /></p>
 <h2 id="loop-logo">Loop Logo<a class="headerlink" href="#loop-logo" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
@@ -1967,19 +1953,20 @@
 <ul>
 <li>Folder: Loop/WatchApp Extension/Controllers</li>
 <li>File: AddCarbsInterfaceController.swift, Line: 249</li>
-<li><button type="button" onclick="copyEvent('copy-cc-05')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-05">let rotationsPerIncrement</code></li>
 </ul>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let rotationsPerIncrement
+</code></pre></div>
 <p align="center"><img alt="img/sensitivity2.png" src="../img/sensitivity2.png" width="800" /></p>
 <ul>
 <li>Folder: Loop/WatchApp Extension/Controllers</li>
 <li>File: BolusInterfaceController.swift, Line: 191</li>
-<li><button type="button" onclick="copyEvent('copy-cc-06')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-06">let rotationsPerValue</code></li>
 </ul>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let rotationsPerValue
+</code></pre></div>
 <p align="center"><img alt="img/sensitivity1.png" src="../img/sensitivity1.png" width="800" /></p>
-<p>The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This <code>Key_Phrase</code> returns the two lines in that file where the change is required:</p>
-<ul>
-<li><button type="button" onclick="copyEvent('copy-cc-07')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-07">abs(accumulatedRotation)&nbsp;</code></li>
-</ul>
+<p>The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This <code>Key_Phrase</code> returns 3 lines, the second 2 of which are the ones in that file where the change is required:</p>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>abs(accumulatedRotation)
+</code></pre></div>
 <h2 id="expiration-notification-customization">Expiration Notification Customization<a class="headerlink" href="#expiration-notification-customization" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>An expiration notification feature has been added to Loop. You get a notification when you open the Loop app to alert you that the expiration is approaching. (Not available with version v2.2.4 and earlier.)</p>
 <ul>
@@ -1992,9 +1979,11 @@
 <li>File: ProfileExpirationAlerter.swift</li>
 <li>Line 16: modify how long before expiration you get the FIRST notification</li>
 <li>Line 28: modify how frequently you will be notified</li>
-<li><button type="button" onclick="copyEvent('copy-cc-08')">Key_Phrase</button>&nbsp;&nbsp;<code id="copy-cc-08">expirationAlertWindow: TimeInterval</code></li>
-<li><button type="button" onclick="copyEvent('copy-cc-09')"><em><em>Key_Phrase</em></em></button>&nbsp;&nbsp;<code id="copy-cc-09"> minimumTimeBetweenAlerts: TimeInterval</code></li>
 </ul>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>expirationAlertWindow: TimeInterval
+</code></pre></div>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code> minimumTimeBetweenAlerts: TimeInterval
+</code></pre></div>
 <p align="center"><img alt="Profile expiration notification details" src="../img/expiration-custom.png" width="600" /></p>
 <p>Default code for line 16:
 <div class="highlight"><pre><span></span><code>    static let expirationAlertWindow: TimeInterval = .days(20)
@@ -2029,7 +2018,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>Adjust Percent Bolus for Automatic Dosing Strategy</li>
 <li>Adjust Watch Crown Rotation Required for Bolus Confirmation</li>
 <li>Pods: Increase Log File History Hours</li>
-<li>These Require Workspace Builds (use <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a>)<ul>
+<li>These Require Workspace Builds (which are now standard)<ul>
 <li>Modify Override Sensitivity</li>
 <li>Medtronic: Disable mySentry (Current Loop removes need for this)</li>
 <li>Pods: Add Extra Insulin on Insertion</li>
@@ -2119,8 +2108,6 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
     
     
       <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
-      
-        <script src="../../stylesheets/copy_button.js"></script>
       
     
   </body>

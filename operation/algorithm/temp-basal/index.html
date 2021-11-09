@@ -36,11 +36,7 @@
     
     
     
-      <link rel="stylesheet" href="../../../stylesheets/admonitions.css">
-    
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../../stylesheets/styles.css">
+      <link rel="stylesheet" href="../../../stylesheets/primary-color.css">
     
     
       
@@ -588,20 +584,6 @@
     <li class="md-nav__item">
       <a href="../../../build/step7/" class="md-nav__link">
         Step 7 Skip Step 7
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step14-zip/" class="md-nav__link">
-        Archived Zip Build
       </a>
     </li>
   
@@ -1826,8 +1808,8 @@
 <p>The Loop algorithm takes one of four actions depending upon the eventual blood glucose, predicted glucose, and suspend threshold. Note that all temporary basal rate commands are issued for 30 minutes, however they may be updated (re-issued) every 5 minutes. Said another way, Loop may enact a new temporary basal rate every 5 minutes. But, if communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates. Note: If a user is operating Loop in open-loop mode, the Loop will only recommend basal dosing actions and will not automatically enact those recommendations.</p>
 <h2 id="four-possible-actions">Four Possible Actions<a class="headerlink" href="#four-possible-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop implements one of four possible temporary basal actions: <strong>decrease</strong>, <strong>increase</strong>, <strong>suspend</strong>, or <strong>resume</strong> a scheduled basal rate.</p>
-<div class="admonition danger">
-<p class="admonition-title">Note:</p>
+<div class="admonition info">
+<p class="admonition-title">Automatic Bolus</p>
 <p>If you are using an Automatic-Bolus Dosing Strategy in closed Loop mode and Loop predicts you need an <strong>increase</strong> in insulin; this <strong>increase</strong> is provided as a percentage of the recommended bolus instead of an increased temporary basal. The default percentage is 40%.</p>
 </div>
 <h3 id="decrease-basal-rate">Decrease Basal Rate<a class="headerlink" href="#decrease-basal-rate" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -1850,7 +1832,8 @@
 <p>To determine the corrective temporary basal rate to implement, Loop calculates a “dose” in the same way doses are calculated in both open-loop and traditional insulin pump therapy. It's also the same math many people on multiple-daily injection therapy use. The benefit of Loop (and all other close-loop algorithms) is that it does this math every 5 minutes, and is far less prone to error than humans doing the math. Loop also does its math based on predicting into the future, which traditional pumps and humans, do not always have the time or inclination to do.</p>
 <p>The amount of insulin needed, or dose, is calculated using the desired reduction in blood glucose and the user’s ISF. For the Loop algorithm, the desired reduction in blood glucose is the delta between the eventual blood glucose and the correction target:</p>
 <p><img alt="basal dose equation" src="../img/dose_equation.png" /></p>
-<div class="admonition note">
+<div class="admonition info">
+<p class="admonition-title">Loop Dose Calculation</p>
 <p>A major difference between traditional pump therapy and how the Loop calculates dose is that in pump therapy the current blood glucose is used to estimate the dose, whereas in the Loop algorithm the eventual and minimum blood glucose predictions are also used in determining dosing decisions.</p>
 </div>
 <p>Loop then converts the dose into a basal rate using the Loop’s temporary basal rate duration of 30 minutes:</p>
@@ -1985,8 +1968,6 @@
     
     
       <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
-      
-        <script src="../../../stylesheets/copy_button.js"></script>
       
     
   </body>

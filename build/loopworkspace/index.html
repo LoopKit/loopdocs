@@ -36,11 +36,7 @@
     
     
     
-      <link rel="stylesheet" href="../../stylesheets/admonitions.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/styles.css">
+      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
     
     
       
@@ -744,20 +740,6 @@
     <li class="md-nav__item">
       <a href="../step7/" class="md-nav__link">
         Step 7 Skip Step 7
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../step14-zip/" class="md-nav__link">
-        Archived Zip Build
       </a>
     </li>
   
@@ -1949,7 +1931,7 @@
 <h3 id="what-is-git">What is git?<a class="headerlink" href="#what-is-git" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Git is a system of "distributed version control" that allows remotely (as in not located in same place) collaborating people to work on one project and still track their changes to the same place. For example, if I sent 5 people one document to proof-read at the same time...it is quite possible that the edits I will get back from those 5 people would conflict with each other. Bob may have entirely deleted a sentence while Mary would have added words to that sentence. Git lets these remotely collaborating people deal with "resolving conflict" between versions more easily and merging suggestions (pull requests) into a coordinated space.</p>
 <p>So, in using git, we can do things with "git commands". Like "Hey git...make me an exact copy of that guy's work over there." or "Hey git, I'd like to compare my version of this page with Joe's version of the same page." Or using my old cookbook analogy..."Hey git, I'd like to start a new cookbook called Italian Desserts."</p>
-<p>But yes, git commands take awhile to properly use. And they are not plain english friendly. Therefore, we have emphasized the use of the <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> instead of the manual entry of git commands to your terminal.</p>
+<p>But yes, git commands take awhile to properly use. And they are not plain english friendly. </p>
 <h2 id="what-is-loopworkspace">What is LoopWorkspace?<a class="headerlink" href="#what-is-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is more information in <a href="../../faqs/branch-faqs/#what-are-branches">Branch and Versions FAQs</a> that is not repeated here.</p>
 <p>The important fact for this discussion on LoopWorkspace is that Loop developers own an account in GitHub called <a href="https://github.com/LoopKit">LoopKit</a>.  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.</p>
@@ -2191,8 +2173,6 @@ You can't clone mutliple "LoopWorkspaces" into the exact same home directory (be
     
     
       <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
-      
-        <script src="../../stylesheets/copy_button.js"></script>
       
     
   </body>

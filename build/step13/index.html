@@ -36,11 +36,7 @@
     
     
     
-      <link rel="stylesheet" href="../../stylesheets/admonitions.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/styles.css">
+      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
     
     
       
@@ -576,13 +572,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#xcode-12" class="md-nav__link">
-    Xcode 12
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -689,20 +678,6 @@
     <li class="md-nav__item">
       <a href="../step7/" class="md-nav__link">
         Step 7 Skip Step 7
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../step14-zip/" class="md-nav__link">
-        Archived Zip Build
       </a>
     </li>
   
@@ -1781,13 +1756,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#xcode-12" class="md-nav__link">
-    Xcode 12
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1821,25 +1789,24 @@
                 
                 
                 <h1 id="step-13-download-loop-code">Step 13: Download Loop Code<a class="headerlink" href="#step-13-download-loop-code" title="Anchor link to this Header on this Page">&para;</a></h1>
-<div class="admonition danger">
+<div class="admonition info">
 <p class="admonition-title">Time Estimate</p>
 <ul>
 <li>10 minutes to read this page</li>
 <li>Wait until Step 14 to download Loop code (New Workspace Method)</li>
 </ul>
 </div>
-<div class="admonition info">
+<div class="admonition abstract">
 <p class="admonition-title">Summary</p>
 <ul>
-<li>Open the <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> page in a new tab of your browser</li>
-<li>Read the Build Select page but don't take any action yet<ul>
-<li>That page supports more than just Loop</li>
-<li>You will not actually be doing the copy/paste into the terminal until Step 14</li>
-</ul>
-</li>
+<li>All Loopers: Loop can only be built with the Workspace Build method</li>
+<li>To make it easy, there's a script for you to use</li>
+<li>New Builders: Review this page until told to go to Step 14</li>
+<li>Repeat Builders: There is important information about iOS updates - don't skip that section</li>
+<li>Advanced Users: There is information for you too</li>
 </ul>
 </div>
-<div class="admonition warning">
+<div class="admonition question">
 <p class="admonition-title">FAQs</p>
 <ul>
 <li><strong>When do I need to download new Loop code?</strong> There are three times you need to download new code:<ol>
@@ -1863,37 +1830,38 @@
 <p>If this is your first time, you only need to read the Build Select Script Workspace Method section.</p>
 <p>At the end of that section you'll be directed to Step 14.  You are welcome to read the rest of this page, but you can ignore any comments about old and new build methods or instructions for advanced users.</p>
 <h2 id="build-select-script-workspace-method">Build Select Script Workspace Method<a class="headerlink" href="#build-select-script-workspace-method" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Build Select script:</p>
+<p>The Build Select script is a quick and easy way to build Loop:</p>
 <ul>
 <li>Builds Loop using the Workspace method<ul>
 <li>Workspace build is required as of Xcode 13</li>
+<li>Workspace build works fine with Xcode 12</li>
 </ul>
 </li>
 <li>Supports more than just Loop</li>
 <li>Provided by the Loop and Learn mentors</li>
 </ul>
-<p>Please open this page in a new tab: <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> and read the page, but don't take action (copy/paste into your terminal) at this time.</p>
-<p>Once you have reviewed the script page and are ready to move forward, head on to Step 14 in which you will execute the script steps and <a href="../step14/">Build the Loop App</a>.</p>
+<p>New builders - head to Step 14 in which you will execute the script steps and <a href="../step14/">Build the Loop App</a>.</p>
 <hr />
-<p>If you are are "Repeat Looper" or interested in the dev branch, there is more information on the the rest of this page.</p>
+<p>If you are a "Repeat Looper" or interested in the dev branch, there is more information on the the rest of this page.</p>
+<p>For those "Repeat Loopers" who remember when you had to use a "dev" branch to get features like automatic-bolus, you do not need to do that.  Automatic-bolus Dosing Strategy is included in Loop Master.</p>
 <h2 id="repeat-loopers">Repeat Loopers<a class="headerlink" href="#repeat-loopers" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There is a lot of information embedded throughout the Build Steps about building with the old zip download method - this is being transitioned to the Workspace method.</p>
+<p>You may remember building with the old zip download method. The zip download is no longer supported.</p>
 <ul>
 <li>
-<p>The zip download method had a very fast download, followed by a very long build while Xcode collected more code from the internet to enable you to build the complete app. It is not an option once Xcode 13 is installed.</p>
+<p>The zip download method had a very fast download, followed by a very long build while Xcode collected more code from the internet to enable you to build the complete app. It is not an option now that Loop needs to support Xcode 13, which is required for iOS 15.</p>
 </li>
 <li>
 <p>The new method uses Workspace and works for Xcode 12 as well as Xcode 13. This downloads everything you need up front and builds much faster.</p>
 </li>
 <li>
-<p>You may remember information indicating that Workspace is only for experts - that only refers to people working on the new version of Loop (known as the dev branch).</p>
+<p>You may remember information indicating that Workspace is only for experts - that only refers to people working on the next version of Loop (known as the dev branch).</p>
 </li>
 </ul>
 <h3 id="xcode-13-ios-15-changes">Xcode 13, iOS 15 changes<a class="headerlink" href="#xcode-13-ios-15-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">DO NOT UPDATE your phone to iOS 15 without reading this</p>
 <p>Any Loop app built with Xcode version prior to Xcode 12.5 will immediately fail when the phone is updated to iOS 15. (Any one who last built with Catalina should not install iOS 15 without following "safe steps" below.)</p>
-<p>These instructions, <a href="../../faqs/update-faqs/#how-can-i-confirm-xcode-version-i-used">Xcode version</a>, tell you how to determine what version was used when building the Loop app currently on your phone.</p>
+<p>Follow this link, <a href="../../faqs/update-faqs/#how-can-i-confirm-xcode-version-i-used">Xcode version</a>, for instructions to determine what version was used when building the Loop app currently on your phone.</p>
 <p>Safe steps to keep Loop going if you want to install iOS 15</p>
 <ul>
 <li>update your macOS</li>
@@ -1907,16 +1875,17 @@
 <li>iOS 15 requires Xcode version 13 to build</li>
 <li>You must use the Workspace method to build Loop with Xcode 13</li>
 <li>The old download the zip method will not work once you update your Xcode to version 13</li>
-<li>You can use the <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> webpage, which has instructions on how to use a script to download Loop Master</li>
+<li>For earlier iOS versions, you can still use Xcode 12 but should use the Workspace method</li>
 </ul>
-<h3 id="xcode-12">Xcode 12<a class="headerlink" href="#xcode-12" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can use the zip download method but it is not advised.  See this link if you really want to stick with that method. <a href="../step14-zip/">Archived zip download information</a></p>
 <h2 id="manual-workspace-method">Manual Workspace Method<a class="headerlink" href="#manual-workspace-method" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>In order to manually create the Loop app using the Workspace method, and not use the script, you need to execute the commands listed below on your computer. You are welcome to do this and put the downloaded code where you prefer. The advantage of using the script is it provides options to do steps that are required when building Loop a second time, creates a date-time stamped folder for the download, clones the code into that folder, automatically opens Xcode in the correct folder and opens the graphic showing you the steps required to finish building the code.</p>
 <p>If you decide to do a manual download, please create a folder for it where there are no embedded spaces in the path name. At the current time, embedded spaces are causing a problem when building.  For Loop master, the problem is easy to solve, but you will get a <a href="../build_errors/#compileassetcatalog-error">build error</a>.</p>
-<p><code>git clone --branch=master  --recurse-submodules https://github.com/LoopKit/LoopWorkspace</code></p>
+<p>There is a copy button on the right-hand side if you hover your mouse over the text block below. It may be obscured by the long text-string, but it is there.</p>
+<div class="highlight"><span class="filename">Manual Clone command for Loop Master</span><pre><span></span><code>git clone --branch=master  --recurse-submodules https://github.com/LoopKit/LoopWorkspace
+</code></pre></div>
 <p>Confirm there were no errors in the download.</p>
-<p><code>cd LoopWorkspace; xed .</code></p>
+<div class="highlight"><span class="filename">Change directory and automatically open Xcode</span><pre><span></span><code>cd LoopWorkspace; xed .
+</code></pre></div>
 <p>At this point, you should move to <a href="../step14/#wait-for-xcode-to-finish-indexing">Build Step 14: Xcode Steps</a>.</p>
 <h2 id="advanced-users-only">Advanced Users Only<a class="headerlink" href="#advanced-users-only" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you are an advanced user who wants to build the dev branch - this section is for you.</p>
@@ -1924,13 +1893,13 @@
 <ul>
 <li>Be sure to clone into a directory with no embedded spaces in the path</li>
 </ul>
-<div class="admonition warning">
+<div class="admonition abstract">
 <p class="admonition-title">Advanced Users Only</p>
 <p><strong>Only build the dev branch if you're a developer/advanced user</strong></p>
 <p>Please read <a href="../../faqs/branch-faqs/#whats-going-on-in-the-dev-branch">What's going on in the dev branch?</a> before deciding to test the dev branch.</p>
 <ul>
 <li>Note, the dev branch requires a minimum of iOS 14 on your device</li>
-<li>Once you install the dev branch on a device, you must delete the app to return to master or automatic-bolus, which means all settings will need to be entered and a new pod started</li>
+<li>Once you install the dev branch on a device, you must delete the app to return to master, which means all settings will need to be entered and a new pod started</li>
 <li>The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch</li>
 <li><a href="../../faqs/dev-menus/">Loop dev Preview</a> is found in the FAQs section with some preliminary documentation</li>
 </ul>
@@ -2035,8 +2004,6 @@
     
     
       <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
-      
-        <script src="../../stylesheets/copy_button.js"></script>
       
     
   </body>

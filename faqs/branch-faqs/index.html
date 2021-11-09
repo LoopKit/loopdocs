@@ -36,11 +36,7 @@
     
     
     
-      <link rel="stylesheet" href="../../stylesheets/admonitions.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/styles.css">
+      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
     
     
       
@@ -588,20 +584,6 @@
     <li class="md-nav__item">
       <a href="../../build/step7/" class="md-nav__link">
         Step 7 Skip Step 7
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step14-zip/" class="md-nav__link">
-        Archived Zip Build
       </a>
     </li>
   
@@ -2386,7 +2368,7 @@
 </div>
 <h3 id="loop-v226">Loop v2.2.6<a class="headerlink" href="#loop-v226" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Several users reported issues with IOB accounting in Loop v2.2.5, where IOB was being under-reported, which could cause Loop to continue recommending increases in insulin delivery.</p>
-<p>A fix has been made and is available as Loop v2.2.6. This is now the new master, so you build it using the standard zip download from <a href="../../build/step13/#download-loop">Build Step 13: Download Loop</a> or using the <a href="https://www.loopandlearn.org/build-select/">Build-Select Script</a> and choosing Build Loop and Master Branch.</p>
+<p>A fix has been made and is available as Loop v2.2.6. This is now the new master, so you build it using the standard updating procedure <a href="../../build/updating/">Build Updating</a>.</p>
 <p>This is a serious issue, so updating to this release is strongly recommended for anyone currently running v2.2.5. If you tap on Loop Settings and look at the top, and see LOOP V2.2.5, then rebuild ASAP. The time window when you would have built v2.2.5 is from Aug 22 through Sep 6, 2021.</p>
 <p>The issue appears to be the result of a failure to write to Apple HealthKit, which may occur if the Health app on your phone is having problems, or if you have turned off Loop's ability to write Insulin data to HealthKit. The fix involves reverting a change made in v2.2.5.  This change was an attempt to reduce overlaps of Reservoir and Pump Event reconciliation which intermittently over estimate insulin delivery. Instead, that issue will be fixed in the next major release of Loop.</p>
 <p>Thanks to all who helped with reporting, digging, and testing this quickly. It's great to have such a strong community of people eager to help.</p>
@@ -2517,7 +2499,7 @@
 </ul>
 <h3 id="loop-v20">Loop v2.0<a class="headerlink" href="#loop-v20" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Released December 31, 2019.</p>
-<div class="admonition danger">
+<div class="admonition abstract">
 <p class="admonition-title">For Reference Only</p>
 <p>Enough time has passed that this version should no longer be on anyone's phones (the one-year expiration time should take care of that).</p>
 <p>There is a lot more detail provided in the Loop v2.0 section because it constituted a significant change to parts of Loop from prior releases. This section and the Omnipod-Testing branch sections are left here for historical interest.</p>
@@ -2546,7 +2528,7 @@
 <h3 id="user-interface-improvements">User interface improvements<a class="headerlink" href="#user-interface-improvements" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You'll notice dashed lines in the HUD for the CGM value if the CGM data goes older than 15 min (that way you don't accidentally miss the fact that your CGM has failed). The API Secret is hidden after it is saved in Loop Settings now, and if you accidentally leave a trailing slash on the Nightscout URL...Loop will ignore it.  The bolus progress row is new to master branch now, although many of you have been accustomed to that visual in dev branch for awhile now. The "Scenarios" screen that would sometimes appear when a phone was shaken is also disabled by default now. The Issue Report has more information about your Loop app's build date and version so that you can more easily track its build history.</p>
 <h3 id="common-build-error-squashed">Common build error squashed<a class="headerlink" href="#common-build-error-squashed" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  Ahhhhh! I love it!!!</p>
+<p>One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  (Unless you are building dev branch, currently v2.3.0, - then no spaces allowed.)</p>
 <h3 id="nightscout-profile-uploading">Nightscout profile uploading<a class="headerlink" href="#nightscout-profile-uploading" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Loop will upload your basal schedule, ISFs, carb ratios, and override presets from Loop settings to your Nightscout profile. If you ever lose your phone and need to setup Loop brand new...your settings will be easy to find in Nightscout now.</p>
 <h3 id="new-languages">New languages<a class="headerlink" href="#new-languages" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2593,7 +2575,7 @@
 <p>But then...the chefs/developers go on a trip. They are inspired by new cuisine and want to add new recipes to the old cookbook. (Things like omnipod support and overrides are new "recipes" that were developed since the last master release, for example.) But, the process for developing a recipe is arduous. Lots of trial and error involved. Lots of tweaking ingredients (code). The editors try out the new recipes and offer feedback (similar to the <a href="https://github.com/LoopKit/Loop/issues">Issues List in GitHub</a>). While the recipes are being developed, they have a version of the old cookbook that gets marked up...edited in pencil a lot. Scribbles and notes in the side. Revisions happen frequently, because that's what testing new recipes is all about. These marked-up versions of the cookbook are called "dev" branch. Short for "development" branch. Like the name sounds...this is where new developments are happening, new recipes and tweaks.</p>
 <p>After much testing and tweaking, eventually the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in Loop, Loop's master branch is updated with the new features coming from dev (aka, "dev branch is merged into master branch"). When that happens, master branch gets another "release" version. For that moment, dev and master are exactly the same. They stay the same until the Loop developers start working on the next batch of improvements, could be the next hour even or days later, but the process begins again. The developers will start editing the code again and dropping those edits in dev branch for further development.</p>
 <h2 id="whats-going-on-in-the-dev-branch">What's going on in the dev branch?<a class="headerlink" href="#whats-going-on-in-the-dev-branch" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The dev branch is where the next version of Loop is being developed and tested.</p>
+<p>The dev branch, currently v2.3.0, is where the next version of Loop is being developed and tested.</p>
 <p>If you choose to come into a dev branch build, you need to be aware that dev may update code frequently and unannounced in the traditional sense that most users in Looped group or Instagram would see. Developers are not helped by people being in a dev branch if those users are mistakenly thinking of it as a stable master branch with lots of detailed docs to go with it. People should only use a dev branch build if they EDUCATE themselves on the expectations and how to properly manage dev information and updates. People using dev branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.</p>
 <p>If you choose to use a dev build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy Loopdocs page updated regularly with current "dev updates"...that's just not the way dev branch works.</p>
 <h3 id="subscribe-to-the-zulipchat-channels">Subscribe to the Zulipchat channels<a class="headerlink" href="#subscribe-to-the-zulipchat-channels" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2711,8 +2693,6 @@
     
     
       <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
-      
-        <script src="../../stylesheets/copy_button.js"></script>
       
     
   </body>

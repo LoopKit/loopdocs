@@ -36,11 +36,7 @@
     
     
     
-      <link rel="stylesheet" href="../../stylesheets/admonitions.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/styles.css">
+      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
     
     
       
@@ -579,6 +575,33 @@
     Download and Prepare to Build
   </a>
   
+    <nav class="md-nav" aria-label="Download and Prepare to Build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-step-to-download" class="md-nav__link">
+    Single Step to Download
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step" class="md-nav__link">
+    Step-by-Step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review-download-for-errors" class="md-nav__link">
+    Review Download for Errors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -764,20 +787,6 @@
     <li class="md-nav__item">
       <a href="../step7/" class="md-nav__link">
         Step 7 Skip Step 7
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../step14-zip/" class="md-nav__link">
-        Archived Zip Build
       </a>
     </li>
   
@@ -1845,6 +1854,33 @@
     Download and Prepare to Build
   </a>
   
+    <nav class="md-nav" aria-label="Download and Prepare to Build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-step-to-download" class="md-nav__link">
+    Single Step to Download
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step" class="md-nav__link">
+    Step-by-Step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review-download-for-errors" class="md-nav__link">
+    Review Download for Errors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1971,20 +2007,21 @@
                 
                 
                 <h1 id="step-14-build-loop-app">Step 14: Build Loop App<a class="headerlink" href="#step-14-build-loop-app" title="Anchor link to this Header on this Page">&para;</a></h1>
-<div class="admonition danger">
+<div class="admonition info">
 <p class="admonition-title">Time Estimate</p>
 <ul>
 <li>60-80 minutes for first time builders</li>
 <li>10-15 minutes for a repeat builders</li>
 </ul>
 </div>
-<div class="admonition info">
+<div class="admonition abstract">
 <p class="admonition-title">Summary</p>
 <ul>
-<li>You should have read the Build-Select Instructions in Step 13</li>
-<li><strong>First Time:</strong> steps are needed for first time with this phone or this computer</li>
-<li>It is now time to execute those Instructions<ul>
-<li><a href="https://www.loopandlearn.org/build-select/#use-script">Run Build Select Script</a></li>
+<li>First Time Builders - if you have not completed <a href="../overview/">all the build steps</a>, do them now and then return</li>
+<li>Repeat Builders - please start with the <a href="../updating/">Updating page</a>, then return</li>
+<li>Some steps are needed only for <strong>First Time</strong> with this phone or this computer</li>
+<li>It is now time to build your app<ul>
+<li>Open terminal and copy/paste commands into it</li>
 <li>Connect the phone to the computer</li>
 <li><strong>First Time:</strong> Trust the computer</li>
 <li>Select Loop (Workspace) and your phone at top of Xcode</li>
@@ -2004,9 +2041,10 @@
 </li>
 </ul>
 </div>
-<div class="admonition warning">
+<div class="admonition question">
 <p class="admonition-title">FAQs</p>
 <ul>
+<li><strong>"The download seems to take a long time; is that normal?"</strong> Yes. The download of the Loop submodule takes the longest. Having a good internet connection is important. (The word submodule gets discussed later.)</li>
 <li><strong>"The build seems to take a long time; is that normal?"</strong> Yes. The good news is the Workspace build is much faster than the old method.  It is not unusual for one of the build steps to take <em>much</em> longer than all the others.<ul>
 <li>The build process always ends with either a "Build Succeeded" or "Build Failed" message; so just wait it out until you see one of those displayed.</li>
 <li>If you are away from you computer when the build succeeds, you might miss the "Build Succeeded" message, but you will see "Running Loop on &lt;your phone name>" at the very top of the Xcode window - and the Loop app will be open on your phone.</li>
@@ -2018,27 +2056,58 @@
 </ul>
 </div>
 <h2 id="execute-the-build-select-script">Execute the Build Select Script<a class="headerlink" href="#execute-the-build-select-script" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>At this point, you should have reviewed the entire <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a> page - if not, do it now.</p>
+<p>There is a page on the Loop and Learn site for using the <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a>.  If you prefer, you can go to that site and follow those (somewhat briefer) instructions. The use of the build-select script has been incorporated into LoopDocs now, so you don't need to jump between sites - it is your choice.</p>
+<p>There are 2 options for script use in LoopDocs:</p>
+<ol>
+<li>Follow step-by-step instructions (suggested for new builders)</li>
+<li>Follow the single-step instructions (good for repeat builders)</li>
+</ol>
+<p>Both options begin by opening a terminal window on your Mac.</p>
 <h3 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step7/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal.</p>
 <h2 id="download-and-prepare-to-build">Download and Prepare to Build<a class="headerlink" href="#download-and-prepare-to-build" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You have your choice of using the instructions on the <a href="https://www.loopandlearn.org/build-select/#use-script">Build-Select page</a> or click on the word "Copy" below and proceed using this page (which has more detailed information):</p>
-<p><button type="button" onclick="copyEvent('copy-step14-01')">Copy</button><br><code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"<br><br></code></p>
-<p>Then paste the text into the terminal window; it should look like the graphic below.</p>
+<p>There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.</p>
+<p>If you want to do each step and watch results before doing the next step, skip to <a href="#step-by-step">Step-by-Step</a>. If you want the whole process to be done with one copy/paste, keep going.</p>
+<div class="admonition success">
+<p class="admonition-title">Video using Build-Select</p>
+<p>If you prefer to watch a video of building with this step-by-step method, here's the link to the <a href="https://youtu.be/gddhljzsNkM">YouTube video</a> prepared by the Loop and Learn team.</p>
+</div>
+<h3 id="single-step-to-download">Single Step to Download<a class="headerlink" href="#single-step-to-download" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This starts the script, answers the questions, downloads the code and opens both Xcode and a browser showing the graphic also found in the <a href="#wait-for-xcode-to-finish-indexing">Wait for Xcode to Finish Indexing</a> section. If you have never used this script before, please review the <a href="#step-by-step">Step-by-Step</a> section including the <code>Review Download for Errors</code> section and then return (you can use your browser back button).</p>
+<p>If you do not have Xcode and Xcode command line tools installed - you will get errors. They are shown in the <a href="#step-by-step">Step-by-Step</a> section.</p>
+<div class="highlight"><span class="filename">Download Loop Master and Open Xcode</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
+1
+1
+1
+1
+#
+</code></pre></div>
+<p>After you paste this block of text into the terminal window; all the output windows shown in the <a href="#step-by-step">Step-by-Step</a> section should appear in order without need to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).</p>
+<p>The <code>#</code> symbol is simply there so you do not need to hit enter after the final <code>1</code> in this buffer. There will be a <code>#</code> showing in the terminal window when done.  You can either hit return or backspace to clear it.</p>
+<p>For those who use FreeAPS (a fork of Loop), this block is here for your convenience. All others, just skip this.</p>
+<div class="highlight"><span class="filename">Download FreeAPS and Open Xcode</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
+1
+1
+2
+1
+#
+</code></pre></div>
+<h3 id="step-by-step">Step-by-Step<a class="headerlink" href="#step-by-step" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you prefer to execute each line (in the code block above) one at a time, start with the single line, copy and paste into the terminal and hit return.</p>
+<div class="highlight"><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
+</code></pre></div>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
 <p>You must type 1 and hit return in the terminal window to agree that you understand the warning.</p>
 <p>Next you will select the Build Loop option by typing 1 and return.</p>
 <p align="center"><img alt="choose to build Loop" src="../img/build-select-05.png" width="750" /></p>
 <p>Next you are asked which version of Loop you would like to build. Type 1 and hit return to build the Master Branch.</p>
 <p align="center"><img alt="choose which Loop to build" src="../img/build-select-06.png" width="750" /></p>
-<div class="admonition note">
+<div class="admonition warning">
+<p class="admonition-title">If you see errors like these . . .</p>
 <ul>
-<li>If you see an error similar to one of these in the terminal<ul>
-<li>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</li>
-<li>xcode-select: Failed to locate 'git', requesting installation of command line developer tools</li>
-<li>xcode-select: error: tool 'xed' requires Xcode</li>
-</ul>
-</li>
+<li><code>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</code></li>
+<li><code>xcode-select: Failed to locate 'git', requesting installation of command line developer tools</code></li>
+<li><code>xcode-select: error: tool 'xed' requires Xcode</code></li>
 <li>You missed one of these steps:<ul>
 <li><a href="../step8/">Build Step 8: Install Xcode</a></li>
 <li><a href="../step9/">Build Step 9: Xcode command line tools</a></li>
@@ -2051,6 +2120,7 @@
 <p>The final submodule cloning is shown along with the summary of all the submodule paths in the next graphic.</p>
 <p align="center"><img alt="the end of LoopWorkspace download" src="../img/build-select-08.png" width="750" /></p>
 <p>If any errors are shown in your terminal window, you need to read the error and type 2, return to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite <a href="../..#stay-in-the-loop">Loop Social Media</a> site.</p>
+<h3 id="review-download-for-errors">Review Download for Errors<a class="headerlink" href="#review-download-for-errors" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Assuming there are no errors, then type 1, return to Continue.</p>
 <ul>
 <li>Xcode will open automatically</li>
@@ -2064,7 +2134,7 @@
 <p>You can do all the instructions (except the build while waiting for indexing.) There are some additional details about each step in the list below, if you need them, indicated by links.</p>
 <ol>
 <li>At the very top of all the folders and files listed on the left side, click on the blue icon next to the word "Loop". You might need to click a second time to highlight the Loop folder. This will populate the middle part of the Xcode window.</li>
-<li><a href="#connect-your-iphone-to-computer">Plug in your phone</a> - make sure it is unlocked.  If this is the first time for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".<ul>
+<li><a href="#connect-your-iphone-to-computer">Plug in your phone</a> - make sure it is unlocked.  If this is the <strong>First Time</strong> for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".<ul>
 <li>Select <strong>Loop (Workspace)</strong> from the dropdown at the upper left<ul>
 <li>Examine the Step 2 Detail in the graphic above</li>
 <li>The selection when Xcode opens is Loop</li>
@@ -2105,14 +2175,14 @@
 <p><em>The graphics in this section have not been updated to show "Loop (Workspace)".</em></p>
 <p>Make sure your phone is unlocked.</p>
 <p>Connect your iPhone via cable to the computer, select your iPhone from the very top of the drop-down list.  Your <strong>iPhone’s personal name</strong> should be at the top of the list. Don't accidentally select the generic iOS simulators listed below your iPhone's name.  </p>
-<div class="admonition info">
+<div class="admonition abstract">
 <p class="admonition-title">Helpful Tips</p>
 <ul>
 <li>If this is the first time your iPhone has been plugged into this computer, you will need to open the iPhone and select "Trust this Computer" before your device will be useable in the menu selection.</li>
 <li>If this is the first time your watch has been paired to the iPhone, you will need to select "Trust this Computer" on your watch.</li>
 </ul>
 </div>
-<div class="admonition danger">
+<div class="admonition warning">
 <p class="admonition-title">Most Common Mistake</p>
 <ul>
 <li>The most common mistake in this step is:<ul>
@@ -2127,7 +2197,7 @@
 <p align="center"><img alt="img/your_device.png" src="../img/your_device.png" width="650" /></p>
 <h3 id="free-account">Free Account<a class="headerlink" href="#free-account" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><em>The graphics in this section have not been updated to show "Loop (Workspace)".</em></p>
-<div class="admonition danger">
+<div class="admonition abstract">
 <p class="admonition-title">Free Developer Account Users: READ ME</p>
 <p>If you are using a free developer account, you will need to do an extra step before you can successfully sign the targets. As a free developer, you are restricted from building apps that have Siri or push notification capabilities built-in. Loop has both of these capabilities, so you will need to disable them before signing and building your app.</p>
 <p>The push notification capability is used for setting remote overrides; disabling it will not affect other notifications on the Loop phone, e.g., "Loop Failure", "Pump Reservoir Low", etc. Click on the small x next to the Siri and push notification lines located at the bottom of the Signing &amp; Capabilities box. You need to do this in both the Loop and WatchApp Extension targets.</p>
@@ -2147,7 +2217,7 @@
 <p align="center"><img alt="img/register_device.png" src="../img/register_device.png" width="750" /></p>
 <p>A successfully signed target will have a provisioning profile and signing certificate similar to the screenshot below.  Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The four targets that must be signed prior to building the Loop app are Loop, Loop Status Extension, Watch App, and WatchApp Extension.</p>
 <p align="center"><img alt="Xcode window showing the four targets that must be signed" src="../img/success.png" width="750" /></p>
-<div class="admonition warning">
+<div class="admonition abstract">
 <p class="admonition-title">Advanced Users Only</p>
 <p>There are more targets which must be signed to build the dev branch - should be obvious in the Xcode window.</p>
 <p>If you read the hint in <a href="../step13/#advanced-users-only">Step 13</a> and edited the LoopConfigOverride.xcconfig, your targets are already signed.</p>
@@ -2168,7 +2238,7 @@
 <li>Has Xcode finished indexing?</li>
 <li>Is your iPhone unlocked and plugged into the computer?</li>
 <li>Have you signed the four targets?</li>
-<li>Have you selected Loop(Workspace)?</li>
+<li>Have you selected Loop (Workspace)?</li>
 <li>Have you selected your phone and not a simulator?</li>
 <li>Are you done with any customizations?</li>
 <li>Has your Apple watch been paired and updated?</li>
@@ -2177,15 +2247,13 @@
 <p><em>The graphics in this section have not been updated to show "Loop (Workspace)".</em></p>
 <div class="admonition info">
 <p class="admonition-title">Helpful Tips</p>
-<ul>
-<li>The final step of a successful build is for Xcode to copy the completed build to your iPhone; if your phone is locked, Xcode pops up a message letting you know.  Unlock your phone to continue.</li>
-</ul>
+<p>The final step of a successful build is for Xcode to copy the completed build to your iPhone; if your phone is locked, Xcode pops up a message letting you know.  Unlock your phone to continue.</p>
 </div>
 <p align="center"><img alt="img/build_button.png" src="../img/build_button.png" width="750" /></p>
 <p>You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take 5-30 minutes, depending on the speed of the computer.  <strong>Just be patient.</strong>  The progress will get stay on one step/task for a very long time, and then the others will fly by. Not every step is equal in duration. Do not give up on the build.</p>
-<p><strong>Xcode will ALWAYS tell you eventually that the build either succeeded or failed via a short (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Build Failed" (failure) message where the step progress was previously counting down.</strong></p>
+<p><strong>Xcode will ALWAYS tell you eventually that the build either succeeded or failed via a short (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Unlock Phone to Continue" or "Build Failed" (failure) message where the step progress was previously counting down.</strong></p>
 <h3 id="codesign-keychain-access">Codesign / Keychain Access<a class="headerlink" href="#codesign-keychain-access" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition info">
+<div class="admonition abstract">
 <p class="admonition-title">First Time Builder or First Time on this Computer</p>
 <p>Sometime during your first build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.</p>
 <p>Enter the same password you use to log in to the mac, select always allow and then do it again next time you are asked - once for each target you just signed above.</p>
@@ -2193,21 +2261,22 @@
 <p>It is normal for this prompt to come up four times in a row even after you enter the correct password. In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel. <strong>Don't press deny.</strong> Keep entering your computer password and pressing the "Always Allow" button as many times as it takes (four times to be exact; one for each target in Xcode). After four times of successful password entry, the build will continue.</p>
 </div>
 <h2 id="build-finished">Build Finished<a class="headerlink" href="#build-finished" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition info">
+<div class="admonition abstract">
 <p class="admonition-title">First Time Building on a New Device?</p>
 <p>If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like the one shown below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before the Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings-&gt;General-&gt;Device Management (or profiles, Profiles &amp; Device Management on newer iOS) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to <a href="../build_errors/#device-management-could-not-launch-loop">this Build Error section</a> to find the solution.</p>
 <p align="center"><img alt="img/trust_device.jpg" src="../img/trust_device.jpg" width="750" /></p>
 </div>
 <h2 id="build-succeeded">Build Succeeded<a class="headerlink" href="#build-succeeded" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition danger">
-<p>Congrats! If the build is successful, you'll see the message "Running Loop..." across the top of the Xcode window. Pick up your phone and look at it.</p>
+<div class="admonition success">
+<p class="admonition-title">Congratulations</p>
+<p>If the build is successful, you'll see the message "Running Loop..." across the top of the Xcode window. Pick up your phone and look at it.</p>
 <p>You can unplug your phone from the computer now. You will get an Xcode message window that says "Lost connection to the debugger on &lt;your phone name>".  Just click OK.</p>
 <p>Your brand new Loop app will automatically open a screen asking you to allow Loop to send you notifications. The Health app permissions screen will be visible in the background, but you must answer the Notification request first. Click <code>Allow</code> to enable Loop to send you notifications.</p>
 <p>Now the Health permissions screen is active. Click on the <code>Turn All Categories On</code> line and then <strong>immediately turn OFF the permission to read Carbohydrates</strong>. The end result is that Health should have permission to read and write Blood Glucose and Insulin Delivery; permission to write Carbohydrates (<a href="../health/#loop-permissions">NOT read carbs</a>); and permission to read Sleep Data. When the permissions are set correctly, i.e., match the image below, click <code>Allow</code> in the upper right corner.</p>
 <p align="center"><img alt="img/health-start.JPEG" src="../img/health-start.svg" width="450" /></p>
 <p>Next, you will use the <a href="../../operation/overview/">Set up App</a> section of this website to keep proceeding safely.</p>
 </div>
-<div class="admonition warning">
+<div class="admonition question">
 <p class="admonition-title">FAQ: But what about those yellow alerts that remain in Xcode? Should I worry about them?</p>
 <p>If you see yellow alerts after your build is done...those are not an issue. Whether your build succeeded or failed...the yellow warnings play no role in either outcome. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.</p>
 <p align="center"><img alt="img/yellow-warnings.png" src="../img/yellow-warnings.png" width="750" /></p>
@@ -2215,10 +2284,17 @@
 <h2 id="build-failed">Build Failed<a class="headerlink" href="#build-failed" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Breaking News for Xcode 13</p>
-<p>There is a new error for Xcode 13, "WatchApp Extension.entitlements" that happens if you don't wait for indexing to complete. If you get this, follow this link: <a href="../build_errors/#xcode-13-indexing-not-finished-watchapp-extension-entitlements">WatchApp Extension Solution</a></p>
+<p>There is a new error for Xcode 13, "WatchApp Extension.entitlements" that happens if you don't wait for indexing to complete - and often still happens even if you do wait. If you get this, follow this link: <a href="../build_errors/#xcode-13-indexing-not-finished-watchapp-extension-entitlements">WatchApp Extension Solution</a></p>
 </div>
 <p>If you get any other message that your build failed and see <strong>RED ERROR</strong> messages, go to the <a href="../build_errors/">Build Errors</a> page to find the steps to fix your build error. Most build errors are covered on that page along with instructions on how to fix them and how to ask for help.</p>
-<p>Once you've resolved the issue and start the build process again, Xcode will continue to show a red circle on the top line from the previous failure.  Don't worry about it.  As long as the steps of the build are showing across the top line, Xcode is still working on the build.  When the build succeeds, the red circle will disappear.</p>
+<p>Once you've resolved the issue and start the build process again, Xcode will continue to show a red circle on the top line from the previous failure.  If you don't like seeing that, clean the build folder to clear the error.  Otherwise, as long as the steps of the build are showing across the top line, Xcode is still working on the build.  When the build succeeds, the red circle will disappear.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Clean Build Folder</p>
+<ul>
+<li>In Xcode menu, select Product, then Clean Build Folder</li>
+<li>Wait for cleaning to complete: you'll see a "Clean Finished" message</li>
+</ul>
+</div>
 <p align="center"><img alt="img/general-error.jpg" src="../img/general-error.jpg" width="750" /></p>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If your build failed, you need to proceed to the <a href="../build_errors/">Build Errors</a> page to find the solution. Please go there first to find the help you need.</p>
@@ -2228,7 +2304,7 @@
 <p>The next step is the begin the <a href="../../operation/overview/">Set up App</a> process.</p>
 <p><img alt="alt" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" /></p>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition danger">
+<div class="admonition info">
 <p class="admonition-title">Add a Calendar Reminder</p>
 <ul>
 <li>It is good practice to add a reminder to your calendar when the app will expire (7 days or 1 year).</li>
@@ -2320,8 +2396,6 @@
     
     
       <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
-      
-        <script src="../../stylesheets/copy_button.js"></script>
       
     
   </body>

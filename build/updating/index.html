@@ -36,11 +36,7 @@
     
     
     
-      <link rel="stylesheet" href="../../stylesheets/admonitions.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/styles.css">
+      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
     
     
       
@@ -784,20 +780,6 @@
     <li class="md-nav__item">
       <a href="../step7/" class="md-nav__link">
         Step 7 Skip Step 7
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../step14-zip/" class="md-nav__link">
-        Archived Zip Build
       </a>
     </li>
   
@@ -2011,14 +1993,14 @@
                 
                 
                 <h1 id="updating-loop">Updating Loop<a class="headerlink" href="#updating-loop" title="Anchor link to this Header on this Page">&para;</a></h1>
-<div class="admonition green">
+<div class="admonition info">
 <p class="admonition-title">Time Estimate</p>
 <ul>
 <li>25 minutes, if already have updates done</li>
 <li>40-90 minutes, if need to install Apple update(s)</li>
 </ul>
 </div>
-<div class="admonition info">
+<div class="admonition abstract">
 <p class="admonition-title">Summary</p>
 <ul>
 <li>Step 1: Install macOS and Xcode updates based on your phone iOS</li>
@@ -2030,7 +2012,7 @@
 </li>
 </ul>
 </div>
-<div class="admonition faqs">
+<div class="admonition question">
 <p class="admonition-title">FAQs</p>
 <ul>
 <li><strong>"What is an update?"</strong> Anytime you want to change versions, add or change a customization, follow the instructions on this page.</li>
@@ -2042,7 +2024,8 @@
 </div>
 <h2 id="when-to-update-loop">When to Update Loop<a class="headerlink" href="#when-to-update-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Under ordinary circumstances, you do not <em>have to</em> update your Loop app until it expires (1 year for a paid account). However, we encourage regular updates when a new version of iOS, or of Loop, is released because they often contain bug fixes or improvements which may increase operational stability.</p>
-<div class="admonition danger">
+<div class="admonition abstract">
+<p class="admonition-title">Best Practice</p>
 <p>It is good practice to first check if your computer (macOS or Xcode) will require an update to support building Loop to your phone BEFORE applying an iOS update to your Looping phone. This <a href="https://loopandlearn.org/version-updates">page</a> is a good reference to check for each iOS version to provide an all clear.</p>
 <p>Follow these "safe Looping" steps:</p>
 <ol>
@@ -2059,7 +2042,7 @@
 <div class="admonition warning">
 <p class="admonition-title">iOS 15 Warning</p>
 <p>Any Loop app built with Xcode version prior to Xcode 12.5 will immediately fail when the phone is updated to iOS 15. If you last built Loop with Catalina do not install iOS 15.</p>
-<p>These instructions, <a href="../../faqs/update-faqs/#how-can-i-confirm-xcode-version-i-used">Xcode version</a>, tell you how to determine what version was used when building the Loop app currently on running on your phone.</p>
+<p>Follow this link, <a href="../../faqs/update-faqs/#how-can-i-confirm-xcode-version-i-used">Xcode version</a>, for instructions to determine what version was used when building the Loop app currently on your phone.</p>
 </div>
 <h2 id="step-1-install-macos-and-xcode-updates">Step 1: Install macOS and Xcode updates<a class="headerlink" href="#step-1-install-macos-and-xcode-updates" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="verify-update-macos">Verify / Update macOS<a class="headerlink" href="#verify-update-macos" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2075,6 +2058,7 @@
 <p>If you see that you need to update (and you probably do), then keep following instruction on that page and the next one (Build Step 9) and then return to this page.</p>
 <p>If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of <a href="#direct-download-of-xcode">Direct Download of Xcode</a>. Note that once you have used direct download, Xcode will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.</p>
 <div class="admonition warning">
+<p class="admonition-title">Missing Xcode or Command Line Tools</p>
 <p>If you fail to have <a href="../step8/">Xcode</a> or <a href="../step9/">Xcode Command Line Tools</a> installed, you will get one of these error when you attempt to run the build-select script (or something similar):</p>
 <ul>
 <li>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</li>
@@ -2084,7 +2068,7 @@
 <li>Scripting Bridge could not launch application . . .</li>
 </ul>
 </div>
-<div class="admonition info">
+<div class="admonition abstract">
 <p class="admonition-title">Follow Build Step 9 after updating Xcode<p>Make sure to restart your computer after updating Xcode and follow the instructions in Build Step 9. There's a known issue that happens often enough to be frustrating if you skip those steps. Either a build error about missing simulators or a "device not connected" (even when phone is connected). It's not always required...but this is a good easy ounce of problem prevention.</p>
 </p>
 </div>
@@ -2098,14 +2082,24 @@
 <p><strong>Steps 4a and 4b</strong> are completed with this new method.</p>
 </div>
 <p>In order to ensure a full year of use for your Loop app, you need to delete any existing provisioning profile(s) from your computer. If you want to know more information before executing this step - or if you want to do it manually, read the <a href="#background-information">Background Information</a>.</p>
-<p>The easiest way to delete the old provisioning profiles and clean up derived data uses the same build-select script that you will use for building. If you are not familiar with the build-select methods, please read <a href="../step13/">Build Step 13</a>.</p>
+<p>The easiest way to delete the old provisioning profiles and clean up derived data uses the same build-select script that you will use for building.</p>
 <h3 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step7/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal.</p>
 <p>If you happen to have Xcode open, go on and quit out of Xcode now.</p>
 <h3 id="load-the-paste-buffer">Load the Paste Buffer<a class="headerlink" href="#load-the-paste-buffer" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Click on the word "Copy" below to copy this line-of-code:</p>
-<p><button type="button" onclick="copyEvent('copy-updating-01')">Copy</button><br><code id="copy-updating-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"<br><br></code></p>
-<p>Then paste the text into the terminal window; it should look like the graphic below.</p>
+<p>There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.</p>
+<p>This starts the script, answers the questions to select <code>Utilities</code> and <code>Clean Profiles and Derived Data</code>. The expected responses are shown in the graphics below.  As long as there are no errors, you are now ready to proceed to <a href="../step14/#download-and-prepare-to-build">Download and Build Loop Code</a></p>
+<ul>
+<li>If you do not have Xcode and Xcode command line tools installed - you will get errors.</li>
+<li>If you have Xcode open, you may get errors.</li>
+</ul>
+<div class="highlight"><span class="filename">Execute Utilities to Clean Profiles and Derived Data</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
+1
+3
+3
+#
+</code></pre></div>
+<p>The <code>#</code> symbol is simply there so you do not need to hit enter after the final <code>3</code> in this buffer. There will be a <code>#</code> showing in the terminal window when done.  You can either hit return or backspace to clear it.</p>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
 <p>You must type 1 and hit return in the terminal window to agree that you understand the warning.</p>
 <p>Next you will select the Utility Scripts option by typing 3 and return.</p>
@@ -2121,7 +2115,7 @@
 <p>Please quit out of Xcode and repeat the steps.</p>
 <h2 id="step-3-download-updated-loop-code">Step 3: Download Updated Loop Code<a class="headerlink" href="#step-3-download-updated-loop-code" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folder(s) now if you want).</p>
-<div class="admonition info">
+<div class="admonition abstract">
 <p class="admonition-title">Where is the old folder?</p>
 <p>Maybe you don't remember where you put the folder. Both the older zip-download method and the new build-select-script method make folders in your download folder as shown in the graphic below. If you are tight on space, all of these folders can be deleted.  Or, if you are paranoid, download fresh and build Loop; and then go back and delete all but the most recent copy.  The nice thing about the build-select script is it automatically generates the folder name with the date and time of the download.</p>
 <p><img alt="Download folder with multiple Loop folders" src="../img/loop-downloads.png" /></p>
@@ -2140,14 +2134,15 @@
 <li>This process deletes the provisioning profiles on your computer to force Xcode to generate new ones with your next build</li>
 <li>This does not affect the provisioning profiles currently on your phone</li>
 </ul>
-<div class="admonition warning">
+<div class="admonition question">
 <p class="admonition-title">How to delete old provisioning profiles</p>
 <ul>
 <li>Find your Terminal app (in Applications under Utilities)</li>
 <li>Open your Terminal app</li>
-<li>Click on the word "Copy" to load your paste buffer, then paste it into the Terminal prompt</li>
+<li>Hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and hit enter</li>
 </ul>
-<p><button type="button" onclick="copyEvent('copy-updating-02')">Copy</button><br><code id="copy-updating-02">rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision<br></br></code></p>
+<div class="highlight"><span class="filename">Delete Provisioning Profiles</span><pre><span></span><code>rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
+</code></pre></div>
 <ul>
 <li>No response will be shown in the terminal if you have Provisioning Profiles stored on this computer</li>
 <li>If you do not have Provisioning Profiles stored on this computer, the message be similar to this one:<ul>
@@ -2195,10 +2190,12 @@
 </div>
 <h3 id="step-4b-clean-cache-and-derived-data">Step 4b: Clean cache and derived data<a class="headerlink" href="#step-4b-clean-cache-and-derived-data" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This may not be necessary, but it is one of the first steps to try if you do get a build error. Since you already have Terminal app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.</p>
-<div class="admonition green">
+<div class="admonition abstract">
 <p class="admonition-title">Clean cache and derived data</p>
-<p>Using Terminal app that should still be open from Step 4a, click on the word "Copy" to select these two lines of code and paste into the terminal.</p>
-<p><button type="button" onclick="copyEvent('copy-updating-03')">Copy</button><br><code id="copy-updating-03">rm -rf ~/Library/Caches/org.carthage.CarthageKit</br>rm -rf ~/Library/Developer/Xcode/DerivedData</br><br></code></p>
+<p>Using Terminal app that should still be open from Step 4a, hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and hit enter.</p>
+<div class="highlight"><span class="filename">Clean cache and derived data</span><pre><span></span><code>rm -rf ~/Library/Caches/org.carthage.CarthageKit
+rm -rf ~/Library/Developer/Xcode/DerivedData
+</code></pre></div>
 <ul>
 <li>No response will be shown in the terminal if Xcode is closed or you have never built from this folder</li>
 <li>If you have previously built the app from this folder AND Xcode is open, you will get message(s) similar to this<ul>
@@ -2210,21 +2207,21 @@
 <p align="center"><img alt="Screenshot: terminal after clean cache and derived data" src="../img/cleaned-terminal.png" width="650" /></p>
 </div>
 <h3 id="step-5-build-like-normal">Step 5: Build like normal<a class="headerlink" href="#step-5-build-like-normal" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>From here, go straight to <a href="../step14/">Step 14 Build Loop app</a> and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.</p>
-<div class="admonition danger">
+<p>You are ready to proceed to <a href="../step14/#download-and-prepare-to-build">Download and Build Loop Code</a>.</p>
+<div class="admonition info">
 <p class="admonition-title">Add a Calendar Reminder</p>
 <ul>
 <li>It is good practice to add a reminder to your calendar when the app will expire (7 days or 1 year).</li>
 <li>Be sure to add an alert to that reminder so you have enough time to do all the <a href="./">Loop Updating</a> steps to build the app again before it expires</li>
 </ul>
 </div>
-<div class="admonition info">
+<div class="admonition abstract">
 <p class="admonition-title">Double check expiration date</p>
 <p>If you want to make sure that step 4 above (deleting the provisioning profiles) went well, check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app, if you successfully build, will function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.</p>
 <p>To find out expiration date later, read <a href="../../operation/features/notifications/#loop-app-expiration-date">Loop App Expiration Date</a>.</p>
 </div>
 <h3 id="step-6-resolve-build-errors-if-needed">Step 6: Resolve Build Errors if needed<a class="headerlink" href="#step-6-resolve-build-errors-if-needed" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition green">
+<div class="admonition danger">
 <p class="admonition-title">Check Build Errors Page</p>
 <p>If you get a build error, check the <a href="../build_errors/">Build Errors page</a>. You might be able to resolve it yourself.</p>
 <p>Even if your exact error isn't there, the information you need to provide when asking for help is listed on that page. And that information is critical to allow mentors to help troubleshoot your build error.</p>
@@ -2350,8 +2347,6 @@
     
     
       <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
-      
-        <script src="../../stylesheets/copy_button.js"></script>
       
     
   </body>
