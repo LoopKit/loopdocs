@@ -1,8 +1,6 @@
 # New Nightscout Users
 
-!!! info "Is Nightscout Required for Loop?"
-
-    Nightscout is not required, but is recommended for Loop.
+!!! abstract "Nightscout is not required, but is recommended for Loop"
 
     - A Nightscout site provides a dashboard for remote viewing of Loop actions including the temporary basal rates Loop is setting, the current insulin on board, or a recent bolus and carb entry
     - A Nightscout site provides reports for retrospective review of your settings

@@ -7,7 +7,7 @@ To start a new meal entry, tap on the green plate icon (circled below) in the to
 
 Many Loopers increase the carbohydrate amount to cover the expected effect of protein and adjust the expected absorption time for fat in their meal entry. For simplicity, the rest of this page only refers to carbs because all the figures show carbs or carbohydrates in the menus. You should consider the whole meal, including fat and protein, especially if you eat lower carb.
 
-!!! danger "Meal Entry - Fast Version"
+!!! abstract "Meal Entry - Fast Version"
     There is a lot of information on this page, most of which will become second nature. At first, it may seem incredibly complicated. The short version is here (assuming you accept all the default settings that Loop offers).
 
       1. Tap meal entry icon on toolbar
@@ -63,7 +63,7 @@ When you are done recording a given food entry, press `Continue` and the Meal Bo
 
 You can tap on the `Recommended` line and that value will be transferred to the Bolus line, OR tap on 0.0u on the `Bolus` row and type in your desired bolus amount OR `Save Without Bolusing` The `Save Without Bolusing` option is used if you'd like to add to your meal entry or do not want to accept a bolus right now. The meal entry is NOT saved until you either `Deliver` or `Save Without Bolusing`. The graph at the top of the Meal Bolus screen will show your BG prediction based upon your meal entry and desired bolus amount. You can adjust your desired bolus amount or click `<Carb Entry` to adjust your meal entry and then return to Meal Bolus to see how your BG prediction changes. When you're ready to bolus, click `Deliver`. If you start a bolus and plan to add additional meal entries, you will probably need to `Save without Bolusing` for the next entry because Loop will mid-bolus, and you cannot initiate a new bolus while one is in progress. After entering the rest of the meal, don't forget to [bolus](bolus.md) manually.
 
-!!! warning ""
+!!! warning "To Cancel Bolus"
     If you need to modify or cancel a bolus in progress, turn the phone to portait orientation and tap the bolus in progress line right below the heads up display (HUD).  Loop will immediately cancel the in-progress bolus.  If you desire, then you can [bolus](bolus.md) manually to modify the insulin to be delivered via bolus.
 
     Remember - once the `Deliver` button is tapped, the carb entry associated with that bolus is saved.  Loop will increase insulin delivery based on that entry. So if you canceled a bolus prior to modifying a carb entry, be sure to [edit the carbs](carbs.md#edit-meals) already saved instead of entering a new carb entry.
@@ -77,7 +77,7 @@ If your BG is below your suspend threshold, Loop will not recommend a bolus. If 
 
 Loopers who are using the Automatic Bolus Dosing Strategy still typically prebolus and/or bolus for meals. The amount of `Recommended` insulin that will appear in the Meal Bolus screen will be the full amount of the bolus Loop recommends (not the 40% partial bolus delivered automatically). As discussed above, you can accept this recommendation or enter a different amount, however, and this is **very important**, if your Dosing Strategy is set to Automatic Bolus, by entering less than the recommended amount and tapping `Deliver` or tapping `Save Without Bolusing`, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of the recommended bolus at each successive Loop interval.
 
-!!! warning ""
+!!! warning "Carb Entry Leads to Insulin Delivery"
     Note that this same automatic delivery of insulin in response to entered carbs occurs when Dosing Strategy is set to Temp Basal, but the delivery via temporary basal rates is slower, providing more time for an error to be noticed. By the same token, the Automatic Bolus Dosing Strategy responds more quickly to increases in blood glucose.
 
 
@@ -115,7 +115,7 @@ Adjusting a meal entry can be a particularly useful tool when:
 
 ## Avoid Double Meal Entries
 
-!!! info "Be Aware"
+!!! warning "Be Aware"
     If you have accidentally made duplicate entries for the same meal, click on the Active Carbohydrates chart in the main Loop screen and tap `Edit Carb Entry` to delete the redundant entries. Deleting the meal entry will not impact the insulin that has already been delivered, but it will alert Loop to adjust your BG projection for purposes of calculating future insulin delivery.
 
 ## Third Party Apps

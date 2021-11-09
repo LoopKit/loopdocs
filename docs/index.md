@@ -73,7 +73,7 @@ LoopDocs transitioned to a new theme (November 2021) with a different loop and f
 
 Some details of the display are dependent on whether you are on a mobile device or a computer (with browser width > 1220 pixels).  After the first set of graphics, which show the difference between these two views for this location in LoopDocs, all other graphics show the wide-browser view.
 
-!!! note "Graphics a bit out of date"
+!!! warning "Graphics a bit out of date"
 
     The list of `Headers on this Page` have been moved to the right side for Wide Browsers. The graphics will be updated later and then this comment will be removed.
 

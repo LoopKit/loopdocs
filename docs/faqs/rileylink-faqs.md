@@ -49,7 +49,7 @@ You can also use the search feature on the general discussion page of The Looped
 
 All the RileyLink compatible devices communicate with the pump through radio frequency communications and with the phone through Bluetooth.
 
-!!! info "Bluetooth (BT) Troubleshooting"
+!!! warning "Bluetooth (BT) Troubleshooting"
 
     If your iPhone has BT issues, your Loop will have failures. There have been reports of BT audio devices (such as BT pairings in your car or home audio BT speakers) interfering with the Loop. If you are finding Loop failures frequently happening at a particular location, you may try to troubleshoot if there are BT problems in the area.
 
@@ -112,7 +112,7 @@ A number of OrangeLink Pro devices were shipped with FW2.6 and for people who al
     * For OrangeLink Pro (HW version 1.1), FW1.0 or FW3.2 are OK
     * See link above to check if versions newer than FW3.2 have been released, LoopDocs might not have the latest information
 
-!!! note ""
+!!! warning "Firmware/Hardware Labeling"
     Earlier versions of the OrangeLink firmware did not put the hardware (HW) version and the firmware version (FW) in the "correct" location to hand off to Loop for interpretation. Do not worry if you are running on any FW version 1.x or 2.x and your HW version number doesn't say 1.0 or 1.1. This has been fixed for FW versions 3.x.
 
 ## EmaLink and OrangeLink Features

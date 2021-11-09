@@ -76,7 +76,7 @@ The information in the graphic below includes the Xcode version number used for 
 
 ![top of issue report showing loop, xcode and expiration](img/loop-version.svg){width="500"}
 
-!!! danger "Profile Expiration"
+!!! info "Profile Expiration"
 
     * The profile expiration will not be shown for Loop v2.2.4 or earlier.
     * For this example, the profile expires much sooner than 12 months after the Loop app was built
@@ -92,7 +92,7 @@ Does not matter. Moving between branches and forks is an "updating Loop" action.
 
 Changing phones is a little different than just [updating](../build/updating.md).
 
-!!! danger "New Phone Checklist"
+!!! abstract "New Phone Checklist"
 
     * When you change phones, Apple will force you to the latest iOS version
     * Make sure you can build to that iOS version before trying to transfer Loop to the new phone
