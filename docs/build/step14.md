@@ -5,10 +5,11 @@
     - 10-15 minutes for a repeat builders
 
 !!! abstract "Summary"
-    - You should have read the Build-Select Instructions in Step 13
-    - **First Time:** steps are needed for first time with this phone or this computer
-    - It is now time to execute those Instructions
-        - [Run Build Select Script](https://www.loopandlearn.org/build-select/#use-script)
+    - First Time Builders - please do [all the build steps](overview.md), then return
+    - Repeat Builders - please start with the [Updating page](updating.md), then return
+    - Some steps are needed only for **First Time** with this phone or this computer
+    - It is now time to build your app
+        - Open terminal and copy/paste commands into it
         - Connect the phone to the computer
         - **First Time:** Trust the computer
         - Select Loop (Workspace) and your phone at top of Xcode
@@ -31,21 +32,63 @@
 
 ## Execute the Build Select Script
 
-At this point, you should have reviewed the entire [Build Select Script](https://www.loopandlearn.org/build-select/) page - if not, do it now.
+There is a page on the Loop and Learn site for using the [Build Select Script](https://www.loopandlearn.org/build-select/).  If you prefer, you can go to that site and follow those (somewhat briefer) instructions. The use of the build-select script has been incorporated into LoopDocs now, so you don't need to jump between sites - it is your choice.
 
+There are 2 options for script use in LoopDocs:
+
+1. Follow step-by-step instructions (suggested for new builders)
+1. Follow the single-step instructions (good for repeat builders)
+
+Both options begin by opening a terminal window on your Mac.
 
 ### Open Terminal
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step7.md#configure-terminal-app-for-rosetta-on-m1-computer) first.) The terminal window is very plain looking when you open it. That is normal.
 
-
 ## Download and Prepare to Build
 
-You have your choice of using the instructions on the [Build-Select page](https://www.loopandlearn.org/build-select/#use-script) or click on the word "Copy" below and proceed using this page (which has more detailed information):
+There is a copy button located by hovering on the right-hand side of each "code" block.  Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.
 
-<button type="button" onclick="copyEvent('copy-step14-01')">Copy</button><br><code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"<br><br></code>
+If you want to do each step and watch results before doing the next step, skip to [Step-by-Step](#step-by-step). If you want the whole process to be done with one copy/paste, keep going.
 
-Then paste the text into the terminal window; it should look like the graphic below.
+### Single Step to Download
+
+This starts the script, answers the questions, downloads the code and opens both Xcode and a browser showing the graphic also found in the [Wait for Xcode to Finish Indexing](#wait-for-xcode-to-finish-indexing) section. If you have never used this script before, please review the [Step-by-Step](#step-by-step) section including the `Review Download for Errors` section and then return (you can use your browser back button).
+
+If you do not have Xcode and Xcode command line tools installed - you will get errors. They are shown in the [Step-by-Step](#step-by-step) section.
+
+``` title="Download Loop Master and Open Xcode"
+/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
+1
+1
+1
+1
+#
+```
+
+After you paste this block of text into the terminal window; all the output windows shown in the step-by-step block should appear in order without need to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).
+
+The `#` symbol is simply there so you do not need to hit enter after the final `1` in this buffer. There will be a `#` showing in the terminal window when done.  You can either hit return or backspace to clear it.
+
+For those who use FreeAPS (a fork of Loop), this code block is here for your convenience. All others, just skip this.
+
+
+``` title="Download FreeAPS and Open Xcode"
+/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
+1
+1
+2
+1
+#
+```
+
+### Step-by-Step
+
+If you prefer to execute each line (in the code block above) one at a time, start with the single line, copy and paste into the terminal and hit return.
+
+```
+/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
+```
 
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
@@ -62,12 +105,11 @@ Next you are asked which version of Loop you would like to build. Type 1 and hit
 ![choose which Loop to build](img/build-select-06.png){width="750"}
 {align="center"}
 
-!!! note ""
+!!! warning "If you see errors like these . . ."
 
-    * If you see an error similar to one of these in the terminal
-        * xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
-        * xcode-select: Failed to locate 'git', requesting installation of command line developer tools
-        * xcode-select: error: tool 'xed' requires Xcode
+    * `xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
+    * `xcode-select: Failed to locate 'git', requesting installation of command line developer tools`
+    * `xcode-select: error: tool 'xed' requires Xcode`
     * You missed one of these steps:
         * [Build Step 8: Install Xcode](step8.md)
         * [Build Step 9: Xcode command line tools](step9.md)
@@ -84,6 +126,8 @@ The final submodule cloning is shown along with the summary of all the submodule
 {align="center"}
 
 If any errors are shown in your terminal window, you need to read the error and type 2, return to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#stay-in-the-loop) site.
+
+### Review Download for Errors
 
 Assuming there are no errors, then type 1, return to Continue.
 
@@ -103,7 +147,7 @@ The other thing to know: If there is a space in the path to your LoopWorkspace f
 You can do all the instructions (except the build while waiting for indexing.) There are some additional details about each step in the list below, if you need them, indicated by links.
 
 1. At the very top of all the folders and files listed on the left side, click on the blue icon next to the word "Loop". You might need to click a second time to highlight the Loop folder. This will populate the middle part of the Xcode window.
-1. [Plug in your phone](#connect-your-iphone-to-computer) - make sure it is unlocked.  If this is the first time for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".
+1. [Plug in your phone](#connect-your-iphone-to-computer) - make sure it is unlocked.  If this is the **First Time** for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".
     * Select **Loop (Workspace)** from the dropdown at the upper left
         - Examine the Step 2 Detail in the graphic above
         - The selection when Xcode opens is Loop
@@ -229,7 +273,7 @@ Confirm that you are ready to build Loop:
 * Has Xcode finished indexing?
 * Is your iPhone unlocked and plugged into the computer?
 * Have you signed the four targets?
-* Have you selected Loop(Workspace)?
+* Have you selected Loop (Workspace)?
 * Have you selected your phone and not a simulator?
 * Are you done with any customizations?
 * Has your Apple watch been paired and updated?
@@ -240,14 +284,14 @@ _The graphics in this section have not been updated to show "Loop (Workspace)"._
 
 !!! info "Helpful Tips"
 
-    - The final step of a successful build is for Xcode to copy the completed build to your iPhone; if your phone is locked, Xcode pops up a message letting you know.  Unlock your phone to continue.
+    The final step of a successful build is for Xcode to copy the completed build to your iPhone; if your phone is locked, Xcode pops up a message letting you know.  Unlock your phone to continue.
 
 ![img/build_button.png](img/build_button.png){width="750"}
 {align="center"}
 
 You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take 5-30 minutes, depending on the speed of the computer.  **Just be patient.**  The progress will get stay on one step/task for a very long time, and then the others will fly by. Not every step is equal in duration. Do not give up on the build.
 
-**Xcode will ALWAYS tell you eventually that the build either succeeded or failed via a short (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Build Failed" (failure) message where the step progress was previously counting down.**
+**Xcode will ALWAYS tell you eventually that the build either succeeded or failed via a short (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Unlock Phone to Continue" or "Build Failed" (failure) message where the step progress was previously counting down.**
 
 ### Codesign / Keychain Access
 
@@ -276,9 +320,9 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 ## Build Succeeded
 
-!!! info ""
+!!! success "Congratulations"
 
-    Congrats! If the build is successful, you'll see the message "Running Loop..." across the top of the Xcode window. Pick up your phone and look at it.
+    If the build is successful, you'll see the message "Running Loop..." across the top of the Xcode window. Pick up your phone and look at it.
 
     You can unplug your phone from the computer now. You will get an Xcode message window that says "Lost connection to the debugger on <your phone name\>".  Just click OK.
 
@@ -309,7 +353,12 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 If you get any other message that your build failed and see **RED ERROR** messages, go to the [Build Errors](build_errors.md) page to find the steps to fix your build error. Most build errors are covered on that page along with instructions on how to fix them and how to ask for help.
 
-Once you've resolved the issue and start the build process again, Xcode will continue to show a red circle on the top line from the previous failure.  Don't worry about it.  As long as the steps of the build are showing across the top line, Xcode is still working on the build.  When the build succeeds, the red circle will disappear.
+Once you've resolved the issue and start the build process again, Xcode will continue to show a red circle on the top line from the previous failure.  If you don't like seeing that, clean the build folder to clear the error.  Otherwise, as long as the steps of the build are showing across the top line, Xcode is still working on the build.  When the build succeeds, the red circle will disappear.
+
+!!! abstract "Clean Build Folder"
+
+    * In Xcode menu, select Product, then Clean Build Folder
+    * Wait for cleaning to complete: you'll see a "Clean Finished" message
 
 
 ![img/general-error.jpg](img/general-error.jpg){width="750"}
