@@ -9,7 +9,7 @@ However, there are some forks, or the Workspace method for the dev branch, where
 The instructions for Step 7 (which most folks can skip) are maintained for those people who need to know how to install carthage and how to configure a new M1 computer terminal using Rosetta.
 
 
-!!! abstract "Time Estimate"
+!!! info "Time Estimate"
     Some forks and branches of Loop require you to have carthage 0.36.0 installed on your computer.
 
     - 10-15 minutes assuming you know your computer's password

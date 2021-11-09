@@ -34,7 +34,7 @@ If the indication is one of these (or something similar), it can probably be fix
 * no rileylink could be found
 * pod cannot be reached
 
-Do these steps:
+Do these steps until one of them fixes the issue:
 
 * Turn off Bluetooth on your phone and then turn it right back on again.
 * Close your Loop app (upswiping it in the iPhone's app selector) and reopen it.

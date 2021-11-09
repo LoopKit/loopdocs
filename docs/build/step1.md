@@ -45,7 +45,7 @@ The newest Apple computers, released in November 2020, are compatible with build
 
 ## MacOS
 
-The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big Sur can be used to build Loop for **any** of the phone iOS versions listed below but is **required** to build on any iPhone with an iOS version starting with iOS 14.5.
+The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Monterey, can be used to build Loop for **any** of the phone iOS versions listed below but Big Sur is **required** to build on any iPhone with an iOS version starting with iOS 14.5.
 
 * **If you have iOS 15 or newer**, the minimum macOS is Big Sur (11.3)
 

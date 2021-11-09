@@ -28,7 +28,7 @@ You do **NOT** need your Share account info listed in Loop settings if you are u
 
     If you do not enter your Share credentials correctly, you will get an error when Loop tries to access your Share account to backfill CGM data. That error message will look like below. If you see that message, delete your Share account from Loop settings and try again...or just leave it out and depend on your transmitter ID.
 
-    ![img/shareclient.jpg](img/shareclient.jpg){width="450"}
+    ![img/shareclient.jpg](img/shareclient.jpg){width="300"}
     {align="center"}
 
 ## Dexcom G5 and G6

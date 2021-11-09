@@ -66,7 +66,7 @@ Therefore, try to resolve your build error yourself. Then, if you need to post f
 
 ## Screenshots
 
-Please take screenshots of your issue and use them in your posts. On an Apple computer, press `shift-command-4` keys at the same time followed by pressing the space bar and then click on the window of interest. The screenshot will be saved to your desktop with a file name starting with the name "Screen Shot". Use screenshots over cell phone images or words whenever possible. Screenshots are higher resolution and easier to read.
+Please take screenshots of your issue and use them in your posts. On an Apple computer, press `shift-command-4` keys at the same time followed by pressing the space bar and then click on the window of interest. The screenshot will be saved to your desktop with a file name starting with the name "Screen Shot". Use screenshots instead of cell phone images or words whenever possible. Screenshots are higher resolution and easier to read.
 
 Use the whole Xcode window screenshot when posting for build help.
 

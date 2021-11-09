@@ -183,7 +183,7 @@ let rotationsPerValue
 ![img/sensitivity1.png](img/sensitivity1.png){width="800"}
 {align="center"}
 
-The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This `Key_Phrase` returns the 3 lines, the second 2 of which are the ones in that file where the change is required:
+The modification required to reduce the watch crown rotation to confirm a bolus is achieved by changing two additional lines, 311 and 360, in the same file, BolusInterfaceController.swift. For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This `Key_Phrase` returns 3 lines, the second 2 of which are the ones in that file where the change is required:
 
 
 ``` title="Key_Phrase"

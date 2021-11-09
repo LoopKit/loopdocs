@@ -48,9 +48,14 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 ## Download and Prepare to Build
 
-There is a copy button located by hovering on the right-hand side of each "code" block.  Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.
+There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.
 
 If you want to do each step and watch results before doing the next step, skip to [Step-by-Step](#step-by-step). If you want the whole process to be done with one copy/paste, keep going.
+
+!!! success "Video using Build-Select"
+
+    If you prefer to watch a video of building with this step-by-step method, here's the link to the [YouTube video](https://youtu.be/gddhljzsNkM) prepared by the Loop and Learn team.
+
 
 ### Single Step to Download
 
@@ -67,11 +72,11 @@ If you do not have Xcode and Xcode command line tools installed - you will get e
 #
 ```
 
-After you paste this block of text into the terminal window; all the output windows shown in the step-by-step block should appear in order without need to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).
+After you paste this block of text into the terminal window; all the output windows shown in the [Step-by-Step](#step-by-step) section should appear in order without need to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).
 
 The `#` symbol is simply there so you do not need to hit enter after the final `1` in this buffer. There will be a `#` showing in the terminal window when done.  You can either hit return or backspace to clear it.
 
-For those who use FreeAPS (a fork of Loop), this code block is here for your convenience. All others, just skip this.
+For those who use FreeAPS (a fork of Loop), this block is here for your convenience. All others, just skip this.
 
 
 ``` title="Download FreeAPS and Open Xcode"
@@ -86,10 +91,6 @@ For those who use FreeAPS (a fork of Loop), this code block is here for your con
 ### Step-by-Step
 
 If you prefer to execute each line (in the code block above) one at a time, start with the single line, copy and paste into the terminal and hit return.
-
-!!! info "Video using Build-Select"
-
-    If you prefer to watch a video of building with this step-by-step method, here's the link to the [YouTube video](https://youtu.be/gddhljzsNkM) prepared by the Loop and Learn team.
 
 ```
 /bin/bash -c "$(curl -fsSL https://git.io/JImiE)"

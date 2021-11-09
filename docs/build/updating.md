@@ -278,7 +278,7 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 ### Step 5: Build like normal
 
-From here, go straight to [Step 14 Build Loop app](step14.md) and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
+You are ready to proceed to [Download and Build Loop Code](step14.md#download-and-prepare-to-build).
 
 !!! info "Add a Calendar Reminder"
 
