@@ -114,18 +114,19 @@ To add header row, use:
 
 ### Admonitions and CSS
 
-WARNING - in process of changing to use the standard set of admonitions and css styles that come with the Material theme.
+Now using the standard set of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) and css styles that come with the Material theme.
 
-For build steps:
-`info`  instead of `green` or `danger`
-`abstract` instead of `info`
-`question` instead of `faqs` or `warning`
+The admonitions in use are:
+First 3 boxes for Build Steps:
+* `info`
+* `abstract`
+* `question`
 
 To get a warning triagle, use `warning`
 
 To get a red zag icon, use `danger`
 
-The rest of this file will be updated once the new theme settles down.
+To get a pencil icon, use `note`
 
 [Admonitions](https://python-markdown.github.io/extensions/admonition/) are a markdown extension that enable formatted blocks for visually calling out information.
 
@@ -143,27 +144,6 @@ The markdown syntax used by loopdocs is:
     Every indented line is included in the "box" created by this admonition
 ```
 
-The keyword Cascading Style Sheet (css) definitions are found in docs/stylesheets/admonitions.css.
-
-This table was proposed and green and faqs were used on a few pages. But, not sure if faqs and green are acceptable markdown standard. For now, use danger and warning.  Might modify the style later.
-
-```markdown
-| keyword  | synonym  |  example in build                   | color  |
-| danger   |  green   |  step3.md, Time Estimate            | green  |
-| info     |          |  step3.md, Summary                  | blue   |
-| faqs     |          |  step3.md, FAQs                     | orange |
-| note     |          |  step3.md, MMT pump model/firmware  | grey   |
-| warning  |          |  step3.md, Reminder and Disclaimer  | orange |
-```
-
-The 3 top boxes on many pages, but especially the Build Step series should always use
-```
-!!! danger "Time Estimate"
-
-!!! info "Summary"
-
-!!! warning "FAQs"
-```
 
 ## Copy Button
 
