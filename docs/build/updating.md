@@ -198,9 +198,11 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
 !!! question "How to delete old provisioning profiles"
     - Find your Terminal app (in Applications under Utilities)
     - Open your Terminal app
-    - Click on the word "Copy" to load your paste buffer, then paste it into the Terminal prompt
+    - Hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and hit enter
 
-    <button type="button" onclick="copyEvent('copy-updating-02')">Copy</button><br><code id="copy-updating-02">rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision<br></br></code>
+    ``` title="Delete Provisioning Profiles"
+    rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
+    ```
 
     * No response will be shown in the terminal if you have Provisioning Profiles stored on this computer
     * If you do not have Provisioning Profiles stored on this computer, the message be similar to this one:
@@ -256,9 +258,12 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 !!! abstract "Clean cache and derived data"
 
-    Using Terminal app that should still be open from Step 4a, click on the word "Copy" to select these two lines of code and paste into the terminal.
+    Using Terminal app that should still be open from Step 4a, hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and hit enter.
 
-    <button type="button" onclick="copyEvent('copy-updating-03')">Copy</button><br><code id="copy-updating-03">rm -rf ~/Library/Caches/org.carthage.CarthageKit</br>rm -rf ~/Library/Developer/Xcode/DerivedData</br><br></code>
+    ``` title="Clean cache and derived data"
+    rm -rf ~/Library/Caches/org.carthage.CarthageKit
+    rm -rf ~/Library/Developer/Xcode/DerivedData
+    ```
 
     * No response will be shown in the terminal if Xcode is closed or you have never built from this folder
     * If you have previously built the app from this folder AND Xcode is open, you will get message(s) similar to this
