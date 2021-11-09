@@ -1,3 +1,8 @@
+---
+hide:
+    - navigation
+---
+
 # Welcome to Loop
 
 [New Look and Feel](#loopdocs-has-a-new-look-and-feel)
