@@ -5,7 +5,7 @@
     - 10-15 minutes for a repeat builders
 
 !!! abstract "Summary"
-    - First Time Builders - please do [all the build steps](overview.md), then return
+    - First Time Builders - if you have not completed [all the build steps](overview.md), do them now and then return
     - Repeat Builders - please start with the [Updating page](updating.md), then return
     - Some steps are needed only for **First Time** with this phone or this computer
     - It is now time to build your app
@@ -23,6 +23,7 @@
         - Add an alert with enough time before expiration to prepare to rebuild
 
 !!! question "FAQs"
+    - **"The download seems to take a long time; is that normal?"** Yes. The download of the Loop submodule takes the longest. Having a good internet connection is important. (The word submodule gets discussed later.)
     - **"The build seems to take a long time; is that normal?"** Yes. The good news is the Workspace build is much faster than the old method.  It is not unusual for one of the build steps to take *much* longer than all the others.
         - The build process always ends with either a "Build Succeeded" or "Build Failed" message; so just wait it out until you see one of those displayed.
         - If you are away from you computer when the build succeeds, you might miss the "Build Succeeded" message, but you will see "Running Loop on <your phone name\>" at the very top of the Xcode window - and the Loop app will be open on your phone.
@@ -85,6 +86,10 @@ For those who use FreeAPS (a fork of Loop), this code block is here for your con
 ### Step-by-Step
 
 If you prefer to execute each line (in the code block above) one at a time, start with the single line, copy and paste into the terminal and hit return.
+
+!!! info "Video using Build-Select"
+
+    If you prefer to watch a video of building with this step-by-step method, here's the link to the [YouTube video](https://youtu.be/gddhljzsNkM) prepared by the Loop and Learn team.
 
 ```
 /bin/bash -c "$(curl -fsSL https://git.io/JImiE)"

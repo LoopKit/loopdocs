@@ -48,7 +48,7 @@ When you see "Loop" is No Longer Available on your phone, the only solution is t
 
     Any Loop app built with Xcode version prior to Xcode 12.5 will immediately fail when the phone is updated to iOS 15. If you last built Loop with Catalina do not install iOS 15.
 
-    These instructions, [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used), tell you how to determine what version was used when building the Loop app currently on running on your phone.
+    Follow this link, [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used), for instructions to determine what version was used when building the Loop app currently on your phone.
 
 ## Step 1: Install macOS and Xcode updates
 
@@ -105,7 +105,7 @@ Apple updates its License Agreement for the Developer Program frequently. You ne
 
 In order to ensure a full year of use for your Loop app, you need to delete any existing provisioning profile(s) from your computer. If you want to know more information before executing this step - or if you want to do it manually, read the [Background Information](#background-information).
 
-The easiest way to delete the old provisioning profiles and clean up derived data uses the same build-select script that you will use for building. If you are not familiar with the build-select methods, please read [Build Step 13](step13.md).
+The easiest way to delete the old provisioning profiles and clean up derived data uses the same build-select script that you will use for building.
 
 ### Open Terminal
 
@@ -115,11 +115,22 @@ If you happen to have Xcode open, go on and quit out of Xcode now.
 
 ### Load the Paste Buffer
 
-Click on the word "Copy" below to copy this line-of-code:
+There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.
 
-<button type="button" onclick="copyEvent('copy-updating-01')">Copy</button><br><code id="copy-updating-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"<br><br></code>
+This starts the script, answers the questions to select `Utilities` and `Clean Profiles and Derived Data`. The expected responses are shown in the graphics below.  As long as there are no errors, you are now ready to proceed to [Download and Build Loop Code](step14.md#download-and-prepare-to-build)
 
-Then paste the text into the terminal window; it should look like the graphic below.
+- If you do not have Xcode and Xcode command line tools installed - you will get errors.
+- If you have Xcode open, you may get errors.
+
+``` title="Execute Utilities to Clean Profiles and Derived Data"
+/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
+1
+3
+3
+#
+```
+
+The `#` symbol is simply there so you do not need to hit enter after the final `3` in this buffer. There will be a `#` showing in the terminal window when done.  You can either hit return or backspace to clear it.
 
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}

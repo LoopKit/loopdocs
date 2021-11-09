@@ -21,7 +21,7 @@ Git is a system of "distributed version control" that allows remotely (as in not
 
 So, in using git, we can do things with "git commands". Like "Hey git...make me an exact copy of that guy's work over there." or "Hey git, I'd like to compare my version of this page with Joe's version of the same page." Or using my old cookbook analogy..."Hey git, I'd like to start a new cookbook called Italian Desserts."
 
-But yes, git commands take awhile to properly use. And they are not plain english friendly. Therefore, we have emphasized the use of the [Build Select Script](https://www.loopandlearn.org/build-select/) instead of the manual entry of git commands to your terminal.
+But yes, git commands take awhile to properly use. And they are not plain english friendly. 
 
 ## What is LoopWorkspace?
 
