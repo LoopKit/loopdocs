@@ -1,16 +1,16 @@
 # Step 13: Download Loop Code
 
-!!! danger "Time Estimate"
+!!! info "Time Estimate"
     - 10 minutes to read this page
     - Wait until Step 14 to download Loop code (New Workspace Method)
 
-!!! info "Summary"
+!!! abstract "Summary"
     - Open the [Build Select Script](https://www.loopandlearn.org/build-select/) page in a new tab of your browser
     - Read the Build Select page but don't take any action yet
         - That page supports more than just Loop
         - You will not actually be doing the copy/paste into the terminal until Step 14
 
-!!! warning "FAQs"
+!!! question "FAQs"
     - **When do I need to download new Loop code?** There are three times you need to download new code:
         1. When you build Loop initially
         1. When a new release of Loop has features you want
@@ -80,10 +80,8 @@ Modifications to building Loop with Xcode 13:
 * You must use the Workspace method to build Loop with Xcode 13
 * The old download the zip method will not work once you update your Xcode to version 13
 * You can use the [Build Select Script](https://www.loopandlearn.org/build-select/) webpage, which has instructions on how to use a script to download Loop Master
+* For earlier iOS versions, you can still use Xcode 12 but should use the Workspace method
 
-### Xcode 12
-
-If you are running Xcode version 12, suitable for iOS versions 14.x and earlier, you can use the zip download method but it is not advised.  See this link if you really want to stick with that method. [Archived zip download information](step14-zip.md)
 
 ## Manual Workspace Method
 
@@ -108,7 +106,7 @@ If you are an advanced user who wants to build the dev branch - this section is 
 
 * Be sure to clone into a directory with no embedded spaces in the path
 
-!!! warning "Advanced Users Only"
+!!! abstract "Advanced Users Only"
 
     **Only build the dev branch if you're a developer/advanced user**
 

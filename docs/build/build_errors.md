@@ -8,7 +8,7 @@ There are two types of build errors that happen: they are yellow warnings and re
 
 ## Start with The Obvious Error Causes
 
-!!! danger "New Loop Builders"
+!!! info "New Loop Builders"
     This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4, 6 and 7 in the list below. Then, skim the page until your reach [Find Your Error Message](build_errors.md#find-your-error-messages). Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
 
 
@@ -55,7 +55,7 @@ Before you post in a [Loop Social Media](../index.md#stay-in-the-loop) site aski
 
 Therefore, try to resolve your build error yourself. Then, if you need to post for help, please include enough information with the post so the volunteers know where you are in your troubleshooting attempts.
 
-!!! danger "You Post Must Include:"
+!!! warning "Your Post Must Include:"
     * The version of Xcode you are using
     * The version of Loop you are building with
     * The version of iOS on your Loop iPhone
@@ -66,7 +66,7 @@ Therefore, try to resolve your build error yourself. Then, if you need to post f
 
 ## Screenshots
 
-Please take screenshots of your issue and use them in your posts. On an Apple computer, press `shift-command-4` keys at the same time and a little crosshairs tool will appear. Click-and-drag across the area you'd like to screenshot. When you let go of the button, the screenshot will be saved to your desktop with a file name starting with the name "Screen Shot". To capture an entire window, press `shift-command-4` keys at the same time followed by pressing the space bar and then click on the window of interest.  Use screenshots over cell phone images or words whenever possible. Screenshots are higher resolution and easier to read.
+Please take screenshots of your issue and use them in your posts. On an Apple computer, press `shift-command-4` keys at the same time followed by pressing the space bar and then click on the window of interest. The screenshot will be saved to your desktop with a file name starting with the name "Screen Shot". Use screenshots over cell phone images or words whenever possible. Screenshots are higher resolution and easier to read.
 
 Use the whole Xcode window screenshot when posting for build help.
 
@@ -165,7 +165,7 @@ If you are using a Loop fork or a Workspace build with the dev branch, you may s
 
 **Error Message:**
 
-!!! info "Wrong Version of Carthage Error"
+!!! warning "Wrong Version of Carthage Error"
     Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.
 
 **Solution:** Manually uninstall carthage.

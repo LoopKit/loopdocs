@@ -1,16 +1,16 @@
 # Step 10: Test Settings
 
-!!! danger "Time Estimate"
+!!! info "Time Estimate"
     - 2 hours to read the rest of LoopDocs (particularly the "Set up App", "Operate", and "FAQ" sections) and [LoopTips](https://kdisimone.github.io/looptips/) thoroughly and thoughtfully
     - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to make sure you've familiarized yourself with Loop's expected behavior
     - 1-3 days to test settings for safety and to get the most out of Loop
 
-!!! info "Summary"
+!!! abstract "Summary"
     - A small amount of effort to test/validate basal rates, ISF (correction factor), and carb ratios will eliminate a lot of uncertainty when you start Looping
     - Keep an open mind that settings may need to change as you start Loop
     - Hormones, illness, and failed sites can still happen
 
-!!! warning "FAQs"
+!!! question "FAQs"
     - **"My endo makes my pump settings, so do I really need to test them?"** Well, nobody is going to force you, but testing your settings even just a couple days will give you a tremendous advantage going into Loop. Your endo may have adjusted your settings in a very different context, with different constraints. What is safe and ideal in traditional pump therapy, may not be the best selection for the Loop app. So, keep an open mind and be willing to adjust settings with the Loop app.
     - **"I have great control, why would I need to test my settings?"** Awesome for you! However, it is quite possible that your "great control" comes with a lot of little adjustments all the time. We all got used to needing little bumps and nudges of insulin or carbs over time...and sometimes those bumps and nudges are covering for underlying settings that need adjustment. Testing your settings will help...especially if you are coming from a treatment style that involves memorizing your insulin doses for meals...you may not know your actual carb ratio or ISF as a result of "just knowing" your boluses.
     - **"I can't basal test with my 2-year-old. What can I do?"** That is pretty tough. Consult your endo, watch your patterns, and do the best you can...little kiddos are a difficult group to test settings.

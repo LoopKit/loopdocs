@@ -1,16 +1,16 @@
 # Step 8: Download Xcode
 
-!!! green "Time Estimate"
+!!! info "Time Estimate"
     - 45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.
 
-!!! info "Summary"
+!!! abstract "Summary"
     - Check iPhone/iPod iOS version
         - The iOS version determines minimum Xcode version
         - The minimum Xcode version determines minimum macOS version
         - If necessary, update [macOS](step1.md#check-your-macos) first and then return to this step
     - Download Xcode from your computer's App Store application
 
-!!! faqs "FAQs"
+!!! question "FAQs"
     - **"Why isn't my Xcode installing?"** The two most common reasons are:
         1. lack of internet connection or
         2. not enough free space on the computer hard drive
@@ -49,7 +49,7 @@ Most people will update their iOS on their iPhones more often than they update t
 
 Because the update looks so innocuous and we all lead busy lives, we forget that there might be consequences to iOS updates.
 
-!!! green "Loop and iOS Updates"
+!!! info "Loop and iOS Updates"
 
     **Please Read**: [Turn Off Automatic Updates](step2.md#turn-off-automatic-updates)
 
@@ -111,7 +111,7 @@ Follow this link to [Wikipedia](https://en.wikipedia.org/wiki/Xcode) and scroll 
 
 ## What happens if you try using too old of Xcode?
 
-!!! warning "Breaking News"
+!!! danger "Breaking News"
     * If you try to build with a version of Xcode older than 11.4.1 you will get a Revoke Certificate message when you try to sign targets
     * Go to [Revoke Certificate Issue](updating.md#revoke-certificate-issue) to see the error message
     * Solution: update Xcode

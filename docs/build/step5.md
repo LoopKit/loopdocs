@@ -1,14 +1,14 @@
 # Step 5: Order a RileyLink Compatible Device
 
-!!! danger "Time Estimate"
+!!! info "Time Estimate"
     - 15-20 minutes to read about RileyLink compatible devices
     - 15 minutes to order a device
 
-!!! info "Summary"
+!!! abstract "Summary"
     - Decide what kind of RileyLink compatible device to buy
     - Order your compatible device
 
-!!! warning "FAQs"
+!!! question "FAQs"
     - **What is a RileyLink Compatible Device?** RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created [RileyLink Compatible Devices](step5.md#rileylink-compatible-devices) that use the RileyLink protocol. At the current time, RileyLink, OrangeLink and EmaLink devices are available for purchase and all can be used interchangeably with Loop.
     - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two).
     - **"What happens if I lose my RileyLink compatible device or walk away from it?"** Within a half hour, your pump returns to normal scheduled basal rate

@@ -1,10 +1,10 @@
 # Step 14: Build Loop App
 
-!!! danger "Time Estimate"
+!!! info "Time Estimate"
     - 60-80 minutes for first time builders
     - 10-15 minutes for a repeat builders
 
-!!! info "Summary"
+!!! abstract "Summary"
     - You should have read the Build-Select Instructions in Step 13
     - **First Time:** steps are needed for first time with this phone or this computer
     - It is now time to execute those Instructions
@@ -21,7 +21,7 @@
         - The app will expire in 7 days or 1 year
         - Add an alert with enough time before expiration to prepare to rebuild
 
-!!! warning "FAQs"
+!!! question "FAQs"
     - **"The build seems to take a long time; is that normal?"** Yes. The good news is the Workspace build is much faster than the old method.  It is not unusual for one of the build steps to take *much* longer than all the others.
         - The build process always ends with either a "Build Succeeded" or "Build Failed" message; so just wait it out until you see one of those displayed.
         - If you are away from you computer when the build succeeds, you might miss the "Build Succeeded" message, but you will see "Running Loop on <your phone name\>" at the very top of the Xcode window - and the Loop app will be open on your phone.
@@ -143,12 +143,12 @@ Make sure your phone is unlocked.
 
 Connect your iPhone via cable to the computer, select your iPhone from the very top of the drop-down list.  Your **iPhone’s personal name** should be at the top of the list. Don't accidentally select the generic iOS simulators listed below your iPhone's name.  
 
-!!! info "Helpful Tips"
+!!! abstract "Helpful Tips"
 
     - If this is the first time your iPhone has been plugged into this computer, you will need to open the iPhone and select "Trust this Computer" before your device will be useable in the menu selection.
     - If this is the first time your watch has been paired to the iPhone, you will need to select "Trust this Computer" on your watch.
 
-!!! danger "Most Common Mistake"
+!!! warning "Most Common Mistake"
 
     - The most common mistake in this step is:
         - not selecting Loop (Workspace) (old graphic; yours must be Workspace)
@@ -165,7 +165,7 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
 
 _The graphics in this section have not been updated to show "Loop (Workspace)"._
 
-!!! danger "Free Developer Account Users: READ ME"
+!!! abstract "Free Developer Account Users: READ ME"
 
     If you are using a free developer account, you will need to do an extra step before you can successfully sign the targets. As a free developer, you are restricted from building apps that have Siri or push notification capabilities built-in. Loop has both of these capabilities, so you will need to disable them before signing and building your app.
 
@@ -199,7 +199,7 @@ A successfully signed target will have a provisioning profile and signing certif
 ![Xcode window showing the four targets that must be signed](img/success.png){width="750"}
 {align="center"}
 
-!!! warning "Advanced Users Only"
+!!! abstract "Advanced Users Only"
 
     There are more targets which must be signed to build the dev branch - should be obvious in the Xcode window.
 
@@ -251,7 +251,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 ### Codesign / Keychain Access
 
-!!! info "First Time Builder or First Time on this Computer"
+!!! abstract "First Time Builder or First Time on this Computer"
 
     Sometime during your first build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.
 
@@ -267,7 +267,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 ## Build Finished
 
-!!! info "First Time Building on a New Device?"
+!!! abstract "First Time Building on a New Device?"
 
     If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like the one shown below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before the Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings->General->Device Management (or profiles, Profiles & Device Management on newer iOS) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to [this Build Error section](build_errors.md#device-management-could-not-launch-loop) to find the solution.
 
@@ -276,7 +276,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 ## Build Succeeded
 
-!!! danger ""
+!!! info ""
 
     Congrats! If the build is successful, you'll see the message "Running Loop..." across the top of the Xcode window. Pick up your phone and look at it.
 
@@ -292,7 +292,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
     Next, you will use the [Set up App](../operation/overview.md) section of this website to keep proceeding safely.
 
-!!! warning "FAQ: But what about those yellow alerts that remain in Xcode? Should I worry about them?"
+!!! question "FAQ: But what about those yellow alerts that remain in Xcode? Should I worry about them?"
 
     If you see yellow alerts after your build is done...those are not an issue. Whether your build succeeded or failed...the yellow warnings play no role in either outcome. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.
 
@@ -304,7 +304,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! warning "Breaking News for Xcode 13"
 
-    There is a new error for Xcode 13, "WatchApp Extension.entitlements" that happens if you don't wait for indexing to complete. If you get this, follow this link: [WatchApp Extension Solution](build_errors.md#xcode-13-indexing-not-finished-watchapp-extension-entitlements)
+    There is a new error for Xcode 13, "WatchApp Extension.entitlements" that happens if you don't wait for indexing to complete - and often still happens even if you do wait. If you get this, follow this link: [WatchApp Extension Solution](build_errors.md#xcode-13-indexing-not-finished-watchapp-extension-entitlements)
 
 
 If you get any other message that your build failed and see **RED ERROR** messages, go to the [Build Errors](build_errors.md) page to find the steps to fix your build error. Most build errors are covered on that page along with instructions on how to fix them and how to ask for help.
@@ -331,7 +331,7 @@ The next step is the begin the [Set up App](../operation/overview.md) process.
 
 ## Next Steps
 
-!!! danger "Add a Calendar Reminder"
+!!! info "Add a Calendar Reminder"
 
     - It is good practice to add a reminder to your calendar when the app will expire (7 days or 1 year).
     - Be sure to add an alert to that reminder so you have enough time to do all the [Loop Updating](updating.md) steps to build the app again before it expires

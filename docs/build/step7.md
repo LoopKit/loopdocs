@@ -9,18 +9,18 @@ However, there are some forks, or the Workspace method for the dev branch, where
 The instructions for Step 7 (which most folks can skip) are maintained for those people who need to know how to install carthage and how to configure a new M1 computer terminal using Rosetta.
 
 
-!!! danger "Time Estimate"
+!!! abstract "Time Estimate"
     Some forks and branches of Loop require you to have carthage 0.36.0 installed on your computer.
 
     - 10-15 minutes assuming you know your computer's password
 
-!!! info "Summary"
+!!! abstract "Summary"
 
     - If you have a new M1 Mac, follow the Rosetta instructions the first time you open a terminal window
     - Open a terminal window
     - Install carthage 0.36.0 if you need it
 
-!!! warning "FAQs"
+!!! question "FAQs"
 
     - **"What if I don't install carthage?"** For many cases, you do not need to separately install carthage.  But if your build fails with the message that carthage is not installed, then you need to install it.
 
@@ -37,7 +37,7 @@ Click on the Apple icon, select System Preferences, and open the Users & Groups 
 
 ## Configure Terminal App for Rosetta on M1 Computer
 
-!!! info "New Apple M1 chip users: IMPORTANT STEP"
+!!! abstract "New Apple M1 chip users: IMPORTANT STEP"
 
     If you purchased one of the new Apple computers that have the brand new Apple M1 chip, you will need to do this step (one time only) to open the Terminal app using a "converter" app, called Rosetta.
 

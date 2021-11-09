@@ -1,11 +1,11 @@
 # Updating Loop
 
-!!! green "Time Estimate"
+!!! info "Time Estimate"
 
     - 25 minutes, if already have updates done
     - 40-90 minutes, if need to install Apple update(s)
 
-!!! info "Summary"
+!!! abstract "Summary"
 
     * Step 1: Install macOS and Xcode updates based on your phone iOS
     * Step 2: Check your Developer Account
@@ -13,7 +13,7 @@
     * Step 3: Download Updated Loop code and Build Loop
         * Follow the link to Step 14
 
-!!! faqs "FAQs"
+!!! question "FAQs"
 
     - **"What is an update?"** Anytime you want to change versions, add or change a customization, follow the instructions on this page.
     - **"Do I delete my old Loop app first?"** Definitely **not**! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
@@ -25,7 +25,7 @@
 
 Under ordinary circumstances, you do not *have to* update your Loop app until it expires (1 year for a paid account). However, we encourage regular updates when a new version of iOS, or of Loop, is released because they often contain bug fixes or improvements which may increase operational stability.
 
-!!! danger ""
+!!! abstract "Best Practice"
 
     It is good practice to first check if your computer (macOS or Xcode) will require an update to support building Loop to your phone BEFORE applying an iOS update to your Looping phone. This [page](https://loopandlearn.org/version-updates) is a good reference to check for each iOS version to provide an all clear.
 
@@ -71,7 +71,7 @@ If you see that you need to update (and you probably do), then keep following in
 
 If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.
 
-!!! warning ""
+!!! warning "Missing Xcode or Command Line Tools"
 
     If you fail to have [Xcode](step8.md) or [Xcode Command Line Tools](step9.md) installed, you will get one of these error when you attempt to run the build-select script (or something similar):
 
@@ -82,7 +82,7 @@ If you are finding installation of Xcode from the App Store incredibly slow, try
     * Scripting Bridge could not launch application . . .
 
 
-!!! info "Follow Build Step 9 after updating Xcode"
+!!! abstract "Follow Build Step 9 after updating Xcode"
 
         Make sure to restart your computer after updating Xcode and follow the instructions in Build Step 9. There's a known issue that happens often enough to be frustrating if you skip those steps. Either a build error about missing simulators or a "device not connected" (even when phone is connected). It's not always required...but this is a good easy ounce of problem prevention.
 
@@ -151,7 +151,7 @@ Please quit out of Xcode and repeat the steps.
 
 After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folder(s) now if you want).
 
-!!! info "Where is the old folder?"
+!!! abstract "Where is the old folder?"
 
     Maybe you don't remember where you put the folder. Both the older zip-download method and the new build-select-script method make folders in your download folder as shown in the graphic below. If you are tight on space, all of these folders can be deleted.  Or, if you are paranoid, download fresh and build Loop; and then go back and delete all but the most recent copy.  The nice thing about the build-select script is it automatically generates the folder name with the date and time of the download.
 
@@ -184,7 +184,7 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
 - This does not affect the provisioning profiles currently on your phone
 
 
-!!! warning "How to delete old provisioning profiles"
+!!! question "How to delete old provisioning profiles"
     - Find your Terminal app (in Applications under Utilities)
     - Open your Terminal app
     - Click on the word "Copy" to load your paste buffer, then paste it into the Terminal prompt
@@ -243,7 +243,7 @@ More information is shown in the orange box below.
 
 This may not be necessary, but it is one of the first steps to try if you do get a build error. Since you already have Terminal app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.
 
-!!! green "Clean cache and derived data"
+!!! abstract "Clean cache and derived data"
 
     Using Terminal app that should still be open from Step 4a, click on the word "Copy" to select these two lines of code and paste into the terminal.
 
@@ -264,13 +264,13 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 From here, go straight to [Step 14 Build Loop app](step14.md) and do just like you did the first time. Open the new Loop code that you just downloaded a couple steps above, plug in the phone, select your phone, sign four targets, code customizations (if wanted), and then build button. Easy peasy.
 
-!!! danger "Add a Calendar Reminder"
+!!! info "Add a Calendar Reminder"
 
     - It is good practice to add a reminder to your calendar when the app will expire (7 days or 1 year).
     - Be sure to add an alert to that reminder so you have enough time to do all the [Loop Updating](updating.md) steps to build the app again before it expires
 
 
-!!! info "Double check expiration date"
+!!! abstract "Double check expiration date"
 
     If you want to make sure that step 4 above (deleting the provisioning profiles) went well, check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app, if you successfully build, will function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.
 
@@ -279,7 +279,7 @@ From here, go straight to [Step 14 Build Loop app](step14.md) and do just like y
 
 ### Step 6: Resolve Build Errors if needed
 
-!!! green "Check Build Errors Page"
+!!! danger "Check Build Errors Page"
 
     If you get a build error, check the [Build Errors page](build_errors.md). You might be able to resolve it yourself.
 
