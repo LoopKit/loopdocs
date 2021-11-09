@@ -17,9 +17,7 @@ theme:
 # repo_url: https://github.com/LoopKit/Loop
 
 extra_css:
-    - stylesheets/admonitions.css
-    - stylesheets/extra.css
-    - stylesheets/styles.css
+    - stylesheets/primary-color.css
 
 extra_javascript:
     - stylesheets/copy_button.js
