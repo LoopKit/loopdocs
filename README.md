@@ -147,13 +147,4 @@ The markdown syntax used by loopdocs is:
 
 ## Copy Button
 
-A rudimentary copy button is available, but could be improved.
-
-* pretty rudimentary but it works (tested for Chrome and Safari)
-* each id must be unique (I'm sure there's a way to fix this . . . later)
-* example:
-
-```markdown
-<code id="copy-step14-01">/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"</code>
-<button type="button" onclick="copyEvent('copy-step14-01')">Copy</button>
-```
+The copy button is built into the Material theme for every code block.
