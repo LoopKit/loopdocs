@@ -261,7 +261,7 @@ Additional customizations are found on another website. If you did not find the 
 * Adjust Percent Bolus for Automatic Dosing Strategy
 * Adjust Watch Crown Rotation Required for Bolus Confirmation
 * Pods: Increase Log File History Hours
-* These Require Workspace Builds (use [Build Select Script](https://www.loopandlearn.org/build-select/))
+* These Require Workspace Builds (which are now standard)
     * Modify Override Sensitivity
     * Medtronic: Disable mySentry (Current Loop removes need for this)
     * Pods: Add Extra Insulin on Insertion
