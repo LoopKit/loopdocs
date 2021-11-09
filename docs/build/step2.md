@@ -1,19 +1,19 @@
 # Step 2: Compatible iPhone or iPod touch
 
-!!! danger "Time Estimate"
+!!! info "Time Estimate"
     - 5 minutes, if your iPhone or iPod touch is at iOS 12.4 or newer; iOS 14.4.2 or higher is recommended
     - 20 minutes, if need to update your compatible device to a new iOS
     - 10 minutes, if you need to order a [compatible device](step2.md#compatible-devices) from Apple website
     - 0 minutes, if you own an Android and won't buy Apple products; check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/)
 
-!!! info "Summary"
+!!! abstract "Summary"
     - Check your iOS version and make sure you have iOS 12.4 minimum
     - WARNING, although the current version of Loop can be built with iOS 12.4, using newer iOS is strongly recommended
     - If using Dexcom CGM, your Looping iPhone/iPod touch will need the Dexcom app installed on it to Loop without an internet connection.
     - Make sure the phone has good battery life
     - This is a good time to read [Turn Off Automatic Updates](#turn-off-automatic-updates)
 
-!!! warning "FAQs"
+!!! question "FAQs"
     - **"Can I use an android?"** No. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
     - **"Can I use an iPad?"** No. iPads do not support Apple Health and Loop uses Apple Health.
     - **"Does my iPhone need a cell plan?"** No. Loop works using communication via Bluetooth and the RileyLink compatible device with your CGM and pump; no internet connection required. However, without a cell plan, connection to the internet relies on WiFi availability. If access to Dexcom Follow or Nightscout monitoring of Loop is a priority, then a cell plan may be desired.  

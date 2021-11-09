@@ -18,7 +18,7 @@ The current released version for Loop master is v2.2.6. The dates and contents f
 
 Several users reported issues with IOB accounting in Loop v2.2.5, where IOB was being under-reported, which could cause Loop to continue recommending increases in insulin delivery.
 
-A fix has been made and is available as Loop v2.2.6. This is now the new master, so you build it using the standard zip download from [Build Step 13: Download Loop](../build/step13.md#download-loop) or using the [Build-Select Script](https://www.loopandlearn.org/build-select/) and choosing Build Loop and Master Branch.
+A fix has been made and is available as Loop v2.2.6. This is now the new master, so you build it using the standard updating procedure [Build Updating](../build/updating.md).
 
 This is a serious issue, so updating to this release is strongly recommended for anyone currently running v2.2.5. If you tap on Loop Settings and look at the top, and see LOOP V2.2.5, then rebuild ASAP. The time window when you would have built v2.2.5 is from Aug 22 through Sep 6, 2021.
 
@@ -155,7 +155,7 @@ Released April 17, 2020
 
 Released December 31, 2019.
 
-!!! danger "For Reference Only"
+!!! abstract "For Reference Only"
     Enough time has passed that this version should no longer be on anyone's phones (the one-year expiration time should take care of that).
 
     There is a lot more detail provided in the Loop v2.0 section because it constituted a significant change to parts of Loop from prior releases. This section and the Omnipod-Testing branch sections are left here for historical interest.
@@ -209,7 +209,7 @@ You'll notice dashed lines in the HUD for the CGM value if the CGM data goes old
 
 ### Common build error squashed
 
-One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  Ahhhhh! I love it!!!
+One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  (Unless you are building dev branch, currently v2.3.0, - then no spaces allowed.)
 
 ### Nightscout profile uploading
 
@@ -299,7 +299,7 @@ After much testing and tweaking, eventually the recipes get the flavors right (b
 
 ## What's going on in the dev branch?
 
-The dev branch is where the next version of Loop is being developed and tested.
+The dev branch, currently v2.3.0, is where the next version of Loop is being developed and tested.
 
 If you choose to come into a dev branch build, you need to be aware that dev may update code frequently and unannounced in the traditional sense that most users in Looped group or Instagram would see. Developers are not helped by people being in a dev branch if those users are mistakenly thinking of it as a stable master branch with lots of detailed docs to go with it. People should only use a dev branch build if they EDUCATE themselves on the expectations and how to properly manage dev information and updates. People using dev branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.
 

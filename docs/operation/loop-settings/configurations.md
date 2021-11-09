@@ -150,9 +150,9 @@ As with all Loop versions, you can manually bolus at any time by pressing the Bo
 
 Click the + in the upper right to add carb ratios for various times of day. Loop works best if you have [tested and optimized](https://kdisimone.github.io/looptips/settings/settings/) your carb ratio settings for accuracy.
 
-!!! info "Beware of other apps writing carbs to Health app"
+!!! warning "Beware of other apps writing carbs to Health app"
 
-    If you are using a third-party app (such as Spike or MyFitness) that can write carbohydrates to the phone's Health app, you will need to edit the permissions to make sure Loop doesn't double carb entries.  You should disable the third-party app's permissions in Health so that they can only `read` and not `write`.  See [Carb Entries with Third Party apps](../features/carbs.md#third-party-apps) for more information about this setting.
+    If you are using a third-party app (such as Spike or MyFitness) that can write carbohydrates to the phone's Health app, you will need to double-check permissions to make sure Loop doesn't read those carb entries.  Confirm Loop permissions in Health to only `write` and not `read` carbs.  See see [Loop Permissions](../../build/health.md#loop-permissions).
 
 ## Insulin Sensitivities
 

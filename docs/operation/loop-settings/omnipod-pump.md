@@ -11,7 +11,7 @@ Let’s start by clicking on the Loop Settings button in the toolbar at the bott
 
 ## Select RileyLink
 
-!!! danger ""
+!!! warning ""
     New RileyLink compatible devices won't have a name listed next to their slider at first. The name will only be displayed after connecting the device to Loop for the first time. So, if all you see in the device list is a little toggle and no "RileyLink" name...go ahead and switch that toggle. The default device name will appear after that toggle is green.
 
     You can later [personalize](rileylink.md) the default device name once it is connected to Loop.
@@ -47,7 +47,7 @@ The next screen will offer two areas where you will need to enter information:
 
 When you finish entering these values, press the blue `Continue` button on the bottom of the Pod Settings screen to continue with the next steps of Pod setup.
 
-!!! danger "Pod Filling and Insertion"
+!!! info "Pod Filling and Insertion"
     The Pod filling and insertion instructions are the same with the Loop app as they are for the PDM.  These videos: [Filling a Pod with Insulin](https://youtu.be/qJBN6rlvn_Y) and [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI), may be useful.  You will use your phone and RileyLink compatible device instead of the PDM.  Be sure to keep the phone and RileyLink close during pairing and insertion because the Pod uses a low-power mode during these activities.
 
 ## Pair Pod
@@ -80,7 +80,7 @@ When you finish entering these values, press the blue `Continue` button on the b
 
 Finish the setup using the default expiration reminder time (2 hours before a full 3-days of usage). You can modify that expiration reminder at any time, see [Expiration Reminder](pump-commands.md#expiration-reminder). The notification will come from Loop; your Pod will not beep at this time. Setup is complete and your Pod is ready for use when you press the `Continue` button.
 
-!!! danger "Range"
+!!! info "Range"
     Now that the priming and insertion steps are complete, the Pod is in normal power mode, so the [range](../../faqs/rileylink-faqs.md#range) between the Pod and RileyLink compatible device is increased.
 
 ![img/pod-setup-03-complete.png](img/pod-setup-03-complete.png){width="650"}

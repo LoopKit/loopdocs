@@ -1,17 +1,17 @@
 # Step 4: Compatible CGM
 
-!!! danger "Time Estimate"
+!!! info "Time Estimate"
 
     - 10 minutes to read this page
 
-!!! info "Summary"
+!!! abstract "Summary"
 
     Loop is compatible with:
 
     - Dexcom G4 Share, G5, or G6 CGM systems
     - Medtronic sensors connected to a Loop-compatible Medtronic pumps
 
-!!! warning "FAQs"
+!!! question "FAQs"
 
     - **"What about Libre sensors?"** You will need to seek out a modified version of Loop (search posts and then ask about "forks" that support your CGM in a [Loop Social Media](../index.md#stay-in-the-loop) site.)
     - **"What about Eversense?"** Eversense's application does not integrate with Apple Health nor has the communications protocols for Eversense been reverse engineered for iOS. Therefore, Eversense is not currently compatible with Loop.

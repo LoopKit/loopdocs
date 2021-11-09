@@ -17,12 +17,8 @@ theme:
 # repo_url: https://github.com/LoopKit/Loop
 
 extra_css:
-    - stylesheets/admonitions.css
-    - stylesheets/extra.css
-    - stylesheets/styles.css
+    - stylesheets/primary-color.css
 
-extra_javascript:
-    - stylesheets/copy_button.js
 
 markdown_extensions:
     - meta
@@ -63,7 +59,6 @@ nav:
     - 'Updating/Rebuilding your Loop': 'build/updating.md'
     - 'LoopWorkspace': 'build/loopworkspace.md'
     - 'Step 7 Skip Step 7': 'build/step7.md'
-    - 'Archived Zip Build': 'build/step14-zip.md'
 - Set up App:
     - 'Overview': 'operation/overview.md'
     - 'Step 1: Health Permissions': 'build/health.md'

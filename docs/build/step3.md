@@ -1,16 +1,16 @@
 # Step 3: Compatible Pump
 
-!!! green "Time Estimate"
+!!! info "Time Estimate"
     - Omnipod users: 3 seconds to remember which PDM you've been using.
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
 
-!!! info "Summary"
+!!! abstract "Summary"
     - If you have a big clunky PDM with a built-in BG meter, you can use your pods for Loop. (These pods, also known as Eros pods, have a clear needle cap.)
     - If you have a slim touch screen android-looking PDM, you can NOT use your Dash pods for Loop. (These pods have a blue needle cap.)
     - If you have a Medtronic, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware.
 
-!!! faqs "FAQs"
+!!! question "FAQs"
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump)
     - **"What are the differences between Medtronic pump models?"** This question is also answered in the [Extra Details](#extra-details-on-medtronic) section
     - **"But what about the other types of pumps?"** No other pumps work with Loop at this time  

@@ -5,7 +5,7 @@ Your Loop will have a lot of blank spots until you input some basic settings. Th
 
 ## Prepare Medtronic Pump
 
-!!! info ""
+!!! warning ""
 
     Before you begin the rest of the setup process, there are several steps on your Medtronic pump that you will need to complete prior to moving on with Loop setup. **DO NOT SKIP THESE STEPS OR YOUR LOOP WILL NOT WORK.**
 
@@ -26,7 +26,7 @@ Let’s start by clicking on the Loop Settings button in the tool bar at the bot
 
 ## Connect Pump to Loop
 
-!!! danger ""
+!!! warning ""
     New RileyLink compatible devices won't have a name listed next to their slider at first. The name will only be displayed after connecting the device to Loop for the first time. So, if all you see in the device list is a little toggle and no "RileyLink" name...go ahead and switch that toggle. The default device name will appear after that toggle is green.
 
     You can later [personalize](rileylink.md) the default device name once it is connected to Loop.

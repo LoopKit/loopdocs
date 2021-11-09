@@ -1,16 +1,16 @@
 # Step 12: Meet the Community
 
-!!! danger "Time Estimate"
+!!! info "Time Estimate"
     - Read about your [Social Media Options](../index.md#stay-in-the-loop): 5 minutes
     - Join one or more groups: 10 minutes
 
-!!! info "Summary"
+!!! abstract "Summary"
     - Learn how to use the search tools in Looped, Zulipchat, Loopdocs, and Looptips
     - Learn the motto "Help us help you".
     - Learn what information helps in solving a problem in building or in using Loop.
     - Avoid vague phrases and the word "it"; aim for details and specifics and use screenshots.
 
-!!! warning "FAQs"
+!!! question "FAQs"
     - **"I'm worried I'll ask a stupid question"** Don't worry. All the mentors started out as novices. Focus instead on asking a **thorough** question. A thorough question explains what you've already tried or read, has screenshots of what you are confused by, and any other details you can provide.
 
 ## Online Groups
@@ -19,7 +19,7 @@ There's a whole wonderful community of people already Looping who are willing to
 
 The Loop help found at these sites is provided by volunteers. None of the people are paid to answer questions or spend time troubleshooting. They do it because they want to help others. Please decrease their support burden by doing some simple steps before turning to others for help. Please click the image below to watch this video full of tips to make the most of your online resources.
 
-!!! danger ""
+!!! info ""
     Please watch this video (just under 7 minutes) to learn about using announcements and searches in Facebook groups and the LoopDocs pages.
 
     Note, the LoopDocs menus were reorganized after this video was prepared.  The information on using LoopDocs starts on the home page and continues as you step through the build pages, which includes the gear information.   

@@ -1,12 +1,12 @@
 # Step 1: Compatible Computer
 
-!!! danger "Time Estimate"
+!!! info "Time Estimate"
     - 5 minutes, if you already have a Mac with Big Sur macOS
     - 30-60 minutes, if you need to install macOS updates
 
     Hint: OS stands for Operating System
 
-!!! info "Summary"
+!!! abstract "Summary"
     There are 3 things that have to be at a consistent version number to build Loop.
 
     * iPhone/iPod iOS determines the **minimum** [Xcode version (discussed in Step 8)](step8.md)
@@ -29,7 +29,7 @@
     - macOS 10.15.x (Catalina) works up through iOS 14.4.x
     - macOS 10.14.x (Mojave) only works for phones with iOS 13.2 or earlier (and yes you can build to a 12.x device - but that won't be supported much longer.)
 
-!!! warning "FAQs"
+!!! question "FAQs"
     - **"Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can. Please read this FAQ about using a [Virtual Machine](../faqs/FAQs.md#can-i-use-a-pc-or-windows-computer-to-build).
     - **"Can I borrow someone else's Apple computer?"** Please see this FAQ about [Borrowing a Computer](../faqs/FAQs.md#do-i-need-to-own-my-own-apple-computer).
     - **"How often do I need to use the computer?"** Computer access is required when you are
@@ -45,7 +45,7 @@ The newest Apple computers, released in November 2020, are compatible with build
 
 ## MacOS
 
-The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Big Sur can be used to build Loop for **any** of the phone iOS versions listed below but is **required** to build on any iPhone with an iOS version starting with iOS 14.5.
+The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Monterey, can be used to build Loop for **any** of the phone iOS versions listed below but Big Sur is **required** to build on any iPhone with an iOS version starting with iOS 14.5.
 
 * **If you have iOS 15 or newer**, the minimum macOS is Big Sur (11.3)
 
@@ -66,7 +66,7 @@ These next few lines are for Loopers who previously built with older macOS.
 * **If you have iOS 12.4 to 13.2**, the minimum macOS is 10.14.4 (Mojave), newer is ok (Catalina or Big Sur)
 
 
-!!! danger "iOS Dictates Your Computer Needs"
+!!! warning "iOS Dictates Your Computer Needs"
 
     Put simply for Loopers...the more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS will need to be to enable a fresh build of Loop. A new build is required at least once a year. You can't avoid iOS updates forever...you just need to be aware of how they relate to each other if your computer is "getting on the older side". There will be more information presented on iOS in [Build Step 8: Download Xcode](step8.md#download-xcode).
 
