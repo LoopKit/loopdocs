@@ -112,7 +112,20 @@ To add header row, use:
 | <div style="width:72px">Column 1</div> | Column 2 |
 ```
 
-### Admonitions
+### Admonitions and CSS
+
+WARNING - in process of changing to use the standard set of admonitions and css styles that come with the Material theme.
+
+For build steps:
+`info`  instead of `green` or `danger`
+`abstract` instead of `info`
+`question` instead of `faqs` or `warning`
+
+To get a warning triagle, use `warning`
+
+To get a red zag icon, use `danger`
+
+The rest of this file will be updated once the new theme settles down.
 
 [Admonitions](https://python-markdown.github.io/extensions/admonition/) are a markdown extension that enable formatted blocks for visually calling out information.
 

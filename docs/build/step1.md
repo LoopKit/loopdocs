@@ -1,12 +1,12 @@
 # Step 1: Compatible Computer
 
-!!! danger "Time Estimate"
+!!! info "Time Estimate"
     - 5 minutes, if you already have a Mac with Big Sur macOS
     - 30-60 minutes, if you need to install macOS updates
 
     Hint: OS stands for Operating System
 
-!!! info "Summary"
+!!! abstract "Summary"
     There are 3 things that have to be at a consistent version number to build Loop.
 
     * iPhone/iPod iOS determines the **minimum** [Xcode version (discussed in Step 8)](step8.md)
@@ -29,7 +29,7 @@
     - macOS 10.15.x (Catalina) works up through iOS 14.4.x
     - macOS 10.14.x (Mojave) only works for phones with iOS 13.2 or earlier (and yes you can build to a 12.x device - but that won't be supported much longer.)
 
-!!! warning "FAQs"
+!!! question "FAQs"
     - **"Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can. Please read this FAQ about using a [Virtual Machine](../faqs/FAQs.md#can-i-use-a-pc-or-windows-computer-to-build).
     - **"Can I borrow someone else's Apple computer?"** Please see this FAQ about [Borrowing a Computer](../faqs/FAQs.md#do-i-need-to-own-my-own-apple-computer).
     - **"How often do I need to use the computer?"** Computer access is required when you are

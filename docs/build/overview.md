@@ -31,7 +31,7 @@ Yes - if you were paying attention, the suggestion is to go from this page throu
 
 ### Build-Overview: iOS 15 Requires Xcode 13
 
-!!! warning "iOS 15 Requires Xcode 13"
+!!! danger "iOS 15 Requires Xcode 13"
 
     In September 2021, Apple released iOS 15 (phone operating system).  
 
@@ -49,7 +49,7 @@ If you have never used Loop, click on links below for an introduction.
     * The menus have been rearranged slightly but the overall concept of how to use Loop is demonstrated in this video
     * The workout target shown in the video has been completely reworked as Overrides
 
-!!! danger "New Video"
+!!! success "New Video"
     * This newer [What is Loop](https://youtu.be/64qhgnmkyAE) video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) was created by the Loop and Learn Team
     * Special thanks to Tina and Reese Hammer for the terrific video
     * Special thanks to Matthew Fouse for the generous use of his beautiful graphics
