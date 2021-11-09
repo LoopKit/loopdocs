@@ -115,9 +115,13 @@ If you opted for the free DIY Nightscout, you will need to clean your database o
 
 ### Phone Storage is Full
 
-This was recently reported by a user. His phone storage was almost full and the reported error messages was:
+This was recently reported by a user. His phone storage was almost full and the reported error messages for Loop was:
 
 *  `Sqlite Error: A Sqlite Error Occurred: (13) Database or Disk is Full`
+
+The error message from Dexcom was not as helpful.  If you see this, check your phone storage:
+
+* `The Dexcom G6 app has stopped working. Please delete the app from your device and redownload it from the App Store`
 
 Solution: clear up space on your phone.
 
