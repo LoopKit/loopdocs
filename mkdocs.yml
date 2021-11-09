@@ -19,8 +19,6 @@ theme:
 extra_css:
     - stylesheets/primary-color.css
 
-extra_javascript:
-    - stylesheets/copy_button.js
 
 markdown_extensions:
     - meta
