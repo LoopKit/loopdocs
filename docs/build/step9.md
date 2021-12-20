@@ -31,13 +31,21 @@ Helpful tip: When the Command Line Tools installation is done and the pop-up win
 
 ## Simulator Download
 
-Starting with Xcode 12, the simulators are no longer being downloaded automatically.  You may be required to download them yourself. While still on the Xcode Preferences window, after adding command line tools using the Locations tab, click on the Components tab.  It should look similar to the first figure below.
+Starting with Xcode 12, the simulators were not being downloaded automatically; and you were required to download them yourself.
+
+With Xcode 13, things changed again. You are no longer required to download simulators manually and with Xcode 13.2.1, they are no longer shown.
+
+### For Xcode 12 ONLY
+
+While still on the Xcode Preferences window, after adding command line tools using the Locations tab, click on the Components tab.  It should look similar to the first figure below.
 
 Choose the iOS operating system closest to the one on your phone and click the down arrow to install it. (If your phone has iOS 14.4, and the biggest number simulator you see is iOS 14.3, download that one. If you phone has iOS 13.3, first we recommend updating, but if you choose not to, then select iOS 13.3 from the list.)
 
 Then scroll down to find the watchOS lines and choose the operating system on your watch (or biggest number if you don't have a watch paired) and click the down arrow to install it.
 
 Simulator download is now initiated and will continue in the background. You can keep going with the next steps, but let download complete before trying to build.
+
+If you see no simulators in this window - you probably missed the note above - not needed for Xcode 13.
 
 ![img/download-simulators-1.svg](img/download-simulators-1.svg){width="750"}
 {align="center"}
@@ -65,6 +73,9 @@ If you want to use a free developer account, you will simply enter your Apple ID
 ### Paid Developer Account
 
 If you enrolled in the paid account already and have confirmation that your account is active, enter the Apple ID of the paid developer account. It will show up with just your name and the `Admin` indication. If you have enrolled and are waiting, the `(Personal Team)` and `User` indication shows up until the paid account is confirmed by Apple.
+
+!!! note "Description"
+    The description line is initially empty. The added text about Paid and Free Account was added in an attempt to make the two types of accounts more obvious when making this graphic.  If you want, you can add your own description or just leave the line blank. When you put text in the decription line - it shows up in two places: To the left, just above the email address and to the right once that Apple ID is selected.
 
 ![accounts tab of xcode preferences](img/xcode_apple_id.svg){width="750"}
 {align="center"}
