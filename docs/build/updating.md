@@ -50,7 +50,7 @@ When you see "Loop" is No Longer Available on your phone, the only solution is t
 
     Follow this link, [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used), for instructions to determine what version was used when building the Loop app currently on your phone.
 
-    DO NOT INSTALL iOS 15 on your phone without first [updating](#when-to-update-loop) if the Xcode version used to build your Loop app is 12D or earlier - the Loop app will stop working and you will have to rebuild Loop.
+    DO NOT INSTALL iOS 15 on your phone without first [updating](#when-to-update-loop) Loop if the Xcode version used to build your Loop app is 12D or earlier - the Loop app will stop working and you will have to rebuild Loop.
 
 ## Step 1: Install macOS and Xcode updates
 
