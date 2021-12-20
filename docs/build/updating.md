@@ -44,11 +44,13 @@ The apps built and signed by you in Xcode with a paid developer account will onl
 
 When you see "Loop" is No Longer Available on your phone, the only solution is to rebuild the app.  All of your settings are still present on your phone, but your "provisioning profile" expired and you need to generate a new one. Once you build Loop on your phone, following the instructions on this page, all your settings will be maintained - assuming you build with the same [Apple Developers ID](../faqs/FAQs.md#what-happens-when-i-switch-apple-developer-id) that was used initially.
 
-!!! warning "iOS 15 Warning"
+!!! warning "iOS 15 Warning - Check Before You Update"
 
-    Any Loop app built with Xcode version prior to Xcode 12.5 will immediately fail when the phone is updated to iOS 15. If you last built Loop with Catalina do not install iOS 15.
+    Any Loop app built with Xcode version prior to Xcode 12.5 may immediately stop working when the phone is updated to iOS 15. If you last built Loop with Catalina do not install iOS 15 on your phone without an update.
 
     Follow this link, [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used), for instructions to determine what version was used when building the Loop app currently on your phone.
+
+    DO NOT INSTALL iOS 15 on your phone without first [updating](#when-to-update-loop) if the Xcode version used to build your Loop app is 12D or earlier - the Loop app will stop working and you will have to rebuild Loop.
 
 ## Step 1: Install macOS and Xcode updates
 
