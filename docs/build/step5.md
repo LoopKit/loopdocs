@@ -50,8 +50,8 @@ There used to be just one option, the original RileyLink. Now there are more opt
         - Maxx: 12 to 14 days
     - Must order either Omnipod or Medtronic version
     - This [EmaLink Information](https://github.com/sks01/EmaLink#emalink) includes photos of various EmaLink configurations as well as photos showing relative sizes of EmaLink, OrangeLink and RileyLink
-    - To obtain this device in Europe, send a private message via github to Sorin (sks01)
-    - To obtain this device in the US, please use this [Ema Order Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdcHBUN6e1yPxxvlaXYRBL1liF9W8OYDOpTR2tWquXESo0bKg/viewform)
+    - In North America, available from [EmaLink.us](https://www.emalink.us) or [CustomTypeOne.com](https://www.customtypeone.com)
+    - Outside North America, please use this [Ema Order Sheet](https://docs.google.com/forms/d/e/1FAIpQLSdcHBUN6e1yPxxvlaXYRBL1liF9W8OYDOpTR2tWquXESo0bKg/viewform)
 
 ## More information
 
