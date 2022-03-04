@@ -21,6 +21,6 @@ Pre-Meal.
 
 Setting the pre-meal target to the same value as your usual correction range
 will have no impact on Loop, even if activated accidentally.  The intent of
-pre-meal is [limit the impact of pre-bolusing out of range](https://diyps.org/2016/07/11/picture-this-how-to-do-eating-soon-mode/).  Do not set pre-meal
+pre-meal is to [limit the impact of pre-bolusing out of range](https://diyps.org/2016/07/11/picture-this-how-to-do-eating-soon-mode/).  Do not set pre-meal
 limits to any low glucose values requiring treatment.
 
