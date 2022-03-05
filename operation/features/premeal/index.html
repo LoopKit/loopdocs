@@ -918,9 +918,50 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Pre-meal target
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Pre-meal target
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-set-pre-meal-targets" class="md-nav__link">
+    How to set pre-meal targets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessing-the-impact-of-pre-meal" class="md-nav__link">
+    Assessing the impact of pre-meal
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1634,6 +1675,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-set-pre-meal-targets" class="md-nav__link">
+    How to set pre-meal targets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessing-the-impact-of-pre-meal" class="md-nav__link">
+    Assessing the impact of pre-meal
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1647,10 +1710,29 @@
                 
                 <h1 id="pre-meal-targets">Pre-meal targets<a class="headerlink" href="#pre-meal-targets" title="Anchor link to this Header on this Page">&para;</a></h1>
 <p align="center"><img alt="img/toolbar.png" src="../img/toolbar.png" width="450" /></p>
-<p>The Loop toolbar's second icon from the left is a small clock with a knife and fork on the sides. This is the pre-meal tool. The tool will be colored grey until you define a set of blood glucose targets for it in Loop settings (within the Correction Range section). Once you set pre-meal targets in that section, the icon will be colored green and available for use.</p>
+<p>The Loop toolbar's second icon from the left is a small clock with a knife and fork on the sides. This is the pre-meal tool.  The tool will be colored grey until you define a set of blood glucose targets for it in Loop settings.  Once a pre-meal target is available in Loop Settings, the icon will be colored green and available for use.</p>
 <p>The pre-meal override target can be used to as an easy way to get a small amount of insulin delivered before a meal in order to help control post-meal blood glucose spikes. It's not designed to replace a traditional pre-bolus, but rather as a more gentle way to build up some pre-meal insulin activity.</p>
-<p>If your normal target is 100-110 mg/dL and pre-meal target is 80-80 mg/dL, for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first. Setting an override will also cancel pre-meal target.</p>
+<p>If your normal target is 100-110 mg/dL and pre-meal target is 80-80 mg/dL, for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled... whichever comes first. Setting an override will also cancel pre-meal target.</p>
 <p>Loop will adjust any insulin bolus as needed based on the extra insulin provided during this pre-meal time.</p>
+<h2 id="how-to-set-pre-meal-targets">How to set pre-meal targets<a class="headerlink" href="#how-to-set-pre-meal-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>In Loop settings, find the Correction Range section.  The Correction Range
+sections stores all targets for Loop over the hours of the day, including
+Pre-Meal.</p>
+<h2 id="assessing-the-impact-of-pre-meal">Assessing the impact of pre-meal<a class="headerlink" href="#assessing-the-impact-of-pre-meal" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The intent of pre-meal is to <a href="https://diyps.org/2016/07/11/picture-this-how-to-do-eating-soon-mode/">limit the impact of pre-bolusing out of
+range</a>.
+This is typically done by temporarily setting correction targets to the bottom
+or slightly below the normal correction range.  Do not set pre-meal limits to
+any hypoglycemic ranges that may require treatment.</p>
+<p>To mitigate the impact of unintentional pre-meal activation, setting the
+pre-meal target to the same value as your usual correction range will have no
+impact on Loop.  Some loopers set up a custom override to replace the pre-meal
+mode.  Creating a custom override to replace pre-meal will allow enabling the
+override remotely with Nightscout, permits specifying a custom duration, and
+will keep the override enabled after carbs are announced.  Toggling pre-meal
+mode will replace other overrides that may be active.  For people who want
+pre-meal button to be permanently disabled in order to avoid this behavior,
+please ensure to leave the pre-meal targets empty after a fresh install.</p>
                 
               
               
