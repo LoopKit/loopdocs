@@ -14,7 +14,7 @@ Loop will adjust any insulin bolus as needed based on the extra insulin provided
 ## How to set pre-meal targets
 
 In Loop settings, find the Correction Range section.  The Correction Range
-sections stores all targets for Loop over the hour of the day, including
+sections stores all targets for Loop over the hours of the day, including
 Pre-Meal.
 
 ## Assessing the impact of pre-meal
