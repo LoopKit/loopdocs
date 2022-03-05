@@ -34,5 +34,5 @@ Nightscout using remote overrides, permits a custom duration, and will stay
 enabled after carbs are announced.  Toggling pre-meal mode will replace other
 overrides that may be active.  For people who want pre-meal button to be
 permanently disabled in order to avoid this behavior, please ensure to leave
-the pre-meal targets empty after installing.
+the pre-meal targets empty after a fresh install.
 
