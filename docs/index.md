@@ -5,24 +5,35 @@ hide:
 
 # Welcome to Loop
 
-[New Look and Feel](#loopdocs-has-a-new-look-and-feel)
+We call this website "LoopDocs". It is the place to learn all things Loop. Before you leave this introduction page in your excitement to get to the Build Loop pages, please make a promise to yourself to read all the pages AND read them slowly, without hurry. This provides the greatest chance for successful builds and **<U>SAFE</U>** Loop operation.
+
+You may be overwhelmed or nervous to embark on building your own iPhone application, but don't be. This website has step-by-step instructions with screenshots and helpful arrows for every step. We do not expect people to have any prior technical knowledge ahead of time. The words may be very foreign and technical to most people, but the many screenshots will get you there even if you don't know the meanings of some words. The website is updated regularly to keep pace with Loop developments.
+
+To help, there are navigation buttons are at the bottom of each LoopDocs page, so as you get done with one step or topic, click on the link to the "next" page to continue. There's also a Search tool in the upper right corner for when you aren't sure where to find information.
+
+Finally, we highly recommend reading the [FAQs](../faqs/docs-faqs.md) pages several times during your early Loop build and use. How to change your dexcom transmitter and sensor, how to change pods, how to deal with new iPhone, how to build with a windows computer, how much does this cost, etc...all in FAQs.
 
 ## Introduction
 
-What is Loop?
-
-* Loop is an app you build yourself and load on your iPhone (or iPod)
-* Loop assists in the many insulin dosing decisions people with diabetes face every day
-* Loop uses a compatible continuous glucose monitor (CGM) and is paired using the RileyLink protocol with your compatible pump
-    * Loop works with older Medtronic pumps and the Eros (not Dash) Omnipods
-    * Loop requires a [RileyLink compatible device](build/step5.md#rileylink-compatible-devices) to communicate between the phone and pump
-
-What CGMs work with Loop?
-
-The Loop app works with Dexcom’s G4, G5 and G6 CGM. For Medtronic users, Loop also works with first generation Guardian and Guardian 2 Medtronic sensors compatible with the 522, 722, 523 and 723 pumps. There are other versions of Loop available that may work for you if you are not using one of these specific CGMs.  These other versions (known as forks) are created by Loop users and are maintained by them. This document does not cover those other CGM options, but check out the [Community Information](index.md#stay-in-the-loop) below.
+* Loop is an app you build yourself and load on an iPhone (or iPod)
+* Loop predicts where your blood glucose is heading based on carbohydrate intake, insulin on board, CGM data, and your personal therapy settings (e.g., carbohydrate ratio, basal rates, etc). 
+* Based on that prediction curve, Loop will automatically make (closed-loop mode) or recommend (open-loop mode) changes in insulin delivery to bring your blood glucose back to your specified target range.
+* Loop requires a [compatible continuous glucose monitor (CGM)](../build/step4.md) and a [compatible pump](../build/step3.md). 
+* For people using a compatible Medtronic pump or Eros pods, you'll also need a [pocket-sized device](../build/step5.md/) for the iPhone and pump to communicate. Orignially, there was only one option for that device and it was called a RileyLink. There are newer options available now, in addition to the original RileyLink, with different pros/cons to each. DASH users do not require this device.
 
 ![Loop main display on phone](img/phone_updated_loop.svg){width="300"}
 ![Loop watch screen on watch](img/watch_updated_loop.svg){width="300"}
+
+## Development History
+
+Loop is an open-source, shared project. The entire project has been, and continues to be, done by volunteers. From the code to the website, you're getting all this because dozens of volunteers have given their family time, so please add your time by reading this website thoroughly before embarking on your Loop journey.
+
+  * The early history of Loop development: [History of Loop and LoopKit](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805), written by Loop developer Nate Racklyeft
+
+  * The early days and the many advances brought about by the We Are Not Waiting diabetes community: [The Artificial Pancreas Book](https://www.artificialpancreasbook.com/) written by Dana Lewis and check out her website [DIYPS](https://diyps.org).
+
+  * How the Omnipod Eros pods were cracked to work with Loop: [Insulin Pumps, Decapped Chips and Software Defined Radios](https://medium.com/@ps2) written by Loop developer Pete Schwamb and [Deep Dip Teardown of Tubeless Insulin Pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf) by Sergei Skorobogatov
+
 
 !!! warning "Important"
     Please understand that this project:
@@ -32,178 +43,66 @@ The Loop app works with Dexcom’s G4, G5 and G6 CGM. For Medtronic users, Loop 
 
     **You take full responsibility for building and running this system and do so at your own risk.**
 
-The Loop algorithm on your phone predicts future glucose based on carbohydrate intake, insulin on board, and current CGM readings. You enter your own settings for desired correction range, basal schedule, insulin sensitivity factor (ISF), carbohydrate ratio (CR) and the type of insulin you are using.  The glucose predictions, using your settings and meal entries, provide Loop with the information needed to recommend a bolus or temporary basal rate to attain a targeted glucose range in the future.
+## Search Tool
+It is not uncommon to have a question about Loop. But, it is exceptionally rare to have the question not already answered in LoopDocs, so please bookmark this website and **SEARCH FOR ANSWERS** using navigation menus or the search tool found in the upper right corner of this website.
 
-The system can either operate “open-loop” where insulin delivery recommendations must be enacted by the user or “closed-loop” where modifications to insulin delivery are enacted automatically.
+Search for topics by clicking the Search tool, or typing the letter `s` on your keyboard. As you begin to type, suggested completions and links to pages are displayed.
+    <br/><br/>![example of using search](img/new-look-search-example.png){width="600"}<br/>
 
-You may be saying, "I can't build an app." But the wonderful volunteers in this community prepared this amazing website with step-by-step instructions containing pictures and arrows (say thank you to Katie DiSimone). The website is updated by more volunteers as improvements are made to the Loop app and when Apple makes changes to its iOS, Xcode and macOS environment. This language may sound scary, but it will become easier. As a new Looper don't be afraid to [reach out to mentors](#stay-in-the-loop), learn the terminology and before long you will be Looping. As you continue with Looping, you soon can pass on your knowledge to others.
+## Finding Help
 
-Once you've built the app, plan to learn to use it in stages. First, run “open loop” to familiarize yourself with Loop’s operation. This allows you to understand why Loop is making certain recommendations and determine if you need to adjust your Loop settings.
+Since this is a project used and developed by remotely collaborating volunteers, most of the support and conversations are via online platforms. There are a [number of options](../build/step12.md) for you to join in those conversations or as for help. Links to the main platforms are listed below. There are also numerous FB groups that formed by non-US Loop users (Italy, Australia, and several other countries have user groups).
 
-One thing many new users ask is why do my settings need to be different for Loop?  The main reason is that Loop uses a realistic insulin model including the long tail of residual insulin activity - and updates its calculations every 5 minutes. This is a different way of thinking about insulin delivery. Other strategies, e.g., assuming a linear fall-off model for insulin activity, correcting 2 or 3 hours after a meal, trading a higher basal rate to avoid worrying about snacks, etc. will not work.  There is a whole section on settings - just giving you a heads up.
-
-When you progress to “closed-loop”, do so safely by starting with conservative Correction Ranges and Delivery Limits and only progress to more aggressive settings after several days of no lows. Please ask questions at this point about why Loop is making the recommendations it does.  It should be similar to the therapy decisions you would make yourself.  If the recommendations it makes are different than you would make, try to figure out why. Hint - it is probably your settings.
-
-## How to Use These Docs
-
-Please - if you are new to Loop or haven't looked at the docs for a while:
-
-* Read (or at least skim) pages sequentially the first time through
-* Navigation shortcuts (might be available with on your browser/keyboard)
-    * Hit the letter `n` for next page
-    * Hit the letter `p` for previous page
-    * Hit the `End` button for end of page
-    * Hit the `Home` button to top of page
-* Pages get updated all the time
-
-New Theme, New Features:
-
-* The new theme has arrows at the bottom of each page to navigate forwards and backwards
-* There is a `Back to top` button to return you to top of the page
-
-If you've already read about the new look and feel of LoopDocs, you can skip to [How-to Search](#how-to-search).
-
-
-## LoopDocs has a New Look and Feel
-
-LoopDocs transitioned to a new theme (November 2021) with a different loop and feel. This theme (thank you [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)) allows  improved customization and much better searching. The top bar looks like this on your browser:
-
-![top tabs showing LoopDocs](img/new-look-logo.png){width="450"}
-{align="center"}
-
-Some details of the display are dependent on whether you are on a mobile device or a computer (with browser width > 1220 pixels).  After the first set of graphics, which show the difference between these two views for this location in LoopDocs, all other graphics show the wide-browser view.
-
-!!! warning "Graphics a bit out of date"
-
-    The list of `Headers on this Page` have been moved to the right side for Wide Browsers. The graphics will be updated later and then this comment will be removed.
-
-### Wide-Browser View
-
-* If you are on a browser with a screen width of 1220 pixels or more:
-    - There are tabs at the top to quickly skip between Sections
-    - Pages available for that section are shown to the left of the documentation
-        - If there is a `>` symbol, click on it to reveal additional pages
-    - Headers on the current page are shown to the right of the documentation
-
-    For example, after clicking on the `How to Use These Docs` heading, it is highlighted and the word to the right of the Loop Logo changes to indicate the name of the page currently being displayed.
-
-    ![new look for site on computer](img/new-look-wide.png){width="600"}
-
-
-### Narrow-Browser View
-
-* If you are on a mobile device or your browser width is narrow:
-    - This is the view of the same location in LoopDocs as shown above
-    - Note the `Hamburger Menu` (3-parallel-line stack) with the word `Home` (current Page) beside it
-    <br/><br/>![new look for site on mobile](img/new-look-narrow.png){width="450"}<br/><br/>
-    - When you tap on the hamburger menu, this view is shown:
-    <br/><br/>![mobile view of first hamburger](img/new-look-narrow-first-hamburger.png){width="450"}<br/><br/>
-        - The `Home` is highlighted because that's the Page you're currently displaying
-        - From here you have these choices
-            1. Click on the highlighted Page to view the current page Table of Contents
-            1. Click on a Section (for some Pages you may need to use the back button to get to the list of Sections or Pages of interest)
-
-
-## How-to Search
-
-* Search for topics by clicking the Search icon or typing the letter `s` on your keyboard
-    * You don't need to click anything else - just start typing
-    * If you clicked away from the search box, then click in the area above the words `Type to start searching`
-    <br/><br/>![how to use the search for this site](img/new-look-search-blank.png){width="250"}<br/><br/>   
-    * As you begin to type, suggested completions appear which you can choose by hitting the right-arrow key or keep typing
-    * At the same time a series of suggested Pages are displayed
-    <br/><br/>![example of using search](img/new-look-search-example.png){width="600"}<br/><br/>
-    * Scroll down and decide which Page is most likely
-        * If more than one instance of the search term was found on that page, click on the `# more on this page` to reveal the Headers to choose from
-        * If you click (or right-click) on the Page - it opens the page; if you select a Header - it opens to that header.
-        * The contents of the search box will be used the highlight every instance found on the selected page
-    * To keep the list present, right-click and select `Open in New Tab`
-    * Examine any tabs you might open and then return to the list as needed
-    * If you hit return, the Search display vanishes
-    * If you click anywhere on your current page, whatever you typed in the search box stays available for reuse
-* There is another website, [Looptips](https://kdisimone.github.io/looptips/), you should review
-    * While these articles were written and illustrated with an earlier version of Loop, they are well worth reading
-    * This link is repeated on the Operate->Looping Tips->Loop Tips page
-
-## Stay in the Loop!
-
-There are a number of social media options. (Read the directions on each of these - some ask you to answer questions - please do so):
-
-  * The fastest way to get help (with the most mentors) is [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup).
-  * There is another group, Loop and Learn, that has a lot of Loop-centric information, a T1D Speaker Series covering many topics of general diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
+  * The fastest way to get help (with the most mentors) is the [Looped Group](https://www.facebook.com/groups/TheLoopedGroup) on Facebook. Looped Group is the original FB group for DIY looping systems. There are lot of active members there with excellent history of helping people.
+  * There is another Facebook group, Loop and Learn, that has a lot of Loop-centric information, a T1D Speaker Series covering many topics of general diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
       * [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
       * [LoopandLearn Website](https://www.loopandlearn.org)
-  * Both the Looped and LoopandLearn Facebook groups provide support for some Loop forks, which support other CGM, as well as other DIY closed loop options.
-  * Many Loopers use the Nightscout tool to assist them in monitoring their settings in Loop. The fastest Nightscout help can be found in the original #wearenotwaiting community [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud).
+* The [LoopTips](https://kdisimone.github.io/looptips/) website provides non-build information and is more of a "now that I'm Looping..." resource for how to print endo reports, find Loop data, deal with therapy settings changes, etc. 
+* Many Loopers use [Nightscout](../nightscout/overview.md). Nightscout help can be found in the [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud). 
   * For those not interested in Facebook or interested in what is coming next for Loop, join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the streams or you'll miss some interesting conversations.  
+  * Loop has an instagram account @diy.loop where updates are also shared.
 
-### Search Then Post
-
-!!! danger "Don't Panic"
-    It's really easy to panic if Loop fails to build or if you are having trouble using your Loop app, but take the time to do a quick [Search](#how-to-search) in these docs and in your favorite social media group before posting a question. You might get an answer immediately.
-
-    Please post your question in only one group on Facebook or under one stream on zulipchat - many mentors monitor more than one place. If you don't hear an answer in 24 hours, then try a different place
-
-    On Facebook the protocol is:
-
-    * Search to see if your question has already been answered
-    * Add a comment if you find an existing post to say "I had this problem too and this post helped" - this bumps that post near the top so other can see it
-    * Make a new post if you still have a question
-    * Leave your question posted after you've gotten an answer, but edit the original post to say it's been resolved (add the word RESOLVED to the beginning of the original post)
-        * Mentors save time - they know you've been helped and don't need to read all the comments on that post
-        * Others may have the same question and will read your post
+!!! danger "Search First, Then Post"
+    If you are having trouble building or using your Loop app, there are some important steps to help you get responses to your question, while also being considerate of our volunteers' time.
+    
+    1. Always search in **both** [LoopDocs](#search-tool) and in Looped Group. Confused on how to search or use Looped Group? [Here is a video](https://www.youtube.com/watch?v=_vSN6C-Uo04) to help.
+    2.  Click on the Announcements section of the Looped Group; nearly a third of posts asking for help these days are already answered in the pinned announcements.
+    3.  Don't post a duplicate question in multiple groups. Forcing our groups to repeatedly answer the same question is a sure way to burn-out our volunteers. Only post to a different group if you have had no responses for several hours.
+    4.  If a LoopDocs search, FB search, and a check of Looped Group announcements haven't answered your question, then post for help. Review the [tips for how to post for help](../build/step12.md) so that our volunteers get all the information they'll need to help you, without needing to ask 40 questions first.    
+    5.  Leave your question posted even after you've gotten an answer, but edit the original post to add the word **RESOLVED** to the beginning of the original post. 
 
 
-## Contribute
+## Loopdocs Improvements
 
-Please submit suggestions for updates and improvements to this documentation. If you notice a typo, poor word choice or some explanation that could be improved or clarified, there are a couple of options (more instructions follow):
+Please submit suggestions for updates and improvements to this documentation. There are many pages of content and we welcome reviewers to help find typos and outdated info/links. If you notice a typo, poor word choice or some explanation that could be improved or clarified, there are a few options. The first two options use Github, a website where open-source code is often shared.
 
-* You can issue a Pull Request (best if it is a simple typo or wording update)
-* You can open an Issue (best if a major rewrite is needed or you think a conversation would help)
-* You can post on Facebook or Zulipchat
+1. You can issue a Pull Request (best option if it is a simple typo or wording update)
+2. You can open an Issue (best option if a major rewrite is needed or you think a conversation would help), or 
+3. You can post on Facebook or Zulipchat 
 
-If you decide to do a Pull Request (PR) or create an Issue, first look to see if someone has already opened a [PR](https://github.com/LoopKit/loopdocs/pulls) or [Issue](https://github.com/LoopKit/loopdocs/issues) on the topic so you don't create a duplicate. Note - you do not have to log in to github to review the PR and Issues, but you cannot comment or add a new PR or Issue without logging in.
+### Pull Requests and Issues
 
-* If a PR or Issue on the topic is open, feel free to add your comments (don't be shy)
+If you decide to do a Github Pull Request (PR) or create an Issue, first look to see if someone has already opened a [PR](https://github.com/LoopKit/loopdocs/pulls) or [Issue](https://github.com/LoopKit/loopdocs/issues) on the topic so you don't create a duplicate.
+
+* If a PR or Issue on the topic is open, feel free to add your comments (don't be shy), but please don't create a duplicate
 * If a PR doesn't exist, watch this [LoopDocs Pull Request video](https://youtu.be/6qSppvgGxpg) on how to create one (it's easy, video is less than 5 minutes)
 * If your Issue is new, please add it by clicking on the `New Issue` button
     * Give the Issue a descriptive title
-    * Indicate what page or pages need updating with a brief description
-    * This opens the conversation (those who signed up to `watch` the loopdocs repository get a notice)
-    * This collaboration is quite useful in finalizing changes
+    * Indicate which page or pages need updating , along with a brief description of the problem(s)
 
+### Facebook or Zulipchat
+Helpful tips for providing LoopDocs feedback through Facebook and/or Zulipchat:
 
-If you do not have a github userID, but are a member of the Loop Facebook group or Loop Zulipchat, you can post a message there.  
+* In [Looped Group](https://www.facebook.com/groups/TheLoopedGroup) - make sure your post is clear that you have a comment about LoopDocs in particular.
+* In Loop Zulipchat, please use the [documentation stream, Loopdocs Issue](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue) channel.
 
-* On [Facebook](https://www.facebook.com/groups/TheLoopedGroup) - make sure your post is clear that you have a comment about LoopDocs
-* On Loop Zulipchat, please use the [documentation stream, Loopdocs Issue](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue) topic
+## Repositories and Code
 
-There are many pages of content and we need all the reviewers we can get to help find typos and pages that need to be updated.
-
-For those interested in delving deeper, see the next few sections.
-
-## Development History
-
-Loop is an open-source, shared project.
-
-  * Read about the early history of Loop development: [History of Loop and LoopKit](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805), written by Loop developer Nate Racklyeft
-
-  * Read about the early days and the many advances brought about by the greater Diabetes Community of people who are not waiting: [The Artificial Pancreas Book](https://www.artificialpancreasbook.com/) written by Dana Lewis and check out her website [DIYPS](https://diyps.org)
-
-  * Read about how hard it was to get a new insulin pump (Omnipod) to work with Loop: [Insulin Pumps, Decapped Chips and Software Defined Radios](https://medium.com/@ps2) written by Loop developer Pete Schwamb and [Deep Dip Teardown of Tubeless Insulin Pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf) by Sergei Skorobogatov
-
-The project continues to be a labor-of-love by a community of users; maintained and improved by volunteers.
-
-## Information for Coders
-
-[Loop](https://github.com/LoopKit/Loop) is an app template for building an automated insulin delivery system. It is a stone resting on the boulders of work done by many others.
-
-The app is built on top of [LoopKit](https://github.com/LoopKit/LoopKit). LoopKit is a set of frameworks that provide data storage, retrieval, and calculation, as well as boilerplate view controllers used in Loop. Using the open-source Loop app template, you can build an insulin delivery system that uses specific commercial and open-source hardware and software technologies to bring together the insulin pump, continuous glucose monitor (CGM), and insulin dosing algorithm to create a DIY automated insulin delivery system. This version is known as Loop.  
-
-For more information on how to contribute to an open-source project, please review:
+If you're a developer looking for direct links to the code in Github: [Loop](https://github.com/LoopKit/Loop) and [LoopDocs](https://github.com/LoopKit/Loopdocs)
+For more information on how to contribute code to the project, please review:
 
   * [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
   * Review the Loop [LICENSE](https://github.com/LoopKit/Loop/blob/master/LICENSE.md)
   * Review the Loop [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md)
 
-Then if you want to contribute, please join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels. Meet the developers and testers who make this app the life-changing tool that so many people use. Learn about what is coming next.
+If you want to contribute code improvements, please join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels. Meet the developers and testers who make this app, and learn about what is coming next.
