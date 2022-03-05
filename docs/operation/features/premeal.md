@@ -29,10 +29,10 @@ any hypoglycemic ranges that may require treatment.
 To mitigate the impact of unintentional pre-meal activation, setting the
 pre-meal target to the same value as your usual correction range will have no
 impact on Loop.  Some loopers set up a custom override to replace the pre-meal
-mode.  Creating a custom override for pre-meal will allow enabling it through
-Nightscout using remote overrides, permits a custom duration, and will stay
-enabled after carbs are announced.  Toggling pre-meal mode will replace other
-overrides that may be active.  For people who want pre-meal button to be
-permanently disabled in order to avoid this behavior, please ensure to leave
-the pre-meal targets empty after a fresh install.
+mode.  Creating a custom override to replace pre-meal will allow enabling the
+override remotely with Nightscout, permits specifying a custom duration, and
+will keep the override enabled after carbs are announced.  Toggling pre-meal
+mode will replace other overrides that may be active.  For people who want
+pre-meal button to be permanently disabled in order to avoid this behavior,
+please ensure to leave the pre-meal targets empty after a fresh install.
 
