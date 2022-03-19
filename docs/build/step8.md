@@ -7,6 +7,7 @@
     - Check iPhone/iPod iOS version
         - The iOS version determines minimum Xcode version
         - The minimum Xcode version determines minimum macOS version
+            - To make it even more fun, the minimum macOS depends on whether your Mac uses M1 or is Intel-based (Mac or VM)
         - If necessary, update [macOS](step1.md#check-your-macos) first and then return to this step
     - Download Xcode from your computer's App Store application
 
@@ -32,13 +33,13 @@ If you've done your homework (read this entire page) and are ready to download a
 - You will be downloading it brand new or updating an existing installation
 - If the version number you need is bigger than what is shown in the App Store, you need to update [macOS](step1.md#check-your-macos) first
     - This image is old (ignore the version number in this graphic)
-    - For example, Xcode version 13 was released September 20, 2021
+    - For example, Xcode version 13.3 was released March 14, 2022
 
 !!! warning "Direct Download"
 
     - If you previously did a direct download of Xcode, it will not show up in the App Store.
-    - Either do another direct download or follow these directions to reconfigure so it will show up in the App Store.
-    - [Direct Download of Xcode](updating.md#direct-download-of-xcode)
+    - Either do another direct download or follow these directions in the Direct Download section to reconfigure so it will show up in the App Store.
+        - [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
 ![Screenshot: App Store search for Xcode](img/xcode.png){width="750"}
 {align="center"}
@@ -62,7 +63,7 @@ Because the update looks so innocuous and we all lead busy lives, we forget that
 
 
 !!! warning "Can't find the required Xcode version"
-    - If your computer is not running at least macOS 11.3, the App Store won't show Xcode version 13
+    - If your computer is not running at least macOS 12.0, the App Store won't show Xcode version 13.3
     - You must use iOS to determine which Xcode, which determines which macOS
     - Update your computer to at least that minimum macOS first
 
@@ -78,21 +79,26 @@ Before posting for help - do a reboot and try again.
 
 ## How do all the minimum versions relate to each other?
 
-The list below is for the **minimum** versions you'll need based on your iOS.
+The list below is for the **minimum** versions you'll need based on your iOS. The indication of a `color:linestyle` after the operating system nomenclature goes with the graphic found below.
 
 **Newer** versions are always OK and should be used if your computer will accept the upgrade.
 
-* If you are running an iPhone/iPod with iOS 15 or greater:
-    * [macOS](step1.md#check-your-macos): version 11.3 (Big Sur)
+* If you are running an iPhone/iPod with iOS 15.4 or greater:
+    * [macOS](step1.md#check-your-macos): version 12.0 (Monterey; green:solid)
+    * Xcode: version 13.3
+    * Expect the facts associated with iOS 15.4 or greater to change faster than LoopDocs will be updated
+* If you are running an iPhone/iPod with iOS 15.0 to 15.3.1:
+    * [macOS](step1.md#check-your-macos): version 11.3 (Big Sur; navy:dash)
     * Xcode: version 13
-    * Expect the facts associated with iOS 15 to change faster than LoopDocs will be updated
+    * Note - at this point, your Apple Watch (if you use one) must be upgraded to watchOS 8.x
 * If you are running an iPhone/iPod with iOS 14.5 through 14.8:
-    * [macOS](step1.md#check-your-macos): version 11.0 (Big Sur)
+    * [macOS](step1.md#check-your-macos): version 11.0 (Big Sur; magenta:dash-dot)
     * Xcode: version 12.5
 * If you are running an iPhone/iPod with iOS 14 through 14.4.x:
-    * [macOS](step1.md#check-your-macos): version 10.15.4 (Catalina)
+    * [macOS](step1.md#check-your-macos): version 10.15.4 (Catalina; cyan:dash) or if running an M1 Mac, version 11.0 (Big Sur; magenta:dash-dot)
     * If you build Loop using [Xcode 12.4 or earlier](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used)  - **do NOT upgrade that phone to iOS 15** - the Loop app will immediately stop working
     * Xcode: version 12.4
+    * It is suggested you find a method to upgrade your computer if you are stuck on Catalina
 
 Experienced Users:
 
@@ -101,12 +107,12 @@ Experienced Users:
 
 ### Wikipedia Chart for Apple Versions
 
-This graphic (copied from Wikipedia) is not updated with every iOS update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the [Minimum Version List](#how-do-all-the-minimum-versions-relate-to-each-other) promptly - that's much easier than updating a graphic.
+This graphic (copied from Wikipedia and last updated March 2022) is not updated with every iOS update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the [Minimum Version List](#how-do-all-the-minimum-versions-relate-to-each-other) promptly - that's much easier than updating a graphic.
 
 Follow this link to [Wikipedia](https://en.wikipedia.org/wiki/Xcode) and scroll down to the the current version of this figure - the graphic shown below is a map of how to read the current version of this figure at Wikipedia.
 
 
-![Screenshot: Wikipedia Xcode 11.x-12.x example; relationship for iOS, Xcode, macOS; highlights how to read current graphic](img/minimum-related.png){width="750"}
+![Screenshot: Wikipedia Xcode example; Clip from Wiki with 12.x - 13.x showing relationship for iOS, Xcode, macOS; highlights how to read current graphic](img/xcode_vs_12-13.svg){width="750"}
 {align="center"}
 
 ## What happens if you try using too old of Xcode?
