@@ -1546,6 +1546,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-v228" class="md-nav__link">
+    Loop v2.2.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-v227" class="md-nav__link">
+    Loop v2.2.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loop-v226" class="md-nav__link">
     Loop v2.2.6
   </a>
@@ -2013,6 +2027,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-v228" class="md-nav__link">
+    Loop v2.2.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-v227" class="md-nav__link">
+    Loop v2.2.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loop-v226" class="md-nav__link">
     Loop v2.2.6
   </a>
@@ -2360,15 +2388,26 @@
 <p>The new features added with each Loop release (starting with Loop version 2.0) are provided for reference.</p>
 <p>For more advanced users, there is also information about Loop branches.</p>
 <h2 id="loop-releases">Loop Releases<a class="headerlink" href="#loop-releases" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for Loop master is v2.2.6. The dates and contents for Loop releases from v2.0 through v2.2.6 are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for Loop master is v2.2.8. The dates and contents for Loop releases from v2.0 through v2.2.8 are summarized below in reverse chronological order (so newest release information comes first).</p>
 <div class="admonition warning">
 <p class="admonition-title">Check Current Release Status</p>
 <p>Release information is always found on the <a href="https://github.com/LoopKit/Loop/releases">GitHub LoopKit/Loop release page</a>. The information on this LoopDocs page is a summary of that information with a little extra explanation.</p>
 <p>Be aware that updates to LoopDocs may take some time after a new release comes out.</p>
 </div>
+<div class="admonition info">
+<p class="admonition-title">How do I Know What Version I Have?</p>
+<p>Tap on the Settings icon at the bottom of the Loop app main screen and look at the version information at upper left.</p>
+<p align="center"><img alt="Determine current app version on app settings screen" src="../img/app_version.svg" width="400" /></p>
+</div>
+<h3 id="loop-v228">Loop v2.2.8<a class="headerlink" href="#loop-v228" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This is a hotfix (no features were modified in the Loop app) to enable the app to be built with Xcode 13.3.</p>
+<p>This is now the new master, so you build it using the standard updating procedure <a href="../../build/updating/">Build Updating</a>.</p>
+<p>Loop v2.2.8 was released on March 16, 2022.</p>
+<h3 id="loop-v227">Loop v2.2.7<a class="headerlink" href="#loop-v227" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This is a fix (no features were modified in the Loop app) to enable the app to be distributed via TestFlight.</p>
+<p>Loop v2.2.7 was released on Jan 11, 2022.</p>
 <h3 id="loop-v226">Loop v2.2.6<a class="headerlink" href="#loop-v226" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Several users reported issues with IOB accounting in Loop v2.2.5, where IOB was being under-reported, which could cause Loop to continue recommending increases in insulin delivery.</p>
-<p>A fix has been made and is available as Loop v2.2.6. This is now the new master, so you build it using the standard updating procedure <a href="../../build/updating/">Build Updating</a>.</p>
+<p>Several users reported issues with IOB accounting in Loop v2.2.5, where IOB was being under-reported, which could cause Loop to continue recommending increases in insulin delivery. A fix was made and provided as Loop v2.2.6. </p>
 <p>This is a serious issue, so updating to this release is strongly recommended for anyone currently running v2.2.5. If you tap on Loop Settings and look at the top, and see LOOP V2.2.5, then rebuild ASAP. The time window when you would have built v2.2.5 is from Aug 22 through Sep 6, 2021.</p>
 <p>The issue appears to be the result of a failure to write to Apple HealthKit, which may occur if the Health app on your phone is having problems, or if you have turned off Loop's ability to write Insulin data to HealthKit. The fix involves reverting a change made in v2.2.5.  This change was an attempt to reduce overlaps of Reservoir and Pump Event reconciliation which intermittently over estimate insulin delivery. Instead, that issue will be fixed in the next major release of Loop.</p>
 <p>Thanks to all who helped with reporting, digging, and testing this quickly. It's great to have such a strong community of people eager to help.</p>
@@ -2597,7 +2636,7 @@
 <h3 id="generate-an-issue-report">Generate an Issue Report<a class="headerlink" href="#generate-an-issue-report" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Know how to generate an Issue Report when you see a problem so you can provide that if asked. An Issue Report is a log file generated by the Loop app that has a lot of information the developers can parse to figure out what Loop was doing when you were having a problem.</p>
 <ul>
-<li>Loop v2.2.6 and earlier: Loop Settings -&gt; Issue Report</li>
+<li>Loop v2.2.8 and earlier: Loop Settings -&gt; Issue Report</li>
 <li>Loop dev: Loop Settings -&gt; Support -&gt; Issue Report</li>
 </ul>
 <p>Do not confuse this with reporting an issue with Loop.  That is done by logging into GitHub and going to the <a href="https://github.com/LoopKit/Loop/issues">Issue page</a> to report a new issue.  You can read about existing issues without logging in, but to report a new one, you must log in to GitHub.</p>
