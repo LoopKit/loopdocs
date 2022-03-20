@@ -29,16 +29,16 @@ Yes - if you were paying attention, the suggestion is to go from this page throu
 1. Skim each page
 1. Do the work
 
-### Build-Overview: iOS 15 Requires Xcode 13
+### Build Alert:
 
-!!! danger "iOS 15 Requires Xcode 13"
+!!! danger "iOS 15.4 Requires Xcode 13.3 and macOS 12 (Monterey)"
 
-    In September 2021, Apple released iOS 15 (phone operating system).  
+    In March 2022, Apple released iOS 15.4 (phone operating system).  
 
-    * In order to build Loop on an iOS 15 device, you must use Xcode 13  
+    * In order to build Loop on an iOS 15.4 device, you must use Xcode 13.3
+    * In order to use Xcode 13.3, you must update your Mac operating system to the current version (Monterey, version 12.x)  
     * If this terminology confuses you - don't worry, it will be explained step-by-step
 
-    The advent of Xcode 13 modified the way in which Loop is built. In some ways it is easier and faster - but it is different. LoopDocs is being updated to support folks running Xcode 13.  Be patient.
 
 ## Introduction to Loop Video
 

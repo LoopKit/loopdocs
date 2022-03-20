@@ -1,10 +1,10 @@
 # Step 1: Compatible Computer
 
 !!! info "Time Estimate"
-    - 5 minutes, if you already have a Mac with Big Sur macOS
+    - 5 minutes, if you already have a Mac with Monterey macOS
     - 30-60 minutes, if you need to install macOS updates
 
-    Hint: OS stands for Operating System
+    Hint: OS stands for Operating System, any macOS number starting with 12 is OK
 
 !!! abstract "Summary"
     There are 3 things that have to be at a consistent version number to build Loop.
@@ -13,21 +13,18 @@
     * Xcode version determines the **minimum** [macOS](step1.md#macos) version
     * macOS version has hardware and disk space requirements
 
-    If you are buying a Mac, you'll want to have Big Sur (or newer) as the operating system. Over the last few years, the amount of disk space required has expanded - do not consider anything with less than 256 GB (512 GB is better). For those new to Apple, the iOS, macOS and Xcode version numbers tend to increase annually.
+    If you are buying a Mac, you'll want to have Monterey (or newer) as the operating system. Over the last few years, the amount of disk space required has expanded - do not consider anything with less than 256 GB (512 GB is better). For those new to Apple, the iOS, macOS and Xcode version numbers tend to increase annually.
 
-    Minimum macOS for recent iOS:
+    Minimum macOS for recent iOS - newer versions build just fine:
 
-    - macOS 11.3 (Big Sur) or newer is required for iOS 15 and higher
-    - macOS 11.0 (Big Sur) is required for iOS 14.5 and higher
+    - macOS 12.0 (Monterey) or newer is required for iOS 15.4 (released March 2022)
+    - macOS 11.3 (Big Sur) or newer is required for iOS 15 (released September 2021)
+    - macOS 11.0 (Big Sur) is required for iOS 14.5 (released March 2021)
 
-    Minimum means - newer versions build just fine. In other words, macOS 12.x (Monterey) is fine for building Loop, but not requred.
 
     If your macOS does not meet the minimum, check to see if you can [update your macOS](step1.md#check-your-macos)
 
-    If you are an existing Looper with an older mac - you can choose to limit the iOS versions you accept - but you need to understand that Apple often provides updates that fix security problems.
-
-    - macOS 10.15.x (Catalina) works up through iOS 14.4.x
-    - macOS 10.14.x (Mojave) only works for phones with iOS 13.2 or earlier (and yes you can build to a 12.x device - but that won't be supported much longer.)
+    
 
 !!! question "FAQs"
     - **"Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can. Please read this FAQ about using a [Virtual Machine](../faqs/FAQs.md#can-i-use-a-pc-or-windows-computer-to-build).
@@ -39,31 +36,17 @@
 
     You do NOT need access to an Apple computer to update your phone iOS or to troubleshoot or change Loop settings, such as basal profiles or carb ratios.
 
-## New M1 Chip Apple Computers
-
-The newest Apple computers, released in November 2020, are compatible with building Loop. These new computers will make the build extremely fast. You will need to [configure the terminal app for Rosetta on the M1](step7.md#configure-terminal-app-for-rosetta-on-m1-computer). This only needs to be done one time.
-
 ## MacOS
 
-The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Monterey, can be used to build Loop for **any** of the phone iOS versions listed below but Big Sur is **required** to build on any iPhone with an iOS version starting with iOS 14.5.
+The minimum macOS depends on the iOS of your iPhone/iPod. The latest macOS, Monterey, can be used to build Loop for **any** of the phone iOS versions listed below but Monterey is **required** to build on any iPhone with an iOS version starting with iOS 15.4.
 
-* **If you have iOS 15 or newer**, the minimum macOS is Big Sur (11.3)
+* **If you have iOS 15.4 or newer**, the minimum macOS is Monterey (12.0)
 
-* **If you have iOS 14.5 or newer**, the minimum macOS is Big Sur (11.0)
+* **If you have iOS 15 - 15.3.1**, the minimum macOS is Big Sur (11.3)
 
-Minimum means - newer versions build just fine. In other words, macOS 12.x (Monterey) is fine for building Loop, but not requred.
+* **If you have iOS 14.5**, the minimum macOS is Big Sur (11.0)
 
-### Build Step 1: iOS 15 Warning if you built with Catalina
-
-These next few lines are for Loopers who previously built with older macOS.  
-
-* **WARNING** If you built Loop with Catalina - DO NOT UPGRADE your phone to iOS 15 - FIRST upgrade to Xcode 13, build the app on your phone - THEN upgrade to iOS 15. Otherwise you will get the dreaded ["Loop" is no longer available](updating.md#loop-is-no-longer-available) and need to rush through the updating Loop steps.  (Your pod will continue delivering basal, but you will not be able to bolus.)
-
-* **If you have iOS 14 to 14.4.x**, the minimum macOS is 10.15.**4** (Catalina), newer is ok (Catalina or Big Sur)
-
-* **If you have iOS 13.4 to 13.7**, the minimum macOS is 10.15.2 (Catalina), newer is ok (Catalina or Big Sur)
-
-* **If you have iOS 12.4 to 13.2**, the minimum macOS is 10.14.4 (Mojave), newer is ok (Catalina or Big Sur)
+If you are an **existing Looper stuck on the older macOS**, [please see this warning](#older-operating-system-warning). Do not update your phone to iOS 15.
 
 
 !!! warning "iOS Dictates Your Computer Needs"
@@ -78,35 +61,47 @@ You need an Apple computer that has at least the minimum macOS version described
 
 If your computer does not have the required minimum macOS version, you'll need to check the `Software Update` button on that screen to see if you can update.
 
-![image showing macOS and system details](img/macos.svg){width="500"}
+![image showing macOS and system details](img/macos-12.svg){width="500"}
 
 If your computer does not give you the option to update to a newer macOS (in other words you are stuck on older versions)...it is quite possible that Apple no longer provides updates for your computer.
 
-Apple says macOS Big Sur requires 35.5GB of available storage to upgrade.
+Apple says upgrading to macOS Monterey requires 26 GB of available storage to upgrade.
 
 ## Check the Space Available
 
 While you are on the screen, above, look at the top of the menu and click on the Storage Tab highlighted in the graphic above with a red rectangle.  You will need to know the amount of free space when it's time for [Build Step 8: Download Xcode](step8.md). If you are checking out a used computer, it's best to have 256 GB total disk space and you may need to clear room by moving things like photos to an external drive. The operating system and Xcode take a lot of room.
 
-## Which Macs Are Compatible with macOS Big Sur?
+## Which Macs Are Compatible with macOS Monterey?
 
-This is the preferred operating system for Loop.
+Monterey is the preferred operating system for building Loop.
 
-* MacBook, 2015 or newer
-* MacBook Air, 2013 or newer
-* MacBook Pro, late 2013 or newer
+If you are starting out - make sure your Mac already has Monterey installed.
+
+* MacBook, early 2016 or newer
+* MacBook Air, early 2015 or newer
+* MacBook Pro, early 2015 or newer
+* Mac Pro, late 2013 or newer
 * Mac Mini, late 2014 or newer
-* iMac, 2014 or newer
+* iMac, 2015 or newer
 * iMac Pro, 2017 or newer
-* Mac Pro, 2013 or newer
-* get the full list from [Apple for Big Sur](https://support.apple.com/en-us/HT211238)
+* get the full list from [Apple for Monterey](https://support.apple.com/en-us/HT212551)
+
+## New M1 Chip Apple Computers
+
+Many new Apple computers use the M1 chips, released in November 2020. Before that Apple used Intel chips - now you can choose M1 or Intel for some models.  The M1 computers are compatible with building Loop. These new computers will make the build extremely fast. You will need to [configure the terminal app for Rosetta on the M1](step7.md#configure-terminal-app-for-rosetta-on-m1-computer). This only needs to be done one time.
 
 
-## Which Macs Are Compatible with macOS Catalina?
+## Older Operating System Warning
 
-If you are starting out - do not get a mac that can only support Catalina.
+These next few lines are for just Loopers who previously built with older macOS.
 
-* get the full list from [Apple for Catalina](https://support.apple.com/en-us/HT210222)
+* **WARNING** If you built Loop with Catalina - DO NOT UPGRADE your phone to iOS 15 - FIRST upgrade to at least Xcode 13, build the app on your phone - THEN upgrade to iOS 15. Otherwise you will get the dreaded ["Loop" is no longer available](updating.md#loop-is-no-longer-available) and need to rush through the updating Loop steps.  (Your pod will continue delivering basal, but you will not be able to bolus.)
+
+* **If you have iOS 14 to 14.4.x**, the minimum macOS is 10.15.**4** (Catalina)
+
+* **If you have iOS 13.4 to 13.7**, the minimum macOS is 10.15.2 (Catalina)
+
+* **If you have iOS 12.4 to 13.2**, the minimum macOS is 10.14.4 (Mojave). The Loop app will not be supported for this iOS in the next release - please get newer hardware.
 
 ## Next Step: Compatible iPhone/iPod Touch
 
