@@ -6,9 +6,12 @@
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
 
 !!! abstract "Summary"
-    - If you have a big clunky PDM with a built-in BG meter, you can use your pods for Loop. (These pods, also known as Eros pods, have a clear needle cap.)
-    - If you have a slim touch screen android-looking PDM, you can NOT use your Dash pods for Loop. (These pods have a blue needle cap.)
     - If you have a Medtronic, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware.
+    - If you use Omnipod - check which kind:
+        - If you have a big clunky PDM with a built-in BG meter, you are using Eros pods. (These pods have a clear needle cap.)
+            * Eros pods are supported in the released version of Loop
+        - If you have a slim touch screen android-looking PDM, you are using Dash Pods. (These pods have a blue needle cap.)
+            * Dash pod support is under development and active test (not released yet) 
 
 !!! question "FAQs"
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump)
@@ -23,6 +26,7 @@ There are two types of pumps compatible with Loop.
 
 * [Older Medtronic pumps](step3.md#check-medtronic-pump-version)
 * [Eros Omnipod pumps](step3.md#omnipod-pumps)
+* Dash Omnipod pumps - under test by experts - will be in next release
 
 ## Check Medtronic Pump Version
 
@@ -163,9 +167,9 @@ Eros system has that PDM we all recognize from the last several years.
 ![img/eros.png](img/eros.png){width="750"}
 {align="center"}
 
-### DASH - Loop Will Not Work with DASH Pods
+### DASH - Development Branch Only
 
-Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop is not currently compatible with the DASH system.
+Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop is working with DASH pod in the development branch only. When that branch is ready for release, then it will become Loop 3.0. If you are an experienced looper and want to help test the next release, [please start here](../faqs/branch-faqs.md), read carefully, follow the links and join zulipchat.
 
 ![img/dash.png](img/dash.png){width="750"}
 {align="center"}
