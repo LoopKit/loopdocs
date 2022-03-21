@@ -44,22 +44,77 @@ Both options begin by opening a terminal window on your Mac.
 
 ### Open Terminal
 
-Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step7.md#configure-terminal-app-for-rosetta-on-m1-computer) first.) The terminal window is very plain looking when you open it. That is normal.
+Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta-on-m1-computer) first.) The terminal window is very plain looking when you open it. That is normal.
 
 ## Download and Prepare to Build
 
-There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.
+There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal.
 
-If you want to do each step and watch results before doing the next step, skip to [Step-by-Step](#step-by-step). If you want the whole process to be done with one copy/paste, keep going.
+If you want to do each step and watch results moving on to the next step, (suggested for new builders), then do each of the steps below.  If you want to use the [Single Step to Download](#single-step-to-downloa) it's still a good idea to read the Step-by-Step section first, so you know what is happening and what some error messages mean, when you do the single copy and paste action.
 
 !!! success "Video using Build-Select"
 
     If you prefer to watch a video of building with this step-by-step method, here's the link to the [YouTube video](https://youtu.be/gddhljzsNkM) prepared by the Loop and Learn team.
 
+### Step-by-Step
+
+If you prefer to execute each line one at a time, start with the single line, copy and paste into the terminal and hit return.
+
+```
+/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
+```
+
+![paste the script line into terminal](img/build-select-01.png){width="750"}
+{align="center"}
+
+You must type 1 and hit return in the terminal window to agree that you understand the warning.
+
+Next you will select the Build Loop option by typing 1 and return.
+
+![choose to build Loop](img/build-select-05.png){width="750"}
+{align="center"}
+
+Next you are asked which version of Loop you would like to build. Type 1 and hit return to build the Master Branch or 2 for the FreeAPS fork of Loop.
+
+![choose which Loop to build](img/build-select-06.png){width="750"}
+{align="center"}
+
+!!! warning "If you see errors like these . . ."
+
+    * `xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
+    * `xcode-select: Failed to locate 'git', requesting installation of command line developer tools`
+    * `xcode-select: error: tool 'xed' requires Xcode`
+    * You missed one of these steps:
+        * [Build Step 8: Install Xcode](step8.md)
+        * [Build Step 9: Xcode command line tools](step9.md)
+
+
+This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. You do not need to understand the definitions for enumeration or submodule or cloning.  You only need to review the display to look for any errors after the download is finished. The download starts out with the enumeration of all the submodules that will be downloaded. This is followed by a cloning step for each submodule. The cloning for the first module is included in the first graphic.
+
+![the beginning of the clone for LoopWorkspace ](img/build-select-07.png){width="750"}
+{align="center"}
+
+The final submodule cloning is shown along with the summary of all the submodule paths in the next graphic.
+
+![the end of LoopWorkspace download](img/build-select-08.png){width="750"}
+{align="center"}
+
+If any errors are shown in your terminal window, you need to read the error and type 2, return to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#finding-help) site.
+
+### Review Download for Errors
+
+Assuming there are no errors, then type 1, return to Continue.
+
+* Xcode will open automatically
+* Your browser will open automatically in front of Xcode and display the same graphic shown below
+* Rearrange screens so you can see the graphic and Xcode and follow the directions
+
 
 ### Single Step to Download
 
-This starts the script, answers the questions, downloads the code and opens both Xcode and a browser showing the graphic also found in the [Wait for Xcode to Finish Indexing](#wait-for-xcode-to-finish-indexing) section. If you have never used this script before, please review the [Step-by-Step](#step-by-step) section including the `Review Download for Errors` section and then return (you can use your browser back button).
+If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the [Wait for Xcode to Finish Indexing](#wait-for-xcode-to-finish-indexing) section.
+
+This section is provided to help experienced builders save time. By copying and pasting a whole block of text, you can start the script, answer the questions, download the code and open both Xcode and a browser showing the graphic in the next section. If you have never used this script before, please review the [Step-by-Step](#step-by-step) section including the `Review Download for Errors` section.
 
 If you do not have Xcode and Xcode command line tools installed - you will get errors. They are shown in the [Step-by-Step](#step-by-step) section.
 
@@ -87,59 +142,6 @@ For those who use FreeAPS (a fork of Loop), this block is here for your convenie
 1
 #
 ```
-
-### Step-by-Step
-
-If you prefer to execute each line (in the code block above) one at a time, start with the single line, copy and paste into the terminal and hit return.
-
-```
-/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
-```
-
-![paste the script line into terminal](img/build-select-01.png){width="750"}
-{align="center"}
-
-You must type 1 and hit return in the terminal window to agree that you understand the warning.
-
-Next you will select the Build Loop option by typing 1 and return.
-
-![choose to build Loop](img/build-select-05.png){width="750"}
-{align="center"}
-
-Next you are asked which version of Loop you would like to build. Type 1 and hit return to build the Master Branch.
-
-![choose which Loop to build](img/build-select-06.png){width="750"}
-{align="center"}
-
-!!! warning "If you see errors like these . . ."
-
-    * `xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
-    * `xcode-select: Failed to locate 'git', requesting installation of command line developer tools`
-    * `xcode-select: error: tool 'xed' requires Xcode`
-    * You missed one of these steps:
-        * [Build Step 8: Install Xcode](step8.md)
-        * [Build Step 9: Xcode command line tools](step9.md)
-
-
-This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. You do not need to understand the definitions for enumeration or submodule or cloning.  You only need to review the display to look for any errors after the download is finished. The download starts out with the enumeration of all the submodules that will be downloaded. This is followed by a cloning step for each submodule. The cloning for the first module is included in the first graphic.
-
-![the beginning of the clone for LoopWorkspace ](img/build-select-07.png){width="750"}
-{align="center"}
-
-The final submodule cloning is shown along with the summary of all the submodule paths in the next graphic.
-
-![the end of LoopWorkspace download](img/build-select-08.png){width="750"}
-{align="center"}
-
-If any errors are shown in your terminal window, you need to read the error and type 2, return to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#stay-in-the-loop) site.
-
-### Review Download for Errors
-
-Assuming there are no errors, then type 1, return to Continue.
-
-* Xcode will open automatically
-* Your browser will open automatically in front of Xcode and display the same graphic shown below
-* Rearrange screens so you can see the graphic and Xcode and follow the directions
 
 ## Wait for Xcode to Finish Indexing
 

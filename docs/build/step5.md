@@ -20,7 +20,9 @@
 
 The RileyLink compatible device is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by select Medtronic and Omnipod pumps. What does that mean to you? It means the device is the communication highway between your insulin pump, CGM, and iPhone.
 
-**DIY Loop will not work without a RileyLink compatible device.**
+The next version of Loop (currently being tested in the dev branch) will have DASH support (the pod with the Blue needle cap - direct Bluetooth to the phone with no need for a RileyLink compatible device). Please - be patient.  If you are not already an experienced Looper willing to test code under development, wait until this code is released.
+
+**The released version of Loop will not work without a RileyLink compatible device.**
 
 ![Omnipod or Medtronic pump communicating through RileyLink to phone running Loop app](img/rileylink-comm-pod-mmt.svg){width="600"}
 

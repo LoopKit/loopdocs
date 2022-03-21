@@ -20,17 +20,21 @@
 
 A continuous glucose monitor (CGM) provides Loop with blood glucose readings. These readings allow Loop to model the current glucose trend and predict future blood glucose based on carbohydrate input and your Loop settings. The following are the types of CGMs compatible with Loop. CGM readings are a required part of looping. If your Loop app is unable to retrieve blood glucose (BG) data, it will not be able to loop.
 
-!!! warning "Dexcom G4/G5 Support"
-
-    [Dexcom has announced plans to stop supporting the G5 system](https://www.dexcom.com/obsolescence); in the US the G5 app will stop working.  Because G4 and G5 use the same sensors, this will affect availability of the sensors.
-
-    There are third party apps, which interface with G4 and G5 transmitters, supported by some forks of Loop. The version of Loop supported by these documents only works with the CGM explicitly listed below.
-
 ## Dexcom G5 and G6 CGM ![img/g5.jpg](img/g5.jpg){width="150"}
 
 Dexcom G5 and G6 CGM data is transmitted directly to the Dexcom app on your iPhone via Bluetooth. Neither of these two systems require the use of a stand-alone receiver. For Loop to function without an internet connection, you will need the Dexcom app running on the same device as Loop.
 
+!!! warning "Dexcom G5 Support"
+
+    [Dexcom has stopped supporting the G5 system in the US](https://www.dexcom.com/obsolescence). In the US, and some other countries, the G5 is not available for download from the Apple Store. There are countries in which Dexcom does supply and support G5. The G5 capability will be supported in the next version of Loop (currently under test in the dev branch.)
+
+    There are third party apps, which interface with G4 and G5 transmitters, supported by some forks of Loop. The version of Loop supported by these documents only works with the Dexcom apps.
+
 ## Dexcom G4 CGM with Share Receiver ![img/g4_receiver.png](img/g4_receiver.png){width="150"}
+
+!!! warning "Loop 3.0 will not support G4"
+
+    The plan is the next version of Loop (currently under test in the dev branch.) will drop support of G4 because it is so far out of date. If this is a problem for current Loop users, please post on your favorite [social media site](../index.md#finding-help).
 
 The Dexcom G4 Share system transmits CGM data from the transmitter to a Dexcom G4 Share Receiver. The receiver, in turn, connects to the Dexcom Share2 app on your iPhone via Bluetooth. The Share2 app uploads CGM data to the Dexcom servers from your phone. For Loop to function without an internet connection, you will need the Dexcom app running on the same device as Loop.
 
