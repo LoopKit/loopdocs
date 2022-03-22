@@ -9,7 +9,7 @@
     - To make it easy, there's a script for you to use
     - New Builders: Review this page until told to go to Step 14
     - Repeat Builders: There is important information about iOS updates - don't skip that section
-    - Advanced Users: Read all of Step 13 (skip Step 14)
+    - Advanced Users: Read all of Step 13
 
 !!! question "FAQs"
     - **When do I need to download new Loop code?** There are three times you need to download new code:
@@ -47,7 +47,7 @@ New builders - head to Step 14 in which you will execute the script steps and [B
 
 ---
 
-If you are interested in the dev branch, there is more information on the the rest of this page.
+If you are interested in the dev branch, there is more information on the rest of this page.
 
 For those "Repeat Loopers" who remember when you had to use a "dev" branch to get features like automatic-bolus, you do not need to do that.  Automatic-bolus Dosing Strategy is included in Loop Master.
 
@@ -67,17 +67,9 @@ For those "Repeat Loopers" who remember when you had to use a "dev" branch to ge
     * build the Loop app on your phone
     * update phone to iOS 15.4
 
-Modifications to building Loop with Xcode 13.x:
-
-* iOS 15.x requires Xcode version 13.x to build
-* You must use the Workspace method to build Loop with Xcode 13.x
-* For simplicity, only the workspace build method is documented in LoopDocs
-* If you are building Loop-master (the released code), use the Build-Select script method: [Build the Loop App](step14.md). 
-
-
 ## Advanced Users Only
 
-!!! abstract "Advanced Users Only"
+!!! abstract "Advanced Users Summary"
 
     If you are an advanced user who wants to build the dev branch - this section is for you.
 
