@@ -69,12 +69,12 @@ For those "Repeat Loopers" who remember when you had to use a "dev" branch to ge
 
 ## Advanced Users Only
 
-!!! abstract "Advanced Users Summary"
+!!! abstract "Advanced Users Reminders"
 
     If you are an advanced user who wants to build the dev branch - this section is for you.
 
     * Be sure to clone into a new directory that does not already have a folder called LoopWorkspace in it.
-    * Loop-dev is the only workspace build that requires carthage and it requires a specific version - don't worry - instructions are provided below
+    * Loop-dev is the only workspace build that still requires carthage and it requires a specific version - don't worry - instructions are provided below
 
 **Only build the dev branch if you're a developer/advanced user**
 
@@ -87,12 +87,23 @@ Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-go
 
 The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.
 
-
-* [LoopWorkspace README](https://github.com/LoopKit/LoopWorkspace#readme): Replace "<branch\>" in the "git clone" line with "dev"
-
 * [Check carthage Status](#check-carthage-status) to ensure you have carthage 0.36.0 installed
 
-New Trick (dev branch Only) - Edit One File to Sign all Targets:
+* Review the instructions here: [LoopWorkspace README](https://github.com/LoopKit/LoopWorkspace#readme) 
+
+* Use finder to create a new folder, typically in Downloads; and then hold down the control key and click on the folder to open a terminal window in that folder
+
+* Copy and paste the lines below into that terminal window
+
+```
+git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
+cd LoopWorkspace
+xed .
+```
+
+These three lines will download the code and open Xcode. Be sure to select LoopWorkspace and your phone.
+
+With Loop-dev, the signing of targets can be done by editing a single file:
 
 * Edit the LoopConfigOverride.xcconfig file (you can do this in Xcode)
 * The next to last line says `Put your team id here`
@@ -100,7 +111,19 @@ New Trick (dev branch Only) - Edit One File to Sign all Targets:
 * Replace the ID to the right of the equal sign with your Apple Developer ID
 * Apple Developer Team ID can be found for your account (after you sign in) at:
     * https://developer.apple.com/account/#!/membership
+
+After Xcode opens for Loop-dev:
+
+* There are some package dependencies that are resolved first and then the indexing takes place
+* You may see some Red Error indicators prior to those resolving - just wait and they will go away
+* If you are building Loop-dev with Xcode 13.3, you may find it a little touchy - if you've done everything "right", try this procedure using the menus at the top of Xcode:
+    * Product->Clean Build folder
+    * File->Close Workspace
+    * File->Open Recent (choose top one in list)
+    * Build
     
+Follow the build instructions on the next page: [Build Loop](step14.md#build-loop).
+
 ### Check carthage Status
 
 The steps required to install the correct version of carthage depend on whether carthage is already installed.
