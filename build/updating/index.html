@@ -772,20 +772,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../step7/" class="md-nav__link">
-        Step 7 Skip Step 7
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -2044,12 +2030,12 @@
 <p>Follow these "safe Looping" steps:</p>
 <ol>
 <li>Update macOS / Xcode if needed</li>
-<li>Check <a href="../../faqs/branch-faqs/#loop-release">Loop Release</a> status - if there is new code, you should download it</li>
+<li>Check <a href="../../faqs/release-faqs/#loop-release">Loop Release</a> status - if there is new code, you should download it</li>
 <li>Build app to your iPhone</li>
 <li>Then update your iPhone iOS</li>
 </ol>
 </div>
-<p><a href="../../faqs/branch-faqs/#loop-releases">Loop Releases</a> provides information about current and previous Loop versions.</p>
+<p><a href="../../faqs/release-faqs/#loop-releases">Loop Releases</a> provides information about current and previous Loop versions.</p>
 <p>The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process. If you do not update and the "provisioning profile" on your phone expires, you will see this message:</p>
 <h3 id="loop-is-no-longer-available">"Loop" is No Longer Available<a class="headerlink" href="#loop-is-no-longer-available" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>When you see "Loop" is No Longer Available on your phone, the only solution is to rebuild the app.  All of your settings are still present on your phone, but your "provisioning profile" expired and you need to generate a new one. Once you build Loop on your phone, following the instructions on this page, all your settings will be maintained - assuming you build with the same <a href="../../faqs/FAQs/#what-happens-when-i-switch-apple-developer-id">Apple Developers ID</a> that was used initially.</p>
@@ -2099,7 +2085,7 @@
 <p>In order to ensure a full year of use for your Loop app, you need to delete any existing provisioning profile(s) from your computer. If you want to know more information before executing this step - or if you want to do it manually, read the <a href="#background-information">Background Information</a>.</p>
 <p>The easiest way to delete the old provisioning profiles and clean up derived data uses the same build-select script that you will use for building.</p>
 <h3 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step7/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal.</p>
+<p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step1/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal.</p>
 <p>If you happen to have Xcode open, go on and quit out of Xcode now.</p>
 <h3 id="load-the-paste-buffer">Load the Paste Buffer<a class="headerlink" href="#load-the-paste-buffer" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.</p>
@@ -2114,15 +2100,13 @@
 3
 #
 </code></pre></div>
-<p>The <code>#</code> symbol is simply there so you do not need to hit enter after the final <code>3</code> in this buffer. There will be a <code>#</code> showing in the terminal window when done.  You can either hit return or backspace to clear it.</p>
+<p>The <code>#</code> symbol is simply there so you do not need to hit enter after the final <code>3</code>.</p>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
-<p>You must type 1 and hit return in the terminal window to agree that you understand the warning.</p>
-<p>Next you will select the Utility Scripts option by typing 3 and return.</p>
 <p align="center"><img alt="select utilities option" src="../img/build-select-02.png" width="750" /></p>
-<p>Next you will select the Clean Profiles and Derived Data option by typing 3 and return.</p>
 <p align="center"><img alt="select clean profiles and derived data option" src="../img/build-select-03.png" width="750" /></p>
 <p>Once this completes, you should see this in your terminal.</p>
 <p align="center"><img alt="clean utility script completed" src="../img/build-select-04.png" width="750" /></p>
+<p>The <code>#</code> symbol you will see is simply there so you do not need to hit enter after the final <code>3</code> when you copy and paste the block of text. There will be a <code>#</code> showing in the terminal window when done.  You can either hit return or backspace to clear it.</p>
 <p>If instead, you saw something like:</p>
 <ul>
 <li><code>rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty</code></li>

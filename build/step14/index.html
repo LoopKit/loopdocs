@@ -579,13 +579,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#single-step-to-download" class="md-nav__link">
-    Single Step to Download
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#step-by-step" class="md-nav__link">
     Step-by-Step
   </a>
@@ -595,6 +588,13 @@
           <li class="md-nav__item">
   <a href="#review-download-for-errors" class="md-nav__link">
     Review Download for Errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-step-to-download" class="md-nav__link">
+    Single Step to Download
   </a>
   
 </li>
@@ -773,20 +773,6 @@
     <li class="md-nav__item">
       <a href="../loopworkspace/" class="md-nav__link">
         LoopWorkspace
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../step7/" class="md-nav__link">
-        Step 7 Skip Step 7
       </a>
     </li>
   
@@ -1872,13 +1858,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#single-step-to-download" class="md-nav__link">
-    Single Step to Download
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#step-by-step" class="md-nav__link">
     Step-by-Step
   </a>
@@ -1888,6 +1867,13 @@
           <li class="md-nav__item">
   <a href="#review-download-for-errors" class="md-nav__link">
     Review Download for Errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-step-to-download" class="md-nav__link">
+    Single Step to Download
   </a>
   
 </li>
@@ -2078,43 +2064,23 @@
 </ol>
 <p>Both options begin by opening a terminal window on your Mac.</p>
 <h3 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step7/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal.</p>
+<p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step1/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal.</p>
 <h2 id="download-and-prepare-to-build">Download and Prepare to Build<a class="headerlink" href="#download-and-prepare-to-build" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.</p>
-<p>If you want to do each step and watch results before doing the next step, skip to <a href="#step-by-step">Step-by-Step</a>. If you want the whole process to be done with one copy/paste, keep going.</p>
+<p>There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal.</p>
+<p>If you want to do each step and watch the results before moving on to the next step, (suggested for new builders), then do each of the steps below.  If you want to use the <a href="#single-step-to-downloa">Single Step to Download</a> it's still a good idea to read the Step-by-Step section first, so you know what is happening and what some error messages mean, when you do the single copy and paste action.</p>
 <div class="admonition success">
 <p class="admonition-title">Video using Build-Select</p>
 <p>If you prefer to watch a video of building with this step-by-step method, here's the link to the <a href="https://youtu.be/gddhljzsNkM">YouTube video</a> prepared by the Loop and Learn team.</p>
 </div>
-<h3 id="single-step-to-download">Single Step to Download<a class="headerlink" href="#single-step-to-download" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This starts the script, answers the questions, downloads the code and opens both Xcode and a browser showing the graphic also found in the <a href="#wait-for-xcode-to-finish-indexing">Wait for Xcode to Finish Indexing</a> section. If you have never used this script before, please review the <a href="#step-by-step">Step-by-Step</a> section including the <code>Review Download for Errors</code> section and then return (you can use your browser back button).</p>
-<p>If you do not have Xcode and Xcode command line tools installed - you will get errors. They are shown in the <a href="#step-by-step">Step-by-Step</a> section.</p>
-<div class="highlight"><span class="filename">Download Loop Master and Open Xcode</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
-1
-1
-1
-1
-#
-</code></pre></div>
-<p>After you paste this block of text into the terminal window; all the output windows shown in the <a href="#step-by-step">Step-by-Step</a> section should appear in order without need to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).</p>
-<p>The <code>#</code> symbol is simply there so you do not need to hit enter after the final <code>1</code> in this buffer. There will be a <code>#</code> showing in the terminal window when done.  You can either hit return or backspace to clear it.</p>
-<p>For those who use FreeAPS (a fork of Loop), this block is here for your convenience. All others, just skip this.</p>
-<div class="highlight"><span class="filename">Download FreeAPS and Open Xcode</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
-1
-1
-2
-1
-#
-</code></pre></div>
 <h3 id="step-by-step">Step-by-Step<a class="headerlink" href="#step-by-step" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you prefer to execute each line (in the code block above) one at a time, start with the single line, copy and paste into the terminal and hit return.</p>
+<p>If you prefer to execute each line one at a time, start with the single line, copy and paste into the terminal and hit return.</p>
 <div class="highlight"><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
 </code></pre></div>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
 <p>You must type 1 and hit return in the terminal window to agree that you understand the warning.</p>
 <p>Next you will select the Build Loop option by typing 1 and return.</p>
 <p align="center"><img alt="choose to build Loop" src="../img/build-select-05.png" width="750" /></p>
-<p>Next you are asked which version of Loop you would like to build. Type 1 and hit return to build the Master Branch.</p>
+<p>Next you are asked which version of Loop you would like to build. Type 1 and hit return to build the Master Branch or 2 for the FreeAPS fork of Loop.</p>
 <p align="center"><img alt="choose which Loop to build" src="../img/build-select-06.png" width="750" /></p>
 <div class="admonition warning">
 <p class="admonition-title">If you see errors like these . . .</p>
@@ -2133,7 +2099,7 @@
 <p align="center"><img alt="the beginning of the clone for LoopWorkspace " src="../img/build-select-07.png" width="750" /></p>
 <p>The final submodule cloning is shown along with the summary of all the submodule paths in the next graphic.</p>
 <p align="center"><img alt="the end of LoopWorkspace download" src="../img/build-select-08.png" width="750" /></p>
-<p>If any errors are shown in your terminal window, you need to read the error and type 2, return to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite <a href="../..#stay-in-the-loop">Loop Social Media</a> site.</p>
+<p>If any errors are shown in your terminal window, you need to read the error and type 2, return to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite <a href="../..#finding-help">Loop Social Media</a> site.</p>
 <h3 id="review-download-for-errors">Review Download for Errors<a class="headerlink" href="#review-download-for-errors" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Assuming there are no errors, then type 1, return to Continue.</p>
 <ul>
@@ -2141,6 +2107,27 @@
 <li>Your browser will open automatically in front of Xcode and display the same graphic shown below</li>
 <li>Rearrange screens so you can see the graphic and Xcode and follow the directions</li>
 </ul>
+<h3 id="single-step-to-download">Single Step to Download<a class="headerlink" href="#single-step-to-download" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the <a href="#wait-for-xcode-to-finish-indexing">Wait for Xcode to Finish Indexing</a> section.</p>
+<p>This section is provided to help experienced builders save time. By copying and pasting a whole block of text, you can start the script, answer the questions, download the code and open both Xcode and a browser showing the graphic in the next section. If you have never used this script before, please review the <a href="#step-by-step">Step-by-Step</a> section including the <code>Review Download for Errors</code> section.</p>
+<p>If you do not have Xcode and Xcode command line tools installed - you will get errors. They are shown in the <a href="#step-by-step">Step-by-Step</a> section.</p>
+<div class="highlight"><span class="filename">Download Loop Master and Open Xcode</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
+1
+1
+1
+1
+#
+</code></pre></div>
+<p>After you paste this block of text into the terminal window; all the output windows shown in the <a href="#step-by-step">Step-by-Step</a> section should appear in order without need to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).</p>
+<p>The <code>#</code> symbol is simply there so you do not need to hit enter after the final <code>1</code> in this buffer. There will be a <code>#</code> showing in the terminal window when done.  You can either hit return or backspace to clear it.</p>
+<p>For those who use FreeAPS (a fork of Loop), this block is here for your convenience. All others, just skip this.</p>
+<div class="highlight"><span class="filename">Download FreeAPS and Open Xcode</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
+1
+1
+2
+1
+#
+</code></pre></div>
 <h2 id="wait-for-xcode-to-finish-indexing">Wait for Xcode to Finish Indexing<a class="headerlink" href="#wait-for-xcode-to-finish-indexing" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build. If you are impatient and don't wait (and sometimes even when you do wait), you may see this build failure: <a href="../build_errors/#xcode-13-indexing-not-finished-watchapp-extension-entitlements">WatchApp Extension Error</a>.</p>
 <p>The other thing to know: If there is a space in the path to your LoopWorkspace folder, you will get the <a href="../build_errors/#compileassetcatalog-error">CompileAssetCatalog Error</a>. You can go on and do the "error" fix before you build and then it won't happen.  Or you can wait until you see it. And if you are super fast and do the "fix" first and then don't wait for indexing, you might still get the WatchApp Extension error.  Fortunately, the solutions to both are simple and fast.</p>

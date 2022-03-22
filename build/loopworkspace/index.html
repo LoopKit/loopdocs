@@ -732,20 +732,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../step7/" class="md-nav__link">
-        Step 7 Skip Step 7
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -1935,7 +1921,7 @@
 <li>With the release of Xcode 13, Loop builds require LoopWorkspace</li>
 <li>Loop old-timers may remember the zip-download method - it is no longer available</li>
 <li>For all Loopers who want the latest<ul>
-<li><a href="../../faqs/branch-faqs/#loop-releases">Loop Release</a></li>
+<li><a href="../../faqs/release-faqs/#loop-releases">Loop Release</a></li>
 <li>Follow the step-by-step instructions found at <a href="../step14/#build-loop-app">Build Loop App</a></li>
 </ul>
 </li>
@@ -1947,7 +1933,7 @@
 <p>So, in using git, we can do things with "git commands". Like "Hey git...make me an exact copy of that guy's work over there." or "Hey git, I'd like to compare my version of this page with Joe's version of the same page." Or using my old cookbook analogy..."Hey git, I'd like to start a new cookbook called Italian Desserts."</p>
 <p>But yes, git commands take awhile to properly use. And they are not plain english friendly. </p>
 <h2 id="what-is-loopworkspace">What is LoopWorkspace?<a class="headerlink" href="#what-is-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There is more information in <a href="../../faqs/branch-faqs/#what-are-branches">Branch and Versions FAQs</a> that is not repeated here.</p>
+<p>There is more information in <a href="../../faqs/branch-faqs/#what-are-branches">Loop Development FAQs</a> that is not repeated here.</p>
 <p>The important fact for this discussion on LoopWorkspace is that Loop developers own an account in GitHub called <a href="https://github.com/LoopKit">LoopKit</a>.  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.</p>
 <p>When you build Loop from LoopWorkspace, each of those repositories is downloaded to your computer.  This is slower than the old zip-download as far as downloading Loop - but it is much faster when you build Loop because all the files are already on your computer.</p>
 <p>LoopWorkspace uses submodules to define how the frameworks are coordinated for building. The graphic below shows the dev branch at a particular point in time.  The precise version, or commit, of each submodule is defined by 7-character hexadecimal codes (look up SHA-1) with the repository for each submodule defined in a text file called <code>.gitmodules</code>.</p>
@@ -1975,8 +1961,9 @@
 <p>You need to use a "git clone" command LIKE THIS (but not exactly the same...you're going to edit the "branch-name" part in there):</p>
 <p><code>git clone --branch=branch-name --recurse-submodules https://github.com/LoopKit/LoopWorkspace</code></p>
 <p>Now...look carefully and notice two things...that command is getting (1) the version of LoopWorkspace found in the LoopKit repository and (2) selects the branch you want to start working with when the clone is done.</p>
-<p>So, you will need to edit that "branch-name" before using the command so that you are getting started with the branch you want. If you want to clone from a different fork, the LoopKit will be replaced with the name of the github site for the fork. For example, to test dev (which is under development and has some cool new architecture and features), you would type:</p>
-<p><code>git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace</code></p>
+<p>So, you will need to edit that "branch-name" before using the command so that you are getting started with the branch you want. If you want to clone from a different fork, the LoopKit will be replaced with the name of the github site for the fork. For example, to test dev (which is under development and has some cool new architecture and features), you would copy/paste:</p>
+<div class="highlight"><pre><span></span><code>git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
+</code></pre></div>
 <h3 id="start-xcode-using-command-line">Start Xcode using command line<a class="headerlink" href="#start-xcode-using-command-line" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want to start the build from the command line, enter the following 2 lines into the terminal and skip ahead to <a href="#building-loopworkspace">Building LoopWorkspace</a></p>
 <div class="highlight"><pre><span></span><code>cd LoopWorkspace
@@ -2146,13 +2133,13 @@ You can't clone mutliple "LoopWorkspaces" into the exact same home directory (be
       
       
         
-        <a href="../step7/" class="md-footer__link md-footer__link--next" aria-label="Next: Step 7 Skip Step 7" rel="next">
+        <a href="../../operation/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Step 7 Skip Step 7
+              Overview
             </div>
           </div>
           <div class="md-footer__button md-icon">
