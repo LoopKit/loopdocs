@@ -50,7 +50,7 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal.
 
-If you want to do each step and watch results moving on to the next step, (suggested for new builders), then do each of the steps below.  If you want to use the [Single Step to Download](#single-step-to-downloa) it's still a good idea to read the Step-by-Step section first, so you know what is happening and what some error messages mean, when you do the single copy and paste action.
+If you want to do each step and watch the results before moving on to the next step, (suggested for new builders), then do each of the steps below.  If you want to use the [Single Step to Download](#single-step-to-downloa) it's still a good idea to read the Step-by-Step section first, so you know what is happening and what some error messages mean, when you do the single copy and paste action.
 
 !!! success "Video using Build-Select"
 
