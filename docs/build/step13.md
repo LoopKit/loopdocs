@@ -2,14 +2,14 @@
 
 !!! info "Time Estimate"
     - 10 minutes to read this page
-    - Wait until Step 14 to download Loop code (New Workspace Method)
+    - Wait until Step 14 to download Released Loop code (New Workspace Method)
 
 !!! abstract "Summary"
     - All Loopers: Loop can only be built with the Workspace Build method
     - To make it easy, there's a script for you to use
     - New Builders: Review this page until told to go to Step 14
     - Repeat Builders: There is important information about iOS updates - don't skip that section
-    - Advanced Users: There is information for you too
+    - Advanced Users: Read all of Step 13
 
 !!! question "FAQs"
     - **When do I need to download new Loop code?** There are three times you need to download new code:
@@ -20,48 +20,39 @@
         * It's a good idea to be prepared to rebuild before updating your phone to the new iOS
         * This is even more important when there has been a major change to iOS or Xcode
         * Check with the experts - there will be announcements in all the [Loop Social Media](../index.md#stay-in-the-loop) sites
-    - **How do I find out about new features?** Please see [Loop Releases and Branch FAQs](../faqs/branch-faqs.md)
+    - **How do I find out about new features?** Please see [Loop Release FAQs](../faqs/release-faqs.md)
 
 ## Download Loop
 
-You’ll need to first download the Loop code and then build the app on your computer with Xcode, which will transfer the app to your iPhone or iPod. This page prepares you to download Loop - you'll actually do the download in the next step.
+You’ll need to first download the Loop code and then build the app on your computer with Xcode, which will transfer the app to your iPhone or iPod. For most users who are installing the released version of Loop, this page prepares you to download Loop - you'll actually do the download in the next step.
+
+If you are an advanced user who is testing the dev branch, read the whole page all the way to the advanced users section, where download instruction will be given.
 
 ## New Loopers
 
 If this is your first time, you only need to read the Build Select Script Workspace Method section.
 
-At the end of that section you'll be directed to Step 14.  You are welcome to read the rest of this page, but you can ignore any comments about old and new build methods or instructions for advanced users.
+At the end of that section you'll be directed to Step 14.  You are welcome to read the rest of this page, but you don't need the information at this time.
 
 ## Build Select Script Workspace Method
 
 The Build Select script is a quick and easy way to build Loop:
 
 * Builds Loop using the Workspace method
-    * Workspace build is required as of Xcode 13
-    * Workspace build works fine with Xcode 12
-* Supports more than just Loop
+    * Workspace build method is required as of Xcode 13
+    * Workspace build method works fine with Xcode 12
 * Provided by the Loop and Learn mentors
 
 New builders - head to Step 14 in which you will execute the script steps and [Build the Loop App](step14.md).
 
 ---
 
-If you are a "Repeat Looper" or interested in the dev branch, there is more information on the the rest of this page.
+If you are interested in the dev branch, there is more information on the rest of this page.
 
 For those "Repeat Loopers" who remember when you had to use a "dev" branch to get features like automatic-bolus, you do not need to do that.  Automatic-bolus Dosing Strategy is included in Loop Master.
 
 
-## Repeat Loopers
-
-You may remember building with the old zip download method. The zip download is no longer supported.
-
-* The zip download method had a very fast download, followed by a very long build while Xcode collected more code from the internet to enable you to build the complete app. It is not an option now that Loop needs to support Xcode 13, which is required for iOS 15.
-
-* The new method uses Workspace and works for Xcode 12 as well as Xcode 13. This downloads everything you need up front and builds much faster.
-
-* You may remember information indicating that Workspace is only for experts - that only refers to people working on the next version of Loop (known as the dev branch).
-
-### Xcode 13, iOS 15 changes
+### Xcode 13.3, iOS 15.4 changes
 
 !!! warning "DO NOT UPDATE your phone to iOS 15 without reading this"
 
@@ -71,71 +62,105 @@ You may remember building with the old zip download method. The zip download is 
 
     Safe steps to keep Loop going if you want to install iOS 15
 
-    * update your macOS
-    * update your Xcode to version 13
+    * update your macOS to Monterey (12.x)
+    * update your Xcode to version 13.3
     * build the Loop app on your phone
-    * update phone to iOS 15
-
-Modifications to building Loop with Xcode 13:
-
-* iOS 15 requires Xcode version 13 to build
-* You must use the Workspace method to build Loop with Xcode 13
-* The old download the zip method will not work once you update your Xcode to version 13
-* For earlier iOS versions, you can still use Xcode 12 but should use the Workspace method
-
-
-## Manual Workspace Method
-
-In order to manually create the Loop app using the Workspace method, and not use the script, you need to execute the commands listed below on your computer. You are welcome to do this and put the downloaded code where you prefer. The advantage of using the script is it provides options to do steps that are required when building Loop a second time, creates a date-time stamped folder for the download, clones the code into that folder, automatically opens Xcode in the correct folder and opens the graphic showing you the steps required to finish building the code.
-
-If you decide to do a manual download, please create a folder for it where there are no embedded spaces in the path name. At the current time, embedded spaces are causing a problem when building.  For Loop master, the problem is easy to solve, but you will get a [build error](build_errors.md#compileassetcatalog-error).
-
-There is a copy button on the right-hand side if you hover your mouse over the text block below. It may be obscured by the long text-string, but it is there.
-
-``` title="Manual Clone command for Loop Master"
-git clone --branch=master  --recurse-submodules https://github.com/LoopKit/LoopWorkspace
-```
-
-Confirm there were no errors in the download.
-
-``` title="Change directory and automatically open Xcode"
-cd LoopWorkspace; xed .
-```
-
-At this point, you should move to [Build Step 14: Xcode Steps](step14.md#wait-for-xcode-to-finish-indexing).
-
+    * update phone to iOS 15.4
 
 ## Advanced Users Only
 
-If you are an advanced user who wants to build the dev branch - this section is for you.
+!!! abstract "Advanced Users Reminders"
 
-**At the current time, embedded spaces are causing a problem when building dev and there is no known solution.**
+    If you are an advanced user who wants to build the dev branch - this section is for you.
 
-* Be sure to clone into a directory with no embedded spaces in the path
+    * Be sure to clone into a new directory that does not already have a folder called LoopWorkspace in it.
+    * Loop-dev is the only workspace build that still requires carthage and it requires a specific version - don't worry - instructions are provided below
 
-!!! abstract "Advanced Users Only"
+**Only build the dev branch if you're a developer/advanced user**
 
-    **Only build the dev branch if you're a developer/advanced user**
+Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch.
 
-    Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch.
+- Note, the dev branch requires a minimum of iOS 14 on your device
+- Once you install the dev branch on a device, you must delete the app to return to master, which means all settings will need to be entered and a new pod started
+- The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch
+- [Loop dev Preview](../faqs/dev-menus.md) is found in the FAQs section with some preliminary documentation
 
-    - Note, the dev branch requires a minimum of iOS 14 on your device
-    - Once you install the dev branch on a device, you must delete the app to return to master, which means all settings will need to be entered and a new pod started
-    - The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch
-    - [Loop dev Preview](../faqs/dev-menus.md) is found in the FAQs section with some preliminary documentation
+The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.
 
-    The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.  The links below are to the wiki for LoopWorkspace, the LoopDocs page on building with LoopWorkspace and the instructions for installing carthage 0.36.0 (not needed for Loop master)  
+* [Check carthage Status](#check-carthage-status) to ensure you have carthage 0.36.0 installed
+
+* Review the instructions here: [LoopWorkspace README](https://github.com/LoopKit/LoopWorkspace#readme) 
+
+* Use finder to create a new folder, typically in Downloads; and then hold down the control key and click on the folder to open a terminal window in that folder
+
+* Copy and paste the lines below into that terminal window
+
+```
+git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
+cd LoopWorkspace
+xed .
+```
+
+These three lines will download the code and open Xcode. Be sure to select LoopWorkspace and your phone.
+
+With Loop-dev, the signing of targets can be done by editing a single file:
+
+* Edit the LoopConfigOverride.xcconfig file (you can do this in Xcode)
+* The next to last line says `Put your team id here`
+* The last line starts with two slashes `//` – remove those
+* Replace the ID to the right of the equal sign with your Apple Developer ID
+* Apple Developer Team ID can be found for your account (after you sign in) at:
+    * https://developer.apple.com/account/#!/membership
+
+After Xcode opens for Loop-dev:
+
+* There are some package dependencies that are resolved first and then the indexing takes place
+* You may see some Red Error indicators prior to those resolving - just wait and they will go away
+* If you are building Loop-dev with Xcode 13.3, you may find it a little touchy - if you've done everything "right", try this procedure using the menus at the top of Xcode:
+    * Product->Clean Build folder
+    * File->Close Workspace
+    * File->Open Recent (choose top one in list)
+    * Build
+    
+Follow the build instructions on the next page: [Build Loop](step14.md#build-loop).
+
+### Check carthage Status
+
+The steps required to install the correct version of carthage depend on whether carthage is already installed.
+
+First copy and paste this phrase into the terminal and hit return:
+
+```
+carthage version
+```
+
+* If the response includes "0.36.0", you can build the Loop-dev branch. Ignore the instructions to "Please update to the latest Carthage version: . . ." You want to stick with 0.36.0.
+
+* If the response is, "-bash: carthage: command not found", then skip ahead to the [Install carthage 0.36.0 step](#install-carthage-0360).
+
+* Any other response requires you to delete the current version of carthage first.
+
+Copy and paste the following line into the terminal window and hit return.  
+
+```
+rm -rf /usr/local/bin/carthage
+```
+
+Wait for the prompt to appear, then copy and paste this line into the terminal window and hit return:
+
+```
+sudo rm -rf /Library/Frameworks/CarthageKit.framework
+```
+
+You will be prompted for a password when you hit enter on the second line.   It is the same password you use in order to log into the computer.   It will not echo to the screen.
 
 
-    * [LoopWorkspace README](https://github.com/LoopKit/LoopWorkspace#readme): Replace "<branch\>" in "git clone" line with "dev"
+### Install carthage 0.36.0
 
-    * LoopDocs page on [LoopWorkspace](loopworkspace.md)
+Go to this link: [Carthage.pkg](https://github.com/Carthage/Carthage/releases/tag/0.36.0) to download the carthage 0.36.0 package. After following the preceding link, ignore the warning message, scroll down to the Assets section and click on Carthage.pkg to start the download.
 
-    * LoopDocs page, ["Skip Step 7"](step7.md#install-carthage-0360) for installing carthage 0.36.0
+Once the download has completed, you need to take extra steps to install it - **do not double click to open it**.
 
-    New trick (dev branch only):
+Go to the Finder app, click on Downloads, locate Carthage.pkg. Hold down the Control Key on the keyboard and single click on Carthage.pkg. This will bring up a menu of choices, select Open from the menu and then Open (greyed out) again from the pop up box.  Then run through the install process.  You will need to enter your password. **The password is your computer's password.** Once installation completes, you can discard the Carthage.pkg when prompted.
 
-    * Edit the LoopConfigOverride.xcconfig
-    * Uncomment the line starting with `LOOP_DEVELOPMENT_TEAM = `
-    * Insert your developer ID
-    * Build the Loop(Workspace) - all targets are signed automatically
+If you need more help with this, this external link to the [Loop and Learn website](https://www.loopandlearn.org/carthage-0-36-0/#carthage-install) has some graphics to assist in this step.

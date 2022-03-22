@@ -32,11 +32,11 @@ Under ordinary circumstances, you do not *have to* update your Loop app until it
     Follow these "safe Looping" steps:
 
     1. Update macOS / Xcode if needed
-    1. Check [Loop Release](../faqs/branch-faqs.md#loop-release) status - if there is new code, you should download it
+    1. Check [Loop Release](../faqs/release-faqs.md#loop-release) status - if there is new code, you should download it
     1. Build app to your iPhone
     1. Then update your iPhone iOS
 
-[Loop Releases](../faqs/branch-faqs.md#loop-releases) provides information about current and previous Loop versions.
+[Loop Releases](../faqs/release-faqs.md#loop-releases) provides information about current and previous Loop versions.
 
 The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process. If you do not update and the "provisioning profile" on your phone expires, you will see this message:
 
@@ -111,7 +111,7 @@ The easiest way to delete the old provisioning profiles and clean up derived dat
 
 ### Open Terminal
 
-Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step7.md#configure-terminal-app-for-rosetta-on-m1-computer) first.) The terminal window is very plain looking when you open it. That is normal.
+Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta-on-m1-computer) first.) The terminal window is very plain looking when you open it. That is normal.
 
 If you happen to have Xcode open, go on and quit out of Xcode now.
 
@@ -132,19 +132,13 @@ This starts the script, answers the questions to select `Utilities` and `Clean P
 #
 ```
 
-The `#` symbol is simply there so you do not need to hit enter after the final `3` in this buffer. There will be a `#` showing in the terminal window when done.  You can either hit return or backspace to clear it.
+The `#` symbol is simply there so you do not need to hit enter after the final `3`.
 
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
 
-You must type 1 and hit return in the terminal window to agree that you understand the warning.
-
-Next you will select the Utility Scripts option by typing 3 and return.
-
 ![select utilities option](img/build-select-02.png){width="750"}
 {align="center"}
-
-Next you will select the Clean Profiles and Derived Data option by typing 3 and return.
 
 ![select clean profiles and derived data option](img/build-select-03.png){width="750"}
 {align="center"}
@@ -153,6 +147,8 @@ Once this completes, you should see this in your terminal.
 
 ![clean utility script completed](img/build-select-04.png){width="750"}
 {align="center"}
+
+The `#` symbol you will see is simply there so you do not need to hit enter after the final `3` when you copy and paste the block of text. There will be a `#` showing in the terminal window when done.  You can either hit return or backspace to clear it.
 
 If instead, you saw something like:
 

@@ -9,7 +9,7 @@ If you wandered over here meaning to build the latest Loop release, the rest of 
     * With the release of Xcode 13, Loop builds require LoopWorkspace
     * Loop old-timers may remember the zip-download method - it is no longer available
     * For all Loopers who want the latest
-        * [Loop Release](../faqs/branch-faqs.md#loop-releases)
+        * [Loop Release](../faqs/release-faqs.md#loop-releases)
         * Follow the step-by-step instructions found at [Build Loop App](step14.md#build-loop-app)
 
 The typical user who wants to build Loop does not need to know the level of detail on the rest of this page.
@@ -25,7 +25,7 @@ But yes, git commands take awhile to properly use. And they are not plain englis
 
 ## What is LoopWorkspace?
 
-There is more information in [Branch and Versions FAQs](../faqs/branch-faqs.md#what-are-branches) that is not repeated here.
+There is more information in [Loop Development FAQs](../faqs/branch-faqs.md#what-are-branches) that is not repeated here.
 
 The important fact for this discussion on LoopWorkspace is that Loop developers own an account in GitHub called [LoopKit](https://github.com/LoopKit).  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.
 
@@ -65,9 +65,11 @@ You need to use a "git clone" command LIKE THIS (but not exactly the same...you'
 
 Now...look carefully and notice two things...that command is getting (1) the version of LoopWorkspace found in the LoopKit repository and (2) selects the branch you want to start working with when the clone is done.
 
-So, you will need to edit that "branch-name" before using the command so that you are getting started with the branch you want. If you want to clone from a different fork, the LoopKit will be replaced with the name of the github site for the fork. For example, to test dev (which is under development and has some cool new architecture and features), you would type:
+So, you will need to edit that "branch-name" before using the command so that you are getting started with the branch you want. If you want to clone from a different fork, the LoopKit will be replaced with the name of the github site for the fork. For example, to test dev (which is under development and has some cool new architecture and features), you would copy/paste:
 
-`git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace`
+```
+git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
+```
 
 
 ### Start Xcode using command line

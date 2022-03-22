@@ -88,20 +88,27 @@ If you are starting out - make sure your Mac already has Monterey installed.
 
 ## New M1 Chip Apple Computers
 
-Many new Apple computers use the M1 chips, released in November 2020. Before that Apple used Intel chips - now you can choose M1 or Intel for some models.  The M1 computers are compatible with building Loop. These new computers will make the build extremely fast. You will need to [configure the terminal app for Rosetta on the M1](step7.md#configure-terminal-app-for-rosetta-on-m1-computer). This only needs to be done one time.
+Many new Apple computers use the M1 chips, released in November 2020. Before that Apple used Intel chips - now you can choose M1 or Intel for some models.  The M1 computers are compatible with building Loop. These new computers will make the build extremely fast. You will need to [configure the terminal app for Rosetta on the M1](#configure-terminal-app-for-rosetta-on-m1-computer). This only needs to be done one time.
 
+### Configure Terminal App for Rosetta on M1 Computer
+
+!!! abstract "New Apple M1 chip users: IMPORTANT STEP"
+
+    If you purchased one of the new Apple computers that have the brand new Apple M1 chip, you will need to do this step (one time only) to open the Terminal app using a "converter" app, called Rosetta.
+
+    Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app but do not double click it to open a Terminal window. Instead, hold down the Control Key on the keyboard and single click on Terminal. This will bring up a menu of choices, select the "Get Info" option.
+
+    ![menu tree for get info on terminal app](img/get-info.png){width="650"}
+
+    Now in the informational window that appears...you'll see a checkbox that says "Open using Rosetta". Check that box...that will allow Terminal app to open using Rosetta when you double click on terminal in the future. You can close that informational window, after you check the box for "Open using Rosetta", and proceed with the rest of the directions just like normal.
+
+    ![terminal app selection for using rosetta](img/rosetta.png){width="450"}
 
 ## Older Operating System Warning
 
-These next few lines are for just Loopers who previously built with older macOS.
+!!! warning "Check before Upgrading iPhone"
 
-* **WARNING** If you built Loop with Catalina - DO NOT UPGRADE your phone to iOS 15 - FIRST upgrade to at least Xcode 13, build the app on your phone - THEN upgrade to iOS 15. Otherwise you will get the dreaded ["Loop" is no longer available](updating.md#loop-is-no-longer-available) and need to rush through the updating Loop steps.  (Your pod will continue delivering basal, but you will not be able to bolus.)
-
-* **If you have iOS 14 to 14.4.x**, the minimum macOS is 10.15.**4** (Catalina)
-
-* **If you have iOS 13.4 to 13.7**, the minimum macOS is 10.15.2 (Catalina)
-
-* **If you have iOS 12.4 to 13.2**, the minimum macOS is 10.14.4 (Mojave). The Loop app will not be supported for this iOS in the next release - please get newer hardware.
+    If you built Loop with Catalina - DO NOT UPGRADE your phone to iOS 15 - FIRST upgrade to at least Xcode 13, build the app on your phone - THEN upgrade to iOS 15. Otherwise you will get the dreaded ["Loop" is no longer available](updating.md#loop-is-no-longer-available) and need to rush through the updating Loop steps.  (Your pod will continue delivering basal, but you will not be able to bolus.)
 
 ## Next Step: Compatible iPhone/iPod Touch
 

@@ -58,7 +58,6 @@ nav:
     - 'Customize your Loop': 'build/code_customization.md'
     - 'Updating/Rebuilding your Loop': 'build/updating.md'
     - 'LoopWorkspace': 'build/loopworkspace.md'
-    - 'Step 7 Skip Step 7': 'build/step7.md'
 - Set up App:
     - 'Overview': 'operation/overview.md'
     - 'Step 1: Health Permissions': 'build/health.md'
