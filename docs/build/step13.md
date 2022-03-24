@@ -91,7 +91,7 @@ The dev branch requires using LoopWorkspace and requires installation of carthag
 
 * Review the instructions here: [LoopWorkspace README](https://github.com/LoopKit/LoopWorkspace#readme) 
 
-* Use finder to create a new folder, typically in Downloads; and then hold down the control key and click on the folder to open a terminal window in that folder
+* Use finder to create a new folder, typically in Downloads; and then hold down the control key and click on the folder to open a menu: select (near the bottom) New Terminal at Folder
 
 * Copy and paste the lines below into that terminal window
 
@@ -121,8 +121,23 @@ After Xcode opens for Loop-dev:
     * File->Close Workspace
     * File->Open Recent (choose top one in list)
     * Build
+    * If that still doesn't work, quit out of Xcode, delete derived data and try again.
+
+``` title="Delete Derived Data (quit Xcode first)"
+rm -rf ~/Library/Developer/Xcode/DerivedData
+```
+
     
 Follow the build instructions on the next page: [Build Loop](step14.md#build-loop).
+
+### Updating Your Copy of Loop-dev
+
+While Loop-dev is under active test, you will want to update frequently.
+
+* Some users like to use [GitKraken](https://support.gitkraken.com/) to assist them (link takes you to a tutorial video).
+* Some just repeat the cloning.
+* Some are comfortable with the command line git commands described on [here](loopworkspace.md#updating-loop-using-loopworkspace).
+
 
 ### Check carthage Status
 
