@@ -579,6 +579,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#updating-your-copy-of-loop-dev" class="md-nav__link">
+    Updating Your Copy of Loop-dev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#check-carthage-status" class="md-nav__link">
     Check carthage Status
   </a>
@@ -1769,6 +1776,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#updating-your-copy-of-loop-dev" class="md-nav__link">
+    Updating Your Copy of Loop-dev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#check-carthage-status" class="md-nav__link">
     Check carthage Status
   </a>
@@ -1895,7 +1909,7 @@
 <p>Review the instructions here: <a href="https://github.com/LoopKit/LoopWorkspace#readme">LoopWorkspace README</a> </p>
 </li>
 <li>
-<p>Use finder to create a new folder, typically in Downloads; and then hold down the control key and click on the folder to open a terminal window in that folder</p>
+<p>Use finder to create a new folder, typically in Downloads; and then hold down the control key and click on the folder to open a menu: select (near the bottom) New Terminal at Folder</p>
 </li>
 <li>
 <p>Copy and paste the lines below into that terminal window</p>
@@ -1926,10 +1940,20 @@ xed .
 <li>File-&gt;Close Workspace</li>
 <li>File-&gt;Open Recent (choose top one in list)</li>
 <li>Build</li>
+<li>If that still doesn't work, quit out of Xcode, delete derived data and try again.</li>
 </ul>
 </li>
 </ul>
+<div class="highlight"><span class="filename">Delete Derived Data (quit Xcode first)</span><pre><span></span><code>rm -rf ~/Library/Developer/Xcode/DerivedData
+</code></pre></div>
 <p>Follow the build instructions on the next page: <a href="../step14/#build-loop">Build Loop</a>.</p>
+<h3 id="updating-your-copy-of-loop-dev">Updating Your Copy of Loop-dev<a class="headerlink" href="#updating-your-copy-of-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>While Loop-dev is under active test, you will want to update frequently.</p>
+<ul>
+<li>Some users like to use <a href="https://support.gitkraken.com/">GitKraken</a> to assist them (link takes you to a tutorial video).</li>
+<li>Some just repeat the cloning.</li>
+<li>Some are comfortable with the command line git commands described on <a href="../loopworkspace/#updating-loop-using-loopworkspace">here</a>.</li>
+</ul>
 <h3 id="check-carthage-status">Check carthage Status<a class="headerlink" href="#check-carthage-status" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The steps required to install the correct version of carthage depend on whether carthage is already installed.</p>
 <p>First copy and paste this phrase into the terminal and hit return:</p>
