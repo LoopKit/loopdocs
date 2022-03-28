@@ -608,6 +608,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#cycle-dependency" class="md-nav__link">
+    Cycle Dependency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" class="md-nav__link">
     Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
   </a>
@@ -1875,6 +1882,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#cycle-dependency" class="md-nav__link">
+    Cycle Dependency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" class="md-nav__link">
     Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
   </a>
@@ -2095,6 +2109,33 @@
 <p>For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find the solution.</p>
 <p align="center"><img alt="img/search-errors.png" src="../img/search-errors.png" width="650" /></p>
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="cycle-dependency">Cycle Dependency<a class="headerlink" href="#cycle-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building master / FreeAPS.</p>
+<p><strong>Error Message:</strong></p>
+<p><img alt="cycle dependencies error" src="../img/xcode-cycle-dependencies.svg" width="600" /></p>
+<p>Text in error:</p>
+<ul>
+<li>
+<p>Left window (the exact target names are not important):</p>
+<ul>
+<li><em>Cycle in dependencies between targets . . .</em> </li>
+</ul>
+</li>
+<li>
+<p>Middle window:</p>
+<ul>
+<li><em>Target build order preserved because "Build Order" is set to "Manual Order" in the scheme settings</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<p>No need to quit Xcode - follow these steps using the Xcode Menu bar. (It's possible that only Step 1 is required, but sometimes all steps are needed.)</p>
+<ol>
+<li>From the <code>Product</code> menu (of Xcode), select <code>Clean Build Folder</code> </li>
+<li>From the <code>File</code> menu, select <code>Close Workspace</code> </li>
+<li>From the <code>File</code> menu, select <code>Open Recent</code> and choose the top line </li>
+<li>Press the Build Button (play icon)</li>
+</ol>
 <h3 id="xcode-13-indexing-not-finished-watchapp-extension-entitlements">Xcode 13 Indexing Not Finished / WatchApp Extension entitlements<a class="headerlink" href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong></p>
 <p>The solution for this error has been updated with a new, simpler method.</p>
