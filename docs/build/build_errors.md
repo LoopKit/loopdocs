@@ -94,6 +94,34 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ## Specific Error Messages
 
+### Cycle Dependency
+
+This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building master / FreeAPS.
+
+**Error Message:**
+
+![cycle dependencies error](img/xcode-cycle-dependencies.svg){width="600"}
+
+Text in error:
+
+* Left window (the exact target names are not important):
+
+    * _Cycle in dependencies between targets . . ._ 
+
+* Middle window:
+
+    * _Target build order preserved because "Build Order" is set to "Manual Order" in the scheme settings_
+
+**Solution:**
+
+No need to quit Xcode - follow these steps using the Xcode Menu bar. (It's possible that only Step 1 is required, but sometimes all steps are needed.)
+
+1. From the `Product` menu (of Xcode), select `Clean Build Folder` 
+1. From the `File` menu, select `Close Workspace` 
+1. From the `File` menu, select `Open Recent` and choose the top line 
+1. Press the Build Button (play icon)
+
+
 ### Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
 
 **Error Message:**
