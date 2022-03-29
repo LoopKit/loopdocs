@@ -96,7 +96,7 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ### Cycle Dependency
 
-This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building master / FreeAPS.
+This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building FreeAPS.
 
 **Error Message:**
 

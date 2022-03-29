@@ -112,15 +112,13 @@ With Loop-dev, the signing of targets can be done by editing a single file:
 * Apple Developer Team ID can be found for your account (after you sign in) at:
     * https://developer.apple.com/account/#!/membership
 
-After Xcode opens for Loop-dev:
+#### After Xcode opens for Loop-dev:
 
 * There are some package dependencies that are resolved first and then the indexing takes place
-* You may see some Red Error indicators prior to those resolving - just wait and they will go away
-* If you are building Loop-dev with Xcode 13.3, you may find it a little touchy - if you've done everything "right", try this procedure using the menus at the top of Xcode:
-    * Product->Clean Build folder
-    * File->Close Workspace
-    * File->Open Recent (choose top one in list)
-    * Build
+* If you are building Loop-dev with Xcode 13.3, you may have to clean, close and reopen the workspace (no need to quit Xcode) before you can build successfully
+    * Sometimes package dependencies do not resolve and you see a message like "Couldn’t get revision ‘1.4.3^{commit}’"
+    * Sometimes you may see a cycle dependency error
+    * In either case, follow the procedure to fix a [Cycle Dependency](build_errors.md#cycle-dependency)
     * If that still doesn't work, quit out of Xcode, delete derived data and try again.
 
 ``` title="Delete Derived Data (quit Xcode first)"
