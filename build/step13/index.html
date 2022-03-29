@@ -1931,15 +1931,13 @@ xed .
 </ul>
 </li>
 </ul>
-<p>After Xcode opens for Loop-dev:</p>
+<h4 id="after-xcode-opens-for-loop-dev">After Xcode opens for Loop-dev:<a class="headerlink" href="#after-xcode-opens-for-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
 <li>There are some package dependencies that are resolved first and then the indexing takes place</li>
-<li>You may see some Red Error indicators prior to those resolving - just wait and they will go away</li>
-<li>If you are building Loop-dev with Xcode 13.3, you may find it a little touchy - if you've done everything "right", try this procedure using the menus at the top of Xcode:<ul>
-<li>Product-&gt;Clean Build folder</li>
-<li>File-&gt;Close Workspace</li>
-<li>File-&gt;Open Recent (choose top one in list)</li>
-<li>Build</li>
+<li>If you are building Loop-dev with Xcode 13.3, you may have to clean, close and reopen the workspace (no need to quit Xcode) before you can build successfully<ul>
+<li>Sometimes package dependencies do not resolve and you see a message like "Couldn’t get revision ‘1.4.3^{commit}’"</li>
+<li>Sometimes you may see a cycle dependency error</li>
+<li>In either case, follow the procedure to fix a <a href="../build_errors/#cycle-dependency">Cycle Dependency</a></li>
 <li>If that still doesn't work, quit out of Xcode, delete derived data and try again.</li>
 </ul>
 </li>
