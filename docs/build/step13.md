@@ -115,7 +115,7 @@ With Loop-dev, the signing of targets can be done by editing a single file:
 #### After Xcode opens for Loop-dev:
 
 * There are some package dependencies that are resolved first and then the indexing takes place
-* If you are building Loop-dev with Xcode 13.3, you may find you have to clean, close and reopen the workspace (no need to quit Xcode) before you can build successfully
+* If you are building Loop-dev with Xcode 13.3, you may have to clean, close and reopen the workspace (no need to quit Xcode) before you can build successfully
     * Sometimes package dependencies do not resolve and you see a message like "Couldn’t get revision ‘1.4.3^{commit}’"
     * Sometimes you may see a cycle dependency error
     * In either case, follow the procedure to fix a [Cycle Dependency](build_errors.md#cycle-dependency)
