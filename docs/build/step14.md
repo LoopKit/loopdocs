@@ -112,7 +112,7 @@ Assuming there are no errors, then type 1, return to Continue.
 
 ### Single Step to Download
 
-If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the [Wait for Xcode to Finish Indexing](#wait-for-xcode-to-finish-indexing) section.
+If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the [Wait for Xcode to Start Indexing](#wait-for-xcode-to-start-indexing) section.
 
 This section is provided to help experienced builders save time. By copying and pasting a whole block of text, you can start the script, answer the questions, download the code and open both Xcode and a browser showing the graphic in the next section. If you have never used this script before, please review the [Step-by-Step](#step-by-step) section including the `Review Download for Errors` section.
 
@@ -143,16 +143,24 @@ For those who use FreeAPS (a fork of Loop), this block is here for your convenie
 #
 ```
 
-## Wait for Xcode to Finish Indexing
+## Wait for Xcode to Start Indexing
 
-When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build. If you are impatient and don't wait (and sometimes even when you do wait), you may see this build failure: [WatchApp Extension Error](build_errors.md#xcode-13-indexing-not-finished-watchapp-extension-entitlements).
+There is a new step to the signing procedure.  Please read this section.
 
-The other thing to know: If there is a space in the path to your LoopWorkspace folder, you will get the [CompileAssetCatalog Error](build_errors.md#compileassetcatalog-error). You can go on and do the "error" fix before you build and then it won't happen.  Or you can wait until you see it. And if you are super fast and do the "fix" first and then don't wait for indexing, you might still get the WatchApp Extension error.  Fortunately, the solutions to both are simple and fast.
+When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to start in your Xcode before trying to build. 
+
+!!! info "Looking Ahead"
+    
+    Versions of Loop in the future, e.g., what is currently Loop-dev and FreeAPS-dev, will need to download some packages.  Those dev branches sometimes require the builder to execute the [Cycle Dependency fix](build_errors.md#cycle-dependency) before indexing can begin. (It's easy, just be aware.)
 
 ![graphic for workspace build](img/workspace-build-loop-from-script_annotated-3-1.svg){width="750"}
 {align="center"}
 
-You can do all the instructions (except the build while waiting for indexing.) There are some additional details about each step in the list below, if you need them, indicated by links.
+The graphic above is coordinated with the numbers in the list below. If you are a new builder, you probably want to click on each link in the step to read the details (and then click back when done). An experienced builder can use this list as a reminder.
+
+!!! warning "New Step for Xcode 13"
+
+    There is a new step highlighted in red and green labeled 4.5.  Be sure to click on the Loop icon under the `PROJECT` heading BEFORE hitting build.  Otherwise - you may get an "Entitlements" Build Error for either Loop or WatchApp and will need this procedure [Entitlements Error](build-errors.md#entitlements-error).
 
 1. At the very top of all the folders and files listed on the left side, click on the blue icon next to the word "Loop". You might need to click a second time to highlight the Loop folder. This will populate the middle part of the Xcode window.
 1. [Plug in your phone](#connect-your-iphone-to-computer) - make sure it is unlocked.  If this is the **First Time** for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".
@@ -168,16 +176,17 @@ You can do all the instructions (except the build while waiting for indexing.) T
     * For Paid Account - [sign the targets](#sign-the-targets) indicated in the graphic above
     * ONLY sign the 4 targets highlighted in the graphic above
         - If you sign other targets you might generate errors when you build and they do NOT need to be signed
+    * Step 4.5 - click on the Loop icon under the `PROJECTS` heading once the 4 targets are signed.
 1. You are ready to Build Loop if all the following are completed:
-    * Indexing has completed
     * You signed the 4 targets
+    * You have clicked on the Loop icon under the `PROJECTS` heading
     * Your iPhone is unlocked and plugged into the computer
     * You selected Loop (Workspace)
     * You selected your phone and not a simulator
     * OPTIONAL: your [Apple watch](#pair-your-apple-watch) been paired and updated
     * OPTIONAL: you are done with desired [customizations](#code-customizations)
 
-If you think you are ready, click on [Build Loop](#build-loop). This takes you to the section of this page that walks you through the actual build and, for first time builders, information about when and how to enter passwords.
+If you think you are ready, click on the link for [Build Loop](#build-loop) to skip past details of steps already completed. This takes you to the section of this page that walks you through the actual build and, for first time builders, information about when and how to enter passwords.
 
 ---
 
@@ -278,9 +287,9 @@ When you've finished your customizations, come on back to this section and conti
 
 Confirm that you are ready to build Loop:
 
-* Has Xcode finished indexing?
 * Is your iPhone unlocked and plugged into the computer?
 * Have you signed the four targets?
+* Have you clicked on the Loop icon under the `PROJECTS` heading?
 * Have you selected Loop (Workspace)?
 * Have you selected your phone and not a simulator?
 * Are you done with any customizations?
@@ -297,9 +306,9 @@ _The graphics in this section have not been updated to show "Loop (Workspace)"._
 ![img/build_button.png](img/build_button.png){width="750"}
 {align="center"}
 
-You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take 5-30 minutes, depending on the speed of the computer.  **Just be patient.**  The progress will get stay on one step/task for a very long time, and then the others will fly by. Not every step is equal in duration. Do not give up on the build.
+You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take 5-30 minutes, depending on the speed of the computer.  **Just be patient.**  The progress will stay on one step/task for a very long time, and then the others will fly by. Not every step is equal in duration. Do not give up on the build.
 
-**Xcode will ALWAYS tell you eventually that the build either succeeded or failed via a short (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Unlock Phone to Continue" or "Build Failed" (failure) message where the step progress was previously counting down.**
+**Xcode will ALWAYS tell you eventually that the build either succeeded or failed via an ephemeral (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Unlock Phone to Continue" or "Build Failed" (failure) message where the step progress was previously counting down.**
 
 ### Codesign / Keychain Access
 
@@ -356,7 +365,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! warning "Breaking News for Xcode 13"
 
-    There is a new error for Xcode 13, "WatchApp Extension.entitlements" that happens if you don't wait for indexing to complete - and often still happens even if you do wait. If you get this, follow this link: [WatchApp Extension Solution](build_errors.md#xcode-13-indexing-not-finished-watchapp-extension-entitlements)
+    There is a new error for Xcode 13, "WatchApp Extension.entitlements" or "Loop.entitlements" depending on which icon you left highlighted when signing targets.  (We checked many combinations - if you follow the instructions to highlight the Loop icon below `PROJECTS`, you won't get the error.) If you do see that error, follow this link: [Entitlements Error](build_errors.md#entitlements-error) for an easy fix.
 
 
 If you get any other message that your build failed and see **RED ERROR** messages, go to the [Build Errors](build_errors.md) page to find the steps to fix your build error. Most build errors are covered on that page along with instructions on how to fix them and how to ask for help.

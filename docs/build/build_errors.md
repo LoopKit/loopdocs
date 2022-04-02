@@ -96,7 +96,7 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ### Cycle Dependency
 
-This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building FreeAPS.
+This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building Loop-Master and FreeAPS.
 
 **Error Message:**
 
@@ -122,33 +122,41 @@ No need to quit Xcode - follow these steps using the Xcode Menu bar. (It's possi
 1. Press the Build Button (play icon)
 
 
-### Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
+##### Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
+
+(The old link is included on the line above - this link will be removed soon) 
+
+### Entitlements Error
 
 **Error Message:**
 
 The solution for this error has been updated with a new, simpler method.
 
-![watchapp entitlements error](img/xcode-13-new-error.svg){width="300"}
+![watchapp entitlements error](img/xcode-13-new-error.svg){width="250"}
 
-Text in error message:
+Text in error message can be either of these:
 
-_Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. . ._
+_Entitlements file "WatchApp Extension.entitlements" was modified . . ._
+
+or 
+
+_Entitlements file "Loop.entitlements" was modified . . ._
 
 **Solution:**
 
-No need to quit Xcode - the graphic below matches the step numbers in the list.
+No need to quit Xcode - follow these numbered steps as indicated in the graphic below. 
 
-1. Click on `Loop` folder
-1. Click on `WatchApp` target
-1. Click on the `General` tab
-1. Click on the `App Icons Source` dropdown menu
-1. Click on the item already selected (the line won't change in appearance)
+1. Click on the Loop icon under PROJECT
+1. From the `Product` menu (of Xcode), select `Clean Build Folder` 
+1. Press the Build Button (play icon)
 
 
-![Xcode screen showing App Icons Source with black indication](img/error-watchapp-entitlements.svg){width="900"}
+![Xcode screen showing updated entitlements fix](img/entitlements-error.svg){width="900"}
 
-- (Optional) Clear the Build Error (Menu at top of Xcode: Select Product->Clean Build Folder)
-- Press build  
+It turns out that
+
+* You can start building before indexing completes - just make sure it has started
+* The behavior causing this in Xcode has been reported to Apple
 
 ### CompileAssetCatalog Error
 
@@ -181,7 +189,7 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 
 ### Carthage Error
 
-With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the new [Build Instructions](step14.md#wait-for-xcode-to-finish-indexing)
+With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the new [Build Instructions](step14.md#wait-for-xcode-to-start-indexing)
 
 Or maybe you are a repeat builder who did not read the updated information and tried to use the old zip-download method. That is no longer supported.  Please read all of the [Updating](updating.md) page.
 
@@ -231,7 +239,7 @@ With Xcode 12, the simulators are no longer being downloaded automatically. If y
 
 ### No Such Module 'LoopKit' or Similar Message
 
-**Solution**: You probably forgot to select LoopWorkspace. Review the graphic from the new [Build Instructions](step14.md#wait-for-xcode-to-finish-indexing)
+**Solution**: You probably forgot to select LoopWorkspace. Review the graphic from the new [Build Instructions](step14.md#wait-for-xcode-to-start-indexing)
 
 **Error Message:** If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the [Carthage Error](build_errors.md#carthage-error) fix listed above.
 

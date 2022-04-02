@@ -76,12 +76,12 @@ For those "Repeat Loopers" who remember when you had to use a "dev" branch to ge
     * Be sure to clone into a new directory that does not already have a folder called LoopWorkspace in it.
     * Loop-dev is the only workspace build that still requires carthage and it requires a specific version - don't worry - instructions are provided below
 
-**Only build the dev branch if you're a developer/advanced user**
+#### Only build the dev branch if you're a developer/advanced user
 
 Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch.
 
 - Note, the dev branch requires a minimum of iOS 14 on your device
-- Once you install the dev branch on a device, you must delete the app to return to master, which means all settings will need to be entered and a new pod started
+- Once you install the dev branch on a device, you must delete the app to return to master, which means all settings will need to be entered in master and a new pod started
 - The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch
 - [Loop dev Preview](../faqs/dev-menus.md) is found in the FAQs section with some preliminary documentation
 
