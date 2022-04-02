@@ -615,8 +615,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" class="md-nav__link">
-    Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
+  <a href="#entitlements-error" class="md-nav__link">
+    Entitlements Error
   </a>
   
 </li>
@@ -1889,8 +1889,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" class="md-nav__link">
-    Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
+  <a href="#entitlements-error" class="md-nav__link">
+    Entitlements Error
   </a>
   
 </li>
@@ -2110,7 +2110,7 @@
 <p align="center"><img alt="img/search-errors.png" src="../img/search-errors.png" width="650" /></p>
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="cycle-dependency">Cycle Dependency<a class="headerlink" href="#cycle-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building FreeAPS.</p>
+<p>This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building Loop-Master and FreeAPS.</p>
 <p><strong>Error Message:</strong></p>
 <p><img alt="cycle dependencies error" src="../img/xcode-cycle-dependencies.svg" width="600" /></p>
 <p>Text in error:</p>
@@ -2136,25 +2136,28 @@
 <li>From the <code>File</code> menu, select <code>Open Recent</code> and choose the top line </li>
 <li>Press the Build Button (play icon)</li>
 </ol>
-<h3 id="xcode-13-indexing-not-finished-watchapp-extension-entitlements">Xcode 13 Indexing Not Finished / WatchApp Extension entitlements<a class="headerlink" href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h5 id="xcode-13-indexing-not-finished-watchapp-extension-entitlements">Xcode 13 Indexing Not Finished / WatchApp Extension entitlements<a class="headerlink" href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" title="Anchor link to this Header on this Page">&para;</a></h5>
+<p>(The old link is included on the line above - this link will be removed soon) </p>
+<h3 id="entitlements-error">Entitlements Error<a class="headerlink" href="#entitlements-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong></p>
 <p>The solution for this error has been updated with a new, simpler method.</p>
-<p><img alt="watchapp entitlements error" src="../img/xcode-13-new-error.svg" width="300" /></p>
-<p>Text in error message:</p>
-<p><em>Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. . .</em></p>
+<p><img alt="watchapp entitlements error" src="../img/xcode-13-new-error.svg" width="250" /></p>
+<p>Text in error message can be either of these:</p>
+<p><em>Entitlements file "WatchApp Extension.entitlements" was modified . . .</em></p>
+<p>or </p>
+<p><em>Entitlements file "Loop.entitlements" was modified . . .</em></p>
 <p><strong>Solution:</strong></p>
-<p>No need to quit Xcode - the graphic below matches the step numbers in the list.</p>
+<p>No need to quit Xcode - follow these numbered steps as indicated in the graphic below. </p>
 <ol>
-<li>Click on <code>Loop</code> folder</li>
-<li>Click on <code>WatchApp</code> target</li>
-<li>Click on the <code>General</code> tab</li>
-<li>Click on the <code>App Icons Source</code> dropdown menu</li>
-<li>Click on the item already selected (the line won't change in appearance)</li>
+<li>Click on the Loop icon under PROJECT</li>
+<li>From the <code>Product</code> menu (of Xcode), select <code>Clean Build Folder</code> </li>
+<li>Press the Build Button (play icon)</li>
 </ol>
-<p><img alt="Xcode screen showing App Icons Source with black indication" src="../img/error-watchapp-entitlements.svg" width="900" /></p>
+<p><img alt="Xcode screen showing updated entitlements fix" src="../img/entitlements-error.svg" width="900" /></p>
+<p>It turns out that</p>
 <ul>
-<li>(Optional) Clear the Build Error (Menu at top of Xcode: Select Product-&gt;Clean Build Folder)</li>
-<li>Press build  </li>
+<li>You can start building before indexing completes - just make sure it has started</li>
+<li>The behavior causing this in Xcode has been reported to Apple</li>
 </ul>
 <h3 id="compileassetcatalog-error">CompileAssetCatalog Error<a class="headerlink" href="#compileassetcatalog-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This error is found when there is a space embedded in the path name to your LoopWorspace folder. The good news is that LoopWorkspace seems to be able to build from an iCloud or Dropbox drive.</p>
@@ -2177,7 +2180,7 @@
 <li>Press build</li>
 </ul>
 <h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-finish-indexing">Build Instructions</a></p>
+<p>With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-start-indexing">Build Instructions</a></p>
 <p>Or maybe you are a repeat builder who did not read the updated information and tried to use the old zip-download method. That is no longer supported.  Please read all of the <a href="../updating/">Updating</a> page.</p>
 <div class="admonition info">
 <p>Advanced builders using dev may need carthage but they should have followed the directions for <a href="../step13/#advanced-users-only">Advanced Users Only</a></p>
@@ -2212,7 +2215,7 @@
 <p align="center"><img alt="img/device-support-files.jpg" src="../img/device-support-files.jpg" width="750" /></p>
 <p>With Xcode 12, the simulators are no longer being downloaded automatically. If you are missing a simulator, follow the steps under Step 9 <a href="../step9/#simulator-download">Simulator Download</a>.</p>
 <h3 id="no-such-module-loopkit-or-similar-message">No Such Module 'LoopKit' or Similar Message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Solution</strong>: You probably forgot to select LoopWorkspace. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-finish-indexing">Build Instructions</a></p>
+<p><strong>Solution</strong>: You probably forgot to select LoopWorkspace. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-start-indexing">Build Instructions</a></p>
 <p><strong>Error Message:</strong> If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the <a href="./#carthage-error">Carthage Error</a> fix listed above.</p>
 <p><strong>Solution</strong>: For zip-download (not advised): Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.</p>
 <p align="center"><img alt="img/exit-code-65.png" src="../img/exit-code-65.png" width="850" /></p>

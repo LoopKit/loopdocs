@@ -605,11 +605,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#wait-for-xcode-to-finish-indexing" class="md-nav__link">
-    Wait for Xcode to Finish Indexing
+  <a href="#wait-for-xcode-to-start-indexing" class="md-nav__link">
+    Wait for Xcode to Start Indexing
   </a>
   
-    <nav class="md-nav" aria-label="Wait for Xcode to Finish Indexing">
+    <nav class="md-nav" aria-label="Wait for Xcode to Start Indexing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1884,11 +1884,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#wait-for-xcode-to-finish-indexing" class="md-nav__link">
-    Wait for Xcode to Finish Indexing
+  <a href="#wait-for-xcode-to-start-indexing" class="md-nav__link">
+    Wait for Xcode to Start Indexing
   </a>
   
-    <nav class="md-nav" aria-label="Wait for Xcode to Finish Indexing">
+    <nav class="md-nav" aria-label="Wait for Xcode to Start Indexing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2108,7 +2108,7 @@
 <li>Rearrange screens so you can see the graphic and Xcode and follow the directions</li>
 </ul>
 <h3 id="single-step-to-download">Single Step to Download<a class="headerlink" href="#single-step-to-download" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the <a href="#wait-for-xcode-to-finish-indexing">Wait for Xcode to Finish Indexing</a> section.</p>
+<p>If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the <a href="#wait-for-xcode-to-start-indexing">Wait for Xcode to Start Indexing</a> section.</p>
 <p>This section is provided to help experienced builders save time. By copying and pasting a whole block of text, you can start the script, answer the questions, download the code and open both Xcode and a browser showing the graphic in the next section. If you have never used this script before, please review the <a href="#step-by-step">Step-by-Step</a> section including the <code>Review Download for Errors</code> section.</p>
 <p>If you do not have Xcode and Xcode command line tools installed - you will get errors. They are shown in the <a href="#step-by-step">Step-by-Step</a> section.</p>
 <div class="highlight"><span class="filename">Download Loop Master and Open Xcode</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
@@ -2128,11 +2128,19 @@
 1
 #
 </code></pre></div>
-<h2 id="wait-for-xcode-to-finish-indexing">Wait for Xcode to Finish Indexing<a class="headerlink" href="#wait-for-xcode-to-finish-indexing" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to complete in your Xcode before trying to build. If you are impatient and don't wait (and sometimes even when you do wait), you may see this build failure: <a href="../build_errors/#xcode-13-indexing-not-finished-watchapp-extension-entitlements">WatchApp Extension Error</a>.</p>
-<p>The other thing to know: If there is a space in the path to your LoopWorkspace folder, you will get the <a href="../build_errors/#compileassetcatalog-error">CompileAssetCatalog Error</a>. You can go on and do the "error" fix before you build and then it won't happen.  Or you can wait until you see it. And if you are super fast and do the "fix" first and then don't wait for indexing, you might still get the WatchApp Extension error.  Fortunately, the solutions to both are simple and fast.</p>
+<h2 id="wait-for-xcode-to-start-indexing">Wait for Xcode to Start Indexing<a class="headerlink" href="#wait-for-xcode-to-start-indexing" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There is a new step to the signing procedure.  Please read this section.</p>
+<p>When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to start in your Xcode before trying to build. </p>
+<div class="admonition info">
+<p class="admonition-title">Looking Ahead</p>
+<p>Versions of Loop in the future, e.g., what is currently Loop-dev and FreeAPS-dev, will need to download some packages.  Those dev branches sometimes require the builder to execute the <a href="../build_errors/#cycle-dependency">Cycle Dependency fix</a> before indexing can begin. (It's easy, just be aware.)</p>
+</div>
 <p align="center"><img alt="graphic for workspace build" src="../img/workspace-build-loop-from-script_annotated-3-1.svg" width="750" /></p>
-<p>You can do all the instructions (except the build while waiting for indexing.) There are some additional details about each step in the list below, if you need them, indicated by links.</p>
+<p>The graphic above is coordinated with the numbers in the list below. If you are a new builder, you probably want to click on each link in the step to read the details (and then click back when done). An experienced builder can use this list as a reminder.</p>
+<div class="admonition warning">
+<p class="admonition-title">New Step for Xcode 13</p>
+<p>There is a new step highlighted in red and green labeled 4.5.  Be sure to click on the Loop icon under the <code>PROJECT</code> heading BEFORE hitting build.  Otherwise - you may get an "Entitlements" Build Error for either Loop or WatchApp and will need this procedure <a href="build-errors.md#entitlements-error">Entitlements Error</a>.</p>
+</div>
 <ol>
 <li>At the very top of all the folders and files listed on the left side, click on the blue icon next to the word "Loop". You might need to click a second time to highlight the Loop folder. This will populate the middle part of the Xcode window.</li>
 <li><a href="#connect-your-iphone-to-computer">Plug in your phone</a> - make sure it is unlocked.  If this is the <strong>First Time</strong> for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".<ul>
@@ -2154,11 +2162,12 @@
 <li>If you sign other targets you might generate errors when you build and they do NOT need to be signed</li>
 </ul>
 </li>
+<li>Step 4.5 - click on the Loop icon under the <code>PROJECTS</code> heading once the 4 targets are signed.</li>
 </ul>
 </li>
 <li>You are ready to Build Loop if all the following are completed:<ul>
-<li>Indexing has completed</li>
 <li>You signed the 4 targets</li>
+<li>You have clicked on the Loop icon under the <code>PROJECTS</code> heading</li>
 <li>Your iPhone is unlocked and plugged into the computer</li>
 <li>You selected Loop (Workspace)</li>
 <li>You selected your phone and not a simulator</li>
@@ -2167,7 +2176,7 @@
 </ul>
 </li>
 </ol>
-<p>If you think you are ready, click on <a href="#build-loop">Build Loop</a>. This takes you to the section of this page that walks you through the actual build and, for first time builders, information about when and how to enter passwords.</p>
+<p>If you think you are ready, click on the link for <a href="#build-loop">Build Loop</a> to skip past details of steps already completed. This takes you to the section of this page that walks you through the actual build and, for first time builders, information about when and how to enter passwords.</p>
 <hr />
 <p>Extra details - there are some extra details for some of the steps summarized above - the links in that list above take you to the appropriate extra details section.</p>
 <p><strong>If you are a first-time builder, please read through all the extra details before you start you build</strong></p>
@@ -2236,9 +2245,9 @@
 <h2 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Confirm that you are ready to build Loop:</p>
 <ul>
-<li>Has Xcode finished indexing?</li>
 <li>Is your iPhone unlocked and plugged into the computer?</li>
 <li>Have you signed the four targets?</li>
+<li>Have you clicked on the Loop icon under the <code>PROJECTS</code> heading?</li>
 <li>Have you selected Loop (Workspace)?</li>
 <li>Have you selected your phone and not a simulator?</li>
 <li>Are you done with any customizations?</li>
@@ -2251,8 +2260,8 @@
 <p>The final step of a successful build is for Xcode to copy the completed build to your iPhone; if your phone is locked, Xcode pops up a message letting you know.  Unlock your phone to continue.</p>
 </div>
 <p align="center"><img alt="img/build_button.png" src="../img/build_button.png" width="750" /></p>
-<p>You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take 5-30 minutes, depending on the speed of the computer.  <strong>Just be patient.</strong>  The progress will get stay on one step/task for a very long time, and then the others will fly by. Not every step is equal in duration. Do not give up on the build.</p>
-<p><strong>Xcode will ALWAYS tell you eventually that the build either succeeded or failed via a short (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Unlock Phone to Continue" or "Build Failed" (failure) message where the step progress was previously counting down.</strong></p>
+<p>You’ll see the progression of the build in the status window (top middle of Xcode). New builds can take 5-30 minutes, depending on the speed of the computer.  <strong>Just be patient.</strong>  The progress will stay on one step/task for a very long time, and then the others will fly by. Not every step is equal in duration. Do not give up on the build.</p>
+<p><strong>Xcode will ALWAYS tell you eventually that the build either succeeded or failed via an ephemeral (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the Xcode window to see a "Running Loop..." (success) or "Unlock Phone to Continue" or "Build Failed" (failure) message where the step progress was previously counting down.</strong></p>
 <h3 id="codesign-keychain-access">Codesign / Keychain Access<a class="headerlink" href="#codesign-keychain-access" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">First Time Builder or First Time on this Computer</p>
@@ -2285,7 +2294,7 @@
 <h2 id="build-failed">Build Failed<a class="headerlink" href="#build-failed" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Breaking News for Xcode 13</p>
-<p>There is a new error for Xcode 13, "WatchApp Extension.entitlements" that happens if you don't wait for indexing to complete - and often still happens even if you do wait. If you get this, follow this link: <a href="../build_errors/#xcode-13-indexing-not-finished-watchapp-extension-entitlements">WatchApp Extension Solution</a></p>
+<p>There is a new error for Xcode 13, "WatchApp Extension.entitlements" or "Loop.entitlements" depending on which icon you left highlighted when signing targets.  (We checked many combinations - if you follow the instructions to highlight the Loop icon below <code>PROJECTS</code>, you won't get the error.) If you do see that error, follow this link: <a href="../build_errors/#entitlements-error">Entitlements Error</a> for an easy fix.</p>
 </div>
 <p>If you get any other message that your build failed and see <strong>RED ERROR</strong> messages, go to the <a href="../build_errors/">Build Errors</a> page to find the steps to fix your build error. Most build errors are covered on that page along with instructions on how to fix them and how to ask for help.</p>
 <p>Once you've resolved the issue and start the build process again, Xcode will continue to show a red circle on the top line from the previous failure.  If you don't like seeing that, clean the build folder to clear the error.  Otherwise, as long as the steps of the build are showing across the top line, Xcode is still working on the build.  When the build succeeds, the red circle will disappear.</p>
