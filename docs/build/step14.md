@@ -112,7 +112,7 @@ Assuming there are no errors, then type 1, return to Continue.
 
 ### Single Step to Download
 
-If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the [Wait for Xcode to Finish Indexing](#wait-for-xcode-to-finish-indexing) section.
+If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the [Wait for Xcode to Start Indexing](#wait-for-xcode-to-start-indexing) section.
 
 This section is provided to help experienced builders save time. By copying and pasting a whole block of text, you can start the script, answer the questions, download the code and open both Xcode and a browser showing the graphic in the next section. If you have never used this script before, please review the [Step-by-Step](#step-by-step) section including the `Review Download for Errors` section.
 
@@ -365,7 +365,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! warning "Breaking News for Xcode 13"
 
-    There is a new error for Xcode 13, "WatchApp Extension.entitlements" or "Loop.entitlements" depending on which icon you left highlighted when signing targets.  (We checked many combinations - if you follow the instructions to highlight the Loop icon below `PROJECTS`, you won't get the error. If you do see that error, follow this link: [Entitlements Error](build_errors.md#entitlements-error) for an easy fix.
+    There is a new error for Xcode 13, "WatchApp Extension.entitlements" or "Loop.entitlements" depending on which icon you left highlighted when signing targets.  (We checked many combinations - if you follow the instructions to highlight the Loop icon below `PROJECTS`, you won't get the error.) If you do see that error, follow this link: [Entitlements Error](build_errors.md#entitlements-error) for an easy fix.
 
 
 If you get any other message that your build failed and see **RED ERROR** messages, go to the [Build Errors](build_errors.md) page to find the steps to fix your build error. Most build errors are covered on that page along with instructions on how to fix them and how to ask for help.
