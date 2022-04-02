@@ -96,7 +96,7 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ### Cycle Dependency
 
-This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building FreeAPS.
+This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building Loop-Master and FreeAPS.
 
 **Error Message:**
 
@@ -122,33 +122,41 @@ No need to quit Xcode - follow these steps using the Xcode Menu bar. (It's possi
 1. Press the Build Button (play icon)
 
 
-### Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
+##### Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
+
+(The old link is included on the line above - this link will be removed soon) 
+
+### Entitlements Error
 
 **Error Message:**
 
 The solution for this error has been updated with a new, simpler method.
 
-![watchapp entitlements error](img/xcode-13-new-error.svg){width="300"}
+![watchapp entitlements error](img/xcode-13-new-error.svg){width="250"}
 
-Text in error message:
+Text in error message can be either of these:
 
-_Entitlements file "WatchApp Extension.entitlements" was modified during the build, which is not supported. . ._
+_Entitlements file "WatchApp Extension.entitlements" was modified . . ._
+
+or 
+
+_Entitlements file "Loop.entitlements" was modified . . ._
 
 **Solution:**
 
-No need to quit Xcode - the graphic below matches the step numbers in the list.
+No need to quit Xcode - follow these numbered steps as indicated in the graphic below. 
 
-1. Click on `Loop` folder
-1. Click on `WatchApp` target
-1. Click on the `General` tab
-1. Click on the `App Icons Source` dropdown menu
-1. Click on the item already selected (the line won't change in appearance)
+1. Click on the Loop icon under PROJECT
+1. From the `Product` menu (of Xcode), select `Clean Build Folder` 
+1. Press the Build Button (play icon)
 
 
-![Xcode screen showing App Icons Source with black indication](img/error-watchapp-entitlements.svg){width="900"}
+![Xcode screen showing updated entitlements fix](img/entitlements-error.svg){width="900"}
 
-- (Optional) Clear the Build Error (Menu at top of Xcode: Select Product->Clean Build Folder)
-- Press build  
+It turns out that
+
+* You can start building before indexing completes - just make sure it has started
+* The behavior causing this in Xcode has been reported to Apple
 
 ### CompileAssetCatalog Error
 
