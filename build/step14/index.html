@@ -2026,7 +2026,11 @@
 <li><strong>First Time:</strong> Trust the computer</li>
 <li>Select Loop (Workspace) and your phone at top of Xcode</li>
 <li><strong>First Time:</strong> Register the phone</li>
-<li>Sign the targets</li>
+<li>Sign the targets<ul>
+<li>Then click on a specific location with your mouse</li>
+<li>This is new with Xcode 13 - avoids an annoying build error</li>
+</ul>
+</li>
 <li>Press the build button<ul>
 <li><strong>First Time:</strong> <a href="#codesign-keychain-access">Enter computer password four times</a> during the build</li>
 <li>Watch in awe as you just built your very own Loop app</li>
@@ -2064,23 +2068,29 @@
 </ol>
 <p>Both options begin by opening a terminal window on your Mac.</p>
 <h3 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step1/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first.) The terminal window is very plain looking when you open it. That is normal.</p>
+<p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step1/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.</p>
 <h2 id="download-and-prepare-to-build">Download and Prepare to Build<a class="headerlink" href="#download-and-prepare-to-build" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal.</p>
-<p>If you want to do each step and watch the results before moving on to the next step, (suggested for new builders), then do each of the steps below.  If you want to use the <a href="#single-step-to-downloa">Single Step to Download</a> it's still a good idea to read the Step-by-Step section first, so you know what is happening and what some error messages mean, when you do the single copy and paste action.</p>
+<ul>
+<li>This script has been recently updated with much clearer instructions.  </li>
+<li>Please read what is on the screen as you progress.</li>
+<li>Adjust font size as directed if you have difficulty seeing the directions.</li>
+</ul>
+<p>If you want to do each step and watch the results before moving on to the next step, (suggested for new builders and infrequent builders), then do each of the steps below.  If you want to use the <a href="#single-step-to-downloa">Single Step to Download</a> it's still a good idea to read the Step-by-Step section first, so you know what is happening and what some error messages mean, before using the single copy and paste action.</p>
 <div class="admonition success">
 <p class="admonition-title">Video using Build-Select</p>
 <p>If you prefer to watch a video of building with this step-by-step method, here's the link to the <a href="https://youtu.be/gddhljzsNkM">YouTube video</a> prepared by the Loop and Learn team.</p>
 </div>
 <h3 id="step-by-step">Step-by-Step<a class="headerlink" href="#step-by-step" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you prefer to execute each line one at a time, start with the single line, copy and paste into the terminal and hit return.</p>
-<div class="highlight"><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
+<p>These instructions show each step needed to build Loop using the Build-Select script.</p>
+<p>There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal. Then read the instructions and follow them.</p>
+<div class="highlight"><span class="filename">Copy and Paste to start the Build-Select script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
 </code></pre></div>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
-<p>You must type 1 and hit return in the terminal window to agree that you understand the warning.</p>
-<p>Next you will select the Build Loop option by typing 1 and return.</p>
+<p>You must type 1 (as shown in the graphic above) and hit the ENTER key to indicate you understand the warning.</p>
+<p>Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and hitting the ENTER key.</p>
 <p align="center"><img alt="choose to build Loop" src="../img/build-select-05.png" width="750" /></p>
-<p>Next you are asked which version of Loop you would like to build. Type 1 and hit return to build the Master Branch or 2 for the FreeAPS fork of Loop.</p>
+<p>Next you are asked which version of Loop you would like to build. Type 1 and hit the ENTER key to build the Master Branch (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.</p>
 <p align="center"><img alt="choose which Loop to build" src="../img/build-select-06.png" width="750" /></p>
 <div class="admonition warning">
 <p class="admonition-title">If you see errors like these . . .</p>
@@ -2099,14 +2109,15 @@
 <p align="center"><img alt="the beginning of the clone for LoopWorkspace " src="../img/build-select-07.png" width="750" /></p>
 <p>The final submodule cloning is shown along with the summary of all the submodule paths in the next graphic.</p>
 <p align="center"><img alt="the end of LoopWorkspace download" src="../img/build-select-08.png" width="750" /></p>
-<p>If any errors are shown in your terminal window, you need to read the error and type 2, return to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite <a href="../..#finding-help">Loop Social Media</a> site.</p>
+<p>If any errors are shown in your terminal window, you need to read the error and hit any key (other than 1) ENTER to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite <a href="../..#finding-help">Loop Social Media</a> site.</p>
 <h3 id="review-download-for-errors">Review Download for Errors<a class="headerlink" href="#review-download-for-errors" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Assuming there are no errors, then type 1, return to Continue.</p>
+<p>Assuming there are no errors, then type 1, ENTER to Continue.</p>
 <ul>
+<li>Your browser will open a page that displays the same graphic shown below along with summary build instructions</li>
 <li>Xcode will open automatically</li>
-<li>Your browser will open automatically in front of Xcode and display the same graphic shown below</li>
 <li>Rearrange screens so you can see the graphic and Xcode and follow the directions</li>
 </ul>
+<p align="center"><img alt="after confirming no build errors in the download" src="../img/build-select-10.png" width="750" /></p>
 <h3 id="single-step-to-download">Single Step to Download<a class="headerlink" href="#single-step-to-download" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the <a href="#wait-for-xcode-to-start-indexing">Wait for Xcode to Start Indexing</a> section.</p>
 <p>This section is provided to help experienced builders save time. By copying and pasting a whole block of text, you can start the script, answer the questions, download the code and open both Xcode and a browser showing the graphic in the next section. If you have never used this script before, please review the <a href="#step-by-step">Step-by-Step</a> section including the <code>Review Download for Errors</code> section.</p>
@@ -2118,7 +2129,7 @@
 1
 #
 </code></pre></div>
-<p>After you paste this block of text into the terminal window; all the output windows shown in the <a href="#step-by-step">Step-by-Step</a> section should appear in order without need to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).</p>
+<p>After you paste this block of text into the terminal window; all the output windows shown in the <a href="#step-by-step">Step-by-Step</a> section should appear in order without needing to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).</p>
 <p>The <code>#</code> symbol is simply there so you do not need to hit enter after the final <code>1</code> in this buffer. There will be a <code>#</code> showing in the terminal window when done.  You can either hit return or backspace to clear it.</p>
 <p>For those who use FreeAPS (a fork of Loop), this block is here for your convenience. All others, just skip this.</p>
 <div class="highlight"><span class="filename">Download FreeAPS and Open Xcode</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
@@ -2136,7 +2147,7 @@
 <p>Versions of Loop in the future, e.g., what is currently Loop-dev and FreeAPS-dev, will need to download some packages.  Those dev branches sometimes require the builder to execute the <a href="../build_errors/#cycle-dependency">Cycle Dependency fix</a> before indexing can begin. (It's easy, just be aware.)</p>
 </div>
 <p align="center"><img alt="graphic for workspace build" src="../img/workspace-build-loop-from-script_annotated-3-1.svg" width="750" /></p>
-<p>The graphic above is coordinated with the numbers in the list below. If you are a new builder, you probably want to click on each link in the step to read the details (and then click back when done). An experienced builder can use this list as a reminder.</p>
+<p>The graphic above is coordinated with the numbers in the list below. If you are a new builder, you probably want to click on each link in the steps to read the details (and then click the back button in your browser when done). An experienced builder can use this list as a reminder.</p>
 <div class="admonition warning">
 <p class="admonition-title">New Step for Xcode 13</p>
 <p>There is a new step highlighted in red and green labeled 4.5.  Be sure to click on the Loop icon under the <code>PROJECT</code> heading BEFORE hitting build.  Otherwise - you may get an "Entitlements" Build Error for either Loop or WatchApp and will need this procedure <a href="build-errors.md#entitlements-error">Entitlements Error</a>.</p>
