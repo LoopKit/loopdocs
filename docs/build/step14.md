@@ -15,6 +15,8 @@
         - Select Loop (Workspace) and your phone at top of Xcode
         - **First Time:** Register the phone
         - Sign the targets
+            - Then click on a specific location with your mouse
+            - This is new with Xcode 13 - avoids an annoying build error
         - Press the build button
             - **First Time:** [Enter computer password four times](#codesign-keychain-access) during the build
             - Watch in awe as you just built your very own Loop app
@@ -44,13 +46,17 @@ Both options begin by opening a terminal window on your Mac.
 
 ### Open Terminal
 
-Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta-on-m1-computer) first.) The terminal window is very plain looking when you open it. That is normal.
+Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta-on-m1-computer) first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.
 
 ## Download and Prepare to Build
 
 There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal.
 
-If you want to do each step and watch the results before moving on to the next step, (suggested for new builders), then do each of the steps below.  If you want to use the [Single Step to Download](#single-step-to-downloa) it's still a good idea to read the Step-by-Step section first, so you know what is happening and what some error messages mean, when you do the single copy and paste action.
+* This script has been recently updated with much clearer instructions.  
+* Please read what is on the screen as you progress.
+* Adjust font size as directed if you have difficulty seeing the directions.
+
+If you want to do each step and watch the results before moving on to the next step, (suggested for new builders and infrequent builders), then do each of the steps below.  If you want to use the [Single Step to Download](#single-step-to-downloa) it's still a good idea to read the Step-by-Step section first, so you know what is happening and what some error messages mean, before using the single copy and paste action.
 
 !!! success "Video using Build-Select"
 
@@ -58,23 +64,25 @@ If you want to do each step and watch the results before moving on to the next s
 
 ### Step-by-Step
 
-If you prefer to execute each line one at a time, start with the single line, copy and paste into the terminal and hit return.
+These instructions show each step needed to build Loop using the Build-Select script.
 
-```
+There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal. Then read the instructions and follow them.
+
+```title="Copy and Paste to start the Build-Select script"
 /bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
 ```
 
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
 
-You must type 1 and hit return in the terminal window to agree that you understand the warning.
+You must type 1 (as shown in the graphic above) and hit the ENTER key to indicate you understand the warning.
 
-Next you will select the Build Loop option by typing 1 and return.
+Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and hitting the ENTER key.
 
 ![choose to build Loop](img/build-select-05.png){width="750"}
 {align="center"}
 
-Next you are asked which version of Loop you would like to build. Type 1 and hit return to build the Master Branch or 2 for the FreeAPS fork of Loop.
+Next you are asked which version of Loop you would like to build. Type 1 and hit the ENTER key to build the Master Branch (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.
 
 ![choose which Loop to build](img/build-select-06.png){width="750"}
 {align="center"}
@@ -99,15 +107,19 @@ The final submodule cloning is shown along with the summary of all the submodule
 ![the end of LoopWorkspace download](img/build-select-08.png){width="750"}
 {align="center"}
 
-If any errors are shown in your terminal window, you need to read the error and type 2, return to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#finding-help) site.
+If any errors are shown in your terminal window, you need to read the error and hit any key (other than 1) ENTER to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#finding-help) site.
+
 
 ### Review Download for Errors
 
-Assuming there are no errors, then type 1, return to Continue.
+Assuming there are no errors, then type 1, ENTER to Continue.
 
+* Your browser will open a page that displays the same graphic shown below along with summary build instructions
 * Xcode will open automatically
-* Your browser will open automatically in front of Xcode and display the same graphic shown below
 * Rearrange screens so you can see the graphic and Xcode and follow the directions
+
+![after confirming no build errors in the download](img/build-select-10.png){width="750"}
+{align="center"}
 
 
 ### Single Step to Download
@@ -127,7 +139,7 @@ If you do not have Xcode and Xcode command line tools installed - you will get e
 #
 ```
 
-After you paste this block of text into the terminal window; all the output windows shown in the [Step-by-Step](#step-by-step) section should appear in order without need to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).
+After you paste this block of text into the terminal window; all the output windows shown in the [Step-by-Step](#step-by-step) section should appear in order without needing to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).
 
 The `#` symbol is simply there so you do not need to hit enter after the final `1` in this buffer. There will be a `#` showing in the terminal window when done.  You can either hit return or backspace to clear it.
 
@@ -156,7 +168,7 @@ When you look at the graphic below, you'll notice a message at the top that says
 ![graphic for workspace build](img/workspace-build-loop-from-script_annotated-3-1.svg){width="750"}
 {align="center"}
 
-The graphic above is coordinated with the numbers in the list below. If you are a new builder, you probably want to click on each link in the step to read the details (and then click back when done). An experienced builder can use this list as a reminder.
+The graphic above is coordinated with the numbers in the list below. If you are a new builder, you probably want to click on each link in the steps to read the details (and then click the back button in your browser when done). An experienced builder can use this list as a reminder.
 
 !!! warning "New Step for Xcode 13"
 
