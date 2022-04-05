@@ -111,7 +111,7 @@ The easiest way to delete the old provisioning profiles and clean up derived dat
 
 ### Open Terminal
 
-Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta-on-m1-computer) first.) The terminal window is very plain looking when you open it. That is normal.
+Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta-on-m1-computer) first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.
 
 If you happen to have Xcode open, go on and quit out of Xcode now.
 
@@ -119,12 +119,12 @@ If you happen to have Xcode open, go on and quit out of Xcode now.
 
 There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.
 
-This starts the script, answers the questions to select `Utilities` and `Clean Profiles and Derived Data`. The expected responses are shown in the graphics below.  As long as there are no errors, you are now ready to proceed to [Download and Build Loop Code](step14.md#download-and-prepare-to-build)
+This starts the script, answers the questions to select `Utilities` and `Clean Profiles & Derived Data`. The expected responses are shown in the graphics below.  As long as there are no errors, you are now ready to proceed to [Download and Build Loop Code](step14.md#download-and-prepare-to-build)
 
 - If you do not have Xcode and Xcode command line tools installed - you will get errors.
 - If you have Xcode open, you may get errors.
 
-``` title="Execute Utilities to Clean Profiles and Derived Data"
+``` title="Execute Utilities to Clean Profiles & Derived Data"
 /bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
 1
 3
@@ -132,7 +132,7 @@ This starts the script, answers the questions to select `Utilities` and `Clean P
 #
 ```
 
-The `#` symbol is simply there so you do not need to hit enter after the final `3`.
+The `#` symbol is simply there so you do not need to hit enter after the final `3`. Just hit backspace or ENTER when done to get rid of the `#`. The text you will see after each entry is shown in the successive graphics below.
 
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
