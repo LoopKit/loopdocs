@@ -64,7 +64,7 @@ If you want to do each step and watch the results before moving on to the next s
 
 ### Step-by-Step
 
-These instructions are for people who have never built before or don't build frequently.
+These instructions show each step needed to build Loop using the Build-Select script.
 
 There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal. Then read the instructions and follow them.
 
