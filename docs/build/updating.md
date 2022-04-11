@@ -117,38 +117,40 @@ If you happen to have Xcode open, go on and quit out of Xcode now.
 
 ### Load the Paste Buffer
 
-There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.
+There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal and hit the Enter key.
 
-This starts the script, answers the questions to select `Utilities` and `Clean Profiles & Derived Data`. The expected responses are shown in the graphics below.  As long as there are no errors, you are now ready to proceed to [Download and Build Loop Code](step14.md#download-and-prepare-to-build)
+This starts the script, but you will need to read the messages and answer the questions.
+
+``` title="Run the Build-Select script to Clean Profiles & Derived Data"
+/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
+```
+
+The expected script responses are shown in the list and graphics below.  Each graphic shows the number you are instructed to type to proceed - the words on this page also tell you what to type.  
 
 - If you do not have Xcode and Xcode command line tools installed - you will get errors.
 - If you have Xcode open, you may get errors.
 
-``` title="Execute Utilities to Clean Profiles & Derived Data"
-/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
-1
-3
-3
-#
-```
-
-The `#` symbol is simply there so you do not need to hit enter after the final `3`. Just hit backspace or ENTER when done to get rid of the `#`. The text you will see after each entry is shown in the successive graphics below.
-
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
+
+Type 1 and hit Enter to acknowledge the warning.
 
 ![select utilities option](img/build-select-02.png){width="750"}
 {align="center"}
 
+Type 3 and hit Enter to select `Utilities`.
+
 ![select clean profiles and derived data option](img/build-select-03.png){width="750"}
 {align="center"}
+
+Type 3 and hit Enter to select  `Clean Profiles & Derived Data`. 
 
 Once this completes, you should see this in your terminal.
 
 ![clean utility script completed](img/build-select-04.png){width="750"}
 {align="center"}
 
-The `#` symbol you will see is simply there so you do not need to hit enter after the final `3` when you copy and paste the block of text. There will be a `#` showing in the terminal window when done.  You can either hit return or backspace to clear it.
+As long as there are no errors, you are now ready to proceed to [Download and Build Loop Code](step14.md#download-and-prepare-to-build)
 
 If instead, you saw something like:
 
