@@ -37,12 +37,6 @@
 
 There is a page on the Loop and Learn site for using the [Build Select Script](https://www.loopandlearn.org/build-select/).  If you prefer, you can go to that site and follow those (somewhat briefer) instructions. The use of the build-select script has been incorporated into LoopDocs now, so you don't need to jump between sites - it is your choice.
 
-There are 2 options for script use in LoopDocs:
-
-1. Follow step-by-step instructions (suggested for new builders)
-1. Follow the single-step instructions (good for repeat builders)
-
-Both options begin by opening a terminal window on your Mac.
 
 ### Open Terminal
 
@@ -56,8 +50,6 @@ There is a copy button located by hovering on the right-hand side of each labele
 * Please read what is on the screen as you progress.
 * Adjust font size as directed if you have difficulty seeing the directions.
 
-If you want to do each step and watch the results before moving on to the next step, (suggested for new builders and infrequent builders), then do each of the steps below.  If you want to use the [Single Step to Download](#single-step-to-downloa) it's still a good idea to read the Step-by-Step section first, so you know what is happening and what some error messages mean, before using the single copy and paste action.
-
 !!! success "Video using Build-Select"
 
     If you prefer to watch a video of building with this step-by-step method, here's the link to the [YouTube video](https://youtu.be/gddhljzsNkM) prepared by the Loop and Learn team.
@@ -66,7 +58,7 @@ If you want to do each step and watch the results before moving on to the next s
 
 These instructions show each step needed to build Loop using the Build-Select script.
 
-There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal. Then read the instructions and follow them.
+There is a copy button located by hovering on the right-hand side of a labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal. Then read the instructions and follow them.
 
 ```title="Copy and Paste to start the Build-Select script"
 /bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
@@ -121,39 +113,6 @@ Assuming there are no errors, then type 1, ENTER to Continue.
 ![after confirming no build errors in the download](img/build-select-10.png){width="750"}
 {align="center"}
 
-
-### Single Step to Download
-
-If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the [Wait for Xcode to Start Indexing](#wait-for-xcode-to-start-indexing) section.
-
-This section is provided to help experienced builders save time. By copying and pasting a whole block of text, you can start the script, answer the questions, download the code and open both Xcode and a browser showing the graphic in the next section. If you have never used this script before, please review the [Step-by-Step](#step-by-step) section including the `Review Download for Errors` section.
-
-If you do not have Xcode and Xcode command line tools installed - you will get errors. They are shown in the [Step-by-Step](#step-by-step) section.
-
-``` title="Download Loop Master and Open Xcode"
-/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
-1
-1
-1
-1
-#
-```
-
-After you paste this block of text into the terminal window; all the output windows shown in the [Step-by-Step](#step-by-step) section should appear in order without needing to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).
-
-The `#` symbol is simply there so you do not need to hit enter after the final `1` in this buffer. There will be a `#` showing in the terminal window when done.  You can either hit return or backspace to clear it.
-
-For those who use FreeAPS (a fork of Loop), this block is here for your convenience. All others, just skip this.
-
-
-``` title="Download FreeAPS and Open Xcode"
-/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
-1
-1
-2
-1
-#
-```
 
 ## Wait for Xcode to Start Indexing
 
