@@ -592,13 +592,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#single-step-to-download" class="md-nav__link">
-    Single Step to Download
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1871,13 +1864,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#single-step-to-download" class="md-nav__link">
-    Single Step to Download
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2061,12 +2047,6 @@
 </div>
 <h2 id="execute-the-build-select-script">Execute the Build Select Script<a class="headerlink" href="#execute-the-build-select-script" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is a page on the Loop and Learn site for using the <a href="https://www.loopandlearn.org/build-select/">Build Select Script</a>.  If you prefer, you can go to that site and follow those (somewhat briefer) instructions. The use of the build-select script has been incorporated into LoopDocs now, so you don't need to jump between sites - it is your choice.</p>
-<p>There are 2 options for script use in LoopDocs:</p>
-<ol>
-<li>Follow step-by-step instructions (suggested for new builders)</li>
-<li>Follow the single-step instructions (good for repeat builders)</li>
-</ol>
-<p>Both options begin by opening a terminal window on your Mac.</p>
 <h3 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step1/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.</p>
 <h2 id="download-and-prepare-to-build">Download and Prepare to Build<a class="headerlink" href="#download-and-prepare-to-build" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2076,14 +2056,13 @@
 <li>Please read what is on the screen as you progress.</li>
 <li>Adjust font size as directed if you have difficulty seeing the directions.</li>
 </ul>
-<p>If you want to do each step and watch the results before moving on to the next step, (suggested for new builders and infrequent builders), then do each of the steps below.  If you want to use the <a href="#single-step-to-downloa">Single Step to Download</a> it's still a good idea to read the Step-by-Step section first, so you know what is happening and what some error messages mean, before using the single copy and paste action.</p>
 <div class="admonition success">
 <p class="admonition-title">Video using Build-Select</p>
 <p>If you prefer to watch a video of building with this step-by-step method, here's the link to the <a href="https://youtu.be/gddhljzsNkM">YouTube video</a> prepared by the Loop and Learn team.</p>
 </div>
 <h3 id="step-by-step">Step-by-Step<a class="headerlink" href="#step-by-step" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>These instructions show each step needed to build Loop using the Build-Select script.</p>
-<p>There is a copy button located by hovering on the right-hand side of each labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal. Then read the instructions and follow them.</p>
+<p>There is a copy button located by hovering on the right-hand side of a labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal. Then read the instructions and follow them.</p>
 <div class="highlight"><span class="filename">Copy and Paste to start the Build-Select script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
 </code></pre></div>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
@@ -2118,27 +2097,6 @@
 <li>Rearrange screens so you can see the graphic and Xcode and follow the directions</li>
 </ul>
 <p align="center"><img alt="after confirming no build errors in the download" src="../img/build-select-10.png" width="750" /></p>
-<h3 id="single-step-to-download">Single Step to Download<a class="headerlink" href="#single-step-to-download" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you have completed the actions, without errors, in the step-by-step section above - you do not need this section. You should go to the <a href="#wait-for-xcode-to-start-indexing">Wait for Xcode to Start Indexing</a> section.</p>
-<p>This section is provided to help experienced builders save time. By copying and pasting a whole block of text, you can start the script, answer the questions, download the code and open both Xcode and a browser showing the graphic in the next section. If you have never used this script before, please review the <a href="#step-by-step">Step-by-Step</a> section including the <code>Review Download for Errors</code> section.</p>
-<p>If you do not have Xcode and Xcode command line tools installed - you will get errors. They are shown in the <a href="#step-by-step">Step-by-Step</a> section.</p>
-<div class="highlight"><span class="filename">Download Loop Master and Open Xcode</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
-1
-1
-1
-1
-#
-</code></pre></div>
-<p>After you paste this block of text into the terminal window; all the output windows shown in the <a href="#step-by-step">Step-by-Step</a> section should appear in order without needing to do anything else.  Review the output in your terminal window (use the scroll bar in terminal to scroll up and down).</p>
-<p>The <code>#</code> symbol is simply there so you do not need to hit enter after the final <code>1</code> in this buffer. There will be a <code>#</code> showing in the terminal window when done.  You can either hit return or backspace to clear it.</p>
-<p>For those who use FreeAPS (a fork of Loop), this block is here for your convenience. All others, just skip this.</p>
-<div class="highlight"><span class="filename">Download FreeAPS and Open Xcode</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
-1
-1
-2
-1
-#
-</code></pre></div>
 <h2 id="wait-for-xcode-to-start-indexing">Wait for Xcode to Start Indexing<a class="headerlink" href="#wait-for-xcode-to-start-indexing" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is a new step to the signing procedure.  Please read this section.</p>
 <p>When you look at the graphic below, you'll notice a message at the top that says "Indexing". Please wait for the indexing to start in your Xcode before trying to build. </p>

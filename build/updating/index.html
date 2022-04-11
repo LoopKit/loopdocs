@@ -2088,25 +2088,24 @@
 <p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you <a href="../step1/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.</p>
 <p>If you happen to have Xcode open, go on and quit out of Xcode now.</p>
 <h3 id="load-the-paste-buffer">Load the Paste Buffer<a class="headerlink" href="#load-the-paste-buffer" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal.</p>
-<p>This starts the script, answers the questions to select <code>Utilities</code> and <code>Clean Profiles &amp; Derived Data</code>. The expected responses are shown in the graphics below.  As long as there are no errors, you are now ready to proceed to <a href="../step14/#download-and-prepare-to-build">Download and Build Loop Code</a></p>
+<p>There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal and hit the Enter key.</p>
+<p>This starts the script, but you will need to read the messages and answer the questions.</p>
+<div class="highlight"><span class="filename">Run the Build-Select script to Clean Profiles & Derived Data</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
+</code></pre></div>
+<p>The expected script responses are shown in the list and graphics below.  Each graphic shows the number you are instructed to type to proceed - the words on this page also tell you what to type.  </p>
 <ul>
 <li>If you do not have Xcode and Xcode command line tools installed - you will get errors.</li>
 <li>If you have Xcode open, you may get errors.</li>
 </ul>
-<div class="highlight"><span class="filename">Execute Utilities to Clean Profiles & Derived Data</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://git.io/JImiE)&quot;
-1
-3
-3
-#
-</code></pre></div>
-<p>The <code>#</code> symbol is simply there so you do not need to hit enter after the final <code>3</code>. Just hit backspace or ENTER when done to get rid of the <code>#</code>. The text you will see after each entry is shown in the successive graphics below.</p>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
+<p>Type 1 and hit Enter to acknowledge the warning.</p>
 <p align="center"><img alt="select utilities option" src="../img/build-select-02.png" width="750" /></p>
+<p>Type 3 and hit Enter to select <code>Utilities</code>.</p>
 <p align="center"><img alt="select clean profiles and derived data option" src="../img/build-select-03.png" width="750" /></p>
+<p>Type 3 and hit Enter to select  <code>Clean Profiles &amp; Derived Data</code>. </p>
 <p>Once this completes, you should see this in your terminal.</p>
 <p align="center"><img alt="clean utility script completed" src="../img/build-select-04.png" width="750" /></p>
-<p>The <code>#</code> symbol you will see is simply there so you do not need to hit enter after the final <code>3</code> when you copy and paste the block of text. There will be a <code>#</code> showing in the terminal window when done.  You can either hit return or backspace to clear it.</p>
+<p>As long as there are no errors, you are now ready to proceed to <a href="../step14/#download-and-prepare-to-build">Download and Build Loop Code</a></p>
 <p>If instead, you saw something like:</p>
 <ul>
 <li><code>rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty</code></li>
