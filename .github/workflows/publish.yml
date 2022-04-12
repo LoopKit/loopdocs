@@ -14,14 +14,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
       - run: mkdocs build
 
-      - uses: JamesIves/github-pages-deploy-action@3.7.1
+      - uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           BRANCH: gh-pages
           FOLDER: site
