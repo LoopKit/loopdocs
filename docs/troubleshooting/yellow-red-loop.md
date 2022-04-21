@@ -24,7 +24,30 @@ Some of the reasons listed below cause Loop to go Red and stay Red until you fix
 1. [Apple Health](#apple-health)
 1. [Background App Refresh](#background-app-refresh) is not enabled for Phone, Loop and/or CGM
 1. [Nightscout](#nightscout) (optional service)
-1. [Phone Storage is Full](#phone-storage-is-full)
+1. [Phone Storage is Full](#phone-storage-is-full) Please read [Lost Pod](#lost-pod) warning
+
+### Lost Pod
+
+This is a new reason for a red loop and we think it is associated with low storage levels on the phone.  Before pod users attempt to resolve a red-loop with a phone reboot; please review this section.
+
+!!! warning "Check Storage First"
+
+    Before rebooting the phone, go to General->iPhone Storage and make sure there is plenty of space.  Your phone is a critical medical device - if you don't have enough space, it might not work reliably.
+
+The developers are tracking this issue and if they find a solution, it will be announced.  Unfortunately, the replacement of UserDefaults (where the current app information is stored by the phone operating system) with an older copy after a phone reboot has been reported for several apps - it is not just Loop. Because your current pod information is stored in this file, if an older copy is provided following reboot - it may be remembering an old pod.
+
+This is a copy of what was posted on Facebook by Matthew Kitchin.
+
+!!! note "Announcement from Facebook"
+
+    Caution: Please use rebooting or powering off your iPhone as a last resort for troubleshooting. There is an issue that can occur under unknown conditions where Loop/FreeAPS can revert to a previous state after reboot or power off. This can include symptoms such as Loop/FreeAPS indicating a Pod is expired or share credentials returning even though they were previously removed. There could be other settings that revert to a previous point in time.
+
+    The exact cause is still under investigation. If this occurs, you will have to replace your current pod. There is no way to recover the active Pod if Loop/FreeAPS reverts to old settings and think the current Pod is expired/needing to be replaced.
+
+    Obviously reboots do need to happen for things such as iOS updates. For Pod users, if possible, I would plan to do them at the end of a Pod cycle where it a Pod change is already planned. This applies to current Master Loop, Loop-dev and FreeAPS.
+
+    **Don't panic:** This doesn't happen on every reboot. Until a fix is found, just don't reboot if you don't need to, and try to time it just before a pod change if you can. In case it is related to phone storage, keep plenty of space available on your phone.
+
 
 ### RileyLink Compatible Device
 
@@ -124,6 +147,8 @@ The error message from Dexcom was not as helpful.  If you see this, check your p
 * `The Dexcom G6 app has stopped working. Please delete the app from your device and redownload it from the App Store`
 
 Solution: clear up space on your phone.
+
+Please also see the [Lost Pod](#lost-pod) section for more reasons to maintain plenty of room on your critical medical device.
 
 ## Other Reasons for Red Loop
 
