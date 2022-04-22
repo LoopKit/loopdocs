@@ -24,17 +24,20 @@ Some of the reasons listed below cause Loop to go Red and stay Red until you fix
 1. [Apple Health](#apple-health)
 1. [Background App Refresh](#background-app-refresh) is not enabled for Phone, Loop and/or CGM
 1. [Nightscout](#nightscout) (optional service)
-1. [Phone Storage is Full](#phone-storage-is-full) Please read [Lost Pod](#lost-pod) warning
+1. [Phone Storage is Full](#phone-storage-is-full)
+1. [Lost Pod Information](#lost-pod-information) **Read this section first**
 
-### Lost Pod
+### Lost Pod Information
 
-This is a new reason for a red loop and we think it is associated with low storage levels on the phone.  Before pod users attempt to resolve a red-loop with a phone reboot; please review this section.
+There is a new reason for a red loop that is not well understood.  Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored CGM information as well as the stored pump information.
 
-!!! warning "Check Storage First"
+!!! warning "Be Careful with Phone Reboots"
 
-    Before rebooting the phone, go to General->iPhone Storage and make sure there is plenty of space.  Your phone is a critical medical device - if you don't have enough space, it might not work reliably.
+    If you are using an Omnipod, then before rebooting the phone, make sure it is absolutely necessary - try all other methods first. Be prepared to check that the pod is still communicating with Loop following the reboot. If this rare event happens to you, please report it, save and post a Loop Report and be prepared to put on a new pod and possibly re-enter your CGM information.
+    
+    This could happen to someone using a Medtronic pump, but the consequence is less of a concern because the pump information is not modified as frequently as for Omnipod users.
 
-The developers are tracking this issue and if they find a solution, it will be announced.  Unfortunately, the replacement of UserDefaults (where the current app information is stored by the phone operating system) with an older copy after a phone reboot has been reported for several apps - it is not just Loop. Because your current pod information is stored in this file, if an older copy is provided following reboot - it may be remembering an old pod.
+The developers are tracking this issue and if they find a solution, it will be announced.  In rare cases, an old copy of app information is read following a reboot. Because your current pod information is stored in this file, if an older copy is provided following reboot - it may be remembering an old pod. The only solution, if this happens to you, is to change pods.
 
 This is a copy of what was posted on Facebook by Matthew Kitchin.
 
@@ -138,7 +141,7 @@ If you opted for the free DIY Nightscout, you will need to clean your database o
 
 ### Phone Storage is Full
 
-This was recently reported by a user. His phone storage was almost full and the reported error messages for Loop was:
+This was reported by a user in November 2021. His phone storage was almost full and the reported error messages for Loop was:
 
 *  `Sqlite Error: A Sqlite Error Occurred: (13) Database or Disk is Full`
 
@@ -148,7 +151,6 @@ The error message from Dexcom was not as helpful.  If you see this, check your p
 
 Solution: clear up space on your phone.
 
-Please also see the [Lost Pod](#lost-pod) section for more reasons to maintain plenty of room on your critical medical device.
 
 ## Other Reasons for Red Loop
 
