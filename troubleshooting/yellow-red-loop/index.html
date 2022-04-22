@@ -1270,6 +1270,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#lost-pod-information" class="md-nav__link">
+    Lost Pod Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#rileylink-compatible-device" class="md-nav__link">
     RileyLink Compatible Device
   </a>
@@ -1813,6 +1820,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#lost-pod-information" class="md-nav__link">
+    Lost Pod Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#rileylink-compatible-device" class="md-nav__link">
     RileyLink Compatible Device
   </a>
@@ -1959,7 +1973,24 @@
 <li><a href="#background-app-refresh">Background App Refresh</a> is not enabled for Phone, Loop and/or CGM</li>
 <li><a href="#nightscout">Nightscout</a> (optional service)</li>
 <li><a href="#phone-storage-is-full">Phone Storage is Full</a></li>
+<li><a href="#lost-pod-information">Lost Pod Information</a> <strong>Read this section first</strong></li>
 </ol>
+<h3 id="lost-pod-information">Lost Pod Information<a class="headerlink" href="#lost-pod-information" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>There is a new reason for a red loop that is not well understood.  Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored CGM information as well as the stored pump information.</p>
+<div class="admonition warning">
+<p class="admonition-title">Be Careful with Phone Reboots</p>
+<p>If you are using an Omnipod, then before rebooting the phone, make sure it is absolutely necessary - try all other methods first. Be prepared to check that the pod is still communicating with Loop following the reboot. If this rare event happens to you, please report it, save and post a Loop Report and be prepared to put on a new pod and possibly re-enter your CGM information.</p>
+<p>This could happen to someone using a Medtronic pump, but the consequence is less of a concern because the pump information is not modified as frequently as for Omnipod users.</p>
+</div>
+<p>The developers are tracking this issue and if they find a solution, it will be announced.  In rare cases, an old copy of app information is read following a reboot. Because your current pod information is stored in this file, if an older copy is provided following reboot - it may be remembering an old pod. The only solution, if this happens to you, is to change pods.</p>
+<p>This is a copy of what was posted on Facebook by Matthew Kitchin.</p>
+<div class="admonition note">
+<p class="admonition-title">Announcement from Facebook</p>
+<p>Caution: Please use rebooting or powering off your iPhone as a last resort for troubleshooting. There is an issue that can occur under unknown conditions where Loop/FreeAPS can revert to a previous state after reboot or power off. This can include symptoms such as Loop/FreeAPS indicating a Pod is expired or share credentials returning even though they were previously removed. There could be other settings that revert to a previous point in time.</p>
+<p>The exact cause is still under investigation. If this occurs, you will have to replace your current pod. There is no way to recover the active Pod if Loop/FreeAPS reverts to old settings and think the current Pod is expired/needing to be replaced.</p>
+<p>Obviously reboots do need to happen for things such as iOS updates. For Pod users, if possible, I would plan to do them at the end of a Pod cycle when a Pod change is already planned. This applies to current Master Loop, Loop-dev and FreeAPS.</p>
+<p><strong>Don't panic:</strong> This doesn't happen on every reboot. Until a fix is found, just don't reboot if you don't need to, and try to time it just before a pod change if you can. In case it is related to phone storage, keep plenty of space available on your phone.</p>
+</div>
 <h3 id="rileylink-compatible-device">RileyLink Compatible Device<a class="headerlink" href="#rileylink-compatible-device" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If the indication is one of these (or something similar), it can probably be fixed by resetting the RileyLink compatible device communication with the phone and pump.</p>
 <ul>
@@ -2028,7 +2059,7 @@
 </ol>
 <p>If you opted for the free DIY Nightscout, you will need to clean your database once or twice a year. Follow the <a href="https://nightscout.github.io/troubleshoot/troublehoot/#database-full">Nightscout Database cleanup steps</a>. Make sure you are periodically checking your database size (and that the <strong>dbsize</strong> keyword is in your <a href="../../nightscout/update_user/#editadd-config-vars">ENABLE list</a> and cleaning it.</p>
 <h3 id="phone-storage-is-full">Phone Storage is Full<a class="headerlink" href="#phone-storage-is-full" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This was recently reported by a user. His phone storage was almost full and the reported error messages for Loop was:</p>
+<p>This was reported by a user in November 2021. His phone storage was almost full and the reported error messages for Loop was:</p>
 <ul>
 <li><code>Sqlite Error: A Sqlite Error Occurred: (13) Database or Disk is Full</code></li>
 </ul>
