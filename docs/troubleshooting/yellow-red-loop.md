@@ -47,7 +47,7 @@ This is a copy of what was posted on Facebook by Matthew Kitchin.
 
     The exact cause is still under investigation. If this occurs, you will have to replace your current pod. There is no way to recover the active Pod if Loop/FreeAPS reverts to old settings and think the current Pod is expired/needing to be replaced.
 
-    Obviously reboots do need to happen for things such as iOS updates. For Pod users, if possible, I would plan to do them at the end of a Pod cycle where it a Pod change is already planned. This applies to current Master Loop, Loop-dev and FreeAPS.
+    Obviously reboots do need to happen for things such as iOS updates. For Pod users, if possible, I would plan to do them at the end of a Pod cycle when a Pod change is already planned. This applies to current Master Loop, Loop-dev and FreeAPS.
 
     **Don't panic:** This doesn't happen on every reboot. Until a fix is found, just don't reboot if you don't need to, and try to time it just before a pod change if you can. In case it is related to phone storage, keep plenty of space available on your phone.
 
