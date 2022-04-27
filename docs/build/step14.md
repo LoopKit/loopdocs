@@ -134,7 +134,7 @@ The graphic above is coordinated with the numbers in the list below. If you are 
 
 !!! warning "New Step for Xcode 13"
 
-    There is a new step highlighted in red and green labeled 4.5.  Be sure to click on the Loop icon under the `PROJECT` heading BEFORE hitting build.  Otherwise - you may get an "Entitlements" Build Error for either Loop or WatchApp and will need this procedure [Entitlements Error](build-errors.md#entitlements-error).
+    There is a new step highlighted in red and green labeled 4.5.  Be sure to click on the Loop icon under the `PROJECT` heading BEFORE hitting build.  Otherwise - you may get an "Entitlements" Build Error for either Loop or WatchApp and will need this procedure [Entitlements Error](build_errors.md#entitlements-error).
 
 1. At the very top of all the folders and files listed on the left side, click on the blue icon next to the word "Loop". You might need to click a second time to highlight the Loop folder. This will populate the middle part of the Xcode window.
 1. [Plug in your phone](#connect-your-iphone-to-computer) - make sure it is unlocked.  If this is the **First Time** for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".
