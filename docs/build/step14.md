@@ -61,8 +61,11 @@ These instructions show each step needed to build Loop using the Build-Select sc
 There is a copy button located by hovering on the right-hand side of a labeled block of text below.  Click on it, all the words in the block are copied into your paste buffer, and then you can paste those words into the terminal. Then read the instructions and follow them.
 
 ```title="Copy and Paste to start the Build-Select script"
-/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
 ```
+
+!!! note ""
+    If you've built using the build-select script before and think the command looks a little different, you are correct.  Copy and paste the command as shown.  This uses a more explicit path to the script.
 
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}

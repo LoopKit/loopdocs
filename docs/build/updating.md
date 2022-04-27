@@ -122,8 +122,11 @@ There is a copy button located by hovering on the right-hand side of the text bl
 This starts the script, but you will need to read the messages and answer the questions.
 
 ``` title="Run the Build-Select script to Clean Profiles & Derived Data"
-/bin/bash -c "$(curl -fsSL https://git.io/JImiE)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
 ```
+
+!!! note ""
+    If you've used the build-select script before and think the command looks a little different, you are correct.  Copy and paste the command as shown.  This uses a more explicit path to the script.
 
 The expected script responses are shown in the list and graphics below.  Each graphic shows the number you are instructed to type to proceed - the words on this page also tell you what to type.  
 
