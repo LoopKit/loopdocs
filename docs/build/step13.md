@@ -5,17 +5,20 @@
     - Wait until Step 14 to download Released Loop code (New Workspace Method)
 
 !!! abstract "Summary"
-    - All Loopers: Loop can only be built with the Workspace Build method
-    - To make it easy, there's a script for you to use
-    - New Builders: Review this page until told to go to Step 14
-    - Repeat Builders: There is important information about iOS updates - don't skip that section
-    - Advanced Users: Read all of Step 13
+    - **All Loopers:** Loop can only be built with the Workspace Build method
+        - To make it easy, there's a script for you to use
+    - **New Builders:** Review this page until told to go to Step 14
+    - **Repeat Builders:** There is important information about iOS updates - don't skip that section
+    - **Advanced Users:** Read all of Step 13
 
 !!! question "FAQs"
-    - **When do I need to download new Loop code?** There are three times you need to download new code:
+    - **When do I need to download new Loop code?** You need new code before you build:
         1. When you build Loop initially
         1. When a new release of Loop has features you want
-        1. When your app expires (one year paid, one week free)
+        1. When a major release of the phone or Mac operating system is released
+    - **How often to I have to rebuild?**
+        1. You must build when your app expires (one year paid, one week free)
+        1. It is recommended you rebuild more frequently to avoid panic when your app is about to expire as explained in [Updating FAQs](../faqs/update-faqs.md)
     - **What do I do when a new iOS is released?** The short answer is wait a bit:
         * It's a good idea to be prepared to rebuild before updating your phone to the new iOS
         * This is even more important when there has been a major change to iOS or Xcode

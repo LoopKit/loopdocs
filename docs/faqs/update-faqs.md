@@ -2,29 +2,48 @@
 
 First, please take a minute to understand what the words mean.
 
-"Updating Loop" is the process of getting a new download of Loop's code and using that to update your Loop by building the code with Xcode and then installing the new app on your phone. You do this
+"Updating Loop" is the process of getting a new download of Loop's code and using that to update your Loop by building the code with Xcode and then installing the new app on your phone.
 
-* When your one-year expiration date forces you (hint - start a few weeks early and take your time)
+## When Should You Update?
+
+* **Best Practice**
+    * Build, using the [Updating Instructons](../build/#updating.md), two to four times a year so that it becomes easier and you are ready in case of an emergency
+    * Each time you build, the app expiration date is bumped out a full year from your build date
+* **Required**
+    * When your one-year expiration date forces you
+    * Do not wait until the app expires - it will stop working; see [Loop is No Longer Available](../build/updating.md#loop-is-no-longer-available)
+    * Hint - start a few weeks early and take your time
 * A new version of Loop is released and you want to install it
-* You want to try a different branch or fork of Loop (this used to be much more common several years ago when new features and improvements were being offered for testing prior to release in Loop)
+* You want to try a different branch or fork of Loop
 
-Updating Loop is the same idea as what happens to your other apps on your iPhone when you update them from the App Store on the phone. A refreshed version of the same app appears on the phone, simply replacing-in-place the same Loop you were using with an updated version.
+Updating Loop is the same idea as what happens to your other apps on your iPhone when you update them from the App Store on the phone. A refreshed version of the same app appears on the phone, simply updating-in-place the same Loop you were using with an updated version.
 
-* Do NOT delete your current app from your phone - even if it says "Loop" is No Longer Available
+* Do **NOT** delete your current app from your phone - even if it says "Loop" is No Longer Available
 * There are files stored on your phone that will be read in as soon as the new Loop app is installed
 * If you deleted your app, then you have to enter all your settings again
+    * This is a good time to configure your phone to avoid accidental deletion
+    * Do an internet search like this: "iOS 15.4 prevent app deletion" where you use your current phone iOS version number and follow the instructions
 
 ## Where should I start when I want to update my Loop?
 
 **ALWAYS start with the [Update Loop page](../build/updating.md) before any new build that you'd be doing.** That page is important because it will offer information on the updates you need to do before building, as well as any late breaking things that might need to be considered.
 
-Do not simply build with your old downloaded folder from months ago. There is a high likelihood that your original code from awhile ago is outdated. Grab new code and you will get the version that has all the latest and greatest features and bug fixes.
+Do not simply build with your old downloaded folder from months ago. There is a high likelihood that your original code from awhile ago is outdated and might not build with the current phone iOS. Grab new code and you will get the compatible version that has all the latest and greatest features and bug fixes.
 
 ## When do I have to update/rebuild?
 
 Absolute minimum:
 
-* 1 year from when you last built (paid account).
+* One year from when you last built (paid account)
+    * You get a full year from the time you last built if you follow all the [Updating](../build/updating.md) directions
+    * Part of the instructions include getting a new provisioning profile (if you skip this step, you will not get a full year)
+* When Apple makes a change that requires you to update if you want to build to the latest phone operating system
+
+Typical Apple Update Schedule:
+
+* Each September, Apple releases a major iOS version which typically works with the current macOS but requires a new Xcode version
+* Each September, Apple releases a major macOS version (but doesn't require you to update your Mac, yet)
+* Each March, you must update to the current macOS (major version) to continue building applications
 
 Good ideas:
 
@@ -33,11 +52,11 @@ Good ideas:
 * Good practice - build to a phone (it doesn't need to be the Looper's phone) a couple of times year just so you don't forget how - this makes the one year rebuild much easier
 * If on [dev branch](branch-faqs.md#whats-going-on-in-the-dev-branch): Please follow the loop zulipchat forum so you can update when appropriate.
 
-Issue specific minimum:
+Issue specific updates:
 
 * There are also times where you may need to update for "hot-fixes" to keep your Loop working when other things change.
 
-For example, after Dexcom G6 transmitters had been in-use for a while, a new style Dexcom G6 transmitters began to be shipped with a different Bluetooth protocol. Loop's code was updated quickly to interface with the new transmitters (this enables offline looping instead of requiring use of Dexcom Share). But you only got that update to Loop by rebuilding the app.
+For example, after Dexcom G6 transmitters had been in-use for a while, a new style Dexcom G6 transmitters began to be shipped with a different Bluetooth protocol. Loop's code was updated quickly to interface with the new transmitters (this enables offline looping instead of requiring use of Dexcom Share). But you only got that update to Loop by downloading new code and rebuilding the app on your phone.
 
 
 ## Will I have to delete my old Loop app?
@@ -52,15 +71,20 @@ No. Do not delete your old Loop. In fact, that is a bad idea as you will lose yo
 
 No. Loop is simply updated in-place, written right over the old version.
 
-The only exception to this is if you update/build using a different developer signing team than your original Loop app was built with. The app's identity on your phone is defined by the developer team that you signed the app with. That team has a unique ID to identify the app. So, if you change that unique ID, your phone interprets that as a unique app as well...giving you two Loop apps on the phone. Therefore, if changing developer accounts...you will get a new Loop app, and you would need a new Pod. You'll need to transfer your settings manually to the new app and delete your old app.
+The only exception to this is if you update/build using a different developer signing team than your current Loop app.
+
+* The app's identity on your phone is defined by the developer ID.
+* If you change that unique ID, your phone interprets that as a unique app as well...giving you two Loop apps on the phone.
+    * Therefore, if changing developer accounts...you will get a new Loop app, and you would need a new Pod.
+    * You'll need to transfer your settings manually to the new app and delete your old app.
 
 ## Will my settings be saved when I update?
 
-Yes. That's why we don't delete the app. Your settings will be saved.
+Yes. That's why we don't delete the app. Your settings will be saved so long as you use the same developer ID.
 
 ## Will my pod still work when I update?
 
-Yes. So long as you use the same developer team as you originally built the app with before.
+Yes. So long as you use the same developer ID as you originally built the app with before.
 
 ## How can I confirm what version was installed?
 
@@ -96,7 +120,11 @@ Changing phones is a little different than just [updating](../build/updating.md)
 
     * When you change phones, Apple will force you to the latest iOS version
     * Make sure you can build to that iOS version before trying to transfer Loop to the new phone
-    * You can use the old phone to Loop until you get the new one ready
+    * You can use the old phone as your looping phone until you get the new one ready
+        * When turning the old phone in for a rebate, you typically have a week or two before you have to turn it in
+        * When you transfer information from your old phone to your new phone, all the Loop settings files get copied to the new device
+        * You then need to build Loop on the new phone and it remembers those settings
+        * It's a good idea to do this at pod change time, just in case, and to record (or screenshot) all your settings
     * Once the transfer is completed check [all your settings and all your permissions](../operation/overview.md) on the new phone
 
 You can find the instructions written up in this [article](https://www.loopandlearn.org/new-device).
