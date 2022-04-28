@@ -34,7 +34,9 @@ Do not simply build with your old downloaded folder from months ago. There is a 
 
 Absolute minimum:
 
-* 1 year from when you last built (paid account).
+* One year from when you last built (paid account)
+    * You get a full year from the time you last built if you follow all the [Updating](../build/updating.md) directions
+    * Part of the instructions include getting a new provisioning profile (if you skip this step, you will not get a full year)
 * When Apple makes a change that requires you to update if you want to build to the latest phone operating system
 
 Typical Apple Update Schedule:
