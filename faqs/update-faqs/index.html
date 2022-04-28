@@ -1566,6 +1566,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#when-should-you-update" class="md-nav__link">
+    When Should You Update?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#where-should-i-start-when-i-want-to-update-my-loop" class="md-nav__link">
     Where should I start when I want to update my Loop?
   </a>
@@ -1743,6 +1750,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#when-should-you-update" class="md-nav__link">
+    When Should You Update?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#where-should-i-start-when-i-want-to-update-my-loop" class="md-nav__link">
     Where should I start when I want to update my Loop?
   </a>
@@ -1834,25 +1848,51 @@
                 
                 <h1 id="updatingrebuilding-loop-faqs">Updating/Rebuilding Loop FAQs<a class="headerlink" href="#updatingrebuilding-loop-faqs" title="Anchor link to this Header on this Page">&para;</a></h1>
 <p>First, please take a minute to understand what the words mean.</p>
-<p>"Updating Loop" is the process of getting a new download of Loop's code and using that to update your Loop by building the code with Xcode and then installing the new app on your phone. You do this</p>
+<p>"Updating Loop" is the process of getting a new download of Loop's code and using that to update your Loop by building the code with Xcode and then installing the new app on your phone.</p>
+<h2 id="when-should-you-update">When Should You Update?<a class="headerlink" href="#when-should-you-update" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ul>
-<li>When your one-year expiration date forces you (hint - start a few weeks early and take your time)</li>
-<li>A new version of Loop is released and you want to install it</li>
-<li>You want to try a different branch or fork of Loop (this used to be much more common several years ago when new features and improvements were being offered for testing prior to release in Loop)</li>
+<li><strong>Best Practice</strong><ul>
+<li>Build, using the <a href="../build/#updating.md">Updating Instructons</a>, two to four times a year so that it becomes easier and you are ready in case of an emergency</li>
+<li>Each time you build, the app expiration date is bumped out a full year from your build date</li>
 </ul>
-<p>Updating Loop is the same idea as what happens to your other apps on your iPhone when you update them from the App Store on the phone. A refreshed version of the same app appears on the phone, simply replacing-in-place the same Loop you were using with an updated version.</p>
+</li>
+<li><strong>Required</strong><ul>
+<li>When your one-year expiration date forces you</li>
+<li>Do not wait until the app expires - it will stop working; see <a href="../../build/updating/#loop-is-no-longer-available">Loop is No Longer Available</a></li>
+<li>Hint - start a few weeks early and take your time</li>
+</ul>
+</li>
+<li>A new version of Loop is released and you want to install it</li>
+<li>You want to try a different branch or fork of Loop</li>
+</ul>
+<p>Updating Loop is the same idea as what happens to your other apps on your iPhone when you update them from the App Store on the phone. A refreshed version of the same app appears on the phone, simply updating-in-place the same Loop you were using with an updated version.</p>
 <ul>
-<li>Do NOT delete your current app from your phone - even if it says "Loop" is No Longer Available</li>
+<li>Do <strong>NOT</strong> delete your current app from your phone - even if it says "Loop" is No Longer Available</li>
 <li>There are files stored on your phone that will be read in as soon as the new Loop app is installed</li>
-<li>If you deleted your app, then you have to enter all your settings again</li>
+<li>If you deleted your app, then you have to enter all your settings again<ul>
+<li>This is a good time to configure your phone to avoid accidental deletion</li>
+<li>Do an internet search like this: "iOS 15.4 prevent app deletion" where you use your current phone iOS version number and follow the instructions</li>
+</ul>
+</li>
 </ul>
 <h2 id="where-should-i-start-when-i-want-to-update-my-loop">Where should I start when I want to update my Loop?<a class="headerlink" href="#where-should-i-start-when-i-want-to-update-my-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><strong>ALWAYS start with the <a href="../../build/updating/">Update Loop page</a> before any new build that you'd be doing.</strong> That page is important because it will offer information on the updates you need to do before building, as well as any late breaking things that might need to be considered.</p>
-<p>Do not simply build with your old downloaded folder from months ago. There is a high likelihood that your original code from awhile ago is outdated. Grab new code and you will get the version that has all the latest and greatest features and bug fixes.</p>
+<p>Do not simply build with your old downloaded folder from months ago. There is a high likelihood that your original code from awhile ago is outdated and might not build with the current phone iOS. Grab new code and you will get the compatible version that has all the latest and greatest features and bug fixes.</p>
 <h2 id="when-do-i-have-to-updaterebuild">When do I have to update/rebuild?<a class="headerlink" href="#when-do-i-have-to-updaterebuild" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Absolute minimum:</p>
 <ul>
-<li>1 year from when you last built (paid account).</li>
+<li>One year from when you last built (paid account)<ul>
+<li>You get a full year from the time you last built if you follow all the <a href="../../build/updating/">Updating</a> directions</li>
+<li>Part of the instructions include getting a new provisioning profile (if you skip this step, you will not get a full year)</li>
+</ul>
+</li>
+<li>When Apple makes a change that requires you to update if you want to build to the latest phone operating system</li>
+</ul>
+<p>Typical Apple Update Schedule:</p>
+<ul>
+<li>Each September, Apple releases a major iOS version which typically works with the current macOS but requires a new Xcode version</li>
+<li>Each September, Apple releases a major macOS version (but doesn't require you to update your Mac, yet)</li>
+<li>Each March, you must update to the current macOS (major version) to continue building applications</li>
 </ul>
 <p>Good ideas:</p>
 <ul>
@@ -1861,11 +1901,11 @@
 <li>Good practice - build to a phone (it doesn't need to be the Looper's phone) a couple of times year just so you don't forget how - this makes the one year rebuild much easier</li>
 <li>If on <a href="../branch-faqs/#whats-going-on-in-the-dev-branch">dev branch</a>: Please follow the loop zulipchat forum so you can update when appropriate.</li>
 </ul>
-<p>Issue specific minimum:</p>
+<p>Issue specific updates:</p>
 <ul>
 <li>There are also times where you may need to update for "hot-fixes" to keep your Loop working when other things change.</li>
 </ul>
-<p>For example, after Dexcom G6 transmitters had been in-use for a while, a new style Dexcom G6 transmitters began to be shipped with a different Bluetooth protocol. Loop's code was updated quickly to interface with the new transmitters (this enables offline looping instead of requiring use of Dexcom Share). But you only got that update to Loop by rebuilding the app.</p>
+<p>For example, after Dexcom G6 transmitters had been in-use for a while, a new style Dexcom G6 transmitters began to be shipped with a different Bluetooth protocol. Loop's code was updated quickly to interface with the new transmitters (this enables offline looping instead of requiring use of Dexcom Share). But you only got that update to Loop by downloading new code and rebuilding the app on your phone.</p>
 <h2 id="will-i-have-to-delete-my-old-loop-app">Will I have to delete my old Loop app?<a class="headerlink" href="#will-i-have-to-delete-my-old-loop-app" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>No. Do not delete your old Loop. In fact, that is a bad idea as you will lose your currently paired pod and/or settings if you do that. So, don't delete (except for two situations below):</p>
 <ol>
@@ -1878,11 +1918,19 @@
 </ol>
 <h2 id="does-updating-make-a-separate-second-loop-app">Does updating make a separate, second Loop app?<a class="headerlink" href="#does-updating-make-a-separate-second-loop-app" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>No. Loop is simply updated in-place, written right over the old version.</p>
-<p>The only exception to this is if you update/build using a different developer signing team than your original Loop app was built with. The app's identity on your phone is defined by the developer team that you signed the app with. That team has a unique ID to identify the app. So, if you change that unique ID, your phone interprets that as a unique app as well...giving you two Loop apps on the phone. Therefore, if changing developer accounts...you will get a new Loop app, and you would need a new Pod. You'll need to transfer your settings manually to the new app and delete your old app.</p>
+<p>The only exception to this is if you update/build using a different developer signing team than your current Loop app.</p>
+<ul>
+<li>The app's identity on your phone is defined by the developer ID.</li>
+<li>If you change that unique ID, your phone interprets that as a unique app as well...giving you two Loop apps on the phone.<ul>
+<li>Therefore, if changing developer accounts...you will get a new Loop app, and you would need a new Pod.</li>
+<li>You'll need to transfer your settings manually to the new app and delete your old app.</li>
+</ul>
+</li>
+</ul>
 <h2 id="will-my-settings-be-saved-when-i-update">Will my settings be saved when I update?<a class="headerlink" href="#will-my-settings-be-saved-when-i-update" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Yes. That's why we don't delete the app. Your settings will be saved.</p>
+<p>Yes. That's why we don't delete the app. Your settings will be saved so long as you use the same developer ID.</p>
 <h2 id="will-my-pod-still-work-when-i-update">Will my pod still work when I update?<a class="headerlink" href="#will-my-pod-still-work-when-i-update" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Yes. So long as you use the same developer team as you originally built the app with before.</p>
+<p>Yes. So long as you use the same developer ID as you originally built the app with before.</p>
 <h2 id="how-can-i-confirm-what-version-was-installed">How can I confirm what version was installed?<a class="headerlink" href="#how-can-i-confirm-what-version-was-installed" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The Loop version is given at the top of the Loop settings page.</p>
 <p>There is more detailed information about how the Loop app was built at the top of the Issue Report (Loop -&gt; Settings -&gt; Issue Report) as shown in the graphic in the next section.</p>
@@ -1910,7 +1958,13 @@
 <ul>
 <li>When you change phones, Apple will force you to the latest iOS version</li>
 <li>Make sure you can build to that iOS version before trying to transfer Loop to the new phone</li>
-<li>You can use the old phone to Loop until you get the new one ready</li>
+<li>You can use the old phone as your looping phone until you get the new one ready<ul>
+<li>When turning the old phone in for a rebate, you typically have a week or two before you have to turn it in</li>
+<li>When you transfer information from your old phone to your new phone, all the Loop settings files get copied to the new device</li>
+<li>You then need to build Loop on the new phone and it remembers those settings</li>
+<li>It's a good idea to do this at pod change time, just in case, and to record (or screenshot) all your settings</li>
+</ul>
+</li>
 <li>Once the transfer is completed check <a href="../../operation/overview/">all your settings and all your permissions</a> on the new phone</li>
 </ul>
 </div>
