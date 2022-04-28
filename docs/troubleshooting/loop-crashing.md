@@ -16,6 +16,8 @@ Your Loop app has an expiration date. The expiration date will depend on the typ
 
 When your app expires after a year, you need to follow the steps on the [Build Updating](../build/updating.md) page. Your phone will probably have a new iOS that may require an updated version of Xcode that may require an updated Mac operating system.  All this is explained in the link above.  Give yourself time before expiration to prepare yourself.
 
+To make it easy to build when you **have** to, practice building every 3 to 6 months. This makes the process much lower stress. Also, each time you build, when you follow the link above, you give yourself another full year before rebuilding is **required**. Please review the [Updating FAQS](../faqs/update-faqs.md)
+
 ### Personal Team (7 day)
 
 When your app expires, you simply need to open Xcode, reopen the project: File->Open Recent, plug your phone back into the computer and select it in Xcode and press the play button on your project again. This will rebuild. If you want to change to a paid signing team before rebuilding, please make sure to double-check which signing team is selected before building again.
@@ -35,12 +37,8 @@ Remember that switching from free to paid changes the developer name incorporate
 * A separate Loop app is created - see [Build Step 6](../build/step6.md#switching-from-free-to-paid-memberships) for more details
 * Did you select the new app and enter all your settings into it and then delete the 7-day app?
 * The new app issue only happens if you change developer name
-* As long as you stick with the same developer, updated Loop apps are built over existing apps and all your settings should be maintained
+* As long as you stick with the same developer ID, updated Loop apps are built over existing apps and all your settings should be maintained
 
-
-## Incorrectly entered correction range
-
-The issue where Loop allowed you to enter a low range that was higher than the high range for correction targets was fixed in Loop v2.0. If you are running an older version than that, it is strongly recommended that you update to the latest release.
 
 ## Other reasons
 
