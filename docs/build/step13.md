@@ -128,8 +128,11 @@ With Loop-dev, the signing of targets can be done by editing a single file:
 rm -rf ~/Library/Developer/Xcode/DerivedData
 ```
 
-    
-Follow the build instructions on the next page: [Build Loop](step14.md#build-loop).
+#### Build Your Copy of Loop-dev:
+
+Follow the instructions starting at the "Build Loop" section on the next page: [Step 14](step14.md#build-loop).
+
+We suggest reading the tips below on keeping Loop-dev updated and, if necessary, updating your version of carthage.
 
 ### Updating Your Copy of Loop-dev
 
