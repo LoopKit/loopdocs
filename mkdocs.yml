@@ -99,6 +99,15 @@ nav:
         - 'Time Changes': 'troubleshooting/time-change.md'
         - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
         - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
+- Loop 3:
+    - 'Overview': 'loop-3/loop-3-overview.md'
+    - 'Onboarding': 'loop-3/onboarding.md'
+    - 'Displays': 'loop-3/loop-3-displays.md'
+    - 'Settings': loop-3/loop-3-settings.md
+    - 'Features': loop-3/loop-3-features.md
+    - 'Add CGM': 'loop-3/loop-3-cgm.md'
+    - 'Add Pump': 'loop-3/loop-3-pump.md'
+    - 'DASH Pump': loop-3/dash-pump.md
 - Nightscout:
     - 'Overview': 'nightscout/overview.md'
     - 'Brand New NS': 'nightscout/new_user.md'
