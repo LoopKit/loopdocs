@@ -1,10 +1,10 @@
 # Omnipod DASH Pump
 
-This page is a placeholder for adding nifty new UI features found with the Dash Pump in Loop-dev.
+This page is a placeholder for adding nifty new UI features found with the DASH Pump in Loop-dev.
 
 A [video is found here for pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing). Once the pod starts priming, you may want to skip ahead in the video (it takes about a minute to prime).
 
-## Dash Overview
+## DASH Overview
 
 Add graphics and words.
 This is where Suspend and Replace Pod are found along with other items.
@@ -13,7 +13,7 @@ This is where Suspend and Replace Pod are found along with other items.
 
 Add graphics and words.
 
-## Dash Configuration
+## DASH Configuration
 
 Placeholder for the configuration section.
 
