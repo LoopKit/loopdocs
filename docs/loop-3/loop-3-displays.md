@@ -16,7 +16,7 @@ The main Loop screen contains a Heads-Up Display at the top (when in portrait mo
 
 ## Heads-Up Display
 
-The Heads-Up Display (HUD) for Loop-dev has been simplified.  This display has 3 icons. The left icon shows the CGM value, the middle icon indicates Loop status and the right icon show pump status. More details are found under [HUD Details](#hud-details)
+The Heads-Up Display (HUD) for Loop-dev has been simplified.  This display has 3 icons. The left icon shows the CGM value, the middle icon indicates Loop status and the right icon show pump status. More details are found under [HUD Details](#hud-details).
 
 !!! info "For Pod Users"
     Yes the circular life-cycle icon is gone. When the pod is close to expiration, a warning indicator shows up under the pump icon.
@@ -27,7 +27,7 @@ The Loop charts are similar to Loop 2.2.x, refer to [Loop Charts](../operation/l
 
 ## Toolbar
 
-The Loop toolbar is similar to Loop 2.2.x although there are some details that different as discussed in [Loop-dev Features](loop-3-features.md).
+The Loop toolbar is similar to Loop 2.2.x although there are some details that differ as discussed in [Loop-dev Features](loop-3-features.md).
 
 Loop Settings are shown when tapping on the gear icon. The Loop-dev Settings display is substantially different than for Loop 2.2.x.  Refer to the [Loop-dev Settings](loop-3-settings.md) page.
 
@@ -36,9 +36,6 @@ Loop Settings are shown when tapping on the gear icon. The Loop-dev Settings dis
 Loop has a widget which can be added to the lock screen. The example graphic below shows the Dexcom G6 widget above the Loop-dev widget.
 
 ![widget on lock screen, dex above, loop below](img/dex-loop-3-widget.svg){width="250"}
-
-
-&nbsp;
 
 
 ## HUD Details

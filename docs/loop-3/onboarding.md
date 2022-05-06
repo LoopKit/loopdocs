@@ -60,8 +60,9 @@ The order of Therapy Setting Information is:
 !!! danger "The most common question"
 
     - How do I enter the type of insulin I use?
-        * Therapy Settings -> Insulin Model is used to distinguish between adults and children
-        * Pump Settings -> Insulin Type is used to select the specific brand of insulin, e.g., Novolog, Humalog, Apidra, Fiasp, Lyumjev, etc.
+        * Therapy Settings -> Insulin Model is used to distinguish between adults and children for "rapid" insulin
+        * Pump Settings -> Insulin Type is used to select the specific brand of insulin, e.g., Novolog, Humalog, Apidra, Fiasp, Lyumjev, etc
+        * The ultra-rapid insulins: Fiasp and Lyumjev have only a single model - the adult/child therapy setting selection is irrelevant for those insulin types
 
 
 ## Onboarding Details
