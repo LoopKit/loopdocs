@@ -22,7 +22,7 @@ If a user selects Omnipod, this is an Omnipod Eros selection which requires a Ri
 
 If a user selects Omnipod DASH, this is the Bluetooth enabled Pod which does not require a RileyLink compatible device. Tapping on that row brings up the new user interface for DASH. Please refer to these instructions to [add Omnipod Dash](#add-dash-pod).
 
-If a Medtronic or Omnipod Eros pump is configured, tapping on the pump icon leads to same [Pump Settings Screen](../operation/loop-settings/pump-commands.md) as Loop 2.
+If a Medtronic or Omnipod Eros pump is configured, tapping on the pump icon leads to same [Pump Settings Screen](../operation/loop-settings/pump-commands.md) as Loop 2.2.x.
 
 If an Omnipod DASH pod has been configured, tapping on the pump icon leads to the [Dash Pump Screen](dash-pump.md).
 
@@ -43,10 +43,12 @@ When you select DASH you will need to configure default settings for the followi
     * Reminder between 1 and 24 hours before expiration
         * Pod beeps the "expiration" alert pattern until acknowledged by user through the Loop app
 1. Low Reservoir
-    * Loop app provides a modal alert when reservoir reaches value selected (10 to 50 U)
+    * Loop app provides a [modal alert](onboarding.md#what-is-a-modal-alert) when reservoir reaches value selected (10 to 50 U)
 1. Insulin Type
     * User can select from Rapid (Novolog, Humalog, Apidra) or Ultra-Rapid (Fiasp, Lyumjev)
     
+
+
 For those using the DASH pods, the user interface screens have been completely rewritten, [Dash Pod Screen](dash-pump.md) 
 
 A [video is found here for pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing). Once the pod starts priming, you may want to skip ahead in the video (it takes about a minute to prime).

@@ -17,6 +17,7 @@ theme:
 # repo_url: https://github.com/LoopKit/Loop
 
 extra_css:
+    - stylesheets/extra.css
     - stylesheets/primary-color.css
 
 

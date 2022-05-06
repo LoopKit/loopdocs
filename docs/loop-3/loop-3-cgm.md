@@ -14,7 +14,7 @@ If no CGM has been configured, the user has an expanded choice of CGM as well as
     * Nightscout Remote CGM
     * Dexcom Share
 
-The addition of the Nightscout Remote CGM enables the use of Loop 3 with any sensor that can be uploaded to your Nightscout URL.
+The addition of the Nightscout Remote CGM enables the use of Loop-dev with any sensor that can be uploaded to your Nightscout URL.
 
 ## CGM Icon
 

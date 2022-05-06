@@ -1,12 +1,12 @@
 # Onboarding
 
-## First Time with Loop 3
+## First Time Using Onboarding
 
-The first time you build Loop 3 on a device, you will need to go through the onboarding process. This link shows a [video of onboarding](https://drive.google.com/file/d/1NkS-YGREFn1UBmBbOjsD2Yy0ZUyEYM1l/view?usp=sharing) with the pre-release version under test in March 2022.
+The first time you build Loop-dev on a device, you will need to go through the onboarding process. This link shows a [video of onboarding](https://drive.google.com/file/d/1NkS-YGREFn1UBmBbOjsD2Yy0ZUyEYM1l/view?usp=sharing) with the pre-release version under test in March 2022.
 
-* If you build Loop 3 over Loop 2 on your device, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build Loop 3 and keep using the same pod.)  
+* If you build Loop-dev over Loop 2.2.x on your device, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build Loop-dev and keep using the same pod.)
 
-* If you build Loop 3 onto a device without an existing Loop app and you have a Nightscout site, you can enter your Nightscout URL (remember to use https: with the "s") and API Secret and it will ask if you want to import your settings from your Nightscout profile. This includes all the overrides you have previously saved.
+* If you build Loop-dev onto a device without an existing Loop app and you have a Nightscout site, you can enter your Nightscout URL (remember to use https: with the "s") and API Secret and it will ask if you want to import your settings from your Nightscout profile. This includes all the overrides you have previously saved.
 
 * If you are building on a device that does not have an existing Loop app and you choose not to use Nightscout, then you must add settings (click on the row to edit or + to add a row) as you are taken through each screen.
 
@@ -14,25 +14,26 @@ You are presented with an information screen describing the setting (with a cont
 
 ### Entering and Editing Values
 
-There are some nice features when entering your settings with Loop 3.
+There are some nice features when entering your settings with Loop-dev.
 
 * If you want more information about the specific therapy setting, tap on the information icon.
 * When you tap +, you can add an entry to any time-slot that does not already have an entry
-    * Adjust the time and value(s) as desired
-    * Tap Add to include this entry in your schedule
+    - Adjust the time and value(s) as desired
+    - Tap Add to include this entry in your schedule
 * If a time-slot has an entry, you can tap on it to edit it
-    * You can change the time within the constraint of the time entries before and after the slot you are editing
-    * You can edit the value to any allowed value
+    - You can change the time within the constraint of the time entries before and after the slot you are editing
+    - You can edit the value to any allowed value
 * If you want to delete one or more entries, tap on Edit
-    * Tap the red icon to the left of the time-slot you want to delete and select delete
-    * Continue until done, then tap Done
+    - Tap the red icon to the left of the time-slot you want to delete and select delete
+    - Continue until done, then tap Done
+
 
 ### Therapy Information
 
 The order of Therapy Setting Information is:
 
 * Glucose Safety Limit
-    * Same as suspend threshold for Loop 2, but with a 3-hour time window
+    * Same as suspend threshold for Loop 2.2.x, but with a 3-hour time window
     * Code constraint: [67 to 110 mg/dl; 3.7 to 6.1 mmol/L]
     * Cannot be adjusted higher than bottom of lowest correction range or your pre-meal range (if those are set)
         * You must consider all three ranges when deciding what is limiting your allowed setting for these three
@@ -67,15 +68,24 @@ The order of Therapy Setting Information is:
 
 Some of the onboarding screens are shown below. Depending on your device resolution, you may need to scroll down to see the entire screen. Only the top portion of any given screen is shown in these graphics.
 
-If you have not already read it, please review the [First Time With Loop 3](#first-time-with-loop-3) now
+If you have not already read it, please review the [First Time Using Onboarding](#first-time-using-onboarding) now
 
-&nbsp;
 
 ### Welcome Screens
 
+The graphic below, shows the initial Welcome Screen, with a modal alert.
+
+
+#### What is a Modal Alert?
+
+!!! info "Modal Alert"
+
+    Loop-dev has many updates to the user experience.  A modal alert is a small window that shows up on top of your app with information that you must acknowledge, as shown in the graphic below.  You will see a lot of these.
+
+
 ![first two welcome screens when onboarding](img/welcome-menus-x2.svg){width="500"}
 
-&nbsp;
+
 
 ### Nightscout Selection
 

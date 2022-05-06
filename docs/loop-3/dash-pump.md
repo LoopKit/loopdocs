@@ -1,6 +1,6 @@
-# Dash Pump
+# Omnipod DASH Pump
 
-This page is a placeholder for adding nifty new UI features found with the Dash Pump in Loop 3.
+This page is a placeholder for adding nifty new UI features found with the Dash Pump in Loop-dev.
 
 A [video is found here for pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing). Once the pod starts priming, you may want to skip ahead in the video (it takes about a minute to prime).
 
