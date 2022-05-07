@@ -79,22 +79,32 @@ For those "Repeat Loopers" who remember when you had to use a "dev" branch to ge
     * Be sure to clone into a new directory that does not already have a folder called LoopWorkspace in it.
     * Loop-dev is the only workspace build that still requires carthage and it requires a specific version - don't worry - instructions are provided below
 
-#### Only build the dev branch if you're a developer/advanced user
+Yes - this section is "out-of-place", but the Step 14 Build Loop App page is already very long and complicated. If you can build Loop-dev, you can find this section.
+
+**Only build the dev branch if you're a developer/experienced user**
+
+### Before Downloading
 
 Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch.
 
 - Note, the dev branch requires a minimum of iOS 14 on your device
 - Once you install the dev branch on a device, you must delete the app to return to master, which means all settings will need to be entered in master and a new pod started
 - The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch
-- [Loop dev Preview](../faqs/dev-menus.md) is found in the FAQs section with some preliminary documentation
+- Please read the [Loop dev Preview](../faqs/dev-menus.md) page
 
-The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.
+### Carthage and Downloading
+
+The dev branch requires installation of carthage 0.36.0 on your Mac.
 
 * [Check carthage Status](#check-carthage-status) to ensure you have carthage 0.36.0 installed
 
 * Review the instructions here: [LoopWorkspace README](https://github.com/LoopKit/LoopWorkspace#readme) 
 
-* Use finder to create a new folder, typically in Downloads; and then hold down the control key and click on the folder to open a menu: select (near the bottom) New Terminal at Folder
+* Use finder to create a new folder, typically in Downloads
+    - Navigate to Downloads
+    - Hold down the control key and click on the folder to open a menu
+    - Select (near the bottom) New Terminal at Folder
+    - You can choose to use an existing folder, but it cannot already have a folder in it called LoopWorkspace
 
 * Copy and paste the lines below into that terminal window
 
@@ -106,16 +116,50 @@ xed .
 
 These three lines will download the code and open Xcode. Be sure to select LoopWorkspace and your phone.
 
+### Signing Targets
+
+If you choose to sign manually instead of using the new capability (next paragraph), you must sign 6 targets (add these 2 to the usual 4)
+
+* Loop Intent Extension
+* Learn
+
 With Loop-dev, the signing of targets can be done by editing a single file:
 
 * Edit the LoopConfigOverride.xcconfig file (you can do this in Xcode)
-* The next to last line says `Put your team id here`
+* The next to last line says `// Put your team id here for signing`
 * The last line starts with two slashes `//` – remove those
 * Replace the ID to the right of the equal sign with your Apple Developer ID
 * Apple Developer Team ID can be found for your account (after you sign in) at:
-    * https://developer.apple.com/account/#!/membership
+    * [https://developer.apple.com/account/#!/membership](https://developer.apple.com/account/#!/membership)
 
-#### After Xcode opens for Loop-dev:
+!!! warning "Loop.xcodeproj/project.pbxproj"
+
+    If you manually sign any of the targets, for example as an alternative way to get your Developer ID, the file in the Loop folder called `Loop.xcodeproj/project.pbxproj` is automatically modified to use that target name.
+
+    Once that happens, the feature that enables Xcode to use the `LOOP_DEVELOPMENT_TEAM` keyword in the LoopConfigOverride.xcconfig is no longer available.
+
+    To restore that capability, navigate in the terminal to the LoopWorkspace/Loop folder and issue this command:
+
+    ```
+    git restore Loop.xcodeproj/project.pbxproj
+    ```
+
+
+#### Loop-dev with Free Account
+
+Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the [Build Step 14: Free Account](step14.md#free-account) section.
+
+Note - if you know your Personal Team ID, you can enter it as directed in [Signing Targets](#signing-targets) above.
+
+1. You must remove additional capabilities, the complete list is:
+    * **Loop Target:** Push Notifications; Siri and **Time Sensitive Notifications**
+    * **Watch App Extension Target:** Siri
+1. Add the keyword `SIRI DISABLED` to the LoopConfigOverride.xcconfig file
+    * Examine the file and find the line that starts with `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
+    * Insert the new keyword (separated by a space) any where after `$(inherited)` and before the slashes near the end of the line
+
+
+### Build Loop-dev
 
 * There are some package dependencies that are resolved first and then the indexing takes place
 * If you are building Loop-dev with Xcode 13.3, you may have to clean, close and reopen the workspace (no need to quit Xcode) before you can build successfully
@@ -124,14 +168,15 @@ With Loop-dev, the signing of targets can be done by editing a single file:
     * In either case, follow the procedure to fix a [Cycle Dependency](build_errors.md#cycle-dependency)
     * If that still doesn't work, quit out of Xcode, delete derived data and try again.
 
-``` title="Delete Derived Data (quit Xcode first)"
-rm -rf ~/Library/Developer/Xcode/DerivedData
-```
+        ``` title="Delete Derived Data (quit Xcode first)"
+        rm -rf ~/Library/Developer/Xcode/DerivedData
+        ```
 
-    
-Follow the build instructions on the next page: [Build Loop](step14.md#build-loop).
+Follow the instructions starting at the "Build Loop" section on the next page: [Step 14: Build Loop App #Build Loop](step14.md#build-loop).
 
-### Updating Your Copy of Loop-dev
+We suggest reading the tips below on keeping Loop-dev updated. Checking for updates every week is a good idea.  Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
+
+### Update Loop-dev
 
 While Loop-dev is under active test, you will want to update frequently.
 
