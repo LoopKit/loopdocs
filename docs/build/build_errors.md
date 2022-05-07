@@ -248,9 +248,9 @@ With Xcode 12, the simulators are no longer being downloaded automatically. If y
 ![img/exit-code-65.png](img/exit-code-65.png){width="850"}
 {align="center"}
 
-### Developer License Update
+### Developer License Update (PLA Update)
 
-**Error message:** "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement"
+**Error message:** "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement". Or you may see "Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account."
 
 **Solution:** You'll need to log onto your developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
 
