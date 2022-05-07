@@ -200,6 +200,10 @@ Connect your iPhone via cable to the computer, select your iPhone from the very 
 
 _The graphics in this section have not been updated to show "Loop (Workspace)"._
 
+_The graphics in this section have not been updated for Xcode 13, which uses the trashcan icon instead of the x for removing capabilities._
+
+_If you are building Loop-dev, review this section and then [Loop-dev with Free Account](step13.md#loop-dev-with-free-account)_
+
 !!! abstract "Free Developer Account Users: READ ME"
 
     If you are using a free developer account, you will need to do an extra step before you can successfully sign the targets. As a free developer, you are restricted from building apps that have Siri or push notification capabilities built-in. Loop has both of these capabilities, so you will need to disable them before signing and building your app.
@@ -236,9 +240,9 @@ A successfully signed target will have a provisioning profile and signing certif
 
 !!! abstract "Advanced Users Only"
 
-    There are more targets which must be signed to build the dev branch - should be obvious in the Xcode window.
+    There are [more targets](step13.md#signing-targets) which must be signed to build the dev branch.
 
-    If you read the hint in [Step 13](step13.md#advanced-users-only) and edited the LoopConfigOverride.xcconfig, your targets are already signed.
+    If you read the hint in [Step 13](step13.md#signing-targets) and edited the LoopConfigOverride.xcconfig, your targets are already signed.
 
     - **Repeat: only build the dev branch if you're a developer/advanced user**
 

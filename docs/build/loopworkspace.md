@@ -122,9 +122,13 @@ Once Xcode is opened for the LoopWorkspace, everything is pretty similar to buil
 
 ## Updating Loop using LoopWorkspace
 
-When it's time to update the copy of LoopWorkspace on your computer - you have two choices.
+When it's time to update the copy of LoopWorkspace on your computer - you have choices. A few methods are provided below.
 
-1. Use the `git pull --recurse` command in the LoopWorkspace folder in the terminal
+1. Use the following git commands in the LoopWorkspace folder of your terminal:
+    ```
+    git fetch
+    git pull --recurse
+    ```
 1. You can redo the whole cloning process
 
 If you are testing the LoopKit dev branch, you need to be on [zulipchat](https://loop.zulipchat.com) and subscribe to at least the #development and #github streams. (It's a good idea to subscribe to all the streams.) When you see repository updates similar to the graphic below, there may also be an announcement in the #development channel that LoopWorkspace is updated and ready to test. If not you can check the commits in LoopWorkspace and see if they've been updated. It's a good idea to wait 24 hours. My procedure is to build dev to my backup phone and then put it on my "real" phone. Otherwise, wait for someone else to do it and give the all-clear in zulipchat.
