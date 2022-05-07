@@ -10,8 +10,8 @@
     - If you use Omnipod - check which kind:
         - If you have a big clunky PDM with a built-in BG meter, you are using Eros pods. (These pods have a clear needle cap.)
             * Eros pods are supported in the released version of Loop
-        - If you have a slim touch screen android-looking PDM, you are using Dash Pods. (These pods have a blue needle cap.)
-            * Dash pod support is under development and active test (not released yet) 
+        - If you have a slim touch screen android-looking PDM, you are using DASH Pods. (These pods have a blue needle cap.)
+            * DASH pod support is under development and active test (not released yet) 
 
 !!! question "FAQs"
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump)
@@ -26,7 +26,7 @@ There are two types of pumps compatible with Loop.
 
 * [Older Medtronic pumps](step3.md#check-medtronic-pump-version)
 * [Eros Omnipod pumps](step3.md#omnipod-pumps)
-* Dash Omnipod pumps - under test by experts - will be in next release
+* DASH Omnipod pumps - under test by experts - will be in next release
 
 ## Check Medtronic Pump Version
 

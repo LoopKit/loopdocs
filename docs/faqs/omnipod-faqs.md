@@ -2,7 +2,7 @@
 
 ## Is Omnipod supported on Loop?
 
-The Eros pods are supported.  The Dash pods are not supported (yet).
+The Eros pods are supported.  The DASH pods are not supported (yet).
 
 ## Which pods will work with Loop?
 
