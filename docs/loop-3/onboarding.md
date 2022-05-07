@@ -12,6 +12,13 @@ The first time you build Loop-dev on a device, you will need to go through the o
 
 You are presented with an information screen describing the setting (with a continue button) followed by your current settings (if available), which you must confirm to keep - or can modify and then confirm to change. Depending on the device you are using, you may need to scroll down to see the Continue or Save buttons for each setting. Once you have been walked through all the Therapy Settings, there is a final review and confirm all Therapy Settings screen.
 
+!!! warning "Check Imported Settings"
+
+    The new onboarding forces you to check all your imported [Therapy Settings](#therapy-information) but there may be other settings you need to check as well.
+
+    * Dosing Strategy: may be at the default value of `Temp Basal Only`, even if you were using `Automatic Bolus` with Loop 2.x.x
+    * Overrides: verify these are populated as expected
+
 ### Entering and Editing Values
 
 There are some nice features when entering your settings with Loop-dev.
