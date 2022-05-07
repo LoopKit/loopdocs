@@ -1,6 +1,6 @@
 # Pump Configuration
 
-The pump configuration can be selected from the [HUD](loop-3-displays.md#heads-up-display) or from the [Loop Settings](loop-3-settings.md) screen.
+The pump configuration can be selected from the Heads-Up-Display ([HUD](loop-3-displays.md#heads-up-display)) or from the [Loop Settings](loop-3-settings.md) screen.
 
 ## Add Pump
 
