@@ -597,8 +597,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#updating-your-copy-of-loop-dev" class="md-nav__link">
-    Updating Your Copy of Loop-dev
+  <a href="#before-downloading" class="md-nav__link">
+    Before Downloading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carthage-and-downloading" class="md-nav__link">
+    Carthage and Downloading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signing-targets" class="md-nav__link">
+    Signing Targets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-loop-dev" class="md-nav__link">
+    Build Loop-dev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-loop-dev" class="md-nav__link">
+    Update Loop-dev
   </a>
   
 </li>
@@ -1940,8 +1968,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#updating-your-copy-of-loop-dev" class="md-nav__link">
-    Updating Your Copy of Loop-dev
+  <a href="#before-downloading" class="md-nav__link">
+    Before Downloading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carthage-and-downloading" class="md-nav__link">
+    Carthage and Downloading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signing-targets" class="md-nav__link">
+    Signing Targets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-loop-dev" class="md-nav__link">
+    Build Loop-dev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-loop-dev" class="md-nav__link">
+    Update Loop-dev
   </a>
   
 </li>
@@ -2063,15 +2119,18 @@
 <li>Loop-dev is the only workspace build that still requires carthage and it requires a specific version - don't worry - instructions are provided below</li>
 </ul>
 </div>
-<h4 id="only-build-the-dev-branch-if-youre-a-developeradvanced-user">Only build the dev branch if you're a developer/advanced user<a class="headerlink" href="#only-build-the-dev-branch-if-youre-a-developeradvanced-user" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Yes - this section is "out-of-place", but the Step 14 Build Loop App page is already very long and complicated. If you can build Loop-dev, you can find this section.</p>
+<p><strong>Only build the dev branch if you're a developer/experienced user</strong></p>
+<h3 id="before-downloading">Before Downloading<a class="headerlink" href="#before-downloading" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Please read <a href="../../faqs/branch-faqs/#whats-going-on-in-the-dev-branch">What's going on in the dev branch?</a> before deciding to test the dev branch.</p>
 <ul>
 <li>Note, the dev branch requires a minimum of iOS 14 on your device</li>
 <li>Once you install the dev branch on a device, you must delete the app to return to master, which means all settings will need to be entered in master and a new pod started</li>
 <li>The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch</li>
-<li><a href="../../faqs/dev-menus/">Loop dev Preview</a> is found in the FAQs section with some preliminary documentation</li>
+<li>Please read the <a href="../../faqs/dev-menus/">Loop dev Preview</a> page</li>
 </ul>
-<p>The dev branch requires using LoopWorkspace and requires installation of carthage 0.36.0 on your Mac.</p>
+<h3 id="carthage-and-downloading">Carthage and Downloading<a class="headerlink" href="#carthage-and-downloading" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The dev branch requires installation of carthage 0.36.0 on your Mac.</p>
 <ul>
 <li>
 <p><a href="#check-carthage-status">Check carthage Status</a> to ensure you have carthage 0.36.0 installed</p>
@@ -2080,7 +2139,13 @@
 <p>Review the instructions here: <a href="https://github.com/LoopKit/LoopWorkspace#readme">LoopWorkspace README</a> </p>
 </li>
 <li>
-<p>Use finder to create a new folder, typically in Downloads; and then hold down the control key and click on the folder to open a menu: select (near the bottom) New Terminal at Folder</p>
+<p>Use finder to create a new folder, typically in Downloads</p>
+<ul>
+<li>Navigate to Downloads</li>
+<li>Hold down the control key and click on the folder to open a menu</li>
+<li>Select (near the bottom) New Terminal at Folder</li>
+<li>You can choose to use an existing folder, but it cannot already have a folder in it called LoopWorkspace</li>
+</ul>
 </li>
 <li>
 <p>Copy and paste the lines below into that terminal window</p>
@@ -2091,32 +2156,64 @@ cd LoopWorkspace
 xed .
 </code></pre></div>
 <p>These three lines will download the code and open Xcode. Be sure to select LoopWorkspace and your phone.</p>
+<h3 id="signing-targets">Signing Targets<a class="headerlink" href="#signing-targets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you choose to sign manually instead of using the new capability (next paragraph), you must sign 6 targets (add these 2 to the usual 4)</p>
+<ul>
+<li>Loop Intent Extension</li>
+<li>Learn</li>
+</ul>
 <p>With Loop-dev, the signing of targets can be done by editing a single file:</p>
 <ul>
 <li>Edit the LoopConfigOverride.xcconfig file (you can do this in Xcode)</li>
-<li>The next to last line says <code>Put your team id here</code></li>
+<li>The next to last line says <code>// Put your team id here for signing</code></li>
 <li>The last line starts with two slashes <code>//</code> – remove those</li>
 <li>Replace the ID to the right of the equal sign with your Apple Developer ID</li>
 <li>Apple Developer Team ID can be found for your account (after you sign in) at:<ul>
-<li>https://developer.apple.com/account/#!/membership</li>
+<li><a href="https://developer.apple.com/account/#!/membership">https://developer.apple.com/account/#!/membership</a></li>
 </ul>
 </li>
 </ul>
-<h4 id="after-xcode-opens-for-loop-dev">After Xcode opens for Loop-dev:<a class="headerlink" href="#after-xcode-opens-for-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Loop.xcodeproj/project.pbxproj</p>
+<p>If you manually sign any of the targets, for example as an alternative way to get your Developer ID, the file in the Loop folder called <code>Loop.xcodeproj/project.pbxproj</code> is automatically modified to use that target name.</p>
+<p>Once that happens, the feature that enables Xcode to use the <code>LOOP_DEVELOPMENT_TEAM</code> keyword in the LoopConfigOverride.xcconfig is no longer available.</p>
+<p>To restore that capability, navigate in the terminal to the LoopWorkspace/Loop folder and issue this command:</p>
+<div class="highlight"><pre><span></span><code>git restore Loop.xcodeproj/project.pbxproj
+</code></pre></div>
+</div>
+<h4 id="loop-dev-with-free-account">Loop-dev with Free Account<a class="headerlink" href="#loop-dev-with-free-account" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the <a href="../step14/#free-account">Build Step 14: Free Account</a> section.</p>
+<p>Note - if you know your Personal Team ID, you can enter it as directed in <a href="#signing-targets">Signing Targets</a> above.</p>
+<ol>
+<li>You must remove additional capabilities, the complete list is:<ul>
+<li><strong>Loop Target:</strong> Push Notifications; Siri and <strong>Time Sensitive Notifications</strong></li>
+<li><strong>Watch App Extension Target:</strong> Siri</li>
+</ul>
+</li>
+<li>Add the keyword <code>SIRI DISABLED</code> to the LoopConfigOverride.xcconfig file<ul>
+<li>Examine the file and find the line that starts with <code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)</code></li>
+<li>Insert the new keyword (separated by a space) any where after <code>$(inherited)</code> and before the slashes near the end of the line</li>
+</ul>
+</li>
+</ol>
+<h3 id="build-loop-dev">Build Loop-dev<a class="headerlink" href="#build-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>There are some package dependencies that are resolved first and then the indexing takes place</li>
 <li>If you are building Loop-dev with Xcode 13.3, you may have to clean, close and reopen the workspace (no need to quit Xcode) before you can build successfully<ul>
 <li>Sometimes package dependencies do not resolve and you see a message like "Couldn’t get revision ‘1.4.3^{commit}’"</li>
 <li>Sometimes you may see a cycle dependency error</li>
 <li>In either case, follow the procedure to fix a <a href="../build_errors/#cycle-dependency">Cycle Dependency</a></li>
-<li>If that still doesn't work, quit out of Xcode, delete derived data and try again.</li>
+<li>
+<p>If that still doesn't work, quit out of Xcode, delete derived data and try again.</p>
+<div class="highlight"><span class="filename">Delete Derived Data (quit Xcode first)</span><pre><span></span><code>rm -rf ~/Library/Developer/Xcode/DerivedData
+</code></pre></div>
+</li>
 </ul>
 </li>
 </ul>
-<div class="highlight"><span class="filename">Delete Derived Data (quit Xcode first)</span><pre><span></span><code>rm -rf ~/Library/Developer/Xcode/DerivedData
-</code></pre></div>
-<p>Follow the build instructions on the next page: <a href="../step14/#build-loop">Build Loop</a>.</p>
-<h3 id="updating-your-copy-of-loop-dev">Updating Your Copy of Loop-dev<a class="headerlink" href="#updating-your-copy-of-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Follow the instructions starting at the "Build Loop" section on the next page: <a href="../step14/#build-loop">Step 14: Build Loop App #Build Loop</a>.</p>
+<p>We suggest reading the tips below on keeping Loop-dev updated. Checking for updates every week is a good idea.  Also - subscribe to all the streams on <a href="https://loop.zulipchat.com">Loop Zulipchat</a> to make sure you don't miss critical information.</p>
+<h3 id="update-loop-dev">Update Loop-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>While Loop-dev is under active test, you will want to update frequently.</p>
 <ul>
 <li>Some users like to use <a href="https://support.gitkraken.com/">GitKraken</a> to assist them (link takes you to a tutorial video).</li>
