@@ -94,9 +94,43 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ## Specific Error Messages
 
+### Couldn't Get Revision for Package Dependency
+
+This error is new with Loop-dev, which uses Package Dependencies.
+
+* If you notice a red x in Xcode (as circled in the graphic below)
+    - Click on the red x to show the error in the left pane
+    - Alternatively, you can click on the icon shown with the red square to see the same information
+
+**Error Message:**
+
+![package dependency error](img/xcode-package-dependency-error.svg){width="600"}
+
+Text in error:
+
+* _Uncategorized_
+    - _Couldn't get revision . . ._
+
+**Solution:**
+
+Refer to the graphic below
+
+1. Click on the folder icon (indicated by red square)
+1. Hold down the Control-Key and click the `Package Dependency` row to display the dropdown menu (shown in the inset)
+1. Select Resolve Package Versions from the dropdown menu
+1. Once that completes, the red x should resolve and you can build as soon as the Indexing message appears
+
+![package dependency solution](img/xcode-package-dependency-solution.svg){width="600"}
+
+
 ### Cycle Dependency
 
-This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building Loop-Master and FreeAPS.
+This error is new with Xcode 13.3 (late Sep 2021) which has a new requirement
+
+* For those who care: the new requirement is that for a certain type of instruction file, the line with the `Headers` keyword must be located before the line with the `Sources` keyword
+* There used to be many repositories that did not have lines in that order
+* All of these instruction files have been updated for Loop Master, Loop dev and FreeAPS
+* If you are building with an older copy of the code, you may see this error
 
 **Error Message:**
 
@@ -121,10 +155,6 @@ No need to quit Xcode - follow these steps using the Xcode Menu bar. (It's possi
 1. From the `File` menu, select `Open Recent` and choose the top line 
 1. Press the Build Button (play icon)
 
-
-##### Xcode 13 Indexing Not Finished / WatchApp Extension entitlements
-
-(The old link is included on the line above - this link will be removed soon) 
 
 ### Entitlements Error
 
