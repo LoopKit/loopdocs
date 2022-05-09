@@ -626,6 +626,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#couldnt-get-revision-for-package-dependency" class="md-nav__link">
+    Couldn't Get Revision for Package Dependency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cycle-dependency" class="md-nav__link">
     Cycle Dependency
   </a>
@@ -2046,6 +2053,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#couldnt-get-revision-for-package-dependency" class="md-nav__link">
+    Couldn't Get Revision for Package Dependency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cycle-dependency" class="md-nav__link">
     Cycle Dependency
   </a>
@@ -2273,8 +2287,41 @@
 <p>For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find the solution.</p>
 <p align="center"><img alt="img/search-errors.png" src="../img/search-errors.png" width="650" /></p>
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="couldnt-get-revision-for-package-dependency">Couldn't Get Revision for Package Dependency<a class="headerlink" href="#couldnt-get-revision-for-package-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This error is new with Loop-dev, which uses Package Dependencies.</p>
+<ul>
+<li>If you notice a red x in Xcode (as circled in the graphic below)<ul>
+<li>Click on the red x to show the error in the left pane</li>
+<li>Alternatively, you can click on the icon shown with the red square to see the same information</li>
+</ul>
+</li>
+</ul>
+<p><strong>Error Message:</strong></p>
+<p><img alt="package dependency error" src="../img/xcode-package-dependency-error.svg" width="600" /></p>
+<p>Text in error:</p>
+<ul>
+<li><em>Uncategorized</em><ul>
+<li><em>Couldn't get revision . . .</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<p>Refer to the graphic below</p>
+<ol>
+<li>Click on the folder icon (indicated by red square)</li>
+<li>Hold down the Control-Key and click the <code>Package Dependency</code> row to display the dropdown menu (shown in the inset)</li>
+<li>Select Resolve Package Versions from the dropdown menu</li>
+<li>Once that completes, the red x should resolve and you can build as soon as the Indexing message appears</li>
+</ol>
+<p><img alt="package dependency solution" src="../img/xcode-package-dependency-solution.svg" width="600" /></p>
 <h3 id="cycle-dependency">Cycle Dependency<a class="headerlink" href="#cycle-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This is new with Xcode 13.3 - we have seen it a lot with the dev branch, but it's also been reported building Loop-Master and FreeAPS.</p>
+<p>This error is new with Xcode 13.3 (late Sep 2021) which has a new requirement</p>
+<ul>
+<li>For those who care: the new requirement is that for a certain type of instruction file, the line with the <code>Headers</code> keyword must be located before the line with the <code>Sources</code> keyword</li>
+<li>There used to be many repositories that did not have lines in that order</li>
+<li>All of these instruction files have been updated for Loop Master, Loop dev and FreeAPS</li>
+<li>If you are building with an older copy of the code, you may see this error</li>
+</ul>
 <p><strong>Error Message:</strong></p>
 <p><img alt="cycle dependencies error" src="../img/xcode-cycle-dependencies.svg" width="600" /></p>
 <p>Text in error:</p>
@@ -2300,8 +2347,6 @@
 <li>From the <code>File</code> menu, select <code>Open Recent</code> and choose the top line </li>
 <li>Press the Build Button (play icon)</li>
 </ol>
-<h5 id="xcode-13-indexing-not-finished-watchapp-extension-entitlements">Xcode 13 Indexing Not Finished / WatchApp Extension entitlements<a class="headerlink" href="#xcode-13-indexing-not-finished-watchapp-extension-entitlements" title="Anchor link to this Header on this Page">&para;</a></h5>
-<p>(The old link is included on the line above - this link will be removed soon) </p>
 <h3 id="entitlements-error">Entitlements Error<a class="headerlink" href="#entitlements-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong></p>
 <p>The solution for this error has been updated with a new, simpler method.</p>

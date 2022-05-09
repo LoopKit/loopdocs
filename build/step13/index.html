@@ -2198,20 +2198,10 @@ xed .
 </ol>
 <h3 id="build-loop-dev">Build Loop-dev<a class="headerlink" href="#build-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
-<li>There are some package dependencies that are resolved first and then the indexing takes place</li>
-<li>If you are building Loop-dev with Xcode 13.3, you may have to clean, close and reopen the workspace (no need to quit Xcode) before you can build successfully<ul>
-<li>Sometimes package dependencies do not resolve and you see a message like "Couldn’t get revision ‘1.4.3^{commit}’"</li>
-<li>Sometimes you may see a cycle dependency error</li>
-<li>In either case, follow the procedure to fix a <a href="../build_errors/#cycle-dependency">Cycle Dependency</a></li>
-<li>
-<p>If that still doesn't work, quit out of Xcode, delete derived data and try again.</p>
-<div class="highlight"><span class="filename">Delete Derived Data (quit Xcode first)</span><pre><span></span><code>rm -rf ~/Library/Developer/Xcode/DerivedData
-</code></pre></div>
-</li>
+<li>There are some package dependencies (new for Loop-dev) that are resolved first and then the indexing takes place</li>
+<li>If you notice a red x in Xcode (indicating an error) while it is resolving packages and indexing - please follow the steps for <a href="../build_errors/#couldnt-get-revision-for-package-dependency">Couldn't Get Revision for Package Dependency</a></li>
+<li>Once the packages are resolved and the indexing has started, you can build the app following the directions in the "Build Loop" section on the next page: <a href="../step14/#build-loop">Step 14: Build Loop App #Build Loop</a>.</li>
 </ul>
-</li>
-</ul>
-<p>Follow the instructions starting at the "Build Loop" section on the next page: <a href="../step14/#build-loop">Step 14: Build Loop App #Build Loop</a>.</p>
 <p>We suggest reading the tips below on keeping Loop-dev updated. Checking for updates every week is a good idea.  Also - subscribe to all the streams on <a href="https://loop.zulipchat.com">Loop Zulipchat</a> to make sure you don't miss critical information.</p>
 <h3 id="update-loop-dev">Update Loop-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>While Loop-dev is under active test, you will want to update frequently.</p>
