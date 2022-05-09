@@ -162,7 +162,7 @@ Note - if you know your Personal Team ID, you can enter it as directed in [Signi
 ### Build Loop-dev
 
 * There are some package dependencies (new for Loop-dev) that are resolved first and then the indexing takes place
-* If you are building Loop-dev and you notice a red x in Xcode (indicating an error) while it is resolving packages and indexing - please follow the steps for [Couldn't Get Revision for Package Dependency](build_errors.md#couldnt-get-revision-for-package-dependency)
+* If you notice a red x in Xcode (indicating an error) while it is resolving packages and indexing - please follow the steps for [Couldn't Get Revision for Package Dependency](build_errors.md#couldnt-get-revision-for-package-dependency)
 * Once the packages are resolved and the indexing has started, you can build the app following the directions in the "Build Loop" section on the next page: [Step 14: Build Loop App #Build Loop](step14.md#build-loop).
 
 We suggest reading the tips below on keeping Loop-dev updated. Checking for updates every week is a good idea.  Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
