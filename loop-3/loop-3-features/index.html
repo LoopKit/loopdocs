@@ -1410,9 +1410,84 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Features
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#carb-data-source" class="md-nav__link">
+    Carb Data Source
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-pump-insulin" class="md-nav__link">
+    Non-Pump Insulin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bolus-entry" class="md-nav__link">
+    Bolus Entry
+  </a>
+  
+    <nav class="md-nav" aria-label="Bolus Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meal-bolus-screen" class="md-nav__link">
+    Meal Bolus Screen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-bolus-screen" class="md-nav__link">
+    Manual Bolus Screen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remote-carb-bolus" class="md-nav__link">
+    Remote Carb / Bolus
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1796,6 +1871,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#carb-data-source" class="md-nav__link">
+    Carb Data Source
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-pump-insulin" class="md-nav__link">
+    Non-Pump Insulin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bolus-entry" class="md-nav__link">
+    Bolus Entry
+  </a>
+  
+    <nav class="md-nav" aria-label="Bolus Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meal-bolus-screen" class="md-nav__link">
+    Meal Bolus Screen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-bolus-screen" class="md-nav__link">
+    Manual Bolus Screen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remote-carb-bolus" class="md-nav__link">
+    Remote Carb / Bolus
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1808,18 +1939,98 @@
                 
                 
                 <h1 id="features">Features<a class="headerlink" href="#features" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>This page is a placeholder for documenting nifty new features found in Loop-dev.</p>
+<p>This page discusses updated versions of Loop features as well as new capabilities provided with Loop-dev.</p>
+<h2 id="carb-data-source">Carb Data Source<a class="headerlink" href="#carb-data-source" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There were many instances with prior versions of Loop where a user would use a "food" app that stored information in Apple Health, not realizing that Loop would read that entry and start adjusting insulin delivery.</p>
+<p>To avoid this problem, Loop-dev is designed with a separate carbohydrate storage system that does not rely on Apple Health.  Loop still writes carbohydrate entries to Apple Health but it does not read carbohydrate entries from Apple Health.</p>
+<p>There are some experienced loopers who want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works.  This code customization option is discussed in zulipchat.</p>
+<h2 id="non-pump-insulin">Non-Pump Insulin<a class="headerlink" href="#non-pump-insulin" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There are times when a looper needs to let Loop know they have taken insulin from a different source. The instruction with Loop 2.2.x was to manually enter the dose into the Apple Health app for Insulin and Loop would import that value.</p>
+<p>With Loop-dev, the "old" method still works, but there is a new method for entering this information that provides the user with updated <code>Glucose</code> predictions based on that dose and enables the user to indicate the type of insulin taken so that the appropriate model is used by Loop.  </p>
+<ol>
+<li>
+<p>By tapping on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen, the Insulin Delivery Screen is displayed with 3 tabs.</p>
 <ul>
-<li>
-<p>For example: add instructions and graphic to show user can tap on one of the insulin charts to reveal the Add Non-Pump Insulin tab</p>
+<li><strong>Event History</strong> (default) is the same as for Loop 2.2.x</li>
+<li><strong>Reservoir</strong> is similar to Loop 2.2.x; however, the reservoir value from a prior pod is not displayed after a new pod is applied</li>
+<li><strong>Non-Pump Insulin</strong> is a new feature with Loop-dev</li>
+</ul>
 </li>
 <li>
-<p>new methods for the carb-bolus entry process</p>
+<p>Select the <code>Non-Pump Insulin</code> tab to bring up the graphic shown below</p>
+<ul>
+<li>Tap on the + sign (green solid lines)</li>
+<li><code>Log Dose</code> screen is displayed showing the current <code>Glucose</code> prediction</li>
+<li>The default insulin type is that used by the pump</li>
+<li>To modify Insulin Type, tap on that row (red dashed lines)<ul>
+<li>Picker wheel allows other insulin models to be selected</li>
+<li><em>At the current time, no model is in place for Afrezza</em></li>
+</ul>
 </li>
-<li>
-<p>etc</p>
+<li>Tap on the <code>Bolus</code> row (blue dash-dot lines) to bring up a keyboard<ul>
+<li>As a value is entered using the keyboard, the <code>Glucose</code> prediction chart updates automatically</li>
+<li>Tip, add 0.001 to the actual dose to make it easier to see if reviewing in Apple Health</li>
+<li>Once the user selects <code>Done</code> on the keyboard display, the entered value is displayed on the <code>Bolus</code> row and the <code>Log Dose</code> button changes from gray to blue</li>
+<li>Tap on <code>Log Dose</code> to record or <code>Cancel</code> to quit</li>
+</ul>
 </li>
 </ul>
+</li>
+</ol>
+<p><img alt="entering non-pump insulin into Loop" src="../img/non-pump-insulin.svg" width="500" /></p>
+<h2 id="bolus-entry">Bolus Entry<a class="headerlink" href="#bolus-entry" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The bolus following carbs (<code>Meal Bolus</code>) and manual bolus (<code>Bolus</code>) screens are updated from Loop 2.2.x. There is still a predicted <code>Glucose</code> chart that actively updates as the bolus value is updated and various buttons. </p>
+<ul>
+<li>With Loop 2.2.x<ul>
+<li>The Recommended Bolus is provided but the default for the Bolus value is 0</li>
+<li>If the user taps on the Recommended Bolus row, the recommended amount is transferred to the Bolus row</li>
+</ul>
+</li>
+<li>With Loop-dev<ul>
+<li>The Recommended Bolus is provided AND the default for the Bolus is the recommended value</li>
+<li>If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry</li>
+</ul>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Blue Means Active</p>
+<ul>
+<li>For those who can see colors, the blue color indicates an active button.</li>
+<li>The value displayed on the <code>Bolus</code> row is blue to indicate if you tap on that, you can edit the value</li>
+</ul>
+</div>
+<h3 id="meal-bolus-screen">Meal Bolus Screen<a class="headerlink" href="#meal-bolus-screen" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>When the <code>Meal Bolus</code> screen is entered following a carb entry or edit action, the active button might be <code>Save and Bolus</code> or, if no bolus was recommended, <code>Save without Bolusing</code>. </p>
+<p>Some people reported issues with the overlap between buttons and the keyboard for the <code>Meal Bolus</code> screen when choosing an option other than <code>Save and Bolus</code>.</p>
+<ul>
+<li>This interface might be modified, so graphics have not been prepared</li>
+<li>There are several topic threads in zulipchat</li>
+</ul>
+<h3 id="manual-bolus-screen">Manual Bolus Screen<a class="headerlink" href="#manual-bolus-screen" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>When the <code>Bolus</code> screen is entered direct from the toolbar, the button choices are <code>Enter Bolus</code> if none is recommended, <code>Deliver</code> if a value is on the <code>Bolus</code> row or <code>Cancel</code>. The user can also tap on the value on the <code>Bolus</code> row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.</p>
+<p>The two graphics below are from entering selecting manual bolus from the toolbar. </p>
+<ul>
+<li>In the first graphic, no bolus was recommended </li>
+<li>In the second graphic, a recommended amount is shown</li>
+</ul>
+<p align="center"><img alt="manual bolus when no bolus recommended" src="../img/loop-3-manual-bolus-no-rec.svg" width="350" /></p>
+<p align="center"><img alt="manual bolus when bolus is recommended" src="../img/loop-3-manual-bolus-rec.svg" width="350" /></p>
+<h2 id="remote-carb-bolus">Remote Carb / Bolus<a class="headerlink" href="#remote-carb-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Loop-dev has a Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop.</p>
+<p>The author of this feature wrote this <a href="https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM/edit#">Remote Carb/Bolus Guide</a> documentation. Please read carefully and use with the appropriate level of caution.</p>
+<div class="admonition warning">
+<p class="admonition-title">WARNING</p>
+<p>You will be using this feature at  your own risk, like any other Loop code you build. It is very important you completely read and re-read the <a href="https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM/edit#">Remote Carb/Bolus Guide</a> before getting started. </p>
+<p>There are validation and troubleshooting steps for each section of the guide. </p>
+<p>Please make sure not to skip sections as this makes it difficult to troubleshoot.</p>
+<p>Be aware:</p>
+<ul>
+<li>Apple limits how many push notifications (used by this feature) can be received on an iOS device</li>
+<li>If the system feels too many are being sent, it may begin to throttle notifications</li>
+<li>There is not a published limit, but consider limiting it to 1 per hour</li>
+<li>When on cellular data, there may be further limitations to protect your data usage</li>
+</ul>
+</div>
                 
               
               
