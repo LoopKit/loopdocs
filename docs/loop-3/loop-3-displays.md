@@ -5,9 +5,8 @@
 The main Loop screen contains a Heads-Up Display at the top (when in portrait mode) with various graphs in the middle and a toolbar at the bottom of the screen.
 
 !!! info "New Look for Home Screen"
-    The Loop-dev Home screen was redesigned to reduce the cognitive load for users. To do that, only the information needed to see status at a "glance" is provided.
-    
-    Please give the difference a chance before you ask what happened to something you were used to seeing on the home screen.   The more detailed information that some long-term loopers may want is still provided in lower level screens.
+    * The Loop-dev Home screen is designed to provide status at a glance
+    * More detailed information is a quick tap away
     
 
 ![main loop screen when running nominally](img/loop-3-main.svg){width="300"}
