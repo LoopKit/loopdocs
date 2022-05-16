@@ -31,7 +31,7 @@ Under ordinary circumstances, you do not *have to* update your Loop app until it
 
     Follow these "safe Looping" steps:
 
-    1. Update macOS / Xcode if needed
+    1. [Update macOS / Xcode](step1.md#macos) if needed
     1. Check [Loop Release](../faqs/release-faqs.md#loop-release) status - if there is new code, you should download it
     1. Build app to your iPhone
     1. Then update your iPhone iOS
@@ -56,20 +56,19 @@ When you see "Loop" is No Longer Available on your phone, the only solution is t
 
 ### Verify / Update macOS
 
-Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS, you cannot build on that phone.
+Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS required for your phone iOS, you cannot build on that phone.
 
-- For iOS 15, minimum is macOS 11.3 (Big Sur)
-- For iOS 14.5 though 14.8, minimum is macOS 11.0 (Big Sur)
+- The information for which macOS is required is found by following this link to the correct section of [Build Step 1](step1.md#macos)
+* After you've reviewed that section, hit the back button on your browser to return here
 
-Minimum means - newer versions build just fine. In other words, macOS 12.x (Monterey) is fine for building Loop, but not requred.
-
-Loop Master will still run on iPhone 6 running iOS 12.5 and can be built using Xcode 13 with macOS 11.6.
+Minimum means you need to have at least that version - newer versions build just fine.
 
 ### Verify / Update Xcode
 
-Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode in the App Store. The information for which Xcode is required is found in [Build Step 8](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).  (It's not repeated because that way we only have to update it on one page.  In the time of rapid iOS changes, that's the best way to keep the information accurate.)
+Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode in the App Store.
 
-If you see that you need to update (and you probably do), then keep following instruction on that page and the next one (Build Step 9) and then return to this page.
+* The information for which Xcode is required is found by following this link to the correct section [Build Step 8](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
+* If you see that you need to update (and you probably do), then keep following instruction on that page and the next one (Build Step 9) and then return to this page
 
 If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.
 
