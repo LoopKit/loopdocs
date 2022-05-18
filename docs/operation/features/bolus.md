@@ -33,11 +33,15 @@ Loop reassesses your insulin needs every time a new BG reading is detected, typi
 ![Bolus start and progress status indicator](img/bolus-status-line-start-progress.svg){width="900"}
 {align="center"}
 
-When the phone is in portrait mode, a bolus status line will appear below the Heads Up Display when Loop is sending a bolus command to the pump. The "starting bolus" indicator is shown in the left screenshot above. Once the bolus begins, the bolused xx of yy with the circle display begins, as shown in the right screenshot above. If you change your mind, just click on the bolus status line while the bolus is in progress to cancel your bolus, as shown in the screenshot below.  If you see a 'pump is suspended notice' in the bolus status line after cancelling your bolus, just tap on it to resume pump operations.
+!!! warning "Lock Phone During Bolus"
+    Once the bolus has started, you should lock your phone to avoid inadvertently cancelling a bolus.
+
+When the phone is in portrait mode, a bolus status line will appear below the Heads Up Display when Loop has a bolus in progress. The "starting bolus" indicator is shown in the left screenshot above - this is when Loop is communicating with the RileyLink. Once the message has been sent to the RilyLink, even if a response from the pump did not make it back to Loop, the bolused xx of yy with the circle display begins, as shown in the right screenshot above. If you change your mind, just click on the bolus status line while the bolus is in progress to cancel your bolus, as shown in the screenshot below.  (Newer versions of Loop explicitly state: Tap to Stop on this line.) The amount bolused shown in this display is based on time.  Loop reconciles the bolus amount with messages received from the pump once the bolus completes.
 
 ![Bolus cancel status indicator](img/bolus-status-line-cancel.svg){width="300"}
 {align="center"}
 
+If you see a 'pump is suspended notice' in the bolus status line after cancelling your bolus, just tap on it to resume pump operations.
 
 ## Bolus Failure Notifications
 
@@ -49,6 +53,6 @@ If an "uncertain" delivery is not resolved:
 
 * Make sure the RileyLink compatible device is communicating properly
 * With Omnipod, you can execute a [Read Pod Status](../loop-settings/pump-commands.md#read-pod-status) to ensure communication with the pod is working
-* [Close Loop](https://support.apple.com/en-us/HT201330) (quit the app) and restart it. (Note - this is different from a power cycle of the phone which remembers settings within an app which was running before the power cycle.)
+* [Quit the Loop app](https://support.apple.com/en-us/HT201330) and restart it. (Note - this is different from a power cycle of the phone which remembers settings within an app which was running before the power cycle.)
 
 If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then [post](../../index.md#stay-in-the-loop) on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.
