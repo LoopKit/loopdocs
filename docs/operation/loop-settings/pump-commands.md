@@ -76,7 +76,7 @@ This line is the basal and bolus insulin delivered by the Pod since the cannula 
 
 This section contains commands the typical user will use.
 
-#### Suspend Delivery
+### Suspend Delivery
 
 This command will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, all insulin delivery stops indefinitely and the display changes to say `Resume Delivery`. (If the display does not update, tap the refresh screen icon at the top of the screen to the right of the Pod image.)
 
