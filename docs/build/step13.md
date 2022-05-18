@@ -154,7 +154,7 @@ Note - if you know your Personal Team ID, you can enter it as directed in [Signi
 1. You must remove additional capabilities, the complete list is:
     * **Loop Target:** Push Notifications; Siri and **Time Sensitive Notifications**
     * **Watch App Extension Target:** Siri
-1. Add the keyword `SIRI DISABLED` to the LoopConfigOverride.xcconfig file
+1. Add the keyword `SIRI_DISABLED` to the LoopConfigOverride.xcconfig file
     * Examine the file and find the line that starts with `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
     * Insert the new keyword (separated by a space) any where after `$(inherited)` and before the slashes near the end of the line
 
