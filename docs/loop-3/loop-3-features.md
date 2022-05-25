@@ -3,40 +3,42 @@
 This page discusses updated versions of Loop features as well as new capabilities provided with Loop-dev.
 
 !!! info "Loop-dev Displays"
-    One thing you may notice on some screens is the primary button with associated information message is always visible at the bottom of even small screens.  You may need to scroll to see intermediate rows. 
+    One thing you may notice on some screens is the primary button, with associated information message, is always visible at the bottom of even small screens.  You may need to scroll to see intermediate rows. 
     
-    For example, if the default action on a bolus screen is to deliver the recommended bolus, that button is visible and active and the position of that button does not move as the screen is scrolled up and down. When you make changes to selections, then the information displayed and the button label updates to reflect the action that will be taken when you tap on the button.
+    For example, if the default action on a bolus screen is to deliver the recommended bolus, that button is visible and active. The button remains fixed as other portions of the screen are scrolled up and down. When you make changes to selections, then the information displayed and the button label updates to reflect the action taken if you tap on the button.
     
-    There are other screens, like the Onboarding and Therapy Settings screens where you should read all the provided information.  Those screens require you to scroll to the bottom before being able to hit `Continue` or `Save`.
+    There are other screens, like the Onboarding and Therapy Settings screens, where you should read all the provided information.  Those screens require you to scroll to the bottom before being able to hit `Continue` or `Save`.
 
 
 ## Carb Data Source
 
-There were many instances with prior versions of Loop where a user would use a "food" app that stored information in Apple Health, not realizing that Loop would read that entry and start adjusting insulin delivery.
+In prior versions of Loop, sometimes a user saved carbs with a "food" app that wrote to Apple Health, not realizing that if Loop had read permission, Loop adjusted insulin delivery to accommodate that carb entry.
 
-To avoid this problem, Loop-dev is designed with a separate carbohydrate storage system that does not rely on Apple Health.  Loop still writes carbohydrate entries to Apple Health but it does not read carbohydrate entries from Apple Health.
+To avoid this problem, Loop-dev has a separate carbohydrate storage system. Loop still writes carbohydrate entries to Apple Health but it does not read non-Loop carbohydrate entries from Apple Health.
 
 There are some experienced loopers who want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works.  This code customization option is discussed in zulipchat.
 
 ## Non-Pump Insulin
 
-There are times when a looper needs to let Loop know they have taken insulin from a different source. The instruction with Loop 2.2.x was to manually enter the dose into the Apple Health app for Insulin and Loop would import that value.
+If insulin is taken from a different source and the user wants to let Loop know, there is a new method in Loop-dev.
 
-With Loop-dev, the "old" method still works, but there is a new method for entering this information that provides the user with updated `Glucose` predictions based on that dose and enables the user to indicate the type of insulin taken so that the appropriate model is used by Loop.
+With Loop 2.2.x, the user manually entered the Insulin dose into the Apple Health app. Loop then imported that value.
+
+With Loop-dev, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
 
 !!! warning "Enter non-pump insulin before carbs"
-    If you are planning to enter non-pump insulin to cover carbs and you do NOT want Loop to automatically start increasing insulin based on the carb entry, it is suggested you add the non-pump insulin first and then add the carbs.
+    If you are planning to enter non-pump insulin to cover carbs and you do NOT want Loop to automatically start increasing insulin based on the carb entry, enter the non-pump insulin first and then add the carbs.
     
-    To find out what Loop would recommend, without actually dosing with Loop:
+    To find out what Loop recommends, without actually dosing with Loop:
     
     * Wait for a CGM entry (or fingerstick) to appear in the HUD
     * Enter the carbs and continue to the bolus screen, i.e., do not save carbs
     * Note the recommended bolus, but do not actually bolus
     * Back up to the carb entry screen and `Cancel`
-    * Go to the non-pump insulin screen and enter bolus amount, adjusted as you desire - especially important if your non-pump insulin is a different model
+    * Go to the non-pump insulin screen and enter bolus amount, adjust as you desire - especially important if your non-pump insulin is a different model
     * Add the carb entry and save carbs without bolusing
 
-1. By tapping on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen, the Insulin Delivery Screen is displayed with 3 tabs.
+1. Tap on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen to display the Insulin Delivery Screen. This screen has 3 tabs.
     * **Event History** (default) is the same as for Loop 2.2.x
     * **Reservoir** is similar to Loop 2.2.x; however, the reservoir value from a prior pod is not displayed after a new pod is applied
     * **Non-Pump Insulin** is a new feature with Loop-dev
@@ -50,7 +52,7 @@ With Loop-dev, the "old" method still works, but there is a new method for enter
         * Picker wheel allows other insulin models to be selected
         * _At the current time, no model is in place for Afrezza (but you can customize your code to add it)_
     * Tap on the `Bolus` row (blue dash-dot lines) to bring up a keyboard
-        * As a value is entered using the keyboard, the `Glucose` prediction chart updates automatically
+        * The `Glucose` prediction chart updates automatically based on the value entered in the Bolus row
         * Tip, add 0.001 to the actual dose to make it easier to see if reviewing in Apple Health
         * Once the user selects `Done` on the keyboard display, the entered value is displayed on the `Bolus` row and the `Log Dose` button changes from gray to blue
         * Tap on `Log Dose` to record or `Cancel` to quit
@@ -60,7 +62,7 @@ With Loop-dev, the "old" method still works, but there is a new method for enter
 
 ## Bolus Entry
 
-The bolus following carbs (`Meal Bolus`) and manual bolus (`Bolus`) screens are updated from Loop 2.2.x. There is still a predicted `Glucose` chart that actively updates as the bolus value is updated and various buttons. 
+The bolus following carbs (`Meal Bolus`) and manual bolus (`Bolus`) screens are updated from Loop 2.2.x version. There is still a predicted `Glucose` chart that actively updates as the bolus value is updated and various buttons. 
 
 * With Loop 2.2.x
     * The Recommended Bolus is provided but the default for the Bolus value is 0
@@ -86,7 +88,7 @@ Some people reported issues with the overlap between buttons and the keyboard fo
 
 In the graphic below, the user enters carbs and taps continue to display the Meal Bolus screen.
 
-* The left graphic shows a case where a bolus is recommended - tapping on the `Save and Deliver` button will save the carbs and deliver the bolus
+* The left graphic shows a case where a bolus is recommended - tapping on the `Save and Deliver` button saves the carbs and delivers the bolus
 * The right graphic shows a case where no bolus is recommended - tapping on the `Save without Bolusing` saves the carbs
 * Note that these graphics are taken from a small phone - the left graphic shows all the information at once whereas the right graphic has an extra information message that requires the user to scroll to see the `Recommended Bolus` and `Bolus` rows
 * For both graphics
@@ -99,23 +101,23 @@ In the graphic below, the user enters carbs and taps continue to display the Mea
 ![meal bolus when bolus is recommended on left and not recommended on right](img/loop-3-meal-bolus-rec.svg){width="900"}
 {align="center"}
 
-If a CGM entry arrives while in this screen, a **Bolus Recommendation Updated** [modal message](onboarding.md##what-is-a-modal-alert) will be displayed and must be acknowledged.
+If a CGM entry arrives while in this screen, a **Bolus Recommendation Updated** [modal message](onboarding.md#what-is-a-modal-alert) will be displayed and must be acknowledged.
 
 #### Modify Bolus
 
 This section is a continuation of the information presented in the [Accept Recommendation](#accept-recommendation) portion of the `Meal Bolus` section. In the graphic below, the user overrides the recommended bolus.
 
-* The left side shows where the user decreased the recommended bolus
-* The right side shows where the user increased the recommended bolus
-* Note that the `Glucose` prediction graph for each was updated based off the `Bolus` value, giving the user the opportunity to accept or change their proposed value before tapping `Save and Deliver`
-* At the next Loop cycle, the app will modify insulin delivery based on the saved information
-    * For the example where the user decreased the bolus compared to the recommended amount:
+* The left side shows a modified bolus less than the recommended bolus
+* The right side shows a modified bolus greater than the recommended bolus
+* Note that the `Glucose` prediction graph updates based off the `Bolus` value, giving the user the opportunity to accept or change their proposed value before tapping `Save and Deliver`
+* At the next Loop cycle, the app modifies insulin delivery based on the saved information
+    * For the example with bolus less than recommended amount:
         * Loop will **NOT** begin to automatically increase insulin delivery until the current glucose is above the bottom of the `Correction` range
-        * The recommendation to add insulin when the current glucose is below the `Correction Range` is only offered as a manual feature and is limited to an amount that should keep the user above the `Safety Threshold`
-    * For the example where the user increased the bolus compared to the recommend amount:
+        * The recommendation to add insulin when the current glucose is below the `Correction Range` is only offered as a manual feature and is limited to an amount predicted to maintain glucose above the `Safety Threshold`
+    * For the example with bolus greater than recommended amount:
         * Loop will probably issue an automatic temp basal of 0 U/hr
-        * This is a common scenario where a user decides to "borrow" some basal now for the meal bolus to limit post meal spikes
-* Remember - the `Glucose` prediction is what would happen if you `Save and Deliver` and then no further adjustments are made to insulin delivery by Loop
+        * This is a common "super-bolus" scenario; in other words, "borrow" basal for the meal bolus to limit post meal spikes
+* Remember - the `Glucose` prediction is what happens if you `Save and Deliver` and then no further adjustments are made to insulin delivery by Loop
 
 ![meal bolus when bolus recommended is decreased on left and increased on right](img/loop-3-meal-bolus-mod-rec.svg){width="900"}
 {align="center"}
@@ -127,7 +129,7 @@ When the `Bolus` screen is entered direct from the toolbar, the button choices a
 
 There are other errors messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop-dev Displays](loop-3-displays.md) page.
 
-The two graphics below are from selecting manual bolus from the toolbar. 
+The two graphics below are examples of manual bolus screens. 
 
 * In the first graphic, no bolus was recommended
     * If you tap on the `Enter Bolus` button at the bottom, it brings up a screen to enable you to type in an amount and then `Deliver` it. 
