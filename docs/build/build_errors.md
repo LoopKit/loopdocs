@@ -94,6 +94,26 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ## Specific Error Messages
 
+### Package.resolved file corrupted or malformed
+
+**Error Message:**
+
+_Package.resolved file is corrupted or malformed; fix or delete the file to continue: unsupported schema version 2_
+
+![package corrupted or malformed error](img/xcode-needs-to-be-updated.jpeg){width="600"}
+
+
+This error is new with Loop-dev, which uses Package Dependencies.
+
+There are 2 problems shown here
+
+1. The graphic was acquired using a camera instead of following these [screenshot directions](#screenshots)
+2. The version of Xcode is out of date
+
+**Solution:**
+
+Update Xcode, which may require you to update macOS.
+
 ### Couldn't Get Revision for Package Dependency
 
 This error is new with Loop-dev, which uses Package Dependencies.
