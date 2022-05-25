@@ -2,6 +2,13 @@
 
 This page discusses updated versions of Loop features as well as new capabilities provided with Loop-dev.
 
+!!! info "Loop-dev Displays"
+    One thing you may notice on some screens is the primary button with associated information message is always visible at the bottom of even small screens.  You may need to scroll to see intermediate rows. 
+    
+    For example, if the default action on a bolus screen is to deliver the recommended bolus, that button is visible and active and the position of that button does not move as the screen is scrolled up and down. When you make changes to selections, then the information displayed and the button label updates to reflect the action that will be taken when you tap on the button.
+    
+    There are other screens, like the Onboarding and Therapy Settings screens where you should read all the provided information.  Those screens require you to scroll to the bottom before being able to hit `Continue` or `Save`.
+
 
 ## Carb Data Source
 
@@ -15,7 +22,19 @@ There are some experienced loopers who want to modify the code to enable Loop to
 
 There are times when a looper needs to let Loop know they have taken insulin from a different source. The instruction with Loop 2.2.x was to manually enter the dose into the Apple Health app for Insulin and Loop would import that value.
 
-With Loop-dev, the "old" method still works, but there is a new method for entering this information that provides the user with updated `Glucose` predictions based on that dose and enables the user to indicate the type of insulin taken so that the appropriate model is used by Loop.  
+With Loop-dev, the "old" method still works, but there is a new method for entering this information that provides the user with updated `Glucose` predictions based on that dose and enables the user to indicate the type of insulin taken so that the appropriate model is used by Loop.
+
+!!! warning "Enter non-pump insulin before carbs"
+    If you are planning to enter non-pump insulin to cover carbs and you do NOT want Loop to automatically start increasing insulin based on the carb entry, it is suggested you add the non-pump insulin first and then add the carbs.
+    
+    To find out what Loop would recommend, without actually dosing with Loop:
+    
+    * Wait for a CGM entry (or fingerstick) to appear in the HUD
+    * Enter the carbs and continue to the bolus screen, i.e., do not save carbs
+    * Note the recommended bolus, but do not actually bolus
+    * Back up to the carb entry screen and `Cancel`
+    * Go to the non-pump insulin screen and enter bolus amount, adjusted as you desire - especially important if your non-pump insulin is a different model
+    * Add the carb entry and save carbs without bolusing
 
 1. By tapping on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen, the Insulin Delivery Screen is displayed with 3 tabs.
     * **Event History** (default) is the same as for Loop 2.2.x
@@ -29,7 +48,7 @@ With Loop-dev, the "old" method still works, but there is a new method for enter
     * The default insulin type is that used by the pump
     * To modify Insulin Type, tap on that row (red dashed lines)
         * Picker wheel allows other insulin models to be selected
-        * _At the current time, no model is in place for Afrezza_
+        * _At the current time, no model is in place for Afrezza (but you can customize your code to add it)_
     * Tap on the `Bolus` row (blue dash-dot lines) to bring up a keyboard
         * As a value is entered using the keyboard, the `Glucose` prediction chart updates automatically
         * Tip, add 0.001 to the actual dose to make it easier to see if reviewing in Apple Health
@@ -56,25 +75,72 @@ The bolus following carbs (`Meal Bolus`) and manual bolus (`Bolus`) screens are 
 
 ### Meal Bolus Screen
 
-When the `Meal Bolus` screen is entered following a carb entry or edit action, the active button might be `Save and Bolus` or, if no bolus was recommended, `Save without Bolusing`. 
+When the `Meal Bolus` screen is entered following a carb entry or edit action, the active button might be `Save and Bolus` or, if no bolus was recommended, `Save without Bolusing`. The `Save` refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen.
 
-Some people reported issues with the overlap between buttons and the keyboard for the `Meal Bolus` screen when choosing an option other than `Save and Bolus`.
+Some people reported issues with the overlap between buttons and the keyboard for the `Meal Bolus` screen when choosing an option other than the default.
 
-* This interface might be modified, so graphics have not been prepared
 * There are several topic threads in zulipchat
+* There may be an option added to allow you to save directly from the carb screen and skip the meal bolus screen for that case - but that is not yet available
+
+#### Accept Recommendation
+
+In the graphic below, the user enters carbs and taps continue to display the Meal Bolus screen.
+
+* The left graphic shows a case where a bolus is recommended - tapping on the `Save and Deliver` button will save the carbs and deliver the bolus
+* The right graphic shows a case where no bolus is recommended - tapping on the `Save without Bolusing` saves the carbs
+* Note that these graphics are taken from a small phone - the left graphic shows all the information at once whereas the right graphic has an extra information message that requires the user to scroll to see the `Recommended Bolus` and `Bolus` rows
+* For both graphics
+    * Active Carbs and Active Insulin are displayed above the `Glucose` prediction graph - these are accurate at the time this screen is entered (before carbs or bolus are saved)
+    * The Bolus Summary is presented below the `Glucose` prediction graph with three rows:
+        * `Carb Entry`, the proposed carbs with the time to add the carbs and the absorption time displayed - to modify that information, tap on the `< Carb Entry` button at upper left
+        * `Recommended Bolus` displays what Loop recommends for that proposed `Carb Entry`
+        * `Bolus` default display is what Loop recommends, but user can edit that value
+
+![meal bolus when bolus is recommended on left and not recommended on right](img/loop-3-meal-bolus-rec.svg){width="900"}
+{align="center"}
+
+If a CGM entry arrives while in this screen, a **Bolus Recommendation Updated** [modal message](onboarding.md##what-is-a-modal-alert) will be displayed and must be acknowledged.
+
+#### Modify Bolus
+
+This section is a continuation of the information presented in the [Accept Recommendation](#accept-recommendation) portion of the `Meal Bolus` section. In the graphic below, the user overrides the recommended bolus.
+
+* The left side shows where the user decreased the recommended bolus
+* The right side shows where the user increased the recommended bolus
+* Note that the `Glucose` prediction graph for each was updated based off the `Bolus` value, giving the user the opportunity to accept or change their proposed value before tapping `Save and Deliver`
+* At the next Loop cycle, the app will modify insulin delivery based on the saved information
+    * For the example where the user decreased the bolus compared to the recommended amount:
+        * Loop will **NOT** begin to automatically increase insulin delivery until the current glucose is above the bottom of the `Correction` range
+        * The recommendation to add insulin when the current glucose is below the `Correction Range` is only offered as a manual feature and is limited to an amount that should keep the user above the `Safety Threshold`
+    * For the example where the user increased the bolus compared to the recommend amount:
+        * Loop will probably issue an automatic temp basal of 0 U/hr
+        * This is a common scenario where a user decides to "borrow" some basal now for the meal bolus to limit post meal spikes
+* Remember - the `Glucose` prediction is what would happen if you `Save and Deliver` and then no further adjustments are made to insulin delivery by Loop
+
+![meal bolus when bolus recommended is decreased on left and increased on right](img/loop-3-meal-bolus-mod-rec.svg){width="900"}
+{align="center"}
 
 
 ### Manual Bolus Screen
 
-When the `Bolus` screen is entered direct from the toolbar, the button choices are `Enter Bolus` if none is recommended, `Deliver` if a value is on the `Bolus` row or `Cancel`. The user can also tap on the value on the `Bolus` row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
+When the `Bolus` screen is entered direct from the toolbar, the button choices are `Enter Bolus` if none is recommended, `Deliver` if a value is on the `Bolus` row or `Cancel` using the button on the upper left. The user can also tap on the value on the `Bolus` row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
 
-The two graphics below are from entering selecting manual bolus from the toolbar. 
+There are other errors messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop-dev Displays](loop-3-displays.md) page.
 
-* In the first graphic, no bolus was recommended 
-* In the second graphic, a recommended amount is shown
+The two graphics below are from selecting manual bolus from the toolbar. 
+
+* In the first graphic, no bolus was recommended
+    * If you tap on the `Enter Bolus` button at the bottom, it brings up a screen to enable you to type in an amount and then `Deliver` it. 
+    * Alternatively, you can tap the `0` amount in the `Bolus` row and perform the same action as the `Enter Bolus` button
+    * If you do not want to override the recommendation, hit the `Cancel` button at upper left.
 
 ![manual bolus when no bolus recommended](img/loop-3-manual-bolus-no-rec.svg){width="350"}
 {align="center"}
+
+* In the second graphic, a recommended amount is shown
+    * If you tap on `Deliver` that recommended dose is delivered
+    * If you tap on the value on the `Bolus` row, you can override the amount
+    * The amount displayed on the `Bolus` row is modified to 0 U with the first tap - at that point, you may enter a new value or tap `Cancel` using the button at upper left of the screen
 
 ![manual bolus when bolus is recommended](img/loop-3-manual-bolus-rec.svg){width="350"}
 {align="center"}
