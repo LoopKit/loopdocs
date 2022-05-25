@@ -100,6 +100,9 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 _Package.resolved file is corrupted or malformed; fix or delete the file to continue: unsupported schema version 2_
 
+![package corrupted or malformed error](img/xcode-needs-to-be-updated.jpeg){width="600"}
+
+
 This error is new with Loop-dev, which uses Package Dependencies.
 
 There are 2 problems shown here
