@@ -4,7 +4,7 @@ The new features added with each Loop release (starting with Loop version 2.0) a
 
 ## Current Release
 
-The current released version for Loop master is v2.2.8. The dates and contents for Loop releases from v2.0 through v2.2.8 are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for Loop master is v2.2.9. The dates and contents for Loop releases from v2.0 through v2.2.9 are summarized below in reverse chronological order (so newest release information comes first).
 
 !!! warning "Check Current Release Status"
 
@@ -19,12 +19,18 @@ The current released version for Loop master is v2.2.8. The dates and contents f
     ![Determine current app version on app settings screen](img/app_version.svg){width="400"}
     {align="center"}
 
+### Loop v2.2.9
+
+This release updates Loop to handle Dexcom Share server changes for how glucose trend is parsed. Dexcom used to provide integers that mapped to the meaning for the arrows.  They changed that to strings, like "Flat" or "FortyFiveUp".
+
+This is now the new master, so you build it using the standard updating procedure [Build Updating](../build/updating.md).
+
+Loop v2.2.9 was released on April 4, 2022.
+
 
 ### Loop v2.2.8
 
 This is a hotfix (no features were modified in the Loop app) to enable the app to be built with Xcode 13.3.
-
-This is now the new master, so you build it using the standard updating procedure [Build Updating](../build/updating.md).
 
 Loop v2.2.8 was released on March 16, 2022.
 
