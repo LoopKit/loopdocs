@@ -2,6 +2,13 @@
 
 To bring up the Pod/Pump Settings display, tap on the reservoir icon in the Heads Up Display or the image of the pump in the Loop settings screen.
 
+!!! note "Omnipod Eros vs DASH"
+    With the addition of DASH pods with Loop-dev, you will notice all reference to Eros pods continue to say Omnipod in both the documentation and the code.
+
+    Documentation and screens in the app indicate DASH explicitly.
+
+    Click this link to learn about [Omnipod DASH Commands](../../loop-3/dash-pump.md)
+
 ## Change Time Zone
 
 The basal rates stay at the pump time even if the user and their phone change time zones or when daylight savings time occurs.  To bring the pump into the same time zone as the phone, use this command in Loop. (Medtronic users - do NOT adjust time on your pump - always go through Loop.)
