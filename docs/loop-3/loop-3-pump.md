@@ -4,12 +4,18 @@ The pump configuration can be selected from the Heads-Up-Display ([HUD](loop-3-d
 
 ## Add Pump
 
+The HUD will look like the graphic below if no CGM or Pump is configured for Loop:
+
+![Loop HUD when both CGM and Pump have not been added](img/loop-3-hud-add-cgm-add-pump.svg){width="350"}
+{align="center"}
+
 If no pump has been configured, the user has a choice of 3 pumps and a simulator:
 
 * Minimed 500/700 Series
 * Omnipod
 * Omnipod DASH
 * Insulin Pump Simulator
+
 
 For all pumps, there is now an new selection option prior to adding the pump:
 
@@ -30,7 +36,10 @@ If an Omnipod DASH pod has been configured, tapping on the pump icon leads to th
 
 You must first delete the old pump before you can switch to a new pump type.
 
-If you are using Pods, you must first deactivate your current pod.  After the pod has been deactivated, a new row will show at the bottom of the pod setting screen. Tap on `Switch to other insulin delivery device`. The HUD will now show the add pump icon and you can [select a new pump](#add-pump).
+If you are using Pods, you must first deactivate your current pod.  After the pod has been deactivated, a new row will show at the bottom of the pod setting screen. Tap on `Switch to other insulin delivery device` and follow the directions to complete the task. The HUD will now show the add pump icon and you can [select a new pump](#add-pump).
+
+
+
 
 
 ## Add DASH Pod

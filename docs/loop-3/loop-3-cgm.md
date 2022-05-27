@@ -4,6 +4,11 @@ The CGM configuration can be selected from the Heads-Up-Display ([HUD](loop-3-di
 
 ## Add CGM
 
+The HUD will look like the graphic below if no CGM or Pump is configured for Loop:
+
+![Loop HUD when both CGM and Pump have not been added](img/loop-3-hud-add-cgm-add-pump.svg){width="350"}
+{align="center"}
+
 With Loop-dev, the user has a new option for CGM, [Nightscout Remote CGM](#nightscout-remote-cgm), in addition to those available with Loop 2.x.x. The Dexcom G4 is no longer available, so is no longer supported by Loop-dev.
 
 * CGM that reside on the same phone (internet not required)
