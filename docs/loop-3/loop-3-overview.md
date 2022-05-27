@@ -1,4 +1,4 @@
-# Overview
+# Loop 3 Overview
 
 
 Loop 3.0 will be the next big release. It is being developed and tested under the dev branch (Loop-dev). Loop-dev has significant improvements and looks different (in some ways) from the Loop 2.2.x versions.
