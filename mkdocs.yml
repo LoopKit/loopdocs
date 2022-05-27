@@ -41,7 +41,7 @@ plugins:
 nav:
 - Home: 'index.md'
 - Build App:
-    - Overview: 'build/overview.md'
+    - 'Build Overview': 'build/overview.md'
     - 'Step 1 Compatible Computer': 'build/step1.md'
     - 'Step 2 Compatible iPhone/iPod touch': 'build/step2.md'
     - 'Step 3 Compatible Pump': 'build/step3.md'
@@ -59,8 +59,8 @@ nav:
     - 'Customize your Loop': 'build/code_customization.md'
     - 'Updating/Rebuilding your Loop': 'build/updating.md'
     - 'LoopWorkspace': 'build/loopworkspace.md'
-- Set up App:
-    - 'Overview': 'operation/overview.md'
+- Set Up App:
+    - 'Set Up Overview': 'operation/overview.md'
     - 'Step 1: Health Permissions': 'build/health.md'
     - 'Step 2: Add Pump':
         - 'Add Medtronic': 'operation/loop-settings/mdt-pump.md'
@@ -88,12 +88,12 @@ nav:
         - 'Closed Loop': 'operation/loop/close-loop.md'
         - 'Loop Tips': 'operation/loop/looptips.md'
     - Algorithm:
-        - 'Overview': 'operation/algorithm/overview.md'
+        - 'Algorithm Overview': 'operation/algorithm/overview.md'
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
         - 'Glucose Prediction': 'operation/algorithm/prediction.md'
         - 'Temp Basal Adjustments': 'operation/algorithm/temp-basal.md'
     - Troubleshoot:
-        - 'Overview': 'troubleshooting/overview.md'
+        - 'Troubleshooting Overview': 'troubleshooting/overview.md'
         - 'Loop App crashes': 'troubleshooting/loop-crashing.md'
         - 'Red Loop': 'troubleshooting/yellow-red-loop.md'
         - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
@@ -101,16 +101,16 @@ nav:
         - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
         - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
 - Loop 3:
-    - 'Overview': 'loop-3/loop-3-overview.md'
-    - 'Onboarding': 'loop-3/onboarding.md'
-    - 'Displays': 'loop-3/loop-3-displays.md'
-    - 'Settings': loop-3/loop-3-settings.md
-    - 'Features': loop-3/loop-3-features.md
-    - 'Add CGM': 'loop-3/loop-3-cgm.md'
-    - 'Add Pump': 'loop-3/loop-3-pump.md'
-    - 'DASH Pump': loop-3/dash-pump.md
+    - 'Loop 3 Overview': 'loop-3/loop-3-overview.md'
+    - 'Loop 3 Onboarding': 'loop-3/onboarding.md'
+    - 'Loop 3 Displays': 'loop-3/loop-3-displays.md'
+    - 'Loop 3 Settings': loop-3/loop-3-settings.md
+    - 'Loop 3 Features': loop-3/loop-3-features.md
+    - 'Loop 3 Add CGM': 'loop-3/loop-3-cgm.md'
+    - 'Loop 3 Add Pump': 'loop-3/loop-3-pump.md'
+    - 'Loop 3 DASH Pump': loop-3/dash-pump.md
 - Nightscout:
-    - 'Overview': 'nightscout/overview.md'
+    - 'Nightscout Overview': 'nightscout/overview.md'
     - 'Brand New NS': 'nightscout/new_user.md'
     - 'Retrofit Existing NS': 'nightscout/update_user.md'
     - 'Setup Troubleshooting': 'nightscout/troublehoot.md'
