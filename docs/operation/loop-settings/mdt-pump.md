@@ -37,7 +37,8 @@ Let’s start by clicking on the Loop Settings button in the tool bar at the bot
 Continue with these steps to connect your Medtronic pump to Loop.  
 
 1. Make sure your RileyLink is turned on and nearby, then you will see a RileyLink listed in this area of the settings.  Actually, you will see a list of any RileyLinks that are in the nearby area. Slide on the toggle for just one RileyLink.
-2. Add your pump's region, color, and serial number.
+2. Add your pump's region, color, and serial number. 
+    * Note that some Canadian pumps use `CM` instead of `CA` for the region code.  Just select `CA` in the dropdown menu.
 3. Click the `Continue` button to finish the addition of your pump.
 <br/><br/>
 
