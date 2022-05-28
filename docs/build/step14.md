@@ -82,14 +82,20 @@ Next you are asked which version of Loop you would like to build. Type 1 and hit
 ![choose which Loop to build](img/build-select-06.png){width="750"}
 {align="center"}
 
-!!! warning "If you see errors like these . . ."
+#### XCode Errors with Build-Select
+
+!!! warning "WARNINGS"
+
+    If you see errors like these . . .
 
     * `xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
     * `xcode-select: Failed to locate 'git', requesting installation of command line developer tools`
     * `xcode-select: error: tool 'xed' requires Xcode`
-    * You missed one of these steps:
-        * [Build Step 8: Install Xcode](step8.md)
-        * [Build Step 9: Xcode command line tools](step9.md)
+
+    You missed one of these steps:
+
+    * [Build Step 8: Install Xcode](step8.md)
+    * [Build Step 9: Xcode command line tools](step9.md)
 
 
 This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. You do not need to understand the definitions for enumeration or submodule or cloning.  You only need to review the display to look for any errors after the download is finished. The download starts out with the enumeration of all the submodules that will be downloaded. This is followed by a cloning step for each submodule. The cloning for the first module is included in the first graphic.
