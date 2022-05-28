@@ -2238,17 +2238,19 @@
 <p align="center"><img alt="choose to build Loop" src="../img/build-select-05.png" width="750" /></p>
 <p>Next you are asked which version of Loop you would like to build. Type 1 and hit the ENTER key to build the Master Branch (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.</p>
 <p align="center"><img alt="choose which Loop to build" src="../img/build-select-06.png" width="750" /></p>
+<h4 id="xcode-errors-with-build-select">XCode Errors with Build-Select<a class="headerlink" href="#xcode-errors-with-build-select" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition warning">
-<p class="admonition-title">If you see errors like these . . .</p>
+<p class="admonition-title">WARNINGS</p>
+<p>If you see errors like these . . .</p>
 <ul>
 <li><code>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</code></li>
 <li><code>xcode-select: Failed to locate 'git', requesting installation of command line developer tools</code></li>
 <li><code>xcode-select: error: tool 'xed' requires Xcode</code></li>
-<li>You missed one of these steps:<ul>
+</ul>
+<p>You missed one of these steps:</p>
+<ul>
 <li><a href="../step8/">Build Step 8: Install Xcode</a></li>
 <li><a href="../step9/">Build Step 9: Xcode command line tools</a></li>
-</ul>
-</li>
 </ul>
 </div>
 <p>This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. You do not need to understand the definitions for enumeration or submodule or cloning.  You only need to review the display to look for any errors after the download is finished. The download starts out with the enumeration of all the submodules that will be downloaded. This is followed by a cloning step for each submodule. The cloning for the first module is included in the first graphic.</p>
