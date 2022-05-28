@@ -1,8 +1,39 @@
 # Open-Loop
 
-Open-loop is a great place to start with Loop. When you are operating in open-loop mode, Loop is offering recommendations for insulin delivery adjustment and will display them on the main screen.  The recommendations will not be enacted unless you specifically choose to enact it (tap on the recommendation on the [HUD](../loop-settings/displays.md#heads-up-display) to enact it - phone must be held in portrait orientation).  Usually in open-loop mode, you aren't really enacting the recommended basals but instead watching how the recommendations come in and figuring out WHY they are being recommended.
+Open-loop is a great place to start with Loop.
 
-It is understandable to want to jump straight away into close-loop mode, but a lot can be learned by watching Loop operate in open mode.  Becoming familiar with the algorithm can be easier by watching it in action rather than only reading about it in docs.
+It is understandable to want to jump straight away into closed-loop mode, but a lot can be learned by watching Loop operate in open mode. The `Closed Loop` switch is disabled by default.  Becoming familiar with the algorithm can be easier by watching it in action rather than only reading about it in docs. Practice with the user interface.
+
+Speaking of practice, there are simulators available in the app. You can build Loop and practice using it with a simulated CGM and a simulated pump. For even more fidelity, use Dexcom Share or (Loop-dev only) Nightscout as a CGM to follow your own blood sugar and make dosing decisions. You can `dose` the simulated pump and your real pump at the same time and watch the glucose predictions.
+
+
+#### Loop 2.2.x Open Loop
+
+!!! warning "WARNING"
+    In earlier versions of Loop, a debug feature was left active.  This was never intended as a "teaching" tool, however, it was used that way. This capability is not in Loop-dev for safety reasons. It is too easy to tap on an unlocked phone and provide extra insulin inadvertently.
+    
+    When you are operating in open-loop mode, Loop 2.2.x offers recommendations for insulin delivery adjustment and displays them on the main screen. The recommendations are enacted if you tap on the recommendation line on the [HUD](../loop-settings/displays.md#heads-up-display). To protect against enacting accidentally, make sure your phone is locked when not in use.
+
+### Open Loop
+
+While running in open loop mode, you should pay attention to the glucose prediction line. If the predictions don't make sense, do not enable `Closed Loop`. You may need to adjust settings or  learn more about how the app works. Loop tries to keep you in your correction range but also wants to keep you above your glucose safety level (`suspend threshold` in Loop 2.2.x). 
+
+There's a lot to learn and understand. Take the time you need so you can safely use Loop. If the meal bolus and manual correction suggestions that Loop makes are not consistent with your manual pumping experience, take the time to adjust your settings.  Typically, new loopers need to adjust (1) Basal Rates and then (2) Insulin Sensitivity Factor and finally (3) Carb Ratios. Using an algorithm that updates glucose predictions and adjusts insulin delivery every 5 minutes requires more fidelity for those settings than manual pumping. The meal entry in terms of carbs and absorption time is also a new skill that takes time to understand.
+
+* Meal Entry:
+    * In Loop, you enter carbs and then are taken to a meal bolus screen at which you can save the carbs or save the carbs and bolus
+    * [Link for Loop 2.2.x Meal Entry](../features/carbs.md)
+    * If running Loop-dev, understand the link for Loop 2.2.x Meal Entry (above) and then review the [Meal Bolus](../../loop-3/loop-3-features.md#meal-bolus-screen) features that are updated
+    * You should investigate entering a Meal to understand the interface and examine the recommended bolus for that meal
+        * Does the recommendation make sense to you based on your prior experience
+        * Practice modifying when the carbs are expected and how long they are expected to last
+        * Practice modifying the bolus recommendation
+        * When you are confident, then you can deliver the bolus manually
+
+* Manual Correction:
+    * The manual correction suggested by Loop is based on the glucose prediction line, your glucose safety limit, your correction range and your Settings
+    * [Link for Loop 2.2.x Manual Bolus](../features/bolus.md)
+    * [Link for Loop 3 Manual Bolus](../../loop-3/loop-3-features.md#manual-bolus-screen)
 
 ## Testing
 
@@ -24,7 +55,7 @@ Probably the next most difficult transition involves using carb absorption as a 
 
 ## Troubleshooting
 
-Get used to carrying the RileyLink around.  Find how far your connectivity stretches before you have pump communication problems.  Get used to [troubleshooting yellow and red loops](../../troubleshooting/yellow-red-loop.md), finding out the pattern/cause of any potential loop issues.  You'll be less frustrated starting on closed loop if you aren't dealing with learning new electronics at the same time as you are learning carb absorption times in a closed loop.
+Get used to carrying the RileyLink around. DASH Omnipod users do not need the RileyLink, but should determine how far the phone can be from the pod. Find how far your connectivity stretches before you have pump communication problems.  Get used to [troubleshooting yellow and red loops](../../troubleshooting/yellow-red-loop.md), finding out the pattern/cause of any potential loop issues.  You'll be less frustrated starting on closed loop if you aren't dealing with learning new electronics at the same time as you are learning carb absorption times in a closed loop.
 
 ## Bolus
 
