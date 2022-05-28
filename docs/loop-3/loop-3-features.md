@@ -26,7 +26,9 @@ With Loop 2.2.x, the user manually entered the Insulin dose into the Apple Healt
 
 With Loop-dev, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
 
-!!! warning "Enter non-pump insulin before carbs"
+#### Enter non-pump insulin before carbs
+
+!!! warning "WARNING"
     If you are planning to enter non-pump insulin to cover carbs and you do NOT want Loop to automatically start increasing insulin based on the carb entry, enter the non-pump insulin first and then add the carbs.
     
     To find out what Loop recommends, without actually dosing with Loop:
