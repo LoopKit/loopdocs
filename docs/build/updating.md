@@ -72,7 +72,9 @@ Now that you have updated your macOS, you should have the ability to see the mos
 
 If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.
 
-!!! warning "Missing Xcode or Command Line Tools"
+#### Missing Xcode or Command Line Tools
+
+!!! warning "WARNING"
 
     If you fail to have [Xcode](step8.md) or [Xcode Command Line Tools](step9.md) installed, you will get one of these error when you attempt to run the build-select script (or something similar):
 
