@@ -1,14 +1,19 @@
-# Close-Loop
+# Closed-Loop
 
-When you feel like you have learned what you need from open-loop, you should be ready to switch to close-loop.  There are several ways you can help make that transition as smooth as possible.  
+When you feel like you have learned what you need from open-loop, you should be ready to switch to closed-loop.  There are several ways you can help make that transition as smooth as possible.  
 
 ## Timing
 
-Many people choose to transition to close-loop in a step-wise fashion.  Starting close-loop on weekends is an easier starting point so that you can minimize distractions (let's face it...you'll probably be staring at the Loop a lot for those first few days). Typically, people have an easier time transitioning to close-loop for parts of their day that don't involve food...so nighttimes tend to be easier than daytimes to start.
+Many people choose to transition to closed-loop in a step-wise fashion.  Starting closed-loop on weekends is an easier starting point so that you can minimize distractions (let's face it...you'll probably be staring at the Loop a lot for those first few days). Typically, people have an easier time transitioning to closed-loop for parts of their day that don't involve food...so nighttimes tend to be easier than daytimes to start.
 
 ## Maximum Basal Rate
 
-When you are first beginning to close-loop, it is important to be conservative (low) in setting your maximum basal rate.  If your settings are incorrect in other areas (basal rates, carb absorption time, carb ratio, etc), Loop may enact incorrectly aggressive high temp basals.  Gradually increase your maximum basal rate as your comfort and confidence in Loop increase.  Typically, experienced closed loop users set their max basal rate no more than 3-4 times their average basal rate.  
+When you are first beginning closed-loop, it is important to be conservative (low) in setting your maximum basal rate.  If your settings are incorrect in other areas (basal rates, carb absorption time, carb ratio, etc), Loop may enact incorrectly aggressive increases in insulin delivery. So start out with a `Dosing Strategy` of `Temp Basal Only` and limit the maximum basal rate as your comfort and confidence in Loop increase.  Typically, experienced closed loop users set their max basal rate no more than 3-4 times their average basal rate. Only after you are comfortable with the (somewhat slower) correction Loop provides with `Temp Basal Only`, should you transition to `Automatic Bolus`.
+
+!!! info "Temp Basal Only vs Automatic Bolus" 
+    
+    * `Temp Basal Only`: Loop provides no more than 17% of what it predicts you will need and updates the calculation every 5 minutes (using temporary basal)
+    * `Automatic Bolus`: Loop provides 40% of what it predicts you will need as an immediate bolus and updates the calculation in 5 minutes
 
 ## BG targets
 

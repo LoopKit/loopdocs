@@ -71,6 +71,8 @@ nav:
     - 'Loop Displays': 'operation/loop-settings/displays.md'
     - 'RileyLink Display': 'operation/loop-settings/rileylink.md'
 - Operate:
+    - 'Open Loop': 'operation/loop/open-loop.md'
+    - 'Closed Loop': 'operation/loop/close-loop.md'
     - 'Meal Entries': 'operation/features/carbs.md'
     - 'Bolus': 'operation/features/bolus.md'
     - 'Overrides': 'operation/features/workout.md'
@@ -83,10 +85,7 @@ nav:
         - 'iPhone widget': 'operation/features/widget.md'
         - 'Loop Notifications': 'operation/features/notifications.md'
         - 'Pump Battery': 'operation/features/battery.md'
-    - Looping Tips:
-        - 'Open Loop': 'operation/loop/open-loop.md'
-        - 'Closed Loop': 'operation/loop/close-loop.md'
-        - 'Loop Tips': 'operation/loop/looptips.md'
+    - Loop Tips: 'operation/loop/looptips.md'
     - Algorithm:
         - 'Algorithm Overview': 'operation/algorithm/overview.md'
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
