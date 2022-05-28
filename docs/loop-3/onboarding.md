@@ -6,13 +6,15 @@ The first time you build Loop-dev on a device, you will need to go through the o
 
 * If you build Loop-dev over Loop 2.2.x on your device, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build Loop-dev and keep using the same pod.)
 
-* If you build Loop-dev onto a device without an existing Loop app and you have a Nightscout site, you can enter your Nightscout URL (remember to use https: with the "s") and API Secret and it will ask if you want to import your settings from your Nightscout profile. This includes all the overrides you have previously saved.
+* If you build Loop-dev onto a device without an existing Loop app and you have a Nightscout site, you can enter your Nightscout URL (remember to use https: with the "s") and API_SECRET and it will ask if you want to import your settings from your Nightscout profile. This includes all the overrides you have previously saved.
 
 * If you are building on a device that does not have an existing Loop app and you choose not to use Nightscout, then you must add settings (click on the row to edit or + to add a row) as you are taken through each screen.
 
 You are presented with an information screen describing the setting (with a continue button) followed by your current settings (if available), which you must confirm to keep - or can modify and then confirm to change. Depending on the device you are using, you may need to scroll down to see the Continue or Save buttons for each setting. Once you have been walked through all the Therapy Settings, there is a final review and confirm all Therapy Settings screen.
 
-!!! warning "Check Imported Settings"
+#### Check Imported Settings
+
+!!! warning "WARNING"
 
     The new onboarding forces you to check all your imported [Therapy Settings](#therapy-information) but there may be other settings you need to check as well.
 
@@ -76,7 +78,7 @@ The order of Therapy Setting Information is:
 
 Some of the onboarding screens are shown below. Depending on your device resolution, you may need to scroll down to see the entire screen. Only the top portion of any given screen is shown in these graphics.
 
-If you have not already read it, please review the [First Time Using Onboarding](#first-time-using-onboarding) now
+If you have not already read it, please review the [First Time Using Onboarding](#first-time-using-onboarding) now.
 
 
 ### Welcome Screens
