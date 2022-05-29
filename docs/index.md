@@ -65,7 +65,7 @@ Since this is a project used and developed by remotely collaborating volunteers,
   * There is another Facebook group, Loop and Learn, that has a lot of Loop-centric information, a T1D Speaker Series covering many topics of general diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
       * [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
       * [LoopandLearn Website](https://www.loopandlearn.org)
-* The [LoopTips](https://kdisimone.github.io/looptips/) website provides non-build information and is more of a "now that I'm Looping..." resource for how to print endo reports, find Loop data, deal with therapy settings changes, etc. 
+* The [LoopTips](https://loopkit.github.io/looptips/) website provides non-build information and is more of a "now that I'm Looping..." resource for how to print endo reports, find Loop data, deal with therapy settings changes, etc. 
 * Many Loopers use [Nightscout](nightscout/overview.md). Nightscout help can be found in the [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud) Facebook group. 
   * For those not interested in Facebook or interested in what is coming next for Loop, join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the streams or you'll miss some interesting conversations.  
   * Loop has an instagram account @diy.loop where updates are also shared.

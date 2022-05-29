@@ -1,7 +1,7 @@
 # Step 10: Test Settings
 
 !!! info "Time Estimate"
-    - 2 hours to read the rest of LoopDocs (particularly the "Set up App", "Operate", and "FAQ" sections) and [LoopTips](https://kdisimone.github.io/looptips/) thoroughly and thoughtfully
+    - 2 hours to read the rest of LoopDocs (particularly the "Set up App", "Operate", and "FAQ" sections) and [LoopTips](https://loopkit.github.io/looptips/) thoroughly and thoughtfully
     - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to make sure you've familiarized yourself with Loop's expected behavior
     - 1-3 days to test settings for safety and to get the most out of Loop
 
@@ -31,7 +31,13 @@ The Carb Ratio (CR) is the amount of carbs covered by one unit of insulin. Ideal
 
 ## Other Resources
 
-Check [LoopTips.org](https://looptips.org) for a discussion on how to [check all these settings](https://kdisimone.github.io/looptips/settings/settings/) and [why they are important](https://kdisimone.github.io/looptips/settings/overview/). If you’re fascinated by this topic, read the book *'Think Like A Pancreas'* for a really great discussion. Finally, remember settings can change periodically. Hormone cycles, steroids, illness, etc. may lead to a [need to change settings](https://kdisimone.github.io/looptips/settings/adjust/).
+Check the companion site [LoopTips](https://loopkit.github.io/looptips). Several direct links to discussions are provided below:
+
+* How to [check settings](https://loopkit.github.io/looptips/settings/settings/) 
+* [Why settings are important](https://loopkit.github.io/looptips/settings/overview/)
+* [What to do when you need to change settings](https://loopkit.github.io/looptips/settings/adjust/) which covers short term and long term reasons
+
+If you’re fascinated by this topic, read the book *'Think Like A Pancreas'* by Gary Scheiner for a really great discussion.
 
 ## Next Step: Make Plans for Loop Data
 
