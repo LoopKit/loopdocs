@@ -10,7 +10,8 @@ The first time you build Loop-dev on a device, you will need to go through the o
 
 * If you are building on a device that does not have an existing Loop app and you choose not to use Nightscout, then you must add settings (click on the row to edit or + to add a row) as you are taken through each screen.
 
-You are presented with an information screen describing the setting (with a continue button) followed by your current settings (if available), which you must confirm to keep - or can modify and then confirm to change. Depending on the device you are using, you may need to scroll down to see the Continue or Save buttons for each setting. Once you have been walked through all the Therapy Settings, there is a final review and confirm all Therapy Settings screen.
+You are presented with an information screen describing the setting (with a continue button) followed by your current settings (if available), which you must confirm to keep - or can modify and then confirm to change. Depending on the device you are using, you may need to scroll down to see the Continue or Save buttons for each setting. Once you have been walked through all of the Therapy Settings, you review all of the Therapy Settings before saving.
+
 
 #### Check Imported Settings
 
@@ -59,9 +60,9 @@ The order of Therapy Setting Information is:
     * Click on each of the limits: Max Basal and Max Bolus to display the picker wheel
     * You must first move the picker off the default value before it registers - you can restore the picker to the original level once it has been moved
 * Insulin Model
-    * This offers Adult or Child rapid acting models which will later be applied to any of the "rapid acting" insulins, e.g., Novolog, Humalog or Apidra
-    * Later on, during Add pump, you can enter more insulin details
-        * If you use an "ultra rapid" such as Fiasp or Lyumjev you can select the type in your pump menu (there is only a single model for these insulins)
+    * This offers the selection of either the Adult or Child model which will later be applied to any of the "rapid acting" insulins, e.g., Novolog, Humalog or Apidra
+    * Later on, during Add pump, you can enter the actual type of insulin used in the pump
+        * If you use an "ultra rapid" such as Fiasp or Lyumjev, there is only a single model
         * The brand for the "rapid acting" insulins, such as Novolog, Humalog or Apidra can be selected - for these insulins, the model for Adult and Child is slightly different
 * Carb Ratios
 * Insulin Sensitivities

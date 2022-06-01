@@ -16,7 +16,7 @@ With Loop-dev, the user has a new option for CGM, [Nightscout Remote CGM](#night
     * [Minimed Enlite CGM](../build/step4.md#medtronic-cgm) (Medtronic Pump only) 
 * CGM that require active internet
     * [Nightscout Remote CGM](#nightscout-remote-cgm)
-    * [Dexcom Share](#dexcom-share)
+    * [Dexcom Share](../build/step4.md#dexcom-share)
 
 The addition of the Nightscout Remote CGM enables the use of Loop-dev with any sensor that can be uploaded to your Nightscout URL.
 

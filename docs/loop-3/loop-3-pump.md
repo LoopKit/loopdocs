@@ -28,7 +28,7 @@ If a user selects Omnipod, this is an Omnipod Eros selection which requires a Ri
 
 If a user selects Omnipod DASH, this is the Bluetooth enabled Pod which does not require a RileyLink compatible device. Tapping on that row brings up the new user interface for DASH. Please refer to these instructions to [add Omnipod DASH](#add-dash-pod).
 
-If a Medtronic or Omnipod Eros pump is configured, tapping on the pump icon leads to same [Pump Settings Screen](../operation/loop-settings/pump-commands.md) as Loop 2.2.x.
+If a Medtronic or Omnipod Eros pump is configured, tapping on the pump icon leads to the same [Pump Settings Screen](../operation/loop-settings/pump-commands.md) as Loop 2.2.x. (TO DO - there may be a difference in the Medtronic screen.)
 
 If an Omnipod DASH pod has been configured, tapping on the pump icon leads to the [DASH Pump Screen](dash-pump.md).
 
