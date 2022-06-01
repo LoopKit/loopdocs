@@ -12,11 +12,9 @@ This page discusses updated versions of Loop features as well as new capabilitie
 
 ## Carb Data Source
 
-In prior versions of Loop, sometimes a user saved carbs with a "food" app that wrote to Apple Health, not realizing that if Loop had read permission, Loop adjusted insulin delivery to accommodate that carb entry.
+Loop 3 does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, will be added to the documentation later. For now search in zulipchat.
 
-To avoid this problem, Loop-dev has a separate carbohydrate storage system. Loop still writes carbohydrate entries to Apple Health but it does not read non-Loop carbohydrate entries from Apple Health.
-
-There are some experienced loopers who want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works.  This code customization option is discussed in zulipchat.
+Users who build Loop-dev over Master, may find a permission switch to give Loop permission to read carb data from health, but without making the customization mentioned above, changing permission does not change the behavior of Loop.
 
 ## Non-Pump Insulin
 
@@ -34,15 +32,16 @@ With Loop-dev, the "old" method still works, but there is a new method for enter
     To find out what Loop recommends, without actually dosing with Loop:
     
     * Wait for a CGM entry (or fingerstick) to appear in the HUD
-    * Enter the carbs and continue to the bolus screen, i.e., do not save carbs
-    * Note the recommended bolus, but do not actually bolus
-    * Back up to the carb entry screen and `Cancel`
-    * Go to the non-pump insulin screen and enter bolus amount, adjust as you desire - especially important if your non-pump insulin is a different model
-    * Add the carb entry and save carbs without bolusing
+        * Enter the carbs and continue to the bolus screen, i.e., do not save carbs
+        * Note the recommended bolus, but do not actually bolus
+        * Back up to the carb entry screen and `Cancel`
+    * Go to the non-pump insulin screen and enter the bolus amount you've decided to take and select the model if a different from your pump
+        * Don't forget to actually take the insulin
+        * Add the carb entry and save carbs without bolusing
 
-1. Tap on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen to display the Insulin Delivery Screen. This screen has 3 tabs.
-    * **Event History** (default) is the same as for Loop 2.2.x
-    * **Reservoir** is similar to Loop 2.2.x; however, the reservoir value from a prior pod is not displayed after a new pod is applied
+1. Tap on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen to display the `Insulin Delivery Screen`. This screen has 3 tabs.
+    * **Event History** (default) is similar to Loop 2.2.x; however, the event history from a prior pod is not displayed once it is deactivated
+    * **Reservoir** is similar to Loop 2.2.x; however, the reservoir value from a prior pod is not displayed once it is deactivated
     * **Non-Pump Insulin** is a new feature with Loop-dev
 
 
@@ -74,7 +73,7 @@ The bolus following carbs (`Meal Bolus`) and manual bolus (`Bolus`) screens are 
     * If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry
 
 !!! info "Blue Means Active"
-    * For those who can see colors, the blue color indicates an active button.
+    * The blue color indicates an active button, whereas a grey button is inactive.
     * The value displayed on the `Bolus` row is blue to indicate if you tap on that, you can edit the value
 
 ### Meal Bolus Screen
@@ -127,9 +126,9 @@ This section is a continuation of the information presented in the [Accept Recom
 
 ### Manual Bolus Screen
 
-When the `Bolus` screen is entered direct from the toolbar, the button choices are `Enter Bolus` if none is recommended, `Deliver` if a value is on the `Bolus` row or `Cancel` using the button on the upper left. The user can also tap on the value on the `Bolus` row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
+When the `Bolus` screen is entered directly from the toolbar, the button choices are `Enter Bolus` if none is recommended, `Deliver` if a value is on the `Bolus` row or `Cancel` using the button on the upper left. The user can also tap on the value on the `Bolus` row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
 
-There are other errors messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop-dev Displays](loop-3-displays.md) page.
+There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](loop-3-displays.md) page.
 
 The two graphics below are examples of manual bolus screens. 
 
