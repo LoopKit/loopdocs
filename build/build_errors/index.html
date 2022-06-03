@@ -764,6 +764,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#apple-watch-loop-app-not-running-on-watch" class="md-nav__link">
+    Apple Watch: Loop App Not Running on Watch
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2165,6 +2172,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#apple-watch-loop-app-not-running-on-watch" class="md-nav__link">
+    Apple Watch: Loop App Not Running on Watch
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2198,7 +2212,7 @@
 <p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.</p>
 </li>
 <li>
-<p><strong>Did you check for Xcode updates?</strong> This is critical. If you are updating your Loop app, please review the iOS driven requirements for <a href="../updating/#step-1-install-macos-and-xcode-updates">Xcode and macOS</a>.</p>
+<p><strong>Did you check that you have the minumum Xcode version for your iOS?</strong> This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">macOS and Xcode</a>.</p>
 </li>
 <li>
 <p><strong>Did you check your Apple developer account for new license agreement?</strong> Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. <a href="https://developer.apple.com/account">Login to your Apple developer account</a> to check if there's a new license agreement.</p>
@@ -2207,13 +2221,13 @@
 <p><strong>Did you reboot, i.e., restart, your computer after updating Xcode?</strong> You must reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. <a href="../step9/#command-line-tools">Xcode Command Line Tools</a></p>
 </li>
 <li>
-<p><strong>Did you get a fresh download of Loop code?</strong> If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  Xcode remembers the project you last opened, you need to tell Xcode about the new download.</p>
+<p><strong>Did you get a fresh download of Loop code?</strong> If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the build-select script, it automatically opens Xcode using the new download.</p>
 </li>
 <li>
 <p><strong>Are you are using a free developer account?</strong> Make sure you finished the <a href="../step14/#free-account">removal of Siri and Push Notification capabilities</a>.</p>
 </li>
 <li>
-<p><strong>Are you doing a WorkSpace build?</strong> Make sure you selected Loop (Workspace) instead of Loop.</p>
+<p><strong>Did you forget to select Loop(WorkSpace)?</strong> The first time you build after downloading new code, you must manually select Loop (Workspace) instead of Loop in Xcode.</p>
 </li>
 </ol>
 <h2 id="fix-95-of-errors">Fix 95% of errors<a class="headerlink" href="#fix-95-of-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2221,7 +2235,7 @@
 <ol>
 <li>Open your project in Xcode as normal. Then go to the Xcode menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.</li>
 <li>On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.</li>
-<li>If you are updating Loop and did not do <a href="../updating/#step-4a-delete-old-provisioning-profiles">Steps 4a and 4b</a>, do it now</li>
+<li>If you are updating Loop and did not do <a href="../updating/#step-4a-delete-old-provisioning-profiles">Step 4a</a>, do it now</li>
 <li>Return to Xcode and try building your app again.</li>
 </ol>
 <p>If the build fails again, look through the list below and see if you can match your error message with one of the error messages listed later in this page. If you really can't find your solution, then post for help. But help us help you.</p>
@@ -2229,8 +2243,8 @@
 <li>Ignore yellow warning messages - those are not errors - do <strong>not</strong> try to fix them</li>
 <li>Confirm it really is an error not already on this page; read this page carefully, including all the circled bits in the images in the Specific Error Messages section</li>
 <li>Follow the steps in the Posting for Help section</li>
-<li>WE CANNOT HELP without version numbers and screenshots</li>
-<li>Do not take pictures of your computer screen with your phone</li>
+<li>WE CANNOT HELP without version numbers and <a href="#screenshots">screenshots</a></li>
+<li>Do not take pictures of your computer screen with your phone, use <a href="#screenshots">screenshots</a></li>
 </ul>
 <h2 id="posting-for-help">Posting for help<a class="headerlink" href="#posting-for-help" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>STOP!!  Read this section! Important!</p>
@@ -2275,8 +2289,8 @@
 <p>This error is new with Loop-dev, which uses Package Dependencies.</p>
 <p>There are 2 problems shown here</p>
 <ol>
-<li>The graphic was acquired using a camera instead of following these <a href="#screenshots">screenshot directions</a></li>
 <li>The version of Xcode is out of date</li>
+<li>The graphic was acquired using a camera instead of a <a href="#screenshots">screenshot</a>, and yes - that was a joke - using a camera does not cause a build error</li>
 </ol>
 <p><strong>Solution:</strong></p>
 <p>Update Xcode, which may require you to update macOS.</p>
@@ -2342,7 +2356,6 @@
 </ol>
 <h3 id="entitlements-error">Entitlements Error<a class="headerlink" href="#entitlements-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong></p>
-<p>The solution for this error has been updated with a new, simpler method.</p>
 <p><img alt="watchapp entitlements error" src="../img/xcode-13-new-error.svg" width="250" /></p>
 <p>Text in error message can be either of these:</p>
 <p><em>Entitlements file "WatchApp Extension.entitlements" was modified . . .</em></p>
@@ -2382,7 +2395,7 @@
 <li>Press build</li>
 </ul>
 <h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-start-indexing">Build Instructions</a></p>
+<p>With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions.</p>
 <p>Or maybe you are a repeat builder who did not read the updated information and tried to use the old zip-download method. That is no longer supported.  Please read all of the <a href="../updating/">Updating</a> page.</p>
 <div class="admonition info">
 <p>Advanced builders using dev may need carthage but they should have followed the directions for <a href="../step13/#advanced-users-only">Advanced Users Only</a></p>
@@ -2417,7 +2430,7 @@
 <p align="center"><img alt="img/device-support-files.jpg" src="../img/device-support-files.jpg" width="750" /></p>
 <p>With Xcode 12, the simulators are no longer being downloaded automatically. If you are missing a simulator, follow the steps under Step 9 <a href="../step9/#simulator-download">Simulator Download</a>.</p>
 <h3 id="no-such-module-loopkit-or-similar-message">No Such Module 'LoopKit' or Similar Message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Solution</strong>: You probably forgot to select LoopWorkspace. Review the graphic from the new <a href="../step14/#wait-for-xcode-to-start-indexing">Build Instructions</a></p>
+<p><strong>Solution</strong>: You probably forgot to select Loop(Workspace). Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions</p>
 <p><strong>Error Message:</strong> If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the <a href="./#carthage-error">Carthage Error</a> fix listed above.</p>
 <p><strong>Solution</strong>: For zip-download (not advised): Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.</p>
 <p align="center"><img alt="img/exit-code-65.png" src="../img/exit-code-65.png" width="850" /></p>
@@ -2506,7 +2519,13 @@
 <h3 id="apple-watch-loop-app-not-installing">Apple Watch: Loop App Not Installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error:</strong> The Loop app appears on the list of apps available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL".</p>
 <p><strong>Solution:</strong>  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watch face and select the "Trust" button. In Xcode, go to the top menu bar and select "Clean Build Folder" from the Product menu option, and then rebuild your Loop app.</p>
-<p>For an unknown reason, the watch app can still fail to install properly. If the "Clean Build Folder" step above, is insufficient, you may need to unpair your watch and then pair as new.  After this, rebuild Loop on your phone while wearing your watch and "Trust this computer" when prompted.  This typically configures the Loop app to install properly on your watch.</p>
+<p>If the watch app still fails to install properly, the next section should work.</p>
+<h3 id="apple-watch-loop-app-not-running-on-watch">Apple Watch: Loop App Not Running on Watch<a class="headerlink" href="#apple-watch-loop-app-not-running-on-watch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>Error:</strong> Tapping the Loop app icon on the watch results in flash of the watch screen and then return to the Loop app icon or a brief display of the watch interface and then return to the Loop app icon.</p>
+<p><strong>Solution:</strong> Plug in your iPhone, with the watch already paired, into the computer and start Xcode with your current build folder.  In Xcode, from the list of schemes where you normally choose Loop (Workspace), choose the WatchApp scheme (near the bottom of the list) and then select your watch (not a simulator) from the device list. Press the play button to build and deploy the WatchApp directly to your watch. It will launch correctly and will not crash when you subsequently launch it from the complication or your watch Home Screen..</p>
+<p><strong>Warning:</strong> On pressing clicking build/play, some people report receiving an error stating “iPhone/Apple Watch are ineligible because the OS on the watch doesn’t support WatchKit App Products” or similar wording. This is a known issue with some Mac USB ports. Fixes in preference order are: 1) swap which USB port is in use;  2) unplug and replug the USB cable from both the iPhone and Mac; or 3) as a last resort, reboot the iPhone and Mac.</p>
+<p>Don't forget to select Loop(Workspace) after building to the watch before trying to build to a phone.</p>
+<p align="center"><img alt="xcode screen display the selection for direct build of watchapp" src="../img/watchapp-direct-build-from-xcode.png" width="650" /></p>
                 
               
               
