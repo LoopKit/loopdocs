@@ -454,9 +454,11 @@ If the watch app still fails to install properly, the next section should work.
 
 ### Apple Watch: Loop App Not Running on Watch
 
-**Error:** The Loop app appears install on the watch but when you tap to open it on the watch, it starts to open and then quits.
+**Error:** Tapping the Loop app icon on the watch results in flash of the watch screen and then return to the Loop app icon or a brief display of the watch interface and then return to the Loop app icon.
 
 **Solution:** Plug in your iPhone, with the watch already paired, into the computer and start Xcode with your current build folder.  In Xcode, from the list of schemes where you normally choose Loop (Workspace), choose the WatchApp scheme (near the bottom of the list) and then select your watch (not a simulator) from the device list. Press the play button to build and deploy the WatchApp directly to your watch. It will launch correctly and will not crash when you subsequently launch it from the complication or your watch Home Screen..
+
+**Warning:** On pressing clicking build/play, some people report receiving an error stating “iPhone/Apple Watch are ineligible because the OS on the watch doesn’t support WatchKit App Products” or similar wording. This is a known issue with some Mac USB ports. Fixes in preference order are: 1) swap which USB port is in use;  2) unplug and replug the USB cable from both the iPhone and Mac; or 3) as a last resort, reboot the iPhone and Mac.
 
 Don't forget to select Loop(Workspace) after building to the watch before trying to build to a phone.
 
