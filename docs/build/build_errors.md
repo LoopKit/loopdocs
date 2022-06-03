@@ -17,17 +17,17 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
 
-2. **Did you check for Xcode updates?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for [Xcode and macOS](updating.md#step-1-install-macos-and-xcode-updates).
+2. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
 3. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there's a new license agreement.
 
 4. **Did you reboot, i.e., restart, your computer after updating Xcode?** You must reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. [Xcode Command Line Tools](step9.md#command-line-tools)
 
-5. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  Xcode remembers the project you last opened, you need to tell Xcode about the new download.
+5. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the build-select script, it automatically opens Xcode using the new download.
 
 6. **Are you are using a free developer account?** Make sure you finished the [removal of Siri and Push Notification capabilities](../build/step14.md#free-account).
 
-1. **Are you doing a WorkSpace build?** Make sure you selected Loop (Workspace) instead of Loop.
+1. **Did you forget to select Loop(WorkSpace)?** The first time you build after downloading new code, you must manually select Loop (Workspace) instead of Loop in Xcode.
 
 ## Fix 95% of errors
 
@@ -35,7 +35,7 @@ If you have checked all those steps above and think you have a true build error,
 
 1. Open your project in Xcode as normal. Then go to the Xcode menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.
 1. On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.
-1. If you are updating Loop and did not do [Steps 4a and 4b](updating.md#step-4a-delete-old-provisioning-profiles), do it now
+1. If you are updating Loop and did not do [Step 4a](updating.md#step-4a-delete-old-provisioning-profiles), do it now
 1. Return to Xcode and try building your app again.
 
 If the build fails again, look through the list below and see if you can match your error message with one of the error messages listed later in this page. If you really can't find your solution, then post for help. But help us help you.
@@ -43,8 +43,8 @@ If the build fails again, look through the list below and see if you can match y
 - Ignore yellow warning messages - those are not errors - do **not** try to fix them
 - Confirm it really is an error not already on this page; read this page carefully, including all the circled bits in the images in the Specific Error Messages section
 - Follow the steps in the Posting for Help section
-- WE CANNOT HELP without version numbers and screenshots
-- Do not take pictures of your computer screen with your phone
+- WE CANNOT HELP without version numbers and [screenshots](#screenshots)
+- Do not take pictures of your computer screen with your phone, use [screenshots](#screenshots)
 
 
 ## Posting for help
@@ -107,8 +107,8 @@ This error is new with Loop-dev, which uses Package Dependencies.
 
 There are 2 problems shown here
 
-1. The graphic was acquired using a camera instead of following these [screenshot directions](#screenshots)
-2. The version of Xcode is out of date
+1. The version of Xcode is out of date
+1. The graphic was acquired using a camera instead of a [screenshot](#screenshots), and yes - that was a joke - using a camera does not cause a build error
 
 **Solution:**
 
@@ -180,8 +180,6 @@ No need to quit Xcode - follow these steps using the Xcode Menu bar. (It's possi
 
 **Error Message:**
 
-The solution for this error has been updated with a new, simpler method.
-
 ![watchapp entitlements error](img/xcode-13-new-error.svg){width="250"}
 
 Text in error message can be either of these:
@@ -239,7 +237,7 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 
 ### Carthage Error
 
-With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the new [Build Instructions](step14.md#wait-for-xcode-to-start-indexing)
+With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the [Prepare to Build](step14.md#prepare-to-build) Instructions.
 
 Or maybe you are a repeat builder who did not read the updated information and tried to use the old zip-download method. That is no longer supported.  Please read all of the [Updating](updating.md) page.
 
@@ -289,7 +287,7 @@ With Xcode 12, the simulators are no longer being downloaded automatically. If y
 
 ### No Such Module 'LoopKit' or Similar Message
 
-**Solution**: You probably forgot to select LoopWorkspace. Review the graphic from the new [Build Instructions](step14.md#wait-for-xcode-to-start-indexing)
+**Solution**: You probably forgot to select Loop(Workspace). Review the graphic from the [Prepare to Build](step14.md#prepare-to-build) Instructions
 
 **Error Message:** If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the [Carthage Error](build_errors.md#carthage-error) fix listed above.
 
@@ -452,4 +450,17 @@ Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom l
 
 **Solution:**  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watch face and select the "Trust" button. In Xcode, go to the top menu bar and select "Clean Build Folder" from the Product menu option, and then rebuild your Loop app.
 
-For an unknown reason, the watch app can still fail to install properly. If the "Clean Build Folder" step above, is insufficient, you may need to unpair your watch and then pair as new.  After this, rebuild Loop on your phone while wearing your watch and "Trust this computer" when prompted.  This typically configures the Loop app to install properly on your watch.
+If the watch app still fails to install properly, the next section should work.
+
+### Apple Watch: Loop App Not Running on Watch
+
+**Error:** The Loop app appears install on the watch but when you tap to open it on the watch, it starts to open and then quits.
+
+**Solution:** Plug in your iPhone, with the watch already paired, into the computer and start Xcode with your current build folder.  In Xcode, from the list of schemes where you normally choose Loop (Workspace), choose the WatchApp scheme (near the bottom of the list) and then select your watch (not a simulator) from the device list. Press the play button to build and deploy the WatchApp directly to your watch. It will launch correctly and will not crash when you subsequently launch it from the complication or your watch Home Screen..
+
+Don't forget to select Loop(Workspace) after building to the watch before trying to build to a phone.
+
+![xcode screen display the selection for direct build of watchapp](img/watchapp-direct-build-from-xcode.png){width="650"}
+{align="center"}
+
+
