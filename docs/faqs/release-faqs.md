@@ -14,7 +14,7 @@ The current released version for Loop master is v2.2.9. The dates and contents f
     
 !!! info "How do I Know What Version I Have?"
 
-    Tap on the Settings icon at the bottom of the Loop app main screen and look at the version information at upper left.
+    Tap on the Settings icon at the bottom of the Loop app main screen and look at the version information at upper left. This graphic was generated with an older version, Loop 2.2.8.
     
     ![Determine current app version on app settings screen](img/app_version.svg){width="400"}
     {align="center"}
