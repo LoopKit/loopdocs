@@ -10,7 +10,7 @@ If you wandered over here meaning to build the latest Loop release, the rest of 
     * Loop old-timers may remember the zip-download method - it is no longer available
     * For all Loopers who want the latest
         * [Loop Release](../faqs/release-faqs.md#loop-releases)
-        * Follow the step-by-step instructions found at [Build Loop App](step14.md#build-loop-app)
+        * Follow the step-by-step instructions found at [Build Loop App](step14.md)
 
 The typical user who wants to build Loop does not need to know the level of detail on the rest of this page.
 

@@ -79,17 +79,19 @@ Before posting for help - do a reboot and try again.
 
 ## How do all the minimum versions relate to each other?
 
-The list below is for the **minimum** versions you'll need based on your iOS. The indication of a `color:linestyle` after the operating system nomenclature goes with the graphic found below.
+The list below is the **minimum** versions you'll need based on your iOS. The indication of a `color:linestyle` after the operating system nomenclature goes with the graphic found below. The graphic is not updated as frequently as the words.
 
 **Newer** versions are always OK and should be used if your computer will accept the upgrade.
 
-* If you are running an iPhone/iPod with iOS 15.4 or greater:
-    * [macOS](step1.md#check-your-macos): version 12.0 (Monterey; green:solid)
-    * Xcode: version 13.3
-    * Expect the facts associated with iOS 15.4 or greater to change faster than LoopDocs will be updated
+* If you are running an iPhone/iPod with iOS 15.5 or greater:
+    * [macOS](step1.md#check-your-macos): version 12.x
+    * Xcode: version 13.4.x
+* If you are running an iPhone/iPod with iOS 15.4:
+    * [macOS](step1.md#check-your-macos): version 12.x (Monterey; green:solid)
+    * Xcode: version 13.3.x
 * If you are running an iPhone/iPod with iOS 15.0 to 15.3.1:
     * [macOS](step1.md#check-your-macos): version 11.3 (Big Sur; navy:dash)
-    * Xcode: version 13
+    * Xcode: version 13.x
     * Note - at this point, your Apple Watch (if you use one) must be upgraded to watchOS 8.x
 * If you are running an iPhone/iPod with iOS 14.5 through 14.8:
     * [macOS](step1.md#check-your-macos): version 11.0 (Big Sur; magenta:dash-dot)
@@ -100,10 +102,6 @@ The list below is for the **minimum** versions you'll need based on your iOS. Th
     * Xcode: version 12.4
     * It is suggested you find a method to upgrade your computer if you are stuck on Catalina
 
-Experienced Users:
-
-* Once your macOS is at the correct level
-* Instead of using the App Store to update Xcode, you can use the [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
 ### Wikipedia Chart for Apple Versions
 

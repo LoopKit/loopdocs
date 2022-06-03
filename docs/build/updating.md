@@ -2,37 +2,42 @@
 
 !!! info "Time Estimate"
 
-    - 25 minutes, if already have updates done
-    - 40-90 minutes, if need to install Apple update(s)
+    - 25 minutes, if Xcode and macOS are updated
+    - up to 2 days, if need to install macOS and / or Xcode update(s)
 
 !!! abstract "Summary"
 
     * Step 1: Install macOS and Xcode updates based on your phone iOS
     * Step 2: Check your Developer Account
     * Step 4a and 4b: Delete provisioning profiles and derived data
-    * Step 3: Download Updated Loop code and Build Loop
+    * Download Updated Loop code and Build Loop
         * Follow the link to Step 14
 
 !!! question "FAQs"
 
-    - **"What is an update?"** Anytime you want to change versions, add or change a customization, follow the instructions on this page.
+    - **"What is an update?"** Anytime you want to change versions or if the app is about to expire, follow the instructions on this page.
     - **"Do I delete my old Loop app first?"** Definitely **not**! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
     - **"Do I need to start a new pod when I update?"** No. Your existing pod session will continue seamlessly if you are using the same Developer Account to sign the Loop app targets as you did the last time you built.
     - **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account used when your existing app was built (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
-    - **"What if it is a new computer but the same developer account?"** No big deal...repeat Build Steps 1, 8 and 9 with your new computer.
+    - **"What if it is a new computer but the same developer account?"** No big deal...repeat Build Steps 1, 8 and 9 with your new computer and then go straight to Step 14.
 
 ## When to Update Loop
 
 Under ordinary circumstances, you do not *have to* update your Loop app until it expires (1 year for a paid account). However, we encourage regular updates when a new version of iOS, or of Loop, is released because they often contain bug fixes or improvements which may increase operational stability.
 
+### iOS Updates
+
+Under ordinary circumstance, updating the iOS on your phone does not require a rebuild of the app on your phone. However, it's important to be prepared in case of an emergency, such as a lost phone.
+
 !!! abstract "Best Practice"
 
-    It is good practice to first check if your computer (macOS or Xcode) will require an update to support building Loop to your phone BEFORE applying an iOS update to your Looping phone. This [page](https://loopandlearn.org/version-updates) is a good reference to check for each iOS version to provide an all clear.
+    It is good practice to first check if your computer (macOS or Xcode) will require an update to support building Loop to your phone BEFORE applying an iOS update to your Looping phone. 
 
-    Follow these "safe Looping" steps:
+    Follow these "safe Looping" steps for updating your iOS:
 
-    1. [Update macOS / Xcode](step1.md#macos) if needed
-    1. Check [Loop Release](../faqs/release-faqs.md#loop-release) status - if there is new code, you should download it
+    1. Check which [version of macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) is required for the phone iOS you intend to install.
+    1. [Update macOS / Xcode if needed](updating.md#step-1-install-macos-and-xcode-updates)
+    1. Check [Loop: Current Release](../faqs/release-faqs.md#current-release) status - if there is new code, you should download it
     1. Build app to your iPhone
     1. Then update your iPhone iOS
 
@@ -46,31 +51,33 @@ When you see "Loop" is No Longer Available on your phone, the only solution is t
 
 !!! warning "iOS 15 Warning - Check Before You Update"
 
-    Any Loop app built with Xcode version prior to Xcode 12.5 may immediately stop working when the phone is updated to iOS 15. If you last built Loop with Catalina do not install iOS 15 on your phone without an update.
+    DO NOT INSTALL iOS 15 on your phone without first [updating](#when-to-update-loop) Loop if the Xcode version used to build your Loop app is 12D or earlier - the Loop app will stop working and you will have to rebuild Loop.
 
     Follow this link, [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used), for instructions to determine what version was used when building the Loop app currently on your phone.
 
-    DO NOT INSTALL iOS 15 on your phone without first [updating](#when-to-update-loop) Loop if the Xcode version used to build your Loop app is 12D or earlier - the Loop app will stop working and you will have to rebuild Loop.
 
 ## Step 1: Install macOS and Xcode updates
 
-### Verify / Update macOS
+### Determine Required Xcode and macOS Versions
 
-Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum macOS required for your phone iOS, you cannot build on that phone.
+Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum Xcode version required for your phone iOS, you cannot build on that phone. Sometimes you must also update the macOS version to allow you to use the required Xcode version.
 
-- The information for which macOS is required is found by following this link to the correct section of [Build Step 1](step1.md#macos)
-* After you've reviewed that section, hit the back button on your browser to return here
+Based on the iOS on your phone, or the iOS you plan to install on your phone, determine the required macOS and Xcode versions. Click on this  link [versions for iOS, macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.
 
 Minimum means you need to have at least that version - newer versions build just fine.
 
+### Verify / Update macOS
+
+* Click on this link [Check your macOS Version](step1.md#check-your-macos) and follow the instructions on that page if an update is required.
+* After you've reviewed that section, hit the back button on your browser to return here
+
 ### Verify / Update Xcode
 
-Now that you have updated your macOS, you should have the ability to see the most recent version of Xcode in the App Store.
+Click on this link [Check your Xcode Version](step9.md#xcode-version) to find your Xcode version number.
 
-* The information for which Xcode is required is found by following this link to the correct section [Build Step 8](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
-* If you see that you need to update (and you probably do), then keep following instruction on that page and the next one (Build Step 9) and then return to this page
+If you need to update your Xcode, follow the instructions at this link [Build Step 8: Install Xcode](step8.md#install-xcode) and continue through Step 9.
 
-If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.
+Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.
 
 #### Missing Xcode or Command Line Tools
 
@@ -108,15 +115,17 @@ Apple updates its License Agreement for the Developer Program frequently. You ne
 
 In order to ensure a full year of use for your Loop app, you need to delete any existing provisioning profile(s) from your computer. If you want to know more information before executing this step - or if you want to do it manually, read the [Background Information](#background-information).
 
+### Build Select Utilities
+
 The easiest way to delete the old provisioning profiles and clean up derived data uses the same build-select script that you will use for building.
 
-### Open Terminal
+#### Open Terminal
 
-Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with M1 computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta-on-m1-computer) first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.
+Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with an M1 Mac computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta-on-m1-computer) first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.
 
 If you happen to have Xcode open, go on and quit out of Xcode now.
 
-### Load the Paste Buffer
+#### Load the Paste Buffer
 
 There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal and hit the Enter key.
 
@@ -128,6 +137,8 @@ This starts the script, but you will need to read the messages and answer the qu
 
 !!! note ""
     If you've used the build-select script before and think the command looks a little different, you are correct.  Copy and paste the command as shown.  This uses a more explicit path to the script.
+
+#### Utilities
 
 The expected script responses are shown in the list and graphics below.  Each graphic shows the number you are instructed to type to proceed - the words on this page also tell you what to type.  
 
@@ -154,7 +165,7 @@ Once this completes, you should see this in your terminal.
 ![clean utility script completed](img/build-select-04.png){width="750"}
 {align="center"}
 
-As long as there are no errors, you are now ready to proceed to [Download and Build Loop Code](step14.md#download-and-prepare-to-build)
+As long as there are no errors, you are now ready to proceed to [Build Step 14: Download](step14.md#download) and continue on that page until you have completed the build.
 
 If instead, you saw something like:
 
@@ -162,9 +173,16 @@ If instead, you saw something like:
 
 Please quit out of Xcode and repeat the steps.
 
-## Step 3: Download Updated Loop Code
+---
 
-After you've finished the updates to your devices listed above, you can move onto downloading updated Loop code. You will not be simply using your old downloaded Loop code (and in fact, you can delete those old folder(s) now if you want).
+
+## Background Information
+
+The rest of this page is kept for historical reasons (and to maintain saved links).  If you followed the steps above, you do not need the rest of this page.
+
+#### Delete Old Copies
+
+When you update, you no longer need to keep old copies of the code on your computer. If you want to clean up space, you can delete those old folder(s) now if you want).
 
 !!! abstract "Where is the old folder?"
 
@@ -172,15 +190,8 @@ After you've finished the updates to your devices listed above, you can move ont
 
     ![Download folder with multiple Loop folders](img/loop-downloads.png)
 
-At this point the steps to download code and build Loop are the same ones as the initial build. Click on [Build Step 14: Download and Prepare to Build](step14.md#download-and-prepare-to-build) to continue.
 
----
-
-
-
-## Background Information
-
-The rest of this page is kept for historical reasons (and to maintain saved links).  If you followed the steps above, you do not need the rest of this page.
+#### Provisioning Profile Details
 
 Older versions of Xcode used to automatically create a new "provisioning profile" as part of the Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.
 
@@ -193,7 +204,7 @@ Here's what started happening about September 2019 with Xcode 11, the provisioni
 
 Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)
 
-### Delete Profiles
+#### Delete Profiles
 
 - This process deletes the provisioning profiles on your computer to force Xcode to generate new ones with your next build
 - This does not affect the provisioning profiles currently on your phone
@@ -215,15 +226,15 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
     ![Screenshot: terminal after provisioning profile deletion](img/empty-profiles.png){width="650"}
     {align="center"}
 
-### Infrequent Builder, App Expires soon
+#### Infrequent Builder, App Expires soon
 
 If your app will expire soon or you build infrequently, then [Delete Profiles](updating.md#delete-profiles). Not sure when your app expires? Here are instructions to check your [Loop Expiration Date](https://www.loopandlearn.org/loop-expiration-date/).
 
-### Frequent Builder
+#### Frequent Builder
 
 If you build frequently, you do not need to delete the profiles every time. One user reported deleting profiles gave a [Revoke Certificate](updating.md#revoke-certificate-issue) message - follow the link to see other reasons why that might happen.
 
-### Revoke Certificate Issue
+#### Revoke Certificate Issue
 
 What does it look like if you run into the Revoke Certificate message? When you prepare to Sign the Targets with Xcode, you'll see the message highlighted in the figure below.  
 
@@ -256,7 +267,7 @@ More information is shown in the orange box below.
     Be aware that you will have to rebuild to every device that used the certificate you just revoked and if you have other apps built with this certificate, they will stop working too.
 
 
-### Step 4b: Clean cache and derived data
+#### Clean cache and derived data
 
 This may not be necessary, but it is one of the first steps to try if you do get a build error. Since you already have Terminal app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.
 
@@ -280,9 +291,9 @@ This may not be necessary, but it is one of the first steps to try if you do get
     ![Screenshot: terminal after clean cache and derived data](img/cleaned-terminal.png){width="650"}
     {align="center"}
 
-### Step 5: Build like normal
+#### Build like normal
 
-You are ready to proceed to [Download and Build Loop Code](step14.md#download-and-prepare-to-build).
+You are ready to proceed to [Build Step 14: Download](step14.md#download) and continue on that page until you have completed the build.
 
 !!! info "Add a Calendar Reminder"
 
@@ -297,7 +308,7 @@ You are ready to proceed to [Download and Build Loop Code](step14.md#download-an
     To find out expiration date later, read [Loop App Expiration Date](../operation/features/notifications.md#loop-app-expiration-date).
 
 
-### Step 6: Resolve Build Errors if needed
+#### Resolve Build Errors if needed
 
 !!! danger "Check Build Errors Page"
 

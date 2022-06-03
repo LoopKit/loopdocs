@@ -15,7 +15,12 @@ Since you've been working in order, you will now have Xcode installed on your co
 
 **Did your computer reboot following the Xcode installation. If not, reboot now.**
 
+
+## Xcode Version
+
 Open Xcode from your Applications folder. If it offers to start a new project with you, just close that window.
+
+Click on the Xcode->About Xcode menu item. The version number is displayed.
 
 ## Command Line Tools
 

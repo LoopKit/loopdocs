@@ -12,6 +12,7 @@
     - If using Dexcom CGM, your Looping iPhone/iPod touch will need the Dexcom app installed on it to Loop without an internet connection.
     - Make sure the phone has good battery life
     - This is a good time to read [Turn Off Automatic Updates](#turn-off-automatic-updates)
+    - This is a good time to label your phone (General->About->Name) something other than the generic name it came with, if you haven't already done this 
 
 !!! question "FAQs"
     - **"Can I use an android?"** No. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).

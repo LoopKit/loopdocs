@@ -17,7 +17,7 @@
 
     Minimum macOS for recent iOS - newer versions build just fine:
 
-    - macOS 12.0 (Monterey) or newer is required for iOS 15.4 (released March 2022)
+    - macOS 12.0 (Monterey) or newer is required for iOS 15.5 (released May 2022)
     - macOS 11.3 (Big Sur) or newer is required for iOS 15 (released September 2021)
     - macOS 11.0 (Big Sur) is required for iOS 14.5 (released March 2021)
 
