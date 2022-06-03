@@ -417,4 +417,4 @@ The next step is the begin the [Set up App](../operation/overview.md) process.
 
 **STAY IN OPEN LOOP UNTIL YOU UNDERSTAND THE SYSTEM**
 
-Go to the [Set up App](../operation/overview.md) menu to configure your Loop and follow that up with the first [Operate](../operation/features/carbs.md) page and work those pages as you learn to run Loop safely.
+Go to the [Set up App](../operation/overview.md) menu to configure your Loop and follow that up with the first [Operate](../operation/loop/open-loop.md) page and work those pages as you learn to run Loop safely.
