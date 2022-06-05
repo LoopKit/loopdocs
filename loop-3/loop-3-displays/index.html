@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#displays" class="md-skip">
+        <a href="#loop-3-displays" class="md-skip">
           Skip to content
         </a>
       
@@ -1420,13 +1420,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cgm-icon" class="md-nav__link">
-    CGM Icon
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#loop-status-icon" class="md-nav__link">
     Loop Status Icon
   </a>
@@ -1434,8 +1427,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pump-icon" class="md-nav__link">
-    Pump Icon
+  <a href="#glucose-status-icon" class="md-nav__link">
+    Glucose Status Icon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pump-status-icon" class="md-nav__link">
+    Pump Status Icon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hud-status-row" class="md-nav__link">
+    HUD Status Row
   </a>
   
 </li>
@@ -1909,13 +1916,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cgm-icon" class="md-nav__link">
-    CGM Icon
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#loop-status-icon" class="md-nav__link">
     Loop Status Icon
   </a>
@@ -1923,8 +1923,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pump-icon" class="md-nav__link">
-    Pump Icon
+  <a href="#glucose-status-icon" class="md-nav__link">
+    Glucose Status Icon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pump-status-icon" class="md-nav__link">
+    Pump Status Icon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hud-status-row" class="md-nav__link">
+    HUD Status Row
   </a>
   
 </li>
@@ -1947,45 +1961,279 @@
               
                 
                 
-                <h1 id="displays">Displays<a class="headerlink" href="#displays" title="Anchor link to this Header on this Page">&para;</a></h1>
+                <h1 id="loop-3-displays">Loop 3 Displays<a class="headerlink" href="#loop-3-displays" title="Anchor link to this Header on this Page">&para;</a></h1>
+<p>This LoopDocs page is for Loop 3.</p>
+<p>For Loop v2.2.x, follow this link: <a href="../../operation/loop-settings/displays/">Loop v2.2.x Displays</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Work In Progress</p>
+<p>This page is under development. Some of the graphics are not provided.</p>
+<p>However, the alternative text description is provided in all cases.  (For those who do not know, the alt text is read aloud to users by screen reader software, and it is indexed by search engines. It also displays on the page if the image fails to load, so you will see alt-text instead of an image for those cases where the graphic has not been added yet.)</p>
+</div>
 <h2 id="main-loop-screen">Main Loop Screen<a class="headerlink" href="#main-loop-screen" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The main Loop screen contains a Heads-Up Display at the top (when in portrait mode) with various graphs in the middle and a toolbar at the bottom of the screen.</p>
-<div class="admonition info">
-<p class="admonition-title">New Look for Home Screen</p>
-<ul>
-<li>The Loop-dev Home screen is designed to provide status at a glance</li>
-<li>More detailed information is a quick tap away</li>
-</ul>
-</div>
-<p align="center"><img alt="main loop screen when running nominally" src="../img/loop-3-main.svg" width="300" /></p>
+<p>The main Loop screen contains a Heads-Up Display (<a href="#heads-up-display">HUD</a>) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom.</p>
+<p align="center"><img alt="main loop screen when running nominally with annotation for heads-up-display, charts and toolbar" src="../img/loop-3-main-annotated.svg" width="450" /></p>
+<h4 id="landscape">Landscape<a class="headerlink" href="#landscape" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>When the device is in landscape mode, the HUD is no longer visible, but the chart history is increased.  In landscape, each chart displays the last 8 hours of history along with the next 6 hours of glucose prediction. The toolbar is always visible while the chart display can be scrolled up and down to view charts of interest.</p>
 <h2 id="heads-up-display">Heads-Up Display<a class="headerlink" href="#heads-up-display" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Heads-Up Display (HUD) for Loop-dev has been simplified.  This display has 3 icons. The left icon shows the CGM value, the middle icon indicates Loop status and the right icon show pump status. More details are found under <a href="#hud-details">HUD Details</a>.</p>
-<div class="admonition info">
-<p class="admonition-title">For Pod Users</p>
-<p>Yes the circular life-cycle icon is gone. When the pod is close to expiration, a warning indicator shows up under the pump icon.</p>
-</div>
-<h2 id="charts">Charts<a class="headerlink" href="#charts" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Loop charts are similar to Loop 2.2.x, refer to <a href="../../operation/loop-settings/displays/#charts">Loop Charts</a></p>
-<h2 id="toolbar">Toolbar<a class="headerlink" href="#toolbar" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Loop toolbar is similar to Loop 2.2.x although there are some details that differ as discussed in <a href="../loop-3-features/">Loop-dev Features</a>.</p>
-<p>Loop Settings are shown when tapping on the gear icon. The Loop-dev Settings display is substantially different than for Loop 2.2.x.  Refer to the <a href="../loop-3-settings/">Loop-dev Settings</a> page.</p>
-<h2 id="loop-widget-on-lock-screen">Loop Widget on Lock Screen<a class="headerlink" href="#loop-widget-on-lock-screen" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop has a widget which can be added to the lock screen. The example graphic below shows the Dexcom G6 widget above the Loop-dev widget.</p>
-<p><img alt="widget on lock screen, dex above, loop below" src="../img/dex-loop-3-widget.svg" width="250" /></p>
-<h2 id="hud-details">HUD Details<a class="headerlink" href="#hud-details" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Placeholder section where new indicators will be shown along with graphics.</p>
+<p>The Heads-Up Display (HUD) shows 3 icons:</p>
 <ul>
-<li>"No Recent Glucose": Tap to add</li>
-<li>Icon that shows timezone of pump and phone do not match</li>
-<li>Icon that shows no data from current pump</li>
-<li>etc</li>
+<li>Left: <a href="#glucose-status-icon">Glucose status</a></li>
+<li>Middle: <a href="#loop-status-icon">Loop status</a></li>
+<li>Right: <a href="#pump-status-icon">Pump status</a></li>
 </ul>
-<h3 id="cgm-icon">CGM Icon<a class="headerlink" href="#cgm-icon" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Put stuff here</p>
+<p>There is a <code>Status Row</code> underneath those three icons that is used to display bolus progress, some alerts and important messages. The <code>Status Row</code> is also a button that performs an action depending on the message.  These are described in the table in the <a href="#hud-status-row">HUD Status Row</a> section. The <code>Status Row</code> is only visible in portrait mode, so make sure to orient your device to look for these messages.</p>
+<h2 id="charts">Charts<a class="headerlink" href="#charts" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The Loop charts are described in the Loop v2.2.x part of LoopDocs: <a href="../../operation/loop-settings/displays/#charts">Charts</a>.</p>
+<p>But before you head over to that link, the <code>Insulin Delivery</code> screen, reached by tapping on either of the <code>Insulin</code> charts on the home screen, has been revised to include a new <code>Non-Pump Insulin</code> feature described at this <a href="../loop-3-features/#non-pump-insulin">link</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Documentation Update Needed</p>
+<p>The documentation for the <code>Insulin Delivery</code> screen needs a more complete update - the behavior when a pod is changed is different with Loop 3 compared to Loop v2.2.x. As soon as a pod is deactivated, the delivery from that pod is no longer displayed on the <code>Event History</code> or <code>Reservoir</code> tab.</p>
+<p>This is true for both Eros and DASH pods. It is true, as well, if you change from one Medtronic pump to another.</p>
+<p>For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this must now been done in Apple Health.</p>
+</div>
+<h2 id="toolbar">Toolbar<a class="headerlink" href="#toolbar" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The Loop toolbar is similar to Loop 2.2.x although there are some details that differ, as discussed in <a href="../loop-3-features/">Loop 3 Features</a>.</p>
+<p>Loop Settings are shown when tapping on the gear icon. The Loop 3 Settings display is substantially different than for Loop 2.2.x.  Refer to the <a href="../loop-3-settings/">Loop 3 Settings</a> page.</p>
+<h2 id="loop-widget-on-lock-screen">Loop Widget on Lock Screen<a class="headerlink" href="#loop-widget-on-lock-screen" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Loop has a widget which can be added to the lock screen. The example graphic below shows the Dexcom G6 widget above the Loop 3 widget.</p>
+<div class="admonition info">
+<p class="admonition-title">Widgets</p>
+<p>If you have never set up an iOS widget, please do an internet search, such as "Add widget to your iOS 15 Home Screen" for instructions.</p>
+</div>
+<p align="center"><img alt="widget on lock screen, dex above, loop below" src="../img/dex-loop-3-widget.svg" width="300" /></p>
+<h2 id="hud-details">HUD Details<a class="headerlink" href="#hud-details" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Very Detailed Section</p>
+<p>This section is packed with an incredible amount of detail. Remember it exists and come back when you need a reference to Loop 3 icons and messages.</p>
+<p>If you are a new looper your eyes may glaze over the first time through. Don't worry. But do come back and read this section again after you've used the system in Open Loop mode (before you enable Closed Loop mode). And then come back again after a day or so of closed loop testing.</p>
+<p>Experienced loopers need to read the detail on this page. There are important changes from Loop 2.2.x.</p>
+</div>
+<p>The Heads-Up-Display, visible in portrait mode, shows the Glucose Status on the left, the Loop Status in the middle and the Pump Status on the right. Once a CGM and pump have been added to Loop, the Loop Status icon will update and ideally be similar to the graphic below.</p>
+<p align="center"><img alt="heads-up-display when loop is operating nominally" src="../img/loop-3-hud-closed.svg" width="300" /></p>
+<ul>
+<li>The Glucose is displayed in the same units as the selected CGM<ul>
+<li>If units are incorrect, quit Loop, allow your CGM app to update and then restart Loop</li>
+</ul>
+</li>
+<li>The green Loop icon indicates that within the last 5 minutes Loop completed a <a href="#loop-cycle">cycle</a></li>
+<li>The Pump Status on the right, in this graphic, indicates the scheduled basal rate is running<ul>
+<li>The 0.0 U display means the basal currently running is 0 U/hr different from the scheduled basal</li>
+</ul>
+</li>
+</ul>
 <h3 id="loop-status-icon">Loop Status Icon<a class="headerlink" href="#loop-status-icon" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Put stuff here</p>
-<h3 id="pump-icon">Pump Icon<a class="headerlink" href="#pump-icon" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Put stuff here</p>
+<p>The Loop Status Icon is the colored circle in the center of the main Loop display.  The three colors displayed are Green, Yellow or Red.  In all cases, more information is displayed by tapping on the Loop Status Icon, which brings up a <a href="../onboarding/#what-does-modal-mean">modal</a> message indicating the last time a loop cycle completed and other descriptive text.</p>
+<h4 id="loop-cycle">Loop Cycle<a class="headerlink" href="#loop-cycle" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>A complete Loop cycle, at high level, includes these steps:</p>
+<ul>
+<li>Current Glucose is updated</li>
+<li>Glucose prediction is calculated along with any recommended change to insulin delivery to maintain future glucose above safety threshold and within correction range</li>
+<li>Messages are sent to the pump to modify insulin delivery if required and request current pump status</li>
+<li>Pump acknowledges the loop messages</li>
+</ul>
+<p>This table shows examples of Loop Status Icons and what the icon means. </p>
+<table>
+<thead>
+<tr>
+<th><div style="width:55px"></div> Icon</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="A green circle indicating nominal status for closed loop" src="../img/loop-3-green-icon-closed.svg" /></td>
+<td>A green circle indicates the app is in Closed Loop mode and it completed a <a href="#loop-cycle">cycle</a> within the last 5 minutes.</td>
+</tr>
+<tr>
+<td><img alt="A yellow circle indicating warning status for closed loop" src="img/loop-3-yellow-icon-closed.svg" /></td>
+<td>A yellow circle indicates the app is in Closed Loop mode and it has completed a cycle in the last 5-15 minutes.<br><br>It is not unusual to have a few instances of yellow loops per day.  They can be caused by being out of range (physically), Bluetooth or RileyLink “noise” interference, or even that the pump was giving a bolus.<br><br>Most yellow loops will self-resolve without needing any special troubleshooting.</td>
+</tr>
+<tr>
+<td><img alt="A red circle indicating failure status for closed loop" src="img/loop-3-icon-closed.svg" /></td>
+<td>A red circle indicates the Loop has not completed in over 15 minutes.<br><br>This is not a typical state, and you should <a href="../../troubleshooting/yellow-red-loop/">troubleshoot</a> the problem.<br><br>In this case, either the <a href="#glucose-status-icon">Glucose Icon</a> or the <a href="#pump-status-icon">Pump Icon</a> or both will display an <code>alert</code> graphic.</td>
+</tr>
+<tr>
+<td><img alt="A green open circle with a gap at the top denoting open loop" src="img/loop-3-open_loop.jpg" /></td>
+<td>When the circle is open at the top, Loop is operating in “open-loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the Open Loop icon will be displayed until MTB expires or is cancelled. <em>Note that MTB is only implemented in Loop 3 for DASH, at the current time.</em></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Fun Fact</p>
+<p>The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).</p>
+</div>
+<h3 id="glucose-status-icon">Glucose Status Icon<a class="headerlink" href="#glucose-status-icon" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The table below shows examples of the Glucose Status Icon and what the icon means. The <a href="#glucose-color-code">Glucose Color Code</a> is provided below the table.</p>
+<table>
+<thead>
+<tr>
+<th><div style="width:55px"></div> Icon</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Blood Glucose reading with blue trend arrow" src="img/cgm-blue-arrow.svg" /></td>
+<td>The current glucose reading is displayed. It can be from the CGM or from a finger stick. The value must have been updated within the last 15 minutes to be displayed.<br><br>For the example shown, a valid trend arrow is available and is blue. Color codes are explained at this <a href="#glucose-color-code">link</a>.</td>
+</tr>
+<tr>
+<td><img alt="three dashes to indicate stale blood glucose" src="img/cgm-stale.svg" /></td>
+<td>The last glucose reading from the CGM or from a finger stick is stale, i.e., it was acquired more than 15 minutes ago.<br><br>In this case, the glucose prediction will stop updating. If in closed-loop mode, no changes will be made to insulin delivery. If a temporary basal is running, it continues running for the scheduled duration. Once the temporary basal expires, the pump resumes the scheduled basal rate. (When the app issues a temporary basal, the duration is always 30 minutes.)<br><br>The <a href="#hud-status-row">HUD Status Row</a> will display a message to enable user to provide fingerstick glucose values if desired.</td>
+</tr>
+<tr>
+<td><img alt="an Add CGM with plus sign icon" src="img/cgm-add.svg" /></td>
+<td>If no CGM is currently selected, the Add CGM icon is displayed. The user can add a CGM following these <a href="../loop-3-cgm/">instructions</a>.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="glucose-color-code">Glucose Color Code<a class="headerlink" href="#glucose-color-code" title="Anchor link to this Header on this Page">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Glucose Range</th>
+<th>Glucose Value Color</th>
+<th>Trend Arrow Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>55 mg/dL (3.0 mmol/L) or below</td>
+<td><strong>red</strong> regardless of background color</td>
+<td><strong>red</strong></td>
+</tr>
+<tr>
+<td>56 and 79 mg/dL (3.1 and 4.4 mmol/L)</td>
+<td><strong>black</strong> (light mode) / <strong>white</strong> (dark mode)</td>
+<td><strong>yellow</strong></td>
+</tr>
+<tr>
+<td>80 and 199 mg/dL (4.4 to 11.0 mmol/L)</td>
+<td><strong>black</strong> (light mode) / <strong>white</strong> (dark mode)</td>
+<td><strong>blue</strong></td>
+</tr>
+<tr>
+<td>200 mg/dL (11.1 mmol/L) or above</td>
+<td><strong>black</strong> (light mode) / <strong>white</strong> (dark mode)</td>
+<td><strong>yellow</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pump-status-icon">Pump Status Icon<a class="headerlink" href="#pump-status-icon" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The nominal pump icon displays high-level status information for the pump with two main components: left side is the basal delivery status and right side is the reservoir status. (TO DO - find out if MDT battery shows and where). For Pods, a lifecycle line is displayed underneath the pump icon during the last 24 hours of nominal pod life.</p>
+<ul>
+<li>The basal delivery status displays the enacted temp basal change relative to the scheduled basal.  For example, for a scheduled basal of 1.0 U/hr<ul>
+<li>If the app set a temp basal rate of 0.2 U/hr, the icon displays -0.8 U</li>
+<li>If the app set a temp basal rate of 1.5 U/hr, the icon displays +0.5 U</li>
+<li>When scheduled basal is running, the icon displays 0.0 U</li>
+</ul>
+</li>
+<li>The reservoir status indicates insulin remaining graphically and displays a value when less than 50 U remain.<ul>
+<li>For Medtronic Pumps, the reservoir display indicates the level graphically.</li>
+<li>For Pods, the reservoir graphic is constant until the pod begins to report reservoir level when less than 50 U remain.</li>
+</ul>
+</li>
+</ul>
+<p>The table below shows examples for a few nominal Pump Status Icons and Alert messages that might be shown.  In all cases, tapping on the Pump Status Icon opens the Pump Settings screen with more information.</p>
+<table>
+<thead>
+<tr>
+<th><div style="width:55px"></div> Icon</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="high temp basal indicator plus pod reservoir above 50 U" src="img/loop-3-nominal-pod-high-temp.svg" /></td>
+<td>This nominal pump status image is for a Pod with temp basal greater than scheduled basal rate and no reported reservoir level.</td>
+</tr>
+<tr>
+<td><img alt="low temp basal indicator for partially full mdt reservoir" src="img/loop-3-nominal-mdt-low-temp.svg" /></td>
+<td>This nominal pump status image is for a Medtronic pump with temp basal less than scheduled basal rate and with a half-full reservoir.</td>
+</tr>
+<tr>
+<td><img alt="scheduled basal indicator for pod with red reservoir level and orange bar indicating pod life near expiration and time zone alert" src="img/loop-3-nominal-pod-15u-red-lifecycle-68-hr-tz-alert.svg" /></td>
+<td>This nominal pump status image is for a pod that has been operating for 68 hours and has reservoir remaining of 15 U. The small clock icon indicates that the timezone for the phone and the timezone for the pump do not match.<br><br>To modify timezone, follow <a href="../../operation/loop-settings/pump-commands/">these directions</a><br><br>This user has chosen a warning at 20 U remaining, so the reservoir display is red.  If they had chosen a warning at 10 U, the display would be orange.</td>
+</tr>
+<tr>
+<td><img alt="pump alert - yellow exclamation point with phrase no pod" src="img/loop-3-pump-alert-no-data.svg" /></td>
+<td>This alert message indicates no pod is currently paired so no insulin is being delivered.<br><br>Tap on the icon to reach the pod setting screen and pair a new pod, or switch to a different source for providing insulin.</td>
+</tr>
+<tr>
+<td><img alt="pump alert - yellow exclamation point with phrase manual basal" src="img/loop-3-pump-alert-mtb.svg" /></td>
+<td>This alert message indicates the user has initiated a manual temp basal (MTB). While the MTB is active, the Loop Icon Status will also display an Open Loop symbol to indicate no automatic adjustments are made until MTB expires or is canceled. <br><br>Tapping on the icon takes the user to the pump settings display where the rate and duration of the MTB are displayed.</td>
+</tr>
+<tr>
+<td><img alt="pump alert - red exclamation point with phrase no data" src="img/loop-3-pump-alert-no-data.svg" /></td>
+<td>This alert message indicates it has been more than 15 minutes since the app was able to communicate with the pod.<br><br>Follow these <a href="../../troubleshooting/yellow-red-loop/">troubleshooting</a> steps.</td>
+</tr>
+<tr>
+<td><img alt="pump alert - red plus sign with phrase add pump" src="img/loop-3-add-pump.svg" /></td>
+<td>This alert message indicates no pump has been added. <br><br>Follow the instruction for adding a pump: <a href="../../operation/loop-settings/mdt-pump/">Medtronic</a>, <a href="../../operation/loop-settings/omnipod-pump/">Eros</a> or <a href="../dash-pump/">DASH</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hud-status-row">HUD Status Row<a class="headerlink" href="#hud-status-row" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The Status Row is located immediately below the CGM, Loop and Pump Icons and is used to provide status, action buttons and information. The messages in the table are in order of priority. For example, a <code>No Recent Glucose</code> message is displayed even when an <code>Override</code> is active.</p>
+<div class="admonition warning">
+<p class="admonition-title">Bolus In Progress</p>
+<p>The bolus messages are displayed with the highest priority:</p>
+<ul>
+<li>If another message is shown when a bolus starts, the bolus message is displayed instead</li>
+<li>To return to the other message, such as Override or <code>No Recent Glucose</code>, you must either wait for the bolus to complete or cancel the bolus by tapping on the <code>Status Row</code></li>
+<li>To ensure you do not accidentally cancel a bolus, keep the phone locked when not in use</li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th>Status Row / Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="starting bolus message" src="img/status-row-starting-bolus.svg" width="350" /></td>
+</tr>
+<tr>
+<td>When the user issues a manual bolus through the app, a <code>Starting Bolus</code> information message is displayed. Tapping on this message has no action.<br><br>As soon as the app issues a command to the pump (or sends it to the RileyLink to be delivered to the pump), the bolus in progress message appears.</td>
+</tr>
+<tr>
+<td><br><br><img alt="bolus-in-progess message: message size is 500 x 50 pixels" src="../img/status-row-bolus-in-progress.svg" width="350" /></td>
+</tr>
+<tr>
+<td>As soon as a bolus is started, from either a manual command or an automatic bolus, the bolus in progress message is displayed. Tapping on the <code>Status Row</code> causes the app to attempt to cancel the bolus. The app can only cancel a bolus if communication is active between the app and the pump.<br><br>The message says <code>Bolused</code><strong>value</strong><code>of</code><strong>total</strong><code>U</code>. The <strong>value</strong> is based on a timer, so it is possible for an occlusion or other fault to occur while the app indicates bolus is in progress.<br><br>In case of a fault, the user can tap on the pump icon to force a new pump status reading. For the case of pods, this allows you to  silence a screaming pod quickly. Once the app communicates with the pump, the actual delivery status will be updated.</td>
+</tr>
+<tr>
+<td><br><br><img alt="canceling bolus message" src="img/status-row-canceling-bolus.svg" width="350" /></td>
+</tr>
+<tr>
+<td>If the user taps on the bolus in progress message in the <code>Status Row</code>, the message changes to Canceling Bolus. Tapping on this message has no action.</td>
+</tr>
+<tr>
+<td><br><br><img alt="pump suspended message" src="img/status-row-pump-suspended.svg" width="350" /></td>
+</tr>
+<tr>
+<td>As soon the app determines that the pump is suspended, the <code>Insulin Suspended, Tap to Resume</code> message is displayed. Tapping on the <code>Status Row</code> resumes scheduled basal delivery if communication is active between the app and the pump.<br><br>Medtronic pump users who suspend directly on the pump will notice a delay before this message is displayed. It is best to use the app Pump Settings screen to suspend the pump.</td>
+</tr>
+<tr>
+<td><br><br><img alt="no recent glucose - tap to add message" src="img/status-row-glucose-stale.svg" width="350" /></td>
+</tr>
+<tr>
+<td>If a higher priority message is not displayed in the <code>Status Row</code> and the glucose value is stale (more than 15 minutes old), the <code>No Recent Glucose, Tap to Add</code> message is displayed. Tapping on the <code>Status Row</code> opens the <a href="../loop-3-features/#manual-bolus-screen">Bolus</a> screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap <code>Save Without Bolusing</code>. However, be aware that, in Closed Loop mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.</td>
+</tr>
+<tr>
+<td><br><br><img alt="override symbol and name - until time stamp message" src="img/status-row-override.svg" width="350" /></td>
+</tr>
+<tr>
+<td>If a higher priority message is not displayed in the <code>Status Row</code> and an override is active, the override symbol and name and the time at which the override expires is displayed. <br><br>Tapping on the <code>Status Row</code> opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the <a href="../../operation/features/workout/">Overrides</a> instructions.</td>
+</tr>
+<tr>
+<td><br><br><img alt="Pre-meal Preset until time stamp message" src="img/status-row-override.svg" width="350" /></td>
+</tr>
+<tr>
+<td>If a higher priority message is not displayed in the <code>Status Row</code> and the Pre-Meal Target is active in the toolbar, the <code>Pre-meal Preset, until time stamp</code> is displayed. Tapping on the status row has no effect for this message.<br><br>So long as the toolbar icon for Pre-Meal Preset is active, the target override is in effect. The Pre-Meal Preset can be engaged with an Override. When both are active, the Pre-Meal target range supersedes the target range of the active Override, but the other settings for that Override still apply.</td>
+</tr>
+</tbody>
+</table>
                 
               
               
