@@ -87,11 +87,11 @@ If you have not already read it, please review the [First Time Using Onboarding]
 The graphic below, shows the initial Welcome Screen, with a modal alert.
 
 
-#### What is a Modal Alert?
+#### What does Modal Mean?
 
-!!! info "Modal Alert"
+!!! info "Modal Alert or Message"
 
-    Loop-dev has many updates to the user experience.  A modal alert is a small window that shows up on top of your app with information that you must acknowledge, as shown in the graphic below.  You will see a lot of these.
+    Loop-dev has many updates to the user experience.  A modal alert or message is a small window that shows up on top of your app with information that you must acknowledge, as shown in the graphic below.  You will see a lot of these.
 
 
 ![first two welcome screens when onboarding](img/welcome-menus-x2.svg){width="500"}

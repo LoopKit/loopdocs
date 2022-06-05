@@ -52,7 +52,7 @@ When you select DASH you will need to configure default settings for the followi
     * Reminder between 1 and 24 hours before expiration
         * Pod beeps the "expiration" alert pattern until acknowledged by user through the Loop app
 1. Low Reservoir
-    * Loop app provides a [modal alert](onboarding.md#what-is-a-modal-alert) when reservoir reaches value selected (10 to 50 U)
+    * Loop app provides a [modal alert](onboarding.md#what-does-modal-mean) when reservoir reaches value selected (10 to 50 U)
 1. Insulin Type
     * User can select from Rapid (Novolog, Humalog, Apidra) or Ultra-Rapid (Fiasp, Lyumjev)
     
