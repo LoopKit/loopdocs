@@ -127,7 +127,7 @@ If you happen to have Xcode open, go on and quit out of Xcode now.
 
 #### Load the Paste Buffer
 
-There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal and hit the Enter key.
+There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal and return.
 
 This starts the script, but you will need to read the messages and answer the questions.
 
@@ -148,17 +148,17 @@ The expected script responses are shown in the list and graphics below.  Each gr
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
 
-Type 1 and hit Enter to acknowledge the warning.
+Type 1 and return to acknowledge the warning.
 
 ![select utilities option](img/build-select-02.png){width="750"}
 {align="center"}
 
-Type 3 and hit Enter to select `Utilities`.
+Type 3 and return to select `Utilities`.
 
 ![select clean profiles and derived data option](img/build-select-03.png){width="750"}
 {align="center"}
 
-Type 3 and hit Enter to select  `Clean Profiles & Derived Data`. 
+Type 3 and return to select  `Clean Profiles & Derived Data`. 
 
 Once this completes, you should see this in your terminal.
 
@@ -213,7 +213,7 @@ Once you follow the steps in the orange box below, Xcode will have no memory of 
 !!! question "How to delete old provisioning profiles"
     - Find your Terminal app (in Applications under Utilities)
     - Open your Terminal app
-    - Hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and hit enter
+    - Hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and return
 
     ``` title="Delete Provisioning Profiles"
     rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
@@ -273,7 +273,7 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 !!! abstract "Clean cache and derived data"
 
-    Using Terminal app that should still be open from Step 4a, hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and hit enter.
+    Using Terminal app that should still be open from Step 4a, hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and return.
 
     ``` title="Clean cache and derived data"
     rm -rf ~/Library/Caches/org.carthage.CarthageKit

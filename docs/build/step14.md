@@ -66,7 +66,7 @@ These instructions show each step needed to download Loop using the Build-Select
 * Adjust font size as directed if you have difficulty seeing the directions.
 
 
-There is a copy button located by hovering on the bottom right side of the labeled block of text below.  When you click on it, the words in the block (below the label) are copied into your paste buffer. Paste those words into the terminal and hit the ENTER (or return) key. Read the instructions and follow them. The graphics below represent each step needed to download the code.
+There is a copy button located by hovering on the bottom right side of the labeled block of text below.  When you click on it, the words in the block (below the label) are copied into your paste buffer. Paste those words into the terminal and return. Read the instructions and follow them. The graphics below represent each step needed to download the code.
 
 ```title="Copy and Paste to start the Build-Select script"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
@@ -78,14 +78,14 @@ There is a copy button located by hovering on the bottom right side of the label
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
 
-You must type 1 (as shown in the graphic above) and hit the ENTER key to indicate you understand the warning.
+You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.
 
-Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and hitting the ENTER key.
+Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and return.
 
 ![choose to build Loop](img/build-select-05.png){width="750"}
 {align="center"}
 
-Next you are asked which version of Loop you would like to build. Type 1 and hit the ENTER key to build Loop Master (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.
+Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop Master (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.
 
 ![choose which Loop to build](img/build-select-06.png){width="750"}
 {align="center"}
@@ -106,22 +106,22 @@ Next you are asked which version of Loop you would like to build. Type 1 and hit
     * [Build Step 9: Xcode command line tools](step9.md)
 
 
-This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. You do not need to understand the definitions for enumeration or submodule or cloning.  You only need to review the display to look for any errors after the download is finished. The download starts out with the enumeration of all the submodules that will be downloaded. This is followed by a cloning step for each submodule. The cloning for the first module is included in the first graphic.
+This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. When you read the words in the terminal, as the script runs, you may see terminology you do not understand - don't worry - you do not need to understand enumeration or submodule or cloning.  You only need to review the display to look for any error messages. The first graphic shows terminal messages for the beginning of a successful download.
 
 ![the beginning of the clone for LoopWorkspace ](img/build-select-07.png){width="750"}
 {align="center"}
 
-The final submodule cloning is shown along with the summary of all the submodule paths in the next graphic.
+The final terminal messages of a successful download are shown in the next graphic.
 
 ![the end of LoopWorkspace download](img/build-select-08.png){width="750"}
 {align="center"}
 
-If any errors are shown in your terminal window, you need to read the error and hit any key (other than 1) followed by ENTER to cancel.  You can try the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#finding-help) site.
+If any errors are shown in your terminal window, you need to read the error and hit any key (other than 1) followed by return to cancel.  You can try to fix the error and run the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#finding-help) site.
 
 
 ### Download was Successful
 
-Assuming there are no errors, then type 1, ENTER to Continue as shown in this graphic.
+Assuming there are no errors, then type 1 and return to Continue as shown in this graphic.
 
 ![after confirming no build errors in the download](img/build-select-10.png){width="750"}
 {align="center"}
