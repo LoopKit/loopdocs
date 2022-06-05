@@ -2114,7 +2114,7 @@
 <p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with an M1 Mac computer, make sure you <a href="../step1/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.</p>
 <p>If you happen to have Xcode open, go on and quit out of Xcode now.</p>
 <h4 id="load-the-paste-buffer">Load the Paste Buffer<a class="headerlink" href="#load-the-paste-buffer" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal and hit the Enter key.</p>
+<p>There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal and return.</p>
 <p>This starts the script, but you will need to read the messages and answer the questions.</p>
 <div class="highlight"><span class="filename">Run the Build-Select script to Clean Profiles & Derived Data</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)&quot;
 </code></pre></div>
@@ -2128,11 +2128,11 @@
 <li>If you have Xcode open, you may get errors.</li>
 </ul>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
-<p>Type 1 and hit Enter to acknowledge the warning.</p>
+<p>Type 1 and return to acknowledge the warning.</p>
 <p align="center"><img alt="select utilities option" src="../img/build-select-02.png" width="750" /></p>
-<p>Type 3 and hit Enter to select <code>Utilities</code>.</p>
+<p>Type 3 and return to select <code>Utilities</code>.</p>
 <p align="center"><img alt="select clean profiles and derived data option" src="../img/build-select-03.png" width="750" /></p>
-<p>Type 3 and hit Enter to select  <code>Clean Profiles &amp; Derived Data</code>. </p>
+<p>Type 3 and return to select  <code>Clean Profiles &amp; Derived Data</code>. </p>
 <p>Once this completes, you should see this in your terminal.</p>
 <p align="center"><img alt="clean utility script completed" src="../img/build-select-04.png" width="750" /></p>
 <p>As long as there are no errors, you are now ready to proceed to <a href="../step14/#download">Build Step 14: Download</a> and continue on that page until you have completed the build.</p>
@@ -2167,7 +2167,7 @@
 <ul>
 <li>Find your Terminal app (in Applications under Utilities)</li>
 <li>Open your Terminal app</li>
-<li>Hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and hit enter</li>
+<li>Hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and return</li>
 </ul>
 <div class="highlight"><span class="filename">Delete Provisioning Profiles</span><pre><span></span><code>rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
 </code></pre></div>
@@ -2220,7 +2220,7 @@
 <p>This may not be necessary, but it is one of the first steps to try if you do get a build error. Since you already have Terminal app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Clean cache and derived data</p>
-<p>Using Terminal app that should still be open from Step 4a, hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and hit enter.</p>
+<p>Using Terminal app that should still be open from Step 4a, hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and return.</p>
 <div class="highlight"><span class="filename">Clean cache and derived data</span><pre><span></span><code>rm -rf ~/Library/Caches/org.carthage.CarthageKit
 rm -rf ~/Library/Developer/Xcode/DerivedData
 </code></pre></div>
