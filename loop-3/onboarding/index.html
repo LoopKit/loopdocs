@@ -2019,8 +2019,8 @@
 </ul>
 <h3 id="therapy-information">Therapy Information<a class="headerlink" href="#therapy-information" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The order of Therapy Setting Information is:</p>
+<h4 id="glucose-safety-limit">Glucose Safety Limit<a class="headerlink" href="#glucose-safety-limit" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
-<li>Glucose Safety Limit<ul>
 <li>Same as suspend threshold for Loop 2.2.x, but with a 3-hour time window</li>
 <li>Code constraint: [67 to 110 mg/dl; 3.7 to 6.1 mmol/L]</li>
 <li>Cannot be adjusted higher than bottom of lowest correction range or your pre-meal range (if those are set)<ul>
@@ -2028,28 +2028,28 @@
 </ul>
 </li>
 </ul>
-</li>
-<li>Correction Range<ul>
+<h4 id="correction-range">Correction Range<a class="headerlink" href="#correction-range" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
 <li>Code constraint: [87 to 180 mg/dl; 4.8 to 10 mmol/L]</li>
 <li>Bottom range can be limited by code constraint AND your selected Glucose Safety Limit</li>
 </ul>
-</li>
-<li>Pre-Meal Range<ul>
+<h4 id="pre-meal-range">Pre-Meal Range<a class="headerlink" href="#pre-meal-range" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
 <li>Code constraint: [up to 130 mg/dl; 7.2 mmol/L]</li>
 <li>Bottom range is limited by your selected Glucose Safety Limit</li>
 </ul>
-</li>
-<li>Basal Rates<ul>
+<h4 id="basal-rates">Basal Rates<a class="headerlink" href="#basal-rates" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
 <li>Limited by your selected pump (or if no pump selected, then generic pump limits apply)</li>
 <li>Limited by Max Basal Rate (if already set)</li>
 </ul>
-</li>
-<li>Delivery Limits<ul>
+<h4 id="delivery-limits">Delivery Limits<a class="headerlink" href="#delivery-limits" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
 <li>Click on each of the limits: Max Basal and Max Bolus to display the picker wheel</li>
 <li>You must first move the picker off the default value before it registers - you can restore the picker to the original level once it has been moved</li>
 </ul>
-</li>
-<li>Insulin Model<ul>
+<h4 id="insulin-model">Insulin Model<a class="headerlink" href="#insulin-model" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
 <li>This offers the selection of either the Adult or Child model which will later be applied to any of the "rapid acting" insulins, e.g., Novolog, Humalog or Apidra</li>
 <li>Later on, during Add pump, you can enter the actual type of insulin used in the pump<ul>
 <li>If you use an "ultra rapid" such as Fiasp or Lyumjev, there is only a single model</li>
@@ -2057,21 +2057,16 @@
 </ul>
 </li>
 </ul>
-</li>
-<li>Carb Ratios</li>
-<li>Insulin Sensitivities</li>
-</ul>
-<div class="admonition danger">
-<p class="admonition-title">The most common question</p>
+<h4 id="carb-ratios">Carb Ratios<a class="headerlink" href="#carb-ratios" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
-<li>How do I enter the type of insulin I use?<ul>
-<li>Therapy Settings -&gt; Insulin Model is used to distinguish between adults and children for "rapid" insulin</li>
-<li>Pump Settings -&gt; Insulin Type is used to select the specific brand of insulin, e.g., Novolog, Humalog, Apidra, Fiasp, Lyumjev, etc</li>
-<li>The ultra-rapid insulins: Fiasp and Lyumjev have only a single model - the adult/child therapy setting selection is irrelevant for those insulin types</li>
+<li>At least one carb ratio must be entered</li>
+<li>A daily schedule with varying carb ratio at different times of day can be entered</li>
 </ul>
-</li>
+<h4 id="insulin-sensitivities">Insulin Sensitivities<a class="headerlink" href="#insulin-sensitivities" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>At least one insulin sensitivity factor (ISF) must be entered</li>
+<li>A daily schedule with varying ISF at different times of day can be entered</li>
 </ul>
-</div>
 <h2 id="onboarding-details">Onboarding Details<a class="headerlink" href="#onboarding-details" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Some of the onboarding screens are shown below. Depending on your device resolution, you may need to scroll down to see the entire screen. Only the top portion of any given screen is shown in these graphics.</p>
 <p>If you have not already read it, please review the <a href="#first-time-using-onboarding">First Time Using Onboarding</a> now.</p>
