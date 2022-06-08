@@ -51,7 +51,7 @@ With Loop-dev, the "old" method still works, but there is a new method for enter
     * The default insulin type is that used by the pump
     * To modify Insulin Type, tap on that row (red dashed lines)
         * Picker wheel allows other insulin models to be selected
-        * _At the current time, no model is in place for Afrezza (but you can customize your code to add it)_
+        * Note that some insulin models, such as Afrezza are only available for non-pump insulin selection
     * Tap on the `Bolus` row (blue dash-dot lines) to bring up a keyboard
         * The `Glucose` prediction chart updates automatically based on the value entered in the Bolus row
         * Tip, add 0.001 to the actual dose to make it easier to see if reviewing in Apple Health
@@ -80,10 +80,6 @@ The bolus following carbs (`Meal Bolus`) and manual bolus (`Bolus`) screens are 
 
 When the `Meal Bolus` screen is entered following a carb entry or edit action, the active button might be `Save and Bolus` or, if no bolus was recommended, `Save without Bolusing`. The `Save` refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen.
 
-Some people reported issues with the overlap between buttons and the keyboard for the `Meal Bolus` screen when choosing an option other than the default.
-
-* There are several topic threads in zulipchat
-* There may be an option added to allow you to save directly from the carb screen and skip the meal bolus screen for that case - but that is not yet available
 
 #### Accept Recommendation
 

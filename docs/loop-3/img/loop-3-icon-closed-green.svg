@@ -8,12 +8,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="199"
-   height="199"
-   viewBox="0 0 199 199"
+   width="220"
+   height="220"
+   viewBox="0 0 220 220"
    version="1.1"
    id="SVGRoot"
-   sodipodi:docname="loop-3-green-icon-closed.svg"
+   sodipodi:docname="loop-3-icon-closed-green.svg"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
   <defs
      id="defs10">
@@ -30,16 +30,51 @@
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
-       id="clipPath1357">
+       id="clipPath3590">
       <rect
-         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#800000;stroke-width:0.999996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-         id="rect1359"
-         width="199"
-         height="199"
-         x="1090"
-         y="83.5"
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         id="rect3592"
+         width="642"
+         height="102"
+         x="815.5"
+         y="944" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1793">
+      <rect
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         id="rect1795"
+         width="99"
+         height="99"
+         x="1053.5"
+         y="946"
          rx="0.5"
          ry="0.5" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3550-6">
+      <rect
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         id="rect3552-1"
+         width="1500"
+         height="232"
+         x="473.5"
+         y="58" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1829">
+      <rect
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+         id="rect1831"
+         width="220"
+         height="220"
+         x="1079.9999"
+         y="64.999939"
+         rx="0.49999997"
+         ry="0.49999997" />
     </clipPath>
   </defs>
   <sodipodi:namedview
@@ -49,9 +84,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.25"
-     inkscape:cx="405.5"
-     inkscape:cy="1050"
+     inkscape:zoom="1"
+     inkscape:cx="123.52348"
+     inkscape:cy="165.50006"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -77,7 +112,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-1106,-83.5)">
+     transform="translate(-1019.4999,-927.99994)">
     <image
        width="1125"
        height="2436"
@@ -86,7 +121,7 @@
        id="image3881"
        x="625.5"
        y="-46"
-       clip-path="url(#clipPath1357)"
-       transform="translate(16)" />
+       clip-path="url(#clipPath1829)"
+       transform="translate(-60.5,863)" />
   </g>
 </svg>

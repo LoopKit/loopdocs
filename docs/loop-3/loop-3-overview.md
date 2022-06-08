@@ -10,25 +10,26 @@ Loop 3.0 will be the next big release. It is being developed and tested under th
 
     To assist folks testing Loop-dev in preparation for the release, this new section, called Loop 3, has been added to the LoopDocs menu structure.
 
-## Main Screen
+## New with Loop 3
 
-The main Loop screen has been updated and simplified.
+Loop 3 provides a major redesign of the app, building off the public portion of some Tidepool work in addition to the DIY contributors. There is a lot of work "under-the-hood" with Loop 3 that may not be obvious to the user, but makes the app more robust.
 
-!!! info "New Look for Home Screen"
-    * The Loop-dev Home screen is designed to provide status at a glance
-    * More detailed information is a quick tap away
-    
+Here are some highlights:
 
-![main loop screen for version 3 when running nominally](img/loop-3-main.svg){width="300"}
-{align="center"}
-
-!!! info "For Pod Users"
-    When the pod is close to expiration, a warning indicator shows up under the pump icon indicating how long pod has been active compared to the 72-hour life. 
-    
-    Once pod has expired, indicator turns red to indicate you have entered the 8-hour grace period before insulin delivery stops.
+* Onboarding protocol with guardrails to assist in configuring settings
+* Streamlined main screen display and user experience
+* Better alerts and notifications
+* Omnipod Dash compatibility
+* Fingerstick blood glucose prompts when data is stale
+* Non-pump insulin entry within the app
+* Remote Carb/Bolus capability
 
 
-For the most part, Loop users will follow the typical Build App, Set up App and Operate instructions. Once Loop-dev is released, links will be added to the Loop 2.2.x pages to indicate when there is a special version of that page for Loop 3.x.
+## Building Loop 3
+
+When Loop 3 is released, the build instructions will be updated (please allow a few days for documentation to catch up.) In the meantime, experienced users are testing Loop-dev and starting with the [Loop-dev](../build/step13.md#advanced-users-only) instructions. Do not build Loop-dev unless you are willing to pay attention to announcements on zulipchat and build frequently (plan on once a week.)
+
+For the most part, Loop users will follow the typical Build App, Set up App and Operate steps. Once Loop-dev is released, links will be added to the Loop 2.2.x pages to indicate when there is a special version of that page for Loop 3.
 
 !!! warning "Users of dev Branch"
     Those "future" links from Loop 2.2.x to this section will be populated over time - it is up to you to review these new pages for the information you need.
