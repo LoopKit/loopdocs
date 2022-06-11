@@ -215,6 +215,22 @@
         
   
   
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../troubleshooting/overview/" class="md-tabs__link">
+        Troubleshoot
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
     
   
 
@@ -1139,8 +1155,16 @@
 
             
           
-            
-              
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
   
   
   
@@ -1148,18 +1172,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_10">
+        <label class="md-nav__link" for="__nav_5">
           Troubleshoot
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Troubleshoot" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_10">
+      <nav class="md-nav" aria-label="Troubleshoot" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Troubleshoot
         </label>
@@ -1268,13 +1292,6 @@
     </li>
   
 
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
     
       
       
@@ -1289,18 +1306,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_6">
           Loop 3
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Loop 3" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Loop 3
         </label>
@@ -1548,18 +1565,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_7">
           Nightscout
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nightscout" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Nightscout
         </label>
@@ -1666,18 +1683,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_7">
+        <label class="md-nav__link" for="__nav_8">
           FAQs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="FAQs" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
+        <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           FAQs
         </label>
@@ -2207,7 +2224,7 @@
 </thead>
 <tbody>
 <tr>
-<td><img alt="starting bolus message" src="img/status-row-starting-bolus.svg" width="350" /></td>
+<td><img alt="starting bolus message" src="../img/status-row-starting-bolus.svg" width="350" /></td>
 </tr>
 <tr>
 <td>When the user issues a manual bolus through the app, a <code>Starting Bolus</code> information message is displayed. Tapping on this message has no action.<br><br>As soon as the app issues a command to the pump (or sends it to the RileyLink to be delivered to the pump), the bolus in progress message appears.</td>
@@ -2219,7 +2236,7 @@
 <td>As soon as a bolus is started, from either a manual command or an automatic bolus, the bolus in progress message is displayed. Tapping on the <code>Status Row</code> causes the app to attempt to cancel the bolus. The app can only cancel a bolus if communication is active between the app and the pump.<br><br>The message says <code>Bolused</code><strong>value</strong><code>of</code><strong>total</strong><code>U</code>. The <strong>value</strong> is based on a timer, so it is possible for an occlusion or other fault to occur while the app indicates bolus is in progress.<br><br>In case of a fault, the user can tap on the pump icon to force a new pump status reading. For the case of pods, this allows you to  silence a screaming pod quickly. Once the app communicates with the pump, the actual delivery status will be updated.</td>
 </tr>
 <tr>
-<td><br><br><img alt="canceling bolus message" src="img/status-row-canceling-bolus.svg" width="350" /></td>
+<td><br><br><img alt="canceling bolus message" src="../img/status-row-canceling-bolus.svg" width="350" /></td>
 </tr>
 <tr>
 <td>If the user taps on the bolus in progress message in the <code>Status Row</code>, the message changes to Canceling Bolus. Tapping on this message has no action.</td>
