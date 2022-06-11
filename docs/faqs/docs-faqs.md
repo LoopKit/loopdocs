@@ -6,13 +6,28 @@ It is totally understandable to be intimidated and worried by the thought of bui
 
 A quick overview of LoopDocs contents is shown below. If you are new to Loop or trying to figure out if you want to Loop, please start at the Overview of LoopDocs and read sequentially.
 
-* [Overview of LoopDocs](../index.md)
+* [Overview of Loop](../index.md)
     * Introduction to Loop
-    * How to Use LoopDocs
-    * Loop Community
-* [Detailed Build Directions](../build/overview.md)]
+    * Disclaimer
+    * Development History
+    * [Finding Help](../index.md#finding-help)
+* [Detailed Build Directions](../build/overview.md)
+    * There is an overview with suggestions for getting started
+    * A step-by-step guide - follow along at your own pace
+    * What to do in case of build errors
+    * How to update your app
 * After you build, [Set up App](../operation/overview.md)
-* And a lot of useful information on operating Loop including adjusting settings
+* After you build and setup the app, [How to Operate](../operation/loop/open-loop.md)
+* And a lot of useful information on operating Loop including adjusting settings can be found both within the LoopDocs website and the companion website [LoopTips](https://loopkit.github.io/looptips/)
+
+### Website Short Cuts
+
+!!! info "URL and Domain Name"
+    Uniform Resource Locator or URL is nothing more than the address of a given unique resource on the Web.
+    
+    A domain name refers to the website address. It can be used to redirect from one address to another.
+
+You may notice the URL for LoopDocs and LoopTips is kind of long and hard to remember. One of our awesome Loop volunteers captured the domain names of `loopdocs.org` and `looptips.org` and those addresses redirect to the official LoopDocs and LoopTips sites. That means all you need to remember to type is `loopdocs` or `looptips` followed by `.org` to get to these valuable websites.
 
 ## This looks so hard. I don't know if I can do it!
 
@@ -35,7 +50,18 @@ If you get stuck, there are several things that can help:
 
 ## So, I build the app and then I'm done?
 
-Nope...we wouldn't just leave you dangling like that. There's also an important walk-thru for how to set up your app for the first time. The new displays and settings are all explained in the "Set up App" section of this website. Check it out and follow along with each page step-by-step, just like you did for building. This way you'll learn valuable tips along the way too. Do similar for the "Operate" section of these docs...those are very helpful for understanding how you will use the app to enter meals, edit entries, bolus, etc.
+Nope...we wouldn't just leave you dangling like that. There's also an important walk-thru for how to set up your app for the first time. The new displays and settings are all explained in the ["Set up App"](../operation/overview.md) section of this website. Check it out and follow along with each page step-by-step, just like you did for building. This way you'll learn valuable tips along the way too. 
 
-![img/setup-app.png](img/setup-app.png){width="700"}
+![items shown in the set up app menu](img/ld-menu-set-up-app.svg){width="250"}
 {align="center"}
+
+Once you have the app set up, continue with the ["Operate"](../operation/loop/open-loop.md) section of these docs. Good idea to at least skim all the pages here, but focus on that Open Loop page.
+
+Once you are familiar with the interface and have your settings adjusted for Loop, then keep going through this section in detail. Those pages are very helpful for understanding how you will use the app to enter meals, edit entries, bolus, etc.
+
+
+![items shown in the operate menu](img/ld-menu-operate.svg){width="300"}
+{align="center"}
+
+Finally, there is a [Troubleshoot](../troubleshooting/overview.md) section. Most of the time, you won't need this, but when you do, you'll be glad of all the loopers before you who helped make this section available.
+

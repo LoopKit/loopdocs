@@ -2,15 +2,19 @@
 
 ## What is Loop?
 
-Click on the image below to watch a short [Introduction to Loop video](https://youtu.be/qw_u1lqboCs).
+If you have never used Loop, click on links below for an introduction. After you're done with that information, click on your browser back button to return to this location. (On the phone, the YouTube video may open in a different window.)
 
-!!! warning "Old Video"
-    * This video was created before the Omnipod version of Loop was released in April 2019 - so yes you can definitely use Omnipod Eros pumps
+[LoopDocs Home Page Introduction](../index.md#introduction)
+
+!!! warning "Classic Video"
+    * This "classic" Katie DiSimone video [Introduction to Loop Video](https://youtu.be/qw_u1lqboCs) was created before the Omnipod version of Loop was released in April 2019 - so yes you can definitely use Omnipod Eros pumps
     * The menus have been rearranged slightly but the overall concept of how to use Loop is demonstrated in this video
     * The workout target shown in the video has been completely reworked as Overrides
 
-[![img/intro-to-loop.png](img/intro-to-loop.png){width="600"}](https://youtu.be/qw_u1lqboCs)
-
+!!! success "New Video"
+    * This newer [What is Loop](https://youtu.be/64qhgnmkyAE) video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) was created by the Loop and Learn Team
+    * Special thanks to Tina and Reese Hammer for the terrific video
+    * Special thanks to Matthew Fouse for the generous use of his beautiful graphics
 
 ## What do I need to Loop?
 
@@ -20,7 +24,7 @@ Loop has both hardware and software requirements. In general, to use Loop you ne
 - [Compatible CGM](../build/step4.md)
 - [RileyLink Compatible Device](../build/step5.md)
 - [Compatible iPhone/iPod Touch](../build/step2.md)
-- [Apple computer, typically Catalina macOS or newer](../build/step1.md#macos)
+- [Apple computer](../build/step1.md#macos)
 - [Xcode (a free Apple application)](../build/step8.md)
 - [Apple Developer Membership](../build/step6.md)
 
@@ -108,7 +112,7 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 There is a [whole page with detailed information about Medtronic pumps](../build/step3.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 
-You can also use Omnipod Eros (not DASH). You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
+You can also use Omnipod Eros (not DASH - yet). You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
 
 ## Can I pay someone else to do this?
 
@@ -130,9 +134,10 @@ When you get a new iPhone, you can plan ahead. The information is found under [U
 
 Hey now...let's be grateful for what we have first. The ability to use Loop is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Cracking the pumps for Loop use is a large undertaking. If and when another set of people spend a large amount of time figuring out other pumps, then they could conceivably be added to Loop. But, you don't need to let us know that you'd love to see more pumps compatible with Loop. So would we. There is just an awful lot of work that needs to happen and it is not easy nor quick.
 
-Tandem pumps are not Loop compatible.
-DASH pods are not Loop compatible.
-Newer Medtronic pumps are not Loop compatible.
+* Tandem pumps are not Loop compatible.
+* DASH pods will be Loop compatible (when Loop 3 is released).
+* Omnipod 5 pods are no Loop compatible.
+* Newer Medtronic pumps are not Loop compatible.
 
 ## Can I have more than one Loop app on a phone?
 
@@ -141,3 +146,5 @@ Yes, technically possible. You can have multiple Loop apps built onto the same i
 ## Will I be able to Loop on a plane? Or in the mountains?
 
 Yes. Loop does not require internet or cell coverage to work. So long as the Loop user has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/Pod.
+
+One exception - if you've chosen to use a CGM source that does require the internet, you will need to have cell or internet coverage. This ability is provided as a service to folks who cannot get their CGM data any other way. It is also a convenience for people testing the code.

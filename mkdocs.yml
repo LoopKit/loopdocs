@@ -91,14 +91,14 @@ nav:
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
         - 'Glucose Prediction': 'operation/algorithm/prediction.md'
         - 'Temp Basal Adjustments': 'operation/algorithm/temp-basal.md'
-    - Troubleshoot:
-        - 'Troubleshooting Overview': 'troubleshooting/overview.md'
-        - 'Loop App crashes': 'troubleshooting/loop-crashing.md'
-        - 'Red Loop': 'troubleshooting/yellow-red-loop.md'
-        - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
-        - 'Time Changes': 'troubleshooting/time-change.md'
-        - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
-        - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
+- Troubleshoot:
+    - 'Troubleshooting Overview': 'troubleshooting/overview.md'
+    - 'Loop App crashes': 'troubleshooting/loop-crashing.md'
+    - 'Red Loop': 'troubleshooting/yellow-red-loop.md'
+    - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
+    - 'Time Changes': 'troubleshooting/time-change.md'
+    - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
+    - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
 - Loop 3:
     - 'Loop 3 Overview': 'loop-3/loop-3-overview.md'
     - 'Loop 3 Onboarding': 'loop-3/onboarding.md'
