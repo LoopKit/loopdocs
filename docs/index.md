@@ -24,6 +24,13 @@ Finally, we highly recommend reading the [FAQs](faqs/docs-faqs.md) pages several
 ![Loop main display on phone](img/phone_updated_loop.svg){width="300"}
 ![Loop watch screen on watch](img/watch_updated_loop.svg){width="300"}
 
+## Disclaimer
+
+While it may seem obvious, please consult with your health care professional regarding your diabetes management. 
+
+* The Loop app is an open source project used by many, but it is not approved for therapy by any government organization. 
+* **You take full responsibility for building and running this system and do so at your own risk.**
+
 ## Development History
 
 Loop is an open-source, shared project. The entire project has been, and continues to be, done by volunteers. From the code to the website, you're getting all this because dozens of volunteers have given their family time, so please add your time by reading this website thoroughly before embarking on your Loop journey.
@@ -37,24 +44,11 @@ In addition to this website, here are links to other resources for you to explor
   * How the Omnipod Eros pods were cracked to work with Loop: [Insulin Pumps, Decapped Chips and Software Defined Radios](https://medium.com/@ps2) written by Loop developer Pete Schwamb and [Deep Dip Teardown of Tubeless Insulin Pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf) by Sergei Skorobogatov
 
 
-!!! warning "Important"
-    Please understand that this project:
-
-    - Is highly experimental
-    - Is not approved for therapy
-
-    **You take full responsibility for building and running this system and do so at your own risk.**
-
 ## Search Tool
 It is not uncommon to have a question about Loop. But, it is exceptionally rare to have the question not already answered in LoopDocs, so please bookmark this website and **SEARCH FOR ANSWERS** using navigation menus or the search tool found in the upper right corner of this website.
 
 Search for topics by clicking the Search tool, or typing the letter `s` on your keyboard. As you begin to type, suggested completions and links to pages are displayed.
     <br/><br/>![example of using search](img/new-look-search-example.png){width="600"}<br/>
-
-
-## Stay in the Loop
-
-or
 
 
 ## Finding Help
