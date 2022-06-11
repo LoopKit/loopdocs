@@ -29,17 +29,6 @@ Yes - if you were paying attention, the suggestion is to go from this page throu
 1. Skim each page
 1. Do the work
 
-### Build Alert:
-
-!!! danger "iOS 15.4 Requires Xcode 13.3 and macOS 12 (Monterey)"
-
-    In March 2022, Apple released iOS 15.4 (phone operating system).  
-
-    * In order to build Loop on an iOS 15.4 device, you must use Xcode 13.3
-    * In order to use Xcode 13.3, you must update your Mac operating system to the current version (Monterey, version 12.x)  
-    * If this terminology confuses you - don't worry, it will be explained step-by-step
-
-
 ## Introduction to Loop Video
 
 If you have never used Loop, click on links below for an introduction.
