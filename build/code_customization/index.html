@@ -634,15 +634,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exponential-insulin-curve" class="md-nav__link">
-    Exponential Insulin Curve
+  <a href="#adjust-percent-bolus-for-automatic-bolus" class="md-nav__link">
+    Adjust Percent Bolus for Automatic Bolus
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#loop-logo" class="md-nav__link">
-    Loop Logo
+  <a href="#modify-override-sensitivity" class="md-nav__link">
+    Modify Override Sensitivity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify-maximum-carb-entry" class="md-nav__link">
+    Modify Maximum Carb Entry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pods-add-extra-insulin-on-insertion" class="md-nav__link">
+    Pods: Add Extra Insulin on Insertion
   </a>
   
 </li>
@@ -684,6 +698,20 @@
         <li class="md-nav__item">
   <a href="#expiration-notification-customization" class="md-nav__link">
     Expiration Notification Customization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exponential-insulin-curve" class="md-nav__link">
+    Exponential Insulin Curve
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-logo" class="md-nav__link">
+    Loop Logo
   </a>
   
 </li>
@@ -1918,15 +1946,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exponential-insulin-curve" class="md-nav__link">
-    Exponential Insulin Curve
+  <a href="#adjust-percent-bolus-for-automatic-bolus" class="md-nav__link">
+    Adjust Percent Bolus for Automatic Bolus
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#loop-logo" class="md-nav__link">
-    Loop Logo
+  <a href="#modify-override-sensitivity" class="md-nav__link">
+    Modify Override Sensitivity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify-maximum-carb-entry" class="md-nav__link">
+    Modify Maximum Carb Entry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pods-add-extra-insulin-on-insertion" class="md-nav__link">
+    Pods: Add Extra Insulin on Insertion
   </a>
   
 </li>
@@ -1968,6 +2010,20 @@
         <li class="md-nav__item">
   <a href="#expiration-notification-customization" class="md-nav__link">
     Expiration Notification Customization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exponential-insulin-curve" class="md-nav__link">
+    Exponential Insulin Curve
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-logo" class="md-nav__link">
+    Loop Logo
   </a>
   
 </li>
@@ -2112,60 +2168,108 @@
 <div class="highlight"><pre><span></span><code>public static let defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes = (fast: .minutes(30), medium: .hours(3), slow: .hours(5))
 </code></pre></div>
 <p>Note that if you change from 2 hours to 30 minutes, you must also change the indication before the parentheses.</p>
-<h2 id="exponential-insulin-curve">Exponential Insulin Curve<a class="headerlink" href="#exponential-insulin-curve" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, and Fiasp) default to an insulin duration of 360 minutes...but the peak activity of the various curves differs, as follows:</p>
-<ul>
-<li>Rapid-acting adult curve peaks at 75 minutes</li>
-<li>Rapid-acting child curve peaks at 65 minutes</li>
-<li>Fiasp peaks curve peaks at 55 minutes</li>
-</ul>
-<p>If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices. For Loop 3 users, the file is in a different submodule and includes more models.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>MARK: - Model generation
+<h2 id="adjust-percent-bolus-for-automatic-bolus">Adjust Percent Bolus for Automatic Bolus<a class="headerlink" href="#adjust-percent-bolus-for-automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you are mostly happy with the Dosing Strategy of Automatic Bolus but wish it delivered more or less insulin during every Loop interval, then this customization is for you.</p>
+<p>This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modified it once and tried it out for a while, it’s easy to go back and change it again.</p>
+<p>With Loop 2.2.x, the end of the line has a comment <code>// %</code>, whereas with Loop 3, there is an explanatory comment (line starting with <code>//</code>) before the line.</p>
+<p><strong>Change just the number and double check that the value is less than 1.</strong></p>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let bolusPartialApplicationFactor
 </code></pre></div>
 <ul>
-<li>Loop 2.2.x<ul>
-<li>Folder: Loop/LoopCore/Insulin</li>
-<li>File: ExponentialInsulinModelPreset.swift</li>
-<li>Lines:<ul>
-<li>actionDuration (20 to 29)</li>
-<li>peakActivity (31 to 40)</li>
-<li>effectDelay (42 to 51)</li>
+<li>
+<p>Loop 2.2.x</p>
+<ul>
+<li>Folder: Loop/LoopCore</li>
+<li>File: LoopSettings.swift</li>
+<li>Line: 89 (2.2.5 and later)</li>
+</ul>
+</li>
+<li>
+<p>Loop 3</p>
+<ul>
+<li>Folder: Loop/Loop/Models</li>
+<li>File: LoopConstants.swift</li>
+<li>Line: 44</li>
 </ul>
 </li>
 </ul>
-</li>
-<li>Loop 3 &lt;&lt; NOTE more models<ul>
-<li>Folder: LoopKit/LoopKit/Insulin/ &lt;&lt; NOTE new location</li>
-<li>File: ExponentialInsulinModelPreset.swift</li>
-<li>Lines:<ul>
-<li>actionDuration (19 to 32)</li>
-<li>peakActivity (34 to 47)</li>
-<li>effectDelay (49 to 62)</li>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>public let bolusPartialApplicationFactor = 0.4
+</code></pre></div>
+<p><em>Code After Modification to 50% of recommended insulin</em></p>
+<div class="highlight"><pre><span></span><code>public let bolusPartialApplicationFactor = 0.5
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Do not exceed 1.0</p>
+<p>This number should never be bigger than 1 (you’d be getting more than Loop recommends). If you think you need more than 1, consider your settings and meal entries.</p>
+</div>
+<h2 id="modify-override-sensitivity">Modify Override Sensitivity<a class="headerlink" href="#modify-override-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Some people want finer settings on the override sensitivity scale and may want to limit the overall range for overrides – especially for children.</p>
+<p>Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An <a href="../../operation/features/workout/">override</a> is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in IOB for the duration of the override.)</p>
+<p>This example customization changes the lower bound for sensitivity to 50% (factor of 2 smaller than 100%) and provides 5% steps.</p>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let allScaleFactorPercentages
+</code></pre></div>
+<ul>
+<li>Loop 2.2.x and Loop 3<ul>
+<li>Folder: LoopKit/LoopKitUI/Views</li>
+<li>File: InsulinSensitivityScalingTableViewCell.swift, Line 19</li>
 </ul>
 </li>
 </ul>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>private let allScaleFactorPercentages = Array(stride(from: 10, through: 200, by: 10))
+</code></pre></div>
+<p><em>Code After Modification to 50% to 200% by steps of 5%</em></p>
+<div class="highlight"><pre><span></span><code>private let allScaleFactorPercentages = Array(stride(from: 50, through: 200, by: 5))
+</code></pre></div>
+<h2 id="modify-maximum-carb-entry">Modify Maximum Carb Entry<a class="headerlink" href="#modify-maximum-carb-entry" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Some people want to limit the maximum number of carbs that can be entered in one entry – especially for children or folks who eat lower carb. This helps prevent accidental typos, e.g., entry of 115 g instead of 15 g for a meal.</p>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>maxQuantity = 
+</code></pre></div>
+<p>As shown in the graphic below, this phrase shows up in 2 places, only the first one should be modified.</p>
+<p align="center"><img alt="xcode display showing the key phrase found in 2 places" src="../img/xcode-modify-max-carb-entry.svg" width="700" /></p>
+<ul>
+<li>Loop 2.2.x and Loop 3<ul>
+<li>Folder: Loop/Loop/View Controllers</li>
+<li>File: CarbEntryViewController.swift, Line 33 (Loop 2.2.x) or 36 (Loop 3)</li>
+</ul>
 </li>
 </ul>
-<p align="center"><img alt="img/exponential.png" src="../img/exponential.png" width="750" /></p>
-<h2 id="loop-logo">Loop Logo<a class="headerlink" href="#loop-logo" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
-<p>Use Finder to Navigate to the LoopWorkspace folder. These instructions assume you used the Build-Select Script - if your files are in a different folder, make the appropriate adjustment.</p>
-<ol>
-<li>Use Finder to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-Master-211006-0524)</li>
-<li>Double-click on the LoopWorkspace folder</li>
-<li>Double-click on the AdditionaAssets.xcassets folder</li>
-<li>Double-click on the CustomLoopIcon.appiconset folder</li>
-<li>Replace the contents of the Appicon.appiconset with your copied images and Contents.json file.</li>
-<li>Rebuild your app</li>
-</ol>
-<p>You may see a yellow alert that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than Loop app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).</p>
-<p>And now you'll be the proud new owner of a custom Loop icon.</p>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>var maxQuantity = HKQuantity(unit: .gram(), doubleValue: 250)
+</code></pre></div>
+<p><em>Code After Modification to limit carb entry to 99 g</em></p>
+<div class="highlight"><pre><span></span><code>var maxQuantity = HKQuantity(unit: .gram(), doubleValue: 99)
+</code></pre></div>
+<h2 id="pods-add-extra-insulin-on-insertion">Pods: Add Extra Insulin on Insertion<a class="headerlink" href="#pods-add-extra-insulin-on-insertion" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The default value is 0.0 u of extra insulin.  If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Loop - be conservative.</p>
+<p>This code change is found in one location for Eros Pods (called Omnipod throughout the app) and DASH Pods (called Omnipod Dash throughout the app). I tend to change both files, but if you're only using one kind of pod, that is really not necessary.</p>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let cannulaInsertionUnitsExtra
+</code></pre></div>
+<ul>
+<li>Eros Pod (ones that require a RileyLink compatible device)<ul>
+<li>Folder: rileylink_ios/OmniKit/Model</li>
+<li>File: Pod.swift, Line 72 (Loop 2.2.x) or 78 (Loop 3)</li>
+</ul>
+</li>
+<li>DASH Pod (Loop 3 only)<ul>
+<li>Folder: OmniBLE/OmniBLE/OmnipodCommon</li>
+<li>File: Pod.swift, Line 82</li>
+</ul>
+</li>
+</ul>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>public static let cannulaInsertionUnitsExtra = 0.0 // edit to add a fixed additional amount of insulin during cannula insertion
+</code></pre></div>
+<p><em>Code After Modification to add 0.35 U</em></p>
+<div class="highlight"><pre><span></span><code>public static let cannulaInsertionUnitsExtra = 0.35 // edit to add a fixed additional amount of insulin during cannula insertion
+</code></pre></div>
 <h2 id="adjust-the-watch-crown-sensitivity">Adjust the Watch Crown Sensitivity<a class="headerlink" href="#adjust-the-watch-crown-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The rate of change of the carb and bolus entry pickers when using the digital crown can be altered as can the rotation required to confirm a bolus on the watch. If you are running an older series watch - you may want to make these customizations. When I switched from Series 3 to Series 7 watch - it was amazing. I got a graph on the main watch screen I didn't even know existed and the bolus acceptance was a breeze!</p>
-<p>There are a number of places where you need to make changes (2 for sensitivity and 2 for bolus confirmation), so walk though them one at a time. For the <code>Watch Crown Sensitivity</code>, the 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that half as many turns would be needed for the same amount of carb or bolus entry.</p>
+<p>There are a number of places where you need to make changes (2 for sensitivity and 2 for bolus confirmation for Loop 2.2.x), so walk though them one at a time. For the <code>Watch Crown Sensitivity</code>, the 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that half as many turns would be needed for the same amount of carb or bolus entry.</p>
 <ul>
-<li>Only the Loop 2.2.x customization has been throughly test by many users.</li>
-<li>The Loop 3 customization is provided from code inspection and a single test - use with care.</li>
+<li>The Loop 2.2.x customizations are throughly tested by many users.</li>
+<li>The Loop 3 customization is provided from code inspection and one test - use with care.</li>
 </ul>
 <h3 id="loop-22x-sensitivity">Loop 2.2.x Sensitivity<a class="headerlink" href="#loop-22x-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let rotationsPerIncrement
@@ -2224,17 +2328,19 @@
 </ul>
 <h2 id="expiration-notification-customization">Expiration Notification Customization<a class="headerlink" href="#expiration-notification-customization" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>An expiration notification feature has been added to Loop. You get a notification when you open the Loop app to alert you that the expiration is approaching. (Not available with version v2.2.4 and earlier.)</p>
-<p>This customization is unchanged for Loop 3.</p>
 <ul>
 <li>Read <a href="../../operation/features/notifications/#loop-app-expiration-notification">Loop App Expiration Notification</a> to see the expiration reminder</li>
 <li>Read <a href="../../operation/features/notifications/#loop-app-expiration-date">Loop App Expiration Date</a> if you have an older version of Loop</li>
 </ul>
 <p>If you prefer a different notification time and frequency, there are two lines you can modify:</p>
 <ul>
+<li>Loop 2.2.x and Loop 3<ul>
 <li>Folder: Loop/Managers</li>
 <li>File: ProfileExpirationAlerter.swift</li>
 <li>Line 16: modify how long before expiration you get the FIRST notification</li>
 <li>Line 28: modify how frequently you will be notified</li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>expirationAlertWindow: TimeInterval
 </code></pre></div>
@@ -2267,21 +2373,70 @@
 <p><div class="highlight"><pre><span></span><code>     &gt; .hours(4) ? .days(10) : .hours(2)
 </code></pre></div>
 Combined with an <code>.hours(12)</code> on line 16, they would get notified at 12 hours, 4 hours and 2 hours before expiration on the day of expiration and only when the app is opened. Since you'll be building once a week, you can play around with these values until you are happy.</p>
-<h2 id="additional-customizations">Additional Customizations<a class="headerlink" href="#additional-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Additional customizations are found on another website. If you did not find the customization you want here on LoopDocs, then try the <a href="https://www.loopandlearn.org/custom-code">Loop and Learn Customization Page</a>. Check that page in case this list is not up to date.</p>
+<h2 id="exponential-insulin-curve">Exponential Insulin Curve<a class="headerlink" href="#exponential-insulin-curve" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, and Fiasp) default to an insulin duration of 360 minutes...but the peak activity of the various curves differs, as follows:</p>
 <ul>
-<li>Add Lyumjev Insulin Model</li>
-<li>Adjust Percent Bolus for Automatic Dosing Strategy</li>
-<li>Pods: Increase Log File History Hours</li>
-<li>These Require Workspace Builds (which are now standard)<ul>
-<li>Modify Override Sensitivity</li>
-<li>Medtronic: Disable mySentry (Current Loop removes need for this)</li>
-<li>Pods: Add Extra Insulin on Insertion</li>
-<li>Pods: Change Default Expiration Reminder</li>
+<li>Rapid-acting adult curve peaks at 75 minutes</li>
+<li>Rapid-acting child curve peaks at 65 minutes</li>
+<li>Fiasp peaks curve peaks at 55 minutes</li>
+</ul>
+<p>If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices. For Loop 3 users, the file is in a different submodule and includes more models.</p>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>MARK: - Model generation
+</code></pre></div>
+<ul>
+<li>Loop 2.2.x<ul>
+<li>Folder: Loop/LoopCore/Insulin</li>
+<li>File: ExponentialInsulinModelPreset.swift</li>
+<li>Lines:<ul>
+<li>actionDuration (20 to 29)</li>
+<li>peakActivity (31 to 40)</li>
+<li>effectDelay (42 to 51)</li>
 </ul>
 </li>
 </ul>
-<p>Note that the other site will point you right back to LoopDocs if the customization is found on this LoopDocs customization page.</p>
+</li>
+<li>Loop 3 &lt;&lt; NOTE more models<ul>
+<li>Folder: LoopKit/LoopKit/Insulin/ &lt;&lt; NOTE new location</li>
+<li>File: ExponentialInsulinModelPreset.swift</li>
+<li>Lines:<ul>
+<li>actionDuration (19 to 32)</li>
+<li>peakActivity (34 to 47)</li>
+<li>effectDelay (49 to 62)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="img/exponential.png" src="../img/exponential.png" width="750" /></p>
+<h2 id="loop-logo">Loop Logo<a class="headerlink" href="#loop-logo" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
+<p>Use Finder to Navigate to the LoopWorkspace folder. These instructions assume you used the Build-Select Script - if your files are in a different folder, make the appropriate adjustment.</p>
+<ol>
+<li>Use Finder to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-Master-211006-0524)</li>
+<li>Double-click on the LoopWorkspace folder</li>
+<li>Double-click on the AdditionaAssets.xcassets folder</li>
+<li>Double-click on the CustomLoopIcon.appiconset folder</li>
+<li>Replace the contents of the Appicon.appiconset with your copied images and Contents.json file.</li>
+<li>Rebuild your app</li>
+</ol>
+<p>You may see a yellow alert that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than Loop app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).</p>
+<p>And now you'll be the proud new owner of a custom Loop icon.</p>
+<h2 id="additional-customizations">Additional Customizations<a class="headerlink" href="#additional-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Additional customizations may be found on another website, especially for older versions of the app. If you did not find the customization you want here on LoopDocs, then try the <a href="https://www.loopandlearn.org/custom-code">Loop and Learn Customization Page</a>. Check that page in case this list is not up to date.</p>
+<ul>
+<li>Add Lyumjev Insulin Model (this is only needed for Loop 2.2.x, included in Loop 3)</li>
+<li>Pods: Increase Log File History Hours (only needed for Loop 2.2.x)</li>
+<li>Medtronic: Disable mySentry (only needed for older versions of Loop 2.2.x)</li>
+<li>Pods: Change Default Expiration Reminder (only needed for Loop 2.2.x)</li>
+<li>Emoji Modifications</li>
+<li>Disable Suspend Beeps (only needed for Loop 2.2.x)</li>
+</ul>
+<p>These two customizations for Loop 3 will be moved to LoopDocs soon:</p>
+<ul>
+<li>Loop 3: Adjust Future Carbs Time Interval</li>
+<li>Loop 3: Adjust Guardrails</li>
+</ul>
+<p>Note that the other site has an index that points back to LoopDocs if the customization is found on this page.</p>
                 
               
               
