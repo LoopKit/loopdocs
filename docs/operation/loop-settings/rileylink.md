@@ -1,6 +1,6 @@
 # RileyLink
 
-The RileyLink (or compatible device) screen is accessed by clicking on the image of your connected pump in Loop settings or the Pod icon in the Heads Up Display to bring up the associated pump screen. From that screen, scroll down to the section labeled `DEVICES` to view the list of connected RileyLink compatible device(s). Tapping on a name with a green slider by it takes you to the RileyLink screen for that device.
+The RileyLink (or compatible device) screen is accessed by clicking on the image of your connected pump in Loop settings or the pump icon in the Heads Up Display to bring up the associated pump screen. From that screen, scroll down to the section labeled `DEVICES` to view the list of connected RileyLink compatible device(s). Tapping on a name with a green slider by it takes you to the RileyLink screen for that device.
 
 !!! info "Helpful Tip - Personalize Your Device"
     As soon as you connect the device initially - it is strongly encouraged that you rename it from the default name for that device, e.g., RileyLink or OrangeLink or EmaLink. Tap on the device as directed above, then tap on the Name line and enter your desired name. The new name may need to sit for a few seconds before exiting back out of the naming screen for it to be transferred and saved in the device. The device must be connected and on to change its name.
