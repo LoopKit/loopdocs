@@ -4,11 +4,6 @@ This LoopDocs page is for Loop 3.
 
 For Loop v2.2.x, follow this link: [Loop v2.2.x Displays](../operation/loop-settings/displays.md).
 
-!!! warning "Work In Progress"
-    This page is under development. Some of the graphics are not provided.
-
-    However, the alternative text description is provided in all cases.  (For those who do not know, the alt text is read aloud to users by screen reader software, and it is indexed by search engines. It also displays on the page if the graphic fails to load, so you will see alt-text instead of a graphic for those cases where the graphic has not been added yet.)
-
 ## Main Loop Screen
 
 The main Loop screen contains a Heads-Up Display ([HUD](#heads-up-display)) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom.
