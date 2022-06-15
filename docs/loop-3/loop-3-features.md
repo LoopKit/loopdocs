@@ -1,5 +1,10 @@
 # Features
 
+!!! danger "work in progress"
+    This page will be deleted after all the relevant information is incorporated into the appropriate locations. This may not happen until after the release of Loop-dev as Loop 3 documentation.
+    
+    It is intended to assist folks testing Loop-dev.
+
 This page discusses updated versions of Loop features as well as new capabilities provided with Loop-dev.
 
 !!! info "Loop-dev Displays"
@@ -9,12 +14,6 @@ This page discusses updated versions of Loop features as well as new capabilitie
     
     There are other screens, like the Onboarding and Therapy Settings screens, where you should read all the provided information.  Those screens require you to scroll to the bottom before being able to hit `Continue` or `Save`.
 
-
-## Carb Data Source
-
-Loop 3 does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, will be added to the documentation later. For now search in zulipchat.
-
-Users who build Loop-dev over Master, may find a permission switch to give Loop permission to read carb data from health, but without making the customization mentioned above, changing permission does not change the behavior of Loop.
 
 ## Non-Pump Insulin
 

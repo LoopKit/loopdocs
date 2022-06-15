@@ -1,6 +1,15 @@
-# Omnipod DASH Pump
+# Omnipod and Omnipod DASH Pump
 
 A [video is found here for pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing). Once the pod starts priming, you may want to skip ahead in the video (it takes about a minute to prime).
+
+!!! danger "work in progress"
+    Very soon the Loop-dev version of the user interface for the Omnipod (also know as Eros) and Omnipod DASH pumps will be identical except for the addition of the RileyLink Section needed for Omnipod.
+    
+    * Omnipod means Eros pods that require a RileyLink compatible device
+    * Omnipod DASH mean pods that use the phone Bluetooth directly
+    * This is in keeping with the naming convention used by Insulet
+    
+    This page will be renamed and updated later - just letting you know what is coming soon.
 
 ## DASH Overview
 

@@ -9,6 +9,15 @@ Loop 3.0 will be the next big release. It is being developed and tested under th
     When this version is released, it will be Loop 3.0 and the interface for Loop 3.x versions will use this updated documentation.
 
     To assist folks testing Loop-dev in preparation for the release, this new section, called Loop 3, has been added to the LoopDocs menu structure.
+    
+    The pages, starting with Onboarding will move over to Set Up App (with some exceptions). Some information under Loop 3 will be incorporated into the releases page.
+
+!!! danger ""
+
+    To make life easier for those of us preparing the new documentation, the wording on many pages in the Loop 3 section is set in the future - after the release.
+    
+    This page will be removed and the rest of the Loop 3 section will be moved to Set Up App with the Loop 2.2.x version maintained under a sub-menu
+
 
 ## New with Loop 3
 
