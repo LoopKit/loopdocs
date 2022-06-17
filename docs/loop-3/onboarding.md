@@ -127,7 +127,7 @@ If your normal target is 100-110 mg/dL and pre-meal target is 80-80 mg/dL, for e
 
 Only one basal schedule may be configured in the Loop app and the schedule must start at midnight. 
 
-As a new Looper onboarding with Loop, or anyone onboarding basal rates before a pump is added, you are limited to increments of 0.05 U/hr for basal rates and 0.00 U/hr is not allowed. Put values close to what you actually use because the values entered here affect what is allowed as a maximum basal rate in the [Delivery Limits](#deliver-limits) section.
+As a new Looper onboarding with Loop, or anyone onboarding basal rates before a pump is added, you are limited to increments of 0.05 U/hr for basal rates and 0.00 U/hr is not allowed. Put values close to what you actually use because the values entered here affect what is allowed as a maximum basal rate in the [Delivery Limits](#delivery-limits) section.
 
 Once a pump is added, the basal increments will match that for your particular pump. Once you complete onboarding and add your pump, you can then return to Therapy Settings and adjust the Basal rates for your particular pump.
 
@@ -231,7 +231,7 @@ You will be presented with an information screen describing the setting (with a 
 
 !!! warning "WARNING"
 
-    The new onboarding forces you to check all your imported [Therapy Settings](#therapy-information) but there may be other settings you need to check as well.
+    The new onboarding forces you to check all your imported [Therapy Settings](#therapy-settings) but there may be other settings you need to check as well.
 
     * Dosing Strategy: may be at the default value of `Temp Basal Only`, even if you were using `Automatic Bolus` with Loop 2.x.x
     * Overrides: verify these are populated as expected

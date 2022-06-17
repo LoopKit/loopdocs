@@ -75,7 +75,7 @@ The bolus following carbs (`Meal Bolus`) and manual bolus (`Bolus`) screens are 
     * The blue color indicates an active button, whereas a grey button is inactive.
     * The value displayed on the `Bolus` row is blue to indicate if you tap on that, you can edit the value
 
-### Meal Bolus Screen
+### Meal Bolus
 
 When the `Meal Bolus` screen is entered following a carb entry or edit action, the active button might be `Save and Bolus` or, if no bolus was recommended, `Save without Bolusing`. The `Save` refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen.
 
@@ -119,7 +119,7 @@ This section is a continuation of the information presented in the [Accept Recom
 {align="center"}
 
 
-### Manual Bolus Screen
+### Manual Bolus
 
 When the `Bolus` screen is entered directly from the toolbar, the button choices are `Enter Bolus` if none is recommended, `Deliver` if a value is on the `Bolus` row or `Cancel` using the button on the upper left. The user can also tap on the value on the `Bolus` row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
 
