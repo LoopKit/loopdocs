@@ -23,7 +23,7 @@ There's a lot to learn and understand. Take the time you need so you can safely 
 * Meal Entry:
     * In Loop, you enter carbs and then are taken to a meal bolus screen at which you can save the carbs or save the carbs and bolus
     * [Link for Loop 2.2.x Meal Entry](../features/carbs.md)
-    * If running Loop-dev, understand the link for Loop 2.2.x Meal Entry (above) and then review the [Meal Bolus](../../loop-3/loop-3-features.md#meal-bolus-screen) features that are updated
+    * If running Loop-dev, understand the link for Loop 2.2.x Meal Entry (above) and then review the [Meal Bolus](../../loop-3/loop-3-features.md#meal-bolus) features that are updated
     * You should investigate entering a Meal to understand the interface and examine the recommended bolus for that meal
         * Does the recommendation make sense to you based on your prior experience
         * Practice modifying when the carbs are expected and how long they are expected to last
@@ -33,7 +33,7 @@ There's a lot to learn and understand. Take the time you need so you can safely 
 * Manual Correction:
     * The manual correction suggested by Loop is based on the glucose prediction line, your glucose safety limit, your correction range and your Settings
     * [Link for Loop 2.2.x Manual Bolus](../features/bolus.md)
-    * [Link for Loop 3 Manual Bolus](../../loop-3/loop-3-features.md#manual-bolus-screen)
+    * [Link for Loop 3 Manual Bolus](../../loop-3/loop-3-features.md#manual-bolus)
 
 ## Testing
 
