@@ -1,5 +1,10 @@
 # Features
 
+!!! danger "work in progress"
+    This page will be deleted after all the relevant information is incorporated into the appropriate locations. This may not happen until after the release of Loop-dev as Loop 3 documentation.
+    
+    It is intended to assist folks testing Loop-dev.
+
 This page discusses updated versions of Loop features as well as new capabilities provided with Loop-dev.
 
 !!! info "Loop-dev Displays"
@@ -9,12 +14,6 @@ This page discusses updated versions of Loop features as well as new capabilitie
     
     There are other screens, like the Onboarding and Therapy Settings screens, where you should read all the provided information.  Those screens require you to scroll to the bottom before being able to hit `Continue` or `Save`.
 
-
-## Carb Data Source
-
-Loop 3 does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, will be added to the documentation later. For now search in zulipchat.
-
-Users who build Loop-dev over Master, may find a permission switch to give Loop permission to read carb data from health, but without making the customization mentioned above, changing permission does not change the behavior of Loop.
 
 ## Non-Pump Insulin
 
@@ -76,7 +75,7 @@ The bolus following carbs (`Meal Bolus`) and manual bolus (`Bolus`) screens are 
     * The blue color indicates an active button, whereas a grey button is inactive.
     * The value displayed on the `Bolus` row is blue to indicate if you tap on that, you can edit the value
 
-### Meal Bolus Screen
+### Meal Bolus
 
 When the `Meal Bolus` screen is entered following a carb entry or edit action, the active button might be `Save and Bolus` or, if no bolus was recommended, `Save without Bolusing`. The `Save` refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen.
 
@@ -120,7 +119,7 @@ This section is a continuation of the information presented in the [Accept Recom
 {align="center"}
 
 
-### Manual Bolus Screen
+### Manual Bolus
 
 When the `Bolus` screen is entered directly from the toolbar, the button choices are `Enter Bolus` if none is recommended, `Deliver` if a value is on the `Bolus` row or `Cancel` using the button on the upper left. The user can also tap on the value on the `Bolus` row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
 

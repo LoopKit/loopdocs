@@ -4,11 +4,6 @@ This LoopDocs page is for Loop 3.
 
 For Loop v2.2.x, follow this link: [Loop v2.2.x Displays](../operation/loop-settings/displays.md).
 
-!!! warning "Work In Progress"
-    This page is under development. Some of the graphics are not provided.
-
-    However, the alternative text description is provided in all cases.  (For those who do not know, the alt text is read aloud to users by screen reader software, and it is indexed by search engines. It also displays on the page if the graphic fails to load, so you will see alt-text instead of a graphic for those cases where the graphic has not been added yet.)
-
 ## Main Loop Screen
 
 The main Loop screen contains a Heads-Up Display ([HUD](#heads-up-display)) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom.
@@ -156,7 +151,7 @@ The table below shows examples for a few nominal Pump Status Icons and Alert mes
 |![pump alert - yellow pause indicator that pump is suspended](img/loop-3-pump-alert-suspended.svg){width="175"}|This alert message indicates all insulin delivery has been suspended. <br><br>A [Status Row](#hud-status-row) message appears to enable the user to resume delivery with one tap. <br><br>Alternatively, insulin can be resumed by tapping on the Pump Icon to enter the Pump Setting display and resume from that screen.|
 |![pump alert - yellow exclamation point with phrase manual basal](img/loop-3-pump-alert-mtb.svg){width="175"}|This alert message indicates the user has initiated a manual temp basal (MTB). While the MTB is active, the Loop Icon Status will also display an Open Loop symbol to indicate no automatic adjustments are made until MTB expires or is canceled. <br><br>The lifecycle indicator across the bottom of the pod status indicates a pod within the final 24 hours of nominal life.<br><br>Tapping on the icon takes the user to the pump settings display where the rate and duration of the MTB are displayed.|
 |![pump alert - red exclamation point with phrase no data](img/loop-3-pump-alert-no-data.svg){width="175"}|This alert message indicates it has been more than 15 minutes since the app was able to communicate with the pump.<br><br>Follow these [troubleshooting](../troubleshooting/yellow-red-loop.md) steps.|
-|![pump alert - red plus sign with phrase add pump](img/loop-3-pump-alert-add-pump.svg){width="175"}|This alert message indicates no pump has been added. <br><br>Follow the instruction for adding a pump: [Medtronic](../operation/loop-settings/mdt-pump.md), [Eros](../operation/loop-settings/omnipod-pump.md) or [DASH](dash-pump.md).|
+|![pump alert - red plus sign with phrase add pump](img/loop-3-pump-alert-add-pump.svg){width="175"}|This alert message indicates no pump has been added. <br><br>Follow the instruction for [adding a pump](loop-3-pump.md#add-pump).|
 
 ### HUD Status Row
 
@@ -180,7 +175,7 @@ The Status Row is located immediately below the CGM, Loop and Pump Icons and is 
 |<br><br>![insulin suspended message](img/status-row-pump-suspended.svg){width="350"}|
 |As soon the app determines that the pump is suspended, the `Insulin Suspended, Tap to Resume` message is displayed. Tapping on the `Status Row` resumes scheduled basal delivery if communication is active between the app and the pump.<br><br>Medtronic pump users who suspend directly on the pump will notice a delay before this message is displayed. It is best to use the app Pump Settings screen to suspend the pump.|
 |<br><br>![no recent glucose - tap to add message](img/status-row-glucose-stale.svg){width="350"}|
-|If a higher priority message is not displayed in the `Status Row` and the glucose value is stale (more than 15 minutes old), the `No Recent Glucose, Tap to Add` message is displayed. Tapping on the `Status Row` opens the [Bolus](loop-3-features.md#manual-bolus-screen) screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap `Save Without Bolusing`. However, be aware that, in Closed Loop mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.|
+|If a higher priority message is not displayed in the `Status Row` and the glucose value is stale (more than 15 minutes old), the `No Recent Glucose, Tap to Add` message is displayed. Tapping on the `Status Row` opens the [Manual Bolus](loop-3-features.md#manual-bolus) screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap `Save Without Bolusing`. However, be aware that, in Closed Loop mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.|
 |<br><br>![override symbol and name with until time stamp message](img/status-row-override.svg){width="350"}|
 |If a higher priority message is not displayed in the `Status Row` and an override is active, the override symbol and name along with the time at which the override expires is displayed. <br><br>Tapping on the `Status Row` opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the [Overrides](../operation/features/workout.md) instructions.|
 |<br><br>![Pre-meal Preset message with until time stamp message](img/status-row-pre-meal.svg){width="350"}|

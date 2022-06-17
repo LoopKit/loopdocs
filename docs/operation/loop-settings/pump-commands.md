@@ -7,8 +7,6 @@ To bring up the Pod/Pump Settings display, tap on the reservoir icon in the Head
 
     Documentation and screens in the app indicate DASH explicitly.
 
-    Click this link to learn about [Omnipod DASH Commands](../../loop-3/dash-pump.md)
-
 ## Change Time Zone
 
 The schedules for the basal rates, correction ranges, insulin sensitivity factors and carb ratios stay at the pump time even if the user and their phone change time zones or when daylight savings time occurs.  To bring the pump into the same time zone as the phone, use this command in Loop. (Medtronic users - do NOT adjust time on your pump - always go through Loop.)
