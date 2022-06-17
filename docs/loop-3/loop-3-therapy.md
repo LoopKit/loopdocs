@@ -2,8 +2,11 @@
 
 Loop 3 has a special Therapy Settings screen. All the settings configured under Therapy Settings are protected by the same authorization method (FaceID, Fingerprint or Passcode) used to enable the app to issue a manual bolus.
 
+The Therapy Settings were summarized under [Onboarding](onboarding.md#therapy-settings). This page provides more details about each setting.  Please come back to this page after using the app in [Open Loop](../operation/loop/open-loop.md) and review the concepts before enabling [Closed Loop](../operation/loop/close-loop.md).
 
-This is a placeholder page - more to come.
+!!! danger "Placeholder"
+
+    This is a placeholder page - expect revisions.
 
 The order of Therapy Setting Information is:
 
