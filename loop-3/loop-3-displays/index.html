@@ -1355,6 +1355,62 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../loop-3-therapy/" class="md-nav__link">
+        Loop 3 Therapy Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-3-settings/" class="md-nav__link">
+        Loop 3 Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-3-cgm/" class="md-nav__link">
+        Loop 3 Add CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-3-pump/" class="md-nav__link">
+        Loop 3 Add Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -1484,8 +1540,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-settings/" class="md-nav__link">
-        Loop 3 Settings
+      <a href="../loop-3-omnipod/" class="md-nav__link">
+        Loop 3 Omnipod
       </a>
     </li>
   
@@ -1500,48 +1556,6 @@
     <li class="md-nav__item">
       <a href="../loop-3-features/" class="md-nav__link">
         Loop 3 Features
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../loop-3-cgm/" class="md-nav__link">
-        Loop 3 Add CGM
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../loop-3-pump/" class="md-nav__link">
-        Loop 3 Add Pump
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dash-pump/" class="md-nav__link">
-        Loop 3 DASH Pump
       </a>
     </li>
   
@@ -1981,11 +1995,6 @@
                 <h1 id="loop-3-displays">Loop 3 Displays<a class="headerlink" href="#loop-3-displays" title="Anchor link to this Header on this Page">&para;</a></h1>
 <p>This LoopDocs page is for Loop 3.</p>
 <p>For Loop v2.2.x, follow this link: <a href="../../operation/loop-settings/displays/">Loop v2.2.x Displays</a>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Work In Progress</p>
-<p>This page is under development. Some of the graphics are not provided.</p>
-<p>However, the alternative text description is provided in all cases.  (For those who do not know, the alt text is read aloud to users by screen reader software, and it is indexed by search engines. It also displays on the page if the graphic fails to load, so you will see alt-text instead of a graphic for those cases where the graphic has not been added yet.)</p>
-</div>
 <h2 id="main-loop-screen">Main Loop Screen<a class="headerlink" href="#main-loop-screen" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The main Loop screen contains a Heads-Up Display (<a href="#heads-up-display">HUD</a>) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom.</p>
 <p align="center"><img alt="main loop screen when running nominally with annotation for heads-up-display, charts and toolbar" src="../img/loop-3-main-annotated.svg" width="450" /></p>
@@ -2201,7 +2210,7 @@
 </tr>
 <tr>
 <td><img alt="pump alert - red plus sign with phrase add pump" src="../img/loop-3-pump-alert-add-pump.svg" width="175" /></td>
-<td>This alert message indicates no pump has been added. <br><br>Follow the instruction for adding a pump: <a href="../../operation/loop-settings/mdt-pump/">Medtronic</a>, <a href="../../operation/loop-settings/omnipod-pump/">Eros</a> or <a href="../dash-pump/">DASH</a>.</td>
+<td>This alert message indicates no pump has been added. <br><br>Follow the instruction for <a href="../loop-3-pump/#add-pump">adding a pump</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -2251,7 +2260,7 @@
 <td><br><br><img alt="no recent glucose - tap to add message" src="../img/status-row-glucose-stale.svg" width="350" /></td>
 </tr>
 <tr>
-<td>If a higher priority message is not displayed in the <code>Status Row</code> and the glucose value is stale (more than 15 minutes old), the <code>No Recent Glucose, Tap to Add</code> message is displayed. Tapping on the <code>Status Row</code> opens the <a href="../loop-3-features/#manual-bolus-screen">Bolus</a> screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap <code>Save Without Bolusing</code>. However, be aware that, in Closed Loop mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.</td>
+<td>If a higher priority message is not displayed in the <code>Status Row</code> and the glucose value is stale (more than 15 minutes old), the <code>No Recent Glucose, Tap to Add</code> message is displayed. Tapping on the <code>Status Row</code> opens the <a href="../loop-3-features/#manual-bolus">Manual Bolus</a> screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap <code>Save Without Bolusing</code>. However, be aware that, in Closed Loop mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.</td>
 </tr>
 <tr>
 <td><br><br><img alt="override symbol and name with until time stamp message" src="../img/status-row-override.svg" width="350" /></td>
@@ -2291,7 +2300,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../onboarding/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loop 3 Onboarding" rel="prev">
+        <a href="../loop-3-pump/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loop 3 Add Pump" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2300,20 +2309,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Loop 3 Onboarding
+              Loop 3 Add Pump
             </div>
           </div>
         </a>
       
       
         
-        <a href="../loop-3-settings/" class="md-footer__link md-footer__link--next" aria-label="Next: Loop 3 Settings" rel="next">
+        <a href="../loop-3-omnipod/" class="md-footer__link md-footer__link--next" aria-label="Next: Loop 3 Omnipod" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Loop 3 Settings
+              Loop 3 Omnipod
             </div>
           </div>
           <div class="md-footer__button md-icon">
