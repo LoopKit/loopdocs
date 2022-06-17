@@ -107,7 +107,7 @@ nav:
     - 'Loop 3 Add CGM': 'loop-3/loop-3-cgm.md'
     - 'Loop 3 Add Pump': 'loop-3/loop-3-pump.md'
     - 'Loop 3 Displays': 'loop-3/loop-3-displays.md'
-    - 'Loop 3 Omnipod': loop-3/dash-pump.md
+    - 'Loop 3 Omnipod': loop-3/loop-3-omnipod.md
     - 'Loop 3 Features': loop-3/loop-3-features.md
 - Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'
