@@ -11,6 +11,7 @@ theme:
         - search.suggest
         - search.highlight
         - content.code.annotate
+        - content.tooltips
     logo: loop-logo.png
     favicon: loop-logo.png
 
@@ -23,12 +24,15 @@ extra_css:
 
 markdown_extensions:
     - meta
+    - abbr
     - admonition
     - attr_list
     - pymdownx.highlight
     - pymdownx.inlinehilite
     - pymdownx.superfences
-    - pymdownx.snippets
+    - pymdownx.snippets:
+        auto_append:
+            - includes/abbreviations.md
     - toc:
         permalink: true
         permalink_title: Anchor link to this Header on this Page
