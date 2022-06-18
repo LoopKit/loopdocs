@@ -2048,14 +2048,14 @@
 <div class="admonition info">
 <p class="admonition-title">Time Estimate</p>
 <ul>
-<li>25 minutes, if Xcode and macOS are updated</li>
-<li>up to 2 days, if need to install macOS and / or Xcode update(s)</li>
+<li>25 minutes, if <abbr title="program used to build an app">Xcode</abbr> and macOS are updated</li>
+<li>up to 2 days, if need to install macOS and / or <abbr title="program used to build an app">Xcode</abbr> update(s)</li>
 </ul>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Summary</p>
 <ul>
-<li>Step 1: Install macOS and Xcode updates based on your phone iOS</li>
+<li>Step 1: Install macOS and <abbr title="program used to build an app">Xcode</abbr> updates based on your phone iOS</li>
 <li>Step 2: Check your Developer Account</li>
 <li>Step 4a and 4b: Delete provisioning profiles and derived data</li>
 <li>Download Updated Loop code and Build Loop<ul>
@@ -2080,56 +2080,56 @@
 <p>Under ordinary circumstance, updating the iOS on your phone does not require a rebuild of the app on your phone. However, it's important to be prepared in case of an emergency, such as a lost phone.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Best Practice</p>
-<p>It is good practice to first check if your computer (macOS or Xcode) will require an update to support building Loop to your phone BEFORE applying an iOS update to your Looping phone. </p>
+<p>It is good practice to first check if your computer (macOS or <abbr title="program used to build an app">Xcode</abbr>) will require an update to support building Loop to your phone BEFORE applying an iOS update to your Looping phone. </p>
 <p>Follow these "safe Looping" steps for updating your iOS:</p>
 <ol>
-<li>Check which <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">version of macOS and Xcode</a> is required for the phone iOS you intend to install.</li>
-<li><a href="./#step-1-install-macos-and-xcode-updates">Update macOS / Xcode if needed</a></li>
+<li>Check which <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">version of macOS and <abbr title="program used to build an app">Xcode</abbr></a> is required for the phone iOS you intend to install.</li>
+<li><a href="./#step-1-install-macos-and-xcode-updates">Update macOS / <abbr title="program used to build an app">Xcode</abbr> if needed</a></li>
 <li>Check <a href="../../faqs/release-faqs/#current-release">Loop: Current Release</a> status - if there is new code, you should download it</li>
 <li>Build app to your iPhone</li>
 <li>Then update your iPhone iOS</li>
 </ol>
 </div>
 <p><a href="../../faqs/release-faqs/#loop-releases">Loop Releases</a> provides information about current and previous Loop versions.</p>
-<p>The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process. If you do not update and the "provisioning profile" on your phone expires, you will see this message:</p>
+<p>The apps built and signed by you in <abbr title="program used to build an app">Xcode</abbr> with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process. If you do not update and the "provisioning profile" on your phone expires, you will see this message:</p>
 <h3 id="loop-is-no-longer-available">"Loop" is No Longer Available<a class="headerlink" href="#loop-is-no-longer-available" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>When you see "Loop" is No Longer Available on your phone, the only solution is to rebuild the app.  All of your settings are still present on your phone, but your "provisioning profile" expired and you need to generate a new one. Once you build Loop on your phone, following the instructions on this page, all your settings will be maintained - assuming you build with the same <a href="../../faqs/FAQs/#what-happens-when-i-switch-apple-developer-id">Apple Developers ID</a> that was used initially.</p>
 <div class="admonition warning">
 <p class="admonition-title">iOS 15 Warning - Check Before You Update</p>
-<p>DO NOT INSTALL iOS 15 on your phone without first <a href="#when-to-update-loop">updating</a> Loop if the Xcode version used to build your Loop app is 12D or earlier - the Loop app will stop working and you will have to rebuild Loop.</p>
-<p>Follow this link, <a href="../../faqs/update-faqs/#how-can-i-confirm-xcode-version-i-used">Xcode version</a>, for instructions to determine what version was used when building the Loop app currently on your phone.</p>
+<p>DO NOT INSTALL iOS 15 on your phone without first <a href="#when-to-update-loop">updating</a> Loop if the <abbr title="program used to build an app">Xcode</abbr> version used to build your Loop app is 12D or earlier - the Loop app will stop working and you will have to rebuild Loop.</p>
+<p>Follow this link, <a href="../../faqs/update-faqs/#how-can-i-confirm-xcode-version-i-used"><abbr title="program used to build an app">Xcode</abbr> version</a>, for instructions to determine what version was used when building the Loop app currently on your phone.</p>
 </div>
-<h2 id="step-1-install-macos-and-xcode-updates">Step 1: Install macOS and Xcode updates<a class="headerlink" href="#step-1-install-macos-and-xcode-updates" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h3 id="determine-required-xcode-and-macos-versions">Determine Required Xcode and macOS Versions<a class="headerlink" href="#determine-required-xcode-and-macos-versions" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum Xcode version required for your phone iOS, you cannot build on that phone. Sometimes you must also update the macOS version to allow you to use the required Xcode version.</p>
-<p>Based on the iOS on your phone, or the iOS you plan to install on your phone, determine the required macOS and Xcode versions. Click on this  link <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">versions for iOS, macOS and Xcode</a> to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.</p>
+<h2 id="step-1-install-macos-and-xcode-updates">Step 1: Install macOS and <abbr title="program used to build an app">Xcode</abbr> updates<a class="headerlink" href="#step-1-install-macos-and-xcode-updates" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="determine-required-xcode-and-macos-versions">Determine Required <abbr title="program used to build an app">Xcode</abbr> and macOS Versions<a class="headerlink" href="#determine-required-xcode-and-macos-versions" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum <abbr title="program used to build an app">Xcode</abbr> version required for your phone iOS, you cannot build on that phone. Sometimes you must also update the macOS version to allow you to use the required <abbr title="program used to build an app">Xcode</abbr> version.</p>
+<p>Based on the iOS on your phone, or the iOS you plan to install on your phone, determine the required macOS and <abbr title="program used to build an app">Xcode</abbr> versions. Click on this  link <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">versions for iOS, macOS and <abbr title="program used to build an app">Xcode</abbr></a> to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.</p>
 <p>Minimum means you need to have at least that version - newer versions build just fine.</p>
 <h3 id="verify-update-macos">Verify / Update macOS<a class="headerlink" href="#verify-update-macos" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>Click on this link <a href="../step1/#check-your-macos">Check your macOS Version</a> and follow the instructions on that page if an update is required.</li>
 <li>After you've reviewed that section, hit the back button on your browser to return here</li>
 </ul>
-<h3 id="verify-update-xcode">Verify / Update Xcode<a class="headerlink" href="#verify-update-xcode" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Click on this link <a href="../step9/#xcode-version">Check your Xcode Version</a> to find your Xcode version number.</p>
-<p>If you need to update your Xcode, follow the instructions at this link <a href="../step8/#install-xcode">Build Step 8: Install Xcode</a> and continue through Step 9.</p>
-<p>Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of <a href="#direct-download-of-xcode">Direct Download of Xcode</a>. Note that once you have used direct download, Xcode will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.</p>
-<h4 id="missing-xcode-or-command-line-tools">Missing Xcode or Command Line Tools<a class="headerlink" href="#missing-xcode-or-command-line-tools" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h3 id="verify-update-xcode">Verify / Update <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#verify-update-xcode" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Click on this link <a href="../step9/#xcode-version">Check your <abbr title="program used to build an app">Xcode</abbr> Version</a> to find your <abbr title="program used to build an app">Xcode</abbr> version number.</p>
+<p>If you need to update your <abbr title="program used to build an app">Xcode</abbr>, follow the instructions at this link <a href="../step8/#install-xcode">Build Step 8: Install <abbr title="program used to build an app">Xcode</abbr></a> and continue through Step 9.</p>
+<p>Advanced users: If you are finding installation of <abbr title="program used to build an app">Xcode</abbr> from the App Store incredibly slow, try the alternate method of <a href="#direct-download-of-xcode">Direct Download of <abbr title="program used to build an app">Xcode</abbr></a>. Note that once you have used direct download, <abbr title="program used to build an app">Xcode</abbr> will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.</p>
+<h4 id="missing-xcode-or-command-line-tools">Missing <abbr title="program used to build an app">Xcode</abbr> or Command Line Tools<a class="headerlink" href="#missing-xcode-or-command-line-tools" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">WARNING</p>
-<p>If you fail to have <a href="../step8/">Xcode</a> or <a href="../step9/">Xcode Command Line Tools</a> installed, you will get one of these error when you attempt to run the build-select script (or something similar):</p>
+<p>If you fail to have <a href="../step8/"><abbr title="program used to build an app">Xcode</abbr></a> or <a href="../step9/"><abbr title="program used to build an app">Xcode</abbr> Command Line Tools</a> installed, you will get one of these error when you attempt to run the build-select script (or something similar):</p>
 <ul>
 <li>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</li>
-<li>xcrun: error: active developer path ("/Applications/Xcode.app/Contents/Developer") does not exist</li>
-<li>xcode-select: Failed to locate 'git', requesting installation of command line developer tools</li>
-<li>xcode-select: error: tool 'xed' requires Xcode</li>
+<li>xcrun: error: active developer path ("/Applications/<abbr title="program used to build an app">Xcode</abbr>.app/Contents/Developer") does not exist</li>
+<li>xcode-select: Failed to locate '<abbr title="a tool for version control">git</abbr>', requesting installation of command line developer tools</li>
+<li>xcode-select: error: tool 'xed' requires <abbr title="program used to build an app">Xcode</abbr></li>
 <li>Scripting Bridge could not launch application . . .</li>
 </ul>
 </div>
 <div class="admonition abstract">
-<p class="admonition-title">Follow Build Step 9 after updating Xcode<p>Make sure to restart your computer after updating Xcode and follow the instructions in Build Step 9. There's a known issue that happens often enough to be frustrating if you skip those steps. Either a build error about missing simulators or a "device not connected" (even when phone is connected). It's not always required...but this is a good easy ounce of problem prevention.</p>
+<p class="admonition-title">Follow Build Step 9 after updating <abbr title="program used to build an app">Xcode</abbr><p>Make sure to restart your computer after updating <abbr title="program used to build an app">Xcode</abbr> and follow the instructions in Build Step 9. There's a known issue that happens often enough to be frustrating if you skip those steps. Either a build error about missing simulators or a "device not connected" (even when phone is connected). It's not always required...but this is a good easy ounce of problem prevention.</p>
 </p>
 </div>
-<p>If you think you are immune from needing to update and want to skip Step 1 on this page, at least review the compatibility chart in Build Step 8 to make sure your macOS and Xcode meet their minimums based on your device's iOS before proceeding.  Many people try to build without meeting the minimum versions - don't be that person.</p>
+<p>If you think you are immune from needing to update and want to skip Step 1 on this page, at least review the compatibility chart in Build Step 8 to make sure your macOS and <abbr title="program used to build an app">Xcode</abbr> meet their minimums based on your device's iOS before proceeding.  Many people try to build without meeting the minimum versions - don't be that person.</p>
 <h2 id="step-2-check-your-developer-account">Step 2: Check your Developer Account<a class="headerlink" href="#step-2-check-your-developer-account" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Apple updates its License Agreement for the Developer Program frequently. You need to login to your <a href="https://developer.apple.com/account/">developer account</a> to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.</p>
 <p><img alt="Screenshot: Account - Apple Developer" src="../img/license.png" /></p>
@@ -2141,9 +2141,9 @@
 <p>In order to ensure a full year of use for your Loop app, you need to delete any existing provisioning profile(s) from your computer. If you want to know more information before executing this step - or if you want to do it manually, read the <a href="#background-information">Background Information</a>.</p>
 <h3 id="build-select-utilities">Build Select Utilities<a class="headerlink" href="#build-select-utilities" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The easiest way to delete the old provisioning profiles and clean up derived data uses the same build-select script that you will use for building.</p>
-<h4 id="open-terminal">Open Terminal<a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with an M1 Mac computer, make sure you <a href="../step1/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.</p>
-<p>If you happen to have Xcode open, go on and quit out of Xcode now.</p>
+<h4 id="open-terminal">Open <abbr title="interface for entering commands to the computer">Terminal</abbr><a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the <abbr title="interface for entering commands to the computer">Terminal</abbr> app and double-click <abbr title="interface for entering commands to the computer">Terminal</abbr> to open a terminal window. (Folks with an M1 Mac computer, make sure you <a href="../step1/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.</p>
+<p>If you happen to have <abbr title="program used to build an app">Xcode</abbr> open, go on and quit out of <abbr title="program used to build an app">Xcode</abbr> now.</p>
 <h4 id="load-the-paste-buffer">Load the Paste Buffer<a class="headerlink" href="#load-the-paste-buffer" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>There is a copy button located by hovering on the right-hand side of the text block below. Click on it, all the words in the block are copied into your paste buffer, and then paste the words into the terminal and return.</p>
 <p>This starts the script, but you will need to read the messages and answer the questions.</p>
@@ -2155,8 +2155,8 @@
 <h4 id="utilities">Utilities<a class="headerlink" href="#utilities" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>The expected script responses are shown in the list and graphics below.  Each graphic shows the number you are instructed to type to proceed - the words on this page also tell you what to type.  </p>
 <ul>
-<li>If you do not have Xcode and Xcode command line tools installed - you will get errors.</li>
-<li>If you have Xcode open, you may get errors.</li>
+<li>If you do not have <abbr title="program used to build an app">Xcode</abbr> and <abbr title="program used to build an app">Xcode</abbr> command line tools installed - you will get errors.</li>
+<li>If you have <abbr title="program used to build an app">Xcode</abbr> open, you may get errors.</li>
 </ul>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
 <p>Type 1 and return to acknowledge the warning.</p>
@@ -2171,7 +2171,7 @@
 <ul>
 <li><code>rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty</code></li>
 </ul>
-<p>Please quit out of Xcode and repeat the steps.</p>
+<p>Please quit out of <abbr title="program used to build an app">Xcode</abbr> and repeat the steps.</p>
 <hr />
 <h2 id="background-information">Background Information<a class="headerlink" href="#background-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The rest of this page is kept for historical reasons (and to maintain saved links).  If you followed the steps above, you do not need the rest of this page.</p>
@@ -2183,22 +2183,22 @@
 <p><img alt="Download folder with multiple Loop folders" src="../img/loop-downloads.png" /></p>
 </div>
 <h4 id="provisioning-profile-details">Provisioning Profile Details<a class="headerlink" href="#provisioning-profile-details" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Older versions of Xcode used to automatically create a new "provisioning profile" as part of the Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.</p>
+<p>Older versions of <abbr title="program used to build an app">Xcode</abbr> used to automatically create a new "provisioning profile" as part of the Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.</p>
 <p>You can always check the expiration date immediately after a successful build of your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death, which you can record in your calendar.</p>
 <p align="center"><img alt="Screenshot: Xcode showing Provisioning Profile" src="../img/provisioning-profile-date.png" width="850" /></p>
-<p>Here's what started happening about September 2019 with Xcode 11, the provisioning profiles were being reused so the date was not updated each time you built. This change resulted in many people's apps expiring unexpectedly (and therefore dying suddenly) starting in September 2020 despite having updated/rebuilt recently and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).</p>
-<p>Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)</p>
+<p>Here's what started happening about September 2019 with <abbr title="program used to build an app">Xcode</abbr> 11, the provisioning profiles were being reused so the date was not updated each time you built. This change resulted in many people's apps expiring unexpectedly (and therefore dying suddenly) starting in September 2020 despite having updated/rebuilt recently and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).</p>
+<p>Once you follow the steps in the orange box below, <abbr title="program used to build an app">Xcode</abbr> will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave <abbr title="interface for entering commands to the computer">Terminal</abbr> app open to do Step 4b afterwards too.)</p>
 <h4 id="delete-profiles">Delete Profiles<a class="headerlink" href="#delete-profiles" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
-<li>This process deletes the provisioning profiles on your computer to force Xcode to generate new ones with your next build</li>
+<li>This process deletes the provisioning profiles on your computer to force <abbr title="program used to build an app">Xcode</abbr> to generate new ones with your next build</li>
 <li>This does not affect the provisioning profiles currently on your phone</li>
 </ul>
 <div class="admonition question">
 <p class="admonition-title">How to delete old provisioning profiles</p>
 <ul>
-<li>Find your Terminal app (in Applications under Utilities)</li>
-<li>Open your Terminal app</li>
-<li>Hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and return</li>
+<li>Find your <abbr title="interface for entering commands to the computer">Terminal</abbr> app (in Applications under Utilities)</li>
+<li>Open your <abbr title="interface for entering commands to the computer">Terminal</abbr> app</li>
+<li>Hover to right of text, click copy to clipboard, then paste it into the <abbr title="interface for entering commands to the computer">Terminal</abbr> prompt and return</li>
 </ul>
 <div class="highlight"><span class="filename">Delete Provisioning Profiles</span><pre><span></span><code>rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
 </code></pre></div>
@@ -2216,7 +2216,7 @@
 <h4 id="frequent-builder">Frequent Builder<a class="headerlink" href="#frequent-builder" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>If you build frequently, you do not need to delete the profiles every time. One user reported deleting profiles gave a <a href="./#revoke-certificate-issue">Revoke Certificate</a> message - follow the link to see other reasons why that might happen.</p>
 <h4 id="revoke-certificate-issue">Revoke Certificate Issue<a class="headerlink" href="#revoke-certificate-issue" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>What does it look like if you run into the Revoke Certificate message? When you prepare to Sign the Targets with Xcode, you'll see the message highlighted in the figure below.  </p>
+<p>What does it look like if you run into the Revoke Certificate message? When you prepare to Sign the Targets with <abbr title="program used to build an app">Xcode</abbr>, you'll see the message highlighted in the figure below.  </p>
 <p align="center"><br/>
 <img alt="Screenshot: Xcode showing Revoke Certificate message" src="../img/rejected-cert.svg" width="850" /></p>
 <p>More information is shown in the orange box below.</p>
@@ -2233,9 +2233,9 @@
 <li>To transfer your keychain, check this <a href="https://help.apple.com/xcode/mac/current/#/dev8a2822e0b">Apple Documentation Link</a></li>
 </ul>
 </li>
-<li>Your version of Xcode is way out-of-date<ul>
-<li>Mentors have seen this with people trying to build with Xcode 11.4 or earlier</li>
-<li>Update <a href="../step8/">Xcode</a> to the most recent version</li>
+<li>Your version of <abbr title="program used to build an app">Xcode</abbr> is way out-of-date<ul>
+<li>Mentors have seen this with people trying to build with <abbr title="program used to build an app">Xcode</abbr> 11.4 or earlier</li>
+<li>Update <a href="../step8/"><abbr title="program used to build an app">Xcode</abbr></a> to the most recent version</li>
 </ul>
 </li>
 </ol>
@@ -2248,18 +2248,18 @@
 <p>Be aware that you will have to rebuild to every device that used the certificate you just revoked and if you have other apps built with this certificate, they will stop working too.</p>
 </div>
 <h4 id="clean-cache-and-derived-data">Clean cache and derived data<a class="headerlink" href="#clean-cache-and-derived-data" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>This may not be necessary, but it is one of the first steps to try if you do get a build error. Since you already have Terminal app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.</p>
+<p>This may not be necessary, but it is one of the first steps to try if you do get a build error. Since you already have <abbr title="interface for entering commands to the computer">Terminal</abbr> app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Clean cache and derived data</p>
-<p>Using Terminal app that should still be open from Step 4a, hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and return.</p>
+<p>Using <abbr title="interface for entering commands to the computer">Terminal</abbr> app that should still be open from Step 4a, hover to right of text, click copy to clipboard, then paste it into the <abbr title="interface for entering commands to the computer">Terminal</abbr> prompt and return.</p>
 <div class="highlight"><span class="filename">Clean cache and derived data</span><pre><span></span><code>rm -rf ~/Library/Caches/org.carthage.CarthageKit
 rm -rf ~/Library/Developer/Xcode/DerivedData
 </code></pre></div>
 <ul>
-<li>No response will be shown in the terminal if Xcode is closed or you have never built from this folder</li>
-<li>If you have previously built the app from this folder AND Xcode is open, you will get message(s) similar to this<ul>
-<li>rm: /Users/marion/Library/Developer/Xcode/DerivedData/ModuleCache.noindex: Directory not empty</li>
-<li>rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty</li>
+<li>No response will be shown in the terminal if <abbr title="program used to build an app">Xcode</abbr> is closed or you have never built from this folder</li>
+<li>If you have previously built the app from this folder AND <abbr title="program used to build an app">Xcode</abbr> is open, you will get message(s) similar to this<ul>
+<li>rm: /Users/marion/Library/Developer/<abbr title="program used to build an app">Xcode</abbr>/DerivedData/ModuleCache.noindex: Directory not empty</li>
+<li>rm: /Users/marion/Library/Developer/<abbr title="program used to build an app">Xcode</abbr>/DerivedData: Directory not empty</li>
 </ul>
 </li>
 </ul>
@@ -2285,18 +2285,18 @@ rm -rf ~/Library/Developer/Xcode/DerivedData
 <p>If you get a build error, check the <a href="../build_errors/">Build Errors page</a>. You might be able to resolve it yourself.</p>
 <p>Even if your exact error isn't there, the information you need to provide when asking for help is listed on that page. And that information is critical to allow mentors to help troubleshoot your build error.</p>
 </div>
-<h2 id="direct-download-of-xcode">Direct Download of Xcode<a class="headerlink" href="#direct-download-of-xcode" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Many people find updating Xcode from the App Store to be incredibly slow - especially when a new version has just been released.  This method still takes time and enough space on your disk, but is faster than going through the App Store.  Depending on your internet speed, this download can be done in about an hour. Then once it is downloaded, expect another fifteen minutes to several hours (depending on the speed of your computer) for the "xip" file to "expand".</p>
+<h2 id="direct-download-of-xcode">Direct Download of <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#direct-download-of-xcode" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Many people find updating <abbr title="program used to build an app">Xcode</abbr> from the App Store to be incredibly slow - especially when a new version has just been released.  This method still takes time and enough space on your disk, but is faster than going through the App Store.  Depending on your internet speed, this download can be done in about an hour. Then once it is downloaded, expect another fifteen minutes to several hours (depending on the speed of your computer) for the "xip" file to "expand".</p>
 <p>The instructions do not hold your hand.</p>
 <ul>
-<li>Your macOS must be at the minimum verion (or newer) to support the version of Xcode you're about the download</li>
+<li>Your macOS must be at the minimum verion (or newer) to support the version of <abbr title="program used to build an app">Xcode</abbr> you're about the download</li>
 <li>You need to know how to log into your Apple Developer account and navigate those menus</li>
 <li>You need to know how to use Finder to navigate to Downloads</li>
-<li>You need to know how to drag the Xcode icon into your Applications folder (after download and expand completes)</li>
+<li>You need to know how to drag the <abbr title="program used to build an app">Xcode</abbr> icon into your Applications folder (after download and expand completes)</li>
 <li>After you have done a direct download, the App Store will not show you updates<ul>
 <li>Either repeat the Direct Download or</li>
-<li>Delete Xcode from Applications folder<ul>
-<li>Open the App Store and search for Xcode</li>
+<li>Delete <abbr title="program used to build an app">Xcode</abbr> from Applications folder<ul>
+<li>Open the App Store and search for <abbr title="program used to build an app">Xcode</abbr></li>
 <li>Install fresh</li>
 <li>After you use the App Store for a download, then Updates will show in the future</li>
 </ul>
@@ -2311,16 +2311,16 @@ rm -rf ~/Library/Developer/Xcode/DerivedData
 <li>Click on Downloads (under Additional Resources)</li>
 <li>Look at menu items (on my computer there are buttons at the top) that say Beta, Release, Profiles and Logs, and More</li>
 <li>Click on More</li>
-<li>Scroll down until you find the item you want (for example, Xcode 13)</li>
+<li>Scroll down until you find the item you want (for example, <abbr title="program used to build an app">Xcode</abbr> 13)</li>
 <li>Click on View Details and click on the Download button for the "xip" file</li>
 </ul>
 </li>
 <li>Wait for Download to complete</li>
 <li>Expand the file by clicking on it in Finder</li>
-<li>Move the Xcode icon to Applications after the expansion completes</li>
-<li>Check the <a href="../step9/#command-line-tools">Command Line Tools</a> setting under Xcode-&gt;Preferences<ul>
-<li>The selection cannot be blank or Build-Script will fail to open Xcode automatically</li>
-<li>It should be the same version as your Xcode</li>
+<li>Move the <abbr title="program used to build an app">Xcode</abbr> icon to Applications after the expansion completes</li>
+<li>Check the <a href="../step9/#command-line-tools">Command Line Tools</a> setting under <abbr title="program used to build an app">Xcode</abbr>-&gt;Preferences<ul>
+<li>The selection cannot be blank or Build-Script will fail to open <abbr title="program used to build an app">Xcode</abbr> automatically</li>
+<li>It should be the same version as your <abbr title="program used to build an app">Xcode</abbr></li>
 </ul>
 </li>
 <li>Reboot the computer</li>
@@ -2402,7 +2402,7 @@ rm -rf ~/Library/Developer/Xcode/DerivedData
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>

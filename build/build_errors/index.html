@@ -2229,7 +2229,7 @@
                 
                 
                 <h1 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>There are two types of build errors that happen: they are yellow warnings and red alerts. You'll see the warnings and alerts in the left-hand column of the Xcode window.</p>
+<p>There are two types of build errors that happen: they are yellow warnings and red alerts. You'll see the warnings and alerts in the left-hand column of the <abbr title="program used to build an app">Xcode</abbr> window.</p>
 <p><font color="orange"><strong>Yellow warnings</strong></font> do not cause the build to fail, those are just warnings.  You will often see yellow alerts. Ignore those. Do not try to do anything to fix those.</p>
 <p><font color="red"><strong>Red error alerts</strong> </font> will have to be resolved before you can successfully build the Loop app. The steps below explain how to resolve them based on the messages you are seeing.</p>
 <h2 id="start-with-the-obvious-error-causes">Start with The Obvious Error Causes<a class="headerlink" href="#start-with-the-obvious-error-causes" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2240,34 +2240,34 @@
 <p>Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:</p>
 <ol>
 <li>
-<p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.</p>
+<p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an iOS beta version or an <abbr title="program used to build an app">Xcode</abbr> beta version, your Loop will not build. If you have <abbr title="program used to build an app">Xcode</abbr> beta, uninstall it and get regular <abbr title="program used to build an app">Xcode</abbr>. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.</p>
 </li>
 <li>
-<p><strong>Did you check that you have the minumum Xcode version for your iOS?</strong> This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">macOS and Xcode</a>.</p>
+<p><strong>Did you check that you have the minumum <abbr title="program used to build an app">Xcode</abbr> version for your iOS?</strong> This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">macOS and <abbr title="program used to build an app">Xcode</abbr></a>.</p>
 </li>
 <li>
 <p><strong>Did you check your Apple developer account for new license agreement?</strong> Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. <a href="https://developer.apple.com/account">Login to your Apple developer account</a> to check if there's a new license agreement.</p>
 </li>
 <li>
-<p><strong>Did you reboot, i.e., restart, your computer after updating Xcode?</strong> You must reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. <a href="../step9/#command-line-tools">Xcode Command Line Tools</a></p>
+<p><strong>Did you reboot, i.e., restart, your computer after updating <abbr title="program used to build an app">Xcode</abbr>?</strong> You must reboot following <abbr title="program used to build an app">Xcode</abbr> installation or update and you must make sure your command line tools match the version of <abbr title="program used to build an app">Xcode</abbr> you just installed. <a href="../step9/#command-line-tools"><abbr title="program used to build an app">Xcode</abbr> Command Line Tools</a></p>
 </li>
 <li>
-<p><strong>Did you get a fresh download of Loop code?</strong> If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the build-select script, it automatically opens Xcode using the new download.</p>
+<p><strong>Did you get a fresh download of Loop code?</strong> If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and <abbr title="program used to build an app">Xcode</abbr> versions. Check also, that you are actually using the new download in <abbr title="program used to build an app">Xcode</abbr>.  When you use the build-select script, it automatically opens <abbr title="program used to build an app">Xcode</abbr> using the new download.</p>
 </li>
 <li>
 <p><strong>Are you are using a free developer account?</strong> Make sure you finished the <a href="../step14/#free-account">removal of Siri and Push Notification capabilities</a>.</p>
 </li>
 <li>
-<p><strong>Did you forget to select Loop(WorkSpace)?</strong> The first time you build after downloading new code, you must manually select Loop (Workspace) instead of Loop in Xcode.</p>
+<p><strong>Did you forget to select Loop(WorkSpace)?</strong> The first time you build after downloading new code, you must manually select Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>) instead of Loop in <abbr title="program used to build an app">Xcode</abbr>.</p>
 </li>
 </ol>
 <h2 id="fix-95-of-errors">Fix 95% of errors<a class="headerlink" href="#fix-95-of-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating Loop code.</p>
 <ol>
-<li>Open your project in Xcode as normal. Then go to the Xcode menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.</li>
-<li>On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.</li>
+<li>Open your project in <abbr title="program used to build an app">Xcode</abbr> as normal. Then go to the <abbr title="program used to build an app">Xcode</abbr> menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.</li>
+<li>On the far right, next to the name Full Path is the folder name that <abbr title="program used to build an app">Xcode</abbr> will be using to build. Make sure it is the new code you just downloaded and not an older folder.</li>
 <li>If you are updating Loop and did not do <a href="../updating/#step-4a-delete-old-provisioning-profiles">Step 4a</a>, do it now</li>
-<li>Return to Xcode and try building your app again.</li>
+<li>Return to <abbr title="program used to build an app">Xcode</abbr> and try building your app again.</li>
 </ol>
 <p>If the build fails again, look through the list below and see if you can match your error message with one of the error messages listed later in this page. If you really can't find your solution, then post for help. But help us help you.</p>
 <ul>
@@ -2284,30 +2284,30 @@
 <div class="admonition warning">
 <p class="admonition-title">Your Post Must Include:</p>
 <ul>
-<li>The version of Xcode you are using</li>
+<li>The version of <abbr title="program used to build an app">Xcode</abbr> you are using</li>
 <li>The version of Loop you are building with</li>
 <li>The version of iOS on your Loop iPhone</li>
 <li>Free or paid account, and if free, confirmation that you deleted Siri and Push Notification capabilities</li>
-<li>Confirmation that you are not using an Xcode beta or iOS beta version (so we don't have to ask, please actually type "I am not using beta versions")</li>
-<li>Screenshots of your WHOLE Xcode window and/or Terminal window showing your error and any messages you've seen while working through the build errors/solutions.  Do NOT use phone photographs of your computer screen.  See below for instructions on how to capture a screenshot.</li>
+<li>Confirmation that you are not using an <abbr title="program used to build an app">Xcode</abbr> beta or iOS beta version (so we don't have to ask, please actually type "I am not using beta versions")</li>
+<li>Screenshots of your WHOLE <abbr title="program used to build an app">Xcode</abbr> window and/or <abbr title="interface for entering commands to the computer">Terminal</abbr> window showing your error and any messages you've seen while working through the build errors/solutions.  Do NOT use phone photographs of your computer screen.  See below for instructions on how to capture a screenshot.</li>
 <li>State which fixes from the list below you have already tried AND post the screenshots of the results of those fix attempts.</li>
 </ul>
 </div>
 <h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Please take screenshots of your issue and use them in your posts. On an Apple computer, press <code>shift-command-4</code> keys at the same time followed by pressing the space bar and then click on the window of interest. The screenshot will be saved to your desktop with a file name starting with the name "Screen Shot". Use screenshots instead of cell phone images or words whenever possible. Screenshots are higher resolution and easier to read.</p>
-<p>Use the whole Xcode window screenshot when posting for build help.</p>
+<p>Use the whole <abbr title="program used to build an app">Xcode</abbr> window screenshot when posting for build help.</p>
 <h2 id="find-your-error-messages">Find Your Error Message(s)<a class="headerlink" href="#find-your-error-messages" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>To begin fixing the error, use the Report Navigator view to find your error message.</p>
 <p align="center"><img alt="img/report-nav.png" src="../img/report-nav.png" width="750" /></p>
 <p>The key is to (1) <strong>READ THE ERROR MESSAGE</strong> and then (2) <strong>FIND YOUR MESSAGE IN ONE OF THE TOPICS BELOW</strong>.</p>
-<p>Here's a super tip: Merely seeing the "exit code" in Xcode is not enough information to discern what error is causing your build to fail; some exit codes have multiple causes. Look at the detailed message to guide your search for the matching solution.</p>
+<p>Here's a super tip: Merely seeing the "exit code" in <abbr title="program used to build an app">Xcode</abbr> is not enough information to discern what error is causing your build to fail; some exit codes have multiple causes. Look at the detailed message to guide your search for the matching solution.</p>
 <p>Notice the screenshots below have red circles highlighting certain error messages.  Read your error message(s) from your screen, being guided by the red circles in the screenshots. Once you find your error message (hint: not "exit code"), you can either:</p>
 <ul>
 <li>
-<p>Take the error message from your Xcode screen and use LoopDoc's search function to enter in some of that phrase to bring up the appropriate solution topic, or</p>
+<p>Take the error message from your <abbr title="program used to build an app">Xcode</abbr> screen and use LoopDoc's search function to enter in some of that phrase to bring up the appropriate solution topic, or</p>
 </li>
 <li>
-<p>Take the error message from your Xcode screen and read through EACH OF THE TOPICS BELOW. Check each of the red circles to see if you have a match. Kind of like a matching puzzle.</p>
+<p>Take the error message from your <abbr title="program used to build an app">Xcode</abbr> screen and read through EACH OF THE TOPICS BELOW. Check each of the red circles to see if you have a match. Kind of like a matching puzzle.</p>
 </li>
 </ul>
 <p>For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find the solution.</p>
@@ -2320,15 +2320,15 @@
 <p>This error is new with Loop-dev, which uses Package Dependencies.</p>
 <p>There are 2 problems shown here</p>
 <ol>
-<li>The version of Xcode is out of date</li>
+<li>The version of <abbr title="program used to build an app">Xcode</abbr> is out of date</li>
 <li>The graphic was acquired using a camera instead of a <a href="#screenshots">screenshot</a>, and yes - that was a joke - using a camera does not cause a build error</li>
 </ol>
 <p><strong>Solution:</strong></p>
-<p>Update Xcode, which may require you to update macOS.</p>
+<p>Update <abbr title="program used to build an app">Xcode</abbr>, which may require you to update macOS.</p>
 <h3 id="couldnt-get-revision-for-package-dependency">Couldn't Get Revision for Package Dependency<a class="headerlink" href="#couldnt-get-revision-for-package-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This error is new with Loop-dev, which uses Package Dependencies.</p>
 <ul>
-<li>If you notice a red x in Xcode (as circled in the graphic below)<ul>
+<li>If you notice a red x in <abbr title="program used to build an app">Xcode</abbr> (as circled in the graphic below)<ul>
 <li>Click on the red x to show the error in the left pane</li>
 <li>Alternatively, you can click on the icon shown with the red square to see the same information</li>
 </ul>
@@ -2353,7 +2353,7 @@
 </ol>
 <p><img alt="package dependency solution" src="../img/xcode-package-dependency-solution.svg" width="600" /></p>
 <h3 id="cycle-dependency">Cycle Dependency<a class="headerlink" href="#cycle-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This error is new with Xcode 13.3 (late Sep 2021) which has a new requirement</p>
+<p>This error is new with <abbr title="program used to build an app">Xcode</abbr> 13.3 (late Sep 2021) which has a new requirement</p>
 <ul>
 <li>For those who care: the new requirement is that for a certain type of instruction file, the line with the <code>Headers</code> keyword must be located before the line with the <code>Sources</code> keyword</li>
 <li>There used to be many repositories that did not have lines in that order</li>
@@ -2378,9 +2378,9 @@
 </li>
 </ul>
 <p><strong>Solution:</strong></p>
-<p>No need to quit Xcode - follow these steps using the Xcode Menu bar. (It's possible that only Step 1 is required, but sometimes all steps are needed.)</p>
+<p>No need to quit <abbr title="program used to build an app">Xcode</abbr> - follow these steps using the <abbr title="program used to build an app">Xcode</abbr> Menu bar. (It's possible that only Step 1 is required, but sometimes all steps are needed.)</p>
 <ol>
-<li>From the <code>Product</code> menu (of Xcode), select <code>Clean Build Folder</code> </li>
+<li>From the <code>Product</code> menu (of <abbr title="program used to build an app">Xcode</abbr>), select <code>Clean Build Folder</code> </li>
 <li>From the <code>File</code> menu, select <code>Close Workspace</code> </li>
 <li>From the <code>File</code> menu, select <code>Open Recent</code> and choose the top line </li>
 <li>Press the Build Button (play icon)</li>
@@ -2393,17 +2393,17 @@
 <p>or </p>
 <p><em>Entitlements file "Loop.entitlements" was modified . . .</em></p>
 <p><strong>Solution:</strong></p>
-<p>No need to quit Xcode - follow these numbered steps as indicated in the graphic below. </p>
+<p>No need to quit <abbr title="program used to build an app">Xcode</abbr> - follow these numbered steps as indicated in the graphic below. </p>
 <ol>
 <li>Click on the Loop icon under PROJECT</li>
-<li>From the <code>Product</code> menu (of Xcode), select <code>Clean Build Folder</code> </li>
+<li>From the <code>Product</code> menu (of <abbr title="program used to build an app">Xcode</abbr>), select <code>Clean Build Folder</code> </li>
 <li>Press the Build Button (play icon)</li>
 </ol>
 <p><img alt="Xcode screen showing updated entitlements fix" src="../img/entitlements-error.svg" width="900" /></p>
 <p>It turns out that</p>
 <ul>
 <li>You can start building before indexing completes - just make sure it has started</li>
-<li>The behavior causing this in Xcode has been reported to Apple</li>
+<li>The behavior causing this in <abbr title="program used to build an app">Xcode</abbr> has been reported to Apple</li>
 </ul>
 <h3 id="compileassetcatalog-error">CompileAssetCatalog Error<a class="headerlink" href="#compileassetcatalog-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This error is found when there is a space embedded in the path name to your LoopWorspace folder. The good news is that LoopWorkspace seems to be able to build from an iCloud or Dropbox drive.</p>
@@ -2422,25 +2422,25 @@
 <p><img alt="fix for CompileAssetCatalog error" src="../img/error-compileassetcatalog.svg" width="900" /></p>
 <ul>
 <li>Repeat the <code>App Icons Source</code> dropdown menu selection for the <code>WatchApp</code> target</li>
-<li>(Optional) Clear the Build Error (Menu at top of Xcode: Select Product-&gt;Clean Build Folder)</li>
+<li>(Optional) Clear the Build Error (Menu at top of <abbr title="program used to build an app">Xcode</abbr>: Select Product-&gt;Clean Build Folder)</li>
 <li>Press build</li>
 </ul>
 <h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions.</p>
+<p>With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>) at the top of the <abbr title="program used to build an app">Xcode</abbr> window.  This is a new step and easy to forget. Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions.</p>
 <p>Or maybe you are a repeat builder who did not read the updated information and tried to use the old zip-download method. That is no longer supported.  Please read all of the <a href="../updating/">Updating</a> page.</p>
 <div class="admonition info">
 <p>Advanced builders using dev may need carthage but they should have followed the directions for <a href="../step13/#advanced-users-only">Advanced Users Only</a></p>
 </div>
 <p>If you previously installed carthage (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a carthage error.</p>
-<p>If you are using a Loop fork or a Workspace build with the dev branch, you may still require carthage. This <a href="https://www.loopandlearn.org/carthage-0-36-0/">external link</a> explains how to install the correct version of carthage on your computer.</p>
+<p>If you are using a Loop fork or a <abbr title="a grouping of several programs into a complete package">Workspace</abbr> build with the dev branch, you may still require carthage. This <a href="https://www.loopandlearn.org/carthage-0-36-0/">external link</a> explains how to install the correct version of carthage on your computer.</p>
 <p><strong>Error Message:</strong></p>
 <div class="admonition warning">
 <p class="admonition-title">Wrong Version of Carthage Error</p>
-<p>Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.</p>
+<p>Applications/<abbr title="program used to build an app">Xcode</abbr>.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.</p>
 </div>
 <p><strong>Solution:</strong> Manually uninstall carthage.</p>
 <ul>
-<li>Open a Terminal</li>
+<li>Open a <abbr title="interface for entering commands to the computer">Terminal</abbr></li>
 <li>Copy and paste this command into the terminal and hit enter</li>
 </ul>
 <div class="highlight"><pre><span></span><code>rm -rf /usr/local/bin/carthage
@@ -2456,12 +2456,12 @@
 <li>The password will not display on the screen as you type it</li>
 </ul>
 <h3 id="could-not-locate-device-support-files">Could Not Locate Device Support Files<a class="headerlink" href="#could-not-locate-device-support-files" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Error Message:</strong> "Could not locate device support files." That message is telling you that your iOS on the Loop phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.</p>
-<p><strong>Solution:</strong> Update your Xcode version; this may also require a macOS update. Please review the phone iOS driven requirements for <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">Xcode and macOS</a>.</p>
+<p><strong>Error Message:</strong> "Could not locate device support files." That message is telling you that your iOS on the Loop phone requires you to get a newer version of <abbr title="program used to build an app">Xcode</abbr> to be able to build Loop onto that phone.</p>
+<p><strong>Solution:</strong> Update your <abbr title="program used to build an app">Xcode</abbr> version; this may also require a macOS update. Please review the phone iOS driven requirements for <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="program used to build an app">Xcode</abbr> and macOS</a>.</p>
 <p align="center"><img alt="img/device-support-files.jpg" src="../img/device-support-files.jpg" width="750" /></p>
-<p>With Xcode 12, the simulators are no longer being downloaded automatically. If you are missing a simulator, follow the steps under Step 9 <a href="../step9/#simulator-download">Simulator Download</a>.</p>
+<p>With <abbr title="program used to build an app">Xcode</abbr> 12, the simulators are no longer being downloaded automatically. If you are missing a simulator, follow the steps under Step 9 <a href="../step9/#simulator-download">Simulator Download</a>.</p>
 <h3 id="no-such-module-loopkit-or-similar-message">No Such Module 'LoopKit' or Similar Message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Solution</strong>: You probably forgot to select Loop(Workspace). Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions</p>
+<p><strong>Solution</strong>: You probably forgot to select Loop(<abbr title="a grouping of several programs into a complete package">Workspace</abbr>). Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions</p>
 <p><strong>Error Message:</strong> If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the <a href="./#carthage-error">Carthage Error</a> fix listed above.</p>
 <p><strong>Solution</strong>: For zip-download (not advised): Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.</p>
 <p align="center"><img alt="img/exit-code-65.png" src="../img/exit-code-65.png" width="850" /></p>
@@ -2469,8 +2469,8 @@
 <p><strong>Error message:</strong> "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement". Or you may see "Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account."</p>
 <p><strong>Solution:</strong> You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.</p>
 <p align="center"><img alt="img/license.png" src="../img/license.png" width="750" /></p>
-<h3 id="could-not-get-a-container-directory-url">Could Not Get a Container Directory URL<a class="headerlink" href="#could-not-get-a-container-directory-url" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Error message:</strong> "Could not get a container directory URL. Please ensure App Groups are set up correctly in entitlements."</p>
+<h3 id="could-not-get-a-container-directory-url">Could Not Get a Container Directory <abbr title="Uniform Resource Locator">URL</abbr><a class="headerlink" href="#could-not-get-a-container-directory-url" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>Error message:</strong> "Could not get a container directory <abbr title="Uniform Resource Locator">URL</abbr>. Please ensure App Groups are set up correctly in entitlements."</p>
 <p align="center"><img alt="img/container-1.png" src="../img/container-1.png" width="750" /></p>
 <p><strong>Solution</strong>: To resolve this error, you will need to click on the Loop target's signing area and then the plus-sign in the App Groups area under the signing. Copy and paste the bundle indentifier into the new container that starts with <code>group.</code> and then add <code>Group</code> to the end of the name. Click OK to save. Note, the line will start with lower case <code>group.</code> followed by your bundle identifier and an upper case <code>Group</code> added to the end of the bundle identifier.</p>
 <p align="center"><img alt="img/container-2.png" src="../img/container-2.png" width="750" /></p>
@@ -2480,15 +2480,15 @@
 <p><strong>Error message:</strong>  "Invalid active developer path (/Library/Developer/CommandLineTools)" or "unable to find utility "xcodebuild", not a developer tool or in PATH"</p>
 <p align="center"><img alt="img/command-line-error-1.jpg" src="../img/command-line-error-1.jpg" width="550" /></p>
 <p align="center"><img alt="img/command-line-error-2.jpg" src="../img/command-line-error-2.jpg" width="550" /></p>
-<p><strong>Solution:</strong> Go to your Xcode preferences and under the Locations tab, select your Xcode version (the figure shows 12.0.1 - yours should match your Xcode version) in the dropdown menu for Command Line Tools.</p>
+<p><strong>Solution:</strong> Go to your <abbr title="program used to build an app">Xcode</abbr> preferences and under the Locations tab, select your <abbr title="program used to build an app">Xcode</abbr> version (the figure shows 12.0.1 - yours should match your <abbr title="program used to build an app">Xcode</abbr> version) in the dropdown menu for Command Line Tools.</p>
 <p align="center"><img alt="img/command-line-error-3.png" src="../img/command-line-error-3.png" width="550" /></p>
 <h3 id="device-management-could-not-launch-loop">Device Management Could Not Launch Loop<a class="headerlink" href="#device-management-could-not-launch-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "Could not launch "Loop". Verify the Developer App certificate for your account is trusted on your device. Open Settings and navigate to General -&gt; Device Management, then select your Developer App certificate to trust it."</p>
 <p align="center"><img alt="img/trust_device.jpg" src="../img/trust_device.jpg" width="750" /></p>
 <p><strong>Solution:</strong> If you get this message and are unable to find the Device Management option in your phone settings, then we need to do a little extra step to clear out some old info.</p>
 <ol>
-<li>Plug the phone into the computer and open Xcode</li>
-<li>Click the "Window" menu item in Xcode and then choose "Devices and Simulators"</li>
+<li>Plug the phone into the computer and open <abbr title="program used to build an app">Xcode</abbr></li>
+<li>Click the "Window" menu item in <abbr title="program used to build an app">Xcode</abbr> and then choose "Devices and Simulators"</li>
 <li>Right click your phone on the left and pick "Show Provisioning Profiles"</li>
 <li>Delete all of the items in the list that have Loop in the name</li>
 <li>Go to your four signing targets and change the signing team back to "None" for a quick bit, and then change back to your regular signing team name again.</li>
@@ -2513,25 +2513,25 @@
 <p align="center"><img alt="img/pending_certification_request.jpg" src="../img/pending_certification_request.jpg" width="750" /></p>
 <p><strong>Solution:</strong> This error message has recently started to appear for some new Loop builders. To resolve the issue, please log in to your Developer account at <a href="https://developer.apple.com">developer.apple.com</a> and then click on "Certificates, Identifiers &amp; Profiles".  Under that screen, you will see "Development" under the "Certificates" section in the column on the left.  You will need to click on the certificates, and choose "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"</p>
 <p align="center"><img alt="img/revoke1.png" src="../img/revoke1.png" width="750" /></p>
-<p>After you do that, return to Xcode and open up Xcode preferences.  Under the Accounts section of Preferences, click on the minus sign to delete your Apple ID.</p>
+<p>After you do that, return to <abbr title="program used to build an app">Xcode</abbr> and open up <abbr title="program used to build an app">Xcode</abbr> preferences.  Under the Accounts section of Preferences, click on the minus sign to delete your Apple ID.</p>
 <p align="center"><img alt="img/account.png" src="../img/account.png" width="650" /></p>
-<p>Re-enter your Apple ID (yes...add that account right back that you literally just deleted), return to your Loop's target signing areas in Xcode and your error message should have resolved as a new certificate will have been issued and a provisioning profile should have been created automatically.</p>
-<p>You can verify the iOS development certificates are working by clicking on "Manage Certificates" in Xcode Preferences, Accounts and viewing the iOS Development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.</p>
+<p>Re-enter your Apple ID (yes...add that account right back that you literally just deleted), return to your Loop's target signing areas in <abbr title="program used to build an app">Xcode</abbr> and your error message should have resolved as a new certificate will have been issued and a provisioning profile should have been created automatically.</p>
+<p>You can verify the iOS development certificates are working by clicking on "Manage Certificates" in <abbr title="program used to build an app">Xcode</abbr> Preferences, Accounts and viewing the iOS Development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.</p>
 <p align="center"><img alt="img/verify_cert.png" src="../img/verify_cert.png" width="650" /></p>
 <h3 id="command-codesign-failed">Command CodeSign Failed<a class="headerlink" href="#command-codesign-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "errSecInternalComponent,  Command CodeSign failed with a nonzero exit code"</p>
 <p align="center"><img alt="img/errsecinternal.jpg" src="../img/errsecinternal.jpg" width="850" /></p>
 <p><strong>Solution:</strong>  This error message is likely due to inadvertently saying "no" to allowing Keychain Access or changing your computer or AppleID password. Regardless, the solution is as follows:</p>
 <ol>
-<li>Close Xcode</li>
+<li>Close <abbr title="program used to build an app">Xcode</abbr></li>
 <li>Open your Keychain Access application (found in Applications within the Utilities folder)</li>
 <li>In the upper left corner of keychain access, make sure you have the keychain <code>login</code> highlighted and then right-click the lock next to the <code>login</code>.  Click the lock closed, and then click the lock to open it again. You will be prompted for a password.  Enter your computer admin password.  Close Keychain Access app.</li>
 </ol>
 <p align="center"><img alt="img/keychain4.png" src="../img/keychain4.png" width="450" /></p>
 <ol>
-<li>Open your Loop project again in Xcode.</li>
-<li>In the main Xcode menu (grey menu bar at the very top of your Apple display area), select <code>Product</code> and then select the option for <code>Clean</code>. (Keyboard shortcut is shift-command-k)</li>
-<li>Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to click on the option to Always Allow.</li>
+<li>Open your Loop project again in <abbr title="program used to build an app">Xcode</abbr>.</li>
+<li>In the main <abbr title="program used to build an app">Xcode</abbr> menu (grey menu bar at the very top of your Apple display area), select <code>Product</code> and then select the option for <code>Clean</code>. (Keyboard shortcut is shift-command-k)</li>
+<li>Now try rebuilding your Loop app.  If you ever get prompted again to allow <abbr title="program used to build an app">Xcode</abbr> access to Keychain, make sure to click on the option to Always Allow.</li>
 </ol>
 <h3 id="unrecognized-arguments">Unrecognized Arguments<a class="headerlink" href="#unrecognized-arguments" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "Unrecognized arguments: --cache-builds"</p>
@@ -2541,7 +2541,7 @@
 <h3 id="abort-with-payload">Abort with Payload<a class="headerlink" href="#abort-with-payload" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "<strong>Abort with payload</strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.</p>
 <p align="center"><img alt="img/abort_payload.png" src="../img/abort_payload.png" width="750" /></p>
-<p><strong>Solution:</strong> This error message is caused by having the Loop download folder in an iCloud mapped drive when doing the zip download.  Move your Loop download folder back to the Downloads folder, then rebuild. LoopWorkspace builds with Xcode 13 appear to work fine with an iCloud drive.  You may run into the spaces in your path name problem - which has a different solution.</p>
+<p><strong>Solution:</strong> This error message is caused by having the Loop download folder in an iCloud mapped drive when doing the zip download.  Move your Loop download folder back to the Downloads folder, then rebuild. LoopWorkspace builds with <abbr title="program used to build an app">Xcode</abbr> 13 appear to work fine with an iCloud drive.  You may run into the spaces in your path name problem - which has a different solution.</p>
 <h2 id="apple-watch-issues">Apple Watch Issues<a class="headerlink" href="#apple-watch-issues" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="apple-watch-loop-app-not-appearing">Apple Watch: Loop App Not Appearing<a class="headerlink" href="#apple-watch-loop-app-not-appearing" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error:</strong> Apple watch app is not appearing.</p>
@@ -2549,15 +2549,15 @@
 <p>Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p>
 <h3 id="apple-watch-loop-app-not-installing">Apple Watch: Loop App Not Installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error:</strong> The Loop app appears on the list of apps available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL".</p>
-<p><strong>Solution:</strong>  Plug your iPhone into the computer and start Xcode.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watch face and select the "Trust" button. In Xcode, go to the top menu bar and select "Clean Build Folder" from the Product menu option, and then rebuild your Loop app.</p>
+<p><strong>Solution:</strong>  Plug your iPhone into the computer and start <abbr title="program used to build an app">Xcode</abbr>.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watch face and select the "Trust" button. In <abbr title="program used to build an app">Xcode</abbr>, go to the top menu bar and select "Clean Build Folder" from the Product menu option, and then rebuild your Loop app.</p>
 <p>If the watch app still fails to install properly, the next section should work.</p>
 <h3 id="apple-watch-loop-app-not-running-on-watch">Apple Watch: Loop App Not Running on Watch<a class="headerlink" href="#apple-watch-loop-app-not-running-on-watch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error:</strong> Tapping the Loop app icon on the watch results in flash of the watch screen and then return to the Loop app icon or a brief display of the watch interface and then return to the Loop app icon.</p>
-<p><strong>Solution:</strong> Plug in your iPhone, with the watch already paired, into the computer and start Xcode with your current build folder.  In Xcode, from the list of schemes where you normally choose Loop (Workspace), choose the WatchApp scheme (near the bottom of the list) and then select your watch (not a simulator) from the device list, see the graphics below. Press the play button to build and deploy the WatchApp directly to your watch. It will launch correctly and will not crash when you subsequently launch it from the complication or your watch Home Screen..</p>
+<p><strong>Solution:</strong> Plug in your iPhone, with the watch already paired, into the computer and start <abbr title="program used to build an app">Xcode</abbr> with your current build folder.  In <abbr title="program used to build an app">Xcode</abbr>, from the list of schemes where you normally choose Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>), choose the WatchApp scheme (near the bottom of the list) and then select your watch (not a simulator) from the device list, see the graphics below. Press the play button to build and deploy the WatchApp directly to your watch. It will launch correctly and will not crash when you subsequently launch it from the complication or your watch Home Screen..</p>
 <p align="center"><img alt="xcode screen display the selection for direct build of watchapp" src="../img/watchapp-direct-build-from-xcode.svg" width="650" /></p>
 <p align="center"><img alt="additional details for the direct build of watchapp" src="../img/watchapp-direct-build-from-xcode-2.svg" width="650" /></p>
 <p><strong>Warning:</strong> Make sure your watchOS is up to date with respect to your phone iOS. If not, you may need to update to be successful. On pressing clicking build/play, some people report receiving an error stating “iPhone/Apple Watch are ineligible because the OS on the watch doesn’t support WatchKit App Products” or similar wording. This is a known issue with some Mac USB ports. Fixes in preference order are: 1) swap which USB port is in use;  2) unplug and replug the USB cable from both the iPhone and Mac; or 3) as a last resort, reboot the iPhone and Mac.</p>
-<p>Don't forget to select Loop(Workspace) after building to the watch before trying to build to a phone.</p>
+<p>Don't forget to select Loop(<abbr title="a grouping of several programs into a complete package">Workspace</abbr>) after building to the watch before trying to build to a phone.</p>
                 
               
               
@@ -2635,7 +2635,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
