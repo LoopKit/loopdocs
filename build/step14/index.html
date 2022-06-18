@@ -2063,7 +2063,7 @@
 <li>Open terminal and copy/paste commands into it</li>
 <li>Connect the phone to the computer</li>
 <li><strong>First Time:</strong> Trust the computer</li>
-<li>Select Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>) and your phone at top of <abbr title="program used to build an app">Xcode</abbr></li>
+<li>Select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) and your phone at top of <abbr title="program used to build an app">Xcode</abbr></li>
 <li><strong>First Time:</strong> Register the phone</li>
 <li>Sign the targets<ul>
 <li>Then click on a specific location with your mouse</li>
@@ -2095,7 +2095,7 @@
 <li>Ingore the yellow warnings - do not try to "fix" them</li>
 </ul>
 </li>
-<li><strong>"I got a build succeeded but it's not on my phone; what do I do?"</strong> Make sure you selected your phone (near the top of the list), not a simulator with the same model and iOS as your phone. You are less likely to make this mistake if you modify the name displayed on your phone.</li>
+<li><strong>"I got a build succeeded but it's not on my phone; what do I do?"</strong> Make sure you selected your phone (near the top of the list), not a simulator with the same model and <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> as your phone. You are less likely to make this mistake if you modify the name displayed on your phone.</li>
 <li><strong>"I got a build error! YIKES...what do I do?"</strong> Check out the <a href="../build_errors/">Build Errors</a> page for solutions.</li>
 </ul>
 </div>
@@ -2173,7 +2173,7 @@
 <p>The steps required to prepare and build are summarized with numbers matching the graphic. Then each step is discussed in detail. Take it slow, read carefully and compare your screen to the graphics.</p>
 <ol>
 <li>Select the Loop folder (left pane)</li>
-<li>Plug in your phone; then select Loop(<abbr title="a grouping of several programs into a complete package">Workspace</abbr>) and your phone</li>
+<li>Plug in your phone; then select Loop(<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) and your phone</li>
 <li>Click on the "Signing &amp; Capabilities" tab</li>
 <li>Sign the targets<ul>
 <li>New step with <abbr title="program used to build an app">Xcode</abbr> 13 - pay attention</li>
@@ -2193,12 +2193,12 @@
 <p>Action labeled 2 in the <a href="#prepare-to-build"><code>Build Summary Graphic</code></a> above. </p>
 <p>Plug in your phone and make sure the phone is unlocked.  If this is the <strong>First Time</strong> for your phone or watch, you will need to tell the phone and watch to "Trust this Computer".</p>
 <ul>
-<li>Select <strong>Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>)</strong> from the dropdown at the upper left<ul>
+<li>Select <strong>Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</strong> from the dropdown at the upper left<ul>
 <li>Examine the Step 2 Detail in the <a href="#prepare-to-build"><code>Build Summary Graphic</code></a> above</li>
-<li>The selection when <abbr title="program used to build an app">Xcode</abbr> first opens after downloading is Loop and you need to select <strong>Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>)</strong></li>
+<li>The selection when <abbr title="program used to build an app">Xcode</abbr> first opens after downloading is Loop and you need to select <strong>Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</strong></li>
 </ul>
 </li>
-<li>Select your phone (not a simulator of the same model as your phone) - it will be near the top of the dropdown list under the heading iOS Device</li>
+<li>Select your phone (not a simulator of the same model as your phone) - it will be near the top of the dropdown list under the heading <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Device</li>
 <li>If you don't see your phone, unplug and plug in again<ul>
 <li>Still don't see your phone - reboot the phone - and if that doesn't work - reboot the computer</li>
 <li>Still don't see your phone - try a different cable</li>
@@ -2216,14 +2216,14 @@
 <p class="admonition-title">Most Common Mistake</p>
 <ul>
 <li>The most common mistake in this step is:<ul>
-<li>not selecting Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>) (old graphic; yours must be <abbr title="a grouping of several programs into a complete package">Workspace</abbr>)</li>
+<li>not selecting Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) (old graphic; yours must be <abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
 <li>not selecting your actual phone as shown in the second screenshot below</li>
 </ul>
 </li>
-<li>The default list is just a name of general phone models under a subheading called "iOS Simulators"...don't be fooled by those. Your ACTUAL phone will be up above that list of all the various simulator phone models.  You may need to scroll to the top of the list to see it.  Make sure you select your actual phone, not just a simulator phone model.</li>
+<li>The default list is just a name of general phone models under a subheading called "<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Simulators"...don't be fooled by those. Your ACTUAL phone will be up above that list of all the various simulator phone models.  You may need to scroll to the top of the list to see it.  Make sure you select your actual phone, not just a simulator phone model.</li>
 </ul>
 </div>
-<p><em>The graphics below have not been updated to show "Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>)".</em></p>
+<p><em>The graphics below have not been updated to show "Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)".</em></p>
 <p align="center"><img alt="img/select_device.png" src="../img/select_device.png" width="750" /></p>
 <p align="center"><img alt="img/your_device.png" src="../img/your_device.png" width="650" /></p>
 <h4 id="select-signing-capabilities-tab">Select Signing &amp; Capabilities Tab<a class="headerlink" href="#select-signing-capabilities-tab" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -2232,7 +2232,7 @@
 <p>There are some highlighted items at the top of the Signing &amp; Capabilities pane that say: <code>All</code>, <code>Debug</code> and <code>Release</code>.  The <code>All</code> button should be highlighted.  If either the <code>Debug</code> or <code>Release</code> button is highlighted, you will get an error when you try to build.</p>
 <h4 id="free-account">Free Account<a class="headerlink" href="#free-account" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>If you are using a paid account, skip this section - head to <a href="#sign-the-targets">Sign the Targets</a>  These steps are only required for those building with the Free Account.</p>
-<p><em>The graphics in this section have not been updated to show "Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>)".</em></p>
+<p><em>The graphics in this section have not been updated to show "Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)".</em></p>
 <p><em>The graphics in this section have not been updated for <abbr title="program used to build an app">Xcode</abbr> 13, which uses the trashcan icon instead of the x for removing capabilities.</em></p>
 <p><em>If you are using a free account to build Loop-dev, review this section and then <a href="../step13/#loop-dev-with-free-account">Loop-dev with Free Account</a></em></p>
 <div class="admonition abstract">
@@ -2252,7 +2252,7 @@
 <li>If you select a team name without (personal team), your app will last a full year.  </li>
 <li>If you never signed up for a <a href="../step9/#add-apple-id">Free Developer Account</a>, you will not have a (personal team) showing.</li>
 </ul>
-<p><em>The graphics in this section have not been updated to show "Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>)".</em></p>
+<p><em>The graphics in this section have not been updated to show "Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)".</em></p>
 <p align="center"><img alt="img/team.png" src="../img/team.png" width="750" /></p>
 <p>Once you choose your signing team, <abbr title="program used to build an app">Xcode</abbr> will automatically generate provisioning profiles and signing certificates.  If this is the first time you are building on this iPhone with this developer account, you may be prompted to register the device.  Simply click on the "Register Device" button to confirm. Note - you <strong>must</strong> be connected to the Internet for this step because your computer needs to communicate with Apple to register that device. (Sharp-eyed users may notice this <abbr title="program used to build an app">Xcode</abbr> screen looks a little different from the one on your Mac - it's from an older version of <abbr title="program used to build an app">Xcode</abbr> and the graphic was not updated because the relevant information refers to registering your phone.  Don't sweat it if your screen looks a little different from some of the graphics.)</p>
 <p align="center"><img alt="img/register_device.png" src="../img/register_device.png" width="750" /></p>
@@ -2272,10 +2272,10 @@
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Advanced Users Only</p>
-<p>There are <a href="../step13/#signing-targets">more targets</a> which must be signed to build the dev branch.</p>
+<p>There are <a href="../step13/#signing-targets">more targets</a> which must be signed to build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>If you read the hint in <a href="../step13/#signing-targets">Step 13</a> and edited the LoopConfigOverride.xcconfig, your targets are already signed.</p>
 <ul>
-<li><strong>Repeat: only build the dev branch if you're a developer/advanced user</strong></li>
+<li><strong>Repeat: only build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you're a developer/advanced user</strong></li>
 </ul>
 </div>
 <h4 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -2291,13 +2291,13 @@
 <li>Is your iPhone unlocked and plugged into the computer?</li>
 <li>Have you signed the four targets?</li>
 <li>Have you clicked on the Loop icon under the <code>PROJECTS</code> heading?</li>
-<li>Have you selected Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>)?</li>
+<li>Have you selected Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)?</li>
 <li>Have you selected your phone and not a simulator?</li>
 <li>OPTIONAL: Is you <a href="#pair-your-apple-watch">Apple watch</a> paired and updated?</li>
 <li>OPTIONAL: Are you done with desired <a href="#code-customizations">customizations</a>?</li>
 </ul>
 <p>It is time to press the “Build” (Play) button to start <abbr title="program used to build an app">Xcode</abbr> on its way.</p>
-<p><em>The graphics in this section have not been updated to show "Loop (<abbr title="a grouping of several programs into a complete package">Workspace</abbr>)".</em></p>
+<p><em>The graphics in this section have not been updated to show "Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)".</em></p>
 <div class="admonition info">
 <p class="admonition-title">Helpful Tips</p>
 <p>The final step of a successful build is for <abbr title="program used to build an app">Xcode</abbr> to copy the completed build to your iPhone; if your phone is locked, <abbr title="program used to build an app">Xcode</abbr> pops up a message letting you know.  Unlock your phone to continue.</p>
@@ -2316,7 +2316,7 @@
 <h3 id="build-finished">Build Finished<a class="headerlink" href="#build-finished" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">First Time Building on a New Device?</p>
-<p>If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like the one shown below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before the Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings-&gt;General-&gt;Device Management (or profiles, Profiles &amp; Device Management on newer iOS) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to <a href="../build_errors/#device-management-could-not-launch-loop">this Build Error section</a> to find the solution.</p>
+<p>If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like the one shown below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before the Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings-&gt;General-&gt;Device Management (or profiles, Profiles &amp; Device Management on newer <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to <a href="../build_errors/#device-management-could-not-launch-loop">this Build Error section</a> to find the solution.</p>
 <p align="center"><img alt="img/trust_device.jpg" src="../img/trust_device.jpg" width="750" /></p>
 </div>
 <h3 id="build-succeeded">Build Succeeded<a class="headerlink" href="#build-succeeded" title="Anchor link to this Header on this Page">&para;</a></h3>
