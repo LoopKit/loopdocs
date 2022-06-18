@@ -7,74 +7,47 @@
 !!! abstract "Summary"
     - **All Loopers:** Loop can only be built with the Workspace Build method
         - To make it easy, there's a script for you to use
-    - **New Builders:** Review this page until told to go to Step 14
-    - **Repeat Builders:** There is important information about iOS updates - don't skip that section
+    - **New Loopers:** Review this page until told to go to Step 14
+    - **Repeat Builders:** Optional information for the curious
     - **Advanced Users:** Read all of Step 13
 
 !!! question "FAQs"
-    - **When do I need to download new Loop code?** You need new code before you build:
-        1. When you build Loop initially
-        1. When a new release of Loop has features you want
-        1. When a major release of the phone or Mac operating system is released
-    - **How often to I have to rebuild?**
-        1. You must build when your app expires (one year paid, one week free)
-        1. It is recommended you rebuild more frequently to avoid panic when your app is about to expire as explained in [Updating FAQs](../faqs/update-faqs.md)
-    - **What do I do when a new iOS is released?** The short answer is wait a bit:
+    - **When do I need to download new Loop code?** You need new code before you build
+    - **What if I want to get a new feature in my copy of Loop?** Start at [Updating](updating.md)
+    - **How do I find out about new features?** Please see [Loop Release FAQs](../faqs/release-faqs.md)
+    - **What do I do if there is a major release (by Apple) of new iOS?** The short answer is wait a bit:
         * It's a good idea to be prepared to rebuild before updating your phone to the new iOS
         * This is even more important when there has been a major change to iOS or Xcode
         * Check with the experts - there will be announcements in all the [Loop Social Media](../index.md#stay-in-the-loop) sites
-    - **How do I find out about new features?** Please see [Loop Release FAQs](../faqs/release-faqs.md)
-
-## Download Loop
-
-You’ll need to first download the Loop code and then build the app on your computer with Xcode, which will transfer the app to your iPhone or iPod. For most users who are installing the released version of Loop, this page prepares you to download Loop - you'll actually do the download in the next step.
-
-If you are an advanced user who is testing the dev branch, read the whole page all the way to the advanced users section, where download instruction will be given.
+    - **How often to I have to rebuild?**
+        1. You must build when your app expires (one year paid, one week free)
+        1. It is recommended you rebuild more frequently to avoid panic when your app is about to expire as explained in [Updating FAQs](../faqs/update-faqs.md)
 
 ## New Loopers
 
-If this is your first time, you only need to read the Build Select Script Workspace Method section.
+You will do the download in the next step.
 
-At the end of that section you'll be directed to Step 14.  You are welcome to read the rest of this page, but you don't need the information at this time.
+For those who are new to Loop, never built Loop or can't remember anything about the last time you built Loop:
 
-## Build Select Script Workspace Method
+Head to Step 14 to [Build the Loop App](step14.md).
 
-The Build Select script is a quick and easy way to build Loop:
+## Repeat Builders
 
-* Builds Loop using the Workspace method
-    * Workspace build method is required as of Xcode 13
-    * Workspace build method works fine with Xcode 12
-* Provided by the Loop and Learn mentors
+In you haven't built in a while, but have been using Loop for a long time:
 
-New builders - head to Step 14 in which you will execute the script steps and [Build the Loop App](step14.md).
+* The method to build Loop changed with the advent of Xcode 13 (Sept 2021).
+* Loop must be built with a workspace build as explained in Step 14 [Build the Loop App](step14.md).
+* The Dosing Strategy of Automatic Bolus or Temp Basal Only is in the released version of Loop (Aug 2021)
+    * You do not need a special branch to get this feature
 
----
-
-If you are interested in the dev branch, there is more information on the rest of this page.
-
-For those "Repeat Loopers" who remember when you had to use a "dev" branch to get features like automatic-bolus, you do not need to do that.  Automatic-bolus Dosing Strategy is included in Loop Master.
-
-
-### Xcode 13.3, iOS 15.4 changes
-
-!!! warning "DO NOT UPDATE your phone to iOS 15 without reading this"
-
-    Any Loop app built with Xcode version prior to Xcode 12.5 will immediately fail when the phone is updated to iOS 15. (Any one who last built with Catalina should not install iOS 15 without following "safe steps" below.)
-
-    Follow this link, [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used), for instructions to determine what version was used when building the Loop app currently on your phone.
-
-    Safe steps to keep Loop going if you want to install iOS 15
-
-    * update your macOS to Monterey (12.x)
-    * update your Xcode to version 13.3
-    * build the Loop app on your phone
-    * update phone to iOS 15.4
 
 ## Advanced Users Only
 
 !!! abstract "Advanced Users Reminders"
 
     If you are an advanced user who wants to build the dev branch - this section is for you.
+
+    Everyone else - head to Step 14 to [Build the Loop App](step14.md).
 
     * Be sure to clone into a new directory that does not already have a folder called LoopWorkspace in it.
     * Loop-dev is the only workspace build that still requires carthage and it requires a specific version - don't worry - instructions are provided below
