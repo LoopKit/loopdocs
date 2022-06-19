@@ -17,7 +17,7 @@
 *[Expiration Date]: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 *[Finder]: graphical folder and file display on Mac
 *[git]: a tool for version control
-*[IOB]: Insulin on Board, affects automated insulin delivery: the current active insuln (above or below the basal rate) that Loop calculates and uses for glucose prediction
+*[IOB]: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
 *[iOS]: operating system used by Apple Mobile devices (iPhone, iPod)
 *[ISF]: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin
 *[Issue]: On github - a formal method to report a problem, either code behavior or documentation
