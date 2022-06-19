@@ -1,11 +1,12 @@
-*[HTML]: Hyper Text Markup Language
-*[W3C]: World Wide Web Consortium
-*[URL]: Uniform Resource Locator
-*[API_SECRET]: password needed to access Nightscout Site
-*[modal]: message appearing in app that must be acknowledged
+*[URL]: website address (Uniform Resource Locator)
+*[API_SECRET]: password (min 12 characters) needed to access Nightscout Site
+*[modal]: message or alert appearing in front of app that must be acknowledged to return to app
 *[dynos]: used to reboot a Nightscout Site
 *[Config Vars]: configuration parameters for a Nightscout Site
+*[macOS]: operating system for Mac computer
 *[Monterey]: operating system for Mac, macOS 12.x
+*[Big Sur]: older version for operating system for Mac, macOS 11.x
+*[Catalina]: older version for operating system for Mac, macOS 10.x
 *[Xcode]: program used to build an app
 *[Terminal]: interface for entering commands to the computer
 *[Workspace]: a grouping of several repositories into a complete package
@@ -13,8 +14,23 @@
 *[repository]: contains project files and each file's revision history
 *[Pull Request]: formal method to request changes to a repository
 *[PR]: Pull Request - a formal method to request changes to a repository
+*[Issue]: On github - a formal method to report a problem, either code behavior or documentation
 *[Dosing Strategy]: chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal
 *[iOS]: operating system used by Apple Mobile devices (iPhone, iPod)
 *[branch]: version of code within a single repository or workspace repository
 *[carthage]: a method to connect several repositories, currently used only by Loop-dev
 *[clone]: create a copy of a repository on your computer including revision history and ability to update using git commands
+*[SAGE]: sensor age on Nightscout site
+*[CAGE]: cannula (or pump site) age on Nightscout site
+*[BAGE]: pump battery age on Nightscout site
+*[pill]: on Nightscout, small boxes with information, tap for extra details
+*[Tokens]: on Nightscout, configure access permissions using tokens
+*[RileyLink]: a radio-frequency device that enables Loop to control your pump
+*[OrangeLink]: a radio-frequency device that enables Loop to control your pump
+*[EmaLink]: a radio-frequency device that enables Loop to control your pump
+*[Rosetta]: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 chips)
+*[Finder]: graphical folder and file display on Mac
+*[MDT]: common abbreviation for Medtronic pumps
+*[CGM]: continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid
+*[OTP]: one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone
+
