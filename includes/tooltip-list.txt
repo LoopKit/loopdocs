@@ -8,6 +8,7 @@
 *[Certificate]: Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID
 *[CGM]: continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid
 *[clone]: create a copy of a repository on your computer including revision history and ability to update using git commands
+*[COB]: Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction
 *[Config Vars]: configuration parameters for a Nightscout Site
 *[CR]: Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin
 *[Dosing Strategy]: chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal
@@ -16,6 +17,7 @@
 *[Expiration Date]: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 *[Finder]: graphical folder and file display on Mac
 *[git]: a tool for version control
+*[IOB]: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
 *[iOS]: operating system used by Apple Mobile devices (iPhone, iPod)
 *[ISF]: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin
 *[Issue]: On github - a formal method to report a problem, either code behavior or documentation

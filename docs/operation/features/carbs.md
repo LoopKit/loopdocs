@@ -83,7 +83,7 @@ Loopers who are using the Automatic Bolus Dosing Strategy still typically prebol
 
 ## Dynamic Carb Absorption
 
-Loop observes the blood glucose impact of the meal within the 150% absorption time window. Loop calculates how many carbs have been absorbed (regardless of how many you entered) based on your BG pattern and your settings. You can watch the progression of  Loop's observations of your meal by tapping on the Active Carbohydrates chart at the bottom of Loop's main screen and watching the insulin counteraction effects (ICE) on the Carbohydrates screen. An example of the screen is on the left side of the figure below. An explanation of the dual lines for each entry and the color coding scheme is explained below the figure.<br/><br/>
+Loop observes the blood glucose impact of the meal within the 150% absorption time window. Loop calculates how many carbs have been absorbed (regardless of how many you entered) based on your BG pattern and your settings. You can watch the progression of  Loop's observations of your meal by tapping on the Active Carbohydrates chart at the bottom of Loop's main screen and watching the insulin counteraction effects (ICE) on the Carbohydrates screen. An example of the screen is on the left side of the figure below. An explanation of the dual lines for each entry and the color coding scheme is explained below the figure. Click on the [ICE](ice.md) link for more details and an in-real-life example.<br/><br/>
 
 ![Edit a carb entry](img/edit-carb-entry.svg){width="900"}
 {align="center"}
@@ -100,6 +100,23 @@ Loop observes the blood glucose impact of the meal within the 150% absorption ti
         * Yellow: amount absorbed is exceeds 10% above or below the entered amount
 
 The information available on the Carbohydrates screen disappears for any meals not still active at midnight, so if you're looking for details as to how a particular meal absorbed, you need to screenshot or otherwise capture this information before midnight. Previous entries can be modified or deleted through this screen. To adjust an entry, simply tap on it (you don't need to tap the `Edit Carb Entry` at the top of the screen). You can change a prebolus time, modify carb amounts, or adjust absorption times (even mid-meal). To delete an entry, you first tap `Edit Carb Entry` and tap on the red circle to the left of the entry that you would like to delete. It is a little counterintuitive, but the `Edit Carb Entry` button lets you delete, but not edit an entry.
+
+## Review Carb Decay
+
+New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how the carbs you entered for a meal decay over time. If you entered 30 g over 3 hours and after 3 hours, there are 25 g COB left on the [Active Carbohydrates](../loop-settings/displays.md#carbohydrate-chart) chart - you might have messed up something. Some common things to consider are listed below. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you.
+
+* Need to adjust value for carbs or account for fat/protein
+* Need to adjust aborption time
+* Need to review settings
+* Settings, carbs and absorption time are good for this meal but there was more or less activity than normal
+* Stress / Hormones
+* Other effects
+
+The good news is Loop allows you to edit previously entered values. In other words, you can edit the carb entries so Loop has a better idea of how to adjust predicted glucose moving forward. This can head off a low or a high.
+
+### Check COB Before Adding More
+
+Yes, it is important to let Loop know how many carbs are coming, but if you have a lot of left-over carbs from an earlier entry - wait before adding more carbs for that next snack. If Loop thinks more carbs are expected, it will dose extra insulin to accomodate. Maybe set a timer and check back in half-an-hour or an hour to see if you really need to add more carbs. And read the [preceding section](#review-carb-decay).
 
 ## Edit Meals
 
