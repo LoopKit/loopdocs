@@ -103,7 +103,7 @@ The information available on the Carbohydrates screen disappears for any meals n
 
 ## Review Carb Decay
 
-New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how the carbs you entered for a meal decay over time. If you entered 30 g over 3 hours and after 3 hours, there are 25 g COB left on the [Active Carbohydrates](../loop-settings/displays.md#carbohydrate-chart) chart - you might have messed up something. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you. Some common things to consider are listed below.
+New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how the carbs you entered for a meal decay over time. If you entered several carb entries in the previous few hours, but there was not much associated glucose rise detected, there might be COB on the [Active Carbohydrates](../loop-settings/displays.md#carbohydrate-chart) chart that doesn't reflect your current situation, and you might need to make an adjustment. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you. Some common things to consider are listed below.
 
 * Need to adjust value for carbs or account for fat/protein
 * Need to adjust aborption time
