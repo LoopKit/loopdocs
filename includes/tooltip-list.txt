@@ -1,4 +1,3 @@
-
 *[API_SECRET]: password (min 12 characters) needed to access Nightscout Site
 *[BAGE]: pump battery age on Nightscout site
 *[Big Sur]: older version for operating system for Mac, macOS 11.x
