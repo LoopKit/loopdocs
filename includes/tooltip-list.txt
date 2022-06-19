@@ -5,15 +5,19 @@
 *[CAGE]: cannula (or pump site) age on Nightscout site
 *[carthage]: a method to connect several repositories, currently used only by Loop-dev
 *[Catalina]: older version for operating system for Mac, macOS 10.x
+*[Certificate]: Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID
 *[CGM]: continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid
 *[clone]: create a copy of a repository on your computer including revision history and ability to update using git commands
 *[Config Vars]: configuration parameters for a Nightscout Site
+*[CR]: Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin
 *[Dosing Strategy]: chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal
 *[dynos]: used to reboot a Nightscout Site
 *[EmaLink]: a radio-frequency device that enables Loop to control your pump
+*[Expiration Date]: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 *[Finder]: graphical folder and file display on Mac
 *[git]: a tool for version control
 *[iOS]: operating system used by Apple Mobile devices (iPhone, iPod)
+*[ISF]: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin
 *[Issue]: On github - a formal method to report a problem, either code behavior or documentation
 *[macOS]: operating system for Mac computer
 *[MDT]: common abbreviation for Medtronic pumps
@@ -21,15 +25,19 @@
 *[Monterey]: operating system for Mac, macOS 12.x
 *[OrangeLink]: a radio-frequency device that enables Loop to control your pump
 *[OTP]: one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone
+*[Package Dependencies]: packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer
 *[pill]: on Nightscout, small boxes with information, tap for extra details
 *[PR]: Pull Request - a formal method to request changes to a repository
+*[Provisioning Profile]: associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)
 *[Pull Request]: formal method to request changes to a repository
 *[repository]: contains project files and each file's revision history
 *[RileyLink]: a radio-frequency device that enables Loop to control your pump
 *[Rosetta]: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 chips)
 *[SAGE]: sensor age on Nightscout site
+*[submodules]: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
 *[Terminal]: interface for entering commands to the computer
 *[Tokens]: on Nightscout, configure access permissions using tokens
 *[URL]: website address (Uniform Resource Locator)
+*[watchOS]: Apple watch operating system; must be compatible with phone iOS
 *[Workspace]: a grouping of several repositories into a complete package
 *[Xcode]: program used to build an app
