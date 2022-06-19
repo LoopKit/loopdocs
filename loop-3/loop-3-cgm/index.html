@@ -1908,40 +1908,40 @@
               
                 
                 
-                <h1 id="cgm-configuration">CGM Configuration<a class="headerlink" href="#cgm-configuration" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>The CGM configuration can be selected from the Heads-Up-Display (<a href="../loop-3-displays/#heads-up-display">HUD</a>) or from the <a href="../loop-3-settings/">Loop Settings</a> screen.</p>
-<h2 id="add-cgm">Add CGM<a class="headerlink" href="#add-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The HUD will look like the graphic below if no CGM or Pump is configured for Loop:</p>
+                <h1 id="cgm-configuration"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Configuration<a class="headerlink" href="#cgm-configuration" title="Anchor link to this Header on this Page">&para;</a></h1>
+<p>The <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> configuration can be selected from the Heads-Up-Display (<a href="../loop-3-displays/#heads-up-display">HUD</a>) or from the <a href="../loop-3-settings/">Loop Settings</a> screen.</p>
+<h2 id="add-cgm">Add <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#add-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The HUD will look like the graphic below if no <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or Pump is configured for Loop:</p>
 <p align="center"><img alt="Loop HUD when both CGM and Pump have not been added" src="../img/loop-3-hud-add-cgm-add-pump.svg" width="350" /></p>
-<p>With Loop-dev, the user has a new option for CGM, <a href="#nightscout-remote-cgm">Nightscout Remote CGM</a>, in addition to those available with Loop 2.x.x. The Dexcom G4 is no longer available, so is no longer supported by Loop-dev.</p>
+<p>With Loop-dev, the user has a new option for <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, <a href="#nightscout-remote-cgm">Nightscout Remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>, in addition to those available with Loop 2.x.x. The Dexcom G4 is no longer available, so is no longer supported by Loop-dev.</p>
 <ul>
-<li>CGM that reside on the same phone (internet not required)<ul>
+<li><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> that reside on the same phone (internet not required)<ul>
 <li><a href="../../build/step4/#dexcom-g5-and-g6-cgm">Dexcom G5/G6</a></li>
-<li><a href="../../build/step4/#medtronic-cgm">Minimed Enlite CGM</a> (Medtronic Pump only) </li>
+<li><a href="../../build/step4/#medtronic-cgm">Minimed Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a> (Medtronic Pump only) </li>
 </ul>
 </li>
-<li>CGM that require active internet<ul>
-<li><a href="#nightscout-remote-cgm">Nightscout Remote CGM</a></li>
+<li><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> that require active internet<ul>
+<li><a href="#nightscout-remote-cgm">Nightscout Remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a></li>
 <li><a href="../../build/step4/#dexcom-share">Dexcom Share</a></li>
 </ul>
 </li>
 </ul>
-<p>The addition of the Nightscout Remote CGM enables the use of Loop-dev with any sensor that can be uploaded to your Nightscout <abbr title="Uniform Resource Locator">URL</abbr>.</p>
-<h3 id="nightscout-remote-cgm">Nightscout Remote CGM<a class="headerlink" href="#nightscout-remote-cgm" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If the user has CGM data available at their Nightscout <abbr title="Uniform Resource Locator">URL</abbr>, they can select that as a source for CGM data for Loop. The user must acknowledge they understand the risks of using a remote source that requires internet, as shown in the graphic below.</p>
+<p>The addition of the Nightscout Remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> enables the use of Loop-dev with any sensor that can be uploaded to your Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr>.</p>
+<h3 id="nightscout-remote-cgm">Nightscout Remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#nightscout-remote-cgm" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If the user has <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data available at their Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr>, they can select that as a source for <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data for Loop. The user must acknowledge they understand the risks of using a remote source that requires internet, as shown in the graphic below.</p>
 <p align="center"><img alt="Nightscout Remote CGM acknowledgement screen" src="../img/nightscout-cgm-acknowledge.svg" width="350" /></p>
-<p>The user must enter both the <abbr title="Uniform Resource Locator">URL</abbr> and the API Secret to ensure the security of the data.</p>
+<p>The user must enter both the <abbr title="website address (Uniform Resource Locator)">URL</abbr> and the API Secret to ensure the security of the data.</p>
 <p align="center"><img alt="Nightscout Remote CGM entry screen" src="../img/nightscout-cgm-entry.svg" width="350" /></p>
-<p>When using Nightscout Remote CGM, if the user needs to modify credentials or switch to a different CGM, the user must go through the Loop-&gt;Settings-&gt;CGM menu.</p>
-<h2 id="cgm-icon">CGM Icon<a class="headerlink" href="#cgm-icon" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Tapping on the CGM icon in the HUD shows more information about the last CGM reading.</p>
-<p>For Dexcom G5/G6 and Share, the same screen is obtained by tapping on Loop Settings-&gt;CGM.</p>
-<p>For Nightscout Remote CGM, the Nightscout <abbr title="Uniform Resource Locator">URL</abbr> is opened when tapping on the CGM icon in the HUD, while the credential sections is shown when tapping on Loop Settings-&gt;CGM.</p>
-<p>The graphic below shows the result of tapping on the CGM icon when using a Dexcom G6.  It includes the time of the last reading to the nearest second, along with other information about that sensor and transmitter. It also has an option to go to the Dexcom app on the same device.</p>
+<p>When using Nightscout Remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, if the user needs to modify credentials or switch to a different <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, the user must go through the Loop-&gt;Settings-&gt;<abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> menu.</p>
+<h2 id="cgm-icon"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Icon<a class="headerlink" href="#cgm-icon" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Tapping on the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> icon in the HUD shows more information about the last <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading.</p>
+<p>For Dexcom G5/G6 and Share, the same screen is obtained by tapping on Loop Settings-&gt;<abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>.</p>
+<p>For Nightscout Remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, the Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> is opened when tapping on the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> icon in the HUD, while the credential sections is shown when tapping on Loop Settings-&gt;<abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>.</p>
+<p>The graphic below shows the result of tapping on the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> icon when using a Dexcom G6.  It includes the time of the last reading to the nearest second, along with other information about that sensor and transmitter. It also has an option to go to the Dexcom app on the same device.</p>
 <p align="center"><img alt="dexcom information screen from " src="../img/dexcom-info-menu.svg" width="250" /></p>
-<h2 id="modify-cgm">Modify CGM<a class="headerlink" href="#modify-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>To modify the selected CGM, it must first be deleted. Then a new CGM can be added.  Scroll to the bottom of the current CGM screen and tap <code>Delete CGM</code>.</p>
-<p>When changing Dexcom Transmitters, you must first <code>Delete CGM</code> and then add the CGM back with the new Transmitter serial number.</p>
+<h2 id="modify-cgm">Modify <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#modify-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>To modify the selected <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, it must first be deleted. Then a new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> can be added.  Scroll to the bottom of the current <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> screen and tap <code>Delete CGM</code>.</p>
+<p>When changing Dexcom Transmitters, you must first <code>Delete CGM</code> and then add the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> back with the new Transmitter serial number.</p>
                 
               
               

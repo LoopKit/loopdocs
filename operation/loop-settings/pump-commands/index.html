@@ -2115,7 +2115,7 @@
 <p>This line displays Alerts or Alarms; tapping on it, or on the accompanying banner displayed in the HUD, acknowledges the alert</p>
 <ul>
 <li>If your Pod is beeping an alert, this line will display information about the alert. Tapping on the alert clears or "snoozes" the alert status.</li>
-<li>If your Pod is screaming, it's time to change it.  Tapping on this line stimulates an immediate reading of the actual error (normally this happens at the next CGM reading).</li>
+<li>If your Pod is screaming, it's time to change it.  Tapping on this line stimulates an immediate reading of the actual error (normally this happens at the next <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading).</li>
 <li>There was overwhelming preference during initial testing to minimize the "beeping" of Pods. You can turn on additional beeps by enabling <a href="./#enable-confirmation-beeps">Confirmation Beeps</a>. These are the Loop Notifications and Pod beeps you should expect with the default (confirmation beeps disabled) setting:<ul>
 <li>Expiration Reminder - Loop notification only, no Pod beeps</li>
 <li>72 Hours Expiration - Loop notification and Pod beeps (Pod beeps continue  once per hour until alert is acknowledged)</li>
@@ -2140,7 +2140,7 @@
 <p><img alt="banner notice on the HUD" src="../img/pod-hud-suspended.png" width="250" /></p>
 <p>You will need to press <code>Tap to Resume</code> in the banner or the <code>Resume Delivery</code> button in the Pod Settings to resume your scheduled basal rate and let Loop get back to action. If a bolus delivery was interrupted by the Suspend Pod command, it will not be resumed.</p>
 <div class="admonition info">
-<p>When you resume delivery, the 24 hour Pod basal rate schedule is sent to the Pod. Be sure the Phone, RileyLink and Pod stay close until the message exchange is complete.  </p>
+<p>When you resume delivery, the 24 hour Pod basal rate schedule is sent to the Pod. Be sure the Phone, <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> and Pod stay close until the message exchange is complete.  </p>
 </div>
 <h4 id="enable-confirmation-beeps">Enable Confirmation Beeps<a class="headerlink" href="#enable-confirmation-beeps" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This turns confirmation beeps on for the Pod. The Pod beeps when you enable this, but is silent when you disable it.</p>
@@ -2159,14 +2159,14 @@
 <h4 id="change-time-zone_1">Change Time Zone<a class="headerlink" href="#change-time-zone_1" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Use the <a href="#change-time-zone"><code>Change Time Zone</code></a> command to align your configuration settings with the current time zone. Note that this updates your basal schedule on your Pod. If you start a new Pod session without modifying the time zone here, the original time zone will be used for the new Pod. Please wait until you see <code>Succeeded</code> appear on the page to ensure the command has successfully been received by the Pod.</p>
 <div class="admonition info">
-<p>Make sure the phone, RileyLink compatible device and Pod are kept in close proximity until this command has completed. The time zone is updated by Loop issuing the 24-hour basal rate schedule to the Pod based on the current time.</p>
+<p>Make sure the phone, <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device and Pod are kept in close proximity until this command has completed. The time zone is updated by Loop issuing the 24-hour basal rate schedule to the Pod based on the current time.</p>
 </div>
 <p><img alt="Pod screen showing when time zone change succeeded" src="../img/pod-change-timezone.png" width="250" /></p>
 <h4 id="replace-pod">Replace Pod<a class="headerlink" href="#replace-pod" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This command deactivates a Pod prior to replacing it. Once you tap <code>Replace Pod</code>, another screen appears for you to confirm that you mean it.</p>
 <p><img alt="Icon to tap to replace Pod" src="../img/pod-settings-replace-pod.png" width="250" /></p>
 <h3 id="devices">Devices<a class="headerlink" href="#devices" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This allows access to the <a href="../rileylink/">RileyLink</a> screen for each connected RileyLink compatible device.</p>
+<p>This allows access to the <a href="../rileylink/"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr></a> screen for each connected <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device.</p>
 <h3 id="pod-diagnostics">Pod Diagnostics<a class="headerlink" href="#pod-diagnostics" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This section is labeled Diagnostics, but many Pod users make use of this section.</p>
 <h4 id="read-pod-status">Read Pod Status<a class="headerlink" href="#read-pod-status" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -2176,14 +2176,14 @@
 <p>The line labeled <code>Pulses</code> reports the total number of pulses of insulin delivered by that Pod since activation (adding insulin to the reservoir). To convert this to units of insulin, multiply by 0.05 units/pulse. If you compare this report (for your Pod) to the <code>Insulin Delivered</code> line in Pod settings, for your Pod at the same time, the difference is the insulin used to prime the Pod and fill the cannula at insertion.</p>
 </li>
 <li>
-<p>The line label <code>RSSI</code> reports the Received Signal Strength Indicator (RSSI) between the RileyLink compatible device and the Pod. The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod.</p>
+<p>The line label <code>RSSI</code> reports the Received Signal Strength Indicator (RSSI) between the <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device and the Pod. The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod.</p>
 <p><img alt="result of read Pod status" src="../img/pod-read-status-v225.png" width="250" /></p>
 </li>
 </ul>
 <h4 id="play-test-beeps">Play Test Beeps<a class="headerlink" href="#play-test-beeps" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This command requests the Pod emit a beep pattern. If you hear it, you know the commands are getting to the Pod. A message appears on your screen to indicate Loop got or did not get an acknowledgement from the Pod.</p>
 <h4 id="read-pulse-log">Read Pulse Log<a class="headerlink" href="#read-pulse-log" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>This command reads the pulse log (diagnostic), displays it on the screen and saves the result in the log file. It takes some time, so keep your gear close until command completes. This can be extracted by sending the pulse log to yourself using the send-to icon at the top right of the screen.  It is also included in the Issue Report. If you are having communication issues, you can provide this report to an expert who may be able to provide assistance. <a href="../../..#stay-in-the-loop">Post</a> for help in either zulipchat or a Facebook group to request assistance and you'll get information about how to get that log file submitted.</p>
+<p>This command reads the pulse log (diagnostic), displays it on the screen and saves the result in the log file. It takes some time, so keep your gear close until command completes. This can be extracted by sending the pulse log to yourself using the send-to icon at the top right of the screen.  It is also included in the <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report. If you are having communication issues, you can provide this report to an expert who may be able to provide assistance. <a href="../../..#stay-in-the-loop">Post</a> for help in either zulipchat or a Facebook group to request assistance and you'll get information about how to get that log file submitted.</p>
 <h4 id="test-command">Test Command<a class="headerlink" href="#test-command" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This verifies communication with the Pod. Loop reports success or failure.  Use Get Pod Status if you want to see the some of the information returned from the Pod.</p>
 <h3 id="pod-details">Pod Details<a class="headerlink" href="#pod-details" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2203,10 +2203,10 @@
 <p>Leave the Preferred Data Source set to on Event History for proper functioning of Loop.</p>
 <p><strong>Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.</strong>  Event History must also be selected in order for prime events to be detected and NOT contribute to IOB during site changes. Please just leave the Preferred Data Source on Event History.</p>
 <h3 id="use-mysentry">Use MySentry<a class="headerlink" href="#use-mysentry" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This is a new option. If you don't see this row, consider updating your Loop app.  Using the MySentry feature on some Medtronic pumps when using an OrangeLink causes the batteries to die quickly.  This option allows you to turn off MySentry within the Loop app.</p>
+<p>This is a new option. If you don't see this row, consider updating your Loop app.  Using the MySentry feature on some Medtronic pumps when using an <abbr title="a radio-frequency device that enables Loop to control your pump">OrangeLink</abbr> causes the batteries to die quickly.  This option allows you to turn off MySentry within the Loop app.</p>
 <p align="center"><img alt="MySentry selection screen for enabling or disabling the option" src="../img/mdt-my-sentry-v225.png" width="250" /></p>
 <h3 id="devices_1">Devices<a class="headerlink" href="#devices_1" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This allows access to the <a href="../rileylink/">RileyLink</a> screen for each connected RileyLink compatible device.</p>
+<p>This allows access to the <a href="../rileylink/"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr></a> screen for each connected <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device.</p>
                 
               
               

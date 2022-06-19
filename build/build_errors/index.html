@@ -2243,7 +2243,7 @@
 <p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> beta version or an <abbr title="program used to build an app">Xcode</abbr> beta version, your Loop will not build. If you have <abbr title="program used to build an app">Xcode</abbr> beta, uninstall it and get regular <abbr title="program used to build an app">Xcode</abbr>. If you have <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> beta is a pain...so don't install it in the first place.</p>
 </li>
 <li>
-<p><strong>Did you check that you have the minumum <abbr title="program used to build an app">Xcode</abbr> version for your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>?</strong> This is critical. If you are updating your Loop app, please review the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> driven requirements for minimum version of <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">macOS and <abbr title="program used to build an app">Xcode</abbr></a>.</p>
+<p><strong>Did you check that you have the minumum <abbr title="program used to build an app">Xcode</abbr> version for your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>?</strong> This is critical. If you are updating your Loop app, please review the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> driven requirements for minimum version of <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="operating system for Mac computer">macOS</abbr> and <abbr title="program used to build an app">Xcode</abbr></a>.</p>
 </li>
 <li>
 <p><strong>Did you check your Apple developer account for new license agreement?</strong> Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. <a href="https://developer.apple.com/account">Login to your Apple developer account</a> to check if there's a new license agreement.</p>
@@ -2317,16 +2317,16 @@
 <p><strong>Error Message:</strong></p>
 <p><em>Package.resolved file is corrupted or malformed; fix or delete the file to continue: unsupported schema version 2</em></p>
 <p><img alt="package corrupted or malformed error" src="../img/xcode-needs-to-be-updated.jpeg" width="600" /></p>
-<p>This error is new with Loop-dev, which uses Package Dependencies.</p>
+<p>This error is new with Loop-dev, which uses <abbr title="packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer">Package Dependencies</abbr>.</p>
 <p>There are 2 problems shown here</p>
 <ol>
 <li>The version of <abbr title="program used to build an app">Xcode</abbr> is out of date</li>
 <li>The graphic was acquired using a camera instead of a <a href="#screenshots">screenshot</a>, and yes - that was a joke - using a camera does not cause a build error</li>
 </ol>
 <p><strong>Solution:</strong></p>
-<p>Update <abbr title="program used to build an app">Xcode</abbr>, which may require you to update macOS.</p>
+<p>Update <abbr title="program used to build an app">Xcode</abbr>, which may require you to update <abbr title="operating system for Mac computer">macOS</abbr>.</p>
 <h3 id="couldnt-get-revision-for-package-dependency">Couldn't Get Revision for Package Dependency<a class="headerlink" href="#couldnt-get-revision-for-package-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This error is new with Loop-dev, which uses Package Dependencies.</p>
+<p>This error is new with Loop-dev, which uses <abbr title="packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer">Package Dependencies</abbr>.</p>
 <ul>
 <li>If you notice a red x in <abbr title="program used to build an app">Xcode</abbr> (as circled in the graphic below)<ul>
 <li>Click on the red x to show the error in the left pane</li>
@@ -2457,7 +2457,7 @@
 </ul>
 <h3 id="could-not-locate-device-support-files">Could Not Locate Device Support Files<a class="headerlink" href="#could-not-locate-device-support-files" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong> "Could not locate device support files." That message is telling you that your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> on the Loop phone requires you to get a newer version of <abbr title="program used to build an app">Xcode</abbr> to be able to build Loop onto that phone.</p>
-<p><strong>Solution:</strong> Update your <abbr title="program used to build an app">Xcode</abbr> version; this may also require a macOS update. Please review the phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> driven requirements for <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="program used to build an app">Xcode</abbr> and macOS</a>.</p>
+<p><strong>Solution:</strong> Update your <abbr title="program used to build an app">Xcode</abbr> version; this may also require a <abbr title="operating system for Mac computer">macOS</abbr> update. Please review the phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> driven requirements for <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="program used to build an app">Xcode</abbr> and <abbr title="operating system for Mac computer">macOS</abbr></a>.</p>
 <p align="center"><img alt="img/device-support-files.jpg" src="../img/device-support-files.jpg" width="750" /></p>
 <p>With <abbr title="program used to build an app">Xcode</abbr> 12, the simulators are no longer being downloaded automatically. If you are missing a simulator, follow the steps under Step 9 <a href="../step9/#simulator-download">Simulator Download</a>.</p>
 <h3 id="no-such-module-loopkit-or-similar-message">No Such Module 'LoopKit' or Similar Message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2469,8 +2469,8 @@
 <p><strong>Error message:</strong> "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement". Or you may see "Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account."</p>
 <p><strong>Solution:</strong> You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.</p>
 <p align="center"><img alt="img/license.png" src="../img/license.png" width="750" /></p>
-<h3 id="could-not-get-a-container-directory-url">Could Not Get a Container Directory <abbr title="Uniform Resource Locator">URL</abbr><a class="headerlink" href="#could-not-get-a-container-directory-url" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Error message:</strong> "Could not get a container directory <abbr title="Uniform Resource Locator">URL</abbr>. Please ensure App Groups are set up correctly in entitlements."</p>
+<h3 id="could-not-get-a-container-directory-url">Could Not Get a Container Directory <abbr title="website address (Uniform Resource Locator)">URL</abbr><a class="headerlink" href="#could-not-get-a-container-directory-url" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>Error message:</strong> "Could not get a container directory <abbr title="website address (Uniform Resource Locator)">URL</abbr>. Please ensure App Groups are set up correctly in entitlements."</p>
 <p align="center"><img alt="img/container-1.png" src="../img/container-1.png" width="750" /></p>
 <p><strong>Solution</strong>: To resolve this error, you will need to click on the Loop target's signing area and then the plus-sign in the App Groups area under the signing. Copy and paste the bundle indentifier into the new container that starts with <code>group.</code> and then add <code>Group</code> to the end of the name. Click OK to save. Note, the line will start with lower case <code>group.</code> followed by your bundle identifier and an upper case <code>Group</code> added to the end of the bundle identifier.</p>
 <p align="center"><img alt="img/container-2.png" src="../img/container-2.png" width="750" /></p>
@@ -2508,7 +2508,7 @@
 <li>Rebuild Loop on the phone with the new download of Loop code.</li>
 <li>Start a new pod with the new Loop app on the reset phone.</li>
 </ol>
-<h3 id="pending-certificate-request">Pending Certificate Request<a class="headerlink" href="#pending-certificate-request" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="pending-certificate-request">Pending <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Request<a class="headerlink" href="#pending-certificate-request" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "You already have a current <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Development certificate or a pending certificate request."</p>
 <p align="center"><img alt="img/pending_certification_request.jpg" src="../img/pending_certification_request.jpg" width="750" /></p>
 <p><strong>Solution:</strong> This error message has recently started to appear for some new Loop builders. To resolve the issue, please log in to your Developer account at <a href="https://developer.apple.com">developer.apple.com</a> and then click on "Certificates, Identifiers &amp; Profiles".  Under that screen, you will see "Development" under the "Certificates" section in the column on the left.  You will need to click on the certificates, and choose "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"</p>
@@ -2545,7 +2545,7 @@
 <h2 id="apple-watch-issues">Apple Watch Issues<a class="headerlink" href="#apple-watch-issues" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="apple-watch-loop-app-not-appearing">Apple Watch: Loop App Not Appearing<a class="headerlink" href="#apple-watch-loop-app-not-appearing" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error:</strong> Apple watch app is not appearing.</p>
-<p><strong>Solution:</strong> This error usually appears because you have not updated the watchOS prior to building Loop, or you didn't have your Apple watch paired at the time of building Loop.  </p>
+<p><strong>Solution:</strong> This error usually appears because you have not updated the <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> prior to building Loop, or you didn't have your Apple watch paired at the time of building Loop.  </p>
 <p>Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p>
 <h3 id="apple-watch-loop-app-not-installing">Apple Watch: Loop App Not Installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error:</strong> The Loop app appears on the list of apps available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL".</p>
@@ -2556,7 +2556,7 @@
 <p><strong>Solution:</strong> Plug in your iPhone, with the watch already paired, into the computer and start <abbr title="program used to build an app">Xcode</abbr> with your current build folder.  In <abbr title="program used to build an app">Xcode</abbr>, from the list of schemes where you normally choose Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>), choose the WatchApp scheme (near the bottom of the list) and then select your watch (not a simulator) from the device list, see the graphics below. Press the play button to build and deploy the WatchApp directly to your watch. It will launch correctly and will not crash when you subsequently launch it from the complication or your watch Home Screen..</p>
 <p align="center"><img alt="xcode screen display the selection for direct build of watchapp" src="../img/watchapp-direct-build-from-xcode.svg" width="650" /></p>
 <p align="center"><img alt="additional details for the direct build of watchapp" src="../img/watchapp-direct-build-from-xcode-2.svg" width="650" /></p>
-<p><strong>Warning:</strong> Make sure your watchOS is up to date with respect to your phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. If not, you may need to update to be successful. On pressing clicking build/play, some people report receiving an error stating “iPhone/Apple Watch are ineligible because the OS on the watch doesn’t support WatchKit App Products” or similar wording. This is a known issue with some Mac USB ports. Fixes in preference order are: 1) swap which USB port is in use;  2) unplug and replug the USB cable from both the iPhone and Mac; or 3) as a last resort, reboot the iPhone and Mac.</p>
+<p><strong>Warning:</strong> Make sure your <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> is up to date with respect to your phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. If not, you may need to update to be successful. On pressing clicking build/play, some people report receiving an error stating “iPhone/Apple Watch are ineligible because the OS on the watch doesn’t support WatchKit App Products” or similar wording. This is a known issue with some Mac USB ports. Fixes in preference order are: 1) swap which USB port is in use;  2) unplug and replug the USB cable from both the iPhone and Mac; or 3) as a last resort, reboot the iPhone and Mac.</p>
 <p>Don't forget to select Loop(<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) after building to the watch before trying to build to a phone.</p>
                 
               

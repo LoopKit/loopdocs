@@ -1992,7 +1992,7 @@
 <p>If the Loop algorithm does not have ALL of the data it needs to make a prediction, it will let the remaining temporary basal rate run its duration (maximum of 30 minutes), and then the basal rate will default back to the current scheduled basal rate, thus returning to the same therapy pattern that they would receive using a traditional insulin pump.</p>
 <h2 id="determining-the-temporary-basal-rate">Determining the Temporary Basal Rate<a class="headerlink" href="#determining-the-temporary-basal-rate" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>To determine the corrective temporary basal rate to implement, Loop calculates a “dose” in the same way doses are calculated in both open-loop and traditional insulin pump therapy. It's also the same math many people on multiple-daily injection therapy use. The benefit of Loop (and all other close-loop algorithms) is that it does this math every 5 minutes, and is far less prone to error than humans doing the math. Loop also does its math based on predicting into the future, which traditional pumps and humans, do not always have the time or inclination to do.</p>
-<p>The amount of insulin needed, or dose, is calculated using the desired reduction in blood glucose and the user’s ISF. For the Loop algorithm, the desired reduction in blood glucose is the delta between the eventual blood glucose and the correction target:</p>
+<p>The amount of insulin needed, or dose, is calculated using the desired reduction in blood glucose and the user’s <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr>. For the Loop algorithm, the desired reduction in blood glucose is the delta between the eventual blood glucose and the correction target:</p>
 <p><img alt="basal dose equation" src="../img/dose_equation.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Loop Dose Calculation</p>
@@ -2024,7 +2024,7 @@
 <p>Correction target = 100 mg/dL  </p>
 </li>
 <li>
-<p>ISF = 50 mg/dL/U  </p>
+<p><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr> = 50 mg/dL/U  </p>
 </li>
 <li>
 <p>Current scheduled basal rate (SBR) is 1 U/hr  </p>

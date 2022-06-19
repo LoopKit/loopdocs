@@ -2034,11 +2034,11 @@
 <p>If you are a new looper your eyes may glaze over the first time through. Don't worry. But do come back and read this section again after you've used the system in Open Loop mode (before you enable Closed Loop mode). And then come back again after a day or so of closed loop testing.</p>
 <p>Experienced loopers need to read the detail on this page. There are important changes from Loop 2.2.x.</p>
 </div>
-<p>The Heads-Up-Display, visible in portrait mode, shows the Glucose Status on the left, the Loop Status in the middle and the Pump Status on the right. Once a CGM and pump have been added to Loop, the Loop Status icon will update and ideally be similar to the graphic below.</p>
+<p>The Heads-Up-Display, visible in portrait mode, shows the Glucose Status on the left, the Loop Status in the middle and the Pump Status on the right. Once a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and pump have been added to Loop, the Loop Status icon will update and ideally be similar to the graphic below.</p>
 <p align="center"><img alt="heads-up-display when loop is operating nominally" src="../img/loop-3-hud-closed.svg" width="300" /></p>
 <ul>
-<li>The Glucose is displayed in the same units as the selected CGM<ul>
-<li>If units are incorrect, quit Loop, allow your CGM app to update and then restart Loop</li>
+<li>The Glucose is displayed in the same units as the selected <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><ul>
+<li>If units are incorrect, quit Loop, allow your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> app to update and then restart Loop</li>
 </ul>
 </li>
 <li>The green Loop icon indicates that within the last 5 minutes Loop completed a <a href="#loop-cycle">cycle</a></li>
@@ -2048,7 +2048,7 @@
 </li>
 </ul>
 <h3 id="loop-status-icon">Loop Status Icon<a class="headerlink" href="#loop-status-icon" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The Loop Status Icon is the colored circle in the center of the main Loop display.  The three colors displayed are Green, Yellow or Red.  In all cases, more information is displayed by tapping on the Loop Status Icon, which brings up a <a href="../onboarding/#what-does-modal-mean"><abbr title="message appearing in app that must be acknowledged">modal</abbr></a> message indicating the last time a loop cycle completed and other descriptive text.</p>
+<p>The Loop Status Icon is the colored circle in the center of the main Loop display.  The three colors displayed are Green, Yellow or Red.  In all cases, more information is displayed by tapping on the Loop Status Icon, which brings up a <a href="../onboarding/#what-does-modal-mean"><abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr></a> message indicating the last time a loop cycle completed and other descriptive text.</p>
 <h4 id="loop-cycle">Loop Cycle<a class="headerlink" href="#loop-cycle" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>A complete Loop cycle, at high level, includes these steps:</p>
 <ul>
@@ -2072,7 +2072,7 @@
 </tr>
 <tr>
 <td><img alt="A yellow circle indicating warning status for closed loop" src="../img/loop-3-icon-closed-yellow.svg" width="175" /></td>
-<td>A yellow circle indicates the app is in Closed Loop mode and it has completed a cycle in the last 5-15 minutes.<br><br>It is not unusual to have a few instances of yellow loops per day.  They can be caused by being out of range (physically), Bluetooth or RileyLink “noise” interference, or even that the pump was giving a bolus.<br><br>Most yellow loops will self-resolve without needing any special troubleshooting.</td>
+<td>A yellow circle indicates the app is in Closed Loop mode and it has completed a cycle in the last 5-15 minutes.<br><br>It is not unusual to have a few instances of yellow loops per day.  They can be caused by being out of range (physically), Bluetooth or <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> “noise” interference, or even that the pump was giving a bolus.<br><br>Most yellow loops will self-resolve without needing any special troubleshooting.</td>
 </tr>
 <tr>
 <td><img alt="A red circle indicating failure status for closed loop" src="../img/loop-3-icon-closed-red.svg" width="175" /></td>
@@ -2100,19 +2100,19 @@
 <tbody>
 <tr>
 <td><img alt="Blood Glucose reading with blue trend arrow" src="../img/loop-3-cgm-blue-arrow.svg" width="175" /></td>
-<td>The current glucose reading is displayed. It can be from the CGM or from a finger stick. The value must have been updated within the last 15 minutes to be displayed.<br><br>For the example shown, a valid trend arrow is available and is blue. Color codes are explained at this <a href="#glucose-color-code">link</a>.</td>
+<td>The current glucose reading is displayed. It can be from the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or from a finger stick. The value must have been updated within the last 15 minutes to be displayed.<br><br>For the example shown, a valid trend arrow is available and is blue. Color codes are explained at this <a href="#glucose-color-code">link</a>.</td>
 </tr>
 <tr>
 <td><img alt="three dashes to indicate stale blood glucose" src="../img/loop-3-cgm-stale.svg" width="175" /></td>
-<td>The last glucose reading from the CGM or from a finger stick is stale, i.e., it was acquired more than 15 minutes ago.<br><br>In this case, the glucose prediction will stop updating. If in closed-loop mode, no changes will be made to insulin delivery. If a temporary basal is running, it continues running for the scheduled duration. Once the temporary basal expires, the pump resumes the scheduled basal rate. (When the app issues a temporary basal, the duration is always 30 minutes.)<br><br>The <a href="#hud-status-row">HUD Status Row</a> will display a message to enable user to provide fingerstick glucose values if desired.</td>
+<td>The last glucose reading from the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or from a finger stick is stale, i.e., it was acquired more than 15 minutes ago.<br><br>In this case, the glucose prediction will stop updating. If in closed-loop mode, no changes will be made to insulin delivery. If a temporary basal is running, it continues running for the scheduled duration. Once the temporary basal expires, the pump resumes the scheduled basal rate. (When the app issues a temporary basal, the duration is always 30 minutes.)<br><br>The <a href="#hud-status-row">HUD Status Row</a> will display a message to enable user to provide fingerstick glucose values if desired.</td>
 </tr>
 <tr>
 <td><img alt="an Add CGM with plus sign icon" src="../img/loop-3-cgm-add.svg" width="175" /></td>
-<td>If no CGM is currently selected, the Add CGM icon is displayed. The user can add a CGM following these <a href="../loop-3-cgm/">instructions</a>.</td>
+<td>If no <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is currently selected, the Add <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> icon is displayed. The user can add a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> following these <a href="../loop-3-cgm/">instructions</a>.</td>
 </tr>
 <tr>
 <td><img alt="valid BG reading with a plus sign" src="../img/loop-3-fs-and-cgm-add.svg" width="175" /></td>
-<td>If no CGM is currently selected, but a glucose value was acquired within the last 15 minutes (from fingerstick or a different CGM), that value is displayed along with a plus sign. By tapping on the icon, the user can add a CGM following these <a href="../loop-3-cgm/">instructions</a>.</td>
+<td>If no <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is currently selected, but a glucose value was acquired within the last 15 minutes (from fingerstick or a different <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>), that value is displayed along with a plus sign. By tapping on the icon, the user can add a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> following these <a href="../loop-3-cgm/">instructions</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -2149,7 +2149,7 @@
 </tbody>
 </table>
 <h3 id="pump-status-icon">Pump Status Icon<a class="headerlink" href="#pump-status-icon" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The nominal pump icon displays high-level status information for the pump with two main components: left side is the basal delivery status and right side is the reservoir status. (TO DO - find out if MDT battery shows and where). For Pods, a lifecycle line is displayed underneath the pump icon during the last 24 hours of nominal pod life.</p>
+<p>The nominal pump icon displays high-level status information for the pump with two main components: left side is the basal delivery status and right side is the reservoir status. (TO DO - find out if <abbr title="common abbreviation for Medtronic pumps">MDT</abbr> battery shows and where). For Pods, a lifecycle line is displayed underneath the pump icon during the last 24 hours of nominal pod life.</p>
 <ul>
 <li>The basal delivery status displays the enacted temp basal change relative to the scheduled basal.  For example, for a scheduled basal of 1.0 U/hr<ul>
 <li>If the app set a temp basal rate of 0.2 U/hr, the icon displays -0.8 U</li>
@@ -2215,7 +2215,7 @@
 </tbody>
 </table>
 <h3 id="hud-status-row">HUD Status Row<a class="headerlink" href="#hud-status-row" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The Status Row is located immediately below the CGM, Loop and Pump Icons and is used to provide status, action buttons and information. The messages in the table are in order of priority. For example, a <code>No Recent Glucose</code> message is displayed even when an <code>Override</code> is active.</p>
+<p>The Status Row is located immediately below the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, Loop and Pump Icons and is used to provide status, action buttons and information. The messages in the table are in order of priority. For example, a <code>No Recent Glucose</code> message is displayed even when an <code>Override</code> is active.</p>
 <div class="admonition warning">
 <p class="admonition-title">Bolus In Progress</p>
 <p>The bolus messages are displayed with the highest priority:</p>
@@ -2236,7 +2236,7 @@
 <td><img alt="starting bolus message" src="../img/status-row-starting-bolus.svg" width="350" /></td>
 </tr>
 <tr>
-<td>When the user issues a manual bolus through the app, a <code>Starting Bolus</code> information message is displayed. Tapping on this message has no action.<br><br>As soon as the app issues a command to the pump (or sends it to the RileyLink to be delivered to the pump), the bolus in progress message appears.</td>
+<td>When the user issues a manual bolus through the app, a <code>Starting Bolus</code> information message is displayed. Tapping on this message has no action.<br><br>As soon as the app issues a command to the pump (or sends it to the <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> to be delivered to the pump), the bolus in progress message appears.</td>
 </tr>
 <tr>
 <td><br><br><img alt="bolus-in-progess message: message size is 500 x 50 pixels" src="../img/status-row-bolus-in-progress.svg" width="350" /></td>

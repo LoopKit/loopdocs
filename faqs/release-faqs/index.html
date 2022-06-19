@@ -2413,16 +2413,16 @@
 </ul>
 </li>
 </ul>
-<p>Provisioning Profile Expiration Notifications:</p>
+<p><abbr title="associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)">Provisioning Profile</abbr> Expiration Notifications:</p>
 <ul>
 <li>User gets <a href="../../operation/features/notifications/#loop-app-expiration-notification">notified</a> when Loop app expiration date nears</li>
 <li>Expiration date is <a href="../../operation/features/notifications/#loop-app-expiration-date">included</a> in the issue report</li>
 </ul>
-<p>RileyLink Compatible Devices:</p>
+<p><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> Compatible Devices:</p>
 <ul>
-<li>The <a href="../../operation/loop-settings/rileylink/">RileyLink compatible device displays</a> are pump independent</li>
-<li>OrangeLink Support added for connection monitoring, battery level alerting, find device, and light/vibration controls</li>
-<li><a href="../../operation/loop-settings/pump-commands/#medtronic-commands">Medtronic Pump Settings</a> screen updated with option to disable MySentry use; user can trade Medtronic pump battery for longer RileyLink compatible device battery life</li>
+<li>The <a href="../../operation/loop-settings/rileylink/"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device displays</a> are pump independent</li>
+<li><abbr title="a radio-frequency device that enables Loop to control your pump">OrangeLink</abbr> Support added for connection monitoring, battery level alerting, find device, and light/vibration controls</li>
+<li><a href="../../operation/loop-settings/pump-commands/#medtronic-commands">Medtronic Pump Settings</a> screen updated with option to disable MySentry use; user can trade Medtronic pump battery for longer <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device battery life</li>
 </ul>
 <p>Omnipod Features:</p>
 <ul>
@@ -2437,7 +2437,7 @@
 <li>Make insertion more robust (LoopKit issue #1369)</li>
 <li>Fix “Pod already primed” errors when priming cancelled (rileylink_ios issue #661)</li>
 <li>Prevent 049 pod faults during setup (rileylink_ios issue #627)</li>
-<li>See <a href="https://github.com/ps2/rileylink_ios/pull/676">RileyLink <abbr title="formal method to request changes to a repository">Pull Request</abbr> 676</a> for additional details.</li>
+<li>See <a href="https://github.com/ps2/rileylink_ios/pull/676"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> <abbr title="formal method to request changes to a repository">Pull Request</abbr> 676</a> for additional details.</li>
 </ul>
 <p>(REMOVED) Insulin Accounting:</p>
 <ul>
@@ -2451,7 +2451,7 @@
 </ul>
 <p>Dexcom Non-US Share:</p>
 <ul>
-<li>Dexcom Share <abbr title="Uniform Resource Locator">URL</abbr> for non-US users has been fixed.</li>
+<li>Dexcom Share <abbr title="website address (Uniform Resource Locator)">URL</abbr> for non-US users has been fixed.</li>
 </ul>
 <p>For community support, please use one of the <a href="../..#stay-in-the-loop">Loop Social Media</a> help sites.</p>
 <h3 id="loop-v224">Loop v2.2.4<a class="headerlink" href="#loop-v224" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2498,7 +2498,7 @@
 <li>Reuse same address during attempts to pair with same pod</li>
 <li>Fix for Medtronic only: when a bolus issued via the Loop interface was canceled by issuing a suspend on the pump itself, Loop will incorrectly track the bolus as if the full amount were delivered</li>
 <li>Updates for omnipod packet parser</li>
-<li>Suggest moving RileyLink to new area on multiple pairing failures</li>
+<li>Suggest moving <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> to new area on multiple pairing failures</li>
 </ul>
 </li>
 <li>Minimed updates:<ul>
@@ -2517,7 +2517,7 @@
 <li>Improvements in Watch updates; sleep data being used to update complications when you are awake. Thanks @novalegra!</li>
 <li>Omnipod pairing improvements. Bug fixes, and better error messaging. Thanks @itsmojo!</li>
 <li>Many performance improvements, especially effecting long time Loop users. Delays in rendering graphs during app launch should be fixed.</li>
-<li>New device communication logging facility- Additional logging across pod swaps, and logging of CGM communication.</li>
+<li>New device communication logging facility- Additional logging across pod swaps, and logging of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> communication.</li>
 <li>Rendering fixes to prevent insulin graph from drawing outside of bounds.</li>
 <li>Bug fix to align use of 10m insulin delay in dose computation and forecast.</li>
 <li>Include current bg in suspend threshold evaluation.</li>
@@ -2532,7 +2532,7 @@
 <h3 id="what-was-new-in-loop-v20">What was new in Loop v2.0?<a class="headerlink" href="#what-was-new-in-loop-v20" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This is a highlights reel comparing Loop v2.0 to v1.9.6.</p>
 <h3 id="uploading-of-bgs-to-nightscout">Uploading of BGs to Nightscout<a class="headerlink" href="#uploading-of-bgs-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Loop v2.0 has an option to upload your BG data to Nightscout directly. It is a new slider under the CGM configuration section for Dexcom users. After you add your CGM transmitter ID, go back into the CGM info and you'll see a new slider called "Upload Readings."  Technically, Loop's dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> had that feature for a hot minute before Loop v2.0 was released...but for almost everyone this will be a brand new feature they haven't had before. This feature can help if/when Dexcom's Share servers ever go through another large outage like we had before. If that happens, you can turn on the "Upload Readings" switch and your CGM data will now be in Nightscout even without Share servers working properly. Good practice would be to temporarily disable your Share bridge in Nightscout while Loop is responsible for CGM uploading so that you don't get duplicate data. You can disable Share bridge by logging into your Heroku account, going to the Settings tab, clicking on "reveal config vars" and then deleting the word "bridge" from the ENABLE line.</p>
+<p>Loop v2.0 has an option to upload your BG data to Nightscout directly. It is a new slider under the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> configuration section for Dexcom users. After you add your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> transmitter ID, go back into the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> info and you'll see a new slider called "Upload Readings."  Technically, Loop's dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> had that feature for a hot minute before Loop v2.0 was released...but for almost everyone this will be a brand new feature they haven't had before. This feature can help if/when Dexcom's Share servers ever go through another large outage like we had before. If that happens, you can turn on the "Upload Readings" switch and your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data will now be in Nightscout even without Share servers working properly. Good practice would be to temporarily disable your Share bridge in Nightscout while Loop is responsible for <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> uploading so that you don't get duplicate data. You can disable Share bridge by logging into your Heroku account, going to the Settings tab, clicking on "reveal config vars" and then deleting the word "bridge" from the ENABLE line.</p>
 <h3 id="a-fix-for-settings-loss">A fix for settings loss<a class="headerlink" href="#a-fix-for-settings-loss" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13 brought about a quirky little bug where you could suddenly lose settings in Loop. But, it wasn't just limited to Loop, sometimes people lost Dexcom app settings too. The issue is most common when the phone goes through a power cycle, but it has happened at other times, too. There's a fix for that new bug in Loop now...so that's a good reason to update. (If you encounter that bug before you have a chance to update your Loop app, simply restart the Loop app and your settings should reappear.)</p>
 <h3 id="spin-for-watch-bolus">Spin for Watch Bolus<a class="headerlink" href="#spin-for-watch-bolus" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2547,11 +2547,11 @@
 <h3 id="confirmation-beeps-expanded">Confirmation beeps expanded<a class="headerlink" href="#confirmation-beeps-expanded" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Confirmation beeps have been expanded based on user feedback...we heard parents and school nurses really appreciate hearing a beep for not just boluses, but also for suspend/resume commands and editing basal schedule (so you are sure it saved properly). So, confirmation beeps are now for boluses, suspend/resume, and basal schedule edit saves.</p>
 <h3 id="read-pod-status-added">Read Pod Status added<a class="headerlink" href="#read-pod-status-added" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>There's a new command in the RileyLink menu for "Read Pod Status" that is analogous to the existing command for Medtronic users. You can query your Pod for its current status info using that command.</p>
+<p>There's a new command in the <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> menu for "Read Pod Status" that is analogous to the existing command for Medtronic users. You can query your Pod for its current status info using that command.</p>
 <h3 id="bug-fixes-generally">Bug fixes generally<a class="headerlink" href="#bug-fixes-generally" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>There are a lot of niggly little bug fixes too which were merged in the last couple weeks. The temp basal timestamp for Medtronic Loop (and for older Omnipod Loops, too) had a bug that when Loop reverted to scheduled basals, the timestamp on the HUD's temp basal icon would switch back to the time the Loop was launched (instead of the time the scheduled basal was started again). There are also some new code improvements for handling uncerain boluses for Pod  Also, there are improvements to handle how Loop marks Pod suspend commands that are initiated by users while an active temp basal is in progress.</p>
 <h3 id="user-interface-improvements">User interface improvements<a class="headerlink" href="#user-interface-improvements" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You'll notice dashed lines in the HUD for the CGM value if the CGM data goes older than 15 min (that way you don't accidentally miss the fact that your CGM has failed). The API Secret is hidden after it is saved in Loop Settings now, and if you accidentally leave a trailing slash on the Nightscout <abbr title="Uniform Resource Locator">URL</abbr>...Loop will ignore it.  The bolus progress row is new to master <abbr title="version of code within a single repository or workspace repository">branch</abbr> now, although many of you have been accustomed to that visual in dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for awhile now. The "Scenarios" screen that would sometimes appear when a phone was shaken is also disabled by default now. The Issue Report has more information about your Loop app's build date and version so that you can more easily track its build history.</p>
+<p>You'll notice dashed lines in the HUD for the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value if the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data goes older than 15 min (that way you don't accidentally miss the fact that your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> has failed). The API Secret is hidden after it is saved in Loop Settings now, and if you accidentally leave a trailing slash on the Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr>...Loop will ignore it.  The bolus progress row is new to master <abbr title="version of code within a single repository or workspace repository">branch</abbr> now, although many of you have been accustomed to that visual in dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for awhile now. The "Scenarios" screen that would sometimes appear when a phone was shaken is also disabled by default now. The <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report has more information about your Loop app's build date and version so that you can more easily track its build history.</p>
 <h3 id="common-build-error-squashed">Common build error squashed<a class="headerlink" href="#common-build-error-squashed" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  (Unless you are building dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, currently v2.3.0, - then no spaces allowed.)</p>
 <h3 id="nightscout-profile-uploading">Nightscout profile uploading<a class="headerlink" href="#nightscout-profile-uploading" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2577,10 +2577,10 @@
 <p>Yes, most of you are already using Omnipod with your Loop...but this is the first time that Loop master <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports Omnipod users. Please update if you have been using Omnipod-testing <abbr title="version of code within a single repository or workspace repository">branch</abbr> especially...it's time to get all the bug fixes that we've done in Loop.</p>
 <h3 id="dark-mode-support">Dark mode support<a class="headerlink" href="#dark-mode-support" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13 brought dark mode for application developers, and Loop's developer was all over that. We now have a wickedly cool dark mode Loop for those who prefer the dark side.</p>
-<h3 id="isf-and-correction-range-guardrails-and-ui-change">ISF and correction range guardrails and UI change<a class="headerlink" href="#isf-and-correction-range-guardrails-and-ui-change" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Loop v2.0 also brings about the first time master <abbr title="version of code within a single repository or workspace repository">branch</abbr> has the useful scroll wheel to set values of ISF and correction range. This helps mitigate an old bug where backwards entered correction range values would crash Loop app. Also less prone to fat-finger mistakes on entry.</p>
-<h3 id="simulator-pump-and-cgm">Simulator pump and CGM<a class="headerlink" href="#simulator-pump-and-cgm" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you don't have compatible gear yet and just want to test Loop app, the new ability to add a simulated pump and/or CGM is a great new feature.</p>
+<h3 id="isf-and-correction-range-guardrails-and-ui-change"><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr> and correction range guardrails and UI change<a class="headerlink" href="#isf-and-correction-range-guardrails-and-ui-change" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Loop v2.0 also brings about the first time master <abbr title="version of code within a single repository or workspace repository">branch</abbr> has the useful scroll wheel to set values of <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr> and correction range. This helps mitigate an old bug where backwards entered correction range values would crash Loop app. Also less prone to fat-finger mistakes on entry.</p>
+<h3 id="simulator-pump-and-cgm">Simulator pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#simulator-pump-and-cgm" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you don't have compatible gear yet and just want to test Loop app, the new ability to add a simulated pump and/or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is a great new feature.</p>
 <h3 id="new-style-of-dexcom-transmitters-supported">New style of Dexcom transmitters supported<a class="headerlink" href="#new-style-of-dexcom-transmitters-supported" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Dexcom launched a new style of transmitters this summer. The new transmitters took some work by Loop developer (PETE! YEAH!) to get them working in offline Looping, but the fix was pushed into all branches shortly thereafter in August 2019. If you haven't updated your Loop since August 2019 and use a Dexcom G6, you should update now.</p>
                 
