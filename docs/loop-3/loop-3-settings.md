@@ -1,61 +1,65 @@
 # Settings
 
-!!! danger "Placeholder"
-
-    This is a placeholder page - expect revisions.
-
-The Settings screen has been completely updated for Loop 3 as shown in the graphic below.
+The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the [Toolbar](loop-3-displays.md#toolbar) on the app [home screen](loop-3-displays.md#main-loop-screen).
 
 ![settings screen for loop 3](img/loop-3-settings.svg){width="250"}
 {align="center"}
 
-The page is a work in progress for Loop 3 - not all graphics have been populated, but the alt-text is provided.
-
-For those coming from Loop 2.2.x
-
-* Many of the Settings you may be familiar with are reached from Settings by tapping on [Therapy Settings](loop-3-therapy.md)
-    * Note that changes to Therapy settings are protected by the same authorization required to dose insulin
-* Nightscout can be added from Settings by tapping on Add Service (if you did not add it as part of onboarding)
-* Issue Report is reached from Settings by tapping on Support
-    * The Expiration Date for the Loop app is now included in the Issue Report
+Each section and row on the Settings screen is described below.
 
 ## Closed Loop
 
-The user can enable closed loop or open loop using this slider.
+The user can select closed loop or open loop using this slider. When you first start Loop, we encourage you to leave this slider disabled and become familiar with the app using [Open Loop](../operation/loop/open-loop.md) mode.
 
-![slider to enable or disable closed loop](img/loop-3-slider.svg){width="250"}
+![slider to enable or disable closed loop](img/loop-3-setting-loop-mode.svg){width="500"}
 {align="center"}
 
 
-This slider will be disabled under the following conditions.
+No automatic (closed loop) adjustment of insulin will occur and the slider will be disabled under the following conditions.
 
 * No Pump added
 * No CGM added
-* User has enacted a Manual Temp Basal
-* User has suspended insulin delivery for the pump
+* User set a [Manual Temp Basal](loop-3-omnipod.md#manual-temp-basal)
+* User suspended insulin delivery (planned - might not be in effect yet)
+
+### Recommended Insulin
+
+With every loop cycle - typically every 5 minutes - Loop updates the glucose prediction using
+
+* CGM or Fingerstick glucose value (no older than 15 minutes)
+* COB from meal entries
+* IOB from previous insulin delivery
+* Your [Therapy Settings](loop-3-therapy.md)
+
+Based on this prediction, Loop calculates a recommended restriction in basal to raise the prediction to target range or a recommended bolus, subject to Delivery Limits, to lower the prediction to target range or allows current basal to continue. The glucose prediction is shown in the [Glucose Chart](loop-3-displays.md#charts) along with the measured glucose values.
+
+* When in Open Loop, no automated action is taken.
+* When in Closed Loop, automated action is taken based on the selected Dosing Strategy.
 
 ## Dosing Strategy
 
-This configuration setting gives you the ability to select the Dosing Strategy. 
+This row gives you the ability to select Dosing Strategy. The Dosing Strategy only affects the method by which the recommended bolus - if any - is delivered. The current selection is noted underneath the Dosing Strategy label. The default (initial) value for this setting is Temp Basal Only. Tap on the arrow to the right to modify your selection.
 
-![Dosing Strategy selection screen](img/dosing-strategy.svg){width="350"}
+![Dosing Strategy selection screen](img/loop-3-setting-dosing-strategy.svg){width="500"}
 {align="center"}
 
-Both Temp Basal Only and Automatic Bolus strategies restrict basal rates to reduce the amount of insulin delivered when appropriate to avoid future low glucose.
+!!! quote "Words in Graphic"
+    **Temp Basal Only:**
+    Loop will set temporary basal rates to increase and decrease insulin delivery.
+    
+    **Automatic Bolus:**
+    Loop will automatically bolus when insulin needs are above scheduled basal, and will use temporary basal rates when needed to reduce insulin delivery below scheduled basal.
 
-### Temp Basal Only
 
-1. When your glucose is below target or predicted to go below target, negative temp basals (i.e., reduction of your scheduled basal rate) are used to reduce your IOB. This decision is re-evaluated during every Loop interval.
-1. When your glucose is at or above target, Loop determines the amount of Recommended Bolus based upon your settings.  Subject to your Delivery Limits, Loop will deliver the Recommended Bolus over 30 minutes using positive temp basals (i.e., increase over your scheduled basal rate) to increase your IOB. This decision is re-evaluated during every Loop interval.
+Regardless of the Dosing Strategy selected, when glucose is below target or predicted to go below target, Loop decreases basal insulin using Temporary Basal.
 
-You can manually bolus at any time by pressing the Bolus icon in the center of the toolbar.
+**Temp Basal Only:** Subject to your Delivery Limits, Loop will deliver the Recommended Bolus over 30 minutes using positive temp basals (i.e., increase over your scheduled basal rate) to increase your IOB. 
+
+**Automatic Bolus:** Subject to your Delivery Limits, you receive 40% of the Recommended Bolus at every loop cycle.
 
 ### Automatic Bolus
 
-When you first starting Loop, we encourage you to leave automatic boluses disabled until you are sure your settings are dialed in.  To enable automatic boluses, click on Settings – Dosing Strategy – Automatic Bolus.  This Automatic Bolus checkbox turns-off positive temporary basal so that:
-
-1. When your glucose is below target or predicted to go below target, negative temp basals (i.e., reduction of your scheduled basal rate) are used to reduce your IOB. This decision is re-evaluated during every Loop interval.
-1. When your glucose is at or above target, you receive 40% of the Recommended Bolus at every Loop interval.
+When you first start Loop, we encourage you to leave Dosing Strategy set to Temp Basal Only until you are sure your settings are dialed in.
 
 The Automatic Bolus selection causes Loop to provide 40% of the recommended dose as a bolus at the beginning of each Loop cycle (when a CGM reading comes in). This is a faster method of getting the recommended insulin delivered. When Loop delivers extra insulin, the scheduled basal rate continues unchanged.
 
@@ -72,14 +76,22 @@ The Configuration section allows entry to the following screens:
 
 ## Services
 
-The Services section allows additions of other services such a Nightscout
+The Services section allows additions of other services such Nightscout, Loggly and Amplitude.
 
 ## Support
 
-The Support section enables the user to provide output data about the app. This information can be very helpful to folks trying to assist with problem reports. It's a good idea to use the Issue Report button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
+The Support section enables the user to provide output data about the app. This information can be very helpful to folks trying to assist with problem reports.
 
-The Issue Report row creates a Loop Report text file with a lot of useful information for the developers if they need to assist you in solving an issue. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH).
+The graphic below shows the screen provided when you tap on the Support row at the bottom of the Settings screen.
+
+![settings support screen](img/loop-3-setting-support.svg){width="250"}
+{align="center"}
+
+
+The Issue Report row creates a Loop Report text file with a lot of useful information for the developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to send it to yourself.
+
+It's a good idea to use the Issue Report button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
 
 The next two rows need to be explained - TO DO.
 
-The last row creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report.
+The last row creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting.
