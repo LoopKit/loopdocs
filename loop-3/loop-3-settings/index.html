@@ -1392,8 +1392,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-therapy/" class="md-nav__link">
-        Loop 3 Therapy Settings
+      <a href="../loop-3-cgm/" class="md-nav__link">
+        Loop 3 Add CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-3-pump/" class="md-nav__link">
+        Loop 3 Add Pump
       </a>
     </li>
   
@@ -1447,6 +1461,19 @@
     Closed Loop
   </a>
   
+    <nav class="md-nav" aria-label="Closed Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommended-insulin" class="md-nav__link">
+    Recommended Insulin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1456,13 +1483,6 @@
   
     <nav class="md-nav" aria-label="Dosing Strategy">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#temp-basal-only" class="md-nav__link">
-    Temp Basal Only
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#automatic-bolus" class="md-nav__link">
@@ -1512,22 +1532,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-cgm/" class="md-nav__link">
-        Loop 3 Add CGM
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../loop-3-pump/" class="md-nav__link">
-        Loop 3 Add Pump
+      <a href="../loop-3-therapy/" class="md-nav__link">
+        Loop 3 Therapy Settings
       </a>
     </li>
   
@@ -1556,6 +1562,20 @@
     <li class="md-nav__item">
       <a href="../loop-3-omnipod/" class="md-nav__link">
         Loop 3 Omnipod
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-3-medtronic/" class="md-nav__link">
+        Loop 3 Medtronic
       </a>
     </li>
   
@@ -1922,6 +1942,19 @@
     Closed Loop
   </a>
   
+    <nav class="md-nav" aria-label="Closed Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommended-insulin" class="md-nav__link">
+    Recommended Insulin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1931,13 +1964,6 @@
   
     <nav class="md-nav" aria-label="Dosing Strategy">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#temp-basal-only" class="md-nav__link">
-    Temp Basal Only
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#automatic-bolus" class="md-nav__link">
@@ -1986,51 +2012,47 @@
                 
                 
                 <h1 id="settings">Settings<a class="headerlink" href="#settings" title="Anchor link to this Header on this Page">&para;</a></h1>
-<div class="admonition danger">
-<p class="admonition-title">Placeholder</p>
-<p>This is a placeholder page - expect revisions.</p>
-</div>
-<p>The Settings screen has been completely updated for Loop 3 as shown in the graphic below.</p>
+<p>The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the <a href="../loop-3-displays/#toolbar">Toolbar</a> on the app <a href="../loop-3-displays/#main-loop-screen">home screen</a>.</p>
 <p align="center"><img alt="settings screen for loop 3" src="../img/loop-3-settings.svg" width="250" /></p>
-<p>The page is a work in progress for Loop 3 - not all graphics have been populated, but the alt-text is provided.</p>
-<p>For those coming from Loop 2.2.x</p>
-<ul>
-<li>Many of the Settings you may be familiar with are reached from Settings by tapping on <a href="../loop-3-therapy/">Therapy Settings</a><ul>
-<li>Note that changes to Therapy settings are protected by the same authorization required to dose insulin</li>
-</ul>
-</li>
-<li>Nightscout can be added from Settings by tapping on Add Service (if you did not add it as part of onboarding)</li>
-<li><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report is reached from Settings by tapping on Support<ul>
-<li>The <abbr title="your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date">Expiration Date</abbr> for the Loop app is now included in the <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report</li>
-</ul>
-</li>
-</ul>
+<p>Each section and row on the Settings screen is described below.</p>
 <h2 id="closed-loop">Closed Loop<a class="headerlink" href="#closed-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The user can enable closed loop or open loop using this slider.</p>
-<p align="center"><img alt="slider to enable or disable closed loop" src="img/loop-3-slider.svg" width="250" /></p>
-<p>This slider will be disabled under the following conditions.</p>
+<p>The user can select closed loop or open loop using this slider. When you first start Loop, we encourage you to leave this slider disabled and become familiar with the app using <a href="../../operation/loop/open-loop/">Open Loop</a> mode.</p>
+<p align="center"><img alt="slider to enable or disable closed loop" src="../img/loop-3-setting-loop-mode.svg" width="500" /></p>
+<p>No automatic (closed loop) adjustment of insulin will occur and the slider will be disabled under the following conditions.</p>
 <ul>
 <li>No Pump added</li>
 <li>No <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> added</li>
-<li>User has enacted a Manual Temp Basal</li>
-<li>User has suspended insulin delivery for the pump</li>
+<li>User set a <a href="../loop-3-omnipod/#manual-temp-basal">Manual Temp Basal</a></li>
+<li>User suspended insulin delivery (planned - might not be in effect yet)</li>
+</ul>
+<h3 id="recommended-insulin">Recommended Insulin<a class="headerlink" href="#recommended-insulin" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>With every loop cycle - typically every 5 minutes - Loop updates the glucose prediction using</p>
+<ul>
+<li><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or Fingerstick glucose value (no older than 15 minutes)</li>
+<li><abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> from meal entries</li>
+<li><abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> from previous insulin delivery</li>
+<li>Your <a href="../loop-3-therapy/">Therapy Settings</a></li>
+</ul>
+<p>Based on this prediction, Loop calculates a recommended restriction in basal to raise the prediction to target range or a recommended bolus, subject to <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>, to lower the prediction to target range or allows current basal to continue. The glucose prediction is shown in the <a href="../loop-3-displays/#charts">Glucose Chart</a> along with the measured glucose values.</p>
+<ul>
+<li>When in Open Loop, no automated action is taken.</li>
+<li>When in Closed Loop, automated action is taken based on the selected <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>.</li>
 </ul>
 <h2 id="dosing-strategy"><abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr><a class="headerlink" href="#dosing-strategy" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This configuration setting gives you the ability to select the <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>. </p>
-<p align="center"><img alt="Dosing Strategy selection screen" src="img/dosing-strategy.svg" width="350" /></p>
-<p>Both Temp Basal Only and Automatic Bolus strategies restrict basal rates to reduce the amount of insulin delivered when appropriate to avoid future low glucose.</p>
-<h3 id="temp-basal-only">Temp Basal Only<a class="headerlink" href="#temp-basal-only" title="Anchor link to this Header on this Page">&para;</a></h3>
-<ol>
-<li>When your glucose is below target or predicted to go below target, negative temp basals (i.e., reduction of your scheduled basal rate) are used to reduce your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. This decision is re-evaluated during every Loop interval.</li>
-<li>When your glucose is at or above target, Loop determines the amount of Recommended Bolus based upon your settings.  Subject to your Delivery Limits, Loop will deliver the Recommended Bolus over 30 minutes using positive temp basals (i.e., increase over your scheduled basal rate) to increase your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. This decision is re-evaluated during every Loop interval.</li>
-</ol>
-<p>You can manually bolus at any time by pressing the Bolus icon in the center of the toolbar.</p>
+<p>This row gives you the ability to select <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>. The <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> only affects the method by which the recommended bolus - if any - is delivered. The current selection is noted underneath the <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> label. The default (initial) value for this setting is Temp Basal Only. Tap on the arrow to the right to modify your selection.</p>
+<p align="center"><img alt="Dosing Strategy selection screen" src="../img/loop-3-setting-dosing-strategy.svg" width="500" /></p>
+<div class="admonition quote">
+<p class="admonition-title">Words in Graphic</p>
+<p><strong>Temp Basal Only:</strong>
+Loop will set temporary basal rates to increase and decrease insulin delivery.</p>
+<p><strong>Automatic Bolus:</strong>
+Loop will automatically bolus when insulin needs are above scheduled basal, and will use temporary basal rates when needed to reduce insulin delivery below scheduled basal.</p>
+</div>
+<p>Regardless of the <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> selected, when glucose is below target or predicted to go below target, Loop decreases basal insulin using Temporary Basal.</p>
+<p><strong>Temp Basal Only:</strong> Subject to your <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>, Loop will deliver the Recommended Bolus over 30 minutes using positive temp basals (i.e., increase over your scheduled basal rate) to increase your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. </p>
+<p><strong>Automatic Bolus:</strong> Subject to your <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>, you receive 40% of the Recommended Bolus at every loop cycle.</p>
 <h3 id="automatic-bolus">Automatic Bolus<a class="headerlink" href="#automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>When you first starting Loop, we encourage you to leave automatic boluses disabled until you are sure your settings are dialed in.  To enable automatic boluses, click on Settings – <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> – Automatic Bolus.  This Automatic Bolus checkbox turns-off positive temporary basal so that:</p>
-<ol>
-<li>When your glucose is below target or predicted to go below target, negative temp basals (i.e., reduction of your scheduled basal rate) are used to reduce your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. This decision is re-evaluated during every Loop interval.</li>
-<li>When your glucose is at or above target, you receive 40% of the Recommended Bolus at every Loop interval.</li>
-</ol>
+<p>When you first start Loop, we encourage you to leave <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> set to Temp Basal Only until you are sure your settings are dialed in.</p>
 <p>The Automatic Bolus selection causes Loop to provide 40% of the recommended dose as a bolus at the beginning of each Loop cycle (when a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading comes in). This is a faster method of getting the recommended insulin delivered. When Loop delivers extra insulin, the scheduled basal rate continues unchanged.</p>
 <p>As with all Loop versions, you can manually bolus at any time by pressing the Bolus icon in the center of Loop's Main Screen.  Any bolus recommendation that you see when you press the Bolus icon will be 100% of the Recommended Bolus.</p>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2041,12 +2063,15 @@
 <li><a href="../loop-3-cgm/"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Settings</a></li>
 </ul>
 <h2 id="services">Services<a class="headerlink" href="#services" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Services section allows additions of other services such a Nightscout</p>
+<p>The Services section allows additions of other services such Nightscout, Loggly and Amplitude.</p>
 <h2 id="support">Support<a class="headerlink" href="#support" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Support section enables the user to provide output data about the app. This information can be very helpful to folks trying to assist with problem reports. It's a good idea to use the <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.</p>
-<p>The <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report row creates a Loop Report text file with a lot of useful information for the developers if they need to assist you in solving an issue. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH).</p>
+<p>The Support section enables the user to provide output data about the app. This information can be very helpful to folks trying to assist with problem reports.</p>
+<p>The graphic below shows the screen provided when you tap on the Support row at the bottom of the Settings screen.</p>
+<p align="center"><img alt="settings support screen" src="../img/loop-3-setting-support.svg" width="250" /></p>
+<p>The <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report row creates a Loop Report text file with a lot of useful information for the developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to send it to yourself.</p>
+<p>It's a good idea to use the <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.</p>
 <p>The next two rows need to be explained - TO DO.</p>
-<p>The last row creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report.</p>
+<p>The last row creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting.</p>
                 
               
               
@@ -2071,7 +2096,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../loop-3-therapy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loop 3 Therapy Settings" rel="prev">
+        <a href="../loop-3-pump/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loop 3 Add Pump" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2080,20 +2105,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Loop 3 Therapy Settings
+              Loop 3 Add Pump
             </div>
           </div>
         </a>
       
       
         
-        <a href="../loop-3-cgm/" class="md-footer__link md-footer__link--next" aria-label="Next: Loop 3 Add CGM" rel="next">
+        <a href="../loop-3-therapy/" class="md-footer__link md-footer__link--next" aria-label="Next: Loop 3 Therapy Settings" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Loop 3 Add CGM
+              Loop 3 Therapy Settings
             </div>
           </div>
           <div class="md-footer__button md-icon">
