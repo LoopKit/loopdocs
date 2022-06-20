@@ -71,7 +71,7 @@ For Omnipod and Medtronic pumps, a RileyLink compatible device is required for L
 
 A list of all RileyLink compatible devices in the nearby area will display in the RileyLink Setup screen. Select your RileyLink by sliding the toggle to display green and then press the blue `Continue` button at the bottom of the screen. If your RileyLink does not appear, make sure it is charged and turned on: slide the recessed switch toward the case's keyring.
 
-## Common Omnipod
+### Common Omnipod
 
 After the detour for selecting a RileyLink for Omnipod, all other actions for Omnipod and Omnipod DASH are the same. Once a pod is paired, the Pump Settings screen will also be the same, except the Omnipod setting display has a section for the RileyLink.
 
