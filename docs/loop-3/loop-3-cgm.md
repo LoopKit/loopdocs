@@ -6,19 +6,76 @@ The CGM configuration can be selected from the Heads-Up-Display ([HUD](loop-3-di
 
 The HUD will look like the graphic below if no CGM or Pump is configured for Loop:
 
-![Loop HUD when both CGM and Pump have not been added](img/loop-3-hud-add-cgm-add-pump.svg){width="350"}
+![Loop HUD when CGM and Pump have not been added](img/loop-3-hud-add-cgm-add-pump.svg){width="350"}
 {align="center"}
 
-With Loop-dev, the user has a new option for CGM, [Nightscout Remote CGM](#nightscout-remote-cgm), in addition to those available with Loop 2.x.x. The Dexcom G4 is no longer available, so is no longer supported by Loop-dev.
+There are several choices for a CGM with Loop as shown in the graphic below:
 
 * CGM that reside on the same phone (internet not required)
-    * [Dexcom G5/G6](../build/step4.md#dexcom-g5-and-g6-cgm)
-    * [Minimed Enlite CGM](../build/step4.md#medtronic-cgm) (Medtronic Pump only) 
+    * [Dexcom G5](#dexcom-g5-and-g6-cgm)
+    * [Dexcom G6](#dexcom-g5-and-g6-cgm)
+    * [Minimed Enlite CGM](#medtronic-enlite-cgm)
+        * Medtronic Pump only
+        * **You must [add pump](loop-3-pump.md) first**
+        * Not visible in graphic below because no pump with connected Enlite sensor was attached
 * CGM that require active internet
+    * [Dexcom Share](#dexcom-share-as-a-cgm)
     * [Nightscout Remote CGM](#nightscout-remote-cgm)
-    * [Dexcom Share](../build/step4.md#dexcom-share)
+* CGM Simulator - useful to learn the app interface
 
-The addition of the Nightscout Remote CGM enables the use of Loop-dev with any sensor that can be uploaded to your Nightscout URL.
+The graphic below shows the display when a user taps on Add CGM in the Settings screen. Tap on the desired CGM to advance to the next screen.
+
+![graphic showing some of the CGM available with Loop 3](img/loop-3-setting-add-cgm.svg){width="500"}
+{align="center"}
+
+!!! info "Comment for Experienced Loopers"
+    With Loop 3
+
+    * There is a new option for CGM, [Nightscout Remote CGM](#nightscout-remote-cgm)
+    * The Dexcom G4 is no longer available from Dexcom so that option was removed
+
+### Dexcom G5 and G6 CGM
+
+The Dexcom G5 and G6 require
+
+* Dexcom app must be running on the Loop iPhone and be paired to an active transmitter
+* User must enter that active transmitter ID in the located indicated by the red rectangle in the graphic below
+* Do not enter your share credentials
+* Do not add the transmitter ID to Loop first
+
+![interface to add transmitter ID for Dexcom](img/loop-3-setting-add-dexcom.svg){width="300"}
+{align="center"}
+
+!!! info "FYI: When You Change Transmitters"
+
+    When you change Dexcom transmitters, you will need to select the `Delete CGM` button at the very bottom of the CGM info page in Loop. After that, proceed with Dexcom Instructions for changing transmitters.  Once the new transmitter is paired with the Dexcom app, then you tap `Add CGM` to enter the new transmitter. You cannot just tap on your old transmitter ID to update it.
+ 
+    The how-to information for changing a transmitter is found by searching LoopDocs. TO DO - put the link here.
+
+    If you don't update your transmitter ID when you change active transmitters, your Loop will not get CGM data from the Dexcom app.
+
+#### About Dexcom Share credentials
+
+You do **NOT** need your Share account info listed in Loop settings if you are using a G5 or G6 system. The transmitter ID is sufficient. In fact, the recommendation is that you leave your Share account empty so that you don't accidentally become internet-dependent for CGM data when you forget to update your transmitter ID when you start a new transmitter. Just leave the Share credentials blank.
+
+### Medtronic Enlite CGM
+
+You must first connect the sensor when you add your compatible Metronic pump. The option to select the sensor will then be available when you tap `Add CGM`.
+
+### Dexcom Share as a CGM
+
+!!! warning "If you need to use Dexcom Share"
+
+    If the dexcom is on another phone and you choose to use Share (not advised), here is some information.
+
+    For all selections, the Dexcom Share credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. **Dexcom Share account is not always the same login info as your Dexcom Clarity account.** The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
+
+    If you do not enter your Share credentials correctly into Loop, you will get an error when Loop tries to access your Share account to backfill CGM data. An example of the error message is shown in the graphic below. If you see that message, delete your Share account from Loop settings and try again.
+
+    ![img/shareclient.jpg](../operation/loop-settings/img/shareclient.jpg){width="300"}
+    {align="center"}
+
+If you added Share credential when selecting [G5 or G6](#dexcom-g5-and-g6-cgm) (not recommended) and later change transmitters without deleting and adding the CGM with the new transmitter ID, Loop will get data from your Dexcom Share server and will not work without cell or wifi connection. (TO DO) - is the following still true? When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID.
 
 ### Nightscout Remote CGM
 
@@ -29,7 +86,7 @@ If the user has CGM data available at their Nightscout URL, they can select that
 {align="center"}
 
 
-The user must enter both the URL and the API Secret to ensure the security of the data.
+The user must enter both the URL and API_SECRET for their site to ensure the security of the data.
 
 ![Nightscout Remote CGM entry screen](img/nightscout-cgm-entry.svg){width="350"}
 {align="center"}

@@ -210,9 +210,16 @@ Once you save settings, Loop asks to send notifications and use Bluetooth. You n
 
 ## CGM and Pump
 
-If you are building over an existing app, your CGM and pump selections should have carried over.
+For new Loopers, it is now time to add a CGM and a pump.  Follow these links for instructions.
 
-If you need to add a [CGM](loop-3-cgm.md) or [Pump](loop-3-pump.md) follow the links.
+* Add a [CGM](loop-3-cgm.md)
+* Add a [Pump](loop-3-pump.md)
+
+!!! info "Medtronic CGM"
+
+    If you plan to use a Medtronic Enlite sensor for your CGM, you must first add that pump to Loop before the sensor will be shown as an option.
+
+If you are built Loop 3 over an existing app, your CGM and pump selections should have carried over.
 
 ## Experienced Loopers
 
