@@ -7,9 +7,11 @@
 *[Catalina]: older version for operating system for Mac, macOS 10.x
 *[Certificate]: Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID
 *[CGM]: continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid
+*[Closed Loop]: Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB
 *[clone]: create a copy of a repository on your computer including revision history and ability to update using git commands
 *[COB]: Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction
 *[Config Vars]: configuration parameters for a Nightscout Site
+*[Correction Range]: Loop recommends decreased basal or bolus to bring glucose predictions into this range
 *[CR]: Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin
 *[Delivery Limits]: max bolus and max basal rates allowed by your therapy settings
 *[Dosing Strategy]: chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal
@@ -17,6 +19,7 @@
 *[EmaLink]: a radio-frequency device that enables Loop to control your pump
 *[Expiration Date]: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 *[Finder]: graphical folder and file display on Mac
+*[Glucose Safety Limit]: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit 
 *[git]: a tool for version control
 *[IOB]: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
 *[iOS]: operating system used by Apple Mobile devices (iPhone, iPod)
@@ -26,6 +29,7 @@
 *[MDT]: common abbreviation for Medtronic pumps
 *[modal]: message or alert appearing in front of app that must be acknowledged to return to app
 *[Monterey]: operating system for Mac, macOS 12.x
+*[Open Loop]: Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available
 *[OrangeLink]: a radio-frequency device that enables Loop to control your pump
 *[OTP]: one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone
 *[Package Dependencies]: packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer
