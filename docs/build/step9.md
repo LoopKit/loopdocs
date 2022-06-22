@@ -15,7 +15,6 @@ Since you've been working in order, you will now have Xcode installed on your co
 
 **Did your computer reboot following the Xcode installation. If not, reboot now.**
 
-
 ## Xcode Version
 
 Open Xcode from your Applications folder. If it offers to start a new project with you, just close that window.
@@ -34,29 +33,6 @@ Helpful tip: When the Command Line Tools installation is done and the pop-up win
 ![img/command-line-error-3.png](img/command-line-error-3.png){width="750"}
 {align="center"}
 
-## Simulator Download
-
-Starting with Xcode 12, the simulators were not being downloaded automatically; and you were required to download them yourself.
-
-With Xcode 13, things changed again. You are no longer required to download simulators manually and with Xcode 13.2.1, they are no longer shown.
-
-### For Xcode 12 ONLY
-
-While still on the Xcode Preferences window, after adding command line tools using the Locations tab, click on the Components tab.  It should look similar to the first figure below.
-
-Choose the iOS operating system closest to the one on your phone and click the down arrow to install it. (If your phone has iOS 14.4, and the biggest number simulator you see is iOS 14.3, download that one. If you phone has iOS 13.3, first we recommend updating, but if you choose not to, then select iOS 13.3 from the list.)
-
-Then scroll down to find the watchOS lines and choose the operating system on your watch (or biggest number if you don't have a watch paired) and click the down arrow to install it.
-
-Simulator download is now initiated and will continue in the background. You can keep going with the next steps, but let download complete before trying to build.
-
-If you see no simulators in this window - you probably missed the note above - not needed for Xcode 13.
-
-![img/download-simulators-1.svg](img/download-simulators-1.svg){width="750"}
-{align="center"}
-
-![img/download-simulators-2.svg](img/download-simulators-2.svg){width="750"}
-{align="center"}
 
 ## Add Apple ID
 
