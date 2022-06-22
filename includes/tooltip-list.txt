@@ -1,6 +1,7 @@
 *[API_SECRET]: password (min 12 characters) needed to access Nightscout Site
 *[BAGE]: pump battery age on Nightscout site
 *[Big Sur]: older version for operating system for Mac, macOS 11.x
+*[BLE]: Bluetooth low energy, used for communication by phones, CGM and some pumps
 *[branch]: version of code within a single repository or workspace repository
 *[CAGE]: cannula (or pump site) age on Nightscout site
 *[carthage]: a method to connect several repositories, currently used only by Loop-dev
@@ -44,6 +45,7 @@
 *[submodules]: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
 *[Terminal]: interface for entering commands to the computer
 *[Tokens]: on Nightscout, configure access permissions using tokens
+*[Tooltips]: brief definitions provided for important terms and abbreviations on the website
 *[URL]: website address (Uniform Resource Locator)
 *[watchOS]: Apple watch operating system; must be compatible with phone iOS
 *[Workspace]: a grouping of several repositories into a complete package
