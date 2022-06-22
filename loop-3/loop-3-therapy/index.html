@@ -1856,13 +1856,13 @@
                 
                 <h1 id="therapy-settings">Therapy Settings<a class="headerlink" href="#therapy-settings" title="Anchor link to this Header on this Page">&para;</a></h1>
 <p>Loop 3 has a special Therapy Settings screen. All the settings configured under Therapy Settings are protected by the same authorization method (FaceID, Fingerprint or Passcode) used to enable the app to issue a manual bolus.</p>
-<p>The Therapy Settings were summarized under <a href="../onboarding/#therapy-settings">Onboarding</a>. This page provides more details about each setting.  Please come back to this page after using the app in <a href="../../operation/loop/open-loop/">Open Loop</a> and review the concepts before enabling <a href="../../operation/loop/close-loop/">Closed Loop</a>.</p>
+<p>The Therapy Settings were summarized under <a href="../onboarding/#therapy-settings">Onboarding</a>. This page provides more details about each setting.  Please come back to this page after using the app in <a href="../../operation/loop/open-loop/"><abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr></a> and review the concepts before enabling <a href="../../operation/loop/close-loop/"><abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr></a>.</p>
 <div class="admonition danger">
 <p class="admonition-title">Placeholder</p>
 <p>This is a placeholder page - expect revisions.</p>
 </div>
 <p>The order of Therapy Setting Information is:</p>
-<h4 id="glucose-safety-limit">Glucose Safety Limit<a class="headerlink" href="#glucose-safety-limit" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="glucose-safety-limit"><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr><a class="headerlink" href="#glucose-safety-limit" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
 <li>Same as suspend threshold for Loop 2.2.x, but with a 3-hour time window</li>
 <li>Code constraint: [67 to 110 mg/dl; 3.7 to 6.1 mmol/L]</li>
@@ -1871,15 +1871,15 @@
 </ul>
 </li>
 </ul>
-<h4 id="correction-range">Correction Range<a class="headerlink" href="#correction-range" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr><a class="headerlink" href="#correction-range" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
 <li>Code constraint: [87 to 180 mg/dl; 4.8 to 10 mmol/L]</li>
-<li>Bottom range can be limited by code constraint AND your selected Glucose Safety Limit</li>
+<li>Bottom range can be limited by code constraint AND your selected <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr></li>
 </ul>
 <h4 id="pre-meal-range">Pre-Meal Range<a class="headerlink" href="#pre-meal-range" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
 <li>Code constraint: [up to 130 mg/dl; 7.2 mmol/L]</li>
-<li>Bottom range is limited by your selected Glucose Safety Limit</li>
+<li>Bottom range is limited by your selected <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr></li>
 </ul>
 <h4 id="basal-rates">Basal Rates<a class="headerlink" href="#basal-rates" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>

@@ -2080,7 +2080,7 @@
 <div class="admonition abstract">
 <p class="admonition-title">Very Detailed Section</p>
 <p>This section is packed with an incredible amount of detail. Remember it exists and come back when you need a reference to Loop 3 icons and messages.</p>
-<p>If you are a new looper your eyes may glaze over the first time through. Don't worry. But do come back and read this section again after you've used the system in Open Loop mode (before you enable Closed Loop mode). And then come back again after a day or so of closed loop testing.</p>
+<p>If you are a new looper your eyes may glaze over the first time through. Don't worry. But do come back and read this section again after you've used the system in <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> mode (before you enable <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> mode). And then come back again after a day or so of closed loop testing.</p>
 <p>Experienced loopers need to read the detail on this page. There are important changes from Loop 2.2.x.</p>
 </div>
 <p>The Heads-Up-Display, visible in portrait mode, shows the Glucose Status on the left, the Loop Status in the middle and the Pump Status on the right. Once a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and pump have been added to Loop, the Loop Status icon will update and ideally be similar to the graphic below.</p>
@@ -2117,11 +2117,11 @@
 <tbody>
 <tr>
 <td><img alt="A green circle indicating nominal status for closed loop" src="../img/loop-3-icon-closed-green.svg" width="175" /></td>
-<td>A green circle indicates the app is in Closed Loop mode and it completed a <a href="#loop-cycle">cycle</a> within the last 5 minutes.</td>
+<td>A green circle indicates the app is in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> mode and it completed a <a href="#loop-cycle">cycle</a> within the last 5 minutes.</td>
 </tr>
 <tr>
 <td><img alt="A yellow circle indicating warning status for closed loop" src="../img/loop-3-icon-closed-yellow.svg" width="175" /></td>
-<td>A yellow circle indicates the app is in Closed Loop mode and it has completed a cycle in the last 5-15 minutes.<br><br>It is not unusual to have a few instances of yellow loops per day.  They can be caused by being out of range (physically), Bluetooth or <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> “noise” interference, or even that the pump was giving a bolus.<br><br>Most yellow loops will self-resolve without needing any special troubleshooting.</td>
+<td>A yellow circle indicates the app is in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> mode and it has completed a cycle in the last 5-15 minutes.<br><br>It is not unusual to have a few instances of yellow loops per day.  They can be caused by being out of range (physically), Bluetooth or <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> “noise” interference, or even that the pump was giving a bolus.<br><br>Most yellow loops will self-resolve without needing any special troubleshooting.</td>
 </tr>
 <tr>
 <td><img alt="A red circle indicating failure status for closed loop" src="../img/loop-3-icon-closed-red.svg" width="175" /></td>
@@ -2129,7 +2129,7 @@
 </tr>
 <tr>
 <td><img alt="A green open circle with a gap at the top denoting open loop" src="../img/loop-3-icon-open-green.svg" width="175" /></td>
-<td>When the circle is open at the top, Loop is operating in “open-loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the Open Loop icon will be displayed until MTB expires or is cancelled. <em>Note that MTB is only implemented in Loop 3 for DASH, at the current time.</em></td>
+<td>When the circle is open at the top, Loop is operating in “open-loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> icon will be displayed until MTB expires or is cancelled. <em>Note that MTB is only implemented in Loop 3 for DASH, at the current time.</em></td>
 </tr>
 </tbody>
 </table>
@@ -2251,7 +2251,7 @@
 </tr>
 <tr>
 <td><img alt="pump alert - yellow exclamation point with phrase manual basal" src="../img/loop-3-pump-alert-mtb.svg" width="175" /></td>
-<td>This alert message indicates the user has initiated a manual temp basal (MTB). While the MTB is active, the Loop Icon Status will also display an Open Loop symbol to indicate no automatic adjustments are made until MTB expires or is canceled. <br><br>The lifecycle indicator across the bottom of the pod status indicates a pod within the final 24 hours of nominal life.<br><br>Tapping on the icon takes the user to the pump settings display where the rate and duration of the MTB are displayed.</td>
+<td>This alert message indicates the user has initiated a manual temp basal (MTB). While the MTB is active, the Loop Icon Status will also display an <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> symbol to indicate no automatic adjustments are made until MTB expires or is canceled. <br><br>The lifecycle indicator across the bottom of the pod status indicates a pod within the final 24 hours of nominal life.<br><br>Tapping on the icon takes the user to the pump settings display where the rate and duration of the MTB are displayed.</td>
 </tr>
 <tr>
 <td><img alt="pump alert - red exclamation point with phrase no data" src="../img/loop-3-pump-alert-no-data.svg" width="175" /></td>
@@ -2309,7 +2309,7 @@
 <td><br><br><img alt="no recent glucose - tap to add message" src="../img/status-row-glucose-stale.svg" width="350" /></td>
 </tr>
 <tr>
-<td>If a higher priority message is not displayed in the <code>Status Row</code> and the glucose value is stale (more than 15 minutes old), the <code>No Recent Glucose, Tap to Add</code> message is displayed. Tapping on the <code>Status Row</code> opens the <a href="../loop-3-features/#manual-bolus">Manual Bolus</a> screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap <code>Save Without Bolusing</code>. However, be aware that, in Closed Loop mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.</td>
+<td>If a higher priority message is not displayed in the <code>Status Row</code> and the glucose value is stale (more than 15 minutes old), the <code>No Recent Glucose, Tap to Add</code> message is displayed. Tapping on the <code>Status Row</code> opens the <a href="../loop-3-features/#manual-bolus">Manual Bolus</a> screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap <code>Save Without Bolusing</code>. However, be aware that, in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.</td>
 </tr>
 <tr>
 <td><br><br><img alt="override symbol and name with until time stamp message" src="../img/status-row-override.svg" width="350" /></td>
