@@ -283,8 +283,6 @@ sudo rm -rf /Library/Frameworks/CarthageKit.framework
 {align="center"}
 
 
-With Xcode 12, the simulators are no longer being downloaded automatically. If you are missing a simulator, follow the steps under Step 9 [Simulator Download](step9.md#simulator-download).
-
 ### No Such Module 'LoopKit' or Similar Message
 
 **Solution**: You probably forgot to select Loop(Workspace). Review the graphic from the [Prepare to Build](step14.md#prepare-to-build) Instructions

@@ -1,8 +1,8 @@
 # CGM Configuration
 
-The CGM configuration can be selected from the Heads-Up-Display ([HUD](loop-3-displays.md#heads-up-display)) or from the [Loop Settings](loop-3-settings.md) screen.
+## CGM Choices
 
-## Add CGM
+The CGM configuration can be selected from the Heads-Up-Display ([HUD](loop-3-displays.md#heads-up-display)) or from the [Loop Settings](loop-3-settings.md) screen.
 
 The HUD will look like the graphic below if no CGM or Pump is configured for Loop:
 
@@ -22,6 +22,8 @@ There are several choices for a CGM with Loop as shown in the graphic below:
     * [Dexcom Share](#dexcom-share-as-a-cgm)
     * [Nightscout Remote CGM](#nightscout-remote-cgm)
 * CGM Simulator - useful to learn the app interface
+
+## Add CGM
 
 The graphic below shows the display when a user taps on Add CGM in the Settings screen. Tap on the desired CGM to advance to the next screen.
 
