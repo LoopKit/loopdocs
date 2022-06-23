@@ -114,4 +114,17 @@ To modify the selected CGM, it must first be deleted. Then a new CGM can be adde
 
 When changing Dexcom Transmitters, you must first `Delete CGM` and then add the CGM back with the new Transmitter serial number.
 
+## Final CGM Steps
+
+!!! warning "Please Review Detailed Pages"
+    There is a lot of detailed information in the rest of this section - probably too much to absorb the first time through - although you should read it at least once.  Keep coming back while you are learning to use Loop in Open Loop.
+
+    * [Displays](loop-3-displays.md)
+    * [Settings](loop-3-settings.md)
+    * [Therapy Settings](loop-3-therapy.md)
+    * [RileyLink Screen](../operation/loop-settings/rileylink.md)
+    * [Omnipod Common Screen](loop-3-omnipod.md)
+    * [Medtronic Screen](loop-3-medtronic.md)
+
+Now that you have added your CGM, you are ready to either add a [Pump](loop-3-pump.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
 
