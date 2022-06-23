@@ -1430,8 +1430,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#what-does-modal-mean" class="md-nav__link">
-    What does Modal Mean?
+  <a href="#glucose-units" class="md-nav__link">
+    Glucose Units
   </a>
   
 </li>
@@ -1464,8 +1464,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#download-loop-profile-from-nightscout" class="md-nav__link">
-    Download Loop Profile from Nightscout
+  <a href="#connect-loop-to-nightscout" class="md-nav__link">
+    Connect Loop to Nightscout
   </a>
   
 </li>
@@ -1499,6 +1499,13 @@
         <li class="md-nav__item">
   <a href="#cgm-and-pump" class="md-nav__link">
     CGM and Pump
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-glucose-units" class="md-nav__link">
+    Change Glucose Units
   </a>
   
 </li>
@@ -1573,6 +1580,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../loop-3-displays/" class="md-nav__link">
+        Loop 3 Displays
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../loop-3-settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
@@ -1589,20 +1610,6 @@
     <li class="md-nav__item">
       <a href="../loop-3-therapy/" class="md-nav__link">
         Loop 3 Therapy Settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../loop-3-displays/" class="md-nav__link">
-        Loop 3 Displays
       </a>
     </li>
   
@@ -2008,8 +2015,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#what-does-modal-mean" class="md-nav__link">
-    What does Modal Mean?
+  <a href="#glucose-units" class="md-nav__link">
+    Glucose Units
   </a>
   
 </li>
@@ -2042,8 +2049,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#download-loop-profile-from-nightscout" class="md-nav__link">
-    Download Loop Profile from Nightscout
+  <a href="#connect-loop-to-nightscout" class="md-nav__link">
+    Connect Loop to Nightscout
   </a>
   
 </li>
@@ -2077,6 +2084,13 @@
         <li class="md-nav__item">
   <a href="#cgm-and-pump" class="md-nav__link">
     CGM and Pump
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-glucose-units" class="md-nav__link">
+    Change Glucose Units
   </a>
   
 </li>
@@ -2162,13 +2176,24 @@
 </ul>
 </li>
 </ul>
-<h3 id="what-does-modal-mean">What does Modal Mean?<a class="headerlink" href="#what-does-modal-mean" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Modal Alert or Message</p>
-<p>A <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert or message is a small window that shows up on top of your app with information that you must acknowledge.  You will see a lot of these during onboarding and while using the Loop app.</p>
-</div>
+<h3 id="glucose-units">Glucose Units<a class="headerlink" href="#glucose-units" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you have never connected a glucose monitoring device to your phone's Apple Health app, the units selected on the phone might not be in the units you expect, i.e., mg/dL or mmol/L. The units Loop uses match what is in Apple Health.</p>
+<ul>
+<li>If the units in Apple Health are mg/dL and you try to enter therapy settings suitable for mmol/L, or vice versa, the guardrails in Loop will prevent your entries</li>
+<li>If this happens to you:<ul>
+<li>Quit out of onboarding</li>
+<li>Follow the directions for <a href="#change-glucose-units">How to Change Glucose Units</a></li>
+<li>Start the Loop app again and Onboarding will restart</li>
+</ul>
+</li>
+</ul>
 <h2 id="onboarding-steps">Onboarding Steps<a class="headerlink" href="#onboarding-steps" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Each of the onboarding steps is presented in order. It is a good idea to follow along on this page while you are entering values into your app for the first time.</p>
+<p>Each of the onboarding steps is presented in order on this page. It is a good idea to follow the docs while you are entering values into your app for the first time.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Settings Help</p>
+<p>If your settings are incorrect when starting Loop (basal rates, insulin sensitivity, carb ratio, etc), you may need time to identify which settings need to be adjusted. You may be tired of reading this, but please remain in <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> until you've verified your settings.</p>
+<p>If you need help with your settings adjustment, head over to LoopTips for some <a href="https://loopkit.github.io/looptips/settings/settings/">initial settings help</a>.</p>
+</div>
 <h3 id="welcome-to-loop">Welcome to Loop<a class="headerlink" href="#welcome-to-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The first screen you will see is the Welcome to Loop screen shown in the graphic below. Tap on <code>Let's Go</code> to continue.</p>
 <p align="center"><img alt="initial welcome screens when onboarding" src="../img/welcome-loop-3.svg" width="250" /></p>
@@ -2184,20 +2209,30 @@
 <p>You can reach the permissions screen later, if you want to review it. Open the Apple Health app, look at the toolbar at the bottom of the app where it says Sharing. Scroll to the bottom of Sharing and Select Apps, then review the Loop Settings.</p>
 <div class="admonition warning">
 <p class="admonition-title">Advanced Users Only</p>
-<p><a href="#carb-data-source">What about reading carbohydrates with Loop?</a></p>
+<p>What about <a href="#carb-data-source">reading carbohydrates from Health</a> with Loop?</p>
 </div>
-<h3 id="download-loop-profile-from-nightscout">Download Loop Profile from Nightscout<a class="headerlink" href="#download-loop-profile-from-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The next screen, shown on the left of the graphic below, enables the user to download existing Loop Profile information from Nightscout. </p>
+<h3 id="connect-loop-to-nightscout">Connect Loop to Nightscout<a class="headerlink" href="#connect-loop-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition question">
+<p class="admonition-title">Nightscout</p>
+<p>If you have no idea was Nightscout is, just select <code>Setup Loop without Nightscout</code>.</p>
+<p><a href="../../nightscout/overview/">Nightscout</a> is not required for Loop, but it is highly recommended and can be added later.</p>
+</div>
+<p>The next screen, shown on the left of the graphic below, enables the user to both connect Loop to Nightscout and to <strong>download existing Loop settings</strong> from Nightscout.</p>
 <ul>
-<li>A new Looper would choose the bottom button and enter their settings one at a time. </li>
-<li>An experienced Looper who also uses Nightscout might choose the top button.<ul>
-<li>In that case, you are taken to the screen on the right of the graphic below to enter your Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> (remember to use https: with the "s") and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>. </li>
-<li>Once those credentials are accepted, you must confirm that you want to import your settings from your Nightscout profile. </li>
-<li>This includes all the overrides you have previously saved.</li>
+<li>A new Looper, without a Nightscout site, would choose the <code>Setup Loop without Nightscout</code> button which takes them to the Therapy Settings entry portion of onboarding.</li>
+<li>A new Looper, who already has a Nightscout site, would choose the <code>Use Nightscout with Loop</code> button to connect Loop to their site.</li>
+<li>An experienced Looper who also uses Nightscout would choose the <code>Use Nightscout with Loop</code> button to download their Therapy Settings from Nightscout for review.</li>
+</ul>
+<p>If the user selects the <code>Use Nightscout with Loop</code>:</p>
+<ul>
+<li>The screen on the right of the graphic below is presented to enter your Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> (remember to use https: with the "s") and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>. </li>
+<li>Once those credentials are accepted, you can choose whether you want to import your settings from your Nightscout profile.<ul>
+<li>For new Loopers, any information populated on the Nightscout site will be downloaded</li>
+<li>For current Loopers, this includes all the overrides you have previously saved.</li>
+<li>Every Therapy Setting downloaded from Nightscout is presented for review.</li>
 </ul>
 </li>
 </ul>
-<p>In either case, every Therapy Setting is presented and the user must enter or confirm the value until all Therapy Settings are reviewed.</p>
 <p>&nbsp;</p>
 <p align="center"><img alt="Nightscout screens when onboarding if select Use Loop with Nightscout" src="../img/nightscout-menus-x2.svg" width="500" /></p>
 <h3 id="therapy-settings">Therapy Settings<a class="headerlink" href="#therapy-settings" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2205,19 +2240,21 @@
 <p>The therapy settings are the heart of how Loop makes predictions. If your settings are not correct, the predictions will not be correct. </p>
 <ul>
 <li>This is yet another reminder to start with <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> after you enter what you think are good settings for Basal, Insulin Sensitivity Factor and Carb Ratio.</li>
-<li>But wait - what are these other settings and what do they mean?</li>
+<li>But wait - what are these other settings and what do they mean?<ul>
 <li>A brief summary of each therapy setting is provided on this page, but there is a more detailed <a href="../loop-3-therapy/">Therapy Settings</a> page as well for your review.</li>
+</ul>
+</li>
 </ul>
 <h4 id="glucose-safety-limit"><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr><a class="headerlink" href="#glucose-safety-limit" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>If Loop predicts that your glucose will go below the <a href="../loop-3-therapy/#glucose-safety-limit"><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr></a> at any time in the next 3 hours and Loop is in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr>, it will set a temporary basal rate of 0 U/hr in an attempt to prevent that future low.</p>
 <p>If you ask Loop for a bolus recommendation, and the current prediction is that your glucose will go below the <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr> at any time in the next 3 hours, no bolus will be recommended.</p>
-<p>There are some related settings: <a href="../loop-3-therapy/#correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr></a> and <a href="../loop-3-therapy/#pre-meal-range">Pre-Meal Range</a>. The <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr> can never be higher than the lowest of those ranges.</p>
+<p>There are some related settings: <a href="../loop-3-therapy/#correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr></a> and <a href="../loop-3-therapy/#pre-meal-range"><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a>. The <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr> can never be higher than the lowest of those ranges.</p>
 <h4 id="correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr><a class="headerlink" href="#correction-range" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The <a href="../loop-3-therapy/#correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr></a> is the glucose range that you would like Loop to use when providing automated corrections. Correction range is not necessarily the same glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction range of 100-110 for Loop, but use a desired glucose range of 80-180 when discussing things with your endo about "time in range".</p>
+<p>The <a href="../loop-3-therapy/#correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr></a> is the glucose range that you would like Loop to use when providing automated corrections. Correction range is not necessarily the same glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but use a desired glucose range of 70-180 mg/dL (3.9-10 mmol/L) when discussing things with your endo about "time in range".</p>
 <p>If you ask Loop for a <a href="../loop-3-features/#manual-bolus">manual bolus recommendation</a> while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit. Note - this is only if you request the bolus recommendation.  Loop will <strong>not</strong> automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of the correction range. </p>
-<h4 id="pre-meal-range">Pre-Meal Range<a class="headerlink" href="#pre-meal-range" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The <a href="../loop-3-therapy/#pre-meal-range">Pre-Meal Range</a>, optional, can be used to as an easy way to get a small amount of insulin delivered before a meal to help control post-meal glucose spikes. If you choose not to enter a value, the <a href="../../operation/features/premeal/">pre-meal icon</a> in the toolbar will be inactive. If you enter a range and later prefer not to have one, you can remove it later.</p>
-<p>If your normal target is 100-110 mg/dL and pre-meal target is 80-80 mg/dL, for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the <a href="../../operation/features/premeal/">pre-meal icon</a> in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.</p>
+<h4 id="pre-meal-range"><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr><a class="headerlink" href="#pre-meal-range" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The <a href="../loop-3-therapy/#pre-meal-range"><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a>, which is optional, can be used as an easy way to get a small amount of insulin delivered before a meal to help control post-meal glucose spikes. If you choose not to enter a value, the <a href="../../operation/features/premeal/">pre-meal icon</a> in the toolbar will be inactive. If you enter a range and later prefer not to have one, you can remove it later.</p>
+<p>If your normal target is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal target is 80-80 mg/d L (4.4 mmol/L), for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the <a href="../../operation/features/premeal/">pre-meal icon</a> in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.</p>
 <h4 id="basal-rates">Basal Rates<a class="headerlink" href="#basal-rates" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Only one basal schedule may be configured in the Loop app and the schedule must start at midnight. </p>
 <p>As a new Looper onboarding with Loop, or anyone onboarding basal rates before a pump is added, you are limited to increments of 0.05 U/hr for basal rates and 0.00 U/hr is not allowed. Put values close to what you actually use because the values entered here affect what is allowed as a maximum basal rate in the <a href="#delivery-limits"><abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr></a> section.</p>
@@ -2244,12 +2281,12 @@
 </ul>
 </div>
 <h4 id="maximum-basal-rate">Maximum Basal Rate<a class="headerlink" href="#maximum-basal-rate" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Maximum basal rate will cap the the maximum temporary basal rate that the Loop is allowed to enact to meet your correction range when you are in closed loop and you have selected a <a href="../loop-3-settings/#dosing-strategy"><abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></a> of Temp Basal Only. Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. When you are first beginning to use Loop, it is wise to start conservative (low) in setting your maximum basal rate. If your settings are incorrect in other areas (basal rates, insulin sensitivity, carb ratio, etc), you may need time to identify where settings need to be adjusted. This process is easier if Loop is given less latitude to set high basal rates. Gradually increase your maximum basal rate as your comfort and confidence in Loop increases. If you need help with your settings adjustment, head over to LoopTips for some <a href="https://loopkit.github.io/looptips/settings/settings/">initial settings help</a>.</p>
+<p>Maximum basal rate will cap the the maximum temporary basal rate that the Loop is allowed to issue to meet your correction range when you are in closed loop and you have selected a <a href="../loop-3-settings/#dosing-strategy"><abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></a> of Temp Basal Only. Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. When you are first beginning to use Loop, it is wise to start conservative (low) in setting your maximum basal rate. </p>
 <h4 id="maximum-bolus"><strong>Maximum Bolus</strong><a class="headerlink" href="#maximum-bolus" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Enter your desired single bolus maximum here. For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a sub 10 U maximum like 9 or 9.9 U to avoid accidentally typing in a bolus of 10 instead of 1.0 U.</p>
 <h4 id="insulin-model">Insulin Model<a class="headerlink" href="#insulin-model" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>When Loop was originally developed, the fastest insulins available, also know as "rapid acting", had published data for behavior in adults and children. Therefore, Loop offers an Adult or Child model as part of onboarding. If you use a newer "ultra rapid" insulin, the model selected here is irrelevant, but a selection is required.</p>
-<p>The specific type of insulin used is set when you select or edit the configuration of your <a href="../loop-3-pump/">pump</a>.</p>
+<p>The specific type of insulin used is set when you select or edit the configuration of your <a href="../loop-3-pump/#insulin-selection">pump</a>.</p>
 <h4 id="carb-ratios">Carb Ratios<a class="headerlink" href="#carb-ratios" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Your <a href="../loop-3-therapy/#carb-ratios">Carb Ratio</a> is the number of grams of carbohydrates covered by one unit of insulin.</p>
 <ul>
@@ -2270,6 +2307,14 @@
 <p>&nbsp;</p>
 <h3 id="notifications-and-bluetooth">Notifications and Bluetooth<a class="headerlink" href="#notifications-and-bluetooth" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Once you save settings, Loop asks to send notifications and use Bluetooth. You need to allow both or Loop will not work properly.</p>
+<ul>
+<li>
+<p>Notifications are necessary for safety reasons while you are Looping.</p>
+</li>
+<li>
+<p>Bluetooth is how Loop gets data from your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and talks to your Pump.</p>
+</li>
+</ul>
 <p><img alt="enable notifications and BLE" src="../img/notify-ble-x2.svg" width="500" /></p>
 <p>&nbsp;</p>
 <h2 id="cgm-and-pump"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Pump<a class="headerlink" href="#cgm-and-pump" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2282,12 +2327,26 @@
 <p class="admonition-title">Medtronic <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></p>
 <p>If you plan to use a Medtronic Enlite sensor for your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, you must first add that pump to Loop before the sensor will be shown as an option.</p>
 </div>
-<p>If you are built Loop 3 over an existing app, your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and pump selections should have carried over.</p>
+<p>If you built Loop 3 over an existing app, your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and pump selections should have carried over.</p>
+<h2 id="change-glucose-units">Change Glucose Units<a class="headerlink" href="#change-glucose-units" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Loop can handle glucose units of mg/dL or mmol/L. The units Loop uses match what is in Apple Health. Once you connect a device that reports glucose to the phone, make sure the units match the device. Note - you can change units for Dexcom Share and it translates units for you - not sure about other devices.</p>
+<ul>
+<li>These instructions to change Blood Glucose units are for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15<ul>
+<li>Select the Health app (Heart icon)</li>
+<li>There's a toolbar at the bottom - select Browse</li>
+<li>Scroll to find Vitals</li>
+<li>Select Blood Glucose</li>
+<li>Scroll to the bottom and select Unit</li>
+<li>Tap on Unit, if it isn't right, and select the correct units</li>
+<li>While you are there - go on and select Blood Glucose as a Favorite - it will be easier to find next time.</li>
+</ul>
+</li>
+</ul>
 <h2 id="experienced-loopers">Experienced Loopers<a class="headerlink" href="#experienced-loopers" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The first time you build Loop 3 on a device, you will need to go through the onboarding process too. </p>
 <ul>
 <li>
-<p>If you build Loop 3 over Loop 2.2.x on your device, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build Loop 3 and keep using the same pod.)</p>
+<p>If you build Loop 3 over Loop 2.2.x, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build Loop 3 and keep using the same pod.)</p>
 </li>
 <li>
 <p>If you build Loop 3 onto a device without an existing Loop app and you have a Nightscout site, you can enter your Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> (remember to use https: with the "s") and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> and it will ask if you want to import your settings from your Nightscout profile. This includes all the overrides you have previously saved.</p>
