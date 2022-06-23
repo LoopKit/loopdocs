@@ -24,10 +24,10 @@ Loopers can choose from 3 pumps and a simulator:
 
     Insulet uses the term Omnipod DASH to refer to newer BLE DASH pods.
 
-    The Loop app and documentation follow this convention:
+    The Loop app follows this convention. LoopDocs uses:
 
-    * **Omnipod**: refers to the older (Eros) pods
-    * **Omnipod DASH**: refers to the new BLE pods
+    * **Omnipod**: specific to the older (Eros) pods that require a RileyLink compatible device
+    * **Omnipod DASH**: specific to the new BLE pods
     * **Omnipod Common**: refers to information that is common to both types of pods
 
 
@@ -39,7 +39,7 @@ The graphic below shows the display when a user taps on Add Pump in the Settings
 {align="center"}
 
 
-If you are adding a Medronic pump, skip ahead to [Medtronic](#medtronic)
+If you are adding a Medtronic pump, skip ahead to [Insulin Type](#insulin-type).
 
 ## Omnipod Common
 
@@ -52,9 +52,9 @@ The graphics below show the common screens for adding Omnipod or Omnipod DASH. T
 
 After these screens are completed, the insulin type is selected.
 
-### Insulin Selection
+## Insulin Type
 
-The insulin selection screen is presented for all pumps.
+The insulin type screen is presented for all pumps.
 
 * Insulin Type
     * User can select from Rapid (Novolog, Humalog, Apidra) or Ultra-Rapid (Fiasp, Lyumjev)
@@ -64,7 +64,7 @@ The insulin selection screen is presented for all pumps.
 
 After this screen is presented, [Omnipod DASH](#omnipod-common_1) users should skip ahead - they will not use a RileyLink compatible device.
 
-## Omnipod
+## Omnipod or Medtronic
 
 ### Select RileyLink
 
@@ -93,6 +93,7 @@ After the detour for selecting a RileyLink for Omnipod, all other actions for Om
 
 A [video is found here for pairing an Omnipod DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing). Once the pod starts priming, you may want to skip ahead in the video (priming takes a minute to complete). The Omnipod Common pairing protocol is the same. The difference is that Omnipod requires a RileyLink compatible device and Omnipod DASH does not. There are also slight differences in some of the text, e.g., Omnipod DASH uses a blue needle cap and Omnipod has a clear needle cap.
 
+
 ## Medtronic
 
 When adding Medtronic, the documentation is not consolidated yet so follow links and use your back button to return to this list.
@@ -116,4 +117,19 @@ You must first delete the old pump before you can switch to a new pump.
 
 * If you are using Medtronic, scroll to the bottom of the pump screen and select `Switch to other insulin delivery device`
 
-The HUD will now show the add pump icon and you can [select a new pump](#add-pump).
+The [Head-Up-Display](#pump-choices) at the top of the Loop main screen will now show the add pump icon and you can [select a new pump](#add-pump).
+
+## Final Pump Steps
+
+!!! warning "Please Review Detailed Pages"
+    There is a lot of detailed information in the rest of this section - probably too much to absorb the first time through - although you should read it at least once.  Keep coming back while you are learning to use Loop in Open Loop.
+
+    * [Displays](loop-3-displays.md)
+    * [Settings](loop-3-settings.md)
+    * [Therapy Settings](loop-3-therapy.md)
+    * [RileyLink Screen](../operation/loop-settings/rileylink.md)
+    * [Omnipod Common Screen](loop-3-omnipod.md)
+    * [Medtronic Screen](loop-3-medtronic.md)
+
+Now that you have paired your pump, you are ready to either add a [CGM](loop-3-cgm.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
+
