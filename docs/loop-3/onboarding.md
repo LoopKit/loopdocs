@@ -188,7 +188,7 @@ Enter your desired single bolus maximum here. For safety, don't set a maximum bo
 
 When Loop was originally developed, the fastest insulins available, also know as "rapid acting", had published data for behavior in adults and children. Therefore, Loop offers an Adult or Child model as part of onboarding. If you use a newer "ultra rapid" insulin, the model selected here is irrelevant, but a selection is required.
 
-The specific type of insulin used is set when you select or edit the configuration of your [pump](loop-3-pump.md#insulin-selection).
+The specific type of insulin used is set when you select or edit the configuration of your [pump](loop-3-pump.md#insulin-type).
 
 #### Carb Ratios
 

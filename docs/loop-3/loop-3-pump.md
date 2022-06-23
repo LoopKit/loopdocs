@@ -99,7 +99,7 @@ A [video is found here for pairing an Omnipod DASH pod](https://drive.google.com
 When adding Medtronic, the documentation is not consolidated yet so follow links and use your back button to return to this list.
 
 1. Select Minimed 500/700 Series as your pump
-1. Select [Insulin Type](#insulin-selection)
+1. Select [Insulin Type](#insulin-type)
 1. Follow links to 2 sections in the Loop 2.2.x Documentation
     * [Prepare Medtronic Pump](../operation/loop-settings/mdt-pump.md#prepare-medtronic-pump)
     * Skip the Add Pump Step - you've already done that
