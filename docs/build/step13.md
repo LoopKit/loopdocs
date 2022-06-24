@@ -43,29 +43,31 @@ In you haven't built in a while, but have been using Loop for a long time:
 
 ## Advanced Users Only
 
-!!! abstract "Advanced Users Reminders"
+!!! abstract "About this Section"
 
-    If you are an advanced user who wants to build the dev branch - this section is for you.
+    If you are an advanced user who wants to build the development branch - this section is for you.
 
-    Everyone else - head to Step 14 to [Build the Loop App](step14.md).
+    Everyone else - head to Step 14 to [Build](step14.md) the released version of the Loop App.
 
-    * Be sure to clone into a new directory that does not already have a folder called LoopWorkspace in it.
+!!! warning "Important"
+
+    * When you clone a fresh copy, you must use a directory that does not already have a folder called LoopWorkspace in it.
     * As of June 24, 2022, a fresh download (or pull) of Loop-dev no longer requires carthage
 
 Yes - this section is "out-of-place", but the Step 14 Build Loop App page is already very long and complicated. If you can build Loop-dev, you can find this section.
 
 **Only build the dev branch if you're a developer/experienced user**
 
-### Before Downloading
+### About Loop-dev
 
 Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch.
 
 - Note, the dev branch requires a minimum of iOS 14 on your device
-- Once you install the dev branch on a device, you must delete the app to return to master, which means all settings will need to be entered in master and a new pod started
-- The dev branch Loop user interface is updated - as an experienced Looper - you will notice the difference
+- Once you install the dev branch on a device, you must delete the app to return to master (the released version), which means all settings will need to be entered in master and a new pod started
+- The dev branch Loop user interface is updated - as an experienced Looper, you will notice the difference
 - Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs
 
-### Downloading
+### Downloading Loop-dev
 
 * Review the instructions here: [LoopWorkspace README](https://github.com/LoopKit/LoopWorkspace#readme) 
 
@@ -76,6 +78,7 @@ Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-go
     - Select (near the bottom) New Terminal at Folder
 
 * Copy and paste the lines below into that terminal window
+* There cannot already be a folder called LoopWorkspace at this location - see best practice in list above
 
 ```
 git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
@@ -85,7 +88,7 @@ xed .
 
 These three lines will download the code and open Xcode. Be sure to select LoopWorkspace and your phone.
 
-### Signing Targets
+### Signing Loop-dev
 
 If you choose to sign manually instead of using the new capability (next paragraph), you must sign 6 targets (add these 2 to the usual 4)
 
@@ -145,7 +148,7 @@ While Loop-dev is under active test, you will want to update frequently.
 * Some are comfortable with the command line git commands described on [here](loopworkspace.md#updating-loop-using-loopworkspace).
 
 
-### Check carthage Status
+#### Check carthage Status
 
 You no longer need carthage, and can uninstall it from your system if you don't use it for any other reason (most people do not need carthage installed)
 
@@ -157,7 +160,7 @@ carthage version
 
 * If the response gives you a version number, then carthage is installed - you can uninstall it if you choose
 
-* If the response is, "-bash: carthage: command not found", you are done - it is no longer needed to build Loop-dev
+* If the response indicate, "carthage: command not found", you are done - it is no longer needed to build Loop-dev
 
 ### Remove carthage
 
