@@ -628,22 +628,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#before-downloading" class="md-nav__link">
-    Before Downloading
+  <a href="#about-loop-dev" class="md-nav__link">
+    About Loop-dev
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#carthage-and-downloading" class="md-nav__link">
-    Carthage and Downloading
+  <a href="#downloading-loop-dev" class="md-nav__link">
+    Downloading Loop-dev
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#signing-targets" class="md-nav__link">
-    Signing Targets
+  <a href="#signing-loop-dev" class="md-nav__link">
+    Signing Loop-dev
   </a>
   
 </li>
@@ -663,15 +663,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#check-carthage-status" class="md-nav__link">
-    Check carthage Status
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-carthage-0360" class="md-nav__link">
-    Install carthage 0.36.0
+  <a href="#remove-carthage" class="md-nav__link">
+    Remove carthage
   </a>
   
 </li>
@@ -1839,20 +1832,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/dev-menus/" class="md-nav__link">
-        Loop dev Preview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../faqs/update-faqs/" class="md-nav__link">
         Update/Rebuild Loop FAQs
       </a>
@@ -1975,22 +1954,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#before-downloading" class="md-nav__link">
-    Before Downloading
+  <a href="#about-loop-dev" class="md-nav__link">
+    About Loop-dev
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#carthage-and-downloading" class="md-nav__link">
-    Carthage and Downloading
+  <a href="#downloading-loop-dev" class="md-nav__link">
+    Downloading Loop-dev
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#signing-targets" class="md-nav__link">
-    Signing Targets
+  <a href="#signing-loop-dev" class="md-nav__link">
+    Signing Loop-dev
   </a>
   
 </li>
@@ -2010,15 +1989,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#check-carthage-status" class="md-nav__link">
-    Check carthage Status
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-carthage-0360" class="md-nav__link">
-    Install carthage 0.36.0
+  <a href="#remove-carthage" class="md-nav__link">
+    Remove carthage
   </a>
   
 </li>
@@ -2096,30 +2068,29 @@
 </ul>
 <h2 id="advanced-users-only">Advanced Users Only<a class="headerlink" href="#advanced-users-only" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Advanced Users Reminders</p>
-<p>If you are an advanced user who wants to build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> - this section is for you.</p>
-<p>Everyone else - head to Step 14 to <a href="../step14/">Build the Loop App</a>.</p>
+<p class="admonition-title">About this Section</p>
+<p>If you are an advanced user who wants to build the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> - this section is for you.</p>
+<p>Everyone else - head to Step 14 to <a href="../step14/">Build</a> the released version of the Loop App.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
 <ul>
-<li>Be sure to <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> into a new directory that does not already have a folder called LoopWorkspace in it.</li>
-<li>Loop-dev is the only workspace build that still requires <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> and it requires a specific version - don't worry - instructions are provided below</li>
+<li>When you <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> a fresh copy, you must use a directory that does not already have a folder called LoopWorkspace in it.</li>
+<li>As of June 24, 2022, a fresh download (or pull) of Loop-dev no longer requires <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr></li>
 </ul>
 </div>
 <p>Yes - this section is "out-of-place", but the Step 14 Build Loop App page is already very long and complicated. If you can build Loop-dev, you can find this section.</p>
 <p><strong>Only build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you're a developer/experienced user</strong></p>
-<h3 id="before-downloading">Before Downloading<a class="headerlink" href="#before-downloading" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="about-loop-dev">About Loop-dev<a class="headerlink" href="#about-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Please read <a href="../../faqs/branch-faqs/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>?</a> before deciding to test the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <ul>
 <li>Note, the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> requires a minimum of <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 14 on your device</li>
-<li>Once you install the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> on a device, you must delete the app to return to master, which means all settings will need to be entered in master and a new pod started</li>
-<li>The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>Please read the <a href="../../faqs/dev-menus/">Loop dev Preview</a> page</li>
+<li>Once you install the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> on a device, you must delete the app to return to master (the released version), which means all settings will need to be entered in master and a new pod started</li>
+<li>The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> Loop user interface is updated - as an experienced Looper, you will notice the difference</li>
+<li>Updated documentation is a work-in-progress located under the <a href="../../loop-3/loop-3-overview/">Loop 3</a> tab of LoopDocs</li>
 </ul>
-<h3 id="carthage-and-downloading">Carthage and Downloading<a class="headerlink" href="#carthage-and-downloading" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> requires installation of <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> 0.36.0 on your Mac.</p>
+<h3 id="downloading-loop-dev">Downloading Loop-dev<a class="headerlink" href="#downloading-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
-<li>
-<p><a href="#check-carthage-status">Check <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> Status</a> to ensure you have <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> 0.36.0 installed</p>
-</li>
 <li>
 <p>Review the instructions here: <a href="https://github.com/LoopKit/LoopWorkspace#readme">LoopWorkspace README</a> </p>
 </li>
@@ -2127,21 +2098,22 @@
 <p>Use finder to create a new folder, typically in Downloads</p>
 <ul>
 <li>Navigate to Downloads</li>
-<li>Hold down the control key and click on the folder to open a menu</li>
+<li>Best practice - create a new folder called Loop-dev_YYMMDD where you replace YYMMDD with today's date.</li>
+<li>Hold down the control key and click on that folder to open a menu</li>
 <li>Select (near the bottom) New <abbr title="interface for entering commands to the computer">Terminal</abbr> at Folder</li>
-<li>You can choose to use an existing folder, but it cannot already have a folder in it called LoopWorkspace</li>
 </ul>
 </li>
 <li>
 <p>Copy and paste the lines below into that terminal window</p>
 </li>
+<li>There cannot already be a folder called LoopWorkspace at this location - see best practice in list above</li>
 </ul>
 <div class="highlight"><pre><span></span><code>git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
 cd LoopWorkspace
 xed .
 </code></pre></div>
 <p>These three lines will download the code and open <abbr title="program used to build an app">Xcode</abbr>. Be sure to select LoopWorkspace and your phone.</p>
-<h3 id="signing-targets">Signing Targets<a class="headerlink" href="#signing-targets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="signing-loop-dev">Signing Loop-dev<a class="headerlink" href="#signing-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you choose to sign manually instead of using the new capability (next paragraph), you must sign 6 targets (add these 2 to the usual 4)</p>
 <ul>
 <li>Loop Intent Extension</li>
@@ -2177,7 +2149,7 @@ xed .
 </li>
 <li>Add the keyword <code>SIRI_DISABLED</code> to the LoopConfigOverride.xcconfig file<ul>
 <li>Examine the file and find the line that starts with <code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)</code></li>
-<li>Insert the new keyword (separated by a space) any where after <code>$(inherited)</code> and before the slashes near the end of the line</li>
+<li>Insert the new keyword (separated by a space) anywhere after <code>$(inherited)</code> and before the slashes near the end of the line</li>
 </ul>
 </li>
 </ol>
@@ -2185,7 +2157,7 @@ xed .
 <ul>
 <li>There are some package dependencies (new for Loop-dev) that are resolved first and then the indexing takes place</li>
 <li>If you notice a red x in <abbr title="program used to build an app">Xcode</abbr> (indicating an error) while it is resolving packages and indexing - please follow the steps for <a href="../build_errors/#couldnt-get-revision-for-package-dependency">Couldn't Get Revision for Package Dependency</a></li>
-<li>Once the packages are resolved and the indexing has started, you can build the app following the directions in the "Build Loop" section on the next page: <a href="../step14/#build-loop">Step 14: Build Loop App #Build Loop</a>.</li>
+<li>Once the packages are resolved and the indexing has started, you can build the app following the directions in the "Build Loop" section on the next page: <a href="../step14/#build-loop">Step 14: Build Loop App: Build Loop</a>.</li>
 </ul>
 <p>We suggest reading the tips below on keeping Loop-dev updated. Checking for updates every week is a good idea.  Also - subscribe to all the streams on <a href="https://loop.zulipchat.com">Loop Zulipchat</a> to make sure you don't miss critical information.</p>
 <h3 id="update-loop-dev">Update Loop-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2195,22 +2167,20 @@ xed .
 <li>Some just repeat the cloning.</li>
 <li>Some are comfortable with the command line <abbr title="a tool for version control">git</abbr> commands described on <a href="../loopworkspace/#updating-loop-using-loopworkspace">here</a>.</li>
 </ul>
-<h3 id="check-carthage-status">Check <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> Status<a class="headerlink" href="#check-carthage-status" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The steps required to install the correct version of <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> depend on whether <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> is already installed.</p>
+<h3 id="remove-carthage">Remove <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr><a class="headerlink" href="#remove-carthage" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You no longer need <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>, and can uninstall it from your system if you don't use it for any other reason (most people do not need <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> installed)</p>
 <p>First copy and paste this phrase into the terminal and hit return:</p>
 <div class="highlight"><pre><span></span><code>carthage version
 </code></pre></div>
 <ul>
 <li>
-<p>If the response includes "0.36.0", you can build the Loop-dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Ignore the instructions to "Please update to the latest Carthage version: . . ." You want to stick with 0.36.0.</p>
+<p>If the response gives you a version number, then <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is installed - you can uninstall it if you choose</p>
 </li>
 <li>
-<p>If the response is, "-bash: <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr>: command not found", then skip ahead to the <a href="#install-carthage-0360">Install <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> 0.36.0 step</a>.</p>
-</li>
-<li>
-<p>Any other response requires you to delete the current version of <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> first.</p>
+<p>If the response indicates, "<abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>: command not found", you are done - it is no longer needed to build Loop-dev</p>
 </li>
 </ul>
+<p>If <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is on your system, you can choose to remove it.</p>
 <p>Copy and paste the following line into the terminal window and hit return.  </p>
 <div class="highlight"><pre><span></span><code>rm -rf /usr/local/bin/carthage
 </code></pre></div>
@@ -2218,11 +2188,6 @@ xed .
 <div class="highlight"><pre><span></span><code>sudo rm -rf /Library/Frameworks/CarthageKit.framework
 </code></pre></div>
 <p>You will be prompted for a password when you hit enter on the second line.   It is the same password you use in order to log into the computer.   It will not echo to the screen.</p>
-<h3 id="install-carthage-0360">Install <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> 0.36.0<a class="headerlink" href="#install-carthage-0360" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Go to this link: <a href="https://github.com/Carthage/Carthage/releases/tag/0.36.0">Carthage.pkg</a> to download the <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> 0.36.0 package. After following the preceding link, ignore the warning message, scroll down to the Assets section and click on Carthage.pkg to start the download.</p>
-<p>Once the download has completed, you need to take extra steps to install it - <strong>do not double click to open it</strong>.</p>
-<p>Go to the <abbr title="graphical folder and file display on Mac">Finder</abbr> app, click on Downloads, locate Carthage.pkg. Hold down the Control Key on the keyboard and single click on Carthage.pkg. This will bring up a menu of choices, select Open from the menu and then Open (greyed out) again from the pop up box.  Then run through the install process.  You will need to enter your password. <strong>The password is your computer's password.</strong> Once installation completes, you can discard the Carthage.pkg when prompted.</p>
-<p>If you need more help with this, this external link to the <a href="https://www.loopandlearn.org/carthage-0-36-0/#carthage-install">Loop and Learn website</a> has some graphics to assist in this step.</p>
                 
               
               

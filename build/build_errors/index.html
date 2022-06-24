@@ -1957,20 +1957,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/dev-menus/" class="md-nav__link">
-        Loop dev Preview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../faqs/update-faqs/" class="md-nav__link">
         Update/Rebuild Loop FAQs
       </a>
@@ -2475,19 +2461,19 @@
 <li>Press build</li>
 </ul>
 <h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With the new LoopWorkspace download and build method - you should not see <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> errors. If you do see <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> errors - you probably did not select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) at the top of the <abbr title="program used to build an app">Xcode</abbr> window.  This is a new step and easy to forget. Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions.</p>
+<p>With the new LoopWorkspace download and build method - you should not see <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> errors. If you do see <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> errors - you probably did not select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) at the top of the <abbr title="program used to build an app">Xcode</abbr> window.  This is a new step and easy to forget. Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions.</p>
 <p>Or maybe you are a repeat builder who did not read the updated information and tried to use the old zip-download method. That is no longer supported.  Please read all of the <a href="../updating/">Updating</a> page.</p>
 <div class="admonition info">
-<p>Advanced builders using dev may need <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> but they should have followed the directions for <a href="../step13/#advanced-users-only">Advanced Users Only</a></p>
+<p>Advanced builders using dev may need <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> but they should have followed the directions for <a href="../step13/#advanced-users-only">Advanced Users Only</a></p>
 </div>
-<p>If you previously installed <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> error.</p>
-<p>If you are using a Loop fork or a <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> build with the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you may still require <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr>. This <a href="https://www.loopandlearn.org/carthage-0-36-0/">external link</a> explains how to install the correct version of <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> on your computer.</p>
+<p>If you previously installed <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> error.</p>
+<p>If you are using a Loop fork or a <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> build with the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you may still require <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>. This <a href="https://www.loopandlearn.org/carthage-0-36-0/">external link</a> explains how to install the correct version of <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> on your computer.</p>
 <p><strong>Error Message:</strong></p>
 <div class="admonition warning">
 <p class="admonition-title">Wrong Version of Carthage Error</p>
 <p>Applications/<abbr title="program used to build an app">Xcode</abbr>.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.</p>
 </div>
-<p><strong>Solution:</strong> Manually uninstall <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr>.</p>
+<p><strong>Solution:</strong> Manually uninstall <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>.</p>
 <ul>
 <li>Open a <abbr title="interface for entering commands to the computer">Terminal</abbr></li>
 <li>Copy and paste this command into the terminal and hit enter</li>
@@ -2511,7 +2497,7 @@
 <h3 id="no-such-module-loopkit-or-similar-message">No Such Module 'LoopKit' or Similar Message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Solution</strong>: You probably forgot to select Loop(<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>). Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions</p>
 <p><strong>Error Message:</strong> If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the <a href="./#carthage-error">Carthage Error</a> fix listed above.</p>
-<p><strong>Solution</strong>: For zip-download (not advised): Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> was removed.</p>
+<p><strong>Solution</strong>: For zip-download (not advised): Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> was removed.</p>
 <p align="center"><img alt="img/exit-code-65.png" src="../img/exit-code-65.png" width="850" /></p>
 <h3 id="developer-license-update-pla-update">Developer License Update (PLA Update)<a class="headerlink" href="#developer-license-update-pla-update" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement". Or you may see "Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account."</p>
@@ -2585,7 +2571,7 @@
 <p><strong>Error message:</strong> "Unrecognized arguments: --cache-builds"</p>
 <p align="center"><img alt="img/cache-builds.png" src="../img/cache-builds.png" width="850" /></p>
 <p align="center"><img alt="img/exit-code-1-cartfile.jpg" src="../img/exit-code-1-cartfile.jpg" width="850" /></p>
-<p><strong>Solution:</strong> This is a homebrew / <abbr title="a method to connect several repositories, currently used only by Loop-dev">carthage</abbr> error, so I don't think you'll see this. If you do, download a fresh copy of Loop code and try again. If it repeats, it is time to request assistance. Please read <a href="./#posting-for-help">Posting for Help</a>.</p>
+<p><strong>Solution:</strong> This is a homebrew / <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> error, so I don't think you'll see this. If you do, download a fresh copy of Loop code and try again. If it repeats, it is time to request assistance. Please read <a href="./#posting-for-help">Posting for Help</a>.</p>
 <h3 id="abort-with-payload">Abort with Payload<a class="headerlink" href="#abort-with-payload" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "<strong>Abort with payload</strong>"  Your app will only open briefly with a white screen and then close, if you build with this error.</p>
 <p align="center"><img alt="img/abort_payload.png" src="../img/abort_payload.png" width="750" /></p>
