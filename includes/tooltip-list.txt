@@ -4,7 +4,7 @@
 *[BLE]: Bluetooth low energy, used for communication by phones, CGM and some pumps
 *[branch]: version of code within a single repository or workspace repository
 *[CAGE]: cannula (or pump site) age on Nightscout site
-*[carthage]: a method to connect several repositories, currently used only by Loop-dev
+*[carthage]: a program that used to be required to build Loop - no longer needed
 *[Catalina]: older version for operating system for Mac, macOS 10.x
 *[Certificate]: Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID
 *[CGM]: continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid

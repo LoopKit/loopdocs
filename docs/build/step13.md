@@ -50,7 +50,7 @@ In you haven't built in a while, but have been using Loop for a long time:
     Everyone else - head to Step 14 to [Build the Loop App](step14.md).
 
     * Be sure to clone into a new directory that does not already have a folder called LoopWorkspace in it.
-    * Loop-dev is the only workspace build that still requires carthage and it requires a specific version - don't worry - instructions are provided below
+    * As of June 24, 2022, a fresh download (or pull) of Loop-dev no longer requires carthage
 
 Yes - this section is "out-of-place", but the Step 14 Build Loop App page is already very long and complicated. If you can build Loop-dev, you can find this section.
 
@@ -62,22 +62,18 @@ Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-go
 
 - Note, the dev branch requires a minimum of iOS 14 on your device
 - Once you install the dev branch on a device, you must delete the app to return to master, which means all settings will need to be entered in master and a new pod started
-- The dev branch user interface is different, i.e., the documentation in LoopDocs does not always match the screens you will see when you use the Loop app built from the dev branch
-- Please read the [Loop dev Preview](../faqs/dev-menus.md) page
+- The dev branch Loop user interface is updated - as an experienced Looper - you will notice the difference
+- Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs
 
-### Carthage and Downloading
-
-The dev branch requires installation of carthage 0.36.0 on your Mac.
-
-* [Check carthage Status](#check-carthage-status) to ensure you have carthage 0.36.0 installed
+### Downloading
 
 * Review the instructions here: [LoopWorkspace README](https://github.com/LoopKit/LoopWorkspace#readme) 
 
 * Use finder to create a new folder, typically in Downloads
     - Navigate to Downloads
-    - Hold down the control key and click on the folder to open a menu
+    - Best practice - create a new folder called Loop-dev_YYMMDD where you replace YYMMDD with today's date.
+    - Hold down the control key and click on that folder to open a menu
     - Select (near the bottom) New Terminal at Folder
-    - You can choose to use an existing folder, but it cannot already have a folder in it called LoopWorkspace
 
 * Copy and paste the lines below into that terminal window
 
@@ -129,14 +125,14 @@ Note - if you know your Personal Team ID, you can enter it as directed in [Signi
     * **Watch App Extension Target:** Siri
 1. Add the keyword `SIRI_DISABLED` to the LoopConfigOverride.xcconfig file
     * Examine the file and find the line that starts with `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
-    * Insert the new keyword (separated by a space) any where after `$(inherited)` and before the slashes near the end of the line
+    * Insert the new keyword (separated by a space) anywhere after `$(inherited)` and before the slashes near the end of the line
 
 
 ### Build Loop-dev
 
 * There are some package dependencies (new for Loop-dev) that are resolved first and then the indexing takes place
 * If you notice a red x in Xcode (indicating an error) while it is resolving packages and indexing - please follow the steps for [Couldn't Get Revision for Package Dependency](build_errors.md#couldnt-get-revision-for-package-dependency)
-* Once the packages are resolved and the indexing has started, you can build the app following the directions in the "Build Loop" section on the next page: [Step 14: Build Loop App #Build Loop](step14.md#build-loop).
+* Once the packages are resolved and the indexing has started, you can build the app following the directions in the "Build Loop" section on the next page: [Step 14: Build Loop App: Build Loop](step14.md#build-loop).
 
 We suggest reading the tips below on keeping Loop-dev updated. Checking for updates every week is a good idea.  Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
 
@@ -151,7 +147,7 @@ While Loop-dev is under active test, you will want to update frequently.
 
 ### Check carthage Status
 
-The steps required to install the correct version of carthage depend on whether carthage is already installed.
+You no longer need carthage, and can uninstall it from your system if you don't use it for any other reason (most people do not need carthage installed)
 
 First copy and paste this phrase into the terminal and hit return:
 
@@ -159,11 +155,13 @@ First copy and paste this phrase into the terminal and hit return:
 carthage version
 ```
 
-* If the response includes "0.36.0", you can build the Loop-dev branch. Ignore the instructions to "Please update to the latest Carthage version: . . ." You want to stick with 0.36.0.
+* If the response gives you a version number, then carthage is installed - you can uninstall it if you choose
 
-* If the response is, "-bash: carthage: command not found", then skip ahead to the [Install carthage 0.36.0 step](#install-carthage-0360).
+* If the response is, "-bash: carthage: command not found", you are done - it is no longer needed to build Loop-dev
 
-* Any other response requires you to delete the current version of carthage first.
+### Remove carthage
+
+If carthage is on your system, you can choose to remove it.
 
 Copy and paste the following line into the terminal window and hit return.  
 
@@ -178,14 +176,3 @@ sudo rm -rf /Library/Frameworks/CarthageKit.framework
 ```
 
 You will be prompted for a password when you hit enter on the second line.   It is the same password you use in order to log into the computer.   It will not echo to the screen.
-
-
-### Install carthage 0.36.0
-
-Go to this link: [Carthage.pkg](https://github.com/Carthage/Carthage/releases/tag/0.36.0) to download the carthage 0.36.0 package. After following the preceding link, ignore the warning message, scroll down to the Assets section and click on Carthage.pkg to start the download.
-
-Once the download has completed, you need to take extra steps to install it - **do not double click to open it**.
-
-Go to the Finder app, click on Downloads, locate Carthage.pkg. Hold down the Control Key on the keyboard and single click on Carthage.pkg. This will bring up a menu of choices, select Open from the menu and then Open (greyed out) again from the pop up box.  Then run through the install process.  You will need to enter your password. **The password is your computer's password.** Once installation completes, you can discard the Carthage.pkg when prompted.
-
-If you need more help with this, this external link to the [Loop and Learn website](https://www.loopandlearn.org/carthage-0-36-0/#carthage-install) has some graphics to assist in this step.

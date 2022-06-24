@@ -147,7 +147,6 @@ nav:
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
     - 'Loop Releases': 'faqs/release-faqs.md'
     - 'Loop Development': 'faqs/branch-faqs.md'
-    - 'Loop dev Preview': 'faqs/dev-menus.md'
     - 'Update/Rebuild Loop FAQs': 'faqs/update-faqs.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
     - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
