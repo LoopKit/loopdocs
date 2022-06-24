@@ -2,7 +2,7 @@
 
 The next version of Loop is developed under a separate branch, independent of the released Loop version. Typically, the dev branch is used by the developers to push out changes for experienced users to test.  It is not for new loopers. You should only test a development branch if you are willing to be an active participation with the developers to provide feedback and build frequently to obtain the latest feature or bug-fix that is being tested. If you are an experienced looper and willing to help out - this is the way the next release of Loop is improved.
 
-Because the Omnipod DASH is actively being testing in the dev branch, there is probably a lot more interest in being a "tester" now than if it was just a minor tweak.  In addition to the DASH work, however, Loop itself has undergone a major architecture upgrade.  There is a formal onboarding process, more safety features and a [different menu layout](dev-menus.md).
+Because the Omnipod DASH is actively being testing in the dev branch, there is probably a lot more interest in being a "tester" now than if it was just a minor tweak.  In addition to the DASH work, however, Loop itself has undergone a major architecture upgrade.  There is a formal onboarding process, more safety features and a different menu layout. Updated interface documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs.
 
 Please read this entire page before using any version of Loop other than the released code.
 
@@ -103,5 +103,3 @@ The dev branch is where a lot of user interface and setting safety work has been
 There has been some reorganization of code to make it easier to drop in new pump and CGM modules.  These may not be obvious to the user, but are important for moving forward.
 
 And, of course, the integration of Omnipod DASH. The RileyLink Compatible devices are no longer required with DASH.
-
-Please continue to [Loop dev Preview](dev-menus.md) for preliminary documentation about Loop dev.
