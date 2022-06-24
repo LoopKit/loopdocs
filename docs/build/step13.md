@@ -148,7 +148,7 @@ While Loop-dev is under active test, you will want to update frequently.
 * Some are comfortable with the command line git commands described on [here](loopworkspace.md#updating-loop-using-loopworkspace).
 
 
-#### Check carthage Status
+### Remove carthage
 
 You no longer need carthage, and can uninstall it from your system if you don't use it for any other reason (most people do not need carthage installed)
 
@@ -160,9 +160,7 @@ carthage version
 
 * If the response gives you a version number, then carthage is installed - you can uninstall it if you choose
 
-* If the response indicate, "carthage: command not found", you are done - it is no longer needed to build Loop-dev
-
-### Remove carthage
+* If the response indicates, "carthage: command not found", you are done - it is no longer needed to build Loop-dev
 
 If carthage is on your system, you can choose to remove it.
 
