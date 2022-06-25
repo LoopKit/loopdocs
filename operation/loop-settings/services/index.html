@@ -1932,7 +1932,22 @@
                 
                 
                 <h1 id="loop-services">Loop Services<a class="headerlink" href="#loop-services" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>At the bottom of your Loop settings screen is a section called "Services". <em>The services listed in this section are all </em><em>OPTIONAL</em><em>.  You can choose to leave them empty and your Loop will still work.</em></p>
+<p>Near the bottom of your Loop settings screen is a section called "Services".</p>
+<div class="admonition question">
+<p class="admonition-title">Sevices are Optional</p>
+<ul>
+<li>Loop will work whether you use these or not.</li>
+<li>Nightscout is highly recommended by experienced Loopers but can be added later - you don't need it to get started.</li>
+</ul>
+</div>
+<ul>
+<li>
+<p>For Loop 2.2.x, the services listed in the graphic below can be added by clicking on the <code>Tap to set</code> arrow.</p>
+</li>
+<li>
+<p>For Loop 3, the services are added by tapping on the + sign and choosing the service from the list.</p>
+</li>
+</ul>
 <p align="center"><img alt="img/services.JPG" src="../img/services.JPG" width="350" /></p>
 <h2 id="nightscout">Nightscout<a class="headerlink" href="#nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you have an existing Nightscout site, add the Site <abbr title="website address (Uniform Resource Locator)">URL</abbr> and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> to have your Loop data transmitted to your Nightscout site. If you can’t remember your <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>, it can be found under Settings, Reveal <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> for Heroku sites (or Application Settings, Connection Strings for Azure sites).</p>
@@ -1940,6 +1955,14 @@
 <ol>
 <li>Failure to use <code>https://</code>  in the site <abbr title="website address (Uniform Resource Locator)">URL</abbr>.  If you use <code>http://</code> (see how that doesn't have the "s" at the end?), you will get an error message about an App Transport Security policy.  Take a look at the sample <abbr title="website address (Uniform Resource Locator)">URL</abbr> in the field before you start filling in that line, if you want an example to follow.</li>
 <li>Having a trailing slash on the end of the <abbr title="website address (Uniform Resource Locator)">URL</abbr>. If you copy and paste from a web browser, make sure to delete the trailing slash on the <abbr title="website address (Uniform Resource Locator)">URL</abbr> entry.</li>
+<li>If you use T1pal (paid Nightscout Service)<ul>
+<li>Sign in to T1pal</li>
+<li>Select <code>Configure my Nightscout</code></li>
+<li>Select <code>Uploaders</code></li>
+<li>Use the copy button for <abbr title="website address (Uniform Resource Locator)">URL</abbr> and paste into Loop</li>
+<li>Repeat for <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr></li>
+</ul>
+</li>
 </ol>
 <h2 id="loggly">Loggly<a class="headerlink" href="#loggly" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><a href="https://loggly.com">Loggly</a> is a free logging service. If you sign up for an account, you'll need to go under Source Setup and then Customer <abbr title="on Nightscout, configure access permissions using tokens">Tokens</abbr>. Copy and paste your customer token into your Loop App settings for Loggly.</p>
@@ -1948,7 +1971,16 @@
 <p><a href="https://amplitude.com">Amplitude</a> is a remote event monitoring service and can be used to quickly identify errors and events with Loop. Amplitude stores the events and allows you to view those events as points in time. To retrieve the details of the events you will need to look at corresponding mLab data entries to get a complete picture of the issues. If you sign up for a free account with Amplitude, you will be given an API Key that you can enter here to have Loop integration setup.</p>
 <p align="center"><img alt="img/amplitude.png" src="../img/amplitude.png" width="500" /></p>
 <h2 id="next-step-loop-displays">Next Step: Loop Displays<a class="headerlink" href="#next-step-loop-displays" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Great job, almost finished! Now that you have completed your services, let's move onto understanding your <a href="../displays/">Loop displays</a>. Understanding the Loop displays can be a valuable tool for understanding your Loop's actions, and also for troubleshooting, if you are having issues.</p>
+<p>Great job, almost finished! Now that you have completed your services, let's move onto understanding your Loop Displays.</p>
+<ul>
+<li>
+<p>Loop 2.2.x - click on this link for <a href="../displays/">Displays</a></p>
+</li>
+<li>
+<p>Loop 3 - click on this link for <a href="../../../loop-3/loop-3-displays/">Displays</a>. </p>
+</li>
+</ul>
+<p>Loop displays is a valuable tool for understanding your Loop and a great page to review when troubleshooting.</p>
                 
               
               
