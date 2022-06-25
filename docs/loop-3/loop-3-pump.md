@@ -138,7 +138,7 @@ After all other steps are completed, you can connect your Medtronic pump to Loop
 1. If you have an x23 or x54 pump, there is one more step - highlighted below
 <br/><br/>
 
-![steps to add a medtronic pump](img/loop-3-add-pump-medtronic.svg){width="750"}
+![img/add_pump.png](../operation/loop-settings/img/add_pump.png){width="750"}
 {align="center"}
 
 !!! info "For x23 and x54 Medtronic pump users only"
