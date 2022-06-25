@@ -33,11 +33,11 @@ If you request a manual bolus with Loop while the pump is suspended, Loop resume
 
 ### Change Time Zone
 
-During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time-zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to [`Change Time Zone`](#change-time-zone) and accounts for time zones when performing insulin delivery accounting.
+During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to `Change Time Zone`. Please review [Time Zone](loop-3-pump.md#time-zone) for more details.
 
 If you notice a small clock symbol in upper right of the pump status icon, that indicates the time zone for the pump and phone are not the same.
 
-|![high temp basal indicator with reservoir level below alert and clock icon](img/loop-3-pump-alert-reservoir-tz.svg){width="150"}
+![high temp basal indicator with reservoir level below alert and clock icon](img/loop-3-pump-alert-reservoir-tz.svg){width="150"}
 
 ### Pump Battery Type
 
@@ -48,7 +48,7 @@ The type of battery used in the Medtronic pump affects how Loop interprets the [
 
 Leave the Preferred Data Source set to on Event History for proper functioning of Loop.
 
-**Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.**  Event History must also be selected in order for prime events to be detected and NOT contribute to IOB during site changes. Please just leave the Preferred Data Source on Event History.
+**Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.**  Event History must also be selected so that when you prime your tubing, the insulin used for priming does NOT contribute to IOB during site changes. Please just leave the Preferred Data Source on Event History.
 
 ### Use MySentry
 
