@@ -70,9 +70,15 @@ As with all Loop versions, you can manually bolus at any time by pressing the Bo
 
 The Configuration section allows entry to the following screens:
 
-* [Therapy Settings](loop-3-therapy.md)
-* [Pump Settings](loop-3-pump.md)
-* [CGM Settings](loop-3-cgm.md)
+### [Therapy Settings](loop-3-therapy.md)
+
+### Pump
+
+* [Add or Modify Pump](loop-3-pump.md)
+* [Omnipod or Omnipod DASH](loop-3-omnipod.md) Status and Commands
+* [Medtronic](loop-3-medtronic.md) Status and Commands
+
+### [CGM Settings](loop-3-cgm.md)
 
 ## Services
 
