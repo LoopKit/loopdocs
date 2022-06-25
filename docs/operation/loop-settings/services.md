@@ -1,6 +1,15 @@
 # Loop Services
 
-At the bottom of your Loop settings screen is a section called "Services". *The services listed in this section are all **OPTIONAL**.  You can choose to leave them empty and your Loop will still work.*
+Near the bottom of your Loop settings screen is a section called "Services".
+
+!!! question "Sevices are Optional"
+    * Loop will work whether you use these or not.
+    * Nightscout is highly recommended by experienced Loopers but can be added later - you don't need it to get started.
+
+* For Loop 2.2.x, the services listed in the graphic below can be added by clicking on the `Tap to set` arrow.
+
+* For Loop 3, the services are added by tapping on the + sign and choosing the service from the list.
+
 
 ![img/services.JPG](img/services.JPG){width="350"}
 {align="center"}
@@ -13,6 +22,12 @@ The two most common errors in filling out this section are:
 
 1. Failure to use `https://`  in the site URL.  If you use `http://` (see how that doesn't have the "s" at the end?), you will get an error message about an App Transport Security policy.  Take a look at the sample URL in the field before you start filling in that line, if you want an example to follow.
 2. Having a trailing slash on the end of the URL. If you copy and paste from a web browser, make sure to delete the trailing slash on the URL entry.
+1. If you use T1pal (paid Nightscout Service)
+    * Sign in to T1pal
+    * Select `Configure my Nightscout`
+    * Select `Uploaders`
+    * Use the copy button for URL and paste into Loop
+    * Repeat for API_SECRET
 
 ## Loggly
 
@@ -30,4 +45,10 @@ The two most common errors in filling out this section are:
 
 ## Next Step: Loop Displays
 
-Great job, almost finished! Now that you have completed your services, let's move onto understanding your [Loop displays](displays.md). Understanding the Loop displays can be a valuable tool for understanding your Loop's actions, and also for troubleshooting, if you are having issues.
+Great job, almost finished! Now that you have completed your services, let's move onto understanding your Loop Displays.
+
+* Loop 2.2.x - click on this link for [Displays](displays.md)
+
+* Loop 3 - click on this link for [Displays](../../loop-3/loop-3-displays.md). 
+
+Loop displays is a valuable tool for understanding your Loop and a great page to review when troubleshooting.
