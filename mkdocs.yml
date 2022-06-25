@@ -94,13 +94,13 @@ nav:
     - 'Step 5: Loop Services': 'operation/loop-settings/services.md'
     - 'Loop Displays': 'operation/loop-settings/displays.md'
     - 'RileyLink Display': 'operation/loop-settings/rileylink.md'
+    - 'Pump Settings': 'operation/loop-settings/pump-commands.md'
 - Operate:
     - 'Open Loop': 'operation/loop/open-loop.md'
     - 'Closed Loop': 'operation/loop/close-loop.md'
     - 'Meal Entries': 'operation/features/carbs.md'
     - 'Bolus': 'operation/features/bolus.md'
     - 'Overrides': 'operation/features/workout.md'
-    - 'Pump Settings': 'operation/loop-settings/pump-commands.md'
     - How to Use Loop App:
         - 'Pre-meal target': 'operation/features/premeal.md'
         - 'Health app': 'operation/features/healthapp.md'

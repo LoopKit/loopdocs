@@ -150,7 +150,14 @@ While Loop-dev is under active test, you will want to update frequently.
 
 ### Remove carthage
 
-You no longer need carthage, and can uninstall it from your system if you don't use it for any other reason (most people do not need carthage installed)
+!!! abstract "Completely Optional"
+    This section is completely optional.
+
+    It is only provided to assist those who installed carthage for Loop and want to remove it.
+
+* You no longer need carthage, and can uninstall it from your system.
+
+* You do NOT need to uninstall carthage - your choice. If you share the computer with someone else, make sure they don't need carthage.
 
 First copy and paste this phrase into the terminal and hit return:
 
@@ -162,7 +169,7 @@ carthage version
 
 * If the response indicates, "carthage: command not found", you are done - it is no longer needed to build Loop-dev
 
-If carthage is on your system, you can choose to remove it.
+If carthage is on your system, you can choose to remove it (completely optional with respect to building Loop with updated code).
 
 Copy and paste the following line into the terminal window and hit return.  
 
@@ -170,7 +177,14 @@ Copy and paste the following line into the terminal window and hit return.
 rm -rf /usr/local/bin/carthage
 ```
 
-Wait for the prompt to appear, then copy and paste this line into the terminal window and hit return:
+!!! danger ""
+    If the response says you don't have the privilege to do this - it is best to stop.
+
+    * That means carthage was installed by another user - not you.
+    * Check with them to make sure they don't require carthage on the computer.
+    * The presence or absence of carthage no longer affects the build process for Loop - so it is fine to leave it on your computer.
+
+Assuming the previous line did not give an error, then copy and paste this line into the terminal window and hit return to complete carthage removal:
 
 ```
 sudo rm -rf /Library/Frameworks/CarthageKit.framework
