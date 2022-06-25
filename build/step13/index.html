@@ -946,6 +946,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
+        Pump Settings
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1055,36 +1069,22 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
-        Pump Settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_7">
+        <label class="md-nav__link" for="__nav_4_6">
           How to Use Loop App
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="How to Use Loop App" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_7">
+        <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
           How to Use Loop App
         </label>
@@ -1218,18 +1218,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_9">
+        <label class="md-nav__link" for="__nav_4_8">
           Algorithm
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Algorithm" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_9">
+        <label class="md-nav__title" for="__nav_4_8">
           <span class="md-nav__icon md-icon"></span>
           Algorithm
         </label>
@@ -2168,7 +2168,19 @@ xed .
 <li>Some are comfortable with the command line <abbr title="a tool for version control">git</abbr> commands described on <a href="../loopworkspace/#updating-loop-using-loopworkspace">here</a>.</li>
 </ul>
 <h3 id="remove-carthage">Remove <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr><a class="headerlink" href="#remove-carthage" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You no longer need <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>, and can uninstall it from your system if you don't use it for any other reason (most people do not need <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> installed)</p>
+<div class="admonition abstract">
+<p class="admonition-title">Completely Optional</p>
+<p>This section is completely optional.</p>
+<p>It is only provided to assist those who installed <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> for Loop and want to remove it.</p>
+</div>
+<ul>
+<li>
+<p>You no longer need <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>, and can uninstall it from your system.</p>
+</li>
+<li>
+<p>You do NOT need to uninstall <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> - your choice. If you share the computer with someone else, make sure they don't need <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>.</p>
+</li>
+</ul>
 <p>First copy and paste this phrase into the terminal and hit return:</p>
 <div class="highlight"><pre><span></span><code>carthage version
 </code></pre></div>
@@ -2180,11 +2192,19 @@ xed .
 <p>If the response indicates, "<abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>: command not found", you are done - it is no longer needed to build Loop-dev</p>
 </li>
 </ul>
-<p>If <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is on your system, you can choose to remove it.</p>
+<p>If <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is on your system, you can choose to remove it (completely optional with respect to building Loop with updated code).</p>
 <p>Copy and paste the following line into the terminal window and hit return.  </p>
 <div class="highlight"><pre><span></span><code>rm -rf /usr/local/bin/carthage
 </code></pre></div>
-<p>Wait for the prompt to appear, then copy and paste this line into the terminal window and hit return:</p>
+<div class="admonition danger">
+<p>If the response says you don't have the privilege to do this - it is best to stop.</p>
+<ul>
+<li>That means <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> was installed by another user - not you.</li>
+<li>Check with them to make sure they don't require <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> on the computer.</li>
+<li>The presence or absence of <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> no longer affects the build process for Loop - so it is fine to leave it on your computer.</li>
+</ul>
+</div>
+<p>Assuming the previous line did not give an error, then copy and paste this line into the terminal window and hit return to complete <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> removal:</p>
 <div class="highlight"><pre><span></span><code>sudo rm -rf /Library/Frameworks/CarthageKit.framework
 </code></pre></div>
 <p>You will be prompted for a password when you hit enter on the second line.   It is the same password you use in order to log into the computer.   It will not echo to the screen.</p>
