@@ -18,8 +18,8 @@ A [video is found here for pairing an Omnipod DASH pod](https://drive.google.com
 
 When you first want to add an Omnipod pump:
 
-* If you are using a different pump with Loop, follow these directions to [delete your existing pump](loop-3-add-pump.md#modify-pump)
-* If you have no pump configured follow these directions to [add Omnipod or Omnipod DASH](loop-3-add-pump.md#add-pump)
+* If you are using a different pump with Loop, follow these directions to [delete your existing pump](add-pump.md#modify-pump)
+* If you have no pump configured follow these directions to [add Omnipod or Omnipod DASH](add-pump.md#add-pump)
 
 Add graphics and words.
 This is where Suspend, Manual Temp Basal and Replace Pod are found along with other items.

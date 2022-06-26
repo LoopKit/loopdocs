@@ -13,7 +13,7 @@
 
 It is a good idea to review this page, _and the rest of what is now the Loop 3 Section (and will become the Set Up App section once Loop-dev is released),_ before pressing any buttons on your phone with your new Loop 3 app.
 
-As soon as your app builds on your phone, you are guided through the set up process - this is called onboarding. As part of onboarding, there are information screens for each `Therapy Setting`. You are "forced" to acknowledge each screen while onboarding. If you later want to review those informational screens again - they are available on your phone through the [`Therapy Settings`](loop-3-therapy.md) screen.
+As soon as your app builds on your phone, you are guided through the set up process - this is called onboarding. As part of onboarding, there are information screens for each `Therapy Setting`. You are "forced" to acknowledge each screen while onboarding. If you later want to review those informational screens again - they are available on your phone through the [`Therapy Settings`](therapy-settings.md) screen.
 
 This link shows a [video of onboarding](https://drive.google.com/file/d/1NkS-YGREFn1UBmBbOjsD2Yy0ZUyEYM1l/view?usp=sharing) with the pre-release version under test in March 2022.
 
@@ -117,26 +117,26 @@ The therapy settings are the heart of how Loop makes predictions. If your settin
 
 * This is yet another reminder to start with Open Loop after you enter what you think are good settings for Basal, Insulin Sensitivity Factor and Carb Ratio.
 * But wait - what are these other settings and what do they mean?
-    * A brief summary of each therapy setting is provided on this page, but there is a more detailed [Therapy Settings](loop-3-therapy.md) page as well for your review.
+    * A brief summary of each therapy setting is provided on this page, but there is a more detailed [Therapy Settings](therapy-settings.md) page as well for your review.
 
 #### Glucose Safety Limit
 
-If Loop predicts that your glucose will go below the [Glucose Safety Limit](loop-3-therapy.md#glucose-safety-limit) at any time in the next 3 hours and Loop is in Closed Loop, it will set a temporary basal rate of 0 U/hr in an attempt to prevent that future low.
+If Loop predicts that your glucose will go below the [Glucose Safety Limit](therapy-settings.md#glucose-safety-limit) at any time in the next 3 hours and Loop is in Closed Loop, it will set a temporary basal rate of 0 U/hr in an attempt to prevent that future low.
 
 If you ask Loop for a bolus recommendation, and the current prediction is that your glucose will go below the Glucose Safety Limit at any time in the next 3 hours, no bolus will be recommended.
 
-There are some related settings: [Correction Range](loop-3-therapy.md#correction-range) and [Pre-Meal Range](loop-3-therapy.md#pre-meal-range). The Glucose Safety Limit can never be higher than the lowest of those ranges.
+There are some related settings: [Correction Range](therapy-settings.md#correction-range) and [Pre-Meal Range](therapy-settings.md#pre-meal-range). The Glucose Safety Limit can never be higher than the lowest of those ranges.
 
 #### Correction Range
 
-The [Correction Range](loop-3-therapy.md#correction-range) is the glucose range that you would like Loop to use when providing automated corrections. Correction range is not necessarily the same glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but use a desired glucose range of 70-180 mg/dL (3.9-10 mmol/L) when discussing things with your endo about "time in range".
+The [Correction Range](therapy-settings.md#correction-range) is the glucose range that you would like Loop to use when providing automated corrections. Correction range is not necessarily the same glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but use a desired glucose range of 70-180 mg/dL (3.9-10 mmol/L) when discussing things with your endo about "time in range".
 
-If you ask Loop for a [manual bolus recommendation](loop-3-features.md#manual-bolus) while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit. Note - this is only if you request the bolus recommendation.  Loop will **not** automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of the correction range. 
+If you ask Loop for a [manual bolus recommendation](features.md#manual-bolus) while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit. Note - this is only if you request the bolus recommendation.  Loop will **not** automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of the correction range. 
 
 
 #### Pre-Meal Range
 
-The [Pre-Meal Range](loop-3-therapy.md#pre-meal-range), which is optional, can be used as an easy way to get a small amount of insulin delivered before a meal to help control post-meal glucose spikes. If you choose not to enter a value, the [pre-meal icon](../operation/features/premeal.md) in the toolbar will be inactive. If you enter a range and later prefer not to have one, you can remove it later.
+The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, can be used as an easy way to get a small amount of insulin delivered before a meal to help control post-meal glucose spikes. If you choose not to enter a value, the [pre-meal icon](../operation/features/premeal.md) in the toolbar will be inactive. If you enter a range and later prefer not to have one, you can remove it later.
 
 If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), for example, Loop will give you an extra push to get you to the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
@@ -178,7 +178,7 @@ The Maximum Basal the app allows you to choose will be limited based on the basa
 
 #### Maximum Basal Rate
 
-Maximum basal rate will cap the the maximum temporary basal rate that the Loop is allowed to issue to meet your correction range when you are in closed loop and you have selected a [Dosing Strategy](loop-3-settings.md#dosing-strategy) of Temp Basal Only. Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. When you are first beginning to use Loop, it is wise to start conservative (low) in setting your maximum basal rate. 
+Maximum basal rate will cap the the maximum temporary basal rate that the Loop is allowed to issue to meet your correction range when you are in closed loop and you have selected a [Dosing Strategy](settings.md#dosing-strategy) of Temp Basal Only. Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. When you are first beginning to use Loop, it is wise to start conservative (low) in setting your maximum basal rate. 
 
 #### **Maximum Bolus**
 
@@ -188,18 +188,18 @@ Enter your desired single bolus maximum here. For safety, don't set a maximum bo
 
 When Loop was originally developed, the fastest insulins available, also know as "rapid acting", had published data for behavior in adults and children. Therefore, Loop offers an Adult or Child model as part of onboarding. If you use a newer "ultra rapid" insulin, the model selected here is irrelevant, but a selection is required.
 
-The specific type of insulin used is set when you select or edit the configuration of your [pump](loop-3-add-pump.md#insulin-type).
+The specific type of insulin used is set when you select or edit the configuration of your [pump](add-pump.md#insulin-type).
 
 #### Carb Ratios
 
-Your [Carb Ratio](loop-3-therapy.md#carb-ratios) is the number of grams of carbohydrates covered by one unit of insulin.
+Your [Carb Ratio](therapy-settings.md#carb-ratios) is the number of grams of carbohydrates covered by one unit of insulin.
 
 * At least one carb ratio must be entered
 * A daily schedule with varying carb ratio at different times of day can be entered
 
 #### Insulin Sensitivities
 
-Your [Insulin Sensitivity Factor](loop-3-therapy.md#insulin-sensitivities) refers to the drop in glucose expected from one unit of insulin over the entire duration of insulin activity. It may be different than what was used as a correction factor with shots or manual pumping. Loop uses these value(s) every 5 minutes when calculating predicted glucose levels.
+Your [Insulin Sensitivity Factor](therapy-settings.md#insulin-sensitivities) refers to the drop in glucose expected from one unit of insulin over the entire duration of insulin activity. It may be different than what was used as a correction factor with shots or manual pumping. Loop uses these value(s) every 5 minutes when calculating predicted glucose levels.
 
 * At least one insulin sensitivity factor (ISF) must be entered
 * A daily schedule with varying ISF at different times of day can be entered
@@ -234,8 +234,8 @@ Once you save settings, Loop asks to send notifications and use Bluetooth. You n
 
 For new Loopers, it is now time to add a CGM and a pump.  Follow these links for instructions.
 
-* Add a [CGM](loop-3-add-cgm.md)
-* Add a [Pump](loop-3-add-pump.md)
+* Add a [CGM](add-cgm.md)
+* Add a [Pump](add-pump.md)
 
 !!! info "Medtronic CGM"
 

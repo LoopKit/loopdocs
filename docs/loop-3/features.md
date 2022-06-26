@@ -123,7 +123,7 @@ This section is a continuation of the information presented in the [Accept Recom
 
 When the `Bolus` screen is entered directly from the toolbar, the button choices are `Enter Bolus` if none is recommended, `Deliver` if a value is on the `Bolus` row or `Cancel` using the button on the upper left. The user can also tap on the value on the `Bolus` row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
 
-There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](loop-3-displays.md) page.
+There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](displays_v3.md) page.
 
 The two graphics below are examples of manual bolus screens. 
 

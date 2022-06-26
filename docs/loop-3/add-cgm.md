@@ -2,7 +2,7 @@
 
 ## CGM Choices
 
-The CGM configuration can be selected from the Heads-Up-Display ([HUD](loop-3-displays.md#heads-up-display)) or from the [Loop Settings](loop-3-settings.md) screen.
+The CGM configuration can be selected from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
 
 The HUD will look like the graphic below if no CGM or Pump is configured for Loop:
 
@@ -16,7 +16,7 @@ There are several choices for a CGM with Loop as shown in the graphic below:
     * [Dexcom G6](#dexcom-g5-and-g6-cgm)
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
-        * **You must [add pump](loop-3-add-pump.md) first**
+        * **You must [add pump](add-pump.md) first**
         * Not visible in graphic below because no pump with connected Enlite sensor was attached
 * CGM that require active internet
     * [Dexcom Share](#dexcom-share-as-a-cgm)
@@ -113,18 +113,18 @@ The graphic below shows the result of tapping on the CGM icon when using a Dexco
 !!! warning "Please Review Detailed Pages"
     There is a lot of detailed information in the rest of this section - probably too much to absorb the first time through - although you should read it at least once.  Keep coming back while you are learning to use Loop in Open Loop.
 
-    * [Displays](loop-3-displays.md)
-    * [Settings](loop-3-settings.md)
-    * [Therapy Settings](loop-3-therapy.md)
+    * [Displays](displays_v3.md)
+    * [Settings](settings.md)
+    * [Therapy Settings](therapy-settings.md)
     * [Optional Services](../operation/loop-settings/services.md)
 
     Status and Commands for :
 
     * [RileyLink](../operation/loop-settings/rileylink.md)
-    * [Omnipod Common](loop-3-omnipod.md)
-    * [Medtronic](loop-3-medtronic.md)
+    * [Omnipod Common](omnipod.md)
+    * [Medtronic](medtronic.md)
 
-Now that you have added your CGM, you are ready to either add a [Pump](loop-3-add-pump.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
+Now that you have added your CGM, you are ready to either add a [Pump](add-pump.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
 
 ## Modify CGM
 

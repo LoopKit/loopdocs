@@ -2,7 +2,7 @@
 
 ## Pump Choices
 
-The pump configuration can be selected from the Heads-Up-Display ([HUD](loop-3-displays.md#heads-up-display)) or from the [Loop Settings](loop-3-settings.md) screen.
+The pump configuration can be selected from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
 
 The HUD will look like the graphic below if no CGM or Pump is configured for Loop:
 
@@ -58,9 +58,9 @@ The insulin type screen is presented for all pumps.
 
 * Insulin Type
     * User can select from Rapid (Novolog, Humalog, Apidra) or Ultra-Rapid (Fiasp, Lyumjev)
-    * For Rapid insulin, the [Child or Adult](loop-3-therapy.md#insulin-model) model selection made in Therapy Settings is used
+    * For Rapid insulin, the [Child or Adult](therapy-settings.md#insulin-model) model selection made in Therapy Settings is used
     * For the Ultra-Rapid insulin, only one model is available
-    * Inhaled insulin (Afrezza) is not suitable for pump use so is not offered at this screen; it is only available for use with [Non-Pump Insulin](loop-3-displays.md#event-history-reservoir-and-non-pump-insulin)
+    * Inhaled insulin (Afrezza) is not suitable for pump use so is not offered at this screen; it is only available for use with [Non-Pump Insulin](displays_v3.md#event-history-reservoir-and-non-pump-insulin)
 
 ![initial selection for insulin used in pump](img/loop-3-add-pump-insulin.svg){width="250"}
 {align="center"}
@@ -99,7 +99,7 @@ For Omnipod (left) and Omnipod DASH (right), you should see `Pair Pod` screen.
 ![pair pod screens for Omnipod and Omnipod DASH](img/loop-3-pair-pod-duo.svg){width="500"}
 {align="center"}
 
-New Loopers or those who have never used pods before should hit `Cancel`, finish this page and later review the [Pair Pod](loop-3-omnipod.md#pair-pod) instructions and the rest of the [Omnipod Common](loop-3-omnipod.md) screens. Then, when they are comfortable, pair a pod.
+New Loopers or those who have never used pods before should hit `Cancel`, finish this page and later review the [Pair Pod](omnipod.md#pair-pod) instructions and the rest of the [Omnipod Common](omnipod.md) screens. Then, when they are comfortable, pair a pod.
 
 !!! tip "Try it with Water"
     Some people are fine filling a pod with insulin, priming, attaching the pod and inserting a "live" pod.
@@ -136,7 +136,7 @@ If you've been following this page to add your Medtronic pump, you have complete
     If you have basal rates, insulin to sensitivity factor and carb ratios in your pump - these will be overwritten (using the Therapy Setting values) when you connect your pump to Loop. If those rates are important to you, record them prior to continuing.
 
 - Turn off Patterns under the basal menu settings.
-- Set the Max Basal and Max Bolus values in the Medtronic pump to be greater than or equal to the values you enter in the Loop [Therapy Settings](loop-3-therapy.md#delivery-limits). Otherwise, Loop will not connect to your pump with the error message: `Pump Error. Max setting exceeded`.
+- Set the Max Basal and Max Bolus values in the Medtronic pump to be greater than or equal to the values you enter in the Loop [Therapy Settings](therapy-settings.md#delivery-limits). Otherwise, Loop will not connect to your pump with the error message: `Pump Error. Max setting exceeded`.
 - Set your pump's `Temp Basal Type` to `Insulin Rate (U/hr)`.
 - Set Remote Devices to `ON` and enter any random ID (010101 will work - avoid using all zeros). This setting is found in the pump's Utilities menu (for x23 continue to Connect Devices, Remotes) and turn `ON` the Remote Options.
 - Cancel any currently running extended or dual wave boluses.  Loop cannot loop with those running.
@@ -156,7 +156,7 @@ The final step is to connect your Medtronic pump to Loop.
 - Click the `Connect` button to connect the pump to Loop.
 - The spinning icon continues until you see the blue check mark and `Continue` button
     - If Loop is not successful at connecting, you will get an error message and stay on this screen
-    - If the [Delivery Limits](loop-3-therapy.md#delivery-limits) (max basal and max bolus) in the pump are lower than values you entered in Loop you will see an error message: `Pump Error. Max setting exceeded`.
+    - If the [Delivery Limits](therapy-settings.md#delivery-limits) (max basal and max bolus) in the pump are lower than values you entered in Loop you will see an error message: `Pump Error. Max setting exceeded`.
         - In this case, edit the values in the pump and then click `Connect` to retry.
 
 ![how to enter serial number for a medtronic pump](img/loop-3-add-medtronic-2.svg){width="750"}
@@ -180,7 +180,7 @@ Now that your pump is paired with Loop, you should select the type of battery yo
 1. If you have a x23 or x54 pump, choose whether to use My Sentry (saves phone battery) or not (saves OrangeLink battery)
     - For other Medtronic pumps, adjusting this setting does not do anything
 
-The Medtronic status and commands available are shown in the [Pump Setting](loop-3-medtronic.md) page.
+The Medtronic status and commands available are shown in the [Pump Setting](medtronic.md) page.
 
 ## Time Zone
 
@@ -201,18 +201,18 @@ Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour c
 !!! warning "Please Review Detailed Pages"
     There is a lot of detailed information in the rest of this section - probably too much to absorb the first time through - although you should read it at least once.  Keep coming back while you are learning to use Loop in Open Loop.
 
-    * [Displays](loop-3-displays.md)
-    * [Settings](loop-3-settings.md)
-    * [Therapy Settings](loop-3-therapy.md)
+    * [Displays](displays_v3.md)
+    * [Settings](settings.md)
+    * [Therapy Settings](therapy-settings.md)
     * [Optional Services](../operation/loop-settings/services.md)
 
     Status and Commands for :
 
     * [RileyLink](../operation/loop-settings/rileylink.md)
-    * [Omnipod Common](loop-3-omnipod.md)
-    * [Medtronic](loop-3-medtronic.md)
+    * [Omnipod Common](omnipod.md)
+    * [Medtronic](medtronic.md)
 
-Now that you have added your pump, you are ready to either add a [CGM](loop-3-add-cgm.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
+Now that you have added your pump, you are ready to either add a [CGM](add-cgm.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
 
 ## Modify Pump
 
