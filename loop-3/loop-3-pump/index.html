@@ -1508,19 +1508,6 @@
     Omnipod Common
   </a>
   
-    <nav class="md-nav" aria-label="Omnipod Common">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pod-pairing" class="md-nav__link">
-    Pod Pairing
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1551,13 +1538,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modify-pump" class="md-nav__link">
-    Modify Pump
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#time-zone" class="md-nav__link">
     Time Zone
   </a>
@@ -1567,6 +1547,13 @@
         <li class="md-nav__item">
   <a href="#final-pump-steps" class="md-nav__link">
     Final Pump Steps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify-pump" class="md-nav__link">
+    Modify Pump
   </a>
   
 </li>
@@ -2057,19 +2044,6 @@
     Omnipod Common
   </a>
   
-    <nav class="md-nav" aria-label="Omnipod Common">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pod-pairing" class="md-nav__link">
-    Pod Pairing
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -2100,13 +2074,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modify-pump" class="md-nav__link">
-    Modify Pump
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#time-zone" class="md-nav__link">
     Time Zone
   </a>
@@ -2116,6 +2083,13 @@
         <li class="md-nav__item">
   <a href="#final-pump-steps" class="md-nav__link">
     Final Pump Steps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modify-pump" class="md-nav__link">
+    Modify Pump
   </a>
   
 </li>
@@ -2199,8 +2173,22 @@
 <p>Click this link to continue with a <a href="#medtronic">Medtronic</a> pump.</p>
 <h2 id="omnipod-common_1">Omnipod Common<a class="headerlink" href="#omnipod-common_1" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>After the detour for selecting a <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> for Omnipod, all other actions for Omnipod and Omnipod DASH are the same. Once a pod is paired, the Pump display will be the same, except the Omnipod screen has a section for the <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> Devices.</p>
-<h3 id="pod-pairing">Pod Pairing<a class="headerlink" href="#pod-pairing" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>A <a href="https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing">video is found here for pairing an Omnipod DASH pod</a>. Once the pod starts priming, you may want to skip ahead in the video (priming takes a minute to complete). The Omnipod Common pairing protocol is the same. The difference is that Omnipod requires a <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device and Omnipod DASH does not. There are also slight differences in some of the text, e.g., Omnipod DASH uses a blue needle cap and Omnipod has a clear needle cap.</p>
+<p>For Omnipod (left) and Omnipod DASH (right), you should see <code>Pair Pod</code> screen.</p>
+<p align="center"><img alt="pair pod screens for Omnipod and Omnipod DASH" src="../img/loop-3-pair-pod-duo.svg" width="500" /></p>
+<p>New Loopers or those who have never used pods before should hit <code>Cancel</code>, finish this page and later review the <a href="../loop-3-omnipod/#pair-pod">Pair Pod</a> instructions and the rest of the <a href="../loop-3-omnipod/">Omnipod Common</a> screens. Then, when they are comfortable, pair a pod.</p>
+<div class="admonition tip">
+<p class="admonition-title">Try it with Water</p>
+<p>Some people are fine filling a pod with insulin, priming, attaching the pod and inserting a "live" pod.</p>
+<p>Other people want to be a little more cautious.</p>
+<ul>
+<li>If you are the cautious type, fill a pod with water and let it drip into ziplock bag you carry around</li>
+<li>You can run parallel actions with Loop and your current dosing device</li>
+<li>You may enjoy reading <a href="https://www.loopandlearn.org/sl-rufus/">Rufus the Bear</a></li>
+<li>Just be sure the pod is not near skin when you hit <code>Insert Cannula</code></li>
+</ul>
+</div>
+<p>Experienced Loopers will probably pair a pod immediately, but should still review the new material.</p>
+<p>Continue to <a href="#time-zone">Time Zone</a> and <a href="#final-pump-steps">Final Pump Steps</a> on this page.</p>
 <h2 id="medtronic">Medtronic<a class="headerlink" href="#medtronic" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you've been following this page to add your Medtronic pump, you have completed the first three steps.  If not, you can prepare your pump now, then do those first three steps using Loop (follow the links). The final Connect the Pump step requires all other steps be completed first.</p>
 <ol>
@@ -2212,36 +2200,48 @@
 </ol>
 <h3 id="prepare-medtronic-pump">Prepare Medtronic Pump<a class="headerlink" href="#prepare-medtronic-pump" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition warning">
-<p><strong>These steps are required for your Medtronic pump to work with Loop. Check with your users guide (can be found online if you don't have one) for more detailed instructions on your model of pump if you're not sure how to accomplish these steps.</strong></p>
+<p><strong>Loop requires these settings on your Medtronic pump.</strong></p>
+<p>Check with your users guide (can be found online if you don't have one) for more detailed instructions on your model of pump if you're not sure how to accomplish these steps.</p>
+<p>If you have basal rates, insulin to sensitivity factor and carb ratios in your pump - these will be overwritten (using the Therapy Setting values) when you connect your pump to Loop. If those rates are important to you, record them prior to continuing.</p>
 </div>
-<ol>
+<ul>
 <li>Turn off Patterns under the basal menu settings.</li>
-<li>If you have basal rates, insulin to sensitivity factor and carb ratios in your pump - these will be overwritten (using the Therapy Setting values) when you connect your pump to Loop. If those rates are important to you, record them prior to continuing.</li>
 <li>Set the Max Basal and Max Bolus values in the Medtronic pump to be greater than or equal to the values you enter in the Loop <a href="../loop-3-therapy/#delivery-limits">Therapy Settings</a>. Otherwise, Loop will not connect to your pump with the error message: <code>Pump Error. Max setting exceeded</code>.</li>
-<li>Set your pump's <code>Temp Basal Type</code> to <code>Insulin Rate (U/hr)</code>. Do NOT use percentage. Loop will not run unless your temp basal type is set to units/hour.</li>
+<li>Set your pump's <code>Temp Basal Type</code> to <code>Insulin Rate (U/hr)</code>.</li>
 <li>Set Remote Devices to <code>ON</code> and enter any random ID (010101 will work - avoid using all zeros). This setting is found in the pump's Utilities menu (for x23 continue to Connect Devices, Remotes) and turn <code>ON</code> the Remote Options.</li>
 <li>Cancel any currently running extended or dual wave boluses.  Loop cannot loop with those running.</li>
-<li>Make sure the other settings in your pump, such as bolus wizard settings, are up-to-date so that if you stop using Loop, those settings will be accurate for non-Loop traditional pump use.</li>
-</ol>
+</ul>
 <h3 id="connect-pump-to-loop">Connect Pump to Loop<a class="headerlink" href="#connect-pump-to-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>After all other steps are completed, you can connect your Medtronic pump to Loop.  </p>
-<ol>
-<li>Make sure your <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> is turned on and nearby.</li>
-<li>Add your pump's region, color, and serial number. <ul>
+<p>The final step is to connect your Medtronic pump to Loop.  </p>
+<ul>
+<li>Make sure your <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> is turned on and nearby</li>
+<li>Add your pump's region, color as shown in the graphic below<ul>
 <li>Note that some Canadian pumps use <code>CM</code> instead of <code>CA</code> for the region code.  Select <code>CA/CM</code> in the dropdown menu.</li>
 </ul>
 </li>
-<li>Click the <code>Continue</code> button to connect the pump to Loop.<ul>
-<li>If the <a href="../loop-3-therapy/#delivery-limits"><abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr></a> (max basal and max bolus) in the pump are lower than values you entered in Loop you will see an error message: <code>Pump Error. Max setting exceeded</code>.</li>
-<li>In this case, edit the values in the pump and click <code>Continue</code> to retry (this is faster than quitting, modifying Loop settings and then restarting this process).</li>
+</ul>
+<p align="center"><img alt="how to add country code and color for medtronic pump" src="../img/loop-3-add-medtronic-1.svg" width="500" /></p>
+<ul>
+<li>Add your pump's 6-digit serial number as shown in the graphic below</li>
+<li>Click the <code>Connect</code> button to connect the pump to Loop.</li>
+<li>The spinning icon continues until you see the blue check mark and <code>Continue</code> button<ul>
+<li>If Loop is not successful at connecting, you will get an error message and stay on this screen</li>
+<li>If the <a href="../loop-3-therapy/#delivery-limits"><abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr></a> (max basal and max bolus) in the pump are lower than values you entered in Loop you will see an error message: <code>Pump Error. Max setting exceeded</code>.<ul>
+<li>In this case, edit the values in the pump and then click <code>Connect</code> to retry.</li>
 </ul>
 </li>
-<li>You will then be presented with a Pump Clock message, click the <code>Continue</code> button</li>
-<li>Finally you get a <code>Pump is ready for use screen</code>, click the <code>Continue</code> button</li>
-<li>If you have an x23 or x54 pump, there is one more step - highlighted below
-<br/><br/></li>
-</ol>
-<p align="center"><img alt="img/add_pump.png" src="../../operation/loop-settings/img/add_pump.png" width="750" /></p>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="how to enter serial number for a medtronic pump" src="../img/loop-3-add-medtronic-2.svg" width="750" /></p>
+<ul>
+<li>You will then be presented with two more screens, click <code>Continue</code> for each<ul>
+<li>Pump Clock message</li>
+<li>Pump is ready for use screen</li>
+</ul>
+</li>
+<li>If you have an x23 or x54 pump, there is one more step - highlighted below</li>
+</ul>
 <div class="admonition info">
 <p class="admonition-title">For x23 and x54 Medtronic pump users only</p>
 <table>
@@ -2263,24 +2263,12 @@
 <ol>
 <li>Select your pump's battery type (lithium or alakine)</li>
 <li>Leave the Preferred Data Source on Event History</li>
-<li>You have your choice on enabling My Sentry (saves phone battery) vs disabling My Sentry (saves <abbr title="a radio-frequency device that enables Loop to control your pump">OrangeLink</abbr> battery)</li>
+<li>If you have a x23 or x54 pump, choose whether to use My Sentry (saves phone battery) or not (saves <abbr title="a radio-frequency device that enables Loop to control your pump">OrangeLink</abbr> battery)<ul>
+<li>For other Medtronic pumps, adjusting this setting does not do anything</li>
+</ul>
+</li>
 </ol>
 <p>The Medtronic status and commands available are shown in the <a href="../loop-3-medtronic/">Pump Setting</a> page.</p>
-<h2 id="modify-pump">Modify Pump<a class="headerlink" href="#modify-pump" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You must first delete the old pump before you can switch to a new pump.</p>
-<ul>
-<li>
-<p>If you are using Omnipod or Omnipod DASH, you must first deactivate your current pod</p>
-<ul>
-<li>After the pod has been deactivated, a new row will show at the bottom of the pod screen</li>
-<li>Tap on <code>Switch to other insulin delivery device</code> and follow the directions to complete the task</li>
-</ul>
-</li>
-<li>
-<p>If you are using Medtronic, scroll to the bottom of the pump screen and select <code>Switch to other insulin delivery device</code></p>
-</li>
-</ul>
-<p>The <a href="#pump-choices">Head-Up-Display</a> at the top of the Loop main screen will now show the add pump icon and you can <a href="#add-pump">select a new pump</a>.</p>
 <h2 id="time-zone">Time Zone<a class="headerlink" href="#time-zone" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop allows the Pump to have a different time zone from the phone. The command to adjust time zone is found in the Pump Setting screen for an attached pump.</p>
 <p>The schedules for the basal rates, correction ranges, insulin sensitivity factors and carb ratios stay at the pump time even if the user and their phone change time zones or when daylight savings time occurs.  To bring the pump into the same time zone as the phone, use this command in Loop. (Medtronic users - do NOT adjust time on your pump - always go through Loop.)</p>
@@ -2296,12 +2284,34 @@
 <li><a href="../loop-3-displays/">Displays</a></li>
 <li><a href="../loop-3-settings/">Settings</a></li>
 <li><a href="../loop-3-therapy/">Therapy Settings</a></li>
-<li><a href="../../operation/loop-settings/rileylink/"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> Screen</a></li>
-<li><a href="../loop-3-omnipod/">Omnipod Common Screen</a></li>
-<li><a href="../loop-3-medtronic/">Medtronic Screen</a></li>
+<li><a href="../../operation/loop-settings/services/">Optional Services</a></li>
+</ul>
+<p>Status and Commands for :</p>
+<ul>
+<li><a href="../../operation/loop-settings/rileylink/"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr></a></li>
+<li><a href="../loop-3-omnipod/">Omnipod Common</a></li>
+<li><a href="../loop-3-medtronic/">Medtronic</a></li>
 </ul>
 </div>
-<p>Now that you have paired your pump, you are ready to either add a <a href="../loop-3-cgm/"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>, if you have not done so, or proceed to the <a href="../../operation/loop/open-loop/"><abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr></a> page.</p>
+<p>Now that you have added your pump, you are ready to either add a <a href="../loop-3-cgm/"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>, if you have not done so, or proceed to the <a href="../../operation/loop/open-loop/"><abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr></a> page.</p>
+<h2 id="modify-pump">Modify Pump<a class="headerlink" href="#modify-pump" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you want to change the pump you are using, you must first delete the old pump.</p>
+<ul>
+<li>
+<p>If you are using Omnipod of the same pod type, you do not delete the pump, just Deactivate a pod and pair a new one.</p>
+</li>
+<li>
+<p>If you are switching between Omnipod and Omnipod DASH, you must first deactivate your current pod.</p>
+<ul>
+<li>After the pod has been deactivated, a new row will show at the bottom of the pod screen</li>
+<li>Tap on <code>Switch to other insulin delivery device</code> and follow the directions to complete the task</li>
+</ul>
+</li>
+<li>
+<p>If you are using Medtronic, scroll to the bottom of the pump screen and select <code>Delete Pump</code></p>
+</li>
+</ul>
+<p>The <a href="#pump-choices">Head-Up-Display</a> at the top of the Loop main screen will now show the add pump icon and you can <a href="#add-pump">select a new pump</a>.</p>
                 
               
               
