@@ -94,10 +94,26 @@ Click this link to continue with a [Medtronic](#medtronic) pump.
 
 After the detour for selecting a RileyLink for Omnipod, all other actions for Omnipod and Omnipod DASH are the same. Once a pod is paired, the Pump display will be the same, except the Omnipod screen has a section for the RileyLink Devices.
 
-### Pod Pairing
+For Omnipod (left) and Omnipod DASH (right), you should see `Pair Pod` screen.
 
-A [video is found here for pairing an Omnipod DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing). Once the pod starts priming, you may want to skip ahead in the video (priming takes a minute to complete). The Omnipod Common pairing protocol is the same. The difference is that Omnipod requires a RileyLink compatible device and Omnipod DASH does not. There are also slight differences in some of the text, e.g., Omnipod DASH uses a blue needle cap and Omnipod has a clear needle cap.
+![pair pod screens for Omnipod and Omnipod DASH](img/loop-3-pair-pod-duo.svg){width="500"}
+{align="center"}
 
+New Loopers or those who have never used pods before should hit `Cancel`, finish this page and later review the [Pair Pod](loop-3-omnipod.md#pair-pod) instructions and the rest of the [Omnipod Common](loop-3-omnipod.md) screens. Then, when they are comfortable, pair a pod.
+
+!!! tip "Try it with Water"
+    Some people are fine filling a pod with insulin, priming, attaching the pod and inserting a "live" pod.
+    
+    Other people want to be a little more cautious.
+    
+    * If you are the cautious type, fill a pod with water and let it drip into ziplock bag you carry around
+    * You can run parallel actions with Loop and your current dosing device
+    * You may enjoy reading [Rufus the Bear](https://www.loopandlearn.org/sl-rufus/)
+    * Just be sure the pod is not near skin when you hit `Insert Cannula`
+
+Experienced Loopers will probably pair a pod immediately, but should still review the new material.
+
+Continue to [Time Zone](#time-zone) and [Final Pump Steps](#final-pump-steps) on this page.
 
 ## Medtronic
 
@@ -113,33 +129,44 @@ If you've been following this page to add your Medtronic pump, you have complete
 
 !!! warning ""
 
-    **These steps are required for your Medtronic pump to work with Loop. Check with your users guide (can be found online if you don't have one) for more detailed instructions on your model of pump if you're not sure how to accomplish these steps.**
+    **Loop requires these settings on your Medtronic pump.**
+    
+    Check with your users guide (can be found online if you don't have one) for more detailed instructions on your model of pump if you're not sure how to accomplish these steps.
+    
+    If you have basal rates, insulin to sensitivity factor and carb ratios in your pump - these will be overwritten (using the Therapy Setting values) when you connect your pump to Loop. If those rates are important to you, record them prior to continuing.
 
-1. Turn off Patterns under the basal menu settings.
-2. If you have basal rates, insulin to sensitivity factor and carb ratios in your pump - these will be overwritten (using the Therapy Setting values) when you connect your pump to Loop. If those rates are important to you, record them prior to continuing.
-1. Set the Max Basal and Max Bolus values in the Medtronic pump to be greater than or equal to the values you enter in the Loop [Therapy Settings](loop-3-therapy.md#delivery-limits). Otherwise, Loop will not connect to your pump with the error message: `Pump Error. Max setting exceeded`.
-3. Set your pump's `Temp Basal Type` to `Insulin Rate (U/hr)`. Do NOT use percentage. Loop will not run unless your temp basal type is set to units/hour.
-5. Set Remote Devices to `ON` and enter any random ID (010101 will work - avoid using all zeros). This setting is found in the pump's Utilities menu (for x23 continue to Connect Devices, Remotes) and turn `ON` the Remote Options.
-6. Cancel any currently running extended or dual wave boluses.  Loop cannot loop with those running.
-7. Make sure the other settings in your pump, such as bolus wizard settings, are up-to-date so that if you stop using Loop, those settings will be accurate for non-Loop traditional pump use.
+- Turn off Patterns under the basal menu settings.
+- Set the Max Basal and Max Bolus values in the Medtronic pump to be greater than or equal to the values you enter in the Loop [Therapy Settings](loop-3-therapy.md#delivery-limits). Otherwise, Loop will not connect to your pump with the error message: `Pump Error. Max setting exceeded`.
+- Set your pump's `Temp Basal Type` to `Insulin Rate (U/hr)`.
+- Set Remote Devices to `ON` and enter any random ID (010101 will work - avoid using all zeros). This setting is found in the pump's Utilities menu (for x23 continue to Connect Devices, Remotes) and turn `ON` the Remote Options.
+- Cancel any currently running extended or dual wave boluses.  Loop cannot loop with those running.
 
 ### Connect Pump to Loop
 
-After all other steps are completed, you can connect your Medtronic pump to Loop.  
+The final step is to connect your Medtronic pump to Loop.  
 
-1. Make sure your RileyLink is turned on and nearby.
-2. Add your pump's region, color, and serial number. 
+- Make sure your RileyLink is turned on and nearby
+- Add your pump's region, color as shown in the graphic below
     * Note that some Canadian pumps use `CM` instead of `CA` for the region code.  Select `CA/CM` in the dropdown menu.
-3. Click the `Continue` button to connect the pump to Loop.
-    - If the [Delivery Limits](loop-3-therapy.md#delivery-limits) (max basal and max bolus) in the pump are lower than values you entered in Loop you will see an error message: `Pump Error. Max setting exceeded`.
-    - In this case, edit the values in the pump and click `Continue` to retry (this is faster than quitting, modifying Loop settings and then restarting this process).
-1. You will then be presented with a Pump Clock message, click the `Continue` button
-1. Finally you get a `Pump is ready for use screen`, click the `Continue` button
-1. If you have an x23 or x54 pump, there is one more step - highlighted below
-<br/><br/>
 
-![img/add_pump.png](../operation/loop-settings/img/add_pump.png){width="750"}
+![how to add country code and color for medtronic pump](img/loop-3-add-medtronic-1.svg){width="500"}
 {align="center"}
+
+- Add your pump's 6-digit serial number as shown in the graphic below
+- Click the `Connect` button to connect the pump to Loop.
+- The spinning icon continues until you see the blue check mark and `Continue` button
+    - If Loop is not successful at connecting, you will get an error message and stay on this screen
+    - If the [Delivery Limits](loop-3-therapy.md#delivery-limits) (max basal and max bolus) in the pump are lower than values you entered in Loop you will see an error message: `Pump Error. Max setting exceeded`.
+        - In this case, edit the values in the pump and then click `Connect` to retry.
+
+![how to enter serial number for a medtronic pump](img/loop-3-add-medtronic-2.svg){width="750"}
+{align="center"}
+
+- You will then be presented with two more screens, click `Continue` for each
+    - Pump Clock message
+    - Pump is ready for use screen
+- If you have an x23 or x54 pump, there is one more step - highlighted below
+
 
 !!! info "For x23 and x54 Medtronic pump users only"
     | <div style="width:144px"></div> ||
@@ -150,22 +177,10 @@ Now that your pump is paired with Loop, you should select the type of battery yo
 
 1. Select your pump's battery type (lithium or alakine)
 2. Leave the Preferred Data Source on Event History
-1. You have your choice on enabling My Sentry (saves phone battery) vs disabling My Sentry (saves OrangeLink battery)
+1. If you have a x23 or x54 pump, choose whether to use My Sentry (saves phone battery) or not (saves OrangeLink battery)
+    - For other Medtronic pumps, adjusting this setting does not do anything
 
 The Medtronic status and commands available are shown in the [Pump Setting](loop-3-medtronic.md) page.
-
-## Modify Pump
-
-You must first delete the old pump before you can switch to a new pump.
-
-* If you are using Omnipod or Omnipod DASH, you must first deactivate your current pod
-
-    * After the pod has been deactivated, a new row will show at the bottom of the pod screen
-    * Tap on `Switch to other insulin delivery device` and follow the directions to complete the task
-
-* If you are using Medtronic, scroll to the bottom of the pump screen and select `Switch to other insulin delivery device`
-
-The [Head-Up-Display](#pump-choices) at the top of the Loop main screen will now show the add pump icon and you can [select a new pump](#add-pump).
 
 ## Time Zone
 
@@ -189,9 +204,27 @@ Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour c
     * [Displays](loop-3-displays.md)
     * [Settings](loop-3-settings.md)
     * [Therapy Settings](loop-3-therapy.md)
-    * [RileyLink Screen](../operation/loop-settings/rileylink.md)
-    * [Omnipod Common Screen](loop-3-omnipod.md)
-    * [Medtronic Screen](loop-3-medtronic.md)
+    * [Optional Services](../operation/loop-settings/services.md)
 
-Now that you have paired your pump, you are ready to either add a [CGM](loop-3-cgm.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
+    Status and Commands for :
 
+    * [RileyLink](../operation/loop-settings/rileylink.md)
+    * [Omnipod Common](loop-3-omnipod.md)
+    * [Medtronic](loop-3-medtronic.md)
+
+Now that you have added your pump, you are ready to either add a [CGM](loop-3-cgm.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
+
+## Modify Pump
+
+If you want to change the pump you are using, you must first delete the old pump.
+
+* If you are using Omnipod of the same pod type, you do not delete the pump, just Deactivate a pod and pair a new one.
+
+* If you are switching between Omnipod and Omnipod DASH, you must first deactivate your current pod.
+
+    * After the pod has been deactivated, a new row will show at the bottom of the pod screen
+    * Tap on `Switch to other insulin delivery device` and follow the directions to complete the task
+
+* If you are using Medtronic, scroll to the bottom of the pump screen and select `Delete Pump`
+
+The [Head-Up-Display](#pump-choices) at the top of the Loop main screen will now show the add pump icon and you can [select a new pump](#add-pump).
