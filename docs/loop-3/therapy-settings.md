@@ -32,6 +32,10 @@ The order of Therapy Setting Information is:
 * Click on each of the limits: Max Basal and Max Bolus to display the picker wheel
 * You must first move the picker off the default value before it registers - you can restore the picker to the original level once it has been moved
 
+#### Maximum Basal Rate
+
+#### Maximum Bolus
+
 #### Insulin Model
 * This offers the selection of either the Adult or Child model which will later be applied to any of the "rapid acting" insulins, e.g., Novolog, Humalog or Apidra
 * Later on, during Add pump, you can enter the actual type of insulin used in the pump
