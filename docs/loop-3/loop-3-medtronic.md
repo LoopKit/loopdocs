@@ -33,7 +33,7 @@ If you request a manual bolus with Loop while the pump is suspended, Loop resume
 
 ### Change Time Zone
 
-During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to `Change Time Zone`. Please review [Time Zone](loop-3-pump.md#time-zone) for more details.
+During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to `Change Time Zone`. Please review [Time Zone](loop-3-add-pump.md#time-zone) for more details.
 
 If you notice a small clock symbol in upper right of the pump status icon, that indicates the time zone for the pump and phone are not the same.
 
