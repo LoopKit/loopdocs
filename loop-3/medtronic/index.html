@@ -1556,6 +1556,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#insulin-type" class="md-nav__link">
+    Insulin Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#use-mysentry" class="md-nav__link">
     Use MySentry
   </a>
@@ -1565,6 +1572,13 @@
           <li class="md-nav__item">
   <a href="#devices" class="md-nav__link">
     Devices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-pump" class="md-nav__link">
+    Delete Pump
   </a>
   
 </li>
@@ -1968,6 +1982,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#insulin-type" class="md-nav__link">
+    Insulin Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#use-mysentry" class="md-nav__link">
     Use MySentry
   </a>
@@ -1977,6 +1998,13 @@
           <li class="md-nav__item">
   <a href="#devices" class="md-nav__link">
     Devices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-pump" class="md-nav__link">
+    Delete Pump
   </a>
   
 </li>
@@ -2003,12 +2031,12 @@
 <h2 id="pump-settings">Pump Settings<a class="headerlink" href="#pump-settings" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>To bring up the Pump Settings display, tap on the pump icon in the Heads Up Display (<a href="../displays_v3/#heads-up-display">HUD</a>) or your connected pump in the Loop <a href="../settings/">Settings</a> screen.</p>
 <h2 id="medtronic-status-and-commands">Medtronic Status and Commands<a class="headerlink" href="#medtronic-status-and-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Medtronic status and commands are found in the Pump Settings screen shown in the graphic below. The top sections is configured at the time the pump is connected to Loop and can only be modified by deleting the pump and adding a pump.</p>
+<p>Medtronic status and commands are found in the Pump Settings screen shown in the graphic below. The top section is configured at the time the pump is connected to Loop. You cannot edit those lines.</p>
 <p align="center"><img alt="Medtronic Pump Settings screen" src="../img/loop-3-pump-setting-mdt.svg" width="250" /></p>
 <h3 id="suspend-delivery">Suspend Delivery<a class="headerlink" href="#suspend-delivery" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Tapping on the <code>Suspend Delivery</code> row will suspend all insulin delivery; basals, temp basals, and boluses in progress. When you press suspend delivery, the label changes to <code>Suspending</code> while Loop is communicating with the pump. When the label changes to <code>Resume Delivery</code>, all insulin delivery is stopped until the user resumes using the HUD Status Row, the Pump Settings screen or on the pump itself.</p>
-<p>As long as the spinning icon is spinning - Loop is trying to execute the Suspend or Resume command. If it fails to complete, a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert will appear that says "Error Suspending" or "Failed to Resume Insulin Delivery" which you must acknowledge. You must then repeat the command to try again. Make sure your <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> device is powered on and close to the phone and pump.</p>
-<p>The user is alerted the pump is suspended by the <a href="../displays_v3/#pump-status-icon">Pump Status</a> icon.</p>
+<p>Tapping on the <code>Suspend Delivery</code> row will suspend all insulin delivery: basals, temp basals, and boluses in progress. When you press <code>Suspend Delivery</code>, the label changes to <code>Suspending</code> while Loop is communicating with the pump. When the label changes to <code>Resume Delivery</code>, all insulin delivery is stopped until the user resumes using the HUD Status Row, the Pump Settings screen or on the pump itself.</p>
+<p>As long as the spinning icon is spinning, Loop is trying to execute the Suspend or Resume command. If it fails to complete, a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert will appear that says "Error Suspending" or "Failed to Resume Insulin Delivery" which you must acknowledge. You must then repeat the command to try again. Make sure your <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> device is powered on and close to the phone and pump.</p>
+<p>The user is alerted that pump is suspended by the <a href="../displays_v3/#pump-status-icon">Pump Status</a> icon.</p>
 <p><img alt="pump status icon when suspended" src="../img/loop-3-pump-alert-suspended.svg" width="150" /></p>
 <p>When the phone is in portrait mode, the <a href="../displays_v3/#hud-status-row">HUD Status Row</a> - message is visible and can be tapped to resume delivery.</p>
 <p><img alt="status row message when pump is suspended" src="../img/status-row-pump-suspended.svg" width="300" /></p>
@@ -2021,13 +2049,27 @@
 <h3 id="pump-battery-type">Pump Battery Type<a class="headerlink" href="#pump-battery-type" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The type of battery used in the Medtronic pump affects how Loop interprets the <a href="../../operation/features/battery/#pump-battery">battery level for the pump</a>.</p>
 <h3 id="preferred-data-source">Preferred Data Source<a class="headerlink" href="#preferred-data-source" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Leave the Preferred Data Source set to on Event History for proper functioning of Loop.</p>
-<p><strong>Event History must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.</strong>  Event History must also be selected so that when you prime your tubing, the insulin used for priming does NOT contribute to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> during site changes. Please just leave the Preferred Data Source on Event History.</p>
+<p>Leave the Preferred Data Source set to on Event History.</p>
+<h3 id="insulin-type">Insulin Type<a class="headerlink" href="#insulin-type" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You selected <a href="../add-pump/#insulin-type">insulin type</a> when connecting to this pump.</p>
+<p>Use this row if you switch to a different type of insulin.</p>
+<ul>
+<li>The model used by Loop for all the rapid insulin brands are the same, but it's a good idea to record if you change brands - some people notice differences</li>
+<li>If you switch between rapid and ultra-rapid insulin, you need to let Loop know so it will use the appropriate model</li>
+</ul>
 <h3 id="use-mysentry">Use MySentry<a class="headerlink" href="#use-mysentry" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Using the MySentry feature on some Medtronic pumps when using an <abbr title="a radio-frequency device that enables Loop to control your pump">OrangeLink</abbr> causes the batteries to die quickly.  This option allows you to turn off MySentry within the Loop app.</p>
 <p align="center"><img alt="MySentry selection screen for enabling or disabling the option" src="../../operation/loop-settings/img/mdt-my-sentry-v225.png" width="250" /></p>
 <h3 id="devices">Devices<a class="headerlink" href="#devices" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This allows access to the <a href="../../operation/loop-settings/rileylink/"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr></a> screen for each connected <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device.</p>
+<h3 id="delete-pump">Delete Pump<a class="headerlink" href="#delete-pump" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you want to switch to a different pump you must first delete this one:</p>
+<ul>
+<li>Tap on <code>Delete Pump</code></li>
+<li>Acknowledge you really mean it when asked by tapping <code>Delete Pump</code> again</li>
+<li>Add a new pump</li>
+</ul>
+<p>For more information, follow this link: <a href="../add-pump/#modify-pump">Modify Pump</a>.</p>
                 
               
               
