@@ -204,6 +204,7 @@ Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour c
     * [Displays](loop-3-displays.md)
     * [Settings](loop-3-settings.md)
     * [Therapy Settings](loop-3-therapy.md)
+    * [Optional Services](../operation/loop-settings/services.md)
 
     Status and Commands for :
 

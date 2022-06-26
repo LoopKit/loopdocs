@@ -116,6 +116,7 @@ The graphic below shows the result of tapping on the CGM icon when using a Dexco
     * [Displays](loop-3-displays.md)
     * [Settings](loop-3-settings.md)
     * [Therapy Settings](loop-3-therapy.md)
+    * [Optional Services](../operation/loop-settings/services.md)
 
     Status and Commands for :
 
