@@ -1552,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-add-cgm/" class="md-nav__link">
+      <a href="../add-cgm/" class="md-nav__link">
         Loop 3 Add CGM
       </a>
     </li>
@@ -1566,7 +1566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-add-pump/" class="md-nav__link">
+      <a href="../add-pump/" class="md-nav__link">
         Loop 3 Add Pump
       </a>
     </li>
@@ -1580,7 +1580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-displays/" class="md-nav__link">
+      <a href="../displays_v3/" class="md-nav__link">
         Loop 3 Displays
       </a>
     </li>
@@ -1594,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-settings/" class="md-nav__link">
+      <a href="../settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
     </li>
@@ -1608,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-therapy/" class="md-nav__link">
+      <a href="../therapy-settings/" class="md-nav__link">
         Loop 3 Therapy Settings
       </a>
     </li>
@@ -1622,7 +1622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-omnipod/" class="md-nav__link">
+      <a href="../omnipod/" class="md-nav__link">
         Loop 3 Omnipod
       </a>
     </li>
@@ -1636,7 +1636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-medtronic/" class="md-nav__link">
+      <a href="../medtronic/" class="md-nav__link">
         Loop 3 Medtronic
       </a>
     </li>
@@ -1650,7 +1650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loop-3-features/" class="md-nav__link">
+      <a href="../features/" class="md-nav__link">
         Loop 3 Features
       </a>
     </li>
@@ -2131,7 +2131,7 @@
 <p>After the release, this section will be replaced with the words: If this is your first time using Loop - congratulations!</p>
 </div>
 <p>It is a good idea to review this page, <em>and the rest of what is now the Loop 3 Section (and will become the Set Up App section once Loop-dev is released),</em> before pressing any buttons on your phone with your new Loop 3 app.</p>
-<p>As soon as your app builds on your phone, you are guided through the set up process - this is called onboarding. As part of onboarding, there are information screens for each <code>Therapy Setting</code>. You are "forced" to acknowledge each screen while onboarding. If you later want to review those informational screens again - they are available on your phone through the <a href="../loop-3-therapy/"><code>Therapy Settings</code></a> screen.</p>
+<p>As soon as your app builds on your phone, you are guided through the set up process - this is called onboarding. As part of onboarding, there are information screens for each <code>Therapy Setting</code>. You are "forced" to acknowledge each screen while onboarding. If you later want to review those informational screens again - they are available on your phone through the <a href="../therapy-settings/"><code>Therapy Settings</code></a> screen.</p>
 <p>This link shows a <a href="https://drive.google.com/file/d/1NkS-YGREFn1UBmBbOjsD2Yy0ZUyEYM1l/view?usp=sharing">video of onboarding</a> with the pre-release version under test in March 2022.</p>
 <h3 id="entering-and-editing-values">Entering and Editing Values<a class="headerlink" href="#entering-and-editing-values" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>There are some mechanics associated with entering and editing values with Loop 3. Come back to this section if you have trouble later when you want to enter or modify a setting.</p>
@@ -2227,19 +2227,19 @@
 <ul>
 <li>This is yet another reminder to start with <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> after you enter what you think are good settings for Basal, Insulin Sensitivity Factor and Carb Ratio.</li>
 <li>But wait - what are these other settings and what do they mean?<ul>
-<li>A brief summary of each therapy setting is provided on this page, but there is a more detailed <a href="../loop-3-therapy/">Therapy Settings</a> page as well for your review.</li>
+<li>A brief summary of each therapy setting is provided on this page, but there is a more detailed <a href="../therapy-settings/">Therapy Settings</a> page as well for your review.</li>
 </ul>
 </li>
 </ul>
 <h4 id="glucose-safety-limit"><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr><a class="headerlink" href="#glucose-safety-limit" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If Loop predicts that your glucose will go below the <a href="../loop-3-therapy/#glucose-safety-limit"><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr></a> at any time in the next 3 hours and Loop is in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr>, it will set a temporary basal rate of 0 U/hr in an attempt to prevent that future low.</p>
+<p>If Loop predicts that your glucose will go below the <a href="../therapy-settings/#glucose-safety-limit"><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr></a> at any time in the next 3 hours and Loop is in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr>, it will set a temporary basal rate of 0 U/hr in an attempt to prevent that future low.</p>
 <p>If you ask Loop for a bolus recommendation, and the current prediction is that your glucose will go below the <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr> at any time in the next 3 hours, no bolus will be recommended.</p>
-<p>There are some related settings: <a href="../loop-3-therapy/#correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr></a> and <a href="../loop-3-therapy/#pre-meal-range"><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a>. The <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr> can never be higher than the lowest of those ranges.</p>
+<p>There are some related settings: <a href="../therapy-settings/#correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr></a> and <a href="../therapy-settings/#pre-meal-range"><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a>. The <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr> can never be higher than the lowest of those ranges.</p>
 <h4 id="correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr><a class="headerlink" href="#correction-range" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The <a href="../loop-3-therapy/#correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr></a> is the glucose range that you would like Loop to use when providing automated corrections. Correction range is not necessarily the same glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but use a desired glucose range of 70-180 mg/dL (3.9-10 mmol/L) when discussing things with your endo about "time in range".</p>
-<p>If you ask Loop for a <a href="../loop-3-features/#manual-bolus">manual bolus recommendation</a> while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit. Note - this is only if you request the bolus recommendation.  Loop will <strong>not</strong> automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of the correction range. </p>
+<p>The <a href="../therapy-settings/#correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr></a> is the glucose range that you would like Loop to use when providing automated corrections. Correction range is not necessarily the same glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but use a desired glucose range of 70-180 mg/dL (3.9-10 mmol/L) when discussing things with your endo about "time in range".</p>
+<p>If you ask Loop for a <a href="../features/#manual-bolus">manual bolus recommendation</a> while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit. Note - this is only if you request the bolus recommendation.  Loop will <strong>not</strong> automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of the correction range. </p>
 <h4 id="pre-meal-range"><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr><a class="headerlink" href="#pre-meal-range" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The <a href="../loop-3-therapy/#pre-meal-range"><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a>, which is optional, can be used as an easy way to get a small amount of insulin delivered before a meal to help control post-meal glucose spikes. If you choose not to enter a value, the <a href="../../operation/features/premeal/">pre-meal icon</a> in the toolbar will be inactive. If you enter a range and later prefer not to have one, you can remove it later.</p>
+<p>The <a href="../therapy-settings/#pre-meal-range"><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a>, which is optional, can be used as an easy way to get a small amount of insulin delivered before a meal to help control post-meal glucose spikes. If you choose not to enter a value, the <a href="../../operation/features/premeal/">pre-meal icon</a> in the toolbar will be inactive. If you enter a range and later prefer not to have one, you can remove it later.</p>
 <p>If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), for example, Loop will give you an extra push to get you to the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the <a href="../../operation/features/premeal/">pre-meal icon</a> in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.</p>
 <h4 id="basal-rates">Basal Rates<a class="headerlink" href="#basal-rates" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Only one basal schedule may be configured in the Loop app and the schedule must start at midnight. </p>
@@ -2267,20 +2267,20 @@
 </ul>
 </div>
 <h4 id="maximum-basal-rate">Maximum Basal Rate<a class="headerlink" href="#maximum-basal-rate" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Maximum basal rate will cap the the maximum temporary basal rate that the Loop is allowed to issue to meet your correction range when you are in closed loop and you have selected a <a href="../loop-3-settings/#dosing-strategy"><abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></a> of Temp Basal Only. Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. When you are first beginning to use Loop, it is wise to start conservative (low) in setting your maximum basal rate. </p>
+<p>Maximum basal rate will cap the the maximum temporary basal rate that the Loop is allowed to issue to meet your correction range when you are in closed loop and you have selected a <a href="../settings/#dosing-strategy"><abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></a> of Temp Basal Only. Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. When you are first beginning to use Loop, it is wise to start conservative (low) in setting your maximum basal rate. </p>
 <h4 id="maximum-bolus"><strong>Maximum Bolus</strong><a class="headerlink" href="#maximum-bolus" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Enter your desired single bolus maximum here. For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a sub 10 U maximum like 9 or 9.9 U to avoid accidentally typing in a bolus of 10 instead of 1.0 U.</p>
 <h4 id="insulin-model">Insulin Model<a class="headerlink" href="#insulin-model" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>When Loop was originally developed, the fastest insulins available, also know as "rapid acting", had published data for behavior in adults and children. Therefore, Loop offers an Adult or Child model as part of onboarding. If you use a newer "ultra rapid" insulin, the model selected here is irrelevant, but a selection is required.</p>
-<p>The specific type of insulin used is set when you select or edit the configuration of your <a href="../loop-3-add-pump/#insulin-type">pump</a>.</p>
+<p>The specific type of insulin used is set when you select or edit the configuration of your <a href="../add-pump/#insulin-type">pump</a>.</p>
 <h4 id="carb-ratios">Carb Ratios<a class="headerlink" href="#carb-ratios" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Your <a href="../loop-3-therapy/#carb-ratios">Carb Ratio</a> is the number of grams of carbohydrates covered by one unit of insulin.</p>
+<p>Your <a href="../therapy-settings/#carb-ratios">Carb Ratio</a> is the number of grams of carbohydrates covered by one unit of insulin.</p>
 <ul>
 <li>At least one carb ratio must be entered</li>
 <li>A daily schedule with varying carb ratio at different times of day can be entered</li>
 </ul>
 <h4 id="insulin-sensitivities">Insulin Sensitivities<a class="headerlink" href="#insulin-sensitivities" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Your <a href="../loop-3-therapy/#insulin-sensitivities">Insulin Sensitivity Factor</a> refers to the drop in glucose expected from one unit of insulin over the entire duration of insulin activity. It may be different than what was used as a correction factor with shots or manual pumping. Loop uses these value(s) every 5 minutes when calculating predicted glucose levels.</p>
+<p>Your <a href="../therapy-settings/#insulin-sensitivities">Insulin Sensitivity Factor</a> refers to the drop in glucose expected from one unit of insulin over the entire duration of insulin activity. It may be different than what was used as a correction factor with shots or manual pumping. Loop uses these value(s) every 5 minutes when calculating predicted glucose levels.</p>
 <ul>
 <li>At least one insulin sensitivity factor (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr>) must be entered</li>
 <li>A daily schedule with varying <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr> at different times of day can be entered</li>
@@ -2306,8 +2306,8 @@
 <h2 id="cgm-and-pump"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Pump<a class="headerlink" href="#cgm-and-pump" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For new Loopers, it is now time to add a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and a pump.  Follow these links for instructions.</p>
 <ul>
-<li>Add a <a href="../loop-3-add-cgm/"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a></li>
-<li>Add a <a href="../loop-3-add-pump/">Pump</a></li>
+<li>Add a <a href="../add-cgm/"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a></li>
+<li>Add a <a href="../add-pump/">Pump</a></li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Medtronic <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></p>
@@ -2395,7 +2395,7 @@
       
       
         
-        <a href="../loop-3-add-cgm/" class="md-footer__link md-footer__link--next" aria-label="Next: Loop 3 Add CGM" rel="next">
+        <a href="../add-cgm/" class="md-footer__link md-footer__link--next" aria-label="Next: Loop 3 Add CGM" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
