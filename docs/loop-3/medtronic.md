@@ -2,7 +2,7 @@
 
 ## Pump Settings
 
-To bring up the Pump Settings display, tap on the pump icon in the Heads Up Display ([HUD](loop-3-displays.md#heads-up-display)) or your connected pump in the Loop [Settings](loop-3-settings.md) screen.
+To bring up the Pump Settings display, tap on the pump icon in the Heads Up Display ([HUD](displays_v3.md#heads-up-display)) or your connected pump in the Loop [Settings](settings.md) screen.
 
 ## Medtronic Status and Commands
 
@@ -18,11 +18,11 @@ Tapping on the `Suspend Delivery` row will suspend all insulin delivery; basals,
 
 As long as the spinning icon is spinning - Loop is trying to execute the Suspend or Resume command. If it fails to complete, a modal alert will appear that says "Error Suspending" or "Failed to Resume Insulin Delivery" which you must acknowledge. You must then repeat the command to try again. Make sure your RileyLink device is powered on and close to the phone and pump.
 
-The user is alerted the pump is suspended by the [Pump Status](loop-3-displays.md#pump-status-icon) icon.
+The user is alerted the pump is suspended by the [Pump Status](displays_v3.md#pump-status-icon) icon.
 
 ![pump status icon when suspended](img/loop-3-pump-alert-suspended.svg){width="150"}
 
-When the phone is in portrait mode, the [HUD Status Row](loop-3-displays.md#hud-status-row) - message is visible and can be tapped to resume delivery.
+When the phone is in portrait mode, the [HUD Status Row](displays_v3.md#hud-status-row) - message is visible and can be tapped to resume delivery.
 
 ![status row message when pump is suspended](img/status-row-pump-suspended.svg){width="300"}
 
@@ -33,7 +33,7 @@ If you request a manual bolus with Loop while the pump is suspended, Loop resume
 
 ### Change Time Zone
 
-During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to `Change Time Zone`. Please review [Time Zone](loop-3-add-pump.md#time-zone) for more details.
+During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to `Change Time Zone`. Please review [Time Zone](add-pump.md#time-zone) for more details.
 
 If you notice a small clock symbol in upper right of the pump status icon, that indicates the time zone for the pump and phone are not the same.
 

@@ -1,6 +1,6 @@
 # Settings
 
-The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the [Toolbar](loop-3-displays.md#toolbar) on the app [home screen](loop-3-displays.md#main-loop-screen).
+The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the [Toolbar](displays_v3.md#toolbar) on the app [home screen](displays_v3.md#main-loop-screen).
 
 ![settings screen for loop 3](img/loop-3-settings.svg){width="250"}
 {align="center"}
@@ -19,7 +19,7 @@ No automatic (closed loop) adjustment of insulin will occur and the slider will 
 
 * No Pump added
 * No CGM added
-* User set a [Manual Temp Basal](loop-3-omnipod.md#manual-temp-basal)
+* User set a [Manual Temp Basal](omnipod.md#manual-temp-basal)
 * User suspended insulin delivery (planned - might not be in effect yet)
 
 ### Recommended Insulin
@@ -29,9 +29,9 @@ With every loop cycle - typically every 5 minutes - Loop updates the glucose pre
 * CGM or Fingerstick glucose value (no older than 15 minutes)
 * COB from meal entries
 * IOB from previous insulin delivery
-* Your [Therapy Settings](loop-3-therapy.md)
+* Your [Therapy Settings](therapy-settings.md)
 
-Based on this prediction, Loop calculates a recommended restriction in basal to raise the prediction to target range or a recommended bolus, subject to Delivery Limits, to lower the prediction to target range or allows current basal to continue. The glucose prediction is shown in the [Glucose Chart](loop-3-displays.md#charts) along with the measured glucose values.
+Based on this prediction, Loop calculates a recommended restriction in basal to raise the prediction to target range or a recommended bolus, subject to Delivery Limits, to lower the prediction to target range or allows current basal to continue. The glucose prediction is shown in the [Glucose Chart](displays_v3.md#charts) along with the measured glucose values.
 
 * When in Open Loop, no automated action is taken.
 * When in Closed Loop, automated action is taken based on the selected Dosing Strategy.
@@ -70,15 +70,15 @@ As with all Loop versions, you can manually bolus at any time by pressing the Bo
 
 The Configuration section allows entry to the following screens:
 
-### [Therapy Settings](loop-3-therapy.md)
+### [Therapy Settings](therapy-settings.md)
 
 ### Pump
 
-* [Add or Modify Pump](loop-3-add-pump.md)
-* [Omnipod or Omnipod DASH](loop-3-omnipod.md) Status and Commands
-* [Medtronic](loop-3-medtronic.md) Status and Commands
+* [Add or Modify Pump](add-pump.md)
+* [Omnipod or Omnipod DASH](omnipod.md) Status and Commands
+* [Medtronic](medtronic.md) Status and Commands
 
-### [CGM Settings](loop-3-add-cgm.md)
+### [CGM Settings](add-cgm.md)
 
 ## Services
 

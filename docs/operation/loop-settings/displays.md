@@ -5,7 +5,7 @@ This section of the docs will go over the Loop displays available and what infor
 !!! warning "Loop 3 Displays"
     * With Loop-dev (soon to be Loop 3), the displays can differ significantly from those in Loop v2.2.x.
     * The charts and toolbar are similar, but even those have extra features.
-    * If you are using Loop-dev, please refer to [Loop 3 Displays](../../loop-3/loop-3-displays.md).
+    * If you are using Loop-dev, please refer to [Loop 3 Displays](../../loop-3/displays_v3.md).
 
 ## Status Screen
 
