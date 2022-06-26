@@ -188,7 +188,7 @@ Enter your desired single bolus maximum here. For safety, don't set a maximum bo
 
 When Loop was originally developed, the fastest insulins available, also know as "rapid acting", had published data for behavior in adults and children. Therefore, Loop offers an Adult or Child model as part of onboarding. If you use a newer "ultra rapid" insulin, the model selected here is irrelevant, but a selection is required.
 
-The specific type of insulin used is set when you select or edit the configuration of your [pump](loop-3-pump.md#insulin-type).
+The specific type of insulin used is set when you select or edit the configuration of your [pump](loop-3-add-pump.md#insulin-type).
 
 #### Carb Ratios
 
@@ -234,8 +234,8 @@ Once you save settings, Loop asks to send notifications and use Bluetooth. You n
 
 For new Loopers, it is now time to add a CGM and a pump.  Follow these links for instructions.
 
-* Add a [CGM](loop-3-cgm.md)
-* Add a [Pump](loop-3-pump.md)
+* Add a [CGM](loop-3-add-cgm.md)
+* Add a [Pump](loop-3-add-pump.md)
 
 !!! info "Medtronic CGM"
 

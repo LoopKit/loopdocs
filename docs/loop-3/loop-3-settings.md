@@ -74,11 +74,11 @@ The Configuration section allows entry to the following screens:
 
 ### Pump
 
-* [Add or Modify Pump](loop-3-pump.md)
+* [Add or Modify Pump](loop-3-add-pump.md)
 * [Omnipod or Omnipod DASH](loop-3-omnipod.md) Status and Commands
 * [Medtronic](loop-3-medtronic.md) Status and Commands
 
-### [CGM Settings](loop-3-cgm.md)
+### [CGM Settings](loop-3-add-cgm.md)
 
 ## Services
 

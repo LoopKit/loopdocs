@@ -212,7 +212,7 @@ Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour c
     * [Omnipod Common](loop-3-omnipod.md)
     * [Medtronic](loop-3-medtronic.md)
 
-Now that you have added your pump, you are ready to either add a [CGM](loop-3-cgm.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
+Now that you have added your pump, you are ready to either add a [CGM](loop-3-add-cgm.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
 
 ## Modify Pump
 
