@@ -17,13 +17,17 @@ Tapping on the `Suspend Delivery` row will suspend all insulin delivery: basals,
 
 As long as the spinning icon is spinning, Loop is trying to execute the Suspend or Resume command. If it fails to complete, a modal alert will appear that says "Error Suspending" or "Failed to Resume Insulin Delivery" which you must acknowledge. You must then repeat the command to try again. Make sure your RileyLink device is powered on and close to the phone and pump.
 
-The user is alerted that pump is suspended by the [Pump Status](displays_v3.md#pump-status-icon) icon.
+When the phone is in portrait mode, so the HUD is visible:
+
+* The user is alerted that pump is suspended by the HUD [Pump Status Icon](displays_v3.md#pump-status-icon).
 
 ![pump status icon when suspended](img/loop-3-pump-alert-suspended.svg){width="150"}
+{align="center"}
 
-When the phone is in portrait mode, the [HUD Status Row](displays_v3.md#hud-status-row) - message is visible and can be tapped to resume delivery.
+* The [HUD Status Row](displays_v3.md#hud-status-row) message can be tapped to resume delivery.
 
 ![status row message when pump is suspended](img/status-row-pump-suspended.svg){width="300"}
+{align="center"}
 
 You can still suspend and resume insulin on the pump itself.  It may take until the next Loop cycle (typically less than 5 minutes), but Loop will detect that the pump is suspended or basal is resumed and the HUD Status Row will update.
 
