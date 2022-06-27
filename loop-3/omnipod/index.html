@@ -1506,13 +1506,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#omnipod-common" class="md-nav__link">
-    Omnipod Common
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#pod-status" class="md-nav__link">
     Pod Status
   </a>
@@ -2020,13 +2013,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#omnipod-common" class="md-nav__link">
-    Omnipod Common
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#pod-status" class="md-nav__link">
     Pod Status
   </a>
@@ -2179,7 +2165,7 @@
 <h2 id="pair-pod">Pair Pod<a class="headerlink" href="#pair-pod" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You'll be pairing a pod every 2 or 3 days (max pod life is 80 hours).</p>
 <p>You'll see this screen every time you ask Loop to <code>Pair New Pod</code>.</p>
-<p>The Omnipod Common pairing protocol is the same for all pods. The difference is that Omnipod requires a <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device and Omnipod DASH does not. There are also slight differences in some of the text, e.g., Omnipod DASH uses a blue needle cap and Omnipod has a clear needle cap.</p>
+<p>The Omnipod Common pairing protocol is the same for all pods. The difference is that Omnipod requires a <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device and Omnipod DASH does not. There are also slight differences in some of the text and graphics, e.g., Omnipod DASH uses a blue needle cap and Omnipod has a clear needle cap.</p>
 <p>Graphic below shows the Pair Pod screen for Omnipod (left) and Omnipod DASH (right).</p>
 <p align="center"><img alt="pair pod screens for Omnipod and Omnipod DASH" src="../img/loop-3-pair-pod-duo.svg" width="500" /></p>
 <div class="admonition abstract">
@@ -2187,7 +2173,7 @@
 <p>It makes sure you are really ready to do the insertion.</p>
 <p>Please watch the video to see the full process before pairing your first pod.</p>
 </div>
-<p>A <a href="https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing">video is found here for pairing a DASH pod</a>. Once the pod starts priming, you may want to skip ahead in the video (it takes about a minute to prime).</p>
+<p>A <a href="https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing">video is found here for pairing a DASH pod</a>. Once the pod starts priming in the video, you may want to skip forward (it takes about a minute to prime).</p>
 <div class="admonition danger">
 <p class="admonition-title">Keep Gear Close</p>
 <ul>
@@ -2202,16 +2188,14 @@
 </li>
 </ul>
 </div>
-<p>The Screen that says Setup Complete allows you to change the Scheduled Reminder for this pod if you want a different reminder (including none) from your usual setting.</p>
+<p>The Screen that says Setup Complete allows you to change the Scheduled Reminder for this pod if you want a different reminder time (including none) from your usual setting.</p>
 <ul>
 <li>This only changes the reminder for this one pod</li>
 <li>If you want to change all future reminders, tap on Notifications to modify the Reminder Default</li>
 <li>In that same location, you can also change notification for the current pod</li>
 </ul>
-<h2 id="omnipod-common">Omnipod Common<a class="headerlink" href="#omnipod-common" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>With the exception of the <code>Devices</code> section that is found only on the Omnipod screen, the Omnipod and Omnipod DASH screens are identical.</p>
 <h2 id="pod-status">Pod Status<a class="headerlink" href="#pod-status" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The graphic below indicates, with the dashed green outline, the <code>Device</code> portion found only for the Omnipod.  All other features of the screen are common.</p>
+<p>The Pod Status screen is shown in the graphic below. The dashed green outline indicates the <code>Device</code> portion that is found only for the Omnipod.  All other features of the screen are common for Omnipod and Omnipod DASH.</p>
 <p align="center"><img alt="consolidated view of the status and command screen for Omnipod or Omnipod DASH pumps" src="../img/loop-3-omnipod-screen.svg" width="250" /></p>
 <h3 id="play-beeps">Play Beeps<a class="headerlink" href="#play-beeps" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want to make sure Loop can talk to your pod, click on the sound icon (highlighted by the red box) in the graphic above. If the icon is greyed out - that means Loop is having a communication issue reaching your pod. (More on this in the <a href="#alert-screens">Alert Screens</a> section.)</p>
@@ -2228,15 +2212,15 @@
 <li>Once you are on the final day, the time remaining until expiration starts to report in Hours and Minutes</li>
 <li>The solid bar is proportional to pod hours since activation<ul>
 <li>It is blue for the first 48 hours</li>
-<li>It is orange for the last 24 hours and also appears in the HUD Pod Status icon</li>
-<li>After expiration, a full-width red bar is shown here and in the HUD Pod Status icon</li>
+<li>It is orange for the last 24 hours and also appears in the <a href="../displays_v3/#pump-status-icon">HUD Pump Status</a> icon</li>
+<li>After expiration, a full-width red bar is shown here and in the HUD Pump Status icon</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Once the pod officially expires, at 72 hours, there is an 8 hour grace period<ul>
 <li>Insulet does not guarantee the pod will keep working that long, but it often does</li>
-<li>A note will appear on the Pod screen with count-down text:<ul>
+<li>A note will appear on the <a href="#pod-status">Pod Status</a> screen with count-down text:<ul>
 <li>Change pod now. Insulin delivery will stop in HH hours, MM minutes or when no more insulin remains</li>
 </ul>
 </li>
@@ -2244,7 +2228,7 @@
 </li>
 </ul>
 <h3 id="basal-report">Basal Report<a class="headerlink" href="#basal-report" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The next row changes the label depending on the situation. In all cases, the current rate is reported.</p>
+<p>The next row changes the label depending on the situation. In all cases, the current basal rate is reported.</p>
 <table>
 <thead>
 <tr>
@@ -2264,7 +2248,7 @@
 </tbody>
 </table>
 <h3 id="insulin-remaining">Insulin Remaining<a class="headerlink" href="#insulin-remaining" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Pods do not report reservoir values until less than 50 U are left.</p>
+<p>Pods start reporting reservoir values when 50 U are left.</p>
 <table>
 <thead>
 <tr>
@@ -2279,29 +2263,29 @@
 </tr>
 <tr>
 <td>Value U</td>
-<td>Pod reservoir is estimated to be at least as great as the indicated value. It updates that value by counting pulses.</td>
+<td>Pod reservoir is estimated to be at least as great as the indicated value.</td>
 </tr>
 <tr>
 <td>0 U</td>
-<td>Pod will attempt to deliver 4 more units after it reports 0 U. This is not guaranteed. The pod senses when it is not successful delivering pulses and that can happen before 4 U have been delivered.</td>
+<td>Pod will attempt to deliver up to 4 U after it reports 0 U.<br><br> This is not guaranteed. The pod senses when it is not successful delivering pulses and that can happen before 4 U have been delivered.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="activity">Activity<a class="headerlink" href="#activity" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="suspend-delivery">Suspend Delivery<a class="headerlink" href="#suspend-delivery" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>In general, you are best off choosing <a href="#manual-temp-basal">Manual Temp Basal</a> of 0 U/hr instead of suspend.</p>
-<p>Tapping on <code>Suspend Delivery</code> brings up a timed reminder screen. You can choose to be reminded (via a beep on the pod itself) with 4 choices (plus a cancel button):</p>
+<p>You may want to consider using a <a href="#manual-temp-basal">Manual Temp Basal</a> of 0 U/hr instead of suspend.</p>
+<p>Tapping on <code>Suspend Delivery</code> brings up a timed reminder screen. You can choose to be reminded (via a beep on the pod itself) with 4 choices (or you can cancel the request):</p>
 <ul>
 <li>30 minutes</li>
 <li>1 hour</li>
 <li>1 hour 30 minutes</li>
 <li>2 hours</li>
 </ul>
-<p>After you select the reminder time, Loop issues a command to the pod to halt all insulin delivery: basals, temp basals, and boluses in progress. The label on the <code>Suspend Delivery</code> row changes to <code>Suspending</code> while Loop is communicating with the pump. When the label changes to <code>Resume Delivery</code>, all insulin delivery is stopped until the user resumes using the HUD Status Row or the Pod Status screen.</p>
-<p>As long as the spinning icon is spinning, Loop is trying to execute the Suspend or Resume command. If it fails to complete, a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert will appear that says "Error Suspending" or "Failed to Resume Insulin Delivery" which you must acknowledge. You must then repeat the command to try again. Make sure your <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> device is powered on and close to the phone and pump.</p>
+<p>After you select the reminder time, Loop issues a command to the pod to halt all insulin delivery: basals, temp basals, and boluses in progress. The label on the <code>Suspend Delivery</code> row changes to <code>Suspending</code> while Loop is communicating with the pump. When the label changes to <code>Resume Delivery</code>, all insulin delivery is stopped until the user resumes using the <a href="../displays_v3/#hud-status-row">HUD Status Row</a> or the <a href="#pod-status">Pod Status</a> screen.</p>
+<p>As long as the spinning icon is spinning, Loop is trying to execute the Suspend or Resume command. If it fails to complete, a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert will appear that says "Error Suspending" or "Failed to Resume Insulin Delivery" which you must acknowledge. You must then repeat the command to try again. For Omnipod, make sure your <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> device is powered on and close to the phone and pod.</p>
 <p>When the phone is in portrait mode, so the HUD is visible:</p>
 <ul>
-<li>The user is alerted that pump is suspended by the <a href="../displays_v3/#pump-status-icon">Pump Status</a> icon.</li>
+<li>The user is alerted that pump is suspended by the HUD <a href="../displays_v3/#pump-status-icon">Pump Status Icon</a>.</li>
 </ul>
 <p align="center"><img alt="pump status icon when suspended" src="../img/loop-3-pump-alert-suspended.svg" width="150" /></p>
 <ul>
@@ -2309,12 +2293,22 @@
 </ul>
 <p align="center"><img alt="status row message when pump is suspended" src="../img/status-row-pump-suspended.svg" width="300" /></p>
 <p>If you request a manual bolus with Loop while a pod is suspended, Loop will send a notification that Bolus Failed with instructions that Pump is Suspended, Resume Delivery.  In other words, you must resume delivery before you will be allowed to bolus with pods.</p>
-<p>At the end of the reminder time, an alert beep is issued by the pod and a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert will be provided on the Loop app - which you must acknowledge to silence future pod alerts.</p>
+<p>At the end of the reminder time, an alert beep is issued by the pod and a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert will be provided on the Loop app. You must acknowledge the <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert on the phone to silence future pod alerts.</p>
+<div class="admonition danger">
+<p class="admonition-title">Manually Resume Insulin Delivery</p>
+<p>The halt of all insulin delivery continues until you manually resume. There is no automatic resumption of basal insulin from a suspend command.</p>
+<p>If you select a Manual Temp Basal command of 0 U/hr instead of Suspend:</p>
+<ul>
+<li>Basal Delivery automatically resumes at the end of the selected duration without need for Loop to command it</li>
+<li>At the end of the duration, Loop will restore <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr>, if you were in closed loop when you issued the Manual Temp Basal command</li>
+<li>There are no beeps on the pod to remind you to resume insulin delivery</li>
+</ul>
+</div>
 <h3 id="manual-temp-basal">Manual Temp Basal<a class="headerlink" href="#manual-temp-basal" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the <code>Set Temporary Basal Rate</code> to select a Manual Temp Basal.</p>
 <p>This brings up the <code>Temporary Basal</code> screen shown on the left of the graphic below. </p>
 <ul>
-<li>You can select any basal rate from 0 U/hr to your maximum basal rate set in the <a href="../therapy-settings/#maximum-basal-rate">Delivery Limit</a> settings</li>
+<li>You can select any basal rate from 0 U/hr to your maximum basal rate set in <a href="../therapy-settings/#maximum-basal-rate"><abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr></a></li>
 <li>You can choose any duration up to 12 hours in half-hour increments</li>
 <li>Once you select rate and duration and tap <code>Set Temporary Basal</code>, Loop goes into <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> mode and the pod is commanded to that rate and duration. </li>
 </ul>
@@ -2322,36 +2316,43 @@
 <p align="center"><img alt="screens used to configure, track and cancel manual temp basal rate" src="../img/manual-temp-basal.svg" width="600" /></p>
 <p>Once the manual temp basal command is sent to the pod, Loop updates displays as shown in the graphic above</p>
 <ul>
-<li>Pod screen:<ul>
-<li>The row label changes to <code>Cancel Manual Basal</code> and reports the time until the temp basal expires</li>
-<li>The <a href="#basal-report">Basal Report</a> updates with the new rate</li>
+<li><a href="#pod-status">Pod Status</a> screen:<ul>
+<li>The <a href="#basal-report">Basal Report</a> updates with the new rate and label indicates <code>Insulin Delivery</code></li>
+<li>The row label changes to <code>Cancel Manual Basal</code> and reports the time remaining until the temp basal expires</li>
 </ul>
 </li>
 <li>Main screen (refer to red rectangle highlights):<ul>
-<li>The HUD changes to an <code>Open Loop</code> icon and the Pod Status icon indicates <code>Manual Basal</code></li>
-<li>The Insulin Delivery plot indicates the planned duration of the manual temp basal</li>
-<li>The Glucose Prediction updates using that assumed change in insulin delivery</li>
+<li>The HUD <a href="../displays_v3/#loop-status-icon">Loop Status Icon</a> changes to an <code>Open Loop</code> icon and the HUD <a href="../displays_v3/#pump-status-icon">Pump Status Icon</a> indicates <code>Manual Basal</code></li>
+<li>The <a href="../displays_v3/#insulin-delivery-chart">Insulin Delivery</a> plot indicates the planned duration of the manual temp basal</li>
+<li>The <a href="../displays_v3/#glucose-chart">Glucose Prediction</a> updates using that assumed change in insulin delivery</li>
 </ul>
 </li>
 </ul>
-<p>So long as you were in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> before set the Temp Basal, Loop returns to <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> automatically when the duration ends or you cancel the temporary basal.</p>
+<p>So long as you were in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> before requesting the Temp Basal, Loop returns to <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> automatically when the duration ends or you cancel the temporary basal.</p>
+<div class="admonition info">
+<p class="admonition-title">Automatic Resumption of Scheduled Basal</p>
+<p>The phone does not need to be in contact with the pod for insulin delivery to return to scheduled basal at the end of the selected duration. That duration is commanded along with the temporary rate. Once the pod accepts that command, and you'll get an error message if it does not, the pod will resume scheduled basal rate without further commanding, so long a there is insulin in the reservoir and a pod fault does not occur.</p>
+</div>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Placeholder for the configuration section.</p>
 <h3 id="notification-settings">Notification Settings<a class="headerlink" href="#notification-settings" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Placeholder for the Notification Settings section.</p>
 <h3 id="confidence-reminders">Confidence Reminders<a class="headerlink" href="#confidence-reminders" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Placeholder for the Confidence Reminders section.</p>
 <h3 id="insulin-type">Insulin Type<a class="headerlink" href="#insulin-type" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You selected <a href="../add-pump/#insulin-type">insulin type</a> when connecting to this pump.</p>
-<p>Use this row if you switch to a different type of insulin.</p>
+<p>Tap on this row if you switch to a different type of insulin.</p>
 <ul>
 <li>The model used by Loop for all the rapid insulin brands are the same, but it's a good idea to record if you change brands - some people notice differences</li>
 <li>If you switch between rapid and ultra-rapid insulin, you need to let Loop know so it will use the appropriate model</li>
 </ul>
 <h2 id="previous-pod-information">Previous Pod Information<a class="headerlink" href="#previous-pod-information" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Placeholder</p>
+<p>Placeholder for the Previous Pod Information section.</p>
 <h2 id="alert-screens">Alert Screens<a class="headerlink" href="#alert-screens" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are a number of <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screens to alert you of notifications and problems.</p>
 <h3 id="notifications">Notifications<a class="headerlink" href="#notifications" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Placeholder for the Notifications section.</p>
 <h3 id="error-messages">Error Messages<a class="headerlink" href="#error-messages" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Placeholder for the Error Messages section.</p>
                 
               
               
