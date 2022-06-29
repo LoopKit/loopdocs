@@ -1,3 +1,4 @@
+*[Activated]: for Omnipod: time at which insulin was injected into pod and 2 beeps were heard
 *[API_SECRET]: password (min 12 characters) needed to access Nightscout Site
 *[BAGE]: pump battery age on Nightscout site
 *[Big Sur]: older version for operating system for Mac, macOS 11.x
@@ -27,6 +28,7 @@
 *[ISF]: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin
 *[Issue]: On github - a formal method to report a problem, either code behavior or documentation
 *[macOS]: operating system for Mac computer
+*[Lock your Phone]: click the button on the side of the phone to lock it - prevent accidental touch, i.e., accidental Loop command
 *[MDT]: common abbreviation for Medtronic pumps
 *[modal]: message or alert appearing in front of app that must be acknowledged to return to app
 *[Monterey]: operating system for Mac, macOS 12.x
