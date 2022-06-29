@@ -51,7 +51,7 @@ If the build fails again, look through the list below and see if you can match y
 
 STOP!!  Read this section! Important!
 
-Before you post in a [Loop Social Media](../index.md#stay-in-the-loop) site asking for help with build errors, do your work first. The build errors listed below (and the checks listed above) will fix most of problems you may encounter. ***PLEASE READ THIS PAGE***. The volunteers answering questions online would love to spend more time helping people use Loop and less time answering questions that can be addressed by using this page.
+Before you post in a [Loop Social Media](../index.md#finding-help) site asking for help with build errors, do your work first. The build errors listed below (and the checks listed above) will fix most of problems you may encounter. ***PLEASE READ THIS PAGE***. The volunteers answering questions online would love to spend more time helping people use Loop and less time answering questions that can be addressed by using this page.
 
 Therefore, try to resolve your build error yourself. Then, if you need to post for help, please include enough information with the post so the volunteers know where you are in your troubleshooting attempts.
 
