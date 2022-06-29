@@ -53,7 +53,7 @@ Search for topics by clicking the Search tool, or typing the letter `s` on your 
 
 ## Finding Help
 
-Since this is a project used and developed by remotely collaborating volunteers, most of the support and conversations are via online platforms. There are a [number of options](build/step12.md) for you to join in those conversations or as for help. Links to the main platforms are listed below. There are also numerous FB groups that formed by non-US Loop users (Italy, Australia, and several other countries have user groups).
+Since this is a project used and developed by remotely collaborating volunteers, most of the support and conversations are via online platforms. There are a [number of options](build/step12.md) for you to join in those conversations or ask for help. Links to the main platforms are listed below. There are also numerous FB groups formed by non-US Loop users (Italy, Australia, and several other countries have user groups).
 
   * The fastest way to get help (with the most mentors) is the [Looped Group](https://www.facebook.com/groups/TheLoopedGroup) on Facebook. Looped Group is the original FB group for DIY looping systems. There are lot of active members there with excellent history of helping people.
   * There is another Facebook group, Loop and Learn, that has a lot of Loop-centric information, a T1D Speaker Series covering many topics of general diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.

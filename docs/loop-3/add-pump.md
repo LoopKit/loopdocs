@@ -19,6 +19,11 @@ Loopers can choose from 3 pumps and a simulator:
 * Omnipod DASH
 * Insulin Pump Simulator
 
+When adding a pump, the steps you take depend on the type of pump. 
+
+* All steps for any pump are presented in order on this page
+* When you see the words "If you are adding `type of pump`" skip ahead in docs to "link", click on the link to move to the next step for that pump
+
 !!! info "Omnipod vs Omnipod DASH"
     Insulet uses the term Omnipod to refer to the older (Eros) pods.
 
@@ -41,7 +46,7 @@ The graphic below shows the display when a user taps on Add Pump in the Settings
 
 If you are adding a Medtronic pump, skip ahead to [Insulin Type](#insulin-type).
 
-## Omnipod Common
+## Omnipod Common 1
 
 ### Pod Nofication Defaults
 
@@ -65,7 +70,9 @@ The insulin type screen is presented for all pumps.
 ![initial selection for insulin used in pump](img/loop-3-add-pump-insulin.svg){width="250"}
 {align="center"}
 
-After this screen is presented, [Omnipod DASH](#omnipod-common_1) users should skip ahead - they will not use a RileyLink compatible device.
+If you are adding an Omnipod DASH pump, skip ahead in the docs to [Omnipod Commom 2](#omnipod-common-2).
+
+Omnipod and Medtronic users should continue to select a RileyLink compatible device.
 
 ## Omnipod or Medtronic
 
@@ -76,7 +83,7 @@ For Omnipod and Medtronic pumps, a RileyLink compatible device is required for L
 !!! warning ""
     New RileyLink compatible devices won't have a name listed next to their slider at first. The name will only be displayed after connecting the device to Loop for the first time. So, if all you see in the device list is a little toggle and no "RileyLink" name...go ahead and switch that toggle. The default device name will appear after that toggle is green.
 
-    You can later [personalize](../operation/loop-settings/rileylink.md) the default device name once it is connected to Loop.
+    You can later [personalize](../operation/loop-settings/rileylink.md#personalize-device) the name once it is connected to Loop.
 
 ![img/pod-rl.png](../operation/loop-settings/img/pod-rl.png){width="400"}
 {align="center"}
@@ -88,11 +95,11 @@ If your device does not appear:
 * Make sure it is charged and turned on
 * Make sure it is not still connected to a different phone or app
 
-Click this link to continue with a [Medtronic](#medtronic) pump.
+If you are adding a Medtronic pump, skip ahead in the docs to [Medtronic](#medtronic).
 
-## Omnipod Common
+## Omnipod Common 2
 
-After the detour for selecting a RileyLink for Omnipod, all other actions for Omnipod and Omnipod DASH are the same. Once a pod is paired, the Pump display will be the same, except the Omnipod screen has a section for the RileyLink Devices.
+After selecting a RileyLink for Omnipod, all other actions for Omnipod and Omnipod DASH are the same. Once a pod is paired, the Pump display will be the same, except the Omnipod screen has a section for the RileyLink Devices.
 
 For Omnipod (left) and Omnipod DASH (right), you should see `Pair Pod` screen.
 
@@ -113,7 +120,7 @@ New Loopers or those who have never used pods before should hit `Cancel`, finish
 
 Experienced Loopers will probably pair a pod immediately, but should still review the new material.
 
-Continue to [Time Zone](#time-zone) and [Final Pump Steps](#final-pump-steps) on this page.
+Skip ahead in the docs to read the sections: [Time Zone](#time-zone) and [Final Pump Steps](#final-pump-steps).
 
 ## Medtronic
 
@@ -176,6 +183,7 @@ The final step is to connect your Medtronic pump to Loop.
 Now that your pump is paired with Loop, you should select the type of battery you are using and decide whether to use My Sentry:
 
 1. Select your pump's battery type (lithium or alakine)
+    * There is a whole page about [Medtronic pump batteries](../operation/features/battery.md)
 2. Leave the Preferred Data Source on Event History
 1. If you have a x23 or x54 pump, choose whether to use My Sentry (saves phone battery) or not (saves OrangeLink battery)
     - For other Medtronic pumps, adjusting this setting does not do anything
@@ -188,13 +196,13 @@ Loop allows the Pump to have a different time zone from the phone. The command t
 
 The schedules for the basal rates, correction ranges, insulin sensitivity factors and carb ratios stay at the pump time even if the user and their phone change time zones or when daylight savings time occurs.  To bring the pump into the same time zone as the phone, use this command in Loop. (Medtronic users - do NOT adjust time on your pump - always go through Loop.)
 
-Select the Pump Settings display, scroll down to the Change Time Zone line, example shown in the graphic below.  You can leave the time zone offset unchanged or touch it to change to the current time zone.  Note that the 24 hour configuration pattern for basal rates, insulin sensitivity factor, carb ratio and correction range are aligned with the time zone shown on this line.
-
-If you choose to leave the pump and phone time zones different, the pump icon on the HUD will show the clock icon to remind you.
+Select the Pump Settings display, scroll down to the Change Time Zone line, example shown in the graphic below (Medtronic / Loop 2.2.x example).  You can leave the time zone offset unchanged or touch it to change to the current time zone.  Note that the 24-hour configuration pattern for basal rates, insulin sensitivity factor, carb ratio and correction range are aligned with the time zone shown on this line.
 
 ![Command line to modify the time zone](../operation/loop-settings/img/change-time-zone.svg){width="250"}
 
-Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour configuration pattern to the old time zone.
+Once the Change Time Zone command is tapped, Loop no longer shifts the 24-hour configuration pattern to the old time zone.
+
+If you choose to leave the pump and phone time zones different, the pump icon on the HUD will show the clock icon to remind you.
 
 ## Final Pump Steps
 

@@ -5,21 +5,23 @@ Loop 3.0 will be the next big release. It is being developed and tested under th
 
 !!! info "Loop-dev"
     At the current time, the dev branch of Loop is under test by experienced loopers. If you are testing Loop-dev, the version number reported on your settings screen is Loop v2.3.0 (57). 
+
+    To report to developers about which particular version of Loop-dev you are running, look at the top of the [Loop Report](settings.md#issue-a-loop-report) under `Build Details`. The 7-digit alphanumeric indication to the right of workspaceGitRevision is sufficient.
     
     When this version is released, it will be Loop 3.0 and the interface for Loop 3.x versions will use this updated documentation.
 
-    To assist folks testing Loop-dev in preparation for the release, this new section, called Loop 3, has been added to the LoopDocs menu structure.
-    
-    The pages, starting with Onboarding will move over to Set Up App (with some exceptions). Some information under Loop 3 will be incorporated into the releases page.
 
 !!! danger ""
 
-    To make life easier for those of us preparing the new documentation, the wording on many pages in the Loop 3 section is set in the future - after the release.
+    To make life easier for those of us preparing the new documentation, the wording on many pages in the Loop 3 section is set in the future - after the release
     
-    This page will be removed and the rest of the Loop 3 section will be moved to Set Up App with the Loop 2.2.x version maintained under a sub-menu
+    This page will be updated and it and the rest of the Loop 3 section will be moved to Set Up App with the Loop 2.2.x version maintained under a sub-menu
 
 
 ## New with Loop 3
+
+!!! info ""
+    Information from this section will be moved to the Version / Releases page after release.
 
 Loop 3 provides a major redesign of the app, building off the public portion of some Tidepool work in addition to the DIY contributors. There is a lot of work "under-the-hood" with Loop 3 that may not be obvious to the user, but makes the app more robust.
 

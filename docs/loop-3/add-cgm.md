@@ -41,8 +41,8 @@ The graphic below shows the display when a user taps on Add CGM in the Settings 
 The Dexcom G5 and G6 require
 
 * Dexcom app must be running on the Loop iPhone and be paired to an active transmitter
-* User must enter that active transmitter ID in the located indicated by the red rectangle in the graphic below
-* Do not enter your share credentials
+* User must enter that active transmitter ID in the location indicated by the red rectangle in the graphic below
+* Do not enter your Share Credentials (should say tap to set)
 * Do not add the transmitter ID to Loop first
 
 ![interface to add transmitter ID for Dexcom](img/loop-3-setting-add-dexcom.svg){width="300"}
@@ -50,9 +50,9 @@ The Dexcom G5 and G6 require
 
 !!! info "FYI: When You Change Transmitters"
 
-    When you change Dexcom transmitters, you will need to select the `Delete CGM` button at the very bottom of the CGM info page in Loop. After that, proceed with Dexcom Instructions for changing transmitters.  Once the new transmitter is paired with the Dexcom app, then you tap `Add CGM` to enter the new transmitter. You cannot just tap on your old transmitter ID to update it.
+    When you change Dexcom transmitters, you will need to select the `Delete CGM` button at the very bottom of the CGM info page in Loop. After that, proceed with Dexcom Instructions for changing transmitters.  Once the new transmitter is paired with the Dexcom app, then tap `Add CGM` to enter the new transmitter. You cannot just tap on your old transmitter ID to update it.
  
-    The how-to information for changing a transmitter is found by searching LoopDocs. TO DO - put the link here.
+    Tap on this link to for instructions to change [Dexcom transmitters](../faqs/cgm-faqs.md#what-do-i-do-when-i-switch-transmitters).
 
     If you don't update your transmitter ID when you change active transmitters, your Loop will not get CGM data from the Dexcom app.
 
@@ -68,16 +68,15 @@ You must first connect the sensor when you add your compatible Metronic pump. Th
 
 !!! warning "If you need to use Dexcom Share"
 
-    If the dexcom is on another phone and you choose to use Share (not advised), here is some information.
+    If the dexcom is on another phone, you can use Share if internet / cell coverage is good.
 
-    For all selections, the Dexcom Share credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. **Dexcom Share account is not always the same login info as your Dexcom Clarity account.** The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
+    The Dexcom Share credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. **Dexcom Share account is not always the same login info as your Dexcom Clarity account.** The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
 
     If you do not enter your Share credentials correctly into Loop, you will get an error when Loop tries to access your Share account to backfill CGM data. An example of the error message is shown in the graphic below. If you see that message, delete your Share account from Loop settings and try again.
 
     ![img/shareclient.jpg](../operation/loop-settings/img/shareclient.jpg){width="300"}
     {align="center"}
 
-If you added Share credential when selecting [G5 or G6](#dexcom-g5-and-g6-cgm) (not recommended) and later change transmitters without deleting and adding the CGM with the new transmitter ID, Loop will get data from your Dexcom Share server and will not work without cell or wifi connection. (TO DO) - is the following still true? When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID.
 
 ### Nightscout Remote CGM
 
@@ -88,7 +87,7 @@ If the user has CGM data available at their Nightscout URL, they can select that
 {align="center"}
 
 
-The user must enter both the URL and API_SECRET for their site to ensure the security of the data.
+The user must enter both the URL and API_SECRET for their site to ensure the security of the data. The URL must start with `https://` and cannot have any extra spaces in the line.
 
 ![Nightscout Remote CGM entry screen](img/nightscout-cgm-entry.svg){width="350"}
 {align="center"}

@@ -3,7 +3,7 @@
 ## New Looper
 
 !!! danger "New Loopers Should NOT Use Loop-dev Before it is Released"
-    Once Loop-dev is released, this page will be the first page in the Set Up App section of LoopDocs.
+    Once Loop-dev is released, this Loop 3 pages will be moved to the Set Up App section of LoopDocs.
     
     To make life easier for those of us preparing the new documentation, the wording on many pages in the Loop 3 section is set in the future - after the release.
     
