@@ -1,7 +1,7 @@
 # Step 12: Meet the Community
 
 !!! info "Time Estimate"
-    - Read about your [Social Media Options](../index.md#stay-in-the-loop): 5 minutes
+    - Read about your [Social Media Options](../index.md#finding-help): 5 minutes
     - Join one or more groups: 10 minutes
 
 !!! abstract "Summary"
@@ -15,7 +15,7 @@
 
 ## Online Groups
 
-There's a whole wonderful community of people already Looping who are willing to help you through the process. This link on [Social Media Options](../index.md#stay-in-the-loop) walks you through those groups and how to join.
+There's a whole wonderful community of people already Looping who are willing to help you through the process. This link on [Social Media Options](../index.md#finding-help) walks you through those groups and how to join.
 
 The Loop help found at these sites is provided by volunteers. None of the people are paid to answer questions or spend time troubleshooting. They do it because they want to help others. Please decrease their support burden by doing some simple steps before turning to others for help. Please click the image below to watch this video full of tips to make the most of your online resources.
 

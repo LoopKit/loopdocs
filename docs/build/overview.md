@@ -1,53 +1,46 @@
 # Overview of Build Process
 
-The overall build process is straightforward if you follow the step-by-step instructions.
+The build process is straightforward if you follow the step-by-step instructions.
 
-The steps in the Build menu will help you through the following tasks:
+!!! info "The Build Steps show how to:"
 
-* Check that you have or can obtain the compatible gear needed to Loop
-* Prepare your computer
-* Download the Loop code to your computer
-* Build the Loop app on your phone
+    * Check that you have a phone, pump and CGM that works with Loop
+    * Tell you about the RileyLink compatible device and how to get one
+    * Prepare your computer
+    * Download the Loop code to your computer
+    * Build the Loop app on your phone
 
-After the build, be sure to follow steps to [Set up](../operation/overview.md) and [Operate](../operation/features/carbs.md) the Loop app
+After the build, follow steps to [Set up](../operation/overview.md) and [Operate](../operation/features/carbs.md) the Loop app
 
-This may appear intimidating at first, but it is quite doable by the average computer user.
-
-To orient yourself, consider clicking through the Build Steps from Step 1 through Step 14 and read just the top three boxes on each page. If you're on a desktop, use `n` for next and `p` for previous.
+We recommend you start by clicking through the Build Steps from 1 through 14 and read the top three boxes on each page. On a desktop, you can use `n` for next and `p` for previous.
 
 !!! info "Time Estimate"
 !!! abstract "Summary"
 !!! question "FAQs"
 
-Once you've completed this quick overview of the build steps, return and read the pages completely for Steps 1 through 14. It's good idea to skim [Oh dear! Build errors?](build_errors.md) at this point. The most important take-away from that page is that most of the mistakes have already been made and there are correction steps to follow to get your build back on track. If that doesn't help, there are [mentors](../index.md#stay-in-the-loop) ready and willing to assist.
+And yes - we do know how to count, but step 7 is no longer required and we didn't want to rename the pages.
 
-The next stage is to work through the steps and complete the tasks on each page.  You can do one a day or blaze through them all.  Just be sure to read carefully and if you are confused - reach out for help.
+Next, read the pages completely for Steps 1 through 14 and skim [Oh dear! Build errors?](build_errors.md). Most of the mistakes you can make when building have already been made. The Build Errors page shows how to fix them. If those steps do not help, there are [mentors](../index.md#finding-help) ready and willing to assist.
 
-Yes - if you were paying attention, the suggestion is to go from this page through Build Steps 1 through 14 three times:
+When you are ready to proceed, complete the tasks on each page.  You can do one a day, take a week per step or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help.
 
-1. Read just the highlights (top three boxes)
-1. Skim each page
-1. Do the work
+!!! example "Take it one step at a time..."
+
+    If you have limited time, you can stop at one of the steps and come back later. The end of each step is a nice stopping point but you can stop at any time and return later.
+
+To summarize:
+
+1. Read just the highlights (top three boxes) for Steps 1 - 14
+1. Read each page for Steps 1 - 14 and skim Build Errors
+1. Complete the tasks on each page
 
 ## Introduction to Loop Video
 
 If you have never used Loop, click on links below for an introduction.
 
-!!! warning "Classic Video"
-    * This "classic" Katie DiSimone video [Introduction to Loop Video](https://youtu.be/qw_u1lqboCs) was created before the Omnipod version of Loop was released in April 2019 - so yes you can definitely use Omnipod Eros pumps
-    * The menus have been rearranged slightly but the overall concept of how to use Loop is demonstrated in this video
-    * The workout target shown in the video has been completely reworked as Overrides
-
-!!! success "New Video"
-    * This newer [What is Loop](https://youtu.be/64qhgnmkyAE) video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) was created by the Loop and Learn Team
+!!! success "Loop Video"
+    * This [What is Loop](https://youtu.be/64qhgnmkyAE) video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) was created by the Loop and Learn Team
     * Special thanks to Tina and Reese Hammer for the terrific video
     * Special thanks to Matthew Fouse for the generous use of his beautiful graphics
 
-!!! example "Take it one step at a time..."
 
-    If you are worried about how long this will take, you can always stop at one of the steps and come back later. The steps are meant to be nice stopping points to take breaks if needed.
-
-
-## First Step: Compatible Computer
-
-Now you are ready to start the [Build Steps](step1.md).
