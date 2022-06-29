@@ -26,7 +26,7 @@ When you are ready to proceed, complete the tasks on each page.  You can do one 
 
 !!! example "Take it one step at a time..."
 
-    If you have limited time, you can stop at one of the steps and come back later. The end of each step is a nice stopping point but you can stop at any time and return later.
+    The end of each step is a nice stopping point but you can stop at any time and return later.
 
 To summarize:
 
