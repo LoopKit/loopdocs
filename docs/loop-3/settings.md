@@ -93,8 +93,9 @@ The graphic below shows the screen provided when you tap on the Support row at t
 ![settings support screen](img/loop-3-setting-support.svg){width="250"}
 {align="center"}
 
+### Issue a Loop Report
 
-The Issue Report row creates a Loop Report text file with a lot of useful information for the developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to send it to yourself.
+Tapping on the Issue Report row, on the graphic above, creates a Loop Report text file with a lot of useful information for the developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to send it to yourself.
 
 It's a good idea to use the Issue Report button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
 
