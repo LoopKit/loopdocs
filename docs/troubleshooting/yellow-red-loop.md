@@ -64,7 +64,6 @@ Do these steps until one of them fixes the issue:
 
 * Turn off Bluetooth on your phone and then turn it right back on again.
 * Close your Loop app (upswiping it in the iPhone's app selector) and reopen it.
-* Power cycle your phone.
 * Turn your RileyLink off/on at its physical power switch located on the side of the RileyLink.
     * If you have a different device, make sure you know how to power-cycle the device.
     * For RileyLink (without wireless charging) use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a [screaming pod silencer tool](../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod).
@@ -73,8 +72,14 @@ Do these steps until one of them fixes the issue:
     ![img/riley-switch.png](img/riley-switch.png){width="300"}
     {align="center"}
 
-
 This should restore a green Loop within 5 minutes. If you're impatient, you can issue a "Read Pod Status" for Pod or "Change Time" for Medtronic (button press command is not available with v2.2.6). If this is successful, you've established pump communication again.
+
+Last thing to try is:
+
+#### Power cycle your phone.
+
+* This suggestion is last because there has been an issue (with iOS 15) in which power cycling the phone does not load the latest version of Loop information
+* Click on the [Lost Pod Information](#lost-pod-information) link for more information
 
 If this was not successful, check out the [Pump is Not Responding](#pump-is-not-responding) section.
 

@@ -144,7 +144,7 @@ In other words, you can leave your phone behind and the selected basal rate cont
 {align="center"}
 
 
-Once the manual temp basal command is sent to the pod, Loop updates displays as shown in the graphic above
+Once the manual temp basal command is sent to the pod, Loop changes to Open Loop mode and updates displays as shown in the graphic above
 
 * [Pod Status](#pod-status) screen:
     * The [Basal Report](#basal-report) updates with the new rate and label indicates `Insulin Delivery`
@@ -157,13 +157,46 @@ Once the manual temp basal command is sent to the pod, Loop updates displays as 
 So long as you were in Closed Loop before requesting the Temp Basal, Loop returns to Closed Loop automatically when the duration ends or you cancel the temporary basal.
 
 !!! info "Automatic Resumption of Scheduled Basal"
-    The phone does not need to be in contact with the pod for insulin delivery to return to scheduled basal at the end of the selected duration. That duration is commanded along with the temporary rate. Once the pod accepts that command, and you'll get an error message if it does not, the pod will resume scheduled basal rate without further commanding, so long a there is insulin in the reservoir and a pod fault does not occur.
+    The phone does not need to be in contact with the pod for insulin delivery to return to scheduled basal at the end of the selected duration. That duration is commanded along with the temporary rate. Once the pod accepts that command, and you'll get an error message if it does not, the pod will resume scheduled basal rate without further commanding if there is insulin in the reservoir and a pod fault does not occur.
+
+### Devices
+
+For Omnipod, there is a Devices section used to access the [RileyLink](../operation/loop-settings/rileylink.md) status and commands screen.
+
+
+### Pod Details
+
+The Pod Details table, shown in the graphic below, reports:
+
+* Time at which pod was Activated
+* Time at which pod will Expire
+* Access to Device Details
+
+![section of Pod Status screen with Pod Details](img/pod-status-details.svg){width="300"}
+{align="center"}
+
+
+!!! question "Time Drift"
+    The pod will expire when it thinks it has been 80 hours. The pod clock may drift a few seconds with respect to phone time during the pod life. The Expiration time gets updated when the pod reports how long it thinks it has been since it was activated.
+
+#### Device Details
+
+Some additional details from the most recent pod status response message are displayed if you tap the Device Details row, as shown in the graphic below. Most people will not need to view this.
+
+The graphic shows an example for Omnipod on the left, Omnipod DASH (TWI BOARD) in the middle and Omnipod DASH (NXP BLE) on the right. Do not worry about the different board styles (Device Name) for DASH. The developers did that for you. If you are asking for help from a mentor - they may request this information.
+
+![section of Pod Status screen with Pod Details](img/loop-3-omnipod-device-details.svg){width="600"}
+{align="center"}
+
+
+
 
 ## Configuration
 
 ### Notification Settings
 
 Placeholder for the Notification Settings section.
+
 
 ### Confidence Reminders
 
@@ -182,14 +215,13 @@ Tap on this row if you switch to a different type of insulin.
 
 Placeholder for the Previous Pod Information section.
 
-## Alert Screens
 
-There are a number of modal screens to alert you of notifications and problems.
+### Pod Error Messages
 
-### Notifications
+This section presents some of the error message screens you may see specific to pods.
 
-Placeholder for the Notifications section.
+#### Pod Faults
 
-### Error Messages
+You are likely to hear a pod fault before Loop notices. If your phone is locked, Loop only checks status every 5 minutes for Omnipod or 3 minutes for Omnipod DASH.
 
-Placeholder for the Error Messages section.
+Unlock your phone, open Loop, navigate to the Pod Status screen and tap on Deactivate Pod to stop the noise. The pod fault - even if it does not, yet, show up in the HUD or the Pod Status screen, will be picked up by the process of hitting Deactivate Pod.
