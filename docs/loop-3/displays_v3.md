@@ -287,3 +287,28 @@ Experienced Looper who already had a widget should not need to modify anything t
 
     Still stuck trying to set up a widget, please do an internet search, such as "Add old-style widget to your iOS 15 Home Screen" for instructions.
 
+## Alert Screens
+
+There are a number of modal screens to alert you of notifications and problems.
+
+### Notifications
+
+Work in progress section - more content to come.
+
+This section presents some of the modal notification screens you may see with Loop.
+
+#### Suspend Timer Reminder
+
+If you use Loop to suspend insulin delivery on your pod, at the end of the time interval you selected, you will see this modal alert. Once you acknowledge the alert, it will halt the reminder beeps on your pod. The modal alert on your phone repeats at 15 minute intervals.
+
+![reminder that insulin is suspended](img/loop-3-modal-alert-suspended.svg){width="300"}
+{align="center"}
+
+
+
+### Error Messages
+
+Work in progress section - more content to come.
+
+This section presents some of the error message screens you may see with Loop.
+
