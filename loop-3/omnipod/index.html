@@ -1568,6 +1568,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#devices" class="md-nav__link">
+    Devices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pod-details" class="md-nav__link">
+    Pod Details
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1612,26 +1626,12 @@
     Previous Pod Information
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alert-screens" class="md-nav__link">
-    Alert Screens
-  </a>
-  
-    <nav class="md-nav" aria-label="Alert Screens">
+    <nav class="md-nav" aria-label="Previous Pod Information">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#notifications" class="md-nav__link">
-    Notifications
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-messages" class="md-nav__link">
-    Error Messages
+  <a href="#pod-error-messages" class="md-nav__link">
+    Pod Error Messages
   </a>
   
 </li>
@@ -2075,6 +2075,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#devices" class="md-nav__link">
+    Devices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pod-details" class="md-nav__link">
+    Pod Details
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2119,26 +2133,12 @@
     Previous Pod Information
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alert-screens" class="md-nav__link">
-    Alert Screens
-  </a>
-  
-    <nav class="md-nav" aria-label="Alert Screens">
+    <nav class="md-nav" aria-label="Previous Pod Information">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#notifications" class="md-nav__link">
-    Notifications
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-messages" class="md-nav__link">
-    Error Messages
+  <a href="#pod-error-messages" class="md-nav__link">
+    Pod Error Messages
   </a>
   
 </li>
@@ -2314,7 +2314,7 @@
 </ul>
 <p>In other words, you can leave your phone behind and the selected basal rate continues for the selected basal duration. There will be no automated adjustments of delivery for the temp basal duration.<br><br></p>
 <p align="center"><img alt="screens used to configure, track and cancel manual temp basal rate" src="../img/manual-temp-basal.svg" width="600" /></p>
-<p>Once the manual temp basal command is sent to the pod, Loop updates displays as shown in the graphic above</p>
+<p>Once the manual temp basal command is sent to the pod, Loop changes to <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> mode and updates displays as shown in the graphic above</p>
 <ul>
 <li><a href="#pod-status">Pod Status</a> screen:<ul>
 <li>The <a href="#basal-report">Basal Report</a> updates with the new rate and label indicates <code>Insulin Delivery</code></li>
@@ -2331,8 +2331,26 @@
 <p>So long as you were in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> before requesting the Temp Basal, Loop returns to <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> automatically when the duration ends or you cancel the temporary basal.</p>
 <div class="admonition info">
 <p class="admonition-title">Automatic Resumption of Scheduled Basal</p>
-<p>The phone does not need to be in contact with the pod for insulin delivery to return to scheduled basal at the end of the selected duration. That duration is commanded along with the temporary rate. Once the pod accepts that command, and you'll get an error message if it does not, the pod will resume scheduled basal rate without further commanding, so long a there is insulin in the reservoir and a pod fault does not occur.</p>
+<p>The phone does not need to be in contact with the pod for insulin delivery to return to scheduled basal at the end of the selected duration. That duration is commanded along with the temporary rate. Once the pod accepts that command, and you'll get an error message if it does not, the pod will resume scheduled basal rate without further commanding if there is insulin in the reservoir and a pod fault does not occur.</p>
 </div>
+<h3 id="devices">Devices<a class="headerlink" href="#devices" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>For Omnipod, there is a Devices section used to access the <a href="../../operation/loop-settings/rileylink/"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr></a> status and commands screen.</p>
+<h3 id="pod-details">Pod Details<a class="headerlink" href="#pod-details" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The Pod Details table, shown in the graphic below, reports:</p>
+<ul>
+<li>Time at which pod was <abbr title="for Omnipod: time at which insulin was injected into pod and 2 beeps were heard">Activated</abbr></li>
+<li>Time at which pod will Expire</li>
+<li>Access to Device Details</li>
+</ul>
+<p align="center"><img alt="section of Pod Status screen with Pod Details" src="../img/pod-status-details.svg" width="300" /></p>
+<div class="admonition question">
+<p class="admonition-title">Time Drift</p>
+<p>The pod will expire when it thinks it has been 80 hours. The pod clock may drift a few seconds with respect to phone time during the pod life. The Expiration time gets updated when the pod reports how long it thinks it has been since it was activated.</p>
+</div>
+<h4 id="device-details">Device Details<a class="headerlink" href="#device-details" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Some additional details from the most recent pod status response message are displayed if you tap the Device Details row, as shown in the graphic below. Most people will not need to view this.</p>
+<p>The graphic shows an example for Omnipod on the left, Omnipod DASH (TWI BOARD) in the middle and Omnipod DASH (NXP <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr>) on the right. Do not worry about the different board styles (Device Name) for DASH. The developers did that for you. If you are asking for help from a mentor - they may request this information.</p>
+<p align="center"><img alt="section of Pod Status screen with Pod Details" src="../img/loop-3-omnipod-device-details.svg" width="600" /></p>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="notification-settings">Notification Settings<a class="headerlink" href="#notification-settings" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Placeholder for the Notification Settings section.</p>
@@ -2347,12 +2365,11 @@
 </ul>
 <h2 id="previous-pod-information">Previous Pod Information<a class="headerlink" href="#previous-pod-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Placeholder for the Previous Pod Information section.</p>
-<h2 id="alert-screens">Alert Screens<a class="headerlink" href="#alert-screens" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There are a number of <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screens to alert you of notifications and problems.</p>
-<h3 id="notifications">Notifications<a class="headerlink" href="#notifications" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Placeholder for the Notifications section.</p>
-<h3 id="error-messages">Error Messages<a class="headerlink" href="#error-messages" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Placeholder for the Error Messages section.</p>
+<h3 id="pod-error-messages">Pod Error Messages<a class="headerlink" href="#pod-error-messages" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This section presents some of the error message screens you may see specific to pods.</p>
+<h4 id="pod-faults">Pod Faults<a class="headerlink" href="#pod-faults" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>You are likely to hear a pod fault before Loop notices. If your phone is locked, Loop only checks status every 5 minutes for Omnipod or 3 minutes for Omnipod DASH.</p>
+<p>Unlock your phone, open Loop, navigate to the Pod Status screen and tap on Deactivate Pod to stop the noise. The pod fault - even if it does not, yet, show up in the HUD or the Pod Status screen, will be picked up by the process of hitting Deactivate Pod.</p>
                 
               
               
