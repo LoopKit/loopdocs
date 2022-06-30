@@ -18,7 +18,7 @@ There are several choices for a CGM with Loop as shown in the graphic below:
         * Medtronic Pump only
         * **You must [add pump](add-pump.md) first**
         * Not visible in graphic below because no pump with connected Enlite sensor was attached
-* CGM that require active internet
+* CGM that require active internet (WiFi or Cell)
     * [Dexcom Share](#dexcom-share-as-a-cgm)
     * [Nightscout Remote CGM](#nightscout-remote-cgm)
 * CGM Simulator - useful to learn the app interface
@@ -52,9 +52,7 @@ The Dexcom G5 and G6 require
 
     When you change Dexcom transmitters, you will need to select the `Delete CGM` button at the very bottom of the CGM info page in Loop. After that, proceed with Dexcom Instructions for changing transmitters.  Once the new transmitter is paired with the Dexcom app, then tap `Add CGM` to enter the new transmitter. You cannot just tap on your old transmitter ID to update it.
  
-    Tap on this link to for instructions to change [Dexcom transmitters](../faqs/cgm-faqs.md#what-do-i-do-when-i-switch-transmitters).
-
-    If you don't update your transmitter ID when you change active transmitters, your Loop will not get CGM data from the Dexcom app.
+    If you don't update your transmitter ID when you change active transmitters, your Loop will not get CGM data from the Dexcom app on your phone.
 
 #### About Dexcom Share credentials
 
@@ -123,10 +121,12 @@ The graphic below shows the result of tapping on the CGM icon when using a Dexco
     * [Omnipod Common](omnipod.md)
     * [Medtronic](medtronic.md)
 
-Now that you have added your CGM, you are ready to either add a [Pump](add-pump.md), if you have not done so, or proceed to the [Open Loop](../operation/loop/open-loop.md) page.
+Now that you have added your CGM, you are ready to either add a [Pump](add-pump.md), if you have not done so, or review the material listed above and then proceed to the [Open Loop](../operation/loop/open-loop.md) page.
 
 ## Modify CGM
 
 To modify the selected CGM, it must first be deleted. Then a new CGM can be added.  Scroll to the bottom of the current CGM screen and tap `Delete CGM`.
 
 When changing Dexcom Transmitters, you must first `Delete CGM` and then add the CGM back with the new Transmitter serial number.
+
+The [Head-Up-Display](#cgm-choices) at the top of the Loop main screen will now show the add CGM icon.

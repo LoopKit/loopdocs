@@ -16,18 +16,23 @@ Near the bottom of your Loop settings screen is a section called "Services".
 
 ## Nightscout
 
-If you have an existing Nightscout site, add the Site URL and API_SECRET to have your Loop data transmitted to your Nightscout site. If you can’t remember your API_SECRET, it can be found under Settings, Reveal Config Vars for Heroku sites (or Application Settings, Connection Strings for Azure sites).
+There is a whole section in LoopDocs about Nightscout. Please follow this link to the [Using Nightscout with Loop](../../nightscout/overview.md) section of LoopDocs. That also has the links you might need to the official [Nightscout Documentation](https://nightscout.github.io/) (different website).
+
+If you have an existing Nightscout site, it's still a good idea to review that section, but here's the quick summary of how to add your Site URL and API_SECRET to have your Loop data transmitted to your Nightscout site. If you can’t remember your API_SECRET, it can be found under Settings, Reveal Config Vars for Heroku sites (or Application Settings, Connection Strings for Azure sites).
 
 The two most common errors in filling out this section are:
 
-1. Failure to use `https://`  in the site URL.  If you use `http://` (see how that doesn't have the "s" at the end?), you will get an error message about an App Transport Security policy.  Take a look at the sample URL in the field before you start filling in that line, if you want an example to follow.
-2. Having a trailing slash on the end of the URL. If you copy and paste from a web browser, make sure to delete the trailing slash on the URL entry.
-1. If you use T1pal (paid Nightscout Service)
-    * Sign in to T1pal
-    * Select `Configure my Nightscout`
-    * Select `Uploaders`
-    * Use the copy button for URL and paste into Loop
-    * Repeat for API_SECRET
+1. Failure to use `https://`  in the site URL.  If you use `http://` (see how that doesn't have the "s" at the end?), you will get an error message about an App Transport Security policy.
+2. Having a trailing slash on the end of the URL (or an embedded space). If you copy and paste from a web browser, make sure to delete the trailing slash on the URL entry.
+
+!!! tips "More Tips about Nightscout"
+    * One family had an app configured to block some websites for their child's phone and accidentally blocked their Nightscout URL - took them a while to figure out that mistake.
+    * If you use T1pal (paid Nightscout Service)
+        * Sign in to T1pal
+        * Select `Configure my Nightscout`
+        * Select `Uploaders`
+        * Use the copy button for URL and paste into Loop
+        * Repeat for API_SECRET
 
 ## Loggly
 

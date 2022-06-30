@@ -75,6 +75,8 @@ This allows access to the [RileyLink](../operation/loop-settings/rileylink.md) s
 
 If you want to switch to a different pump you must first delete this one:
 
+* Deselect your RileyLink compatible device
+    * Move the slider(s) so it is no longer green
 * Tap on `Delete Pump`
 * Acknowledge you really mean it when asked by tapping `Delete Pump` again
 * Add a new pump
