@@ -72,7 +72,21 @@ The Configuration section allows entry to the following screens:
 
 ### [Therapy Settings](therapy-settings.md)
 
+There's a LoopDocs page devoted to therapy settings. Click on the link to get to that page: [Therapy Settings](therapy-settings.md).
+
+!!! question "But I don't see Therapy Settings!"
+    Therapy Settings is only accessible in the [Settings](#settings) screen when you have a pump connected to Loop.
+
+    * You need to tell Loop which pump you are using
+    * If you are not ready to connect a pump yet or need to modify Therapy Settings before you can connect to a different pump
+        * Tap on Add Pump
+        * Choose the Insulin Pump Simulator
+        * Therapy Settings are now available
+        * When ready to connect a real pump, just scroll to the bottom of the simulator and select Delete Pump
+
 ### Pump
+
+The information about the pump section is detailed on several different pages. Follow the links below:
 
 * [Add or Modify Pump](add-pump.md)
 * [Omnipod or Omnipod DASH](omnipod.md) Status and Commands
@@ -80,9 +94,13 @@ The Configuration section allows entry to the following screens:
 
 ### [CGM Settings](add-cgm.md)
 
+The information about the CGM is found on the [Add or Modify CGM](add-cgm.md) page.
+
 ## Services
 
 The Services section allows additions of other services such Nightscout, Loggly and Amplitude.
+
+Please refer to the [Optional: Service](../operation/loop-settings/services.md) page.
 
 ## Support
 

@@ -41,6 +41,7 @@
 *[Pre-Meal Range]: modify the correction range for up to one-hour by tapping on an icon in the toolbar
 *[Provisioning Profile]: associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)
 *[Pull Request]: formal method to request changes to a repository
+*[Quit the Loop App]: quit out of the app - different from closing the app - typically you swipe up in the app switcher
 *[repository]: contains project files and each file's revision history
 *[RileyLink]: a radio-frequency device that enables Loop to control your pump
 *[Rosetta]: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 chips)
