@@ -77,12 +77,32 @@ There's a LoopDocs page devoted to therapy settings. Click on the link to get to
 !!! question "But I don't see Therapy Settings!"
     Therapy Settings is only accessible in the [Settings](#settings) screen when you have a pump connected to Loop.
 
-    * You need to tell Loop which pump you are using
-    * If you are not ready to connect a pump yet or need to modify Therapy Settings before you can connect to a different pump
-        * Tap on Add Pump
-        * Choose the Insulin Pump Simulator
-        * Therapy Settings are now available
-        * When ready to connect a real pump, just scroll to the bottom of the simulator and select Delete Pump
+    * Loop needs to know the parameters for the pump
+    * There are several options presented below
+
+#### Option 1: Prep for Pods
+
+If you add an Omnipod (requires RileyLink) or Omnipod DASH up to the `Pair Pod` screen and then cancel, Loop will use the common Omnipod details to allow you to modify your Therapy Settings.
+
+#### Option 2: Prep for Medtronic
+
+If you need to modify Therapy Settings before connecting to a Medtronic pump:
+
+* Add the Insulin Pump Simulator
+    * Tap on the Pump in settings or the HUD to bring up the control screen
+    * Select the type of Medtronic
+    * Adjust the Therapy Settings as required
+* Delete the Insulin Pump Simulator
+
+#### Option 3: Simulate Loop
+
+If you want to use Loop in parallel with your current method of dosing insulin.
+
+* Add the Insulin Pump Simulator
+* Tap on the Pump in settings or the HUD to bring up the control screen
+* Choose the type of pump you wish to simulate (notice each pump has specific basal rates and ranges available)
+* For best fidelity, use a real CGM (if available on the same phone) or set up the CGM to be from Dexcom Share or Nightscout
+* For every meal or correction, you can echo that meal or correction with Loop using the simulated pump - watch and learn from recommendations and predictions
 
 ### Pump
 

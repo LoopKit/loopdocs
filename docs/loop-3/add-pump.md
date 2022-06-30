@@ -173,8 +173,8 @@ The final step is to connect your Medtronic pump to Loop.
     It turns out the "Max setting exceeded" error might be displayed even when Max Bolus and Max Basal Rate are already set appropriately on the pump.
 
     * If you had previously used a pump that allows multiples of 0.025 U/hr basal rate and you have one of those rates in the basal rate schedule in Loop, you will not be able to connect to a different Medtronic pump that does not support those rates.
-    * If this happens to you, cancel out of connecting that pump
-        - Refer to the [Settings: Therapy Settings](settings.md#therapy-settings) section
+    * If this happens to you, cancel out of connecting to that pump
+        - Refer to [Prep for Medtronic](settings.md#option-2-prep-for-medtronic) on the Settings page
             - Add a simulator so you can modify the scheduled basal rates
             - Delete the simulator
         - Try again
