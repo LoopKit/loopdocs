@@ -2232,7 +2232,7 @@
 <li>Click the <code>Connect</code> button to connect the pump to Loop.</li>
 <li>The spinning icon continues until you see the blue check mark and <code>Continue</code> button<ul>
 <li>If Loop is not successful at connecting, you will get an error message and stay on this screen</li>
-<li>If the <a href="../therapy-settings/#delivery-limits"><abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr></a> (max basal and max bolus) in the pump are lower than values you entered in Loop you will see an error message: <code>Pump Error. Max setting exceeded</code>.<ul>
+<li>If the <a href="../therapy-settings/#delivery-limits"><abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr></a> (max basal and max bolus) in the pump are lower than values you entered in Loop you will see an error message: <code>Pump Error. Max setting exceeded</code>. (See note below for other reasons you might see this message.)<ul>
 <li>In this case, edit the values in the pump and then click <code>Connect</code> to retry.</li>
 </ul>
 </li>
@@ -2240,6 +2240,23 @@
 </li>
 </ul>
 <p align="center"><img alt="how to enter serial number for a medtronic pump" src="../img/loop-3-add-medtronic-2.svg" width="750" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Max setting exceeded</p>
+<p>It turns out the "Max setting exceeded" error might be displayed even when Max Bolus and Max Basal Rate are already set appropriately on the pump.</p>
+<ul>
+<li>If you had previously used a pump that allows multiples of 0.025 U/hr basal rate and you have one of those rates in the basal rate schedule in Loop, you will not be able to connect to a different Medtronic pump that does not support those rates.</li>
+<li>If this happens to you, cancel out of connecting that pump<ul>
+<li>Refer to the <a href="../settings/#therapy-settings">Settings: Therapy Settings</a> section<ul>
+<li>Add a simulator so you can modify the scheduled basal rates</li>
+<li>Delete the simulator</li>
+</ul>
+</li>
+<li>Try again</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Once you have successfully connected to the Medtronic pump, click on <code>Continue</code>:</p>
 <ul>
 <li>You will then be presented with two more screens, click <code>Continue</code> for each<ul>
 <li>Pump Clock message</li>
@@ -2302,12 +2319,22 @@
 <li><a href="../medtronic/">Medtronic</a></li>
 </ul>
 </div>
-<p>Now that you have added your pump, you are ready to either add a <a href="../add-cgm/"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>, if you have not done so, or proceed to the <a href="../../operation/loop/open-loop/"><abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr></a> page.</p>
+<p>Now that you have added your pump, you are ready to either add a <a href="../add-cgm/"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>, if you have not done so, or review the material listed above and then proceed to the <a href="../../operation/loop/open-loop/"><abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr></a> page.</p>
 <h2 id="modify-pump">Modify Pump<a class="headerlink" href="#modify-pump" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you want to change the pump you are using, you must first delete the old pump.</p>
 <ul>
 <li>
 <p>If you are using Omnipod of the same pod type, you do not delete the pump, just Deactivate a pod and pair a new one.</p>
+</li>
+<li>
+<p>If you are switching from one pump type (Omnipod or Medtronic) to another pump that requires a <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device</p>
+<ul>
+<li>Disconnect from the device before deleting the pump</li>
+<li>If you did not disconnect, you will not see that same device when you try to connect the new pump<ul>
+<li><abbr title="quit out of the app - different from closing the app - typically you swipe up in the app switcher">Quit the Loop App</abbr> and restart it to see that device again</li>
+</ul>
+</li>
+</ul>
 </li>
 <li>
 <p>If you are switching between Omnipod and Omnipod DASH, you must first deactivate your current pod.</p>
@@ -2320,7 +2347,7 @@
 <p>If you are using Medtronic, scroll to the bottom of the pump screen and select <code>Delete Pump</code></p>
 </li>
 </ul>
-<p>The <a href="#pump-choices">Head-Up-Display</a> at the top of the Loop main screen will now show the add pump icon and you can <a href="#add-pump">select a new pump</a>.</p>
+<p>The <a href="#pump-choices">Head-Up-Display</a> at the top of the Loop main screen will now show the add pump icon.</p>
                 
               
               
