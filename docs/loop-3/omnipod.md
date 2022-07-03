@@ -188,19 +188,48 @@ The graphic shows an example for Omnipod on the left, Omnipod DASH (TWI BOARD) i
 ![section of Pod Status screen with Pod Details](img/loop-3-omnipod-device-details.svg){width="600"}
 {align="center"}
 
+## Replace Pod
 
+When you tap on the `Replace Pod` row, the `Deactivate Pod` screen, shown below, is displayed. 
+
+* If you tap `Deactivate Pod` on this screen, insulin delivery stops for this pod and cannot be resumed
+* If you have changed your mind, tap Back or Cancel to continue using the pod
+
+![Deactivate pod screen](img/loop-3-omnipod-deactivate.svg){width="300"}
+{align="center"}
 
 
 ## Configuration
 
 ### Notification Settings
 
-Placeholder for the Notification Settings section.
+When you tap on the `Notifcation Settings` row, the graphic below is displayed. The notifications are a combination of beeps on the pod with associated modal alerts on the phone app that must be acknowledged to prevent future beeps.
+
+* Expiration Reminder Default: changes the reminder time for any future pod (not the current one)
+* Scheduled Reminder: affects the reminder for the current pod (not future pods)
+    * If no pod is connected, you will not see the Scheduled Reminder section
+* Low Reservoir Reminder: changes the reminder level for the current pod and all future pods
+    * If no pod is connected, the app will not allow you to modify this setting
+    * Change it after the next pod is paired
+* Critical Alerts: Information row about which alerts can be silenced by phone settings
+
+![Notification selection screen to set up default reminders](img/loop-3-omnipod-notification.svg){width="300"}
+{align="center"}
 
 
 ### Confidence Reminders
 
-Placeholder for the Confidence Reminders section.
+When you tap on the `Confidence Reminder` row, the graphic below is displayed.  You can choose from three levels of audible responses that Loop requests from the pod:
+
+* Disabled: no audible pod alerts to acknowledge commands
+* Enabled: each manual command provides an audible sound to acknowledge it:
+    * For manual dosage change, the pod beeps at both the beginning and end of the manual command.
+    * For automated dosage change, the pod does not beep.
+* Extended: Automated dosage change beeps, similar to the manual commands when set to `Enabled`
+
+![Confidence reminder selection screen, the current selection is enabled as indicated by the blue check mark](img/loop-3-omnipod-confidence.svg){width="300"}
+{align="center"}
+
 
 ### Insulin Type
 
@@ -213,7 +242,17 @@ Tap on this row if you switch to a different type of insulin.
 
 ## Previous Pod Information
 
-Placeholder for the Previous Pod Information section.
+When you tap on the `Previous Pod Information` row, a graphic similar to those shown below is displayed. This provides summary information about the pod before the one currently in use. 
+
+If the previous pod had a fault and you choose to report it to Insulet, this screen reports the PDM reference code that Insulet uses in their tracking system.
+
+![previous pod information screen, both for DASH, left was nominal pod and right had a pod fault](img/loop-3-omnipod-previous.svg){width="600"}
+{align="center"}
+
+!!! bug "Do Not Call Insulet about 0x31 Faults"
+    If you should happen to get an 0x31 (last 3 digits of the PDM ref code of "-049") fault, do **not** report this to Insulet and do **not** ask for a replacement. This means Loop did not ensure the pod was in the correct state to accept a command. In other words, it was a bug in the Loop code. 
+    
+    We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed on July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a Loop Report and rebuild if you have an older version of the development code.
 
 
 ### Pod Error Messages
@@ -224,4 +263,4 @@ This section presents some of the error message screens you may see specific to 
 
 You are likely to hear a pod fault before Loop notices. If your phone is locked, Loop only checks status every 5 minutes for Omnipod or 3 minutes for Omnipod DASH.
 
-Unlock your phone, open Loop, navigate to the Pod Status screen and tap on Deactivate Pod to stop the noise. The pod fault - even if it does not, yet, show up in the HUD or the Pod Status screen, will be picked up by the process of hitting Deactivate Pod.
+Unlock your phone, open Loop, navigate to the Pod Status screen and tap on Deactivate Pod to stop the noise. The pod fault - even if it does not show up in the HUD or the Pod Status screen, will be picked up by the process of hitting Deactivate Pod. You can then view the Fault information in the [Previous Pod Information](#previous-pod-information) screen.
