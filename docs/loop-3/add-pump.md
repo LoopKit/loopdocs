@@ -20,22 +20,24 @@ Loopers can choose from 3 pumps and a simulator:
 * Insulin Pump Simulator
 
 !!! info "Omnipod vs Omnipod DASH"
-    Insulet uses the term Omnipod to refer to the older (Eros) pods.
+    Insulet (and the Loop app) uses Omnipod to refer to the older (Eros) pods.
 
-    Insulet uses the term Omnipod DASH to refer to newer BLE DASH pods.
+    Insulet (and the Loop app) uses Omnipod DASH to refer to newer BLE DASH pods.
 
-    The Loop app follows this convention. LoopDocs uses:
+    The Loop app does not support Omnipod 5 pods.
 
-    * **Omnipod**: specific to the older (Eros) pods that require a RileyLink compatible device
-    * **Omnipod DASH**: specific to the new BLE pods
-    * **Omnipod Common**: refers to information that is common to both types of pods
+    LoopDocs uses these terms:
+
+    * **Omnipod**: older (Eros) pods (requires RileyLink compatible device to Loop)
+    * **Omnipod DASH**: newer BLE pods (phone talks directly to pod - no extra device needed to Loop)
+    * **Omnipod Common**: information common to Omnipod and Omnipod DASH
 
 ### Steps to Add a Pump
 
 When adding a pump, the steps you take depend on the type of pump.
 
 * All steps for any pump are presented in order on this page
-* When you see the words "If you are adding `type of pump`" skip ahead in docs to "link", click on the link to move to the next step for that pump
+* When you see the words "If you are adding `type of pump`" skip ahead in docs to "link", click on the link to continue adding that pump
     * In other words, you can skip the next step
 
 Some people prefer to know the steps for their pump before they begin:
