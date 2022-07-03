@@ -2001,14 +2001,46 @@
                 
                 <h1 id="algorithm-faqs">Algorithm FAQs<a class="headerlink" href="#algorithm-faqs" title="Anchor link to this Header on this Page">&para;</a></h1>
 <h2 id="does-loop-learn-or-detect-changes-in-your-insulin-needs">Does Loop "learn" or detect changes in your insulin needs?<a class="headerlink" href="#does-loop-learn-or-detect-changes-in-your-insulin-needs" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>No. Loop assumes the settings you've provided are correct. If outside factors (such as hormones, illness, exercise, medications, etc) affect your underlying settings that determine insulin needs (basals, insulin sensitivity factor, carb ratio) you may need to manually adjust your settings. Loop will not "learn" or "assume" that your underlying needs have changed. Instead, Loop is designed to react to the changes in blood glucose and its insulin dosing decisions are based on the settings that you have entered in the app.</p>
-<p>There is a short-term retrospective analysis built into Loop which will apply a weighted-correction based on the past 60 minutes of blood glucose changes. While this does help some, larger-scale "learning" is not currently a part of Loop's algorithm.</p>
-<p>Perhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings need updating or make temporary adjustments for short term issues. To understand why your settings matter, check out <a href="https://loopkit.github.io/looptips">LoopTips</a>.</p>
+<p>The answer is both Yes and No.</p>
+<p>Yes in that:</p>
+<ul>
+<li>There is a short-term retrospective analysis built into Loop which will apply a weighted-correction based on the past 60 minutes of blood glucose changes.</li>
+<li>Loop works best if you enter an estimate of carbs and absorption time for meals, but it also is fairly forgiving<ul>
+<li>There are discussions on Insulin Counteraction Effect (<abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr>) on a number of pages within LoopDocs:<ul>
+<li><a href="../../operation/features/carbs/#dynamic-carb-absorption">Dynamic Carb Absorption</a></li>
+<li><a href="../../operation/algorithm/prediction/#carbohydrate-effect">Carbohydrate Effect</a></li>
+<li><a href="../../operation/features/ice/">Insulin Counteraction Effect</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>No in that:</p>
+<ul>
+<li>Loop assumes the settings you've provided are correct.<ul>
+<li>Loop does not adjust or "learn" the <a href="../../loop-3/therapy-settings/"><abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr></a> portion of Loop parameters directly<ul>
+<li>It keeps those fixed and user controlled, separate from the dynamic part of the Loop algorithm, which does learn based on short-term patterns</li>
+<li>If outside factors (such as hormones, illness, exercise, medications, etc) affect your underlying <abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr> you may need to manually adjust those settings.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>This LoopTips 3-page section on <a href="https://loopkit.github.io/looptips/settings/overview/">Settings</a> is recommended.</li>
+</ul>
+<p>Perhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings change or make temporary adjustments for short term issues.</p>
+<p>The use of <a href="../../operation/features/workout/">Overrides</a> can be quite helpful for short-term changes.</p>
 <h2 id="what-does-negative-active-insulin-mean">What does negative Active Insulin mean?<a class="headerlink" href="#what-does-negative-active-insulin-mean" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When Loop withholds or suspends some of your expected basal insulin, that starts an accumulation of insulin deficit. Similar to if you have a kinked cannula and insulin is not delivered, you'd call yourself "lacking insulin". That is the same concept of having negative active insulin (aka negative insulin on board). When you have negative insulin on board, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative insulin on board regularly, you probably need to <a href="https://loopkit.github.io/looptips/settings/settings/">adjust/test your settings</a>.</p>
+<p>When Loop withholds or suspends some of your scheduled basal insulin, that starts an accumulation of insulin deficit. If you have a kinked cannula and insulin is not delivered, you'd call yourself "lacking insulin" (negative <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>).</p>
+<p>When Loop reports negative <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> regularly, you probably need to <a href="https://loopkit.github.io/looptips/settings/settings/">adjust/test your settings</a>. Glucose that continues to decrease (away from a meal) when <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> goes negative, is typically a sign that the scheduled basal rate is too high.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Developer Notes</p>
+<p>Scheduled basal rates are meant to counteract your endogenous glucose production. Another way of saying this is that Loop expects your body to be producing an amount of glucose at a rate that is handled by your basal insulin settings.</p>
+<p>Your body doesn't really produce glucose at a fixed rate, but that's how it's modeled in Loop.</p>
+<p>"All models are wrong, but some are useful." (Quote attributed to British statistician George E. P. Box.)</p>
+</div>
 <h2 id="how-is-iob-calculated">How is <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> calculated?<a class="headerlink" href="#how-is-iob-calculated" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Insulin on board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>) is calculated from the amount of insulin delivered above or below the scheduled basal rate. For each amount of insulin delivered within a five minute interval, the insulin model is used to determine how much of that <a href="../../operation/algorithm/prediction/#insulin-effect">insulin is active</a> at over time. Loop is adding up all the amounts over the full Duration of Insulin Action (<abbr title="Duration of Insulin Action, includes the full time insulin is active include a long, low-level tail">DIA</abbr>). The <abbr title="Duration of Insulin Action, includes the full time insulin is active include a long, low-level tail">DIA</abbr> is 6 hours for most rapid insulin; it depends on the model being used by Loop.</p>
-<p><abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is plotted on the Active Insulin Chart in the main Loop display.</p>
+<p>Insulin on board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>) is calculated from the amount of insulin delivered above or below the scheduled basal rate. For each dose of insulin, the insulin model is used to determine how much of that <a href="../../operation/algorithm/prediction/#insulin-effect">insulin is active</a> over time. Loop is adding up all the amounts over the full Duration of Insulin Action (<abbr title="Duration of Insulin Action, includes the full time insulin is active include a long, low-level tail">DIA</abbr>). The <abbr title="Duration of Insulin Action, includes the full time insulin is active include a long, low-level tail">DIA</abbr> is 6 hours for most rapid insulin in the models used by Loop.</p>
+<p><abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is plotted on the <a href="../../loop-3/displays_v3/#active-insulin-chart">Active Insulin Chart</a> in the main Loop display.</p>
 <h2 id="how-does-loop-use-apple-healthkit">How does Loop use Apple HealthKit?<a class="headerlink" href="#how-does-loop-use-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop uses Apple HealthKit as long term storage for glucose, insulin and carbohydrates.  But there is more going on than simple storage.</p>
 <p>It is important that permissions for Loop be properly configured for the Health app.</p>
@@ -2023,8 +2055,8 @@
 <li>Scroll all the way to the bottom</li>
 <li>Tap on Show All Data</li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">To set up Blood Glucose, Carbohydrates and Insulin as Favorites</p>
+<div class="admonition example">
+<p class="admonition-title">To Set Blood Glucose, Carbohydrates and Insulin as Favorites</p>
 <ul>
 <li>Tap on the Health icon (red heart) to open the app</li>
 <li>There's a toolbar at the bottom of the screen (always visible in the app)</li>
@@ -2047,32 +2079,57 @@
 <p>You may also notice that the Dexcom numbers get smoothed out. For example, the Dexcom readings, when they first are read from the transmitter may bounce up and down a bit. The Dexcom app will retrospectively smooth the numbers, changing what is displayed in their app compared to the original reading. The last 3 hours of data from Loop does not show that smoothing - it reports the value sent by the transmitter. If you suspect a sensor is not behaving well, check the Loop glucose plots compared to the Dexcom plots to assist in your evaluation. It might be time to confirm glucose with a fingerstick meter as well.</p>
 <h3 id="carbohydrates-and-apple-healthkit">Carbohydrates and Apple HealthKit<a class="headerlink" href="#carbohydrates-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In Loop 2.2.x, if you set Apple Health app permissions to allow it, Loop will read carbohydrates from the Health app. If you give a third-party app permission to store carbohydrate data in Health, and do not realize that Loop reads that information, you might get unexpected insulin delivery based off those carbs. To avoid that unanticipated behavior, the directions tell you to set permissions to allow Loop to write to carbohydrate storage but not read.</p>
-<p>In Loop 3, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up special parameters when you build the app. The method to make this change has not been added to LoopDocs yet - but it can be done if it is important to you to use a third-party app to record carbohydrates and have Loop read the information and automatically dose with insulin.</p>
+<p>In Loop 3, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up special parameters when you build the app. The insructions for the code customization are not in LoopDocs yet. If it is important to you to use a third-party app to record carbohydrates and have Loop read the information and automatically dose with insulin, <a href="../..#finding-help">ask for help in zulipchat</a>.</p>
 <h3 id="insulin-and-apple-healthkit">Insulin and Apple HealthKit<a class="headerlink" href="#insulin-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The relationship between Loop and Apple HealthKit is very important to understand if you ever need to do one of these actions:</p>
 <ul>
-<li>Dose insulin from another source</li>
+<li>Dose insulin from another source (injection, smart pen)</li>
 <li>Remove insulin that wasn't really given (failed site or forgot to reattach a tubed pump)</li>
 </ul>
+<div class="admonition danger">
+<p class="admonition-title">Be Cautious</p>
+<p>Allowing users to delete events is fairly risky. If a user deletes a dose accidentally, or does not understand the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> impact while in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr>, then Loop may start giving insulin that is not needed.</p>
+<p>One method to deal with insulin that wasn't given is to go <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> for 3 to 6 hours. However, if you take care, you can remove insulin from Loop.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Developer Notes: Pump Events and Insulin Delivery</p>
+<p>Loop stores Pump Events separately from Insulin Delivery. With permissions set to allow Loop to read insulin from Health (recommended), the Insulin Delivery store contains doses entered from Health as well as the subset of pump events that represent doses.</p>
+<p>Pump Events are displayed by tapping an insulin chart on the main screen and viewing the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> tab.</p>
+<p>When you delete a pump event using the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> interface in Loop, the associated entry in Insulin Delivery is not deleted.</p>
+</div>
 <h4 id="bolus">Bolus<a class="headerlink" href="#bolus" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
-<li>When Loop commands the pump to provide a bolus, either manual or automatic, it is recorded in the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and in the Health app insulin data list. (It may take a <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> or two to show up in Health, but it will appear.)</li>
+<li>When Loop commands the pump to provide a bolus, either manual or automatic, it is shown in the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and in the Health app insulin data list. (It may take a <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> or two to show up in Health, but it will appear.)</li>
 <li>When you add insulin, such as from an injection, to the Health app, Loop reads it and adds it to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. It will not be added to the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> because this is not a pump event.<ul>
 <li>Loop 3 adds a new feature that allows you to add non-pump insulin from within the app instead of requiring you to add it inside the Health app</li>
 </ul>
 </li>
-<li>If you delete an entry from Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, but leave that same entry in Health, Loop reads it back from Health.<ul>
+<li>If you delete an entry from the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> list, but leave that same entry in Health, Loop reads it back from Health.<ul>
 <li>It will not show up in the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, but it will still contribute to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>.</li>
 <li>You must delete a pump event from both Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Health data, best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</li>
+<li>If that dose showed up in <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> but you could not find it in Health, look again after the next Loop cycle.</li>
 </ul>
 </li>
 <li>If you delete an entry from Health, but leave that same entry in Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, Loop reports it to Health again.<ul>
-<li>You must delete a pump event from both Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Health data, best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</li>
+<li>You must delete a pump event from both the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> list and Health data, best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</li>
 </ul>
 </li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Pro Tip</p>
+<p>Write on a piece of paper the times and values you think you should delete.</p>
+<p>Look at those values in both Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Health Insulin data list.</p>
+<p>Record what Loop is reporting as <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>.</p>
+<p>Review the values one more time, and then delete those entries in both places. Review <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> again. If you made a mistake, you can refer to that written list and adjust appropriately.</p>
+</div>
 <h4 id="basal">Basal<a class="headerlink" href="#basal" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Loop keeps track of how much basal is delivered so the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is properly reported. In older versions of Loop, there may be occasional display glitches, but the <strong>internal</strong> accounting is correct and updates every <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Developer Notes: Scheduled Basal is Not a Pump Event</p>
+<p>Scheduled basal is not a pump event so you will not see it listed in the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> tab.</p>
+<p>Scheduled basal does not affect <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> when delivered as scheduled.</p>
+<p>The Insulin Delivery store keeps track of the insulin delivered via scheduled basal.</p>
+</div>
 <p>Loop updates the amount of insulin delivered through basal (both scheduled and temporary) to Health at regular intervals - this does not happen every <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> when basal rates are not changing. The updates to Health happen:</p>
 <ul>
 <li>At midnight</li>
