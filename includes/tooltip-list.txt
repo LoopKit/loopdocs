@@ -25,6 +25,7 @@
 *[Finder]: graphical folder and file display on Mac
 *[Glucose Safety Limit]: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit 
 *[git]: a tool for version control
+*[ICE]: Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose
 *[IOB]: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
 *[iOS]: operating system used by Apple Mobile devices (iPhone, iPod)
 *[ISF]: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin
@@ -51,6 +52,7 @@
 *[SAGE]: sensor age on Nightscout site
 *[submodules]: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
 *[Terminal]: interface for entering commands to the computer
+*[Therapy Settings]: Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits
 *[Tokens]: on Nightscout, configure access permissions using tokens
 *[Tooltips]: brief definitions provided for important terms and abbreviations on the website
 *[URL]: website address (Uniform Resource Locator)
