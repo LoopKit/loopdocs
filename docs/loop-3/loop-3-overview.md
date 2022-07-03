@@ -64,7 +64,7 @@ First some orientation:
     * [Add Pump](add-pump.md)
 * Read the rest of the Set Up section with an eye to understanding that while some of the information may not be clear now, as you learn to use the app, you'll know the information exists and can return (or use the search function)
 * Then move on to learning the Loop app starting with the [Open Loop](../operation/loop/open-loop.md) page
-* Once you are comfortable with manually controlling Loop and feel you have your settings adjusted for the algorithm, move on to the [Closed Loop](../operation/loop/clos-loop.md) page
+* Once you are comfortable with manually controlling Loop and feel you have your settings adjusted for the algorithm, move on to the [Closed Loop](../operation/loop/close-loop.md) page
 * Make suggestions if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
 
 ### Experienced Loopers
