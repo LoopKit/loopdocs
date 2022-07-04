@@ -47,3 +47,58 @@ When Loop 3 is released, the build instructions will be updated (please allow a 
 
 
 Those of us who have been testing Loop-dev are very excited for this major update.
+
+## Set Up Loop 3 Overview
+
+!!! success "Congratulations on Building Loop!"
+
+The first time you build Loop 3 on your device, as either a new Looper or an experienced Looper, you will be going through the [Onboarding](onboarding.md) process. But don't click on that link yet.
+
+First some orientation:
+
+### Brand New Loopers
+
+* Please review in detail these 3 pages before you touch any buttons on your app
+    * [Onboarding](onboarding.md)
+    * [Add CGM](add-cgm.md)
+    * [Add Pump](add-pump.md)
+* Read the rest of the Set Up section with an eye to understanding that while some of the information may not be clear now, as you learn to use the app, you'll know the information exists and can return (or use the search function)
+* Then move on to learning the Loop app starting with the [Open Loop](../operation/loop/open-loop.md) page
+* Once you are comfortable with manually controlling Loop and feel you have your settings adjusted for the algorithm, move on to the [Closed Loop](../operation/loop/close-loop.md) page
+* Make suggestions if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
+
+### Experienced Loopers
+
+* There is no harm in completely reviewing the 3 pages mentioned above for new Loopers
+* There is a section for experienced Looper on the Onboarding page.
+* Read the rest of the Set Up pages - you will learn a lot of new Loop 3 features by doing this and save asking mentors questions when the answers are found in LoopDocs
+* Make suggestions if you think parts of LoopDocs could be clarified, especially from the viewpoint of an experienced Looper switching to Loop 3
+    * Please note that sections specific to experienced Loopers are being moved after the sections aimed at new Loopers
+    * The goal is to make LoopDocs easier for new Loopers to navigate
+    * Experienced Loopers can scroll ahead, check the page table of contents or use the search feature
+
+### All Loopers
+
+!!! abstract "Please Review Detailed Pages"
+    There is a lot of detailed information in the Set Up App section.
+
+    * [Displays](displays_v3.md)
+    * [Settings](settings.md)
+    * [Therapy Settings](therapy-settings.md)
+    * [Optional Services](../operation/loop-settings/services.md)
+
+    Status and Commands for :
+
+    * [RileyLink](../operation/loop-settings/rileylink.md)
+    * [Omnipod Common](omnipod.md)
+    * [Medtronic](medtronic.md)
+
+## Safety
+
+Please be informed so you can Loop safely.
+
+Please consult with your health care professional regarding your diabetes management. 
+
+!!! warning "Open Source"
+    * The Loop app is an open source project used by many, but it is not approved for therapy by any government organization. 
+    * **You take full responsibility for building and running this system and do so at your own risk.**

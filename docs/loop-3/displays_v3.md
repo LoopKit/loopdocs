@@ -312,3 +312,16 @@ Work in progress section - more content to come.
 
 This section presents some of the error message screens you may see with Loop.
 
+## CGM Display
+
+Tapping on the CGM icon in the HUD shows more information about the last CGM reading.
+
+For Dexcom G5/G6 and Share, the same screen is obtained by tapping on Loop Settings->CGM.
+
+For Nightscout Remote CGM, the Nightscout URL is opened when tapping on the CGM icon in the HUD, while the credential sections is shown when tapping on Loop Settings->CGM.
+
+
+The graphic below shows the result of tapping on the CGM icon when using a Dexcom G6.  It includes the time of the last reading to the nearest second, along with other information about that sensor and transmitter. It also has an option to go to the Dexcom app on the same device.
+
+![dexcom information screen from ](img/dexcom-info-menu.svg){width="250"}
+{align="center"}

@@ -19,21 +19,48 @@ Loopers can choose from 3 pumps and a simulator:
 * Omnipod DASH
 * Insulin Pump Simulator
 
-When adding a pump, the steps you take depend on the type of pump. 
+!!! info "Omnipod vs Omnipod DASH"
+    Insulet (and the Loop app) uses Omnipod to refer to the older (Eros) pods.
+
+    Insulet (and the Loop app) uses Omnipod DASH to refer to newer BLE DASH pods.
+
+    The Loop app does not support Omnipod 5 pods.
+
+    LoopDocs uses these terms:
+
+    * **Omnipod**: older (Eros) pods (requires RileyLink compatible device to Loop)
+    * **Omnipod DASH**: newer BLE pods (phone talks directly to pod - no extra device needed to Loop)
+    * **Omnipod Common**: information common to Omnipod and Omnipod DASH
+
+### Steps to Add a Pump
+
+When adding a pump, the steps you take depend on the type of pump.
 
 * All steps for any pump are presented in order on this page
-* When you see the words "If you are adding `type of pump`" skip ahead in docs to "link", click on the link to move to the next step for that pump
+* When you see the words "If you are adding `type of pump`" skip ahead in docs to "link", click on the link to continue adding that pump
+    * In other words, you can skip the next step
 
-!!! info "Omnipod vs Omnipod DASH"
-    Insulet uses the term Omnipod to refer to the older (Eros) pods.
+Some people prefer to know the steps for their pump before they begin:
 
-    Insulet uses the term Omnipod DASH to refer to newer BLE DASH pods.
+#### Steps for Omnipod
 
-    The Loop app follows this convention. LoopDocs uses:
+1. [Omnipod Common 1](#omnipod-common-1) (choose default notifications)
+1. [Insulin Type](#insulin-type)
+1. [Select RileyLink](#select-rileylink)
+1. [Omnipod Common 2](#omnipod-common-2) (Pair Pod)
 
-    * **Omnipod**: specific to the older (Eros) pods that require a RileyLink compatible device
-    * **Omnipod DASH**: specific to the new BLE pods
-    * **Omnipod Common**: refers to information that is common to both types of pods
+#### Steps for Omnipod DASH
+
+1. [Omnipod Common 1](#omnipod-common-1) (choose default notifications)
+1. [Insulin Type](#insulin-type)
+1. [Omnipod Common 2](#omnipod-common-2) (Pair Pod)
+
+
+#### Steps for Medtronic
+
+1. [Insulin Type](#insulin-type)
+1. [Select RileyLink](#select-rileylink)
+1. [Medtronic](#medtronic)
 
 
 ## Add Pump
@@ -88,7 +115,7 @@ For Omnipod and Medtronic pumps, a RileyLink compatible device is required for L
 ![img/pod-rl.png](../operation/loop-settings/img/pod-rl.png){width="400"}
 {align="center"}
 
-A list of all RileyLink compatible devices in the nearby area will display in the RileyLink Setup screen. Select your RileyLink by sliding the toggle to display green and then press the blue `Continue` button at the bottom of the screen. 
+A list of all RileyLink compatible devices in the nearby area will display in the RileyLink Setup screen. Select your RileyLink by sliding the toggle to display green and then press the blue `Continue` button at the bottom of the screen.
 
 If your device does not appear:
 
@@ -110,9 +137,9 @@ New Loopers or those who have never used pods before should hit `Cancel`, finish
 
 !!! tip "Try it with Water"
     Some people are fine filling a pod with insulin, priming, attaching the pod and inserting a "live" pod.
-    
+
     Other people want to be a little more cautious.
-    
+
     * If you are the cautious type, fill a pod with water and let it drip into ziplock bag you carry around
     * You can run parallel actions with Loop and your current dosing device
     * You may enjoy reading [Rufus the Bear](https://www.loopandlearn.org/sl-rufus/)
@@ -120,7 +147,7 @@ New Loopers or those who have never used pods before should hit `Cancel`, finish
 
 Experienced Loopers will probably pair a pod immediately, but should still review the new material.
 
-Skip ahead in the docs to read the sections: [Time Zone](#time-zone) and [Final Pump Steps](#final-pump-steps).
+Skip ahead in the docs to read the sections: [Time Zone](#time-zone) and how to [Modify the Pump Connected to Loop](#modify-pump).
 
 ## Medtronic
 
@@ -137,9 +164,9 @@ If you've been following this page to add your Medtronic pump, you have complete
 !!! warning ""
 
     **Loop requires these settings on your Medtronic pump.**
-    
+
     Check with your users guide (can be found online if you don't have one) for more detailed instructions on your model of pump if you're not sure how to accomplish these steps.
-    
+
     If you have basal rates, insulin to sensitivity factor and carb ratios in your pump - these will be overwritten (using the Therapy Setting values) when you connect your pump to Loop. If those rates are important to you, record them prior to continuing.
 
 - Turn off Patterns under the basal menu settings.
@@ -147,10 +174,11 @@ If you've been following this page to add your Medtronic pump, you have complete
 - Set your pump's `Temp Basal Type` to `Insulin Rate (U/hr)`.
 - Set Remote Devices to `ON` and enter any random ID (010101 will work - avoid using all zeros). This setting is found in the pump's Utilities menu (for x23 continue to Connect Devices, Remotes) and turn `ON` the Remote Options.
 - Cancel any currently running extended or dual wave boluses.  Loop cannot loop with those running.
+- If you are using an Enlite CGM through your Medtronic pump, make sure that is configured properly before adding your pump to Loop
 
 ### Connect Pump to Loop
 
-The final step is to connect your Medtronic pump to Loop.  
+The final step is to connect your Medtronic pump to Loop.
 
 - Make sure your RileyLink is turned on and nearby
 - Add your pump's region, color as shown in the graphic below
@@ -215,24 +243,6 @@ Select the Pump Settings display, scroll down to the Change Time Zone line, exam
 Once the Change Time Zone command is tapped, Loop no longer shifts the 24-hour configuration pattern to the old time zone.
 
 If you choose to leave the pump and phone time zones different, the pump icon on the HUD will show the clock icon to remind you.
-
-## Final Pump Steps
-
-!!! warning "Please Review Detailed Pages"
-    There is a lot of detailed information in the rest of this section - probably too much to absorb the first time through - although you should read it at least once.  Keep coming back while you are learning to use Loop in Open Loop.
-
-    * [Displays](displays_v3.md)
-    * [Settings](settings.md)
-    * [Therapy Settings](therapy-settings.md)
-    * [Optional Services](../operation/loop-settings/services.md)
-
-    Status and Commands for :
-
-    * [RileyLink](../operation/loop-settings/rileylink.md)
-    * [Omnipod Common](omnipod.md)
-    * [Medtronic](medtronic.md)
-
-Now that you have added your pump, you are ready to either add a [CGM](add-cgm.md), if you have not done so, or review the material listed above and then proceed to the [Open Loop](../operation/loop/open-loop.md) page.
 
 ## Modify Pump
 

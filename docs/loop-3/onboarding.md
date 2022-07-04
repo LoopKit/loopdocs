@@ -4,11 +4,11 @@
 
 !!! danger "New Loopers Should NOT Use Loop-dev Before it is Released"
     Once Loop-dev is released, this Loop 3 pages will be moved to the Set Up App section of LoopDocs.
-    
+
     To make life easier for those of us preparing the new documentation, the wording on many pages in the Loop 3 section is set in the future - after the release.
-    
+
     This is **not** an invitation for brand-new loopers to build Loop-dev as their first looping adventure.
-    
+
     After the release, this section will be replaced with the words: If this is your first time using Loop - congratulations!
 
 It is a good idea to review this page, _and the rest of what is now the Loop 3 Section (and will become the Set Up App section once Loop-dev is released),_ before pressing any buttons on your phone with your new Loop 3 app.
@@ -21,7 +21,7 @@ This link shows a [video of onboarding](https://drive.google.com/file/d/1NkS-YGR
 
 There are some mechanics associated with entering and editing values with Loop 3. Come back to this section if you have trouble later when you want to enter or modify a setting.
 
-* If you want more information about a specific therapy setting, tap on the information icon on that screen.
+* If you want more information about a specific therapy setting, tap on the information icon on that screen or review the detailed [Therapy Settings](therapy-settings.md) page in LoopDocs
 * Some screens only have one value for a given quantity
     * In that case you see the value that you can tap on and edit
     * If you tap on the value and the `Confirm Setting` or `Save` button is inactive (this can happen on the delivery limits screen), simply move the picker value to make the button active
@@ -53,7 +53,7 @@ Each of the onboarding steps is presented in order on this page. It is a good id
 
 !!! abstract "Settings Help"
     If your settings are incorrect when starting Loop (basal rates, insulin sensitivity, carb ratio, etc), you may need time to identify which settings need to be adjusted. You may be tired of reading this, but please remain in Open Loop until you've verified your settings.
-    
+
     If you need help with your settings adjustment, head over to LoopTips for some [initial settings help](https://loopkit.github.io/looptips/settings/settings/).
 
 ### Welcome to Loop
@@ -81,7 +81,7 @@ You can reach the permissions screen later, if you want to review it. Open the A
 
 !!! warning "Advanced Users Only"
     What about [reading carbohydrates from Health](#carb-data-source) with Loop?
-    
+
 ### Connect Loop to Nightscout
 
 !!! question "Nightscout"
@@ -97,7 +97,7 @@ The next screen, shown on the left of the graphic below, enables the user to bot
 
 If the user selects the `Use Nightscout with Loop`:
 
-* The screen on the right of the graphic below is presented to enter your Nightscout URL (remember to use https: with the "s") and API_SECRET. 
+* The screen on the right of the graphic below is presented to enter your Nightscout URL (remember to use https: with the "s") and API_SECRET.
 * Once those credentials are accepted, you can choose whether you want to import your settings from your Nightscout profile.
     * For new Loopers, any information populated on the Nightscout site will be downloaded
     * For current Loopers, this includes all the overrides you have previously saved.
@@ -109,15 +109,46 @@ If the user selects the `Use Nightscout with Loop`:
 {align="center"}
 
 
-### Therapy Settings
+### Therapy Settings (Onboarding)
 
-The following screens take you through the therapy settings one at a time.
+The next set of onboarding screens take you through the therapy settings one at a time.
 
-The therapy settings are the heart of how Loop makes predictions. If your settings are not correct, the predictions will not be correct. 
+The therapy settings are the heart of how Loop makes predictions. If your settings are not correct, the predictions will not be correct.
 
-* This is yet another reminder to start with Open Loop after you enter what you think are good settings for Basal, Insulin Sensitivity Factor and Carb Ratio.
+* This is yet another reminder to new Loopers:
+    * Please start with Open Loop after you enter what you think are good settings for Basal, Insulin Sensitivity Factor and Carb Ratio.
 * But wait - what are these other settings and what do they mean?
-    * A brief summary of each therapy setting is provided on this page, but there is a more detailed [Therapy Settings](therapy-settings.md) page as well for your review.
+    * An informational graphic is provided by the app before you are asked to enter or confirm each therapy setting
+    * A brief summary of each therapy setting is provided on this Onboarding page, but there is a more detailed [Therapy Settings](therapy-settings.md) page available.
+        * Each item in the onboarding therapy settings below has a link that will take you to the appropriate section of the detailed Therapy Settings page.
+        * Click on your browser back button to return to your place on this Onboarding page
+    * In order, while onboarding, you will see:
+        * Glucose Safety Limit
+        * Correction Range
+        * Pre-Meal Range
+        * Basal Rates
+        * Delivery Limits
+            * Maximum Basal Rate
+            * Maximum Bolus
+        * Insulin Model
+        * Carb Ratios
+        * Insulin Sensitivites
+
+!!! warning "Warning - Outside Typical?"
+    The Therapy Settings have "guardrails" to warn you if your settings seem to be outside of typical.
+
+    * Some indications are based on what experienced Looper used from surveying actual users
+    * Some indications are for safety
+    * It's fine to put Glucose Safety or Correction Ranges **higher** than is typical
+    * It's fine to put Delivery Limits **lower** than is typical
+
+    Take yellow indications with a grain of salt
+
+    * It's OK to ignore "yellow" warnings when you are being conservative
+    * It's OK to ignore "yellow" warnings if you're experienced and want to be aggressive
+
+    A red limit cannot be exceeded without modify the code itself.
+
 
 #### Glucose Safety Limit
 
@@ -131,7 +162,7 @@ There are some related settings: [Correction Range](therapy-settings.md#correcti
 
 The [Correction Range](therapy-settings.md#correction-range) is the glucose range that you would like Loop to use when providing automated corrections. Correction range is not necessarily the same glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but use a desired glucose range of 70-180 mg/dL (3.9-10 mmol/L) when discussing things with your endo about "time in range".
 
-If you ask Loop for a [manual bolus recommendation](features.md#manual-bolus) while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit. Note - this is only if you request the bolus recommendation.  Loop will **not** automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of the correction range. 
+If you ask Loop for a [manual bolus recommendation](features.md#manual-bolus) while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit. Note - this is only if you request the bolus recommendation.  Loop will **not** automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of the correction range.
 
 
 #### Pre-Meal Range
@@ -143,13 +174,13 @@ If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-
 
 #### Basal Rates
 
-Only one basal schedule may be configured in the Loop app and the schedule must start at midnight. 
+Only one basal schedule may be configured in the Loop app and the schedule must start at midnight.
 
 As a new Looper onboarding with Loop, or anyone onboarding basal rates before a pump is added, you are limited to increments of 0.05 U/hr for basal rates and 0.00 U/hr is not allowed. Put values close to what you actually use because the values entered here affect what is allowed as a maximum basal rate in the [Delivery Limits](#delivery-limits) section.
 
 Once a pump is added, the basal increments will match that for your particular pump. Once you complete onboarding and add your pump, you can then return to Therapy Settings and adjust the Basal rates for your particular pump.
 
-During onboarding, the basal rates are saved by Loop.  Once you've added a pump, those same rates will be saved to your pump. 
+During onboarding, the basal rates are saved by Loop.  Once you've added a pump, those same rates will be saved to your pump.
 
 ##### Medtronic Pump Users
 
@@ -178,7 +209,11 @@ The Maximum Basal the app allows you to choose will be limited based on the basa
 
 #### Maximum Basal Rate
 
-Maximum basal rate will cap the the maximum temporary basal rate that the Loop is allowed to issue to meet your correction range when you are in closed loop and you have selected a [Dosing Strategy](settings.md#dosing-strategy) of Temp Basal Only. Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. When you are first beginning to use Loop, it is wise to start conservative (low) in setting your maximum basal rate. 
+Maximum basal rate will cap the the maximum temporary basal rate that the Loop is allowed to issue to meet your correction range when you are in Closed Loop and you have selected a [Dosing Strategy](settings.md#dosing-strategy) of Temp Basal Only.
+
+If you are a new looper, it is recommended you start with max basal set at 2-3 times your highest scheduled basal rate. This is for safety as you are ironing out your settings. If you choose 2 times your highest scheduled basal you may get a message informing you this is "lower than typical" - ignore this - take it as a sign you are putting safety first as a new looper.
+
+Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. With Loop 3, the app will not allow you to exceed 6.4 times your highest scheduled rate.
 
 #### **Maximum Bolus**
 
@@ -259,7 +294,7 @@ Loop can handle glucose units of mg/dL or mmol/L. The units Loop uses match what
 
 ## Experienced Loopers
 
-The first time you build Loop 3 on a device, you will need to go through the onboarding process too. 
+The first time you build Loop 3 on a device, you will need to go through the onboarding process too.
 
 * If you build Loop 3 over Loop 2.2.x, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build Loop 3 and keep using the same pod.)
 
@@ -267,14 +302,22 @@ The first time you build Loop 3 on a device, you will need to go through the onb
 
 * If you are building on a device that does not have an existing Loop app and you choose not to use Nightscout, then follow the new Looper [Onboarding Steps](#onboarding-steps).
 
-You will be presented with an information screen describing the setting (with a continue button) followed by your current settings (if available), which you must confirm to keep - or can modify and then confirm to change. Depending on the device you are using, you may need to scroll down to see the Continue or Save buttons for each setting. 
+You will be presented with an information screen describing the setting (with a continue button) followed by your current settings (if available), which you must confirm to keep - or can modify and then confirm to change. Depending on the device you are using, you may need to scroll down to see the Continue or Save buttons for each setting.
 
+!!! tip "What is in my Nightscout Profile"
+    To check what is in your Nightscout profile that Loop would use as part of onboarding, follow these instructions.
+
+    Note: you will get a json file - look that up using your favorite internet search method.
+
+    1. Open your Nightscout URL
+    1. Click in the URL address and append this text "/api/v1/profile.json"
+    1. You can download the file and examine it if you are interested
 
 ### Check Imported Settings
 
 !!! warning "WARNING"
 
-    The new onboarding forces you to check all your imported [Therapy Settings](#therapy-settings) but there may be other settings you need to check as well.
+    The new onboarding forces you to check all your imported [Therapy Settings (Onboarding Summary)](#therapy-settings-onboarding) but there may be other settings you need to check as well.
 
     * Dosing Strategy: may be at the default value of `Temp Basal Only`, even if you were using `Automatic Bolus` with Loop 2.x.x
     * Overrides: verify these are populated as expected
