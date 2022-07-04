@@ -1588,6 +1588,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#replace-pod" class="md-nav__link">
+    Replace Pod
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
     Configuration
   </a>
@@ -2095,6 +2102,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#replace-pod" class="md-nav__link">
+    Replace Pod
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
     Configuration
   </a>
@@ -2351,11 +2365,42 @@
 <p>Some additional details from the most recent pod status response message are displayed if you tap the Device Details row, as shown in the graphic below. Most people will not need to view this.</p>
 <p>The graphic shows an example for Omnipod on the left, Omnipod DASH (TWI BOARD) in the middle and Omnipod DASH (NXP <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr>) on the right. Do not worry about the different board styles (Device Name) for DASH. The developers did that for you. If you are asking for help from a mentor - they may request this information.</p>
 <p align="center"><img alt="section of Pod Status screen with Pod Details" src="../img/loop-3-omnipod-device-details.svg" width="600" /></p>
+<h2 id="replace-pod">Replace Pod<a class="headerlink" href="#replace-pod" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>When you tap on the <code>Replace Pod</code> row, the <code>Deactivate Pod</code> screen, shown below, is displayed. </p>
+<ul>
+<li>If you tap <code>Deactivate Pod</code> on this screen, insulin delivery stops for this pod and cannot be resumed</li>
+<li>If you have changed your mind, tap Back or Cancel to continue using the pod</li>
+</ul>
+<p align="center"><img alt="Deactivate pod screen" src="../img/loop-3-omnipod-deactivate.svg" width="300" /></p>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="notification-settings">Notification Settings<a class="headerlink" href="#notification-settings" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Placeholder for the Notification Settings section.</p>
+<p>When you tap on the <code>Notifcation Settings</code> row, the graphic below is displayed. The notifications are a combination of beeps on the pod with associated <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alerts on the phone app that must be acknowledged to prevent future beeps.</p>
+<ul>
+<li>Expiration Reminder Default: changes the reminder time for any future pod (not the current one)</li>
+<li>Scheduled Reminder: affects the reminder for the current pod (not future pods)<ul>
+<li>If no pod is connected, you will not see the Scheduled Reminder section</li>
+</ul>
+</li>
+<li>Low Reservoir Reminder: changes the reminder level for the current pod and all future pods<ul>
+<li>If no pod is connected, the app will not allow you to modify this setting</li>
+<li>Change it after the next pod is paired</li>
+</ul>
+</li>
+<li>Critical Alerts: Information row about which alerts can be silenced by phone settings</li>
+</ul>
+<p align="center"><img alt="Notification selection screen to set up default reminders" src="../img/loop-3-omnipod-notification.svg" width="300" /></p>
 <h3 id="confidence-reminders">Confidence Reminders<a class="headerlink" href="#confidence-reminders" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Placeholder for the Confidence Reminders section.</p>
+<p>When you tap on the <code>Confidence Reminder</code> row, the graphic below is displayed.  You can choose from three levels of audible responses that Loop requests from the pod:</p>
+<ul>
+<li>Disabled: no audible pod alerts to acknowledge commands</li>
+<li>Enabled: each manual command provides an audible sound to acknowledge it:<ul>
+<li>For manual dosage change, the pod beeps at both the beginning and end of the manual command.</li>
+<li>For automated dosage change, the pod does not beep.</li>
+</ul>
+</li>
+<li>Extended: Automated dosage change beeps, similar to the manual commands when set to <code>Enabled</code></li>
+</ul>
+<p align="center"><img alt="Confidence reminder selection screen, the current selection is enabled as indicated by the blue check mark" src="../img/loop-3-omnipod-confidence.svg" width="300" /></p>
 <h3 id="insulin-type">Insulin Type<a class="headerlink" href="#insulin-type" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You selected <a href="../add-pump/#insulin-type">insulin type</a> when connecting to this pump.</p>
 <p>Tap on this row if you switch to a different type of insulin.</p>
@@ -2364,12 +2409,19 @@
 <li>If you switch between rapid and ultra-rapid insulin, you need to let Loop know so it will use the appropriate model</li>
 </ul>
 <h2 id="previous-pod-information">Previous Pod Information<a class="headerlink" href="#previous-pod-information" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Placeholder for the Previous Pod Information section.</p>
+<p>When you tap on the <code>Previous Pod Information</code> row, a graphic similar to those shown below is displayed. This provides summary information about the pod before the one currently in use. </p>
+<p>If the previous pod had a fault and you choose to report it to Insulet, this screen reports the PDM reference code that Insulet uses in their tracking system.</p>
+<p align="center"><img alt="previous pod information screen, both for DASH, left was nominal pod and right had a pod fault" src="../img/loop-3-omnipod-previous.svg" width="600" /></p>
+<div class="admonition bug">
+<p class="admonition-title">Do Not Call Insulet about 0x31 Faults</p>
+<p>If you should happen to get an 0x31 (last 3 digits of the PDM ref code of "-049") fault, do <strong>not</strong> report this to Insulet and do <strong>not</strong> ask for a replacement. This means Loop did not ensure the pod was in the correct state to accept a command. In other words, it was a bug in the Loop code. </p>
+<p>We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed on July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a Loop Report and rebuild if you have an older version of the development code.</p>
+</div>
 <h3 id="pod-error-messages">Pod Error Messages<a class="headerlink" href="#pod-error-messages" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This section presents some of the error message screens you may see specific to pods.</p>
 <h4 id="pod-faults">Pod Faults<a class="headerlink" href="#pod-faults" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You are likely to hear a pod fault before Loop notices. If your phone is locked, Loop only checks status every 5 minutes for Omnipod or 3 minutes for Omnipod DASH.</p>
-<p>Unlock your phone, open Loop, navigate to the Pod Status screen and tap on Deactivate Pod to stop the noise. The pod fault - even if it does not, yet, show up in the HUD or the Pod Status screen, will be picked up by the process of hitting Deactivate Pod.</p>
+<p>Unlock your phone, open Loop, navigate to the Pod Status screen and tap on Deactivate Pod to stop the noise. The pod fault - even if it does not show up in the HUD or the Pod Status screen, will be picked up by the process of hitting Deactivate Pod. You can then view the Fault information in the <a href="#previous-pod-information">Previous Pod Information</a> screen.</p>
                 
               
               
