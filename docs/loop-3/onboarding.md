@@ -26,7 +26,7 @@ There are some mechanics associated with entering and editing values with Loop 3
     * In that case you see the value that you can tap on and edit
     * If you tap on the value and the `Confirm Setting` or `Save` button is inactive (this can happen on the delivery limits screen), simply move the picker value to make the button active
 * Some screens allow different values for different times of day
-    * During onboarding as a new looper, you must tap the + sign to get the midnight time slot (all scheduled entries must start at midnight)
+    * During onboarding as a new looper, you must tap the &plus; sign to get the midnight time slot (all scheduled entries must start at midnight)
     * When you tap +, you can add an entry to any time-slot that does not already have an entry
         - Adjust the time and value(s) as desired (the last available time slot is 11:30 pm)
         - Tap Add to include this entry in your schedule

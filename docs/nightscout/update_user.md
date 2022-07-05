@@ -145,7 +145,7 @@ You can authenticate with your API_SECRET using either of these methods:
 
 * Click on the Lock symbol on upper right on main display (requires careportal plugin to be enabled) and add your API_SECRET
 
-An authenticated site, with careportal plugin enabled, will show a `+` at upper right of the main display instead of a lock symbol. Tapping on the `+` gives you access to the careportal.
+An authenticated site, with careportal plugin enabled, will show a &plus; at upper right of the main display instead of a lock symbol. Tapping on the &plus; gives you access to the careportal.
 
 
 ## Nightscout Version Update

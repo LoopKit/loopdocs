@@ -34,8 +34,8 @@ The next screen will offer two areas where you will need to enter information:
 
 * **Basal Rates:** Enter your scheduled basal rates, beginning at midnight. Consistent with Omnipod use, the scheduled basal rates have a maximum of 24 entries, no 0 u/hr entries are allowed, and the rate increments are 0.05 u/hr.
 
-    * Start by tapping the `+` at the top right of the Basal Rates screen to enter the first value.  
-    * Tap `+` to add rows as needed.
+    * Start by tapping the &plus; at the top right of the Basal Rates screen to enter the first value.  
+    * Tap &plus; to add rows as needed.
     * When you are done, hit the `Back` button at the upper left.
     * Note - once a pod is paired to the Loop app, you will press `Sync to Pod` instead of `Back` to save your basal rates - you only see `Back` when no pod is paired.
     * To delete a basal rate or rearrange the order, first tap `Edit` on upper right and then use standard Apple gestures (for your phone iOS) to delete or move rows.

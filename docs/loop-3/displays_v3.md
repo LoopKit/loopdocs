@@ -272,7 +272,7 @@ Loop has a widget which can be added to the lock screen. The example graphic bel
 New to Loop or never added a widget before:
 
 * There is a difference in behavior between "new-style" Widgets and "old-style" Widgets
-    * New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or added with the "+" button in edit mode
+    * New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or added with the &plus; button in edit mode
     * Old-Style Widgets: like that for Loop use a different method to install
 * Make sure your phone is unlocked, then swipe from the Home Screen to get to Today View
     * You can't edit the screen if you start from a locked phone
