@@ -38,12 +38,12 @@
 
 ## Build Select Script
 
-The build procedure uses a script to make it easier to download and build the app.  This script supports the current version of [Loop master](../faqs/release-faqs.md#current-release).
+We show below how to download the Build Select Script and build [Loop master](../faqs/release-faqs.md#current-release).
 
 !!! info "Extra Information"
     The build select scrip, maintained by the Loop and Learn community, simplifies many of the typical tasks needed to successfully build and rebuild Loop. The directions on this page are to build Loop Master.
 
-    In addition, the script supports building a companion app called Loop Follow, and a commonly used fork of Loop called FreeAPS. Follow these links for more information.
+    The Script also can be used to build a companion app called Loop Follow, and a commonly used fork of Loop called FreeAPS.  Follow these links (to other websites) for more information.
 
     * Information about [Loop Follow](https://github.com/jonfawcett/LoopFollow#readme)
     * Information specific to [FreeAPS](https://www.loopandlearn.org/freeapsdoc/)
@@ -51,20 +51,20 @@ The build procedure uses a script to make it easier to download and build the ap
 
 #### Open Terminal
 
+!!! danger "Rebuild / Update on Same Computer?"
+    If you used this same computer to build Loop previously and you did not delete provisioning profiles - you will not get a full year with the app.
+
+    Go to [Updating: Step 4a](updating.md#step-4a-delete-old-provisioning-profiles) now and do that step if you missed it.
+
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with an M1 Mac computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta-on-m1-computer) first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.
 
 #### Download
 
+These instructions show each step needed to download Loop using the Build-Select script.
 
 !!! success "Video using Build-Select"
 
-    If you prefer to watch a video of downloading and building with the build-select script, this [YouTube video](https://youtu.be/gddhljzsNkM), prepared by the Loop and Learn team, follows the steps on this page.
-
-These instructions show each step needed to download Loop using the Build-Select script.
-
-* Please read what is on the screen as you progress.
-* Adjust font size as directed if you have difficulty seeing the directions.
-
+    The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to build Loop Master. We recommend reading the written directions while watching the video - pause the video as needed.
 
 There is a copy button located by hovering on the bottom right side of the labeled block of text below.  When you click on it, the words in the block (below the label) are copied into your paste buffer. Paste those words into the terminal and return. Read the instructions and follow them. The graphics below represent each step needed to download the code.
 
@@ -77,6 +77,9 @@ There is a copy button located by hovering on the bottom right side of the label
 
 ![paste the script line into terminal](img/build-select-01.png){width="750"}
 {align="center"}
+
+* Please read what is on the screen as you progress.
+* Adjust font size as directed if you have difficulty seeing the directions.
 
 You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.
 
