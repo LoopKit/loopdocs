@@ -2135,28 +2135,29 @@
 </ul>
 </div>
 <h2 id="build-select-script">Build Select Script<a class="headerlink" href="#build-select-script" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The build procedure uses a script to make it easier to download and build the app.  This script supports the current version of <a href="../../faqs/release-faqs/#current-release">Loop master</a>.</p>
+<p>We show below how to download the Build Select Script and build <a href="../../faqs/release-faqs/#current-release">Loop master</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Extra Information</p>
 <p>The build select scrip, maintained by the Loop and Learn community, simplifies many of the typical tasks needed to successfully build and rebuild Loop. The directions on this page are to build Loop Master.</p>
-<p>In addition, the script supports building a companion app called Loop Follow, and a commonly used fork of Loop called FreeAPS. Follow these links for more information.</p>
+<p>The Script also can be used to build a companion app called Loop Follow, and a commonly used fork of Loop called FreeAPS.  Follow these links (to other websites) for more information.</p>
 <ul>
 <li>Information about <a href="https://github.com/jonfawcett/LoopFollow#readme">Loop Follow</a></li>
 <li>Information specific to <a href="https://www.loopandlearn.org/freeapsdoc/">FreeAPS</a></li>
 </ul>
 </div>
 <h4 id="open-terminal">Open <abbr title="interface for entering commands to the computer">Terminal</abbr><a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition danger">
+<p class="admonition-title">Rebuild / Update on Same Computer?</p>
+<p>If you used this same computer to build Loop previously and you did not delete provisioning profiles - you will not get a full year with the app.</p>
+<p>Go to <a href="../updating/#step-4a-delete-old-provisioning-profiles">Updating: Step 4a</a> now and do that step if you missed it.</p>
+</div>
 <p>Go to the <abbr title="graphical folder and file display on Mac">Finder</abbr> app, click on Applications, then open the Utilities folder.  Locate the <abbr title="interface for entering commands to the computer">Terminal</abbr> app and double-click <abbr title="interface for entering commands to the computer">Terminal</abbr> to open a terminal window. (Folks with an M1 Mac computer, make sure you <a href="../step1/#configure-terminal-app-for-rosetta-on-m1-computer">configured the terminal app for rosetta</a> first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.</p>
 <h4 id="download">Download<a class="headerlink" href="#download" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>These instructions show each step needed to download Loop using the Build-Select script.</p>
 <div class="admonition success">
 <p class="admonition-title">Video using Build-Select</p>
-<p>If you prefer to watch a video of downloading and building with the build-select script, this <a href="https://youtu.be/gddhljzsNkM">YouTube video</a>, prepared by the Loop and Learn team, follows the steps on this page.</p>
+<p>The Loop and Learn team prepared this <a href="https://youtu.be/gddhljzsNkM">YouTube video</a> showing how to build Loop Master. We recommend reading the written directions while watching the video - pause the video as needed.</p>
 </div>
-<p>These instructions show each step needed to download Loop using the Build-Select script.</p>
-<ul>
-<li>Please read what is on the screen as you progress.</li>
-<li>Adjust font size as directed if you have difficulty seeing the directions.</li>
-</ul>
 <p>There is a copy button located by hovering on the bottom right side of the labeled block of text below.  When you click on it, the words in the block (below the label) are copied into your paste buffer. Paste those words into the terminal and return. Read the instructions and follow them. The graphics below represent each step needed to download the code.</p>
 <div class="highlight"><span class="filename">Copy and Paste to start the Build-Select script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)&quot;
 </code></pre></div>
@@ -2164,6 +2165,10 @@
 <p>If you've built using the build-select script before and think the command looks a little different, you are correct.  Copy and paste the command as shown.  This uses a more explicit path to the script.</p>
 </div>
 <p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
+<ul>
+<li>Please read what is on the screen as you progress.</li>
+<li>Adjust font size as directed if you have difficulty seeing the directions.</li>
+</ul>
 <p>You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.</p>
 <p>Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and return.</p>
 <p align="center"><img alt="choose to build Loop" src="../img/build-select-05.png" width="750" /></p>

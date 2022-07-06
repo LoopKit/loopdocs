@@ -2394,10 +2394,19 @@
 <h3 id="pump-status-icon">Pump Status Icon<a class="headerlink" href="#pump-status-icon" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The nominal pump icon displays high-level status information for the pump with two main components: left side is the basal delivery status and right side is the reservoir status. For Pods, a lifecycle line is displayed underneath the pump icon during the last 24 hours of nominal pod life.</p>
 <ul>
-<li>The basal delivery status displays the enacted temp basal change relative to the scheduled basal.  For example, for a scheduled basal of 1.0 U/hr<ul>
-<li>If the app set a temp basal rate of 0.2 U/hr, the icon displays -0.8 U</li>
-<li>If the app set a temp basal rate of 1.5 U/hr, the icon displays +0.5 U</li>
+<li>The basal delivery status displays the enacted temp basal change relative to the scheduled basal.  For example, for a scheduled basal of 0.45 U/hr<ul>
+<li>If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.25 U</li>
+<li>If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.05 U</li>
 <li>When scheduled basal is running, the icon displays 0.0 U</li>
+</ul>
+</li>
+<li>But what about <a href="..operation/features/workout.md">Overrides</a>?<ul>
+<li>Using scheduled basal of 0.45 U/hr with override set to 70%, the "override basal rate" is 0.315 U/hr</li>
+<li>That is a value that cannot be set in the pump, but Loop uses it for <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> calculations<ul>
+<li>If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.115 U</li>
+<li>If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.185 U</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>The reservoir status indicates insulin remaining graphically and displays a value when less than 50 U remain.<ul>
@@ -2525,7 +2534,7 @@
 <p>New to Loop or never added a widget before:</p>
 <ul>
 <li>There is a difference in behavior between "new-style" Widgets and "old-style" Widgets<ul>
-<li>New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or added with the "+" button in edit mode</li>
+<li>New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or added with the &plus; button in edit mode</li>
 <li>Old-Style Widgets: like that for Loop use a different method to install</li>
 </ul>
 </li>
