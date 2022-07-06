@@ -89,7 +89,7 @@ Your Basal Rate of insulin is the number of units per hour that you want to use 
 
 [Guardrails for Basal Rates](#guardrails-for-basal-rates)
 
-#### Delivery Limits
+### Delivery Limits
 
 Delivery Limits are safety guardrails for your insulin delivery.
 
@@ -100,7 +100,7 @@ Delivery Limits are safety guardrails for your insulin delivery.
 * You may need to put your finger on part of the screen away from the picker wheel and scroll up and down to see the other setting
 * Make sure both Maximum Basal Rate and Maximum Bolus have the desired value before hitting `Save`
 
-#### Maximum Basal Rate
+### Maximum Basal Rate
 
 Maximum Basal Rate is the maximum automatically adjusted basal rate that Loop is allowed to enact to help reach your correction range. Some users choose a value 2, 3, or 4 times their highest scheduled basal rate. Work with your healthcare provider to choose a value that is higher than your highest scheduled basal rate, but as conservative or aggressive as you feel comfortable.
 
@@ -108,14 +108,18 @@ Maximum Basal Rate is the maximum automatically adjusted basal rate that Loop is
 
 ### Maximum Bolus
 
-Maximum Bolus is the highest bolus amount that you will allow Loop to recommend at one time to cover carbs or bring down high glucose. If your typical max bolus supports it, consider choosing a value such as 9 U or 9.9 U to avoid accidental entry of values over 10 U when the intended value was 1.5 U.
+Maximum Bolus is the highest bolus amount that you will allow Loop to recommend at one time to cover carbs or bring down high glucose.
+
+If you manually enter a value in the Bolus screen that is greater than the Maximum Bolus setting, Loop will show a warning message and refuse to bolus that amount.
+
+For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.
 
 [Guardrails for Maximum Bolus](#guardrails-for-maximum-bolus)
 
 
-### Insulin 
+### Insulin Model 
 
-Loop selects a specific insulin action model based on your entry here and when you add a pump.
+Loop selects a specific insulin action model based on your entry here and when you add a [pump](add-pump.md#insulin-type).
 
 This setting must be entered during onboarding regardless of the type of insulin you will use in your pump.
 
@@ -153,7 +157,7 @@ Loop has guardrails for Therapy Settings, provided for reference below.
 !!! tip "Experienced Loopers"
     The guardrails for each therapy setting used by Loop can be modified with [Code Customization](../build/code_customization.md).
 
-For the picker, from which the user selects a value, the font color has the following meaning:
+The font color in the value picker has the following meaning:
 
 * **black**: value is within the range "recommended by Loop"
 * **yellow**: value is outside the range "typical" for Loopers
