@@ -4,17 +4,17 @@
 Loop 3.0 will be the next big release. It is being developed and tested under the dev branch (Loop-dev). Loop-dev has significant improvements and looks different (in some ways) from the Loop 2.2.x versions.
 
 !!! info "Loop-dev"
-    At the current time, the dev branch of Loop is under test by experienced loopers. If you are testing Loop-dev, the version number reported on your settings screen is Loop v2.3.0 (57). 
+    At the current time, the dev branch of Loop is under test by experienced loopers. If you are testing Loop-dev, the version number reported on your settings screen is Loop v2.3.0 (57).
 
     To report to developers about which particular version of Loop-dev you are running, look at the top of the [Loop Report](settings.md#issue-a-loop-report) under `Build Details`. The 7-digit alphanumeric indication to the right of workspaceGitRevision is sufficient.
-    
+
     When this version is released, it will be Loop 3.0 and the interface for Loop 3.x versions will use this updated documentation.
 
 
 !!! danger ""
 
     To make life easier for those of us preparing the new documentation, the wording on many pages in the Loop 3 section is set in the future - after the release
-    
+
     This page will be updated and it and the rest of the Loop 3 section will be moved to Set Up App with the Loop 2.2.x version maintained under a sub-menu
 
 
@@ -42,7 +42,7 @@ When Loop 3 is released, the build instructions will be updated (please allow a 
 
 !!! warning "Users of dev Branch"
     It is up to you to review these new pages for the information you need.
-    
+
     Please subscribe to the [Documentation Stream](https://loop.zulipchat.com/#narrow/stream/270362-documentation) on zulipchat. You will see a post there every time LoopDocs is updated.
 
 
@@ -80,6 +80,7 @@ First a suggestion and then some orientation:
 * There is no harm in completely reviewing the 3 pages mentioned above for new Loopers
 * There is a section for experienced Looper on the Onboarding page.
 * Read the rest of the pages listed under [All Loopers](#all-loopers), below
+    - Some of the screens and user interface has changed with Loop 3
     - Many of the new Loop 3 features are described
     - Reach out if information is missing or needs to be clarified
 * LoopDocs design
@@ -89,26 +90,25 @@ First a suggestion and then some orientation:
 
 ### All Loopers
 
-!!! abstract "Please Review Detailed Pages"
-    There is a lot of detailed information in the Set Up App section.
+There is a lot of detailed Loop information in these pages.
 
-    * [Displays](displays_v3.md)
-    * [Settings](settings.md)
-    * [Therapy Settings](therapy-settings.md)
-    * [Optional Services](../operation/loop-settings/services.md)
+* [Displays](displays_v3.md)
+* [Settings](settings.md)
+* [Therapy Settings](therapy-settings.md)
+* [Optional Services](../operation/loop-settings/services.md)
 
-    Status and Commands for :
+There is a lot of detailed information about Status and Commands for:
 
-    * [RileyLink](../operation/loop-settings/rileylink.md)
-    * [Omnipod Common](omnipod.md)
-    * [Medtronic](medtronic.md)
+* [RileyLink](../operation/loop-settings/rileylink.md)
+* [Omnipod Common](omnipod.md)
+* [Medtronic](medtronic.md)
 
 ## Safety
 
 Please be informed so you can Loop safely.
 
-Please consult with your health care professional regarding your diabetes management. 
+Please consult with your health care professional regarding your diabetes management.
 
 !!! warning "Open Source"
-    * The Loop app is an open source project used by many, but it is not approved for therapy by any government organization. 
+    * The Loop app is an open source project used by many, but it is not approved for therapy by any government organization.
     * **You take full responsibility for building and running this system and do so at your own risk.**
