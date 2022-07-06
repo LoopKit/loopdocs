@@ -209,10 +209,15 @@ The table below shows examples of the Glucose Status Icon and what the icon mean
 
 The nominal pump icon displays high-level status information for the pump with two main components: left side is the basal delivery status and right side is the reservoir status. For Pods, a lifecycle line is displayed underneath the pump icon during the last 24 hours of nominal pod life.
 
-* The basal delivery status displays the enacted temp basal change relative to the scheduled basal.  For example, for a scheduled basal of 1.0 U/hr
-    * If the app set a temp basal rate of 0.2 U/hr, the icon displays -0.8 U
-    * If the app set a temp basal rate of 1.5 U/hr, the icon displays +0.5 U
+* The basal delivery status displays the enacted temp basal change relative to the scheduled basal.  For example, for a scheduled basal of 0.45 U/hr
+    * If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.25 U
+    * If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.05 U
     * When scheduled basal is running, the icon displays 0.0 U
+* But what about [Overrides](..operation/features/workout.md)?
+    * Using scheduled basal of 0.45 U/hr with override set to 70%, the "override basal rate" is 0.315 U/hr
+    * That is a value that cannot be set in the pump, but Loop uses it for IOB calculations
+        * If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.115 U
+        * If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.185 U
 * The reservoir status indicates insulin remaining graphically and displays a value when less than 50 U remain.
     * For Medtronic Pumps, the reservoir display indicates the level graphically.
     * For Pods, the reservoir graphic is constant until the pod begins to report reservoir level when less than 50 U remain.
