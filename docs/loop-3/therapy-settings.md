@@ -18,7 +18,8 @@ All the settings configured under Therapy Settings are protected by the same aut
 
 Loop 3 has Guardrails for each of the Therapy Settings. These are found in the [Guardrails for Settings](#guardrails-for-settings) section of this page.
 
-New Loopers may prefer settings that show up outside the "Recommended" range and show yellow font on the picker dial. Those recommendations, in some cases, came from a survey of experienced Loopers.
+!!! tip "New Loopers"
+    New Loopers may prefer settings that show up outside the "typical" range. These show yellow font on the picker dial and provide a warning that the selected value. Those ranges, in some cases, came from a survey of experienced Loopers. It is always fine to pick a yellow or even red value if being cautious. In other words, choosing a Correction Range that is higher than "typical" when starting to learn Loop is fine. Once you are comfortable with how the system works, the range can be adjusted.
 
 The Therapy Settings on this page are used for automated insulin delivery, when Loop is in Closed-Loop mode.
 
@@ -139,51 +140,44 @@ Your Insulin Sensitivities refer to the drop in glucose expected from one unit o
 
 ## Guardrails for Settings
 
-The Loop app has guardrails for Therapy Settings.
+Loop has guardrails for Therapy Settings, provided for reference below.
 
-The 3 glucose range settings, Safety, Correction and Pre-Meal, must be consistent. For example, Loop will not allow you to have a Glucose Safety Limit higher than a Correction Range.
-
-The absolute and recommended ranges listed below for each therapy setting are the values used by Loop without [Code Customization](../build/code_customization.md).
+!!! tip "Experienced Loopers"
+    The guardrails for each therapy setting used by Loop can be modified with [Code Customization](../build/code_customization.md).
 
 For the picker, from which the user selects a value, the font color has the following meaning:
 
 * **black**: value is within the range "recommended by Loop"
 * **yellow**: value is outside the range "typical" for Loopers
     * It is fine to choose yellow values - sometimes that's a good choice for a new Looper
-* **red**: value is an end point of the absolute range "allowed by Loop"
+* **red**: value is minimum or maximum limit of the range "allowed by Loop"
+
+When a table is provided for guardrails, it lists from left to right: the lower limit, min recommended, max recommended and upper limit values for that guardrail.  On a mobile device, try landscape mode to see the entire table width.
 
 #### Guardrails for Glucose Safety Limit
 
-|  Limit  Type |  mg/dL | mmol/L |
-|---|---:|---:|
-|absolute minimum | 67 | 3.7 |
-|recommended minimum | 74 | 4.2 |
-|recommended maximum | 80 | 4.4 |
-|absolute maximum | 110 | 6.0 |
+|  Units |  limit | min |  max | limit |
+|--|--:|--:|--:|--:|
+| mg/dl | 67 | 74 | 80 | 110 |
+| mmol/L | 3.7 | 4.2 | 4.4 | 6.0 |
 
 * Top value available on the picker can be limited by code constraint, your Correction Range and your Pre-Meal Range
 
 #### Guardrails for Correction Range
 
-|  Limit  Type |  mg/dL | mmol/L |
-|---|---:|---:|
-|absolute minimum | 87 | 4.8 |
-|recommended minimum | 100 | 5.6 |
-|recommended maximum | 115 | 6.3 |
-|absolute maximum | 180 | 10.0 |
+|  Units |  limit | min |  max | limit |
+|--|--:|--:|--:|--:|
+| mg/dl | 87 | 100 | 115 | 180 |
+| mmol/L | 4.8 | 5.6 | 6.3 | 10.0 |
 
 * Bottom value available on the picker can be limited by code constraint AND your selected Glucose Safety Limit
 
-
 #### Guardrails for Pre-Meal Range
 
-
-|  Limit  Type |  mg/dL | mmol/L |
-|---|---:|---:|
-|absolute minimum | n/a | n/a |
-|recommended minimum | safety | safety |
-|recommended maximum | 106 | 5.9 |
-|absolute maximum | 130 | 7.2 |
+|  Units |  limit | min |  max | limit |
+|--|--:|--:|--:|--:|
+| mg/dl | n/a | safety | 106 | 130 |
+| mmol/L | n/a | safety | 5.9 | 7.2 |
 
 * Bottom value available on the picker is limited by your selected Glucose Safety Limit (safety) in the table above.
 
@@ -206,26 +200,14 @@ The maximum bolus is limited by your pump, but it is a good idea to limit it to 
 
 #### Guardrails for Carb Ratios
 
-|  Limit  Type |  g/U |
-|---|---:|
-|absolute minimum | 2.0 |
-|recommended minimum | 4.0 |
-|recommended maximum | 28.0 |
-|absolute maximum | 150.0 |
-
+|  Units |  limit | min |  max | limit |
+|--|--:|--:|--:|--:|
+| g/U | 2.0 | 4.0 | 28.0 | 150.0 |
 
 #### Guardrails for Insulin Sensitivities
 
-|  Limit  Type |  mg/dl/U | mmol/L/U |
-|---|---:|---:|
-|absolute minimum | 10 | 0.6|
-|recommended minimum | 16 | 0.9 |
-|recommended maximum | 399 | 22.1 |
-|absolute maximum | 500 | 27.8 |
-
-
 |  Units |  limit | min |  max | limit |
-|---|---:|---:|---:|---:|
-|mg/dl/U | 10 | 16 | 399 | 500 |
-|mmol/L/U | 0.6 | 0.9 | 22.1 | 27.8 |
+|--|--:|--:|--:|--:|
+| mg/dl/U | 10 | 16 | 399 | 500 |
+| mmol/L/U | 0.6 | 0.9 | 22.1 | 27.8 |
 
