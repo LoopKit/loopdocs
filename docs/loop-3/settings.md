@@ -74,6 +74,8 @@ The Configuration section allows entry to the following screens:
 
 There's a LoopDocs page devoted to therapy settings. Click on the link to get to that page: [Therapy Settings](therapy-settings.md).
 
+#### Add Pump for Therapy Settings
+
 !!! question "But I don't see Therapy Settings!"
     Therapy Settings is only accessible in the [Settings](#settings) screen when you have a pump connected to Loop.
 

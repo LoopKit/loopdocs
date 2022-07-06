@@ -30,7 +30,7 @@ Overrides also should not be used as a temporary sledgehammer to force Loop into
 
 ## Making your override presets
 
-To make your override presets, simply tap on the workout icon. Then click the `+` sign in the upper right corner to start a new preset entry.
+To make your override presets, simply tap on the workout icon. Then click the &plus; sign in the upper right corner to start a new preset entry.
 
 All the rows need to be filled out in the preset in order to save your new preset
 

@@ -44,7 +44,7 @@ The correction range is your blood glucose range that you would like Loop to cor
 ![img/premeal_entry.jpg](img/premeal_entry.jpg){width="250"}
 {align="center"}
 
-Click the + in the upper right corner to add correction BG range(s). You can have multiple ranges based on time of day, but the first setting of the day needs to begin at midnight.
+Click the &plus; in the upper right corner to add correction BG range(s). You can have multiple ranges based on time of day, but the first setting of the day needs to begin at midnight.
 
 Correction ranges can be a single number, such as 100-100 mg/dL, or a range such as 100-120 mg/dL. Generally speaking, if you choose to use a range, keeping the range between about 10-30 mg/dL between the lowest and highest value is a good starting place.
 
@@ -148,7 +148,7 @@ As with all Loop versions, you can manually bolus at any time by pressing the Bo
 
 ## Carb Ratios
 
-Click the + in the upper right to add carb ratios for various times of day. Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/) your carb ratio settings for accuracy.
+Click the &plus; in the upper right to add carb ratios for various times of day. Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/) your carb ratio settings for accuracy.
 
 !!! warning "Beware of other apps writing carbs to Health app"
 
@@ -156,7 +156,7 @@ Click the + in the upper right to add carb ratios for various times of day. Loop
 
 ## Insulin Sensitivities
 
-Insulin Sensitivity Factor (ISF) is the same term as Correction Factor used in some clinics and endocrinology offices. ISF represents the drop in blood glucose levels expected from one unit of insulin. Click the + in the upper right to add insulin sensitivities for various times of day. Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/) your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
+Insulin Sensitivity Factor (ISF) is the same term as Correction Factor used in some clinics and endocrinology offices. ISF represents the drop in blood glucose levels expected from one unit of insulin. Click the &plus; in the upper right to add insulin sensitivities for various times of day. Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/) your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
 
 Incorrectly set ISF is the most common cause of roller coaster BGs for new Loop users. You will need to raise (increase) your ISF value/number to help smooth a roller coaster BG trend. You can read about that topic more over in LoopTips [here](https://loopkit.github.io/looptips/settings/settings/#3rd-insulin-sensitivity-factor).
 

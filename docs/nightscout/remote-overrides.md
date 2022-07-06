@@ -31,7 +31,7 @@ Error messages if Looper's phone is not configured correctly:
 The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it. (Reminder - this only works with the paid Apple Developer ID.)
 
 1. Login to your [Apple developer account](https://developer.apple.com/account/) with the Apple ID associated with your developer team that you used to sign your Loop app.
-2. Click on "Certificates, Indentifiers & Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" **OR** the "+" icon to add a new key.
+2. Click on "Certificates, Indentifiers & Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" **OR** the &plus; icon to add a new key.
 
 ![img/apns-add-key.png](img/apns-add-key.png)
 
@@ -112,7 +112,7 @@ There are three ways you can trigger your override presets remotely; careportal,
 
 ### Careportal
 
-To use remote overrides, I'm assuming you've setup your Nightscout site according to the directions [here](update_user.md) in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your [site authenticated](update_user.md#authenticate-site) so that your careportal is active to send remote overrides. Once authenticated by entering your API_SECRET, then there will be a `+` in the upper right corner of your site. That is your careportal. Tap the careportal `+` and then scroll down in the "event type" menu to find "Temporary Override". Within there, you will find all your Loop override presets already loaded for you.
+To use remote overrides, I'm assuming you've setup your Nightscout site according to the directions [here](update_user.md) in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your [site authenticated](update_user.md#authenticate-site) so that your careportal is active to send remote overrides. Once authenticated by entering your API_SECRET, then there will be a &plus; in the upper right corner of your site. That is your careportal. Tap the careportal &plus; and then scroll down in the "event type" menu to find "Temporary Override". Within there, you will find all your Loop override presets already loaded for you.
 
 ![img/careportal-overrides.PNG](img/careportal-overrides.PNG)
 

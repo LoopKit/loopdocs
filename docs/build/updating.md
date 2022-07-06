@@ -165,13 +165,21 @@ Once this completes, you should see this in your terminal.
 ![clean utility script completed](img/build-select-04.png){width="750"}
 {align="center"}
 
-As long as there are no errors, you are now ready to proceed to [Build Step 14: Download](step14.md#download) and continue on that page until you have completed the build.
+### Step 4a Completed: No Errors
+
+As long as there are no errors, you are now ready to proceed to Build Step 14: Download and continue on that page until you have completed the build.
+
+Click on this link: [Build Step 14: Download](step14.md#download)
+
+### Step 4a Had Errors
 
 If instead, you saw something like:
 
 * `rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty`
 
-Please quit out of Xcode and repeat the steps.
+This means it could not delete all the Derived Data folder because Xcode was open.
+
+Please quit out of Xcode and repeat the steps from [Load the Paste Buffer](#load-the-paste-buffer).
 
 ---
 

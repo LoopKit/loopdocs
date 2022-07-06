@@ -36,7 +36,7 @@ Helpful tip: When the Command Line Tools installation is done and the pop-up win
 
 ## Add Apple ID
 
-Go to the Xcode Preferences window from above, click on the `Accounts` tab and then press the `+` in the lower-left corner to add an Apple ID account.
+Go to the Xcode Preferences window from above, click on the `Accounts` tab and then press the &plus; in the lower-left corner to add an Apple ID account.
 
 ![img/xcode_account.png](img/xcode_account.png){width="750"}
 {align="center"}

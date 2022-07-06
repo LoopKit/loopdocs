@@ -26,7 +26,7 @@ There are some mechanics associated with entering and editing values with Loop 3
     * In that case you see the value that you can tap on and edit
     * If you tap on the value and the `Confirm Setting` or `Save` button is inactive (this can happen on the delivery limits screen), simply move the picker value to make the button active
 * Some screens allow different values for different times of day
-    * During onboarding as a new looper, you must tap the + sign to get the midnight time slot (all scheduled entries must start at midnight)
+    * During onboarding as a new looper, you must tap the &plus; sign to get the midnight time slot (all scheduled entries must start at midnight)
     * When you tap +, you can add an entry to any time-slot that does not already have an entry
         - Adjust the time and value(s) as desired (the last available time slot is 11:30 pm)
         - Tap Add to include this entry in your schedule
@@ -147,7 +147,7 @@ The therapy settings are the heart of how Loop makes predictions. If your settin
     * It's OK to ignore "yellow" warnings when you are being conservative
     * It's OK to ignore "yellow" warnings if you're experienced and want to be aggressive
 
-    A red limit cannot be exceeded without modify the code itself.
+    A red limit cannot be exceeded without modifying the code itself.
 
 
 #### Glucose Safety Limit
@@ -162,21 +162,27 @@ There are some related settings: [Correction Range](therapy-settings.md#correcti
 
 The [Correction Range](therapy-settings.md#correction-range) is the glucose range that you would like Loop to use when providing automated corrections. Correction range is not necessarily the same glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but use a desired glucose range of 70-180 mg/dL (3.9-10 mmol/L) when discussing things with your endo about "time in range".
 
-If you ask Loop for a [manual bolus recommendation](features.md#manual-bolus) while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit. Note - this is only if you request the bolus recommendation.  Loop will **not** automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of the correction range.
+If you ask Loop for a [manual bolus recommendation](features.md#manual-bolus) while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit.
+
+!!! note ""
+    This is only if you manually request a bolus recommendation.
+
+    Loop will **not** automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of the correction range.
 
 
 #### Pre-Meal Range
 
-The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, can be used as an easy way to get a small amount of insulin delivered before a meal to help control post-meal glucose spikes. If you choose not to enter a value, the [pre-meal icon](../operation/features/premeal.md) in the toolbar will be inactive. If you enter a range and later prefer not to have one, you can remove it later.
+The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, can be used as an easy way to get a small amount of insulin delivered before a meal to help control post-meal glucose spikes. If you choose not to enter a value, the [pre-meal icon](../operation/features/premeal.md) in the toolbar will be inactive. If you enter a range and later prefer not to have one, you can delete it.
 
-If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), for example, Loop will give you an extra push to get you to the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
+!!! abstract "Example"
+    If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you an extra push to get you to the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
 
 #### Basal Rates
 
-Only one basal schedule may be configured in the Loop app and the schedule must start at midnight.
+Only one [Basal Rate](therapy-settings.md#basal-rates) schedule may be configured in the Loop app and the schedule must start at midnight.
 
-As a new Looper onboarding with Loop, or anyone onboarding basal rates before a pump is added, you are limited to increments of 0.05 U/hr for basal rates and 0.00 U/hr is not allowed. Put values close to what you actually use because the values entered here affect what is allowed as a maximum basal rate in the [Delivery Limits](#delivery-limits) section.
+As a new Looper onboarding with Loop, or anyone onboarding basal rates before a pump is added, you are limited to increments of 0.05 U/hr for basal rates and 0.00 U/hr is not allowed. Put values close to what you actually use because the values entered here affect what is allowed as a maximum basal rate in the Delivery Limits.
 
 Once a pump is added, the basal increments will match that for your particular pump. Once you complete onboarding and add your pump, you can then return to Therapy Settings and adjust the Basal rates for your particular pump.
 
@@ -189,14 +195,14 @@ During onboarding, the basal rates are saved by Loop.  Once you've added a pump,
 
     * The values entered here will overwrite whatever is in your Medtronic pump when you first connect it
     * For those who build Loop 3 over an existing Loop app with a Medtronic pump attached - you will just be confirming values you used previously
-    * If you have values in a [Loopable Medtronic pump](../build/step3.md#check-medtronic-pump-version) that you plan to attach after onboarding - please record those values
+    * If you have values in a [Loopable Medtronic pump](../build/step3.md#check-medtronic-pump-version) that you plan to attach after onboarding - please record those values if they are important to you
 
 
 #### Delivery Limits
 
-The maximum basal rate and maximum bolus settings are collectively referred to as Delivery Limits.
+The maximum basal rate and maximum bolus settings are collectively referred to as [Delivery Limits](therapy-settings.md#delivery-limits).
 
-The Maximum Basal the app allows you to choose will be limited based on the basal rate schedule you just entered as well as pump limits, so make sure you put in sensible values. (There is a back button if you need it.)
+The Maximum Basal Rate the app allows you to choose will be limited based on the basal rate schedule you just entered as well as pump limits, so make sure you put in sensible values. (There is a back button if you need it.)
 
 ##### Medtronic Pump Users
 
@@ -209,7 +215,7 @@ The Maximum Basal the app allows you to choose will be limited based on the basa
 
 #### Maximum Basal Rate
 
-Maximum basal rate will cap the the maximum temporary basal rate that the Loop is allowed to issue to meet your correction range when you are in Closed Loop and you have selected a [Dosing Strategy](settings.md#dosing-strategy) of Temp Basal Only.
+[Maximum Basal Rate](therapy-settings.md#maximum-basal-rate) will cap the the maximum temporary basal rate that the Loop is allowed to issue to meet your correction range when you are in Closed Loop and you have selected a [Dosing Strategy](settings.md#dosing-strategy) of Temp Basal Only.
 
 If you are a new looper, it is recommended you start with max basal set at 2-3 times your highest scheduled basal rate. This is for safety as you are ironing out your settings. If you choose 2 times your highest scheduled basal you may get a message informing you this is "lower than typical" - ignore this - take it as a sign you are putting safety first as a new looper.
 
@@ -217,11 +223,17 @@ Typically, Loop users set their maximum basal rate around 3-4 times their highes
 
 #### **Maximum Bolus**
 
-Enter your desired single bolus maximum here. For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a sub 10 U maximum like 9 or 9.9 U to avoid accidentally typing in a bolus of 10 instead of 1.0 U.
+[Maximum Bolus](therapy-settings.md#maximum-bolus) is the highest bolus amount that you will allow Loop to recommend at one time to cover carbs or bring down high glucose.
+
+For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.
 
 #### Insulin Model
 
-When Loop was originally developed, the fastest insulins available, also know as "rapid acting", had published data for behavior in adults and children. Therefore, Loop offers an Adult or Child model as part of onboarding. If you use a newer "ultra rapid" insulin, the model selected here is irrelevant, but a selection is required.
+When Loop was originally developed, the fastest insulins available, also know as "rapid acting", had published data for behavior in adults and children.
+
+Therefore, Loop offers an Adult or Child model as part of onboarding.
+
+If you use a newer "ultra rapid" insulin, the model selected here is irrelevant, but a selection is required.
 
 The specific type of insulin used is set when you select or edit the configuration of your [pump](add-pump.md#insulin-type).
 

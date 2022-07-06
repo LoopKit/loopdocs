@@ -23,8 +23,9 @@
 *[Event History]: record of pump events (bolus or temp basal) reported and used by Loop
 *[Expiration Date]: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 *[Finder]: graphical folder and file display on Mac
-*[Glucose Safety Limit]: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit 
 *[git]: a tool for version control
+*[Glucose Safety Limit]: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit 
+*[Guardrails]: limits in the code for user selected settings, recommended and absolute limits are provided
 *[ICE]: Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose
 *[IOB]: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
 *[iOS]: operating system used by Apple Mobile devices (iPhone, iPod)

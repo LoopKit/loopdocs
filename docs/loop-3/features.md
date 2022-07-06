@@ -45,7 +45,7 @@ With Loop-dev, the "old" method still works, but there is a new method for enter
 
 
 2. Select the `Non-Pump Insulin` tab to bring up the graphic shown below
-    * Tap on the + sign (green solid lines)
+    * Tap on the &plus; sign (green solid lines)
     * `Log Dose` screen is displayed showing the current `Glucose` prediction
     * The default insulin type is that used by the pump
     * To modify Insulin Type, tap on that row (red dashed lines)
