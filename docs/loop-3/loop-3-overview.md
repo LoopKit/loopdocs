@@ -54,7 +54,13 @@ Those of us who have been testing Loop-dev are very excited for this major updat
 
 The first time you build Loop 3 on your device, as either a new Looper or an experienced Looper, you will be going through the [Onboarding](onboarding.md) process. But don't click on that link yet.
 
-First some orientation:
+First a suggestion and then some orientation:
+
+!!! tip "Suggestion"
+    * First time through each page, just read it through - do not click on the links
+    * Later - when returning to a page for reference, use the links as a convenience
+        * The links take you to more detail on a particular topic but may take you to a different page or a different section on the same page
+        * To return to your starting point, use the back button in your browser after clicking on a link
 
 ### Brand New Loopers
 
@@ -62,8 +68,10 @@ First some orientation:
     * [Onboarding](onboarding.md)
     * [Add CGM](add-cgm.md)
     * [Add Pump](add-pump.md)
-* Read the rest of the Set Up section with an eye to understanding that while some of the information may not be clear now, as you learn to use the app, you'll know the information exists and can return (or use the search function)
-* Then move on to learning the Loop app starting with the [Open Loop](../operation/loop/open-loop.md) page
+* Read the rest of the pages listed under [All Loopers](#all-loopers), below, with an eye to knowing the information exists even if some of it may not be clear now
+    * As you learn to use the app, you can return to the relevant page or use the search function
+* Complete the Onboarding steps to set up Loop
+* Learn to use Loop starting with the [Open Loop](../operation/loop/open-loop.md) page
 * Once you are comfortable with manually controlling Loop and feel you have your settings adjusted for the algorithm, move on to the [Closed Loop](../operation/loop/close-loop.md) page
 * Make suggestions if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
 
@@ -71,8 +79,10 @@ First some orientation:
 
 * There is no harm in completely reviewing the 3 pages mentioned above for new Loopers
 * There is a section for experienced Looper on the Onboarding page.
-* Read the rest of the Set Up pages - you will learn a lot of new Loop 3 features by doing this and save asking mentors questions when the answers are found in LoopDocs
-* Make suggestions if you think parts of LoopDocs could be clarified, especially from the viewpoint of an experienced Looper switching to Loop 3
+* Read the rest of the pages listed under [All Loopers](#all-loopers), below
+    - Many of the new Loop 3 features are described
+    - Reach out if information is missing or needs to be clarified
+* LoopDocs design
     * Please note that sections specific to experienced Loopers are being moved after the sections aimed at new Loopers
     * The goal is to make LoopDocs easier for new Loopers to navigate
     * Experienced Loopers can scroll ahead, check the page table of contents or use the search feature
