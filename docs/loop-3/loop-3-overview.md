@@ -52,50 +52,46 @@ Those of us who have been testing Loop-dev are very excited for this major updat
 
 !!! success "Congratulations on Building Loop!"
 
-The first time you build Loop 3, go through the [Onboarding](onboarding.md) process. But don't click on that link yet.
+The first time you build Loop 3 on any device, you must go through the onboarding process. This is true even if your device has an earlier version of Loop on it. This is documented on the [Onboarding](onboarding.md) page. But don't click on that link yet.
 
-First a suggestion and then some orientation:
+First some orientation:
 
-!!! tip "Suggestion"
-    * Start by reading each page without clicking on any links
-    * Return later to the page for reference, and use the links to find more detail on a particular topic.  Use the back button on your browser to go back to your starting point.
+### New Loopers
 
-### Brand New Loopers
-
-* Review these 3 pages in detail before you touch any buttons on your app
+* Review these 3 pages before you touch any buttons on your app
     * [Onboarding](onboarding.md)
     * [Add CGM](add-cgm.md)
     * [Add Pump](add-pump.md)
-* Read the rest of the pages listed under [All Loopers](#all-loopers), below. 
-
-    * The information on the pages will become clearer as you learn to use the app.  You can find a page later using the search function
-* Complete the Onboarding steps to set up Loop
+* Read the rest of the pages listed under [All Loopers](#all-loopers), below
+    * The information on the pages will become clearer as you learn to use the app
+    * Plan to return to these pages later
+* Complete the [Onboarding](onboarding.md) steps to set up Loop
 * Learn to use Loop starting with the [Open Loop](../operation/loop/open-loop.md) page
-* Once you are comfortable with manually controlling Loop have settings that work with the algorithm, move on to the [Closed Loop](../operation/loop/close-loop.md) page
+* Once you are comfortable with your settings and manual control of Loop, move on to the [Closed Loop](../operation/loop/close-loop.md) page
 * Make suggestions if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
 
 ### Experienced Loopers
 
-* Review the 3 pages mentioned above for new Loopers, including a section for experienced Looper on the Onboarding page.
-* Read the rest of the pages listed under [All Loopers](#all-loopers), below
-    - Some of the screens and user interface has changed with Loop 3
-    - Many of the new Loop 3 features are described
+* Review the Onboarding page and look for experienced Looper information - especially when building Loop 3 on a device that already has a Loop app on it.
+* Read the pages listed under [All Loopers](#all-loopers), below
+    - Some of the screens and user interface changed with Loop 3
+    - Many of the new Loop 3 features are described in those pages
     - Reach out if information is missing or needs to be clarified
 * LoopDocs design
     * Sections specific to experienced Loopers are after the sections for new Loopers
     * The goal is to make LoopDocs easier for new Loopers to navigate
-    * Experienced Loopers can scroll ahead, check the page table of contents or use the search feature
+    * Experienced Loopers should scroll ahead, check the page table of contents or use the search feature
 
 ### All Loopers
 
-These pages have a lot of detailed Loop information.
+All Loopers should review these pages with detailed Loop 3 information:
 
 * [Displays](displays_v3.md)
 * [Settings](settings.md)
 * [Therapy Settings](therapy-settings.md)
 * [Optional Services](../operation/loop-settings/services.md)
 
-And a lot of detailed information about Status and Commands for:
+and detailed information about Status and Commands for:
 
 * [RileyLink](../operation/loop-settings/rileylink.md)
 * [Omnipod Common](omnipod.md)
