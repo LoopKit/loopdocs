@@ -1,10 +1,10 @@
 # Loop 3 Overview
 
 
-Loop 3.0 will be the next big release. It is being developed and tested under the dev branch (Loop-dev). Loop-dev has significant improvements and looks different (in some ways) from the Loop 2.2.x versions.
+Loop 3.0 is the next big release. It is being developed and tested under the dev branch (Loop-dev). Loop-dev has significant improvements and looks different (in some ways) from the Loop 2.2.x versions.
 
 !!! info "Loop-dev"
-    At the current time, the dev branch of Loop is under test by experienced loopers. If you are testing Loop-dev, the version number reported on your settings screen is Loop v2.3.0 (57).
+    The dev branch of Loop is currently under test by experienced loopers. If you are testing Loop-dev, the version number reported on your settings screen is Loop v2.3.0 (57).
 
     To report to developers about which particular version of Loop-dev you are running, look at the top of the [Loop Report](settings.md#issue-a-loop-report) under `Build Details`. The 7-digit alphanumeric indication to the right of workspaceGitRevision is sufficient.
 
@@ -23,11 +23,11 @@ Loop 3.0 will be the next big release. It is being developed and tested under th
 !!! info ""
     Information from this section will be moved to the Version / Releases page after release.
 
-Loop 3 provides a major redesign of the app, building off the public portion of some Tidepool work in addition to the DIY contributors. There is a lot of work "under-the-hood" with Loop 3 that may not be obvious to the user, but makes the app more robust.
+Loop 3 redesigns the app, building off work by Tidepool and DIY contributors. Some changes may not be obvious to the user, but make the app more robust.
 
 Here are some highlights:
 
-* Onboarding protocol with guardrails to assist in configuring settings
+* Onboarding protocol with guardrails to help configure settings
 * Streamlined main screen display and user experience
 * Better alerts and notifications
 * Omnipod Dash compatibility
@@ -38,7 +38,7 @@ Here are some highlights:
 
 ## Building Loop 3
 
-When Loop 3 is released, the build instructions will be updated (please allow a few days for documentation to catch up.) In the meantime, experienced users are testing Loop-dev and starting with the [Loop-dev](../build/step13.md#advanced-users-only) download and build instructions. Do not build Loop-dev unless you are willing to pay attention to announcements on zulipchat and build frequently (plan on once a week.)
+When Loop 3 is released, the build instructions will be updated (please allow a few days for documentation to catch up. Experienced users are testing Loop-dev using the [Loop-dev](../build/step13.md#advanced-users-only) download and build instructions. Do not build Loop-dev unless you are willing to pay attention to announcements on zulipchat and build frequently (plan on once a week.)
 
 !!! warning "Users of dev Branch"
     It is up to you to review these new pages for the information you need.
@@ -52,52 +52,46 @@ Those of us who have been testing Loop-dev are very excited for this major updat
 
 !!! success "Congratulations on Building Loop!"
 
-The first time you build Loop 3 on your device, as either a new Looper or an experienced Looper, you will be going through the [Onboarding](onboarding.md) process. But don't click on that link yet.
+The first time you build Loop 3 on any device, you must go through the onboarding process. This is true even if your device has an earlier version of Loop on it. This is documented on the [Onboarding](onboarding.md) page. But don't click on that link yet.
 
-First a suggestion and then some orientation:
+First some orientation:
 
-!!! tip "Suggestion"
-    * First time through each page, just read it through - do not click on the links
-    * Later - when returning to a page for reference, use the links as a convenience
-        * The links take you to more detail on a particular topic but may take you to a different page or a different section on the same page
-        * To return to your starting point, use the back button in your browser after clicking on a link
+### New Loopers
 
-### Brand New Loopers
-
-* Please review in detail these 3 pages before you touch any buttons on your app
+* Review these 3 pages before you touch any buttons on your app
     * [Onboarding](onboarding.md)
     * [Add CGM](add-cgm.md)
     * [Add Pump](add-pump.md)
-* Read the rest of the pages listed under [All Loopers](#all-loopers), below, with an eye to knowing the information exists even if some of it may not be clear now
-    * As you learn to use the app, you can return to the relevant page or use the search function
-* Complete the Onboarding steps to set up Loop
+* Read the rest of the pages listed under [All Loopers](#all-loopers), below
+    * The information on the pages will become clearer as you learn to use the app
+    * Plan to return to these pages later
+* Complete the [Onboarding](onboarding.md) steps to set up Loop
 * Learn to use Loop starting with the [Open Loop](../operation/loop/open-loop.md) page
-* Once you are comfortable with manually controlling Loop and feel you have your settings adjusted for the algorithm, move on to the [Closed Loop](../operation/loop/close-loop.md) page
+* Once you are comfortable with your settings and manual control of Loop, move on to the [Closed Loop](../operation/loop/close-loop.md) page
 * Make suggestions if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
 
 ### Experienced Loopers
 
-* There is no harm in completely reviewing the 3 pages mentioned above for new Loopers
-* There is a section for experienced Looper on the Onboarding page.
-* Read the rest of the pages listed under [All Loopers](#all-loopers), below
-    - Some of the screens and user interface has changed with Loop 3
-    - Many of the new Loop 3 features are described
+* Review the Onboarding page and look for experienced Looper information - especially when building Loop 3 on a device that already has a Loop app on it.
+* Read the pages listed under [All Loopers](#all-loopers), below
+    - Some of the screens and user interface changed with Loop 3
+    - Many of the new Loop 3 features are described in those pages
     - Reach out if information is missing or needs to be clarified
 * LoopDocs design
-    * Please note that sections specific to experienced Loopers are being moved after the sections aimed at new Loopers
+    * Sections specific to experienced Loopers are after the sections for new Loopers
     * The goal is to make LoopDocs easier for new Loopers to navigate
-    * Experienced Loopers can scroll ahead, check the page table of contents or use the search feature
+    * Experienced Loopers should scroll ahead, check the page table of contents or use the search feature
 
 ### All Loopers
 
-There is a lot of detailed Loop information in these pages.
+All Loopers should review these pages with detailed Loop 3 information:
 
 * [Displays](displays_v3.md)
 * [Settings](settings.md)
 * [Therapy Settings](therapy-settings.md)
 * [Optional Services](../operation/loop-settings/services.md)
 
-There is a lot of detailed information about Status and Commands for:
+and detailed information about Status and Commands for:
 
 * [RileyLink](../operation/loop-settings/rileylink.md)
 * [Omnipod Common](omnipod.md)
