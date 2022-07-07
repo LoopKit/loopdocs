@@ -174,7 +174,7 @@ When a table is provided for guardrails, it lists from left to right: the lower 
 
 |  Units |  limit | min |  max | limit |
 |--|--:|--:|--:|--:|
-| mg/dl | 67 | 74 | 80 | 110 |
+| mg/dL | 67 | 74 | 80 | 110 |
 | mmol/L | 3.7 | 4.2 | 4.4 | 6.0 |
 
 * Top value available on the picker can be limited by code constraint, your Correction Range and your Pre-Meal Range
@@ -183,7 +183,7 @@ When a table is provided for guardrails, it lists from left to right: the lower 
 
 |  Units |  limit | min |  max | limit |
 |--|--:|--:|--:|--:|
-| mg/dl | 87 | 100 | 115 | 180 |
+| mg/dL | 87 | 100 | 115 | 180 |
 | mmol/L | 4.8 | 5.6 | 6.3 | 10.0 |
 
 * Bottom value available on the picker can be limited by code constraint AND your selected Glucose Safety Limit
@@ -192,7 +192,7 @@ When a table is provided for guardrails, it lists from left to right: the lower 
 
 |  Units |  limit | min |  max | limit |
 |--|--:|--:|--:|--:|
-| mg/dl | n/a | safety | 106 | 130 |
+| mg/dL | n/a | safety | 106 | 130 |
 | mmol/L | n/a | safety | 5.9 | 7.2 |
 
 * Bottom value available on the picker is limited by your selected Glucose Safety Limit (safety) in the table above.
@@ -224,6 +224,6 @@ The maximum bolus is limited by your pump, but it is a good idea to limit it to 
 
 |  Units |  limit | min |  max | limit |
 |--|--:|--:|--:|--:|
-| mg/dl/U | 10 | 16 | 399 | 500 |
+| mg/dL/U | 10 | 16 | 399 | 500 |
 | mmol/L/U | 0.6 | 0.9 | 22.1 | 27.8 |
 

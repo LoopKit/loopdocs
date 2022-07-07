@@ -96,7 +96,7 @@ The glucose chart displays BG values in your preferred units. (If not, quit and 
 
 The horizontal axis is set to go forward from the current time until your DIA (insulin duration) forward (so you can see what Loop thinks BG will be eventually). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.
 
-The BG correction range is shown as a blue bar on the glucose chart.  Single-value range BG range (such as 100-100 mg/dl), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction range in lighter blue.
+The BG correction range is shown as a blue bar on the glucose chart.  Single-value range BG range (such as 100-100 mg/dL), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction range in lighter blue.
 
 !!! warning ""
     If you have a crazy negative prediction - it is likely that you set an [override](../features/workout.md) with a tiny sensitivity. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny sensitivity to force less insulin, simply increase the correction range in your override - Loop will reduce your basal rate at the next cycle (within 5 minutes).
@@ -177,6 +177,6 @@ The toolbar is where your inputs to the Loop behavior take place.  The individua
 
 ## Next Step: RileyLink Menu
 
-You are almost there! One more Loop menu that you need to know about is the RileyLink (or compatible device) Menu. You can access your this menu (one for each Bluetooth connected device) by tapping on the pump/pod image in Loop settings (or HUD), look for the DEVICES section and tap on a "My Device Name" row that has a green slider. If you don't know what that means, check out the Pump Pairing section for Adding a Pump [Medtronic](mdt-pump.md#pump-pairing) or [Omnipod](omnipod-pump.md#select-rileylink).
+You are almost there! One more Loop menu that you need to know about is the RileyLink (or compatible device) Menu. You can access your this menu (one for each Bluetooth connected device) by tapping on the pump/pod image in Loop settings (or HUD), look for the DEVICES section and tap on a "My Device Name" row that has a green slider. If you don't know what that means, check out the Pump Pairing section for Adding a Pump [Medtronic](mdt-pump.md#prepare-medtronic-pump) or [Omnipod](omnipod-pump.md#select-rileylink).
 
 Click [here](rileylink.md) to read more about what to expect to see when you tap on "My Device Name".
