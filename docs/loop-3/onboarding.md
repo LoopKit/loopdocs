@@ -85,7 +85,7 @@ You can reach the permissions screen later, if you want to review it. Open the A
 ### Connect Loop to Nightscout
 
 !!! question "Nightscout"
-    If you have no idea was Nightscout is, just select `Setup Loop without Nightscout`.
+    If you have no idea what Nightscout is, just select `Setup Loop without Nightscout`.
 
     [Nightscout](../nightscout/overview.md) is not required for Loop, but it is highly recommended and can be added later.
 
