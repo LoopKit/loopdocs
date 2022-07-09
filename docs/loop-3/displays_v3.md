@@ -42,7 +42,7 @@ The glucose chart displays glucose values in your preferred units. If not, follo
 
 The horizontal axis is set to go forward from the current time until your DIA (insulin duration) forward (so you can see what Loop thinks glucose will be eventually). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.
 
-The glucose correction range is shown as a blue bar on the glucose chart.  Single-value range glucose range (such as 100-100 mg/dl), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction range in lighter blue.
+The glucose correction range is shown as a blue bar on the glucose chart.  Single-value range glucose range (such as 100-100 mg/dL), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction range in lighter blue.
 
 !!! warning ""
     If you have a crazy negative prediction - it is likely that you set an [override](../operation/features/workout.md) with a tiny sensitivity. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny sensitivity to force less insulin, simply increase the correction range in your override - Loop will reduce your basal rate at the next cycle (within 5 minutes).
@@ -213,7 +213,7 @@ The nominal pump icon displays high-level status information for the pump with t
     * If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.25 U
     * If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.05 U
     * When scheduled basal is running, the icon displays 0.0 U
-* But what about [Overrides](..operation/features/workout.md)?
+* But what about [Overrides](../operation/features/workout.md)?
     * Using scheduled basal of 0.45 U/hr with override set to 70%, the "override basal rate" is 0.315 U/hr
     * That is a value that cannot be set in the pump, but Loop uses it for IOB calculations
         * If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.115 U
