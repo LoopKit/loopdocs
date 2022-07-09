@@ -96,7 +96,7 @@ Delivery Limits are safety guardrails for your insulin delivery.
 * Click on one of the limits on this screen, Maximum Basal Rate or Maximum Bolus, to display the picker wheel for that limit
 * You must first move the picker off the current value before saving
     * When onboarding, you can restore the picker to the original level once it has been moved
-    * Whan adjusting settings later, one of the two limits must be changed to make the `Save` button active
+    * When adjusting settings later, one of the two limits must be changed to make the `Save` button active
 * You may need to put your finger on part of the screen away from the picker wheel and scroll up and down to see the other setting
 * Make sure both Maximum Basal Rate and Maximum Bolus have the desired value before hitting `Save`
 
