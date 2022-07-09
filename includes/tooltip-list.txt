@@ -3,6 +3,7 @@
 *[BAGE]: pump battery age on Nightscout site
 *[Big Sur]: older version for operating system for Mac, macOS 11.x
 *[BLE]: Bluetooth low energy, used for communication by phones, CGM and some pumps
+*[Build Select Script]: by running a command in your terminal, this menu-driven tool assists in building Loop
 *[branch]: version of code within a single repository or workspace repository
 *[CAGE]: cannula (or pump site) age on Nightscout site
 *[carthage]: a program that used to be required to build Loop - no longer needed
