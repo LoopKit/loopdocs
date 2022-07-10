@@ -130,10 +130,11 @@ The final actions of the script are to:
 * Open a page from a different site (with abbreviated build instructions) in your browser
     * If that webpage is not available, it is a convenience for experienced builders and not required
 
-## Summary Graphic
-
+## Prepare to Build
 
 **New builders should follow the detailed steps on this page - skip ahead to [Select the Loop Folder](#select-the-loop-folder).**
+
+### Summary Graphic
 
 !!! tip "Experienced Builders"
     Experienced builders can choose to follow the abbreviated build instructions instead.
