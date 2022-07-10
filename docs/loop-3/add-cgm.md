@@ -38,7 +38,7 @@ The graphic below shows the display when a user taps on Add CGM in the Settings 
 
 ### Dexcom G5 and G6 CGM
 
-The Dexcom G5 and G6 require
+Requirements for Dexcom G5 and Dexcom G6:
 
 * Dexcom app must be running on the Loop iPhone and be paired to an active transmitter
 * User must enter that active transmitter ID in the location indicated by the red rectangle in the graphic below

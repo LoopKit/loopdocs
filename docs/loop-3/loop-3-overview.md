@@ -72,7 +72,7 @@ First some orientation:
 
 ### Experienced Loopers
 
-* Review the Onboarding page and look for experienced Looper information - especially when building Loop 3 on a device that already has a Loop app on it.
+* Review the [Onboarding](onboarding.md) page and look for experienced Looper information - especially when building Loop 3 on a device that already has a Loop app on it.
 * Read the pages listed under [All Loopers](#all-loopers), below
     - Some of the screens and user interface changed with Loop 3
     - Many of the new Loop 3 features are described in those pages

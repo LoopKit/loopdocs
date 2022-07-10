@@ -20,11 +20,12 @@ Loopers can choose from 3 pumps and a simulator:
 * Insulin Pump Simulator
 
 !!! info "Omnipod vs Omnipod DASH"
-    Insulet (and the Loop app) uses Omnipod to refer to the older (Eros) pods.
+    Insulet (and the Loop app) terminology:
 
-    Insulet (and the Loop app) uses Omnipod DASH to refer to newer BLE DASH pods.
+    * Omnipod: refers to the older (Eros) pods with clear needle-caps.
+    * Omnipod DASH: refers to newer BLE DASH pods with blue needle-caps.
 
-    The Loop app does not support Omnipod 5 pods.
+    The Loop app does **not** support Omnipod 5 pods.
 
     LoopDocs uses these terms:
 
