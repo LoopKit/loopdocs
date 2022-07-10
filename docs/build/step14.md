@@ -159,7 +159,7 @@ As shown in the GIF below:
     * You need to click on the indicated Loop folder icon two times
 * Frame 2: After the 2 clicks, the middle pane of the Xcode window is populated as shown
 
-![initial xcode display, click on loop to populate middle pane](img/build-229-01.GIF){width="750"}
+![initial xcode display, click on loop to populate middle pane](img/build-229-01.gif){width="750"}
 {align="center"}
 
 
