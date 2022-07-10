@@ -58,6 +58,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Finder**: graphical folder and file display on Mac
 
+**GIF**: Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips
+
 **git**: a tool for version control
 
 **Glucose Safety Limit**: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit 

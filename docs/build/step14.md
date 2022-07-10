@@ -153,13 +153,13 @@ The final actions of the script are to:
 
 Follow the directions and compare your Xcode screen to the graphics as you walk through the steps.
 
-As shown in the gif below:
+As shown in the GIF below:
 
 * Frame 1: This is what the Xcode screen looks the very first time it is opened after a fresh download
     * You need to click on the indicated Loop folder icon two times
 * Frame 2: After the 2 clicks, the middle pane of the Xcode window is populated as shown
 
-![initial xcode display, click on loop to populate middle pane](img/build-229-01.gif){width="750"}
+![initial xcode display, click on loop to populate middle pane](img/build-229-01.GIF){width="750"}
 {align="center"}
 
 
@@ -167,14 +167,15 @@ As shown in the gif below:
 
 If this is the **First Time** your phone or watch has been connected to Xcode, you will need to tell the phone and watch to "Trust this Computer".
 
-The gif below shows:
+The GIF below shows:
 
-* Frame 1: Same as end of previous gif
+* Frame 1: Same as end of previous GIF
     * There's a red rectangle around the dropdown menus
     * The menu on the left says "Loop"
 * Frame 2: Same as Frame 1 with a zoomed inset of the red rectangle
     * You can see Loop has a check mark beside it
     * Loop (Workspace) is one line below
+    * Select Loop (Workspace)
 * Frame 3: Zoomed inset after selecting Loop (Workspace)
 * Frame 4: Desired result of selecting Loop (Workspace) and your phone
 
@@ -182,9 +183,7 @@ The gif below shows:
 {align="center"}
 
 !!! warning "My Phone is Not Selected"
-    * If you followed directions above, your unlocked phone was connected to the computer when Xcode opened
-    * In that case, your phone should already be selected
-    * If not, simply plug in your unlocked phone and select your phone using the dropdown menu (right side of red rectangle highlight in the gif)
+    * Plug in your unlocked phone and select your phone using the dropdown menu (right side of red rectangle highlight in the GIF)
         * Look in the iOS Device section
         * Not the iOS Simulator section
 

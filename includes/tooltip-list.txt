@@ -24,6 +24,7 @@
 *[Event History]: record of pump events (bolus or temp basal) reported and used by Loop
 *[Expiration Date]: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 *[Finder]: graphical folder and file display on Mac
+*[GIF]: Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips
 *[git]: a tool for version control
 *[Glucose Safety Limit]: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit 
 *[Guardrails]: limits in the code for user selected settings, recommended and absolute limits are provided
