@@ -1,57 +1,65 @@
-# Open-Loop
+# Open Loop
 
-Open-loop is a great place to start with Loop.
+Open Loop is the best place to start with Loop.
 
-It is understandable to want to jump straight away into closed-loop mode, but a lot can be learned by watching Loop operate in open mode. The `Closed Loop` switch is disabled by default.  Becoming familiar with the algorithm can be easier by watching it in action rather than only reading about it in docs. Practice with the user interface.
+Become familiar with Loop by watching it predict your future glucose. Practice with the user interface while you manually control your insulin delivery. Watch the glucose prediction charts; compare the recommended insulin after entering carbs for a meal you understand. Take it slow and safe to become a successful Looper.
 
-Speaking of practice, there are simulators available in the app. You can build Loop and practice using it with a simulated CGM and a simulated pump. For even more fidelity, use Dexcom Share or (Loop-dev only) Nightscout as a CGM to follow your own blood sugar and make dosing decisions. You can `dose` the simulated pump and your real pump at the same time and watch the glucose predictions.
+!!! abstract "Practice with Simulators"
+    You can build Loop (to your phone, a partner's phone or a simulated phone on the computer) and practice with a simulated CGM and a simulated pump. You can use Dexcom Share or Nightscout as a CGM to follow your own glucose. You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
 
 
 #### Loop 2.2.x Open Loop
 
 !!! warning "WARNING"
-    In earlier versions of Loop, a debug feature was left active.  This was never intended as a "teaching" tool, however, it was used that way. This capability is not in Loop-dev for safety reasons. It is too easy to tap on an unlocked phone and provide extra insulin inadvertently.
-    
-    When you are operating in open-loop mode, Loop 2.2.x offers recommendations for insulin delivery adjustment and displays them on the main screen. The recommendations are enacted if you tap on the recommendation line on the [HUD](../loop-settings/displays.md#heads-up-display). To protect against enacting accidentally, make sure your phone is locked when not in use.
+    When you are operating in Open Loop mode, Loop 2.2.x offers recommendations for insulin delivery adjustment and displays them on the [HUD](../loop-settings/displays.md#heads-up-display). If you tap on the recommendation line, Loop applies that recommendation without asking for confirmation. To protect against enacting accidentally, make sure your phone is locked when not in use.
 
 ### Open Loop
 
-While running in open loop mode, you should pay attention to the glucose prediction line. If the predictions don't make sense, do not enable `Closed Loop`. You may need to adjust settings or  learn more about how the app works. Loop tries to keep you in your correction range but also wants to keep you above your glucose safety level (`suspend threshold` in Loop 2.2.x). 
+Pay attention to the [glucose prediction chart](../loop-settings/displays.md#glucose-chart). If you do not understand the predictions, do not enable Closed Loop. You may need to adjust settings or  learn more about how the app works. Loop tries to keep predicted glucose in the Correction Range and, more importantly, above your Glucose Safety Limit (suspend threshold in Loop 2.2.x).
 
-There's a lot to learn and understand. Take the time you need so you can safely use Loop. If the meal bolus and manual correction suggestions that Loop makes are not consistent with your manual pumping experience, take the time to adjust your settings.  Typically, new loopers need to adjust (1) Basal Rates and then (2) Insulin Sensitivity Factor and finally (3) Carb Ratios. Using an algorithm that updates glucose predictions and adjusts insulin delivery every 5 minutes requires more fidelity for those settings than manual pumping. The meal entry in terms of carbs and absorption time is also a new skill that takes time to understand.
+There's a lot to learn and understand. You may need to adjust your settings.  Typically, new loopers need to adjust (1) Basal Rates and then (2) Insulin Sensitivity Factor (ISF) and finally (3) Carb Ratios (CR). Using an algorithm that updates glucose predictions and adjusts insulin delivery every 5 minutes requires accurate settings. Entering carbs and absorption time is a new skill that takes time to master.
+
+**Loop recommends increased insulin dosing as soon as you enter carbs.**
+
+[Meal Entry](../features/carbs.md) is an important concept - there's a whole page devoted to it - but here's a quick summary. You tap on the plate icon in the Toolbar to start a meal entry.
 
 * Meal Entry:
-    * In Loop, you enter carbs and then are taken to a meal bolus screen at which you can save the carbs or save the carbs and bolus
-    * [Link for Loop 2.2.x Meal Entry](../features/carbs.md)
-    * If running Loop-dev, understand the link for Loop 2.2.x Meal Entry (above) and then review the [Meal Bolus](../../loop-3/features.md#meal-bolus) features that are updated
-    * You should investigate entering a Meal to understand the interface and examine the recommended bolus for that meal
-        * Does the recommendation make sense to you based on your prior experience
+    * In the Add Carb Entry screen, you enter carbs along with an expected "eating" time and absorption duration
+    * The meal entry is not saved when you tap continue - Loop takes you to the meal bolus screen 
+    * In the Meal Bolus screen, you can save the carbs and accept or override the recommended bolus
+        * [Link for Loop 2.2.x Meal Entry](../features/carbs.md)
+        * If running Loop-dev, understand the link for Loop 2.2.x Meal Entry (above) and then review the [Loop-dev Meal Bolus Features](../../loop-3/features.md#meal-bolus)
+    * Review the recommended bolus for the carb entry
+        * Does the recommendation make sense based on your prior experience
+        * Pay attention to the glucose prediction chart embedded in the Meal Bolus tool
         * Practice modifying when the carbs are expected and how long they are expected to last
-        * Practice modifying the bolus recommendation
-        * When you are confident, then you can deliver the bolus manually
+        * Practice modifying the bolus recommendation - note how the prediction changes
+        * When you are confident, you can save the carbs and deliver the bolus
 
-* Manual Correction:
-    * The manual correction suggested by Loop is based on the glucose prediction line, your glucose safety limit, your correction range and your Settings
+At any time, you can enter a bolus using the Bolus icon in the Toolbar. Loop offers a recommendation if the glucose prediction supports one. The [Bolus](../features/bolus.md) tool  has a whole page devoted to it - but here's the quick summary.
+
+* Bolus:
+    * The bolus suggested by Loop is based on the glucose prediction line, your Glucose Safety Limit, your Correction Range and your Settings
     * [Link for Loop 2.2.x Manual Bolus](../features/bolus.md)
-    * [Link for Loop 3 Manual Bolus](../../loop-3/features.md#manual-bolus)
+    * [Link for Loop-dev Manual Bolus Features](../../loop-3/features.md#manual-bolus)
 
 ## Testing
 
-A great benefit of open-loop mode is that you can establish a baseline of BG trends without the influence of temp-basal or automatic-bolus from Loop. This is particularly helpful if you haven't used Medtronic sites/pumps or Omnipod prior to Loop. You may find that your basal rates change significantly coming from other brands of pumps or from multiple daily injections (MDI).  
+Open Loop mode allows you to establish a baseline of glucose trends without the influence of temp-basal or automatic-bolus from Loop. This is particularly helpful if you haven't used Medtronic sites/pumps or Omnipod prior to Loop. You may find that your basal rates change significantly coming from other brands of pumps or from multiple daily injections (MDI).  
 
-Taking the time to establish a good basal profile using the pump you plan to use for Loop will set you up for a smoother transition to closed-loop mode.
+Take the time to establish a good basal profile using the pump you plan to use for Loop while in Open Loop mode.
 
-Test your insulin sensitivity factor (ISF) during open-loop time after your basal rates are established, as ISF is an important component for every Loop calculation for insulin delivery adjustment.  Every 5 minutes, Loop uses your ISF...so it's worth testing it ahead of closed-loop mode.
+Test your insulin sensitivity factor (ISF) during Open Loop after your basal rates are established, as ISF is an important component for every Loop calculation for insulin delivery adjustment.  Loop uses your ISF every 5 minutes to update predictions, so it's worth testing before turning on automated insulin dosing with Closed Loop mode.
 
-## Eventual BG
+## Eventual Glucose
 
-One of the best things you can do is to train yourself to watch the eventual BG in addition to the current BG for helping understand Loop recommendations for insulin delivery adjustment.  So many of us have become accustomed to dealing with current BGs and perhaps IOB at the same time...but Loop is also looking at BG momentum, carbs on board, retrospective trends.  Loop is utilizing all of those variables to predict an eventual BG.  Its current decisions are based on that eventual BG.  Training yourself to watch that eventual BG will help you understand the temp basals being offered at any given time.
+Watch the eventual glucose, in addition to the current glucose, to understand Loop recommendations for insulin delivery adjustment.  Loop is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose.  Its current decisions are based on that eventual glucose.
 
-On the other hand, Loop will not recommend increased insulin delivery now if a temporary dip in BG is predicted; it may even be recommending a decrease, i.e., temp basal of 0 U/hr.  So the eventual BG may be higher than you want, but if you see a dip below your correction range, pay attention over time.  Once a dip is no longer predicted, then Loop will again recommend an increase in insulin delivery. If the Loop predictions don't match your experience - probably a sign that your settings may need to be adjusted.
+On the other hand, Loop will not recommend increased insulin delivery now if a temporary dip in glucose is predicted; it may even be recommending a decrease, i.e., temp basal of 0 U/hr.  So the eventual glucose may be higher than you want, but if you see a dip below your correction range, pay attention over time.  Once a dip is no longer predicted, then Loop will again recommend an increase in insulin delivery. If the Loop predictions don't match your experience - probably a sign that your settings may need to be adjusted.
 
 ## Carb Absorption
 
-Probably the next most difficult transition involves using carb absorption as a component to every [meal entry](../features/carbs.md).  Similar to how you perhaps used extended boluses for meals that impacted BGs longer than the duration of your insulin...that same idea applies to estimate your carb absorption times. Watch your meals and try to estimate how long they are impacting your BG for various types of food.  Watch the times when Loop would've wanted to suspend basal or increase insulin delivery...ask yourself why it would be doing that.  Especially ask yourself if that is the same decision as you would've made at that time in a meal normally.  Would you be worried that you might go low later if you see Loop offering increased insulin delivery early after a meal?  Would you be worried about going high later if Loop wants to suspend basals instead?  If you put some effort into this effort before closing the loop, it will pay off with a smoother transition to closed loop.
+Probably the next most difficult transition involves using carb absorption as a component to every [meal entry](../features/carbs.md).  Similar to how you perhaps used extended boluses for meals that impacted glucose longer than the duration of your insulin...that same idea applies to estimate your carb absorption times. Watch your meals and try to estimate how long they are impacting your glucose for various types of food.  Watch the times when Loop would've wanted to suspend basal or increase insulin delivery...ask yourself why it would be doing that.  Especially ask yourself if that is the same decision as you would've made at that time in a meal normally.  Would you be worried that you might go low later if you see Loop offering increased insulin delivery early after a meal?  Would you be worried about going high later if Loop wants to suspend basals instead?  If you put some effort into this effort before closing the loop, it will pay off with a smoother transition to closed loop.
 
 ## Troubleshooting
 
