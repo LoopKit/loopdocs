@@ -215,12 +215,20 @@ The GIF below shows:
 
 ### Select Signing & Capabilities Tab
 
-In the middle pane of the Xcode window, click on the tab labeled `Signing & Capabilities`. (When Xcode first opens following a fresh download, the default is the `General` tab.)
+The graphic below indicates in red the three places you need to click in order to begin signing targets.
 
-!!! danger "Make sure All is Highlighted"
-    There are some highlighted items at the top of the Signing & Capabilities pane that say: `All`, `Debug` and `Release`.  The `All` button should be highlighted.  If either the `Debug` or `Release` button is highlighted, you will get an error when you try to build.
+* First, click on the tab labeled `Signing & Capabilities`
+* Second, click on the icon labeled `Loop` under the word `TARGETS`
+* Third, click on the dropdown menu (red circle) by the word `Team`
 
-![graphic showing Signing & Capabilities tab is highlighted](img/xcode-signing.svg){width="650"}
+!!! tip "Click Only where Instructed"
+    Users sometimes click when they do not mean to. 
+
+    * Make sure `All`, indicated by dashed blue oval, is selected
+        * If `Debug` or `Release` is accidentally tapped, you will not be able to build
+    * Make sure checkbox in `Automatically manage signing`, indicated by dashed blue rectangle, remains checked
+
+![graphic showing Signing & Capabilities tab is highlighted and where to click to sign targets](img/xcode-signing.svg){width="750"}
 {align="center"}
 
 
@@ -247,13 +255,10 @@ Start with the Loop target, the first one on the target list. Choose the team yo
 ![zoom of region where user selects signing team](img/team.png){width="400"}
 {align="center"}
 
-- Make sure you keep the "automatically manage signing" box checked in the signing area.
-- If you do not have `All` selected near the top (indicated by the red box in the graphic below), your targets won't get signed properly.  Make sure you did not accidentally click on `Debug` or `Release`.
 - If you select a team name without (personal team), your app will last a full year.  
 - If you select a team name with (personal team), your app will expire after 7 days
     - You must disable [Push Notification and Siri](step14.md#free-account) - click on the link for instructions then return using your browser back button
     - If you never signed up for a [Free Developer Account](step9.md#add-apple-id), you will not have a (personal team) showing
-
 
 
 A successfully signed target will have a provisioning profile and signing certificate similar to the screenshot below.
