@@ -724,6 +724,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#optional-steps" class="md-nav__link">
+    Optional Steps
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2146,6 +2153,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#optional-steps" class="md-nav__link">
+    Optional Steps
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2306,19 +2320,27 @@
 <p align="center"><img alt="the beginning of the clone for LoopWorkspace " src="../img/build-select-07.png" width="750" /></p>
 <p>The final terminal messages of a successful download are shown in the next graphic.</p>
 <p align="center"><img alt="the end of LoopWorkspace download" src="../img/build-select-08.png" width="750" /></p>
-<p>If any errors are shown in your terminal window, you need to read the error and hit any key (other than 1) followed by return to cancel.  You can try to fix the error and run the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite <a href="../..#finding-help">Loop Social Media</a> site.</p>
+<p>If an error appears in your terminal window, read the error and tap any key other than 1, followed by return to cancel. Try to fix the error and run the script one more time. Still not working? Reach out for help at your favorite <a href="../..#finding-help">Loop Social Media</a> site.</p>
 <h3 id="download-was-successful">Download was Successful<a class="headerlink" href="#download-was-successful" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Assuming there are no errors:</p>
+<p>If there are no errors:</p>
 <ul>
 <li>Make sure your phone is unlocked and plugged into the computer</li>
 <li>Type 1 in the terminal window and return to Continue as shown in this graphic.</li>
 </ul>
 <p align="center"><img alt="after confirming no build errors in the download" src="../img/build-select-10.png" width="750" /></p>
-<p>The final actions of the script are to:</p>
+<p>The final actions of the script are to open two browser windows and then <abbr title="program used to build an app">Xcode</abbr>:</p>
 <ul>
-<li>Open <abbr title="program used to build an app">Xcode</abbr> using the correct folder for building the app you just downloaded</li>
-<li>Open a page from a different site (with abbreviated build instructions) in your browser<ul>
+<li>First the script tells you what will happen next and waits for you to indicate you're ready by tapping return<ul>
+<li>Open a page with abbreviated build instructions from a different site in your browser<ul>
 <li>If that webpage is not available, it is a convenience for experienced builders and not required</li>
+</ul>
+</li>
+<li>Open LoopDocs here (at the Prepare to Build section) in your browser</li>
+<li>Open <abbr title="program used to build an app">Xcode</abbr> so you can prepare to build</li>
+</ul>
+</li>
+<li>Last message informs you that you can close the terminal window if you're done<ul>
+<li>It's probably a good idea to wait until you've successfully built the app before closing the terminal</li>
 </ul>
 </li>
 </ul>
@@ -2409,10 +2431,67 @@
 </div>
 <p align="center"><img alt="img/your_device.png" src="../img/your_device.png" width="650" /></p>
 <h3 id="select-signing-capabilities-tab">Select Signing &amp; Capabilities Tab<a class="headerlink" href="#select-signing-capabilities-tab" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>In the middle pane of the <abbr title="program used to build an app">Xcode</abbr> window, click on the tab labeled <code>Signing &amp; Capabilities</code>. (When <abbr title="program used to build an app">Xcode</abbr> first opens following a fresh download, the default is the <code>General</code> tab.)</p>
-<p>There are some highlighted items at the top of the Signing &amp; Capabilities pane that say: <code>All</code>, <code>Debug</code> and <code>Release</code>.  The <code>All</code> button should be highlighted.  If either the <code>Debug</code> or <code>Release</code> button is highlighted, you will get an error when you try to build.</p>
+<p>The graphic below indicates in red the three places you need to click in order to begin signing targets.</p>
+<ul>
+<li>First, click on the tab labeled <code>Signing &amp; Capabilities</code></li>
+<li>Second, click on the icon labeled <code>Loop</code> under the word <code>TARGETS</code></li>
+<li>Third, click on the dropdown menu (red circle) by the word <code>Team</code></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Click Only where Instructed</p>
+<p>Users sometimes click when they do not mean to. </p>
+<ul>
+<li>Make sure <code>All</code>, indicated by dashed blue oval, is selected<ul>
+<li>If <code>Debug</code> or <code>Release</code> is accidentally tapped, you will not be able to build</li>
+</ul>
+</li>
+<li>Make sure checkbox in <code>Automatically manage signing</code>, indicated by dashed blue rectangle, remains checked</li>
+</ul>
+</div>
+<p align="center"><img alt="graphic showing Signing &amp; Capabilities tab is highlighted and where to click to sign targets" src="../img/xcode-signing.svg" width="750" /></p>
+<h3 id="sign-the-targets">Sign the Targets<a class="headerlink" href="#sign-the-targets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>It is time to Sign the Targets with your <a href="../step9/#add-apple-id">Apple Developer ID</a></p>
+<div class="admonition info">
+<p class="admonition-title">First Time</p>
+<p>In addition to the <a href="#select-loop-workspace-and-your-phone">Trust Your Computer</a> steps mentioned above for the first time you plug in your phone, the first time you use your Apple Developer ID to sign a target for an app, you need to register your device with your Apple Developer ID.</p>
+<p>A message similar to the one in the graphic below will appear with the first target you sign.</p>
+<p>At any time after you see that message, click on the "Register Device" button to confirm.</p>
+<ul>
+<li>You <strong>must</strong> be connected to the Internet for this step because your computer needs to communicate with Apple to register that device</li>
+<li>You <strong>must</strong> register the device at some point before you try to build the app to the device</li>
+</ul>
+</div>
+<p align="center"><img alt="graphic indicating phone needs to be registered" src="../img/register_device.png" width="300" /></p>
+<p>Start with the Loop target, the first one on the target list. Choose the team you'd like to sign with. </p>
+<p align="center"><img alt="zoom of region where user selects signing team" src="../img/team.png" width="400" /></p>
+<ul>
+<li>If you select a team name without (personal team), your app will last a full year.  </li>
+<li>If you select a team name with (personal team), your app will expire after 7 days<ul>
+<li>You must disable <a href="./#free-account">Push Notification and Siri</a> - click on the link for instructions then return using your browser back button</li>
+<li>If you never signed up for a <a href="../step9/#add-apple-id">Free Developer Account</a>, you will not have a (personal team) showing</li>
+</ul>
+</li>
+</ul>
+<p>A successfully signed target will have a provisioning profile and signing certificate similar to the screenshot below.</p>
+<p>Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The four targets that must be signed prior to building the Loop app are Loop, Loop Status Extension, Watch App, and WatchApp Extension.</p>
+<p align="center"><img alt="Xcode window showing the four targets that must be signed" src="../img/success.png" width="750" /></p>
+<p>After signing the 4 targets, click on the Loop icon under the <code>PROJECTS</code> heading. (Refer to the bright blue box in graphic above - click on that Loop icon.)</p>
+<ul>
+<li>If you skip this step, you may get an "Entitlements" Build Error for either Loop or WatchApp</li>
+<li>Follow this procedure <a href="../build_errors/#entitlements-error">Entitlements Error</a></li>
+<li>Much easier to just click on Loop under <code>Projects</code></li>
+</ul>
+<div class="admonition abstract">
+<p class="admonition-title">Advanced Users Only</p>
+<p>There are <a href="../step13/#signing-targets">more targets</a> which must be signed to build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>If you read the hint in <a href="../step13/#signing-targets">Step 13</a> and edited the LoopConfigOverride.xcconfig, your targets are already signed.</p>
+<ul>
+<li><strong>Repeat: only build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you're a developer/advanced user</strong></li>
+</ul>
+</div>
+<p>If you are using a paid account, skip over the next section to <a href="#optional-steps">Optional Steps</a></p>
 <h4 id="free-account">Free Account<a class="headerlink" href="#free-account" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If you are using a paid account, skip this section - head to <a href="#sign-the-targets">Sign the Targets</a>  These steps are only required for those building with the Free Account.</p>
+<p>These steps are only required for those building with the Free Account.</p>
 <p><em>The graphics in this section have not been updated to show "Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)".</em></p>
 <p><em>The graphics in this section have not been updated for <abbr title="program used to build an app">Xcode</abbr> 13, which uses the trashcan icon instead of the x for removing capabilities.</em></p>
 <p><em>If you are using a free account to build Loop-dev, review this section and then <a href="../step13/#loop-dev-with-free-account">Loop-dev with Free Account</a></em></p>
@@ -2423,60 +2502,34 @@
 <p>Note that this graphic shows <code>Debug</code> selected in the Signing &amp; Capabilities pane. This is not correct - make sure that <code>All</code> is selected instead.</p>
 <p align="center"><img alt="img/siri-errors.png" src="../img/siri-errors.png" width="750" /></p>
 </div>
-<h3 id="sign-the-targets">Sign the Targets<a class="headerlink" href="#sign-the-targets" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>It is time to Sign the Targets with your <a href="../step9/#add-apple-id">Apple Developer ID</a></p>
-<p>Once you select your device (your iPhone's name), you are ready to start signing the targets. Start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have <code>All</code> selected near the top and then select the dropdown menu where it currently says "none". Choose the team you'd like to sign with. Make sure you keep the "automatically manage signing" box checked in the signing area.</p>
-<ul>
-<li>If you do not have <code>All</code> selected near the top (indicated by the red box in the graphic below), your targets won't get signed properly.  Make sure you did not accidentally click on <code>Debug</code> or <code>Release</code>.</li>
-<li>If you select a team name with (personal team), your app will expire after 7 days and you must disable <a href="./#free-account">Push Notification and Siri</a> as mentioned above.</li>
-<li>If you select a team name without (personal team), your app will last a full year.  </li>
-<li>If you never signed up for a <a href="../step9/#add-apple-id">Free Developer Account</a>, you will not have a (personal team) showing.</li>
-</ul>
-<p><em>The graphics in this section have not been updated to show "Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)".</em></p>
-<p align="center"><img alt="img/team.png" src="../img/team.png" width="750" /></p>
-<p>Once you choose your signing team, <abbr title="program used to build an app">Xcode</abbr> will automatically generate provisioning profiles and signing certificates.  If this is the first time you are building on this iPhone with this developer account, you may be prompted to register the device.  Simply click on the "Register Device" button to confirm. Note - you <strong>must</strong> be connected to the Internet for this step because your computer needs to communicate with Apple to register that device. (Sharp-eyed users may notice this <abbr title="program used to build an app">Xcode</abbr> screen looks a little different from the one on your Mac - it's from an older version of <abbr title="program used to build an app">Xcode</abbr> and the graphic was not updated because the relevant information refers to registering your phone.  Don't sweat it if your screen looks a little different from some of the graphics.)</p>
-<p align="center"><img alt="img/register_device.png" src="../img/register_device.png" width="750" /></p>
-<p>A successfully signed target will have a provisioning profile and signing certificate similar to the screenshot below.  Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The four targets that must be signed prior to building the Loop app are Loop, Loop Status Extension, Watch App, and WatchApp Extension.</p>
-<p align="center"><img alt="Xcode window showing the four targets that must be signed" src="../img/success.png" width="750" /></p>
-<ul>
-<li>For <a href="#free-account">Free Account</a> - you must take additional steps before signing</li>
-<li>ONLY sign the 4 targets highlighted in the <code>Build Summary Graphic</code> above<ul>
-<li>If you sign other targets you might generate errors when you build and they do NOT need to be signed</li>
-</ul>
-</li>
-<li>After signing all 4 targets, click on the Loop icon under the <code>PROJECTS</code> heading</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">New Step for <abbr title="program used to build an app">Xcode</abbr> 13</p>
-<p>There is a new step highlighted in red and green labeled 4.5 in the <a href="#prepare-to-build"><code>Build Summary Graphic</code></a> above.  Be sure to click on the Loop icon under the <code>PROJECT</code> heading BEFORE hitting build.  Otherwise - you may get an "Entitlements" Build Error for either Loop or WatchApp and will need this procedure <a href="../build_errors/#entitlements-error">Entitlements Error</a>.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Advanced Users Only</p>
-<p>There are <a href="../step13/#signing-targets">more targets</a> which must be signed to build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<p>If you read the hint in <a href="../step13/#signing-targets">Step 13</a> and edited the LoopConfigOverride.xcconfig, your targets are already signed.</p>
-<ul>
-<li><strong>Repeat: only build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you're a developer/advanced user</strong></li>
-</ul>
-</div>
+<h3 id="optional-steps">Optional Steps<a class="headerlink" href="#optional-steps" title="Anchor link to this Header on this Page">&para;</a></h3>
 <h4 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p><strong>New Loop users</strong>: Customizations are not a required part of any Loop build. As you gain experience using your Loop app, you may want to customize some of the features. First time builders are encouraged to build with the standard, default code. You can always update your Loop app to add customizations at a later time, using the same download. Subsequent build time is much faster than the initial build for a given download.</p>
 <p>If you want any custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the <a href="../code_customization/">Code Customizations</a> page prior to pressing the Build button.</p>
 <p>When you've finished your customizations, come on back to this section and continue with the rest of the build.</p>
 <h4 id="pair-your-apple-watch">Pair Your Apple Watch<a class="headerlink" href="#pair-your-apple-watch" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p><strong>New Apple Watch users</strong>: If you have an Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)</p>
+<p><strong>New Apple Watch users</strong>: </p>
+<ul>
+<li>If you have a new Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  </li>
+<li>If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)</li>
+</ul>
 <p><strong>Existing Apple Watch users</strong>: Please update your <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> prior to building the Loop app.  The current version of Loop requires <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 4.1 or newer.</p>
 <h2 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Confirm that you are ready to build Loop:</p>
+<p>Before building Loop, confirm that:</p>
 <ul>
-<li>Is your iPhone unlocked and plugged into the computer?</li>
-<li>Have you signed the four targets?</li>
-<li>Have you clicked on the Loop icon under the <code>PROJECTS</code> heading?</li>
-<li>Have you selected Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)?</li>
-<li>Have you selected your phone and not a simulator?</li>
-<li>OPTIONAL: Is you <a href="#pair-your-apple-watch">Apple watch</a> paired and updated?</li>
-<li>OPTIONAL: Are you done with desired <a href="#code-customizations">customizations</a>?</li>
+<li>Your iPhone is unlocked and plugged into the computer</li>
+<li>You selected Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
+<li>You selected your phone and not a simulator</li>
+<li>You signed the four targets</li>
+<li>You clicked on the Loop icon under the <code>PROJECTS</code> heading</li>
+<li>OPTIONAL: You <a href="#pair-your-apple-watch">Apple watch</a> is paired and updated</li>
+<li>OPTIONAL: You finished desired <a href="#code-customizations">customizations</a>?</li>
 </ul>
 <p>It is time to press the “Build” (Play) button to start <abbr title="program used to build an app">Xcode</abbr> on its way.</p>
+<div class="admonition warning">
+<p class="admonition-title">First Time for This Computer</p>
+<p>If you have never built an app on this computer, you will need to allow the app access once for every target.  <a href="#codesign-keychain-access">Review these instructions</a> before you press the Build button so you know what to do.</p>
+</div>
 <p><em>The graphics in this section have not been updated to show "Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)".</em></p>
 <div class="admonition info">
 <p class="admonition-title">Helpful Tips</p>
@@ -2489,6 +2542,7 @@
 <div class="admonition abstract">
 <p class="admonition-title">First Time Builder or First Time on this Computer</p>
 <p>Sometime during your first build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.</p>
+<p><strong>FYI:</strong> <em>codesign is for code sign - nothing to do with design.</em></p>
 <p>Enter the same password you use to log in to the mac, select always allow and then do it again next time you are asked - once for each target you just signed above.</p>
 <p align="center"><img alt="img/keychain-prompt.png" src="../img/keychain-prompt.png" width="350" /></p>
 <p>It is normal for this prompt to come up four times in a row even after you enter the correct password. In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel. <strong>Don't press deny.</strong> Keep entering your computer password and pressing the "Always Allow" button as many times as it takes (four times to be exact; one for each target in <abbr title="program used to build an app">Xcode</abbr>). After four times of successful password entry, the build will continue.</p>
@@ -2496,9 +2550,20 @@
 <h3 id="build-finished">Build Finished<a class="headerlink" href="#build-finished" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">First Time Building on a New Device?</p>
-<p>If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like the one shown below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before the Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings-&gt;General-&gt;Device Management (or profiles, Profiles &amp; Device Management on newer <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to <a href="../build_errors/#device-management-could-not-launch-loop">this Build Error section</a> to find the solution.</p>
-<p align="center"><img alt="img/trust_device.jpg" src="../img/trust_device.jpg" width="750" /></p>
+<p>The first time you install an app on your iPhone using your developer account, you may get a warning like the one shown below. Don't worry. </p>
+<ul>
+<li>You need to do extra step on the phone before the Loop app can open</li>
+<li>Follow the directions in your warning (graphic is a little old)</li>
+<li>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15:<ul>
+<li>Go to the phone Settings</li>
+<li>Scroll to find the Developer icon and select it (or use search feature)</li>
+<li>Enable trust for your Developer Account</li>
+</ul>
+</li>
+<li>If you are missing the Device Management/Profiles option in your iPhone settings, head over to <a href="../build_errors/#device-management-could-not-launch-loop">this Build Error section</a> to find the solution.</li>
+</ul>
 </div>
+<p align="center"><img alt="img/trust_device.jpg" src="../img/trust_device.jpg" width="750" /></p>
 <h3 id="build-succeeded">Build Succeeded<a class="headerlink" href="#build-succeeded" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition success">
 <p class="admonition-title">Congratulations</p>
@@ -2507,11 +2572,11 @@
 <p>Your brand new Loop app will automatically open a screen asking you to allow Loop to send you notifications. The Health app permissions screen will be visible in the background, but you must answer the Notification request first. Click <code>Allow</code> to enable Loop to send you notifications.</p>
 <p>Now the Health permissions screen is active. Click on the <code>Turn All Categories On</code> line and then <strong>immediately turn OFF the permission to read Carbohydrates</strong>. The end result is that Health should have permission to read and write Blood Glucose and Insulin Delivery; permission to write Carbohydrates (<a href="../health/#loop-permissions">NOT read carbs</a>); and permission to read Sleep Data. When the permissions are set correctly, i.e., match the image below, click <code>Allow</code> in the upper right corner.</p>
 <p align="center"><img alt="img/health-start.JPEG" src="../img/health-start.svg" width="450" /></p>
-<p>Next, you will use the <a href="../../loop-3/onboarding/">Set up App</a> section of this website to keep proceeding safely.</p>
+<p>Next, you will use the <a href="../../operation/overview/">Set up App</a> section of this website to keep proceeding safely.</p>
 </div>
 <div class="admonition question">
-<p class="admonition-title">FAQ: But what about those yellow alerts that remain in <abbr title="program used to build an app">Xcode</abbr>? Should I worry about them?</p>
-<p>If you see yellow alerts after your build is done...those are not an issue. Whether your build succeeded or failed...the yellow warnings play no role in either outcome. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.</p>
+<p class="admonition-title">FAQ: But what about those yellow alerts that remain in <abbr title="program used to build an app">Xcode</abbr>?</p>
+<p>If you see yellow alerts during and after your build is done, those are not an issue. Just ignore the yellow alerts.</p>
 <p align="center"><img alt="img/yellow-warnings.png" src="../img/yellow-warnings.png" width="750" /></p>
 </div>
 <h3 id="build-failed">Build Failed<a class="headerlink" href="#build-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2534,7 +2599,7 @@
 <p>If your build was successful but your phone was locked, you will see an <abbr title="program used to build an app">Xcode</abbr> message window that says "Unlock &lt;your phone name&gt; to Continue". Simply unlock your phone and the app will be copied onto your phone and automatically open.</p>
 <p>If there were no build errors, you're done building your Loop app.</p>
 <p>If your phone is still plugged into you computer, you can unplug it. You will get an <abbr title="program used to build an app">Xcode</abbr> message window that says "Lost connection to the debugger on &lt;your phone name&gt;".  Just click OK.</p>
-<p>The next step is the begin the <a href="../../loop-3/onboarding/">Set up App</a> process.</p>
+<p>The next step is the begin the <a href="../../operation/overview/">Set up App</a> process.</p>
 <p><img alt="alt" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" /></p>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition info">
