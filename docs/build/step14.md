@@ -111,12 +111,11 @@ The final terminal messages of a successful download are shown in the next graph
 ![the end of LoopWorkspace download](img/build-select-08.png){width="750"}
 {align="center"}
 
-If any errors are shown in your terminal window, you need to read the error and hit any key (other than 1) followed by return to cancel.  You can try to fix the error and run the script one more time.  But if you continue to get errors (bad internet connection or not enough room), you should reach out for help at your favorite [Loop Social Media](../index.md#finding-help) site.
-
+If an error appears in your terminal window, read the error and tap any key other than 1, followed by return to cancel. Try to fix the error and run the script one more time. Still not working? Reach out for help at your favorite [Loop Social Media](../index.md#finding-help) site.
 
 ### Download was Successful
 
-Assuming there are no errors:
+If there are no errors:
 
 * Make sure your phone is unlocked and plugged into the computer
 * Type 1 in the terminal window and return to Continue as shown in this graphic.
@@ -124,11 +123,15 @@ Assuming there are no errors:
 ![after confirming no build errors in the download](img/build-select-10.png){width="750"}
 {align="center"}
 
-The final actions of the script are to:
+The final actions of the script are to open two browser windows and then Xcode:
 
-* Open Xcode using the correct folder for building the app you just downloaded
-* Open a page from a different site (with abbreviated build instructions) in your browser
-    * If that webpage is not available, it is a convenience for experienced builders and not required
+* First the script tells you what will happen next and waits for you to indicate you're ready by tapping return
+    * Open a page with abbreviated build instructions from a different site in your browser
+        * If that webpage is not available, it is a convenience for experienced builders and not required
+    * Open LoopDocs here (at the Prepare to Build section) in your browser
+    * Open Xcode so you can prepare to build
+* Last message informs you that you can close the terminal window if you're done
+    * It's probably a good idea to wait until you've successfully built the app before closing the terminal
 
 ## Prepare to Build
 
@@ -214,11 +217,72 @@ The GIF below shows:
 
 In the middle pane of the Xcode window, click on the tab labeled `Signing & Capabilities`. (When Xcode first opens following a fresh download, the default is the `General` tab.)
 
-There are some highlighted items at the top of the Signing & Capabilities pane that say: `All`, `Debug` and `Release`.  The `All` button should be highlighted.  If either the `Debug` or `Release` button is highlighted, you will get an error when you try to build.
+!!! danger "Make sure All is Highlighted"
+    There are some highlighted items at the top of the Signing & Capabilities pane that say: `All`, `Debug` and `Release`.  The `All` button should be highlighted.  If either the `Debug` or `Release` button is highlighted, you will get an error when you try to build.
+
+![graphic showing Signing & Capabilities tab is highlighted](img/xcode-signing.svg){width="650"}
+{align="center"}
+
+
+### Sign the Targets
+
+It is time to Sign the Targets with your [Apple Developer ID](step9.md#add-apple-id)
+
+!!! info "First Time"
+    In addition to the [Trust Your Computer](#select-loop-workspace-and-your-phone) steps mentioned above for the first time you plug in your phone, the first time you use your Apple Developer ID to sign a target for an app, you need to register your device with your Apple Developer ID.
+
+    A message similar to the one in the graphic below will appear with the first target you sign.
+    
+    At any time after you see that message, click on the "Register Device" button to confirm.
+    
+    * You **must** be connected to the Internet for this step because your computer needs to communicate with Apple to register that device
+    * You **must** register the device at some point before you try to build the app to the device
+
+![graphic indicating phone needs to be registered](img/register_device.png){width="300"}
+{align="center"}
+
+
+Start with the Loop target, the first one on the target list. Choose the team you'd like to sign with. 
+
+![zoom of region where user selects signing team](img/team.png){width="400"}
+{align="center"}
+
+- Make sure you keep the "automatically manage signing" box checked in the signing area.
+- If you do not have `All` selected near the top (indicated by the red box in the graphic below), your targets won't get signed properly.  Make sure you did not accidentally click on `Debug` or `Release`.
+- If you select a team name without (personal team), your app will last a full year.  
+- If you select a team name with (personal team), your app will expire after 7 days
+    - You must disable [Push Notification and Siri](step14.md#free-account) - click on the link for instructions then return using your browser back button
+    - If you never signed up for a [Free Developer Account](step9.md#add-apple-id), you will not have a (personal team) showing
+
+
+
+A successfully signed target will have a provisioning profile and signing certificate similar to the screenshot below.
+
+Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The four targets that must be signed prior to building the Loop app are Loop, Loop Status Extension, Watch App, and WatchApp Extension.
+
+![Xcode window showing the four targets that must be signed](img/success.png){width="750"}
+{align="center"}
+
+
+After signing the 4 targets, click on the Loop icon under the `PROJECTS` heading. (Refer to the bright blue box in graphic above - click on that Loop icon.)
+
+- If you skip this step, you may get an "Entitlements" Build Error for either Loop or WatchApp
+- Follow this procedure [Entitlements Error](build_errors.md#entitlements-error)
+- Much easier to just click on Loop under `Projects`
+
+!!! abstract "Advanced Users Only"
+
+    There are [more targets](step13.md#signing-targets) which must be signed to build the dev branch.
+
+    If you read the hint in [Step 13](step13.md#signing-targets) and edited the LoopConfigOverride.xcconfig, your targets are already signed.
+
+    - **Repeat: only build the dev branch if you're a developer/advanced user**
+
+If you are using a paid account, skip over the next section to [Optional Steps](#optional-steps)
 
 #### Free Account
 
-If you are using a paid account, skip this section - head to [Sign the Targets](#sign-the-targets)  These steps are only required for those building with the Free Account.
+These steps are only required for those building with the Free Account.
 
 _The graphics in this section have not been updated to show "Loop (Workspace)"._
 
@@ -237,51 +301,7 @@ _If you are using a free account to build Loop-dev, review this section and then
     ![img/siri-errors.png](img/siri-errors.png){width="750"}
     {align="center"}
 
-
-### Sign the Targets
-
-It is time to Sign the Targets with your [Apple Developer ID](step9.md#add-apple-id)
-
-Once you select your device (your iPhone's name), you are ready to start signing the targets. Start with the Loop target, the first one on the target list.  Under the "Signing" area, ensure that you have `All` selected near the top and then select the dropdown menu where it currently says "none". Choose the team you'd like to sign with. Make sure you keep the "automatically manage signing" box checked in the signing area.
-
-- If you do not have `All` selected near the top (indicated by the red box in the graphic below), your targets won't get signed properly.  Make sure you did not accidentally click on `Debug` or `Release`.
-- If you select a team name with (personal team), your app will expire after 7 days and you must disable [Push Notification and Siri](step14.md#free-account) as mentioned above.
-- If you select a team name without (personal team), your app will last a full year.  
-- If you never signed up for a [Free Developer Account](step9.md#add-apple-id), you will not have a (personal team) showing.
-
-_The graphics in this section have not been updated to show "Loop (Workspace)"._
-
-![img/team.png](img/team.png){width="750"}
-{align="center"}
-
-Once you choose your signing team, Xcode will automatically generate provisioning profiles and signing certificates.  If this is the first time you are building on this iPhone with this developer account, you may be prompted to register the device.  Simply click on the "Register Device" button to confirm. Note - you **must** be connected to the Internet for this step because your computer needs to communicate with Apple to register that device. (Sharp-eyed users may notice this Xcode screen looks a little different from the one on your Mac - it's from an older version of Xcode and the graphic was not updated because the relevant information refers to registering your phone.  Don't sweat it if your screen looks a little different from some of the graphics.)
-
-![img/register_device.png](img/register_device.png){width="750"}
-{align="center"}
-
-A successfully signed target will have a provisioning profile and signing certificate similar to the screenshot below.  Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The four targets that must be signed prior to building the Loop app are Loop, Loop Status Extension, Watch App, and WatchApp Extension.
-
-![Xcode window showing the four targets that must be signed](img/success.png){width="750"}
-{align="center"}
-
-
-* For [Free Account](#free-account) - you must take additional steps before signing
-* ONLY sign the 4 targets highlighted in the `Build Summary Graphic` above
-    - If you sign other targets you might generate errors when you build and they do NOT need to be signed
-* After signing all 4 targets, click on the Loop icon under the `PROJECTS` heading
-
-!!! warning "New Step for Xcode 13"
-
-    There is a new step highlighted in red and green labeled 4.5 in the [`Build Summary Graphic`](#prepare-to-build) above.  Be sure to click on the Loop icon under the `PROJECT` heading BEFORE hitting build.  Otherwise - you may get an "Entitlements" Build Error for either Loop or WatchApp and will need this procedure [Entitlements Error](build_errors.md#entitlements-error).
-
-!!! abstract "Advanced Users Only"
-
-    There are [more targets](step13.md#signing-targets) which must be signed to build the dev branch.
-
-    If you read the hint in [Step 13](step13.md#signing-targets) and edited the LoopConfigOverride.xcconfig, your targets are already signed.
-
-    - **Repeat: only build the dev branch if you're a developer/advanced user**
-
+### Optional Steps
 
 #### Code Customizations
 
@@ -293,23 +313,29 @@ When you've finished your customizations, come on back to this section and conti
 
 #### Pair Your Apple Watch
 
-**New Apple Watch users**: If you have an Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)
+**New Apple Watch users**: 
+
+* If you have a new Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  
+* If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)
 
 **Existing Apple Watch users**: Please update your watchOS prior to building the Loop app.  The current version of Loop requires watchOS 4.1 or newer.
 
 ## Build Loop
 
-Confirm that you are ready to build Loop:
+Before building Loop, confirm that:
 
-* Is your iPhone unlocked and plugged into the computer?
-* Have you signed the four targets?
-* Have you clicked on the Loop icon under the `PROJECTS` heading?
-* Have you selected Loop (Workspace)?
-* Have you selected your phone and not a simulator?
-* OPTIONAL: Is you [Apple watch](#pair-your-apple-watch) paired and updated?
-* OPTIONAL: Are you done with desired [customizations](#code-customizations)?
+* Your iPhone is unlocked and plugged into the computer
+* You selected Loop (Workspace)
+* You selected your phone and not a simulator
+* You signed the four targets
+* You clicked on the Loop icon under the `PROJECTS` heading
+* OPTIONAL: You [Apple watch](#pair-your-apple-watch) is paired and updated
+* OPTIONAL: You finished desired [customizations](#code-customizations)?
 
 It is time to press the “Build” (Play) button to start Xcode on its way.
+
+!!! warning "First Time for This Computer"
+    If you have never built an app on this computer, you will need to allow the app access once for every target.  [Review these instructions](#codesign-keychain-access) before you press the Build button so you know what to do.
 
 _The graphics in this section have not been updated to show "Loop (Workspace)"._
 
@@ -329,6 +355,8 @@ You’ll see the progression of the build in the status window (top middle of Xc
 !!! abstract "First Time Builder or First Time on this Computer"
 
     Sometime during your first build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.
+    
+    **FYI:** _codesign is for code sign - nothing to do with design._
 
     Enter the same password you use to log in to the mac, select always allow and then do it again next time you are asked - once for each target you just signed above.
 
@@ -344,10 +372,19 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! abstract "First Time Building on a New Device?"
 
-    If this is the first time you have installed an app on your iPhone using your developer account, you may get a warning like the one shown below after a successful build. Don't worry, Loop usually installed just fine on the phone but needs you to do an extra step on the phone before the Loop app can open. Just follow the directions shown in the warning for what you need to do on your iPhone. Go to Settings->General->Device Management (or profiles, Profiles & Device Management on newer iOS) and enable trust for your Developer Account. If you are missing the Device Management/Profiles option in your iPhone settings, then head over to [this Build Error section](build_errors.md#device-management-could-not-launch-loop) to find the solution.
+    The first time you install an app on your iPhone using your developer account, you may get a warning like the one shown below. Don't worry. 
+    
+    * You need to do extra step on the phone before the Loop app can open
+    * Follow the directions in your warning (graphic is a little old)
+    * For iOS 15:
+        * Go to the phone Settings
+        * Scroll to find the Developer icon and select it (or use search feature)
+        * Enable trust for your Developer Account
+    * If you are missing the Device Management/Profiles option in your iPhone settings, head over to [this Build Error section](build_errors.md#device-management-could-not-launch-loop) to find the solution.
 
-    ![img/trust_device.jpg](img/trust_device.jpg){width="750"}
-    {align="center"}
+![img/trust_device.jpg](img/trust_device.jpg){width="750"}
+{align="center"}
+
 
 ### Build Succeeded
 
@@ -365,11 +402,11 @@ You’ll see the progression of the build in the status window (top middle of Xc
     {align="center"}
 
 
-    Next, you will use the [Set up App](../loop-3/onboarding.md) section of this website to keep proceeding safely.
+    Next, you will use the [Set up App](../operation/overview.md) section of this website to keep proceeding safely.
 
-!!! question "FAQ: But what about those yellow alerts that remain in Xcode? Should I worry about them?"
+!!! question "FAQ: But what about those yellow alerts that remain in Xcode?"
 
-    If you see yellow alerts after your build is done...those are not an issue. Whether your build succeeded or failed...the yellow warnings play no role in either outcome. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.
+    If you see yellow alerts during and after your build is done, those are not an issue. Just ignore the yellow alerts.
 
     ![img/yellow-warnings.png](img/yellow-warnings.png){width="750"}
     {align="center"}
@@ -405,7 +442,7 @@ If there were no build errors, you're done building your Loop app.
 
 If your phone is still plugged into you computer, you can unplug it. You will get an Xcode message window that says "Lost connection to the debugger on <your phone name\>".  Just click OK.
 
-The next step is the begin the [Set up App](../loop-3/onboarding.md) process.
+The next step is the begin the [Set up App](../operation/overview.md) process.
 
 ![alt](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
 
