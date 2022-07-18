@@ -1547,6 +1547,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../loop-3/alert-notify/" class="md-nav__link">
+        Loop 3 Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../loop-3/settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
@@ -2097,16 +2111,16 @@
 <p>You can tap on the <code>Recommended</code> line and that value will be transferred to the Bolus line, OR tap on 0.0u on the <code>Bolus</code> row and type in your desired bolus amount OR <code>Save Without Bolusing</code> The <code>Save Without Bolusing</code> option is used if you'd like to add to your meal entry or do not want to accept a bolus right now. The meal entry is NOT saved until you either <code>Deliver</code> or <code>Save Without Bolusing</code>. The graph at the top of the Meal Bolus screen will show your BG prediction based upon your meal entry and desired bolus amount. You can adjust your desired bolus amount or click <code>&lt;Carb Entry</code> to adjust your meal entry and then return to Meal Bolus to see how your BG prediction changes. When you're ready to bolus, click <code>Deliver</code>. If you start a bolus and plan to add additional meal entries, you will probably need to <code>Save without Bolusing</code> for the next entry because Loop will mid-bolus, and you cannot initiate a new bolus while one is in progress. After entering the rest of the meal, don't forget to <a href="../bolus/">bolus</a> manually.</p>
 <div class="admonition warning">
 <p class="admonition-title">To Cancel Bolus</p>
-<p>If you need to modify or cancel a bolus in progress, turn the phone to portait orientation and tap the bolus in progress line right below the heads up display (HUD).  Loop will immediately cancel the in-progress bolus.  If you desire, then you can <a href="../bolus/">bolus</a> manually to modify the insulin to be delivered via bolus.</p>
+<p>If you need to modify or cancel a bolus in progress, turn the phone to portait orientation and tap the bolus in progress line right below the heads up display (<abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>).  Loop will immediately cancel the in-progress bolus.  If you desire, then you can <a href="../bolus/">bolus</a> manually to modify the insulin to be delivered via bolus.</p>
 <p>Remember - once the <code>Deliver</code> button is tapped, the carb entry associated with that bolus is saved.  Loop will increase insulin delivery based on that entry. So if you canceled a bolus prior to modifying a carb entry, be sure to <a href="./#edit-meals">edit the carbs</a> already saved instead of entering a new carb entry.</p>
 </div>
 <p>If your BG is below your correction range, Loop's Recommended bolus will have a small warning above it stating that "Current glucose of xx is below correction range". You can either skip the bolus or enter a portion or all of the Recommended bolus.</p>
 <p>If your BG is below your suspend threshold, Loop will not recommend a bolus. If this happens, you can calculate the bolus using your carbohydrate ratio and enter a portion or all of this amount or you can set a 15 minute timer and wait for your BG to start to rise and then reassess when and how much to bolus.</p>
 <h2 id="automatic-bolus">Automatic Bolus<a class="headerlink" href="#automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loopers who are using the Automatic Bolus <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> still typically prebolus and/or bolus for meals. The amount of <code>Recommended</code> insulin that will appear in the Meal Bolus screen will be the full amount of the bolus Loop recommends (not the 40% partial bolus delivered automatically). As discussed above, you can accept this recommendation or enter a different amount, however, and this is <strong>very important</strong>, if your <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is set to Automatic Bolus, by entering less than the recommended amount and tapping <code>Deliver</code> or tapping <code>Save Without Bolusing</code>, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of the recommended bolus at each successive Loop interval.</p>
+<p>Loopers who are using the Automatic Bolus <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> still typically prebolus and/or bolus for meals. The amount of <code>Recommended</code> insulin that will appear in the Meal Bolus screen will be the full amount of the bolus Loop recommends (not the 40% partial bolus delivered automatically). As discussed above, you can accept this recommendation or enter a different amount, however, and this is <strong>very important</strong>, if your <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is set to Automatic Bolus, by entering less than the recommended amount and tapping <code>Deliver</code> or tapping <code>Save Without Bolusing</code>, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of the recommended bolus at each successive Loop interval.</p>
 <div class="admonition warning">
 <p class="admonition-title">Carb Entry Leads to Insulin Delivery</p>
-<p>Note that this same automatic delivery of insulin in response to entered carbs occurs when <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is set to Temp Basal, but the delivery via temporary basal rates is slower, providing more time for an error to be noticed. By the same token, the Automatic Bolus <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> responds more quickly to increases in blood glucose.</p>
+<p>Note that this same automatic delivery of insulin in response to entered carbs occurs when <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is set to Temp Basal, but the delivery via temporary basal rates is slower, providing more time for an error to be noticed. By the same token, the Automatic Bolus <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> responds more quickly to increases in blood glucose.</p>
 </div>
 <h2 id="dynamic-carb-absorption">Dynamic Carb Absorption<a class="headerlink" href="#dynamic-carb-absorption" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop observes the blood glucose impact of the meal within the 150% absorption time window. Loop calculates how many carbs have been absorbed (regardless of how many you entered) based on your BG pattern and your settings. You can watch the progression of  Loop's observations of your meal by tapping on the Active Carbohydrates chart at the bottom of Loop's main screen and watching the insulin counteraction effects (<abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr>) on the Carbohydrates screen. An example of the screen is on the left side of the figure below. An explanation of the dual lines for each entry and the color coding scheme is explained below the figure. Click on the <a href="../ice/"><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></a> link for more details and an in-real-life example.<br/><br/></p>

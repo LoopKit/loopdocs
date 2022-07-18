@@ -1492,6 +1492,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../loop-3/alert-notify/" class="md-nav__link">
+        Loop 3 Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../loop-3/settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
@@ -1938,7 +1952,7 @@
 <p>You can tap on the <code>Recommended</code> line and that value will be transferred to the Bolus line or tap on 0.0u on the <code>Bolus</code> row and type in your desired bolus amount. As soon as a value is entered on the <code>Bolus</code> row, the Deliver button turns blue and can be tapped to deliver that amount via your pump.</p>
 <p align="center"><img alt="Bolus when below correction range" src="../img/below-min.svg" width="300" /></p>
 <h2 id="correction-bolus">Correction Bolus<a class="headerlink" href="#correction-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop reassesses your insulin needs every time a new BG reading is detected, typically every 5 minutes. If Loop predicts that your BG will be above the high end of your correction range at the end of the Duration of Insulin Activity (<abbr title="Duration of Insulin Action, includes the full time insulin is active include a long, low-level tail">DIA</abbr>) and that your BG will not dip below the suspend threshold at any point during that time period, it will calculate a Correction Bolus. Loop will not give an alert when a correction bolus is being recommended, the bolus entry tool must be clicked to check for one. The Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> in Nightscout will display when Loop is recommending a correction bolus.</p>
+<p>Loop reassesses your insulin needs every time a new BG reading is detected, typically every 5 minutes. If Loop predicts that your BG will be above the high end of your correction range at the end of the Duration of Insulin Activity (<abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>) and that your BG will not dip below the suspend threshold at any point during that time period, it will calculate a Correction Bolus. Loop will not give an alert when a correction bolus is being recommended, the bolus entry tool must be clicked to check for one. The Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> in Nightscout will display when Loop is recommending a correction bolus.</p>
 <ul>
 <li>
 <p>If your <code>Dosing Strategy</code> is set to <code>Temp Basal</code> (default)</p>
@@ -1963,16 +1977,16 @@
 <p class="admonition-title">Lock Phone During Bolus</p>
 <p>Once the bolus has started, you should lock your phone to avoid inadvertently cancelling a bolus.</p>
 </div>
-<p>When the phone is in portrait mode, a bolus status line will appear below the Heads Up Display when Loop has a bolus in progress. The "starting bolus" indicator is shown in the left screenshot above - this is when Loop is communicating with the <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr>. Once the message has been sent to the RilyLink, even if a response from the pump did not make it back to Loop, the bolused xx of yy with the circle display begins, as shown in the right screenshot above. If you change your mind, just click on the bolus status line while the bolus is in progress to cancel your bolus, as shown in the screenshot below.  (Newer versions of Loop explicitly state: Tap to Stop on this line.) The amount bolused shown in this display is based on time.  Loop reconciles the bolus amount with messages received from the pump once the bolus completes.</p>
+<p>When the phone is in portrait mode, a bolus status line will appear below the Heads Up Display when Loop has a bolus in progress. The "starting bolus" indicator is shown in the left screenshot above - this is when Loop is communicating with the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>. Once the message has been sent to the RilyLink, even if a response from the pump did not make it back to Loop, the bolused xx of yy with the circle display begins, as shown in the right screenshot above. If you change your mind, just click on the bolus status line while the bolus is in progress to cancel your bolus, as shown in the screenshot below.  (Newer versions of Loop explicitly state: Tap to Stop on this line.) The amount bolused shown in this display is based on time.  Loop reconciles the bolus amount with messages received from the pump once the bolus completes.</p>
 <p align="center"><img alt="Bolus cancel status indicator" src="../img/bolus-status-line-cancel.svg" width="300" /></p>
 <p>If you see a 'pump is suspended notice' in the bolus status line after cancelling your bolus, just tap on it to resume pump operations.</p>
 <h2 id="bolus-failure-notifications">Bolus Failure Notifications<a class="headerlink" href="#bolus-failure-notifications" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>On occasion, you will receive a notification that a bolus may have failed. If your <code>Dosing Strategy</code> is set to <code>Automatic Bolus</code>, this can happen when an automatic bolus is in progress. In some of these cases, the bolus was delivered. On a Medtronic pump, you should check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.  Omnipod users can hear the clicks if the room is quiet enough.</p>
+<p>On occasion, you will receive a notification that a bolus may have failed. If your <code>Dosing Strategy</code> is set to <code>Automatic Bolus</code>, this can happen when an automatic bolus is in progress. In some of these cases, the bolus was delivered. On a Medtronic pump, you should check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.  <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> users can hear the clicks if the room is quiet enough.</p>
 <p>If you get an uncertain delivery message, you may still see the "bolused xx of yy" display continue for as long as it would have taken to actually deliver the bolus. This display is driven by a timer and logic on the phone. (Loop is not asking the pump repeatedly - "are you done yet?"). You may want to interrupt an uncertain bolus if it is large, evaluate status and then resume with a fresh bolus. Loop should update the status the next time it contacts the pump. It can determine whether that bolus actually went through or not and will update the screen.  Look at the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> screen (accessed by tapping the Active Insulin or Insulin Delivery plots). Turn your phone to landscape orientation and you should see either "Certain" or "Uncertain" at the end of each Bolus record. (If you tap on the specific record, even more detail is displayed.)</p>
 <p>If an "uncertain" delivery is not resolved:</p>
 <ul>
-<li>Make sure the <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device is communicating properly</li>
-<li>With Omnipod, you can execute a <a href="../../loop-settings/pump-commands/#read-pod-status">Read Pod Status</a> to ensure communication with the pod is working</li>
+<li>Make sure the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device is communicating properly</li>
+<li>With <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>, you can execute a <a href="../../loop-settings/pump-commands/#read-pod-status">Read Pod Status</a> to ensure communication with the pod is working</li>
 <li><a href="https://support.apple.com/en-us/HT201330">Quit the Loop app</a> and restart it. (Note - this is different from a power cycle of the phone which remembers settings within an app which was running before the power cycle.)</li>
 </ul>
 <p>If that does not resolve the issue, please tap on Loop Settings, <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report and email it to yourself. Then <a href="../../..#finding-help">post</a> on Facebook or Zulipchat, explain what happened and say you have an <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report. Someone should reach out to you.</p>

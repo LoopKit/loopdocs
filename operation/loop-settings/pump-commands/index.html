@@ -1588,6 +1588,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../loop-3/alert-notify/" class="md-nav__link">
+        Loop 3 Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../loop-3/settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
@@ -2126,17 +2140,17 @@
                 <h1 id="pump-settings">Pump Settings<a class="headerlink" href="#pump-settings" title="Anchor link to this Header on this Page">&para;</a></h1>
 <p>To bring up the Pod/Pump Settings display, tap on the reservoir icon in the Heads Up Display or the image of the pump in the Loop settings screen.</p>
 <div class="admonition note">
-<p class="admonition-title">Omnipod Eros vs DASH</p>
-<p>With the addition of DASH pods with Loop-dev, you will notice all reference to Eros pods continue to say Omnipod in both the documentation and the code.</p>
+<p class="admonition-title"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Eros vs DASH</p>
+<p>With the addition of DASH pods with Loop-dev, you will notice all reference to Eros pods continue to say <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> in both the documentation and the code.</p>
 <p>Documentation and screens in the app indicate DASH explicitly.</p>
 </div>
 <h2 id="change-time-zone">Change Time Zone<a class="headerlink" href="#change-time-zone" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The schedules for the basal rates, correction ranges, insulin sensitivity factors and carb ratios stay at the pump time even if the user and their phone change time zones or when daylight savings time occurs.  To bring the pump into the same time zone as the phone, use this command in Loop. (Medtronic users - do NOT adjust time on your pump - always go through Loop.)</p>
 <p>Select the Pod/Pump Settings display, scroll down to the Change Time Zone line, example shown in the graphic below.  You can leave the time zone offset unchanged or touch it to change to the current time zone.  Note that the 24 hour configuration pattern for basal rates, insulin sensitivity factor, carb ratio and correction range are aligned with the time zone shown on this line.</p>
 <p><img alt="Command line to modify the time zone" src="../img/change-time-zone.svg" width="250" /></p>
-<p>Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour configuration pattern to the old time zone. Some behavior depends on whether the pump is an <a href="#change-time-zone_1">Omnipod</a> or <a href="#change-time-zone_2">Medtronic</a>.</p>
-<h2 id="omnipod-commands">Omnipod Commands<a class="headerlink" href="#omnipod-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>To bring up the Pod Settings display, tap on the Pod Age icon on the Heads Up Display or the image of the Omnipod in the Loop settings display to reach the Pod Settings display.</p>
+<p>Once the Change Time Zone command is tapped, Loop no longer shifts the 24 hour configuration pattern to the old time zone. Some behavior depends on whether the pump is an <a href="#change-time-zone_1"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></a> or <a href="#change-time-zone_2">Medtronic</a>.</p>
+<h2 id="omnipod-commands"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Commands<a class="headerlink" href="#omnipod-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>To bring up the Pod Settings display, tap on the Pod Age icon on the Heads Up Display or the image of the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> in the Loop settings display to reach the Pod Settings display.</p>
 <p>This screen provides important information about your Pod and allows you to issue some commands to the Pod through Loop. There were some recent modifications made to the layout and underlying information for some of the rows.</p>
 <ul>
 <li>
@@ -2161,7 +2175,7 @@
 </ul>
 <p><img alt="Basal Delivery Line" src="../img/pod-settings-basal-delivery.png" width="250" /></p>
 <h4 id="alarms">Alarms<a class="headerlink" href="#alarms" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>This line displays Alerts or Alarms; tapping on it, or on the accompanying banner displayed in the HUD, acknowledges the alert</p>
+<p>This line displays Alerts or Alarms; tapping on it, or on the accompanying banner displayed in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>, acknowledges the alert</p>
 <ul>
 <li>If your Pod is beeping an alert, this line will display information about the alert. Tapping on the alert clears or "snoozes" the alert status.</li>
 <li>If your Pod is screaming, it's time to change it.  Tapping on this line stimulates an immediate reading of the actual error (normally this happens at the next <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading).</li>
@@ -2189,7 +2203,7 @@
 <p><img alt="banner notice on the HUD" src="../img/pod-hud-suspended.png" width="250" /></p>
 <p>You will need to press <code>Tap to Resume</code> in the banner or the <code>Resume Delivery</code> button in the Pod Settings to resume your scheduled basal rate and let Loop get back to action. If a bolus delivery was interrupted by the Suspend Pod command, it will not be resumed.</p>
 <div class="admonition info">
-<p>When you resume delivery, the 24 hour Pod basal rate schedule is sent to the Pod. Be sure the Phone, <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> and Pod stay close until the message exchange is complete.  </p>
+<p>When you resume delivery, the 24 hour Pod basal rate schedule is sent to the Pod. Be sure the Phone, <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> and Pod stay close until the message exchange is complete.  </p>
 </div>
 <h4 id="enable-confirmation-beeps">Enable Confirmation Beeps<a class="headerlink" href="#enable-confirmation-beeps" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This turns confirmation beeps on for the Pod. The Pod beeps when you enable this, but is silent when you disable it.</p>
@@ -2208,14 +2222,14 @@
 <h4 id="change-time-zone_1">Change Time Zone<a class="headerlink" href="#change-time-zone_1" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Use the <a href="#change-time-zone"><code>Change Time Zone</code></a> command to align your configuration settings with the current time zone. Note that this updates your basal schedule on your Pod. If you start a new Pod session without modifying the time zone here, the original time zone will be used for the new Pod. Please wait until you see <code>Succeeded</code> appear on the page to ensure the command has successfully been received by the Pod.</p>
 <div class="admonition info">
-<p>Make sure the phone, <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device and Pod are kept in close proximity until this command has completed. The time zone is updated by Loop issuing the 24-hour basal rate schedule to the Pod based on the current time.</p>
+<p>Make sure the phone, <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device and Pod are kept in close proximity until this command has completed. The time zone is updated by Loop issuing the 24-hour basal rate schedule to the Pod based on the current time.</p>
 </div>
 <p><img alt="Pod screen showing when time zone change succeeded" src="../img/pod-change-timezone.png" width="250" /></p>
 <h4 id="replace-pod">Replace Pod<a class="headerlink" href="#replace-pod" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This command deactivates a Pod prior to replacing it. Once you tap <code>Replace Pod</code>, another screen appears for you to confirm that you mean it.</p>
 <p><img alt="Icon to tap to replace Pod" src="../img/pod-settings-replace-pod.png" width="250" /></p>
 <h3 id="devices">Devices<a class="headerlink" href="#devices" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This allows access to the <a href="../rileylink/"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr></a> screen for each connected <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device.</p>
+<p>This allows access to the <a href="../rileylink/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr></a> screen for each connected <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device.</p>
 <h3 id="pod-diagnostics">Pod Diagnostics<a class="headerlink" href="#pod-diagnostics" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This section is labeled Diagnostics, but many Pod users make use of this section.</p>
 <h4 id="read-pod-status">Read Pod Status<a class="headerlink" href="#read-pod-status" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -2225,7 +2239,7 @@
 <p>The line labeled <code>Pulses</code> reports the total number of pulses of insulin delivered by that Pod since activation (adding insulin to the reservoir). To convert this to units of insulin, multiply by 0.05 units/pulse. If you compare this report (for your Pod) to the <code>Insulin Delivered</code> line in Pod settings, for your Pod at the same time, the difference is the insulin used to prime the Pod and fill the cannula at insertion.</p>
 </li>
 <li>
-<p>The line label <code>RSSI</code> reports the Received Signal Strength Indicator (RSSI) between the <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device and the Pod. The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod.</p>
+<p>The line label <code>RSSI</code> reports the Received Signal Strength Indicator (RSSI) between the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device and the Pod. The RSSI is a positive number with a larger number indicating a stronger signal strength detected by the Pod.</p>
 <p><img alt="result of read Pod status" src="../img/pod-read-status-v225.png" width="250" /></p>
 </li>
 </ul>
@@ -2252,10 +2266,10 @@
 <p>Leave the Preferred Data Source set to on <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> for proper functioning of Loop.</p>
 <p><strong><abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> must be selected for Nightscout to display temp basals, carbs, and boluses from Loop.</strong>  <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> must also be selected in order for prime events to be detected and NOT contribute to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> during site changes. Please just leave the Preferred Data Source on <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>.</p>
 <h3 id="use-mysentry">Use MySentry<a class="headerlink" href="#use-mysentry" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This is a new option. If you don't see this row, consider updating your Loop app.  Using the MySentry feature on some Medtronic pumps when using an <abbr title="a radio-frequency device that enables Loop to control your pump">OrangeLink</abbr> causes the batteries to die quickly.  This option allows you to turn off MySentry within the Loop app.</p>
+<p>This is a new option. If you don't see this row, consider updating your Loop app.  Using the MySentry feature on some Medtronic pumps when using an <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">OrangeLink</abbr> causes the batteries to die quickly.  This option allows you to turn off MySentry within the Loop app.</p>
 <p align="center"><img alt="MySentry selection screen for enabling or disabling the option" src="../img/mdt-my-sentry-v225.png" width="250" /></p>
 <h3 id="devices_1">Devices<a class="headerlink" href="#devices_1" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This allows access to the <a href="../rileylink/"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr></a> screen for each connected <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device.</p>
+<p>This allows access to the <a href="../rileylink/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr></a> screen for each connected <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device.</p>
                 
               
               

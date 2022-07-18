@@ -1432,6 +1432,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../loop-3/alert-notify/" class="md-nav__link">
+        Loop 3 Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../loop-3/settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
@@ -2053,7 +2067,7 @@
 <p>"All models are wrong, but some are useful." (Quote attributed to British statistician George E. P. Box.)</p>
 </div>
 <h2 id="how-is-iob-calculated">How is <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> calculated?<a class="headerlink" href="#how-is-iob-calculated" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Insulin on board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>) is calculated from the amount of insulin delivered above or below the scheduled basal rate. For each dose of insulin, the insulin model is used to determine how much of that <a href="../../operation/algorithm/prediction/#insulin-effect">insulin is active</a> over time. Loop is adding up all the amounts over the full Duration of Insulin Action (<abbr title="Duration of Insulin Action, includes the full time insulin is active include a long, low-level tail">DIA</abbr>). The <abbr title="Duration of Insulin Action, includes the full time insulin is active include a long, low-level tail">DIA</abbr> is 6 hours for most rapid insulin in the models used by Loop.</p>
+<p>Insulin on board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>) is calculated from the amount of insulin delivered above or below the scheduled basal rate. For each dose of insulin, the insulin model is used to determine how much of that <a href="../../operation/algorithm/prediction/#insulin-effect">insulin is active</a> over time. Loop is adding up all the amounts over the full Duration of Insulin Action (<abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>). The <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> is 6 hours for most rapid insulin in the models used by Loop.</p>
 <p><abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is plotted on the <a href="../../loop-3/displays_v3/#active-insulin-chart">Active Insulin Chart</a> in the main Loop display.</p>
 <h2 id="how-does-loop-use-apple-healthkit">How does Loop use Apple HealthKit?<a class="headerlink" href="#how-does-loop-use-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop uses Apple HealthKit as long term storage for glucose, insulin and carbohydrates.  But there is more going on than simple storage.</p>

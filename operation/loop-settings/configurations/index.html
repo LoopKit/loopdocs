@@ -1641,6 +1641,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../loop-3/alert-notify/" class="md-nav__link">
+        Loop 3 Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../loop-3/settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
@@ -2255,13 +2269,13 @@
 <p class="admonition-title">Before you continue further, a word about BG units</p>
 <p>Entries into the configuration section will be available in mg/dL or mmol/L automatically, based upon how your blood glucose values are received. By default they are set to mg/dL, however once <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> values arrive in mmol/L these Loop settings can be entered in mmol/L. <strong>If you are planning to use mmol/L, be sure to wait to set your entries until after you have started to receive <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> values in Loop.</strong> If you do these in the wrong order, then your charts and entries may have incorrect units.</p>
 </div>
-<h2 id="correction-range"><abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr><a class="headerlink" href="#correction-range" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="correction-range"><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr><a class="headerlink" href="#correction-range" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The correction range is your blood glucose range that you would like Loop to correct to. Correction range is not necessarily the same target blood glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction target of 100-110 for Loop to aim to, but use a desired BG target range of 80-180 when discussing things with your endo about "time in range".</p>
 <p align="center"><img alt="img/premeal_entry.jpg" src="../img/premeal_entry.jpg" width="250" /></p>
 <p>Click the &plus; in the upper right corner to add correction BG range(s). You can have multiple ranges based on time of day, but the first setting of the day needs to begin at midnight.</p>
 <p>Correction ranges can be a single number, such as 100-100 mg/dL, or a range such as 100-120 mg/dL. Generally speaking, if you choose to use a range, keeping the range between about 10-30 mg/dL between the lowest and highest value is a good starting place.</p>
 <h3 id="pre-meal-range"><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr><a class="headerlink" href="#pre-meal-range" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Below the <abbr title="Loop recommends decreased basal or bolus to bring glucose predictions into this range">Correction Range</abbr> entry is a section called "Overrides" with a Pre-Meal setting. While active, the pre-meal targets will replace the usual correction range for Loop's temp basal recommendations. If a pre-meal range is not entered in this section, the icon will remain grey and unusable on the main screen's toolbar.</p>
+<p>Below the <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> entry is a section called "Overrides" with a Pre-Meal setting. While active, the pre-meal targets will replace the usual correction range for Loop's temp basal recommendations. If a pre-meal range is not entered in this section, the icon will remain grey and unusable on the main screen's toolbar.</p>
 <p>The pre-meal override target can be used to as an easy way to get a small amount of insulin delivered before a meal in order to help control post-meal blood glucose spikes.</p>
 <p>If your normal target is 100-110 mg/dL and pre-meal target is 80-80 mg/dL, for example, Loop will give you an extra push to get you to the lower target number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal target, when activated by pressing on the icon, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.</p>
 <p>Loop will adjust any insulin bolus as needed based on the extra insulin provided during this pre-meal time.</p>
@@ -2294,7 +2308,7 @@
 <h2 id="insulin-model">Insulin Model<a class="headerlink" href="#insulin-model" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are four insulin models to choose from; Walsh, Rapid-Acting Adults, Rapid-Acting Children, and Fiasp. If you want to read the nitty-gritty discussion that went into the development of the Rapid-Acting and Fiasp curves (collectively called "exponential insulin models"), you can see that in GitHub <a href="https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473">here</a>.</p>
 <p><strong>We highly recommend selecting one of the exponential insulin models (in other words, not the Walsh model).</strong></p>
-<p>A common new Loop user error is to select Walsh model in order to easily shorten their insulin duration (<abbr title="Duration of Insulin Action, includes the full time insulin is active include a long, low-level tail">DIA</abbr>) to one like they used prior to Looping. This almost invariably leads to insulin stacking. If you would like to read more about why the duration of insulin action is important in Loop vs how you've traditionally used it, please click <a href="https://seemycgm.com/2017/08/09/why-dia-matters/">here</a> to read a blog post about the subject. In summary, choosing Walsh curve just to shorten your <abbr title="Duration of Insulin Action, includes the full time insulin is active include a long, low-level tail">DIA</abbr> will lead to insulin stacking and less than desired bolusing recommendations.</p>
+<p>A common new Loop user error is to select Walsh model in order to easily shorten their insulin duration (<abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>) to one like they used prior to Looping. This almost invariably leads to insulin stacking. If you would like to read more about why the duration of insulin action is important in Loop vs how you've traditionally used it, please click <a href="https://seemycgm.com/2017/08/09/why-dia-matters/">here</a> to read a blog post about the subject. In summary, choosing Walsh curve just to shorten your <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> will lead to insulin stacking and less than desired bolusing recommendations.</p>
 <p>You can click on each model and see what each model's insulin activity curve looks like, active one selected in blue.</p>
 <p align="center"><img alt="img/models.jpg" src="../img/models.jpg" width="350" /></p>
 <p>The differences between the three exponential models (two Rapid-Acting and Fiasp) models has to do with the timing of the peak insulin activity timing. Not surprising, since Fiasp is marketed as the "faster acting" insulin. Currently all the exponential models are defaulted to an insulin duration of 6 hours, but the peak activity of the curves differs:</p>
@@ -2303,8 +2317,8 @@
 <li>Rapid-acting child curve peaks at 65 minutes</li>
 <li>Fiasp peaks curve peaks at 55 minutes</li>
 </ul>
-<h2 id="dosing-strategy"><abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr><a class="headerlink" href="#dosing-strategy" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This configuration setting gives you the ability to select the <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>. (If you do not see this setting, then you are running Loop v2.2.4 or older.) If you tap on that <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>, it reveals a selection screen, shown in the graphic below, with some explanation.  Note that this <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> feature was available for more than a year in the automatic-bolus <abbr title="version of code within a single repository or workspace repository">branch</abbr>.  Users who have been using the automatic-bolus feature should update as soon as possible to get the other improvements recently added, <a href="../../../faqs/release-faqs/">Loop Releases</a>.</p>
+<h2 id="dosing-strategy"><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr><a class="headerlink" href="#dosing-strategy" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>This configuration setting gives you the ability to select the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>. (If you do not see this setting, then you are running Loop v2.2.4 or older.) If you tap on that <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>, it reveals a selection screen, shown in the graphic below, with some explanation.  Note that this <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> feature was available for more than a year in the automatic-bolus <abbr title="version of code within a single repository or workspace repository">branch</abbr>.  Users who have been using the automatic-bolus feature should update as soon as possible to get the other improvements recently added, <a href="../../../faqs/release-faqs/">Loop Releases</a>.</p>
 <p align="center"><img alt="Dosing Strategy selection screen" src="../img/dosing-strategy.svg" width="350" /></p>
 <p>The Automatic Bolus selection causes Loop to provide 40% of the recommended dose as a bolus at the beginning of each Loop cycle (when a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading comes in). This is a faster method of getting the recommended insulin delivered. When Loop delivers extra insulin, the scheduled basal rate continues unchanged.</p>
 <p>Both Temp Basal Only and Automatic Bolus strategies restrict basal rates to reduce the amount of insulin delivered when appropriate.</p>
@@ -2315,7 +2329,7 @@
 </ol>
 <p>You can manually bolus at any time by pressing the Bolus icon in the center of Loop’s Main Screen.</p>
 <h2 id="automatic-bolus">Automatic Bolus<a class="headerlink" href="#automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When you first starting Loop, we encourage you to leave automatic boluses disabled until you are sure your settings are dialed in.  To enable automatic boluses, click on Settings – <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> – Automatic Bolus.  This Automatic Bolus checkbox turns-off positive temporary basal so that:</p>
+<p>When you first starting Loop, we encourage you to leave automatic boluses disabled until you are sure your settings are dialed in.  To enable automatic boluses, click on Settings – <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> – Automatic Bolus.  This Automatic Bolus checkbox turns-off positive temporary basal so that:</p>
 <ol>
 <li>When your blood glucose (BG) is at or above target, you receive 40% of the Recommended Bolus at every Loop interval.</li>
 <li>When your blood glucose (BG) is below target, negative temp basals (i.e., reduction of your scheduled basal rate) are used to reduce your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. This decision is re-evaluated during every Loop interval (same as with the Temp Basal Only dosing strategy).</li>

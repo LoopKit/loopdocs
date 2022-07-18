@@ -1432,6 +1432,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../loop-3/alert-notify/" class="md-nav__link">
+        Loop 3 Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../loop-3/settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
@@ -2451,11 +2465,11 @@
 <p>This is an interim release as we prepare for the major changes currently in development. If you are running an older version of Loop, such as v2.2.4 (master or automatic-bolus <abbr title="version of code within a single repository or workspace repository">branch</abbr>) or an older version, it is recommended that you update to v2.2.6 to get all these new features. A summary of modifications with respect to Loop v2.2.4 is listed below.</p>
 <p>Loop v2.2.5 was released on August 22, 2021.</p>
 <h3 id="new-features">New Features:<a class="headerlink" href="#new-features" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Automatic Bolus (Experimental) <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></p>
+<p>Automatic Bolus (Experimental) <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></p>
 <ul>
-<li>Users may select <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></li>
-<li>Default <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> continues to be Temp Basal Only</li>
-<li>Automatic Bolus <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is marked experimental<ul>
+<li>Users may select <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></li>
+<li>Default <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> continues to be Temp Basal Only</li>
+<li>Automatic Bolus <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is marked experimental<ul>
 <li>If you used Loop v2.2.4 automatic-bolus <abbr title="version of code within a single repository or workspace repository">branch</abbr>, this release will behave the same</li>
 <li>If you used Loop v2.2.4 master <abbr title="version of code within a single repository or workspace repository">branch</abbr>, approach this feature with caution; it may require changes to settings</li>
 <li>Tracking automatic vs manual boluses is not yet implemented in the code and databases</li>
@@ -2467,13 +2481,13 @@
 <li>User gets <a href="../../operation/features/notifications/#loop-app-expiration-notification">notified</a> when Loop app expiration date nears</li>
 <li>Expiration date is <a href="../../operation/features/notifications/#loop-app-expiration-date">included</a> in the issue report</li>
 </ul>
-<p><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> Compatible Devices:</p>
+<p><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Devices:</p>
 <ul>
-<li>The <a href="../../operation/loop-settings/rileylink/"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device displays</a> are pump independent</li>
-<li><abbr title="a radio-frequency device that enables Loop to control your pump">OrangeLink</abbr> Support added for connection monitoring, battery level alerting, find device, and light/vibration controls</li>
-<li><a href="../../operation/loop-settings/pump-commands/#medtronic-commands">Medtronic Pump Settings</a> screen updated with option to disable MySentry use; user can trade Medtronic pump battery for longer <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device battery life</li>
+<li>The <a href="../../operation/loop-settings/rileylink/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device displays</a> are pump independent</li>
+<li><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">OrangeLink</abbr> Support added for connection monitoring, battery level alerting, find device, and light/vibration controls</li>
+<li><a href="../../operation/loop-settings/pump-commands/#medtronic-commands">Medtronic Pump Settings</a> screen updated with option to disable MySentry use; user can trade Medtronic pump battery for longer <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device battery life</li>
 </ul>
-<p>Omnipod Features:</p>
+<p><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Features:</p>
 <ul>
 <li><a href="../../operation/loop-settings/pump-commands/#omnipod-commands">Pod Settings</a> layout: improved layout and functionality</li>
 <li>Fault Codes: PDM style Ref code displayed for pod faults</li>
@@ -2481,12 +2495,12 @@
 <li>Pod Suspended: pod beeps once every 5 minutes until delivery is resumed or alarm cleared</li>
 </ul>
 <h3 id="code-fixes">Code Fixes:<a class="headerlink" href="#code-fixes" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Omnipod Code Fixes:</p>
+<p><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Code Fixes:</p>
 <ul>
 <li>Make insertion more robust (LoopKit issue #1369)</li>
 <li>Fix “Pod already primed” errors when priming cancelled (rileylink_ios issue #661)</li>
 <li>Prevent 049 pod faults during setup (rileylink_ios issue #627)</li>
-<li>See <a href="https://github.com/ps2/rileylink_ios/pull/676"><abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> <abbr title="formal method to request changes to a repository">Pull Request</abbr> 676</a> for additional details.</li>
+<li>See <a href="https://github.com/ps2/rileylink_ios/pull/676"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> <abbr title="formal method to request changes to a repository">Pull Request</abbr> 676</a> for additional details.</li>
 </ul>
 <p>(REMOVED) Insulin Accounting:</p>
 <ul>
@@ -2541,13 +2555,13 @@
 </ul>
 </li>
 <li>Updated translations, fixes for temp override translations, new Arabic translations.</li>
-<li>Omnipod integration fixes:<ul>
+<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> integration fixes:<ul>
 <li>Avoid suspending during deactivation if pod has a fault, is in setup, or already suspended.</li>
 <li>Show the correct expected address in invalid address error</li>
 <li>Reuse same address during attempts to pair with same pod</li>
 <li>Fix for Medtronic only: when a bolus issued via the Loop interface was canceled by issuing a suspend on the pump itself, Loop will incorrectly track the bolus as if the full amount were delivered</li>
 <li>Updates for omnipod packet parser</li>
-<li>Suggest moving <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> to new area on multiple pairing failures</li>
+<li>Suggest moving <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> to new area on multiple pairing failures</li>
 </ul>
 </li>
 <li>Minimed updates:<ul>
@@ -2564,7 +2578,7 @@
 </ul>
 </li>
 <li>Improvements in Watch updates; sleep data being used to update complications when you are awake. Thanks @novalegra!</li>
-<li>Omnipod pairing improvements. Bug fixes, and better error messaging. Thanks @itsmojo!</li>
+<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> pairing improvements. Bug fixes, and better error messaging. Thanks @itsmojo!</li>
 <li>Many performance improvements, especially effecting long time Loop users. Delays in rendering graphs during app launch should be fixed.</li>
 <li>New device communication logging facility- Additional logging across pod swaps, and logging of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> communication.</li>
 <li>Rendering fixes to prevent insulin graph from drawing outside of bounds.</li>
@@ -2576,7 +2590,7 @@
 <div class="admonition abstract">
 <p class="admonition-title">For Reference Only</p>
 <p>Enough time has passed that this version should no longer be on anyone's phones (the one-year expiration time should take care of that).</p>
-<p>There is a lot more detail provided in the Loop v2.0 section because it constituted a significant change to parts of Loop from prior releases. This section and the Omnipod-Testing <abbr title="version of code within a single repository or workspace repository">branch</abbr> sections are left here for historical interest.</p>
+<p>There is a lot more detail provided in the Loop v2.0 section because it constituted a significant change to parts of Loop from prior releases. This section and the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>-Testing <abbr title="version of code within a single repository or workspace repository">branch</abbr> sections are left here for historical interest.</p>
 </div>
 <h3 id="what-was-new-in-loop-v20">What was new in Loop v2.0?<a class="headerlink" href="#what-was-new-in-loop-v20" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This is a highlights reel comparing Loop v2.0 to v1.9.6.</p>
@@ -2596,11 +2610,11 @@
 <h3 id="confirmation-beeps-expanded">Confirmation beeps expanded<a class="headerlink" href="#confirmation-beeps-expanded" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Confirmation beeps have been expanded based on user feedback...we heard parents and school nurses really appreciate hearing a beep for not just boluses, but also for suspend/resume commands and editing basal schedule (so you are sure it saved properly). So, confirmation beeps are now for boluses, suspend/resume, and basal schedule edit saves.</p>
 <h3 id="read-pod-status-added">Read Pod Status added<a class="headerlink" href="#read-pod-status-added" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>There's a new command in the <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> menu for "Read Pod Status" that is analogous to the existing command for Medtronic users. You can query your Pod for its current status info using that command.</p>
+<p>There's a new command in the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> menu for "Read Pod Status" that is analogous to the existing command for Medtronic users. You can query your Pod for its current status info using that command.</p>
 <h3 id="bug-fixes-generally">Bug fixes generally<a class="headerlink" href="#bug-fixes-generally" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>There are a lot of niggly little bug fixes too which were merged in the last couple weeks. The temp basal timestamp for Medtronic Loop (and for older Omnipod Loops, too) had a bug that when Loop reverted to scheduled basals, the timestamp on the HUD's temp basal icon would switch back to the time the Loop was launched (instead of the time the scheduled basal was started again). There are also some new code improvements for handling uncerain boluses for Pod  Also, there are improvements to handle how Loop marks Pod suspend commands that are initiated by users while an active temp basal is in progress.</p>
+<p>There are a lot of niggly little bug fixes too which were merged in the last couple weeks. The temp basal timestamp for Medtronic Loop (and for older <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Loops, too) had a bug that when Loop reverted to scheduled basals, the timestamp on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>'s temp basal icon would switch back to the time the Loop was launched (instead of the time the scheduled basal was started again). There are also some new code improvements for handling uncerain boluses for Pod  Also, there are improvements to handle how Loop marks Pod suspend commands that are initiated by users while an active temp basal is in progress.</p>
 <h3 id="user-interface-improvements">User interface improvements<a class="headerlink" href="#user-interface-improvements" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You'll notice dashed lines in the HUD for the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value if the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data goes older than 15 min (that way you don't accidentally miss the fact that your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> has failed). The API Secret is hidden after it is saved in Loop Settings now, and if you accidentally leave a trailing slash on the Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr>...Loop will ignore it.  The bolus progress row is new to master <abbr title="version of code within a single repository or workspace repository">branch</abbr> now, although many of you have been accustomed to that visual in dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for awhile now. The "Scenarios" screen that would sometimes appear when a phone was shaken is also disabled by default now. The <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report has more information about your Loop app's build date and version so that you can more easily track its build history.</p>
+<p>You'll notice dashed lines in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> for the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value if the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data goes older than 15 min (that way you don't accidentally miss the fact that your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> has failed). The API Secret is hidden after it is saved in Loop Settings now, and if you accidentally leave a trailing slash on the Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr>...Loop will ignore it.  The bolus progress row is new to master <abbr title="version of code within a single repository or workspace repository">branch</abbr> now, although many of you have been accustomed to that visual in dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for awhile now. The "Scenarios" screen that would sometimes appear when a phone was shaken is also disabled by default now. The <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report has more information about your Loop app's build date and version so that you can more easily track its build history.</p>
 <h3 id="common-build-error-squashed">Common build error squashed<a class="headerlink" href="#common-build-error-squashed" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  (Unless you are building dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, currently v2.3.0, - then no spaces allowed.)</p>
 <h3 id="nightscout-profile-uploading">Nightscout profile uploading<a class="headerlink" href="#nightscout-profile-uploading" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2622,8 +2636,8 @@
 <p>Loop v2.0 marks the first time Loop master <abbr title="version of code within a single repository or workspace repository">branch</abbr> has overrides included. Additionally, this release moves overrides setup from the configurations area of Loop settings to the workout icon in the Loop toolbar. There has also been bug squashing in dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for overrides over the recent past, so updating is a good idea even if you already have overrides on your current build. Want to learn more about overrides? Read about them <a href="../../operation/features/workout/">here</a>.</p>
 <h3 id="retrospective-correction-always-on">Retrospective Correction always on<a class="headerlink" href="#retrospective-correction-always-on" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Retrospective correction used to be an optional toggle in the algorithm. It is now on by default all the time. It is an important part of the algorithm (helps Loop look at how good/bad its recent prediction curve has been vs reality), and leaving it on made sense anyways.</p>
-<h3 id="omnipod-support">Omnipod support<a class="headerlink" href="#omnipod-support" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Yes, most of you are already using Omnipod with your Loop...but this is the first time that Loop master <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports Omnipod users. Please update if you have been using Omnipod-testing <abbr title="version of code within a single repository or workspace repository">branch</abbr> especially...it's time to get all the bug fixes that we've done in Loop.</p>
+<h3 id="omnipod-support"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> support<a class="headerlink" href="#omnipod-support" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Yes, most of you are already using <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> with your Loop...but this is the first time that Loop master <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> users. Please update if you have been using <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>-testing <abbr title="version of code within a single repository or workspace repository">branch</abbr> especially...it's time to get all the bug fixes that we've done in Loop.</p>
 <h3 id="dark-mode-support">Dark mode support<a class="headerlink" href="#dark-mode-support" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13 brought dark mode for application developers, and Loop's developer was all over that. We now have a wickedly cool dark mode Loop for those who prefer the dark side.</p>
 <h3 id="isf-and-correction-range-guardrails-and-ui-change"><abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr> and correction range guardrails and UI change<a class="headerlink" href="#isf-and-correction-range-guardrails-and-ui-change" title="Anchor link to this Header on this Page">&para;</a></h3>

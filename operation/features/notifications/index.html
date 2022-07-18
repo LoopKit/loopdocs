@@ -1563,6 +1563,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../loop-3/alert-notify/" class="md-nav__link">
+        Loop 3 Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../loop-3/settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
@@ -2092,7 +2106,7 @@
 <li>This is still a good idea even with automated notifications to set your own desired alert window</li>
 <li>If you are running Loop v2.2.4 or older, you can use this method to determine <a href="https://www.loopandlearn.org/loop-expiration-date/">Loop Expiration date</a>.</li>
 </ul>
-<h2 id="omnipod">Omnipod<a class="headerlink" href="#omnipod" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="omnipod"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr><a class="headerlink" href="#omnipod" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Most beep alarms are disabled for a much more discrete use of the omnipod. Only the following audible acknowledgments or alarms are currently used:</p>
 <ul>
 <li>Pod activated acknowledgment when filling the pod with enough insulin when pairing a new Pod.</li>
@@ -2111,20 +2125,20 @@
 This mostly happens when the connection is lost for a longer period of time between the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or the Rileylink and Loop.</p>
 <p align="center"><img alt="img/loop-failure.png" src="../img/loop-failure.png" width="250" /></p>
 <h2 id="bolus-failure">Bolus Failure<a class="headerlink" href="#bolus-failure" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If Loop detects that a bolus was not able to be delivered, it will provide a notification.  Bolus failures are usually due to stale pump data.  Try fetching recent history from the <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> menu to update pump data.  Loop will also notify of partial bolus deliveries.</p>
+<p>If Loop detects that a bolus was not able to be delivered, it will provide a notification.  Bolus failures are usually due to stale pump data.  Try fetching recent history from the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> menu to update pump data.  Loop will also notify of partial bolus deliveries.</p>
 <p align="center"><img alt="img/loop-bolus-failure.png" src="../img/loop-bolus-failure.png" width="250" /></p>
 <h2 id="low-reservoir">Low Reservoir<a class="headerlink" href="#low-reservoir" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><font color ="orange"><strong>Medtronic</strong></font><br />
 At 20% and 10% remaining reservoir volume, there is a Low Reservoir notification.</p>
-<p><font color ="orange"><strong>Omnipod</strong></font><br />
+<p><font color ="orange"><strong><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></strong></font><br />
 At &lt;30U, &lt;20U, &lt;10U  </p>
 <p align="center"><img alt="img/pod-reservoir-10U.png" src="../img/pod-reservoir-10U.png" width="250" /></p>
 <h2 id="empty-reservoir">Empty Reservoir<a class="headerlink" href="#empty-reservoir" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop will notify when the reservoir is empty. Loop will notify you every minute with this notification.</p>
-<p><font color ="orange"><strong>Omnipod</strong></font><br />
+<p><font color ="orange"><strong><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></strong></font><br />
 Normally you will have 5-30 minutes to replace the pod, but do know the pod can <a href="https://soundcloud.com/eelke-jager/1f-nibble-f">scream</a> at any moment from this point on.</p>
 <p align="center"><img alt="img/loop-reservoir-empty.png" src="../img/loop-reservoir-empty.png" width="250" /></p>
-<h2 id="pod-expiration-omnipod">Pod Expiration (Omnipod)<a class="headerlink" href="#pod-expiration-omnipod" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="pod-expiration-omnipod">Pod Expiration (<abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>)<a class="headerlink" href="#pod-expiration-omnipod" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You can customize the time of notification when to replace your pod any time from 1 hour up to 71 hours (3 days - 1 hour) <a href="../../loop-settings/omnipod-pump/#expiration-reminder">after staring a new pod</a> or you change the time later in the [pod configuration settings]../loop-settings/omnipod-pump.md#configuration).
 The expiry alarm will always sound when the pod reaches a running full 3 days (72 hours) which you can silence <a href="../../loop-settings/omnipod-pump/#status">in the pod status settings</a>.</p>
 <p align="center"><img alt="img/pod-expiration-notice.png" src="../img/pod-expiration-notice.png" width="300" /></p>

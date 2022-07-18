@@ -1432,6 +1432,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../loop-3/alert-notify/" class="md-nav__link">
+        Loop 3 Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../loop-3/settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
@@ -2172,11 +2186,11 @@
 <h2 id="step-5-using-remote-overrides">Step 5: Using Remote Overrides<a class="headerlink" href="#step-5-using-remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are three ways you can trigger your override presets remotely; careportal, Shortcuts, and IFTTT.</p>
 <h3 id="careportal">Careportal<a class="headerlink" href="#careportal" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>To use remote overrides, I'm assuming you've setup your Nightscout site according to the directions <a href="../update_user/">here</a> in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your <a href="../update_user/#authenticate-site">site authenticated</a> so that your careportal is active to send remote overrides. Once authenticated by entering your <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>, then there will be a &plus; in the upper right corner of your site. That is your careportal. Tap the careportal &plus; and then scroll down in the "event type" menu to find "Temporary Override". Within there, you will find all your Loop override presets already loaded for you.</p>
+<p>To use remote overrides, I'm assuming you've setup your Nightscout site according to the directions <a href="../update_user/">here</a> in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your <a href="../update_user/#authenticate-site">site authenticated</a> so that your careportal is active to send remote overrides. Once authenticated by entering your <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>, then there will be a &plus; in the upper right corner of your site. That is your careportal. Tap the careportal &plus; and then scroll down in the "event type" menu to find "Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>". Within there, you will find all your Loop override presets already loaded for you.</p>
 <p><img alt="img/careportal-overrides.PNG" src="../img/careportal-overrides.PNG" /></p>
 <p>The Looper will see a banner notification that an override has been set (or canceled, as the case may be).</p>
 <p><img alt="img/override_notification.jpg" src="../img/override_notification.jpg" /></p>
-<p>Canceling an override through Nightscout careportal is as simple as selecting the event type "Temporary Override Cancel" and submitting.</p>
+<p>Canceling an override through Nightscout careportal is as simple as selecting the event type "Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Cancel" and submitting.</p>
 <h3 id="shortcuts">Shortcuts<a class="headerlink" href="#shortcuts" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple shortcuts for you that integrate Loop overrides with Nightscout.</p>
 <div class="admonition info">
@@ -2185,10 +2199,10 @@
 </div>
 <p>Click these links on your iphone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser in iPhone):</p>
 <p><a href="https://www.icloud.com/shortcuts/b8c0998a61e54b6eba2325fa78b4cf3a">Comprehensive Loop Shortcut</a>
- <em>includes Set Remote Override, Cancel Override, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.</em></p>
+ <em>includes Set Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.</em></p>
 <p>And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:</p>
-<p><a href="https://www.icloud.com/shortcuts/d52d7aefb62b47c1b2e71d3724a3b5ab">Set Remote Override only shortcut</a></p>
-<p><a href="https://www.icloud.com/shortcuts/27be8282bce3433b83b4751cd8c43f6e">Cancel Override only shortcut</a></p>
+<p><a href="https://www.icloud.com/shortcuts/d52d7aefb62b47c1b2e71d3724a3b5ab">Set Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
+<p><a href="https://www.icloud.com/shortcuts/27be8282bce3433b83b4751cd8c43f6e">Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
 <p><strong>A couple notes about these shortcuts:</strong></p>
 <ol>
 <li>You will need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13, but your phone as the shortcut user would need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13.</li>

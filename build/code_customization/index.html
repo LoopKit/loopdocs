@@ -1582,6 +1582,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../loop-3/alert-notify/" class="md-nav__link">
+        Loop 3 Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../loop-3/settings/" class="md-nav__link">
         Loop 3 Settings
       </a>
@@ -2232,7 +2246,7 @@
 </code></pre></div>
 <p>Note that if you change from 2 hours to 30 minutes, you must also change the indication before the parentheses.</p>
 <h2 id="adjust-percent-bolus-for-automatic-bolus">Adjust Percent Bolus for Automatic Bolus<a class="headerlink" href="#adjust-percent-bolus-for-automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you are mostly happy with the <abbr title="chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> of Automatic Bolus but wish it delivered more or less insulin during every Loop interval, then this customization is for you.</p>
+<p>If you are mostly happy with the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> of Automatic Bolus but wish it delivered more or less insulin during every Loop interval, then this customization is for you.</p>
 <p>This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modified it once and tried it out for a while, it’s easy to go back and change it again.</p>
 <p>With Loop 2.2.x, the end of the line has a comment <code>// %</code>, whereas with Loop 3, there is an explanatory comment (line starting with <code>//</code>) before the line.</p>
 <p><strong>Change just the number and double check that the value is less than 1.</strong></p>
@@ -2266,7 +2280,7 @@
 <p class="admonition-title">Do not exceed 1.0</p>
 <p>This number should never be bigger than 1 (you’d be getting more than Loop recommends). If you think you need more than 1, consider your settings and meal entries.</p>
 </div>
-<h2 id="modify-override-sensitivity">Modify Override Sensitivity<a class="headerlink" href="#modify-override-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="modify-override-sensitivity">Modify <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Sensitivity<a class="headerlink" href="#modify-override-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Some people want finer settings on the override sensitivity scale and may want to limit the overall range for overrides – especially for children.</p>
 <p>Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An <a href="../../operation/features/workout/">override</a> is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> for the duration of the override.)</p>
 <p>This example customization changes the lower bound for sensitivity to 50% (factor of 2 smaller than 100%) and provides 5% steps.</p>
@@ -2307,11 +2321,11 @@
 <h2 id="pods-add-extra-insulin-on-insertion">Pods: Add Extra Insulin on Insertion<a class="headerlink" href="#pods-add-extra-insulin-on-insertion" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The default value is 0.0 u of extra insulin.  If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Loop - be conservative.</p>
 <p>Note that Loop does not include the amount of insulin in the prime or insertion steps in your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. The pod reports every pulse that it delivers to Loop. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks.  Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.35 U to the "extra" value, you should get 0.35 / 0.05 = 7 extra clicks. In other words, 17 total clicks after you press insert.</p>
-<p>This code change is found in one location for Eros Pods (called Omnipod throughout the app) and DASH Pods (called Omnipod Dash throughout the app). I tend to change both files, but if you're only using one kind of pod, that is really not necessary.</p>
+<p>This code change is found in one location for Eros Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> throughout the app) and DASH Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Dash throughout the app). I tend to change both files, but if you're only using one kind of pod, that is really not necessary.</p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let cannulaInsertionUnitsExtra
 </code></pre></div>
 <ul>
-<li>Eros Pod (ones that require a <abbr title="a radio-frequency device that enables Loop to control your pump">RileyLink</abbr> compatible device)<ul>
+<li>Eros Pod (ones that require a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device)<ul>
 <li>Folder: rileylink_ios/OmniKit/Model</li>
 <li>File: Pod.swift, Line 72 (Loop 2.2.x) or 78 (Loop 3)</li>
 </ul>
