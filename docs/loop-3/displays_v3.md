@@ -222,7 +222,7 @@ The table below shows examples of the Glucose Status Icon and what the icon mean
 |80 to 199 mg/dL (4.4 to 11.0 mmol/L)|**black** (light mode) / **white** (dark mode)|**blue**|
 |200 mg/dL (11.1 mmol/L) or above|**black** (light mode) / **white** (dark mode)|**yellow**|
 
-## CGM Display
+#### CGM Display
 
 Tapping on the CGM icon in the HUD shows more information about the last CGM reading.
 
