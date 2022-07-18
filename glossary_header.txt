@@ -1,0 +1,8 @@
+# Glossary
+
+Each item in the glossary is also a tooltip.
+
+A tooltip is visible as a dashed underline word or phrase.
+
+If you hover your mouse or tap on a mobile device, the phrase associated with each word is displayed.
+

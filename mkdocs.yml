@@ -129,6 +129,7 @@ nav:
     - 'Loop 3 Add CGM': 'loop-3/add-cgm.md'
     - 'Loop 3 Add Pump': 'loop-3/add-pump.md'
     - 'Loop 3 Displays': 'loop-3/displays_v3.md'
+    - 'Loop 3 Alerts & Notifications': 'loop-3/alert-notify.md'
     - 'Loop 3 Settings': loop-3/settings.md
     - 'Loop 3 Therapy Settings': 'loop-3/therapy-settings.md'
     - 'Loop 3 Omnipod': loop-3/omnipod.md
