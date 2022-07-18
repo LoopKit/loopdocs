@@ -1,10 +1,11 @@
 # Glossary
 
-Each item in the glossary is also a tool tip.
+Each item in the glossary is also a tooltip.
 
 A tooltip is visible as a dashed underline word or phrase.
 
 If you hover your mouse or tap on a mobile device, the phrase associated with each word is displayed.
+
 
 **Activated**: for Omnipod: time at which insulin was injected into pod and 2 beeps were heard
 
@@ -38,19 +39,19 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Config Vars**: configuration parameters for a Nightscout Site
 
-**Correction Range**: Loop recommends decreased basal or bolus to bring glucose predictions into this range
+**Correction Range**: Loop recommends changes to basal and / or bolus to bring glucose predictions into this range
 
 **CR**: Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin
 
 **Delivery Limits**: max bolus and max basal rates allowed by your therapy settings
 
-**DIA**: Duration of Insulin Action, includes the full time insulin is active include a long, low-level tail
+**DIA**: Duration of Insulin Action, the full time insulin is active including a long, low-level tail
 
-**Dosing Strategy**: chose method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal
+**Dosing Strategy**: chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal
 
 **dynos**: used to reboot a Nightscout Site
 
-**EmaLink**: a radio-frequency device that enables Loop to control your pump
+**EmaLink**: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
 
 **Event History**: record of pump events (bolus or temp basal) reported and used by Loop
 
@@ -62,9 +63,13 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **git**: a tool for version control
 
-**Glucose Safety Limit**: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit 
+**Glucose Chart**: Display of measured and predicted glucose values
+
+**Glucose Safety Limit**: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit
 
 **Guardrails**: limits in the code for user selected settings, recommended and absolute limits are provided
+
+**HUD**: Heads-Up Display at top of Loop main screen, phone in portrait mode
 
 **ICE**: Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose
 
@@ -82,17 +87,23 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Loop Cycle**: typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed
 
+**MTB**: Manual Temp Basal: user initiated temporary basal, Omnipod Common feature
+
 **MDT**: common abbreviation for Medtronic pumps
 
 **modal**: message or alert appearing in front of app that must be acknowledged to return to app
 
 **Monterey**: operating system for Mac, macOS 12.x
 
+**Omnipod**: Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH
+
 **Open Loop**: Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available
 
-**OrangeLink**: a radio-frequency device that enables Loop to control your pump
+**OrangeLink**: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
 
 **OTP**: one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone
+
+**Override**: a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both
 
 **Package Dependencies**: packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer
 
@@ -110,7 +121,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **repository**: contains project files and each file's revision history
 
-**RileyLink**: a radio-frequency device that enables Loop to control your pump
+**RileyLink**: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
 
 **Rosetta**: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 chips)
 
@@ -133,4 +144,3 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **Workspace**: a grouping of several repositories into a complete package
 
 **Xcode**: program used to build an app
-
