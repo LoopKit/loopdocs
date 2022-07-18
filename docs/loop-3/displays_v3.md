@@ -31,24 +31,37 @@ There is a `Status Row` underneath those three icons that is used to display bol
 
 ## Charts
 
-There are several charts that help you navigate your Loop actions.  Clicking on each of the charts will also open up additional information.
+There are several charts on the main screen to help you navigate and understand Loop.  Tapping on a chart on your phone opens up additional information.
 
 ### Glucose Chart
 
 ![Graph of Blood Glucose showing measured points and predicted dashed line](../operation/loop-settings/img/glucose_graph.jpg){width="400"}
 {align="center"}
 
-The glucose chart displays glucose values in your preferred units. If not, follow these instructions to [Change Glucose Units](onboarding.md#change-glucose-units). The vertical scale of the chart is calculated on the fly by Loop to be as useful as possible while including the highest and lowest readings in the chart.
+The Glucose Chart displays glucose values in your preferred units. 
+
+!!! info "mg/dL or mmol/L"
+    If your preferred glucose unit are not displayed, follow these instructions to [Change Glucose Units](onboarding.md#change-glucose-units). 
+    
+The vertical scale is automatically adjusted by Loop to be as useful as possible while including the highest and lowest readings in the chart.
 
 The horizontal axis is set to go forward from the current time until your DIA (insulin duration) forward (so you can see what Loop thinks glucose will be eventually). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.
 
-The glucose correction range is shown as a blue bar on the glucose chart.  Single-value range glucose range (such as 100-100 mg/dL), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction range in lighter blue.
+The glucose [Correction Range](therapy-settings.md#correction-range) is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction range in lighter blue.
 
-!!! warning ""
-    If you have a crazy negative prediction - it is likely that you set an [override](../operation/features/workout.md) with a tiny sensitivity. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny sensitivity to force less insulin, simply increase the correction range in your override - Loop will reduce your basal rate at the next cycle (within 5 minutes).
+!!! warning "Negative Glucose Predition"
+    If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/workout.md) with a tiny sensitivity. 
+    
+    * Do not panic - this is a prediction only; not reality. 
+    
+    Best approach: 
+    
+    * Open the loop until the prediction settles down. 
+    * In future, do not choose a tiny sensitivity to force less insulin
+        * Increase the correction range in your override with a moderate change in sensitivity (50% to 90%)
+        * Loop will reduce your basal rate at the next cycle (within 5 minutes)
+        * Be cautious adding carbs during an override - make sure you understand the effects first
 
-
-The eventual glucose displayed on the right side of the chart does NOT take into account a recently enacted temp basal.  In other words, if you are above glucose range and Loop just enacted a high temp basal to help, the eventual glucose does not reflect the expected lowering of glucoses that would result from that recently enacted temp basal.  Loop waits until the insulin has actually been delivered before it "uses" the insulin in its calculations for glucose impacts.  If you suspended your pump or had a "no delivery" alarm shortly after the temp basal was started, you would want that accurately reflected in the insulin on board and associated eventual glucose.
 
 If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart described below.
 
@@ -59,16 +72,17 @@ The predicted glucose view is a great way to gain insight into the various compo
 ![Tap Graph of Blood Glucose to reveal separate elements of prediction selectable to demonstrate effects](../operation/loop-settings/img/glucose_hidden.svg){width="300"}
 {align="center"}
 
-The graph at the top of this view will match your Glucose Chart. Below this chart you will see a very detailed explanation of all of the variables that Loop takes into account in predicting your future glucose value. Each of those effects (including Carbohydrates, Insulin, Glucose Momentum and Retrospective Correction) includes details of the calculation used. You can tap on any of the entries to turn them off and on for visualization. The resulting changes can be viewed by the changes in the dashed lines.
+The graph at the top of this view will match your Glucose Chart. Below this chart you will see an explanation of the variables Loop takes into account in predicting your future glucose value:  Carbohydrates, Insulin, Glucose Momentum and Retrospective Correction. You can tap on any of the entries to see the effects of that component by looking at the dashed lines.
 
-Note - these elements are not turned on and off in the Loop predictions. They just modify the graph so you can view the relative effects.
+!!! note "Display Only"
+    These elements are not turned on and off in the Loop predictions. They just modify the graph so you can view the relative effects.
 
 ### Active Insulin Chart
 
 ![Plot of insulin on board (IOB); active amount above or below basal using insulin model](../operation/loop-settings/img/active_insulin.jpg){width="400"}
 {align="center"}
 
-The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive and negative IOB.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the (for Medtronic) pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered). The opposite is true for Omnipods. If a message is sent from Loop, it assumes the pod got the message and enacted it - even if the acknowledgement is not received.  Later, when communication is restored, if a command was not enacted by the pod, the Event History is updated.
+The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive or negative.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the (for Medtronic) pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered). The opposite is true for Omnipods. If a message is sent from Loop, it assumes the pod got the message and enacted it - even if the acknowledgement is not received.  Later, when communication is restored, if a command was not enacted by the pod, the Event History is updated.
 
 **Medtronic Only**: So long as you have Event History as the Preferred Data Source in Loop settings, primed insulin deliveries (e.g., cannula fills or manual primes) will not be counted towards IOB.
 
@@ -83,7 +97,7 @@ Please note that for safety reasons, Loop will assume a bolus was successful, ev
 
 ### Event History, Reservoir and Non-Pump Insulin
 
-Clicking on either the Active Insulin or Insulin Delivery charts will open your Insulin Delivery history.  The top of the screen will display the current IOB and the total insulin delivered for the day since midnight (or since the time the loop became active if you started Loop after midnight). There are three tabs than be viewed with Event History shown by default:
+Clicking on either the Active Insulin or Insulin Delivery charts will open your Insulin Delivery history.  The top of the screen will display the current IOB and the total insulin delivered for the day since midnight (or since the time the loop became active if you started Loop after midnight). There are three tabs that can be viewed, with Event History shown by default:
 
 ![figure showing event history, reservoir and non-pump insulin tabs](img/loop-3-insulin-detail.svg){width="250"}
 {align="center"}
@@ -95,10 +109,14 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
     - **Omnipod** users should not worry if the reservoir display is blank. Pods do not report or track insulin remaining until their reservoirs get below 50 units remaining. When a pod is deactivated, the reservoir history for that pod is no longer displayed.
     - **Medtronic** users will have reservoir history displayed in 5-minute increments, unless Loop has been having communication issues.
 
-* **Non-Pump Insulin**: The user can enter insulin taken by another method such as inhaled or by injection. The user can choose a different insulin model than that is use with the pump. This is explained further at this [link](features.md#non-pump-insulin).
+* **Non-Pump Insulin**: The user can enter insulin taken by another method such as inhaled or by injection. The user can choose a different insulin model than used by the pump. This is explained further at this [link](features.md#non-pump-insulin).
 
 !!! abstract "Previous Pod Insulin History"
-    For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this must now been done in Apple Health.
+    For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this can be done in Apple Health.
+    
+    Before attempting that modification, please read this entire section on [Loop and Apple HealthKit](../faqs/algorithm-faqs.md#how-does-loop-use-apple-healthkit) in detail. 
+    
+    Pay special attention to [Insulin and Apple HealthKit](../faqs/algorithm-faqs.md#insulin-and-apple-healthkit)
 
 
 ### Carbohydrate Chart
@@ -190,7 +208,7 @@ The table below shows examples of the Glucose Status Icon and what the icon mean
 | <div style="width:55px"></div> Icon | Meaning |
 |---|---|
 |![Blood Glucose reading with blue trend arrow](img/loop-3-cgm-blue-arrow.svg){width="175"}|The current glucose reading is displayed. It can be from the CGM or from a finger stick. The value must have been updated within the last 15 minutes to be displayed.<br><br>For the example shown, a valid trend arrow is available and is blue. Color codes are explained at this [link](#glucose-color-code).|
-|![three dashes to indicate stale blood glucose](img/loop-3-cgm-stale.svg){width="175"}|The last glucose reading from the CGM or from a finger stick is stale, i.e., it was acquired more than 15 minutes ago.<br><br>In this case, the glucose prediction will stop updating. If in closed-loop mode, no changes will be made to insulin delivery. If a temporary basal is running, it continues running for the scheduled duration. Once the temporary basal expires, the pump resumes the scheduled basal rate. (When the app issues a temporary basal, the duration is always 30 minutes.)<br><br>The [HUD Status Row](#hud-status-row) will display a message to enable user to provide fingerstick glucose values if desired.|
+|![three dashes to indicate stale blood glucose](img/loop-3-cgm-stale.svg){width="175"}|The last glucose reading from the CGM or from a finger stick is stale, i.e., it was acquired more than 15 minutes ago. In this case, the glucose prediction will stop updating.<br><br>The [HUD Status Row](#hud-status-row) message enables user to enter fingerstick glucose value if desired.<br><br>If in closed-loop mode, no changes will be made to insulin delivery. If a temporary basal is running, it continues running for the scheduled duration. Once the temporary basal expires, the pump resumes the scheduled basal rate.<br><br>When the app issues a temporary basal, the duration is always 30 minutes.<br><br>The user can enter a manual temporary basal duration up to the limits of their pump.|
 |![an Add CGM with plus sign icon](img/loop-3-cgm-add.svg){width="175"}|If no CGM is currently selected, the Add CGM icon is displayed. The user can add a CGM following these [instructions](add-cgm.md).|
 |![valid glucose reading with a plus sign](img/loop-3-fs-and-cgm-add.svg){width="175"}|If no CGM is currently selected, but a glucose value was acquired within the last 15 minutes (from fingerstick or a different CGM), that value is displayed along with a plus sign. By tapping on the icon, the user can add a CGM following these [instructions](add-cgm.md).|
 
@@ -204,6 +222,19 @@ The table below shows examples of the Glucose Status Icon and what the icon mean
 |80 to 199 mg/dL (4.4 to 11.0 mmol/L)|**black** (light mode) / **white** (dark mode)|**blue**|
 |200 mg/dL (11.1 mmol/L) or above|**black** (light mode) / **white** (dark mode)|**yellow**|
 
+## CGM Display
+
+Tapping on the CGM icon in the HUD shows more information about the last CGM reading.
+
+For Dexcom G5/G6 and Share, the same screen is obtained by tapping on Loop Settings->CGM.
+
+For Nightscout Remote CGM, the Nightscout URL is opened when tapping on the CGM icon in the HUD, while the credential sections is shown when tapping on Loop Settings->CGM.
+
+
+The graphic below shows the result of tapping on the CGM icon when using a Dexcom G6.  It includes the time of the last reading to the nearest second, along with other information about that sensor and transmitter. It also has an option to go to the Dexcom app on the same device.
+
+![dexcom information screen from ](img/dexcom-info-menu.svg){width="250"}
+{align="center"}
 
 ### Pump Status Icon
 
@@ -264,7 +295,7 @@ The Status Row is located immediately below the CGM, Loop and Pump Icons and is 
 |<br><br>![override symbol and name with until time stamp message](img/status-row-override.svg){width="350"}|
 |If a higher priority message is not displayed in the `Status Row` and an override is active, the override symbol and name along with the time at which the override expires is displayed. <br><br>Tapping on the `Status Row` opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the [Overrides](../operation/features/workout.md) instructions.|
 |<br><br>![Pre-meal Preset message with until time stamp message](img/status-row-pre-meal.svg){width="350"}|
-|If a higher priority message is not displayed in the `Status Row` and the Pre-Meal Range is active in the toolbar, the `Pre-meal Preset, until time stamp` is displayed. Tapping on the status row has no effect for this message.<br><br>The Pre-Meal Preset can be engaged with an Override. When both are active, the Pre-Meal Range supersedes the range of the active Override, but the other settings for that Override still apply. When both are active, the `Status Row` message reflects the Override with both the PreMeal and Override icons in the toolbar highlighted.|
+|If a higher priority message is not displayed in the `Status Row` and the Pre-Meal Range is active in the toolbar, the `Pre-meal Preset, until time stamp` is displayed. Tapping on the status row has no effect for this message.<br><br>**New with Loop 3:** The Pre-Meal Preset can be engaged with an Override. When both are active, the Pre-Meal Range supersedes the range of the active Override, but the other settings for that Override still apply. When both are active, the `Status Row` message reflects the Override with both the PreMeal and Override icons in the toolbar highlighted.|
 
 
 ## Loop Widget on Lock Screen
@@ -274,17 +305,17 @@ Loop has a widget which can be added to the lock screen. The example graphic bel
 ![widget on lock screen, dex above, loop below](img/dex-loop-3-widget.svg){width="300"}
 {align="center"}
 
-New to Loop or never added a widget before:
+!!! info "New to Loop or never added a widget before:""
 
-* There is a difference in behavior between "new-style" Widgets and "old-style" Widgets
-    * New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or added with the &plus; button in edit mode
-    * Old-Style Widgets: like that for Loop use a different method to install
-* Make sure your phone is unlocked, then swipe from the Home Screen to get to Today View
-    * You can't edit the screen if you start from a locked phone
-* Start the Edit mode (where all of the icons are shaking), either by long-pressing on one of the new-style widgets, or by scrolling all the way to the bottom of Today View and pressing Edit.
-* Scroll all the way to the bottom again to find and select the button labeled "Customize"
-* Now you can configure (add, remove, rearrange) the "old-style" widgets for your screen.
-* The Loop widget should appear in the list available there.
+    * There is a difference in behavior between "new-style" Widgets and "old-style" Widgets
+        * New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or added with the &plus; button in edit mode
+        * Old-Style Widgets: like that for Loop use a different method to install
+    * Make sure your phone is unlocked, then swipe from the Home Screen to get to Today View
+        * You can't edit the screen if you start from a locked phone
+    * Start the Edit mode (where all of the icons are shaking), either by long-pressing on one of the new-style widgets, or by scrolling all the way to the bottom of Today View and pressing Edit.
+    * Scroll all the way to the bottom again to find and select the button labeled "Customize"
+    * Now you can configure (add, remove, rearrange) the "old-style" widgets for your screen.
+    * The Loop widget should appear in the list available there.
 
 Experienced Looper who already had a widget should not need to modify anything to see it.
 
@@ -292,41 +323,3 @@ Experienced Looper who already had a widget should not need to modify anything t
 
     Still stuck trying to set up a widget, please do an internet search, such as "Add old-style widget to your iOS 15 Home Screen" for instructions.
 
-## Alert Screens
-
-There are a number of modal screens to alert you of notifications and problems.
-
-### Notifications
-
-Work in progress section - more content to come.
-
-This section presents some of the modal notification screens you may see with Loop.
-
-#### Suspend Timer Reminder
-
-If you use Loop to suspend insulin delivery on your pod, at the end of the time interval you selected, you will see this modal alert. Once you acknowledge the alert, it will halt the reminder beeps on your pod. The modal alert on your phone repeats at 15 minute intervals.
-
-![reminder that insulin is suspended](img/loop-3-modal-alert-suspended.svg){width="300"}
-{align="center"}
-
-
-
-### Error Messages
-
-Work in progress section - more content to come.
-
-This section presents some of the error message screens you may see with Loop.
-
-## CGM Display
-
-Tapping on the CGM icon in the HUD shows more information about the last CGM reading.
-
-For Dexcom G5/G6 and Share, the same screen is obtained by tapping on Loop Settings->CGM.
-
-For Nightscout Remote CGM, the Nightscout URL is opened when tapping on the CGM icon in the HUD, while the credential sections is shown when tapping on Loop Settings->CGM.
-
-
-The graphic below shows the result of tapping on the CGM icon when using a Dexcom G6.  It includes the time of the last reading to the nearest second, along with other information about that sensor and transmitter. It also has an option to go to the Dexcom app on the same device.
-
-![dexcom information screen from ](img/dexcom-info-menu.svg){width="250"}
-{align="center"}
