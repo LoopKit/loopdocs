@@ -2,68 +2,64 @@
 
 ## CGM Choices
 
-The CGM configuration can be selected from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
+A CGM can be added from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
 
-The HUD will look like the graphic below if no CGM or Pump is configured for Loop:
+The HUD will look like the graphic below if no CGM or Pump is connected with Loop:
 
 ![Loop HUD when CGM and Pump have not been added](img/loop-3-hud-add-cgm-add-pump.svg){width="350"}
 {align="center"}
 
-There are several choices for a CGM with Loop as shown in the graphic below:
+Loop can be connected to the following CGMs:
 
-* CGM resides on the same phone (internet not required)
+* CGMs that reside on the same phone (internet not required)
     * [Dexcom G5](#dexcom-g5-and-g6-cgm)
     * [Dexcom G6](#dexcom-g5-and-g6-cgm)
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
         * **You must [add pump](add-pump.md) first**
-        * Not visible in graphic below because no pump with connected Enlite sensor was attached
-* CGM requires active internet (WiFi or Cell)
+            * If Enlite is connected to Medtronic pump and that pump is connected to Loop, then an option for Enlite shows up when choosing a CGM, _not visible in graphic below_
+* CGMs that require active internet (WiFi or Cell)
     * [Dexcom Share](#dexcom-share-as-a-cgm)
     * [Nightscout Remote CGM](#nightscout-remote-cgm)
 * CGM Simulator - useful to learn the app interface
 
 ## Add CGM
 
-The graphic below shows the display when a user taps on Add CGM in the Settings screen. Tap on the desired CGM to advance to the next screen.
+To add a CGM, go to the Settings screen, tap on add CGM and tap on your CGM.
 
-![graphic showing some of the CGM available with Loop 3](img/loop-3-setting-add-cgm.svg){width="500"}
+![graphic showing some of the CGMs available with Loop 3](img/loop-3-setting-add-cgm.svg){width="500"}
 {align="center"}
-
-!!! info "Comment for Experienced Loopers"
-    With Loop 3
-
-    * There is a new option for CGM, [Nightscout Remote CGM](#nightscout-remote-cgm)
-    * The Dexcom G4 is no longer available from Dexcom so that option was removed
 
 ### Dexcom G5 and G6 CGM
 
-Requirements for Dexcom G5 and Dexcom G6:
+To use the Dexcom G5 and G6:
 
-* Dexcom app must be running on the Loop iPhone and be paired to an active transmitter
+* Dexcom app must be running on the Loop iPhone and paired to an active transmitter
 * User must enter that active transmitter ID in the location indicated by the red rectangle in the graphic below
-* Do not enter your Share Credentials (should say tap to set)
-* Do not add the transmitter ID to Loop first
+* Do not enter your Share Credentials
+    * The graphic below shows `Tap to set`
+    * Do not tap, leave it alone
+* Only add the transmitter ID to Loop after it is paired with the Dexcom app on your phone
 
 ![interface to add transmitter ID for Dexcom](img/loop-3-setting-add-dexcom.svg){width="300"}
 {align="center"}
 
 !!! info "FYI: When You Change Transmitters"
 
-    When you change Dexcom transmitters, you will need to select the `Delete CGM` button at the very bottom of the CGM info page in Loop. After that, proceed with Dexcom Instructions for changing transmitters.  Once the new transmitter is paired with the Dexcom app, then tap `Add CGM` to enter the new transmitter. You cannot just tap on your old transmitter ID to update it.
+    Before you change Dexcom transmitters, select the `Delete CGM` button at the very bottom of the CGM info page in Loop. Then, follow Dexcom Instructions for changing transmitters.  Once the new transmitter is paired with the Dexcom app, go to the CGM page in Loop, tap `Add CGM` and enter the new transmitter ID. You cannot just tap on your old transmitter ID to update it.
 
-    If you don't update your transmitter ID when you change active transmitters, your Loop will not get CGM data from the Dexcom app on your phone.
+    If you don't update your transmitter ID in Loop after you change the transmitter in Dexcom app, Loop will not get CGM data from the Dexcom app on your phone.
 
 #### About Dexcom Share credentials
 
-You do **NOT** need your Share account info listed in Loop settings if you are using a G5 or G6 system. The transmitter ID is sufficient. In fact, the recommendation is that you leave your Share account empty so that you don't accidentally become internet-dependent for CGM data when you forget to update your transmitter ID when you start a new transmitter. Just leave the Share credentials blank.
+You do **NOT** need your Share account info listed in Loop settings if you are using a G5 or G6 system. The transmitter ID is sufficient. In fact, you should leave your Share credentials blank so that you don't accidentally become internet-dependent for CGM data if you forget to update your transmitter ID when you start a new transmitter.
 
 ### Medtronic Enlite CGM
 
 The Medtronic Enlite CGM is only available if you have connected it to your compatible Medtronic Pump.
 
 * Make sure your pump reports the Enlite CGM results
-* Go through the [Add Pump](add-pump.md) to Loop steps first with that Medtronic pump
+* Go through the [Add Pump](add-pump.md) to Loop steps with that Medtronic pump
 * Then do the [Add CGM](add-cgm.md) steps and the sensor should be presented as an option
 
 ### Dexcom Share as a CGM
@@ -94,23 +90,15 @@ The user must enter both the URL and API_SECRET for their site to ensure the sec
 ![Nightscout Remote CGM entry screen](img/nightscout-cgm-entry.svg){width="350"}
 {align="center"}
 
-When using Nightscout Remote CGM, if the user needs to modify credentials or switch to a different CGM, the user must go through the Loop->Settings->CGM menu.
+When using Nightscout Remote CGM, if the user needs to change credentials or switch to a different CGM, the user must go through the Loop->Settings->CGM menu.
 
 
-## Modify CGM
+## Change CGM
 
-To modify the selected CGM, it must first be deleted. Then a new CGM can be added.
+To change CGMs, delete your existing CGM and then add a new CGM.
 
-To Delete a CGM, you must first get to the display that has a `Delete CGM` at the bottom.
-
-### CGM Access
-
-Tapping on the CGM icon in the HUD shows more information about the last CGM reading.
-
-* For Dexcom G5/G6 and Share, the screen with the `Delete CGM` row is obtained by tapping on the CGM Icon in the HUD or by tapping on Loop Settings and selecting CGM.
+* For Dexcom G5/G6 and Share, access `Delete CGM` by tapping on the CGM Icon in the HUD or by tapping on Loop Settings and selecting CGM and scrolling down.
 
 * For Nightscout Remote CGM, the Nightscout URL is opened when tapping on the CGM icon in the HUD, while the credential sections with the `Delete CGM` row is shown when tapping on Loop Settings and selecting CGM.
-
-When changing Dexcom Transmitters, you must first `Delete CGM` and then add the CGM back with the new Transmitter serial number.
 
 After deleting a CGM, the [Head-Up-Display](#cgm-choices) at the top of the Loop main screen will show the add CGM icon.

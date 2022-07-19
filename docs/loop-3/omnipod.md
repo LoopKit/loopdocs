@@ -240,6 +240,10 @@ Tap on this row if you switch to a different type of insulin.
 * The model used by Loop for all the rapid insulin brands are the same, but it's a good idea to record if you change brands - some people notice differences
 * If you switch between rapid and ultra-rapid insulin, you need to let Loop know so it will use the appropriate model
 
+## Pump Time
+
+Click on [Time Zone](displays_v3.md#time-zone) to understand how Loop treats "pump" time for pods.
+
 ## Previous Pod Information
 
 When you tap on the `Previous Pod Information` row, a graphic similar to those shown below is displayed. This provides summary information about the pod before the one currently in use. 

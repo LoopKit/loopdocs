@@ -2,15 +2,15 @@
 
 ## Pump Choices
 
-The pump configuration can be selected from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
+You can choose a pump from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
 
-The HUD will look like the graphic below if no CGM or Pump is configured for Loop:
+The HUD looks like the graphic below if no CGM or Pump is chosen:
 
 ![Loop HUD when both CGM and Pump have not been added](img/loop-3-hud-add-cgm-add-pump.svg){width="350"}
 {align="center"}
 
 !!! question "Switching Pumps?"
-    If you already have a pump connected to Loop and want to switch to a different pump, go to [Modify Pump](#modify-pump).
+    To change the pump connected to Loop go to [Change Pump](#change-pump).
 
 Loopers can choose from 3 pumps and a simulator:
 
@@ -19,29 +19,16 @@ Loopers can choose from 3 pumps and a simulator:
 * Omnipod DASH
 * Insulin Pump Simulator
 
-!!! info "Omnipod vs Omnipod DASH"
-    Insulet (and the Loop app) terminology:
+!!! info "Omnipod Terms"
+    The Loop app and LoopDocs use these terms:
 
-    * Omnipod: refers to the older (Eros) pods with clear needle-caps.
-    * Omnipod DASH: refers to newer BLE DASH pods with blue needle-caps.
+    * **Omnipod** is the older (Eros) pods (requires RileyLink compatible device to Loop)
+    * **Omnipod DASH** is the newer BLE pods (phone talks directly to pod - no extra device needed to Loop)
+    * **Omnipod Common** means information common to Omnipod and Omnipod DASH
 
-    The Loop app does **not** support Omnipod 5 pods.
+### Summary of Steps to Add a Pump
 
-    LoopDocs uses these terms:
-
-    * **Omnipod**: older (Eros) pods (requires RileyLink compatible device to Loop)
-    * **Omnipod DASH**: newer BLE pods (phone talks directly to pod - no extra device needed to Loop)
-    * **Omnipod Common**: information common to Omnipod and Omnipod DASH
-
-### Steps to Add a Pump
-
-When adding a pump, the steps you take depend on the type of pump.
-
-* All steps for any pump are presented in order on this page
-* When you see the words "If you are adding `type of pump`" skip ahead in docs to "link", click on the link to continue adding that pump
-    * In other words, you can skip the next step
-
-Some people prefer to know the steps for their pump before they begin:
+Here is an overview of the different steps for adding each pump.  Before changing pumps, you need to delete the old pump first.  See [Change Pump](#change-pump) section below.
 
 #### Steps for Omnipod
 
@@ -66,39 +53,41 @@ Some people prefer to know the steps for their pump before they begin:
 
 ## Add Pump
 
-The graphic below shows the display when a user taps on Add Pump in the Settings screen. Tap on the desired Pump to advance to the next screen.
+Tap on Add Pump in the Settings screen to see pump options (shown in the graphic below).
+
+Tap on your Pump.
 
 ![graphic showing the pumps available with Loop 3](img/loop-3-setting-add-pump.svg){width="500"}
 {align="center"}
 
 
-If you are adding a Medtronic pump, skip ahead to [Insulin Type](#insulin-type).
+Medtronic pump users - skip ahead to [Insulin Type](#insulin-type).
 
 ## Omnipod Common 1
 
 ### Pod Nofication Defaults
 
-The graphics below show the common screens for adding Omnipod or Omnipod DASH. These are the default notifications used for all future pods. These default settings can be modified later.
+Here are the common screens for adding Omnipod or Omnipod DASH showing the default settings. You can change the default settings later.
 
 ![initial screens for pod set up to define default notifications](img/loop-3-pod-notification.svg){width="600"}
 {align="center"}
 
-After these screens are completed, the insulin type is selected.
+After you complete these screens, you select the insulin type.
 
 ## Insulin Type
 
-The insulin type screen is presented for all pumps.
+For all pumps, you can choose from the insulin types below.
 
 * Insulin Type
-    * User can select from Rapid (Novolog, Humalog, Apidra) or Ultra-Rapid (Fiasp, Lyumjev)
-    * For Rapid insulin, the [Child or Adult](therapy-settings.md#insulin-model) model selection made in Therapy Settings is used
-    * For the Ultra-Rapid insulin, only one model is available
-    * Inhaled insulin (Afrezza) is not suitable for pump use so is not offered at this screen; it is only available for use with [Non-Pump Insulin](displays_v3.md#event-history-reservoir-and-non-pump-insulin)
+    * **Rapid** (Novolog, Humalog, Apidra) or **Ultra-Rapid** (Fiasp, Lyumjev)
+    * With Rapid insulin, you can choose the [Child or Adult](therapy-settings.md#insulin-model) model in the Therapy Settings
+    * With the Ultra-Rapid insulin, only one model is available
+    * Inhaled insulin (Afrezza) is not offered because not used in pumps. [Non-Pump Insulin](displays_v3.md#event-history-reservoir-and-non-pump-insulin)
 
 ![initial selection for insulin used in pump](img/loop-3-add-pump-insulin.svg){width="250"}
 {align="center"}
 
-If you are adding an Omnipod DASH pump, skip ahead in the docs to [Omnipod Commom 2](#omnipod-common-2).
+To add a Omnipod DASH pump, skip ahead to [Omnipod Commom 2](#omnipod-common-2).
 
 Omnipod and Medtronic users should continue to select a RileyLink compatible device.
 
@@ -106,53 +95,46 @@ Omnipod and Medtronic users should continue to select a RileyLink compatible dev
 
 ### Select RileyLink
 
-For Omnipod and Medtronic pumps, a RileyLink compatible device is required for Loop to control your pump. You will learn to make it a habit to keep that device and your phone within range of your pump to keep Loop a nice green color.
+For Omnipod and Medtronic pumps, you need a RileyLink compatible device to Loop.  The Device and your phone must be kept close to your pump for Loop to work.
 
 !!! warning ""
-    New RileyLink compatible devices won't have a name listed next to their slider at first. The name will only be displayed after connecting the device to Loop for the first time. So, if all you see in the device list is a little toggle and no "RileyLink" name...go ahead and switch that toggle. The default device name will appear after that toggle is green.
+    A new RileyLink compatible device is not listed next to its slider until after you connect the device to Loop. Find the little toggle in the device list, switch on that toggle, and the RileyLink will appear after the toggle is green.
 
-    You can later [personalize](../operation/loop-settings/rileylink.md#personalize-device) the name once it is connected to Loop.
+    You can [personalize](../operation/loop-settings/rileylink.md#personalize-device) the name once it is connected to Loop.
 
 ![img/pod-rl.png](../operation/loop-settings/img/pod-rl.png){width="400"}
 {align="center"}
 
-A list of all RileyLink compatible devices in the nearby area will display in the RileyLink Setup screen. Select your RileyLink by sliding the toggle to display green and then press the blue `Continue` button at the bottom of the screen.
+All RileyLink compatible devices in the nearby area, not already connected to a Loop app, will display in the RileyLink Setup screen. Select your RileyLink by sliding the toggle to display green and then press the blue `Continue` button at the bottom of the screen.
 
 If your device does not appear:
 
 * Make sure it is charged and turned on
-* Make sure it is not still connected to a different phone or app
+* Make sure it is not connected to a different phone or app
 
-If you are adding a Medtronic pump, skip ahead in the docs to [Medtronic](#medtronic).
+If you are adding a Medtronic pump, skip ahead to [Medtronic](#medtronic).
 
 ## Omnipod Common 2
 
-After selecting a RileyLink for Omnipod, all other actions for Omnipod and Omnipod DASH are the same. Once a pod is paired, the Pump display will be the same, except the Omnipod screen has a section for the RileyLink Devices.
+After selecting a RileyLink for Omnipod, all other actions for Omnipod and Omnipod DASH are the same. Once a pod is paired, the Pump display is the same, except the Omnipod screen has a RileyLink Devices section.
 
-For Omnipod (left) and Omnipod DASH (right), you should see `Pair Pod` screen.
+For Omnipod (left) and Omnipod DASH (right), you should see the `Pair Pod` screen.
 
 ![pair pod screens for Omnipod and Omnipod DASH](img/loop-3-pair-pod-duo.svg){width="500"}
 {align="center"}
 
-New Loopers or those who have never used pods before should hit `Cancel`, finish this page and later review the [Pair Pod](omnipod.md#pair-pod) instructions and the rest of the [Omnipod Common](omnipod.md) screens. Then, when they are comfortable, pair a pod.
+At this point - you should hit `Cancel` (upper right of screen) and review the [Omnipod Common](omnipod.md) page before pairing a pod.
 
-!!! tip "Try it with Water"
-    Some people are fine filling a pod with insulin, priming, attaching the pod and inserting a "live" pod.
+!!! tip "New Looper / New Podder"
+    Carefully review the [Pair Pod](omnipod.md#pair-pod) instructions and the rest of the [Omnipod Common](omnipod.md) page before continuing. Then, when you are ready, pair a pod.
 
-    Other people want to be a little more cautious.
+    If you are not ready to fill and attach a pod with insulin, try filling a pod with water and let it drip into a ziplock bag to test running Loop on the pod. (Be sure the pod is not near anything when you hit "Insert Cannula".)
 
-    * If you are the cautious type, fill a pod with water and let it drip into ziplock bag you carry around
-    * You can run parallel actions with Loop and your current dosing device
-    * You may enjoy reading [Rufus the Bear](https://www.loopandlearn.org/sl-rufus/)
-    * Just be sure the pod is not near skin when you hit `Insert Cannula`
-
-Experienced Loopers will probably pair a pod immediately, but should still review the new material.
-
-Skip ahead in the docs to read the sections: [Time Zone](#time-zone) and how to [Modify the Pump Connected to Loop](#modify-pump).
+    You may enjoy reading [Rufus the Bear](https://www.loopandlearn.org/sl-rufus/).
 
 ## Medtronic
 
-If you've been following this page to add your Medtronic pump, you have completed the first three steps.  If not, you can prepare your pump now, then do those first three steps using Loop (follow the links). The final Connect the Pump step requires all other steps be completed first.
+If you followed this page to add your Medtronic pump, you have completed the first three steps.  If not, you can prepare your pump now, then do those first three steps using Loop (follow the links). All other steps be completed before you Connect the Pump.
 
 1. Select [Minimed 500/700 Series](#add-pump) as your pump
 1. Select [Insulin Type](#insulin-type)
@@ -204,7 +186,7 @@ The final step is to connect your Medtronic pump to Loop.
     * If you had previously used a pump that allows multiples of 0.025 U/hr basal rate and you have one of those rates in the basal rate schedule in Loop, you will not be able to connect to a different Medtronic pump that does not support those rates.
     * If this happens to you, cancel out of connecting to that pump
         - Refer to [Prep for Medtronic](settings.md#option-2-prep-for-medtronic) on the Settings page
-            - Add a simulator so you can modify the scheduled basal rates
+            - Add a simulator so you can Change the scheduled basal rates
             - Delete the simulator
         - Try again
 
@@ -231,36 +213,24 @@ Now that your pump is paired with Loop, you should select the type of battery yo
 
 The Medtronic status and commands available are shown in the [Pump Setting](medtronic.md) page.
 
-## Time Zone
 
-Loop allows the Pump to have a different time zone from the phone. The command to adjust time zone is found in the Pump Setting screen for an attached pump.
+## Change Pump
 
-The schedules for the basal rates, correction ranges, insulin sensitivity factors and carb ratios stay at the pump time even if the user and their phone change time zones or when daylight savings time occurs.  To bring the pump into the same time zone as the phone, use this command in Loop. (Medtronic users - do NOT adjust time on your pump - always go through Loop.)
+Before changing from one pump to another, you must delete the old pump.
 
-Select the Pump Settings display, scroll down to the Change Time Zone line, example shown in the graphic below (Medtronic / Loop 2.2.x example).  You can leave the time zone offset unchanged or touch it to change to the current time zone.  Note that the 24-hour configuration pattern for basal rates, insulin sensitivity factor, carb ratio and correction range are aligned with the time zone shown on this line.
+* This does not include changing a pod, so long as the pods are of the same type
 
-![Command line to modify the time zone](../operation/loop-settings/img/change-time-zone.svg){width="250"}
+* Before switching between different pumps that require a RileyLink Compatible Device (e.g., Omnipod and Medtronic)
+    - Disconnect from the Device before deleting the pump
+    - Otherwise, you will not see that Device when you try to connect the new pump
+        * If that happens, quit the Loop App and restart it to see the Device
 
-Once the Change Time Zone command is tapped, Loop no longer shifts the 24-hour configuration pattern to the old time zone.
+* Before switching between Omnipod and Omnipod DASH, you must deactivate your current pod.
 
-If you choose to leave the pump and phone time zones different, the pump icon on the HUD will show the clock icon to remind you.
-
-## Modify Pump
-
-If you want to change the pump you are using, you must first delete the old pump.
-
-* If you are using Omnipod of the same pod type, you do not delete the pump, just Deactivate a pod and pair a new one.
-
-* If you are switching from one pump type (Omnipod or Medtronic) to another pump that requires a RileyLink compatible device
-    - Disconnect from the device before deleting the pump
-    - If you did not disconnect, you will not see that same device when you try to connect the new pump
-        * Quit the Loop App and restart it to see that device again
-
-* If you are switching between Omnipod and Omnipod DASH, you must first deactivate your current pod.
-
-    * After the pod has been deactivated, a new row will show at the bottom of the pod screen
+    * After the pod is deactivated, a new row will show at the bottom of the pod screen
     * Tap on `Switch to other insulin delivery device` and follow the directions to complete the task
 
 * If you are using Medtronic, scroll to the bottom of the pump screen and select `Delete Pump`
 
 The [Head-Up-Display](#pump-choices) at the top of the Loop main screen will now show the add pump icon.
+
