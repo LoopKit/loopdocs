@@ -18,11 +18,11 @@ For new builders, please build the code before you make any changes. Start with 
     * Users of Loop Master refer to the Loop 2.2.x examples.
     * Users of Loop-dev refer to the Loop 3 examples.
         * Note that some changes are in a different file for Loop-dev (part of the architecture upgrade for the app).
-        
+
 
 ## Instructions for Finding the Lines
 
-For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory. 
+For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory.
 
 **For each change you make in Xcode - be sure to save the file - otherwise the modification does not get built into your app.**
 
@@ -128,7 +128,7 @@ _Code Before Modification for Loop 2.2.x_
 _Code After Modification or default for Loop 3_
 
     public static let defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes = (fast: .minutes(30), medium: .hours(3), slow: .hours(5))
-    
+
 Note that if you change from 2 hours to 30 minutes, you must also change the indication before the parentheses.
 
 ## Adjust Percent Bolus for Automatic Bolus
@@ -169,7 +169,12 @@ _Code After Modification to 50% of recommended insulin_
 
 ## Modify Override Sensitivity
 
-Some people want finer settings on the override sensitivity scale and may want to limit the overall range for overrides – especially for children.
+Some people want finer settings on the override sensitivity picker and may want to limit the overall range for overrides – especially for children.
+
+!!! tip "1% Settings Available without Customization"
+    The selectable Override Sensitivity values are not limited by the default picker values of 10%.
+
+    * [Select 1% Sensitivity](../operation/features/workout.md#select-1-sensitivity)
 
 Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An [override](../operation/features/workout.md) is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in IOB for the duration of the override.)
 
@@ -198,7 +203,7 @@ Some people want to limit the maximum number of carbs that can be entered in one
 
 
 ``` title="Key_Phrase"
-maxQuantity = 
+maxQuantity =
 ```
 
 As shown in the graphic below, this phrase shows up in 2 places, only the first one should be modified.
@@ -284,7 +289,7 @@ let rotationsPerValue
 
 ### Loop 2.2.x Bolus Confirmation
 
-In order to reduce the amount the user has to spin the watch crown to confirm a bolus, there are 3 numbers on 2 lines that must be modified. You will be working in the same file you just used to modify the watch sensitivity to adjusting the bolus amount, BolusInterfaceController.swift. 
+In order to reduce the amount the user has to spin the watch crown to confirm a bolus, there are 3 numbers on 2 lines that must be modified. You will be working in the same file you just used to modify the watch sensitivity to adjusting the bolus amount, BolusInterfaceController.swift.
 
 For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This `Key_Phrase` returns 3 lines, the second 2 of which are the ones in that file where the change is required:
 
