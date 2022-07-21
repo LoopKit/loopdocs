@@ -2153,7 +2153,7 @@
 </ul>
 </div>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory. </p>
+<p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory.</p>
 <p><strong>For each change you make in <abbr title="program used to build an app">Xcode</abbr> - be sure to save the file - otherwise the modification does not get built into your app.</strong></p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
 </code></pre></div>
@@ -2281,7 +2281,14 @@
 <p>This number should never be bigger than 1 (you’d be getting more than Loop recommends). If you think you need more than 1, consider your settings and meal entries.</p>
 </div>
 <h2 id="modify-override-sensitivity">Modify <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Sensitivity<a class="headerlink" href="#modify-override-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Some people want finer settings on the override sensitivity scale and may want to limit the overall range for overrides – especially for children.</p>
+<p>Some people want finer settings on the override sensitivity picker and may want to limit the overall range for overrides – especially for children.</p>
+<div class="admonition tip">
+<p class="admonition-title">1% Settings Available without Customization</p>
+<p>The selectable <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Sensitivity values are not limited by the default picker values of 10%.</p>
+<ul>
+<li><a href="../../operation/features/workout/#select-1-sensitivity">Select 1% Sensitivity</a></li>
+</ul>
+</div>
 <p>Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An <a href="../../operation/features/workout/">override</a> is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> for the duration of the override.)</p>
 <p>This example customization changes the lower bound for sensitivity to 50% (factor of 2 smaller than 100%) and provides 5% steps.</p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let allScaleFactorPercentages
@@ -2301,7 +2308,7 @@
 </code></pre></div>
 <h2 id="modify-maximum-carb-entry">Modify Maximum Carb Entry<a class="headerlink" href="#modify-maximum-carb-entry" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Some people want to limit the maximum number of carbs that can be entered in one entry – especially for children or folks who eat lower carb. This helps prevent accidental typos, e.g., entry of 115 g instead of 15 g for a meal.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>maxQuantity = 
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>maxQuantity =
 </code></pre></div>
 <p>As shown in the graphic below, this phrase shows up in 2 places, only the first one should be modified.</p>
 <p align="center"><img alt="xcode display showing the key phrase found in 2 places" src="../img/xcode-modify-max-carb-entry.svg" width="700" /></p>
@@ -2367,7 +2374,7 @@
 </ul>
 <p align="center"><img alt="img/sensitivity1.png" src="../img/sensitivity1.png" width="800" /></p>
 <h3 id="loop-22x-bolus-confirmation">Loop 2.2.x Bolus Confirmation<a class="headerlink" href="#loop-22x-bolus-confirmation" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>In order to reduce the amount the user has to spin the watch crown to confirm a bolus, there are 3 numbers on 2 lines that must be modified. You will be working in the same file you just used to modify the watch sensitivity to adjusting the bolus amount, BolusInterfaceController.swift. </p>
+<p>In order to reduce the amount the user has to spin the watch crown to confirm a bolus, there are 3 numbers on 2 lines that must be modified. You will be working in the same file you just used to modify the watch sensitivity to adjusting the bolus amount, BolusInterfaceController.swift.</p>
 <p>For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This <code>Key_Phrase</code> returns 3 lines, the second 2 of which are the ones in that file where the change is required:</p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>abs(accumulatedRotation)
 </code></pre></div>
