@@ -159,7 +159,7 @@ This setting must be entered during onboarding regardless of the type of insulin
 * The Loop models used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, do not distinguish between brands.  However, a different model is available for Adult or Child.
 * The Loop models for "ultra rapid" insulins such as Fiasp or Lyumjev, each have their own model.
     * There is no differentiation between Adult and Child, at this time.
-    * therapy Settings Insulin selection is not used for "ultra rapid" insulins.
+    * Therapy Settings Insulin selection is not used for "ultra rapid" insulins.
 
 ### Carb Ratios
 
