@@ -1,14 +1,12 @@
 # Therapy Settings
 
-During [Onboarding](onboarding.md#therapy-settings-onboarding), all your therapy settings were entered. 
+During [Onboarding](onboarding.md#therapy-settings-onboarding), all your therapy settings were entered.
 
-After onboarding, the Therapy Settings screen is reached by going through the Loop Settings screen after a [pump](settings.md#add-pump-for-therapy-settings) has been added. 
+After onboarding, the Therapy Settings screen is reached by going through the Loop Settings screen **after** a [pump](settings.md#add-pump-for-therapy-settings) has been added.
+
+When building Loop 3 over Loop 2.2.x, the existing values from Loop 2.2.x are kept where possible and presented to the user as the "default" value when moving through each screen.
 
 This page provides more details about each Therapy Settings.
-
-!!! danger "Work in Progress"
-
-    This is page is not complete - expect revisions.
 
 ## Authorization Required
 
@@ -16,10 +14,10 @@ All the settings configured under Therapy Settings are protected by the same aut
 
 ## Details for Therapy Settings
 
-Loop 3 has Guardrails for each of the Therapy Settings. These are found in the [Guardrails for Settings](#guardrails-for-settings) section of this page.
+Loop 3 has Guardrails for each Therapy Settings. These are grouped in the [Guardrails for Settings](#guardrails-for-settings) section of this page.
 
 !!! tip "New Loopers"
-    New Loopers may prefer settings that show up outside the "typical" range. 
+    New Loopers may prefer settings that show up outside the "typical" range.
 
     * These show yellow font on the picker dial and you must acknowledge a warning message that the selected value is lower, higher or outside "typical".
     * It is always fine to pick a yellow or even red value when being cautious.
@@ -34,18 +32,30 @@ Loop 3 has Guardrails for each of the Therapy Settings. These are found in the [
 #### Screens Displayed
 
 !!! abstract ""
-    The screens displayed on this page were acquired during [Onboarding](onboarding.md#therapy-settings-onboarding) and show the full information screens available in the app with the `Continue` button.
+    Some screens displayed on this page were acquired during [Onboarding](onboarding.md#therapy-settings-onboarding).
     
-    When you return to the Therapy Settings after you have onboarded and added a pump, the information screens are shown when you touch the information icon, &#9432;, on the upper right.
+    * When saving a Therapy Setting
+        * During Onboarding, the button is labeled "Confirm Setting"
+        * Otherwise, the button is labeled "Save".
 
 ### Glucose Safety Limit
 
 Loop will deliver basal and recommend bolus insulin only if your glucose is predicted to be above the Glucose Safety Limit for the next three hours.
 
-![several screens showing glucose safety limit entry](img/loop-3-therapy-setting-safety.svg){width="600"}
+The graphic below shows the information screen presented during onboarding or when user taps the information icon, &#9432;.
+
+![information screen for the glucose safety limit](img/loop-3-therapy-setting-safety-info.svg){width="300"}
 {align="center"}
 
-The graphic above shows the default Glucose Safety Limit of 80 mg/dL bottom left and a Glucose Safety Limit of 100 mg/dL bottom right. If you feel more comfortable with a higher limit, then start there - do not let the yellow font influence you. Once you've used Loop for a while, you can revisit this setting.  
+The GIF below shows two screens for Glucose Safety Limit.
+
+* Frame 1: During onboarding, user can choose accept the default limit by tapping "Confirm Setting" or tap the row to configure the range (see Frame 2)
+* Frame 2: The user adjusts the picker wheel to select desired value and then taps on the "Confirm Setting" or "Save" button
+
+![several screens showing glucose safety limit entry](img/safety.gif){width="300"}
+{align="center"}
+
+If you feel more comfortable with a higher limit, do not let the yellow font influence you. Once you've used Loop for a while, you can revisit this setting.
 
 !!! note "Note"
     The value you select for Glucose Safety Limit will dictate the lowest value on the glucose picker that is available for Correction Range and Pre-Meal Range. Those cannot be lower than the Glucose Safety Limit.
@@ -56,10 +66,24 @@ The graphic above shows the default Glucose Safety Limit of 80 mg/dL bottom left
 
 Your Correction Range is the glucose value (or range of values) that you want Loop to aim for in adjusting your basal insulin and helping you calculate your boluses.
 
-![several screens showing correction range entry](img/loop-3-therapy-setting-correction.svg){width="600"}
+The graphic below shows the information screen presented during onboarding or when user taps the information icon, &#9432;.
+
+![information screen for the correction range](img/loop-3-therapy-setting-correction.svg){width="300"}
 {align="center"}
 
-The graphic above shows the default Correction Range of 100 to 120 mg/dL. Do not let the yellow font discourage you if you want to have a "higher than typical" range to start with. Once you've used Loop for a while, you can revisit this setting.  
+The GIF below shows four screens when first adding and selecting a correction range. The red box indicates where the user taps.
+
+* Frame 1: Tap the &plus; sign
+* Frame 2: Use the picker wheels to select desired values
+    * This is the first entry so must start at midnight - additional rows can be added for other times
+    * When happy with the picker values, user must tap add
+* Frame 3: This screen is shown only if a values are outside typical
+* Frame 4: Tap on the "Confirm Setting" or "Save" button to keep the value
+
+![GIF showing selection of correction range](img/corr-range.gif){width="300"}
+{align="center"}
+
+Do not let the yellow font discourage you if you want to have a "higher than typical" range to start with. Once you've used Loop for a while, you can revisit this setting.
 
 [Guardrails for Correction Range](#guardrails-for-correction-range)
 
@@ -68,10 +92,19 @@ The graphic above shows the default Correction Range of 100 to 120 mg/dL. Do not
 
 Your Pre-Meal Range is used to temporarily lower your glucose target before a meal to impact post-meal glucose spikes.
 
-![several screens showing pre-meal range entry](img/loop-3-therapy-setting-pre-meal.svg){width="600"}
+The graphic below shows the information screen presented during onboarding or when user taps the information icon, &#9432;.
+
+![information screen for the pre-meal override](img/pre-meal-info.svg){width="300"}
 {align="center"}
 
-The graphic above shows the default Pre-Meal Range as empty.  This is the only Therapy Setting that is optional. You can enter a value or range of values during onboarding if you choose. This setting can be edited or deleted later. Once you've used Loop for a while, you can revisit using this option.
+The GIF below shows three screens from various scenarios. The red box indicates where the user taps. If the user chooses to leave Pre-Meal not set, the Pre-Meal icon in the tool bar is disabled. Some users prefer this.
+
+* Frame 1: During onboarding, user can choose not to add a pre-meal range by tapping "Confirm Setting" or tap the Pre-Meal row to configure the range (see Frame 2)
+* Frame 2: User adjusts the Pre-Meal range using the picker and then "Save"
+* Frame 3: If a pre-meal range was added, user can remove it by tapping "Delete" and then "Save"
+
+![GIF showing screens from setting pre-meal range](img/pre-meal.gif){width="300"}
+{align="center"}
 
 !!! note "Note"
     * If you do not add an entry, the pre-meal icon on the toolbar is disabled.
@@ -117,24 +150,25 @@ For safety, don't set a maximum bolus limit any higher than your typical large m
 [Guardrails for Maximum Bolus](#guardrails-for-maximum-bolus)
 
 
-### Insulin Model 
+### Insulin Model
 
 Loop selects a specific insulin action model based on your entry here and when you add a [pump](add-pump.md#insulin-type).
 
 This setting must be entered during onboarding regardless of the type of insulin you will use in your pump.
 
-* The Loop models used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, do not distinguish between brands.  However, a different model is available for Adult or Child. 
+* The Loop models used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, do not distinguish between brands.  However, a different model is available for Adult or Child.
 * The Loop models for "ultra rapid" insulins such as Fiasp or Lyumjev, each have their own model.
     * There is no differentiation between Adult and Child, at this time.
-    * The Therapy Settings Insulin selection is not used for "ultra rapid" insulins.
+    * Therapy Settings Insulin selection is not used for "ultra rapid" insulins.
 
 ### Carb Ratios
 
 Your Carb Ratio is the number of grams of carbohydrates covered by one unit of insulin.
 
 * At least one carb ratio must be entered
-* A daily schedule with varying carb ratio at different times of day can be entered using the &plus; sign
-
+    * Use the &plus; sign, picker wheels and then tap "Add"
+    * The method was described in the [Correction Range](#correction-range) section
+* Loop supports 1 to 48 carb ratios per day
 
 [Guardrails for Carb Ratios](#guardrails-for-carb-ratios)
 
@@ -144,15 +178,20 @@ Your Carb Ratio is the number of grams of carbohydrates covered by one unit of i
 Your Insulin Sensitivities refer to the drop in glucose expected from one unit of insulin over the full duration of the insulin action time.
 
 * At least one insulin sensitivity must be entered
-* A daily schedule with varying insulin sensitivities at different times of day can be entered using the &plus; sign
-
+    * Use the &plus; sign, picker wheels and then tap "Add"
+    * The method was described in the [Correction Range](#correction-range) section
+* Loop supports 1 to 48 insulin sensitivities per day
 
 [Guardrails for Insulin Sensitivities](#guardrails-for-insulin-sensitivities)
 
 
 ## Guardrails for Settings
 
-Loop has guardrails for Therapy Settings, provided for reference below.
+Loop has guardrails for Therapy Settings.
+
+* The limits in the code are provided for reference below
+    * The tables list from left to right: the lower limit, min recommended, max recommended and upper limit values for that guardrail.
+* The limits for some settings can be altered by one or more therapy setting you have selected
 
 !!! tip "Experienced Loopers"
     The guardrails for each therapy setting used by Loop can be modified with [Code Customization](../build/code_customization.md).
@@ -163,8 +202,6 @@ The font color in the value picker has the following meaning:
 * **yellow**: value is outside the range "typical" for Loopers
     * It is fine to choose yellow values - sometimes that's a good choice for a new Looper
 * **red**: value is minimum or maximum limit of the range "allowed by Loop"
-
-When a table is provided for guardrails, it lists from left to right: the lower limit, min recommended, max recommended and upper limit values for that guardrail.
 
 !!! question "Mobile Device"
     * On a mobile device, you may need to scroll the table left to right to see all four values.
@@ -177,7 +214,12 @@ When a table is provided for guardrails, it lists from left to right: the lower 
 | mg/dL | 67 | 74 | 80 | 110 |
 | mmol/L | 3.7 | 4.2 | 4.4 | 6.0 |
 
-* Top value available on the picker can be limited by code constraint, your Correction Range and your Pre-Meal Range
+!!! info "Glucose Safety Limit Info"
+    Top value available on the picker limited by lowest of:
+
+    * code constraint
+    * your Correction Range
+    * your Pre-Meal Range
 
 #### Guardrails for Correction Range
 
@@ -186,7 +228,11 @@ When a table is provided for guardrails, it lists from left to right: the lower 
 | mg/dL | 87 | 100 | 115 | 180 |
 | mmol/L | 4.8 | 5.6 | 6.3 | 10.0 |
 
-* Bottom value available on the picker can be limited by code constraint AND your selected Glucose Safety Limit
+!!! info "Correction Range Info"
+    Bottom value available on the picker limited by highest of:
+
+    * code constraint
+    * your Glucose Safety Limit
 
 #### Guardrails for Pre-Meal Range
 
@@ -195,8 +241,11 @@ When a table is provided for guardrails, it lists from left to right: the lower 
 | mg/dL | n/a | safety | 106 | 130 |
 | mmol/L | n/a | safety | 5.9 | 7.2 |
 
-* Bottom value available on the picker is limited by your selected Glucose Safety Limit (safety) in the table above.
+!!! info "Pre-Meal Range Info"
+    Bottom value available on the picker limited by highest of:
 
+    * code constraint
+    * your Glucose Safety Limit
 
 #### Guardrails for Basal Rates
 
