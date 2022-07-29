@@ -2,7 +2,9 @@
 
 During [Onboarding](onboarding.md#therapy-settings-onboarding), all your therapy settings were entered.
 
-After onboarding, therapy Settings screen is reached by going through the Loop Settings screen after a [pump](settings.md#add-pump-for-therapy-settings) has been added.
+After onboarding, the Therapy Settings screen is reached by going through the Loop Settings screen **after** a [pump](settings.md#add-pump-for-therapy-settings) has been added.
+
+When building Loop 3 over Loop 2.2.x, the existing values from Loop 2.2.x are kept where possible and presented to the user as the "default" value when moving through each screen.
 
 This page provides more details about each Therapy Settings.
 
@@ -12,7 +14,7 @@ All the settings configured under Therapy Settings are protected by the same aut
 
 ## Details for Therapy Settings
 
-Loop 3 has Guardrails for each of therapy Settings. These are grouped in the [Guardrails for Settings](#guardrails-for-settings) section of this page.
+Loop 3 has Guardrails for each Therapy Settings. These are grouped in the [Guardrails for Settings](#guardrails-for-settings) section of this page.
 
 !!! tip "New Loopers"
     New Loopers may prefer settings that show up outside the "typical" range.
@@ -30,11 +32,11 @@ Loop 3 has Guardrails for each of therapy Settings. These are grouped in the [Gu
 #### Screens Displayed
 
 !!! abstract ""
-    Some screens displayed on this page were acquired during [Onboarding](onboarding.md#therapy-settings-onboarding) and show the full information screens available in the app with the `Continue` button.
-
-    When you return to therapy Settings after you have onboarded and added a pump, the information screens are shown when you touch the information icon, &#9432;, on the entry screen.
+    Some screens displayed on this page were acquired during [Onboarding](onboarding.md#therapy-settings-onboarding).
     
-    When onboarding, the button to save a therapy setting is labeled "Confirm Setting". Otherwise, the button to save a therapy settings is labeled "Save".
+    * When saving a Therapy Setting
+        * During Onboarding, the button is labeled "Confirm Setting"
+        * Otherwise, the button is labeled "Save".
 
 ### Glucose Safety Limit
 
@@ -164,8 +166,9 @@ This setting must be entered during onboarding regardless of the type of insulin
 Your Carb Ratio is the number of grams of carbohydrates covered by one unit of insulin.
 
 * At least one carb ratio must be entered
-* A daily schedule with varying carb ratio at different times of day can be entered using the &plus; sign
-
+    * Use the &plus; sign, picker wheels and then tap "Add"
+    * The method was described in the [Correction Range](#correction-range) section
+* Loop supports 1 to 48 carb ratios per day
 
 [Guardrails for Carb Ratios](#guardrails-for-carb-ratios)
 
@@ -175,8 +178,9 @@ Your Carb Ratio is the number of grams of carbohydrates covered by one unit of i
 Your Insulin Sensitivities refer to the drop in glucose expected from one unit of insulin over the full duration of the insulin action time.
 
 * At least one insulin sensitivity must be entered
-* A daily schedule with varying insulin sensitivities at different times of day can be entered using the &plus; sign
-
+    * Use the &plus; sign, picker wheels and then tap "Add"
+    * The method was described in the [Correction Range](#correction-range) section
+* Loop supports 1 to 48 insulin sensitivities per day
 
 [Guardrails for Insulin Sensitivities](#guardrails-for-insulin-sensitivities)
 
