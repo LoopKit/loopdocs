@@ -1,20 +1,4 @@
-# General Loop FAQs
-
-## What is Loop?
-
-If you have never used Loop, click on links below for an introduction. After you're done with that information, click on your browser back button to return to this location. (On the phone, the YouTube video may open in a different window.)
-
-[LoopDocs Home Page Introduction](../index.md#introduction)
-
-!!! warning "Classic Video"
-    * This "classic" Katie DiSimone video [Introduction to Loop Video](https://youtu.be/qw_u1lqboCs) was created before the Omnipod version of Loop was released in April 2019 - so yes you can definitely use Omnipod Eros pumps
-    * The menus have been rearranged slightly but the overall concept of how to use Loop is demonstrated in this video
-    * The workout target shown in the video has been completely reworked as Overrides
-
-!!! success "New Video"
-    * This newer [What is Loop](https://youtu.be/64qhgnmkyAE) video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) was created by the Loop and Learn Team
-    * Special thanks to Tina and Reese Hammer for the terrific video
-    * Special thanks to Matthew Fouse for the generous use of his beautiful graphics
+# Loop FAQs
 
 ## What do I need to Loop?
 
