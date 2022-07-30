@@ -24,7 +24,7 @@ And yes - we do know how to count, but step 7 is no longer required and we didn'
 
 Next, read the pages completely for Steps 1 through 14 and skim [Oh dear! Build errors?](build_errors.md). Most of the mistakes you can make when building have already been made. The Build Errors page shows how to fix them. You don't need to understand this page - just know that it exists.
 
-When you are ready to proceed, complete the tasks on each page.  You can do one a day, take a week per step or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help - click on this link for [Finding Help](../index.md#finding-help).
+When you are ready to proceed, complete the tasks on each page.  You can do one a day, take a week per step or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help: [Finding Help](../index.md#finding-help).
 
 !!! example "Take it one step at a time..."
 
@@ -36,13 +36,10 @@ To summarize our recommendation:
 1. Read each page for Steps 1 - 14 and skim Build Errors
 1. Complete the tasks on each page
 
-## Introduction to Loop Video
+## What if I get stuck?
 
-If you have never used Loop, click on links below for an introduction.
+Try to:
 
-!!! success "Loop Video"
-    * This [What is Loop](https://youtu.be/64qhgnmkyAE) video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) was created by the Loop and Learn Team
-    * Special thanks to Tina and Reese Hammer for the terrific video
-    * Special thanks to Matthew Fouse for the generous use of his beautiful graphics
-
-
+* Scroll back in the directions and see if you missed a paragraph or step.
+* Compare your screen's display with the graphics in the step. Is something different or does yours have an error message? If you have an error message, does it guide you to the problem and solution?
+* If you are still stumped - reach out for help: [Finding Help](../index.md#finding-help).
