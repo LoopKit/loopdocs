@@ -133,12 +133,37 @@ The graphic below shows the screen provided when you tap on the Support row at t
 ![settings support screen](img/loop-3-setting-support.svg){width="250"}
 {align="center"}
 
-### Issue a Loop Report
+### `Issue Report`
 
-Tapping on the Issue Report row, on the graphic above, creates a Loop Report text file with a lot of useful information for the developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to send it to yourself.
+Tap on the `Issue Report` row, on the graphic above, to create a Loop Report text file with a lot of useful information for the mentors or developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to send it to yourself.
 
-It's a good idea to use the Issue Report button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
+!!! note "Issue vs `Issue Report`"
+    Be aware:
+    
+    * Issue (on github) is used to report code problems
+    * `Issue Report` is an action in Loop app to provide information you may need when [Finding Help](../index.md#finding-help)
 
-The next two rows need to be explained - TO DO.
+It's a good idea to use the `Issue Report` button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
 
-The last row creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting.
+### Submit Bug Report
+
+Tap on the `Submit Bug Report` row to bring up one of the two views shown in the graphic below.  The left view is if you do not have a github account (or the phone is not signed in to your account). The right view is if your github credentials are available.
+
+In either case, the first action should be to add a term or phrase to the search box (red rectangle) to see if your issue has already been reported and to read the status if it has been reported.  Please refer to the [GitHub Issues](../troubleshooting/overview.md#github-issues) section for more information.
+
+![settings support screen when submitting a bug report](img/loop-3-setting-support-bug.svg){width="500"}
+{align="center"}
+
+!!! warning "Not for Build or Settings Help"
+    Submit Bug Report should be used when you believe there is an error in the code.
+
+    * Use [Finding Help](../index.md#finding-help) instead for these cases:
+        * Trouble building
+        * Trouble pairing a pod
+        * Trouble with red loops
+        * RileyLink is not working
+        * Trouble adjusting your settings
+
+### Export Critical Event Logs
+
+The last row creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting. Once the compressed file is created, you can then send it to yourself and later share it with the developers if they request it.  You can always discard these if you resolve the problem on your own.
