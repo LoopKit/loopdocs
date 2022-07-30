@@ -1,4 +1,5 @@
 *[Activated]: for Omnipod: time at which insulin was injected into pod and 2 beeps were heard
+*[Anchor Links]: any header on a LoopDocs page can be used as a link, tap on the paragraphy symbol at the end of the header to view the link in the URL
 *[API_SECRET]: password (min 12 characters) needed to access Nightscout Site
 *[BAGE]: pump battery age on Nightscout site
 *[Big Sur]: older version for operating system for Mac, macOS 11.x
@@ -29,6 +30,7 @@
 *[Glucose Chart]: Display of measured and predicted glucose values
 *[Glucose Safety Limit]: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit
 *[Guardrails]: limits in the code for user selected settings, recommended and absolute limits are provided
+*[Hamburger Menu]: three parallel lines that, when tapped, open a new menu
 *[HUD]: Heads-Up Display at top of Loop main screen, phone in portrait mode
 *[ICE]: Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose
 *[IOB]: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
@@ -59,6 +61,7 @@
 *[Rosetta]: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 chips)
 *[SAGE]: sensor age on Nightscout site
 *[submodules]: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
+*[Table of Contents]: for the LoopDocs website, the TOC is the list of level 2 and 3 headers. The name of the page is a level 1 header.
 *[Terminal]: interface for entering commands to the computer
 *[Therapy Settings]: Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits
 *[Tokens]: on Nightscout, configure access permissions using tokens

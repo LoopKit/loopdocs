@@ -9,6 +9,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Activated**: for Omnipod: time at which insulin was injected into pod and 2 beeps were heard
 
+**Anchor Links**: any header on a LoopDocs page can be used as a link, tap on the paragraphy symbol at the end of the header to view the link in the URL
+
 **API_SECRET**: password (min 12 characters) needed to access Nightscout Site
 
 **BAGE**: pump battery age on Nightscout site
@@ -69,6 +71,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Guardrails**: limits in the code for user selected settings, recommended and absolute limits are provided
 
+**Hamburger Menu**: three parallel lines that, when tapped, open a new menu
+
 **HUD**: Heads-Up Display at top of Loop main screen, phone in portrait mode
 
 **ICE**: Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose
@@ -128,6 +132,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **SAGE**: sensor age on Nightscout site
 
 **submodules**: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
+
+**Table of Contents**: for the LoopDocs website, the TOC is the list of level 2 and 3 headers. The name of the page is a level 1 header.
 
 **Terminal**: interface for entering commands to the computer
 
