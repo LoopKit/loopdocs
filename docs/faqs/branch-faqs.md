@@ -6,6 +6,21 @@ Because the Omnipod DASH is actively being testing in the dev branch, there is p
 
 Please read this entire page before using any version of Loop other than the released code.
 
+## Repositories and Code
+
+If you're a developer looking for direct links to the code and documentation in Github:
+
+* [Loop](https://github.com/LoopKit/Loop) 
+* [LoopDocs](https://github.com/LoopKit/Loopdocs)
+
+For more information on how to contribute code to the project, please review:
+
+  * [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+  * Review the Loop [LICENSE](https://github.com/LoopKit/Loop/blob/master/LICENSE.md)
+  * Review the Loop [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md)
+
+If you want to contribute code improvements, please join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels. Meet the developers and testers who make this app, and learn about what is coming next.
+
 ## What are branches?
 
 There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.

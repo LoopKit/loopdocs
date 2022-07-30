@@ -195,14 +195,6 @@ The GIF below shows:
     * Still don't see your phone - reboot the phone - and if that doesn't work - reboot the computer
     * Still don't see your phone - try a different cable or USB slot
 
-!!! question "Can I Build to a Simulator?"
-    * You can build to a simulator instead of your phone.
-    * Simply choose one of the iOS Simulators and build
-    * A simulated phone appears on your computer and you can interact with the app on that Simulator
-    * With a simulator, you do not need to sign targets:
-        * You must select Loop (Workspace)
-        * Then you can click on the "play" button in the upper left pane of Xcode to build to the simulator
-
 
 !!! warning "Most Common Mistake"
 
@@ -212,6 +204,19 @@ The GIF below shows:
 
 ![img/your_device.png](img/your_device.png){width="650"}
 {align="center"}
+
+### Build to a Simulator
+
+Skip this section if building to a phone and proceed to [Signing](#select-signing-capabilities-tab).
+
+If you want to build to a simulator, you can skip most of the rest of this page.
+
+* Simply choose one of the iOS Simulators instead of a phone and build
+* With a simulator, you do not need to sign targets:
+    * You must select Loop (Workspace)
+    * Then you can click on the "play" button in the upper left pane of Xcode to build to the simulator
+    * Skip ahead to [Build Loop](#build-loop) and ignore all the instructions about signing the app and warnings about code sign messages
+* After a successful build, a simulated phone appears on your computer and you can interact with the app on that simulated phone
 
 ### Select Signing & Capabilities Tab
 

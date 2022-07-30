@@ -64,7 +64,11 @@ plugins:
 
 nav:
 - Home: 'index.md'
-- Build App:
+- Intro:
+    - 'Intro Overview': 'intro/overview-intro.md'
+    - 'LoopDocs Intro': 'intro/intro-to-loopdocs.md'
+    - 'LoopDocs How-to': 'intro/loopdocs-how-to.md'
+- Build:
     - 'Build Overview': 'build/overview.md'
     - 'Step 1 Compatible Computer': 'build/step1.md'
     - 'Step 2 Compatible iPhone/iPod touch': 'build/step2.md'
@@ -80,10 +84,8 @@ nav:
     - 'Step 13 Download Loop code': 'build/step13.md'
     - 'Step 14 Build Loop app': 'build/step14.md'
     - 'Oh dear! Build errors?': 'build/build_errors.md'
-    - 'Customize your Loop': 'build/code_customization.md'
     - 'Updating/Rebuilding your Loop': 'build/updating.md'
-    - 'LoopWorkspace': 'build/loopworkspace.md'
-- Set Up App:
+- Set Up:
     - 'Set Up Overview': 'operation/overview.md'
     - 'Step 1: Health Permissions': 'build/health.md'
     - 'Step 2: Add Pump':
@@ -135,6 +137,13 @@ nav:
     - 'Loop 3 Omnipod': loop-3/omnipod.md
     - 'Loop 3 Medtronic': loop-3/medtronic.md
     - 'Loop 3 Features': loop-3/features.md
+- 'Version':
+    - 'Version Overview': 'version/overview-version.md'
+    - 'Customize your Loop': 'build/code_customization.md'
+    - 'Loop Releases': 'faqs/release-faqs.md'
+    - 'Simulator Build': 'version/simulator.md'
+    - 'Loop Development': 'faqs/branch-faqs.md'
+    - 'LoopWorkspace': 'build/loopworkspace.md'
 - Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'
     - 'Brand New NS': 'nightscout/new_user.md'
@@ -143,14 +152,12 @@ nav:
     - 'Remote Overrides': 'nightscout/remote-overrides.md'
     - 'Nightscout Cross Ref': 'nightscout/ns_crossref.md'
 - FAQs:
-    - 'Using This Site FAQs': 'faqs/docs-faqs.md'
-    - 'General Loop FAQs': 'faqs/FAQs.md'
+    - 'FAQs Overview': 'faqs/overview-faqs.md'
+    - 'Safety Tips': 'faqs/safety-faqs.md'
+    - 'Loop FAQs': 'faqs/FAQs.md'
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
-    - 'Loop Releases': 'faqs/release-faqs.md'
-    - 'Loop Development': 'faqs/branch-faqs.md'
+    - 'CGM FAQs': 'faqs/cgm-faqs.md'
     - 'Update/Rebuild Loop FAQs': 'faqs/update-faqs.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
     - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
-    - 'CGM FAQs': 'faqs/cgm-faqs.md'
-    - 'Safety Tips': 'faqs/safety-faqs.md'
     - 'Glossary': 'faqs/glossary.md'
