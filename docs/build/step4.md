@@ -13,7 +13,7 @@
 
 !!! question "FAQs"
 
-    - **"What about Libre sensors?"** You will need to seek out a modified version of Loop (search posts and then ask about "forks" that support your CGM in a [Loop Social Media](../index.md#finding-help) site.)
+    - **"What about Libre sensors?"** You will need to seek out a modified version of Loop (search posts and then ask about "forks" that support your CGM in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site.)
     - **"What about Eversense?"** Eversense's application does not integrate with Apple Health nor has the communications protocols for Eversense been reverse engineered for iOS. Therefore, Eversense is not currently compatible with Loop.
 
 ## Continuous Glucose Monitor (CGM)
@@ -34,7 +34,7 @@ Dexcom G5 and G6 CGM data is transmitted directly to the Dexcom app on your iPho
 
 !!! warning "Loop 3.0 will not support G4"
 
-    The plan is the next version of Loop (currently under test in the dev branch.) will drop support of G4 because it is so far out of date. If this is a problem for current Loop users, please post on your favorite [social media site](../index.md#finding-help).
+    The plan is the next version of Loop (currently under test in the dev branch.) will drop support of G4 because it is so far out of date. If this is a problem for current Loop users, please post on your favorite [social media site](../intro/loopdocs-how-to.md#how-to-find-help).
 
 The Dexcom G4 Share system transmits CGM data from the transmitter to a Dexcom G4 Share Receiver. The receiver, in turn, connects to the Dexcom Share2 app on your iPhone via Bluetooth. The Share2 app uploads CGM data to the Dexcom servers from your phone. For Loop to function without an internet connection, you will need the Dexcom app running on the same device as Loop.
 
@@ -55,7 +55,7 @@ Loop is capable of downloading Dexcom Share data for use in modeling BG. However
 
 ## CGMs Not Natively Supported in Loop
 
-There are other CGM, such as Libre (with BluCon or Miao Miao), Eversense and Medtronic Guardian sensors. Loop does not natively support those CGMs.  If you would like to use one of those alternate CGMs and Loop, you will need to look into third-party integrations to allow Loop to access the blood glucose data. First search for previous posts on the topic and then ask questions in a [Loop Social Media](../index.md#finding-help) site. Currently, there are no solutions for Eversense or Guardian CGM to be used with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone.
+There are other CGM, such as Libre (with BluCon or Miao Miao), Eversense and Medtronic Guardian sensors. Loop does not natively support those CGMs.  If you would like to use one of those alternate CGMs and Loop, you will need to look into third-party integrations to allow Loop to access the blood glucose data. First search for previous posts on the topic and then ask questions in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site. Currently, there are no solutions for Eversense or Guardian CGM to be used with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone.
 
 ## Next Step: Order a RileyLink Compatible Device
 

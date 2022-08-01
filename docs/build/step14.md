@@ -111,7 +111,7 @@ The final terminal messages of a successful download are shown in the next graph
 ![the end of LoopWorkspace download](img/build-select-08.png){width="750"}
 {align="center"}
 
-If an error appears in your terminal window, read the error and tap any key other than 1, followed by return to cancel. Try to fix the error and run the script one more time. Still not working? Reach out for help at your favorite [Loop Social Media](../index.md#finding-help) site.
+If an error appears in your terminal window, read the error and tap any key other than 1, followed by return to cancel. Try to fix the error and run the script one more time. Still not working? Reach out for help at your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site.
 
 ### Download was Successful
 

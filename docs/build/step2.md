@@ -106,7 +106,7 @@ We recommend that updates be installed as soon as the All-Clear is given, becaus
 - Google the instructions for your device if you cannot figure it out
     1. Please configure your phone to automatically download the updates
     1. You should choose to perform the installation of the updates manually
-- Check on your favorite [Loop Social Media](../index.md#finding-help) site to see if a newly released iOS is causing an issue with Loop or your CGM before accepting the update from Apple
+- Check on your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site to see if a newly released iOS is causing an issue with Loop or your CGM before accepting the update from Apple
 - The "All-Clear" or "WAIT there's a problem" is normally posted within a few days
 
 Apple released iOS 15.4 on March 14, 2022.

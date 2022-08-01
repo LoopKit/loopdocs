@@ -157,7 +157,7 @@ This command requests the Pod emit a beep pattern. If you hear it, you know the 
 
 #### Read Pulse Log
 
-This command reads the pulse log (diagnostic), displays it on the screen and saves the result in the log file. It takes some time, so keep your gear close until command completes. This can be extracted by sending the pulse log to yourself using the send-to icon at the top right of the screen.  It is also included in the Issue Report. If you are having communication issues, you can provide this report to an expert who may be able to provide assistance. [Post](../../index.md#finding-help) for help in either zulipchat or a Facebook group to request assistance and you'll get information about how to get that log file submitted.
+This command reads the pulse log (diagnostic), displays it on the screen and saves the result in the log file. It takes some time, so keep your gear close until command completes. This can be extracted by sending the pulse log to yourself using the send-to icon at the top right of the screen.  It is also included in the Issue Report. If you are having communication issues, you can provide this report to an expert who may be able to provide assistance. [Post](../../intro/loopdocs-how-to.md#how-to-find-help) for help in either zulipchat or a Facebook group to request assistance and you'll get information about how to get that log file submitted.
 
 #### Test Command
 

@@ -109,7 +109,7 @@ Dexcom Non-US Share:
 
 * Dexcom Share URL for non-US users has been fixed.
 
-For community support, please use one of the [Loop Social Media](../index.md#finding-help) help sites.
+For community support, please use one of the [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) help sites.
 
 
 ### Loop v2.2.4

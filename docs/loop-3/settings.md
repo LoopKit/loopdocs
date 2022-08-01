@@ -141,7 +141,7 @@ Tap on the `Issue Report` row, on the graphic above, to create a Loop Report tex
     Be aware:
     
     * Issue (on github) is used to report code problems
-    * `Issue Report` is an action in Loop app to provide information you may need when [Finding Help](../index.md#finding-help)
+    * `Issue Report` is an action in Loop app to provide information you may need when [Finding Help](../intro/loopdocs-how-to.md#how-to-find-help)
 
 It's a good idea to use the `Issue Report` button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
 
@@ -157,7 +157,7 @@ In either case, the first action should be to add a term or phrase to the search
 !!! warning "Not for Build or Settings Help"
     Submit Bug Report should be used when you believe there is an error in the code.
 
-    * Use [Finding Help](../index.md#finding-help) instead for these cases:
+    * Use [Finding Help](../intro/loopdocs-how-to.md#how-to-find-help) instead for these cases:
         * Trouble building
         * Trouble pairing a pod
         * Trouble with red loops

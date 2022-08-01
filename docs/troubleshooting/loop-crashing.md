@@ -42,4 +42,4 @@ Remember that switching from free to paid changes the developer name incorporate
 
 ## Other reasons
 
-If you experience a crash for any other reason, please gather all the information you can about what was happening before the crash and report it to your favorite [Loop Social Media](../index.md#finding-help) help site - you will need to get some personalized help. Please - choose one site for your post and wait for someone to get back to you.  While you are waiting, search on any of the sites and, if on Facebook, read all the announcements.
+If you experience a crash for any other reason, please gather all the information you can about what was happening before the crash and report it to your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) help site - you will need to get some personalized help. Please - choose one site for your post and wait for someone to get back to you.  While you are waiting, search on any of the sites and, if on Facebook, read all the announcements.
