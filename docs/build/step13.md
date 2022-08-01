@@ -18,7 +18,7 @@
     - **What do I do if there is a major release (by Apple) of new iOS?** The short answer is wait a bit:
         * It's a good idea to be prepared to rebuild before updating your phone to the new iOS
         * This is even more important when there has been a major change to iOS or Xcode
-        * Check with the experts - there will be announcements in all the [Loop Social Media](../index.md#finding-help) sites
+        * Check with the experts - there will be announcements in all the [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) sites
     - **How often to I have to rebuild?**
         1. You must build when your app expires (one year paid, one week free)
         1. It is recommended you rebuild more frequently to avoid panic when your app is about to expire as explained in [Updating FAQs](../faqs/update-faqs.md)

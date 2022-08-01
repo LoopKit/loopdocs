@@ -89,7 +89,7 @@ You may also notice that the Dexcom numbers get smoothed out. For example, the D
 
 In Loop 2.2.x, if you set Apple Health app permissions to allow it, Loop will read carbohydrates from the Health app. If you give a third-party app permission to store carbohydrate data in Health, and do not realize that Loop reads that information, you might get unexpected insulin delivery based off those carbs. To avoid that unanticipated behavior, the directions tell you to set permissions to allow Loop to write to carbohydrate storage but not read.
 
-In Loop 3, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up special parameters when you build the app. The insructions for the code customization are not in LoopDocs yet. If it is important to you to use a third-party app to record carbohydrates and have Loop read the information and automatically dose with insulin, [ask for help in zulipchat](../index.md#finding-help).
+In Loop 3, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up special parameters when you build the app. The insructions for the code customization are not in LoopDocs yet. If it is important to you to use a third-party app to record carbohydrates and have Loop read the information and automatically dose with insulin, [ask for help in zulipchat](../intro/loopdocs-how-to.md#how-to-find-help).
 
 ### Insulin and Apple HealthKit
 

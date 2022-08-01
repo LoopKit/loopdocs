@@ -304,7 +304,7 @@ abs(accumulatedRotation)
 
 ### Loop 3 Digital Crown Adjustments
 
-These are new instructions and the user should take care - and please [report back](../index.md#finding-help) if you have problems.
+These are new instructions and the user should take care - and please [report back](../intro/loopdocs-how-to.md#how-to-find-help) if you have problems.
 
 First - try it with no customization. Then make small changes.
 
