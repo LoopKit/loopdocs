@@ -65,8 +65,7 @@ plugins:
 nav:
 - Home: 'index.md'
 - Intro:
-    - 'Intro Overview': 'intro/overview-intro.md'
-    - 'LoopDocs Intro': 'intro/intro-to-loopdocs.md'
+    - 'LoopDocs Overview': 'intro/overview-intro.md'
     - 'LoopDocs How-to': 'intro/loopdocs-how-to.md'
 - Build:
     - 'Build Overview': 'build/overview.md'
