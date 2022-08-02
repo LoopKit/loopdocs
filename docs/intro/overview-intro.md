@@ -40,11 +40,11 @@ You can build Loop and practice with a simulated phone, CGM and  pump. You can "
 
 Trying it with a simulator can help you decide if you want to move forward with purchasing the hardware and Apple Developers license each year for Loop.
 
-Note - you will need to have access to a computer as an absolute minimum. Please review [SImulator Build](../version/simulator.md) for more information.
+Note - you will need to have access to a computer as an absolute minimum. Please review [Simulator Build](../version/simulator.md) for more information.
 
 ## Using Loop
 
 A significant amount of content is provided on this website and via link to other sources. Please review these pages when initially setting up and learning to use Loop.
 
-Some techniques are specific to Loop, but the general concepts of how man-made insulin works and stategies to test basal, carb ratios and insulin sensitivity apply to all the hybrid closed-loop systems, commercial and open source.
+Some techniques are specific to Loop, but the general concepts of how man-made insulin works and strategies to test basal, carb ratios and insulin sensitivity apply to all the hybrid closed-loop systems, commercial and open source.
 
