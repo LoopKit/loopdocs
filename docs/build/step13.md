@@ -1,60 +1,4 @@
-# Step 13: Download Loop Code
-
-!!! info "Time Estimate"
-    - 10 minutes to read this page
-    - Wait until Step 14 to download Released Loop code (New Workspace Method)
-
-!!! abstract "Summary"
-    - **All Loopers:** Loop can only be built with the Workspace Build method
-        - To make it easy, there's a script for you to use
-    - **New Loopers:** Review this page until told to go to Step 14
-    - **Repeat Builders:** Optional information for the curious
-    - **Advanced Users:** Read all of Step 13
-
-!!! question "FAQs"
-    - **When do I need to download new Loop code?** You need new code before you build
-    - **What if I want to get a new feature in my copy of Loop?** Start at [Updating](updating.md)
-    - **How do I find out about new features?** Please see [Loop Release FAQs](../faqs/release-faqs.md)
-    - **What do I do if there is a major release (by Apple) of new iOS?** The short answer is wait a bit:
-        * It's a good idea to be prepared to rebuild before updating your phone to the new iOS
-        * This is even more important when there has been a major change to iOS or Xcode
-        * Check with the experts - there will be announcements in all the [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) sites
-    - **How often to I have to rebuild?**
-        1. You must build when your app expires (one year paid, one week free)
-        1. It is recommended you rebuild more frequently to avoid panic when your app is about to expire as explained in [Updating FAQs](../faqs/update-faqs.md)
-
-## New Loopers
-
-You will do the download in the next step.
-
-For those who are new to Loop, never built Loop or can't remember anything about the last time you built Loop:
-
-Head to Step 14 to [Build the Loop App](step14.md).
-
-## Repeat Builders
-
-In you haven't built in a while, but have been using Loop for a long time:
-
-* The method to build Loop changed with the advent of Xcode 13 (Sept 2021).
-* Loop must be built with a workspace build as explained in Step 14 [Build the Loop App](step14.md).
-* The Dosing Strategy of Automatic Bolus or Temp Basal Only is in the released version of Loop (Aug 2021)
-    * You do not need a special branch to get this feature
-
-
-## Advanced Users Only
-
-!!! abstract "About this Section"
-
-    If you are an advanced user who wants to build the development branch - this section is for you.
-
-    Everyone else - head to Step 14 to [Build](step14.md) the released version of the Loop App.
-
-!!! warning "Important"
-
-    * When you clone a fresh copy, you must use a directory that does not already have a folder called LoopWorkspace in it.
-    * As of June 24, 2022, a fresh download (or pull) of Loop-dev no longer requires carthage
-
-Yes - this section is "out-of-place", but the Step 14 Build Loop App page is already very long and complicated. If you can build Loop-dev, you can find this section.
+# Advanced Users Only
 
 **Only build the dev branch if you're a developer/experienced user**
 
@@ -67,55 +11,105 @@ Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-go
 - The dev branch Loop user interface is updated - as an experienced Looper, you will notice the difference
 - Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs
 
-### Downloading Loop-dev
+The development branch supports Omnipod DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to build select) is provided.
 
-* Review the instructions here: [LoopWorkspace README](https://github.com/LoopKit/LoopWorkspace#readme) 
+### Download Loop-dev
 
-* Use finder to create a new folder, typically in Downloads
-    - Navigate to Downloads
-    - Best practice - create a new folder called Loop-dev_YYMMDD where you replace YYMMDD with today's date.
-    - Hold down the control key and click on that folder to open a menu
-    - Select (near the bottom) New Terminal at Folder
+This page assumes experience with using the Build-Select script in [Build Step 14](step14.md).
 
-* Copy and paste the lines below into that terminal window
-* There cannot already be a folder called LoopWorkspace at this location - see best practice in list above
+* A new script has been prepared to assist building the development branch for Loop and FreeAPS
+* This script downloads the development branch and then selects a specific commit that has been lightly tested
 
+This is still code under development, so please pay attention.
+
+The commit is identified by a 7-digit alphanumeric code.  That code is included in the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes.
+
+When you run the script, the instructions inform you of the date and commit that will be built.
+
+Copy the Block of Text below by hovering over the button on the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
+
+Block of Text
+
+```title="Copy and Paste to start the script to build a specific commit"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopFixedDev.sh)"
 ```
-git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
-cd LoopWorkspace
-xed .
-```
 
-These three lines will download the code and open Xcode. Be sure to select LoopWorkspace and your phone.
+Paste the Block of Text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.)
 
-### Signing Loop-dev
+Read the screen (shown below).  Type 1 and return if you understand the warning and agree.
 
-If you choose to sign manually instead of using the new capability (next paragraph), you must sign 6 targets (add these 2 to the usual 4)
+![paste the script line into terminal - agree to warning](img/build-select-01.png){width="700"}
+{align="center"}
 
-* Loop Intent Extension
-* Learn
+* Please read what is on the screen as you progress.
+* Adjust font size as directed if you have difficulty seeing the directions.
 
-With Loop-dev, the signing of targets can be done by editing a single file:
+You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.
 
-* Edit the LoopConfigOverride.xcconfig file (you can do this in Xcode)
-* The next to last line says `// Put your team id here for signing`
-* The last line starts with two slashes `//` – remove those
-* Replace the ID to the right of the equal sign with your Apple Developer ID
-* Apple Developer Team ID can be found for your account (after you sign in) at:
-    * [https://developer.apple.com/account/#!/membership](https://developer.apple.com/account/#!/membership)
+The next graphic warns you about building a development branch. The date and commit number in the script might not match the graphic below. The values in the script will be updated at appropriate times.
 
-!!! warning "Loop.xcodeproj/project.pbxproj"
+![message about development branch commit](img/build-select-dev.svg){width="750"}
+{align="center"}
 
-    If you manually sign any of the targets, for example as an alternative way to get your Developer ID, the file in the Loop folder called `Loop.xcodeproj/project.pbxproj` is automatically modified to use that target name.
+Continue following directions with the script.
 
-    Once that happens, the feature that enables Xcode to use the `LOOP_DEVELOPMENT_TEAM` keyword in the LoopConfigOverride.xcconfig is no longer available.
+After the cloning step, the specific commit will be "checked out". Verify there are no errors and proceed.
 
-    To restore that capability, navigate in the terminal to the LoopWorkspace/Loop folder and issue this command:
+### Signing Targets
 
-    ```
-    git restore Loop.xcodeproj/project.pbxproj
-    ```
+The script helps you configure a permanent file used by Xcode to automatically sign all your targets.
 
+* The first time you use the script, it helps you set up the file used by Xcode to sign targets
+* Once the permanent file is created, you can review it each time you run use a script, but should not need to change it
+
+#### Create Permanent LoopConfigOverride.xcconfig
+
+The following graphics show the messages for the first time the script is used on your computer.
+
+If you see a message that starts with "The file used by Xcode to sign your app . . .", then skip ahead to [Use Permanent LoopConfigOverride.xcconfig](#use-permanent-loopconfigoverridexcconfig). You've already configured your file.
+
+
+* Graphic 1 below shows:
+    - User types 1 to use Apple Developer ID
+    - User reads instructions for getting Team ID from the Membership page
+       - The developer.apple.com web page is opened automatically when user is ready
+    - User obtains ID
+    - User enters ID in terminal
+
+!!! note "Use Your Team ID"
+    The Team ID entered in the graphics below is bogus - the script only checks that the entry is 10 characters long.
+
+    Please follow directions and use your actual Apple Developer ID (the Team ID on the Membership page).
+
+![messages for configuring the override file first time through](img/build-dev-b-01.svg){width="750"}
+{align="center"}
+
+#### First Use of Script, continued:
+
+* Graphic 2 below shows:
+    - The permanent file is automatically created
+    - User is given an opportunity to review the file information
+
+![messages for configuring the override file first time through](img/build-dev-b-02.svg){width="750"}
+{align="center"}
+
+User is then shown the [Final Messages](#final-messages)
+
+#### Use Permanent LoopConfigOverride.xcconfig
+
+* Graphic 3 below shows:
+    - The permanent file is detected, user gets a chance to review it
+
+![messages for using the override file for subsequent use](img/build-dev-b-03.svg){width="750"}
+{align="center"}
+
+#### Final Messages
+
+* Graphic 2 and 3 above showed:
+    * The user is always told which web pages will be opened and that Xcode will be opened
+    * Then they must hit return when they are done reading
+
+At this point the normal build steps continue, but the user does not need to sign the targets.
 
 #### Loop-dev with Free Account
 
@@ -130,12 +124,11 @@ Note - if you know your Personal Team ID, you can enter it as directed in [Signi
     * Examine the file and find the line that starts with `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
     * Insert the new keyword (separated by a space) anywhere after `$(inherited)` and before the slashes near the end of the line
 
-
 ### Build Loop-dev
 
 * There are some package dependencies (new for Loop-dev) that are resolved first and then the indexing takes place
 * If you notice a red x in Xcode (indicating an error) while it is resolving packages and indexing - please follow the steps for [Couldn't Get Revision for Package Dependency](build_errors.md#couldnt-get-revision-for-package-dependency)
-* Once the packages are resolved and the indexing has started, you can build the app following the directions in the "Build Loop" section on the next page: [Step 14: Build Loop App: Build Loop](step14.md#build-loop).
+* Once the packages are resolved and the indexing has started, you can build the app following the directions in the "Build Loop" section on [Step 14: Build Loop App: Build Loop](step14.md#build-loop).
 
 We suggest reading the tips below on keeping Loop-dev updated. Checking for updates every week is a good idea.  Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
 
@@ -143,9 +136,24 @@ We suggest reading the tips below on keeping Loop-dev updated. Checking for upda
 
 While Loop-dev is under active test, you will want to update frequently.
 
+You may choose to run the script each time you update. You can discard older versions of the download by using Finder and navigating to Downloads/BuildLoop. Only the most recent copy is required to build loop.
+
+You may prefer to use commands to fetch and pull the latest code without making a new clone. 
+
 * Some users like to use [GitKraken](https://support.gitkraken.com/) to assist them (link takes you to a tutorial video).
-* Some just repeat the cloning.
 * Some are comfortable with the command line git commands described on [here](loopworkspace.md#updating-loop-using-loopworkspace).
+
+### Manual vs Automatic Signing
+
+If you manually sign any of the targets, for example as an alternative way to get your Developer ID, the file in the Loop folder called `Loop.xcodeproj/project.pbxproj` is automatically modified to use that target name.
+
+Once that happens, the feature that enables Xcode to use the `LOOP_DEVELOPMENT_TEAM` keyword in the LoopConfigOverride.xcconfig is no longer available.
+
+To restore that capability, navigate in the terminal to the LoopWorkspace/Loop folder and issue this command:
+
+```
+git restore Loop.xcodeproj/project.pbxproj
+```
 
 
 ### Remove carthage

@@ -22,7 +22,7 @@ Start by clicking through the Build Steps from 1 through 14 and read the top thr
 !!! abstract "Summary"
 !!! question "FAQs"
 
-(Step 7 is no longer required).
+(Step 7 and Step 13 are no longer required).
 
 Next, read Steps 1 through 14 completely and skim [Oh dear! Build errors?](build_errors.md). Most of the mistakes you can make when building have already been made. The Build Errors page shows how to fix them.
 

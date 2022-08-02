@@ -66,6 +66,8 @@ Often, the best answer to your question for help will be answered with a link. P
 
 If you've searched the docs and read the info already, then please include that in your post or your reply. That way you don't get linked back to the same part you're already confused about. And if you have already read the specific section the mentor just linked, be specific about why your problem is not addressed by that link.  Or just say "I'm confused when the doc says this". Letting us know when these docs can be improved is very useful.
 
-## Next Step: Download Loop Code
+## Next Step: Build Loop App
 
-Now you are ready to move onto Step 13 to [Download Loop Code](step13.md).
+Now you are ready to move onto Step 14 to [Build Loop App](step14.md) for the released version of the code. This is the version new Loopers should start with.
+
+What about Step 13? That page has been rewritten for [Advanced Users Only](step13.md) to build and test the development branch that soon will be released as Loop 3.
