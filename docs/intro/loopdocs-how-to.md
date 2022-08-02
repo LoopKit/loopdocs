@@ -6,8 +6,6 @@ LoopDocs has words that may be unfamiliar. For a definition of any word with a d
 
 Every tootip definition is also found in the [Glossary](../faqs/glossary.md) - so head over there if you have trouble reading the tooltips. 
 
-
-
 ## How to Find Help
 
 Volunteers generously provide support for Loop via online platforms. You have a number of options for joining conversations on loop and asking for help.  Links to the main platforms are listed below.  Non-US Loop users in Italy, Australia, and several other countries have also formed Facebook (FB) groups.
@@ -82,7 +80,7 @@ The website navigation depends on whether you are on a mobile device or a comput
 
 ### Website Search
 
-It is not uncommon to have a question about Loop. But, it is exceptionally rare to have the question not already answered in LoopDocs, so please **search for answers** by clicking the Search tool (upper right). As you begin to type, suggested completions and links to pages are displayed. Click on the item you think answers your question.
+It is not uncommon to have a question about Loop. But, it is exceptionally rare to have the question not already answered in LoopDocs, so please **search for answers** by selecting the Search tool (upper right) or typing `s` then a search term at a computer. As you begin to type, suggested completions and links to pages are displayed. Click on the item you think answers your question.
     <br/><br/>![example of using search](../img/new-look-search-example.png){width="600"}<br/>
 
 ## How to Improve LoopDocs
