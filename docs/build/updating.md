@@ -55,6 +55,9 @@ When you see "Loop" is No Longer Available on your phone, the only solution is t
 
     Follow this link, [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used), for instructions to determine what version was used when building the Loop app currently on your phone.
 
+## Build Video
+
+The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to prepare for an update and build Loop Master. We recommend reading the written directions below before (and while) watching the video.
 
 ## Step 1: Install macOS and Xcode updates
 

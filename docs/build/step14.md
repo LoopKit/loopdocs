@@ -21,6 +21,8 @@
 
 The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to build Loop Master. We recommend reading the written directions below before (and while) watching the video.
 
+This video starts with the steps for updating Loop. If this is your first time building, pay attention to what you'll need to do in about a year. The part you'll need to do today (open the terminal to start downloading Loop) is about 3 minutes into the video.
+
 ## Download Loop
 
 This page has the detailed steps to run the Build Select Script to download the Loop code, prepare your computer and build Loop Master.
