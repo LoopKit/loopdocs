@@ -2,15 +2,15 @@
 
 ## What do I need to Loop?
 
-Loop has both hardware and software requirements. In general, to use Loop you need to have seven components.
+To build and Loop you need:
 
+- [Apple computer](../build/step1.md#macos)
+- [Compatible iPhone/iPod Touch](../build/step2.md)
 - Compatible insulin pump: [Medtronic or Omnipod](../build/step3.md)
 - [Compatible CGM](../build/step4.md)
-- [RileyLink Compatible Device](../build/step5.md)
-- [Compatible iPhone/iPod Touch](../build/step2.md)
-- [Apple computer](../build/step1.md#macos)
-- [Xcode (a free Apple application)](../build/step8.md)
+- [RileyLink Compatible Device](../build/step5.md) (unless using Omnipod DASH)
 - [Apple Developer Membership](../build/step6.md)
+- [Xcode](../build/step8.md) (a free Apple application)
 
 ![img/loop_gear.jpg](img/loop_gear.jpg){width="500"}
 {align="center"}
@@ -26,6 +26,8 @@ If you have any questions, use the [Search](../index.md#how-to-use-these-docs) f
 ## Can I use an android phone or iPad for Loop?
 
 No, this is purely iPhone or iPod touch. The iPad does not support Apple Health which is required for Loop.
+
+There is open source software that runs on Android phones, check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
 
 ## Do I have to be "tech-smart" to build Loop?
 
@@ -61,7 +63,7 @@ If you are borrowing an Apple computer, look at the required minimum settings as
 
 ## Can I use a PC or Windows computer to build?
 
-Yes, you can...sort of. There is a hacked way of installing macOS on a Windows computer called "Virtual Machine". [This link](https://macosvmware.tech.blog/) provides some helpful information. This Virtual Machine method will not work on PCs that have AMD processors either, so double check your computer before to confirm you don't have an AMD processor. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) who can assist.
+Yes, you can...sort of. There is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/) provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors either, so double check your computer uses an Intel processor instead of an AMD processor. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) who can assist.
 
 ## How often do I need to get on the computer for Loop?
 
