@@ -2355,15 +2355,15 @@
                 
                 <h1 id="loop-faqs">Loop FAQs<a class="headerlink" href="#loop-faqs" title="Anchor link to this Header on this Page">&para;</a></h1>
 <h2 id="what-do-i-need-to-loop">What do I need to Loop?<a class="headerlink" href="#what-do-i-need-to-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop has both hardware and software requirements. In general, to use Loop you need to have seven components.</p>
+<p>To build and Loop you need:</p>
 <ul>
+<li><a href="../../build/step1/#macos">Apple computer</a></li>
+<li><a href="../../build/step2/">Compatible iPhone/iPod Touch</a></li>
 <li>Compatible insulin pump: <a href="../../build/step3/">Medtronic or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></a></li>
 <li><a href="../../build/step4/">Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a></li>
-<li><a href="../../build/step5/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device</a></li>
-<li><a href="../../build/step2/">Compatible iPhone/iPod Touch</a></li>
-<li><a href="../../build/step1/#macos">Apple computer</a></li>
-<li><a href="../../build/step8/"><abbr title="program used to build an app">Xcode</abbr> (a free Apple application)</a></li>
+<li><a href="../../build/step5/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device</a> (unless using <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH)</li>
 <li><a href="../../build/step6/">Apple Developer Membership</a></li>
+<li><a href="../../build/step8/"><abbr title="program used to build an app">Xcode</abbr></a> (a free Apple application)</li>
 </ul>
 <p align="center"><img alt="img/loop_gear.jpg" src="../img/loop_gear.jpg" width="500" /></p>
 <h2 id="can-i-download-loop-from-the-app-store">Can I download Loop from the App store?<a class="headerlink" href="#can-i-download-loop-from-the-app-store" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2372,6 +2372,7 @@
 <p>If you have any questions, use the <a href="../..#how-to-use-these-docs">Search</a> feature to find topics in LoopDocs.</p>
 <h2 id="can-i-use-an-android-phone-or-ipad-for-loop">Can I use an android phone or iPad for Loop?<a class="headerlink" href="#can-i-use-an-android-phone-or-ipad-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>No, this is purely iPhone or iPod touch. The iPad does not support Apple Health which is required for Loop.</p>
+<p>There is open source software that runs on Android phones, check out <a href="https://androidaps.readthedocs.io/en/latest/">AndroidAPS Documention</a>.</p>
 <h2 id="do-i-have-to-be-tech-smart-to-build-loop">Do I have to be "tech-smart" to build Loop?<a class="headerlink" href="#do-i-have-to-be-tech-smart-to-build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>No. You do not need any experience in code or computers to build Loop. If you have already owned an Apple computer and iPhone, you already have the required level of experience. Beyond that, simply read the directions slowly and diligently...all the information you will need are in these documents.</p>
 <p>Often times the non-tech people do better than the tech people in building Loop. Why? Because the non-tech people take the time to read slowly and look at the screenshots in the directions. The tech people often skim read and miss sentences...which then leads to build errors that have to be retraced and fixed.</p>
@@ -2389,7 +2390,7 @@
 <p>You don't have to own your own Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for <a href="../../build/updating/#when-to-update">updating Loop</a> later, when needed.</p>
 <p>If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone <a href="../../build/step1/#macos">Compatible Computer</a> and <a href="../../build/step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="program used to build an app">Xcode</abbr> Version</a></p>
 <h2 id="can-i-use-a-pc-or-windows-computer-to-build">Can I use a PC or Windows computer to build?<a class="headerlink" href="#can-i-use-a-pc-or-windows-computer-to-build" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Yes, you can...sort of. There is a hacked way of installing <abbr title="operating system for Mac computer">macOS</abbr> on a Windows computer called "Virtual Machine". <a href="https://macosvmware.tech.blog/">This link</a> provides some helpful information. This Virtual Machine method will not work on PCs that have AMD processors either, so double check your computer before to confirm you don't have an AMD processor. If you want to try this, there are mentors on <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a> who can assist.</p>
+<p>Yes, you can...sort of. There is a hacked way of installing <abbr title="operating system for Mac computer">macOS</abbr> on a Windows computer called a <strong>Virtual Machine</strong>. <a href="https://macosvmware.tech.blog/">This link</a> provides some helpful information. This <strong>Virtual Machine</strong> method will not work on PCs that have AMD processors either, so double check your computer uses an Intel processor instead of an AMD processor. If you want to try this, there are mentors on <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a> who can assist.</p>
 <h2 id="how-often-do-i-need-to-get-on-the-computer-for-loop">How often do I need to get on the computer for Loop?<a class="headerlink" href="#how-often-do-i-need-to-get-on-the-computer-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)</p>
 <p>The longer answer is that Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app update yourself with <a href="../../build/updating/">update instructions here</a>. In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.</p>
