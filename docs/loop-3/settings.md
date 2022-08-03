@@ -31,10 +31,12 @@ With every loop cycle - typically every 5 minutes - Loop updates the glucose pre
 * IOB from previous insulin delivery
 * Your [Therapy Settings](therapy-settings.md)
 
-Based on this prediction, Loop calculates a recommended restriction in basal to raise the prediction to target range or a recommended bolus, subject to Delivery Limits, to lower the prediction to target range or allows current basal to continue. The glucose prediction is shown in the [Glucose Chart](displays_v3.md#charts) along with the measured glucose values.
+Based on this prediction, Loop calculates a modification to insulin dosing to bring the user into the desired correction range. This can be a reduction in basal to raise the glucose prediction or a recommended bolus, subject to Delivery Limits, to lower the prediction. The glucose prediction is shown in the [Glucose Chart](displays_v3.md#charts) along with the measured glucose values.
 
 * When in Open Loop, no automated action is taken.
 * When in Closed Loop, automated action is taken based on the selected Dosing Strategy.
+
+If you find this confusing, read how to [Think Like a Loop](https://loopkit.github.io/looptips/how-to/think-like-loop/) on the LoopTips website.
 
 ## Dosing Strategy
 
