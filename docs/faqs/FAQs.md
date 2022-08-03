@@ -2,7 +2,7 @@
 
 ## What do I need to Loop?
 
-To build and Loop you need:
+To build and use Loop you need:
 
 - [Apple computer](../build/step1.md#macos)
 - [Compatible iPhone/iPod Touch](../build/step2.md)
