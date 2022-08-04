@@ -2,7 +2,7 @@
 
 **Only build the dev branch if you're a developer/experienced user**
 
-### About Loop-dev
+## About Loop-dev
 
 Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch.
 
@@ -13,18 +13,18 @@ Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-go
 
 The development branch supports Omnipod DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to build select) is provided.
 
-### Download Loop-dev
+## Download Loop-dev
 
 This page assumes experience with using the Build-Select script in [Build Step 14](step14.md).
 
 * A new script has been prepared to assist building the development branch for Loop and FreeAPS
 * This script downloads the development branch and then selects a specific commit that has been lightly tested
 
-This is still code under development, so please pay attention.
+This is still code under development, so please pay attention to your app and report any unexpected behavior on [Loop Zulipchat](https://loop.zulipchat.com).
 
-The commit is identified by a 7-digit alphanumeric code.  That code is included in the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes.
+The commit is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes.
 
-When you run the script, the instructions inform you of the date and commit that will be built.
+When you run the script, the instructions inform you of the commit that will be built.
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
@@ -44,23 +44,23 @@ Read the screen (shown below).  Type 1 and return if you understand the warning 
 
 You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.
 
-The next graphic warns you about building a development branch. The date and commit number in the script might not match the graphic below. The values in the script will be updated at appropriate times.
+The next graphic warns you about building a development branch. The date and commit number in the script might not match the graphic below. The values in the script will be updated at appropriate times. The date indicates when that commit was added to the branch.
 
-![message about development branch commit](img/build-select-dev.svg){width="750"}
+![message about development branch commit](img/build-select-dev.svg){width="700"}
 {align="center"}
 
-Continue following directions with the script.
+Continue following directions with the script. Review [Build Step 14: Wait for Download to Complete](step14.md#wait-for-download-to-complete) then return to this page if you need more documentation.
 
-After the cloning step, the specific commit will be "checked out". Verify there are no errors and proceed.
+After the download step, the specific commit will be "checked out". Verify there are no errors and proceed.
 
-### Signing Targets
+## Signing Targets
 
 The script helps you configure a permanent file used by Xcode to automatically sign all your targets.
 
 * The first time you use the script, it helps you set up the file used by Xcode to sign targets
-* Once the permanent file is created, you can review it each time you run use a script, but should not need to change it
+* Once the permanent file is created, you can review it each time you run a script, but should not need to change it
 
-#### Create Permanent LoopConfigOverride.xcconfig
+### Create Permanent LoopConfigOverride.xcconfig
 
 The following graphics show the messages for the first time the script is used on your computer.
 
@@ -93,7 +93,7 @@ If you see a message that starts with "The file used by Xcode to sign your app .
 
 User is then shown the [Final Messages](#final-messages)
 
-#### Use Permanent LoopConfigOverride.xcconfig
+### Use Permanent LoopConfigOverride.xcconfig
 
 * Graphic 3 below shows:
     - The permanent file is detected, user gets a chance to review it
@@ -107,13 +107,15 @@ User is then shown the [Final Messages](#final-messages)
     * The user is always told which web pages will be opened and that Xcode will be opened
     * Then they must hit return when they are done reading
 
-At this point the normal build steps continue, but the user does not need to sign the targets.
+With the Loop-dev version, there are fewer build steps because the targets should already be signed.
 
-#### Loop-dev with Free Account
+If you are using a paid Developer ID, skip ahead on this page to [Build Loop](#build-loop).
+
+### Loop-dev with Free Account
 
 Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the [Build Step 14: Free Account](step14.md#free-account) section.
 
-Note - if you know your Personal Team ID, you can enter it as directed in [Signing Targets](#signing-targets) above.
+If you know your Personal Team ID, you can enter it as directed in [Signing Targets](#signing-targets) above.
 
 1. You must remove additional capabilities, the complete list is:
     * **Loop Target:** Push Notifications; Siri and **Time Sensitive Notifications**
@@ -122,26 +124,106 @@ Note - if you know your Personal Team ID, you can enter it as directed in [Signi
     * Examine the file and find the line that starts with `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
     * Insert the new keyword (separated by a space) anywhere after `$(inherited)` and before the slashes near the end of the line
 
-### Build Loop-dev
+## Build Loop
 
-* There are some package dependencies (new for Loop-dev) that are resolved first and then the indexing takes place
-* If you notice a red x in Xcode (indicating an error) while it is resolving packages and indexing - please follow the steps for [Couldn't Get Revision for Package Dependency](build_errors.md#couldnt-get-revision-for-package-dependency)
-* Once the packages are resolved and the indexing has started, you can build the app following the directions in the "Build Loop" section on [Step 14: Build Loop App: Build Loop](step14.md#build-loop).
+The Loop app has already been signed, but there are still a few steps before you can build.
 
-We suggest reading the tips below on keeping Loop-dev updated. Checking for updates every week is a good idea.  Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
+### Initial Xcode Screens
 
-### Update Loop-dev
+If you want to [Customize Loop](../build/code_customization.md), do it before you proceed with the build.
 
-While Loop-dev is under active test, you will want to update frequently.
+Refer to the GIF below:
 
-You may choose to run the script each time you update. You can discard older versions of the download by using Finder and navigating to Downloads/BuildLoop. Only the most recent copy is required to build loop.
+* Frame 1:  Xcode screen opened by the script after a fresh download
+    * The red rectangle indicates where you will change Loop to Loop (Workspace)
+    * The red x in the dashed-blue rectangle region indicates you need to fix a problem before building
+* Frame 2: Inset shows the action needed to select Loop (Workspace)
+* Frame 3: Loop (Workspace) selected but there's a red x in the dashed-blue rectangle region
 
-You may prefer to use commands to fetch and pull the latest code without making a new clone. 
+![gif showing the initial xcode screens following fresh download](img/xcode-build-loop3-a.gif){width="750"}
+{align="center"}
+
+!!! warning "Free Account users"
+    Sorry - the documentation is not updated yet. 
+    
+    Read [Loop-dev with Free Account](#loop-dev-with-free-account) in addition to [Build Step 14: Free Account](step14.md#free-account)
+
+### Package Dependency Error
+
+If there is no red x in the dashed-blue rectange region on your Xcode screen, skip ahead to [Start Build](#start-build) on this page.
+
+Otherwise, tap on the red x in the dashed-blue rectange region:
+
+* If your screen is similar to the figure below, perform the [Fix for Package Dependency](#fix-for-package-dependency) (repeated below - also found on Build Errors page)
+* If you have a different error, search the [Build Error](build_errors.md) page
+
+![gif showing the xcode screens with dependency error](img/xcode-build-loop3-b.svg){width="750"}
+{align="center"}
+
+### Fix for Package Dependency
+
+1. Click on the folder icon (indicated by red square)
+1. Hold down the Control-Key and click the `Package Dependency` row to display the dropdown menu (shown in the inset)
+1. Select Resolve Package Versions from the dropdown menu
+1. Once that completes, the red x should resolve and you can build as soon as the Indexing message appears
+
+![package dependency solution](img/xcode-package-dependency-solution.svg){width="600"}
+
+## Start Build
+
+Refer to the GIF below:
+
+* Frame 1: Package Dependency resolved (no red x)
+    * Xcode is Indexing as seen in dashed-green rectangle region
+        * Indexing makes searching faster; it does not need to complete before building
+    * Click the "Play" button highlighted by red rectangle to start the build
+* Frame 2: Build has started
+    * Xcode is Building as seen in dashed-green rectangle region
+* Frame 3: Build succeeded
+    * App is running as seen in dashed-green rectangle region
+
+At this point, you can unplug your phone and acknowledge the Xcode message: `Lost connection to the debugger on . . .`.  The square icon next to the play button goes away as soon as you unplug your phone from Xcode.
+
+The Loop app on your phone closes (but does not quit) when you unplug the phone. Open the Loop app on your phone just to be sure.
+
+![gif showing the xcode screens when building](img/xcode-build-loop3-c.gif){width="750"}
+{align="center"}
+
+## First Time with Loop-dev
+
+If this is your first build with Loop-dev, please review these pages before you continue:
+
+* First Build on this phone: [Onboarding](../loop-3/onboarding.md)
+* Building Loop-dev over Loop 2.2.x or FreeAPS: [Experienced Looper Onboarding](../loop-3/onboarding.md#experienced-loopers)
+
+!!! danger "New Absorption Times"
+    * Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons
+        * Loop 2.2.x used 2 hours, 3 hours and 4 hours
+    * The 30 minute (candy) time is for rapid acting carbs only
+
+    If you inadvertently select the candy icon for a more complex meal, you may find Loop predicts an unexpectedly low glucose value after Loop thinks those carbs are absorbed (45 minutes after the entry).
+
+    If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.
+
+## Update Loop-dev
+
+While Loop-dev is under active test, you should update frequently.
+
+Checking for updates every week is a good idea.  Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
+
+You may choose to run the script each time you update. You can discard older versions of the download by using Finder and navigating to Downloads/BuildLoop. Only the most recent copy is required to build loop. Do not discard the Downloads/BuildLoop/LoopConfigOverride.xcconfig file - that is used to automatically sign your app so you can build.
+
+You may prefer to use commands to fetch and pull the latest code without making a new clone.
+
+!!! tip "Folder Name"
+    If you decide to update code in the same folder, you should edit the folder name to remove the specific build commit appended by the script. 
+    
+    This is not required but may avoid confusion.
 
 * Some users like to use [GitKraken](https://support.gitkraken.com/) to assist them (link takes you to a tutorial video).
 * Some are comfortable with the command line git commands described on [here](loopworkspace.md#updating-loop-using-loopworkspace).
 
-### Manual vs Automatic Signing
+## Manual vs Automatic Signing
 
 If you manually sign any of the targets, for example as an alternative way to get your Developer ID, the file in the Loop folder called `Loop.xcodeproj/project.pbxproj` is automatically modified to use that target name.
 
@@ -154,7 +236,7 @@ git restore Loop.xcodeproj/project.pbxproj
 ```
 
 
-### Remove carthage
+## Remove carthage
 
 !!! abstract "Completely Optional"
     This section is completely optional.
