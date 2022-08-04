@@ -2378,13 +2378,18 @@ xed .
 </ul>
 <p align="center"><img alt="img/workspace-use.png" src="../img/workspace-use.png" width="750" /></p>
 <h2 id="updating-loop-using-loopworkspace">Updating Loop using LoopWorkspace<a class="headerlink" href="#updating-loop-using-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When it's time to update the copy of LoopWorkspace on your computer - you have choices. A few methods are provided below.</p>
+<p>When it's time to update the copy of LoopWorkspace on your computer - you have choices. You can use the method below or redo the whole cloning process.</p>
 <ol>
+<li>Make sure you are in the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr> using this <abbr title="a tool for version control">git</abbr> command:
+    <div class="highlight"><pre><span></span><code>git branch
+</code></pre></div></li>
+<li>If you are not in the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example <code>dev</code>, then issue this <abbr title="a tool for version control">git</abbr> command (suitably modified for the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr>)
+    <div class="highlight"><pre><span></span><code>git checkout dev
+</code></pre></div></li>
 <li>Use the following <abbr title="a tool for version control">git</abbr> commands in the LoopWorkspace folder of your terminal:
     <div class="highlight"><pre><span></span><code>git fetch
 git pull --recurse
 </code></pre></div></li>
-<li>You can redo the whole cloning process</li>
 </ol>
 <p>If you are testing the LoopKit dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you need to be on <a href="https://loop.zulipchat.com">zulipchat</a> and subscribe to at least the #development and #github streams. (It's a good idea to subscribe to all the streams.) When you see <abbr title="contains project files and each file's revision history">repository</abbr> updates similar to the graphic below, there may also be an announcement in the #development channel that LoopWorkspace is updated and ready to test. If not you can check the commits in LoopWorkspace and see if they've been updated. It's a good idea to wait 24 hours. My procedure is to build dev to my backup phone and then put it on my "real" phone. Otherwise, wait for someone else to do it and give the all-clear in zulipchat.</p>
 <p align="center"><img alt="there has been an update in three submodules" src="../img/zulipchat-github.svg" width="600" /></p>
