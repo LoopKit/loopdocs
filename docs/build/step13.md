@@ -13,6 +13,11 @@ Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-go
 
 The development branch supports Omnipod DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to build select) is provided.
 
+!!! danger "Building Over Master"
+    If you are building dev over Loop master (or FreeAPS), check your correction ranges on your current app before continuing. You must set the bottom of your correction range no lower than 87 mg/dl (4.8 mmol/L) or your new app will crash during onboarding. 
+    
+    If your app crashes during onboarding, [Customize the Code](code_customization.md#modify-the-guardrails) to change the minimum correctionRange value and rebuild to continue.
+
 ## Download Loop-dev
 
 This page assumes experience with using the Build-Select script in [Build Step 14](step14.md).
@@ -196,12 +201,14 @@ If this is your first build with Loop-dev, please review these pages before you 
 * First Build on this phone: [Onboarding](../loop-3/onboarding.md)
 * Building Loop-dev over Loop 2.2.x or FreeAPS: [Experienced Looper Onboarding](../loop-3/onboarding.md#experienced-loopers)
 
-!!! danger "New Absorption Times"
+!!! warning "New Absorption Times"
+    Loop considers carbs as no longer expected to raise glucose when 1.5 times the indicated absorption time has elapsed.
+
     * Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons
         * Loop 2.2.x used 2 hours, 3 hours and 4 hours
     * The 30 minute (candy) time is for rapid acting carbs only
 
-    If you inadvertently select the candy icon for a more complex meal, you may find Loop predicts an unexpectedly low glucose value after Loop thinks those carbs are absorbed (45 minutes after the entry).
+    If you inadvertently select the candy icon for a more complex meal, you may find Loop predicts an unexpectedly low glucose as the fast rise in blood glucose fails to materialize and Loop is no longer considering those carbs as active.
 
     If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.
 
