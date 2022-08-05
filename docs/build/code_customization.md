@@ -238,12 +238,13 @@ This code change is found in one location for Eros Pods (called Omnipod througho
 let cannulaInsertionUnitsExtra
 ```
 
-* Eros Pod (ones that require a RileyLink compatible device)
+* Loop 2.2.x: Eros Pod (ones that require a RileyLink compatible device)
     * Folder: rileylink_ios/OmniKit/Model
-    * File: Pod.swift, Line 72 (Loop 2.2.x) or 78 (Loop 3)
-* DASH Pod (Loop 3 only)
-    * Folder: OmniBLE/OmniBLE/OmnipodCommon
-    * File: Pod.swift, Line 82
+    * File: Pod.swift, Line 72 (Loop 2.2.x)
+* Eros or DASH Pod (Loop 3 only)
+    * Folder: rileylink_ios/OmniKit/OmnipodCommon (Eros)
+    * Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)
+    * File: Pod.swift, Line 87 (Eros); Line 82 (DASH)
 
 _Code Before Modification_
 
@@ -252,6 +253,58 @@ _Code Before Modification_
 _Code After Modification to add 0.35 U_
 
     public static let cannulaInsertionUnitsExtra = 0.35 // edit to add a fixed additional amount of insulin during cannula insertion
+
+## Modify the Guardrails
+
+The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-settings) are for Loop 3 (Loop-dev) only.
+
+If you build Loop-dev over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app will crash when you try to onboard.
+
+The solution (until this is fixed) is to lower the minimum value to be at or below the value you have currently set.  Rebuild the app with the modified settings and you should be able to continue the onboarding process.
+
+
+``` title="Key_Phrase"
+Guardrail(absoluteBounds:
+```
+
+* Loop 3 only
+    * Folder: LoopKit/Extensions
+    * File: Guardrail+Settings.swift
+    * Line: 12 for suspendThreshold
+    * Line: 26 for correctionRange
+
+_Code Before Modification_
+
+    static let suspendThreshold = Guardrail(absoluteBounds: 67...110, recommendedBounds: 74...80, unit: .milligramsPerDeciliter, startingSuggestion: 80)
+
+and
+
+    static let correctionRange = Guardrail(absoluteBounds: 87...180, recommendedBounds: 100...115, unit: .milligramsPerDeciliter, startingSuggestion: 100)
+
+Modify the 67 for suspendThreshold and 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
+
+## Adjust Future Carbs Time Interval
+
+Loop 3 (Loop-dev) limits the future time change allowed to 1 hour.
+
+``` title="Key_Phrase"
+cell.datePicker.maximumDate = date.addingTimeInterval
+```
+
+* Loop 3 only:
+    * Folder: Loop/Loop/View Controllers
+    * File:CarbEntryViewController.swift
+    * Line: 361
+    * Default shown below (for maximum and minimum):
+
+_Code Before Modification_
+
+    cell.datePicker.maximumDate = date.addingTimeInterval(.hours(1))
+    cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
+
+Change the maximumDate to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. 
+
+The minimumDate is how far back in the past you can modify time.  The default is 12 hours in the past.
 
 ## Adjust the Watch Crown Sensitivity
 
@@ -460,10 +513,5 @@ Additional customizations may be found on another website, especially for older 
 * Pods: Change Default Expiration Reminder (only needed for Loop 2.2.x)
 * Emoji Modifications
 * Disable Suspend Beeps (only needed for Loop 2.2.x)
-
-These two customizations for Loop 3 will be moved to LoopDocs soon:
-
-* Loop 3: Adjust Future Carbs Time Interval
-* Loop 3: Adjust Guardrails
 
 Note that the other site has an index that points back to LoopDocs if the customization is found on this page.
