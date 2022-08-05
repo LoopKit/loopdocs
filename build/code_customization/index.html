@@ -1718,6 +1718,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#modify-the-guardrails" class="md-nav__link">
+    Modify the Guardrails
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjust-future-carbs-time-interval" class="md-nav__link">
+    Adjust Future Carbs Time Interval
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#adjust-the-watch-crown-sensitivity" class="md-nav__link">
     Adjust the Watch Crown Sensitivity
   </a>
@@ -2207,6 +2221,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#modify-the-guardrails" class="md-nav__link">
+    Modify the Guardrails
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjust-future-carbs-time-interval" class="md-nav__link">
+    Adjust Future Carbs Time Interval
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#adjust-the-watch-crown-sensitivity" class="md-nav__link">
     Adjust the Watch Crown Sensitivity
   </a>
@@ -2488,14 +2516,15 @@
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let cannulaInsertionUnitsExtra
 </code></pre></div>
 <ul>
-<li>Eros Pod (ones that require a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device)<ul>
+<li>Loop 2.2.x: Eros Pod (ones that require a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device)<ul>
 <li>Folder: rileylink_ios/OmniKit/Model</li>
-<li>File: Pod.swift, Line 72 (Loop 2.2.x) or 78 (Loop 3)</li>
+<li>File: Pod.swift, Line 72 (Loop 2.2.x)</li>
 </ul>
 </li>
-<li>DASH Pod (Loop 3 only)<ul>
-<li>Folder: OmniBLE/OmniBLE/OmnipodCommon</li>
-<li>File: Pod.swift, Line 82</li>
+<li>Eros or DASH Pod (Loop 3 only)<ul>
+<li>Folder: rileylink_ios/OmniKit/OmnipodCommon (Eros)</li>
+<li>Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)</li>
+<li>File: Pod.swift, Line 87 (Eros); Line 82 (DASH)</li>
 </ul>
 </li>
 </ul>
@@ -2505,6 +2534,48 @@
 <p><em>Code After Modification to add 0.35 U</em></p>
 <div class="highlight"><pre><span></span><code>public static let cannulaInsertionUnitsExtra = 0.35 // edit to add a fixed additional amount of insulin during cannula insertion
 </code></pre></div>
+<h2 id="modify-the-guardrails">Modify the <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#modify-the-guardrails" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The <a href="../../loop-3/therapy-settings/#guardrails-for-settings">Therapy Setting <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></a> are for Loop 3 (Loop-dev) only.</p>
+<p>If you build Loop-dev over a version of Loop 2.2.x or FreeAPS where the <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> is lower than the default value of 87 mg/dL (4.8 mmol/L), your app will crash when you try to onboard.</p>
+<p>The solution (until this is fixed) is to lower the minimum value to be at or below the value you have currently set.  Rebuild the app with the modified settings and you should be able to continue the onboarding process.</p>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>Guardrail(absoluteBounds:
+</code></pre></div>
+<ul>
+<li>Loop 3 only<ul>
+<li>Folder: LoopKit/Extensions</li>
+<li>File: Guardrail+Settings.swift</li>
+<li>Line: 12 for suspendThreshold</li>
+<li>Line: 26 for correctionRange</li>
+</ul>
+</li>
+</ul>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>static let suspendThreshold = Guardrail(absoluteBounds: 67...110, recommendedBounds: 74...80, unit: .milligramsPerDeciliter, startingSuggestion: 80)
+</code></pre></div>
+<p>and</p>
+<div class="highlight"><pre><span></span><code>static let correctionRange = Guardrail(absoluteBounds: 87...180, recommendedBounds: 100...115, unit: .milligramsPerDeciliter, startingSuggestion: 100)
+</code></pre></div>
+<p>Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).</p>
+<p>If fixing a crashed app during onboarding, you must lower the 87 to match or be less than what is on your old settings.</p>
+<h2 id="adjust-future-carbs-time-interval">Adjust Future Carbs Time Interval<a class="headerlink" href="#adjust-future-carbs-time-interval" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Loop 3 (Loop-dev) limits the future time change allowed to 1 hour.</p>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval
+</code></pre></div>
+<ul>
+<li>Loop 3 only:<ul>
+<li>Folder: Loop/Loop/View Controllers</li>
+<li>File:CarbEntryViewController.swift</li>
+<li>Line: 361</li>
+<li>Default shown below (for maximum and minimum):</li>
+</ul>
+</li>
+</ul>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval(.hours(1))
+cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
+</code></pre></div>
+<p>Change the maximumDate to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. </p>
+<p>The minimumDate is how far back in the past you can modify time.  The default is 12 hours in the past.</p>
 <h2 id="adjust-the-watch-crown-sensitivity">Adjust the Watch Crown Sensitivity<a class="headerlink" href="#adjust-the-watch-crown-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The rate of change of the carb and bolus entry pickers when using the digital crown can be altered as can the rotation required to confirm a bolus on the watch. If you are running an older series watch - you may want to make these customizations. When I switched from Series 3 to Series 7 watch - it was amazing. I got a graph on the main watch screen I didn't even know existed and the bolus acceptance was a breeze!</p>
 <p>There are a number of places where you need to make changes (2 for sensitivity and 2 for bolus confirmation for Loop 2.2.x), so walk though them one at a time. For the <code>Watch Crown Sensitivity</code>, the 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that half as many turns would be needed for the same amount of carb or bolus entry.</p>
@@ -2671,11 +2742,6 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>Pods: Change Default Expiration Reminder (only needed for Loop 2.2.x)</li>
 <li>Emoji Modifications</li>
 <li>Disable Suspend Beeps (only needed for Loop 2.2.x)</li>
-</ul>
-<p>These two customizations for Loop 3 will be moved to LoopDocs soon:</p>
-<ul>
-<li>Loop 3: Adjust Future Carbs Time Interval</li>
-<li>Loop 3: Adjust <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></li>
 </ul>
 <p>Note that the other site has an index that points back to LoopDocs if the customization is found on this page.</p>
                 

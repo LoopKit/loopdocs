@@ -1592,6 +1592,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#absorption-time" class="md-nav__link">
+    Absorption Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#carb-data-source" class="md-nav__link">
     Carb Data Source
   </a>
@@ -2281,6 +2288,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#absorption-time" class="md-nav__link">
+    Absorption Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#carb-data-source" class="md-nav__link">
     Carb Data Source
   </a>
@@ -2596,6 +2610,20 @@
 <li>Overrides: verify these are populated as expected</li>
 <li>Pumps that use a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>: confirm the device is selected and active in the Pump settings screen</li>
 </ul>
+</div>
+<h3 id="absorption-time">Absorption Time<a class="headerlink" href="#absorption-time" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">New Absorption Times</p>
+<p>Loop considers carbs as no longer expected to raise glucose when 1.5 times the indicated absorption time has elapsed.</p>
+<ul>
+<li>Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons<ul>
+<li>Loop 2.2.x used 2 hours, 3 hours and 4 hours</li>
+</ul>
+</li>
+<li>The 30 minute (candy) time is for rapid acting carbs only</li>
+</ul>
+<p>If you inadvertently select the candy icon for a more complex meal, you may find Loop predicts an unexpectedly low glucose as the fast rise in blood glucose fails to materialize and Loop is no longer considering those carbs as active.</p>
+<p>If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.</p>
 </div>
 <h3 id="carb-data-source">Carb Data Source<a class="headerlink" href="#carb-data-source" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Loop 3 does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, will be added to the documentation later. For now search in zulipchat.</p>

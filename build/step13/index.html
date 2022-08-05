@@ -2304,6 +2304,11 @@
 <li>Updated documentation is a work-in-progress located under the <a href="../../loop-3/loop-3-overview/">Loop 3</a> tab of LoopDocs</li>
 </ul>
 <p>The development <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to build select) is provided.</p>
+<div class="admonition danger">
+<p class="admonition-title">Building Over Master</p>
+<p>If you are building dev over Loop master (or FreeAPS), check your correction ranges on your current app before continuing. You must set the bottom of your correction range no lower than 87 mg/dl (4.8 mmol/L) or your new app will crash during onboarding. </p>
+<p>If your app crashes during onboarding, <a href="../code_customization/#modify-the-guardrails">Customize the Code</a> to change the minimum correctionRange value and rebuild to continue.</p>
+</div>
 <h2 id="download-loop-dev">Download Loop-dev<a class="headerlink" href="#download-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This page assumes experience with using the Build-Select script in <a href="../step14/">Build Step 14</a>.</p>
 <ul>
@@ -2461,8 +2466,9 @@
 <li>First Build on this phone: <a href="../../loop-3/onboarding/">Onboarding</a></li>
 <li>Building Loop-dev over Loop 2.2.x or FreeAPS: <a href="../../loop-3/onboarding/#experienced-loopers">Experienced Looper Onboarding</a></li>
 </ul>
-<div class="admonition danger">
+<div class="admonition warning">
 <p class="admonition-title">New Absorption Times</p>
+<p>Loop considers carbs as no longer expected to raise glucose when 1.5 times the indicated absorption time has elapsed.</p>
 <ul>
 <li>Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons<ul>
 <li>Loop 2.2.x used 2 hours, 3 hours and 4 hours</li>
@@ -2470,7 +2476,7 @@
 </li>
 <li>The 30 minute (candy) time is for rapid acting carbs only</li>
 </ul>
-<p>If you inadvertently select the candy icon for a more complex meal, you may find Loop predicts an unexpectedly low glucose value after Loop thinks those carbs are absorbed (45 minutes after the entry).</p>
+<p>If you inadvertently select the candy icon for a more complex meal, you may find Loop predicts an unexpectedly low glucose as the fast rise in blood glucose fails to materialize and Loop is no longer considering those carbs as active.</p>
 <p>If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.</p>
 </div>
 <h2 id="update-loop-dev">Update Loop-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
