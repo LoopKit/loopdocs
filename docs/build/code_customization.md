@@ -281,7 +281,9 @@ and
 
     static let correctionRange = Guardrail(absoluteBounds: 87...180, recommendedBounds: 100...115, unit: .milligramsPerDeciliter, startingSuggestion: 100)
 
-Modify the 67 for suspendThreshold and 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
+Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
+
+If fixing a crashed app during onboarding, you must lower the 87 to match or be less than what is on your old settings.
 
 ## Adjust Future Carbs Time Interval
 
