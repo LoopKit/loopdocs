@@ -335,6 +335,19 @@ You will be presented with an information screen describing the setting (with a 
     * Overrides: verify these are populated as expected
     * Pumps that use a RileyLink: confirm the device is selected and active in the Pump settings screen
 
+### Absorption Time
+
+!!! warning "New Absorption Times"
+    Loop considers carbs as no longer expected to raise glucose when 1.5 times the indicated absorption time has elapsed.
+
+    * Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons
+        * Loop 2.2.x used 2 hours, 3 hours and 4 hours
+    * The 30 minute (candy) time is for rapid acting carbs only
+
+    If you inadvertently select the candy icon for a more complex meal, you may find Loop predicts an unexpectedly low glucose as the fast rise in blood glucose fails to materialize and Loop is no longer considering those carbs as active.
+
+    If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.
+
 
 ### Carb Data Source
 
