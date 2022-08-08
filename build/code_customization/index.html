@@ -1669,9 +1669,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#build-then-customize" class="md-nav__link">
+    Build then Customize
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#instructions-for-finding-the-lines" class="md-nav__link">
     Instructions for Finding the Lines
   </a>
+  
+    <nav class="md-nav" aria-label="Instructions for Finding the Lines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#folders-and-icons" class="md-nav__link">
+    Folders and Icons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2172,9 +2192,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#build-then-customize" class="md-nav__link">
+    Build then Customize
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#instructions-for-finding-the-lines" class="md-nav__link">
     Instructions for Finding the Lines
   </a>
+  
+    <nav class="md-nav" aria-label="Instructions for Finding the Lines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#folders-and-icons" class="md-nav__link">
+    Folders and Icons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2311,7 +2351,24 @@
                 
                 <h1 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Anchor link to this Header on this Page">&para;</a></h1>
 <p>Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself. If you are an experienced builder - you know what to do.</p>
-<p>For new builders, please build the code before you make any changes. Start with <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using <abbr title="program used to build an app">Xcode</abbr> as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  The downloaded code should be fairly recent - don't try to use code you downloaded a year ago - in that case, get a fresh download.  And be sure to read the <a href="./#instructions-for-finding-the-lines">Instructions for Finding the Lines</a>.</p>
+<h2 id="build-then-customize">Build then Customize<a class="headerlink" href="#build-then-customize" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>For new builders, please build the code before you make any changes. Start with <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using <abbr title="program used to build an app">Xcode</abbr> as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  </p>
+<p>When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the <a href="../../faqs/release-faqs/#current-release">Current Release</a>, you can skip the download and use the same folder as last time.  </p>
+<p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom.</p>
+<ul>
+<li>Open <abbr title="graphical folder and file display on Mac">Finder</abbr></li>
+<li>Navigate to Downloads/BuildLoop and look for your download by name and date</li>
+<li>Open that folder, for example, Downloads/BuildLoop/Loop-220803-1145, and inside that folder open the LoopWorkspace folder</li>
+<li>Inside the Downloads/BuildLoop/Loop-220803-1145/LoopWorkspace folder, double-click on Loop.xcworkspace</li>
+<li><abbr title="program used to build an app">Xcode</abbr> automatically opens to that particular download</li>
+<li>You can then make the customizations and build to your phone</li>
+</ul>
+<p align="center"><img alt="how to use finder to find the correct download and open xcode" src="../img/finding-loopworkspace.svg" width="750" /></p>
+<div class="admonition tips">
+<p class="admonition-title">Experienced Builders</p>
+<p>Experienced builders will often build a fresh download to a simulator for their phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> (not their phone) to ensure download is good and is compatible with <abbr title="operating system for Mac computer">macOS</abbr>, <abbr title="program used to build an app">Xcode</abbr> and phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. Once the build is successful, they apply their customizations and build again to the simulator. Last step is to build the customized version to their real phone.</p>
+</div>
+<p>Be sure to read the <a href="./#instructions-for-finding-the-lines">Instructions for Finding the Lines</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Line numbers may change</p>
 <p>Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code.</p>
@@ -2350,7 +2407,7 @@
 <p>To search using the <code>Key_Phrase</code> (see graphic below for clarification):</p>
 <ul>
 <li>A copy button is available when you hover your mouse in the right-hand side of the block below the title <code>Key_Phrase</code>,  click on it to copy the phrase</li>
-<li>In <abbr title="program used to build an app">Xcode</abbr>, tap the Find menu item and select Find in <abbr title="a grouping of several repositories into a complete package">Workspace</abbr></li>
+<li>In <abbr title="program used to build an app">Xcode</abbr>, tap the Find menu item and select <code>Find in Workspace</code></li>
 <li>Paste the text into the find search-box that opens on upper left of <abbr title="program used to build an app">Xcode</abbr> screen and hit enter</li>
 <li>A series of options show up underneath the find search-box</li>
 <li>The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed</li>
@@ -2362,6 +2419,42 @@
 </ul>
 <p align="center"><img alt="graphic showing how to search using the Key_Phrase" src="../img/code-custom-xcode-search.svg" width="750" /></p>
 <p><br></p>
+<h3 id="folders-and-icons">Folders and Icons<a class="headerlink" href="#folders-and-icons" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The folders listed in the code customization steps below are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in <abbr title="program used to build an app">Xcode</abbr>. Some people prefer to search through the folder icons to find a file instead of using the <code>Find in Workspace</code> feature.</p>
+<p>In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.</p>
+<ul>
+<li>Inset 1: User clicked on the folder icon (highlighted by red square) to see the list of icons for folders included in the LoopWorkspace</li>
+<li>Inset 2: User opens folders under <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> icon to open OmniKit, then OmnipodCommon to find the Pod.swift file</li>
+</ul>
+<p align="center"><img alt="graphic showing folder icons vs folder names" src="../img/xcode-folder-names.svg" width="750" /></p>
+<p>These folder icon names are different from the directory names on the computer:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Folder Icon Name</th>
+<th style="text-align: left;">Directory Name</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ShareClient</td>
+<td style="text-align: left;">dexcom-share-client-swift</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr></td>
+<td style="text-align: left;">rileylink_ios</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">Amplitude</td>
+<td style="text-align: left;">Amplitude-<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>All other icons and directory names match.</p>
 <h2 id="disable-authentication-for-bolusing">Disable Authentication for Bolusing<a class="headerlink" href="#disable-authentication-for-bolusing" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.</p>
 <div class="admonition warning">
@@ -2528,6 +2621,7 @@
 </ul>
 </li>
 </ul>
+<p><em>When finding the file using the folder icons in <abbr title="program used to build an app">Xcode</abbr>, instead of using the <code>Key_Phrase</code> in <code>Find in Workspace</code>, the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> icon represents the rileylink_ios folder name on the computer.</em></p>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>public static let cannulaInsertionUnitsExtra = 0.0 // edit to add a fixed additional amount of insulin during cannula insertion
 </code></pre></div>
