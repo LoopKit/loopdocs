@@ -81,6 +81,9 @@ In the graphic below, the user searched for an item found for both Eros and DASH
 * Inset 1: User clicked on the folder icon (highlighted by red square) to see the list of icons for folders included in the LoopWorkspace
 * Inset 2: User opens folders under RileyLink icon to open OmniKit, then OmnipodCommon to find the Pod.swift file
 
+![graphic showing folder icons vs folder names](img/xcode-folder-names.svg){width="750"}
+{align="center"}
+
 These folder icon names are different from the directory names on the computer:
 
 |  Folder Icon Name |  Directory Name | |
@@ -90,9 +93,6 @@ These folder icon names are different from the directory names on the computer:
 | Amplitude | Amplitude-iOS | 
 
 All other icons and directory names match.
-
-![graphic showing folder icons vs folder names](img/xcode-folder-names.svg){width="750"}
-{align="center"}
 
 ## Disable Authentication for Bolusing
 
