@@ -2,7 +2,26 @@
 
 Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself. If you are an experienced builder - you know what to do.
 
-For new builders, please build the code before you make any changes. Start with Open Loop and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using Xcode as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  The downloaded code should be fairly recent - don't try to use code you downloaded a year ago - in that case, get a fresh download.  And be sure to read the [Instructions for Finding the Lines](code_customization.md#instructions-for-finding-the-lines).
+## Build then Customize
+
+For new builders, please build the code before you make any changes. Start with Open Loop and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using Xcode as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  
+
+When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../faqs/release-faqs.md#current-release), you can skip the download and use the same folder as last time.  
+
+Refer to the graphic below.  The Downloads folder in Finder is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom.
+
+* Open Finder
+* Navigate to Downloads/BuildLoop and look for your download by name and date
+* Open that folder, for example, Downloads/BuildLoop/Loop-220803-1145, and inside that folder open the LoopWorkspace folder
+* Inside the Downloads/BuildLoop/Loop-220803-1145/LoopWorkspace folder, double-click on Loop.xcworkspace
+* Xcode automatically opens to that particular download
+* You can then make the customizations and build to your phone
+
+![how to use finder to find the correct download and open xcode](img/finding-loopworkspace.svg){width="750"}
+{align="center"}
+
+
+Be sure to read the [Instructions for Finding the Lines](code_customization.md#instructions-for-finding-the-lines).
 
 !!! info "Line numbers may change"
     Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code.
@@ -40,7 +59,7 @@ Below the figure, the original, and in some cases, the modified code will be dis
 To search using the `Key_Phrase` (see graphic below for clarification):
 
 * A copy button is available when you hover your mouse in the right-hand side of the block below the title `Key_Phrase`,  click on it to copy the phrase
-* In Xcode, tap the Find menu item and select Find in Workspace
+* In Xcode, tap the Find menu item and select `Find in Workspace`
 * Paste the text into the find search-box that opens on upper left of Xcode screen and hit enter
 * A series of options show up underneath the find search-box
 * The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed
@@ -52,6 +71,28 @@ To search using the `Key_Phrase` (see graphic below for clarification):
 {align="center"}
 
 <br>
+
+### Folders and Icons
+
+The folders listed in the code customization steps below are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in Xcode. Some people prefer to search through the folder icons to find a file instead of using the `Find in Workspace` feature.
+
+In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.
+
+* Inset 1: User clicked on the folder icon (highlighted by red square) to see the list of icons for folders included in the LoopWorkspace
+* Inset 2: User opens folders under RileyLink icon to open OmniKit, then OmnipodCommon to find the Pod.swift file
+
+These folder icon names are different from the directory names on the computer:
+
+|  Folder Icon Name |  Directory Name | |
+|:--|:--||
+| ShareClient | dexcom-share-client-swift | 
+| RileyLink | rileylink_ios | 
+| Amplitude | Amplitude-iOS | 
+
+All other icons and directory names match.
+
+![graphic showing folder icons vs folder names](img/xcode-folder-names.svg){width="750"}
+{align="center"}
 
 ## Disable Authentication for Bolusing
 
@@ -245,6 +286,8 @@ let cannulaInsertionUnitsExtra
     * Folder: rileylink_ios/OmniKit/OmnipodCommon (Eros)
     * Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)
     * File: Pod.swift, Line 87 (Eros); Line 82 (DASH)
+    
+_When finding the file using the folder icons in Xcode, instead of using the `Key_Phrase` in `Find in Workspace`, the RileyLink icon represents the rileylink_ios folder name on the computer._
 
 _Code Before Modification_
 
