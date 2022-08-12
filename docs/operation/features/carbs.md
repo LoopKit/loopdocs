@@ -30,7 +30,7 @@ Many Loopers increase the carbohydrate amount to cover the expected effect of pr
 If you switched to using Loop-dev (not yet released as Loop 3) from Loop 2.2.x, please be aware that absorption times have changed.
 
 !!! warning "Loop-dev Carb Absorption Times"
-    Loop uses the absorption time for the carbs, along with your glucose readings, ISF and CR to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See [Algorithm: Prediction](../operation/algorithm/prediction.md) for more details.
+    Loop uses the absorption time for the carbs, along with your glucose readings, ISF and CR to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See [Algorithm: Prediction](../algorithm/prediction.md) for more details.
 
     * Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons
         * Loop 2.2.x used 2 hours, 3 hours and 4 hours
