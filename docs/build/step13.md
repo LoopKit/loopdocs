@@ -203,7 +203,7 @@ If this is your first build with Loop-dev, please review these pages before you 
 
 ### Carb Absorption Time Update
 
-If you have used earlier versions of Loop, please be aware that absorption times have changed.
+If you used earlier versions of Loop, please be aware that absorption times have changed.
 
 !!! warning "Loop-dev Carb Absorption Times"
     Loop uses the absorption time for the carbs, along with your glucose readings, ISF and CR to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See [Algorithm: Prediction](../operation/algorithm/prediction.md) for more details.

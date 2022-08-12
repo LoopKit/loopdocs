@@ -27,7 +27,7 @@ Many Loopers increase the carbohydrate amount to cover the expected effect of pr
 
 ### Carb Absorption Time Update
 
-If you switched to using Loop-dev (not yet released as Loop 3) from Loop 2.2.x, please be aware that absorption times have changed.
+If you switched to Loop-dev (not yet released as Loop 3) from Loop 2.2.x, please be aware that absorption times have changed.
 
 !!! warning "Loop-dev Carb Absorption Times"
     Loop uses the absorption time for the carbs, along with your glucose readings, ISF and CR to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See [Algorithm: Prediction](../algorithm/prediction.md) for more details.
