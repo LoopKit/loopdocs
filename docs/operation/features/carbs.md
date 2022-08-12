@@ -1,5 +1,7 @@
 # Meal Entry
 
+## Meal Entry Overview
+
 To start a new meal entry, tap on the green plate icon (circled below) in the toolbar at the bottom of the Loop status screen. Your Loop app will open to the Add Carb Entry screen.
 
 ![Loop toolbar](img/toolbar-meal.svg){width="300"}
@@ -22,6 +24,21 @@ Many Loopers increase the carbohydrate amount to cover the expected effect of pr
         * The Loop predictions will be off and next time Loop reads the reservoir history on the pump, it will probably send your basal rate to zero
     * If you enter carbs in the Nightscout careportal, they will not be detected by Loop
         * There may be times you want to do this, e.g., you want to indicate a low treatment you don't want Loop to know about
+
+### Carb Absorption Time Update
+
+If you switched to using Loop-dev (not yet released as Loop 3) from Loop 2.2.x, please be aware that absorption times have changed.
+
+!!! warning "Loop-dev Carb Absorption Times"
+    Loop uses the absorption time for the carbs, along with your glucose readings, ISF and CR to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See [Algorithm: Prediction](../operation/algorithm/prediction.md) for more details. Loop considers carbs as no longer expected to raise glucose when 1.5 times the indicated absorption time has elapsed.
+
+    * Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons
+        * Loop 2.2.x used 2 hours, 3 hours and 4 hours
+    * The 30 minute (candy) time is for rapid acting carbs only
+
+    If you inadvertently select the candy icon for a more complex meal, you may find Loop predicts an unexpectedly low glucose as the fast rise in blood glucose fails to materialize. Later on, as the complex meal digests, Loop is no longer considering those carbs as active.
+
+    If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.
 
 ## New Meals
 
