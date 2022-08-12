@@ -1025,6 +1025,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#meal-entry-overview" class="md-nav__link">
+    Meal Entry Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Meal Entry Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#carb-absorption-time-update" class="md-nav__link">
+    Carb Absorption Time Update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#new-meals" class="md-nav__link">
     New Meals
   </a>
@@ -2123,6 +2143,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#meal-entry-overview" class="md-nav__link">
+    Meal Entry Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Meal Entry Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#carb-absorption-time-update" class="md-nav__link">
+    Carb Absorption Time Update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#new-meals" class="md-nav__link">
     New Meals
   </a>
@@ -2212,6 +2252,7 @@
                 
                 
                 <h1 id="meal-entry">Meal Entry<a class="headerlink" href="#meal-entry" title="Anchor link to this Header on this Page">&para;</a></h1>
+<h2 id="meal-entry-overview">Meal Entry Overview<a class="headerlink" href="#meal-entry-overview" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>To start a new meal entry, tap on the green plate icon (circled below) in the toolbar at the bottom of the Loop status screen. Your Loop app will open to the Add Carb Entry screen.</p>
 <p align="center"><img alt="Loop toolbar" src="../img/toolbar-meal.svg" width="300" /></p>
 <p>Many Loopers increase the carbohydrate amount to cover the expected effect of protein and adjust the expected absorption time for fat in their meal entry. For simplicity, the rest of this page only refers to carbs because all the figures show carbs or carbohydrates in the menus. You should consider the whole meal, including fat and protein, especially if you eat lower carb.</p>
@@ -2239,6 +2280,21 @@
 </ul>
 </li>
 </ul>
+</div>
+<h3 id="carb-absorption-time-update">Carb Absorption Time Update<a class="headerlink" href="#carb-absorption-time-update" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you switched to Loop-dev (not yet released as Loop 3) from Loop 2.2.x, please be aware that absorption times have changed.</p>
+<div class="admonition warning">
+<p class="admonition-title">Loop-dev Carb Absorption Times</p>
+<p>Loop uses the absorption time for the carbs, along with your glucose readings, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See <a href="../../algorithm/prediction/">Algorithm: Prediction</a> for more details.</p>
+<ul>
+<li>Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons<ul>
+<li>Loop 2.2.x used 2 hours, 3 hours and 4 hours</li>
+</ul>
+</li>
+<li>The 30 minute (candy) time is for rapid acting carbs only</li>
+</ul>
+<p>If you selected the candy icon for a complex meal, you told Loop to expect your glucose to rise rapidly. When that rapid rise does not materialize, you may find Loop predicts an unexpectedly low glucose because the algorithm assumes something must be affecting your glucose downward in a strong way.</p>
+<p>If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.</p>
 </div>
 <h2 id="new-meals">New Meals<a class="headerlink" href="#new-meals" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The figure below shows step-by-step instructions on initiating the meal entry in Loop. Note that when you tap continue this takes you to the Meal Bolus screen. The carb entry is not saved until you complete the Meal Bolus screen.</p>

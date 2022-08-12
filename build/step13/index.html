@@ -831,9 +831,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#first-time-with-loop-dev" class="md-nav__link">
-    First Time with Loop-dev
+  <a href="#new-to-loop-dev" class="md-nav__link">
+    New to Loop-dev
   </a>
+  
+    <nav class="md-nav" aria-label="New to Loop-dev">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#carb-absorption-time-update" class="md-nav__link">
+    Carb Absorption Time Update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2253,9 +2266,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#first-time-with-loop-dev" class="md-nav__link">
-    First Time with Loop-dev
+  <a href="#new-to-loop-dev" class="md-nav__link">
+    New to Loop-dev
   </a>
+  
+    <nav class="md-nav" aria-label="New to Loop-dev">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#carb-absorption-time-update" class="md-nav__link">
+    Carb Absorption Time Update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2460,15 +2486,17 @@
 <p>At this point, you can unplug your phone and acknowledge the <abbr title="program used to build an app">Xcode</abbr> message: <code>Lost connection to the debugger on . . .</code>.  The square icon next to the play button goes away as soon as you unplug your phone from <abbr title="program used to build an app">Xcode</abbr>.</p>
 <p>The Loop app on your phone closes (but does not quit) when you unplug the phone. Open the Loop app on your phone just to be sure.</p>
 <p align="center"><img alt="gif showing the xcode screens when building" src="../img/xcode-build-loop3-c.gif" width="750" /></p>
-<h2 id="first-time-with-loop-dev">First Time with Loop-dev<a class="headerlink" href="#first-time-with-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="new-to-loop-dev">New to Loop-dev<a class="headerlink" href="#new-to-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If this is your first build with Loop-dev, please review these pages before you continue:</p>
 <ul>
 <li>First Build on this phone: <a href="../../loop-3/onboarding/">Onboarding</a></li>
 <li>Building Loop-dev over Loop 2.2.x or FreeAPS: <a href="../../loop-3/onboarding/#experienced-loopers">Experienced Looper Onboarding</a></li>
 </ul>
+<h3 id="carb-absorption-time-update">Carb Absorption Time Update<a class="headerlink" href="#carb-absorption-time-update" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you used earlier versions of Loop, please be aware that absorption times have changed.</p>
 <div class="admonition warning">
-<p class="admonition-title">New Absorption Times</p>
-<p>Loop considers carbs as no longer expected to raise glucose when 1.5 times the indicated absorption time has elapsed.</p>
+<p class="admonition-title">Loop-dev Carb Absorption Times</p>
+<p>Loop uses the absorption time for the carbs, along with your glucose readings, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See <a href="../../operation/algorithm/prediction/">Algorithm: Prediction</a> for more details.</p>
 <ul>
 <li>Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons<ul>
 <li>Loop 2.2.x used 2 hours, 3 hours and 4 hours</li>
@@ -2476,7 +2504,7 @@
 </li>
 <li>The 30 minute (candy) time is for rapid acting carbs only</li>
 </ul>
-<p>If you inadvertently select the candy icon for a more complex meal, you may find Loop predicts an unexpectedly low glucose as the fast rise in blood glucose fails to materialize and Loop is no longer considering those carbs as active.</p>
+<p>If you selected the candy icon for a complex meal, you told Loop to expect your glucose to rise rapidly. When that rapid rise does not materialize, you may find Loop predicts an unexpectedly low glucose because the algorithm assumes something must be affecting your glucose downward in a strong way.</p>
 <p>If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.</p>
 </div>
 <h2 id="update-loop-dev">Update Loop-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>

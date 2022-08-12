@@ -1592,8 +1592,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#absorption-time" class="md-nav__link">
-    Absorption Time
+  <a href="#carb-absorption-time-update" class="md-nav__link">
+    Carb Absorption Time Update
   </a>
   
 </li>
@@ -2288,8 +2288,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#absorption-time" class="md-nav__link">
-    Absorption Time
+  <a href="#carb-absorption-time-update" class="md-nav__link">
+    Carb Absorption Time Update
   </a>
   
 </li>
@@ -2611,10 +2611,11 @@
 <li>Pumps that use a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>: confirm the device is selected and active in the Pump settings screen</li>
 </ul>
 </div>
-<h3 id="absorption-time">Absorption Time<a class="headerlink" href="#absorption-time" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="carb-absorption-time-update">Carb Absorption Time Update<a class="headerlink" href="#carb-absorption-time-update" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you used earlier versions of Loop, please be aware that absorption times have changed.</p>
 <div class="admonition warning">
-<p class="admonition-title">New Absorption Times</p>
-<p>Loop considers carbs as no longer expected to raise glucose when 1.5 times the indicated absorption time has elapsed.</p>
+<p class="admonition-title">Loop-dev Carb Absorption Times</p>
+<p>Loop uses the absorption time for the carbs, along with your glucose readings, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See <a href="../../operation/algorithm/prediction/">Algorithm: Prediction</a> for more details.</p>
 <ul>
 <li>Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons<ul>
 <li>Loop 2.2.x used 2 hours, 3 hours and 4 hours</li>
@@ -2622,7 +2623,7 @@
 </li>
 <li>The 30 minute (candy) time is for rapid acting carbs only</li>
 </ul>
-<p>If you inadvertently select the candy icon for a more complex meal, you may find Loop predicts an unexpectedly low glucose as the fast rise in blood glucose fails to materialize and Loop is no longer considering those carbs as active.</p>
+<p>If you selected the candy icon for a complex meal, you told Loop to expect your glucose to rise rapidly. When that rapid rise does not materialize, you may find Loop predicts an unexpectedly low glucose because the algorithm assumes something must be affecting your glucose downward in a strong way.</p>
 <p>If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.</p>
 </div>
 <h3 id="carb-data-source">Carb Data Source<a class="headerlink" href="#carb-data-source" title="Anchor link to this Header on this Page">&para;</a></h3>
