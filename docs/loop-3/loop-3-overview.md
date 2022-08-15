@@ -20,9 +20,6 @@ Loop 3.0 is the next big release. It is being developed and tested under the dev
 
 ## New with Loop 3
 
-!!! info ""
-    Information from this section will be moved to the Version / Releases page after release.
-
 Loop 3 redesigns the app, building off work by Tidepool and DIY contributors. Some changes might not be obvious, but make the app more robust.
 
 Here are some highlights:
@@ -52,9 +49,9 @@ Those of us who have been testing Loop-dev are very excited for this major updat
 
 !!! success "Congratulations on Building Loop!"
 
-The first time you build Loop 3, go through the [Onboarding](onboarding.md) process. But don't click on that link yet.
+The first time you build Loop 3, the app takes you through the Onboarding process. Review the [Onboarding](onboarding.md) material before continuing.
 
-First a suggestion and then some orientation:
+First a suggestion and some orientation:
 
 !!! tip "Suggestion"
     * Start by reading each page without clicking on any links
