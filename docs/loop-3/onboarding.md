@@ -3,56 +3,54 @@
 ## New Looper
 
 !!! danger "New Loopers Should NOT Use Loop-dev Before it is Released"
-    Once Loop-dev is released, this Loop 3 pages will be moved to the Set Up App section of LoopDocs.
+    Once Loop-dev is released, these Loop 3 pages will be moved to the Set Up section of LoopDocs.
 
     To make life easier for those of us preparing the new documentation, the wording on many pages in the Loop 3 section is set in the future - after the release.
 
     This is **not** an invitation for brand-new loopers to build Loop-dev as their first looping adventure.
 
-    After the release, this section will be replaced with the words: If this is your first time using Loop - congratulations!
+Please review this page, _and the rest of the Loop 3 Section (which will become the Set Up section once Loop-dev is released),_ before pressing any buttons on your phone with your new Loop 3 app.
 
-It is a good idea to review this page, _and the rest of what is now the Loop 3 Section (and will become the Set Up App section once Loop-dev is released),_ before pressing any buttons on your phone with your new Loop 3 app.
+As soon as your app builds on your phone, you are guided through the onboarding (set up) process. You will see information screens for each Therapy Setting and **must** acknowledge each screen. You can review those informational screens later by clicking the [Therapy Settings](therapy-settings.md) screen.
 
-As soon as your app builds on your phone, you are guided through the set up process - this is called onboarding. As part of onboarding, there are information screens for each `Therapy Setting`. You are "forced" to acknowledge each screen while onboarding. If you later want to review those informational screens again - they are available on your phone through the [`Therapy Settings`](therapy-settings.md) screen.
-
-This link shows a [video of onboarding](https://drive.google.com/file/d/1NkS-YGREFn1UBmBbOjsD2Yy0ZUyEYM1l/view?usp=sharing) with the pre-release version under test in March 2022.
+Click on this [Video of Onboarding](https://drive.google.com/file/d/1NkS-YGREFn1UBmBbOjsD2Yy0ZUyEYM1l/view?usp=sharing) link to watch the onboarding process for a pre-release version tested in March 2022.
 
 ### Entering and Editing Values
 
-There are some mechanics associated with entering and editing values with Loop 3. Come back to this section if you have trouble later when you want to enter or modify a setting.
+This section explains how to enter and edit values with Loop 3.
 
-* If you want more information about a specific therapy setting, tap on the information icon on that screen or review the detailed [Therapy Settings](therapy-settings.md) page in LoopDocs
+* For more information on a specific therapy setting, tap on the information icon on the screen or review the detailed [Therapy Settings](therapy-settings.md) page in LoopDocs
 * Some screens only have one value for a given quantity
-    * In that case you see the value that you can tap on and edit
-    * If you tap on the value and the `Confirm Setting` or `Save` button is inactive (this can happen on the delivery limits screen), simply move the picker value to make the button active
+    * In that case, you can tap on and edit that value
+    * If you tap on the value and the `Confirm Setting` or `Save` button is inactive, move the picker value to make the button active,
 * Some screens allow different values for different times of day
-    * During onboarding as a new looper, you must tap the &plus; sign to get the midnight time slot (all scheduled entries must start at midnight)
-    * When you tap +, you can add an entry to any time-slot that does not already have an entry
-        - Adjust the time and value(s) as desired (the last available time slot is 11:30 pm)
+    * Scheduled entries must start at midnight and end at 11:30pm.  During onboarding, new loopers must tap the &plus; sign to get the initial midnight time slot
+    * Tap + to add an entry to any time-slot without an entry
+        - Adjust the time and value(s) as desired
         - Tap Add to include this entry in your schedule
-    * If a time-slot has an entry, you can tap on it to edit it
-        - You can change the time within the constraint of the time entries before and after the slot you are editing
+    * Tap on a time-slot with an entry to edit it
+        - You can change the time within the range of half hour after the slot immediately before and half hour before the slot after the slot under edit
         - You can edit the value to any allowed value
-    * If you want to delete one or more entries, tap on Edit
-        - Tap the red icon to the left of the time-slot you want to delete and select delete
+    * To delete one or more entries, tap on Edit
+        - Then tap the red icon to the left of the time-slot you want to delete and select delete
         - Continue until done, then tap Done
 
 ### Glucose Units
 
-If you have never connected a glucose monitoring device to your phone's Apple Health app, the units selected on the phone might not be in the units you expect, i.e., mg/dL or mmol/L. The units Loop uses match what is in Apple Health.
+First time connecting a glucose monitoring device to your phone's Apple Health app?  If so, the units on the phone might not be in the units you want, i.e., mg/dL or mmol/L. Loop uses the units in Apple Health.
 
-* If the units in Apple Health are mg/dL and you try to enter therapy settings suitable for mmol/L, or vice versa, the guardrails in Loop will prevent your entries
-* If this happens to you:
-    * Quit out of onboarding
+* If the Apple Health units are mg/dL and you try to enter therapy settings suitable for mmol/L, or vice versa, the guardrails in Loop will prevent your entries
+* If this happens:
+    * Quit onboarding
     * Follow the directions for [How to Change Glucose Units](#change-glucose-units)
     * Start the Loop app again and Onboarding will restart
 
 ## Onboarding Steps
 
-Each of the onboarding steps is presented in order on this page. It is a good idea to follow the docs while you are entering values into your app for the first time.
+Each onboarding step is presented in order on this page. Please follow this document while entering values into your app for the first time.
 
 !!! abstract "Settings Help"
-    If your settings are incorrect when starting Loop (basal rates, insulin sensitivity, carb ratio, etc), you may need time to identify which settings need to be adjusted. You may be tired of reading this, but please remain in Open Loop until you've verified your settings.
+    Please stay in Open Loop until you verify that your settings (basal rates, insulin sensitivity, carb ratio, etc) are correct. You may need time to identify which settings need to be adjusted.
 
     If you need help with your settings adjustment, head over to LoopTips for some [initial settings help](https://loopkit.github.io/looptips/settings/settings/).
 
@@ -65,64 +63,55 @@ The first screen you will see is the Welcome to Loop screen shown in the graphic
 
 ### Apple Health Permissions
 
-The next set of screens is used to give Loop permission to read and write to Apple Health. In the graphic below, from left to right, tap on the buttons highlighted with red boxes to configure permisions:
+Next, you need to give Loop permission to read and write to Apple Health. In the graphic below, from left to right, tap on the buttons highlighted with red boxes to configure permissions:
 
 * Tap on the `Share with Apple Heath` button
 * Tap on the `Turn On All` button in the middle
 * Tap on the `Allow` button at upper right
 
-The screen in the right side of the graphic was scrolled to enable the write and read permissions to be visible in that view. You need to enable Health Permissions to get the full capabilities of Loop.
+You need to enable Health Permissions for Loop to work.
 
 
 ![setting up Apple Health permissions with Loop 3](img/health-loop-3.svg){width="600"}
 {align="center"}
 
-You can reach the permissions screen later, if you want to review it. Open the Apple Health app, look at the toolbar at the bottom of the app where it says Sharing. Scroll to the bottom of Sharing and Select Apps, then review the Loop Settings.
-
-!!! warning "Advanced Users Only"
-    What about [reading carbohydrates from Health](#carb-data-source) with Loop?
+You can review the permissions screen later.  Simply open the Apple Health app, find the toolbar at the bottom that says Sharing, scroll to the bottom of Sharing, select Apps, and then select Loop. At this point, you can review the Loop Health Sharing settings.
 
 ### Connect Loop to Nightscout
 
-!!! question "Nightscout"
-    If you have no idea what Nightscout is, just select `Setup Loop without Nightscout`.
-
-    [Nightscout](../nightscout/overview.md) is not required for Loop, but it is highly recommended and can be added later.
-
 The next screen, shown on the left of the graphic below, enables the user to both connect Loop to Nightscout and to **download existing Loop settings** from Nightscout.
 
-* A new Looper, without a Nightscout site, would choose the `Setup Loop without Nightscout` button which takes them to the Therapy Settings entry portion of onboarding.
-* A new Looper, who already has a Nightscout site, would choose the `Use Nightscout with Loop` button to connect Loop to their site.
-* An experienced Looper who also uses Nightscout would choose the `Use Nightscout with Loop` button to download their Therapy Settings from Nightscout for review.
+!!! question "Nightscout"
+    * [Nightscout](../nightscout/overview.md) is not required for Loop
+    * It can be added later
 
-If the user selects the `Use Nightscout with Loop`:
+* If you have do not have a Nightscout site, or choose not to use it, select `Setup Loop without Nightscout` and skip ahead to [Therapy Settings (Onboarding)](#therapy-settings-onboarding)
 
-* The screen on the right of the graphic below is presented to enter your Nightscout URL (remember to use https: with the "s") and API_SECRET.
-* Once those credentials are accepted, you can choose whether you want to import your settings from your Nightscout profile.
-    * For new Loopers, any information populated on the Nightscout site will be downloaded
-    * For current Loopers, this includes all the overrides you have previously saved.
-    * Every Therapy Setting downloaded from Nightscout is presented for review.
+* If you have a Nightscout site, select `Use Nightscout with Loop` to connect Loop to your site and download your profile (Therapy Settings) from Nightscout for review.
 
-&nbsp;
 
 ![Nightscout screens when onboarding if select Use Loop with Nightscout](img/nightscout-menus-x2.svg){width="500"}
 {align="center"}
 
+If you select `Use Nightscout with Loop`:
+
+* The right side of the graphic above shows the screen used to enter your Nightscout URL (remember to use https: with the "s") and API_SECRET.
+* Once those credentials are accepted, choose whether you want to import your settings from your Nightscout profile (including any overrides previously saved).
+* Every Therapy Setting downloaded from Nightscout is presented for review.
+
 
 ### Therapy Settings (Onboarding)
 
-The next set of onboarding screens take you through the therapy settings one at a time.
+The next onboarding screens take you through the therapy settings one at a time.
 
 The therapy settings are the heart of how Loop makes predictions. If your settings are not correct, the predictions will not be correct.
 
-* This is yet another reminder to new Loopers:
-    * Please start with Open Loop after you enter what you think are good settings for Basal, Insulin Sensitivity Factor and Carb Ratio.
-* But wait - what are these other settings and what do they mean?
-    * An informational graphic is provided by the app before you are asked to enter or confirm each therapy setting
-    * A brief summary of each therapy setting is provided on this Onboarding page, but there is a more detailed [Therapy Settings](therapy-settings.md) page available.
-        * Each item in the onboarding therapy settings below has a link that will take you to the appropriate section of the detailed Therapy Settings page.
-        * Click on your browser back button to return to your place on this Onboarding page
-    * In order, while onboarding, you will see:
+* Therapy Settings
+    * An informational graphic is shown before you are asked to enter or confirm each therapy setting
+    * This Onboarding Page provides a brief summary of each therapy setting.
+        * Each onboarding therapy setting  has a link to a more detailed description of the  [Therapy Settings](therapy-settings.md).
+        * If you follow a link, click on your browser back button to return to your place on this Onboarding page
+    * While onboarding, you will see, in order:
         * Glucose Safety Limit
         * Correction Range
         * Pre-Meal Range
@@ -135,121 +124,113 @@ The therapy settings are the heart of how Loop makes predictions. If your settin
         * Insulin Sensitivites
 
 !!! warning "Warning - Outside Typical?"
-    The Therapy Settings have "guardrails" to warn you if your settings seem to be outside of typical.
+    The Therapy Settings have "guardrails" to warn you if your settings are unusual.
 
-    * Some indications are based on what experienced Looper used from surveying actual users
+    * Some indications are based on surveys of experienced Loopers
     * Some indications are for safety
-    * It's fine to put Glucose Safety or Correction Ranges **higher** than is typical
-    * It's fine to put Delivery Limits **lower** than is typical
+    * It's fine to put Glucose Safety or Correction Ranges **higher** than "is typical"
+    * It's fine to put Delivery Limits **lower** than "is typical"
 
     Take yellow indications with a grain of salt
 
-    * It's OK to ignore "yellow" warnings when you are being conservative
-    * It's OK to ignore "yellow" warnings if you're experienced and want to be aggressive
+    * It's OK to ignore "yellow" warnings when being conservative
+    * Experienced loopers may choose to ignore "yellow" warnings to be more aggressive
 
     A red limit cannot be exceeded without modifying the code itself.
 
 
-#### Glucose Safety Limit
+### Glucose Safety Limit
 
 If Loop predicts that your glucose will go below the [Glucose Safety Limit](therapy-settings.md#glucose-safety-limit) at any time in the next 3 hours and Loop is in Closed Loop, it will set a temporary basal rate of 0 U/hr in an attempt to prevent that future low.
 
-If you ask Loop for a bolus recommendation, and the current prediction is that your glucose will go below the Glucose Safety Limit at any time in the next 3 hours, no bolus will be recommended.
+If you ask Loop for a bolus recommendation, and loop predicts your glucose will go below the Glucose Safety Limit at any time in the next 3 hours, no bolus will be recommended.
 
-There are some related settings: [Correction Range](therapy-settings.md#correction-range) and [Pre-Meal Range](therapy-settings.md#pre-meal-range). The Glucose Safety Limit can never be higher than the lowest of those ranges.
+The Glucose Safety Limit can never be higher than the lowest of these related settings: [Correction Range](therapy-settings.md#correction-range) and [Pre-Meal Range](therapy-settings.md#pre-meal-range).
 
-#### Correction Range
+### Correction Range
 
-The [Correction Range](therapy-settings.md#correction-range) is the glucose range that you would like Loop to use when providing automated corrections. Correction range is not necessarily the same glucose range that you have discussed with your endocrinologist; generally the doctor's range may be much wider. For example, you may keep a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but use a desired glucose range of 70-180 mg/dL (3.9-10 mmol/L) when discussing things with your endo about "time in range".
+Loop uses the [Correction Range](therapy-settings.md#correction-range) as the goal when it recommends a bolus and makes automated adjustments to insulin dosing.
+
+!!! note "Correction Range vs Time in Range"
+    For example, you may choose a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but you may monitor your "success" or Time in Range using 70-180 mg/dL (3.9-10 mmol/L).
 
 If you ask Loop for a [manual bolus recommendation](features.md#manual-bolus) while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit.
 
-!!! note ""
-    This is only if you manually request a bolus recommendation.
-
-    Loop will **not** automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of the correction range.
+* This is only if you manually request a bolus recommendation.
+* Loop will **not** automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of your correction range.
 
 
-#### Pre-Meal Range
+### Pre-Meal Range
 
-The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, can be used as an easy way to get a small amount of insulin delivered before a meal to help control post-meal glucose spikes. If you choose not to enter a value, the [pre-meal icon](../operation/features/premeal.md) in the toolbar will be inactive. If you enter a range and later prefer not to have one, you can delete it.
+The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, gives you a small amount of insulin before a meal to help control post-meal glucose spikes. The [pre-meal icon](../operation/features/premeal.md) is inactive if you choose not to enter a range.
 
 !!! abstract "Example"
-    If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you an extra push to get you to the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
+    If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you extra insulin to get you to the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
 
-#### Basal Rates
+### Basal Rates
 
 Only one [Basal Rate](therapy-settings.md#basal-rates) schedule may be configured in the Loop app and the schedule must start at midnight.
 
-As a new Looper onboarding with Loop, or anyone onboarding basal rates before a pump is added, you are limited to increments of 0.05 U/hr for basal rates and 0.00 U/hr is not allowed. Put values close to what you actually use because the values entered here affect what is allowed as a maximum basal rate in the Delivery Limits.
+If you onboard basal rates before a pump is added, you are limited to increments of 0.05 U/hr for basal rates and 0.00 U/hr is not allowed. Enter values close to what you actually use because the values determine your maximum basal rate in the Delivery Limits.
 
-Once a pump is added, the basal increments will match that for your particular pump. Once you complete onboarding and add your pump, you can then return to Therapy Settings and adjust the Basal rates for your particular pump.
+Once a pump is added, the basal increments will match those on your pump. The onboarding basal rates will be saved to your added pump. Return to Therapy Settings to adjust the Basal rates to your pump increments.
 
-During onboarding, the basal rates are saved by Loop.  Once you've added a pump, those same rates will be saved to your pump.
+#### Medtronic Pump Users
 
-##### Medtronic Pump Users
+If you will be connecting a Medtronic pump after onboarding:
 
-!!! alert ""
-    If you will be connecting a Medtronic pump after onboarding:
-
-    * The values entered here will overwrite whatever is in your Medtronic pump when you first connect it
-    * For those who build Loop 3 over an existing Loop app with a Medtronic pump attached - you will just be confirming values you used previously
-    * If you have values in a [Loopable Medtronic pump](../build/step3.md#check-medtronic-pump-version) that you plan to attach after onboarding - please record those values if they are important to you
+* The values entered here will overwrite whatever is in your Medtronic pump when you first connect it
+* For those who build Loop 3 over an existing Loop app with a Medtronic pump attached - you will just be confirming values you used previously
+* If you have values in a [Loopable Medtronic pump](../build/step3.md#check-medtronic-pump-version) that you plan to attach after onboarding - please record those values if they are important to you
 
 
-#### Delivery Limits
+### Delivery Limits
 
 The maximum basal rate and maximum bolus settings are collectively referred to as [Delivery Limits](therapy-settings.md#delivery-limits).
 
 The Maximum Basal Rate the app allows you to choose will be limited based on the basal rate schedule you just entered as well as pump limits, so make sure you put in sensible values. (There is a back button if you need it.)
 
-##### Medtronic Pump Users
+#### Medtronic Pump Users
 
-!!! alert ""
-    If you will be connecting a Medtronic pump after onboarding:
+If you will be connecting a Medtronic pump after onboarding:
 
-    * The values entered here will overwrite whatever is in your Medtronic pump when you first connect it
-    * Make sure that the Delivery Limit values in the Medtronic pump are equal to or greater than the values you enter while onboarding or you will not be allowed to connect to the pump.
+* The values entered here will overwrite whatever is in your Medtronic pump when you first connect it
+* Make sure that the Delivery Limit values in the Medtronic pump are equal to or greater than the values you enter while onboarding or you will not be allowed to connect to the pump.
 
 
 #### Maximum Basal Rate
 
-[Maximum Basal Rate](therapy-settings.md#maximum-basal-rate) will cap the the maximum temporary basal rate that the Loop is allowed to issue to meet your correction range when you are in Closed Loop and you have selected a [Dosing Strategy](settings.md#dosing-strategy) of Temp Basal Only.
+[Maximum Basal Rate](therapy-settings.md#maximum-basal-rate) will cap the the maximum temporary basal rate that Loop issues to meet your correction range when you are in Closed Loop with a [Dosing Strategy](settings.md#dosing-strategy) of Temp Basal Only.
 
-If you are a new looper, it is recommended you start with max basal set at 2-3 times your highest scheduled basal rate. This is for safety as you are ironing out your settings. If you choose 2 times your highest scheduled basal you may get a message informing you this is "lower than typical" - ignore this - take it as a sign you are putting safety first as a new looper.
+For safety, new loopers should start with max basal set 2-3 times their highest scheduled basal rate. If you choose 2 times your highest scheduled basal, you may get a message informing you this is "lower than typical." Ignore this to put safety first as a new looper.
 
-Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. With Loop 3, the app will not allow you to exceed 6.4 times your highest scheduled rate.
+Experienced loopers typically set their maximum basal rate around 3-4 times their highest scheduled basal rate. Loop 3 app will not allow you to exceed 6.4 times your highest scheduled rate.
 
 #### **Maximum Bolus**
 
-[Maximum Bolus](therapy-settings.md#maximum-bolus) is the highest bolus amount that you will allow Loop to recommend at one time to cover carbs or bring down high glucose.
+[Maximum Bolus](therapy-settings.md#maximum-bolus) is the highest bolus amount Loop can recommend at one time to cover carbs or bring down high glucose.
 
 For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.
 
-#### Insulin Model
+### Insulin Model
 
-When Loop was originally developed, the fastest insulins available, also know as "rapid acting", had published data for behavior in adults and children.
+The Insulin Model selection determines whether a child or adult model is used by Loop if you select a "rapid" insulin (Apidra, Humalog or Novolog) in your [pump](add-pump.md#insulin-type) configuration. For "ultra rapid" insulin, the model selected is irrelevant, but a selection is required.
 
-Therefore, Loop offers an Adult or Child model as part of onboarding.
 
-If you use a newer "ultra rapid" insulin, the model selected here is irrelevant, but a selection is required.
-
-The specific type of insulin used is set when you select or edit the configuration of your [pump](add-pump.md#insulin-type).
-
-#### Carb Ratios
+### Carb Ratios
 
 Your [Carb Ratio](therapy-settings.md#carb-ratios) is the number of grams of carbohydrates covered by one unit of insulin.
 
-* At least one carb ratio must be entered
-* A daily schedule with varying carb ratio at different times of day can be entered
+* At least one carb ratio (CR) must be entered
+* A daily schedule with varying CR can be entered
 
-#### Insulin Sensitivities
+### Insulin Sensitivities
 
-Your [Insulin Sensitivity Factor](therapy-settings.md#insulin-sensitivities) refers to the drop in glucose expected from one unit of insulin over the entire duration of insulin activity. It may be different than what was used as a correction factor with shots or manual pumping. Loop uses these value(s) every 5 minutes when calculating predicted glucose levels.
+Your [Insulin Sensitivity Factor](therapy-settings.md#insulin-sensitivities) is the drop in glucose expected from one unit of insulin over the entire duration of insulin activity. It may be different than the correction factor used with shots or manual pumping. Loop uses your ISF every 5 minutes when calculating predicted glucose levels.
 
 * At least one insulin sensitivity factor (ISF) must be entered
-* A daily schedule with varying ISF at different times of day can be entered
+* A daily schedule with varying ISF can be entered
 
 Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/) your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
 
@@ -258,7 +239,7 @@ Incorrectly set ISF is the most common cause of roller coaster glucoses for new 
 
 ### Therapy Settings Review
 
-Once these are all entered, then the Therapy Settings screen is shown for your review. You must scroll down to see all settings and reveal the Save Settings button.  Only the top and bottom portions are shown, the other settings were not captured for this graphic.
+Once these are all entered, the Therapy Settings screen is shown for your review. You must scroll down to see all settings and reveal the Save Settings button.  Only the top and bottom portions are shown, the other settings were not captured for this graphic.
 
 ![verify that all therapy settings are correct](img/therapy-setting-review-x2.svg){width="500"}
 
@@ -267,11 +248,11 @@ Once these are all entered, then the Therapy Settings screen is shown for your r
 
 ### Notifications and Bluetooth
 
-Once you save settings, Loop asks to send notifications and use Bluetooth. You need to allow both or Loop will not work properly.
+Once you save settings, Loop asks to send notifications and use Bluetooth. You must allow both for Loop to work properly.
 
-* Notifications are necessary for safety reasons while you are Looping.
+* Notifications are necessary for safety reasons while Looping.
 
-* Bluetooth is how Loop gets data from your CGM and talks to your Pump.
+* Bluetooth lets Loop get data from your CGM and talk to your Pump.
 
 ![enable notifications and BLE](img/notify-ble-x2.svg){width="500"}
 
