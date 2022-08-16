@@ -80,7 +80,7 @@ nav:
     - 'Step 10 Test Settings': 'build/step10.md'
     - 'Step 11 Make plans for Loop Data': 'build/step11.md'
     - 'Step 12 Meet Community': 'build/step12.md'
-    - 'Step 14 Build Loop app': 'build/step14.md'
+    - 'Step 13 Build Loop app': 'build/step14.md'
     - 'Oh dear! Build errors?': 'build/build_errors.md'
     - 'Updating/Rebuilding your Loop': 'build/updating.md'
     - 'Loop-dev': 'build/step13.md'
