@@ -13,6 +13,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **API_SECRET**: password (min 12 characters) needed to access Nightscout Site
 
+**Automatic Bolus**: provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)
+
 **BAGE**: pump battery age on Nightscout site
 
 **Big Sur**: older version for operating system for Mac, macOS 11.x
@@ -134,6 +136,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **submodules**: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
 
 **Table of Contents**: for the LoopDocs website, the TOC is the list of level 2 and 3 headers. The name of the page is a level 1 header.
+
+**Temp Basal Only**: provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)
 
 **Terminal**: interface for entering commands to the computer
 
