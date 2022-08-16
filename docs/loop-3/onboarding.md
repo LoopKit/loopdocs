@@ -24,9 +24,11 @@ This section explains how to enter and edit values with Loop 3.
     * In that case, you can tap on and edit that value
     * If you tap on the value and the `Confirm Setting` or `Save` button is inactive, move the picker value to make the button active,
 * Some screens allow different values for different times of day
-    * Scheduled entries must start at midnight and end at 11:30pm.  During onboarding, new loopers must tap the &plus; sign to get the initial midnight time slot
-    * Tap + to add an entry to any time-slot without an entry
-        - Adjust the time and value(s) as desired
+    * Scheduled entries must start at midnight and at least one entry is required
+    * During onboarding, new loopers must tap the &plus; sign to get the initial midnight time slot
+    * When one or more entries are present, tap the &plus; sign to add an entry
+        - Choose any time-slot without an entry
+        - Enter desired value
         - Tap Add to include this entry in your schedule
     * Tap on a time-slot with an entry to edit it
         - You can change the time within the range of half hour after the slot immediately before and half hour before the slot after the slot under edit
@@ -75,7 +77,7 @@ You need to enable Health Permissions for Loop to work.
 ![setting up Apple Health permissions with Loop 3](img/health-loop-3.svg){width="600"}
 {align="center"}
 
-You can review the permissions screen later.  Simply open the Apple Health app, find the toolbar at the bottom that says Sharing, scroll to the bottom of Sharing, select Apps, and then select Loop. At this point, you can review the Loop Health Sharing settings.
+You can review the permissions screen later using this [link](../faqs/apple-health-faqs.md#tidepool-and-apple-healthkit).
 
 ### Connect Loop to Nightscout
 
