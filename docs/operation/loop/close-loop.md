@@ -4,17 +4,18 @@ After you learn what you need from open-loop, this page provides suggestions to 
 
 ## Timing
 
-Consider transitioning in steps.  Some loopers start closed-loop when there are fewer distractions, possibly on weekends, and, transition at a time that does not involve food, possibly overnight.
+Consider transitioning in steps.  Some loopers start closed-loop when there are fewer distractions, possibly on weekends. It can be easier to transition at a time that does not involve food, possibly overnight.
 
 ## Maximum Basal Rate
 
-When starting closed-loop, it is important to be conservative. Start with the "Temp Basal Only" dosing strategy and limit the maximum basal rate.  These steps are important in case your other settings (e.g., carb absorption time, carb ratio, ISF) are incorrect to avoid overly aggressive increases in insulin. Typically, experienced loopers set their max closed-loop basal rate at no more than 3-4 times their average basal rate.  Wait until you are comfortable with the slower corrections in "Temp Basal Only" before transitioning to "Automatic Bolus".
+When starting closed-loop, it is important to be conservative. Start with the "Temp Basal Only" dosing strategy and limit the maximum basal rate.  If your Meal Entries or Therapy Settings (basal rates, CR, ISF) are incorrect, this approach limits the risk of getting too much insulin. Typically, experienced loopers set their max closed-loop basal rate at no more than 3-4 times their average basal rate.  Wait until you are comfortable with the slower corrections in "Temp Basal Only" before transitioning to "Automatic Bolus".
 
 !!! info "Temp Basal Only vs Automatic Bolus"
-	Both Dosing Strategy methods update the prediction with every CGM or glucose reading, typically every 5 minutes, and uses the updated prediction to modify dosing.
+	Both Dosing Strategy methods update the prediction with CGM or glucose reading, typically every 5 minutes, and uses the updated prediction to generate a recommended bolus or recommended dosing restriction.
 	
-	* "Temp Basal Only" provides no more than 17% of what Loop predicts you will need and updates the calculation every 5 minutes (using temporary basal)
-    * "Automatic Bolus" mode provides 40% of what Loop predicts you will need as an immediate bolus and updates the calculation in 5 minutes
+	* "Temp Basal Only" provides no more than 17% (per 5 minute interval) of that recommended bolus using temporary basal
+    * "Automatic Bolus" mode provides 40% of that recommended bolus as an immediate bolus
+	* When Loop recommends restricting insulin, both methods use temporary basals less than the scheduled basal, often commanding a temp basal of 0 U/hr
 
 ## Glucose Correction Range
 
@@ -42,7 +43,7 @@ Start with meals that you know well. If Loop suggests far less or far more insul
 	* You can adjust the absorption time and carb amount to see if that modifies the suggested bolus
 	* You can override the Loop suggestion
 	* Do not be surprised if Loop immediately suspends basal
-	* Loop needs to see glucose start to rise before deciding you need more insulin
+	* Loop needs to see glucose start to rise before deciding you need more insulin after the initial meal bolus recommendation
 	* Loop will not automatically provide more insulin until your glucose is above the lower range of the correction range (but will recommend a manual bolus)
 
 This is definitely an area where YDMV (your diabetes may vary), so don't expect or accept that what works for others will work for you.  Test, observe, and adjust as needed.
