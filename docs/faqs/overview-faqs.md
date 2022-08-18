@@ -11,4 +11,5 @@ Map to this section:
 * [Update/Rebuild Loop FAQs](../faqs/update-faqs.md)
 * [RileyLink FAQs](../faqs/rileylink-faqs.md)
 * [Algorithm FAQs](../faqs/algorithm-faqs.md)
+* [Apple Health FAQs](../faqs/apple-health-faqs.md)
 * [Glossary](../faqs/glossary.md)

@@ -1,33 +1,49 @@
 # Closed-Loop
 
-When you feel like you have learned what you need from open-loop, you should be ready to switch to closed-loop.  There are several ways you can help make that transition as smooth as possible.  
+After you learn what you need from open-loop, this page provides suggestions to smooth the transition to closed loop.
 
 ## Timing
 
-Many people choose to transition to closed-loop in a step-wise fashion.  Starting closed-loop on weekends is an easier starting point so that you can minimize distractions (let's face it...you'll probably be staring at the Loop a lot for those first few days). Typically, people have an easier time transitioning to closed-loop for parts of their day that don't involve food...so nighttimes tend to be easier than daytimes to start.
+Consider transitioning in steps.  Some loopers start closed-loop when there are fewer distractions, possibly on weekends. It can be easier to transition at a time that does not involve food, possibly overnight.
 
 ## Maximum Basal Rate
 
-When you are first beginning closed-loop, it is important to be conservative (low) in setting your maximum basal rate.  If your settings are incorrect in other areas (basal rates, carb absorption time, carb ratio, etc), Loop may enact incorrectly aggressive increases in insulin delivery. So start out with a `Dosing Strategy` of `Temp Basal Only` and limit the maximum basal rate as your comfort and confidence in Loop increase.  Typically, experienced closed loop users set their max basal rate no more than 3-4 times their average basal rate. Only after you are comfortable with the (somewhat slower) correction Loop provides with `Temp Basal Only`, should you transition to `Automatic Bolus`.
+When starting closed-loop, it is important to be conservative. Start with the "Temp Basal Only" dosing strategy and limit the maximum basal rate.  If your Meal Entries or Therapy Settings (basal rates, CR, ISF) are incorrect, this approach limits the risk of getting too much insulin. Typically, experienced loopers set their max closed-loop basal rate at no more than 3-4 times their average basal rate.  Wait until you are comfortable with the slower corrections in "Temp Basal Only" before transitioning to "Automatic Bolus".
 
-!!! info "Temp Basal Only vs Automatic Bolus" 
-    
-    * `Temp Basal Only`: Loop provides no more than 17% of what it predicts you will need and updates the calculation every 5 minutes (using temporary basal)
-    * `Automatic Bolus`: Loop provides 40% of what it predicts you will need as an immediate bolus and updates the calculation in 5 minutes
+!!! info "Temp Basal Only vs Automatic Bolus"
+	Both Dosing Strategy methods update the prediction with CGM or glucose reading, typically every 5 minutes, and uses the updated prediction to generate a recommended bolus or recommended dosing restriction.
+	
+	* "Temp Basal Only" provides no more than 17% (per 5 minute interval) of that recommended bolus using temporary basal
+    * "Automatic Bolus" mode provides 40% of that recommended bolus as an immediate bolus
+	* When Loop recommends restricting insulin, both methods use temporary basals less than the scheduled basal, often commanding a temp basal of 0 U/hr
 
-## BG targets
+## Glucose Correction Range
 
-If your basals, ISF, or carb ratios aren't set correctly, Loop may overshoot and leave you lower than expected (or with more IOB than you are comfortable with).  Setting your low BG target slightly higher can help prevent unexpected lows or high IOB as you adjust your settings.
+If your basal, ISF, or carb ratios are not correct, Loop may give you more insulin than you need to reach the correction you selected. Setting the correction range slightly higher at first helps prevent unexpected low glucose as you adjust your settings.
 
 ## Watch the IOB
 
-Watch whether Loop accumulates positive or negative IOB while holding your BG steady when no food is present.  If you find that you are "carrying" positive or negative IOB consistently, you should review your settings to see if perhaps your basal or ISF needs adjusting.
+Watch whether Loop accumulates positive or negative IOB while holding your glucose steady when no food is present.  If you consistently have positive or negative IOB, review whether to adjust your  basal rate or ISF.
+
+!!! tip "Expert Tip"
+	In the absence of food, glucose trends should flatten out when positive or negative IOB trends to zero.
+
+	* If glucose drops below the correction range and continues to drop while IOB goes negative, basal rates may be too high
+	* If glucose remains above the correction range while IOB remains positive, basal rates may be too low
+	
+	The ISF is also important, but basal should be evaluated first.
 
 ## Meals
 
-Meals will likely be the hardest part of transitioning to close-loop.  Starting with foods that you have a high comfort level with is a great idea.  If you have favorite meals that you know well (how high BGs usually go, how much to bolus, how to pre-bolus, etc), these would be a good starting point.  Watching when the Loop high temps or suspends basals (early vs late in the meal) will really help you adjust to find your typical carb absorption times.  As a general idea, **assuming other settings are accurate**:
+Start with meals that you know well. If Loop suggests far less or far more insulin than expected as a bolus before the meal - consider why this may be true.
 
-* early high temps in a meal that leave you low after, you may need to shorten carb absorption time
-* early suspensions in a meal that leave you high after, you may need to lengthen carb absorption time
+* If glucose is trending down, Loop may be trying to prevent a low glucose event
+* If glucose is trending up, Loop may be trying to add a correction to the meal dose
+* In any case:
+	* You can adjust the absorption time and carb amount to see if that modifies the suggested bolus
+	* You can override the Loop suggestion
+	* Do not be surprised if Loop immediately suspends basal
+	* Loop needs to see glucose start to rise before deciding you need more insulin after the initial meal bolus recommendation
+	* Loop will not automatically provide more insulin until your glucose is above the lower range of the correction range (but will recommend a manual bolus)
 
 This is definitely an area where YDMV (your diabetes may vary), so don't expect or accept that what works for others will work for you.  Test, observe, and adjust as needed.
