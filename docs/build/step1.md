@@ -9,7 +9,7 @@
 !!! abstract "Summary"
     Your computer, iPhone and Xcode must have compatible versions to build Loop.
 
-    * A detailed list of what older versions can still be used is provided later
+    * A summary list of [Compatible Versions](#compatible-versions) is found on this page with more detail in a later page
 
 	If you are buying a Mac, chose one with Monterey (or newer) operating system and at least 256 GB (512 GB is better).
 
@@ -26,9 +26,9 @@
 
 If you have access to a computer with MacOS 12.0 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
 
-## MacOS Versions
+## Compatible Versions
 
-The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **required** to build on any iPhone with an iOS version starting with iOS 15.4 and can be used to build Loop for **any** of the phone iOS versions listed below. Higher values of iOS might trigger the need for an update to macOS or Xcode. The [Loop and Learn Versions](https://www.loopandlearn/update-versionß) page is brought up-to-date faster than LoopDocs.
+The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **required** to build on any iPhone with an iOS version starting with iOS 15.4 and can be used to build Loop for **any** of the phone iOS versions listed below. Higher values of iOS might trigger the need for an update to macOS or Xcode. The [Loop and Learn Versions](https://www.loopandlearn.org/version-updates) page is brought up-to-date faster than LoopDocs.
 
 * ** iOS 15.4 or newer**, the minimum macOS is Monterey (12.0)
 
@@ -61,7 +61,7 @@ Apple says upgrading to macOS Monterey requires 26 GB of available storage.
 
 You need to have 50 GB free space in order to install Xcode in [Build Step 8: Download Xcode](step8.md). At the top of the menu on the graphic above, click on the Storage Tab highlighted with a red rectangle.
 
- To free up space, move things like photos to an external drive.
+ To free up space, move things like photos to an external drive. The Xcode application cannot be run from an external drive.
 
 If you are evaluating a used computer, it's best to have at least 256 GB total disk space (more is better).
 
