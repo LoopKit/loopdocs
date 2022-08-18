@@ -38,8 +38,8 @@ This page has the detailed steps to run the Build Select Script to download the 
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
 
-!!! info "M1 Mac Computer"
-    If you have an M1 Mac computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta-on-m1-computer). This only has to be done one time.
+!!! info "M1 or M2 Mac Computer"
+    If you have an M1 or M2 Mac computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta). This only has to be done one time.
 
 
 ### Build Select Script
@@ -48,10 +48,10 @@ These instructions show each step needed to download Loop using the Build-Select
 
 !!! note "Optional"
     The Build Select Script can also be used to build a companion app, called Loop Follow, and a fork of Loop, called FreeAPS. Follow these links to different websites for more information about those apps.
- 
+
      * Information about [Loop Follow](https://github.com/jonfawcett/LoopFollow#readme)
      * Information specific to [FreeAPS](https://www.loopandlearn.org/freeapsdoc/)
- 
+
      You do not need to know about these apps to build Loop master.
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
@@ -99,7 +99,7 @@ Next you are asked which version of Loop you would like to build. Type 1 and ret
 
 ### Wait for Download to Complete
 
-This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. When you read the words in the terminal, as the script runs, you may see terminology you do not understand - don't worry - you do not need to understand enumeration or submodule or cloning.  You only need to review the display to look for any error messages. 
+This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. When you read the words in the terminal, as the script runs, you may see terminology you do not understand - don't worry - you do not need to understand enumeration or submodule or cloning.  You only need to review the display to look for any error messages.
 
 The next graphic shows terminal messages for the beginning of a successful download.
 
@@ -227,7 +227,7 @@ The graphic below indicates in red the three places you need to click in order t
 * Third, click on the dropdown menu (red circle) by the word `Team`
 
 !!! tip "Click Only where Instructed"
-    Users sometimes click when they do not mean to. 
+    Users sometimes click when they do not mean to.
 
     * Make sure `All`, indicated by dashed blue oval, is selected
         * If `Debug` or `Release` is accidentally tapped, you will not be able to build
@@ -245,9 +245,9 @@ It is time to Sign the Targets with your [Apple Developer ID](step9.md#add-apple
     In addition to the [Trust Your Computer](#select-loop-workspace-and-your-phone) steps mentioned above for the first time you plug in your phone, the first time you use your Apple Developer ID to sign a target for an app, you need to register your device with your Apple Developer ID.
 
     A message similar to the one in the graphic below will appear with the first target you sign.
-    
+
     At any time after you see that message, click on the "Register Device" button to confirm.
-    
+
     * You **must** be connected to the Internet for this step because your computer needs to communicate with Apple to register that device
     * You **must** register the device at some point before you try to build the app to the device
 
@@ -255,12 +255,12 @@ It is time to Sign the Targets with your [Apple Developer ID](step9.md#add-apple
 {align="center"}
 
 
-Start with the Loop target, the first one on the target list. Choose the team you'd like to sign with. 
+Start with the Loop target, the first one on the target list. Choose the team you'd like to sign with.
 
 ![zoom of region where user selects signing team](img/team.png){width="400"}
 {align="center"}
 
-- If you select a team name without (personal team), your app will last a full year.  
+- If you select a team name without (personal team), your app will last a full year.
 - If you select a team name with (personal team), your app will expire after 7 days
     - You must disable [Push Notification and Siri](step14.md#free-account) - click on the link for instructions then return using your browser back button
     - If you never signed up for a [Free Developer Account](step9.md#add-apple-id), you will not have a (personal team) showing
@@ -305,7 +305,7 @@ _If you are using a free account to build Loop-dev, review this section and then
     If you are using a free developer account, you will need to do an extra step before you can successfully sign the targets. As a free developer, you are restricted from building apps that have Siri or push notification capabilities built-in. Loop has both of these capabilities, so you will need to disable them before signing and building your app.
 
     The push notification capability is used for setting remote overrides; disabling it will not affect other notifications on the Loop phone, e.g., "Loop Failure", "Pump Reservoir Low", etc. Click on the small x next to the Siri and push notification lines located at the bottom of the Signing & Capabilities box. You need to do this in both the Loop and WatchApp Extension targets.
-    
+
     Note that this graphic shows `Debug` selected in the Signing & Capabilities pane. This is not correct - make sure that `All` is selected instead.
 
     ![img/siri-errors.png](img/siri-errors.png){width="750"}
@@ -323,9 +323,9 @@ When you've finished your customizations, come on back to this section and conti
 
 #### Pair Your Apple Watch
 
-**New Apple Watch users**: 
+**New Apple Watch users**:
 
-* If you have a new Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  
+* If you have a new Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.
 * If you get a new watch after building the Loop app, you'll need to redo your Loop build. (Don't worry, it's as easy as pressing play on your saved Loop project.)
 
 **Existing Apple Watch users**: Please update your watchOS prior to building the Loop app.  The current version of Loop requires watchOS 4.1 or newer.
@@ -365,7 +365,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 !!! abstract "First Time Builder or First Time on this Computer"
 
     Sometime during your first build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.
-    
+
     **FYI:** _codesign is for code sign - nothing to do with design._
 
     Enter the same password you use to log in to the mac, select always allow and then do it again next time you are asked - once for each target you just signed above.
@@ -382,8 +382,8 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! abstract "First Time Building on a New Device?"
 
-    The first time you install an app on your iPhone using your developer account, you may get a warning like the one shown below. Don't worry. 
-    
+    The first time you install an app on your iPhone using your developer account, you may get a warning like the one shown below. Don't worry.
+
     * You need to do extra step on the phone before the Loop app can open
     * Follow the directions in your warning (graphic is a little old)
     * For iOS 15:
