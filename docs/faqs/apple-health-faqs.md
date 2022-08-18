@@ -118,7 +118,7 @@ A simple example to illustrate this - for a pump with smallest insulin delivery 
 
 If you have a [Tidepool](https://tidepool.org) account and use the Tidepool uploader on your Loop phone, the data in Health is uploaded to your Tidepool database where you can view displays with the [Tidepool web browser tool](https://loopkit.github.io/looptips/data/tidepool/).
 
-## Can I Modify Apple HealthKit Permissions
+## How Do I Modify Apple HealthKit Permissions
 
 You can review the Apple HealthKit permissions screen at any time.  
 
@@ -130,3 +130,16 @@ Simply open the Apple Health app (the red heart)
 * Select Loop
 
 At this point, you can review and modify the settings.
+
+##  How Do I Change Glucose Units?
+
+The glucose units (mg/dL or mmol/L) Loop uses match what is in Apple Health. Once you connect a device that reports glucose to the phone, make sure the units match the device. Note - you can change units for Dexcom Share and it translates units for you - not sure about other devices.
+
+* These instructions to change Blood Glucose units are for iOS 15
+    * Select the Health app (Heart icon)
+    * There's a toolbar at the bottom - select Browse
+    * Scroll to find Vitals
+    * Select Blood Glucose
+    * Scroll to the bottom and select Unit
+    * Tap on Unit, if it isn't right, and select the correct units
+    * While you are there - go on and select Blood Glucose as a Favorite - it will be easier to find next time.

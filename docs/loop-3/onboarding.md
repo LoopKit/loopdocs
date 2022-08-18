@@ -44,7 +44,7 @@ First time connecting a glucose monitoring device to your phone's Apple Health a
 * If the Apple Health units are mg/dL and you try to enter therapy settings suitable for mmol/L, or vice versa, the guardrails in Loop will prevent your entries
 * If this happens:
     * Quit onboarding
-    * Follow the directions for [How to Change Glucose Units](#change-glucose-units)
+    * Follow the directions for [How Do I Change Glucose Units](../faqs/apple-health-faqs.md#how-do-i-change-glucose-units)
     * Start the Loop app again and Onboarding will restart
 
 ## Onboarding Steps
@@ -272,20 +272,6 @@ For new Loopers, it is now time to add a CGM and a pump.  Follow these links for
     If you plan to use a Medtronic Enlite sensor for your CGM, you must first add that pump to Loop before the sensor will be shown as an option.
 
 If you built Loop 3 over an existing app, your CGM and pump selections should have carried over.
-
-##  Change Glucose Units
-
-Loop can handle glucose units of mg/dL or mmol/L. The units Loop uses match what is in Apple Health. Once you connect a device that reports glucose to the phone, make sure the units match the device. Note - you can change units for Dexcom Share and it translates units for you - not sure about other devices.
-
-* These instructions to change Blood Glucose units are for iOS 15
-    * Select the Health app (Heart icon)
-    * There's a toolbar at the bottom - select Browse
-    * Scroll to find Vitals
-    * Select Blood Glucose
-    * Scroll to the bottom and select Unit
-    * Tap on Unit, if it isn't right, and select the correct units
-    * While you are there - go on and select Blood Glucose as a Favorite - it will be easier to find next time.
-
 
 ## Experienced Loopers
 
