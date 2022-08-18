@@ -1025,8 +1025,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bg-targets" class="md-nav__link">
-    BG targets
+  <a href="#glucose-correction-range" class="md-nav__link">
+    Glucose Correction Range
   </a>
   
 </li>
@@ -2038,6 +2038,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../faqs/apple-health-faqs/" class="md-nav__link">
+        Apple Health FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../faqs/glossary/" class="md-nav__link">
         Glossary
       </a>
@@ -2096,8 +2110,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bg-targets" class="md-nav__link">
-    BG targets
+  <a href="#glucose-correction-range" class="md-nav__link">
+    Glucose Correction Range
   </a>
   
 </li>
@@ -2130,27 +2144,46 @@
                 
                 
                 <h1 id="closed-loop">Closed-Loop<a class="headerlink" href="#closed-loop" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>When you feel like you have learned what you need from open-loop, you should be ready to switch to closed-loop.  There are several ways you can help make that transition as smooth as possible.  </p>
+<p>After you learn what you need from open-loop, this page provides suggestions to smooth the transition to closed loop.</p>
 <h2 id="timing">Timing<a class="headerlink" href="#timing" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Many people choose to transition to closed-loop in a step-wise fashion.  Starting closed-loop on weekends is an easier starting point so that you can minimize distractions (let's face it...you'll probably be staring at the Loop a lot for those first few days). Typically, people have an easier time transitioning to closed-loop for parts of their day that don't involve food...so nighttimes tend to be easier than daytimes to start.</p>
+<p>Consider transitioning in steps.  Some loopers start closed-loop when there are fewer distractions, possibly on weekends. It can be easier to transition at a time that does not involve food, possibly overnight.</p>
 <h2 id="maximum-basal-rate">Maximum Basal Rate<a class="headerlink" href="#maximum-basal-rate" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When you are first beginning closed-loop, it is important to be conservative (low) in setting your maximum basal rate.  If your settings are incorrect in other areas (basal rates, carb absorption time, carb ratio, etc), Loop may enact incorrectly aggressive increases in insulin delivery. So start out with a <code>Dosing Strategy</code> of <code>Temp Basal Only</code> and limit the maximum basal rate as your comfort and confidence in Loop increase.  Typically, experienced closed loop users set their max basal rate no more than 3-4 times their average basal rate. Only after you are comfortable with the (somewhat slower) correction Loop provides with <code>Temp Basal Only</code>, should you transition to <code>Automatic Bolus</code>.</p>
+<p>When starting closed-loop, it is important to be conservative. Start with the "<abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr>" dosing strategy and limit the maximum basal rate.  If your Meal Entries or <abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr> (basal rates, <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr>) are incorrect, this approach limits the risk of getting too much insulin. Typically, experienced loopers set their max closed-loop basal rate at no more than 3-4 times their average basal rate.  Wait until you are comfortable with the slower corrections in "<abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr>" before transitioning to "<abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>".</p>
 <div class="admonition info">
-<p class="admonition-title">Temp Basal Only vs Automatic Bolus</p>
+<p class="admonition-title"><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr> vs <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></p>
+<p>Both <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> methods update the prediction with <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or glucose reading, typically every 5 minutes, and uses the updated prediction to generate a recommended bolus or recommended dosing restriction.</p>
 <ul>
-<li><code>Temp Basal Only</code>: Loop provides no more than 17% of what it predicts you will need and updates the calculation every 5 minutes (using temporary basal)</li>
-<li><code>Automatic Bolus</code>: Loop provides 40% of what it predicts you will need as an immediate bolus and updates the calculation in 5 minutes</li>
+<li>"<abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr>" provides no more than 17% (per 5 minute interval) of that recommended bolus using temporary basal</li>
+<li>"<abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>" mode provides 40% of that recommended bolus as an immediate bolus</li>
+<li>When Loop recommends restricting insulin, both methods use temporary basals less than the scheduled basal, often commanding a temp basal of 0 U/hr</li>
 </ul>
 </div>
-<h2 id="bg-targets">BG targets<a class="headerlink" href="#bg-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If your basals, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr>, or carb ratios aren't set correctly, Loop may overshoot and leave you lower than expected (or with more <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> than you are comfortable with).  Setting your low BG target slightly higher can help prevent unexpected lows or high <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> as you adjust your settings.</p>
+<h2 id="glucose-correction-range">Glucose <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr><a class="headerlink" href="#glucose-correction-range" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If your basal, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr>, or carb ratios are not correct, Loop may give you more insulin than you need to reach the correction you selected. Setting the correction range slightly higher at first helps prevent unexpected low glucose as you adjust your settings.</p>
 <h2 id="watch-the-iob">Watch the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr><a class="headerlink" href="#watch-the-iob" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Watch whether Loop accumulates positive or negative <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> while holding your BG steady when no food is present.  If you find that you are "carrying" positive or negative <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> consistently, you should review your settings to see if perhaps your basal or <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr> needs adjusting.</p>
-<h2 id="meals">Meals<a class="headerlink" href="#meals" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Meals will likely be the hardest part of transitioning to close-loop.  Starting with foods that you have a high comfort level with is a great idea.  If you have favorite meals that you know well (how high BGs usually go, how much to bolus, how to pre-bolus, etc), these would be a good starting point.  Watching when the Loop high temps or suspends basals (early vs late in the meal) will really help you adjust to find your typical carb absorption times.  As a general idea, <strong>assuming other settings are accurate</strong>:</p>
+<p>Watch whether Loop accumulates positive or negative <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> while holding your glucose steady when no food is present.  If you consistently have positive or negative <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>, review whether to adjust your  basal rate or <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Expert Tip</p>
+<p>In the absence of food, glucose trends should flatten out when positive or negative <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> trends to zero.</p>
 <ul>
-<li>early high temps in a meal that leave you low after, you may need to shorten carb absorption time</li>
-<li>early suspensions in a meal that leave you high after, you may need to lengthen carb absorption time</li>
+<li>If glucose drops below the correction range and continues to drop while <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> goes negative, basal rates may be too high</li>
+<li>If glucose remains above the correction range while <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> remains positive, basal rates may be too low</li>
+</ul>
+<p>The <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin">ISF</abbr> is also important, but basal should be evaluated first.</p>
+</div>
+<h2 id="meals">Meals<a class="headerlink" href="#meals" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Start with meals that you know well. If Loop suggests far less or far more insulin than expected as a bolus before the meal - consider why this may be true.</p>
+<ul>
+<li>If glucose is trending down, Loop may be trying to prevent a low glucose event</li>
+<li>If glucose is trending up, Loop may be trying to add a correction to the meal dose</li>
+<li>In any case:<ul>
+<li>You can adjust the absorption time and carb amount to see if that modifies the suggested bolus</li>
+<li>You can override the Loop suggestion</li>
+<li>Do not be surprised if Loop immediately suspends basal</li>
+<li>Loop needs to see glucose start to rise before deciding you need more insulin after the initial meal bolus recommendation</li>
+<li>Loop will not automatically provide more insulin until your glucose is above the lower range of the correction range (but will recommend a manual bolus)</li>
+</ul>
+</li>
 </ul>
 <p>This is definitely an area where YDMV (your diabetes may vary), so don't expect or accept that what works for others will work for you.  Test, observe, and adjust as needed.</p>
                 

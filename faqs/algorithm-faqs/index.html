@@ -2010,43 +2010,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-does-loop-use-apple-healthkit" class="md-nav__link">
-    How does Loop use Apple HealthKit?
+  <a href="#more-algorithm-information" class="md-nav__link">
+    More Algorithm Information
   </a>
-  
-    <nav class="md-nav" aria-label="How does Loop use Apple HealthKit?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#glucose-and-apple-healthkit" class="md-nav__link">
-    Glucose and Apple HealthKit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#carbohydrates-and-apple-healthkit" class="md-nav__link">
-    Carbohydrates and Apple HealthKit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#insulin-and-apple-healthkit" class="md-nav__link">
-    Insulin and Apple HealthKit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tidepool-and-apple-healthkit" class="md-nav__link">
-    Tidepool and Apple HealthKit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2054,6 +2020,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apple-health-faqs/" class="md-nav__link">
+        Apple Health FAQs
+      </a>
     </li>
   
 
@@ -2130,43 +2110,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-does-loop-use-apple-healthkit" class="md-nav__link">
-    How does Loop use Apple HealthKit?
+  <a href="#more-algorithm-information" class="md-nav__link">
+    More Algorithm Information
   </a>
-  
-    <nav class="md-nav" aria-label="How does Loop use Apple HealthKit?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#glucose-and-apple-healthkit" class="md-nav__link">
-    Glucose and Apple HealthKit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#carbohydrates-and-apple-healthkit" class="md-nav__link">
-    Carbohydrates and Apple HealthKit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#insulin-and-apple-healthkit" class="md-nav__link">
-    Insulin and Apple HealthKit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tidepool-and-apple-healthkit" class="md-nav__link">
-    Tidepool and Apple HealthKit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2225,146 +2171,16 @@
 <h2 id="how-is-iob-calculated">How is <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> calculated?<a class="headerlink" href="#how-is-iob-calculated" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Insulin on board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>) is calculated from the amount of insulin delivered above or below the scheduled basal rate. For each dose of insulin, the insulin model is used to determine how much of that <a href="../../operation/algorithm/prediction/#insulin-effect">insulin is active</a> over time. Loop is adding up all the amounts over the full Duration of Insulin Action (<abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>). The <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> is 6 hours for most rapid insulin in the models used by Loop.</p>
 <p><abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is plotted on the <a href="../../loop-3/displays_v3/#active-insulin-chart">Active Insulin Chart</a> in the main Loop display.</p>
-<h2 id="how-does-loop-use-apple-healthkit">How does Loop use Apple HealthKit?<a class="headerlink" href="#how-does-loop-use-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop uses Apple HealthKit as long term storage for glucose, insulin and carbohydrates.  But there is more going on than simple storage.</p>
-<p>It is important that permissions for Loop be properly configured for the Health app.</p>
+<h2 id="more-algorithm-information">More Algorithm Information<a class="headerlink" href="#more-algorithm-information" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There is more detail about the Loop Algorithm at the bottom of the Operate tab.</p>
 <ul>
-<li>Loop 2.2.x: See <a href="../../build/health/">Health Permissions</a></li>
-<li>Loop 3: See <a href="../../loop-3/onboarding/#apple-health-permissions">Apple Health Permissions</a></li>
-</ul>
-<p>To view the list of data stored in Health</p>
-<ul>
-<li>Tap on the Health icon (red heart) to open the app</li>
-<li>Tap on Blood Glucose, Carbohydrates or Insulin</li>
-<li>Scroll all the way to the bottom</li>
-<li>Tap on Show All Data</li>
-</ul>
-<div class="admonition example">
-<p class="admonition-title">To Set Blood Glucose, Carbohydrates and Insulin as Favorites</p>
-<ul>
-<li>Tap on the Health icon (red heart) to open the app</li>
-<li>There's a toolbar at the bottom of the screen (always visible in the app)</li>
-<li>Tap on the Browse icon (bottom right of toolbar)</li>
-<li>Tap on<ul>
-<li>Other Data for Blood Glucose and Insulin</li>
-<li>Nutrition for Carbohydrates</li>
-</ul>
-</li>
-<li>Tap each item, scroll down to Options section and tap on Add to Favorite</li>
-<li>Repeat until all three are added</li>
-<li>Tap on the Summary (bottom left icon of toolbar), Favorites show up first</li>
-</ul>
-</div>
-<h3 id="glucose-and-apple-healthkit">Glucose and Apple HealthKit<a class="headerlink" href="#glucose-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>For Dexcom users with the Dexcom app on the Loop phone, the Dexcom app writes the value to Health with a 3-hour delay.</p>
-<p>Loop reads the Dexcom information at the same time the Dexcom app gets the reading from the transmitter. It uses the glucose value to update predictions and stores it in Health.</p>
-<p>If you look at your Health glucose readings, you'll notice the Loop icon for the last 3 hours and the Dexcom icon for times earlier than that.</p>
-<p>All other <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> are reported with the Loop icon and there is no transition after 3 hours.</p>
-<p>You may also notice that the Dexcom numbers get smoothed out. For example, the Dexcom readings, when they first are read from the transmitter may bounce up and down a bit. The Dexcom app will retrospectively smooth the numbers, changing what is displayed in their app compared to the original reading. The last 3 hours of data from Loop does not show that smoothing - it reports the value sent by the transmitter. If you suspect a sensor is not behaving well, check the Loop glucose plots compared to the Dexcom plots to assist in your evaluation. It might be time to confirm glucose with a fingerstick meter as well.</p>
-<h3 id="carbohydrates-and-apple-healthkit">Carbohydrates and Apple HealthKit<a class="headerlink" href="#carbohydrates-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>In Loop 2.2.x, if you set Apple Health app permissions to allow it, Loop will read carbohydrates from the Health app. If you give a third-party app permission to store carbohydrate data in Health, and do not realize that Loop reads that information, you might get unexpected insulin delivery based off those carbs. To avoid that unanticipated behavior, the directions tell you to set permissions to allow Loop to write to carbohydrate storage but not read.</p>
-<p>In Loop 3, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up special parameters when you build the app. The insructions for the code customization are not in LoopDocs yet. If it is important to you to use a third-party app to record carbohydrates and have Loop read the information and automatically dose with insulin, <a href="../../intro/loopdocs-how-to/#how-to-find-help">ask for help in zulipchat</a>.</p>
-<h3 id="insulin-and-apple-healthkit">Insulin and Apple HealthKit<a class="headerlink" href="#insulin-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The relationship between Loop and Apple HealthKit is very important to understand if you ever need to do one of these actions:</p>
-<ul>
-<li>Dose insulin from another source (injection, smart pen)</li>
-<li>Remove insulin that wasn't really given (failed site or forgot to reattach a tubed pump)</li>
-</ul>
-<div class="admonition danger">
-<p class="admonition-title">Be Cautious</p>
-<p>Allowing users to delete events is fairly risky. If a user deletes a dose accidentally, or does not understand the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> impact while in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr>, then Loop may start giving insulin that is not needed.</p>
-<p>One method to deal with insulin that wasn't given is to go <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> for 3 to 6 hours. However, if you take care, you can remove insulin from Loop.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Developer Notes: Pump Events and Insulin Delivery</p>
-<p>Loop stores Pump Events separately from Insulin Delivery. With permissions set to allow Loop to read insulin from Health (recommended), the Insulin Delivery store contains doses entered from Health as well as the subset of pump events that represent doses.</p>
-<p>Pump Events are displayed by tapping an insulin chart on the main screen and viewing the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> tab.</p>
-<p>When you delete a pump event using the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> interface in Loop, the associated entry in Insulin Delivery is not deleted.</p>
-</div>
-<h4 id="bolus">Bolus<a class="headerlink" href="#bolus" title="Anchor link to this Header on this Page">&para;</a></h4>
-<ul>
-<li>When Loop commands the pump to provide a bolus, either manual or automatic, it is shown in the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and in the Health app insulin data list. (It may take a <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> or two to show up in Health, but it will appear.)</li>
-<li>When you add insulin, such as from an injection, to the Health app, Loop reads it and adds it to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. It will not be added to the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> because this is not a pump event.<ul>
-<li>Loop 3 adds a new feature that allows you to add non-pump insulin from within the app instead of requiring you to add it inside the Health app</li>
-</ul>
-</li>
-<li>If you delete an entry from the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> list, but leave that same entry in Health, Loop reads it back from Health.<ul>
-<li>It will not show up in the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, but it will still contribute to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>.</li>
-<li>You must delete a pump event from both Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Health data, best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</li>
-<li>If that dose showed up in <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> but you could not find it in Health, look again after the next Loop cycle.</li>
-</ul>
-</li>
-<li>If you delete an entry from Health, but leave that same entry in Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, Loop reports it to Health again.<ul>
-<li>You must delete a pump event from both the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> list and Health data, best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</li>
+<li><a href="../../operation/algorithm/overview/">Algorithm Overview</a><ul>
+<li><a href="../../operation/algorithm/bolus/">Bolus Recommendations</a></li>
+<li><a href="../../operation/algorithm/prediction/">Blood Glucose Prediction</a></li>
+<li><a href="../../operation/algorithm/temp-basal/">Temp Basal Adjustments</a></li>
 </ul>
 </li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Pro Tip</p>
-<p>Write on a piece of paper the times and values you think you should delete.</p>
-<p>Look at those values in both Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Health Insulin data list.</p>
-<p>Record what Loop is reporting as <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>.</p>
-<p>Review the values one more time, and then delete those entries in both places. Review <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> again. If you made a mistake, you can refer to that written list and adjust appropriately.</p>
-</div>
-<h4 id="basal">Basal<a class="headerlink" href="#basal" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Loop keeps track of how much basal is delivered so the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is properly reported. In older versions of Loop, there may be occasional display glitches, but the <strong>internal</strong> accounting is correct and updates every <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</p>
-<div class="admonition abstract">
-<p class="admonition-title">Developer Notes: Scheduled Basal is Not a Pump Event</p>
-<p>Scheduled basal is not a pump event so you will not see it listed in the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> tab.</p>
-<p>Scheduled basal does not affect <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> when delivered as scheduled.</p>
-<p>The Insulin Delivery store keeps track of the insulin delivered via scheduled basal.</p>
-</div>
-<p>Loop updates the amount of insulin delivered through basal (both scheduled and temporary) to Health at regular intervals - this does not happen every <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> when basal rates are not changing. The updates to Health happen:</p>
-<ul>
-<li>At midnight</li>
-<li>When the scheduled basal rate changes</li>
-<li>When a temporary basal rate changes</li>
-</ul>
-<p>A simple example to illustrate this - for a pump with smallest insulin delivery of 0.05 U:</p>
-<table>
-<thead>
-<tr>
-<th><div style="width:55px"></div> Schedule</th>
-<th><div style="width:55px"></div> Temp Basal (TB)</th>
-<th><div style="width:55px"></div> Health</th>
-<th>Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>12:00 AM<br>0.4 U/hr</td>
-<td>---</td>
-<td>---</td>
-<td>Start of Day / Start of Example</td>
-</tr>
-<tr>
-<td>06:00 AM<br>0.5 U/hr</td>
-<td>---</td>
-<td>06:00 AM<br>Basal<br>2.4 U</td>
-<td>Loop reports insulin delivered by basal for the last 6 hours when the scheduled basal rate has a new entry</td>
-</tr>
-<tr>
-<td>---</td>
-<td>07:15 AM<br>0.0 U/hr</td>
-<td>07:15 AM<br>Basal<br>0.6 U</td>
-<td>Loop reports insulin delivered by basal since last report up to time TB starts</td>
-</tr>
-<tr>
-<td>---</td>
-<td>07:45 AM<br>TB expires</td>
-<td>07:45 AM<br>Basal<br>0 U</td>
-<td>No insulin was delivered during TB</td>
-</tr>
-<tr>
-<td>08:00 AM<br>0.4 U/hr</td>
-<td>---</td>
-<td>08:00 AM<br>Basal<br>0.1 U</td>
-<td>Loop reports insulin delivered by basal since last report; the scheduled basal rate has a new entry</td>
-</tr>
-</tbody>
-</table>
-<h3 id="tidepool-and-apple-healthkit">Tidepool and Apple HealthKit<a class="headerlink" href="#tidepool-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you have a <a href="https://tidepool.org">Tidepool</a> account and use the Tidepool uploader on your Loop phone, the data in Health is uploaded to your Tidepool database where you can view displays with the <a href="https://loopkit.github.io/looptips/data/tidepool/">Tidepool web browser tool</a>.</p>
                 
               
               
@@ -2405,13 +2221,13 @@
       
       
         
-        <a href="../glossary/" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary" rel="next">
+        <a href="../apple-health-faqs/" class="md-footer__link md-footer__link--next" aria-label="Next: Apple Health FAQs" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Glossary
+              Apple Health FAQs
             </div>
           </div>
           <div class="md-footer__button md-icon">

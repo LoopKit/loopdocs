@@ -2148,6 +2148,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../faqs/apple-health-faqs/" class="md-nav__link">
+        Apple Health FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../faqs/glossary/" class="md-nav__link">
         Glossary
       </a>
@@ -2522,8 +2536,8 @@
 <div class="highlight"><pre><span></span><code>public static let defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes = (fast: .minutes(30), medium: .hours(3), slow: .hours(5))
 </code></pre></div>
 <p>Note that if you change from 2 hours to 30 minutes, you must also change the indication before the parentheses.</p>
-<h2 id="adjust-percent-bolus-for-automatic-bolus">Adjust Percent Bolus for Automatic Bolus<a class="headerlink" href="#adjust-percent-bolus-for-automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you are mostly happy with the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> of Automatic Bolus but wish it delivered more or less insulin during every Loop interval, then this customization is for you.</p>
+<h2 id="adjust-percent-bolus-for-automatic-bolus">Adjust Percent Bolus for <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr><a class="headerlink" href="#adjust-percent-bolus-for-automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you are mostly happy with the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> of <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> but wish it delivered more or less insulin during every Loop interval, then this customization is for you.</p>
 <p>This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modified it once and tried it out for a while, it’s easy to go back and change it again.</p>
 <p>With Loop 2.2.x, the end of the line has a comment <code>// %</code>, whereas with Loop 3, there is an explanatory comment (line starting with <code>//</code>) before the line.</p>
 <p><strong>Change just the number and double check that the value is less than 1.</strong></p>

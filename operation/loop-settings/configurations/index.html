@@ -2173,6 +2173,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../faqs/apple-health-faqs/" class="md-nav__link">
+        Apple Health FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../faqs/glossary/" class="md-nav__link">
         Glossary
       </a>
@@ -2476,19 +2490,19 @@
 <h2 id="dosing-strategy"><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr><a class="headerlink" href="#dosing-strategy" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This configuration setting gives you the ability to select the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>. (If you do not see this setting, then you are running Loop v2.2.4 or older.) If you tap on that <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>, it reveals a selection screen, shown in the graphic below, with some explanation.  Note that this <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> feature was available for more than a year in the automatic-bolus <abbr title="version of code within a single repository or workspace repository">branch</abbr>.  Users who have been using the automatic-bolus feature should update as soon as possible to get the other improvements recently added, <a href="../../../faqs/release-faqs/">Loop Releases</a>.</p>
 <p align="center"><img alt="Dosing Strategy selection screen" src="../img/dosing-strategy.svg" width="350" /></p>
-<p>The Automatic Bolus selection causes Loop to provide 40% of the recommended dose as a bolus at the beginning of each Loop cycle (when a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading comes in). This is a faster method of getting the recommended insulin delivered. When Loop delivers extra insulin, the scheduled basal rate continues unchanged.</p>
-<p>Both Temp Basal Only and Automatic Bolus strategies restrict basal rates to reduce the amount of insulin delivered when appropriate.</p>
-<h3 id="temp-basal-only">Temp Basal Only<a class="headerlink" href="#temp-basal-only" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> selection causes Loop to provide 40% of the recommended dose as a bolus at the beginning of each Loop cycle (when a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading comes in). This is a faster method of getting the recommended insulin delivered. When Loop delivers extra insulin, the scheduled basal rate continues unchanged.</p>
+<p>Both <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr> and <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> strategies restrict basal rates to reduce the amount of insulin delivered when appropriate.</p>
+<h3 id="temp-basal-only"><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr><a class="headerlink" href="#temp-basal-only" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ol>
 <li>When your blood glucose (BG) is at or above target, Loop determines the amount of Recommended Bolus based upon your settings.  Subject to your <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>, Loop will deliver the Recommended Bolus over 30 minutes using positive temp basals (i.e., increase over your scheduled basal rate) to increase your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. This decision is re-evaluated during every Loop interval.</li>
 <li>When your blood glucose (BG) is below target, negative temp basals (i.e., reduction of your scheduled basal rate) are used to reduce your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. This decision is also re-evaluated during every Loop interval.</li>
 </ol>
 <p>You can manually bolus at any time by pressing the Bolus icon in the center of Loop’s Main Screen.</p>
-<h2 id="automatic-bolus">Automatic Bolus<a class="headerlink" href="#automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When you first starting Loop, we encourage you to leave automatic boluses disabled until you are sure your settings are dialed in.  To enable automatic boluses, click on Settings – <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> – Automatic Bolus.  This Automatic Bolus checkbox turns-off positive temporary basal so that:</p>
+<h2 id="automatic-bolus"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr><a class="headerlink" href="#automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>When you first starting Loop, we encourage you to leave automatic boluses disabled until you are sure your settings are dialed in.  To enable automatic boluses, click on Settings – <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> – <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>.  This <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> checkbox turns-off positive temporary basal so that:</p>
 <ol>
 <li>When your blood glucose (BG) is at or above target, you receive 40% of the Recommended Bolus at every Loop interval.</li>
-<li>When your blood glucose (BG) is below target, negative temp basals (i.e., reduction of your scheduled basal rate) are used to reduce your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. This decision is re-evaluated during every Loop interval (same as with the Temp Basal Only dosing strategy).</li>
+<li>When your blood glucose (BG) is below target, negative temp basals (i.e., reduction of your scheduled basal rate) are used to reduce your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. This decision is re-evaluated during every Loop interval (same as with the <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr> dosing strategy).</li>
 </ol>
 <p>As with all Loop versions, you can manually bolus at any time by pressing the Bolus icon in the center of Loop's Main Screen.  Any bolus recommendation that you see when you press the Bolus icon will be 100% of the Recommended Bolus.</p>
 <h2 id="carb-ratios">Carb Ratios<a class="headerlink" href="#carb-ratios" title="Anchor link to this Header on this Page">&para;</a></h2>
