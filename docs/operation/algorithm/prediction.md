@@ -2,7 +2,7 @@
 
 Loop uses an algorithm to maintain blood glucose in a correction range by predicting the contributions from four individual effects (insulin, carbohydrates, retrospective correction, and blood glucose momentum) at any time *t* to recommend temporary basal rate corrections and boluses.
 
-![combined effects basic equation](img/predicted_glucose_equation.png)
+$$ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] $$
 
 You can see the individual contributions of these effects by tapping on the predicted blood glucose chart on Loop's status screen. Loop updates this blood glucose prediction every five minutes when a new CGM value has been received and the pump's status has been updated.
 
@@ -88,7 +88,7 @@ Lastly, the combined effect of bolus and basal insulin are visually represented 
 
 The insulin effect can be expressed mathematically:
 
-![insulin effect equation ](img/insulin_effect_equation.png)
+$$ \Delta BG[t] = ISF[t] \times IA[t] $$
 
 where BG is the expected change in blood glucose with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at time t, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in blood glucose due to insulin. The insulin activity accounts for the EGP and any active insulin from basals and boluses.
 
@@ -106,7 +106,7 @@ Loop takes a conservative view of how fast the remaining carbohydrates will abso
 
 Using this initial minimum absorption rate, the remaining carbohydrates are modeled to absorb linearly. For example, if the user enters a 72g carbohydrate meal, and selects an estimated absorption time of 4 hours, then Loop will forecast a 12g/hr absorption rate for the next 6 hours. This rate can be termed the minimum absorption rate, which can be represented mathematically as:
 
-![linear carb effect equation ](img/linear_carb_effect_equation.png)
+$$ MAR[t] = \frac{CA[t]}{1.5 \times d} $$
 
 where MAR is the minimum absorption rate (g/hr), CA is the number of carbohydrates (g) and d is the expected duration (hr) it will take the carbohydrates to absorb.
 
@@ -114,7 +114,7 @@ where MAR is the minimum absorption rate (g/hr), CA is the number of carbohydrat
 
 The linear model above is modulated by an additional calculation that uses recently observed blood glucose data to estimate how fast carbohydrates have been absorbing. The expected change in blood glucose due to insulin effects alone is compared to the actual observed changes in blood glucose. This difference is termed the insulin counteraction effect (ICE):
 
-![dynamic carb effect equation ](img/dynamic_carb_effect.png)
+$$ ICE[t] = OA[t] + IA[t] $$
 
 where, ICE (mg/dL/5 min) is the insulin counteraction effect, OA is the observed activity (mg/dL/5min) or observed change in blood glucose at time *t*, and IA is the insulin activity (mg/dL/5min).
 
@@ -122,15 +122,15 @@ Insulin counteraction effects are caused by more than just carbohydrates, and ca
 
 The insulin counteraction effect is converted into an estimated carbohydrate absorption amount by using the current carbohydrate-to-insulin ratio and the insulin sensitivity factor at the time of the recorded meal entry.
 
-![ice carb effect equation ](img/ice_carb_effect_equation.png)
+$$ AC[t] = ICE[t] \times \frac{CIR[t]}{ISF[t]} $$
 
 where AC is the number of carbohydrates absorbed (g/5min), ICE is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U), and ISF is the insulin sensitivity factor (mg/dL/U) at time *t*.
 
 If multiple meal entries are active (i.e., still absorbing), the estimated absorption is split between each carbohydrate entry in proportion to each carbohydrate entry’s minimum absorption rate. For example, if 72g carbohydrates with an expected absorption time of 4 hours was consumed at 12 pm, and another 72g of carbohydrates with an expected absorption time of 2 hours was consumed at 3 pm, then the minimum absorption rate (see MAR equation above) would be 12 g/hr and 6 g/hr respectively, or 1 g/5min and 0.5 g/5min.
 
-![mar meal 1 equation ](img/mar_12.png)
+$$ MAR[t = 12pm] = \frac{ 72g }{ 1.5 \times 4hr } = 12 \frac{ g }{ hr } = 1 \frac{ g }{ 5min } $$
 
-![mar meal 2 equation ](img/mar_3.png)
+$$ MAR[t = 3pm] = \frac{ 72g }{ 1.5 \times 2hr } = 6 \frac{ g }{ hr } = 0.5 \frac{ g }{ 5min } $$
 
 Examining just the simple linear carbohydrate effect of these two meals:
 
@@ -139,18 +139,18 @@ Examining just the simple linear carbohydrate effect of these two meals:
 If we further expand this example, by assuming the following at 4pm:
 
 * that there are still carbohydrates left to be absorbed from both meals,
-* that the estimated insulin counteraction effect (ICE) is +15 ![ICE units](img/ice_units.png), and
-* the user’s CIR is 10 g/U and the ISF is 50 mg/dL/U,
+* that the estimated insulin counteraction effect (ICE) is $+15 \frac{mg/dL}{5min}$, and
+* the user’s CIR is $10 \frac{g}{U}$ and the ISF is $50 \frac{mg/dL}{U}$,
 
 then the estimated amount of carbohydrates absorbed at 4pm would be 3g:
 
-![combined meal entries](img/at_4.png)
+$$ AC[t = 4pm] = 15 \frac{mg/dL}{5min} \times \frac{10 \frac{g}{U}}{50 \frac{mg/dL}{U}} = 3 \frac{g}{5min} $$
 
 Those 3g of carbohydrates would then be split amongst the meals proportional to their minimum absorption rates:
 
-![combined meal entries](img/meal1.png)
+$$ \text{Proportion to Meal1} = \frac{MAR_{meal1}}{MAR_{meal1} + MAR_{meal2}} = \frac{12}{12+6}=\frac{2}{3} = 66.6\% $$
 
-![combined meal entries](img/meal2.png)
+$$ \text{Proportion to Meal2} = \frac{MAR_{meal2}}{MAR_{meal1} + MAR_{meal2}} = \frac{6}{12+6}=\frac{1}{3} = 33.3\% $$
 
 resulting in 2g of absorption being attributed to Meal 1 and 1g attributed to Meal 2.
 
@@ -162,7 +162,7 @@ If the estimated carbohydrate absorption of a meal entry is less than what would
 
 After the estimated absorbed carbohydrates have been subtracted from each meal entry, the remaining carbohydrates (for each entry) are then forecasted to decay or absorb using the minimum absorption rate. Loop uses this forecast to estimate the effect (active carbohydrates, or carbohydrate activity) of the remaining carbohydrates. The carbohydrate effect can be expressed mathematically using the terms described above:
 
-![combined meal entries](img/combined_bgc.png)
+$$ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t]}{CIR[t]} $$
 
 ## Retrospective Correction Effect
 
@@ -174,32 +174,32 @@ In addition to the modeled effects of insulin and carbohydrates, there are many 
 
 To do this, Loop calculates a retrospective forecast with a start time of 30 minutes in the past, ending at the current time. Loop compares the retrospective forecast to the actual observed change in blood glucose, and the difference is summed into a blood glucose velocity or rate of difference:
 
-![blood glucose velocity equation](img/bgvel.png)
+$$ BG_{vel}=\frac{1}{6} \sum_{t=-30}^{0} RF[t] - BG[t] $$
 
 where BG*vel* is a velocity term (mg/dL per 5min) that represents the average blood glucose difference between the retrospective forecast (RF) and the actual blood glucose (BG) over the last 30 minutes. This term is applied to the current forecast from the insulin and carb effects with a linear decay over the next hour. For example, the first forecast point (t=5) is approximately 100% of this velocity, the forecast point one-half hour from now is adjusted by 50% of the velocity, and points from one hour or more in the future are not affected by this term.
 
 The retrospective correction effect can be expressed mathematically:
 
-![blood glucose retrospective equation](img/bgrc.png)
+$$ \Delta BG_{RC}[t] = BG_{vel} \times \left(1-\frac{t-5}{55}\right) $$
 
 where BG is the predicted change in blood glucose with the units (mg/dL/5min) at time *t* over the time range of 5 to 60 minutes, and the other term gives the percentage of BG*vel* that is applied to this effect.
 
 The retrospective correction effect can be illustrated with an example: if the BG*vel* over the past 30 minutes was -10 mg/dL per 5min, then the retrospective correction effect over the next 60 minutes would be as follows:
 
-|Minutes relative to now (*t=0*)|Percent of BG*vel* Applied to RC Effect| ![img/delta_bgrc.png](img/delta_bgrc.png) |
-|------|-------|-------|
-|5|100%|-10|
-|10|91%|-9.1|
-|15|82%|-8.2|
-|20|73%|-7.3|
-|25|64%|-6.4|
-|30|55%|-5.5|
-|35|45%|-4.5|
-|40|36%|-3.6|
-|45|27%|-2.7|
-|50|18%|-1.8|
-|55|9%|-0.9|
-|60|0%|0|
+| Minutes relative to now (*t=0*) | Percent of $BG_{vel}$ Applied to RC Effect | $\Delta BG_{RC}[t]$ |
+|---------------------------------|--------------------------------------------|---------------------|
+| 5                               | 100%                                       | -10                 |
+| 10                              | 91%                                        | -9.1                |
+| 15                              | 82%                                        | -8.2                |
+| 20                              | 73%                                        | -7.3                |
+| 25                              | 64%                                        | -6.4                |
+| 30                              | 55%                                        | -5.5                |
+| 35                              | 45%                                        | -4.5                |
+| 40                              | 36%                                        | -3.6                |
+| 45                              | 27%                                        | -2.7                |
+| 50                              | 18%                                        | -1.8                |
+| 55                              | 9%                                         | -0.9                |
+| 60                              | 0%                                         | 0                   |
 
 Here’s an example below that shows the retrospective correction effect when the BG*vel* over the past 30 minutes was -10mg/dL/5min.
 
@@ -215,9 +215,9 @@ The blood glucose momentum portion of the algorithm gives weight or importance t
 
 The momentum slope is then blended into the next 20 minutes of predicted blood glucose from the other effects (i.e., insulin, carbohydrates, and retrospective correction effects). This, in essence, makes the next 20 minutes of blood glucose prediction more sensitive to recent blood glucose trends. The blending of the recent trend slope into the next 20 minutes is weighted so that the first prediction point (5 minutes into the future) is highly influenced by the slope, and the influence of the slope gradually decays over the 20 minute time period. The momentum effect can be expressed mathematically as:
 
-![blood glucose momentum equation](img/momentum_equation.png)
+$$ \Delta BG_{M}[t] = M_{slope} \times \left( 1 - \frac{t-5}{15} \right) $$
 
-NOTE: The term ![blood glucose momentum term](img/momentum_term.png) is also applied to the combined insulin, carbohydrates, and retrospective correction effects to get the delta blood glucose prediction.
+NOTE: The term $\left(\frac{t-5}{15}\right)$ is also applied to the combined insulin, carbohydrates, and retrospective correction effects to get the delta blood glucose prediction.
 
 The momentum effect can be illustrated with an example: if the last 3 blood glucose readings were 100, 103, and 106 mg/dL, then the slope would be 3 mg/dL per 5 minutes (0.6 mg/dL per minute). The amount of that recent trend or slope applied to the next 20 minutes of predictions (i.e., the next 4 predictions from the other effects) is roughly 100% (3 mg/dL per 5 min) at 5 minutes, 66% (2 mg/dL per 5 min) at 10 minutes, 33% (1 mg/dL per 5 min) at 15 minutes, and 0% (0 mg/dL per 5 min) at 20 minutes.
 
@@ -240,11 +240,11 @@ It is also worth noting that Loop will not calculate blood glucose momentum in i
 
 As described in the momentum effect section, the momentum effect is blended with the insulin, carbohydrate, and retrospective correction effects to predict the change in blood glucose:
 
-![predicted glucose equation](img/delta_predicted_equation.png)
+$$ \Delta BG[t] = \Delta BG_{M}[t] + \left(\Delta BG_{I}[t] + \Delta BG_{C}[t]+ \Delta BG_{RC}[t] \right) \times min\left(\frac{t-5}{15}, 1\right) $$
 
 Lastly, the forecast or predicted blood glucose BG at time *t* is the current blood glucose BG plus the sum of all blood glucose effects BG over the time interval [t5, t]:
 
-![adding all the deltas](img/sigma_bg_delta.png)
+$$ \widehat{BG}[t] = BG[t_{o}] + \sum_{i=5}^{t} \Delta BG[t_{o+i}] $$
 
 Each individual effect along with the combined effects are illustrated in the figure below. As shown, blood glucose is trending slightly upwards at the time of the prediction. Therefore, the blood glucose momentum effect’s contribution is pulling up the overall prediction from the other three effects for a short time. Retrospective correction is having a dampening effect on the prediction, indicating that the recent rise in blood glucose was not as great as had been previously predicted in the recent past.
 
