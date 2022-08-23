@@ -25,11 +25,10 @@ It is totally understandable if the thought of building and operating your own L
 Building the Loop app is straightforward. There are a lot of steps because they are divided into short segments.
 
 !!! warning "Best Practice: Learn to Build"
-    Users are strongly encouraged to build Loop for themselves. 
+    You are strongly encouraged to build Loop for yourself. 
 
-    * It is not recommended and no links will be found in LoopDocs to providers who build Loop as a service
-    * If you choose to use such a service, you still need to take these steps before starting to Loop:
-        * Procure compatible hardware (documented in Build)
+    * We do not recommend and no links are found in LoopDocs to providers who build Loop as a service
+    * If you choose to use such a service, before you begin, you should:
         * Read all of LoopDocs
         * Know how to Set up and Operate Loop
         * **These steps are important for your safety**
