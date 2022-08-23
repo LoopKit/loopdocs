@@ -16,17 +16,16 @@ If building to a [Simulator](../version/simulator.md) first to try things out, t
 
 ## Getting Ready to Build
 
-Start by clicking through the Build Steps from 1 through 14 and read the top three boxes on each page. On a desktop, you can use `n` for next and `p` for previous.
+Start by clicking through the Build pages from Computer through Build Loop App and read the top three boxes on each page. On a desktop, you can use `n` for next and `p` for previous.
 
 !!! info "Time Estimate"
 !!! abstract "Summary"
 !!! question "FAQs"
 
-(Step 7 and Step 13 are no longer required).
 
-Next, read Steps 1 through 14 completely and skim [Oh dear! Build errors?](build_errors.md). Most of the mistakes you can make when building have already been made. The Build Errors page shows how to fix them.
+Next, read pages from Computer through Build Loop App completely and skim [Oh dear! Build errors?](build_errors.md). Most of the mistakes you can make when building have already been made. The Build Errors page shows how to fix them.
 
-When you are ready to proceed, complete the tasks on each page.  You can do one a day, take a week per step or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help: [Finding Help](../intro/loopdocs-how-to.md#how-to-find-help).
+When you are ready to proceed, complete the tasks on each page.  You can do one a day, take a week per page or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help: [Finding Help](../intro/loopdocs-how-to.md#how-to-find-help).
 
 After you build Loop on your phone, keep following along in the docs as you [Set up](../operation/overview.md) and [Operate](../operation/loop/open-loop.md) your Loop app.
 

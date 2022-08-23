@@ -1,4 +1,4 @@
-# Step 10: Test Settings
+# Test Settings
 
 !!! info "Time Estimate"
     - 2 hours to read the rest of LoopDocs (particularly the "Set up App", "Operate", and "FAQ" sections) and [LoopTips](https://loopkit.github.io/looptips/) thoroughly and thoughtfully
@@ -41,4 +41,4 @@ If you’re fascinated by this topic, read the book *'Think Like A Pancreas'* by
 
 ## Next Step: Make Plans for Loop Data
 
-Now you are ready to move onto Step 11 to [Make Plans for Loop Data](step11.md).
+Now you are ready to make plans for [Loop Data](step11.md).

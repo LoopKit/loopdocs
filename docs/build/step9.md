@@ -65,4 +65,4 @@ You are now done setting up Xcode.  Great job!  You will not need to redo the ac
 
 ## Next Step: Test Settings
 
-Now you are ready to move onto Step 10 to [Test Your Settings](step10.md).
+Now you are ready to [Test Your Settings](step10.md).

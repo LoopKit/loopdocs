@@ -1,4 +1,4 @@
-# Step 1: Compatible Computer
+# Compatible Computer
 
 !!! info "Time Estimate"
     - 5 minutes, if you have a Mac with Monterey macOS (12.x)
@@ -80,7 +80,7 @@ Monterey is the best operating system for building Loop. You can install Montere
 
 ## New Apple Computers
 
-Many new Apple computers use the M1 or M2 chips, instead of Intel chips. These computers make building Loop extremely fast. With these computers, yßou need to [configure the terminal app for Rosetta](#configure-terminal-app-for-rosetta). This only needs to be done one time.
+Many new Apple computers use the M1 or M2 chips, instead of Intel chips. These computers make building Loop extremely fast. With these computers, you need to [configure the terminal app for Rosetta](#configure-terminal-app-for-rosetta). This only needs to be done one time.
 
 ### Configure Terminal App for Rosetta
 

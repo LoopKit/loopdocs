@@ -1,6 +1,6 @@
-# Step 14: Build Loop App
+# Build the Loop App
 
-## Build Loop App Summary
+## Build the Loop App Summary
 
 !!! info "Time Estimate"
     - 60-80 minutes for first time builders
@@ -284,7 +284,7 @@ After signing the 4 targets, click on the Loop icon under the `PROJECTS` heading
 
     There are [more targets](step13.md#signing-targets) which must be signed to build the dev branch.
 
-    If you read the hint in [Step 13](step13.md#signing-targets) and edited the LoopConfigOverride.xcconfig, your targets are already signed.
+    If you followed the directions in [Loop-dev](step13.md#signing-targets) and edited the LoopConfigOverride.xcconfig, your targets are already signed.
 
     - **Repeat: only build the dev branch if you're a developer/advanced user**
 

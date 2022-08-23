@@ -1,4 +1,4 @@
-# Step 12: Meet the Community
+# Meet the Community
 
 !!! info "Time Estimate"
     - Read about your [Social Media Options](../intro/loopdocs-how-to.md#how-to-find-help): 5 minutes
@@ -68,6 +68,6 @@ If you've searched the docs and read the info already, then please include that 
 
 ## Next Step: Build Loop App
 
-Now you are ready to move onto Step 14 to [Build Loop App](step14.md) for the released version of the code. This is the version new Loopers should start with.
+Now you are ready to [Build the Loop App](step14.md) for the released version of the code. This is the version new Loopers should start with.
 
-What about Step 13? That page has been rewritten for [Advanced Users Only](step13.md) to build and test the development branch that soon will be released as Loop 3.
+If you understand what a development branch is and want to build the development branch for Loop or the FreeAPS fork, use this page [Advanced Users Only](step13.md), to build and test the development branch of the app. The Loop dev branch will be released as Loop 3.

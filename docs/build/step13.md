@@ -20,7 +20,7 @@ The development branch supports Omnipod DASH and many less experienced users wan
 
 ## Download Loop-dev
 
-This page assumes experience with using the Build-Select script in [Build Step 14](step14.md).
+This page documents using a script, different from the usual Build-Select script, to build the development branch of the app. If you have not previously built the released version of the app using the Build-Select script as documented in [Build the Loop App](step14.md), you may find the documentation sparse.
 
 * A new script has been prepared to assist building the development branch for Loop and FreeAPS
 * This script downloads the development branch and then selects a specific commit that has been lightly tested
@@ -54,7 +54,7 @@ The next graphic warns you about building a development branch. The date and com
 ![message about development branch commit](img/build-select-dev.svg){width="700"}
 {align="center"}
 
-Continue following directions with the script. Review [Build Step 14: Wait for Download to Complete](step14.md#wait-for-download-to-complete) then return to this page if you need more documentation.
+Continue following directions with the script and wait for the download to complete. If you get errors, [review this section](step14.md#xcode-errors-with-build-select) of the directions for building the released code. Resolve the errors, if possible, then return to this page.
 
 After the download step, the specific commit will be "checked out". Verify there are no errors and proceed.
 
@@ -118,7 +118,7 @@ If you are using a paid Developer ID, skip ahead on this page to [Build Loop](#b
 
 ### Loop-dev with Free Account
 
-Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the [Build Step 14: Free Account](step14.md#free-account) section.
+Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the [Build with Free Account](step14.md#free-account) section.
 
 If you know your Personal Team ID, you can enter it as directed in [Signing Targets](#signing-targets) above.
 
@@ -151,7 +151,7 @@ Refer to the GIF below:
 !!! warning "Free Account users"
     Sorry - the documentation is not updated yet. 
     
-    Read [Loop-dev with Free Account](#loop-dev-with-free-account) in addition to [Build Step 14: Free Account](step14.md#free-account)
+    Read [Loop-dev with Free Account](#loop-dev-with-free-account) in addition to the released build [Free Account](step14.md#free-account) documentation.
 
 ### Package Dependency Error
 
@@ -219,6 +219,8 @@ If you used earlier versions of Loop, please be aware that absorption times have
 ## Update Loop-dev
 
 While Loop-dev is under active test, you should update frequently.
+
+When building frequently, it is optional to update your provisioning profile with every new build. If you want to always ensure one year, follow the steps for [Updating: Step 4a](updating.md#step-4a-delete-old-provisioning-profiles) to use a different script for this action.
 
 Checking for updates every week is a good idea.  Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
 

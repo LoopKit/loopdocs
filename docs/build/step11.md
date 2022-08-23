@@ -1,4 +1,4 @@
-# Step 11: Make Plans for your Loop Data
+# Make Plans for your Loop Data
 
 !!! info "Time Estimate"
     - Nightscout: 1-2 hours if you've never done it before and work slowly
@@ -29,4 +29,4 @@ All of the options are free and easy to setup. Take some time to familiarize you
 
 ## Next Step: Meet Community
 
-Now you are ready to move onto Step 12 to [Meet Community](step12.md).
+Now you are ready to [Meet the Community](step12.md).
