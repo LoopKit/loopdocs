@@ -38,7 +38,7 @@ The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **require
 
 If your macOS does not meet the minimum, check to see if you can [update your macOS](step1.md#check-your-macos)
 
-If you are an **existing Looper with an older macOS**, [please see this warning](#older-operating-system-warning). Do not update your phone to iOS 15.
+If you are an **existing Looper with an older macOS**, please click to [Read the Warning](#older-operating-system-warning) **before** you update your phone to iOS 15.
 
 
 !!! warning "iOS Dictates Your Computer Needs"

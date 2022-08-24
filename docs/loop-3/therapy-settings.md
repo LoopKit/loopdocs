@@ -137,6 +137,8 @@ Delivery Limits are safety guardrails for your insulin delivery.
 
 Maximum Basal Rate is the maximum automatically adjusted basal rate that Loop is allowed to enact to help reach your correction range. Some users choose a value 2, 3, or 4 times their highest scheduled basal rate. Work with your healthcare provider to choose a value that is higher than your highest scheduled basal rate, but as conservative or aggressive as you feel comfortable.
 
+If the Dosing Strategy is configured to Temp Basal Only, then the maximum basal rate can be used to limit how much extra insulin can be supplied automatically.
+
 [Guardrails for Maximum Basal Rate](#guardrails-for-maximum-basal-rate)
 
 ### Maximum Bolus
@@ -146,6 +148,8 @@ Maximum Bolus is the highest bolus amount that you will allow Loop to recommend 
 If you manually enter a value in the Bolus screen that is greater than the Maximum Bolus setting, Loop will show a warning message and refuse to bolus that amount.
 
 For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.
+
+If the Dosing Strategy is configured to Automatic Bolus, then the maximum bolus that is automatically supplied is 40% of the maximum bolus, but this can be applied at 5-minute intervals.
 
 [Guardrails for Maximum Bolus](#guardrails-for-maximum-bolus)
 
