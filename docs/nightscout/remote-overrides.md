@@ -1,4 +1,4 @@
-# Setup Remote Overrides
+# Set Up Remote Overrides
 
 You can now use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop.
 

@@ -1,6 +1,6 @@
 # Overrides
 
-Overrides were developed as a method of letting Loop know that you have a situation affecting your overall insulin needs, without needing to manually edit your basal schedule/ISF/carb ratios individually. Examples where this can be helpful include hormone cycles, steroid medications, exercise, and other situations which may temporarily (either shorter or longer term) affect your underlying insulin needs.
+Overrides let Loop know selected settings are modified for the duration of the override. The override can change either the correction range or the overall insulin needs or both. When you set an override on insulin needs, the override adjusts basal schedule, ISF, and CR together. Examples where this can be helpful include hormone cycles, steroid medications and/or exercise.
 
 Override presets are (1) optional and (2) can be configured within Loop's workout icon (the little blue heart icon in the Loop toolbar). Once override presets are created, they can be turned on/off by using the workout icon as well.
 
@@ -9,14 +9,43 @@ Override presets are (1) optional and (2) can be configured within Loop's workou
 
 ## How Overrides Work
 
-Overrides allow you to specify an overall insulin needs adjustment, a target range, and a duration for the override with each preset. The overall insulin needs adjustment is an adjustment to your scheduled basal rates, carb ratios, and insulin sensitivities. In other words, the overall insulin needs selection will affect boluses, temp basals, and correction recommendations.
+Overrides allow you to specify:
 
-Notice the fine-print below the orange bar showing the overall adjustment graphic..."Basal, bolus, and correction insulin dose amounts are increased by 20%" in the example with a 120% overall insulin needs adjustment. So, 100% overall needs means no multiplier will be applied to your basal, insulin sensitivities, or carb ratio...but you could still use a 100% preset simply to define a different target range for a period of time.
+* an overall insulin needs adjustment
+* a correction target range
+* a duration in 15 minute increments (or indefinite)
+* a start time
 
-Recapping: If you set an overall insulin needs adjustment below 100%, you are telling Loop that you are more insulin sensitive and will need a lighter touch with all things insulin. If you set an overall insulin needs adjustment above 100%, you are telling Loop that you are less insulin sensitive and will need a more aggressive touch with all things insulin.
+The override requires your Loop gear be with you. For example, if Loop sets a zero temp basal rate based on an override and then you leave your gear behind; at the end of half an hour, your pump will resume scheduled insulin delivery.
 
 ![img/override-entry.jpeg](img/override-entry.jpeg){width="300"}
 {align="center"}
+
+The **overall insulin needs** is applied to your basal rates, insulin sensitivities and carb ratios for the duration of the override.
+
+* If the insulin needs is left at 100%, no change is made to basal rates, ISF or CR
+* If you set an overall insulin needs adjustment _below_ 100%, you are telling Loop you are more insulin sensitive and need a lighter touch.
+    * Loop uses basal rates decreased from scheduled rates
+    * Loop uses ISF and CR numbers increased from settings
+* If you set an overall insulin needs adjustment _above_ 100%, you are telling Loop you are less insulin sensitive and need a heavier touch.
+    * Loop uses basal rates increased from scheduled rates
+    * Loop uses ISF and CR numbers decreased from settings
+* While the override is active, the modified basal rates, ISF and CR are applied for **every** correction and meal entry
+
+The **target range** replaces the correction range target for the duration of the override.
+
+* If the target range is left blank, your scheduled correction range continues to be in effect
+* If the target range is specified, that range is used instead of your scheduled correction range
+
+For an override to be accepted:
+
+* You must change either insulin needs or target range
+* A named override can be saved and used again
+    * To save the override, you must supply a name and an icon
+    * Named overrides can be set to occur at a scheduled time
+* A Custom override is used only once
+* Any override can be edited while it is active
+
 
 ## How Overrides Do NOT Work
 
@@ -26,7 +55,7 @@ Overrides will work while you are Looping. Sounds obvious, right? But, the thing
 
     If you stop Looping (i.e., walk away from your gear or glucose reading is stale), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates in your Therapy Settings. Your adjusted needs as set-up in any override will not continue if your Loop is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and RileyLink and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals.
 
-### Avoid Extreme Insulin Need Setting
+### Avoid Extreme Insulin Needs Setting
 
 There have been users who select a 10% overall insulin need. This is NOT the same as choosing a 10% temporary basal with the PDM. This changes your basal rates, ISF and CR by a factor of 10!
 
@@ -41,8 +70,8 @@ There have been users who select a 10% overall insulin need. This is NOT the sam
                 - Basal supplied is 10% of Therapy Setting value
         - Loop suggests a tiny bolus and user manually boluses the amount they know the food needs
             - User glucose may be normal BUT
-            - Loop predicts a negative eventual glucose (prediction only - this will never happen)
-            - Loop immediately withholds all basal until prediction normalizes
+                - Loop predicts a negative eventual glucose (prediction only - this will never happen)
+                - Loop immediately withholds all basal until prediction normalizes
 
 
 Instead of selecting 10%, raise your correction range with a moderate needs adjustment. Loop tends to suspend insulin delivery via temp basals with the next CGM reading.
@@ -71,13 +100,13 @@ When you've made your selections, save the preset using the "Save" button in the
 
 ### Select 1% Sensitivity
 
-The selectable Override Sensitivity values are not limited by the default picker values of 10%.
+The selectable Overall Insulin Needs values are not limited by the default picker values of 10%.
 
-* When adjusting Sensitivty, press and hold the "orange" sensitivity bar, highlighted by the red rectangle in the graphic below
-* Move your finger left and right to adjust sensitivity by 1%
+* When adjusting Needs, press and hold the "orange" bar, highlighted by the red rectangle in the graphic below
+* Move your finger left and right to adjust by 1%
 * Release to select desired level
 
-![press and hold within the sensitivity bar to make 1% adjustments](img/override-one-percent.svg){width="200"}
+![press and hold within the insulin needs bar to make 1% adjustments](img/override-one-percent.svg){width="200"}
 {align="center"}
 
 ## Activate an Override
@@ -94,7 +123,7 @@ The heart will be highlighted in a blue square while active and the [HUD Status 
 
 ### Schedule an Override
 
-You can setup a future start time when selecting a saved override by tapping on the calendar icon to the right of the override. Adjust the "Start time" row. Tap the "Enable" button in the top right corner.
+You can set up a future start time when selecting a saved override by tapping on the calendar icon to the right of the override. Adjust the "Start time" row. Tap the "Enable" button in the top right corner.
 
 A future override can be very helpful, for example, to set an exercise override the night before your workout. Set your exercise override to activate 2 hours before you wake up for your 5 am spin class. You'll wake up with less insulin on board and at your desired exercise targets, without needing to set an alarm even earlier.
 
@@ -115,7 +144,7 @@ Tap on the active override in the [HUD Status Row](../../loop-3/displays_v3.md#h
 This only affects this override during the current period. It is not saved to that named override. For example, you can extend the duration or modify the needs value or target value based on a temporary situation.
 
 !!! info "Higher Priority Messages"
-    If the HUD Status Row is displaying a higher priority message, you must wait for that message to complete before you'll be able to edit an active override.
+    If the HUD Status Row is displaying a higher priority message, you must wait for that message to complete before you'll be able to edit an active override. If you want to edit an active override, you can choose to cancel an active bolus and edit the override immediately.  The edited override will then be in effect for the next Loop cycle or manual recommendation.
 
     HUD Status Row messages with higher priority:
 
@@ -125,4 +154,4 @@ This only affects this override during the current period. It is not saved to th
 
 ## Remote Overrides
 
-You can also use your Nightscout site to activate/deactivate your Loop's override presets. To accomplish this, you will need to do some legwork as outlined on [this page for how how to setup Remote Overrides in Nightscout](../../nightscout/remote-overrides.md) and you will need to be using a paid Apple developer account. Remote overrides require Apple Push Notifications service, and that is only available on paid accounts.
+You can also use your Nightscout site to activate/deactivate your Loop's override presets. To accomplish this, you will need to do some legwork as outlined on [this page for how how to set up Remote Overrides in Nightscout](../../nightscout/remote-overrides.md) and you will need to be using a paid Apple developer account. Remote overrides require Apple Push Notifications service, and that is only available on paid accounts.
