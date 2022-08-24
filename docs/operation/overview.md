@@ -25,7 +25,7 @@ Set up App: Step 2 is to select and configure your insulin pump. There are separ
 
 ## Add CGM
 
-Set up App: Step 3 is to add a [CGM source](loop-settings/cgm.md) for your Loop app. If you are wondering which CGMs are supported natively by Loop, check [Build Step 4](../build/step4.md).
+Set up App: Step 3 is to add a [CGM source](loop-settings/cgm.md) for your Loop app. If you are wondering which CGMs are supported natively by Loop, check [Compatible CGM](../build/step4.md).
 
 ![img/add-cgm-main.jpeg](img/add-cgm-main.jpeg){width="250"}
 {align="center"}

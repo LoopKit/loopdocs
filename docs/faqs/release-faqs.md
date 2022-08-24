@@ -120,7 +120,7 @@ Released October 3, 2020 with "fixes" introduced without renumbering the version
 * Pod fault handling improvements (Thanks @itsmojo!)
 * Fix issue with pod status screen not allowing new pod pairing or continuing of interrupted pairing.
 * October 22, 2020, update travis to make it work with Xcode 12
-* January 19, 2021, pin the carthage to 0.36.0.  Users no longer required to install homebrew or carthage (Build Step 7 is now skipped.)
+* January 19, 2021, pin the carthage to 0.36.0.  Users no longer required to install homebrew or carthage
 
 ## Older Loop Releases
 

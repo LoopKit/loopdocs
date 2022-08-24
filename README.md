@@ -117,7 +117,7 @@ To add header row, use:
 Now using the standard set of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) and css styles that come with the Material theme.
 
 The admonitions in use are:
-First 3 boxes for Build Steps:
+First 3 boxes for Build Pages:
 * `info`
 * `abstract`
 * `question`

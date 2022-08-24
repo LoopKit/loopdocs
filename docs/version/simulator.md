@@ -4,15 +4,15 @@
 
 There are 2 main types of simulators users may want to build. Each of these require less up-front acquisition of hardware and may be desirable as a first step towards becoming a Looper.
 
-Please, review all the Build Steps, even if you will be skipping some.
+Please, review all the Build pages, even if you will be skipping some.
 
 ### Build to a Simulated iPhone on a Computer
 
-* Need access to a mac or virtual computer, see [Computer](../build/step1.md)
-* Build Pages you can skip
-    * iPhone/iPod
-    * Pump
-    * CGM
+* Need access to a mac or virtual computer, see [Compatible Computer](../build/step1.md)
+* Build pages you can skip
+    * Compatible iPhone/iPod
+    * Compatible Pump
+    * Compatible CGM
     * Order a RileyLink
     * Apple Developer Program
 * Follow [Download Xcode](../build/step8.md)
@@ -24,11 +24,11 @@ Please, review all the Build Steps, even if you will be skipping some.
 
 ### Build to a Real iPhone and use a Simulated Pump and CGM
 
-* Need access to a mac or virtual computer, see [Computer](../build/step1.md)
-* Need access to an iPhone or iPod, see [iPhone/iPod](../build/step2.md)
+* Need access to a mac or virtual computer, see [Compatible Computer](../build/step1.md)
+* Need access to an iPhone or iPod, see [Compatible iPhone/iPod](../build/step2.md)
 * Pages you can skip
-    * Pump
-    * CGM
+    * Compatible Pump
+    * Compatible CGM
     * Order a RileyLink
     * Apple Developer Program
 * Follow [Download Xcode](../build/step8.md)

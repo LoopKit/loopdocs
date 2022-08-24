@@ -43,7 +43,7 @@ If you are an **existing Looper with an older macOS**, please click to [Read the
 
 !!! warning "iOS Dictates Your Computer Needs"
 
-    The more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS needs to be to build Loop. A new build is required at least once a year. More information on iOS is in [Build Step 8: Download Xcode](step8.md#download-xcode).
+    The more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS needs to be to build Loop. A new build is required at least once a year. More information on iOS is in [Download Xcode](step8.md#download-xcode).
 
 Do not use any of the beta macOS versions. (If you don't know what that means, you aren't using one.)
 
@@ -59,7 +59,7 @@ Apple says upgrading to macOS Monterey requires 26 GB of available storage.
 
 ## Check the Space Available
 
-You need to have 50 GB free space in order to install Xcode in [Build Step 8: Download Xcode](step8.md). At the top of the menu on the graphic above, click on the Storage Tab highlighted with a red rectangle.
+You need to have 50 GB free space in order to install Xcode in [Download Xcode](step8.md). At the top of the menu on the graphic above, click on the Storage Tab highlighted with a red rectangle.
 
  To free up space, move things like photos to an external drive. The Xcode application cannot be run from an external drive.
 

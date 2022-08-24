@@ -94,8 +94,8 @@ Next you are asked which version of Loop you would like to build. Type 1 and ret
 
     You missed one of these steps:
 
-    * [Build Step 8: Install Xcode](step8.md)
-    * [Build Step 9: Xcode command line tools](step9.md)
+    * [Install Xcode](step8.md)
+    * [Xcode command line tools](step9.md#command-line-tools)
 
 ### Wait for Download to Complete
 
