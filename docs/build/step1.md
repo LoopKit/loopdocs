@@ -38,7 +38,7 @@ The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **require
 
 If your macOS does not meet the minimum, check to see if you can [update your macOS](step1.md#check-your-macos)
 
-If you are an **existing Looper with an older macOS**, [please see this warning](#older-operating-system-warning). Do not update your phone to iOS 15.
+If you are an **existing Looper with an older macOS**, [please see this warning](#older-operating-system-warning) **before** you update your phone to iOS 15.
 
 
 !!! warning "iOS Dictates Your Computer Needs"
@@ -80,7 +80,7 @@ Monterey is the best operating system for building Loop. You can install Montere
 
 ## New Apple Computers
 
-Many new Apple computers use the M1 or M2 chips, instead of Intel chips. These computers make building Loop extremely fast. With these computers, yßou need to [configure the terminal app for Rosetta](#configure-terminal-app-for-rosetta). This only needs to be done one time.
+Many new Apple computers use the M1 or M2 chips, instead of Intel chips. These computers make building Loop extremely fast. With these computers, you need to [configure the terminal app for Rosetta](#configure-terminal-app-for-rosetta). This only needs to be done one time.
 
 ### Configure Terminal App for Rosetta
 
