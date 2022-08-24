@@ -58,13 +58,18 @@ There may be a figure illustrating the change.
 
 Below the figure, the original, and in some cases, the modified code will be displayed as text.
 
+* Most customizations show the original line of code that you will be changing
+    * Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs
+    * In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs
+
 To search using the `Key_Phrase` (see graphic below for clarification):
 
-* A copy button is available when you hover your mouse in the right-hand side of the block below the title `Key_Phrase`,  click on it to copy the phrase
+* A copy button is available when you hover your mouse in the right-hand side of the block below the title `Key_Phrase`;  click on it to copy the phrase
 * In Xcode, tap the Find menu item and select `Find in Workspace`
-* Paste the text into the find search-box that opens on upper left of Xcode screen and hit enter
-* A series of options show up underneath the find search-box
-* The file in which the line is located is reported and then one or more lines in that file with that word or phrase are listed
+* Paste the text into the Find search-box that opens on upper left of Xcode screen and hit enter
+* You should see a message `1 result in 1 file` (for most cases)
+    * Some customizations will show more than one result, but that will be explained in the directions for that customization
+* The file in which the line is located is reported showing the line in that file containing the `Key_Phrase`
 * Click on the one you think is correct and it will display in the main middle window of Xcode with the Keyword highlighted on the line you selected
     * The `Key_Phrase` was selected to limit the search to just the relevant line (if possible)
     * In some cases, the `Key_Phrase` gets you close but not exactly on the line where you need to make the modifications - please read carefully
@@ -178,7 +183,7 @@ Note that if you change from 2 hours to 30 minutes, you must also change the ind
 
 If you are mostly happy with the Dosing Strategy of Automatic Bolus but wish it delivered more or less insulin during every Loop interval, then this customization is for you.
 
-This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modified it once and tried it out for a while, it’s easy to go back and change it again.
+This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modify it once and try it out for a while, it’s easy to go back and change it again.
 
 With Loop 2.2.x, the end of the line has a comment `// %`, whereas with Loop 3, there is an explanatory comment (line starting with `//`) before the line.
 
@@ -305,7 +310,7 @@ The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-se
 
 If you build Loop-dev over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app will crash when you try to onboard.
 
-The solution (until this is fixed) is to lower the minimum value to be at or below the value you have currently set.  Rebuild the app with the modified settings and you should be able to continue the onboarding process.
+The solution (until this is fixed) is to customize and lower the minimum value to be at or below the value you have currently set.  Rebuild the app with the modified settings and you should be able to continue the onboarding process.
 
 
 ``` title="Key_Phrase"
@@ -328,7 +333,7 @@ and
 
 Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
 
-If fixing a crashed app during onboarding, you must lower the 87 to match or be less than what is on your old settings.
+If fixing a crashed app during onboarding, you must lower the 87 to match or be less than what is in your old settings.
 
 ## Adjust Future Carbs Time Interval
 
