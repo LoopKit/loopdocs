@@ -9,7 +9,7 @@ Welcome to the "LoopDocs" website.  This is a great place to start to learn all 
 
 This site takes you step-by-step through the process to build, set up and operate the Loop app.  You do not need a technical or computer background to do this.
 
-Loop requires a substantial time commitment.  You need to learn the information on this site and follow the steps carefully. Consider doing this over a period of time and reviewing the materials more than once.
+Loop requires a substantial time commitment.  In order to become a proficient looper, you need to learn the information on this site and follow the steps carefully. Consider doing this over a period of time and reviewing the materials more than once.
 
 You will need to test and perhaps adjust your settings to be successful with Loop, or any hybrid closed-loop system. In addition to the documentation found on this site, you will find links as you read to a robust support community.
 
