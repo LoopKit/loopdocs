@@ -4,15 +4,15 @@
 
 To Loop you need a:
 
-1. [Computer](../build/step1.md#macos) (Mac preferred)
+1. [Compatible Computer](../build/step1.md#macos)
 1. [Compatible iPhone/iPod Touch](../build/step2.md)
-1. Compatible insulin pump: [Medtronic or Omnipod](../build/step3.md)
+1. [Compatible insulin pump: Medtronic or Omnipod](../build/step3.md)
 1. [Compatible CGM](../build/step4.md)
 1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
 1. [Apple Developer Membership](../build/step6.md) (not needed if you rebuild weekly)
 1. [Xcode (a free Apple application)](../build/step8.md)
 
-If building to a [Simulator](../version/simulator.md) first to try things out, the only requirements are a computer and Xcode.
+If building to a [Simulator](../version/simulator.md) to try things out, the only requirements are a computer and Xcode.
 
 ## Getting Ready to Build
 
