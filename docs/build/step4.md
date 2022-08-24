@@ -60,7 +60,9 @@ There are other CGM, such as Libre (with BluCon or Miao Miao), Eversense and Med
 ## Next Step
 
 If your compatible pump is Medtronic or Omnipod (not DASH)
+
 * Next step is to [Order a RileyLink Compatible Device](step5.md)
 
 If your compatible pump is Omnipod DASH
+
 * Next step is to enroll in the [Apple Developer Program](step6.md).
