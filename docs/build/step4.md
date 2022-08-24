@@ -1,4 +1,4 @@
-# Step 4: Compatible CGM
+# Compatible CGM
 
 !!! info "Time Estimate"
 
@@ -57,6 +57,10 @@ Loop is capable of downloading Dexcom Share data for use in modeling BG. However
 
 There are other CGM, such as Libre (with BluCon or Miao Miao), Eversense and Medtronic Guardian sensors. Loop does not natively support those CGMs.  If you would like to use one of those alternate CGMs and Loop, you will need to look into third-party integrations to allow Loop to access the blood glucose data. First search for previous posts on the topic and then ask questions in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site. Currently, there are no solutions for Eversense or Guardian CGM to be used with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone.
 
-## Next Step: Order a RileyLink Compatible Device
+## Next Step
 
-Now you are ready to move onto Step 5 to [Order a RileyLink Compatible Device](step5.md).
+If your compatible pump is Medtronic or Omnipod (not DASH)
+* Next step is to [Order a RileyLink Compatible Device](step5.md)
+
+If your compatible pump is Omnipod DASH
+* Next step is to enroll in the [Apple Developer Program](step6.md).

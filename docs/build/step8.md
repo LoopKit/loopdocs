@@ -1,4 +1,4 @@
-# Step 8: Download Xcode
+# Download Xcode
 
 !!! info "Time Estimate"
     - 45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.
@@ -130,4 +130,4 @@ So, if you see that error message, realize you may have to update your macOS to 
 
 ## Next Step: Xcode Preferences
 
-Now you are ready to move onto Step 9 to [work on Xcode Preferences](step9.md).
+Now you are ready to set up [Xcode Preferences](step9.md).

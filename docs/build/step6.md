@@ -1,4 +1,4 @@
-# Step 6: Enroll in Apple Developer Program
+# Enroll in Apple Developer Program
 
 !!! info "Time Estimate"
     - 15-20 minutes to complete the enrollment forms
@@ -59,8 +59,8 @@ PaidLoop will know nothing about the settings and information you had stored in 
 
 Paid account enrollment is all done through Apple's Developer Program website. Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual paid account.
 
-If you choose to use the free account, you don't have to do anything on that website. You'll just wait for Step 8 Xcode Preferences and we will get your free account then.
+If you choose to use the free account, you don't have to do anything on that website. You'll just wait for Xcode Preferences and we will get your free account then.
 
 ## Next Step: Install Xcode
 
-Now you are ready to skip to Step 8 to [Install Xcode](step8.md). And if you've been counting - yes, Step 7 is no longer required.
+Now you are ready to [Install Xcode](step8.md).

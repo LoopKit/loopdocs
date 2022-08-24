@@ -1,4 +1,4 @@
-# Step 3: Compatible Pump
+# Compatible Pump
 
 !!! info "Time Estimate"
     - Omnipod users: 3 seconds to remember which PDM you've been using.
@@ -176,4 +176,4 @@ Insulet has announced their DASH system as an eventual replacement for the Eros/
 
 ## Next Step: Compatible CGM
 
-Now you are ready to move onto Step 4 to check if you have a [Compatible CGM](step4.md).
+Now you are ready to check if you have a [Compatible CGM](step4.md).

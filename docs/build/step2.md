@@ -1,4 +1,4 @@
-# Step 2: Compatible iPhone or iPod touch
+# Compatible iPhone or iPod touch
 
 !!! info "Time Estimate"
     - 5 minutes, to check your iOS version
@@ -113,4 +113,4 @@ Apple released iOS 15.4 on March 14, 2022.
 
 ## Next Step: Compatible Pump
 
-Now you are ready to move onto Step 3 to check if you have a [Compatible pump](step3.md).
+Now you are ready to check if you have a [Compatible Insulin Pump](step3.md).

@@ -105,5 +105,5 @@ Many new Apple computers use the M1 or M2 chips, instead of Intel chips. These c
 
 ## Next Step: Compatible iPhone/iPod Touch
 
-In Step 2, you will check if you have a [Compatible iPhone/iPod touch](step2.md).
+Now you are ready to check if you have a [Compatible iPhone/iPod touch](step2.md).
 

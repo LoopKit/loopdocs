@@ -1,4 +1,4 @@
-# Step 9: Xcode Preferences
+# Xcode Preferences
 
 !!! info "Time Estimate"
     - about 10-15 minutes to install the Command Line Tools
@@ -11,7 +11,7 @@
 !!! question "FAQs"
     - **"I still only see an account with `(personal team)` beside it even though I enrolled in the paid Developer Account program...what should I do?"** You should check your spam email box in case Apple sent you an email there. Make sure you've waited the 48 hours that Apple says it may take to get your account approved. If it's been 48 hours and you still don't see anything in your email, contact Apple support and ask them about the status of your enrollment. It may be held up by something on their end.
 
-Since you've been working in order, you will now have Xcode installed on your computer from Step 8. You will also have enrolled in the Apple Developer program with a paid account, if that was your selection, in Step 6. Now we need to tell Xcode about your Developer Account. But first a few more steps.
+Since you've been working in order, you will now have Xcode installed on your computer. You will also have enrolled in the Apple Developer program with a paid account, if that was your selection. Now we need to tell Xcode about your Developer Account. But first a few more steps.
 
 **Did your computer reboot following the Xcode installation. If not, reboot now.**
 

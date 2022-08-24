@@ -1,4 +1,4 @@
-# Step 5: Order a RileyLink Compatible Device
+# Order a RileyLink Compatible Device
 
 !!! info "Time Estimate"
     - 15-20 minutes to read about RileyLink compatible devices
@@ -73,4 +73,4 @@ The population of DIY loopers (Loop and Android APS) has grown enough that you m
 
 ## Next Step: Enroll in Apple Developer Program
 
-Now you are ready to move onto Step 6 to [enroll in the Apple Developer Program](step6.md).
+Now you are ready to enroll in the [Apple Developer Program](step6.md).
