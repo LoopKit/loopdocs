@@ -22,7 +22,7 @@ The RileyLink compatible device is an open-source hardware device that can bridg
 
 The next version of Loop (currently being tested in the dev branch) will have DASH support (the pod with the Blue needle cap - direct Bluetooth to the phone with no need for a RileyLink compatible device). Please - be patient.  If you are not already an experienced Looper willing to test code under development, wait until this code is released.
 
-**The released version of Loop will not work without a RileyLink compatible device.**
+Medtronic and Omnipod Eros pumps require a RileyLink compatible device.
 
 ![Omnipod or Medtronic pump communicating through RileyLink to phone running Loop app](img/rileylink-comm-pod-mmt.svg){width="600"}
 
@@ -35,9 +35,11 @@ There used to be just one option, the original RileyLink. Now there are more opt
 
 - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the GetRileyLink organization for all the RileyLink compatible devices listed below
 - RileyLink
-    - Designed by Pete Schwamb, available from [GetRileyLink](https://getrileylink.org)
+    - Designed by Pete Schwamb
     - Rechargable battery (max 36 hours per charge)
-    - Must order either Omnipod or Medtronic version
+    - No longer available new, check these Facebook Groups for used ones:
+        * [Loop Resale](https://www.facebook.com/groups/301508128131405/)
+        * [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
 - OrangeLink
     - Designed by Vic Wu, available from [GetRileyLink](https://getrileylink.org)
     - Uses 2 AAA batteries, batteries typically last weeks or more, depending on batteries/pump type
@@ -62,7 +64,7 @@ There is an entire FAQs page on [RileyLink Compatible Devices](../faqs/rileylink
 Sections of interest include:
 
 * [Firmware Update](../faqs/rileylink-faqs.md#orangelink-firmware) information on the OrangeLink
-* [Ema and Orange Patch](../faqs/rileylink-faqs.md#emalink-and-orangelink-features) to see extra features on the Loop app screens
+* [Ema and Orange Patch](../faqs/rileylink-faqs.md#emalink-and-orangelink-features) to see extra features on the Loop 2.2.x app screens
 
 
 ## Waiting for your RileyLink Compatible Device

@@ -90,7 +90,13 @@ Click on this link [Check your Xcode Version](step9.md#xcode-version) to find yo
 
 If you need to update your Xcode, follow the instructions at this link [Install Xcode](step8.md#install-xcode) and continue through [Xcode Preference](step9.md).
 
-Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.
+Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). 
+
+!!! warning "Direct Download"
+
+    - If you previously did a direct download of Xcode, it will not show up in the App Store.
+    - Either do another direct download or follow these directions in the Direct Download section to reconfigure so it will show up in the App Store.
+        - [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
 #### Missing Xcode or Command Line Tools
 
@@ -132,7 +138,7 @@ The easiest way to delete the old provisioning profiles and clean up derived dat
 
 #### Open Terminal
 
-Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with an M1 or M2 Mac computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta) first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.
+Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
 
 If you happen to have Xcode open, go on and quit out of Xcode now.
 

@@ -28,12 +28,10 @@ If you have access to a computer with MacOS 12.0 or newer, you can skip ahead to
 
 ## Compatible Versions
 
-The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **required** to build on any iPhone with an iOS version starting with iOS 15.4 and can be used to build Loop for **any** of the phone iOS versions listed below. Higher values of iOS might trigger the need for an update to macOS or Xcode. The [Loop and Learn Versions](https://www.loopandlearn.org/version-updates) page is brought up-to-date faster than LoopDocs.
+The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **required** to build on any iPhone with an iOS version starting with iOS 15.4 and can be used to build Loop for **any** of the phone iOS versions listed below. Higher values of iOS might trigger the need for an update to macOS or Xcode. The [Loop and Learn Versions](https://www.loopandlearn.org/version-updates) page is brought up-to-date faster than LoopDocs; last time LoopDocs was updated, iOS 15.6.1 has the same macOS and Xcode requirements as iOS 15.4.
 
 * ** iOS 15.4 or newer**, the minimum macOS is Monterey (12.0)
-
 * ** iOS 15 - 15.3.1**, the minimum macOS is Big Sur (11.3)
-
 * ** iOS 14.5**, the minimum macOS is Big Sur (11.0)
 
 If your macOS does not meet the minimum, check to see if you can [update your macOS](step1.md#check-your-macos)
@@ -80,27 +78,21 @@ Monterey is the best operating system for building Loop. You can install Montere
 
 ## New Apple Computers
 
-Many new Apple computers use the M1 or M2 chips, instead of Intel chips. These computers make building Loop extremely fast. With these computers, you need to [configure the terminal app for Rosetta](#configure-terminal-app-for-rosetta). This only needs to be done one time.
+Many new Apple computers use the M1 or M2 Apple Silicon chips, instead of Intel chips. When the M1 first came out, you had to install Rosetta to allow apps written for Intel chips to run on these newer computers. It is very unlikely that you will be asked to install Rosetta, but if you are, accept the suggestion.  Click on this link for more information from Apple about [Rosetta](https://support.apple.com/en-in/HT211861).
 
-### Configure Terminal App for Rosetta
-
-!!! abstract "New Apple M1 or M2 chip users: IMPORTANT STEP"
-
-    If you have a new computer that uses an M1 or M2 chip, open the Terminal app using a "converter" app, called Rosetta.
-
-    Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app but do not double click it to open a Terminal window. Instead, hold down the Control Key on the keyboard and single click on Terminal. This will bring up a menu of choices, select the "Get Info" option.
-
-    ![menu tree for get info on terminal app](img/get-info.png){width="650"}
-
-    In the informational window that appears, find the checkbox that says "Open using Rosetta". Check that box to allow the Terminal app to open using Rosetta when you double click on terminal in the future. Then close that informational window and proceed with the rest of the directions.
-
-    ![terminal app selection for using rosetta](img/rosetta.png){width="450"}
 
 ## Older Operating System Warning
 
 !!! warning "Check before Upgrading iPhone"
 
-    If you built Loop with Catalina - DO NOT UPGRADE your phone to iOS 15 - FIRST upgrade to at least Xcode 13, build the app on your phone - THEN upgrade to iOS 15. Otherwise you will get the dreaded ["Loop" is no longer available](updating.md#loop-is-no-longer-available) and need to rush through the updating Loop steps.  (Your pod will continue delivering basal, but you will not be able to bolus.)
+    If you built Loop with Catalina:
+    
+    - DO NOT UPGRADE your phone to iOS 15
+    - FIRST upgrade to at least Xcode 13, build the app on your phone
+    - THEN upgrade to iOS 15
+    - Otherwise you will get the dreaded ["Loop" is no longer available](updating.md#loop-is-no-longer-available) and need to rush through the updating Loop steps
+    
+    If this happens to you, your pod will continue delivering basal, but you will not be able to bolus.
 
 
 ## Next Step: Compatible iPhone/iPod Touch

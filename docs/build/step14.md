@@ -38,10 +38,6 @@ This page has the detailed steps to run the Build Select Script to download the 
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
 
-!!! info "M1 or M2 Mac Computer"
-    If you have an M1 or M2 Mac computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta). This only has to be done one time.
-
-
 ### Build Select Script
 
 These instructions show each step needed to download Loop using the Build-Select script.

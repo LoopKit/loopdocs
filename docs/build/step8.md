@@ -21,39 +21,31 @@
         - If you get low on free space, you may have installation failures
         - [Check the Space Available](step1.md#check-the-space-available)
 
-This step may take more time than the other steps, because the download takes a while. The good news is that you don't have to watch it. Instead, you can simply walk away once the download starts. If your laptop goes to sleep when you close the lid or when the screen saver starts - be sure to disable the screen saver and leave the laptop open. This is a big download, so don't expected this to be fast.
+Although the download takes a long time, the good news is you can walk away once the download starts. If your laptop goes to sleep when you close the lid or when the screen saver starts, disable the screen saver and leave the laptop open.
 
-Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" code into an iOS application and install it onto your iPhone/iPod. Make sure you have at least the minimum required macOS for this version of Xcode.
+Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" code into an iOS application and install it onto your iPhone/iPod. 
 
 ## Install Xcode
 
-If you've done your homework (read this entire page) and are ready to download and install Xcode, here are the instructions:
+Please read this entire page.  First, choose a version of Xcode appropriate for your iOS device. Then, determine the minimum macOS version required for that Xcode version.  Update to at least that minimum macOS version.  Then you are read to follow these instructions to download and install Xcode or update an exiting installation:
 
 - Open your App Store in your computer and search for Xcode
 - You will be downloading it brand new or updating an existing installation
 - If the version number you need is bigger than what is shown in the App Store, you need to update [macOS](step1.md#check-your-macos) first
     - This image is old (ignore the version number in this graphic)
-    - For example, Xcode version 13.3 was released March 14, 2022
-
-!!! warning "Direct Download"
-
-    - If you previously did a direct download of Xcode, it will not show up in the App Store.
-    - Either do another direct download or follow these directions in the Direct Download section to reconfigure so it will show up in the App Store.
-        - [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
 ![Screenshot: App Store search for Xcode](img/xcode.png){width="750"}
 {align="center"}
 
 ## Version Relationship Overview
 
-Most people will update their iOS on their iPhones more often than they update their macOS or Xcode.  You know how it goes...you're tapping on your phone one day and it says there's a new version of iOS available for your phone. Want to update it now? Or be reminded of it later? Or maybe you even have the setting on your phone set to automatically install iOS updates.
-
-Because the update looks so innocuous and we all lead busy lives, we forget that there might be consequences to iOS updates.
+Have you turned off automatic updates on your iOS device?
 
 !!! info "Loop and iOS Updates"
 
     **Please Read**: [Turn Off Automatic Updates](step2.md#turn-off-automatic-updates)
 
+Before manually accepting an iOS update, be sure you have compatible versions of Xcode and MacOS.  
 
 !!! info "Minimum Xcode Version"
 
@@ -63,7 +55,7 @@ Because the update looks so innocuous and we all lead busy lives, we forget that
 
 
 !!! warning "Can't find the required Xcode version"
-    - If your computer is not running at least macOS 12.0, the App Store won't show Xcode version 13.3
+    - If your computer is not running the required minimum macOS, the App Store won't show the required minimum Xcode version
     - You must use iOS to determine which Xcode, which determines which macOS
     - Update your computer to at least that minimum macOS first
 
@@ -73,35 +65,31 @@ Because the update looks so innocuous and we all lead busy lives, we forget that
 
 ### After Update - Reboot
 
-After any update of macOS or Xcode, things might not work the first time you try to build Loop.
-
-Before posting for help - do a reboot and try again.
+After any update of macOS or Xcode, it is always a good idea to reboot.
 
 ## How do all the minimum versions relate to each other?
 
-The list below is the **minimum** versions you'll need based on your iOS. The indication of a `color:linestyle` after the operating system nomenclature goes with the graphic found below. The graphic is not updated as frequently as the words.
+The list below is the **minimum** versions you'll need based on your iOS. The highlighted sections, coordinated by `color and linestyle` in the graphic below, tie together the operating system nomenclature in the following bullets. The graphic is not updated as frequently as the words.
 
 **Newer** versions are always OK and should be used if your computer will accept the upgrade.
 
-* If you are running an iPhone/iPod with iOS 15.5 or greater:
-    * [macOS](step1.md#check-your-macos): version 12.x
-    * Xcode: version 13.4.x
-* If you are running an iPhone/iPod with iOS 15.4:
-    * [macOS](step1.md#check-your-macos): version 12.x (Monterey; green:solid)
-    * Xcode: version 13.3.x
-* If you are running an iPhone/iPod with iOS 15.0 to 15.3.1:
-    * [macOS](step1.md#check-your-macos): version 11.3 (Big Sur; navy:dash)
-    * Xcode: version 13.x
-    * Note - at this point, your Apple Watch (if you use one) must be upgraded to watchOS 8.x
-* If you are running an iPhone/iPod with iOS 14.5 through 14.8:
-    * [macOS](step1.md#check-your-macos): version 11.0 (Big Sur; magenta:dash-dot)
-    * Xcode: version 12.5
-* If you are running an iPhone/iPod with iOS 14 through 14.4.x:
-    * [macOS](step1.md#check-your-macos): version 10.15.4 (Catalina; cyan:dash) or if running an M1 Mac, version 11.0 (Big Sur; magenta:dash-dot)
-    * If you build Loop using [Xcode 12.4 or earlier](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used)  - **do NOT upgrade that phone to iOS 15** - the Loop app will immediately stop working
-    * Xcode: version 12.4
-    * It is suggested you find a method to upgrade your computer if you are stuck on Catalina
-
+* For iOS 15.4 and higher, minimum [macOS](step1.md#check-your-macos) is 12.0
+    * For iOS 15.5 or greater, minimum Xcode version is 13.4.x
+    * For iOS 15.4.x, minimum Xcode version is 13.3
+* For iOS 15.0 to 15.2.x, minimum [macOS](step1.md#check-your-macos) is 11.3
+    * For iOS 15.2.x, minimum Xcode version is 13.2
+    * For iOS 15.0.x, minimum Xcode version is 13.0
+* For iOS 14.5.x, minimum [macOS](step1.md#check-your-macos) is 11.0
+    * For iOS 14.5.x, minimum Xcode version is 12.5
+* If you built Loop using [Xcode 12.4 or earlier](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used)
+    - **do NOT upgrade that phone to iOS 15** - the Loop app will immediately stop working
+    - First upgrade macOS and Xcode and rebuild on phone, then upgrade the iOS
+* For iOS 14.0 to 14.4.x, minimum [macOS](step1.md#check-your-macos) is 11.0 (M1/M2), 10.15.4 (Intel)
+    * For iOS 14.4.x, minimum Xcode version is 12.4
+    * For iOS 14.3.x, minimum Xcode version is 12.3
+    * For iOS 14.2.x, minimum Xcode version is 12.2
+    * For iOS 14.1.x, minimum Xcode version is 12.1
+    * For iOS 14.0.x, minimum Xcode version is 12.0
 
 ### Wikipedia Chart for Apple Versions
 
@@ -114,12 +102,6 @@ Follow this link to [Wikipedia](https://en.wikipedia.org/wiki/Xcode) and scroll 
 {align="center"}
 
 ## What happens if you try using too old of Xcode?
-
-!!! danger "Breaking News"
-    * If you try to build with a version of Xcode older than 11.4.1 you will get a Revoke Certificate message when you try to sign targets
-    * Go to [Revoke Certificate Issue](updating.md#revoke-certificate-issue) to see the error message
-    * Solution: update Xcode
-          * Go to [Install macOS and Xcode updates](updating.md#step-1-install-macos-and-xcode-updates)
 
 It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
 

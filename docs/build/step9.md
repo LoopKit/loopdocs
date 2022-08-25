@@ -11,9 +11,6 @@
 !!! question "FAQs"
     - **"I still only see an account with `(personal team)` beside it even though I enrolled in the paid Developer Account program...what should I do?"** You should check your spam email box in case Apple sent you an email there. Make sure you've waited the 48 hours that Apple says it may take to get your account approved. If it's been 48 hours and you still don't see anything in your email, contact Apple support and ask them about the status of your enrollment. It may be held up by something on their end.
 
-Since you've been working in order, you will now have Xcode installed on your computer. You will also have enrolled in the Apple Developer program with a paid account, if that was your selection. Now we need to tell Xcode about your Developer Account. But first a few more steps.
-
-**Did your computer reboot following the Xcode installation. If not, reboot now.**
 
 ## Xcode Version
 
@@ -23,11 +20,11 @@ Click on the Xcode->About Xcode menu item. The version number is displayed.
 
 ## Command Line Tools
 
-There may be a short delay the very first time you open Xcode because it will install a package of tools. Don't close that window out, let it finish. You need those Command Line Tools.
+The very first time you open Xcode it installs a package of command line tools. Wait patiently until it finishes.  
 
-Helpful tip: When the Command Line Tools installation is done and the pop-up window closes, check that your Command Line Tools installed correctly. Open Xcode's Preferences by clicking on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and selecting `Preferences` in the drop-down menu. Then select the `Locations` tab of Preferences window and you'll see the dropdown menu for Command Line Tools.
-
-* Make sure the Xcode version listed matches what you just installed (not the version in this graphic)
+* After the installation finishes and the pop-up window closes, check that your Command Line Tools installed correctly. 
+    - First, open Xcode Preferences (click on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner)and select `Preferences` in the drop-down menu)
+    - Then select the `Locations` tab in the Preferences window to see the dropdown menu for Command Line Tools.  Make sure the Xcode version listed matches what you just installed (not the version in this graphic)
 * If it's blank, use the blue arrows to the right of the Command Line Tools row to select it
 
 ![img/command-line-error-3.png](img/command-line-error-3.png){width="750"}
@@ -43,9 +40,12 @@ Go to the Xcode Preferences window from above, click on the `Accounts` tab and t
 
 ### Xcode Accounts Tab
 
-The Xcode Accounts Tab, shown in the graphic (from Xcode 13) below allows you to have more than one account available to choose from when you sign your targets (another new term - don't worry about it - this will be explained later).  Normally, you would only have one.  In order to get the Paid (email #1, name #1) and Free developer options to generate this graphic and test building with a free account, a new Apple ID was associated with a different email.  This second account (email #2, name #2) does not have a paid developer account associated with it.
+The Xcode Accounts Tab, shown in the graphic (from Xcode 13) below allows you to have more than one account available to choose from when you sign your targets (another new term - don't worry about it - this will be explained later).  Normally, you would only have one.
 
 In the graphic, whichever item is selected on the left side (highlighted by Xcode in blue) shows up with more details on the right side of the display. If the Free account had been selected, the information shown in the red inset would have been displayed.
+
+!!! info "Free and Paid"
+    In order to get the Paid (email #1, name #1) and Free developer options to generate this graphic and test building with a free account, a new Apple ID was associated with a different email.  This second account (email #2, name #2) does not have a paid developer account associated with it.
 
 ### Free Developer Account
 

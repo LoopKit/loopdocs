@@ -59,7 +59,7 @@
 *[Quit the Loop App]: quit out of the app - different from closing the app - typically you swipe up in the app switcher
 *[repository]: contains project files and each file's revision history
 *[RileyLink]: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
-*[Rosetta]: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 chips)
+*[Rosetta]: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 and M2 chips)
 *[SAGE]: sensor age on Nightscout site
 *[submodules]: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
 *[Table of Contents]: for the LoopDocs website, the TOC is the list of level 2 and 3 headers. The name of the page is a level 1 header.
