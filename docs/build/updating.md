@@ -181,7 +181,7 @@ Once this completes, you should see this in your terminal.
 
 ### Step 4a Completed: No Errors
 
-As long as there are no errors, you are now ready to proceed to [Build the Loop App: Download](step14.md#download-loop) to build the released version of the app.
+As long as there are no errors, you are now ready to proceed to [Build the Loop App: Download Loop](step14.md#download-loop) to build the released version of the app.
 
 
 ### Step 4a Had Errors
@@ -314,7 +314,7 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 #### Build like normal
 
-You are ready to proceed to [Build the Loop App: Download](step14.md#download-loop) and continue on that page until you have completed the build.
+You are ready to proceed to [Build the Loop App: Download Loop](step14.md#download-loop) and continue on that page until you have completed the build.
 
 !!! info "Add a Calendar Reminder"
 
