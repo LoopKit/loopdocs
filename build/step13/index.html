@@ -510,7 +510,7 @@
   
     <li class="md-nav__item">
       <a href="../step1/" class="md-nav__link">
-        Step 1 Compatible Computer
+        Compatible Computer
       </a>
     </li>
   
@@ -524,7 +524,7 @@
   
     <li class="md-nav__item">
       <a href="../step2/" class="md-nav__link">
-        Step 2 Compatible iPhone/iPod touch
+        Compatible iPhone/iPod
       </a>
     </li>
   
@@ -538,7 +538,7 @@
   
     <li class="md-nav__item">
       <a href="../step3/" class="md-nav__link">
-        Step 3 Compatible Pump
+        Compatible Pump
       </a>
     </li>
   
@@ -552,7 +552,7 @@
   
     <li class="md-nav__item">
       <a href="../step4/" class="md-nav__link">
-        Step 4 Compatible CGM
+        Compatible CGM
       </a>
     </li>
   
@@ -566,7 +566,7 @@
   
     <li class="md-nav__item">
       <a href="../step5/" class="md-nav__link">
-        Step 5 Order a RileyLink
+        Order a RileyLink
       </a>
     </li>
   
@@ -580,7 +580,7 @@
   
     <li class="md-nav__item">
       <a href="../step6/" class="md-nav__link">
-        Step 6 Enroll in Apple Developer Program
+        Apple Developer Program
       </a>
     </li>
   
@@ -594,7 +594,7 @@
   
     <li class="md-nav__item">
       <a href="../step8/" class="md-nav__link">
-        Step 8 Download Xcode
+        Download Xcode
       </a>
     </li>
   
@@ -608,7 +608,7 @@
   
     <li class="md-nav__item">
       <a href="../step9/" class="md-nav__link">
-        Step 9 Xcode Preferences
+        Xcode Preferences
       </a>
     </li>
   
@@ -622,7 +622,7 @@
   
     <li class="md-nav__item">
       <a href="../step10/" class="md-nav__link">
-        Step 10 Test Settings
+        Test Settings
       </a>
     </li>
   
@@ -636,7 +636,7 @@
   
     <li class="md-nav__item">
       <a href="../step11/" class="md-nav__link">
-        Step 11 Make plans for Loop Data
+        Loop Data
       </a>
     </li>
   
@@ -650,7 +650,7 @@
   
     <li class="md-nav__item">
       <a href="../step12/" class="md-nav__link">
-        Step 12 Meet Community
+        Meet the Community
       </a>
     </li>
   
@@ -664,7 +664,7 @@
   
     <li class="md-nav__item">
       <a href="../step14/" class="md-nav__link">
-        Step 14 Build Loop app
+        Build Loop App
       </a>
     </li>
   
@@ -692,7 +692,7 @@
   
     <li class="md-nav__item">
       <a href="../updating/" class="md-nav__link">
-        Updating/Rebuilding your Loop
+        Updating/Rebuilding
       </a>
     </li>
   
@@ -2350,7 +2350,7 @@
 <p>If your app crashes during onboarding, <a href="../code_customization/#modify-the-guardrails">Customize the Code</a> to change the minimum correctionRange value and rebuild to continue.</p>
 </div>
 <h2 id="download-loop-dev">Download Loop-dev<a class="headerlink" href="#download-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This page assumes experience with using the Build-Select script in <a href="../step14/">Build Step 14</a>.</p>
+<p>This page documents using a script, different from the usual Build-Select script, to build the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of the app. If you have not previously built the released version of the app using the Build-Select script as documented in <a href="../step14/">Build the Loop App</a>, you may find the documentation sparse.</p>
 <ul>
 <li>A new script has been prepared to assist building the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> for Loop and FreeAPS</li>
 <li>This script downloads the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then selects a specific commit that has been lightly tested</li>
@@ -2371,7 +2371,7 @@
 <p>You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.</p>
 <p>The next graphic warns you about building a development <abbr title="version of code within a single repository or workspace repository">branch</abbr>. The date and commit number in the script might not match the graphic below. The values in the script will be updated at appropriate times. The date indicates when that commit was added to the <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p align="center"><img alt="message about development branch commit" src="../img/build-select-dev.svg" width="700" /></p>
-<p>Continue following directions with the script. Review <a href="../step14/#wait-for-download-to-complete">Build Step 14: Wait for Download to Complete</a> then return to this page if you need more documentation.</p>
+<p>Continue following directions with the script and wait for the download to complete. If you get errors, <a href="../step14/#xcode-errors-with-build-select">review this section</a> of the directions for building the released code. Resolve the errors, if possible, then return to this page.</p>
 <p>After the download step, the specific commit will be "checked out". Verify there are no errors and proceed.</p>
 <h2 id="signing-targets">Signing Targets<a class="headerlink" href="#signing-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The script helps you configure a permanent file used by <abbr title="program used to build an app">Xcode</abbr> to automatically sign all your targets.</p>
@@ -2427,7 +2427,7 @@
 <p>With the Loop-dev version, there are fewer build steps because the targets should already be signed.</p>
 <p>If you are using a paid Developer ID, skip ahead on this page to <a href="#build-loop">Build Loop</a>.</p>
 <h3 id="loop-dev-with-free-account">Loop-dev with Free Account<a class="headerlink" href="#loop-dev-with-free-account" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the <a href="../step14/#free-account">Build Step 14: Free Account</a> section.</p>
+<p>Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the <a href="../step14/#free-account">Build with Free Account</a> section.</p>
 <p>If you know your Personal Team ID, you can enter it as directed in <a href="#signing-targets">Signing Targets</a> above.</p>
 <ol>
 <li>You must remove additional capabilities, the complete list is:<ul>
@@ -2459,7 +2459,7 @@
 <div class="admonition warning">
 <p class="admonition-title">Free Account users</p>
 <p>Sorry - the documentation is not updated yet. </p>
-<p>Read <a href="#loop-dev-with-free-account">Loop-dev with Free Account</a> in addition to <a href="../step14/#free-account">Build Step 14: Free Account</a></p>
+<p>Read <a href="#loop-dev-with-free-account">Loop-dev with Free Account</a> in addition to the released build <a href="../step14/#free-account">Free Account</a> documentation.</p>
 </div>
 <h3 id="package-dependency-error">Package Dependency Error<a class="headerlink" href="#package-dependency-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If there is no red x in the dashed-blue rectange region on your <abbr title="program used to build an app">Xcode</abbr> screen, skip ahead to <a href="#start-build">Start Build</a> on this page.</p>
@@ -2523,6 +2523,7 @@
 </div>
 <h2 id="update-loop-dev">Update Loop-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>While Loop-dev is under active test, you should update frequently.</p>
+<p>When building frequently, it is optional to update your provisioning profile with every new build. If you want to always ensure one year, follow the steps for <a href="../updating/#step-4a-delete-old-provisioning-profiles">Updating: Step 4a</a> to use a different script for this action.</p>
 <p>Checking for updates every week is a good idea.  Also - subscribe to all the streams on <a href="https://loop.zulipchat.com">Loop Zulipchat</a> to make sure you don't miss critical information.</p>
 <p>You may choose to run the script each time you update. You can discard older versions of the download by using <abbr title="graphical folder and file display on Mac">Finder</abbr> and navigating to Downloads/BuildLoop. Only the most recent copy is required to build loop. Do not discard the Downloads/BuildLoop/LoopConfigOverride.xcconfig file - that is used to automatically sign your app so you can build.</p>
 <p>You may prefer to use commands to fetch and pull the latest code without making a new <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>.</p>
@@ -2606,7 +2607,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../updating/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Updating/Rebuilding your Loop" rel="prev">
+        <a href="../updating/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Updating/Rebuilding" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2615,7 +2616,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Updating/Rebuilding your Loop
+              Updating/Rebuilding
             </div>
           </div>
         </a>
