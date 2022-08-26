@@ -129,7 +129,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **RileyLink**: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
 
-**Rosetta**: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 chips)
+**Rosetta**: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 and M2 chips)
 
 **SAGE**: sensor age on Nightscout site
 

@@ -34,7 +34,7 @@ Many people *accidentally* build with their old free account
 
 Remember that switching from free to paid changes the developer name incorporated into your Loop App
 
-* A separate Loop app is created - see [Build Step 6](../build/step6.md#switching-from-free-to-paid-memberships) for more details
+* A separate Loop app is created - see [Switching from Free to Paid Membership](../build/step6.md#switching-from-free-to-paid-memberships) for more details
 * Did you select the new app and enter all your settings into it and then delete the 7-day app?
 * The new app issue only happens if you change developer name
 * As long as you stick with the same developer ID, updated Loop apps are built over existing apps and all your settings should be maintained

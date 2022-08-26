@@ -1,6 +1,6 @@
-# Step 14: Build Loop App
+# Build the Loop App
 
-## Build Loop App Summary
+## Build the Loop App Summary
 
 !!! info "Time Estimate"
     - 60-80 minutes for first time builders
@@ -37,10 +37,6 @@ This page has the detailed steps to run the Build Select Script to download the 
 #### Open Terminal
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
-
-!!! info "M1 or M2 Mac Computer"
-    If you have an M1 or M2 Mac computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta). This only has to be done one time.
-
 
 ### Build Select Script
 
@@ -94,8 +90,8 @@ Next you are asked which version of Loop you would like to build. Type 1 and ret
 
     You missed one of these steps:
 
-    * [Build Step 8: Install Xcode](step8.md)
-    * [Build Step 9: Xcode command line tools](step9.md)
+    * [Install Xcode](step8.md)
+    * [Xcode command line tools](step9.md#command-line-tools)
 
 ### Wait for Download to Complete
 
@@ -284,7 +280,7 @@ After signing the 4 targets, click on the Loop icon under the `PROJECTS` heading
 
     There are [more targets](step13.md#signing-targets) which must be signed to build the dev branch.
 
-    If you read the hint in [Step 13](step13.md#signing-targets) and edited the LoopConfigOverride.xcconfig, your targets are already signed.
+    If you followed the directions in [Loop-dev](step13.md#signing-targets) and edited the LoopConfigOverride.xcconfig, your targets are already signed.
 
     - **Repeat: only build the dev branch if you're a developer/advanced user**
 

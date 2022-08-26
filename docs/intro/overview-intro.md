@@ -6,7 +6,7 @@ The LoopDocs website is organized as follows
 
 * [Home](../index.md): What is Loop?
 * [Intro](overview-intro.md): Introduction to Loop and LoopDocs
-* [Build](../build/overview.md): How to build your Loop app the first time, or [update](../build/updating.md) next time
+* [Build](../build/overview.md): How to build your Loop app the first time, or [Update](../build/updating.md) next time
 * [Set Up](../operation/overview.md): How to set up your Loop app
 * [Operate](../operation/loop/open-loop.md): How to use the Loop app
 * [Troubleshoot](../troubleshooting/overview.md): What to do if you're having trouble with the Loop app
@@ -15,33 +15,31 @@ The LoopDocs website is organized as follows
 * [Nightscout](../nightscout/overview.md): Loop-specific Nightscout details; Nightscout is a companion application that many Loopers use
 * [FAQs](../faqs/overview-faqs.md): Pages with safety tips, frequently asked questions and the Glossary
 
-## Introduction to Building and Operating Loop
-
-It is totally understandable if the thought of building and operating your own Loop app feels intimidating. As you learn the steps explained in LoopDocs, this will start feeling more comfortable.
+It is totally understandable if the thought of building and operating your own Loop app feels intimidating. As you learn the information explained in LoopDocs, this will start feeling more comfortable.
 
 
-### Building Loop
+## Building Loop
 
-Building the Loop app is straightforward. There are a lot of steps because they are divided into short segments.
+The process for building the Loop app is divided into short segments (pages) in the Build tab of LoopDocs.
 
 !!! warning "Best Practice: Learn to Build"
     You are strongly encouraged to build Loop for yourself. 
 
-    * We do not recommend and no links are found in LoopDocs to providers who build Loop as a service
+    * No links to providers who build Loop as a service  are found in LoopDocs
     * If you choose to use such a service, before you begin, you should:
         * Read all of LoopDocs
         * Know how to Set up and Operate Loop
         * **These steps are important for your safety**
 
-### What if I'm not sure I want to commit?
+### Using a Simulator
 
 You can build Loop and practice with a simulated phone, CGM and  pump. You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
 
-Trying it with a simulator can help you decide if you want to move forward with purchasing the hardware and Apple Developers license each year for Loop.
+Starting with a simulator can help you decide if you want to move forward with purchasing the hardware and Apple Developers license each year for Loop.
 
-Note - you will need to have access to a computer as an absolute minimum. Please review [Simulator Build](../version/simulator.md) for more information.
+Note - you will need to have access to a computer. Please review [Simulator Build](../version/simulator.md) for more information.
 
-## Using Loop
+## Operating Loop
 
 A significant amount of content is provided on this website and via link to other sources. Please review these pages when initially setting up and learning to use Loop.
 

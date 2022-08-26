@@ -47,22 +47,22 @@ Note that these two branch names: `working-docs` and `master` will automatically
 Links should be written like this:
 
 ```markdown
-In the same directory: [Click here for Step 14](step14.md)
+In the same directory: Click here for [Update FAQs](update-faqs.md)
 
-In a directory below the current page: [Click here for Step 14](build/step14.md)
+In a directory below the current page: Click here for [Update FAQs](faqs/update-faqs.md)
 
-In a directory "outside" the current directory: [Click here for Step 14](../build/step14.md)
+In a directory "outside" the current directory: Click here for [Update FAQs](../faqs/update-faqs.md)
 
-Like above, but linking directly to a heading/anchor in step14.md:
+Like above, but linking directly to a heading/anchor in update-faqs.md:
 
-[Click here for Step 14](../build/step14.md#sign-four-targets)
+Click here for [When Should You Update?](../faqs/update-faqs.md#when-should-you-update)
 
 ```
 
 Notice about mkdocs: "Using absolute paths with links is not officially supported. Relative paths are adjusted by MkDocs to ensure they are always relative to the page. Absolute paths are not modified at all. This means that your links using absolute paths might work fine in your local environment but they might break once you deploy them to your production server."
 
 ```markdown
-Do NOT use a link starts that with a '/': [Click here for Step 14](/build/step14.md)
+Do NOT use a link starts that with a '/': Click here for [Update FAQs](/faqs/update-faqs.md)
 ```
 
 ### Images
@@ -117,7 +117,7 @@ To add header row, use:
 Now using the standard set of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) and css styles that come with the Material theme.
 
 The admonitions in use are:
-First 3 boxes for Build Steps:
+First 3 boxes for Build Pages:
 * `info`
 * `abstract`
 * `question`

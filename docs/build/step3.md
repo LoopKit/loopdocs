@@ -1,4 +1,4 @@
-# Step 3: Compatible Pump
+# Compatible Pump
 
 !!! info "Time Estimate"
     - Omnipod users: 3 seconds to remember which PDM you've been using.
@@ -6,12 +6,8 @@
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
 
 !!! abstract "Summary"
-    - If you have a Medtronic, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware.
-    - If you use Omnipod - check which kind:
-        - If you have a big clunky PDM with a built-in BG meter, you are using Eros pods. (These pods have a clear needle cap.)
-            * Eros pods are supported in the released version of Loop
-        - If you have a slim touch screen android-looking PDM, you are using DASH Pods. (These pods have a blue needle cap.)
-            * DASH pod support is under development and active test (not released yet) 
+    - If you have a Medtronic pump, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware
+    - If you use [Omnipod](#omnipod-pumps) - check which kind
 
 !!! question "FAQs"
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump)
@@ -25,8 +21,8 @@
 There are two types of pumps compatible with Loop.
 
 * [Older Medtronic pumps](step3.md#check-medtronic-pump-version)
-* [Eros Omnipod pumps](step3.md#omnipod-pumps)
-* DASH Omnipod pumps - under test by experts - will be in next release
+* [Omnipod Eros pumps](step3.md#omnipod-pumps)
+* [Omnipod DASH pumps](#omnipod-dash) - under development and active test
 
 ## Check Medtronic Pump Version
 
@@ -156,9 +152,9 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 
 !!! warning "Reminder and Disclaimer"
 
-    The use of Eros pods with Loop is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Loop build, setup, or operation. You are fully responsible for your use of this project and do so at your own risk. Please read these documents and familiarize yourself with Loop before using.
+    The use of Omnipod pumps with Loop is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Loop build, setup, or operation. You are fully responsible for your use of Loop and do so at your own risk. Please read these documents and familiarize yourself with Loop before using.
 
-### Eros - Loop Will Work with These Pods
+### Omnipod Eros
 
 Eros pods were launched in 2013 and continue to be sold by Insulet. As far as we know, there have been no plans or timelines announced for the discontinuation of Eros pods for existing customers. Insulet doesn't specifically call these "Eros" anymore, they just use the term "omnipod system". For clarity, from [Insulet's webpage](https://www.myomnipod.com/about):
 
@@ -167,13 +163,19 @@ Eros system has that PDM we all recognize from the last several years.
 ![img/eros.png](img/eros.png){width="750"}
 {align="center"}
 
-### DASH - Development Branch Only
+### Omnipod DASH
 
-Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in POD. Loop is working with DASH pod in the development branch only. When that branch is ready for release, then it will become Loop 3.0. If you are an experienced looper and want to help test the next release, [please start here](../faqs/branch-faqs.md), read carefully, follow the links and join zulipchat.
+Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in the pod, so there is no requirement for a RileyLink compatible device. 
+
+Loop is working with DASH pods in the **development branch only**. When that branch is ready for release, then it will become Loop 3.0. If you are an experienced looper and want to help test the next release, [please start here](step13.md), read carefully, follow the links and join zulipchat.
 
 ![img/dash.png](img/dash.png){width="750"}
 {align="center"}
 
+### Omnipod 5
+
+Loop does not support Omnipod 5 pods.
+
 ## Next Step: Compatible CGM
 
-Now you are ready to move onto Step 4 to check if you have a [Compatible CGM](step4.md).
+Now you are ready to check if you have a [Compatible CGM](step4.md).

@@ -1,4 +1,4 @@
-# Step 6: Enroll in Apple Developer Program
+# Enroll in Apple Developer Program
 
 !!! info "Time Estimate"
     - 15-20 minutes to complete the enrollment forms
@@ -13,12 +13,12 @@
 
 !!! question "FAQs"
     - **"Can I use someone else's Apple Developer account?"** Please refer to this [Answer](../faqs/FAQs.md#can-i-use-someone-elses-apple-developer-account).
-    - **"Do I use my Apple ID or my child's Apple ID to enroll in the Apple Developer program?"** The Apple ID you use to enroll in the developer program does not need to be the same Apple ID as the Looper uses on their iPhone. For example, a parent installing Loop on their child's iPhone should configure a separate Apple ID for their child, but should use their own Apple ID to build the Loop app for that child. Typically for the developer enrollment, use the Apple ID of the person who will be building the app.
+    - **"Do I use my Apple ID or my child's Apple ID to enroll in the Apple Developer program?"** The Apple ID you use to enroll in the developer program must be associated with an adult. It does not need to be the same Apple ID as the Looper uses on their iPhone. For example, a parent installing Loop on their child's iPhone should configure a separate Apple ID for their child, but should use their own Apple ID to build the Loop app for that child.
     - **"How long does it take to have my Apple Development account active after I enroll?"** After you enroll, make sure you look for a confirmation email. Apple says it can take up to 24-48 hours to confirm and setup a new Apple developer account. However, some people have had the process take minutes. One SURE way to make it take longer is to use a different credit card to pay for the Apple Developer account enrollment than is already associated with that Apple ID. When you do that, finishing the enrollment process may be a hassle.
 
 ## Loopers Need Their Own Apple ID
 
-It is important to understand that the Apple ID is distinct from the Apple Developer ID.
+The Apple ID is DIFFERENT than the Apple Developer ID.
 
 !!! warning "Apple ID"
     Parents should set up a **different** Apple ID for each of their looper children and looper children should **not** use the parent Apple ID. [Please use Apple's Instructions for adding an Apple ID for your child.](https://support.apple.com/en-us/HT201084)
@@ -27,8 +27,9 @@ It is important to understand that the Apple ID is distinct from the Apple Devel
 
     The Apple Health record is a convenient record of blood glucose, insulin and carbohydrates and should be associated with only one individual.
 
+To build your Loop app, you will need to use an Apple developer account. You can build apps on phones for everyone in your family with a single Apple Developer Account tied to the Apple ID of an adult.
 
-To build your Loop app, you will need to use an Apple developer account.  You have two options for an individual account: free or paid.
+You have two options for an individual account: free or paid.
 
 ## Free Developer Account
 
@@ -48,19 +49,18 @@ If you decide to use a **PAID** developer account, here's what you need to know:
 
 ## Switching from Free to Paid Memberships
 
-There is no problem trying a free account first before you decide to buy a paid developer account. If you start with a free account, you'll build a Loop app (let's call it FreeLoop). When you switch to a paid account, you'll be building a totally new and separate Loop app onto your phone (let's call it PaidLoop). The two apps will look identical on your phone, but they will be functionally separate from each other. Make sure you are successful building the PaidLoop app before deleting the FreeLoop app from your phone. Use the search feature on your phone to find both apps.  One will have your configuration settings (FreeLoop), the other will not (PaidLoop).
+You can try a free account first before buying a paid developer account. If you start with a free account, you'll build a Loop app (let's call it FreeLoop). When you switch to a paid account, you'll be building a totally new and separate Loop app onto your phone (let's call it PaidLoop). The two apps will look identical on your phone, but they will be functionally separate from each other. Make sure you are successful building the PaidLoop app before deleting the FreeLoop app from your phone. Use the search feature on your phone to find both apps.  One will have your configuration settings (FreeLoop), the other will not (PaidLoop).
 
 Before deleting the FreeLoop, either record all the settings or take screen shots of all the relevant settings screens.
 
 PaidLoop will know nothing about the settings and information you had stored in FreeLoop, so you will need to re-enter all your settings (basal rates, ISF, carb ratios, etc.) and configurations into the new PaidLoop. It will also not connect or control any pods you are currently using with the old FreeLoop app. The one exception is Nightscout credentials, which are stored in your keychain. If you entered your Nightscout credentials into FreeLoop, they will persist across app removal and be used by PaidLoop.
 
-
 ## Enrolling
 
-Paid account enrollment is all done through Apple's Developer Program website. Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual paid account.
+To enroll in an individual paid Paid account, go to the Apple's Developer Program website [Apple Developer website](https://developer.apple.com/programs/enroll/).
 
-If you choose to use the free account, you don't have to do anything on that website. You'll just wait for Step 8 Xcode Preferences and we will get your free account then.
+If you choose to use the free account, you don't have to do anything on that website. You'll just wait for the instructions on the Xcode Preferences page and get your free account then.
 
 ## Next Step: Install Xcode
 
-Now you are ready to skip to Step 8 to [Install Xcode](step8.md). And if you've been counting - yes, Step 7 is no longer required.
+Now you are ready to [Install Xcode](step8.md).

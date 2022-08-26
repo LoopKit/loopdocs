@@ -7,11 +7,12 @@
 
 !!! abstract "Summary"
 
+    Follow links to sections of other build pages then hit the back button on your browser to return to this page. These are the steps you should follow:
+
     * Step 1: Install macOS and Xcode updates based on your phone iOS
     * Step 2: Check your Developer Account
     * Step 4a and 4b: Delete provisioning profiles and derived data
     * Download Updated Loop code and Build Loop
-        * Follow the link to Step 14
 
 !!! question "FAQs"
 
@@ -19,7 +20,7 @@
     - **"Do I delete my old Loop app first?"** Definitely **not**! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
     - **"Do I need to start a new pod when I update?"** No. Your existing pod session will continue seamlessly if you are using the same Developer Account to sign the Loop app targets as you did the last time you built.
     - **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account used when your existing app was built (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
-    - **"What if it is a new computer but the same developer account?"** No big deal...repeat Build Steps 1, 8 and 9 with your new computer and then go straight to Step 14.
+    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check your new computer has the required compatible versions and then build your app. This will include installing Xcode and configuring Xcode preferences. There is no need to delete provisioning profiles on a branch new computer, but you can follow the steps if you prefer.
 
 ## When to Update Loop
 
@@ -67,20 +68,35 @@ Between Loop app builds, there's a high likelihood that Apple has updated one or
 
 Based on the iOS on your phone, or the iOS you plan to install on your phone, determine the required macOS and Xcode versions. Click on this  link [versions for iOS, macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.
 
+!!! warning "First macOS and Then Xcode"
+    Your macOS must meet the minimum requirement for the Xcode version you need to support your current iOS as detailed in that link above. 
+    
+    * If the macOS is too old, the Xcode version will not appear in the App Store
+    * You might think you don't need to update Xcode (but you do)
+    * Your build will fail and mentors might need to help you
+    
+    Don't be that person. Follow the directions.
+
 Minimum means you need to have at least that version - newer versions build just fine.
 
 ### Verify / Update macOS
 
-* Click on this link [Check your macOS Version](step1.md#check-your-macos) and follow the instructions on that page if an update is required.
+* Click on this link [Check your macOS Version](step1.md#check-your-macos-version) and follow the instructions on that page if an update is required.
 * After you've reviewed that section, hit the back button on your browser to return here
 
 ### Verify / Update Xcode
 
 Click on this link [Check your Xcode Version](step9.md#xcode-version) to find your Xcode version number.
 
-If you need to update your Xcode, follow the instructions at this link [Build Step 8: Install Xcode](step8.md#install-xcode) and continue through Step 9.
+If you need to update your Xcode, follow the instructions at this link [Install Xcode](step8.md#install-xcode) and continue through [Xcode Preference](step9.md).
 
-Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). Note that once you have used direct download, Xcode will not show up in the App Store for download or updates - read the information at the link. If you find those instructions confusing, perhaps you should set up the download/update from the App Store a day early and let your computer work in the background.
+Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). 
+
+!!! warning "Direct Download"
+
+    - If you previously did a direct download of Xcode, it will not show up in the App Store.
+    - Either do another direct download or follow these directions in the Direct Download section to reconfigure so it will show up in the App Store.
+        - [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
 #### Missing Xcode or Command Line Tools
 
@@ -95,12 +111,10 @@ Advanced users: If you are finding installation of Xcode from the App Store incr
     * Scripting Bridge could not launch application . . .
 
 
-!!! abstract "Follow Build Step 9 after updating Xcode"
+!!! abstract "Follow Xcode Preferences page after updating Xcode"
 
-        Make sure to restart your computer after updating Xcode and follow the instructions in Build Step 9. There's a known issue that happens often enough to be frustrating if you skip those steps. Either a build error about missing simulators or a "device not connected" (even when phone is connected). It's not always required...but this is a good easy ounce of problem prevention.
+        Make sure to restart your computer after updating Xcode and follow the instructions on the Xcode Preferences page. There's a known issue that happens often enough to be frustrating if you skip those steps. It's not always required...but this is a good easy ounce of problem prevention.
 
-
-If you think you are immune from needing to update and want to skip Step 1 on this page, at least review the compatibility chart in Build Step 8 to make sure your macOS and Xcode meet their minimums based on your device's iOS before proceeding.  Many people try to build without meeting the minimum versions - don't be that person.
 
 ## Step 2: Check your Developer Account
 
@@ -124,7 +138,7 @@ The easiest way to delete the old provisioning profiles and clean up derived dat
 
 #### Open Terminal
 
-Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. (Folks with an M1 or M2 Mac computer, make sure you [configured the terminal app for rosetta](step1.md#configure-terminal-app-for-rosetta) first. This only has to be done one time.) The terminal window is very plain looking when you open it. That is normal.
+Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
 
 If you happen to have Xcode open, go on and quit out of Xcode now.
 
@@ -167,9 +181,8 @@ Once this completes, you should see this in your terminal.
 
 ### Step 4a Completed: No Errors
 
-As long as there are no errors, you are now ready to proceed to Build Step 14: Download and continue on that page until you have completed the build.
+As long as there are no errors, you are now ready to proceed to [Build the Loop App: Download Loop](step14.md#download-loop) to build the released version of the app.
 
-Click on this link: [Build Step 14: Download](step14.md#download)
 
 ### Step 4a Had Errors
 
@@ -301,7 +314,7 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 #### Build like normal
 
-You are ready to proceed to [Build Step 14: Download](step14.md#download) and continue on that page until you have completed the build.
+You are ready to proceed to [Build the Loop App: Download Loop](step14.md#download-loop) and continue on that page until you have completed the build.
 
 !!! info "Add a Calendar Reminder"
 

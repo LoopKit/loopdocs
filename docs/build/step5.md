@@ -1,4 +1,4 @@
-# Step 5: Order a RileyLink Compatible Device
+# Order a RileyLink Compatible Device
 
 !!! info "Time Estimate"
     - 15-20 minutes to read about RileyLink compatible devices
@@ -18,11 +18,14 @@
 
 ## What is a RileyLink Compatible Device
 
-The RileyLink compatible device is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by select Medtronic and Omnipod pumps. What does that mean to you? It means the device is the communication highway between your insulin pump, CGM, and iPhone.
+The RileyLink compatible device is required to allow your phone to talk to Compatible Medtronic and Omnipod Pumps.
 
-The next version of Loop (currently being tested in the dev branch) will have DASH support (the pod with the Blue needle cap - direct Bluetooth to the phone with no need for a RileyLink compatible device). Please - be patient.  If you are not already an experienced Looper willing to test code under development, wait until this code is released.
+!!! abstract "Details for RileyLink"
+    The RileyLink compatible device is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by select Medtronic and Omnipod pumps.
 
-**The released version of Loop will not work without a RileyLink compatible device.**
+The development branch of Loop (currently being tested) has Omnipod DASH support, among other new features. When using Omnipod DASH, the RileyLink compatible device is not necessary.  If you are using Medtronic or Omnipod (Eros, not DASH), you still need the device regardless of which version of Loop you are running.
+
+Medtronic and Omnipod Eros pumps require a RileyLink compatible device.
 
 ![Omnipod or Medtronic pump communicating through RileyLink to phone running Loop app](img/rileylink-comm-pod-mmt.svg){width="600"}
 
@@ -35,9 +38,11 @@ There used to be just one option, the original RileyLink. Now there are more opt
 
 - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the GetRileyLink organization for all the RileyLink compatible devices listed below
 - RileyLink
-    - Designed by Pete Schwamb, available from [GetRileyLink](https://getrileylink.org)
+    - Designed by Pete Schwamb
     - Rechargable battery (max 36 hours per charge)
-    - Must order either Omnipod or Medtronic version
+    - No longer available new, check these Facebook Groups for used ones:
+        * [Loop Resale](https://www.facebook.com/groups/301508128131405/)
+        * [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
 - OrangeLink
     - Designed by Vic Wu, available from [GetRileyLink](https://getrileylink.org)
     - Uses 2 AAA batteries, batteries typically last weeks or more, depending on batteries/pump type
@@ -62,15 +67,15 @@ There is an entire FAQs page on [RileyLink Compatible Devices](../faqs/rileylink
 Sections of interest include:
 
 * [Firmware Update](../faqs/rileylink-faqs.md#orangelink-firmware) information on the OrangeLink
-* [Ema and Orange Patch](../faqs/rileylink-faqs.md#emalink-and-orangelink-features) to see extra features on the Loop app screens
+* [Ema and Orange Patch](../faqs/rileylink-faqs.md#emalink-and-orangelink-features) to see extra features on the Loop 2.2.x app screens
 
 
 ## Waiting for your RileyLink Compatible Device
 
-While you are waiting for the RileyLink compatible device to arrive, you can proceed with these build directions all the way through Step 14. After that, you'll have to wait for your device. You can't properly enter any settings or pump info in the Loop app without it.
+While you are waiting for the RileyLink compatible device to arrive, you can proceed with these build directions and can try one of the [Simulated Loop](../version/simulator.md) options. After that, unless you are using Omnipod DASH, you'll have to wait for your device.
 
 The population of DIY loopers (Loop and Android APS) has grown enough that you might be able to find someone local to loan you their spare.
 
 ## Next Step: Enroll in Apple Developer Program
 
-Now you are ready to move onto Step 6 to [enroll in the Apple Developer Program](step6.md).
+Now you are ready to enroll in the [Apple Developer Program](step6.md).
