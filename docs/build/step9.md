@@ -40,12 +40,12 @@ Go to the Xcode Preferences window from above, click on the `Accounts` tab and t
 
 ### Xcode Accounts Tab
 
-The Xcode Accounts Tab, shown in the graphic (from Xcode 13) below allows you to have more than one account available to choose from when you sign your targets (another new term - don't worry about it - this will be explained later).  Normally, you would only have one.
+The Xcode Accounts Tab, shown in the graphic (from Xcode 13) below allows you to have more than one account available to choose from when you sign your targets (another new term that is explained later).  Normally, you would only have one.
 
 In the graphic, whichever item is selected on the left side (highlighted by Xcode in blue) shows up with more details on the right side of the display. If the Free account had been selected, the information shown in the red inset would have been displayed.
 
 !!! info "Free and Paid"
-    In order to get the Paid (email #1, name #1) and Free developer options to generate this graphic and test building with a free account, a new Apple ID was associated with a different email.  This second account (email #2, name #2) does not have a paid developer account associated with it.
+    The graphic below shows examples for a paid account and a free account. You will only see one.
 
 ### Free Developer Account
 
@@ -56,7 +56,7 @@ If you want to use a free developer account, you will simply enter your Apple ID
 If you enrolled in the paid account already and have confirmation that your account is active, enter the Apple ID of the paid developer account. It will show up with just your name and the `Admin` indication. If you have enrolled and are waiting, the `(Personal Team)` and `User` indication shows up until the paid account is confirmed by Apple.
 
 !!! note "Description"
-    The description line is initially empty. The added text about Paid and Free Account was added in an attempt to make the two types of accounts more obvious when making this graphic.  If you want, you can add your own description or just leave the line blank. When you put text in the decription line - it shows up in two places: To the left, just above the email address and to the right once that Apple ID is selected.
+    The description line is initially empty. You can add your own description or just leave the line blank. Text added to the decription line shows up in two places: To the left, just above the email address and to the right once that Apple ID is selected.
 
 ![accounts tab of xcode preferences](img/xcode_apple_id.svg){width="750"}
 {align="center"}

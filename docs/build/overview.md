@@ -16,7 +16,7 @@ If building to a [Simulator](../version/simulator.md) to try things out, the onl
 
 ## Getting Ready to Build
 
-Start by clicking through the Build pages from `Compatible Computer` through `Build Loop App` and read the top three boxes on each page. On a desktop, you can use `n` for next and `p` for previous.
+Start by clicking through the Build pages from `Compatible Computer` through `Build Loop App` and read the top three boxes on each page: icons for those boxes are displayed below for reference. On a desktop, you can use `n` for next and `p` for previous.
 
 !!! info "Time Estimate"
 !!! abstract "Summary"

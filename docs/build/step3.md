@@ -6,13 +6,8 @@
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
 
 !!! abstract "Summary"
-    - If you have a Medtronic, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware.
-    - If you use Omnipod - check which kind:
-        - If you have a big clunky PDM with a built-in BG meter, you are using Eros pods. (These pods have a clear needle cap.)
-            * Eros pods are supported in the released version of Loop
-        - If you have a slim touch screen android-looking PDM, you are using DASH Pods. (These pods have a blue needle cap.)
-            * DASH pod support is under development and active test
-        - Omnipod 5 is not supported by Loop
+    - If you have a Medtronic pump, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware
+    - If you use [Omnipod](#omnipod-pumps) - check which kind
 
 !!! question "FAQs"
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump)
@@ -157,7 +152,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 
 !!! warning "Reminder and Disclaimer"
 
-    The use of Eros pods with Loop is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Loop build, setup, or operation. You are fully responsible for your use of this project and do so at your own risk. Please read these documents and familiarize yourself with Loop before using.
+    The use of Omnipod pumps with Loop is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Loop build, setup, or operation. You are fully responsible for your use of Loop and do so at your own risk. Please read these documents and familiarize yourself with Loop before using.
 
 ### Omnipod Eros
 

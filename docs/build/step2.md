@@ -15,8 +15,7 @@
 !!! question "FAQs"
     - **"Can I use an android?"** No. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
     - **"Can I use an iPad?"** No. iPads do not support Apple Health and Loop uses Apple Health.
-    - **"Does my iPhone need a cell plan?"** No. Loop works using communication via Bluetooth and the RileyLink compatible device with your CGM and pump; no internet connection required. However, without a cell plan, connection to the internet relies on WiFi availability. If access to Dexcom Follow or Nightscout monitoring of Loop is a priority, then a cell plan may be desired.  
-
+    - **"Does my iPhone need a cell plan?"** No. Loop works using communication on your phone with your CGM and your pump; no internet connection required. However, if access to Dexcom Follow or Nightscout monitoring of Loop is a priority, then a cell plan may be desired.
 
 ## Which Devices Are Compatible?
 
@@ -40,9 +39,11 @@ These devices are compatible with iOS 14 and iOS 15.
 
 ### Devices That Will Soon Be Incompatible
 
+These devices are compatible with Loop 2.2.x but will not be compatible when Loop 3 is released.
+
 !!! Warning "Plan to Update Soon"
 
-    - You will not be able to build the next release of Loop on these device
+    - You will not be able to build the next release of Loop on these devices
 
 - iPhone 5s, 6, 6+
 - iPod Touch, 6th generation
@@ -50,7 +51,7 @@ These devices are compatible with iOS 14 and iOS 15.
 
 ## Find Your Device's iOS
 
-Your phone's iOS version can be found under the phone Settings -> General -> About display as shown below.
+Your phone's iOS version can be found under the phone Settings -> General -> About display as shown below. The iOS number is found on the `Software Version` line.
 
 ![phone current iOS display](img/ios.svg){width="300"}
 
@@ -63,7 +64,7 @@ Make sure the battery on your phone is solid. Your phone will become a critical 
 
 With newer iOS (14 and 15), Loop continues working even in [Low Power Mode](https://support.apple.com/en-us/HT205234) if you need to preserve battery. 
 
-Older iOS were reported to cause Loop stop updating when the phone was locked. If you are running an older version of iOS with Loop 2.2.x, you may need to avoid Low Power Mode.
+Older iOS (and associated older phones) were reported to cause Loop to stop updating when the phone was locked. If you are running an older version of iOS (on an older device) with Loop 2.2.x, you may need to avoid Low Power Mode.
 
 * Make sure a charger and cord are in your diabetes supplies
 * Consider buying a battery pack, keep it charged and add it to your travel bag
@@ -88,7 +89,7 @@ If a limitation on your Mac prevents you from updating your phone to the latest 
     1. Choose to perform the installation of the updates manually
 
 
-When iOS updates are released, check your favorite [Loop Social Media](../index.md#finding-help) site to see if the update is causing an issue with Loop or your CGM before accepting the update from Apple.
+When iOS updates are released, check your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site to see if the update is causing an issue with Loop or your CGM before accepting the update from Apple.
 
 Within a few days, the "All-Clear" or "WAIT there's a problem" will be posted.
 

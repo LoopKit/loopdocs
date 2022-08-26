@@ -8,7 +8,7 @@
         - The iOS version determines minimum Xcode version
         - The minimum Xcode version determines minimum macOS version
             - To make it even more fun, the minimum macOS depends on whether your Mac uses M1 or is Intel-based (Mac or VM)
-        - If necessary, update [macOS](step1.md#check-your-macos) first and then return to this step
+        - If necessary, update [macOS](step1.md#check-your-macos-version) first and then return to this step
     - Download Xcode from your computer's App Store application
 
 !!! question "FAQs"
@@ -31,7 +31,7 @@ Please read this entire page.  First, choose a version of Xcode appropriate for 
 
 - Open your App Store in your computer and search for Xcode
 - You will be downloading it brand new or updating an existing installation
-- If the version number you need is bigger than what is shown in the App Store, you need to update [macOS](step1.md#check-your-macos) first
+- If the version number you need is bigger than what is shown in the App Store, you need to update [macOS](step1.md#check-your-macos-version) first
     - This image is old (ignore the version number in this graphic)
 
 ![Screenshot: App Store search for Xcode](img/xcode.png){width="750"}
@@ -61,7 +61,7 @@ Before manually accepting an iOS update, be sure you have compatible versions of
 
     Don't be the person who posts for help saying, "I'm trying to update my Loop app but am getting errors." When asked what Xcode version they have and if they've updated, they respond, "I don't have any Xcode updates available in the App Store, so I must be running the most current version."
 
-    Actually, they forgot to check for [macOS](step1.md#check-your-macos) updates and therefore cannot see the needed Xcode update yet.
+    Actually, they forgot to check for [macOS](step1.md#check-your-macos-version) updates and therefore cannot see the needed Xcode update yet.
 
 ### After Update - Reboot
 
@@ -73,18 +73,18 @@ The list below is the **minimum** versions you'll need based on your iOS. The hi
 
 **Newer** versions are always OK and should be used if your computer will accept the upgrade.
 
-* For iOS 15.4 and higher, minimum [macOS](step1.md#check-your-macos) is 12.0
+* For iOS 15.4 and higher, minimum [macOS](step1.md#check-your-macos-version) is 12.0
     * For iOS 15.5 or greater, minimum Xcode version is 13.4.x
     * For iOS 15.4.x, minimum Xcode version is 13.3
-* For iOS 15.0 to 15.2.x, minimum [macOS](step1.md#check-your-macos) is 11.3
+* For iOS 15.0 to 15.2.x, minimum [macOS](step1.md#check-your-macos-version) is 11.3
     * For iOS 15.2.x, minimum Xcode version is 13.2
     * For iOS 15.0.x, minimum Xcode version is 13.0
-* For iOS 14.5.x, minimum [macOS](step1.md#check-your-macos) is 11.0
+* For iOS 14.5.x, minimum [macOS](step1.md#check-your-macos-version) is 11.0
     * For iOS 14.5.x, minimum Xcode version is 12.5
 * If you built Loop using [Xcode 12.4 or earlier](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used)
     - **do NOT upgrade that phone to iOS 15** - the Loop app will immediately stop working
     - First upgrade macOS and Xcode and rebuild on phone, then upgrade the iOS
-* For iOS 14.0 to 14.4.x, minimum [macOS](step1.md#check-your-macos) is 11.0 (M1/M2), 10.15.4 (Intel)
+* For iOS 14.0 to 14.4.x, minimum [macOS](step1.md#check-your-macos-version) is 11.0 (M1/M2), 10.15.4 (Intel)
     * For iOS 14.4.x, minimum Xcode version is 12.4
     * For iOS 14.3.x, minimum Xcode version is 12.3
     * For iOS 14.2.x, minimum Xcode version is 12.2

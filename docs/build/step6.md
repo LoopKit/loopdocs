@@ -13,7 +13,7 @@
 
 !!! question "FAQs"
     - **"Can I use someone else's Apple Developer account?"** Please refer to this [Answer](../faqs/FAQs.md#can-i-use-someone-elses-apple-developer-account).
-    - **"Do I use my Apple ID or my child's Apple ID to enroll in the Apple Developer program?"** The Apple ID you use to enroll in the developer program does not need to be the same Apple ID as the Looper uses on their iPhone. For example, a parent installing Loop on their child's iPhone should configure a separate Apple ID for their child, but should use their own Apple ID to build the Loop app for that child. Typically for the developer enrollment, use the Apple ID of the person who will be building the app.
+    - **"Do I use my Apple ID or my child's Apple ID to enroll in the Apple Developer program?"** The Apple ID you use to enroll in the developer program must be associated with an adult. It does not need to be the same Apple ID as the Looper uses on their iPhone. For example, a parent installing Loop on their child's iPhone should configure a separate Apple ID for their child, but should use their own Apple ID to build the Loop app for that child.
     - **"How long does it take to have my Apple Development account active after I enroll?"** After you enroll, make sure you look for a confirmation email. Apple says it can take up to 24-48 hours to confirm and setup a new Apple developer account. However, some people have had the process take minutes. One SURE way to make it take longer is to use a different credit card to pay for the Apple Developer account enrollment than is already associated with that Apple ID. When you do that, finishing the enrollment process may be a hassle.
 
 ## Loopers Need Their Own Apple ID
@@ -59,7 +59,7 @@ PaidLoop will know nothing about the settings and information you had stored in 
 
 To enroll in an individual paid Paid account, go to the Apple's Developer Program website [Apple Developer website](https://developer.apple.com/programs/enroll/).
 
-If you choose to use the free account, you don't have to do anything on that website. You'll just wait for Xcode Preferences and we will get your free account then.
+If you choose to use the free account, you don't have to do anything on that website. You'll just wait for the instructions on the Xcode Preferences page and get your free account then.
 
 ## Next Step: Install Xcode
 

@@ -28,13 +28,15 @@ If you have access to a computer with MacOS 12.0 or newer, you can skip ahead to
 
 ## Compatible Versions
 
-The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **required** to build on any iPhone with an iOS version starting with iOS 15.4 and can be used to build Loop for **any** of the phone iOS versions listed below. Higher values of iOS might trigger the need for an update to macOS or Xcode. The [Loop and Learn Versions](https://www.loopandlearn.org/version-updates) page is brought up-to-date faster than LoopDocs; last time LoopDocs was updated, iOS 15.6.1 has the same macOS and Xcode requirements as iOS 15.4.
+The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **required** to build on any iPhone with an iOS version starting with iOS 15.4 and can be used to build Loop for **any** of the phone iOS versions listed below. Higher values of iOS might trigger the need for an update to macOS or Xcode. 
+
+The [Loop and Learn Version Updates](https://www.loopandlearn.org/version-updates) page posts an update every time a new iOS is released and tested. That page is typically updated faster than LoopDocs and reports changes, if any, to the minimum Xcode or macOS.
 
 * ** iOS 15.4 or newer**, the minimum macOS is Monterey (12.0)
 * ** iOS 15 - 15.3.1**, the minimum macOS is Big Sur (11.3)
 * ** iOS 14.5**, the minimum macOS is Big Sur (11.0)
 
-If your macOS does not meet the minimum, check to see if you can [update your macOS](step1.md#check-your-macos)
+If your macOS does not meet the minimum, check to see if you can [update your macOS](#check-your-macos-version)
 
 If you are an **existing Looper with an older macOS**, please click to [Read the Warning](#older-operating-system-warning) **before** you update your phone to iOS 15.
 
