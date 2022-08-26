@@ -20,7 +20,7 @@
     - **"Do I delete my old Loop app first?"** Definitely **not**! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
     - **"Do I need to start a new pod when I update?"** No. Your existing pod session will continue seamlessly if you are using the same Developer Account to sign the Loop app targets as you did the last time you built.
     - **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account used when your existing app was built (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
-    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check your new computer has the required compatible versions and then build your app. This will included installing Xcode and configuring Xcode preferences. There is no need to delete provisioning profiles on a branch new computer, but you can follow the steps if you prefer.
+    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check your new computer has the required compatible versions and then build your app. This will include installing Xcode and configuring Xcode preferences. There is no need to delete provisioning profiles on a branch new computer, but you can follow the steps if you prefer.
 
 ## When to Update Loop
 
@@ -181,7 +181,7 @@ Once this completes, you should see this in your terminal.
 
 ### Step 4a Completed: No Errors
 
-As long as there are no errors, you are now ready to proceed to [Build the Loop App: Download](step14.md#download) to build the released version of the app.
+As long as there are no errors, you are now ready to proceed to [Build the Loop App: Download](step14.md#download-loop) to build the released version of the app.
 
 
 ### Step 4a Had Errors
@@ -314,7 +314,7 @@ This may not be necessary, but it is one of the first steps to try if you do get
 
 #### Build like normal
 
-You are ready to proceed to [Build the Loop App: Download](step14.md#download) and continue on that page until you have completed the build.
+You are ready to proceed to [Build the Loop App: Download](step14.md#download-loop) and continue on that page until you have completed the build.
 
 !!! info "Add a Calendar Reminder"
 

@@ -20,10 +20,10 @@ Click on the Xcode->About Xcode menu item. The version number is displayed.
 
 ## Command Line Tools
 
-The very first time you open Xcode it installs a package of command line tools. Wait patiently until it finishes.  
+The very first time you open Xcode it may install a package of command line tools. Wait patiently until it finishes.  The command line tools may have installed without asking.
 
-* After the installation finishes and the pop-up window closes, check that your Command Line Tools installed correctly. 
-    - First, open Xcode Preferences (click on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner)and select `Preferences` in the drop-down menu)
+* Check that your Command Line Tools installed correctly.
+    - First, open Xcode Preferences (click on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and select `Preferences` in the drop-down menu)
     - Then select the `Locations` tab in the Preferences window to see the dropdown menu for Command Line Tools.  Make sure the Xcode version listed matches what you just installed (not the version in this graphic)
 * If it's blank, use the blue arrows to the right of the Command Line Tools row to select it
 
