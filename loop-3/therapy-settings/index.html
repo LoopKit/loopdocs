@@ -2268,14 +2268,14 @@
                 
                 
                 <h1 id="therapy-settings"><abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr><a class="headerlink" href="#therapy-settings" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>During <a href="../onboarding/#therapy-settings-onboarding">Onboarding</a>, all your therapy settings were entered.</p>
+<p>During <a href="../onboarding/#therapy-settings-onboarding">Onboarding</a>, all of your therapy settings were entered.</p>
 <p>After onboarding, the <abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr> screen is reached by going through the Loop Settings screen <strong>after</strong> a <a href="../settings/#add-pump-for-therapy-settings">pump</a> has been added.</p>
 <p>When building Loop 3 over Loop 2.2.x, the existing values from Loop 2.2.x are kept where possible and presented to the user as the "default" value when moving through each screen.</p>
-<p>This page provides more details about each <abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr>.</p>
+<p>This page provides more details about each of your <abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr>.</p>
 <h2 id="authorization-required">Authorization Required<a class="headerlink" href="#authorization-required" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>All the settings configured under <abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr> are protected by the same authorization method (FaceID, Fingerprint or Passcode) used to enable the app to issue a manual bolus.</p>
 <h2 id="details-for-therapy-settings">Details for <abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr><a class="headerlink" href="#details-for-therapy-settings" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop 3 has <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for each <abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr>. These are grouped in the <a href="#guardrails-for-settings"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Settings</a> section of this page.</p>
+<p>Loop 3 has <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for some <abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr>. These are grouped in the <a href="#guardrails-for-settings"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Settings</a> section of this page.</p>
 <div class="admonition tip">
 <p class="admonition-title">New Loopers</p>
 <p>New Loopers may prefer settings that show up outside the "typical" range.</p>
@@ -2307,7 +2307,7 @@
 <p align="center"><img alt="information screen for the glucose safety limit" src="../img/loop-3-therapy-setting-safety-info.svg" width="300" /></p>
 <p>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below shows two screens for <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr>.</p>
 <ul>
-<li>Frame 1: During onboarding, user can choose accept the default limit by tapping "Confirm Setting" or tap the row to configure the range (see Frame 2)</li>
+<li>Frame 1: During onboarding, user can accept the default limit by tapping "Confirm Setting" or tap the row to configure the range (see Frame 2)</li>
 <li>Frame 2: The user adjusts the picker wheel to select desired value and then taps on the "Confirm Setting" or "Save" button</li>
 </ul>
 <p align="center"><img alt="several screens showing glucose safety limit entry" src="../img/safety.gif" width="300" /></p>
@@ -2329,8 +2329,8 @@
 <li>When happy with the picker values, user must tap add</li>
 </ul>
 </li>
-<li>Frame 3: This screen is shown only if a values are outside typical</li>
-<li>Frame 4: Tap on the "Confirm Setting" or "Save" button to keep the value</li>
+<li>Frame 3: This screen is shown only if a value is outside "typical"</li>
+<li>Frame 4: Tap on the "Confirm Setting" or "Save" button to accept the values</li>
 </ul>
 <p align="center"><img alt="GIF showing selection of correction range" src="../img/corr-range.gif" width="300" /></p>
 <p>Do not let the yellow font discourage you if you want to have a "higher than typical" range to start with. Once you've used Loop for a while, you can revisit this setting.</p>
@@ -2374,7 +2374,7 @@
 <li>Make sure both Maximum Basal Rate and Maximum Bolus have the desired value before hitting <code>Save</code></li>
 </ul>
 <h3 id="maximum-basal-rate">Maximum Basal Rate<a class="headerlink" href="#maximum-basal-rate" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Maximum Basal Rate is the maximum automatically adjusted basal rate that Loop is allowed to enact to help reach your correction range. Some users choose a value 2, 3, or 4 times their highest scheduled basal rate. Work with your healthcare provider to choose a value that is higher than your highest scheduled basal rate, but as conservative or aggressive as you feel comfortable.</p>
+<p>Maximum Basal Rate is the maximum automatically adjusted basal rate that Loop is allowed to enact to help reach your correction range. Some users choose a value 2, 3, or 4 times their highest scheduled basal rate. Work with your healthcare provider to choose a value that is higher than your highest scheduled basal rate, but as conservative or aggressive as is comfortable.</p>
 <p>If the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is configured to <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr>, then the maximum basal rate can be used to limit how much extra insulin can be supplied automatically.</p>
 <p><a href="#guardrails-for-maximum-basal-rate"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Maximum Basal Rate</a></p>
 <h3 id="maximum-bolus">Maximum Bolus<a class="headerlink" href="#maximum-bolus" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2384,13 +2384,18 @@
 <p>If the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is configured to <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>, then the maximum bolus that is automatically supplied is 40% of the maximum bolus, but this can be applied at 5-minute intervals.</p>
 <p><a href="#guardrails-for-maximum-bolus"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Maximum Bolus</a></p>
 <h3 id="insulin-model">Insulin Model<a class="headerlink" href="#insulin-model" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Loop selects a specific insulin action model based on your entry here and when you add a <a href="../add-pump/#insulin-type">pump</a>.</p>
-<p>This setting must be entered during onboarding regardless of the type of insulin you will use in your pump.</p>
+<p>The <code>Insulin Model</code>, child or adult, is only used with "rapid acting" <code>Insulin Type</code>.</p>
 <ul>
-<li>The Loop models used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, do not distinguish between brands.  However, a different model is available for Adult or Child.</li>
-<li>The Loop models for "ultra rapid" insulins such as Fiasp or Lyumjev, each have their own model.<ul>
-<li>There is no differentiation between Adult and Child, at this time.</li>
-<li><abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr> Insulin selection is not used for "ultra rapid" insulins.</li>
+<li><code>Insulin Model</code> is entered under <abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr></li>
+<li><code>Insulin Type</code> is entered under pump settings, refer to <a href="../add-pump/#insulin-type">Insulin Type</a></li>
+</ul>
+<p>Loop selects a specific insulin action model based on <code>Insulin Model</code> and <code>Insulin Type</code>. If you add a pump, the <code>Insulin Type</code> is explicitly requested. If a pump is already added, as happens when you build this version over Loop 2.2.x, be sure to check the <a href="../add-pump/#insulin-type">Insulin Type</a> under the pump settings.</p>
+<p>An Insulin Model selection must be entered during onboarding regardless of the type of insulin you use in your pump.</p>
+<ul>
+<li>The Loop model used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, do not distinguish between brands; however, a different model is available for Adult or Child</li>
+<li>The Loop model for "ultra rapid" insulins such as Fiasp or Lyumjev, each have their own model<ul>
+<li>There is no differentiation between Adult and Child, at this time</li>
+<li><abbr title="Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits">Therapy Settings</abbr> <code>Insulin Model</code> selection is not used for "ultra rapid" insulins</li>
 </ul>
 </li>
 </ul>
