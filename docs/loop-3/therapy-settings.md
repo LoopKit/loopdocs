@@ -1,12 +1,12 @@
 # Therapy Settings
 
-During [Onboarding](onboarding.md#therapy-settings-onboarding), all your therapy settings were entered.
+During [Onboarding](onboarding.md#therapy-settings-onboarding), all of your therapy settings were entered.
 
 After onboarding, the Therapy Settings screen is reached by going through the Loop Settings screen **after** a [pump](settings.md#add-pump-for-therapy-settings) has been added.
 
 When building Loop 3 over Loop 2.2.x, the existing values from Loop 2.2.x are kept where possible and presented to the user as the "default" value when moving through each screen.
 
-This page provides more details about each Therapy Settings.
+This page provides more details about each of your Therapy Settings.
 
 ## Authorization Required
 
@@ -14,7 +14,7 @@ All the settings configured under Therapy Settings are protected by the same aut
 
 ## Details for Therapy Settings
 
-Loop 3 has Guardrails for each Therapy Settings. These are grouped in the [Guardrails for Settings](#guardrails-for-settings) section of this page.
+Loop 3 has Guardrails for some Therapy Settings. These are grouped in the [Guardrails for Settings](#guardrails-for-settings) section of this page.
 
 !!! tip "New Loopers"
     New Loopers may prefer settings that show up outside the "typical" range.
@@ -49,7 +49,7 @@ The graphic below shows the information screen presented during onboarding or wh
 
 The GIF below shows two screens for Glucose Safety Limit.
 
-* Frame 1: During onboarding, user can choose accept the default limit by tapping "Confirm Setting" or tap the row to configure the range (see Frame 2)
+* Frame 1: During onboarding, user can accept the default limit by tapping "Confirm Setting" or tap the row to configure the range (see Frame 2)
 * Frame 2: The user adjusts the picker wheel to select desired value and then taps on the "Confirm Setting" or "Save" button
 
 ![several screens showing glucose safety limit entry](img/safety.gif){width="300"}
@@ -77,8 +77,8 @@ The GIF below shows four screens when first adding and selecting a correction ra
 * Frame 2: Use the picker wheels to select desired values
     * This is the first entry so must start at midnight - additional rows can be added for other times
     * When happy with the picker values, user must tap add
-* Frame 3: This screen is shown only if a values are outside typical
-* Frame 4: Tap on the "Confirm Setting" or "Save" button to keep the value
+* Frame 3: This screen is shown only if a value is outside "typical"
+* Frame 4: Tap on the "Confirm Setting" or "Save" button to accept the values
 
 ![GIF showing selection of correction range](img/corr-range.gif){width="300"}
 {align="center"}
@@ -135,7 +135,7 @@ Delivery Limits are safety guardrails for your insulin delivery.
 
 ### Maximum Basal Rate
 
-Maximum Basal Rate is the maximum automatically adjusted basal rate that Loop is allowed to enact to help reach your correction range. Some users choose a value 2, 3, or 4 times their highest scheduled basal rate. Work with your healthcare provider to choose a value that is higher than your highest scheduled basal rate, but as conservative or aggressive as you feel comfortable.
+Maximum Basal Rate is the maximum automatically adjusted basal rate that Loop is allowed to enact to help reach your correction range. Some users choose a value 2, 3, or 4 times their highest scheduled basal rate. Work with your healthcare provider to choose a value that is higher than your highest scheduled basal rate, but as conservative or aggressive as is comfortable.
 
 If the Dosing Strategy is configured to Temp Basal Only, then the maximum basal rate can be used to limit how much extra insulin can be supplied automatically.
 
@@ -156,14 +156,19 @@ If the Dosing Strategy is configured to Automatic Bolus, then the maximum bolus 
 
 ### Insulin Model
 
-Loop selects a specific insulin action model based on your entry here and when you add a [pump](add-pump.md#insulin-type).
+The `Insulin Model`, child or adult, is only used with "rapid acting" `Insulin Type`.
 
-This setting must be entered during onboarding regardless of the type of insulin you will use in your pump.
+* `Insulin Model` is entered under Therapy Settings
+* `Insulin Type` is entered under pump settings, refer to [Insulin Type](add-pump.md#insulin-type)
 
-* The Loop models used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, do not distinguish between brands.  However, a different model is available for Adult or Child.
-* The Loop models for "ultra rapid" insulins such as Fiasp or Lyumjev, each have their own model.
-    * There is no differentiation between Adult and Child, at this time.
-    * Therapy Settings Insulin selection is not used for "ultra rapid" insulins.
+Loop selects a specific insulin action model based on `Insulin Model` and `Insulin Type`. If you add a pump, the `Insulin Type` is explicitly requested. If a pump is already added, as happens when you build this version over Loop 2.2.x, be sure to check the [Insulin Type](add-pump.md#insulin-type) under the pump settings.
+
+An Insulin Model selection must be entered during onboarding regardless of the type of insulin you use in your pump.
+
+* The Loop model used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, do not distinguish between brands; however, a different model is available for Adult or Child
+* The Loop model for "ultra rapid" insulins such as Fiasp or Lyumjev, each have their own model
+    * There is no differentiation between Adult and Child, at this time
+    * Therapy Settings `Insulin Model` selection is not used for "ultra rapid" insulins
 
 ### Carb Ratios
 
