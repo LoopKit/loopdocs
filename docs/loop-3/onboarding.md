@@ -217,7 +217,7 @@ For safety, don't set a maximum bolus limit any higher than your typical large m
 
 ### Insulin Model
 
-The `Insulin Model` selection determines whether a child or adult model is used by Loop if you select a "rapid acting" insulin (Apidra, Humalog or Novolog) in your [Insulin Type](add-pump.md#insulin-type) configuration under pump settings. For "ultra rapid" insulins (Fiasp, Lyumjev), the model selected is irrelevant, but a selection is required.
+The `Insulin Model` selection determines whether a child or adult model is used by Loop if you select a "rapid acting" insulin (Apidra, Humalog or Novolog) in your [Insulin Type](add-pump.md#insulin-type) configuration under pump settings. For "ultra rapid" insulins (Fiasp, Lyumjev), the `Insulin Model` selected is irrelevant, but a selection is required.
 
 
 ### Carb Ratios

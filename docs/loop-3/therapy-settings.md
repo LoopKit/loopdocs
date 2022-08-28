@@ -77,8 +77,8 @@ The GIF below shows four screens when first adding and selecting a correction ra
 * Frame 2: Use the picker wheels to select desired values
     * This is the first entry so must start at midnight - additional rows can be added for other times
     * When happy with the picker values, user must tap add
-* Frame 3: This screen is shown only if a values are outside "typical"
-* Frame 4: Tap on the "Confirm Setting" or "Save" button to keep the value
+* Frame 3: This screen is shown only if a value is outside "typical"
+* Frame 4: Tap on the "Confirm Setting" or "Save" button to accept the values
 
 ![GIF showing selection of correction range](img/corr-range.gif){width="300"}
 {align="center"}
@@ -156,16 +156,19 @@ If the Dosing Strategy is configured to Automatic Bolus, then the maximum bolus 
 
 ### Insulin Model
 
-The `Insulin Model`, child or adult, is only used with "rapid acting" `Insulin Type` in your pump setting.
+The `Insulin Model`, child or adult, is only used with "rapid acting" `Insulin Type`.
 
-Loop selects a specific insulin action model based on `Insulin Model` and `Insulin Type`. If you add a pump, the `Insulin Type` is explicitly requested. If a pump is already added, as happens when you build this version over Loop 2.2.x, be sure to check the [`Insulin Type`](add-pump.md#insulin-type) under the pump settings.
+* `Insulin Model` is entered under Therapy Settings
+* `Insulin Type` is entered under pump settings, refer to [Insulin Type](add-pump.md#insulin-type)
+
+Loop selects a specific insulin action model based on `Insulin Model` and `Insulin Type`. If you add a pump, the `Insulin Type` is explicitly requested. If a pump is already added, as happens when you build this version over Loop 2.2.x, be sure to check the [Insulin Type](add-pump.md#insulin-type) under the pump settings.
 
 An Insulin Model selection must be entered during onboarding regardless of the type of insulin you use in your pump.
 
-* The Loop models used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, do not distinguish between brands.  However, a different model is available for Adult or Child.
-* The Loop models for "ultra rapid" insulins such as Fiasp or Lyumjev, each have their own model.
-    * There is no differentiation between Adult and Child, at this time.
-    * Therapy Settings Insulin selection is not used for "ultra rapid" insulins.
+* The Loop model used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, do not distinguish between brands; however, a different model is available for Adult or Child
+* The Loop model for "ultra rapid" insulins such as Fiasp or Lyumjev, each have their own model
+    * There is no differentiation between Adult and Child, at this time
+    * Therapy Settings `Insulin Model` selection is not used for "ultra rapid" insulins
 
 ### Carb Ratios
 
