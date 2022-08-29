@@ -6,7 +6,7 @@ To build and use Loop you need:
 
 - [Apple computer](../build/step1.md#macos)
 - [Compatible iPhone/iPod Touch](../build/step2.md)
-- Compatible insulin pump: [Medtronic or Omnipod](../build/step3.md)
+- [Compatible insulin pump](../build/step3.md): [Medtronic or Omnipod]
 - [Compatible CGM](../build/step4.md)
 - [RileyLink Compatible Device](../build/step5.md) (unless using Omnipod DASH)
 - [Apple Developer Membership](../build/step6.md)
@@ -19,15 +19,15 @@ To build and use Loop you need:
 
 No. Loop is not available for download. You must build your own Loop app. Loop app will not be available in the Apple App store because that would be distribution of a medical device, and we are not in that "business".  You can build yourself, but we are not distributors.
 
-Each step needed to successfully build your Loop app is found in these docs. The harder part will be having the patience to read all the documents before you start. New Loop users are so excited to get started that they skip reading all the great info that these docs contain. So, as you begin the build...please include time to read the documents that follow what happens **after** you successfully build your Loop app.
+Each step needed to successfully build your Loop app is found in these docs. The harder part will be having the patience to read all the documents before you start. New Loop users are so excited to get started that they often skip reading all the great info that these docs contain. As you begin the build...please include time to read the documents that follow what happens **after** you successfully build your Loop app.
 
-If you have any questions, use the [Search](../index.md#how-to-use-these-docs) feature to find topics in LoopDocs.
+If you have any questions, use the [Search](../intro/loopdocs-how-to.md#website-search) feature to find topics in LoopDocs.
 
 ## Can I use an android phone or iPad for Loop?
 
 No, this is purely iPhone or iPod touch. The iPad does not support Apple Health which is required for Loop.
 
-There is open source software that runs on Android phones, check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
+There is open source software that runs on Android phones. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
 
 ## Do I have to be "tech-smart" to build Loop?
 
@@ -43,7 +43,7 @@ Sure, you can give this one a try. [School nurse's cheat sheet download](https:/
 
 The answer is varied, but a few hours from start to finish, depending on where you are starting and how comfortable you are with your computer.
 
-If you'd rather break it up into several shorter bits of effort, the [`Build App`](../build/overview.md) section is divided into convenient stopping points with Time Estimates for each step. You can do one or more steps depending on what kind of time you have available.
+If you'd rather break it up into several shorter bits of effort, the [`Build App`](../build/overview.md) section is divided into convenient stopping points with Time Estimates for each page. You can do one or more pages at a time, depending on what kind of time you have available.
 
 ## Does Loop cost money?
 
@@ -63,7 +63,7 @@ If you are borrowing an Apple computer, look at the required minimum settings as
 
 ## Can I use a PC or Windows computer to build?
 
-Yes, you can...sort of. There is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/) provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors either, so double check your computer uses an Intel processor instead of an AMD processor. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) who can assist.
+Yes, you can...sort of. There is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/) provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors, only Intel. Double check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) who can assist.
 
 ## How often do I need to get on the computer for Loop?
 
@@ -73,7 +73,7 @@ The longer answer is that Loop code is updated periodically to include new featu
 
 ## Will I need to build a new Loop if I switch between Medtronic and Omnipod?
 
-No. Loop will have the option to move between different pump types from within the same Loop app. You'll simply use the "Switch from Omnipods" or "Delete Pump" options to move to the other kind of pump.
+No. Loop lets you move between different pump types from within the same Loop app.
 
 ## Can I use my Apple Developer account to build for others?
 
@@ -98,36 +98,56 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 There is a [whole page with detailed information about Medtronic pumps](../build/step3.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 
-You can also use Omnipod Eros (not DASH - yet). You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
+You can also use some Omnipod pumps with Loop. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
+
+* Loop 2.2.x (the released code) supports Eros
+    * Refer to [Build Released Code](../build/step14.md)
+* The development version of Loop (soon to be released) supports both Eros and DASH
+    * This is not for beginners - please read the information (including links) on this page before building
+    * Refer to [Build Development Code](../build/step13.md)
+    
+Omnipod 5 is not supported by any version of Loop
+    
 
 ## Can I pay someone else to do this?
 
-NOOOO...you really need to figure this out yourself. This is an automated insulin delivery system and you really need to know how to build and operate this yourself.
+We do not know whether someone who builds the app for you incurs legal responsibility if something goes wrong while you are using a version they built for you.
+
+There are a few companies that provide Loop as a service.
+
+!!! warning "Best Practice: Learn to Build"
+    You are strongly encouraged to build Loop for yourself. 
+
+    * No links to providers who build Loop as a service  are found in LoopDocs
+    * If you choose to use such a service, before you begin, you should:
+        * Read all of LoopDocs
+        * Know how to Set up, Operate and Troubleshoot Loop
+        * **These steps are important for your safety**
 
 ## What if I lose my RileyLink Compatible Device?
 
-For Medtronic users, you simply go back to old school pump use until you get a new RileyLink compatible device. You can either let your temp basal finish by itself (30 minutes or less) or cancel the temp basal on the pump's menu. For bolusing, you'd go back to using the pump's bolus commands. When you get a device (either finding your old one or getting your backup device out) and Loop running again, you'll want to do one thing. Enter in any carbs to Loop that you may have eaten in the recent past that could still be affecting blood glucose. While Loop will read whatever insulin deliveries had happened while the RileyLink compatible device was missing, it will not read any carbs you entered into the pump...so make sure to add those to Loop and backdate them to the time they were eaten. That will help make the transition smoother to Looping again.
+For Medtronic users, you simply go back to old school pump use until you get a new RileyLink compatible device. You can either let your temp basal finish by itself (30 minutes or less) or cancel the temp basal on the pump's menu. For bolusing, you'd go back to using the pump's bolus commands. When you get a device (either finding your old one or getting your backup device out) and Loop running again, you'll want to do one thing. Enter in any carbs to Loop that you may have eaten in the recent past that could still be affecting blood glucose. While Loop will read whatever insulin deliveries had happened while the RileyLink compatible device was missing, it will not read any carbs you entered into the pump...so make sure to add those to Loop and backdate them to the time they were eaten. That will help make the transition back to closed loop smoother.
 
-For Pod users, your Pod will finish any currently running temporary basal rate (maximum of 30 minutes) and then revert back to your scheduled basal rate. Without a RileyLink compatible device, you will be receiving normal basals, but will need to pull out pens/syringe for bolus. If you have a backup device, you can simply connect to the new device on the same Loop app and it will work with the existing pod session. If you don't have a backup device, you'll have to remove the pod and start a new pod paired with your PDM until you get a new device.
+For Pod users, your Pod will finish any currently running temporary basal rate (maximum of 30 minutes) and then revert back to your scheduled basal rate. Without a RileyLink compatible device, you will be receiving normal basals, but will need to pull out pens/syringe for boluses. If you have a backup device, you can simply connect to the new device on the same Loop app and it will work with the existing pod session. If you don't have a backup device, you'll have to remove the pod and start a new pod paired with your PDM until you get a new device.
 
 ## What if I lose or get a new iPhone?
 
-If you lose your phone - it's the same protocol as if you lost your [rileylink](#what-if-i-lose-my-rileylink-compatible-device).
+If you lose your phone - follow the same dosing protocol as if you lost your [rileylink](#what-if-i-lose-my-rileylink-compatible-device).
 
-When you get a new iPhone, you can plan ahead. The information is found under [Updating FAQs for New Phone](update-faqs.md#what-if-im-changing-phones) for more information.
+When you get a new iPhone, you can plan ahead. The information found in the Update FAQs page, [What if I'm Changing Phones](update-faqs.md#what-if-im-changing-phones) section has more information.
 
 ## What about other pumps? When will they Loop?
 
-Hey now...let's be grateful for what we have first. The ability to use Loop is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Cracking the pumps for Loop use is a large undertaking. If and when another set of people spend a large amount of time figuring out other pumps, then they could conceivably be added to Loop. But, you don't need to let us know that you'd love to see more pumps compatible with Loop. So would we. There is just an awful lot of work that needs to happen and it is not easy nor quick.
+Hey now...let's be grateful for what we have first. The ability to use Loop is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Cracking the pumps for Loop use is a large undertaking. If and when another set of people spend a large amount of time figuring out other pumps, then they could conceivably be added to Loop. But you don't need to let us know that you'd love to see more pumps compatible with Loop. There is just an awful lot of work that needs to happen and it is neither quick or easy.
 
 * Tandem pumps are not Loop compatible.
-* DASH pods will be Loop compatible (when Loop 3 is released).
-* Omnipod 5 pods are no Loop compatible.
+* Omnipod DASH pods will be Loop compatible (when Loop 3 is released).
+* Omnipod 5 pods are not Loop compatible.
 * Newer Medtronic pumps are not Loop compatible.
 
 ## Can I have more than one Loop app on a phone?
 
-Yes, technically possible. You can have multiple Loop apps built onto the same iPhone. However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping). Additionally, your Pod will only work on one Loop app at a time anyways. So for smooth looping, just keep one Loop app on any phone for looping use.
+Yes, this is technically possible. You can have multiple Loop apps built onto the same iPhone. However, having multiple Loop apps on a single phone may lead to unexpected conflicts that can negatively affect your Loop's ability to stay green (keep looping). Additionally, your Pod will only work on one Loop app at a time anyways. So for smooth looping, just keep one Loop app on any phone for looping use.
 
 ## Will I be able to Loop on a plane? Or in the mountains?
 

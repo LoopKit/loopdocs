@@ -25,7 +25,7 @@ To view the list of data stored in Health
         * Nutrition for Carbohydrates
     * Tap each item, scroll down to Options section and tap on Add to Favorite
     * Repeat until all three are added
-    * Tap on the Summary (bottom left icon of toolbar), Favorites show up first
+    * Tap on the Summary (bottom left icon of toolbar); Favorites show up first
 
 ### Glucose and Apple HealthKit
 
@@ -35,7 +35,7 @@ Loop reads the Dexcom information at the same time the Dexcom app gets the readi
 
 If you look at your Health glucose readings, you'll notice the Loop icon for the last 3 hours and the Dexcom icon for times earlier than that.
 
-All other CGM are reported with the Loop icon and there is no transition after 3 hours.
+All other CGM readings are reported with the Loop icon and there is no transition after 3 hours.
 
 You may also notice that the Dexcom numbers get smoothed out. For example, the Dexcom readings, when they first are read from the transmitter may bounce up and down a bit. The Dexcom app will retrospectively smooth the numbers, changing what is displayed in their app compared to the original reading. The last 3 hours of data from Loop does not show that smoothing - it reports the value sent by the transmitter. If you suspect a sensor is not behaving well, check the Loop glucose plots compared to the Dexcom plots to assist in your evaluation. It might be time to confirm glucose with a fingerstick meter as well.
 
@@ -67,15 +67,17 @@ The relationship between Loop and Apple HealthKit is very important to understan
 
 #### Bolus
 
-* When Loop commands the pump to provide a bolus, either manual or automatic, it is shown in the Loop Event History and in the Health app insulin data list. (It may take a Loop Cycle or two to show up in Health, but it will appear.)
-* When you add insulin, such as from an injection, to the Health app, Loop reads it and adds it to IOB. It will not be added to the Event History because this is not a pump event.
+* When Loop commands the pump to provide a bolus, either manual or automatic, it is shown in the Loop Event History and in the Health app insulin data list
+    * It may take a Loop Cycle or two to show up in Health, but it will appear
+* When you add insulin, such as from an injection, to the Health app, Loop reads it and adds it to IOB
+    * It will not be added to the Event History because this is not a pump event
     * Loop 3 adds a new feature that allows you to add non-pump insulin from within the app instead of requiring you to add it inside the Health app
-* If you delete an entry from the Loop Event History list, but leave that same entry in Health, Loop reads it back from Health.
-    * It will not show up in the Event History, but it will still contribute to IOB.
-    * You must delete a pump event from both Loop Event History and Health data, best if you do this within one Loop Cycle.
-    * If that dose showed up in Event History but you could not find it in Health, look again after the next Loop cycle.
-* If you delete an entry from Health, but leave that same entry in Loop Event History, Loop reports it to Health again.
-    * You must delete a pump event from both the Loop Event History list and Health data, best if you do this within one Loop Cycle.
+* If you delete an entry from the Loop Event History list, but leave that same entry in Health, Loop reads it back from Health
+    * It will not show up in the Event History, but it will still contribute to IOB
+    * You must delete a pump event from both Loop Event History and Health data; it is best if you do this within one Loop Cycle
+    * If that dose showed up in Event History but you could not find it in Health, look again after the next Loop cycle
+* If you delete an entry from Health, but leave that same entry in Loop Event History, Loop reports it to Health again
+    * You must delete a pump event from both the Loop Event History list and Health data; it is best if you do this within one Loop Cycle
 
 !!! tip "Pro Tip"
     Write on a piece of paper the times and values you think you should delete.
@@ -142,4 +144,4 @@ The glucose units (mg/dL or mmol/L) Loop uses match what is in Apple Health. Onc
     * Select Blood Glucose
     * Scroll to the bottom and select Unit
     * Tap on Unit, if it isn't right, and select the correct units
-    * While you are there - go on and select Blood Glucose as a Favorite - it will be easier to find next time.
+    * While you are there - go on and select Blood Glucose as a Favorite - it will be easier to find next time

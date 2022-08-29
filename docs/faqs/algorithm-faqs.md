@@ -30,7 +30,7 @@ The use of [Overrides](../operation/features/workout.md) can be quite helpful fo
 
 When Loop withholds or suspends some of your scheduled basal insulin, that starts an accumulation of insulin deficit. If you have a kinked cannula and insulin is not delivered, you'd call yourself "lacking insulin" (negative IOB).
 
-When Loop reports negative IOB, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative IOB regularly, you probably need to [adjust/test your settings](https://loopkit.github.io/looptips/settings/settings/). Glucose that continues to decrease (away from a meal) when IOB goes negative, is typically a sign that the scheduled basal rate is too high.
+When Loop reports negative IOB, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative IOB regularly, you probably need to [adjust/test your settings](https://loopkit.github.io/looptips/settings/settings/). Glucose that continues to decrease (away from a meal) when IOB goes negative is typically a sign that the scheduled basal rate is too high.
 
 !!! abstract "Developer Notes"
     Scheduled basal rates are meant to counteract your endogenous glucose production. Another way of saying this is that Loop expects your body to be producing an amount of glucose at a rate that is handled by your basal insulin settings.

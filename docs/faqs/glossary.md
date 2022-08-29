@@ -1,15 +1,15 @@
 # Glossary
 
-Each item in the glossary is also a tooltip.
+Each item in the glossary is also a Tooltip.
 
-A tooltip is visible as a dashed underline word or phrase.
+A Tooltip is visible as a dashed underline word or phrase.
 
 If you hover your mouse or tap on a mobile device, the phrase associated with each word is displayed.
 
 
 **Activated**: for Omnipod: time at which insulin was injected into pod and 2 beeps were heard
 
-**Anchor Links**: any header on a LoopDocs page can be used as a link, tap on the paragraphy symbol at the end of the header to view the link in the URL
+**Anchor Links**: any header on a LoopDocs page can be used as a link, tap on the paragraph symbol at the end of the header to view the link in the URL
 
 **API_SECRET**: password (min 12 characters) needed to access Nightscout Site
 
@@ -62,6 +62,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **Expiration Date**: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 
 **Finder**: graphical folder and file display on Mac
+
+**fork**: a copy of Loop in a different github repository that is then customized to add other features
 
 **GIF**: Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips
 
@@ -117,7 +119,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **PR**: Pull Request - a formal method to request changes to a repository
 
-**Pre-Meal Range**: modify the correction range for up to one-hour by tapping on an icon in the toolbar
+**Pre-Meal Range**: modify the correction range for up to one hour by tapping on an icon in the toolbar
 
 **Provisioning Profile**: associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)
 
@@ -135,7 +137,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **submodules**: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
 
-**Table of Contents**: for the LoopDocs website, the TOC is the list of level 2 and 3 headers. The name of the page is a level 1 header.
+**Table of Contents**: (TOC) is the list of level 2 and 3 headers on a given page; the title at the top of the page is a level 1 header
 
 **Temp Basal Only**: provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)
 
@@ -145,7 +147,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Tokens**: on Nightscout, configure access permissions using tokens
 
-**Tooltips**: brief definitions provided for important terms and abbreviations on the website
+**Tooltip**: brief definitions provided for important terms and abbreviations on the website
 
 **URL**: website address (Uniform Resource Locator)
 

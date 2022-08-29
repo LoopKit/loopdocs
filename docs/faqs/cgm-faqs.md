@@ -2,7 +2,9 @@
 
 ## What CGMs does Loop work with?
 
-Loop works Dexcom G4 with share, G5, G6, Share and the Medtronic CGM systems compatible with Looping pumps.
+Loop 2.2.x works Dexcom G4 with share, G5, G6, Share and the Medtronic CGM systems compatible with Looping pumps.
+
+Loop dev works with G5, G6, Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps. A customization can be applied to work with some Libre sensors.
 
 Read the details [here](../build/step4.md).
 
@@ -12,31 +14,52 @@ No, you can start Looping mid-sensor session. There's no need to do anything spe
 
 ## What do I do when sensor is in warm-up?
 
-While the CGM is in warm-up, Loop will return to your scheduled basal delivery (within 30 min or less). You won't get temp basal adjustments during the warm-up period. If you need to bolus during this time, you will need to do a finger check and enter the blood glucose value into Apple Health app manually if you'd like Loop to offer a bolus recommendation. Loop will read that value from the Health app to provide you a bolus recommendation. If you are really ambitious, some people do frequent (15 min or so) finger checks and enter those into Health during warmup. This could allow Loop to do a bit of looping during warmup, albeit on blood glucose values that are spread pretty far apart compared to normal.
+Loop will stop automatically adjusting insulin when the most recent glucose value is older than 15 minutes.  This is indicated by seeing three dashes in place of the glucose reading on the HUD.
+
+* With Loop 2.2.x or Loop dev, enter a fingerstick glucose value in Apple Health to enable Loop to provide updated projections and loop briefly
+
+* With Loop dev, a HUD status row message of `No Recent Glucose` is displayed, making it easier to add the fingerstick value directly in Loop, which also saves it in Apple Health
+
+With no recent glucose readings, your pump resturns to the scheduled basal delivery (within 30 min or less).
+
+Loop continues to accept manual bolus commands. With Loop dev only, [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can also be commanded.
 
 ## What do I do when I switch transmitters?
 
-When you change transmitters, you will need to update the transmitter ID in your Loop settings. This is pretty simple task.
+When you change transmitters, you will need to update the transmitter ID in your Loop settings. The instructions for Dexcom are provided below:
 
-When you change transmitters, select the `Delete CGM` button at the very bottom of the CGM info page in Loop. Then you will select your Dexcom system again and add the new transmitter ID. You cannot just tap on your old transmitter ID to update it.
+* In Loop, select the `Delete CGM` button at the very bottom of the CGM info page
+    * You cannot just edit the line with your old transmitter ID
+* Follow the Dexcom instructions for pairing the new transmitter
+* In Loop, add CGM and select the Dexcom system again
+    * Enter the new transmitter ID
 
 ![img/delete-cgm.jpg](img/delete-cgm.jpg){width="400"}
 {align="center"}
 
-If you don't update your transmitter ID when you change active transmitters, your Loop will be forced to go to your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID.
+If you don't update your transmitter ID when you change active transmitters, and you included your Dexcom share credentials, then Loop uses your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID. It's best not to enter Share Credentials. This make it really obvious that you need to update the CGM settings in Loop at transmitter change time.
 
 ## Can I use Libre sensors with a reader like Miao Miao?
 
 If you want to use a Libre sensor you will need to modify Loop to accomplish that use. Loop code does not natively support that sensor, nor readers.
 
+With Loop dev, a customization can be used to support some Libre sensor CGM.
+
 ## Can I use Eversense?
 
-Nope. Eversense does not write to Apple Health nor has the BT communications protocol been reverse engineered the way it has been done with Dexcom.  
+Eversense does not write to Apple Health. The BT communications protocol been not been reverse engineered as was done with Dexcom. There is a method to upload Eversense to Nightscout using an Android phone.
+
+With Loop dev, you can use Nightscout as a CGM to Loop with Eversense, but that requires internet access.
 
 ## Can Loop read CGM data from Nightscout?
 
-Loop does not read CGM data from Nightscout. You would need to use a solution such as NightscoutShareServer and make changes to Loop code in order to do that. Please search the Looped group on Facebook for posts regarding that option, as it is not a part of standard Loop use and is a community-based modification. You will need to do your homework and research to make that happen. At this time, there is not an active version of a modified Loop that appears to support this option easily.
+Some versions of Loop can read CGM data from Nightscout.
 
-## Can Spike or Xdrip be used with Loop?
+* FreeAPS fork of Loop 2.2.x 
+* Loop dev
 
-Spike and Xdrip are not supported by Loop. You will need to implement community-based modifications to Loop in order to use those apps with Loop. Helpful tip: Use `spike loop` as a search term in Looped group for additional info about community-modified Loop versions for Spike. Links to those modified Loop versions are not provided in these LoopDocs because we (the LoopDocs maintainers and Loop developers) do not actively watch those versions to ensure they are up-to-date.
+Loop 2.2.x does not read CGM data from Nightscout.
+
+## What other CGM apps can be used to Loop?
+
+Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/) and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme). You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions. These can be used with the FreeAPS fork of Loop 2.2.x and, after applying a code customization, with Loop dev.

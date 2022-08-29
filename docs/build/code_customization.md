@@ -8,6 +8,8 @@ For new builders, please build the code before you make any changes. Start with 
 
 When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../faqs/release-faqs.md#current-release), you can skip the download and use the same folder as last time.  
 
+### Find My Dowloaded Loop Code
+
 Refer to the graphic below.  The Downloads folder in Finder is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom.
 
 * Open Finder
