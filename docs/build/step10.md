@@ -1,7 +1,7 @@
 # Test Settings
 
 !!! info "Time Estimate"
-    - 2 hours to read the rest of LoopDocs (particularly the "Set up App", "Operate", and "FAQ" sections) and [LoopTips](https://loopkit.github.io/looptips/) thoroughly and thoughtfully
+    - 2 hours to read the rest of LoopDocs (particularly the "Set Up", "Operate", and "FAQ" sections) and [LoopTips](https://loopkit.github.io/looptips/) thoroughly and thoughtfully
     - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to make sure you've familiarized yourself with Loop's expected behavior
     - 1-3 days to test settings for safety and to get the most out of Loop
 
@@ -13,13 +13,16 @@
 !!! question "FAQs"
     - **"My endo makes my pump settings, so do I really need to test them?"** Well, nobody is going to force you, but testing your settings even just a couple days will give you a tremendous advantage going into Loop. Your endo may have adjusted your settings in a very different context, with different constraints. What is safe and ideal in traditional pump therapy, may not be the best selection for the Loop app. So, keep an open mind and be willing to adjust settings with the Loop app.
     - **"I have great control, why would I need to test my settings?"** Awesome for you! However, it is quite possible that your "great control" comes with a lot of little adjustments all the time. We all got used to needing little bumps and nudges of insulin or carbs over time...and sometimes those bumps and nudges are covering for underlying settings that need adjustment. Testing your settings will help...especially if you are coming from a treatment style that involves memorizing your insulin doses for meals...you may not know your actual carb ratio or ISF as a result of "just knowing" your boluses.
-    - **"I can't basal test with my 2-year-old. What can I do?"** That is pretty tough. Consult your endo, watch your patterns, and do the best you can...little kiddos are a difficult group to test settings.
+    - **"I can't basal test with my 2-year-old. What can I do?"** That is pretty tough. Consult your endo, watch your patterns, and do the best you can...little kiddos are a difficult group to test settings. Once you become comfortable with Loop, there are tricks to adjust settings while staying in closed loop as long as settings are fairly close.
 
 Loop is just a fancy calculator underneath the hood. The math problems that it is solving depend on the settings that you provide. It's a good idea to make sure you do a bit of settings testing before using Loop.
 
 ## Basal Rates
 
 If the rates are properly set, Basal insulin will keep your blood glucose steady without food present. You can test your basal by having a relaxing 4-6 hours without eating at least two hours before you begin the test. Does your blood sugar stay steady? Or do you climb and need a correction? Or do you go low and need to eat? Setting basal is a crucial step to setting yourself up for Loop success. It determines how much of the insulin delivered (from basal and bolus) is counted as insulin on board (IOB).
+
+!!! tip "Basal Tricks"
+    Loop keeps track of how much more or less insulin than your scheduled basal rates are required to keep glucose in target. Once you become a proficient looper, you can tune your basal by looking at IOB overnight or when food and exercise are not involved.
 
 ## Insulin Sensitivity Factor
 

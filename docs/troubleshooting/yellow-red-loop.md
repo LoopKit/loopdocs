@@ -2,24 +2,26 @@
 
 ## Red Loop Overview
 
-This page provides help if your Loop icon is red and Loop is not working or only working sometimes? You can click on the Red Loop icon to read an error message that you may or may not understand. If you understand it, great...that should help you fix the problem.
-
-If not, keep reading to identify and fix your problem.
+This page provides help if your Loop icon is red and Loop is not working or only working sometimes. You can click on the Red Loop icon to read an error message. If you understand it, great...that should help you fix the problem. If not, grab a screenshot so you can ask for help from a mentor.
 
 !!! warning "Omnipod Users"
 
-    Do not just pull a pod that isn't responding when there is a red loop. Usually the issue is that the [RileyLink compatible device needs to be reset](#rileylink-compatible-device).
+    Do not pull a pod when there is a red loop. 
+    
+    * Usually the problem is with Loop, not the pod
+    * A new pod won't fix a Loop (Bluetooth or RileyLink communication problem)
 
-    If you don't fix the current communication problem first, the problem will carry forward into a failed pod-pairing attempt. So, please try getting the device working properly before deciding to ditch a pod because of a red loop.
+    There are a few times when it is the pod - but try all the steps on this page **first**.
 
 
 A Red Loop icon means that Loop has not completed a cycle for 15-minutes or more and this is normally because of a communication break-down with one of the systems listed below. To find out which one, tap on the Red Loop icon, read the message and search this page for that message.
 
 ## Typical Causes for Red Loop
 
-Some of the reasons listed below cause Loop to go Red and stay Red until you fix it.  Others will cause intermittent Red Loops that come and go, but can be very annoying.
+Some of the reasons listed below cause Loop to go Red and stay Red until you fix it.  Others will cause intermittent Red Loops that come and go.
 
 1. [RileyLink Compatible Device](#rileylink-compatible-device)
+    * With Omnipod DASH, click on the link above and follow the Bluetooth steps
 1. [Continuous Glucose Monitor (CGM)](#cgm-values-are-not-being-collected-by-loop)
 1. [Apple Health](#apple-health)
 1. [Background App Refresh](#background-app-refresh) is not enabled for Phone, Loop and/or CGM
@@ -117,15 +119,6 @@ If you have not enabled background app refresh on your phone, then Loop is likel
 1. Phone Settings -> General -> Background App Refresh -> enable
 1. Then scroll down until you find Loop and make sure the green slider is enabled
 1. While you are there - check your CGM app as well
-
-!!! warning ""
-
-    Make sure you never accept Low Power Mode on your phone. Low Power mode will disable apps like Loop when phone is locked.
-
-    Suggestions:
-
-    * Add a charger and cable to your diabetes go-bag
-    * Add a power-pack and cable to your diabetes go-bag
 
 
 For iOS 15, there is a new feature described by [Dexcom](https://www.dexcom.com/faqs/what-are-the-recommended-iphone-settings)

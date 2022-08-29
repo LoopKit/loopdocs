@@ -10,7 +10,7 @@ After you have been using Loop for a while, there's a potential that you will ru
 
 ### Check the Docs
 
-Loop docs are updated regularly.  If you built your Loop app awhile ago, chances are good that more information has been updated and changed since you last read them.  Please use the search tool - if there's an error message - search for it. Scan the topics in the `Troubleshoot` list under the `Operate` tab of LoopDocs and look for a page that may be applicable.  The FAQs pages are definitely worth reviewing too.
+Loop docs are updated regularly.  If you built your Loop app awhile ago, chances are good that more information has been updated and changed since you last read them.  Please use the search tool - if there's an error message - search for it. Scan the topics in the `Troubleshoot` tab of LoopDocs and look for a page that may be applicable.  The FAQs pages are definitely worth reviewing too.
 
 ### Issue Report
 

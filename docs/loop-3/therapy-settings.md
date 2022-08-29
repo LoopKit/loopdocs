@@ -19,8 +19,8 @@ Loop 3 has Guardrails for some Therapy Settings. These are grouped in the [Guard
 !!! tip "New Loopers"
     New Loopers may prefer settings that show up outside the "typical" range.
 
-    * These show yellow font on the picker dial and you must acknowledge a warning message that the selected value is lower, higher or outside "typical".
-    * It is always fine to pick a yellow or even red value when being cautious.
+    * These show yellow font on the picker dial and you must acknowledge a warning message that the selected value is lower, higher or outside "typical"
+    * It is always fine to pick a yellow or even red value when being cautious
 
     For example, choosing a Correction Range that is higher than "typical" when starting to learn Loop is fine. Once you are comfortable with how the system works, the range can be adjusted if desired - entirely up to you in consulatation with your health care professional.
 
@@ -36,7 +36,7 @@ Loop 3 has Guardrails for some Therapy Settings. These are grouped in the [Guard
     
     * When saving a Therapy Setting
         * During Onboarding, the button is labeled "Confirm Setting"
-        * Otherwise, the button is labeled "Save".
+        * Otherwise, the button is labeled "Save"
 
 ### Glucose Safety Limit
 
@@ -107,8 +107,8 @@ The GIF below shows three screens from various scenarios. The red box indicates 
 {align="center"}
 
 !!! note "Note"
-    * If you do not add an entry, the pre-meal icon on the toolbar is disabled.
-    * If you add an entry, the pre-meal icon is activated for 1 hour or until carbs are entered or until the user cancels it.
+    * If you do not add an entry, the pre-meal icon on the toolbar is disabled
+    * If you add an entry, the pre-meal icon is activated for 1 hour or until carbs are entered or until the user cancels it
 
 
 [Guardrails for Pre-Meal Range](#guardrails-for-pre-meal-range)
@@ -117,7 +117,7 @@ The GIF below shows three screens from various scenarios. The red box indicates 
 
 Your Basal Rate of insulin is the number of units per hour that you want to use to cover your background insulin needs.
 
-* Loop supports 1 to 48 rates per day.
+* Loop supports 1 to 48 rates per day
 * The schedule starts at midnight and cannot contain a rate of 0 U/hr (as the only entry)
 
 [Guardrails for Basal Rates](#guardrails-for-basal-rates)
@@ -165,8 +165,8 @@ Loop selects a specific insulin action model based on `Insulin Model` and `Insul
 
 An Insulin Model selection must be entered during onboarding regardless of the type of insulin you use in your pump.
 
-* The Loop model used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, do not distinguish between brands; however, a different model is available for Adult or Child
-* The Loop model for "ultra rapid" insulins such as Fiasp or Lyumjev, each have their own model
+* The Loop model used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, does not distinguish between brands; however, a different model is available for Adult or Child
+* The Loop model for "ultra rapid" insulins, such as Fiasp or Lyumjev, have their own model by brand
     * There is no differentiation between Adult and Child, at this time
     * Therapy Settings `Insulin Model` selection is not used for "ultra rapid" insulins
 
@@ -199,8 +199,8 @@ Your Insulin Sensitivities refer to the drop in glucose expected from one unit o
 Loop has guardrails for Therapy Settings.
 
 * The limits in the code are provided for reference below
-    * The tables list from left to right: the lower limit, min recommended, max recommended and upper limit values for that guardrail.
-* The limits for some settings can be altered by one or more therapy setting you have selected
+    * The tables list from left to right: the lower limit, min recommended, max recommended and upper limit values for that guardrail
+* The limits for some settings can be altered by other therapy settings you have selected
 
 !!! tip "Experienced Loopers"
     The guardrails for each therapy setting used by Loop can be modified with [Code Customization](../build/code_customization.md).
@@ -213,8 +213,8 @@ The font color in the value picker has the following meaning:
 * **red**: value is minimum or maximum limit of the range "allowed by Loop"
 
 !!! question "Mobile Device"
-    * On a mobile device, you may need to scroll the table left to right to see all four values.
-    * Try landscape mode to see the entire table width without scrolling.
+    * On a mobile device, you may need to scroll the table left to right to see all four values
+    * Try landscape mode to see the entire table width without scrolling
 
 #### Guardrails for Glucose Safety Limit
 
@@ -274,11 +274,15 @@ The maximum bolus is limited by your pump, but it is a good idea to limit it to 
 
 #### Guardrails for Carb Ratios
 
+Remember, CR goes in the denominator when calculating insulin dose for carbs. So the min - max values in the table below correspond to stronger - weaker values for CR.
+
 |  Units |  limit | min |  max | limit |
 |--|--:|--:|--:|--:|
 | g/U | 2.0 | 4.0 | 28.0 | 150.0 |
 
 #### Guardrails for Insulin Sensitivities
+
+Remember, ISF goes in the denominator when calculating insulin dose for a correction. So the min - max values in the table below correspond to stronger - weaker values for ISF.
 
 |  Units |  limit | min |  max | limit |
 |--|--:|--:|--:|--:|

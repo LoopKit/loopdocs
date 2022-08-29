@@ -1,6 +1,6 @@
 # RileyLink Compatible Device FAQs
 
-A RileyLink compatible device is a required part of Loop. The device uses the RileyLink protocol to communicate information to/from your pump by radio communications and to/from your iPhone using Bluetooth. You will need the device within range of your phone and pump so that these communications can happen. Put it in a purse, pocket, SPIbelt. Clip it to a backpack, belt, or bra...but please do bring it with you..
+A RileyLink compatible device is a required part of Loop for Medtronic and Omnipod (Eros not DASH) pumps. The device uses the RileyLink protocol to communicate information to/from your pump by radio communications and to/from your iPhone using Bluetooth. You will need the device within range of your phone and pump so that these communications can happen. Put it in a purse, pocket, SPIbelt. Clip it to a backpack, belt, or bra...but please do bring it with you..
 
 Purchase information for these devices is found in [RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices)
 
@@ -35,14 +35,6 @@ Example of using more than one device:
 * Caveats:
     * The phone needs to be close enough to get the CGM update
     * Do NOT forget to pick up one RileyLink device and take it with you when you leave the house
-
-## Cases
-
-There is now a topics section on cases The Looped Facebook group. (Right hand side when you're in the discussion location).
-
-[Link to Topics: Cases Riley Ema Orange](https://www.facebook.com/groups/1782449781971680/post_tags/?post_tag_id=2516136941936290)
-
-You can also use the search feature on the general discussion page of The Looped Facebook group if you already have a case and want more ideas, e.g., "How to carry rileylink".
 
 
 ## Communications
@@ -117,13 +109,13 @@ A number of OrangeLink Pro devices were shipped with FW2.6 and for people who al
 
 ## EmaLink and OrangeLink Features
 
-Some of the features of the OrangeLink were added to the [RileyLink Display](../operation/loop-settings/rileylink.md) with Loop v2.2.6. However, as mentioned above, the FW and HW information in some OrangeLink firmware was inconsistent in earlier versions. The consequence is that the OrangeLink Pro screen does not show the Find Device feature that many people want to use with the versions of firmware that provide good communication with Loop. The patch listed below fixes this issue.
+Some of the features of the OrangeLink were added to the [RileyLink Display](../operation/loop-settings/rileylink.md) with Loop 2.2.x. However, as mentioned above, the FW and HW information in some OrangeLink firmware was inconsistent in earlier versions. The consequence is that the OrangeLink Pro screen does not show the Find Device feature that many people want to use with the versions of firmware that provide good communication with Loop. The patch listed below fixes this issue.
 
-The EmaLink features were not added with Loop v2.2.6. The patch listed below adds some EmaLink features.
+The EmaLink features were not added with Loop 2.2.x. The patch listed below adds some EmaLink features.
 
 ### EmaLink and OrangeLink Patch
 
-A patch was developed to update the RileyLink screen of the Loop app that detects the OrangeLink hardware for all versions of the OrangeLink firmware and adds the battery level reporting and notification to the EmaLink screen. Click on the link below. There are detailed instructions on how to use this patch for Loop v2.2.6.
+A patch was developed to update the RileyLink screen of the Loop app that detects the OrangeLink hardware for all versions of the OrangeLink firmware and adds the battery level reporting and notification to the EmaLink screen. Click on the link below. There are detailed instructions on how to use this patch for Loop 2.2.x.
 
 * [EmaLink and OrangeLink Patch](https://github.com/ps2/rileylink_ios/issues/686)
 
@@ -170,7 +162,7 @@ If your blue light remains on despite trying a restart, it is time to pull out y
 
 ## RileyLink Charging
 
-The battery that comes with RileyLink is not charged completely when it is shipped, so be sure to charge it up before initial use. You'll need a [mini-USB cable](https://www.amazon.com/AmazonBasics-USB-2-0-Cable--Male/dp/B00NH13S44) and [0.5A USB charging power supply](https://www.amazon.com/Cellet-Powered-Charger-iPhones-Smartphones-/dp/B00FE8WFCO) like your iPhone power supply. RileyLink takes about 2 hours to fully charge (the red light will turn off when fully charged, read note above about red light patterns) and should easily last at least a full day of constant Loop use. Typically, it can go into the 30-hour range without any problems. Most people charge their RileyLink each night when they are sleeping. You don't have to worry about leaving the RileyLink plugged in "too long" for charging. It will automatically stop charging the battery when it is fully charged.
+The battery that comes with RileyLink is not charged completely when it is shipped, so be sure to charge it up before initial use. RileyLink takes about 2 hours to fully charge (the red light will turn off when fully charged, read note above about red light patterns) and should easily last at least a full day of constant Loop use. Typically, it can go into the 30-hour range without any problems. Most people charge their RileyLink each night when they are sleeping. You don't have to worry about leaving the RileyLink plugged in "too long" for charging. It will automatically stop charging the battery when it is fully charged.
 
 Since the best practice is to charge your RileyLink overnight while you sleep, and the battery lasts safely over 24 hours, there is no battery level indicator for the RileyLink. The RileyLink's charge level is not viewable on Nightscout, nor within the Loop app. If you forget to charge your RileyLink overnight, you can recharge it with a portable USB battery in a pinch. A [short mini-USB cable](https://www.adafruit.com/product/899) could be a good addition to a small gear bag.
 
@@ -190,14 +182,6 @@ You can *technically* use that RileyLink with either pump on Loop. But, you will
 
 In a pinch, if you have a RileyLink that you used with a Medtronic pump and have switched to Omnipod, it might work as a backup, but you won't love it.
 
-### Can you swap out the old antenna on a RileyLink?
-
-Yes, the antenna swap is not a hard swap if you have basic soldering skills and tools. The old antenna can be removed easily by reheating the solder. New 433MHz antennas and a cap can be found on the [GetRileyLink site](https://getrileylink.org/product/433diyupgrade/).
-
-Tips: use flux and clean the antenna stub before soldering. Poorly DIY-soldered antennas can lead to a decreased range and frequent communication drops between Loop and the pods. Be very sure that the wire on the antenna does NOT poke out the back side of the printed-circuit board where it could rub against and possibly puncture the battery casing.
-
-After a year of use (and a year of being dropped), the antenna may no longer securely soldered. The solder should be shiny and the antenna base should be firmly attached to the board.
-
 ## How long will my RileyLink go between charging?
 
 RileyLinks can go about 30-36 hours on a single charge. There is no way to see the remaining charge level, so most people just get into the habit of charging overnight while they sleep. The actual time to fully recharge is about 1 or 2 hours; you'll know it is fully charged when the red light turns off. After a full charge, the red light will turn off and then periodically turn on for short times while it "tops off" while still on a charger.
@@ -211,6 +195,8 @@ You can't. There is no charge level indicator. Just charge it nightly, and you w
 Eventually, Lithium-ion Polymer (LiPo) batteries will lose charging capacity. You would want to replace if you notice the battery not lasting the full day. Many people report using their battery for more than 2 years without issue.
 
 Be aware that if a battery is failing, it may swell. If you notice that the RileyLink battery is swollen, remove the swollen battery from your home and place in a fire-safe area and recycle it properly.  Either order a new battery or pull out your spare.
+
+After a year of use (and a year of being dropped), the antenna may no longer be securely soldered. If you are getting a lot of red loops, it might be a poor antenna connection instead of a failing battery. Check the solder joint at the antenna. The solder should be shiny and the antenna base should be firmly attached to the board.
 
 ### RileyLink Battery
 

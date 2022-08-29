@@ -1,5 +1,5 @@
 *[Activated]: for Omnipod: time at which insulin was injected into pod and 2 beeps were heard
-*[Anchor Links]: any header on a LoopDocs page can be used as a link, tap on the paragraphy symbol at the end of the header to view the link in the URL
+*[Anchor Links]: any header on a LoopDocs page can be used as a link, tap on the paragraph symbol at the end of the header to view the link in the URL
 *[API_SECRET]: password (min 12 characters) needed to access Nightscout Site
 *[Automatic Bolus]: provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)
 *[BAGE]: pump battery age on Nightscout site
@@ -26,6 +26,7 @@
 *[Event History]: record of pump events (bolus or temp basal) reported and used by Loop
 *[Expiration Date]: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 *[Finder]: graphical folder and file display on Mac
+*[fork]: a copy of Loop in a different github repository that is then customized to add other features
 *[GIF]: Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips
 *[git]: a tool for version control
 *[Glucose Chart]: Display of measured and predicted glucose values
@@ -53,7 +54,7 @@
 *[Package Dependencies]: packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer
 *[pill]: on Nightscout, small boxes with information, tap for extra details
 *[PR]: Pull Request - a formal method to request changes to a repository
-*[Pre-Meal Range]: modify the correction range for up to one-hour by tapping on an icon in the toolbar
+*[Pre-Meal Range]: modify the correction range for up to one hour by tapping on an icon in the toolbar
 *[Provisioning Profile]: associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)
 *[Pull Request]: formal method to request changes to a repository
 *[Quit the Loop App]: quit out of the app - different from closing the app - typically you swipe up in the app switcher
@@ -62,12 +63,12 @@
 *[Rosetta]: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 and M2 chips)
 *[SAGE]: sensor age on Nightscout site
 *[submodules]: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
-*[Table of Contents]: for the LoopDocs website, the TOC is the list of level 2 and 3 headers. The name of the page is a level 1 header.
+*[Table of Contents]: (TOC) is the list of level 2 and 3 headers on a given page; the title at the top of the page is a level 1 header
 *[Temp Basal Only]: provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)
 *[Terminal]: interface for entering commands to the computer
 *[Therapy Settings]: Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits
 *[Tokens]: on Nightscout, configure access permissions using tokens
-*[Tooltips]: brief definitions provided for important terms and abbreviations on the website
+*[Tooltip]: brief definitions provided for important terms and abbreviations on the website
 *[URL]: website address (Uniform Resource Locator)
 *[watchOS]: Apple watch operating system; must be compatible with phone iOS
 *[Workspace]: a grouping of several repositories into a complete package

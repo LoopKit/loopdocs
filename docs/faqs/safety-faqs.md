@@ -22,4 +22,4 @@ Once carbohydrates are entered into Loop, the algorithm will begin to dose insul
 
 If you entered carbs and then changed your mind on the amount or the time at which they were eaten, use these [instructions](../operation/features/carbs.md#edit-meals) to delete or edit them. This will make Loop better able to predict blood glucose and adjust insulin delivery appropriately.
 
-Make sure [Health](../build/health.md#loop-permissions) permissions are set for Loop to `Write` but not `Read` carbs. This avoids a scenario where Loops reads entries from a third-party app. These carbs cannot be edited within Loop.
+Make sure [Health](../build/health.md#loop-permissions) permissions are set for Loop to `Write` but **not** `Read` carbs. This avoids a scenario where Loops reads entries from a third-party app. These carbs cannot be edited within Loop.
