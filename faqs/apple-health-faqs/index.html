@@ -2211,14 +2211,14 @@
 </li>
 <li>Tap each item, scroll down to Options section and tap on Add to Favorite</li>
 <li>Repeat until all three are added</li>
-<li>Tap on the Summary (bottom left icon of toolbar), Favorites show up first</li>
+<li>Tap on the Summary (bottom left icon of toolbar); Favorites show up first</li>
 </ul>
 </div>
 <h3 id="glucose-and-apple-healthkit">Glucose and Apple HealthKit<a class="headerlink" href="#glucose-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>For Dexcom users with the Dexcom app on the Loop phone, the Dexcom app writes the value to Health with a 3-hour delay.</p>
 <p>Loop reads the Dexcom information at the same time the Dexcom app gets the reading from the transmitter. It uses the glucose value to update predictions and stores it in Health.</p>
 <p>If you look at your Health glucose readings, you'll notice the Loop icon for the last 3 hours and the Dexcom icon for times earlier than that.</p>
-<p>All other <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> are reported with the Loop icon and there is no transition after 3 hours.</p>
+<p>All other <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings are reported with the Loop icon and there is no transition after 3 hours.</p>
 <p>You may also notice that the Dexcom numbers get smoothed out. For example, the Dexcom readings, when they first are read from the transmitter may bounce up and down a bit. The Dexcom app will retrospectively smooth the numbers, changing what is displayed in their app compared to the original reading. The last 3 hours of data from Loop does not show that smoothing - it reports the value sent by the transmitter. If you suspect a sensor is not behaving well, check the Loop glucose plots compared to the Dexcom plots to assist in your evaluation. It might be time to confirm glucose with a fingerstick meter as well.</p>
 <h3 id="carbohydrates-and-apple-healthkit">Carbohydrates and Apple HealthKit<a class="headerlink" href="#carbohydrates-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In Loop 2.2.x, if you set Apple Health app permissions to allow it, Loop will read carbohydrates from the Health app. If you give a third-party app permission to store carbohydrate data in Health, and do not realize that Loop reads that information, you might get unexpected insulin delivery based off those carbs. To avoid that unanticipated behavior, the directions tell you to set permissions to allow Loop to write to carbohydrate storage but not read.</p>
@@ -2242,19 +2242,23 @@
 </div>
 <h4 id="bolus">Bolus<a class="headerlink" href="#bolus" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
-<li>When Loop commands the pump to provide a bolus, either manual or automatic, it is shown in the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and in the Health app insulin data list. (It may take a <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> or two to show up in Health, but it will appear.)</li>
-<li>When you add insulin, such as from an injection, to the Health app, Loop reads it and adds it to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. It will not be added to the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> because this is not a pump event.<ul>
+<li>When Loop commands the pump to provide a bolus, either manual or automatic, it is shown in the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and in the Health app insulin data list<ul>
+<li>It may take a <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> or two to show up in Health, but it will appear</li>
+</ul>
+</li>
+<li>When you add insulin, such as from an injection, to the Health app, Loop reads it and adds it to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr><ul>
+<li>It will not be added to the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> because this is not a pump event</li>
 <li>Loop 3 adds a new feature that allows you to add non-pump insulin from within the app instead of requiring you to add it inside the Health app</li>
 </ul>
 </li>
-<li>If you delete an entry from the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> list, but leave that same entry in Health, Loop reads it back from Health.<ul>
-<li>It will not show up in the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, but it will still contribute to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>.</li>
-<li>You must delete a pump event from both Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Health data, best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</li>
-<li>If that dose showed up in <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> but you could not find it in Health, look again after the next Loop cycle.</li>
+<li>If you delete an entry from the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> list, but leave that same entry in Health, Loop reads it back from Health<ul>
+<li>It will not show up in the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, but it will still contribute to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr></li>
+<li>You must delete a pump event from both Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Health data; it is best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr></li>
+<li>If that dose showed up in <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> but you could not find it in Health, look again after the next Loop cycle</li>
 </ul>
 </li>
-<li>If you delete an entry from Health, but leave that same entry in Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, Loop reports it to Health again.<ul>
-<li>You must delete a pump event from both the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> list and Health data, best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</li>
+<li>If you delete an entry from Health, but leave that same entry in Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, Loop reports it to Health again<ul>
+<li>You must delete a pump event from both the Loop <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> list and Health data; it is best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr></li>
 </ul>
 </li>
 </ul>
@@ -2344,7 +2348,7 @@
 <li>Select Blood Glucose</li>
 <li>Scroll to the bottom and select Unit</li>
 <li>Tap on Unit, if it isn't right, and select the correct units</li>
-<li>While you are there - go on and select Blood Glucose as a Favorite - it will be easier to find next time.</li>
+<li>While you are there - go on and select Blood Glucose as a Favorite - it will be easier to find next time</li>
 </ul>
 </li>
 </ul>

@@ -2344,11 +2344,11 @@
 <p>The <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr> displays glucose values in your preferred units.</p>
 <div class="admonition info">
 <p class="admonition-title">mg/dL or mmol/L</p>
-<p>If your preferred glucose unit are not displayed, follow these instructions to <a href="../onboarding/#change-glucose-units">Change Glucose Units</a>.</p>
+<p>If your preferred glucose unit is not selected, follow these instructions to change <a href="../onboarding/#glucose-units">Glucose Units</a>.</p>
 </div>
 <p>The vertical scale is automatically adjusted by Loop to be as useful as possible while including the highest and lowest readings in the chart.</p>
-<p>The horizontal axis is set to go forward from the current time until your <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> (insulin duration) forward (so you can see what Loop thinks glucose will be eventually). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.</p>
-<p>The glucose <a href="../therapy-settings/#correction-range"><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></a> is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction range in lighter blue.</p>
+<p>The horizontal axis is set to go forward from the current time through your <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> (insulin duration), so you can see what Loop thinks glucose will be eventually. It then goes back in time as far as there is room, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.</p>
+<p>The glucose <a href="../therapy-settings/#correction-range"><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></a> is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar indicates the correction range during that override.</p>
 <div class="admonition warning">
 <p class="admonition-title">Negative Glucose Predition</p>
 <p>If you have a crazy negative glucose prediction - it is likely that you set an <a href="../../operation/features/workout/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> with a tiny sensitivity.</p>
@@ -2382,7 +2382,7 @@
 <h3 id="insulin-delivery-chart">Insulin Delivery Chart<a class="headerlink" href="#insulin-delivery-chart" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p align="center"><img alt="Plot of insulin delivery shown as bolus triangles and relative temp basal settings" src="../../operation/loop-settings/img/insulin_delivery.jpg" width="400" /></p>
 <p>The Insulin Delivery chart displays a history of the temp basals enacted by Loop.  The display is relative to the scheduled basal rates entered in the Loop settings.  So, a rate displayed in this chart as <code>+0 units</code> would indicate no temp basal was set, and Loop defaulted to the scheduled basal rate.  Individual boluses are indicated by an orange triangle on the chart (shown in the graphic above, near the left-most time).  The total insulin delivered since midnight, including all basals and boluses <strong>AND (Medtronic Only) priming insulin</strong>, is given in the upper right corner of the graph.</p>
-<p>Please note that for safety reasons, Loop will assume a bolus was successful, even if it is not sure that the pump responded as expected.  Once the communications with the pump settle down, Loop will (almost always) be able to reconcile whether a dose went through as expected. Occasionally, the bolus may be temporarily rendered (drawn) as a very high temp basal rate vs. a (triangle) discrete bolus event.  This does NOT mean that the Loop actually enacted a high temp basal rate...only that the bolus is being <strong>drawn</strong> on the chart in the equivalent of a high temp basal rate.</p>
+<p>Please note that for safety reasons, Loop will assume a bolus was successful, even if it is not sure that the pump responded as expected.  Once the communications with the pump settle down, Loop will (almost always) be able to reconcile whether a dose went through as expected. Occasionally, the bolus may be temporarily rendered (drawn) as a very high temp basal rate vs. a (triangle) discrete bolus event.  This does NOT mean that the Loop actually enacted a high temp basal rate...only that the bolus is being <strong>drawn</strong> on the chart as the equivalent of a high temp basal rate.</p>
 <h3 id="event-history-reservoir-and-non-pump-insulin"><abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, Reservoir and Non-Pump Insulin<a class="headerlink" href="#event-history-reservoir-and-non-pump-insulin" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Clicking on either the Active Insulin or Insulin Delivery charts will open your Insulin Delivery history.  The top of the screen will display the current <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> and the total insulin delivered for the day since midnight (or since the time the loop became active if you started Loop after midnight). There are three tabs that can be viewed, with <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> shown by default:</p>
 <p align="center"><img alt="figure showing event history, reservoir and non-pump insulin tabs" src="../img/loop-3-insulin-detail.svg" width="250" /></p>
@@ -2404,8 +2404,8 @@
 <div class="admonition abstract">
 <p class="admonition-title">Previous Pod Insulin History</p>
 <p>For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this can be done in Apple Health.</p>
-<p>Before attempting that modification, please read this entire section on <a href="../../faqs/algorithm-faqs/#how-does-loop-use-apple-healthkit">Loop and Apple HealthKit</a> in detail.</p>
-<p>Pay special attention to <a href="../../faqs/algorithm-faqs/#insulin-and-apple-healthkit">Insulin and Apple HealthKit</a></p>
+<p>Before attempting that modification, please read this entire section on <a href="../../faqs/algorithm-faqs/#how-does-loop-use-apple-healthkit">How does Loop use Apple HealthKit</a> in detail.</p>
+<p>Pay special attention to <a href="../../faqs/algorithm-faqs/#insulin-and-apple-healthkit">Insulin and Apple HealthKit</a> section.</p>
 </div>
 <h3 id="carbohydrate-chart">Carbohydrate Chart<a class="headerlink" href="#carbohydrate-chart" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p align="center"><img alt="Active carbohydrate chart showing measured rise and fall based on entries and settings" src="../../operation/loop-settings/img/carb_graph.jpg" width="400" /></p>
@@ -2415,7 +2415,7 @@
 <p>Click this link for even more details about <a href="../../operation/features/ice/">Insulin Counteraction Effects</a>. It's a good idea to read both the Meal Entry and <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> pages - this is an important concept.</p>
 <h2 id="toolbar">Toolbar<a class="headerlink" href="#toolbar" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p align="center"><img alt="Loop Toolbar showing meal entry, pre-meal, bolus, override and settings icons" src="../../operation/loop-settings/img/toolbar.png" width="400" /></p>
-<p>The toolbar is always found at the bottom of the main Loop screen in both portrait and landscape orientation. By tapping on one of these icons, you can begin a Meal Entry, start a <abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr>, initiate a Manual Bolus, select an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> or go to the Loop Settings screen.</p>
+<p>The toolbar is always found at the bottom of the main Loop screen in both portrait and landscape orientation. By tapping on one of these icons, you can begin a Meal Entry, start a <abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr>, initiate a Manual Bolus, select an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> or go to the Loop Settings screen.</p>
 <p>From left to right, the icons are:</p>
 <ul>
 <li>
@@ -2425,13 +2425,13 @@
 </ul>
 </li>
 <li>
-<p><strong><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></strong> - click on this icon to start the <a href="../../operation/features/premeal/"><abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a> for one hour or until carbs are entered. (plate symbol turns dark green when active)</p>
+<p><strong><abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></strong> - click on this icon to start the <a href="../../operation/features/premeal/"><abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a> for one hour or until carbs are entered. (plate symbol turns dark green when active)</p>
 </li>
 <li>
 <p><strong>Bolus</strong> - click on this icon to open the <a href="../../operation/features/bolus/">Bolus</a> tool.</p>
 </li>
 <li>
-<p><strong>Overrides</strong> - click on this icon to select a saved or custom <a href="../../operation/features/workout/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> or to cancel an override if one is active (heat symbol turns dark blue when active)</p>
+<p><strong>Overrides</strong> - click on this icon to select a saved or custom <a href="../../operation/features/workout/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> or to cancel an override if one is active (heart symbol turns dark blue when active)</p>
 </li>
 <li>
 <p><strong>Loop Settings</strong> - click on this icon to make changes to any of your <a href="../settings/">Loop settings</a>.</p>
@@ -2467,7 +2467,7 @@
 <li>Messages are sent to the pump to modify insulin delivery if required and request current pump status</li>
 <li>Pump acknowledges the loop messages</li>
 </ul>
-<p>This table shows examples of Loop Status Icons and what the icon means.</p>
+<p>This table shows examples of Loop Status Icons and what each icon means.</p>
 <table>
 <thead>
 <tr>
@@ -2499,7 +2499,7 @@
 <p>The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).</p>
 </div>
 <h3 id="glucose-status-icon">Glucose Status Icon<a class="headerlink" href="#glucose-status-icon" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The table below shows examples of the Glucose Status Icon and what the icon means. The <a href="#glucose-color-code">Glucose Color Code</a> is provided below the table.</p>
+<p>The table below shows examples of the Glucose Status Icon and what each icon means. The <a href="#glucose-color-code">Glucose Color Code</a> is provided below the table.</p>
 <table>
 <thead>
 <tr>
@@ -2574,10 +2574,12 @@
 </ul>
 </li>
 <li>But what about <a href="../../operation/features/workout/">Overrides</a>?<ul>
-<li>Using scheduled basal of 0.45 U/hr with override set to 70%, the "override basal rate" is 0.315 U/hr</li>
+<li>Using scheduled basal of 0.45 U/hr with override set to 70%, the "override basal rate" is 0.315 U/hr<ul>
 <li>That is a value that cannot be set in the pump, but Loop uses it for <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> calculations<ul>
 <li>If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.115 U</li>
 <li>If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.185 U</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2667,7 +2669,7 @@
 </li>
 </ul>
 <p><img alt="Command line to change the time zone" src="../../operation/loop-settings/img/change-time-zone.svg" width="250" /></p>
-<p>You can choose to leave the pump and phone time zones different, the pump icon on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> will show the clock icon to remind you. Maybe people do this for short trips.</p>
+<p>You can choose to leave the pump and phone time zones different; the pump icon on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> will show the clock icon to remind you. Many people do this for short trips.</p>
 <h3 id="hud-status-row"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Status Row<a class="headerlink" href="#hud-status-row" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The Status Row is located immediately below the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, Loop and Pump Icons and is used to provide status, action buttons and information. The messages in the table are in order of priority. For example, a <code>No Recent Glucose</code> message is displayed even when an <code>Override</code> is active.</p>
 <div class="admonition warning">
@@ -2720,13 +2722,13 @@
 <td><br><br><img alt="override symbol and name with until time stamp message" src="../img/status-row-override.svg" width="350" /></td>
 </tr>
 <tr>
-<td>If a higher priority message is not displayed in the <code>Status Row</code> and an override is active, the override symbol and name along with the time at which the override expires is displayed. <br><br>Tapping on the <code>Status Row</code> opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the <a href="../../operation/features/workout/">Overrides</a> instructions.</td>
+<td>If a higher priority message is not displayed in the <code>Status Row</code> and an override is active, the override symbol and name, along with the time at which the override expires, is displayed. <br><br>Tapping on the <code>Status Row</code> opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the <a href="../../operation/features/workout/">Overrides</a> instructions.</td>
 </tr>
 <tr>
 <td><br><br><img alt="Pre-meal Preset message with until time stamp message" src="../img/status-row-pre-meal.svg" width="350" /></td>
 </tr>
 <tr>
-<td>If a higher priority message is not displayed in the <code>Status Row</code> and the <abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr> is active in the toolbar, the <code>Pre-meal Preset, until time stamp</code> is displayed. Tapping on the status row has no effect for this message.<br><br><strong>New with Loop 3:</strong> The Pre-Meal Preset can be engaged with an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>. When both are active, the <abbr title="modify the correction range for up to one-hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr> supersedes the range of the active <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, but the other settings for that <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> still apply. When both are active, the <code>Status Row</code> message reflects the <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> with both the PreMeal and <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> icons in the toolbar highlighted.</td>
+<td>If a higher priority message is not displayed in the <code>Status Row</code> and the <abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr> is active in the toolbar, the <code>Pre-meal Preset, until time stamp</code> is displayed. Tapping on the status row has no effect for this message.<br><br><strong>New with Loop 3:</strong> The Pre-Meal Preset can be engaged with an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>. When both are active, the <abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr> supersedes the range of the active <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, but the other settings for that <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> still apply. When both are active, the <code>Status Row</code> message reflects the <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> with both the PreMeal and <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> icons in the toolbar highlighted.</td>
 </tr>
 </tbody>
 </table>
@@ -2734,11 +2736,11 @@
 <p>Loop has a widget which can be added to the lock screen. The example graphic below shows the Dexcom G6 widget above the Loop 3 (old-style) widget.</p>
 <p align="center"><img alt="widget on lock screen, dex above, loop below" src="../img/dex-loop-3-widget.svg" width="300" /></p>
 <div class="admonition info">
-<p class="admonition-title">New to Loop or never added a widget before:"</p>
+<p class="admonition-title">New to Loop or never added a widget before</p>
 <ul>
 <li>There is a difference in behavior between "new-style" Widgets and "old-style" Widgets<ul>
-<li>New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or added with the &plus; button in edit mode</li>
-<li>Old-Style Widgets: like that for Loop use a different method to install</li>
+<li>New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or can be added with the &plus; button in edit mode</li>
+<li>Old-Style Widgets, like that available with Loop: use a different method to install</li>
 </ul>
 </li>
 <li>Make sure your phone is unlocked, then swipe from the Home Screen to get to Today View<ul>
@@ -2752,10 +2754,6 @@
 </ul>
 </div>
 <p>Experienced Looper who already had a widget should not need to modify anything to see it.</p>
-<div class="admonition info">
-<p class="admonition-title">Widgets</p>
-<p>Still stuck trying to set up a widget, please do an internet search, such as "Add old-style widget to your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 Home Screen" for instructions.</p>
-</div>
                 
               
               

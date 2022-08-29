@@ -1961,22 +1961,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#when-should-you-update" class="md-nav__link">
-    When Should You Update?
+  <a href="#when-should-i-update" class="md-nav__link">
+    When Should I Update?
   </a>
+  
+    <nav class="md-nav" aria-label="When Should I Update?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-update" class="md-nav__link">
+    Steps to Update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#where-should-i-start-when-i-want-to-update-my-loop" class="md-nav__link">
     Where should I start when I want to update my Loop?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-do-i-have-to-updaterebuild" class="md-nav__link">
-    When do I have to update/rebuild?
   </a>
   
 </li>
@@ -2024,8 +2030,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-if-im-changing-branches-does-that-matter" class="md-nav__link">
-    What if I'm changing branches? Does that matter?
+  <a href="#what-if-i-change-the-branch-or-fork" class="md-nav__link">
+    What if I change the branch or fork?
   </a>
   
 </li>
@@ -2145,22 +2151,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#when-should-you-update" class="md-nav__link">
-    When Should You Update?
+  <a href="#when-should-i-update" class="md-nav__link">
+    When Should I Update?
   </a>
+  
+    <nav class="md-nav" aria-label="When Should I Update?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-update" class="md-nav__link">
+    Steps to Update
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#where-should-i-start-when-i-want-to-update-my-loop" class="md-nav__link">
     Where should I start when I want to update my Loop?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-do-i-have-to-updaterebuild" class="md-nav__link">
-    When do I have to update/rebuild?
   </a>
   
 </li>
@@ -2208,8 +2220,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-if-im-changing-branches-does-that-matter" class="md-nav__link">
-    What if I'm changing branches? Does that matter?
+  <a href="#what-if-i-change-the-branch-or-fork" class="md-nav__link">
+    What if I change the branch or fork?
   </a>
   
 </li>
@@ -2243,11 +2255,27 @@
                 
                 <h1 id="updatingrebuilding-loop-faqs">Updating/Rebuilding Loop FAQs<a class="headerlink" href="#updatingrebuilding-loop-faqs" title="Anchor link to this Header on this Page">&para;</a></h1>
 <p>First, please take a minute to understand what the words mean.</p>
-<p>"Updating Loop" is the process of getting a new download of Loop's code and using that to update your Loop by building the code with <abbr title="program used to build an app">Xcode</abbr> and then installing the new app on your phone.</p>
-<h2 id="when-should-you-update">When Should You Update?<a class="headerlink" href="#when-should-you-update" title="Anchor link to this Header on this Page">&para;</a></h2>
+<ul>
+<li>
+<p>"Updating Loop" is the process downloading a new version of Loop code </p>
+</li>
+<li>
+<p>"Rebuilding Loop" is the process of using your existing download of Loop code</p>
+</li>
+</ul>
+<p>In both cases, you build the code with <abbr title="program used to build an app">Xcode</abbr> to install over an existing app on your phone or onto a new device.</p>
+<p>For the rest of this page, the word Update is used. For most people, it is simplest just the use the build select script which automatically downloads fresh code every time.</p>
+<p>If you have a very slow download speed or if you do a lot of customizations, it may be worth your time to decide if you need a new download.</p>
+<ul>
+<li>Use <abbr title="graphical folder and file display on Mac">Finder</abbr> to check the date of your last download by looking in the Downloads/BuildLoop folder</li>
+<li>Check the date of the last Loop release at <a href="https://github.com/LoopKit/Loop/releases">GitHub LoopKit/Loop release page</a></li>
+<li>If the date in <abbr title="graphical folder and file display on Mac">Finder</abbr> is after the release date, <a href="../../build/code_customization/#find-my-dowloaded-loop-code">double click on the Loop.xcworkspace file using these instructions</a></li>
+</ul>
+<h2 id="when-should-i-update">When Should I Update?<a class="headerlink" href="#when-should-i-update" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ul>
 <li><strong>Best Practice</strong><ul>
-<li>Build, using the <a href="../build/#updating.md">Updating Instructons</a>, two to four times a year so that it becomes easier and you are ready in case of an emergency</li>
+<li>Build if a serious bug-fix is reported</li>
+<li>Build, using the <a href="../../build/updating/">Updating Instructons</a>, two to four times a year so that it becomes easier and you are ready in case of an emergency</li>
 <li>Each time you build, the app expiration date is bumped out a full year from your build date</li>
 </ul>
 </li>
@@ -2257,12 +2285,16 @@
 <li>Hint - start a few weeks early and take your time</li>
 </ul>
 </li>
+<li><strong>Optional</strong><ul>
 <li>A new version of Loop is released and you want to install it</li>
-<li>You want to try a different <abbr title="version of code within a single repository or workspace repository">branch</abbr> or fork of Loop</li>
+<li>You want to try a different <abbr title="version of code within a single repository or workspace repository">branch</abbr> or <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> of Loop</li>
 </ul>
+</li>
+</ul>
+<h3 id="steps-to-update">Steps to Update<a class="headerlink" href="#steps-to-update" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Updating Loop is the same idea as what happens to your other apps on your iPhone when you update them from the App Store on the phone. A refreshed version of the same app appears on the phone, simply updating-in-place the same Loop you were using with an updated version.</p>
 <ul>
-<li>Do <strong>NOT</strong> delete your current app from your phone - even if it says "Loop" is No Longer Available</li>
+<li>Do <strong>NOT</strong> delete your current app from your phone - even if it says "Loop is No Longer Available"</li>
 <li>There are files stored on your phone that will be read in as soon as the new Loop app is installed</li>
 <li>If you deleted your app, then you have to enter all your settings again<ul>
 <li>This is a good time to configure your phone to avoid accidental deletion</li>
@@ -2270,47 +2302,21 @@
 </ul>
 </li>
 </ul>
-<h2 id="where-should-i-start-when-i-want-to-update-my-loop">Where should I start when I want to update my Loop?<a class="headerlink" href="#where-should-i-start-when-i-want-to-update-my-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><strong>ALWAYS start with the <a href="../../build/updating/">Update Loop page</a> before any new build that you'd be doing.</strong> That page is important because it will offer information on the updates you need to do before building, as well as any late breaking things that might need to be considered.</p>
-<p>Do not simply build with your old downloaded folder from months ago. There is a high likelihood that your original code from awhile ago is outdated and might not build with the current phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. Grab new code and you will get the compatible version that has all the latest and greatest features and bug fixes.</p>
-<h2 id="when-do-i-have-to-updaterebuild">When do I have to update/rebuild?<a class="headerlink" href="#when-do-i-have-to-updaterebuild" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Absolute minimum:</p>
-<ul>
-<li>One year from when you last built (paid account)<ul>
-<li>You get a full year from the time you last built if you follow all the <a href="../../build/updating/">Updating</a> directions</li>
-<li>Part of the instructions include getting a new provisioning profile (if you skip this step, you will not get a full year)</li>
-</ul>
-</li>
-<li>When Apple makes a change that requires you to update if you want to build to the latest phone operating system</li>
-</ul>
-<p>Typical Apple Update Schedule:</p>
+<h4 id="typical-apple-update-schedule">Typical Apple Update Schedule:<a class="headerlink" href="#typical-apple-update-schedule" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
 <li>Each September, Apple releases a major <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version which typically works with the current <abbr title="operating system for Mac computer">macOS</abbr> but requires a new <abbr title="program used to build an app">Xcode</abbr> version</li>
 <li>Each September, Apple releases a major <abbr title="operating system for Mac computer">macOS</abbr> version (but doesn't require you to update your Mac, yet)</li>
 <li>Each March, you must update to the current <abbr title="operating system for Mac computer">macOS</abbr> (major version) to continue building applications</li>
 </ul>
-<p>Good ideas:</p>
-<ul>
-<li>When Apple releases a new <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version, check to see if that requires an update to <a href="../../build/step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="program used to build an app">Xcode</abbr></a> and if that update to <abbr title="program used to build an app">Xcode</abbr> requires a <abbr title="operating system for Mac computer">macOS</abbr> update</li>
-<li>Best practice - update your computer before you update your phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> so you can always be ready to build if necessary</li>
-<li>Good practice - build to a phone (it doesn't need to be the Looper's phone) a couple of times year just so you don't forget how - this makes the one year rebuild much easier</li>
-<li>If on <a href="../branch-faqs/#whats-going-on-in-the-dev-branch">dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a>: Please follow the loop zulipchat forum so you can update when appropriate.</li>
-</ul>
-<p><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> specific updates:</p>
-<ul>
-<li>There are also times where you may need to update for "hot-fixes" to keep your Loop working when other things change.</li>
-</ul>
-<p>For example, after Dexcom G6 transmitters had been in-use for a while, a new style Dexcom G6 transmitters began to be shipped with a different Bluetooth protocol. Loop's code was updated quickly to interface with the new transmitters (this enables offline looping instead of requiring use of Dexcom Share). But you only got that update to Loop by downloading new code and rebuilding the app on your phone.</p>
+<h2 id="where-should-i-start-when-i-want-to-update-my-loop">Where should I start when I want to update my Loop?<a class="headerlink" href="#where-should-i-start-when-i-want-to-update-my-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><strong>ALWAYS start with the <a href="../../build/updating/">Update Loop page</a> before any new build that you'd be doing.</strong> That page is important because it will offer information on the updates you need to do before building, as well as information that might need to be considered.</p>
+<p>Do not simply build with your old downloaded folder from months ago. There is a high likelihood that your original code from awhile ago is outdated and might not build with the current phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. Grab new code and you will get the compatible version that has all the latest and greatest features and bug fixes.</p>
 <h2 id="will-i-have-to-delete-my-old-loop-app">Will I have to delete my old Loop app?<a class="headerlink" href="#will-i-have-to-delete-my-old-loop-app" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>No. Do not delete your old Loop. In fact, that is a bad idea as you will lose your currently paired pod and/or settings if you do that. So, don't delete (except for two situations below):</p>
-<ol>
-<li>
-<p>You broke it: There used to be a glitch in Loop where if you entered the target correction range backwards, then your Loop app stopped working. You can't do that anymore, but it's always possible something else might require you to delete your app.</p>
-</li>
-<li>
-<p>Moving from <a href="#what-if-im-changing-branches-does-that-matter">dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> back down to master <abbr title="version of code within a single repository or workspace repository">branch</abbr></a>. The new dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> requires you to delete your dev build prior to returning to master.</p>
-</li>
-</ol>
+<p>No. Do not delete your old Loop. In fact, that is a bad idea as you will lose your currently paired pod and/or settings if you do that. So, don't delete.</p>
+<p><strong>The exception to the rule is if you build Loop dev on your phone and want to return to Loop 2.2.x or any FreeAPS <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr>.</strong></p>
+<ul>
+<li>Refer to <a href="#what-if-i-change-the-branch-or-fork">What if I change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> or <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr>?</a></li>
+</ul>
 <h2 id="does-updating-make-a-separate-second-loop-app">Does updating make a separate, second Loop app?<a class="headerlink" href="#does-updating-make-a-separate-second-loop-app" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>No. Loop is simply updated in-place, written right over the old version.</p>
 <p>The only exception to this is if you update/build using a different developer signing team than your current Loop app.</p>
@@ -2343,9 +2349,14 @@
 </li>
 </ul>
 </div>
-<h2 id="what-if-im-changing-branches-does-that-matter">What if I'm changing branches? Does that matter?<a class="headerlink" href="#what-if-im-changing-branches-does-that-matter" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Does not matter. Moving between branches and forks is an "updating Loop" action. Nothing about the information above changes.</p>
-<p><strong>The exception to the rule is if you build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> on your phone and want to return to master. In this case, the database storage is different between dev and master. It's a one-way trip.  The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> can read the data stored by master, but master cannot read the data stored by dev. If you are downgrading from dev to master, you need to first record settings, delete the old app, build master, enter your settings and (if using <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>), start at new pod.</strong></p>
+<h2 id="what-if-i-change-the-branch-or-fork">What if I change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> or <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr>?<a class="headerlink" href="#what-if-i-change-the-branch-or-fork" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Does not matter. Changing the <abbr title="version of code within a single repository or workspace repository">branch</abbr> and even the <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> is an "updating Loop" action. Nothing about the information above changes with the following exception.</p>
+<p><strong>The exception to the rule is if you build Loop dev on your phone and want to return to Loop 2.2.x or any FreeAPS <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr>.</strong></p>
+<ul>
+<li>In this case, the database storage is different between Loop 3 and Loop 2.2.x</li>
+<li>Loop dev can read the data stored by Loop 2.2.x, but the reverse is not true</li>
+<li>If you are downgrading from Loop dev to Loop 2.2.x or FreeAPS, you need to first record settings, delete the old app and then build the desired app, enter your settings and add your pump (new pod required for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>)</li>
+</ul>
 <h2 id="what-if-im-changing-phones">What if I'm changing phones?<a class="headerlink" href="#what-if-im-changing-phones" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Changing phones is a little different than just <a href="../../build/updating/">updating</a>.</p>
 <div class="admonition abstract">
@@ -2355,7 +2366,7 @@
 <li>Make sure you can build to that <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version before trying to transfer Loop to the new phone</li>
 <li>You can use the old phone as your looping phone until you get the new one ready<ul>
 <li>When turning the old phone in for a rebate, you typically have a week or two before you have to turn it in</li>
-<li>When you transfer information from your old phone to your new phone, all the Loop settings files get copied to the new device</li>
+<li>When you transfer information from your old phone to your new phone, all the Loop settings files get copied to the new device including information about the pod (if one is running)</li>
 <li>You then need to build Loop on the new phone and it remembers those settings</li>
 <li>It's a good idea to do this at pod change time, just in case, and to record (or screenshot) all your settings</li>
 </ul>

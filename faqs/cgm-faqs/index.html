@@ -1996,8 +1996,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#can-spike-or-xdrip-be-used-with-loop" class="md-nav__link">
-    Can Spike or Xdrip be used with Loop?
+  <a href="#what-other-cgm-apps-can-be-used-to-loop" class="md-nav__link">
+    What other CGM apps can be used to Loop?
   </a>
   
 </li>
@@ -2166,8 +2166,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#can-spike-or-xdrip-be-used-with-loop" class="md-nav__link">
-    Can Spike or Xdrip be used with Loop?
+  <a href="#what-other-cgm-apps-can-be-used-to-loop" class="md-nav__link">
+    What other CGM apps can be used to Loop?
   </a>
   
 </li>
@@ -2187,25 +2187,53 @@
                 
                 <h1 id="cgm-faqs"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> FAQs<a class="headerlink" href="#cgm-faqs" title="Anchor link to this Header on this Page">&para;</a></h1>
 <h2 id="what-cgms-does-loop-work-with">What CGMs does Loop work with?<a class="headerlink" href="#what-cgms-does-loop-work-with" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop works Dexcom G4 with share, G5, G6, Share and the Medtronic <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> systems compatible with Looping pumps.</p>
+<p>Loop 2.2.x works Dexcom G4 with share, G5, G6, Share and the Medtronic <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> systems compatible with Looping pumps.</p>
+<p>Loop dev works with G5, G6, Share, Nightscout and the Medtronic <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> systems compatible with Looping pumps. A customization can be applied to work with some Libre sensors.</p>
 <p>Read the details <a href="../../build/step4/">here</a>.</p>
 <h2 id="do-i-need-wait-for-a-new-sensor-session-to-start-loop">Do I need wait for a new sensor session to start Loop?<a class="headerlink" href="#do-i-need-wait-for-a-new-sensor-session-to-start-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>No, you can start Looping mid-sensor session. There's no need to do anything special with regards to your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> session when starting or ending Loop use.</p>
 <h2 id="what-do-i-do-when-sensor-is-in-warm-up">What do I do when sensor is in warm-up?<a class="headerlink" href="#what-do-i-do-when-sensor-is-in-warm-up" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>While the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is in warm-up, Loop will return to your scheduled basal delivery (within 30 min or less). You won't get temp basal adjustments during the warm-up period. If you need to bolus during this time, you will need to do a finger check and enter the blood glucose value into Apple Health app manually if you'd like Loop to offer a bolus recommendation. Loop will read that value from the Health app to provide you a bolus recommendation. If you are really ambitious, some people do frequent (15 min or so) finger checks and enter those into Health during warmup. This could allow Loop to do a bit of looping during warmup, albeit on blood glucose values that are spread pretty far apart compared to normal.</p>
+<p>Loop will stop automatically adjusting insulin when the most recent glucose value is older than 15 minutes.  This is indicated by seeing three dashes in place of the glucose reading on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>.</p>
+<ul>
+<li>
+<p>With Loop 2.2.x or Loop dev, enter a fingerstick glucose value in Apple Health to enable Loop to provide updated projections and loop briefly</p>
+</li>
+<li>
+<p>With Loop dev, a <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> status row message of <code>No Recent Glucose</code> is displayed, making it easier to add the fingerstick value directly in Loop, which also saves it in Apple Health</p>
+</li>
+</ul>
+<p>With no recent glucose readings, your pump resturns to the scheduled basal delivery (within 30 min or less).</p>
+<p>Loop continues to accept manual bolus commands. With Loop dev only, <a href="../../loop-3/omnipod/#manual-temp-basal">Manual Temp Basal</a> can also be commanded.</p>
 <h2 id="what-do-i-do-when-i-switch-transmitters">What do I do when I switch transmitters?<a class="headerlink" href="#what-do-i-do-when-i-switch-transmitters" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When you change transmitters, you will need to update the transmitter ID in your Loop settings. This is pretty simple task.</p>
-<p>When you change transmitters, select the <code>Delete CGM</code> button at the very bottom of the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> info page in Loop. Then you will select your Dexcom system again and add the new transmitter ID. You cannot just tap on your old transmitter ID to update it.</p>
+<p>When you change transmitters, you will need to update the transmitter ID in your Loop settings. The instructions for Dexcom are provided below:</p>
+<ul>
+<li>In Loop, select the <code>Delete CGM</code> button at the very bottom of the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> info page<ul>
+<li>You cannot just edit the line with your old transmitter ID</li>
+</ul>
+</li>
+<li>Follow the Dexcom instructions for pairing the new transmitter</li>
+<li>In Loop, add <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and select the Dexcom system again<ul>
+<li>Enter the new transmitter ID</li>
+</ul>
+</li>
+</ul>
 <p align="center"><img alt="img/delete-cgm.jpg" src="../img/delete-cgm.jpg" width="400" /></p>
-<p>If you don't update your transmitter ID when you change active transmitters, your Loop will be forced to go to your Dexcom Share server to get your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID.</p>
+<p>If you don't update your transmitter ID when you change active transmitters, and you included your Dexcom share credentials, then Loop uses your Dexcom Share server to get your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID. It's best not to enter Share Credentials. This make it really obvious that you need to update the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> settings in Loop at transmitter change time.</p>
 <h2 id="can-i-use-libre-sensors-with-a-reader-like-miao-miao">Can I use Libre sensors with a reader like Miao Miao?<a class="headerlink" href="#can-i-use-libre-sensors-with-a-reader-like-miao-miao" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you want to use a Libre sensor you will need to modify Loop to accomplish that use. Loop code does not natively support that sensor, nor readers.</p>
+<p>With Loop dev, a customization can be used to support some Libre sensor <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>.</p>
 <h2 id="can-i-use-eversense">Can I use Eversense?<a class="headerlink" href="#can-i-use-eversense" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Nope. Eversense does not write to Apple Health nor has the BT communications protocol been reverse engineered the way it has been done with Dexcom.  </p>
+<p>Eversense does not write to Apple Health. The BT communications protocol been not been reverse engineered as was done with Dexcom. There is a method to upload Eversense to Nightscout using an Android phone.</p>
+<p>With Loop dev, you can use Nightscout as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to Loop with Eversense, but that requires internet access.</p>
 <h2 id="can-loop-read-cgm-data-from-nightscout">Can Loop read <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data from Nightscout?<a class="headerlink" href="#can-loop-read-cgm-data-from-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop does not read <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data from Nightscout. You would need to use a solution such as NightscoutShareServer and make changes to Loop code in order to do that. Please search the Looped group on Facebook for posts regarding that option, as it is not a part of standard Loop use and is a community-based modification. You will need to do your homework and research to make that happen. At this time, there is not an active version of a modified Loop that appears to support this option easily.</p>
-<h2 id="can-spike-or-xdrip-be-used-with-loop">Can Spike or Xdrip be used with Loop?<a class="headerlink" href="#can-spike-or-xdrip-be-used-with-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Spike and Xdrip are not supported by Loop. You will need to implement community-based modifications to Loop in order to use those apps with Loop. Helpful tip: Use <code>spike loop</code> as a search term in Looped group for additional info about community-modified Loop versions for Spike. Links to those modified Loop versions are not provided in these LoopDocs because we (the LoopDocs maintainers and Loop developers) do not actively watch those versions to ensure they are up-to-date.</p>
+<p>Some versions of Loop can read <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data from Nightscout.</p>
+<ul>
+<li>FreeAPS <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> of Loop 2.2.x </li>
+<li>Loop dev</li>
+</ul>
+<p>Loop 2.2.x does not read <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data from Nightscout.</p>
+<h2 id="what-other-cgm-apps-can-be-used-to-loop">What other <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> apps can be used to Loop?<a class="headerlink" href="#what-other-cgm-apps-can-be-used-to-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Please read the docs for <a href="https://xdrip4ios.readthedocs.io/en/latest/">xDrip4iOS</a> and <a href="https://github.com/creepymonster/GlucoseDirect#readme">Glucose Direct</a>. You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions. These can be used with the FreeAPS <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> of Loop 2.2.x and, after applying a code customization, with Loop dev.</p>
                 
               
               
