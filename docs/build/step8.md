@@ -27,7 +27,7 @@ Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" 
 
 ## Install Xcode
 
-Please read this entire page.  First, choose a version of Xcode appropriate for your iOS device. Then, determine the minimum macOS version required for that Xcode version.  Update to at least that minimum macOS version.  Then you are ready to follow these instructions to download and install Xcode or update an exiting installation:
+Please read this entire page.  First, choose a version of Xcode appropriate for your iOS device. Then, determine the minimum macOS version required for that Xcode version.  Update to at least that minimum macOS version.  Then follow the instructions to download and install Xcode or update an existing installation:
 
 - Open your App Store in your computer and search for Xcode
 - You will be downloading it brand new or updating an existing installation

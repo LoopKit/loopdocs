@@ -60,7 +60,7 @@ Loop does not directly support other CGM, such as Libre, Eversense and Medtronic
 
 To use one of those alternate CGMs for Loop 2.2.x, you will need to look into third-party integrations, such as the FreeAPS fork, for access to the CGM data. First search for previous posts on the topic and then ask questions in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site if you need help. 
 
-Currently, there are no solutions for Eversense or Guardian CGM to be used directly with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. The next Loop release, and the current FreeAPS fork, allow the use as Nightscout as a CGM source.
+Currently, there are no solutions for Eversense or Guardian CGM to be used directly with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. The next Loop release, and the current FreeAPS fork, allow the use of Nightscout as a CGM source.
 
 ## Next Step
 

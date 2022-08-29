@@ -59,6 +59,8 @@ PaidLoop will know nothing about the settings and information you had stored in 
 
 To enroll in an individual paid Paid account, go to the Apple's Developer Program website [Apple Developer website](https://developer.apple.com/programs/enroll/).
 
+Be sure to use the credit card already associated with the email you are using for the developer ID. If you switch credit cards, it can cause delays.
+
 If you choose to use the free account, you don't have to do anything on that website. You'll just wait for the instructions on the Xcode Preferences page and get your free account then.
 
 ## Next Step: Install Xcode
