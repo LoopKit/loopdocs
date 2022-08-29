@@ -69,15 +69,15 @@ First a suggestion and some orientation:
 * Complete the Onboarding steps to set up Loop
 * Learn to use Loop starting with the [Open Loop](../operation/loop/open-loop.md) page
 * Once you are comfortable with manually controlling Loop and have settings that work with the algorithm, move on to the [Closed Loop](../operation/loop/close-loop.md) page
-* Make suggestions if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
+* Make [suggestions](../intro/loopdocs-how-to.md#how-to-improve-loopdocs) if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
 
 ### Experienced Loopers
 
-* Review the 3 pages mentioned above for new Loopers and the section for experienced Looper on the Onboarding page.
+* Review the 3 pages mentioned above for new Loopers and the section for experienced Loopers on the Onboarding page.
 * Read the rest of the pages listed under [All Loopers](#all-loopers), below
     - Some of the screens and user interface changed with Loop 3
     - Many of the new Loop 3 features are described
-    - Reach out if information is missing or needs to be clarified
+    - Reach out if information is missing or needs to be clarified, [suggestions](../intro/loopdocs-how-to.md#how-to-improve-loopdocs) are always welcome
 * LoopDocs design
     * Sections specific to experienced Loopers are after the sections for new Loopers
     * The goal is to make LoopDocs easier for new Loopers to navigate

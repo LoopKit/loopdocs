@@ -41,13 +41,13 @@ There are several charts on the main screen to help you navigate and understand 
 The Glucose Chart displays glucose values in your preferred units.
 
 !!! info "mg/dL or mmol/L"
-    If your preferred glucose unit are not displayed, follow these instructions to [Change Glucose Units](onboarding.md#change-glucose-units).
+    If your preferred glucose unit is not selected, follow these instructions to change [Glucose Units](onboarding.md#glucose-units).
 
 The vertical scale is automatically adjusted by Loop to be as useful as possible while including the highest and lowest readings in the chart.
 
-The horizontal axis is set to go forward from the current time until your DIA (insulin duration) forward (so you can see what Loop thinks glucose will be eventually). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.
+The horizontal axis is set to go forward from the current time through your DIA (insulin duration), so you can see what Loop thinks glucose will be eventually. It then goes back in time as far as there is room, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.
 
-The glucose [Correction Range](therapy-settings.md#correction-range) is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction range in lighter blue.
+The glucose [Correction Range](therapy-settings.md#correction-range) is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar indicates the correction range during that override.
 
 !!! warning "Negative Glucose Predition"
     If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/workout.md) with a tiny sensitivity.
@@ -93,7 +93,7 @@ The Active Insulin chart displays the total insulin contribution from both temp 
 
 The Insulin Delivery chart displays a history of the temp basals enacted by Loop.  The display is relative to the scheduled basal rates entered in the Loop settings.  So, a rate displayed in this chart as `+0 units` would indicate no temp basal was set, and Loop defaulted to the scheduled basal rate.  Individual boluses are indicated by an orange triangle on the chart (shown in the graphic above, near the left-most time).  The total insulin delivered since midnight, including all basals and boluses **AND (Medtronic Only) priming insulin**, is given in the upper right corner of the graph.
 
-Please note that for safety reasons, Loop will assume a bolus was successful, even if it is not sure that the pump responded as expected.  Once the communications with the pump settle down, Loop will (almost always) be able to reconcile whether a dose went through as expected. Occasionally, the bolus may be temporarily rendered (drawn) as a very high temp basal rate vs. a (triangle) discrete bolus event.  This does NOT mean that the Loop actually enacted a high temp basal rate...only that the bolus is being **drawn** on the chart in the equivalent of a high temp basal rate.
+Please note that for safety reasons, Loop will assume a bolus was successful, even if it is not sure that the pump responded as expected.  Once the communications with the pump settle down, Loop will (almost always) be able to reconcile whether a dose went through as expected. Occasionally, the bolus may be temporarily rendered (drawn) as a very high temp basal rate vs. a (triangle) discrete bolus event.  This does NOT mean that the Loop actually enacted a high temp basal rate...only that the bolus is being **drawn** on the chart as the equivalent of a high temp basal rate.
 
 ### Event History, Reservoir and Non-Pump Insulin
 
@@ -114,9 +114,9 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 !!! abstract "Previous Pod Insulin History"
     For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this can be done in Apple Health.
 
-    Before attempting that modification, please read this entire section on [Loop and Apple HealthKit](../faqs/algorithm-faqs.md#how-does-loop-use-apple-healthkit) in detail.
+    Before attempting that modification, please read this entire section on [How does Loop use Apple HealthKit](../faqs/algorithm-faqs.md#how-does-loop-use-apple-healthkit) in detail.
 
-    Pay special attention to [Insulin and Apple HealthKit](../faqs/algorithm-faqs.md#insulin-and-apple-healthkit)
+    Pay special attention to [Insulin and Apple HealthKit](../faqs/algorithm-faqs.md#insulin-and-apple-healthkit) section.
 
 
 ### Carbohydrate Chart
@@ -150,7 +150,7 @@ From left to right, the icons are:
 
 * **Bolus** - click on this icon to open the [Bolus](../operation/features/bolus.md) tool.
 
-* **Overrides** - click on this icon to select a saved or custom [Override](../operation/features/workout.md) or to cancel an override if one is active (heat symbol turns dark blue when active)
+* **Overrides** - click on this icon to select a saved or custom [Override](../operation/features/workout.md) or to cancel an override if one is active (heart symbol turns dark blue when active)
 
 * **Loop Settings** - click on this icon to make changes to any of your [Loop settings](settings.md).
 
@@ -188,7 +188,7 @@ A complete Loop cycle, at high level, includes these steps:
 * Messages are sent to the pump to modify insulin delivery if required and request current pump status
 * Pump acknowledges the loop messages
 
-This table shows examples of Loop Status Icons and what the icon means.
+This table shows examples of Loop Status Icons and what each icon means.
 
 | <div style="width:55px"></div> Icon | Meaning |
 |---|---|
@@ -203,7 +203,7 @@ This table shows examples of Loop Status Icons and what the icon means.
 
 ### Glucose Status Icon
 
-The table below shows examples of the Glucose Status Icon and what the icon means. The [Glucose Color Code](#glucose-color-code) is provided below the table.
+The table below shows examples of the Glucose Status Icon and what each icon means. The [Glucose Color Code](#glucose-color-code) is provided below the table.
 
 | <div style="width:55px"></div> Icon | Meaning |
 |---|---|
@@ -246,9 +246,9 @@ The nominal pump icon displays high-level status information for the pump with t
     * When scheduled basal is running, the icon displays 0.0 U
 * But what about [Overrides](../operation/features/workout.md)?
     * Using scheduled basal of 0.45 U/hr with override set to 70%, the "override basal rate" is 0.315 U/hr
-    * That is a value that cannot be set in the pump, but Loop uses it for IOB calculations
-        * If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.115 U
-        * If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.185 U
+        * That is a value that cannot be set in the pump, but Loop uses it for IOB calculations
+            * If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.115 U
+            * If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.185 U
 * The reservoir status indicates insulin remaining graphically and displays a value when less than 50 U remain.
     * For Medtronic Pumps, the reservoir display indicates the level graphically.
     * For Pods, the reservoir graphic is constant until the pod begins to report reservoir level when less than 50 U remain.
@@ -290,7 +290,7 @@ Your daily schedule for basal rates, correction ranges, insulin sensitivity fact
 
 ![Command line to change the time zone](../operation/loop-settings/img/change-time-zone.svg){width="250"}
 
-You can choose to leave the pump and phone time zones different, the pump icon on the HUD will show the clock icon to remind you. Maybe people do this for short trips.
+You can choose to leave the pump and phone time zones different; the pump icon on the HUD will show the clock icon to remind you. Many people do this for short trips.
 
 ### HUD Status Row
 
@@ -316,7 +316,7 @@ The Status Row is located immediately below the CGM, Loop and Pump Icons and is 
 |<br><br>![no recent glucose - tap to add message](img/status-row-glucose-stale.svg){width="350"}|
 |If a higher priority message is not displayed in the `Status Row` and the glucose value is stale (more than 15 minutes old), the `No Recent Glucose, Tap to Add` message is displayed. Tapping on the `Status Row` opens the [Manual Bolus](features.md#manual-bolus) screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap `Save Without Bolusing`. However, be aware that, in Closed Loop mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.|
 |<br><br>![override symbol and name with until time stamp message](img/status-row-override.svg){width="350"}|
-|If a higher priority message is not displayed in the `Status Row` and an override is active, the override symbol and name along with the time at which the override expires is displayed. <br><br>Tapping on the `Status Row` opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the [Overrides](../operation/features/workout.md) instructions.|
+|If a higher priority message is not displayed in the `Status Row` and an override is active, the override symbol and name, along with the time at which the override expires, is displayed. <br><br>Tapping on the `Status Row` opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the [Overrides](../operation/features/workout.md) instructions.|
 |<br><br>![Pre-meal Preset message with until time stamp message](img/status-row-pre-meal.svg){width="350"}|
 |If a higher priority message is not displayed in the `Status Row` and the Pre-Meal Range is active in the toolbar, the `Pre-meal Preset, until time stamp` is displayed. Tapping on the status row has no effect for this message.<br><br>**New with Loop 3:** The Pre-Meal Preset can be engaged with an Override. When both are active, the Pre-Meal Range supersedes the range of the active Override, but the other settings for that Override still apply. When both are active, the `Status Row` message reflects the Override with both the PreMeal and Override icons in the toolbar highlighted.|
 
@@ -328,11 +328,11 @@ Loop has a widget which can be added to the lock screen. The example graphic bel
 ![widget on lock screen, dex above, loop below](img/dex-loop-3-widget.svg){width="300"}
 {align="center"}
 
-!!! info "New to Loop or never added a widget before:""
+!!! info "New to Loop or never added a widget before"
 
     * There is a difference in behavior between "new-style" Widgets and "old-style" Widgets
-        * New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or added with the &plus; button in edit mode
-        * Old-Style Widgets: like that for Loop use a different method to install
+        * New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or can be added with the &plus; button in edit mode
+        * Old-Style Widgets, like that available with Loop: use a different method to install
     * Make sure your phone is unlocked, then swipe from the Home Screen to get to Today View
         * You can't edit the screen if you start from a locked phone
     * Start the Edit mode (where all of the icons are shaking), either by long-pressing on one of the new-style widgets, or by scrolling all the way to the bottom of Today View and pressing Edit.
@@ -341,8 +341,3 @@ Loop has a widget which can be added to the lock screen. The example graphic bel
     * The Loop widget should appear in the list available there.
 
 Experienced Looper who already had a widget should not need to modify anything to see it.
-
-!!! info "Widgets"
-
-    Still stuck trying to set up a widget, please do an internet search, such as "Add old-style widget to your iOS 15 Home Screen" for instructions.
-
