@@ -25,14 +25,14 @@
 * [Tidepool](https://loopkit.github.io/looptips/data/tidepool/)
     * Some endo offices will use your Tidepool website when you provide them with an invitation
     * Many users of the mobile app like the note taking ability
-        * The mobile app uploads Apple HealthKit data to Tidepool
+        * The mobile app also uploads Apple HealthKit data to Tidepool
 * Nightscout:
     * [Nightscout](../nightscout/overview.md) link in LoopDocs
     * [Nightscout](https://loopkit.github.io/looptips/data/nightscout/) link to LoopTips
     * Nightscout has a lot of useful alarms and alerts, provides a care portal and detailed reports
     * Some versions of Loop and Nightscout together allow for remote interface between caregiver and looper
 
-All of the options are free and easy to setup. (There are paid options for configuring Nightscout.) Take some time to familiarize yourself with these options and setup your preferred system(s). Many Loopers use all three for various aspects. 
+All of the options are free and straightforward to setup. (There are paid options for configuring Nightscout; links to those providers are found along with the DIY steps in the Nightscout docs.) Take some time to familiarize yourself with these options and setup your preferred system(s). Many Loopers use all three for various aspects. 
 
 Nightscout is the most useful day-to-day for some of its capabilities such as plotting IOB and providing a secure, real-time Dashboard of Loop status visible to anyone with access codes and the internet.
 

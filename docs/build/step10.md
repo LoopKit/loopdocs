@@ -11,7 +11,7 @@
 	- Accurate settings are vital for success
 
 !!! question "FAQs"
-    - **"My endo chose my pump settings, so do I need to test them?"** Yes. Your endo chose your settings in a  different context, with different constraints. What is safe and ideal in traditional pump therapy, may not be the best selection for the Loop app. Testing your settings, even just a couple days, makes a big difference.
+    - **"My endo chose my pump settings, so do I need to test them?"** Yes. Your endo chose your settings in a  different context, with different constraints. What is safe and ideal in traditional pump therapy, may not be the best selection for the Loop app. Testing your settings, even for just a couple days, makes a big difference.
     - **"I have great control, why would I need to test my settings?"**  "Great control" may be due to lots of adjustments - bumps and nudges of insulin or carbs. Those bumps and nudges may be covering for underlying settings that need adjustment. If you are coming from a treatment style that involves memorizing your insulin doses for meals, you may not know your actual CR or ISF. Testing is key to success with Loop.
     - **"I can't basal test with my 2-year-old. What can I do?"** That is pretty tough. Consult your endo, watch your patterns, and do the best you can...little kiddos are a difficult group to test settings. Once you become comfortable with Loop, there are tricks to adjust settings while staying in closed loop as long as settings are fairly close.
 
@@ -30,7 +30,7 @@ The Insulin Sensitivity Factor (ISF), sometimes called Correction Factor, is how
 
  Test ISF after you test and determine your basal rates. Simply bring yourself to a higher glucose with a glucose tab or choose a time when you are "stuck" higher than your target.
  
- * Calculate how much insulin is required to lower your glucose to target, take it and observe if you glucose flattens out at your target within 3 hours
+ * Calculate how much insulin is required to lower your glucose to target, take it and observe if your glucose flattens out at your target within 3 hours
     * Do not do this test if you have recently eaten, recovered from a low glucose, engaged in physical activity, are sick or under stress
 * A starting point for ISF is to take total daily dose and divide that into 1800
     * This is just a starting point, many people have higher or lower ISF than this formula suggests
