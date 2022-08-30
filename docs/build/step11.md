@@ -1,32 +1,41 @@
 # Make Plans for your Loop Data
 
 !!! info "Time Estimate"
-    - Nightscout: 1-2 hours if you've never done it before and work slowly
-    - Nightscout: 20-30 minutes if you have experience in Github and Heroku previously
-    - Tidepool: 30-40 minutes to set up account and Tidepool Mobile app
     - Apple Health: 0 minutes, already a part of your system
+    - Tidepool: 30 minutes to set up an account and add Tidepool Mobile to your phone
+    - Nightscout:
+        * 1-2 hours to build it yourself if you've never done it before
+        * 1 hour to choose and sign up for a service if you want to pay someone
 
 !!! abstract "Summary"
     - Review the three major systems that can store and show your Loop data.
-    - Set up either Tidepool or Nightscout prior to your next endo appointment in order to provide them Looping data to review.
+    - Set up either Tidepool or Nightscout prior to your next endo appointment to provide Looping data to review.
 
 !!! question "FAQs"
-    - **"Do I have to set one of these up?"** No. But, your health care provider really does need data. Insurance companies definitely demand data too...so make them happy.
-    - **"Do I need all three?"** No, you can mix-and-match. Apple Health is already built into your iPhone, so there's no setup involved anyways. Nightscout setup is really actually quite easy and Loopdocs has a [complete set of instructions for Loop users](../nightscout/new_user.md). Nightscout has a lot of useful alarms and alerts, too. Tidepool is free and easy to set up, and many clinics already have Tidepool integration.
-    - **Is it worth the time to setup Nightscout? I feel like I'm already doing so much outside my comfort zone."** Yes. The feedback from the thousands of people that have come before you is YES, it is worth the minimal time investment to set up a Nightscout site.
+    - **Do I have to set one of these up?** Apple Health is already built into your iPhone and used by Loop, so there's no setup involved.
+    - **Do I need all three?** No, you can choose what suits you best. You can add a data system later.
+    - **Why do I need any of these?** With Loop use, your PDM (Omnipod) is not used or your pump (Medtronic) does not have sufficient memory for all the Loop commands. Your endo will have nothing to download at your next visit. You need to provide them with the information.
+    - **Is it worth the time to setup Nightscout? I feel like I'm already doing so much outside my comfort zone.** Yes. Loopers find it is definitely worth the time investment.  Nightscout provides essential data for evaluating settings and useful alarms and alerts.  Some Facebook help sites require Nightscout data to diagnose and suggest steps to address problems. There are fee-based services that will set up Nightscout for you, if you don't want to build it yourself.
 
-Ok, technically this step could wait until after you build Loop app...but I have your attention now, so I'm taking advantage of it.
+## Data Options
 
-With Loop use, you will no longer be using your PDM (if you use Omnipods) and your pump (if you use Medtronic) will be so full of temp basals that the endos will have nothing to download at your next visit. This [lack of data](https://loopkit.github.io/looptips/data/overview/) will cause a little friction with the health care industry; not good for your insurance records, not good for your endo to feel comfortable, and not good for you to know how your Loop use might be improved with settings tweaks.
-
-So let's explore options for your Loop data. There are three great options for where your Loop data can be stored and retrieved:
-
-* [Apple Health app](https://loopkit.github.io/looptips/data/health/)
-* [Nightscout](https://loopkit.github.io/looptips/data/nightscout/)
+* [Apple Health app](../faqs/apple-health-faqs.md#healthkit-plots)
+    * Great resource to view on the Loop phone
+    * Not so great for showing your endo
 * [Tidepool](https://loopkit.github.io/looptips/data/tidepool/)
+    * Some endo offices will use your Tidepool website when you provide them with an invitation
+    * Many users of the mobile app like the note taking ability
+        * The mobile app uploads Apple HealthKit data to Tidepool
+* Nightscout:
+    * [Nightscout](../nightscout/overview.md) link in LoopDocs
+    * [Nightscout](https://loopkit.github.io/looptips/data/nightscout/) link to LoopTips
+    * Nightscout has a lot of useful alarms and alerts, provides a care portal and detailed reports
+    * Some versions of Loop and Nightscout together allow for remote interface between caregiver and looper
 
-All of the options are free and easy to setup. Take some time to familiarize yourself with these options and setup your preferred system(s). Personally, I use all three for various aspects of my data's story to me...Nightscout being the most useful day-to-day as a remote caregiver of a young Looper.
+All of the options are free and easy to setup. (There are paid options for configuring Nightscout.) Take some time to familiarize yourself with these options and setup your preferred system(s). Many Loopers use all three for various aspects. 
 
-## Next Step: Meet Community
+Nightscout is the most useful day-to-day for some of its capabilities such as plotting IOB and providing a secure, real-time Dashboard of Loop status visible to anyone with access codes and the internet.
+
+## Next Step: Meet the Community
 
 Now you are ready to [Meet the Community](step12.md).

@@ -2,35 +2,46 @@
 
 !!! info "Time Estimate"
     - 2 hours to read the rest of LoopDocs (particularly the "Set Up", "Operate", and "FAQ" sections) and [LoopTips](https://loopkit.github.io/looptips/) thoroughly and thoughtfully
-    - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to make sure you've familiarized yourself with Loop's expected behavior
+    - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to confirm you understand Loop's expected behavior
     - 1-3 days to test settings for safety and to get the most out of Loop
 
 !!! abstract "Summary"
-    - A small amount of effort to test/validate basal rates, ISF (correction factor), and carb ratios will eliminate a lot of uncertainty when you start Looping
-    - Keep an open mind that settings may need to change as you start Loop
-    - Hormones, illness, and failed sites can still happen
+    - Before you start looping, test and validate your basal rates, ISF (correction factor), and CR (carb ratios)
+	- You may need to adjust your settings for Loop
+	- Accurate settings are vital for success
 
 !!! question "FAQs"
-    - **"My endo makes my pump settings, so do I really need to test them?"** Well, nobody is going to force you, but testing your settings even just a couple days will give you a tremendous advantage going into Loop. Your endo may have adjusted your settings in a very different context, with different constraints. What is safe and ideal in traditional pump therapy, may not be the best selection for the Loop app. So, keep an open mind and be willing to adjust settings with the Loop app.
-    - **"I have great control, why would I need to test my settings?"** Awesome for you! However, it is quite possible that your "great control" comes with a lot of little adjustments all the time. We all got used to needing little bumps and nudges of insulin or carbs over time...and sometimes those bumps and nudges are covering for underlying settings that need adjustment. Testing your settings will help...especially if you are coming from a treatment style that involves memorizing your insulin doses for meals...you may not know your actual carb ratio or ISF as a result of "just knowing" your boluses.
+    - **"My endo chose my pump settings, so do I need to test them?"** Yes. Your endo chose your settings in a  different context, with different constraints. What is safe and ideal in traditional pump therapy, may not be the best selection for the Loop app. Testing your settings, even just a couple days, makes a big difference.
+    - **"I have great control, why would I need to test my settings?"**  "Great control" may be due to lots of adjustments - bumps and nudges of insulin or carbs. Those bumps and nudges may be covering for underlying settings that need adjustment. If you are coming from a treatment style that involves memorizing your insulin doses for meals, you may not know your actual CR or ISF. Testing is key to success with Loop.
     - **"I can't basal test with my 2-year-old. What can I do?"** That is pretty tough. Consult your endo, watch your patterns, and do the best you can...little kiddos are a difficult group to test settings. Once you become comfortable with Loop, there are tricks to adjust settings while staying in closed loop as long as settings are fairly close.
 
-Loop is just a fancy calculator underneath the hood. The math problems that it is solving depend on the settings that you provide. It's a good idea to make sure you do a bit of settings testing before using Loop.
+Loop is just a fancy calculator underneath the hood. The math problems it solves depend on the settings you provide. So test settings before using Loop.
 
 ## Basal Rates
 
-If the rates are properly set, Basal insulin will keep your blood glucose steady without food present. You can test your basal by having a relaxing 4-6 hours without eating at least two hours before you begin the test. Does your blood sugar stay steady? Or do you climb and need a correction? Or do you go low and need to eat? Setting basal is a crucial step to setting yourself up for Loop success. It determines how much of the insulin delivered (from basal and bolus) is counted as insulin on board (IOB).
+Correct basal rates keep your blood glucose steady without food present. The standard method is to test your basal by having a relaxing 4-6 hours without eating at least two hours before you begin the test. Does your blood sugar stay steady? Or do you climb and need a correction? Or do you go low and need to eat? Setting basal is a crucial step to setting yourself up for Loop success. It determines how much of the insulin delivered (from basal and bolus) is counted as insulin on board (IOB).
 
 !!! tip "Basal Tricks"
     Loop keeps track of how much more or less insulin than your scheduled basal rates are required to keep glucose in target. Once you become a proficient looper, you can tune your basal by looking at IOB overnight or when food and exercise are not involved.
 
 ## Insulin Sensitivity Factor
 
-The Insulin Sensitivity Factor (ISF), sometimes called Correction Factor, is how much one unit of insulin will bring down your blood glucose (BG). The higher the value of this setting, the more sensitive to insulin you are. An ISF of 30 means one unit of insulin lowers your BG 30 mg/dL in the absence of food or activity, if your basal rates are correct. You can test this setting, after you determine your basal rates. Simply bring yourself to a higher BG with a glucose tab or other small quick carbs. Wait until you see yourself plateau again at the higher BG, then make a correction. Wait 4-6 hours (again no food) and see where your correction lands your blood sugar. Divide the BG drop by the amount of correction insulin you delivered and that’s your ISF. Note, you can have more than one ISF in a 24 hour period.  (Most of Loop configurations enable time-of-day settings - tap the &plus; sign to add another row.)
+The Insulin Sensitivity Factor (ISF), sometimes called Correction Factor, is how much one unit of insulin will bring down your glucose. The higher the value of this setting, the more sensitive to insulin you are. An ISF of 30 (1.65) means one unit of insulin lowers your glucose 30 mg/dL (1.65 mmol/L) in the absence of food or activity, when basal rates are correct.
+
+ Test ISF after you test and determine your basal rates. Simply bring yourself to a higher glucose with a glucose tab or choose a time when you are "stuck" higher than your target.
+ 
+ * Calculate how much insulin is required to lower your glucose to target, take it and observe if you glucose flattens out at your target within 3 hours
+    * Do not do this test if you have recently eaten, recovered from a low glucose, engaged in physical activity, are sick or under stress
+* A starting point for ISF is to take total daily dose and divide that into 1800
+    * This is just a starting point, many people have higher or lower ISF than this formula suggests
+    * Example, you take 30 U a day and have no idea what your ISF should be
+        * Start with 60 mg/dL (3.2 mmol/L) and test it
 
 ## Carb Ratio
 
-The Carb Ratio (CR) is the amount of carbs covered by one unit of insulin. Ideally, a good carb ratio will restore your BG close to its starting point within 3 hours *of the meal*. (High fat/protein meals may cause BGs to be impacted longer.) If you are spiking higher than you’d like after a meal, but still coming back to the starting BG, consider prebolusing your meal by 15-20 minutes rather than changing the carb ratio.
+The Carb Ratio (CR) is the amount of carbs covered by one unit of insulin. Ideally, a good carb ratio will restore your glucose close to its starting point within 3 hours *of the meal*. (High fat/protein meals may cause glucose to be impacted longer.)
+
+If you are spiking higher than you’d like after a meal, but still coming back to the starting glucose, consider pre-bolusing your meal earlier (maybe by 15-20 minutes) rather than changing the carb ratio.
 
 ## Other Resources
 
