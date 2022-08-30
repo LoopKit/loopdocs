@@ -2515,7 +2515,11 @@
 <p>The final terminal messages of a successful download are shown in the next graphic.</p>
 <p align="center"><img alt="the end of LoopWorkspace download" src="../img/build-select-08.png" width="750" /></p>
 <p>If an error appears in your terminal window, read the error and tap any key other than 1, followed by return to cancel. </p>
-<p>The word "error" will appear along with a descriptive message about the error. You might be able to figure it out by reading the message.  Otherwise, reach out for help at your favorite <a href="../../intro/loopdocs-how-to/#how-to-find-help">Loop Social Media</a> site.</p>
+<ul>
+<li>The word "error" will appear along with a descriptive message about the error</li>
+<li>You might be able to figure out the problem by reading the message</li>
+<li>Otherwise, reach out for help at your favorite <a href="../../intro/loopdocs-how-to/#how-to-find-help">Loop Social Media</a> site</li>
+</ul>
 <h3 id="download-was-successful">Download was Successful<a class="headerlink" href="#download-was-successful" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If there are no errors:</p>
 <ul>
@@ -2523,21 +2527,19 @@
 <li>Type 1 in the terminal window and return to Continue as shown in this graphic.</li>
 </ul>
 <p align="center"><img alt="after confirming no build errors in the download" src="../img/build-select-10.png" width="750" /></p>
+<p>Now the script tells you what will happen next and pauses so you can read the message. When you are ready to continue, hit return.</p>
 <p>The final actions of the script are to open two browser windows and then <abbr title="program used to build an app">Xcode</abbr>:</p>
 <ul>
-<li>First the script tells you what will happen next and waits for you to indicate you're ready by tapping return<ul>
-<li>Open a page with abbreviated build instructions from a different site in your browser<ul>
+<li>Opens a page with abbreviated build instructions from the loopandlearn site in your browser<ul>
 <li>If that webpage is not available, it is a convenience for experienced builders and not required</li>
 </ul>
 </li>
-<li>Open LoopDocs here (at the Prepare to Build section) in your browser</li>
-<li>Open <abbr title="program used to build an app">Xcode</abbr> so you can prepare to build</li>
+<li>Opens LoopDocs (at the Prepare to Build section) in your browser</li>
+<li>Opens <abbr title="program used to build an app">Xcode</abbr> so you can prepare to build</li>
 </ul>
-</li>
-<li>Last message informs you that you can close the terminal window if you're done<ul>
+<p>The final script message informs you that you can close the terminal window.</p>
+<ul>
 <li>It's probably a good idea to wait until you've successfully built the app before closing the terminal</li>
-</ul>
-</li>
 </ul>
 <h2 id="prepare-to-build">Prepare to Build<a class="headerlink" href="#prepare-to-build" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><strong>New builders should skip ahead to <a href="#select-the-loop-folder">Select the Loop Folder</a> and follow the detailed steps.</strong></p>
@@ -2580,7 +2582,7 @@
 </ul>
 </li>
 <li>Frame 3: Zoomed inset after selecting Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
-<li>Frame 4: Desired result of selecting Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) and your phone</li>
+<li>Frame 4: Desired result of selecting Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) showing your phone</li>
 </ul>
 <p align="center"><img alt="select loop workspace and confirm phone" src="../img/build-229-02.gif" width="600" /></p>
 <div class="admonition warning">
@@ -2683,7 +2685,7 @@
 </ul>
 <div class="admonition abstract">
 <p class="admonition-title">Advanced Users Only</p>
-<p>There are <a href="../step13/#signing-targets">more targets</a> which must be signed to build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>There are <a href="../step13/#signing-targets">more targets</a> that must be signed to build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>If you followed the directions in <a href="../step13/#signing-targets">Loop-dev</a> and edited the LoopConfigOverride.xcconfig, your targets are already signed.</p>
 <ul>
 <li><strong>Repeat: only build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you're a developer/advanced user</strong></li>
@@ -2742,11 +2744,11 @@
 <h4 id="codesign-keychain-access">Codesign / Keychain Access<a class="headerlink" href="#codesign-keychain-access" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition abstract">
 <p class="admonition-title">First Time Builder or First Time on this Computer</p>
-<p>Sometime during your first build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.</p>
+<p>A codesign/keychain access prompt will appear part-way through your first build on a computer.</p>
 <p><strong>FYI:</strong> <em>codesign is for code sign - nothing to do with design.</em></p>
 <p>Enter the same password you use to log in to the mac, select "Always Allow" and then do it again next time you are asked - once for each target you just signed above.</p>
 <p align="center"><img alt="img/keychain-prompt.png" src="../img/keychain-prompt.png" width="350" /></p>
-<p>It is normal for this prompt to come up four times in a row even after you enter the correct password. In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel. <strong>Don't press deny.</strong> Keep entering your computer password and pressing the "Always Allow" button as many times as it takes (four times to be exact; one for each target in <abbr title="program used to build an app">Xcode</abbr>). After four times of successful password entry, the build will continue.</p>
+<p>It is normal for this prompt to come up four times in a row even after you enter the correct password. Some people think the prompt must be broken because it keeps reappearing so press deny or cancel. <strong>Don't press deny.</strong> Keep entering your computer password and pressing the "Always Allow" button as many times as it takes (once for each target in <abbr title="program used to build an app">Xcode</abbr>). After four times of successful password entry, the build will continue.</p>
 </div>
 <h3 id="build-finished">Build Finished<a class="headerlink" href="#build-finished" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition abstract">
