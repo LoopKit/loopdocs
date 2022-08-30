@@ -27,6 +27,14 @@ To view the list of data stored in Health
     * Repeat until all three are added
     * Tap on the Summary (bottom left icon of toolbar); Favorites show up first
 
+## HealthKit Plots
+
+The health app on the Loop phone provides useful plots of data since you started to Loop with that Apple ID. Examples for insulin delivery and carbohydrates are shown in the graphic below. New versions of iOS modified details of the display with the same or improved capabilities. 
+
+![example insulin and carb plots visible with HealthKit](img/health1.jpg){width="600"}
+
+## HealthKit Details
+
 ### Glucose and Apple HealthKit
 
 For Dexcom users with the Dexcom app on the Loop phone, the Dexcom app writes the value to Health with a 3-hour delay.

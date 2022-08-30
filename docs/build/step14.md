@@ -109,7 +109,9 @@ The final terminal messages of a successful download are shown in the next graph
 
 If an error appears in your terminal window, read the error and tap any key other than 1, followed by return to cancel. 
 
-The word "error" will appear along with a descriptive message about the error. You might be able to figure it out by reading the message.  Otherwise, reach out for help at your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site.
+* The word "error" will appear along with a descriptive message about the error
+* You might be able to figure out the problem by reading the message
+* Otherwise, reach out for help at your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site
 
 ### Download was Successful
 
@@ -121,15 +123,18 @@ If there are no errors:
 ![after confirming no build errors in the download](img/build-select-10.png){width="750"}
 {align="center"}
 
+Now the script tells you what will happen next and pauses so you can read the message. When you are ready to continue, hit return.
+
 The final actions of the script are to open two browser windows and then Xcode:
 
-* First the script tells you what will happen next and waits for you to indicate you're ready by tapping return
-    * Open a page with abbreviated build instructions from a different site in your browser
-        * If that webpage is not available, it is a convenience for experienced builders and not required
-    * Open LoopDocs here (at the Prepare to Build section) in your browser
-    * Open Xcode so you can prepare to build
-* Last message informs you that you can close the terminal window if you're done
-    * It's probably a good idea to wait until you've successfully built the app before closing the terminal
+* Opens a page with abbreviated build instructions from the loopandlearn site in your browser
+    * If that webpage is not available, it is a convenience for experienced builders and not required
+* Opens LoopDocs (at the Prepare to Build section) in your browser
+* Opens Xcode so you can prepare to build
+
+The final script message informs you that you can close the terminal window.
+
+* It's probably a good idea to wait until you've successfully built the app before closing the terminal
 
 ## Prepare to Build
 
@@ -178,7 +183,7 @@ The GIF below shows:
     * Loop (Workspace) is one line below
     * Select Loop (Workspace)
 * Frame 3: Zoomed inset after selecting Loop (Workspace)
-* Frame 4: Desired result of selecting Loop (Workspace) and your phone
+* Frame 4: Desired result of selecting Loop (Workspace) showing your phone
 
 ![select loop workspace and confirm phone](img/build-229-02.gif){width="600"}
 {align="center"}
@@ -281,7 +286,7 @@ After signing the 4 targets, click on the Loop icon under the `PROJECTS` heading
 
 !!! abstract "Advanced Users Only"
 
-    There are [more targets](step13.md#signing-targets) which must be signed to build the dev branch.
+    There are [more targets](step13.md#signing-targets) that must be signed to build the dev branch.
 
     If you followed the directions in [Loop-dev](step13.md#signing-targets) and edited the LoopConfigOverride.xcconfig, your targets are already signed.
 
@@ -365,7 +370,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! abstract "First Time Builder or First Time on this Computer"
 
-    Sometime during your first build on a computer, be ready for a codesign/keychain access prompt that you will see part-way through the build process.
+    A codesign/keychain access prompt will appear part-way through your first build on a computer.
 
     **FYI:** _codesign is for code sign - nothing to do with design._
 
@@ -376,8 +381,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
     {align="center"}
 
 
-    It is normal for this prompt to come up four times in a row even after you enter the correct password. In frustration, people think the prompt must be broken because it keeps reappearing and then people will press deny or cancel. **Don't press deny.** Keep entering your computer password and pressing the "Always Allow" button as many times as it takes (four times to be exact; one for each target in Xcode). After four times of successful password entry, the build will continue.
-
+    It is normal for this prompt to come up four times in a row even after you enter the correct password. Some people think the prompt must be broken because it keeps reappearing so press deny or cancel. **Don't press deny.** Keep entering your computer password and pressing the "Always Allow" button as many times as it takes (once for each target in Xcode). After four times of successful password entry, the build will continue.
 
 ### Build Finished
 

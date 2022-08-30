@@ -37,7 +37,7 @@
 *[ICE]: Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose
 *[IOB]: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
 *[iOS]: operating system used by Apple Mobile devices (iPhone, iPod)
-*[ISF]: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin
+*[ISF]: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor
 *[Issue]: On github - a formal method to report a problem, either code behavior or documentation
 *[macOS]: operating system for Mac computer
 *[Lock your Phone]: click the button on the side of the phone to lock it - prevent accidental touch, i.e., accidental Loop command

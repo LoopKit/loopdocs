@@ -5,15 +5,16 @@ hide:
 
 # Welcome to Loop
 
-Welcome to the "LoopDocs" website.  This is a great place to start to learn all things Loop.
+Welcome to the "LoopDocs" website where you can learn about Loop.
 
-This site takes you step-by-step through the process to build, set up and operate the Loop app.  You do not need a technical or computer background to do this.
+This site shows you step-by-step how to build, set up and operate the Loop app.  You do not need a technical or computer background to do this.
 
 Loop requires a substantial time commitment.  In order to become a proficient looper, you need to learn the information on this site and follow the steps carefully. Consider doing this over a period of time and reviewing the materials more than once.
 
-You will need to test and perhaps adjust your settings to be successful with Loop, or any hybrid closed-loop system. In addition to the documentation found on this site, you will find links as you read to a robust support community.
+* You will need to test and perhaps adjust your settings to be successful with Loop, or any hybrid closed-loop system
+* You will find links as you read to a robust support community
 
-Once you are enjoying all the benefits of Loop, you should regularly follow one or more support forums for important updates on Loop. Spending this time is important for success in building and operating Loop safely.
+Once you are looping, you should regularly follow one or more support forums for important updates on Loop. Spending this time is important for success in building and operating Loop safely.
 
 This website is updated regularly to keep pace with Loop developments and Apple releases.
 

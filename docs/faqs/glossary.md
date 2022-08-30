@@ -85,7 +85,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **iOS**: operating system used by Apple Mobile devices (iPhone, iPod)
 
-**ISF**: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin
+**ISF**: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor
 
 **Issue**: On github - a formal method to report a problem, either code behavior or documentation
 
