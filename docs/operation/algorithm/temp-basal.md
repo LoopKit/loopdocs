@@ -48,7 +48,7 @@ To determine the corrective temporary basal rate to implement, Loop calculates a
 
 The amount of insulin needed, or dose, is calculated using the desired reduction in blood glucose and the user’s ISF. For the Loop algorithm, the desired reduction in blood glucose is the delta between the eventual blood glucose and the correction target:
 
-![basal dose equation](img/dose_equation.png)
+$$ dose = \frac{BG_{eventual}-BG_{target}}{ISF} $$
 
 !!! info "Loop Dose Calculation"
 
@@ -56,51 +56,64 @@ The amount of insulin needed, or dose, is calculated using the desired reduction
 
 Loop then converts the dose into a basal rate using the Loop’s temporary basal rate duration of 30 minutes:
 
-![basal dose equation](img/br.png)![basal dose equation](img/br2.png)
+$$ BR_{correction} = \frac{dose}{30min} = \frac{dose}{\frac{1}{2}hr} = \frac{2 \times dose}{hr} $$
 
-where BR is the basal rate (U/hr), which is the amount of insulin needed over the next 30 minutes to bring the eventual blood glucose to the correction target. The basal rate, however, is the amount of basal rate needed beyond the user’s scheduled basal rate. As such, the required basal rate can be determined by:
+where $BR_{correction}$ is the basal rate ( $\frac{U}{hr}$ ), which is the amount of insulin needed over the next 30 minutes to bring the eventual blood glucose to the correction target. The basal rate, however, is the amount of basal rate needed beyond the user’s scheduled basal rate. As such, the required basal rate can be determined by:
 
-![recommended basal](img/rbr.png)
+$$ BR_{required} = BR_{correction}+BR_{scheduled} $$
 
-where RBR is the required basal rate and SBR is the scheduled basal rate.
+Finally, Loop compares the $BR_{required}$ with the user-specified maximum temporary basal rate $BR_{max}$ setting to determine the temporary basal to issue:
 
-Finally, Loop compares the RBR with the user-specified maximum temporary basal rate setting to determine the temporary basal to issue:
-
-* If RBR ≥ maximum basal rate, then Loop will issue the maximum basal rate  
-
-* If RBR < maximum temporary basal rate, then Loop will issue RBR
+$$ BR_{temp} = max(min( BR_{required}, BR_{max}), 0) $$
 
 After running the temporary basal calculation described above, Loop checks whether there is already an appropriate basal running with at least 10 minutes remaining. If so, Loop will not reissue the temporary basal. However, if the recommended temporary basal differs from the currently running temporary basal — or the current scheduled basal if no temporary is running —  then Loop will replace the current basal rate with the recommended temporary basal rate.
 
 As mentioned at the beginning of this section, the process of determining whether a temporary basal should be issued is repeated every 5 minutes.
 
-## Temporary Basal Rate Calculation Example
+## Temporary Basal Rate Calculation Examples
 
-To illustrate how the Loop calculates the temporary basal rate to issue, consider the calculation for the following scenario:
+To illustrate how the Loop calculates the temporary basal rate to issue, consider the calculation for the following scenarios:
 
-* Eventual blood glucose = 200 mg/dL  
+### Increase Temporary Basal Rate
 
-* Correction target = 100 mg/dL  
-
-* ISF = 50 mg/dL/U  
-
-* Current scheduled basal rate (SBR) is 1 U/hr  
-
-* Maximum basal setting (set by user in Loop) = 6 U/hr  
+* $BG_{eventual} = 200\frac{mg}{dL}$
+* $BG_{target} = 100\frac{mg}{dL}$
+* $ISF = 50\frac{\frac{mg}{dL}}{U}$
+* $BR_{scheduled} = 1\frac{U}{hr}$
+* $BR_{max} = 6\frac{U}{hr}$ (set by user in Loop)
 
 First, calculate the dose:
 
-![basal dose example](img/basal_dose_example.png)
+$$ dose = \frac{BG_{eventual}-BG_{target}}{ISF} = \frac{200\frac{mg}{dL} - 100\frac{mg}{dL}}{50\frac{\frac{mg}{dL}}{U}} = 2U$$
 
 Then, convert the dose into a basal rate to be issued for the next 30 minutes:
 
-![basal dose br example](img/br.png)![basal dose br example](img/basal_dose_br.png)
+$$ BR_{correction} = \frac{2 \times dose}{hr} = \frac{2 \times 2U}{hr} = 4\frac{U}{hr} $$
 
 Next, calculate the required basal rate:
 
-![example rbr](img/rbr_example.png)
+$$ BR_{required} = BR_{correction}+BR_{scheduled} = 4\frac{U}{hr} + 1\frac{U}{hr} = 5\frac{U}{hr} $$
 
-Lastly, compare the required basal rate to the maximum temporary basal rate, and find that Loop will enact a temporary basal rate of 5 U/hr for 30 minutes since this temporary basal rate is below the maximum temporary basal rate of 6 U/hr, which was set by the user in Loop app settings.
+Lastly, compare the required basal rate to the maximum temporary basal rate, and find that Loop will enact a temporary basal rate of $5 \frac{U}{hr}$ for 30 minutes since this temporary basal rate is below the maximum temporary basal rate of $6 \frac{U}{hr}$, which was set by the user in Loop app settings.
+
+$$ BR_{temp} = max(min( BR_{required}, BR_{max}), 0) = max(min( 5\frac{U}{hr}, 6\frac{U}{hr} ), 0) = 5\frac{U}{hr}$$
+
+### Decrease Temporary Basal Rate
+
+* $BG_{eventual} = 50 \frac{mg}{dL}$
+* $BG_{target} = 100 \frac{mg}{dL}$
+* $ISF = 50\frac{\frac{mg}{dL}}{U}$
+* $BR_{scheduled} = 1\frac{U}{hr}$
+* $BR_{max} = 6\frac{U}{hr}$ (set by user in Loop)
+
+$$
+\begin{align}
+dose &= \frac{50 \frac{mg}{dL} - 100 \frac{mg}{dL}}{50\frac{\frac{mg}{dL}}{U}} = -1U \\
+BR_{correction} &= \frac{2 \times (-1) U}{hr} = -2\frac{U}{hr} \\
+BR_{required} &= -2\frac{U}{hr} + 1\frac{U}{hr} = -1\frac{U}{hr} \\
+BR_{temp} &= max(min( -1\frac{U}{hr}, 6\frac{U}{hr} ), 0) = 0\frac{U}{hr}
+\end{align}
+$$
 
 ## Algorithm Section Menu
 
