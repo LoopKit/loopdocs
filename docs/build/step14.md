@@ -34,10 +34,6 @@ This page has the detailed steps to run the Build Select Script to download the 
 
     Go to [Updating: Step 4a](updating.md#step-4a-delete-old-provisioning-profiles) now and do that step if you missed it.
 
-#### Open Terminal
-
-Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
-
 ### Build Select Script
 
 These instructions show each step needed to download Loop using the Build-Select script.
@@ -49,6 +45,11 @@ These instructions show each step needed to download Loop using the Build-Select
      * Information specific to [FreeAPS](https://www.loopandlearn.org/freeapsdoc/)
 
      You do not need to know about these apps to build Loop master.
+
+#### Open Terminal
+
+Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
+
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
