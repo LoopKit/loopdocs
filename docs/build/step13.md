@@ -66,11 +66,28 @@ The first time you use the script, you will be asked how you want to sign the ta
 
 The next question, as shown in graphic below, is whether you will (1) Enter Apple Developer ID or (2) Sign Manually.
 
-* If you are building with a paid developers account, choose option 1, and continue on this page
-* If you are building with a Free option or plan to build to a simulator on your computer, choose option 2 and proceed with signing as described on the [Build Loop](step14.md#prepare-to-build) page or if you know your 10-digit Free ID, follow the instructions at [Loop-dev with Free Account](#loop-dev-with-free-account).
+* If you are building with a paid developers account, choose option 1, and skip ahead to [Create Permanent LoopConfigOverride.xcconfig](#create-permanent-loopconfigoverridexcconfig)
+* If you plan to build to a simulator on your computer, choose option 2 and proceed with signing as described on the [Build Loop](step14.md#prepare-to-build) page
+* If you are building with a Free option, choose option 2 then:
+    * Review [Loop-dev with Free Account](#loop-dev-with-free-account)
+    * Proceed with signing as described on the [Build Loop](step14.md#prepare-to-build)
 
 ![messages for choosing Apple ID or Sign Manually](img/build-dev-b-01-choose.svg){width="750"}
 {align="center"}
+
+### Loop-dev with Free Account
+
+Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the [Build with Free Account](step14.md#free-account) section.
+
+If you know your Personal Team ID, you can enter it as directed in [Signing Targets](#signing-targets) above, otherwise, do manual signing.
+
+1. You must remove additional capabilities, the complete list is:
+    * **Loop Target:** Push Notifications; Siri and **Time Sensitive Notifications**
+    * **Watch App Extension Target:** Siri
+1. Add the keyword `SIRI_DISABLED` to the LoopConfigOverride.xcconfig file
+    * Examine the file and find the line that starts with `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
+    * Insert the new keyword (separated by a space) anywhere after `$(inherited)` and before the slashes near the end of the line
+
 
 ### Create Permanent LoopConfigOverride.xcconfig
 
@@ -121,20 +138,6 @@ User is then shown the [Final Messages](#final-messages)
 
 With the Loop-dev version, there are fewer build steps because the targets should already be signed.
 
-If you are using a paid Developer ID, skip ahead to [Plug in Your Phone](#plug-in-your-phone).
-
-### Loop-dev with Free Account
-
-Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the [Build with Free Account](step14.md#free-account) section.
-
-If you know your Personal Team ID, you can enter it as directed in [Signing Targets](#signing-targets) above, otherwise, do manual signing.
-
-1. You must remove additional capabilities, the complete list is:
-    * **Loop Target:** Push Notifications; Siri and **Time Sensitive Notifications**
-    * **Watch App Extension Target:** Siri
-1. Add the keyword `SIRI_DISABLED` to the LoopConfigOverride.xcconfig file
-    * Examine the file and find the line that starts with `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
-    * Insert the new keyword (separated by a space) anywhere after `$(inherited)` and before the slashes near the end of the line
 
 ## Build Loop
 
