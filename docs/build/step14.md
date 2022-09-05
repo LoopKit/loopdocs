@@ -368,20 +368,18 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 #### Codesign / Keychain Access
 
-!!! abstract "First Time Builder or First Time on this Computer"
+!!! abstract "First Time Using Developer ID on Computer"
 
-    A codesign/keychain access prompt will appear part-way through your first build on a computer.
-
-    **FYI:** _codesign is for code sign - nothing to do with design._
-
-    Enter the same password you use to log in to the mac, select "Always Allow" and then do it again next time you are asked - once for each target you just signed above.
-
+    During your first build with a given Developer ID on your computer, you will see a codesign/keychain access prompt, as shown in the graphic below. Enter the same password you use to log in to the mac, select "Always Allow" and then do it again each time you are asked.
 
     ![img/keychain-prompt.png](img/keychain-prompt.png){width="350"}
     {align="center"}
 
+    It is normal for this prompt to come up repeatedly even after you enter the correct password (once for each target Loop needs to sign).
 
-    It is normal for this prompt to come up four times in a row even after you enter the correct password. Some people think the prompt must be broken because it keeps reappearing so press deny or cancel. **Don't press deny.** Keep entering your computer password and pressing the "Always Allow" button as many times as it takes (once for each target in Xcode). After four times of successful password entry, the build will continue.
+    In frustration, people think the prompt must be broken because it keeps reappearing and press deny or cancel. **Don't press deny.** Keep entering your computer password and pressing the "Always Allow" button as many times as it takes. The build will then continue.
+
+    **FYI:** _codesign is for code sign - nothing to do with design._
 
 ### Build Finished
 
