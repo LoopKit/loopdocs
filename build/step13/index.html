@@ -764,6 +764,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-dev-with-free-account" class="md-nav__link">
+    Loop-dev with Free Account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-permanent-loopconfigoverridexcconfig" class="md-nav__link">
     Create Permanent LoopConfigOverride.xcconfig
   </a>
@@ -773,13 +780,6 @@
           <li class="md-nav__item">
   <a href="#use-permanent-loopconfigoverridexcconfig" class="md-nav__link">
     Use Permanent LoopConfigOverride.xcconfig
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#loop-dev-with-free-account" class="md-nav__link">
-    Loop-dev with Free Account
   </a>
   
 </li>
@@ -796,6 +796,13 @@
   
     <nav class="md-nav" aria-label="Build Loop">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plug-in-your-phone" class="md-nav__link">
+    Plug in Your Phone
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#initial-xcode-screens" class="md-nav__link">
@@ -2213,6 +2220,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-dev-with-free-account" class="md-nav__link">
+    Loop-dev with Free Account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-permanent-loopconfigoverridexcconfig" class="md-nav__link">
     Create Permanent LoopConfigOverride.xcconfig
   </a>
@@ -2222,13 +2236,6 @@
           <li class="md-nav__item">
   <a href="#use-permanent-loopconfigoverridexcconfig" class="md-nav__link">
     Use Permanent LoopConfigOverride.xcconfig
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#loop-dev-with-free-account" class="md-nav__link">
-    Loop-dev with Free Account
   </a>
   
 </li>
@@ -2245,6 +2252,13 @@
   
     <nav class="md-nav" aria-label="Build Loop">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plug-in-your-phone" class="md-nav__link">
+    Plug in Your Phone
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#initial-xcode-screens" class="md-nav__link">
@@ -2373,12 +2387,35 @@
 <p align="center"><img alt="message about development branch commit" src="../img/build-select-dev.svg" width="700" /></p>
 <p>Continue following directions with the script and wait for the download to complete. If you get errors, <a href="../step14/#xcode-errors-with-build-select">review this section</a> of the directions for building the released code. Resolve the errors, if possible, then return to this page.</p>
 <p>After the download step, the specific commit will be "checked out". Verify there are no errors and proceed.</p>
-<h2 id="signing-targets">Signing Targets<a class="headerlink" href="#signing-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="signing-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Signing Targets</abbr><a class="headerlink" href="#signing-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The script helps you configure a permanent file used by <abbr title="program used to build an app">Xcode</abbr> to automatically sign all your targets.</p>
+<p>The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to <a href="#use-permanent-loopconfigoverridexcconfig">Use Permanent LoopConfigOverride.xcconfig</a>.</p>
+<p>The next question, as shown in graphic below, is whether you will (1) Enter Apple Developer ID or (2) Sign Manually.</p>
 <ul>
-<li>The first time you use the script, it helps you set up the file used by <abbr title="program used to build an app">Xcode</abbr> to sign targets</li>
-<li>Once the permanent file is created, you can review it each time you run a script, but should not need to change it</li>
+<li>If you are building with a paid developers account, choose option 1, and skip ahead to <a href="#create-permanent-loopconfigoverridexcconfig">Create Permanent LoopConfigOverride.xcconfig</a></li>
+<li>If you plan to build to a simulator on your computer, choose option 2 and proceed with signing as described on the <a href="../step14/#prepare-to-build">Build Loop</a> page</li>
+<li>If you are building with a Free option, choose option 2 then:<ul>
+<li>Review <a href="#loop-dev-with-free-account">Loop-dev with Free Account</a></li>
+<li>Proceed with signing as described on the <a href="../step14/#prepare-to-build">Build Loop</a></li>
 </ul>
+</li>
+</ul>
+<p align="center"><img alt="messages for choosing Apple ID or Sign Manually" src="../img/build-dev-b-01-choose.svg" width="750" /></p>
+<h3 id="loop-dev-with-free-account">Loop-dev with Free Account<a class="headerlink" href="#loop-dev-with-free-account" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the <a href="../step14/#free-account">Build with Free Account</a> section.</p>
+<p>If you know your Personal Team ID, you can enter it as directed in <a href="#signing-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Signing Targets</abbr></a> above, otherwise, do manual signing.</p>
+<ol>
+<li>You must remove additional capabilities, the complete list is:<ul>
+<li><strong>Loop Target:</strong> Push Notifications; Siri and <strong>Time Sensitive Notifications</strong></li>
+<li><strong>Watch App Extension Target:</strong> Siri</li>
+</ul>
+</li>
+<li>Add the keyword <code>SIRI_DISABLED</code> to the LoopConfigOverride.xcconfig file<ul>
+<li>Examine the file and find the line that starts with <code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)</code></li>
+<li>Insert the new keyword (separated by a space) anywhere after <code>$(inherited)</code> and before the slashes near the end of the line</li>
+</ul>
+</li>
+</ol>
 <h3 id="create-permanent-loopconfigoverridexcconfig">Create Permanent LoopConfigOverride.xcconfig<a class="headerlink" href="#create-permanent-loopconfigoverridexcconfig" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The following graphics show the messages for the first time the script is used on your computer.</p>
 <p>If you see a message that starts with "The file used by <abbr title="program used to build an app">Xcode</abbr> to sign your app . . .", then skip ahead to <a href="#use-permanent-loopconfigoverridexcconfig">Use Permanent LoopConfigOverride.xcconfig</a>. You've already configured your file.</p>
@@ -2425,24 +2462,31 @@
 </li>
 </ul>
 <p>With the Loop-dev version, there are fewer build steps because the targets should already be signed.</p>
-<p>If you are using a paid Developer ID, skip ahead on this page to <a href="#build-loop">Build Loop</a>.</p>
-<h3 id="loop-dev-with-free-account">Loop-dev with Free Account<a class="headerlink" href="#loop-dev-with-free-account" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the <a href="../step14/#free-account">Build with Free Account</a> section.</p>
-<p>If you know your Personal Team ID, you can enter it as directed in <a href="#signing-targets">Signing Targets</a> above.</p>
-<ol>
-<li>You must remove additional capabilities, the complete list is:<ul>
-<li><strong>Loop Target:</strong> Push Notifications; Siri and <strong>Time Sensitive Notifications</strong></li>
-<li><strong>Watch App Extension Target:</strong> Siri</li>
-</ul>
-</li>
-<li>Add the keyword <code>SIRI_DISABLED</code> to the LoopConfigOverride.xcconfig file<ul>
-<li>Examine the file and find the line that starts with <code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)</code></li>
-<li>Insert the new keyword (separated by a space) anywhere after <code>$(inherited)</code> and before the slashes near the end of the line</li>
-</ul>
-</li>
-</ol>
 <h2 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Loop app has already been signed, but there are still a few steps before you can build.</p>
+<h3 id="plug-in-your-phone">Plug in Your Phone<a class="headerlink" href="#plug-in-your-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Refer to the graphic below. The messages in the terminal instruct you to:</p>
+<ul>
+<li>Unlock your phone</li>
+<li>(Optional) If you have an Apple Watch that has never had Loop on it<ul>
+<li>Make sure watch is paired, unlocked and on your wrist</li>
+</ul>
+</li>
+<li>Plug Phone into the computer<ul>
+<li>If you have never "Trusted" this computer with these device(s), do so now<ul>
+<li>A screen will pop up on your phone (and watch) asking if you trust the computer</li>
+<li>Select "Trust"</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Now you are ready to hit return in the terminal window</li>
+</ul>
+<p align="center"><img alt="script instructions for plugging in phone and trusting computer on phone and watch" src="../img/build-dev-b-04.svg" width="750" /></p>
+<p>The final action of the script is to </p>
+<ul>
+<li>Open a browser window displaying this section of LoopDocs</li>
+<li>Open <abbr title="program used to build an app">Xcode</abbr></li>
+</ul>
 <h3 id="initial-xcode-screens">Initial <abbr title="program used to build an app">Xcode</abbr> Screens<a class="headerlink" href="#initial-xcode-screens" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want to <a href="../code_customization/">Customize Loop</a>, do it before you proceed with the build.</p>
 <p>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below:</p>
@@ -2456,11 +2500,6 @@
 <li>Frame 3: Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) selected but there's a red x in the dashed-blue rectangle region</li>
 </ul>
 <p align="center"><img alt="gif showing the initial xcode screens following fresh download" src="../img/xcode-build-loop3-a.gif" width="750" /></p>
-<div class="admonition warning">
-<p class="admonition-title">Free Account users</p>
-<p>Sorry - the documentation is not updated yet. </p>
-<p>Read <a href="#loop-dev-with-free-account">Loop-dev with Free Account</a> in addition to the released build <a href="../step14/#free-account">Free Account</a> documentation.</p>
-</div>
 <h3 id="package-dependency-error">Package Dependency Error<a class="headerlink" href="#package-dependency-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If there is no red x in the dashed-blue rectange region on your <abbr title="program used to build an app">Xcode</abbr> screen, skip ahead to <a href="#start-build">Start Build</a> on this page.</p>
 <p>Otherwise, tap on the red x in the dashed-blue rectange region:</p>
