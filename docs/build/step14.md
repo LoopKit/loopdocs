@@ -387,19 +387,20 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! abstract "First Time Building on a New Device?"
 
-    The first time you install an app on your iPhone using your developer account, you may get a warning like the one shown below. Don't worry.
+    If this is the first time you have installed an app on your iPhone using a free account, you will see warnings in both Xcode and on your phone after a successful build and install on your phone.
 
-    * You need to do one extra step on the phone before the Loop app can open
-    * Follow the directions in your warning (graphic is a little old)
-    * For iOS 15:
-        * Go to the phone Settings
-        * Scroll to find the Developer icon and select it (or use search feature)
-        * Enable trust for your Developer Account
-    * If you are missing the Device Management/Profiles option in your iPhone settings, head over to [this Build Error section](build_errors.md#device-management-could-not-launch-loop) to find the solution.
+    Don't worry, dismiss the messages and do this extra step on the phone. These instructions are valid for iOS 15:
 
-![img/trust_device.jpg](img/trust_device.jpg){width="750"}
-{align="center"}
+    * Open Phone Settings
+    * Select General
+    * Select VPN & Device Management
+    * Under the Developer App section, tap on icon
+    * Tap on Trust
+    * You should now be able to open the app
 
+    ![messages shown in Xcode and on the phone for untrusted developer](img/trust_device.svg){width="400"}
+
+    ![untrusted developer on phone](img/trust_device_2.svg){width="200"}
 
 ### Build Succeeded
 
