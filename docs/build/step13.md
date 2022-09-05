@@ -62,8 +62,15 @@ After the download step, the specific commit will be "checked out". Verify there
 
 The script helps you configure a permanent file used by Xcode to automatically sign all your targets.
 
-* The first time you use the script, it helps you set up the file used by Xcode to sign targets
-* Once the permanent file is created, you can review it each time you run a script, but should not need to change it
+The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to [Use Permanent LoopConfigOverride.xcconfig](#use-permanent-loopconfigoverridexcconfig).
+
+The next question, as shown in graphic below, is whether you will (1) Enter Apple Developer ID or (2) Sign Manually.
+
+* If you are building with a paid developers account, choose option 1, and continue on this page
+* If you are building with a Free option or plan to build to a simulator on your computer, choose option 2 and proceed with signing as described on the [Build Loop](step14.md#prepare-to-build) page or if you know your 10-digit Free ID, follow the instructions at [Loop-dev with Free Account](#loop-dev-with-free-account).
+
+![messages for choosing Apple ID or Sign Manually](img/build-dev-b-01-choose.svg){width="750"}
+{align="center"}
 
 ### Create Permanent LoopConfigOverride.xcconfig
 
@@ -114,13 +121,13 @@ User is then shown the [Final Messages](#final-messages)
 
 With the Loop-dev version, there are fewer build steps because the targets should already be signed.
 
-If you are using a paid Developer ID, skip ahead on this page to [Build Loop](#build-loop).
+If you are using a paid Developer ID, skip ahead to [Plug in Your Phone](#plug-in-your-phone).
 
 ### Loop-dev with Free Account
 
 Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the [Build with Free Account](step14.md#free-account) section.
 
-If you know your Personal Team ID, you can enter it as directed in [Signing Targets](#signing-targets) above.
+If you know your Personal Team ID, you can enter it as directed in [Signing Targets](#signing-targets) above, otherwise, do manual signing.
 
 1. You must remove additional capabilities, the complete list is:
     * **Loop Target:** Push Notifications; Siri and **Time Sensitive Notifications**
@@ -131,7 +138,26 @@ If you know your Personal Team ID, you can enter it as directed in [Signing Targ
 
 ## Build Loop
 
-The Loop app has already been signed, but there are still a few steps before you can build.
+### Plug in Your Phone
+
+Refer to the graphic below. The messages in the terminal instruct you to:
+
+* Unlock your phone
+* (Optional) If you have an Apple Watch that has never had Loop on it
+    * Make sure watch is paired, unlocked and on your wrist
+* Plug Phone into the computer
+    * If you have never "Trusted" this computer with these device(s), do so now
+        * A screen will pop up on your phone (and watch) asking if you trust the computer
+        * Select "Trust"
+* Now you are ready to hit return in the terminal window
+
+![script instructions for plugging in phone and trusting computer on phone and watch](img/build-dev-b-04.svg){width="750"}
+{align="center"}
+
+The final action of the script is to 
+
+* Open a browser window displaying this section of LoopDocs
+* Open Xcode
 
 ### Initial Xcode Screens
 
@@ -147,11 +173,6 @@ Refer to the GIF below:
 
 ![gif showing the initial xcode screens following fresh download](img/xcode-build-loop3-a.gif){width="750"}
 {align="center"}
-
-!!! warning "Free Account users"
-    Sorry - the documentation is not updated yet. 
-    
-    Read [Loop-dev with Free Account](#loop-dev-with-free-account) in addition to the released build [Free Account](step14.md#free-account) documentation.
 
 ### Package Dependency Error
 
