@@ -135,6 +135,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **SAGE**: sensor age on Nightscout site
 
+**Signing Targets**: associate a Developer ID with an app; must sign all targets for a given app
+
 **submodules**: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
 
 **Table of Contents**: (TOC) is the list of level 2 and 3 headers on a given page; the title at the top of the page is a level 1 header
