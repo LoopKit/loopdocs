@@ -91,7 +91,7 @@ You must select an emoji, name the preset and modify either the sensitivity or t
 * Enter a name for the preset
 * Optional: change insulin needs
     - Default is 100% - no change to your settings
-    - You may use the picker wheel or [Select 1% Sensitivity](#select-1-sensitivity) increments
+    - You may use the picker wheel or if you're using Loop-dev (not yet released as Loop 3) [Select 1% Sensitivity](#select-1-sensitivity) increments
 * Optional: enter a target range
     - If you do not enter a target range, Loop will use your existing scheduled target range
 * Select whether you want the override to run indefinitely or for a finite time
@@ -102,6 +102,7 @@ When you've made your selections, save the preset using the "Save" button in the
 
 The selectable Overall Insulin Needs values are not limited by the default picker values of 10%.
 
+* This feature is only availabe in Loop-dev (and Loop 3 when it's released)
 * When adjusting Needs, press and hold the "orange" bar, highlighted by the red rectangle in the graphic below
 * Move your finger left and right to adjust by 1%
 * Release to select desired level
