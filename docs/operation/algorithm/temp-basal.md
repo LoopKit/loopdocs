@@ -60,7 +60,7 @@ $$ BR_{correction} = \frac{dose}{30min} = \frac{dose}{\frac{1}{2}hr} = \frac{2 \
 
 where $BR_{correction}$ is the basal rate ( $\frac{U}{hr}$ ), which is the amount of insulin needed over the next 30 minutes to bring the eventual blood glucose to the correction target. The basal rate, however, is the amount of basal rate needed beyond the user’s scheduled basal rate. As such, the required basal rate can be determined by:
 
-$$ BR_{required} = BR_{correction}+BR_{scheduled} $$
+$$ BR_{required} = BR_{scheduled} + BR_{correction} $$
 
 Finally, Loop compares the $BR_{required}$ with the user-specified maximum temporary basal rate $BR_{max}$ setting to determine the temporary basal to issue:
 
@@ -70,11 +70,9 @@ After running the temporary basal calculation described above, Loop checks wheth
 
 As mentioned at the beginning of this section, the process of determining whether a temporary basal should be issued is repeated every 5 minutes.
 
-## Temporary Basal Rate Calculation Examples
+## Temporary Basal Rate Calculation Example
 
-To illustrate how the Loop calculates the temporary basal rate to issue, consider the calculation for the following scenarios:
-
-### Increase Temporary Basal Rate
+To illustrate how the Loop calculates the temporary basal rate to issue, consider the calculation for the following scenario:
 
 * $BG_{eventual} = 200\frac{mg}{dL}$
 * $BG_{target} = 100\frac{mg}{dL}$
@@ -84,7 +82,7 @@ To illustrate how the Loop calculates the temporary basal rate to issue, conside
 
 First, calculate the dose:
 
-$$ dose = \frac{BG_{eventual}-BG_{target}}{ISF} = \frac{200\frac{mg}{dL} - 100\frac{mg}{dL}}{50\frac{\frac{mg}{dL}}{U}} = 2U$$
+$$ dose = \frac{BG_{eventual}-BG_{target}}{ISF} = \frac{200\frac{mg}{dL} - 100\frac{mg}{dL}}{50\frac{\frac{mg}{dL}}{U}} = 2U $$
 
 Then, convert the dose into a basal rate to be issued for the next 30 minutes:
 
@@ -92,28 +90,31 @@ $$ BR_{correction} = \frac{2 \times dose}{hr} = \frac{2 \times 2U}{hr} = 4\frac{
 
 Next, calculate the required basal rate:
 
-$$ BR_{required} = BR_{correction}+BR_{scheduled} = 4\frac{U}{hr} + 1\frac{U}{hr} = 5\frac{U}{hr} $$
+$$ BR_{required} = BR_{scheduled} + BR_{correction} = 1\frac{U}{hr} + 4\frac{U}{hr} = 5\frac{U}{hr} $$
 
 Lastly, compare the required basal rate to the maximum temporary basal rate, and find that Loop will enact a temporary basal rate of $5 \frac{U}{hr}$ for 30 minutes since this temporary basal rate is below the maximum temporary basal rate of $6 \frac{U}{hr}$, which was set by the user in Loop app settings.
 
 $$ BR_{temp} = max(min( BR_{required}, BR_{max}), 0) = max(min( 5\frac{U}{hr}, 6\frac{U}{hr} ), 0) = 5\frac{U}{hr}$$
 
-### Decrease Temporary Basal Rate
+## More Examples
 
-* $BG_{eventual} = 50 \frac{mg}{dL}$
-* $BG_{target} = 100 \frac{mg}{dL}$
+Consider the following values as fixed values for our calculation:
+
+* $BG_{target} = 100\frac{mg}{dL}$
 * $ISF = 50\frac{\frac{mg}{dL}}{U}$
 * $BR_{scheduled} = 1\frac{U}{hr}$
-* $BR_{max} = 6\frac{U}{hr}$ (set by user in Loop)
+* $BR_{max} = 6\frac{U}{hr}$
 
-$$
-\begin{align}
-dose &= \frac{50 \frac{mg}{dL} - 100 \frac{mg}{dL}}{50\frac{\frac{mg}{dL}}{U}} = -1U \\
-BR_{correction} &= \frac{2 \times (-1) U}{hr} = -2\frac{U}{hr} \\
-BR_{required} &= -2\frac{U}{hr} + 1\frac{U}{hr} = -1\frac{U}{hr} \\
-BR_{temp} &= max(min( -1\frac{U}{hr}, 6\frac{U}{hr} ), 0) = 0\frac{U}{hr}
-\end{align}
-$$
+The table below shows the $BR_{temp}$ for different $BG_{eventual}$. $BR_{temp}$ should never turn negative and should never be greater than $BR_{max}$.
+
+| $BG_{eventual}$ $(\frac{mg}{dL})$ | $BR_{correction}$ $(\frac{U}{hr})$ | $BR_{required}$ $(\frac{U}{hr})$ | $BR_{temp}$ $(\frac{U}{hr})$ |
+|----------------------------------:|-----------------------------------:|---------------------------------:|-----------------------------:|
+|                               300 |                                8.0 |                              9.0 |                          6.0 |
+|                               200 |                                4.0 |                              5.0 |                          5.0 |
+|                               100 |                                0.0 |                              1.0 |                          1.0 |
+|                                90 |                               -0.4 |                              0.6 |                          0.6 |
+|                                75 |                               -1.0 |                              0.0 |                          0.0 |
+|                                50 |                               -2.0 |                             -1.0 |                          0.0 |
 
 ## Algorithm Section Menu
 
