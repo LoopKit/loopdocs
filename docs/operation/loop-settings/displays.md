@@ -119,7 +119,7 @@ Note - these elements are not turned on and off in the Loop predictions. They ju
 
 ### Active Insulin Chart
 
-![Plot of insulin on board (IOB); active amount above or below basal using insulin model](img/active_insulin.jpg){width="400"}
+![Plot of insulin on board (IOB); active amount above or below basal using insulin type](img/active_insulin.jpg){width="400"}
 {align="center"}
 
 The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive and negative IOB.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the (for Medtronic) pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered). The opposite is true for Omnipods. If a message is sent from Loop, it assumes the pod got the message and enacted it - even if the acknowledgement is not received.  Later, when communication is restored, if a command was not enacted by the pod, the Event History is updated.

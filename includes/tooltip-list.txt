@@ -67,7 +67,7 @@
 *[Table of Contents]: (TOC) is the list of level 2 and 3 headers on a given page; the title at the top of the page is a level 1 header
 *[Temp Basal Only]: provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)
 *[Terminal]: interface for entering commands to the computer
-*[Therapy Settings]: Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits
+*[Therapy Settings]: Basal Rates, ISF, CR, correction and safety ranges and delivery limits
 *[Tokens]: on Nightscout, configure access permissions using tokens
 *[Tooltip]: brief definitions provided for important terms and abbreviations on the website
 *[URL]: website address (Uniform Resource Locator)

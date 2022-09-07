@@ -49,8 +49,8 @@ With Loop-dev, the "old" method still works, but there is a new method for enter
     * `Log Dose` screen is displayed showing the current `Glucose` prediction
     * The default insulin type is that used by the pump
     * To modify Insulin Type, tap on that row (red dashed lines)
-        * Picker wheel allows other insulin models to be selected
-        * Note that some insulin models, such as Afrezza are only available for non-pump insulin selection
+        * Picker wheel allows other insulin types to be selected
+        * Note that some insulin types, such as Afrezza are only available for non-pump insulin selection
     * Tap on the `Bolus` row (blue dash-dot lines) to bring up a keyboard
         * The `Glucose` prediction chart updates automatically based on the value entered in the Bolus row
         * Tip, add 0.001 to the actual dose to make it easier to see if reviewing in Apple Health

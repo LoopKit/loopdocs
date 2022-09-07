@@ -154,22 +154,6 @@ If the Dosing Strategy is configured to Automatic Bolus, then the maximum bolus 
 [Guardrails for Maximum Bolus](#guardrails-for-maximum-bolus)
 
 
-### Insulin Model
-
-The `Insulin Model`, child or adult, is only used with "rapid acting" `Insulin Type`.
-
-* `Insulin Model` is entered under Therapy Settings
-* `Insulin Type` is entered under pump settings, refer to [Insulin Type](add-pump.md#insulin-type)
-
-Loop selects a specific insulin action model based on `Insulin Model` and `Insulin Type`. If you add a pump, the `Insulin Type` is explicitly requested. If a pump is already added, as happens when you build this version over Loop 2.2.x, be sure to check the [Insulin Type](add-pump.md#insulin-type) under the pump settings.
-
-An Insulin Model selection must be entered during onboarding regardless of the type of insulin you use in your pump.
-
-* The Loop model used for "rapid acting" insulins, e.g., Novolog, Humalog or Apidra, does not distinguish between brands; however, a different model is available for Adult or Child
-* The Loop model for "ultra rapid" insulins, such as Fiasp or Lyumjev, have their own model by brand
-    * There is no differentiation between Adult and Child, at this time
-    * Therapy Settings `Insulin Model` selection is not used for "ultra rapid" insulins
-
 ### Carb Ratios
 
 Your Carb Ratio is the number of grams of carbohydrates covered by one unit of insulin.
