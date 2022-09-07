@@ -223,11 +223,9 @@ The graphic below indicates in red the three places you need to click in order t
 * Third, click on the dropdown menu (red circle) by the word `Team`
 
 !!! tip "Click Only where Instructed"
-    Users sometimes click when they do not mean to.
-
     * Make sure `All`, indicated by dashed blue oval, is selected
         * If `Debug` or `Release` is accidentally tapped, you will not be able to build
-    * Make sure checkbox in `Automatically manage signing`, indicated by dashed blue rectangle, remains checked
+    * Make sure `Automatically manage signing`, indicated by dashed blue rectangle, is checked
 
 ![graphic showing Signing & Capabilities tab is highlighted and where to click to sign targets](img/xcode-signing.svg){width="750"}
 {align="center"}
