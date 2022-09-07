@@ -121,7 +121,6 @@ The therapy settings are the heart of how Loop makes predictions. If your settin
         * Delivery Limits
             * Maximum Basal Rate
             * Maximum Bolus
-        * Insulin Model
         * Carb Ratios
         * Insulin Sensitivites
 
@@ -214,11 +213,6 @@ Experienced loopers typically set their maximum basal rate around 3-4 times thei
 [Maximum Bolus](therapy-settings.md#maximum-bolus) is the highest bolus amount Loop can recommend at one time to cover carbs or bring down high glucose.
 
 For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.
-
-### Insulin Model
-
-The `Insulin Model` selection determines whether a child or adult model is used by Loop if you select a "rapid acting" insulin (Apidra, Humalog or Novolog) in your [Insulin Type](add-pump.md#insulin-type) configuration under pump settings. For "ultra rapid" insulins (Fiasp, Lyumjev), the `Insulin Model` selected is irrelevant, but a selection is required.
-
 
 ### Carb Ratios
 

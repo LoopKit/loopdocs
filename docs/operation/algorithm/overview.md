@@ -12,7 +12,7 @@ status screen of Loop.
 
 |  |  |
 |---------|---------|
-|Insulin activity duration|The insulin activity duration is the duration of the insulin activity curve, and describes the point at which the delivered insulin dose no longer affects blood glucose. The insulin activity duration is 6 hours for Loop's rapid-acting and Fiasp insulin models.|
+|Insulin activity duration|The insulin activity duration is the duration of the insulin activity curve, and describes the point at which the delivered insulin dose no longer affects blood glucose. The insulin activity duration is 6 hours for Loop's rapid-acting and ultra-rapid insulin models.|
 |Correction range|The correction range is the blood glucose range Loop uses to determine corrective actions (e.g., between 90 and 120 mg/dL in the figure). NOTE: Loop’s correction range is a user setting and should not be confused with the target range, typically 70-180 mg/dL, used for the purpose of calculating the percent time in range.|
 |Correction minimum|The lower or minimum value of the user’s correction range, which is 90 mg/dL in the figure.|
 |Correction maximum|The upper or maximum value of the user’s correction range, which is 120 mg/dL in the figure.|

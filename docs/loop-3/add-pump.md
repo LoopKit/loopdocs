@@ -80,8 +80,6 @@ For all pumps, you can choose from the insulin types below.
 
 * Insulin Type
     * **Rapid Acting** (Novolog, Humalog, Apidra) or **Ultra Rapid** (Fiasp, Lyumjev)
-        * With Rapid Acting insulin, the [Insulin Model (Child or Adult)](therapy-settings.md#insulin-model) selected in the Therapy Settings is applied
-        * With Ultra Rapid insulin, there is no differentiation between Adult and Child, at this time
     * Inhaled insulin (Afrezza) is not offered because it is not used in pumps. [Non-Pump Insulin](displays_v3.md#event-history-reservoir-and-non-pump-insulin)
 
 ![initial selection for insulin used in pump](img/loop-3-add-pump-insulin.svg){width="250"}

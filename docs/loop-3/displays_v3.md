@@ -79,7 +79,7 @@ The graph at the top of this view will match your Glucose Chart. Below this char
 
 ### Active Insulin Chart
 
-![Plot of insulin on board (IOB); active amount above or below basal using insulin model](../operation/loop-settings/img/active_insulin.jpg){width="400"}
+![Plot of insulin on board (IOB); active amount above or below basal using insulin type](../operation/loop-settings/img/active_insulin.jpg){width="400"}
 {align="center"}
 
 The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive or negative.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the (for Medtronic) pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered). The opposite is true for Omnipods. If a message is sent from Loop, it assumes the pod got the message and enacted it - even if the acknowledgement is not received.  Later, when communication is restored, if a command was not enacted by the pod, the Event History is updated.
@@ -109,7 +109,7 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
     - **Omnipod** users should not worry if the reservoir display is blank. Pods do not report or track insulin remaining until their reservoirs get below 50 units remaining. When a pod is deactivated, the reservoir history for that pod is no longer displayed.
     - **Medtronic** users will have reservoir history displayed in 5-minute increments, unless Loop has been having communication issues.
 
-* **Non-Pump Insulin**: The user can enter insulin taken by another method such as inhaled or by injection. The user can choose a different insulin model than used by the pump. This is explained further at this [link](features.md#non-pump-insulin).
+* **Non-Pump Insulin**: The user can enter insulin taken by another method such as inhaled or by injection. The user can choose a different insulin type than used by the pump. This is explained further at this [link](features.md#non-pump-insulin).
 
 !!! abstract "Previous Pod Insulin History"
     For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this can be done in Apple Health.

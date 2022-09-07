@@ -145,7 +145,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Terminal**: interface for entering commands to the computer
 
-**Therapy Settings**: Basal Rates, ISF, CR, correction and safety ranges, insulin model and delivery limits
+**Therapy Settings**: Basal Rates, ISF, CR, correction and safety ranges and delivery limits
 
 **Tokens**: on Nightscout, configure access permissions using tokens
 
