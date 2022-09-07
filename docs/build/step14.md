@@ -9,7 +9,7 @@
 !!! abstract "Summary"
     You will:
 
-    * Run the Build Select Script and download Loop code
+    * Run the Build Select Script to download Loop code
     * Prepare to build the Loop app
     * Press the Xcode Build Button to build Loop
     * Watch in awe as you build your very own Loop app
@@ -108,11 +108,12 @@ The final terminal messages of a successful download are shown in the next graph
 ![the end of LoopWorkspace download](img/build-select-08.png){width="750"}
 {align="center"}
 
-If an error appears in your terminal window, read the error and tap any key other than 1, followed by return to cancel. 
+If the word "error" appears in your terminal window:
 
-* The word "error" will appear along with a descriptive message about the error
-* You might be able to figure out the problem by reading the message
-* Otherwise, reach out for help at your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site
+* Read the error message
+* Try to figure out the problem
+* If you need help, reach out to your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site
+* Tap any key other than 1, followed by return to cancel
 
 ### Download was Successful
 
@@ -126,7 +127,7 @@ Once you confirm there were no errors, the script continues as shown in the grap
 
 The final script message informs you that you can close the terminal window.
 
-* It's probably a good idea to wait until you've successfully built the app before closing the terminal
+* Wait until you've successfully built the app before closing the terminal
 
 ## Prepare to Build
 
@@ -204,7 +205,7 @@ The GIF below shows:
 
 Skip this section if building to a phone and proceed to [Signing](#select-signing-capabilities-tab).
 
-If you want to build to a simulator, follow these directions and skip the rest of this page.
+If you want to build to a simulator, follow the directions in this section.
 
 * Simply choose one of the iOS Simulators instead of a phone and build to it
     * The iOS simulator you choose does not need to be the same model as your phone
