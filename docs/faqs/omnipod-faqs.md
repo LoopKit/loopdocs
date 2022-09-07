@@ -22,7 +22,7 @@ No, pods are monogamous little creatures. They will pair with only one device at
 
 ## Can I cancel a bolus?
 
-Yes, you can cancel a bolus in progress. If fact, because it is very easy to cancel, make sure your phone is locked prior to being put away to avoid inadvertently cancelling a bolus. (This behavior is very similar to the Insulet PDM - which also needs to be locked once a bolus has started.)
+Yes, you can cancel a bolus in progress. In fact, because it is very easy to cancel, make sure your phone is locked prior to being put away to avoid inadvertently cancelling a bolus. (This behavior is very similar to the Insulet PDM - which also needs to be locked once a bolus has started.)
 
 As soon as a bolus is initiated, look at your phone in portrait orientation.  You will see a bolus message indicating the progress of the bolus. This message is highlighted with a red rectangle in the graphic below. If you tap on this part of the display, the bolus is immediately cancelled.  (This graphic of the Loop display is from Loop-dev.  If you are on Loop v2.2.x, the bolus in progress message looks and behaves the same.)
 

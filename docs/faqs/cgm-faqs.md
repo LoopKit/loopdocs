@@ -37,7 +37,7 @@ When you change transmitters, you will need to update the transmitter ID in your
 ![img/delete-cgm.jpg](img/delete-cgm.jpg){width="400"}
 {align="center"}
 
-If you don't update your transmitter ID when you change active transmitters, and you included your Dexcom share credentials, then Loop uses your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID. It's best not to enter Share Credentials. This make it really obvious that you need to update the CGM settings in Loop at transmitter change time.
+If you don't update your transmitter ID when you change active transmitters, and you included your Dexcom share credentials, then Loop uses your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID. It's best not to enter Share Credentials. This makes it really obvious that you need to update the CGM settings in Loop at transmitter change time.
 
 ## Can I use Libre sensors with a reader like Miao Miao?
 

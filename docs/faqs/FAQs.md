@@ -138,7 +138,7 @@ When you get a new iPhone, you can plan ahead. The information found in the Upda
 
 ## What about other pumps? When will they Loop?
 
-Hey now...let's be grateful for what we have first. The ability to use Loop is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Cracking the pumps for Loop use is a large undertaking. If and when another set of people spend a large amount of time figuring out other pumps, then they could conceivably be added to Loop. But you don't need to let us know that you'd love to see more pumps compatible with Loop. There is just an awful lot of work that needs to happen and it is neither quick or easy.
+Hey now...let's be grateful for what we have first. The ability to use Loop is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Cracking the pumps for Loop use is a large undertaking. If and when another set of people spend a large amount of time figuring out other pumps, then they could conceivably be added to Loop. But you don't need to let us know that you'd love to see more pumps compatible with Loop. There is just an awful lot of work that needs to happen and it is neither quick nor easy.
 
 * Tandem pumps are not Loop compatible.
 * Omnipod DASH pods will be Loop compatible (when Loop 3 is released).
