@@ -222,8 +222,10 @@ _Code After Modification to 50% of recommended insulin_
 Some people want finer settings on the override sensitivity picker and may want to limit the overall range for overrides – especially for children.
 
 !!! tip "1% Settings Available without Customization"
-    The selectable Override Sensitivity values are not limited by the default picker values of 10%.
+    With the advent of Loop 3, the Override Sensitivity values are not limited by the default picker values of 10%.
 
+    * Not available in Loop 2.2.x
+    * Not available in FreeAPS (based off Loop 2.2.x)
     * [Select 1% Sensitivity](../operation/features/workout.md#select-1-sensitivity)
 
 Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An [override](../operation/features/workout.md) is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in IOB for the duration of the override.)

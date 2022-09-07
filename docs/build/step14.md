@@ -34,10 +34,6 @@ This page has the detailed steps to run the Build Select Script to download the 
 
     Go to [Updating: Step 4a](updating.md#step-4a-delete-old-provisioning-profiles) now and do that step if you missed it.
 
-#### Open Terminal
-
-Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
-
 ### Build Select Script
 
 These instructions show each step needed to download Loop using the Build-Select script.
@@ -49,6 +45,11 @@ These instructions show each step needed to download Loop using the Build-Select
      * Information specific to [FreeAPS](https://www.loopandlearn.org/freeapsdoc/)
 
      You do not need to know about these apps to build Loop master.
+
+#### Open Terminal
+
+Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
+
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
@@ -73,9 +74,9 @@ Next you will see an introduction to the Build-Select script.  Please read this.
 ![choose to build Loop](img/build-select-05.png){width="750"}
 {align="center"}
 
-Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop Master (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.
+Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.
 
-![choose which Loop to build](img/build-select-06.png){width="750"}
+![choose which Loop to build](img/build-select-06.png){width="600"}
 {align="center"}
 
 ### XCode Errors with Build-Select
@@ -115,22 +116,13 @@ If an error appears in your terminal window, read the error and tap any key othe
 
 ### Download was Successful
 
-If there are no errors:
+Once you confirm there were no errors, the script continues as shown in the graphic below:
 
-* Make sure your phone is unlocked and plugged into the computer
-* Type 1 in the terminal window and return to Continue as shown in this graphic.
-
-![after confirming no build errors in the download](img/build-select-10.png){width="750"}
+![after confirming no build errors in the download](img/build-select-10.png){width="600"}
 {align="center"}
 
-Now the script tells you what will happen next and pauses so you can read the message. When you are ready to continue, hit return.
-
-The final actions of the script are to open two browser windows and then Xcode:
-
-* Opens a page with abbreviated build instructions from the loopandlearn site in your browser
-    * If that webpage is not available, it is a convenience for experienced builders and not required
-* Opens LoopDocs (at the Prepare to Build section) in your browser
-* Opens Xcode so you can prepare to build
+* Make sure your phone is unlocked and plugged into the computer
+* Hit return when ready to continue
 
 The final script message informs you that you can close the terminal window.
 
@@ -368,38 +360,37 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 #### Codesign / Keychain Access
 
-!!! abstract "First Time Builder or First Time on this Computer"
+!!! abstract "First Time Using Developer ID on Computer"
 
-    A codesign/keychain access prompt will appear part-way through your first build on a computer.
-
-    **FYI:** _codesign is for code sign - nothing to do with design._
-
-    Enter the same password you use to log in to the mac, select "Always Allow" and then do it again next time you are asked - once for each target you just signed above.
-
+    During your first build with a given Developer ID on your computer, you will see a codesign/keychain access prompt, as shown in the graphic below. Enter the same password you use to log in to the mac, select "Always Allow" and then do it again each time you are asked.
 
     ![img/keychain-prompt.png](img/keychain-prompt.png){width="350"}
     {align="center"}
 
+    It is normal for this prompt to come up repeatedly even after you enter the correct password (once for each target Loop needs to sign).
 
-    It is normal for this prompt to come up four times in a row even after you enter the correct password. Some people think the prompt must be broken because it keeps reappearing so press deny or cancel. **Don't press deny.** Keep entering your computer password and pressing the "Always Allow" button as many times as it takes (once for each target in Xcode). After four times of successful password entry, the build will continue.
+    In frustration, people think the prompt must be broken because it keeps reappearing and press deny or cancel. **Don't press deny.** Keep entering your computer password and pressing the "Always Allow" button as many times as it takes. The build will then continue.
+
+    **FYI:** _codesign is for code sign - nothing to do with design._
 
 ### Build Finished
 
 !!! abstract "First Time Building on a New Device?"
 
-    The first time you install an app on your iPhone using your developer account, you may get a warning like the one shown below. Don't worry.
+    If this is the first time you have installed an app on your iPhone using a free account, you will see warnings in both Xcode and on your phone after a successful build and install on your phone.
 
-    * You need to do one extra step on the phone before the Loop app can open
-    * Follow the directions in your warning (graphic is a little old)
-    * For iOS 15:
-        * Go to the phone Settings
-        * Scroll to find the Developer icon and select it (or use search feature)
-        * Enable trust for your Developer Account
-    * If you are missing the Device Management/Profiles option in your iPhone settings, head over to [this Build Error section](build_errors.md#device-management-could-not-launch-loop) to find the solution.
+    Don't worry, dismiss the messages and do this extra step on the phone. These instructions are valid for iOS 15:
 
-![img/trust_device.jpg](img/trust_device.jpg){width="750"}
-{align="center"}
+    * Open Phone Settings
+    * Select General
+    * Select VPN & Device Management
+    * Under the Developer App section, tap on icon
+    * Tap on Trust
+    * You should now be able to open the app
 
+    ![messages shown in Xcode and on the phone for untrusted developer](img/trust_device.svg){width="400"}
+
+    ![untrusted developer on phone](img/trust_device_2.svg){width="200"}
 
 ### Build Succeeded
 
