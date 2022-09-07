@@ -110,8 +110,11 @@ Loop does not have a remote notification to other devices.  If you are a remotel
 
 Many people use additional apps to assist in following a loved one or to support a loved one who needs help waking up to alarms. One of the more popular options is Loop Follow, written by a parent of a Looper. There are a number of features to assist in remote monitoring with a variety of options for the source of data.
 
+!!! danger "iOS 16 Warning"
+    At the current time you cannot build Loop Follow on an iOS 16 phone.
+
 ![loop follow graphic from the README page](img/loop-follow.png)
 
 For more information, please read the [Loop Follow](https://github.com/jonfawcett/LoopFollow#loop-follow) documentation. You can build Loop Follow using the same [Build Select Script](../../build/step14.md#build-select-script) you used to build the Loop app. (It's one of the options in the menu.)
 
-Please note that Jon Fawcett makes clear distinction between his DIY (free) support and his business, Custom Type One. However, both are supported with the same Facebook group. [CustomTypeOne Support (Loop Follow, SugarPixel, Loop Patches)](https://www.facebook.com/groups/loopfollow/)
+Please note that Jon Fawcett makes clear distinction between his DIY (free) support and his business, Custom Type One. However, both are supported with the same Facebook group, [CustomTypeOne Support (Loop Follow, SugarPixel, Loop Patches)](https://www.facebook.com/groups/loopfollow/).
