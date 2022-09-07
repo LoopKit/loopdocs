@@ -1245,22 +1245,36 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../operation/features/notifications/" class="md-nav__link">
+        Loop Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" type="checkbox" id="__nav_5_7" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_5_6">
+        <label class="md-nav__link" for="__nav_5_7">
           How to Use Loop App
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="How to Use Loop App" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_6">
+        <label class="md-nav__title" for="__nav_5_7">
           <span class="md-nav__icon md-icon"></span>
           How to Use Loop App
         </label>
@@ -1342,20 +1356,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operation/features/notifications/" class="md-nav__link">
-        Loop Notifications
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../operation/features/battery/" class="md-nav__link">
         Pump Battery
       </a>
@@ -1394,18 +1394,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_8" type="checkbox" id="__nav_5_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_9" type="checkbox" id="__nav_5_9" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_5_8">
+        <label class="md-nav__link" for="__nav_5_9">
           Algorithm
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Algorithm" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_8">
+        <label class="md-nav__title" for="__nav_5_9">
           <span class="md-nav__icon md-icon"></span>
           Algorithm
         </label>
@@ -2465,8 +2465,6 @@
 <p>If you used this same computer to build Loop previously and you did not delete provisioning profiles - you will not get a full year with the app.</p>
 <p>Go to <a href="../updating/#step-4a-delete-old-provisioning-profiles">Updating: Step 4a</a> now and do that step if you missed it.</p>
 </div>
-<h4 id="open-terminal">Open <abbr title="interface for entering commands to the computer">Terminal</abbr><a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Go to the <abbr title="graphical folder and file display on Mac">Finder</abbr> app, click on Applications, then open the Utilities folder.  Locate the <abbr title="interface for entering commands to the computer">Terminal</abbr> app and double-click <abbr title="interface for entering commands to the computer">Terminal</abbr> to open a terminal window. The terminal window is very plain looking when you open it. That is normal.</p>
 <h3 id="build-select-script"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr><a class="headerlink" href="#build-select-script" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>These instructions show each step needed to download Loop using the Build-Select script.</p>
 <div class="admonition note">
@@ -2478,6 +2476,8 @@
 </ul>
 <p>You do not need to know about these apps to build Loop master.</p>
 </div>
+<h4 id="open-terminal">Open <abbr title="interface for entering commands to the computer">Terminal</abbr><a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Go to the <abbr title="graphical folder and file display on Mac">Finder</abbr> app, click on Applications, then open the Utilities folder.  Locate the <abbr title="interface for entering commands to the computer">Terminal</abbr> app and double-click <abbr title="interface for entering commands to the computer">Terminal</abbr> to open a terminal window. The terminal window is very plain looking when you open it. That is normal.</p>
 <p>Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
 <div class="highlight"><span class="filename">Copy and Paste to start the Build-Select script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)&quot;
 </code></pre></div>
@@ -2491,8 +2491,8 @@
 <p>You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.</p>
 <p>Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and return.</p>
 <p align="center"><img alt="choose to build Loop" src="../img/build-select-05.png" width="750" /></p>
-<p>Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop Master (as shown in the graphic below) or 2 for the FreeAPS <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> of Loop.</p>
-<p align="center"><img alt="choose which Loop to build" src="../img/build-select-06.png" width="750" /></p>
+<p>Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the FreeAPS <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> of Loop.</p>
+<p align="center"><img alt="choose which Loop to build" src="../img/build-select-06.png" width="600" /></p>
 <h3 id="xcode-errors-with-build-select">XCode Errors with Build-Select<a class="headerlink" href="#xcode-errors-with-build-select" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">WARNINGS</p>
@@ -2521,21 +2521,11 @@
 <li>Otherwise, reach out for help at your favorite <a href="../../intro/loopdocs-how-to/#how-to-find-help">Loop Social Media</a> site</li>
 </ul>
 <h3 id="download-was-successful">Download was Successful<a class="headerlink" href="#download-was-successful" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If there are no errors:</p>
+<p>Once you confirm there were no errors, the script continues as shown in the graphic below:</p>
+<p align="center"><img alt="after confirming no build errors in the download" src="../img/build-select-10.png" width="600" /></p>
 <ul>
 <li>Make sure your phone is unlocked and plugged into the computer</li>
-<li>Type 1 in the terminal window and return to Continue as shown in this graphic.</li>
-</ul>
-<p align="center"><img alt="after confirming no build errors in the download" src="../img/build-select-10.png" width="750" /></p>
-<p>Now the script tells you what will happen next and pauses so you can read the message. When you are ready to continue, hit return.</p>
-<p>The final actions of the script are to open two browser windows and then <abbr title="program used to build an app">Xcode</abbr>:</p>
-<ul>
-<li>Opens a page with abbreviated build instructions from the loopandlearn site in your browser<ul>
-<li>If that webpage is not available, it is a convenience for experienced builders and not required</li>
-</ul>
-</li>
-<li>Opens LoopDocs (at the Prepare to Build section) in your browser</li>
-<li>Opens <abbr title="program used to build an app">Xcode</abbr> so you can prepare to build</li>
+<li>Hit return when ready to continue</li>
 </ul>
 <p>The final script message informs you that you can close the terminal window.</p>
 <ul>
@@ -2743,30 +2733,29 @@
 <p><strong><abbr title="program used to build an app">Xcode</abbr> will ALWAYS tell you eventually that the build either succeeded or failed via an ephemeral (self-disappearing) pop-up message on the computer display. If you miss the message, you can look at the top of the <abbr title="program used to build an app">Xcode</abbr> window to see a "Running Loop..." (success) or "Unlock Phone to Continue" or "Build Failed" (failure) message where the step progress was previously counting down.</strong></p>
 <h4 id="codesign-keychain-access">Codesign / Keychain Access<a class="headerlink" href="#codesign-keychain-access" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition abstract">
-<p class="admonition-title">First Time Builder or First Time on this Computer</p>
-<p>A codesign/keychain access prompt will appear part-way through your first build on a computer.</p>
-<p><strong>FYI:</strong> <em>codesign is for code sign - nothing to do with design.</em></p>
-<p>Enter the same password you use to log in to the mac, select "Always Allow" and then do it again next time you are asked - once for each target you just signed above.</p>
+<p class="admonition-title">First Time Using Developer ID on Computer</p>
+<p>During your first build with a given Developer ID on your computer, you will see a codesign/keychain access prompt, as shown in the graphic below. Enter the same password you use to log in to the mac, select "Always Allow" and then do it again each time you are asked.</p>
 <p align="center"><img alt="img/keychain-prompt.png" src="../img/keychain-prompt.png" width="350" /></p>
-<p>It is normal for this prompt to come up four times in a row even after you enter the correct password. Some people think the prompt must be broken because it keeps reappearing so press deny or cancel. <strong>Don't press deny.</strong> Keep entering your computer password and pressing the "Always Allow" button as many times as it takes (once for each target in <abbr title="program used to build an app">Xcode</abbr>). After four times of successful password entry, the build will continue.</p>
+<p>It is normal for this prompt to come up repeatedly even after you enter the correct password (once for each target Loop needs to sign).</p>
+<p>In frustration, people think the prompt must be broken because it keeps reappearing and press deny or cancel. <strong>Don't press deny.</strong> Keep entering your computer password and pressing the "Always Allow" button as many times as it takes. The build will then continue.</p>
+<p><strong>FYI:</strong> <em>codesign is for code sign - nothing to do with design.</em></p>
 </div>
 <h3 id="build-finished">Build Finished<a class="headerlink" href="#build-finished" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">First Time Building on a New Device?</p>
-<p>The first time you install an app on your iPhone using your developer account, you may get a warning like the one shown below. Don't worry.</p>
+<p>If this is the first time you have installed an app on your iPhone using a free account, you will see warnings in both <abbr title="program used to build an app">Xcode</abbr> and on your phone after a successful build and install on your phone.</p>
+<p>Don't worry, dismiss the messages and do this extra step on the phone. These instructions are valid for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15:</p>
 <ul>
-<li>You need to do one extra step on the phone before the Loop app can open</li>
-<li>Follow the directions in your warning (graphic is a little old)</li>
-<li>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15:<ul>
-<li>Go to the phone Settings</li>
-<li>Scroll to find the Developer icon and select it (or use search feature)</li>
-<li>Enable trust for your Developer Account</li>
+<li>Open Phone Settings</li>
+<li>Select General</li>
+<li>Select VPN &amp; Device Management</li>
+<li>Under the Developer App section, tap on icon</li>
+<li>Tap on Trust</li>
+<li>You should now be able to open the app</li>
 </ul>
-</li>
-<li>If you are missing the Device Management/Profiles option in your iPhone settings, head over to <a href="../build_errors/#device-management-could-not-launch-loop">this Build Error section</a> to find the solution.</li>
-</ul>
+<p><img alt="messages shown in Xcode and on the phone for untrusted developer" src="../img/trust_device.svg" width="400" /></p>
+<p><img alt="untrusted developer on phone" src="../img/trust_device_2.svg" width="200" /></p>
 </div>
-<p align="center"><img alt="img/trust_device.jpg" src="../img/trust_device.jpg" width="750" /></p>
 <h3 id="build-succeeded">Build Succeeded<a class="headerlink" href="#build-succeeded" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition success">
 <p class="admonition-title">Congratulations!</p>
