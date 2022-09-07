@@ -74,9 +74,9 @@ Next you will see an introduction to the Build-Select script.  Please read this.
 ![choose to build Loop](img/build-select-05.png){width="750"}
 {align="center"}
 
-Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop Master (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.
+Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.
 
-![choose which Loop to build](img/build-select-06.png){width="750"}
+![choose which Loop to build](img/build-select-06.png){width="600"}
 {align="center"}
 
 ### XCode Errors with Build-Select
@@ -116,22 +116,13 @@ If an error appears in your terminal window, read the error and tap any key othe
 
 ### Download was Successful
 
-If there are no errors:
+Once you confirm there were no errors, the script continues as shown in the graphic below:
 
-* Make sure your phone is unlocked and plugged into the computer
-* Type 1 in the terminal window and return to Continue as shown in this graphic.
-
-![after confirming no build errors in the download](img/build-select-10.png){width="750"}
+![after confirming no build errors in the download](img/build-select-10.png){width="600"}
 {align="center"}
 
-Now the script tells you what will happen next and pauses so you can read the message. When you are ready to continue, hit return.
-
-The final actions of the script are to open two browser windows and then Xcode:
-
-* Opens a page with abbreviated build instructions from the loopandlearn site in your browser
-    * If that webpage is not available, it is a convenience for experienced builders and not required
-* Opens LoopDocs (at the Prepare to Build section) in your browser
-* Opens Xcode so you can prepare to build
+* Make sure your phone is unlocked and plugged into the computer
+* Hit return when ready to continue
 
 The final script message informs you that you can close the terminal window.
 
