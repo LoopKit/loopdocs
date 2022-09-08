@@ -2492,6 +2492,11 @@
 <p>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below:</p>
 <ul>
 <li>Frame 1:  <abbr title="program used to build an app">Xcode</abbr> screen opened by the script after a fresh download<ul>
+<li><strong>Wait for indexing to begin</strong><ul>
+<li>If you see messages about fetching symbols or resolving packages, please wait until you see the Indexing message as shown in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below just to the left of the dashed-blue rectangle</li>
+<li>Indexing makes finding text with <abbr title="program used to build an app">Xcode</abbr> faster; it does not need to complete before building</li>
+</ul>
+</li>
 <li>The red rectangle indicates where you will change Loop to Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
 <li>The red x in the dashed-blue rectangle region indicates you need to fix a problem before building</li>
 </ul>
@@ -2513,7 +2518,7 @@
 <li>Click on the folder icon (indicated by red square)</li>
 <li>Hold down the Control-Key and click the <code>Package Dependency</code> row to display the dropdown menu (shown in the inset)</li>
 <li>Select Resolve Package Versions from the dropdown menu</li>
-<li>Once that completes, the red x should resolve and you can build as soon as the Indexing message appears</li>
+<li>Once the package resolution completes, the red x should vanish and you can build as soon as the Indexing message appears</li>
 </ol>
 <p><img alt="package dependency solution" src="../img/xcode-package-dependency-solution.svg" width="600" /></p>
 <h2 id="start-build">Start Build<a class="headerlink" href="#start-build" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2521,7 +2526,7 @@
 <ul>
 <li>Frame 1: Package Dependency resolved (no red x)<ul>
 <li><abbr title="program used to build an app">Xcode</abbr> is Indexing as seen in dashed-green rectangle region<ul>
-<li>Indexing makes searching faster; it does not need to complete before building</li>
+<li>Indexing makes finding text with <abbr title="program used to build an app">Xcode</abbr> faster; it does not need to complete before building</li>
 </ul>
 </li>
 <li>Click the "Play" button highlighted by red rectangle to start the build</li>

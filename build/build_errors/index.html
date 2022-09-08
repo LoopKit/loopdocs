@@ -725,6 +725,19 @@
     Fix 95% of errors
   </a>
   
+    <nav class="md-nav" aria-label="Fix 95% of errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unpair-and-reboot" class="md-nav__link">
+    Unpair and Reboot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2266,6 +2279,19 @@
     Fix 95% of errors
   </a>
   
+    <nav class="md-nav" aria-label="Fix 95% of errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unpair-and-reboot" class="md-nav__link">
+    Unpair and Reboot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2473,7 +2499,7 @@
 <p>Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:</p>
 <ol>
 <li>
-<p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> beta version or an <abbr title="program used to build an app">Xcode</abbr> beta version, your Loop will not build. If you have <abbr title="program used to build an app">Xcode</abbr> beta, uninstall it and get regular <abbr title="program used to build an app">Xcode</abbr>. If you have <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> beta is a pain...so don't install it in the first place.</p>
+<p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> beta version or an <abbr title="program used to build an app">Xcode</abbr> beta version, Loop might not build. Deleting <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> beta from a phone is a pain...so don't install it unless you know what you are doing.</p>
 </li>
 <li>
 <p><strong>Did you check that you have the minumum <abbr title="program used to build an app">Xcode</abbr> version for your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>?</strong> This is critical. If you are updating your Loop app, please review the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> driven requirements for minimum version of <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="operating system for Mac computer">macOS</abbr> and <abbr title="program used to build an app">Xcode</abbr></a>.</p>
@@ -2482,10 +2508,11 @@
 <p><strong>Did you check your Apple developer account for new license agreement?</strong> Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. <a href="https://developer.apple.com/account">Login to your Apple developer account</a> to check if there's a new license agreement.</p>
 </li>
 <li>
-<p><strong>Did you reboot, i.e., restart, your computer after updating <abbr title="program used to build an app">Xcode</abbr>?</strong> You must reboot following <abbr title="program used to build an app">Xcode</abbr> installation or update and you must make sure your command line tools match the version of <abbr title="program used to build an app">Xcode</abbr> you just installed. <a href="../step9/#command-line-tools"><abbr title="program used to build an app">Xcode</abbr> Command Line Tools</a></p>
+<p><strong>Did you reboot, i.e., restart, your computer after updating <abbr title="program used to build an app">Xcode</abbr>?</strong> You should reboot following <abbr title="program used to build an app">Xcode</abbr> installation or update and you must make sure your command line tools match the version of <abbr title="program used to build an app">Xcode</abbr> you just installed. <a href="../step9/#command-line-tools"><abbr title="program used to build an app">Xcode</abbr> Command Line Tools</a></p>
 </li>
 <li>
-<p><strong>Did you get a fresh download of Loop code?</strong> If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> versions. Check also, that you are actually using the new download in <abbr title="program used to build an app">Xcode</abbr>.  When you use the build-select script, it automatically opens <abbr title="program used to build an app">Xcode</abbr> using the new download.</p>
+<p><strong>Did you get a fresh download of Loop code?</strong> If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> versions. Check also, that you are actually using the new download in <abbr title="program used to build an app">Xcode</abbr>.  When you use the build-select script, it automatically opens <abbr title="program used to build an app">Xcode</abbr> using the new download. </p>
+<p>If you want to build using a recent download, this section tells you how to <a href="../code_customization/#find-my-dowloaded-loop-code">Find My Dowloaded Loop Code</a>.</p>
 </li>
 <li>
 <p><strong>Are you are using a free developer account?</strong> Make sure you finished the <a href="../step14/#free-account">removal of Siri and Push Notification capabilities</a>.</p>
@@ -2499,9 +2526,26 @@
 <ol>
 <li>Open your project in <abbr title="program used to build an app">Xcode</abbr> as normal. Then go to the <abbr title="program used to build an app">Xcode</abbr> menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.</li>
 <li>On the far right, next to the name Full Path is the folder name that <abbr title="program used to build an app">Xcode</abbr> will be using to build. Make sure it is the new code you just downloaded and not an older folder.</li>
-<li>If you are updating Loop and did not do <a href="../updating/#step-4a-delete-old-provisioning-profiles">Step 4a</a>, do it now</li>
+<li>If you are updating Loop and did not <a href="../updating/#step-4a-delete-old-provisioning-profiles">Delete Old Provisioning Profiles</a>, do it now</li>
 <li>Return to <abbr title="program used to build an app">Xcode</abbr> and try building your app again.</li>
+<li>Still failing for phone or watch or both? Try the <a href="#unpair-and-reboot">Unpair and Reboot</a> procedure.</li>
 </ol>
+<h3 id="unpair-and-reboot">Unpair and Reboot<a class="headerlink" href="#unpair-and-reboot" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This is reported to fix a variety of watch building errors and <code>cannot prepare phone for development</code> errors:</p>
+<ol>
+<li>Open <abbr title="program used to build an app">Xcode</abbr> (if not already open)</li>
+<li>Plug phone into computer and make sure it is unlocked</li>
+<li>Using the <abbr title="program used to build an app">Xcode</abbr> menu, select<ul>
+<li>Windows</li>
+<li>Devices and Simulators</li>
+<li>On left side, Right-Click (or Control-Click) on your phone</li>
+<li>Choose Unpair Device</li>
+</ul>
+</li>
+</ol>
+<p>It may not be necessary, but the suggestion is to reboot phone, (watch) and Mac - in other words, you can try to build without rebooting, but if that fails, repeat the steps and reboot before trying again.</p>
+<p align="center"><img alt="unpair device from xcode" src="img/xcode-unpair-device.png" width="400" /></p>
+<p>The next time you plug this phone into your computer, you will be asked to trust the computer on the phone (and watch).  Note this is unpairing the device from <abbr title="program used to build an app">Xcode</abbr> and your computer, not the same as, and much faster than, unpairing your watch from your phone.</p>
 <p>If the build fails again, look through the list below and see if you can match your error message with one of the error messages listed later in this page. If you really can't find your solution, then post for help. But help us help you.</p>
 <ul>
 <li>Ignore yellow warning messages - those are not errors - do <strong>not</strong> try to fix them</li>
@@ -2780,6 +2824,7 @@
 <p><strong>Solution:</strong> This error usually appears because you have not updated the <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> prior to building Loop, or you didn't have your Apple watch paired at the time of building Loop.  </p>
 <p>Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click <code>Install</code> for the Loop app listed at the very bottom under "available apps".</p>
 <h3 id="apple-watch-loop-app-not-installing">Apple Watch: Loop App Not Installing<a class="headerlink" href="#apple-watch-loop-app-not-installing" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Before trying this solution, see if the <a href="#unpair-and-reboot">Unpair and Reboot</a> procedure works.</p>
 <p><strong>Error:</strong> The Loop app appears on the list of apps available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL".</p>
 <p><strong>Solution:</strong>  Plug your iPhone into the computer and start <abbr title="program used to build an app">Xcode</abbr>.  On your watch, look for a prompt that says "Trust this computer".  Scroll down on the watch face and select the "Trust" button. In <abbr title="program used to build an app">Xcode</abbr>, go to the top menu bar and select "Clean Build Folder" from the Product menu option, and then rebuild your Loop app.</p>
 <p>If the watch app still fails to install properly, the next section should work.</p>
