@@ -166,9 +166,12 @@ The final action of the script is to
 
 If you want to [Customize Loop](../build/code_customization.md), do it before you proceed with the build.
 
+
 Refer to the GIF below:
 
 * Frame 1:  Xcode screen opened by the script after a fresh download
+    * **Wait for indexing to begin**
+        * If you see messages about fetching symbols or resolving packages, please wait until you see the Indexing message as shown in the GIF below just to the left of the dashed-blue rectangle
     * The red rectangle indicates where you will change Loop to Loop (Workspace)
     * The red x in the dashed-blue rectangle region indicates you need to fix a problem before building
 * Frame 2: Inset shows the action needed to select Loop (Workspace)
