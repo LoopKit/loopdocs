@@ -172,6 +172,7 @@ Refer to the GIF below:
 * Frame 1:  Xcode screen opened by the script after a fresh download
     * **Wait for indexing to begin**
         * If you see messages about fetching symbols or resolving packages, please wait until you see the Indexing message as shown in the GIF below just to the left of the dashed-blue rectangle
+        * Indexing makes finding text with Xcode faster; it does not need to complete before building
     * The red rectangle indicates where you will change Loop to Loop (Workspace)
     * The red x in the dashed-blue rectangle region indicates you need to fix a problem before building
 * Frame 2: Inset shows the action needed to select Loop (Workspace)
@@ -197,7 +198,7 @@ Otherwise, tap on the red x in the dashed-blue rectange region:
 1. Click on the folder icon (indicated by red square)
 1. Hold down the Control-Key and click the `Package Dependency` row to display the dropdown menu (shown in the inset)
 1. Select Resolve Package Versions from the dropdown menu
-1. Once that completes, the red x should resolve and you can build as soon as the Indexing message appears
+1. Once the package resolution completes, the red x should vanish and you can build as soon as the Indexing message appears
 
 ![package dependency solution](img/xcode-package-dependency-solution.svg){width="600"}
 
@@ -207,7 +208,7 @@ Refer to the GIF below:
 
 * Frame 1: Package Dependency resolved (no red x)
     * Xcode is Indexing as seen in dashed-green rectangle region
-        * Indexing makes searching faster; it does not need to complete before building
+        * Indexing makes finding text with Xcode faster; it does not need to complete before building
     * Click the "Play" button highlighted by red rectangle to start the build
 * Frame 2: Build has started
     * Xcode is Building as seen in dashed-green rectangle region
