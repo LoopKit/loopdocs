@@ -11,19 +11,19 @@ There are two types of build errors that happen: they are yellow warnings and re
 !!! info "New Loop Builders"
     This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4, 6 and 7 in the list below. Then, skim the page until your reach [Find Your Error Message](build_errors.md#find-your-error-messages). Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
 
-
-
 Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:
 
-1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, your Loop will not build. If you have Xcode beta, uninstall it and get regular Xcode. If you have iOS beta on your iPhone, you will need to restore your iPhone entirely. You can restore to either (1) the last non-beta backup version you saved or (2) restore as a new iPhone (default settings). Yes, deleting iOS beta is a pain...so don't install it in the first place.
+1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, Loop might not build. Deleting iOS beta from a phone is a pain...so don't install it unless you know what you are doing.
 
 2. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
 3. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there's a new license agreement.
 
-4. **Did you reboot, i.e., restart, your computer after updating Xcode?** You must reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. [Xcode Command Line Tools](step9.md#command-line-tools)
+4. **Did you reboot, i.e., restart, your computer after updating Xcode?** You should reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. [Xcode Command Line Tools](step9.md#command-line-tools)
 
-5. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the build-select script, it automatically opens Xcode using the new download.
+5. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the build-select script, it automatically opens Xcode using the new download. 
+
+    If you want to build using a recent download, this section tells you how to [Find My Dowloaded Loop Code](code_customization.md#find-my-dowloaded-loop-code).
 
 6. **Are you are using a free developer account?** Make sure you finished the [removal of Siri and Push Notification capabilities](../build/step14.md#free-account).
 
@@ -35,8 +35,28 @@ If you have checked all those steps above and think you have a true build error,
 
 1. Open your project in Xcode as normal. Then go to the Xcode menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.
 1. On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.
-1. If you are updating Loop and did not do [Step 4a](updating.md#step-4a-delete-old-provisioning-profiles), do it now
+1. If you are updating Loop and did not [Delete Old Provisioning Profiles](updating.md#step-4a-delete-old-provisioning-profiles), do it now
 1. Return to Xcode and try building your app again.
+1. Still failing for phone or watch or both? Try the [Unpair and Reboot](#unpair-and-reboot) procedure.
+
+### Unpair and Reboot
+
+This is reported to fix a variety of watch building errors and `cannot prepare phone for development` errors:
+
+1. Open Xcode (if not already open)
+1. Plug phone into computer and make sure it is unlocked
+1. Using the Xcode menu, select
+    * Windows
+    * Devices and Simulators
+    * On left side, Right-Click (or Control-Click) on your phone
+    * Choose Unpair Device
+
+It may not be necessary, but the suggestion is to reboot phone, (watch) and Mac - in other words, you can try to build without rebooting, but if that fails, repeat the steps and reboot before trying again.
+
+![unpair device from xcode](img/xcode-unpair-device.png){width="400"}
+{align=center}
+
+The next time you plug this phone into your computer, you will be asked to trust the computer on the phone (and watch).  Note this is unpairing the device from Xcode and your computer, not the same as, and much faster than, unpairing your watch from your phone.
 
 If the build fails again, look through the list below and see if you can match your error message with one of the error messages listed later in this page. If you really can't find your solution, then post for help. But help us help you.
 
@@ -432,7 +452,6 @@ You can verify the iOS development certificates are working by clicking on "Mana
 
 ## Apple Watch Issues
 
-
 ### Apple Watch: Loop App Not Appearing
 
 **Error:** Apple watch app is not appearing.
@@ -443,6 +462,8 @@ Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom l
 
 
 ### Apple Watch: Loop App Not Installing
+
+Before trying this solution, see if the [Unpair and Reboot](#unpair-and-reboot) procedure works.
 
 **Error:** The Loop app appears on the list of apps available to install on the watch, but when you press "install", and it goes through the animation of filling in the circle while it's installing, but then at the end it just toggles back to saying "INSTALL".
 
