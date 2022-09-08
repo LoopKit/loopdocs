@@ -13,7 +13,7 @@ There are two types of build errors that happen: they are yellow warnings and re
 
 Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:
 
-1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, Loop might not build. Deleting iOS beta from a phone is a pain...so don't install it unless you know what you are doing.
+1. **Did you forget to select Loop(WorkSpace)?** The first time you build after downloading new code, you must manually select Loop (Workspace) instead of Loop in Xcode.
 
 2. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
@@ -27,7 +27,7 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 6. **Are you are using a free developer account?** Make sure you finished the [removal of Siri and Push Notification capabilities](../build/step14.md#free-account).
 
-1. **Did you forget to select Loop(WorkSpace)?** The first time you build after downloading new code, you must manually select Loop (Workspace) instead of Loop in Xcode.
+1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, Loop might not build. Deleting iOS beta from a phone is a pain...so don't install it unless you know what you are doing.
 
 ## Fix 95% of errors
 
