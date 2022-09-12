@@ -32,6 +32,7 @@ The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **require
 
 The [Loop and Learn Version Updates](https://www.loopandlearn.org/version-updates) page posts an update every time a new iOS is released and tested. That page is typically updated faster than LoopDocs and reports changes, if any, to the minimum Xcode or macOS.
 
+* ** iOS 16 or newer**, the minimum macOS is Monterey (12.5)
 * ** iOS 15.4 or newer**, the minimum macOS is Monterey (12.0)
 * ** iOS 15 - 15.3.1**, the minimum macOS is Big Sur (11.3)
 * ** iOS 14.5**, the minimum macOS is Big Sur (11.0)
