@@ -1,7 +1,7 @@
 # Compatible Computer
 
 !!! info "Time Estimate"
-    - 5 minutes, if you have a Mac with Monterey macOS (12.x)
+    - 5 minutes, if you have a Mac with Monterey macOS (12.5)
     - 30-60 minutes, if you need to install macOS updates
 
     Hint: OS stands for Operating System
@@ -24,7 +24,7 @@
         * You do NOT need access to an Apple computer to update your phone iOS, troubleshoot or change Loop settings
 
 
-If you have access to a computer with MacOS 12.0 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
+If you have access to a computer with MacOS 12.5 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
 
 ## Compatible Versions
 
@@ -32,6 +32,7 @@ The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **require
 
 The [Loop and Learn Version Updates](https://www.loopandlearn.org/version-updates) page posts an update every time a new iOS is released and tested. That page is typically updated faster than LoopDocs and reports changes, if any, to the minimum Xcode or macOS.
 
+* ** iOS 16 or newer**, the minimum macOS is Monterey (12.5)
 * ** iOS 15.4 or newer**, the minimum macOS is Monterey (12.0)
 * ** iOS 15 - 15.3.1**, the minimum macOS is Big Sur (11.3)
 * ** iOS 14.5**, the minimum macOS is Big Sur (11.0)

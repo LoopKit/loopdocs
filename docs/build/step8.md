@@ -73,8 +73,10 @@ The list below is the **minimum** versions you'll need based on your iOS. The hi
 
 **Newer** versions are always OK and should be used if your computer will accept the upgrade.
 
-* For iOS 15.4 and higher, minimum [macOS](step1.md#check-your-macos-version) is 12.0
-    * For iOS 15.5 or greater, minimum Xcode version is 13.4.x
+* For iOS 16 or greater, minimum [macOS](step1.md#check-your-macos-version) is 12.5
+    * Minimum Xcode version is 14
+* For iOS 15.4 to 15.7, minimum [macOS](step1.md#check-your-macos-version) is 12.0
+    * For iOS 15.5 to 15.7, minimum Xcode version is 13.4.x
     * For iOS 15.4.x, minimum Xcode version is 13.3
 * For iOS 15.0 to 15.2.x, minimum [macOS](step1.md#check-your-macos-version) is 11.3
     * For iOS 15.2.x, minimum Xcode version is 13.2

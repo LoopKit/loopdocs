@@ -25,19 +25,24 @@ You need a minimum version of the mobile operating software, called the phone's 
 
 ### Compatible Devices
 
-These devices are compatible with iOS 14 and iOS 15.
+These devices are compatible with iOS 14 through iOS 16.
 
+- iPhone 14, all variants
 - iPhone 13, all variants
 - iPhone 12, all variants
 - iPhone 11, all variants
 - iPhone X, all variants
 - iPhone 8, all variants
+- iPhone SE (2nd generation or later model; 2020 first release)
+
+These devices are compatible with Loop 3, but cannot be upgraded to iOS 16. Loop 3 is the soon-to-be released version of Loop. This version of Loop requires iOS 14.
+
 - iPhone 7, all variants
 - iPhone 6s, all variants - but note the "s"
-- iPhone SE (2016 or later model)
+- iPhone SE (1st generation; 2016 first release)
 - iPod Touch, 7th generation
 
-### Devices That Will Soon Be Incompatible
+### Devices Incompatible with Loop 3
 
 These devices are compatible with Loop 2.2.x but will not be compatible when Loop 3 is released.
 
@@ -62,7 +67,7 @@ Do not use any of the beta iOS versions. (Don't worry...if you don't know what t
 
 Make sure the battery on your phone is solid. Your phone will become a critical health device - you want it to keep working.
 
-With newer iOS (14 and 15), Loop continues working even in [Low Power Mode](https://support.apple.com/en-us/HT205234) if you need to preserve battery. 
+With newer iOS (14 and 15), some people have reported Loop continues working even in [Low Power Mode](https://support.apple.com/en-us/HT205234) if you need to preserve battery; others, have reported they still get red loops.
 
 Older iOS (and associated older phones) were reported to cause Loop to stop updating when the phone was locked. If you are running an older version of iOS (on an older device) with Loop 2.2.x, you may need to avoid Low Power Mode.
 

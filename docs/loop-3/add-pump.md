@@ -10,7 +10,7 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 {align="center"}
 
 !!! question "Switching Pumps?"
-    To change the pump connected to Loop go to [Change Pump](#change-pump).
+    To change the pump connected to Loop go to [Change Pump Type](#change-pump-type).
 
 Loopers can choose from 3 pumps and a simulator:
 
@@ -28,7 +28,7 @@ Loopers can choose from 3 pumps and a simulator:
 
 ### Summary of Steps to Add a Pump
 
-Here is an overview of the different steps for adding each pump.  Before changing pumps, you need to delete the old pump first.  See [Change Pump](#change-pump) section below.
+Here is an overview of the different steps for adding each pump.  Before changing pumps, you need to delete the old pump first.  See [Change Pump Type](#change-pump-type) section below.
 
 #### Steps for Omnipod
 
@@ -212,23 +212,30 @@ Now that your pump is paired with Loop, you should select the type of battery yo
 The Medtronic status and commands available are shown in the [Pump Setting](medtronic.md) page.
 
 
-## Change Pump
+## Change Pump Type
 
-Before changing from one pump to another, you must delete the old pump.
-
-* This does not include changing a pod, so long as the pods are of the same type
-
-* Before switching between different pumps that require a RileyLink Compatible Device (e.g., Omnipod and Medtronic)
-    - Disconnect from the Device before deleting the pump
-    - Otherwise, you will not see that Device when you try to connect the new pump
-        * If that happens, quit the Loop App and restart it to see the Device
-
-* Before switching between Omnipod and Omnipod DASH, you must deactivate your current pod.
-
-    * After the pod is deactivated, a new row will show at the bottom of the pod screen
-    * Tap on `Switch to other insulin delivery device` and follow the directions to complete the task
+Before changing from one pump type to another pump type, you must delete the old pump type.
 
 * If you are using Medtronic, scroll to the bottom of the pump screen and select `Delete Pump`
+
+* Before switching between Omnipod and Omnipod DASH or any kind of Omnipod to Medtronic, you must deactivate your current pod
+    * This does not include changing a pod, so long as the pods are of the same type
+    * The `Switch to other insulin delivery device` button will not be available with an active pod
+    * Follow along in the GIF below - it cycles though these steps.
+
+        * Go to the Omnipod screen and tap on Replace Pod
+        * Deactivate the pod
+        * When deactivation completes, tap on Cancel in upper right
+            * If you hit continue instead, tap cancel when Pair Pod screen appears
+        * On the main Loop screen, tap on the ! No Pod icon
+        * Scroll to the bottom of the screen
+        * Tap on `Switch to other insulin delivery device` and follow the directions to complete the task
+
+    * Now the new pump type can be selected from settings or tapping on the add pump icon on the HUD
+
+    ![how to switch from any omnipod pump type to a different pump type](img/pod-type-change.gif){width="350"}
+    {align="center"}
+
 
 The [Head-Up-Display](#pump-choices) at the top of the Loop main screen will now show the add pump icon.
 
