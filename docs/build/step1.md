@@ -1,7 +1,7 @@
 # Compatible Computer
 
 !!! info "Time Estimate"
-    - 5 minutes, if you have a Mac with Monterey macOS (12.x)
+    - 5 minutes, if you have a Mac with Monterey macOS (12.5)
     - 30-60 minutes, if you need to install macOS updates
 
     Hint: OS stands for Operating System
@@ -24,7 +24,7 @@
         * You do NOT need access to an Apple computer to update your phone iOS, troubleshoot or change Loop settings
 
 
-If you have access to a computer with MacOS 12.0 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
+If you have access to a computer with MacOS 12.5 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
 
 ## Compatible Versions
 
