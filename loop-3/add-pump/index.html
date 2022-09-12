@@ -1617,8 +1617,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#change-pump" class="md-nav__link">
-    Change Pump
+  <a href="#change-pump-type" class="md-nav__link">
+    Change Pump Type
   </a>
   
 </li>
@@ -2284,8 +2284,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#change-pump" class="md-nav__link">
-    Change Pump
+  <a href="#change-pump-type" class="md-nav__link">
+    Change Pump Type
   </a>
   
 </li>
@@ -2310,7 +2310,7 @@
 <p align="center"><img alt="Loop HUD when both CGM and Pump have not been added" src="../img/loop-3-hud-add-cgm-add-pump.svg" width="350" /></p>
 <div class="admonition question">
 <p class="admonition-title">Switching Pumps?</p>
-<p>To change the pump connected to Loop go to <a href="#change-pump">Change Pump</a>.</p>
+<p>To change the pump connected to Loop go to <a href="#change-pump-type">Change Pump Type</a>.</p>
 </div>
 <p>Loopers can choose from 3 pumps and a simulator:</p>
 <ul>
@@ -2329,7 +2329,7 @@
 </ul>
 </div>
 <h3 id="summary-of-steps-to-add-a-pump">Summary of Steps to Add a Pump<a class="headerlink" href="#summary-of-steps-to-add-a-pump" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Here is an overview of the different steps for adding each pump.  Before changing pumps, you need to delete the old pump first.  See <a href="#change-pump">Change Pump</a> section below.</p>
+<p>Here is an overview of the different steps for adding each pump.  Before changing pumps, you need to delete the old pump first.  See <a href="#change-pump-type">Change Pump Type</a> section below.</p>
 <h4 id="steps-for-omnipod">Steps for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr><a class="headerlink" href="#steps-for-omnipod" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ol>
 <li><a href="#omnipod-common-1"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Common 1</a> (choose default notifications)</li>
@@ -2498,31 +2498,36 @@
 </li>
 </ol>
 <p>The Medtronic status and commands available are shown in the <a href="../medtronic/">Pump Setting</a> page.</p>
-<h2 id="change-pump">Change Pump<a class="headerlink" href="#change-pump" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Before changing from one pump to another, you must delete the old pump.</p>
+<h2 id="change-pump-type">Change Pump Type<a class="headerlink" href="#change-pump-type" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Before changing from one pump type to another pump type, you must delete the old pump type.</p>
 <ul>
 <li>
-<p>This does not include changing a pod, so long as the pods are of the same type</p>
+<p>If you are using Medtronic, scroll to the bottom of the pump screen and select <code>Delete Pump</code></p>
 </li>
 <li>
-<p>Before switching between different pumps that require a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device (e.g., <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> and Medtronic)</p>
+<p>Before switching between <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH or any kind of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> to Medtronic, you must deactivate your current pod</p>
 <ul>
-<li>Disconnect from the Device before deleting the pump</li>
-<li>Otherwise, you will not see that Device when you try to connect the new pump<ul>
-<li>If that happens, quit the Loop App and restart it to see the Device</li>
+<li>This does not include changing a pod, so long as the pods are of the same type</li>
+<li>The <code>Switch to other insulin delivery device</code> button will not be available with an active pod</li>
+<li>
+<p>Follow along in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below - it cycles though these steps.</p>
+<ul>
+<li>Go to the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> screen and tap on Replace Pod</li>
+<li>Deactivate the pod</li>
+<li>When deactivation completes, tap on Cancel in upper right<ul>
+<li>If you hit continue instead, tap cancel when Pair Pod screen appears</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>
-<p>Before switching between <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH, you must deactivate your current pod.</p>
-<ul>
-<li>After the pod is deactivated, a new row will show at the bottom of the pod screen</li>
+<li>On the main Loop screen, tap on the ! No Pod icon</li>
+<li>Scroll to the bottom of the screen</li>
 <li>Tap on <code>Switch to other insulin delivery device</code> and follow the directions to complete the task</li>
 </ul>
 </li>
 <li>
-<p>If you are using Medtronic, scroll to the bottom of the pump screen and select <code>Delete Pump</code></p>
+<p>Now the new pump type can be selected from settings or tapping on the add pump icon on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr></p>
+</li>
+</ul>
+<p align="center"><img alt="how to switch from any omnipod pump type to a different pump type" src="../img/pod-type-change.gif" width="350" /></p>
 </li>
 </ul>
 <p>The <a href="#pump-choices">Head-Up-Display</a> at the top of the Loop main screen will now show the add pump icon.</p>
