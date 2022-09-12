@@ -33,13 +33,13 @@ These devices are compatible with iOS 14 through iOS 16.
 - iPhone 11, all variants
 - iPhone X, all variants
 - iPhone 8, all variants
-- iPhone SE (2020, i.e., 2nd generation or later model)
+- iPhone SE (2nd generation or later model; 2020 first release)
 
 These devices are compatible with Loop 3, but cannot be upgraded to iOS 16. Loop 3 is the soon-to-be released version of Loop. This version of Loop requires iOS 14.
 
 - iPhone 7, all variants
 - iPhone 6s, all variants - but note the "s"
-- iPhone SE (2016 model)
+- iPhone SE (1st generation; 2016 first release)
 - iPod Touch, 7th generation
 
 ### Devices Incompatible with Loop 3
