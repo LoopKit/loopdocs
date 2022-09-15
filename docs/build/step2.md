@@ -64,16 +64,18 @@ Do not use any of the beta iOS versions. (Don't worry...if you don't know what t
 
 ### Developer Mode
 
-With iOS 16 and watchOS 9, Apple has added a feature. If you want to know more click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+With iOS 16 and watchOS 9, Apple added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
-When you build Loop on your phone running iOS 16, and watch paired to your phone running watchOS 9, you need to have Developer Mode enabled. You can go on and enable it now - or wait until the instructions to build the app on your phone tell you to do it.
+When you build Loop on your phone running iOS 16, and watch paired to your phone running watchOS 9, you need to have Developer Mode enabled. You can go on and enable it now - or wait until you reach the [Build Loop App: Prepare your Phone and Watch](step14.md#prepare-your-phone-and-watch) instructions.
 
 !!! info "Developer Mode with iOS 16, watchOS 9"
-    If you already have Loop on your phone/watch when you update to iOS 16/watchOS 9, you will be asked if you want to enable Developer Mode. Say yes, allow the device to reboot. After the reboot, you get a new message asking if you want to Turn On Developer Mode. Tap on `Turn On`.
+    If you already have Loop on your phone/watch when you update to iOS 16/watchOS 9, you will be told that Loop requires Developer Mode to run.
+    
+    You will not be able to run Loop until you have enabled Developer Mode.
 
-    If you are not prompted if you want to enable Developer Mode, it can be enabled in Phone Settings under Privacy & Security - scroll to the bottom of the screen and enable it.
+    ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
+    {align="center"}
 
-    Loop will not run until you enable Developer Mode, reboot and turn it on. After those steps; Loop continues as before.
 
 ## Battery Health
 
