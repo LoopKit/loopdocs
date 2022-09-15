@@ -714,6 +714,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#developer-mode" class="md-nav__link">
+    Developer Mode
+  </a>
+  
+    <nav class="md-nav" aria-label="Developer Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prepare-your-phone-and-watch" class="md-nav__link">
+    Prepare your Phone and Watch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#download-loop" class="md-nav__link">
     Download Loop
   </a>
@@ -2254,6 +2274,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#developer-mode" class="md-nav__link">
+    Developer Mode
+  </a>
+  
+    <nav class="md-nav" aria-label="Developer Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prepare-your-phone-and-watch" class="md-nav__link">
+    Prepare your Phone and Watch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#download-loop" class="md-nav__link">
     Download Loop
   </a>
@@ -2444,6 +2484,7 @@
 <p class="admonition-title">Summary</p>
 <p>You will:</p>
 <ul>
+<li>Enable Developer Mode for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16, <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9</li>
 <li>Run the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> to download Loop code</li>
 <li>Prepare to build the Loop app</li>
 <li>Press the <abbr title="program used to build an app">Xcode</abbr> Build Button to build Loop</li>
@@ -2457,6 +2498,45 @@
 <h2 id="build-video">Build Video<a class="headerlink" href="#build-video" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The Loop and Learn team prepared this <a href="https://youtu.be/gddhljzsNkM">YouTube video</a> showing how to build Loop Master. We recommend reading the written directions below before (and while) watching the video.</p>
 <p>This video starts with the steps for updating Loop. If this is your first time building, pay attention to what you'll need to do in about a year. The part you'll need to do today (open the terminal to start downloading Loop) is about 3 minutes into the video.</p>
+<h2 id="developer-mode">Developer Mode<a class="headerlink" href="#developer-mode" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you are running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 or <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 8 and earlier, you do not have developer mode and can skip ahead to <a href="#download-loop">Download Loop</a>.</p>
+<p>New with <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9, you must enable Developer Mode to run or build Loop. (This is true for any app created by <abbr title="program used to build an app">Xcode</abbr>.) If you want to know more, click on this <a href="https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device">Apple Link about Developer Mode</a>.</p>
+<p><strong>Loop will not run until you enable Developer Mode for iOS16.</strong></p>
+<h3 id="prepare-your-phone-and-watch">Prepare your Phone and Watch<a class="headerlink" href="#prepare-your-phone-and-watch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ul>
+<li>
+<p>If you are running Loop and update to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9; Loop will no longer run until you enable Developer Mode and you will see a message similar to the next graphic</p>
+<p align="center"><img alt="phone message if trying to run xcode app without developer mode enabled" src="../img/phone-developer-mode-required.jpeg" width="300" /></p>
+</li>
+<li>
+<p>If your device uses <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 (and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9); you must enable Developer Mode to build an app on that device using <abbr title="program used to build an app">Xcode</abbr> or it will show up as an "Unavailable Device" under <abbr title="program used to build an app">Xcode</abbr></p>
+<p align="center"><img alt="xcode message for device without developer mode enabled" src="../img/xcode-developer-mode-not-enabled.svg" width="450" /></p>
+</li>
+</ul>
+<h4 id="developer-mode-on-ios-16-device">Developer Mode on <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 Device<a class="headerlink" href="#developer-mode-on-ios-16-device" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>To determine if Developer Mode is enabled, go into your phone settings, choose Privacy &amp; Security, scroll to the bottom of the screen and tap on the Developer Mode row and examine the Developer Mode slider.</p>
+<ul>
+<li>If Developer Mode is enabled, the slider will be green and no further action is required</li>
+<li>If Developer Mode is not enabled, the slider will be blank<ul>
+<li>Move the slider so it is green</li>
+<li>Reboot the device when asked</li>
+<li>After the reboot, you will be asked if you want to turn on Developer mode</li>
+<li>Tap on the <code>Turn On</code> option</li>
+</ul>
+</li>
+</ul>
+<h4 id="developer-mode-on-watchos-9-device">Developer Mode on <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9 Device<a class="headerlink" href="#developer-mode-on-watchos-9-device" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>To determine if Developer Mode is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to the bottom. Tap on the Developer icon, then tap on Developer Mode. </p>
+<ul>
+<li>If Developer Mode is enabled, the slider will be green and no further action is required</li>
+<li>If Developer Mode is not enabled, the slider will be blank<ul>
+<li>Move the slider so it is green</li>
+<li>Reboot the device when asked</li>
+<li>After the reboot, if you are asked if you want to turn on Developer mode</li>
+<li>Tap on the <code>Turn On</code> option</li>
+</ul>
+</li>
+</ul>
 <h2 id="download-loop">Download Loop<a class="headerlink" href="#download-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This page has the detailed steps to run the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> to download the Loop code, prepare your computer and build Loop Master.</p>
 <h3 id="ensure-a-year">Ensure a Year<a class="headerlink" href="#ensure-a-year" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2761,11 +2841,14 @@
 <p class="admonition-title">Congratulations!</p>
 <p>If the build is successful, you'll see the message "Running Loop..." across the top of the <abbr title="program used to build an app">Xcode</abbr> window. Pick up your phone and look at it.</p>
 <p>You can unplug your phone from the computer now. You will get an <abbr title="program used to build an app">Xcode</abbr> message window that says "Lost connection to the debugger on &lt;your phone name&gt;".  Just click OK.</p>
+</div>
+<h4 id="xcode-14-message"><abbr title="program used to build an app">Xcode</abbr> 14 Message<a class="headerlink" href="#xcode-14-message" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>It is not unusual with <abbr title="program used to build an app">Xcode</abbr> 14, to see a message that Launching Loop is taking longer than expected. So long as the app eventually opens on your phone and you do not get an error message, this is not a concern.  If you click in the box to the left of "Don't ask again" before tapping on Continue, then you will not see this message in the future.</p>
+<p align="center"><img alt="debugger slow to start" src="../img/xcode-launch-slow.png" width="300" /></p>
 <p>Your brand new Loop app will automatically open a screen asking you to allow Loop to send you notifications. The Health app permissions screen will be visible in the background, but you must answer the Notification request first. Click <code>Allow</code> to enable Loop to send you notifications.</p>
 <p>Now the Health permissions screen is active. Click on the <code>Turn All Categories On</code> line and then <strong>immediately turn OFF the permission to read Carbohydrates</strong>. The end result is that Health should have permission to read and write Blood Glucose and Insulin Delivery; permission to write Carbohydrates (<a href="../health/#loop-permissions">NOT read carbs</a>); and permission to read Sleep Data. When the permissions are set correctly, i.e., match the image below, click <code>Allow</code> in the upper right corner.</p>
 <p align="center"><img alt="img/health-start.JPEG" src="../img/health-start.svg" width="450" /></p>
 <p>Next, you will use the <a href="../../operation/overview/">Set up App</a> section of this website to keep proceeding safely.</p>
-</div>
 <div class="admonition question">
 <p class="admonition-title">FAQ: But what about those yellow alerts that remain in <abbr title="program used to build an app">Xcode</abbr>?</p>
 <p>If you see yellow alerts during and after your build is done, those are not an issue. Just ignore the yellow alerts.</p>
