@@ -448,7 +448,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 It is not unusual with Xcode 14, to see a message that Launching Loop is taking longer than expected. So long as the app eventually opens on your phone and you do not get an error message, this is not a concern.  If you click in the box to the left of "Don't ask again" before tapping on Continue, then you will not see this message in the future.
 
-![untrusted developer on phone](img//xcode-launch-slow.png){width="200"}
+![debugger slow to start](img//xcode-launch-slow.png){width="300"}
 {align=center}
 
 
