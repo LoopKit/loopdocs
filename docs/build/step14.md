@@ -9,6 +9,7 @@
 !!! abstract "Summary"
     You will:
 
+    * Enable Developer Mode for iOS 16, watchOS 9
     * Run the Build Select Script to download Loop code
     * Prepare to build the Loop app
     * Press the Xcode Build Button to build Loop
@@ -22,6 +23,50 @@
 The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to build Loop Master. We recommend reading the written directions below before (and while) watching the video.
 
 This video starts with the steps for updating Loop. If this is your first time building, pay attention to what you'll need to do in about a year. The part you'll need to do today (open the terminal to start downloading Loop) is about 3 minutes into the video.
+
+## Developer Mode
+
+If you are running iOS 15 or watchOS 8 and earlier, you do not have developer mode and can skip ahead to [Download Loop](#download-loop).
+
+New with iOS 16 and watchOS 9, you must enable Developer Mode to run or build Loop. (This is true for any app created by Xcode.) If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+
+**Loop will not run until you enable Developer Mode for iOS16.**
+
+### Prepare your Phone and Watch
+
+* If you are running Loop and update to iOS 16 and watchOS 9; Loop will no longer run until you enable Developer Mode and you will see a message similar to the next graphic
+
+    ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
+    {align="center"}
+
+* If your device uses iOS 16 (and watchOS 9); you must enable Developer Mode to build an app on that device using Xcode or it will show up as an "Unavailable Device" under Xcode
+
+    ![xcode message for device without developer mode enabled](img/xcode-developer-mode-not-enabled.svg){width="450"}
+    {align="center"}
+
+
+#### Developer Mode on iOS 16 Device
+
+To determine if Developer Mode is enabled, go into your phone settings, choose Privacy & Security, scroll to the bottom of the screen and tap on the Developer Mode row and examine the Developer Mode slider.
+
+* If Developer Mode is enabled, the slider will be green and no further action is required
+* If Developer Mode is not enabled, the slider will be blank
+    * Move the slider so it is green
+    * Reboot the device when asked
+    * After the reboot, you will be asked if you want to turn on Developer mode
+    * Tap on the `Turn On` option
+
+#### Developer Mode on watchOS 9 Device
+
+To determine if Developer Mode is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to the bottom. Tap on the Developer icon, then tap on Developer Mode. 
+
+* If Developer Mode is enabled, the slider will be green and no further action is required
+* If Developer Mode is not enabled, the slider will be blank
+    * Move the slider so it is green
+    * Reboot the device when asked
+    * After the reboot, if you are asked if you want to turn on Developer mode
+    * Tap on the `Turn On` option
+
 
 ## Download Loop
 
@@ -399,15 +444,23 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
     You can unplug your phone from the computer now. You will get an Xcode message window that says "Lost connection to the debugger on <your phone name\>".  Just click OK.
 
-    Your brand new Loop app will automatically open a screen asking you to allow Loop to send you notifications. The Health app permissions screen will be visible in the background, but you must answer the Notification request first. Click `Allow` to enable Loop to send you notifications.
+#### Xcode 14 Message
 
-    Now the Health permissions screen is active. Click on the `Turn All Categories On` line and then **immediately turn OFF the permission to read Carbohydrates**. The end result is that Health should have permission to read and write Blood Glucose and Insulin Delivery; permission to write Carbohydrates ([NOT read carbs](health.md#loop-permissions)); and permission to read Sleep Data. When the permissions are set correctly, i.e., match the image below, click `Allow` in the upper right corner.
+It is not unusual with Xcode 14, to see a message that Launching Loop is taking longer than expected. So long as the app eventually opens on your phone and you do not get an error message, this is not a concern.  If you click in the box to the left of "Don't ask again" before tapping on Continue, then you will not see this message in the future.
 
-    ![img/health-start.JPEG](img/health-start.svg){width="450"}
-    {align="center"}
+![debugger slow to start](img//xcode-launch-slow.png){width="300"}
+{align=center}
 
 
-    Next, you will use the [Set up App](../operation/overview.md) section of this website to keep proceeding safely.
+Your brand new Loop app will automatically open a screen asking you to allow Loop to send you notifications. The Health app permissions screen will be visible in the background, but you must answer the Notification request first. Click `Allow` to enable Loop to send you notifications.
+
+Now the Health permissions screen is active. Click on the `Turn All Categories On` line and then **immediately turn OFF the permission to read Carbohydrates**. The end result is that Health should have permission to read and write Blood Glucose and Insulin Delivery; permission to write Carbohydrates ([NOT read carbs](health.md#loop-permissions)); and permission to read Sleep Data. When the permissions are set correctly, i.e., match the image below, click `Allow` in the upper right corner.
+
+![img/health-start.JPEG](img/health-start.svg){width="450"}
+{align="center"}
+
+
+Next, you will use the [Set up App](../operation/overview.md) section of this website to keep proceeding safely.
 
 !!! question "FAQ: But what about those yellow alerts that remain in Xcode?"
 
