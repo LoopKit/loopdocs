@@ -114,6 +114,19 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ## Specific Error Messages
 
+### Run Destination is Not Valid; Failed to Prepare the Device
+
+**Error Message:**
+
+_The run destination for name's phone is not valid for running the scheme "Loop (Workspace)"_
+
+![run destination not valid](img/xcode-error-phone-needs-unpair.svg){width="300"}
+{align=center}
+
+**Solution:**
+
+Follow the link for the [Unpair and Reboot](#unpair-and-reboot) procedure.
+
 ### Package.resolved file corrupted or malformed
 
 **Error Message:**
