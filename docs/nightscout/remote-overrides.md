@@ -138,11 +138,6 @@ If you want to make your life SUPER AMAZING, check out using the iPhone's Shortc
 !!! info "Important note"
     Before you click that download below...save some trouble. Download the Shortcuts app if you don't have it yet and choose to run any shortcut from the Gallery. It can be the laundry timer...I don't care, just pick one and run it.  THEN go to download the shortcut of your choice below. The shortcuts that aren't run through the Gallery option are called "untrusted". And you need a slider in your iPhone to trust the "untrusted" shortcuts you would be downloading here. But...in lovely iOS glitch...that slider doesn't appear unless you've run a trusted shortcut first. So, run one now. Then you'll have the slider in iPhone Settings, Shortcuts app to turn "Allow Untrusted Shortcuts" on when you will see a message "This shortcut cannot be opened because your Shortcuts security system settings don't allow untrusted shortcuts."
 
-!!! info "Shortcut added to LoopKit repo"
-    As of September 17, 2022, the shortcuts are stored in the LoopKit/Loop github repository.
-    
-    What does that mean? There is no change to the instructions, but the links have been updated. They are no longer stored in a personal iCloud drive.
-    
 Click these links on your iPhone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser in iPhone):
 
 [Comprehensive Loop Shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut)
