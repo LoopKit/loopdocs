@@ -2231,7 +2231,10 @@
 <p class="admonition-title">Remote Overrides Caveats</p>
 <ul>
 <li>Requires push notification - only available if you built your Loop app using a paid Apple developer account</li>
-<li>Is not included in the T1Pal Nightscout account service (check with <a href="https://t1pal.com">T1Pal</a> to see if it has been added subsequent to approval of the initial submission to the FDA as a secondary display service)</li>
+<li>If you use T1Pal Nightscout account service (<a href="https://t1pal.com">T1Pal</a>)<ul>
+<li>Check with the vendor to see which remote features are supported</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="admonition abstract">
@@ -2247,6 +2250,15 @@
 <p>Update your Nightscout site and add some "config vars" lines in your Heroku settings.</p>
 </li>
 </ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">New Feature in Loop 3</p>
+<p>Remote bolus and remote carb capability is added with Loop 3, currently under test as Loop dev. In order to support this capability, there are new minimum versions:</p>
+<ul>
+<li>Loop 3 (Loop dev) or newer</li>
+<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 14 or newer</li>
+<li>Nightscout version 14.0 or newer</li>
+</ul>
 </div>
 <h2 id="step-1-update-the-loopers-iphone-settings">Step 1: Update the Looper's iPhone settings<a class="headerlink" href="#step-1-update-the-loopers-iphone-settings" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For remote overrides to successfully deploy on a Looper's iPhone, they will need to have two settings on the iPhone enabled.</p>
@@ -2367,16 +2379,16 @@
 <p class="admonition-title">Important note</p>
 <p>Before you click that download below...save some trouble. Download the Shortcuts app if you don't have it yet and choose to run any shortcut from the Gallery. It can be the laundry timer...I don't care, just pick one and run it.  THEN go to download the shortcut of your choice below. The shortcuts that aren't run through the Gallery option are called "untrusted". And you need a slider in your iPhone to trust the "untrusted" shortcuts you would be downloading here. But...in lovely <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> glitch...that slider doesn't appear unless you've run a trusted shortcut first. So, run one now. Then you'll have the slider in iPhone Settings, Shortcuts app to turn "Allow Untrusted Shortcuts" on when you will see a message "This shortcut cannot be opened because your Shortcuts security system settings don't allow untrusted shortcuts."</p>
 </div>
-<p>Click these links on your iphone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser in iPhone):</p>
-<p><a href="https://www.icloud.com/shortcuts/b8c0998a61e54b6eba2325fa78b4cf3a">Comprehensive Loop Shortcut</a>
+<p>Click these links on your iPhone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser in iPhone):</p>
+<p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut">Comprehensive Loop Shortcut</a>
  <em>includes Set Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.</em></p>
 <p>And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:</p>
-<p><a href="https://www.icloud.com/shortcuts/d52d7aefb62b47c1b2e71d3724a3b5ab">Set Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
-<p><a href="https://www.icloud.com/shortcuts/27be8282bce3433b83b4751cd8c43f6e">Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
+<p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop Remote Overrides.shortcut">Set Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
+<p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Cancel Override.shortcut">Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
 <p><strong>A couple notes about these shortcuts:</strong></p>
 <ol>
 <li>You will need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13, but your phone as the shortcut user would need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13.</li>
-<li>You need to open those links in the Safari browser on your iPhone. When you do that click the button to get the shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.</li>
+<li>You need to open those links in the Safari browser on your iPhone. A confirmation will show to initiate the download. After the download finishes, tap the button marked "AA" near your Safari address bar and tap "Downloads" to find and open the downloaded Shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.</li>
 <li>When you enter your Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> in the "<abbr title="website address (Uniform Resource Locator)">URL</abbr>" field of the Loop shortcut setup, make sure you don't include a trailing "/" or the API calls to Heroku will error out.</li>
 <li>When a remote override is set properly, you'll see an "ok" message displayed. If there is an error, you'll see an error message. Most errors will be that you have an <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> wrong (make sure there isn't a space at the end of you <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> that you don't see) or you failed to do the steps to setup NS and update your Loop app as described in steps 1-3 above.</li>
 <li>You can absolutely customize these bits and pieces within the shortcut. Change the text messages, change the links...totally up to you.</li>
