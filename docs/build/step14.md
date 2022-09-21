@@ -500,9 +500,22 @@ If there were no build errors, you're done building your Loop app.
 
 If your phone is still plugged into your computer, you can unplug it. You will get an Xcode message window that says "Lost connection to the debugger on <your phone name\>".  Just click OK.
 
-The next step is the begin the [Set up App](../operation/overview.md) process.
-
 ![alt](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
+
+## Protect that App
+
+!!! danger "Protect Against Deletion"
+    Prevent your Loop app from being deleted accidentally.
+
+    If you, or a child, deletes the app from the home screen, it is gone - you have to rebuild and reenter all settings and start a new pod or add back in your Medtronic pump.
+
+    The steps vary depending on iOS. With iOS 15 and 16, it is under Screen Time, Content & Privacy Restrictions, iTunes & App Store Purchases, Deleting Apps. Choose Don't Allow. If those steps don't help, do an internet search like this, where you use your current phone iOS version number:
+
+    * "turn off app deletion iOS ##"
+    * "iOS ## prevent app deletion"
+
+    Follow the instructions to prevent deletion of what is now a critical medical app.
+
 
 ## Next Steps
 
@@ -510,6 +523,7 @@ The next step is the begin the [Set up App](../operation/overview.md) process.
 
     - It is good practice to add a reminder to your calendar when the app will expire (7 days or 1 year).
     - Be sure to add an alert to that reminder so you have enough time to do all the [Loop Updating](updating.md) steps to build the app again before it expires
+
 
 ## IMPORTANT SAFETY REMINDER
 
