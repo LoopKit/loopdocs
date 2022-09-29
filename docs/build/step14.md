@@ -172,9 +172,10 @@ Once you confirm there were no errors, the script continues as shown in the grap
 * Make sure your phone is unlocked and plugged into the computer
 * Hit return when ready to continue
 
-The final script message informs you that you can close the terminal window.
+The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.
 
 * Wait until you've successfully built the app before closing the terminal
+* The command of the form: `cd /<specific-to-you-and-your-computer>/Downloads/BuildLoop/<download-folder-name>/LoopWorkspace` can be useful for some specific actions; most people will not need this.
 
 ## Prepare to Build
 

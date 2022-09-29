@@ -159,7 +159,7 @@ The expected script responses are shown in the list and graphics below.  Each gr
 - If you do not have Xcode and Xcode command line tools installed - you will get errors.
 - If you have Xcode open, you may get errors.
 
-![paste the script line into terminal](img/build-select-01.png){width="750"}
+![paste the script line into terminal](img/bss-01-initial-message.svg){width="700"}
 {align="center"}
 
 Type 1 and return to acknowledge the warning.
