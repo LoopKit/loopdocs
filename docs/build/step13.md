@@ -41,7 +41,7 @@ Paste the line into a Terminal window. Be sure to click anywhere in the terminal
 
 Read the screen (shown below).  Type 1 and return if you understand the warning and agree.
 
-![paste the script line into terminal - agree to warning](img/build-select-01.png){width="700"}
+![paste the script line into terminal - agree to warning](img/bss-01-initial-message.svg){width="700"}
 {align="center"}
 
 * Please read what is on the screen as you progress.
@@ -138,6 +138,10 @@ User is then shown the [Final Messages](#final-messages)
 
 With the Loop-dev version, there are fewer build steps because the targets should already be signed.
 
+The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.
+
+* Wait until you've successfully built the app before closing the terminal
+* The command of the form: `cd /<specific-to-you-and-your-computer>/Downloads/BuildLoop/<download-folder-name>/LoopWorkspace` can be useful for some specific actions; most people will not need this.
 
 ## Build Loop
 
@@ -260,6 +264,22 @@ You may prefer to use commands to fetch and pull the latest code without making 
     If you decide to update code in the same folder, you should edit the folder name to remove the specific build commit appended by the script. 
     
     This is not required but may avoid confusion.
+
+### Open a Terminal in LoopWorkspace Folder
+
+Refer to the graphic below.  The Downloads folder in Finder is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom. Double clicking on that file opens Xcode; but some people prefer to use command lines in the terminal.
+
+* Open Finder
+* Navigate to Downloads/BuildLoop and look for your download by name and date
+* Open that folder, for example, Downloads/BuildLoop/Loop-220803-1145
+* Find the LoopWorkspace folder icon (dashed-blue rectangle)
+* Hold down the CTRL key and click (or right-click) LoopWorkspace
+* A menu appears - select `New Terminal at Folder` (near the bottom of the list)
+
+This new terminal window is now in the LoopWorkspace folder needed to perform `git` commands needed to update your downloaded copy (clone) when new updates are made to the repository.
+
+![how to use finder to find the correct download and open xcode](img/finding-loopworkspace.svg){width="750"}
+{align="center"}
 
 * Some users like to use [GitKraken](https://support.gitkraken.com/) to assist them (link takes you to a tutorial video).
 * Some are comfortable with the command line git commands described on [here](loopworkspace.md#updating-loop-using-loopworkspace).

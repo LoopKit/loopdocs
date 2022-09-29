@@ -106,7 +106,7 @@ Paste the line of text into Terminal. Be sure to click anywhere in the terminal 
 
 Read the screen (shown below).  Type 1 and return if you understand the warning and agree.
 
-![paste the script line into terminal](img/build-select-01.png){width="750"}
+![paste the script line into terminal](img/bss-01-initial-message.svg){width="700"}
 {align="center"}
 
 * Please read what is on the screen as you progress.
@@ -116,12 +116,12 @@ You must type 1 (as shown in the graphic above) and return to indicate you under
 
 Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and return.
 
-![choose to build Loop](img/build-select-05.png){width="750"}
+![choose to build Loop](img/bss-02-menu-message.svg){width="700"}
 {align="center"}
 
 Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.
 
-![choose which Loop to build](img/build-select-06.png){width="600"}
+![choose which Loop to build](img/bss-03-choose-fork.svg){width="700"}
 {align="center"}
 
 ### XCode Errors with Build-Select
@@ -148,12 +148,14 @@ The next graphic shows terminal messages for the beginning of a successful downl
 ![the beginning of the clone for LoopWorkspace ](img/build-select-07.png){width="750"}
 {align="center"}
 
-The final terminal messages of a successful download are shown in the next graphic.
+When the download completes, the following message is displayed. You will need to scroll up in the terminal window to look through all the messages output to the terminal from the beginning of the download.
 
-![the end of LoopWorkspace download](img/build-select-08.png){width="750"}
+![download complete - search for errors message](img/bss-06-search-for-errors.svg){width="700"}
 {align="center"}
 
-If the word "error" appears in your terminal window:
+If you do not find the word error in your terminal window, continue with [Download was Successful](#download-was-successful).
+
+If you see the word "error" in your terminal window:
 
 * Read the error message
 * Try to figure out the problem
@@ -164,15 +166,16 @@ If the word "error" appears in your terminal window:
 
 Once you confirm there were no errors, the script continues as shown in the graphic below:
 
-![after confirming no build errors in the download](img/build-select-10.png){width="600"}
+![after confirming no build errors in the download](img/bss-12-final-message.svg){width="700"}
 {align="center"}
 
 * Make sure your phone is unlocked and plugged into the computer
 * Hit return when ready to continue
 
-The final script message informs you that you can close the terminal window.
+The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.
 
 * Wait until you've successfully built the app before closing the terminal
+* The command of the form: `cd /<specific-to-you-and-your-computer>/Downloads/BuildLoop/<download-folder-name>/LoopWorkspace` can be useful for some specific actions; most people will not need this.
 
 ## Prepare to Build
 
