@@ -862,6 +862,19 @@
     Update Loop-dev
   </a>
   
+    <nav class="md-nav" aria-label="Update Loop-dev">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-a-terminal-in-loopworkspace-folder" class="md-nav__link">
+    Open a Terminal in LoopWorkspace Folder
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2318,6 +2331,19 @@
     Update Loop-dev
   </a>
   
+    <nav class="md-nav" aria-label="Update Loop-dev">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-a-terminal-in-loopworkspace-folder" class="md-nav__link">
+    Open a Terminal in LoopWorkspace Folder
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2377,7 +2403,7 @@
 </code></pre></div>
 <p>Paste the line into a <abbr title="interface for entering commands to the computer">Terminal</abbr> window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.)</p>
 <p>Read the screen (shown below).  Type 1 and return if you understand the warning and agree.</p>
-<p align="center"><img alt="paste the script line into terminal - agree to warning" src="../img/build-select-01.png" width="700" /></p>
+<p align="center"><img alt="paste the script line into terminal - agree to warning" src="../img/bss-01-initial-message.svg" width="700" /></p>
 <ul>
 <li>Please read what is on the screen as you progress.</li>
 <li>Adjust font size as directed if you have difficulty seeing the directions.</li>
@@ -2462,6 +2488,11 @@
 </li>
 </ul>
 <p>With the Loop-dev version, there are fewer build steps because the targets should already be signed.</p>
+<p>The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.</p>
+<ul>
+<li>Wait until you've successfully built the app before closing the terminal</li>
+<li>The command of the form: <code>cd /&lt;specific-to-you-and-your-computer&gt;/Downloads/BuildLoop/&lt;download-folder-name&gt;/LoopWorkspace</code> can be useful for some specific actions; most people will not need this.</li>
+</ul>
 <h2 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="plug-in-your-phone">Plug in Your Phone<a class="headerlink" href="#plug-in-your-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below. The messages in the terminal instruct you to:</p>
@@ -2576,6 +2607,18 @@
 <p>If you decide to update code in the same folder, you should edit the folder name to remove the specific build commit appended by the script. </p>
 <p>This is not required but may avoid confusion.</p>
 </div>
+<h3 id="open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder<a class="headerlink" href="#open-a-terminal-in-loopworkspace-folder" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom. Double clicking on that file opens <abbr title="program used to build an app">Xcode</abbr>; but some people prefer to use command lines in the terminal.</p>
+<ul>
+<li>Open <abbr title="graphical folder and file display on Mac">Finder</abbr></li>
+<li>Navigate to Downloads/BuildLoop and look for your download by name and date</li>
+<li>Open that folder, for example, Downloads/BuildLoop/Loop-220803-1145</li>
+<li>Find the LoopWorkspace folder icon (dashed-blue rectangle)</li>
+<li>Hold down the CTRL key and click (or right-click) LoopWorkspace</li>
+<li>A menu appears - select <code>New Terminal at Folder</code> (near the bottom of the list)</li>
+</ul>
+<p>This new terminal window is now in the LoopWorkspace folder needed to perform <code>git</code> commands needed to update your downloaded copy (<abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>) when new updates are made to the <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<p align="center"><img alt="how to use finder to find the correct download and open xcode" src="../img/finding-loopworkspace.svg" width="750" /></p>
 <ul>
 <li>Some users like to use <a href="https://support.gitkraken.com/">GitKraken</a> to assist them (link takes you to a tutorial video).</li>
 <li>Some are comfortable with the command line <abbr title="a tool for version control">git</abbr> commands described on <a href="../loopworkspace/#updating-loop-using-loopworkspace">here</a>.</li>

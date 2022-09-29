@@ -2577,16 +2577,16 @@
 </code></pre></div>
 <p>Paste the line of text into <abbr title="interface for entering commands to the computer">Terminal</abbr>. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.)</p>
 <p>Read the screen (shown below).  Type 1 and return if you understand the warning and agree.</p>
-<p align="center"><img alt="paste the script line into terminal" src="../img/build-select-01.png" width="750" /></p>
+<p align="center"><img alt="paste the script line into terminal" src="../img/bss-01-initial-message.svg" width="700" /></p>
 <ul>
 <li>Please read what is on the screen as you progress.</li>
 <li>Adjust font size as directed if you have difficulty seeing the directions.</li>
 </ul>
 <p>You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.</p>
 <p>Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and return.</p>
-<p align="center"><img alt="choose to build Loop" src="../img/build-select-05.png" width="750" /></p>
+<p align="center"><img alt="choose to build Loop" src="../img/bss-02-menu-message.svg" width="700" /></p>
 <p>Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the FreeAPS <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> of Loop.</p>
-<p align="center"><img alt="choose which Loop to build" src="../img/build-select-06.png" width="600" /></p>
+<p align="center"><img alt="choose which Loop to build" src="../img/bss-03-choose-fork.svg" width="700" /></p>
 <h3 id="xcode-errors-with-build-select">XCode Errors with Build-Select<a class="headerlink" href="#xcode-errors-with-build-select" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">WARNINGS</p>
@@ -2606,9 +2606,10 @@
 <p>This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. When you read the words in the terminal, as the script runs, you may see terminology you do not understand - don't worry - you do not need to understand enumeration or submodule or cloning.  You only need to review the display to look for any error messages.</p>
 <p>The next graphic shows terminal messages for the beginning of a successful download.</p>
 <p align="center"><img alt="the beginning of the clone for LoopWorkspace " src="../img/build-select-07.png" width="750" /></p>
-<p>The final terminal messages of a successful download are shown in the next graphic.</p>
-<p align="center"><img alt="the end of LoopWorkspace download" src="../img/build-select-08.png" width="750" /></p>
-<p>If the word "error" appears in your terminal window:</p>
+<p>When the download completes, the following message is displayed. You will need to scroll up in the terminal window to look through all the messages output to the terminal from the beginning of the download.</p>
+<p align="center"><img alt="download complete - search for errors message" src="../img/bss-06-search-for-errors.svg" width="700" /></p>
+<p>If you do not find the word error in your terminal window, continue with <a href="#download-was-successful">Download was Successful</a>.</p>
+<p>If you see the word "error" in your terminal window:</p>
 <ul>
 <li>Read the error message</li>
 <li>Try to figure out the problem</li>
@@ -2617,14 +2618,15 @@
 </ul>
 <h3 id="download-was-successful">Download was Successful<a class="headerlink" href="#download-was-successful" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Once you confirm there were no errors, the script continues as shown in the graphic below:</p>
-<p align="center"><img alt="after confirming no build errors in the download" src="../img/build-select-10.png" width="600" /></p>
+<p align="center"><img alt="after confirming no build errors in the download" src="../img/bss-12-final-message.svg" width="700" /></p>
 <ul>
 <li>Make sure your phone is unlocked and plugged into the computer</li>
 <li>Hit return when ready to continue</li>
 </ul>
-<p>The final script message informs you that you can close the terminal window.</p>
+<p>The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.</p>
 <ul>
 <li>Wait until you've successfully built the app before closing the terminal</li>
+<li>The command of the form: <code>cd /&lt;specific-to-you-and-your-computer&gt;/Downloads/BuildLoop/&lt;download-folder-name&gt;/LoopWorkspace</code> can be useful for some specific actions; most people will not need this.</li>
 </ul>
 <h2 id="prepare-to-build">Prepare to Build<a class="headerlink" href="#prepare-to-build" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><strong>New builders should skip ahead to <a href="#select-the-loop-folder">Select the Loop Folder</a> and follow the detailed steps.</strong></p>
