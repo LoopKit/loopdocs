@@ -571,3 +571,80 @@ Additional customizations may be found on another website, especially for older 
 * Disable Suspend Beeps (only needed for Loop 2.2.x)
 
 Note that the other site has an index that points back to LoopDocs if the customization is found on this page.
+
+## Additional Customizations for Loop dev
+
+The customizations below only work with the Loop dev branch. 
+
+* You should be comfortable typing commands in a terminal
+* You should be comfortable with manipulations (as directed) with Xcode
+* You will need to open a terminal in the LoopWorkspace folder of the code that you previously downloaded
+    * The next section provides instructions on opening the terminal in the correct place
+
+### Open a Terminal in LoopWorkspace Folder
+
+Refer to the graphic below.  The Downloads folder in Finder is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom. Double clicking on that file opens Xcode; but to apply customizations, you need to type commands in the terminal.
+
+* Open Finder
+* Navigate to Downloads/BuildLoop and look for your download by name and date
+* Open that folder, for example, Downloads/BuildLoop/Loop-220803-1145
+* Find the LoopWorkspace folder icon (dashed-blue rectangle)
+* Hold down the CTRL key and click (or right-click) LoopWorkspace
+* A menu appears - select `New Terminal at Folder` (near the bottom of the list)
+
+This new terminal window is now in the LoopWorkspace folder needed to type commands to apply patches.
+
+![how to use finder to find the correct download and open xcode](img/finding-loopworkspace.svg){width="750"}
+{align="center"}
+
+
+### Custom Type One LoopPatches
+
+Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#looppatches). These patches only work with Loop dev branch (downloaded after July 14, 2022). You must install the patches following the directions carefully.
+
+### Add Libre App to Loop Phone
+
+This method only works for Loop dev branch and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone.
+
+There are several options for code that will read the raw Libre values and convert them into glucose readings. You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.
+
+These are the Libre iOS app options.
+
+* xDrip4iOS: [Documentation](https://xdrip4ios.readthedocs.io/en/latest/)
+    * Check to see if your sensor is [compatible](https://xdrip4ios.readthedocs.io/en/latest/#compatible-sensors)
+    * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop (directions are in the documentation)
+    * If you use the TestFlight installation method, you will not be able to use this with Loop (on your phone without needing an internet connection)
+* GlucoseDirect: [README file on github repository](https://github.com/creepymonster/GlucoseDirect#glucose-direct)
+    * If you use the TestFlight installation method, you will not be able to use this with Loop
+* LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
+    * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
+    * Refer to [Modify Loop to use Libre](#modify-loop-to-use-libre)
+
+
+Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop dev code that you previously downloaded.
+
+### Modify Loop to use Libre
+
+None of these methods have been tested by the LoopDocs team. This information is copied from zulipchat conversations (shown in links below).
+
+For your selected app to read the Libre, you must also add a client to Loop dev to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop dev.
+
+Add a client that interfaces with xDrip4iOS:
+
+* [Add xdrip-client-swift to Loop dev](https://github.com/JohanDegraeve/xdrip-client-swift-1#readme)
+    * Note - there are extra details visible when you click on the black arrow icons in this file
+    * [zulipchat converstation](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292280110)
+
+
+Add a client that interfaces with GlucoseDirect:
+
+* [Add GlucoseDirectClient](https://github.com/creepymonster/GlucoseDirectClient)
+    * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292307629)
+    * The instructions are in the video on the GlucoseDirectClient repo page
+
+Add LibreTransmitter to Loop as a plugin:
+
+* LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
+    * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
+    * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/312259-Omnipod-DASH/topic/Libre.20support/near/279078872)
+    * The required GetGlucoseFromRaw.swift file is not included in the repository due to legal concerns, so you have to get it from elsewhere
