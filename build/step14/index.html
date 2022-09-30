@@ -2515,11 +2515,14 @@
 <h2 id="developer-mode">Developer Mode<a class="headerlink" href="#developer-mode" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you are running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 or <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 8 and earlier, you do not have developer mode and can skip ahead to <a href="#download-loop">Download Loop</a>.</p>
 <p>New with <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9, you must enable Developer Mode to run or build Loop. (This is true for any app created by <abbr title="program used to build an app">Xcode</abbr>.) If you want to know more, click on this <a href="https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device">Apple Link about Developer Mode</a>.</p>
-<p><strong>Loop will not run until you enable Developer Mode for iOS16.</strong></p>
+<p><strong>Loop will not run until you enable Developer Mode for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16.</strong></p>
 <h3 id="prepare-your-phone-and-watch">Prepare your Phone and Watch<a class="headerlink" href="#prepare-your-phone-and-watch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>
 <p>If you are running Loop and update to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9; Loop will no longer run until you enable Developer Mode and you will see a message similar to the next graphic</p>
+</li>
+<li>
+<p>If you are building to a new Apple Watch - you must first build the app with <abbr title="program used to build an app">Xcode</abbr> before the developer mode will be available.</p>
 <p align="center"><img alt="phone message if trying to run xcode app without developer mode enabled" src="../img/phone-developer-mode-required.jpeg" width="300" /></p>
 </li>
 <li>
@@ -2540,6 +2543,10 @@
 </li>
 </ul>
 <h4 id="developer-mode-on-watchos-9-device">Developer Mode on <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9 Device<a class="headerlink" href="#developer-mode-on-watchos-9-device" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Build, Enable, Build</p>
+<p>Reports from users indicate that when you are building to a new Apple Watch - you must first build the app with <abbr title="program used to build an app">Xcode</abbr> before the developer mode will be available. So plan to build with Watch paired, and then enable Developer Mode and build again.</p>
+</div>
 <p>To determine if Developer Mode is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to the bottom. Tap on the Developer icon, then tap on Developer Mode. </p>
 <ul>
 <li>If Developer Mode is enabled, the slider will be green and no further action is required</li>
