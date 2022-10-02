@@ -15,6 +15,7 @@
 *[Closed Loop]: Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB
 *[clone]: create a copy of a repository on your computer including revision history and ability to update using git commands
 *[COB]: Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction
+*[commit]: a change to the code
 *[Config Vars]: configuration parameters for a Nightscout Site
 *[Correction Range]: Loop recommends changes to basal and / or bolus to bring glucose predictions into this range
 *[CR]: Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin
