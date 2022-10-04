@@ -107,8 +107,7 @@ If a limitation on your Mac prevents you from updating your phone to the latest 
     1. Configure your phone to automatically download the updates
     1. Choose to perform the installation of the updates manually
 
-
-When iOS updates are released, this [Version Update](https://www.loopandlearn.org/version-update) page at `Loop and Learn` is typically the first site to be updated and is a good place to start.  Check to see if the update is causing an issue with Loop or your CGM before accepting the update from Apple.
+When iOS updates are released, the [Loop and Learn Version Updates](https://www.loopandlearn.org/version-updates) page is typically updated faster than LoopDocs. Check to see if a new update is causing an issue with Loop or your CGM before accepting the update from Apple.
 
 Within a few days, the "All-Clear" or "WAIT there's a problem" will be posted.
 
