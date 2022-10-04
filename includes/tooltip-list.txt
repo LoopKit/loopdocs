@@ -15,7 +15,7 @@
 *[Closed Loop]: Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB
 *[clone]: create a copy of a repository on your computer including revision history and ability to update using git commands
 *[COB]: Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction
-*[commit]: a change to the code
+*[commit]: a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)
 *[Config Vars]: configuration parameters for a Nightscout Site
 *[Correction Range]: Loop recommends changes to basal and / or bolus to bring glucose predictions into this range
 *[CR]: Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin
@@ -63,6 +63,7 @@
 *[RileyLink]: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
 *[Rosetta]: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 and M2 chips)
 *[SAGE]: sensor age on Nightscout site
+*[SHA-1]: Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)
 *[Signing Targets]: associate a Developer ID with an app; must sign all targets for a given app
 *[submodules]: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
 *[Table of Contents]: (TOC) is the list of level 2 and 3 headers on a given page; the title at the top of the page is a level 1 header
