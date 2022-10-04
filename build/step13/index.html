@@ -2393,11 +2393,11 @@
 <p>This page documents using a script, different from the usual Build-Select script, to build the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of the app. If you have not previously built the released version of the app using the Build-Select script as documented in <a href="../step14/">Build the Loop App</a>, you may find the documentation sparse.</p>
 <ul>
 <li>A new script has been prepared to assist building the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> for Loop and FreeAPS</li>
-<li>This script downloads the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then selects a specific <abbr title="a change to the code">commit</abbr> that has been lightly tested</li>
+<li>This script downloads the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then selects a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that has been lightly tested</li>
 </ul>
 <p>This is still code under development, so please pay attention to your app and report any unexpected behavior on <a href="https://loop.zulipchat.com">Loop Zulipchat</a>.</p>
-<p>The <abbr title="a change to the code">commit</abbr> is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes.</p>
-<p>When you run the script, the instructions inform you of the <abbr title="a change to the code">commit</abbr> that will be built.</p>
+<p>The <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes.</p>
+<p>When you run the script, the instructions inform you of the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that will be built.</p>
 <p>Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
 <div class="highlight"><span class="filename">Copy and Paste to start the script to build a specific commit</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopFixedDev.sh)&quot;
 </code></pre></div>
@@ -2409,10 +2409,10 @@
 <li>Adjust font size as directed if you have difficulty seeing the directions.</li>
 </ul>
 <p>You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.</p>
-<p>The next graphic warns you about building a development <abbr title="version of code within a single repository or workspace repository">branch</abbr>. The date and <abbr title="a change to the code">commit</abbr> number in the script might not match the graphic below. The values in the script will be updated at appropriate times. The date indicates when that <abbr title="a change to the code">commit</abbr> was added to the <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>The next graphic warns you about building a development <abbr title="version of code within a single repository or workspace repository">branch</abbr>. The date and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number in the script might not match the graphic below. The values in the script will be updated at appropriate times. The date indicates when that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> was added to the <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p align="center"><img alt="message about development branch commit" src="../img/build-select-dev.svg" width="700" /></p>
 <p>Continue following directions with the script and wait for the download to complete. If you get errors, <a href="../step14/#xcode-errors-with-build-select">review this section</a> of the directions for building the released code. Resolve the errors, if possible, then return to this page.</p>
-<p>After the download step, the specific <abbr title="a change to the code">commit</abbr> will be "checked out". Verify there are no errors and proceed.</p>
+<p>After the download step, the specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> will be "checked out". Verify there are no errors and proceed.</p>
 <h2 id="signing-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Signing Targets</abbr><a class="headerlink" href="#signing-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The script helps you configure a permanent file used by <abbr title="program used to build an app">Xcode</abbr> to automatically sign all your targets.</p>
 <p>The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to <a href="#use-permanent-loopconfigoverridexcconfig">Use Permanent LoopConfigOverride.xcconfig</a>.</p>
@@ -2604,7 +2604,7 @@
 <p>You may prefer to use commands to fetch and pull the latest code without making a new <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Folder Name</p>
-<p>If you decide to update code in the same folder, you should edit the folder name to remove the specific build <abbr title="a change to the code">commit</abbr> appended by the script. </p>
+<p>If you decide to update code in the same folder, you should edit the folder name to remove the specific build <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> appended by the script. </p>
 <p>This is not required but may avoid confusion.</p>
 </div>
 <h3 id="open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder<a class="headerlink" href="#open-a-terminal-in-loopworkspace-folder" title="Anchor link to this Header on this Page">&para;</a></h3>
