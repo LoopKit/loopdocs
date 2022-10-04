@@ -33,7 +33,8 @@ These devices are compatible with iOS 14 through iOS 16.
 - iPhone 11, all variants
 - iPhone X, all variants
 - iPhone 8, all variants
-- iPhone SE (2nd generation or later model; 2020 first release)
+- iPhone SE (3rd generation or later model; 2022 first release)
+- iPhone SE (2nd generation; 2020 first release)
 
 These devices are compatible with Loop 3, but cannot be upgraded to iOS 16. Loop 3 is the soon-to-be released version of Loop. This version of Loop requires iOS 14.
 
@@ -66,12 +67,12 @@ Do not use any of the beta iOS versions. (Don't worry...if you don't know what t
 
 With iOS 16 and watchOS 9, Apple added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
-When you build Loop on your phone running iOS 16, and watch paired to your phone running watchOS 9, you need to have Developer Mode enabled. You can go on and enable it now - or wait until you reach the [Build Loop App: Prepare your Phone and Watch](step14.md#prepare-your-phone-and-watch) instructions.
+When you build (or run) Loop on your phone running iOS 16, and watch paired to your phone running watchOS 9, you need to have Developer Mode enabled. You will be told to enable it in the [Build Loop App: Prepare your Phone and Watch](step14.md#prepare-your-phone-and-watch) instructions.
 
 !!! info "Developer Mode with iOS 16, watchOS 9"
     If you already have Loop on your phone/watch when you update to iOS 16/watchOS 9, you will be told that Loop requires Developer Mode to run.
     
-    You will not be able to run Loop until you have enabled Developer Mode.
+    You will not be able to run Loop on your phone (or watch) until you have enabled Developer Mode on the device(s).
 
     ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
     {align="center"}
@@ -81,12 +82,11 @@ When you build Loop on your phone running iOS 16, and watch paired to your phone
 
 Make sure the battery on your phone is solid. Your phone will become a critical health device - you want it to keep working.
 
-With newer iOS (14 and 15), some people have reported Loop continues working even in [Low Power Mode](https://support.apple.com/en-us/HT205234) if you need to preserve battery; others, have reported they still get red loops.
-
-Older iOS (and associated older phones) were reported to cause Loop to stop updating when the phone was locked. If you are running an older version of iOS (on an older device) with Loop 2.2.x, you may need to avoid Low Power Mode.
-
 * Make sure a charger and cord are in your diabetes supplies
 * Consider buying a battery pack, keep it charged and add it to your travel bag
+
+!!! tip "Low Power Mode"
+    With newer iOS (14 and 15), some people have reported Loop continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others, have reported they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low power mode.  Otherwise, best practice is to avoid Low Power Mode.
 
 ## Turn Off Automatic Updates
 
@@ -107,8 +107,7 @@ If a limitation on your Mac prevents you from updating your phone to the latest 
     1. Configure your phone to automatically download the updates
     1. Choose to perform the installation of the updates manually
 
-
-When iOS updates are released, check your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site to see if the update is causing an issue with Loop or your CGM before accepting the update from Apple.
+When iOS updates are released, the [Loop and Learn Version Updates](https://www.loopandlearn.org/version-updates) page is typically updated faster than LoopDocs. Check to see if a new update is causing an issue with Loop or your CGM before accepting the update from Apple.
 
 Within a few days, the "All-Clear" or "WAIT there's a problem" will be posted.
 

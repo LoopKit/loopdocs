@@ -41,6 +41,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **COB**: Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction
 
+**commit**: a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)
+
 **Config Vars**: configuration parameters for a Nightscout Site
 
 **Correction Range**: Loop recommends changes to basal and / or bolus to bring glucose predictions into this range
@@ -134,6 +136,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **Rosetta**: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 and M2 chips)
 
 **SAGE**: sensor age on Nightscout site
+
+**SHA-1**: Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)
 
 **Signing Targets**: associate a Developer ID with an app; must sign all targets for a given app
 
