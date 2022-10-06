@@ -252,7 +252,7 @@ If you used earlier versions of Loop, please be aware that absorption times have
 
 While Loop-dev is under active test, you should update frequently.
 
-When building frequently, it is optional to update your provisioning profile with every new build. If you want to always ensure one year, follow the steps for [Updating: Step 4a](updating.md#step-4a-delete-old-provisioning-profiles) to use a different script for this action.
+When building frequently, it is optional to update your provisioning profile with every new build. If you want to always ensure one year, follow the steps for [Updating: Step 4a](updating.md#delete-provisioning-profiles) to use a different script for this action.
 
 Checking for updates every week is a good idea.  Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
 

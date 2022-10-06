@@ -82,7 +82,7 @@ This page has the detailed steps to run the Build Select Script to download the 
 !!! danger "Rebuild / Update on Same Computer?"
     If you used this same computer to build Loop previously and you did not delete provisioning profiles - you will not get a full year with the app.
 
-    Go to [Updating: Step 4a](updating.md#step-4a-delete-old-provisioning-profiles) now and do that step if you missed it.
+    Go to [Updating: Step 4a](updating.md#delete-provisioning-profiles) now and do that step if you missed it.
 
 ### Build Select Script
 

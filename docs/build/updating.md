@@ -40,7 +40,7 @@ Under ordinary circumstance, updating the iOS on your phone does not require a r
     Follow these "safe Looping" steps for updating your iOS:
 
     1. Check which [version of macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) is required for the phone iOS you intend to install.
-    1. [Update macOS / Xcode if needed](updating.md#step-1-install-macos-and-xcode-updates)
+    1. [Update macOS / Xcode if needed](#macos-and-xcode-versions)
     1. Check [Loop: Current Release](../faqs/release-faqs.md#current-release) status - if there is new code, you should download it
     1. Build app to your iPhone
     1. Then update your iPhone iOS
