@@ -96,7 +96,7 @@ Minimum means you need to have at least that version - newer versions build just
 
 Click on this link [Check your Xcode Version](step9.md#xcode-version) to find your Xcode version number.
 
-If you need to update your Xcode, follow the instructions at this link [Install Xcode](step8.md#install-xcode) and continue through [Xcode Preference](step9.md).
+If you need to update your Xcode, follow the instructions at this link [Install Xcode](step8.md#install-xcode) and continue through [Xcode Preferences](step9.md).
 
 Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). 
 
@@ -169,8 +169,6 @@ Read the screen (shown below).  Type 1 and return if you understand the warning 
 * Please read what is on the screen as you progress.
 * Adjust font size as directed if you have difficulty seeing the directions.
 
-You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.
-
 Next you will see an introduction to the Build Select script.  Please read this.  To run the Utilities, you will type 3 (as shown in the graphic below) and return.
 
 ![choose utilities](img/bss-02-menu-message-select-3.svg){width="700"}
@@ -180,8 +178,6 @@ Next you are asked which Utility option you want to run.  You may need to scroll
 
 ![select from utility menus](img/bss-04-utility-menu.svg){width="700"}
 {align="center"}
-
-Type 3 and return to select  `Clean Profiles`. 
 
 Once this completes, you should see this in your terminal.
 

@@ -80,9 +80,9 @@ This page has the detailed steps to run the Build Select Script to download the 
 ### Ensure a Year
 
 !!! danger "Rebuild / Update on Same Computer?"
-    If you used this same computer to build Loop previously and you did not delete provisioning profiles - you will not get a full year with the app.
+    If you used this same computer to build Loop previously and you did not delete provisioning profiles as instructed on the Updating/Rebuilding page - you will not get a full year with the app.
 
-    Go to [Updating: Step 4a](updating.md#delete-provisioning-profiles) now and do that step if you missed it.
+    Go to [Updating: Delete Provisioning Profiles](updating.md#delete-provisioning-profiles) now and do that step if you missed it.
 
 ### Build Select Script
 
