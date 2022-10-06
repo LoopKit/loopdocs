@@ -7,12 +7,15 @@
 
 !!! abstract "Summary"
 
-    Follow links to sections of other build pages then hit the back button on your browser to return to this page. These are the steps you should follow:
+    Summary of tasks to prepare for and update your app:
 
-    * Step 1: Install macOS and Xcode updates based on your phone iOS
-    * Step 2: Check your Developer Account
-    * Step 4a and 4b: Delete provisioning profiles and derived data
+    * Determine required macOS and Xcode version based on your phone iOS
+        * If necessary, update first macOS and then Xcode
+    * Check your Developer Account
+    * Delete provisioning profiles (ensure a year)
     * Download Updated Loop code and Build Loop
+
+    In each of the sections below, follow links to sections of other build pages then hit the back button on your browser to return to this page.
 
 !!! question "FAQs"
 
@@ -20,7 +23,7 @@
     - **"Do I delete my old Loop app first?"** Definitely **not**! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
     - **"Do I need to start a new pod when I update?"** No. Your existing pod session will continue seamlessly if you are using the same Developer Account to sign the Loop app targets as you did the last time you built.
     - **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account used when your existing app was built (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
-    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check your new computer has the required compatible versions and then build your app. This will include installing Xcode and configuring Xcode preferences. There is no need to delete provisioning profiles on a branch new computer, but you can follow the steps if you prefer.
+    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check your new computer has the required compatible versions and then build your app. This will include installing Xcode and configuring Xcode preferences. There is no need to delete provisioning profiles on a brand new computer, but no harm comes from following the instruction.
 
 ## When to Update Loop
 
@@ -37,18 +40,14 @@ Under ordinary circumstance, updating the iOS on your phone does not require a r
     Follow these "safe Looping" steps for updating your iOS:
 
     1. Check which [version of macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) is required for the phone iOS you intend to install.
-    1. [Update macOS / Xcode if needed](updating.md#step-1-install-macos-and-xcode-updates)
+    1. [Update macOS / Xcode if needed](#macos-and-xcode-versions)
     1. Check [Loop: Current Release](../faqs/release-faqs.md#current-release) status - if there is new code, you should download it
     1. Build app to your iPhone
     1. Then update your iPhone iOS
 
 [Loop Releases](../faqs/release-faqs.md#loop-releases) provides information about current and previous Loop versions.
 
-The apps built and signed by you in Xcode with a paid developer account will only last for 12 months before they expire and need rebuilding. So, at least once per year you will have to rebuild your app and go through this update process. If you do not update and the "provisioning profile" on your phone expires, you will see this message:
-
-### "Loop" is No Longer Available
-
-When you see "Loop" is No Longer Available on your phone, the only solution is to rebuild the app.  All of your settings are still present on your phone, but your "provisioning profile" expired and you need to generate a new one. Once you build Loop on your phone, following the instructions on this page, all your settings will be maintained - assuming you build with the same [Apple Developers ID](../faqs/FAQs.md#what-happens-when-i-switch-apple-developer-id) that was used initially.
+Updating to iOS 16 (watchOS 9) requires enabling [Developer Mode](step14.md#developer-mode). Your existing app will not open until you take this step. Once enabled, the app opens again. A rebuild is **not** required.
 
 !!! warning "iOS 15 Warning - Check Before You Update"
 
@@ -56,11 +55,20 @@ When you see "Loop" is No Longer Available on your phone, the only solution is t
 
     Follow this link, [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used), for instructions to determine what version was used when building the Loop app currently on your phone.
 
+### "Loop" is No Longer Available
+
+The apps built and signed by you in Xcode with a paid developer account will last for 12 months; then they expire and must be rebuilt. At least once per year you will have to rebuild your app and go through this update process. If you do not update and the "provisioning profile" on your phone expires, you will see the "Loop" is No Longer Available message. You will be given multiple [Loop App Expiration Notifications](../operation/features/notifications.md#loop-app-expiration-notification) on the Loop phone, but might miss them if you are a caregiver.
+
+When you see "Loop" is No Longer Available on your phone, the only solution is to rebuild the app.  All of your settings are still present on your phone, but your "provisioning profile" expired and you need to generate a new one. Once you build Loop on your phone, following the instructions on this page, all your settings will be maintained - assuming you build with the same [Apple Developers ID](../faqs/FAQs.md#what-happens-when-i-switch-apple-developer-id) that was used initially.
+
+!!! warning "Provisioning Profiles"
+    Be aware that if you build an app using Xcode without first deleting provisioning profiles, you might not have one year on that app. It is the expiration date of the provisioning profile on your computer that determines when the app expires.
+
 ## Build Video
 
 The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to prepare for an update and build Loop Master. We recommend reading the written directions below before (and while) watching the video.
 
-## Step 1: Install macOS and Xcode updates
+## macOS and Xcode Versions
 
 ### Determine Required Xcode and macOS Versions
 
@@ -88,13 +96,13 @@ Minimum means you need to have at least that version - newer versions build just
 
 Click on this link [Check your Xcode Version](step9.md#xcode-version) to find your Xcode version number.
 
-If you need to update your Xcode, follow the instructions at this link [Install Xcode](step8.md#install-xcode) and continue through [Xcode Preference](step9.md).
+If you need to update your Xcode, follow the instructions at this link [Install Xcode](step8.md#install-xcode) and continue through [Xcode Preferences](step9.md).
 
 Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). 
 
 !!! warning "Direct Download"
 
-    - If you previously did a direct download of Xcode, it will not show up in the App Store.
+    - If you previously did a direct download of Xcode, it might not show up in the App Store.
     - Either do another direct download or follow these directions in the Direct Download section to reconfigure so it will show up in the App Store.
         - [Direct Download of Xcode](updating.md#direct-download-of-xcode)
 
@@ -110,43 +118,35 @@ Advanced users: If you are finding installation of Xcode from the App Store incr
     * xcode-select: error: tool 'xed' requires Xcode
     * Scripting Bridge could not launch application . . .
 
-
 !!! abstract "Follow Xcode Preferences page after updating Xcode"
 
-        Make sure to restart your computer after updating Xcode and follow the instructions on the Xcode Preferences page. There's a known issue that happens often enough to be frustrating if you skip those steps. It's not always required...but this is a good easy ounce of problem prevention.
+        Make sure to restart your computer after updating Xcode and follow the instructions on the Xcode Preferences page. There's a known issue that happens often enough to be frustrating if you skip those steps. It's not always required...but this is a good easy ounce of prevention step.
 
-
-## Step 2: Check your Developer Account
+## Check your Developer Account
 
 Apple updates its License Agreement for the Developer Program frequently. You need to login to your [developer account](https://developer.apple.com/account/) to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.
 
 ![Screenshot: Account - Apple Developer](img/license.png)
 
-## Step 4a: Delete old provisioning profiles
+## Delete Provisioning Profiles
 
-!!! info ""
+In order to ensure a full year of use for your Loop app, you need to delete any existing provisioning profile(s) from your computer. It is the expiration date of the provisioning profile on your computer that determines when the app expires.
 
-    Yes - we do know how to count - but we've changed the order of steps. A lot of links are used historically, so we try not to change the names of headers (and thus the links) unless it is absolutely necessary.
-
-    **Steps 4a and 4b** are completed with this new method.
-
-In order to ensure a full year of use for your Loop app, you need to delete any existing provisioning profile(s) from your computer. If you want to know more information before executing this step - or if you want to do it manually, read the [Background Information](#background-information).
+There are two methods to delete provisioning profiles, using the Build Select script Utilities or [manually](#manual-delete-of-provisioning-profiles).
 
 ### Build Select Utilities
 
-The easiest way to delete the old provisioning profiles and clean up derived data uses the same build-select script that you will use for building.
+You can delete the old provisioning profiles with the same Build Select script you will use to download and build new code.
 
 #### Open Terminal
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
 
-If you happen to have Xcode open, go on and quit out of Xcode now.
-
 #### Load the Paste Buffer
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
-``` title="Run the Build-Select script to Clean Profiles & Derived Data"
+``` title="Run the Build Select script to Clean Profiles & Derived Data"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
 ```
 
@@ -154,102 +154,78 @@ Paste the line of text into Terminal. Be sure to click anywhere in the terminal 
 
 #### Utilities
 
-The expected script responses are shown in the list and graphics below.  Each graphic shows the number you are instructed to type to proceed - the words on this page also tell you what to type.  
+Each graphic below shows the number you are instructed to type to proceed through the script and reach the utility menu. The words on this page also tell you what to type. Note there are several options in Utilities, you only need to use one to delete provisioning profiles. See [Loop and Learn Build Select](https://www.loopandlearn.org/build-select) webpage for additional information.
+
+When running this script:
 
 - If you do not have Xcode and Xcode command line tools installed - you will get errors.
 - If you have Xcode open, you may get errors.
 
+Read the screen (shown below).  Type 1 and return if you understand the warning and agree.
+
 ![paste the script line into terminal](img/bss-01-initial-message.svg){width="700"}
 {align="center"}
 
-Type 1 and return to acknowledge the warning.
+* Please read what is on the screen as you progress.
+* Adjust font size as directed if you have difficulty seeing the directions.
 
-![select utilities option](img/build-select-02.png){width="750"}
+Next you will see an introduction to the Build Select script.  Please read this.  To run the Utilities, you will type 3 (as shown in the graphic below) and return.
+
+![choose utilities](img/bss-02-menu-message-select-3.svg){width="700"}
 {align="center"}
 
-Type 3 and return to select `Utilities`.
+Next you are asked which Utility option you want to run.  You may need to scroll up to see the entire message shown in the graphic below. Type 3 to select Clean Profiles.
 
-![select clean profiles and derived data option](img/build-select-03.png){width="750"}
+![select from utility menus](img/bss-04-utility-menu.svg){width="700"}
 {align="center"}
-
-Type 3 and return to select  `Clean Profiles & Derived Data`. 
 
 Once this completes, you should see this in your terminal.
 
 ![clean utility script completed](img/build-select-04.png){width="750"}
 {align="center"}
 
-### Step 4a Completed: No Errors
-
 As long as there are no errors, you are now ready to proceed to [Build the Loop App: Download Loop](step14.md#download-loop) to build the released version of the app.
 
-
-### Step 4a Had Errors
-
-If instead, you saw something like:
-
-* `rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty`
-
-This means it could not delete all the Derived Data folder because Xcode was open.
-
-Please quit out of Xcode and repeat the steps from [Load the Paste Buffer](#load-the-paste-buffer).
-
----
+After building the new app, following the link above, you may choose to return to this page and follow the instructions to [Delete Old Copies](#delete-old-copies). This is optional, but cleans up space on your computer.
 
 
-## Background Information
+### Manual Delete of Provisioning Profiles
 
-The rest of this page is kept for historical reasons (and to maintain saved links).  If you followed the steps above, you do not need the rest of this page.
+If you prefer not to use the Build Select script and you are comfortable pasting commands into the terminal, you can delete the provisioning profiles by copying and pasting this command into a terminal window.
 
-#### Delete Old Copies
+``` title="Copy and Paste to remove Provisioning Profiles"
+rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
+```
 
-When you update, you no longer need to keep old copies of the code on your computer. If you want to clean up space, you can delete those old folder(s) now if you want).
+## Delete Old Copies
+
+This step is optional, but if your computer is low on space, it helps to clean up old downloads your are no longer using.
+
+When you update, you no longer need to keep old copies of the code on your computer. If you want to clean up space, you can delete those old folder(s) now if you want.
 
 !!! abstract "Where is the old folder?"
 
-    Maybe you don't remember where you put the folder. Both the older zip-download method and the new build-select-script method make folders in your download folder as shown in the graphic below. If you are tight on space, all of these folders can be deleted.  Or, if you are paranoid, download fresh and build Loop; and then go back and delete all but the most recent copy.  The nice thing about the build-select script is it automatically generates the folder name with the date and time of the download.
+    Assuming you used the Build Select script, your downloads are in the ~/Downloads/BuildLoop folder as shown in the graphic below. If you are tight on space, the older folders can be deleted.  Best practice, download fresh and build Loop; and then go back and delete all but the most recent copy.  The nice thing about the Build Select script is it automatically generates the folder name with the date and time of the download. Delete each unwanted folder, one at a time.
+
+    If you see a file (not a folder) in ~/Downloads/BuildLoop called LoopConfigOverride.xcconfig, keep that around. If you delete it, you'll need to recover it from the trash, regenerate it (if you know how) or sign your targets manually for your current download.
+
+    The Scripts folder can also be left alone, but if you delete it, it is regenerated with the next use of the Build Select script.
 
     ![Download folder with multiple Loop folders](img/loop-downloads.png)
 
+## Background Information
 
-#### Provisioning Profile Details
+New Loopers do not need to read the rest of this page.
 
-Older versions of Xcode used to automatically create a new "provisioning profile" as part of the Loop building process. That provisioning profile, among other things, sets the expiration date for your app. If you sign with a paid team, that profile is set to expire in 12 months. If you sign with a free team, that profile is set to expire in 7 days.
+Experienced Loopers may wonder what happened to deleting derived data.
 
-You can always check the expiration date immediately after a successful build of your loop app by clicking the little "i" icon next the "Provisioning Profile" line in the target signing area. Add 12 months to the "created" date (paid account), or 7 days (free account), and you'll have your app's date of future spontaneous death, which you can record in your calendar.
-
-![Screenshot: Xcode showing Provisioning Profile](img/provisioning-profile-date.png){width="850"}
-{align="center"}
-
-Here's what started happening about September 2019 with Xcode 11, the provisioning profiles were being reused so the date was not updated each time you built. This change resulted in many people's apps expiring unexpectedly (and therefore dying suddenly) starting in September 2020 despite having updated/rebuilt recently and having current developer accounts (either manually renewed or automatically renewed, doesn't matter).
-
-Once you follow the steps in the orange box below, Xcode will have no memory of the old provisioning profiles and will be forced to create a brand new one with the next Loop build. Therefore, you'll get a brand spanking new "created" date that will match the build date.  Simple and straight-forward. (Leave Terminal app open to do Step 4b afterwards too.)
-
-#### Delete Profiles
-
-- This process deletes the provisioning profiles on your computer to force Xcode to generate new ones with your next build
-- This does not affect the provisioning profiles currently on your phone
-
-
-!!! question "How to delete old provisioning profiles"
-    - Find your Terminal app (in Applications under Utilities)
-    - Open your Terminal app
-    - Hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and return
-
-    ``` title="Delete Provisioning Profiles"
-    rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
-    ```
-
-    * No response will be shown in the terminal if you have Provisioning Profiles stored on this computer
-    * If you do not have Provisioning Profiles stored on this computer, the message be similar to this one:
-        * rm: /Users/marion/Library/MobileDevice/Provisioning Profiles/*.mobileprovision: No such file or directory
-
-    ![Screenshot: terminal after provisioning profile deletion](img/empty-profiles.png){width="650"}
-    {align="center"}
+* Each workspace folder has a unique folder for storing derived data
+* Deleting derived data across all Xcode workspaces and projects for a brand new download is not required to ensure a year for a given build
+* The Clean Derived Data option in the Utilities menu can be required for some special cases, but you probably won't need it
 
 #### Infrequent Builder, App Expires soon
 
-If your app will expire soon or you build infrequently, then [Delete Profiles](updating.md#delete-profiles). Not sure when your app expires? Here are instructions to check your [Loop Expiration Date](https://www.loopandlearn.org/loop-expiration-date/).
+If your app will expire soon or you build infrequently, then delete provisioning profiles every time you build. Not sure when your app expires? Here are instructions to check your [Loop Expiration Date](https://www.loopandlearn.org/loop-expiration-date/).
 
 #### Frequent Builder
 
@@ -287,55 +263,6 @@ More information is shown in the orange box below.
 
     Be aware that you will have to rebuild to every device that used the certificate you just revoked and if you have other apps built with this certificate, they will stop working too.
 
-
-#### Clean cache and derived data
-
-This may not be necessary, but it is one of the first steps to try if you do get a build error. Since you already have Terminal app open, you can prevent one of the possible sources of build errors in advance by cleaning out straggler data from previous Loop builds.
-
-!!! abstract "Clean cache and derived data"
-
-    Using Terminal app that should still be open from Step 4a, hover to right of text, click copy to clipboard, then paste it into the Terminal prompt and return.
-
-    ``` title="Clean cache and derived data"
-    rm -rf ~/Library/Caches/org.carthage.CarthageKit
-    rm -rf ~/Library/Developer/Xcode/DerivedData
-    ```
-
-    * No response will be shown in the terminal if Xcode is closed or you have never built from this folder
-    * If you have previously built the app from this folder AND Xcode is open, you will get message(s) similar to this
-        * rm: /Users/marion/Library/Developer/Xcode/DerivedData/ModuleCache.noindex: Directory not empty
-        * rm: /Users/marion/Library/Developer/Xcode/DerivedData: Directory not empty
-
-
-
-
-    ![Screenshot: terminal after clean cache and derived data](img/cleaned-terminal.png){width="650"}
-    {align="center"}
-
-#### Build like normal
-
-You are ready to proceed to [Build the Loop App: Download Loop](step14.md#download-loop) and continue on that page until you have completed the build.
-
-!!! info "Add a Calendar Reminder"
-
-    - It is good practice to add a reminder to your calendar when the app will expire (7 days or 1 year).
-    - Be sure to add an alert to that reminder so you have enough time to do all the [Loop Updating](updating.md) steps to build the app again before it expires
-
-
-!!! abstract "Double check expiration date"
-
-    If you want to make sure that step 4 above (deleting the provisioning profiles) went well, check the "created" date on your provisioning profile after you sign your Loop target for this rebuild. It should have the current date as the "created" date and your Loop app, if you successfully build, will function for 12 more months (for paid accounts) so long as you keep your developer account paid/automatically renewed.
-
-    To find out expiration date later, read [Loop App Expiration Date](../operation/features/notifications.md#loop-app-expiration-date).
-
-
-#### Resolve Build Errors if needed
-
-!!! danger "Check Build Errors Page"
-
-    If you get a build error, check the [Build Errors page](build_errors.md). You might be able to resolve it yourself.
-
-    Even if your exact error isn't there, the information you need to provide when asking for help is listed on that page. And that information is critical to allow mentors to help troubleshoot your build error.
 
 ## Direct Download of Xcode
 

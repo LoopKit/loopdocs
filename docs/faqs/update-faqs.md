@@ -98,7 +98,7 @@ The information in the graphic below includes the Xcode version number used for 
 
     * The profile expiration will not be shown for Loop v2.2.4 or earlier.
     * For this example, the profile expires much sooner than 12 months after the Loop app was built
-        * [Updating: Step 4A ](../build/updating.md#step-4a-delete-old-provisioning-profiles) provides instructions to delete your old provisioning profile when building your Loop app - this gives you a full year after you build
+        * [Updating: Delete Provisioning Profiles](../build/updating.md#delete-provisioning-profiles) provides instructions to delete your old provisioning profile when building your Loop app - this gives you a full year after you build
 
 ## What if I change the branch or fork?
 

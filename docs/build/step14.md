@@ -80,16 +80,16 @@ This page has the detailed steps to run the Build Select Script to download the 
 ### Ensure a Year
 
 !!! danger "Rebuild / Update on Same Computer?"
-    If you used this same computer to build Loop previously and you did not delete provisioning profiles - you will not get a full year with the app.
+    If you used this same computer to build Loop previously and you did not delete provisioning profiles as instructed on the Updating/Rebuilding page - you will not get a full year with the app.
 
-    Go to [Updating: Step 4a](updating.md#step-4a-delete-old-provisioning-profiles) now and do that step if you missed it.
+    Go to [Updating: Delete Provisioning Profiles](updating.md#delete-provisioning-profiles) now and do that step if you missed it.
 
 ### Build Select Script
 
-These instructions show each step needed to download Loop using the Build-Select script.
+These instructions show each step needed to download Loop using the Build Select script.
 
 !!! note "Optional"
-    The Build Select Script can also be used to build a companion app, called Loop Follow, and a fork of Loop, called FreeAPS. Follow these links to different websites for more information about those apps.
+    The Build Select Script can also be used to build a companion app, called Loop Follow, or a fork of Loop, called FreeAPS. Follow these links to different websites for more information about those apps.
 
      * Information about [Loop Follow](https://github.com/jonfawcett/LoopFollow#readme)
      * Information specific to [FreeAPS](https://www.loopandlearn.org/freeapsdoc/)
@@ -103,7 +103,7 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
-```title="Copy and Paste to start the Build-Select script"
+```title="Copy and Paste to start the Build Select script"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
 ```
 
@@ -119,7 +119,7 @@ Read the screen (shown below).  Type 1 and return if you understand the warning 
 
 You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.
 
-Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and return.
+Next you will see an introduction to the Build Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and return.
 
 ![choose to build Loop](img/bss-02-menu-message.svg){width="700"}
 {align="center"}
@@ -129,7 +129,7 @@ Next you are asked which version of Loop you would like to build. Type 1 and ret
 ![choose which Loop to build](img/bss-03-choose-fork.svg){width="700"}
 {align="center"}
 
-### XCode Errors with Build-Select
+### XCode Errors with Build Select
 
 !!! warning "WARNINGS"
 
