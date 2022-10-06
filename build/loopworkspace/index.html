@@ -1781,6 +1781,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#build-following-update" class="md-nav__link">
+    Build Following Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#compare-your-local-clone-to-loopworkspace" class="md-nav__link">
     Compare your local clone to LoopWorkspace
   </a>
@@ -2234,6 +2241,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#build-following-update" class="md-nav__link">
+    Build Following Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#compare-your-local-clone-to-loopworkspace" class="md-nav__link">
     Compare your local clone to LoopWorkspace
   </a>
@@ -2407,6 +2421,18 @@ git pull --recurse
 </ol>
 <p>If you are testing the LoopKit dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you need to be on <a href="https://loop.zulipchat.com">zulipchat</a> and subscribe to at least the #development and #github streams. (It's a good idea to subscribe to all the streams.) When you see <abbr title="contains project files and each file's revision history">repository</abbr> updates similar to the graphic below, there may also be an announcement in the #development channel that LoopWorkspace is updated and ready to test. If not you can check the commits in LoopWorkspace and see if they've been updated. It's a good idea to wait 24 hours. My procedure is to build dev to my backup phone and then put it on my "real" phone. Otherwise, wait for someone else to do it and give the all-clear in zulipchat.</p>
 <p align="center"><img alt="there has been an update in three submodules" src="../img/zulipchat-github.svg" width="600" /></p>
+<h3 id="build-following-update">Build Following Update<a class="headerlink" href="#build-following-update" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Sometimes there is a change to the <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> scheme in <abbr title="program used to build an app">Xcode</abbr> that interferes with building following an update to your local <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>. In those cases, these steps typically work. Try the first one, and if that doesn't work, try the first two, etc.  Only after trying all three should you post asking for help on zulipchat.</p>
+<ol>
+<li>In <abbr title="program used to build an app">Xcode</abbr> Menu, select Product-&gt;Clean Build Folder</li>
+<li>In <abbr title="program used to build an app">Xcode</abbr> Menu, select File-&gt;Close <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> and then File-&gt;Open Recent and select top line (one you just closed)</li>
+<li>Quit <abbr title="program used to build an app">Xcode</abbr> and <a href="#delete-derived-data">delete derived data</a>, then reopen <abbr title="program used to build an app">Xcode</abbr> (you may need to <a href="../build_errors/#couldnt-get-revision-for-package-dependency">resolve package versions</a> again)</li>
+</ol>
+<h4 id="delete-derived-data">Delete Derived Data<a class="headerlink" href="#delete-derived-data" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>This command deletes derived data stored across all workspaces and projects by <abbr title="program used to build an app">Xcode</abbr> on your computer. If you have multiple clones locally, it deletes derived data from all of them. The derived data will be regenerated next time you build with <abbr title="program used to build an app">Xcode</abbr> using that <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>.</p>
+<p>Copy and paste this command into a terminal window.</p>
+<div class="highlight"><span class="filename">Copy and Paste to Delete Derived Data</span><pre><span></span><code>rm -rf ~/Library/Developer/Xcode/DerivedData
+</code></pre></div>
 <h3 id="compare-your-local-clone-to-loopworkspace">Compare your local <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> to LoopWorkspace<a class="headerlink" href="#compare-your-local-clone-to-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In an ideal world, LoopWorkspace has the most recent compatible submodule identifiers revised at the same time the <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> are updated.  You will notice the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> identifiers for the updated <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> are different from the ones you have locally.</p>
 <p>You can check your current <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> with the <code>git submodule status</code> command in the LoopWorkspace folder of your terminal:</p>
