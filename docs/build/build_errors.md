@@ -1,10 +1,10 @@
 # Build Errors
 
-There are two types of build errors that happen: they are yellow warnings and red alerts. You'll see the warnings and alerts in the left-hand column of the Xcode window.
+There are two types of build indications that may be seen: they are warnings (yellow or purple icons) and red errors. You'll see the warnings and errors in the left-hand column of the Xcode window.
 
-<font color="orange">**Yellow warnings**</font> do not cause the build to fail, those are just warnings.  You will often see yellow alerts. Ignore those. Do not try to do anything to fix those.
+<font color="orange">**Yellow and Purple warnings**</font> do not cause the build to fail, those are just warnings.  You will often see yellow and purple icons. Ignore those. Do not try to do anything to fix those.
 
-<font color="red">**Red error alerts** </font> will have to be resolved before you can successfully build the Loop app. The steps below explain how to resolve them based on the messages you are seeing.
+<font color="red">**Red errors** </font> will have to be resolved before you can successfully build the Loop app. The steps below explain how to resolve them based on the messages you are seeing.
 
 ## Start with The Obvious Error Causes
 
@@ -60,7 +60,7 @@ The next time you plug this phone into your computer, you will be asked to trust
 
 If the build fails again, look through the list below and see if you can match your error message with one of the error messages listed later in this page. If you really can't find your solution, then post for help. But help us help you.
 
-- Ignore yellow warning messages - those are not errors - do **not** try to fix them
+- Ignore yellow and purple warning messages - those are not errors - do **not** try to fix them
 - Confirm it really is an error not already on this page; read this page carefully, including all the circled bits in the images in the Specific Error Messages section
 - Follow the steps in the Posting for Help section
 - WE CANNOT HELP without version numbers and [screenshots](#screenshots)

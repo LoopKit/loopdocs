@@ -26,9 +26,9 @@ If you are having trouble building or using your Loop app, there are some import
 
 1. Always search in **both** [LoopDocs](#website-search) and your favorite [support group](#how-to-find-help). 
     * Confused on how to search in a Facebook group? [Here is a video](https://www.youtube.com/watch?v=_vSN6C-Uo04) to help.
-2.  If you use Facebook, click on the Announcements section; many posts asking for help are already answered in the pinned announcements.
+2.  If you use Facebook, click on the Featured posts (at top of page); many posts asking for help are already answered there.
 3.  Don't post a duplicate question in multiple groups (mentors monitor many groups). Only post to a different group if you have had no responses for several hours.
-4.  If a LoopDocs search, FB or zulipchat search, and a check of Looped Group announcements haven't answered your question, then post for help. Review the [tips for how to post for help](../build/step12.md) so that our volunteers get all the information they'll need to help you, without needing to ask 40 questions first.    
+4.  If a LoopDocs search, FB or zulipchat search, and a check of Looped Group featured posts pinned to top of the page haven't answered your question, then post for help. Review the [tips for how to post for help](../build/step12.md) so that our volunteers get all the information they'll need to help you, without needing to ask 40 questions first.    
 5.  Leave your question posted even after you've gotten an answer, but edit the original post to add the word **RESOLVED** at the beginning of the original post. 
     * This helps other Loopers who have the same question
     * This helps mentors know they don't need to respond to help you

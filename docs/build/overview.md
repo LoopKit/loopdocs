@@ -25,7 +25,7 @@ Start by clicking through the Build pages from `Compatible Computer` through `Bu
 
 Next, read pages from `Compatible Computer` through `Build Loop App` completely and skim [Oh dear! Build errors?](build_errors.md). Most of the mistakes you can make when building have already been made. The Build Errors page shows how to fix them.
 
-When you are ready to proceed, complete the tasks on each page.  You can do one a day, take a week per page or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help: [Finding Help](../intro/loopdocs-how-to.md#how-to-find-help).
+When you are ready to proceed, complete the tasks on each page.  You can do one a day, take a week per page or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
 
 After you build Loop on your phone, keep following along in the docs as you [Set up](../operation/overview.md) and [Operate](../operation/loop/open-loop.md) your Loop app.
 
@@ -35,4 +35,4 @@ Try to:
 
 * Scroll back in the directions and see if you missed a paragraph or step.
 * Compare your screen's display with the graphics in the step. Is something different or does yours have an error message? If you have an error message, does it guide you to the problem and solution?
-* If you are still stumped - reach out for help: [Finding Help](../intro/loopdocs-how-to.md#how-to-find-help).
+* If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
