@@ -143,6 +143,24 @@ If you are testing the LoopKit dev branch, you need to be on [zulipchat](https:/
 ![there has been an update in three submodules](img/zulipchat-github.svg){width="600"}
 {align="center"}
 
+### Build Following Update
+
+Sometimes there is a change to the Workspace scheme in Xcode that interferes with building following an update to your local clone. In those cases, these steps typically work. Try the first one, and if that doesn't work, try the first two, etc.  Only after trying all three should you post asking for help on zulipchat.
+
+1. In Xcode Menu, select Product->Clean Build Folder
+1. In Xcode Menu, select File->Close Workspace and then File->Open Recent and select top line (one you just closed)
+1. Quit Xcode and [delete derived data](#delete-derived-data), then reopen Xcode (you may need to [resolve package versions](build_errors.md#couldnt-get-revision-for-package-dependency) again)
+
+#### Delete Derived Data
+
+This command deletes derived data stored across all workspaces and projects by Xcode on your computer. If you have multiple clones locally, it deletes derived data from all of them. The derived data will be regenerated next time you build with Xcode using that clone.
+
+Copy and paste this command into a terminal window.
+
+``` title="Copy and Paste to Delete Derived Data"
+rm -rf ~/Library/Developer/Xcode/DerivedData
+```
+
 ### Compare your local clone to LoopWorkspace
 
 In an ideal world, LoopWorkspace has the most recent compatible submodule identifiers revised at the same time the submodules are updated.  You will notice the commit identifiers for the updated submodules are different from the ones you have locally.

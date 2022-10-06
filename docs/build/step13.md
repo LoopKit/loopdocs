@@ -20,7 +20,7 @@ The development branch supports Omnipod DASH and many less experienced users wan
 
 ## Download Loop-dev
 
-This page documents using a script, different from the usual Build-Select script, to build the development branch of the app. If you have not previously built the released version of the app using the Build-Select script as documented in [Build the Loop App](step14.md), you may find the documentation sparse.
+This page documents using a script, different from the usual Build Select script, to build the development branch of the app. If you have not previously built the released version of the app using the Build Select script as documented in [Build the Loop App](step14.md), you may find the documentation sparse.
 
 * A new script has been prepared to assist building the development branch for Loop and FreeAPS
 * This script downloads the development branch and then selects a specific commit that has been lightly tested
