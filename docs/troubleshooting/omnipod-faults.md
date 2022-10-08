@@ -45,6 +45,6 @@ You can always call Insulet tech support if a pod has a clear failure on the pod
 * The adhesive was not working properly when trying to place it on your body.
 * The pod begins to scream during pairing or priming or insertion
 
-If the pod fails during use with Loop, a replacement might still be possible. The software which communicates with the pod isn't developed or supported by Insulet. Generally speaking, calling in failed pods for reasons not in the list above, on the third day of pod life, maybe a bit of a reach for the DIY community. There is a grey area here that we should be careful of and acknowledge that Looping may be a contributor in certain faults.
+If the pod fails during use with Loop, a replacement might still be possible. The software which communicates with the pod isn't developed or supported by Insulet. Generally speaking, calling in failed pods for reasons not in the list above, on the third day of pod life, is a bit of a reach for the DIY community. There is a grey area here that we should be careful of and acknowledge that Looping may be a contributor in certain faults.
 
-Insulet is aware that pods are used by the DIY community. You can be honest about your use and might recieve replacement pods. If your pod fails early, it's worth informing Insulet for their troubleshooting records even if you do not get a replacement.
+Insulet is aware that pods are used by the DIY community. You can be honest about your use and might receive replacement pods. If your pod fails early, it is worth informing Insulet for their troubleshooting records even if you do not get a replacement.
