@@ -150,12 +150,13 @@ The final messages (not shown) inform you that you can rerun the script with an 
 Refer to the graphic below. The messages in the terminal instruct you to:
 
 * Unlock your phone
-* (Optional) If you have an Apple Watch that has never had Loop on it
-    * Make sure watch is paired, unlocked and on your wrist
 * Plug Phone into the computer
+    * (Optional) If you have an Apple Watch that has never had Loop on it
+        * Make sure watch is paired, unlocked and on your wrist
     * If you have never "Trusted" this computer with these device(s), do so now
         * A screen will pop up on your phone (and watch) asking if you trust the computer
         * Select "Trust"
+        * After trusting phone and watch, phone should remain plugged in, but watch does not need to stay in proximity of the phone
 * Now you are ready to hit return in the terminal window
 
 ![script instructions for plugging in phone and trusting computer on phone and watch](img/build-dev-b-04.svg){width="750"}
