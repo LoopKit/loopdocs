@@ -7,27 +7,22 @@ To start a new meal entry, tap on the green plate icon (circled below) in the to
 ![Loop toolbar](img/toolbar-meal.svg){width="300"}
 {align="center"}
 
-Many Loopers increase the carbohydrate amount to cover the expected effect of protein and adjust the expected absorption time for fat in their meal entry. For simplicity, the rest of this page only refers to carbs because all the figures show carbs or carbohydrates in the menus. You should consider the whole meal, including fat and protein, especially if you eat lower carb.
-
 !!! abstract "Meal Entry - Fast Version"
     There is a lot of information on this page, most of which will become second nature. At first, it may seem incredibly complicated. The short version is here (assuming you accept all the default settings that Loop offers).
 
-      1. Tap meal entry icon on toolbar
-      1. Enter number of grams of carbs in the Add Carb Entry screen
+    Tap meal entry icon on toolbar
+
+      1. Enter number of grams of carbs in the Amount Consumed row
       1. Tap continue to advance to the Meal Bolus screen
-      1. Tap Recommended line to transfer the value to the Bolus line
+      1. Tap Recommended line to transfer the value to the Bolus line (Loop 2.2.x)
       1. Tap Deliver
 
-!!! warning "Things to Know"
-    * Do not enter carbs into your Medtronic pump
-        * If you use your Medtronic pump bolus wizard or carb entry screen, the pump will give you insulin but Loop will not know about the carbs
-        * The Loop predictions will be off and next time Loop reads the reservoir history on the pump, it will probably send your basal rate to zero
-    * If you enter carbs in the Nightscout careportal, they will not be detected by Loop
-        * There may be times you want to do this, e.g., you want to indicate a low treatment you don't want Loop to know about
+![Add a carb entry](img/add-carb-entry.svg){width="600"}
+{align="center"}
 
-### Carb Absorption Time Update
+### Loop dev Updates
 
-If you switched to Loop-dev (not yet released as Loop 3) from Loop 2.2.x, please be aware that absorption times have changed.
+If you switched to Loop-dev (not yet released as Loop 3) from Loop 2.2.x, please be aware that absorption times have changed. Also, the recommended insulin dose is already populated on the Bolus line for the Meal Bolus screen, so there is one less tap required to accept default settings.
 
 !!! warning "Loop-dev Carb Absorption Times"
     Loop uses the absorption time for the carbs, along with your glucose readings, ISF and CR to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See [Algorithm: Prediction](../algorithm/prediction.md) for more details.
@@ -42,10 +37,9 @@ If you switched to Loop-dev (not yet released as Loop 3) from Loop 2.2.x, please
 
 ## New Meals
 
-The figure below shows step-by-step instructions on initiating the meal entry in Loop. Note that when you tap continue this takes you to the Meal Bolus screen. The carb entry is not saved until you complete the Meal Bolus screen.
+The figure above shows simple instructions on initiating the meal entry in Loop. Note that when you tap continue this takes you to the Meal Bolus screen. The carb entry is not saved until you complete the Meal Bolus screen.
 
-![Add a carb entry](img/add-carb-entry.svg){width="900"}
-{align="center"}
+There are more refinements you can use if you prefer.
 
 To start recording your meal, simply enter the desired number of carbs in the `Amount Consumed` line.
 
@@ -68,6 +62,15 @@ The alternative food icons are revealed by tapping anywhere on `Food Type` row t
 Note that the lollipop, taco and pizza do not show up on the Nightscout screen whereas the alternative icons and labels are displayed.
 
 Regardless of the choice of icons on the `Food Type` row, you have the option to adjust the `Absorption Time` in half-hour increments from 30 minutes to 8 hours. (Note the dial may go past 8 hours, but it spins back to 8 if you try to exceed that time.) Loop will initially estimate your absorption time at 150% of the time that you enter. As a result, carbs entered using the taco icon will initially be treated as 4.5 hour absorption. More about this later in the [Dynamic Carb Absorption](carbs.md#dynamic-carb-absorption) section.
+
+Many Loopers increase the carbohydrate amount to cover the expected effect of protein and adjust the expected absorption time for fat in their meal entry. For simplicity, the rest of this page only refers to carbs because all the figures show carbs or carbohydrates in the menus. You should consider the whole meal, including fat and protein, especially if you eat lower carb.
+
+!!! warning "Things to Know"
+    * Do not enter carbs into your Medtronic pump
+        * If you use your Medtronic pump bolus wizard or carb entry screen, the pump will give you insulin but Loop will not know about the carbs
+        * The Loop predictions will be off and next time Loop reads the reservoir history on the pump, it will probably send your basal rate to zero
+    * If you enter carbs in the Nightscout careportal, they will not be detected by Loop
+        * There may be times you want to do this, e.g., you want to indicate a low treatment you don't want Loop to know about
 
 You do not have to enter all carbs for a meal at the same absorption or eating time. If you want to enter some of the meal's carbs as faster and some as slower, you can log the meal over several individual entries. For example, for meals that have sugary carbs as well as slow acting carbs (Chinese food), you may want to record some carbs as lollipop and some as pizza. Another example would be steak and potatoes, you may want to record the potatoes with a current start time and taco absorption and the steak with a start time of 1-2 hours into the future and a 5 hour absorption time.
 
