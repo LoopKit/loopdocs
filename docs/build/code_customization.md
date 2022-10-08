@@ -554,7 +554,7 @@ Use Finder to Navigate to the LoopWorkspace folder. These instructions assume yo
 1. Rebuild your app
 
 
-You may see a yellow alert that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than Loop app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).
+You may see a yellow warning that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than Loop app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).
 
 And now you'll be the proud new owner of a custom Loop icon.
 

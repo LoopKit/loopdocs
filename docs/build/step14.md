@@ -470,9 +470,9 @@ Now the Health permissions screen is active. Click on the `Turn All Categories O
 
 Next, you will use the [Set up App](../operation/overview.md) section of this website to keep proceeding safely.
 
-!!! question "FAQ: But what about those yellow alerts that remain in Xcode?"
+!!! question "FAQ: But what about those yellow or purple warnings that remain in Xcode?"
 
-    If you see yellow alerts during and after your build is done, those are not an issue. Just ignore the yellow alerts.
+    If you see yellow or purple warnings during and after your build is done, those are not an issue. Just ignore the yellow or purple warnings.
 
     ![img/yellow-warnings.png](img/yellow-warnings.png){width="750"}
     {align="center"}
