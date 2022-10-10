@@ -2,7 +2,7 @@
 
 !!! info "Time Estimate"
 
-    - 25 minutes, if Xcode and macOS are already updated to support current or desired iOS
+    - 25 minutes, if Xcode and macOS are already updated to support the current or desired iOS
     - up to 2 days, if need to install macOS and / or Xcode update(s)
 
 !!! abstract "Summary"
@@ -154,7 +154,7 @@ Paste the line of text into Terminal. Be sure to click anywhere in the terminal 
 
 #### Utilities
 
-Each graphic below shows the number you are instructed to type to proceed through the script and reach the utility menu. The words on this page also tell you what to type. Note there are several options in Utilities, you only need to use one to delete provisioning profiles. See [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select) webpage for additional information.
+Each graphic below shows the number you are instructed to type to proceed through the script and reach the utility menu. The words on this page also tell you what to type. Note there are several options in Utilities, you only need to use one to delete provisioning profiles. See the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select) webpage for additional information.
 
 When running this script:
 
