@@ -2321,6 +2321,13 @@
 <p align="center"><img alt="GIF showing selection of correction range" src="../img/corr-range.gif" width="300" /></p>
 <p>Do not let the yellow font discourage you if you want to have a "higher than typical" range to start with. Once you've used Loop for a while, you can revisit this setting.</p>
 <p><a href="#guardrails-for-correction-range"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></a></p>
+<h4 id="manual-vs-automated-dosing">Manual vs Automated Dosing<a class="headerlink" href="#manual-vs-automated-dosing" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Loop estimates future glucose over the next 6 hours (<abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>) and, when in closed loop, adjusts insulin dosing. Loop uses or recommends the <em>smallest</em> amount of insulin that will bring you to your target (<abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> midpoint) over the whole forecast.</p>
+<p>If you ask Loop for a manual <a href="../../operation/features/bolus/">Bolus</a> recommendation while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit.</p>
+<ul>
+<li>This is only if you manually request a bolus recommendation.</li>
+<li>Loop will <strong>not</strong> automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of your correction range.</li>
+</ul>
 <h3 id="pre-meal-range"><abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr><a class="headerlink" href="#pre-meal-range" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Your <abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr> is used to temporarily lower your glucose target before a meal to impact post-meal glucose spikes.</p>
 <p>The graphic below shows the information screen presented during onboarding or when user taps the information icon, &#9432;.</p>

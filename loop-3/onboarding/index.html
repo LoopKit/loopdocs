@@ -2426,7 +2426,7 @@
 <p>This is <strong>not</strong> an invitation for brand-new loopers to build Loop-dev as their first looping adventure.</p>
 </div>
 <p>Please review this page, <em>and the rest of the Loop 3 Section (which will become the Set Up section once Loop-dev is released),</em> before pressing any buttons on your phone with your new Loop 3 app.</p>
-<p>As soon as your app builds on your phone, you are guided through the onboarding (set up) process. You will see information screens for each Therapy Setting and <strong>must</strong> acknowledge each screen. You can review those informational screens later by clicking the <a href="../therapy-settings/"><abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr></a> screen.</p>
+<p>As soon as your app builds on your phone, you are guided through the onboarding (set up) process. You will see information screens for each Therapy Setting and <strong>must</strong> acknowledge each screen. You can review those informational screens later by clicking the <a href="../therapy-settings/"><abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr></a> screen after a pump has been added.</p>
 <p>Click on this <a href="https://drive.google.com/file/d/1NkS-YGREFn1UBmBbOjsD2Yy0ZUyEYM1l/view?usp=sharing">Video of Onboarding</a> link to watch the onboarding process for a pre-release version tested in March 2022.</p>
 <h3 id="entering-and-editing-values">Entering and Editing Values<a class="headerlink" href="#entering-and-editing-values" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This section explains how to enter and edit values with Loop 3.</p>
@@ -2465,7 +2465,7 @@
 <li>If the Apple Health units are mg/dL and you try to enter therapy settings suitable for mmol/L, or vice versa, the guardrails in Loop will prevent your entries</li>
 <li>If this happens:<ul>
 <li>Quit onboarding</li>
-<li>Follow the directions for <a href="../../faqs/apple-health-faqs/#how-do-i-change-glucose-units">How Do I Change Glucose Units</a></li>
+<li>Click on the link <a href="../../faqs/apple-health-faqs/#how-do-i-change-glucose-units">FAQs: How Do I Change Glucose Units?</a></li>
 <li>Start the Loop app again and Onboarding will restart</li>
 </ul>
 </li>
@@ -2474,8 +2474,8 @@
 <p>Each onboarding step is presented in order on this page. Please follow this document while entering values into your app for the first time.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Settings Help</p>
-<p>Please stay in <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> until you verify that your settings (basal rates, insulin sensitivity, carb ratio, etc) are correct. You may need time to identify which settings need to be adjusted.</p>
-<p>If you need help with your settings adjustment, head over to LoopTips for some <a href="https://loopkit.github.io/looptips/settings/settings/">initial settings help</a>.</p>
+<p>Please stay in <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> until you verify that your settings (basal rates, insulin sensitivity, carb ratio, etc) are properly adjusted to work with the Loop algorithm. You may need time to evaluate and perhaps identify settings to adjust.</p>
+<p>If you need help with your settings adjustment, you may find useful tips in the companion website, LoopTips at this link: <a href="https://loopkit.github.io/looptips/settings/settings/">LoopTips: Settings</a> tab.</p>
 </div>
 <h3 id="welcome-to-loop">Welcome to Loop<a class="headerlink" href="#welcome-to-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The first screen you will see is the Welcome to Loop screen shown in the graphic below. Tap on <code>Let's Go</code> to continue.</p>
@@ -2489,7 +2489,7 @@
 </ul>
 <p>You need to enable Health Permissions for Loop to work.</p>
 <p align="center"><img alt="setting up Apple Health permissions with Loop 3" src="../img/health-loop-3.svg" width="600" /></p>
-<p>You can review the permissions screen later using this <a href="../../faqs/apple-health-faqs/#tidepool-and-apple-healthkit">link</a>.</p>
+<p>You can review the permissions screen later. <a href="../../faqs/apple-health-faqs/#how-do-i-modify-apple-healthkit-permissions">FAQS: How Do I Modify Apple HealthKit Permissions</a>.</p>
 <h3 id="connect-loop-to-nightscout">Connect Loop to Nightscout<a class="headerlink" href="#connect-loop-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The next screen, shown on the left of the graphic below, enables the user to both connect Loop to Nightscout and to <strong>download existing Loop settings</strong> from Nightscout.</p>
 <div class="admonition question">
@@ -2521,7 +2521,7 @@
 <li><abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr><ul>
 <li>An informational graphic is shown before you are asked to enter or confirm each therapy setting</li>
 <li>This Onboarding Page provides a brief summary of each therapy setting.<ul>
-<li>Each onboarding therapy setting  has a link to a more detailed description of the  <a href="../therapy-settings/"><abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr></a>.</li>
+<li>Each setting section on this page has a link to a more detailed description of that setting on the <a href="../therapy-settings/"><abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr></a> page.</li>
 <li>If you follow a link, click on your browser back button to return to your place on this Onboarding page</li>
 </ul>
 </li>
@@ -2542,6 +2542,7 @@
 </ul>
 </li>
 </ul>
+<h4 id="guardrails-while-onboarding"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> While Onboarding<a class="headerlink" href="#guardrails-while-onboarding" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning - Outside Typical?</p>
 <p>The <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> have "guardrails" to warn you if your settings are unusual.</p>
@@ -2551,13 +2552,14 @@
 <li>It's fine to put Glucose Safety or Correction Ranges <strong>higher</strong> than "is typical"</li>
 <li>It's fine to put <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr> <strong>lower</strong> than "is typical"</li>
 </ul>
-<p>Take yellow indications with a grain of salt</p>
-<ul>
-<li>It's OK to ignore "yellow" warnings when being conservative</li>
-<li>Experienced loopers may choose to ignore "yellow" warnings to be more aggressive</li>
-</ul>
-<p>A red limit cannot be exceeded without modifying the code itself.</p>
 </div>
+<p>Take the yellow (and red) indications with a grain of salt. You will get an extra <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screen that you must acknowledge. Simply confirm your choice and keep going.</p>
+<ul>
+<li>It's OK to ignore warnings when being conservative</li>
+<li>Experienced loopers may choose to ignore warnings to be more aggressive</li>
+</ul>
+<p>A red limit cannot be exceeded without modifying the code itself. But values that show up as red can be saved - they are valid therapy selections.</p>
+<p>The <a href="../therapy-settings/#guardrails-for-settings"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Settings</a> are summarized on the <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> page.</p>
 <h3 id="glucose-safety-limit"><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr><a class="headerlink" href="#glucose-safety-limit" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If Loop predicts that your glucose will go below the <a href="../therapy-settings/#glucose-safety-limit"><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr></a> at any time in the next 3 hours and Loop is in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr>, it will set a temporary basal rate of 0 U/hr in an attempt to prevent that future low.</p>
 <p>If you ask Loop for a bolus recommendation, and loop predicts your glucose will go below the <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit">Glucose Safety Limit</abbr> at any time in the next 3 hours, no bolus will be recommended.</p>
@@ -2568,7 +2570,9 @@
 <p class="admonition-title"><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> vs Time in Range</p>
 <p>For example, you may choose a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but you may monitor your "success" or Time in Range using 70-180 mg/dL (3.9-10 mmol/L).</p>
 </div>
-<p>If you ask Loop for a <a href="../features/#manual-bolus">manual bolus recommendation</a> while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit.</p>
+<h4 id="manual-vs-automated-dosing">Manual vs Automated Dosing<a class="headerlink" href="#manual-vs-automated-dosing" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Loop estimates future glucose over the next 6 hours (<abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>) and, when in closed loop, adjusts insulin dosing. Loop uses or recommends the <em>smallest</em> amount of insulin that will bring you to your target (<abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> midpoint) over the whole forecast.</p>
+<p>If you ask Loop for a manual <a href="../../operation/features/bolus/">Bolus</a> recommendation while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit.</p>
 <ul>
 <li>This is only if you manually request a bolus recommendation.</li>
 <li>Loop will <strong>not</strong> automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of your correction range.</li>
@@ -2577,7 +2581,7 @@
 <p>The <a href="../therapy-settings/#pre-meal-range"><abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a>, which is optional, gives you a small amount of insulin before a meal to help control post-meal glucose spikes. The <a href="../../operation/features/premeal/">pre-meal icon</a> is inactive if you choose not to enter a range.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Example</p>
-<p>If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you extra insulin to get you to the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the <a href="../../operation/features/premeal/">pre-meal icon</a> in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.</p>
+<p>If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you extra insulin to move you towards the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the <a href="../../operation/features/premeal/">pre-meal icon</a> in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.</p>
 </div>
 <h3 id="basal-rates">Basal Rates<a class="headerlink" href="#basal-rates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Only one <a href="../therapy-settings/#basal-rates">Basal Rate</a> schedule may be configured in the Loop app and the schedule must start at midnight.</p>
