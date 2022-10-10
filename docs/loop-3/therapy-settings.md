@@ -87,6 +87,14 @@ Do not let the yellow font discourage you if you want to have a "higher than typ
 
 [Guardrails for Correction Range](#guardrails-for-correction-range)
 
+#### Manual vs Automated Dosing
+
+Loop estimates future glucose over the next 6 hours (DIA) and, when in closed loop, adjusts insulin dosing. Loop uses or recommends the _smallest_ amount of insulin that will bring you to your target (Correction Range midpoint) over the whole forecast.
+
+If you ask Loop for a manual [Bolus](../operation/features/bolus.md) recommendation while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit.
+
+* This is only if you manually request a bolus recommendation.
+* Loop will **not** automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of your correction range.
 
 ### Pre-Meal Range
 
