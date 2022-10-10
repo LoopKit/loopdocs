@@ -119,7 +119,7 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
     Pay special attention to [Insulin and Apple HealthKit](../faqs/algorithm-faqs.md#insulin-and-apple-healthkit) section.
 
 
-### Carbohydrate Chart
+### Active Carbohydrates Chart
 
 ![Active carbohydrate chart showing measured rise and fall based on entries and settings](../operation/loop-settings/img/carb_graph.jpg){width="400"}
 {align="center"}
