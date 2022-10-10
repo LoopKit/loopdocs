@@ -2,7 +2,7 @@
 
 !!! info "Time Estimate"
 
-    - 25 minutes, if Xcode and macOS are updated
+    - 25 minutes, if Xcode and macOS are already updated to support current or desired iOS
     - up to 2 days, if need to install macOS and / or Xcode update(s)
 
 !!! abstract "Summary"
@@ -23,7 +23,7 @@
     - **"Do I delete my old Loop app first?"** Definitely **not**! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
     - **"Do I need to start a new pod when I update?"** No. Your existing pod session will continue seamlessly if you are using the same Developer Account to sign the Loop app targets as you did the last time you built.
     - **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account used when your existing app was built (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
-    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check your new computer has the required compatible versions and then build your app. This will include installing Xcode and configuring Xcode preferences. There is no need to delete provisioning profiles on a brand new computer, but no harm comes from following the instruction.
+    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check that your new computer has the required compatible versions and then build your app. This will include installing Xcode and configuring Xcode preferences. There is no need to delete provisioning profiles on a brand new computer, but no harm comes from following the instruction.
 
 ## When to Update Loop
 
@@ -110,7 +110,7 @@ Advanced users: If you are finding installation of Xcode from the App Store incr
 
 !!! warning "WARNING"
 
-    If you fail to have [Xcode](step8.md) or [Xcode Command Line Tools](step9.md) installed, you will get one of these error when you attempt to run the build-select script (or something similar):
+    If you fail to have [Xcode](step8.md) or [Xcode Command Line Tools](step9.md) installed, you will get one of these errors (or something similar) when you attempt to run the Build Select Script:
 
     * xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
     * xcrun: error: active developer path ("/Applications/Xcode.app/Contents/Developer") does not exist
@@ -150,11 +150,11 @@ Copy the line below that starts with `/bin/bash` by hovering the mouse near the 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
 ```
 
-Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.)
+Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script.
 
 #### Utilities
 
-Each graphic below shows the number you are instructed to type to proceed through the script and reach the utility menu. The words on this page also tell you what to type. Note there are several options in Utilities, you only need to use one to delete provisioning profiles. See [Loop and Learn Build Select](https://www.loopandlearn.org/build-select) webpage for additional information.
+Each graphic below shows the number you are instructed to type to proceed through the script and reach the utility menu. The words on this page also tell you what to type. Note there are several options in Utilities, you only need to use one to delete provisioning profiles. See [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select) webpage for additional information.
 
 When running this script:
 
