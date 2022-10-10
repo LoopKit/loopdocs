@@ -11,7 +11,7 @@
 
 Please review this page, _and the rest of the Loop 3 Section (which will become the Set Up section once Loop-dev is released),_ before pressing any buttons on your phone with your new Loop 3 app.
 
-As soon as your app builds on your phone, you are guided through the onboarding (set up) process. You will see information screens for each Therapy Setting and **must** acknowledge each screen. You can review those informational screens later by clicking the [Therapy Settings](therapy-settings.md) screen.
+As soon as your app builds on your phone, you are guided through the onboarding (set up) process. You will see information screens for each Therapy Setting and **must** acknowledge each screen. You can review those informational screens later by clicking the [Therapy Settings](therapy-settings.md) screen after a pump has been added.
 
 Click on this [Video of Onboarding](https://drive.google.com/file/d/1NkS-YGREFn1UBmBbOjsD2Yy0ZUyEYM1l/view?usp=sharing) link to watch the onboarding process for a pre-release version tested in March 2022.
 
@@ -44,7 +44,7 @@ First time connecting a glucose monitoring device to your phone's Apple Health a
 * If the Apple Health units are mg/dL and you try to enter therapy settings suitable for mmol/L, or vice versa, the guardrails in Loop will prevent your entries
 * If this happens:
     * Quit onboarding
-    * Follow the directions for [How Do I Change Glucose Units](../faqs/apple-health-faqs.md#how-do-i-change-glucose-units)
+    * Click on the link [FAQs: How Do I Change Glucose Units?](../faqs/apple-health-faqs.md#how-do-i-change-glucose-units)
     * Start the Loop app again and Onboarding will restart
 
 ## Onboarding Steps
@@ -52,9 +52,9 @@ First time connecting a glucose monitoring device to your phone's Apple Health a
 Each onboarding step is presented in order on this page. Please follow this document while entering values into your app for the first time.
 
 !!! abstract "Settings Help"
-    Please stay in Open Loop until you verify that your settings (basal rates, insulin sensitivity, carb ratio, etc) are correct. You may need time to identify which settings need to be adjusted.
+    Please stay in Open Loop until you verify that your settings (basal rates, insulin sensitivity, carb ratio, etc) are properly adjusted to work with the Loop algorithm. You may need time to evaluate and perhaps identify settings to adjust.
 
-    If you need help with your settings adjustment, head over to LoopTips for some [initial settings help](https://loopkit.github.io/looptips/settings/settings/).
+    If you need help with your settings adjustment, you may find useful tips in the companion website, LoopTips at this link: [LoopTips: Settings](https://loopkit.github.io/looptips/settings/settings/) tab.
 
 ### Welcome to Loop
 
@@ -77,7 +77,7 @@ You need to enable Health Permissions for Loop to work.
 ![setting up Apple Health permissions with Loop 3](img/health-loop-3.svg){width="600"}
 {align="center"}
 
-You can review the permissions screen later using this [link](../faqs/apple-health-faqs.md#tidepool-and-apple-healthkit).
+You can review the permissions screen later. [FAQS: How Do I Modify Apple HealthKit Permissions](../faqs/apple-health-faqs.md#how-do-i-modify-apple-healthkit-permissions).
 
 ### Connect Loop to Nightscout
 
@@ -111,7 +111,7 @@ The therapy settings are the heart of how Loop makes predictions. If your settin
 * Therapy Settings
     * An informational graphic is shown before you are asked to enter or confirm each therapy setting
     * This Onboarding Page provides a brief summary of each therapy setting.
-        * Each onboarding therapy setting  has a link to a more detailed description of the  [Therapy Settings](therapy-settings.md).
+        * Each setting section on this page has a link to a more detailed description of that setting on the [Therapy Settings](therapy-settings.md) page.
         * If you follow a link, click on your browser back button to return to your place on this Onboarding page
     * While onboarding, you will see, in order:
         * Glucose Safety Limit
@@ -124,6 +124,8 @@ The therapy settings are the heart of how Loop makes predictions. If your settin
         * Carb Ratios
         * Insulin Sensitivites
 
+#### Guardrails While Onboarding
+
 !!! warning "Warning - Outside Typical?"
     The Therapy Settings have "guardrails" to warn you if your settings are unusual.
 
@@ -132,13 +134,14 @@ The therapy settings are the heart of how Loop makes predictions. If your settin
     * It's fine to put Glucose Safety or Correction Ranges **higher** than "is typical"
     * It's fine to put Delivery Limits **lower** than "is typical"
 
-    Take yellow indications with a grain of salt
+Take the yellow (and red) indications with a grain of salt. You will get an extra modal screen that you must acknowledge. Simply confirm your choice and keep going.
 
-    * It's OK to ignore "yellow" warnings when being conservative
-    * Experienced loopers may choose to ignore "yellow" warnings to be more aggressive
+* It's OK to ignore warnings when being conservative
+* Experienced loopers may choose to ignore warnings to be more aggressive
 
-    A red limit cannot be exceeded without modifying the code itself.
+A red limit cannot be exceeded without modifying the code itself. But values that show up as red can be saved - they are valid therapy selections.
 
+The [Guardrails for Settings](therapy-settings.md#guardrails-for-settings) are summarized on the Therapy Settings page.
 
 ### Glucose Safety Limit
 
@@ -155,7 +158,11 @@ Loop uses the [Correction Range](therapy-settings.md#correction-range) as the go
 !!! note "Correction Range vs Time in Range"
     For example, you may choose a correction range of 100-110 mg/dL (5.6-6.1 mmol/L) for Loop, but you may monitor your "success" or Time in Range using 70-180 mg/dL (3.9-10 mmol/L).
 
-If you ask Loop for a [manual bolus recommendation](features.md#manual-bolus) while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit.
+#### Manual vs Automated Dosing
+
+Loop estimates future glucose over the next 6 hours (DIA) and, when in closed loop, adjusts insulin dosing. Loop uses or recommends the _smallest_ amount of insulin that will bring you to your target (Correction Range midpoint) over the whole forecast.
+
+If you ask Loop for a manual [Bolus](../operation/features/bolus.md) recommendation while your current glucose is below the bottom of the correction range and above the glucose safety limit, Loop will recommend a value that should keep your glucose above the safety limit.
 
 * This is only if you manually request a bolus recommendation.
 * Loop will **not** automatically provide extra insulin, via high temp basal or automatic bolus, until your current glucose is higher than the bottom of your correction range.
@@ -166,8 +173,7 @@ If you ask Loop for a [manual bolus recommendation](features.md#manual-bolus) wh
 The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, gives you a small amount of insulin before a meal to help control post-meal glucose spikes. The [pre-meal icon](../operation/features/premeal.md) is inactive if you choose not to enter a range.
 
 !!! abstract "Example"
-    If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you extra insulin to get you to the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
-
+    If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you extra insulin to move you towards the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
 ### Basal Rates
 
