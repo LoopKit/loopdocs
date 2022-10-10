@@ -146,7 +146,7 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 
 * Event History: Event history is a detailed accounting of all pump/pod actions. Both Medtronic and Omnipod users will have a detailed record of event history. If you tap on an event, you get more detail. Turn your phone to landscape to improve readability.
 
-### Carbohydrate Chart
+### Active Carbohydrates Chart
 
 ![Active carbohydrate chart showing measured rise and fall based on entries and settings](img/carb_graph.jpg){width="400"}
 {align="center"}
