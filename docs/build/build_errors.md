@@ -33,7 +33,7 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating Loop code.
 
-1. Open your project in Xcode as normal. Then go to the Xcode menu at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.
+1. Open your project in Xcode as normal. Then go to the menu bar at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.
 1. On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.
 1. If you are updating Loop and did not [Delete Old Provisioning Profiles](updating.md#delete-provisioning-profiles), do it now
 1. Return to Xcode and try building your app again.
