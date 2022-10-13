@@ -99,7 +99,7 @@ The two graphics below are examples of manual bolus screens.
 
 ### Recommended Bolus
 
-Loop reassesses the glucose prediction every time a new glucose reading is detected, typically every 5 minutes. If Loop predicts your glucose will be above the high end of your Correction Range at the end of the Duration of Insulin Activity (DIA) and the predicted glucose is above the Glucose Safety Threshold, it will provide a Recommended Bolus. Loop will not give an alert when a bolus is being recommended, the bolus entry tool must be clicked to check for one. The Loop pill in Nightscout will display when Loop is recommending a bolus.
+Loop updates the glucose prediction every time a new glucose reading is detected, typically every 5 minutes. If Loop predicts your glucose will be above the high end of your Correction Range at the end of the Duration of Insulin Activity (DIA) and the predicted glucose is above the Glucose Safety Threshold, it will provide a Recommended Bolus. Loop will not give an alert when a bolus is being recommended, the bolus entry tool must be clicked to check for one. The Loop pill in Nightscout will display when Loop is recommending a bolus.
 
 * If your **Dosing Strategy** is set to **Temp Basal** (default)
     * Loop will provide increased temporary basal rates until it has delivered enough insulin to bring predicted glucose into range
