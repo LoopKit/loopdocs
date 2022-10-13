@@ -73,7 +73,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Glucose Chart**: Display of measured and predicted glucose values
 
-**Glucose Safety Limit**: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit
+**Glucose Safety Limit**: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold
 
 **Guardrails**: limits in the code for user selected settings, recommended and absolute limits are provided
 

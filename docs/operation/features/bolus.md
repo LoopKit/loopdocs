@@ -1,28 +1,111 @@
 # Bolus
 
+This page was updated with information for Loop-dev which will soon be released as Loop 3.
+
+### Loop 2 and 3 Differences
+
+Most of the information is the same for Loop 2.2.x (or FreeAPS) and Loop 3. 
+
+Loop 2 and 3 differences:
+
+* Bolus Row: 
+    * With Loop 3
+        * The Recommended Bolus is provided AND the default for the Bolus is the recommended value
+        * If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry
+    * With Loop 2.2.x
+        * The Recommended Bolus is provided but the default for the Bolus value is 0
+        * If the user taps on the Recommended Bolus row, the recommended amount is transferred to the Bolus row
+* Loop 3 uses the setting name of Glucose Safety Limit, which has the same meaning as Suspend Threshold in Loop 2
+
+## Meal Bolus
+
+The **Meal Bolus** screen is entered following a carb entry or edit action, the active button might be **Save and Bolus** or, if no bolus was recommended, **Save without Bolusing**. 
+
+The **Save** refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen (Loop 3 only).
+
+You can review the carb information at the [Meal Entry](carbs.md) link.
+
+
+### Accept Recommendation
+
+The graphic below shows the Meal Bolus screen after the user entered carbs and tapped continue:
+
+* The left graphic shows a case where a bolus is recommended - tapping on the **Save and Deliver** button saves the carbs and delivers the bolus
+* The right graphic shows a case where no bolus is recommended - tapping on the **Save without Bolusing** saves the carbs
+* These graphics are taken from a small phone - the left graphic shows all the information at once whereas the right graphic has an extra information message that requires the user to scroll to see the **Recommended Bolus** and **Bolus** rows
+* For both graphics
+    * Active Carbs and Active Insulin are displayed above the **Glucose** prediction graph - these are accurate at the time this screen is entered (before carbs or bolus are saved)
+    * The Bolus Summary is presented below the **Glucose** prediction graph with three rows:
+        * **Carb Entry**, the proposed carbs with the time to add the carbs and the absorption time displayed - to modify that information, tap on the **< Carb Entry** button at upper left
+        * **Recommended Bolus** displays what Loop recommends for that proposed **Carb Entry**
+        * **Bolus** default display is what Loop recommends, but user can edit that value
+
+![meal bolus when bolus is recommended on left and not recommended on right](../../loop-3/img/loop-3-meal-bolus-rec.svg){width="900"}
+{align="center"}
+
+If a CGM entry arrives while in this screen, a **Bolus Recommendation Updated** modal message will be displayed and must be acknowledged.
+
+### Modify Bolus
+
+This section is a continuation of the information presented in the [Accept Recommendation](#accept-recommendation) section above. In the graphic below, the user overrides the recommended bolus.
+
+* The left side shows a modified bolus less than the recommended bolus
+* The right side shows a modified bolus greater than the recommended bolus
+* The **Glucose** prediction graph updates with changes to the **Bolus** value, giving the user the opportunity to accept or change their proposed value before tapping **Save and Deliver**
+* At the next Loop cycle, the app modifies insulin delivery based on the saved information
+    * For the example with bolus less than recommended amount:
+        * Loop will **NOT** begin to automatically increase insulin delivery until the current glucose is above the bottom of the **Correction** range
+        * The recommendation to add insulin when the current glucose is below the **Correction Range** is only offered as a manual feature and is limited to an amount predicted to maintain glucose above the **Safety Threshold**
+    * For the example with bolus greater than recommended amount:
+        * Loop will probably issue an automatic temp basal of 0 U/hr
+        * This is a common "super-bolus" scenario; in other words, "borrow" basal for the meal bolus to limit post meal spikes
+* Remember - the **Glucose** prediction is what happens if you **Save and Deliver** and then no further adjustments are made to insulin delivery by Loop
+
+![meal bolus when bolus recommended is decreased on left and increased on right](../../loop-3/img/loop-3-meal-bolus-mod-rec.svg){width="900"}
+{align="center"}
+
+## Manual (or Correction) Bolus
+
 To start a bolus entry, tap on the double orange triangles (circled below) in the toolbar at the bottom of the Loop status screen.
 
 ![Loop toolbar](img/toolbar-bolus.svg){width="300"}
 {align="center"}
 
-The Loop app will open to the Bolus screen. This looks similar to the [Meal Bolus](carbs.md#meal-bolus) screen, but doesn't list the meal entry. If Loop predicts you need more insulin, there will be a recommended value. In this example, the current glucose is below the correction range, but the prediction is well above the range. Loop allows you to dip below the correction range but its recommended bolus will be limited by your Suspend Threshold. Check back once your blood glucose (BG) starts to rise and there will probably be a bigger recommendation.
+The Loop app will open to the Bolus screen. This looks similar to the [Meal Bolus](#meal-bolus) screen without the Carb Entry row. Loop considers the Glucose Safety Limit and Predicted Glucose when determining the recommended bolus. 
 
-You can tap on the `Recommended` line and that value will be transferred to the Bolus line or tap on 0.0u on the `Bolus` row and type in your desired bolus amount. As soon as a value is entered on the `Bolus` row, the Deliver button turns blue and can be tapped to deliver that amount via your pump.
+In the graphic below, the current glucose is under the Correction Range. Loop allows you to dip below the correction range but its recommended bolus will be limited by the glucose prediction and the Glucose Safety Limit. Check back once your glucose starts to rise and there will probably be a bigger recommendation.
 
-![Bolus when below correction range](img/below-min.svg){width="300"}
+This screen behaves differently for [Loop 2.2.x](#loop-2-bolus-screen) and Loop 3. The graphics and instruction on this page are for Loop 3 version. Click on the Loop 2.2.x link above to view the Loop 2 version.
+
+When the **Bolus** screen is entered directly from the toolbar, the button choices are **Enter Bolus** if none is recommended, **Deliver** if a value is on the **Bolus** row or **Cancel** using the button on the upper left. The user can also tap on the value on the **Bolus** row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
+
+The two graphics below are examples of manual bolus screens. 
+
+* In the first graphic, no bolus was recommended
+    * If you tap on the **Enter Bolus** button at the bottom, it brings up a screen to enable you to type in an amount and then **Deliver** it. 
+    * Alternatively, you can tap the **0** amount in the **Bolus** row and perform the same action as the **Enter Bolus** button
+    * If you do not want to override the recommendation, hit the **Cancel** button at upper left.
+
+![manual bolus when no bolus recommended](../../loop-3/img/loop-3-manual-bolus-no-rec.svg){width="350"}
 {align="center"}
 
+* In the second graphic, a recommended amount is shown
+    * If you tap on **Deliver** that recommended dose is delivered
+    * If you tap on the value on the **Bolus** row, you can override the amount
+    * The amount displayed on the **Bolus** row is modified to 0 U with the first tap - at that point, you may enter a new value or tap **Cancel** using the button at upper left of the screen
 
-## Correction Bolus
+![manual bolus when bolus is recommended](../../loop-3/img/loop-3-manual-bolus-rec.svg){width="350"}
+{align="center"}
 
-Loop reassesses your insulin needs every time a new BG reading is detected, typically every 5 minutes. If Loop predicts that your BG will be above the high end of your correction range at the end of the Duration of Insulin Activity (DIA) and that your BG will not dip below the suspend threshold at any point during that time period, it will calculate a Correction Bolus. Loop will not give an alert when a correction bolus is being recommended, the bolus entry tool must be clicked to check for one. The Loop pill in Nightscout will display when Loop is recommending a correction bolus.
+### Recommended Bolus
 
-* If your `Dosing Strategy` is set to `Temp Basal` (default)
-    * Loop will provide increased temporary basal rates until it has delivered enough insulin to bring predicted BG into range
+Loop reassesses the glucose prediction every time a new glucose reading is detected, typically every 5 minutes. If Loop predicts your glucose will be above the high end of your Correction Range at the end of the Duration of Insulin Activity (DIA) and the predicted glucose is above the Glucose Safety Threshold, it will provide a Recommended Bolus. Loop will not give an alert when a bolus is being recommended, the bolus entry tool must be clicked to check for one. The Loop pill in Nightscout will display when Loop is recommending a bolus.
+
+* If your **Dosing Strategy** is set to **Temp Basal** (default)
+    * Loop will provide increased temporary basal rates until it has delivered enough insulin to bring predicted glucose into range
     * The increased temporary basal rates are subject to your Delivery Limits.
-    <br/><br/>
 
-* If your `Dosing Strategy` is set to `Automatic Bolus`
+* If your **Dosing Strategy** is set to **Automatic Bolus**
     * Loop will recalculate the correction bolus at each successive loop interval, i.e., every 5 minutes
     * Loop will then automatically deliver 40% of that new correction value
     * Each automatic bolus is subject to your Delivery Limits
@@ -45,14 +128,28 @@ If you see a 'pump is suspended notice' in the bolus status line after cancellin
 
 ## Bolus Failure Notifications
 
-On occasion, you will receive a notification that a bolus may have failed. If your `Dosing Strategy` is set to `Automatic Bolus`, this can happen when an automatic bolus is in progress. In some of these cases, the bolus was delivered. On a Medtronic pump, you should check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.  Omnipod users can hear the clicks if the room is quiet enough.
+On occasion, you will receive a notification that a bolus may have failed. If your **Dosing Strategy** is set to **Automatic Bolus**, this can happen when an automatic bolus is in progress. In some of these cases, the bolus was delivered. On a Medtronic pump, you should check the pump screen to verify the bolus status before attempting to redeliver a failed bolus.  Omnipod users can hear the clicks if the room is quiet enough.
 
 If you get an uncertain delivery message, you may still see the "bolused xx of yy" display continue for as long as it would have taken to actually deliver the bolus. This display is driven by a timer and logic on the phone. (Loop is not asking the pump repeatedly - "are you done yet?"). You may want to interrupt an uncertain bolus if it is large, evaluate status and then resume with a fresh bolus. Loop should update the status the next time it contacts the pump. It can determine whether that bolus actually went through or not and will update the screen.  Look at the Event History screen (accessed by tapping the Active Insulin or Insulin Delivery plots). Turn your phone to landscape orientation and you should see either "Certain" or "Uncertain" at the end of each Bolus record. (If you tap on the specific record, even more detail is displayed.)
 
 If an "uncertain" delivery is not resolved:
 
 * Make sure the RileyLink compatible device is communicating properly
-* With Omnipod, you can execute a [Read Pod Status](../loop-settings/pump-commands.md#read-pod-status) to ensure communication with the pod is working
+* You can try to turn off Bluetooth and the turn it back on again
 * [Quit the Loop app](https://support.apple.com/en-us/HT201330) and restart it. (Note - this is different from a power cycle of the phone which remembers settings within an app which was running before the power cycle.)
 
 If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then [post](../../intro/loopdocs-how-to.md#how-to-find-help) on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.
+
+There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](../../loop-3/displays_v3.md) page.
+
+
+## Loop 2 Bolus Screen
+
+* Loop 2.2.x shows the recommded bolus but the bolus row is intially set to 0
+    * You can tap on the **Recommended** line and that value will be transferred to the Bolus line
+    * OR 
+    * You can tap on 0.0u on the **Bolus** row and type in your desired bolus amount
+    * As soon as a value is entered on the **Bolus** row, the Deliver button turns blue and can be tapped to deliver that amount via your pump.
+
+    ![Bolus when below correction range](img/below-min.svg){width="300"}
+    {align="center"}
