@@ -1,5 +1,22 @@
 # Meal Entry
 
+This page was updated with information for Loop-dev which will soon be released as Loop 3.
+
+### Loop 2 and 3 Differences
+
+Most of the information is the same for Loop 2.2.x (or FreeAPS) and Loop 3. 
+
+Loop 2 and 3 differences:
+
+* [Time](#time): Loop 3 adds the +/- 15 minute buttons to adjust time for entry
+* [Food Type](#food-type): emoji keyboard
+    * Loop 3 initially displays Medium emojis and the association of some emojis with absorption time has been improved
+    * Loop 2.2.x initially displays Fast emojis
+* [Absorption Time](#absorption-time): values for fast, medium and slow
+    * Loop 3 uses 30 minutes, 3 hr, 5 hr
+    * Loop 2.2.x uses 2 hr, 3 hr, 4 hr
+* [Meal Bolus](bolus.md#meal-bolus): Loop 3 fills in the Bolus row with Recommended Bolus 
+
 ## Meal Entry - Fast Version
 
 To start a new meal entry, tap on the green plate icon (circled below) in the toolbar at the bottom of the Loop status screen. Your Loop app will open to the **Add Carb Entry** screen.
@@ -7,10 +24,11 @@ To start a new meal entry, tap on the green plate icon (circled below) in the to
 ![Loop toolbar](img/toolbar-meal.svg){width="300"}
 {align="center"}
 
-**Loop assumes carbs saved will be absorbed and Loop will adjust automated dosing based on that entry when Closed Loop is enabled.**
+**Loop assumes carbs saved will be absorbed and Loop will adjust recommended insulin, and, when Closed Loop is enabled, Loop will adjust automated dosing based on those carbs.**
 
 * Loop updates the carb estimate dynamically based on your glucose while meal is active
 * Approximate entry is "good enough"; better to underestimate carbs than to overestimate
+* The Loop recommended bolus can be modified by editing the **Bolus** amount after tapping the **Continue** button on the **Add** or **Edit Carb Entry** screen.
 
 !!! tip "Beginner's Tip"
     * Add some amount of carbs when you normally would dose before or at a meal
@@ -18,29 +36,9 @@ To start a new meal entry, tap on the green plate icon (circled below) in the to
         * If the amount seems too large, you might need to reduce Amount Consumed entry or adjust settings
     * Accept the defaults as directed below
 
-### Loop 2 - Fast Meal Entry
+### Meal Entry
 
-This section is for users of the released version of Loop (or any version of FreeAPS).
-
-Skip ahead to [Loop 3 - Fast Meal Entry](#loop-3-fast-meal-entry) if using Loop-dev (soon to be released as Loop 3).
-
-Tap meal entry icon on toolbar
-
-1. Enter number of grams of carbs in the Amount Consumed row
-1. Tap continue to advance to the Meal Bolus screen
-1. Tap Recommended line to transfer the value to the Bolus line (Loop 2.2.x)
-1. Tap Deliver
-
-![Add a carb entry](img/add-carb-entry.svg){width="600"}
-{align="center"}
-
-By tapping on the **Active Carbohydrates** chart on the main Loop display, previously entered carbs can be edited, refer to [Edit Meals](#edit-meals).
-
-Skip ahead to [Loop 2 and 3 Differences](#loop-2-and-3-differences) to see differences between Loop 2.2.x and Loop 3.
-
-### Loop 3 - Fast Meal Entry
-
-This section is for users of Loop-dev (soon to be released as Loop 3).
+The steps and graphics in this section are for users of Loop-dev (soon to be released as Loop 3). To view the version used by Loop 2.2.x, click on this [link](#loop-2-fast-meal-entry).
 
 Tap the meal entry icon on the toolbar to open the **Add Carb Entry** screen:
 
@@ -48,7 +46,7 @@ Tap the meal entry icon on the toolbar to open the **Add Carb Entry** screen:
 1. Tap continue to advance to the **Meal Bolus** screen (as shown in graphic below)
 1. Tap Save and Deliver to Save the carbs and Deliver the recommended bolus
 
-The carbs are not saved until the **Meal Bolus** screen is completed.
+The carbs are not saved until the [**Meal Bolus**](bolus.md#meal-bolus) screen is completed.
 
 * If no bolus is recommended in the **Meal Bolus** screen:
     * A No Bolus Recommended warning appears with the reason why
@@ -60,17 +58,6 @@ The carbs are not saved until the **Meal Bolus** screen is completed.
 
 By tapping on the **Active Carbohydrates** chart on the main Loop display, previously entered carbs can be edited, refer to [Edit Meals](#edit-meals).
 
-### Loop 2 and 3 Differences
-
-Note, the information on this page has been updated for Loop 3. Most of the information is the same for Loop 2.2.x. Examples of Loop 3 only features:
-
-* [Time](#time): Loop 3 adds the +/- 15 minute buttons to adjust time for entry
-* [Food Type](#food-type): emoji keyboard
-    * Loop 2.2.x initially displays Fast emojis
-    * Loop 3 initially displays Medium emojis and the association of some emojis with absorption time has been improved
-* [Absorption Time](#absorption-time): values for fast, medium and slow
-    * Loop 2.2.x uses 2 hr, 3 hr, 4 hr
-    * Loop 3 uses 30 minutes, 3 hr, 5 hr
 
 ## Meal Entry Row by Row
 
@@ -270,3 +257,21 @@ Please see Loop 2 [Permissions](../../build/health.md#loop-permissions).
 ## Carb Absorption Model
 
 For more information about the way Loop models the effects of carbs, insulin, etc., see the [algorithm page](../algorithm/prediction.md).
+
+## Loop 2 - Fast Meal Entry
+
+This section is for users of Loop 2.2.x (or FreeAPS).
+
+Tap meal entry icon on toolbar
+
+1. Enter number of grams of carbs in the Amount Consumed row
+1. Tap continue to advance to the Meal Bolus screen
+1. Tap Recommended line to transfer the value to the Bolus line (Loop 2.2.x)
+1. Tap Deliver
+
+The carbs are not saved until the [**Meal Bolus**](bolus.md#meal-bolus) screen is completed.
+
+![Add a carb entry](img/add-carb-entry.svg){width="600"}
+{align="center"}
+
+By tapping on the **Active Carbohydrates** chart on the main Loop display, previously entered carbs can be edited, refer to [Edit Meals](#edit-meals).
