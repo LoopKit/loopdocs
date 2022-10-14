@@ -319,25 +319,3 @@ The Status Row is located immediately below the CGM, Loop and Pump Icons and is 
 |If a higher priority message is not displayed in the `Status Row` and an override is active, the override symbol and name, along with the time at which the override expires, is displayed. <br><br>Tapping on the `Status Row` opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the [Overrides](../operation/features/workout.md) instructions.|
 |<br><br>![Pre-meal Preset message with until time stamp message](img/status-row-pre-meal.svg){width="350"}|
 |If a higher priority message is not displayed in the `Status Row` and the Pre-Meal Range is active in the toolbar, the `Pre-meal Preset, until time stamp` is displayed. Tapping on the status row has no effect for this message.<br><br>**New with Loop 3:** The Pre-Meal Preset can be engaged with an Override. When both are active, the Pre-Meal Range supersedes the range of the active Override, but the other settings for that Override still apply. When both are active, the `Status Row` message reflects the Override with both the PreMeal and Override icons in the toolbar highlighted.|
-
-
-## Loop Widget on Lock Screen
-
-Loop has a widget which can be added to the lock screen. The example graphic below shows the Dexcom G6 widget above the Loop 3 (old-style) widget.
-
-![widget on lock screen, dex above, loop below](img/dex-loop-3-widget.svg){width="300"}
-{align="center"}
-
-!!! info "New to Loop or never added a widget before"
-
-    * There is a difference in behavior between "new-style" Widgets and "old-style" Widgets
-        * New-Style Widgets: always appear at the top of your Today View, can be changed by long-pressing on one and then dragging around, or can be added with the &plus; button in edit mode
-        * Old-Style Widgets, like that available with Loop: use a different method to install
-    * Make sure your phone is unlocked, then swipe from the Home Screen to get to Today View
-        * You can't edit the screen if you start from a locked phone
-    * Start the Edit mode (where all of the icons are shaking), either by long-pressing on one of the new-style widgets, or by scrolling all the way to the bottom of Today View and pressing Edit.
-    * Scroll all the way to the bottom again to find and select the button labeled "Customize"
-    * Now you can configure (add, remove, rearrange) the "old-style" widgets for your screen.
-    * The Loop widget should appear in the list available there.
-
-Experienced Looper who already had a widget should not need to modify anything to see it.
