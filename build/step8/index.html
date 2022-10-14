@@ -2235,6 +2235,10 @@
 </ul>
 </div>
 <p>Although the download takes a long time, the good news is you can walk away once the download starts. If your laptop goes to sleep when you close the lid or when the screen saver starts, disable the screen saver and leave the laptop open.</p>
+<div class="admonition question">
+<p class="admonition-title">Can I use an External Drive</p>
+<p><abbr title="program used to build an app">Xcode</abbr> needs to be on the Mac hard drive. But other things, like photos and documents can be moved to an external drive to make room for <abbr title="operating system for Mac computer">macOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> updates.</p>
+</div>
 <p><abbr title="program used to build an app">Xcode</abbr> is a free application for Apple computers. <abbr title="program used to build an app">Xcode</abbr> will turn the Loop "raw" code into an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> application and install it onto your iPhone/iPod. </p>
 <h2 id="install-xcode">Install <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#install-xcode" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Please read this entire page.  First, choose a version of <abbr title="program used to build an app">Xcode</abbr> appropriate for your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> device. Then, determine the minimum <abbr title="operating system for Mac computer">macOS</abbr> version required for that <abbr title="program used to build an app">Xcode</abbr> version.  Update to at least that minimum <abbr title="operating system for Mac computer">macOS</abbr> version.  Then follow the instructions to download and install <abbr title="program used to build an app">Xcode</abbr> or update an existing installation:</p>
@@ -2242,7 +2246,7 @@
 <li>Open your App Store in your computer and search for <abbr title="program used to build an app">Xcode</abbr></li>
 <li>You will be downloading it brand new or updating an existing installation</li>
 <li>If the version number you need is bigger than what is shown in the App Store, you need to update <a href="../step1/#check-your-macos-version"><abbr title="operating system for Mac computer">macOS</abbr></a> first<ul>
-<li>This image is old (ignore the version number in this graphic)</li>
+<li>Do not rely on the version number in this graphic</li>
 </ul>
 </li>
 </ul>
@@ -2318,6 +2322,7 @@
 <p>It isn't some catastrophic failure if you try to build with an outdated <abbr title="program used to build an app">Xcode</abbr> without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> on the phone requires you to get a newer version of <abbr title="program used to build an app">Xcode</abbr> to be able to build Loop onto that phone.</p>
 <p align="center"><img alt="Screenshot: Xcode, error message when Xcode too old for iOS or missing simulators" src="../img/device-support-files.jpg" width="750" /></p>
 <p>So, if you see that error message, realize you may have to update your <abbr title="operating system for Mac computer">macOS</abbr> to be able to see the newest <abbr title="program used to build an app">Xcode</abbr> version that you will need. Make sure to check that chart to see what your minimum versions are for the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> you are running on your iPhone.</p>
+<p>With Loop 3, there is a new error when the <abbr title="program used to build an app">Xcode</abbr> version does not support the phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. You will see <a href="../build_errors/#packageresolved-file-corrupted-or-malformed">Package.resolved file corrupted or malformed</a></p>
 <h2 id="next-step-xcode-preferences">Next Step: <abbr title="program used to build an app">Xcode</abbr> Preferences<a class="headerlink" href="#next-step-xcode-preferences" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Now you are ready to set up <a href="../step9/"><abbr title="program used to build an app">Xcode</abbr> Preferences</a>.</p>
                 

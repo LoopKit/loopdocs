@@ -623,16 +623,29 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#developer-account" class="md-nav__link">
+    Developer Account
+  </a>
+  
+    <nav class="md-nav" aria-label="Developer Account">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#free-developer-account" class="md-nav__link">
     Free Developer Account
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#paid-developer-account" class="md-nav__link">
     Paid Developer Account
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2110,16 +2123,29 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#developer-account" class="md-nav__link">
+    Developer Account
+  </a>
+  
+    <nav class="md-nav" aria-label="Developer Account">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#free-developer-account" class="md-nav__link">
     Free Developer Account
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#paid-developer-account" class="md-nav__link">
     Paid Developer Account
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2185,20 +2211,25 @@
 <p>The Apple ID is DIFFERENT than the Apple Developer ID.</p>
 <div class="admonition warning">
 <p class="admonition-title">Apple ID</p>
-<p>Parents should set up a <strong>different</strong> Apple ID for each of their looper children and looper children should <strong>not</strong> use the parent Apple ID. <a href="https://support.apple.com/en-us/HT201084">Please use Apple's Instructions for adding an Apple ID for your child.</a></p>
-<p>Sharing the Apple ID prevents Apple Health features from working properly.  Sharing an Apple ID among two or more loopers can cause safety issues. You don't want Sally to be dosed for Joe's lunch in addition to her own and vice versa. In fact, the recommendation for <a href="../health/#loop-permissions">Health Permissions</a> has changed because this has happened.</p>
+<p>Parents should set up a <strong>different</strong> Apple ID for each of their looper children and looper children should <strong>not</strong> use the parent Apple ID. Use Apple's Instructions for <a href="https://support.apple.com/en-us/HT201084">Create an Apple ID for your child</a>.</p>
 <p>The Apple Health record is a convenient record of blood glucose, insulin and carbohydrates and should be associated with only one individual.</p>
+<p>Sharing an Apple ID among two or more loopers can cause safety issues. You don't want Sally to be dosed for Joe's lunch in addition to her own and vice versa.</p>
+<ul>
+<li>The recommendation for Health Permissions for <a href="../health/#loop-permissions">Loop 2.2.x</a> has changed to no longer provide permission to read Carbohydrates from Apple Health</li>
+<li>Loop 3 does not read Carbohydrates from Apple Health</li>
+</ul>
 </div>
-<p>To build your Loop app, you will need to use an Apple developer account. You can build apps on phones for everyone in your family with a single Apple Developer Account tied to the Apple ID of an adult.</p>
+<h2 id="developer-account">Developer Account<a class="headerlink" href="#developer-account" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>To build the Loop app on a phone, you must use an Apple developer account associated with an adult (minimum age of 18). This Apple developer account is tied to the email address associated with your Apple ID. You can build apps on phones for everyone in your family with a single Apple Developer Account tied to the Apple ID of an adult.</p>
 <p>You have two options for an individual account: free or paid.</p>
-<h2 id="free-developer-account">Free Developer Account<a class="headerlink" href="#free-developer-account" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="free-developer-account">Free Developer Account<a class="headerlink" href="#free-developer-account" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you decide to use a <strong>FREE</strong> developer account, here's what you need to know:</p>
 <ol>
 <li>Loop apps signed with a free developer account will expire after 7 days.  On the 7th day, your Loop app will simply turn white when you open it and then immediately close. To rebuild the Loop app, you will have to find a computer and rebuild the app onto your iPhone again. You cannot rebuild the app on day 5 (when it is convenient, for example), hoping to reset the 7-day clock.  The app will still expire on the 7th day from when it was first signed and created.</li>
 <li>If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app to sign it with the new paid account. Furthermore, switching from a <a href="./#switching-from-free-to-paid-memberships">Free to a Paid</a> account requires entering all the settings again (and starting a fresh pod).</li>
 <li>You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use remote overrides through Nightscout.</li>
 </ol>
-<h2 id="paid-developer-account">Paid Developer Account<a class="headerlink" href="#paid-developer-account" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="paid-developer-account">Paid Developer Account<a class="headerlink" href="#paid-developer-account" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you decide to use a <strong>PAID</strong> developer account, here's what you need to know:</p>
 <ol>
 <li>Loop apps signed with a paid developer account will last for a full year.</li>
@@ -2206,12 +2237,15 @@
 <li>If your household has multiple Loop users, only one developer account is needed.  That one developer account can be used to sign multiple Loop apps.</li>
 </ol>
 <h2 id="switching-from-free-to-paid-memberships">Switching from Free to Paid Memberships<a class="headerlink" href="#switching-from-free-to-paid-memberships" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You can try a free account first before buying a paid developer account. If you start with a free account, you'll build a Loop app (let's call it FreeLoop). When you switch to a paid account, you'll be building a totally new and separate Loop app onto your phone (let's call it PaidLoop). The two apps will look identical on your phone, but they will be functionally separate from each other. Make sure you are successful building the PaidLoop app before deleting the FreeLoop app from your phone. Use the search feature on your phone to find both apps.  One will have your configuration settings (FreeLoop), the other will not (PaidLoop).</p>
+<p>You can try a free account first before buying a paid developer account. If you start with a free account, you'll build a Loop app (let's call it FreeLoop). When you switch to a paid account, you'll be building a totally new and separate Loop app onto your phone (let's call it PaidLoop). </p>
+<p>The two apps will look identical on your phone and they will both have the name Loop with the same icon, but they will be functionally separate from each other. Make sure you are successful building the PaidLoop app before deleting the FreeLoop app from your phone. Use the search feature on your phone to find both apps.  One will have your configuration settings (FreeLoop), the other will not (PaidLoop).</p>
 <p>Before deleting the FreeLoop, either record all the settings or take screen shots of all the relevant settings screens.</p>
 <p>PaidLoop will know nothing about the settings and information you had stored in FreeLoop, so you will need to re-enter all your settings (basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr>, carb ratios, etc.) and configurations into the new PaidLoop. It will also not connect or control any pods you are currently using with the old FreeLoop app. The one exception is Nightscout credentials, which are stored in your keychain. If you entered your Nightscout credentials into FreeLoop, they will persist across app removal and be used by PaidLoop.</p>
+<p>With Loop 3, if you use Nightscout, you can import settings that were uploaded to Nightscout by FreeLoop into PaidLoop, so that simplifies the transition. </p>
+<p>Once PaidLoop is working, delete the FreeLoop instance from your phone to avoid confusion. If you followed the directions when building, you may have configured your phone to prevent deletion of Loop.  Head over to <a href="../step14/#protect-that-app">Protect that App</a>, reverse the steps, delete FreeLoop, then do the steps again to protect PaidLoop.</p>
 <h2 id="enrolling">Enrolling<a class="headerlink" href="#enrolling" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>To enroll in an individual paid Paid account, go to the Apple's Developer Program website <a href="https://developer.apple.com/programs/enroll/">Apple Developer website</a>.</p>
-<p>Be sure to use the credit card already associated with the email you are using for the developer ID. If you switch credit cards, it can cause delays.</p>
+<p>Be sure to use the credit card already associated with the email you are using for the developer account. If you switch credit cards, it can cause delays.</p>
 <p>If you choose to use the free account, you don't have to do anything on that website. You'll just wait for the instructions on the <abbr title="program used to build an app">Xcode</abbr> Preferences page and get your free account then.</p>
 <h2 id="next-step-install-xcode">Next Step: Install <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#next-step-install-xcode" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Now you are ready to <a href="../step8/">Install <abbr title="program used to build an app">Xcode</abbr></a>.</p>
