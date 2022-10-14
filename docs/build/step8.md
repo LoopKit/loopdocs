@@ -23,6 +23,9 @@
 
 Although the download takes a long time, the good news is you can walk away once the download starts. If your laptop goes to sleep when you close the lid or when the screen saver starts, disable the screen saver and leave the laptop open.
 
+!!! question "Can I use an External Drive"
+    Xcode needs to be on the Mac hard drive. But other things, like photos and documents can be moved to an external drive to make room for macOS and Xcode updates.
+
 Xcode is a free application for Apple computers. Xcode will turn the Loop "raw" code into an iOS application and install it onto your iPhone/iPod. 
 
 ## Install Xcode
@@ -32,7 +35,7 @@ Please read this entire page.  First, choose a version of Xcode appropriate for 
 - Open your App Store in your computer and search for Xcode
 - You will be downloading it brand new or updating an existing installation
 - If the version number you need is bigger than what is shown in the App Store, you need to update [macOS](step1.md#check-your-macos-version) first
-    - This image is old (ignore the version number in this graphic)
+    - Do not rely on the version number in this graphic
 
 ![Screenshot: App Store search for Xcode](img/xcode.png){width="750"}
 {align="center"}
@@ -112,6 +115,8 @@ It isn't some catastrophic failure if you try to build with an outdated Xcode wi
 {align="center"}
 
 So, if you see that error message, realize you may have to update your macOS to be able to see the newest Xcode version that you will need. Make sure to check that chart to see what your minimum versions are for the iOS you are running on your iPhone.
+
+With Loop 3, there is a new error when the Xcode version does not support the phone iOS. You will see [Package.resolved file corrupted or malformed](build_errors.md#packageresolved-file-corrupted-or-malformed)
 
 ## Next Step: Xcode Preferences
 
