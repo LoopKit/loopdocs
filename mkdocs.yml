@@ -109,12 +109,10 @@ nav:
     - 'Bolus': 'operation/features/bolus.md'
     - 'Overrides': 'operation/features/workout.md'
     - 'Loop Notifications': 'operation/features/notifications.md'
-    - How to Use Loop App:
-        - 'Pre-meal target': 'operation/features/premeal.md'
-        - 'Using ICE info': 'operation/features/ice.md'
-        - 'Apple Watch': 'operation/features/watch.md'
-        - 'iPhone widget': 'operation/features/widget.md'
-        - 'Pump Battery': 'operation/features/battery.md'
+    - 'Pre-meal target': 'operation/features/premeal.md'
+    - 'Using ICE info': 'operation/features/ice.md'
+    - 'Apple Watch': 'operation/features/watch.md'
+    - 'iPhone widget': 'operation/features/widget.md'
     - Loop Tips: 'operation/loop/looptips.md'
     - Algorithm:
         - 'Algorithm Overview': 'operation/algorithm/overview.md'
@@ -126,9 +124,10 @@ nav:
     - 'Loop App crashes': 'troubleshooting/loop-crashing.md'
     - 'Red Loop': 'troubleshooting/yellow-red-loop.md'
     - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
+    - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
     - 'Time Changes': 'troubleshooting/time-change.md'
     - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
-    - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
+    - 'MDT Pump Battery': 'operation/features/battery.md'
 - Loop 3:
     - 'Loop 3 Overview': 'loop-3/loop-3-overview.md'
     - 'Loop 3 Onboarding': 'loop-3/onboarding.md'
