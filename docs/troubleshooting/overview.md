@@ -12,9 +12,11 @@ After you have been using Loop for a while, there's a potential that you will ru
 
 Loop docs are updated regularly.  If you built your Loop app awhile ago, chances are good that more information has been updated and changed since you last read them.  Please use the search tool - if there's an error message - search for it. Scan the topics in the `Troubleshoot` tab of LoopDocs and look for a page that may be applicable.  The FAQs pages are definitely worth reviewing too.
 
-### Issue Report
+### `Issue Report`
 
-Under the Loop app settings, there is a selection called `Issue Report`.  The Issue Report (a text file) contains important information about your Loop's actions and status that can be very useful for troubleshooters...particularly with unexplained behaviors.  The upper right corner of the Issue Report includes a button so that you can email the Issue Report to yourself (or others).  If you are seeing something unusual in your Loop, capture an Issue Report while it is happening and save it.  A troubleshooter may want to see that information.
+Use the `Issue Report` [Loop 3](../loop-3/settings.md#issue-report) / [Loop 2](../operation/loop-settings/configurations.md#issue-report) command under Loop Settings to generate a Loop Report. This has a lot of detailed information that may help you or a mentor understand your problem.
+
+The Loop Report (a text file) contains important information about actions and status that can be very useful for troubleshooters...particularly with unexplained behaviors.  The upper right corner of the Loop Report includes a button so that you can email the Loop Report to yourself (or others).
 
 ## Check Resources
 
@@ -36,3 +38,5 @@ Search in [Zulipchat]( https://loop.zulipchat.com), [Looped Facebook Group](http
 If you can't find any information in LoopDocs, GitHub Issues, Zulipchat, or Facebook...PLEASE post and ask for help.  GitHub Issues list is an EXCELLENT place to post issues of unexpected Loop behavior (that you believe are errant or need improvement).  However, if you are just seeking clarifications on Loop, but don't necessarily expect that there's a problem with the underlying code, then Facebook and Zulipchat is a better place.  For example, Zulipchat and Facebook are great for asking about bolus strategies or exercise target use...those aren't really code issues.
 
 When you post, provide a description along with any screenshots of the issue you are having and include the version of Loop you are running and the iOS on your device.  (Tap on Loop-Settings and look at the top of the screen to get the Loop version number).  You don't necessarily have to tag any particular person, the community is fairly active in replying to messages.
+
+**Post in only one place - the same volunteers monitor various sites.**
