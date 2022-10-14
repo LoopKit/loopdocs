@@ -79,10 +79,15 @@ Monterey is the best operating system for building Loop. You can install Montere
 * iMac Pro, 2017 or newer
 * get the full list from [Apple for Monterey](https://support.apple.com/en-us/HT212551)
 
-## New Apple Computers
+## Older Macs
+
+Several experienced Loopers have reported success using OpenCore-Legacy-Patcher to enable older Macs computers to use new versions of the operating system. Use this link at your own risk. This is not suggested for novice Mac users.
+
+* [OpenCore Legacy Patcher](https://dortania.github.io/OpenCore-Legacy-Patcher/)
+
+## Rosetta
 
 Many new Apple computers use the M1 or M2 Apple Silicon chips, instead of Intel chips. When the M1 first came out, you had to install Rosetta to allow apps written for Intel chips to run on these newer computers. It is very unlikely that you will be asked to install Rosetta, but if you are, accept the suggestion.  Click on this link for more information from Apple about [Rosetta](https://support.apple.com/en-in/HT211861).
-
 
 ## Older Operating System Warning
 
@@ -96,7 +101,6 @@ Many new Apple computers use the M1 or M2 Apple Silicon chips, instead of Intel 
     - Otherwise you will get the dreaded ["Loop" is no longer available](updating.md#loop-is-no-longer-available) and need to rush through the updating Loop steps
     
     If this happens to you, your pod will continue delivering basal, but you will not be able to bolus.
-
 
 ## Next Step: Compatible iPhone/iPod Touch
 

@@ -21,17 +21,22 @@
 The Apple ID is DIFFERENT than the Apple Developer ID.
 
 !!! warning "Apple ID"
-    Parents should set up a **different** Apple ID for each of their looper children and looper children should **not** use the parent Apple ID. [Please use Apple's Instructions for adding an Apple ID for your child.](https://support.apple.com/en-us/HT201084)
-
-    Sharing the Apple ID prevents Apple Health features from working properly.  Sharing an Apple ID among two or more loopers can cause safety issues. You don't want Sally to be dosed for Joe's lunch in addition to her own and vice versa. In fact, the recommendation for [Health Permissions](health.md#loop-permissions) has changed because this has happened.
+    Parents should set up a **different** Apple ID for each of their looper children and looper children should **not** use the parent Apple ID. Use Apple's Instructions for [Create an Apple ID for your child](https://support.apple.com/en-us/HT201084).
 
     The Apple Health record is a convenient record of blood glucose, insulin and carbohydrates and should be associated with only one individual.
 
-To build your Loop app, you will need to use an Apple developer account. You can build apps on phones for everyone in your family with a single Apple Developer Account tied to the Apple ID of an adult.
+    Sharing an Apple ID among two or more loopers can cause safety issues. You don't want Sally to be dosed for Joe's lunch in addition to her own and vice versa.
+
+    * The recommendation for Health Permissions for [Loop 2.2.x](health.md#loop-permissions) has changed to no longer provide permission to read Carbohydrates from Apple Health
+    * Loop 3 does not read Carbohydrates from Apple Health
+
+## Developer Account
+
+To build the Loop app on a phone, you must use an Apple developer account associated with an adult (minimum age of 18). This Apple developer account is tied to the email address associated with your Apple ID. You can build apps on phones for everyone in your family with a single Apple Developer Account tied to the Apple ID of an adult.
 
 You have two options for an individual account: free or paid.
 
-## Free Developer Account
+### Free Developer Account
 
 If you decide to use a **FREE** developer account, here's what you need to know:
 
@@ -39,7 +44,7 @@ If you decide to use a **FREE** developer account, here's what you need to know:
 2. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app to sign it with the new paid account. Furthermore, switching from a [Free to a Paid](step6.md#switching-from-free-to-paid-memberships) account requires entering all the settings again (and starting a fresh pod).
 3. You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use remote overrides through Nightscout.
 
-## Paid Developer Account
+### Paid Developer Account
 
 If you decide to use a **PAID** developer account, here's what you need to know:
 
@@ -49,17 +54,23 @@ If you decide to use a **PAID** developer account, here's what you need to know:
 
 ## Switching from Free to Paid Memberships
 
-You can try a free account first before buying a paid developer account. If you start with a free account, you'll build a Loop app (let's call it FreeLoop). When you switch to a paid account, you'll be building a totally new and separate Loop app onto your phone (let's call it PaidLoop). The two apps will look identical on your phone, but they will be functionally separate from each other. Make sure you are successful building the PaidLoop app before deleting the FreeLoop app from your phone. Use the search feature on your phone to find both apps.  One will have your configuration settings (FreeLoop), the other will not (PaidLoop).
+You can try a free account first before buying a paid developer account. If you start with a free account, you'll build a Loop app (let's call it FreeLoop). When you switch to a paid account, you'll be building a totally new and separate Loop app onto your phone (let's call it PaidLoop). 
+
+The two apps will look identical on your phone and they will both have the name Loop with the same icon, but they will be functionally separate from each other. Make sure you are successful building the PaidLoop app before deleting the FreeLoop app from your phone. Use the search feature on your phone to find both apps.  One will have your configuration settings (FreeLoop), the other will not (PaidLoop).
 
 Before deleting the FreeLoop, either record all the settings or take screen shots of all the relevant settings screens.
 
 PaidLoop will know nothing about the settings and information you had stored in FreeLoop, so you will need to re-enter all your settings (basal rates, ISF, carb ratios, etc.) and configurations into the new PaidLoop. It will also not connect or control any pods you are currently using with the old FreeLoop app. The one exception is Nightscout credentials, which are stored in your keychain. If you entered your Nightscout credentials into FreeLoop, they will persist across app removal and be used by PaidLoop.
 
+With Loop 3, if you use Nightscout, you can import settings that were uploaded to Nightscout by FreeLoop into PaidLoop, so that simplifies the transition. 
+
+Once PaidLoop is working, delete the FreeLoop instance from your phone to avoid confusion. If you followed the directions when building, you may have configured your phone to prevent deletion of Loop.  Head over to [Protect that App](step14.md#protect-that-app), reverse the steps, delete FreeLoop, then do the steps again to protect PaidLoop.
+
 ## Enrolling
 
 To enroll in an individual paid Paid account, go to the Apple's Developer Program website [Apple Developer website](https://developer.apple.com/programs/enroll/).
 
-Be sure to use the credit card already associated with the email you are using for the developer ID. If you switch credit cards, it can cause delays.
+Be sure to use the credit card already associated with the email you are using for the developer account. If you switch credit cards, it can cause delays.
 
 If you choose to use the free account, you don't have to do anything on that website. You'll just wait for the instructions on the Xcode Preferences page and get your free account then.
 

@@ -73,4 +73,4 @@ If you've searched the docs and read relevant info already, please include that 
 
 Now you are ready to [Build the Loop App](step14.md) for the released version of the code. This is the version new Loopers should start with.
 
-If you understand what a development branch is and want to build the development branch for Loop or the FreeAPS fork, use this page [Advanced Users Only](step13.md), to build and test the development branch of the app. The Loop dev branch will be released as Loop 3.
+If you understand what a development branch is and want to build the development branch for Loop or the FreeAPS fork, use this page [Loop-dev](step13.md), to build and test the development branch of the app. The Loop dev branch will be released as Loop 3.

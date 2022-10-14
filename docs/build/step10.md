@@ -2,11 +2,14 @@
 
 !!! info "Time Estimate"
     - 2 hours to read the rest of LoopDocs (particularly the "Set Up", "Operate", and "FAQ" sections) and [LoopTips](https://loopkit.github.io/looptips/) thoroughly and thoughtfully
-    - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to confirm you understand Loop's expected behavior
+    * If you like quizzes, this older quiz has not been updated for Loop 3, but the questions are still really good and the "scoring" provides extra insight into why your answer was right or wrong
+        - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to confirm you understand Loop's expected behavior
+        * With Loop 3: you can remote bolus and you can set a manual temp basal rate and DASH pods can be used without a RileyLink
     - 1-3 days to test settings for safety and to get the most out of Loop
+        * This step can be done after you build Loop, just stay in [Open Loop](../operation/loop/open-loop.md) while you test
 
 !!! abstract "Summary"
-    - Before you start looping, test and validate your basal rates, ISF (correction factor), and CR (carb ratios)
+    - Before you use Closed Loop mode, test and validate your basal rates, ISF (correction factor), and CR (carb ratios)
 	- You may need to adjust your settings for Loop
 	- Accurate settings are vital for success
 
