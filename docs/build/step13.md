@@ -13,10 +13,10 @@ Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-go
 
 The development branch supports Omnipod DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to build select) is provided.
 
-!!! danger "Building Over Master"
-    If you are building dev over Loop master (or FreeAPS), check your correction ranges on your current app before continuing. You must set the bottom of your correction range no lower than 87 mg/dl (4.8 mmol/L) or your new app will crash during onboarding. 
+!!! danger "Returning to Older Version"
+    If you decide to return to Loop v2.2.x (or FreeAPS) after building Loop-dev on your phone, you will have to delete the Loop app and all other apps with the shared app group ID. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
     
-    If your app crashes during onboarding, [Customize the Code](code_customization.md#modify-the-guardrails) to change the minimum correctionRange value and rebuild to continue.
+    For more information, click on [Remove Apps with Shared App Group](../faqs/release-faqs.md#remove-apps-with-shared-app-group)
 
 ## Download Loop-dev
 
@@ -336,7 +336,6 @@ To restore that capability, navigate in the terminal to the LoopWorkspace/Loop f
 ```
 git restore Loop.xcodeproj/project.pbxproj
 ```
-
 
 ## Remove carthage
 

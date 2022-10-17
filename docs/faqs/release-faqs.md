@@ -2,6 +2,22 @@
 
 The new features added with each Loop release (starting with Loop version 2.0) are provided for reference.
 
+## Loop 3
+
+Be aware that Loop 3 is forward compatible:
+
+* You can build Loop 3 over older versions of Loop and maintain therapy settings as well as your configuration for CGM and pump (including a pod)
+
+Loop 3 is NOT backwards compatible. Once you build Loop 3 or later on your phone, you cannot return to Loop 2.2.x or FreeAPS without some additional work.
+
+* Be prepared to enter all your settings again and start a new pod
+* If you use Loop Follow, you do **not** need to delete Loop Follow
+* The list of apps you need to delete are on the specific phone where you are trying to downgrade to an older version of Loop from Loop 3
+    * You need to delete all apps that you built with Xcode that share an app group id
+    * The list of apps that share an app group includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app
+
+For more information, click on [Remove Apps with Shared App Group](#remove-apps-with-shared-app-group)
+
 ## Current Release
 
 The current released version for Loop master is v2.2.9. The dates and contents for Loop releases from v2.0 through v2.2.9 are summarized below in reverse chronological order (so newest release information comes first).
@@ -288,4 +304,14 @@ If you don't have compatible gear yet and just want to test Loop app, the new ab
 
 Dexcom launched a new style of transmitters this summer. The new transmitters took some work by Loop developer (PETE! YEAH!) to get them working in offline Looping, but the fix was pushed into all branches shortly thereafter in August 2019. If you haven't updated your Loop since August 2019 and use a Dexcom G6, you should update now.
 
+
+## Remove Apps with Shared App Group
+
+The storage of data with Loop-dev is not backward compatible. In other words, if you attempt to build Loop 2.2.x (or FreeAPS) on a phone which has been upgraded to Loop-dev, you will not be able to run that app. You can successfully build the app, which will overwrite Loop-dev on the phone, but the app will crash and you will not be able to Loop.
+
+At this point, you can restore your Loop-dev build on your phone and continue using Loop-dev or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
+
+If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to [Review Provisioning Profiles](https://www.loopandlearn.org/loop-expiration-date) and then delete the profiles for all the apps by using the - sign. 
+
+You do not need to delete Loop Follow, so if you use Loop Follow - do not delete that provisioning profile.
 
