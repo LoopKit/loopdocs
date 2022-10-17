@@ -153,7 +153,7 @@ The next graphic shows terminal messages for the beginning of a successful downl
 ![the beginning of the clone for LoopWorkspace ](img/build-select-07.png){width="750"}
 {align="center"}
 
-When the download completes, the following message is displayed. You will need to scroll up in the terminal window to look through all the messages output to the terminal from the beginning of the download.
+When the download completes, the "Check for successful download" message is displayed. You will need to scroll up in the terminal window to look through all the messages output to the terminal from the beginning of the download.
 
 ![download complete - search for errors message](img/bss-06-search-for-errors.svg){width="700"}
 {align="center"}

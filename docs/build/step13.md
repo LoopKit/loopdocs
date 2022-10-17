@@ -20,20 +20,29 @@ The development branch supports Omnipod DASH and many less experienced users wan
 
 ## Download Loop-dev
 
-This page documents using a script, different from the usual Build Select script, to build the development branch of the app. If you have not previously built the released version of the app using the Build Select script as documented in [Build the Loop App](step14.md), you may find the documentation sparse.
+This page documents using the Build Loop Fixed Dev script to download the development branch of the app. If you have not previously built the released version of the app using the Build Select script as documented in [Build the Loop App](step14.md), you may find the documentation on this page sparse.
 
 * A new script has been prepared to assist building the development branch for Loop and FreeAPS
 * This script downloads the development branch and then selects a specific commit that has been lightly tested
 
 This is still code under development, so please pay attention to your app and report any unexpected behavior on [Loop Zulipchat](https://loop.zulipchat.com).
 
-The commit is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes.
+!!! warning "iOS 16: Developer Mode Required"
+    If your phone is running iOS 16, please click on this [Developer Mode](step14.md#developer-mode) link, follow the directions on that page and then return to this page.  (If you continue on the page with the Developer Mode link, you will be building the released code, not the dev code.)
+
+### Identifying Loop-dev Version
+
+The version of code that shows up under the Loop Settings screen is fixed until Loop-dev is released. As part of the release process, the version number will be updated; but in the interim, Loop-dev reports as Loop v2.3.0(57)(dev). In order to identify which version of dev you have on your phone, you need the commit.
+
+The commit is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report which is now found in the [Support](../loop-3/settings.md#support) portion of the Loop settings screen. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.
 
 When you run the script, the instructions inform you of the commit that will be built.
 
+### Start the Build Loop Fixed Dev Script
+
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
-```title="Copy and Paste to start the script to build a specific commit"
+```title="Copy and Paste to start the BuildLoopFixedDev.sh script"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopFixedDev.sh)"
 ```
 
@@ -41,22 +50,47 @@ Paste the line into a Terminal window. Be sure to click anywhere in the terminal
 
 Read the screen (shown below).  Type 1 and return if you understand the warning and agree.
 
-![paste the script line into terminal - agree to warning](img/bss-01-initial-message.svg){width="700"}
-{align="center"}
-
 * Please read what is on the screen as you progress.
 * Adjust font size as directed if you have difficulty seeing the directions.
 
-You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.
+![paste the script line into terminal - agree to warning](img/bss-01-initial-message.svg){width="700"}
+{align="center"}
 
 The next graphic warns you about building a development branch. The date and commit number in the script might not match the graphic below. The values in the script will be updated at appropriate times. The date indicates when that commit was added to the branch.
+
+Enter your choice for app and hit return. Loop-dev is strongly recommended.
 
 ![message about development branch commit](img/build-select-dev.svg){width="700"}
 {align="center"}
 
-Continue following directions with the script and wait for the download to complete. If you get errors, [review this section](step14.md#xcode-errors-with-build-select) of the directions for building the released code. Resolve the errors, if possible, then return to this page.
+If you get errors when attempting to download, [review this section](step14.md#xcode-errors-with-build-select) of LoopDocs. (It is in the directions for building the released code.) Resolve the errors, if possible, then return to this page.
 
-After the download step, the specific commit will be "checked out". Verify there are no errors and proceed.
+### Wait for Download to Complete
+
+This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. When you read the words in the terminal, as the script runs, you may see terminology you do not understand - don't worry - you do not need to understand enumeration or submodule or cloning.  You only need to review the display to look for any error messages.
+
+When the download completes, the "Check for successful download" message is displayed. You will need to scroll up in the terminal window to look through all the messages output to the terminal from the beginning of the download. (Your messages about "Submodule path" will be different because this graphic is from a different version of Loop.)
+
+![download complete - search for errors message](img/bss-06-search-for-errors.svg){width="700"}
+{align="center"}
+
+If you do not find the word error in your terminal window, continue with [Download was Successful](#download-was-successful).
+
+If you see the word "error" in your terminal window:
+
+* Read the error message
+* Try to figure out the problem
+* If you need help, reach out to your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site
+* Tap any key other than 1, followed by return to cancel
+
+### Download was Successful
+
+After the download step, the specific, lightly tested version of Loop-dev, indicated by the commit number, will be "checked out". You will see that commit number indicated by the line that includes "HEAD detached at".  Remember, the specific number shown in your terminal may not match the graphic below.
+
+![status of downloaded development branch commit](img/build-select-dev-checkout.svg){width="700"}
+{align="center"}
+
+Verify the word "error" is not shown in the terminal and proceed by typing 1 and hitting return.
 
 ## Signing Targets
 
