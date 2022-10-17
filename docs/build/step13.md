@@ -1,6 +1,6 @@
 # Advanced Users Only
 
-**Only build the dev branch if you're a developer/experienced user**
+**Typically, the dev branch is tested by developers and experienced users. When the dev branch gets more mature, adventurous Loopers want to try out the new features and are not waiting for the release. Please pay extra attention if you proceed with Loop-dev.**
 
 ## About Loop-dev
 
@@ -11,7 +11,7 @@ Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-go
 - The dev branch Loop user interface is updated - as an experienced Looper, you will notice the difference
 - Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs
 
-The development branch supports Omnipod DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to build select) is provided.
+The development branch supports Omnipod DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to the Build Select script) is provided. The name of the script: BuildLoopFixedDev refers to the fact that the scripts build a version (commit) of the dev branch that has been lightly tested. The developers continue to make changes to dev, and after testing, the script is updated to the next lightly tested commit.
 
 !!! danger "Returning to Older Version"
     If you decide to return to Loop v2.2.x (or FreeAPS) after building Loop-dev on your phone, you will have to delete the Loop app and all other apps with the shared app group ID. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
@@ -22,25 +22,22 @@ The development branch supports Omnipod DASH and many less experienced users wan
 
 ## Download Loop-dev
 
-This page documents using the Build Loop Fixed Dev script to download the development branch of the app. If you have not previously built the released version of the app using the Build Select script as documented in [Build the Loop App](step14.md), you may find the documentation on this page sparse.
+This page documents using the BuildLoopFixedDev script to download the development branch of the app for Loop or FreeAPS.
 
-* A new script has been prepared to assist building the development branch for Loop and FreeAPS
-* This script downloads the development branch and then selects a specific commit that has been lightly tested
+* The BuildLoopFixedDev script downloads the development branch and then selects a specific commit that has been lightly tested
 
 This is still code under development, so please pay attention to your app and report any unexpected behavior on [Loop Zulipchat](https://loop.zulipchat.com).
 
 !!! warning "iOS 16: Developer Mode Required"
     If your phone is running iOS 16, please click on this [Developer Mode](step14.md#developer-mode) link, follow the directions on that page and then return to this page.  (If you continue on the page with the Developer Mode link, you will be building the released code, not the dev code.)
 
-### Identifying Loop-dev Version
+### Loop-dev Version
 
-The version of code that shows up under the Loop Settings screen is "Loop v2.3.0(57)(dev)" until Loop-dev is released. As part of the release process, the version number will be updated; but in the interim, it does not change when the code is modified. In order to identify which version of dev you have on your phone, you need the commit.
+The version of code that shows up under the Loop Settings screen will remain "Loop v2.3.0(57)(dev)" until Loop-dev is released. As part of the release process, the version number will be updated; but in the interim, it does not change when the code is modified.
 
-The commit is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report which is now found in the [Support](../loop-3/settings.md#support) portion of the Loop settings screen. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.
+If you need help with your app, the mentors need more information. Please issue a Loop Report when asking for help. The location for the `Issue Report` button is in a different location with Loop-dev; refer to [Support](../loop-3/settings.md#support). If you want to keep track yourself, refer to [Identify Loop-dev Version](#identify-loop-dev-version)
 
-When you run the script, the instructions inform you of the commit that will be built.
-
-### Start the Build Loop Fixed Dev Script
+### Start the BuildLoopFixedDev Script
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
@@ -192,7 +189,7 @@ Refer to the graphic below. The messages in the terminal instruct you to:
     * If you have never "Trusted" this computer with these device(s), do so now
         * A screen will pop up on your phone (and watch) asking if you trust the computer
         * Select "Trust"
-        * After trusting phone and watch, phone should remain plugged in, but watch does not need to stay in proximity of the phone
+        * After clicking on "Trust" the computer for phone and watch, phone should remain plugged in, but watch does not need to stay in proximity of the phone
 * Now you are ready to hit return in the terminal window
 
 ![script instructions for plugging in phone and trusting computer on phone and watch](img/build-dev-b-04.svg){width="750"}
@@ -205,7 +202,7 @@ The final action of the script is to
 
 #### Final Messages
 
-The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.
+The final messages (not shown) let you know you can rerun the script with an up-arrow / return, you can close the terminal window, and you can use a specific command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.
 
 * Wait until you've successfully built the app before closing the terminal
 * The command of the form: `cd /<specific-to-you-and-your-computer>/Downloads/BuildLoop/<download-folder-name>/LoopWorkspace` can be useful for some specific actions; most people will not need this.
@@ -310,22 +307,29 @@ You may prefer to use commands to fetch and pull the latest code without making 
 
 ### Open a Terminal in LoopWorkspace Folder
 
-Refer to the graphic below.  The Downloads folder in Finder is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom. Double clicking on that file opens Xcode; but some people prefer to use command lines in the terminal.
+Refer to the graphic below.  The Downloads folder in Finder is highlighted by the green rectangle on the upper left. The folder containing the code downloaded by the BuildLoopFixedDev script is highlighted by the red rectangle.  Note the folder name indicates the app name and branch: Loop-dev, the date: 221016, the local time 1619 and the commit number: ca8a374. The LoopWorkspace folder below that (dashed blue rectangle) is the folder that needs to be opened in the terminal app.
 
 * Open Finder
-* Navigate to Downloads/BuildLoop and look for your download by name and date
-* Open that folder, for example, Downloads/BuildLoop/Loop-220803-1145
-* Find the LoopWorkspace folder icon (dashed-blue rectangle)
+* Navigate to Downloads/BuildLoop and look for your download (highlighted by red rectangle) by name and date
+* Open the folder to view LoopWorkspace (dashed blue rectangle)
 * Hold down the CTRL key and click (or right-click) LoopWorkspace
 * A menu appears - select `New Terminal at Folder` (near the bottom of the list)
 
-This new terminal window is now in the LoopWorkspace folder needed to perform `git` commands needed to update your downloaded copy (clone) when new updates are made to the repository.
+This new terminal window opens in the LoopWorkspace folder needed to perform `git` commands to update your downloaded copy (clone) when new updates are made to the repository.
 
-![how to use finder to find the correct download and open xcode](img/finding-loopworkspace.svg){width="750"}
+![how to use finder to find the correct download and open xcode](img/finding-loopworkspace-dev.svg){width="750"}
 {align="center"}
 
 * Some users like to use [GitKraken](https://support.gitkraken.com/) to assist them (link takes you to a tutorial video).
 * Some are comfortable with the command line git commands described on [here](loopworkspace.md#updating-loop-using-loopworkspace).
+
+### Identify Loop-dev Version
+
+The version of code that shows up under the Loop Settings screen will remain "Loop v2.3.0(57)(dev)" until Loop-dev is released. In order to identify which version of dev you have on your phone, you need the commit.
+
+The commit is identified by a 7-digit alphanumeric code.  That code was also appended to the folder name of the downloaded code under Downloads/BuildLoop as shown in the graphic above.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report, refer to [Support](../loop-3/settings.md#support) for instructions on issuing a Loop Report. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.
+
+When you ran the BuildLoopFixedDev script, the instructions informed you of the commit.
 
 ## Manual vs Automatic Signing
 
@@ -350,7 +354,7 @@ git restore Loop.xcodeproj/project.pbxproj
 
 * You do NOT need to uninstall carthage - your choice. If you share the computer with someone else, make sure they don't need carthage.
 
-First copy and paste this phrase into the terminal and hit return:
+To determine if cathage is installed on your system, copy and paste this phrase into the terminal and hit return:
 
 ```
 carthage version
