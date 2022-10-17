@@ -2,7 +2,7 @@
 
 The new features added with each Loop release (starting with Loop version 2.0) are provided for reference.
 
-## Loop 3
+## Loop 3 Compatibility
 
 Be aware that Loop 3 is forward compatible:
 

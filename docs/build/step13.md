@@ -15,7 +15,9 @@ The development branch supports Omnipod DASH and many less experienced users wan
 
 !!! danger "Returning to Older Version"
     If you decide to return to Loop v2.2.x (or FreeAPS) after building Loop-dev on your phone, you will have to delete the Loop app and all other apps with the shared app group ID. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
-    
+
+    If you use Loop Follow, that does **not** need to be deleted.
+
     For more information, click on [Remove Apps with Shared App Group](../faqs/release-faqs.md#remove-apps-with-shared-app-group)
 
 ## Download Loop-dev
