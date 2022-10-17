@@ -32,7 +32,7 @@ This is still code under development, so please pay attention to your app and re
 
 ### Identifying Loop-dev Version
 
-The version of code that shows up under the Loop Settings screen is fixed until Loop-dev is released. As part of the release process, the version number will be updated; but in the interim, Loop-dev reports as Loop v2.3.0(57)(dev). In order to identify which version of dev you have on your phone, you need the commit.
+The version of code that shows up under the Loop Settings screen is "Loop v2.3.0(57)(dev)" until Loop-dev is released. As part of the release process, the version number will be updated; but in the interim, it does not change when the code is modified. In order to identify which version of dev you have on your phone, you need the commit.
 
 The commit is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report which is now found in the [Support](../loop-3/settings.md#support) portion of the Loop settings screen. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.
 
@@ -99,7 +99,7 @@ Verify the word "error" is not shown in the terminal and proceed by typing 1 and
 
 This replaces several of the steps that used to be required to build Loop.
 
-The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to [Use Permanent LoopConfigOverride.xcconfig](#use-permanent-loopconfigoverridexcconfig).
+The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to [Review LoopConfigOverride.xcconfig](#review-loopconfigoverridexcconfig).
 
 The next question, as shown in graphic below, is whether you will (1) Enter Apple Developer ID or (2) Sign Manually.
 
@@ -200,8 +200,6 @@ The final action of the script is to
 
 * Open a browser window displaying this section of LoopDocs
 * Open Xcode
-
-With the Loop-dev version, there are fewer build steps because the targets should already be signed.
 
 #### Final Messages
 
