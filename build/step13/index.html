@@ -790,11 +790,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#signing-targets" class="md-nav__link">
-    Signing Targets
+  <a href="#sign-targets" class="md-nav__link">
+    Sign Targets
   </a>
   
-    <nav class="md-nav" aria-label="Signing Targets">
+    <nav class="md-nav" aria-label="Sign Targets">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2246,11 +2246,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#signing-targets" class="md-nav__link">
-    Signing Targets
+  <a href="#sign-targets" class="md-nav__link">
+    Sign Targets
   </a>
   
-    <nav class="md-nav" aria-label="Signing Targets">
+    <nav class="md-nav" aria-label="Sign Targets">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2406,9 +2406,10 @@
 </ul>
 <p>The development <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to build select) is provided.</p>
 <div class="admonition danger">
-<p class="admonition-title">Building Over Master</p>
-<p>If you are building dev over Loop master (or FreeAPS), check your correction ranges on your current app before continuing. You must set the bottom of your correction range no lower than 87 mg/dl (4.8 mmol/L) or your new app will crash during onboarding. </p>
-<p>If your app crashes during onboarding, <a href="../code_customization/#modify-the-guardrails">Customize the Code</a> to change the minimum correctionRange value and rebuild to continue.</p>
+<p class="admonition-title">Returning to Older Version</p>
+<p>If you decide to return to Loop v2.2.x (or FreeAPS) after building Loop-dev on your phone, you will have to delete the Loop app and all other apps with the shared app group ID. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.</p>
+<p>If you use Loop Follow, that does <strong>not</strong> need to be deleted.</p>
+<p>For more information, click on <a href="../../faqs/release-faqs/#remove-apps-with-shared-app-group">Remove Apps with Shared App Group</a></p>
 </div>
 <h2 id="download-loop-dev">Download Loop-dev<a class="headerlink" href="#download-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This page documents using the Build Loop Fixed Dev script to download the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of the app. If you have not previously built the released version of the app using the Build Select script as documented in <a href="../step14/">Build the Loop App</a>, you may find the documentation on this page sparse.</p>
@@ -2456,10 +2457,10 @@
 <p>After the download step, the specific, lightly tested version of Loop-dev, indicated by the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number, will be "checked out". You will see that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number indicated by the line that includes "HEAD detached at".  Remember, the specific number shown in your terminal may not match the graphic below.</p>
 <p align="center"><img alt="status of downloaded development branch commit" src="../img/build-select-dev-checkout.svg" width="700" /></p>
 <p>Verify the word "error" is not shown in the terminal and proceed by typing 1 and hitting return.</p>
-<h2 id="signing-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Signing Targets</abbr><a class="headerlink" href="#signing-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="sign-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Sign Targets</abbr><a class="headerlink" href="#sign-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition question">
-<p class="admonition-title">What does <abbr title="associate a Developer ID with an app; must sign all targets for a given app">Signing Targets</abbr> Mean?</p>
-<p>"<abbr title="associate a Developer ID with an app; must sign all targets for a given app">Signing Targets</abbr>" in <abbr title="program used to build an app">Xcode</abbr> identifies who built the app. You cannot deploy an app to a phone without signing each target associated with that app.</p>
+<p class="admonition-title">What does <abbr title="associate a Developer ID with an app; must sign all targets for a given app">Sign Targets</abbr> Mean?</p>
+<p>"<abbr title="associate a Developer ID with an app; must sign all targets for a given app">Sign Targets</abbr>" in <abbr title="program used to build an app">Xcode</abbr> identifies who built the app. You cannot deploy an app to a phone without signing each target associated with that app.</p>
 </div>
 <p>This replaces several of the steps that used to be required to build Loop.</p>
 <p>The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to <a href="#review-loopconfigoverridexcconfig">Review LoopConfigOverride.xcconfig</a>.</p>
@@ -2476,7 +2477,7 @@
 <p align="center"><img alt="messages for choosing Apple ID or Sign Manually" src="../img/build-dev-b-01-choose.svg" width="750" /></p>
 <h3 id="loop-dev-with-free-account">Loop-dev with Free Account<a class="headerlink" href="#loop-dev-with-free-account" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the <a href="../step14/#free-account">Build with Free Account</a> section.</p>
-<p>If you know your Personal Team ID, you can enter it as directed in <a href="#signing-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Signing Targets</abbr></a> above, otherwise, do manual signing.</p>
+<p>If you know your Personal Team ID, you can enter it as directed in <a href="#sign-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Sign Targets</abbr></a> above, otherwise, do manual signing.</p>
 <ol>
 <li>You must remove additional capabilities, the complete list is:<ul>
 <li><strong>Loop Target:</strong> Push Notifications; Siri and <strong>Time Sensitive Notifications</strong></li>

@@ -1636,6 +1636,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#loop-3-compatibility" class="md-nav__link">
+    Loop 3 Compatibility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#current-release" class="md-nav__link">
     Current Release
   </a>
@@ -1896,6 +1903,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-apps-with-shared-app-group" class="md-nav__link">
+    Remove Apps with Shared App Group
+  </a>
   
 </li>
       
@@ -2278,6 +2292,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#loop-3-compatibility" class="md-nav__link">
+    Loop 3 Compatibility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#current-release" class="md-nav__link">
     Current Release
   </a>
@@ -2541,6 +2562,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#remove-apps-with-shared-app-group" class="md-nav__link">
+    Remove Apps with Shared App Group
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2556,6 +2584,22 @@
                 
                 <h1 id="loop-releases">Loop Releases<a class="headerlink" href="#loop-releases" title="Anchor link to this Header on this Page">&para;</a></h1>
 <p>The new features added with each Loop release (starting with Loop version 2.0) are provided for reference.</p>
+<h2 id="loop-3-compatibility">Loop 3 Compatibility<a class="headerlink" href="#loop-3-compatibility" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Be aware that Loop 3 is forward compatible:</p>
+<ul>
+<li>You can build Loop 3 over older versions of Loop and maintain therapy settings as well as your configuration for <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and pump (including a pod)</li>
+</ul>
+<p>Loop 3 is NOT backwards compatible. Once you build Loop 3 or later on your phone, you cannot return to Loop 2.2.x or FreeAPS without some additional work.</p>
+<ul>
+<li>Be prepared to enter all your settings again and start a new pod</li>
+<li>If you use Loop Follow, you do <strong>not</strong> need to delete Loop Follow</li>
+<li>The list of apps you need to delete are on the specific phone where you are trying to downgrade to an older version of Loop from Loop 3<ul>
+<li>You need to delete all apps that you built with <abbr title="program used to build an app">Xcode</abbr> that share an app group id</li>
+<li>The list of apps that share an app group includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app</li>
+</ul>
+</li>
+</ul>
+<p>For more information, click on <a href="#remove-apps-with-shared-app-group">Remove Apps with Shared App Group</a></p>
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The current released version for Loop master is v2.2.9. The dates and contents for Loop releases from v2.0 through v2.2.9 are summarized below in reverse chronological order (so newest release information comes first).</p>
 <div class="admonition warning">
@@ -2769,6 +2813,11 @@
 <p>If you don't have compatible gear yet and just want to test Loop app, the new ability to add a simulated pump and/or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is a great new feature.</p>
 <h3 id="new-style-of-dexcom-transmitters-supported">New style of Dexcom transmitters supported<a class="headerlink" href="#new-style-of-dexcom-transmitters-supported" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Dexcom launched a new style of transmitters this summer. The new transmitters took some work by Loop developer (PETE! YEAH!) to get them working in offline Looping, but the fix was pushed into all branches shortly thereafter in August 2019. If you haven't updated your Loop since August 2019 and use a Dexcom G6, you should update now.</p>
+<h2 id="remove-apps-with-shared-app-group">Remove Apps with Shared App Group<a class="headerlink" href="#remove-apps-with-shared-app-group" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The storage of data with Loop-dev is not backward compatible. In other words, if you attempt to build Loop 2.2.x (or FreeAPS) on a phone which has been upgraded to Loop-dev, you will not be able to run that app. You can successfully build the app, which will overwrite Loop-dev on the phone, but the app will crash and you will not be able to Loop.</p>
+<p>At this point, you can restore your Loop-dev build on your phone and continue using Loop-dev or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.</p>
+<p>If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to <a href="https://www.loopandlearn.org/loop-expiration-date">Review Provisioning Profiles</a> and then delete the profiles for all the apps by using the - sign. </p>
+<p>You do not need to delete Loop Follow, so if you use Loop Follow - do not delete that provisioning profile.</p>
                 
               
               
