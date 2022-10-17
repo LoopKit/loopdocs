@@ -139,7 +139,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **SHA-1**: Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)
 
-**Signing Targets**: associate a Developer ID with an app; must sign all targets for a given app
+**Sign Targets**: associate a Developer ID with an app; must sign all targets for a given app
 
 **submodules**: for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
 
