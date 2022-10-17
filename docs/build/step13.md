@@ -92,10 +92,10 @@ After the download step, the specific, lightly tested version of Loop-dev, indic
 
 Verify the word "error" is not shown in the terminal and proceed by typing 1 and hitting return.
 
-## Signing Targets
+## Sign Targets
 
-!!! question "What does Signing Targets Mean?"
-    "Signing Targets" in Xcode identifies who built the app. You cannot deploy an app to a phone without signing each target associated with that app.
+!!! question "What does Sign Targets Mean?"
+    "Sign Targets" in Xcode identifies who built the app. You cannot deploy an app to a phone without signing each target associated with that app.
 
 This replaces several of the steps that used to be required to build Loop.
 
@@ -116,7 +116,7 @@ The next question, as shown in graphic below, is whether you will (1) Enter Appl
 
 Yes you can build Loop-dev with the free account (Personal Team). There are some extra steps needed compared to the steps given for Loop 2.2.x on the [Build with Free Account](step14.md#free-account) section.
 
-If you know your Personal Team ID, you can enter it as directed in [Signing Targets](#signing-targets) above, otherwise, do manual signing.
+If you know your Personal Team ID, you can enter it as directed in [Sign Targets](#sign-targets) above, otherwise, do manual signing.
 
 1. You must remove additional capabilities, the complete list is:
     * **Loop Target:** Push Notifications; Siri and **Time Sensitive Notifications**

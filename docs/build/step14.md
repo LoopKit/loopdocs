@@ -256,7 +256,7 @@ The GIF below shows:
 
 ### Build to a Simulator
 
-Skip this section if building to a phone and proceed to [Signing](#select-signing-capabilities-tab).
+Skip this section if building to a phone and proceed to [Select Signing & Capabilities Tab](#select-signing-capabilities-tab).
 
 If you want to build to a simulator, follow the directions in this section.
 
@@ -285,9 +285,9 @@ The graphic below indicates in red the three places you need to click in order t
 {align="center"}
 
 
-### Sign the Targets
+### Sign Targets
 
-It is time to Sign the Targets with your [Apple Developer ID](step9.md#add-apple-id). Signing targets is using your Developer ID to identify who build the app. You will be building multiple targets to make a complete app and must sign each one. With Loop 2.2.x, there are 4 targets.
+It is time to Sign the Targets with your [Apple Developer ID](step9.md#add-apple-id). This associates your Developer ID with the app. You will be building multiple targets to make a complete app and must sign each one. With Loop 2.2.x, there are 4 targets.
 
 !!! info "First Time"
     In addition to the [Trust Your Computer](#select-loop-workspace-and-your-phone) steps mentioned above for the first time you plug in your phone, the first time you use your Apple Developer ID to sign a target for an app, you need to register your device with your Apple Developer ID.
