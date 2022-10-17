@@ -753,6 +753,40 @@
     Download Loop-dev
   </a>
   
+    <nav class="md-nav" aria-label="Download Loop-dev">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-loop-dev-version" class="md-nav__link">
+    Identifying Loop-dev Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-build-loop-fixed-dev-script" class="md-nav__link">
+    Start the Build Loop Fixed Dev Script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wait-for-download-to-complete" class="md-nav__link">
+    Wait for Download to Complete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-was-successful" class="md-nav__link">
+    Download was Successful
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -778,8 +812,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-permanent-loopconfigoverridexcconfig" class="md-nav__link">
-    Use Permanent LoopConfigOverride.xcconfig
+  <a href="#review-loopconfigoverridexcconfig" class="md-nav__link">
+    Review LoopConfigOverride.xcconfig
   </a>
   
 </li>
@@ -2175,6 +2209,40 @@
     Download Loop-dev
   </a>
   
+    <nav class="md-nav" aria-label="Download Loop-dev">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-loop-dev-version" class="md-nav__link">
+    Identifying Loop-dev Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-build-loop-fixed-dev-script" class="md-nav__link">
+    Start the Build Loop Fixed Dev Script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wait-for-download-to-complete" class="md-nav__link">
+    Wait for Download to Complete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-was-successful" class="md-nav__link">
+    Download was Successful
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2200,8 +2268,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-permanent-loopconfigoverridexcconfig" class="md-nav__link">
-    Use Permanent LoopConfigOverride.xcconfig
+  <a href="#review-loopconfigoverridexcconfig" class="md-nav__link">
+    Review LoopConfigOverride.xcconfig
   </a>
   
 </li>
@@ -2343,32 +2411,58 @@
 <p>If your app crashes during onboarding, <a href="../code_customization/#modify-the-guardrails">Customize the Code</a> to change the minimum correctionRange value and rebuild to continue.</p>
 </div>
 <h2 id="download-loop-dev">Download Loop-dev<a class="headerlink" href="#download-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This page documents using a script, different from the usual Build Select script, to build the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of the app. If you have not previously built the released version of the app using the Build Select script as documented in <a href="../step14/">Build the Loop App</a>, you may find the documentation sparse.</p>
+<p>This page documents using the Build Loop Fixed Dev script to download the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of the app. If you have not previously built the released version of the app using the Build Select script as documented in <a href="../step14/">Build the Loop App</a>, you may find the documentation on this page sparse.</p>
 <ul>
 <li>A new script has been prepared to assist building the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> for Loop and FreeAPS</li>
 <li>This script downloads the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then selects a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that has been lightly tested</li>
 </ul>
 <p>This is still code under development, so please pay attention to your app and report any unexpected behavior on <a href="https://loop.zulipchat.com">Loop Zulipchat</a>.</p>
-<p>The <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes.</p>
+<div class="admonition warning">
+<p class="admonition-title"><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16: Developer Mode Required</p>
+<p>If your phone is running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16, please click on this <a href="../step14/#developer-mode">Developer Mode</a> link, follow the directions on that page and then return to this page.  (If you continue on the page with the Developer Mode link, you will be building the released code, not the dev code.)</p>
+</div>
+<h3 id="identifying-loop-dev-version">Identifying Loop-dev Version<a class="headerlink" href="#identifying-loop-dev-version" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The version of code that shows up under the Loop Settings screen is "Loop v2.3.0(57)(dev)" until Loop-dev is released. As part of the release process, the version number will be updated; but in the interim, it does not change when the code is modified. In order to identify which version of dev you have on your phone, you need the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
+<p>The <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report which is now found in the <a href="../../loop-3/settings/#support">Support</a> portion of the Loop settings screen. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.</p>
 <p>When you run the script, the instructions inform you of the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that will be built.</p>
+<h3 id="start-the-build-loop-fixed-dev-script">Start the Build Loop Fixed Dev Script<a class="headerlink" href="#start-the-build-loop-fixed-dev-script" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
-<div class="highlight"><span class="filename">Copy and Paste to start the script to build a specific commit</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopFixedDev.sh)&quot;
+<div class="highlight"><span class="filename">Copy and Paste to start the BuildLoopFixedDev.sh script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopFixedDev.sh)&quot;
 </code></pre></div>
 <p>Paste the line into a <abbr title="interface for entering commands to the computer">Terminal</abbr> window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script.</p>
 <p>Read the screen (shown below).  Type 1 and return if you understand the warning and agree.</p>
-<p align="center"><img alt="paste the script line into terminal - agree to warning" src="../img/bss-01-initial-message.svg" width="700" /></p>
 <ul>
 <li>Please read what is on the screen as you progress.</li>
 <li>Adjust font size as directed if you have difficulty seeing the directions.</li>
 </ul>
-<p>You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.</p>
+<p align="center"><img alt="paste the script line into terminal - agree to warning" src="../img/bss-01-initial-message.svg" width="700" /></p>
 <p>The next graphic warns you about building a development <abbr title="version of code within a single repository or workspace repository">branch</abbr>. The date and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number in the script might not match the graphic below. The values in the script will be updated at appropriate times. The date indicates when that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> was added to the <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>Enter your choice for app and hit return. Loop-dev is strongly recommended.</p>
 <p align="center"><img alt="message about development branch commit" src="../img/build-select-dev.svg" width="700" /></p>
-<p>Continue following directions with the script and wait for the download to complete. If you get errors, <a href="../step14/#xcode-errors-with-build-select">review this section</a> of the directions for building the released code. Resolve the errors, if possible, then return to this page.</p>
-<p>After the download step, the specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> will be "checked out". Verify there are no errors and proceed.</p>
+<p>If you get errors when attempting to download, <a href="../step14/#xcode-errors-with-build-select">review this section</a> of LoopDocs. (It is in the directions for building the released code.) Resolve the errors, if possible, then return to this page.</p>
+<h3 id="wait-for-download-to-complete">Wait for Download to Complete<a class="headerlink" href="#wait-for-download-to-complete" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. When you read the words in the terminal, as the script runs, you may see terminology you do not understand - don't worry - you do not need to understand enumeration or submodule or cloning.  You only need to review the display to look for any error messages.</p>
+<p>When the download completes, the "Check for successful download" message is displayed. You will need to scroll up in the terminal window to look through all the messages output to the terminal from the beginning of the download. (Your messages about "Submodule path" will be different because this graphic is from a different version of Loop.)</p>
+<p align="center"><img alt="download complete - search for errors message" src="../img/bss-06-search-for-errors.svg" width="700" /></p>
+<p>If you do not find the word error in your terminal window, continue with <a href="#download-was-successful">Download was Successful</a>.</p>
+<p>If you see the word "error" in your terminal window:</p>
+<ul>
+<li>Read the error message</li>
+<li>Try to figure out the problem</li>
+<li>If you need help, reach out to your favorite <a href="../../intro/loopdocs-how-to/#how-to-find-help">Loop Social Media</a> site</li>
+<li>Tap any key other than 1, followed by return to cancel</li>
+</ul>
+<h3 id="download-was-successful">Download was Successful<a class="headerlink" href="#download-was-successful" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>After the download step, the specific, lightly tested version of Loop-dev, indicated by the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number, will be "checked out". You will see that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number indicated by the line that includes "HEAD detached at".  Remember, the specific number shown in your terminal may not match the graphic below.</p>
+<p align="center"><img alt="status of downloaded development branch commit" src="../img/build-select-dev-checkout.svg" width="700" /></p>
+<p>Verify the word "error" is not shown in the terminal and proceed by typing 1 and hitting return.</p>
 <h2 id="signing-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Signing Targets</abbr><a class="headerlink" href="#signing-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The script helps you configure a permanent file used by <abbr title="program used to build an app">Xcode</abbr> to automatically sign all your targets.</p>
-<p>The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to <a href="#use-permanent-loopconfigoverridexcconfig">Use Permanent LoopConfigOverride.xcconfig</a>.</p>
+<div class="admonition question">
+<p class="admonition-title">What does <abbr title="associate a Developer ID with an app; must sign all targets for a given app">Signing Targets</abbr> Mean?</p>
+<p>"<abbr title="associate a Developer ID with an app; must sign all targets for a given app">Signing Targets</abbr>" in <abbr title="program used to build an app">Xcode</abbr> identifies who built the app. You cannot deploy an app to a phone without signing each target associated with that app.</p>
+</div>
+<p>This replaces several of the steps that used to be required to build Loop.</p>
+<p>The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to <a href="#review-loopconfigoverridexcconfig">Review LoopConfigOverride.xcconfig</a>.</p>
 <p>The next question, as shown in graphic below, is whether you will (1) Enter Apple Developer ID or (2) Sign Manually.</p>
 <ul>
 <li>If you are building with a paid developers account, choose option 1, and skip ahead to <a href="#create-permanent-loopconfigoverridexcconfig">Create Permanent LoopConfigOverride.xcconfig</a></li>
@@ -2396,56 +2490,57 @@
 </li>
 </ol>
 <h3 id="create-permanent-loopconfigoverridexcconfig">Create Permanent LoopConfigOverride.xcconfig<a class="headerlink" href="#create-permanent-loopconfigoverridexcconfig" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The following graphics show the messages for the first time the script is used on your computer.</p>
-<p>If you see a message that starts with "The file used by <abbr title="program used to build an app">Xcode</abbr> to sign your app . . .", then skip ahead to <a href="#use-permanent-loopconfigoverridexcconfig">Use Permanent LoopConfigOverride.xcconfig</a>. You've already configured your file.</p>
+<p>The following graphics show the terminal display after selecting option 1 to use Apple Developer ID.</p>
 <ul>
-<li>Graphic 1 below shows:<ul>
-<li>User types 1 to use Apple Developer ID</li>
-<li>User reads instructions for getting Team ID from the Membership page</li>
-<li>The developer.apple.com web page is opened automatically when user is ready</li>
-<li>User obtains ID</li>
-<li>User enters ID in terminal</li>
+<li>Graphic below:<ul>
+<li>User is presented with instructions for getting Team ID from the Membership page<ul>
+<li>After review, the user hits return</li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+<p align="center"><img alt="instructions for obtaining developer id" src="../img/build-dev-b-01-a.svg" width="700" /></p>
+<ul>
+<li>Graphic below:<ul>
+<li>The instructions remain on the screen for reference</li>
+<li>The developer.apple.com web page (not shown) opened automatically in the browser after user hit return<ul>
+<li>User obtains ID</li>
+</ul>
+</li>
+<li>User enters ID in terminal and then hits return</li>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="entry of developer id" src="../img/build-dev-b-01-b.svg" width="700" /></p>
+<p>After hitting return, the user can verify the entry.</p>
+<h3 id="review-loopconfigoverridexcconfig">Review LoopConfigOverride.xcconfig<a class="headerlink" href="#review-loopconfigoverridexcconfig" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Use Your Team ID</p>
-<p>The Team ID entered in the graphics below is bogus - the script only checks that the entry is 10 characters long.</p>
-<p>Please follow directions and use your actual Apple Developer ID (the Team ID on the Membership page).</p>
+<p>The ID, 0123456789, shown in the graphic below is for illustration purposes only. Your terminal display shows your Apple Developer ID (the Team ID on the Membership page).</p>
 </div>
-<p align="center"><img alt="messages for configuring the override file first time through" src="../img/build-dev-b-01.svg" width="750" /></p>
-<h4 id="first-use-of-script-continued">First Use of Script, continued:<a class="headerlink" href="#first-use-of-script-continued" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>If you previously built with this computer using the script, you already have the file configured. The review step is the same each time.</p>
 <ul>
-<li>Graphic 2 below shows:<ul>
-<li>The permanent file is automatically created</li>
-<li>User is given an opportunity to review the file information</li>
+<li>Graphic below:<ul>
+<li>The developer ID stored in the permanent file is displayed for review</li>
+<li>After review, hit return to continue and <a href="#plug-in-your-phone">Plug in Your Phone</a></li>
+<li>OR - to modify the ID in the file, see <a href="#problem-with-the-id">Problem with the ID?</a></li>
 </ul>
 </li>
 </ul>
-<p align="center"><img alt="messages for configuring the override file first time through" src="../img/build-dev-b-02.svg" width="750" /></p>
-<p>User is then shown the <a href="#final-messages">Final Messages</a></p>
-<h3 id="use-permanent-loopconfigoverridexcconfig">Use Permanent LoopConfigOverride.xcconfig<a class="headerlink" href="#use-permanent-loopconfigoverridexcconfig" title="Anchor link to this Header on this Page">&para;</a></h3>
-<ul>
-<li>Graphic 3 below shows:<ul>
-<li>The permanent file is detected, user gets a chance to review it</li>
+<p align="center"><img alt="review of override file before use" src="../img/build-dev-b-03.svg" width="700" /></p>
+<h4 id="problem-with-the-id">Problem with the ID?<a class="headerlink" href="#problem-with-the-id" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>If there is a problem with the ID that is stored on your computer, you can modify it before continuing.  The instructions, shown in the terminal message, are repeated here:</p>
+<p>To edit the LoopConfigOverride.xcconfig file with a different developer ID:</p>
+<ol>
+<li>Open finder, navigate to Downloads/BuildLoop</li>
+<li>Locate and double click on LoopConfigOverride.xcconfig<ul>
+<li>This will open that file in <abbr title="program used to build an app">Xcode</abbr></li>
 </ul>
 </li>
-</ul>
-<p align="center"><img alt="messages for using the override file for subsequent use" src="../img/build-dev-b-03.svg" width="750" /></p>
-<h4 id="final-messages">Final Messages<a class="headerlink" href="#final-messages" title="Anchor link to this Header on this Page">&para;</a></h4>
-<ul>
-<li>Graphic 2 and 3 above showed:<ul>
-<li>The user is always told which web pages will be opened and that <abbr title="program used to build an app">Xcode</abbr> will be opened</li>
-<li>Then they must hit return when they are done reading</li>
-</ul>
-</li>
-</ul>
-<p>With the Loop-dev version, there are fewer build steps because the targets should already be signed.</p>
-<p>The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.</p>
-<ul>
-<li>Wait until you've successfully built the app before closing the terminal</li>
-<li>The command of the form: <code>cd /&lt;specific-to-you-and-your-computer&gt;/Downloads/BuildLoop/&lt;download-folder-name&gt;/LoopWorkspace</code> can be useful for some specific actions; most people will not need this.</li>
-</ul>
+<li>Edit in <abbr title="program used to build an app">Xcode</abbr> and save file</li>
+</ol>
+<p>You can now return to the terminal and hit return for the next step.</p>
 <h2 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="plug-in-your-phone">Plug in Your Phone<a class="headerlink" href="#plug-in-your-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below. The messages in the terminal instruct you to:</p>
@@ -2472,8 +2567,14 @@
 <li>Open a browser window displaying this section of LoopDocs</li>
 <li>Open <abbr title="program used to build an app">Xcode</abbr></li>
 </ul>
+<h4 id="final-messages">Final Messages<a class="headerlink" href="#final-messages" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.</p>
+<ul>
+<li>Wait until you've successfully built the app before closing the terminal</li>
+<li>The command of the form: <code>cd /&lt;specific-to-you-and-your-computer&gt;/Downloads/BuildLoop/&lt;download-folder-name&gt;/LoopWorkspace</code> can be useful for some specific actions; most people will not need this.</li>
+</ul>
 <h3 id="initial-xcode-screens">Initial <abbr title="program used to build an app">Xcode</abbr> Screens<a class="headerlink" href="#initial-xcode-screens" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you want to <a href="../code_customization/">Customize Loop</a>, do it before you proceed with the build.</p>
+<p>If you want to <a href="../code_customization/">Customize Loop</a>, best practice is to build the fresh download (to a simulator instead of your phone) to make sure there are no problems with the download. Then customize and build to your phone..</p>
 <p>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below:</p>
 <ul>
 <li>Frame 1:  <abbr title="program used to build an app">Xcode</abbr> screen opened by the script after a fresh download<ul>
