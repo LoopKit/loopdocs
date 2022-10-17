@@ -757,15 +757,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#identifying-loop-dev-version" class="md-nav__link">
-    Identifying Loop-dev Version
+  <a href="#loop-dev-version" class="md-nav__link">
+    Loop-dev Version
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#start-the-build-loop-fixed-dev-script" class="md-nav__link">
-    Start the Build Loop Fixed Dev Script
+  <a href="#start-the-buildloopfixeddev-script" class="md-nav__link">
+    Start the BuildLoopFixedDev Script
   </a>
   
 </li>
@@ -902,6 +902,13 @@
           <li class="md-nav__item">
   <a href="#open-a-terminal-in-loopworkspace-folder" class="md-nav__link">
     Open a Terminal in LoopWorkspace Folder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identify-loop-dev-version" class="md-nav__link">
+    Identify Loop-dev Version
   </a>
   
 </li>
@@ -2213,15 +2220,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#identifying-loop-dev-version" class="md-nav__link">
-    Identifying Loop-dev Version
+  <a href="#loop-dev-version" class="md-nav__link">
+    Loop-dev Version
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#start-the-build-loop-fixed-dev-script" class="md-nav__link">
-    Start the Build Loop Fixed Dev Script
+  <a href="#start-the-buildloopfixeddev-script" class="md-nav__link">
+    Start the BuildLoopFixedDev Script
   </a>
   
 </li>
@@ -2362,6 +2369,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#identify-loop-dev-version" class="md-nav__link">
+    Identify Loop-dev Version
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2395,7 +2409,7 @@
                 
                 
                 <h1 id="advanced-users-only">Advanced Users Only<a class="headerlink" href="#advanced-users-only" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p><strong>Only build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you're a developer/experienced user</strong></p>
+<p><strong>Typically, the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is tested by developers and experienced users. When the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> gets more mature, adventurous Loopers want to try out the new features and are not waiting for the release. Please pay extra attention if you proceed with Loop-dev.</strong></p>
 <h2 id="about-loop-dev">About Loop-dev<a class="headerlink" href="#about-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Please read <a href="../../faqs/branch-faqs/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>?</a> before deciding to test the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <ul>
@@ -2404,7 +2418,7 @@
 <li>The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> Loop user interface is updated - as an experienced Looper, you will notice the difference</li>
 <li>Updated documentation is a work-in-progress located under the <a href="../../loop-3/loop-3-overview/">Loop 3</a> tab of LoopDocs</li>
 </ul>
-<p>The development <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to build select) is provided.</p>
+<p>The development <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to the Build Select script) is provided. The name of the script: BuildLoopFixedDev refers to the fact that the scripts build a version (<abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>) of the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> that has been lightly tested. The developers continue to make changes to dev, and after testing, the script is updated to the next lightly tested <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
 <div class="admonition danger">
 <p class="admonition-title">Returning to Older Version</p>
 <p>If you decide to return to Loop v2.2.x (or FreeAPS) after building Loop-dev on your phone, you will have to delete the Loop app and all other apps with the shared app group ID. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.</p>
@@ -2412,21 +2426,19 @@
 <p>For more information, click on <a href="../../faqs/release-faqs/#remove-apps-with-shared-app-group">Remove Apps with Shared App Group</a></p>
 </div>
 <h2 id="download-loop-dev">Download Loop-dev<a class="headerlink" href="#download-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This page documents using the Build Loop Fixed Dev script to download the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of the app. If you have not previously built the released version of the app using the Build Select script as documented in <a href="../step14/">Build the Loop App</a>, you may find the documentation on this page sparse.</p>
+<p>This page documents using the BuildLoopFixedDev script to download the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of the app for Loop or FreeAPS.</p>
 <ul>
-<li>A new script has been prepared to assist building the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> for Loop and FreeAPS</li>
-<li>This script downloads the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then selects a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that has been lightly tested</li>
+<li>The BuildLoopFixedDev script downloads the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then selects a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that has been lightly tested</li>
 </ul>
 <p>This is still code under development, so please pay attention to your app and report any unexpected behavior on <a href="https://loop.zulipchat.com">Loop Zulipchat</a>.</p>
 <div class="admonition warning">
 <p class="admonition-title"><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16: Developer Mode Required</p>
 <p>If your phone is running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16, please click on this <a href="../step14/#developer-mode">Developer Mode</a> link, follow the directions on that page and then return to this page.  (If you continue on the page with the Developer Mode link, you will be building the released code, not the dev code.)</p>
 </div>
-<h3 id="identifying-loop-dev-version">Identifying Loop-dev Version<a class="headerlink" href="#identifying-loop-dev-version" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The version of code that shows up under the Loop Settings screen is "Loop v2.3.0(57)(dev)" until Loop-dev is released. As part of the release process, the version number will be updated; but in the interim, it does not change when the code is modified. In order to identify which version of dev you have on your phone, you need the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
-<p>The <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report which is now found in the <a href="../../loop-3/settings/#support">Support</a> portion of the Loop settings screen. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.</p>
-<p>When you run the script, the instructions inform you of the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that will be built.</p>
-<h3 id="start-the-build-loop-fixed-dev-script">Start the Build Loop Fixed Dev Script<a class="headerlink" href="#start-the-build-loop-fixed-dev-script" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="loop-dev-version">Loop-dev Version<a class="headerlink" href="#loop-dev-version" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The version of code that shows up under the Loop Settings screen will remain "Loop v2.3.0(57)(dev)" until Loop-dev is released. As part of the release process, the version number will be updated; but in the interim, it does not change when the code is modified.</p>
+<p>If you need help with your app, the mentors need more information. Please issue a Loop Report when asking for help. The location for the <code>Issue Report</code> button is in a different location with Loop-dev; refer to <a href="../../loop-3/settings/#support">Support</a>. If you want to keep track yourself, refer to <a href="#identify-loop-dev-version">Identify Loop-dev Version</a></p>
+<h3 id="start-the-buildloopfixeddev-script">Start the BuildLoopFixedDev Script<a class="headerlink" href="#start-the-buildloopfixeddev-script" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
 <div class="highlight"><span class="filename">Copy and Paste to start the BuildLoopFixedDev.sh script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopFixedDev.sh)&quot;
 </code></pre></div>
@@ -2555,7 +2567,7 @@
 <li>If you have never "Trusted" this computer with these device(s), do so now<ul>
 <li>A screen will pop up on your phone (and watch) asking if you trust the computer</li>
 <li>Select "Trust"</li>
-<li>After trusting phone and watch, phone should remain plugged in, but watch does not need to stay in proximity of the phone</li>
+<li>After clicking on "Trust" the computer for phone and watch, phone should remain plugged in, but watch does not need to stay in proximity of the phone</li>
 </ul>
 </li>
 </ul>
@@ -2569,7 +2581,7 @@
 <li>Open <abbr title="program used to build an app">Xcode</abbr></li>
 </ul>
 <h4 id="final-messages">Final Messages<a class="headerlink" href="#final-messages" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.</p>
+<p>The final messages (not shown) let you know you can rerun the script with an up-arrow / return, you can close the terminal window, and you can use a specific command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.</p>
 <ul>
 <li>Wait until you've successfully built the app before closing the terminal</li>
 <li>The command of the form: <code>cd /&lt;specific-to-you-and-your-computer&gt;/Downloads/BuildLoop/&lt;download-folder-name&gt;/LoopWorkspace</code> can be useful for some specific actions; most people will not need this.</li>
@@ -2664,21 +2676,24 @@
 <p>This is not required but may avoid confusion.</p>
 </div>
 <h3 id="open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder<a class="headerlink" href="#open-a-terminal-in-loopworkspace-folder" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom. Double clicking on that file opens <abbr title="program used to build an app">Xcode</abbr>; but some people prefer to use command lines in the terminal.</p>
+<p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted by the green rectangle on the upper left. The folder containing the code downloaded by the BuildLoopFixedDev script is highlighted by the red rectangle.  Note the folder name indicates the app name and <abbr title="version of code within a single repository or workspace repository">branch</abbr>: Loop-dev, the date: 221016, the local time 1619 and the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number: ca8a374. The LoopWorkspace folder below that (dashed blue rectangle) is the folder that needs to be opened in the terminal app.</p>
 <ul>
 <li>Open <abbr title="graphical folder and file display on Mac">Finder</abbr></li>
-<li>Navigate to Downloads/BuildLoop and look for your download by name and date</li>
-<li>Open that folder, for example, Downloads/BuildLoop/Loop-220803-1145</li>
-<li>Find the LoopWorkspace folder icon (dashed-blue rectangle)</li>
+<li>Navigate to Downloads/BuildLoop and look for your download (highlighted by red rectangle) by name and date</li>
+<li>Open the folder to view LoopWorkspace (dashed blue rectangle)</li>
 <li>Hold down the CTRL key and click (or right-click) LoopWorkspace</li>
 <li>A menu appears - select <code>New Terminal at Folder</code> (near the bottom of the list)</li>
 </ul>
-<p>This new terminal window is now in the LoopWorkspace folder needed to perform <code>git</code> commands needed to update your downloaded copy (<abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>) when new updates are made to the <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
-<p align="center"><img alt="how to use finder to find the correct download and open xcode" src="../img/finding-loopworkspace.svg" width="750" /></p>
+<p>This new terminal window opens in the LoopWorkspace folder needed to perform <code>git</code> commands to update your downloaded copy (<abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>) when new updates are made to the <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<p align="center"><img alt="how to use finder to find the correct download and open xcode" src="../img/finding-loopworkspace-dev.svg" width="750" /></p>
 <ul>
 <li>Some users like to use <a href="https://support.gitkraken.com/">GitKraken</a> to assist them (link takes you to a tutorial video).</li>
 <li>Some are comfortable with the command line <abbr title="a tool for version control">git</abbr> commands described on <a href="../loopworkspace/#updating-loop-using-loopworkspace">here</a>.</li>
 </ul>
+<h3 id="identify-loop-dev-version">Identify Loop-dev Version<a class="headerlink" href="#identify-loop-dev-version" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The version of code that shows up under the Loop Settings screen will remain "Loop v2.3.0(57)(dev)" until Loop-dev is released. In order to identify which version of dev you have on your phone, you need the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
+<p>The <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is identified by a 7-digit alphanumeric code.  That code was also appended to the folder name of the downloaded code under Downloads/BuildLoop as shown in the graphic above.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report, refer to <a href="../../loop-3/settings/#support">Support</a> for instructions on issuing a Loop Report. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.</p>
+<p>When you ran the BuildLoopFixedDev script, the instructions informed you of the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
 <h2 id="manual-vs-automatic-signing">Manual vs Automatic Signing<a class="headerlink" href="#manual-vs-automatic-signing" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you manually sign any of the targets, for example as an alternative way to get your Developer ID, the file in the Loop folder called <code>Loop.xcodeproj/project.pbxproj</code> is automatically modified to use that target name.</p>
 <p>Once that happens, the feature that enables <abbr title="program used to build an app">Xcode</abbr> to use the <code>LOOP_DEVELOPMENT_TEAM</code> keyword in the LoopConfigOverride.xcconfig is no longer available.</p>
@@ -2699,7 +2714,7 @@
 <p>You do NOT need to uninstall <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> - your choice. If you share the computer with someone else, make sure they don't need <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>.</p>
 </li>
 </ul>
-<p>First copy and paste this phrase into the terminal and hit return:</p>
+<p>To determine if cathage is installed on your system, copy and paste this phrase into the terminal and hit return:</p>
 <div class="highlight"><pre><span></span><code>carthage version
 </code></pre></div>
 <ul>
