@@ -94,7 +94,10 @@ Verify the word "error" is not shown in the terminal and proceed by typing 1 and
 
 ## Signing Targets
 
-The script helps you configure a permanent file used by Xcode to automatically sign all your targets.
+!!! question "What does Signing Targets Mean?"
+    "Signing Targets" in Xcode identifies who built the app. You cannot deploy an app to a phone without signing each target associated with that app.
+
+This replaces several of the steps that used to be required to build Loop.
 
 The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to [Use Permanent LoopConfigOverride.xcconfig](#use-permanent-loopconfigoverridexcconfig).
 
@@ -125,57 +128,54 @@ If you know your Personal Team ID, you can enter it as directed in [Signing Targ
 
 ### Create Permanent LoopConfigOverride.xcconfig
 
-The following graphics show the messages for the first time the script is used on your computer.
+The following graphics show the terminal display after selecting option 1 to use Apple Developer ID.
 
-If you see a message that starts with "The file used by Xcode to sign your app . . .", then skip ahead to [Use Permanent LoopConfigOverride.xcconfig](#use-permanent-loopconfigoverridexcconfig). You've already configured your file.
+* Graphic below:
+    - User is presented with instructions for getting Team ID from the Membership page
+        - After review, the user hits return
 
+![instructions for obtaining developer id](img/build-dev-b-01-a.svg){width="700"}
+{align="center"}
 
-* Graphic 1 below shows:
-    - User types 1 to use Apple Developer ID
-    - User reads instructions for getting Team ID from the Membership page
-       - The developer.apple.com web page is opened automatically when user is ready
-    - User obtains ID
-    - User enters ID in terminal
+* Graphic below:
+    - The instructions remain on the screen for reference
+    - The developer.apple.com web page (not shown) opened automatically in the browser after user hit return
+        - User obtains ID
+    - User enters ID in terminal and then hits return
+
+![entry of developer id](img/build-dev-b-01-b.svg){width="700"}
+{align="center"}
+
+After hitting return, the user can verify the entry.
+
+### Review LoopConfigOverride.xcconfig
 
 !!! note "Use Your Team ID"
-    The Team ID entered in the graphics below is bogus - the script only checks that the entry is 10 characters long.
+    The ID, 0123456789, shown in the graphic below is for illustration purposes only. Your terminal display shows your Apple Developer ID (the Team ID on the Membership page).
 
-    Please follow directions and use your actual Apple Developer ID (the Team ID on the Membership page).
+If you previously built with this computer using the script, you already have the file configured. The review step is the same each time.
 
-![messages for configuring the override file first time through](img/build-dev-b-01.svg){width="750"}
+* Graphic below:
+    - The developer ID stored in the permanent file is displayed for review
+    - After review, hit return to continue and [Plug in Your Phone](#plug-in-your-phone)
+    - OR - to modify the ID in the file, see [Problem with the ID?](#problem-with-the-id)
+
+![review of override file before use](img/build-dev-b-03.svg){width="700"}
 {align="center"}
 
-#### First Use of Script, continued:
+#### Problem with the ID?
 
-* Graphic 2 below shows:
-    - The permanent file is automatically created
-    - User is given an opportunity to review the file information
+If there is a problem with the ID that is stored on your computer, you can modify it before continuing.  The instructions, shown in the terminal message, are repeated here:
 
-![messages for configuring the override file first time through](img/build-dev-b-02.svg){width="750"}
-{align="center"}
+To edit the LoopConfigOverride.xcconfig file with a different developer ID:
 
-User is then shown the [Final Messages](#final-messages)
+1. Open finder, navigate to Downloads/BuildLoop
+1. Locate and double click on LoopConfigOverride.xcconfig
+    * This will open that file in Xcode
+1. Edit in Xcode and save file
 
-### Use Permanent LoopConfigOverride.xcconfig
+You can now return to the terminal and hit return for the next step.
 
-* Graphic 3 below shows:
-    - The permanent file is detected, user gets a chance to review it
-
-![messages for using the override file for subsequent use](img/build-dev-b-03.svg){width="750"}
-{align="center"}
-
-#### Final Messages
-
-* Graphic 2 and 3 above showed:
-    * The user is always told which web pages will be opened and that Xcode will be opened
-    * Then they must hit return when they are done reading
-
-With the Loop-dev version, there are fewer build steps because the targets should already be signed.
-
-The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.
-
-* Wait until you've successfully built the app before closing the terminal
-* The command of the form: `cd /<specific-to-you-and-your-computer>/Downloads/BuildLoop/<download-folder-name>/LoopWorkspace` can be useful for some specific actions; most people will not need this.
 
 ## Build Loop
 
@@ -201,10 +201,18 @@ The final action of the script is to
 * Open a browser window displaying this section of LoopDocs
 * Open Xcode
 
+With the Loop-dev version, there are fewer build steps because the targets should already be signed.
+
+#### Final Messages
+
+The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.
+
+* Wait until you've successfully built the app before closing the terminal
+* The command of the form: `cd /<specific-to-you-and-your-computer>/Downloads/BuildLoop/<download-folder-name>/LoopWorkspace` can be useful for some specific actions; most people will not need this.
+
 ### Initial Xcode Screens
 
-If you want to [Customize Loop](../build/code_customization.md), do it before you proceed with the build.
-
+If you want to [Customize Loop](../build/code_customization.md), best practice is to build the fresh download (to a simulator instead of your phone) to make sure there are no problems with the download. Then customize and build to your phone..
 
 Refer to the GIF below:
 
