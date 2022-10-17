@@ -20,20 +20,29 @@ The development branch supports Omnipod DASH and many less experienced users wan
 
 ## Download Loop-dev
 
-This page documents using a script, different from the usual Build Select script, to build the development branch of the app. If you have not previously built the released version of the app using the Build Select script as documented in [Build the Loop App](step14.md), you may find the documentation sparse.
+This page documents using the Build Loop Fixed Dev script to download the development branch of the app. If you have not previously built the released version of the app using the Build Select script as documented in [Build the Loop App](step14.md), you may find the documentation on this page sparse.
 
 * A new script has been prepared to assist building the development branch for Loop and FreeAPS
 * This script downloads the development branch and then selects a specific commit that has been lightly tested
 
 This is still code under development, so please pay attention to your app and report any unexpected behavior on [Loop Zulipchat](https://loop.zulipchat.com).
 
-The commit is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes.
+!!! warning "iOS 16: Developer Mode Required"
+    If your phone is running iOS 16, please click on this [Developer Mode](step14.md#developer-mode) link, follow the directions on that page and then return to this page.  (If you continue on the page with the Developer Mode link, you will be building the released code, not the dev code.)
+
+### Identifying Loop-dev Version
+
+The version of code that shows up under the Loop Settings screen is "Loop v2.3.0(57)(dev)" until Loop-dev is released. As part of the release process, the version number will be updated; but in the interim, it does not change when the code is modified. In order to identify which version of dev you have on your phone, you need the commit.
+
+The commit is identified by a 7-digit alphanumeric code.  That code is appended to the folder name of the downloaded code under Downloads/BuildLoop.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report which is now found in the [Support](../loop-3/settings.md#support) portion of the Loop settings screen. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.
 
 When you run the script, the instructions inform you of the commit that will be built.
 
+### Start the Build Loop Fixed Dev Script
+
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
-```title="Copy and Paste to start the script to build a specific commit"
+```title="Copy and Paste to start the BuildLoopFixedDev.sh script"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopFixedDev.sh)"
 ```
 
@@ -41,28 +50,56 @@ Paste the line into a Terminal window. Be sure to click anywhere in the terminal
 
 Read the screen (shown below).  Type 1 and return if you understand the warning and agree.
 
-![paste the script line into terminal - agree to warning](img/bss-01-initial-message.svg){width="700"}
-{align="center"}
-
 * Please read what is on the screen as you progress.
 * Adjust font size as directed if you have difficulty seeing the directions.
 
-You must type 1 (as shown in the graphic above) and return to indicate you understand the warning.
+![paste the script line into terminal - agree to warning](img/bss-01-initial-message.svg){width="700"}
+{align="center"}
 
 The next graphic warns you about building a development branch. The date and commit number in the script might not match the graphic below. The values in the script will be updated at appropriate times. The date indicates when that commit was added to the branch.
+
+Enter your choice for app and hit return. Loop-dev is strongly recommended.
 
 ![message about development branch commit](img/build-select-dev.svg){width="700"}
 {align="center"}
 
-Continue following directions with the script and wait for the download to complete. If you get errors, [review this section](step14.md#xcode-errors-with-build-select) of the directions for building the released code. Resolve the errors, if possible, then return to this page.
+If you get errors when attempting to download, [review this section](step14.md#xcode-errors-with-build-select) of LoopDocs. (It is in the directions for building the released code.) Resolve the errors, if possible, then return to this page.
 
-After the download step, the specific commit will be "checked out". Verify there are no errors and proceed.
+### Wait for Download to Complete
+
+This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. When you read the words in the terminal, as the script runs, you may see terminology you do not understand - don't worry - you do not need to understand enumeration or submodule or cloning.  You only need to review the display to look for any error messages.
+
+When the download completes, the "Check for successful download" message is displayed. You will need to scroll up in the terminal window to look through all the messages output to the terminal from the beginning of the download. (Your messages about "Submodule path" will be different because this graphic is from a different version of Loop.)
+
+![download complete - search for errors message](img/bss-06-search-for-errors.svg){width="700"}
+{align="center"}
+
+If you do not find the word error in your terminal window, continue with [Download was Successful](#download-was-successful).
+
+If you see the word "error" in your terminal window:
+
+* Read the error message
+* Try to figure out the problem
+* If you need help, reach out to your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site
+* Tap any key other than 1, followed by return to cancel
+
+### Download was Successful
+
+After the download step, the specific, lightly tested version of Loop-dev, indicated by the commit number, will be "checked out". You will see that commit number indicated by the line that includes "HEAD detached at".  Remember, the specific number shown in your terminal may not match the graphic below.
+
+![status of downloaded development branch commit](img/build-select-dev-checkout.svg){width="700"}
+{align="center"}
+
+Verify the word "error" is not shown in the terminal and proceed by typing 1 and hitting return.
 
 ## Signing Targets
 
-The script helps you configure a permanent file used by Xcode to automatically sign all your targets.
+!!! question "What does Signing Targets Mean?"
+    "Signing Targets" in Xcode identifies who built the app. You cannot deploy an app to a phone without signing each target associated with that app.
 
-The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to [Use Permanent LoopConfigOverride.xcconfig](#use-permanent-loopconfigoverridexcconfig).
+This replaces several of the steps that used to be required to build Loop.
+
+The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to [Review LoopConfigOverride.xcconfig](#review-loopconfigoverridexcconfig).
 
 The next question, as shown in graphic below, is whether you will (1) Enter Apple Developer ID or (2) Sign Manually.
 
@@ -91,57 +128,54 @@ If you know your Personal Team ID, you can enter it as directed in [Signing Targ
 
 ### Create Permanent LoopConfigOverride.xcconfig
 
-The following graphics show the messages for the first time the script is used on your computer.
+The following graphics show the terminal display after selecting option 1 to use Apple Developer ID.
 
-If you see a message that starts with "The file used by Xcode to sign your app . . .", then skip ahead to [Use Permanent LoopConfigOverride.xcconfig](#use-permanent-loopconfigoverridexcconfig). You've already configured your file.
+* Graphic below:
+    - User is presented with instructions for getting Team ID from the Membership page
+        - After review, the user hits return
 
+![instructions for obtaining developer id](img/build-dev-b-01-a.svg){width="700"}
+{align="center"}
 
-* Graphic 1 below shows:
-    - User types 1 to use Apple Developer ID
-    - User reads instructions for getting Team ID from the Membership page
-       - The developer.apple.com web page is opened automatically when user is ready
-    - User obtains ID
-    - User enters ID in terminal
+* Graphic below:
+    - The instructions remain on the screen for reference
+    - The developer.apple.com web page (not shown) opened automatically in the browser after user hit return
+        - User obtains ID
+    - User enters ID in terminal and then hits return
+
+![entry of developer id](img/build-dev-b-01-b.svg){width="700"}
+{align="center"}
+
+After hitting return, the user can verify the entry.
+
+### Review LoopConfigOverride.xcconfig
 
 !!! note "Use Your Team ID"
-    The Team ID entered in the graphics below is bogus - the script only checks that the entry is 10 characters long.
+    The ID, 0123456789, shown in the graphic below is for illustration purposes only. Your terminal display shows your Apple Developer ID (the Team ID on the Membership page).
 
-    Please follow directions and use your actual Apple Developer ID (the Team ID on the Membership page).
+If you previously built with this computer using the script, you already have the file configured. The review step is the same each time.
 
-![messages for configuring the override file first time through](img/build-dev-b-01.svg){width="750"}
+* Graphic below:
+    - The developer ID stored in the permanent file is displayed for review
+    - After review, hit return to continue and [Plug in Your Phone](#plug-in-your-phone)
+    - OR - to modify the ID in the file, see [Problem with the ID?](#problem-with-the-id)
+
+![review of override file before use](img/build-dev-b-03.svg){width="700"}
 {align="center"}
 
-#### First Use of Script, continued:
+#### Problem with the ID?
 
-* Graphic 2 below shows:
-    - The permanent file is automatically created
-    - User is given an opportunity to review the file information
+If there is a problem with the ID that is stored on your computer, you can modify it before continuing.  The instructions, shown in the terminal message, are repeated here:
 
-![messages for configuring the override file first time through](img/build-dev-b-02.svg){width="750"}
-{align="center"}
+To edit the LoopConfigOverride.xcconfig file with a different developer ID:
 
-User is then shown the [Final Messages](#final-messages)
+1. Open finder, navigate to Downloads/BuildLoop
+1. Locate and double click on LoopConfigOverride.xcconfig
+    * This will open that file in Xcode
+1. Edit in Xcode and save file
 
-### Use Permanent LoopConfigOverride.xcconfig
+You can now return to the terminal and hit return for the next step.
 
-* Graphic 3 below shows:
-    - The permanent file is detected, user gets a chance to review it
-
-![messages for using the override file for subsequent use](img/build-dev-b-03.svg){width="750"}
-{align="center"}
-
-#### Final Messages
-
-* Graphic 2 and 3 above showed:
-    * The user is always told which web pages will be opened and that Xcode will be opened
-    * Then they must hit return when they are done reading
-
-With the Loop-dev version, there are fewer build steps because the targets should already be signed.
-
-The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.
-
-* Wait until you've successfully built the app before closing the terminal
-* The command of the form: `cd /<specific-to-you-and-your-computer>/Downloads/BuildLoop/<download-folder-name>/LoopWorkspace` can be useful for some specific actions; most people will not need this.
 
 ## Build Loop
 
@@ -167,10 +201,16 @@ The final action of the script is to
 * Open a browser window displaying this section of LoopDocs
 * Open Xcode
 
+#### Final Messages
+
+The final messages (not shown) inform you that you can rerun the script with an up-arrow / return, close the terminal window and provides an optional command to configure the terminal to be in the LoopWorkspace folder for the downloaded code.
+
+* Wait until you've successfully built the app before closing the terminal
+* The command of the form: `cd /<specific-to-you-and-your-computer>/Downloads/BuildLoop/<download-folder-name>/LoopWorkspace` can be useful for some specific actions; most people will not need this.
+
 ### Initial Xcode Screens
 
-If you want to [Customize Loop](../build/code_customization.md), do it before you proceed with the build.
-
+If you want to [Customize Loop](../build/code_customization.md), best practice is to build the fresh download (to a simulator instead of your phone) to make sure there are no problems with the download. Then customize and build to your phone..
 
 Refer to the GIF below:
 
