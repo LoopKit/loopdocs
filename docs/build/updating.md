@@ -23,7 +23,7 @@
     - **"Do I delete my old Loop app first?"** Definitely **not**! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
     - **"Do I need to start a new pod when I update?"** No. Your existing pod session will continue seamlessly if you are using the same Developer Account to sign the Loop app targets as you did the last time you built.
     - **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account used when your existing app was built (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
-    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check that your new computer has the required compatible versions and then build your app. This will include installing Xcode and configuring Xcode preferences. There is no need to delete provisioning profiles on a brand new computer, but no harm comes from following the instruction.
+    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check that your new computer has the required compatible versions and then build your app. This will include installing Xcode, configuring Xcode preferences, and adding your Developer ID to Xcode: refer to [What about a New Computer?](#what-about-a-new-computer). There is no need to delete provisioning profiles on a brand new computer, but no harm comes from following the instruction.
 
 ## When to Update Loop
 
@@ -35,7 +35,7 @@ Under ordinary circumstance, updating the iOS on your phone does not require a r
 
 !!! abstract "Best Practice"
 
-    It is good practice to first check if your computer (macOS or Xcode) will require an update to support building Loop to your phone BEFORE applying an iOS update to your Looping phone. 
+    It is good practice to first check if your computer (macOS or Xcode) will require an update to support building Loop to your phone BEFORE applying an iOS update to your Looping phone.
 
     Follow these "safe Looping" steps for updating your iOS:
 
@@ -77,12 +77,12 @@ Between Loop app builds, there's a high likelihood that Apple has updated one or
 Based on the iOS on your phone, or the iOS you plan to install on your phone, determine the required macOS and Xcode versions. Click on this  link [versions for iOS, macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.
 
 !!! warning "First macOS and Then Xcode"
-    Your macOS must meet the minimum requirement for the Xcode version you need to support your current iOS as detailed in that link above. 
-    
+    Your macOS must meet the minimum requirement for the Xcode version you need to support your current iOS as detailed in that link above.
+
     * If the macOS is too old, the Xcode version will not appear in the App Store
     * You might think you don't need to update Xcode (but you do)
     * Your build will fail and mentors might need to help you
-    
+
     Don't be that person. Follow the directions.
 
 Minimum means you need to have at least that version - newer versions build just fine.
@@ -98,13 +98,17 @@ Click on this link [Check your Xcode Version](step9.md#xcode-version) to find yo
 
 If you need to update your Xcode, follow the instructions at this link [Install Xcode](step8.md#install-xcode) and continue through [Xcode Preferences](step9.md).
 
-Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode). 
+Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode).
 
 !!! warning "Direct Download"
 
     - If you previously did a direct download of Xcode, it might not show up in the App Store.
     - Either do another direct download or follow these directions in the Direct Download section to reconfigure so it will show up in the App Store.
         - [Direct Download of Xcode](updating.md#direct-download-of-xcode)
+
+#### What about a New Computer?
+
+Make sure your new computer has the macOS and Xcode required by your phone iOS. Be sure Xcode [Command Line Tools](step9.md#command-line-tools) are installed and that you [Add Apple ID](step9.md#add-apple-id) to Xcode.
 
 #### Missing Xcode or Command Line Tools
 
@@ -132,11 +136,19 @@ Apple updates its License Agreement for the Developer Program frequently. You ne
 
 In order to ensure a full year of use for your Loop app, you need to delete any existing provisioning profile(s) from your computer. It is the expiration date of the provisioning profile on your computer that determines when the app expires.
 
-There are two methods to delete provisioning profiles, using the Build Select script Utilities or [manually](#manual-delete-of-provisioning-profiles).
+!!! tip "Manual Delete of Provisioning Profiles"
+
+    If you are comfortable pasting commands into the terminal, you can delete the provisioning profiles by copying and pasting this command into a terminal window.
+
+    ``` title="Copy and Paste to remove Provisioning Profiles"
+    rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
+    ```
+
+    If you did the manual delete, skip ahead to [Ready To Build Loop](#ready-to-build-loop).
 
 ### Build Select Utilities
 
-You can delete the old provisioning profiles with the same Build Select script you will use to download and build new code.
+You can delete the old provisioning profiles with the same Build Select Script you will use to download and build new code.
 
 #### Open Terminal
 
@@ -184,18 +196,14 @@ Once this completes, you should see this in your terminal.
 ![clean utility script completed](img/build-select-04.png){width="750"}
 {align="center"}
 
-As long as there are no errors, you are now ready to proceed to [Build the Loop App: Download Loop](step14.md#download-loop) to build the released version of the app.
+## Ready to Build Loop
 
-After building the new app, following the link above, you may choose to return to this page and follow the instructions to [Delete Old Copies](#delete-old-copies). This is optional, but cleans up space on your computer.
+As long as there are no errors, you are now ready to proceed to one of these pages:
 
+* Released Loop Code: [Build the Loop App: Developer Mode](step14.md#developer-mode)
+* Development Loop Code: [Loop-dev](step13.md)
 
-### Manual Delete of Provisioning Profiles
-
-If you prefer not to use the Build Select script and you are comfortable pasting commands into the terminal, you can delete the provisioning profiles by copying and pasting this command into a terminal window.
-
-``` title="Copy and Paste to remove Provisioning Profiles"
-rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
-```
+After building the new app, you may choose to return to this page and follow the instructions to [Delete Old Copies](#delete-old-copies). This is optional, but cleans up space on your computer.
 
 ## Delete Old Copies
 
@@ -205,11 +213,11 @@ When you update, you no longer need to keep old copies of the code on your compu
 
 !!! abstract "Where is the old folder?"
 
-    Assuming you used the Build Select script, your downloads are in the ~/Downloads/BuildLoop folder as shown in the graphic below. If you are tight on space, the older folders can be deleted.  Best practice, download fresh and build Loop; and then go back and delete all but the most recent copy.  The nice thing about the Build Select script is it automatically generates the folder name with the date and time of the download. Delete each unwanted folder, one at a time.
+    Assuming you used the Build Select Script, your downloads are in the ~/Downloads/BuildLoop folder as shown in the graphic below. If you are tight on space, the older folders can be deleted.  Best practice, download fresh and build Loop; and then go back and delete all but the most recent copy.  The nice thing about the Build Select script is it automatically generates the folder name with the date and time of the download. Delete each unwanted folder, one at a time.
 
     If you see a file (not a folder) in ~/Downloads/BuildLoop called LoopConfigOverride.xcconfig, keep that around. If you delete it, you'll need to recover it from the trash, regenerate it (if you know how) or sign your targets manually for your current download.
 
-    The Scripts folder can also be left alone, but if you delete it, it is regenerated with the next use of the Build Select script.
+    The Scripts folder can also be left alone, but if you delete it, it is regenerated with the next use of the Build Select Script.
 
     ![Download folder with multiple Loop folders](img/loop-downloads.png)
 
@@ -233,7 +241,7 @@ If you build frequently, you do not need to delete the profiles every time. One 
 
 #### Revoke Certificate Issue
 
-What does it look like if you run into the Revoke Certificate message? When you prepare to Sign the Targets with Xcode, you'll see the message highlighted in the figure below.  
+What does it look like if you run into the Revoke Certificate message? When you prepare to Sign the Targets with Xcode, you'll see the message highlighted in the figure below.
 
 <br/>
 ![Screenshot: Xcode showing Revoke Certificate message](img/rejected-cert.svg){width="850"}
