@@ -34,23 +34,25 @@ New with iOS 16 and watchOS 9, you must enable Developer Mode to run or build Lo
 
 ### Prepare your Phone and Watch
 
-* If you are running Loop and update to iOS 16 and watchOS 9; Loop will no longer run until you enable Developer Mode and you will see a message similar to the next graphic
+* If you are running Loop and update to iOS 16 and watchOS 9; Loop will no longer run until you enable Developer Mode. You will see a message similar to the next graphic
 
-* If you are building to a new Apple Watch - you must first build the app with Xcode before the developer mode will be available.
+* If you are building to a new phone - you may need to connect the device to Xcode and trust the computer before the developer mode will be available.
+
+* If you are building to a new Apple Watch - you may need to build the app with Xcode to a phone paired with the watch before the developer mode will be available.
 
     ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
     {align="center"}
 
-* If your device uses iOS 16 (and watchOS 9); you must enable Developer Mode to build an app on that device using Xcode or it will show up as an "Unavailable Device" under Xcode
+If your phone uses iOS 16 and you do not enable Developer Mode; that phone shows up as an "Unavailable Device" under Xcode
 
-    ![xcode message for device without developer mode enabled](img/xcode-developer-mode-not-enabled.svg){width="450"}
-    {align="center"}
-
+![xcode message for device without developer mode enabled](img/xcode-developer-mode-not-enabled.svg){width="450"}
+{align="center"}
 
 #### Developer Mode on iOS 16 Device
 
 To determine if Developer Mode is enabled, go into your phone settings, choose Privacy & Security, scroll to the bottom of the screen and tap on the Developer Mode row and examine the Developer Mode slider.
 
+* If Developer Mode does not show up under Privacy & Security in your phone settings, wait until told to plug the phone, Trust the computer and then look for Developer Mode once connected to Xcode
 * If Developer Mode is enabled, the slider will be green and no further action is required
 * If Developer Mode is not enabled, the slider will be blank
     * Move the slider so it is green
@@ -94,7 +96,7 @@ These instructions show each step needed to download Loop using the Build Select
      * Information about [Loop Follow](https://github.com/jonfawcett/LoopFollow#readme)
      * Information specific to [FreeAPS](https://www.loopandlearn.org/freeapsdoc/)
 
-     You do not need to know about these apps to build Loop master.
+     You do not need to know about these apps to build the released version of Loop.
 
 #### Open Terminal
 
@@ -233,6 +235,9 @@ The GIF below shows:
 
 ![select loop workspace and confirm phone](img/build-229-02.gif){width="600"}
 {align="center"}
+
+!!! warning "iOS 16 Developer Mode"
+    If you have not enabled Developer Mode on a phone running iOS 16, you will see the phone name in the Unavailable Device section with the notation: "(Developer Mode disabled)". Refer to [Prepare your Phone and Watch](#prepare-your-phone-and-watch).
 
 !!! warning "My Phone is Not Selected"
     * Plug in your unlocked phone and select your phone using the dropdown menu (right side of red rectangle highlight in the GIF)

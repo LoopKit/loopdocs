@@ -20,7 +20,7 @@ Please, review all the Build pages, even if you will be skipping some.
 * Follow [Build the Loop App](../build/step14.md) but with the following variations:
     * When told to select ["Your Phone" in this section](../build/step14.md#select-loop-workspace-and-your-phone), instead choose a simulator
     * Follow the instructions in the [Build to a Simulator](../build/step14.md#build-to-a-simulator)
-* Use the simulated iPhone and [set up the app](../operation/overview.md) as desired
+* Use the simulated iPhone on the computer and [set up the app](../operation/overview.md) as desired
 
 ### Build to a Real iPhone and use a Simulated Pump and CGM
 
@@ -32,9 +32,11 @@ Please, review all the Build pages, even if you will be skipping some.
     * Order a RileyLink
     * Apple Developer Program
 * Follow [Download Xcode](../build/step8.md)
-* Follow [Xcode Preferences](../build/step9.md) but can skip the `Add Apple ID` section
-    * Use the instructions for a [Free Developer Account](../build/step9.md#free-developer-account)
-* Follow [Build the Loop App](../build/step14.md) using the Free Account instructions
+* Follow [Xcode Preferences](../build/step9.md)
+    * If you have a developer ID, use it in the `Add Apple ID` step and follow the normal build directions
+    * If you do not have a developer ID, use the [Free Developer Account](../build/step9.md#free-developer-account) instructions in the `Add Apple ID` section
+* When Building, use the [Build Loop App](../build/step14.md) page and select your phone`
+    * If you do not have a developer ID, be sure to follow the [Free Account](../build/step14.md#free-account) instructions
 * Once the App is on your phone
     * Follow the [set up the app](../operation/overview.md) instructions but choose a simulated pump
     * If you have a Dexcom CGM, you can select Dexcom Follow for the CGM; otherwise, you can enter glucose values in Apple Health and Loop will pick up the values

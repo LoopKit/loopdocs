@@ -9,23 +9,25 @@ There are two types of build indications that may be seen: they are warnings (ye
 ## Start with The Obvious Error Causes
 
 !!! info "New Loop Builders"
-    This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4, 6 and 7 in the list below. Then, skim the page until your reach [Find Your Error Message](build_errors.md#find-your-error-messages). Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
+    This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Review the "obvious" errors causes first. If that doesn't help, then, skim the page until you reach [Find Your Error Message](build_errors.md#find-your-error-messages) or search the page (Cmd-F) or search LoopDocs for your error. Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
 
 Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:
 
 1. **Did you forget to select Loop(WorkSpace)?** The first time you build after downloading new code, you must manually select Loop (Workspace) instead of Loop in Xcode.
 
-2. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
+1. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
-3. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there's a new license agreement.
+1. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there's a new license agreement.
 
-4. **Did you reboot, i.e., restart, your computer after updating Xcode?** You should reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. [Xcode Command Line Tools](step9.md#command-line-tools)
+1. **Do you have a new computer, never used to build Loop?** Did you [Add Apple ID](step9.md#add-apple-id) to Xcode?
 
-5. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the build-select script, it automatically opens Xcode using the new download. 
+1. **Did you reboot, i.e., restart, your computer after updating Xcode?** You should reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. [Xcode Command Line Tools](step9.md#command-line-tools)
+
+1. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the Build Select Script, it automatically opens Xcode using the new download. 
 
     If you want to build using a recent download, this section tells you how to [Find My Dowloaded Loop Code](code_customization.md#find-my-dowloaded-loop-code).
 
-6. **Are you are using a free developer account?** Make sure you finished the [removal of Siri and Push Notification capabilities](../build/step14.md#free-account).
+1. **Are you are using a free developer account?** Make sure you finished the removal of Siri and Push Notification capabilities described in the [Free Account](step14.md#free-account) link.
 
 1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, Loop might not build. Deleting iOS beta from a phone is a pain...so don't install it unless you know what you are doing.
 
@@ -33,7 +35,7 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating Loop code.
 
-1. Open your project in Xcode as normal. Then go to the menu bar at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.
+1. Open your project in Xcode as normal. Then go to the menu bar at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same. Wait for the clean to finish before trying to build again.
 1. On the far right, next to the name Full Path is the folder name that Xcode will be using to build. Make sure it is the new code you just downloaded and not an older folder.
 1. If you are updating Loop and did not [Delete Old Provisioning Profiles](updating.md#delete-provisioning-profiles), do it now
 1. Return to Xcode and try building your app again.
@@ -127,6 +129,8 @@ _The run destination for name's phone is not valid for running the scheme "Loop 
 
 Follow the link for the [Unpair and Reboot](#unpair-and-reboot) procedure.
 
+If you are running iOS 16 on your phone, make sure developer mode is turned on.
+
 ### Package.resolved file corrupted or malformed
 
 **Error Message:**
@@ -148,6 +152,8 @@ There are 2 problems shown here
 Update Xcode, which may require you to update macOS.
 
 ### Couldn't Get Revision for Package Dependency
+
+### Many Search 1.4.3 for this Error
 
 This error is new with Loop-dev, which uses Package Dependencies.
 
@@ -270,41 +276,18 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 
 ### Carthage Error
 
-With the new LoopWorkspace download and build method - you should not see carthage errors. If you do see carthage errors - you probably did not select Loop (Workspace) at the top of the Xcode window.  This is a new step and easy to forget. Review the graphic from the [Prepare to Build](step14.md#prepare-to-build) Instructions.
+You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](step14.md#prepare-to-build) Instructions.
 
 Or maybe you are a repeat builder who did not read the updated information and tried to use the old zip-download method. That is no longer supported.  Please read all of the [Updating](updating.md) page.
 
-
-!!! info ""
-    Advanced builders using dev may need carthage but they should have followed the directions for [Advanced Users Only](step13.md#advanced-users-only)
-
-If you previously installed carthage (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a carthage error.
-
-If you are using a Loop fork or a Workspace build with the dev branch, you may still require carthage. This [external link](https://www.loopandlearn.org/carthage-0-36-0/) explains how to install the correct version of carthage on your computer.
+Or maybe you are trying to build using an old download; some older versions did require carthage. Best practice is to download new code.
 
 **Error Message:**
 
 !!! warning "Wrong Version of Carthage Error"
     Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.
 
-**Solution:** Manually uninstall carthage.
-
-- Open a Terminal
-- Copy and paste this command into the terminal and hit enter
-
-```
-rm -rf /usr/local/bin/carthage
-```
-
-- Copy and paste this command into the terminal and hit enter
-
-```
-sudo rm -rf /Library/Frameworks/CarthageKit.framework
-```
-
-- You will be prompted for a password when you hit enter on the second command
-- It is the same password you use to log into the computer; you must have admin privileges to do this step
-- The password will not display on the screen as you type it
+**Solution:** Download fresh code with [Build Select Script](step14.md#build-select-script) (if you haven't already done so) and select Loop (Workspace) before building with Xcode.
 
 ### Could Not Locate Device Support Files
 
@@ -318,14 +301,9 @@ sudo rm -rf /Library/Frameworks/CarthageKit.framework
 
 ### No Such Module 'LoopKit' or Similar Message
 
-**Solution**: You probably forgot to select Loop(Workspace). Review the graphic from the [Prepare to Build](step14.md#prepare-to-build) Instructions
+**Error Message:** If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'").
 
-**Error Message:** If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the [Carthage Error](build_errors.md#carthage-error) fix listed above.
-
-**Solution**: For zip-download (not advised): Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for carthage was removed.
-
-![img/exit-code-65.png](img/exit-code-65.png){width="850"}
-{align="center"}
+**Solution**: Read the [Carthage Error](build_errors.md#carthage-error) section above.
 
 ### Developer License Update (PLA Update)
 
@@ -355,15 +333,12 @@ The final App Group should now have a blue check box, the name should start with
 
 ### Missing Command Line Tools
 
-**Error message:**  "Invalid active developer path (/Library/Developer/CommandLineTools)" or "unable to find utility "xcodebuild", not a developer tool or in PATH"
+**Error message:**  "Invalid active developer path (/Library/Developer/CommandLineTools)"
 
 ![img/command-line-error-1.jpg](img/command-line-error-1.jpg){width="550"}
 {align="center"}
 
-![img/command-line-error-2.jpg](img/command-line-error-2.jpg){width="550"}
-{align="center"}
-
-**Solution:** Go to your Xcode preferences and under the Locations tab, select your Xcode version (the figure shows 12.0.1 - yours should match your Xcode version) in the dropdown menu for Command Line Tools.
+**Solution:** Go to your Xcode preferences and under the Locations tab, select your Xcode version (the figure shows 14.0.1 - yours should match your Xcode version) in the dropdown menu for Command Line Tools.
 
 ![img/command-line-error-3.png](img/command-line-error-3.png){width="550"}
 {align="center"}
@@ -374,6 +349,8 @@ The final App Group should now have a blue check box, the name should start with
 
 ![img/trust_device.jpg](img/trust_device.jpg){width="750"}
 {align="center"}
+
+**New Solution** First try the [Unpair and Reboot](#unpair-and-reboot) process above. If that doesn't work, then try the solution listed below.
 
 **Solution:** If you get this message and are unable to find the Device Management option in your phone settings, then we need to do a little extra step to clear out some old info.
 
