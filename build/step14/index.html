@@ -2472,20 +2472,22 @@
 <h3 id="prepare-your-phone-and-watch">Prepare your Phone and Watch<a class="headerlink" href="#prepare-your-phone-and-watch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>
-<p>If you are running Loop and update to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9; Loop will no longer run until you enable Developer Mode and you will see a message similar to the next graphic</p>
+<p>If you are running Loop and update to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9; Loop will no longer run until you enable Developer Mode. You will see a message similar to the next graphic</p>
 </li>
 <li>
-<p>If you are building to a new Apple Watch - you must first build the app with <abbr title="program used to build an app">Xcode</abbr> before the developer mode will be available.</p>
+<p>If you are building to a new phone - you may need to connect the device to <abbr title="program used to build an app">Xcode</abbr> and trust the computer before the developer mode will be available.</p>
+</li>
+<li>
+<p>If you are building to a new Apple Watch - you may need to build the app with <abbr title="program used to build an app">Xcode</abbr> to a phone paired with the watch before the developer mode will be available.</p>
 <p align="center"><img alt="phone message if trying to run xcode app without developer mode enabled" src="../img/phone-developer-mode-required.jpeg" width="300" /></p>
 </li>
-<li>
-<p>If your device uses <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 (and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9); you must enable Developer Mode to build an app on that device using <abbr title="program used to build an app">Xcode</abbr> or it will show up as an "Unavailable Device" under <abbr title="program used to build an app">Xcode</abbr></p>
-<p align="center"><img alt="xcode message for device without developer mode enabled" src="../img/xcode-developer-mode-not-enabled.svg" width="450" /></p>
-</li>
 </ul>
+<p>If your phone uses <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 and you do not enable Developer Mode; that phone shows up as an "Unavailable Device" under <abbr title="program used to build an app">Xcode</abbr></p>
+<p align="center"><img alt="xcode message for device without developer mode enabled" src="../img/xcode-developer-mode-not-enabled.svg" width="450" /></p>
 <h4 id="developer-mode-on-ios-16-device">Developer Mode on <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 Device<a class="headerlink" href="#developer-mode-on-ios-16-device" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>To determine if Developer Mode is enabled, go into your phone settings, choose Privacy &amp; Security, scroll to the bottom of the screen and tap on the Developer Mode row and examine the Developer Mode slider.</p>
 <ul>
+<li>If Developer Mode does not show up under Privacy &amp; Security in your phone settings, wait until told to plug the phone, Trust the computer and then look for Developer Mode once connected to <abbr title="program used to build an app">Xcode</abbr></li>
 <li>If Developer Mode is enabled, the slider will be green and no further action is required</li>
 <li>If Developer Mode is not enabled, the slider will be blank<ul>
 <li>Move the slider so it is green</li>
@@ -2528,7 +2530,7 @@
 <li>Information about <a href="https://github.com/jonfawcett/LoopFollow#readme">Loop Follow</a></li>
 <li>Information specific to <a href="https://www.loopandlearn.org/freeapsdoc/">FreeAPS</a></li>
 </ul>
-<p>You do not need to know about these apps to build Loop master.</p>
+<p>You do not need to know about these apps to build the released version of Loop.</p>
 </div>
 <h4 id="open-terminal">Open <abbr title="interface for entering commands to the computer">Terminal</abbr><a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Go to the <abbr title="graphical folder and file display on Mac">Finder</abbr> app, click on Applications, then open the Utilities folder.  Locate the <abbr title="interface for entering commands to the computer">Terminal</abbr> app and double-click <abbr title="interface for entering commands to the computer">Terminal</abbr> to open a terminal window. The terminal window is very plain looking when you open it. That is normal.</p>
@@ -2632,6 +2634,10 @@
 <li>Frame 4: Desired result of selecting Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) showing your phone</li>
 </ul>
 <p align="center"><img alt="select loop workspace and confirm phone" src="../img/build-229-02.gif" width="600" /></p>
+<div class="admonition warning">
+<p class="admonition-title"><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 Developer Mode</p>
+<p>If you have not enabled Developer Mode on a phone running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16, you will see the phone name in the Unavailable Device section with the notation: "(Developer Mode disabled)". Refer to <a href="#prepare-your-phone-and-watch">Prepare your Phone and Watch</a>.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">My Phone is Not Selected</p>
 <ul>

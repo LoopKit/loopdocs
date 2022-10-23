@@ -791,6 +791,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#many-search-143-for-this-error" class="md-nav__link">
+    Many Search 1.4.3 for this Error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cycle-dependency" class="md-nav__link">
     Cycle Dependency
   </a>
@@ -2305,6 +2312,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#many-search-143-for-this-error" class="md-nav__link">
+    Many Search 1.4.3 for this Error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cycle-dependency" class="md-nav__link">
     Cycle Dependency
   </a>
@@ -2461,7 +2475,7 @@
 <h2 id="start-with-the-obvious-error-causes">Start with The Obvious Error Causes<a class="headerlink" href="#start-with-the-obvious-error-causes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">New Loop Builders</p>
-<p>This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Some of the "obvious" errors causes aren't relevant for brand new builders. Check out items 4, 6 and 7 in the list below. Then, skim the page until your reach <a href="./#find-your-error-messages">Find Your Error Message</a>. Once you've identified your error message, try to resolve it.  Still stuck? Read <a href="./#posting-for-help">Posting for Help</a></p>
+<p>This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Review the "obvious" errors causes first. If that doesn't help, then, skim the page until you reach <a href="./#find-your-error-messages">Find Your Error Message</a> or search the page (Cmd-F) or search LoopDocs for your error. Once you've identified your error message, try to resolve it.  Still stuck? Read <a href="./#posting-for-help">Posting for Help</a></p>
 </div>
 <p>Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:</p>
 <ol>
@@ -2475,14 +2489,17 @@
 <p><strong>Did you check your Apple developer account for new license agreement?</strong> Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. <a href="https://developer.apple.com/account">Login to your Apple developer account</a> to check if there's a new license agreement.</p>
 </li>
 <li>
+<p><strong>Do you have a new computer, never used to build Loop?</strong> Did you <a href="../step9/#add-apple-id">Add Apple ID</a> to <abbr title="program used to build an app">Xcode</abbr>?</p>
+</li>
+<li>
 <p><strong>Did you reboot, i.e., restart, your computer after updating <abbr title="program used to build an app">Xcode</abbr>?</strong> You should reboot following <abbr title="program used to build an app">Xcode</abbr> installation or update and you must make sure your command line tools match the version of <abbr title="program used to build an app">Xcode</abbr> you just installed. <a href="../step9/#command-line-tools"><abbr title="program used to build an app">Xcode</abbr> Command Line Tools</a></p>
 </li>
 <li>
-<p><strong>Did you get a fresh download of Loop code?</strong> If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> versions. Check also, that you are actually using the new download in <abbr title="program used to build an app">Xcode</abbr>.  When you use the build-select script, it automatically opens <abbr title="program used to build an app">Xcode</abbr> using the new download. </p>
+<p><strong>Did you get a fresh download of Loop code?</strong> If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> versions. Check also, that you are actually using the new download in <abbr title="program used to build an app">Xcode</abbr>.  When you use the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr>, it automatically opens <abbr title="program used to build an app">Xcode</abbr> using the new download. </p>
 <p>If you want to build using a recent download, this section tells you how to <a href="../code_customization/#find-my-dowloaded-loop-code">Find My Dowloaded Loop Code</a>.</p>
 </li>
 <li>
-<p><strong>Are you are using a free developer account?</strong> Make sure you finished the <a href="../step14/#free-account">removal of Siri and Push Notification capabilities</a>.</p>
+<p><strong>Are you are using a free developer account?</strong> Make sure you finished the removal of Siri and Push Notification capabilities described in the <a href="../step14/#free-account">Free Account</a> link.</p>
 </li>
 <li>
 <p><strong>DO NOT USE BETA VERSIONS</strong>  If you are using an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> beta version or an <abbr title="program used to build an app">Xcode</abbr> beta version, Loop might not build. Deleting <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> beta from a phone is a pain...so don't install it unless you know what you are doing.</p>
@@ -2491,7 +2508,7 @@
 <h2 id="fix-95-of-errors">Fix 95% of errors<a class="headerlink" href="#fix-95-of-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you have checked all those steps above and think you have a true build error, here's a tip that resolves 95% of all build errors when updating Loop code.</p>
 <ol>
-<li>Open your project in <abbr title="program used to build an app">Xcode</abbr> as normal. Then go to the menu bar at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same.</li>
+<li>Open your project in <abbr title="program used to build an app">Xcode</abbr> as normal. Then go to the menu bar at the top of the screen and find the "Product" menu item. Use the drop down selection for "Clean Build Folder" or press shift-command-K. Either will work the same. Wait for the clean to finish before trying to build again.</li>
 <li>On the far right, next to the name Full Path is the folder name that <abbr title="program used to build an app">Xcode</abbr> will be using to build. Make sure it is the new code you just downloaded and not an older folder.</li>
 <li>If you are updating Loop and did not <a href="../updating/#delete-provisioning-profiles">Delete Old Provisioning Profiles</a>, do it now</li>
 <li>Return to <abbr title="program used to build an app">Xcode</abbr> and try building your app again.</li>
@@ -2563,6 +2580,7 @@
 <p align="center"><img alt="run destination not valid" src="../img/xcode-error-phone-needs-unpair.svg" width="300" /></p>
 <p><strong>Solution:</strong></p>
 <p>Follow the link for the <a href="#unpair-and-reboot">Unpair and Reboot</a> procedure.</p>
+<p>If you are running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 on your phone, make sure developer mode is turned on.</p>
 <h3 id="packageresolved-file-corrupted-or-malformed">Package.resolved file corrupted or malformed<a class="headerlink" href="#packageresolved-file-corrupted-or-malformed" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong></p>
 <p><em>Package.resolved file is corrupted or malformed; fix or delete the file to continue: unsupported schema version 2</em></p>
@@ -2576,6 +2594,7 @@
 <p><strong>Solution:</strong></p>
 <p>Update <abbr title="program used to build an app">Xcode</abbr>, which may require you to update <abbr title="operating system for Mac computer">macOS</abbr>.</p>
 <h3 id="couldnt-get-revision-for-package-dependency">Couldn't Get Revision for Package Dependency<a class="headerlink" href="#couldnt-get-revision-for-package-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="many-search-143-for-this-error">Many Search 1.4.3 for this Error<a class="headerlink" href="#many-search-143-for-this-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This error is new with Loop-dev, which uses <abbr title="packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer">Package Dependencies</abbr>.</p>
 <ul>
 <li>If you notice a red x in <abbr title="program used to build an app">Xcode</abbr> (as circled in the graphic below)<ul>
@@ -2676,44 +2695,22 @@
 <li>Press build</li>
 </ul>
 <h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With the new LoopWorkspace download and build method - you should not see <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> errors. If you do see <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> errors - you probably did not select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) at the top of the <abbr title="program used to build an app">Xcode</abbr> window.  This is a new step and easy to forget. Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions.</p>
+<p>You should not see <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> errors, but if you do, you probably did not select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) at the top of the <abbr title="program used to build an app">Xcode</abbr> window. Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions.</p>
 <p>Or maybe you are a repeat builder who did not read the updated information and tried to use the old zip-download method. That is no longer supported.  Please read all of the <a href="../updating/">Updating</a> page.</p>
-<div class="admonition info">
-<p>Advanced builders using dev may need <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> but they should have followed the directions for <a href="../step13/#advanced-users-only">Advanced Users Only</a></p>
-</div>
-<p>If you previously installed <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> (used to build Loop before mid-January 2021) and it was updated to a version newer than 0.36.0, you may get a <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> error.</p>
-<p>If you are using a Loop <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> or a <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> build with the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you may still require <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>. This <a href="https://www.loopandlearn.org/carthage-0-36-0/">external link</a> explains how to install the correct version of <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> on your computer.</p>
+<p>Or maybe you are trying to build using an old download; some older versions did require <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>. Best practice is to download new code.</p>
 <p><strong>Error Message:</strong></p>
 <div class="admonition warning">
 <p class="admonition-title">Wrong Version of Carthage Error</p>
 <p>Applications/<abbr title="program used to build an app">Xcode</abbr>.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.</p>
 </div>
-<p><strong>Solution:</strong> Manually uninstall <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>.</p>
-<ul>
-<li>Open a <abbr title="interface for entering commands to the computer">Terminal</abbr></li>
-<li>Copy and paste this command into the terminal and hit enter</li>
-</ul>
-<div class="highlight"><pre><span></span><code>rm -rf /usr/local/bin/carthage
-</code></pre></div>
-<ul>
-<li>Copy and paste this command into the terminal and hit enter</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sudo rm -rf /Library/Frameworks/CarthageKit.framework
-</code></pre></div>
-<ul>
-<li>You will be prompted for a password when you hit enter on the second command</li>
-<li>It is the same password you use to log into the computer; you must have admin privileges to do this step</li>
-<li>The password will not display on the screen as you type it</li>
-</ul>
+<p><strong>Solution:</strong> Download fresh code with <a href="../step14/#build-select-script"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> (if you haven't already done so) and select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) before building with <abbr title="program used to build an app">Xcode</abbr>.</p>
 <h3 id="could-not-locate-device-support-files">Could Not Locate Device Support Files<a class="headerlink" href="#could-not-locate-device-support-files" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong> "Could not locate device support files." That message is telling you that your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> on the Loop phone requires you to get a newer version of <abbr title="program used to build an app">Xcode</abbr> to be able to build Loop onto that phone.</p>
 <p><strong>Solution:</strong> Update your <abbr title="program used to build an app">Xcode</abbr> version; this may also require a <abbr title="operating system for Mac computer">macOS</abbr> update. Please review the phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> driven requirements for <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="program used to build an app">Xcode</abbr> and <abbr title="operating system for Mac computer">macOS</abbr></a>.</p>
 <p align="center"><img alt="img/device-support-files.jpg" src="../img/device-support-files.jpg" width="750" /></p>
 <h3 id="no-such-module-loopkit-or-similar-message">No Such Module 'LoopKit' or Similar Message<a class="headerlink" href="#no-such-module-loopkit-or-similar-message" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Solution</strong>: You probably forgot to select Loop(<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>). Review the graphic from the <a href="../step14/#prepare-to-build">Prepare to Build</a> Instructions</p>
-<p><strong>Error Message:</strong> If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'"), double click on the Cartfile error message.  If it says the build failed in one of the schemes, as shown in the screenshot below, then re-run the <a href="./#carthage-error">Carthage Error</a> fix listed above.</p>
-<p><strong>Solution</strong>: For zip-download (not advised): Make sure to download a fresh version of code!  <span style="text-decoration: underline">Anything downloaded before Jan 21, 2021 will not work.</span>  That's when the need for <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> was removed.</p>
-<p align="center"><img alt="img/exit-code-65.png" src="../img/exit-code-65.png" width="850" /></p>
+<p><strong>Error Message:</strong> If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'").</p>
+<p><strong>Solution</strong>: Read the <a href="./#carthage-error">Carthage Error</a> section above.</p>
 <h3 id="developer-license-update-pla-update">Developer License Update (PLA Update)<a class="headerlink" href="#developer-license-update-pla-update" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement". Or you may see "Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account."</p>
 <p><strong>Solution:</strong> You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.</p>
@@ -2726,14 +2723,14 @@
 <p>The final App Group should now have a blue check box, the name should start with <code>group</code> and end with <code>LoopGroup</code>. See the screenshot as an example. Click the build button after your App Group is setup similarly and you should be good.</p>
 <p align="center"><img alt="img/container-3.png" src="../img/container-3.png" width="750" /></p>
 <h3 id="missing-command-line-tools">Missing Command Line Tools<a class="headerlink" href="#missing-command-line-tools" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Error message:</strong>  "Invalid active developer path (/Library/Developer/CommandLineTools)" or "unable to find utility "xcodebuild", not a developer tool or in PATH"</p>
+<p><strong>Error message:</strong>  "Invalid active developer path (/Library/Developer/CommandLineTools)"</p>
 <p align="center"><img alt="img/command-line-error-1.jpg" src="../img/command-line-error-1.jpg" width="550" /></p>
-<p align="center"><img alt="img/command-line-error-2.jpg" src="../img/command-line-error-2.jpg" width="550" /></p>
-<p><strong>Solution:</strong> Go to your <abbr title="program used to build an app">Xcode</abbr> preferences and under the Locations tab, select your <abbr title="program used to build an app">Xcode</abbr> version (the figure shows 12.0.1 - yours should match your <abbr title="program used to build an app">Xcode</abbr> version) in the dropdown menu for Command Line Tools.</p>
+<p><strong>Solution:</strong> Go to your <abbr title="program used to build an app">Xcode</abbr> preferences and under the Locations tab, select your <abbr title="program used to build an app">Xcode</abbr> version (the figure shows 14.0.1 - yours should match your <abbr title="program used to build an app">Xcode</abbr> version) in the dropdown menu for Command Line Tools.</p>
 <p align="center"><img alt="img/command-line-error-3.png" src="../img/command-line-error-3.png" width="550" /></p>
 <h3 id="device-management-could-not-launch-loop">Device Management Could Not Launch Loop<a class="headerlink" href="#device-management-could-not-launch-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "Could not launch "Loop". Verify the Developer App certificate for your account is trusted on your device. Open Settings and navigate to General -&gt; Device Management, then select your Developer App certificate to trust it."</p>
 <p align="center"><img alt="img/trust_device.jpg" src="../img/trust_device.jpg" width="750" /></p>
+<p><strong>New Solution</strong> First try the <a href="#unpair-and-reboot">Unpair and Reboot</a> process above. If that doesn't work, then try the solution listed below.</p>
 <p><strong>Solution:</strong> If you get this message and are unable to find the Device Management option in your phone settings, then we need to do a little extra step to clear out some old info.</p>
 <ol>
 <li>Plug the phone into the computer and open <abbr title="program used to build an app">Xcode</abbr></li>
