@@ -175,12 +175,12 @@ Text in error:
 Refer to the graphic below
 
 1. Click on the folder icon (indicated by red square)
-1. Hold down the Control-Key and click the `Package Dependency` row to display the dropdown menu (shown in the inset)
-1. Select Resolve Package Versions from the dropdown menu
-1. Once that completes, the red x should resolve and you can build as soon as the Indexing message appears
+1. Hold down the Control-Key and click the `Package Dependencies` row to display the dropdown menu (shown in the inset)
+1. Select Reset Package Caches from the dropdown menu and wait for Xcode to finish the reset process
+1. Once the package reset completes (updates in upper right of xcode will stop or say indexing), the red x should vanish
+1. You can start the build as soon as the Indexing message appears
 
 ![package dependency solution](img/xcode-package-dependency-solution.svg){width="600"}
-
 
 ### Cycle Dependency
 
