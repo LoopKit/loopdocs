@@ -2458,12 +2458,12 @@
 </ul>
 </div>
 <div class="admonition abstract">
-<p class="admonition-title">Loop 2.2.x vs Loop 3 (Loop-dev)</p>
+<p class="admonition-title">Loop 2.2.x vs <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (Loop-dev)</p>
 <ul>
-<li>Loop-dev is still being tested - but when it is released it will be Loop 3.</li>
-<li>To simplify the amount of changes required after the release, the labels indicate Loop 2.2.x or Loop 3, if needed.</li>
+<li>Loop-dev is still being tested - but when it is released it will be <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>.</li>
+<li>To simplify the amount of changes required after the release, the labels indicate Loop 2.2.x or <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, if needed.</li>
 <li>Users of Loop Master refer to the Loop 2.2.x examples.</li>
-<li>Users of Loop-dev refer to the Loop 3 examples.<ul>
+<li>Users of Loop-dev refer to the <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> examples.<ul>
 <li>Note that some changes are in a different file for Loop-dev (part of the architecture upgrade for the app).</li>
 </ul>
 </li>
@@ -2544,8 +2544,8 @@
 <h2 id="disable-authentication-for-bolusing">Disable Authentication for Bolusing<a class="headerlink" href="#disable-authentication-for-bolusing" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.</p>
 <div class="admonition warning">
-<p class="admonition-title">Loop 3</p>
-<p>For Loop 3 (under test as Loop-dev), this controls the authorization requirement to modify <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> as well as to confirm bolus delivery.</p>
+<p class="admonition-title"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></p>
+<p>For <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (under test as Loop-dev), this controls the authorization requirement to modify <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> as well as to confirm bolus delivery.</p>
 </div>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>canEvaluatePolicy(.deviceOwnerAuthentication
 </code></pre></div>
@@ -2555,7 +2555,7 @@
 <li>File: BolusViewController.swift, Line 529</li>
 </ul>
 </li>
-<li>Loop 3<ul>
+<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr><ul>
 <li>Folder: LoopKit/LoopKitUI/Extensions/</li>
 <li>File: Environment+Authenticate.swift, Line 20</li>
 </ul>
@@ -2570,7 +2570,7 @@
 <p><em>Code After Modification</em></p>
 <div class="highlight"><pre><span></span><code>if false &amp;&amp; context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
 </code></pre></div>
-<h4 id="loop-3">Loop 3<a class="headerlink" href="#loop-3" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="loop-3"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr><a class="headerlink" href="#loop-3" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &amp;error) {
 </code></pre></div>
@@ -2579,7 +2579,7 @@
 </code></pre></div>
 <h2 id="default-carb-absorption-times">Default Carb Absorption Times<a class="headerlink" href="#default-carb-absorption-times" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p align="center"><img alt="img/carb_screen.png" src="../img/carb_screen.png" width="200" /></p>
-<p>Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <em>Think Like A Pancreas</em> by Gary Scheiner.  With Loop 2.2.x, the lollipop (fast) icon is set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for Loop 3 to 30 minutes, 3 hours and 5 hours respectively.</p>
+<p>Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <em>Think Like A Pancreas</em> by Gary Scheiner.  With Loop 2.2.x, the lollipop (fast) icon is set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> to 30 minutes, 3 hours and 5 hours respectively.</p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
 </code></pre></div>
 <ul>
@@ -2592,7 +2592,7 @@
 </ul>
 </li>
 <li>
-<p>Loop 3</p>
+<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></p>
 <ul>
 <li>Folder: Loop/LoopCore</li>
 <li>File: LoopCoreConstants.swift</li>
@@ -2604,14 +2604,14 @@
 <p><em>Code Before Modification for Loop 2.2.x</em></p>
 <div class="highlight"><pre><span></span><code>public static let defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes = (fast: .hours(2), medium: .hours(3), slow: .hours(4))
 </code></pre></div>
-<p><em>Code After Modification or default for Loop 3</em></p>
+<p><em>Code After Modification or default for <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></em></p>
 <div class="highlight"><pre><span></span><code>public static let defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes = (fast: .minutes(30), medium: .hours(3), slow: .hours(5))
 </code></pre></div>
 <p>Note that if you change from 2 hours to 30 minutes, you must also change the indication before the parentheses.</p>
 <h2 id="adjust-percent-bolus-for-automatic-bolus">Adjust Percent Bolus for <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr><a class="headerlink" href="#adjust-percent-bolus-for-automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you are mostly happy with the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> of <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> but wish it delivered more or less insulin during every Loop interval, then this customization is for you.</p>
 <p>This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modify it once and try it out for a while, it’s easy to go back and change it again.</p>
-<p>With Loop 2.2.x, the end of the line has a comment <code>// %</code>, whereas with Loop 3, there is an explanatory comment (line starting with <code>//</code>) before the line.</p>
+<p>With Loop 2.2.x, the end of the line has a comment <code>// %</code>, whereas with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, there is an explanatory comment (line starting with <code>//</code>) before the line.</p>
 <p><strong>Change just the number and double check that the value is less than 1.</strong></p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let bolusPartialApplicationFactor
 </code></pre></div>
@@ -2625,7 +2625,7 @@
 </ul>
 </li>
 <li>
-<p>Loop 3</p>
+<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></p>
 <ul>
 <li>Folder: Loop/Loop/Models</li>
 <li>File: LoopConstants.swift</li>
@@ -2647,7 +2647,7 @@
 <p>Some people want finer settings on the override sensitivity picker and may want to limit the overall range for overrides – especially for children.</p>
 <div class="admonition tip">
 <p class="admonition-title">1% Settings Available without Customization</p>
-<p>With the advent of Loop 3, the <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Sensitivity values are not limited by the default picker values of 10%.</p>
+<p>With the advent of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, the <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Sensitivity values are not limited by the default picker values of 10%.</p>
 <ul>
 <li>Not available in Loop 2.2.x</li>
 <li>Not available in FreeAPS (based off Loop 2.2.x)</li>
@@ -2659,7 +2659,7 @@
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let allScaleFactorPercentages
 </code></pre></div>
 <ul>
-<li>Loop 2.2.x and Loop 3<ul>
+<li>Loop 2.2.x and <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr><ul>
 <li>Folder: LoopKit/LoopKitUI/Views</li>
 <li>File: InsulinSensitivityScalingTableViewCell.swift, Line 19</li>
 </ul>
@@ -2678,9 +2678,9 @@
 <p>As shown in the graphic below, this phrase shows up in 2 places, only the first one should be modified.</p>
 <p align="center"><img alt="xcode display showing the key phrase found in 2 places" src="../img/xcode-modify-max-carb-entry.svg" width="700" /></p>
 <ul>
-<li>Loop 2.2.x and Loop 3<ul>
+<li>Loop 2.2.x and <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr><ul>
 <li>Folder: Loop/Loop/View Controllers</li>
-<li>File: CarbEntryViewController.swift, Line 33 (Loop 2.2.x) or 36 (Loop 3)</li>
+<li>File: CarbEntryViewController.swift, Line 33 (Loop 2.2.x) or 36 (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>)</li>
 </ul>
 </li>
 </ul>
@@ -2702,7 +2702,7 @@
 <li>File: Pod.swift, Line 72 (Loop 2.2.x)</li>
 </ul>
 </li>
-<li>Eros or DASH Pod (Loop 3 only)<ul>
+<li>Eros or DASH Pod (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only)<ul>
 <li>Folder: rileylink_ios/OmniKit/OmnipodCommon (Eros)</li>
 <li>Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)</li>
 <li>File: Pod.swift, Line 87 (Eros); Line 82 (DASH)</li>
@@ -2717,13 +2717,13 @@
 <div class="highlight"><pre><span></span><code>public static let cannulaInsertionUnitsExtra = 0.35 // edit to add a fixed additional amount of insulin during cannula insertion
 </code></pre></div>
 <h2 id="modify-the-guardrails">Modify the <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#modify-the-guardrails" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The <a href="../../loop-3/therapy-settings/#guardrails-for-settings">Therapy Setting <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></a> are for Loop 3 (Loop-dev) only.</p>
+<p>The <a href="../../loop-3/therapy-settings/#guardrails-for-settings">Therapy Setting <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></a> are for <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (Loop-dev) only.</p>
 <p>If you build Loop-dev over a version of Loop 2.2.x or FreeAPS where the <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> is lower than the default value of 87 mg/dL (4.8 mmol/L), your app will crash when you try to onboard.</p>
 <p>The solution (until this is fixed) is to customize and lower the minimum value to be at or below the value you have currently set.  Rebuild the app with the modified settings and you should be able to continue the onboarding process.</p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>Guardrail(absoluteBounds:
 </code></pre></div>
 <ul>
-<li>Loop 3 only<ul>
+<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only<ul>
 <li>Folder: LoopKit/Extensions</li>
 <li>File: Guardrail+Settings.swift</li>
 <li>Line: 12 for suspendThreshold</li>
@@ -2740,11 +2740,11 @@
 <p>Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).</p>
 <p>If fixing a crashed app during onboarding, you must lower the 87 to match or be less than what is in your old settings.</p>
 <h2 id="adjust-future-carbs-time-interval">Adjust Future Carbs Time Interval<a class="headerlink" href="#adjust-future-carbs-time-interval" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop 3 (Loop-dev) limits the future time change allowed to 1 hour.</p>
+<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (Loop-dev) limits the future time change allowed to 1 hour.</p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval
 </code></pre></div>
 <ul>
-<li>Loop 3 only:<ul>
+<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only:<ul>
 <li>Folder: Loop/Loop/View Controllers</li>
 <li>File:CarbEntryViewController.swift</li>
 <li>Line: 361</li>
@@ -2763,7 +2763,7 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 <p>There are a number of places where you need to make changes (2 for sensitivity and 2 for bolus confirmation for Loop 2.2.x), so walk though them one at a time. For the <code>Watch Crown Sensitivity</code>, the 1/24 value is the ratio of rotations of the crown to the amount of change in the value. Changing it to 1/12 would mean that half as many turns would be needed for the same amount of carb or bolus entry.</p>
 <ul>
 <li>The Loop 2.2.x customizations are throughly tested by many users.</li>
-<li>The Loop 3 customization is provided from code inspection and one test - use with care.</li>
+<li>The <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> customization is provided from code inspection and one test - use with care.</li>
 </ul>
 <h3 id="loop-22x-sensitivity">Loop 2.2.x Sensitivity<a class="headerlink" href="#loop-22x-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let rotationsPerIncrement
@@ -2792,7 +2792,7 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 <li>File: BolusInterfaceController.swift, Lines: 311 and 360</li>
 <li>Initial Value: 1.0; try 0.7 to decrease how much is needed to confirm bolus</li>
 </ul>
-<h3 id="loop-3-digital-crown-adjustments">Loop 3 Digital Crown Adjustments<a class="headerlink" href="#loop-3-digital-crown-adjustments" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="loop-3-digital-crown-adjustments"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Digital Crown Adjustments<a class="headerlink" href="#loop-3-digital-crown-adjustments" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>These are new instructions and the user should take care - and please <a href="../../intro/loopdocs-how-to/#how-to-find-help">report back</a> if you have problems.</p>
 <p>First - try it with no customization. Then make small changes.</p>
 <p>This key phrase will indicate three different files in the same folder as shown in the graphic below - you can adjust each in turn as you desire. When you click on the line, the quantity you change is a few lines below where you find the <code>Key_Phrase</code>, except for the CarbAndDateInput file.</p>
@@ -2828,7 +2828,7 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 </ul>
 <p>If you prefer a different notification time and frequency, there are two lines you can modify:</p>
 <ul>
-<li>Loop 2.2.x and Loop 3<ul>
+<li>Loop 2.2.x and <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr><ul>
 <li>Folder: Loop/Managers</li>
 <li>File: ProfileExpirationAlerter.swift</li>
 <li>Line 16: modify how long before expiration you get the FIRST notification</li>
@@ -2874,7 +2874,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>Rapid-acting child curve peaks at 65 minutes</li>
 <li>Fiasp peaks curve peaks at 55 minutes</li>
 </ul>
-<p>If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices. For Loop 3 users, the file is in a different submodule and includes more models.</p>
+<p>If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices. For <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> users, the file is in a different submodule and includes more models.</p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>MARK: - Model generation
 </code></pre></div>
 <ul>
@@ -2889,7 +2889,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </li>
 </ul>
 </li>
-<li>Loop 3 &lt;&lt; NOTE more models<ul>
+<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> &lt;&lt; NOTE more models<ul>
 <li>Folder: LoopKit/LoopKit/Insulin/ &lt;&lt; NOTE new location</li>
 <li>File: ExponentialInsulinModelPreset.swift</li>
 <li>Lines:<ul>
@@ -2918,7 +2918,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <h2 id="additional-customizations">Additional Customizations<a class="headerlink" href="#additional-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Additional customizations may be found on another website, especially for older versions of the app. If you did not find the customization you want here on LoopDocs, then try the <a href="https://www.loopandlearn.org/custom-code">Loop and Learn Customization Page</a>. Check that page in case this list is not up to date.</p>
 <ul>
-<li>Add Lyumjev Insulin Model (this is only needed for Loop 2.2.x, included in Loop 3)</li>
+<li>Add Lyumjev Insulin Model (this is only needed for Loop 2.2.x, included in <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>)</li>
 <li>Pods: Increase Log File History Hours (only needed for Loop 2.2.x)</li>
 <li>Medtronic: Disable mySentry (only needed for older versions of Loop 2.2.x)</li>
 <li>Pods: Change Default Expiration Reminder (only needed for Loop 2.2.x)</li>

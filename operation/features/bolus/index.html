@@ -2177,13 +2177,13 @@
                 
                 
                 <h1 id="bolus">Bolus<a class="headerlink" href="#bolus" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>This page was updated with information for Loop-dev which will soon be released as Loop 3.</p>
+<p>This page was updated with information for Loop-dev which will soon be released as <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>.</p>
 <h3 id="loop-2-and-3-differences">Loop 2 and 3 Differences<a class="headerlink" href="#loop-2-and-3-differences" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Most of the information is the same for Loop 2.2.x (or FreeAPS) and Loop 3. </p>
+<p>Most of the information is the same for Loop 2.2.x (or FreeAPS) and <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>. </p>
 <p>Loop 2 and 3 differences:</p>
 <ul>
 <li>Bolus Row: <ul>
-<li>With Loop 3<ul>
+<li>With <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr><ul>
 <li>The Recommended Bolus is provided AND the default for the Bolus is the recommended value</li>
 <li>If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry</li>
 </ul>
@@ -2195,11 +2195,11 @@
 </li>
 </ul>
 </li>
-<li>Loop 3 uses the setting name of <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>, which has the same meaning as Suspend Threshold in Loop 2</li>
+<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> uses the setting name of <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>, which has the same meaning as Suspend Threshold in Loop 2</li>
 </ul>
 <h2 id="meal-bolus">Meal Bolus<a class="headerlink" href="#meal-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <strong>Meal Bolus</strong> screen is entered following a carb entry or edit action, the active button might be <strong>Save and Bolus</strong> or, if no bolus was recommended, <strong>Save without Bolusing</strong>. </p>
-<p>The <strong>Save</strong> refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen (Loop 3 only).</p>
+<p>The <strong>Save</strong> refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only).</p>
 <p>You can review the carb information at the <a href="../carbs/">Meal Entry</a> link.</p>
 <h3 id="accept-recommendation">Accept Recommendation<a class="headerlink" href="#accept-recommendation" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The graphic below shows the Meal Bolus screen after the user entered carbs and tapped continue:</p>
@@ -2247,7 +2247,7 @@
 <p align="center"><img alt="Loop toolbar" src="../img/toolbar-bolus.svg" width="300" /></p>
 <p>The Loop app will open to the Bolus screen. This looks similar to the <a href="#meal-bolus">Meal Bolus</a> screen without the Carb Entry row. Loop considers the <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr> and Predicted Glucose when determining the recommended bolus. </p>
 <p>In the graphic below, the current glucose is under the <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr>. Loop allows you to dip below the correction range but its recommended bolus will be limited by the glucose prediction and the <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>. Check back once your glucose starts to rise and there will probably be a bigger recommendation.</p>
-<p>This screen behaves differently for <a href="#loop-2-bolus-screen">Loop 2.2.x</a> and Loop 3. The graphics and instruction on this page are for Loop 3 version. Click on the Loop 2.2.x link above to view the Loop 2 version.</p>
+<p>This screen behaves differently for <a href="#loop-2-bolus-screen">Loop 2.2.x</a> and <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>. The graphics and instruction on this page are for <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> version. Click on the Loop 2.2.x link above to view the Loop 2 version.</p>
 <p>When the <strong>Bolus</strong> screen is entered directly from the toolbar, the button choices are <strong>Enter Bolus</strong> if none is recommended, <strong>Deliver</strong> if a value is on the <strong>Bolus</strong> row or <strong>Cancel</strong> using the button on the upper left. The user can also tap on the value on the <strong>Bolus</strong> row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.</p>
 <p>The two graphics below are examples of manual bolus screens. </p>
 <ul>
@@ -2306,7 +2306,7 @@
 <li><a href="https://support.apple.com/en-us/HT201330">Quit the Loop app</a> and restart it. (Note - this is different from a power cycle of the phone which remembers settings within an app which was running before the power cycle.)</li>
 </ul>
 <p>If that does not resolve the issue, please tap on Loop Settings, <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report and email it to yourself. Then <a href="../../../intro/loopdocs-how-to/#how-to-find-help">post</a> on Facebook or Zulipchat, explain what happened and say you have an <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report. Someone should reach out to you.</p>
-<p>There are other alert messages that might be displayed if the pump or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is not active.  Those are found on the <a href="../../../loop-3/displays_v3/">Loop 3 Displays</a> page.</p>
+<p>There are other alert messages that might be displayed if the pump or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is not active.  Those are found on the <a href="../../../loop-3/displays_v3/"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Displays</a> page.</p>
 <h2 id="loop-2-bolus-screen">Loop 2 Bolus Screen<a class="headerlink" href="#loop-2-bolus-screen" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ul>
 <li>
