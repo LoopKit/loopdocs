@@ -26,9 +26,6 @@ The Heads-Up Display (HUD) shows 3 icons:
 
 There is a `Status Row` underneath those three icons that is used to display bolus progress, some alerts and important messages. The `Status Row` is also a button that performs an action depending on the message.  These are described in the table in the [HUD Status Row](#hud-status-row) section. The `Status Row` is only visible in portrait mode, so make sure to orient your device to look for these messages.
 
-
-
-
 ## Charts
 
 There are several charts on the main screen to help you navigate and understand Loop.  Tapping on a chart on your phone opens up additional information.
@@ -61,7 +58,6 @@ The glucose [Correction Range](therapy-settings.md#correction-range) is shown as
         * Increase the correction range in your override with a moderate change in sensitivity (50% to 90%)
         * Loop will reduce your basal rate at the next cycle (within 5 minutes)
         * Be cautious adding carbs during an override - make sure you understand the effects first
-
 
 If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart described below.
 
@@ -163,7 +159,6 @@ From left to right, the icons are:
 
     Experienced loopers need to read the detail on this page. There are important changes from Loop 2.2.x.
 
-
 The Heads-Up-Display, visible in portrait mode, shows the Glucose Status on the left, the Loop Status in the middle and the Pump Status on the right. Once a CGM and pump have been added to Loop, the Loop Status icon will update and ideally be similar to the graphic below.
 
 ![heads-up-display when loop is operating nominally](img/loop-3-hud-closed.svg){width="300"}
@@ -200,7 +195,6 @@ This table shows examples of Loop Status Icons and what each icon means.
 !!! info "Fun Fact"
     The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).
 
-
 ### Glucose Status Icon
 
 The table below shows examples of the Glucose Status Icon and what each icon means. The [Glucose Color Code](#glucose-color-code) is provided below the table.
@@ -211,7 +205,6 @@ The table below shows examples of the Glucose Status Icon and what each icon mea
 |![three dashes to indicate stale blood glucose](img/loop-3-cgm-stale.svg){width="175"}|The last glucose reading from the CGM or from a finger stick is stale, i.e., it was acquired more than 15 minutes ago. In this case, the glucose prediction will stop updating.<br><br>The [HUD Status Row](#hud-status-row) message enables user to enter fingerstick glucose value if desired.<br><br>If in closed-loop mode, no changes will be made to insulin delivery. If a temporary basal is running, it continues running for the scheduled duration. Once the temporary basal expires, the pump resumes the scheduled basal rate.<br><br>When the app issues a temporary basal, the duration is always 30 minutes.<br><br>The user can enter a manual temporary basal duration up to the limits of their pump.|
 |![an Add CGM with plus sign icon](img/loop-3-cgm-add.svg){width="175"}|If no CGM is currently selected, the Add CGM icon is displayed. The user can add a CGM following these [instructions](add-cgm.md).|
 |![valid glucose reading with a plus sign](img/loop-3-fs-and-cgm-add.svg){width="175"}|If no CGM is currently selected, but a glucose value was acquired within the last 15 minutes (from fingerstick or a different CGM), that value is displayed along with a plus sign. By tapping on the icon, the user can add a CGM following these [instructions](add-cgm.md).|
-
 
 #### Glucose Color Code
 
@@ -229,7 +222,6 @@ Tapping on the CGM icon in the HUD shows more information about the last CGM rea
 For Dexcom G5/G6 and Share, the same screen is obtained by tapping on Loop Settings->CGM.
 
 For Nightscout Remote CGM, the Nightscout URL is opened when tapping on the CGM icon in the HUD, while the credential sections is shown when tapping on Loop Settings->CGM.
-
 
 The graphic below shows the result of tapping on the CGM icon when using a Dexcom G6.  It includes the time of the last reading to the nearest second, along with other information about that sensor and transmitter. It also has an option to go to the Dexcom app on the same device.
 
@@ -287,6 +279,7 @@ Your daily schedule for basal rates, correction ranges, insulin sensitivity fact
         - Medtronic: Loop sets the pump time to the current phone time
         - Omnipod Common: Loop sends your scheduled basal rates to your pod based on phone time
     * Graphic below is from Loop 2.2.x
+    * The Omnipod [Pump Time](omnipod.md#pump-time) display for Loop 3 is somewhat different
 
 ![Command line to change the time zone](../operation/loop-settings/img/change-time-zone.svg){width="250"}
 

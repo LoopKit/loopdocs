@@ -95,6 +95,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Lock your Phone**: click the button on the side of the phone to lock it - prevent accidental touch, i.e., accidental Loop command
 
+**Loop 3**: Used in LoopDocs before release for convenience to describe dev branch features
+
 **Loop Cycle**: typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed
 
 **MTB**: Manual Temp Basal: user initiated temporary basal, Omnipod Common feature

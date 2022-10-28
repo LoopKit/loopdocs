@@ -244,6 +244,18 @@ Tap on this row if you switch to a different type of insulin.
 
 Click on [Time Zone](displays_v3.md#time-zone) to understand how Loop treats "pump" time for pods.
 
+When the Pump Time matches the phone time, the time is displayed with black font. When the phone time and pump time do not match, there is a clock icon on the main screen in the Pump Status Icon of the HUD, as shown in the graphic below.
+
+* Tap on the Pump Status Icon in the HUD
+* Scroll down to view the Pump Time
+* When Pump Time differs from Phone Time, the clock icon is shown here as well
+    * The `Sync to Current Time` row appears
+    * Tap on the `Sync to Current Time` row to choose whether to make Pump Time match Phone Time or not
+
+![graphic showing display when Omnipod pump and phone time do not match](img/loop-3-omnipod-timezone.svg){width="300"}
+{align="center"}
+
+
 ## Previous Pod Information
 
 When you tap on the `Previous Pod Information` row, a graphic similar to those shown below is displayed. This provides summary information about the pod before the one currently in use. 
