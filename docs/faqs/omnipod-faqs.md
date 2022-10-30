@@ -73,14 +73,16 @@ For pod users, your pod will finish any currently running temporary basal rate a
 
 ## Is there an increase in pod failures on Loop?
 
-There is more communication between the pod and the controller (your Loop phone) than is typical with the PDM (Insulet provided controller), which increases the load on the pod battery. Most people have no increase in pod failures, but there are steps to take to limit "extra pod battery use". Every time the Loop app requests an update of the pod state or modifies the temp basal rate, messages are exchanged with the pod.
+There is more communication between the pod and the controller (your Loop phone) than is typical with the PDM (Insulet provided controller), which increases the load on the pod battery. Most people have no increase in pod failures, but there are steps to take to limit "extra pod battery use". Every time the Loop app requests an update of the pod state or issues a command (bolus, basal schedule, temp basal), messages are exchanged with the pod.
 
 * Set your correction range to be 10 to 20 mg/dL (0.5 to 1.1 mmol/L) instead of a single number
-    * The temp basal rate is less likely to be modified for a given CGM update
+    * The number of commands will be reduced
 * Keep your Loop app in the background or your phone locked when possible
-    * Loop 2.2.x updates the pod state only when CGM updates
-    * Loop dev updates the pod state every 30 sec when the app is in the foreground
-        * Use an alternate display method such as [Nightscout](../nightscout/overview.md) or [Loop Follow](../nightscout/ns_crossref.md#loop-follow) instead of keeping the Loopers phone unlocked with Loop app open
+    * This protects against accidentally issuing a command
+    * When phone is unlocked and Loop is in the foreground:
+        * Loop 2.2.x updates the pod state when CGM updates (approximately 5 minutes) - same as when app is in the background
+        * Loop 3 updates the pod state every 30 sec in the foreground, every 3 to 5 minutes in the background
+    * Use an alternate display method such as [Nightscout](../nightscout/overview.md) or [Loop Follow](../nightscout/ns_crossref.md#loop-follow) instead of keeping the Loopers phone unlocked with Loop app open
 
 ## What do I do if a pod fails to pair?
 

@@ -244,7 +244,7 @@ Tap on this row if you switch to a different type of insulin.
 
 Click on [Time Zone](displays_v3.md#time-zone) to understand how Loop treats "pump" time for pods.
 
-When the Pump Time matches the phone time, the time is displayed with black font. When the phone time and pump time do not match, there is a clock icon on the main screen in the Pump Status Icon of the HUD, as shown in the graphic below.
+When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. When the phone time zone and pump time zone do not match, there is a clock icon on the main screen in the Pump Status Icon of the HUD, as shown in the graphic below.
 
 * Tap on the Pump Status Icon in the HUD
 * Scroll down to view the Pump Time
@@ -255,6 +255,12 @@ When the Pump Time matches the phone time, the time is displayed with black font
 ![graphic showing display when Omnipod pump and phone time do not match](img/loop-3-omnipod-timezone.svg){width="300"}
 {align="center"}
 
+What about other time changes?  Suppose the iOS -> General -> Time & Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. **Do Not** do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the HUD or Omnipod screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.
+
+Loop 3 will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
+
+![graphic warning user of a problem with the time on the phone](img/loop-3-omnipod-time-change.svg){width="300"}
+{align="center"}
 
 ## Previous Pod Information
 
@@ -265,11 +271,12 @@ If the previous pod had a fault and you choose to report it to Insulet, this scr
 ![previous pod information screen, both for DASH, left was nominal pod and right had a pod fault](img/loop-3-omnipod-previous.svg){width="600"}
 {align="center"}
 
-!!! bug "Do Not Call Insulet about 0x31 Faults"
-    If you should happen to get an 0x31 (last 3 digits of the PDM ref code of "-049") fault, do **not** report this to Insulet and do **not** ask for a replacement. This means Loop did not ensure the pod was in the correct state to accept a command. In other words, it was a bug in the Loop code. 
+!!! bug "Do Not Call Insulet about -049 (0x31) Faults"
+    If you should happen to get a fault where the last 3 digits of the PDM ref code are "-049" (the Hex Designation is fault code 0x31), do **not** report this to Insulet and do **not** ask for a replacement. This means Loop did not ensure the pod was in the correct state to accept a command. In other words, it was a bug in the Loop code. 
     
-    We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed on July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a Loop Report and rebuild if you have an older version of the development code.
+    We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a Loop Report and rebuild if you have an older version of the development code.
 
+With Loop 3, do not leave the screen open and unlocked for long periods of time without first reading [Is there an increase in pod failures on Loop?](../faqs/omnipod-faqs.md#is-there-an-increase-in-pod-failures-on-loop)
 
 ### Pod Error Messages
 
