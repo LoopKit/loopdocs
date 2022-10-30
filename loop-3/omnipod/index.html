@@ -2575,7 +2575,7 @@
 </ul>
 <h2 id="pump-time">Pump Time<a class="headerlink" href="#pump-time" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Click on <a href="../displays_v3/#time-zone">Time Zone</a> to understand how Loop treats "pump" time for pods.</p>
-<p>When the Pump Time matches the phone time, the time is displayed with black font. When the phone time and pump time do not match, there is a clock icon on the main screen in the Pump Status Icon of the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>, as shown in the graphic below.</p>
+<p>When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. When the phone time zone and pump time zone do not match, there is a clock icon on the main screen in the Pump Status Icon of the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>, as shown in the graphic below.</p>
 <ul>
 <li>Tap on the Pump Status Icon in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr></li>
 <li>Scroll down to view the Pump Time</li>
@@ -2586,15 +2586,19 @@
 </li>
 </ul>
 <p align="center"><img alt="graphic showing display when Omnipod pump and phone time do not match" src="../img/loop-3-omnipod-timezone.svg" width="300" /></p>
+<p>What about other time changes?  Suppose the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. <strong>Do Not</strong> do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.</p>
+<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> will display this warning <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date and enable Set Automatically. </p>
+<p align="center"><img alt="graphic warning user of a problem with the time on the phone" src="../img/loop-3-omnipod-time-change.svg" width="300" /></p>
 <h2 id="previous-pod-information">Previous Pod Information<a class="headerlink" href="#previous-pod-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>When you tap on the <code>Previous Pod Information</code> row, a graphic similar to those shown below is displayed. This provides summary information about the pod before the one currently in use. </p>
 <p>If the previous pod had a fault and you choose to report it to Insulet, this screen reports the PDM reference code that Insulet uses in their tracking system.</p>
 <p align="center"><img alt="previous pod information screen, both for DASH, left was nominal pod and right had a pod fault" src="../img/loop-3-omnipod-previous.svg" width="600" /></p>
 <div class="admonition bug">
-<p class="admonition-title">Do Not Call Insulet about 0x31 Faults</p>
-<p>If you should happen to get an 0x31 (last 3 digits of the PDM ref code of "-049") fault, do <strong>not</strong> report this to Insulet and do <strong>not</strong> ask for a replacement. This means Loop did not ensure the pod was in the correct state to accept a command. In other words, it was a bug in the Loop code. </p>
-<p>We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed on July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a Loop Report and rebuild if you have an older version of the development code.</p>
+<p class="admonition-title">Do Not Call Insulet about -049 (0x31) Faults</p>
+<p>If you should happen to get a fault where the last 3 digits of the PDM ref code are "-049" (the Hex Designation is fault code 0x31), do <strong>not</strong> report this to Insulet and do <strong>not</strong> ask for a replacement. This means Loop did not ensure the pod was in the correct state to accept a command. In other words, it was a bug in the Loop code. </p>
+<p>We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a Loop Report and rebuild if you have an older version of the development code.</p>
 </div>
+<p>With <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, do not leave the screen open and unlocked for long periods of time without first reading <a href="../../faqs/omnipod-faqs/#is-there-an-increase-in-pod-failures-on-loop">Is there an increase in pod failures on Loop?</a></p>
 <h3 id="pod-error-messages">Pod Error Messages<a class="headerlink" href="#pod-error-messages" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This section presents some of the error message screens you may see specific to pods.</p>
 <h4 id="pod-faults">Pod Faults<a class="headerlink" href="#pod-faults" title="Anchor link to this Header on this Page">&para;</a></h4>

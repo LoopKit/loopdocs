@@ -2273,18 +2273,20 @@
 </li>
 </ul>
 <h2 id="is-there-an-increase-in-pod-failures-on-loop">Is there an increase in pod failures on Loop?<a class="headerlink" href="#is-there-an-increase-in-pod-failures-on-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There is more communication between the pod and the controller (your Loop phone) than is typical with the PDM (Insulet provided controller), which increases the load on the pod battery. Most people have no increase in pod failures, but there are steps to take to limit "extra pod battery use". Every time the Loop app requests an update of the pod state or modifies the temp basal rate, messages are exchanged with the pod.</p>
+<p>There is more communication between the pod and the controller (your Loop phone) than is typical with the PDM (Insulet provided controller), which increases the load on the pod battery. Most people have no increase in pod failures, but there are steps to take to limit "extra pod battery use". Every time the Loop app requests an update of the pod state or issues a command (bolus, basal schedule, temp basal), messages are exchanged with the pod.</p>
 <ul>
 <li>Set your correction range to be 10 to 20 mg/dL (0.5 to 1.1 mmol/L) instead of a single number<ul>
-<li>The temp basal rate is less likely to be modified for a given <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> update</li>
+<li>The number of commands will be reduced</li>
 </ul>
 </li>
 <li>Keep your Loop app in the background or your phone locked when possible<ul>
-<li>Loop 2.2.x updates the pod state only when <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates</li>
-<li>Loop dev updates the pod state every 30 sec when the app is in the foreground<ul>
-<li>Use an alternate display method such as <a href="../../nightscout/overview/">Nightscout</a> or <a href="../../nightscout/ns_crossref/#loop-follow">Loop Follow</a> instead of keeping the Loopers phone unlocked with Loop app open</li>
+<li>This protects against accidentally issuing a command</li>
+<li>When phone is unlocked and Loop is in the foreground:<ul>
+<li>Loop 2.2.x updates the pod state when <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates (approximately 5 minutes) - same as when app is in the background</li>
+<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> updates the pod state every 30 sec in the foreground, every 3 to 5 minutes in the background</li>
 </ul>
 </li>
+<li>Use an alternate display method such as <a href="../../nightscout/overview/">Nightscout</a> or <a href="../../nightscout/ns_crossref/#loop-follow">Loop Follow</a> instead of keeping the Loopers phone unlocked with Loop app open</li>
 </ul>
 </li>
 </ul>
