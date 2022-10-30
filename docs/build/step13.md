@@ -209,7 +209,10 @@ The final messages (not shown) let you know you can rerun the script with an up-
 
 ### Initial Xcode Screens
 
-If you want to [Customize Loop](../build/code_customization.md), best practice is to build the fresh download (to a simulator instead of your phone) to make sure there are no problems with the download. Then customize and build to your phone..
+If you want to [Customize Loop](../build/code_customization.md), best practice is to build the fresh download without changes. This ensures there are no problems with the download. Typically use a simulator instead of your phone when planning to customize. After successful build; customize, build to simulator and then build to your phone.
+
+!!! warning "Xcode 14.x"
+    With Xcode 14.x you will **not** see the green Loop icon in Xcode when selecting Loop(Workspace) the first time you build.  Instead, you'll see an icon that looks like the Apple Store icon, in gray, as shown in the red rectangle at the top of the GIF below.  After you build one time, then you will see the green Loop icon in Xcode as seen in the insets for frame 2 in the GIF below.
 
 Refer to the GIF below:
 
