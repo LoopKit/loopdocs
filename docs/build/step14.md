@@ -65,7 +65,7 @@ To determine if Developer Mode is enabled, go into your phone settings, choose P
 !!! warning "Build, Enable, Build"
     Reports from users indicate that when you are building to a new Apple Watch - you must first build the app with Xcode before the developer mode will be available. So plan to build with Watch paired, and then enable Developer Mode and build again.
 
-To determine if Developer Mode is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to the bottom. Tap on the Developer icon, then tap on Developer Mode. 
+This must be configured on the watch itself (not the watch app on the iPhone). To determine if Developer Mode is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to and tap the Privacy & Security icon. Then scroll to the bottom and tap on Developer Mode. 
 
 * If Developer Mode is enabled, the slider will be green and no further action is required
 * If Developer Mode is not enabled, the slider will be blank
@@ -73,7 +73,6 @@ To determine if Developer Mode is enabled, look at the watch face icons and find
     * Reboot the device when asked
     * After the reboot, if you are asked if you want to turn on Developer mode
     * Tap on the `Turn On` option
-
 
 ## Download Loop
 
