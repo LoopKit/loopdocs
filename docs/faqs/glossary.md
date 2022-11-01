@@ -165,4 +165,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Workspace**: a grouping of several repositories into a complete package
 
+**Xcode Preferences**: older name for Xcode Settings
+
+**Xcode Settings**: as of Xcode 14, Xcode menu uses Settings instead of Preferences
+
 **Xcode**: program used to build an app

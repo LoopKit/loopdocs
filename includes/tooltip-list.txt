@@ -77,4 +77,6 @@
 *[Ventura]: operating system for Mac, macOS 13.x
 *[watchOS]: Apple watch operating system; must be compatible with phone iOS
 *[Workspace]: a grouping of several repositories into a complete package
+*[Xcode Preferences]: older name for Xcode Settings
+*[Xcode Settings]: as of Xcode 14, Xcode menu uses Settings instead of Preferences
 *[Xcode]: program used to build an app
