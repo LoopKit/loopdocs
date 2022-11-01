@@ -159,6 +159,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **URL**: website address (Uniform Resource Locator)
 
+**Ventura**: operating system for Mac, macOS 13.x
+
 **watchOS**: Apple watch operating system; must be compatible with phone iOS
 
 **Workspace**: a grouping of several repositories into a complete package

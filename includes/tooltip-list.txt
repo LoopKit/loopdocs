@@ -74,6 +74,7 @@
 *[Tokens]: on Nightscout, configure access permissions using tokens
 *[Tooltip]: brief definitions provided for important terms and abbreviations on the website
 *[URL]: website address (Uniform Resource Locator)
+*[Ventura]: operating system for Mac, macOS 13.x
 *[watchOS]: Apple watch operating system; must be compatible with phone iOS
 *[Workspace]: a grouping of several repositories into a complete package
 *[Xcode]: program used to build an app
