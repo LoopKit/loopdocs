@@ -2575,17 +2575,18 @@
 </ul>
 <h2 id="pump-time">Pump Time<a class="headerlink" href="#pump-time" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Click on <a href="../displays_v3/#time-zone">Time Zone</a> to understand how Loop treats "pump" time for pods.</p>
-<p>When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. When the phone time zone and pump time zone do not match, there is a clock icon on the main screen in the Pump Status Icon of the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>, as shown in the graphic below.</p>
+<p>When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. </p>
+<p>When the phone time zone and pump time zone do not match, there is a clock icon on the main screen in the Pump Status Icon of the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>.</p>
 <ul>
-<li>Tap on the Pump Status Icon in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr></li>
-<li>Scroll down to view the Pump Time</li>
-<li>When Pump Time differs from Phone Time, the clock icon is shown here as well<ul>
+<li>Tap on the Pump Status Icon in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> (top red rectangle in graphic below)</li>
+<li>Information about Time Change is provided on the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> screen</li>
+<li>The Pump Time displays yellow font and the clock icon<ul>
 <li>The <code>Sync to Current Time</code> row appears</li>
-<li>Tap on the <code>Sync to Current Time</code> row to choose whether to make Pump Time match Phone Time or not</li>
+<li>Tap on the <code>Sync to Current Time</code> row to choose whether to make Pump Time match Phone Time or not (bottom red rectangle in graphic below)</li>
 </ul>
 </li>
 </ul>
-<p align="center"><img alt="graphic showing display when Omnipod pump and phone time do not match" src="../img/loop-3-omnipod-timezone.svg" width="300" /></p>
+<p align="center"><img alt="graphic showing display when Omnipod pump and phone time do not match" src="../img/loop-3-omnipod-timezone.svg" width="600" /></p>
 <p>What about other time changes?  Suppose the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. <strong>Do Not</strong> do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.</p>
 <p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> will display this warning <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date and enable Set Automatically. </p>
 <p align="center"><img alt="graphic warning user of a problem with the time on the phone" src="../img/loop-3-omnipod-time-change.svg" width="300" /></p>
