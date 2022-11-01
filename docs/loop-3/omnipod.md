@@ -244,15 +244,17 @@ Tap on this row if you switch to a different type of insulin.
 
 Click on [Time Zone](displays_v3.md#time-zone) to understand how Loop treats "pump" time for pods.
 
-When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. When the phone time zone and pump time zone do not match, there is a clock icon on the main screen in the Pump Status Icon of the HUD, as shown in the graphic below.
+When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. 
 
-* Tap on the Pump Status Icon in the HUD
-* Scroll down to view the Pump Time
-* When Pump Time differs from Phone Time, the clock icon is shown here as well
+When the phone time zone and pump time zone do not match, there is a clock icon on the main screen in the Pump Status Icon of the HUD.
+
+* Tap on the Pump Status Icon in the HUD (top red rectangle in graphic below)
+* Information about Time Change is provided on the Omnipod screen
+* The Pump Time displays yellow font and the clock icon
     * The `Sync to Current Time` row appears
-    * Tap on the `Sync to Current Time` row to choose whether to make Pump Time match Phone Time or not
+    * Tap on the `Sync to Current Time` row to choose whether to make Pump Time match Phone Time or not (bottom red rectangle in graphic below)
 
-![graphic showing display when Omnipod pump and phone time do not match](img/loop-3-omnipod-timezone.svg){width="300"}
+![graphic showing display when Omnipod pump and phone time do not match](img/loop-3-omnipod-timezone.svg){width="600"}
 {align="center"}
 
 What about other time changes?  Suppose the iOS -> General -> Time & Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. **Do Not** do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the HUD or Omnipod screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.
