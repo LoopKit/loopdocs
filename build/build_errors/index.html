@@ -741,6 +741,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#new-with-xcode-14" class="md-nav__link">
+    New with Xcode 14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#posting-for-help" class="md-nav__link">
     Posting for help
   </a>
@@ -2262,6 +2269,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#new-with-xcode-14" class="md-nav__link">
+    New with Xcode 14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#posting-for-help" class="md-nav__link">
     Posting for help
   </a>
@@ -2538,6 +2552,12 @@
 <li>WE CANNOT HELP without version numbers and <a href="#screenshots">screenshots</a></li>
 <li>Do not take pictures of your computer screen with your phone, use <a href="#screenshots">screenshots</a></li>
 </ul>
+<h2 id="new-with-xcode-14">New with <abbr title="program used to build an app">Xcode</abbr> 14<a class="headerlink" href="#new-with-xcode-14" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>This may change, but for now, the <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> simulator is not automatically included with the <abbr title="program used to build an app">Xcode</abbr> 14.x download and install. Some version of the <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> simulator is required to build Loop, independent of whether you use a watch.</p>
+<p>If you are getting watch errors or having trouble with your watch, try this:</p>
+<p>Tap on the <abbr title="program used to build an app">Xcode</abbr> name on the menu bar and select Settings (used to be called Preferences).</p>
+<p>Choose the Platform tab. If there is a missing <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> simulator that you think might help, then download it using the <code>GET</code> button. Use the minus icon (bottom left) to remove simulators that are no longer being used. (Hint: both <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9.0 and 9.1 are required.)</p>
+<p align="center"><img alt="look for missing simulators" src="../img/xcode-14-platform.svg" width="750" /></p>
 <h2 id="posting-for-help">Posting for help<a class="headerlink" href="#posting-for-help" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>STOP!!  Read this section! Important!</p>
 <p>Before you post in a <a href="../../intro/loopdocs-how-to/#how-to-find-help">Loop Social Media</a> site asking for help with build errors, do your work first. The build errors listed below (and the checks listed above) will fix most of problems you may encounter. <strong><em>PLEASE READ THIS PAGE</em></strong>. The volunteers answering questions online would love to spend more time helping people use Loop and less time answering questions that can be addressed by using this page.</p>
@@ -2726,7 +2746,7 @@
 <h3 id="missing-command-line-tools">Missing Command Line Tools<a class="headerlink" href="#missing-command-line-tools" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong>  "Invalid active developer path (/Library/Developer/CommandLineTools)"</p>
 <p align="center"><img alt="img/command-line-error-1.jpg" src="../img/command-line-error-1.jpg" width="550" /></p>
-<p><strong>Solution:</strong> Go to your <abbr title="program used to build an app">Xcode</abbr> preferences and under the Locations tab, select your <abbr title="program used to build an app">Xcode</abbr> version (the figure shows 14.0.1 - yours should match your <abbr title="program used to build an app">Xcode</abbr> version) in the dropdown menu for Command Line Tools.</p>
+<p><strong>Solution:</strong> Go to your <abbr title="program used to build an app">Xcode</abbr> -&gt; Preferences (or Settings) and under the Locations tab, select your <abbr title="program used to build an app">Xcode</abbr> version (the figure shows 14.0.1 - yours should match your <abbr title="program used to build an app">Xcode</abbr> version) in the dropdown menu for Command Line Tools.</p>
 <p align="center"><img alt="img/command-line-error-3.png" src="../img/command-line-error-3.png" width="550" /></p>
 <h3 id="device-management-could-not-launch-loop">Device Management Could Not Launch Loop<a class="headerlink" href="#device-management-could-not-launch-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "Could not launch "Loop". Verify the Developer App certificate for your account is trusted on your device. Open Settings and navigate to General -&gt; Device Management, then select your Developer App certificate to trust it."</p>
@@ -2760,10 +2780,10 @@
 <p align="center"><img alt="img/pending_certification_request.jpg" src="../img/pending_certification_request.jpg" width="750" /></p>
 <p><strong>Solution:</strong> This error message has recently started to appear for some new Loop builders. To resolve the issue, please log in to your Developer account at <a href="https://developer.apple.com">developer.apple.com</a> and then click on "Certificates, Identifiers &amp; Profiles".  Under that screen, you will see "Development" under the "Certificates" section in the column on the left.  You will need to click on the certificates, and choose "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"</p>
 <p align="center"><img alt="img/revoke1.png" src="../img/revoke1.png" width="750" /></p>
-<p>After you do that, return to <abbr title="program used to build an app">Xcode</abbr> and open up <abbr title="program used to build an app">Xcode</abbr> preferences.  Under the Accounts section of Preferences, click on the minus sign to delete your Apple ID.</p>
+<p>After you do that, return to <abbr title="program used to build an app">Xcode</abbr> and open up <abbr title="program used to build an app">Xcode</abbr> -&gt; Preferences (or Settings) and choose the Accounts tab. Highlight your Apple ID and click on the minus sign to delete your Apple ID.</p>
 <p align="center"><img alt="img/account.png" src="../img/account.png" width="650" /></p>
 <p>Re-enter your Apple ID (yes...add that account right back that you literally just deleted), return to your Loop's target signing areas in <abbr title="program used to build an app">Xcode</abbr> and your error message should have resolved as a new certificate will have been issued and a provisioning profile should have been created automatically.</p>
-<p>You can verify the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> development certificates are working by clicking on "Manage Certificates" in <abbr title="program used to build an app">Xcode</abbr> Preferences, Accounts and viewing the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.</p>
+<p>You can verify the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> development certificates are working by clicking on "Manage Certificates" in <abbr title="program used to build an app">Xcode</abbr> -&gt; Preferences (or Settings), Accounts tab and viewing the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.</p>
 <p align="center"><img alt="img/verify_cert.png" src="../img/verify_cert.png" width="650" /></p>
 <h3 id="command-codesign-failed">Command CodeSign Failed<a class="headerlink" href="#command-codesign-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "errSecInternalComponent,  Command CodeSign failed with a nonzero exit code"</p>
