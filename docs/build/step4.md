@@ -8,7 +8,8 @@
 
     Loop is compatible with:
 
-    - Dexcom G4 Share, G5, or G6 CGM systems
+    - Dexcom G4 Share, G5, G6 or ONE CGM systems
+        * Dexcom ONE is available in some countries
     - Medtronic sensors connected to a Loop-compatible Medtronic pumps
 
 !!! question "FAQs"
@@ -22,9 +23,13 @@
 Loop uses your CGM glucose readings, carbohydrate input and therapy settings, to model your current glucose trend, predict future glucose and automatically adjust insulin dosing. A compatible CGM is essential to operation of the Loop app.
 
 
-## Dexcom G5 and G6 CGM ![img/g5.jpg](img/g5.jpg){width="150"}
+## Dexcom G5, G6 and ONE CGM ![img/g5.jpg](img/g5.jpg){width="150"}
 
-The Dexcom G5 and G6 CGM transmits data directly to the Dexcom app on your iPhone via Bluetooth.   If the Dexcom app is on the same device as Loop, Loop can function without an internet connection. See Offline Use below. 
+The Dexcom G5, G6 and ONE CGM transmits data directly to the Dexcom app on your iPhone via Bluetooth.
+
+The Dexcom ONE, available in some countries, acts just like the G6 as far as Loop is concerned. The Dexcom ONE app does not provide some features, such as Dexcom Share, that come with the G6. When you set up Loop, select Dexcom G6 as your CGM to use Dexcom ONE CGM with the Dexcom ONE app installed on your phone.
+
+If the Dexcom app is on the same device as Loop, Loop can function without an internet connection. See Offline Use below.
 
 !!! warning "Dexcom G5 Support"
 
@@ -52,13 +57,16 @@ For offline Loop use, the iPhone's Bluetooth still needs to be active; and for D
 
 ## Dexcom Share
 
-Loop can download Dexcom Share data for use in modeling BG. However, this is not a typical configuration and requires internet connection for both the phone with the Dexcom app and the phone with the Loop app.  The Loop Set Up Steps for adding a CGM explain that you usually enter the Dexcom transmitter ID and leave the Dexcom Share setting blank.
+Loop can download Dexcom Share data for use in modeling glucose. However, this is not a typical configuration and requires internet connection for both the phone with the Dexcom app and the phone with the Loop app.  The Loop Set Up Steps for adding a CGM explain that you usually enter the Dexcom transmitter ID and leave the Dexcom Share setting blank.
+
+!!! warning "Dexcom ONE"
+    The Dexcom ONE app does not support Share.
 
 ## CGMs Not Supported in Loop
 
 Loop does not directly support other CGM, such as Libre, Eversense and Medtronic Guardian. When Loop 3 is released, any sensor that can be uploaded to Nightscout can be used with Loop if internet service is available.
 
-To use one of those alternate CGMs for Loop 2.2.x, you will need to look into third-party integrations, such as the FreeAPS fork, for access to the CGM data. First search for previous posts on the topic and then ask questions in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site if you need help. 
+To use one of those alternate CGMs for Loop 2.2.x, you will need to look into third-party integrations, such as the FreeAPS fork, for access to the CGM data. First search for previous posts on the topic and then ask questions in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site if you need help.
 
 Currently, there are no solutions for Eversense or Guardian CGM to be used directly with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. The next Loop release, and the current FreeAPS fork, allow the use of Nightscout as a CGM source.
 
