@@ -12,8 +12,8 @@ The HUD will look like the graphic below if no CGM or Pump is connected with Loo
 Loop can be connected to the following CGMs:
 
 * CGMs that reside on the same phone (internet not required)
-    * [Dexcom G5](#dexcom-g5-and-g6-cgm)
-    * [Dexcom G6](#dexcom-g5-and-g6-cgm)
+    * [Dexcom G5](#dexcom-g5-g6-one)
+    * [Dexcom G6](#dexcom-g5-g6-one) (use this for Dexcom ONE)
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
         * **You must [add pump](add-pump.md) first**
@@ -30,10 +30,11 @@ To add a CGM, go to the Settings screen, tap on add CGM and tap on your CGM.
 ![graphic showing some of the CGMs available with Loop 3](img/loop-3-setting-add-cgm.svg){width="500"}
 {align="center"}
 
-### Dexcom G5 and G6 CGM
+### Dexcom G5, G6, ONE
 
-To use the Dexcom G5 and G6:
+To use the Dexcom G5, G6 or ONE:
 
+* Select Dexcom model, use G6 for either G6 or ONE
 * Dexcom app must be running on the Loop iPhone and paired to an active transmitter
 * User must enter that active transmitter ID in the location indicated by the red rectangle in the graphic below
 * Do not enter your Share Credentials
@@ -68,6 +69,8 @@ The Medtronic Enlite CGM is only available if you have connected it to your comp
 
     If the dexcom is on another phone, you can use Share if internet / cell coverage is good.
 
+    Dexcom Share is not available for Dexcom ONE CGM.
+
     The Dexcom Share credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. **Dexcom Share account is not always the same login info as your Dexcom Clarity account.** The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
 
     If you do not enter your Share credentials correctly into Loop, you will get an error when Loop tries to access your Share account to backfill CGM data. An example of the error message is shown in the graphic below. If you see that message, delete your Share account from Loop settings and try again.
@@ -97,7 +100,7 @@ When using Nightscout Remote CGM, if the user needs to change credentials or swi
 
 To change CGMs, delete your existing CGM and then add a new CGM.
 
-* For Dexcom G5/G6 and Share, access `Delete CGM` by tapping on the CGM Icon in the HUD or by tapping on Loop Settings and selecting CGM and scrolling down.
+* For Dexcom G5, G6, ONE or Share, access `Delete CGM` by tapping on the CGM Icon in the HUD or by tapping on Loop Settings and selecting CGM and scrolling down.
 
 * For Nightscout Remote CGM, the Nightscout URL is opened when tapping on the CGM icon in the HUD, while the credential sections with the `Delete CGM` row is shown when tapping on Loop Settings and selecting CGM.
 

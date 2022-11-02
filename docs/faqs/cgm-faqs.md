@@ -2,9 +2,9 @@
 
 ## What CGMs does Loop work with?
 
-Loop 2.2.x works Dexcom G4 with share, G5, G6, Share and the Medtronic CGM systems compatible with Looping pumps.
+Loop 2.2.x works Dexcom G4 with share, G5, G6, ONE, Share and the Medtronic CGM systems compatible with Looping pumps.
 
-Loop dev works with G5, G6, Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps. A customization can be applied to work with some Libre sensors.
+Loop 3 works with G5, G6, ONE, Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps. A customization can be applied to work with some Libre sensors.
 
 Read the details [here](../build/step4.md).
 
@@ -16,13 +16,13 @@ No, you can start Looping mid-sensor session. There's no need to do anything spe
 
 Loop will stop automatically adjusting insulin when the most recent glucose value is older than 15 minutes.  This is indicated by seeing three dashes in place of the glucose reading on the HUD.
 
-* With Loop 2.2.x or Loop dev, enter a fingerstick glucose value in Apple Health to enable Loop to provide updated projections and loop briefly
+* With Loop 2.2.x or Loop 3, enter a fingerstick glucose value in Apple Health to enable Loop to provide updated projections and loop briefly
 
-* With Loop dev, a HUD status row message of `No Recent Glucose` is displayed, making it easier to add the fingerstick value directly in Loop, which also saves it in Apple Health
+* With Loop 3, a HUD status row message of `No Recent Glucose` is displayed, making it easier to add the fingerstick value directly in Loop, which also saves it in Apple Health
 
 With no recent glucose readings, your pump resturns to the scheduled basal delivery (within 30 min or less).
 
-Loop continues to accept manual bolus commands. With Loop dev only, [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can also be commanded.
+Loop continues to accept manual bolus commands. With Loop 3 only, [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can also be commanded.
 
 ## What do I do when I switch transmitters?
 
@@ -43,23 +43,23 @@ If you don't update your transmitter ID when you change active transmitters, and
 
 If you want to use a Libre sensor you will need to modify Loop to accomplish that use. Loop code does not natively support that sensor, nor readers.
 
-With Loop dev, a customization can be used to support some Libre sensor CGM.
+With Loop 3, a customization can be used to support some Libre sensor CGM.
 
 ## Can I use Eversense?
 
 Eversense does not write to Apple Health. The BT communications protocol been not been reverse engineered as was done with Dexcom. There is a method to upload Eversense to Nightscout using an Android phone.
 
-With Loop dev, you can use Nightscout as a CGM to Loop with Eversense, but that requires internet access.
+With Loop 3, you can use Nightscout as a CGM to Loop with Eversense, but that requires internet access.
 
 ## Can Loop read CGM data from Nightscout?
 
 Some versions of Loop can read CGM data from Nightscout.
 
-* FreeAPS fork of Loop 2.2.x 
-* Loop dev
+* FreeAPS fork of Loop 2.2.x
+* Loop 3
 
 Loop 2.2.x does not read CGM data from Nightscout.
 
 ## What other CGM apps can be used to Loop?
 
-Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/) and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme). You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions. These can be used with the FreeAPS fork of Loop 2.2.x and, after applying a code customization, with Loop dev.
+Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/) and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme). You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions. These can be used with the FreeAPS fork of Loop 2.2.x and, after applying a code customization, with Loop 3.

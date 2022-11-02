@@ -7,7 +7,7 @@ Now we need to add a CGM source so that Loop has BG data. From the Loop settings
 
 The standard selections available will be:
 
-* Dexcom G6
+* Dexcom G6 (use this for Dexcom ONE)
 * Dexcom G5
 * Dexcom G4
 * Dexcom Share
@@ -31,9 +31,9 @@ You do **NOT** need your Share account info listed in Loop settings if you are u
     ![img/shareclient.jpg](img/shareclient.jpg){width="300"}
     {align="center"}
 
-## Dexcom G5 and G6
+## Dexcom G5, G6, ONE
 
-The Dexcom G5 and G6 options only require the addition of the active transmitter ID, and the matching Dexcom app to be running on the Loop iPhone.
+The Dexcom G5 and G6 options only require the addition of the active transmitter ID, and the matching Dexcom app to be running on the Loop iPhone. Use the G6 options if you are using a Dexcom ONE CGM.
 
 When you change transmitters, you will need to select the `Delete CGM` button at the very bottom of the CGM info page in Loop. Then you will select your Dexcom system again and add the new transmitter ID. You cannot just tap on your old transmitter ID to update it.
 
@@ -48,6 +48,8 @@ Dexcom G4 users will need the Dexcom G4 Share2 app active on their iPhone and pa
 ## Dexcom Share
 
 The Dexcom Share selection is primarily for people who wish to test Loop function without a local CGM source and who are not running the Dexcom app on their Loop iPhone. This selection will require login access to a Dexcom Share account with live data and active internet connection in order to work.
+
+Dexcom Share is not available for Dexcom ONE CGM.
 
 ## Spike Users
 
