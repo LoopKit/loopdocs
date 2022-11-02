@@ -6,6 +6,12 @@
 
 Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch.
 
+!!! question "When will Loop dev be released as Loop 3?"
+    There is no set time for the release. However, the BuildLoopFixedDev script described on this page allows you to use a lightly tested version of the dev branch. The link below lets you view what has been fixed and what is on the list to be updated.
+
+    * Loop dev project page (prior to Loop 3 release):
+        * [https://github.com/LoopKit/Loop/projects/4](https://github.com/LoopKit/Loop/projects/4)
+
 - Note, the dev branch requires a minimum of iOS 14 on your device
 - Once you install the dev branch on a device, you must delete the app to return to master (the released version), which means all settings will need to be entered in master and a new pod started
 - The dev branch Loop user interface is updated - as an experienced Looper, you will notice the difference
