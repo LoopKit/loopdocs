@@ -123,6 +123,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **PR**: Pull Request - a formal method to request changes to a repository
 
+**prebolus**: take some or all of a meal bolus before eating
+
 **Pre-Meal Range**: modify the correction range for up to one hour by tapping on an icon in the toolbar
 
 **Provisioning Profile**: associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)
