@@ -4,7 +4,7 @@
 
 ## About Loop-dev
 
-Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) before deciding to test the dev branch.
+Normally, people are discouraged from building a development branch, see [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch). However, the dev branch is approaching the time when it will be released. It is currently being used by a lot of regular users. But keep paying attention and report any issues you may have with Loop dev. (You will see a lot of documentation that refers to Loop 3 - this is for the convenience of preparing updates to LoopDocs to be ready for that release.)
 
 !!! question "When will Loop dev be released as Loop 3?"
     There is no set time for the release. However, the BuildLoopFixedDev script described on this page allows you to use a lightly tested version of the dev branch. The link below lets you view what has been fixed and what is on the list to be updated.
