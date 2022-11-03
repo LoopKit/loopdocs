@@ -600,7 +600,11 @@ This new terminal window is now in the LoopWorkspace folder needed to type comma
 
 ### Custom Type One LoopPatches
 
-Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#looppatches). These patches only work with Loop dev branch (downloaded after July 14, 2022). You must install the patches following the directions carefully.
+Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop dev branch.
+
+Check the instructions for the minimum date for Loop-dev. The patches will not work if the date is too old. The instructions also list the commit and date for the version of dev that was last tested with the patches.
+
+Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop dev.
 
 ### Add Libre App to Loop Phone
 
