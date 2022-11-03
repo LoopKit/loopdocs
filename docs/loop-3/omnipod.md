@@ -250,7 +250,7 @@ When the phone time zone and pump time zone do not match, there is a clock icon 
 
 * Tap on the Pump Status Icon in the HUD (top red rectangle in graphic below)
 * Information about Time Change is provided on the Omnipod screen
-* The Pump Time displays yellow font and the clock icon
+* The Pump Time displays the clock icon and yellow font
     * The `Sync to Current Time` row appears
     * Tap on the `Sync to Current Time` row to choose whether to make Pump Time match Phone Time or not (bottom red rectangle in graphic below)
 
