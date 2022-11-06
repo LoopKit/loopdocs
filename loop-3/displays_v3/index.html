@@ -1305,20 +1305,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/time-change/" class="md-nav__link">
-        Time Changes
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../troubleshooting/pump-errors/" class="md-nav__link">
         MDT Pump Errors
       </a>
@@ -1576,6 +1562,13 @@
           <li class="md-nav__item">
   <a href="#time-zone" class="md-nav__link">
     Time Zone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-time-changes" class="md-nav__link">
+    Other Time Changes
   </a>
   
 </li>
@@ -2003,6 +1996,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../troubleshooting/time-change/" class="md-nav__link">
+        Time Change FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../faqs/omnipod-faqs/" class="md-nav__link">
         Omnipod FAQs
       </a>
@@ -2231,6 +2238,13 @@
           <li class="md-nav__item">
   <a href="#time-zone" class="md-nav__link">
     Time Zone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-time-changes" class="md-nav__link">
+    Other Time Changes
   </a>
   
 </li>
@@ -2589,27 +2603,39 @@
 </li>
 <li>For <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Common - there isn't a clock on pods, but Loop has a concept of "pump" time for that pod</li>
 </ul>
-<p>Your daily schedule for basal rates, correction ranges, insulin sensitivity factors and carb ratios is displayed with respect to midnight on the "pump" time zone. When you first <a href="../add-pump/#add-pump">Add Pump</a> to Loop, the pump and phone are in the same time zone, but it's important to understand what happens when the time zone changes on the phone.</p>
+<p>Your daily schedule for basal rates, correction ranges, insulin sensitivity factors and carb ratios is displayed with respect to midnight on "pump time". When you first <a href="../add-pump/#add-pump">Add Pump</a> to Loop, the pump and phone are in the same time zone, but it's important to understand what happens when the time zone changes on the phone.</p>
 <ul>
 <li>
-<p>The scheduled rates for basal, correction range, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> follow  the pump time, even if you and your phone change time zones or daylight savings time occurs.</p>
+<p>The scheduled rates for basal, correction range, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> follow  the pump time</p>
+<ul>
+<li>This is true even when your phone updates because of a new time zones (travel) or because of daylight savings (summer) time</li>
+<li>This is true across pod changes</li>
+</ul>
 </li>
 <li>
-<p>To change the pump time to match your phone, select the Pump Settings display and scroll down to Change Time Zone</p>
+<p>To change the pump time zone to match your phone, select the Pump Settings display</p>
 <ul>
-<li>Make sure your gear is close together (phone, pump and <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>, if needed)</li>
-<li>Touch the time zone offset to change to the current time zone<ul>
+<li>An active row is available when phone and pump time zones are different</li>
+<li>Touch the active row to update the pump time zone to phone time zone<ul>
 <li>Medtronic: Loop sets the pump time to the current phone time</li>
 <li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Common: Loop sends your scheduled basal rates to your pod based on phone time</li>
-</ul>
-</li>
-<li>Graphic below is from Loop 2.2.x</li>
-<li>The <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> <a href="../omnipod/#pump-time">Pump Time</a> display for <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is somewhat different</li>
+<li>Make sure your gear is close together (phone, pump and, if needed, <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>)</li>
 </ul>
 </li>
 </ul>
-<p><img alt="Command line to change the time zone" src="../../operation/loop-settings/img/change-time-zone.svg" width="250" /></p>
-<p>You can choose to leave the pump and phone time zones different; the pump icon on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> will show the clock icon to remind you. Many people do this for short trips.</p>
+</li>
+</ul>
+<p>The display to modify time zone is slightly different for Loop 2.2.x and <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (links below):</p>
+<ul>
+<li><a href="../omnipod/#pump-time"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></a></li>
+<li><a href="../../operation/loop-settings/pump-commands/#change-time-zone"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Medtronic</a></li>
+<li><a href="../../operation/loop-settings/pump-commands/#change-time-zone">Loop 2.2.x</a></li>
+</ul>
+<p>You can choose to leave the pump and phone time zones different; the pump icon on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only) will show the clock icon to remind you. Many people do this for short trips.</p>
+<h3 id="other-time-changes">Other Time Changes<a class="headerlink" href="#other-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>What about other time changes?  Suppose the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. <strong>Do Not</strong> do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.</p>
+<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> will display this warning <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date and enable Set Automatically. </p>
+<p align="center"><img alt="graphic warning user of a problem with the time on the phone" src="../img/loop-3-omnipod-time-change.svg" width="300" /></p>
 <h3 id="hud-status-row"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Status Row<a class="headerlink" href="#hud-status-row" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The Status Row is located immediately below the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, Loop and Pump Icons and is used to provide status, action buttons and information. The messages in the table are in order of priority. For example, a <code>No Recent Glucose</code> message is displayed even when an <code>Override</code> is active.</p>
 <div class="admonition warning">
