@@ -6,6 +6,7 @@ Map to this section:
 
 * [Safety Tips](../faqs/safety-faqs.md)
 * [Loop FAQs](../faqs/FAQs.md)
+* [Time Change FAQs](../troubleshooting/time-change.md)
 * [Omnipod FAQs](../faqs/omnipod-faqs.md)
 * [CGM FAQs](../faqs/cgm-faqs.md)
 * [Update/Rebuild Loop FAQs](../faqs/update-faqs.md)
