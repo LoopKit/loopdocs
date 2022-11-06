@@ -280,7 +280,7 @@ Your daily schedule for basal rates, correction ranges, insulin sensitivity fact
     * Touch the active row to update the pump time zone to phone time zone
         - Medtronic: Loop sets the pump time to the current phone time
         - Omnipod Common: Loop sends your scheduled basal rates to your pod based on phone time
-        - Make sure your gear is close together (phone, pump and RileyLink, if needed)
+        - Make sure your gear is close together (phone, pump and, if needed, RileyLink)
 
 The display to modify time zone is slightly different for Loop 2.2.x and Loop 3 (links below):
 

@@ -1,4 +1,4 @@
-# Time Changes
+# Time Change FAQs
 
 ## Time Zones, Daylight Savings Time, Summer Time
 
@@ -12,13 +12,15 @@ What Therapy Settings are set by "pump time"?
 
 Time Change comments:
 
+* The Pump Settings screen is used to modify time zones
+    * Tap on Pump Status Icon from the HUD
+    * or Loop->Settings->Pump
 * Travel
     * There is no urgency to update the pump time to match the wall-clocks when traveling
     * For short trips, many Loopers just leave the pump time alone
 * Time Change (Daylight Savings Time or Summer Time)
     * Most people want to update their pump time immediately after the clocks change
 * With Loop 3 there is a Clock Icon added to the HUD Pump Status display
-    * Tap on Pump Status to update the time zone
 
 If you want more information, click on this link: [Time Zone](../loop-3/displays_v3.md#time-zone), which provides detail and connects to the Loop 2.2.x or the Loop 3 version sections.
 
