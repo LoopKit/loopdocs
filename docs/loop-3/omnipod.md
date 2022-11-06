@@ -257,6 +257,8 @@ When the phone time zone and pump time zone do not match, there is a clock icon 
 ![graphic showing display when Omnipod pump and phone time do not match](img/loop-3-omnipod-timezone.svg){width="600"}
 {align="center"}
 
+### Other Time Changes
+
 What about other time changes?  Suppose the iOS -> General -> Time & Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. **Do Not** do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the HUD or Omnipod screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.
 
 Loop 3 will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 

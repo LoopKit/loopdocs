@@ -269,21 +269,35 @@ Loop allows your pump to have a different time zone from your phone.
     * Always use Loop to set your pump time
 * For Omnipod Common - there isn't a clock on pods, but Loop has a concept of "pump" time for that pod
 
-Your daily schedule for basal rates, correction ranges, insulin sensitivity factors and carb ratios is displayed with respect to midnight on the "pump" time zone. When you first [Add Pump](add-pump.md#add-pump) to Loop, the pump and phone are in the same time zone, but it's important to understand what happens when the time zone changes on the phone.
+Your daily schedule for basal rates, correction ranges, insulin sensitivity factors and carb ratios is displayed with respect to midnight on "pump time". When you first [Add Pump](add-pump.md#add-pump) to Loop, the pump and phone are in the same time zone, but it's important to understand what happens when the time zone changes on the phone.
 
-* The scheduled rates for basal, correction range, ISF and CR follow  the pump time, even if you and your phone change time zones or daylight savings time occurs.
+* The scheduled rates for basal, correction range, ISF and CR follow  the pump time
+    * This is true even when your phone updates because of a new time zones (travel) or because of daylight savings (summer) time
+    * This is true across pod changes
 
-* To change the pump time to match your phone, select the Pump Settings display and scroll down to Change Time Zone
-    * Make sure your gear is close together (phone, pump and RileyLink, if needed)
-    * Touch the time zone offset to change to the current time zone
+* To change the pump time zone to match your phone, select the Pump Settings display
+    * An active row is available when phone and pump time zones are different
+    * Touch the active row to update the pump time zone to phone time zone
         - Medtronic: Loop sets the pump time to the current phone time
         - Omnipod Common: Loop sends your scheduled basal rates to your pod based on phone time
-    * Graphic below is from Loop 2.2.x
-    * The Omnipod [Pump Time](omnipod.md#pump-time) display for Loop 3 is somewhat different
+        - Make sure your gear is close together (phone, pump and, if needed, RileyLink)
 
-![Command line to change the time zone](../operation/loop-settings/img/change-time-zone.svg){width="250"}
+The display to modify time zone is slightly different for Loop 2.2.x and Loop 3 (links below):
 
-You can choose to leave the pump and phone time zones different; the pump icon on the HUD will show the clock icon to remind you. Many people do this for short trips.
+* [Loop 3 Omnipod](omnipod.md#pump-time)
+* [Loop 3 Medtronic](../operation/loop-settings/pump-commands.md#change-time-zone)
+* [Loop 2.2.x](../operation/loop-settings/pump-commands.md#change-time-zone)
+
+You can choose to leave the pump and phone time zones different; the pump icon on the HUD (Loop 3 only) will show the clock icon to remind you. Many people do this for short trips.
+
+### Other Time Changes
+
+What about other time changes?  Suppose the iOS -> General -> Time & Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. **Do Not** do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the HUD or Omnipod screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.
+
+Loop 3 will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
+
+![graphic warning user of a problem with the time on the phone](img/loop-3-omnipod-time-change.svg){width="300"}
+{align="center"}
 
 ### HUD Status Row
 
