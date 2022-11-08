@@ -200,6 +200,48 @@ Refer to the graphic below
 
 ![package dependency solution](img/xcode-package-dependency-solution.svg){width="600"}
 
+### Unable To Read Included File
+
+This error has been seen with Loop 3. The permanent xcconfig file, created by the build script and used to sign targets, is written to a folder where the user does not have read permission.
+
+**Error Message:**
+
+![unable to read error](img/xcode-unable-to-read-xcconfig.png){width="750"}
+
+Text in error:
+
+* _unable to read included file `path inserted here`_
+
+**Solution:**
+
+No need to quit Xcode. If your build script terminal is still open, use it. Otherwise, open a new terminal window.
+
+Copy the lines below that start with `ls -l` by hovering the mouse near the right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
+
+```title="Copy and Paste to add read permissions to xcconfig file"
+ls -l ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
+chmod +r ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
+ls -l ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
+```
+
+Paste the lines into the terminal. The response to the first line will be something like this:
+
+    --w-------  1 marion  staff  490 Nov  8 04:58 /Users/marion/Downloads/BuildLoop/LoopConfigOverride.xcconfig
+
+There will be no response after the second line - although if an error is reported, please grab a screen shot.
+
+The response to the last line will be something like this:
+
+    -rw-r--r--  1 marion  staff  490 Nov  8 04:58 /Users/marion/Downloads/BuildLoop/LoopConfigOverride.xcconfig
+
+The addition of `r` where there used to be `-` on the left side, means you now have permission to read that file.
+
+Final step is to return to Xcode and clean the build folder. Otherwise Xcode remembers it could not read the file and it won't try again.
+
+1. From the `Product` menu (of Xcode), select `Clean Build Folder` 
+1. Press the Build Button (play icon)
+
+
 ### Cycle Dependency
 
 This error is new with Xcode 13.3 (late Sep 2021) which has a new requirement
