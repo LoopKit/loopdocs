@@ -805,6 +805,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#unable-to-read-included-file" class="md-nav__link">
+    Unable To Read Included File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cycle-dependency" class="md-nav__link">
     Cycle Dependency
   </a>
@@ -2333,6 +2340,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#unable-to-read-included-file" class="md-nav__link">
+    Unable To Read Included File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cycle-dependency" class="md-nav__link">
     Cycle Dependency
   </a>
@@ -2644,6 +2658,34 @@
 <li>You can start the build as soon as the Indexing message appears</li>
 </ol>
 <p><img alt="package dependency solution" src="../img/xcode-package-dependency-solution.svg" width="600" /></p>
+<h3 id="unable-to-read-included-file">Unable To Read Included File<a class="headerlink" href="#unable-to-read-included-file" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This error has been seen with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>. The permanent xcconfig file, created by the build script and used to sign targets, is written to a folder where the user does not have read permission.</p>
+<p><strong>Error Message:</strong></p>
+<p><img alt="unable to read error" src="../img/xcode-unable-to-read-xcconfig.png" width="750" /></p>
+<p>Text in error:</p>
+<ul>
+<li><em>unable to read included file <code>path inserted here</code></em></li>
+</ul>
+<p><strong>Solution:</strong></p>
+<p>No need to quit <abbr title="program used to build an app">Xcode</abbr>. If your build script terminal is still open, use it. Otherwise, open a new terminal window.</p>
+<p>Copy the lines below that start with <code>ls -l</code> by hovering the mouse near the right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
+<div class="highlight"><span class="filename">Copy and Paste to add read permissions to xcconfig file</span><pre><span></span><code>ls -l ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
+chmod +r ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
+ls -l ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
+</code></pre></div>
+<p>Paste the lines into the terminal. The response to the first line will be something like this:</p>
+<div class="highlight"><pre><span></span><code>--w-------  1 marion  staff  490 Nov  8 04:58 /Users/marion/Downloads/BuildLoop/LoopConfigOverride.xcconfig
+</code></pre></div>
+<p>There will be no response after the second line - although if an error is reported, please grab a screen shot.</p>
+<p>The response to the last line will be something like this:</p>
+<div class="highlight"><pre><span></span><code>-rw-r--r--  1 marion  staff  490 Nov  8 04:58 /Users/marion/Downloads/BuildLoop/LoopConfigOverride.xcconfig
+</code></pre></div>
+<p>The addition of <code>r</code> where there used to be <code>-</code> on the left side, means you now have permission to read that file.</p>
+<p>Final step is to return to <abbr title="program used to build an app">Xcode</abbr> and clean the build folder. Otherwise <abbr title="program used to build an app">Xcode</abbr> remembers it could not read the file and it won't try again.</p>
+<ol>
+<li>From the <code>Product</code> menu (of <abbr title="program used to build an app">Xcode</abbr>), select <code>Clean Build Folder</code> </li>
+<li>Press the Build Button (play icon)</li>
+</ol>
 <h3 id="cycle-dependency">Cycle Dependency<a class="headerlink" href="#cycle-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This error is new with <abbr title="program used to build an app">Xcode</abbr> 13.3 (late Sep 2021) which has a new requirement</p>
 <ul>
