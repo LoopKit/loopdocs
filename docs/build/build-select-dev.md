@@ -8,6 +8,11 @@ For those who do feel comfortable composing and issuing git commands to the term
 
 ## Loop Dev Script
 
+!!! question "Loop dev before release of Loop 3"
+    Before Loop dev branch is released as Loop 3, there is a special page on building what will be Loop 3. Please head over to that page to download and build [Loop-dev](step13.md).
+
+    After the release of Loop 3, this will be the only page for people who want to continue using the script, BuildLoopFixedDev.sh, to download and build a lightly tested version of the dev branch.
+
 The script, BuildLoopFixedDev.sh, assists in building the development branch for Loop and FreeAPS:
 
 If you have not previously built the released version of the app using the Build-Select (BuildLoop.sh) script as documented on the [Build the Loop App](step14.md) page, review that page first and then return.
