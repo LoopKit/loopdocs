@@ -258,6 +258,14 @@ Otherwise, tap on the red x in the dashed-blue rectange region:
 
 ## Start Build
 
+!!! danger "New Errors with Xcode 14"
+    There are a couple of new errors seen by the community.
+
+    If you decided to sign targets individually, check to ensure that the Signing and Capabilities tab has `All` selected (refer to this [link](step14.md#select-signing-capabilities-tab)). If `Release` or `Debug` is selected instead, the code will not be signed. (Next time try using the script `Enter Apple Developer ID` method - it is very convenient and you won't have this problem).
+
+    There was also one instance where the permanent signing file was written but could not be read, see [Unable To Read Included File](build_errors.md#unable-to-read-included-file) for the solution.
+
+
 Refer to the GIF below:
 
 * Frame 1: Package Dependency resolved (no red x)

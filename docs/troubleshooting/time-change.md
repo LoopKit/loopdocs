@@ -33,7 +33,7 @@ If you want more information, click on this link: [Time Zone](../loop-3/displays
 
 Loop will warn you if your phone does not have time configured to automatically update. The configuration is under iOS Settings -> General -> Time & Date.
 
-**Do not** ever adjust the time manually on your Looping phone to "defeat" time-based rules for a game. You phone with Loop is now a critical medical device - make sure anyone who uses your phone understands this.
+**Do not** ever adjust the time manually on your Looping phone to "defeat" time-based rules for a game. Your phone with Loop is now a critical medical device - make sure anyone who uses your phone understands this.
 
 ## Minimed Pump and CGM
 
