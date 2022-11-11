@@ -1799,8 +1799,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../code_customization/" class="md-nav__link">
-        Customize your Loop
+      <a href="../../faqs/release-faqs/" class="md-nav__link">
+        Loop Releases
       </a>
     </li>
   
@@ -1813,8 +1813,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/release-faqs/" class="md-nav__link">
-        Loop Releases
+      <a href="../code_customization/" class="md-nav__link">
+        Customize your Loop
       </a>
     </li>
   
@@ -1843,6 +1843,20 @@
     <li class="md-nav__item">
       <a href="../../faqs/branch-faqs/" class="md-nav__link">
         Loop Development
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build-select-dev/" class="md-nav__link">
+        Building Dev
       </a>
     </li>
   
@@ -2636,6 +2650,12 @@
 </ol>
 <p><img alt="package dependency solution" src="../img/xcode-package-dependency-solution.svg" width="600" /></p>
 <h2 id="start-build">Start Build<a class="headerlink" href="#start-build" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">New Errors with <abbr title="program used to build an app">Xcode</abbr> 14</p>
+<p>There are a couple of new errors seen by the community.</p>
+<p>If you decided to sign targets individually, check to ensure that the Signing and Capabilities tab has <code>All</code> selected (refer to this <a href="../step14/#select-signing-capabilities-tab">link</a>). If <code>Release</code> or <code>Debug</code> is selected instead, the code will not be signed. (Next time try using the script <code>Enter Apple Developer ID</code> method - it is very convenient and you won't have this problem).</p>
+<p>There was also one instance where the permanent signing file was written but could not be read, see <a href="../build_errors/#unable-to-read-included-file">Unable To Read Included File</a> for the solution.</p>
+</div>
 <p>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below:</p>
 <ul>
 <li>Frame 1: Package Dependency resolved (no red x)<ul>
