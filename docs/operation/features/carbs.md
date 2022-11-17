@@ -56,8 +56,14 @@ The carbs are not saved until the [**Meal Bolus**](bolus.md#meal-bolus) screen i
 ![Add a carb entry](img/loop-3-meal-entry-easy.svg){width="600"}
 {align="center"}
 
-By tapping on the **Active Carbohydrates** chart on the main Loop display, previously entered carbs can be edited, refer to [Edit Meals](#edit-meals).
+!!! warning "Carbs are Saved in Meal Bolus Screen"
+    Carbs are saved when the `Save and Bolus` or `Save without Bolusing` button is tapped in Meal Bolus Screen. When the button is tapped, carbs are saved even if the bolus does not go through to the pump.
 
+    If you see a `Bolus Issue` notification (Bolus in progress, etc) after saving a carb entry, check the state of Loop carb entries.
+
+    Do **not** just add the carbs again.
+
+By tapping on the **Active Carbohydrates** chart on the main Loop display, previously entered carbs can be edited, refer to [Edit Meals](#edit-meals).
 
 ## Meal Entry Row by Row
 
