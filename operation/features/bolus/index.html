@@ -2215,6 +2215,12 @@
 <p>The <strong>Meal Bolus</strong> screen is entered following a carb entry or edit action, the active button might be <strong>Save and Bolus</strong> or, if no bolus was recommended, <strong>Save without Bolusing</strong>. </p>
 <p>The <strong>Save</strong> refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only).</p>
 <p>You can review the carb information at the <a href="../carbs/">Meal Entry</a> link.</p>
+<div class="admonition warning">
+<p class="admonition-title">Carbs are Saved in Meal Bolus Screen</p>
+<p>Carbs are saved when the <code>Save and Bolus</code> or <code>Save without Bolusing</code> button is tapped in Meal Bolus Screen. When the button is tapped, carbs are saved even if the bolus does not go through to the pump.</p>
+<p>If you see a <code>Bolus Issue</code> notification (Bolus in progress, etc) after saving a carb entry, check the state of Loop carb entries.</p>
+<p>Do <strong>not</strong> just add the carbs again.</p>
+</div>
 <h3 id="accept-recommendation">Accept Recommendation<a class="headerlink" href="#accept-recommendation" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The graphic below shows the Meal Bolus screen after the user entered carbs and tapped continue:</p>
 <ul>
