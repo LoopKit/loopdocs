@@ -81,7 +81,22 @@ The Medtronic Enlite CGM is only available if you have connected it to your comp
 
 ### Nightscout Remote CGM
 
-If the user has CGM data available at their Nightscout URL, they can select that as a source for CGM data for Loop. The user must acknowledge they understand the risks of using a remote source that requires internet, as shown in the graphic below.
+If the user is already uploading CGM data to their Nightscout URL, they can select that as a source for CGM data for Loop. The user must acknowledge they understand the risks of using a remote source that requires internet, as shown in the graphic below. In addition to the risks of missing data if the internet is not reliable, you must also make sure the CGM data sent to Nightscout is reliable.
+
+!!! danger "DANGER - Make sure Nightscout CGM Data is Reliable"
+    Just because you can use Nightscout as a CGM source does not mean you should.
+
+    If you decide to use Nightscout as a CGM source, make sure the data stored in Nightscout is reliable. If the app you choose uploads bad results to Nightscout, you don't want Loop to use that bad data.
+
+    _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/)._
+
+    There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Add Libre App to Loop Phone](code_customization.md#add-libre-app-to-loop-phone) that explain how to modify Loop dev to use one of those apps. Please use these steps because **these versions of the apps that share with Loop or are integrated with Loop apply filters to glucose readings**.
+
+    If you choose to follow a different route than the options presented in that section and use Nightscout as your data source, use Open Loop when a sensor is new to make sure it is working correctly.
+
+    The xDrip4iOS app (which can also be found in the app store under the name Suggah) can write to Apple Health, as well as upload to Nightscout. During warmup of a new sensor (European Libre 2 using direct bluetooth connection), there were two instances of crazy high values being reported and picked up by Loop dev. One Suggah user and one xDrip4iOS user who connected via Nighscout as a CGM with Loop dev had serious overdose of insulin because of bad readings with a new sensor. They are both OK but the Loop and xDrip4iOS developers are looking at this event.
+
+    Paraphrased statement from a developer: What was reported today (18 Nov 2022) "can happen during the very start up of a European Libre 2 sensor using direct bluetooth connection if the user is using Nightscout as their CGM source in Loop dev."
 
 
 ![Nightscout Remote CGM acknowledgement screen](img/nightscout-cgm-acknowledge.svg){width="350"}
