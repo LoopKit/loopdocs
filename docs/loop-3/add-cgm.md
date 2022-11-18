@@ -90,7 +90,7 @@ If the user is already uploading CGM data to their Nightscout URL, they can sele
 
     _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/)._
 
-    There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Add Libre App to Loop Phone](code_customization.md#add-libre-app-to-loop-phone) that explain how to modify Loop dev to use one of those apps. Please use these steps because **these versions of the apps that share with Loop or are integrated with Loop apply filters to glucose readings**.
+    There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Add Libre App to Loop Phone](../build/code_customization.md#add-libre-app-to-loop-phone) that explain how to modify Loop dev to use one of those apps. Please use these steps because **these versions of the apps that share with Loop or are integrated with Loop apply filters to glucose readings**.
 
     If you choose to follow a different route than the options presented in that section and use Nightscout as your data source, use Open Loop when a sensor is new to make sure it is working correctly.
 
