@@ -2990,6 +2990,10 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop dev code that you previously downloaded.</p>
 <h3 id="modify-loop-to-use-libre">Modify Loop to use Libre<a class="headerlink" href="#modify-loop-to-use-libre" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>None of these methods have been tested by the LoopDocs team. This information is copied from zulipchat conversations (shown in links below).</p>
+<div class="admonition warning">
+<p class="admonition-title"><abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> Suggested during Warmup of New Sensor</p>
+<p>It is recommended that you use <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using direct bluetooth connection.</p>
+</div>
 <p>For your selected app to read the Libre, you must also add a client to Loop dev to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop dev.</p>
 <p>Add a client that interfaces with xDrip4iOS:</p>
 <ul>
