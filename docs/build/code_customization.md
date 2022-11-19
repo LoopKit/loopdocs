@@ -631,6 +631,9 @@ Once you have chosen the desired app, you need to install it on your Loop phone 
 
 None of these methods have been tested by the LoopDocs team. This information is copied from zulipchat conversations (shown in links below).
 
+!!! warning "Open Loop Suggested during Warmup of New Sensor"
+    It is recommended that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using direct bluetooth connection.
+
 For your selected app to read the Libre, you must also add a client to Loop dev to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop dev.
 
 Add a client that interfaces with xDrip4iOS:
