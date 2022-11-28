@@ -2741,11 +2741,11 @@
 <p>A successfully signed target will have a <abbr title="associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)">Provisioning Profile</abbr> and signing certificate similar to the screenshot below.</p>
 <p>Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The four targets that must be signed prior to building the Loop app are <strong>Loop</strong>, <strong>Loop Status Extension</strong>, <strong>Watch App</strong>, and <strong>WatchApp Extension</strong>.</p>
 <p align="center"><img alt="Xcode window showing the four targets that must be signed" src="../img/success.png" width="750" /></p>
-<p>After signing the 4 targets, click on the Loop icon under the <code>PROJECTS</code> heading. (Refer to the bright blue box in graphic above - click on that Loop icon.)</p>
+<p>After signing the 4 targets, click on the Loop icon under the <code>PROJECT</code> heading. (Refer to the bright blue box in graphic above - click on that Loop icon.)</p>
 <ul>
 <li>If you skip this step, you may get an "Entitlements" Build Error for either Loop or WatchApp<ul>
 <li>Follow this procedure to fix the error: <a href="../build_errors/#entitlements-error">Entitlements Error</a></li>
-<li>Much easier to just click on Loop under <code>Projects</code></li>
+<li>Much easier to just click on the Loop icon under the <code>PROJECT</code> heading</li>
 </ul>
 </li>
 </ul>
@@ -2810,7 +2810,7 @@
 <h4 id="codesign-keychain-access">Codesign / Keychain Access<a class="headerlink" href="#codesign-keychain-access" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition abstract">
 <p class="admonition-title">First Time Using Developer ID on Computer</p>
-<p>During your first build with a given Developer ID on your computer, you will see a codesign/keychain access prompt, as shown in the graphic below. Enter the same password you use to log in to the mac, select "Always Allow" and then do it again each time you are asked.</p>
+<p>During your first build with a given Developer ID on your computer, you will see a codesign/keychain access prompt, as shown in the graphic below. Enter the same password you use to log in to the mac, select "<strong>Always Allow</strong>" and then do it again each time you are asked.</p>
 <p align="center"><img alt="img/keychain-prompt.png" src="../img/keychain-prompt.png" width="350" /></p>
 <p>It is normal for this prompt to come up repeatedly even after you enter the correct password (once for each target Loop needs to sign).</p>
 <p>In frustration, people think the prompt must be broken because it keeps reappearing and press deny or cancel. <strong>Don't press deny.</strong> Keep entering your computer password and pressing the "Always Allow" button as many times as it takes. The build will then continue.</p>
