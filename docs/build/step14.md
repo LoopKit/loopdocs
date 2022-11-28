@@ -326,11 +326,11 @@ Click on each of the three remaining targets shown in the red box below, and rep
 {align="center"}
 
 
-After signing the 4 targets, click on the Loop icon under the `PROJECTS` heading. (Refer to the bright blue box in graphic above - click on that Loop icon.)
+After signing the 4 targets, click on the Loop icon under the `PROJECT` heading. (Refer to the bright blue box in graphic above - click on that Loop icon.)
 
 - If you skip this step, you may get an "Entitlements" Build Error for either Loop or WatchApp
     - Follow this procedure to fix the error: [Entitlements Error](build_errors.md#entitlements-error)
-    - Much easier to just click on Loop under `Projects`
+    - Much easier to just click on the Loop icon under the `PROJECT` heading
 
 !!! abstract "Advanced Users Only"
 
@@ -418,7 +418,7 @@ You’ll see the progression of the build in the status window (top middle of Xc
 
 !!! abstract "First Time Using Developer ID on Computer"
 
-    During your first build with a given Developer ID on your computer, you will see a codesign/keychain access prompt, as shown in the graphic below. Enter the same password you use to log in to the mac, select "Always Allow" and then do it again each time you are asked.
+    During your first build with a given Developer ID on your computer, you will see a codesign/keychain access prompt, as shown in the graphic below. Enter the same password you use to log in to the mac, select "**Always Allow**" and then do it again each time you are asked.
 
     ![img/keychain-prompt.png](img/keychain-prompt.png){width="350"}
     {align="center"}
