@@ -30,7 +30,8 @@ Here are some highlights:
 * Omnipod Dash compatibility
 * Fingerstick blood glucose prompts when data is stale
 * Non-pump insulin entry within the app
-* Remote Carb/Bolus capability
+* [Remote Carb/Bolus capability](features.md#remote-carb-bolus)
+* [Manual Temp Bolus capability for Omnipod](omnipod.md#manual-temp-basal)
 
 
 ## Building Loop 3
