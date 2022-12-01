@@ -166,9 +166,10 @@ The Heads-Up-Display, visible in portrait mode, shows the Glucose Status on the 
 
 * The Glucose is displayed in the same units as the selected CGM
     * If units are incorrect, quit Loop, allow your CGM app to update and then restart Loop
+    * You can override the display units, later, by selecting the [units in Apple Health](../faqs/apple-health-faqs.md#how-do-i-change-glucose-units)
 * The green Loop icon indicates that within the last 5 minutes Loop completed a [cycle](#loop-cycle)
 * The Pump Status indicates the scheduled basal rate is running
-    * The 0.0 U display means the basal currently running is 0 U/hr different from the scheduled basal
+    * The +0.0 U display means the basal currently running is 0 U/hr different from the scheduled basal
 
 ### Loop Status Icon
 
@@ -235,7 +236,7 @@ The nominal pump icon displays high-level status information for the pump with t
 * The basal delivery status displays the enacted temp basal change relative to the scheduled basal.  For example, for a scheduled basal of 0.45 U/hr
     * If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.25 U
     * If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.05 U
-    * When scheduled basal is running, the icon displays 0.0 U
+    * When scheduled basal is running, the icon displays +0.0 U
 * But what about [Overrides](../operation/features/workout.md)?
     * Using scheduled basal of 0.45 U/hr with override set to 70%, the "override basal rate" is 0.315 U/hr
         * That is a value that cannot be set in the pump, but Loop uses it for IOB calculations
