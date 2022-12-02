@@ -592,7 +592,13 @@ Refer to the graphic below.  The Downloads folder in Finder is highlighted on th
 * Hold down the CTRL key and click (or right-click) LoopWorkspace
 * A menu appears - select `New Terminal at Folder` (near the bottom of the list)
 
-This new terminal window is now in the LoopWorkspace folder needed to type commands to apply patches.
+This new terminal window is ready to accept commands as needed when the instructions say to start a terminal in the LoopWorkspace folder.
+
+To confirm you are in the correct location, type `pwd` and return in the terminal. The response must end in LoopWorkspace. For example, using the graphic below, the response to `pwd` should be similar to:
+
+`
+/Users/marion/Downloads/BuildLoop/Loop-20220803-1145/LoopWorkspace
+`
 
 ![how to use finder to find the correct download and open xcode](img/finding-loopworkspace.svg){width="750"}
 {align="center"}

@@ -14,6 +14,10 @@ Loop can be connected to the following CGMs:
 * CGMs that reside on the same phone (internet not required)
     * [Dexcom G5](#dexcom-g5-g6-one)
     * [Dexcom G6](#dexcom-g5-g6-one) (use this for Dexcom ONE)
+    * [Dexcom G7](#dexcom-g7) **(Loop-dev only)**
+        * only available with Loop dev (commit bde44b5, 26 Nov 2022, or later)
+        * NOT INCLUDED in [Build Loop-dev script](../build/build-select-dev.md), see [Updating Loop to a Specific LoopWorkspace commit](../build/loopworkspace.md#updating-loop-to-a-specific-loopworkspace-commit)
+        * REQUIRES Xcode 14
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
         * **You must [add pump](add-pump.md) first**
@@ -54,6 +58,14 @@ To use the Dexcom G5, G6 or ONE:
 #### About Dexcom Share credentials
 
 You do **NOT** need your Share account info listed in Loop settings if you are using a G5 or G6 system. The transmitter ID is sufficient. In fact, you should leave your Share credentials blank so that you don't accidentally become internet-dependent for CGM data if you forget to update your transmitter ID when you start a new transmitter.
+
+### Dexcom G7
+
+This is only available on Loop dev and requires special build instructions (as noted above).
+
+You must have the G7 app on the same phone as Loop.
+
+Minimal documentation is provided and this is an in-process implementation. Please join zulipchat and click on the [Development G7 Integration link](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/G7.20Integration) to read the conversation.
 
 ### Medtronic Enlite CGM
 

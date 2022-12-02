@@ -124,6 +124,8 @@ Once Xcode is opened for the LoopWorkspace, everything is pretty similar to buil
 
 When it's time to update the copy of LoopWorkspace on your computer - you have choices. You can use the method below or redo the whole cloning process.
 
+Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](code_customization.md#open-a-terminal-in-loopworkspace-folder)
+
 1. Make sure you are in the correct branch using this git command:
     ```
     git branch
@@ -142,6 +144,34 @@ If you are testing the LoopKit dev branch, you need to be on [zulipchat](https:/
 
 ![there has been an update in three submodules](img/zulipchat-github.svg){width="600"}
 {align="center"}
+
+### Updating Loop to a Specific LoopWorkspace commit
+
+Sometimes, you know a feature you want was added at a specific commit number, but the [Loop Dev Script](build-select-dev.md) does not include that commit. However, you know there are other changes later than that commit which you do not want to test. There is a solution.
+
+For example, suppose you want to checkout LoopWorkspace commit bde44b5, but nothing later.
+
+Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](code_customization.md#open-a-terminal-in-loopworkspace-folder). First you have to bring down all the latest dev commits. Then you will back up to the one you want.
+
+1. Make sure you are in the correct branch using this git command:
+    ```
+    git branch
+    ```
+1. If you are not in the correct branch, for example `dev`, then issue this git command (suitably modified for the desired branch)
+    ```
+    git checkout dev
+    ```
+1. Use the following git commands to bring down all the newer commits to your copy:
+    ```
+    git fetch
+    git pull --recurse
+    ```
+1. Now you want to "backup" to the desired commit:
+    ```
+    git checkout bde44b5
+    git submodule update
+    ```
+1. Assuming there were no errors, see [Local Modifications Conflict](#local-modifications-conflict), in the process above, you can now build that commit.
 
 ### Build Following Update
 
@@ -247,12 +277,19 @@ If you get a messages such as this:
   Aborting
 ```
 
-The easiest fix is to type:
+The easiest fix is to type, where you can modify Loop to be whichever folder had the conflict:
 
 ```
   cd Loop; git stash; cd ..
   git pull --recurse
 ```
+
+If there were no errors, and you want to restore your changes, you can try:
+```
+  cd Loop; git stash pop; cd ..
+```
+
+If you see errors indicating you cannot use `pop`, that means you need to manually add your customizations back.
 
 
 ## Checking out different branches within a LoopWorkspace

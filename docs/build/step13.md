@@ -1,10 +1,14 @@
 # Advanced Users Only
 
-**Typically, the dev branch is tested by developers and experienced users. When the dev branch gets more mature, adventurous Loopers want to try out the new features and are not waiting for the release. Please pay extra attention if you proceed with Loop-dev.**
+**Typically, the dev branch is tested by developers and very experienced users. When the dev branch gets more mature, adventurous Loopers want to try out the new features and are not waiting for the release. Please pay extra attention if you proceed with Loop-dev.**
 
 ## About Loop-dev
 
-Normally, people are discouraged from building a development branch, see [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch). However, the dev branch is approaching the time when it will be released. It is currently being used by a lot of regular users. But keep paying attention and report any issues you may have with Loop dev. (You will see a lot of documentation that refers to Loop 3 - this is for the convenience of preparing updates to LoopDocs to be ready for that release.)
+Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) and [New with Loop 3](../loop-3/loop-3-overview.md#new-with-loop-3).
+
+The dev branch is being used by a number of people, has improved features and provides DASH support. Many newer Loopers are switching to dev, but they need to be aware that this is NOT released code and if the developer needs to make a change, they will.
+
+If you use this page and script to build Loop-dev, keep paying attention and report any issues you may have. (You will see a lot of documentation that refers to Loop 3 - this is for the convenience of preparing updates to LoopDocs to be ready for that release.)
 
 !!! question "When will Loop dev be released as Loop 3?"
     There is no set time for the release. However, the BuildLoopFixedDev script described on this page allows you to use a lightly tested version of the dev branch. The link below lets you view what has been fixed and what is on the list to be updated.
@@ -13,11 +17,10 @@ Normally, people are discouraged from building a development branch, see [What's
         * [https://github.com/LoopKit/Loop/projects/4](https://github.com/LoopKit/Loop/projects/4)
 
 - Note, the dev branch requires a minimum of iOS 14 on your device
-- Once you install the dev branch on a device, you must delete the app to return to master (the released version), which means all settings will need to be entered in master and a new pod started
-- The dev branch Loop user interface is updated - as an experienced Looper, you will notice the difference
+- Once you install the dev branch on a device, if you then decide to return to the released version, you must delete the app off your phone, which means all settings will need to be entered in master and a new pod started
 - Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs
 
-The development branch supports Omnipod DASH and many less experienced users want that capability. To assist these individuals, a special script (similar to the Build Select script) is provided. The name of the script: BuildLoopFixedDev refers to the fact that the scripts build a version (commit) of the dev branch that has been lightly tested. The developers continue to make changes to dev, and after testing, the script is updated to the next lightly tested commit.
+To assist users who are willing to test dev but do not feel comfortable with using git, a special script (similar to the Build Select script) is provided. The name of the script: BuildLoopFixedDev refers to the fact that the script builds a version of the dev branch with a fixed commit number that has been lightly tested. The developers continue to make changes to dev, and after testing, the script is updated to the next lightly tested commit.
 
 !!! danger "Returning to Older Version"
     If you decide to return to Loop v2.2.x (or FreeAPS) after building Loop-dev on your phone, you will have to delete the Loop app and all other apps with the shared app group ID. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
@@ -30,9 +33,17 @@ The development branch supports Omnipod DASH and many less experienced users wan
 
 This page documents using the BuildLoopFixedDev script to download the development branch of the app for Loop or FreeAPS.
 
-* The BuildLoopFixedDev script downloads the development branch and then selects a specific commit that has been lightly tested
+* The BuildLoopFixedDev.sh script downloads the development branch and then selects a specific commit that has been lightly tested
+* When you use this script, you accept that this is not released code
+* The developer may need to make changes that require you to delete your app and start over
+* One advantage of the script is experienced testers have gone before you to test new changes
+* You are still testing a development version of the app and you are expected to:
+    * Pay attention
+    * Monitor for reports of problems other people are having
+    * Report any issue you experience.
 
-This is still code under development, so please pay attention to your app and report any unexpected behavior on [Loop Zulipchat](https://loop.zulipchat.com).
+**Remember, this code is under active development, so please pay attention to your app and report any unexpected behavior on [Loop Zulipchat](https://loop.zulipchat.com).**
+
 
 !!! warning "iOS 16: Developer Mode Required"
     If your phone is running iOS 16, please click on this [Developer Mode](step14.md#developer-mode) link, follow the directions on that page and then return to this page.  (If you continue on the page with the Developer Mode link, you will be building the released code, not the dev code.)
