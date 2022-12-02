@@ -1664,13 +1664,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#for-experienced-loopers" class="md-nav__link">
-    For Experienced Loopers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#loop-dev-script" class="md-nav__link">
     Loop Dev Script
   </a>
@@ -2110,13 +2103,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#for-experienced-loopers" class="md-nav__link">
-    For Experienced Loopers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#loop-dev-script" class="md-nav__link">
     Loop Dev Script
   </a>
@@ -2205,31 +2191,40 @@
                 
                 
                 <h1 id="building-development-code">Building Development Code<a class="headerlink" href="#building-development-code" title="Anchor link to this Header on this Page">&para;</a></h1>
-<h2 id="for-experienced-loopers">For Experienced Loopers<a class="headerlink" href="#for-experienced-loopers" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This method is for experienced Loopers who want to build the development code for Loop to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<p>For those who do feel comfortable composing and issuing <abbr title="a tool for version control">git</abbr> commands to the terminal, refer to the instructions on the <a href="../loopworkspace/">LoopWorkspace</a> page.</p>
+<p>The method on this page is for Loopers who want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p><strong>No matter the method used, script or <abbr title="a tool for version control">git</abbr> commands, you are testing development code. Please read this link now before continuing.</strong></p>
+<ul>
+<li><strong><a href="../../faqs/branch-faqs/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></strong></li>
+</ul>
+<p>For those who feel comfortable composing and issuing <abbr title="a tool for version control">git</abbr> commands to the terminal, refer to the instructions on the <a href="../loopworkspace/">LoopWorkspace</a> page.</p>
 <h2 id="loop-dev-script">Loop Dev Script<a class="headerlink" href="#loop-dev-script" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">Loop dev before release of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></p>
 <p>Before Loop dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is released as <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, there is a special page on building what will be <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>. Please head over to that page to download and build <a href="../step13/">Loop-dev</a>.</p>
-<p>After the release of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, this will be the only page for people who want to continue using the script, BuildLoopFixedDev.sh, to download and build a lightly tested version of the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>After the release of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, that page will be removed. This page will remain.</p>
 </div>
-<p>The script, BuildLoopFixedDev.sh, assists in building the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> for Loop and FreeAPS:</p>
-<p>If you have not previously built the released version of the app using the Build-Select (BuildLoop.sh) script as documented on the <a href="../step14/">Build the Loop App</a> page, review that page first and then return.</p>
+<p>If you have not previously built the released version of the app using the Build-Select (BuildLoop) script as documented on the <a href="../step14/">Build the Loop App</a> page, review that page first and then return.</p>
+<p>This section provides instructions to use the BuildLoopFixedDev script. It will download a "Fixed" version of the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> for Loop or FreeAPS and then assist with the build process.</p>
 <ul>
-<li>The BuildLoopFixedDev.sh script downloads the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then selects a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that has been lightly tested</li>
-<li>When you use this script, you accept that this is not released code</li>
+<li>The BuildLoopFixedDev script downloads the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then selects a specific version that has been lightly tested</li>
+<li>When you use this script, you accept that this is not released code<ul>
 <li>The developer may need to make changes that require you to delete your app and start over</li>
-<li>The advantage of the script is experienced testers have gone before you to test new changes</li>
-<li>You are still testing a development version of the app and you are expected to:<ul>
-<li>Pay attention</li>
+</ul>
+</li>
+<li>You are expected to use the <a href="https://loop.zulipchat.com/#narrow/stream/144182-development">zulipchat, development stream</a><ul>
+<li>Pay attention to announcemnts</li>
 <li>Monitor for reports of problems other people are having</li>
-<li>Report any issue you experience.</li>
+<li>Report any issue you experience</li>
+</ul>
+</li>
+<li>The advantage of the script is:<ul>
+<li>Experienced testers have gone before you to test new changes</li>
+<li>The script issues the <code>git</code> commands required to download this version</li>
+<li>The script assists you in configuring and building after download</li>
 </ul>
 </li>
 </ul>
-<p><strong>Remember, this code is under active development, so please pay attention to your app and report any unexpected behavior on <a href="https://loop.zulipchat.com">Loop Zulipchat</a>.</strong></p>
-<p>The lightly tested <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is identified by a 7-digit alphanumeric code. That code is appended to the folder name of the downloaded code under Downloads/BuildLoop. You can use finder to view the folder name after the script completes.</p>
+<p>The lightly tested version is identified by the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>, a 7-digit alphanumeric code. That code is appended to the folder name of the downloaded code under Downloads/BuildLoop. You can use finder to view the folder name after the script completes.</p>
 <h3 id="loop-dev-version">Loop-dev Version<a class="headerlink" href="#loop-dev-version" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The version of code that shows up under the Loop Settings screen does not change when the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is modified.</p>
 <p>If you need help with your app, the mentors need more information. Please issue a Loop Report when asking for help. Refer to <a href="../../loop-3/settings/#support">Support</a> for how to issue a Loop Report. If you want to keep track yourself, refer to <a href="#identify-loop-dev-version">Identify Loop-dev Version</a></p>

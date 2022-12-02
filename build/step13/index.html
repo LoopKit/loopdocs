@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#advanced-users-only" class="md-skip">
+        <a href="#loop-dev-script" class="md-skip">
           Skip to content
         </a>
       
@@ -742,8 +742,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#about-loop-dev" class="md-nav__link">
-    About Loop-dev
+  <a href="#required-reading" class="md-nav__link">
+    Required Reading
   </a>
   
 </li>
@@ -2219,8 +2219,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#about-loop-dev" class="md-nav__link">
-    About Loop-dev
+  <a href="#required-reading" class="md-nav__link">
+    Required Reading
   </a>
   
 </li>
@@ -2422,28 +2422,35 @@
               
                 
                 
-                <h1 id="advanced-users-only">Advanced Users Only<a class="headerlink" href="#advanced-users-only" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p><strong>Typically, the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is tested by developers and very experienced users. When the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> gets more mature, adventurous Loopers want to try out the new features and are not waiting for the release. Please pay extra attention if you proceed with Loop-dev.</strong></p>
-<h2 id="about-loop-dev">About Loop-dev<a class="headerlink" href="#about-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Please read <a href="../../faqs/branch-faqs/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>?</a> and <a href="../../loop-3/loop-3-overview/#new-with-loop-3">New with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></a>.</p>
-<p>The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is being used by a number of people, has improved features and provides DASH support. Many newer Loopers are switching to dev, but they need to be aware that this is NOT released code and if the developer needs to make a change, they will.</p>
-<p>If you use this page and script to build Loop-dev, keep paying attention and report any issues you may have. (You will see a lot of documentation that refers to <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> - this is for the convenience of preparing updates to LoopDocs to be ready for that release.)</p>
+                <h1 id="loop-dev-script">Loop Dev Script<a class="headerlink" href="#loop-dev-script" title="Anchor link to this Header on this Page">&para;</a></h1>
+<p>The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is tested by developers and users. Users who want to test dev must be willing to follow zulipchat and provide feedback to the developers. The developers are still actively making improvements, which has the potential to break things.</p>
+<p>When the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> gets more mature, adventurous Loopers want to try out the new features and not wait for the release. Please remember - even though there is a script to build a lightly tested version of dev, it is development code. You still need to</p>
+<ul>
+<li>Follow posts in <a href="https://loop.zulipchat.com/#narrow/stream/144182-development">zulipchat, development stream</a></li>
+<li>Provide feedback to the developers if you notice any problems</li>
+<li>Be prepared to rebuild the app on your phone if an urgent problem is reported</li>
+</ul>
+<p>The script to build Loop-dev, described on this page, will only be updated after observing reports on zulipchat, performing a few independent tests and using the modified Loop personally. Expect a delay between changes at the <abbr title="contains project files and each file's revision history">repository</abbr> and adoption of those changes in the script.</p>
+<p>If you are impatient, please see the information on the <a href="../loopworkspace/">LoopWorspace</a> page.</p>
+<h2 id="required-reading">Required Reading<a class="headerlink" href="#required-reading" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Please read the sections: <a href="../../faqs/branch-faqs/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a> and <a href="../../loop-3/loop-3-overview/#new-with-loop-3">New with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></a> before continuing with this page.</p>
+<p>All Loopers using this script need to be aware this is NOT released code. The dev version, prepared by the script, provides DASH support and has improved features when compared to the released code. Some new Loopers are starting with Loop-dev, using the script, because the onboarding with guardrails and the new user experience makes it easier to begin to use Loop.</p>
 <div class="admonition question">
 <p class="admonition-title">When will Loop dev be released as <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>?</p>
-<p>There is no set time for the release. However, the BuildLoopFixedDev script described on this page allows you to use a lightly tested version of the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. The link below lets you view what has been fixed and what is on the list to be updated.</p>
+<p>There is no set time for the release.</p>
+<p>The link below lets you view progress on the project of the most recent Loop-dev code. The "card" labeled <code>Done</code> gives you a list of what is already accomplished, but be sure to note items under <code>Bugs to fix</code>, <code>In progress</code> and <code>Testing</code> so you are aware of the known issues.</p>
 <ul>
 <li>Loop dev project page (prior to <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> release):<ul>
 <li><a href="https://github.com/LoopKit/Loop/projects/4">https://github.com/LoopKit/Loop/projects/4</a></li>
 </ul>
 </li>
 </ul>
+<p>WARNING: The script may lag the most recent dev updates. It may not pull in all the <code>Done</code> items listed at the link above.</p>
 </div>
 <ul>
 <li>Note, the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> requires a minimum of <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 14 on your device</li>
-<li>Once you install the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> on a device, if you then decide to return to the released version, you must delete the app off your phone, which means all settings will need to be entered in master and a new pod started</li>
 <li>Updated documentation is a work-in-progress located under the <a href="../../loop-3/loop-3-overview/"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></a> tab of LoopDocs</li>
 </ul>
-<p>To assist users who are willing to test dev but do not feel comfortable with using <abbr title="a tool for version control">git</abbr>, a special script (similar to the Build Select script) is provided. The name of the script: BuildLoopFixedDev refers to the fact that the script builds a version of the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> with a fixed <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number that has been lightly tested. The developers continue to make changes to dev, and after testing, the script is updated to the next lightly tested <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
 <div class="admonition danger">
 <p class="admonition-title">Returning to Older Version</p>
 <p>If you decide to return to Loop v2.2.x (or FreeAPS) after building Loop-dev on your phone, you will have to delete the Loop app and all other apps with the shared app group ID. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.</p>
@@ -2451,20 +2458,27 @@
 <p>For more information, click on <a href="../../faqs/release-faqs/#remove-apps-with-shared-app-group">Remove Apps with Shared App Group</a></p>
 </div>
 <h2 id="download-loop-dev">Download Loop-dev<a class="headerlink" href="#download-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This page documents using the BuildLoopFixedDev script to download the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of the app for Loop or FreeAPS.</p>
+<p>This section provides instructions to use the BuildLoopFixedDev script. It will download a "Fixed" version of the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> for Loop or FreeAPS and then assist with the build process.</p>
 <ul>
-<li>The BuildLoopFixedDev.sh script downloads the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then selects a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that has been lightly tested</li>
-<li>When you use this script, you accept that this is not released code</li>
+<li>The BuildLoopFixedDev script downloads the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then selects a specific version that has been lightly tested</li>
+<li>When you use this script, you accept that this is not released code<ul>
 <li>The developer may need to make changes that require you to delete your app and start over</li>
-<li>One advantage of the script is experienced testers have gone before you to test new changes</li>
-<li>You are still testing a development version of the app and you are expected to:<ul>
-<li>Pay attention</li>
+</ul>
+</li>
+<li>You are expected to use the <a href="https://loop.zulipchat.com/#narrow/stream/144182-development">zulipchat, development stream</a><ul>
+<li>Pay attention to announcemnts</li>
 <li>Monitor for reports of problems other people are having</li>
-<li>Report any issue you experience.</li>
+<li>Report any issue you experience</li>
+</ul>
+</li>
+<li>The advantage of the script is:<ul>
+<li>Experienced testers have gone before you to test new changes</li>
+<li>The script issues the <code>git</code> commands required to download this version</li>
+<li>The script assists you in configuring and building after download</li>
 </ul>
 </li>
 </ul>
-<p><strong>Remember, this code is under active development, so please pay attention to your app and report any unexpected behavior on <a href="https://loop.zulipchat.com">Loop Zulipchat</a>.</strong></p>
+<p>The lightly tested version is identified by the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>, a 7-digit alphanumeric code. That code is appended to the folder name of the downloaded code under Downloads/BuildLoop. You can use finder to view the folder name after the script completes.</p>
 <div class="admonition warning">
 <p class="admonition-title"><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16: Developer Mode Required</p>
 <p>If your phone is running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16, please click on this <a href="../step14/#developer-mode">Developer Mode</a> link, follow the directions on that page and then return to this page.  (If you continue on the page with the Developer Mode link, you will be building the released code, not the dev code.)</p>
@@ -2609,7 +2623,7 @@
 <li>Now you are ready to hit return in the terminal window</li>
 </ul>
 <p align="center"><img alt="script instructions for plugging in phone and trusting computer on phone and watch" src="../img/build-dev-b-04.svg" width="750" /></p>
-<p>The final action of the script is to </p>
+<p>The final action of the script is to</p>
 <ul>
 <li>Open a browser window displaying this section of LoopDocs</li>
 <li>Open <abbr title="program used to build an app">Xcode</abbr></li>
@@ -2717,7 +2731,7 @@
 <p>You may prefer to use commands to fetch and pull the latest code without making a new <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Folder Name</p>
-<p>If you decide to update code in the same folder, you should edit the folder name to remove the specific build <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> appended by the script. </p>
+<p>If you decide to update code in the same folder, you should edit the folder name to remove the specific build <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> appended by the script.</p>
 <p>This is not required but may avoid confusion.</p>
 </div>
 <h3 id="open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder<a class="headerlink" href="#open-a-terminal-in-loopworkspace-folder" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2771,7 +2785,7 @@
 </li>
 </ul>
 <p>If <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is on your system, you can choose to remove it (completely optional with respect to building Loop with updated code).</p>
-<p>Copy and paste the following line into the terminal window and hit return.  </p>
+<p>Copy and paste the following line into the terminal window and hit return.</p>
 <div class="highlight"><pre><span></span><code>rm -rf /usr/local/bin/carthage
 </code></pre></div>
 <div class="admonition danger">

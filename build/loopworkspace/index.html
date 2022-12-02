@@ -2487,16 +2487,15 @@ git submodule update
 <p>If you have modified anything in a submodule folder on your computer, it might be in conflict with the latest <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
 <p>If you get a messages such as this:</p>
 <div class="highlight"><pre><span></span><code>  error: Your local changes to the following files would be overwritten by checkout:
-    Loop/Managers/DeviceDataManager.swift
     Loop/Models/LoopConstants.swift
   Please commit your changes or stash them before you switch branches.
   Aborting
 </code></pre></div>
-<p>The easiest fix is to type, where you can modify Loop to be whichever folder had the conflict:</p>
+<p>The easiest fix is to type commands similar to the following, where you modify Loop to be whichever folder(s) had the conflict. If more than one folder had a conflict, then issue the stash for each folder. The submodule update command will continue to show errors until you stash all local changes that interfere with the new code:</p>
 <div class="highlight"><pre><span></span><code>  cd Loop; git stash; cd ..
-  git pull --recurse
+  git submodule update
 </code></pre></div>
-<p>If there were no errors, and you want to restore your changes, you can try:
+<p>After stashing and updating with no errors, you can try to restore your changes:
 <div class="highlight"><pre><span></span><code>  cd Loop; git stash pop; cd ..
 </code></pre></div></p>
 <p>If you see errors indicating you cannot use <code>pop</code>, that means you need to manually add your customizations back.</p>
