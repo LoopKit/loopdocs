@@ -1,25 +1,12 @@
 # Loop Development
 
-The next version of Loop is developed under a separate branch, independent of the released Loop version. The dev branch is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be an active participation with the developers to provide feedback and build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of Loop is improved.
+The next version of Loop is developed using branch(es), independent of the released Loop version, which is found in the master branch. The dev branch is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be both an active participant with the developers to monitor annoucements and provide feedback, and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of Loop is improved.
 
-Because the Omnipod DASH is actively being testing in the dev branch, there is probably a lot more interest in being a "tester" now than if it was just a minor tweak.  In addition to the DASH work, however, Loop itself has undergone a major architecture upgrade.  There is a formal onboarding process, more safety features and a different menu layout. Updated interface documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs.
+There is a lot of interest in being a "tester" of dev right now, because the Omnipod DASH and Dexcom G7 are supported in the dev branch. If you choose to use dev, you accept that this code is not released.
 
 Please read this entire page before using any version of Loop other than the released code.
 
-## Repositories and Code
-
-If you're a developer looking for direct links to the code and documentation in Github:
-
-* [Loop](https://github.com/LoopKit/Loop) 
-* [LoopDocs](https://github.com/LoopKit/Loopdocs)
-
-For more information on how to contribute code to the project, please review:
-
-  * [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
-  * Review the Loop [LICENSE](https://github.com/LoopKit/Loop/blob/master/LICENSE.md)
-  * Review the Loop [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md)
-
-If you want to contribute code improvements, please join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels. Meet the developers and testers who make this app, and learn about what is coming next.
+Compared to the last release, v2.2.9, there have been architectural upgrades of a new user interface, improved notifications and alerts, and some new features.  There is a formal onboarding process and more safety features. Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs.
 
 ## What are branches?
 
@@ -120,3 +107,18 @@ The dev branch is where a lot of user interface and setting safety work has been
 There has been some reorganization of code to make it easier to drop in new pump and CGM modules.  These may not be obvious to the user, but are important for moving forward.
 
 And, of course, the integration of Omnipod DASH. The RileyLink Compatible devices are no longer required with DASH.
+
+## Repositories and Code
+
+If you're a developer looking for direct links to the code and documentation in Github:
+
+* [Loop](https://github.com/LoopKit/Loop)
+* [LoopDocs](https://github.com/LoopKit/Loopdocs)
+
+For more information on how to contribute code to the project, please review:
+
+  * [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+  * Review the Loop [LICENSE](https://github.com/LoopKit/Loop/blob/master/LICENSE.md)
+  * Review the Loop [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/master/CODE_OF_CONDUCT.md)
+
+If you want to contribute code improvements, please join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels. Meet the developers and testers who make this app, and learn about what is coming next.
