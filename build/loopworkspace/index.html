@@ -1734,6 +1734,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#updating-loop-to-a-specific-loopworkspace-commit" class="md-nav__link">
+    Updating Loop to a Specific LoopWorkspace commit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#build-following-update" class="md-nav__link">
     Build Following Update
   </a>
@@ -2208,6 +2215,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#updating-loop-to-a-specific-loopworkspace-commit" class="md-nav__link">
+    Updating Loop to a Specific LoopWorkspace commit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#build-following-update" class="md-nav__link">
     Build Following Update
   </a>
@@ -2374,6 +2388,7 @@ xed .
 <p align="center"><img alt="img/workspace-use.png" src="../img/workspace-use.png" width="750" /></p>
 <h2 id="updating-loop-using-loopworkspace">Updating Loop using LoopWorkspace<a class="headerlink" href="#updating-loop-using-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>When it's time to update the copy of LoopWorkspace on your computer - you have choices. You can use the method below or redo the whole cloning process.</p>
+<p>Be sure your terminal is in the correct location using <a href="../code_customization/#open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder</a></p>
 <ol>
 <li>Make sure you are in the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr> using this <abbr title="a tool for version control">git</abbr> command:
     <div class="highlight"><pre><span></span><code>git branch
@@ -2388,6 +2403,27 @@ git pull --recurse
 </ol>
 <p>If you are testing the LoopKit dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you need to be on <a href="https://loop.zulipchat.com">zulipchat</a> and subscribe to at least the #development and #github streams. (It's a good idea to subscribe to all the streams.) When you see <abbr title="contains project files and each file's revision history">repository</abbr> updates similar to the graphic below, there may also be an announcement in the #development channel that LoopWorkspace is updated and ready to test. If not you can check the commits in LoopWorkspace and see if they've been updated. It's a good idea to wait 24 hours. My procedure is to build dev to my backup phone and then put it on my "real" phone. Otherwise, wait for someone else to do it and give the all-clear in zulipchat.</p>
 <p align="center"><img alt="there has been an update in three submodules" src="../img/zulipchat-github.svg" width="600" /></p>
+<h3 id="updating-loop-to-a-specific-loopworkspace-commit">Updating Loop to a Specific LoopWorkspace <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr><a class="headerlink" href="#updating-loop-to-a-specific-loopworkspace-commit" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Sometimes, you know a feature you want was added at a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number, but the <a href="../build-select-dev/">Loop Dev Script</a> does not include that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. However, you know there are other changes later than that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> which you do not want to test. There is a solution.</p>
+<p>For example, suppose you want to checkout LoopWorkspace <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> bde44b5, but nothing later.</p>
+<p>Be sure your terminal is in the correct location using <a href="../code_customization/#open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder</a>. First you have to bring down all the latest dev commits. Then you will back up to the one you want.</p>
+<ol>
+<li>Make sure you are in the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr> using this <abbr title="a tool for version control">git</abbr> command:
+    <div class="highlight"><pre><span></span><code>git branch
+</code></pre></div></li>
+<li>If you are not in the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example <code>dev</code>, then issue this <abbr title="a tool for version control">git</abbr> command (suitably modified for the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr>)
+    <div class="highlight"><pre><span></span><code>git checkout dev
+</code></pre></div></li>
+<li>Use the following <abbr title="a tool for version control">git</abbr> commands to bring down all the newer commits to your copy:
+    <div class="highlight"><pre><span></span><code>git fetch
+git pull --recurse
+</code></pre></div></li>
+<li>Now you want to "backup" to the desired <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>:
+    <div class="highlight"><pre><span></span><code>git checkout bde44b5
+git submodule update
+</code></pre></div></li>
+<li>Assuming there were no errors, see <a href="#local-modifications-conflict">Local Modifications Conflict</a>, in the process above, you can now build that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</li>
+</ol>
 <h3 id="build-following-update">Build Following Update<a class="headerlink" href="#build-following-update" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Sometimes there is a change to the <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> scheme in <abbr title="program used to build an app">Xcode</abbr> that interferes with building following an update to your local <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>. In those cases, these steps typically work. Try the first one, and if that doesn't work, try the first two, etc.  Only after trying all three should you post asking for help on zulipchat.</p>
 <ol>
@@ -2456,10 +2492,14 @@ git pull --recurse
   Please commit your changes or stash them before you switch branches.
   Aborting
 </code></pre></div>
-<p>The easiest fix is to type:</p>
+<p>The easiest fix is to type, where you can modify Loop to be whichever folder had the conflict:</p>
 <div class="highlight"><pre><span></span><code>  cd Loop; git stash; cd ..
   git pull --recurse
 </code></pre></div>
+<p>If there were no errors, and you want to restore your changes, you can try:
+<div class="highlight"><pre><span></span><code>  cd Loop; git stash pop; cd ..
+</code></pre></div></p>
+<p>If you see errors indicating you cannot use <code>pop</code>, that means you need to manually add your customizations back.</p>
 <h2 id="checking-out-different-branches-within-a-loopworkspace">Checking out different branches within a LoopWorkspace<a class="headerlink" href="#checking-out-different-branches-within-a-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>More advanced users...I'm not going to explain this in quite so much detail, but yes, you can individually change the branches in a LoopWorkspace.</p>
 <p>There are 2 main ways to do this.</p>

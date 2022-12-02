@@ -1456,6 +1456,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dexcom-g7" class="md-nav__link">
+    Dexcom G7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#medtronic-enlite-cgm" class="md-nav__link">
     Medtronic Enlite CGM
   </a>
@@ -2105,6 +2112,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#dexcom-g7" class="md-nav__link">
+    Dexcom G7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#medtronic-enlite-cgm" class="md-nav__link">
     Medtronic Enlite CGM
   </a>
@@ -2160,6 +2174,12 @@
 <li>CGMs that reside on the same phone (internet not required)<ul>
 <li><a href="#dexcom-g5-g6-one">Dexcom G5</a></li>
 <li><a href="#dexcom-g5-g6-one">Dexcom G6</a> (use this for Dexcom ONE)</li>
+<li><a href="#dexcom-g7">Dexcom G7</a> <strong>(Loop-dev only)</strong><ul>
+<li>only available with Loop dev (<abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> bde44b5, 26 Nov 2022, or later)</li>
+<li>NOT INCLUDED in <a href="../../build/build-select-dev/">Build Loop-dev script</a>, see <a href="../../build/loopworkspace/#updating-loop-to-a-specific-loopworkspace-commit">Updating Loop to a Specific LoopWorkspace <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr></a></li>
+<li>REQUIRES <abbr title="program used to build an app">Xcode</abbr> 14</li>
+</ul>
+</li>
 <li><a href="#medtronic-enlite-cgm">Minimed Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a><ul>
 <li>Medtronic Pump only</li>
 <li><strong>You must <a href="../add-pump/">add pump</a> first</strong><ul>
@@ -2201,6 +2221,10 @@
 </div>
 <h4 id="about-dexcom-share-credentials">About Dexcom Share credentials<a class="headerlink" href="#about-dexcom-share-credentials" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You do <strong>NOT</strong> need your Share account info listed in Loop settings if you are using a G5 or G6 system. The transmitter ID is sufficient. In fact, you should leave your Share credentials blank so that you don't accidentally become internet-dependent for <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data if you forget to update your transmitter ID when you start a new transmitter.</p>
+<h3 id="dexcom-g7">Dexcom G7<a class="headerlink" href="#dexcom-g7" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This is only available on Loop dev and requires special build instructions (as noted above).</p>
+<p>You must have the G7 app on the same phone as Loop.</p>
+<p>Minimal documentation is provided and this is an in-process implementation. Please join zulipchat and click on the <a href="https://loop.zulipchat.com/#narrow/stream/144182-development/topic/G7.20Integration">Development G7 Integration link</a> to read the conversation.</p>
 <h3 id="medtronic-enlite-cgm">Medtronic Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#medtronic-enlite-cgm" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The Medtronic Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is only available if you have connected it to your compatible Medtronic Pump.</p>
 <ul>
