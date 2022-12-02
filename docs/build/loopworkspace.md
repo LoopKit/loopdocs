@@ -271,20 +271,19 @@ If you get a messages such as this:
 
 ```
   error: Your local changes to the following files would be overwritten by checkout:
-    Loop/Managers/DeviceDataManager.swift
     Loop/Models/LoopConstants.swift
   Please commit your changes or stash them before you switch branches.
   Aborting
 ```
 
-The easiest fix is to type, where you can modify Loop to be whichever folder had the conflict:
+The easiest fix is to type commands similar to the following, where you modify Loop to be whichever folder(s) had the conflict. If more than one folder had a conflict, then issue the stash for each folder. The submodule update command will continue to show errors until you stash all local changes that interfere with the new code:
 
 ```
   cd Loop; git stash; cd ..
-  git pull --recurse
+  git submodule update
 ```
 
-If there were no errors, and you want to restore your changes, you can try:
+After stashing and updating with no errors, you can try to restore your changes:
 ```
   cd Loop; git stash pop; cd ..
 ```
