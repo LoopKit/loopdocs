@@ -1,6 +1,6 @@
 # Loop Development
 
-The next version of Loop is developed under a separate branch, independent of the released Loop version. Typically, the dev branch is used by the developers to push out changes for experienced users to test.  It is not for new loopers. You should only test a development branch if you are willing to be an active participation with the developers to provide feedback and build frequently to obtain the latest feature or bug-fix that is being tested. If you are an experienced looper and willing to help out - this is the way the next release of Loop is improved.
+The next version of Loop is developed under a separate branch, independent of the released Loop version. The dev branch is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be an active participation with the developers to provide feedback and build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of Loop is improved.
 
 Because the Omnipod DASH is actively being testing in the dev branch, there is probably a lot more interest in being a "tester" now than if it was just a minor tweak.  In addition to the DASH work, however, Loop itself has undergone a major architecture upgrade.  There is a formal onboarding process, more safety features and a different menu layout. Updated interface documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs.
 
@@ -50,7 +50,9 @@ The dev branch, currently v2.3.0, is where the next version of Loop is being dev
 
 If you choose to come into a dev branch build, you need to be aware that dev may update code frequently and unannounced in the traditional sense that most users in Looped group or Instagram would see. Developers are not helped by people being in a dev branch if those users are mistakenly thinking of it as a stable master branch with lots of detailed docs to go with it. People should only use a dev branch build if they EDUCATE themselves on the expectations and how to properly manage dev information and updates. People using dev branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.
 
-If you choose to use a dev build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy Loopdocs page updated regularly with current "dev updates"...that's just not the way dev branch works.
+If you choose to use a dev build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy Loopdocs page updated regularly with current "dev updates"...that's just not the way dev branch works (at least normally).
+
+When there is a big change in user interface, some LoopDocs information will be available before the release of the Loop-dev code. The transition from Loop 2.2.x to Loop 3 is one of those times. When released, Loop-dev will start the Loop 3 version numbering. But - it is still Loop-dev until that release.
 
 ### Subscribe to the Zulipchat channels
 
