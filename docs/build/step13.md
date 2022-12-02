@@ -1,26 +1,35 @@
-# Advanced Users Only
+# Loop Dev Script
 
-**Typically, the dev branch is tested by developers and very experienced users. When the dev branch gets more mature, adventurous Loopers want to try out the new features and are not waiting for the release. Please pay extra attention if you proceed with Loop-dev.**
+The dev branch is tested by developers and users. Users who want to test dev must be willing to follow zulipchat and provide feedback to the developers. The developers are still actively making improvements, which has the potential to break things.
 
-## About Loop-dev
+When the dev branch gets more mature, adventurous Loopers want to try out the new features and not wait for the release. Please remember - even though there is a script to build a lightly tested version of dev, it is development code. You still need to
 
-Please read [What's going on in the dev branch?](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) and [New with Loop 3](../loop-3/loop-3-overview.md#new-with-loop-3).
+* Follow posts in [zulipchat, development stream](https://loop.zulipchat.com/#narrow/stream/144182-development)
+* Provide feedback to the developers if you notice any problems
+* Be prepared to rebuild the app on your phone if an urgent problem is reported
 
-The dev branch is being used by a number of people, has improved features and provides DASH support. Many newer Loopers are switching to dev, but they need to be aware that this is NOT released code and if the developer needs to make a change, they will.
+The script to build Loop-dev, described on this page, will only be updated after observing reports on zulipchat, performing a few independent tests and using the modified Loop personally. Expect a delay between changes at the repository and adoption of those changes in the script.
 
-If you use this page and script to build Loop-dev, keep paying attention and report any issues you may have. (You will see a lot of documentation that refers to Loop 3 - this is for the convenience of preparing updates to LoopDocs to be ready for that release.)
+If you are impatient, please see the information on the [LoopWorspace](loopworkspace.md) page.
+
+## Required Reading
+
+Please read the sections: [What's going on in the dev branch](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) and [New with Loop 3](../loop-3/loop-3-overview.md#new-with-loop-3) before continuing with this page.
+
+All Loopers using this script need to be aware this is NOT released code. The dev version, prepared by the script, provides DASH support and has improved features when compared to the released code. Some new Loopers are starting with Loop-dev, using the script, because the onboarding with guardrails and the new user experience makes it easier to begin to use Loop.
 
 !!! question "When will Loop dev be released as Loop 3?"
-    There is no set time for the release. However, the BuildLoopFixedDev script described on this page allows you to use a lightly tested version of the dev branch. The link below lets you view what has been fixed and what is on the list to be updated.
+    There is no set time for the release.
+
+    The link below lets you view progress on the project of the most recent Loop-dev code. The "card" labeled `Done` gives you a list of what is already accomplished, but be sure to note items under `Bugs to fix`, `In progress` and `Testing` so you are aware of the known issues.
 
     * Loop dev project page (prior to Loop 3 release):
         * [https://github.com/LoopKit/Loop/projects/4](https://github.com/LoopKit/Loop/projects/4)
 
-- Note, the dev branch requires a minimum of iOS 14 on your device
-- Once you install the dev branch on a device, if you then decide to return to the released version, you must delete the app off your phone, which means all settings will need to be entered in master and a new pod started
-- Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs
+    WARNING: The script may lag the most recent dev updates. It may not pull in all the `Done` items listed at the link above.
 
-To assist users who are willing to test dev but do not feel comfortable with using git, a special script (similar to the Build Select script) is provided. The name of the script: BuildLoopFixedDev refers to the fact that the script builds a version of the dev branch with a fixed commit number that has been lightly tested. The developers continue to make changes to dev, and after testing, the script is updated to the next lightly tested commit.
+- Note, the dev branch requires a minimum of iOS 14 on your device
+- Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs
 
 !!! danger "Returning to Older Version"
     If you decide to return to Loop v2.2.x (or FreeAPS) after building Loop-dev on your phone, you will have to delete the Loop app and all other apps with the shared app group ID. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
@@ -31,19 +40,21 @@ To assist users who are willing to test dev but do not feel comfortable with usi
 
 ## Download Loop-dev
 
-This page documents using the BuildLoopFixedDev script to download the development branch of the app for Loop or FreeAPS.
+This section provides instructions to use the BuildLoopFixedDev script. It will download a "Fixed" version of the development branch for Loop or FreeAPS and then assist with the build process.
 
-* The BuildLoopFixedDev.sh script downloads the development branch and then selects a specific commit that has been lightly tested
+* The BuildLoopFixedDev script downloads the development branch and then selects a specific version that has been lightly tested
 * When you use this script, you accept that this is not released code
-* The developer may need to make changes that require you to delete your app and start over
-* One advantage of the script is experienced testers have gone before you to test new changes
-* You are still testing a development version of the app and you are expected to:
-    * Pay attention
+    * The developer may need to make changes that require you to delete your app and start over
+* You are expected to use the [zulipchat, development stream](https://loop.zulipchat.com/#narrow/stream/144182-development)
+    * Pay attention to announcemnts
     * Monitor for reports of problems other people are having
-    * Report any issue you experience.
+    * Report any issue you experience
+* The advantage of the script is:
+    * Experienced testers have gone before you to test new changes
+    * The script issues the `git` commands required to download this version
+    * The script assists you in configuring and building after download
 
-**Remember, this code is under active development, so please pay attention to your app and report any unexpected behavior on [Loop Zulipchat](https://loop.zulipchat.com).**
-
+The lightly tested version is identified by the commit, a 7-digit alphanumeric code. That code is appended to the folder name of the downloaded code under Downloads/BuildLoop. You can use finder to view the folder name after the script completes.
 
 !!! warning "iOS 16: Developer Mode Required"
     If your phone is running iOS 16, please click on this [Developer Mode](step14.md#developer-mode) link, follow the directions on that page and then return to this page.  (If you continue on the page with the Developer Mode link, you will be building the released code, not the dev code.)
@@ -212,7 +223,7 @@ Refer to the graphic below. The messages in the terminal instruct you to:
 ![script instructions for plugging in phone and trusting computer on phone and watch](img/build-dev-b-04.svg){width="750"}
 {align="center"}
 
-The final action of the script is to 
+The final action of the script is to
 
 * Open a browser window displaying this section of LoopDocs
 * Open Xcode
@@ -330,8 +341,8 @@ You may choose to run the script each time you update. You can discard older ver
 You may prefer to use commands to fetch and pull the latest code without making a new clone.
 
 !!! tip "Folder Name"
-    If you decide to update code in the same folder, you should edit the folder name to remove the specific build commit appended by the script. 
-    
+    If you decide to update code in the same folder, you should edit the folder name to remove the specific build commit appended by the script.
+
     This is not required but may avoid confusion.
 
 ### Open a Terminal in LoopWorkspace Folder
@@ -395,7 +406,7 @@ carthage version
 
 If carthage is on your system, you can choose to remove it (completely optional with respect to building Loop with updated code).
 
-Copy and paste the following line into the terminal window and hit return.  
+Copy and paste the following line into the terminal window and hit return.
 
 ```
 rm -rf /usr/local/bin/carthage

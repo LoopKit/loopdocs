@@ -1,34 +1,37 @@
 # Building Development Code
 
-## For Experienced Loopers
+The method on this page is for Loopers who want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev branch.
 
-This method is for experienced Loopers who want to build the development code for Loop to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev branch.
+**No matter the method used, script or git commands, you are testing development code. Please read this link now before continuing.**
 
-For those who do feel comfortable composing and issuing git commands to the terminal, refer to the instructions on the [LoopWorkspace](loopworkspace.md) page.
+* **[What's going on in the dev branch](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch)**
+
+For those who feel comfortable composing and issuing git commands to the terminal, refer to the instructions on the [LoopWorkspace](loopworkspace.md) page.
 
 ## Loop Dev Script
 
 !!! question "Loop dev before release of Loop 3"
     Before Loop dev branch is released as Loop 3, there is a special page on building what will be Loop 3. Please head over to that page to download and build [Loop-dev](step13.md).
 
-    After the release of Loop 3, this will be the only page for people who want to continue using the script, BuildLoopFixedDev.sh, to download and build a lightly tested version of the dev branch.
+    After the release of Loop 3, that page will be removed. This page will remain.
 
-The script, BuildLoopFixedDev.sh, assists in building the development branch for Loop and FreeAPS:
+If you have not previously built the released version of the app using the Build-Select (BuildLoop) script as documented on the [Build the Loop App](step14.md) page, review that page first and then return.
 
-If you have not previously built the released version of the app using the Build-Select (BuildLoop.sh) script as documented on the [Build the Loop App](step14.md) page, review that page first and then return.
+This section provides instructions to use the BuildLoopFixedDev script. It will download a "Fixed" version of the development branch for Loop or FreeAPS and then assist with the build process.
 
-* The BuildLoopFixedDev.sh script downloads the development branch and then selects a specific commit that has been lightly tested
+* The BuildLoopFixedDev script downloads the development branch and then selects a specific version that has been lightly tested
 * When you use this script, you accept that this is not released code
-* The developer may need to make changes that require you to delete your app and start over
-* The advantage of the script is experienced testers have gone before you to test new changes
-* You are still testing a development version of the app and you are expected to:
-    * Pay attention
+    * The developer may need to make changes that require you to delete your app and start over
+* You are expected to use the [zulipchat, development stream](https://loop.zulipchat.com/#narrow/stream/144182-development)
+    * Pay attention to announcemnts
     * Monitor for reports of problems other people are having
-    * Report any issue you experience.
+    * Report any issue you experience
+* The advantage of the script is:
+    * Experienced testers have gone before you to test new changes
+    * The script issues the `git` commands required to download this version
+    * The script assists you in configuring and building after download
 
-**Remember, this code is under active development, so please pay attention to your app and report any unexpected behavior on [Loop Zulipchat](https://loop.zulipchat.com).**
-
-The lightly tested commit is identified by a 7-digit alphanumeric code. That code is appended to the folder name of the downloaded code under Downloads/BuildLoop. You can use finder to view the folder name after the script completes.
+The lightly tested version is identified by the commit, a 7-digit alphanumeric code. That code is appended to the folder name of the downloaded code under Downloads/BuildLoop. You can use finder to view the folder name after the script completes.
 
 ### Loop-dev Version
 
