@@ -608,7 +608,7 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop dev branch.
 
-Check the instructions for the minimum date for Loop-dev. The patches will not work if the date is too old. The instructions also list the commit and date for the version of dev that was last tested with the patches.
+Check the instructions for the minimum (and sometimes maximum) date for Loop-dev code. The patches only work for the specified range of commit values (versions of Loop dev). The instructions also list the commit and date for the version of dev that was last tested with the patches - this is **always** the same as the script for building Loop dev. If the version of dev at the repo has advanced past the value used by the script, there is no guarantee the patches can be applied. If you want to use the patches - please stick with the [Build Loop dev script](step13.md).
 
 Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop dev.
 
