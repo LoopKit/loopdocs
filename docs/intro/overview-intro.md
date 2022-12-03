@@ -23,7 +23,7 @@ It is totally understandable if the thought of building and operating your own L
 The process for building the Loop app is divided into short segments (pages) in the Build tab of LoopDocs.
 
 !!! warning "Best Practice: Learn to Build"
-    You are strongly encouraged to build Loop for yourself. 
+    You are strongly encouraged to build Loop for yourself.
 
     * No links to providers who build Loop as a service  are found in LoopDocs
     * If you choose to use such a service, before you begin, you should:
@@ -45,3 +45,18 @@ A significant amount of content is provided on this website and via link to othe
 
 Some techniques are specific to Loop, but the general concepts of how man-made insulin works and strategies to test basal, carb ratios and insulin sensitivity apply to all the hybrid closed-loop systems, commercial and open source.
 
+## Development History
+
+Loop is an open-source, shared project. The entire project has been, and continues to be, done by volunteers. From the code to the website, you're getting all this because dozens of volunteers have given their time time, so please add your time by reading this website thoroughly before embarking on your Loop journey.
+
+In addition to this website, here are links to other resources for you to explore.
+
+* The early history of Loop development:
+    * [History of Loop and LoopKit](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805), written by Loop developer Nate Racklyeft
+
+* The early days and the many advances brought about by the `#We Are Not Waiting` diabetes community:
+    * [The Artificial Pancreas Book](https://www.artificialpancreasbook.com/) written by Dana Lewis and check out her website [DIYPS](https://diyps.org).
+
+* How the Omnipod Eros pods were cracked to work with Loop:
+    * [Insulin Pumps, Decapped Chips and Software Defined Radios](https://medium.com/@ps2) written by Loop developer Pete Schwamb
+    * [Deep Dip Teardown of Tubeless Insulin Pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf) by Sergei Skorobogatov
