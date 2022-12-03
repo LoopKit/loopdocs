@@ -47,9 +47,9 @@ Some techniques are specific to Loop, but the general concepts of how man-made i
 
 ## Development History
 
-Loop is an open-source, shared project. The entire project has been, and continues to be, done by volunteers. From the code to the website, you're getting all this because dozens of volunteers have given their time time, so please add your time by reading this website thoroughly before embarking on your Loop journey.
+Loop is an open-source, shared project. The entire project has been, and continues to be, done by volunteers. From the code to the website, you're getting all this because dozens of volunteers have given their time, so please add your time by reading this website thoroughly before embarking on your Loop journey.
 
-In addition to this website, here are links to other resources for you to explore.
+Here are development history links to other resources for you to explore.
 
 * The early history of Loop development:
     * [History of Loop and LoopKit](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805), written by Loop developer Nate Racklyeft
