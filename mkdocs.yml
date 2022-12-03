@@ -141,12 +141,12 @@ nav:
     - 'Loop 3 Features': loop-3/features.md
 - 'Version':
     - 'Version Overview': 'version/overview-version.md'
-    - 'Loop Releases': 'faqs/release-faqs.md'
+    - 'Loop Releases': 'version/releases.md'
     - 'Customize your Loop': 'build/code_customization.md'
     - 'Simulator Build': 'version/simulator.md'
-    - 'Loop Development': 'faqs/branch-faqs.md'
+    - 'Loop Development': 'version/development.md'
     - 'Build Dev': 'build/build-select-dev.md'
-    - 'LoopWorkspace': 'build/loopworkspace.md'
+    - 'LoopWorkspace': 'version/loopworkspace.md'
 - Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'
     - 'Brand New NS': 'nightscout/new_user.md'

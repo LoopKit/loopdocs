@@ -16,7 +16,7 @@ Loop can be connected to the following CGMs:
     * [Dexcom G6](#dexcom-g5-g6-one) (use this for Dexcom ONE)
     * [Dexcom G7](#dexcom-g7) **(Loop-dev only)**
         * only available with Loop dev (commit bde44b5, 26 Nov 2022, or later)
-        * NOT INCLUDED in [Build Loop-dev script](../build/build-select-dev.md), see [Updating Loop to a Specific LoopWorkspace commit](../build/loopworkspace.md#updating-loop-to-a-specific-loopworkspace-commit)
+        * NOT INCLUDED in [Build Loop-dev script](../build/build-select-dev.md), see [Updating Loop to a Specific LoopWorkspace commit](../version/loopworkspace.md#updating-loop-to-a-specific-loopworkspace-commit)
         * REQUIRES Xcode 14
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only

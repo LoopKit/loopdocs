@@ -41,11 +41,11 @@ Under ordinary circumstance, updating the iOS on your phone does not require a r
 
     1. Check which [version of macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) is required for the phone iOS you intend to install.
     1. [Update macOS / Xcode if needed](#macos-and-xcode-versions)
-    1. Check [Loop: Current Release](../faqs/release-faqs.md#current-release) status - if there is new code, you should download it
+    1. Check [Loop: Current Release](../version/releases.md#current-release) status - if there is new code, you should download it
     1. Build app to your iPhone
     1. Then update your iPhone iOS
 
-[Loop Releases](../faqs/release-faqs.md#loop-releases) provides information about current and previous Loop versions.
+[Loop Releases](../version/releases.md#loop-releases) provides information about current and previous Loop versions.
 
 Updating to iOS 16 (watchOS 9) requires enabling [Developer Mode](step14.md#developer-mode). Your existing app will not open until you take this step. Once enabled, the app opens again. A rebuild is **not** required.
 

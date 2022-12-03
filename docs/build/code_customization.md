@@ -6,7 +6,7 @@ Based on Loop users’ experience, there are some customizations that you may wa
 
 For new builders, please build the code before you make any changes. Start with Open Loop and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using Xcode as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  
 
-When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../faqs/release-faqs.md#current-release), you can skip the download and use the same folder as last time.  
+When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../version/releases.md#current-release), you can skip the download and use the same folder as last time.  
 
 ### Find My Dowloaded Loop Code
 

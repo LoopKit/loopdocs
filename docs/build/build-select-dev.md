@@ -1,12 +1,12 @@
 # Building Development Code
 
-The method on this page is for Loopers who want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev branch.
+The method on this page is for Loopers who want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev branch. It is not always at the tip of the dev branch; think of it as a snapshot along the development path for dev.
 
 **No matter the method used, script or git commands, you are testing development code. Please read this link now before continuing.**
 
-* **[What's going on in the dev branch](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch)**
+* **[What's going on in the dev branch](../version/development.md#whats-going-on-in-the-dev-branch)**
 
-For those who feel comfortable composing and issuing git commands to the terminal, refer to the instructions on the [LoopWorkspace](loopworkspace.md) page.
+For those who feel comfortable composing and issuing git commands to the terminal, refer to the instructions on the [LoopWorkspace](../version/loopworkspace.md) page.
 
 ## Loop Dev Script
 
@@ -135,7 +135,7 @@ This new terminal window opens in the LoopWorkspace folder needed to perform `gi
 {align="center"}
 
 * Some users like to use [GitKraken](https://support.gitkraken.com/) to assist them (link takes you to a tutorial video).
-* Some are comfortable with the command line git commands described on [here](loopworkspace.md#updating-loop-using-loopworkspace).
+* Some are comfortable with the command line git commands described on [here](../version/loopworkspace.md#updating-loop-using-loopworkspace).
 
 ### Identify Loop-dev Version
 

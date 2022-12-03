@@ -1,5 +1,9 @@
 # Loop Development
 
+The early history of Loop was touched on in the introductory [LoopDocs Overview: Development History](../intro/overview-intro.md#development-history) section.
+
+The [Loop Releases](../version/releases.md) page lists releases since version 2.0 in reverse chronological order.
+
 The next version of Loop is developed using branch(es), independent of the released Loop version, which is found in the master branch. The dev branch is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be both an active participant with the developers to monitor annoucements and provide feedback, and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of Loop is improved.
 
 There is a lot of interest in being a "tester" of dev right now, because the Omnipod DASH and Dexcom G7 are supported in the dev branch. If you choose to use dev, you accept that this code is not released.

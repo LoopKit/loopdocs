@@ -120,7 +120,7 @@ The differences between the three exponential models (two Rapid-Acting and Fiasp
 
 ## Dosing Strategy
 
-This configuration setting gives you the ability to select the Dosing Strategy. (If you do not see this setting, then you are running Loop v2.2.4 or older.) If you tap on that Dosing Strategy, it reveals a selection screen, shown in the graphic below, with some explanation.  Note that this Dosing Strategy feature was available for more than a year in the automatic-bolus branch.  Users who have been using the automatic-bolus feature should update as soon as possible to get the other improvements recently added, [Loop Releases](../../faqs/release-faqs.md).
+This configuration setting gives you the ability to select the Dosing Strategy. (If you do not see this setting, then you are running Loop v2.2.4 or older.) If you tap on that Dosing Strategy, it reveals a selection screen, shown in the graphic below, with some explanation.  Note that this Dosing Strategy feature was available for more than a year in the automatic-bolus branch.  Users who have been using the automatic-bolus feature should update as soon as possible to get the other improvements recently added, [Loop Releases](../../version/releases.md).
 
 ![Dosing Strategy selection screen](img/dosing-strategy.svg){width="350"}
 {align="center"}
