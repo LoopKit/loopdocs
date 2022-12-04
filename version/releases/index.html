@@ -306,7 +306,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../version/overview-version/" class="md-tabs__link md-tabs__link--active">
+      <a href="../overview-version/" class="md-tabs__link md-tabs__link--active">
         Version
       </a>
     </li>
@@ -338,7 +338,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../overview-faqs/" class="md-tabs__link">
+      <a href="../../faqs/overview-faqs/" class="md-tabs__link">
         FAQs
       </a>
     </li>
@@ -1557,7 +1557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version/overview-version/" class="md-nav__link">
+      <a href="../overview-version/" class="md-nav__link">
         Version Overview
       </a>
     </li>
@@ -1914,7 +1914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version/simulator/" class="md-nav__link">
+      <a href="../simulator/" class="md-nav__link">
         Simulator Build
       </a>
     </li>
@@ -1928,7 +1928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../branch-faqs/" class="md-nav__link">
+      <a href="../development/" class="md-nav__link">
         Loop Development
       </a>
     </li>
@@ -1956,7 +1956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build/loopworkspace/" class="md-nav__link">
+      <a href="../loopworkspace/" class="md-nav__link">
         LoopWorkspace
       </a>
     </li>
@@ -2122,7 +2122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview-faqs/" class="md-nav__link">
+      <a href="../../faqs/overview-faqs/" class="md-nav__link">
         FAQs Overview
       </a>
     </li>
@@ -2136,7 +2136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../safety-faqs/" class="md-nav__link">
+      <a href="../../faqs/safety-faqs/" class="md-nav__link">
         Safety Tips
       </a>
     </li>
@@ -2150,7 +2150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../FAQs/" class="md-nav__link">
+      <a href="../../faqs/FAQs/" class="md-nav__link">
         Loop FAQs
       </a>
     </li>
@@ -2178,7 +2178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../omnipod-faqs/" class="md-nav__link">
+      <a href="../../faqs/omnipod-faqs/" class="md-nav__link">
         Omnipod FAQs
       </a>
     </li>
@@ -2192,7 +2192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cgm-faqs/" class="md-nav__link">
+      <a href="../../faqs/cgm-faqs/" class="md-nav__link">
         CGM FAQs
       </a>
     </li>
@@ -2206,7 +2206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../update-faqs/" class="md-nav__link">
+      <a href="../../faqs/update-faqs/" class="md-nav__link">
         Update/Rebuild Loop FAQs
       </a>
     </li>
@@ -2220,7 +2220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rileylink-faqs/" class="md-nav__link">
+      <a href="../../faqs/rileylink-faqs/" class="md-nav__link">
         RileyLink FAQs
       </a>
     </li>
@@ -2234,7 +2234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../algorithm-faqs/" class="md-nav__link">
+      <a href="../../faqs/algorithm-faqs/" class="md-nav__link">
         Algorithm FAQs
       </a>
     </li>
@@ -2248,7 +2248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../apple-health-faqs/" class="md-nav__link">
+      <a href="../../faqs/apple-health-faqs/" class="md-nav__link">
         Apple Health FAQs
       </a>
     </li>
@@ -2262,7 +2262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+      <a href="../../faqs/glossary/" class="md-nav__link">
         Glossary
       </a>
     </li>
@@ -2624,7 +2624,7 @@
 <div class="admonition info">
 <p class="admonition-title">How do I Know What Version I Have?</p>
 <p>Tap on the Settings icon at the bottom of the Loop app main screen and look at the version information at upper left. This graphic was generated with an older version, Loop 2.2.8.</p>
-<p align="center"><img alt="Determine current app version on app settings screen" src="../img/app_version.svg" width="400" /></p>
+<p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.svg" width="400" /></p>
 </div>
 <h3 id="loop-v229">Loop v2.2.9<a class="headerlink" href="#loop-v229" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This release updates Loop to handle Dexcom Share server changes for how glucose trend is parsed. Dexcom used to provide integers that mapped to the meaning for the arrows.  They changed that to strings, like "Flat" or "FortyFiveUp".</p>
@@ -2812,7 +2812,7 @@
 </ol>
 <p>With a non-linear absorption model, the carb absorption will more closely match observed blood glucose impacts we've seen after meals. And when the model is more closely matching actual experience, that means the predicted blood glucose curves will do a better job at providing more upfront bolus and not having the tendency to have overly conservative temp basals soon after a meal.</p>
 <p><strong>What should you expect?</strong> Like the description above, you'll likely see more complete bolus recommendations and less low temping after a bolus. With that in mind, if you've made adjustments to your Loop habits or settings to overcome those issues previously, you may want to undo those habits. Like if you shortened carb absorption times to help get larger boluses upfront, you may want to go back to standard times. Keep an eye on things and you should adjust as needed.</p>
-<p><strong>What if you want to go back to the old model?</strong> You will have to edit a line in LoopKit's LoopKit code <a href="https://github.com/LoopKit/LoopKit/blob/dev/LoopKit/CarbKit/CarbStore.swift#L207">here</a> to use <code>.linear</code> if you wanted to go back to the old carb model. If you want to read more about the model, please check out the <a href="https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Possible.20Carb.20Model.20Changes">Zulipchat thread here</a>. But realize that the code edit for changing models would be easiest done using a <a href="../../build/loopworkspace/">LoopWorkspace</a> because the edit is in one of the frameworks that Loop uses (rather than Loop code itself), so this is one of those instances where you will have to do some work to learn how to use a LoopWorkspace properly.</p>
+<p><strong>What if you want to go back to the old model?</strong> You will have to edit a line in LoopKit's LoopKit code <a href="https://github.com/LoopKit/LoopKit/blob/dev/LoopKit/CarbKit/CarbStore.swift#L207">here</a> to use <code>.linear</code> if you wanted to go back to the old carb model. If you want to read more about the model, please check out the <a href="https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Possible.20Carb.20Model.20Changes">Zulipchat thread here</a>. But realize that the code edit for changing models would be easiest done using a <a href="../loopworkspace/">LoopWorkspace</a> because the edit is in one of the frameworks that Loop uses (rather than Loop code itself), so this is one of those instances where you will have to do some work to learn how to use a LoopWorkspace properly.</p>
 <h3 id="overrides">Overrides<a class="headerlink" href="#overrides" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Loop v2.0 marks the first time Loop master <abbr title="version of code within a single repository or workspace repository">branch</abbr> has overrides included. Additionally, this release moves overrides setup from the configurations area of Loop settings to the workout icon in the Loop toolbar. There has also been bug squashing in dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for overrides over the recent past, so updating is a good idea even if you already have overrides on your current build. Want to learn more about overrides? Read about them <a href="../../operation/features/workout/">here</a>.</p>
 <h3 id="retrospective-correction-always-on">Retrospective Correction always on<a class="headerlink" href="#retrospective-correction-always-on" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2856,7 +2856,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../version/overview-version/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Version Overview" rel="prev">
+        <a href="../overview-version/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Version Overview" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
