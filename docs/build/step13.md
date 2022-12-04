@@ -2,7 +2,14 @@
 
 The dev branch is tested by developers and users. Users who want to test dev must be willing to follow zulipchat and provide feedback to the developers. The developers are still actively making improvements, which has the potential to break things.
 
-When the dev branch gets more mature, adventurous Loopers want to try out the new features and not wait for the release. Please remember - even though there is a script to build a lightly tested version of dev, it is development code. You still need to
+The method on this page is for Loopers who want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev branch. It is not always at the tip of the dev branch; think of it as a snapshot along the development path for dev.
+
+* The minimum phone operating system for dev is iOS 14
+* The minimum Xcode required to build the snapshot of dev with the script on this page is Xcode 13.3
+* Later versions of dev that include the G7 code, require Xcode 14
+
+
+**Please read these bullets.**
 
 * Follow posts in [zulipchat, development stream](https://loop.zulipchat.com/#narrow/stream/144182-development)
 * Provide feedback to the developers if you notice any problems
@@ -18,6 +25,8 @@ Please read the sections: [What's going on in the dev branch](../version/develop
 
 All Loopers using this script need to be aware this is NOT released code. The dev version, prepared by the script, provides DASH support and has improved features when compared to the released code. Some new Loopers are starting with Loop-dev, using the script, because the onboarding with guardrails and the new user experience makes it easier to begin to use Loop.
 
+Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs
+
 !!! question "When will Loop dev be released as Loop 3?"
     There is no set time for the release.
 
@@ -27,9 +36,6 @@ All Loopers using this script need to be aware this is NOT released code. The de
         * [https://github.com/LoopKit/Loop/projects/4](https://github.com/LoopKit/Loop/projects/4)
 
     WARNING: The script may lag the most recent dev updates. It may not pull in all the `Done` items listed at the link above.
-
-- Note, the dev branch requires a minimum of iOS 14 on your device
-- Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs
 
 !!! danger "Returning to Older Version"
     If you decide to return to Loop v2.2.x (or FreeAPS) after building Loop-dev on your phone, you will have to delete the Loop app and all other apps with the shared app group ID. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
