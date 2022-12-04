@@ -10,11 +10,11 @@ When the dev branch gets more mature, adventurous Loopers want to try out the ne
 
 The script to build Loop-dev, described on this page, will only be updated after observing reports on zulipchat, performing a few independent tests and using the modified Loop personally. Expect a delay between changes at the repository and adoption of those changes in the script.
 
-If you are impatient, please see the information on the [LoopWorspace](loopworkspace.md) page.
+If you are impatient, please see the information on the [LoopWorspace](../version/loopworkspace.md) page.
 
 ## Required Reading
 
-Please read the sections: [What's going on in the dev branch](../faqs/branch-faqs.md#whats-going-on-in-the-dev-branch) and [New with Loop 3](../loop-3/loop-3-overview.md#new-with-loop-3) before continuing with this page.
+Please read the sections: [What's going on in the dev branch](../version/development.md#whats-going-on-in-the-dev-branch) and [New with Loop 3](../loop-3/loop-3-overview.md#new-with-loop-3) before continuing with this page.
 
 All Loopers using this script need to be aware this is NOT released code. The dev version, prepared by the script, provides DASH support and has improved features when compared to the released code. Some new Loopers are starting with Loop-dev, using the script, because the onboarding with guardrails and the new user experience makes it easier to begin to use Loop.
 
@@ -36,7 +36,7 @@ All Loopers using this script need to be aware this is NOT released code. The de
 
     If you use Loop Follow, that does **not** need to be deleted.
 
-    For more information, click on [Remove Apps with Shared App Group](../faqs/release-faqs.md#remove-apps-with-shared-app-group)
+    For more information, click on [Remove Apps with Shared App Group](../version/releases.md#remove-apps-with-shared-app-group)
 
 ## Download Loop-dev
 
@@ -361,7 +361,7 @@ This new terminal window opens in the LoopWorkspace folder needed to perform `gi
 {align="center"}
 
 * Some users like to use [GitKraken](https://support.gitkraken.com/) to assist them (link takes you to a tutorial video).
-* Some are comfortable with the command line git commands described on [here](loopworkspace.md#updating-loop-using-loopworkspace).
+* Some are comfortable with the command line git commands described on [here](../version/loopworkspace.md#updating-loop-using-loopworkspace).
 
 ### Identify Loop-dev Version
 
