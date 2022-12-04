@@ -58,7 +58,6 @@ Before manually accepting an iOS update, be sure you have compatible versions of
 
     **Please Read**: [Minimum Version List](#how-do-all-the-minimum-versions-relate-to-each-other)
 
-
 !!! warning "Can't find the required Xcode version"
     - If your computer is not running the required minimum macOS, the App Store won't show the required minimum Xcode version
     - You must use iOS to determine which Xcode, which determines which macOS
@@ -77,6 +76,13 @@ After any update of [macOS](step1.md#check-your-macos-version) or Xcode, it is a
 The list below contains the **minimum** versions of [macOS](step1.md#check-your-macos-version) and Xcode you'll need based on your iOS version. The highlighted sections, coordinated by `color` and `linestyle` in the graphic below, tie together the operating system nomenclature in the following bullets. The graphic is not updated as frequently as the words.
 
 **Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade.**
+
+**If you are building Loop-dev you must have iOS 14 as a minimum.**
+
+* **If you build a snapshot of Loop-dev from the script, the minimum version of Xcode is 13.3**
+* **If you are building a version of Loop-dev that includes the G7SensorKit code, the minimum version of Xcode is 14**
+
+This list is for the released version of code:
 
 * For iOS 16 or greater, minimum [macOS](step1.md#check-your-macos-version) is 12.5
     * Minimum Xcode version is 14
