@@ -4,7 +4,13 @@ The method on this page is for Loopers who want to build the development code to
 
 * The minimum phone operating system for dev is iOS 14
 * The minimum Xcode required to build the snapshot of dev with the script on this page is Xcode 13.3
-* Later versions of dev that include the G7 code, require Xcode 14
+* A new option has been added to the script (temporarily) to build a somewhat later version of dev that includes the G7 code and requires Xcode 14
+* The versions of Loop in the script do not include the most recent changes in the dev branch
+
+!!! tip "Update to Xcode 14.1"
+    When Loop-dev is released, it will require Xcode 14.
+
+    It is suggested you update to Xcode 14.1, or later, at your earliest convenience.
 
 **No matter the method used, script or git commands, you are testing development code. Please read this link now before continuing.**
 
