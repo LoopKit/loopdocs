@@ -1,4 +1,4 @@
-iOS 15# Building Development Code
+# Building Development Code
 
 The method on this page is for Loopers who want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev branch. It is not always at the tip of the dev branch; think of it as a snapshot along the development path for dev.
 
