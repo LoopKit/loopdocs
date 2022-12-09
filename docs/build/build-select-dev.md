@@ -2,7 +2,7 @@
 
 The method on this page is for Loopers who want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev branch. It is not always at the tip of the dev branch; think of it as a snapshot along the development path for dev.
 
-* The minimum phone operating system for dev is iOS 14
+* The minimum versions for dev when it is released will be iOS 15, Xcode 14.1
 * The minimum Xcode required to build the snapshot of dev with the script on this page is Xcode 13.3
 * A new option has been added to the script (temporarily) to build a somewhat later version of dev that includes the G7 code and requires Xcode 14
 * The versions of Loop in the script do not include the most recent changes in the dev branch
