@@ -77,10 +77,10 @@ The list below contains the **minimum** versions of [macOS](step1.md#check-your-
 
 **Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade.**
 
-**If you are building Loop-dev you must have iOS 14 as a minimum.**
+**If you are building Loop-dev you need iOS 15 or iOS 16 and Xcode 14.1.**
 
-* **If you build a snapshot of Loop-dev from the script, the minimum version of Xcode is 13.3**
-* **If you are building a version of Loop-dev that includes the G7SensorKit code, the minimum version of Xcode is 14**
+* **If you have an older snapshot of Loop-dev, you might be able to build with Xcode 13.3**
+* **But since computers that support Xcode 13.3 also support Xcode 14.1, go ahead and update; there are some intermittent build errors, seen with Xcode 13, that are fixed with Xcode 14.1**
 
 This list is for the released version of code:
 

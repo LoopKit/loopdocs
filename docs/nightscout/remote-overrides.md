@@ -14,15 +14,18 @@ You can now use your Nightscout site to remotely set and cancel your override pr
 
     2. Create a Key for an Apple Push Notifications service (APNs)
 
-    3. Update your Nightscout site and add some "config vars" lines in your Heroku settings.
+    3. Update your Nightscout site and add some "config vars" lines in your Nightscout site settings.
 
 !!! tip "New Feature in Loop 3"
     Remote bolus and remote carb capability is added with Loop 3, currently under test as Loop dev. In order to support this capability, there are new minimum versions:
     
     * Loop 3 (Loop dev) or newer
-    * iOS 14 or newer
+    * iOS 15 or newer
     * Nightscout version 14.0 or newer
-    
+
+!!! danger "Thinking ahead"
+    LoopCaregiver, an app that is under development, will only work on iOS 16.
+
 ## Step 1: Update the Looper's iPhone settings
 
 For remote overrides to successfully deploy on a Looper's iPhone, they will need to have two settings on the iPhone enabled.

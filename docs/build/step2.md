@@ -21,7 +21,7 @@
 
 Loop requires an iPhone or iPod touch. Loop uses the Apple Health app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. iPads do not have the Apple Health app, so iPads will not work with Loop.
 
-You need a minimum version of the mobile operating software, called the phone's "iOS", to be installed on your iPhone or iPod touch. Loop is compatible with iPhone and iPod touch devices with iOS 12.4 or newer. The next version of Loop will require a minimum of iOS 14.
+You need a minimum version of the mobile operating software, called the phone's "iOS", to be installed on your iPhone or iPod touch. Loop is compatible with iPhone and iPod touch devices with iOS 12.4 or newer. The next version of Loop will require a minimum of iOS 15.
 
 ### Compatible Devices
 
@@ -36,7 +36,7 @@ These devices are compatible with iOS 14 through iOS 16.
 - iPhone SE (3rd generation or later model; 2022 first release)
 - iPhone SE (2nd generation; 2020 first release)
 
-These devices are compatible with Loop 3, but cannot be upgraded to iOS 16. Loop 3 is the soon-to-be released version of Loop. This version of Loop requires iOS 14.
+These devices are compatible with Loop 3, but cannot be upgraded to iOS 16. Loop 3 is the soon-to-be released version of Loop. This version of Loop requires iOS 15.
 
 - iPhone 7, all variants
 - iPhone 6s, all variants - but note the "s"
