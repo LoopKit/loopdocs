@@ -3,14 +3,13 @@
 The method on this page is for Loopers who want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev branch. It is not always at the tip of the dev branch; think of it as a snapshot along the development path for dev.
 
 * The minimum versions for dev when it is released will be iOS 15, Xcode 14.1
-* The minimum Xcode required to build the snapshot of dev with the script on this page is Xcode 13.3
-* A new option has been added to the script (temporarily) to build a somewhat later version of dev that includes the G7 code and requires Xcode 14
-* The versions of Loop in the script do not include the most recent changes in the dev branch
+* The minimum versions required to build the snapshot of dev using the script on this page is also iOS 15, Xcode 14.1
+* The versions of Loop in the script might not include the most recent changes in the dev branch
 
 !!! tip "Update to Xcode 14.1"
-    When Loop-dev is released, it will require Xcode 14.
+    The minimum Xcode version is really 14.0, but that version had some "issues."
 
-    It is suggested you update to Xcode 14.1, or later, at your earliest convenience.
+    Update to Xcode 14.1, or newer, at your earliest convenience.
 
 **No matter the method used, script or git commands, you are testing development code. Please read this link now before continuing.**
 
