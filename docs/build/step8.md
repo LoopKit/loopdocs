@@ -77,12 +77,9 @@ The list below contains the **minimum** versions of [macOS](step1.md#check-your-
 
 **Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade.**
 
-**If you are building Loop-dev you need iOS 15 or iOS 16 and Xcode 14.1.**
+**If you are building Loop-dev you need iOS 15 or iOS 16 and Xcode 14.1 or newer.**
 
-* **If you have an older snapshot of Loop-dev, you might be able to build with Xcode 13.3**
-* **But since computers that support Xcode 13.3 also support Xcode 14.1, go ahead and update; there are some intermittent build errors, seen with Xcode 13, that are fixed with Xcode 14.1**
-
-This list is for the released version of code:
+The list below is for the released version of code:
 
 * For iOS 16 or greater, minimum [macOS](step1.md#check-your-macos-version) is 12.5
     * Minimum Xcode version is 14
