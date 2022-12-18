@@ -1094,6 +1094,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#large-meal-warning-loop-3-only" class="md-nav__link">
+    Large Meal Warning (Loop 3 only)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2255,6 +2262,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#large-meal-warning-loop-3-only" class="md-nav__link">
+    Large Meal Warning (Loop 3 only)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2360,7 +2374,7 @@
 <p>This page was updated with information for Loop-dev which will soon be released as <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>.</p>
 <h3 id="loop-2-and-3-differences">Loop 2 and 3 Differences<a class="headerlink" href="#loop-2-and-3-differences" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Most of the information is the same for Loop 2.2.x (or FreeAPS) and <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>. </p>
-<p>Loop 2 and 3 differences:</p>
+<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Updates:</p>
 <ul>
 <li><a href="#time">Time</a>: <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> adds the +/- 15 minute buttons to adjust time for entry</li>
 <li><a href="#food-type">Food Type</a>: emoji keyboard<ul>
@@ -2373,7 +2387,11 @@
 <li>Loop 2.2.x uses 2 hr, 3 hr, 4 hr</li>
 </ul>
 </li>
-<li><a href="../bolus/#meal-bolus">Meal Bolus</a>: <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> fills in the Bolus row with Recommended Bolus </li>
+<li><a href="../bolus/#meal-bolus">Meal Bolus</a>: <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> fills in the Bolus row with Recommended Bolus</li>
+<li><a href="#large-meal-warning-loop-3-only">Large Meal Warning (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only)</a><ul>
+<li>The warning limit of 99 g was chosen to assist in catching mistakes such as entering 115 grams instead of 15 grams</li>
+</ul>
+</li>
 </ul>
 <h2 id="meal-entry-fast-version">Meal Entry - Fast Version<a class="headerlink" href="#meal-entry-fast-version" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>To start a new meal entry, tap on the green plate icon (circled below) in the toolbar at the bottom of the Loop status screen. Your Loop app will open to the <strong>Add Carb Entry</strong> screen.</p>
@@ -2521,6 +2539,9 @@
 </ul>
 <h3 id="continue">Continue<a class="headerlink" href="#continue" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Carbs are not saved in the <strong>Add Carb Entry</strong> screen until the Continue button is pressed and the user saves those carbs in the <a href="../bolus/#meal-bolus"><strong>Meal Bolus</strong></a>  screen, follow the link for details.</p>
+<h3 id="large-meal-warning-loop-3-only">Large Meal Warning (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only)<a class="headerlink" href="#large-meal-warning-loop-3-only" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If the <code>Amount Consumed</code> row exceeds 99 grams when the Continue button is tapped, the user is provided with a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert from which they can proceed to the Meal Bolus screen, or return to edit <code>Amount Consumed</code> if that was not the intended amount.</p>
+<p align="center"><img alt="Large Meal Warning" src="../img/loop-3-large-meal-warning.svg" width="400" /></p>
 <h2 id="automatic-bolus"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr><a class="headerlink" href="#automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loopers who are using the <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> <em>should</em> still <abbr title="take some or all of a meal bolus before eating">prebolus</abbr> and/or bolus for meals. The amount of <code>Recommended</code> insulin that will appear in the <strong>Meal Bolus</strong> screen will be the full amount of the bolus Loop recommends (not the 40% partial bolus delivered automatically). As discussed above, you can accept this recommendation or enter a different amount, however, and this is <strong>very important</strong>, if your <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is set to <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>, by entering less than the recommended amount and tapping <code>Deliver</code> or tapping <code>Save Without Bolusing</code>, you are telling Loop to deliver the remaining recommended insulin in the future using 40% of the recommended bolus at each successive Loop interval.</p>
 <div class="admonition warning">

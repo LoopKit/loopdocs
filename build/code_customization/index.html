@@ -1694,6 +1694,26 @@
     Modify Maximum Carb Entry
   </a>
   
+    <nav class="md-nav" aria-label="Modify Maximum Carb Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-3-carb-entry-variables" class="md-nav__link">
+    Loop 3 Carb Entry Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-22x-max-carb-entry" class="md-nav__link">
+    Loop 2.2.x Max Carb Entry
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2299,6 +2319,26 @@
     Modify Maximum Carb Entry
   </a>
   
+    <nav class="md-nav" aria-label="Modify Maximum Carb Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-3-carb-entry-variables" class="md-nav__link">
+    Loop 3 Carb Entry Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-22x-max-carb-entry" class="md-nav__link">
+    Loop 2.2.x Max Carb Entry
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2686,6 +2726,37 @@
 <div class="highlight"><pre><span></span><code>private let allScaleFactorPercentages = Array(stride(from: 50, through: 200, by: 5))
 </code></pre></div>
 <h2 id="modify-maximum-carb-entry">Modify Maximum Carb Entry<a class="headerlink" href="#modify-maximum-carb-entry" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="loop-3-carb-entry-variables"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Carb Entry Variables<a class="headerlink" href="#loop-3-carb-entry-variables" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>During the development of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (while still Loop-dev), a warning screen was added to the carb entry interface when the entered meal is between 100 and 250 grams, inclusive. The variables that control when the warning screen is shown and that limit the overall maximum for carb entries are stored in the LoopConstants file, where they are used by both direct interaction with the Loop phone and by the remote carb entry checking code.</p>
+<p>Newer versions of Loop-dev use this updated method to modify the warning level and / or the maximum level.</p>
+<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let warningCarbEntryQuantity =
+</code></pre></div>
+<p>If you do not find the Key Phrase <code>warningCarbEntryQuantity</code> in the code - you do not have the updated Loop-dev code. Use the <a href="#loop-22x-max-carb-entry">Loop 2.2.x Max Carb Entry</a> version.</p>
+<div class="admonition warning">
+<p class="admonition-title">Older versions of Loop-dev</p>
+<p>If you modify <code>maxCarbEntryQuantity</code> in LoopConstants.swift for older versions of Loop-dev, it affects the remote carb entry range checking, but not the carb entry range checking for direct carb entry on the Loop device.</p>
+<p>In order to affect the direct entry of carbs with this older version of Loop, you must use this link: <a href="#loop-22x-max-carb-entry">Loop 2.2.x Max Carb Entry</a>. The updated Loop-dev uses the LoopConstants value for both direct and remote range checking.</p>
+</div>
+<p>If you do find that Key Phrase in the code, you have the newer version of Loop-dev. The max and warning values can be modified in LoopConstants. The variable <code>maxCarbEntryQuantity</code> is found in LoopConstants, two lines earlier than <code>warningCarbEntryQuantity</code>.</p>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 250) // cannot exceed this value
+
+static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // user is warned above this value
+</code></pre></div>
+<p>This first example might be used by a parent for a child with very small carb entries.</p>
+<p><em>Code After Modification to enable the warning at lower levels and limit maximum</em></p>
+<div class="highlight"><pre><span></span><code>static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // cannot exceed this value
+
+static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 49) // user is warned above this value
+</code></pre></div>
+<p>This second example might be used by a person who routinely enters large meals and does not want to be warned with every meal.</p>
+<p><em>Code After Modification to warn if entry is between 201 and 300g</em></p>
+<div class="highlight"><pre><span></span><code>static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 300) // cannot exceed this value
+
+static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200) // user is warned above this value
+</code></pre></div>
+<h3 id="loop-22x-max-carb-entry">Loop 2.2.x Max Carb Entry<a class="headerlink" href="#loop-22x-max-carb-entry" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Older versions of Loop-dev and Loop v2.2.x must use the following method for modifying maximum carb entry:</p>
 <p>Some people want to limit the maximum number of carbs that can be entered in one entry – especially for children or folks who eat lower carb. This helps prevent accidental typos, e.g., entry of 115 g instead of 15 g for a meal.</p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>maxQuantity =
 </code></pre></div>
