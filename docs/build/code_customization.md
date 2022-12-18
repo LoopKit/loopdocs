@@ -297,26 +297,6 @@ _Code After Modification to warn if entry is between 201 and 300g_
 
 ### Loop 2.2.x Max Carb Entry
 
-As shown in the graphic below, this phrase shows up in 2 places, only the first one should be modified.
-
-![xcode display showing the key phrase found in 2 places](img/xcode-modify-max-carb-entry.svg){width="700"}
-{align="center"}
-
-
-* Loop 2.2.x and Loop 3
-    * Folder: Loop/Loop/View Controllers
-    * File: CarbEntryViewController.swift, Line 33 (Loop 2.2.x) or 36 (Loop 3)
-
-_Code Before Modification_
-
-    var maxQuantity = HKQuantity(unit: .gram(), doubleValue: 250)
-
-_Code After Modification to limit carb entry to 99 g_
-
-    var maxQuantity = HKQuantity(unit: .gram(), doubleValue: 99)
-
-
-
 Older versions of Loop-dev and Loop v2.2.x must use the following method for modifying maximum carb entry:
 
 Some people want to limit the maximum number of carbs that can be entered in one entry – especially for children or folks who eat lower carb. This helps prevent accidental typos, e.g., entry of 115 g instead of 15 g for a meal.
