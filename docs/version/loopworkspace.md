@@ -14,6 +14,34 @@ If you wandered over here meaning to build the latest Loop release, the rest of 
 
 The typical user who wants to build Loop does not need to know the level of detail on the rest of this page.
 
+## New Way to Sign
+
+One of the recent changes to LoopWorkspace is the addition of the file: `LoopConfigOverride.xcconfig` to the LoopWorkspace folder. The contents of this file are shown in the graphic below.
+
+![LoopConfigOverride file with two lines highlighted](img/loopconfigoverride-file.svg){width="750"}
+{align="center"}
+
+There are several ways to use this to sign the targets automatically.
+
+1. Edit the line highlighted by the red rectangle to remove the comment marks (`//`) from the beginning of the line and replace the indicated TeamID (UY678SP37Q) with your own [Team ID](#team-id)
+2. For developers who may have more than one clone for various testing, note the first line of that file, highlighted by the blue-dashed rectangle
+    * If a `LoopConfigOverride.xcconfig` exists up two levels from the current LoopWorkspace folder, it will be included
+    * Use a directory structure for clones similar to the example shown in the graphic below where clones were created under ~/Downloads/ManualClones.
+    * Make a copy of the `LoopConfigOverride.xcconfig` in the ~/Downloads/ManualClones folder (from any LoopWorkspace folder) and edit that version with your TeamID
+    * All future clones created in this directory grouping are then automatically signed
+3. For users of the [Loop Dev Script](../build/step13.md), the script automatically generates the copy of  `LoopConfigOverride.xcconfig` in the ~/Downloads/BuildLoop folder the first time the script is run, guides the user into adding their TeamID and then, in subsequent downloads, uses that previously created file
+
+
+![Directory structure for multiple clones using a single LoopConfigOverride file](img/loopconfigoverride-dir.svg){width="750"}
+{align="center"}
+
+
+#### Team ID
+
+Your Apple Developer ID is the 10-character Team ID
+  found on the Membership page after logging into your account at:
+   [https://developer.apple.com/account/#!/membership](https://developer.apple.com/account/#!/membership).
+
 
 ### What is git?
 
