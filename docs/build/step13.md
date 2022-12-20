@@ -49,6 +49,14 @@ Updated documentation is a work-in-progress located under the [Loop 3](../loop-3
 
     For more information, click on [Remove Apps with Shared App Group](../version/releases.md#remove-apps-with-shared-app-group)
 
+## Build Loop-dev using Github Actions
+
+There is a new method for building Loop-dev. You cannot customize your code (yet) with this method.
+
+Please click here for more information and the link to the directions.
+
+* [Build Loop dev using Github Actions](../build/build-select-dev.md#build-loop-dev-using-github-actions)
+
 ## Download Loop-dev
 
 This section provides instructions to use the BuildLoopFixedDev script. It will download a "Fixed" version of the development branch for Loop or FreeAPS and then assist with the build process.

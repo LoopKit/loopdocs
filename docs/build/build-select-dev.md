@@ -1,6 +1,20 @@
 # Building Development Code
 
-The method on this page is for Loopers who want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev branch. It is not always at the tip of the dev branch; think of it as a snapshot along the development path for dev.
+**No matter the method used to build Loop-dev: script, github actions or git commands, you are testing development code. Please read this link now before continuing.**
+
+* **[What's going on in the dev branch](../version/development.md#whats-going-on-in-the-dev-branch)**
+
+Three methods to build Loop-dev are mentioned on this page:
+
+1. For those who have a Mac and want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions, a script is provided to build a lightly-tested version of Loop-dev.
+
+1. For those who don't own a mac or want the convenience of TestFlight to support themselves or a family member, please read [Build Loop dev using Github Actions](#build-loop-dev-using-github-actions).
+
+1. For those who feel comfortable composing and issuing git commands to the terminal, refer to the instructions on the [LoopWorkspace](../version/loopworkspace.md) page.
+
+## Build Loop dev with a Script
+
+The method in this section is for Loopers who want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions. This page provides instructions for a lightly tested version of the dev branch. It is not always at the tip of the dev branch; think of it as a snapshot along the development path for dev.
 
 * The minimum versions for dev when it is released will be iOS 15, Xcode 14.1
 * The minimum versions required to build the snapshot of dev using the script on this page is also iOS 15, Xcode 14.1
@@ -10,12 +24,6 @@ The method on this page is for Loopers who want to build the development code to
     The minimum Xcode version is really 14.0, but that version had some "issues."
 
     Update to Xcode 14.1, or newer, at your earliest convenience.
-
-**No matter the method used, script or git commands, you are testing development code. Please read this link now before continuing.**
-
-* **[What's going on in the dev branch](../version/development.md#whats-going-on-in-the-dev-branch)**
-
-For those who feel comfortable composing and issuing git commands to the terminal, refer to the instructions on the [LoopWorkspace](../version/loopworkspace.md) page.
 
 ## Loop Dev Script
 
@@ -153,3 +161,38 @@ The version of code that shows up under the Loop Settings screen will remain fix
 The commit is identified by a 7-digit alphanumeric code.  That code was also appended to the folder name of the downloaded code under Downloads/BuildLoop as shown in the graphic above.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report, refer to [Support](../loop-3/settings.md#support) for instructions on issuing a Loop Report. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.
 
 When you ran the BuildLoopFixedDev script, the instructions informed you of the commit.
+
+
+## Build Loop-dev using Github Actions
+
+**No matter the method used to build Loop-dev: script, github actions or git commands, you are testing development code.**
+
+You can build Loop-dev using your github account and your (paid) Apple Developer account using a browser. You no longer require a Mac computer.
+
+The instructions in the link below are basic - please read carefully and use the links provided in these directions.
+
+* [Using Github Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md)
+
+After successfully building Loop using Actions in github, here are two important things to know. The next statements might not make sense to you if you have not gone to the link above and reviewed the instructions.
+
+1. Once you have installed TestFlight on your phone and you see your app in the TestFlight screen, tap on it to see an expanded screen with an option to automatically update or not.  You should choose which you prefer. If you do not turn it off, the app will automatically update whenever a new Build action completes in your github fork.
+
+1. The Apple ID used to sign in for TestFlight on a given phone does not have to match the Apple ID of the phone user. This is important for children. [Loopers Need Their Own Apple ID](step6.md#loopers-need-their-own-apple-id), but children cannot use TestFlight with their ID.
+
+### Install Loop for Child
+
+The adult (Apple Developer Account owner) can log into Media & Purchase (see steps below) without affecting the child Apple ID associated with a phone (and thus their health records used by Loop). After the adult installs or updates Loop using TestFlight, they probably should reverse those steps to remove their credentials from Media & Purchase.
+
+Media & Purchase affects access to the App Store, Books, Music and Podcasts.
+
+On the Looper's phone:
+
+* Tap on Settings
+* At the very top of Settings, tap on the Name of the phone, for example, `my kids phone`
+* Apple ID Screen appears
+    * Tap on Media & Purchases
+    * Tap on Sign Out, and confirm
+    * Reboot the phone
+* After phone reboots, repeat the process and sign in with the adult (Apple Developer Account owner) Apple ID and password
+* Install or Update Loop from TestFlight on child's phone
+* Repeat the process to sign out the adult and (if needed) sign back in the child

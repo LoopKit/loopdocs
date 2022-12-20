@@ -7,6 +7,15 @@
 
     Hint: OS stands for Operating System
 
+!!! danger "New Method (Loop-dev ONLY):"
+
+    If you do not have a Mac, and you want to build [Loop-dev](build-select-dev.md), you can do this with any browser
+
+    - You need a paid ($99/year) [Apple Developer Account](step6.md)
+    - You need an account (free) with [github](https://github.com)
+    - You need a [compatible phone](step2.md) to install the app from TestFlight
+    - You need a [compatible Pump](step3.md) and [CGM](step4.md) if you want to actually Loop (and not just explore the app)
+
 !!! abstract "Summary"
     Your computer, iPhone and Xcode must have compatible versions to build Loop.
 
@@ -16,6 +25,7 @@
 
 
 !!! question "FAQs"
+    - **"Do I need a Mac or Virtual Machine?."** Yes if you are building the released version of Loop. The next version of [Loop (currently under development)](build-select-dev.md), can be built without a computer using github.
     - **"Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can. Please read this FAQ about using a [Virtual Machine](../faqs/FAQs.md#can-i-use-a-pc-or-windows-computer-to-build).
     - **"Can I borrow someone else's Apple computer?"** Please see this FAQ about [Borrowing a Computer](../faqs/FAQs.md#do-i-need-to-own-my-own-apple-computer).
     - **"How often do I need to use the computer?"** Computer access is required when

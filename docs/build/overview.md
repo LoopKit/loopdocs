@@ -4,7 +4,7 @@
 
 To Loop you need a:
 
-1. [Compatible Computer](../build/step1.md#macos)
+1. [Compatible Computer](../build/step1.md#macos) (see note below)
 1. [Compatible iPhone/iPod Touch](../build/step2.md)
 1. [Compatible Pump](../build/step3.md)
 1. [Compatible CGM](../build/step4.md)
@@ -13,6 +13,8 @@ To Loop you need a:
 1. [Xcode (a free Apple application)](../build/step8.md)
 
 If building to a [Simulator](../version/simulator.md) to try things out, the only requirements are a computer and Xcode.
+
+Note: If you are building Loop-dev (not released yet), you can build using a browser, you no longer need to own or use a compatible Mac computer.
 
 ## Getting Ready to Build
 
