@@ -1636,23 +1636,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#options" class="md-nav__link">
-    Options
-  </a>
-  
-    <nav class="md-nav" aria-label="Options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#build-to-a-simulated-iphone-on-a-computer" class="md-nav__link">
     Build to a Simulated iPhone on a Computer
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#build-to-a-real-iphone-and-use-a-simulated-pump-and-cgm" class="md-nav__link">
     Build to a Real iPhone and use a Simulated Pump and CGM
+  </a>
+  
+    <nav class="md-nav" aria-label="Build to a Real iPhone and use a Simulated Pump and CGM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-dev-only" class="md-nav__link">
+    Loop Dev ONLY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#released-loop" class="md-nav__link">
+    Released Loop
   </a>
   
 </li>
@@ -2055,23 +2062,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#options" class="md-nav__link">
-    Options
-  </a>
-  
-    <nav class="md-nav" aria-label="Options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#build-to-a-simulated-iphone-on-a-computer" class="md-nav__link">
     Build to a Simulated iPhone on a Computer
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#build-to-a-real-iphone-and-use-a-simulated-pump-and-cgm" class="md-nav__link">
     Build to a Real iPhone and use a Simulated Pump and CGM
+  </a>
+  
+    <nav class="md-nav" aria-label="Build to a Real iPhone and use a Simulated Pump and CGM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-dev-only" class="md-nav__link">
+    Loop Dev ONLY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#released-loop" class="md-nav__link">
+    Released Loop
   </a>
   
 </li>
@@ -2095,10 +2109,9 @@
                 
                 
                 <h1 id="simulator-build">Simulator Build<a class="headerlink" href="#simulator-build" title="Anchor link to this Header on this Page">&para;</a></h1>
-<h2 id="options">Options<a class="headerlink" href="#options" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are 2 main types of simulators users may want to build. Each of these require less up-front acquisition of hardware and may be desirable as a first step towards becoming a Looper.</p>
 <p>Please, review all the Build pages, even if you will be skipping some.</p>
-<h3 id="build-to-a-simulated-iphone-on-a-computer">Build to a Simulated iPhone on a Computer<a class="headerlink" href="#build-to-a-simulated-iphone-on-a-computer" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h2 id="build-to-a-simulated-iphone-on-a-computer">Build to a Simulated iPhone on a Computer<a class="headerlink" href="#build-to-a-simulated-iphone-on-a-computer" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ul>
 <li>Need access to a mac or virtual computer, see <a href="../../build/step1/">Compatible Computer</a></li>
 <li>Build pages you can skip<ul>
@@ -2118,7 +2131,19 @@
 </li>
 <li>Use the simulated iPhone on the computer and <a href="../../operation/overview/">set up the app</a> as desired</li>
 </ul>
-<h3 id="build-to-a-real-iphone-and-use-a-simulated-pump-and-cgm">Build to a Real iPhone and use a Simulated Pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#build-to-a-real-iphone-and-use-a-simulated-pump-and-cgm" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h2 id="build-to-a-real-iphone-and-use-a-simulated-pump-and-cgm">Build to a Real iPhone and use a Simulated Pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#build-to-a-real-iphone-and-use-a-simulated-pump-and-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="loop-dev-only">Loop Dev ONLY<a class="headerlink" href="#loop-dev-only" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Loop dev (which will be the next released version of Loop) can be built with the same prerequisites as <a href="#released-loop">Released Loop</a>.</p>
+<p>Loop dev can also be built without using a Mac computer using Github Actions. If you choose this method to build and evaluate the app, it has slightly different prerequisites.</p>
+<ul>
+<li>Need access to an iPhone or iPod, see <a href="../../build/step2/">Compatible iPhone/iPod</a></li>
+<li>Paid Apple Developer Account ($99/year), see <a href="../../build/step6/">Enroll in Apple Developer Program</a></li>
+<li>Follow these instructions instead of the Build Directions in LoopDocs<ul>
+<li><a href="../../build/build-select-dev/#build-loop-dev-using-github-actions">Build Loop dev using Github Actions</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="released-loop">Released Loop<a class="headerlink" href="#released-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>Need access to a mac or virtual computer, see <a href="../../build/step1/">Compatible Computer</a></li>
 <li>Need access to an iPhone or iPod, see <a href="../../build/step2/">Compatible iPhone/iPod</a></li>
