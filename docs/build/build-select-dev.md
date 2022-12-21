@@ -196,3 +196,34 @@ On the Looper's phone:
 * After phone reboots, repeat the process and sign in with the adult (Apple Developer Account owner) Apple ID and password
 * Install or Update Loop from TestFlight on child's phone
 * Repeat the process to sign out the adult and (if needed) sign back in the child
+
+
+### Update Loop with Github Build Actions
+
+Once you have built Loop one time with github Build Actions, updates are fast and easy.
+
+1. Sign in to Github and select your LoopWorkspace repository from your repositories list
+1. Look to see if your fork is up to date
+    * If your fork is up to date you will see the message `This branch is up to date with LoopKit/LoopWorkspace:dev` - there is no need to build again - the resultant app will be identical
+    * If your fork shows a message such as `This branch is 3 commits behind LoopKit:dev` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch`
+
+    ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
+    {align="center"}
+
+1. Once the sync is complete, it is time to build - refer to graphic below as you follow the steps
+    * Click on the 'Actions' tab
+    * Select the 'Build Loop' workflow and then click on 'run workflow' 
+    * Wait ~25-45 min for the build to complete
+
+    ![graphic indicating how to build again](img/github-build-actions-build-again.svg){width="700"}
+    {align="center"}
+
+
+1. You'll receive an App Store Connect email confirming that the build has completed processing, and a TestFlight email confirming the (now updated) app is ready to test.
+    * If those emails do not appear, then return to your repositories and look for Build Action error messages
+1. The updated Loop app will automatically be pushed to and shown in your Test Flight app, so all you need to do is...
+    * Open TestFlight on your phone and click 'install.'
+
+    ![graphic indicating how to install app in TestFlight](img/testflight-app-install.svg){width="500"}
+    {align="center"}
+
