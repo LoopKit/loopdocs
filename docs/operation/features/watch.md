@@ -5,9 +5,9 @@ The Loop user can directly enter carbs and boluses and turn on or off premeal or
 ![img/watch.png](../../img/watch_updated_loop.svg){width="300"}
 {align="center"}
 
-There are two displays in the Loop watch app. By swiping left or right, the other display is visible.
+There are two screens in the Loop watch app. By swiping left or right, the other screen is displayed.
 
-The display in the left side of graphic above shows Loop status, current BG, arrow, eventual BG (can be turned on and off as a feature in Loop 3), carb tool, bolus tool, premeal icon and override icon. If necessary, use the crown (or swipe up and down) to see the full display.
+The screen in the left side of graphic above shows Loop status, current BG, arrow, eventual BG (can be turned on and off as a feature in Loop 3), carb tool, bolus tool, premeal icon and override icon. If necessary, use the crown (or swipe up and down) to see the full display.
 
 After tapping on the carb or bolus tools, you can adjust the entries using the crown to dial in more/less.
 
