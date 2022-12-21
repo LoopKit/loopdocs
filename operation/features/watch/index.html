@@ -1081,9 +1081,56 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Apple Watch
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Apple Watch
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#watch-hardware-and-os-requirements" class="md-nav__link">
+    Watch Hardware and OS Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="Watch Hardware and OS Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#watchos-8-compatibility" class="md-nav__link">
+    watchOS 8 compatibility:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1994,6 +2041,34 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#watch-hardware-and-os-requirements" class="md-nav__link">
+    Watch Hardware and OS Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="Watch Hardware and OS Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#watchos-8-compatibility" class="md-nav__link">
+    watchOS 8 compatibility:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2006,12 +2081,34 @@
                 
                 
                 <h1 id="apple-watch">Apple Watch<a class="headerlink" href="#apple-watch" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p align="center"><img alt="img/watch.png" src="../img/watch.png" width="150" /></p>
-<p>If you add an Apple Watch after building Loop, you will need to pair your watch to your iPhone and then rebuild Loop to enable the Loop watch app to show up as an available watch app.</p>
-<p>Loop is currently supported with all released versions of the Apple Watch and Apple <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 4.1 and newer.  The cool factor is increased since the Loop user can directly enter carbs and boluses straight from the watch, without needing to access the iPhone.  The Loop watch app shows the Loop status, current BG, eventual BG, carb tool, and bolus tool.</p>
-<p>By tapping on the carb or bolus tools, you can adjust the entries using the crown to dial in more/less.  You can manually scroll to change the desired bolus amount, if you want to decrease/increase from recommended amount.  </p>
-<p>If you swipe the Apple Watch Loop screen from right-to-left, a second screen is available.  This second screen displays a graph of recent BG and predicted BG data.  The crown can be turned to display <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> and <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> as well.</p>
-<p>A loop complication exists to show BG on the watch face but the update rate is limited to ~30mins due to limitations imposed by Apple to increase battery life. If constant, real-time monitoring is desired, you should use the Loop app as the main screen. This can be achieved by setting the watch to always show the last opened app on wake. Loop will always have to be the last app opened for this to work.  (Note: recent <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> seems to be a bit flakey on actually bringing up the last app used, and instead often defaults to the user's watch face instead.  If you have a Loop complication installed in the watch face, you can simply tap the complication to open Loop's watch app.)</p>
+<p>The Loop user can directly enter carbs and boluses and turn on or off premeal or override settings from the watch, without needing to access the iPhone.</p>
+<p align="center"><img alt="img/watch.png" src="../../../img/watch_updated_loop.svg" width="300" /></p>
+<p>There are two screens in the Loop watch app. By swiping left or right, the other screen is displayed.</p>
+<p>The screen in the left side of graphic above shows Loop status, current BG, arrow, eventual BG (can be turned on and off as a feature in <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>), carb tool, bolus tool, premeal icon and override icon. If necessary, use the crown (or swipe up and down) to see the full display.</p>
+<p>After tapping on the carb or bolus tools, you can adjust the entries using the crown to dial in more/less.</p>
+<ul>
+<li>The carb tool allows you to choose the amount, absorption time using the standard icons and adjust the time the carbs are planned to be consumed. After tapping continue on the carb screen, the meal bolus screen is displayed - carbs are only saved after selecting Save or Save and Bolus on the meal bolus screen.</li>
+<li>The bolus tool displays the recommended bolus. If you want to decrease/increase from the recommended amount, use the digital crown or tap on +/- icons to modify.</li>
+<li>Once the bolus button is tapped, the bolus command is only delivered after the user turns the digital crown (as directed) to align the two triangles.</li>
+<li>If you tap Save and Bolus on the bolus screen when entered from the carb screen AND then fail to turn the digital crown to confirm the bolus, that means the bolus was not delivered but the carbs were saved.</li>
+</ul>
+<p>If you swipe the Apple Watch Loop screen from right-to-left, a second screen, as displayed on the right side of the graphic above, is available.  This second screen displays a graph of recent BG and predicted BG data.  The crown can be turned to display <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>, <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr>, Net Basal Rate (with respect to scheduled rate) and in some cases Reservoir Units.  (A recently changed pod may show the reservoir level from the prior pod - just ignore that. It goes away within 24 hours.)</p>
+<p>A loop complication exists to show BG on the watch face but the update rate is limited by Apple. If you have a Loop complication installed in the watch face, you can simply tap the complication to open Loop's watch app.</p>
+<h2 id="watch-hardware-and-os-requirements">Watch Hardware and OS Requirements<a class="headerlink" href="#watch-hardware-and-os-requirements" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you add an Apple Watch after building Loop using <abbr title="program used to build an app">Xcode</abbr> on a computer, you will need to pair your watch to your iPhone and then rebuild Loop to enable the Loop watch app to show up as an available watch app.</p>
+<p>Loop is currently supported with all released versions of the Apple Watch and Apple <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 4.1 and newer.</p>
+<p>The next version of Loop, currently Loop-dev, will require newer versions of the watch and require <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 8 as a minimum.</p>
+<h3 id="watchos-8-compatibility"><abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 8 compatibility:<a class="headerlink" href="#watchos-8-compatibility" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 8 requires iPhone 6s or later with <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 or later and one of the following Apple Watch models:</p>
+<ul>
+<li>Apple Watch Series 3.</li>
+<li>Apple Watch Series 4.</li>
+<li>Apple Watch Series 5.</li>
+<li>Apple Watch SE.</li>
+<li>Apple Watch Series 6.</li>
+<li>Apple Watch Series 7.</li>
+<li>Not all features are available on all devices.</li>
+</ul>
                 
               
               
