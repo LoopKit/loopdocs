@@ -14,7 +14,7 @@
     
     
       
-        <title>Retrofit Existing NS - LoopDocs</title>
+        <title>Nightscout with Loop - LoopDocs</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adding-loop-to-existing-ns" class="md-skip">
+        <a href="#adding-loop-to-existing-nightscout-site" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Retrofit Existing NS
+              Nightscout with Loop
             
           </span>
         </div>
@@ -1626,7 +1626,7 @@
   
     <li class="md-nav__item">
       <a href="../../build/build-select-dev/" class="md-nav__link">
-        Build Dev
+        Build Loop Dev
       </a>
     </li>
   
@@ -1704,7 +1704,7 @@
   
     <li class="md-nav__item">
       <a href="../new_user/" class="md-nav__link">
-        Brand New NS
+        New Nightscout
       </a>
     </li>
   
@@ -1723,16 +1723,14 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Retrofit Existing NS
+          Nightscout with Loop
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Retrofit Existing NS
+        Nightscout with Loop
       </a>
       
         
@@ -1744,14 +1742,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-loop-to-existing-nightscout-site" class="md-nav__link">
+    Adding Loop to Existing Nightscout Site
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#variables-for-loopers" class="md-nav__link">
@@ -1788,6 +1791,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#more-variables-for-loopers" class="md-nav__link">
+    More Variables for Loopers
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1804,7 +1814,7 @@
   
     <li class="md-nav__item">
       <a href="../troublehoot/" class="md-nav__link">
-        Setup Troubleshooting
+        Nightscout Troubleshooting
       </a>
     </li>
   
@@ -1818,7 +1828,7 @@
   
     <li class="md-nav__item">
       <a href="../remote-overrides/" class="md-nav__link">
-        Remote Overrides
+        Remote Commands
       </a>
     </li>
   
@@ -2053,14 +2063,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-loop-to-existing-nightscout-site" class="md-nav__link">
+    Adding Loop to Existing Nightscout Site
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#variables-for-loopers" class="md-nav__link">
@@ -2097,6 +2112,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#more-variables-for-loopers" class="md-nav__link">
+    More Variables for Loopers
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2110,8 +2132,11 @@
               
                 
                 
-                <h1 id="adding-loop-to-existing-ns">Adding Loop to Existing NS<a class="headerlink" href="#adding-loop-to-existing-ns" title="Anchor link to this Header on this Page">&para;</a></h1>
+                  <h1>Nightscout with Loop</h1>
+                
+                <h2 id="adding-loop-to-existing-nightscout-site">Adding Loop to Existing Nightscout Site<a class="headerlink" href="#adding-loop-to-existing-nightscout-site" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Many people may already have an existing Nightscout site setup from before adding Loop to their management strategies. In order to make the most of your Looping setup, you will need to modify your existing Nightscout site a bit specifically for Loop. The process is pretty easy and should not take long.</p>
+<p>The graphics on this page are from a Heroku implementation for DIY Nightscout. When you read the Nightscout documents, you'll notice there are a lot more options than just Heroku. When Heroku announced that the "free" tier for Heroku would be disabled in November 2022, the #WeAreNotWaiting community developed a lot of options - both free DIY, nominal cost DIY and there were already several companies that provide Nightscout as a service. If your site is not with Heroku, you need to translate how to adjust the configuration variables.</p>
 <h2 id="variables-for-loopers">Variables for Loopers<a class="headerlink" href="#variables-for-loopers" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Once you have created a Nightscout site, there are some Nightscout <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> specific to Loop.</p>
 <ul>
@@ -2127,6 +2152,7 @@
 <p><a href="https://id.heroku.com/login">Login to your Heroku account</a>, select the <code>Settings</code> tab near the top of the screen on your Heroku app.</p>
 <p align="center"><img alt="img/heroku5.png" src="../img/heroku5.png" width="600" /></p>
 <p>Click on <code>Reveal Config Vars</code>.  Scroll down the bottom of the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> lines until you find the last blank one.  You are going to add several additional lines of config vars for Loop use; the DEVICESTATUS_ADVANCED and ENABLE lines are required, the others just make Nightscout more useful when Looping.</p>
+<p><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Users can skip the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> that begin with <code>PUMP_</code>. Those are useful for Medtronic users.</p>
 <p align="center"><img alt="img/add_vars.jpg" src="../img/add_vars.jpg" width="600" /></p>
 <table>
 <thead>
@@ -2242,7 +2268,10 @@
 </ul>
 <p>An authenticated site, with careportal plugin enabled, will show a &plus; at upper right of the main display instead of a lock symbol. Tapping on the &plus; gives you access to the careportal.</p>
 <h2 id="nightscout-version-update">Nightscout Version Update<a class="headerlink" href="#nightscout-version-update" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you are new to Loop and haven’t updated your Nightscout site for a while, check to see if there's an available update. Visit <a href="https://nightscout.github.io/update/update/">The Nightscout Update Instructions</a> for directions on updating.</p>
+<p>If you are new to Loop and haven’t updated your Nightscout site for a while, check to see if there's an available update. Visit <a href="https://nightscout.github.io/update/update/">Nightscout: Update Instructions</a> for directions on updating.</p>
+<h2 id="more-variables-for-loopers">More Variables for Loopers<a class="headerlink" href="#more-variables-for-loopers" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The list of <a href="#variables-for-loopers">Variables for Loopers</a> above can be expanded if you want your site to automatically open with specific values and alarm settings.</p>
+<p>This <a href="https://www.loopandlearn.org/nightscout-variables/">Loop and Learn: Nightscout Variables</a> page, created for folks using the Google Cloud method to create a Nightscout site, has a convenient, expanded list.</p>
                 
               
               
@@ -2267,7 +2296,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../new_user/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Brand New NS" rel="prev">
+        <a href="../new_user/" class="md-footer__link md-footer__link--prev" aria-label="Previous: New Nightscout" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2276,20 +2305,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Brand New NS
+              New Nightscout
             </div>
           </div>
         </a>
       
       
         
-        <a href="../troublehoot/" class="md-footer__link md-footer__link--next" aria-label="Next: Setup Troubleshooting" rel="next">
+        <a href="../troublehoot/" class="md-footer__link md-footer__link--next" aria-label="Next: Nightscout Troubleshooting" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Setup Troubleshooting
+              Nightscout Troubleshooting
             </div>
           </div>
           <div class="md-footer__button md-icon">

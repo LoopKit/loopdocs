@@ -14,7 +14,7 @@
     
     
       
-        <title>Remote Overrides - LoopDocs</title>
+        <title>Remote Commands - LoopDocs</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#set-up-remote-overrides" class="md-skip">
+        <a href="#set-up-remote-for-nightscout" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Remote Overrides
+              Remote Commands
             
           </span>
         </div>
@@ -1626,7 +1626,7 @@
   
     <li class="md-nav__item">
       <a href="../../build/build-select-dev/" class="md-nav__link">
-        Build Dev
+        Build Loop Dev
       </a>
     </li>
   
@@ -1704,7 +1704,7 @@
   
     <li class="md-nav__item">
       <a href="../new_user/" class="md-nav__link">
-        Brand New NS
+        New Nightscout
       </a>
     </li>
   
@@ -1718,7 +1718,7 @@
   
     <li class="md-nav__item">
       <a href="../update_user/" class="md-nav__link">
-        Retrofit Existing NS
+        Nightscout with Loop
       </a>
     </li>
   
@@ -1732,7 +1732,7 @@
   
     <li class="md-nav__item">
       <a href="../troublehoot/" class="md-nav__link">
-        Setup Troubleshooting
+        Nightscout Troubleshooting
       </a>
     </li>
   
@@ -1751,16 +1751,14 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Remote Overrides
+          Remote Commands
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Remote Overrides
+        Remote Commands
       </a>
       
         
@@ -1772,14 +1770,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-up-remote-for-nightscout" class="md-nav__link">
+    Set Up Remote for Nightscout
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#step-1-update-the-loopers-iphone-settings" class="md-nav__link">
@@ -1796,25 +1799,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-update-nightscout-site" class="md-nav__link">
-    Step 3: Update Nightscout site
+  <a href="#step-3-add-apn-to-nightscout" class="md-nav__link">
+    Step 3: Add APN to Nightscout
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Add APN to Nightscout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-nightscout-site" class="md-nav__link">
+    Update Nightscout Site
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-apn-variables-to-nightscout" class="md-nav__link">
+    Add APN Variables to Nightscout
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faqs-on-remote-overrides" class="md-nav__link">
+    FAQs on Remote Overrides
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-faqs-on-remote-overrides" class="md-nav__link">
-    Step 4: FAQs on Remote Overrides
+  <a href="#using-remote-commands" class="md-nav__link">
+    Using Remote Commands
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-using-remote-overrides" class="md-nav__link">
-    Step 5: Using Remote Overrides
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 5: Using Remote Overrides">
+    <nav class="md-nav" aria-label="Using Remote Commands">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1844,15 +1867,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-6-known-issues" class="md-nav__link">
-    Step 6: Known Issues
+  <a href="#known-issues" class="md-nav__link">
+    Known Issues
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-7-common-errors" class="md-nav__link">
-    Step 7: Common Errors
+  <a href="#common-errors" class="md-nav__link">
+    Common Errors
   </a>
   
 </li>
@@ -2094,14 +2117,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-up-remote-for-nightscout" class="md-nav__link">
+    Set Up Remote for Nightscout
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#step-1-update-the-loopers-iphone-settings" class="md-nav__link">
@@ -2118,25 +2146,45 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-update-nightscout-site" class="md-nav__link">
-    Step 3: Update Nightscout site
+  <a href="#step-3-add-apn-to-nightscout" class="md-nav__link">
+    Step 3: Add APN to Nightscout
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Add APN to Nightscout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-nightscout-site" class="md-nav__link">
+    Update Nightscout Site
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-apn-variables-to-nightscout" class="md-nav__link">
+    Add APN Variables to Nightscout
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faqs-on-remote-overrides" class="md-nav__link">
+    FAQs on Remote Overrides
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-faqs-on-remote-overrides" class="md-nav__link">
-    Step 4: FAQs on Remote Overrides
+  <a href="#using-remote-commands" class="md-nav__link">
+    Using Remote Commands
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-using-remote-overrides" class="md-nav__link">
-    Step 5: Using Remote Overrides
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 5: Using Remote Overrides">
+    <nav class="md-nav" aria-label="Using Remote Commands">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2166,15 +2214,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-6-known-issues" class="md-nav__link">
-    Step 6: Known Issues
+  <a href="#known-issues" class="md-nav__link">
+    Known Issues
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-7-common-errors" class="md-nav__link">
-    Step 7: Common Errors
+  <a href="#common-errors" class="md-nav__link">
+    Common Errors
   </a>
   
 </li>
@@ -2192,16 +2240,22 @@
               
                 
                 
-                <h1 id="set-up-remote-overrides">Set Up Remote Overrides<a class="headerlink" href="#set-up-remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>You can now use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop.</p>
+                  <h1>Remote Commands</h1>
+                
+                <h2 id="set-up-remote-for-nightscout">Set Up Remote for Nightscout<a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You can use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop. </p>
+<p>If you are using Loop-dev, then you can also send remote commands to add carbs and command a bolus.</p>
 <div class="admonition warning">
-<p class="admonition-title">Remote Overrides Caveats</p>
+<p class="admonition-title">Remote Nightscout Interface Caveats</p>
 <ul>
 <li>Requires push notification - only available if you built your Loop app using a paid Apple developer account</li>
+<li>Should work (but has not been tested by LoopDocs authors) with all but one method for setting up Nightscout</li>
 <li>If you use T1Pal Nightscout account service (<a href="https://t1pal.com">T1Pal</a>)<ul>
-<li>Check with the vendor to see which remote features are supported</li>
+<li>You cannot enter your push notification information for Loop that you build yourself</li>
+<li>You can choose another Nightscout option or use their service for Loop at an additional fee</li>
 </ul>
 </li>
+<li>It is strongly recommended that you build Loop yourself</li>
 </ul>
 </div>
 <div class="admonition abstract">
@@ -2226,13 +2280,18 @@
 <li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 or newer</li>
 <li>Nightscout version 14.0 or newer</li>
 </ul>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Thinking ahead</p>
-<p>LoopCaregiver, an app that is under development, will only work on <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16.</p>
+<p>Not required and still under development, but users who are testing this separate app are pleased</p>
+<ul>
+<li>LoopCaregiver app (<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 or higher) enables the following from the caregiver's phone<ul>
+<li>monitor Loop</li>
+<li>issue remote commands for carbs, bolus and overrides</li>
+</ul>
+</li>
+</ul>
+<p>The expanded capabilities for remote commands in Loop-dev are currently documented in this <a href="https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM">Remote Carb/Bolus Guide</a>. That information will be incorporated into LoopDocs soon.</p>
 </div>
 <h2 id="step-1-update-the-loopers-iphone-settings">Step 1: Update the Looper's iPhone settings<a class="headerlink" href="#step-1-update-the-loopers-iphone-settings" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>For remote overrides to successfully deploy on a Looper's iPhone, they will need to have two settings on the iPhone enabled.</p>
+<p>For remote commands to successfully deploy to a Looper's iPhone, they will need to have two settings on the iPhone enabled.</p>
 <ol>
 <li>The slider in iPhone -&gt; Settings -&gt; Loop -&gt; Notifications needs to be turned to Allow Notifications</li>
 <li>The slider in iPhone -&gt; Settings -&gt; General -&gt; Background App Refresh -&gt; Loop must be enabled</li>
@@ -2270,9 +2329,14 @@
 <li>When the file opens, it will look similar to the screenshot below. In a few minutes, after we do a few other steps first, we will need to highlight <strong>ALL OF THE CONTENTS</strong> of that file and copy it because we will be pasting it in Heroku. Yes, allllll of the contents. So, easiest way is to click inside that file and then press <code>command-a</code> to highlight all the text and then <code>command-c</code> to copy it all to the clipboard. You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.</li>
 </ol>
 <p><img alt="img/apns-copy-key.png" src="../img/apns-copy-key.png" /></p>
-<h2 id="step-3-update-nightscout-site">Step 3: Update Nightscout site<a class="headerlink" href="#step-3-update-nightscout-site" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You'll need to make sure your Nightscout site version is at version 13.0.1 or newer.  (It's a good idea to keep Nightscout updated to the latest version; but that version is sufficient for remote overrides). You can check your version number by looking at the bottom of your NS site's settings (tap on the hamburger menu - three horizontal lines at the upper right), near where the authentication button is located. This link should be used if you want to <a href="https://nightscout.github.io/update/update/">update your Nightscout site.</a></p>
-<p>In order to use remote overrides, you must add a couple of new variables. If you don't know how to update your Nightscout Configuration, review this <a href="https://nightscout.github.io/nightscout/setup_variables/">link</a> and then come back. The instructions be</p>
+<h2 id="step-3-add-apn-to-nightscout">Step 3: Add APN to Nightscout<a class="headerlink" href="#step-3-add-apn-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="update-nightscout-site">Update Nightscout Site<a class="headerlink" href="#update-nightscout-site" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You'll need to make sure your Nightscout site version is at version 13.0.1 or newer for remote overrides and version 14.0 or newer for all remote commands.  (It's a good idea to keep Nightscout updated to the latest version; but those versions are sufficient for remote overrides or remote carb, bolus and overrides). You can check your version number by looking at the bottom of your NS site's settings (tap on the hamburger menu - three horizontal lines at the upper right), near where the authentication button is located. </p>
+<p>This link should be used if you want to <a href="https://nightscout.github.io/update/update/">Nightscout: Update</a> your Nightscout site. </p>
+<p>Note - for Google Cloud users, the original <a href="https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html">Xdrip: Google Cloud Nightscout</a> instructions include information about updating your site. Scroll down to the line (on that page) that says <code>Update Nightscout</code>.</p>
+<h3 id="add-apn-variables-to-nightscout">Add APN Variables to Nightscout<a class="headerlink" href="#add-apn-variables-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>In order to use remote overrides, you must add a couple of new variables. If you don't know how to update your Nightscout Configuration, review <a href="https://nightscout.github.io/nightscout/setup_variables/">Nightscout: Setup Variables</a> and then come back.</p>
+<p>The instructions in this section show Heroku images. If you are using a different method, you should be able to "translate" the steps.</p>
 <p>Go to the <code>Settings</code> tab near the top of the screen on your Heroku app and then click on <code>Reveal Config Vars</code>.  </p>
 <p align="center"><img alt="img/heroku5.png" src="../img/heroku5.png" width="650" /></p>
 <p>Scroll down the bottom of the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> lines until you find the last blank one.  You are going to add three new rows of config vars for remote overrides as shown below:</p>
@@ -2305,8 +2369,8 @@
 </table>
 <p>When executed properly, you should have something that looks like this for your three new variables that you added:</p>
 <p><img alt="img/override_vars_complete.png" src="../img/override_vars_complete.png" /></p>
-<h2 id="step-4-faqs-on-remote-overrides">Step 4: FAQs on Remote Overrides<a class="headerlink" href="#step-4-faqs-on-remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Don't forget to read <a href="../../operation/features/workout/">Loopdocs page about how regular overrides work</a>. For remote overrides in particular:</p>
+<h2 id="faqs-on-remote-overrides">FAQs on Remote Overrides<a class="headerlink" href="#faqs-on-remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Don't forget to read <a href="../../operation/features/workout/">Loopdocs: Overrides</a>. For remote overrides in particular:</p>
 <ol>
 <li>
 <p><strong>Can I set different override in Nighscout than I have programmed into Loop app?</strong> Answer: No. You will only be able to enact override presets already programmed into the Loop app.</p>
@@ -2336,12 +2400,12 @@
 <p><strong>Can I schedule a remote override ahead of time using Nightscout?</strong> No. When you set a remote override in Nightscout, it will begin immediately and last for whatever duration is programmed for that override in the Loop app. You can set an override for ahead of time using the Looping App only.</p>
 </li>
 </ol>
-<h2 id="step-5-using-remote-overrides">Step 5: Using Remote Overrides<a class="headerlink" href="#step-5-using-remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There are three ways you can trigger your override presets remotely; careportal, Shortcuts, and IFTTT.</p>
+<h2 id="using-remote-commands">Using Remote Commands<a class="headerlink" href="#using-remote-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There are three ways you can trigger your commands remotely; careportal, Shortcuts, and IFTTT.</p>
 <h3 id="careportal">Careportal<a class="headerlink" href="#careportal" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>To use remote overrides, I'm assuming you've setup your Nightscout site according to the directions <a href="../update_user/">here</a> in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your <a href="../update_user/#authenticate-site">site authenticated</a> so that your careportal is active to send remote overrides. Once authenticated by entering your <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>, then there will be a &plus; in the upper right corner of your site. That is your careportal. Tap the careportal &plus; and then scroll down in the "event type" menu to find "Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>". Within there, you will find all your Loop override presets already loaded for you.</p>
+<p>To use remote commands, I'm assuming you've setup your Nightscout site according to the directions <a href="../update_user/">here</a> in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your <a href="../update_user/#authenticate-site">site authenticated</a> so that your careportal is active to send remote overrides. Once authenticated by entering your <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>, then there will be a &plus; in the upper right corner of your site. That is your careportal. Tap the careportal &plus; and then scroll down in the "event type" menu to find "Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>". Within there, you will find all your Loop override presets already loaded for you.</p>
 <p><img alt="img/careportal-overrides.PNG" src="../img/careportal-overrides.PNG" /></p>
-<p>The Looper will see a banner notification that an override has been set (or canceled, as the case may be).</p>
+<p>The Looper will see a banner notification that an remote command has been sent with details about that command and whether it succeeded (or not).</p>
 <p><img alt="img/override_notification.jpg" src="../img/override_notification.jpg" /></p>
 <p>Canceling an override through Nightscout careportal is as simple as selecting the event type "Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Cancel" and submitting.</p>
 <h3 id="shortcuts">Shortcuts<a class="headerlink" href="#shortcuts" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2358,7 +2422,10 @@
 <p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Cancel Override.shortcut">Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
 <p><strong>A couple notes about these shortcuts:</strong></p>
 <ol>
-<li>You will need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13, but your phone as the shortcut user would need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13.</li>
+<li>You will need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13, but your phone as the shortcut user would need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13.<ul>
+<li>For Loop-dev, the minimum <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> is <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.</li>
+</ul>
+</li>
 <li>You need to open those links in the Safari browser on your iPhone. A confirmation will show to initiate the download. After the download finishes, tap the button marked "AA" near your Safari address bar and tap "Downloads" to find and open the downloaded Shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.</li>
 <li>When you enter your Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> in the "<abbr title="website address (Uniform Resource Locator)">URL</abbr>" field of the Loop shortcut setup, make sure you don't include a trailing "/" or the API calls to Heroku will error out.</li>
 <li>When a remote override is set properly, you'll see an "ok" message displayed. If there is an error, you'll see an error message. Most errors will be that you have an <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> wrong (make sure there isn't a space at the end of you <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> that you don't see) or you failed to do the steps to setup NS and update your Loop app as described in steps 1-3 above.</li>
@@ -2366,13 +2433,13 @@
 </ol>
 <h3 id="ifttt">IFTTT<a class="headerlink" href="#ifttt" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by <a href="../ns_crossref/#IFTTT">setting up IFTTT</a>, too.</p>
-<h2 id="step-6-known-issues">Step 6: Known Issues<a class="headerlink" href="#step-6-known-issues" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="known-issues">Known Issues<a class="headerlink" href="#known-issues" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Just a brief mention so you are aware:</p>
 <ol>
 <li>The override <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> will display information about what override is currently active in the Looper's phone. BUT, there can be a slight delay as that information is only transmitted every 5 minutes at best (it is tied to Loop runs and Nightscout upload events in Loop). So, wait 5 minutes to see that the information has gone through a refresh cycle before assuming the override message failed to enact.</li>
 <li>When you add a new override preset in Loop, that preset has to be uploaded to Nightscout before it will be available as a remote override. To trigger that upload, you can simply enact that new override for a few seconds and turn it off again. that will get the Nightscout upload going.</li>
 </ol>
-<h2 id="step-7-common-errors">Step 7: Common Errors<a class="headerlink" href="#step-7-common-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="common-errors">Common Errors<a class="headerlink" href="#common-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Once you've set up remote overrides, you may encounter errors when trying to run them via Nightscout or <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  Below are the most common and the typical solutions.</p>
 <ol>
 <li><strong>Error: Loop notification failed: Could not find deviceToken in loopSettings</strong> You might see this in either Nightscout or Shortcuts.  The error is most commonly caused by Loop not pointing to the right Nightscout instance or you haven't yet run an override locally (with the Loop app) before trying to run one remotely.  <strong>Solution:</strong> confirm the Loop app is pointing to the right Nightscout site (and there are not extra spaces or a slash (/) at the end, and always run an override for a few seconds in the Loop app before you try to run one remotely.</li>
@@ -2404,7 +2471,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../troublehoot/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup Troubleshooting" rel="prev">
+        <a href="../troublehoot/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Nightscout Troubleshooting" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2413,7 +2480,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Setup Troubleshooting
+              Nightscout Troubleshooting
             </div>
           </div>
         </a>

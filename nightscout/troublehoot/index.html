@@ -14,7 +14,7 @@
     
     
       
-        <title>Setup Troubleshooting - LoopDocs</title>
+        <title>Nightscout Troubleshooting - LoopDocs</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Setup Troubleshooting
+              Nightscout Troubleshooting
             
           </span>
         </div>
@@ -1626,7 +1626,7 @@
   
     <li class="md-nav__item">
       <a href="../../build/build-select-dev/" class="md-nav__link">
-        Build Dev
+        Build Loop Dev
       </a>
     </li>
   
@@ -1704,7 +1704,7 @@
   
     <li class="md-nav__item">
       <a href="../new_user/" class="md-nav__link">
-        Brand New NS
+        New Nightscout
       </a>
     </li>
   
@@ -1718,7 +1718,7 @@
   
     <li class="md-nav__item">
       <a href="../update_user/" class="md-nav__link">
-        Retrofit Existing NS
+        Nightscout with Loop
       </a>
     </li>
   
@@ -1737,16 +1737,14 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Setup Troubleshooting
+          Nightscout Troubleshooting
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Setup Troubleshooting
+        Nightscout Troubleshooting
       </a>
       
         
@@ -1758,14 +1756,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup-troubleshooting" class="md-nav__link">
+    Setup Troubleshooting
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#dexcom-data-not-showing" class="md-nav__link">
@@ -1797,7 +1800,7 @@
   
     <li class="md-nav__item">
       <a href="../remote-overrides/" class="md-nav__link">
-        Remote Overrides
+        Remote Commands
       </a>
     </li>
   
@@ -2032,14 +2035,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup-troubleshooting" class="md-nav__link">
+    Setup Troubleshooting
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#dexcom-data-not-showing" class="md-nav__link">
@@ -2068,11 +2076,14 @@
               
                 
                 
-                <h1 id="setup-troubleshooting">Setup Troubleshooting<a class="headerlink" href="#setup-troubleshooting" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>If you have just tried to set up your Nightscout site and have problems with seeing all your data, please check out the <a href="https://nightscout.github.io/troubleshoot/troublehoot">Nightscout General Troubleshooting pages</a>.</p>
+                  <h1>Nightscout Troubleshooting</h1>
+                
+                <h2 id="setup-troubleshooting">Setup Troubleshooting<a class="headerlink" href="#setup-troubleshooting" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you have just tried to set up your Nightscout site and have problems with seeing all your data, please check out the <a href="https://nightscout.github.io/troubleshoot/troubleshoot">Nightscout: Troubleshooting</a>  page.</p>
 <h2 id="dexcom-data-not-showing">Dexcom data not showing<a class="headerlink" href="#dexcom-data-not-showing" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you use a Dexcom and everything was working but the Dexcom data stops showing, please review the <a href="https://nightscout.github.io/troubleshoot/troublehoot/#no-data-in-nightscout">Nightscout: No Data in NS Troubleshooting section</a>.</p>
-<p>As part of that troubleshooting, you may need to remove the Nightscout service credentials from Loop.  You may need to remove Dexcom credential from all third-party apps that get data from Dexcom Share.  Be sure to add them back after the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data to Nightscout is restored.</p>
+<p>If you use a Dexcom and get your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data into Nightscout using Dexcom Share (bridge in Nightscout) and everything was working but the Dexcom data stops showing, please review <a href="https://nightscout.github.io/troubleshoot/dexcom_bridge/">Nightscout: Dexcom bridge Troubleshooting</a>.</p>
+<p>As part of that troubleshooting, you may need to remove the Nightscout service credentials from Loop. You may need to remove Dexcom credential from all third-party apps that get data from Dexcom Share. Be sure to add them back after the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data to Nightscout is restored.</p>
+<p>You do not need to use Share or bridge with Nightscout. You can choose to have Loop update your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings to Nightscout directly. There's a check box in the Loop <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> setting screen to select this. You must select that check box every time you update your transmitter for Dexcom G5 or G6.</p>
 <h2 id="loop-data-not-showing">Loop data not showing<a class="headerlink" href="#loop-data-not-showing" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If your BG data is showing, but Loop data is not (like Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> is empty and carbs and boluses are not showing), please delete your Nightscout account in Loop settings area. Enter the information in Loop again. Make sure to use <code>https://</code> to start the site <abbr title="website address (Uniform Resource Locator)">URL</abbr>. Make sure there is no trailing slash at the end of the <abbr title="website address (Uniform Resource Locator)">URL</abbr>. Enter your <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> correctly. Make sure you have <code>loop</code> on the ENABLE line in Heroku settings.</p>
                 
@@ -2099,7 +2110,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../update_user/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Retrofit Existing NS" rel="prev">
+        <a href="../update_user/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Nightscout with Loop" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2108,20 +2119,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Retrofit Existing NS
+              Nightscout with Loop
             </div>
           </div>
         </a>
       
       
         
-        <a href="../remote-overrides/" class="md-footer__link md-footer__link--next" aria-label="Next: Remote Overrides" rel="next">
+        <a href="../remote-overrides/" class="md-footer__link md-footer__link--next" aria-label="Next: Remote Commands" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Remote Overrides
+              Remote Commands
             </div>
           </div>
           <div class="md-footer__button md-icon">
