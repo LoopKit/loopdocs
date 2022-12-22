@@ -1,11 +1,16 @@
-# Set Up Remote Overrides
+## Set Up Remote for Nightscout
 
-You can now use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop.
+You can use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop. 
 
-!!! warning "Remote Overrides Caveats"
+If you are using Loop-dev, then you can also send remote commands to add carbs and command a bolus.
+
+!!! warning "Remote Nightscout Interface Caveats"
     * Requires push notification - only available if you built your Loop app using a paid Apple developer account
+    * Should work (but has not been tested by LoopDocs authors) with all but one method for setting up Nightscout
     * If you use T1Pal Nightscout account service ([T1Pal](https://t1pal.com))
-        * Check with the vendor to see which remote features are supported
+        * You cannot enter your push notification information for Loop that you build yourself
+        * You can choose another Nightscout option or use their service for Loop at an additional fee
+    * It is strongly recommended that you build Loop yourself
 
 
 !!! abstract "What you will need to do.."
@@ -23,12 +28,17 @@ You can now use your Nightscout site to remotely set and cancel your override pr
     * iOS 15 or newer
     * Nightscout version 14.0 or newer
 
-!!! danger "Thinking ahead"
-    LoopCaregiver, an app that is under development, will only work on iOS 16.
+    Not required and still under development, but users who are testing this separate app are pleased
+
+    * LoopCaregiver app (iOS 16 or higher) enables the following from the caregiver's phone
+        * monitor Loop
+        * issue remote commands for carbs, bolus and overrides
+
+    The expanded capabilities for remote commands in Loop-dev are currently documented in this [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM). That information will be incorporated into LoopDocs soon.
 
 ## Step 1: Update the Looper's iPhone settings
 
-For remote overrides to successfully deploy on a Looper's iPhone, they will need to have two settings on the iPhone enabled.
+For remote commands to successfully deploy to a Looper's iPhone, they will need to have two settings on the iPhone enabled.
 
 1. The slider in iPhone -> Settings -> Loop -> Notifications needs to be turned to Allow Notifications
 1. The slider in iPhone -> Settings -> General -> Background App Refresh -> Loop must be enabled
@@ -69,11 +79,21 @@ The next part of this will help your Loop app give permissions to your Nightscou
 
 ![img/apns-copy-key.png](img/apns-copy-key.png)
 
-## Step 3: Update Nightscout site
+## Step 3: Add APN to Nightscout
 
-You'll need to make sure your Nightscout site version is at version 13.0.1 or newer.  (It's a good idea to keep Nightscout updated to the latest version; but that version is sufficient for remote overrides). You can check your version number by looking at the bottom of your NS site's settings (tap on the hamburger menu - three horizontal lines at the upper right), near where the authentication button is located. This link should be used if you want to [update your Nightscout site.](https://nightscout.github.io/update/update/)
+### Update Nightscout Site
 
-In order to use remote overrides, you must add a couple of new variables. If you don't know how to update your Nightscout Configuration, review this [link](https://nightscout.github.io/nightscout/setup_variables/) and then come back. The instructions be
+You'll need to make sure your Nightscout site version is at version 13.0.1 or newer for remote overrides and version 14.0 or newer for all remote commands.  (It's a good idea to keep Nightscout updated to the latest version; but those versions are sufficient for remote overrides or remote carb, bolus and overrides). You can check your version number by looking at the bottom of your NS site's settings (tap on the hamburger menu - three horizontal lines at the upper right), near where the authentication button is located. 
+
+This link should be used if you want to [Nightscout: Update](https://nightscout.github.io/update/update/) your Nightscout site. 
+
+Note - for Google Cloud users, the original [Xdrip: Google Cloud Nightscout](https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html) instructions include information about updating your site. Scroll down to the line (on that page) that says `Update Nightscout`.
+
+### Add APN Variables to Nightscout
+
+In order to use remote overrides, you must add a couple of new variables. If you don't know how to update your Nightscout Configuration, review [Nightscout: Setup Variables](https://nightscout.github.io/nightscout/setup_variables/) and then come back.
+
+The instructions in this section show Heroku images. If you are using a different method, you should be able to "translate" the steps.
 
 Go to the `Settings` tab near the top of the screen on your Heroku app and then click on `Reveal Config Vars`.  
 
@@ -96,9 +116,9 @@ When executed properly, you should have something that looks like this for your 
 
 ![img/override_vars_complete.png](img/override_vars_complete.png)
 
-## Step 4: FAQs on Remote Overrides
+## FAQs on Remote Overrides
 
-Don't forget to read [Loopdocs page about how regular overrides work](../operation/features/workout.md). For remote overrides in particular:
+Don't forget to read [Loopdocs: Overrides](../operation/features/workout.md). For remote overrides in particular:
 
 1. **Can I set different override in Nighscout than I have programmed into Loop app?** Answer: No. You will only be able to enact override presets already programmed into the Loop app.
 
@@ -118,17 +138,17 @@ Don't forget to read [Loopdocs page about how regular overrides work](../operati
 
 9. **Can I schedule a remote override ahead of time using Nightscout?** No. When you set a remote override in Nightscout, it will begin immediately and last for whatever duration is programmed for that override in the Loop app. You can set an override for ahead of time using the Looping App only.
 
-## Step 5: Using Remote Overrides
+## Using Remote Commands
 
-There are three ways you can trigger your override presets remotely; careportal, Shortcuts, and IFTTT.
+There are three ways you can trigger your commands remotely; careportal, Shortcuts, and IFTTT.
 
 ### Careportal
 
-To use remote overrides, I'm assuming you've setup your Nightscout site according to the directions [here](update_user.md) in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your [site authenticated](update_user.md#authenticate-site) so that your careportal is active to send remote overrides. Once authenticated by entering your API_SECRET, then there will be a &plus; in the upper right corner of your site. That is your careportal. Tap the careportal &plus; and then scroll down in the "event type" menu to find "Temporary Override". Within there, you will find all your Loop override presets already loaded for you.
+To use remote commands, I'm assuming you've setup your Nightscout site according to the directions [here](update_user.md) in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your [site authenticated](update_user.md#authenticate-site) so that your careportal is active to send remote overrides. Once authenticated by entering your API_SECRET, then there will be a &plus; in the upper right corner of your site. That is your careportal. Tap the careportal &plus; and then scroll down in the "event type" menu to find "Temporary Override". Within there, you will find all your Loop override presets already loaded for you.
 
 ![img/careportal-overrides.PNG](img/careportal-overrides.PNG)
 
-The Looper will see a banner notification that an override has been set (or canceled, as the case may be).
+The Looper will see a banner notification that an remote command has been sent with details about that command and whether it succeeded (or not).
 
 ![img/override_notification.jpg](img/override_notification.jpg)
 
@@ -155,6 +175,7 @@ And if you want to save one click to get to these one functions more directly: t
 **A couple notes about these shortcuts:**
 
 1. You will need iOS 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than iOS 13, but your phone as the shortcut user would need iOS 13.
+    * For Loop-dev, the minimum iOS is iOS 15.
 2. You need to open those links in the Safari browser on your iPhone. A confirmation will show to initiate the download. After the download finishes, tap the button marked "AA" near your Safari address bar and tap "Downloads" to find and open the downloaded Shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.
 3. When you enter your Nightscout URL in the "URL" field of the Loop shortcut setup, make sure you don't include a trailing "/" or the API calls to Heroku will error out.
 4. When a remote override is set properly, you'll see an "ok" message displayed. If there is an error, you'll see an error message. Most errors will be that you have an API_SECRET wrong (make sure there isn't a space at the end of you API_SECRET that you don't see) or you failed to do the steps to setup NS and update your Loop app as described in steps 1-3 above.
@@ -164,14 +185,14 @@ And if you want to save one click to get to these one functions more directly: t
 
 If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by [setting up IFTTT](ns_crossref.md#IFTTT), too.
 
-## Step 6: Known Issues
+## Known Issues
 
 Just a brief mention so you are aware:
 
 1. The override pill will display information about what override is currently active in the Looper's phone. BUT, there can be a slight delay as that information is only transmitted every 5 minutes at best (it is tied to Loop runs and Nightscout upload events in Loop). So, wait 5 minutes to see that the information has gone through a refresh cycle before assuming the override message failed to enact.
 2. When you add a new override preset in Loop, that preset has to be uploaded to Nightscout before it will be available as a remote override. To trigger that upload, you can simply enact that new override for a few seconds and turn it off again. that will get the Nightscout upload going.
 
-## Step 7: Common Errors
+## Common Errors
 
 Once you've set up remote overrides, you may encounter errors when trying to run them via Nightscout or iOS Shortcuts.  Below are the most common and the typical solutions.
 
