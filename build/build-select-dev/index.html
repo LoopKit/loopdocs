@@ -1754,6 +1754,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#first-time-build-instructions" class="md-nav__link">
+    First Time Build Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#install-loop-for-child" class="md-nav__link">
     Install Loop for Child
   </a>
@@ -1763,6 +1770,13 @@
           <li class="md-nav__item">
   <a href="#update-loop-with-github-build-actions" class="md-nav__link">
     Update Loop with Github Build Actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-build-actions-error-messages" class="md-nav__link">
+    Github Build Actions Error Messages
   </a>
   
 </li>
@@ -2227,6 +2241,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#first-time-build-instructions" class="md-nav__link">
+    First Time Build Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#install-loop-for-child" class="md-nav__link">
     Install Loop for Child
   </a>
@@ -2236,6 +2257,13 @@
           <li class="md-nav__item">
   <a href="#update-loop-with-github-build-actions" class="md-nav__link">
     Update Loop with Github Build Actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-build-actions-error-messages" class="md-nav__link">
+    Github Build Actions Error Messages
   </a>
   
 </li>
@@ -2385,11 +2413,13 @@
 <p>When you ran the BuildLoopFixedDev script, the instructions informed you of the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
 <h2 id="build-loop-dev-using-github-actions">Build Loop-dev using Github Actions<a class="headerlink" href="#build-loop-dev-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><strong>No matter the method used to build Loop-dev: script, github actions or <abbr title="a tool for version control">git</abbr> commands, you are testing development code.</strong></p>
+<h3 id="first-time-build-instructions">First Time Build Instructions<a class="headerlink" href="#first-time-build-instructions" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You can build Loop-dev using your github account and your (paid) Apple Developer account using a browser. You no longer require a Mac computer.</p>
 <p>The instructions in the link below are basic - please read carefully and use the links provided in these directions.</p>
 <ul>
 <li><a href="https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md">Using Github Actions + FastLane to deploy to TestFlight</a></li>
 </ul>
+<p><strong>You must build Loop every 90 days when you use this method.</strong></p>
 <p>After successfully building Loop using Actions in github, here are two important things to know. The next statements might not make sense to you if you have not gone to the link above and reviewed the instructions.</p>
 <ol>
 <li>
@@ -2418,18 +2448,19 @@
 </ul>
 <h3 id="update-loop-with-github-build-actions">Update Loop with Github Build Actions<a class="headerlink" href="#update-loop-with-github-build-actions" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Once you have built Loop one time with github Build Actions, updates are fast and easy.</p>
+<p><strong>You must build Loop every 90 days when you use this method.</strong></p>
 <ol>
 <li>Sign in to Github and select your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> from your repositories list</li>
 <li>
 <p>Look to see if your <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> is up to date</p>
 <ul>
-<li>If your <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> is up to date you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:dev</code> - there is no need to build again - the resultant app will be identical</li>
+<li>If your <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> is up to date you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:dev</code> - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3</li>
 <li>If your <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr> shows a message such as <code>This branch is 3 commits behind LoopKit:dev</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on <code>Update branch</code></li>
 </ul>
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
 </li>
 <li>
-<p>Once the sync is complete, it is time to build - refer to graphic below as you follow the steps</p>
+<p>Build Loop - refer to graphic below as you follow the steps</p>
 <ul>
 <li>Click on the 'Actions' tab</li>
 <li>Select the 'Build Loop' workflow and then click on 'run workflow' </li>
@@ -2440,17 +2471,32 @@
 <li>
 <p>You'll receive an App Store Connect email confirming that the build has completed processing, and a TestFlight email confirming the (now updated) app is ready to test.</p>
 <ul>
-<li>If those emails do not appear, then return to your repositories and look for Build Action error messages</li>
+<li>If you get an email that the action failed, then return to your <abbr title="contains project files and each file's revision history">repository</abbr> and look for Build Action error messages<ul>
+<li>Click on the most recent Build job with the red x by it</li>
+<li>If the details show this message, "<a href="#could-not-install-wwdr-certificate">Could not install WWDR certificate</a>", make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
+<li>Repeat the build and it should be fine the next time</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
 <p>The updated Loop app will automatically be pushed to and shown in your Test Flight app, so all you need to do is...</p>
 <ul>
-<li>Open TestFlight on your phone and click 'install.'</li>
+<li>Open TestFlight on your phone and click <code>Install</code></li>
+<li>If you have automatic installation enabled in TestFlight, the app should have installed automatically, in which case the message should say <code>Open</code>.</li>
 </ul>
 <p align="center"><img alt="graphic indicating how to install app in TestFlight" src="../img/testflight-app-install.svg" width="500" /></p>
 </li>
 </ol>
+<h3 id="github-build-actions-error-messages">Github Build Actions Error Messages<a class="headerlink" href="#github-build-actions-error-messages" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>These error messages are only for people who have successfully built using github Build Actions. There are many other errors that might pertain to people who have not completed all the build steps in <a href="https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md">Using Github Actions + FastLane to deploy to TestFlight</a>. </p>
+<h4 id="could-not-install-wwdr-certificate">Could not install WWDR certificate<a class="headerlink" href="#could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Assuming you have successfully built before:</p>
+<ul>
+<li>If the details show this message, "Could not install WWDR certificate", make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
+<li>Repeat the build and it should be fine the next time</li>
+</ul>
+<p align="center"><img alt="graphic showing failure to install certificate" src="../img/github-error-cert-failed.png" width="500" /></p>
                 
               
               
