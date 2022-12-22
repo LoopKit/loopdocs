@@ -1,6 +1,27 @@
-# Overview
+## Overview
 
-Nightscout is an excellent tool for remotely viewing Loop's actions.  It allows for easy remote monitoring of Loop activities, troubleshooting of Loop errors, history of CGM, carbs, boluses, & temp basals, reports analyzing data trends and patterns. Setting up a Nightscout site is fairly quick. Once set up, the site can be accessed by anyone that you share your unique Nightscout URL with. There is a Nightscout app in your iPhone App Store that allows you to view the Nightscout site after you've configured it, or you can use a web browser to view the data.  
+Nightscout is an excellent tool for remotely viewing Loop's actions. Nightscout can act as a stand-alone tool or be integrated with Loop. (Nightscout also integrates with other open-source hybrid closed loop systems such as OpenAPS, AndroidAPS and FreeAPS X. LoopDocs focuses on Loop.)
+
+When integrated with Loop, Nightscout provides monitoring of Loop activities such as viewing history of glucose, carbs, boluses, temp basals and overrides; troubleshooting Loop errors; and provides extensive reports for analyzing data trends and patterns. These reports assist when Loop Therapy Settings need to be adjusted.
+
+For caregivers, Nightscout enables remote monitoring and even the ability to issue remote commands through Nightscout when both Loop and Nightscout are properly configured. There is a whole page devoted to [LoopDocs: Remote Commands](remote-overrides.md). If you are a caregiver, this summary of remote capabilities may encourage you to look into Nightscout.
+
+!!! info "Remote Commands"
+    * Loop 2.2.x
+        * Overrides can be enabled and disabled
+    * Loop dev (Loop 3 when released)
+        * Overrides can be enabled and disabled
+        * Carbs can be entered
+        * Boluses can be commanded
+        * LoopCaregiver app (under development, iOS only) enables the following from the caregiver's phone
+            * monitor Loop
+            * issue remote commands for carbs, bolus and overrides
+
+Nightscout is useful for all Loopers. Adults who take care of themselves find the reports and analysis methods from the Nightscout site provide effective tools to monitor their settings and provide reports for their health care provider. It also stores Loop configurations so they can be reviewed. With Loop dev, the saved Nightscout profiles can be downloaded to a new app for quick onboarding, should you ever need to start fresh.
+
+Setting up a Nightscout site is described in a separate web site: [Nightscout: Documentation](https://nightscout.github.io).
+
+There are Nightscout apps in your iPhone App Store that allow you to view the Nightscout site after you've configured it, or you can use a web browser to view the data. The app alone is not enough - you need to follow the steps to configure your own Nightscout site and obtain your specific Nightscout URL.
 
 * Nightscout is highly recommended for Loop users, especially those using Loop as caregivers
 * Nightscout displays are often the easiest way to troubleshoot Loop settings if you are having problems and seeking input from others
@@ -8,46 +29,90 @@ Nightscout is an excellent tool for remotely viewing Loop's actions.  It allows 
 
 ## Nightscout Documentation
 
-There used to be a lot of Nightscout information found only in LoopDocs, but has now been transferred to updated Nightscout Documentation.  The information that remains in LoopDocs is Loop specific.  So you may be jumping back and forth between the two sets of documents.  
+There used to be a lot of Nightscout information found only in LoopDocs, but that was transferred and subsequently updated in [Nightscout: Documentation](https://nightscout.github.io). The information that remains in LoopDocs is Loop specific. So you may be jumping back and forth between the two sets of documents.
 
 !!! info ""
 
-    * If it says Nightscout in upper left you are in the Nightscout Site
-    * If it says LoopDocs in upper left you are in the LoopDocs site
-    * On your computer, open the  [Nightscout Documentation](https://nightscout.github.io) in a separate tab or window of your browser
+    * If you see the Nightscout Owl logo in upper left you are in the Nightscout website
+    * If you see the LoopDocs green-loop logo in upper left you are in the LoopDocs website
+    * While in the Nightscout tab of LoopDocs, most links have a `Nightscout:` or `LoopDocs:` in the link name to let you know which website has the link of interest
+    * Suggestion: open the [Nightscout: Documentation](https://nightscout.github.io) in a separate tab or window of your browser for easy access to both websites
 
-Below is some general discussion about the Nightscout display, as well as some Loop-specific display information.
+
+## Nightscout with Loop
+
+This page provides general discussion about the Nightscout display, as well as some Loop-specific display information. Over time, interactions between Loop and Nightscout were improved. The information on this page has been updated for Loop-dev and Nightscout version 14.2.6 (or later). Older versions may exhibit some differences in display of Loop information on the Nightscout site.
+
+### Loop Uploads to Nightscout
+
+!!! warning "Loop 3"
+    The Nightscout display updates when the Looper's phone is connected to the internet via WiFi or cellular service. When the uploads stop, the Loop pill becomes "stale" (cannot open it) after 15 minutes.
+
+    "Pills" are the little information boxes. They are [Nightscout: Plugins](https://nightscout.github.io/nightscout/setup_variables/#plugins) that must be enabled with configuration variables and then the display for each pill can be turned on or off within your Nightscout site.
+
+    If upload to Nightscout is interrupted, Loop stores up to 7 days of Nightscout information in a local buffer on the phone, and will attempt to upload later when access is restored. Once access is restored, a stale Loop Pill may require 15 minutes before it will open to display additional Loop information.
+
+    The Carb pill on the Nightscout site is populated by Loop when Loop is actively uploading to Nightscout - but it may lag the value displayed in the Loop pill by one loop cycle and it will display 0 COB within 5 to 10 minutes if upload is interrupted. In other words, if the COB pill shows 0 unexpectedly and Loop pill is active, you can believe the value shown in the Loop pill.
+
+### Loop 2 Red Loop Warning
+
+With Loop 2.2.9 and earlier versions, when Loop has a Nightscout site added in Loop Services AND is unable to upload messages to that site, it can fill up a buffer of stored upload messages. This may lead to sluggish behavior in Loop or even Red Loops. This can happen if the Nightscout site is "down" or if the database is full so it is not accepting messages.
+
+Step 1: Remove Nightscout URL from Loop Services
+
+Step 2: Figure out why the Nightscout site is not accepting uploads from Loop and fix that problem.
+
+* [Nightscout: Troubleshooting](https://nightscout.github.io/troubleshoot/troubleshoot)
+* [Nightscout: Database Management](https://nightscout.github.io/nightscout/admin_tools/#database-maintenance)
+
+Step 3: Add Nightscout URL to Loop Services
+
+!!! tip "More Information"
+    For those who want to know more:
+
+    There is a big architectural change between Loop 2 and Loop dev (soon to be Loop 3) for remote data services like Nightscout.
+
+    It used to be that data would be “held on” to be uploaded, and a non functional service could cause large backlogs. The new system does not allow for this. Uploaders individually keep track of where they are in the upload stream via a lightweight “query handle”, and if the data in Loop’s data stores expires before they upload, then they’ll just not be able to upload that data.
+
+    The default data store for Loop 3 is 7 days.
+
+## Nightscout Dashboard
 
 ![img/example.jpg](img/example.jpg){width="600"}
 {align="center"}
 
-## Blood Glucose
+### Blood Glucose
 
-Your blood glucose (BG) readings from your CGM are shown in green, yellow, or red in the main graph area of NS.  You can adjust your high and low BG targets in NS (when NS alerts will start for high/low BGs), but those will not affect your Loop performance.  Loop only uses the BG targets given in the Loop app settings.  The main screen of BGs is displaying the time duration you have selected (in the example above, 12 hours of BG history).  The bottom of the screen shows the last 48-hours of BG trends.  You can scan backward by dragging the bottom timeline to the left, if you want to review specific Loop actions or data in the last two days.
+Glucose readings from the CGM are shown in green, yellow, or red in the main Dashboard of Nightscout. (The graphic above was generated with Colors enabled in Nightscout; there are other display options.) You can adjust your high and low glucose alarm thresholds in Nightscout by modifying configuration variables. This is optional - defaults are provided if you do not set them. The alarm thresholds affect the color of the displayed CGM data points and, if enabled, determine when an audible and visible alarm sounds. The Nightscout alarm thresholds will not affect Loop performance. Loop only uses the glucose correction ranges in the Loop app settings.
 
-## SAGE, CAGE, BAGE pills
+The main dashboard (upper section) for Nightscout displays the time duration you have selected (in the example above, 12 hours). The bottom of the screen shows the last 48-hours of glucose trends. You can scan backward by dragging the bottom timeline to the left, if you want to review specific Loop actions or data in the last two days.
 
-The SAGE, CAGE, and BAGE pills are for Sensor Age, Cannula Age, and (pump) Battery Age.  These optional pills track the time since your CGM sensor, Pump site, and Pump battery were last changed.  You can set up custom alerts to remind you when it is time to change the devices, or simply use the visuals to keep track of your particular timing for site/sensor changes. These fields will not auto-update from pump or CGM devices, instead you will have to update them using Nightscout Careportal so that the pill information is accurate.
+### SAGE, CAGE, BAGE pills
 
-## Carbs
+The SAGE, CAGE, and BAGE pills are for Sensor Age, Cannula Age, and (pump) Battery Age. These optional pills track the time since your CGM sensor, Pump site, and Pump battery were last changed. You can set up custom alerts to remind you when it is time to change the devices, or simply use the visuals to keep track of your particular timing for site/sensor changes. These fields will not auto-update from pump or CGM devices, instead you will have to update them using Nightscout Careportal so that the pill information is accurate.
 
-Carbs are automatically uploaded to NS by the Loop app.  The amount of carbs on board (active carbs or COB) can be seen by clicking the Loop pill.  The size of a white carb dot on the graph is proportional to the amount of carbs entered...bigger meals get bigger dots. Loop does not read carbs from NS for use in looping calculations, it only uploads carbs to NS that have been entered in the Loop app.
+### Carbs
 
-## Boluses
+Carbs are automatically uploaded to Nightscout by the Loop app. The amount of carbs on board (active carbs or COB) can be seen by clicking the Loop pill. The size of a white carb dot on the graph is proportional to the amount of carbs entered...bigger meals get bigger dots. Loop does not read carbs from Nightscout for use in looping calculations, it only uploads carbs to Nightscout that have been entered in the Loop app.
 
-Insulin boluses are also automatically uploaded to NS by the Loop app.  The bolus is shown as a filled-in blue lower-half of the dot, and the specific amount of the bolus is also shown.  There may be a slight delay between when the carbs for a meal are uploaded to NS to when the meal bolus appears.  This is because depending on the pump model and size of bolus, the bolus may take a few minutes to actually be administered then Loop has to perform a pump read to verify the reservoir volume has decreased (i.e., the bolus was given).  As shown in the example above, the meal carbs have been uploaded, but the bolus delivery is still in progress.  Insulin on board (active insulin or IOB) is also shown in the Loop pill.
 
-## Temp Basals
+### Boluses
 
-Your current basal profile is automatically updated to NS whenever it is changed by Loop on your pump. The dashed blue line represents the scheduled basal profile (as entered in your NS profile).  The solid blue lines indicate the actual basal amounts set for a given time...so as Loop sets temp basals higher or lower than your scheduled basal rate, the solid blue line will jump above or below your dashed blue line.  There is a slight delay (up to 2-5 minutes) in the rendering of basal changes on the blue lines, so if you want the accurate current basal rate, you can check the Loop pill.
+Insulin boluses are automatically uploaded to Nightscout by the Loop app. The bolus is shown as a filled-in blue lower-half of the dot, and the specific amount of the bolus is also shown. There may be a separation between the bolus and the carb entry, especially if the user preboluses a meal.
 
-## Predicted BG
+The bolus is uploaded to Nightscout as soon as it starts and Insulin on board (active insulin or IOB) is updated in the Loop pill. Should the bolus be interrupted, the Nightscout information is updated when the Loop information updates (assuming internet access is active).
 
-The purple line to the right of the BG is Loop's predicted BG.  Watching the behavior of that purple line can help you understand why Loop is making decisions regarding high or low temps.  You can read more on that topic in the [Algorithm](../operation/algorithm/overview.md) section of these docs. If you don't see the prediction (and all other NS and Loop settings are configured), tap on the 3 dots to the right of the 24 to reveal the choice to display AR2 prediction or Loop prediction.  Adjust the check boxes to show just the Loop prediction.
+### Temp Basals
 
-## Loop pill
+Your current basal profile is automatically updated to Nightscout whenever it is changed by Loop. The dashed blue line represents the scheduled basal profile. The solid blue lines indicate the actual basal amounts set for a given time...so as Loop sets temp basals higher or lower than your scheduled basal rate. If the graph and Loop pill do not agree, you should should believe the Loop pill.
 
-The Loop pill is the little display box which, when hovered over or clicked, will provide additional information about recent Loop activities and status.  Information included is the last time Loop ran, the temp basal set, IOB, and COB.  Looking at the Loop pill is a quick method for assessing if you loop is currently active, as well.
+### Predicted BG
+
+The purple line to the right of the BG is Loop's predicted BG. Watching the behavior of that purple line can help you understand why Loop is making decisions regarding high or low temps. You can read more on that topic in the [LoopDocs: Algorithm](../operation/algorithm/overview.md) section of these docs. If you don't see the prediction (and all other Nightscout and Loop settings are configured), tap on the 3 dots to the right of the 24 to reveal the choice to display AR2 prediction or Loop prediction. Adjust the check boxes to show just the Loop prediction.
+
+### Loop pill
+
+The Loop pill is the little display box which, when hovered over or clicked, will provide additional information about recent Loop activities and status. Information included is the last time Loop ran, the temp basal set, IOB, and COB. Looking at the Loop pill is a quick method for assessing if you loop is currently active, as well.
 
 !!! info "Loop Pill status indicator symbols"
 
@@ -65,7 +130,7 @@ The Loop pill is the little display box which, when hovered over or clicked, wil
 
     <font style='font-size: 1.5em;'>⚠</font> &nbsp;
     Warning indicating Loop is either red or has failed to upload to Nightscout for a longer period of time.
-Mouse over or Touch the Loop pill to view a tool tip containing one or more of the latest status messages. The most up-to-date NS also includes information in the Loop pill for the minimum and maximum predicted BG, eventual and predicted BG.
+Mouse over or Touch the Loop pill to view a tool tip containing one or more of the latest status messages. The most up-to-date Nightscout also includes information in the Loop pill for the minimum and maximum predicted BG, eventual and predicted BG.
 
 ![img/loop_pill_message.png](img/loop_pill_message.png){width="750"}</dd>
 

@@ -1,9 +1,9 @@
-# Nightscout Documentation
+## Nightscout Documentation
 
 A number of pages that used to be in LoopDocs have been moved to the Nightscout documentation and are in the process of being integrated into their menu structure. To prevent duplication and inconsistency, those pages have been removed from LoopDocs.  A cross-reference to the Nightscout pages is provided below.
 
 * Warning: As of Sep 2021, some of the pages moved from LoopDocs to Nightscout documentation are not yet in the Nightscout menu structure
-* You can always use the search function of the  [Nightscout Documentation](https://nightscout.github.io/) site to find any topic
+* You can always use the search function of [Nightscout: Documentation](https://nightscout.github.io/) to find any topic
 
 
 ## IFTTT Integration
