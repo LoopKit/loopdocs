@@ -9,7 +9,7 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
     * Should work (but has not been tested by LoopDocs authors) with all but one method for setting up Nightscout
     * If you use T1Pal Nightscout account service ([T1Pal](https://t1pal.com))
         * You cannot enter your push notification information for Loop that you build yourself
-        * You can choose another Nightscout option or use their service for Loop at an additional fee
+        * You can choose another Nightscout option or use their service for Loop at an additional fee to get remote operation with released code
     * It is strongly recommended that you build Loop yourself
 
 
@@ -21,6 +21,8 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
 
     3. Update your Nightscout site and add some "config vars" lines in your Nightscout site settings.
 
+    And read this entire page - focus on warnings and caveats.
+
 !!! tip "New Feature in Loop 3"
     Remote bolus and remote carb capability is added with Loop 3, currently under test as Loop dev. In order to support this capability, there are new minimum versions:
     
@@ -30,7 +32,7 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
 
     Not required and still under development, but users who are testing this separate app are pleased
 
-    * LoopCaregiver app (iOS 16 or higher) enables the following from the caregiver's phone
+    * [LoopCaregiver](#loopcaregiver) app (iOS 16 or higher) enables the following from the caregiver's phone
         * monitor Loop
         * issue remote commands for carbs, bolus and overrides
 
@@ -138,11 +140,115 @@ Don't forget to read [Loopdocs: Overrides](../operation/features/workout.md). Fo
 
 9. **Can I schedule a remote override ahead of time using Nightscout?** No. When you set a remote override in Nightscout, it will begin immediately and last for whatever duration is programmed for that override in the Loop app. You can set an override for ahead of time using the Looping App only.
 
+## Warnings for Remote Commands
+
+!!! danger "**Duplicate Delivery Risk**"
+    We want to highlight a very important risk before you get started.
+
+    For safety, always assume a previous remote carb / bolus was delivered. For motivation think of the following example:
+
+    * You send a 5 unit remote bolus.
+    * The bolus is delivered to the Looper.
+    * Nightscout is having a temporary technical issue and doesn't show the bolus was received.
+    * You are watching Nightscout and you don’t see a delivery so you assume it failed.
+    * You send another remote 5 unit bolus.
+    * The second 5 unit bolus is delivered to the Looper (10 Units total).
+
+You can see the danger of sending duplicate bolus/carbs so be careful. If a remote bolus/carb entry doesn’t show in Nightscout, use your own judgment on whether enough time has passed to try again.
+
+!!! warning "If sending both, choose Bolus then Carbs"
+    If you plan to send a carb command remotely and later decide to issue a bolus command - STOP and consider.
+
+    There are 2 scenarios of concern that could lead to too much insulin:
+    
+    * Looper is using Temp Basal Dosing Strategy
+        * Loop will initiate a max Temp Basal when it receives the carb remote command
+        * Your bolus will be accepted and take place in addition to the high temp basal
+    * Looper is using Automatic Bolus Dosing Strategy
+        * Loop will initiate 40% of the recommended dose when it receives the carb remote command
+        * Your bolus will be accepted and take place in addition to the any previous automatic boluses
+
+    Typically, sending a carb command alone is sufficient for Loop to know about the carbs and begin to dose for them.
+
+    If you really want to both bolus for carbs and enter carbs, then do it in that order.
+
+    * The bolus, when accepted, will cause Loop to issue a 0 Temp Basal (which is "safer")
+    * The carbs, when accepted, will cause Loop to respond to the carbs while including the bolus already delivered and included in the Looper's IOB
+
+    Remember - you should pause at least 60 sec between remote commands or the One-Time-Password (OTP) will be rejected as having already been used.
+
 ## Using Remote Commands
 
-There are three ways you can trigger your commands remotely; careportal, Shortcuts, and IFTTT.
+There are four ways you can trigger your commands remotely; [LoopCaregiver](#loopcaregiver) (under development), [Nightscout Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
 
-### Careportal
+### LoopCaregiver   ![icon for LoopCaregiver app](img/lcg-icon.jpg){width="50"}
+
+The LoopCaregiver app is under development, works only with Loop-dev and requires an iPhone running at least iOS 16.
+
+If you plan to use LoopCaregiver, please join [Loop Caregiver App](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) zulipchat stream.
+
+**As with all development code, monitor zulipchat for announcements, report any problems you experience, be prepared to build frequently, and pay attention.**
+
+#### Build LoopCaregiver
+
+A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built Loop-dev using the script.
+
+Open a terminal window. Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
+
+```title="Copy and Paste to start the BuildLoopCaregiver.sh script"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopCaregiver.sh)"
+```
+
+Paste the line into the Terminal window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.
+
+#### Use LoopCaregiver
+
+Some limited directions for using the LoopCaregiver app are provided - please also read the zulipchat stream. 
+
+#### LoopCaregiver Main Screen
+
+LoopCaregiver uses a lot of features from Loop with some Nightscout-like features in the Timeline.
+
+The Timeline:
+
+* Autoscales the vertical display for glucose reported over the last 24 hours (plus the forecast if that is turned on)
+    * The graphic below has `Show Prediction` turned off for Timeline
+* Horizontal display can be adjusted with spread/pinch and scrolling
+* A double-tap on the Timeline provides a factor of 2 expansion horizontally if at default
+* A double-tap on the Timeline returns the display to default if expanded
+
+
+![main screen of the LoopCaregiver app](img/lcg-main.jpg){width="300"}
+
+#### Add a Looper to LoopCaregiver
+
+You add each Looper under settings. (LoopCaregiver can monitor more than one Looper).
+
+* On Looper Phone
+    * Tap on Loop->Settings->Services->Nightscout
+    * Tap on the One-Time-Password row to see the QR code
+    * Pro-tip - take a screen shot and store it on your computer - you can then add view the QR code in LoopCaregiver without bothering your Looper
+* On LoopCaregiver Phone
+    * Tap on  LoopCaregiver->Settings
+    * Tap on **&plus;** to add a Looper
+    * Enter the name of the Looper, the Nightscout URL and API_SECRET
+    * Touch the QR code row - this opens the camera - point camera at QR code from Looper's phone
+
+You can also use the LoopCaregiver->Settings screen to modify:
+
+* Units used for glucose display: mg/dL or mmol/L
+* Include the Loop Forecast display on the Timeline chart as well as the Glucose chart of the main display (graphic above has `Show Prediction` turned off)
+
+#### Issue Remote Commands with LoopCaregiver
+
+You issue override, carb and bolus commands using a toolbar similar to the one seen on Loop. In the example graphic above, the carb and bolus entries visible were issued remotely. (Note that Adam 6 is a test phone.)
+
+The use of LoopCaregiver makes remote commands much easier and more reliable.
+
+Go back and read the warnings again before using the app. [Warnings for Remote Commands](#warnings-for-remote-commands)
+
+
+### Nightscout Careportal
 
 To use remote commands, I'm assuming you've setup your Nightscout site according to the directions [here](update_user.md) in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your [site authenticated](update_user.md#authenticate-site) so that your careportal is active to send remote overrides. Once authenticated by entering your API_SECRET, then there will be a &plus; in the upper right corner of your site. That is your careportal. Tap the careportal &plus; and then scroll down in the "event type" menu to find "Temporary Override". Within there, you will find all your Loop override presets already loaded for you.
 
