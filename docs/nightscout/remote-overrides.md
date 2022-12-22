@@ -159,7 +159,7 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
 !!! warning "If sending both, choose Bolus then Carbs"
     If you plan to send a carb command remotely and later decide to issue a bolus command - STOP and consider.
 
-    There are 2 scenarios: 
+    There are 2 scenarios of concern that could lead to too much insulin:
     
     * Looper is using Temp Basal Dosing Strategy
         * Loop will initiate a max Temp Basal when it receives the carb remote command
@@ -211,10 +211,9 @@ LoopCaregiver uses a lot of features from Loop with some Nightscout-like feature
 
 The Timeline:
 
-* Autoscales the y-axis for glucose reported over the last 24 hours (plus the forecast if that is turned on)
+* Autoscales the vertical display for glucose reported over the last 24 hours (plus the forecast if that is turned on)
     * The graphic below has `Show Prediction` turned off for Timeline
-* Can be expanded horizontally by spreading
-* Can be scolled left / right
+* Horizontal display can be adjusted with spread/pinch and scrolling
 * A double-tap on the Timeline provides a factor of 2 expansion horizontally if at default
 * A double-tap on the Timeline returns the display to default if expanded
 
@@ -237,7 +236,7 @@ You add each Looper under settings. (LoopCaregiver can monitor more than one Loo
 
 You can also use the LoopCaregiver->Settings screen to modify:
 
-* Units used for glucose display, mg/dL or mmol/L
+* Units used for glucose display: mg/dL or mmol/L
 * Include the Loop Forecast display on the Timeline chart as well as the Glucose chart of the main display (graphic above has `Show Prediction` turned off)
 
 #### Issue Remote Commands with LoopCaregiver
