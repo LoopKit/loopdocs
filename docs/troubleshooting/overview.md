@@ -1,5 +1,3 @@
-# Troubleshooting
-
 After you have been using Loop for a while, there's a potential that you will run across a behavior or issue that you wonder if it is normal or intended.  When that happens, there are a few things that we'd recommend doing to resolve the issue.
 
 ## Gather information

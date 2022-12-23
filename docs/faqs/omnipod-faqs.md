@@ -1,5 +1,3 @@
-# Omnipod FAQs
-
 ## Is Omnipod supported on Loop?
 
 Yes.

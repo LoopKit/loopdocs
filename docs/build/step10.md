@@ -1,4 +1,4 @@
-# Test Settings
+## Test Settings
 
 !!! info "Time Estimate"
     - 2 hours to read the rest of LoopDocs (particularly the "Set Up", "Operate", and "FAQ" sections) and [LoopTips](https://loopkit.github.io/looptips/) thoroughly and thoughtfully

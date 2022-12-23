@@ -1,4 +1,4 @@
-# Compatible Computer
+## Compatible Computer
 
 !!! info "Time Estimate"
     - 5 minutes, if you have a Mac with Monterey (macOS 12.5) or higher

@@ -1,4 +1,6 @@
-# Omnipod and Omnipod DASH Pump
+## Omnipod and Omnipod DASH Pump
+
+The information and user interface for Omnipod (Eros) and DASH pods is the same, except Omnipod DASH pods do not require a RileyLink compatible device. They communicate directly with the phone through Bluetooth.
 
 ## Pair Pod
 

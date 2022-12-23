@@ -1,4 +1,4 @@
-# Algorithm Overview
+## Loop Algorithm
 
 Loop’s algorithm for adjusting insulin delivery is oriented around making a blood glucose prediction. Every five minutes, triggered by new blood glucose data, it generates a new prediction. Both [bolus recommendations](bolus.md) and [temporary basal rate adjustments](temp-basal.md) are set based on this [prediction](prediction.md).
 

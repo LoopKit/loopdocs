@@ -1,5 +1,3 @@
-# LoopDocs How-to
-
 ## Tooltips
 
 LoopDocs has words that may be unfamiliar. For a definition of any word with a dashed underline, simply hover your mouse over the word, or tap on the word on a mobile device, to view the definition.

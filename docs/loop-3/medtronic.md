@@ -1,5 +1,3 @@
-# Medtronic Pump
-
 ## Pump Settings
 
 To bring up the Pump Settings display, tap on the pump icon in the Heads Up Display ([HUD](displays_v3.md#heads-up-display)) or your connected pump in the Loop [Settings](settings.md) screen.

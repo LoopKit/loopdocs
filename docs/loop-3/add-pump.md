@@ -1,5 +1,3 @@
-# Pump Configuration
-
 ## Pump Choices
 
 You can choose a pump from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.

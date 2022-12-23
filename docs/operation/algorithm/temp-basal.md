@@ -1,6 +1,22 @@
-# Temp Basal Adjustments
+## Calculated Dose
 
-The Loop algorithm takes one of four actions depending upon the eventual blood glucose, predicted glucose, and suspend threshold. Note that all temporary basal rate commands are issued for 30 minutes, however they may be updated (re-issued) every 5 minutes. Said another way, Loop may enact a new temporary basal rate every 5 minutes. But, if communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates. Note: If a user is operating Loop in open-loop mode, the Loop will only recommend basal dosing actions and will not automatically enact those recommendations.
+The Loop algorithm takes one of four actions depending upon the eventual blood glucose, predicted glucose, target range and glucose safety threshold when Closed Loop operation is enabled.
+
+The recommended insulin dose (positive or negative) is calculated first, then the Temp Basal or Automatic Bolus to be enacted is modified based on the recommended dose, dosing strategy, maximum Temp Basal and maximum Bolus settings. The automated dosing (increase or decrease) is updated with every CGM value - typically every 5 minutes.
+
+**Dosing Strategy: Temp Basal Only**
+
+All temporary basal rate commands are issued for 30 minutes, however they may be updated (re-issued) every 5 minutes. Said another way, Loop may enact a new temporary basal rate every 5 minutes. But, if communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates.
+
+**Dosing Strategy: Automatic Bolus**
+
+If the Looper has selected Automatic Bolus Dosing Strategy and an increase in insulin dose is recommended, then the Four Actions discussion below applies to the automatic bolus decision.
+
+### No Automatic Dosing
+
+If glucose is entirely below the correction range but above glucose safety level, no automatic increase in insulin delivery will be enacted. The Looper can tap on the manual bolus tool and get a recommendation, but no automatic bolus or high temp basal will be issued automatically until the glucose level is higher than the minimum value of the correction range.
+
+The premeal button or a named override can be configured with a correction range lower than the scheduled correction to assist in getting insulin delivered automatically after meals.
 
 ## Four Possible Actions
 

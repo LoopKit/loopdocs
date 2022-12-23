@@ -1,4 +1,4 @@
-# Configuration
+## Configuration
 
 This page will cover two general parts of the Loop's settings, circled in red in the screenshot below. The headings will match the flow of the screen, top to bottom.
 

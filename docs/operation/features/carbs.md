@@ -1,4 +1,4 @@
-# Meal Entry
+## Meal Entry
 
 This page was updated with information for Loop-dev which will soon be released as Loop 3.
 

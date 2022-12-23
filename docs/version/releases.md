@@ -1,4 +1,4 @@
-# Loop Releases
+## Loop Releases
 
 The new features added with each Loop release (starting with Loop version 2.0) are provided for reference.
 

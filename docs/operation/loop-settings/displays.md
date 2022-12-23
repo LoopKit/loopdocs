@@ -1,4 +1,4 @@
-# Loop Displays
+## Loop Displays
 
 This section of the docs will go over the Loop displays available and what information they offer.  Information about your Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app. (Page last updated for Loop v2.2.4.)
 

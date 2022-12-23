@@ -1,4 +1,4 @@
-# Pump Settings
+## Pump Settings
 
 To bring up the Pod/Pump Settings display, tap on the reservoir icon in the Heads Up Display or the image of the pump in the Loop settings screen.
 

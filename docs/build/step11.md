@@ -1,4 +1,4 @@
-# Make Plans for your Loop Data
+## Make Plans for your Loop Data
 
 !!! info "Time Estimate"
     - Apple Health: 0 minutes, already a part of your system

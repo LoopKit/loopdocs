@@ -1,4 +1,4 @@
-# Build the Loop App
+## Build the Loop App
 
 ## Summary
 

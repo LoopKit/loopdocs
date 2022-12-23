@@ -1,4 +1,4 @@
-# Pod Pairing Failures
+## Pod Pairing Failures
 
 Have you seen an error message during the pairing process for a new pod? The most common messages are "No response from pod" or "Pod sent ack instead of response", as shown below.
 

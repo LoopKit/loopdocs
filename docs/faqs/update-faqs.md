@@ -1,4 +1,4 @@
-# Updating/Rebuilding Loop FAQs
+## Updating/Rebuilding Loop FAQs
 
 First, please take a minute to understand what the words mean.
 

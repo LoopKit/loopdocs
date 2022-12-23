@@ -1,4 +1,4 @@
-# Loop Workspace
+## Loop Workspace
 
 This page is for the "advanced" user. It is a short introduction for folks interested in testing code before it is released, or contributing to that code.
 

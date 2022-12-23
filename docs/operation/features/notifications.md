@@ -1,4 +1,4 @@
-# Loop Notifications
+## Loop Notifications
 
 Loop provides discrete notifications on the iPhone and Watch which will appear on the (locked) screen and vibrate, depending on your notification settings of Loop.
 

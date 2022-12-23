@@ -1,4 +1,4 @@
-# Loop Tips
+## Loop Tips
 
 These docs are a great resource for the technical aspects of building your Loop app.  However, they don't really cover in detail a lot of the frequently asked questions about *USING* Loop.
 

@@ -1,4 +1,4 @@
-# Build Errors
+## Build Errors
 
 There are two types of build indications that may be seen: they are warnings (yellow or purple icons) and red errors. You'll see the warnings and errors in the left-hand column of the Xcode window.
 

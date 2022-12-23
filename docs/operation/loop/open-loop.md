@@ -1,5 +1,3 @@
-# Open Loop
-
 ## Open Loop Introduction
 
 Open Loop is the best place to start with Loop.

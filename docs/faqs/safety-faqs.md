@@ -1,5 +1,3 @@
-# Safety Tips
-
 ## Beware the Medtronic Easy Bolus button
 
 Medtronic's easy bolus button has been the cause of several accidental boluses when the pump has been carried in a pocket. Best practice would be to disable the Easy Bolus button since you will be doing boluses from the phone anyways.

@@ -1,5 +1,3 @@
-# Loop FAQs
-
 ## What do I need to Loop?
 
 To build and use Loop you need:

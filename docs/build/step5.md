@@ -1,4 +1,4 @@
-# Order a RileyLink Compatible Device
+## Order a RileyLink Compatible Device
 
 !!! info "Time Estimate"
     - 15-20 minutes to read about RileyLink compatible devices

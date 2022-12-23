@@ -1,4 +1,4 @@
-# Medtronic Pump Errors
+## Medtronic Pump Errors
 
 The Medtronic pumps are used and typically not under warranty.  Use this section at your own risk.  However, that said, some of the most common pump errors are repairable, or not actually a real problem.
 

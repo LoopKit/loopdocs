@@ -1,4 +1,4 @@
-# Omnipod Faults
+## Omnipod Faults
 
 Pod faults are shown in the HUD:
 

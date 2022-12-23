@@ -1,5 +1,3 @@
-# Algorithm FAQs
-
 ## Does Loop "learn" or detect changes in your insulin needs?
 
 The answer is both Yes and No.

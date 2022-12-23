@@ -1,4 +1,4 @@
-# Loop Services
+## Loop Services
 
 Near the bottom of your Loop settings screen is a section called "Services".
 

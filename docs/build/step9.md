@@ -1,4 +1,4 @@
-# Xcode Preferences (or Settings)
+## Xcode Preferences (or Settings)
 
 !!! info "Time Estimate"
     - about 10-15 minutes to install the Command Line Tools

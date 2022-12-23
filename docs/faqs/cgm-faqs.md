@@ -1,5 +1,3 @@
-# CGM FAQs
-
 ## What CGMs does Loop work with?
 
 Loop 2.2.x works Dexcom G4 with share, G5, G6, ONE, Share and the Medtronic CGM systems compatible with Looping pumps.
