@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bolus-recommendations" class="md-skip">
+        <a href="#loop-manual-bolus" class="md-skip">
           Skip to content
         </a>
       
@@ -1162,8 +1162,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Bolus Recommendations
@@ -1183,14 +1181,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loop-manual-bolus" class="md-nav__link">
+    Loop Manual Bolus
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#algorithm-section-menu" class="md-nav__link">
@@ -1229,7 +1232,7 @@
   
     <li class="md-nav__item">
       <a href="../temp-basal/" class="md-nav__link">
-        Temp Basal Adjustments
+        Automated Adjustments
       </a>
     </li>
   
@@ -2027,14 +2030,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loop-manual-bolus" class="md-nav__link">
+    Loop Manual Bolus
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#algorithm-section-menu" class="md-nav__link">
@@ -2056,8 +2064,11 @@
               
                 
                 
-                <h1 id="bolus-recommendations">Bolus Recommendations<a class="headerlink" href="#bolus-recommendations" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>Loop will recommend bolus insulin corrections when the eventual blood glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target. These recommendations are not proactively sent to the Loop user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that Loop never issues a bolus command automatically while using the default Temp Basal <a href="../../loop-settings/configurations/#dosing-strategy">dosing strategy</a>; all boluses are initiated by the user unless the <a href="../../loop-settings/configurations/#automatic-bolus">automatic bolus</a> dosing strategy is enabled.</p>
+                  <h1>Bolus Recommendations</h1>
+                
+                <h2 id="loop-manual-bolus">Loop Manual Bolus<a class="headerlink" href="#loop-manual-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Loop will recommend bolus insulin corrections when the eventual blood glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target.</p>
+<p>These recommendations are not proactively sent to the Loop user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that Loop never issues a bolus command automatically while using the default Temp Basal <a href="../../loop-settings/configurations/#dosing-strategy">dosing strategy</a>; all boluses are initiated by the user unless the <a href="../../loop-settings/configurations/#automatic-bolus">automatic bolus</a> dosing strategy is enabled. With automatic bolus enabled, each automatic bolus is limited to 40% of the recommended amount or the maximum bolus setting, whichever is smaller.</p>
 <p>The bolus dose calculation is identical to the dose equation given in the basal recommendations section, with the exception that:</p>
 <ul>
 <li>the insulin contribution from the currently running temporary basal set by Loop is removed or subtracted from the recommended bolus amount, and  </li>

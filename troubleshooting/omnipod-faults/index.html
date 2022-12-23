@@ -1181,7 +1181,7 @@
   
     <li class="md-nav__item">
       <a href="../../operation/algorithm/temp-basal/" class="md-nav__link">
-        Temp Basal Adjustments
+        Automated Adjustments
       </a>
     </li>
   
@@ -1299,8 +1299,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Omnipod Faults
@@ -1320,14 +1318,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#omnipod-faults" class="md-nav__link">
+    Omnipod Faults
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#known-internal-pod-fault-codes" class="md-nav__link">
@@ -2046,14 +2049,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#omnipod-faults" class="md-nav__link">
+    Omnipod Faults
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#known-internal-pod-fault-codes" class="md-nav__link">
@@ -2096,7 +2104,9 @@
               
                 
                 
-                <h1 id="omnipod-faults"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Faults<a class="headerlink" href="#omnipod-faults" title="Anchor link to this Header on this Page">&para;</a></h1>
+                  <h1>Omnipod Faults</h1>
+                
+                <h2 id="omnipod-faults"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Faults<a class="headerlink" href="#omnipod-faults" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Pod faults are shown in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>:</p>
 <p align="center"><img alt="img/pod-hud-fault.png" src="../img/pod-hud-fault.png" width="250" /></p>
 <p>Loop will put a higher battery load on a pod than the PDM due to its regular and repeated communications. A pod with lower battery level appears to be more likely to fault for conditions like static electricity and occlusions/pump issues that Loop is not directly causing, like internal fault codes 052, 061, 064 and 066. Pods always perform safety checks and if a potential problem is found, the pod will end itself by screaming and stop with the insulin delivery.</p>

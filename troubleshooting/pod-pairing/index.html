@@ -1181,7 +1181,7 @@
   
     <li class="md-nav__item">
       <a href="../../operation/algorithm/temp-basal/" class="md-nav__link">
-        Temp Basal Adjustments
+        Automated Adjustments
       </a>
     </li>
   
@@ -1285,8 +1285,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Pod Pairing Failures
@@ -1306,14 +1304,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pod-pairing-failures" class="md-nav__link">
+    Pod Pairing Failures
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#why-do-pod-pairings-fail" class="md-nav__link">
@@ -2108,14 +2111,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pod-pairing-failures" class="md-nav__link">
+    Pod Pairing Failures
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#why-do-pod-pairings-fail" class="md-nav__link">
@@ -2220,7 +2228,9 @@
               
                 
                 
-                <h1 id="pod-pairing-failures">Pod Pairing Failures<a class="headerlink" href="#pod-pairing-failures" title="Anchor link to this Header on this Page">&para;</a></h1>
+                  <h1>Pod Pairing Failures</h1>
+                
+                <h2 id="pod-pairing-failures">Pod Pairing Failures<a class="headerlink" href="#pod-pairing-failures" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Have you seen an error message during the pairing process for a new pod? The most common messages are "No response from pod" or "Pod sent ack instead of response", as shown below.</p>
 <p align="center"><img alt="img/pod-pair-fail.jpg" src="../img/pod-pair-fail.jpg" width="550" /></p>
 <p>There have been a large number of fixes and improvements to reduce various pairing problems and to automatically recover from them when they do occur. <strong>Make sure you stay on top of Loop updates to take advantage of these code improvements.</strong> It is <em>strongly</em> recommended to update to a modern stable version (i.e., the current Loop master release) when running any version of Loop prior to V2.2.4 with an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>. In particular, you should <em>never</em> run Loop V2.2.3 with an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> due to a severe UI bug that can result in a partially setup pod where the only possible recovery is an immediate Loop update to be able to complete the pod setup process.</p>

@@ -14,7 +14,7 @@
     
     
       
-        <title>Temp Basal Adjustments - LoopDocs</title>
+        <title>Automated Adjustments - LoopDocs</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#temp-basal-adjustments" class="md-skip">
+        <a href="#calculated-dose" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Temp Basal Adjustments
+              Automated Adjustments
             
           </span>
         </div>
@@ -1190,16 +1190,14 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Temp Basal Adjustments
+          Automated Adjustments
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Temp Basal Adjustments
+        Automated Adjustments
       </a>
       
         
@@ -1211,14 +1209,32 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calculated-dose" class="md-nav__link">
+    Calculated Dose
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculated Dose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-automatic-dosing" class="md-nav__link">
+    No Automatic Dosing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#four-possible-actions" class="md-nav__link">
@@ -2089,14 +2105,32 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calculated-dose" class="md-nav__link">
+    Calculated Dose
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculated Dose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-automatic-dosing" class="md-nav__link">
+    No Automatic Dosing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#four-possible-actions" class="md-nav__link">
@@ -2180,8 +2214,18 @@
               
                 
                 
-                <h1 id="temp-basal-adjustments">Temp Basal Adjustments<a class="headerlink" href="#temp-basal-adjustments" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>The Loop algorithm takes one of four actions depending upon the eventual blood glucose, predicted glucose, and suspend threshold. Note that all temporary basal rate commands are issued for 30 minutes, however they may be updated (re-issued) every 5 minutes. Said another way, Loop may enact a new temporary basal rate every 5 minutes. But, if communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates. Note: If a user is operating Loop in open-loop mode, the Loop will only recommend basal dosing actions and will not automatically enact those recommendations.</p>
+                  <h1>Automated Adjustments</h1>
+                
+                <h2 id="calculated-dose">Calculated Dose<a class="headerlink" href="#calculated-dose" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The Loop algorithm takes one of four actions depending upon the eventual blood glucose, predicted glucose, target range and glucose safety threshold when <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> operation is enabled.</p>
+<p>The recommended insulin dose (positive or negative) is calculated first, then the Temp Basal or <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> to be enacted is modified based on the recommended dose, dosing strategy, maximum Temp Basal and maximum Bolus settings. The automated dosing (increase or decrease) is updated with every <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value - typically every 5 minutes.</p>
+<p><strong><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>: <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></strong></p>
+<p>All temporary basal rate commands are issued for 30 minutes, however they may be updated (re-issued) every 5 minutes. Said another way, Loop may enact a new temporary basal rate every 5 minutes. But, if communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates.</p>
+<p><strong><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>: <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></strong></p>
+<p>If the Looper has selected <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> and an increase in insulin dose is recommended, then the Four Actions discussion below applies to the automatic bolus decision.</p>
+<h3 id="no-automatic-dosing">No Automatic Dosing<a class="headerlink" href="#no-automatic-dosing" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If glucose is entirely below the correction range but above glucose safety level, no automatic increase in insulin delivery will be enacted. The Looper can tap on the manual bolus tool and get a recommendation, but no automatic bolus or high temp basal will be issued automatically until the glucose level is higher than the minimum value of the correction range.</p>
+<p>The premeal button or a named override can be configured with a correction range lower than the scheduled correction to assist in getting insulin delivered automatically after meals.</p>
 <h2 id="four-possible-actions">Four Possible Actions<a class="headerlink" href="#four-possible-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop implements one of four possible temporary basal actions: <strong>decrease</strong>, <strong>increase</strong>, <strong>suspend</strong>, or <strong>resume</strong> a scheduled basal rate.</p>
 <div class="admonition info">

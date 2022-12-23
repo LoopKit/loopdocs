@@ -1176,8 +1176,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Glucose Prediction
@@ -1197,14 +1195,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#blood-glucose-prediction" class="md-nav__link">
+    Blood Glucose Prediction
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
@@ -1353,7 +1356,7 @@
   
     <li class="md-nav__item">
       <a href="../temp-basal/" class="md-nav__link">
-        Temp Basal Adjustments
+        Automated Adjustments
       </a>
     </li>
   
@@ -2151,14 +2154,19 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#blood-glucose-prediction" class="md-nav__link">
+    Blood Glucose Prediction
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
@@ -2304,7 +2312,9 @@
               
                 
                 
-                <h1 id="blood-glucose-prediction">Blood Glucose Prediction<a class="headerlink" href="#blood-glucose-prediction" title="Anchor link to this Header on this Page">&para;</a></h1>
+                  <h1>Glucose Prediction</h1>
+                
+                <h2 id="blood-glucose-prediction">Blood Glucose Prediction<a class="headerlink" href="#blood-glucose-prediction" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop uses an algorithm to maintain blood glucose in a correction range by predicting the contributions from four individual effects (insulin, carbohydrates, retrospective correction, and blood glucose momentum) at any time <em>t</em> to recommend temporary basal rate corrections and boluses.</p>
 <div class="arithmatex">\[ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] \]</div>
 <p>You can see the individual contributions of these effects by tapping on the predicted blood glucose chart on Loop's status screen. Loop updates this blood glucose prediction every five minutes when a new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value has been received and the pump's status has been updated.</p>
@@ -2595,13 +2605,13 @@
       
       
         
-        <a href="../temp-basal/" class="md-footer__link md-footer__link--next" aria-label="Next: Temp Basal Adjustments" rel="next">
+        <a href="../temp-basal/" class="md-footer__link md-footer__link--next" aria-label="Next: Automated Adjustments" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Temp Basal Adjustments
+              Automated Adjustments
             </div>
           </div>
           <div class="md-footer__button md-icon">
