@@ -1,4 +1,4 @@
-# Frequently Asked Questions (FAQs) Overview
+## Frequently Asked Questions (FAQs) Overview
 
 The FAQs tab of LoopDocs contains pages with safety tips, frequently asked questions and the Glossary.
 

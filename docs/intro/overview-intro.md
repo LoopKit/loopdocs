@@ -1,5 +1,3 @@
-# LoopDocs Overview
-
 ## LoopDocs Contents
 
 The LoopDocs website is organized as follows

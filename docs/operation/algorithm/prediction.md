@@ -1,4 +1,4 @@
-# Blood Glucose Prediction
+## Blood Glucose Prediction
 
 Loop uses an algorithm to maintain blood glucose in a correction range by predicting the contributions from four individual effects (insulin, carbohydrates, retrospective correction, and blood glucose momentum) at any time *t* to recommend temporary basal rate corrections and boluses.
 

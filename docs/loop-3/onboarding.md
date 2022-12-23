@@ -1,5 +1,3 @@
-# Onboarding
-
 ## New Looper
 
 !!! danger "New Loopers Should NOT Use Loop-dev Before it is Released"

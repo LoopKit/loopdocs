@@ -1,4 +1,4 @@
-# Apple Watch
+## Apple Watch
 
 The Loop user can directly enter carbs and boluses and turn on or off premeal or override settings from the watch, without needing to access the iPhone.
 

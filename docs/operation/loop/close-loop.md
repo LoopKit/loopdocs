@@ -1,4 +1,4 @@
-# Closed-Loop
+## Closed-Loop
 
 After you learn what you need from open-loop, this page provides suggestions to smooth the transition to closed loop.
 

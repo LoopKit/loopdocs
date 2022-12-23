@@ -1,4 +1,4 @@
-# Therapy Settings
+## Loop Therapy Settings
 
 During [Onboarding](onboarding.md#therapy-settings-onboarding), all of your therapy settings were entered.
 

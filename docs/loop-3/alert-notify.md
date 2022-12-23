@@ -1,5 +1,3 @@
-# Loop 3 Alerts and Notifications
-
 !!! info "Work in Progress"
     This page was proposed as a good place to collect Loop 3 alerts and notifications.
     

@@ -1,4 +1,4 @@
-# Loop Crashes Upon Opening
+## Loop Crashes Upon Opening
 
 If your Loop app crashes immediately upon opening, you have a problem that needs to be fixed. What do I mean by "crashes"? Your Loop app immediately turns to a white screen and shuts itself down, landing you back at your iPhone's main screen. No amount of tapping will let you keep your Loop app open.
 

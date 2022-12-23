@@ -1,4 +1,4 @@
-# Compatible iPhone or iPod touch
+## Compatible iPhone or iPod touch
 
 !!! info "Time Estimate"
     - 5 minutes, to check your device and iOS

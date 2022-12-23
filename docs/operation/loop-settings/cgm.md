@@ -1,4 +1,4 @@
-# Add CGM
+## Add CGM
 
 Now we need to add a CGM source so that Loop has BG data. From the Loop settings screen, select `Add CGM`.
 

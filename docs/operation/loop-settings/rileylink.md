@@ -1,4 +1,4 @@
-# RileyLink
+## RileyLink
 
 The RileyLink (or compatible device) screen is accessed by clicking on the image of your connected pump in Loop settings or the pump icon in the Heads Up Display to bring up the associated pump screen. From that screen, scroll down to the section labeled `DEVICES` to view the list of connected RileyLink compatible device(s) and tap on the name with a green slider that you want to display. An example is shown in the graphic below.
 

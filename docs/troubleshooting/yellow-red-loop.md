@@ -1,5 +1,3 @@
-# Red Loops
-
 ## Red Loop Overview
 
 This page provides help if your Loop icon is red and Loop is not working or only working sometimes. You can click on the Red Loop icon to read an error message. If you understand it, great...that should help you fix the problem. If not, grab a screenshot so you can ask for help from a mentor.

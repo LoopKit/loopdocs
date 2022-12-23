@@ -1,4 +1,4 @@
-# Insulin Counteraction Effects
+## Insulin Counteraction Effects
 
 Tapping on your Carbohydrates graph will open up a page that tracks your carb entries for the day (since midnight).  At the top of the page is a useful graphic called Insulin Counteraction Effects (ICE for short).  What is it?  Basically, a graphical representation of ***predicted*** upward-BG effects vs. ***encountered*** upward-BG effects.
 

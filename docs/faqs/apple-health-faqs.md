@@ -1,5 +1,3 @@
-# Apple HealthKit FAQs
-
 ## How does Loop use Apple HealthKit?
 
 Loop uses Apple HealthKit as long term storage for glucose, insulin and carbohydrates.  But there is more going on than simple storage.

@@ -1,4 +1,4 @@
-# Loop Development
+## Loop Development
 
 The early history of Loop was touched on in the introductory [LoopDocs Overview: Development History](../intro/overview-intro.md#development-history) section.
 

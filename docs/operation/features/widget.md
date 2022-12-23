@@ -1,5 +1,3 @@
-# iPhone Widget
-
 ## Loop 3
 
 An updated new-style Loop-dev widget is in process. There are a lot of updates with widgets. With the advent of iOS 16, you can add widgets that show up on the lock screen without need to swipe to view. There is work in progress on this - please be patient.

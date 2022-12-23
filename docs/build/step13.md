@@ -1,4 +1,4 @@
-# Loop Dev Script
+## Loop Dev Script
 
 The dev branch is tested by developers and users. Users who want to test dev must be willing to follow zulipchat and provide feedback to the developers. The developers are still actively making improvements, which has the potential to break things.
 

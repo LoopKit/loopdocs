@@ -1,5 +1,3 @@
-# Loop 3 Displays
-
 This page has detailed information about Loop 3 Displays.
 
 If you are running Loop v2.2.x, follow this link: [Loop v2.2.x Displays](../operation/loop-settings/displays.md).

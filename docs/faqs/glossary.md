@@ -1,5 +1,3 @@
-# Glossary
-
 Each item in the glossary is also a Tooltip.
 
 A Tooltip is visible as a dashed underline word or phrase.

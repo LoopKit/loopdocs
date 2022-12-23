@@ -1,4 +1,4 @@
-# Meet the Community
+## Meet the Community
 
 !!! info "Time Estimate"
     - Read about your [Social Media Options](../intro/loopdocs-how-to.md#how-to-find-help): 5 minutes

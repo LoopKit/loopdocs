@@ -1,4 +1,4 @@
-# Compatible CGM
+## Compatible CGM
 
 !!! info "Time Estimate"
 

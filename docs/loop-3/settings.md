@@ -1,4 +1,4 @@
-# Settings
+## Loop Settings Screen
 
 The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the [Toolbar](displays_v3.md#toolbar) on the app [home screen](displays_v3.md#main-loop-screen).
 

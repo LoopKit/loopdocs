@@ -1,4 +1,4 @@
-# Health Data
+## Health Data
 
 The Loop app uses the Health app to record blood glucose, insulin, and carbohydrate data. The blood glucose, insulin, and carbohydrate data stored in the Health app can also be accessed and uploaded by the [Tidepool](https://tidepool.org) Mobile app which enables display on of your data on the Tidepool web-based display tool. Please review the settings below to ensure you have the proper settings.
 

@@ -1,4 +1,4 @@
-# Simulator Build
+## Simulator Build
 
 There are 2 main types of simulators users may want to build. Each of these require less up-front acquisition of hardware and may be desirable as a first step towards becoming a Looper.
 

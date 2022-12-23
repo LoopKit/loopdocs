@@ -1,6 +1,8 @@
-# Bolus Recommendations
+## Loop Manual Bolus
 
-Loop will recommend bolus insulin corrections when the eventual blood glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target. These recommendations are not proactively sent to the Loop user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that Loop never issues a bolus command automatically while using the default Temp Basal [dosing strategy](../../loop-settings/configurations/#dosing-strategy); all boluses are initiated by the user unless the [automatic bolus](../../loop-settings/configurations/#automatic-bolus) dosing strategy is enabled.
+Loop will recommend bolus insulin corrections when the eventual blood glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target.
+
+These recommendations are not proactively sent to the Loop user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that Loop never issues a bolus command automatically while using the default Temp Basal [dosing strategy](../../loop-settings/configurations/#dosing-strategy); all boluses are initiated by the user unless the [automatic bolus](../../loop-settings/configurations/#automatic-bolus) dosing strategy is enabled. With automatic bolus enabled, each automatic bolus is limited to 40% of the recommended amount or the maximum bolus setting, whichever is smaller.
 
 The bolus dose calculation is identical to the dose equation given in the basal recommendations section, with the exception that:
 

@@ -1,4 +1,4 @@
-# Overrides
+## How Overrides Work
 
 Overrides let Loop know selected settings are modified for the duration of the override. The override can change either the correction range or the overall insulin needs or both. When you set an override on insulin needs, the override adjusts basal schedule, ISF, and CR together. Examples where this can be helpful include hormone cycles, steroid medications and/or exercise.
 
@@ -6,8 +6,6 @@ Override presets are (1) optional and (2) can be configured within Loop's workou
 
 ![img/toolbar.png](img/toolbar-override.svg){width="450"}
 {align="center"}
-
-## How Overrides Work
 
 Overrides allow you to specify:
 

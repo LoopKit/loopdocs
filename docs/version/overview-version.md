@@ -1,4 +1,4 @@
-# Version Overview
+## Version Overview
 
 The Version tab of LoopDocs contains information about Loop versions, code customization and development.
 

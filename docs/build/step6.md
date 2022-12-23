@@ -1,4 +1,4 @@
-# Enroll in Apple Developer Program
+## Enroll in Apple Developer Program
 
 !!! info "Time Estimate"
     - 15-20 minutes to complete the enrollment forms

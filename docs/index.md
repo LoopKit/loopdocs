@@ -3,7 +3,7 @@ hide:
     - navigation
 ---
 
-# Welcome to Loop
+## Welcome to Loop
 
 Welcome to the "LoopDocs" website where you can learn about Loop.
 

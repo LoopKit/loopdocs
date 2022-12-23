@@ -1,4 +1,4 @@
-# Compatible Pump
+## Compatible Pump
 
 !!! info "Time Estimate"
     - Omnipod users: 3 seconds to remember which PDM you've been using.

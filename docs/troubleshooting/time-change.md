@@ -1,5 +1,3 @@
-# Time Change FAQs
-
 ## Time Zones, Daylight Savings Time, Summer Time
 
 Loop operates across time zones and time changes. The phone that is running Loop will automatically update the time, but you choose when to modify the time zone for "pump time".

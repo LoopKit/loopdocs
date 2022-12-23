@@ -118,7 +118,7 @@ nav:
         - 'Algorithm Overview': 'operation/algorithm/overview.md'
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
         - 'Glucose Prediction': 'operation/algorithm/prediction.md'
-        - 'Temp Basal Adjustments': 'operation/algorithm/temp-basal.md'
+        - 'Automated Adjustments': 'operation/algorithm/temp-basal.md'
 - Troubleshoot:
     - 'Troubleshooting Overview': 'troubleshooting/overview.md'
     - 'Loop App crashes': 'troubleshooting/loop-crashing.md'

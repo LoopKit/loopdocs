@@ -1,5 +1,3 @@
-# CGM Configuration
-
 ## CGM Choices
 
 A CGM can be added from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
