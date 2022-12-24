@@ -2276,11 +2276,12 @@
 <div class="admonition warning">
 <p class="admonition-title">Remote Nightscout Interface Caveats</p>
 <ul>
-<li>Requires push notification - only available if you built your Loop app using a paid Apple developer account</li>
-<li>Should work (but has not been tested by LoopDocs authors) with all but one method for setting up Nightscout</li>
-<li>If you use T1Pal Nightscout account service (<a href="https://t1pal.com">T1Pal</a>)<ul>
-<li>You cannot enter your push notification information for Loop that you build yourself</li>
-<li>You can choose another Nightscout option or use their service for Loop at an additional fee to get remote operation with released code</li>
+<li>Requires Apple push notifications - not available with a Free account</li>
+<li>Should work (but has not been tested by LoopDocs authors) with all but one method (T1Pal) for setting up Nightscout</li>
+<li>If you use T1Pal service to provide your Nightscout site<ul>
+<li>You cannot enter your own Apple push notification (APN) information in T1Pal nightscout</li>
+<li>The Nightscout and Loop APN must have matching developer ID information (as explained later on this page)</li>
+<li>If you want to use remote options with T1Pal Nightscout, you must use their service for Loop at an additional fee</li>
 </ul>
 </li>
 <li>It is strongly recommended that you build Loop yourself</li>
@@ -2318,7 +2319,7 @@
 <p>Remote bolus and remote carb capability is added with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, currently under test as Loop dev. In order to support this capability, there are new minimum versions:</p>
 <ul>
 <li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (Loop dev) or newer</li>
-<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 or newer</li>
+<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 or newer</li>
 <li>Nightscout version 14.2.6 or newer<ul>
 <li>Required to get all the features</li>
 </ul>
@@ -2329,6 +2330,12 @@
 <li><a href="#loopcaregiver">LoopCaregiver</a> app (<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 or higher) enables the following from the caregiver's phone<ul>
 <li>monitor Loop</li>
 <li>issue remote commands for carbs, bolus and overrides</li>
+</ul>
+</li>
+<li>To clarify minimum versions for using updated remote features with LoopCaregiver<ul>
+<li>LoopCaregiver phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16</li>
+<li>Loop phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 running Loop-dev</li>
+<li>Nightscout 14.2.6</li>
 </ul>
 </li>
 </ul>
@@ -2487,10 +2494,13 @@
 </div>
 <h2 id="using-remote-commands">Using Remote Commands<a class="headerlink" href="#using-remote-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are four ways you can trigger your commands remotely; <a href="#loopcaregiver">LoopCaregiver</a> (under development), <a href="#nightscout-careportal">Nightscout Careportal</a>, <a href="#shortcuts">Shortcuts</a>, and <a href="#ifttt">IFTTT</a>.</p>
-<p><strong>Please update to a minimum version of Nightscout 14.2.6</strong></p>
-<p>If you used a remote method for your build of Loop, don't forget you must add LOOP_PUSH_SERVER_ENVIRONMENT config variable to your Nightcout site or remote commands will not work. <a href="#remote-build-config-var-requirement">LoopDocs: Remote Build Config Var Requirement</a></p>
+<p>Config Var Reminder:</p>
+<ul>
+<li>If you used a remote method for your build of Loop, don't forget you must add LOOP_PUSH_SERVER_ENVIRONMENT config variable to your Nightcout site or remote commands will not work. <a href="#remote-build-config-var-requirement">LoopDocs: Remote Build Config Var Requirement</a></li>
+<li>If you then return to <abbr title="program used to build an app">Xcode</abbr> build, you must remove the LOOP_PUSH_SERVER_ENVIRONMENT config var.</li>
+</ul>
 <h3 id="loopcaregiver">LoopCaregiver   <img alt="icon for LoopCaregiver app" src="../img/lcg-icon.jpg" width="50" /><a class="headerlink" href="#loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The LoopCaregiver app is under development, works only with Loop-dev and requires an iPhone running at least <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16.</p>
+<p>The LoopCaregiver app is under development, works only with Loop-dev and requires an iPhone running at least <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 for the caregiver phone. The Looper's phone minimum requirement is <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 with Loop-dev installed.</p>
 <p>You must be running a minimum version of Nightscout 14.2.6 in order to use LoopCaregiver.</p>
 <div class="admonition warning">
 <p class="admonition-title">Older NS Versions</p>

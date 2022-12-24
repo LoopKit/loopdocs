@@ -1645,6 +1645,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-3-build-time-features" class="md-nav__link">
+    Loop 3 Build-Time Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#instructions-for-finding-the-lines" class="md-nav__link">
     Instructions for Finding the Lines
   </a>
@@ -2275,6 +2282,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-3-build-time-features" class="md-nav__link">
+    Loop 3 Build-Time Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#instructions-for-finding-the-lines" class="md-nav__link">
     Instructions for Finding the Lines
   </a>
@@ -2533,6 +2547,41 @@
 </li>
 </ul>
 </div>
+<h2 id="loop-3-build-time-features"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Build-Time Features<a class="headerlink" href="#loop-3-build-time-features" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>With <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, some features are enabled or disabled by default but can be turned on by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file. This is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the <abbr title="program used to build an app">Xcode</abbr> folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.</p>
+<p>These flags are always upper case with underscore separating words for clarity. They are inserted after the word <code>$(inherited)</code> and before the <code>//</code>. The <code>//</code> indicates the flags to the right are not enabled. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space.</p>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>// Features
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
+</code></pre></div>
+<p>The example below is for someone who wants the eventual glucose to display on their watch face.</p>
+<p><em>Code After Modification</em></p>
+<div class="highlight"><pre><span></span><code>// Features
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
+</code></pre></div>
+<p>List of some flags and what they do:</p>
+<table>
+<thead>
+<tr>
+<th>FLAG</th>
+<th>PURPOSE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED</td>
+<td>The Apple Watch screens show current glucose and trend arrow by default. This flag adds eventual glucose to the display.</td>
+</tr>
+<tr>
+<td>OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED</td>
+<td>Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health.</td>
+</tr>
+<tr>
+<td>SIRI_DISABLED</td>
+<td>Required to build Loop from <abbr title="program used to build an app">Xcode</abbr> with a free developer account</td>
+</tr>
+</tbody>
+</table>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory.</p>
 <p><strong>For each change you make in <abbr title="program used to build an app">Xcode</abbr> - be sure to save the file - otherwise the modification does not get built into your app.</strong></p>
