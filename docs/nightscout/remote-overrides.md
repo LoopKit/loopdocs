@@ -6,11 +6,11 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
 
 !!! warning "Remote Nightscout Interface Caveats"
     * Requires Apple push notifications - not available with a Free account
-    * Should work (but has not been tested by LoopDocs authors) with all but one method (T1Pal) for setting up Nightscout
+    * Remote commands should work with all but one method (T1Pal) for setting up Nightscout
     * If you use T1Pal service to provide your Nightscout site
         * You cannot enter your own Apple push notification (APN) information in T1Pal nightscout
         * The Nightscout and Loop APN must have matching developer ID information (as explained later on this page)
-        * If you want to use remote options with T1Pal Nightscout, you must use their service for Loop at an additional fee
+        * If you want to use remote overrides with T1Pal Nightscout, you must use their service to provide Loop (2.2.9) at an additional monthly fee (remote carb and bolus are not available in 2.2.9)
     * It is strongly recommended that you build Loop yourself
 
 !!! danger "Remote Builds"
