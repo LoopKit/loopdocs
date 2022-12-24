@@ -8,7 +8,7 @@ Three methods to build Loop-dev are mentioned on this page:
 
 1. For those who have a Mac and want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions, a script is provided to build a lightly-tested version of Loop-dev.
 
-1. For those who don't own a mac or want the convenience of TestFlight to support themselves or a family member, please read [Build Loop dev using Github Actions](#build-loop-dev-using-github-actions).
+1. For those who don't own a Mac or want the convenience of TestFlight to support themselves or a family member, please read [Build Loop using Github Actions](#build-loop-using-github-actions).
 
 1. For those who feel comfortable composing and issuing git commands to the terminal, refer to the instructions on the [LoopWorkspace](../version/loopworkspace.md) page.
 
@@ -163,7 +163,9 @@ The commit is identified by a 7-digit alphanumeric code.  That code was also app
 When you ran the BuildLoopFixedDev script, the instructions informed you of the commit.
 
 
-## Build Loop-dev using Github Actions
+## Build Loop using Github Actions
+
+This is only available with Loop-dev.
 
 **No matter the method used to build Loop-dev: script, github actions or git commands, you are testing development code.**
 
@@ -181,7 +183,7 @@ After successfully building Loop using Actions in github, here are two important
 
 1. Once you have installed TestFlight on your phone and you see your app in the TestFlight screen, tap on it to see an expanded screen with an option to automatically update or not.  You should choose which you prefer. If you do not turn it off, the app will automatically update whenever a new Build action completes in your github fork.
 
-1. The Apple ID used to sign in for TestFlight on a given phone does not have to match the Apple ID of the phone user. This is important for children. [Loopers Need Their Own Apple ID](step6.md#loopers-need-their-own-apple-id), but children cannot use TestFlight with their ID.
+1. The Apple ID used to sign in for TestFlight on a given phone does not have to match the Apple ID of the phone user. This is important for children. [Loopers Need Their Own Apple ID](step6.md#loopers-need-their-own-apple-id), but children cannot use TestFlight with their ID. If you plan to [Install Loop for Child](#install-loop-for-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the TestFlight invitation to the email associated with your ID.
 
 ### Install Loop for Child
 
