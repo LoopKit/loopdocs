@@ -1,6 +1,6 @@
 ## Set Up Remote for Nightscout
 
-You can use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop. 
+You can use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop.
 
 If you are using Loop-dev, then you can also send remote commands to add carbs and command a bolus.
 
@@ -11,6 +11,20 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
         * You cannot enter your push notification information for Loop that you build yourself
         * You can choose another Nightscout option or use their service for Loop at an additional fee to get remote operation with released code
     * It is strongly recommended that you build Loop yourself
+
+!!! danger "Remote Builds"
+    There are several methods for building remotely for your family members (or even yourself).
+
+    * [LoopDocs: Github Build Actions](../build/build-select-dev.md#build-loop-dev-using-github-actions) (new with Loop-dev) allows you to build on a browser (no need for a Mac) and send Loop to your phone using TestFlight
+    * [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/) allows you to save a build created by Xcode, store it in the cloud and then download and install on your phone later
+
+    Both of these remote options require this [Nightscout: Config Var](https://nightscout.github.io/nightscout/setup_variables/#nightscout-config-vars) to be added to Nightscout:
+
+    `LOOP_PUSH_SERVER_ENVIRONMENT` = `production`
+
+    Be aware that if you then return to building directly from Xcode, you must disable that config var from Nightscout and restart the server.
+
+    Note - this is covered in detail in Step 3 below when you [LoopDocs: Add APN Variables to Nightscout](#add-apn-variables-to-nightscout).
 
 
 !!! abstract "What you will need to do.."
@@ -25,10 +39,11 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
 
 !!! tip "New Feature in Loop 3"
     Remote bolus and remote carb capability is added with Loop 3, currently under test as Loop dev. In order to support this capability, there are new minimum versions:
-    
+
     * Loop 3 (Loop dev) or newer
     * iOS 15 or newer
-    * Nightscout version 14.0 or newer
+    * Nightscout version 14.2.6 or newer
+        * Required to get all the features
 
     Not required and still under development, but users who are testing this separate app are pleased
 
@@ -85,11 +100,11 @@ The next part of this will help your Loop app give permissions to your Nightscou
 
 ### Update Nightscout Site
 
-You'll need to make sure your Nightscout site version is at version 13.0.1 or newer for remote overrides and version 14.0 or newer for all remote commands.  (It's a good idea to keep Nightscout updated to the latest version; but those versions are sufficient for remote overrides or remote carb, bolus and overrides). You can check your version number by looking at the bottom of your NS site's settings (tap on the hamburger menu - three horizontal lines at the upper right), near where the authentication button is located. 
+You'll need to make sure your Nightscout site version is at version 13.0.1 or newer for remote overrides and version 14.2.6 or newer for access to all the remote command features. You can check your version number by looking at the bottom of your NS site's settings (tap on the hamburger menu - three horizontal lines at the upper right), near where the authentication button is located.
 
-This link should be used if you want to [Nightscout: Update](https://nightscout.github.io/update/update/) your Nightscout site. 
+This link should be used if you want to [Nightscout: Update](https://nightscout.github.io/update/update/) your Nightscout site.
 
-Note - for Google Cloud users, the original [Xdrip: Google Cloud Nightscout](https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html) instructions include information about updating your site. Scroll down to the line (on that page) that says `Update Nightscout`.
+Note - for Google Cloud users, the [Xdrip: Google Cloud Nightscout](https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html) instructions include information about updating your site. Scroll down to the line (on that page) that says `Update Nightscout`.
 
 ### Add APN Variables to Nightscout
 
@@ -97,7 +112,7 @@ In order to use remote overrides, you must add a couple of new variables. If you
 
 The instructions in this section show Heroku images. If you are using a different method, you should be able to "translate" the steps.
 
-Go to the `Settings` tab near the top of the screen on your Heroku app and then click on `Reveal Config Vars`.  
+Go to the `Settings` tab near the top of the screen on your Heroku app and then click on `Reveal Config Vars`.
 
 ![img/heroku5.png](img/heroku5.png){width="650"}
 {align="center"}
@@ -113,6 +128,11 @@ Scroll down the bottom of the Config Vars lines until you find the last blank on
 |LOOP_APNS_KEY_ID|string of characters on the .p8 download file immediately following the underscore (  _  ) and not including the file extension ( .p8 ), or you can get it from your saved key in your developer account as shown next step, too ![img/apns-open2.png](img/apns-open2.png)
 |LOOP_DEVELOPER_TEAM_ID|get this value from Loop app signing or in your developer account's top right corner under your name ![img/apns-vars.png](img/apns-vars.png)|
 |LOOP_PUSH_SERVER_ENVIRONMENT| (optional) Set this to production if you installed Loop remotely such as with TestFlight, Diawi, AppCenter, or an IPA. If you built directly to your phone in XCode with your phone plugged into to your computer, do not include this variable.|
+
+#### Remote Build Config Var Requirement
+
+That last row of the table above is needed if you are using a remote build option such as [LoopDocs: Github Build Actions](../build/build-select-dev.md#build-loop-dev-using-github-actions) or downloaded an archived file via [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/). If you later return to a direct Xcode build to your phone, you must remove that config var or remote commands will not work.
+
 
 When executed properly, you should have something that looks like this for your three new variables that you added:
 
@@ -160,7 +180,7 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
     If you plan to send a carb command remotely and later decide to issue a bolus command - STOP and consider.
 
     There are 2 scenarios of concern that could lead to too much insulin:
-    
+
     * Looper is using Temp Basal Dosing Strategy
         * Loop will initiate a max Temp Basal when it receives the carb remote command
         * Your bolus will be accepted and take place in addition to the high temp basal
@@ -181,9 +201,23 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
 
 There are four ways you can trigger your commands remotely; [LoopCaregiver](#loopcaregiver) (under development), [Nightscout Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
 
+**Please update to a minimum version of Nightscout 14.2.6**
+
+If you used a remote method for your build of Loop, don't forget you must add LOOP_PUSH_SERVER_ENVIRONMENT config variable to your Nightcout site or remote commands will not work. [LoopDocs: Remote Build Config Var Requirement](#remote-build-config-var-requirement)
+
+
 ### LoopCaregiver   ![icon for LoopCaregiver app](img/lcg-icon.jpg){width="50"}
 
 The LoopCaregiver app is under development, works only with Loop-dev and requires an iPhone running at least iOS 16.
+
+You must be running a minimum version of Nightscout 14.2.6 in order to use LoopCaregiver.
+
+!!! warning "Older NS Versions"
+    If you ignore this minimum version requirement - what happens:
+
+    * If you attempt to use the carb entry in the past or future, the caregiver app accepts it but the remote commands accepted by the Loopers phone show up at the current time - not when the caregiver intended to insert carbs
+    * Please take the time to update your Nightscout site to master
+    * Nightscout 14.2.6 was released 30-Sep-2022 as Classic Liquorice
 
 If you plan to use LoopCaregiver, please join [Loop Caregiver App](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) zulipchat stream.
 
@@ -201,9 +235,16 @@ Open a terminal window. Copy the line below that starts with `/bin/bash` by hove
 
 Paste the line into the Terminal window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.
 
+!!! warning "Not Loop"
+    The output you see in the Terminal may look very similar to when you build Loop dev from a script.
+
+    It is pulling down a clone from a different location (gestrich instead of LoopKit) and just the caregiver branch. Do not attempt to build Loop with this download.
+
+    The developers say: "The Caregiver app is being designed to be a full Loop integrated app, being able to benefit from Loop data stores, visualization, and other parts of the system that are mature and have a lot of design/thought put into them. At some point it will just be a single checkout, and you can build both."  **But NOT yet**
+
 #### Use LoopCaregiver
 
-Some limited directions for using the LoopCaregiver app are provided - please also read the zulipchat stream. 
+Some limited directions for using the LoopCaregiver app are provided - please also read the zulipchat stream.
 
 #### LoopCaregiver Main Screen
 
