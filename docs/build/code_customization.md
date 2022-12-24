@@ -42,6 +42,35 @@ Be sure to read the [Instructions for Finding the Lines](code_customization.md#i
     * Users of Loop-dev refer to the Loop 3 examples.
         * Note that some changes are in a different file for Loop-dev (part of the architecture upgrade for the app).
 
+## Loop 3 Build-Time Features
+
+With Loop 3, some features are enabled or disabled by default but can be turned on by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file. This is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.
+
+These flags are always upper case with underscore separating words for clarity. They are inserted after the word `$(inherited)` and before the `//`. The `//` indicates the flags to the right are not enabled. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space.
+
+_Code Before Modification_
+
+```
+// Features
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
+```
+
+The example below is for someone who wants the eventual glucose to display on their watch face.
+
+_Code After Modification_
+
+```
+// Features
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
+```
+
+List of some flags and what they do:
+
+|FLAG|PURPOSE|
+|---------|---------|
+|SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED|The Apple Watch screens show current glucose and trend arrow by default. This flag adds eventual glucose to the display.|
+|OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED|Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health.|
+|SIRI_DISABLED|Required to build Loop from Xcode with a free developer account|
 
 ## Instructions for Finding the Lines
 
@@ -102,6 +131,7 @@ These folder icon names are different from the directory names on the computer:
 | Amplitude | Amplitude-iOS | 
 
 All other icons and directory names match.
+
 
 ## Disable Authentication for Bolusing
 

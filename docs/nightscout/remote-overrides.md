@@ -5,11 +5,12 @@ You can use your Nightscout site to remotely set and cancel your override preset
 If you are using Loop-dev, then you can also send remote commands to add carbs and command a bolus.
 
 !!! warning "Remote Nightscout Interface Caveats"
-    * Requires push notification - only available if you built your Loop app using a paid Apple developer account
-    * Should work (but has not been tested by LoopDocs authors) with all but one method for setting up Nightscout
-    * If you use T1Pal Nightscout account service ([T1Pal](https://t1pal.com))
-        * You cannot enter your push notification information for Loop that you build yourself
-        * You can choose another Nightscout option or use their service for Loop at an additional fee to get remote operation with released code
+    * Requires Apple push notifications - not available with a Free account
+    * Should work (but has not been tested by LoopDocs authors) with all but one method (T1Pal) for setting up Nightscout
+    * If you use T1Pal service to provide your Nightscout site
+        * You cannot enter your own Apple push notification (APN) information in T1Pal nightscout
+        * The Nightscout and Loop APN must have matching developer ID information (as explained later on this page)
+        * If you want to use remote options with T1Pal Nightscout, you must use their service for Loop at an additional fee
     * It is strongly recommended that you build Loop yourself
 
 !!! danger "Remote Builds"
@@ -41,7 +42,7 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
     Remote bolus and remote carb capability is added with Loop 3, currently under test as Loop dev. In order to support this capability, there are new minimum versions:
 
     * Loop 3 (Loop dev) or newer
-    * iOS 15 or newer
+    * iOS 15.1 or newer
     * Nightscout version 14.2.6 or newer
         * Required to get all the features
 
@@ -50,6 +51,10 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
     * [LoopCaregiver](#loopcaregiver) app (iOS 16 or higher) enables the following from the caregiver's phone
         * monitor Loop
         * issue remote commands for carbs, bolus and overrides
+    * To clarify minimum versions for using updated remote features with LoopCaregiver
+        * LoopCaregiver phone iOS 16
+        * Loop phone iOS 15.1 running Loop-dev
+        * Nightscout 14.2.6
 
     The expanded capabilities for remote commands in Loop-dev are currently documented in this [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM). That information will be incorporated into LoopDocs soon.
 
@@ -201,14 +206,15 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
 
 There are four ways you can trigger your commands remotely; [LoopCaregiver](#loopcaregiver) (under development), [Nightscout Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
 
-**Please update to a minimum version of Nightscout 14.2.6**
+Config Var Reminder:
 
-If you used a remote method for your build of Loop, don't forget you must add LOOP_PUSH_SERVER_ENVIRONMENT config variable to your Nightcout site or remote commands will not work. [LoopDocs: Remote Build Config Var Requirement](#remote-build-config-var-requirement)
+* If you used a remote method for your build of Loop, don't forget you must add LOOP_PUSH_SERVER_ENVIRONMENT config variable to your Nightcout site or remote commands will not work. [LoopDocs: Remote Build Config Var Requirement](#remote-build-config-var-requirement)
+* If you then return to Xcode build, you must remove the LOOP_PUSH_SERVER_ENVIRONMENT config var.
 
 
 ### LoopCaregiver   ![icon for LoopCaregiver app](img/lcg-icon.jpg){width="50"}
 
-The LoopCaregiver app is under development, works only with Loop-dev and requires an iPhone running at least iOS 16.
+The LoopCaregiver app is under development, works only with Loop-dev and requires an iPhone running at least iOS 16 for the caregiver phone. The Looper's phone minimum requirement is iOS 15.1 with Loop-dev installed.
 
 You must be running a minimum version of Nightscout 14.2.6 in order to use LoopCaregiver.
 
