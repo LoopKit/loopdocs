@@ -2271,7 +2271,7 @@
                   <h1>Remote Commands</h1>
                 
                 <h2 id="set-up-remote-for-nightscout">Set Up Remote for Nightscout<a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You can use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop. </p>
+<p>You can use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop.</p>
 <p>If you are using Loop-dev, then you can also send remote commands to add carbs and command a bolus.</p>
 <div class="admonition warning">
 <p class="admonition-title">Remote Nightscout Interface Caveats</p>
@@ -2285,6 +2285,18 @@
 </li>
 <li>It is strongly recommended that you build Loop yourself</li>
 </ul>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Remote Builds</p>
+<p>There are several methods for building remotely for your family members (or even yourself).</p>
+<ul>
+<li><a href="../../build/build-select-dev/#build-loop-dev-using-github-actions">LoopDocs: Github Build Actions</a> (new with Loop-dev) allows you to build on a browser (no need for a Mac) and send Loop to your phone using TestFlight</li>
+<li><a href="https://www.loopandlearn.org/remote-build/">Loop and Learn: Remote Build with Diawi</a> allows you to save a build created by <abbr title="program used to build an app">Xcode</abbr>, store it in the cloud and then download and install on your phone later</li>
+</ul>
+<p>Both of these remote options require this <a href="https://nightscout.github.io/nightscout/setup_variables/#nightscout-config-vars">Nightscout: Config Var</a> to be added to Nightscout:</p>
+<p><code>LOOP_PUSH_SERVER_ENVIRONMENT</code> = <code>production</code></p>
+<p>Be aware that if you then return to building directly from <abbr title="program used to build an app">Xcode</abbr>, you must disable that config var from Nightscout and restart the server.</p>
+<p>Note - this is covered in detail in Step 3 below when you <a href="#add-apn-variables-to-nightscout">LoopDocs: Add APN Variables to Nightscout</a>.</p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">What you will need to do..</p>
@@ -2307,7 +2319,10 @@
 <ul>
 <li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (Loop dev) or newer</li>
 <li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 or newer</li>
-<li>Nightscout version 14.0 or newer</li>
+<li>Nightscout version 14.2.6 or newer<ul>
+<li>Required to get all the features</li>
+</ul>
+</li>
 </ul>
 <p>Not required and still under development, but users who are testing this separate app are pleased</p>
 <ul>
@@ -2360,13 +2375,13 @@
 <p><img alt="img/apns-copy-key.png" src="../img/apns-copy-key.png" /></p>
 <h2 id="step-3-add-apn-to-nightscout">Step 3: Add APN to Nightscout<a class="headerlink" href="#step-3-add-apn-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="update-nightscout-site">Update Nightscout Site<a class="headerlink" href="#update-nightscout-site" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You'll need to make sure your Nightscout site version is at version 13.0.1 or newer for remote overrides and version 14.0 or newer for all remote commands.  (It's a good idea to keep Nightscout updated to the latest version; but those versions are sufficient for remote overrides or remote carb, bolus and overrides). You can check your version number by looking at the bottom of your NS site's settings (tap on the hamburger menu - three horizontal lines at the upper right), near where the authentication button is located. </p>
-<p>This link should be used if you want to <a href="https://nightscout.github.io/update/update/">Nightscout: Update</a> your Nightscout site. </p>
-<p>Note - for Google Cloud users, the original <a href="https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html">Xdrip: Google Cloud Nightscout</a> instructions include information about updating your site. Scroll down to the line (on that page) that says <code>Update Nightscout</code>.</p>
+<p>You'll need to make sure your Nightscout site version is at version 13.0.1 or newer for remote overrides and version 14.2.6 or newer for access to all the remote command features. You can check your version number by looking at the bottom of your NS site's settings (tap on the hamburger menu - three horizontal lines at the upper right), near where the authentication button is located.</p>
+<p>This link should be used if you want to <a href="https://nightscout.github.io/update/update/">Nightscout: Update</a> your Nightscout site.</p>
+<p>Note - for Google Cloud users, the <a href="https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html">Xdrip: Google Cloud Nightscout</a> instructions include information about updating your site. Scroll down to the line (on that page) that says <code>Update Nightscout</code>.</p>
 <h3 id="add-apn-variables-to-nightscout">Add APN Variables to Nightscout<a class="headerlink" href="#add-apn-variables-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In order to use remote overrides, you must add a couple of new variables. If you don't know how to update your Nightscout Configuration, review <a href="https://nightscout.github.io/nightscout/setup_variables/">Nightscout: Setup Variables</a> and then come back.</p>
 <p>The instructions in this section show Heroku images. If you are using a different method, you should be able to "translate" the steps.</p>
-<p>Go to the <code>Settings</code> tab near the top of the screen on your Heroku app and then click on <code>Reveal Config Vars</code>.  </p>
+<p>Go to the <code>Settings</code> tab near the top of the screen on your Heroku app and then click on <code>Reveal Config Vars</code>.</p>
 <p align="center"><img alt="img/heroku5.png" src="../img/heroku5.png" width="650" /></p>
 <p>Scroll down the bottom of the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> lines until you find the last blank one.  You are going to add three new rows of config vars for remote overrides as shown below:</p>
 <p align="center"><img alt="img/add_vars.jpg" src="../img/add_vars.jpg" width="650" /></p>
@@ -2396,6 +2411,8 @@
 </tr>
 </tbody>
 </table>
+<h4 id="remote-build-config-var-requirement">Remote Build Config Var Requirement<a class="headerlink" href="#remote-build-config-var-requirement" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>That last row of the table above is needed if you are using a remote build option such as <a href="../../build/build-select-dev/#build-loop-dev-using-github-actions">LoopDocs: Github Build Actions</a> or downloaded an archived file via <a href="https://www.loopandlearn.org/remote-build/">Loop and Learn: Remote Build with Diawi</a>. If you later return to a direct <abbr title="program used to build an app">Xcode</abbr> build to your phone, you must remove that config var or remote commands will not work.</p>
 <p>When executed properly, you should have something that looks like this for your three new variables that you added:</p>
 <p><img alt="img/override_vars_complete.png" src="../img/override_vars_complete.png" /></p>
 <h2 id="faqs-on-remote-overrides">FAQs on Remote Overrides<a class="headerlink" href="#faqs-on-remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2470,8 +2487,20 @@
 </div>
 <h2 id="using-remote-commands">Using Remote Commands<a class="headerlink" href="#using-remote-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are four ways you can trigger your commands remotely; <a href="#loopcaregiver">LoopCaregiver</a> (under development), <a href="#nightscout-careportal">Nightscout Careportal</a>, <a href="#shortcuts">Shortcuts</a>, and <a href="#ifttt">IFTTT</a>.</p>
+<p><strong>Please update to a minimum version of Nightscout 14.2.6</strong></p>
+<p>If you used a remote method for your build of Loop, don't forget you must add LOOP_PUSH_SERVER_ENVIRONMENT config variable to your Nightcout site or remote commands will not work. <a href="#remote-build-config-var-requirement">LoopDocs: Remote Build Config Var Requirement</a></p>
 <h3 id="loopcaregiver">LoopCaregiver   <img alt="icon for LoopCaregiver app" src="../img/lcg-icon.jpg" width="50" /><a class="headerlink" href="#loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The LoopCaregiver app is under development, works only with Loop-dev and requires an iPhone running at least <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16.</p>
+<p>You must be running a minimum version of Nightscout 14.2.6 in order to use LoopCaregiver.</p>
+<div class="admonition warning">
+<p class="admonition-title">Older NS Versions</p>
+<p>If you ignore this minimum version requirement - what happens:</p>
+<ul>
+<li>If you attempt to use the carb entry in the past or future, the caregiver app accepts it but the remote commands accepted by the Loopers phone show up at the current time - not when the caregiver intended to insert carbs</li>
+<li>Please take the time to update your Nightscout site to master</li>
+<li>Nightscout 14.2.6 was released 30-Sep-2022 as Classic Liquorice</li>
+</ul>
+</div>
 <p>If you plan to use LoopCaregiver, please join <a href="https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App">Loop Caregiver App</a> zulipchat stream.</p>
 <p><strong>As with all development code, monitor zulipchat for announcements, report any problems you experience, be prepared to build frequently, and pay attention.</strong></p>
 <h4 id="build-loopcaregiver">Build LoopCaregiver<a class="headerlink" href="#build-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -2480,8 +2509,14 @@
 <div class="highlight"><span class="filename">Copy and Paste to start the BuildLoopCaregiver.sh script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopCaregiver.sh)&quot;
 </code></pre></div>
 <p>Paste the line into the <abbr title="interface for entering commands to the computer">Terminal</abbr> window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.</p>
+<div class="admonition warning">
+<p class="admonition-title">Not Loop</p>
+<p>The output you see in the <abbr title="interface for entering commands to the computer">Terminal</abbr> may look very similar to when you build Loop dev from a script.</p>
+<p>It is pulling down a <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> from a different location (gestrich instead of LoopKit) and just the caregiver <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Do not attempt to build Loop with this download.</p>
+<p>The developers say: "The Caregiver app is being designed to be a full Loop integrated app, being able to benefit from Loop data stores, visualization, and other parts of the system that are mature and have a lot of design/thought put into them. At some point it will just be a single checkout, and you can build both."  <strong>But NOT yet</strong></p>
+</div>
 <h4 id="use-loopcaregiver">Use LoopCaregiver<a class="headerlink" href="#use-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Some limited directions for using the LoopCaregiver app are provided - please also read the zulipchat stream. </p>
+<p>Some limited directions for using the LoopCaregiver app are provided - please also read the zulipchat stream.</p>
 <h4 id="loopcaregiver-main-screen">LoopCaregiver Main Screen<a class="headerlink" href="#loopcaregiver-main-screen" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>LoopCaregiver uses a lot of features from Loop with some Nightscout-like features in the Timeline.</p>
 <p>The Timeline:</p>
