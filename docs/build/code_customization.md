@@ -44,9 +44,9 @@ Be sure to read the [Instructions for Finding the Lines](code_customization.md#i
 
 ## Loop 3 Build-Time Features
 
-With Loop 3, some features are enabled or disabled by default but can be turned on by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file. This is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.
+With Loop 3, some features are enabled or disabled by default but can be modified by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file. This is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.
 
-These flags are always upper case with underscore separating words for clarity. They are inserted after the word `$(inherited)` and before the `//`. The `//` indicates the flags to the right are not enabled. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space.
+These flags are always upper case with underscore separating words for clarity. They are inserted anywhere after the word `$(inherited)` and before the `//`. The `//` indicates the flags to the right are not included. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space.
 
 _Code Before Modification_
 
@@ -55,24 +55,28 @@ _Code Before Modification_
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
 ```
 
-The example below is for someone who wants the eventual glucose to display on their watch face.
+The example below is for someone who is using a Free Developer ID - which does not support Siri.
 
 _Code After Modification_
 
 ```
 // Features
-SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
 ```
 
 List of some flags and what they do:
 
 |FLAG|PURPOSE|
 |---------|---------|
-|SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED|The Apple Watch screens show current glucose and trend arrow by default. This flag adds eventual glucose to the display.|
-|OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED|Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health.|
 |SIRI_DISABLED|Required to build Loop from Xcode with a free developer account|
+|REMOTE_OVERRIDES_DISABLED|Remote commands: override, carbs or boluses will not be accepted even if all the [Remote Command](../nightscout/remote-overrides.md) requirements are configured|
+|OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED|Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health.|
+|SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_DISABLED|The Apple Watch screens (will soon) show current glucose, trend arrow and eventual glucose by default. This flag disables the eventual glucose in the watch display.|
+|SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED|For a long time, with Loop-dev, the Apple Watch screens showed current glucose and trend arrow, but not the eventual glucose value. The capability was added to enable eventual glucose in the watch display, but default was set for it to be disabled. (loop dev build script, commit 3770f56). This flag adds eventual glucose to the display for that build. Loop dev will be updated later so this flag is no longer necessary. When that happens, this flag will have no effect.|
 
 ## Instructions for Finding the Lines
+
+There are other customizations where the user goes into a particular file and makes a specific change to the code.
 
 For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory.
 

@@ -27,6 +27,7 @@ The process for building the Loop app is divided into short segments (pages) in 
     * If you choose to use such a service, before you begin, you should:
         * Read all of LoopDocs
         * Know how to Set up and Operate Loop
+        * Ask what features, if any, available with DIY loop are not available with their service
         * **These steps are important for your safety**
 
 ### Using a Simulator

@@ -2,7 +2,7 @@
 
 LoopDocs has words that may be unfamiliar. For a definition of any word with a dashed underline, simply hover your mouse over the word, or tap on the word on a mobile device, to view the definition.
 
-Every tootip definition is also found in the [Glossary](../faqs/glossary.md) - so head over there if you have trouble reading the tooltips. 
+Every tooltip definition is also found in the [Glossary](../faqs/glossary.md) - so head over there if you have trouble reading a tooltip.
 
 ## How to Find Help
 
