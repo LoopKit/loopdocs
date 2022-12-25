@@ -5,7 +5,7 @@ The Loop user can directly enter carbs and boluses and turn on or off premeal or
 ![img/watch.png](../../img/watch_updated_loop.svg){width="300"}
 {align="center"}
 
-There are two screens in the Loop watch app, shown in the bottom half of the graphic above. By swiping left or right, the other screen is displayed. The eventual (predicted) glucose feature, shown on both screens in the graphic can be turned on and off as a feature in Loop 3, but requires the user to rebuild. It is off by default.
+There are two screens in the Loop watch app, shown in the bottom half of the graphic above. By swiping left or right, the other screen is displayed. The eventual (predicted) glucose feature, shown on both screens in the graphic can be turned off as a feature in Loop 3, but requires the user to rebuild. It is on by default. (Or will be shortly)
 
 The screen on the left side of the graphic shows Loop status, current glucose, trend arrow, eventual glucose, carb tool, bolus tool, premeal icon and override icon. If necessary, use the crown (or swipe up and down) to see the full display.
 
@@ -22,9 +22,9 @@ A loop complication exists to show BG on the watch face but the update rate is l
 
 ## Eventual Glucose on Watch
 
-One feature that was removed by default from the watch with Loop 3 (Loop-dev) is the eventual glucose display on the watch. That display is shown on the graphic above with current glucose on left, trend arrow beside it and eventual (from prediction) glucose on the right.
+One feature onf the Watch app that was can be turned on and off with Loop 3 (Loop-dev) is the eventual glucose display on the watch. That display is shown on the graphic above with current glucose on left, trend arrow beside it and eventual (from prediction) glucose on the right.
 
-If this is a feature you want turned back on, please follow the directions on the Code Customization page (found under the Version tab): [Loop-3 Build Time Features](../../build/code_customization.md#loop-3-build-time-features).
+If this is a feature you want turned off, please follow the directions on the Code Customization page (found under the Version tab): [Loop-3 Build Time Features](../../build/code_customization.md#loop-3-build-time-features).
 
 ## Adding a Watch to Existing Loop
 
