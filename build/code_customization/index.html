@@ -2548,16 +2548,16 @@
 </ul>
 </div>
 <h2 id="loop-3-build-time-features"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Build-Time Features<a class="headerlink" href="#loop-3-build-time-features" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>With <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, some features are enabled or disabled by default but can be turned on by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file. This is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the <abbr title="program used to build an app">Xcode</abbr> folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.</p>
-<p>These flags are always upper case with underscore separating words for clarity. They are inserted after the word <code>$(inherited)</code> and before the <code>//</code>. The <code>//</code> indicates the flags to the right are not enabled. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space.</p>
+<p>With <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, some features are enabled or disabled by default but can be modified by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file. This is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the <abbr title="program used to build an app">Xcode</abbr> folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.</p>
+<p>These flags are always upper case with underscore separating words for clarity. They are inserted anywhere after the word <code>$(inherited)</code> and before the <code>//</code>. The <code>//</code> indicates the flags to the right are not included. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space.</p>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>// Features
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
 </code></pre></div>
-<p>The example below is for someone who wants the eventual glucose to display on their watch face.</p>
+<p>The example below is for someone who is using a Free Developer ID - which does not support Siri.</p>
 <p><em>Code After Modification</em></p>
 <div class="highlight"><pre><span></span><code>// Features
-SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
 </code></pre></div>
 <p>List of some flags and what they do:</p>
 <table>
@@ -2569,20 +2569,29 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SHOW_EVENTUAL_BLOOD_GLUCOSE_O
 </thead>
 <tbody>
 <tr>
-<td>SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED</td>
-<td>The Apple Watch screens show current glucose and trend arrow by default. This flag adds eventual glucose to the display.</td>
+<td>SIRI_DISABLED</td>
+<td>Required to build Loop from <abbr title="program used to build an app">Xcode</abbr> with a free developer account</td>
+</tr>
+<tr>
+<td>REMOTE_OVERRIDES_DISABLED</td>
+<td>Remote commands: override, carbs or boluses will not be accepted even if all the <a href="../../nightscout/remote-overrides/">Remote Command</a> requirements are configured</td>
 </tr>
 <tr>
 <td>OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED</td>
 <td>Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health.</td>
 </tr>
 <tr>
-<td>SIRI_DISABLED</td>
-<td>Required to build Loop from <abbr title="program used to build an app">Xcode</abbr> with a free developer account</td>
+<td>SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_DISABLED</td>
+<td>The Apple Watch screens (will soon) show current glucose, trend arrow and eventual glucose by default. This flag disables the eventual glucose in the watch display.</td>
+</tr>
+<tr>
+<td>SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED</td>
+<td>For a long time, with Loop-dev, the Apple Watch screens showed current glucose and trend arrow, but not the eventual glucose value. The capability was added to enable eventual glucose in the watch display, but default was set for it to be disabled. (loop dev build script, <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> 3770f56). This flag adds eventual glucose to the display for that build. Loop dev will be updated later so this flag is no longer necessary. When that happens, this flag will have no effect.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There are other customizations where the user goes into a particular file and makes a specific change to the code.</p>
 <p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory.</p>
 <p><strong>For each change you make in <abbr title="program used to build an app">Xcode</abbr> - be sure to save the file - otherwise the modification does not get built into your app.</strong></p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
