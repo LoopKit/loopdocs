@@ -5,13 +5,10 @@ You can use your Nightscout site to remotely set and cancel your override preset
 If you are using Loop-dev, then you can also send remote commands to add carbs and command a bolus.
 
 !!! warning "Remote Nightscout Interface Caveats"
-    * Requires Apple push notifications - not available with a Free account
-    * Remote commands should work with all but one method (T1Pal) for setting up Nightscout
+    * Requires Apple Push Notifications - not available with a Free account
     * If you use T1Pal service to provide your Nightscout site
-        * You cannot enter your own Apple push notification (APN) information in T1Pal nightscout
-        * The Nightscout and Loop APN must have matching developer ID information (as explained later on this page)
-        * If you want to use remote overrides with T1Pal Nightscout, you must use their service to provide Loop at an additional monthly fee (remote carb and bolus are probably not available in their version of Loop)
-    * It is strongly recommended that you build Loop yourself
+        * If you want to use remote overrides with T1Pal Nightscout, you must use their service Apple Push Notification integration for an additional monthly fee.
+        * You cannot enter your own Apple push notification (APN) information in T1Pal Nightscout
 
 !!! danger "Remote Builds"
     There are several methods for building remotely for your family members (or even yourself).
