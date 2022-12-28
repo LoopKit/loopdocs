@@ -9,9 +9,7 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
     * When you build Loop, the required APN information is tied to your developer account
         * You add your APN information to your Nightscout site (directions on this page)
         * Nightscout sites, in general, allow you to add the required APN information
-    * If you use T1Pal service to provide your Nightscout site and want to make use of remote commands
-        * You cannot enter your own APN information in T1Pal Nightscout
-        * You must use the T1Pal service for Loop with APN integration for an additional monthly fee
+    * If you use T1Pal for Nightscout and want to use remote commands, contact T1Pal about enabling them for a subscription fee.
 
 !!! danger "Remote Builds"
     There are several methods for building remotely for your family members (or even yourself).
