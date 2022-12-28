@@ -1,14 +1,13 @@
 ## Google Translate Links
 
-This is a one-way trip to google automatic translation. Choose your language from the original site. If you later want a different language, return to the original site (copy and paste the text below.):
+Click on a language from the list below to turn on Google automatic translation.
 
-```
-https://loopkit.github.io/loopdocs
-```
+* Every LoopDocs page gets automatically translated to the selected language
+* The Google Translate Tool will appear at the top of each page
+    * To modify the language for a single page, use the Google Translate tool
+    * To modify the language for the entire site, see [Change Language](#change-language)
 
-From the original (English language) site, choose the next desired language.
-
-## Language Sites
+## Language List
 
 [عربي](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ar)
 
@@ -59,3 +58,13 @@ From the original (English language) site, choose the next desired language.
 中文（[简体](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh_cn))
 
 中文（[繁體](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh_tw))
+
+## Change Language
+
+Once Google Translate has been turned on, clicking on a link above shows a "Google Translate: Can't translate this page error".
+
+To modify the language choice for the whole site, copy the line below and paste it into the URL and then choose the desired language from the list
+
+```
+https://loopkit.github.io/loopdocs/translate
+```
