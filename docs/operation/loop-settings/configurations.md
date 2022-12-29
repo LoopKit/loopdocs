@@ -103,7 +103,13 @@ Enter your desired single bolus maximum here. For safety, don't set a maximum bo
 
 There are four insulin models to choose from with Loop 2.x; Walsh, Rapid-Acting Adults, Rapid-Acting Children, and Fiasp. If you want to read the nitty-gritty discussion that went into the development of the Rapid-Acting and Fiasp curves (collectively called "exponential insulin models"), you can see that in GitHub [here](https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473).
 
-**We highly recommend selecting one of the exponential insulin models (in other words, not the Walsh model).**
+!!! tip "Loop 3 Insulin Type"
+    Loop 3 drops the Walsh model and, by default, does not include the concept of child versus adult for "rapid" acting insulin, i.e., Humalog, Novalog and Apidra.
+
+    * Insulin Type is selected when the user adds a pump
+    * The user can choose to customize Loop 3 to [Enable Child Model](../../build/code_customization.md#enable-child-model)
+
+**We highly recommend selecting one of the exponential insulin models for Loop 2.2.x (in other words, not the Walsh model).**
 
 A common new Loop user error is to select Walsh model in order to easily shorten their insulin duration (DIA) to one like they used prior to Looping. This almost invariably leads to insulin stacking. If you would like to read more about why the duration of insulin action is important in Loop vs how you've traditionally used it, please click [here](https://seemycgm.com/2017/08/09/why-dia-matters/) to read a blog post about the subject. In summary, choosing Walsh curve just to shorten your DIA will lead to insulin stacking and less than desired bolusing recommendations.
 

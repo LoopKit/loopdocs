@@ -24,7 +24,7 @@ A loop complication exists to show BG on the watch face but the update rate is l
 
 One feature on the Watch app that can be turned on and off with Loop 3 (Loop-dev) is the eventual glucose display on the watch. That display is shown on the graphic above with current glucose on left, trend arrow beside it and eventual (from prediction) glucose on the right.
 
-If this is a feature you want turned off, please follow the directions on the Code Customization page (found under the Version tab): [Loop-3 Build Time Features](../../build/code_customization.md#loop-3-build-time-features).
+If this is a feature you want turned off, please follow the directions on the Code Customization page (found under the Version tab): [Build Time Features](../../build/code_customization.md#build-time-features).
 
 ## Adding a Watch to Existing Loop
 
