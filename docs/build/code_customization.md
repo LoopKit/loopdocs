@@ -42,11 +42,13 @@ Be sure to read the [Instructions for Finding the Lines](code_customization.md#i
     * Users of Loop-dev refer to the Loop 3 examples.
         * Note that some changes are in a different file for Loop-dev (part of the architecture upgrade for the app).
 
-## Loop 3 Build-Time Features
+## Build-Time Features
+
+Build-time features are not available with Loop 2.2.x.
 
 With Loop 3, some features are enabled or disabled by default but can be modified by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file. This is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.
 
-These flags are always upper case with underscore separating words for clarity. They are inserted anywhere after the word `$(inherited)` and before the `//`. The `//` indicates the flags to the right are not included. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space.
+These flags are always upper case with underscore separating words for clarity. They are inserted anywhere after the word `$(inherited)` and before the `//`. The `//` indicates the flags to the right are not included. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space. Do not enter a return between selections - Xcode will word-wrap the line for clarity, but all values need to be on a single line.
 
 _Code Before Modification_
 
@@ -69,8 +71,9 @@ List of some flags and what they do:
 |FLAG|PURPOSE|
 |---------|---------|
 |SIRI_DISABLED|Required to build Loop from Xcode with a free developer account|
+|ADULT_CHILD_INSULIN_MODEL_SELECTION_ENABLED|The choice for Child Model is enabled in Therapy Settings. Please read [Enable Child Model](#enable-child-model).|
 |REMOTE_OVERRIDES_DISABLED|Remote commands: override, carbs or boluses will not be accepted even if all the [Remote Command](../nightscout/remote-overrides.md) requirements are configured|
-|OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED|Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health.|
+|OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED|Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health. Be vigilant if you select this; added carbs lead to added insulin dosing when closed loop is enabled|
 |SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_DISABLED|The Apple Watch screens (will soon) show current glucose, trend arrow and eventual glucose by default. This flag disables the eventual glucose in the watch display.|
 |SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED|For a long time, with Loop-dev, the Apple Watch screens showed current glucose and trend arrow, but not the eventual glucose value. The capability was added to enable eventual glucose in the watch display, but default was set for it to be disabled. (loop dev build script, commit 3770f56). This flag adds eventual glucose to the display for that build. Loop dev will be updated later so this flag is no longer necessary. When that happens, this flag will have no effect.|
 
@@ -592,13 +595,25 @@ Combined with an ```.hours(12)``` on line 16, they would get notified at 12 hour
 
 ## Exponential Insulin Curve
 
-The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, and Fiasp) default to an insulin duration of 360 minutes...but the peak activity of the various curves differs, as follows:
+### Enable Child Model
 
-* Rapid-acting adult curve peaks at 75 minutes
-* Rapid-acting child curve peaks at 65 minutes
-* Fiasp peaks curve peaks at 55 minutes
+Loop 3, by default, does not include the concept of child versus adult for rapid-acting insulin, i.e., Humalog, Novalog and Apidra.
 
-If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices. For Loop 3 users, the file is in a different submodule and includes more models.
+* The child model can be enabled following the directions in [Build-Time Features](#build-time-features), adding ADULT_CHILD_INSULIN_MODEL_SELECTION_ENABLED to the LoopConfigOverride.xcconfig file and rebuilding
+* Insulin Model is then found in the Therapy Setting section of Loop 3 with Adult selected by default
+* Insulin Type continues to be associated with the pump and can be modified in the Pump Settings screen
+
+### Insulin Model Customization
+
+Each exponential model has 3 parameters that can be adjusted:
+
+* actionDuration: Duration of insulin activity (minutes)
+* peakActivity: Peak of insulin activity (minutes)
+* delay: Delay before insulin begins to acts after delivery starts (minutes)
+
+Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this [GitHub Issue Comment](https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473).
+
+If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices.
 
 ``` title="Key_Phrase"
 MARK: - Model generation
@@ -611,16 +626,27 @@ MARK: - Model generation
         * actionDuration (20 to 29)
         * peakActivity (31 to 40)
         * effectDelay (42 to 51)
-* Loop 3 << NOTE more models
+* Loop 3
     * Folder: LoopKit/LoopKit/Insulin/ << NOTE new location
     * File: ExponentialInsulinModelPreset.swift
     * Lines:
         * actionDuration (19 to 32)
         * peakActivity (34 to 47)
-        * effectDelay (49 to 62)
+        * delay (49 to 62)
 
 ![img/exponential.png](img/exponential.png){width="750"}
 {align="center"}
+
+This Loop 3 table of default values is provided for convenience. The times are all in minutes.
+
+|Model|DIA|Peak|Delay|
+|---------|---------|---------|---------|
+|rapidActingAdult|360|75|10|
+|rapidActingChild|360|65|10|
+|fiasp|360|55|10|
+|lyumjev|360|55|10|
+|afrezza|300|29|10|
+
 
 ## Loop Logo
 
