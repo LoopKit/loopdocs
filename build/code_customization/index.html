@@ -1657,8 +1657,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#loop-3-build-time-features" class="md-nav__link">
-    Loop 3 Build-Time Features
+  <a href="#build-time-features" class="md-nav__link">
+    Build-Time Features
   </a>
   
 </li>
@@ -1804,6 +1804,26 @@
   <a href="#exponential-insulin-curve" class="md-nav__link">
     Exponential Insulin Curve
   </a>
+  
+    <nav class="md-nav" aria-label="Exponential Insulin Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-child-model" class="md-nav__link">
+    Enable Child Model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insulin-model-customization" class="md-nav__link">
+    Insulin Model Customization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2309,8 +2329,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#loop-3-build-time-features" class="md-nav__link">
-    Loop 3 Build-Time Features
+  <a href="#build-time-features" class="md-nav__link">
+    Build-Time Features
   </a>
   
 </li>
@@ -2457,6 +2477,26 @@
     Exponential Insulin Curve
   </a>
   
+    <nav class="md-nav" aria-label="Exponential Insulin Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-child-model" class="md-nav__link">
+    Enable Child Model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insulin-model-customization" class="md-nav__link">
+    Insulin Model Customization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2574,9 +2614,10 @@
 </li>
 </ul>
 </div>
-<h2 id="loop-3-build-time-features"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Build-Time Features<a class="headerlink" href="#loop-3-build-time-features" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="build-time-features">Build-Time Features<a class="headerlink" href="#build-time-features" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Build-time features are not available with Loop 2.2.x.</p>
 <p>With <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, some features are enabled or disabled by default but can be modified by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file. This is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the <abbr title="program used to build an app">Xcode</abbr> folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.</p>
-<p>These flags are always upper case with underscore separating words for clarity. They are inserted anywhere after the word <code>$(inherited)</code> and before the <code>//</code>. The <code>//</code> indicates the flags to the right are not included. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space.</p>
+<p>These flags are always upper case with underscore separating words for clarity. They are inserted anywhere after the word <code>$(inherited)</code> and before the <code>//</code>. The <code>//</code> indicates the flags to the right are not included. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space. Do not enter a return between selections - <abbr title="program used to build an app">Xcode</abbr> will word-wrap the line for clarity, but all values need to be on a single line.</p>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>// Features
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
@@ -2600,12 +2641,16 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 <td>Required to build Loop from <abbr title="program used to build an app">Xcode</abbr> with a free developer account</td>
 </tr>
 <tr>
+<td>ADULT_CHILD_INSULIN_MODEL_SELECTION_ENABLED</td>
+<td>The choice for Child Model is enabled in <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr>. Please read <a href="#enable-child-model">Enable Child Model</a>.</td>
+</tr>
+<tr>
 <td>REMOTE_OVERRIDES_DISABLED</td>
 <td>Remote commands: override, carbs or boluses will not be accepted even if all the <a href="../../nightscout/remote-overrides/">Remote Command</a> requirements are configured</td>
 </tr>
 <tr>
 <td>OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED</td>
-<td>Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health.</td>
+<td>Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health. Be vigilant if you select this; added carbs lead to added insulin dosing when closed loop is enabled</td>
 </tr>
 <tr>
 <td>SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_DISABLED</td>
@@ -3048,13 +3093,22 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 </code></pre></div>
 Combined with an <code>.hours(12)</code> on line 16, they would get notified at 12 hours, 4 hours and 2 hours before expiration on the day of expiration and only when the app is opened. Since you'll be building once a week, you can play around with these values until you are happy.</p>
 <h2 id="exponential-insulin-curve">Exponential Insulin Curve<a class="headerlink" href="#exponential-insulin-curve" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Exponential Insulin Curve Models (Rapid-Acting Adult, Rapid-Acting Child, and Fiasp) default to an insulin duration of 360 minutes...but the peak activity of the various curves differs, as follows:</p>
+<h3 id="enable-child-model">Enable Child Model<a class="headerlink" href="#enable-child-model" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, by default, does not include the concept of child versus adult for rapid-acting insulin, i.e., Humalog, Novalog and Apidra.</p>
 <ul>
-<li>Rapid-acting adult curve peaks at 75 minutes</li>
-<li>Rapid-acting child curve peaks at 65 minutes</li>
-<li>Fiasp peaks curve peaks at 55 minutes</li>
+<li>The child model can be enabled following the directions in <a href="#build-time-features">Build-Time Features</a>, adding ADULT_CHILD_INSULIN_MODEL_SELECTION_ENABLED to the LoopConfigOverride.xcconfig file and rebuilding</li>
+<li>Insulin Model is then found in the Therapy Setting section of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> with Adult selected by default</li>
+<li>Insulin Type continues to be associated with the pump and can be modified in the Pump Settings screen</li>
 </ul>
-<p>If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices. For <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> users, the file is in a different submodule and includes more models.</p>
+<h3 id="insulin-model-customization">Insulin Model Customization<a class="headerlink" href="#insulin-model-customization" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Each exponential model has 3 parameters that can be adjusted:</p>
+<ul>
+<li>actionDuration: Duration of insulin activity (minutes)</li>
+<li>peakActivity: Peak of insulin activity (minutes)</li>
+<li>delay: Delay before insulin begins to acts after delivery starts (minutes)</li>
+</ul>
+<p>Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this <a href="https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473">GitHub <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Comment</a>.</p>
+<p>If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices.</p>
 <div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>MARK: - Model generation
 </code></pre></div>
 <ul>
@@ -3069,19 +3123,62 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </li>
 </ul>
 </li>
-<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> &lt;&lt; NOTE more models<ul>
+<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr><ul>
 <li>Folder: LoopKit/LoopKit/Insulin/ &lt;&lt; NOTE new location</li>
 <li>File: ExponentialInsulinModelPreset.swift</li>
 <li>Lines:<ul>
 <li>actionDuration (19 to 32)</li>
 <li>peakActivity (34 to 47)</li>
-<li>effectDelay (49 to 62)</li>
+<li>delay (49 to 62)</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <p align="center"><img alt="img/exponential.png" src="../img/exponential.png" width="750" /></p>
+<p>This <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> table of default values is provided for convenience. The times are all in minutes.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th><abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr></th>
+<th>Peak</th>
+<th>Delay</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rapidActingAdult</td>
+<td>360</td>
+<td>75</td>
+<td>10</td>
+</tr>
+<tr>
+<td>rapidActingChild</td>
+<td>360</td>
+<td>65</td>
+<td>10</td>
+</tr>
+<tr>
+<td>fiasp</td>
+<td>360</td>
+<td>55</td>
+<td>10</td>
+</tr>
+<tr>
+<td>lyumjev</td>
+<td>360</td>
+<td>55</td>
+<td>10</td>
+</tr>
+<tr>
+<td>afrezza</td>
+<td>300</td>
+<td>29</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
 <h2 id="loop-logo">Loop Logo<a class="headerlink" href="#loop-logo" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
 <p>Use <abbr title="graphical folder and file display on Mac">Finder</abbr> to Navigate to the LoopWorkspace folder. These instructions assume you used the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> - if your files are in a different folder, make the appropriate adjustment.</p>
