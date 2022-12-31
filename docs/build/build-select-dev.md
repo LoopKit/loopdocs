@@ -29,6 +29,13 @@ The method in this section is for Loopers who want to build the development code
 
 The script, BuildLoopFixedDev, assists in building the development branch for Loop and FreeAPS:
 
+!!! question "Loop dev before release of Loop 3"
+    Before Loop dev branch is released as Loop 3, there is a special page on building what will be Loop 3. Please head over to that page to download and build [Loop-dev](step13.md).
+
+    After the release of Loop 3, that page will be removed. This page will remain.
+
+If you have not previously built the released version of the app using the Build-Select (BuildLoop) script as documented on the [Build the Loop App](step14.md) page, review that page first and then return.
+
 This section provides instructions to use the BuildLoopFixedDev script. It will download a "Fixed" version of the development branch for Loop or FreeAPS and then assist with the build process.
 
 * The BuildLoopFixedDev script downloads the development branch and then selects a specific version that has been lightly tested
@@ -111,7 +118,7 @@ Verify the word "error" is not shown in the terminal and proceed by typing 1 and
 
 ## Sign and Build
 
-The sign and build instructions are the same as for the released code, [Sign Targets](step14-post-loop-3.md#sign-targets).
+The sign and build instructions are found at [Sign Targets](step13.md#sign-targets).
 
 ## Update Loop-dev
 
