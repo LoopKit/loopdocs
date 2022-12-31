@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#time-zones-daylight-savings-time-summer-time" class="md-skip">
+        <a href="#loop-phone-must-be-on-automatic-time" class="md-skip">
           Skip to content
         </a>
       
@@ -1659,6 +1659,76 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-overview/" class="md-nav__link">
+        Github Build Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
+        GH First Time
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
+        GH Deploy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-update/" class="md-nav__link">
+        GH Update
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-errors/" class="md-nav__link">
+        GH Errors
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1894,6 +1964,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#loop-phone-must-be-on-automatic-time" class="md-nav__link">
+    Loop Phone Must be on Automatic Time
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#time-zones-daylight-savings-time-summer-time" class="md-nav__link">
     Time Zones, Daylight Savings Time, Summer Time
   </a>
@@ -2091,6 +2168,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#loop-phone-must-be-on-automatic-time" class="md-nav__link">
+    Loop Phone Must be on Automatic Time
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#time-zones-daylight-savings-time-summer-time" class="md-nav__link">
     Time Zones, Daylight Savings Time, Summer Time
   </a>
@@ -2147,7 +2231,22 @@
                 
                   <h1>Time Change FAQs</h1>
                 
-                <h2 id="time-zones-daylight-savings-time-summer-time">Time Zones, Daylight Savings Time, Summer Time<a class="headerlink" href="#time-zones-daylight-savings-time-summer-time" title="Anchor link to this Header on this Page">&para;</a></h2>
+                <h2 id="loop-phone-must-be-on-automatic-time">Loop Phone Must be on Automatic Time<a class="headerlink" href="#loop-phone-must-be-on-automatic-time" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Loop Phone is a Medical Device</p>
+<p>There have been several instance where a Looper disabled automatic time on their Loop phone.</p>
+<p>One scenario should be enough to convince you not to do this:</p>
+<ul>
+<li>Glucose is 180 mg/dL (10 mmol/L) when you set time one day ahead (for a game)</li>
+<li>Later you return time to automatic and think nothing of it</li>
+<li>Next day, Loop keeps trying to bring down that glucose that was recorded in the future, when in fact your glucose is 90 mg/dL (5 mmol/L)</li>
+</ul>
+<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is very aggressive at warning you if you make this mistake.</p>
+</div>
+<p align="center"><img alt="notification displayed when automatic time is disabled on Loop phone" src="../../loop-3/img/loop-3-omnipod-time-change.svg" width="350" /></p>
+<p>The rest of this page is about changing time zones.</p>
+<p>This happens safely with Loop because Loop keeps track of everything in GMT.</p>
+<h2 id="time-zones-daylight-savings-time-summer-time">Time Zones, Daylight Savings Time, Summer Time<a class="headerlink" href="#time-zones-daylight-savings-time-summer-time" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop operates across time zones and time changes. The phone that is running Loop will automatically update the time, but you choose when to modify the time zone for "pump time".</p>
 <p>What <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> are set by "pump time"?</p>
 <ul>
