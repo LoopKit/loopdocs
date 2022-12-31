@@ -1,3 +1,24 @@
+## Loop Phone Must be on Automatic Time
+
+!!! danger "Loop Phone is a Medical Device"
+    There have been several instance where a Looper disabled automatic time on their Loop phone.
+
+    One scenario should be enough to convince you not to do this:
+
+    * Glucose is 180 mg/dL (10 mmol/L) when you set time one day ahead (for a game)
+    * Later you return time to automatic and think nothing of it
+    * Next day, Loop keeps trying to bring down that glucose that was recorded in the future, when in fact your glucose is 90 mg/dL (5 mmol/L)
+
+    Loop 3 is very aggressive at warning you if you make this mistake.
+
+![notification displayed when automatic time is disabled on Loop phone](../loop-3/img/loop-3-omnipod-time-change.svg){width="350"}
+{align="center"}
+
+
+The rest of this page is about changing time zones.
+
+This happens safely with Loop because Loop keeps track of everything in GMT.
+
 ## Time Zones, Daylight Savings Time, Summer Time
 
 Loop operates across time zones and time changes. The phone that is running Loop will automatically update the time, but you choose when to modify the time zone for "pump time".
