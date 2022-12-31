@@ -1,4 +1,4 @@
-## github Method Errors
+## Github Method Errors
 
 This method is fairly new so there are not extensive error screens captured.
 

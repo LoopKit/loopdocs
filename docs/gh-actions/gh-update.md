@@ -30,7 +30,7 @@ Once you have built Loop one time with github Build Actions, updates are fast an
 1. You'll receive an App Store Connect email confirming that the build has completed processing, and a TestFlight email confirming the (now updated) app is ready to test.
     * If you get an email that the action failed, then return to your repository and look for Build Action error messages
         * Click on the most recent Build job with the red x by it
-        * If the details show this message, "[Could not install WWDR certificate](#could-not-install-wwdr-certificate)", make sure your developer account is in good standing and that there are no agreements that need to be accepted
+        * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)", make sure your developer account is in good standing and that there are no agreements that need to be accepted
         * Repeat the build and it should be fine the next time
 1. The updated Loop app will automatically be pushed to and shown in your Test Flight app, so all you need to do is...
     * Open TestFlight on your phone and click `Install`
