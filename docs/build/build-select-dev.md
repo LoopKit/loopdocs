@@ -39,10 +39,6 @@ If you have not previously built the released version of the app using the Build
 This section provides instructions to use the BuildLoopFixedDev script. It will download a "Fixed" version of the development branch for Loop or FreeAPS and then assist with the build process.
 
 * The BuildLoopFixedDev script downloads the development branch and then selects a specific version that has been lightly tested
-* Subsequent portions of the script are identical to the Build-Select script:
-    * Configures or allows you to review the file required for signing targets
-    * Provides instructions
-    * Opens Xcode 
 * When you use this script, you accept that this is not released code
     * The developer may need to make changes that require you to delete your app and start over
 * You are expected to use the [zulipchat, development stream](https://loop.zulipchat.com/#narrow/stream/144182-development)
