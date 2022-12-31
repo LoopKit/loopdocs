@@ -147,6 +147,11 @@ nav:
     - 'Loop Development': 'version/development.md'
     - 'Build Loop Dev': 'build/build-select-dev.md'
     - 'LoopWorkspace': 'version/loopworkspace.md'
+    - 'Github Build Overview': 'gh-actions/gh-overview.md'
+    - 'GH First Time': 'gh-actions/gh-first-time.md'
+    - 'GH Deploy': 'gh-actions/gh-deploy.md'
+    - 'GH Update': 'gh-actions/gh-update.md'
+    - 'GH Errors': 'gh-actions/gh-errors.md'
 - Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'
     - 'New Nightscout': 'nightscout/new_user.md'

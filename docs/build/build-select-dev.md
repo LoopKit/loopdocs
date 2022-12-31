@@ -8,7 +8,7 @@ Three methods to build Loop-dev are mentioned on this page:
 
 1. For those who have a Mac and want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions, a script is provided to build a lightly-tested version of Loop-dev.
 
-1. For those who don't own a Mac or want the convenience of TestFlight to support themselves or a family member, please read [Build Loop using Github Actions](#build-loop-using-github-actions).
+1. For those who don't own a Mac or want the convenience of TestFlight to support themselves or a family member, please read [Build Loop using Github Actions](../gh-actions/gh-overview.md).
 
 1. For those who feel comfortable composing and issuing git commands to the terminal, refer to the instructions on the [LoopWorkspace](../version/loopworkspace.md) page.
 
@@ -27,6 +27,8 @@ The method in this section is for Loopers who want to build the development code
 
 ## Loop Dev Script
 
+The script, BuildLoopFixedDev, assists in building the development branch for Loop and FreeAPS:
+
 !!! question "Loop dev before release of Loop 3"
     Before Loop dev branch is released as Loop 3, there is a special page on building what will be Loop 3. Please head over to that page to download and build [Loop-dev](step13.md).
 
@@ -40,7 +42,7 @@ This section provides instructions to use the BuildLoopFixedDev script. It will 
 * When you use this script, you accept that this is not released code
     * The developer may need to make changes that require you to delete your app and start over
 * You are expected to use the [zulipchat, development stream](https://loop.zulipchat.com/#narrow/stream/144182-development)
-    * Pay attention to announcemnts
+    * Pay attention to announcements
     * Monitor for reports of problems other people are having
     * Report any issue you experience
 * The advantage of the script is:
@@ -161,95 +163,3 @@ The version of code that shows up under the Loop Settings screen will remain fix
 The commit is identified by a 7-digit alphanumeric code.  That code was also appended to the folder name of the downloaded code under Downloads/BuildLoop as shown in the graphic above.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report, refer to [Support](../loop-3/settings.md#support) for instructions on issuing a Loop Report. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.
 
 When you ran the BuildLoopFixedDev script, the instructions informed you of the commit.
-
-
-## Build Loop using Github Actions
-
-This is only available with Loop-dev.
-
-**No matter the method used to build Loop-dev: script, github actions or git commands, you are testing development code.**
-
-### First Time Build Instructions
-
-You can build Loop-dev using your github account and your (paid) Apple Developer account using a browser. You no longer require a Mac computer.
-
-The instructions in the link below are basic - please read carefully and use the links provided in these directions.
-
-* [Using Github Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md)
-
-**You must build Loop every 90 days when you use this method.**
-
-After successfully building Loop using Actions in github, here are two important things to know. The next statements might not make sense to you if you have not gone to the link above and reviewed the instructions.
-
-1. Once you have installed TestFlight on your phone and you see your app in the TestFlight screen, tap on it to see an expanded screen with an option to automatically update or not.  You should choose which you prefer. If you do not turn it off, the app will automatically update whenever a new Build action completes in your github fork.
-
-1. The Apple ID used to sign in for TestFlight on a given phone does not have to match the Apple ID of the phone user. This is important for children. [Loopers Need Their Own Apple ID](step6.md#loopers-need-their-own-apple-id), but children cannot use TestFlight with their ID. If you plan to [Install Loop for Child](#install-loop-for-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the TestFlight invitation to the email associated with your ID.
-
-### Install Loop for Child
-
-The adult (Apple Developer Account owner) can log into Media & Purchase (see steps below) without affecting the child Apple ID associated with a phone (and thus their health records used by Loop). After the adult installs or updates Loop using TestFlight, they probably should reverse those steps to remove their credentials from Media & Purchase.
-
-Media & Purchase affects access to the App Store, Books, Music and Podcasts.
-
-On the Looper's phone:
-
-* Tap on Settings
-* At the very top of Settings, tap on the Name of the phone, for example, `my kids phone`
-* Apple ID Screen appears
-    * Tap on Media & Purchases
-    * Tap on Sign Out, and confirm
-    * Reboot the phone
-* After phone reboots, repeat the process and sign in with the adult (Apple Developer Account owner) Apple ID and password
-* Install or Update Loop from TestFlight on child's phone
-* Repeat the process to sign out the adult and (if needed) sign back in the child
-
-
-### Update Loop with Github Build Actions
-
-Once you have built Loop one time with github Build Actions, updates are fast and easy.
-
-**You must build Loop every 90 days when you use this method.**
-
-1. Sign in to Github and select your LoopWorkspace repository from your repositories list
-1. Look to see if your fork is up to date
-    * If your fork is up to date you will see the message `This branch is up to date with LoopKit/LoopWorkspace:dev` - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3
-    * If your fork shows a message such as `This branch is 3 commits behind LoopKit:dev` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch`
-
-    ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
-    {align="center"}
-
-1. Build Loop - refer to graphic below as you follow the steps
-    * Click on the 'Actions' tab
-    * Select the 'Build Loop' workflow and then click on 'run workflow' 
-    * Wait ~25-45 min for the build to complete
-
-    ![graphic indicating how to build again](img/github-build-actions-build-again.svg){width="700"}
-    {align="center"}
-
-
-1. You'll receive an App Store Connect email confirming that the build has completed processing, and a TestFlight email confirming the (now updated) app is ready to test.
-    * If you get an email that the action failed, then return to your repository and look for Build Action error messages
-        * Click on the most recent Build job with the red x by it
-        * If the details show this message, "[Could not install WWDR certificate](#could-not-install-wwdr-certificate)", make sure your developer account is in good standing and that there are no agreements that need to be accepted
-        * Repeat the build and it should be fine the next time
-1. The updated Loop app will automatically be pushed to and shown in your Test Flight app, so all you need to do is...
-    * Open TestFlight on your phone and click `Install`
-    * If you have automatic installation enabled in TestFlight, the app should have installed automatically, in which case the message should say `Open`.
-
-    ![graphic indicating how to install app in TestFlight](img/testflight-app-install.svg){width="500"}
-    {align="center"}
-
-### Github Build Actions Error Messages
-
-These error messages are only for people who have successfully built using github Build Actions. There are many other errors that might pertain to people who have not completed all the build steps in [Using Github Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md). 
-
-#### Could not install WWDR certificate
-
-Assuming you have successfully built before:
-
-* If the details show this message, "Could not install WWDR certificate", make sure your developer account is in good standing and that there are no agreements that need to be accepted
-* Repeat the build and it should be fine the next time
-
-
-![graphic showing failure to install certificate](img/github-error-cert-failed.png){width="500"}
-{align="center"}

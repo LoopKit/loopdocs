@@ -20,4 +20,5 @@ Map to this section:
 * [LoopWorkspace](../version/loopworkspace.md)
     - If you are interested in development, this page goes into more detail
     - The primary focus is on techniques for using git
-
+* [Github Build Overview](../gh-actions/gh-overview.md)
+    - First of several pages on new method to build Loop-dev from github using a browser. (No need for a Mac computer or Xcode.)

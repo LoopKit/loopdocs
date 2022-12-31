@@ -31,7 +31,7 @@ Loop dev can also be built without using a Mac computer using Github Actions. If
 * Need access to an iPhone or iPod, see [Compatible iPhone/iPod](../build/step2.md)
 * Paid Apple Developer Account ($99/year), see [Enroll in Apple Developer Program](../build/step6.md)
 * Follow these instructions instead of the Build Directions in LoopDocs
-    * [Build Loop dev using Github Actions](../build/build-select-dev.md#build-loop-dev-using-github-actions)
+    * [Build Loop dev using Github Actions](../gh-actions/gh-overview.md)
 
 ### Released Loop
 

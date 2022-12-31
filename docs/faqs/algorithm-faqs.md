@@ -51,5 +51,5 @@ There is more detail about the Loop Algorithm at the bottom of the Operate tab.
 * [Algorithm Overview](../operation/algorithm/overview.md)
     * [Bolus Recommendations](../operation/algorithm/bolus.md)
     * [Blood Glucose Prediction](../operation/algorithm/prediction.md)
-    * [Temp Basal Adjustments](../operation/algorithm/temp-basal.md)
+    * [Automatic Adjustments](../operation/algorithm/temp-basal.md)
 
