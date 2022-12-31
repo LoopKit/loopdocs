@@ -55,7 +55,7 @@ There is a new method for building Loop-dev. You cannot customize your code (yet
 
 Please click here for more information and the link to the directions.
 
-* [Build Loop dev using Github Actions](../build/build-select-dev.md#build-loop-dev-using-github-actions)
+* [LoopDocs: Github Build Actions](../gh-actions/gh-overview.md)
 
 ## Download Loop-dev
 
