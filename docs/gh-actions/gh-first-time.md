@@ -85,7 +85,7 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 * This link takes you straight to [Apple Developer account](https://developer.apple.com) to sign up
 
 
-## Generate App Store Connect API Key
+## Generate API Key
 
 You need specific parameters to set up your certificates for the build process. This section will walk you through the steps summarized below.
 
@@ -122,70 +122,117 @@ Each step has a link to take you to the specific page you need to do the next st
     ![download key only once](img/dev-dl-key-once.png){width="700"}
     {align="center"}
 
-6. Find your AuthKey download in your downloads folder. The name of the file with start with "AuthKey_KeyID.p8" where KeyID matches the value above. Double-click to open it and you will be presented a message asking how you'd like to open it. Click on "Choose Application..." and then select "TextEdit" as your application to open it with.
+6. Find your AuthKey download in your downloads folder. The name of the file will be "AuthKey_KeyID.p8" where KeyID matches the value above. Double-click to open it and you will be presented a message asking how you'd like to open it. Click on "Choose Application..." and then select "TextEdit" as your application to open it with.
 
-    ![img/apns-open.png](img/apns-open.png)
-
-    ![img/apns-textedit.png](img/apns-textedit.png)
+    ![img/apns-open.png](../nightscout/img/apns-open.png)
 
 1. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
 
-1. When the file opens, it will look similar to the screenshot below. In a few minutes, after we do a few other steps first, we will need to highlight **ALL OF THE CONTENTS** of that file and copy it because we will be pasting it in Heroku. Yes, allllll of the contents. So, easiest way is to click inside that file and then press `command-a` to highlight all the text and then `command-c` to copy it all to the clipboard. You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.
 
-![img/apns-copy-key.png](img/apns-copy-key.png)
-1. Record the key id; this will be used for `FASTLANE_KEY_ID`.
-1. Record the issuer id; this will be used for `FASTLANE_ISSUER_ID`.
-1. Click on the Download API Key button
-1. Download the API key itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
+    ![img/apns-copy-key.png](../nightscout/img/apns-copy-key.png)
+    
+In summary, from this section, you have generated and saved copies of 
+
+* `FASTLANE_KEY_ID`
+* `FASTLANE_ISSUER_ID`
+* `FASTLANE_KEY`
 
 ## Setup Github
 
-### Create Match-Secrets Repository
+### Create Match-Secrets
 
 Log in to your github account.
 
 1. At the top right of the screen, click on the &plus; sign and select New Repository
 
-![plus sign to add repository](img/create-match-secrets.svg){width="200"}
-{align="center"}
+    ![plus sign to add repository](img/create-match-secrets.svg){width="200"}
+    {align="center"}
 
+1. Create a [new empty repository](https://github.com/new) titled `Match-Secrets`. 
+    * Be sure the check the box to make the repository private (you will be storing your keys here)
+    * Scroll to the bottom of the pages and tap on "Create Repository"
+    * You'll be shown a new screen with a lot of options - just ignore this
 
-1. Create a [new empty repository](https://github.com/new) titled `Match-Secrets`. It should be private.
-1. Fork https://github.com/LoopKit/LoopWorkspace into your account.
-1. Create a [new personal access token](https://github.com/settings/tokens/new):
-    * Enter a name for your token. Something like "FastLane Access Token".
+### Fork LoopWorkspace
+
+1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open LoopWorkspace repository owned by LoopKit.
+1. At upper right side of the screen, click on the word Fork, it should open the screen shown below.
+    * Uncheck the selection that says "Copy the dev branch only" so it looks like the graphic 
+
+    ![fork information for LoopWorkspace](img/gh-fork-loopworkspace.png){width="700"}
+    {align="center"}
+
+1. Tap the Create Fork button
+
+### Create Access Token
+
+1. You will be creating a new token and giving it the name "FastLane Access Token"
+1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
+    * In the box below Note, enter "FastLane Access Token".
     * 30 days is fine, or you can select longer if you'd like.
-    * Select the `repo` permission scope.
-    * Click "Generate token".
-    * Copy the token and record it. It will be used below as `GH_PAT`.
-1. In the forked LoopWorkspace repo, go to Settings -> Secrets -> Actions.
-1. For each of the following secrets, tap on "New repository secret", then add the name of the secret, along with the value you recorded for it:
+    * Select the `repo` permission scope (check the box to the left of repo)
+    * Scroll all the way to the bottom and click "Generate token"
+1. A new screen appears showing your access token
+    * Copy the token and record it - once you leave this screen you can't see it again
+    * You will use this for `GH_PAT` when you set up your Secrets
+
+### Configure Secret Settings
+
+1. Return to your forked copy of LoopWorkspace
+    * Click on your personal icon at upper right to see the drop-down menu and select "Your repositories"
+    
+    ![drop-down-menu](img/gh-quick-access.png){width="200"}
+    {align="center"}
+
+1. You should see (at least) 2 repositories: Match-Secrets and LoopWorkspace
+1. Click on LoopWorkspace to open that repository
+1. Click on the Settings Icon near the top right of your LoopWorkspace
+    * On the left side, find the Secrets dropdown and choose Actions
+    * Your screen should look like the graphic below
+
+        ![action secrets screen](img/gh-actions-secrets.png){width="700"}
+        {align="center"}
+
+1. Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD.
+1. For each of the following secrets, tap on the green button at the top right labeled "New repository secret", then add the name of the secret, along with the value you recorded for it:
     * `TEAMID`
     * `FASTLANE_KEY_ID`
     * `FASTLANE_ISSUER_ID`
-    * `FASTLANE_KEY`
+    * `FASTLANE_KEY` - the entire thing from "-----BEGIN PRIVATE KEY-----" through "-----END PRIVATE KEY-----" 
     * `GH_PAT`
-    * `MATCH_PASSWORD` - just make up a password for this
+    * `MATCH_PASSWORD` - make up a password for this but save it with your other information
 
-## Add Identifiers for Loop App
+Now that all six secrets have been added to your LoopWorkspace, you are done with Settings. The next section will be working with the Actions tab that you see at the top middle of the display (not the one in the settings list on the left side).
+
+
+## Add Identifiers for Loop
+
+Near the top middle of your LoopWorkspace fork, there is an Actions tab.
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
+    * You'll be informed that Workflows were disabled on your fork
+    * Tap on the green button that says: "I understand my workflows, enable them"
+    * The workflows are now displayed: look at the list on the left side
 1. Select "Add Identifiers".
-1. Click "Run Workflow", and tap the green button.
+1. On the right side, click "Run Workflow" to show a drop-down and tap the green button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
+    * If this action fails, you probably made an error in one of your secrets
+    * Go back and confirm that you entered them correctly
 
-## Create App Group
+## New Loop Builders
 
 If you have already built Loop via Xcode using this Apple ID, you can skip on to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect).
 
-1. Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
+### Create App Group
+
+1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
 1. For Description, use "Loop App Group".
 1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`.
 1. Click "Continue" and then "Register".
 
-## Add App Group to Bundle Identifiers
+### Add App Group to Bundle Identifiers
 
-1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
+1. Open this link: [Certificates, Identifiers & Profiles: List](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
 1. For each of the following identifier names:
     * Loop
     * Loop Intent Extension
@@ -199,7 +246,8 @@ If you have already built Loop via Xcode using this Apple ID, you can skip on to
 1. Click "Confirm".
 1. Remember to do this for each of the identifiers above.
 
-## Add Time Sensitive Notifications to Loop App ID
+### Add Time Sensitive Capability
+
 1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
 1. Click on the "Loop" identifier
 1. Scroll down to "Time Sensitive Notifications"
@@ -209,27 +257,31 @@ If you have already built Loop via Xcode using this Apple ID, you can skip on to
 
 ## Create Loop App in App Store Connect
 
+If you built using Xcode with your Apple Developer ID, you were able to skip the steps from the prior few sections - they are already configured.
+
 If you have created a Loop app in App Store Connect before, you can skip this section as well.
 
-1. Go to the [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and click the blue "plus" icon to create a New App.
+1. Open this link: [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and click the blue "plus" icon to create a New App.
     * Select "iOS".
-    * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
+    * Select a name: this will have to be unique, so you may have to try a few different names here. It will not be the name you see on the app on your phone, but it is the name you see in TestFlight when you install it on your phone.
     * Select your primary language.
     * Choose the bundle ID that matches `com.TEAMID.loopkit.Loop`, with TEAMID matching your team id.
     * SKU can be anything; e.g. "123".
     * Select "Full Access".
 1. Click Create
 
-You do not need to fill out the next form. That is for submitting to the app store.
+Do not need to fill out the next form. That is for submitting to the app store.
+
+You are done with this activity and can close the browser tab.
 
 ## Create Building Certficates
 
 1. Go back to the "Actions" tab of your LoopWorkspace repository in github.
-1. Select "Create Certificates".
-1. Click "Run Workflow", and tap the green button.
+1. Select "Create Certificates" (on the left).
+1. Click "Run Workflow" on the right, and tap the green button in the drop down.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
-## Build Loop!
+## Build Loop
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
 1. Select "Build Loop".
@@ -238,18 +290,9 @@ You do not need to fill out the next form. That is for submitting to the app sto
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
 1. For each phone/person you would like to support Loop on:
     * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
-    * Add them to your TestFlight Internal Testing group.
-
+    * Add them to your TestFlight Internal Testing group
+    * If building for a child, you will send the invitation to yourself because you will install for your child: See [Install Loop for Child](gh-deploy.md#install-loop-for-child)]
 
 ## Deployment
 
-The [GH Deployment](gh-deploy.md) walks you through the steps to deploy to a phone. The following facts are useful to know before you move on to that page.
-
-After successfully building Loop using Actions in github, here are two important things to know. The next statements might not make sense to you if you have not gone to the link above and reviewed the instructions.
-
-1. Once you have installed TestFlight on your phone and you see your app in the TestFlight screen, tap on it to see an expanded screen with an option to automatically update or not.  You should choose which you prefer.
-    * If you leave automatic update enabled (default), then whenever you issue Build Action command on from your LoopWorkspace fork, the version of the app on the phone will be installed.
-    * WARNING: If you later want to build using Xcode, you must first disable automatic update or Xcode will not be able to install to your phone.
-
-1. The Apple ID used to sign in for TestFlight on a given phone does not have to match the Apple ID of the phone user. This is important for children. [Loopers Need Their Own Apple ID](../build/step6.md#loopers-need-their-own-apple-id), but children cannot use TestFlight with their ID. If you plan to [Install Loop for Child](#install-loop-for-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the TestFlight invitation to the email associated with your ID.
-
+The [GH Deployment](gh-deploy.md) walks you through the steps to deploy to a phone.
