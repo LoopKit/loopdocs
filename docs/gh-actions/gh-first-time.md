@@ -88,9 +88,11 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 
 ## Generate API Key
 
+You cannot continue with these instructions until you have the paid Apple Developer account set up.
+
 You need specific parameters to set up your certificates for the build process. This section will walk you through the steps summarized below.
 
-The parameters you create in this step will later be copied into your Match-Secrets repository that you will create in the next step. You will be typing in both the Name and the value when you set up your private Match-Secrets repository in github.com with your key information. For now you are generating the values and you'll use them later.
+The parameters you create in this step will be used later in the [Configure Secret Settings](#configure-secret-settings) step. For now you are generating, and saving, the values that you'll need later.
 
 |Name|Description|
 |---------|---------|
@@ -104,7 +106,7 @@ Each step has a link to take you to the specific page you need to do the next st
 1. Click on this link: [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
     * Look at the upper right hand corner of that page
     * The 10-character ID number below your name is your `TEAMID`
-    * Record this for use in your Match-Secrets repository
+    * Record this for use when you configure your secret settings
 1. Click on this link: [App Store Connect](https://appstoreconnect.apple.com/access/api)
     * Click the "Keys" tab
     * Create a new key with "Admin" access
