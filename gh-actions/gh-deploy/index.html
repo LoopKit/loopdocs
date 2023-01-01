@@ -2173,20 +2173,25 @@
                 
                   <h1>GH Deploy</h1>
                 
-                <h2 id="deploy-using-testflight">Deploy Using TestFlight<a class="headerlink" href="#deploy-using-testflight" title="Anchor link to this Header on this Page">&para;</a></h2>
+                <h2 id="deploy-using-testflight">Deploy Using <abbr title="a method to distribute apps without direct connection">TestFlight</abbr><a class="headerlink" href="#deploy-using-testflight" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is only available with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> and Loop dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p><strong>You must build Loop every 90 days when you use this method.</strong></p>
-<p>After successfully building Loop using Actions in github, here are two important things to know. The next statements might not make sense to you if you have not gone to the link above and reviewed the instructions.</p>
+<p>After successfully building Loop using Actions in github, you are ready to deploy.</p>
+<p>More instructions to come . . .</p>
 <ol>
 <li>
-<p>Once you have installed TestFlight on your phone and you see your app in the TestFlight screen, tap on it to see an expanded screen with an option to automatically update or not.  You should choose which you prefer. If you do not turn it off, the app will automatically update whenever a new Build action completes in your github <abbr title="a copy of Loop in a different github repository that is then customized to add other features">fork</abbr>.</p>
+<p>Once you have installed <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone and you see your app in the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> screen, tap on it to see an expanded screen with an option to automatically update or not.  You should choose which you prefer.</p>
+<ul>
+<li>If you leave automatic update enabled (default), then whenever you issue Build Action command on from your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>, the version of the app on the phone will be installed.</li>
+<li>WARNING: If you later want to build using <abbr title="program used to build an app">Xcode</abbr>, you must first disable automatic update or <abbr title="program used to build an app">Xcode</abbr> will not be able to install to your phone.</li>
+</ul>
 </li>
 <li>
-<p>The Apple ID used to sign in for TestFlight on a given phone does not have to match the Apple ID of the phone user. This is important for children. <a href="../../build/step6/#loopers-need-their-own-apple-id">Loopers Need Their Own Apple ID</a>, but children cannot use TestFlight with their ID. If you plan to <a href="#install-loop-for-child">Install Loop for Child</a>, you will need to use your ID on their phone (not the whole phone - just the Media &amp; Purchase portion), so send the TestFlight invitation to the email associated with your ID.</p>
+<p>The Apple ID used to sign in for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on a given phone does not have to match the Apple ID of the phone user. This is important for children. <a href="../../build/step6/#loopers-need-their-own-apple-id">Loopers Need Their Own Apple ID</a>, but children cannot use <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> with their ID. If you plan to <a href="#install-loop-for-child">Install Loop for Child</a>, you will need to use your ID on their phone (not the whole phone - just the Media &amp; Purchase portion), so send the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> invitation to the email associated with your ID.</p>
 </li>
 </ol>
 <h3 id="install-loop-for-child">Install Loop for Child<a class="headerlink" href="#install-loop-for-child" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The adult (Apple Developer Account owner) can log into Media &amp; Purchase (see steps below) without affecting the child Apple ID associated with a phone (and thus their health records used by Loop). After the adult installs or updates Loop using TestFlight, they probably should reverse those steps to remove their credentials from Media &amp; Purchase.</p>
+<p>The adult (Apple Developer Account owner) can log into Media &amp; Purchase (see steps below) without affecting the child Apple ID associated with a phone (and thus their health records used by Loop). After the adult installs or updates Loop using <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, they probably should reverse those steps to remove their credentials from Media &amp; Purchase.</p>
 <p>Media &amp; Purchase affects access to the App Store, Books, Music and Podcasts.</p>
 <p>On the Looper's phone:</p>
 <ul>
@@ -2199,7 +2204,7 @@
 </ul>
 </li>
 <li>After phone reboots, repeat the process and sign in with the adult (Apple Developer Account owner) Apple ID and password</li>
-<li>Install or Update Loop from TestFlight on child's phone</li>
+<li>Install or Update Loop from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on child's phone</li>
 <li>Repeat the process to sign out the adult and (if needed) sign back in the child</li>
 </ul>
                 
