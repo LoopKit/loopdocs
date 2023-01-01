@@ -11,13 +11,13 @@ This can be used by those who don't own a Mac or want the convenience of TestFli
 
 ## Requirements
 
-The requirements for building and using the Loop app with this method are repeated below.
+The requirements for building and using the Loop app with this method are given below.
 
 1. [Compatible iPhone/iPod Touch](../build/step2.md)
 1. [Compatible Pump](../build/step3.md)
 1. [Compatible CGM](../build/step4.md)
 1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
-1. Free github account (instructions included in first time build instruction)
+1. Free github account (instructions included in [First-Time with Github Actions](../gh-actions/gh-first-time.md))
 1. [Apple Developer Membership](../build/step6.md)
     * Must be a paid developer account
     * If building for a child, be sure to read [Loopers Need Their Own Apple ID](../build/step6.md#loopers-need-their-own-apple-id)
