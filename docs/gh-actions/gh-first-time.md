@@ -36,10 +36,11 @@ Note that TestFlight can be deployed to a child's phone (under age 13) but requi
 
 Your app must be updated once every 90 days, but it's a simple click to make a new build and can be done from anywhere, see [Update Loop using Github Actions](gh-update.md).
 
-For many of the steps on this page, you will need to have access to user names, email addresses, passwords, and in some cases, special parameters. The API Key can only be downloaded one time - you must save it in a safe place. If you loose it, you'll need to generate a new key and update the Match-Secrets repository.
+!!! tip "Save Your Information"
+    For many of the steps on this page, you will need to have access to user names, email addresses, passwords, and in some cases, special parameters. The API Key can only be downloaded one time - you must save it in a safe place. If you loose it, you'll need to generate a new key and update the secret settings in your fork of the LoopWorkspace repository. Same for the github access token you will generate in another step.
 
-* Record these in a safe place so you can find them when you need them
-* A digital copy is best because you will be copying and pasting in different locations
+    * Record these in a safe place so you can find them when you need them
+    * A digital copy is best because you will be copying and pasting in different locations
 
 
 ## Prerequisites
@@ -153,6 +154,8 @@ Log in to your github account.
     * Scroll to the bottom of the pages and tap on "Create Repository"
     * You'll be shown a new screen with a lot of options - just ignore this
 
+You will not be interacting with your Match-Secrets repository directly. It needs to exist for other actions to work correctly.
+
 ### Fork LoopWorkspace
 
 1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open LoopWorkspace repository owned by LoopKit.
@@ -217,7 +220,8 @@ Near the top middle of your LoopWorkspace fork, there is an Actions tab.
 1. On the right side, click "Run Workflow" to show a drop-down and tap the green button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
     * If this action fails, you probably made an error in one of your secrets
-    * Go back and confirm that you entered them correctly
+    * Try to determine which one was incorrect by clicked on the fail action to see the full log
+    * Go back and enter the secret(s) again - you will need your github password to change a secret
 
 ## New Loop Builders
 
