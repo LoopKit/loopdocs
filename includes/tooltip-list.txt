@@ -26,10 +26,12 @@
 *[EmaLink]: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
 *[Event History]: record of pump events (bolus or temp basal) reported and used by Loop
 *[Expiration Date]: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
+*[fastlane]: used as part of the github Build Action method that enables building Loop without a Mac computer or Xcode
 *[Finder]: graphical folder and file display on Mac
-*[fork]: a copy of Loop in a different github repository that is then customized to add other features
+*[fork]: a copy of code in a github repository other than the original
 *[GIF]: Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips
 *[git]: a tool for version control
+*[github.com]: an online service for storing repositories, accessible from a browser
 *[Glucose Chart]: Display of measured and predicted glucose values
 *[Glucose Safety Limit]: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold
 *[Guardrails]: limits in the code for user selected settings, recommended and absolute limits are provided
@@ -44,6 +46,7 @@
 *[Lock your Phone]: click the button on the side of the phone to lock it - prevent accidental touch, i.e., accidental Loop command
 *[Loop 3]: Used in LoopDocs before release for convenience to describe dev branch features
 *[Loop Cycle]: typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed
+*[Match-Secrets]: a private repository you must create in your github account, stores keys required to build with github Build Actions
 *[MTB]: Manual Temp Basal: user initiated temporary basal, Omnipod Common feature
 *[MDT]: common abbreviation for Medtronic pumps
 *[modal]: message or alert appearing in front of app that must be acknowledged to return to app
@@ -71,6 +74,7 @@
 *[Table of Contents]: (TOC) is the list of level 2 and 3 headers on a given page; the title at the top of the page is a level 1 header
 *[Temp Basal Only]: provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)
 *[Terminal]: interface for entering commands to the computer
+*[TestFlight]: a method to distribute apps without direct connection
 *[Therapy Settings]: Basal Rates, ISF, CR, correction and safety ranges and delivery limits
 *[Tokens]: on Nightscout, configure access permissions using tokens
 *[Tooltip]: brief definitions provided for important terms and abbreviations on the website

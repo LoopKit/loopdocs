@@ -1,3 +1,5 @@
+# Glossary
+
 Each item in the glossary is also a Tooltip.
 
 A Tooltip is visible as a dashed underline word or phrase.
@@ -61,13 +63,17 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Expiration Date**: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 
+**fastlane**: used as part of the github Build Action method that enables building Loop without a Mac computer or Xcode
+
 **Finder**: graphical folder and file display on Mac
 
-**fork**: a copy of Loop in a different github repository that is then customized to add other features
+**fork**: a copy of code in a github repository other than the original
 
 **GIF**: Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips
 
 **git**: a tool for version control
+
+**github.com**: an online service for storing repositories, accessible from a browser
 
 **Glucose Chart**: Display of measured and predicted glucose values
 
@@ -96,6 +102,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **Loop 3**: Used in LoopDocs before release for convenience to describe dev branch features
 
 **Loop Cycle**: typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed
+
+**Match-Secrets**: a private repository you must create in your github account, stores keys required to build with github Build Actions
 
 **MTB**: Manual Temp Basal: user initiated temporary basal, Omnipod Common feature
 
@@ -150,6 +158,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **Temp Basal Only**: provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)
 
 **Terminal**: interface for entering commands to the computer
+
+**TestFlight**: a method to distribute apps without direct connection
 
 **Therapy Settings**: Basal Rates, ISF, CR, correction and safety ranges and delivery limits
 
