@@ -2487,11 +2487,14 @@
 <p>The setup steps are somewhat involved, but nearly all are one time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive files for later use.</p>
 <p>Note that <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> can be deployed to a child's phone (under age 13) but requires a few extra steps on the phone itself. See <a href="../gh-deploy/#install-loop-for-child">Install Loop for Child</a>.</p>
 <p>Your app must be updated once every 90 days, but it's a simple click to make a new build and can be done from anywhere, see <a href="../gh-update/">Update Loop using Github Actions</a>.</p>
-<p>For many of the steps on this page, you will need to have access to user names, email addresses, passwords, and in some cases, special parameters. The API Key can only be downloaded one time - you must save it in a safe place. If you loose it, you'll need to generate a new key and update the <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Save Your Information</p>
+<p>For many of the steps on this page, you will need to have access to user names, email addresses, passwords, and in some cases, special parameters. The API Key can only be downloaded one time - you must save it in a safe place. If you loose it, you'll need to generate a new key and update the secret settings in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>. Same for the github access token you will generate in another step.</p>
 <ul>
 <li>Record these in a safe place so you can find them when you need them</li>
 <li>A digital copy is best because you will be copying and pasting in different locations</li>
 </ul>
+</div>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are only two prerequisites to Build Loop with this method.</p>
 <ol>
@@ -2618,6 +2621,7 @@
 </ul>
 </li>
 </ol>
+<p>You will not be interacting with your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> directly. It needs to exist for other actions to work correctly.</p>
 <h3 id="fork-loopworkspace">Fork LoopWorkspace<a class="headerlink" href="#fork-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ol>
 <li>Open this link <a href="https://github.com/LoopKit/LoopWorkspace">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/LoopWorkspace</a> to open LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> owned by LoopKit.</li>
@@ -2698,7 +2702,8 @@
 <li>On the right side, click "Run Workflow" to show a drop-down and tap the green button.</li>
 <li>Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.<ul>
 <li>If this action fails, you probably made an error in one of your secrets</li>
-<li>Go back and confirm that you entered them correctly</li>
+<li>Try to determine which one was incorrect by clicked on the fail action to see the full log</li>
+<li>Go back and enter the secret(s) again - you will need your github password to change a secret</li>
 </ul>
 </li>
 </ol>
