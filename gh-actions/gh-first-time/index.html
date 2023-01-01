@@ -2533,8 +2533,9 @@
 <li>This link takes you straight to <a href="https://developer.apple.com">Apple Developer account</a> to sign up</li>
 </ul>
 <h2 id="generate-api-key">Generate API Key<a class="headerlink" href="#generate-api-key" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You cannot continue with these instructions until you have the paid Apple Developer account set up.</p>
 <p>You need specific parameters to set up your certificates for the build process. This section will walk you through the steps summarized below.</p>
-<p>The parameters you create in this step will later be copied into your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> that you will create in the next step. You will be typing in both the Name and the value when you set up your private <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> in <abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr> with your key information. For now you are generating the values and you'll use them later.</p>
+<p>The parameters you create in this step will be used later in the <a href="#configure-secret-settings">Configure Secret Settings</a> step. For now you are generating, and saving, the values that you'll need later.</p>
 <table>
 <thead>
 <tr>
@@ -2566,7 +2567,7 @@
 <li>Click on this link: <a href="https://developer.apple.com/account/resources/certificates/list">Apple developer portal page</a>.<ul>
 <li>Look at the upper right hand corner of that page</li>
 <li>The 10-character ID number below your name is your <code>TEAMID</code></li>
-<li>Record this for use in your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>Record this for use when you configure your secret settings</li>
 </ul>
 </li>
 <li>
