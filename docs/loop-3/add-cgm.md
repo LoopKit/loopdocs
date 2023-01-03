@@ -13,8 +13,6 @@ Loop can be connected to the following CGMs:
     * [Dexcom G5](#dexcom-g5-g6-one)
     * [Dexcom G6](#dexcom-g5-g6-one) (use this for Dexcom ONE)
     * [Dexcom G7](#dexcom-g7) **(Loop-dev only)**
-        * A version which includes G7 was temporarily added as option 3 in the [Build Loop-dev script](../build/build-select-dev.md)
-        * REQUIRES Xcode 14, but Xcode 14.1 or later is suggested
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
         * **You must [add pump](add-pump.md) first**
@@ -58,11 +56,15 @@ You do **NOT** need your Share account info listed in Loop settings if you are u
 
 ### Dexcom G7
 
-This is only available on Loop dev and requires special build instructions (as noted above).
+This is only available on Loop dev.
 
-You must have the G7 app on the same phone as Loop.
+You must have the G7 app on the same phone as Loop. When the G7 app switches to the next sensor/transmitter assembly, Loop automatically switches too.
 
-Minimal documentation is provided and this is an in-process implementation. Please join zulipchat and click on the [Development G7 Integration link](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/G7.20Integration) to read the conversation.
+Minimal documentation is provided.
+
+![graphic showing Loop searching for G7](img/g7.svg){width="500"}
+{align="center"}
+
 
 ### Medtronic Enlite CGM
 

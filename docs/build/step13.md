@@ -49,13 +49,13 @@ Updated documentation is a work-in-progress located under the [Loop 3](../loop-3
 
     For more information, click on [Remove Apps with Shared App Group](../version/releases.md#remove-apps-with-shared-app-group)
 
-## Build Loop-dev using Github Actions
+## Build Loop-dev using GitHub Actions
 
 There is a new method for building Loop-dev. You cannot customize your code (yet) with this method.
 
 Please click here for more information and the link to the directions.
 
-* [LoopDocs: Github Build Actions](../gh-actions/gh-overview.md)
+* [LoopDocs: GitHub Build Actions](../gh-actions/gh-overview.md)
 
 ## Download Loop-dev
 

@@ -8,7 +8,7 @@ Three methods to build Loop-dev are mentioned on this page:
 
 1. For those who have a Mac and want to build the development code to get the latest features, but do not feel comfortable fetching and pulling the latest revisions, a script is provided to build a lightly-tested version of Loop-dev.
 
-1. For those who don't own a Mac or want the convenience of TestFlight to support themselves or a family member, please read [Build Loop using Github Actions](../gh-actions/gh-overview.md).
+1. For those who don't own a Mac or want the convenience of TestFlight to support themselves or a family member, please read [Build Loop using GitHub Actions](../gh-actions/gh-overview.md).
 
 1. For those who feel comfortable composing and issuing git commands to the terminal, refer to the instructions on the [LoopWorkspace](../version/loopworkspace.md) page.
 

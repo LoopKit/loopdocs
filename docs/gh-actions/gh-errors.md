@@ -1,12 +1,12 @@
-## Github Method Errors
+## GitHub Build Loop Errors
 
-This method is fairly new so there are not extensive error screens captured.
+This method is fairly new so there are not many error screens captured.
 
 If you discover a new error, please reach out to help us update the documentation.
 
-### Github Build Actions Error Messages
+### GitHub Build Actions Error Messages
 
-These error messages are only for people who have successfully built using github Build Actions. There are many other errors that might pertain to people who have not completed all the build steps in [Using Github Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md). 
+These error messages are only for people who have successfully built using github Build Actions. There are many other errors that might pertain to people who have not completed all the build steps in [GitHub First Time](gh-first-time.md).
 
 #### Could not install WWDR certificate
 
