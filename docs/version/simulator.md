@@ -26,12 +26,12 @@ Please, review all the Build pages, even if you will be skipping some.
 
 Loop dev (which will be the next released version of Loop) can be built with the same prerequisites as [Released Loop](#released-loop).
 
-Loop dev can also be built without using a Mac computer using Github Actions. If you choose this method to build and evaluate the app, it has slightly different prerequisites.
+Loop dev can also be built without using a Mac computer using GitHub Actions. If you choose this method to build and evaluate the app, it has slightly different prerequisites.
 
 * Need access to an iPhone or iPod, see [Compatible iPhone/iPod](../build/step2.md)
 * Paid Apple Developer Account ($99/year), see [Enroll in Apple Developer Program](../build/step6.md)
 * Follow these instructions instead of the Build Directions in LoopDocs
-    * [Build Loop dev using Github Actions](../gh-actions/gh-overview.md)
+    * [Build Loop dev using GitHub Actions](../gh-actions/gh-overview.md)
 
 ### Released Loop
 

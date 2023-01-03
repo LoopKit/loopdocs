@@ -1,16 +1,16 @@
-## Update Loop using Github Actions
+## Update Loop using GitHub Actions
 
 This is only available with Loop 3 and Loop dev branch.
-
-**You must build Loop every 90 days when you use this method.**
 
 Once you have built Loop one time with github Build Actions, updates are fast and easy.
 
 **You must build Loop every 90 days when you use this method.**
 
-1. Sign in to Github and select your LoopWorkspace repository from your repositories list
+1. Sign in to GitHub and select your LoopWorkspace repository from your repositories list
 1. Look to see if your fork is up to date
-    * If your fork is up to date you will see the message `This branch is up to date with LoopKit/LoopWorkspace:dev` - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3
+    * The dropdown in this graphic shows the dev branch.
+    * After the release of Loop-dev as Loop 3.0, you will want master. For a specific release, such as 3.1.2 (which does not exist - so don't look for it), it will be that specific release.
+    * If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}}` - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3
     * If your fork shows a message such as `This branch is 3 commits behind LoopKit:dev` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch`
 
     ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
@@ -18,7 +18,10 @@ Once you have built Loop one time with github Build Actions, updates are fast an
 
 1. Build Loop - refer to graphic below as you follow the steps
     * Click on the 'Actions' tab
-    * Select the 'Build Loop' workflow and then click on 'run workflow' 
+    * Select the 'Build Loop' workflow on the left
+    * Look on the right and click 'Run workflow'
+    * Make sure the desired Branch is selected
+    * Click on the green `Run workflow` button in the dropdown
     * Wait ~25-45 min for the build to complete
 
     ![graphic indicating how to build again](img/github-build-actions-build-again.svg){width="700"}

@@ -14,7 +14,7 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
 !!! danger "Remote Builds"
     There are several methods for building remotely for your family members (or even yourself).
 
-    * [LoopDocs: Github Build Actions](../gh-actions/gh-overview.md) (new with Loop-dev) allows you to build on a browser (no need for a Mac) and send Loop to your phone using TestFlight
+    * [LoopDocs: GitHub Build Actions](../gh-actions/gh-overview.md) (new with Loop-dev) allows you to build on a browser (no need for a Mac) and send Loop to your phone using TestFlight
     * [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/) allows you to save a build created by Xcode, store it in the cloud and then download and install on your phone later
 
     Both of these remote options require this [Nightscout: Config Var](https://nightscout.github.io/nightscout/setup_variables/#nightscout-config-vars) to be added to Nightscout:
@@ -134,7 +134,7 @@ Scroll down the bottom of the Config Vars lines until you find the last blank on
 
 #### Remote Build Config Var Requirement
 
-That last row of the table above is needed if you are using a remote build option such as [LoopDocs: Github Build Actions](../gh-actions/gh-overview.md) or downloaded an archived file via [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/). If you later return to a direct Xcode build to your phone, you must remove that config var or remote commands will not work.
+That last row of the table above is needed if you are using a remote build option such as [LoopDocs: GitHub Build Actions](../gh-actions/gh-overview.md) or downloaded an archived file via [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/). If you later return to a direct Xcode build to your phone, you must remove that config var or remote commands will not work.
 
 
 When executed properly, you should have something that looks like this for your three new variables that you added:

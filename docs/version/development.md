@@ -27,7 +27,7 @@ When you build Loop, in the background, Loop pulls those other frameworks (7 in 
 ![img/loopkit.png](img/loopkit.png){width="650"}
 {align="center"}
 
-Anyways...so now you know about the general structure of Loop and LoopKit in Github. Now we can discuss Loop itself a little deeper.
+Anyways...so now you know about the general structure of Loop and LoopKit in GitHub. Now we can discuss Loop itself a little deeper.
 
 So let's imagine Loop as a cookbook. The developers are the authors/chefs of the recipes (code) in the cookbook. The authors spend countless hours testing new recipes, taste testing, documenting improvements. They send the drafts to the editor, who makes suggestions and eventually the cookbook is finalized. There are no grammar issues, no typos, the photos are beautiful and the recipes are yummy. They publish the book and you see a gorgeous final product on the shelves. That is called a "release" and it is the master branch. This book has been well-tested and is super stable. Every time you cook with those recipes, you know exactly what you're getting and lots of people have had a chance before you to make sure that it all tastes good. Master branch is stable and tested.
 
@@ -114,7 +114,7 @@ And, of course, the integration of Omnipod DASH. The RileyLink Compatible device
 
 ## Repositories and Code
 
-If you're a developer looking for direct links to the code and documentation in Github:
+If you're a developer looking for direct links to the code and documentation in GitHub:
 
 * [Loop](https://github.com/LoopKit/Loop)
 * [LoopDocs](https://github.com/LoopKit/Loopdocs)

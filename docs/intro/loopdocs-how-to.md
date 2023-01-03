@@ -91,7 +91,7 @@ Please submit suggestions for updates and improvements to this documentation. Th
 
 ### Pull Requests and Issues
 
-If you decide to do a Github Pull Request (PR) or create an Issue, first look to see if someone has already opened a [PR](https://github.com/LoopKit/loopdocs/pulls) or [Issue](https://github.com/LoopKit/loopdocs/issues) on the topic so you don't create a duplicate.
+If you decide to do a GitHub Pull Request (PR) or create an Issue, first look to see if someone has already opened a [PR](https://github.com/LoopKit/loopdocs/pulls) or [Issue](https://github.com/LoopKit/loopdocs/issues) on the topic so you don't create a duplicate.
 
 * If a PR or Issue on the topic is open, feel free to add your comments (don't be shy), but please don't create a duplicate
 * If a PR doesn't exist, watch this [LoopDocs Pull Request video](https://youtu.be/6qSppvgGxpg) on how to create one (it's easy, video is less than 5 minutes)
