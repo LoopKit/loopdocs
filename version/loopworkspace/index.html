@@ -1852,7 +1852,7 @@
   
     <li class="md-nav__item">
       <a href="../../gh-actions/gh-overview/" class="md-nav__link">
-        Github Build Overview
+        GitHub Build Overview
       </a>
     </li>
   
@@ -1866,7 +1866,7 @@
   
     <li class="md-nav__item">
       <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
-        GH First Time
+        GitHub First Time
       </a>
     </li>
   
@@ -1880,7 +1880,7 @@
   
     <li class="md-nav__item">
       <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
-        GH Deploy
+        GitHub Deploy
       </a>
     </li>
   
@@ -1894,7 +1894,7 @@
   
     <li class="md-nav__item">
       <a href="../../gh-actions/gh-update/" class="md-nav__link">
-        GH Update
+        GitHub Update
       </a>
     </li>
   
@@ -1908,7 +1908,7 @@
   
     <li class="md-nav__item">
       <a href="../../gh-actions/gh-errors/" class="md-nav__link">
-        GH Errors
+        GitHub Errors
       </a>
     </li>
   
@@ -2676,8 +2676,8 @@ You can't <abbr title="create a copy of a repository on your computer including 
 <p>How would you do that? Simple <code>cd &amp;&amp; mkdir DeveloperBob</code> would make the new folder in your home directory. And then <code>cd DeveloperBob</code> would move your <abbr title="interface for entering commands to the computer">Terminal</abbr> app to be working inside the new DeveloperBob folder. So if you wanted to <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> DeveloperBob's LoopWorkspace, that would be a good way to keep track of where the code came from.</p>
 <p>If you ever get in doubt and can't remember where your code was cloned from, you can <code>cd LoopWorkspace</code> to get into the directory and then use <code>git remote -v</code> to tell you where it came from.</p>
 <h2 id="pushing-commits-from-loopworkspace">Pushing commits from LoopWorkspace<a class="headerlink" href="#pushing-commits-from-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>So you've got a great idea for a new feature, made those changes to your LoopWorkspace and want to get them into Github. Awesome!</p>
-<p>To understand how to do this, we'll need to understand a bit more about how <abbr title="a tool for version control">git</abbr> keeps track of changes. In <abbr title="a tool for version control">git</abbr>, developers can have different "branches" (see <a href="../development/#what-are-branches">What are Branches</a> on the Loop Development page for more details about what a <abbr title="version of code within a single repository or workspace repository">branch</abbr> is). There are two different types of branches: remote and local. If you were to <abbr title="a copy of code in a github repository other than the original">fork</abbr> Loop on Github, then the branches that you can see on Github are "remote" branches - they're hosted on the Github server. On the other hand, you can also create "local" branches that are stored directly on your computer by "checking out" the remote <abbr title="version of code within a single repository or workspace repository">branch</abbr>. You'll need to "<abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>" your changes to the local <abbr title="version of code within a single repository or workspace repository">branch</abbr>, then "push" those changes to the remote <abbr title="version of code within a single repository or workspace repository">branch</abbr> in order to be able to see them in Github. There are specific commands that you can type into the command line to do all of these actions, but I'm not going to go into detail because there are different ways and everyone has their own preference.</p>
+<p>So you've got a great idea for a new feature, made those changes to your LoopWorkspace and want to get them into GitHub. Awesome!</p>
+<p>To understand how to do this, we'll need to understand a bit more about how <abbr title="a tool for version control">git</abbr> keeps track of changes. In <abbr title="a tool for version control">git</abbr>, developers can have different "branches" (see <a href="../development/#what-are-branches">What are Branches</a> on the Loop Development page for more details about what a <abbr title="version of code within a single repository or workspace repository">branch</abbr> is). There are two different types of branches: remote and local. If you were to <abbr title="a copy of code in a github repository other than the original">fork</abbr> Loop on GitHub, then the branches that you can see on GitHub are "remote" branches - they're hosted on the GitHub server. On the other hand, you can also create "local" branches that are stored directly on your computer by "checking out" the remote <abbr title="version of code within a single repository or workspace repository">branch</abbr>. You'll need to "<abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>" your changes to the local <abbr title="version of code within a single repository or workspace repository">branch</abbr>, then "push" those changes to the remote <abbr title="version of code within a single repository or workspace repository">branch</abbr> in order to be able to see them in GitHub. There are specific commands that you can type into the command line to do all of these actions, but I'm not going to go into detail because there are different ways and everyone has their own preference.</p>
 <p>It's a little easier to think about this with an analogy. Let's say you're working at a company that's creating a cookbook. There's a centralized, production-ready version of the cookbook on their website that all the employees can view. Think of the website version of this cookbook as being like the remote <abbr title="version of code within a single repository or workspace repository">branch</abbr>. You're assigned to change the pancake recipe in the cookbook. Since the company doesn't want employees to make changes directly to the version of the cookbook that the customers see, you need to make a copy of it on your computer so you can make your changes to the pancake recipe. When you make the personal copy on your computer, it's like "checking out" the remote <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Your copy is like the local <abbr title="version of code within a single repository or workspace repository">branch</abbr> - you can make whatever changes you want without having to worry about customers accidentally seeing them. When you make an important change to the recipe (like adding a photo or changing the ingredients), you might want to make a note in the edit history so that you can go back to that version of the recipe in case you accidentally make unintended changes - those notes you make would be "commits". Once you're happy with the recipe, you'll add it back into the production version of the cookbook on the website, which is similar to what you're doing when you "push" your changes.</p>
 <p>Where do the <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> fit in? Each submodule is actually a <abbr title="version of code within a single repository or workspace repository">branch</abbr>, so when you make changes to multiple <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>, you'll need to <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> those changes to their respective branches. Let's say you've made changes to Loop and LoopKit. You'll need to go into Loop and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> and push the changes, then go into LoopKit and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> and push the changes.</p>
 <p>There are a few different ways to keep track of all these different branches. Some people like using the command line (which is what you're using when you do commands like <code>git clone</code>) because it's very customizable and has the largest variety of commands. Others like to use graphical Git editors, which make it easier to see changes and be able to do a variety of common actions (like cloning, committing, and pushing) with the push of a button. Everyone has their own preferences, but some methods that Loop contributors have used in the past include the command line, <a href="https://www.gitkraken.com/">Gitkraken</a>, and <a href="https://www.sourcetreeapp.com/">SourceTree</a>.</p>
@@ -2721,13 +2721,13 @@ You can't <abbr title="create a copy of a repository on your computer including 
       
       
         
-        <a href="../../gh-actions/gh-overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Github Build Overview" rel="next">
+        <a href="../../gh-actions/gh-overview/" class="md-footer__link md-footer__link--next" aria-label="Next: GitHub Build Overview" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Github Build Overview
+              GitHub Build Overview
             </div>
           </div>
           <div class="md-footer__button md-icon">

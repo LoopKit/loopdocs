@@ -1804,7 +1804,7 @@
   
     <li class="md-nav__item">
       <a href="../../gh-actions/gh-overview/" class="md-nav__link">
-        Github Build Overview
+        GitHub Build Overview
       </a>
     </li>
   
@@ -1818,7 +1818,7 @@
   
     <li class="md-nav__item">
       <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
-        GH First Time
+        GitHub First Time
       </a>
     </li>
   
@@ -1832,7 +1832,7 @@
   
     <li class="md-nav__item">
       <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
-        GH Deploy
+        GitHub Deploy
       </a>
     </li>
   
@@ -1846,7 +1846,7 @@
   
     <li class="md-nav__item">
       <a href="../../gh-actions/gh-update/" class="md-nav__link">
-        GH Update
+        GitHub Update
       </a>
     </li>
   
@@ -1860,7 +1860,7 @@
   
     <li class="md-nav__item">
       <a href="../../gh-actions/gh-errors/" class="md-nav__link">
-        GH Errors
+        GitHub Errors
       </a>
     </li>
   
@@ -2353,7 +2353,7 @@
 <p>Loop developers own an account in GitHub called <a href="https://github.com/LoopKit">LoopKit</a>.  Within that account, the developers have several "repositories" that support Loop in particular. A <abbr title="contains project files and each file's revision history">repository</abbr> is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop <abbr title="contains project files and each file's revision history">repository</abbr> code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.</p>
 <p>When you build Loop, in the background, Loop pulls those other frameworks (7 in total) into the build process using "Carthage".  Carthage is like a personal shopper. You give it a shopping list (the cartfile in Loop code is that shopping list) and it goes and fetches that for you during the build process. Sometimes your computer has an old shopping list...and that can cause build errors. Hence the "<abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> update" fix in the Build Errors page...that command updates the shopping list to get the right versions of those frameworks.</p>
 <p align="center"><img alt="img/loopkit.png" src="../img/loopkit.png" width="650" /></p>
-<p>Anyways...so now you know about the general structure of Loop and LoopKit in Github. Now we can discuss Loop itself a little deeper.</p>
+<p>Anyways...so now you know about the general structure of Loop and LoopKit in GitHub. Now we can discuss Loop itself a little deeper.</p>
 <p>So let's imagine Loop as a cookbook. The developers are the authors/chefs of the recipes (code) in the cookbook. The authors spend countless hours testing new recipes, taste testing, documenting improvements. They send the drafts to the editor, who makes suggestions and eventually the cookbook is finalized. There are no grammar issues, no typos, the photos are beautiful and the recipes are yummy. They publish the book and you see a gorgeous final product on the shelves. That is called a "release" and it is the master <abbr title="version of code within a single repository or workspace repository">branch</abbr>. This book has been well-tested and is super stable. Every time you cook with those recipes, you know exactly what you're getting and lots of people have had a chance before you to make sure that it all tastes good. Master <abbr title="version of code within a single repository or workspace repository">branch</abbr> is stable and tested.</p>
 <p>But then...the chefs/developers go on a trip. They are inspired by new cuisine and want to add new recipes to the old cookbook. (Things like omnipod support and overrides are new "recipes" that were developed since the last master release, for example.) But, the process for developing a recipe is arduous. Lots of trial and error involved. Lots of tweaking ingredients (code). The editors try out the new recipes and offer feedback (similar to the <a href="https://github.com/LoopKit/Loop/issues">Issues List in GitHub</a>). While the recipes are being developed, they have a version of the old cookbook that gets marked up...edited in pencil a lot. Scribbles and notes in the side. Revisions happen frequently, because that's what testing new recipes is all about. These marked-up versions of the cookbook are called "dev" <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Short for "development" <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Like the name sounds...this is where new developments are happening, new recipes and tweaks.</p>
 <p>After much testing and tweaking, eventually the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in Loop, Loop's master <abbr title="version of code within a single repository or workspace repository">branch</abbr> is updated with the new features coming from dev (aka, "dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is merged into master <abbr title="version of code within a single repository or workspace repository">branch</abbr>"). When that happens, master <abbr title="version of code within a single repository or workspace repository">branch</abbr> gets another "release" version. For that moment, dev and master are exactly the same. They stay the same until the Loop developers start working on the next batch of improvements, could be the next hour even or days later, but the process begins again. The developers will start editing the code again and dropping those edits in dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for further development.</p>
@@ -2397,7 +2397,7 @@
 <p>There has been some reorganization of code to make it easier to drop in new pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> modules.  These may not be obvious to the user, but are important for moving forward.</p>
 <p>And, of course, the integration of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH. The <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible devices are no longer required with DASH.</p>
 <h2 id="repositories-and-code">Repositories and Code<a class="headerlink" href="#repositories-and-code" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you're a developer looking for direct links to the code and documentation in Github:</p>
+<p>If you're a developer looking for direct links to the code and documentation in GitHub:</p>
 <ul>
 <li><a href="https://github.com/LoopKit/Loop">Loop</a></li>
 <li><a href="https://github.com/LoopKit/Loopdocs">LoopDocs</a></li>

@@ -14,7 +14,7 @@
     
     
       
-        <title>Github Build Overview - LoopDocs</title>
+        <title>GitHub Build Overview - LoopDocs</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Github Build Overview
+              GitHub Build Overview
             
           </span>
         </div>
@@ -1675,12 +1675,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Github Build Overview
+          GitHub Build Overview
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Github Build Overview
+        GitHub Build Overview
       </a>
       
         
@@ -1756,7 +1756,7 @@
   
     <li class="md-nav__item">
       <a href="../gh-first-time/" class="md-nav__link">
-        GH First Time
+        GitHub First Time
       </a>
     </li>
   
@@ -1770,7 +1770,7 @@
   
     <li class="md-nav__item">
       <a href="../gh-deploy/" class="md-nav__link">
-        GH Deploy
+        GitHub Deploy
       </a>
     </li>
   
@@ -1784,7 +1784,7 @@
   
     <li class="md-nav__item">
       <a href="../gh-update/" class="md-nav__link">
-        GH Update
+        GitHub Update
       </a>
     </li>
   
@@ -1798,7 +1798,7 @@
   
     <li class="md-nav__item">
       <a href="../gh-errors/" class="md-nav__link">
-        GH Errors
+        GitHub Errors
       </a>
     </li>
   
@@ -2213,46 +2213,75 @@
               
                 
                 
-                  <h1>Github Build Overview</h1>
+                  <h1>GitHub Build Overview</h1>
                 
                 <h2 id="build-loop-with-a-browser">Build Loop with a Browser<a class="headerlink" href="#build-loop-with-a-browser" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is a new method, available starting with the release of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, as well as for development versions.</p>
-<p>This can be used by those who don't own a Mac or want the convenience of <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> to support themselves or a family member.</p>
+<ul>
+<li>This can be used by those who don't own a Mac but want to Loop</li>
+<li>This can be used even if you do use a Mac<ul>
+<li>It adds the convenience of <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> to support you or a family member.</li>
+<li>It adds recovery from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> in case of an accident with your Loop phone while traveling, no need to travel with a Mac</li>
+</ul>
+</li>
+</ul>
 <div class="admonition info">
-<p class="admonition-title">Build Every 90 Days</p>
-<p>This method requires the app to be built once every 90 days.</p>
-<p>Rebuilding takes just a few taps in any browser - you can even do it on your phone.</p>
+<p class="admonition-title">GitHub Build - Repeat Every 90 Days</p>
+<p>When using the GitHub build method, Loop must be built every 90 days.</p>
+<ul>
+<li>Rebuilding takes just a few taps in any browser - you can even do it on your phone.</li>
+<li>The actual build time (how long from when you start the build to when it is available to install on your phone) is longer than using a Mac. Typically about 25 minutes.</li>
+</ul>
+<p>When using the Mac method, Loop expires in 1 year, assuming provisioning profiles were cleared before the build.</p>
 </div>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The requirements for building and using the Loop app with this method are given below.</p>
+<p>The requirements for building and using the Loop app with the GitHub Build Actions method are given below.</p>
 <ol>
 <li><a href="../../build/step2/">Compatible iPhone/iPod Touch</a></li>
 <li><a href="../../build/step3/">Compatible Pump</a></li>
 <li><a href="../../build/step4/">Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a></li>
 <li><a href="../../build/step5/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device</a> (not needed for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH)</li>
-<li>Free github account (instructions included in <a href="../gh-first-time/">First-Time with Github Actions</a>)</li>
+<li>Free github account (instructions included in <a href="../gh-first-time/">First-Time with GitHub Actions</a>)</li>
 <li><a href="../../build/step6/">Apple Developer Membership</a><ul>
 <li>Must be a paid developer account</li>
-<li>If building for a child, be sure to read <a href="../../build/step6/#loopers-need-their-own-apple-id">Loopers Need Their Own Apple ID</a></li>
+<li>If building for a family member, review this section:<ul>
+<li><a href="../../build/step6/#loopers-need-their-own-apple-id">Loopers Need Their Own Apple ID</a></li>
+</ul>
+</li>
+<li>If building for a child (age depends on the country), review this section:<ul>
+<li><a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>
 <h2 id="first-time-builder">First Time Builder<a class="headerlink" href="#first-time-builder" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are a number of steps that must be completed the first time you use this method.</p>
-<p><a href="../gh-first-time/">First-Time with Github Actions</a></p>
+<ul>
+<li>The instructions are at this link: <a href="../gh-first-time/">First-Time with GitHub Actions</a>.</li>
+<li>Plan to spend about 2 hours if you are fairly comfortable with a computer</li>
+<li>It make take longer for some</li>
+<li>The link above contains added graphics and details from the original instructions (warning - these instructions are a work in progress)</li>
+</ul>
+<p>Those original instructions can be found at this link: <a href="../gh-first-time/#basic-instructions">Basic Instructions</a>.</p>
 <h3 id="what-if-i-get-stuck">What if I get stuck?<a class="headerlink" href="#what-if-i-get-stuck" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Try to:</p>
 <ul>
 <li>Scroll back in the directions and see if you missed a paragraph or step.</li>
-<li>Compare your screen's display with the graphics in the step. Is something different or does yours have an error message? If you have an error message, does it guide you to the problem and solution?</li>
+<li>Compare your screen's display with the graphics in LoopDocs. Is something different or does yours have an error message? If you have an error message, does it guide you to the problem and solution?</li>
 <li>If you are still stumped - reach out for help: <a href="../../intro/loopdocs-how-to/#how-to-find-help">How to Find Help</a>.</li>
 </ul>
 <h2 id="repeat-builders">Repeat Builders<a class="headerlink" href="#repeat-builders" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once those first time steps are completed, each update is simple. Complete instructions are found at <a href="../gh-update/">Github Loop Update</a></p>
+<p>Once those first time steps are completed, subsequent updates are simple. Complete instructions are found on the <a href="../gh-update/">GitHub Update</a> page of LoopDocs.</p>
 <ol>
+<li>Log in to github and find your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>Update your <abbr title="a copy of code in a github repository other than the original">fork</abbr> (if needed)</li>
 <li>Select Actions: Build Loop</li>
-<li>After Build completes (15 to 30 minutes), install new version on Loopers phone</li>
+<li>After Build completes (15 to 30 minutes)<ul>
+<li>Loop is automatically updated on the phone if automatic installation is selected in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> (default) for that phone</li>
+<li>Install new version on phone if automatic installation is not selected in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>  for that phone</li>
+</ul>
+</li>
 </ol>
                 
               
@@ -2294,13 +2323,13 @@
       
       
         
-        <a href="../gh-first-time/" class="md-footer__link md-footer__link--next" aria-label="Next: GH First Time" rel="next">
+        <a href="../gh-first-time/" class="md-footer__link md-footer__link--next" aria-label="Next: GitHub First Time" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              GH First Time
+              GitHub First Time
             </div>
           </div>
           <div class="md-footer__button md-icon">
