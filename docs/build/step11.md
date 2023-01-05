@@ -38,7 +38,7 @@ Take some time to familiarize yourself with these data options and choose your p
         * Loop 3 allows remote commands for carbs, bolus or overrides
         * The [LoopCaregiver](../nightscout/remote-overrides.md#loopcaregiver) app is under development, but already has sufficient capabilities to be useful for caregivers to monitor and provide remote commands to their Looper's phone
 
-Nightscout options include free or nominal cost sites you build yourself was well as a few paid Nightscout as a Service providers who provide turn-key sites. Links to the options are found in the [Nightscout: Documentation](https://nightscout.github.io/) - note that link takes you to a different site.
+Nightscout options include free or nominal cost sites you build yourself or there are several Nightscout as a Service vendors who provide turn-key sites for a monthly fee. Links to the options are found in the [Nightscout: Documentation](https://nightscout.github.io/) - note that link takes you to a different site.
 
 Nightscout is the most useful day-to-day for some of its capabilities such as plotting IOB and providing a secure, real-time Dashboard of Loop status visible to anyone with access codes and the internet.
 
