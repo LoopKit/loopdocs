@@ -19,6 +19,8 @@
 
 ## Data Options
 
+Take some time to familiarize yourself with these data options and choose your preferred system(s). Many Loopers use all three for various aspects.
+
 * [Apple Health app](../faqs/apple-health-faqs.md#healthkit-plots)
     * Great resource to view on the Loop phone
     * Not so great for showing your endo
@@ -27,12 +29,16 @@
     * Many users of the mobile app like the note taking ability
         * The mobile app also uploads Apple HealthKit data to Tidepool
 * Nightscout:
-    * [Nightscout](../nightscout/overview.md) link in LoopDocs
-    * [Nightscout](https://loopkit.github.io/looptips/data/nightscout/) link to LoopTips
+    * [LoopDocs: Nightscout](../nightscout/overview.md) section of LoopDocs, has Loop-centric information about Nightscout
+    * [LoopTips: Nightscout](https://loopkit.github.io/looptips/data/nightscout/) link to LoopTips page on Nightscout
+    * [Nightscout: Documentation](https://nightscout.github.io/) official Nightscout site with lots of information about building and using Nightscout
     * Nightscout has a lot of useful alarms and alerts, provides a care portal and detailed reports
-    * Some versions of Loop and Nightscout together allow for remote interface between caregiver and looper
+    * For those who assist someone who is Looping, Nightscout enables the caregiver to provide remote commands to the Looper's phone
+        * Loop 2 allows overrides to be enabled or disabled remotely
+        * Loop 3 allows remote commands for carbs, bolus or overrides
+        * The [LoopCaregiver](../nightscout/remote-overrides.md#loopcaregiver) app is under development, but already has sufficient capabilities to be useful for caregivers to monitor and provide remote commands to their Looper's phone
 
-All of the options are free and straightforward to setup. (There are paid options for configuring Nightscout; links to those providers are found along with the DIY steps in the Nightscout docs.) Take some time to familiarize yourself with these options and setup your preferred system(s). Many Loopers use all three for various aspects. 
+Nightscout options include free or nominal cost sites you build yourself or there are several Nightscout as a Service vendors who provide turn-key sites for a monthly fee. Links to the options are found in the [Nightscout: Documentation](https://nightscout.github.io/) - note that link takes you to a different site.
 
 Nightscout is the most useful day-to-day for some of its capabilities such as plotting IOB and providing a secure, real-time Dashboard of Loop status visible to anyone with access codes and the internet.
 

@@ -1,5 +1,9 @@
 After you have been using Loop for a while, there's a potential that you will run across a behavior or issue that you wonder if it is normal or intended.  When that happens, there are a few things that we'd recommend doing to resolve the issue.
 
+## Use Automatic Time on Loop Phone
+
+If you have modified the Loop time (not changed time zone, but turned off automatic time and manually changed the time), please read: [Loop Phone Must be on Automatic Time](../troubleshooting/time-change.md#loop-phone-must-be-on-automatic-time).
+
 ## Gather information
 
 ### Screenshots
