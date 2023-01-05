@@ -338,10 +338,13 @@ You are done with this activity and can close the browser tab.
 1. Click "Run Workflow", select your branch, and tap the green button.
 1. You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
+
+## Set Up Users and Access (TestFlight)
 1. For each phone/person you would like to support Loop on:
     * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
     * Add them to your TestFlight Internal Testing group
-    * If building for a child, you will send the invitation to yourself because you will install for your child: See [Install Loop for Child](gh-deploy.md#install-testflight-loop-for-child)]
+    * Each person in this group will get an email each time you update (build again) on GitHub
+    * If building for a child, you will send the invitation to yourself because you will install for your child: See [Install Loop for Child](gh-deploy.md#install-testflight-loop-for-child)
 
 ## Deployment
 
