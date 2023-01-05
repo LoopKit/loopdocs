@@ -1,15 +1,23 @@
 ## Loop Phone Must be on Automatic Time
 
 !!! danger "Loop Phone is a Medical Device"
-    There have been several instance where a Looper disabled automatic time on their Loop phone.
+    There have been several instances where a Looper disabled automatic time to change the time on their Loop phone.
 
     One scenario should be enough to convince you not to do this:
 
     * Glucose is 180 mg/dL (10 mmol/L) when you set time one day ahead (for a game)
     * Later you return time to automatic and think nothing of it
-    * Next day, Loop keeps trying to bring down that glucose that was recorded in the future, when in fact your glucose is 90 mg/dL (5 mmol/L)
+    * As soon as automatic time is restored, Loop thinks your eventual glucose will be the future value (in this example 180 mg/dL) and attempts to bring you to your correction range
+    * Because that future value is "stuck", Loop keeps providing more insulin
 
-    Loop 3 is very aggressive at warning you if you make this mistake.
+### Remove Future Glucose
+
+* You **MUST** go into Apple Health and remove any glucose values in the future. At the current time, Loop 2.2.x and Loop-dev will use those future readings.
+    * If you want to know more, check out this link: [Request: Detect Future Glucose](https://github.com/LoopKit/Loop/issues/1890)
+* If you also use Nightscout **and** have the upload CGM readings enabled in Loop, those future glucose values will appear in Nightscout
+    * To fix this problem (after you fix Apple Health), use the [Admin Tools in Nightscout](https://nightscout.github.io/nightscout/admin_tools/) to remove future treatments and future entries
+
+One added improvement with Loop 3 is it very aggressive at warning you if you make this mistake. you will get a notification - even when you are in a different app. The graphic below shows the alert when you next open Loop after turning off automatic time and changing the time. Even if you respond right away, you may have at least one glucose reading in the future when you see this alert. Please [Remove Future Glucose](#remove-future-glucose).
 
 ![notification displayed when automatic time is disabled on Loop phone](../loop-3/img/loop-3-omnipod-time-change.svg){width="350"}
 {align="center"}
