@@ -1968,6 +1968,19 @@
     Loop Phone Must be on Automatic Time
   </a>
   
+    <nav class="md-nav" aria-label="Loop Phone Must be on Automatic Time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remove-future-glucose" class="md-nav__link">
+    Remove Future Glucose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2172,6 +2185,19 @@
     Loop Phone Must be on Automatic Time
   </a>
   
+    <nav class="md-nav" aria-label="Loop Phone Must be on Automatic Time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remove-future-glucose" class="md-nav__link">
+    Remove Future Glucose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2234,15 +2260,27 @@
                 <h2 id="loop-phone-must-be-on-automatic-time">Loop Phone Must be on Automatic Time<a class="headerlink" href="#loop-phone-must-be-on-automatic-time" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">Loop Phone is a Medical Device</p>
-<p>There have been several instance where a Looper disabled automatic time on their Loop phone.</p>
+<p>There have been several instances where a Looper disabled automatic time to change the time on their Loop phone.</p>
 <p>One scenario should be enough to convince you not to do this:</p>
 <ul>
 <li>Glucose is 180 mg/dL (10 mmol/L) when you set time one day ahead (for a game)</li>
 <li>Later you return time to automatic and think nothing of it</li>
-<li>Next day, Loop keeps trying to bring down that glucose that was recorded in the future, when in fact your glucose is 90 mg/dL (5 mmol/L)</li>
+<li>As soon as automatic time is restored, Loop thinks your eventual glucose will be the future value (in this example 180 mg/dL) and attempts to bring you to your correction range</li>
+<li>Because that future value is "stuck", Loop keeps providing more insulin</li>
 </ul>
-<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is very aggressive at warning you if you make this mistake.</p>
 </div>
+<h3 id="remove-future-glucose">Remove Future Glucose<a class="headerlink" href="#remove-future-glucose" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ul>
+<li>You <strong>MUST</strong> go into Apple Health and remove any glucose values in the future. At the current time, Loop 2.2.x and Loop-dev will use those future readings.<ul>
+<li>If you want to know more, check out this link: <a href="https://github.com/LoopKit/Loop/issues/1890">Request: Detect Future Glucose</a></li>
+</ul>
+</li>
+<li>If you also use Nightscout <strong>and</strong> have the upload <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings enabled in Loop, those future glucose values will appear in Nightscout<ul>
+<li>To fix this problem (after you fix Apple Health), use the <a href="https://nightscout.github.io/nightscout/admin_tools/">Admin Tools in Nightscout</a> to remove future treatments and future entries</li>
+</ul>
+</li>
+</ul>
+<p>One added improvement with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is it very aggressive at warning you if you make this mistake. you will get a notification - even when you are in a different app. The graphic below shows the alert when you next open Loop after turning off automatic time and changing the time. Even if you respond right away, you may have at least one glucose reading in the future when you see this alert. Please <a href="#remove-future-glucose">Remove Future Glucose</a>.</p>
 <p align="center"><img alt="notification displayed when automatic time is disabled on Loop phone" src="../../loop-3/img/loop-3-omnipod-time-change.svg" width="350" /></p>
 <p>The rest of this page is about changing time zones.</p>
 <p>This happens safely with Loop because Loop keeps track of everything in GMT.</p>
