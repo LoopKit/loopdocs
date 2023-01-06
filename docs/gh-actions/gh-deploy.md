@@ -4,34 +4,57 @@ This is only available with Loop 3 and Loop dev branch.
 
 **You must build Loop every 90 days when you use this method.**
 
-After successfully building Loop using [GitHub Build Loop](../gh-actions/gh-first-time.md#build-loop), you are ready to deploy to as many phones as you and your family members need.
+After building Loop using [GitHub Build Loop](../gh-actions/gh-first-time.md#build-loop), you are ready to deploy to as many phones as you and your family members need.
 
-If you later need to add an adult family member to your list, refer to [Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight)
+* If you later need to add an adult family member to your list, refer to [Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight).
+
+* Children (under 13 in US, varies by country) cannot use TestFlight with their ID. If you plan to [Install Loop for Child](#install-testflight-loop-for-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the TestFlight invitation to the email associated with your ID.
+
 
 ## Install TestFlight
 
-For any phone on which you want to deploy Loop from GitHub Build Actions, you must install TestFlight on that phone (one time only).
+If you already have TestFlight on your phone, skip ahead to [Install Loop with TestFlight](#install-loop-with-testflight).
 
-1. On the phone, for which you want to install Loop:
-    * Install TestFlight
-        * Hint on child's phone, do this while logged in for Media & Purchase as yourself
-        * This is explained in [Install Loop for Child](gh-deploy.md#install-testflight-loop-for-child)
-1. Open the TestFlight app
-    * Once the build completes, the name you used when configuring your app will appear in the TestFlight apps to install
-    * Choose Install
-        * If you already have Loop installed on this phone, you will be warned that the app already exists on your phone and that you might lose the app's data.
-        * Click Install (your pump connection and all your data will be fine)
-    * Choose Open
-    * Make sure the Loop app is operating as expected
-    * If you are building Loop 3.x over Loop 2.x, you will be required to go through [Onboarding](../loop-3/onboarding.md)
-1. Go back to the TestFlight app on your phone and tap on your Loop app name in the list to see an expanded screen with an option to automatically update or not.  You should choose which you prefer.
-    * If you leave automatic update enabled (default), then whenever you issue Build Action command on from your LoopWorkspace fork, the version of the app on the phone will be installed as soon as each Build Action completes.
-    * WARNING: If you later want to build using Xcode, you must first disable automatic update or Xcode will not be able to install to your phone.
+In order to install Loop, you must install TestFlight on the phone:
 
-1. The Apple ID used to sign in for TestFlight on a given phone does not have to match the Apple ID of the phone user. This is important for children. [Loopers Need Their Own Apple ID](../build/step6.md#loopers-need-their-own-apple-id), but children cannot use TestFlight with their ID. If you plan to [Install Loop for Child](#install-testflight-loop-for-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the TestFlight invitation to the email associated with your ID.
+* Open the App Store and Search for TestFlight (see GIF below)
+* Choose TestFlight and Install or Download to that phone
+    * Hint on child's phone, do this while logged in as yourself for Media & Purchase
+    * Logging in as an adult is explained in [Install Loop for Child](gh-deploy.md#install-testflight-loop-for-child)
+
+![search for and dowload TestFlight](img/testflight-app-store.gif){width="300"}
+{align="center"}
 
 
-### Install TestFlight Loop for Child
+## Install Loop with TestFlight
+
+Once the GitHub Build completes (either green check mark on GitHub or you got an email), you can install Loop on your phone. Refer to the GIF below.
+
+* Open TestFlight and find the name you used for your Loop app in the [Create Loop App in App Store Connect](../gh-actions/gh-first-time.md#create-loop-app-in-app-store-connect) step
+* Tap on Install
+    * If you already have Loop installed on this phone, you will be warned that the app already exists on your phone and that you might lose the app's data.
+    * Click Install again (your pump connection and all your data will be fine)
+* Choose Open
+* Make sure the Loop app is operating as expected
+* If you are building Loop 3.x over Loop 2.x, you will be required to go through [Onboarding](../loop-3/onboarding.md)
+
+![install Loop from TestFlight](img/testflight-install-loop.gif){width="300"}
+{align="center"}
+
+## TestFlight Automatic Updates
+
+Go back to the TestFlight app on your phone and tap on your Loop app name in the list to see an expanded screen similar to the graphic below. The row to enable or disable automatic updates is highlighted in the graphic. For this example, this feature is disabled.
+
+* You should choose the option you prefer
+* If you leave automatic update enabled (default), then whenever you issue the Actions: Build Loop command on from GitHub on your LoopWorkspace fork, the new build will be installed on that phone as soon as the build completes.
+* WARNING: If you later want to build using Xcode, you must first disable automatic update or Xcode will not be able to install to your phone.
+
+![enable or disable automatic update for Loop](img/testflight-auto-update.png){width="300"}
+{align="center"}
+
+If you tap on the bottom row that says `Previous Builds`, you can view and choose an older build (as long as it has not expired).
+
+## Install TestFlight Loop for Child
 
 The adult (Apple Developer Account owner) can log into Media & Purchase (see steps below) without affecting the child Apple ID associated with a phone (and thus their health records used by Loop). After the adult installs or updates Loop using TestFlight, they probably should reverse those steps to remove their credentials from Media & Purchase.
 
