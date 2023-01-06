@@ -1748,6 +1748,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#github-build-details" class="md-nav__link">
+    GitHub Build Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-build-update" class="md-nav__link">
+    GitHub Build Update
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2132,6 +2146,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#github-build-details" class="md-nav__link">
+    GitHub Build Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-build-update" class="md-nav__link">
+    GitHub Build Update
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2150,7 +2178,20 @@
                 <h2 id="update-loop-using-github-actions">Update Loop using GitHub Actions<a class="headerlink" href="#update-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is only available with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> and Loop dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>Once you have built Loop one time with github Build Actions, updates are fast and easy.</p>
+<h2 id="github-build-details">GitHub Build Details<a class="headerlink" href="#github-build-details" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><strong>You must build Loop every 90 days when you use this method.</strong></p>
+<p>In Loop, tap on Settings -&gt; Support -&gt; <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report. The graphic below shows an example of the Build Details included in the report.</p>
+<ul>
+<li>Note that the profileExpiration listed here is irrelevant - the app expires when the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration indicates - a later version of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> will probably capture that date and provide a notification in the app; but for now, you must remember</li>
+<li>Notice that the sourceRoot starts with <code>/Users/runner/work/LoopWorkspace</code><ul>
+<li>When you see that sourceRoot, you know this app was installed from GitHub build and <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
+<li>In this case the buildDataString is associated with when the app was built, not when it was installed on your phone</li>
+<li>You can use 90 days from this date, as well as the Expires in ## Days on the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app, to know when you need to rebuild.</li>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="graphic indicating build details" src="../img/gh-build-details.png" width="300" /></p>
+<h2 id="github-build-update">GitHub Build Update<a class="headerlink" href="#github-build-update" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ol>
 <li>Sign in to GitHub and select your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> from your repositories list</li>
 <li>
@@ -2181,18 +2222,20 @@
 <li>If you get an email that the action failed, then return to your <abbr title="contains project files and each file's revision history">repository</abbr> and look for Build Action error messages<ul>
 <li>Click on the most recent Build job with the red x by it</li>
 <li>If the details show this message, "<a href="../gh-errors/#could-not-install-wwdr-certificate">Could not install WWDR certificate</a>", make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
-<li>Repeat the build and it should be fine the next time</li>
+<li>Repeat the build (previous step) and it should be fine the next time</li>
 </ul>
 </li>
 </ul>
 </li>
+<li>The updated Loop app will show up in your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app</li>
+<li>If you chose to leave <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> enabled for Loop, the updated build will be installed over your existing app.</li>
 <li>
-<p>The updated Loop app will automatically be pushed to and shown in your Test Flight app, so all you need to do is...</p>
+<p>If you choose to disable automatic updates</p>
 <ul>
-<li>Open <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone and click <code>Install</code></li>
-<li>If you have automatic installation enabled in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, the app should have installed automatically, in which case the message should say <code>Open</code>.</li>
+<li>Open <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone and click <code>Install</code> as shown in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
+<li>If you have automatic updates enabled in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, the app should have installed automatically, in which case the message should say <code>Open</code>.</li>
 </ul>
-<p align="center"><img alt="graphic indicating how to install app in TestFlight" src="../img/testflight-app-install.svg" width="500" /></p>
+<p align="center"><img alt="install Loop from TestFlight" src="../img/testflight-install-loop.gif" width="300" /></p>
 </li>
 </ol>
                 
