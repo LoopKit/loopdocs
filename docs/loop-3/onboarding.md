@@ -89,6 +89,8 @@ The next screen, shown on the left of the graphic below, enables the user to bot
 
 * If you have a Nightscout site, select `Use Nightscout with Loop` to connect Loop to your site and download your profile (Therapy Settings) from Nightscout for review.
 
+* If you were using a Nightscout site with a prior version of Loop, you need to type it in again.
+
 
 ![Nightscout screens when onboarding if select Use Loop with Nightscout](img/nightscout-menus-x2.svg){width="500"}
 {align="center"}
