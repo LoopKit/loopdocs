@@ -8,14 +8,14 @@ After building Loop using [GitHub Build Loop](../gh-actions/gh-first-time.md#bui
 
 * If you later need to add an adult family member to your list, refer to [Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight).
 
-* Children (under 13 in US, varies by country) cannot use TestFlight with their ID. If you plan to [Install Loop for Child](#install-testflight-loop-for-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the TestFlight invitation to the email associated with your ID.
+* Children (under 13 in US, varies by country) cannot use TestFlight with their ID. If you plan to [Install TestFlight Loop for Child](#install-testflight-loop-for-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the TestFlight invitation to the email associated with your ID.
 
 
 ## Install TestFlight
 
-If you already have TestFlight on your phone, skip ahead to [Install Loop with TestFlight](#install-loop-with-testflight).
+If you already have the TestFlight app installed on your phone, skip ahead to [Install Loop with TestFlight](#install-loop-with-testflight).
 
-In order to install Loop, you must install TestFlight on the phone:
+In order to install Loop, the TestFlight app must be installed on the phone:
 
 * Open the App Store and Search for TestFlight (see GIF below)
 * Choose TestFlight and Install or Download to that phone
