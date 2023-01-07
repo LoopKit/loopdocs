@@ -3252,12 +3252,23 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <h2 id="loop-logo">Loop Logo<a class="headerlink" href="#loop-logo" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
 <p>Use <abbr title="graphical folder and file display on Mac">Finder</abbr> to Navigate to the LoopWorkspace folder. These instructions assume you used the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> - if your files are in a different folder, make the appropriate adjustment.</p>
+<p>For Loop 2.2.x:</p>
 <ol>
 <li>Use <abbr title="graphical folder and file display on Mac">Finder</abbr> to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-Master-211006-0524)</li>
 <li>Double-click on the LoopWorkspace folder</li>
 <li>Double-click on the AdditionaAssets.xcassets folder</li>
 <li>Double-click on the CustomLoopIcon.appiconset folder</li>
-<li>Replace the contents of the Appicon.appiconset with your copied images and Contents.json file.</li>
+<li>Delete the contents of the CustomLoopIcon.appiconset folder and copy/paste your new images and Contents.json file.</li>
+<li>Rebuild your app</li>
+</ol>
+<p>For <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>:</p>
+<ol>
+<li>Make sure <abbr title="program used to build an app">Xcode</abbr> is closed</li>
+<li>Use <abbr title="graphical folder and file display on Mac">Finder</abbr> to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-dev-230107-1022_84afcfb)</li>
+<li>Double-click on the LoopWorkspace folder</li>
+<li>Double-click on the OverrideAssetsLoop.xcassets folder</li>
+<li>Double-click on the AppIcon.appiconset folder</li>
+<li>Delete the contents of the Appicon.appiconset and copy/paste your new images and Contents.json file.</li>
 <li>Rebuild your app</li>
 </ol>
 <p>You may see a yellow warning that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than Loop app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).</p>
