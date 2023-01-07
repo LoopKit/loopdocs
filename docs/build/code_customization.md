@@ -654,13 +654,24 @@ If you want an app logo other than the default green circle for your Loop app, y
 
 Use Finder to Navigate to the LoopWorkspace folder. These instructions assume you used the Build Select Script - if your files are in a different folder, make the appropriate adjustment.
 
+For Loop 2.2.x:
+
 1. Use Finder to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-Master-211006-0524)
 1. Double-click on the LoopWorkspace folder
 1. Double-click on the AdditionaAssets.xcassets folder
 1. Double-click on the CustomLoopIcon.appiconset folder
-1. Replace the contents of the Appicon.appiconset with your copied images and Contents.json file.
+1. Delete the contents of the CustomLoopIcon.appiconset folder and copy/paste your new images and Contents.json file.
 1. Rebuild your app
 
+For Loop 3:
+
+1. Make sure Xcode is closed
+1. Use Finder to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-dev-230107-1022_84afcfb)
+1. Double-click on the LoopWorkspace folder
+1. Double-click on the OverrideAssetsLoop.xcassets folder
+1. Double-click on the AppIcon.appiconset folder
+1. Delete the contents of the Appicon.appiconset and copy/paste your new images and Contents.json file.
+1. Rebuild your app
 
 You may see a yellow warning that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than Loop app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).
 
