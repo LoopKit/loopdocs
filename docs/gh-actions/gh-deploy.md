@@ -8,14 +8,14 @@ After building Loop using [GitHub Build Loop](../gh-actions/gh-first-time.md#bui
 
 * If you later need to add an adult family member to your list, refer to [Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight).
 
-* Children (under 13 in US, varies by country) cannot use TestFlight with their ID. If you plan to [Install Loop for Child](#install-testflight-loop-for-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the TestFlight invitation to the email associated with your ID.
+* Children (under 13 in US, varies by country) cannot use TestFlight with their ID. If you plan to [Install TestFlight Loop for Child](#install-testflight-loop-for-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the TestFlight invitation to the email associated with your ID.
 
 
 ## Install TestFlight
 
-If you already have TestFlight on your phone, skip ahead to [Install Loop with TestFlight](#install-loop-with-testflight).
+If you already have the TestFlight app installed on your phone, skip ahead to [Install Loop with TestFlight](#install-loop-with-testflight).
 
-In order to install Loop, you must install TestFlight on the phone:
+In order to install Loop, the TestFlight app must be installed on the phone:
 
 * Open the App Store and Search for TestFlight (see GIF below)
 * Choose TestFlight and Install or Download to that phone
@@ -72,4 +72,20 @@ On the Looper's phone:
 * Install or Update Loop from TestFlight on child's phone
 * Repeat the process to sign out the adult and (if needed) sign back in the child
 
+## Change the App Store Connect Name
+
+Suppose you really don't like the name you picked initially for the Loop app that shows up in the TestFlight app.
+
+You can change it.
+
+Click on this link: []() and log is as needed.
+
+![view your apps in app store connect](img/app-in-connect.png){width="300"}
+{align="center"}
+
+* Click on your app name.
+* Click on App Information on the left side (make browser wider if you don't see this).
+* Modify the Name under Localizable Information and click on the Save button (upper left)
+* If you chose a name that is in use, you'll see the warning screen - try again
+* Review the GIF below to see some of these screens
 

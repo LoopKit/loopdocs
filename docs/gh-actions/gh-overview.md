@@ -32,7 +32,7 @@ The requirements for building and using the Loop app with the GitHub Build Actio
     * If building for a child (age depends on the country), review this section:
         * [Install TestFlight Loop for Child](../gh-actions/gh-deploy.md#install-testflight-loop-for-child)
 
-## First Time Builder
+## First Time GitHub Builder
 
 There are a number of steps that must be completed the first time you use this method.
 
@@ -55,11 +55,14 @@ Try to:
 
 ## Repeat Builders
 
-Once those first time steps are completed, subsequent updates are simple. Complete instructions are found on the [GitHub Update](gh-update.md) page of LoopDocs.
+Once those first time steps are completed, subsequent updates are simple. Complete instructions are found on the [GitHub Update](gh-update.md) page of LoopDocs. The brief summary is listed below:
 
 1. Log in to github and find your LoopWorkspace repository
 1. Update your fork (if needed)
 1. Select Actions: Build Loop
 1. After Build completes (15 to 30 minutes)
-    * Loop is automatically updated on the phone if automatic installation is selected in TestFlight (default) for that phone
-    * Install new version on phone if automatic installation is not selected in TestFlight  for that phone
+    * Loop is automatically updated on the phone if automatic updates is enabled in TestFlight (default) for that phone
+
+    or
+
+    * Open TestFlight on that phone to install new version if automatic updates is disabled

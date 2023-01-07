@@ -6,9 +6,9 @@ You can build Loop-dev using your github.com account and your (paid) Apple Devel
 
 The first time you build with this method requires significant time to set up your configuration. Count on several hours.
 
-Subsequent builds take about half hour to complete, but very little time on your part. Most of that time is taken by github completing the build for you.
+Subsequent builds take about half hour to complete, but very little time on your part. Most of that time is taken by GitHub completing the build for you.
 
-**You must build Loop every 90 days when you use github actions.**
+**You must build Loop every 90 days when you use GitHub actions.**
 
 
 ## Configure to use GitHub Build Actions
@@ -35,27 +35,32 @@ Your app must be updated once every 90 days, but it's a simple click to make a n
 ### Save Your Information
 
 !!! tip "Archive This Information"
-    For many of the steps on this page, you will need to have access to usernames, email addresses, passwords, and in some cases, special parameters. The API Key can only be downloaded one time - you must save it in a safe place. If you loose it, you'll need to generate a new key and update the secret settings in your fork of the LoopWorkspace repository. Same for the github access token you will generate in another step.
+    For many of the steps on this page, you will need to have access to usernames, email addresses, passwords, and in some cases, special parameters. The API Key can only be downloaded one time - you must save it in a safe place. If you loose it, you'll need to generate a new key and update the secret settings in your fork of the LoopWorkspace repository. Same for the GitHub access token you will generate in another step.
 
     * Record these in a safe place so you can find them when you need them
     * A digital copy is best because you will be copying and pasting in different locations
 
 This list indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the `Secret Settings` for your LoopWorkspace repository. So they are listed twice in the list below.
 
-* At developer.apple.com
+!!! tip "A Note about Capitalization and Spaces"
+    In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please use these names. The `Secret Settings` that come later will use names that are capitalized and use underscore instead of spaces. Be precise and careful.
+
+     The relationship and creation of each item is explained step-by-step on this page.
+
+* Needed or created at developer.apple.com
     * Email address (this is your username)
     * password
     * TEAMID
     * FASTLANE_KEY_ID
     * FASTLANE_ISSUER_ID
     * FASTLANE_KEY
-* At github.com
+* Needed or created at github.com
     * Email address
     * password
     * username
-    * Your github repository address will be: `https://github.com/username`
+    * Your GitHub repository address will be: `https://github.com/username`
     * Your LoopWorkspace repository address will be: `https://github.com/username/LoopWorkspace`
-    * github access token (GH_PASS)
+    * GitHub access token (GH_PASS)
     * a password - whatever you want (MATCH_PASSWORD)
 * Needed when you [Configure Secret Settings](#configure-secret-settings).
     * TEAMID
@@ -73,9 +78,11 @@ There are only two prerequisites to Build Loop with this method.
 1. Paid Apple Developer account
 1. Free GitHub account
 
-You will need TestFlight, from the Apple App Store, installed on your [Compatible Phone](../build/step2.md); you will install Loop using TestFlight. In order to use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
+You will need TestFlight, from the Apple App Store, installed on your [Compatible Phone](../build/step2.md). You will install Loop on that phone using the TestFlight app.
 
-For the initial steps, you'll be going back and forth between the github and developer webpages. It is best to open each in a separate window or tab for your browser.
+In order to use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
+
+For the initial steps, you'll be going back and forth between the github.com and developer webpages. It is best to open each in a separate window or tab for your browser.
 
 ## Apple Developer Account
 
@@ -88,7 +95,7 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 
 ### Generate API Key
 
-You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the github steps but you will need to pause at [Configure Secret Settings](#configure-secret-settings).
+You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps but you will need to pause at [Configure Secret Settings](#configure-secret-settings).
 
 This section will walk you the steps required to gather or create these parameters.
 
@@ -146,19 +153,19 @@ In summary, from this section, you have found or generated the following, and sa
 
 ## GitHub Account
 
-If you have a github.com account, you can skip to [Create GitHub Repositories](#setup-github). Make sure you know your github associated email, username and password.
+If you have a GitHub account, you can skip to [Setup GitHub](#setup-github). Make sure you know your GitHub associated email, username and password.
 
-If you do not already have a github.com account, you need to create one. Be sure to record the email, password and username for your github account.
+If you do not already have a GitHub account, you need to create one. Be sure to record the email, password and username for your GitHub account.
 
-Decide on a couple of usernames that you will be happy with - this will get embedded into your github URL. Your first choice might not be available, so be prepared with several candidates. Your personal github URL will be: `https://github.com/username`.
+Decide on a couple of usernames that you will be happy with - this will get embedded into your GitHub URL. Your first choice might not be available, so be prepared with several candidates. Your personal URL will be: `https://github.com/username`.
 
 * Click on this link to sign up for a free account: [github account signup](https://github.com/signup)
-    * You will need to enter the **email** you want associated with github
+    * You will need to enter the **email** you want associated your GitHub account
     * You will be asked to enter a **password**
     * You will be asked to enter a **username**
-    * You will be asked if you want email, ok to say N for no
+    * You will be asked if you want to receive email, ok to say N for no - you still get important account information with that email
     * Solve the puzzle to prove you're a person
-    * Check the associated **email** to get the code and enter the code into github to confirm your account
+    * Check the associated **email** to get the code and enter the code into github.com to confirm your account
 * You should get the Welcome to GitHub screen
     * Indicate it is "Just me" on your team and Continue
     * Don't check anything on the next screen, just tap Continue
@@ -172,39 +179,87 @@ Now you will create one new repository and then fork the LoopWorkspace repositor
 
 ### Create Match-Secrets
 
-Open your github URL (this is `https://github.com/username`).
+Open your github.com URL (this is `https://github.com/username`) where you replace username with the name you chose above.
 
-1. At the top right of the screen, click on the &plus; sign and select New Repository
+Create a new private repository - you can either click on the link below, or follow the instructions with the first graphic:
+
+* Click on this link: [(https://github.com/new)](https://github.com/new)
+
+or
+
+* At the top right of the screen, click on the &plus; sign and select New Repository
 
     ![plus sign to add repository](img/create-match-secrets.svg){width="200"}
     {align="center"}
 
-1. Create a [new empty repository](https://github.com/new) titled `Match-Secrets`.
-    * Be sure the check the box to make the repository private (you will be storing your keys here)
-    * Scroll to the bottom of the pages and tap on "Create Repository"
-    * You'll be shown a new screen with a lot of options - just ignore this
+This shows you a screen similar to the following graphic which has 3 regions highlighted:
 
-You will not be interacting with your Match-Secrets repository directly. It needs to exist for other actions to work correctly. You are done with this part of the set up.
+* In Repository name, type Match-Secrets (use a hyphen between Match and Secrets)
+* Be sure the check the box (red circle) to make the repository **private**
+* **Please confirm you selected Match-Secrets repository as private.**
+* Scroll to the bottom of the pages and tap on "Create Repository"
+
+![first screen for new repository](img/01-gh-create-match-secrets.png){width="600"}
+{align="center"}
+
+You will then be shown a screen with a lot of options - you will not do anything on this screen except leave it.
+
+* Click on just your username (as indicated by the red rectangle) to return to your main GitHub URL.
+
+![second screen for new repository](img/02-gh-match-secrets-leave-alone.png){width="600"}
+{align="center"}
+
+You will not be interacting with your Match-Secrets repository directly. It needs to exist for other actions to work correctly.
+
+You are done with this part of the set up.
 
 ### Fork LoopWorkspace
 
+!!! warning "Existing Fork"
+    Some people may already have a fork of LoopWorkspace. Click on [Already Have LoopWorkspace](#already-have-loopworkspace), decide what to do and follow the appropriate link back to these instructions.
+
 1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the LoopWorkspace repository owned by LoopKit.
-1. At upper right side of the screen, click on the word Fork, it should open the screen shown below.
+1. Review the highlighted locations of the graphic below (yours won't look quite like this yet), but the `Fork` button is in the same place
+1. At upper right side of the screen, click on the word Fork
+    * If you already have a fork, it will not allow you to proceed, see [Already Have LoopWorkspace](#already-have-loopworkspace)
+1. Now your screen should look like the graphic below
+    * Your username will be automatically filled in as the Owner
+    * LoopWorkspace is automatically filled in as the Repository Name
     * Uncheck the selection that says "Copy the dev branch only" so it looks like the graphic
+    * Click on the green `Create fork` button
 
     ![fork information for LoopWorkspace](img/gh-fork-loopworkspace.png){width="700"}
     {align="center"}
 
-1. Tap the Create Fork button
+### Successful Fork
+
+After creating the fork, you screen should look like the next graphic.
+
+* Note that your username is now showing
+* The comment under your username indicates where the fork came from (that is a clickable link)
+* The branch that is selected is dev - you can modify this with the dropdown, but leave it for now
+* The message says "This branch is up to date with LoopKit/LoopWorkspace:dev"
+* If it were not, you could tap on the word Sync fork to bring it up to date
+
+![after creating the fork LoopWorkspace](img/gh-after-fork.png){width="700"}
+{align="center"}
+
 
 ### Create Access Token
 
+You should be logged into your GitHub account before starting this step.
+
 1. You will be creating a new token and giving it the name "FastLane Access Token"
 1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
-    * In the box below Note, enter "FastLane Access Token".
+    * Referring to the graphic, type FastLane Access Token in the Note box.
     * 30 days is fine
-    * Select the `repo` permission scope (check the box to the left of repo)
-    * Scroll all the way to the bottom and click "Generate token"
+    * Add a check beside the `repo` permission scope
+    * Scroll all the way to the bottom and click "Generate token" (it's a long way, ignore all other settings, do not check anything else)
+
+    ![request a new personal access token](img/gh-access-token.png){width="700"}
+    {align="center"}
+
+
 1. A new screen appears showing your access token
     * Copy the token and record it - once you leave this screen you can't see it again
     * You will use this for `GH_PAT` when you set up your Secrets
@@ -222,13 +277,19 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
 1. You should see (at least) 2 repositories: Match-Secrets and LoopWorkspace
 1. Click on LoopWorkspace to open that repository
 1. Click on the Settings Icon near the top right of your LoopWorkspace
-    * On the left side, find the Secrets dropdown and choose Actions
-    * Your screen should look like the graphic below
+    * If you don't see `Settings`, make your browser wider or scroll to the right
+    * After you click on Settings, your screen should look like the graphic below
+
+        ![settings screen](img/gh-settings.png){width="700"}
+        {align="center"}
+
+1. On the left side, find the Secrets dropdown and choose Actions
+    * After you select on Actions, your screen should look like the graphic below
 
         ![action secrets screen](img/gh-actions-secrets.png){width="700"}
         {align="center"}
 
-1. Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD.
+1. Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD. Refer to the GIF below to see the process.
 1. For each of the following secrets, tap on the green button at the top right labeled "New repository secret", then add the name of the secret, along with the value you recorded for it:
     * `TEAMID`
     * `FASTLANE_KEY_ID`
@@ -237,7 +298,13 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
     * `GH_PAT`
     * `MATCH_PASSWORD` - make up a password for this but save it with your other information
 
-Now that all six secrets have been added to your LoopWorkspace, you are done with Settings. The next section will be working with the Actions tab that you see at the top middle of the display (not the one in the settings list on the left side).
+        ![secrets entering GIF](img/gh-add-secrets.gif){width="700"}
+        {align="center"}
+
+Now that all six secrets have been added to your LoopWorkspace, you are done with Settings.
+
+![all secrets entered](img/gh-done-adding-secrets.png){width="700"}
+{align="center"}
 
 
 ## Add Identifiers for Loop
@@ -245,15 +312,29 @@ Now that all six secrets have been added to your LoopWorkspace, you are done wit
 Near the top middle of your LoopWorkspace fork, there is an Actions tab.
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
-    * You'll be informed that Workflows were disabled on your fork
-    * Tap on the green button that says: "I understand my workflows, enable them"
-    * The workflows are now displayed: look at the list on the left side
+    * The first time you click on `Actions` with this repository you'll be informed that `Workflows aren't being run on this forked repository` as shown in the graphic below
+    * Tap on the green button that says: `I understand my workflows, go ahead and enable them`
+
+        ![workflows disabled screen](img/gh-workflows-disabled.png){width="700"}
+        {align="center"}
+
+1. The workflows are now displayed: look at the list on the left side as shown in the graphic below
+
+    ![workflows displayed](img/gh-workflows-displayed.png){width="700"}
+    {align="center"}
+
 1. Select "Add Identifiers".
 1. On the right side, click "Run Workflow" to show a drop-down and tap the green button.
-1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
+
+    ![add identifier in process](img/add-identifier.gif){width="700"}
+    {align="center"}
+
+1. Wait, it seems like nothing happens but then you will see the busy icon followed by a green checkmark indicating the workflow succeeded as displayed in the GIF above.
     * If this action fails, you probably made an error in one of your secrets
     * Try to determine which one was incorrect by clicking on the failed action link to see the full log
-    * Go back and enter the secret(s) again - you will need your github password to change a secret
+    * Go back and enter the secret(s) again
+        * You cannot see what you entered, you'll just need to replace it by tapping on the pencil icon
+        * You need your GitHub password to change a secret
 
 ## Configure Identifiers for Loop
 
@@ -313,12 +394,15 @@ If you have created a Loop app in App Store Connect before, you can skip this se
 
 1. Open this link: [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and click the blue "plus" icon to create a New App.
     * Select "iOS".
-    * Select a name: this will have to be unique, so you may have to try a few different names here. It will not be the name you see on the app on your phone, but it is the name you see in TestFlight when you install it on your phone.
+    * Select a name: this will have to be unique, so you may have to try a few different names here. You could start with Loop_ABC where ABC are your initials. If that is already taken, you can add a number, for example, Loop_ABC_1 or Loop_ABC_1981, etc. It will not be the name you see on the app on your phone, but it is the name you see in TestFlight when you install it on your phone. [Change the App Store Connect Name](../gh-actions/gh-deploy.md#change-the-app-store-connect-name)
     * Select your primary language.
     * Choose the bundle ID that matches `com.TEAMID.loopkit.Loop`, with TEAMID matching your team id.
-    * SKU can be anything; e.g. "123".
+    * SKU can be anything; for example "123".
     * Select "Full Access".
 1. Click Create
+
+    ![create loop app in store connect](img/create-app-in-store.png){width="700"}
+    {align="center"}
 
 Do not fill out the next form. That is for submitting to the app store and you will not be doing this.
 
@@ -326,10 +410,14 @@ You are done with this activity and can close the browser tab.
 
 ## Create Building Certficates
 
-1. Go back to the "Actions" tab of your LoopWorkspace repository in github.
+1. Go back to the "Actions" tab of your LoopWorkspace repository in GitHub.
 1. Select "Create Certificates" (on the left).
 1. Click "Run Workflow" on the right, and tap the green button in the drop down.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
+
+    ![create certificates succeeded](img/certificate-success.png){width="700"}
+    {align="center"}
+
 
 ## Build Loop
 
@@ -340,6 +428,9 @@ You are done with this activity and can close the browser tab.
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
 
 ## Set Up Users and Access (TestFlight)
+
+You are configuring a private closed-circle test for a maximum of 100 users. This should easily cover you and all your family members. You need their Apple ID email address so that you can send them the invitation via e-mail. When building for a child, you will use your own Apple ID, not theirs. See [Install TestFlight Loop for Child](#install-testflight-loop-for-child).
+
 1. For each phone/person you would like to support Loop on:
     * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
     * Add them to your TestFlight Internal Testing group
@@ -356,3 +447,21 @@ The [GitHub Deployment](gh-deploy.md) walks you through the steps to deploy to a
 The (original) instructions are provided at the link below.
 
 * [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md)
+
+## Already Have LoopWorkspace
+
+Some people may already have a fork of LoopWorkspace. They might even have one that they forked from somewhere other than LoopKit.
+
+Suggestions - choose one of these methods: 
+
+* Update the repository if it is forked from LoopKit
+    * Open your LoopWorkspace repository (`https://github.com/username/LoopWorkspace`) where you use your `username` in the URL
+    * Review the graphic in the [Successful Fork](#successful-fork) section
+        * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
+    * If you see a message that your fork is not up to date - tap on the Sync fork button and follow instructions
+    * Continue with the [Create Access Token](#create-access-token) section
+* Rename or delete that repository if it is from somewhere other than LoopKit or if you just prefer to start fresh
+    * Instructions to do this will be added later
+    * You just need to make sure that a repository called LoopWorkspace is no longer in your GitHub account
+    * Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
+
