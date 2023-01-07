@@ -72,4 +72,20 @@ On the Looper's phone:
 * Install or Update Loop from TestFlight on child's phone
 * Repeat the process to sign out the adult and (if needed) sign back in the child
 
+## Change the App Store Connect Name
+
+Suppose you really don't like the name you picked initially for the Loop app that shows up in the TestFlight app.
+
+You can change it.
+
+Click on this link: []() and log is as needed.
+
+![view your apps in app store connect](img/app-in-connect.png){width="300"}
+{align="center"}
+
+* Click on your app name.
+* Click on App Information on the left side (make browser wider if you don't see this).
+* Modify the Name under Localizable Information and click on the Save button (upper left)
+* If you chose a name that is in use, you'll see the warning screen - try again
+* Review the GIF below to see some of these screens
 

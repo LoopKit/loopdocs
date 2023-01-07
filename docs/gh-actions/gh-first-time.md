@@ -247,6 +247,8 @@ After creating the fork, you screen should look like the next graphic.
 
 ### Create Access Token
 
+You should be logged into your GitHub account before starting this step.
+
 1. You will be creating a new token and giving it the name "FastLane Access Token"
 1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
     * Referring to the graphic, type FastLane Access Token in the Note box.
@@ -275,13 +277,19 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
 1. You should see (at least) 2 repositories: Match-Secrets and LoopWorkspace
 1. Click on LoopWorkspace to open that repository
 1. Click on the Settings Icon near the top right of your LoopWorkspace
-    * On the left side, find the Secrets dropdown and choose Actions
-    * Your screen should look like the graphic below
+    * If you don't see `Settings`, make your browser wider or scroll to the right
+    * After you click on Settings, your screen should look like the graphic below
+
+        ![settings screen](img/gh-settings.png){width="700"}
+        {align="center"}
+
+1. On the left side, find the Secrets dropdown and choose Actions
+    * After you select on Actions, your screen should look like the graphic below
 
         ![action secrets screen](img/gh-actions-secrets.png){width="700"}
         {align="center"}
 
-1. Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD.
+1. Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD. Refer to the GIF below to see the process.
 1. For each of the following secrets, tap on the green button at the top right labeled "New repository secret", then add the name of the secret, along with the value you recorded for it:
     * `TEAMID`
     * `FASTLANE_KEY_ID`
@@ -290,7 +298,13 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
     * `GH_PAT`
     * `MATCH_PASSWORD` - make up a password for this but save it with your other information
 
-Now that all six secrets have been added to your LoopWorkspace, you are done with Settings. The next section will be working with the Actions tab that you see at the top middle of the display (not the one in the settings list on the left side).
+        ![secrets entering GIF](img/gh-add-secrets.gif){width="700"}
+        {align="center"}
+
+Now that all six secrets have been added to your LoopWorkspace, you are done with Settings.
+
+![all secrets entered](img/gh-done-adding-secrets.png){width="700"}
+{align="center"}
 
 
 ## Add Identifiers for Loop
@@ -298,15 +312,29 @@ Now that all six secrets have been added to your LoopWorkspace, you are done wit
 Near the top middle of your LoopWorkspace fork, there is an Actions tab.
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
-    * You'll be informed that Workflows were disabled on your fork
-    * Tap on the green button that says: "I understand my workflows, enable them"
-    * The workflows are now displayed: look at the list on the left side
+    * The first time you click on `Actions` with this repository you'll be informed that `Workflows aren't being run on this forked repository` as shown in the graphic below
+    * Tap on the green button that says: `I understand my workflows, go ahead and enable them`
+
+        ![workflows disabled screen](img/gh-workflows-disabled.png){width="700"}
+        {align="center"}
+
+1. The workflows are now displayed: look at the list on the left side as shown in the graphic below
+
+    ![workflows displayed](img/gh-workflows-displayed.png){width="700"}
+    {align="center"}
+
 1. Select "Add Identifiers".
 1. On the right side, click "Run Workflow" to show a drop-down and tap the green button.
-1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
+
+    ![add identifier in process](img/add-identifier.gif){width="700"}
+    {align="center"}
+
+1. Wait, it seems like nothing happens but then you will see the busy icon followed by a green checkmark indicating the workflow succeeded as displayed in the GIF above.
     * If this action fails, you probably made an error in one of your secrets
     * Try to determine which one was incorrect by clicking on the failed action link to see the full log
-    * Go back and enter the secret(s) again - you will need your github.com password to change a secret
+    * Go back and enter the secret(s) again
+        * You cannot see what you entered, you'll just need to replace it by tapping on the pencil icon
+        * You need your GitHub password to change a secret
 
 ## Configure Identifiers for Loop
 
@@ -366,12 +394,15 @@ If you have created a Loop app in App Store Connect before, you can skip this se
 
 1. Open this link: [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and click the blue "plus" icon to create a New App.
     * Select "iOS".
-    * Select a name: this will have to be unique, so you may have to try a few different names here. It will not be the name you see on the app on your phone, but it is the name you see in TestFlight when you install it on your phone.
+    * Select a name: this will have to be unique, so you may have to try a few different names here. You could start with Loop_ABC where ABC are your initials. If that is already taken, you can add a number, for example, Loop_ABC_1 or Loop_ABC_1981, etc. It will not be the name you see on the app on your phone, but it is the name you see in TestFlight when you install it on your phone. [Change the App Store Connect Name](../gh-actions/gh-deploy.md#change-the-app-store-connect-name)
     * Select your primary language.
     * Choose the bundle ID that matches `com.TEAMID.loopkit.Loop`, with TEAMID matching your team id.
-    * SKU can be anything; e.g. "123".
+    * SKU can be anything; for example "123".
     * Select "Full Access".
 1. Click Create
+
+    ![create loop app in store connect](img/create-app-in-store.png){width="700"}
+    {align="center"}
 
 Do not fill out the next form. That is for submitting to the app store and you will not be doing this.
 
@@ -384,6 +415,10 @@ You are done with this activity and can close the browser tab.
 1. Click "Run Workflow" on the right, and tap the green button in the drop down.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
+    ![create certificates succeeded](img/certificate-success.png){width="700"}
+    {align="center"}
+
+
 ## Build Loop
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
@@ -393,6 +428,9 @@ You are done with this activity and can close the browser tab.
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
 
 ## Set Up Users and Access (TestFlight)
+
+You are configuring a private closed-circle test for a maximum of 100 users. This should easily cover you and all your family members. You need their Apple ID email address so that you can send them the invitation via e-mail. When building for a child, you will use your own Apple ID, not theirs. See [Install TestFlight Loop for Child](#install-testflight-loop-for-child).
+
 1. For each phone/person you would like to support Loop on:
     * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
     * Add them to your TestFlight Internal Testing group

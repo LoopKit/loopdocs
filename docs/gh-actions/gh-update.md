@@ -52,6 +52,10 @@ In Loop, tap on Settings -> Support -> Issue Report. The graphic below shows an 
         * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)", make sure your developer account is in good standing and that there are no agreements that need to be accepted
         * Repeat the build (previous step) and it should be fine the next time
 1. The updated Loop app will show up in your TestFlight app
+    * But wait until you see "Expires in 90 days"
+    * The app is in TestFlight from your prior build
+    * It takes time for the update to show up in the TestFlight app
+    * You will also see a build number in parentheses, that will increment each time
 1. If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-deploy.md#testflight-automatic-updates) enabled for Loop, the updated build will be installed over your existing app.
 1. If you choose to disable automatic updates
     * Open TestFlight on your phone and click `Install` as shown in the GIF below
