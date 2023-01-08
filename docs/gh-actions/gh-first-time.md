@@ -120,7 +120,13 @@ Each step has a link to take you to the specific page you need to do the next st
         * Click on `Request Access` and follow directions until access is granted
 
     * Click the "Keys" tab and then click the blue &plus; sign
-    * A new "Generate API Key" dialog box will appear in which you enter the name of the key as "FastLane API Key" and choose "Admin" in the access drop down menu. Click on the "Generate" button.
+    * A new "Generate API Key" dialog box will appear as shown in the graphic below
+
+    ![generate api key dialog box](img/dev-todo.png){width="700"}
+    {align="center"}
+
+
+    * Enter the name of the key as "FastLane API Key" and choose "Admin" in the access drop down menu. Click on the "Generate" button.
     * The Keys screen is seen again and should look similar to the graphic below - yours will have only one Active key
     * To generate this graphic, a new key was added called LoopDocs-test. Your key should say FastLane API key. It will show the Key ID and show a button to "Download API Key". The Key ID and Issuer ID are obscured in this graphic.
     * Wait until told to press the button to "Download API Key".
@@ -251,8 +257,11 @@ You should be logged into your GitHub account before starting this step.
 
 1. You will be creating a new token and giving it the name "FastLane Access Token"
 1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
-    * Referring to the graphic, type FastLane Access Token in the Note box.
-    * 30 days is fine
+    * Referring to the graphic, type FastLane Access Token in the Note box
+    * The default time is 30 days - but you may prefer 90 days (use the drop down menu to select)
+        * You get an email when this token is close to expiration
+        * Since you must rebuild every 90 days, this acts as a convenient reminder
+        * See [GH_PAT Expired](../gh-actions/gh-update.md#gh_pat-expired)
     * Add a check beside the `repo` permission scope
     * Scroll all the way to the bottom and click "Generate token" (it's a long way, ignore all other settings, do not check anything else)
 
