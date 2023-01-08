@@ -1868,11 +1868,24 @@
     Create Loop App in App Store Connect
   </a>
   
+    <nav class="md-nav" aria-label="Create Loop App in App Store Connect">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#find-my-loop" class="md-nav__link">
+    Find My Loop
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-building-certficates" class="md-nav__link">
-    Create Building Certficates
+  <a href="#create-certficates" class="md-nav__link">
+    Create Certficates
   </a>
   
 </li>
@@ -2472,11 +2485,24 @@
     Create Loop App in App Store Connect
   </a>
   
+    <nav class="md-nav" aria-label="Create Loop App in App Store Connect">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#find-my-loop" class="md-nav__link">
+    Find My Loop
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-building-certficates" class="md-nav__link">
-    Create Building Certficates
+  <a href="#create-certficates" class="md-nav__link">
+    Create Certficates
   </a>
   
 </li>
@@ -2533,16 +2559,49 @@
                 
                 <h2 id="build-loop-using-github-actions">Build Loop using GitHub Actions<a class="headerlink" href="#build-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is only available with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> and Loop dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<p>You can build Loop-dev using your <abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr> account and your (paid) Apple Developer account using a browser. You no longer require a Mac computer.</p>
-<p>The first time you build with this method requires significant time to set up your configuration. Count on several hours.</p>
-<p>Subsequent builds take about half hour to complete, but very little time on your part. Most of that time is taken by GitHub completing the build for you.</p>
-<p><strong>You must build Loop every 90 days when you use GitHub actions.</strong></p>
-<h2 id="configure-to-use-github-build-actions">Configure to use GitHub Build Actions<a class="headerlink" href="#configure-to-use-github-build-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">These instructions are under construction</p>
-<p>The original instructions for using GitHub Build Actions are provided at a link at the bottom of this page.</p>
-<p>Enhanced instructions with more hand-holding and graphics are being developed. This enhanced set of instructions contains all the information from the original instructions, but gets very terse near the end (where it is identical to the original instructions.)</p>
+<div class="admonition info">
+<p class="admonition-title">Time Estimate</p>
+<ul>
+<li>If you have never built Loop (allow up to one week elapsed time)<ul>
+<li>Requesting and getting an Apple Developer Account: 1-2 days</li>
+<li>Creating and configuring your GitHub repositories (without Apple Information): 1-2 hours</li>
+<li>Adding Repository Secrets (requires Apple Developer Account): 1 hour</li>
+<li>Performing the Action steps: 30 minutes to 2 hours</li>
+</ul>
+</li>
+<li>If you have previously built Loop with <abbr title="program used to build an app">Xcode</abbr> you have fewer steps and are probably familiar with some of the concepts<ul>
+<li>Expect 1 to 2 hours</li>
+</ul>
+</li>
+</ul>
 </div>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<p>Once you have Apple Developer and GitHub accounts</p>
+<ul>
+<li>Apple: Generate an API Key</li>
+<li>GitHub: Create a <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> private <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>GitHub: Fork a copy of LoopWorkspace and add Repository secrets</li>
+<li>GitHub: Action: Add Identifiers</li>
+<li>Apple: Never Built Before? - several steps</li>
+<li>Apple: Create your version of Loop in App Store (personal use only, not for distribution)</li>
+<li>GitHub: Action: Create Certificates</li>
+<li>GitHub: Action: Build Loop</li>
+<li>Apple: Set up Internal <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Group</li>
+<li>Phone: Install Loop with <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">FAQs</p>
+<ul>
+<li><strong>Do I need a Mac computer?</strong> No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.</li>
+<li><strong>Can I do this on my phone?</strong> Yes, but the graphics shown on this page are from a computer browser.</li>
+<li><strong>Isn't it hard to build every 90 days?</strong> The initial setup (this page) and deploy (next page) takes a lot of your focused time. But once you build once, subequent builds take very little of your time to start, then the rest is done automatically.</li>
+<li><strong>Can I use this for my child?</strong> You, as the adult, can install using <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your child's phone. The explict steps are provided.</li>
+</ul>
+</div>
+<p><strong>You must build Loop every 90 days when you use GitHub build method.</strong></p>
+<h2 id="configure-to-use-github-build-actions">Configure to use GitHub Build Actions<a class="headerlink" href="#configure-to-use-github-build-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Review the entire process before starting and then go through slowly and carefully.</p>
 <p>These instructions allow you to build Loop without having access to a Mac. They also allow you to easily install Loop on phones that are not connected to your computer.</p>
 <ul>
@@ -2550,7 +2609,7 @@
 <li>You can access and install Loop if you lose or damage your device</li>
 <li>You do not need to worry about correct <abbr title="program used to build an app">Xcode</abbr>/Mac versions</li>
 </ul>
-<p>The setup steps are somewhat involved, but nearly all are one time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive files for later use.</p>
+<p>The setup steps are somewhat involved, but nearly all are one time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use.</p>
 <p><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a>.</p>
 <p>Your app must be updated once every 90 days, but it's a simple click to make a new build and can be done from anywhere, see <a href="../gh-update/">Update Loop using GitHub Actions</a>.</p>
 <h3 id="save-your-information">Save Your Information<a class="headerlink" href="#save-your-information" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2562,10 +2621,10 @@
 <li>A digital copy is best because you will be copying and pasting in different locations</li>
 </ul>
 </div>
-<p>This list indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the <code>Secret Settings</code> for your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>. So they are listed twice in the list below.</p>
+<p>This list indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the <code>Repository Secrets</code> for your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>. So they are listed twice in the list below.</p>
 <div class="admonition tip">
 <p class="admonition-title">A Note about Capitalization and Spaces</p>
-<p>In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please use these names. The <code>Secret Settings</code> that come later will use names that are capitalized and use underscore instead of spaces. Be precise and careful.</p>
+<p>In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please use these names. The <code>Repository Secrets</code> that come later will use names that are capitalized and use underscore instead of spaces. Be precise and careful.</p>
 <p>The relationship and creation of each item is explained step-by-step on this page.</p>
 </div>
 <ul>
@@ -2584,7 +2643,7 @@
 <li>username</li>
 <li>Your GitHub <abbr title="contains project files and each file's revision history">repository</abbr> address will be: <code>https://github.com/username</code></li>
 <li>Your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> address will be: <code>https://github.com/username/LoopWorkspace</code></li>
-<li>GitHub access token (GH_PASS)</li>
+<li>GitHub personal access token (GH_PASS)</li>
 <li>a password - whatever you want (MATCH_PASSWORD)</li>
 </ul>
 </li>
@@ -2606,7 +2665,7 @@
 </ol>
 <p>You will need <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, from the Apple App Store, installed on your <a href="../../build/step2/">Compatible Phone</a>. You will install Loop on that phone using the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app.</p>
 <p>In order to use Loop, you need a <a href="../../build/step3/">Compatible Pump</a> and <a href="../../build/step4/">Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>. For pumps other than <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH, you also need a <a href="../../build/step5/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device</a>.</p>
-<p>For the initial steps, you'll be going back and forth between the <abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr> and developer webpages. It is best to open each in a separate window or tab for your browser.</p>
+<p>For the initial steps, you'll be going back and forth between GitHub and Apple Developer webpages. It is best to open each in a separate window or tab for your browser.</p>
 <h2 id="apple-developer-account">Apple Developer Account<a class="headerlink" href="#apple-developer-account" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you have an Apple Developer Account, you need to sign in to your account. There will be links to take you to specific pages in the account website, but you need to be logged in.</p>
 <p>If you do not already have a paid Apple Developer account, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.</p>
@@ -2616,7 +2675,7 @@
 </ul>
 <h3 id="generate-api-key">Generate API Key<a class="headerlink" href="#generate-api-key" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps but you will need to pause at <a href="#configure-secret-settings">Configure Secret Settings</a>.</p>
-<p>This section will walk you the steps required to gather or create these parameters.</p>
+<p>This section will walk you through the steps required to gather or create these parameters.</p>
 <table>
 <thead>
 <tr>
@@ -2645,14 +2704,14 @@
 </table>
 <p>Each step has a link to take you to the specific page you need to do the next step. It is best if you open each link in a separate tab or window so you can refer back to these instructions as you move along.</p>
 <ol>
-<li>Click on this link: <a href="https://developer.apple.com/account/resources/certificates/list">Apple developer portal page</a>.<ul>
+<li>Open this link: <a href="https://developer.apple.com/account/resources/certificates/list">Apple developer portal page</a>.<ul>
 <li>Look at the upper right hand corner of that page</li>
 <li>The 10-character ID number below your name is your <code>TEAMID</code></li>
 <li>Record this for use when you configure your secret settings</li>
 </ul>
 </li>
 <li>
-<p>Click on this link: <a href="https://appstoreconnect.apple.com/access/api">App Store Connect/Access/API</a></p>
+<p>Open this link: <a href="https://appstoreconnect.apple.com/access/api">App Store Connect/Access/API</a></p>
 <ul>
 <li>
 <p>If this is your first time here, there will be a dialog for you to follow:</p>
@@ -2809,7 +2868,7 @@
 <h3 id="create-access-token">Create Access Token<a class="headerlink" href="#create-access-token" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you are returning from a break, be sure to log into your GitHub account before starting this step. If you are continuing, you are already logged in.</p>
 <ol>
-<li>You will be creating a new token and giving it the name "FastLane Access Token"</li>
+<li>You will be creating a new GitHub Personal Access token and giving it the name "FastLane Access Token"</li>
 <li>
 <p>Open this link: <a href="https://github.com/settings/tokens/new">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/settings/tokens/new</a></p>
 <ul>
@@ -2908,7 +2967,7 @@
 </li>
 <li>
 <p>On the right side, click "Run Workflow" to show a drop-down and tap the green button.</p>
-<p align="center"><img alt="add identifier in process" src="img/add-identifier.gif" width="700" /></p>
+<p align="center"><img alt="placeholder alt-text for graphic not prepared: add identifier in process" src="img/add-identifier.png" width="700" /></p>
 </li>
 <li>
 <p>Wait, it seems like nothing happens but then you will see the busy icon followed by a green checkmark indicating the workflow succeeded as displayed in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> above.</p>
@@ -2935,10 +2994,12 @@
 <p>When you have already built Loop with <abbr title="program used to build an app">Xcode</abbr>, the Loop identifier is already associated with your App Group with time sensitive capability.  Your existing Loop identifier will have a name that starts with XC as shown below, where your 10-digit team ID is used.</p>
 <ul>
 <li>Name: XC com TEAMID loopkit Loop</li>
-<li>Indentifier: com.TEAMID.loopkit.Loop</li>
+<li>Identifier: com.TEAMID.loopkit.Loop</li>
 </ul>
 <p>If you look at <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, Identifiers &amp; Profiles</a> and find that name and identifier, you can skip ahead to <a href="#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a>. If you've done a lot of building with <abbr title="program used to build an app">Xcode</abbr>, there may be a lot of names here.</p>
 <h3 id="create-app-group">Create App Group<a class="headerlink" href="#create-app-group" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you have already built Loop via <abbr title="program used to build an app">Xcode</abbr> using this Apple ID, skip ahead to <a href="#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a>.</p>
+<p>If you have never built Loop, you need to create an App Group associated with your TEAMID.</p>
 <ol>
 <li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/">Register an App Group</a> on the apple developer site.</li>
 <li>For Description, use "Loop App Group".</li>
@@ -2946,6 +3007,7 @@
 <li>Click "Continue" and then "Register".</li>
 </ol>
 <h3 id="add-app-group-to-bundle-identifiers">Add App Group to Bundle Identifiers<a class="headerlink" href="#add-app-group-to-bundle-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you have already built Loop via <abbr title="program used to build an app">Xcode</abbr> using this Apple ID, skip ahead to <a href="#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a>.</p>
 <ol>
 <li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, Identifiers &amp; Profiles: List</a> on the apple developer site.</li>
 <li>For each of the following identifier names:<ul>
@@ -2961,12 +3023,13 @@
 <li>Click "Continue".</li>
 <li>Click "Save".</li>
 <li>Click "Confirm".</li>
-<li>Remember to do this for each of the identifiers above.</li>
+<li>Remember to do this for each of the four identifiers above; only needed for those four.</li>
 </ol>
 <h3 id="add-time-sensitive-capability">Add Time Sensitive Capability<a class="headerlink" href="#add-time-sensitive-capability" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you have already built Loop via <abbr title="program used to build an app">Xcode</abbr> using this Apple ID, skip ahead to <a href="#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a>.</p>
 <ol>
 <li>Go to <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, Identifiers &amp; Profiles</a> on the apple developer site.</li>
-<li>Click on the "Loop" identifier</li>
+<li>Click on the "Loop" identifier (only the Loop identifier needs this capability added)</li>
 <li>Scroll down to "Time Sensitive Notifications"</li>
 <li>Tap the check box to enable Time Sensitive Notifications.</li>
 <li>Click "Save".</li>
@@ -2975,31 +3038,81 @@
 <h2 id="create-loop-app-in-app-store-connect">Create Loop App in App Store Connect<a class="headerlink" href="#create-loop-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you built using <abbr title="program used to build an app">Xcode</abbr> with your Apple Developer ID, you were able to skip the steps from the prior few sections - they are already configured.</p>
 <p>If you have created a Loop app in App Store Connect before, you can skip this section as well.</p>
+<p>If have previously used some kind of remote build, like diawi, you may have your Loop in the App Store but can't see it. Don't worry - there are instructions for this case.</p>
 <ol>
-<li>Open this link: <a href="https://appstoreconnect.apple.com/apps">apps list</a> on App Store Connect and click the blue "plus" icon to create a New App.<ul>
+<li>
+<p>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed. </p>
+<ul>
+<li>If you have never added a app to App Store Connect, you will not see the icons inside the red rectangle and should keep going</li>
+<li>If you have an app that is not shown, you will see a search icon and the <code>All Statuses</code> dropdown. If you get to the step 3 and cannot find your <code>com.TEAMID.loopkit.Loop</code> in the Bundle ID drop down, the means you need to follow <a href="#find-my-loop">Find My Loop</a>.</li>
+</ul>
+<p align="center"><img alt="app store connect with deleted apps" src="../img/01-app-store-connect.png" width="600" /></p>
+</li>
+<li>
+<p>Click the Add Apps button or the blue "plus" icon and select New App as shown in the graphic below</p>
+<p align="center"><img alt="choose to add a new app" src="../img/new-app-in-store.png" width="300" /></p>
+</li>
+<li>
+<p>The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu (it shows as <code>Choose</code> in the graphic below). If you do not see <code>com.TEAMID.loopkit.Loop</code>, with TEAMID matching your TEAMID in the dropdown menu; back out of this screen and follow the directions in <a href="#find-my-loop">Find My Loop</a> instead.</p>
+<ul>
 <li>Select "<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>".</li>
-<li>Select a name: this will have to be unique, so you may have to try a few different names here. You could start with Loop_ABC where ABC are your initials. If that is already taken, you can add a number, for example, Loop_ABC_1 or Loop_ABC_1981, etc. It will not be the name you see on the app on your phone, but it is the name you see in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> when you install it on your phone. <a href="../gh-deploy/#change-the-app-store-connect-name">Change the App Store Connect Name</a></li>
+<li>Enter a name: this will have to be unique<ul>
+<li>You could start with Loop_ABC where ABC are your initials</li>
+<li>If that is already taken, you can add a number, for example, Loop_ABC_123</li>
+<li>This name is what you see on the App Store Connect list and in the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app</li>
+<li>Once installed on your phone, you will see Loop with the standard Loop Logo</li>
+<li>You can <a href="../gh-deploy/#change-the-app-store-connect-name">Change the App Store Connect Name</a> later if you want</li>
+</ul>
+</li>
 <li>Select your primary language.</li>
-<li>Choose the bundle ID that matches <code>com.TEAMID.loopkit.Loop</code>, with TEAMID matching your team id.</li>
+<li>Choose the bundle ID that matches <code>com.TEAMID.loopkit.Loop</code></li>
 <li>SKU can be anything; for example "123".</li>
 <li>Select "Full Access".</li>
 </ul>
+<p align="center"><img alt="create loop app in store connect - with missing bundle id" src="../img/create-app-in-store.png" width="600" /></p>
 </li>
 <li>
-<p>Click Create</p>
-<p align="center"><img alt="create loop app in store connect" src="img/create-app-in-store.png" width="700" /></p>
+<p>Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.</p>
 </li>
 </ol>
-<p>Do not fill out the next form. That is for submitting to the app store and you will not be doing this.</p>
-<p>You are done with this activity and can close the browser tab.</p>
-<h2 id="create-building-certficates">Create Building Certficates<a class="headerlink" href="#create-building-certficates" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You are done with this activity and can close the browser tab. It's time to head back to your GitHub account and <a href="#create-certificates">Create Certificates</a></p>
+<h3 id="find-my-loop">Find My Loop<a class="headerlink" href="#find-my-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This section is for people who were not able to follow the instructions in the last section because <code>com.TEAMID.loopkit.Loop</code>, with TEAMID matching your TEAMID, was not in the dropdown menu for Bundle ID.</p>
+<p>There are two possible reasons:</p>
+<ol>
+<li>You did not complete <a href="#add-app-group-to-bundle-identifiers">Add App Group to Bundle Identifiers</a> or one of the predecessor steps; review those steps</li>
+<li>Your app is already in App Store Connect, but you cannot see it</li>
+</ol>
+<p>You may have no memory of ever setting up Loop in App Store Connect. If you previously used some kind of remote build, like diawi, your Loop may be there as a Removed App.</p>
+<ul>
+<li>
+<p>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a>, look for All Statuses dropdown indicator and select <code>Removed Apps</code></p>
+<p align="center"><img alt="app store connect with deleted apps" src="../img/01-app-store-connect.png" width="600" /></p>
+</li>
+<li>
+<p>Click on the App name:</p>
+<p align="center"><img alt="find removed apps" src="../img/find-removed-app.png" width="600" /></p>
+</li>
+<li>
+<p>Insure this is the app you want by selecting on App Information, highlighted on the left side. Examine is Bundle ID (not in view in this graphic) - confirm it is correct. Then scroll down to the bottom and choose <code>Restore App</code>.</p>
+<p align="center"><img alt="find removed apps" src="../img/restore-removed-01.png" width="800" /></p>
+</li>
+<li>
+<p>Make sure User Access is still set to Full Access and click on Restore.</p>
+<p align="center"><img alt="find removed apps" src="../img/restore-removed-02.png" width="800" /></p>
+</li>
+<li>
+<p>You are done with this step and ready to Create Certificates</p>
+</li>
+</ul>
+<h2 id="create-certficates">Create Certficates<a class="headerlink" href="#create-certficates" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ol>
 <li>Go back to the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> in GitHub.</li>
 <li>Select "Create Certificates" (on the left).</li>
 <li>Click "Run Workflow" on the right, and tap the green button in the drop down.</li>
 <li>
 <p>Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.</p>
-<p align="center"><img alt="create certificates succeeded" src="img/certificate-success.png" width="700" /></p>
+<p align="center"><img alt="placeholder alt-text for graphic not prepared: create certificates succeeded" src="img/create-certificates.png" width="700" /></p>
 </li>
 </ol>
 <h2 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3011,20 +3124,47 @@
 <li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps">App Store Connect</a>.</li>
 </ol>
 <h2 id="set-up-users-and-access-testflight">Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)<a class="headerlink" href="#set-up-users-and-access-testflight" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You are configuring a private closed-circle test for a maximum of 100 users. This should easily cover you and all your family members. You need their Apple ID email address so that you can send them the invitation via e-mail. When building for a child, you will use your own Apple ID, not theirs. See <a href="#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a>.</p>
+<p>Once the first build completes, you will be able to configure <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for the app.</p>
+<p>You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the Apple ID email address for each adult installing from your build. When building for a child, you will use your own Apple ID, not theirs. See <a href="#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a>.</p>
 <ol>
-<li>For each phone/person you would like to support Loop on:<ul>
-<li>Add them in <a href="https://appstoreconnect.apple.com/access/users">Users and Access</a> on App Store Connect.</li>
-<li>Add them to your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Internal Testing group</li>
+<li>
+<p>First you need to add the email adress(es) to your App Store Connect Access Users list:</p>
+<ul>
+<li>Open this link: <a href="https://appstoreconnect.apple.com/access/users">Users and Access</a><ul>
+<li>You must provide a role for each person - Customer Support is a good choice</li>
+<li>Once you have added them here, you'll be able to select them in the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> group for your app</li>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="add email and role for your users" src="../img/add-users.png" width="700" /></p>
+</li>
+<li>
+<p>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed. Then select your Loop app. Click on <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> tab and the Internal Testing to add a group.</p>
+<p align="center"><img alt="open TestFlight tab for your app" src="../img/setup-testflight-01.png" width="700" /></p>
+</li>
+<li>
+<p>Fill out the name you want for the Internal Testing group</p>
+<ul>
+<li>Be sure to enable automatic distribution</li>
+<li>Create when done (this can always be modified later)</li>
+</ul>
+<p align="center"><img alt="add email and role for your users" src="../img/setup-testflight-02.png" width="700" /></p>
+</li>
+<li>
+<p>As soon as you create the group, you'll be asked who should be included</p>
+<ul>
+<li>Click in the box beside each person you want to include</li>
 <li>Each person in this group will get an email each time you update (build again) on GitHub</li>
+<li>Click Add when you are done</li>
 <li>If building for a child, you will send the invitation to yourself because you will install for your child: See <a href="../gh-deploy/#install-testflight-loop-for-child">Install Loop for Child</a></li>
 </ul>
+<p align="center"><img alt="select your users for the testing group" src="../img/setup-testflight-03.png" width="700" /></p>
 </li>
 </ol>
 <h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <a href="../gh-deploy/">GitHub Deployment</a> walks you through the steps to deploy to a phone.</p>
 <h2 id="basic-instructions">Basic Instructions<a class="headerlink" href="#basic-instructions" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The (original) instructions are provided at the link below.</p>
+<p>The (original from Pete Scwhamb) instructions are provided at the link below.</p>
 <ul>
 <li><a href="https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md">Using GitHub Actions + FastLane to deploy to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></a></li>
 </ul>
