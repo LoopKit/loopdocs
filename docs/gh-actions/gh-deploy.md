@@ -94,14 +94,13 @@ Suppose you really don't like the name you picked initially for the Loop app tha
 
 You can change it. THIS SECTION NOT COMPLETED
 
-Click on this link: []() and log is as needed.
-
-![view your apps in app store connect](img/app-in-connect.png){width="300"}
-{align="center"}
+Click on this link: [App Store Connect Apps](https://appstoreconnect.apple.com/apps) and log is as needed.
 
 * Click on your app name.
 * Click on App Information on the left side (make browser wider if you don't see this).
 * Modify the Name under Localizable Information and click on the Save button (upper left)
 * If you chose a name that is in use, you'll see the warning screen - try again
-* Review the GIF below to see some of these screens
+
+![placeholder alt-text for graphic not prepared: view your apps in app store connect](img/app-in-connect.png){width="300"}
+{align="center"}
 
