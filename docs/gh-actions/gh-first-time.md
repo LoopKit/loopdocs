@@ -22,7 +22,7 @@ This is only available with Loop 3 and Loop dev branch.
     * Apple: Create your version of Loop in App Store (personal use only, not for distribution)
     * GitHub: Action: Create Certificates
     * GitHub: Action: Build Loop
-    * Apple: Set up TestFlight Group
+    * Apple: Set up Internal TestFlight Group
     * Phone: Install Loop with TestFlight
     
 
@@ -373,7 +373,7 @@ Near the top middle of your LoopWorkspace fork, there is an Actions tab.
 1. Select "Add Identifiers".
 1. On the right side, click "Run Workflow" to show a drop-down and tap the green button.
 
-    ![placeholder alt-text for graphic not prepared: add identifier in process](img/add-identifier.gif){width="700"}
+    ![placeholder alt-text for graphic not prepared: add identifier in process](img/add-identifier.png){width="700"}
     {align="center"}
 
 1. Wait, it seems like nothing happens but then you will see the busy icon followed by a green checkmark indicating the workflow succeeded as displayed in the GIF above.
@@ -435,7 +435,7 @@ If you have already built Loop via Xcode using this Apple ID, skip ahead to [Cre
 If you have already built Loop via Xcode using this Apple ID, skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect).
 
 1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
-1. Click on the "Loop" identifier (only the Loop identifier need this capability)
+1. Click on the "Loop" identifier (only the Loop identifier needs this capability added)
 1. Scroll down to "Time Sensitive Notifications"
 1. Tap the check box to enable Time Sensitive Notifications.
 1. Click "Save".
@@ -521,7 +521,7 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 1. Click "Run Workflow" on the right, and tap the green button in the drop down.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
-    ![placeholder alt-text for graphic not prepared: create certificates succeeded](img/certificate-success.png){width="700"}
+    ![placeholder alt-text for graphic not prepared: create certificates succeeded](img/create-certificates.png){width="700"}
     {align="center"}
 
 
@@ -535,27 +535,39 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 ## Set Up Users and Access (TestFlight)
 
-You are configuring a private capability your family using an Internal Testing group (max of 100). You need the Apple ID email address for each adult installing from your build. When building for a child, you will use your own Apple ID, not theirs. See [Install TestFlight Loop for Child](#install-testflight-loop-for-child).
+Once the first build completes, you will be able to configure TestFlight for the app.
 
-1. For each phone/person you will invite to your Internal Testing group:
-    * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
+You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the Apple ID email address for each adult installing from your build. When building for a child, you will use your own Apple ID, not theirs. See [Install TestFlight Loop for Child](#install-testflight-loop-for-child).
+
+1. First you need to add the email adress(es) to your App Store Connect Access Users list:
+
+    * Open this link: [Users and Access](https://appstoreconnect.apple.com/access/users)
         * You must provide a role for each person - Customer Support is a good choice
         * Once you have added them here, you'll be able to select them in the TestFlight group for your app
 
-    ![placeholder alt-text for graphic not prepared: add email for your users](img/add users-email.png){width="700"}
+    ![add email and role for your users](img/add-users.png){width="700"}
     {align="center"}
 
-1. Create New Internal Group
-    * Return to your [Apps](https://appstoreconnect.apple.com/apps) page
-    * Click on your Loop app
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. Then select your Loop app. Click on TestFlight tab and the Internal Testing to add a group.
+
+    ![open TestFlight tab for your app](img/setup-testflight-01.png){width="700"}
+    {align="center"}
     
-    
-1. Add them to your TestFlight Testing group for the Loop app you created
-        * On your [App Store Connect Apps](https://appstoreconnect.apple.com/apps) page, click on your Loop app
-        * At the top of the screen, tap on TestFlight
-        * At the left side, click on the blue &plus; by Internal Testing
+1. Fill out the name you want for the Internal Testing group
+    * Be sure to enable automatic distribution
+    * Create when done (this can always be modified later)
+
+    ![add email and role for your users](img/setup-testflight-02.png){width="700"}
+    {align="center"}
+
+1. As soon as you create the group, you'll be asked who should be included
+    * Click in the box beside each person you want to include
     * Each person in this group will get an email each time you update (build again) on GitHub
+    * Click Add when you are done
     * If building for a child, you will send the invitation to yourself because you will install for your child: See [Install Loop for Child](gh-deploy.md#install-testflight-loop-for-child)
+
+    ![select your users for the testing group](img/setup-testflight-03.png){width="700"}
+    {align="center"}
 
 ## Deployment
 
