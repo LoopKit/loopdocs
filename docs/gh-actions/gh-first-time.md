@@ -2,21 +2,40 @@
 
 This is only available with Loop 3 and Loop dev branch.
 
-You can build Loop-dev using your github.com account and your (paid) Apple Developer account using a browser. You no longer require a Mac computer.
+!!! info "Time Estimate"
+    - If you have never built Loop (allow up to one week elapsed time)
+        * Requesting and getting an Apple Developer Account: 1-2 days
+        * Creating and configuring your GitHub repositories (without Apple Information): 1-2 hours
+        * Adding Repository Secrets (requires Apple Developer Account): 1 hour
+        * Performing the Action steps: 30 minutes to 2 hours
+    - If you have previously built Loop with Xcode you have fewer steps and are probably familiar with some of the concepts
+        * Expect 1 to 2 hours
 
-The first time you build with this method requires significant time to set up your configuration. Count on several hours.
+!!! abstract "Summary"
+    Once you have Apple Developer and GitHub accounts
 
-Subsequent builds take about half hour to complete, but very little time on your part. Most of that time is taken by GitHub completing the build for you.
+    * Apple: Generate an API Key
+    * GitHub: Create a Match-Secrets private repository
+    * GitHub: Fork a copy of LoopWorkspace and add Repository secrets
+    * GitHub: Action: Add Identifiers
+    * Apple: Never Built Before? - several steps
+    * Apple: Create your version of Loop in App Store (personal use only, not for distribution)
+    * GitHub: Action: Create Certificates
+    * GitHub: Action: Build Loop
+    * Apple: Set up Internal TestFlight Group
+    * Phone: Install Loop with TestFlight
+    
 
-**You must build Loop every 90 days when you use GitHub actions.**
+!!! question "FAQs"
+    - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
+    - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
+    - **Isn't it hard to build every 90 days?** The initial setup (this page) and deploy (next page) takes a lot of your focused time. But once you build once, subequent builds take very little of your time to start, then the rest is done automatically.
+    - **Can I use this for my child?** You, as the adult, can install using TestFlight on your child's phone. The explict steps are provided.
+
+**You must build Loop every 90 days when you use GitHub build method.**
 
 
 ## Configure to use GitHub Build Actions
-
-!!! warning "These instructions are under construction"
-    The original instructions for using GitHub Build Actions are provided at a link at the bottom of this page.
-
-    Enhanced instructions with more hand-holding and graphics are being developed. This enhanced set of instructions contains all the information from the original instructions, but gets very terse near the end (where it is identical to the original instructions.)
 
 Review the entire process before starting and then go through slowly and carefully.
 
@@ -26,7 +45,7 @@ These instructions allow you to build Loop without having access to a Mac. They 
 * You can access and install Loop if you lose or damage your device
 * You do not need to worry about correct Xcode/Mac versions
 
-The setup steps are somewhat involved, but nearly all are one time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive files for later use.
+The setup steps are somewhat involved, but nearly all are one time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use.
 
 TestFlight can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
 
@@ -40,10 +59,10 @@ Your app must be updated once every 90 days, but it's a simple click to make a n
     * Record these in a safe place so you can find them when you need them
     * A digital copy is best because you will be copying and pasting in different locations
 
-This list indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the `Secret Settings` for your LoopWorkspace repository. So they are listed twice in the list below.
+This list indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the `Repository Secrets` for your LoopWorkspace repository. So they are listed twice in the list below.
 
 !!! tip "A Note about Capitalization and Spaces"
-    In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please use these names. The `Secret Settings` that come later will use names that are capitalized and use underscore instead of spaces. Be precise and careful.
+    In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please use these names. The `Repository Secrets` that come later will use names that are capitalized and use underscore instead of spaces. Be precise and careful.
 
      The relationship and creation of each item is explained step-by-step on this page.
 
@@ -60,7 +79,7 @@ This list indicates what you need to record (save digitally so you can copy and 
     * username
     * Your GitHub repository address will be: `https://github.com/username`
     * Your LoopWorkspace repository address will be: `https://github.com/username/LoopWorkspace`
-    * GitHub access token (GH_PASS)
+    * GitHub personal access token (GH_PASS)
     * a password - whatever you want (MATCH_PASSWORD)
 * Needed when you [Configure Secret Settings](#configure-secret-settings).
     * TEAMID
@@ -82,7 +101,7 @@ You will need TestFlight, from the Apple App Store, installed on your [Compatibl
 
 In order to use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
 
-For the initial steps, you'll be going back and forth between the github.com and developer webpages. It is best to open each in a separate window or tab for your browser.
+For the initial steps, you'll be going back and forth between GitHub and Apple Developer webpages. It is best to open each in a separate window or tab for your browser.
 
 ## Apple Developer Account
 
@@ -97,7 +116,7 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 
 You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps but you will need to pause at [Configure Secret Settings](#configure-secret-settings).
 
-This section will walk you the steps required to gather or create these parameters.
+This section will walk you through the steps required to gather or create these parameters.
 
 |Name|Description|
 |---------|---------|
@@ -108,11 +127,11 @@ This section will walk you the steps required to gather or create these paramete
 
 Each step has a link to take you to the specific page you need to do the next step. It is best if you open each link in a separate tab or window so you can refer back to these instructions as you move along.
 
-1. Click on this link: [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
+1. Open this link: [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
     * Look at the upper right hand corner of that page
     * The 10-character ID number below your name is your `TEAMID`
     * Record this for use when you configure your secret settings
-1. Click on this link: [App Store Connect/Access/API](https://appstoreconnect.apple.com/access/api)
+1. Open this link: [App Store Connect/Access/API](https://appstoreconnect.apple.com/access/api)
     * If this is your first time here, there will be a dialog for you to follow:
 
         "Permission is required to access the App Store Connect API. You can request access on behalf of your organization."
@@ -273,7 +292,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 If you are returning from a break, be sure to log into your GitHub account before starting this step. If you are continuing, you are already logged in.
 
-1. You will be creating a new token and giving it the name "FastLane Access Token"
+1. You will be creating a new GitHub Personal Access token and giving it the name "FastLane Access Token"
 1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
     * Referring to the graphic, type FastLane Access Token in the Note box
     * The default Expiration time is 30 days - but you should select 90 days (use the drop down menu to select)
@@ -354,7 +373,7 @@ Near the top middle of your LoopWorkspace fork, there is an Actions tab.
 1. Select "Add Identifiers".
 1. On the right side, click "Run Workflow" to show a drop-down and tap the green button.
 
-    ![add identifier in process](img/add-identifier.gif){width="700"}
+    ![placeholder alt-text for graphic not prepared: add identifier in process](img/add-identifier.png){width="700"}
     {align="center"}
 
 1. Wait, it seems like nothing happens but then you will see the busy icon followed by a green checkmark indicating the workflow succeeded as displayed in the GIF above.
@@ -378,11 +397,15 @@ In the instructions for people who have never built Loop, they are instructed to
 When you have already built Loop with Xcode, the Loop identifier is already associated with your App Group with time sensitive capability.  Your existing Loop identifier will have a name that starts with XC as shown below, where your 10-digit team ID is used.
 
 * Name: XC com TEAMID loopkit Loop
-* Indentifier: com.TEAMID.loopkit.Loop
+* Identifier: com.TEAMID.loopkit.Loop
 
 If you look at [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) and find that name and identifier, you can skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect). If you've done a lot of building with Xcode, there may be a lot of names here.
 
 ### Create App Group
+
+If you have already built Loop via Xcode using this Apple ID, skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect).
+
+If you have never built Loop, you need to create an App Group associated with your TEAMID.
 
 1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
 1. For Description, use "Loop App Group".
@@ -390,6 +413,8 @@ If you look at [Certificates, Identifiers & Profiles](https://developer.apple.co
 1. Click "Continue" and then "Register".
 
 ### Add App Group to Bundle Identifiers
+
+If you have already built Loop via Xcode using this Apple ID, skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect).
 
 1. Open this link: [Certificates, Identifiers & Profiles: List](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
 1. For each of the following identifier names:
@@ -403,12 +428,14 @@ If you look at [Certificates, Identifiers & Profiles](https://developer.apple.co
 1. Click "Continue".
 1. Click "Save".
 1. Click "Confirm".
-1. Remember to do this for each of the identifiers above.
+1. Remember to do this for each of the four identifiers above; only needed for those four.
 
 ### Add Time Sensitive Capability
 
+If you have already built Loop via Xcode using this Apple ID, skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect).
+
 1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
-1. Click on the "Loop" identifier
+1. Click on the "Loop" identifier (only the Loop identifier needs this capability added)
 1. Scroll down to "Time Sensitive Notifications"
 1. Tap the check box to enable Time Sensitive Notifications.
 1. Click "Save".
@@ -420,30 +447,81 @@ If you built using Xcode with your Apple Developer ID, you were able to skip the
 
 If you have created a Loop app in App Store Connect before, you can skip this section as well.
 
-1. Open this link: [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and click the blue "plus" icon to create a New App.
-    * Select "iOS".
-    * Select a name: this will have to be unique, so you may have to try a few different names here. You could start with Loop_ABC where ABC are your initials. If that is already taken, you can add a number, for example, Loop_ABC_1 or Loop_ABC_1981, etc. It will not be the name you see on the app on your phone, but it is the name you see in TestFlight when you install it on your phone. [Change the App Store Connect Name](../gh-actions/gh-deploy.md#change-the-app-store-connect-name)
-    * Select your primary language.
-    * Choose the bundle ID that matches `com.TEAMID.loopkit.Loop`, with TEAMID matching your team id.
-    * SKU can be anything; for example "123".
-    * Select "Full Access".
-1. Click Create
+If have previously used some kind of remote build, like diawi, you may have your Loop in the App Store but can't see it. Don't worry - there are instructions for this case.
 
-    ![create loop app in store connect](img/create-app-in-store.png){width="700"}
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 
+    * If you have never added a app to App Store Connect, you will not see the icons inside the red rectangle and should keep going
+    *  If you have an app that is not shown, you will see a search icon and the `All Statuses` dropdown. If you get to the step 3 and cannot find your `com.TEAMID.loopkit.Loop` in the Bundle ID drop down, the means you need to follow [Find My Loop](#find-my-loop).
+
+    ![app store connect with deleted apps](img/01-app-store-connect.png){width="600"}
     {align="center"}
 
-Do not fill out the next form. That is for submitting to the app store and you will not be doing this.
+1. Click the Add Apps button or the blue "plus" icon and select New App as shown in the graphic below
 
-You are done with this activity and can close the browser tab.
+    ![choose to add a new app](img/new-app-in-store.png){width="300"}
+    {align="center"}
 
-## Create Building Certficates
+1. The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu (it shows as `Choose` in the graphic below). If you do not see `com.TEAMID.loopkit.Loop`, with TEAMID matching your TEAMID in the dropdown menu; back out of this screen and follow the directions in [Find My Loop](#find-my-loop) instead.
+    * Select "iOS".
+    * Enter a name: this will have to be unique
+        * You could start with Loop_ABC where ABC are your initials
+        * If that is already taken, you can add a number, for example, Loop_ABC_123
+        * This name is what you see on the App Store Connect list and in the TestFlight app
+        * Once installed on your phone, you will see Loop with the standard Loop Logo
+        * You can [Change the App Store Connect Name](../gh-actions/gh-deploy.md#change-the-app-store-connect-name) later if you want
+    * Select your primary language.
+    * Choose the bundle ID that matches `com.TEAMID.loopkit.Loop`
+    * SKU can be anything; for example "123".
+    * Select "Full Access".
+
+    ![create loop app in store connect - with missing bundle id](img/create-app-in-store.png){width="600"}
+    {align="center"}
+
+1. Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
+
+You are done with this activity and can close the browser tab. It's time to head back to your GitHub account and [Create Certificates](#create-certificates)
+
+### Find My Loop
+
+This section is for people who were not able to follow the instructions in the last section because `com.TEAMID.loopkit.Loop`, with TEAMID matching your TEAMID, was not in the dropdown menu for Bundle ID.
+
+There are two possible reasons:
+
+1. You did not complete [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers) or one of the predecessor steps; review those steps
+1. Your app is already in App Store Connect, but you cannot see it
+
+You may have no memory of ever setting up Loop in App Store Connect. If you previously used some kind of remote build, like diawi, your Loop may be there as a Removed App.
+
+* Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps), look for All Statuses dropdown indicator and select `Removed Apps`
+
+    ![app store connect with deleted apps](img/01-app-store-connect.png){width="600"}
+    {align="center"}
+
+* Click on the App name:
+
+    ![find removed apps](img/find-removed-app.png){width="600"}
+    {align="center"}
+
+* Insure this is the app you want by selecting on App Information, highlighted on the left side. Examine is Bundle ID (not in view in this graphic) - confirm it is correct. Then scroll down to the bottom and choose `Restore App`.
+
+    ![find removed apps](img/restore-removed-01.png){width="800"}
+    {align="center"}
+
+* Make sure User Access is still set to Full Access and click on Restore.
+
+    ![find removed apps](img/restore-removed-02.png){width="800"}
+    {align="center"}
+
+* You are done with this step and ready to Create Certificates
+
+## Create Certficates
 
 1. Go back to the "Actions" tab of your LoopWorkspace repository in GitHub.
 1. Select "Create Certificates" (on the left).
 1. Click "Run Workflow" on the right, and tap the green button in the drop down.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
-    ![create certificates succeeded](img/certificate-success.png){width="700"}
+    ![placeholder alt-text for graphic not prepared: create certificates succeeded](img/create-certificates.png){width="700"}
     {align="center"}
 
 
@@ -457,13 +535,39 @@ You are done with this activity and can close the browser tab.
 
 ## Set Up Users and Access (TestFlight)
 
-You are configuring a private closed-circle test for a maximum of 100 users. This should easily cover you and all your family members. You need their Apple ID email address so that you can send them the invitation via e-mail. When building for a child, you will use your own Apple ID, not theirs. See [Install TestFlight Loop for Child](#install-testflight-loop-for-child).
+Once the first build completes, you will be able to configure TestFlight for the app.
 
-1. For each phone/person you would like to support Loop on:
-    * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
-    * Add them to your TestFlight Internal Testing group
+You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the Apple ID email address for each adult installing from your build. When building for a child, you will use your own Apple ID, not theirs. See [Install TestFlight Loop for Child](#install-testflight-loop-for-child).
+
+1. First you need to add the email adress(es) to your App Store Connect Access Users list:
+
+    * Open this link: [Users and Access](https://appstoreconnect.apple.com/access/users)
+        * You must provide a role for each person - Customer Support is a good choice
+        * Once you have added them here, you'll be able to select them in the TestFlight group for your app
+
+    ![add email and role for your users](img/add-users.png){width="700"}
+    {align="center"}
+
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. Then select your Loop app. Click on TestFlight tab and the Internal Testing to add a group.
+
+    ![open TestFlight tab for your app](img/setup-testflight-01.png){width="700"}
+    {align="center"}
+    
+1. Fill out the name you want for the Internal Testing group
+    * Be sure to enable automatic distribution
+    * Create when done (this can always be modified later)
+
+    ![add email and role for your users](img/setup-testflight-02.png){width="700"}
+    {align="center"}
+
+1. As soon as you create the group, you'll be asked who should be included
+    * Click in the box beside each person you want to include
     * Each person in this group will get an email each time you update (build again) on GitHub
+    * Click Add when you are done
     * If building for a child, you will send the invitation to yourself because you will install for your child: See [Install Loop for Child](gh-deploy.md#install-testflight-loop-for-child)
+
+    ![select your users for the testing group](img/setup-testflight-03.png){width="700"}
+    {align="center"}
 
 ## Deployment
 
@@ -472,7 +576,7 @@ The [GitHub Deployment](gh-deploy.md) walks you through the steps to deploy to a
 
 ## Basic Instructions
 
-The (original) instructions are provided at the link below.
+The (original from Pete Scwhamb) instructions are provided at the link below.
 
 * [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md)
 
