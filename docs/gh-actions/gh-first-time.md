@@ -276,10 +276,10 @@ If you are returning from a break, be sure to log into your GitHub account befor
 1. You will be creating a new token and giving it the name "FastLane Access Token"
 1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
     * Referring to the graphic, type FastLane Access Token in the Note box
-    * The default Expiration time is 30 days - but should select 90 days (use the drop down menu to select)
+    * The default Expiration time is 30 days - but you should select 90 days (use the drop down menu to select)
         * You get an email when this token is close to expiration
         * Since you must rebuild every 90 days, setting the Expiration time to 90 days acts as a convenient reminder
-        * See [GH_PAT Expired](../gh-actions/gh-update.md#gh_pat-expired)
+        * See [GitHub Token](../gh-actions/gh-update.md#github-token) for instructions on regenerating when doing an update
     * Add a check beside the `repo` permission scope
     * Scroll all the way to the bottom and click "Generate token" (it's a long way, ignore all other settings, do not check anything else)
 
