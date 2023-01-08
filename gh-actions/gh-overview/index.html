@@ -1715,11 +1715,18 @@
       
         <li class="md-nav__item">
   <a href="#first-time-github-builder" class="md-nav__link">
-    First Time GitHub Builder
+    First-Time GitHub Builder
   </a>
   
-    <nav class="md-nav" aria-label="First Time GitHub Builder">
+    <nav class="md-nav" aria-label="First-Time GitHub Builder">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-github-build" class="md-nav__link">
+    Advantages of GitHub Build
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#what-if-i-get-stuck" class="md-nav__link">
@@ -2175,11 +2182,18 @@
       
         <li class="md-nav__item">
   <a href="#first-time-github-builder" class="md-nav__link">
-    First Time GitHub Builder
+    First-Time GitHub Builder
   </a>
   
-    <nav class="md-nav" aria-label="First Time GitHub Builder">
+    <nav class="md-nav" aria-label="First-Time GitHub Builder">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-github-build" class="md-nav__link">
+    Advantages of GitHub Build
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#what-if-i-get-stuck" class="md-nav__link">
@@ -2230,7 +2244,7 @@
 <p>When using the GitHub build method, Loop must be built every 90 days.</p>
 <ul>
 <li>Rebuilding takes just a few taps in any browser - you can even do it on your phone.</li>
-<li>The actual build time (how long from when you start the build to when it is available to install on your phone) is longer than using a Mac. Typically about 25 minutes.</li>
+<li>The actual build time (how long from when you start the build to when it is available to install on your phone) is longer than using a Mac. Typically about 25 minutes, with another 20 minutes for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> processing.</li>
 </ul>
 <p>When using the Mac method, Loop expires in 1 year, assuming provisioning profiles were cleared before the build.</p>
 </div>
@@ -2255,15 +2269,23 @@
 </ul>
 </li>
 </ol>
-<h2 id="first-time-github-builder">First Time GitHub Builder<a class="headerlink" href="#first-time-github-builder" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="first-time-github-builder">First-Time GitHub Builder<a class="headerlink" href="#first-time-github-builder" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are a number of steps that must be completed the first time you use this method.</p>
 <ul>
-<li>The instructions are at this link: <a href="../gh-first-time/">First-Time with GitHub Actions</a>.</li>
+<li>The instructions are at this link: <a href="../gh-first-time/">GitHub First-Time</a>.</li>
 <li>Plan to spend about 2 hours if you are fairly comfortable with a computer</li>
 <li>It make take longer for some</li>
-<li>The link above contains added graphics and details from the original instructions (warning - these instructions are a work in progress)</li>
 </ul>
-<p>Those original instructions can be found at this link: <a href="../gh-first-time/#basic-instructions">Basic Instructions</a>.</p>
+<h3 id="advantages-of-github-build">Advantages of GitHub Build<a class="headerlink" href="#advantages-of-github-build" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Developer quote: "This frees up the dependency of having the most recent <abbr title="program used to build an app">Xcode</abbr> to build to a [phone with a] new version of <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. <abbr title="program used to build an app">Xcode</abbr> only needs to support the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version on your phone when you are building directly to the phone."</p>
+<ul>
+<li>Mac computer is not required</li>
+<li>Most recent version of <abbr title="program used to build an app">Xcode</abbr> on a Mac computer is not required<ul>
+<li>No more updating Mac then updating <abbr title="program used to build an app">Xcode</abbr></li>
+<li>One time setup for GitHub probably takes less time than one Mac/<abbr title="program used to build an app">Xcode</abbr> update</li>
+</ul>
+</li>
+</ul>
 <h3 id="what-if-i-get-stuck">What if I get stuck?<a class="headerlink" href="#what-if-i-get-stuck" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Try to:</p>
 <ul>
@@ -2272,22 +2294,7 @@
 <li>If you are still stumped - reach out for help: <a href="../../intro/loopdocs-how-to/#how-to-find-help">How to Find Help</a>.</li>
 </ul>
 <h2 id="repeat-builders">Repeat Builders<a class="headerlink" href="#repeat-builders" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once those first time steps are completed, subsequent updates are simple. Complete instructions are found on the <a href="../gh-update/">GitHub Update</a> page of LoopDocs. The brief summary is listed below:</p>
-<ol>
-<li>Log in to github and find your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
-<li>Update your <abbr title="a copy of code in a github repository other than the original">fork</abbr> (if needed)</li>
-<li>Select Actions: Build Loop</li>
-<li>
-<p>After Build completes (15 to 30 minutes)</p>
-<ul>
-<li>Loop is automatically updated on the phone if automatic updates is enabled in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> (default) for that phone</li>
-</ul>
-<p>or</p>
-<ul>
-<li>Open <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on that phone to install new version if automatic updates is disabled</li>
-</ul>
-</li>
-</ol>
+<p>Once those first-time steps are completed, subsequent updates are simple. Complete instructions are found on the <a href="../gh-update/">GitHub Update</a> page of LoopDocs. </p>
                 
               
               

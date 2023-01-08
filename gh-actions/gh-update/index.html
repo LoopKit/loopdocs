@@ -1749,23 +1749,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-build-update" class="md-nav__link">
-    GitHub Build Update
+  <a href="#github-update-summary" class="md-nav__link">
+    GitHub Update Summary
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gh_pat-expired" class="md-nav__link">
-    GH_PAT Expired
+  <a href="#github-token" class="md-nav__link">
+    GitHub Token
   </a>
   
-    <nav class="md-nav" aria-label="GH_PAT Expired">
+    <nav class="md-nav" aria-label="GitHub Token">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#regenerate-the-github-token" class="md-nav__link">
-    Regenerate the GitHub Token
+  <a href="#regenerate-github-token" class="md-nav__link">
+    Regenerate GitHub Token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-token-email" class="md-nav__link">
+    GitHub Token Email
   </a>
   
 </li>
@@ -1779,6 +1786,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-build-update" class="md-nav__link">
+    GitHub Build Update
+  </a>
   
 </li>
       
@@ -2174,23 +2188,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-build-update" class="md-nav__link">
-    GitHub Build Update
+  <a href="#github-update-summary" class="md-nav__link">
+    GitHub Update Summary
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gh_pat-expired" class="md-nav__link">
-    GH_PAT Expired
+  <a href="#github-token" class="md-nav__link">
+    GitHub Token
   </a>
   
-    <nav class="md-nav" aria-label="GH_PAT Expired">
+    <nav class="md-nav" aria-label="GitHub Token">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#regenerate-the-github-token" class="md-nav__link">
-    Regenerate the GitHub Token
+  <a href="#regenerate-github-token" class="md-nav__link">
+    Regenerate GitHub Token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-token-email" class="md-nav__link">
+    GitHub Token Email
   </a>
   
 </li>
@@ -2204,6 +2225,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-build-update" class="md-nav__link">
+    GitHub Build Update
+  </a>
   
 </li>
       
@@ -2231,8 +2259,100 @@
                 
                 <h2 id="update-loop-using-github-actions">Update Loop using GitHub Actions<a class="headerlink" href="#update-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is only available with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> and Loop dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<p>Once you have built Loop one time with github Build Actions, updates are fast and easy.</p>
-<p><strong>You must build Loop every 90 days when you use this method.</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Time Estimate</p>
+<ul>
+<li>If you need or choose to update your GitHub Personal Access token<ul>
+<li>5 minutes to regenerate token</li>
+<li>5 minutes to update one of your Secret Settings</li>
+</ul>
+</li>
+<li>Start the Build: 5 minutes</li>
+<li>Wait for build to complete and appear in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone<ul>
+<li>30 to 45 minutes</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<p><strong>You must build Loop every 90 days when you use the GitHub build method.</strong></p>
+<ul>
+<li>For GitHub token update, start at <a href="#github-token">GitHub Token</a></li>
+<li>Otherwise, start at <a href="#github-build-update">GitHub Build Update</a></li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">FAQs</p>
+<ul>
+<li><strong>Do I need a computer?</strong> No</li>
+<li><strong>Can I do this on my phone?</strong> Yes</li>
+<li><strong>Should I regenerate my GitHub Personal Access token every time?</strong> It depends. Getting a new token resets the 90 day clock for when you get your email reminder. That can be a handy reminder that you need to rebuild to avoid <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration.</li>
+</ul>
+</div>
+<h2 id="github-update-summary">GitHub Update Summary<a class="headerlink" href="#github-update-summary" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The brief summary is listed below:</p>
+<ol>
+<li>Log in to GitHub</li>
+<li>Update your GitHub token (if needed)</li>
+<li>Go to your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>Update your <abbr title="a copy of code in a github repository other than the original">fork</abbr> (if needed)</li>
+<li>Select Actions: Build Loop</li>
+<li>
+<p>After Build completes and is processed by <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> (about 30 to 45 minutes)</p>
+<ul>
+<li>Loop is automatically updated on the phone when automatic updates are enabled in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> (default) for that phone</li>
+</ul>
+<p>or</p>
+<ul>
+<li>Open <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on that phone to install new version when automatic updates are disabled</li>
+</ul>
+</li>
+</ol>
+<h2 id="github-token">GitHub Token<a class="headerlink" href="#github-token" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If your GitHub Personal Access Token has not expired and you don't want to regenerate it, skip ahead to <a href="#github-build-update">GitHub Build Update</a>.</p>
+<p>If you received an email warning you that your token will expire soon, you can follow the steps shown at <a href="#github-token-email">GitHub Token Email</a>.</p>
+<h3 id="regenerate-github-token">Regenerate GitHub Token<a class="headerlink" href="#regenerate-github-token" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You can regenerate your GitHub Personal Access Token at any time.</p>
+<p>The graphics and instructions in this section are taken from a computer browser.</p>
+<p>If you want to update your token, it's best to make sure you are already signed in to GitHub. If you haven't logged in recently, then you may see the authentication screen. Click on the link below, and authenticate if requested by clicking on the green <code>Send SMS</code> button</p>
+<ul>
+<li><a href="https://github.com/settings/tokens">Link to access your GitHub Personal Access Token</a></li>
+</ul>
+<p align="center"><img alt="two-factor authentication for access to tokens" src="../img/gh-sms-access-screen.png" width="300" /></p>
+<p>Once you are authenticated, your screen should be similar to the graphic below. The <code>FastLane Access Token</code> is a clickable link.</p>
+<p align="center"><img alt="list of personal access tokens on github" src="../img/gh-token-list.png" width="600" /></p>
+<p>After you click on <code>FastLane Access Token</code> your screen should be similar to the graphic below.</p>
+<p align="center"><img alt="review of fastlane access token on github" src="../img/gh-token-review.png" width="600" /></p>
+<p>Click on Regenerate token (red highlight in previous graphic) to see screen similar to next graphic. If your previous token expired in 30 days, be sure to change Expiration to 90 days to match the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration rhythm. Once happy with Expiration selection, click on the green <code>Regenerate Token</code> button (red highlight in following graphic).</p>
+<p align="center"><img alt="regenerate fastlane access token on github" src="../img/gh-token-set-90-days.png" width="600" /></p>
+<p>Copy the token using the copy icon and save it along with your other secret settings. The next step is to update GH_PAT in your LoopWorkspace Repository Secrets.</p>
+<p align="center"><img alt="regenerate fastlane access token on github" src="../img/gh-token-updated.png" width="600" /></p>
+<p>Skip ahead to <a href="#update-secrets-with-new-github-token">Update Secrets with New GitHub Token</a>.</p>
+<h3 id="github-token-email">GitHub Token Email<a class="headerlink" href="#github-token-email" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You will get an email from GitHub when your Personal Access token is getting close to expiration.</p>
+<p>This token is used as GH_PAT in your <abbr title="contains project files and each file's revision history">repository</abbr> secrets when you initiate the Build Loop action. You will need to regenerate a new one and update the secret with the new token.</p>
+<p>I renewed my GitHub Personal Access token, updated my LoopWorkspace Repository GH_PAT Secret and started the build action for Loop, all on my phone in just a few minutes.</p>
+<p>All the graphics in this section are from my phone.</p>
+<p>Email warning:</p>
+<p align="center"><img alt="email warning github token will expire" src="../img/gh-pat-expiring-email.png" width="300" /></p>
+<p>Click on the "regenerate" link to be taken to your GitHub account (you might need to follow 2-factor authentication to get access). If your Expiration is set at 30 days, as shown, you should select 90 days to match the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration rhythm. That's how often you need to rebuild Loop using GitHub actions. The email acts as a handy reminder. Click on the green Regenerate token button.</p>
+<p>As soon as you regenerate, you cannot build again until you <a href="#update-secrets-with-new-github-token">Update Secrets with New GitHub Token</a>. Your current app in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is <strong>not</strong> affected, but might may be close to expiring. So finish the job while you are thinking about it.</p>
+<p align="center"><img alt="phone screen instructing me to renew" src="../img/regenerate-token-screen.png" width="300" /></p>
+<p>The next screen appears with your token (mine is not shown for security reasons - it's above the portion displayed). Copy your token by clicking on the copy button.</p>
+<p align="center"><img alt="phone screen after hitting the regenerate button" src="../img/after-regeneration.png" width="300" /></p>
+<h3 id="update-secrets-with-new-github-token">Update Secrets with New GitHub Token<a class="headerlink" href="#update-secrets-with-new-github-token" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This can be done with the GitHub Personal Access Token still in your paste buffer - but to be safe, save the token with your other secret settings. If you lose track, just <a href="#regenerate-github-token">Regenerate GitHub Token</a> again.</p>
+<p>The graphics and instructions in this section are using a phone.</p>
+<p>Scroll all the way up to the top of the window to see the hamburger menu, click on it and choose your name and icon (near bottom of the list). Scroll down to the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> and tap on the link.</p>
+<p>Do a horizontal scroll (required on your phone, probably not on a browser) on the row that starts with Code and ends in Settings and tap on Settings. If you don't see Settings (if last item on row is Insights), then you are <strong>not</strong> on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> or you need to sign in to your GitHub account. You should see <code>username/LoopWorkspace</code> with forked from <code>LoopKit/LoopWorkspace</code> underneath.</p>
+<p>Review the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below that shows horizontal scroll to find and tap on Settings, then scroll down on the phone to reach Secrets, open the drop down indicator to see Actions.</p>
+<p align="center"><img alt="phone screens showing the repository settings, secrets and actions" src="../img/phone-with-settings.gif" width="300" /></p>
+<p>After tapping on Settings -&gt; Secrets -&gt; Actions, keep scrolling on the same screen, past the Action secrets / New <abbr title="contains project files and each file's revision history">repository</abbr> secret row, until you see your Repository secrets list as shown in the next <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>.</p>
+<p align="center"><img alt="phone screen showing repository secrets list" src="../img/phone-secret-list.gif" width="300" /></p>
+<p>When you see the secret, GH_PAT, tap on the pencil and then scroll down until you see the Actions secrets / Update secret dialog as shown in the next graphic. Paste your new token into the Value section and tap Update Secret.</p>
+<p align="center"><img alt="update secret dialog" src="../img/update-secret-dialog.png" width="300" /></p>
+<p>Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the <a href="#github-build-update">GitHub Build Update</a> instructions to start a new build.</p>
 <h2 id="github-build-update">GitHub Build Update<a class="headerlink" href="#github-build-update" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ol>
 <li>Sign in to GitHub and select your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> from your repositories list</li>
@@ -2254,7 +2374,7 @@
 <li>Look on the right and click 'Run workflow'</li>
 <li>Make sure the desired Branch is selected</li>
 <li>Click on the green <code>Run workflow</code> button in the dropdown</li>
-<li>Wait ~25-45 min for the build to complete</li>
+<li>Wait ~25-45 min for the build to complete and be processed by <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
 </ul>
 <p align="center"><img alt="graphic indicating how to build again" src="../img/github-build-actions-build-again.svg" width="700" /></p>
 </li>
@@ -2286,32 +2406,8 @@
 <p align="center"><img alt="install Loop from TestFlight" src="../img/testflight-install-loop.gif" width="300" /></p>
 </li>
 </ol>
-<h2 id="gh_pat-expired">GH_PAT Expired<a class="headerlink" href="#gh_pat-expired" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h3 id="regenerate-the-github-token">Regenerate the GitHub Token<a class="headerlink" href="#regenerate-the-github-token" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You will get an email from GitHub when your GH_PAT (that you use to Build Loop) is getting close to expiration.</p>
-<p>I renewed my GH_PAT token, updated my LoopWorkspace Secret Settings and started the build action for Loop, all on my phone in just a few minutes.</p>
-<p>All the graphics in this section are from my phone.</p>
-<p>Email warning:</p>
-<p align="center"><img alt="email warning github token will expire" src="../img/gh-pat-expiring-email.png" width="300" /></p>
-<p>Click on the "regenerate" link to be taken to your GitHub account (you might need to follow 2-factor authentication to get access). If your Expiration is set at 30 days, as shown, you may prefer to select 90 days instead. That's how often you need to rebuild Loop using GitHub actions. The email acts as a handy reminder. Click on the green Regenerate token button.</p>
-<p>As soon as you regenerate, you cannot build again until you <a href="#update-secrets-with-new-github-token">Update Secrets with New GitHub Token</a>. Your current app in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is <strong>not</strong> affected, but might may be close to expiring. So finish the job while you are thinking about it.</p>
-<p align="center"><img alt="phone screen instructing me to renew" src="../img/regenerate-token-screen.png" width="300" /></p>
-<p>The next screen appears with your token (mine is not shown for security reasons - it's above the portion displayed). Save your token by clicking on the copy button. You should probably update your <a href="../gh-first-time/#secret-settings">Secret Settings</a> right away.</p>
-<p align="center"><img alt="phone screen after hitting the regenerate button" src="../img/after-regeneration.png" width="300" /></p>
-<h3 id="update-secrets-with-new-github-token">Update Secrets with New GitHub Token<a class="headerlink" href="#update-secrets-with-new-github-token" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The graphics and instructions in this section are using a phone. If you are working in a browser, use the <a href="../gh-first-time/#configure-secrets-settings">Configure Secrets Settings</a> to see what the screens look like in a browser.</p>
-<p>This can be done with the GH_PAT still in your paste buffer - but to be safe, save the token somewhere on your phone.</p>
-<p>Scroll all the way up to the top of the window to see the hamburger menu, click on it and choose your name and icon (near bottom of the list). Scroll down to the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> and tap on the link.</p>
-<p>Do a horizontal scroll (required on your phone, probably not on a browser) on the row that starts with Code and ends in Settings and tap on Settings. If you don't see Settings (if last item on row is Insights), then you are <strong>not</strong> on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> or you need to sign in to your GitHub account. You should see <code>username/LoopWorkspace</code> with forked from <code>LoopKit/LoopWorkspace</code> underneath.</p>
-<p>Review the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below that shows horizontal scroll to find and tap on Settings, then scroll down on the phone to reach Secrets, open the drop down indicator to see Actions.</p>
-<p align="center"><img alt="phone screens showing the repository settings, secrets and actions" src="../img/phone-with-settings.gif" width="300" /></p>
-<p>After tapping on Settings -&gt; Secrets -&gt; Actions, keep scrolling on the same screen, past the Action secrets / New <abbr title="contains project files and each file's revision history">repository</abbr> secret row, until you see your Repository secrets list as shown in the next <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>.</p>
-<p align="center"><img alt="phone screen showing repository secrets list" src="../img/phone-secret-list.gif" width="300" /></p>
-<p>When you see the secret, GH_PAT, tap on the pencil and then scroll down until you see the Actions secrets / Update secret dialog as shown in the next graphic. Paste your new token into the Value section and tap Update Secret.</p>
-<p align="center"><img alt="update secret dialog" src="../img/update-secret-dialog.png" width="300" /></p>
-<p>Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the <a href="#github-build-update">GitHub Build Update</a> instruction above to start a new build.</p>
 <h2 id="github-build-details">GitHub Build Details<a class="headerlink" href="#github-build-details" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>In Loop, tap on Settings -&gt; Support -&gt; <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report. The graphic below shows an example of the Build Details included in the report.</p>
+<p>In the Loop app, once installed on your phone, tap on Settings -&gt; Support -&gt; <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report. The graphic below shows an example of the Build Details included in the report.</p>
 <ul>
 <li>Note that the profileExpiration listed here is irrelevant - the app expires when the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration indicates - a later version of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> will probably capture that date and provide a notification in the app; but for now, you must remember</li>
 <li>Notice that the sourceRoot starts with <code>/Users/runner/work/LoopWorkspace</code><ul>
