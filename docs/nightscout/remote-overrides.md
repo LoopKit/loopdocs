@@ -212,9 +212,19 @@ Config Var Reminder:
 
 ### LoopCaregiver   ![icon for LoopCaregiver app](img/lcg-icon.jpg){width="50"}
 
-The LoopCaregiver app is under development, works only with Loop-dev and requires an iPhone running at least iOS 16 for the caregiver phone. The Looper's phone minimum requirement is iOS 15.1 with Loop-dev installed.
+The LoopCaregiver app is under development to make remote commands easier to implement and monitor. 
 
-You must be running a minimum version of Nightscout 14.2.6 in order to use LoopCaregiver.
+* Minimum Requirements
+    * iOS 16 for LoopCaregiver's phone
+    * iOS 15.1 with Loop-dev for Looper's phone
+    * Nightscout 14.2.6
+* Complete all 3 steps:
+    * [Step 1: Update the Looper's iPhone settings](#step-1-update-the-loopers-iphone-settings)
+    * [Step 2: Apple Push Notifications](#step-2-apple-push-notifications)
+    * [Step 3: Add APN to Nightscout](#step-3-add-apn-to-nightscout)
+* Safety First - Read these 2 sections again
+    * [FAQs on Remote Overrides](#faqs-on-remote-overrides)
+    * [Warnings for Remote Commands](#warnings-for-remote-commands)
 
 !!! warning "Older NS Versions"
     If you ignore this minimum version requirement - what happens:
