@@ -2662,19 +2662,32 @@
 </ul>
 </li>
 <li>
-<p>Click the "Keys" tab and then click the blue &plus; sign</p>
+<p>Once access is granted, you screen will be similar to the graphic below</p>
 </li>
-<li>A new "Generate API Key" dialog box will appear in which you enter the name of the key as "FastLane API Key" and choose "Admin" in the access drop down menu. Click on the "Generate" button.</li>
-<li>The Keys screen is seen again and should look similar to the graphic below - yours will have only one Active key</li>
-<li>To generate this graphic, a new key was added called LoopDocs-test. Your key should say FastLane API key. It will show the Key ID and show a button to "Download API Key". The Key ID and Issuer ID are obscured in this graphic.</li>
-<li>Wait until told to press the button to "Download API Key".</li>
+<li>Click the "Keys" tab and then click the blue &plus; sign</li>
 </ul>
-<p align="center"><img alt="App Store Connect Key page" src="../img/dev-api-key.svg" width="700" /></p>
+<p align="center"><img alt="App Store Connect Key page" src="../img/api-key-initial-screen.svg" width="700" /></p>
+<ul>
+<li>A new "Generate API Key" dialog box will appear as shown in the graphic below</li>
+</ul>
+<p align="center"><img alt="generate api key dialog box" src="../img/dev-generate-key.png" width="500" /></p>
+<ul>
+<li>Enter the name of the key as "FastLane API Key" and choose "Admin" in the access drop down menu. Click on the "Generate" button.</li>
+<li>The Keys screen is seen again with the additional content shown in the graphic below where key information is blanked out for security</li>
+<li>Review the graphic and then follow directions below to save more parameters you will need to <a href="#configure-secret-settings">Configure Secret Settings</a></li>
+</ul>
+<p align="center"><img alt="App Store Connect Key page" src="../img/api-key-in-process.svg" width="700" /></p>
 </li>
 <li>
-<p>Record the Key ID found on the line with the key name; this will be used for <code>FASTLANE_KEY_ID</code>. When you hover over the key, the instructions <code>Copy Key ID</code> will show up beside the key. If you click on that, the key is copied to your paste buffer.</p>
+<p>Hover to the right of the Key ID and the Copy Key ID button shows up</p>
+<ul>
+<li>Tap on the Copy Key ID button and save this as <code>FASTLANE_KEY_ID</code> </li>
+</ul>
 </li>
-<li>Record the Issuer ID above the word Active (this is the same for all keys that you generate with this Apple Developer ID); this will be used for <code>FASTLANE_ISSUER_ID</code>. Use the Copy button to make sure you get the full ID.</li>
+<li>A button labeled Copy is alway adjacent to the Issuer ID above the word Active (this is the same for all keys that you generate with this Apple Developer ID)<ul>
+<li>Tap on the Copy button and save this as <code>FASTLANE_ISSUER_ID</code></li>
+</ul>
+</li>
 <li>
 <p>Click on the Download API Key button - you will be warned you can only download this once.</p>
 <p align="center"><img alt="download key only once" src="../img/dev-dl-key-once.png" width="700" /></p>
@@ -2695,6 +2708,10 @@
 <li><code>FASTLANE_ISSUER_ID</code></li>
 <li><code>FASTLANE_KEY</code></li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Time for a Break?</p>
+<p>This is a good place to pause if you need to. Just note where you are on the page so you can return later.</p>
+</div>
 <h2 id="github-account">GitHub Account<a class="headerlink" href="#github-account" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you have a GitHub account, you can skip to <a href="#setup-github">Setup GitHub</a>. Make sure you know your GitHub associated email, username and password.</p>
 <p>If you do not already have a GitHub account, you need to create one. Be sure to record the email, password and username for your GitHub account.</p>
@@ -2771,24 +2788,38 @@
 </li>
 </ol>
 <h3 id="successful-fork">Successful Fork<a class="headerlink" href="#successful-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>After creating the <abbr title="a copy of code in a github repository other than the original">fork</abbr>, you screen should look like the next graphic.</p>
+<p>After creating the <abbr title="a copy of code in a github repository other than the original">fork</abbr>, your screen should look like the next graphic.</p>
+<ul>
+<li>Near the top right, click on the X to dismiss the successfully fetched message</li>
+<li>In the middle, click on the Dismiss button to remove the "Your <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not protected message"</li>
+</ul>
+<p align="center"><img alt="after creating the fork LoopWorkspace" src="../img/gh-initial-fork-dismiss.png" width="500" /></p>
+<p>Carefully compare your screen to the graphic below paying attention to the highlighted sections.</p>
 <ul>
 <li>Note that your username is now showing</li>
 <li>The comment under your username indicates where the <abbr title="a copy of code in a github repository other than the original">fork</abbr> came from (that is a clickable link)</li>
 <li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> that is selected is dev - you can modify this with the dropdown, but leave it for now</li>
 <li>The message says "This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date with LoopKit/LoopWorkspace:dev"</li>
-<li>If it were not, you could tap on the word Sync <abbr title="a copy of code in a github repository other than the original">fork</abbr> to bring it up to date</li>
 </ul>
 <p align="center"><img alt="after creating the fork LoopWorkspace" src="../img/gh-after-fork.png" width="700" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Time for a Break?</p>
+<p>This is a good place to pause if you need to. Just note where you are on the page so you can return later.</p>
+</div>
 <h3 id="create-access-token">Create Access Token<a class="headerlink" href="#create-access-token" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You should be logged into your GitHub account before starting this step.</p>
+<p>If you are returning from a break, be sure to log into your GitHub account before starting this step. If you are continuing, you are already logged in.</p>
 <ol>
 <li>You will be creating a new token and giving it the name "FastLane Access Token"</li>
 <li>
 <p>Open this link: <a href="https://github.com/settings/tokens/new">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/settings/tokens/new</a></p>
 <ul>
-<li>Referring to the graphic, type FastLane Access Token in the Note box.</li>
-<li>30 days is fine</li>
+<li>Referring to the graphic, type FastLane Access Token in the Note box</li>
+<li>The default Expiration time is 30 days - but should select 90 days (use the drop down menu to select)<ul>
+<li>You get an email when this token is close to expiration</li>
+<li>Since you must rebuild every 90 days, setting the Expiration time to 90 days acts as a convenient reminder</li>
+<li>See <a href="../gh-update/#gh_pat-expired">GH_PAT Expired</a></li>
+</ul>
+</li>
 <li>Add a check beside the <code>repo</code> permission scope</li>
 <li>Scroll all the way to the bottom and click "Generate token" (it's a long way, ignore all other settings, do not check anything else)</li>
 </ul>
@@ -2820,6 +2851,7 @@
 <p>Click on the Settings Icon near the top right of your LoopWorkspace</p>
 <ul>
 <li>If you don't see <code>Settings</code>, make your browser wider or scroll to the right</li>
+<li>If you still don't see <code>Settings</code>, then you are <strong>not</strong> on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> or you need to sign in to your GitHub account</li>
 <li>
 <p>After you click on Settings, your screen should look like the graphic below</p>
 <p align="center"><img alt="settings screen" src="../img/gh-settings.png" width="700" /></p>
@@ -2836,7 +2868,7 @@
 </ul>
 </li>
 <li>
-<p>Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD. Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below to see the process.</p>
+<p>Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD.</p>
 </li>
 <li>For each of the following secrets, tap on the green button at the top right labeled "New <abbr title="contains project files and each file's revision history">repository</abbr> secret", then add the name of the secret, along with the value you recorded for it:<ul>
 <li><code>TEAMID</code></li>
@@ -2844,15 +2876,16 @@
 <li><code>FASTLANE_ISSUER_ID</code></li>
 <li><code>FASTLANE_KEY</code> - the entire thing from "-----BEGIN PRIVATE KEY-----" through "-----END PRIVATE KEY-----"</li>
 <li><code>GH_PAT</code></li>
-<li>
-<p><code>MATCH_PASSWORD</code> - make up a password for this but save it with your other information</p>
-<p align="center"><img alt="secrets entering GIF" src="img/gh-add-secrets.gif" width="700" /></p>
-</li>
+<li><code>MATCH_PASSWORD</code> - make up a password for this but save it with your other information</li>
 </ul>
 </li>
 </ol>
-<p>Now that all six secrets have been added to your LoopWorkspace, you are done with Settings.</p>
+<p>Once all six secrets have been added to your LoopWorkspace, you are done with Settings.</p>
 <p align="center"><img alt="all secrets entered" src="../img/gh-done-adding-secrets.png" width="700" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Time for a Break?</p>
+<p>This is a good place to pause if you need to. Just note where you are on the page so you can return later.</p>
+</div>
 <h2 id="add-identifiers-for-loop">Add Identifiers for Loop<a class="headerlink" href="#add-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Near the top middle of your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>, there is an Actions tab.</p>
 <ol>
@@ -2862,13 +2895,13 @@
 <li>The first time you click on <code>Actions</code> with this <abbr title="contains project files and each file's revision history">repository</abbr> you'll be informed that <code>Workflows aren't being run on this forked repository</code> as shown in the graphic below</li>
 <li>
 <p>Tap on the green button that says: <code>I understand my workflows, go ahead and enable them</code></p>
-<p align="center"><img alt="workflows disabled screen" src="img/gh-workflows-disabled.png" width="700" /></p>
+<p align="center"><img alt="workflows disabled screen" src="../img/gh-workflows-disabled.png" width="700" /></p>
 </li>
 </ul>
 </li>
 <li>
-<p>The workflows are now displayed: look at the list on the left side as shown in the graphic below</p>
-<p align="center"><img alt="workflows displayed" src="img/gh-workflows-displayed.png" width="700" /></p>
+<p>The workflows are now displayed: look at the list on the left side as shown in the graphic below (you can dismiss the Actions Enabled message using the X near the upper right side)</p>
+<p align="center"><img alt="workflows displayed" src="../img/gh-workflows-enabled.png" width="700" /></p>
 </li>
 <li>
 <p>Select "Add Identifiers".</p>
