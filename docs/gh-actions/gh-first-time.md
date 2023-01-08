@@ -119,23 +119,29 @@ Each step has a link to take you to the specific page you need to do the next st
 
         * Click on `Request Access` and follow directions until access is granted
 
+    * Once access is granted, you screen will be similar to the graphic below
     * Click the "Keys" tab and then click the blue &plus; sign
+
+    ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
+    {align="center"}
+
     * A new "Generate API Key" dialog box will appear as shown in the graphic below
 
-    ![generate api key dialog box](img/dev-todo.png){width="700"}
+    ![generate api key dialog box](img/dev-generate-key.png){width="500"}
     {align="center"}
 
 
     * Enter the name of the key as "FastLane API Key" and choose "Admin" in the access drop down menu. Click on the "Generate" button.
-    * The Keys screen is seen again and should look similar to the graphic below - yours will have only one Active key
-    * To generate this graphic, a new key was added called LoopDocs-test. Your key should say FastLane API key. It will show the Key ID and show a button to "Download API Key". The Key ID and Issuer ID are obscured in this graphic.
-    * Wait until told to press the button to "Download API Key".
+    * The Keys screen is seen again with the additional content shown in the graphic below where key information is blanked out for security
+    * Review the graphic and then follow directions below to save more parameters you will need to [Configure Secret Settings](#configure-secret-settings)
 
-    ![App Store Connect Key page](img/dev-api-key.svg){width="700"}
+    ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
     {align="center"}
 
-1. Record the Key ID found on the line with the key name; this will be used for `FASTLANE_KEY_ID`. When you hover over the key, the instructions `Copy Key ID` will show up beside the key. If you click on that, the key is copied to your paste buffer.
-1. Record the Issuer ID above the word Active (this is the same for all keys that you generate with this Apple Developer ID); this will be used for `FASTLANE_ISSUER_ID`. Use the Copy button to make sure you get the full ID.
+1. Hover to the right of the Key ID and the Copy Key ID button shows up
+    * Tap on the Copy Key ID button and save this as `FASTLANE_KEY_ID` 
+1. A button labeled Copy is alway adjacent to the Issuer ID above the word Active (this is the same for all keys that you generate with this Apple Developer ID)
+    * Tap on the Copy button and save this as `FASTLANE_ISSUER_ID`
 1. Click on the Download API Key button - you will be warned you can only download this once.
 
     ![download key only once](img/dev-dl-key-once.png){width="700"}
@@ -156,6 +162,9 @@ In summary, from this section, you have found or generated the following, and sa
 * `FASTLANE_KEY_ID`
 * `FASTLANE_ISSUER_ID`
 * `FASTLANE_KEY`
+
+!!! tip "Time for a Break?"
+    This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
 ## GitHub Account
 
@@ -239,28 +248,37 @@ You are done with this part of the set up.
 
 ### Successful Fork
 
-After creating the fork, you screen should look like the next graphic.
+After creating the fork, your screen should look like the next graphic.
+
+* Near the top right, click on the X to dismiss the successfully fetched message
+* In the middle, click on the Dismiss button to remove the "Your branch is not protected message"
+
+![after creating the fork LoopWorkspace](img/gh-initial-fork-dismiss.png){width="500"}
+{align="center"}
+
+Carefully compare your screen to the graphic below paying attention to the highlighted sections.
 
 * Note that your username is now showing
 * The comment under your username indicates where the fork came from (that is a clickable link)
 * The branch that is selected is dev - you can modify this with the dropdown, but leave it for now
 * The message says "This branch is up to date with LoopKit/LoopWorkspace:dev"
-* If it were not, you could tap on the word Sync fork to bring it up to date
 
 ![after creating the fork LoopWorkspace](img/gh-after-fork.png){width="700"}
 {align="center"}
 
+!!! tip "Time for a Break?"
+    This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
 ### Create Access Token
 
-You should be logged into your GitHub account before starting this step.
+If you are returning from a break, be sure to log into your GitHub account before starting this step. If you are continuing, you are already logged in.
 
 1. You will be creating a new token and giving it the name "FastLane Access Token"
 1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
     * Referring to the graphic, type FastLane Access Token in the Note box
-    * The default time is 30 days - but you may prefer 90 days (use the drop down menu to select)
+    * The default Expiration time is 30 days - but should select 90 days (use the drop down menu to select)
         * You get an email when this token is close to expiration
-        * Since you must rebuild every 90 days, this acts as a convenient reminder
+        * Since you must rebuild every 90 days, setting the Expiration time to 90 days acts as a convenient reminder
         * See [GH_PAT Expired](../gh-actions/gh-update.md#gh_pat-expired)
     * Add a check beside the `repo` permission scope
     * Scroll all the way to the bottom and click "Generate token" (it's a long way, ignore all other settings, do not check anything else)
@@ -287,6 +305,7 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
 1. Click on LoopWorkspace to open that repository
 1. Click on the Settings Icon near the top right of your LoopWorkspace
     * If you don't see `Settings`, make your browser wider or scroll to the right
+    * If you still don't see `Settings`, then you are **not** on your fork or you need to sign in to your GitHub account
     * After you click on Settings, your screen should look like the graphic below
 
         ![settings screen](img/gh-settings.png){width="700"}
@@ -298,7 +317,7 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
         ![action secrets screen](img/gh-actions-secrets.png){width="700"}
         {align="center"}
 
-1. Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD. Refer to the GIF below to see the process.
+1. Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD.
 1. For each of the following secrets, tap on the green button at the top right labeled "New repository secret", then add the name of the secret, along with the value you recorded for it:
     * `TEAMID`
     * `FASTLANE_KEY_ID`
@@ -307,14 +326,14 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
     * `GH_PAT`
     * `MATCH_PASSWORD` - make up a password for this but save it with your other information
 
-        ![secrets entering GIF](img/gh-add-secrets.gif){width="700"}
-        {align="center"}
 
-Now that all six secrets have been added to your LoopWorkspace, you are done with Settings.
+Once all six secrets have been added to your LoopWorkspace, you are done with Settings.
 
 ![all secrets entered](img/gh-done-adding-secrets.png){width="700"}
 {align="center"}
 
+!!! tip "Time for a Break?"
+    This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
 ## Add Identifiers for Loop
 
@@ -327,9 +346,9 @@ Near the top middle of your LoopWorkspace fork, there is an Actions tab.
         ![workflows disabled screen](img/gh-workflows-disabled.png){width="700"}
         {align="center"}
 
-1. The workflows are now displayed: look at the list on the left side as shown in the graphic below
+1. The workflows are now displayed: look at the list on the left side as shown in the graphic below (you can dismiss the Actions Enabled message using the X near the upper right side)
 
-    ![workflows displayed](img/gh-workflows-displayed.png){width="700"}
+    ![workflows displayed](img/gh-workflows-enabled.png){width="700"}
     {align="center"}
 
 1. Select "Add Identifiers".

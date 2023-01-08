@@ -28,7 +28,23 @@ In order to install Loop, the TestFlight app must be installed on the phone:
 
 ## Install Loop with TestFlight
 
-Once the GitHub Build completes (either green check mark on GitHub or you got an email), you can install Loop on your phone. Refer to the GIF below.
+Once the GitHub Build completes (either green check mark on GitHub or you got an email), you can install Loop on your phone.
+
+### First Time on Phone
+
+The first time you use TestFlight on any phone associated with a given email, you must `Redeem` the code sent to that email inviting you to test the app. The GIF below is for someone who has never used TestFlight.
+
+* Initial screen indicates there are no Apps available to test, tap on Redeem
+* Enter your code and tap redeem to enter it
+* Click on OK to acknowledge
+* Click on Install
+
+![redeem the code from email in testflight](img/testflight-redeem-code.gif){width="300"}
+{align="center"}
+
+If you already have the Loop app on the phone, you'll see the warning shown in the next GIF. Go ahead with the installation.
+
+### Subsequent Times on Phone
 
 * Open TestFlight and find the name you used for your Loop app in the [Create Loop App in App Store Connect](../gh-actions/gh-first-time.md#create-loop-app-in-app-store-connect) step
 * Tap on Install
@@ -76,7 +92,7 @@ On the Looper's phone:
 
 Suppose you really don't like the name you picked initially for the Loop app that shows up in the TestFlight app.
 
-You can change it.
+You can change it. THIS SECTION NOT COMPLETED
 
 Click on this link: []() and log is as needed.
 
