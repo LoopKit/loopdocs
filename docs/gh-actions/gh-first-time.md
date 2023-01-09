@@ -79,14 +79,14 @@ This list indicates what you need to record (save digitally so you can copy and 
     * username
     * Your GitHub repository address will be: `https://github.com/username`
     * Your LoopWorkspace repository address will be: `https://github.com/username/LoopWorkspace`
-    * GitHub personal access token (GH_PASS)
+    * GitHub Personal Access Token (GH_PAT)
     * a password - whatever you want (MATCH_PASSWORD)
 * Needed when you [Configure Secret Settings](#configure-secret-settings).
     * TEAMID
     * FASTLANE_KEY_ID
     * FASTLANE_ISSUER_ID
     * FASTLANE_KEY
-    * GH_PASS
+    * GH_PAT
     * MATCH_PASSWORD
 
 
