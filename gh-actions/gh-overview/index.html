@@ -1718,7 +1718,21 @@
     First-Time GitHub Builder
   </a>
   
-    <nav class="md-nav" aria-label="First-Time GitHub Builder">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-and-updates" class="md-nav__link">
+    Deploy and Updates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pros-and-cons" class="md-nav__link">
+    Pros and Cons
+  </a>
+  
+    <nav class="md-nav" aria-label="Pros and Cons">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1729,8 +1743,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#what-if-i-get-stuck" class="md-nav__link">
-    What if I get stuck?
+  <a href="#cons" class="md-nav__link">
+    Cons
   </a>
   
 </li>
@@ -1741,8 +1755,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#repeat-builders" class="md-nav__link">
-    Repeat Builders
+  <a href="#what-if-i-get-stuck" class="md-nav__link">
+    What if I get stuck?
   </a>
   
 </li>
@@ -2185,7 +2199,21 @@
     First-Time GitHub Builder
   </a>
   
-    <nav class="md-nav" aria-label="First-Time GitHub Builder">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-and-updates" class="md-nav__link">
+    Deploy and Updates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pros-and-cons" class="md-nav__link">
+    Pros and Cons
+  </a>
+  
+    <nav class="md-nav" aria-label="Pros and Cons">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2196,8 +2224,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#what-if-i-get-stuck" class="md-nav__link">
-    What if I get stuck?
+  <a href="#cons" class="md-nav__link">
+    Cons
   </a>
   
 </li>
@@ -2208,8 +2236,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#repeat-builders" class="md-nav__link">
-    Repeat Builders
+  <a href="#what-if-i-get-stuck" class="md-nav__link">
+    What if I get stuck?
   </a>
   
 </li>
@@ -2230,23 +2258,25 @@
                   <h1>GitHub Build Overview</h1>
                 
                 <h2 id="build-loop-with-a-browser">Build Loop with a Browser<a class="headerlink" href="#build-loop-with-a-browser" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This is a new method, available starting with the release of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, as well as for development versions.</p>
+<p>The new GitHub build method is available with the release of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, as well as for development versions.</p>
 <ul>
+<li>Installation on your phone is via <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
 <li>This can be used by those who don't own a Mac but want to Loop</li>
-<li>This can be used even if you do use a Mac<ul>
-<li>It adds the convenience of <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> to support you or a family member.</li>
-<li>It adds recovery from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> in case of an accident with your Loop phone while traveling, no need to travel with a Mac</li>
+<li>The GitHub build method can be used even if you do use a Mac - the two methods do not interfere with each other</li>
 </ul>
-</li>
+<p><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is the only method available for installation to a phone when using the GitHub build method, but can also be used with the Mac/<abbr title="program used to build an app">Xcode</abbr> build method.</p>
+<p>Advantages of <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>:</p>
+<ul>
+<li>Allows you to install onto a new phone if yours is broken or lost while traveling</li>
+<li>Allows you to support family members who need their Loop app updated while away from home</li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">GitHub Build - Repeat Every 90 Days</p>
-<p>When using the GitHub build method, Loop must be built every 90 days.</p>
+<p class="admonition-title"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> - Repeat Every 90 Days</p>
+<p>When installing Loop on a phone with <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, it must be refreshed every 90 days.</p>
 <ul>
-<li>Rebuilding takes just a few taps in any browser - you can even do it on your phone.</li>
-<li>The actual build time (how long from when you start the build to when it is available to install on your phone) is longer than using a Mac. Typically about 25 minutes, with another 20 minutes for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> processing.</li>
+<li>Updating Loop and <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> takes just a few taps in any browser when using the GitHub build method - you can even do it on your phone.</li>
+<li>Expect an hour of elapsed time from when you tap on the button to start the build on GitHub to when it is available to install on your phone. Typically about 25 minutes to build, with another 20 minutes for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> processing.</li>
 </ul>
-<p>When using the Mac method, Loop expires in 1 year, assuming provisioning profiles were cleared before the build.</p>
 </div>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The requirements for building and using the Loop app with the GitHub Build Actions method are given below.</p>
@@ -2255,7 +2285,7 @@
 <li><a href="../../build/step3/">Compatible Pump</a></li>
 <li><a href="../../build/step4/">Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a></li>
 <li><a href="../../build/step5/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device</a> (not needed for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH)</li>
-<li>Free github account (instructions included in <a href="../gh-first-time/">First-Time with GitHub Actions</a>)</li>
+<li>Free GitHub account (instructions included in <a href="../gh-first-time/">First-Time with GitHub Actions</a>)</li>
 <li><a href="../../build/step6/">Apple Developer Membership</a><ul>
 <li>Must be a paid developer account</li>
 <li>If building for a family member, review this section:<ul>
@@ -2272,29 +2302,45 @@
 <h2 id="first-time-github-builder">First-Time GitHub Builder<a class="headerlink" href="#first-time-github-builder" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are a number of steps that must be completed the first time you use this method.</p>
 <ul>
-<li>The instructions are at this link: <a href="../gh-first-time/">GitHub First-Time</a>.</li>
-<li>Plan to spend about 2 hours if you are fairly comfortable with a computer</li>
-<li>It make take longer for some</li>
+<li><a href="../gh-first-time/">GitHub First-Time</a></li>
 </ul>
+<h2 id="deploy-and-updates">Deploy and Updates<a class="headerlink" href="#deploy-and-updates" title="Anchor link to this Header on this Page">&para;</a></h2>
+<ul>
+<li>Instructions to deploy and make updates are found at:<ul>
+<li><a href="../gh-deploy/">GitHub Deploy</a></li>
+<li><a href="../gh-update/">GitHub Update</a></li>
+</ul>
+</li>
+<li>And of course, an errors page is under construction:<ul>
+<li><a href="../gh-errors/">GitHub Errors</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="pros-and-cons">Pros and Cons<a class="headerlink" href="#pros-and-cons" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="advantages-of-github-build">Advantages of GitHub Build<a class="headerlink" href="#advantages-of-github-build" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Developer quote: "This frees up the dependency of having the most recent <abbr title="program used to build an app">Xcode</abbr> to build to a [phone with a] new version of <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. <abbr title="program used to build an app">Xcode</abbr> only needs to support the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version on your phone when you are building directly to the phone."</p>
 <ul>
 <li>Mac computer is not required</li>
-<li>Most recent version of <abbr title="program used to build an app">Xcode</abbr> on a Mac computer is not required<ul>
-<li>No more updating Mac then updating <abbr title="program used to build an app">Xcode</abbr></li>
-<li>One time setup for GitHub probably takes less time than one Mac/<abbr title="program used to build an app">Xcode</abbr> update</li>
+<li>Most recent version of <abbr title="program used to build an app">Xcode</abbr> is not required<ul>
+<li>No more updating <abbr title="operating system for Mac computer">macOS</abbr> then updating <abbr title="program used to build an app">Xcode</abbr></li>
+<li>The time required for the initial setup for GitHub may take less time than one <abbr title="operating system for Mac computer">macOS</abbr>/<abbr title="program used to build an app">Xcode</abbr> version update</li>
 </ul>
 </li>
+<li>Updates take a few minutes of your time to start and are ready to install on your phone in less than an hour</li>
 </ul>
-<h3 id="what-if-i-get-stuck">What if I get stuck?<a class="headerlink" href="#what-if-i-get-stuck" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="cons">Cons<a class="headerlink" href="#cons" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ul>
+<li>There are no instructions for applying customizations</li>
+<li>Stick with Mac / <abbr title="program used to build an app">Xcode</abbr> build (for now) if you want to customize</li>
+<li>Hint - when customization instructions are provided - you will be making more forks for every submodule you customize and you will be responsible for keeping those forks up to date</li>
+</ul>
+<h2 id="what-if-i-get-stuck">What if I get stuck?<a class="headerlink" href="#what-if-i-get-stuck" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Try to:</p>
 <ul>
 <li>Scroll back in the directions and see if you missed a paragraph or step.</li>
 <li>Compare your screen's display with the graphics in LoopDocs. Is something different or does yours have an error message? If you have an error message, does it guide you to the problem and solution?</li>
 <li>If you are still stumped - reach out for help: <a href="../../intro/loopdocs-how-to/#how-to-find-help">How to Find Help</a>.</li>
 </ul>
-<h2 id="repeat-builders">Repeat Builders<a class="headerlink" href="#repeat-builders" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once those first-time steps are completed, subsequent updates are simple. Complete instructions are found on the <a href="../gh-update/">GitHub Update</a> page of LoopDocs. </p>
                 
               
               

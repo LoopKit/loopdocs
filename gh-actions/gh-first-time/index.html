@@ -2598,6 +2598,7 @@
 <li><strong>Can I do this on my phone?</strong> Yes, but the graphics shown on this page are from a computer browser.</li>
 <li><strong>Isn't it hard to build every 90 days?</strong> The initial setup (this page) and deploy (next page) takes a lot of your focused time. But once you build once, subequent builds take very little of your time to start, then the rest is done automatically.</li>
 <li><strong>Can I use this for my child?</strong> You, as the adult, can install using <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your child's phone. The explict steps are provided.</li>
+<li><strong>Can I still use my customizations?</strong> This requires steps not yet documented. If you want customizations, stick with the Mac / <abbr title="program used to build an app">Xcode</abbr> build method for now.</li>
 </ul>
 </div>
 <p><strong>You must build Loop every 90 days when you use GitHub build method.</strong></p>
@@ -2607,7 +2608,7 @@
 <ul>
 <li>You can send builds and updates to those you care for easily</li>
 <li>You can access and install Loop if you lose or damage your device</li>
-<li>You do not need to worry about correct <abbr title="program used to build an app">Xcode</abbr>/Mac versions</li>
+<li>You do not need to worry about correct <abbr title="program used to build an app">Xcode</abbr>/<abbr title="operating system for Mac computer">macOS</abbr> versions</li>
 </ul>
 <p>The setup steps are somewhat involved, but nearly all are one time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use.</p>
 <p><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a>.</p>
@@ -2714,6 +2715,9 @@
 <p>Open this link: <a href="https://appstoreconnect.apple.com/access/api">App Store Connect/Access/API</a></p>
 <ul>
 <li>
+<p>Click the "Keys" tab</p>
+<ul>
+<li>
 <p>If this is your first time here, there will be a dialog for you to follow:</p>
 <p>"Permission is required to access the App Store Connect API. You can request access on behalf of your organization."</p>
 <ul>
@@ -2721,9 +2725,13 @@
 </ul>
 </li>
 <li>
-<p>Once access is granted, you screen will be similar to the graphic below</p>
+<p>Once access is granted, click on the "Generate API Key" button</p>
 </li>
-<li>Click the "Keys" tab and then click the blue &plus; sign</li>
+</ul>
+</li>
+<li>
+<p>If you did not get routed through the "permission is required" screens click the blue &plus; sign</p>
+</li>
 </ul>
 <p align="center"><img alt="App Store Connect Key page" src="../img/api-key-initial-screen.svg" width="700" /></p>
 <ul>
@@ -2847,7 +2855,7 @@
 </li>
 </ol>
 <h3 id="successful-fork">Successful Fork<a class="headerlink" href="#successful-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>After creating the <abbr title="a copy of code in a github repository other than the original">fork</abbr>, your screen should look like the next graphic.</p>
+<p>After creating the <abbr title="a copy of code in a github repository other than the original">fork</abbr>, your screen should be similar to the next graphic. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.</p>
 <ul>
 <li>Near the top right, click on the X to dismiss the successfully fetched message</li>
 <li>In the middle, click on the Dismiss button to remove the "Your <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not protected message"</li>
@@ -2966,7 +2974,7 @@
 <p>Select "Add Identifiers".</p>
 </li>
 <li>
-<p>On the right side, click "Run Workflow" to show a drop-down and tap the green button.</p>
+<p>On the right side, click "Run Workflow" to show a drop-down menu and then tap the green button that says "Run workflow".</p>
 <p align="center"><img alt="placeholder alt-text for graphic not prepared: add identifier in process" src="img/add-identifier.png" width="700" /></p>
 </li>
 <li>
@@ -3043,7 +3051,7 @@
 <li>
 <p>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed. </p>
 <ul>
-<li>If you have never added a app to App Store Connect, you will not see the icons inside the red rectangle and should keep going</li>
+<li>If you have never added a app to App Store Connect, you will not see the icons inside the red rectangle and should keep going, although some people report the search icon shows up for them</li>
 <li>If you have an app that is not shown, you will see a search icon and the <code>All Statuses</code> dropdown. If you get to the step 3 and cannot find your <code>com.TEAMID.loopkit.Loop</code> in the Bundle ID drop down, the means you need to follow <a href="#find-my-loop">Find My Loop</a>.</li>
 </ul>
 <p align="center"><img alt="app store connect with deleted apps" src="../img/01-app-store-connect.png" width="600" /></p>
@@ -3109,7 +3117,7 @@
 <ol>
 <li>Go back to the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> in GitHub.</li>
 <li>Select "Create Certificates" (on the left).</li>
-<li>Click "Run Workflow" on the right, and tap the green button in the drop down.</li>
+<li>On the right side, click "Run Workflow" to show a drop-down menu and then tap the green button that says "Run workflow".</li>
 <li>
 <p>Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.</p>
 <p align="center"><img alt="placeholder alt-text for graphic not prepared: create certificates succeeded" src="img/create-certificates.png" width="700" /></p>
@@ -3119,7 +3127,7 @@
 <ol>
 <li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
 <li>Select "Build Loop".</li>
-<li>Click "Run Workflow", select your <abbr title="version of code within a single repository or workspace repository">branch</abbr>, and tap the green button.</li>
+<li>On the right side, click "Run Workflow" to show a drop-down menu, choose your <abbr title="version of code within a single repository or workspace repository">branch</abbr> (dev is right until <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is released) and then tap the green button that says "Run workflow".</li>
 <li>You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.</li>
 <li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps">App Store Connect</a>.</li>
 </ol>
