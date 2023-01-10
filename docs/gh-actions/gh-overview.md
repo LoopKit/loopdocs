@@ -58,7 +58,8 @@ Developer quote: "This frees up the dependency of having the most recent Xcode t
 * Mac computer is not required
 * Most recent version of Xcode is not required
     * No more updating macOS then updating Xcode
-    * One time setup for GitHub may take less time than one macOS/Xcode version update
+    * The time required for the initial setup for GitHub may take less time than one macOS/Xcode version update
+* Updates take a few minutes of your time to start and are ready to install on your phone in less than an hour
 
 ### Cons
 
