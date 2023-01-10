@@ -51,14 +51,14 @@ Updated documentation is a work-in-progress located under the [Loop 3](../loop-3
 
 ## Build Loop-dev using GitHub Actions
 
-With Loop-dev, there are two Build Methods. 
+With Loop-dev, there are two build methods. 
 
 Try the [LoopDocs: GitHub Build Actions](../gh-actions/gh-overview.md) if:
 
 * You have never built Loop before
 * You have an older Mac that cannot be updated
 * You are curious
-* Note: if you like to customize your code, there are no simple directions to follow (yet) with the GitHub Build Method
+* Note: if you like to customize your code, there are no simple directions to follow (yet) with the GitHub build method
 
 If your Mac and Xcode versions are consistent with your phone iOS as explained in [Updating](../build/updating.md), and you want to use the Mac and Xcode build method, then stay on this page and keep going.
 

@@ -1,20 +1,23 @@
 ## Build Loop with a Browser
 
-This is a new method, available starting with the release of Loop 3, as well as for development versions.
+The new GitHub build method is available with the release of Loop 3, as well as for development versions.
 
+* Installation on your phone is via TestFlight
 * This can be used by those who don't own a Mac but want to Loop
-* This can be used even if you do use a Mac
-    * It adds the convenience of TestFlight to support you or a family member.
-    * It adds recovery from TestFlight in case of an accident with your Loop phone while traveling, no need to travel with a Mac
+* The GitHub build method can be used even if you do use a Mac - the two methods do not interfere with each other
 
-!!! info "GitHub Build - Repeat Every 90 Days"
-    When using the GitHub build method, Loop must be built every 90 days.
+TestFlight is the only method available for installation to a phone when using the GitHub build method, but can also be used with the Mac/Xcode build method.
 
-    * Rebuilding takes just a few taps in any browser - you can even do it on your phone.
-    * The actual build time (how long from when you start the build to when it is available to install on your phone) is longer than using a Mac. Typically about 25 minutes, with another 20 minutes for TestFlight processing.
+Advantages of TestFlight:
 
-    When using the Mac method, Loop expires in 1 year, assuming provisioning profiles were cleared before the build.
+* Allows you to install onto a new phone if yours is broken or lost while traveling
+* Allows you to support family members who need their Loop app updated while away from home
 
+!!! info "TestFlight - Repeat Every 90 Days"
+    When installing Loop on a phone with TestFlight, it must be refreshed every 90 days.
+
+    * Updating Loop and TestFlight takes just a few taps in any browser when using the GitHub build method - you can even do it on your phone.
+    * Expect an hour of elapsed time from when you tap on the button to start the build on GitHub to when it is available to install on your phone. Typically about 25 minutes to build, with another 20 minutes for TestFlight processing.
 
 ## Requirements
 
@@ -24,7 +27,7 @@ The requirements for building and using the Loop app with the GitHub Build Actio
 1. [Compatible Pump](../build/step3.md)
 1. [Compatible CGM](../build/step4.md)
 1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
-1. Free github account (instructions included in [First-Time with GitHub Actions](../gh-actions/gh-first-time.md))
+1. Free GitHub account (instructions included in [First-Time with GitHub Actions](../gh-actions/gh-first-time.md))
 1. [Apple Developer Membership](../build/step6.md)
     * Must be a paid developer account
     * If building for a family member, review this section:
@@ -36,20 +39,34 @@ The requirements for building and using the Loop app with the GitHub Build Actio
 
 There are a number of steps that must be completed the first time you use this method.
 
-* The instructions are at this link: [GitHub First-Time](../gh-actions/gh-first-time.md).
-* Plan to spend about 2 hours if you are fairly comfortable with a computer
-* It make take longer for some
+* [GitHub First-Time](../gh-actions/gh-first-time.md)
+
+## Deploy and Updates
+
+* Instructions to deploy and make updates are found at:
+    * [GitHub Deploy](../gh-actions/gh-deploy.md)
+    * [GitHub Update](../gh-actions/gh-update.md)
+* And of course, an errors page is under construction:
+    * [GitHub Errors](../gh-actions/gh-errors.md)
+
+## Pros and Cons
 
 ### Advantages of GitHub Build
 
 Developer quote: "This frees up the dependency of having the most recent Xcode to build to a [phone with a] new version of iOS. Xcode only needs to support the iOS version on your phone when you are building directly to the phone."
 
 * Mac computer is not required
-* Most recent version of Xcode on a Mac computer is not required
-    * No more updating Mac then updating Xcode
-    * One time setup for GitHub probably takes less time than one Mac/Xcode update
+* Most recent version of Xcode is not required
+    * No more updating macOS then updating Xcode
+    * One time setup for GitHub may take less time than one macOS/Xcode version update
 
-### What if I get stuck?
+### Cons
+
+* There are no instructions for applying customizations
+* Stick with Mac / Xcode build (for now) if you want to customize
+* Hint - when customization instructions are provided - you will be making more forks for every submodule you customize and you will be responsible for keeping those forks up to date
+
+## What if I get stuck?
 
 Try to:
 
@@ -57,7 +74,3 @@ Try to:
 * Compare your screen's display with the graphics in LoopDocs. Is something different or does yours have an error message? If you have an error message, does it guide you to the problem and solution?
 * If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
 
-
-## Repeat Builders
-
-Once those first-time steps are completed, subsequent updates are simple. Complete instructions are found on the [GitHub Update](gh-update.md) page of LoopDocs. 

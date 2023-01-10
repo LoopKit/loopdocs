@@ -31,6 +31,7 @@ This is only available with Loop 3 and Loop dev branch.
     - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
     - **Isn't it hard to build every 90 days?** The initial setup (this page) and deploy (next page) takes a lot of your focused time. But once you build once, subequent builds take very little of your time to start, then the rest is done automatically.
     - **Can I use this for my child?** You, as the adult, can install using TestFlight on your child's phone. The explict steps are provided.
+    - **Can I still use my customizations?** This requires steps not yet documented. If you want customizations, stick with the Mac / Xcode build method for now.
 
 **You must build Loop every 90 days when you use GitHub build method.**
 
@@ -43,7 +44,7 @@ These instructions allow you to build Loop without having access to a Mac. They 
 
 * You can send builds and updates to those you care for easily
 * You can access and install Loop if you lose or damage your device
-* You do not need to worry about correct Xcode/Mac versions
+* You do not need to worry about correct Xcode/macOS versions
 
 The setup steps are somewhat involved, but nearly all are one time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use.
 
@@ -132,14 +133,16 @@ Each step has a link to take you to the specific page you need to do the next st
     * The 10-character ID number below your name is your `TEAMID`
     * Record this for use when you configure your secret settings
 1. Open this link: [App Store Connect/Access/API](https://appstoreconnect.apple.com/access/api)
-    * If this is your first time here, there will be a dialog for you to follow:
+    * Click the "Keys" tab
+        * If this is your first time here, there will be a dialog for you to follow:
 
-        "Permission is required to access the App Store Connect API. You can request access on behalf of your organization."
+            "Permission is required to access the App Store Connect API. You can request access on behalf of your organization."
 
-        * Click on `Request Access` and follow directions until access is granted
+            * Click on `Request Access` and follow directions until access is granted
 
-    * Once access is granted, you screen will be similar to the graphic below
-    * Click the "Keys" tab and then click the blue &plus; sign
+        * Once access is granted, click on the "Generate API Key" button
+
+    * If you did not get routed through the "permission is required" screens click the blue &plus; sign
 
     ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
     {align="center"}
@@ -267,7 +270,7 @@ You are done with this part of the set up.
 
 ### Successful Fork
 
-After creating the fork, your screen should look like the next graphic.
+After creating the fork, your screen should be similar to the next graphic. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
 
 * Near the top right, click on the X to dismiss the successfully fetched message
 * In the middle, click on the Dismiss button to remove the "Your branch is not protected message"
@@ -371,7 +374,7 @@ Near the top middle of your LoopWorkspace fork, there is an Actions tab.
     {align="center"}
 
 1. Select "Add Identifiers".
-1. On the right side, click "Run Workflow" to show a drop-down and tap the green button.
+1. On the right side, click "Run Workflow" to show a drop-down and tap the green button that says "Run workflow".
 
     ![placeholder alt-text for graphic not prepared: add identifier in process](img/add-identifier.png){width="700"}
     {align="center"}
@@ -450,7 +453,7 @@ If you have created a Loop app in App Store Connect before, you can skip this se
 If have previously used some kind of remote build, like diawi, you may have your Loop in the App Store but can't see it. Don't worry - there are instructions for this case.
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 
-    * If you have never added a app to App Store Connect, you will not see the icons inside the red rectangle and should keep going
+    * If you have never added a app to App Store Connect, you will not see the icons inside the red rectangle and should keep going, although some people report the search icon shows up for them
     *  If you have an app that is not shown, you will see a search icon and the `All Statuses` dropdown. If you get to the step 3 and cannot find your `com.TEAMID.loopkit.Loop` in the Bundle ID drop down, the means you need to follow [Find My Loop](#find-my-loop).
 
     ![app store connect with deleted apps](img/01-app-store-connect.png){width="600"}
@@ -518,7 +521,7 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 1. Go back to the "Actions" tab of your LoopWorkspace repository in GitHub.
 1. Select "Create Certificates" (on the left).
-1. Click "Run Workflow" on the right, and tap the green button in the drop down.
+1. Click "Run Workflow" on the right, and tap the green button that says "Run workflow".
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
     ![placeholder alt-text for graphic not prepared: create certificates succeeded](img/create-certificates.png){width="700"}
@@ -529,7 +532,7 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
 1. Select "Build Loop".
-1. Click "Run Workflow", select your branch, and tap the green button.
+1. Click "Run Workflow", select your branch, and tap the green button that says "Run workflow".
 1. You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
 
