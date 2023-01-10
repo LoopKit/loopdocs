@@ -374,7 +374,7 @@ Near the top middle of your LoopWorkspace fork, there is an Actions tab.
     {align="center"}
 
 1. Select "Add Identifiers".
-1. On the right side, click "Run Workflow" to show a drop-down and tap the green button that says "Run workflow".
+1. On the right side, click "Run Workflow" to show a drop-down menu and then tap the green button that says "Run workflow".
 
     ![placeholder alt-text for graphic not prepared: add identifier in process](img/add-identifier.png){width="700"}
     {align="center"}
@@ -521,7 +521,7 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 1. Go back to the "Actions" tab of your LoopWorkspace repository in GitHub.
 1. Select "Create Certificates" (on the left).
-1. Click "Run Workflow" on the right, and tap the green button that says "Run workflow".
+1. On the right side, click "Run Workflow" to show a drop-down menu and then tap the green button that says "Run workflow".
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
     ![placeholder alt-text for graphic not prepared: create certificates succeeded](img/create-certificates.png){width="700"}
@@ -532,7 +532,7 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
 1. Select "Build Loop".
-1. Click "Run Workflow", select your branch, and tap the green button that says "Run workflow".
+1. On the right side, click "Run Workflow" to show a drop-down menu, choose your branch (dev is right until Loop 3 is released) and then tap the green button that says "Run workflow".
 1. You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
 
