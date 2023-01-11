@@ -152,6 +152,7 @@ nav:
     - 'GitHub Deploy': 'gh-actions/gh-deploy.md'
     - 'GitHub Update': 'gh-actions/gh-update.md'
     - 'GitHub Errors': 'gh-actions/gh-errors.md'
+    - 'TestFlight from Xcode': 'build/testflight-xcode.md'
 - Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'
     - 'New Nightscout': 'nightscout/new_user.md'
