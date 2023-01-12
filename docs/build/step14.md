@@ -16,7 +16,8 @@
     * Watch in awe as you build your very own Loop app
 
 !!! question "FAQs"
-    The FAQs for building Loop are in-line with the steps that trigger the questions.
+    * **Why does Xcode show a colorful spinning icon and not respond to me?** Unfortunately, sometimes Xcode gets confused and you need to force quit the application. See [Xcode Not Responding](../build/build_errors.md#xcode-not-responding) for instructions.
+    * Many more FAQs for building Loop are in-line with the steps that trigger the questions.
 
 ## Build Video
 
