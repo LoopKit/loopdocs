@@ -50,7 +50,7 @@ The setup steps are somewhat involved, but nearly all are one time steps. Subseq
 
 TestFlight can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
 
-Your app must be updated once every 90 days, but it's a simple click to make a new build and can be done from anywhere, see [Update Loop using GitHub Actions](gh-update.md).
+Your app must be updated once every 90 days, but it's simple to make a new build and can be done from anywhere, see [Update Loop using GitHub Actions](gh-update.md).
 
 ### Save Your Information
 
@@ -232,7 +232,7 @@ or
 This shows you a screen similar to the following graphic which has 3 regions highlighted:
 
 * In Repository name, type Match-Secrets (use a hyphen between Match and Secrets)
-* Be sure the check the box (red circle) to make the repository **private**
+* Be sure to check the box (red circle) to make the repository **private**
 * **Please confirm you selected Match-Secrets repository as private.**
 * Scroll to the bottom of the pages and tap on "Create Repository"
 

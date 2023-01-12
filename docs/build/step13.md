@@ -232,6 +232,12 @@ You can now return to the terminal and hit return for the next step.
 
 ## Build Loop
 
+### watchOS Simulators
+
+Yes, watchOS simulators are required to build Loop. If Xcode asks if you want to download them - say yes. It's slow but you cannot build Loop without the simulator.
+
+*   Tap on [New with Xcode 14](../build/build_errors.md#new-with-xcode-14) for more information
+
 ### Plug in Your Phone
 
 Refer to the graphic below. The messages in the terminal instruct you to:
