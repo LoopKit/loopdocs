@@ -184,6 +184,12 @@ The final messages (not shown) inform you that you can rerun the script with an 
 * Wait until you've successfully built the app before closing the terminal
 * The command of the form: `cd /<specific-to-you-and-your-computer>/Downloads/BuildLoop/<download-folder-name>/LoopWorkspace` can be useful for some specific actions; most people will not need this.
 
+### watchOS Simulators
+
+Yes, watchOS simulators are required to build Loop. If Xcode asks if you want to download them - say yes. It's slow but you cannot build Loop without the simulator.
+
+*   Tap on [New with Xcode 14](../build/build_errors.md#new-with-xcode-14) for more information
+
 ## Prepare to Build
 
 **New builders should skip ahead to [Select the Loop Folder](#select-the-loop-folder) and follow the detailed steps.**

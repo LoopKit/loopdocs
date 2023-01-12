@@ -25,6 +25,12 @@ Open Xcode from your Applications folder. If it offers to start a new project wi
 
 Click on the Xcode->About Xcode menu item. The version number is displayed.
 
+## watchOS Simulators
+
+Yes, watchOS simulators are required to build Loop. If Xcode asks if you want to download them - say yes. It's slow but you cannot build Loop without the simulator.
+
+*   Tap on [New with Xcode 14](../build/build_errors.md#new-with-xcode-14) for more information
+
 ## Command Line Tools
 
 The very first time you open Xcode it may install a package of command line tools. Wait patiently until it finishes.  The command line tools may have installed without asking.
