@@ -8,18 +8,15 @@ There are two types of build indications that may be seen: they are warnings (ye
 
 ### Xcode Not Responding
 
-Sometimes, Xcode stops responding. You have to fix this before any of the other steps on this page will help.  The signature it that Xcode shows a colorful spinning icon and does not respond to anything you do.
+Sometimes, Xcode stops responding. You have to fix this before any of the other steps on this page will help.  The signature is that Xcode shows a colorful spinning icon and does not respond to anything you do.
 
-This can happen sometimes. You just need to force quit Xcode and restart. Sometimes rebooting the Mac may be required, but start with force quit. Then just open up Xcode again and keep going.
+This can happen sometimes. You just need to force quit Xcode. Sometimes rebooting the Mac may be required, but start with force quit. Then just open up Xcode again and keep going.
 
 * Hold down these 3 keys (Option (or Alt), Command, Esc (Escape)) until the Force Quit menu appears (should be fast)
 * Select Xcode and tap on the Force Quit button
 
-
 ![menu to select application to force quit](img/force-quit.png){width="300"}
 {align="center"}
-
-
 
 ## Start with The Obvious Error Causes
 
