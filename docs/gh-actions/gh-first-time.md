@@ -349,7 +349,10 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
     * `MATCH_PASSWORD` - make up a password for this but save it with your other information
 
 
-Once all six secrets have been added to your LoopWorkspace, you are done with Settings.
+Once all six secrets have been added to your LoopWorkspace, you are done with Settings. Your screen should look similar to the graphic below.
+
+* Take a moment to be sure all of your secrets are spelled correctly
+* If you notice a mistake, just delete the one that is not spelled correctly and add a `New respository secret` with the correct name
 
 ![all secrets entered](img/gh-done-adding-secrets.png){width="700"}
 {align="center"}
@@ -380,11 +383,8 @@ Near the top middle of your LoopWorkspace fork, there is an Actions tab.
     {align="center"}
 
 1. Wait, it seems like nothing happens but then you will see the busy icon followed by a green checkmark indicating the workflow succeeded as displayed in the GIF above.
-    * If this action fails, you probably made an error in one of your secrets
-    * Try to determine which one was incorrect by clicking on the failed action link to see the full log
-    * Go back and enter the secret(s) again
-        * You cannot see what you entered, you'll just need to replace it by tapping on the pencil icon
-        * You need your GitHub password to change a secret
+    * If this action fails, head over to [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors)
+    * Once you've resolved the error, repeat the Action: Add Identifiers step
 
 ## Configure Identifiers for Loop
 
@@ -533,7 +533,13 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 1. Click on the "Actions" tab of your LoopWorkspace repository.
 1. Select "Build Loop".
 1. On the right side, click "Run Workflow" to show a drop-down menu, choose your branch (dev is right until Loop 3 is released) and then tap the green button that says "Run workflow".
-1. You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.
+1. Wait a minute or two to make sure there is not an early failure
+    * If this action fails, head over to [Action: Build Loop Errors](gh-errors.md#action-build-loop-errors)
+    * Once you've resolved the error, it's a good idea to repeat all three steps in this order:
+        * Add identifiers
+        * Create Certificates
+        * Build Loop
+1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
 
 ## Set Up Users and Access (TestFlight)
