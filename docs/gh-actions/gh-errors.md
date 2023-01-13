@@ -97,7 +97,7 @@ This can also be caused if you correctly created the Loop App but entered an inc
     * Build Loop
 
 
-## Action: Repeat Build Loop Errors
+## Repeat Build Loop Errors
 
 This section is only for people who have successfully built using GitHub Build Actions.
 
