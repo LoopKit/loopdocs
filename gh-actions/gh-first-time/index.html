@@ -2961,7 +2961,11 @@
 </ul>
 </li>
 </ol>
-<p>Once all six secrets have been added to your LoopWorkspace, you are done with Settings.</p>
+<p>Once all six secrets have been added to your LoopWorkspace, you are done with Settings. Your screen should look similar to the graphic below.</p>
+<ul>
+<li>Take a moment to be sure all of your secrets are spelled correctly</li>
+<li>If you notice a mistake, just delete the one that is not spelled correctly and add a <code>New respository secret</code> with the correct name</li>
+</ul>
 <p align="center"><img alt="all secrets entered" src="../img/gh-done-adding-secrets.png" width="700" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Time for a Break?</p>
@@ -2994,13 +2998,8 @@
 <li>
 <p>Wait, it seems like nothing happens but then you will see the busy icon followed by a green checkmark indicating the workflow succeeded as displayed in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> above.</p>
 <ul>
-<li>If this action fails, you probably made an error in one of your secrets</li>
-<li>Try to determine which one was incorrect by clicking on the failed action link to see the full log</li>
-<li>Go back and enter the secret(s) again<ul>
-<li>You cannot see what you entered, you'll just need to replace it by tapping on the pencil icon</li>
-<li>You need your GitHub password to change a secret</li>
-</ul>
-</li>
+<li>If this action fails, head over to <a href="../gh-errors/#action-add-identifiers-errors">Action: Add Identifiers Errors</a></li>
+<li>Once you've resolved the error, repeat the Action: Add Identifiers step</li>
 </ul>
 </li>
 </ol>
@@ -3142,7 +3141,17 @@
 <li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
 <li>Select "Build Loop".</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu, choose your <abbr title="version of code within a single repository or workspace repository">branch</abbr> (dev is right until <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is released) and then tap the green button that says "Run workflow".</li>
-<li>You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.</li>
+<li>Wait a minute or two to make sure there is not an early failure<ul>
+<li>If this action fails, head over to <a href="../gh-errors/#action-build-loop-errors">Action: Build Loop Errors</a></li>
+<li>Once you've resolved the error, it's a good idea to repeat all three steps in this order:<ul>
+<li>Add identifiers</li>
+<li>Create Certificates</li>
+<li>Build Loop</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.</li>
 <li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps">App Store Connect</a>.</li>
 </ol>
 <h2 id="set-up-users-and-access-testflight">Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)<a class="headerlink" href="#set-up-users-and-access-testflight" title="Anchor link to this Header on this Page">&para;</a></h2>
