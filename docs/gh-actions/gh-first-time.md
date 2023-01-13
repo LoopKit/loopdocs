@@ -388,25 +388,12 @@ Near the top middle of your LoopWorkspace fork, there is an Actions tab.
 
 ## Configure Identifiers for Loop
 
-If you have already built Loop via Xcode using this Apple ID, you can skip some steps but first, read this.
-
-In the instructions for people who have never built Loop, they are instructed to look for 4 identifier names and configure them with the App Group associated with their TEAMID. The 4 identifiers that need this association are:
-
-* Loop
-* Loop Intent Extension
-* Loop Status Extension
-* Small Status Widget
-
-When you have already built Loop with Xcode, the Loop identifier is already associated with your App Group with time sensitive capability.  Your existing Loop identifier will have a name that starts with XC as shown below, where your 10-digit team ID is used.
-
-* Name: XC com TEAMID loopkit Loop
-* Identifier: com.TEAMID.loopkit.Loop
-
-If you look at [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) and find that name and identifier, you can skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect). If you've done a lot of building with Xcode, there may be a lot of names here.
-
 ### Create App Group
 
-If you have already built Loop via Xcode using this Apple ID, skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect).
+The Loop App Group already exists if you previously built Loop using Xcode with the Apple Developer ID.
+
+* If you built Loop 2.2.x (this includes FreeAPS) via Xcode, you can skip some steps. Please click on [Add App Group for Loop 2](#add-app-group-for-loop-2).
+* If you built Loop 3 (Loop-dev) via Xcode, you can skip more steps. Please click on [Check App Group Settings](#check-app-group-settings).
 
 If you have never built Loop, you need to create an App Group associated with your TEAMID.
 
@@ -417,9 +404,13 @@ If you have never built Loop, you need to create an App Group associated with yo
 
 ### Add App Group to Bundle Identifiers
 
-If you have already built Loop via Xcode using this Apple ID, skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect).
+This section is for those who have never built Loop with Xcode.
 
-1. Open this link: [Certificates, Identifiers & Profiles: List](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
+* If you built Loop 2.2.x (this includes FreeAPS) via Xcode, you can skip some steps. Please click on [Add App Group for Loop 2](#add-app-group-for-loop-2).
+* If you built Loop 3 (Loop-dev) via Xcode, you can skip more steps. Please click on [Check App Group Settings](#check-app-group-settings).
+
+Open this link: [Certificates, Identifiers & Profiles: List](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
+
 1. For each of the following identifier names:
     * Loop
     * Loop Intent Extension
@@ -435,7 +426,7 @@ If you have already built Loop via Xcode using this Apple ID, skip ahead to [Cre
 
 ### Add Time Sensitive Capability
 
-If you have already built Loop via Xcode using this Apple ID, skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect).
+If you have already built Loop via Xcode using this Apple ID, skip ahead to [Check App Group Settings](#check-app-group-settings).
 
 1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
 1. Click on the "Loop" identifier (only the Loop identifier needs this capability added)
@@ -443,6 +434,44 @@ If you have already built Loop via Xcode using this Apple ID, skip ahead to [Cre
 1. Tap the check box to enable Time Sensitive Notifications.
 1. Click "Save".
 1. Click "Confirm".
+
+### Add App Group for Loop 2
+
+When you have already built Loop with Xcode, the Loop identifier is already associated with your App Group with time sensitive capability.  Your existing Loop identifier will have a name that starts with XC as shown below, where your 10-digit TEAMID is used.
+
+* Name: XC com TEAMID loopkit Loop
+* Identifier: com.TEAMID.loopkit.Loop
+
+Because there is no Small Status Widget for Loop 2.2.x, you will need to associate the App Group with at least that identifier using the instructions in [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers).
+
+Some people choose to delete all the identifiers on their [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) to clean things up. (Note - it is OK to delete identifiers, but do not delete certificates unless instructed by a mentor).
+
+### Check App Group Settings
+
+* The identifier that is associated with the Loop identifier cannot be deleted
+* If you delete an identifier:
+    * Run Action: Add Indentifiers to add it back
+    * Manually add the App Group association as described in [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
+    * Make sure to run Create Certificate before trying to Build Loop
+
+When you have already built Loop with Xcode, the Loop identifier is already associated with your App Group with time sensitive capability.  Your existing Loop identifier will have a name that starts with XC as shown below, where your 10-digit TEAMID is used.
+
+* Name: XC com TEAMID loopkit Loop
+* Identifier: com.TEAMID.loopkit.Loop
+
+Before moving on to the Create Loop App in App Store step, make sure that the four identifiers that require the App Group be set are actually set.
+
+Open this page: [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) and click on each of these four identifiers (the last word on the right matches the name in the list below). They should each indicate a check box by App Groups and say `Enabled App Groups(1)`. If instead you see the word `Configure`, you need to click on `Configure` and add the Loop App Group using the check box and the new screen. If you don't see the Loop App Group with an name `group.com.TEAMID.loopkit.LoopGroup`, then reach out to a mentor for help. 
+
+* Loop
+* Loop Intent Extension
+* Loop Status Extension
+* Small Status Widget
+
+These identifiers will exist but they do not require the App Group association.
+
+* WatchApp
+* WatchApp Extension
 
 ## Create Loop App in App Store Connect
 
