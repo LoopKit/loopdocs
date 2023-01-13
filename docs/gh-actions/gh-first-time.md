@@ -443,9 +443,9 @@ Some people choose to "clean-up" some of the identifiers, especially if they hav
 
 ### Check App Group Settings
 
-Before moving on to the Create Loop App in App Store step, make sure that the four identifiers that require the App Group be set are actually set. If you got confused at some point and decided to delete identifiers and start over, read [Deleted Identifiers](#deleted-identifiers).
+Before moving on to the Create Loop App in App Store step, make sure that the four identifiers that require the App Group be set are actually set. If you decided to delete some identifiers, read [Deleted Identifiers](#deleted-identifiers).
 
-Open this page: [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) and click on each of these four identifiers (the last word on the right matches the name in the list below). They should each indicate a check box by App Groups and say `Enabled App Groups(1)`. If instead you see the word `Configure`, you need to click on `Configure` and add the Loop App Group using the check box and the new screen. If you don't see the Loop App Group with an name `group.com.TEAMID.loopkit.LoopGroup`, then reach out to a mentor for help. 
+Open this page: [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) and click on each of these four identifiers (the last word on the right of the `Name` matches that in the list below). They should each have a check in the box box by App Groups and say `Enabled App Groups(1)`. If instead you see the word `Configure`, you need to click on `Configure` and add the Loop App Group using the check box and the new screen. If you don't see the Loop App Group with an name `group.com.TEAMID.loopkit.LoopGroup`, then reach out to a mentor for help. 
 
 * Loop
 * Loop Intent Extension
