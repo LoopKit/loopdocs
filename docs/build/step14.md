@@ -1,7 +1,9 @@
-## AFTER Loop 3 is Released
+## Loop 3 is Released
 
 !!! bug "TO DO"
     Update graphics where words have changed
+
+    Please be patient
 
 ## Summary
 
@@ -111,17 +113,9 @@ These instructions show each step needed to download Loop using the Build-Select
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
-!!! bug "TO DO"
-    This uses a "dev" branch for the BuildLoop.sh - getting ready for the release.
-    
-    Post release, this will switch back to main branch.
-    
-    Despite what the dev branch of this script says about released code - your are in fact downloading **dev** branch and the very tip of the **dev** branch. Might not be lightly tested yet.
-
-
 ```title="Copy and Paste to start the BuildLoop.sh script"
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/dev/BuildLoop.sh)"
+  https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
 ```
 
 Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.)
