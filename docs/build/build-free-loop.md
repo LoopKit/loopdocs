@@ -6,7 +6,7 @@ This page is not stand-alone. You typically get here after choosing to Sign Manu
 
 Normally this option is chosen by people building the app with the Free option or if you want to build to a simulator on your computer.
 
-If you have a paid developer account and are building Loop 3, you are far better off choosing to configure the permanent override file with your Apple Developer ID. Refer to [Signing Targets](step14.md#signing-targets).
+If you have a paid developer account and are building Loop 3, you are far better off choosing to configure the permanent override file with your Apple Developer ID. Refer to [Sign Targets](step14.md#sign-targets).
 
 The instructions found on this page are for the first build.  With the Free version, you need to build every week. Refer to [Build Again with this Download](step14.md#build-again-with-this-download).
 
