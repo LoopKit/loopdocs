@@ -1,13 +1,13 @@
 ## Work in Progress
 
 !!! danger "work in progress"
-    This page will be deleted after all the relevant information is incorporated into the appropriate locations. This may not happen until after the release of Loop-dev as Loop 3 documentation.
-    
-    It is intended to assist folks testing Loop-dev.
+    This page will be deleted after all the relevant information is incorporated into the appropriate locations as part of the development process for Loop 3.
 
-This page discusses updated versions of Loop features as well as new capabilities provided with Loop-dev.
+    Now that Loop 3 has been released, this page may be updated, but leaving it alone for now.
 
-!!! info "Loop-dev Displays"
+This page discusses updated versions of Loop features as well as new capabilities provided with Loop 3.
+
+!!! info "Loop 3 Displays"
     One thing you may notice on some screens is the primary button, with associated information message, is always visible at the bottom of even small screens.  You may need to scroll to see intermediate rows. 
     
     For example, if the default action on a bolus screen is to deliver the recommended bolus, that button is visible and active. The button remains fixed as other portions of the screen are scrolled up and down. When you make changes to selections, then the information displayed and the button label updates to reflect the action taken if you tap on the button.
@@ -17,11 +17,11 @@ This page discusses updated versions of Loop features as well as new capabilitie
 
 ## Non-Pump Insulin
 
-If insulin is taken from a different source and the user wants to let Loop know, there is a new method in Loop-dev.
+If insulin is taken from a different source and the user wants to let Loop know, there is a new method in Loop 3.
 
 With Loop 2.2.x, the user manually entered the Insulin dose into the Apple Health app. Loop then imported that value.
 
-With Loop-dev, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
+With Loop 3, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
 
 #### Enter non-pump insulin before carbs
 
@@ -41,7 +41,7 @@ With Loop-dev, the "old" method still works, but there is a new method for enter
 1. Tap on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen to display the `Insulin Delivery Screen`. This screen has 3 tabs.
     * **Event History** (default) is similar to Loop 2.2.x; however, the event history from a prior pod is not displayed once it is deactivated
     * **Reservoir** is similar to Loop 2.2.x; however, the reservoir value from a prior pod is not displayed once it is deactivated
-    * **Non-Pump Insulin** is a new feature with Loop-dev
+    * **Non-Pump Insulin** is a new feature with Loop 3
 
 
 2. Select the `Non-Pump Insulin` tab to bring up the graphic shown below
@@ -67,7 +67,7 @@ The bolus following carbs (`Meal Bolus`) and manual bolus (`Bolus`) screens are 
 * With Loop 2.2.x
     * The Recommended Bolus is provided but the default for the Bolus value is 0
     * If the user taps on the Recommended Bolus row, the recommended amount is transferred to the Bolus row
-* With Loop-dev
+* With Loop 3
     * The Recommended Bolus is provided AND the default for the Bolus is the recommended value
     * If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry
 
@@ -146,7 +146,7 @@ The two graphics below are examples of manual bolus screens.
 
 ## Remote Carb / Bolus
 
-Loop-dev has a Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop.
+Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop.
 
 The author of this feature wrote this [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM) documentation. Please read carefully and use with the appropriate level of caution.
 

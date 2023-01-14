@@ -307,9 +307,9 @@ Dexcom launched a new style of transmitters this summer. The new transmitters to
 
 ## Remove Apps with Shared App Group
 
-The storage of data with Loop-dev is not backward compatible. In other words, if you attempt to build Loop 2.2.x (or FreeAPS) on a phone which has been upgraded to Loop-dev, you will not be able to run that app. You can successfully build the app, which will overwrite Loop-dev on the phone, but the app will crash and you will not be able to Loop.
+The storage of data with Loop 3 is not backward compatible. In other words, if you attempt to build Loop 2.2.x (or FreeAPS) on a phone which has been upgraded to Loop 3, you will not be able to run that app. You can successfully build the app, which will overwrite Loop 3 on the phone, but the app will crash and you will not be able to Loop.
 
-At this point, you can restore your Loop-dev build on your phone and continue using Loop-dev or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
+At this point, you can restore your Loop 3 build on your phone and continue using Loop 3 or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
 
 If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to [Review Provisioning Profiles](https://www.loopandlearn.org/loop-expiration-date) and then delete the profiles for all the apps by using the - sign. 
 

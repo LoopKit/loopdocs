@@ -57,7 +57,7 @@ Do not simply build with your old downloaded folder from months ago. There is a 
 
 No. Do not delete your old Loop. In fact, that is a bad idea as you will lose your currently paired pod and/or settings if you do that. So, don't delete.
 
-**The exception to the rule is if you build Loop dev on your phone and want to return to Loop 2.2.x or any FreeAPS fork.**
+**The exception to the rule is if you build Loop 3 on your phone and want to return to Loop 2.2.x or any FreeAPS fork.**
 
 * Refer to [What if I change the branch or fork?](#what-if-i-change-the-branch-or-fork)
 
@@ -104,11 +104,11 @@ The information in the graphic below includes the Xcode version number used for 
 
 Does not matter. Changing the branch and even the fork is an "updating Loop" action. Nothing about the information above changes with the following exception.
 
-**The exception to the rule is if you build Loop dev on your phone and want to return to Loop 2.2.x or any FreeAPS fork.**
+**The exception to the rule is if you build Loop 3 on your phone and want to return to Loop 2.2.x or any FreeAPS fork.**
 
 * In this case, the database storage is different between Loop 3 and Loop 2.2.x
-* Loop dev can read the data stored by Loop 2.2.x, but the reverse is not true
-* If you are downgrading from Loop dev to Loop 2.2.x or FreeAPS, you need to first record settings, delete the old app and then build the desired app, enter your settings and add your pump (new pod required for Omnipod)
+* Loop 3 can read the data stored by Loop 2.2.x, but the reverse is not true
+* If you are downgrading from Loop 3 to FreeAPS, you need to first record settings, delete the old app and then build the desired app, enter your settings and add your pump (new pod required for Omnipod)
 
 ## What if I'm changing phones?
 

@@ -29,7 +29,7 @@ No, pods are monogamous little creatures. They will pair with only one device at
 
 Yes, you can cancel a bolus in progress. In fact, because it is very easy to cancel, make sure your phone is locked prior to being put away to avoid inadvertently cancelling a bolus. (This behavior is very similar to the Insulet PDM - which also needs to be locked once a bolus has started.)
 
-As soon as a bolus is initiated, look at your phone in portrait orientation.  You will see a bolus message indicating the progress of the bolus. This message is highlighted with a red rectangle in the graphic below. If you tap on this part of the display, the bolus is immediately cancelled.  (This graphic of the Loop display is from Loop-dev.  If you are on Loop v2.2.x, the bolus in progress message looks and behaves the same.)
+As soon as a bolus is initiated, look at your phone in portrait orientation.  You will see a bolus message indicating the progress of the bolus. This message is highlighted with a red rectangle in the graphic below. If you tap on this part of the display, the bolus is immediately cancelled.  (This graphic of the Loop display is from Loop 3.  If you are on Loop v2.2.x, the bolus in progress message looks and behaves the same.)
 
 * The displayed amount `Bolused` is based on the time since the bolus was started
 * Loop will present that graphic for the entire time the bolus is in progress with the delivery amount updated based on time
@@ -51,9 +51,9 @@ If a bolus was interrupted, the bolus will not resume.
 
 As long as you are in closed loop mode, Loop will resume automatic insulin delivery adjustments within 5 minutes.
 
-### Cancel Temp Basal with Loop-dev
+### Cancel Temp Basal with Loop 3
 
-With Loop-dev, disabling the setting for Closed Loop also changes the basal rate on the pump to the scheduled basal rate, which effectively cancels the temp basal.
+With Loop 3, disabling the setting for Closed Loop also changes the basal rate on the pump to the scheduled basal rate, which effectively cancels the temp basal.
 
 !!! warning "Bolus in progress"
     If a bolus is in progress when switching to Open Loop, any active Temp Basal continues until it would expire naturally, unless the user takes further action.

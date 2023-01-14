@@ -2,7 +2,7 @@
 
 You can use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop.
 
-If you are using Loop-dev, then you can also send remote commands to add carbs and command a bolus.
+If you are using Loop 3, then you can also send remote commands to add carbs and command a bolus.
 
 !!! warning "Remote Nightscout Interface Caveats"
     * Requires Apple Push Notifications (APN) - not available with a Free account
@@ -14,7 +14,7 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
 !!! danger "Remote Builds"
     There are several methods for building remotely for your family members (or even yourself).
 
-    * [LoopDocs: GitHub Build Actions](../gh-actions/gh-overview.md) (new with Loop-dev) allows you to build on a browser (no need for a Mac) and send Loop to your phone using TestFlight
+    * [LoopDocs: GitHub Build Actions](../gh-actions/gh-overview.md) (new with Loop 3) allows you to build on a browser (no need for a Mac) and send Loop to your phone using TestFlight
     * [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/) allows you to save a build created by Xcode, store it in the cloud and then download and install on your phone later
 
     Both of these remote options require this [Nightscout: Config Var](https://nightscout.github.io/nightscout/setup_variables/#nightscout-config-vars) to be added to Nightscout:
@@ -37,9 +37,9 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
     And read this entire page - focus on warnings and caveats.
 
 !!! tip "New Feature in Loop 3"
-    Remote bolus and remote carb capability is added with Loop 3, currently under test as Loop dev. In order to support this capability, there are new minimum versions:
+    Remote bolus and remote carb capability is added with Loop 3. In order to support this capability, there are new minimum versions:
 
-    * Loop 3 (Loop dev) or newer
+    * Loop 3 or newer
     * iOS 15.1 or newer
     * Nightscout version 14.2.6 or newer
         * Required to get all the features
@@ -51,10 +51,10 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
         * issue remote commands for carbs, bolus and overrides
     * To clarify minimum versions for using updated remote features with LoopCaregiver
         * LoopCaregiver phone iOS 16
-        * Loop phone iOS 15.1 running Loop-dev
+        * Loop phone iOS 15.1 running Loop 3
         * Nightscout 14.2.6
 
-    The expanded capabilities for remote commands in Loop-dev are currently documented in this [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM). That information will be incorporated into LoopDocs soon.
+    The expanded capabilities for remote commands in Loop 3 are currently documented in this [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM). That information will be incorporated into LoopDocs soon.
 
 ## Step 1: Update the Looper's iPhone settings
 
@@ -216,7 +216,7 @@ The LoopCaregiver app is under development to make remote commands easier to imp
 
 * Minimum Requirements
     * iOS 16 for LoopCaregiver's phone
-    * iOS 15.1 with Loop-dev for Looper's phone
+    * iOS 15.1 with Loop 3 for Looper's phone
     * Nightscout 14.2.6
 * Complete all 3 steps:
     * [Step 1: Update the Looper's iPhone settings](#step-1-update-the-loopers-iphone-settings)
@@ -239,7 +239,7 @@ If you plan to use LoopCaregiver, please join [Loop Caregiver App](https://loop.
 
 #### Build LoopCaregiver
 
-A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built Loop-dev using the script.
+A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built Loop 3 using the script.
 
 Open a terminal window. Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
@@ -250,7 +250,7 @@ Open a terminal window. Copy the line below that starts with `/bin/bash` by hove
 Paste the line into the Terminal window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.
 
 !!! warning "Not Loop"
-    The output you see in the Terminal may look very similar to when you build Loop dev from a script.
+    The output you see in the Terminal may look very similar to when you build Loop 3 from a script.
 
     It is pulling down a clone from a different location (gestrich instead of LoopKit) and just the caregiver branch. Do not attempt to build Loop with this download.
 
@@ -336,7 +336,7 @@ And if you want to save one click to get to these one functions more directly: t
 **A couple notes about these shortcuts:**
 
 1. You will need iOS 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than iOS 13, but your phone as the shortcut user would need iOS 13.
-    * For Loop-dev, the minimum iOS is iOS 15.
+    * For Loop 3, the minimum iOS is iOS 15.1
 2. You need to open those links in the Safari browser on your iPhone. A confirmation will show to initiate the download. After the download finishes, tap the button marked "AA" near your Safari address bar and tap "Downloads" to find and open the downloaded Shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.
 3. When you enter your Nightscout URL in the "URL" field of the Loop shortcut setup, make sure you don't include a trailing "/" or the API calls to Heroku will error out.
 4. When a remote override is set properly, you'll see an "ok" message displayed. If there is an error, you'll see an error message. Most errors will be that you have an API_SECRET wrong (make sure there isn't a space at the end of you API_SECRET that you don't see) or you failed to do the steps to setup NS and update your Loop app as described in steps 1-3 above.

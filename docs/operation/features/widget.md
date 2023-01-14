@@ -1,10 +1,10 @@
 ## Loop 3
 
-An updated new-style Loop-dev widget is in process. There are a lot of updates with widgets. With the advent of iOS 16, you can add widgets that show up on the lock screen without need to swipe to view. There is work in progress on this - please be patient.
+Loop 3 uses the new-style widget is in process. There are a lot of updates with widgets. With the advent of iOS 16, you can add widgets that show up on the lock screen without need to swipe to view. There is work in progress on this - please be patient.
 
 ## Old-Style Loop Widget
 
-Loop 2.2.x and Loop-dev both include an old-style widget.
+Loop 2.2.x and FreeAPS both include an old-style widget.
 
 With older versions of iOS, the widget is available in the Today view of your iPhone.  Swipe right on your iPhone home screen and your widgets will be available.  The Loop widget may be at the bottom of your widget list.  Scroll down to the bottom of the screen and press the `edit` button.  That opens an "Add Widgets" screen.  If you hold and drag the three horizontal lines on the Loop widget row, you can drag it up to the order you'd like it to appear on your widget list.
 

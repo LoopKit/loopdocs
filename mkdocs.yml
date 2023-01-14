@@ -14,6 +14,26 @@ theme:
         - content.tooltips
     logo: loop-logo.png
     favicon: loop-logo.png
+    palette:
+        # Palette toggle for automatic mode
+        - media: "(prefers-color-scheme)"
+          toggle:
+            icon: material/brightness-auto
+            name: Switch to light mode
+
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+            icon: material/brightness-4
+            name: Switch to system preference
 
 # repo_url: https://github.com/LoopKit/Loop
 
@@ -127,17 +147,6 @@ nav:
     - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
     - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
     - 'MDT Pump Battery': 'operation/features/battery.md'
-#- Loop 3:
-#    - 'Loop 3 Overview': 'loop-3/loop-3-overview.md'
-#    - 'Loop 3 Onboarding': 'loop-3/onboarding.md'
-#    - 'Loop 3 Add CGM': 'loop-3/add-cgm.md'
-#    - 'Loop 3 Add Pump': 'loop-3/add-pump.md'
-#    - 'Loop 3 Displays': 'loop-3/displays.md'
-#    - 'Loop 3 Settings': loop-3/settings.md
-#    - 'Loop 3 Therapy Settings': 'loop-3/therapy-settings.md'
-#    - 'Loop 3 Omnipod': loop-3/omnipod.md
-#    - 'Loop 3 Medtronic': loop-3/medtronic.md
-#    - 'Loop 3 Features': loop-3/features.md
 - 'Version':
     - 'Version Overview': 'version/overview-version.md'
     - 'Loop Releases': 'version/releases.md'

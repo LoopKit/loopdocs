@@ -1,6 +1,6 @@
 ## Meal Entry
 
-This page was updated with information for Loop-dev which will soon be released as Loop 3.
+This page was updated with information for Loop 3.
 
 ### Loop 2 and 3 Differences
 
@@ -40,7 +40,7 @@ To start a new meal entry, tap on the green plate icon (circled below) in the to
 
 ### Meal Entry
 
-The steps and graphics in this section are for users of Loop-dev (soon to be released as Loop 3). To view the version used by Loop 2.2.x, click on this [link](#loop-2-fast-meal-entry).
+The steps and graphics in this section are for users of Loop 3. To view the version used by Loop 2.2.x, click on this [link](#loop-2-fast-meal-entry).
 
 Tap the meal entry icon on the toolbar to open the **Add Carb Entry** screen:
 

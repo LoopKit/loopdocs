@@ -38,13 +38,13 @@ Be sure to read the [Instructions for Finding the Lines](code_customization.md#i
 
     * If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help
 
-!!! abstract "Loop 2.2.x vs Loop 3 (Loop-dev)"
+!!! abstract "Loop 2.2.x vs Loop 3"
 
-    * Loop-dev is still being tested - but when it is released it will be Loop 3.
-    * To simplify the amount of changes required after the release, the labels indicate Loop 2.2.x or Loop 3, if needed.
-    * Users of Loop Master refer to the Loop 2.2.x examples.
-    * Users of Loop-dev refer to the Loop 3 examples.
-        * Note that some changes are in a different file for Loop-dev (part of the architecture upgrade for the app).
+    * Loop 3 has been released but there are still many people using older code.
+    * The labels below indicate Loop 2.2.x or Loop 3, if they are different
+    * Users of Loop 2.2.9 (or earlier) or FreeAPS should refer to the Loop 2.2.x examples.
+    * Users of Loop 3 should refer to the Loop 3 examples.
+        * Note that some changes are in a different file for Loop 3 (part of the architecture upgrade for the app).
 
 ## Build-Time Features
 
@@ -78,8 +78,7 @@ List of some flags and what they do:
 |ADULT_CHILD_INSULIN_MODEL_SELECTION_ENABLED|The choice for Child Model is enabled in Therapy Settings. Please read [Enable Child Model](#enable-child-model).|
 |REMOTE_OVERRIDES_DISABLED|Remote commands: override, carbs or boluses will not be accepted even if all the [Remote Command](../nightscout/remote-overrides.md) requirements are configured|
 |OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED|Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health. Be vigilant if you select this; added carbs lead to added insulin dosing when closed loop is enabled|
-|SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_DISABLED|The Apple Watch screens (will soon) show current glucose, trend arrow and eventual glucose by default. This flag disables the eventual glucose in the watch display.|
-|SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_ENABLED|For a long time, with Loop-dev, the Apple Watch screens showed current glucose and trend arrow, but not the eventual glucose value. The capability was added to enable eventual glucose in the watch display, but default was set for it to be disabled. (loop dev build script, commit 3770f56). This flag adds eventual glucose to the display for that build. Loop dev will be updated later so this flag is no longer necessary. When that happens, this flag will have no effect.|
+|SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_DISABLED|The Apple Watch screens show current glucose, trend arrow and eventual glucose by default. This flag disables the display of eventual glucose on the watch if you find the display distracting.|
 
 ## Instructions for Finding the Lines
 
@@ -149,7 +148,7 @@ All other icons and directory names match.
 Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
 !!! warning "Loop 3"
-    For Loop 3 (under test as Loop-dev), this controls the authorization requirement to modify Therapy Settings as well as to confirm bolus delivery.
+    For Loop 3, this controls the authorization requirement to modify Therapy Settings as well as to confirm bolus delivery.
 
 ``` title="Key_Phrase"
 canEvaluatePolicy(.deviceOwnerAuthentication
@@ -290,27 +289,19 @@ _Code After Modification to 50% to 200% by steps of 5%_
     private let allScaleFactorPercentages = Array(stride(from: 50, through: 200, by: 5))
 
 
-## Modify Maximum Carb Entry
+## Modify Maximum and Warning Carb Entry
 
 ### Loop 3 Carb Entry Variables
 
-During the development of Loop 3 (while still Loop-dev), a warning screen was added to the carb entry interface when the entered meal is between 100 and 250 grams, inclusive. The variables that control when the warning screen is shown and that limit the overall maximum for carb entries are stored in the LoopConstants file, where they are used by both direct interaction with the Loop phone and by the remote carb entry checking code.
-
-Newer versions of Loop-dev use this updated method to modify the warning level and / or the maximum level.
-
+During the development of Loop 3, a warning screen was added to the carb entry interface when the entered meal is between 100 and 250 grams, inclusive. The variables that control when the warning screen is shown and that limit the overall maximum for carb entries are stored in the LoopConstants file, where they are used by both direct interaction with the Loop phone and by the remote carb entry checking code.
 
 ``` title="Key_Phrase"
 let warningCarbEntryQuantity =
 ```
 
-If you do not find the Key Phrase `warningCarbEntryQuantity` in the code - you do not have the updated Loop-dev code. Use the [Loop 2.2.x Max Carb Entry](#loop-22x-max-carb-entry) version.
+If you do not find the Key Phrase `warningCarbEntryQuantity` in the code - you do not have Loop 3 code. Use the [Loop 2.2.x Max Carb Entry](#loop-22x-max-carb-entry) version.
 
-!!! warning "Older versions of Loop-dev"
-    If you modify `maxCarbEntryQuantity` in LoopConstants.swift for older versions of Loop-dev, it affects the remote carb entry range checking, but not the carb entry range checking for direct carb entry on the Loop device.
-
-    In order to affect the direct entry of carbs with this older version of Loop, you must use this link: [Loop 2.2.x Max Carb Entry](#loop-22x-max-carb-entry). The updated Loop-dev uses the LoopConstants value for both direct and remote range checking.
-
-If you do find that Key Phrase in the code, you have the newer version of Loop-dev. The max and warning values can be modified in LoopConstants. The variable `maxCarbEntryQuantity` is found in LoopConstants, two lines earlier than `warningCarbEntryQuantity`.
+If you do find that Key Phrase in the code, you have the newer version of Loop 3. The max and warning values can be modified in LoopConstants. The variable `maxCarbEntryQuantity` is found in LoopConstants, two lines earlier than `warningCarbEntryQuantity`.
 
 _Code Before Modification_
 
@@ -338,7 +329,7 @@ _Code After Modification to warn if entry is between 201 and 300g_
 
 ### Loop 2.2.x Max Carb Entry
 
-Older versions of Loop-dev and Loop v2.2.x must use the following method for modifying maximum carb entry:
+Users of Loop 2.2.9 and earlier or FreeAPS must use the following method for modifying maximum carb entry:
 
 Some people want to limit the maximum number of carbs that can be entered in one entry – especially for children or folks who eat lower carb. This helps prevent accidental typos, e.g., entry of 115 g instead of 15 g for a meal.
 
@@ -399,11 +390,9 @@ _Code After Modification to add 0.35 U_
 
 ## Modify the Guardrails
 
-The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-settings) are for Loop 3 (Loop-dev) only.
+The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-settings) are for Loop 3 only.
 
-If you build Loop-dev over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app will crash when you try to onboard.
-
-The solution (until this is fixed) is to customize and lower the minimum value to be at or below the value you have currently set.  Rebuild the app with the modified settings and you should be able to continue the onboarding process.
+If you build Loop 3 over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.
 
 
 ``` title="Key_Phrase"
@@ -426,11 +415,9 @@ and
 
 Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
 
-If fixing a crashed app during onboarding, you must lower the 87 to match or be less than what is in your old settings.
-
 ## Adjust Future Carbs Time Interval
 
-Loop 3 (Loop-dev) limits the future time change allowed to 1 hour.
+Loop 3 limits the future time change allowed to 1 hour.
 
 ``` title="Key_Phrase"
 cell.datePicker.maximumDate = date.addingTimeInterval
@@ -670,7 +657,7 @@ For Loop 2.2.x:
 For Loop 3:
 
 1. Make sure Xcode is closed
-1. Use Finder to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-dev-230107-1022_84afcfb)
+1. Use Finder to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-230114-1153)
 1. Double-click on the LoopWorkspace folder
 1. Double-click on the OverrideAssetsLoop.xcassets folder
 1. Double-click on the AppIcon.appiconset folder
@@ -695,9 +682,9 @@ Additional customizations may be found on another website, especially for older 
 
 Note that the other site has an index that points back to LoopDocs if the customization is found on this page.
 
-## Additional Customizations for Loop dev
+## Additional Customizations for Loop 3
 
-The customizations below only work with the Loop dev branch. 
+The customizations below only work with the Loop 3. 
 
 * You should be comfortable typing commands in a terminal
 * You should be comfortable with manipulations (as directed) with Xcode
@@ -729,15 +716,13 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 ### Custom Type One LoopPatches
 
-Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop dev branch.
+Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop 3 (main branch) - note that the README file has not been updated post release of Loop 3 - it will be. You can use the same instructions that worked just before the release when branch of Loop was dev. Ignore the instruction on that page for downloading fresh code with BuildLoopFixedDev.sh. Please download fresh Loop 3 (main) code instead.
 
-Check the instructions for the minimum (and sometimes maximum) date for Loop-dev code. The patches only work for the specified range of commit values (versions of Loop dev). The instructions also list the commit and date for the version of dev that was last tested with the patches - this is **always** the same as the script for building Loop dev. If the version of dev at the repo has advanced past the value used by the script, there is no guarantee the patches can be applied. If you want to use the patches - please stick with the [Build Loop dev script](step13.md).
-
-Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop dev.
+Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop 3.
 
 ### Add Libre App to Loop Phone
 
-This method only works for Loop dev branch and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone.
+This method only works for Loop 3 (main branch) and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone.
 
 There are several options for code that will read the raw Libre values and convert them into glucose readings. You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.
 
@@ -754,7 +739,7 @@ These are the Libre iOS app options.
     * Refer to [Modify Loop to use Libre](#modify-loop-to-use-libre)
 
 
-Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop dev code that you previously downloaded.
+Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop 3 code that you previously downloaded.
 
 ### Modify Loop to use Libre
 
@@ -763,11 +748,11 @@ None of these methods have been tested by the LoopDocs team. This information is
 !!! warning "Open Loop Suggested during Warmup of New Sensor"
     It is recommended that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using direct bluetooth connection.
 
-For your selected app to read the Libre, you must also add a client to Loop dev to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop dev.
+For your selected app to read the Libre, you must also add a client to Loop 3 to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop 3.
 
 Add a client that interfaces with xDrip4iOS:
 
-* [Add xdrip-client-swift to Loop dev](https://github.com/JohanDegraeve/xdrip-client-swift-1#readme)
+* [Add xdrip-client-swift to Loop 3](https://github.com/JohanDegraeve/xdrip-client-swift-1#readme)
     * Note - there are extra details visible when you click on the black arrow icons in this file
     * [zulipchat converstation](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292280110)
 

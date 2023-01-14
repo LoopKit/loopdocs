@@ -174,7 +174,7 @@ Look for more details as shown in this graphic:
 
 Experienced Loop builders may say - but I thought we did not use carthage anymore.
 
-* When building Loop 3 (Loop-dev), carthage is no longer used and Loop will build without installing Rosetta
+* When building Loop 3, carthage is no longer used and Loop will build without installing Rosetta
 * When building Loop v2.2.9 or FreeAPS (released and development versions), carthage is still used but the required carthage version is included in the download; so the user does not need to separately install a particular version of carthage 
 
 ### Run Destination is Not Valid; Failed to Prepare the Device
@@ -201,7 +201,7 @@ _Package.resolved file is corrupted or malformed; fix or delete the file to cont
 ![package corrupted or malformed error](img/xcode-needs-to-be-updated.jpeg){width="600"}
 
 
-This error is new with Loop-dev, which uses Package Dependencies.
+This error is new with Loop 3, which uses Package Dependencies.
 
 There are 2 problems shown here
 
@@ -216,7 +216,7 @@ Update Xcode, which may require you to update macOS.
 
 ### Many Search 1.4.3 for this Error
 
-This error is new with Loop-dev, which uses Package Dependencies.
+This error is new with Loop 3, which uses Package Dependencies.
 
 * If you notice a red x in Xcode (as circled in the graphic below)
     - Click on the red x to show the error in the left pane
@@ -291,7 +291,7 @@ This error is new with Xcode 13.3 (late Sep 2021) which has a new requirement
 
 * For those who care: the new requirement is that for a certain type of instruction file, the line with the `Headers` keyword must be located before the line with the `Sources` keyword
 * There used to be many repositories that did not have lines in that order
-* All of these instruction files have been updated for Loop Master, Loop dev and FreeAPS
+* All of these instruction files have been updated for Loop main and FreeAPS
 * If you are building with an older copy of the code, you may see this error
 
 **Error Message:**
@@ -379,7 +379,7 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 
 ### Carthage Error
 
-You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](step14-post-loop-3.md#initial-xcode-screens) Instructions.
+You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](step14.md#initial-xcode-screens) Instructions.
 
 Or maybe you are trying to build using an old download; some older versions did require carthage. Best practice is to download new code.
 

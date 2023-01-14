@@ -1,6 +1,6 @@
 ## Update Loop using GitHub Actions
 
-This is only available with Loop 3 and Loop dev branch.
+This is only available with Loop 3 and Loop development branch.
 
 !!! info "Time Estimate"
     - If you need or choose to update your GitHub Personal Access token
@@ -138,7 +138,7 @@ Scroll all the way to the top of the screen and tap on your LoopWorkspace link. 
 1. Sign in to GitHub and select your LoopWorkspace repository from your repositories list
 1. Look to see if your fork is up to date
     * The dropdown in this graphic shows the dev branch.
-    * After the release of Loop-dev as Loop 3.0, you will want master. For a specific release, such as 3.1.2 (which does not exist - so don't look for it), it will be that specific release.
+    * To build Loop 3.0, you will want main, which should be the default. For a specific release, such as 3.1.2 (which does not exist - so don't look for it), it will be that specific release.
     * If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}}` - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3
     * If your fork shows a message such as `This branch is 3 commits behind LoopKit:dev` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch`
 
