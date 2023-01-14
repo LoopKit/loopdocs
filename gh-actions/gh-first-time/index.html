@@ -1845,29 +1845,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-app-group-to-bundle-identifiers" class="md-nav__link">
-    Add App Group to Bundle Identifiers
+  <a href="#prepare-loop-identifier" class="md-nav__link">
+    Prepare Loop Identifier
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-time-sensitive-capability" class="md-nav__link">
-    Add Time Sensitive Capability
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-app-group-for-loop-2" class="md-nav__link">
-    Add App Group for Loop 2
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-app-group-settings" class="md-nav__link">
-    Check App Group Settings
+  <a href="#add-app-group-to-other-identifiers" class="md-nav__link">
+    Add App Group to Other Identifiers
   </a>
   
 </li>
@@ -1948,8 +1934,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#deleted-identifiers" class="md-nav__link">
-    Deleted Identifiers
+  <a href="#delete-identifiers" class="md-nav__link">
+    Delete Identifiers
   </a>
   
 </li>
@@ -2510,29 +2496,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-app-group-to-bundle-identifiers" class="md-nav__link">
-    Add App Group to Bundle Identifiers
+  <a href="#prepare-loop-identifier" class="md-nav__link">
+    Prepare Loop Identifier
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-time-sensitive-capability" class="md-nav__link">
-    Add Time Sensitive Capability
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-app-group-for-loop-2" class="md-nav__link">
-    Add App Group for Loop 2
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-app-group-settings" class="md-nav__link">
-    Check App Group Settings
+  <a href="#add-app-group-to-other-identifiers" class="md-nav__link">
+    Add App Group to Other Identifiers
   </a>
   
 </li>
@@ -2613,8 +2585,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#deleted-identifiers" class="md-nav__link">
-    Deleted Identifiers
+  <a href="#delete-identifiers" class="md-nav__link">
+    Delete Identifiers
   </a>
   
 </li>
@@ -3074,70 +3046,77 @@
 <h2 id="configure-identifiers-for-loop">Configure Identifiers for Loop<a class="headerlink" href="#configure-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="create-app-group">Create App Group<a class="headerlink" href="#create-app-group" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The Loop App Group already exists if you previously built Loop using <abbr title="program used to build an app">Xcode</abbr> with this Apple Developer ID.</p>
-<ul>
-<li>If you built Loop 2.2.x (this includes FreeAPS) via <abbr title="program used to build an app">Xcode</abbr>, you can skip some steps. Please click on <a href="#add-app-group-for-loop-2">Add App Group for Loop 2</a>.</li>
-<li>If you built <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (Loop-dev) via <abbr title="program used to build an app">Xcode</abbr>, you can skip more steps. Please click on <a href="#check-app-group-settings">Check App Group Settings</a>.</li>
-</ul>
-<p>If you have never built Loop, you need to create an App Group associated with your TEAMID.</p>
+<p>If you built Loop via <abbr title="program used to build an app">Xcode</abbr>, skip ahead to <a href="#prepare-loop-identifier">Prepare Loop Identifier</a>.</p>
+<p>If you have never built Loop with <abbr title="program used to build an app">Xcode</abbr> using your TEAMID, you need to create an App Group associated with your TEAMID.</p>
 <ol>
 <li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/">Register an App Group</a> on the apple developer site.</li>
 <li>For Description, use "Loop App Group".</li>
 <li>For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for <code>TEAMID</code>.</li>
 <li>Click "Continue" and then "Register".</li>
 </ol>
-<h3 id="add-app-group-to-bundle-identifiers">Add App Group to Bundle Identifiers<a class="headerlink" href="#add-app-group-to-bundle-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, Identifiers &amp; Profiles: List</a> on the apple developer site.</p>
-<ol>
-<li>For each of the following identifier names:<ul>
+<h3 id="prepare-loop-identifier">Prepare Loop Identifier<a class="headerlink" href="#prepare-loop-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, Identifiers &amp; Profiles: Identifiers List</a> on the apple developer site.</p>
+<p>If you never built using <abbr title="program used to build an app">Xcode</abbr>, then after successfully performing the Add Identifiers Action, you will see these six items under <code>NAME</code>.</p>
+<ul>
 <li>Loop</li>
 <li>Loop Intent Extension</li>
 <li>Loop Status Extension</li>
 <li>Small Status Widget</li>
+<li>WatchApp</li>
+<li>WatchAppExtension</li>
+</ul>
+<p>If you have built using <abbr title="program used to build an app">Xcode</abbr>, then at least the Loop identifier will appear with the name <code>XC com.TEAMID.loopkit.Loop</code>. There may be other names that start with XC and have other ending words; they can be ignored. Only the six listed above are of interest. The WatchAppExtension may be all in lower case if it starts with XC. If you are bothered by a lot of extra identifiers, see <a href="#delete-identifiers">Delete Identifiers</a>. But they don't hurt anything.</p>
+<p>The graphic below shows the identifiers before (top portion) and after (lower portion) the Action: Add Identifiers is executed for an individual who previously built Loop 2.2.9. The green rectangles highlight the four identifiers that need to be updated before moving on to the Create Certificates step.</p>
+<p align="center"><img alt="identifier before and after action if used xcode before" src="../img/app-group-id-xc-build.svg" width="600" /></p>
+<p>If you never built with <abbr title="program used to build an app">Xcode</abbr>, you will be associating the Loop App Group you just created with the Loop identifier and adding a time sensitive capability to the Loop identifier.</p>
+<p>If you have built with <abbr title="program used to build an app">Xcode</abbr>, you will be verifying the Loop identifier is properly configured.</p>
+<p>Find and click on the Loop identifier row to see the <code>Edit Your App ID Configuration</code> screen. You will be taking two actions for this identifier.</p>
+<ol>
+<li>Looking at the App Services column, scroll down to the App Groups row<ul>
+<li>Ensure the check box under Capabilities is checked</li>
+<li>(XC Loop) - If the word Edit shows up under NOTES, move on to step 2 below</li>
+<li>(Loop) - If the word Configure shows up, tap on it<ul>
+<li>This opens the App Group Assignment screen</li>
+<li>Check the box by Loop App Group and then Continue</li>
+<li>This opens the Modify App Capabilities confirmation screen</li>
+<li>Click on Confirm</li>
 </ul>
 </li>
-<li>Click on the identifier's name.</li>
-<li>On the "App Groups" capabilies, click on the "Configure" button.</li>
-<li>Select the "Loop App Group"</li>
-<li>Click "Continue".</li>
-<li>Click "Save".</li>
-<li>Click "Confirm".</li>
-<li>Remember to do this for each of the four identifiers above; only needed for those four.</li>
-</ol>
-<h3 id="add-time-sensitive-capability">Add Time Sensitive Capability<a class="headerlink" href="#add-time-sensitive-capability" title="Anchor link to this Header on this Page">&para;</a></h3>
-<ol>
-<li>Go to <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, Identifiers &amp; Profiles</a> on the apple developer site.</li>
-<li>Click on the "Loop" identifier (only the Loop identifier needs this capability added)</li>
-<li>Scroll down to "Time Sensitive Notifications"</li>
-<li>Tap the check box to enable Time Sensitive Notifications.</li>
-<li>Click "Save".</li>
-<li>Click "Confirm".</li>
-</ol>
-<p>You can now skip ahead to <a href="#check-app-group-settings">Check App Group Settings</a>.</p>
-<h3 id="add-app-group-for-loop-2">Add App Group for Loop 2<a class="headerlink" href="#add-app-group-for-loop-2" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>When you have already built Loop with <abbr title="program used to build an app">Xcode</abbr>, the Loop identifier is already associated with your App Group with time sensitive capability.  Your existing Loop identifier will have a name that starts with XC as shown below, where your 10-digit TEAMID is used.</p>
-<ul>
-<li>Name: XC com TEAMID loopkit Loop</li>
-<li>Identifier: com.TEAMID.loopkit.Loop</li>
 </ul>
-<p>Because there is no Small Status Widget for Loop 2.2.x, you will need to associate the App Group with at least that identifier using the instructions in <a href="#add-app-group-to-bundle-identifiers">Add App Group to Bundle Identifiers</a>.</p>
-<p>Some people choose to "clean-up" some of the identifiers, especially if they have a lot of them from various types of builds. This is not necessary. Please read <a href="#deleted-identifiers">Deleted Identifiers</a> before choosing to do this. (Note - it is OK to delete identifiers, but do not delete certificates unless instructed by a mentor).</p>
-<h3 id="check-app-group-settings">Check App Group Settings<a class="headerlink" href="#check-app-group-settings" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Before moving on to the Create Loop App in App Store step, make sure that the four identifiers that require the App Group be set are actually set. If you decided to delete some identifiers, read <a href="#deleted-identifiers">Deleted Identifiers</a>.</p>
-<p>Open this page: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, Identifiers &amp; Profiles</a> and click on each of these four identifiers (the last word on the right of the <code>Name</code> matches that in the list below). They should each have a check in the box by App Groups and say <code>Enabled App Groups(1)</code>. If instead you see the word <code>Configure</code>, you need click in the box next to App Groups, click on <code>Configure</code> to see the App Group Assignment screen. Click in the box by Loop App Group. If you don't see the Loop App Group next to <code>group.com.TEAMID.loopkit.LoopGroup</code>, then reach out to a mentor for help. </p>
+</li>
+<li>Continue scrolling down to the Time Sensitive Notifications row<ul>
+<li>Check, or confirm the box is checked, next to Time Sensitive Notifications</li>
+</ul>
+</li>
+</ol>
+<p>If you have made no changes, the Save button at the top right will not be active and you should use the <code>&lt; All Indentifiers</code> button at top left to return. If you have made changes, the Save button will be active and you should tap on it.</p>
 <ul>
-<li>Loop</li>
+<li>This opens the Modify App Capabilities confirmation screen</li>
+<li>Click on Confirm</li>
+</ul>
+<p>The full list of Identifiers should be displayed again.</p>
+<h3 id="add-app-group-to-other-identifiers">Add App Group to Other Identifiers<a class="headerlink" href="#add-app-group-to-other-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>For the next three identifiers, you must add the Loop App Group. This step will be repeated once for each of these identifiers.</p>
+<ul>
 <li>Loop Intent Extension</li>
 <li>Loop Status Extension</li>
 <li>Small Status Widget</li>
 </ul>
-<p>These identifiers will exist but they do not require the App Group association.</p>
+<p>Find and click on the identifier row to see the <code>Edit Your App ID Configuration</code> screen.</p>
+<p>Looking at the App Services column, scroll down to the App Groups row</p>
 <ul>
-<li>WatchApp</li>
-<li>WatchApp Extension</li>
+<li>Ensure the check box under Capabilities is checked</li>
+<li>Click on the word Configure under the NOTES section<ul>
+<li>This opens the App Group Assignment screen</li>
+<li>Check the box by Loop App Group and then Continue</li>
+<li>This opens the Modify App Capabilities confirmation screen</li>
+<li>Click on Confirm</li>
 </ul>
+</li>
+</ul>
+<p>At the top right of the screen, tap on the Save button</p>
 <h2 id="create-loop-app-in-app-store-connect">Create Loop App in App Store Connect<a class="headerlink" href="#create-loop-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you built using <abbr title="program used to build an app">Xcode</abbr> with your Apple Developer ID, you were able to skip the steps from the prior few sections - they are already configured.</p>
-<p>If you have created a Loop app in App Store Connect before, you can skip this section as well.</p>
+<p>If you have created a Loop app in App Store Connect before, you can skip this section.</p>
 <p>If have previously used some kind of remote build, like diawi, you may have your Loop in the App Store but can't see it. Don't worry - there are instructions for this case.</p>
 <ol>
 <li>
@@ -3301,7 +3280,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="deleted-identifiers">Deleted Identifiers<a class="headerlink" href="#deleted-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="delete-identifiers">Delete Identifiers<a class="headerlink" href="#delete-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>When you have already built Loop with <abbr title="program used to build an app">Xcode</abbr>, the Loop identifier is already associated with your App Group with time sensitive capability.  Your existing Loop identifier will have a name that starts with XC as shown below, where your 10-digit TEAMID is used.</p>
 <ul>
 <li>Name: XC com TEAMID loopkit Loop</li>
@@ -3311,7 +3290,7 @@
 <p>If you delete an identifier that you need:</p>
 <ul>
 <li>Run Action: Add Identifiers to add it back</li>
-<li>Manually add the App Group association as described in <a href="#add-app-group-to-bundle-identifiers">Add App Group to Bundle Identifiers</a></li>
+<li>Manually add the App Group association as described in <a href="#add-app-group-to-other-identifiers">Add App Group to Other Identifiers</a></li>
 <li>Make sure to run Create Certificates before trying to Build Loop</li>
 </ul>
                 
