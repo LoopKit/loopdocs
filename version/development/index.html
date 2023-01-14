@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2371,7 +2406,6 @@
 <p>The next version of Loop is developed using <abbr title="version of code within a single repository or workspace repository">branch</abbr>(es), independent of the released Loop version, which is found in the master <abbr title="version of code within a single repository or workspace repository">branch</abbr>. The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is used by the developers to push out changes for users to test. You should only test a development <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are willing to be both an active participant with the developers to monitor annoucements and provide feedback, and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of Loop is improved.</p>
 <p>There is a lot of interest in being a "tester" of dev right now, because the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH and Dexcom G7 are supported in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. If you choose to use dev, you accept that this code is not released.</p>
 <p>Please read this entire page before using any version of Loop other than the released code.</p>
-<p>Compared to the last release, v2.2.9, there have been architectural upgrades of a new user interface, improved notifications and alerts, and some new features.  There is a formal onboarding process and more safety features. Updated documentation is a work-in-progress located under the <a href="../../loop-3/loop-3-overview/"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></a> tab of LoopDocs.</p>
 <h2 id="what-are-branches">What are branches?<a class="headerlink" href="#what-are-branches" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.</p>
 <p>To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone <a href="https://www.youtube.com/watch?v=cWqvYs4Azt0&amp;t=4s">video explanation about branches</a> created when Loop Version 2.0 was newly released. The information in this video is still generally useful with the last-half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into Loop master <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Loop has moved on to using only one stable <abbr title="version of code within a single repository or workspace repository">branch</abbr> (master), with dev recommended for developer/testers.</p>
@@ -2387,12 +2421,11 @@
 <p>The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, currently v2.3.0, is where the next version of Loop is being developed and tested.</p>
 <p>If you choose to come into a dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> build, you need to be aware that dev may update code frequently and unannounced in the traditional sense that most users in Looped group or Instagram would see. Developers are not helped by people being in a dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> if those users are mistakenly thinking of it as a stable master <abbr title="version of code within a single repository or workspace repository">branch</abbr> with lots of detailed docs to go with it. People should only use a dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> build if they EDUCATE themselves on the expectations and how to properly manage dev information and updates. People using dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.</p>
 <p>If you choose to use a dev build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy Loopdocs page updated regularly with current "dev updates"...that's just not the way dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> works (at least normally).</p>
-<p>When there is a big change in user interface, some LoopDocs information will be available before the release of the Loop-dev code. The transition from Loop 2.2.x to <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is one of those times. When released, Loop-dev will start the <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> version numbering. But - it is still Loop-dev until that release.</p>
 <h3 id="subscribe-to-the-zulipchat-channels">Subscribe to the Zulipchat channels<a class="headerlink" href="#subscribe-to-the-zulipchat-channels" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Use <a href="https://loop.zulipchat.com">Zulipchat</a> forums for Loop. This forum has several "streams" of conversations depending on interest. I highly recommend following all the streams so you do not miss conversations.  You can select by stream and by topic within a stream to focus on a given conversation. If you are using dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you must be in the #development stream.  If you want to know when LoopDocs gets updated, follow the #documentation stream. Code changes are called "commits" in GitHub. The #github stream will have an automated post whenever a new <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is made and it will give a brief line description of the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
 <p align="center"><img alt="img/zulipchat.png" src="../img/zulipchat.png" width="650" /></p>
 <p>You can also go directly to the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history for each of the branches if you'd like.</p>
-<p><a href="https://github.com/LoopKit/Loop/commits/master">Loop master <abbr title="version of code within a single repository or workspace repository">branch</abbr> <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history</a></p>
+<p><a href="https://github.com/LoopKit/Loop/commits/main">Loop main <abbr title="version of code within a single repository or workspace repository">branch</abbr> <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history</a></p>
 <p><a href="https://github.com/LoopKit/Loop/commits/dev">Loop dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history</a></p>
 <p>If you click on the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>, you can see exactly what changes to the code were made. It's an interesting learning experience. In red are the code that is old, in green is the updated code. The line numbers and file names of the edited code are also there to help.</p>
 <p align="center"><img alt="img/commit.png" src="../img/commit.png" width="550" /></p>
@@ -2407,8 +2440,8 @@
 <h3 id="generate-an-issue-report">Generate an <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report<a class="headerlink" href="#generate-an-issue-report" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Know how to generate an <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report when you see a problem so you can provide that if asked. An <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report is a log file generated by the Loop app that has a lot of information the developers can parse to figure out what Loop was doing when you were having a problem.</p>
 <ul>
-<li>Loop v2.2.8 and earlier: Loop Settings -&gt; <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report</li>
-<li>Loop dev: Loop Settings -&gt; Support -&gt; <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report</li>
+<li>Loop v2.2.9 and earlier: Loop Settings -&gt; <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> and later: Loop Settings -&gt; Support -&gt; <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report</li>
 </ul>
 <p>Do not confuse this with reporting an issue with Loop.  That is done by logging into GitHub and going to the <a href="https://github.com/LoopKit/Loop/issues"><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> page</a> to report a new issue.  You can read about existing issues without logging in, but to report a new one, you must log in to GitHub.</p>
 <h3 id="create-a-debug-report">Create a Debug Report<a class="headerlink" href="#create-a-debug-report" title="Anchor link to this Header on this Page">&para;</a></h3>

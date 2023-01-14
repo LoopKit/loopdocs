@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2407,7 +2442,7 @@
                 
                   <h1>Displays</h1>
                 
-                <p>This page has detailed information about <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Displays.</p>
+                <p>This page has detailed information about <abbr title="Latest release with major updates">Loop 3</abbr> Displays.</p>
 <p>If you are running Loop v2.2.x, follow this link: <a href="../../operation/loop-settings/displays/">Loop v2.2.x Displays</a>.</p>
 <h2 id="main-loop-screen">Main Loop Screen<a class="headerlink" href="#main-loop-screen" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The main Loop screen contains a Heads-Up Display (<a href="#heads-up-display"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr></a>) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom.</p>
@@ -2525,7 +2560,7 @@
 <h2 id="hud-details"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Details<a class="headerlink" href="#hud-details" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Very Detailed Section</p>
-<p>This section is packed with an incredible amount of detail. Remember it exists and come back when you need a reference to <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> icons and messages.</p>
+<p>This section is packed with an incredible amount of detail. Remember it exists and come back when you need a reference to <abbr title="Latest release with major updates">Loop 3</abbr> icons and messages.</p>
 <p>If you are a new looper your eyes may glaze over the first time through. Don't worry. But do come back and read this section again after you've used the system in <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> mode (before you enable <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> mode). And then come back again after a day or so of closed loop testing.</p>
 <p>Experienced loopers need to read the detail on this page. There are important changes from Loop 2.2.x.</p>
 </div>
@@ -2576,7 +2611,7 @@
 </tr>
 <tr>
 <td><img alt="A green open circle with a gap at the top denoting open loop" src="../img/loop-3-icon-open-green.svg" width="175" /></td>
-<td>When the circle is open at the top, Loop is operating in “open-loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (<abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr>) is active, the <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> icon will be displayed until <abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr> expires or is cancelled. <em>Note that <abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr> is only implemented in <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH, at the current time.</em></td>
+<td>When the circle is open at the top, Loop is operating in “open-loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (<abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr>) is active, the <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> icon will be displayed until <abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr> expires or is cancelled. <em>Note that <abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr> is only implemented in <abbr title="Latest release with major updates">Loop 3</abbr> for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH, at the current time.</em></td>
 </tr>
 </tbody>
 </table>
@@ -2758,16 +2793,16 @@
 </ul>
 </li>
 </ul>
-<p>The display to modify time zone is slightly different for Loop 2.2.x and <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (links below):</p>
+<p>The display to modify time zone is slightly different for Loop 2.2.x and <abbr title="Latest release with major updates">Loop 3</abbr> (links below):</p>
 <ul>
-<li><a href="../omnipod/#pump-time"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></a></li>
-<li><a href="../../operation/loop-settings/pump-commands/#change-time-zone"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Medtronic</a></li>
+<li><a href="../omnipod/#pump-time"><abbr title="Latest release with major updates">Loop 3</abbr> <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></a></li>
+<li><a href="../../operation/loop-settings/pump-commands/#change-time-zone"><abbr title="Latest release with major updates">Loop 3</abbr> Medtronic</a></li>
 <li><a href="../../operation/loop-settings/pump-commands/#change-time-zone">Loop 2.2.x</a></li>
 </ul>
-<p>You can choose to leave the pump and phone time zones different; the pump icon on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only) will show the clock icon to remind you. Many people do this for short trips.</p>
+<p>You can choose to leave the pump and phone time zones different; the pump icon on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> (<abbr title="Latest release with major updates">Loop 3</abbr> only) will show the clock icon to remind you. Many people do this for short trips.</p>
 <h3 id="other-time-changes">Other Time Changes<a class="headerlink" href="#other-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>What about other time changes?  Suppose the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. <strong>Do Not</strong> do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.</p>
-<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> will display this warning <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date and enable Set Automatically. </p>
+<p><abbr title="Latest release with major updates">Loop 3</abbr> will display this warning <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date and enable Set Automatically. </p>
 <p align="center"><img alt="graphic warning user of a problem with the time on the phone" src="../img/loop-3-omnipod-time-change.svg" width="300" /></p>
 <h3 id="hud-status-row"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Status Row<a class="headerlink" href="#hud-status-row" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The Status Row is located immediately below the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, Loop and Pump Icons and is used to provide status, action buttons and information. The messages in the table are in order of priority. For example, a <code>No Recent Glucose</code> message is displayed even when an <code>Override</code> is active.</p>
@@ -2827,7 +2862,7 @@
 <td><br><br><img alt="Pre-meal Preset message with until time stamp message" src="../img/status-row-pre-meal.svg" width="350" /></td>
 </tr>
 <tr>
-<td>If a higher priority message is not displayed in the <code>Status Row</code> and the <abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr> is active in the toolbar, the <code>Pre-meal Preset, until time stamp</code> is displayed. Tapping on the status row has no effect for this message.<br><br><strong>New with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>:</strong> The Pre-Meal Preset can be engaged with an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>. When both are active, the <abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr> supersedes the range of the active <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, but the other settings for that <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> still apply. When both are active, the <code>Status Row</code> message reflects the <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> with both the PreMeal and <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> icons in the toolbar highlighted.</td>
+<td>If a higher priority message is not displayed in the <code>Status Row</code> and the <abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr> is active in the toolbar, the <code>Pre-meal Preset, until time stamp</code> is displayed. Tapping on the status row has no effect for this message.<br><br><strong>New with <abbr title="Latest release with major updates">Loop 3</abbr>:</strong> The Pre-Meal Preset can be engaged with an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>. When both are active, the <abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr> supersedes the range of the active <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, but the other settings for that <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> still apply. When both are active, the <code>Status Row</code> message reflects the <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> with both the PreMeal and <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> icons in the toolbar highlighted.</td>
 </tr>
 </tbody>
 </table>

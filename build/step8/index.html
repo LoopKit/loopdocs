@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2393,7 +2428,7 @@ Which version of <abbr title="program used to build an app">Xcode</abbr> you ins
 <h2 id="how-do-all-the-minimum-versions-relate-to-each-other">How do all the minimum versions relate to each other?<a class="headerlink" href="#how-do-all-the-minimum-versions-relate-to-each-other" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The list below contains the <strong>minimum</strong> versions of <a href="../step1/#check-your-macos-version"><abbr title="operating system for Mac computer">macOS</abbr></a> and <abbr title="program used to build an app">Xcode</abbr> you'll need based on your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version. The highlighted sections, coordinated by <code>color</code> and <code>linestyle</code> in the graphic below, tie together the operating system nomenclature in the following bullets. The graphic is not updated as frequently as the words.</p>
 <p><strong>Newer versions of <abbr title="program used to build an app">Xcode</abbr> are always OK and should be used if your computer will accept the upgrade.</strong></p>
-<p>The list below is for the released version of code (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>.x):</p>
+<p>The list below is for the released version of code (<abbr title="Latest release with major updates">Loop 3</abbr>.x):</p>
 <ul>
 <li>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 or greater, minimum <a href="../step1/#check-your-macos-version"><abbr title="operating system for Mac computer">macOS</abbr></a> is 12.5<ul>
 <li>Minimum <abbr title="program used to build an app">Xcode</abbr> version is 14</li>
@@ -2421,7 +2456,7 @@ Which version of <abbr title="program used to build an app">Xcode</abbr> you ins
 <p>It isn't some catastrophic failure if you try to build with an outdated <abbr title="program used to build an app">Xcode</abbr> without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> on the phone requires you to get a newer version of <abbr title="program used to build an app">Xcode</abbr> to be able to build Loop onto that phone.</p>
 <p align="center"><img alt="Screenshot: Xcode, error message when Xcode too old for iOS or missing simulators" src="../img/device-support-files.jpg" width="750" /></p>
 <p>So, if you see that error message, realize you may have to update your <abbr title="operating system for Mac computer">macOS</abbr> to be able to see the newest <abbr title="program used to build an app">Xcode</abbr> version that you will need. Make sure to check that chart to see what your minimum versions are for the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> you are running on your iPhone.</p>
-<p>With <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, there is a new error when the <abbr title="program used to build an app">Xcode</abbr> version does not support the phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. You will see <a href="../build_errors/#packageresolved-file-corrupted-or-malformed">Package.resolved file corrupted or malformed</a></p>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, there is a new error when the <abbr title="program used to build an app">Xcode</abbr> version does not support the phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. You will see <a href="../build_errors/#packageresolved-file-corrupted-or-malformed">Package.resolved file corrupted or malformed</a></p>
 <h2 id="next-step-xcode-preferences">Next Step: <abbr title="older name for Xcode Settings">Xcode Preferences</abbr><a class="headerlink" href="#next-step-xcode-preferences" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Now you are ready to set up <a href="../step9/"><abbr title="older name for Xcode Settings">Xcode Preferences</abbr></a>.</p>
                 

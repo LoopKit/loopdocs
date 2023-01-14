@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2516,24 +2551,24 @@
                   <h1>Meal Entries</h1>
                 
                 <h2 id="meal-entry">Meal Entry<a class="headerlink" href="#meal-entry" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This page was updated with information for Loop-dev which will soon be released as <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>.</p>
+<p>This page was updated with information for <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <h3 id="loop-2-and-3-differences">Loop 2 and 3 Differences<a class="headerlink" href="#loop-2-and-3-differences" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Most of the information is the same for Loop 2.2.x (or FreeAPS) and <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>. </p>
-<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Updates:</p>
+<p>Most of the information is the same for Loop 2.2.x (or FreeAPS) and <abbr title="Latest release with major updates">Loop 3</abbr>. </p>
+<p><abbr title="Latest release with major updates">Loop 3</abbr> Updates:</p>
 <ul>
-<li><a href="#time">Time</a>: <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> adds the +/- 15 minute buttons to adjust time for entry</li>
+<li><a href="#time">Time</a>: <abbr title="Latest release with major updates">Loop 3</abbr> adds the +/- 15 minute buttons to adjust time for entry</li>
 <li><a href="#food-type">Food Type</a>: emoji keyboard<ul>
-<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> initially displays Medium emojis and the association of some emojis with absorption time has been improved</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> initially displays Medium emojis and the association of some emojis with absorption time has been improved</li>
 <li>Loop 2.2.x initially displays Fast emojis</li>
 </ul>
 </li>
 <li><a href="#absorption-time">Absorption Time</a>: values for fast, medium and slow<ul>
-<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> uses 30 minutes, 3 hr, 5 hr</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> uses 30 minutes, 3 hr, 5 hr</li>
 <li>Loop 2.2.x uses 2 hr, 3 hr, 4 hr</li>
 </ul>
 </li>
-<li><a href="../bolus/#meal-bolus">Meal Bolus</a>: <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> fills in the Bolus row with Recommended Bolus</li>
-<li><a href="#large-meal-warning-loop-3-only">Large Meal Warning (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only)</a><ul>
+<li><a href="../bolus/#meal-bolus">Meal Bolus</a>: <abbr title="Latest release with major updates">Loop 3</abbr> fills in the Bolus row with Recommended Bolus</li>
+<li><a href="#large-meal-warning-loop-3-only">Large Meal Warning (<abbr title="Latest release with major updates">Loop 3</abbr> only)</a><ul>
 <li>The warning limit of 99 g was chosen to assist in catching mistakes such as entering 115 grams instead of 15 grams</li>
 </ul>
 </li>
@@ -2559,7 +2594,7 @@
 </ul>
 </div>
 <h3 id="meal-entry_1">Meal Entry<a class="headerlink" href="#meal-entry_1" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The steps and graphics in this section are for users of Loop-dev (soon to be released as <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>). To view the version used by Loop 2.2.x, click on this <a href="#loop-2-fast-meal-entry">link</a>.</p>
+<p>The steps and graphics in this section are for users of <abbr title="Latest release with major updates">Loop 3</abbr>. To view the version used by Loop 2.2.x, click on this <a href="#loop-2-fast-meal-entry">link</a>.</p>
 <p>Tap the meal entry icon on the toolbar to open the <strong>Add Carb Entry</strong> screen:</p>
 <ol>
 <li>Enter number of grams of carbs in the Amount Consumed row (keyboard appears automatically)</li>
@@ -2649,16 +2684,16 @@
 </ul>
 </div>
 <div class="admonition warning">
-<p class="admonition-title"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Absorption Times</p>
-<p>If you switched to <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> from Loop 2.2.x, please be aware that absorption times for the Lollipop, Taco, Pizza icons have been updated.</p>
+<p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr> Absorption Times</p>
+<p>If you switched to <abbr title="Latest release with major updates">Loop 3</abbr> from Loop 2.2.x, please be aware that absorption times for the Lollipop, Taco, Pizza icons have been updated.</p>
 <ul>
-<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> uses 30 minute, 3 hours and 5 hours</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> uses 30 minute, 3 hours and 5 hours</li>
 <li>Loop 2.2.x used 2 hours, 3 hours and 4 hours</li>
 </ul>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Beware using Lollipop for Complex meals</p>
-<p>If you select the Lollipop icon for a large complex meal with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, you tell Loop to expect glucose to rise rapidly (30 min absorption). When that rapid rise does not materialize, Loop may predict an unexpectedly low glucose because the algorithm assumes something must be affecting glucose downward in a strong way.</p>
+<p>If you select the Lollipop icon for a large complex meal with <abbr title="Latest release with major updates">Loop 3</abbr>, you tell Loop to expect glucose to rise rapidly (30 min absorption). When that rapid rise does not materialize, Loop may predict an unexpectedly low glucose because the algorithm assumes something must be affecting glucose downward in a strong way.</p>
 <p>If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.</p>
 <p>🍭 (Fast) is for simple foods often used for low treatments. Some Loopers use it for coffee.</p>
 </div>
@@ -2684,7 +2719,7 @@
 </ul>
 <h3 id="continue">Continue<a class="headerlink" href="#continue" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Carbs are not saved in the <strong>Add Carb Entry</strong> screen until the Continue button is pressed and the user saves those carbs in the <a href="../bolus/#meal-bolus"><strong>Meal Bolus</strong></a>  screen, follow the link for details.</p>
-<h3 id="large-meal-warning-loop-3-only">Large Meal Warning (<abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> only)<a class="headerlink" href="#large-meal-warning-loop-3-only" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="large-meal-warning-loop-3-only">Large Meal Warning (<abbr title="Latest release with major updates">Loop 3</abbr> only)<a class="headerlink" href="#large-meal-warning-loop-3-only" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If the <code>Amount Consumed</code> row exceeds 99 grams when the Continue button is tapped, the user is provided with a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert from which they can proceed to the Meal Bolus screen, or return to edit <code>Amount Consumed</code> if that was not the intended amount.</p>
 <p align="center"><img alt="Large Meal Warning" src="../img/loop-3-large-meal-warning.svg" width="400" /></p>
 <h2 id="automatic-bolus"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr><a class="headerlink" href="#automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2706,7 +2741,7 @@
 <p align="center"><img alt="Delete carb entry" src="../img/delete-carb-entry.svg" width="900" /></p>
 <p>For more information on some of the details reported on this screen, review <a href="#dynamic-carb-absorption">Dynamic Carb Absorption</a></p>
 <h2 id="review-carb-absorption">Review Carb Absorption<a class="headerlink" href="#review-carb-absorption" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how Loop reports absorption for the carbs you entered for a meal. If you have perfect dosing for your meal (the mythical flat line), then the carb absorption will match the model perfectly. But sometimes, there might be <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> on the <strong>Active Carbohydrates Chart</strong> <a href="../../../loop-3/displays_v3/#active-carbohydrates-chart"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></a> / <a href="../../loop-settings/displays/#active-carbohydrates-chart">Loop 2</a> that doesn't reflect your current situation, and you might need to make an adjustment. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you. Some common things to consider are listed below.</p>
+<p>New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how Loop reports absorption for the carbs you entered for a meal. If you have perfect dosing for your meal (the mythical flat line), then the carb absorption will match the model perfectly. But sometimes, there might be <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> on the <strong>Active Carbohydrates Chart</strong> <a href="../../../loop-3/displays_v3/#active-carbohydrates-chart"><abbr title="Latest release with major updates">Loop 3</abbr></a> / <a href="../../loop-settings/displays/#active-carbohydrates-chart">Loop 2</a> that doesn't reflect your current situation, and you might need to make an adjustment. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you. Some common things to consider are listed below.</p>
 <ul>
 <li>Need to adjust value for carbs or account for fat/protein</li>
 <li>Need to adjust aborption time</li>
@@ -2761,13 +2796,13 @@
 </li>
 </ul>
 <h2 id="nightscout-entries">Nightscout Entries<a class="headerlink" href="#nightscout-entries" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>With <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, a caregiver can add remote carbs and perform remote bolus through Nightscout, but that requires set-up between the caregiver and Loopers phone and use of the <a href="../../../loop-3/features/#remote-carb-bolus">Remote Carb and Remote Bolus</a> entries in the Careportal.</p>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, a caregiver can add remote carbs and perform remote bolus through Nightscout, but that requires set-up between the caregiver and Loopers phone and use of the <a href="../../../loop-3/features/#remote-carb-bolus">Remote Carb and Remote Bolus</a> entries in the Careportal.</p>
 <p>If you enter carbs (not remote carbs) into the Careportal, they are not read by Loop and will not be reflected in <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr>.</p>
 <ul>
 <li>There may be times you want to do this, e.g., you want to indicate a low treatment you don't want Loop to know about</li>
 </ul>
 <h2 id="third-party-apps">Third Party Apps<a class="headerlink" href="#third-party-apps" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This is relevant for Loop 2.2.x versions. <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> does not read carbs from Apple Health unless you modified the code.</p>
+<p>This is relevant for Loop 2.2.x versions. <abbr title="Latest release with major updates">Loop 3</abbr> does not read carbs from Apple Health unless you modified the code.</p>
 <p>Please see Loop 2 <a href="../../../build/health/#loop-permissions">Permissions</a>.</p>
 <h2 id="carb-absorption-model">Carb Absorption Model<a class="headerlink" href="#carb-absorption-model" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For more information about the way Loop models the effects of carbs, insulin, etc., see the <a href="../../algorithm/prediction/">algorithm page</a>.</p>

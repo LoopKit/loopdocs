@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2054,8 +2089,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cancel-temp-basal-with-loop-dev" class="md-nav__link">
-    Cancel Temp Basal with Loop-dev
+  <a href="#cancel-temp-basal-with-loop-3" class="md-nav__link">
+    Cancel Temp Basal with Loop 3
   </a>
   
 </li>
@@ -2292,8 +2327,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cancel-temp-basal-with-loop-dev" class="md-nav__link">
-    Cancel Temp Basal with Loop-dev
+  <a href="#cancel-temp-basal-with-loop-3" class="md-nav__link">
+    Cancel Temp Basal with Loop 3
   </a>
   
 </li>
@@ -2371,7 +2406,7 @@
 <p>No, pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your Loop app on your iPhone. In other words, your PDM can stay in the diabetes closet while you are Looping. You cannot use the PDM for a pod that has been activated with Loop. That doesn't mean you should get rid of your PDM. Instead, keep it for backup situations if you lose your phone. See below for what to do if you lose your phone or <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>.</p>
 <h2 id="can-i-cancel-a-bolus">Can I cancel a bolus?<a class="headerlink" href="#can-i-cancel-a-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Yes, you can cancel a bolus in progress. In fact, because it is very easy to cancel, make sure your phone is locked prior to being put away to avoid inadvertently cancelling a bolus. (This behavior is very similar to the Insulet PDM - which also needs to be locked once a bolus has started.)</p>
-<p>As soon as a bolus is initiated, look at your phone in portrait orientation.  You will see a bolus message indicating the progress of the bolus. This message is highlighted with a red rectangle in the graphic below. If you tap on this part of the display, the bolus is immediately cancelled.  (This graphic of the Loop display is from Loop-dev.  If you are on Loop v2.2.x, the bolus in progress message looks and behaves the same.)</p>
+<p>As soon as a bolus is initiated, look at your phone in portrait orientation.  You will see a bolus message indicating the progress of the bolus. This message is highlighted with a red rectangle in the graphic below. If you tap on this part of the display, the bolus is immediately cancelled.  (This graphic of the Loop display is from <abbr title="Latest release with major updates">Loop 3</abbr>.  If you are on Loop v2.2.x, the bolus in progress message looks and behaves the same.)</p>
 <ul>
 <li>The displayed amount <code>Bolused</code> is based on the time since the bolus was started</li>
 <li>Loop will present that graphic for the entire time the bolus is in progress with the delivery amount updated based on time</li>
@@ -2384,8 +2419,8 @@
 <p>Be sure to follow the suspend with the resume command. Otherwise, all insulin delivery is stopped and remains stopped until the user either clicks on the "Tap to Resume" command from the main screen or the "resume delivery" command accessed in the pump settings display. The resume insulin delivery command returns insulin delivery to your scheduled basal rate. </p>
 <p>If a bolus was interrupted, the bolus will not resume.</p>
 <p>As long as you are in closed loop mode, Loop will resume automatic insulin delivery adjustments within 5 minutes.</p>
-<h3 id="cancel-temp-basal-with-loop-dev">Cancel Temp Basal with Loop-dev<a class="headerlink" href="#cancel-temp-basal-with-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With Loop-dev, disabling the setting for <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> also changes the basal rate on the pump to the scheduled basal rate, which effectively cancels the temp basal.</p>
+<h3 id="cancel-temp-basal-with-loop-3">Cancel Temp Basal with <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#cancel-temp-basal-with-loop-3" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, disabling the setting for <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> also changes the basal rate on the pump to the scheduled basal rate, which effectively cancels the temp basal.</p>
 <div class="admonition warning">
 <p class="admonition-title">Bolus in progress</p>
 <p>If a bolus is in progress when switching to <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr>, any active Temp Basal continues until it would expire naturally, unless the user takes further action.</p>
@@ -2393,7 +2428,7 @@
 <h2 id="can-i-prime-or-set-my-own-temp-basal-on-loop">Can I prime or set my own temp basal on Loop?<a class="headerlink" href="#can-i-prime-or-set-my-own-temp-basal-on-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop 2.2.x does not allow you to pick your own temp basal rate or prime insulin (a Medtronic pump trick for adding extra insulin that Loop does not add to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>).</p>
 <p>If you find yourself in a situation where you would like to specify an exact temp basal rate of your own, you would need to (1) change your scheduled basal rate for the time(s) that you'd like that basal rate, (2) cancel any currently running temp basal that Loop has running) and (3) disable <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> in Loop Settings so that you are running in "open loop" mode for the duration of the time you want to use that specific basal rate.</p>
-<p>A <a href="../../loop-3/omnipod/#manual-temp-basal">manual temp basal feature</a> will be available when the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> is released as <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>.</p>
+<p>A <a href="../../loop-3/omnipod/#manual-temp-basal">manual temp basal feature</a> will be available when the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> is released as <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <h2 id="what-if-i-lose-my-phone-or-rileylink">What if I lose my phone or <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>?<a class="headerlink" href="#what-if-i-lose-my-phone-or-rileylink" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone or <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>, however, you will not be able to affect any pod use; no basal change, suspend, cancel, or bolus. To do anything other than let basals continue, you will need to take action depending on the situation.</p>
 <ul>
@@ -2418,7 +2453,7 @@
 <li>This protects against accidentally issuing a command</li>
 <li>When phone is unlocked and Loop is in the foreground:<ul>
 <li>Loop 2.2.x updates the pod state when <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates (approximately 5 minutes) - same as when app is in the background</li>
-<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> updates the pod state every 30 sec in the foreground, every 3 to 5 minutes in the background</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> updates the pod state every 30 sec in the foreground, every 3 to 5 minutes in the background</li>
 </ul>
 </li>
 <li>Use an alternate display method such as <a href="../../nightscout/overview/">Nightscout</a> or <a href="../../nightscout/ns_crossref/#loop-follow">Loop Follow</a> instead of keeping the Loopers phone unlocked with Loop app open</li>

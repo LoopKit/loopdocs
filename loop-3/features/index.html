@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2286,20 +2321,20 @@
                 <h2 id="work-in-progress">Work in Progress<a class="headerlink" href="#work-in-progress" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">work in progress</p>
-<p>This page will be deleted after all the relevant information is incorporated into the appropriate locations. This may not happen until after the release of Loop-dev as <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> documentation.</p>
-<p>It is intended to assist folks testing Loop-dev.</p>
+<p>This page will be deleted after all the relevant information is incorporated into the appropriate locations as part of the development process for <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
+<p>Now that <abbr title="Latest release with major updates">Loop 3</abbr> has been released, this page may be updated, but leaving it alone for now.</p>
 </div>
-<p>This page discusses updated versions of Loop features as well as new capabilities provided with Loop-dev.</p>
+<p>This page discusses updated versions of Loop features as well as new capabilities provided with <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <div class="admonition info">
-<p class="admonition-title">Loop-dev Displays</p>
+<p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr> Displays</p>
 <p>One thing you may notice on some screens is the primary button, with associated information message, is always visible at the bottom of even small screens.  You may need to scroll to see intermediate rows. </p>
 <p>For example, if the default action on a bolus screen is to deliver the recommended bolus, that button is visible and active. The button remains fixed as other portions of the screen are scrolled up and down. When you make changes to selections, then the information displayed and the button label updates to reflect the action taken if you tap on the button.</p>
 <p>There are other screens, like the Onboarding and <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> screens, where you should read all the provided information.  Those screens require you to scroll to the bottom before being able to hit <code>Continue</code> or <code>Save</code>.</p>
 </div>
 <h2 id="non-pump-insulin">Non-Pump Insulin<a class="headerlink" href="#non-pump-insulin" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If insulin is taken from a different source and the user wants to let Loop know, there is a new method in Loop-dev.</p>
+<p>If insulin is taken from a different source and the user wants to let Loop know, there is a new method in <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <p>With Loop 2.2.x, the user manually entered the Insulin dose into the Apple Health app. Loop then imported that value.</p>
-<p>With Loop-dev, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated <code>Glucose</code> prediction chart is displayed prior to saving the dose.</p>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated <code>Glucose</code> prediction chart is displayed prior to saving the dose.</p>
 <h4 id="enter-non-pump-insulin-before-carbs">Enter non-pump insulin before carbs<a class="headerlink" href="#enter-non-pump-insulin-before-carbs" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">WARNING</p>
@@ -2325,7 +2360,7 @@
 <ul>
 <li><strong><abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr></strong> (default) is similar to Loop 2.2.x; however, the event history from a prior pod is not displayed once it is deactivated</li>
 <li><strong>Reservoir</strong> is similar to Loop 2.2.x; however, the reservoir value from a prior pod is not displayed once it is deactivated</li>
-<li><strong>Non-Pump Insulin</strong> is a new feature with Loop-dev</li>
+<li><strong>Non-Pump Insulin</strong> is a new feature with <abbr title="Latest release with major updates">Loop 3</abbr></li>
 </ul>
 </li>
 <li>
@@ -2358,7 +2393,7 @@
 <li>If the user taps on the Recommended Bolus row, the recommended amount is transferred to the Bolus row</li>
 </ul>
 </li>
-<li>With Loop-dev<ul>
+<li>With <abbr title="Latest release with major updates">Loop 3</abbr><ul>
 <li>The Recommended Bolus is provided AND the default for the Bolus is the recommended value</li>
 <li>If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry</li>
 </ul>
@@ -2416,7 +2451,7 @@
 <p align="center"><img alt="meal bolus when bolus recommended is decreased on left and increased on right" src="../img/loop-3-meal-bolus-mod-rec.svg" width="900" /></p>
 <h3 id="manual-bolus">Manual Bolus<a class="headerlink" href="#manual-bolus" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>When the <code>Bolus</code> screen is entered directly from the toolbar, the button choices are <code>Enter Bolus</code> if none is recommended, <code>Deliver</code> if a value is on the <code>Bolus</code> row or <code>Cancel</code> using the button on the upper left. The user can also tap on the value on the <code>Bolus</code> row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.</p>
-<p>There are other alert messages that might be displayed if the pump or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is not active.  Those are found on the <a href="../displays_v3/"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Displays</a> page.</p>
+<p>There are other alert messages that might be displayed if the pump or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is not active.  Those are found on the <a href="../displays_v3/"><abbr title="Latest release with major updates">Loop 3</abbr> Displays</a> page.</p>
 <p>The two graphics below are examples of manual bolus screens. </p>
 <ul>
 <li>In the first graphic, no bolus was recommended<ul>
@@ -2437,7 +2472,7 @@
 </ul>
 <p align="center"><img alt="manual bolus when bolus is recommended" src="../img/loop-3-manual-bolus-rec.svg" width="350" /></p>
 <h2 id="remote-carb-bolus">Remote Carb / Bolus<a class="headerlink" href="#remote-carb-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop-dev has a Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop.</p>
+<p><abbr title="Latest release with major updates">Loop 3</abbr> has a Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop.</p>
 <p>The author of this feature wrote this <a href="https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM">Remote Carb/Bolus Guide</a> documentation. Please read carefully and use with the appropriate level of caution.</p>
 <div class="admonition warning">
 <p class="admonition-title">WARNING</p>
@@ -2453,8 +2488,8 @@
 </ul>
 </div>
 <h2 id="next-section-moved-from-loop-3-overviewmd-page">Next Section moved from loop-3-overview.md page<a class="headerlink" href="#next-section-moved-from-loop-3-overviewmd-page" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h2 id="new-with-loop-3">New with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr><a class="headerlink" href="#new-with-loop-3" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> app, building off work by Tidepool and DIY contributors, provides a major upgrade in user safety, user experience and user interface with the same great Loop algorithm..</p>
+<h2 id="new-with-loop-3">New with <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#new-with-loop-3" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The <abbr title="Latest release with major updates">Loop 3</abbr> app, building off work by Tidepool and DIY contributors, provides a major upgrade in user safety, user experience and user interface with the same great Loop algorithm..</p>
 <p>Here are some highlights:</p>
 <ul>
 <li>Onboarding protocol with guardrails to help configure settings</li>

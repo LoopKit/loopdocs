@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2395,7 +2430,7 @@
                 
                 <h2 id="set-up-remote-for-nightscout">Set Up Remote for Nightscout<a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You can use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop.</p>
-<p>If you are using Loop-dev, then you can also send remote commands to add carbs and command a bolus.</p>
+<p>If you are using <abbr title="Latest release with major updates">Loop 3</abbr>, then you can also send remote commands to add carbs and command a bolus.</p>
 <div class="admonition warning">
 <p class="admonition-title">Remote Nightscout Interface Caveats</p>
 <ul>
@@ -2412,7 +2447,7 @@
 <p class="admonition-title">Remote Builds</p>
 <p>There are several methods for building remotely for your family members (or even yourself).</p>
 <ul>
-<li><a href="../../gh-actions/gh-overview/">LoopDocs: GitHub Build Actions</a> (new with Loop-dev) allows you to build on a browser (no need for a Mac) and send Loop to your phone using <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
+<li><a href="../../gh-actions/gh-overview/">LoopDocs: GitHub Build Actions</a> (new with <abbr title="Latest release with major updates">Loop 3</abbr>) allows you to build on a browser (no need for a Mac) and send Loop to your phone using <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
 <li><a href="https://www.loopandlearn.org/remote-build/">Loop and Learn: Remote Build with Diawi</a> allows you to save a build created by <abbr title="program used to build an app">Xcode</abbr>, store it in the cloud and then download and install on your phone later</li>
 </ul>
 <p>Both of these remote options require this <a href="https://nightscout.github.io/nightscout/setup_variables/#nightscout-config-vars">Nightscout: Config Var</a> to be added to Nightscout:</p>
@@ -2436,10 +2471,10 @@
 <p>And read this entire page - focus on warnings and caveats.</p>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">New Feature in <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></p>
-<p>Remote bolus and remote carb capability is added with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, currently under test as Loop dev. In order to support this capability, there are new minimum versions:</p>
+<p class="admonition-title">New Feature in <abbr title="Latest release with major updates">Loop 3</abbr></p>
+<p>Remote bolus and remote carb capability is added with <abbr title="Latest release with major updates">Loop 3</abbr>. In order to support this capability, there are new minimum versions:</p>
 <ul>
-<li><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (Loop dev) or newer</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> or newer</li>
 <li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 or newer</li>
 <li>Nightscout version 14.2.6 or newer<ul>
 <li>Required to get all the features</li>
@@ -2455,12 +2490,12 @@
 </li>
 <li>To clarify minimum versions for using updated remote features with LoopCaregiver<ul>
 <li>LoopCaregiver phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16</li>
-<li>Loop phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 running Loop-dev</li>
+<li>Loop phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 running <abbr title="Latest release with major updates">Loop 3</abbr></li>
 <li>Nightscout 14.2.6</li>
 </ul>
 </li>
 </ul>
-<p>The expanded capabilities for remote commands in Loop-dev are currently documented in this <a href="https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM">Remote Carb/Bolus Guide</a>. That information will be incorporated into LoopDocs soon.</p>
+<p>The expanded capabilities for remote commands in <abbr title="Latest release with major updates">Loop 3</abbr> are currently documented in this <a href="https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM">Remote Carb/Bolus Guide</a>. That information will be incorporated into LoopDocs soon.</p>
 </div>
 <h2 id="step-1-update-the-loopers-iphone-settings">Step 1: Update the Looper's iPhone settings<a class="headerlink" href="#step-1-update-the-loopers-iphone-settings" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For remote commands to successfully deploy to a Looper's iPhone, they will need to have two settings on the iPhone enabled.</p>
@@ -2625,7 +2660,7 @@
 <ul>
 <li>Minimum Requirements<ul>
 <li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 for LoopCaregiver's phone</li>
-<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 with Loop-dev for Looper's phone</li>
+<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 with <abbr title="Latest release with major updates">Loop 3</abbr> for Looper's phone</li>
 <li>Nightscout 14.2.6</li>
 </ul>
 </li>
@@ -2653,14 +2688,14 @@
 <p>If you plan to use LoopCaregiver, please join <a href="https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App">Loop Caregiver App</a> zulipchat stream.</p>
 <p><strong>As with all development code, monitor zulipchat for announcements, report any problems you experience, be prepared to build frequently, and pay attention.</strong></p>
 <h4 id="build-loopcaregiver">Build LoopCaregiver<a class="headerlink" href="#build-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built Loop-dev using the script.</p>
+<p>A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built <abbr title="Latest release with major updates">Loop 3</abbr> using the script.</p>
 <p>Open a terminal window. Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
 <div class="highlight"><span class="filename">Copy and Paste to start the BuildLoopCaregiver.sh script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopCaregiver.sh)&quot;
 </code></pre></div>
 <p>Paste the line into the <abbr title="interface for entering commands to the computer">Terminal</abbr> window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.</p>
 <div class="admonition warning">
 <p class="admonition-title">Not Loop</p>
-<p>The output you see in the <abbr title="interface for entering commands to the computer">Terminal</abbr> may look very similar to when you build Loop dev from a script.</p>
+<p>The output you see in the <abbr title="interface for entering commands to the computer">Terminal</abbr> may look very similar to when you build <abbr title="Latest release with major updates">Loop 3</abbr> from a script.</p>
 <p>It is pulling down a <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> from a different location (gestrich instead of LoopKit) and just the caregiver <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Do not attempt to build Loop with this download.</p>
 <p>The developers say: "The Caregiver app is being designed to be a full Loop integrated app, being able to benefit from Loop data stores, visualization, and other parts of the system that are mature and have a lot of design/thought put into them. At some point it will just be a single checkout, and you can build both."  <strong>But NOT yet</strong></p>
 </div>
@@ -2726,7 +2761,7 @@
 <p><strong>A couple notes about these shortcuts:</strong></p>
 <ol>
 <li>You will need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13, but your phone as the shortcut user would need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13.<ul>
-<li>For Loop-dev, the minimum <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> is <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.</li>
+<li>For <abbr title="Latest release with major updates">Loop 3</abbr>, the minimum <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> is <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1</li>
 </ul>
 </li>
 <li>You need to open those links in the Safari browser on your iPhone. A confirmation will show to initiate the download. After the download finishes, tap the button marked "AA" near your Safari address bar and tap "Downloads" to find and open the downloaded Shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.</li>

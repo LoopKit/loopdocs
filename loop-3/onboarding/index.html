@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2507,7 +2542,7 @@
 <p>As soon as your app builds on your phone, you are guided through the onboarding (set up) process. You will see information screens for each Therapy Setting and <strong>must</strong> acknowledge each screen. You can review those informational screens later by clicking the <a href="../therapy-settings/"><abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr></a> screen after a pump has been added.</p>
 <p>Click on this <a href="https://drive.google.com/file/d/1NkS-YGREFn1UBmBbOjsD2Yy0ZUyEYM1l/view?usp=sharing">Video of Onboarding</a> link to watch the onboarding process for a pre-release version tested in March 2022.</p>
 <h3 id="entering-and-editing-values">Entering and Editing Values<a class="headerlink" href="#entering-and-editing-values" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This section explains how to enter and edit values with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>.</p>
+<p>This section explains how to enter and edit values with <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <ul>
 <li>For more information on a specific therapy setting, tap on the information icon on the screen or review the detailed <a href="../therapy-settings/"><abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr></a> page in LoopDocs</li>
 <li>Some screens only have one value for a given quantity<ul>
@@ -2672,7 +2707,7 @@
 <p>If you will be connecting a Medtronic pump after onboarding:</p>
 <ul>
 <li>The values entered here will overwrite whatever is in your Medtronic pump when you first connect it</li>
-<li>For those who build <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> over an existing Loop app with a Medtronic pump attached - you will just be confirming values you used previously</li>
+<li>For those who build <abbr title="Latest release with major updates">Loop 3</abbr> over an existing Loop app with a Medtronic pump attached - you will just be confirming values you used previously</li>
 <li>If you have values in a <a href="../../build/step3/#check-medtronic-pump-version">Loopable Medtronic pump</a> that you plan to attach after onboarding - please record those values if they are important to you</li>
 </ul>
 <h3 id="delivery-limits"><abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr><a class="headerlink" href="#delivery-limits" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2687,7 +2722,7 @@
 <h4 id="maximum-basal-rate">Maximum Basal Rate<a class="headerlink" href="#maximum-basal-rate" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p><a href="../therapy-settings/#maximum-basal-rate">Maximum Basal Rate</a> will cap the the maximum temporary basal rate that Loop issues to meet your correction range when you are in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> with a <a href="../settings/#dosing-strategy"><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></a> of <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr>.</p>
 <p>For safety, new loopers should start with max basal set 2-3 times their highest scheduled basal rate. If you choose 2 times your highest scheduled basal, you may get a message informing you this is "lower than typical." Ignore this to put safety first as a new looper.</p>
-<p>Experienced loopers typically set their maximum basal rate around 3-4 times their highest scheduled basal rate. <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> app will not allow you to exceed 6.4 times your highest scheduled rate.</p>
+<p>Experienced loopers typically set their maximum basal rate around 3-4 times their highest scheduled basal rate. <abbr title="Latest release with major updates">Loop 3</abbr> app will not allow you to exceed 6.4 times your highest scheduled rate.</p>
 <h4 id="maximum-bolus"><strong>Maximum Bolus</strong><a class="headerlink" href="#maximum-bolus" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p><a href="../therapy-settings/#maximum-bolus">Maximum Bolus</a> is the highest bolus amount Loop can recommend at one time to cover carbs or bring down high glucose.</p>
 <p>For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.</p>
@@ -2731,15 +2766,15 @@
 <p class="admonition-title">Medtronic <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></p>
 <p>If you plan to use a Medtronic Enlite sensor for your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, you must first add that pump to Loop before the sensor will be shown as an option.</p>
 </div>
-<p>If you built <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> over an existing app, your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and pump selections should have carried over.</p>
+<p>If you built <abbr title="Latest release with major updates">Loop 3</abbr> over an existing app, your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and pump selections should have carried over.</p>
 <h2 id="experienced-loopers">Experienced Loopers<a class="headerlink" href="#experienced-loopers" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The first time you build <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> on a device, you will need to go through the onboarding process too.</p>
+<p>The first time you build <abbr title="Latest release with major updates">Loop 3</abbr> on a device, you will need to go through the onboarding process too.</p>
 <ul>
 <li>
-<p>If you build <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> over Loop 2.2.x, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> and keep using the same pod.)</p>
+<p>If you build <abbr title="Latest release with major updates">Loop 3</abbr> over Loop 2.2.x, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build <abbr title="Latest release with major updates">Loop 3</abbr> and keep using the same pod.)</p>
 </li>
 <li>
-<p>If you build <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> onto a device without an existing Loop app and you have a Nightscout site, you can enter your Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> (remember to use https: with the "s") and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> and it will ask if you want to import your settings from your Nightscout profile. This includes all the overrides you have previously saved.</p>
+<p>If you build <abbr title="Latest release with major updates">Loop 3</abbr> onto a device without an existing Loop app and you have a Nightscout site, you can enter your Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> (remember to use https: with the "s") and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> and it will ask if you want to import your settings from your Nightscout profile. This includes all the overrides you have previously saved.</p>
 </li>
 <li>
 <p>If you are building on a device that does not have an existing Loop app and you choose not to use Nightscout, then follow the new Looper <a href="#onboarding-steps">Onboarding Steps</a>.</p>
@@ -2770,10 +2805,10 @@
 <h3 id="carb-absorption-time-update">Carb Absorption Time Update<a class="headerlink" href="#carb-absorption-time-update" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you used earlier versions of Loop, please be aware that absorption times have changed.</p>
 <div class="admonition warning">
-<p class="admonition-title">Loop-dev Carb Absorption Times</p>
+<p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr> Carb Absorption Times</p>
 <p>Loop uses the absorption time for the carbs, along with your glucose readings, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See <a href="../../operation/algorithm/prediction/">Algorithm: Prediction</a> for more details.</p>
 <ul>
-<li>Loop-dev uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons<ul>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons<ul>
 <li>Loop 2.2.x used 2 hours, 3 hours and 4 hours</li>
 </ul>
 </li>
@@ -2783,8 +2818,8 @@
 <p>If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.</p>
 </div>
 <h3 id="carb-data-source">Carb Data Source<a class="headerlink" href="#carb-data-source" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, will be added to the documentation later. For now search in zulipchat.</p>
-<p>Users who build <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> over Loop 2.2.x, may find a permission switch to give Loop permission to read carb data from health, but without making the customization mentioned above, changing permission does not change the behavior of Loop.</p>
+<p><abbr title="Latest release with major updates">Loop 3</abbr> does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, will be added to the documentation later. For now search in zulipchat.</p>
+<p>Users who build <abbr title="Latest release with major updates">Loop 3</abbr> over Loop 2.2.x, may find a permission switch to give Loop permission to read carb data from health, but without making the customization mentioned above, changing permission does not change the behavior of Loop.</p>
                 
               
               

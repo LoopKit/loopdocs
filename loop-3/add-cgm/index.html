@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2292,7 +2327,7 @@
 <li>CGMs that reside on the same phone (internet not required)<ul>
 <li><a href="#dexcom-g5-g6-one">Dexcom G5</a></li>
 <li><a href="#dexcom-g5-g6-one">Dexcom G6</a> (use this for Dexcom ONE)</li>
-<li><a href="#dexcom-g7">Dexcom G7</a> <strong>(Loop-dev only)</strong></li>
+<li><a href="#dexcom-g7">Dexcom G7</a> <strong>(<abbr title="Latest release with major updates">Loop 3</abbr> only)</strong></li>
 <li><a href="#medtronic-enlite-cgm">Minimed Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a><ul>
 <li>Medtronic Pump only</li>
 <li><strong>You must <a href="../add-pump/">add pump</a> first</strong><ul>
@@ -2335,7 +2370,7 @@
 <h4 id="about-dexcom-share-credentials">About Dexcom Share credentials<a class="headerlink" href="#about-dexcom-share-credentials" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You do <strong>NOT</strong> need your Share account info listed in Loop settings if you are using a G5 or G6 system. The transmitter ID is sufficient. In fact, you should leave your Share credentials blank so that you don't accidentally become internet-dependent for <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data if you forget to update your transmitter ID when you start a new transmitter.</p>
 <h3 id="dexcom-g7">Dexcom G7<a class="headerlink" href="#dexcom-g7" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This is only available on Loop dev.</p>
+<p>This is only available on <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <p>You must have the G7 app on the same phone as Loop. When the G7 app switches to the next sensor/transmitter assembly, Loop automatically switches too.</p>
 <p>Minimal documentation is provided.</p>
 <p align="center"><img alt="graphic showing Loop searching for G7" src="../img/g7.svg" width="500" /></p>
@@ -2363,9 +2398,9 @@
 <p>Just because you can use Nightscout as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> source does not mean you should.</p>
 <p>If you decide to use Nightscout as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> source, make sure the data stored in Nightscout is reliable. If the app you choose uploads bad results to Nightscout, you don't want Loop to use that bad data.</p>
 <p><em>Sensors that can be added to Nightscout via other apps include Dexcom, some Libre and some Medtronic sensors. Please refer to <a href="https://nightscout.github.io/uploader/setup/">Nightscout Docs: Configure your Uploader</a>.</em></p>
-<p>There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at <a href="../../build/code_customization/#add-libre-app-to-loop-phone">Add Libre App to Loop Phone</a> that explain how to modify Loop dev to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.</p>
+<p>There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at <a href="../../build/code_customization/#add-libre-app-to-loop-phone">Add Libre App to Loop Phone</a> that explain how to modify <abbr title="Latest release with major updates">Loop 3</abbr> to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.</p>
 <p>It is recommended that you use <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using direct bluetooth connection.</p>
-<p>The xDrip4iOS app (which can also be found in the app store under the name Shuggah) may have a problem during warmup of a new sensor (European Libre 2 using direct bluetooth connection). There were two instances of crazy high values being reported and picked up by Loop dev. One Shuggah user and one xDrip4iOS user who connected via Nighscout as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> with Loop dev had serious overdose of insulin because of bad readings with a new sensor. They are both OK but the Loop and xDrip4iOS developers are looking at this event.</p>
+<p>The xDrip4iOS app (which can also be found in the app store under the name Shuggah) may have a problem during warmup of a new sensor (European Libre 2 using direct bluetooth connection). There were two instances of crazy high values being reported and picked up by <abbr title="Latest release with major updates">Loop 3</abbr>. One Shuggah user and one xDrip4iOS user who connected via Nighscout as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> with <abbr title="Latest release with major updates">Loop 3</abbr> had serious overdose of insulin because of bad readings with a new sensor. They are both OK but the Loop and xDrip4iOS developers are looking at this event.</p>
 </div>
 <p align="center"><img alt="Nightscout Remote CGM acknowledgement screen" src="../img/nightscout-cgm-acknowledge.svg" width="350" /></p>
 <p>The user must enter both the <abbr title="website address (Uniform Resource Locator)">URL</abbr> and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> for their site to ensure the security of the data. The <abbr title="website address (Uniform Resource Locator)">URL</abbr> must start with <code>https://</code> and cannot have any extra spaces in the line.</p>

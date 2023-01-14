@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2763,7 +2798,7 @@
 <p align="center"><img alt="graphic showing display when Omnipod pump and phone time do not match" src="../img/loop-3-omnipod-timezone.svg" width="600" /></p>
 <h3 id="other-time-changes">Other Time Changes<a class="headerlink" href="#other-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>What about other time changes?  Suppose the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. <strong>Do Not</strong> do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.</p>
-<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> will display this warning <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date and enable Set Automatically. </p>
+<p><abbr title="Latest release with major updates">Loop 3</abbr> will display this warning <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> -&gt; General -&gt; Time &amp; Date and enable Set Automatically. </p>
 <p align="center"><img alt="graphic warning user of a problem with the time on the phone" src="../img/loop-3-omnipod-time-change.svg" width="300" /></p>
 <h2 id="previous-pod-information">Previous Pod Information<a class="headerlink" href="#previous-pod-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>When you tap on the <code>Previous Pod Information</code> row, a graphic similar to those shown below is displayed. This provides summary information about the pod before the one currently in use. </p>
@@ -2774,7 +2809,7 @@
 <p>If you should happen to get a fault where the last 3 digits of the PDM ref code are "-049" (the Hex Designation is fault code 0x31), do <strong>not</strong> report this to Insulet and do <strong>not</strong> ask for a replacement. This means Loop did not ensure the pod was in the correct state to accept a command. In other words, it was a bug in the Loop code. </p>
 <p>We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a Loop Report and rebuild if you have an older version of the development code.</p>
 </div>
-<p>With <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, do not leave the screen open and unlocked for long periods of time without first reading <a href="../../faqs/omnipod-faqs/#is-there-an-increase-in-pod-failures-on-loop">Is there an increase in pod failures on Loop?</a></p>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, do not leave the screen open and unlocked for long periods of time without first reading <a href="../../faqs/omnipod-faqs/#is-there-an-increase-in-pod-failures-on-loop">Is there an increase in pod failures on Loop?</a></p>
 <h3 id="pod-error-messages">Pod Error Messages<a class="headerlink" href="#pod-error-messages" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This section presents some of the error message screens you may see specific to pods.</p>
 <h4 id="pod-faults">Pod Faults<a class="headerlink" href="#pod-faults" title="Anchor link to this Header on this Page">&para;</a></h4>

@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2819,7 +2854,7 @@
 <p><strong>More Details</strong></p>
 <p>Experienced Loop builders may say - but I thought we did not use <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> anymore.</p>
 <ul>
-<li>When building <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> (Loop-dev), <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is no longer used and Loop will build without installing <abbr title="allows apps built for older Macs (Intel chips) to run on newer Macs (M1 and M2 chips)">Rosetta</abbr></li>
+<li>When building <abbr title="Latest release with major updates">Loop 3</abbr>, <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is no longer used and Loop will build without installing <abbr title="allows apps built for older Macs (Intel chips) to run on newer Macs (M1 and M2 chips)">Rosetta</abbr></li>
 <li>When building Loop v2.2.9 or FreeAPS (released and development versions), <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is still used but the required <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> version is included in the download; so the user does not need to separately install a particular version of <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> </li>
 </ul>
 <h3 id="run-destination-is-not-valid-failed-to-prepare-the-device">Run Destination is Not Valid; Failed to Prepare the Device<a class="headerlink" href="#run-destination-is-not-valid-failed-to-prepare-the-device" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2833,7 +2868,7 @@
 <p><strong>Error Message:</strong></p>
 <p><em>Package.resolved file is corrupted or malformed; fix or delete the file to continue: unsupported schema version 2</em></p>
 <p><img alt="package corrupted or malformed error" src="../img/xcode-needs-to-be-updated.jpeg" width="600" /></p>
-<p>This error is new with Loop-dev, which uses <abbr title="packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer">Package Dependencies</abbr>.</p>
+<p>This error is new with <abbr title="Latest release with major updates">Loop 3</abbr>, which uses <abbr title="packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer">Package Dependencies</abbr>.</p>
 <p>There are 2 problems shown here</p>
 <ol>
 <li>The version of <abbr title="program used to build an app">Xcode</abbr> is out of date</li>
@@ -2843,7 +2878,7 @@
 <p>Update <abbr title="program used to build an app">Xcode</abbr>, which may require you to update <abbr title="operating system for Mac computer">macOS</abbr>.</p>
 <h3 id="couldnt-get-revision-for-package-dependency">Couldn't Get Revision for Package Dependency<a class="headerlink" href="#couldnt-get-revision-for-package-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
 <h3 id="many-search-143-for-this-error">Many Search 1.4.3 for this Error<a class="headerlink" href="#many-search-143-for-this-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This error is new with Loop-dev, which uses <abbr title="packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer">Package Dependencies</abbr>.</p>
+<p>This error is new with <abbr title="Latest release with major updates">Loop 3</abbr>, which uses <abbr title="packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer">Package Dependencies</abbr>.</p>
 <ul>
 <li>If you notice a red x in <abbr title="program used to build an app">Xcode</abbr> (as circled in the graphic below)<ul>
 <li>Click on the red x to show the error in the left pane</li>
@@ -2871,7 +2906,7 @@
 </ol>
 <p><img alt="package dependency solution" src="../img/xcode-package-dependency-solution.svg" width="600" /></p>
 <h3 id="unable-to-read-included-file">Unable To Read Included File<a class="headerlink" href="#unable-to-read-included-file" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This error has been seen with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>. The permanent xcconfig file, created by the build script and used to sign targets, is written to a folder where the user does not have read permission.</p>
+<p>This error has been seen with <abbr title="Latest release with major updates">Loop 3</abbr>. The permanent xcconfig file, created by the build script and used to sign targets, is written to a folder where the user does not have read permission.</p>
 <p><strong>Error Message:</strong></p>
 <p><img alt="unable to read error" src="../img/xcode-unable-to-read-xcconfig.png" width="750" /></p>
 <p>Text in error:</p>
@@ -2903,7 +2938,7 @@ ls -l ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
 <ul>
 <li>For those who care: the new requirement is that for a certain type of instruction file, the line with the <code>Headers</code> keyword must be located before the line with the <code>Sources</code> keyword</li>
 <li>There used to be many repositories that did not have lines in that order</li>
-<li>All of these instruction files have been updated for Loop Master, Loop dev and FreeAPS</li>
+<li>All of these instruction files have been updated for Loop main and FreeAPS</li>
 <li>If you are building with an older copy of the code, you may see this error</li>
 </ul>
 <p><strong>Error Message:</strong></p>
@@ -2972,7 +3007,7 @@ ls -l ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
 <li>Press build</li>
 </ul>
 <h3 id="carthage-error">Carthage Error<a class="headerlink" href="#carthage-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You should not see <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> errors, but if you do, you probably did not select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) at the top of the <abbr title="program used to build an app">Xcode</abbr> window. Review the graphic from the <a href="../step14-post-loop-3/#initial-xcode-screens">Prepare to Build</a> Instructions.</p>
+<p>You should not see <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> errors, but if you do, you probably did not select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) at the top of the <abbr title="program used to build an app">Xcode</abbr> window. Review the graphic from the <a href="../step14/#initial-xcode-screens">Prepare to Build</a> Instructions.</p>
 <p>Or maybe you are trying to build using an old download; some older versions did require <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr>. Best practice is to download new code.</p>
 <p><strong>Error Message:</strong></p>
 <div class="admonition warning">

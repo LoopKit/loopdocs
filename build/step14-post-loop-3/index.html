@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2369,7 +2404,7 @@
                 
                 
                 <h1 id="build-the-loop-app">Build the Loop App<a class="headerlink" href="#build-the-loop-app" title="Anchor link to this Header on this Page">&para;</a></h1>
-<h2 id="after-loop-3-is-released">AFTER <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is Released<a class="headerlink" href="#after-loop-3-is-released" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="after-loop-3-is-released">AFTER <abbr title="Latest release with major updates">Loop 3</abbr> is Released<a class="headerlink" href="#after-loop-3-is-released" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>THIS IS A DRAFT OF WHAT WILL BE "Build the Loop App"
 AFTER LOOP 3 IS released</p>
 <div class="admonition bug">
@@ -2399,7 +2434,7 @@ AFTER LOOP 3 IS released</p>
 <p>The FAQs for building Loop are in-line with the steps that trigger the questions.</p>
 </div>
 <h2 id="build-video">Build Video<a class="headerlink" href="#build-video" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Loop and Learn team prepared this <a href="https://youtu.be/gddhljzsNkM">YouTube video</a> showing how to build Loop 2.2.x including the steps required to update if you previously built. With the release of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, the build process is slightly different.  The video may be worth watching, but once you've reviewed it, work through the new build process described on this page.</p>
+<p>The Loop and Learn team prepared this <a href="https://youtu.be/gddhljzsNkM">YouTube video</a> showing how to build Loop 2.2.x including the steps required to update if you previously built. With the release of <abbr title="Latest release with major updates">Loop 3</abbr>, the build process is slightly different.  The video may be worth watching, but once you've reviewed it, work through the new build process described on this page.</p>
 <h2 id="developer-mode">Developer Mode<a class="headerlink" href="#developer-mode" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you are running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 or <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 8 and earlier, you do not have developer mode and can skip ahead to <a href="#download-loop">Download Loop</a>.</p>
 <p>New with <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9, you must enable Developer Mode to run or build Loop. (This is true for any app created by <abbr title="program used to build an app">Xcode</abbr>.) If you want to know more, click on this <a href="https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device">Apple Link about Developer Mode</a>.</p>
@@ -2793,17 +2828,17 @@ AFTER LOOP 3 IS released</p>
 <li>Ask <a href="../../intro/loopdocs-how-to/#how-to-find-help">questions</a> if you are confused.</li>
 <li>Learn to use the <a href="../../intro/loopdocs-how-to/#website-search">LoopDocs search feature</a></li>
 </ul>
-<h3 id="new-to-loop-3">New to <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr><a class="headerlink" href="#new-to-loop-3" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If this is your first build with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, head to the Set Up tab starting here: <a href="../../loop-3/loop-3-overview/"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Overview</a>.</p>
+<h3 id="new-to-loop-3">New to <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#new-to-loop-3" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If this is your first build with <abbr title="Latest release with major updates">Loop 3</abbr>, head to the Set Up tab starting here: <a href="../../loop-3/loop-3-overview/"><abbr title="Latest release with major updates">Loop 3</abbr> Overview</a>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Pro Tip: Read Along in LoopDocs as you Onboard</p>
-<p>One of the goals for <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is to make the app robust even if you don't read the documentation, but a lot of questions may be resolved if you read along in LoopDocs as you onboard.</p>
+<p>One of the goals for <abbr title="Latest release with major updates">Loop 3</abbr> is to make the app robust even if you don't read the documentation, but a lot of questions may be resolved if you read along in LoopDocs as you onboard.</p>
 <p>All those mentors who answer questions are volunteers.</p>
 </div>
 <p>Even if you don't read all the pages under the Set Up tab now, these links are important.</p>
 <ul>
 <li>New Looper: <a href="../../loop-3/onboarding/">Onboarding</a></li>
-<li>Building <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> over Loop 2.2.x or FreeAPS: <a href="../../loop-3/onboarding/#experienced-loopers">Experienced Looper Onboarding</a></li>
+<li>Building <abbr title="Latest release with major updates">Loop 3</abbr> over Loop 2.2.x or FreeAPS: <a href="../../loop-3/onboarding/#experienced-loopers">Experienced Looper Onboarding</a></li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Add a Calendar Reminder</p>

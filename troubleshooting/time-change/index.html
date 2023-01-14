@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2297,8 +2332,15 @@
 </div>
 <h3 id="remove-future-glucose">Remove Future Glucose<a class="headerlink" href="#remove-future-glucose" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
-<li>You <strong>MUST</strong> go into Apple Health and remove any glucose values in the future. At the current time, Loop 2.2.x and Loop-dev will use those future readings.<ul>
+<li>You <strong>MUST</strong> go into Apple Health and remove any glucose values in the future</li>
+<li>Loop 2.2.x and FreeAPS will use those future readings.<ul>
 <li>If you want to know more, check out this link: <a href="https://github.com/LoopKit/Loop/issues/1890">Request: Detect Future Glucose</a></li>
+</ul>
+</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> detects the future glucose and stops looping<ul>
+<li>It might not be completely obvious why Loop stopped, but you will get a red loop within 15 minutes and Loop is not Looping notifications starting a 20 minutes</li>
+<li>If you tap on the bolus icon, Loop informs you it detected invalid future glucose</li>
+<li>If you tap on the glucose icon - it takes you to your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> which probably has a very different number from that shown on the main Loop screen</li>
 </ul>
 </li>
 <li>If you also use Nightscout <strong>and</strong> have the upload <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings enabled in Loop, those future glucose values will appear in Nightscout<ul>
@@ -2306,7 +2348,7 @@
 </ul>
 </li>
 </ul>
-<p>One added improvement with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is it very aggressive at warning you if you make this mistake. you will get a notification - even when you are in a different app. The graphic below shows the alert when you next open Loop after turning off automatic time and changing the time. Even if you respond right away, you may have at least one glucose reading in the future when you see this alert. Please <a href="#remove-future-glucose">Remove Future Glucose</a>.</p>
+<p>One added improvement with <abbr title="Latest release with major updates">Loop 3</abbr> is it very aggressive at warning you if you make this mistake. you will get a notification - even when you are in a different app. The graphic below shows the alert when you next open Loop after turning off automatic time and changing the time. Even if you respond right away, you may have at least one glucose reading in the future when you see this alert. Please <a href="#remove-future-glucose">Remove Future Glucose</a>.</p>
 <p align="center"><img alt="notification displayed when automatic time is disabled on Loop phone" src="../../loop-3/img/loop-3-omnipod-time-change.svg" width="350" /></p>
 <p>The rest of this page is about changing time zones.</p>
 <p>This happens safely with Loop because Loop keeps track of everything in GMT.</p>
@@ -2334,9 +2376,9 @@
 <li>Most people want to update their pump time immediately after the clocks change</li>
 </ul>
 </li>
-<li>With <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> there is a Clock Icon added to the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Pump Status display</li>
+<li>With <abbr title="Latest release with major updates">Loop 3</abbr> there is a Clock Icon added to the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Pump Status display</li>
 </ul>
-<p>If you want more information, click on this link: <a href="../../loop-3/displays_v3/#time-zone">Time Zone</a>, which provides detail and connects to the Loop 2.2.x or the <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> version sections.</p>
+<p>If you want more information, click on this link: <a href="../../loop-3/displays_v3/#time-zone">Time Zone</a>, which provides detail and connects to the Loop 2.2.x or the <abbr title="Latest release with major updates">Loop 3</abbr> version sections.</p>
 <div class="admonition warning">
 <p class="admonition-title">Medtronic Users</p>
 <p><strong>Do not use the Medtronic pump menus to change your pump's time when Looping.</strong></p>

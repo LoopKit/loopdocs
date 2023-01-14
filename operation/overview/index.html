@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2304,7 +2339,7 @@
                 
                 
                 <h1 id="loop-2-set-up-overview">Loop 2 Set Up Overview<a class="headerlink" href="#loop-2-set-up-overview" title="Anchor link to this Header on this Page">&para;</a></h1>
-<p>This section of LoopDocs will be maintained during the transition to <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>. These pages are specific to Loop 2.2.x and some forks based off that older version, such as FreeAPS. </p>
+<p>This section of LoopDocs will be maintained during the transition to <abbr title="Latest release with major updates">Loop 3</abbr>. These pages are specific to Loop 2.2.x and some forks based off that older version, such as FreeAPS. </p>
 <p><strong>Be aware that older versions and forks will probably not be updated as the Apple environment changes.</strong></p>
 <p>With Loop 2.2.x, you must manually step through every Loop setting and fill out the appropriate values. If you miss some, you may get errors in the app. If this happens to you, review every setting carefully.</p>
 <p>You need to work through the steps listed in the headings under this page one by one. Please follow along with each page's information to make sure that you don't miss any valuable information about your Loop's settings and function.</p>
@@ -2326,15 +2361,15 @@
 <p>Configure Loop's settings. Within this section, you will be entering many settings that you are already familiar with such as basal rates, carb ratios, and insulin sensitivity factor (aka correction factor). There are also several new terms that you may be unfamiliar with like insulin model selection, suspend threshold, and override ranges. Make sure to refer to the <a href="../loop-settings/configurations/">Loop 2 Configurations</a> while entering values - DO NOT GUESS.</p>
 <p align="center"><img alt="settings screen for Loop" src="../img/loop-settings-config-v2-2-5.png" width="250" /></p>
 <h3 id="loop-2-services-optional">Loop 2 Services (Optional)<a class="headerlink" href="#loop-2-services-optional" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You are not required to use services although many Loopers use Nightscout. If you do not yet have Nightscout configured and want to add it later, just return to the <a href="../loop-settings/services/">Services</a> page when you are ready. Note that <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> and Loop 2 use the same documentation page for Services. Services can be added at any time.</p>
+<p>You are not required to use services although many Loopers use Nightscout. If you do not yet have Nightscout configured and want to add it later, just return to the <a href="../loop-settings/services/">Services</a> page when you are ready. Note that <abbr title="Latest release with major updates">Loop 3</abbr> and Loop 2 use the same documentation page for Services. Services can be added at any time.</p>
 <p align="center"><img alt="img/overview-services.jpg" src="../img/overview-services.jpg" width="250" /></p>
 <h2 id="loop-2-displays">Loop 2 Displays<a class="headerlink" href="#loop-2-displays" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>After you are done entering your settings, you should familiarize yourself with the information displays. The <a href="../loop-settings/displays/">Loop 2 Displays</a> page will help you recognize and begin to understand what all the icons, graphs, and data mean.</p>
 <p>It is a good idea to remain in <a href="../loop/open-loop/"><abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr></a> while becoming familiar with the app.</p>
 <h2 id="loop-2-pump-settings-screen">Loop 2 Pump Settings Screen<a class="headerlink" href="#loop-2-pump-settings-screen" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The pump settings screens for <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> were updated. The older interface used by Loop 2 is documented at <a href="../loop-settings/pump-commands/">Loop 2 Pump Settings</a></p>
+<p>The pump settings screens for <abbr title="Latest release with major updates">Loop 3</abbr> were updated. The older interface used by Loop 2 is documented at <a href="../loop-settings/pump-commands/">Loop 2 Pump Settings</a></p>
 <h2 id="rileylink-screen"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Screen<a class="headerlink" href="#rileylink-screen" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The documentation for <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> and Loop 2 is the same for the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> screen. This screen is only available after configuring a pump that uses a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device.</p>
+<p>The documentation for <abbr title="Latest release with major updates">Loop 3</abbr> and Loop 2 is the same for the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> screen. This screen is only available after configuring a pump that uses a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device.</p>
 <p>After a pump that uses a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> is connected to the app, tap on a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> name in the pump settings screen to bring up the displays and commands found on the <a href="../loop-settings/rileylink/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Menu</a> screen.</p>
                 
               

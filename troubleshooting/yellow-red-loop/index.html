@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2460,6 +2495,7 @@
 <li><a href="#lost-pod-information">Lost Pod Information</a> <strong>Read this section first</strong></li>
 </ol>
 <h3 id="lost-pod-information">Lost Pod Information<a class="headerlink" href="#lost-pod-information" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>We think this was fixed with <abbr title="Latest release with major updates">Loop 3</abbr>. If you are running Loop 2.2.x or FreeAPS, this can happen to you.</p>
 <p>There is a new reason for a red loop that is not well understood.  Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> information as well as the stored pump information.</p>
 <div class="admonition warning">
 <p class="admonition-title">Be Careful with Phone Reboots</p>
@@ -2472,7 +2508,7 @@
 <p class="admonition-title">Announcement from Facebook</p>
 <p>Caution: Please use rebooting or powering off your iPhone as a last resort for troubleshooting. There is an issue that can occur under unknown conditions where Loop/FreeAPS can revert to a previous state after reboot or power off. This can include symptoms such as Loop/FreeAPS indicating a Pod is expired or share credentials returning even though they were previously removed. There could be other settings that revert to a previous point in time.</p>
 <p>The exact cause is still under investigation. If this occurs, you will have to replace your current pod. There is no way to recover the active Pod if Loop/FreeAPS reverts to old settings and think the current Pod is expired/needing to be replaced.</p>
-<p>Obviously reboots do need to happen for things such as <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> updates. For Pod users, if possible, I would plan to do them at the end of a Pod cycle when a Pod change is already planned. This applies to current Master Loop, Loop-dev and FreeAPS.</p>
+<p>Obviously reboots do need to happen for things such as <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> updates. For Pod users, if possible, I would plan to do them at the end of a Pod cycle when a Pod change is already planned. This applies to current Loop 2.2.x and FreeAPS. There have been no reports of this with <abbr title="Latest release with major updates">Loop 3</abbr>. A modification was made to <abbr title="Latest release with major updates">Loop 3</abbr> that is thought to resolve this concern.</p>
 <p><strong>Don't panic:</strong> This doesn't happen on every reboot. Until a fix is found, just don't reboot if you don't need to, and try to time it just before a pod change if you can. In case it is related to phone storage, keep plenty of space available on your phone.</p>
 </div>
 <h3 id="rileylink-compatible-device"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device<a class="headerlink" href="#rileylink-compatible-device" title="Anchor link to this Header on this Page">&para;</a></h3>

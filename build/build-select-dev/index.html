@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2369,9 +2404,8 @@
 <h2 id="loop-dev-script">Loop Dev Script<a class="headerlink" href="#loop-dev-script" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The script, BuildLoopFixedDev, assists in building the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> for Loop and FreeAPS:</p>
 <div class="admonition question">
-<p class="admonition-title">Loop dev before release of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></p>
-<p>Before Loop dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is released as <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, there is a special page on building what will be <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>. Please head over to that page to download and build <a href="../step13/">Loop-dev</a>.</p>
-<p>After the release of <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>, that page will be removed. This page will remain.</p>
+<p class="admonition-title">Loop dev after release of <abbr title="Latest release with major updates">Loop 3</abbr></p>
+<p>Now that <abbr title="Latest release with major updates">Loop 3</abbr> is released, this script may change - please do not use it right now.</p>
 </div>
 <p>If you have not previously built the released version of the app using the Build-Select (BuildLoop) script as documented on the <a href="../step14/">Build the Loop App</a> page, review that page first and then return.</p>
 <p>This section provides instructions to use the BuildLoopFixedDev script. It will download a "Fixed" version of the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> for Loop or FreeAPS and then assist with the build process.</p>
@@ -2406,6 +2440,10 @@
 <p>If you need help with your app, the mentors need more information. Please issue a Loop Report when asking for help. Refer to <a href="../../loop-3/settings/#support">Support</a> for how to issue a Loop Report. If you want to keep track yourself, refer to <a href="#identify-loop-dev-version">Identify Loop-dev Version</a></p>
 <h3 id="start-the-buildloopfixeddev-script">Start the BuildLoopFixedDev Script<a class="headerlink" href="#start-the-buildloopfixeddev-script" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
+<div class="admonition danger">
+<p class="admonition-title">Loop dev after release of <abbr title="Latest release with major updates">Loop 3</abbr></p>
+<p>Now that <abbr title="Latest release with major updates">Loop 3</abbr> is released, this script will change - please do not use it right now.</p>
+</div>
 <div class="highlight"><span class="filename">Copy and Paste to start the BuildLoopFixedDev.sh script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopFixedDev.sh)&quot;
 </code></pre></div>
 <p>Paste the line into a <abbr title="interface for entering commands to the computer">Terminal</abbr> window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.)</p>
@@ -2436,7 +2474,7 @@
 <p align="center"><img alt="status of downloaded development branch commit" src="../img/build-select-dev-checkout.svg" width="700" /></p>
 <p>Verify the word "error" is not shown in the terminal and proceed by typing 1 and hitting return.</p>
 <h2 id="sign-and-build">Sign and Build<a class="headerlink" href="#sign-and-build" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The sign and build instructions are the same as for the released code, <a href="../step14-post-loop-3/#sign-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Sign Targets</abbr></a>.</p>
+<p>The sign and build instructions are the same as for the released code, <a href="../step14/#sign-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Sign Targets</abbr></a>.</p>
 <h2 id="update-loop-dev">Update Loop-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>While Loop-dev is under active development, you should update frequently.</p>
 <p>When building frequently, it is optional to update your provisioning profile with every new build. If you want to always ensure one year, copy and paste the following command into the terminal before building. This forces <abbr title="program used to build an app">Xcode</abbr> to create a new provisioning profile instead of reusing one with an older expiration date.</p>
@@ -2468,6 +2506,10 @@
 <h3 id="identify-loop-dev-version">Identify Loop-dev Version<a class="headerlink" href="#identify-loop-dev-version" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The version of code that shows up under the Loop Settings screen will remain fixed until Loop-dev is released. In order to identify which version of dev you have on your phone, you need the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
 <p>The <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is identified by a 7-digit alphanumeric code.  That code was also appended to the folder name of the downloaded code under Downloads/BuildLoop as shown in the graphic above.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report, refer to <a href="../../loop-3/settings/#support">Support</a> for instructions on issuing a Loop Report. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.</p>
+<div class="admonition danger">
+<p class="admonition-title">Loop dev after release of <abbr title="Latest release with major updates">Loop 3</abbr></p>
+<p>Now that <abbr title="Latest release with major updates">Loop 3</abbr> is released, this script may change - please do not use it right now.</p>
+</div>
 <p>When you ran the BuildLoopFixedDev script, the instructions informed you of the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
                 
               

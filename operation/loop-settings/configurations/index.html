@@ -51,13 +51,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -104,6 +108,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -2596,11 +2631,11 @@
 <h2 id="insulin-model">Insulin Model<a class="headerlink" href="#insulin-model" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are four insulin models to choose from with Loop 2.x; Walsh, Rapid-Acting Adults, Rapid-Acting Children, and Fiasp. If you want to read the nitty-gritty discussion that went into the development of the Rapid-Acting and Fiasp curves (collectively called "exponential insulin models"), you can see that in GitHub <a href="https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473">here</a>.</p>
 <div class="admonition tip">
-<p class="admonition-title"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> Insulin Type</p>
-<p><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> drops the Walsh model and, by default, does not include the concept of child versus adult for "rapid" acting insulin, i.e., Humalog, Novalog and Apidra.</p>
+<p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr> Insulin Type</p>
+<p><abbr title="Latest release with major updates">Loop 3</abbr> drops the Walsh model and, by default, does not include the concept of child versus adult for "rapid" acting insulin, i.e., Humalog, Novalog and Apidra.</p>
 <ul>
 <li>Insulin Type is selected when the user adds a pump</li>
-<li>The user can choose to customize <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> to <a href="../../../build/code_customization/#enable-child-model">Enable Child Model</a></li>
+<li>The user can choose to customize <abbr title="Latest release with major updates">Loop 3</abbr> to <a href="../../../build/code_customization/#enable-child-model">Enable Child Model</a></li>
 </ul>
 </div>
 <p><strong>We highly recommend selecting one of the exponential insulin models for Loop 2.2.x (in other words, not the Walsh model).</strong></p>
@@ -2642,7 +2677,7 @@
 <p>Incorrectly set <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> is the most common cause of roller coaster glucose for new Loop users. You will need to raise (increase) your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> value/number to help smooth a roller coaster glucose trend. You can read about that topic more over in LoopTips <a href="https://loopkit.github.io/looptips/settings/settings/#3rd-insulin-sensitivity-factor">here</a>.</p>
 <h2 id="loop-2-services-optional">Loop 2 Services (Optional)<a class="headerlink" href="#loop-2-services-optional" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You are not required to use services, although many Loopers use Nightscout. If you do not yet have Nightscout configured and want to add it later, just return to this page when you are ready. This can be added at any time. The same is true for the other services.</p>
-<p>The page describing services is the same for <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> and Loop 2. Use this link for the <a href="../services/">Services</a> documentation.</p>
+<p>The page describing services is the same for <abbr title="Latest release with major updates">Loop 3</abbr> and Loop 2. Use this link for the <a href="../services/">Services</a> documentation.</p>
 <p align="center"><img alt="img/overview-services.jpg" src="../../img/overview-services.jpg" width="250" /></p>
 <h2 id="next-step-loop-2-displays">Next Step: Loop 2 Displays<a class="headerlink" href="#next-step-loop-2-displays" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Proceed to the <a href="../displays/">Loop 2 Displays</a> page. Understanding the Loop displays can be a valuable tool to understanding your Loop's actions, and also for troubleshooting, if you are having issues.</p>
