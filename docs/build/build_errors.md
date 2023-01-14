@@ -1,5 +1,9 @@
 ## Build Errors
 
+**These are only relevant when building with a Mac and Xcode.**
+
+**For GitHub (Browser Build) errors, please see: [GitHub Errors](../gh-actions/gh-errors.md)**
+
 There are two types of build indications that may be seen: they are warnings (yellow or purple icons) and red errors. You'll see the warnings and errors in the left-hand column of the Xcode window.
 
 <font color="orange">**Yellow and Purple warnings**</font> do not cause the build to fail, those are just warnings.  You will often see yellow and purple icons. Ignore those. Do not try to do anything to fix those.
@@ -35,11 +39,11 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 1. **Did you reboot, i.e., restart, your computer after updating Xcode?** You should reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. [Xcode Command Line Tools](step9.md#command-line-tools)
 
-1. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the Build Select Script, it automatically opens Xcode using the new download. 
+1. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the Build Select Script, it automatically opens Xcode using the new download.
 
     If you want to build using a recent download, this section tells you how to [Find My Dowloaded Loop Code](code_customization.md#find-my-dowloaded-loop-code).
 
-1. **Are you are using a free developer account?** Make sure you finished the removal of Siri and Push Notification capabilities described in the [Free Account](step14.md#free-account) link.
+1. **Are you are using a free developer account?** Make sure you finished the removal of Siri and Push Notification capabilities described in the [Free Account](build-free-loop.md#free-account) link.
 
 1. **DO NOT USE BETA VERSIONS**  If you are using an iOS beta version or an Xcode beta version, Loop might not build. Deleting iOS beta from a phone is a pain...so don't install it unless you know what you are doing.
 
@@ -277,7 +281,7 @@ The addition of `r` where there used to be `-` on the left side, means you now h
 
 Final step is to return to Xcode and clean the build folder. Otherwise Xcode remembers it could not read the file and it won't try again.
 
-1. From the `Product` menu (of Xcode), select `Clean Build Folder` 
+1. From the `Product` menu (of Xcode), select `Clean Build Folder`
 1. Press the Build Button (play icon)
 
 
@@ -298,7 +302,7 @@ Text in error:
 
 * Left window (the exact target names are not important):
 
-    * _Cycle in dependencies between targets . . ._ 
+    * _Cycle in dependencies between targets . . ._
 
 * Middle window:
 
@@ -308,9 +312,9 @@ Text in error:
 
 No need to quit Xcode - follow these steps using the Xcode Menu bar. (It's possible that only Step 1 is required, but sometimes all steps are needed.)
 
-1. From the `Product` menu (of Xcode), select `Clean Build Folder` 
-1. From the `File` menu, select `Close Workspace` 
-1. From the `File` menu, select `Open Recent` and choose the top line 
+1. From the `Product` menu (of Xcode), select `Clean Build Folder`
+1. From the `File` menu, select `Close Workspace`
+1. From the `File` menu, select `Open Recent` and choose the top line
 1. Press the Build Button (play icon)
 
 
@@ -324,16 +328,16 @@ Text in error message can be either of these:
 
 _Entitlements file "WatchApp Extension.entitlements" was modified . . ._
 
-or 
+or
 
 _Entitlements file "Loop.entitlements" was modified . . ._
 
 **Solution:**
 
-No need to quit Xcode - follow these numbered steps as indicated in the graphic below. 
+No need to quit Xcode - follow these numbered steps as indicated in the graphic below.
 
 1. Click on the Loop icon under PROJECT
-1. From the `Product` menu (of Xcode), select `Clean Build Folder` 
+1. From the `Product` menu (of Xcode), select `Clean Build Folder`
 1. Press the Build Button (play icon)
 
 
@@ -375,9 +379,7 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 
 ### Carthage Error
 
-You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](step14.md#prepare-to-build) Instructions.
-
-Or maybe you are a repeat builder who did not read the updated information and tried to use the old zip-download method. That is no longer supported.  Please read all of the [Updating](updating.md) page.
+You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](step14-post-loop-3.md#initial-xcode-screens) Instructions.
 
 Or maybe you are trying to build using an old download; some older versions did require carthage. Best practice is to download new code.
 
@@ -545,7 +547,7 @@ You can verify the iOS development certificates are working by clicking on "Mana
 
 **Error:** Apple watch app is not appearing.
 
-**Solution:** This error usually appears because you have not updated the watchOS prior to building Loop, or you didn't have your Apple watch paired at the time of building Loop.  
+**Solution:** This error usually appears because you have not updated the watchOS prior to building Loop, or you didn't have your Apple watch paired at the time of building Loop.
 
 Don't forget to open the iPhone's Watch app, select My Watch tab on the bottom left, scroll all the way down, and click `Install` for the Loop app listed at the very bottom under "available apps".
 

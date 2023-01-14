@@ -14,26 +14,6 @@ theme:
         - content.tooltips
     logo: loop-logo.png
     favicon: loop-logo.png
-    palette:
-        # Palette toggle for automatic mode
-        - media: "(prefers-color-scheme)"
-          toggle:
-            icon: material/brightness-auto
-            name: Switch to light mode
-
-        # Palette toggle for light mode
-        - media: "(prefers-color-scheme: light)"
-          scheme: default 
-          toggle:
-            icon: material/brightness-7
-            name: Switch to dark mode
-
-        # Palette toggle for dark mode
-        - media: "(prefers-color-scheme: dark)"
-          scheme: slate
-          toggle:
-            icon: material/brightness-4
-            name: Switch to system preference
 
 # repo_url: https://github.com/LoopKit/Loop
 
@@ -73,35 +53,55 @@ nav:
 - Intro:
     - 'LoopDocs Overview': 'intro/overview-intro.md'
     - 'LoopDocs How-to': 'intro/loopdocs-how-to.md'
-- Build:
-    - 'Build Overview': 'build/overview.md'
-    - 'Compatible Computer': 'build/step1.md'
+    - 'Requirements': 'intro/requirements.md'
     - 'Compatible iPhone/iPod': 'build/step2.md'
     - 'Compatible Pump': 'build/step3.md'
     - 'Compatible CGM': 'build/step4.md'
-    - 'Order a RileyLink': 'build/step5.md'
+    - 'RileyLink': 'build/step5.md'
     - 'Apple Developer Program': 'build/step6.md'
-    - 'Download Xcode': 'build/step8.md'
-    - 'Xcode Preferences': 'build/step9.md'
     - 'Test Settings': 'build/step10.md'
     - 'Loop Data': 'build/step11.md'
     - 'Meet the Community': 'build/step12.md'
-    - 'Build Loop App': 'build/step14.md'
+- Browser Build:
+    - 'GitHub Build Overview': gh-actions/gh-overview.md
+    - 'GitHub First Time': gh-actions/gh-first-time.md
+    - 'GitHub Deploy': gh-actions/gh-deploy.md
+    - 'GitHub Update': gh-actions/gh-update.md
+    - 'GitHub Errors': gh-actions/gh-errors.md
+- Mac Build:
+    - 'Mac Build Overview': 'build/overview.md'
+    - 'Compatible Computer': 'build/step1.md'
+    - 'Download Xcode': 'build/step8.md'
+    - 'Xcode Preferences': 'build/step9.md'
+    - 'Build Loop': 'build/step14.md'
     - 'Oh dear! Build errors?': 'build/build_errors.md'
     - 'Updating/Rebuilding': 'build/updating.md'
-    - 'Loop-dev': 'build/step13.md'
+    - 'Build Free Loop': 'build/build-free-loop.md'
+    - 'TestFlight from Xcode': 'build/testflight-xcode.md'
 - Set Up:
-    - 'Set Up Overview': 'operation/overview.md'
-    - 'Step 1: Health Permissions': 'build/health.md'
-    - 'Step 2: Add Pump':
-        - 'Add Medtronic': 'operation/loop-settings/mdt-pump.md'
-        - 'Add Omnipod': 'operation/loop-settings/omnipod-pump.md'
-    - 'Step 3: Add CGM': 'operation/loop-settings/cgm.md'
-    - 'Step 4: Configurations': 'operation/loop-settings/configurations.md'
-    - 'Step 5: Loop Services': 'operation/loop-settings/services.md'
-    - 'Loop Displays': 'operation/loop-settings/displays.md'
+    - 'Overview': 'loop-3/loop-3-overview.md'
+    - 'Onboarding': 'loop-3/onboarding.md'
+    - 'Add CGM': 'loop-3/add-cgm.md'
+    - 'Add Pump': 'loop-3/add-pump.md'
+    - 'Displays': 'loop-3/displays_v3.md'
+    - 'Alerts & Notifications': 'loop-3/alert-notify.md'
+    - 'Settings': loop-3/settings.md
+    - 'Therapy Settings': 'loop-3/therapy-settings.md'
+    - 'Optional: Services': 'operation/loop-settings/services.md'
     - 'RileyLink Display': 'operation/loop-settings/rileylink.md'
-    - 'Pump Settings': 'operation/loop-settings/pump-commands.md'
+    - 'Omnipod Pump': loop-3/omnipod.md
+    - 'Medtronic Pump': loop-3/medtronic.md
+    - 'Features': 'loop-3/features.md'
+    - 'Loop 2: Set Up App':
+        - 'Loop 2 Overview': 'operation/overview.md'
+        - 'Loop 2 Health Permissions': 'build/health.md'
+        - 'Loop 2 Add Pump':
+            - 'Loop 2 Add Medtronic': 'operation/loop-settings/mdt-pump.md'
+            - 'Loop 2 Add Omnipod': 'operation/loop-settings/omnipod-pump.md'
+        - 'Loop 2 Add CGM': 'operation/loop-settings/cgm.md'
+        - 'Loop 2 Configuration': 'operation/loop-settings/configurations.md'
+        - 'Loop 2 Displays': 'operation/loop-settings/displays.md'
+        - 'Loop 2 Pump Settings': 'operation/loop-settings/pump-commands.md'
 - Operate:
     - 'Open Loop': 'operation/loop/open-loop.md'
     - 'Closed Loop': 'operation/loop/close-loop.md'
@@ -127,18 +127,17 @@ nav:
     - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
     - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
     - 'MDT Pump Battery': 'operation/features/battery.md'
-- Loop 3:
-    - 'Loop 3 Overview': 'loop-3/loop-3-overview.md'
-    - 'Loop 3 Onboarding': 'loop-3/onboarding.md'
-    - 'Loop 3 Add CGM': 'loop-3/add-cgm.md'
-    - 'Loop 3 Add Pump': 'loop-3/add-pump.md'
-    - 'Loop 3 Displays': 'loop-3/displays_v3.md'
-    - 'Loop 3 Alerts & Notifications': 'loop-3/alert-notify.md'
-    - 'Loop 3 Settings': loop-3/settings.md
-    - 'Loop 3 Therapy Settings': 'loop-3/therapy-settings.md'
-    - 'Loop 3 Omnipod': loop-3/omnipod.md
-    - 'Loop 3 Medtronic': loop-3/medtronic.md
-    - 'Loop 3 Features': loop-3/features.md
+#- Loop 3:
+#    - 'Loop 3 Overview': 'loop-3/loop-3-overview.md'
+#    - 'Loop 3 Onboarding': 'loop-3/onboarding.md'
+#    - 'Loop 3 Add CGM': 'loop-3/add-cgm.md'
+#    - 'Loop 3 Add Pump': 'loop-3/add-pump.md'
+#    - 'Loop 3 Displays': 'loop-3/displays.md'
+#    - 'Loop 3 Settings': loop-3/settings.md
+#    - 'Loop 3 Therapy Settings': 'loop-3/therapy-settings.md'
+#    - 'Loop 3 Omnipod': loop-3/omnipod.md
+#    - 'Loop 3 Medtronic': loop-3/medtronic.md
+#    - 'Loop 3 Features': loop-3/features.md
 - 'Version':
     - 'Version Overview': 'version/overview-version.md'
     - 'Loop Releases': 'version/releases.md'
@@ -147,12 +146,6 @@ nav:
     - 'Loop Development': 'version/development.md'
     - 'Build Loop Dev': 'build/build-select-dev.md'
     - 'LoopWorkspace': 'version/loopworkspace.md'
-    - 'GitHub Build Overview': 'gh-actions/gh-overview.md'
-    - 'GitHub First Time': 'gh-actions/gh-first-time.md'
-    - 'GitHub Deploy': 'gh-actions/gh-deploy.md'
-    - 'GitHub Update': 'gh-actions/gh-update.md'
-    - 'GitHub Errors': 'gh-actions/gh-errors.md'
-    - 'TestFlight from Xcode': 'build/testflight-xcode.md'
 - Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'
     - 'New Nightscout': 'nightscout/new_user.md'

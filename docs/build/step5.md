@@ -1,5 +1,7 @@
 ## Order a RileyLink Compatible Device
 
+**Not needed for DASH**
+
 !!! info "Time Estimate"
     - 15-20 minutes to read about RileyLink compatible devices
     - 15 minutes to order a device

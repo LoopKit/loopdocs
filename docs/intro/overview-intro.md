@@ -4,21 +4,24 @@ The LoopDocs website is organized as follows
 
 * [Home](../index.md): What is Loop?
 * [Intro](overview-intro.md): Introduction to Loop and LoopDocs
-* [Build](../build/overview.md): How to build your Loop app the first time, or [Update](../build/updating.md) next time
+    * [Requirements](requirements.md): What is needed regardless of build method
+* New with Loop 3: Two ways to build
+    * [Browser Build](../gh-actions/gh-overview.md): Build Loop app using a browser (Mac computer not required)
+    * [Mac Build](../build/overview.md): Build Loop app with a Mac the first time, or [Update](../build/updating.md) next time
 * [Set Up](../operation/overview.md): How to set up your Loop app
 * [Operate](../operation/loop/open-loop.md): How to use the Loop app
 * [Troubleshoot](../troubleshooting/overview.md): What to do if you're having trouble with the Loop app
-* [Loop 3](../loop-3/loop-3-overview.md): Temporary section. It will move to Set Up when Loop 3 is released. (A development version is close to but not quite ready for release as Loop 3.)
 * [Version](../version/overview-version.md): Information about Loop versions, code customization and development
 * [Nightscout](../nightscout/overview.md): Loop-specific Nightscout details; Nightscout is a companion application that many Loopers use
 * [FAQs](../faqs/overview-faqs.md): Pages with safety tips, frequently asked questions and the Glossary
+* [Translation](../translate.md): Links to Google Translate provided as a convenience, no guaratees about the quality of the translation
 
 It is totally understandable if the thought of building and operating your own Loop app feels intimidating. As you learn the information explained in LoopDocs, this will start feeling more comfortable.
 
 
 ## Building Loop
 
-The process for building the Loop app is divided into short segments (pages) in the Build tab of LoopDocs.
+The process for building the Loop app is divided into short segments (sections or pages) in the Build tabs of LoopDocs.
 
 !!! warning "Best Practice: Learn to Build"
     You are strongly encouraged to build Loop for yourself.
@@ -34,9 +37,22 @@ The process for building the Loop app is divided into short segments (pages) in 
 
 You can build Loop and practice with a simulated phone, CGM and  pump. You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
 
-Starting with a simulator can help you decide if you want to move forward with purchasing the hardware and Apple Developers license each year for Loop.
+Starting with a simulator can help you decide if you want to move forward with purchasing additional items required to Loop.
 
-Note - you will need to have access to a computer. Please review [Simulator Build](../version/simulator.md) for more information.
+Please review [Simulator Build](../version/simulator.md) for more information.
+
+#### Simulator using Browser Build:
+
+* No Mac computer required
+* Must have a paid Apple Developer ID ($99/year)
+* Must have a compatible phone
+
+#### Simulator using Mac Build:
+
+* Must have a Mac computer (or virtual machine, Intel chips only)
+* Can build the simulator with a free Apple Developer ID
+    * Build to Mac (no phone required)
+    * Build to compatible phone
 
 ## Operating Loop
 

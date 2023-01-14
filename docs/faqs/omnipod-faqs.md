@@ -4,9 +4,16 @@ Yes.
 
 ## Which pods will work with Loop?
 
-* Omnipod Eros pods are supported with DIY Loop
-* Omnipod DASH pods are supported in the [dev branch](../build/step13.md) of DIY Loop
-* Omnipod 5 pods are not supported with DIY Loop
+You can use some Omnipod pumps with Loop. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
+
+Check your app version (for Loop or FreeAPS) by tapping on Loop settings and reading it from the top of the screen.
+
+* Version 2.2.x or earlier supports Omnipod Eros pumps
+* Version 2.3 or later supports Omnipod Eros and DASH pumps
+
+DASH pumps do not require a RileyLink compatible device.
+
+Omnipod 5 is not supported by any version of Loop.
 
 ## What about Tidepool Loop?
 

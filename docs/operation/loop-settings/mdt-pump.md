@@ -1,6 +1,6 @@
 ## Medtronic Pump Users
 
-Your Loop will have a lot of blank spots until you input some basic settings. The beginning step is to add a pump to your Loop app. If you are using an Medtronic pump, you can follow along for the rest of this page. If you are using a Medtronic pump, Omnipod pump, please head over to [Add Omnipod](omnipod-pump.md) instead.
+Your Loop app will have a lot of blank spots until you input some basic settings. The beginning step is to add a pump to your Loop app. If you are using an Medtronic pump, you can follow along for the rest of this page. If you are using an Omnipod pump, please head over to [Loop 2 Add Omnipod](omnipod-pump.md) instead.
 
 
 ## Prepare Medtronic Pump
@@ -74,4 +74,4 @@ If you are traveling through time zones, Loop continues to work - just be aware 
 
 ## Next Step: Add CGM
 
- Congrats! You've added your Medtronic pump to your Loop app. Now, click on the settings button in the upper left corner to take you back to Loop's settings menu. Your next step is to [Add CGM](cgm.md) to your Loop app. After all, without CGM data, your Loop won't loop.
+ Congrats! You've added your Medtronic pump to your Loop app. Now, click on the settings button in the upper left corner to take you back to Loop's settings menu. Your next step is to [Loop 2 Add CGM](cgm.md) to your Loop app. After all, without CGM data, your Loop won't loop.

@@ -14,13 +14,13 @@ The user can select closed loop or open loop using this slider. When you first s
 ![slider to enable or disable closed loop](img/loop-3-setting-loop-mode.svg){width="500"}
 {align="center"}
 
+**As soon as Closed Loop is enabled, Loop will begin automatic adjustment of insulin dosing. Please ensure the settings you entered are appropriate for the Loop algorithm.**
 
 No automatic (closed loop) adjustment of insulin will occur and the slider will be disabled under the following conditions.
 
 * No Pump added
 * No CGM added
 * User set a [Manual Temp Basal](omnipod.md#manual-temp-basal)
-* User suspended insulin delivery (planned - might not be in effect yet)
 
 ### Recommended Insulin
 

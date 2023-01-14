@@ -29,7 +29,7 @@ There are several ways to use this to sign the targets automatically.
     * Use a directory structure for clones similar to the example shown in the graphic below where clones were created under ~/Downloads/ManualClones.
     * Make a copy of the `LoopConfigOverride.xcconfig` in the ~/Downloads/ManualClones folder (from any LoopWorkspace folder) and edit that version with your TeamID
     * All future clones created in this directory grouping are then automatically signed
-3. For users of the [Loop Dev Script](../build/step13.md), the script automatically generates the copy of  `LoopConfigOverride.xcconfig` in the ~/Downloads/BuildLoop folder the first time the script is run, guides the user into adding their TeamID and then, in subsequent downloads, uses that previously created file
+3. For users of the [Build Select Script](../build/step14-post-loop-3.md#build-select-script), the script automatically generates the copy of  `LoopConfigOverride.xcconfig` in the ~/Downloads/BuildLoop folder the first time the script is run, guides the user into adding their TeamID and then, in subsequent downloads, uses that previously created file
 
 
 ![Directory structure for multiple clones using a single LoopConfigOverride file](img/loopconfigoverride-dir.svg){width="750"}

@@ -3,7 +3,7 @@
 To bring up the Pod/Pump Settings display, tap on the reservoir icon in the Heads Up Display or the image of the pump in the Loop settings screen.
 
 !!! note "Omnipod Eros vs DASH"
-    With the addition of DASH pods with Loop-dev, you will notice all reference to Eros pods continue to say Omnipod in both the documentation and the code.
+    With the addition of DASH pods with Loop 3, you will notice all reference to Eros pods continue to say Omnipod in both the documentation and the code.
 
     Documentation and screens in the app indicate DASH explicitly.
 

@@ -1,5 +1,9 @@
 ## Code Customizations
 
+**This page is only relevant is you used the [Mac Build](../build/overview.md) method to build your code**
+
+**At the current time, customizations for [Browser Build](../gh-actions/gh-overview.md) are not included in LoopDocs.**
+
 Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself. If you are an experienced builder - you know what to do.
 
 ## Build then Customize

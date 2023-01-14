@@ -1,4 +1,9 @@
+# Build the Loop App
+
 ## AFTER Loop 3 is Released
+
+THIS IS A DRAFT OF WHAT WILL BE "Build the Loop App"
+AFTER LOOP 3 IS released
 
 !!! bug "TO DO"
     Update graphics where words have changed
@@ -18,16 +23,11 @@
     * Watch in awe as you build your very own Loop app
 
 !!! question "FAQs"
-    * **Why does Xcode show a colorful spinning icon and not respond to me?** Unfortunately, sometimes Xcode gets confused and you need to force quit the application. See [Xcode Not Responding](../build/build_errors.md#xcode-not-responding) for instructions.
-    * Many more FAQs for building Loop are in-line with the steps that trigger the questions.
+    The FAQs for building Loop are in-line with the steps that trigger the questions.
 
 ## Build Video
 
-The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to build Loop 2.2.x including the steps required to update if you previously built. The steps are different now. The video may be worth watching, but once you've reviewed it, work through the new build process described on this page.
-
-## GitHub Build Loop
-
-If you previously used [GitHub Build](../gh-actions/gh-overview.md) to install Loop on this phone, you must make sure that automatically install is **disabled** in [TestFlight](../gh-actions/gh-deploy.md#install-testflight), or you will not be able to install on that phone with Xcode.
+The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to build Loop 2.2.x including the steps required to update if you previously built. With the release of Loop 3, the build process is slightly different.  The video may be worth watching, but once you've reviewed it, work through the new build process described on this page.
 
 ## Developer Mode
 
@@ -95,10 +95,6 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 ### Build Select Script
 
-* With the release of Loop 3, the build process is different and simpler
-    * Please read each step as if you are a new builder
-    * Don't assume you know what you are doing
-
 These instructions show each step needed to download Loop using the Build-Select script.
 
 !!! note "Optional"
@@ -112,16 +108,13 @@ These instructions show each step needed to download Loop using the Build-Select
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
 !!! bug "TO DO"
-    This uses a "dev" branch for the BuildLoop.sh - getting ready for the release.
+    BEFORE THE RELEASE - UPDATE THE SCRIPT NAME.
     
-    Post release, this will switch back to main branch.
-    
-    Despite what the dev branch of this script says about released code - your are in fact downloading **dev** branch and the very tip of the **dev** branch. Might not be lightly tested yet.
+    * While reviewing the draft, use the build Loop Dev Script and the build instructions on this page (ignore the extra message about checking out the commit - that won't be present after the release)
 
-
-```title="Copy and Paste to start the BuildLoop.sh script"
+```title="Copy and Paste to start the BuildLoopFixedDev.sh script"
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/dev/BuildLoop.sh)"
+  https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopFixedDev.sh)"
 ```
 
 Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.)
@@ -133,6 +126,9 @@ Read the screen (shown below).  Type 1 and return if you understand the warning 
 
 ![paste the script line into terminal](img/bss-01-initial-message.svg){width="700"}
 {align="center"}
+
+!!! bug "TO DO"
+    WHILE REVIEWING DRAFT - you are running the build Loop Dev Script and so the next graphic is not shown - skip ahead to the one below. Leaving words here because after release, it will be closer (although some figures will need to be updated).
 
 Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and return.
 
@@ -290,11 +286,6 @@ The final script message informs you that you can close the terminal window.
 
 
 ### Initial Xcode Screens
-
-!!! warning "watchOS Simulators"
-    Yes, watchOS simulators are required to build Loop. If Xcode asks if you want to download them - say yes. It's slow but you cannot build Loop without the simulator.
-
-    *   Tap on [New with Xcode 14](../build/build_errors.md#new-with-xcode-14) for more information
 
 First select Loop (Workspace) and confirm your phone is selected. Refer to the GIF below and follow the directions:
 

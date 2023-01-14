@@ -1,11 +1,11 @@
 ## Add CGM
 
-Now we need to add a CGM source so that Loop has BG data. From the Loop settings screen, select `Add CGM`.
+Now we need to add a CGM source so that Loop has glucose data. From the Loop settings screen, select `Add CGM`.
 
 ![img/add-cgm.png](img/add-cgm.png){width="550"}
 {align="center"}
 
-The standard selections available will be:
+The standard selections are:
 
 * Dexcom G6 (use this for Dexcom ONE)
 * Dexcom G5
@@ -39,7 +39,7 @@ When you change transmitters, you will need to select the `Delete CGM` button at
 
 If you don't update your transmitter ID when you change active transmitters, your Loop will not get CGM data from the Dexcom app.
 
-If you did add Share credential, Loop will get data from your Dexcom Share server and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID.
+If you did add Share credential, Loop will get data from your Dexcom Share server and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the glucose reading in Loop and should tip you off that maybe you forgot to update your transmitter ID.
 
 ## Dexcom G4
 
@@ -51,10 +51,18 @@ The Dexcom Share selection is primarily for people who wish to test Loop functio
 
 Dexcom Share is not available for Dexcom ONE CGM.
 
-## Spike Users
+## Libre and Other CGM
 
-Users who are using Spike app to access other CGM types (or to avoid using the Dexcom app), you will need to follow the directions contained within the Spike app in order to build/modify Loop with Spike. Loop does not natively support Spike app and does not currently plan to. You are responsible for modifying or adapting Loop in order to use Spike so that it is an available option as a CGM source.
+Loop 2 does not natively support Libre CGM. Those who want to use Libre will need to use an alternate fork, such as FreeAPS, or upgrade to Loop 3 and customize their code. 
 
-## Next Step: Configuration
+If you switch to Loop 3, there are additional CGM options:
 
-Now that you have added your CGM source, we need to complete the configuration and settings in your Loop. Please head over to the [Configuration page](configurations.md) for guidance with this important part of Loop's setup.
+* If you can upload your CGM to Nightscout, Loop 3 offers the option to use Nightscout as a CGM source.
+
+* There are instructions to add Libre support at this link [Code Customization: Add Libre to Loop 3](../../build/code_customization.md#modify-loop-to-use-libre)
+    * As a prerequisite, you must interface your iPhone to the Libre
+    * Links to several methods to directly interface an iPhone to Libre are on the same page: [Code Customization: Add Libre to iPhone](../../build/code_customization.md#add-libre-app-to-loop-phone)
+
+## Next Step: Loop 2 Configuration
+
+Now that you have added your CGM source, we need to complete the configuration and settings in your Loop. Please head over to the [Loop 2 Configuration page](configurations.md) for guidance with this important part of Loop's setup.

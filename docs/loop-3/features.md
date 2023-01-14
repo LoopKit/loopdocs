@@ -165,3 +165,21 @@ The author of this feature wrote this [Remote Carb/Bolus Guide](https://docs.goo
     * There is not a published limit, but consider limiting it to 1 per hour
     * When on cellular data, there may be further limitations to protect your data usage
  
+## Next Section moved from loop-3-overview.md page
+
+## New with Loop 3
+
+ The Loop 3 app, building off work by Tidepool and DIY contributors, provides a major upgrade in user safety, user experience and user interface with the same great Loop algorithm..
+
+ Here are some highlights:
+
+ * Onboarding protocol with guardrails to help configure settings
+ * Streamlined main screen display and user experience
+ * Better alerts and notifications
+ * Omnipod Dash compatibility
+ * Fingerstick blood glucose prompts when data is stale
+ * Non-pump insulin entry within the app
+ * Remote Carb/Bolus capability
+
+
+

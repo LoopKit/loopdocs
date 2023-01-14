@@ -8,7 +8,7 @@ Purchase information for these devices is found in [RileyLink Compatible Devices
 
 You can add or change the RileyLink compatible device in use without affecting the pump that is connected to the Loop app.  You can even have [more than one connected](#using-more-than-one-device), although only one will be used at a time.
 
-If you are connecting to a new Medtronic pump or switching between Medtronic and Omnipod, please follow the [Add Pump](../operation/overview.md#add-pump) instructions under Set up App.
+If you are connecting to a new Medtronic pump or switching between Medtronic and Omnipod, please follow the [Modify Pump](../loop-3/add-pump.md#modify-pump) instructions under Set up App.
 
 
 Change Connected Devices:
