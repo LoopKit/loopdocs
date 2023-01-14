@@ -1,5 +1,9 @@
 ## Updating Loop
 
+**This page is only relevant when building with a Mac and Xcode.**
+
+**For GitHub (Browser Build) updates, please see: [GitHub Update](../gh-actions/gh-update.md)**
+
 !!! info "Time Estimate"
 
     - 25 minutes, if Xcode and macOS are already updated to support the current or desired iOS
@@ -200,10 +204,7 @@ Once this completes, you should see this in your terminal.
 
 ## Ready to Build Loop
 
-As long as there are no errors, you are now ready to proceed to one of these pages:
-
-* Released Loop Code: [Build the Loop App: Developer Mode](step14.md#developer-mode)
-* Development Loop Code: [Loop-dev](step13.md)
+As long as there are no errors, you are now ready to proceed to [Build the Loop App: Developer Mode](step14.md#developer-mode)
 
 After building the new app, you may choose to return to this page and follow the instructions to [Delete Old Copies](#delete-old-copies). This is optional, but cleans up space on your computer.
 

@@ -18,11 +18,11 @@
 
 ## Pumps Compatible with Loop
 
-There are two types of pumps compatible with Loop.
+There are three types of pumps compatible with Loop.
 
 * [Older Medtronic pumps](step3.md#check-medtronic-pump-version)
 * [Omnipod Eros pumps](step3.md#omnipod-pumps)
-* [Omnipod DASH pumps](#omnipod-dash) - under development and active test
+* [Omnipod DASH pumps](#omnipod-dash)
 
 ## Check Medtronic Pump Version
 
@@ -167,7 +167,7 @@ Eros system has that PDM we all recognize from the last several years.
 
 Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in the pod, so there is no requirement for a RileyLink compatible device. 
 
-Loop is working with DASH pods in the **development branch only**. When that branch is ready for release, then it will become Loop 3.0. If you are an experienced looper and want to help test the next release, [please start here](step13.md), read carefully, follow the links and join zulipchat.
+Loop 3.0 and later works with DASH pods. If your version of Loop is 2.2.9 or earlier, you cannot use DASH pods.
 
 ![img/dash.png](img/dash.png){width="750"}
 {align="center"}

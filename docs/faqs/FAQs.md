@@ -1,17 +1,6 @@
 ## What do I need to Loop?
 
-To build and use Loop you need:
-
-- [Apple computer](../build/step1.md#macos)
-- [Compatible iPhone/iPod Touch](../build/step2.md)
-- [Compatible insulin pump](../build/step3.md): [Medtronic or Omnipod]
-- [Compatible CGM](../build/step4.md)
-- [RileyLink Compatible Device](../build/step5.md) (unless using Omnipod DASH)
-- [Apple Developer Membership](../build/step6.md)
-- [Xcode](../build/step8.md) (a free Apple application)
-
-![img/loop_gear.jpg](img/loop_gear.jpg){width="500"}
-{align="center"}
+Please click on the [Requirements](../intro/requirements.md) link.
 
 ## Can I download Loop from the App store?
 
@@ -47,27 +36,48 @@ If you'd rather break it up into several shorter bits of effort, the [`Build App
 
 Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.
 
-There are several options for the [RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) offering to sell their RileyLink for a reduced cost.
-
-The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days. That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.
+* If you have a pump the requires a [RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
+* Most people use a paid Apple Developer Account ($99/year)
+    * With a paid developer account, you can build using the [Browser Build](../gh-actions/gh-overview.md); no Mac required
+* If you build on a Mac using Xcode [Mac Build](../build/overview.md), you need a Mac or a PC with Intel chips on which you include a virtual Mac
 
 There are no other costs, ongoing or initial, to use Loop beyond what you already pay for your CGM, pump supplies and insulin.
 
+## RileyLink Options
+
+This is not required for DASH users.
+
+There are several options for the [RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) offering to sell their RileyLink for a reduced cost.
+
+## Free Developer Account Options
+
+The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days and you must use a computer with Xcode, [Mac Build](../build/overview.md). That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.
+
 ## Do I need to own my own Apple computer?
 
-You don't have to own your own Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later, when needed.
+You no longer need to own an Apple computer - see [Browser Build](../gh-actions/gh-overview.md).
+
+If you chose [Mac Build](../build/overview.md), then you still don't **have** to own an Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later, when needed.
 
 If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone [Compatible Computer](../build/step1.md#macos) and [Xcode Version](../build/step8.md#how-do-all-the-minimum-versions-relate-to-each-other)
 
 ## Can I use a PC or Windows computer to build?
 
-Yes, you can...sort of. There is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/) provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors, only Intel. Double check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) who can assist.
+You can build Loop using just a browser on any device: [Browser Build](../gh-actions/gh-overview.md).
+
+If you want to use [Mac Build](../build/overview.md), there is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/) provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors, only Intel. Double check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) who can assist.
 
 ## How often do I need to get on the computer for Loop?
 
-The short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)
+When you use the Browser Build method, you need to access a browser at least once every 90 days to [Update the Browser Build](../gh-actions/gh-update.md). This is simple enough to do on your phone. Several people are already working on automated methods so that won't be required, but a manual Build Actions step is required for now.
 
-The longer answer is that Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app update yourself with [update instructions here](../build/updating.md). In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.
+When you use Mac Build: the short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)
+
+Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to a browser or an Apple computer again to update your Loop app.  
+
+Loop updates are not available through the iPhone's app store...instead you do the app update yourself with [update instructions here](../build/updating.md) if using a Mac Build.
+
+In general, there are updates to Loop released a few times a year - these can occur more frequently after a major release.
 
 ## Will I need to build a new Loop if I switch between Medtronic and Omnipod?
 
@@ -76,6 +86,8 @@ No. Loop lets you move between different pump types from within the same Loop ap
 ## Can I use my Apple Developer account to build for others?
 
 If there is more than one Looper in the family, you only need to have one Apple Developer ID and only one annual payment. The adult who builds can use their Apple Dev ID to put the app on the Looper's phone.  The limit is 99 devices (phone and watch both count).  Unless it's a very large family, you should have no problem supporting everyone in your family. Building Loop on the second phone is much faster than the first one. It's a good idea to let someone else in the family know how to build and have access to your Apple password in case you're out of town. It's also a good idea to build Loop on a backup phone especially for travel. The Apple Developer ID and the Apple ID are two different things. PLEASE read this: [Loopers Need Their Own Apple ID](../../build/step6/#loopers-need-their-own-apple-id).
+
+If you used the [Browser Build](../gh-actions/gh-overview.md) method, you just add each Looper to your TestFlight test group and they get updates whenever you issue a new Build Action on github.
 
 ## What happens when I switch Apple Developer ID?
 
@@ -96,16 +108,16 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 There is a [whole page with detailed information about Medtronic pumps](../build/step3.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 
-You can also use some Omnipod pumps with Loop. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
+You can use some Omnipod pumps with Loop. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
 
-* Loop 2.2.x (the released code) supports Eros
-    * Refer to [Build Released Code](../build/step14.md)
-* The development version of Loop (soon to be released) supports both Eros and DASH
-    * This is not for beginners - please read the information (including links) on this page before building
-    * Refer to [Build Development Code](../build/step13.md)
-    
-Omnipod 5 is not supported by any version of Loop
-    
+Check your app version (for Loop or FreeAPS) by tapping on Loop settings and reading it from the top of the screen.
+
+* Version 2.2.x or earlier supports Omnipod Eros pumps
+* Version 2.3 or later supports Omnipod Eros and DASH pumps
+
+DASH pumps do not require a RileyLink compatible device.
+
+Omnipod 5 is not supported by any version of Loop.
 
 ## Can I pay someone else to do this?
 

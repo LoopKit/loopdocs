@@ -21,11 +21,11 @@
 
 Loop requires an iPhone or iPod touch. Loop uses the Apple Health app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. iPads do not have the Apple Health app, so iPads will not work with Loop.
 
-You need a minimum version of the mobile operating software, called the phone's "iOS", to be installed on your iPhone or iPod touch. Loop is compatible with iPhone and iPod touch devices with iOS 12.4 or newer. The next version of Loop will require a minimum of iOS 15.
+You need a minimum version of the mobile operating software, called the phone's "iOS", to be installed on your iPhone or iPod touch. Loop is compatible with iPhone and iPod touch devices with iOS 15.1 or newer.
 
 ### Compatible Devices
 
-These devices are compatible with iOS 14 through iOS 16.
+These devices are compatible with iOS 15.1 and newer iOS.
 
 - iPhone 14, all variants
 - iPhone 13, all variants
@@ -36,24 +36,12 @@ These devices are compatible with iOS 14 through iOS 16.
 - iPhone SE (3rd generation or later model; 2022 first release)
 - iPhone SE (2nd generation; 2020 first release)
 
-These devices are compatible with Loop 3, but cannot be upgraded to iOS 16. Loop 3 is the soon-to-be released version of Loop. This version of Loop requires iOS 15.
+These devices are compatible with Loop 3, which requires iOS 15.1, but cannot be upgraded to iOS 16.
 
 - iPhone 7, all variants
 - iPhone 6s, all variants - but note the "s"
 - iPhone SE (1st generation; 2016 first release)
 - iPod Touch, 7th generation
-
-### Devices Incompatible with Loop 3
-
-These devices are compatible with Loop 2.2.x but will not be compatible when Loop 3 is released.
-
-!!! Warning "Plan to Update Soon"
-
-    - You will not be able to build the next release of Loop on these devices
-
-- iPhone 5s, 6, 6+
-- iPod Touch, 6th generation
-
 
 ## Find Your Device's iOS
 
@@ -63,7 +51,7 @@ Your phone's iOS version can be found under the phone Settings -> General -> Abo
 
 Do not use any of the beta iOS versions. (Don't worry...if you don't know what that means, then you aren't using one.)
 
-### Developer Mode
+### Developer Mode - Mac Build Only
 
 With iOS 16 and watchOS 9, Apple added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
@@ -86,7 +74,7 @@ Make sure the battery on your phone is solid. Your phone will become a critical 
 * Consider buying a battery pack, keep it charged and add it to your travel bag
 
 !!! tip "Low Power Mode"
-    With newer iOS (14 and 15), some people have reported Loop continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others, have reported they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low power mode.  Otherwise, best practice is to avoid Low Power Mode.
+    With newer iOS (15 and 16), some people have reported Loop continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others, have reported they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low power mode.  Otherwise, best practice is to avoid Low Power Mode.
 
 ## Turn Off Automatic Updates
 
@@ -94,7 +82,7 @@ Apple provides updates regularly to the iOS.  Often, these updates include criti
 
 **Please be proactive - install updates as soon as the "Loop" all-clear is given.**
 
-If a limitation on your Mac prevents you from updating your phone to the latest iOS, please pay attention to security vulnerabilities.
+If a limitation on your Mac prevents you from updating your phone to the latest iOS, consider using the Browser Build method; start with this link: [GitHub Build Overview](../gh-actions/gh-overview.md).
 
 
 ### Why Turn off Automatic Updates?

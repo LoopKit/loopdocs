@@ -1,13 +1,4 @@
-## New Looper
-
-!!! danger "New Loopers Should NOT Use Loop-dev Before it is Released"
-    Once Loop-dev is released, these Loop 3 pages will be moved to the Set Up section of LoopDocs.
-
-    To make life easier for those of us preparing the new documentation, the wording on many pages in the Loop 3 section is set in the future - after the release.
-
-    This is **not** an invitation for brand-new loopers to build Loop-dev as their first looping adventure.
-
-Please review this page, _and the rest of the Loop 3 Section (which will become the Set Up section once Loop-dev is released),_ before pressing any buttons on your phone with your new Loop 3 app.
+## Onboarding
 
 As soon as your app builds on your phone, you are guided through the onboarding (set up) process. You will see information screens for each Therapy Setting and **must** acknowledge each screen. You can review those informational screens later by clicking the [Therapy Settings](therapy-settings.md) screen after a pump has been added.
 
@@ -106,7 +97,7 @@ If you select `Use Nightscout with Loop`:
 
 The next onboarding screens take you through the therapy settings one at a time.
 
-The therapy settings are the heart of how Loop makes predictions. If your settings are not correct, the predictions will not be correct.
+The therapy settings are the heart of how Loop makes predictions. If your settings are not close, the predictions will not be correct.
 
 * Therapy Settings
     * An informational graphic is shown before you are asked to enter or confirm each therapy setting

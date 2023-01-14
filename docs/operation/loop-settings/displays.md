@@ -1,11 +1,6 @@
 ## Loop Displays
 
-This section of the docs will go over the Loop displays available and what information they offer.  Information about your Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app. (Page last updated for Loop v2.2.4.)
-
-!!! warning "Loop 3 Displays"
-    * With Loop-dev (soon to be Loop 3), the displays can differ significantly from those in Loop v2.2.x.
-    * The charts and toolbar are similar, but even those have extra features.
-    * If you are using Loop-dev, please refer to [Loop 3 Displays](../../loop-3/displays_v3.md).
+This section of the docs describes the Loop displays available and what information they offer.  Information about Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app. (Page last updated for Loop v2.2.4.) For Loop 3, refer to [Loop 3 Displays](../../loop-3/displays_v3.md).
 
 ## Status Screen
 
@@ -175,8 +170,6 @@ The toolbar is where your inputs to the Loop behavior take place.  The individua
 
 * **Loop Settings** - click on this tool to make changes to any of your [Loop settings](../overview.md#configurations).
 
-## Next Step: RileyLink Menu
+## Next Step: Pump Settings
 
-You are almost there! One more Loop menu that you need to know about is the RileyLink (or compatible device) Menu. You can access your this menu (one for each Bluetooth connected device) by tapping on the pump/pod image in Loop settings (or HUD), look for the DEVICES section and tap on a "My Device Name" row that has a green slider. If you don't know what that means, check out the Pump Pairing section for Adding a Pump [Medtronic](mdt-pump.md#prepare-medtronic-pump) or [Omnipod](omnipod-pump.md#select-rileylink).
-
-Click [here](rileylink.md) to read more about what to expect to see when you tap on "My Device Name".
+The pump attached to Loop has a screen to display status and command options. For Loop 2, these are documented in [Loop 2 Pump Settings](pump-commands.md).

@@ -31,6 +31,8 @@ Which version of Xcode you install on your computer depends on the iOS version y
 
 Because of the complexity of these dependencies, **please read this entire page.**
 
+Or - look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no Mac computer required, no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required).
+
 ## Which version of Xcode do I need?
 
 First, choose a version of Xcode appropriate for your iOS device. Then, determine the minimum [macOS](step1.md#check-your-macos-version) version required for that Xcode version. Update to at least that minimum macOS version. Then follow the instructions to download and install Xcode (or update an existing installation):
@@ -77,9 +79,8 @@ The list below contains the **minimum** versions of [macOS](step1.md#check-your-
 
 **Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade.**
 
-**If you are building Loop-dev you need iOS 15 or iOS 16 and Xcode 14.1 or newer.**
 
-The list below is for the released version of code:
+The list below is for the released version of code (Loop 3.x):
 
 * For iOS 16 or greater, minimum [macOS](step1.md#check-your-macos-version) is 12.5
     * Minimum Xcode version is 14
@@ -87,20 +88,9 @@ The list below is for the released version of code:
     * For iOS 15.5 to 15.7, minimum Xcode version is 13.4.x
         * **WARNING:** A first build to a phone newly updated to iOS 15.7 cannot use Xcode 14.0; Xcode 13.4.1 and 14.0.1 (or greater) are fine
     * For iOS 15.4.x, minimum Xcode version is 13.3
-* For iOS 15.0 to 15.3.x, minimum [macOS](step1.md#check-your-macos-version) is 11.3
+* For iOS 15.1 to 15.3.x, minimum [macOS](step1.md#check-your-macos-version) is 11.3
     * For iOS 15.2.x to iOS 15.3.x, minimum Xcode version is 13.2
-    * For iOS 15.0.x, minimum Xcode version is 13.0
-* For iOS 14.5.x, minimum [macOS](step1.md#check-your-macos-version) is 11.0
-    * For iOS 14.5.x, minimum Xcode version is 12.5
-* If you built Loop using [Xcode 12.4 or earlier](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used)
-    - **Do NOT upgrade that phone to iOS 15** - the Loop app will immediately stop working
-    - First upgrade macOS and Xcode and rebuild on phone, then upgrade the iOS
-* For iOS 14.0 to 14.4.x, minimum [macOS](step1.md#check-your-macos-version) is 11.0 (M1/M2), 10.15.4 (Intel)
-    * For iOS 14.4.x, minimum Xcode version is 12.4
-    * For iOS 14.3.x, minimum Xcode version is 12.3
-    * For iOS 14.2.x, minimum Xcode version is 12.2
-    * For iOS 14.1.x, minimum Xcode version is 12.1
-    * For iOS 14.0.x, minimum Xcode version is 12.0
+    * For iOS 15.1.x, minimum Xcode version is 13.0
 
 ### Wikipedia Chart for Apple Versions
 

@@ -2,7 +2,7 @@
 
 The Loop user can directly enter carbs and boluses and turn on or off premeal or override settings from the watch, without needing to access the iPhone.
 
-![img/watch.png](../../img/watch_updated_loop.svg){width="300"}
+![img/watch.png](../../img/watch_updated_loop-3.svg){width="300"}
 {align="center"}
 
 There are two screens in the Loop watch app, shown in the bottom half of the graphic above. By swiping left or right, the other screen is displayed. The eventual (predicted) glucose feature, shown on both screens in the graphic can be turned off as a feature in Loop 3, but requires the user to rebuild. It is on by default. (Or will be shortly)

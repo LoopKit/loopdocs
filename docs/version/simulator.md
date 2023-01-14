@@ -2,53 +2,62 @@
 
 There are 2 main types of simulators users may want to build. Each of these require less up-front acquisition of hardware and may be desirable as a first step towards becoming a Looper.
 
-Please, review all the Build pages, even if you will be skipping some.
+Please, review all the Intro and Build pages, even if you will not complete them yet.
 
-## Build to a Simulated iPhone on a Computer
+## Mac Build to a Simulated iPhone
 
-* Need access to a mac or virtual computer, see [Compatible Computer](../build/step1.md)
-* Build pages you can skip
+This simulator requires access to a Mac or virtual computer, see [Compatible Computer](../build/step1.md)
+
+* Build pages to review, but complete later
     * Compatible iPhone/iPod
     * Compatible Pump
     * Compatible CGM
-    * Order a RileyLink
-    * Apple Developer Program
+    * Order a RileyLink (not required for Omnipod DASH)
+    * Apple Developer Program (can use a free account)
 * Follow [Download Xcode](../build/step8.md)
 * Follow [Xcode Preferences](../build/step9.md) but can skip the `Add Apple ID` section
-* Follow [Build the Loop App](../build/step14.md) but with the following variations:
-    * When told to select ["Your Phone" in this section](../build/step14.md#select-loop-workspace-and-your-phone), instead choose a simulator
-    * Follow the instructions in the [Build to a Simulator](../build/step14.md#build-to-a-simulator)
-* Use the simulated iPhone on the computer and [set up the app](../operation/overview.md) as desired
+* Follow [Build the Loop App](../build/step14-post-loop-3.md) but with the following variation:
+    * Skip the section on Developer Mode (that is only when building to a phone)
+    * Download the code as directed
+    * Choose to Sign Manually in the [Signing Targets](../build/step14-post-loop-3.md#signing-targets) section
+    * Continue with the [Build Free Loop](../build/build-free-loop.md) page
+    * Select a simulator (not your phone) when told to do so
+    * Complete the [Build to a Simulator](../build/build-free-loop.md#build-to-a-simulator) section
+* Use the simulated iPhone and [set up the app](../loop-3/loop-3-overview.md) as desired
 
-## Build to a Real iPhone and use a Simulated Pump and CGM
+## Build to a Real iPhone
 
-### Loop Dev ONLY
+### Common Requirements
 
-Loop dev (which will be the next released version of Loop) can be built with the same prerequisites as [Released Loop](#released-loop).
+This simulator requires a compatible phone, see [Compatible iPhone/iPod](../build/step2.md)
 
-Loop dev can also be built without using a Mac computer using GitHub Actions. If you choose this method to build and evaluate the app, it has slightly different prerequisites.
-
-* Need access to an iPhone or iPod, see [Compatible iPhone/iPod](../build/step2.md)
-* Paid Apple Developer Account ($99/year), see [Enroll in Apple Developer Program](../build/step6.md)
-* Follow these instructions instead of the Build Directions in LoopDocs
-    * [Build Loop dev using GitHub Actions](../gh-actions/gh-overview.md)
-
-### Released Loop
-
-* Need access to a mac or virtual computer, see [Compatible Computer](../build/step1.md)
-* Need access to an iPhone or iPod, see [Compatible iPhone/iPod](../build/step2.md)
-* Pages you can skip
+* Pages to review, but complete later
     * Compatible Pump
     * Compatible CGM
-    * Order a RileyLink
-    * Apple Developer Program
+    * Order a RileyLink (not required for Omnipod DASH)
+
+### Browser Build (Loop 3)
+
+* Best to configure building using GitHub Actions with a computer or tablet. It does not need to be a Mac.
+
+* Complete the steps in Browser Build tab, starting with [GitHub Build Overview](../gh-actions/gh-overview.md)
+
+
+### Mac Build (Loop 2 or later)
+
+* Need access to a mac or virtual computer, see [Compatible Computer](../build/step1.md)
+
+* You can use a Free Apple Developer account
 * Follow [Download Xcode](../build/step8.md)
 * Follow [Xcode Preferences](../build/step9.md)
     * If you have a developer ID, use it in the `Add Apple ID` step and follow the normal build directions
     * If you do not have a developer ID, use the [Free Developer Account](../build/step9.md#free-developer-account) instructions in the `Add Apple ID` section
-* When Building, use the [Build Loop App](../build/step14.md) page and select your phone`
-    * If you do not have a developer ID, be sure to follow the [Free Account](../build/step14.md#free-account) instructions
+* Follow [Build the Loop App](../build/step14-post-loop-3.md) using the Free Account instructions
+    * If your phone is running iOS 16, you must enable Developer Mode
+    * Download the code as directed
+    * Choose to Sign Manually in the [Signing Targets](../build/step14-post-loop-3.md#signing-targets) section
+    * Continue with the [Build Free Loop](../build/build-free-loop.md) page
 * Once the App is on your phone
-    * Follow the [set up the app](../operation/overview.md) instructions but choose a simulated pump
-    * If you have a Dexcom CGM, you can select Dexcom Follow for the CGM; otherwise, you can enter glucose values in Apple Health and Loop will pick up the values
+    * Follow the [set up the app](../loop-3/loop-3-overview.md) instructions on your phone but choose a simulated pump
+    * If you have a Dexcom CGM, you can select Dexcom Follow or Nightscout for the CGM; otherwise, you can enter glucose values in Apple Health and Loop will pick up the values
 

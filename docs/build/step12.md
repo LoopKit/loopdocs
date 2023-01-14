@@ -69,8 +69,19 @@ Often, the best answer to your question is sending a link to the answer in LoopD
 
 If you've searched the docs and read relevant info already, please include that in your post or your reply. That way you don't get linked back to the part you are confused about. And if you have already read the specific section a mentor just linked, be specific about why your problem is not addressed by that link.  Or just say "I'm confused when the doc says this". Letting us know when these docs can be improved is very useful.
 
-## Next Step: Build Loop App
+## Next Step
 
-Now you are ready to [Build the Loop App](step14.md) for the released version of the code. This is the version new Loopers should start with.
+Now you are ready to build or continue with setting up the Loop app.
 
-If you understand what a development branch is and want to build the development branch for Loop or the FreeAPS fork, use this page [Loop-dev](step13.md), to build and test the development branch of the app. The Loop dev branch will be released as Loop 3.
+### Return to Set Up
+
+If you are a new looper who got to these pages from the Set Up app page - congratulations. Now that you've reviewed these introductory pages, please continue with the [Brand New Loopers](../loop-3/loop-3-overview.md#brand-new-loopers) section of the Set Up Overview page.
+
+### Browser Build
+
+Click here if you want to build with github build actions: [Browser Build](../gh-actions/gh-overview.md)
+
+### Mac Build:
+
+Click here if you want to build on a Mac using Xcode: [Mac Build](../build/overview.md)
+

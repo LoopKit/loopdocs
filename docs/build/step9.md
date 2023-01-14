@@ -77,6 +77,6 @@ If you enrolled in the paid account already and have confirmation that your acco
 
 You are now done setting up Xcode.  Great job!  You will not need to redo the account setup steps on any subsequent builds or updates of your Loop app.  Xcode will remember these settings.
 
-## Next Step: Test Settings
+## Next Step: Build Loop
 
-Now you are ready to [Test Your Settings](step10.md).
+Now you are ready to [Build Loop](step14.md).
