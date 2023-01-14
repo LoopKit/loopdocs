@@ -1827,6 +1827,26 @@
     Add Identifiers for Loop
   </a>
   
+    <nav class="md-nav" aria-label="Add Identifiers for Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-use-of-actions-tab" class="md-nav__link">
+    First Use of Actions Tab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-identifiers" class="md-nav__link">
+    Add Identifiers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2478,6 +2498,26 @@
     Add Identifiers for Loop
   </a>
   
+    <nav class="md-nav" aria-label="Add Identifiers for Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-use-of-actions-tab" class="md-nav__link">
+    First Use of Actions Tab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-identifiers" class="md-nav__link">
+    Add Identifiers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3012,9 +3052,8 @@
 <p>This is a good place to pause if you need to. Just note where you are on the page so you can return later.</p>
 </div>
 <h2 id="add-identifiers-for-loop">Add Identifiers for Loop<a class="headerlink" href="#add-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Near the top middle of your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>, there is an Actions tab.</p>
-<ol>
-<li>
+<p>Near the top middle of your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>, there is an Actions tab. If you have used Actions on this <abbr title="contains project files and each file's revision history">repository</abbr> before, skip ahead to <a href="#add-identifiers">Add Identifiers</a>.</p>
+<h3 id="first-use-of-actions-tab">First Use of Actions Tab<a class="headerlink" href="#first-use-of-actions-tab" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
 <ul>
 <li>The first time you click on <code>Actions</code> with this <abbr title="contains project files and each file's revision history">repository</abbr> you'll be informed that <code>Workflows aren't being run on this forked repository</code> as shown in the graphic below</li>
@@ -3023,20 +3062,24 @@
 <p align="center"><img alt="workflows disabled screen" src="../img/gh-workflows-disabled.png" width="700" /></p>
 </li>
 </ul>
-</li>
-<li>
-<p>The workflows are now displayed: look at the list on the left side as shown in the graphic below (you can dismiss the Actions Enabled message using the X near the upper right side)</p>
+<p>The workflows are now displayed: look at the list on the left side as shown in the graphic below. (You can dismiss the Actions Enabled message using the X near the upper right side if it appears).</p>
 <p align="center"><img alt="workflows displayed" src="../img/gh-workflows-enabled.png" width="700" /></p>
+<h3 id="add-identifiers">Add Identifiers<a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Refer to the graphic below for the numbered steps:</p>
+<ol>
+<li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>On the left side, click on "Add Identifiers"</li>
+<li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
+<li>Once <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is released, you will see <code>main</code> instead of <code>dev</code></li>
+<li>It is optional to change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> (select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+</ul>
 </li>
 <li>
-<p>Select "Add Identifiers".</p>
+<p>Tap the green button that says "Run workflow".</p>
+<p align="center"><img alt="add identifiers using github actions" src="../img/action-02-add-identifiers.svg" width="700" /></p>
 </li>
 <li>
-<p>On the right side, click "Run Workflow" to show a drop-down menu and then tap the green button that says "Run workflow".</p>
-<p align="center"><img alt="placeholder alt-text for graphic not prepared: add identifier in process" src="img/add-identifier.png" width="700" /></p>
-</li>
-<li>
-<p>Wait, it seems like nothing happens but then you will see the busy icon followed by a green checkmark indicating the workflow succeeded as displayed in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> above.</p>
+<p>Wait a minute or two for the action to finish</p>
 <ul>
 <li>If this action fails, head over to <a href="../gh-errors/#action-add-identifiers-errors">Action: Add Identifiers Errors</a></li>
 <li>Once you've resolved the error, repeat the Action: Add Identifiers step</li>
@@ -3065,7 +3108,7 @@
 <li>WatchApp</li>
 <li>WatchAppExtension</li>
 </ul>
-<p>If you have built using <abbr title="program used to build an app">Xcode</abbr>, then at least the Loop identifier will appear with the name <code>XC com.TEAMID.loopkit.Loop</code>. There may be other names that start with XC and have other ending words; they can be ignored. Only the six listed above are of interest. The WatchAppExtension may be all in lower case if it starts with XC. If you are bothered by a lot of extra identifiers, see <a href="#delete-identifiers">Delete Identifiers</a>. But they don't hurt anything.</p>
+<p>If you have built using <abbr title="program used to build an app">Xcode</abbr>, then at least the Loop identifier will appear with the name <code>XC com.TEAMID.loopkit.Loop</code>. There may be other names that start with XC and have other ending words; they can be ignored. Only the six listed above are of interest. If you are bothered by a lot of extra identifiers, see <a href="#delete-identifiers">Delete Identifiers</a>. But they don't hurt anything.</p>
 <p>The graphic below shows the identifiers before (top portion) and after (lower portion) the Action: Add Identifiers is executed for an individual who previously built Loop 2.2.9. The green rectangles highlight the four identifiers that need to be updated before moving on to the Create Certificates step.</p>
 <p align="center"><img alt="identifier before and after action if used xcode before" src="../img/app-group-id-xc-build.svg" width="600" /></p>
 <p>If you never built with <abbr title="program used to build an app">Xcode</abbr>, you will be associating the Loop App Group you just created with the Loop identifier and adding a time sensitive capability to the Loop identifier.</p>
@@ -3185,21 +3228,44 @@
 </li>
 </ul>
 <h2 id="create-certficates">Create Certficates<a class="headerlink" href="#create-certficates" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Refer to the graphic below for the numbered steps:</p>
 <ol>
-<li>Go back to the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> in GitHub.</li>
-<li>Select "Create Certificates" (on the left).</li>
-<li>On the right side, click "Run Workflow" to show a drop-down menu and then tap the green button that says "Run workflow".</li>
+<li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>On the left side, click on "Create Certificates"</li>
+<li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
+<li>Once <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is released, you will see <code>main</code> instead of <code>dev</code></li>
+<li>It is optional to change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> (select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+</ul>
+</li>
 <li>
-<p>Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.</p>
-<p align="center"><img alt="placeholder alt-text for graphic not prepared: create certificates succeeded" src="img/create-certificates.png" width="700" /></p>
+<p>Tap the green button that says "Run workflow".</p>
+<p align="center"><img alt="create certificates using github actions" src="../img/action-03-create-certs.svg" width="700" /></p>
+</li>
+<li>
+<p>Wait a minute or two for the action to finish</p>
+<ul>
+<li>If this action fails, head over to <a href="../gh-errors/#action-create-certificates-errors">Action: Create Certificates Errors</a></li>
+<li>Once you've resolved the error, repeat the Actions Add Identifiers and then Create Certificates. (The Add Identifiers might not be required but it is fast and should be done as a matter of routine.)</li>
+</ul>
 </li>
 </ol>
 <h2 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Refer to the graphic below for the first four steps:</p>
 <ol>
 <li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
-<li>Select "Build Loop".</li>
-<li>On the right side, click "Run Workflow" to show a drop-down menu, choose your <abbr title="version of code within a single repository or workspace repository">branch</abbr> (dev is right until <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is released) and then tap the green button that says "Run workflow".</li>
-<li>Wait a minute or two to make sure there is not an early failure<ul>
+<li>On the left side, click on "Build Loop".</li>
+<li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
+<li>Once <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is released, you will see <code>main</code> instead of <code>dev</code></li>
+<li>It is optional to change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> (select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+</ul>
+</li>
+<li>
+<p>Tap the green button that says "Run workflow".</p>
+<p align="center"><img alt="build loop using github actions" src="../img/action-04-build-loop.svg" width="700" /></p>
+</li>
+<li>
+<p>Wait a few minutes to make sure there is not an early failure</p>
+<ul>
 <li>If this action fails, head over to <a href="../gh-errors/#action-build-loop-errors">Action: Build Loop Errors</a></li>
 <li>Once you've resolved the error, it's a good idea to repeat all three steps in this order:<ul>
 <li>Add identifiers</li>
