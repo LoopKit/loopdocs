@@ -379,7 +379,7 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 
 ### Carthage Error
 
-You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](step14-post-loop-3.md#initial-xcode-screens) Instructions.
+You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](step14.md#initial-xcode-screens) Instructions.
 
 Or maybe you are trying to build using an old download; some older versions did require carthage. Best practice is to download new code.
 

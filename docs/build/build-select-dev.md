@@ -119,7 +119,7 @@ Verify the word "error" is not shown in the terminal and proceed by typing 1 and
 
 ## Sign and Build
 
-The sign and build instructions are the same as for the released code, [Sign Targets](step14-post-loop-3.md#sign-targets).
+The sign and build instructions are the same as for the released code, [Sign Targets](step14.md#sign-targets).
 
 ## Update Loop-dev
 
