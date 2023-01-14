@@ -10,8 +10,6 @@ There is a lot of interest in being a "tester" of dev right now, because the Omn
 
 Please read this entire page before using any version of Loop other than the released code.
 
-Compared to the last release, v2.2.9, there have been architectural upgrades of a new user interface, improved notifications and alerts, and some new features.  There is a formal onboarding process and more safety features. Updated documentation is a work-in-progress located under the [Loop 3](../loop-3/loop-3-overview.md) tab of LoopDocs.
-
 ## What are branches?
 
 There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.
