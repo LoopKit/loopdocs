@@ -12,7 +12,7 @@ Loop can be connected to the following CGMs:
 * CGMs that reside on the same phone (internet not required)
     * [Dexcom G5](#dexcom-g5-g6-one)
     * [Dexcom G6](#dexcom-g5-g6-one) (use this for Dexcom ONE)
-    * [Dexcom G7](#dexcom-g7) **(Loop-dev only)**
+    * [Dexcom G7](#dexcom-g7) **(Loop 3 only)**
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
         * **You must [add pump](add-pump.md) first**

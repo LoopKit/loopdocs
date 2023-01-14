@@ -64,6 +64,9 @@ If you need help with your app, the mentors need more information. Please issue 
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
+!!! danger "Loop dev after release of Loop 3"
+    Now that Loop 3 is released, this script will change - please do not use it right now.
+
 ```title="Copy and Paste to start the BuildLoopFixedDev.sh script"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopFixedDev.sh)"
 ```
@@ -163,5 +166,9 @@ This new terminal window opens in the LoopWorkspace folder needed to perform `gi
 The version of code that shows up under the Loop Settings screen will remain fixed until Loop-dev is released. In order to identify which version of dev you have on your phone, you need the commit.
 
 The commit is identified by a 7-digit alphanumeric code.  That code was also appended to the folder name of the downloaded code under Downloads/BuildLoop as shown in the graphic above.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report, refer to [Support](../loop-3/settings.md#support) for instructions on issuing a Loop Report. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.
+
+
+!!! danger "Loop dev after release of Loop 3"
+    Now that Loop 3 is released, this script may change - please do not use it right now.
 
 When you ran the BuildLoopFixedDev script, the instructions informed you of the commit.

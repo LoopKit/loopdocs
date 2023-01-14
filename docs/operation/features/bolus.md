@@ -1,6 +1,6 @@
 ## Bolus
 
-This page was updated with information for Loop-dev which will soon be released as Loop 3.
+This page was updated with information for Loop 3.
 
 ### Loop 2 and 3 Differences
 

@@ -29,6 +29,8 @@ Some of the reasons listed below cause Loop to go Red and stay Red until you fix
 
 ### Lost Pod Information
 
+We think this was fixed with Loop 3. If you are running Loop 2.2.x or FreeAPS, this can happen to you.
+
 There is a new reason for a red loop that is not well understood.  Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored CGM information as well as the stored pump information.
 
 !!! warning "Be Careful with Phone Reboots"
@@ -47,7 +49,7 @@ This is a copy of what was posted on Facebook by Matthew Kitchin.
 
     The exact cause is still under investigation. If this occurs, you will have to replace your current pod. There is no way to recover the active Pod if Loop/FreeAPS reverts to old settings and think the current Pod is expired/needing to be replaced.
 
-    Obviously reboots do need to happen for things such as iOS updates. For Pod users, if possible, I would plan to do them at the end of a Pod cycle when a Pod change is already planned. This applies to current Master Loop, Loop-dev and FreeAPS.
+    Obviously reboots do need to happen for things such as iOS updates. For Pod users, if possible, I would plan to do them at the end of a Pod cycle when a Pod change is already planned. This applies to current Loop 2.2.x and FreeAPS. There have been no reports of this with Loop 3. A modification was made to Loop 3 that is thought to resolve this concern.
 
     **Don't panic:** This doesn't happen on every reboot. Until a fix is found, just don't reboot if you don't need to, and try to time it just before a pod change if you can. In case it is related to phone storage, keep plenty of space available on your phone.
 

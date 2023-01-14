@@ -43,8 +43,6 @@ If you choose to come into a dev branch build, you need to be aware that dev may
 
 If you choose to use a dev build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy Loopdocs page updated regularly with current "dev updates"...that's just not the way dev branch works (at least normally).
 
-When there is a big change in user interface, some LoopDocs information will be available before the release of the Loop-dev code. The transition from Loop 2.2.x to Loop 3 is one of those times. When released, Loop-dev will start the Loop 3 version numbering. But - it is still Loop-dev until that release.
-
 ### Subscribe to the Zulipchat channels
 
 Use [Zulipchat](https://loop.zulipchat.com) forums for Loop. This forum has several "streams" of conversations depending on interest. I highly recommend following all the streams so you do not miss conversations.  You can select by stream and by topic within a stream to focus on a given conversation. If you are using dev branch, you must be in the #development stream.  If you want to know when LoopDocs gets updated, follow the #documentation stream. Code changes are called "commits" in GitHub. The #github stream will have an automated post whenever a new commit is made and it will give a brief line description of the commit.

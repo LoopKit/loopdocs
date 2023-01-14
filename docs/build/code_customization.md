@@ -38,13 +38,13 @@ Be sure to read the [Instructions for Finding the Lines](code_customization.md#i
 
     * If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help
 
-!!! abstract "Loop 2.2.x vs Loop 3 (Loop-dev)"
+!!! abstract "Loop 2.2.x vs Loop 3"
 
-    * Loop-dev is still being tested - but when it is released it will be Loop 3.
-    * To simplify the amount of changes required after the release, the labels indicate Loop 2.2.x or Loop 3, if needed.
-    * Users of Loop Master refer to the Loop 2.2.x examples.
-    * Users of Loop-dev refer to the Loop 3 examples.
-        * Note that some changes are in a different file for Loop-dev (part of the architecture upgrade for the app).
+    * Loop 3 has been released but there are still many people using older code.
+    * The labels below indicate Loop 2.2.x or Loop 3, if they are different
+    * Users of Loop 2.2.9 (or earlier) or FreeAPS should refer to the Loop 2.2.x examples.
+    * Users of Loop 3 should refer to the Loop 3 examples.
+        * Note that some changes are in a different file for Loop 3 (part of the architecture upgrade for the app).
 
 ## Build-Time Features
 
@@ -148,7 +148,7 @@ All other icons and directory names match.
 Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
 !!! warning "Loop 3"
-    For Loop 3 (under test as Loop-dev), this controls the authorization requirement to modify Therapy Settings as well as to confirm bolus delivery.
+    For Loop 3, this controls the authorization requirement to modify Therapy Settings as well as to confirm bolus delivery.
 
 ``` title="Key_Phrase"
 canEvaluatePolicy(.deviceOwnerAuthentication
@@ -289,14 +289,11 @@ _Code After Modification to 50% to 200% by steps of 5%_
     private let allScaleFactorPercentages = Array(stride(from: 50, through: 200, by: 5))
 
 
-## Modify Maximum Carb Entry
+## Modify Maximum and Warning Carb Entry
 
 ### Loop 3 Carb Entry Variables
 
-During the development of Loop 3 (while still Loop-dev), a warning screen was added to the carb entry interface when the entered meal is between 100 and 250 grams, inclusive. The variables that control when the warning screen is shown and that limit the overall maximum for carb entries are stored in the LoopConstants file, where they are used by both direct interaction with the Loop phone and by the remote carb entry checking code.
-
-Newer versions of Loop-dev use this updated method to modify the warning level and / or the maximum level.
-
+During the development of Loop 3, a warning screen was added to the carb entry interface when the entered meal is between 100 and 250 grams, inclusive. The variables that control when the warning screen is shown and that limit the overall maximum for carb entries are stored in the LoopConstants file, where they are used by both direct interaction with the Loop phone and by the remote carb entry checking code.
 
 ``` title="Key_Phrase"
 let warningCarbEntryQuantity =
@@ -304,7 +301,7 @@ let warningCarbEntryQuantity =
 
 If you do not find the Key Phrase `warningCarbEntryQuantity` in the code - you do not have Loop 3 code. Use the [Loop 2.2.x Max Carb Entry](#loop-22x-max-carb-entry) version.
 
-If you do find that Key Phrase in the code, you have the newer version of Loop-dev. The max and warning values can be modified in LoopConstants. The variable `maxCarbEntryQuantity` is found in LoopConstants, two lines earlier than `warningCarbEntryQuantity`.
+If you do find that Key Phrase in the code, you have the newer version of Loop 3. The max and warning values can be modified in LoopConstants. The variable `maxCarbEntryQuantity` is found in LoopConstants, two lines earlier than `warningCarbEntryQuantity`.
 
 _Code Before Modification_
 
@@ -332,7 +329,7 @@ _Code After Modification to warn if entry is between 201 and 300g_
 
 ### Loop 2.2.x Max Carb Entry
 
-Older versions of Loop-dev and Loop v2.2.x must use the following method for modifying maximum carb entry:
+Users of Loop 2.2.9 and earlier or FreeAPS must use the following method for modifying maximum carb entry:
 
 Some people want to limit the maximum number of carbs that can be entered in one entry – especially for children or folks who eat lower carb. This helps prevent accidental typos, e.g., entry of 115 g instead of 15 g for a meal.
 
@@ -393,11 +390,9 @@ _Code After Modification to add 0.35 U_
 
 ## Modify the Guardrails
 
-The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-settings) are for Loop 3 (Loop-dev) only.
+The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-settings) are for Loop 3 only.
 
-If you build Loop-dev over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app will crash when you try to onboard.
-
-The solution (until this is fixed) is to customize and lower the minimum value to be at or below the value you have currently set.  Rebuild the app with the modified settings and you should be able to continue the onboarding process.
+If you build Loop 3 over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.
 
 
 ``` title="Key_Phrase"
@@ -420,11 +415,9 @@ and
 
 Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
 
-If fixing a crashed app during onboarding, you must lower the 87 to match or be less than what is in your old settings.
-
 ## Adjust Future Carbs Time Interval
 
-Loop 3 (Loop-dev) limits the future time change allowed to 1 hour.
+Loop 3 limits the future time change allowed to 1 hour.
 
 ``` title="Key_Phrase"
 cell.datePicker.maximumDate = date.addingTimeInterval
@@ -664,7 +657,7 @@ For Loop 2.2.x:
 For Loop 3:
 
 1. Make sure Xcode is closed
-1. Use Finder to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-dev-230107-1022_84afcfb)
+1. Use Finder to navigate to Downloads / BuildLoop and open the folder with the most recent date (e.g., Loop-230114-1153)
 1. Double-click on the LoopWorkspace folder
 1. Double-click on the OverrideAssetsLoop.xcassets folder
 1. Double-click on the AppIcon.appiconset folder
@@ -723,8 +716,7 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 ### Custom Type One LoopPatches
 
-Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop 3 (main branch) - note that the README file has not been updated post release of Loop 3 - it will be. You can use the same instructions that worked just before the release when branch of Loop was dev. Ignore the instruction on that page for downloading fresh loop-dev. Please download fresh main instead.
-
+Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop 3 (main branch) - note that the README file has not been updated post release of Loop 3 - it will be. You can use the same instructions that worked just before the release when branch of Loop was dev. Ignore the instruction on that page for downloading fresh code with BuildLoopFixedDev.sh. Please download fresh Loop 3 (main) code instead.
 
 Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop 3.
 

@@ -174,7 +174,7 @@ Look for more details as shown in this graphic:
 
 Experienced Loop builders may say - but I thought we did not use carthage anymore.
 
-* When building Loop 3 (Loop-dev), carthage is no longer used and Loop will build without installing Rosetta
+* When building Loop 3, carthage is no longer used and Loop will build without installing Rosetta
 * When building Loop v2.2.9 or FreeAPS (released and development versions), carthage is still used but the required carthage version is included in the download; so the user does not need to separately install a particular version of carthage 
 
 ### Run Destination is Not Valid; Failed to Prepare the Device
@@ -201,7 +201,7 @@ _Package.resolved file is corrupted or malformed; fix or delete the file to cont
 ![package corrupted or malformed error](img/xcode-needs-to-be-updated.jpeg){width="600"}
 
 
-This error is new with Loop-dev, which uses Package Dependencies.
+This error is new with Loop 3, which uses Package Dependencies.
 
 There are 2 problems shown here
 
@@ -216,7 +216,7 @@ Update Xcode, which may require you to update macOS.
 
 ### Many Search 1.4.3 for this Error
 
-This error is new with Loop-dev, which uses Package Dependencies.
+This error is new with Loop 3, which uses Package Dependencies.
 
 * If you notice a red x in Xcode (as circled in the graphic below)
     - Click on the red x to show the error in the left pane

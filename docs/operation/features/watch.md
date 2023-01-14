@@ -22,19 +22,19 @@ A loop complication exists to show BG on the watch face but the update rate is l
 
 ## Eventual Glucose on Watch
 
-One feature on the Watch app that can be turned on and off with Loop 3 (Loop-dev) is the eventual glucose display on the watch. That display is shown on the graphic above with current glucose on left, trend arrow beside it and eventual (from prediction) glucose on the right.
+One feature on the Watch app that can be turned on and off with Loop 3 is the eventual glucose display on the watch. That display is shown on the graphic above with current glucose on left, trend arrow beside it and eventual (from prediction) glucose on the right.
 
 If this is a feature you want turned off, please follow the directions on the Code Customization page (found under the Version tab): [Build Time Features](../../build/code_customization.md#build-time-features).
 
 ## Adding a Watch to Existing Loop
 
-If you add an Apple Watch after building Loop using Xcode on a computer, you will need to pair your watch to your iPhone and then rebuild Loop to enable the Loop watch app to show up as an available watch app. If you use the new (Loop-dev only) [Build Loop using GitHub Actions](../../gh-actions/gh-overview.md) process that enables building without needing a Mac, the watch app should work so long as you have the watch paired to your phone when you install from TestFlight.
+If you add an Apple Watch after building Loop using Xcode on a computer, you will need to pair your watch to your iPhone and then rebuild Loop to enable the Loop watch app to show up as an available watch app. If you use the new, Loop 3 only, [Build Loop using GitHub Actions](../../gh-actions/gh-overview.md) process that enables building without needing a Mac, the watch app should work so long as you have the watch paired to your phone when you install from TestFlight.
 
 ## Watch Hardware and OS Requirements
 
-Loop is currently supported with all released versions of the Apple Watch and Apple watchOS 4.1 and newer.
+Loop 2.2.9 and FreeAPS is currently supported with all released versions of the Apple Watch and Apple watchOS 4.1 and newer.
 
-The next version of Loop, currently Loop-dev, will require newer versions of the watch and require watchOS 8 as a minimum.
+Loop 3 requires newer versions of the watch and requires watchOS 8 as a minimum.
 
 ### watchOS 8 Compatibility:
 

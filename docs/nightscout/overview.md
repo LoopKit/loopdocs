@@ -41,7 +41,7 @@ There used to be a lot of Nightscout information found only in LoopDocs, but tha
 
 ## Nightscout with Loop
 
-This page provides general discussion about the Nightscout display, as well as some Loop-specific display information. Over time, interactions between Loop and Nightscout were improved. The information on this page has been updated for Loop-dev and Nightscout version 14.2.6 (or later). Older versions may exhibit some differences in display of Loop information on the Nightscout site.
+This page provides general discussion about the Nightscout display, as well as some Loop-specific display information. Over time, interactions between Loop and Nightscout were improved. The information on this page has been updated for Loop 3 and Nightscout version 14.2.6 (or later). Older versions may exhibit some differences in display of Loop information on the Nightscout site.
 
 ### Loop Uploads to Nightscout
 
