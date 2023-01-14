@@ -362,27 +362,38 @@ Once all six secrets have been added to your LoopWorkspace, you are done with Se
 
 ## Add Identifiers for Loop
 
-Near the top middle of your LoopWorkspace fork, there is an Actions tab.
+Near the top middle of your LoopWorkspace fork, there is an Actions tab. If you have used Actions on this repository before, skip ahead to [Add Identifiers](#add-identifiers).
 
-1. Click on the "Actions" tab of your LoopWorkspace repository.
-    * The first time you click on `Actions` with this repository you'll be informed that `Workflows aren't being run on this forked repository` as shown in the graphic below
-    * Tap on the green button that says: `I understand my workflows, go ahead and enable them`
+### First Use of Actions Tab
 
-        ![workflows disabled screen](img/gh-workflows-disabled.png){width="700"}
-        {align="center"}
+Click on the "Actions" tab of your LoopWorkspace repository.
 
-1. The workflows are now displayed: look at the list on the left side as shown in the graphic below (you can dismiss the Actions Enabled message using the X near the upper right side)
+* The first time you click on `Actions` with this repository you'll be informed that `Workflows aren't being run on this forked repository` as shown in the graphic below
+* Tap on the green button that says: `I understand my workflows, go ahead and enable them`
 
-    ![workflows displayed](img/gh-workflows-enabled.png){width="700"}
+    ![workflows disabled screen](img/gh-workflows-disabled.png){width="700"}
     {align="center"}
 
-1. Select "Add Identifiers".
-1. On the right side, click "Run Workflow" to show a drop-down menu and then tap the green button that says "Run workflow".
+The workflows are now displayed: look at the list on the left side as shown in the graphic below. (You can dismiss the Actions Enabled message using the X near the upper right side if it appears).
 
-    ![placeholder alt-text for graphic not prepared: add identifier in process](img/add-identifier.png){width="700"}
+![workflows displayed](img/gh-workflows-enabled.png){width="700"}
+{align="center"}
+
+### Add Identifiers
+
+Refer to the graphic below for the numbered steps:
+
+1. Click on the "Actions" tab of your LoopWorkspace repository
+1. On the left side, click on "Add Identifiers"
+1. On the right side, click "Run Workflow" to show a drop-down menu
+    * Once Loop 3 is released, you will see `main` instead of `dev`
+    * It is optional to change the branch (select `dev` for the development branch)
+1. Tap the green button that says "Run workflow".
+
+    ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
     {align="center"}
 
-1. Wait, it seems like nothing happens but then you will see the busy icon followed by a green checkmark indicating the workflow succeeded as displayed in the GIF above.
+1. Wait a minute or two for the action to finish
     * If this action fails, head over to [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors)
     * Once you've resolved the error, repeat the Action: Add Identifiers step
 
@@ -414,7 +425,7 @@ If you never built using Xcode, then after successfully performing the Add Ident
 * WatchApp
 * WatchAppExtension
 
-If you have built using Xcode, then at least the Loop identifier will appear with the name `XC com.TEAMID.loopkit.Loop`. There may be other names that start with XC and have other ending words; they can be ignored. Only the six listed above are of interest. The WatchAppExtension may be all in lower case if it starts with XC. If you are bothered by a lot of extra identifiers, see [Delete Identifiers](#delete-identifiers). But they don't hurt anything.
+If you have built using Xcode, then at least the Loop identifier will appear with the name `XC com.TEAMID.loopkit.Loop`. There may be other names that start with XC and have other ending words; they can be ignored. Only the six listed above are of interest. If you are bothered by a lot of extra identifiers, see [Delete Identifiers](#delete-identifiers). But they don't hurt anything.
 
 The graphic below shows the identifiers before (top portion) and after (lower portion) the Action: Add Identifiers is executed for an individual who previously built Loop 2.2.9. The green rectangles highlight the four identifiers that need to be updated before moving on to the Create Certificates step.
 
@@ -539,21 +550,38 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 ## Create Certficates
 
-1. Go back to the "Actions" tab of your LoopWorkspace repository in GitHub.
-1. Select "Create Certificates" (on the left).
-1. On the right side, click "Run Workflow" to show a drop-down menu and then tap the green button that says "Run workflow".
-1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
+Refer to the graphic below for the numbered steps:
 
-    ![placeholder alt-text for graphic not prepared: create certificates succeeded](img/create-certificates.png){width="700"}
+1. Click on the "Actions" tab of your LoopWorkspace repository
+1. On the left side, click on "Create Certificates"
+1. On the right side, click "Run Workflow" to show a drop-down menu
+    * Once Loop 3 is released, you will see `main` instead of `dev`
+    * It is optional to change the branch (select `dev` for the development branch)
+1. Tap the green button that says "Run workflow".
+
+    ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
     {align="center"}
+
+1. Wait a minute or two for the action to finish
+    * If this action fails, head over to [Action: Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
+    * Once you've resolved the error, repeat the Actions Add Identifiers and then Create Certificates. (The Add Identifiers might not be required but it is fast and should be done as a matter of routine.)
 
 
 ## Build Loop
 
+Refer to the graphic below for the first four steps:
+
 1. Click on the "Actions" tab of your LoopWorkspace repository.
-1. Select "Build Loop".
-1. On the right side, click "Run Workflow" to show a drop-down menu, choose your branch (dev is right until Loop 3 is released) and then tap the green button that says "Run workflow".
-1. Wait a minute or two to make sure there is not an early failure
+1. On the left side, click on "Build Loop".
+1. On the right side, click "Run Workflow" to show a drop-down menu
+    * Once Loop 3 is released, you will see `main` instead of `dev`
+    * It is optional to change the branch (select `dev` for the development branch)
+1. Tap the green button that says "Run workflow".
+
+    ![build loop using github actions](img/action-04-build-loop.svg){width="700"}
+    {align="center"}
+
+1. Wait a few minutes to make sure there is not an early failure
     * If this action fails, head over to [Action: Build Loop Errors](gh-errors.md#action-build-loop-errors)
     * Once you've resolved the error, it's a good idea to repeat all three steps in this order:
         * Add identifiers
