@@ -51,17 +51,13 @@
   
     
     
-      
     
     
     
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-    
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -108,37 +104,6 @@
         </div>
       </div>
     </div>
-    
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
-          
-            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
-            </label>
-          
-        
-      </form>
     
     
     
@@ -226,8 +191,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../build/overview/" class="md-tabs__link">
-        Build
+      <a href="../../gh-actions/gh-overview/" class="md-tabs__link">
+        Browser Build
       </a>
     </li>
   
@@ -242,7 +207,23 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../operation/overview/" class="md-tabs__link">
+      <a href="../../build/overview/" class="md-tabs__link">
+        Mac Build
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
         Set Up
       </a>
     </li>
@@ -276,22 +257,6 @@
     <li class="md-tabs__item">
       <a href="../../troubleshooting/overview/" class="md-tabs__link">
         Troubleshoot
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
-        Loop 3
       </a>
     </li>
   
@@ -541,62 +506,14 @@
 
             
           
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Build
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Build" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Build
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
             
               
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/overview/" class="md-nav__link">
-        Build Overview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step1/" class="md-nav__link">
-        Compatible Computer
+      <a href="../requirements/" class="md-nav__link">
+        Requirements
       </a>
     </li>
   
@@ -652,7 +569,7 @@
   
     <li class="md-nav__item">
       <a href="../../build/step5/" class="md-nav__link">
-        Order a RileyLink
+        RileyLink
       </a>
     </li>
   
@@ -667,34 +584,6 @@
     <li class="md-nav__item">
       <a href="../../build/step6/" class="md-nav__link">
         Apple Developer Program
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step8/" class="md-nav__link">
-        Download Xcode
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step9/" class="md-nav__link">
-        Xcode Preferences
       </a>
     </li>
   
@@ -743,6 +632,200 @@
 
             
           
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Browser Build
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Browser Build" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Browser Build
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-overview/" class="md-nav__link">
+        GitHub Build Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
+        GitHub First Time
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
+        GitHub Deploy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-update/" class="md-nav__link">
+        GitHub Update
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-errors/" class="md-nav__link">
+        GitHub Errors
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Mac Build
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mac Build" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Mac Build
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/overview/" class="md-nav__link">
+        Mac Build Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step1/" class="md-nav__link">
+        Compatible Computer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step8/" class="md-nav__link">
+        Download Xcode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step9/" class="md-nav__link">
+        Xcode Preferences
+      </a>
+    </li>
+  
+
+            
+          
             
               
   
@@ -750,7 +833,7 @@
   
     <li class="md-nav__item">
       <a href="../../build/step14/" class="md-nav__link">
-        Build Loop App
+        Build Loop
       </a>
     </li>
   
@@ -791,56 +874,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build/step13/" class="md-nav__link">
-        Loop-dev
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Set Up
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Set Up" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Set Up
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/overview/" class="md-nav__link">
-        Set Up Overview
+      <a href="../../build/build-free-loop/" class="md-nav__link">
+        Build Free Loop
       </a>
     </li>
   
@@ -853,153 +888,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build/health/" class="md-nav__link">
-        Step 1: Health Permissions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4_3">
-          Step 2: Add Pump
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Step 2: Add Pump" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
-          <span class="md-nav__icon md-icon"></span>
-          Step 2: Add Pump
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
-        Add Medtronic
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
-        Add Omnipod
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
-        Step 3: Add CGM
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
-        Step 4: Configurations
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/services/" class="md-nav__link">
-        Step 5: Loop Services
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/displays/" class="md-nav__link">
-        Loop Displays
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
-        RileyLink Display
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
-        Pump Settings
+      <a href="../../build/testflight-xcode/" class="md-nav__link">
+        TestFlight from Xcode
       </a>
     </li>
   
@@ -1029,12 +919,406 @@
       
       
         <label class="md-nav__link" for="__nav_5">
+          Set Up
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Set Up" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Set Up
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/onboarding/" class="md-nav__link">
+        Onboarding
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-cgm/" class="md-nav__link">
+        Add CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-pump/" class="md-nav__link">
+        Add Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/displays_v3/" class="md-nav__link">
+        Displays
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/alert-notify/" class="md-nav__link">
+        Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/settings/" class="md-nav__link">
+        Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/therapy-settings/" class="md-nav__link">
+        Therapy Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/services/" class="md-nav__link">
+        Optional: Services
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
+        RileyLink Display
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/omnipod/" class="md-nav__link">
+        Omnipod Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/medtronic/" class="md-nav__link">
+        Medtronic Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/features/" class="md-nav__link">
+        Features
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" type="checkbox" id="__nav_5_14" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_14">
+          Loop 2: Set Up App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Loop 2: Set Up App" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_14">
+          <span class="md-nav__icon md-icon"></span>
+          Loop 2: Set Up App
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/overview/" class="md-nav__link">
+        Loop 2 Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/health/" class="md-nav__link">
+        Loop 2 Health Permissions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_3" type="checkbox" id="__nav_5_14_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_14_3">
+          Loop 2 Add Pump
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Loop 2 Add Pump" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_14_3">
+          <span class="md-nav__icon md-icon"></span>
+          Loop 2 Add Pump
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
+        Loop 2 Add Medtronic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
+        Loop 2 Add Omnipod
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
+        Loop 2 Add CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
+        Loop 2 Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/displays/" class="md-nav__link">
+        Loop 2 Displays
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
+        Loop 2 Pump Settings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
           Operate
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Operate" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Operate
         </label>
@@ -1203,18 +1487,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_12" type="checkbox" id="__nav_5_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" type="checkbox" id="__nav_6_12" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_5_12">
+        <label class="md-nav__link" for="__nav_6_12">
           Algorithm
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Algorithm" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_12">
+        <label class="md-nav__title" for="__nav_6_12">
           <span class="md-nav__icon md-icon"></span>
           Algorithm
         </label>
@@ -1300,18 +1584,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_7">
           Troubleshoot
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Troubleshoot" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Troubleshoot
         </label>
@@ -1409,194 +1693,6 @@
     <li class="md-nav__item">
       <a href="../../operation/features/battery/" class="md-nav__link">
         MDT Pump Battery
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
-          Loop 3
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Loop 3" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Loop 3
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/loop-3-overview/" class="md-nav__link">
-        Loop 3 Overview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/onboarding/" class="md-nav__link">
-        Loop 3 Onboarding
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/add-cgm/" class="md-nav__link">
-        Loop 3 Add CGM
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/add-pump/" class="md-nav__link">
-        Loop 3 Add Pump
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/displays_v3/" class="md-nav__link">
-        Loop 3 Displays
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/alert-notify/" class="md-nav__link">
-        Loop 3 Alerts & Notifications
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/settings/" class="md-nav__link">
-        Loop 3 Settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/therapy-settings/" class="md-nav__link">
-        Loop 3 Therapy Settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/omnipod/" class="md-nav__link">
-        Loop 3 Omnipod
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/medtronic/" class="md-nav__link">
-        Loop 3 Medtronic
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/features/" class="md-nav__link">
-        Loop 3 Features
       </a>
     </li>
   
@@ -1729,90 +1825,6 @@
     <li class="md-nav__item">
       <a href="../../version/loopworkspace/" class="md-nav__link">
         LoopWorkspace
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-overview/" class="md-nav__link">
-        GitHub Build Overview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
-        GitHub First Time
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
-        GitHub Deploy
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-update/" class="md-nav__link">
-        GitHub Update
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-errors/" class="md-nav__link">
-        GitHub Errors
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/testflight-xcode/" class="md-nav__link">
-        TestFlight from Xcode
       </a>
     </li>
   
@@ -2233,19 +2245,26 @@
 <p>The LoopDocs website is organized as follows</p>
 <ul>
 <li><a href="../..">Home</a>: What is Loop?</li>
-<li><a href="./">Intro</a>: Introduction to Loop and LoopDocs</li>
-<li><a href="../../build/overview/">Build</a>: How to build your Loop app the first time, or <a href="../../build/updating/">Update</a> next time</li>
+<li><a href="./">Intro</a>: Introduction to Loop and LoopDocs<ul>
+<li><a href="../requirements/">Requirements</a>: What is needed regardless of build method</li>
+</ul>
+</li>
+<li>New with <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>: Two ways to build<ul>
+<li><a href="../../gh-actions/gh-overview/">Browser Build</a>: Build Loop app using a browser (Mac computer not required)</li>
+<li><a href="../../build/overview/">Mac Build</a>: Build Loop app with a Mac the first time, or <a href="../../build/updating/">Update</a> next time</li>
+</ul>
+</li>
 <li><a href="../../operation/overview/">Set Up</a>: How to set up your Loop app</li>
 <li><a href="../../operation/loop/open-loop/">Operate</a>: How to use the Loop app</li>
 <li><a href="../../troubleshooting/overview/">Troubleshoot</a>: What to do if you're having trouble with the Loop app</li>
-<li><a href="../../loop-3/loop-3-overview/"><abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr></a>: Temporary section. It will move to Set Up when <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr> is released. (A development version is close to but not quite ready for release as <abbr title="Used in LoopDocs before release for convenience to describe dev branch features">Loop 3</abbr>.)</li>
 <li><a href="../../version/overview-version/">Version</a>: Information about Loop versions, code customization and development</li>
 <li><a href="../../nightscout/overview/">Nightscout</a>: Loop-specific Nightscout details; Nightscout is a companion application that many Loopers use</li>
 <li><a href="../../faqs/overview-faqs/">FAQs</a>: Pages with safety tips, frequently asked questions and the Glossary</li>
+<li><a href="../../translate/">Translation</a>: Links to Google Translate provided as a convenience, no guaratees about the quality of the translation</li>
 </ul>
 <p>It is totally understandable if the thought of building and operating your own Loop app feels intimidating. As you learn the information explained in LoopDocs, this will start feeling more comfortable.</p>
 <h2 id="building-loop">Building Loop<a class="headerlink" href="#building-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The process for building the Loop app is divided into short segments (pages) in the Build tab of LoopDocs.</p>
+<p>The process for building the Loop app is divided into short segments (sections or pages) in the Build tabs of LoopDocs.</p>
 <div class="admonition warning">
 <p class="admonition-title">Best Practice: Learn to Build</p>
 <p>You are strongly encouraged to build Loop for yourself.</p>
@@ -2262,8 +2281,23 @@
 </div>
 <h3 id="using-a-simulator">Using a Simulator<a class="headerlink" href="#using-a-simulator" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You can build Loop and practice with a simulated phone, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and  pump. You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.</p>
-<p>Starting with a simulator can help you decide if you want to move forward with purchasing the hardware and Apple Developers license each year for Loop.</p>
-<p>Note - you will need to have access to a computer. Please review <a href="../../version/simulator/">Simulator Build</a> for more information.</p>
+<p>Starting with a simulator can help you decide if you want to move forward with purchasing additional items required to Loop.</p>
+<p>Please review <a href="../../version/simulator/">Simulator Build</a> for more information.</p>
+<h4 id="simulator-using-browser-build">Simulator using Browser Build:<a class="headerlink" href="#simulator-using-browser-build" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>No Mac computer required</li>
+<li>Must have a paid Apple Developer ID ($99/year)</li>
+<li>Must have a compatible phone</li>
+</ul>
+<h4 id="simulator-using-mac-build">Simulator using Mac Build:<a class="headerlink" href="#simulator-using-mac-build" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>Must have a Mac computer (or virtual machine, Intel chips only)</li>
+<li>Can build the simulator with a free Apple Developer ID<ul>
+<li>Build to Mac (no phone required)</li>
+<li>Build to compatible phone</li>
+</ul>
+</li>
+</ul>
 <h2 id="operating-loop">Operating Loop<a class="headerlink" href="#operating-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>A significant amount of content is provided on this website and via link to other sources. Please review these pages when initially setting up and learning to use Loop.</p>
 <p>Some techniques are specific to Loop, but the general concepts of how man-made insulin works and strategies to test basal, carb ratios and insulin sensitivity apply to all the hybrid closed-loop systems, commercial and open source.</p>

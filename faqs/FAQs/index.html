@@ -51,17 +51,13 @@
   
     
     
-      
     
     
     
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-    
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -108,37 +104,6 @@
         </div>
       </div>
     </div>
-    
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
-          
-            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
-            </label>
-          
-        
-      </form>
     
     
     
@@ -224,8 +189,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../build/overview/" class="md-tabs__link">
-        Build
+      <a href="../../gh-actions/gh-overview/" class="md-tabs__link">
+        Browser Build
       </a>
     </li>
   
@@ -240,7 +205,23 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../operation/overview/" class="md-tabs__link">
+      <a href="../../build/overview/" class="md-tabs__link">
+        Mac Build
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
         Set Up
       </a>
     </li>
@@ -274,22 +255,6 @@
     <li class="md-tabs__item">
       <a href="../../troubleshooting/overview/" class="md-tabs__link">
         Troubleshoot
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
-        Loop 3
       </a>
     </li>
   
@@ -465,62 +430,14 @@
 
             
           
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Build
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Build" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Build
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
             
               
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/overview/" class="md-nav__link">
-        Build Overview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step1/" class="md-nav__link">
-        Compatible Computer
+      <a href="../../intro/requirements/" class="md-nav__link">
+        Requirements
       </a>
     </li>
   
@@ -576,7 +493,7 @@
   
     <li class="md-nav__item">
       <a href="../../build/step5/" class="md-nav__link">
-        Order a RileyLink
+        RileyLink
       </a>
     </li>
   
@@ -591,34 +508,6 @@
     <li class="md-nav__item">
       <a href="../../build/step6/" class="md-nav__link">
         Apple Developer Program
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step8/" class="md-nav__link">
-        Download Xcode
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step9/" class="md-nav__link">
-        Xcode Preferences
       </a>
     </li>
   
@@ -667,6 +556,200 @@
 
             
           
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Browser Build
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Browser Build" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Browser Build
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-overview/" class="md-nav__link">
+        GitHub Build Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
+        GitHub First Time
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
+        GitHub Deploy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-update/" class="md-nav__link">
+        GitHub Update
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-errors/" class="md-nav__link">
+        GitHub Errors
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Mac Build
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mac Build" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Mac Build
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/overview/" class="md-nav__link">
+        Mac Build Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step1/" class="md-nav__link">
+        Compatible Computer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step8/" class="md-nav__link">
+        Download Xcode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step9/" class="md-nav__link">
+        Xcode Preferences
+      </a>
+    </li>
+  
+
+            
+          
             
               
   
@@ -674,7 +757,7 @@
   
     <li class="md-nav__item">
       <a href="../../build/step14/" class="md-nav__link">
-        Build Loop App
+        Build Loop
       </a>
     </li>
   
@@ -715,56 +798,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build/step13/" class="md-nav__link">
-        Loop-dev
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Set Up
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Set Up" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Set Up
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/overview/" class="md-nav__link">
-        Set Up Overview
+      <a href="../../build/build-free-loop/" class="md-nav__link">
+        Build Free Loop
       </a>
     </li>
   
@@ -777,153 +812,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build/health/" class="md-nav__link">
-        Step 1: Health Permissions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4_3">
-          Step 2: Add Pump
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Step 2: Add Pump" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
-          <span class="md-nav__icon md-icon"></span>
-          Step 2: Add Pump
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
-        Add Medtronic
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
-        Add Omnipod
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
-        Step 3: Add CGM
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
-        Step 4: Configurations
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/services/" class="md-nav__link">
-        Step 5: Loop Services
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/displays/" class="md-nav__link">
-        Loop Displays
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
-        RileyLink Display
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
-        Pump Settings
+      <a href="../../build/testflight-xcode/" class="md-nav__link">
+        TestFlight from Xcode
       </a>
     </li>
   
@@ -953,12 +843,406 @@
       
       
         <label class="md-nav__link" for="__nav_5">
+          Set Up
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Set Up" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Set Up
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/onboarding/" class="md-nav__link">
+        Onboarding
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-cgm/" class="md-nav__link">
+        Add CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-pump/" class="md-nav__link">
+        Add Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/displays_v3/" class="md-nav__link">
+        Displays
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/alert-notify/" class="md-nav__link">
+        Alerts & Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/settings/" class="md-nav__link">
+        Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/therapy-settings/" class="md-nav__link">
+        Therapy Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/services/" class="md-nav__link">
+        Optional: Services
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
+        RileyLink Display
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/omnipod/" class="md-nav__link">
+        Omnipod Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/medtronic/" class="md-nav__link">
+        Medtronic Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/features/" class="md-nav__link">
+        Features
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" type="checkbox" id="__nav_5_14" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_14">
+          Loop 2: Set Up App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Loop 2: Set Up App" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_14">
+          <span class="md-nav__icon md-icon"></span>
+          Loop 2: Set Up App
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/overview/" class="md-nav__link">
+        Loop 2 Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/health/" class="md-nav__link">
+        Loop 2 Health Permissions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_3" type="checkbox" id="__nav_5_14_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_14_3">
+          Loop 2 Add Pump
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Loop 2 Add Pump" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_14_3">
+          <span class="md-nav__icon md-icon"></span>
+          Loop 2 Add Pump
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
+        Loop 2 Add Medtronic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
+        Loop 2 Add Omnipod
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
+        Loop 2 Add CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
+        Loop 2 Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/displays/" class="md-nav__link">
+        Loop 2 Displays
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
+        Loop 2 Pump Settings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
           Operate
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Operate" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Operate
         </label>
@@ -1127,18 +1411,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_12" type="checkbox" id="__nav_5_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" type="checkbox" id="__nav_6_12" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_5_12">
+        <label class="md-nav__link" for="__nav_6_12">
           Algorithm
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Algorithm" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_12">
+        <label class="md-nav__title" for="__nav_6_12">
           <span class="md-nav__icon md-icon"></span>
           Algorithm
         </label>
@@ -1224,18 +1508,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_7">
           Troubleshoot
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Troubleshoot" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Troubleshoot
         </label>
@@ -1333,194 +1617,6 @@
     <li class="md-nav__item">
       <a href="../../operation/features/battery/" class="md-nav__link">
         MDT Pump Battery
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
-          Loop 3
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Loop 3" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Loop 3
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/loop-3-overview/" class="md-nav__link">
-        Loop 3 Overview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/onboarding/" class="md-nav__link">
-        Loop 3 Onboarding
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/add-cgm/" class="md-nav__link">
-        Loop 3 Add CGM
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/add-pump/" class="md-nav__link">
-        Loop 3 Add Pump
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/displays_v3/" class="md-nav__link">
-        Loop 3 Displays
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/alert-notify/" class="md-nav__link">
-        Loop 3 Alerts & Notifications
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/settings/" class="md-nav__link">
-        Loop 3 Settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/therapy-settings/" class="md-nav__link">
-        Loop 3 Therapy Settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/omnipod/" class="md-nav__link">
-        Loop 3 Omnipod
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/medtronic/" class="md-nav__link">
-        Loop 3 Medtronic
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/features/" class="md-nav__link">
-        Loop 3 Features
       </a>
     </li>
   
@@ -1653,90 +1749,6 @@
     <li class="md-nav__item">
       <a href="../../version/loopworkspace/" class="md-nav__link">
         LoopWorkspace
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-overview/" class="md-nav__link">
-        GitHub Build Overview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
-        GitHub First Time
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
-        GitHub Deploy
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-update/" class="md-nav__link">
-        GitHub Update
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-errors/" class="md-nav__link">
-        GitHub Errors
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/testflight-xcode/" class="md-nav__link">
-        TestFlight from Xcode
       </a>
     </li>
   
@@ -2008,6 +2020,20 @@
         <li class="md-nav__item">
   <a href="#does-loop-cost-money" class="md-nav__link">
     Does Loop cost money?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rileylink-options" class="md-nav__link">
+    RileyLink Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#free-developer-account-options" class="md-nav__link">
+    Free Developer Account Options
   </a>
   
 </li>
@@ -2329,6 +2355,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rileylink-options" class="md-nav__link">
+    RileyLink Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#free-developer-account-options" class="md-nav__link">
+    Free Developer Account Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#do-i-need-to-own-my-own-apple-computer" class="md-nav__link">
     Do I need to own my own Apple computer?
   </a>
@@ -2442,17 +2482,7 @@
                   <h1>Loop FAQs</h1>
                 
                 <h2 id="what-do-i-need-to-loop">What do I need to Loop?<a class="headerlink" href="#what-do-i-need-to-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>To build and use Loop you need:</p>
-<ul>
-<li><a href="../../build/step1/#macos">Apple computer</a></li>
-<li><a href="../../build/step2/">Compatible iPhone/iPod Touch</a></li>
-<li><a href="../../build/step3/">Compatible insulin pump</a>: [Medtronic or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>]</li>
-<li><a href="../../build/step4/">Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a></li>
-<li><a href="../../build/step5/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device</a> (unless using <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH)</li>
-<li><a href="../../build/step6/">Apple Developer Membership</a></li>
-<li><a href="../../build/step8/"><abbr title="program used to build an app">Xcode</abbr></a> (a free Apple application)</li>
-</ul>
-<p align="center"><img alt="img/loop_gear.jpg" src="../img/loop_gear.jpg" width="500" /></p>
+<p>Please click on the <a href="../../intro/requirements/">Requirements</a> link.</p>
 <h2 id="can-i-download-loop-from-the-app-store">Can I download Loop from the App store?<a class="headerlink" href="#can-i-download-loop-from-the-app-store" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>No. Loop is not available for download. You must build your own Loop app. Loop app will not be available in the Apple App store because that would be distribution of a medical device, and we are not in that "business".  You can build yourself, but we are not distributors.</p>
 <p>Each step needed to successfully build your Loop app is found in these docs. The harder part will be having the patience to read all the documents before you start. New Loop users are so excited to get started that they often skip reading all the great info that these docs contain. As you begin the build...please include time to read the documents that follow what happens <strong>after</strong> you successfully build your Loop app.</p>
@@ -2470,21 +2500,38 @@
 <p>If you'd rather break it up into several shorter bits of effort, the <a href="../../build/overview/"><code>Build App</code></a> section is divided into convenient stopping points with Time Estimates for each page. You can do one or more pages at a time, depending on what kind of time you have available.</p>
 <h2 id="does-loop-cost-money">Does Loop cost money?<a class="headerlink" href="#does-loop-cost-money" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Yes, there are some costs, beyond the obvious costs of owning a pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>.</p>
-<p>There are several options for the <a href="../../build/step5/#rileylink-compatible-devices"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Devices</a> at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a> offering to sell their <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> for a reduced cost.</p>
-<p>The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days. That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.</p>
+<ul>
+<li>If you have a pump the requires a <a href="../../build/step5/#rileylink-compatible-devices"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Devices</a>, expect to spend $150 each (or find a used one). You should have two, one as a spare.</li>
+<li>Most people use a paid Apple Developer Account ($99/year)<ul>
+<li>With a paid developer account, you can build using the <a href="../../gh-actions/gh-overview/">Browser Build</a>; no Mac required</li>
+</ul>
+</li>
+<li>If you build on a Mac using <abbr title="program used to build an app">Xcode</abbr> <a href="../../build/overview/">Mac Build</a>, you need a Mac or a PC with Intel chips on which you include a virtual Mac</li>
+</ul>
 <p>There are no other costs, ongoing or initial, to use Loop beyond what you already pay for your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, pump supplies and insulin.</p>
+<h2 id="rileylink-options"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Options<a class="headerlink" href="#rileylink-options" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>This is not required for DASH users.</p>
+<p>There are several options for the <a href="../../build/step5/#rileylink-compatible-devices"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Devices</a> at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a> offering to sell their <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> for a reduced cost.</p>
+<h2 id="free-developer-account-options">Free Developer Account Options<a class="headerlink" href="#free-developer-account-options" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days and you must use a computer with <abbr title="program used to build an app">Xcode</abbr>, <a href="../../build/overview/">Mac Build</a>. That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.</p>
 <h2 id="do-i-need-to-own-my-own-apple-computer">Do I need to own my own Apple computer?<a class="headerlink" href="#do-i-need-to-own-my-own-apple-computer" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You don't have to own your own Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for <a href="../../build/updating/#when-to-update">updating Loop</a> later, when needed.</p>
+<p>You no longer need to own an Apple computer - see <a href="../../gh-actions/gh-overview/">Browser Build</a>.</p>
+<p>If you chose <a href="../../build/overview/">Mac Build</a>, then you still don't <strong>have</strong> to own an Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for <a href="../../build/updating/#when-to-update">updating Loop</a> later, when needed.</p>
 <p>If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone <a href="../../build/step1/#macos">Compatible Computer</a> and <a href="../../build/step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="program used to build an app">Xcode</abbr> Version</a></p>
 <h2 id="can-i-use-a-pc-or-windows-computer-to-build">Can I use a PC or Windows computer to build?<a class="headerlink" href="#can-i-use-a-pc-or-windows-computer-to-build" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Yes, you can...sort of. There is a hacked way of installing <abbr title="operating system for Mac computer">macOS</abbr> on a Windows computer called a <strong>Virtual Machine</strong>. <a href="https://macosvmware.tech.blog/">This link</a> provides some helpful information. This <strong>Virtual Machine</strong> method will not work on PCs that have AMD processors, only Intel. Double check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a> who can assist.</p>
+<p>You can build Loop using just a browser on any device: <a href="../../gh-actions/gh-overview/">Browser Build</a>.</p>
+<p>If you want to use <a href="../../build/overview/">Mac Build</a>, there is a hacked way of installing <abbr title="operating system for Mac computer">macOS</abbr> on a Windows computer called a <strong>Virtual Machine</strong>. <a href="https://macosvmware.tech.blog/">This link</a> provides some helpful information. This <strong>Virtual Machine</strong> method will not work on PCs that have AMD processors, only Intel. Double check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a> who can assist.</p>
 <h2 id="how-often-do-i-need-to-get-on-the-computer-for-loop">How often do I need to get on the computer for Loop?<a class="headerlink" href="#how-often-do-i-need-to-get-on-the-computer-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)</p>
-<p>The longer answer is that Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to an Apple computer again to update your Loop app.  Loop updates are not available through the iPhone's app store...instead you do the app update yourself with <a href="../../build/updating/">update instructions here</a>. In general, probably a few times a year there are updates to Loop released that you'd want to take the time to install.</p>
+<p>When you use the Browser Build method, you need to access a browser at least once every 90 days to <a href="../../gh-actions/gh-update/">Update the Browser Build</a>. This is simple enough to do on your phone. Several people are already working on automated methods so that won't be required, but a manual Build Actions step is required for now.</p>
+<p>When you use Mac Build: the short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)</p>
+<p>Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to a browser or an Apple computer again to update your Loop app.  </p>
+<p>Loop updates are not available through the iPhone's app store...instead you do the app update yourself with <a href="../../build/updating/">update instructions here</a> if using a Mac Build.</p>
+<p>In general, there are updates to Loop released a few times a year - these can occur more frequently after a major release.</p>
 <h2 id="will-i-need-to-build-a-new-loop-if-i-switch-between-medtronic-and-omnipod">Will I need to build a new Loop if I switch between Medtronic and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>?<a class="headerlink" href="#will-i-need-to-build-a-new-loop-if-i-switch-between-medtronic-and-omnipod" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>No. Loop lets you move between different pump types from within the same Loop app.</p>
 <h2 id="can-i-use-my-apple-developer-account-to-build-for-others">Can I use my Apple Developer account to build for others?<a class="headerlink" href="#can-i-use-my-apple-developer-account-to-build-for-others" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If there is more than one Looper in the family, you only need to have one Apple Developer ID and only one annual payment. The adult who builds can use their Apple Dev ID to put the app on the Looper's phone.  The limit is 99 devices (phone and watch both count).  Unless it's a very large family, you should have no problem supporting everyone in your family. Building Loop on the second phone is much faster than the first one. It's a good idea to let someone else in the family know how to build and have access to your Apple password in case you're out of town. It's also a good idea to build Loop on a backup phone especially for travel. The Apple Developer ID and the Apple ID are two different things. PLEASE read this: <a href="../../build/step6/#loopers-need-their-own-apple-id">Loopers Need Their Own Apple ID</a>.</p>
+<p>If you used the <a href="../../gh-actions/gh-overview/">Browser Build</a> method, you just add each Looper to your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> test group and they get updates whenever you issue a new Build Action on github.</p>
 <h2 id="what-happens-when-i-switch-apple-developer-id">What happens when I switch Apple Developer ID?<a class="headerlink" href="#what-happens-when-i-switch-apple-developer-id" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The Loop app on the phone is different if the build uses a different Apple Developer ID from the one currently on the phone. So if the Apple Developer ID used for a new Loop build is different from the one used for the existing Loop app, there will be two Loop apps on the phone.  The Looper will have to on-board the new app, enter all the settings again and delete the old app.</p>
 <h2 id="can-i-use-someone-elses-apple-developer-account">Can I use someone else's Apple Developer account?<a class="headerlink" href="#can-i-use-someone-elses-apple-developer-account" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2494,19 +2541,14 @@
 <p>Moral of the story, out of all the ways to save money...borrowing someone's developer account is not a good place to save money. You don't want your Loop app to suddenly stop working.</p>
 <h2 id="how-can-i-find-a-compatible-pump-supplies">How can I find a compatible pump? supplies?<a class="headerlink" href="#how-can-i-find-a-compatible-pump-supplies" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is a <a href="../../build/step3/#check-medtronic-pump-version">whole page with detailed information about Medtronic pumps</a>; how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.</p>
-<p>You can also use some <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> pumps with Loop. You do not need the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.</p>
+<p>You can use some <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> pumps with Loop. You do not need the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.</p>
+<p>Check your app version (for Loop or FreeAPS) by tapping on Loop settings and reading it from the top of the screen.</p>
 <ul>
-<li>Loop 2.2.x (the released code) supports Eros<ul>
-<li>Refer to <a href="../../build/step14/">Build Released Code</a></li>
+<li>Version 2.2.x or earlier supports <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Eros pumps</li>
+<li>Version 2.3 or later supports <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Eros and DASH pumps</li>
 </ul>
-</li>
-<li>The development version of Loop (soon to be released) supports both Eros and DASH<ul>
-<li>This is not for beginners - please read the information (including links) on this page before building</li>
-<li>Refer to <a href="../../build/step13/">Build Development Code</a></li>
-</ul>
-</li>
-</ul>
-<p><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> 5 is not supported by any version of Loop</p>
+<p>DASH pumps do not require a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device.</p>
+<p><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> 5 is not supported by any version of Loop.</p>
 <h2 id="can-i-pay-someone-else-to-do-this">Can I pay someone else to do this?<a class="headerlink" href="#can-i-pay-someone-else-to-do-this" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>We do not know whether someone who builds the app for you incurs legal responsibility if something goes wrong while you are using a version they built for you.</p>
 <p>There are a few companies that provide Loop as a service.</p>
