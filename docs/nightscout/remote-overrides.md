@@ -37,9 +37,9 @@ If you are using Loop-dev, then you can also send remote commands to add carbs a
     And read this entire page - focus on warnings and caveats.
 
 !!! tip "New Feature in Loop 3"
-    Remote bolus and remote carb capability is added with Loop 3, currently under test as Loop dev. In order to support this capability, there are new minimum versions:
+    Remote bolus and remote carb capability is added with Loop 3. In order to support this capability, there are new minimum versions:
 
-    * Loop 3 (Loop dev) or newer
+    * Loop 3 or newer
     * iOS 15.1 or newer
     * Nightscout version 14.2.6 or newer
         * Required to get all the features
@@ -250,7 +250,7 @@ Open a terminal window. Copy the line below that starts with `/bin/bash` by hove
 Paste the line into the Terminal window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.
 
 !!! warning "Not Loop"
-    The output you see in the Terminal may look very similar to when you build Loop dev from a script.
+    The output you see in the Terminal may look very similar to when you build Loop 3 from a script.
 
     It is pulling down a clone from a different location (gestrich instead of LoopKit) and just the caregiver branch. Do not attempt to build Loop with this download.
 

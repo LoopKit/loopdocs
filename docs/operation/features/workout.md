@@ -74,7 +74,7 @@ There have been users who select a 10% overall insulin need. This is NOT the sam
 
 Instead of selecting 10%, raise your correction range with a moderate needs adjustment. Loop tends to suspend insulin delivery via temp basals with the next CGM reading.
 
-If you feel the need to immediately halt insulin delivery, consider a Manual Temp Basal (Loop dev only) or suspend command to the pump and setting a reminder in your phone to resume insulin delivery later.
+If you feel the need to immediately halt insulin delivery, consider a Manual Temp Basal (Loop 3 only) or suspend command to the pump and setting a reminder in your phone to resume insulin delivery later.
 
 !!! tip "Extreme Athletes"
     Loopers should understand the extreme values and use them appropriately, typically for extreme or prolonged exercise.

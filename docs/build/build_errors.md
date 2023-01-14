@@ -291,7 +291,7 @@ This error is new with Xcode 13.3 (late Sep 2021) which has a new requirement
 
 * For those who care: the new requirement is that for a certain type of instruction file, the line with the `Headers` keyword must be located before the line with the `Sources` keyword
 * There used to be many repositories that did not have lines in that order
-* All of these instruction files have been updated for Loop Master, Loop dev and FreeAPS
+* All of these instruction files have been updated for Loop main and FreeAPS
 * If you are building with an older copy of the code, you may see this error
 
 **Error Message:**

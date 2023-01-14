@@ -9,7 +9,7 @@
 
 !!! danger "New Method (Loop 3):"
 
-    If you do not have a Mac, and you want to build [Loop 3](../gh-actions/gh-overview.md) or Loop dev, you can do this with any browser
+    If you do not have a Mac, and you want to build [Loop 3](../gh-actions/gh-overview.md), you can do this with any browser
 
     - You need a paid ($99/year) [Apple Developer Account](step6.md)
     - You need an account (free) with [github](https://github.com)

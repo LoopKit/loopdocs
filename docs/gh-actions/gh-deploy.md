@@ -1,6 +1,6 @@
 ## Deploy Using TestFlight
 
-This is only available with Loop 3 and Loop dev branch.
+This is only available with Loop 3 and Loop development branches.
 
 **You must build Loop every 90 days when you use this method.**
 

@@ -9,7 +9,7 @@ For caregivers, Nightscout enables remote monitoring and even the ability to iss
 !!! info "Remote Commands"
     * Loop 2.2.x
         * Overrides can be enabled and disabled
-    * Loop dev (Loop 3 when released)
+    * Loop 3
         * Overrides can be enabled and disabled
         * Carbs can be entered
         * Boluses can be commanded
@@ -17,7 +17,7 @@ For caregivers, Nightscout enables remote monitoring and even the ability to iss
             * monitor Loop
             * issue remote commands for carbs, bolus and overrides
 
-Nightscout is useful for all Loopers. Adults who take care of themselves find the reports and analysis methods from the Nightscout site provide effective tools to monitor their settings and provide reports for their health care provider. It also stores Loop configurations so they can be reviewed. With Loop dev, the saved Nightscout profiles can be downloaded to a new app for quick onboarding, should you ever need to start fresh.
+Nightscout is useful for all Loopers. Adults who take care of themselves find the reports and analysis methods from the Nightscout site provide effective tools to monitor their settings and provide reports for their health care provider. It also stores Loop configurations so they can be reviewed. With Loop 3, the saved Nightscout profiles can be downloaded to a new app for quick onboarding, should you ever need to start fresh.
 
 Setting up a Nightscout site is described in a separate web site: [Nightscout: Documentation](https://nightscout.github.io).
 
@@ -70,7 +70,7 @@ Step 3: Add Nightscout URL to Loop Services
 !!! tip "More Information"
     For those who want to know more:
 
-    There is a big architectural change between Loop 2 and Loop dev (soon to be Loop 3) for remote data services like Nightscout.
+    There is a big architectural change between Loop 2 and Loop 3 for remote data services like Nightscout.
 
     It used to be that data would be “held on” to be uploaded, and a non functional service could cause large backlogs. The new system does not allow for this. Uploaders individually keep track of where they are in the upload stream via a lightweight “query handle”, and if the data in Loop’s data stores expires before they upload, then they’ll just not be able to upload that data.
 

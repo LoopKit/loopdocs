@@ -1,6 +1,6 @@
 ## Update Loop using GitHub Actions
 
-This is only available with Loop 3 and Loop dev branch.
+This is only available with Loop 3 and Loop development branch.
 
 !!! info "Time Estimate"
     - If you need or choose to update your GitHub Personal Access token

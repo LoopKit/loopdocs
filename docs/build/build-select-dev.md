@@ -29,10 +29,8 @@ The method in this section is for Loopers who want to build the development code
 
 The script, BuildLoopFixedDev, assists in building the development branch for Loop and FreeAPS:
 
-!!! question "Loop dev before release of Loop 3"
-    Before Loop dev branch is released as Loop 3, there is a special page on building what will be Loop 3. Please head over to that page to download and build [Loop-dev](step13.md).
-
-    After the release of Loop 3, that page will be removed. This page will remain.
+!!! question "Loop dev after release of Loop 3"
+    Now that Loop 3 is released, this script may change - please do not use it right now.
 
 If you have not previously built the released version of the app using the Build-Select (BuildLoop) script as documented on the [Build the Loop App](step14.md) page, review that page first and then return.
 
