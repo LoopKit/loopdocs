@@ -1765,7 +1765,34 @@
     Current Release
   </a>
   
-    <nav class="md-nav" aria-label="Current Release">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-3-version-history" class="md-nav__link">
+    Loop 3 Version History
+  </a>
+  
+    <nav class="md-nav" aria-label="Loop 3 Version History">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-v300" class="md-nav__link">
+    Loop v3.0.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-2-version-history" class="md-nav__link">
+    Loop 2 Version History
+  </a>
+  
+    <nav class="md-nav" aria-label="Loop 2 Version History">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2483,7 +2510,34 @@
     Current Release
   </a>
   
-    <nav class="md-nav" aria-label="Current Release">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-3-version-history" class="md-nav__link">
+    Loop 3 Version History
+  </a>
+  
+    <nav class="md-nav" aria-label="Loop 3 Version History">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-v300" class="md-nav__link">
+    Loop v3.0.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-2-version-history" class="md-nav__link">
+    Loop 2 Version History
+  </a>
+  
+    <nav class="md-nav" aria-label="Loop 2 Version History">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2775,15 +2829,13 @@
 <ul>
 <li>Be prepared to enter all your settings again and start a new pod</li>
 <li>If you use Loop Follow, you do <strong>not</strong> need to delete Loop Follow</li>
-<li>The list of apps you need to delete are on the specific phone where you are trying to downgrade to an older version of Loop from <abbr title="Latest release with major updates">Loop 3</abbr><ul>
-<li>You need to delete all apps that you built with <abbr title="program used to build an app">Xcode</abbr> that share an app group id</li>
-<li>The list of apps that share an app group includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app</li>
+<li>When downgrading to an older version of Loop from <abbr title="Latest release with major updates">Loop 3</abbr>, you have to delete all apps with a shared app group id<ul>
+<li>For more information, click on <a href="#remove-apps-with-shared-app-group">Remove Apps with Shared App Group</a></li>
 </ul>
 </li>
 </ul>
-<p>For more information, click on <a href="#remove-apps-with-shared-app-group">Remove Apps with Shared App Group</a></p>
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for Loop master is v2.2.9. The dates and contents for Loop releases from v2.0 through v2.2.9 are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for Loop main is v3.0.0. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <div class="admonition warning">
 <p class="admonition-title">Check Current Release Status</p>
 <p>Release information is always found on the <a href="https://github.com/LoopKit/Loop/releases">GitHub LoopKit/Loop release page</a>. The information on this LoopDocs page is a summary of that information with a little extra explanation.</p>
@@ -2794,6 +2846,33 @@
 <p>Tap on the Settings icon at the bottom of the Loop app main screen and look at the version information at upper left. This graphic was generated with an older version, Loop 2.2.8.</p>
 <p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.svg" width="400" /></p>
 </div>
+<h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="loop-v300">Loop v3.0.0<a class="headerlink" href="#loop-v300" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>After several years of development and a lot of testing, <abbr title="Latest release with major updates">Loop 3</abbr> is here!</p>
+<p>Loop v3.0.0 was released on January 14, 2023.</p>
+<p><a href="https://github.com/LoopKit/Loop/releases/tag/v3.0.0">Link to release notes for <abbr title="Latest release with major updates">Loop 3</abbr>.0</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Use Script not Zip</p>
+<p>If you follow that link above, there is an <code>Assets</code> section with a zip link</p>
+<ul>
+<li>Do not try to build from the zip link</li>
+<li>For Browser Build, refer to: <a href="../../gh-actions/gh-overview/">GitHub Overview</a></li>
+<li>For Mac / <abbr title="program used to build an app">Xcode</abbr> Build refer to:<ul>
+<li><a href="../../build/updating/">Updating</a></li>
+<li><a href="../../build/step14/">Build Loop</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Branch Name Change</p>
+<p>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> name associated with the latest Loop release is "main".</p>
+<ul>
+<li>All new Git repositories on GitHub will be named "main" instead of "master" starting October 1, 2020</li>
+<li>GitHub provides tools to assist in modifying existing repositories to use main</li>
+</ul>
+</div>
+<h2 id="loop-2-version-history">Loop 2 Version History<a class="headerlink" href="#loop-2-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="loop-v229">Loop v2.2.9<a class="headerlink" href="#loop-v229" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This release updates Loop to handle Dexcom Share server changes for how glucose trend is parsed. Dexcom used to provide integers that mapped to the meaning for the arrows.  They changed that to strings, like "Flat" or "FortyFiveUp".</p>
 <p>This is now the new master, so you build it using the standard updating procedure <a href="../../build/updating/">Build Updating</a>.</p>
