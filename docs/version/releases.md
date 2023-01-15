@@ -12,15 +12,12 @@ Loop 3 is NOT backwards compatible. Once you build Loop 3 or later on your phon
 
 * Be prepared to enter all your settings again and start a new pod
 * If you use Loop Follow, you do **not** need to delete Loop Follow
-* The list of apps you need to delete are on the specific phone where you are trying to downgrade to an older version of Loop from Loop 3
-    * You need to delete all apps that you built with Xcode that share an app group id
-    * The list of apps that share an app group includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app
-
-For more information, click on [Remove Apps with Shared App Group](#remove-apps-with-shared-app-group)
+* When downgrading to an older version of Loop from Loop 3, you have to delete all apps with a shared app group id
+    * For more information, click on [Remove Apps with Shared App Group](#remove-apps-with-shared-app-group)
 
 ## Current Release
 
-The current released version for Loop master is v2.2.9. The dates and contents for Loop releases from v2.0 through v2.2.9 are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for Loop main is v3.0.0. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
 
 !!! warning "Check Current Release Status"
 
@@ -34,6 +31,34 @@ The current released version for Loop master is v2.2.9. The dates and contents f
     
     ![Determine current app version on app settings screen](img/app-version.svg){width="400"}
     {align="center"}
+
+## Loop 3 Version History
+
+### Loop v3.0.0
+
+After several years of development and a lot of testing, Loop 3 is here!
+
+Loop v3.0.0 was released on January 14, 2023.
+
+[Link to release notes for Loop 3.0](https://github.com/LoopKit/Loop/releases/tag/v3.0.0)
+
+!!! warning "Use Script not Zip"
+    If you follow that link above, there is an `Assets` section with a zip link
+
+    * Do not try to build from the zip link
+    * For Browser Build, refer to: [GitHub Overview](../gh-actions/gh-overview.md)
+    * For Mac / Xcode Build refer to:
+        * [Updating](../build/updating.md)
+        * [Build Loop](../build/step14.md)
+
+
+!!! tip "Branch Name Change"
+    The branch name associated with the latest Loop release is "main".
+
+    * All new Git repositories on GitHub will be named "main" instead of "master" starting October 1, 2020
+    * GitHub provides tools to assist in modifying existing repositories to use main
+
+## Loop 2 Version History
 
 ### Loop v2.2.9
 
