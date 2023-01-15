@@ -16,7 +16,7 @@ Advantages of TestFlight:
 !!! info "TestFlight - Repeat Every 90 Days"
     When installing Loop on a phone with TestFlight, it must be refreshed every 90 days.
 
-    * Updating Loop and TestFlight takes just a few taps in any browser when using the GitHub build method - you can even do it on your phone.
+    * Updating Loop and TestFlight takes just a few taps in any browser when using the GitHub build method - you can even do it on your phone: [GitHub Update](gh-update.md#github-update-summary)
     * Expect an hour of elapsed time from when you tap on the button to start the build on GitHub to when it is available to install on your phone. Typically about 25 minutes to build, with another 20 minutes for TestFlight processing.
 
 ## Requirements

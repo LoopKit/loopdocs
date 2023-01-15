@@ -20,6 +20,7 @@ This is only available with Loop 3 and Loop development branch.
     - **Do I need a computer?** No
     - **Can I do this on my phone?** Yes
     - **Should I regenerate my GitHub Personal Access token every time?** It depends. Getting a new token resets the 90 day clock for when you get your email reminder. That can be a handy reminder that you need to rebuild to avoid TestFlight expiration.
+    - **I built with GitHub before Loop 3 was released, do I need to do anything?** Yes. Please follow this links [GitHub Early Adopters](#github-early-adopters)
 
 ## GitHub Update Summary
 
@@ -188,4 +189,52 @@ In the Loop app, once installed on your phone, tap on Settings -> Support -> Iss
 
 ![graphic indicating build details](img/gh-build-details.png){width="300"}
 {align="center"}
+
+## GitHub Early Adopters
+
+This section is for people who used the GitHub build method before Loop 3.0.0 was released and want to keep using it.
+
+There are two steps
+
+1. Connect your LoopWorkspace fork with the main branch
+1. Change your LoopWorkspace fork to have the main branch as the default branch
+
+
+### Return to Your LoopWorkspace Fork
+
+You need to be logged into GitHub.
+
+There are a lot of ways to get to your fork of LoopWorkspace - any method is fine. Only one is provided in these docs.
+
+* Click on your personal icon at upper right to see the drop-down menu and select "Your repositories"
+
+![drop-down-menu](img/gh-quick-access.png){width="200"}
+{align="center"}
+
+* You should see (at least) 2 repositories: Match-Secrets and LoopWorkspace
+* Click on LoopWorkspace to open that repository
+
+### Connect Fork to New Branch
+
+1. Click on the Branches icon to open the branches display as shown in the graphic below
+1. Click on the `New branch` button.
+
+![access to branches display](img/early-adopter-01.svg){width="700"}
+{align="center"}
+
+
+If you previously built when dev was the default branch, your initial new branch dialog view will look the top left graphic.
+
+1. Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic
+2. Click on the drop down menu labeled 2 in the graphic and choose main
+3. Click on the Branch name box labeled 3 in the graphic and type main
+4. Review the dialog items to make sure everything is correct and then tap on Create branch
+
+![access to branches display](img/early-adopter-02.svg){width="700"}
+{align="center"}
+
+
+### Set Default Branch
+
+More docs to come. In the meantime, when you run Actions: Build Loop, select `main` as the branch.
 
