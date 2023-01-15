@@ -11,6 +11,8 @@ This page provides help if your Loop icon is red and Loop is not working or only
 
     There are a few times when it is the pod - but try all the steps on this page **first**.
 
+!!! warning "Medtronic Users"
+    You must select Insulin Type on your pump settings screen after updating from Loop 2 to Loop 3 and completing the onboarding. Without an insulin type, closed loop will not work.
 
 A Red Loop icon means that Loop has not completed a cycle for 15-minutes or more and this is normally because of a communication break-down with one of the systems listed below. To find out which one, tap on the Red Loop icon, read the message and search this page for that message.
 

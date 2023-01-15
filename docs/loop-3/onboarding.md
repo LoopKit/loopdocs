@@ -266,6 +266,9 @@ If you built Loop 3 over an existing app, your CGM and pump selections should ha
 
 ## Experienced Loopers
 
+!!! warning "Medtronic Users"
+    After you finish onboarding, you must select Insulin Type on your pump settings screen. Without an insulin type, closed loop will not work.
+
 The first time you build Loop 3 on a device, you will need to go through the onboarding process too.
 
 * If you build Loop 3 over Loop 2.2.x, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build Loop 3 and keep using the same pod.)

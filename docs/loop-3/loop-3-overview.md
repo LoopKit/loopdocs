@@ -61,6 +61,9 @@ And a lot of detailed information about Status and Commands for:
 * [Omnipod Common](omnipod.md)
 * [Medtronic](medtronic.md)
 
+!!! warning "Medtronic Users"
+    You must select Insulin Type on your pump settings screen after updating from Loop 2 to Loop 3 and completing the onboarding. Without an insulin type, closed loop will not work.
+
 ## Safety
 
 Please be informed so you can Loop safely.
