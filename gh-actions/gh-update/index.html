@@ -769,6 +769,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#github-early-adopters" class="md-nav__link">
+    GitHub Early Adopters
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Early Adopters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#return-to-your-loopworkspace-fork" class="md-nav__link">
+    Return to Your LoopWorkspace Fork
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connect-fork-to-new-branch" class="md-nav__link">
+    Connect Fork to New Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-default-branch" class="md-nav__link">
+    Set Default Branch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2303,6 +2337,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#github-early-adopters" class="md-nav__link">
+    GitHub Early Adopters
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Early Adopters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#return-to-your-loopworkspace-fork" class="md-nav__link">
+    Return to Your LoopWorkspace Fork
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connect-fork-to-new-branch" class="md-nav__link">
+    Connect Fork to New Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-default-branch" class="md-nav__link">
+    Set Default Branch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2349,6 +2417,7 @@
 <li><strong>Do I need a computer?</strong> No</li>
 <li><strong>Can I do this on my phone?</strong> Yes</li>
 <li><strong>Should I regenerate my GitHub Personal Access token every time?</strong> It depends. Getting a new token resets the 90 day clock for when you get your email reminder. That can be a handy reminder that you need to rebuild to avoid <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration.</li>
+<li><strong>I built with GitHub before <abbr title="Latest release with major updates">Loop 3</abbr> was released, do I need to do anything?</strong> Yes. Please follow this links <a href="#github-early-adopters">GitHub Early Adopters</a></li>
 </ul>
 </div>
 <h2 id="github-update-summary">GitHub Update Summary<a class="headerlink" href="#github-update-summary" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2480,6 +2549,40 @@
 </li>
 </ul>
 <p align="center"><img alt="graphic indicating build details" src="../img/gh-build-details.png" width="300" /></p>
+<h2 id="github-early-adopters">GitHub Early Adopters<a class="headerlink" href="#github-early-adopters" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>This section is for people who used the GitHub build method before <abbr title="Latest release with major updates">Loop 3</abbr>.0.0 was released and want to keep using it.</p>
+<p>There are two steps</p>
+<ol>
+<li>Connect your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> with the main <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Change your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> to have the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ol>
+<h3 id="return-to-your-loopworkspace-fork">Return to Your LoopWorkspace Fork<a class="headerlink" href="#return-to-your-loopworkspace-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You need to be logged into GitHub.</p>
+<p>There are a lot of ways to get to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace - any method is fine. Only one is provided in these docs.</p>
+<ul>
+<li>Click on your personal icon at upper right to see the drop-down menu and select "Your repositories"</li>
+</ul>
+<p align="center"><img alt="drop-down-menu" src="../img/gh-quick-access.png" width="200" /></p>
+<ul>
+<li>You should see (at least) 2 repositories: <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> and LoopWorkspace</li>
+<li>Click on LoopWorkspace to open that <abbr title="contains project files and each file's revision history">repository</abbr></li>
+</ul>
+<h3 id="connect-fork-to-new-branch">Connect Fork to New Branch<a class="headerlink" href="#connect-fork-to-new-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ol>
+<li>Click on the Branches icon to open the branches display as shown in the graphic below</li>
+<li>Click on the <code>New branch</code> button.</li>
+</ol>
+<p align="center"><img alt="access to branches display" src="../img/early-adopter-01.svg" width="700" /></p>
+<p>If you previously built when dev was the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, your initial new <abbr title="version of code within a single repository or workspace repository">branch</abbr> dialog view will look the top left graphic.</p>
+<ol>
+<li>Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic</li>
+<li>Click on the drop down menu labeled 2 in the graphic and choose main</li>
+<li>Click on the Branch name box labeled 3 in the graphic and type main</li>
+<li>Review the dialog items to make sure everything is correct and then tap on Create <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ol>
+<p align="center"><img alt="access to branches display" src="../img/early-adopter-02.svg" width="700" /></p>
+<h3 id="set-default-branch">Set Default Branch<a class="headerlink" href="#set-default-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>More docs to come. In the meantime, when you run Actions: Build Loop, select <code>main</code> as the <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
                 
               
               

@@ -2743,6 +2743,10 @@
 </ul>
 </div>
 <p><strong>You must build Loop every 90 days when you use GitHub build method.</strong></p>
+<ul>
+<li>You will get an email from GitHub letting you know your GitHub Person Access Token is about to expire</li>
+<li>You can get a new token and start a new build within a few minutes - even on your phone: <a href="../gh-update/#github-update-summary">GitHub Update</a></li>
+</ul>
 <h2 id="configure-to-use-github-build-actions">Configure to use GitHub Build Actions<a class="headerlink" href="#configure-to-use-github-build-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Review the entire process before starting and then go through slowly and carefully.</p>
 <p>These instructions allow you to build Loop without having access to a Mac. They also allow you to easily install Loop on phones that are not connected to your computer.</p>
@@ -2977,6 +2981,17 @@
 <p class="admonition-title">Existing Fork</p>
 <p>Some people may already have a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace. Click on <a href="#already-have-loopworkspace">Already Have LoopWorkspace</a>, decide what to do and follow the appropriate link back to these instructions.</p>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Graphics OutDated</p>
+<p>The figure below is incorrect in 2 ways</p>
+<ul>
+<li>It shows <code>dev</code> instead of <code>main</code></li>
+<li>It shows the box for "Copy the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> only" unchecked<ul>
+<li>Leave that box checked</li>
+</ul>
+</li>
+</ul>
+</div>
 <ol>
 <li>Open this link <a href="https://github.com/LoopKit/LoopWorkspace">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/LoopWorkspace</a> to open the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> owned by LoopKit.</li>
 <li>Review the highlighted locations of the graphic below (yours won't look quite like this yet), but the <code>Fork</code> button is in the same place</li>
@@ -2989,7 +3004,7 @@
 <ul>
 <li>Your username will be automatically filled in as the Owner</li>
 <li>LoopWorkspace is automatically filled in as the Repository Name</li>
-<li>Uncheck the selection that says "Copy the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> only" so it looks like the graphic</li>
+<li>Leave the selection that says "Copy the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> only" checked (not like the graphic)</li>
 <li>Click on the green <code>Create fork</code> button</li>
 </ul>
 <p align="center"><img alt="fork information for LoopWorkspace" src="../img/gh-fork-loopworkspace.png" width="700" /></p>
@@ -3043,6 +3058,7 @@
 </ol>
 <h3 id="configure-secret-settings">Configure Secret Settings<a class="headerlink" href="#configure-secret-settings" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the list of parameters found in <a href="#save-your-information">Save Your Information</a>. This is the time you will enter these items.</p>
+<p>You need to be logged into GitHub.</p>
 <ol>
 <li>
 <p>Return to your forked copy of LoopWorkspace</p>
