@@ -339,15 +339,47 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
         ![action secrets screen](img/gh-actions-secrets.png){width="700"}
         {align="center"}
 
-1. Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD.
-1. For each of the following secrets, tap on the green button at the top right labeled "New repository secret", then add the name of the secret, along with the value you recorded for it:
-    * `TEAMID`
-    * `FASTLANE_KEY_ID`
-    * `FASTLANE_ISSUER_ID`
-    * `FASTLANE_KEY` - the entire thing from "-----BEGIN PRIVATE KEY-----" through "-----END PRIVATE KEY-----"
-    * `GH_PAT`
-    * `MATCH_PASSWORD` - make up a password for this but save it with your other information
+#### Enter Each Secret
 
+Take a calming breath. This next part requires care. 
+
+* Once you enter and save a secret value, you will not be able to view what you just entered, so check carefully before you hit `Add Secret` to save it
+    * You can replace the value for any secret later - you just can't see what you entered before
+* If you make a mistake, the actions you take in the next sections will fail, but the error messages help you figure out which secrets you need to fix
+* So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD.
+
+For each of the following secrets, follow the directions below - this list is configured with a copy button when you hover to the right of each word - this helps avoid spelling errors.
+```
+TEAMID
+```
+```
+FASTLANE_KEY_ID
+```
+```
+FASTLANE_ISSUER_ID
+```
+```
+FASTLANE_KEY
+```
+```
+GH_PAT
+```
+```
+MATCH_PASSWORD
+```
+
+* For the FASTLANE_KEY value, copy the entire contents from  "-----BEGIN PRIVATE KEY-----" through "-----END PRIVATE KEY-----"
+* For MATCH_PASSWORD value - make up a password for this, no need to save it
+
+Tap on the green button at the top right of your screen labeled "New repository secret" (refer to graphic above where the button is highlighted)
+
+* A new dialog screen appears as shown in the graphic below
+* In the Name* box where it says `YOUR_SECRET_NAME`, you will click in the box and paste one of the 6 secret names listed above
+* In the Secret* box, you will click in the box and paste the value for that secret
+* Once you click on Add Secret, the secret will be added
+
+![dialog for entering a new secret](img/new-secret-dialog.png){width="700"}
+{align="center"}
 
 Once all six secrets have been added to your LoopWorkspace, you are done with Settings. Your screen should look similar to the graphic below.
 
