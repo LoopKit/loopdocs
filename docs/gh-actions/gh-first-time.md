@@ -35,6 +35,9 @@ This is only available with Loop 3 and Loop development branch.
 
 **You must build Loop every 90 days when you use GitHub build method.**
 
+* You will get an email from GitHub letting you know your GitHub Person Access Token is about to expire
+* You can get a new token and start a new build within a few minutes - even on your phone: [GitHub Update](gh-update.md#github-update-summary)
+
 
 ## Configure to use GitHub Build Actions
 
@@ -255,6 +258,13 @@ You are done with this part of the set up.
 !!! warning "Existing Fork"
     Some people may already have a fork of LoopWorkspace. Click on [Already Have LoopWorkspace](#already-have-loopworkspace), decide what to do and follow the appropriate link back to these instructions.
 
+!!! warning "Graphics OutDated"
+    The figure below is incorrect in 2 ways
+
+    * It shows `dev` instead of `main`
+    * It shows the box for "Copy the dev branch only" unchecked
+        * Leave that box checked
+
 1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the LoopWorkspace repository owned by LoopKit.
 1. Review the highlighted locations of the graphic below (yours won't look quite like this yet), but the `Fork` button is in the same place
 1. At upper right side of the screen, click on the word Fork
@@ -262,7 +272,7 @@ You are done with this part of the set up.
 1. Now your screen should look like the graphic below
     * Your username will be automatically filled in as the Owner
     * LoopWorkspace is automatically filled in as the Repository Name
-    * Uncheck the selection that says "Copy the dev branch only" so it looks like the graphic
+    * Leave the selection that says "Copy the main branch only" checked (not like the graphic)
     * Click on the green `Create fork` button
 
     ![fork information for LoopWorkspace](img/gh-fork-loopworkspace.png){width="700"}
@@ -316,6 +326,8 @@ If you are returning from a break, be sure to log into your GitHub account befor
 ### Configure Secret Settings
 
 Refer to the list of parameters found in [Save Your Information](#save-your-information). This is the time you will enter these items.
+
+You need to be logged into GitHub.
 
 1. Return to your forked copy of LoopWorkspace
     * Click on your personal icon at upper right to see the drop-down menu and select "Your repositories"
