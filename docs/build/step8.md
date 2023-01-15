@@ -77,10 +77,15 @@ After any update of [macOS](step1.md#check-your-macos-version) or Xcode, it is a
 
 The list below contains the **minimum** versions of [macOS](step1.md#check-your-macos-version) and Xcode you'll need based on your iOS version. The highlighted sections, coordinated by `color` and `linestyle` in the graphic below, tie together the operating system nomenclature in the following bullets. The graphic is not updated as frequently as the words.
 
-**Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade.**
+**Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade. Xcode 14.1 is listed instead of 14.0 because that version had a lot of bugs in it.**
 
+**With the release of Loop 3.0.0, this list is pretty simple.**
 
-The list below is for the released version of code (Loop 3.x):
+* Xcode 14.1 or higher is required
+    * iOS 15.1 is minimum version for phone but 15.7.1 is better (for older phones)
+    * iOS 16.x is supported (turn on developer mode when using Mac / Xcode build)
+
+This older list is left in for those still using code based off Loop 2.2.x
 
 * For iOS 16 or greater, minimum [macOS](step1.md#check-your-macos-version) is 12.5
     * Minimum Xcode version is 14

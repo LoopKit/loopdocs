@@ -716,7 +716,7 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 ### Custom Type One LoopPatches
 
-Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop 3 (main branch) - note that the README file has not been updated post release of Loop 3 - it will be. You can use the same instructions that worked just before the release when branch of Loop was dev. Ignore the instruction on that page for downloading fresh code with BuildLoopFixedDev.sh. Please download fresh Loop 3 (main) code instead.
+Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop 3 (main branch). You can use the same instructions that worked just before the release of Loop 3.
 
 Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop 3.
 
