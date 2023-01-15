@@ -3075,19 +3075,42 @@
 </li>
 </ul>
 </li>
-<li>
-<p>Take a calming breath. This next part requires care. Once you enter and save a secret value, you will not be able to view what you just entered. If you make a mistake, the actions you take in the next sections will fail. So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD.</p>
-</li>
-<li>For each of the following secrets, tap on the green button at the top right labeled "New <abbr title="contains project files and each file's revision history">repository</abbr> secret", then add the name of the secret, along with the value you recorded for it:<ul>
-<li><code>TEAMID</code></li>
-<li><code>FASTLANE_KEY_ID</code></li>
-<li><code>FASTLANE_ISSUER_ID</code></li>
-<li><code>FASTLANE_KEY</code> - the entire thing from "-----BEGIN PRIVATE KEY-----" through "-----END PRIVATE KEY-----"</li>
-<li><code>GH_PAT</code></li>
-<li><code>MATCH_PASSWORD</code> - make up a password for this but save it with your other information</li>
+</ol>
+<h4 id="enter-each-secret">Enter Each Secret<a class="headerlink" href="#enter-each-secret" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Take a calming breath. This next part requires care. </p>
+<ul>
+<li>Once you enter and save a secret value, you will not be able to view what you just entered, so check carefully before you hit <code>Add Secret</code> to save it<ul>
+<li>You can replace the value for any secret later - you just can't see what you entered before</li>
 </ul>
 </li>
-</ol>
+<li>If you make a mistake, the actions you take in the next sections will fail, but the error messages help you figure out which secrets you need to fix</li>
+<li>So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD.</li>
+</ul>
+<p>For each of the following secrets, follow the directions below - this list is configured with a copy button when you hover to the right of each word - this helps avoid spelling errors.
+<div class="highlight"><pre><span></span><code>TEAMID
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>FASTLANE_KEY_ID
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>FASTLANE_ISSUER_ID
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>FASTLANE_KEY
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>GH_PAT
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>MATCH_PASSWORD
+</code></pre></div></p>
+<ul>
+<li>For the FASTLANE_KEY value, copy the entire contents from  "-----BEGIN PRIVATE KEY-----" through "-----END PRIVATE KEY-----"</li>
+<li>For MATCH_PASSWORD value - make up a password for this, no need to save it</li>
+</ul>
+<p>Tap on the green button at the top right of your screen labeled "New <abbr title="contains project files and each file's revision history">repository</abbr> secret" (refer to graphic above where the button is highlighted)</p>
+<ul>
+<li>A new dialog screen appears as shown in the graphic below</li>
+<li>In the Name* box where it says <code>YOUR_SECRET_NAME</code>, you will click in the box and paste one of the 6 secret names listed above</li>
+<li>In the Secret* box, you will click in the box and paste the value for that secret</li>
+<li>Once you click on Add Secret, the secret will be added</li>
+</ul>
+<p align="center"><img alt="dialog for entering a new secret" src="../img/new-secret-dialog.png" width="700" /></p>
 <p>Once all six secrets have been added to your LoopWorkspace, you are done with Settings. Your screen should look similar to the graphic below.</p>
 <ul>
 <li>Take a moment to be sure all of your secrets are spelled correctly</li>
