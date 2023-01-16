@@ -38,6 +38,32 @@ This is only available with Loop 3 and Loop development branch.
 * You will get an email from GitHub letting you know your GitHub Person Access Token is about to expire
 * You can get a new token and start a new build within a few minutes - even on your phone: [GitHub Update](gh-update.md#github-update-summary)
 
+## New Terms with GitHub Build
+
+There are a number of terms that may seem unfamiliar with the GitHub Build. As you move through this page, there will be detailed instructions, but it helps to have the overview.
+
+Some of these terms have ToolTips, so hover your mouse over the item - or review in the [Glossary](../faqs/glossary.md). Others need an expanded explanation. If reading this first is confusing, finish reviewing the whole page and then come back.
+
+* Modules: You won't see this term but the concept is important when explaining the other terms
+    * The Loop code uses modules to handle different components of the entire app
+    * Some of these modules must be associated with your unique App Group
+    * Others do not have this requirement
+* Identifiers: The "Identifiers" are the names of the Modules that must be available to build Loop with GitHub
+    * There are 4 Identifiers that must be associated with your App Group
+        * Loop, Loop Intent Extension, Loop Status Extension and Small Status Widget
+    * There are 2 other Identifiers that do not require that association
+        * WatchApp and WatchAppExtension
+    * To further confuse users of the GitHub build method, the names you see depend on whether you previously build with Xcode and whether you previously built Loop 2.2.x or an early version of Loop 3 while it was still the dev branch
+    * While the exact name might be different from those seen by people who have never built, it is ok - the build should still work
+    * The directions with the Identifier names that do not start with XC are correct for people who have never built Loop with Xcode
+* Secrets: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop
+    * There are 6 Secrets that must be added to your fork of LoopWorkspace
+    * These Secrets work for any branch in your fork (main or dev, for example)
+* [App Store Connect](https://appstoreconnect.apple.com): a website available for Apple Developers to review their apps
+    * Once you purchase an Apple Developer annual account, you are an Apple Developer and have access to this site
+    * Most Loopers will just have one App (Loop) on their page (and only after a successful build)
+    * The name of an app must be unique across the entire App Store worldwide
+    * For this reason, you may need to attempt several different attempts to get a unique name for your Loop App
 
 ## Configure to use GitHub Build Actions
 
@@ -58,40 +84,49 @@ Your app must be updated once every 90 days, but it's simple to make a new build
 ### Save Your Information
 
 !!! tip "Archive This Information"
-    For many of the steps on this page, you will need to have access to usernames, email addresses, passwords, and in some cases, special parameters. The API Key can only be downloaded one time - you must save it in a safe place. If you loose it, you'll need to generate a new key and update the secret settings in your fork of the LoopWorkspace repository. Same for the GitHub access token you will generate in another step.
+    For many of the steps on this page, you will need to have access to usernames, email addresses, passwords, and in some cases, special parameters. The API Key can only be downloaded one time - you must save it in a safe place. 
+    
+    If you loose your API Key, you'll need to generate a new key and update the Secrets in your fork of LoopWorkspace.
 
     * Record these in a safe place so you can find them when you need them
     * A digital copy is best because you will be copying and pasting in different locations
 
-This list indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the `Repository Secrets` for your LoopWorkspace repository. So they are listed twice in the list below.
+This list indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the Repository Secrets for your LoopWorkspace fork. So they are listed twice in the list below.
 
 !!! tip "A Note about Capitalization and Spaces"
-    In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please use these names. The `Repository Secrets` that come later will use names that are capitalized and use underscore instead of spaces. Be precise and careful.
+    In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please use these names.
+
+    The Secrets that you will add later use names that are capitalized and use underscore instead of spaces. Be precise and careful.
 
      The relationship and creation of each item is explained step-by-step on this page.
 
-* Needed or created at developer.apple.com
-    * Email address (this is your username)
-    * password
-    * TEAMID
-    * FASTLANE_KEY_ID
-    * FASTLANE_ISSUER_ID
-    * FASTLANE_KEY
-* Needed or created at github.com
-    * Email address
-    * password
-    * username
-    * Your GitHub repository address will be: `https://github.com/username`
-    * Your LoopWorkspace repository address will be: `https://github.com/username/LoopWorkspace`
-    * GitHub Personal Access Token (GH_PAT)
-    * a password - whatever you want (MATCH_PASSWORD)
-* Needed when you [Configure Secret Settings](#configure-secret-settings).
-    * TEAMID
-    * FASTLANE_KEY_ID
-    * FASTLANE_ISSUER_ID
-    * FASTLANE_KEY
-    * GH_PAT
-    * MATCH_PASSWORD
+**Needed or created at developer.apple.com**
+
+* Email address (this is your username)
+* password
+* TEAMID
+* FASTLANE_KEY_ID
+* FASTLANE_ISSUER_ID
+* FASTLANE_KEY
+
+**Needed or created at github.com**
+
+* Email address
+* password
+* username
+* Your GitHub repository address will be: `https://github.com/username`
+* Your LoopWorkspace repository address will be: `https://github.com/username/LoopWorkspace`
+* GitHub Personal Access Token (GH_PAT)
+* a password - whatever you want (MATCH_PASSWORD)
+
+**Needed when you [Configure Secrets](#configure-secrets) for your LoopWorkspace fork**
+
+* TEAMID
+* FASTLANE_KEY_ID
+* FASTLANE_ISSUER_ID
+* FASTLANE_KEY
+* GH_PAT
+* MATCH_PASSWORD
 
 
 ## Prerequisites
@@ -109,7 +144,7 @@ For the initial steps, you'll be going back and forth between GitHub and Apple D
 
 ## Apple Developer Account
 
-If you have an Apple Developer Account, you need to sign in to your account. There will be links to take you to specific pages in the account website, but you need to be logged in.
+If you have an Apple Developer Account, you should sign in to your account before starting. There will be links to take you to specific pages; if you are not already logged in, you will be required to log in before you can go to that page.
 
 If you do not already have a paid Apple Developer account, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
@@ -118,7 +153,7 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 
 ### Generate API Key
 
-You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps but you will need to pause at [Configure Secret Settings](#configure-secret-settings).
+You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps but you will need to pause at [Configure Secrets](#configure-secrets).
 
 This section will walk you through the steps required to gather or create these parameters.
 
@@ -134,7 +169,7 @@ Each step has a link to take you to the specific page you need to do the next st
 1. Open this link: [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
     * Look at the upper right hand corner of that page
     * The 10-character ID number below your name is your `TEAMID`
-    * Record this for use when you configure your secret settings
+    * Record this for use when you configure your Secrets and when you configure your unique App Group
 1. Open this link: [App Store Connect/Access/API](https://appstoreconnect.apple.com/access/api)
     * Click the "Keys" tab
         * If this is your first time here, there will be a dialog for you to follow:
@@ -146,6 +181,7 @@ Each step has a link to take you to the specific page you need to do the next st
         * Once access is granted, click on the "Generate API Key" button
 
     * If you did not get routed through the "permission is required" screens click the blue &plus; sign
+    * TO DO - update this graphic
 
     ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
     {align="center"}
@@ -158,26 +194,33 @@ Each step has a link to take you to the specific page you need to do the next st
 
     * Enter the name of the key as "FastLane API Key" and choose "Admin" in the access drop down menu. Click on the "Generate" button.
     * The Keys screen is seen again with the additional content shown in the graphic below where key information is blanked out for security
-    * Review the graphic and then follow directions below to save more parameters you will need to [Configure Secret Settings](#configure-secret-settings)
+    * Review the graphic and then follow directions below to save more parameters you will need to [Configure Secrets](#configure-secret)
 
     ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
     {align="center"}
 
 1. Hover to the right of the Key ID and the Copy Key ID button shows up
-    * Tap on the Copy Key ID button and save this as `FASTLANE_KEY_ID` 
-1. A button labeled Copy is alway adjacent to the Issuer ID above the word Active (this is the same for all keys that you generate with this Apple Developer ID)
-    * Tap on the Copy button and save this as `FASTLANE_ISSUER_ID`
+    * Tap on the Copy Key ID button - this copies the Key ID into your paste buffer
+    * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY_ID` 
+1. A button labeled Copy is always adjacent to the Issuer ID above the word Active (this is the same for all keys that you generate with this Apple Developer ID)
+    * Tap on the Copy button - this copies the Issuer ID into your paste buffer
+    * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_ISSUER_ID` 
 1. Click on the Download API Key button - you will be warned you can only download this once.
 
     ![download key only once](img/dev-dl-key-once.png){width="700"}
     {align="center"}
 
-6. Find your AuthKey download in your downloads folder. The name of the file will be "AuthKey_KeyID.p8" where KeyID matches the value above. Double-click to open it and you will be presented a message asking how you'd like to open it. Click on "Choose Application..." and then select "TextEdit" (on a Mac, any text-only editor on other computers) as your application to open it with.
+6. Find your AuthKey download in your downloads folder. The name of the file will be "AuthKey_KeyID.p8" where KeyID matches the value above
+
+    * Double-click to open it and you will be presented a message asking how you'd like to open it (message shown is for a Mac - translate these directions to whatever computer you are using)
+    * Click on "Choose Application..." and then select "TextEdit" (on a Mac, any text-only editor on other computers) as your application to open it with
 
     ![img/apns-open.png](../nightscout/img/apns-open.png)
 
-1. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
+1. The contents of this file will be used for `FASTLANE_KEY`
 
+    * Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines
+    * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY` 
 
     ![img/apns-copy-key.png](../nightscout/img/apns-copy-key.png)
 
@@ -323,7 +366,7 @@ If you are returning from a break, be sure to log into your GitHub account befor
     * Copy the token and record it - once you leave this screen you can't see it again
     * You will use this for `GH_PAT` when you set up your Secrets
 
-### Configure Secret Settings
+### Configure Secrets
 
 Refer to the list of parameters found in [Save Your Information](#save-your-information). This is the time you will enter these items.
 
