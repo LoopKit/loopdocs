@@ -2830,7 +2830,7 @@
 <li>Be prepared to enter all your settings again and start a new pod</li>
 <li>If you use Loop Follow, you do <strong>not</strong> need to delete Loop Follow</li>
 <li>When downgrading to an older version of Loop from <abbr title="Latest release with major updates">Loop 3</abbr>, you have to delete all apps with a shared app group id<ul>
-<li>For more information, click on <a href="#remove-apps-with-shared-app-group">Remove Apps with Shared App Group</a></li>
+<li>For more information, click on <a href="#remove-apps-with-shared-app-group">Remove Apps with Shared <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></a></li>
 </ul>
 </li>
 </ul>
@@ -2838,7 +2838,7 @@
 <p>The current released version for Loop main is v3.0.0. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <div class="admonition warning">
 <p class="admonition-title">Check Current Release Status</p>
-<p>Release information is always found on the <a href="https://github.com/LoopKit/Loop/releases">GitHub LoopKit/Loop release page</a>. The information on this LoopDocs page is a summary of that information with a little extra explanation.</p>
+<p>Release information is always found on the <a href="https://github.com/LoopKit/Loop/releases"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> LoopKit/Loop release page</a>. The information on this LoopDocs page is a summary of that information with a little extra explanation.</p>
 <p>Be aware that updates to LoopDocs may take some time after a new release comes out.</p>
 </div>
 <div class="admonition info">
@@ -2856,7 +2856,7 @@
 <p>If you follow that link above, there is an <code>Assets</code> section with a zip link</p>
 <ul>
 <li>Do not try to build from the zip link</li>
-<li>For Browser Build, refer to: <a href="../../gh-actions/gh-overview/">GitHub Overview</a></li>
+<li>For Browser Build, refer to: <a href="../../gh-actions/gh-overview/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Overview</a></li>
 <li>For Mac / <abbr title="program used to build an app">Xcode</abbr> Build refer to:<ul>
 <li><a href="../../build/updating/">Updating</a></li>
 <li><a href="../../build/step14/">Build Loop</a></li>
@@ -2868,8 +2868,8 @@
 <p class="admonition-title">Branch Name Change</p>
 <p>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> name associated with the latest Loop release is "main".</p>
 <ul>
-<li>All new Git repositories on GitHub will be named "main" instead of "master" starting October 1, 2020</li>
-<li>GitHub provides tools to assist in modifying existing repositories to use main</li>
+<li>All new Git repositories on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will be named "main" instead of "master" starting October 1, 2020</li>
+<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> provides tools to assist in modifying existing repositories to use main</li>
 </ul>
 </div>
 <h2 id="loop-2-version-history">Loop 2 Version History<a class="headerlink" href="#loop-2-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3074,7 +3074,7 @@
 <p>If you don't have compatible gear yet and just want to test Loop app, the new ability to add a simulated pump and/or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is a great new feature.</p>
 <h3 id="new-style-of-dexcom-transmitters-supported">New style of Dexcom transmitters supported<a class="headerlink" href="#new-style-of-dexcom-transmitters-supported" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Dexcom launched a new style of transmitters this summer. The new transmitters took some work by Loop developer (PETE! YEAH!) to get them working in offline Looping, but the fix was pushed into all branches shortly thereafter in August 2019. If you haven't updated your Loop since August 2019 and use a Dexcom G6, you should update now.</p>
-<h2 id="remove-apps-with-shared-app-group">Remove Apps with Shared App Group<a class="headerlink" href="#remove-apps-with-shared-app-group" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="remove-apps-with-shared-app-group">Remove Apps with Shared <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr><a class="headerlink" href="#remove-apps-with-shared-app-group" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The storage of data with <abbr title="Latest release with major updates">Loop 3</abbr> is not backward compatible. In other words, if you attempt to build Loop 2.2.x (or FreeAPS) on a phone which has been upgraded to <abbr title="Latest release with major updates">Loop 3</abbr>, you will not be able to run that app. You can successfully build the app, which will overwrite <abbr title="Latest release with major updates">Loop 3</abbr> on the phone, but the app will crash and you will not be able to Loop.</p>
 <p>At this point, you can restore your <abbr title="Latest release with major updates">Loop 3</abbr> build on your phone and continue using <abbr title="Latest release with major updates">Loop 3</abbr> or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.</p>
 <p>If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to <a href="https://www.loopandlearn.org/loop-expiration-date">Review Provisioning Profiles</a> and then delete the profiles for all the apps by using the - sign. </p>

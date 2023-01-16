@@ -2384,19 +2384,19 @@
                 
                   <h1>GitHub Errors</h1>
                 
-                <h2 id="github-build-method-errors">GitHub Build Method Errors<a class="headerlink" href="#github-build-method-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+                <h2 id="github-build-method-errors"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Method Errors<a class="headerlink" href="#github-build-method-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This method is fairly new so there are not many error screens captured.</p>
 <p>There is a separate section for each step in the process.</p>
 <ol>
 <li><a href="#examine-the-error">Examine the Error</a></li>
-<li><a href="#action-add-identifiers-errors">Action: Add Identifiers Errors</a></li>
+<li><a href="#action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a></li>
 <li><a href="#action-create-certificates-errors">Action: Create Certificates Errors</a></li>
 <li><a href="#action-build-loop-errors">Action: Build Loop Errors</a> before successful build</li>
 <li><a href="#repeat-build-loop-errors">Repeat Build Loop Errors</a> after successful build</li>
 </ol>
 <p>If you discover a new error, please reach out to help us update the documentation.</p>
 <h2 id="examine-the-error">Examine the Error<a class="headerlink" href="#examine-the-error" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>It doesn't matter which action you are running; after the action completes, you will either see a green check mark for success or a red x mark for failure. The graphic below shows an example for the Add Identifiers action.</p>
+<p>It doesn't matter which action you are running; after the action completes, you will either see a green check mark for success or a red x mark for failure. The graphic below shows an example for the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> action.</p>
 <p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result.svg" width="700" /></p>
 <p>If you click on the action name, it opens a secondary screen as shown below.</p>
 <p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result-secondary.svg" width="500" /></p>
@@ -2412,7 +2412,7 @@
 </li>
 </ul>
 <p align="center"><img alt="graphic with failure details for a GitHub Add Identifier action" src="../img/action-result-failure.svg" width="700" /></p>
-<h2 id="action-add-identifiers-errors">Action: Add Identifiers Errors<a class="headerlink" href="#action-add-identifiers-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors<a class="headerlink" href="#action-add-identifiers-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
 <p>There are two errors that we are familiar with at this point. Look for text matching what is listed below and view what has caused this error to be seen.</p>
 <h3 id="authentication-credentials-are-missing-or-invalid">Authentication credentials are missing or invalid<a class="headerlink" href="#authentication-credentials-are-missing-or-invalid" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2463,7 +2463,7 @@
 <li>
 <p>This can also be caused if you correctly created the Loop App but entered an incorrect value for the TEAMID.</p>
 <ul>
-<li>If you have the incorrect TEAMID, check this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, Identifiers &amp; Profiles</a> for entries with the incorrect TEAMID embedded</li>
+<li>If you have the incorrect TEAMID, check this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles</a> for entries with the incorrect TEAMID embedded</li>
 <li>For example, if your TEAMID is 0123456789, but you entered 000123, you may see both of these in your identifiers list<ul>
 <li>com.0123456789.loopkit.Loop</li>
 <li>com.000123.loopkit.Loop</li>
@@ -2481,24 +2481,24 @@
 <h3 id="error-provisioning-profile">Error: <abbr title="associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)">Provisioning Profile</abbr><a class="headerlink" href="#error-provisioning-profile" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste it into the search function for your text editor.</p>
 <p><code>error: Provisioning profile "match AppStore com</code></p>
-<p>If that phrase is found one, or more times, it means you missed associating your Loop App Group with one or more identifiers.</p>
+<p>If that phrase is found one, or more times, it means you missed associating your Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with one or more identifiers.</p>
 <p>For example, you might see:</p>
 <ul>
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.SmallStatusWidget</code></li>
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget</code></li>
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension</code></li>
 </ul>
-<p>Return to <a href="https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/#add-app-group-to-other-identifiers">Add App Group to Other Identifiers</a> and fix the missing items.</p>
+<p>Return to <a href="https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/#add-app-group-to-other-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and fix the missing items.</p>
 <p>You must create certificates again before you can build:</p>
 <ul>
 <li>Action: Create Certificates</li>
 <li>Action: Build Loop</li>
 </ul>
 <h2 id="repeat-build-loop-errors">Repeat Build Loop Errors<a class="headerlink" href="#repeat-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section is only for people who have successfully built using GitHub Build Actions.</p>
+<p>This section is only for people who have successfully built using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Actions.</p>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
 <h3 id="could-not-install-wwdr-certificate">Could not install WWDR certificate<a class="headerlink" href="#could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Assuming you have successfully built using the GitHub method before:</p>
+<p>Assuming you have successfully built using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method before:</p>
 <ul>
 <li>If the details show this message, "Could not install WWDR certificate", make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
 <li>Sometimes this is a sign that Apple did not respond to a request, this failure happens in the first few minutes<ul>
