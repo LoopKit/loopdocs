@@ -24,7 +24,6 @@ This is only available with Loop 3 and Loop development branch.
     * GitHub: Action: Build Loop
     * Apple: Set up Internal TestFlight Group
     * Phone: Install Loop with TestFlight
-    
 
 !!! question "FAQs"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
@@ -374,8 +373,6 @@ If you are returning from a break, be sure to log into your GitHub account befor
 
 ### Configure Secrets
 
-Refer to the list of parameters found in [Save Your Information](#save-your-information). This is the time you will enter these items.
-
 You need to be logged into GitHub.
 
 1. Return to your forked copy of LoopWorkspace
@@ -400,7 +397,19 @@ You need to be logged into GitHub.
         ![action secrets screen](img/gh-actions-secrets.png){width="700"}
         {align="center"}
 
+1. Tap on the green button at the top right of your screen labeled "New repository secret" (refer to graphic above where the button is highlighted)
+    * A new dialog screen appears as shown in the graphic below
+    * Do not do anything yet - first read what you will do in the next section
+        * In the Name* box where it says `YOUR_SECRET_NAME`, you will click in the box and paste one of the 6 secret names, as directed in [Enter Each Secret](#enter-each-secret)
+        * In the Secret* box, you will click in the box and paste the value for that secret
+        * Once you click on Add Secret, the secret will be added
+
+![dialog for entering a new secret](img/new-secret-dialog.png){width="700"}
+{align="center"}
+
 #### Enter Each Secret
+
+Refer to the list of parameters found in [Save Your Information](#save-your-information). This is the time you will enter these items.
 
 Take a calming breath. This next part requires care. 
 
@@ -431,16 +440,6 @@ MATCH_PASSWORD
 
 * For the FASTLANE_KEY value, copy the entire contents from  "-----BEGIN PRIVATE KEY-----" through "-----END PRIVATE KEY-----"
 * For MATCH_PASSWORD value - make up a password for this, no need to save it
-
-Tap on the green button at the top right of your screen labeled "New repository secret" (refer to graphic above where the button is highlighted)
-
-* A new dialog screen appears as shown in the graphic below
-* In the Name* box where it says `YOUR_SECRET_NAME`, you will click in the box and paste one of the 6 secret names listed above
-* In the Secret* box, you will click in the box and paste the value for that secret
-* Once you click on Add Secret, the secret will be added
-
-![dialog for entering a new secret](img/new-secret-dialog.png){width="700"}
-{align="center"}
 
 Once all six secrets have been added to your LoopWorkspace, you are done with Settings. Your screen should look similar to the graphic below.
 
