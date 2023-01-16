@@ -784,6 +784,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#error-provisioning-profile" class="md-nav__link">
+    Error: Provisioning Profile
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2330,6 +2337,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#error-provisioning-profile" class="md-nav__link">
+    Error: Provisioning Profile
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2424,13 +2438,29 @@
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
 <p>place holder</p>
 <h2 id="action-build-loop-errors">Action: Build Loop Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
-<h3 id="could-not-find-an-app-on-app-store-connect">Could not find an app on App Store Connect<a class="headerlink" href="#could-not-find-an-app-on-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you see:</p>
+<p>Use <a href="#examine-the-error">Examine the Error</a></p>
 <ul>
-<li>Could not find an app on App Store Connect with app_identifier: <code>com.***.loopkit.Loop</code></li>
+<li>Download the log archive file and unzip it</li>
+<li>Open the <code>1_build.txt</code> file</li>
+<li>Search for the phrase below</li>
 </ul>
-<p>Make sure you completed the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a> Step.</p>
+<p>For each Build Loop Error section below, copy the phrase into the search function of your test editor. If you find it, solve that error. If not, move on to the next one.</p>
+<h3 id="could-not-find-an-app-on-app-store-connect">Could not find an app on App Store Connect<a class="headerlink" href="#could-not-find-an-app-on-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste it into the search function for your text editor.</p>
+<p><code>Could not find an app on App Store Connect</code></p>
+<p>If that phrase is found, then:</p>
+<ul>
+<li>
+<p>Make sure you completed the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a> Step</p>
+<ul>
+<li>Once you've resolved that step, run these Actions again:<ul>
+<li>Create Certificates</li>
+<li>Build Loop</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
 <p>This can also be caused if you correctly created the Loop App but entered an incorrect value for the TEAMID.</p>
 <ul>
 <li>If you have the incorrect TEAMID, check this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, Identifiers &amp; Profiles</a> for entries with the incorrect TEAMID embedded</li>
@@ -2446,14 +2476,35 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+<h3 id="error-provisioning-profile">Error: <abbr title="associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)">Provisioning Profile</abbr><a class="headerlink" href="#error-provisioning-profile" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste it into the search function for your text editor.</p>
+<p><code>error: Provisioning profile "match AppStore com</code></p>
+<p>If that phrase is found one, or more times, it means you missed associating your Loop App Group with one or more identifiers.</p>
+<p>For example, you might see:</p>
+<ul>
+<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.SmallStatusWidget</code></li>
+<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget</code></li>
+<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension</code></li>
+</ul>
+<p>Return to <a href="https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/#add-app-group-to-other-identifiers">Add App Group to Other Identifiers</a> and fix the missing items.</p>
+<p>You must create certificates again before you can build:</p>
+<ul>
+<li>Action: Create Certificates</li>
+<li>Action: Build Loop</li>
+</ul>
 <h2 id="repeat-build-loop-errors">Repeat Build Loop Errors<a class="headerlink" href="#repeat-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section is only for people who have successfully built using GitHub Build Actions.</p>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
 <h3 id="could-not-install-wwdr-certificate">Could not install WWDR certificate<a class="headerlink" href="#could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Assuming you have successfully built before:</p>
+<p>Assuming you have successfully built using the GitHub method before:</p>
 <ul>
 <li>If the details show this message, "Could not install WWDR certificate", make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
+<li>Sometimes this is a sign that Apple did not respond to a request, this failure happens in the first few minutes<ul>
 <li>Repeat the build and it should be fine the next time</li>
+</ul>
+</li>
 </ul>
 <p align="center"><img alt="graphic showing failure to install certificate" src="../img/github-error-cert-failed.png" width="500" /></p>
                 
