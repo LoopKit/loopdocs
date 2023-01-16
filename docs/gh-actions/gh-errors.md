@@ -75,27 +75,58 @@ place holder
 
 ## Action: Build Loop Errors
 
-Use the [Examine the Error](#examine-the-error) instructions to find your error message.
+Use [Examine the Error](#examine-the-error)
+
+* Download the log archive file and unzip it
+* Open the `1_build.txt` file
+* Search for the phrase below
+
+For each Build Loop Error section below, copy the phrase into the search function of your test editor. If you find it, solve that error. If not, move on to the next one.
 
 ### Could not find an app on App Store Connect
 
-If you see:
+Copy the words on the line below and paste it into the search function for your text editor.
 
-* Could not find an app on App Store Connect with app_identifier: `com.***.loopkit.Loop`
+`Could not find an app on App Store Connect`
 
-Make sure you completed the [Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect) Step.
+If that phrase is found, then:
 
-This can also be caused if you correctly created the Loop App but entered an incorrect value for the TEAMID.
+* Make sure you completed the [Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect) Step
+    * Once you've resolved that step, run these Actions again:
+        * Create Certificates
+        * Build Loop
 
-* If you have the incorrect TEAMID, check this link: [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) for entries with the incorrect TEAMID embedded
-* For example, if your TEAMID is 0123456789, but you entered 000123, you may see both of these in your identifiers list
-    * com.0123456789.loopkit.Loop
-    * com.000123.loopkit.Loop
-* Delete the "bogus" identifier version, fix your TEAMID and rerun all three steps:
-    * Add Identifier
-    * Create Certificates
-    * Build Loop
 
+* This can also be caused if you correctly created the Loop App but entered an incorrect value for the TEAMID.
+    * If you have the incorrect TEAMID, check this link: [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) for entries with the incorrect TEAMID embedded
+    * For example, if your TEAMID is 0123456789, but you entered 000123, you may see both of these in your identifiers list
+        * com.0123456789.loopkit.Loop
+        * com.000123.loopkit.Loop
+    * Delete the "bogus" identifier version, fix your TEAMID and rerun all three steps:
+        * Add Identifier
+        * Create Certificates
+        * Build Loop
+
+### Error: Provisioning Profile
+
+Copy the words on the line below and paste it into the search function for your text editor.
+
+`error: Provisioning profile "match AppStore com`
+
+If that phrase is found one, or more times, it means you missed associating your Loop App Group with one or more identifiers.
+
+For example, you might see:
+
+* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.SmallStatusWidget`
+* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget`
+* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension`
+
+Return to [Add App Group to Other Identifiers](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/#add-app-group-to-other-identifiers) and fix the missing items.
+
+You must create certificates again before you can build:
+
+* Action: Create Certificates
+* Action: Build Loop
 
 ## Repeat Build Loop Errors
 
@@ -105,11 +136,11 @@ Use the [Examine the Error](#examine-the-error) instructions to find your error 
 
 ### Could not install WWDR certificate
 
-Assuming you have successfully built before:
+Assuming you have successfully built using the GitHub method before:
 
 * If the details show this message, "Could not install WWDR certificate", make sure your developer account is in good standing and that there are no agreements that need to be accepted
-* Repeat the build and it should be fine the next time
-
+* Sometimes this is a sign that Apple did not respond to a request, this failure happens in the first few minutes
+    * Repeat the build and it should be fine the next time
 
 ![graphic showing failure to install certificate](img/github-error-cert-failed.png){width="500"}
 {align="center"}
