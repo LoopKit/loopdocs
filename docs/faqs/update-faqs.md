@@ -14,7 +14,9 @@ If you have a very slow download speed or if you do a lot of customizations, it 
 
 * Use Finder to check the date of your last download by looking in the Downloads/BuildLoop folder
 * Check the date of the last Loop release at [GitHub LoopKit/Loop release page](https://github.com/LoopKit/Loop/releases)
-* If the date in Finder is after the release date, [double click on the Loop.xcworkspace file using these instructions](../build/code_customization.md#find-my-dowloaded-loop-code)
+* If the date in Finder is after the release date, follow [Find my Downloaded Loop Code](../build/code_customization.md#find-my-downloaded-loop-code)
+    * Double click on the Loop.xcworkspace file in that folder
+    * This opens Xcode and you can just plug in your phone and build with your existing download
 
 ## When Should I Update?
 

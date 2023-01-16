@@ -13,6 +13,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **API_SECRET**: password (min 12 characters) needed to access Nightscout Site
 
+**App Group**: a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup
+
 **Automatic Bolus**: provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)
 
 **BAGE**: pump battery age on Nightscout site
@@ -73,6 +75,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **git**: a tool for version control
 
+**GitHub**: an online service for storing repositories, accessible from a browser
+
 **github.com**: an online service for storing repositories, accessible from a browser
 
 **Glucose Chart**: Display of measured and predicted glucose values
@@ -86,6 +90,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **HUD**: Heads-Up Display at top of Loop main screen, phone in portrait mode
 
 **ICE**: Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose
+
+**Identifiers**: names of modules found on your Apple Developer Identifiers page that are required for GitHub build method
 
 **IOB**: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
 
@@ -111,7 +117,11 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **modal**: message or alert appearing in front of app that must be acknowledged to return to app
 
+**Modules**: the Loop code uses a number of modules to handle different components of the entire app
+
 **Monterey**: operating system for Mac, macOS 12.x
+
+**Onboarding**: familiarize new, and existing, Loop users with settings in Loop 3 and ensure the Therapy Settings are all entered and are within safety guardrails
 
 **Omnipod**: Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH
 
@@ -146,6 +156,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **Rosetta**: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 and M2 chips)
 
 **SAGE**: sensor age on Nightscout site
+
+**Secrets**: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop
 
 **SHA-1**: Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)
 

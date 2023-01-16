@@ -505,7 +505,7 @@ To add custom configurations to your Loop or Loop Apple Watch apps, follow the s
 
 ### Build Again with this Download
 
-Follow the [Find My Downloaded Loop Code](code_customization.md#find-my-dowloaded-loop-code) instructions if you later wish to build with this same dowload. Plug in an unlocked phone and start at the [Start Build](#start-build) section of this page. You may need to select the phone you just plugged in. Everything else should be ready for you the start the build process.
+Follow the [Find My Downloaded Loop Code](code_customization.md#find-my-downloaded-loop-code) instructions if you later wish to build with this same dowload. Plug in an unlocked phone and start at the [Start Build](#start-build) section of this page. You may need to select the phone you just plugged in. Everything else should be ready for you the start the build process.
 
 !!! warning "Don't use a really old download"
     Do not use a really old download.
