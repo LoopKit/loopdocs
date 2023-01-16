@@ -6,7 +6,7 @@ This is only available with Loop 3 and Loop development branch.
     - If you have never built Loop (allow up to one week elapsed time)
         * Requesting and getting an Apple Developer Account: 1-2 days
         * Creating and configuring your GitHub repositories (without Apple Information): 1-2 hours
-        * Adding Repository Secrets (requires Apple Developer Account): 1 hour
+        * Adding Secrets (requires Apple Developer Account): 1 hour
         * Performing the Action steps: 30 minutes to 2 hours
     - If you have previously built Loop with Xcode you have fewer steps and are probably familiar with some of the concepts
         * Expect 1 to 2 hours
@@ -16,9 +16,9 @@ This is only available with Loop 3 and Loop development branch.
 
     * Apple: Generate an API Key
     * GitHub: Create a Match-Secrets private repository
-    * GitHub: Fork a copy of LoopWorkspace and add Repository secrets
+    * GitHub: Fork a copy of LoopWorkspace and add Secrets
     * GitHub: Action: Add Identifiers
-    * Apple: Never Built Before? - several steps
+    * Apple: Configure Identifiers for Loop
     * Apple: Create your version of Loop in App Store (personal use only, not for distribution)
     * GitHub: Action: Create Certificates
     * GitHub: Action: Build Loop
@@ -37,6 +37,25 @@ This is only available with Loop 3 and Loop development branch.
 
 * You will get an email from GitHub letting you know your GitHub Person Access Token is about to expire
 * You can get a new token and start a new build within a few minutes - even on your phone: [GitHub Update](gh-update.md#github-update-summary)
+
+## Prerequisites
+
+### Build Loop
+
+There are only two prerequisites to Build Loop with this method.
+
+1. Paid Apple Developer account
+1. Free GitHub account
+
+### Install Loop
+
+You will need TestFlight, from the Apple App Store, installed on your [Compatible Phone](../build/step2.md). You will install Loop on that phone using the TestFlight app.
+
+### Use Loop
+
+In order to use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
+
+For the initial steps, you'll be going back and forth between GitHub and Apple Developer webpages. It is best to open each in a separate window or tab for your browser.
 
 ## New Terms with GitHub Build
 
@@ -71,11 +90,11 @@ Review the entire process before starting and then go through slowly and careful
 
 These instructions allow you to build Loop without having access to a Mac. They also allow you to easily install Loop on phones that are not connected to your computer.
 
-* You can send builds and updates to those you care for easily
+* You can easily send Loop app updates to those you care for
 * You can access and install Loop if you lose or damage your device
 * You do not need to worry about correct Xcode/macOS versions
 
-The setup steps are somewhat involved, but nearly all are one time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use.
+The setup steps are somewhat involved, but nearly all are one-time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use.
 
 TestFlight can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
 
@@ -91,7 +110,7 @@ Your app must be updated once every 90 days, but it's simple to make a new build
     * Record these in a safe place so you can find them when you need them
     * A digital copy is best because you will be copying and pasting in different locations
 
-This list indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the Repository Secrets for your LoopWorkspace fork. So they are listed twice in the list below.
+This list indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the Secrets for your LoopWorkspace fork, so they are listed twice in the list below.
 
 !!! tip "A Note about Capitalization and Spaces"
     In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please use these names.
@@ -128,19 +147,6 @@ This list indicates what you need to record (save digitally so you can copy and 
 * GH_PAT
 * MATCH_PASSWORD
 
-
-## Prerequisites
-
-There are only two prerequisites to Build Loop with this method.
-
-1. Paid Apple Developer account
-1. Free GitHub account
-
-You will need TestFlight, from the Apple App Store, installed on your [Compatible Phone](../build/step2.md). You will install Loop on that phone using the TestFlight app.
-
-In order to use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
-
-For the initial steps, you'll be going back and forth between GitHub and Apple Developer webpages. It is best to open each in a separate window or tab for your browser.
 
 ## Apple Developer Account
 
