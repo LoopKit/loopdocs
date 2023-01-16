@@ -508,6 +508,8 @@ If you have never built Loop with Xcode using your TEAMID, you need to create an
 
 Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
 
+#### New Builders
+
 If you never built using Xcode, then after successfully performing the Add Identifiers Action, you will see these six items under `NAME`.
 
 * Loop
@@ -517,16 +519,30 @@ If you never built using Xcode, then after successfully performing the Add Ident
 * WatchApp
 * WatchAppExtension
 
-If you have built using Xcode, then at least the Loop identifier will appear with the name `XC com.TEAMID.loopkit.Loop`. There may be other names that start with XC and have other ending words; they can be ignored. Only the six listed above are of interest. If you are bothered by a lot of extra identifiers, see [Delete Identifiers](#delete-identifiers). But they don't hurt anything.
+#### Xcode Builders
+
+If you have built Loop using Xcode, then at least the Loop identifier will appear with the name `XC com.TEAMID.loopkit.Loop`. There may be other names that start with XC and have other ending words; they can be ignored. Only the six listed above are of interest, and only the first four of those need to be associated with your unique App Group. If you are bothered by a lot of extra identifiers and want yours to look more like those in the list above, see [Delete Identifiers](#delete-identifiers). It is not necessary to delete them, your choice.
+
+* The names you see if you previously build with Xcode depend on if you previously built Loop 2.2.x or an early version of Loop 3 while it was still the dev branch
+* While the exact name might be different from those seen by people who have never built, it is ok - the build should still work
+* The directions with the Identifier names that do not start with XC are correct for people who have never built Loop with Xcode
+
+#### All Builders
 
 The graphic below shows the identifiers before (top portion) and after (lower portion) the Action: Add Identifiers is executed for an individual who previously built Loop 2.2.9. The green rectangles highlight the four identifiers that need to be updated before moving on to the Create Certificates step.
 
 ![identifier before and after action if used xcode before](img/app-group-id-xc-build.svg){width="600"}
 {align="center"}
 
+#### New Builders
+
 If you never built with Xcode, you will be associating the Loop App Group you just created with the Loop identifier and adding a time sensitive capability to the Loop identifier.
 
+#### Xcode Builders
+
 If you have built with Xcode, you will be verifying the Loop identifier is properly configured.
+
+#### All Builders
 
 Find and click on the Loop identifier row to see the `Edit Your App ID Configuration` screen. You will be taking two actions for this identifier.
 
@@ -536,15 +552,22 @@ Find and click on the Loop identifier row to see the `Edit Your App ID Configura
     * (Loop) - If the word Configure shows up, tap on it
         * This opens the App Group Assignment screen
         * Check the box by Loop App Group and then Continue
-        * This opens the Modify App Capabilities confirmation screen
+        * This may open the Modify App Capabilities confirmation screen
         * Click on Confirm
 1. Continue scrolling down to the Time Sensitive Notifications row
     * Check, or confirm the box is checked, next to Time Sensitive Notifications
 
-If you have made no changes, the Save button at the top right will not be active and you should use the `< All Indentifiers` button at top left to return. If you have made changes, the Save button will be active and you should tap on it.
+#### New Builders
 
+* Once you make the changes, the Save button at the top right will become active
+* Review your changes and then tap on Save
 * This opens the Modify App Capabilities confirmation screen
 * Click on Confirm
+
+#### Xcode Builders
+
+* It is not expected that you will make changes, just to confirm that configuration is correct
+* Review the configuration and then tap on the `< All Indentifiers` button at top left
 
 The full list of Identifiers should be displayed again.
 
@@ -564,10 +587,13 @@ Looking at the App Services column, scroll down to the App Groups row
 * Click on the word Configure under the NOTES section
     * This opens the App Group Assignment screen
     * Check the box by Loop App Group and then Continue
-    * This opens the Modify App Capabilities confirmation screen
+    * This may open the Modify App Capabilities confirmation screen
     * Click on Confirm
 
 At the top right of the screen, tap on the Save button
+
+* This may open the Modify App Capabilities confirmation screen
+* Click on Confirm
 
 ## Create Loop App in App Store Connect
 
