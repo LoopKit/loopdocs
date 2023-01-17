@@ -14,7 +14,7 @@
     
     
       
-        <title>GitHub First Time - LoopDocs</title>
+        <title>GitHub First-Time - LoopDocs</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitHub First Time
+              GitHub First-Time
             
           </span>
         </div>
@@ -655,12 +655,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          GitHub First Time
+          GitHub First-Time
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        GitHub First Time
+        GitHub First-Time
       </a>
       
         
@@ -904,8 +904,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-certficates" class="md-nav__link">
-    Create Certficates
+  <a href="#create-certificates" class="md-nav__link">
+    Create Certificates
   </a>
   
 </li>
@@ -2690,8 +2690,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-certficates" class="md-nav__link">
-    Create Certficates
+  <a href="#create-certificates" class="md-nav__link">
+    Create Certificates
   </a>
   
 </li>
@@ -2764,7 +2764,7 @@
               
                 
                 
-                  <h1>GitHub First Time</h1>
+                  <h1>GitHub First-Time</h1>
                 
                 <h2 id="build-loop-using-github-actions">Build Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Actions<a class="headerlink" href="#build-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is only available with <abbr title="Latest release with major updates">Loop 3</abbr> and Loop development <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
@@ -3185,16 +3185,16 @@
 <li>If you still don't see <code>Settings</code>, then you are <strong>not</strong> on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> or you need to sign in to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
 <li>
 <p>After you click on Settings, your screen should look like the graphic below</p>
-<p align="center"><img alt="settings screen" src="../img/gh-settings.png" width="700" /></p>
+<p align="center"><img alt="settings screen" src="../img/gh-settings.svg" width="700" /></p>
 </li>
 </ul>
 </li>
 <li>
-<p>On the left side, find the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> dropdown and choose Actions</p>
+<p>On the left side, find the <code>Secrets and variables</code> dropdown and choose Actions</p>
 <ul>
 <li>
 <p>After you select on Actions, your screen should look like the graphic below</p>
-<p align="center"><img alt="action secrets screen" src="../img/gh-actions-secrets.png" width="700" /></p>
+<p align="center"><img alt="action secrets and variables screen" src="../img/gh-actions-secrets.svg" width="700" /></p>
 </li>
 </ul>
 </li>
@@ -3282,14 +3282,18 @@
 <p>Tap the green button that says "Run workflow".</p>
 <p align="center"><img alt="add identifiers using github actions" src="../img/action-02-add-identifiers.svg" width="700" /></p>
 </li>
-<li>
-<p>Wait a minute or two for the action to finish</p>
+</ol>
+<p>The Add Identifier Action should complete (succeed or fail) in a few minutes as shown in the graphic below.</p>
 <ul>
-<li>If this action fails, head over to <a href="../gh-errors/#action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a></li>
+<li>If you see the green check continue to the next section</li>
+<li>If you see the red X<ul>
+<li><a href="../gh-errors/#examine-the-error">Examine the Error</a> tells you how to download the file needed to diagnose your problem.</li>
+<li><a href="../gh-errors/#action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a> lets you know what to search for in the downloaded file</li>
 <li>Once you've resolved the error, repeat the Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> step</li>
 </ul>
 </li>
-</ol>
+</ul>
+<p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result.svg" width="700" /></p>
 <h2 id="configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop<a class="headerlink" href="#configure-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="create-app-group">Create <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr><a class="headerlink" href="#create-app-group" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> already exists if you previously built Loop using <abbr title="program used to build an app">Xcode</abbr> with this Apple Developer ID.</p>
@@ -3460,7 +3464,7 @@
 <p>You are done with this step and ready to Create Certificates</p>
 </li>
 </ul>
-<h2 id="create-certficates">Create Certficates<a class="headerlink" href="#create-certficates" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Early Adopters</p>
 <p>If you started using this method before <abbr title="Latest release with major updates">Loop 3</abbr> was released, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a>.</p>
