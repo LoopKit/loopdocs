@@ -3100,17 +3100,6 @@
 <p class="admonition-title">Existing Fork</p>
 <p>Some people may already have a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace. Click on <a href="#already-have-loopworkspace">Already Have LoopWorkspace</a>, decide what to do and follow the appropriate link back to these instructions.</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Graphics OutDated</p>
-<p>The figure below is incorrect in 2 ways</p>
-<ul>
-<li>It shows <code>dev</code> instead of <code>main</code></li>
-<li>It shows the box for "Copy the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> only" unchecked<ul>
-<li>Leave that box checked</li>
-</ul>
-</li>
-</ul>
-</div>
 <ol>
 <li>Open this link <a href="https://github.com/LoopKit/LoopWorkspace">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/LoopWorkspace</a> to open the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> owned by LoopKit.</li>
 <li>Review the highlighted locations of the graphic below (yours won't look quite like this yet), but the <code>Fork</code> button is in the same place</li>
@@ -3123,14 +3112,14 @@
 <ul>
 <li>Your username will be automatically filled in as the Owner</li>
 <li>LoopWorkspace is automatically filled in as the Repository Name</li>
-<li>Leave the selection that says "Copy the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> only" checked (not like the graphic)</li>
+<li>Leave the selection that says "Copy the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> only" checked</li>
 <li>Click on the green <code>Create fork</code> button</li>
 </ul>
-<p align="center"><img alt="fork information for LoopWorkspace" src="../img/gh-fork-loopworkspace.png" width="700" /></p>
+<p align="center"><img alt="fork information for LoopWorkspace" src="../img/gh-fork-loopworkspace.svg" width="700" /></p>
 </li>
 </ol>
 <h3 id="successful-fork">Successful Fork<a class="headerlink" href="#successful-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>After creating the <abbr title="a copy of code in a github repository other than the original">fork</abbr>, your screen should be similar to the next graphic. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.</p>
+<p>After creating the <abbr title="a copy of code in a github repository other than the original">fork</abbr>, your screen should be similar to the next graphic - it will say <code>main</code> for the <abbr title="version of code within a single repository or workspace repository">branch</abbr> instead of <code>dev</code> because this graphic was prepared before the release of <abbr title="Latest release with major updates">Loop 3</abbr>. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.</p>
 <ul>
 <li>Near the top right, click on the X to dismiss the successfully fetched message</li>
 <li>In the middle, click on the Dismiss button to remove the "Your <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not protected message"</li>
@@ -3140,10 +3129,10 @@
 <ul>
 <li>Note that your username is now showing</li>
 <li>The comment under your username indicates where the <abbr title="a copy of code in a github repository other than the original">fork</abbr> came from (that is a clickable link)</li>
-<li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> that is selected is dev - you can modify this with the dropdown, but leave it for now</li>
-<li>The message says "This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date with LoopKit/LoopWorkspace:dev"</li>
+<li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> that is selected is <code>main</code></li>
+<li>The message says "This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date with LoopKit/LoopWorkspace:main"</li>
 </ul>
-<p align="center"><img alt="after creating the fork LoopWorkspace" src="../img/gh-after-fork.png" width="700" /></p>
+<p align="center"><img alt="after creating the fork LoopWorkspace" src="../img/gh-after-fork.svg" width="700" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Time for a Break?</p>
 <p>This is a good place to pause if you need to. Just note where you are on the page so you can return later.</p>
@@ -3262,6 +3251,11 @@
 <p>This is a good place to pause if you need to. Just note where you are on the page so you can return later.</p>
 </div>
 <h2 id="add-identifiers-for-loop">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop<a class="headerlink" href="#add-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Early Adopters</p>
+<p>If you started using this method before <abbr title="Latest release with major updates">Loop 3</abbr> was released, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a>.</p>
+<p>Once you have added identifiers from any <abbr title="version of code within a single repository or workspace repository">branch</abbr>, the only reason to run add identifiers again is if a new one is added to <code>dev</code>. If you are using <code>dev</code>, you should be active on <a href="https://loop.zulipchat.com/#streams/144182/development">Loop zulipchat</a>.</p>
+</div>
 <p>Near the top middle of your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>, there is an Actions tab. If you have used Actions on this <abbr title="contains project files and each file's revision history">repository</abbr> before, skip ahead to <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
 <h3 id="first-use-of-actions-tab">First Use of Actions Tab<a class="headerlink" href="#first-use-of-actions-tab" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
@@ -3280,8 +3274,8 @@
 <li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on "Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>"</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
-<li>Once <abbr title="Latest release with major updates">Loop 3</abbr> is released, you will see <code>main</code> instead of <code>dev</code></li>
-<li>It is optional to change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> (select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
+<li>If you have additional branches, you can change the <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example, select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ul>
 </li>
 <li>
@@ -3448,11 +3442,18 @@
 <p align="center"><img alt="find removed apps" src="../img/find-removed-app.png" width="600" /></p>
 </li>
 <li>
-<p>Insure this is the app you want by selecting on App Information, highlighted on the left side. Examine is Bundle ID (not in view in this graphic) - confirm it is correct. Then scroll down to the bottom and choose <code>Restore App</code>.</p>
+<p>Ensure this is the app you want by selecting on App Information, highlighted on the left side in the graphic below. </p>
+<ul>
+<li>Examine its Bundle ID (not in view in this graphic) - confirm it is correct. </li>
+<li>The format should be: <code>com.TEAMID.loopkit.Loop</code> with your TEAMID included</li>
+</ul>
+</li>
+<li>
+<p>Then scroll down to the bottom and choose <code>Restore App</code>.</p>
 <p align="center"><img alt="find removed apps" src="../img/restore-removed-01.png" width="800" /></p>
 </li>
 <li>
-<p>Make sure User Access is still set to Full Access and click on Restore.</p>
+<p>Make sure User Access is set to Full Access and click on Restore.</p>
 <p align="center"><img alt="find removed apps" src="../img/restore-removed-02.png" width="800" /></p>
 </li>
 <li>
@@ -3460,13 +3461,18 @@
 </li>
 </ul>
 <h2 id="create-certficates">Create Certficates<a class="headerlink" href="#create-certficates" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Early Adopters</p>
+<p>If you started using this method before <abbr title="Latest release with major updates">Loop 3</abbr> was released, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a>.</p>
+<p>Once you have created certificates from any <abbr title="version of code within a single repository or workspace repository">branch</abbr>, the only reason to create them again would be if a new identifier is added to <code>dev</code> - in which case you need to start with the add identifier action. If you are using <code>dev</code>, you should be active on <a href="https://loop.zulipchat.com/#streams/144182/development">Loop zulipchat</a>.</p>
+</div>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
 <li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on "Create Certificates"</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
-<li>Once <abbr title="Latest release with major updates">Loop 3</abbr> is released, you will see <code>main</code> instead of <code>dev</code></li>
-<li>It is optional to change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> (select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
+<li>If you have additional branches, you can change the <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example, select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ul>
 </li>
 <li>
@@ -3487,8 +3493,9 @@
 <li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
 <li>On the left side, click on "Build Loop".</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
-<li>Once <abbr title="Latest release with major updates">Loop 3</abbr> is released, you will see <code>main</code> instead of <code>dev</code></li>
-<li>It is optional to change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> (select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
+<li>If your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not <code>main</code>, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a></li>
+<li>If you have additional branches, you can change the <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example, select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ul>
 </li>
 <li>
@@ -3512,7 +3519,7 @@
 </ol>
 <h2 id="set-up-users-and-access-testflight">Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)<a class="headerlink" href="#set-up-users-and-access-testflight" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Once the first build completes, you will be able to configure <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for the app.</p>
-<p>You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the Apple ID email address for each adult installing from your build. When building for a child, you will use your own Apple ID, not theirs. See <a href="#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a>.</p>
+<p>You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the Apple ID email address for each adult installing from your build. When building for a child, you will use your own Apple ID, not theirs. See <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a>.</p>
 <ol>
 <li>
 <p>First you need to add the email adress(es) to your App Store Connect Access Users list:</p>
