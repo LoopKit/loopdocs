@@ -381,13 +381,13 @@ You need to be logged into GitHub.
     * If you still don't see `Settings`, then you are **not** on your fork or you need to sign in to your GitHub account
     * After you click on Settings, your screen should look like the graphic below
 
-        ![settings screen](img/gh-settings.png){width="700"}
+        ![settings screen](img/gh-settings.svg){width="700"}
         {align="center"}
 
-1. On the left side, find the Secrets dropdown and choose Actions
+1. On the left side, find the `Secrets and variables` dropdown and choose Actions
     * After you select on Actions, your screen should look like the graphic below
 
-        ![action secrets screen](img/gh-actions-secrets.png){width="700"}
+        ![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
         {align="center"}
 
 1. Tap on the green button at the top right of your screen labeled "New repository secret" (refer to graphic above where the button is highlighted)
@@ -483,9 +483,16 @@ Refer to the graphic below for the numbered steps:
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
     {align="center"}
 
-1. Wait a minute or two for the action to finish
-    * If this action fails, head over to [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors)
+The Add Identifier Action should complete (succeed or fail) in a few minutes as shown in the graphic below.
+
+* If you see the green check continue to the next section
+* If you see the red X
+    * [Examine the Error](gh-errors.md#examine-the-error) tells you how to download the file needed to diagnose your problem.
+    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) lets you know what to search for in the downloaded file
     * Once you've resolved the error, repeat the Action: Add Identifiers step
+
+![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result.svg){width="700"}
+{align="center"}
 
 ## Configure Identifiers for Loop
 
@@ -667,7 +674,7 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 * You are done with this step and ready to Create Certificates
 
-## Create Certficates
+## Create Certificates
 
 !!! warning "Early Adopters"
     If you started using this method before Loop 3 was released, review [GitHub Early Adopters](gh-update.md#github-early-adopters).
