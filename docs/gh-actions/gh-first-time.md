@@ -306,13 +306,6 @@ You are done with this part of the set up.
 !!! warning "Existing Fork"
     Some people may already have a fork of LoopWorkspace. Click on [Already Have LoopWorkspace](#already-have-loopworkspace), decide what to do and follow the appropriate link back to these instructions.
 
-!!! warning "Graphics OutDated"
-    The figure below is incorrect in 2 ways
-
-    * It shows `dev` instead of `main`
-    * It shows the box for "Copy the dev branch only" unchecked
-        * Leave that box checked
-
 1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the LoopWorkspace repository owned by LoopKit.
 1. Review the highlighted locations of the graphic below (yours won't look quite like this yet), but the `Fork` button is in the same place
 1. At upper right side of the screen, click on the word Fork
@@ -320,15 +313,15 @@ You are done with this part of the set up.
 1. Now your screen should look like the graphic below
     * Your username will be automatically filled in as the Owner
     * LoopWorkspace is automatically filled in as the Repository Name
-    * Leave the selection that says "Copy the main branch only" checked (not like the graphic)
+    * Leave the selection that says "Copy the main branch only" checked
     * Click on the green `Create fork` button
 
-    ![fork information for LoopWorkspace](img/gh-fork-loopworkspace.png){width="700"}
+    ![fork information for LoopWorkspace](img/gh-fork-loopworkspace.svg){width="700"}
     {align="center"}
 
 ### Successful Fork
 
-After creating the fork, your screen should be similar to the next graphic. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
+After creating the fork, your screen should be similar to the next graphic - it will say `main` for the branch instead of `dev` because this graphic was prepared before the release of Loop 3. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
 
 * Near the top right, click on the X to dismiss the successfully fetched message
 * In the middle, click on the Dismiss button to remove the "Your branch is not protected message"
@@ -340,10 +333,10 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 * Note that your username is now showing
 * The comment under your username indicates where the fork came from (that is a clickable link)
-* The branch that is selected is dev - you can modify this with the dropdown, but leave it for now
-* The message says "This branch is up to date with LoopKit/LoopWorkspace:dev"
+* The branch that is selected is `main`
+* The message says "This branch is up to date with LoopKit/LoopWorkspace:main"
 
-![after creating the fork LoopWorkspace](img/gh-after-fork.png){width="700"}
+![after creating the fork LoopWorkspace](img/gh-after-fork.svg){width="700"}
 {align="center"}
 
 !!! tip "Time for a Break?"
@@ -454,6 +447,11 @@ Once all six secrets have been added to your LoopWorkspace, you are done with Se
 
 ## Add Identifiers for Loop
 
+!!! warning "Early Adopters"
+    If you started using this method before Loop 3 was released, review [GitHub Early Adopters](gh-update.md#github-early-adopters).
+    
+    Once you have added identifiers from any branch, the only reason to run add identifiers again is if a new one is added to `dev`. If you are using `dev`, you should be active on [Loop zulipchat](https://loop.zulipchat.com/#streams/144182/development).
+
 Near the top middle of your LoopWorkspace fork, there is an Actions tab. If you have used Actions on this repository before, skip ahead to [Add Identifiers](#add-identifiers).
 
 ### First Use of Actions Tab
@@ -478,8 +476,8 @@ Refer to the graphic below for the numbered steps:
 1. Click on the "Actions" tab of your LoopWorkspace repository
 1. On the left side, click on "Add Identifiers"
 1. On the right side, click "Run Workflow" to show a drop-down menu
-    * Once Loop 3 is released, you will see `main` instead of `dev`
-    * It is optional to change the branch (select `dev` for the development branch)
+    * You will see your default branch (should be `main`)
+    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
 1. Tap the green button that says "Run workflow".
 
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
@@ -654,12 +652,15 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
     ![find removed apps](img/find-removed-app.png){width="600"}
     {align="center"}
 
-* Insure this is the app you want by selecting on App Information, highlighted on the left side. Examine is Bundle ID (not in view in this graphic) - confirm it is correct. Then scroll down to the bottom and choose `Restore App`.
+* Ensure this is the app you want by selecting on App Information, highlighted on the left side in the graphic below. 
+    * Examine its Bundle ID (not in view in this graphic) - confirm it is correct. 
+    * The format should be: `com.TEAMID.loopkit.Loop` with your TEAMID included
+* Then scroll down to the bottom and choose `Restore App`.
 
     ![find removed apps](img/restore-removed-01.png){width="800"}
     {align="center"}
 
-* Make sure User Access is still set to Full Access and click on Restore.
+* Make sure User Access is set to Full Access and click on Restore.
 
     ![find removed apps](img/restore-removed-02.png){width="800"}
     {align="center"}
@@ -668,13 +669,18 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 ## Create Certficates
 
+!!! warning "Early Adopters"
+    If you started using this method before Loop 3 was released, review [GitHub Early Adopters](gh-update.md#github-early-adopters).
+    
+    Once you have created certificates from any branch, the only reason to create them again would be if a new identifier is added to `dev` - in which case you need to start with the add identifier action. If you are using `dev`, you should be active on [Loop zulipchat](https://loop.zulipchat.com/#streams/144182/development).
+
 Refer to the graphic below for the numbered steps:
 
 1. Click on the "Actions" tab of your LoopWorkspace repository
 1. On the left side, click on "Create Certificates"
 1. On the right side, click "Run Workflow" to show a drop-down menu
-    * Once Loop 3 is released, you will see `main` instead of `dev`
-    * It is optional to change the branch (select `dev` for the development branch)
+    * You will see your default branch (should be `main`)
+    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
 1. Tap the green button that says "Run workflow".
 
     ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
@@ -692,8 +698,9 @@ Refer to the graphic below for the first four steps:
 1. Click on the "Actions" tab of your LoopWorkspace repository.
 1. On the left side, click on "Build Loop".
 1. On the right side, click "Run Workflow" to show a drop-down menu
-    * Once Loop 3 is released, you will see `main` instead of `dev`
-    * It is optional to change the branch (select `dev` for the development branch)
+    * You will see your default branch (should be `main`)
+    * If your default branch is not `main`, review [GitHub Early Adopters](gh-update.md#github-early-adopters)
+    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
 1. Tap the green button that says "Run workflow".
 
     ![build loop using github actions](img/action-04-build-loop.svg){width="700"}
@@ -712,7 +719,7 @@ Refer to the graphic below for the first four steps:
 
 Once the first build completes, you will be able to configure TestFlight for the app.
 
-You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the Apple ID email address for each adult installing from your build. When building for a child, you will use your own Apple ID, not theirs. See [Install TestFlight Loop for Child](#install-testflight-loop-for-child).
+You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the Apple ID email address for each adult installing from your build. When building for a child, you will use your own Apple ID, not theirs. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
 
 1. First you need to add the email adress(es) to your App Store Connect Access Users list:
 
