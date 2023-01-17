@@ -381,13 +381,13 @@ You need to be logged into GitHub.
     * If you still don't see `Settings`, then you are **not** on your fork or you need to sign in to your GitHub account
     * After you click on Settings, your screen should look like the graphic below
 
-        ![settings screen](img/gh-settings.png){width="700"}
+        ![settings screen](img/gh-settings.svg){width="700"}
         {align="center"}
 
-1. On the left side, find the Secrets dropdown and choose Actions
+1. On the left side, find the `Secrets and variables` dropdown and choose Actions
     * After you select on Actions, your screen should look like the graphic below
 
-        ![action secrets screen](img/gh-actions-secrets.png){width="700"}
+        ![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
         {align="center"}
 
 1. Tap on the green button at the top right of your screen labeled "New repository secret" (refer to graphic above where the button is highlighted)
