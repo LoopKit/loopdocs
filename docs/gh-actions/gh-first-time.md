@@ -306,13 +306,6 @@ You are done with this part of the set up.
 !!! warning "Existing Fork"
     Some people may already have a fork of LoopWorkspace. Click on [Already Have LoopWorkspace](#already-have-loopworkspace), decide what to do and follow the appropriate link back to these instructions.
 
-!!! warning "Graphics OutDated"
-    The figure below is incorrect in 2 ways
-
-    * It shows `dev` instead of `main`
-    * It shows the box for "Copy the dev branch only" unchecked
-        * Leave that box checked
-
 1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the LoopWorkspace repository owned by LoopKit.
 1. Review the highlighted locations of the graphic below (yours won't look quite like this yet), but the `Fork` button is in the same place
 1. At upper right side of the screen, click on the word Fork
@@ -320,15 +313,15 @@ You are done with this part of the set up.
 1. Now your screen should look like the graphic below
     * Your username will be automatically filled in as the Owner
     * LoopWorkspace is automatically filled in as the Repository Name
-    * Leave the selection that says "Copy the main branch only" checked (not like the graphic)
+    * Leave the selection that says "Copy the main branch only" checked
     * Click on the green `Create fork` button
 
-    ![fork information for LoopWorkspace](img/gh-fork-loopworkspace.png){width="700"}
+    ![fork information for LoopWorkspace](img/gh-fork-loopworkspace.svg){width="700"}
     {align="center"}
 
 ### Successful Fork
 
-After creating the fork, your screen should be similar to the next graphic. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
+After creating the fork, your screen should be similar to the next graphic - it will say `main` for the branch instead of `dev` because this graphic was prepared before the release of Loop 3. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
 
 * Near the top right, click on the X to dismiss the successfully fetched message
 * In the middle, click on the Dismiss button to remove the "Your branch is not protected message"
@@ -340,10 +333,10 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 * Note that your username is now showing
 * The comment under your username indicates where the fork came from (that is a clickable link)
-* The branch that is selected is dev - you can modify this with the dropdown, but leave it for now
-* The message says "This branch is up to date with LoopKit/LoopWorkspace:dev"
+* The branch that is selected is `main`
+* The message says "This branch is up to date with LoopKit/LoopWorkspace:main"
 
-![after creating the fork LoopWorkspace](img/gh-after-fork.png){width="700"}
+![after creating the fork LoopWorkspace](img/gh-after-fork.svg){width="700"}
 {align="center"}
 
 !!! tip "Time for a Break?"
