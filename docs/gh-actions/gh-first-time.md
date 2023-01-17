@@ -454,6 +454,11 @@ Once all six secrets have been added to your LoopWorkspace, you are done with Se
 
 ## Add Identifiers for Loop
 
+!!! warning "Early Adopters"
+    If you started using this method before Loop 3 was released, review [GitHub Early Adopters](gh-update.md#github-early-adopters).
+    
+    Once you have added identifiers from any branch, the only reason to run add identifiers again is if a new one is added to `dev`. If you are using `dev`, you should be active on [Loop zulipchat](https://loop.zulipchat.com/#streams/144182/development).
+
 Near the top middle of your LoopWorkspace fork, there is an Actions tab. If you have used Actions on this repository before, skip ahead to [Add Identifiers](#add-identifiers).
 
 ### First Use of Actions Tab
@@ -478,8 +483,8 @@ Refer to the graphic below for the numbered steps:
 1. Click on the "Actions" tab of your LoopWorkspace repository
 1. On the left side, click on "Add Identifiers"
 1. On the right side, click "Run Workflow" to show a drop-down menu
-    * Once Loop 3 is released, you will see `main` instead of `dev`
-    * It is optional to change the branch (select `dev` for the development branch)
+    * You will see your default branch (should be `main`)
+    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
 1. Tap the green button that says "Run workflow".
 
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
@@ -654,12 +659,15 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
     ![find removed apps](img/find-removed-app.png){width="600"}
     {align="center"}
 
-* Insure this is the app you want by selecting on App Information, highlighted on the left side. Examine is Bundle ID (not in view in this graphic) - confirm it is correct. Then scroll down to the bottom and choose `Restore App`.
+* Ensure this is the app you want by selecting on App Information, highlighted on the left side in the graphic below. 
+    * Examine its Bundle ID (not in view in this graphic) - confirm it is correct. 
+    * The format should be: `com.TEAMID.loopkit.Loop` with your TEAMID included
+* Then scroll down to the bottom and choose `Restore App`.
 
     ![find removed apps](img/restore-removed-01.png){width="800"}
     {align="center"}
 
-* Make sure User Access is still set to Full Access and click on Restore.
+* Make sure User Access is set to Full Access and click on Restore.
 
     ![find removed apps](img/restore-removed-02.png){width="800"}
     {align="center"}
@@ -668,13 +676,18 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 ## Create Certficates
 
+!!! warning "Early Adopters"
+    If you started using this method before Loop 3 was released, review [GitHub Early Adopters](gh-update.md#github-early-adopters).
+    
+    Once you have created certificates from any branch, the only reason to create them again would be if a new identifier is added to `dev` - in which case you need to start with the add identifier action. If you are using `dev`, you should be active on [Loop zulipchat](https://loop.zulipchat.com/#streams/144182/development).
+
 Refer to the graphic below for the numbered steps:
 
 1. Click on the "Actions" tab of your LoopWorkspace repository
 1. On the left side, click on "Create Certificates"
 1. On the right side, click "Run Workflow" to show a drop-down menu
-    * Once Loop 3 is released, you will see `main` instead of `dev`
-    * It is optional to change the branch (select `dev` for the development branch)
+    * You will see your default branch (should be `main`)
+    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
 1. Tap the green button that says "Run workflow".
 
     ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
@@ -692,8 +705,9 @@ Refer to the graphic below for the first four steps:
 1. Click on the "Actions" tab of your LoopWorkspace repository.
 1. On the left side, click on "Build Loop".
 1. On the right side, click "Run Workflow" to show a drop-down menu
-    * Once Loop 3 is released, you will see `main` instead of `dev`
-    * It is optional to change the branch (select `dev` for the development branch)
+    * You will see your default branch (should be `main`)
+    * If your default branch is not `main`, review [GitHub Early Adopters](gh-update.md#github-early-adopters)
+    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
 1. Tap the green button that says "Run workflow".
 
     ![build loop using github actions](img/action-04-build-loop.svg){width="700"}
@@ -712,7 +726,7 @@ Refer to the graphic below for the first four steps:
 
 Once the first build completes, you will be able to configure TestFlight for the app.
 
-You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the Apple ID email address for each adult installing from your build. When building for a child, you will use your own Apple ID, not theirs. See [Install TestFlight Loop for Child](#install-testflight-loop-for-child).
+You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the Apple ID email address for each adult installing from your build. When building for a child, you will use your own Apple ID, not theirs. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
 
 1. First you need to add the email adress(es) to your App Store Connect Access Users list:
 
