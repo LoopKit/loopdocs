@@ -2500,8 +2500,8 @@
 <p>Build Loop - refer to graphic below as you follow the steps</p>
 <ul>
 <li>Click on the 'Actions' tab</li>
-<li>Select the 'Build Loop' workflow on the left</li>
-<li>Look on the right and click 'Run workflow'</li>
+<li>Select the 'Build Loop' <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> on the left</li>
+<li>Look on the right and click 'Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>'</li>
 <li>Make sure the desired Branch is selected</li>
 <li>Click on the green <code>Run workflow</code> button in the dropdown</li>
 <li>Wait ~25-45 min for the build to complete and be processed by <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
@@ -2582,7 +2582,36 @@
 </ol>
 <p align="center"><img alt="access to branches display" src="../img/early-adopter-02.svg" width="700" /></p>
 <h3 id="set-default-branch">Set Default Branch<a class="headerlink" href="#set-default-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>More docs to come. In the meantime, when you run Actions: Build Loop, select <code>main</code> as the <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>Whenever you tap on Actions: Build Loop, you have the chance to select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> before starting the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>. But it's really better that the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want, typically <code>main</code>, be the default. That way you won't forget when you start the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> (tell <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to start building).</p>
+<p>If your desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, these are the steps to modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. For this example, we show how to change from a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>dev</code> to a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>main</code>. Note - only the owner of the <abbr title="contains project files and each file's revision history">repository</abbr> can take this action and they must be logged in. Otherwise the Settings tab does not appear.</p>
+<p>For the numbered steps below, refer to the graphic found under each group of steps.</p>
+<ol>
+<li>Click on the Settings Icon near the top right of your LoopWorkspace</li>
+<li>
+<p>On the left side, click the <code>Branches</code> tab to open the Default Branch dialog screen</p>
+<p align="center"><img alt="show default branch" src="../img/gh-settings-branch-01.svg" width="700" /></p>
+</li>
+<li>
+<p>To the right of the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> name there is a pencil and a left-right arrow icon</p>
+<ul>
+<li>Tap on the icon to bring up the <code>Switch default branch to another branch</code> dialog</li>
+</ul>
+</li>
+<li>Click on the dropdown next to the current default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, in this example, <code>dev</code></li>
+<li>Select the desired default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, in this example, <code>main</code></li>
+<li>
+<p>Click on the <code>Update</code> button</p>
+<p align="center"><img alt="modify default branch" src="../img/gh-settings-branch-02.svg" width="700" /></p>
+</li>
+<li>
+<p>You will be presented with an are-you-sure question.</p>
+<ul>
+<li>Click on the red <code>I understand, update the default branch.</code> button</li>
+</ul>
+<p align="center"><img alt="confirm default branch" src="../img/gh-settings-branch-03.svg" width="400" /></p>
+</li>
+</ol>
+<p>Your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> has been changed.</p>
                 
               
               
