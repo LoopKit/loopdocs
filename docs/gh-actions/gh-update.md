@@ -233,8 +233,34 @@ If you previously built when dev was the default branch, your initial new branch
 ![access to branches display](img/early-adopter-02.svg){width="700"}
 {align="center"}
 
-
 ### Set Default Branch
 
-More docs to come. In the meantime, when you run Actions: Build Loop, select `main` as the branch.
+Whenever you tap on Actions: Build Loop, you have the chance to select the desired branch before starting the workflow. But it's really better that the branch you want, typically `main`, be the default. That way you won't forget when you start the workflow (tell GitHub to start building).
 
+If your desired branch is not the default branch, these are the steps to modify the default branch. For this example, we show how to change from a default branch of `dev` to a default branch of `main`. Note - only the owner of the repository can take this action and they must be logged in. Otherwise the Settings tab does not appear.
+
+For the numbered steps below, refer to the graphic found under each group of steps.
+
+1. Click on the Settings Icon near the top right of your LoopWorkspace
+1. On the left side, click the `Branches` tab to open the Default Branch dialog screen
+
+    ![show default branch](img/gh-settings-branch-01.svg){width="700"}
+    {align="center"}
+
+1. To the right of the default branch name there is a pencil and a left-right arrow icon
+    * Tap on the icon to bring up the `Switch default branch to another branch` dialog
+1. Click on the dropdown next to the current default branch, in this example, `dev`
+1. Select the desired default branch, in this example, `main`
+1. Click on the `Update` button
+
+    ![modify default branch](img/gh-settings-branch-02.svg){width="700"}
+    {align="center"}
+
+1. You will be presented with an are-you-sure question.
+    * Click on the red `I understand, update the default branch.` button
+
+
+    ![confirm default branch](img/gh-settings-branch-03.svg){width="400"}
+    {align="center"}
+
+Your default branch has been changed.

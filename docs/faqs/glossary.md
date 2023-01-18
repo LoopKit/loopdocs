@@ -185,6 +185,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **watchOS**: Apple watch operating system; must be compatible with phone iOS
 
+**workflow**: a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository
+
 **Workspace**: a grouping of several repositories into a complete package
 
 **Xcode Preferences**: older name for Xcode Settings
