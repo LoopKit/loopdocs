@@ -56,6 +56,11 @@ This can be caused by an error in the value (or spelling) of one of these keys:
 * FASTLANE_KEY
 * GH_PAT
 
+!!! danger "Use a Text-Only Editor"
+    If you used a "smart" editor when saving your Secrets in an archive file before pasting into the repository Secrets, it might have changed a lower case letter to an upper case letter.
+
+    If even one character is capitalized when it should not be, you will not succeed at the Add Identifiers step.
+
 ### Invalid curve name
 
 If you see:
