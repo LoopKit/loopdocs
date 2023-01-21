@@ -606,7 +606,7 @@ This step depends on whether you previously built Loop 3 (or if you built when i
 
 * If you never built Loop with Xcode, you will need to Configure each Identifier
 * If you built Loop 2.2.x (or FreeAPS) with Xcode, you will need to Configure each Identifier
-* If you built Loop 3 with Xcode, make sure you see Edit (not Configure) for each Identifier; if one shows Configure, then add your App
+* If you built Loop 3 with Xcode, make sure you see Edit (not Configure) for each Identifier; if one shows Configure, then you must configure that identifier as detailed below
 
 For the next three identifiers, make sure the associated App Group is group.com.TEAMID.loopkit.LoopGroup, with your TEAMID. This step will be repeated once for each of these identifiers.
 
@@ -817,7 +817,7 @@ Suggestions - choose one of these methods:
     * If you see a message that your fork is not up to date - tap on the Sync fork button and follow instructions
     * Continue with the [Create GH_PAT](#create-gh_pat) section
 * Rename or delete that repository if it is from somewhere other than LoopKit or if you just prefer to start fresh
-    * Instructions to delete are repository: [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+    * Instructions to delete a repository are found at[GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
     * You just need to make sure that a repository called LoopWorkspace is no longer in your GitHub account
     * Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
 
