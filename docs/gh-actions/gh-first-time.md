@@ -15,6 +15,7 @@ This is only available with Loop 3 and Loop development branch.
     Once you have Apple Developer and GitHub accounts
 
     * Apple: Generate an API Key
+    * GitHub: Create an access token (GH_PAT)
     * GitHub: Create a Match-Secrets private repository
     * GitHub: Fork a copy of LoopWorkspace and add Secrets
     * GitHub: Action: Add Identifiers
@@ -67,7 +68,7 @@ Some of these terms have ToolTips, so hover your mouse over the item - or review
     * Some of these modules must be associated with your unique App Group
     * Others do not have this requirement
 * Identifiers: The "Identifiers" are the names of the Modules that must be available to build Loop with GitHub
-    * There are 4 Identifiers that must be associated with your App Group
+    * There are 4 Identifiers for LoopWorkspace that must be associated with your App Group
         * Loop, Loop Intent Extension, Loop Status Extension and Small Status Widget
     * There are 2 other Identifiers that do not require that association
         * WatchApp and WatchAppExtension
@@ -77,6 +78,7 @@ Some of these terms have ToolTips, so hover your mouse over the item - or review
 * Secrets: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop
     * There are 6 Secrets that must be added to your fork of LoopWorkspace
     * These Secrets work for any branch in your fork (main or dev, for example)
+    * These same Secrets can be added to your fork of another repository configured with the same GitHub build method - there will soon be other repositories using this method. Please be patient.
 * [App Store Connect](https://appstoreconnect.apple.com): a website available for Apple Developers to review their apps
     * Once you purchase an Apple Developer annual account, you are an Apple Developer and have access to this site
     * Most Loopers will just have one App (Loop) on their page (and only after a successful build)
@@ -98,6 +100,13 @@ The setup steps are somewhat involved, but nearly all are one-time steps. Subseq
 TestFlight can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
 
 Your app must be updated once every 90 days, but it's simple to make a new build and can be done from anywhere, see [Update Loop using GitHub Actions](gh-update.md).
+
+!!! tip "Expect Updates"
+    Plans are in progress to configure the GitHub action to automatically build every 60 days. Once this is in place, then you won't need to worry about building every 90 days. But these are just plans right now.
+
+    In the meantime, configure your GH_PAT to expire every 90 days. This acts as a reminder to rebuild. (You get an email from GitHub about a week ahead of time.)
+
+    Keep checking back, or at least check when your 90-day GH_PAT expires. When the GitHub build process is updated, you can sync your fork, create a new GH_PAT that never expires, update it in secrets, create certs and build. But that is for the future.
 
 ### Save Your Information
 
@@ -239,7 +248,7 @@ In summary, from this section, you have found or generated the following, and sa
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
-## GitHub Account
+## New GitHub Account
 
 If you have a GitHub account, you can skip to [Setup GitHub](#setup-github). Make sure you know your GitHub associated email, username and password.
 
@@ -263,7 +272,29 @@ The free level comes with plenty of storage and compute time to build loop.
 
 ## Setup GitHub
 
-Now you will create one new repository and then fork the LoopWorkspace repository.
+Now you will configure a personal access token (GH_PAT), create one new repository and then fork the LoopWorkspace repository.
+
+### Create GH_PAT
+
+You must be logged into your GitHub account before starting this step. If you are continuing, you are already logged in.
+
+1. You will be creating a new GitHub Personal Access token and giving it the name "FastLane Access Token"
+1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
+    * Referring to the graphic, type FastLane Access Token in the Note box
+    * The default Expiration time is 30 days - but you should select 90 days (use the drop down menu to select)
+        * You get an email when this token is close to expiration
+        * Since you must rebuild every 90 days, setting the Expiration time to 90 days acts as a convenient reminder
+        * See [GitHub Token](../gh-actions/gh-update.md#github-token) for instructions on regenerating when doing an update
+    * Add a check beside the `repo` permission scope
+    * Scroll all the way to the bottom and click "Generate token" (it's a long way, ignore all other settings, do not check anything else)
+
+    ![request a new personal access token](img/gh-access-token.png){width="700"}
+    {align="center"}
+
+
+1. A new screen appears showing your access token
+    * Copy the token and record it - once you leave this screen you can't see it again
+    * You will use this for `GH_PAT` when you set up your Secrets
 
 ### Create Match-Secrets
 
@@ -342,29 +373,12 @@ Carefully compare your screen to the graphic below paying attention to the highl
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
-### Create Access Token
-
-If you are returning from a break, be sure to log into your GitHub account before starting this step. If you are continuing, you are already logged in.
-
-1. You will be creating a new GitHub Personal Access token and giving it the name "FastLane Access Token"
-1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
-    * Referring to the graphic, type FastLane Access Token in the Note box
-    * The default Expiration time is 30 days - but you should select 90 days (use the drop down menu to select)
-        * You get an email when this token is close to expiration
-        * Since you must rebuild every 90 days, setting the Expiration time to 90 days acts as a convenient reminder
-        * See [GitHub Token](../gh-actions/gh-update.md#github-token) for instructions on regenerating when doing an update
-    * Add a check beside the `repo` permission scope
-    * Scroll all the way to the bottom and click "Generate token" (it's a long way, ignore all other settings, do not check anything else)
-
-    ![request a new personal access token](img/gh-access-token.png){width="700"}
-    {align="center"}
-
-
-1. A new screen appears showing your access token
-    * Copy the token and record it - once you leave this screen you can't see it again
-    * You will use this for `GH_PAT` when you set up your Secrets
-
 ### Configure Secrets
+
+!!! tip "Secrets are Common"
+    * There are 6 Secrets that must be added to your fork of LoopWorkspace
+    * These Secrets work for any branch in your fork (main or dev, for example)
+    * These same Secrets can be added to your fork of another repository configured with the same GitHub build method - there will soon be other repositories using this method. Please be patient.
 
 You need to be logged into GitHub.
 
@@ -578,7 +592,13 @@ The full list of Identifiers should be displayed again.
 
 ### Add App Group to Other Identifiers
 
-For the next three identifiers, you must add the Loop App Group. This step will be repeated once for each of these identifiers.
+This step depends on whether you previously built Loop 3 (or if you built when it was the dev branch, but after the new status widget was added). If so, you can skip this step. To be cautious, confirm each identifier is properly associated with your App Group.
+
+* If you never built Loop with Xcode, you will need to Configure each Identifier
+* If you built Loop 2.2.x (or FreeAPS) with Xcode, you will need to Configure each Identifier
+* If you built Loop 3 with Xcode, make sure you see Edit (not Configure) for each Identifier; if one shows Configure, then add your App
+
+For the next three identifiers, you must add your Loop App Group. This step will be repeated once for each of these identifiers.
 
 * Loop Intent Extension
 * Loop Status Extension
@@ -589,7 +609,8 @@ Find and click on the identifier row to see the `Edit Your App ID Configuration`
 Looking at the App Services column, scroll down to the App Groups row
 
 * Ensure the check box under Capabilities is checked
-* Click on the word Configure under the NOTES section
+* Previous Loop 3 Builders: you should see the word Edit and one
+* Click on the word Configure under the NOTES section (if you see Edit, move on to next Identifier)
     * This opens the App Group Assignment screen
     * Check the box by Loop App Group and then Continue
     * This may open the Modify App Capabilities confirmation screen
@@ -784,9 +805,9 @@ Suggestions - choose one of these methods:
     * Review the graphic in the [Successful Fork](#successful-fork) section
         * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
     * If you see a message that your fork is not up to date - tap on the Sync fork button and follow instructions
-    * Continue with the [Create Access Token](#create-access-token) section
+    * Continue with the [Create GH_PAT](#create-gh_pat) section
 * Rename or delete that repository if it is from somewhere other than LoopKit or if you just prefer to start fresh
-    * Instructions to do this will be added later
+    * Instructions to delete are repository: [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
     * You just need to make sure that a repository called LoopWorkspace is no longer in your GitHub account
     * Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
 
