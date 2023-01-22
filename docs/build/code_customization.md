@@ -426,7 +426,7 @@ cell.datePicker.maximumDate = date.addingTimeInterval
 * Loop 3 only:
     * Folder: Loop/Loop/View Controllers
     * File:CarbEntryViewController.swift
-    * Line: 361
+    * Line: 438
     * Default shown below (for maximum and minimum):
 
 _Code Before Modification_
