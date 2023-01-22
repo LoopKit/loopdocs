@@ -16,7 +16,7 @@ Map to this section:
     - Description of the development process for Loop
     - Information you need if you want to participate
 * [Build Dev](../build/build-select-dev.md)
-    - Instructions for using a script to build a particular snapshot of the dev branch
+    - Discussion of methods to build the dev branch
 * [LoopWorkspace](../version/loopworkspace.md)
     - If you are interested in development, this page goes into more detail
     - The primary focus is on techniques for using git

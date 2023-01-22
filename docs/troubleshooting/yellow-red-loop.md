@@ -1,6 +1,10 @@
 ## Red Loop Overview
 
-This page provides help if your Loop icon is red and Loop is not working or only working sometimes. You can click on the Red Loop icon to read an error message. If you understand it, great...that should help you fix the problem. If not, grab a screenshot so you can ask for help from a mentor.
+This page provides help if your Loop icon is red and Loop is not working or only working sometimes.
+
+With Loop 3 - clicking on the Loop icon on the main screen tells you the last time Loop completed, but you need to look at the [Pump Status Icon](../loop-3/displays_v3.md#pump-status-icon) and the [Glucose Status Icon](../loop-3/displays_v3.md#glucose-status-icon) for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.
+
+With Loop 2.2.x - clicking on the Loop icon on the main screen provides an error message. If you understand it, great...that should help you fix the problem. If not, grab a screenshot so you can ask for help from a mentor.
 
 !!! warning "Omnipod Users"
 

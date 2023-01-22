@@ -28,7 +28,7 @@ If you previously used [GitHub Build](../gh-actions/gh-overview.md) to install L
 
 If you are running iOS 15 or watchOS 8 and earlier, you do not have developer mode and can skip ahead to [Download Loop](#download-loop).
 
-New with iOS 16 and watchOS 9, you must enable Developer Mode to run or build Loop. (This is true for any app created by Xcode.) If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+New with iOS 16 and watchOS 9, you must enable Developer Mode to run or build Loop. (This is true for any app created by Xcode directly on your device.) If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
 **Loop will not run until you enable Developer Mode for iOS 16.**
 
@@ -80,7 +80,6 @@ This page has the detailed steps to run the Build Select Script to download the 
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
 
-
 #### Ensure a Year
 
 !!! danger "Rebuild / Update on Same Computer?"
@@ -88,13 +87,19 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
     If you missed doing the [Updating: Delete Provisioning Profiles](updating.md#delete-provisioning-profiles), do that step now and return to this page.
 
+    or more experienced folks may want to just paste this command into their terminal:
+
+    ``` title="Copy and Paste to remove Provisioning Profiles"
+    rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
+    ```
+
 ### Build Select Script
 
 * With the release of Loop 3, the build process is different and simpler
     * Please read each step as if you are a new builder
     * Don't assume you know what you are doing
     * [FreeAPS](https://www.loopandlearn.org/freeapsdoc) is no longer supported by the Build Select Script
-    * [Loop 3 with Patches](https://www.loopandlearn.org/freeapsdoc)) is provided instead
+    * [Loop 3 with Patches](https://www.loopandlearn.org/github-lnl-patches) is provided instead
 
 These instructions show each step needed to download Loop using the Build-Select script.
 
