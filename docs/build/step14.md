@@ -1,10 +1,5 @@
 ## Loop 3 is Released
 
-!!! bug "TO DO"
-    Update graphics where words have changed
-
-    Please be patient
-
 ## Summary
 
 !!! info "Time Estimate"
