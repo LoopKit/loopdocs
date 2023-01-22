@@ -2469,7 +2469,9 @@
                   <h1>Red Loop</h1>
                 
                 <h2 id="red-loop-overview">Red Loop Overview<a class="headerlink" href="#red-loop-overview" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This page provides help if your Loop icon is red and Loop is not working or only working sometimes. You can click on the Red Loop icon to read an error message. If you understand it, great...that should help you fix the problem. If not, grab a screenshot so you can ask for help from a mentor.</p>
+<p>This page provides help if your Loop icon is red and Loop is not working or only working sometimes.</p>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr> - clicking on the Loop icon on the main screen tells you the last time Loop completed, but you need to look at the <a href="../../loop-3/displays_v3/#pump-status-icon">Pump Status Icon</a> and the <a href="../../loop-3/displays_v3/#glucose-status-icon">Glucose Status Icon</a> for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.</p>
+<p>With Loop 2.2.x - clicking on the Loop icon on the main screen provides an error message. If you understand it, great...that should help you fix the problem. If not, grab a screenshot so you can ask for help from a mentor.</p>
 <div class="admonition warning">
 <p class="admonition-title"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Users</p>
 <p>Do not pull a pod when there is a red loop. </p>
@@ -2502,18 +2504,9 @@
 <p>We think this was fixed with <abbr title="Latest release with major updates">Loop 3</abbr>. If you are running Loop 2.2.x or FreeAPS, this can happen to you.</p>
 <p>There is a new reason for a red loop that is not well understood.  Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> information as well as the stored pump information.</p>
 <div class="admonition warning">
-<p class="admonition-title">Be Careful with Phone Reboots</p>
+<p class="admonition-title">Be Careful with Phone Reboots with Loop 2 or FreeAPS</p>
 <p>If you are using an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>, then before rebooting the phone, make sure it is absolutely necessary - try all other methods first. Be prepared to check that the pod is still communicating with Loop following the reboot. If this rare event happens to you, please report it, save and post a Loop Report and be prepared to put on a new pod and possibly re-enter your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> information.</p>
 <p>This could happen to someone using a Medtronic pump, but the consequence is less of a concern because the pump information is not modified as frequently as for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> users.</p>
-</div>
-<p>The developers are tracking this issue and if they find a solution, it will be announced.  In rare cases, an old copy of app information is read following a reboot. Because your current pod information is stored in this file, if an older copy is provided following reboot - it may be remembering an old pod. The only solution, if this happens to you, is to change pods.</p>
-<p>This is a copy of what was posted on Facebook by Matthew Kitchin.</p>
-<div class="admonition note">
-<p class="admonition-title">Announcement from Facebook</p>
-<p>Caution: Please use rebooting or powering off your iPhone as a last resort for troubleshooting. There is an issue that can occur under unknown conditions where Loop/FreeAPS can revert to a previous state after reboot or power off. This can include symptoms such as Loop/FreeAPS indicating a Pod is expired or share credentials returning even though they were previously removed. There could be other settings that revert to a previous point in time.</p>
-<p>The exact cause is still under investigation. If this occurs, you will have to replace your current pod. There is no way to recover the active Pod if Loop/FreeAPS reverts to old settings and think the current Pod is expired/needing to be replaced.</p>
-<p>Obviously reboots do need to happen for things such as <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> updates. For Pod users, if possible, I would plan to do them at the end of a Pod cycle when a Pod change is already planned. This applies to current Loop 2.2.x and FreeAPS. There have been no reports of this with <abbr title="Latest release with major updates">Loop 3</abbr>. A modification was made to <abbr title="Latest release with major updates">Loop 3</abbr> that is thought to resolve this concern.</p>
-<p><strong>Don't panic:</strong> This doesn't happen on every reboot. Until a fix is found, just don't reboot if you don't need to, and try to time it just before a pod change if you can. In case it is related to phone storage, keep plenty of space available on your phone.</p>
 </div>
 <h3 id="rileylink-compatible-device"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device<a class="headerlink" href="#rileylink-compatible-device" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If the indication is one of these (or something similar), it can probably be fixed by resetting the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device communication with the phone and pump.</p>

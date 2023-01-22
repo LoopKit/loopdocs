@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#loop-3-is-released" class="md-skip">
+        <a href="#summary" class="md-skip">
           Skip to content
         </a>
       
@@ -824,13 +824,6 @@
       Headers on this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#loop-3-is-released" class="md-nav__link">
-    Loop 3 is Released
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
@@ -2433,13 +2426,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#loop-3-is-released" class="md-nav__link">
-    Loop 3 is Released
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     Summary
   </a>
@@ -2700,13 +2686,7 @@
                 
                   <h1>Build Loop</h1>
                 
-                <h2 id="loop-3-is-released"><abbr title="Latest release with major updates">Loop 3</abbr> is Released<a class="headerlink" href="#loop-3-is-released" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition bug">
-<p class="admonition-title">TO DO</p>
-<p>Update graphics where words have changed</p>
-<p>Please be patient</p>
-</div>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Anchor link to this Header on this Page">&para;</a></h2>
+                <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Time Estimate</p>
 <ul>
@@ -2737,7 +2717,7 @@
 <p>If you previously used <a href="../../gh-actions/gh-overview/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build</a> to install Loop on this phone, you must make sure that automatically install is <strong>disabled</strong> in <a href="../../gh-actions/gh-deploy/#install-testflight"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></a>, or you will not be able to install on that phone with <abbr title="program used to build an app">Xcode</abbr>.</p>
 <h2 id="developer-mode">Developer Mode<a class="headerlink" href="#developer-mode" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you are running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 or <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 8 and earlier, you do not have developer mode and can skip ahead to <a href="#download-loop">Download Loop</a>.</p>
-<p>New with <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9, you must enable Developer Mode to run or build Loop. (This is true for any app created by <abbr title="program used to build an app">Xcode</abbr>.) If you want to know more, click on this <a href="https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device">Apple Link about Developer Mode</a>.</p>
+<p>New with <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9, you must enable Developer Mode to run or build Loop. (This is true for any app created by <abbr title="program used to build an app">Xcode</abbr> directly on your device.) If you want to know more, click on this <a href="https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device">Apple Link about Developer Mode</a>.</p>
 <p><strong>Loop will not run until you enable Developer Mode for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16.</strong></p>
 <h3 id="prepare-your-phone-and-watch">Prepare your Phone and Watch<a class="headerlink" href="#prepare-your-phone-and-watch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
@@ -2790,24 +2770,31 @@
 <p class="admonition-title">Rebuild / Update on Same Computer?</p>
 <p>If you used this same computer to build Loop previously and you did not delete provisioning profiles - you will not get a full year with this build.</p>
 <p>If you missed doing the <a href="../updating/#delete-provisioning-profiles">Updating: Delete Provisioning Profiles</a>, do that step now and return to this page.</p>
+<p>or more experienced folks may want to just paste this command into their terminal:</p>
+<div class="highlight"><span class="filename">Copy and Paste to remove Provisioning Profiles</span><pre><span></span><code>rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
+</code></pre></div>
 </div>
 <h3 id="build-select-script"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr><a class="headerlink" href="#build-select-script" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>With the release of <abbr title="Latest release with major updates">Loop 3</abbr>, the build process is different and simpler<ul>
 <li>Please read each step as if you are a new builder</li>
 <li>Don't assume you know what you are doing</li>
+<li><a href="https://www.loopandlearn.org/freeapsdoc">FreeAPS</a> is no longer supported by the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></li>
+<li><a href="https://www.loopandlearn.org/github-lnl-patches"><abbr title="Latest release with major updates">Loop 3</abbr> with Patches</a> is provided instead</li>
 </ul>
 </li>
 </ul>
 <p>These instructions show each step needed to download Loop using the Build-Select script.</p>
 <div class="admonition note">
 <p class="admonition-title">Optional</p>
-<p>The <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> can also be used to build a companion app, called Loop Follow, and a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of Loop, called FreeAPS. Follow these links to different websites for more information about those apps.</p>
+<p>The <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> can also be used to build a companion app, called Loop Follow, and a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of Loop, which has selected patches added. Follow these links to different websites for more information about those options.</p>
+<p>For those used to seeing FreeAPS here, it has been removed from the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr>.</p>
+<p>Consider using <abbr title="Latest release with major updates">Loop 3</abbr> as designed. If you need Libre or want the CustomTypeOne patches, those are provided in the Loop with Patches selection in the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr>.</p>
 <ul>
 <li>Information about <a href="https://github.com/jonfawcett/LoopFollow#readme">Loop Follow</a></li>
-<li>Information specific to <a href="https://www.loopandlearn.org/freeapsdoc/">FreeAPS</a></li>
+<li>Information about <a href="https://www.loopandlearn.org/build-select/">Loop with Patches</a></li>
 </ul>
-<p>You do not need to know about these apps to build Loop.</p>
+<p>You do not need to know about these options to build Loop.</p>
 </div>
 <p>Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
 <div class="highlight"><span class="filename">Copy and Paste to start the BuildLoop.sh script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
@@ -2820,9 +2807,9 @@
 <li>Adjust font size as directed if you have difficulty seeing the directions.</li>
 </ul>
 <p align="center"><img alt="paste the script line into terminal" src="../img/bss-01-initial-message.svg" width="700" /></p>
-<p>Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and return.</p>
+<p>Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 and return.</p>
 <p align="center"><img alt="choose to build Loop" src="../img/bss-02-menu-message.svg" width="700" /></p>
-<p>Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the FreeAPS <abbr title="a copy of code in a github repository other than the original">fork</abbr> of Loop.</p>
+<p>Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the <abbr title="a copy of code in a github repository other than the original">fork</abbr> of Loop with added Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> options and CustomTypeOne patches.</p>
 <p align="center"><img alt="choose which Loop to build" src="../img/bss-03-choose-fork.svg" width="700" /></p>
 <h3 id="xcode-errors-with-build-select">XCode Errors with Build-Select<a class="headerlink" href="#xcode-errors-with-build-select" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition warning">

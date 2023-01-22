@@ -2363,13 +2363,18 @@
 <h4 id="loop-2-open-loop">Loop 2 - <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr><a class="headerlink" href="#loop-2-open-loop" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Loop 2 SAFETY WARNING</p>
-<p>When you are operating in <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> mode, Loop 2.2.x (or FreeAPS) offers recommendations for insulin delivery adjustment and displays them on the <a href="../../loop-settings/displays/#heads-up-display"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr></a>.</p>
+<p>When you are operating in <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> mode, Loop 2.2.x offers recommendations for insulin delivery adjustment and displays them on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>.</p>
 <ul>
 <li>If you tap on the recommendation line, Loop applies that recommendation without asking for confirmation</li>
 <li>This is true for temp basal and automatic bolus</li>
 <li>To protect against accidental command of increased or decreased insulin dosing, make sure your phone is locked when not in use</li>
 </ul>
 </div>
+<p>For safety reasons, these recommendation are no longer supplied with <abbr title="Latest release with major updates">Loop 3</abbr>. </p>
+<ul>
+<li>Tap on the bolus icon to see the recommendation if you think insulin is needed</li>
+<li>Use a Manual Temp Basal to reduce delivery if you see a low prediction</li>
+</ul>
 <h3 id="glucose-prediction">Glucose Prediction<a class="headerlink" href="#glucose-prediction" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Pay attention to the prediction in the <strong><abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr></strong> <a href="../../../loop-3/displays_v3/#glucose-chart"><abbr title="Latest release with major updates">Loop 3</abbr></a> / <a href="../../loop-settings/displays/#glucose-chart">Loop 2</a>. Practice with the user interface while you manually control your insulin delivery. Compare the recommended insulin after entering carbs for a familiar meal. If you do not understand the predictions or recommendations, do not enable <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr>. You may need to adjust settings or learn more about how the app works. Loop tries to keep predicted glucose in the <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> and, more importantly, above your <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr> (suspend threshold in Loop 2.2.x).</p>
 <p>There's a lot to learn and understand. New loopers may need to adjust the following <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr>, typically in this order:</p>

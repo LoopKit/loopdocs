@@ -2855,7 +2855,7 @@
 <p>Experienced Loop builders may say - but I thought we did not use <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> anymore.</p>
 <ul>
 <li>When building <abbr title="Latest release with major updates">Loop 3</abbr>, <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is no longer used and Loop will build without installing <abbr title="allows apps built for older Macs (Intel chips) to run on newer Macs (M1 and M2 chips)">Rosetta</abbr></li>
-<li>When building Loop v2.2.9 or FreeAPS (released and development versions), <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is still used but the required <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> version is included in the download; so the user does not need to separately install a particular version of <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> </li>
+<li>When building Loop v2.2.9, <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> is still used but the required <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> version is included in the download; so the user does not need to separately install a particular version of <abbr title="a program that used to be required to build Loop - no longer needed">carthage</abbr> </li>
 </ul>
 <h3 id="run-destination-is-not-valid-failed-to-prepare-the-device">Run Destination is Not Valid; Failed to Prepare the Device<a class="headerlink" href="#run-destination-is-not-valid-failed-to-prepare-the-device" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong></p>
@@ -2938,8 +2938,7 @@ ls -l ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
 <ul>
 <li>For those who care: the new requirement is that for a certain type of instruction file, the line with the <code>Headers</code> keyword must be located before the line with the <code>Sources</code> keyword</li>
 <li>There used to be many repositories that did not have lines in that order</li>
-<li>All of these instruction files have been updated for Loop main and FreeAPS</li>
-<li>If you are building with an older copy of the code, you may see this error</li>
+<li>If you are seeing this error, you are building with an older copy and should consider updating</li>
 </ul>
 <p><strong>Error Message:</strong></p>
 <p><img alt="cycle dependencies error" src="../img/xcode-cycle-dependencies.svg" width="600" /></p>

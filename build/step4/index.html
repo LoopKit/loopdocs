@@ -2355,7 +2355,7 @@
 <div class="admonition question">
 <p class="admonition-title">FAQs</p>
 <ul>
-<li><strong>"What about Libre sensors?"</strong> Refer to <a href="#cgms-not-supported-in-loop">CGMs Not Supported in Loop</a></li>
+<li><strong>"What about Libre sensors?"</strong> A <a href="https://www.loopandlearn.org/github-lnl-patches"><abbr title="a copy of code in a github repository other than the original">fork</abbr> of Loop</a> is available with added Libre support</li>
 <li><strong>"What about Eversense?"</strong> Refer to <a href="#cgms-not-supported-in-loop">CGMs Not Supported in Loop</a></li>
 </ul>
 </div>
@@ -2386,9 +2386,16 @@
 <h2 id="nightscout-as-a-remote-cgm">Nightscout as a Remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#nightscout-as-a-remote-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><abbr title="Latest release with major updates">Loop 3</abbr> can use Nightscout as a remote source for <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data. This requires cell or WiFi connection.</p>
 <h2 id="cgms-not-supported-in-loop">CGMs Not Supported in Loop<a class="headerlink" href="#cgms-not-supported-in-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop does not directly support other <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, such as Libre, Eversense and Medtronic Guardian.</p>
+<p>Loop does not directly support some <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> such as Libre, Eversense and Medtronic Guardian.</p>
+<ul>
+<li>A <a href="https://www.loopandlearn.org/github-lnl-patches"><abbr title="a copy of code in a github repository other than the original">fork</abbr> of Loop</a> is available with added Libre support<ul>
+<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build: Refer to the link above for instructions to build this <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+<li>Mac/<abbr title="program used to build an app">Xcode</abbr> Build: Select the Loop with Patches option in the <a href="../step14/"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a></li>
+</ul>
+</li>
+</ul>
 <p>With <abbr title="Latest release with major updates">Loop 3</abbr>.0 and later, any sensor that can be uploaded to Nightscout can be used with Loop if internet service is available.</p>
-<p>To use one of those alternate CGMs for Loop 2.2.x, you will need to look into third-party integrations, such as the FreeAPS <abbr title="a copy of code in a github repository other than the original">fork</abbr>, for access to the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data. First search for previous posts on the topic and then ask questions in a <a href="../../intro/loopdocs-how-to/#how-to-find-help">Loop Social Media</a> site if you need help.</p>
+<p>To use some Libre sensors with <abbr title="Latest release with major updates">Loop 3</abbr> without need for internet service, you will need to install the version with patches (option 2 in the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr>) and install your chosen app with the same Apple Developer ID. This uses the Shared <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to share glucose. Not ideal but it works until Libre support is added to Loop.</p>
 <p>Currently, there are no solutions for Eversense or Guardian <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to be used directly with Loop, but some <a href="https://nightscout.github.io/uploader/uploaders/">Uploaders</a> to Nightscout are available using an Android phone. <abbr title="Latest release with major updates">Loop 3</abbr>.0 and later allows the use of Nightscout as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> source.</p>
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If your compatible pump is Medtronic or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> (not DASH)</p>
