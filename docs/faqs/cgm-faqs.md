@@ -51,13 +51,12 @@ With Loop 3, you can use Nightscout as a CGM to Loop with Eversense, but that re
 
 ## Can Loop read CGM data from Nightscout?
 
-Some versions of Loop can read CGM data from Nightscout.
+The released version of Loop can read CGM data from Nightscout.
 
-* FreeAPS fork of Loop 2.2.x
-* Loop 3
-
-Loop 2.2.x does not read CGM data from Nightscout.
+The older Loop 2.2.x does not read CGM data from Nightscout.
 
 ## What other CGM apps can be used to Loop?
 
-Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/) and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme). You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions. These can be used with the FreeAPS fork of Loop 2.2.x and, after applying a code customization, with Loop 3.
+Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/) and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme). You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions.
+
+These can be used after applying a code customization to Loop 3. These customizations are available as part of the [Build Select Script](https://www.loopandlearn.org/build-select).

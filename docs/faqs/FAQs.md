@@ -110,10 +110,10 @@ There is a [whole page with detailed information about Medtronic pumps](../build
 
 You can use some Omnipod pumps with Loop. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
 
-Check your app version (for Loop or FreeAPS) by tapping on Loop settings and reading it from the top of the screen.
+Check your app version by tapping on Loop settings and reading it from the top of the screen.
 
-* Version 2.2.x or earlier supports Omnipod Eros pumps
-* Version 2.3 or later supports Omnipod Eros and DASH pumps
+* Version 2.2.x or earlier supports Omnipod Eros pumps and some older Medtronic pumps
+* Version 2.3 or later supports Omnipod Eros and DASH pumps and some older Medtronic pumps
 
 DASH pumps do not require a RileyLink compatible device.
 

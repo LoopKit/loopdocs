@@ -71,7 +71,7 @@ Loop does not directly support other CGM, such as Libre, Eversense and Medtronic
 
 With Loop 3.0 and later, any sensor that can be uploaded to Nightscout can be used with Loop if internet service is available.
 
-To use one of those alternate CGMs for Loop 2.2.x, you will need to look into third-party integrations, such as the FreeAPS fork, for access to the CGM data. First search for previous posts on the topic and then ask questions in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site if you need help.
+To use some Libre sensor with Loop 3 without need for internet service, you will need to install the version with patches added (option 2 in the Build Select Script)
 
 Currently, there are no solutions for Eversense or Guardian CGM to be used directly with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Loop 3.0 and later allows the use of Nightscout as a CGM source.
 

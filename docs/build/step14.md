@@ -104,12 +104,16 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 These instructions show each step needed to download Loop using the Build-Select script.
 
 !!! note "Optional"
-    The Build Select Script can also be used to build a companion app, called Loop Follow, and a fork of Loop, called FreeAPS. Follow these links to different websites for more information about those apps.
+    The Build Select Script can also be used to build a companion app, called Loop Follow, and a fork of Loop, which has selected patches added. Follow these links to different websites for more information about those options.
+    
+    For those used to seeing FreeAPS here, it has been removed from the Build Select Script.
+    
+    Consider using Loop 3 as designed. If you need Libre or want the CustomTypeOne patches, those are provided in the Loop with Patches selection in the Build Select Script.
  
      * Information about [Loop Follow](https://github.com/jonfawcett/LoopFollow#readme)
-     * Information specific to [FreeAPS](https://www.loopandlearn.org/freeapsdoc/)
+     * Information about [Loop with Patches](https://www.loopandlearn.org/build-select/)
  
-     You do not need to know about these apps to build Loop.
+     You do not need to know about these options to build Loop.
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
@@ -128,12 +132,12 @@ Read the screen (shown below).  Type 1 and return if you understand the warning 
 ![paste the script line into terminal](img/bss-01-initial-message.svg){width="700"}
 {align="center"}
 
-Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 (as shown in the graphic below) and return.
+Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 and return.
 
 ![choose to build Loop](img/bss-02-menu-message.svg){width="700"}
 {align="center"}
 
-Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the FreeAPS fork of Loop.
+Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the fork of Loop with added Libre CGM options and CustomTypeOne patches.
 
 ![choose which Loop to build](img/bss-03-choose-fork.svg){width="700"}
 {align="center"}

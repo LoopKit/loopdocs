@@ -35,25 +35,11 @@ We think this was fixed with Loop 3. If you are running Loop 2.2.x or FreeAPS, t
 
 There is a new reason for a red loop that is not well understood.  Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored CGM information as well as the stored pump information.
 
-!!! warning "Be Careful with Phone Reboots"
+!!! warning "Be Careful with Phone Reboots with Loop 2 or FreeAPS"
 
     If you are using an Omnipod, then before rebooting the phone, make sure it is absolutely necessary - try all other methods first. Be prepared to check that the pod is still communicating with Loop following the reboot. If this rare event happens to you, please report it, save and post a Loop Report and be prepared to put on a new pod and possibly re-enter your CGM information.
     
     This could happen to someone using a Medtronic pump, but the consequence is less of a concern because the pump information is not modified as frequently as for Omnipod users.
-
-The developers are tracking this issue and if they find a solution, it will be announced.  In rare cases, an old copy of app information is read following a reboot. Because your current pod information is stored in this file, if an older copy is provided following reboot - it may be remembering an old pod. The only solution, if this happens to you, is to change pods.
-
-This is a copy of what was posted on Facebook by Matthew Kitchin.
-
-!!! note "Announcement from Facebook"
-
-    Caution: Please use rebooting or powering off your iPhone as a last resort for troubleshooting. There is an issue that can occur under unknown conditions where Loop/FreeAPS can revert to a previous state after reboot or power off. This can include symptoms such as Loop/FreeAPS indicating a Pod is expired or share credentials returning even though they were previously removed. There could be other settings that revert to a previous point in time.
-
-    The exact cause is still under investigation. If this occurs, you will have to replace your current pod. There is no way to recover the active Pod if Loop/FreeAPS reverts to old settings and think the current Pod is expired/needing to be replaced.
-
-    Obviously reboots do need to happen for things such as iOS updates. For Pod users, if possible, I would plan to do them at the end of a Pod cycle when a Pod change is already planned. This applies to current Loop 2.2.x and FreeAPS. There have been no reports of this with Loop 3. A modification was made to Loop 3 that is thought to resolve this concern.
-
-    **Don't panic:** This doesn't happen on every reboot. Until a fix is found, just don't reboot if you don't need to, and try to time it just before a pod change if you can. In case it is related to phone storage, keep plenty of space available on your phone.
 
 
 ### RileyLink Compatible Device
