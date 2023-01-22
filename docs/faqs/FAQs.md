@@ -164,3 +164,14 @@ Yes, this is technically possible. You can have multiple Loop apps built onto th
 Yes. Loop does not require internet or cell coverage to work. So long as the Loop user has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/Pod.
 
 One exception - if you've chosen to use a CGM source that does require the internet, you will need to have cell or internet coverage. This ability is provided as a service to folks who cannot get their CGM data any other way. It is also a convenience for people testing the code.
+
+## What Happened to FreeAPS?
+
+FreeAPS hasn't really had an owner to develop it for several years, but a lot a people depended on it. Because of that, the Loop and Learn team kept it on life-support. It has been updated to include DASH, but that is the last expected improvement.
+
+Many features people used with FreeAPS can be added to Loop 3 with customization. These customizations are supplied as a new branch, main_lnl_patches, on the loopnlearn GitHub site. This includes Libre support and the CustomTypeOne LoopPatches.
+
+* The customizations are described in [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches/#lnl-custom)
+* For Browser Build, use the GitHub instructions but fork from loopnlearn GitHub instead of LoopKit as explained [Loop and Learn: GitHub Loop with Patches](https://www.loopandlearn.org/github-lnl-patches/#github)
+* For Mac / Xcode build, these customization were incorporated as an option in the Build Select Script.
+

@@ -1,5 +1,3 @@
-## Loop 3 is Released
-
 ## Summary
 
 !!! info "Time Estimate"
@@ -95,6 +93,8 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 * With the release of Loop 3, the build process is different and simpler
     * Please read each step as if you are a new builder
     * Don't assume you know what you are doing
+    * [FreeAPS](https://www.loopandlearn.org/freeapsdoc) is no longer supported by the Build Select Script
+    * [Loop 3 with Patches](https://www.loopandlearn.org/freeapsdoc)) is provided instead
 
 These instructions show each step needed to download Loop using the Build-Select script.
 
