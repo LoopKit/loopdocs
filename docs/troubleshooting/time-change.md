@@ -13,7 +13,7 @@
 ### Remove Future Glucose
 
 * You **MUST** go into Apple Health and remove any glucose values in the future
-* Loop 2.2.x and FreeAPS will use those future readings.
+* Loop 2.2.x will use those future readings.
     * If you want to know more, check out this link: [Request: Detect Future Glucose](https://github.com/LoopKit/Loop/issues/1890)
 * Loop 3 detects the future glucose and stops looping
     * It might not be completely obvious why Loop stopped, but you will get a red loop within 15 minutes and Loop is not Looping notifications starting a 20 minutes

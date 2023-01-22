@@ -16,11 +16,16 @@ Open Loop is the best place to start with Loop.
 #### Loop 2 - Open Loop
 
 !!! warning "Loop 2 SAFETY WARNING"
-    When you are operating in Open Loop mode, Loop 2.2.x (or FreeAPS) offers recommendations for insulin delivery adjustment and displays them on the [HUD](../loop-settings/displays.md#heads-up-display).
+    When you are operating in Open Loop mode, Loop 2.2.x offers recommendations for insulin delivery adjustment and displays them on the HUD.
 
     * If you tap on the recommendation line, Loop applies that recommendation without asking for confirmation
     * This is true for temp basal and automatic bolus
     * To protect against accidental command of increased or decreased insulin dosing, make sure your phone is locked when not in use
+
+For safety reasons, these recommendation are no longer supplied with Loop 3. 
+
+* Tap on the bolus icon to see the recommendation if you think insulin is needed
+* Use a Manual Temp Basal to reduce delivery if you see a low prediction
 
 ### Glucose Prediction
 

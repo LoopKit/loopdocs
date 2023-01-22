@@ -53,15 +53,14 @@ Dexcom Share is not available for Dexcom ONE CGM.
 
 ## Libre and Other CGM
 
-Loop 2 does not natively support Libre CGM. Those who want to use Libre will need to use an alternate fork, such as FreeAPS, or upgrade to Loop 3 and customize their code. 
+Loop 2 does not natively support Libre CGM. 
 
 If you switch to Loop 3, there are additional CGM options:
 
 * If you can upload your CGM to Nightscout, Loop 3 offers the option to use Nightscout as a CGM source.
 
-* There are instructions to add Libre support at this link [Code Customization: Add Libre to Loop 3](../../build/code_customization.md#modify-loop-to-use-libre)
+* You can choose to download the Loop with patches option when building with the script.
     * As a prerequisite, you must interface your iPhone to the Libre
-    * Links to several methods to directly interface an iPhone to Libre are on the same page: [Code Customization: Add Libre to iPhone](../../build/code_customization.md#add-libre-app-to-loop-phone)
 
 ## Next Step: Loop 2 Configuration
 

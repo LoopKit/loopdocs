@@ -1,10 +1,10 @@
 ## What CGMs does Loop work with?
 
-Loop 2.2.x works Dexcom G4 with share, G5, G6, ONE, Share and the Medtronic CGM systems compatible with Looping pumps.
+Loop 3 supports G5, G6, G7, Dexcom ONE, Dexcom Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps. [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches) can be used which adds support for some Libre sensors.
 
-Loop 3 works with G5, G6, ONE, Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps. A customization can be applied to work with some Libre sensors.
+Loop 2.2.x supports Dexcom G4 with share, G5, G6, Dexcom ONE, Dexcom Share and the Medtronic CGM systems compatible with Looping pumps.
 
-Read the details [here](../build/step4.md).
+There are more details on the [Compatible CGM](../build/step4.md) page.
 
 ## Do I need wait for a new sensor session to start Loop?
 
@@ -51,13 +51,12 @@ With Loop 3, you can use Nightscout as a CGM to Loop with Eversense, but that re
 
 ## Can Loop read CGM data from Nightscout?
 
-Some versions of Loop can read CGM data from Nightscout.
+The released version of Loop can read CGM data from Nightscout.
 
-* FreeAPS fork of Loop 2.2.x
-* Loop 3
-
-Loop 2.2.x does not read CGM data from Nightscout.
+The older Loop 2.2.x does not read CGM data from Nightscout.
 
 ## What other CGM apps can be used to Loop?
 
-Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/) and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme). You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions. These can be used with the FreeAPS fork of Loop 2.2.x and, after applying a code customization, with Loop 3.
+Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/) and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme). You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions.
+
+These can be used after applying a code customization to Loop 3. These customizations are available as part of the [Build Select Script](https://www.loopandlearn.org/build-select).

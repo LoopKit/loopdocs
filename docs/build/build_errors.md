@@ -175,7 +175,7 @@ Look for more details as shown in this graphic:
 Experienced Loop builders may say - but I thought we did not use carthage anymore.
 
 * When building Loop 3, carthage is no longer used and Loop will build without installing Rosetta
-* When building Loop v2.2.9 or FreeAPS (released and development versions), carthage is still used but the required carthage version is included in the download; so the user does not need to separately install a particular version of carthage 
+* When building Loop v2.2.9, carthage is still used but the required carthage version is included in the download; so the user does not need to separately install a particular version of carthage 
 
 ### Run Destination is Not Valid; Failed to Prepare the Device
 
@@ -291,8 +291,7 @@ This error is new with Xcode 13.3 (late Sep 2021) which has a new requirement
 
 * For those who care: the new requirement is that for a certain type of instruction file, the line with the `Headers` keyword must be located before the line with the `Sources` keyword
 * There used to be many repositories that did not have lines in that order
-* All of these instruction files have been updated for Loop main and FreeAPS
-* If you are building with an older copy of the code, you may see this error
+* If you are seeing this error, you are building with an older copy and should consider updating
 
 **Error Message:**
 

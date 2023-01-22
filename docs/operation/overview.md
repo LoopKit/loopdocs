@@ -1,6 +1,6 @@
 # Loop 2 Set Up Overview
 
-This section of LoopDocs will be maintained during the transition to Loop 3. These pages are specific to Loop 2.2.x and some forks based off that older version, such as FreeAPS. 
+This section of LoopDocs will be maintained during the transition to Loop 3. These pages are specific to Loop 2.2.x and some forks based off that older version. 
 
 **Be aware that older versions and forks will probably not be updated as the Apple environment changes.**
 

@@ -4,7 +4,7 @@ This page was updated with information for Loop 3.
 
 ### Loop 2 and 3 Differences
 
-Most of the information is the same for Loop 2.2.x (or FreeAPS) and Loop 3. 
+Most of the information is the same for Loop 2.2.x and Loop 3. 
 
 Loop 3 Updates:
 
@@ -276,7 +276,7 @@ For more information about the way Loop models the effects of carbs, insulin, et
 
 ## Loop 2 - Fast Meal Entry
 
-This section is for users of Loop 2.2.x (or FreeAPS).
+This section is for users of Loop 2.2.x.
 
 Tap meal entry icon on toolbar
 
