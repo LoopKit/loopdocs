@@ -16,7 +16,7 @@ Some useful features of using TestFlight to install Loop:
 * You can update Loop on your kid's phone while they're away at college
 * Reinstalling Loop on the fly is quick and easy from your phone, even if you accidentally delete the app, see [Protect that App](step14.md#protect-that-app), or need to install Loop on a brand new phone
 
-Since apps built with TestFlight expire after 90 days, it is recommended you also setup a build using the GitHub [Browser Build](../gh-actions/gh-overview.md) method even if you don't plan on using it. The GitHub build can be updated in a few minutes from any browser and is an extra layer of protection in these scenarios where you do not have access to your Mac for a rebuild:
+Since apps built with TestFlight expire after 90 days, it is recommended you also setup a build using the GitHub [Browser Build](../gh-actions/gh-overview.md) method even if you don't plan on using it. The GitHub build can be updated in a few minutes from any browser and is an extra layer of protection in these scenarios if you do not have access to your Mac for a rebuild:
 
 * Your Xcode built Loop in TestFlight expires
 * An urgent update to Loop is released
@@ -62,9 +62,9 @@ On the next screen, **Upload** is selected by default. Click **Next**.
 ![Destination page](img/tf05.png){width="700"}
     {align="center"}
 
-### First-Time Archive Uploading
+### First-Time Archive Upload
 
-If you have already created a TestFlight for Loop via Xcode or the GitHub Build method, the next few screens will not be shown, so skip ahead to [Subsequent Archive Upload](#subsequent-archive-upload).
+If you have already created a TestFlight for Loop via Xcode or the GitHub Build method, the next screen will not be shown, so skip ahead to [Subsequent Archive Upload](#subsequent-archive-upload).
 
 If this is the first time you're creating a TestFlight for Loop, enter the following on the next screen and click **Next**:
 
@@ -76,19 +76,19 @@ If this is the first time you're creating a TestFlight for Loop, enter the follo
 ![Preparing app record page](img/tf06.png){width="700"}
     {align="center"}
 
+### Subsequent Archive Upload
+
 On the next screen, leave everything checked and click **Next**.
 
 ![Distribution options page](img/tf07.png){width="700"}
     {align="center"}
 
-On the next screen, leave it set to **Automatically manage signing** and click **Next**.
+On the next screen, leave it set to **Automatically manage signing** and click **Next**. You will see a few messages as it performs some tasks. Be patient.
 
 ![Signing options page](img/tf08.png){width="700"}
     {align="center"}
 
-### Subsequent Archive Upload
-
-On the next screen, click **Upload**.
+When you see the next screen, click **Upload**.
 
 ![Review Loop.ipa before upload page](img/tf09.png){width="700"}
     {align="center"}
