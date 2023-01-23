@@ -1,8 +1,11 @@
 ## Code Customizations
 
-**This page is only relevant is you used the [Mac Build](../build/overview.md) method to build your code**
+**The customizations on this page assume the [Mac Build](../build/overview.md) method**
 
-**At the current time, customizations for [Browser Build](../gh-actions/gh-overview.md) are not included in LoopDocs.**
+**Detailed instructions for making your own customizations for GitHub [Browser Build](../gh-actions/gh-overview.md) are not included in LoopDocs.**
+
+* To make customizations with the GitHub method requires you to make your own fork for any module you want to modify, commit changes to your fork, and then point your fork of LoopWorkspace to the modified modules in your GitHub account
+* One set of commonly requested customizations is available as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
 
 Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself. If you are an experienced builder - you know what to do.
 
@@ -668,23 +671,16 @@ You may see a yellow warning that there are “unassigned children” depending 
 
 And now you'll be the proud new owner of a custom Loop icon.
 
-
-## Additional Customizations
-
-Additional customizations may be found on another website, especially for older versions of the app. If you did not find the customization you want here on LoopDocs, then try the [Loop and Learn Customization Page](https://www.loopandlearn.org/custom-code). Check that page in case this list is not up to date.
-
-* Add Lyumjev Insulin Model (this is only needed for Loop 2.2.x, included in Loop 3)
-* Pods: Increase Log File History Hours (only needed for Loop 2.2.x)
-* Medtronic: Disable mySentry (only needed for older versions of Loop 2.2.x)
-* Pods: Change Default Expiration Reminder (only needed for Loop 2.2.x)
-* Emoji Modifications
-* Disable Suspend Beeps (only needed for Loop 2.2.x)
-
-Note that the other site has an index that points back to LoopDocs if the customization is found on this page.
-
 ## Additional Customizations for Loop 3
 
-The customizations below only work with the Loop 3. 
+If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (requires Mac/Xcode build) or use a prepared fork that already contains them.
+
+These customizations:
+
+* Only work with Loop 3 and, at the current time, the dev branch for Loop
+* Are already added to the released version of Loop in a fork of LoopWorkspace for your convenience, [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
+
+If you want to add one or more of these customizations yourself to Loop 3 or the dev branch, then continue with this section for instructions.
 
 * You should be comfortable typing commands in a terminal
 * You should be comfortable with manipulations (as directed) with Xcode
@@ -716,13 +712,15 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 ### Custom Type One LoopPatches
 
-Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop 3 (main branch). You can use the same instructions that worked just before the release of Loop 3.
+Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop 3 (main branch). They might work with dev branch, but might require updates as dev progresses.
 
 Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop 3.
 
+The CustomTypeOne LoopPatches are included in [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches).
+
 ### Add Libre App to Loop Phone
 
-This method only works for Loop 3 (main branch) and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone.
+This method only works for Loop 3 (main branch) and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone. This should work for dev branch as well.
 
 There are several options for code that will read the raw Libre values and convert them into glucose readings. You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.
 
@@ -731,22 +729,20 @@ These are the Libre iOS app options.
 * xDrip4iOS: [Documentation](https://xdrip4ios.readthedocs.io/en/latest/)
     * Check to see if your sensor is [compatible](https://xdrip4ios.readthedocs.io/en/latest/#compatible-sensors)
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop (directions are in the documentation)
-    * If you use the TestFlight installation method, you will not be able to use this with Loop (on your phone without needing an internet connection)
+    * If you use the TestFlight installation method (someone else's apple developer id), you will not be able to use this with Loop (on your phone without needing an internet connection)
+    * If you build with your Apple Developer ID (Browser build - might not be available yet, but it will be), then you can install user your own TestFlight build and it will work without internet
 * GlucoseDirect: [README file on github repository](https://github.com/creepymonster/GlucoseDirect#glucose-direct)
     * If you use the TestFlight installation method, you will not be able to use this with Loop
+    * If you build with your Apple Developer ID (Browser build - might not be available yet, but it could be), then you can install user your own TestFlight build and it will work without internet
 * LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
     * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
     * Refer to [Modify Loop to use Libre](#modify-loop-to-use-libre)
 
-
-Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop 3 code that you previously downloaded.
+Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop 3 code that you previously downloaded or use [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches).
 
 ### Modify Loop to use Libre
 
-None of these methods have been tested by the LoopDocs team. This information is copied from zulipchat conversations (shown in links below).
-
-!!! warning "Open Loop Suggested during Warmup of New Sensor"
-    It is recommended that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using direct bluetooth connection.
+This is the same method used to prepare the [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). Both xDrip4iOS and GlucoseDirect clients are added in that customized fork.
 
 For your selected app to read the Libre, you must also add a client to Loop 3 to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop 3.
 
@@ -756,12 +752,14 @@ Add a client that interfaces with xDrip4iOS:
     * Note - there are extra details visible when you click on the black arrow icons in this file
     * [zulipchat converstation](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292280110)
 
-
 Add a client that interfaces with GlucoseDirect:
 
 * [Add GlucoseDirectClient](https://github.com/creepymonster/GlucoseDirectClient)
     * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292307629)
     * The instructions are in the video on the GlucoseDirectClient repo page
+
+
+This method is not included as one of the Loop and Learn Customizations. There is a file that is not included in the repository.
 
 Add LibreTransmitter to Loop as a plugin:
 
