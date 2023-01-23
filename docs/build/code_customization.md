@@ -730,10 +730,10 @@ These are the Libre iOS app options.
     * Check to see if your sensor is [compatible](https://xdrip4ios.readthedocs.io/en/latest/#compatible-sensors)
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop (directions are in the documentation)
     * If you use the TestFlight installation method (someone else's apple developer id), you will not be able to use this with Loop (on your phone without needing an internet connection)
-    * If you build with your Apple Developer ID (Browser build - might not be available yet, but it will be), then you can install user your own TestFlight build and it will work without internet
+    * If you build with your Apple Developer ID (Browser build - might not be available yet), then you can install user your own TestFlight build and it will work without internet
 * GlucoseDirect: [README file on github repository](https://github.com/creepymonster/GlucoseDirect#glucose-direct)
     * If you use the TestFlight installation method, you will not be able to use this with Loop
-    * If you build with your Apple Developer ID (Browser build - might not be available yet, but it could be), then you can install user your own TestFlight build and it will work without internet
+    * If you build with your Apple Developer ID (Browser build - might not be available yet), then you can install user your own TestFlight build and it will work without internet
 * LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
     * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
     * Refer to [Modify Loop to use Libre](#modify-loop-to-use-libre)
@@ -742,7 +742,7 @@ Once you have chosen the desired app, you need to install it on your Loop phone 
 
 ### Modify Loop to use Libre
 
-This is the same method used to prepare the [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). Both xDrip4iOS and GlucoseDirect clients are added in that customized fork.
+This is the same method used to prepare the [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches). Both xDrip4iOS and GlucoseDirect clients are added in that customized fork.
 
 For your selected app to read the Libre, you must also add a client to Loop 3 to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop 3.
 
