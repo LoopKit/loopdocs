@@ -199,7 +199,7 @@ The next question, as shown in graphic below, is whether you will (1) Sign Autom
 * If you are building with a paid developers account, choose option 1, and continue on this page
 * If you are building with a Free option or plan to build to a simulator on your computer, choose option 2 and click on [Build Free Loop](build-free-loop.md) to move to the page with those instructions
 
-![messages for choosing Sign Manually or Sign Manually](img/build-dev-b-01-choose.svg){width="700"}
+![messages for choosing Sign Automatically or Sign Manually](img/build-dev-b-01-choose.svg){width="700"}
 {align="center"}
 
 ### Paid Developer Account
