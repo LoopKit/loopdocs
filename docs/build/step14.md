@@ -192,14 +192,14 @@ If there are no errors, type 1 in the terminal window to continue. At this point
 !!! tip "Experienced Builders"
     This replaces several of the steps that used to be required to build Loop.
 
-The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer with your Apple Developer ID, this question will not be shown. Skip ahead to [Review LoopConfigOverride.xcconfig](#review-loopconfigoverridexcconfig).
+The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer to have a permanent file that contains your Apple Developer ID, this question will not be shown. Skip ahead to [Review LoopConfigOverride.xcconfig](#review-loopconfigoverridexcconfig).
 
-The next question, as shown in graphic below, is whether you will (1) Enter Apple Developer ID or (2) Sign Manually.
+The next question, as shown in graphic below, is whether you will (1) Sign Automatically or (2) Sign Manually.
 
 * If you are building with a paid developers account, choose option 1, and continue on this page
 * If you are building with a Free option or plan to build to a simulator on your computer, choose option 2 and click on [Build Free Loop](build-free-loop.md) to move to the page with those instructions
 
-![messages for choosing Apple ID or Sign Manually](img/build-dev-b-01-choose.svg){width="700"}
+![messages for choosing Sign Manually or Sign Manually](img/build-dev-b-01-choose.svg){width="700"}
 {align="center"}
 
 ### Paid Developer Account
