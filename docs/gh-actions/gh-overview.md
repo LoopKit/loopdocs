@@ -8,18 +8,27 @@ The new GitHub build method is available with the release of Loop 3, as well as 
 
 TestFlight is the only method available for installation to a phone when using the GitHub build method, but can also be used with the Mac/Xcode build method.
 
-Advantages of TestFlight:
+## Pros and Cons
 
-* Allows you to install onto a new phone if yours is broken or lost while traveling
-* Allows you to support family members who need their Loop app updated while away from home
+### Advantages of GitHub Build
 
-!!! info "TestFlight - Repeat Every 90 Days"
-    When installing Loop on a phone with TestFlight, it must be refreshed every 90 days.
+Developer quote: "This frees up the dependency of having the most recent Xcode to build to a [phone with a] new version of iOS. Xcode only needs to support the iOS version on your phone when you are building directly to the phone."
 
-    * Updating Loop and TestFlight takes just a few taps in any browser when using the GitHub build method - you can even do it on your phone: [GitHub Update](gh-update.md#github-update-summary)
-    * Expect an hour of elapsed time from when you tap on the button to start the build on GitHub to when it is available to install on your phone. Typically about 25 minutes to build, with another 20 minutes for TestFlight processing.
+* Mac computer is not required
+* Most recent version of Xcode is not required
+    * No more updating macOS then updating Xcode
+    * The time required for the initial setup for GitHub may take less time than one macOS/Xcode version update
+* Updates take a few minutes of your time to start and are ready to install on your phone in less than an hour
+
+### Cons
+
+* There are no instructions for applying customizations
+* Stick with Mac / Xcode build (for now) if you want to customize
+* Hint - when customization instructions are provided - you will be making more forks for every submodule you customize and you will be responsible for keeping those forks up to date
 
 ## Requirements
+
+**Loop 3 requires iOS 15.1 or higher**
 
 The requirements for building and using the Loop app with the GitHub Build Actions method are given below.
 
@@ -48,24 +57,6 @@ There are a number of steps that must be completed the first time you use this m
     * [GitHub Update](../gh-actions/gh-update.md)
 * And of course, an errors page is under construction:
     * [GitHub Errors](../gh-actions/gh-errors.md)
-
-## Pros and Cons
-
-### Advantages of GitHub Build
-
-Developer quote: "This frees up the dependency of having the most recent Xcode to build to a [phone with a] new version of iOS. Xcode only needs to support the iOS version on your phone when you are building directly to the phone."
-
-* Mac computer is not required
-* Most recent version of Xcode is not required
-    * No more updating macOS then updating Xcode
-    * The time required for the initial setup for GitHub may take less time than one macOS/Xcode version update
-* Updates take a few minutes of your time to start and are ready to install on your phone in less than an hour
-
-### Cons
-
-* There are no instructions for applying customizations
-* Stick with Mac / Xcode build (for now) if you want to customize
-* Hint - when customization instructions are provided - you will be making more forks for every submodule you customize and you will be responsible for keeping those forks up to date
 
 ## What if I get stuck?
 
