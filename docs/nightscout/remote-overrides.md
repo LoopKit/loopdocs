@@ -224,14 +224,14 @@ The LoopCaregiver app is under development to make remote commands easier to imp
     The bundle ID has been modified:
 
     * If you already have LoopCaregiver running and do a fresh download and build, you will be building a separate app and will need to delete the old one and add your Looper(s) in again
-    * If you haven't built LoopCaregiver, the app you download and build today has the format for the bundle ID
+    * If you haven't built LoopCaregiver, the app you download and build today has the new format for the bundle ID
 
     Details:
 
     * Bundle ID used to be: org.loopkit.LoopCaregiver
     * Bundle ID now: com.TEAMID.loopkit.LoopCaregiver
     * This is a step towards enabling the GitHub build method, but please be patient, wait until instructions are posted
-    * There might additional architectural updates coming - this note will be updated at that time
+    * There might be additional architectural updates coming - this note will be updated at that time
     * As always, TEAMID refers to your unique Apple Developer Team ID
 
 * Minimum Requirements
