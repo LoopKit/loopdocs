@@ -266,8 +266,10 @@ If you built Loop 3 over an existing app, your CGM and pump selections should ha
 
 ## Experienced Loopers
 
-!!! warning "Medtronic Users"
-    After you finish onboarding, you must select Insulin Type on your pump settings screen. Without an insulin type, closed loop will not work.
+!!! danger "Insulin Type"
+    Insulin Type is in Pump Settings (not therapy settings) and will NOT be imported.
+
+    After you finish onboarding, you must select Insulin Type on your pump settings screen. Without an insulin type, closed loop might not work or a different insulin type might be selected.
 
 The first time you build Loop 3 on a device, you will need to go through the onboarding process too.
 
@@ -294,9 +296,13 @@ You will be presented with an information screen describing the setting (with a 
 
     The new onboarding forces you to check all your imported [Therapy Settings (Onboarding Summary)](#therapy-settings-onboarding) but there may be other settings you need to check as well.
 
-    * Dosing Strategy: may be at the default value of `Temp Basal Only`, even if you were using `Automatic Bolus` with Loop 2.x.x
+    * Dosing Strategy: may be at the default value of `Temp Basal Only`, even if you were using `Automatic Bolus` before
     * Overrides: verify these are populated as expected
     * Pumps that use a RileyLink: confirm the device is selected and active in the Pump settings screen
+    * If you use Nightscout, make sure the site is getting Loop updates
+
+    **HIGHLIGHTING THIS ONE - A LOT OF PEOPLE MISSED THIS:**
+
     * [Insulin Type](add-pump.md#insulin-type): ensure the correct insulin type is selected
 
 ### Carb Absorption Time Update
