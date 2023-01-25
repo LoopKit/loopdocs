@@ -30,6 +30,8 @@ In order to install Loop, the TestFlight app must be installed on the phone:
 
 Once the GitHub Build completes (either green check mark on GitHub or you got an email), you can install Loop on your phone.
 
+**Loop 3 requires iOS 15.1 or higher**
+
 ### First Time on Phone
 
 The first time you use TestFlight on any phone associated with a given email, you must `Redeem` the code sent to that email inviting you to test the app. The GIF below is for someone who has never used TestFlight.

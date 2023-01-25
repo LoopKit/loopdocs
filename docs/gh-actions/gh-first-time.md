@@ -43,6 +43,8 @@ This is only available with Loop 3 and Loop development branches.
 
 ## Prerequisites
 
+**Loop 3 requires iOS 15.1 or higher**
+
 ### Build Loop
 
 There are only two prerequisites to Build Loop with this method.
