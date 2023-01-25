@@ -2768,9 +2768,10 @@
 </div>
 <p>If you built <abbr title="Latest release with major updates">Loop 3</abbr> over an existing app, your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and pump selections should have carried over.</p>
 <h2 id="experienced-loopers">Experienced Loopers<a class="headerlink" href="#experienced-loopers" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Medtronic Users</p>
-<p>After you finish onboarding, you must select Insulin Type on your pump settings screen. Without an insulin type, closed loop will not work.</p>
+<div class="admonition danger">
+<p class="admonition-title">Insulin Type</p>
+<p>Insulin Type is in Pump Settings (not therapy settings) and will NOT be imported.</p>
+<p>After you finish onboarding, you must select Insulin Type on your pump settings screen. Without an insulin type, closed loop might not work or a different insulin type might be selected.</p>
 </div>
 <p>The first time you build <abbr title="Latest release with major updates">Loop 3</abbr> on a device, you will need to go through the onboarding process too.</p>
 <ul>
@@ -2800,9 +2801,13 @@
 <p class="admonition-title">WARNING</p>
 <p>The new onboarding forces you to check all your imported <a href="#therapy-settings-onboarding"><abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> (<abbr title="familiarize new, and existing, Loop users with settings in Loop 3 and ensure the Therapy Settings are all entered and are within safety guardrails">Onboarding</abbr> Summary)</a> but there may be other settings you need to check as well.</p>
 <ul>
-<li><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>: may be at the default value of <code>Temp Basal Only</code>, even if you were using <code>Automatic Bolus</code> with Loop 2.x.x</li>
+<li><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>: may be at the default value of <code>Temp Basal Only</code>, even if you were using <code>Automatic Bolus</code> before</li>
 <li>Overrides: verify these are populated as expected</li>
 <li>Pumps that use a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>: confirm the device is selected and active in the Pump settings screen</li>
+<li>If you use Nightscout, make sure the site is getting Loop updates</li>
+</ul>
+<p><strong>HIGHLIGHTING THIS ONE - A LOT OF PEOPLE MISSED THIS:</strong></p>
+<ul>
 <li><a href="../add-pump/#insulin-type">Insulin Type</a>: ensure the correct insulin type is selected</li>
 </ul>
 </div>
