@@ -2497,6 +2497,11 @@
 </thead>
 <tbody>
 <tr>
+<td>LoopCaregiver</td>
+<td><a href="https://github.com/LoopKit/LoopCaregiver">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/LoopCaregiver</a></td>
+<td><a href="../../nightscout/remote-overrides/#loopcaregiver">LoopDocs: LoopCaregiver</a></td>
+</tr>
+<tr>
 <td>Loop Follow</td>
 <td><a href="https://github.com/jonfawcett/LoopFollow">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/jonfawcett/LoopFollow</a></td>
 <td><a href="https://github.com/jonfawcett/LoopFollow#loop-follow">Loop Follow</a></td>
@@ -2579,7 +2584,7 @@
 <li>If you see the red X<ul>
 <li><a href="../gh-errors/#examine-the-error">Examine the Error</a> tells you how to download the file needed to diagnose your problem.</li>
 <li><a href="../gh-errors/#action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a> lets you know what to search for in the downloaded file</li>
-<li>Once you've resolved the error, repeat the Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> step</li>
+<li>Once you've resolved the error, repeat the <a href="#add-identifiers">Add identifiers</a> step</li>
 </ul>
 </li>
 </ul>
@@ -2596,6 +2601,11 @@
 </thead>
 <tbody>
 <tr>
+<td>LoopCaregiver</td>
+<td>LoopCaregiver</td>
+<td>com.TEAMID.loopkit.LoopCaregiver</td>
+</tr>
+<tr>
 <td>Loop Follow</td>
 <td>LoopFollow</td>
 <td>com.TEAMID.LoopFollow</td>
@@ -2603,7 +2613,12 @@
 </tbody>
 </table>
 <p>Some apps, like Loop, require updates to the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after they are generated.</p>
-<p>Other apps, like Loop Follow, do not require updates to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after they are generated.</p>
+<p>Other apps, like LoopCaregiver and Loop Follow, do not require updates to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after they are generated.</p>
+<div class="admonition warning">
+<p class="admonition-title">LoopCaregiver is under development</p>
+<p>This app is proving very useful already, but it is still under development. When you <abbr title="a copy of code in a github repository other than the original">fork</abbr> this from the <abbr title="contains project files and each file's revision history">repository</abbr>, you will notice that dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the default.</p>
+<p>Please follow the discussion in the <a href="https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App">Loop Caregiver App</a> zulipchat stream.</p>
+</div>
 <p>If your app is not listed in the Update Required section, skip ahead to <a href="#create-app-in-app-store-connect">Create App in App Store Connect</a>.</p>
 <h3 id="update-required">Update Required<a class="headerlink" href="#update-required" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This is the list of apps that require you to modify the Identifier(s) before continuing.</p>
@@ -2620,6 +2635,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>LoopCaregiver</td>
+<td>com.TEAMID.loopkit.LoopCaregiver</td>
+</tr>
 <tr>
 <td>Loop Follow</td>
 <td>com.TEAMID.LoopFollow</td>
@@ -2682,7 +2701,7 @@
 <p>Wait a minute or two for the action to finish</p>
 <ul>
 <li>If this action fails, head over to <a href="../gh-errors/#action-create-certificates-errors">Action: Create Certificates Errors</a></li>
-<li>Once you've resolved the error, repeat the Actions Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and then Create Certificates. (The Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> might not be required but it is fast and should be done as a matter of routine.)</li>
+<li>Once you've resolved the error, repeat the Actions <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and then Create Certificates. (The Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> might not be required but it is fast and should be done as a matter of routine.)</li>
 </ul>
 </li>
 </ol>

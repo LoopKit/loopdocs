@@ -2650,7 +2650,7 @@
 </li>
 <li>Looper is using <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr><ul>
 <li>Loop will initiate 40% of the recommended dose when it receives the carb remote command</li>
-<li>Your bolus will be accepted and take place in addition to the any previous automatic boluses</li>
+<li>Your bolus will be accepted and take place in addition to an automatic boluses</li>
 </ul>
 </li>
 </ul>
@@ -2675,19 +2675,15 @@
 <p class="admonition-title">Configuration Breaking Change on 2023 January 24</p>
 <p>What does that mean? Sounds scary!</p>
 <p>This is an app under development. Sometimes, when improvements are added, you have to start over with a fresh download and enter all your information again to take advantage of the update. The app on your phone keeps working until you are ready to update.</p>
-<p><strong>This change is to make progress - no need to rush into a rebuild right now.</strong></p>
-<p>The bundle ID has been modified:</p>
+<ul>
+<li><strong>The location of the <abbr title="contains project files and each file's revision history">repository</abbr> has moved</strong></li>
+<li><strong>The ability to build with <a href="../../gh-actions/gh-other-apps/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> as well as <abbr title="program used to build an app">Xcode</abbr> has been added</strong></li>
+<li><strong>The bundle ID has been modified</strong></li>
+</ul>
+<p>Because the bundle ID has changed:</p>
 <ul>
 <li>If you already have LoopCaregiver running and do a fresh download and build, you will be building a separate app and will need to delete the old one and add your Looper(s) in again</li>
 <li>If you haven't built LoopCaregiver, the app you download and build today has the new format for the bundle ID</li>
-</ul>
-<p>Details:</p>
-<ul>
-<li>Bundle ID used to be: org.loopkit.LoopCaregiver</li>
-<li>Bundle ID now: com.TEAMID.loopkit.LoopCaregiver</li>
-<li>This is a step towards enabling the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method, but please be patient, wait until instructions are posted</li>
-<li>There might be additional architectural updates coming - this note will be updated at that time</li>
-<li>As always, TEAMID refers to your unique Apple Developer Team ID</li>
 </ul>
 </div>
 <ul>
@@ -2721,7 +2717,7 @@
 <p>If you plan to use LoopCaregiver, please join <a href="https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App">Loop Caregiver App</a> zulipchat stream.</p>
 <p><strong>As with all development code, monitor zulipchat for announcements, report any problems you experience, be prepared to build frequently, and pay attention.</strong></p>
 <h4 id="build-loopcaregiver">Build LoopCaregiver<a class="headerlink" href="#build-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built <abbr title="Latest release with major updates">Loop 3</abbr> using the script.</p>
+<p>A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built <abbr title="Latest release with major updates">Loop 3</abbr> using the script. You may also choose to build it with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method as documented on the Browser Build: <a href="../../gh-actions/gh-other-apps/">Other Apps</a> page.</p>
 <p>Open a terminal window. Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
 <div class="highlight"><span class="filename">Copy and Paste to start the BuildLoopCaregiver.sh script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopCaregiver.sh)&quot;
 </code></pre></div>
@@ -2729,8 +2725,7 @@
 <div class="admonition warning">
 <p class="admonition-title">Not Loop</p>
 <p>The output you see in the <abbr title="interface for entering commands to the computer">Terminal</abbr> may look very similar to when you build <abbr title="Latest release with major updates">Loop 3</abbr> from a script.</p>
-<p>It is pulling down a <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> from a different location (gestrich instead of LoopKit) and just the caregiver <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Do not attempt to build Loop with this download.</p>
-<p>The developers say: "The Caregiver app is being designed to be a full Loop integrated app, being able to benefit from Loop data stores, visualization, and other parts of the system that are mature and have a lot of design/thought put into them. At some point it will just be a single checkout, and you can build both."  <strong>But NOT yet</strong></p>
+<p>It is pulling down a <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> from a different location (LoopKit/LoopCaregiver). It uses some modules from Loop. The target and scheme are automatically selected for LoopCaregiver and if you follow directions for a paid Developer account, the signing is automatic.</p>
 </div>
 <h4 id="use-loopcaregiver">Use LoopCaregiver<a class="headerlink" href="#use-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Some limited directions for using the LoopCaregiver app are provided - please also read the zulipchat stream.</p>
@@ -2759,7 +2754,7 @@
 <li>On LoopCaregiver Phone<ul>
 <li>Tap on  LoopCaregiver-&gt;Settings</li>
 <li>Tap on <strong>&plus;</strong> to add a Looper</li>
-<li>Enter the name of the Looper, the Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr></li>
+<li>Enter the name of the Looper, the Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> (use http<strong>s</strong>://) and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr></li>
 <li>Touch the QR code row - this opens the camera - point camera at QR code from Looper's phone</li>
 </ul>
 </li>
@@ -2771,6 +2766,7 @@
 </ul>
 <h4 id="issue-remote-commands-with-loopcaregiver"><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Remote Commands with LoopCaregiver<a class="headerlink" href="#issue-remote-commands-with-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You issue override, carb and bolus commands using a toolbar similar to the one seen on Loop. In the example graphic above, the carb and bolus entries visible were issued remotely. (Note that Adam 6 is a test phone.)</p>
+<p>Carb and bolus commands each require authorization before they are accepted. The authorization (FaceID, Fingerprint or passcode) matches that required to unlock the LoopCaregiver's phone.</p>
 <p>The use of LoopCaregiver makes remote commands much easier and more reliable.</p>
 <p>Go back and read the warnings again before using the app. <a href="#warnings-for-remote-commands">Warnings for Remote Commands</a></p>
 <h3 id="nightscout-careportal">Nightscout Careportal<a class="headerlink" href="#nightscout-careportal" title="Anchor link to this Header on this Page">&para;</a></h3>
