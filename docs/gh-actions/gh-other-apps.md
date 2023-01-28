@@ -9,7 +9,7 @@ The same technique is used and the same six Secrets are applied to each reposito
 
 ### Prerequisites
 
-Wait until the repository you are interested in add the capability of GitHub build. Many of the steps for each repository are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.
+Wait until the repository you are interested in adds the capability of GitHub build. Many of the steps for each repository are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.
 
 * If you have already built using this GitHub method, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](fork-and-add-secrets)
 
