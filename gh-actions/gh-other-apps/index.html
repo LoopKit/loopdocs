@@ -14,7 +14,7 @@
     
     
       
-        <title>Nightscout Overview - LoopDocs</title>
+        <title>Other Apps - LoopDocs</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#using-github-to-build-other-apps" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nightscout Overview
+              Other Apps
             
           </span>
         </div>
@@ -218,13 +218,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../gh-actions/gh-overview/" class="md-tabs__link">
+      <a href="../gh-overview/" class="md-tabs__link md-tabs__link--active">
         Browser Build
       </a>
     </li>
@@ -314,15 +316,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../nightscout/overview/" class="md-tabs__link">
         Nightscout
       </a>
     </li>
@@ -603,12 +603,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -631,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gh-actions/gh-overview/" class="md-nav__link">
+      <a href="../gh-overview/" class="md-nav__link">
         GitHub Build Overview
       </a>
     </li>
@@ -645,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
+      <a href="../gh-first-time/" class="md-nav__link">
         GitHub First-Time
       </a>
     </li>
@@ -659,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
+      <a href="../gh-deploy/" class="md-nav__link">
         GitHub Deploy
       </a>
     </li>
@@ -673,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gh-actions/gh-update/" class="md-nav__link">
+      <a href="../gh-update/" class="md-nav__link">
         GitHub Update
       </a>
     </li>
@@ -687,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gh-actions/gh-errors/" class="md-nav__link">
+      <a href="../gh-errors/" class="md-nav__link">
         GitHub Errors
       </a>
     </li>
@@ -699,11 +701,166 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-other-apps/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Other Apps
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Other Apps
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-github-to-build-other-apps" class="md-nav__link">
+    Using GitHub to Build Other Apps
+  </a>
+  
+    <nav class="md-nav" aria-label="Using GitHub to Build Other Apps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fork-and-add-secrets" class="md-nav__link">
+    Fork and Add Secrets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-secrets-for-this-app" class="md-nav__link">
+    Configure Secrets for this App
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure Secrets for this App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-existing-secrets" class="md-nav__link">
+    Add Existing Secrets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-add-identifiers" class="md-nav__link">
+    Action: Add Identifiers
+  </a>
+  
+    <nav class="md-nav" aria-label="Action: Add Identifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-identifiers" class="md-nav__link">
+    Add Identifiers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-app-identifier" class="md-nav__link">
+    Review App Identifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Review App Identifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-required" class="md-nav__link">
+    Update Required
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-app-in-app-store-connect" class="md-nav__link">
+    Create App in App Store Connect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-certificates" class="md-nav__link">
+    Create Certificates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-app" class="md-nav__link">
+    Build App
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-users-to-testflight-for-app" class="md-nav__link">
+    Add Users to TestFlight for App
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    Deployment
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1816,14 +1973,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
       
       
@@ -1844,147 +1999,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Nightscout Overview
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../nightscout/overview/" class="md-nav__link">
         Nightscout Overview
       </a>
-      
-        
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Headers on this Page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nightscout-documentation" class="md-nav__link">
-    Nightscout Documentation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nightscout-with-loop" class="md-nav__link">
-    Nightscout with Loop
-  </a>
-  
-    <nav class="md-nav" aria-label="Nightscout with Loop">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#loop-uploads-to-nightscout" class="md-nav__link">
-    Loop Uploads to Nightscout
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#loop-2-red-loop-warning" class="md-nav__link">
-    Loop 2 Red Loop Warning
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nightscout-dashboard" class="md-nav__link">
-    Nightscout Dashboard
-  </a>
-  
-    <nav class="md-nav" aria-label="Nightscout Dashboard">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#blood-glucose" class="md-nav__link">
-    Blood Glucose
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sage-cage-bage-pills" class="md-nav__link">
-    SAGE, CAGE, BAGE pills
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#carbs" class="md-nav__link">
-    Carbs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#boluses" class="md-nav__link">
-    Boluses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#temp-basals" class="md-nav__link">
-    Temp Basals
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#predicted-bg" class="md-nav__link">
-    Predicted BG
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#loop-pill" class="md-nav__link">
-    Loop pill
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1996,7 +2015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../new_user/" class="md-nav__link">
+      <a href="../../nightscout/new_user/" class="md-nav__link">
         New Nightscout
       </a>
     </li>
@@ -2010,7 +2029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../update_user/" class="md-nav__link">
+      <a href="../../nightscout/update_user/" class="md-nav__link">
         Nightscout with Loop
       </a>
     </li>
@@ -2024,7 +2043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troublehoot/" class="md-nav__link">
+      <a href="../../nightscout/troublehoot/" class="md-nav__link">
         Nightscout Troubleshooting
       </a>
     </li>
@@ -2038,7 +2057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../remote-overrides/" class="md-nav__link">
+      <a href="../../nightscout/remote-overrides/" class="md-nav__link">
         Remote Commands
       </a>
     </li>
@@ -2052,7 +2071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ns_crossref/" class="md-nav__link">
+      <a href="../../nightscout/ns_crossref/" class="md-nav__link">
         Nightscout Cross Ref
       </a>
     </li>
@@ -2297,37 +2316,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#using-github-to-build-other-apps" class="md-nav__link">
+    Using GitHub to Build Other Apps
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nightscout-documentation" class="md-nav__link">
-    Nightscout Documentation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nightscout-with-loop" class="md-nav__link">
-    Nightscout with Loop
-  </a>
-  
-    <nav class="md-nav" aria-label="Nightscout with Loop">
+    <nav class="md-nav" aria-label="Using GitHub to Build Other Apps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#loop-uploads-to-nightscout" class="md-nav__link">
-    Loop Uploads to Nightscout
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#loop-2-red-loop-warning" class="md-nav__link">
-    Loop 2 Red Loop Warning
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
@@ -2338,64 +2336,104 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nightscout-dashboard" class="md-nav__link">
-    Nightscout Dashboard
+  <a href="#fork-and-add-secrets" class="md-nav__link">
+    Fork and Add Secrets
   </a>
   
-    <nav class="md-nav" aria-label="Nightscout Dashboard">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-secrets-for-this-app" class="md-nav__link">
+    Configure Secrets for this App
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure Secrets for this App">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#blood-glucose" class="md-nav__link">
-    Blood Glucose
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sage-cage-bage-pills" class="md-nav__link">
-    SAGE, CAGE, BAGE pills
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#carbs" class="md-nav__link">
-    Carbs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#boluses" class="md-nav__link">
-    Boluses
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#temp-basals" class="md-nav__link">
-    Temp Basals
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#predicted-bg" class="md-nav__link">
-    Predicted BG
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#loop-pill" class="md-nav__link">
-    Loop pill
+  <a href="#add-existing-secrets" class="md-nav__link">
+    Add Existing Secrets
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-add-identifiers" class="md-nav__link">
+    Action: Add Identifiers
+  </a>
+  
+    <nav class="md-nav" aria-label="Action: Add Identifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-identifiers" class="md-nav__link">
+    Add Identifiers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-app-identifier" class="md-nav__link">
+    Review App Identifier
+  </a>
+  
+    <nav class="md-nav" aria-label="Review App Identifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-required" class="md-nav__link">
+    Update Required
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-app-in-app-store-connect" class="md-nav__link">
+    Create App in App Store Connect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-certificates" class="md-nav__link">
+    Create Certificates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-app" class="md-nav__link">
+    Build App
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-users-to-testflight-for-app" class="md-nav__link">
+    Add Users to TestFlight for App
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    Deployment
+  </a>
   
 </li>
       
@@ -2412,110 +2450,277 @@
               
                 
                 
-                  <h1>Nightscout Overview</h1>
+                  <h1>Other Apps</h1>
                 
-                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Nightscout is an excellent tool for remotely viewing Loop's actions. Nightscout can act as a stand-alone tool or be integrated with Loop. (Nightscout also integrates with other open-source hybrid closed loop systems such as OpenAPS, AndroidAPS and FreeAPS X. LoopDocs focuses on Loop.)</p>
-<p>When integrated with Loop, Nightscout provides monitoring of Loop activities such as viewing history of glucose, carbs, boluses, temp basals and overrides; troubleshooting Loop errors; and provides extensive reports for analyzing data trends and patterns. These reports assist when Loop <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> need to be adjusted.</p>
-<p>For caregivers, Nightscout enables remote monitoring and even the ability to issue remote commands through Nightscout when both Loop and Nightscout are properly configured. There is a whole page devoted to <a href="../remote-overrides/">LoopDocs: Remote Commands</a>. If you are a caregiver, this summary of remote capabilities may encourage you to look into Nightscout.</p>
-<div class="admonition info">
-<p class="admonition-title">Remote Commands</p>
-<ul>
-<li>Loop 2.2.x<ul>
-<li>Overrides can be enabled and disabled</li>
-</ul>
-</li>
-<li><abbr title="Latest release with major updates">Loop 3</abbr><ul>
-<li>Overrides can be enabled and disabled</li>
-<li>Carbs can be entered</li>
-<li>Boluses can be commanded</li>
-<li>LoopCaregiver app (under development, <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> only) enables the following from the caregiver's phone<ul>
-<li>monitor Loop</li>
-<li>issue remote commands for carbs, bolus and overrides</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<p>Nightscout is useful for all Loopers. Adults who take care of themselves find the reports and analysis methods from the Nightscout site provide effective tools to monitor their settings and provide reports for their health care provider. It also stores Loop configurations so they can be reviewed. With <abbr title="Latest release with major updates">Loop 3</abbr>, the saved Nightscout profiles can be downloaded to a new app for quick onboarding, should you ever need to start fresh.</p>
-<p>Setting up a Nightscout site is described in a separate web site: <a href="https://nightscout.github.io">Nightscout: Documentation</a>.</p>
-<p>There are Nightscout apps in your iPhone App Store that allow you to view the Nightscout site after you've configured it, or you can use a web browser to view the data. The app alone is not enough - you need to follow the steps to configure your own Nightscout site and obtain your specific Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr>.</p>
-<ul>
-<li>Nightscout is highly recommended for Loop users, especially those using Loop as caregivers</li>
-<li>Nightscout displays are often the easiest way to troubleshoot Loop settings if you are having problems and seeking input from others</li>
-<li>Nightscout provides reporting features for longer-term review and preparing information for your physician</li>
-</ul>
-<h2 id="nightscout-documentation">Nightscout Documentation<a class="headerlink" href="#nightscout-documentation" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There used to be a lot of Nightscout information found only in LoopDocs, but that was transferred and subsequently updated in <a href="https://nightscout.github.io">Nightscout: Documentation</a>. The information that remains in LoopDocs is Loop specific. So you may be jumping back and forth between the two sets of documents.</p>
-<div class="admonition info">
-<ul>
-<li>If you see the Nightscout Owl logo in upper left you are in the Nightscout website</li>
-<li>If you see the LoopDocs green-loop logo in upper left you are in the LoopDocs website</li>
-<li>While in the Nightscout tab of LoopDocs, most links have a <code>Nightscout:</code> or <code>LoopDocs:</code> in the link name to let you know which website has the link of interest</li>
-<li>Suggestion: open the <a href="https://nightscout.github.io">Nightscout: Documentation</a> in a separate tab or window of your browser for easy access to both websites</li>
-</ul>
-</div>
-<h2 id="nightscout-with-loop">Nightscout with Loop<a class="headerlink" href="#nightscout-with-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This page provides general discussion about the Nightscout display, as well as some Loop-specific display information. Over time, interactions between Loop and Nightscout were improved. The information on this page has been updated for <abbr title="Latest release with major updates">Loop 3</abbr> and Nightscout version 14.2.6 (or later). Older versions may exhibit some differences in display of Loop information on the Nightscout site.</p>
-<h3 id="loop-uploads-to-nightscout">Loop Uploads to Nightscout<a class="headerlink" href="#loop-uploads-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
+                <h2 id="using-github-to-build-other-apps">Using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to Build Other Apps<a class="headerlink" href="#using-github-to-build-other-apps" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Once <abbr title="Latest release with major updates">Loop 3</abbr> was released with the ability to build using a browser, a lot of other repositories in the DIY universe are adding the same features.</p>
+<p>The same technique is used and the same six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are applied to each <abbr title="contains project files and each file's revision history">repository</abbr>. Those secrets are tied to your Apple Developer ID and your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account.</p>
 <div class="admonition warning">
-<p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr></p>
-<p>The Nightscout display updates when the Looper's phone is connected to the internet via WiFi or cellular service. When the uploads stop, the Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> becomes "stale" (cannot open it) after 15 minutes.</p>
-<p>"Pills" are the little information boxes. They are <a href="https://nightscout.github.io/nightscout/setup_variables/#plugins">Nightscout: Plugins</a> that must be enabled with configuration variables and then the display for each <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> can be turned on or off within your Nightscout site.</p>
-<p>If upload to Nightscout is interrupted, Loop stores up to 7 days of Nightscout information in a local buffer on the phone, and will attempt to upload later when access is restored. Once access is restored, a stale Loop Pill may require 15 minutes before it will open to display additional Loop information.</p>
-<p>The Carb <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> on the Nightscout site is populated by Loop when Loop is actively uploading to Nightscout - but it may lag the value displayed in the Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> by one loop cycle and it will display 0 <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> within 5 to 10 minutes if upload is interrupted. In other words, if the <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> shows 0 unexpectedly and Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> is active, you can believe the value shown in the Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr>.</p>
+<p class="admonition-title">GH_PAT</p>
+<p>If you choose a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> personal access token that expires, you will get an email to renew it about 6 days ahead. You will paste your updated GH_PAT into the secrets for each <abbr title="contains project files and each file's revision history">repository</abbr> you use and initiate the Build Action for that app. This will ensure continued availability of all your apps that you build with this method.</p>
 </div>
-<h3 id="loop-2-red-loop-warning">Loop 2 Red Loop Warning<a class="headerlink" href="#loop-2-red-loop-warning" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With Loop 2.2.9 and earlier versions, when Loop has a Nightscout site added in Loop Services AND is unable to upload messages to that site, it can fill up a buffer of stored upload messages. This may lead to sluggish behavior in Loop or even Red Loops. This can happen if the Nightscout site is "down" or if the database is full so it is not accepting messages.</p>
-<p>Step 1: Remove Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> from Loop Services</p>
-<p>Step 2: Figure out why the Nightscout site is not accepting uploads from Loop and fix that problem.</p>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Wait until the <abbr title="contains project files and each file's revision history">repository</abbr> you are interested in adds the capability of <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build. Many of the steps for each <abbr title="contains project files and each file's revision history">repository</abbr> are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.</p>
 <ul>
-<li><a href="https://nightscout.github.io/troubleshoot/troubleshoot">Nightscout: Troubleshooting</a></li>
-<li><a href="https://nightscout.github.io/nightscout/admin_tools/#database-maintenance">Nightscout: Database Management</a></li>
+<li>
+<p>If you have already built using this <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method, it is easy to build the next <abbr title="contains project files and each file's revision history">repository</abbr>. Skip ahead to <a href="fork-and-add-secrets">Fork and Add <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></p>
+</li>
+<li>
+<p>If this is the first <abbr title="contains project files and each file's revision history">repository</abbr> you have built with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>, you must first complete the initial steps found on <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time</a>. When you reach the point where</p>
+<ul>
+<li>You have created your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>You are told to <a href="../gh-first-time/#fork-loopworkspace"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time: Fork LoopWorkspace</a><ul>
+<li>Review the directions but don't do it</li>
+<li>Return here and check the table below</li>
+<li>Use that table to find the link of the <abbr title="contains project files and each file's revision history">repository</abbr> you will <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
 </ul>
-<p>Step 3: Add Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> to Loop Services</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Many graphics on this page show LoopWorkspace, just remember to use the <abbr title="contains project files and each file's revision history">repository</abbr> for the app you want to build.</p>
+<h2 id="fork-and-add-secrets">Fork and Add <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#fork-and-add-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
+<ul>
+<li>You will return to this page after reviewing (but not doing) this step <a href="../gh-first-time/#fork-loopworkspace"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time: Fork LoopWorkspace</a><ul>
+<li>Use the same method as that section, but <abbr title="a copy of code in a github repository other than the original">fork</abbr> the <abbr title="contains project files and each file's revision history">repository</abbr> for the app you plan to build</li>
+<li>If there is no row for an app, then wait until one is added - that <abbr title="contains project files and each file's revision history">repository</abbr> is probably not ready yet</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>App</th>
+<th>Fork from this Address</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loop Follow</td>
+<td><a href="https://github.com/jonfawcett/LoopFollow">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/jonfawcett/LoopFollow</a></td>
+<td><a href="https://github.com/jonfawcett/LoopFollow#loop-follow">Loop Follow</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="configure-secrets-for-this-app">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for this App<a class="headerlink" href="#configure-secrets-for-this-app" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>After successfully creating your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the <abbr title="contains project files and each file's revision history">repository</abbr> for this app:</p>
+<ul>
+<li>
+<p>If you have already built Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>, skip ahead to <a href="#add-existing-secrets">Add Existing <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></p>
+</li>
+<li>
+<p>If this is the first <abbr title="contains project files and each file's revision history">repository</abbr> you have built with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></p>
+<ul>
+<li>You should follow the detailed steps at <a href="../gh-first-time/#configure-secrets"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time: Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>, except you will apply the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> to the <abbr title="contains project files and each file's revision history">repository</abbr> for the app you are planning to build</li>
+<li>Once your 6 secrets have been added, return to this page and skip ahead to <a href="#action-add-identifiers">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> on this page.</li>
+</ul>
+</li>
+</ul>
+<h3 id="add-existing-secrets">Add Existing <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#add-existing-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition tip">
-<p class="admonition-title">More Information</p>
-<p>For those who want to know more:</p>
-<p>There is a big architectural change between Loop 2 and <abbr title="Latest release with major updates">Loop 3</abbr> for remote data services like Nightscout.</p>
-<p>It used to be that data would be “held on” to be uploaded, and a non functional service could cause large backlogs. The new system does not allow for this. Uploaders individually keep track of where they are in the upload stream via a lightweight “query handle”, and if the data in Loop’s data stores expires before they upload, then they’ll just not be able to upload that data.</p>
-<p>The default data store for <abbr title="Latest release with major updates">Loop 3</abbr> is 7 days.</p>
+<p class="admonition-title">MATCH_PASSWORD</p>
+<p>An early version of <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time had incorrect information about the need to save MATCH_PASSWORD. If you did not save your MATCH_PASSWORD in your file with all your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, make up a new one, save it and add it to your LoopWorkspace as well as the <abbr title="contains project files and each file's revision history">repository</abbr> for this new app.</p>
 </div>
-<h2 id="nightscout-dashboard">Nightscout Dashboard<a class="headerlink" href="#nightscout-dashboard" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p align="center"><img alt="img/example.jpg" src="../img/example.jpg" width="600" /></p>
-<h3 id="blood-glucose">Blood Glucose<a class="headerlink" href="#blood-glucose" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Glucose readings from the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> are shown in green, yellow, or red in the main Dashboard of Nightscout. (The graphic above was generated with Colors enabled in Nightscout; there are other display options.) You can adjust your high and low glucose alarm thresholds in Nightscout by modifying configuration variables. This is optional - defaults are provided if you do not set them. The alarm thresholds affect the color of the displayed <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data points and, if enabled, determine when an audible and visible alarm sounds. The Nightscout alarm thresholds will not affect Loop performance. Loop only uses the glucose correction ranges in the Loop app settings.</p>
-<p>The main dashboard (upper section) for Nightscout displays the time duration you have selected (in the example above, 12 hours). The bottom of the screen shows the last 48-hours of glucose trends. You can scan backward by dragging the bottom timeline to the left, if you want to review specific Loop actions or data in the last two days.</p>
-<h3 id="sage-cage-bage-pills"><abbr title="sensor age on Nightscout site">SAGE</abbr>, <abbr title="cannula (or pump site) age on Nightscout site">CAGE</abbr>, <abbr title="pump battery age on Nightscout site">BAGE</abbr> pills<a class="headerlink" href="#sage-cage-bage-pills" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The <abbr title="sensor age on Nightscout site">SAGE</abbr>, <abbr title="cannula (or pump site) age on Nightscout site">CAGE</abbr>, and <abbr title="pump battery age on Nightscout site">BAGE</abbr> pills are for Sensor Age, Cannula Age, and (pump) Battery Age. These optional pills track the time since your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> sensor, Pump site, and Pump battery were last changed. You can set up custom alerts to remind you when it is time to change the devices, or simply use the visuals to keep track of your particular timing for site/sensor changes. These fields will not auto-update from pump or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> devices, instead you will have to update them using Nightscout Careportal so that the <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> information is accurate.</p>
-<h3 id="carbs">Carbs<a class="headerlink" href="#carbs" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Carbs are automatically uploaded to Nightscout by the Loop app. The amount of carbs on board (active carbs or <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr>) can be seen by clicking the Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr>. The size of a white carb dot on the graph is proportional to the amount of carbs entered...bigger meals get bigger dots. Loop does not read carbs from Nightscout for use in looping calculations, it only uploads carbs to Nightscout that have been entered in the Loop app.</p>
-<h3 id="boluses">Boluses<a class="headerlink" href="#boluses" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Insulin boluses are automatically uploaded to Nightscout by the Loop app. The bolus is shown as a filled-in blue lower-half of the dot, and the specific amount of the bolus is also shown. There may be a separation between the bolus and the carb entry, especially if the user preboluses a meal.</p>
-<p>The bolus is uploaded to Nightscout as soon as it starts and Insulin on board (active insulin or <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>) is updated in the Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr>. Should the bolus be interrupted, the Nightscout information is updated when the Loop information updates (assuming internet access is active).</p>
-<h3 id="temp-basals">Temp Basals<a class="headerlink" href="#temp-basals" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Your current basal profile is automatically updated to Nightscout whenever it is changed by Loop. The dashed blue line represents the scheduled basal profile. The solid blue lines indicate the actual basal amounts set for a given time...so as Loop sets temp basals higher or lower than your scheduled basal rate. If the graph and Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> do not agree, you should should believe the Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr>.</p>
-<h3 id="predicted-bg">Predicted BG<a class="headerlink" href="#predicted-bg" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The purple line to the right of the BG is Loop's predicted BG. Watching the behavior of that purple line can help you understand why Loop is making decisions regarding high or low temps. You can read more on that topic in the <a href="../../operation/algorithm/overview/">LoopDocs: Algorithm</a> section of these docs. If you don't see the prediction (and all other Nightscout and Loop settings are configured), tap on the 3 dots to the right of the 24 to reveal the choice to display AR2 prediction or Loop prediction. Adjust the check boxes to show just the Loop prediction.</p>
-<h3 id="loop-pill">Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr><a class="headerlink" href="#loop-pill" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> is the little display box which, when hovered over or clicked, will provide additional information about recent Loop activities and status. Information included is the last time Loop ran, the temp basal set, <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>, and <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr>. Looking at the Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> is a quick method for assessing if you loop is currently active, as well.</p>
-<div class="admonition info">
-<p class="admonition-title">Loop Pill status indicator symbols</p>
-<p><font style='font-size: 1.2em;'>X</font> &nbsp;
-Error in Loop</p>
-<p><font style='font-size: 1.4em;'>ϕ</font> &nbsp;
-Recommending basal, but not enacting (open loop or pump suspended)</p>
-<p><font style='font-size: 2em;'>⌁</font> &nbsp;
-Enacted a new temp basal</p>
-<p><font style='font-size: 1.5em;'>↻</font> &nbsp;
-Loop is continuing with last temp basal, no change</p>
-<p><font style='font-size: 1.5em;'>⚠</font> &nbsp;
-Warning indicating Loop is either red or has failed to upload to Nightscout for a longer period of time.</p>
-</div>
-<p>Mouse over or Touch the Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> to view a tool tip containing one or more of the latest status messages. The most up-to-date Nightscout also includes information in the Loop <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> for the minimum and maximum predicted BG, eventual and predicted BG.</p>
-<p><img alt="img/loop_pill_message.png" src="../img/loop_pill_message.png" width="750" /></dd></p>
-</dl>
+<p>Open the text file in which you maintain a copy of your 6 <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> so you can copy each value into the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for this <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<ol>
+<li>Click on the <abbr title="contains project files and each file's revision history">repository</abbr> for your app</li>
+<li>
+<p>Click on the Settings Icon near the top right of your <abbr title="contains project files and each file's revision history">repository</abbr></p>
+<ul>
+<li>On the left side, tap on <code>Secrets and variables</code> dropdown and choose Actions</li>
+<li>After you select Actions, your screen should look like the graphic below</li>
+</ul>
+<p align="center"><img alt="action secrets and variables screen" src="../img/gh-actions-secrets.svg" width="700" /></p>
+</li>
+<li>
+<p>Tap on <code>New repository secret</code> and add each of the 6 <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></p>
+<ul>
+<li>You will notices the New secret dialog looks a little different</li>
+<li>As soon as you click on the Name* Box, the 6 Secret Names show up as a dropdown as shown in the graphic below</li>
+<li>Select each one in turn and paste the secret value into the Secret* box and hit Add secret</li>
+</ul>
+<p align="center"><img alt="dialog for entering a new secret" src="../img/repeat-secret-dialog.png" width="500" /></p>
+</li>
+</ol>
+<p>Once all six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are added, continue to add the identifiers.</p>
+<h2 id="action-add-identifiers">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#action-add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the "Actions" tab</p>
+<ul>
+<li>The first time you click on <code>Actions</code> with this <abbr title="contains project files and each file's revision history">repository</abbr> you'll be informed that <code>Workflows aren't being run on this forked repository</code></li>
+<li>Tap on the green button that says: <code>I understand my workflows, go ahead and enable them</code></li>
+</ul>
+<p>The workflows are now displayed: look at the list on the left side similar to that shown in the graphic below. (You can dismiss the Actions Enabled message using the X near the upper right side if it appears).</p>
+<ul>
+<li>The graphic below is an example from Loop, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
+</ul>
+<p align="center"><img alt="workflows displayed" src="../img/gh-workflows-enabled.png" width="700" /></p>
+<h3 id="add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ul>
+<li>The graphic below is an example from Loop, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
+</ul>
+<p>Refer to the graphic below for the numbered steps:</p>
+<ol>
+<li>Click on the "Actions" tab of your <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>On the left side, click on "Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>"</li>
+<li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
+<li>If you have additional branches, you can change the <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example, select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ul>
+</li>
+<li>
+<p>Tap the green button that says "Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>".</p>
+<p align="center"><img alt="add identifiers using github actions" src="../img/action-02-add-identifiers.svg" width="700" /></p>
+</li>
+</ol>
+<p>The Add Identifier Action should complete (succeed or fail) in a few minutes.</p>
+<ul>
+<li>If you see the green check continue to the next section</li>
+<li>If you see the red X<ul>
+<li><a href="../gh-errors/#examine-the-error">Examine the Error</a> tells you how to download the file needed to diagnose your problem.</li>
+<li><a href="../gh-errors/#action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a> lets you know what to search for in the downloaded file</li>
+<li>Once you've resolved the error, repeat the Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> step</li>
+</ul>
+</li>
+</ul>
+<h2 id="review-app-identifier">Review App Identifier<a class="headerlink" href="#review-app-identifier" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> on the apple developer site.</p>
+<p>After successfully performing the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Action, you will see the identifier for your app with a Name and Bundle ID matching that in the table below. You will see your unique TEAMID embedded in the identifier. (If you previously built this App with <abbr title="program used to build an app">Xcode</abbr>, the name may start with XC but the ending should match.)</p>
+<table>
+<thead>
+<tr>
+<th>App Name</th>
+<th>Name</th>
+<th>Bundle ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loop Follow</td>
+<td>LoopFollow</td>
+<td>com.TEAMID.LoopFollow</td>
+</tr>
+</tbody>
+</table>
+<p>Some apps, like Loop, require updates to the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after they are generated.</p>
+<p>Other apps, like Loop Follow, do not require updates to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after they are generated.</p>
+<p>If your app is not listed in the Update Required section, skip ahead to <a href="#create-app-in-app-store-connect">Create App in App Store Connect</a>.</p>
+<h3 id="update-required">Update Required<a class="headerlink" href="#update-required" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This is the list of apps that require you to modify the Identifier(s) before continuing.</p>
+<h4 id="app-name">App Name<a class="headerlink" href="#app-name" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>There are no apps in this section yet.</p>
+<h2 id="create-app-in-app-store-connect">Create App in App Store Connect<a class="headerlink" href="#create-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You will be following the directions below to create an App in App Store Connect if you don't already have one.</p>
+<p>This requires you to provide some information. Examine the table below for the bundle ID associated with your app. </p>
+<table>
+<thead>
+<tr>
+<th>App Name</th>
+<th>Bundle ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loop Follow</td>
+<td>com.TEAMID.LoopFollow</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed. </p>
+</li>
+<li>
+<p>If this App already exists, you can continue to <a href="#create-certificates">Create Certificates</a></p>
+</li>
+<li>
+<p>Click the Add Apps button or the blue "plus" icon and select New App as shown in the graphic below</p>
+<p align="center"><img alt="choose to add a new app" src="../img/new-app-in-store.png" width="300" /></p>
+</li>
+<li>
+<p>The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in <a href="#find-my-loop"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time: Find My Loop</a>, where you'll be finding App Name instead of Loop.</p>
+<ul>
+<li>Select "<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>".</li>
+<li>Enter a name: this will have to be unique<ul>
+<li>You could start with "App Name ABC" where ABC are your initials</li>
+<li>If that is already taken, you can add a number, for example, "App Name ABC 123"</li>
+<li>This name is what you see on the App Store Connect list and in the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app</li>
+<li>Once installed on your phone, you will see the actual app name</li>
+<li>You can <a href="../gh-deploy/#change-the-app-store-connect-name">Change the App Store Connect Name</a> later if you want</li>
+</ul>
+</li>
+<li>Select your primary language.</li>
+<li>Choose the bundle ID for your app</li>
+<li>SKU can be anything; for example "123" but must be unique across all your apps, so try 1234 or 12345 depending on how many apps you build with this method</li>
+<li>Select "Full Access".</li>
+</ul>
+<p align="center"><img alt="create loop app in store connect - with missing bundle id" src="../img/create-app-in-store.png" width="600" /></p>
+</li>
+<li>
+<p>Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.</p>
+</li>
+</ol>
+<p>You are done with this activity. You can close the browser tab, but before you do, note the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> tab at the top of the page. You'll be using that tab after you complete the next two actions.</p>
+<h2 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h2>
+<ul>
+<li>The graphic below is an example from Loop, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
+</ul>
+<p>Refer to the graphic below for the numbered steps:</p>
+<ol>
+<li>Click on the "Actions" tab of your Repository <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>On the left side, click on "Create Certificates"</li>
+<li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
+<li>If you have additional branches, you can change the <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example, select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ul>
+</li>
+<li>
+<p>Tap the green button that says "Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>".</p>
+<p align="center"><img alt="create certificates using github actions" src="../img/action-03-create-certs.svg" width="700" /></p>
+</li>
+<li>
+<p>Wait a minute or two for the action to finish</p>
+<ul>
+<li>If this action fails, head over to <a href="../gh-errors/#action-create-certificates-errors">Action: Create Certificates Errors</a></li>
+<li>Once you've resolved the error, repeat the Actions Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and then Create Certificates. (The Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> might not be required but it is fast and should be done as a matter of routine.)</li>
+</ul>
+</li>
+</ol>
+<h2 id="build-app">Build App<a class="headerlink" href="#build-app" title="Anchor link to this Header on this Page">&para;</a></h2>
+<ul>
+<li>The graphic below is an example from Loop, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
+</ul>
+<p>Refer to the graphic below for the first four steps:</p>
+<ol>
+<li>Click on the "Actions" tab of your Repository <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
+<li>On the left side, click on "Build App Name".</li>
+<li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> for this app</li>
+</ul>
+</li>
+<li>
+<p>Tap the green button that says "Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>".</p>
+<p align="center"><img alt="build loop using github actions" src="../img/action-04-build-loop.svg" width="700" /></p>
+</li>
+<li>
+<p>Wait a few minutes to make sure there is not an early failure</p>
+<ul>
+<li>If this action fails, head over to <a href="../gh-errors/#action-build-loop-errors">Action: Build Loop Errors</a></li>
+<li>Once you've resolved the error, it's a good idea to repeat all three steps in this order:<ul>
+<li>Add identifiers</li>
+<li>Create Certificates</li>
+<li>Build Loop</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.</li>
+<li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps">App Store Connect</a>.</li>
+</ol>
+<h2 id="add-users-to-testflight-for-app">Add Users to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for App<a class="headerlink" href="#add-users-to-testflight-for-app" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Once the first build completes, you will be able to configure <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for the app - follow the template for setting up <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for Loop found in <a href="../gh-first-time/#set-up-users-and-access-testflight"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time: Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)</a></p>
+<h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The <a href="../gh-deploy/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Deployment</a> walks you through the steps to deploy to a phone. When going through those steps, replace your App Name for Loop. Everything else is the same.</p>
                 
               
               
@@ -2540,7 +2745,7 @@ Warning indicating Loop is either red or has failed to upload to Nightscout for 
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../version/loopworkspace/" class="md-footer__link md-footer__link--prev" aria-label="Previous: LoopWorkspace" rel="prev">
+        <a href="../gh-errors/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GitHub Errors" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2549,20 +2754,20 @@ Warning indicating Loop is either red or has failed to upload to Nightscout for 
               <span class="md-footer__direction">
                 Previous
               </span>
-              LoopWorkspace
+              GitHub Errors
             </div>
           </div>
         </a>
       
       
         
-        <a href="../new_user/" class="md-footer__link md-footer__link--next" aria-label="Next: New Nightscout" rel="next">
+        <a href="../../build/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Mac Build Overview" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              New Nightscout
+              Mac Build Overview
             </div>
           </div>
           <div class="md-footer__button md-icon">
