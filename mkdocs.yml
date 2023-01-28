@@ -88,6 +88,7 @@ nav:
     - 'GitHub Deploy': gh-actions/gh-deploy.md
     - 'GitHub Update': gh-actions/gh-update.md
     - 'GitHub Errors': gh-actions/gh-errors.md
+    - 'Other Apps': gh-actions/gh-other-apps.md
 - Mac Build:
     - 'Mac Build Overview': 'build/overview.md'
     - 'Compatible Computer': 'build/step1.md'
