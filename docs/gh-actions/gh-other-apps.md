@@ -9,9 +9,9 @@ The same technique is used and the same six Secrets are applied to each reposito
 
 ### Prerequisites
 
-Wait until the repository you are interested in has the capability of GitHub build. Many of the steps for each repository are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.
+Wait until the repository you are interested in add the capability of GitHub build. Many of the steps for each repository are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.
 
-* If you have already built Loop using GitHub, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](fork-and-add-secrets)
+* If you have already built using this GitHub method, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](fork-and-add-secrets)
 
 * If this is the first repository you have built with GitHub, you must first complete the initial steps found on [GitHub First-Time](../gh-actions/gh-first-time.md). When you reach the point where
     * You have created your Match-Secrets repository
@@ -52,7 +52,7 @@ Open the text file in which you maintain a copy of your 6 Secrets so you can cop
 1. Click on the repository for your app
 1. Click on the Settings Icon near the top right of your repository
     * On the left side, tap on `Secrets and variables` dropdown and choose Actions
-    * After you select on Actions, your screen should look like the graphic below
+    * After you select Actions, your screen should look like the graphic below
 
     ![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
     {align="center"}
@@ -166,8 +166,7 @@ This requires you to provide some information. Examine the table below for the b
 
 1. Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
 
-You are done with this activity and can close the browser tab. It's time to head back to your GitHub account and [Create Certificates](#create-certificates)
-
+You are done with this activity. You can close the browser tab, but before you do, note the TestFlight tab at the top of the page. You'll be using that tab after you complete the next two actions.
 
 ## Create Certificates
 
