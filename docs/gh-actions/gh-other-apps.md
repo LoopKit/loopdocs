@@ -30,7 +30,9 @@ Many graphics on this page show LoopWorkspace, just remember to use the reposito
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
+| LoopCaregiver | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: LoopCaregiver](../nightscout/remote-overrides.md#loopcaregiver) |
 |Loop Follow | [https://github.com/jonfawcett/LoopFollow](https://github.com/jonfawcett/LoopFollow) | [Loop Follow](https://github.com/jonfawcett/LoopFollow#loop-follow)|
+
 
 ## Configure Secrets for this App
 
@@ -103,7 +105,7 @@ The Add Identifier Action should complete (succeed or fail) in a few minutes.
 * If you see the red X
     * [Examine the Error](gh-errors.md#examine-the-error) tells you how to download the file needed to diagnose your problem.
     * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) lets you know what to search for in the downloaded file
-    * Once you've resolved the error, repeat the Action: Add Identifiers step
+    * Once you've resolved the error, repeat the [Add identifiers](#add-identifiers) step
 
 
 ## Review App Identifier
@@ -114,11 +116,17 @@ After successfully performing the Add Identifiers Action, you will see the ident
 
 | App Name | Name | Bundle ID |
 | --- | --- | --- |
+| LoopCaregiver | LoopCaregiver | com.TEAMID.loopkit.LoopCaregiver |
 | Loop Follow | LoopFollow | com.TEAMID.LoopFollow |
 
 Some apps, like Loop, require updates to the Identifiers after they are generated.
 
-Other apps, like Loop Follow, do not require updates to Identifiers after they are generated.
+Other apps, like LoopCaregiver and Loop Follow, do not require updates to Identifiers after they are generated.
+
+!!! warning "LoopCaregiver is under development"
+    This app is proving very useful already, but it is still under development. When you fork this from the repository, you will notice that dev branch is the default.
+
+    Please follow the discussion in the [Loop Caregiver App](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) zulipchat stream.
 
 If your app is not listed in the Update Required section, skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect).
 
@@ -138,6 +146,7 @@ This requires you to provide some information. Examine the table below for the b
 
 | App Name | Bundle ID |
 | --- | --- |
+| LoopCaregiver | com.TEAMID.loopkit.LoopCaregiver |
 | Loop Follow | com.TEAMID.LoopFollow |
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 
@@ -186,7 +195,7 @@ Refer to the graphic below for the numbered steps:
 
 1. Wait a minute or two for the action to finish
     * If this action fails, head over to [Action: Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
-    * Once you've resolved the error, repeat the Actions Add Identifiers and then Create Certificates. (The Add Identifiers might not be required but it is fast and should be done as a matter of routine.)
+    * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then Create Certificates. (The Add Identifiers might not be required but it is fast and should be done as a matter of routine.)
 
 
 ## Build App

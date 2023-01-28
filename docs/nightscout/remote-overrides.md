@@ -189,7 +189,7 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
         * Your bolus will be accepted and take place in addition to the high temp basal
     * Looper is using Automatic Bolus Dosing Strategy
         * Loop will initiate 40% of the recommended dose when it receives the carb remote command
-        * Your bolus will be accepted and take place in addition to the any previous automatic boluses
+        * Your bolus will be accepted and take place in addition to an automatic boluses
 
     Typically, sending a carb command alone is sufficient for Loop to know about the carbs and begin to dose for them.
 
@@ -219,20 +219,14 @@ The LoopCaregiver app is under development to make remote commands easier to imp
 
     This is an app under development. Sometimes, when improvements are added, you have to start over with a fresh download and enter all your information again to take advantage of the update. The app on your phone keeps working until you are ready to update.
 
-    **This change is to make progress - no need to rush into a rebuild right now.**
+    * **The location of the repository has moved**
+    * **The ability to build with [GitHub](../gh-actions/gh-other-apps.md) as well as Xcode has been added**
+    * **The bundle ID has been modified**
 
-    The bundle ID has been modified:
+    Because the bundle ID has changed:
 
     * If you already have LoopCaregiver running and do a fresh download and build, you will be building a separate app and will need to delete the old one and add your Looper(s) in again
     * If you haven't built LoopCaregiver, the app you download and build today has the new format for the bundle ID
-
-    Details:
-
-    * Bundle ID used to be: org.loopkit.LoopCaregiver
-    * Bundle ID now: com.TEAMID.loopkit.LoopCaregiver
-    * This is a step towards enabling the GitHub build method, but please be patient, wait until instructions are posted
-    * There might be additional architectural updates coming - this note will be updated at that time
-    * As always, TEAMID refers to your unique Apple Developer Team ID
 
 * Minimum Requirements
     * iOS 16 for LoopCaregiver's phone
@@ -259,7 +253,7 @@ If you plan to use LoopCaregiver, please join [Loop Caregiver App](https://loop.
 
 #### Build LoopCaregiver
 
-A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built Loop 3 using the script.
+A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built Loop 3 using the script. You may also choose to build it with the GitHub build method as documented on the Browser Build: [Other Apps](../gh-actions/gh-other-apps.md) page.
 
 Open a terminal window. Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
@@ -272,9 +266,7 @@ Paste the line into the Terminal window. Be sure to click anywhere in the termin
 !!! warning "Not Loop"
     The output you see in the Terminal may look very similar to when you build Loop 3 from a script.
 
-    It is pulling down a clone from a different location (gestrich instead of LoopKit) and just the caregiver branch. Do not attempt to build Loop with this download.
-
-    The developers say: "The Caregiver app is being designed to be a full Loop integrated app, being able to benefit from Loop data stores, visualization, and other parts of the system that are mature and have a lot of design/thought put into them. At some point it will just be a single checkout, and you can build both."  **But NOT yet**
+    It is pulling down a clone from a different location (LoopKit/LoopCaregiver). It uses some modules from Loop. The target and scheme are automatically selected for LoopCaregiver and if you follow directions for a paid Developer account, the signing is automatic.
 
 #### Use LoopCaregiver
 
@@ -306,7 +298,7 @@ You add each Looper under settings. (LoopCaregiver can monitor more than one Loo
 * On LoopCaregiver Phone
     * Tap on  LoopCaregiver->Settings
     * Tap on **&plus;** to add a Looper
-    * Enter the name of the Looper, the Nightscout URL and API_SECRET
+    * Enter the name of the Looper, the Nightscout URL (use http**s**://) and API_SECRET
     * Touch the QR code row - this opens the camera - point camera at QR code from Looper's phone
 
 You can also use the LoopCaregiver->Settings screen to modify:
@@ -317,6 +309,8 @@ You can also use the LoopCaregiver->Settings screen to modify:
 #### Issue Remote Commands with LoopCaregiver
 
 You issue override, carb and bolus commands using a toolbar similar to the one seen on Loop. In the example graphic above, the carb and bolus entries visible were issued remotely. (Note that Adam 6 is a test phone.)
+
+Carb and bolus commands each require authorization before they are accepted. The authorization (FaceID, Fingerprint or passcode) matches that required to unlock the LoopCaregiver's phone.
 
 The use of LoopCaregiver makes remote commands much easier and more reliable.
 
