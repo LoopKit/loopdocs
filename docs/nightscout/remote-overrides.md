@@ -266,7 +266,7 @@ Paste the line into the Terminal window. Be sure to click anywhere in the termin
 !!! warning "Not Loop"
     The output you see in the Terminal may look very similar to when you build Loop 3 from a script.
 
-    It is pulling down a clone from a different location (LooKit/LoopCaregiver). It uses some modules from Loop. The target and scheme are automatically selected for LoopCaregiver and if you follow directions for a paid Developer account, the signing is automatic.
+    It is pulling down a clone from a different location (LoopKit/LoopCaregiver). It uses some modules from Loop. The target and scheme are automatically selected for LoopCaregiver and if you follow directions for a paid Developer account, the signing is automatic.
 
 #### Use LoopCaregiver
 
@@ -300,7 +300,6 @@ You add each Looper under settings. (LoopCaregiver can monitor more than one Loo
     * Tap on **&plus;** to add a Looper
     * Enter the name of the Looper, the Nightscout URL (use http**s**://) and API_SECRET
     * Touch the QR code row - this opens the camera - point camera at QR code from Looper's phone
-    * If your Looper is running the released code, Loop 3, leave the Experimental Remote Commands 2 switch disabled
 
 You can also use the LoopCaregiver->Settings screen to modify:
 
