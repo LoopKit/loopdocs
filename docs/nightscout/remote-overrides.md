@@ -219,9 +219,11 @@ The LoopCaregiver app is under development to make remote commands easier to imp
 
     This is an app under development. Sometimes, when improvements are added, you have to start over with a fresh download and enter all your information again to take advantage of the update. The app on your phone keeps working until you are ready to update.
 
-    **This change is to make progress - no need to rush into a rebuild right now.**
+    * **The location of the repository has moved**
+    * **The ability to build with [GitHub](../gh-actions/gh-other-apps.md) as well as Xcode has been added**
+    * **The bundle ID has been modified**
 
-    The bundle ID has been modified:
+    Because the bundle ID has changed:
 
     * If you already have LoopCaregiver running and do a fresh download and build, you will be building a separate app and will need to delete the old one and add your Looper(s) in again
     * If you haven't built LoopCaregiver, the app you download and build today has the new format for the bundle ID
@@ -259,7 +261,7 @@ If you plan to use LoopCaregiver, please join [Loop Caregiver App](https://loop.
 
 #### Build LoopCaregiver
 
-A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built Loop 3 using the script.
+A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built Loop 3 using the script. You may also choose to build it with the GitHub build method as documented on the Browser Build: [Other Apps](../gh-actions/gh-other-apps.md) page.
 
 Open a terminal window. Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 

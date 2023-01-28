@@ -30,7 +30,9 @@ Many graphics on this page show LoopWorkspace, just remember to use the reposito
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
+| LoopCaregiver | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: LoopCaregiver](../nightscout/remote-overrides.md#loopcaregiver) |
 |Loop Follow | [https://github.com/jonfawcett/LoopFollow](https://github.com/jonfawcett/LoopFollow) | [Loop Follow](https://github.com/jonfawcett/LoopFollow#loop-follow)|
+
 
 ## Configure Secrets for this App
 
@@ -114,11 +116,17 @@ After successfully performing the Add Identifiers Action, you will see the ident
 
 | App Name | Name | Bundle ID |
 | --- | --- | --- |
+| LoopCaregiver | LoopCaregiver | com.TEAMID.loopkit.LoopCaregiver |
 | Loop Follow | LoopFollow | com.TEAMID.LoopFollow |
 
 Some apps, like Loop, require updates to the Identifiers after they are generated.
 
-Other apps, like Loop Follow, do not require updates to Identifiers after they are generated.
+Other apps, like LoopCaregiver and Loop Follow, do not require updates to Identifiers after they are generated.
+
+!!! warning "LoopCaregiver is under development"
+    This app is proving very useful already, but it is still under development. When you fork this from the repository, you will notice that dev branch is the default.
+
+    Please follow the discussion in the [Loop Caregiver App](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) zulipchat stream.
 
 If your app is not listed in the Update Required section, skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect).
 
@@ -138,6 +146,7 @@ This requires you to provide some information. Examine the table below for the b
 
 | App Name | Bundle ID |
 | --- | --- |
+| LoopCaregiver | com.TEAMID.loopkit.LoopCaregiver |
 | Loop Follow | com.TEAMID.LoopFollow |
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 
