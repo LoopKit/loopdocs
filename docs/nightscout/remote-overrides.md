@@ -189,7 +189,7 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
         * Your bolus will be accepted and take place in addition to the high temp basal
     * Looper is using Automatic Bolus Dosing Strategy
         * Loop will initiate 40% of the recommended dose when it receives the carb remote command
-        * Your bolus will be accepted and take place in addition to the any previous automatic boluses
+        * Your bolus will be accepted and take place in addition to an automatic boluses
 
     Typically, sending a carb command alone is sufficient for Loop to know about the carbs and begin to dose for them.
 
@@ -266,9 +266,7 @@ Paste the line into the Terminal window. Be sure to click anywhere in the termin
 !!! warning "Not Loop"
     The output you see in the Terminal may look very similar to when you build Loop 3 from a script.
 
-    It is pulling down a clone from a different location (gestrich instead of LoopKit) and just the caregiver branch. Do not attempt to build Loop with this download.
-
-    The developers say: "The Caregiver app is being designed to be a full Loop integrated app, being able to benefit from Loop data stores, visualization, and other parts of the system that are mature and have a lot of design/thought put into them. At some point it will just be a single checkout, and you can build both."  **But NOT yet**
+    It is pulling down a clone from a different location (LooKit/LoopCaregiver). It uses some modules from Loop. The target and scheme are automatically selected for LoopCaregiver and if you follow directions for a paid Developer account, the signing is automatic.
 
 #### Use LoopCaregiver
 
@@ -300,8 +298,9 @@ You add each Looper under settings. (LoopCaregiver can monitor more than one Loo
 * On LoopCaregiver Phone
     * Tap on  LoopCaregiver->Settings
     * Tap on **&plus;** to add a Looper
-    * Enter the name of the Looper, the Nightscout URL and API_SECRET
+    * Enter the name of the Looper, the Nightscout URL (use http**s**://) and API_SECRET
     * Touch the QR code row - this opens the camera - point camera at QR code from Looper's phone
+    * If your Looper is running the released code, Loop 3, leave the Experimental Remote Commands 2 switch disabled
 
 You can also use the LoopCaregiver->Settings screen to modify:
 
@@ -311,6 +310,8 @@ You can also use the LoopCaregiver->Settings screen to modify:
 #### Issue Remote Commands with LoopCaregiver
 
 You issue override, carb and bolus commands using a toolbar similar to the one seen on Loop. In the example graphic above, the carb and bolus entries visible were issued remotely. (Note that Adam 6 is a test phone.)
+
+Carb and bolus commands each require authorization before they are accepted. The authorization (FaceID, Fingerprint or passcode) matches that required to unlock the LoopCaregiver's phone.
 
 The use of LoopCaregiver makes remote commands much easier and more reliable.
 
