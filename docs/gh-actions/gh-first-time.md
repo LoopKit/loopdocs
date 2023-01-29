@@ -755,8 +755,8 @@ Refer to the graphic below for the first four steps:
 1. Wait a few minutes to make sure there is not an early failure
     * If this action fails, head over to [Action: Build Loop Errors](gh-errors.md#action-build-loop-errors)
     * Once you've resolved the error, it's a good idea to repeat all three steps in this order:
-        * Add identifiers
-        * Create Certificates
+        * [Add Identifiers](#add-identifiers)
+        * Create Certificatess
         * Build Loop
 1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).

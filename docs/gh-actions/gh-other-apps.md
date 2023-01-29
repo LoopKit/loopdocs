@@ -105,8 +105,7 @@ The Add Identifier Action should complete (succeed or fail) in a few minutes.
 * If you see the red X
     * [Examine the Error](gh-errors.md#examine-the-error) tells you how to download the file needed to diagnose your problem.
     * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) lets you know what to search for in the downloaded file
-    * Once you've resolved the error, repeat the [Add identifiers](#add-identifiers) step
-
+    * Once you've resolved the error, repeat the [Add Identifiers](#add-identifiers) step
 
 ## Review App Identifier
 
@@ -216,7 +215,7 @@ Refer to the graphic below for the first four steps:
 1. Wait a few minutes to make sure there is not an early failure
     * If this action fails, head over to [Action: Build Loop Errors](gh-errors.md#action-build-loop-errors)
     * Once you've resolved the error, it's a good idea to repeat all three steps in this order:
-        * Add identifiers
+        * [Add Identifiers](#add-identifiers)
         * Create Certificates
         * Build Loop
 1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
