@@ -2453,8 +2453,12 @@
                   <h1>Other Apps</h1>
                 
                 <h2 id="using-github-to-build-other-apps">Using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to Build Other Apps<a class="headerlink" href="#using-github-to-build-other-apps" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once <abbr title="Latest release with major updates">Loop 3</abbr> was released with the ability to build using a browser, a lot of other repositories in the DIY universe are adding the same features.</p>
-<p>The same technique is used and the same six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are applied to each <abbr title="contains project files and each file's revision history">repository</abbr>. Those secrets are tied to your Apple Developer ID and your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account.</p>
+<p>Once <abbr title="Latest release with major updates">Loop 3</abbr> was released with the ability to build using a browser, a lot of other repositories in the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> universe are adding the same features.</p>
+<p>The same technique is used and the same six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are applied to each <abbr title="contains project files and each file's revision history">repository</abbr>. Those secrets are tied to your Apple Developer ID and your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. As other apps are updated, they will be added to this page and the list below will be updated.</p>
+<ul>
+<li>LoopCaregiver</li>
+<li>Loop Follow</li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">GH_PAT</p>
 <p>If you choose a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> personal access token that expires, you will get an email to renew it about 6 days ahead. You will paste your updated GH_PAT into the secrets for each <abbr title="contains project files and each file's revision history">repository</abbr> you use and initiate the Build Action for that app. This will ensure continued availability of all your apps that you build with this method.</p>
@@ -2463,7 +2467,7 @@
 <p>Wait until the <abbr title="contains project files and each file's revision history">repository</abbr> you are interested in adds the capability of <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build. Many of the steps for each <abbr title="contains project files and each file's revision history">repository</abbr> are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.</p>
 <ul>
 <li>
-<p>If you have already built using this <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method, it is easy to build the next <abbr title="contains project files and each file's revision history">repository</abbr>. Skip ahead to <a href="fork-and-add-secrets">Fork and Add <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></p>
+<p>If you have already built using this <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method, it is easy to build the next <abbr title="contains project files and each file's revision history">repository</abbr>. Skip ahead to <a href="#fork-and-add-secrets">Fork and Add <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></p>
 </li>
 <li>
 <p>If this is the first <abbr title="contains project files and each file's revision history">repository</abbr> you have built with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>, you must first complete the initial steps found on <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time</a>. When you reach the point where</p>
@@ -2584,7 +2588,7 @@
 <li>If you see the red X<ul>
 <li><a href="../gh-errors/#examine-the-error">Examine the Error</a> tells you how to download the file needed to diagnose your problem.</li>
 <li><a href="../gh-errors/#action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a> lets you know what to search for in the downloaded file</li>
-<li>Once you've resolved the error, repeat the <a href="#add-identifiers">Add identifiers</a> step</li>
+<li>Once you've resolved the error, repeat the <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> step</li>
 </ul>
 </li>
 </ul>
@@ -2726,7 +2730,7 @@
 <ul>
 <li>If this action fails, head over to <a href="../gh-errors/#action-build-loop-errors">Action: Build Loop Errors</a></li>
 <li>Once you've resolved the error, it's a good idea to repeat all three steps in this order:<ul>
-<li>Add identifiers</li>
+<li><a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
 <li>Create Certificates</li>
 <li>Build Loop</li>
 </ul>

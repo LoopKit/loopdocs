@@ -2410,6 +2410,14 @@
 </ol>
 <p>If you discover a new error, please reach out to help us update the documentation.</p>
 <h2 id="examine-the-error">Examine the Error<a class="headerlink" href="#examine-the-error" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Totally Frustrated</p>
+<p>The directions on the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First Time</a> page have been improved.</p>
+<p>If you tried this earlier and did not make progress, you can delete the <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> and LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. Make sure your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are all correct and consistent, then start over at <a href="../gh-first-time/#create-match-secrets">First-Time: Create <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></a> and keep going. It will go much faster this time.</p>
+<ul>
+<li>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Docs</a></li>
+</ul>
+</div>
 <p>It doesn't matter which action you are running; after the action completes, you will either see a green check mark for success or a red x mark for failure. The graphic below shows an example for the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> action.</p>
 <p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result.svg" width="700" /></p>
 <p>If you click on the action name, it opens a secondary screen as shown below.</p>
@@ -2436,8 +2444,8 @@
 </ul>
 <p>This can be caused by an error in the value (or spelling) of one of these keys:</p>
 <ul>
-<li>FASTLANE_KEY_ID</li>
 <li>FASTLANE_ISSUER_ID</li>
+<li>FASTLANE_KEY_ID</li>
 <li>FASTLANE_KEY</li>
 <li>GH_PAT</li>
 </ul>
