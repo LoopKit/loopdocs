@@ -14,6 +14,13 @@ If you discover a new error, please reach out to help us update the documentatio
 
 ## Examine the Error
 
+!!! danger "Totally Frustrated"
+    The directions on the [GitHub First Time](gh-first-time.md) page have been improved.
+
+    If you tried this earlier and did not make progress, you can delete the Match-Secrets repository and LoopWorkspace fork in your GitHub account. Make sure your Secrets are all correct and consistent, then start over at [First-Time: Create Match-Secrets](gh-first-time.md#create-match-secrets) and keep going. It will go much faster this time.
+
+    * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+
 It doesn't matter which action you are running; after the action completes, you will either see a green check mark for success or a red x mark for failure. The graphic below shows an example for the Add Identifiers action.
 
 ![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result.svg){width="700"}
@@ -51,8 +58,8 @@ If you see:
 
 This can be caused by an error in the value (or spelling) of one of these keys:
 
-* FASTLANE_KEY_ID
 * FASTLANE_ISSUER_ID
+* FASTLANE_KEY_ID
 * FASTLANE_KEY
 * GH_PAT
 
