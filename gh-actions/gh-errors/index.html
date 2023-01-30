@@ -791,6 +791,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#a-new-one-cannot-be-created-because-you-enabled" class="md-nav__link">
+    A new one cannot be created because you enabled
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2358,6 +2365,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#a-new-one-cannot-be-created-because-you-enabled" class="md-nav__link">
+    A new one cannot be created because you enabled
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2463,7 +2477,8 @@
 <p>Make sure you copy in a text editor from the first hyphen to the last hyphen.</p>
 <h2 id="action-create-certificates-errors">Action: Create Certificates Errors<a class="headerlink" href="#action-create-certificates-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
-<p>place holder</p>
+<p>You might not have associated your identifiers correctly.</p>
+<p>Follow the steps at <a href="../gh-first-time/#delete-identifiers">First-Time: Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
 <h2 id="action-build-loop-errors">Action: Build Loop Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Use <a href="#examine-the-error">Examine the Error</a></p>
 <ul>
@@ -2521,6 +2536,33 @@
 <li>Action: Create Certificates</li>
 <li>Action: Build Loop</li>
 </ul>
+<h3 id="a-new-one-cannot-be-created-because-you-enabled">A new one cannot be created because you enabled<a class="headerlink" href="#a-new-one-cannot-be-created-because-you-enabled" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste it into the search function for your text editor.</p>
+<p><code>A new one cannot be created because you enabled</code></p>
+<p>If that phrase is found with lines similar to the following:</p>
+<div class="highlight"><pre><span></span><code>[31mA new one cannot be created because you enabled `readonly`[0m
+[31mProvisioning profiles in your repo for type `appstore`:[0m
+[31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.statuswidget.mobileprovision&#39;[0m
+[31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.SmallStatusWidget.mobileprovision&#39;[0m
+[31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.mobileprovision&#39;[0m
+[31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.LoopWatch.mobileprovision&#39;[0m
+[31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.Loop-Intent-Extension.mobileprovision&#39;[0m
+[31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.LoopWatch.watchkitextension.mobileprovision&#39;[0m
+</code></pre></div>
+<p>This tells you, the bundle ID you selected in <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First-Time: Create Loop App in App Store Connect</a> does NOT have your TEAMID embedded in the name.</p>
+<p>Once you've created an app in the App Store that is not based on your TEAMID, you cannot delete it, but you can Remove it, so you don't click on it by accident.</p>
+<ol>
+<li>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed.</li>
+<li>Find the App with the wrong Bundle ID and click on it</li>
+<li>On left hand side, click on App Information (under General)<ul>
+<li>Confirm the Bundle ID listed does not include your TEAMID</li>
+<li>Scroll all the way to the bottom</li>
+<li>Tap on Remove App</li>
+<li>New dialog window appears, select Remove</li>
+</ul>
+</li>
+</ol>
+<p>At this point, get your correct TEAMID, fix your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> file to have the correct TEAMID and then return to <a href="../gh-first-time/#configure-secrets">First-Time: Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>. This time you will be updating TEAMID in the <abbr title="contains project files and each file's revision history">repository</abbr> secret list.</p>
 <h2 id="repeat-build-loop-errors">Repeat Build Loop Errors<a class="headerlink" href="#repeat-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section is only for people who have successfully built using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Actions.</p>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
