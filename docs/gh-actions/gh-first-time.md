@@ -561,7 +561,7 @@ If you have never built Loop with Xcode using your TEAMID, you need to create an
 1. For Description, use "Loop App Group".
 1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`.
 1. Double check the spelling - your TEAMID must be correct and the Loop App Group must match the format shown in the previous step
-    * A mistake here means you will not be able to build Loop
+    * A mistake here means you will not be able to build Loop until you fix it
 1. Click "Continue" and then "Register".
 
 ### Prepare Loop Identifier
