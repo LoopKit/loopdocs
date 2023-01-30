@@ -83,7 +83,9 @@ Make sure you copy in a text editor from the first hyphen to the last hyphen.
 
 Use the [Examine the Error](#examine-the-error) instructions to find your error message.
 
-place holder
+You might not have associated your identifiers correctly.
+
+Follow the steps at [First-Time: Delete Identifiers](gh-first-time.md#delete-identifiers).
 
 ## Action: Build Loop Errors
 
@@ -139,6 +141,40 @@ You must create certificates again before you can build:
 
 * Action: Create Certificates
 * Action: Build Loop
+
+### A new one cannot be created because you enabled
+
+Copy the words on the line below and paste it into the search function for your text editor.
+
+`A new one cannot be created because you enabled`
+
+If that phrase is found with lines similar to the following:
+
+```
+[31mA new one cannot be created because you enabled `readonly`[0m
+[31mProvisioning profiles in your repo for type `appstore`:[0m
+[31m- 'AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.statuswidget.mobileprovision'[0m
+[31m- 'AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.SmallStatusWidget.mobileprovision'[0m
+[31m- 'AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.mobileprovision'[0m
+[31m- 'AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.LoopWatch.mobileprovision'[0m
+[31m- 'AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.Loop-Intent-Extension.mobileprovision'[0m
+[31m- 'AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.LoopWatch.watchkitextension.mobileprovision'[0m
+```
+
+This tells you, the bundle ID you selected in [First-Time: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect) does NOT have your TEAMID embedded in the name.
+
+Once you've created an app in the App Store that is not based on your TEAMID, you cannot delete it, but you can Remove it, so you don't click on it by accident.
+
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
+1. Find the App with the wrong Bundle ID and click on it
+1. On left hand side, click on App Information (under General)
+    * Confirm the Bundle ID listed does not include your TEAMID
+    * Scroll all the way to the bottom
+    * Tap on Remove App
+    * New dialog window appears, select Remove
+
+At this point, get your correct TEAMID, fix your Secrets file to have the correct TEAMID and then return to [First-Time: Configure Secrets](gh-first-time.md#configure-secrets). This time you will be updating TEAMID in the repository secret list.
+
 
 ## Repeat Build Loop Errors
 
