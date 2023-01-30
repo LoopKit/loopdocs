@@ -55,6 +55,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **DIA**: Duration of Insulin Action, the full time insulin is active including a long, low-level tail
 
+**DIY**: Do it yourself, a common acronym for the open-source software community (and the maker community)
+
 **Dosing Strategy**: chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal
 
 **dynos**: used to reboot a Nightscout Site

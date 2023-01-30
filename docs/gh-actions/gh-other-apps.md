@@ -2,7 +2,10 @@
 
 Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe are adding the same features.
 
-The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your Apple Developer ID and your GitHub account.
+The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your Apple Developer ID and your GitHub account. As other apps are updated, they will be added to this page and the list below will be updated.
+
+* LoopCaregiver
+* Loop Follow
 
 !!! warning "GH_PAT"
     If you choose a GitHub personal access token that expires, you will get an email to renew it about 6 days ahead. You will paste your updated GH_PAT into the secrets for each repository you use and initiate the Build Action for that app. This will ensure continued availability of all your apps that you build with this method.
@@ -11,7 +14,7 @@ The same technique is used and the same six Secrets are applied to each reposito
 
 Wait until the repository you are interested in adds the capability of GitHub build. Many of the steps for each repository are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.
 
-* If you have already built using this GitHub method, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](fork-and-add-secrets)
+* If you have already built using this GitHub method, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](#fork-and-add-secrets)
 
 * If this is the first repository you have built with GitHub, you must first complete the initial steps found on [GitHub First-Time](../gh-actions/gh-first-time.md). When you reach the point where
     * You have created your Match-Secrets repository
@@ -105,8 +108,7 @@ The Add Identifier Action should complete (succeed or fail) in a few minutes.
 * If you see the red X
     * [Examine the Error](gh-errors.md#examine-the-error) tells you how to download the file needed to diagnose your problem.
     * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) lets you know what to search for in the downloaded file
-    * Once you've resolved the error, repeat the [Add identifiers](#add-identifiers) step
-
+    * Once you've resolved the error, repeat the [Add Identifiers](#add-identifiers) step
 
 ## Review App Identifier
 
@@ -216,7 +218,7 @@ Refer to the graphic below for the first four steps:
 1. Wait a few minutes to make sure there is not an early failure
     * If this action fails, head over to [Action: Build Loop Errors](gh-errors.md#action-build-loop-errors)
     * Once you've resolved the error, it's a good idea to repeat all three steps in this order:
-        * Add identifiers
+        * [Add Identifiers](#add-identifiers)
         * Create Certificates
         * Build Loop
 1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.

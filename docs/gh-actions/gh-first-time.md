@@ -15,14 +15,18 @@ This is only available with Loop 3 and Loop development branches.
     Once you have Apple Developer and GitHub accounts
 
     * Apple: Generate an API Key
-    * GitHub: Create an access token (GH_PAT)
-    * GitHub: Create a Match-Secrets private repository
-    * GitHub: Fork a copy of LoopWorkspace and add Secrets
-    * GitHub: Action: Add Identifiers
-    * Apple: Configure Identifiers for Loop
-    * Apple: Create your version of Loop in App Store (personal use only, not for distribution)
-    * GitHub: Action: Create Certificates
-    * GitHub: Action: Build Loop
+    * GitHub:
+        * Create an access token (GH_PAT)
+        * Create a Match-Secrets private repository
+        * Fork a repository (copy of LoopWorkspace)
+        * Add Secrets to your repository
+        * Action: Add Identifiers
+    * Apple:
+        * Configure Identifiers for Loop
+        * Create your version of Loop in App Store (personal use only, not for distribution)
+    * GitHub:
+        * Action: Create Certificates
+        * Action: Build Loop
     * Apple: Set up Internal TestFlight Group
     * Phone: Install Loop with TestFlight
 
@@ -43,7 +47,7 @@ This is only available with Loop 3 and Loop development branches.
 
 ## Prerequisites
 
-**Loop 3 requires iOS 15.1 or higher**
+**Loop 3 requires iOS 15.1 or higher, no reason not to update to latest iOS**
 
 ### Build Loop
 
@@ -83,12 +87,12 @@ Some of these terms have ToolTips, so hover your mouse over the item - or review
 * Secrets: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop
     * There are 6 Secrets that must be added to your fork of LoopWorkspace
     * These Secrets work for any branch in your fork (main or dev, for example)
-    * These same Secrets can be added to your fork of another repository configured with the same GitHub build method - there will soon be other repositories using this method. Please be patient.
+    * These same Secrets are added to your GitHub fork for [Other Apps](gh-other-apps.md) configured with the same GitHub build method
 * [App Store Connect](https://appstoreconnect.apple.com): a website available for Apple Developers to review their apps
     * Once you purchase an Apple Developer annual account, you are an Apple Developer and have access to this site
     * Most Loopers will not have an App on their page until using the GitHub build method
     * The name of an app must be unique across the entire App Store worldwide
-    * For this reason, you may need to attempt several different attempts to get a unique name for your Loop App
+        * You will need a unique name for your Loop App
 
 ## Configure to use GitHub Build Actions
 
@@ -100,18 +104,18 @@ These instructions allow you to build Loop without having access to a Mac. They 
 * You can access and install Loop if you lose or damage your device
 * You do not need to worry about correct Xcode/macOS versions
 
-The setup steps are somewhat involved, but nearly all are one-time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use.
+The setup steps are somewhat involved, but nearly all are one-time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use. Use a **text-only editor** for this archive file for your Secrets. People have gotten into difficulties when a lower-case character was "auto-corrected" to upper-case when pasting into their archive file.
 
 TestFlight can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
 
-Your app must be updated once every 90 days, but it's simple to make a new build and can be done from anywhere, see [Update Loop using GitHub Actions](gh-update.md).
+Your app must be updated once every 90 days, at the current time, but it's simple to make a new build and can be done from anywhere, see [Update Loop using GitHub Actions](gh-update.md).
 
 !!! tip "Expect Updates"
     Plans are in progress to configure the GitHub action to automatically build every 60 days. Once this is in place, then you won't need to worry about building every 90 days. But these are just plans right now.
 
     In the meantime, configure your GH_PAT to expire every 90 days. This acts as a reminder to rebuild. (You get an email from GitHub about a week ahead of time.)
 
-    Keep checking back, or at least check when your 90-day GH_PAT expires. When the GitHub build process is updated, you can sync your fork, create a new GH_PAT that never expires, update it in secrets, create certs and build. But that is for the future.
+    Keep checking back, or at least check when your 90-day GH_PAT expires. When the GitHub build process is updated, you can sync your fork, create a new GH_PAT that expires once a year, update it in secrets, create certs and build. But that is for the future.
 
 ### Save Your Information
 
@@ -131,9 +135,9 @@ Your app must be updated once every 90 days, but it's simple to make a new build
      The relationship and creation of each item is explained step-by-step on this page.
 
 !!! danger "Use a Text-Only Editor"
-    If you use a "smart" editor, it may change lower case letters to upper case letters at the beginning of a line when you paste items into your archive file.
+    If you use a "smart" editor, it may change lower-case letters to upper-case letters at the beginning of a line when you paste items into your archive file.
 
-    If even one character is capitalized when it should not be, you will not succed at the Add Identifiers step.
+    If even one character is capitalized when it should not be, you will get [GitHub Errors](gh-errors.md).
 
 The list below indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the Secrets for your LoopWorkspace fork, so they are listed twice in the list below.
 
@@ -142,8 +146,8 @@ The list below indicates what you need to record (save digitally so you can copy
 * Email address (this is your username)
 * password
 * TEAMID
-* FASTLANE_KEY_ID
 * FASTLANE_ISSUER_ID
+* FASTLANE_KEY_ID
 * FASTLANE_KEY
 
 **Needed or created at github.com**
@@ -154,16 +158,21 @@ The list below indicates what you need to record (save digitally so you can copy
 * Your GitHub repository address will be: `https://github.com/username`
 * Your LoopWorkspace repository address will be: `https://github.com/username/LoopWorkspace`
 * GitHub Personal Access Token (GH_PAT)
-* a password - whatever you want (MATCH_PASSWORD)
+* a password - make one up and save it (MATCH_PASSWORD)
 
-**Needed when you [Configure Secrets](#configure-secrets) for your LoopWorkspace fork**
+**Needed when you [Configure Secrets](#configure-secrets)**
 
-* TEAMID
-* FASTLANE_KEY_ID
-* FASTLANE_ISSUER_ID
-* FASTLANE_KEY
-* GH_PAT
-* MATCH_PASSWORD
+* Save names and values in a text-only editor
+* These same secrets are used for Loop and for [Other Apps](gh-other-apps.md)
+    * TEAMID
+    * FASTLANE_ISSUER_ID
+    * FASTLANE_KEY_ID
+    * FASTLANE_KEY
+    * GH_PAT
+    * MATCH_PASSWORD
+
+!!! tip "Note GH_PAT Expiration Date"
+    In your text-only saved secrets file, indicate the day you configured the GH_PAT. Since you update this every 90 days, until further notice, adding a note like: generated on Jan 29, 2023 helps you know whether the GH_PAT stored in your file is current or needs to be updated.
 
 
 ## Apple Developer Account
@@ -183,17 +192,20 @@ This section will walk you through the steps required to gather or create these 
 
 |Name|Description|
 |---------|---------|
-|TEAMID|10-character identifier|
-|FASTLANE_KEY_ID|Key ID generated for you in App Store Connect|
-|FASTLANE_ISSUER_ID|The issuer ID is shown when the Key ID is displayed|
-|FASTLANE_KEY|Copy the full key from the text file.<br>including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines. |
+|TEAMID|This 10-character identifier is associated with your Apple Developer ID and never changes|
+|FASTLANE_ISSUER_ID|The issuer ID is associated with your Apple Developer ID and never changes|
+|FASTLANE_KEY_ID|Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY|
+|FASTLANE_KEY|Copy the full key from the text file you downloaded when generating the API key - Filename has FASTLANE_KEY_ID value embedded in it.<br>Include everthing in the file from<br>-----BEGIN PRIVATE KEY-----<br>and ending in <br>-----END PRIVATE KEY-----<br> |
 
 Each step has a link to take you to the specific page you need to do the next step. It is best if you open each link in a separate tab or window so you can refer back to these instructions as you move along.
 
 1. Open this link: [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
     * Look at the upper right hand corner of that page
     * The 10-character ID number below your name is your `TEAMID`
+        * If all you see are icons, click on the Membership Details icon
     * Record this for use when you configure your Secrets and when you configure your unique App Group
+    * Stop a moment and double check - if you get this wrong, you will have errors later
+        * Do not "type" what you think you see; copy and paste from the Team ID from the webpage. (Avoid the wrong number of characters; avoid typing an 8 when it should be a B.)
 1. Open this link: [App Store Connect/Access/API](https://appstoreconnect.apple.com/access/api)
     * Click the "Keys" tab
         * If this is your first time here, there will be a dialog for you to follow:
@@ -216,25 +228,30 @@ Each step has a link to take you to the specific page you need to do the next st
     {align="center"}
 
 
-    * Enter the name of the key as "FastLane API Key" and choose "Admin" in the access drop down menu. Click on the "Generate" button.
-    * The Keys screen is seen again with the additional content shown in the graphic below where key information is blanked out for security
-    * Review the graphic and then follow directions below to save more parameters you will need to [Configure Secrets](#configure-secret)
+    * Enter the name of the key as "FastLane API Key" and choose "Admin" in the access drop down menu
+    * Confirm the name and that Admin is selected and then click on the "Generate" button.
+
+### Copy API Key Secrets
+
+The Keys screen is seen again with the additional content similar to that shown in the graphic below; the key information is blanked out for security.
+
+* Review the graphic and then follow directions below to save more parameters you will need to [Configure Secrets](#configure-secret)
 
     ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
     {align="center"}
 
-1. Hover to the right of the Key ID and the Copy Key ID button shows up
-    * Tap on the Copy Key ID button - this copies the Key ID into your paste buffer
-    * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY_ID` 
 1. A button labeled Copy is always adjacent to the Issuer ID above the word Active (this is the same for all keys that you generate with this Apple Developer ID)
     * Tap on the Copy button - this copies the Issuer ID into your paste buffer
-    * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_ISSUER_ID` 
+    * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_ISSUER_ID`
+1. Hover to the right of the Key ID and the Copy Key ID button shows up
+    * Tap on the Copy Key ID button - this copies the Key ID into your paste buffer
+    * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY_ID`
 1. Click on the Download API Key button - you will be warned you can only download this once.
 
     ![download key only once](img/dev-dl-key-once.png){width="700"}
     {align="center"}
 
-6. Find your AuthKey download in your downloads folder. The name of the file will be "AuthKey_KeyID.p8" where KeyID matches the value above
+6. Find your AuthKey download in your downloads folder. The name of the file will be "AuthKey_KeyID.p8" where KeyID matches your FASTLANE_KEY_ID
 
     * Double-click to open it and you will be presented a message asking how you'd like to open it (message shown is for a Mac - translate these directions to whatever computer you are using)
     * Click on "Choose Application..." and then select "TextEdit" (on a Mac, NotePad on a PC, or any text-only editor you prefer)
@@ -244,19 +261,30 @@ Each step has a link to take you to the specific page you need to do the next st
 1. The contents of this file will be used for `FASTLANE_KEY`
 
     * Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines
-    * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY` 
+        * On a Mac, use CMD-A, then CMD-C to copy all the contents
+        * On a PC, use CTL-A, then CTL-C to copy all the contents
+    * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY`
 
     ![img/apns-copy-key.png](../nightscout/img/apns-copy-key.png)
 
 In summary, from this section, you have found or generated the following, and saved copies for later use
 
 * `TEAMID`
-* `FASTLANE_KEY_ID`
 * `FASTLANE_ISSUER_ID`
+* `FASTLANE_KEY_ID`
 * `FASTLANE_KEY`
 
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
+
+#### Lost FASTLANE_KEY
+
+!!! danger "I can't find my FASTLANE_KEY"
+    If you cannot find where you stored your information, you can get a new key. You cannot recover an old one. Return to [Generate API Key](#generate-api-key), but add this initial step.
+
+    When you use the link in the Generate API Key step, you will see an Active key. You must first click Edit by the Active section, revoke your "FastLane API Key" and then follow the directions to generate a new one. You will have to update the Secrets for every App repository when you take this step.
+
+    The FASTLANE_KEY_ID and FASTLANE_KEY must both be updated.
 
 ## New GitHub Account
 
@@ -388,7 +416,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
 !!! tip "Secrets are Common"
     * There are 6 Secrets that must be added to your fork of LoopWorkspace
     * These Secrets work for any branch in your fork (main or dev, for example)
-    * These same Secrets can be added to your fork of another repository configured with the same GitHub build method - there will soon be other repositories using this method. Please be patient.
+    * These same Secrets would be added to your fork of a repository for [Other Apps](gh-other-apps.md)
 
 You need to be logged into GitHub.
 
@@ -428,22 +456,24 @@ You need to be logged into GitHub.
 
 Refer to the list of parameters found in [Save Your Information](#save-your-information). This is the time you will enter these items.
 
-Take a calming breath. This next part requires care. 
+Take a calming breath. This next part requires care.
 
 * Once you enter and save a secret value, you will not be able to view what you just entered, so check carefully before you hit `Add Secret` to save it
     * You can replace the value for any secret later - you just can't see what you entered before
 * If you make a mistake, the actions you take in the next sections will fail, but the error messages help you figure out which secrets you need to fix
 * So collect the list of information you've gathered so it's handy and make up a password for the MATCH_PASSWORD and save that in your secrets archive file
+* Confirm, one more time, that your TEAMID is correct
+    * If it is not, all will appear fine until you try to Build Loop and then you will get failures
 
 For each of the following secrets, follow the directions below - this list is configured with a copy button when you hover to the right of each word - this helps avoid spelling errors.
 ```
 TEAMID
 ```
 ```
-FASTLANE_KEY_ID
-```
-```
 FASTLANE_ISSUER_ID
+```
+```
+FASTLANE_KEY_ID
 ```
 ```
 FASTLANE_KEY
@@ -455,9 +485,9 @@ GH_PAT
 MATCH_PASSWORD
 ```
 
-* For the FASTLANE_KEY value, copy the entire contents from  "-----BEGIN PRIVATE KEY-----" through "-----END PRIVATE KEY-----"
+* For the FASTLANE_KEY value, copy the entire contents from<br>-----BEGIN PRIVATE KEY-----<br> through<br>-----END PRIVATE KEY-----<br>
 * For MATCH_PASSWORD value - make up a password for this and save it for later use
-    * The MATCH_PASSWORD must be the same for every repository for which you use this same method (more are coming, but are not ready yet)
+    * The MATCH_PASSWORD must be the same for any repository using this method ([Other Apps](gh-other-apps.md))
 
 Once all six secrets have been added to your LoopWorkspace, you are done with Settings. Your screen should look similar to the graphic below.
 
@@ -474,8 +504,6 @@ Once all six secrets have been added to your LoopWorkspace, you are done with Se
 
 !!! warning "Early Adopters"
     If you started using this method before Loop 3 was released, review [GitHub Early Adopters](gh-update.md#github-early-adopters).
-    
-    Once you have added identifiers from any branch, the only reason to run add identifiers again is if a new one is added to `dev`. If you are using `dev`, you should be active on [Loop zulipchat](https://loop.zulipchat.com/#streams/144182/development).
 
 Near the top middle of your LoopWorkspace fork, there is an Actions tab. If you have used Actions on this repository before, skip ahead to [Add Identifiers](#add-identifiers).
 
@@ -532,6 +560,8 @@ If you have never built Loop with Xcode using your TEAMID, you need to create an
 1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
 1. For Description, use "Loop App Group".
 1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`.
+1. Double check the spelling - your TEAMID must be correct and the Loop App Group must match the format shown in the previous step
+    * A mistake here means you will not be able to build Loop until you fix it
 1. Click "Continue" and then "Register".
 
 ### Prepare Loop Identifier
@@ -551,9 +581,14 @@ If you never built using Xcode, then after successfully performing the Add Ident
 
 #### Xcode Builders
 
+!!! warning "Loop 2 to Loop 3 Builders"
+    Several people who built earlier versions of Loop with Xcode and are using the GitHub method say they can't find the identifier names.
+
+    If that is happening to you, follow the [Delete Identifiers](#delete-identifiers) instructions and then run Action: Add Identifiers again. You might not be able to delete the "Loop" identifier, so it will still begin with XC, but the others will appear with the short names shown above.
+
 If you have built Loop using Xcode, then at least the Loop identifier will appear with the name `XC com.TEAMID.loopkit.Loop`. There may be other names that start with XC and have other ending words; they can be ignored. Only the six listed above are of interest, and only the first four of those need to be associated with your unique App Group. If you are bothered by a lot of extra identifiers and want yours to look more like those in the list above, see [Delete Identifiers](#delete-identifiers). It is not necessary to delete them, your choice.
 
-* The names you see if you previously build with Xcode depend on if you previously built Loop 2.2.x or an early version of Loop 3 while it was still the dev branch
+* The names you see if you previously built with Xcode depend on if you previously built Loop 2.2.x or an early version of Loop 3 while it was still the dev branch
 * While the exact name might be different from those seen by people who have never built, it is ok - the build should still work
 * The directions with the Identifier names that do not start with XC are correct for people who have never built Loop with Xcode
 
@@ -576,8 +611,10 @@ If you have built with Xcode, you will be verifying the Loop identifier is prope
 
 !!! tips "Look out for Other Apps"
     There are other apps in the Loop universe that may show up with different App Groups. That's OK. Just make sure you select the Loop App Group for Loop.
-    
+
     Example: Loop Follow users may see more than one Option in the App Group Assignment dialog box. For Loop, select the one with group.com.TEAMID.loopkit.LoopGroup that uses your TEAMID.
+
+    NOTE: as of Jan 2023, this App Group has now been removed from Loop Follow - it is not needed.  See [Other Apps](gh-other-apps.md) for instructions on building Loop Follow with GitHub.
 
 Find and click on the Loop identifier row to see the `Edit Your App ID Configuration` screen. You will be taking two actions for this identifier.
 
@@ -645,7 +682,7 @@ If you have created a Loop app in App Store Connect before, you can skip this se
 
 If have previously used some kind of remote build, like diawi, you may have your Loop in the App Store but can't see it. Don't worry - there are instructions for this case.
 
-1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
     * If you have never added a app to App Store Connect, you will not see the icons inside the red rectangle and should keep going, although some people report the search icon shows up for them
     *  If you have an app that is not shown, you will see a search icon and the `All Statuses` dropdown. If you get to the step 3 and cannot find your `com.TEAMID.loopkit.Loop` in the Bundle ID drop down, the means you need to follow [Find My Loop](#find-my-loop).
 
@@ -673,6 +710,9 @@ If have previously used some kind of remote build, like diawi, you may have your
     ![create loop app in store connect - with missing bundle id](img/create-app-in-store.png){width="600"}
     {align="center"}
 
+1. One last check - if the Bundle ID has a number other than your actual 10-digit TEAMID embedded in it, you will be creating an App in the App Store that you cannot use
+    * In this case, do NOT select Create
+    * Instead, go back and put the correct value into the TEAMID Secret and follow the steps in [Delete Identifiers](#delete-identifiers)
 1. Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
 
 You are done with this activity and can close the browser tab. It's time to head back to your GitHub account and [Create Certificates](#create-certificates)
@@ -698,8 +738,8 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
     ![find removed apps](img/find-removed-app.png){width="600"}
     {align="center"}
 
-* Ensure this is the app you want by selecting on App Information, highlighted on the left side in the graphic below. 
-    * Examine its Bundle ID (not in view in this graphic) - confirm it is correct. 
+* Ensure this is the app you want by selecting on App Information, highlighted on the left side in the graphic below.
+    * Examine its Bundle ID (not in view in this graphic) - confirm it is correct.
     * The format should be: `com.TEAMID.loopkit.Loop` with your TEAMID included
 * Then scroll down to the bottom and choose `Restore App`.
 
@@ -717,8 +757,6 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 !!! warning "Early Adopters"
     If you started using this method before Loop 3 was released, review [GitHub Early Adopters](gh-update.md#github-early-adopters).
-    
-    Once you have created certificates from any branch, the only reason to create them again would be if a new identifier is added to `dev` - in which case you need to start with the add identifier action. If you are using `dev`, you should be active on [Loop zulipchat](https://loop.zulipchat.com/#streams/144182/development).
 
 Refer to the graphic below for the numbered steps:
 
@@ -735,7 +773,6 @@ Refer to the graphic below for the numbered steps:
 1. Wait a minute or two for the action to finish
     * If this action fails, head over to [Action: Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
     * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then Create Certificates. (The Add Identifiers might not be required but it is fast and should be done as a matter of routine.)
-
 
 ## Build Loop
 
@@ -755,8 +792,8 @@ Refer to the graphic below for the first four steps:
 1. Wait a few minutes to make sure there is not an early failure
     * If this action fails, head over to [Action: Build Loop Errors](gh-errors.md#action-build-loop-errors)
     * Once you've resolved the error, it's a good idea to repeat all three steps in this order:
-        * Add identifiers
-        * Create Certificates
+        * [Add Identifiers](#add-identifiers)
+        * Create Certificatess
         * Build Loop
 1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
@@ -780,7 +817,7 @@ You are configuring a private capability for your family using an Internal Testi
 
     ![open TestFlight tab for your app](img/setup-testflight-01.png){width="700"}
     {align="center"}
-    
+
 1. Fill out the name you want for the Internal Testing group
     * Be sure to enable automatic distribution
     * Create when done (this can always be modified later)
@@ -810,7 +847,7 @@ Most people won't need the information on the rest of this page. It is here as b
 
 Some people may already have a fork of LoopWorkspace. They might even have one that they forked from somewhere other than LoopKit.
 
-Suggestions - choose one of these methods: 
+Suggestions - choose one of these methods:
 
 * Update the repository if it is forked from LoopKit
     * Open your LoopWorkspace repository (`https://github.com/username/LoopWorkspace`) where you use your `username` in the URL
@@ -818,22 +855,25 @@ Suggestions - choose one of these methods:
         * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
     * If you see a message that your fork is not up to date - tap on the Sync fork button and follow instructions
     * Continue with the [Create GH_PAT](#create-gh_pat) section
-* Rename or delete that repository if it is from somewhere other than LoopKit or if you just prefer to start fresh
-    * Instructions to delete a repository are found at[GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+* Delete that repository if it is from somewhere other than LoopKit or the fork you wanted to start with (which might have customizations that you want)
+    * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
     * You just need to make sure that a repository called LoopWorkspace is no longer in your GitHub account
     * Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
 
 ### Delete Identifiers
 
-When you have already built Loop with Xcode, the Loop identifier is already associated with your App Group with time sensitive capability.  Your existing Loop identifier will have a name that starts with XC as shown below, where your 10-digit TEAMID is used.
+When you have already built Loop with Xcode, the Identifier names will not match the directions and you might have trouble deciding which ones to configure.  Your existing Loop identifier will have a name that starts with XC as shown below, where your 10-digit TEAMID is used.
 
 * Name: XC com TEAMID loopkit Loop
 * Identifier: com.TEAMID.loopkit.Loop
 
-The identifier that is associated with the Loop identifier cannot be deleted but all others can. If you attempt to delete the XC Loop identifier, you will be told it cannot be deleted because it is in use in the app store.
+The identifier that is associated with the Loop identifier cannot be deleted if it is already in the App Store but all others can. If you attempt to delete the XC Loop identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. Same for other identifiers (if you build a bunch of Apps). If a Bundle ID has ever been associated with an app in the App store, you cannot delete the Identifer.
 
-If you delete an identifier that you need:
+To make it easy when configuring the identifiers, go through and delete as many as you can and then:
 
-* Run Action: [Add Identifiers](#add-identifiers) to add it back
-* Manually add the App Group association as described in [Add App Group to Other Identifiers](#add-app-group-to-other-identifiers)
-* Make sure to run Create Certificates before trying to Build Loop
+* Run Action: [Add Identifiers](#add-identifiers) to add Identifiers with the documented short names
+* If you did not complete [Prepare Loop Identifier](#prepare-loop-identifier) step, do it now
+* Complete the [Add App Group to Other Identifiers](#add-app-group-to-other-identifiers)
+* If you did not complete the [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect) step, do it now
+* Continue with [Create Certificates](#create-certificates) and then [Build Loop](#build-loop_1)
+
