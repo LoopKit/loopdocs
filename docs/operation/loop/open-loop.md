@@ -22,7 +22,7 @@ Open Loop is the best place to start with Loop.
     * This is true for temp basal and automatic bolus
     * To protect against accidental command of increased or decreased insulin dosing, make sure your phone is locked when not in use
 
-For safety reasons, these recommendation are no longer supplied with Loop 3. 
+For safety reasons, these recommendations are no longer supplied with Loop 3. 
 
 * Tap on the bolus icon to see the recommendation if you think insulin is needed
 * Use a Manual Temp Basal to reduce delivery if you see a low prediction

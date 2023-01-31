@@ -2,7 +2,7 @@
 
 First, please take a minute to understand what the words mean.
 
-* "Updating Loop" is the process downloading a new version of Loop code 
+* "Updating Loop" is the process of downloading a new version of Loop code 
 
 * "Rebuilding Loop" is the process of using your existing download of Loop code
 

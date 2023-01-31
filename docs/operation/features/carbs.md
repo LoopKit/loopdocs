@@ -45,7 +45,7 @@ The steps and graphics in this section are for users of Loop 3. To view the vers
 Tap the meal entry icon on the toolbar to open the **Add Carb Entry** screen:
 
 1. Enter number of grams of carbs in the Amount Consumed row (keyboard appears automatically)
-1. Tap continue to advance to the **Meal Bolus** screen (as shown in graphic below)
+1. Tap continue to advance to the **Meal Bolus** screen (as shown in the graphic below)
 1. Tap Save and Deliver to Save the carbs and Deliver the recommended bolus
 
 The carbs are not saved until the [**Meal Bolus**](bolus.md#meal-bolus) screen is completed.
@@ -116,7 +116,7 @@ The information about the next row: [Absorption Time](#absorption-time) is also 
 
 * The first touch of any icon sets the absorption time to the value associated with that icon
     * This includes the 3 icons (Lollipop, Taco, Pizza) on the Food Type row
-    * If you touch the plate icon (or the words Food Type), a new set of icons (food emoji) appear as show in the graphic below
+    * If you touch the plate icon (or the words Food Type), a new set of icons (food emoji) appear as shown in the graphic below
         * Each emoji is associated with Fast, Medium or Slow absorption time
         * The first emojis presented are medium - scroll in either direction to view the fast and slow emojis or tap on the short-cut tabs at the bottom of the screen
         * The emojis under Other have no effect on absorption time and they do not "count" as a first tap; e.g., wine followed by bacon updates absorption time to Slow.
@@ -154,7 +154,7 @@ Modifying the Absorption Time from the default value of 3 hours is optional.
 
 Loop uses the absorption time for the carbs, along with your glucose readings, ISF and CR to recommend insulin dosing and to estimate over time the carbs absorbed and carbs expected. See [Algorithm: Prediction](../algorithm/prediction.md) for more details.
 
-Loop assumes a specific model for how those carbs will be aborbed that is spread out over an interval that is 150% of the selected time. This allows for variations in actual absorption.  More information about this model is found in the prediction link above.
+Loop assumes a specific model for how those carbs will be absorbed that is spread out over an interval that is 150% of the selected time. This allows for variations in actual absorption.  More information about this model is found in the prediction link above.
 
 Many meals can be entered with the medium (3 hour) default absorption time. Learn by experimenting and modify going forward. Evaluate the CR setting, as well as the entries for Amount Consumed and Absorption Time for adjusting meal entries. The amount of up-front insulin recommended is typically similar up through 3 hours absorption and then begins to decrease as absorption time is increased.
 
@@ -163,7 +163,7 @@ Experiment for yourself - how much does Loop recommend compared to a straight Ca
 * Enter an absorption time and hit continue
 * Examine recommended bolus
 * Tap the **< Carb Entry** button at upper left
-* Modify the aborption time and hit continue
+* Modify the absorption time and hit continue
 * Repeat to get a feel for the up front bolus under different scenarios
 
 ### Continue

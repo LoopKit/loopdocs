@@ -94,11 +94,11 @@ Finally, you will be back to the `Pod Pairing` screen.
 ![img/pod-pairing.png](img/pod-pairing.png){width="200"}
 {align="center"}
 
-Instead of filling a new pod with insulin, attempt to pair again using the original pod which was previously filled but unable to complete the pairing process successfully. That pod should still be occassionally giving reminder beeps. Place the RileyLink a few inches to the side of the pod and press the **Pair** button at the bottom of the screen and hopefully Loop will be able to successfully pair this time after starting from a fresh slate. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.
+Instead of filling a new pod with insulin, attempt to pair again using the original pod which was previously filled but unable to complete the pairing process successfully. That pod should still be occasionally giving reminder beeps. Place the RileyLink a few inches to the side of the pod and press the **Pair** button at the bottom of the screen and hopefully Loop will be able to successfully pair this time after starting from a fresh slate. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.
 
 ### Step 5B "Deactivate pod"
 
-If you press the **Cancel** button and see an option for "Deactivate pod", we're going to do a little different than Step 5A.
+If you press the **Cancel** button and see an option for "Deactivate pod", we're going to do a little differently than Step 5A.
 
 !!! warning "You *might* lose your pod by attempting this procedure"
 

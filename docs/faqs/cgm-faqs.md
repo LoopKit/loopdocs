@@ -18,7 +18,7 @@ Loop will stop automatically adjusting insulin when the most recent glucose valu
 
 * With Loop 3, a HUD status row message of `No Recent Glucose` is displayed, making it easier to add the fingerstick value directly in Loop, which also saves it in Apple Health
 
-With no recent glucose readings, your pump resturns to the scheduled basal delivery (within 30 min or less).
+With no recent glucose readings, your pump returns to the scheduled basal delivery (within 30 min or less).
 
 Loop continues to accept manual bolus commands. With Loop 3 only, [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can also be commanded.
 

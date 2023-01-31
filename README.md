@@ -114,7 +114,7 @@ To add header row, use:
 
 ### Admonitions and CSS
 
-Now using the standard set of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) and css styles that come with the Material theme.
+Now using the standard set of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) and CSS styles that come with the Material theme.
 
 The admonitions in use are:
 First 3 boxes for Build Pages:
@@ -122,13 +122,13 @@ First 3 boxes for Build Pages:
 * `abstract`
 * `question`
 
-To get a warning triagle, use `warning`
+To get a warning triangle, use `warning`
 
 To get a red zag icon, use `danger`
 
 To get a pencil icon, use `note`
 
-[Admonitions](https://python-markdown.github.io/extensions/admonition/) are a markdown extension that enable formatted blocks for visually calling out information.
+[Admonition](https://python-markdown.github.io/extensions/admonition/) is a markdown extension that enables formatted blocks for visually calling out information.
 
 The markdown syntax used by loopdocs is:
 

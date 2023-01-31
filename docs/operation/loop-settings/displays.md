@@ -69,7 +69,7 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 
 | <div style="width:55px"></div> ||
 |---|---|
-|![Omnipod reservoir indicator is red with <20u remaining](img/pod-reservoir.jpg)|The pod icon will remain grey and plain until insulin volume decreases.  At 50 units or less insulin remaining, the reservoir icon will turn yellow. At 20 units or less remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds. </br></br>When the reading is 0 units, there may be up to 4 unit of insulin available but don't count on it. If the pod senses insulin can no longer be delivered, the pod will have a sustained audible alarm (the scream). Tapping Replace Pod in Loop->Pod->Settings should silence the alarm.|
+|![Omnipod reservoir indicator is red with <20u remaining](img/pod-reservoir.jpg)|The pod icon will remain grey and plain until insulin volume decreases.  At 50 units or less insulin remaining, the reservoir icon will turn yellow. At 20 units or less remaining, the reservoir icon will turn red.  The remaining units will be displayed when it gets to these lower thresholds. </br></br>When the reading is 0 units, there may be up to 4 units of insulin available but don't count on it. If the pod senses insulin can no longer be delivered, the pod will have a sustained audible alarm (the scream). Tapping Replace Pod in Loop->Pod->Settings should silence the alarm.|
 
 #### Pod Age (Omnipod Users)
 

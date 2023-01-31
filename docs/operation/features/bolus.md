@@ -81,7 +81,7 @@ The Loop app will open to the Bolus screen. This looks similar to the [Meal Bolu
 
 In the graphic below, the current glucose is under the Correction Range. Loop allows you to dip below the correction range but its recommended bolus will be limited by the glucose prediction and the Glucose Safety Limit. Check back once your glucose starts to rise and there will probably be a bigger recommendation.
 
-This screen behaves differently for [Loop 2.2.x](#loop-2-bolus-screen) and Loop 3. The graphics and instruction on this page are for Loop 3 version. Click on the Loop 2.2.x link above to view the Loop 2 version.
+This screen behaves differently for [Loop 2.2.x](#loop-2-bolus-screen) and Loop 3. The graphics and instructions on this page are for Loop 3 version. Click on the Loop 2.2.x link above to view the Loop 2 version.
 
 When the **Bolus** screen is entered directly from the toolbar, the button choices are **Enter Bolus** if none is recommended, **Deliver** if a value is on the **Bolus** row or **Cancel** using the button on the upper left. The user can also tap on the value on the **Bolus** row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
 
@@ -141,8 +141,8 @@ If you get an uncertain delivery message, you may still see the "bolused xx of y
 If an "uncertain" delivery is not resolved:
 
 * Make sure the RileyLink compatible device is communicating properly
-* You can try to turn off Bluetooth and the turn it back on again
-* [Quit the Loop app](https://support.apple.com/en-us/HT201330) and restart it. (Note - this is different from a power cycle of the phone which remembers settings within an app which was running before the power cycle.)
+* You can try to turn off Bluetooth and then turn it back on again
+* [Quit the Loop app](https://support.apple.com/en-us/HT201330) and restart it. (Note - this is different from a power cycle of the phone which remembers settings within an app that was running before the power cycle.)
 
 If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then [post](../../intro/loopdocs-how-to.md#how-to-find-help) on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.
 
@@ -151,7 +151,7 @@ There are other alert messages that might be displayed if the pump or CGM is not
 
 ## Loop 2 Bolus Screen
 
-* Loop 2.2.x shows the recommded bolus but the bolus row is intially set to 0
+* Loop 2.2.x shows the recommended bolus but the bolus row is initially set to 0
     * You can tap on the **Recommended** line and that value will be transferred to the Bolus line
     * OR 
     * You can tap on 0.0u on the **Bolus** row and type in your desired bolus amount
