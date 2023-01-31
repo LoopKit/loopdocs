@@ -153,7 +153,7 @@ This command requests the status of the Pod and reports some of the returned inf
 
 #### Play Test Beeps
 
-This command requests the Pod emit a beep pattern. If you hear it, you know the commands are getting to the Pod. A message appears on your screen to indicate Loop got or did not get an acknowledgement from the Pod.
+This command requests the Pod emit a beep pattern. If you hear it, you know the commands are getting to the Pod. A message appears on your screen to indicate Loop got or did not get an acknowledgment from the Pod.
 
 #### Read Pulse Log
 
@@ -170,7 +170,7 @@ This section provides some Pod identifying information. The Lot number and TID n
 
 ## Medtronic Commands
 
-Medtronic commands are found in the Pump Settings screen shown in the graphic below. The top sections is configured at the time the pump is connected to Loop and can only be modified by deleting the pump and adding a pump. This screen is the same as for earlier versions with the addition of the `Use MySentry` row.
+Medtronic commands are found in the Pump Settings screen shown in the graphic below. The top section is configured at the time the pump is connected to Loop and can only be modified by deleting the pump and adding a pump. This screen is the same as for earlier versions with the addition of the `Use MySentry` row.
 
 
 ![Medtronic Pump Settings screen](img/mdt-pump-settings-v225.svg){width="250"}

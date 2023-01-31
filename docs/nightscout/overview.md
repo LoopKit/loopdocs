@@ -104,7 +104,7 @@ The bolus is uploaded to Nightscout as soon as it starts and Insulin on board (a
 
 ### Temp Basals
 
-Your current basal profile is automatically updated to Nightscout whenever it is changed by Loop. The dashed blue line represents the scheduled basal profile. The solid blue lines indicate the actual basal amounts set for a given time...so as Loop sets temp basals higher or lower than your scheduled basal rate. If the graph and Loop pill do not agree, you should should believe the Loop pill.
+Your current basal profile is automatically updated to Nightscout whenever it is changed by Loop. The dashed blue line represents the scheduled basal profile. The solid blue lines indicate the actual basal amounts set for a given time...so as Loop sets temp basals higher or lower than your scheduled basal rate. If the graph and Loop pill do not agree, you should believe the Loop pill.
 
 ### Predicted BG
 
@@ -112,7 +112,7 @@ The purple line to the right of the BG is Loop's predicted BG. Watching the beha
 
 ### Loop pill
 
-The Loop pill is the little display box which, when hovered over or clicked, will provide additional information about recent Loop activities and status. Information included is the last time Loop ran, the temp basal set, IOB, and COB. Looking at the Loop pill is a quick method for assessing if you loop is currently active, as well.
+The Loop pill is the little display box which, when hovered over or clicked, will provide additional information about recent Loop activities and status. Information included is the last time Loop ran, the temp basal set, IOB, and COB. Looking at the Loop pill is a quick method for assessing if your loop is currently active, as well.
 
 !!! info "Loop Pill status indicator symbols"
 

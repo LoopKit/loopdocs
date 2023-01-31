@@ -11,7 +11,7 @@ Consider transitioning in steps.  Some loopers start closed-loop when there are 
 When starting closed-loop, it is important to be conservative. Start with the "Temp Basal Only" dosing strategy and limit the maximum basal rate.  If your Meal Entries or Therapy Settings (basal rates, CR, ISF) are incorrect, this approach limits the risk of getting too much insulin. Typically, experienced loopers set their max closed-loop basal rate at no more than 3-4 times their average basal rate.  Wait until you are comfortable with the slower corrections in "Temp Basal Only" before transitioning to "Automatic Bolus".
 
 !!! info "Temp Basal Only vs Automatic Bolus"
-	Both Dosing Strategy methods update the prediction with each CGM or glucose reading, typically every 5 minutes, and uses the updated prediction to generate a recommended bolus or recommended dosing restriction.
+	Both Dosing Strategy methods update the prediction with each CGM or glucose reading, typically every 5 minutes, and use the updated prediction to generate a recommended bolus or recommended dosing restriction.
 	
 	* "Temp Basal Only" provides no more than 17% (per 5 minute interval) of that recommended bolus using temporary basal
     * "Automatic Bolus" mode provides 40% of that recommended bolus as an immediate bolus
@@ -23,7 +23,7 @@ If your basal, ISF, or carb ratios are not correct, Loop may give you more insul
 
 ## Watch the IOB
 
-Watch whether Loop accumulates positive or negative IOB while holding your glucose steady when no food is present.  If you consistently have positive or negative IOB, review whether to adjust your  basal rate or ISF.
+Watch whether Loop accumulates positive or negative IOB while holding your glucose steady when no food is present.  If you consistently have positive or negative IOB, review whether to adjust your basal rate or ISF.
 
 !!! tip "Expert Tip"
 	In the absence of food, glucose trends should flatten out when positive or negative IOB trends to zero.

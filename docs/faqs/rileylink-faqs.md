@@ -68,7 +68,7 @@ While you are out of the communication range for your RileyLink compatible devic
 
 ## Are these devices waterproof?
 
-The electronics are not waterproof but there waterproof cases available and some have wireless charging available. Check with the manufacturer.
+The electronics are not waterproof but there are waterproof cases available and some have wireless charging available. Check with the manufacturer.
 
 [RileyLink Compatible Device Information](../build/step5.md#rileylink-compatible-devices)
 
