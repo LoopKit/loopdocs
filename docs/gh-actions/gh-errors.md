@@ -133,7 +133,7 @@ For example, if you see:
 
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.`
 
-Go back to [First-Time: Add or Configure Configuration for Loop Identifier](gh-first-time.md#add-or-configure-configuration-for-loop-identifier) and make sure you enabled the Time-Senstive notification for Loop.
+Go back to [First-Time: Add or Review Configuration for Loop Identifier](gh-first-time.md#add-or-review-configuration-for-loop-identifier) and make sure you enabled the Time-Senstive notification for Loop.
 
 
 For example, you might see:
