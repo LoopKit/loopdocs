@@ -127,7 +127,14 @@ Copy the words on the line below and paste it into the search function for your 
 
 `error: Provisioning profile "match AppStore com`
 
-If that phrase is found one, or more times, it means you missed associating your Loop App Group with one or more identifiers.
+If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your Loop App Group with one or more identifiers.
+
+For example, if you see:
+
+* `error: Provisioning profile "match AppStore com.***.loopkit.Loop" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.`
+
+Go back to [First-Time: Add or Configure Configuration for Loop Identifier](gh-first-time.md#add-or-configure-configuration-for-loop-identifier) and make sure you enabled the Time-Senstive notification for Loop.
+
 
 For example, you might see:
 
