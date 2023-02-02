@@ -2523,7 +2523,12 @@
 <h3 id="error-provisioning-profile">Error: <abbr title="associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)">Provisioning Profile</abbr><a class="headerlink" href="#error-provisioning-profile" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste it into the search function for your text editor.</p>
 <p><code>error: Provisioning profile "match AppStore com</code></p>
-<p>If that phrase is found one, or more times, it means you missed associating your Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with one or more identifiers.</p>
+<p>If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with one or more identifiers.</p>
+<p>For example, if you see:</p>
+<ul>
+<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.</code></li>
+</ul>
+<p>Go back to <a href="../gh-first-time/#add-or-review-configuration-for-loop-identifier">First-Time: Add or Review Configuration for Loop Identifier</a> and make sure you enabled the Time-Senstive notification for Loop.</p>
 <p>For example, you might see:</p>
 <ul>
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.SmallStatusWidget</code></li>

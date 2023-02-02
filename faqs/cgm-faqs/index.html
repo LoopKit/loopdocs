@@ -2088,8 +2088,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-do-i-do-when-i-switch-transmitters" class="md-nav__link">
-    What do I do when I switch transmitters?
+  <a href="#what-do-i-do-when-i-switch-dexcom-transmitters" class="md-nav__link">
+    What do I do when I switch Dexcom transmitters?
   </a>
   
 </li>
@@ -2271,8 +2271,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-do-i-do-when-i-switch-transmitters" class="md-nav__link">
-    What do I do when I switch transmitters?
+  <a href="#what-do-i-do-when-i-switch-dexcom-transmitters" class="md-nav__link">
+    What do I do when I switch Dexcom transmitters?
   </a>
   
 </li>
@@ -2338,24 +2338,32 @@
 </ul>
 <p>With no recent glucose readings, your pump returns to the scheduled basal delivery (within 30 min or less).</p>
 <p>Loop continues to accept manual bolus commands. With <abbr title="Latest release with major updates">Loop 3</abbr> only, <a href="../../loop-3/omnipod/#manual-temp-basal">Manual Temp Basal</a> can also be commanded.</p>
-<h2 id="what-do-i-do-when-i-switch-transmitters">What do I do when I switch transmitters?<a class="headerlink" href="#what-do-i-do-when-i-switch-transmitters" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When you change transmitters, you will need to update the transmitter ID in your Loop settings. The instructions for Dexcom are provided below:</p>
+<h2 id="what-do-i-do-when-i-switch-dexcom-transmitters">What do I do when I switch Dexcom transmitters?<a class="headerlink" href="#what-do-i-do-when-i-switch-dexcom-transmitters" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>When you change transmitters (prior to Dexcom G7), you will need to update the transmitter ID in your Loop settings. The instructions for Dexcom are provided below:</p>
 <ul>
 <li>In Loop, select the <code>Delete CGM</code> button at the very bottom of the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> info page<ul>
 <li>You cannot just edit the line with your old transmitter ID</li>
 </ul>
 </li>
+<li>It's a good idea to go into your phone Bluetooth settings and delete the old Dexcom transmitter<ul>
+<li>The transmitter starts with Dexcom and ends with the last 2 characters of your transmitter ID</li>
+<li>Tap on the (i) next to <code>Not Connected</code> and select <code>Forget This Device</code></li>
+</ul>
+</li>
 <li>Follow the Dexcom instructions for pairing the new transmitter</li>
-<li>In Loop, add <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and select the Dexcom system again<ul>
+<li>After pairing completes with Dexcom:<ul>
+<li>In Loop, add <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and select the Dexcom system again</li>
 <li>Enter the new transmitter ID</li>
 </ul>
 </li>
 </ul>
 <p align="center"><img alt="img/delete-cgm.jpg" src="../img/delete-cgm.jpg" width="400" /></p>
 <p>If you don't update your transmitter ID when you change active transmitters, and you included your Dexcom share credentials, then Loop uses your Dexcom Share server to get your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID. It's best not to enter Share Credentials. This makes it really obvious that you need to update the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> settings in Loop at transmitter change time.</p>
+<p>With G7, Loop automatically picks up the active sensor/transmitter pair from the Dexcom G7 app on the phone.</p>
 <h2 id="can-i-use-libre-sensors-with-a-reader-like-miao-miao">Can I use Libre sensors with a reader like Miao Miao?<a class="headerlink" href="#can-i-use-libre-sensors-with-a-reader-like-miao-miao" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you want to use a Libre sensor you will need to modify Loop to accomplish that use. Loop code does not natively support that sensor, nor readers.</p>
 <p>With <abbr title="Latest release with major updates">Loop 3</abbr>, a customization can be used to support some Libre sensor <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>.</p>
+<p>Please refer to <a href="https://www.loopandlearn.org/github-lnl-patches/">Loop and Learn: <abbr title="Latest release with major updates">Loop 3</abbr> with Customization</a></p>
 <h2 id="can-i-use-eversense">Can I use Eversense?<a class="headerlink" href="#can-i-use-eversense" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Eversense does not write to Apple Health. The BT communications protocol been not been reverse engineered as was done with Dexcom. There is a method to upload Eversense to Nightscout using an Android phone.</p>
 <p>With <abbr title="Latest release with major updates">Loop 3</abbr>, you can use Nightscout as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to Loop with Eversense, but that requires internet access.</p>

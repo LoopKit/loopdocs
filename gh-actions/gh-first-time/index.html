@@ -872,8 +872,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#prepare-loop-identifier" class="md-nav__link">
-    Prepare Loop Identifier
+  <a href="#find-loop-identifier" class="md-nav__link">
+    Find Loop Identifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-or-review-configuration-for-loop-identifier" class="md-nav__link">
+    Add or Review Configuration for Loop Identifier
   </a>
   
 </li>
@@ -2672,8 +2679,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#prepare-loop-identifier" class="md-nav__link">
-    Prepare Loop Identifier
+  <a href="#find-loop-identifier" class="md-nav__link">
+    Find Loop Identifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-or-review-configuration-for-loop-identifier" class="md-nav__link">
+    Add or Review Configuration for Loop Identifier
   </a>
   
 </li>
@@ -3387,7 +3401,7 @@
 <h2 id="configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop<a class="headerlink" href="#configure-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="create-app-group">Create <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr><a class="headerlink" href="#create-app-group" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> already exists if you previously built Loop using <abbr title="program used to build an app">Xcode</abbr> with this Apple Developer ID.</p>
-<p>If you built Loop via <abbr title="program used to build an app">Xcode</abbr>, skip ahead to <a href="#prepare-loop-identifier">Prepare Loop Identifier</a>.</p>
+<p>If you built Loop via <abbr title="program used to build an app">Xcode</abbr>, skip ahead to <a href="#find-loop-identifier">Find Loop Identifier</a>.</p>
 <p>If you have never built Loop with <abbr title="program used to build an app">Xcode</abbr> using your TEAMID, you need to create an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> associated with your TEAMID.</p>
 <ol>
 <li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/">Register an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></a> on the apple developer site.</li>
@@ -3399,7 +3413,7 @@
 </li>
 <li>Click "Continue" and then "Register".</li>
 </ol>
-<h3 id="prepare-loop-identifier">Prepare Loop Identifier<a class="headerlink" href="#prepare-loop-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="find-loop-identifier">Find Loop Identifier<a class="headerlink" href="#find-loop-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> on the apple developer site.</p>
 <h4 id="new-builders">New Builders<a class="headerlink" href="#new-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>If you never built using <abbr title="program used to build an app">Xcode</abbr>, then after successfully performing the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Action, you will see these six items under <code>NAME</code>.</p>
@@ -3437,6 +3451,7 @@
 <p>Example: Loop Follow users may see more than one Option in the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> Assignment dialog box. For Loop, select the one with group.com.TEAMID.loopkit.LoopGroup that uses your TEAMID.</p>
 <p>NOTE: as of Jan 2023, this <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> has now been removed from Loop Follow - it is not needed.  See <a href="../gh-other-apps/">Other Apps</a> for instructions on building Loop Follow with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
 </div>
+<h3 id="add-or-review-configuration-for-loop-identifier">Add or Review Configuration for Loop Identifier<a class="headerlink" href="#add-or-review-configuration-for-loop-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Find and click on the Loop identifier row to see the <code>Edit Your App ID Configuration</code> screen. You will be taking two actions for this identifier.</p>
 <ol>
 <li>Looking at the App Services column, scroll down to the App Groups row<ul>
@@ -3449,7 +3464,7 @@
 </li>
 </ul>
 </li>
-<li>(All Builders) Continue scrolling down to the Time Sensitive Notifications row<ul>
+<li>Continue scrolling down to the <strong>Time Sensitive Notifications</strong> row<ul>
 <li>Check, or confirm the box is checked, next to Time Sensitive Notifications</li>
 </ul>
 </li>
@@ -3711,7 +3726,7 @@
 <p>To make it easy when configuring the identifiers, go through and delete as many as you can and then:</p>
 <ul>
 <li>Run Action: <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> to add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> with the documented short names</li>
-<li>If you did not complete <a href="#prepare-loop-identifier">Prepare Loop Identifier</a> step, do it now</li>
+<li>If you did not complete <a href="#find-loop-identifier">Find Loop Identifier</a> step, do it now</li>
 <li>Complete the <a href="#add-app-group-to-other-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
 <li>If you did not complete the <a href="#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a> step, do it now</li>
 <li>Continue with <a href="#create-certificates">Create Certificates</a> and then <a href="#build-loop_1">Build Loop</a></li>
