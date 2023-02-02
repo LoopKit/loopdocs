@@ -44,11 +44,15 @@ To use the Dexcom G5, G6 or ONE:
 ![interface to add transmitter ID for Dexcom](img/loop-3-setting-add-dexcom.svg){width="300"}
 {align="center"}
 
-!!! info "FYI: When You Change Transmitters"
+#### Change Dexcom Transmitter
 
-    Before you change Dexcom transmitters, select the `Delete CGM` button at the very bottom of the CGM info page in Loop. Then, follow Dexcom Instructions for changing transmitters.  Once the new transmitter is paired with the Dexcom app, go to the CGM page in Loop, tap `Add CGM` and enter the new transmitter ID. You cannot just tap on your old transmitter ID to update it.
+!!! info "FYI: When You Change Dexcom Transmitters"
 
-    If you don't update your transmitter ID in Loop after you change the transmitter in Dexcom app, Loop will not get CGM data from the Dexcom app on your phone.
+    Before you change Dexcom transmitters, select the `Delete CGM` button at the very bottom of the CGM info page in Loop. If you leave the transmitter connected in Loop, you may have trouble pairing your new transmitter. If pairing does work, then Loop will not get CGM data from the Dexcom app on your phone.
+
+    Follow the instructions here: [What do I do when I switch Dexcom transmitters?](../faqs/cgm-faqs.md#what-do-i-do-when-i-switch-dexcom-transmitters).
+
+    The Dexcom G7 is handled differently - Loop automatically detects when a new sensor/transmitter pair is added to the Dexcom G7 app.
 
 #### About Dexcom Share credentials
 

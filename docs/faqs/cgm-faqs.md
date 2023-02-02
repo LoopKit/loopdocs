@@ -22,14 +22,18 @@ With no recent glucose readings, your pump returns to the scheduled basal delive
 
 Loop continues to accept manual bolus commands. With Loop 3 only, [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can also be commanded.
 
-## What do I do when I switch transmitters?
+## What do I do when I switch Dexcom transmitters?
 
-When you change transmitters, you will need to update the transmitter ID in your Loop settings. The instructions for Dexcom are provided below:
+When you change transmitters (prior to Dexcom G7), you will need to update the transmitter ID in your Loop settings. The instructions for Dexcom are provided below:
 
 * In Loop, select the `Delete CGM` button at the very bottom of the CGM info page
     * You cannot just edit the line with your old transmitter ID
+* It's a good idea to go into your phone Bluetooth settings and delete the old Dexcom transmitter
+    * The transmitter starts with Dexcom and ends with the last 2 characters of your transmitter ID
+    * Tap on the (i) next to `Not Connected` and select `Forget This Device`
 * Follow the Dexcom instructions for pairing the new transmitter
-* In Loop, add CGM and select the Dexcom system again
+* After pairing completes with Dexcom:
+    * In Loop, add CGM and select the Dexcom system again
     * Enter the new transmitter ID
 
 ![img/delete-cgm.jpg](img/delete-cgm.jpg){width="400"}
@@ -37,11 +41,15 @@ When you change transmitters, you will need to update the transmitter ID in your
 
 If you don't update your transmitter ID when you change active transmitters, and you included your Dexcom share credentials, then Loop uses your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID. It's best not to enter Share Credentials. This makes it really obvious that you need to update the CGM settings in Loop at transmitter change time.
 
+With G7, Loop automatically picks up the active sensor/transmitter pair from the Dexcom G7 app on the phone.
+
 ## Can I use Libre sensors with a reader like Miao Miao?
 
 If you want to use a Libre sensor you will need to modify Loop to accomplish that use. Loop code does not natively support that sensor, nor readers.
 
 With Loop 3, a customization can be used to support some Libre sensor CGM.
+
+Please refer to [Loop and Learn: Loop 3 with Customization](https://www.loopandlearn.org/github-lnl-patches/)
 
 ## Can I use Eversense?
 

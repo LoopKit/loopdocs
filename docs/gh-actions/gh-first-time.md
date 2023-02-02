@@ -553,7 +553,7 @@ The Add Identifier Action should complete (succeed or fail) in a few minutes as 
 
 The Loop App Group already exists if you previously built Loop using Xcode with this Apple Developer ID.
 
-If you built Loop via Xcode, skip ahead to [Prepare Loop Identifier](#prepare-loop-identifier).
+If you built Loop via Xcode, skip ahead to [Find Loop Identifier](#find-loop-identifier).
 
 If you have never built Loop with Xcode using your TEAMID, you need to create an App Group associated with your TEAMID.
 
@@ -564,7 +564,7 @@ If you have never built Loop with Xcode using your TEAMID, you need to create an
     * A mistake here means you will not be able to build Loop until you fix it
 1. Click "Continue" and then "Register".
 
-### Prepare Loop Identifier
+### Find Loop Identifier
 
 Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
 
@@ -616,6 +616,8 @@ If you have built with Xcode, you will be verifying the Loop identifier is prope
 
     NOTE: as of Jan 2023, this App Group has now been removed from Loop Follow - it is not needed.  See [Other Apps](gh-other-apps.md) for instructions on building Loop Follow with GitHub.
 
+### Add or Review Configuration for Loop Identifier
+
 Find and click on the Loop identifier row to see the `Edit Your App ID Configuration` screen. You will be taking two actions for this identifier.
 
 1. Looking at the App Services column, scroll down to the App Groups row
@@ -624,7 +626,7 @@ Find and click on the Loop identifier row to see the `Edit Your App ID Configura
     * (Loop) - If the word Configure shows up, tap on it
         * This opens the App Group Assignment screen
         * Check the box by group.com.TEAMID.loopkit.LoopGroup that uses your TEAMID and then Continue
-1. (All Builders) Continue scrolling down to the Time Sensitive Notifications row
+1. Continue scrolling down to the **Time Sensitive Notifications** row
     * Check, or confirm the box is checked, next to Time Sensitive Notifications
 
 Once you have finished modifying a given identifier, the Save button at the top right will become active
@@ -872,7 +874,7 @@ The identifier that is associated with the Loop identifier cannot be deleted if 
 To make it easy when configuring the identifiers, go through and delete as many as you can and then:
 
 * Run Action: [Add Identifiers](#add-identifiers) to add Identifiers with the documented short names
-* If you did not complete [Prepare Loop Identifier](#prepare-loop-identifier) step, do it now
+* If you did not complete [Find Loop Identifier](#find-loop-identifier) step, do it now
 * Complete the [Add App Group to Other Identifiers](#add-app-group-to-other-identifiers)
 * If you did not complete the [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect) step, do it now
 * Continue with [Create Certificates](#create-certificates) and then [Build Loop](#build-loop_1)
