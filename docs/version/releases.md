@@ -7,8 +7,10 @@ The new features added with each Loop release (starting with Loop version 2.0) a
 Be aware that Loop 3 is forward compatible:
 
 * You can build Loop 3 over older versions of Loop and maintain therapy settings as well as your configuration for CGM and pump (including a pod)
+* You can build Loop 3 using a browser on any computer (no Mac required) with GitHub [Browser Build](../gh-actions/gh-overview.md)
+* Your phone must be running at least iOS 15.1 (although some people report they needed newer iOS than that when building with GitHub Browser Build)
 
-Loop 3 is NOT backwards compatible. Once you build Loop 3 or later on your phone, you cannot return to Loop 2.2.x or FreeAPS without some additional work.
+Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your phone, you cannot return to Loop 2.2.x or FreeAPS without some additional work.
 
 * Be prepared to enter all your settings again and start a new pod
 * If you use Loop Follow, you do **not** need to delete Loop Follow
@@ -58,13 +60,22 @@ Loop v3.0.0 was released on January 14, 2023.
     * All new Git repositories on GitHub will be named "main" instead of "master" starting October 1, 2020
     * GitHub provides tools to assist in modifying existing repositories to use main
 
+## Remove Apps with Shared App Group
+
+The storage of data with Loop 3 is not backward compatible. In other words, if you attempt to build Loop 2.2.x (or FreeAPS) on a phone which has been upgraded to Loop 3, you will not be able to run that app. You can successfully build the app, which will overwrite Loop 3 on the phone, but the app will crash and you will not be able to Loop.
+
+At this point, you can restore your Loop 3 build on your phone and continue using Loop 3 or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
+
+If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to [Review Provisioning Profiles](https://www.loopandlearn.org/loop-expiration-date) and then delete the profiles for all the apps by using the - sign. 
+
+You do not need to delete Loop Follow, so if you use Loop Follow - do not delete that provisioning profile.
+
+
 ## Loop 2 Version History
 
 ### Loop v2.2.9
 
 This release updates Loop to handle Dexcom Share server changes for how glucose trend is parsed. Dexcom used to provide integers that mapped to the meaning for the arrows.  They changed that to strings, like "Flat" or "FortyFiveUp".
-
-This is now the new master, so you build it using the standard updating procedure [Build Updating](../build/updating.md).
 
 Loop v2.2.9 was released on April 4, 2022.
 
@@ -100,7 +111,7 @@ This is an interim release as we prepare for the major changes currently in deve
 
 Loop v2.2.5 was released on August 22, 2021.
 
-### New Features:
+#### New Features:
 
 Automatic Bolus (Experimental) Dosing Strategy
 
@@ -129,7 +140,7 @@ Omnipod Features:
 * [Confirmation beeps](../operation/loop-settings/pump-commands.md#enable-confirmation-beeps): improved and more uniform implementation
 * Pod Suspended: pod beeps once every 5 minutes until delivery is resumed or alarm cleared
 
-### Code Fixes:
+#### Code Fixes:
 
 Omnipod Code Fixes:
 
@@ -162,8 +173,6 @@ Released October 3, 2020 with "fixes" introduced without renumbering the version
 * Fix issue with pod status screen not allowing new pod pairing or continuing of interrupted pairing.
 * October 22, 2020, update travis to make it work with Xcode 12
 * January 19, 2021, pin the carthage to 0.36.0.  Users no longer required to install homebrew or carthage
-
-## Older Loop Releases
 
 ### Loop v2.2.3
 
@@ -229,62 +238,29 @@ Released December 31, 2019.
 
 This is a highlights reel comparing Loop v2.0 to v1.9.6.
 
-### Uploading of BGs to Nightscout
+#### Uploading of BGs to Nightscout
 
 Loop v2.0 has an option to upload your BG data to Nightscout directly. It is a new slider under the CGM configuration section for Dexcom users. After you add your CGM transmitter ID, go back into the CGM info and you'll see a new slider called "Upload Readings."  Technically, Loop's dev branch had that feature for a hot minute before Loop v2.0 was released...but for almost everyone this will be a brand new feature they haven't had before. This feature can help if/when Dexcom's Share servers ever go through another large outage like we had before. If that happens, you can turn on the "Upload Readings" switch and your CGM data will now be in Nightscout even without Share servers working properly. Good practice would be to temporarily disable your Share bridge in Nightscout while Loop is responsible for CGM uploading so that you don't get duplicate data. You can disable Share bridge by logging into your Heroku account, going to the Settings tab, clicking on "reveal config vars" and then deleting the word "bridge" from the ENABLE line.
 
-### A fix for settings loss
+#### A fix for settings loss
 
 iOS 13 brought about a quirky little bug where you could suddenly lose settings in Loop. But, it wasn't just limited to Loop, sometimes people lost Dexcom app settings too. The issue is most common when the phone goes through a power cycle, but it has happened at other times, too. There's a fix for that new bug in Loop now...so that's a good reason to update. (If you encounter that bug before you have a chance to update your Loop app, simply restart the Loop app and your settings should reappear.)
 
-### Spin for Watch Bolus
 
-To prevent an accidental bolus from your Watch app, don't let your kids hold your watch. Just kidding, we've added an even better option. There is a new "spin" to confirm the bolus after you press the bolus button. You'll see a graphic like below on the watch face. As you spin the digital crown, the two triangles will begin to merge. Once they merge, the bolus is confirmed through a little haptic and a white checkmark will appear on the watch screen.
 
-![img/spin-to-confirm.png](img/spin-to-confirm.png){width="250"}
-{align="center"}
-
-### Watch recommended bolus
-
-A common code customization is also now no longer needed. Many people used to edit Loop code to have the Watch app provide 100% of the recommended bolus as the auto-filled quantity in the bolus field (default used to be 75%). Loop now offers the 100% auto-filled recommendation, no code customization needed now.
-
-### Recent carbs list on Watch
-
-You can review the recent carb entries on your Apple Watch now. Simply swipe left to see the blood glucose graph screen on your watch. Scroll down with the digital crown to the "active carbs" row beneath the graph, and tap that row. You can see the list of recent carb entries.
-
-### Fix for Medtronic x15 "bolus may have failed" message
-
-A lot of Medtronic x15 users received "bolus may have failed" messages after each bolus. That issue has been fixed and a patched version of Loop is no longer needed. All good!
-
-### Confirmation beeps expanded
+#### Confirmation beeps expanded
 
 Confirmation beeps have been expanded based on user feedback...we heard parents and school nurses really appreciate hearing a beep for not just boluses, but also for suspend/resume commands and editing basal schedule (so you are sure it saved properly). So, confirmation beeps are now for boluses, suspend/resume, and basal schedule edit saves.
 
-### Read Pod Status added
+#### Read Pod Status added
 
 There's a new command in the RileyLink menu for "Read Pod Status" that is analogous to the existing command for Medtronic users. You can query your Pod for its current status info using that command.
 
-### Bug fixes generally
-
-There are a lot of niggly little bug fixes too which were merged in the last couple weeks. The temp basal timestamp for Medtronic Loop (and for older Omnipod Loops, too) had a bug that when Loop reverted to scheduled basals, the timestamp on the HUD's temp basal icon would switch back to the time the Loop was launched (instead of the time the scheduled basal was started again). There are also some new code improvements for handling uncerain boluses for Pod  Also, there are improvements to handle how Loop marks Pod suspend commands that are initiated by users while an active temp basal is in progress.
-
-### User interface improvements
-
-You'll notice dashed lines in the HUD for the CGM value if the CGM data goes older than 15 min (that way you don't accidentally miss the fact that your CGM has failed). The API Secret is hidden after it is saved in Loop Settings now, and if you accidentally leave a trailing slash on the Nightscout URL...Loop will ignore it.  The bolus progress row is new to master branch now, although many of you have been accustomed to that visual in dev branch for awhile now. The "Scenarios" screen that would sometimes appear when a phone was shaken is also disabled by default now. The Issue Report has more information about your Loop app's build date and version so that you can more easily track its build history.
-
-### Common build error squashed
-
-One common build error was caused if there was a space in the Loop folder name after downloading. This problem has been fixed and you will no longer get build errors if you have a space in your Loop folder name.  (Unless you are building dev branch, currently v2.3.0, - then no spaces allowed.)
-
-### Nightscout profile uploading
+#### Nightscout profile uploading introduced
 
 Loop will upload your basal schedule, ISFs, carb ratios, and override presets from Loop settings to your Nightscout profile. If you ever lose your phone and need to setup Loop brand new...your settings will be easy to find in Nightscout now.
 
-### New languages
-
-Japanese, Danish, Swedish, Vietnamese, Finnish, Portuguese (Brazilian), Polish, and Romanian languages were added to the regional translations for Loop. There are definitely some missing strings that will still need touchups...we will get those fixed up in Loop v2.1 if you all [help report those when you see them](https://www.facebook.com/groups/TheLoopedGroup/permalink/2454410898108895/). Thanks!!
-
-### Non-linear carb model
+#### Non-linear carb model introduced as default
 
 All branches (master and dev) now use a "non-linear" carb model, so let's give some info about the change.
 
@@ -297,46 +273,14 @@ What did that mismatch mean for us if the model predicts a linear absorption, bu
 
 With a non-linear absorption model, the carb absorption will more closely match observed blood glucose impacts we've seen after meals. And when the model is more closely matching actual experience, that means the predicted blood glucose curves will do a better job at providing more upfront bolus and not having the tendency to have overly conservative temp basals soon after a meal.
 
-**What should you expect?** Like the description above, you'll likely see more complete bolus recommendations and less low temping after a bolus. With that in mind, if you've made adjustments to your Loop habits or settings to overcome those issues previously, you may want to undo those habits. Like if you shortened carb absorption times to help get larger boluses upfront, you may want to go back to standard times. Keep an eye on things and you should adjust as needed.
-
-**What if you want to go back to the old model?** You will have to edit a line in LoopKit's LoopKit code [here](https://github.com/LoopKit/LoopKit/blob/dev/LoopKit/CarbKit/CarbStore.swift#L207) to use `.linear` if you wanted to go back to the old carb model. If you want to read more about the model, please check out the [Zulipchat thread here](https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Possible.20Carb.20Model.20Changes). But realize that the code edit for changing models would be easiest done using a [LoopWorkspace](../version/loopworkspace.md) because the edit is in one of the frameworks that Loop uses (rather than Loop code itself), so this is one of those instances where you will have to do some work to learn how to use a LoopWorkspace properly.
-
-### Overrides
+#### Overrides Introduced
 
 Loop v2.0 marks the first time Loop master branch has overrides included. Additionally, this release moves overrides setup from the configurations area of Loop settings to the workout icon in the Loop toolbar. There has also been bug squashing in dev branch for overrides over the recent past, so updating is a good idea even if you already have overrides on your current build. Want to learn more about overrides? Read about them [here](../operation/features/workout.md).
 
-### Retrospective Correction always on
+#### Retrospective Correction always on
 
 Retrospective correction used to be an optional toggle in the algorithm. It is now on by default all the time. It is an important part of the algorithm (helps Loop look at how good/bad its recent prediction curve has been vs reality), and leaving it on made sense anyways.
 
-### Omnipod support
+#### Omnipod support in Released Code
 
 Yes, most of you are already using Omnipod with your Loop...but this is the first time that Loop master branch supports Omnipod users. Please update if you have been using Omnipod-testing branch especially...it's time to get all the bug fixes that we've done in Loop.
-
-### Dark mode support
-
-iOS 13 brought dark mode for application developers, and Loop's developer was all over that. We now have a wickedly cool dark mode Loop for those who prefer the dark side.
-
-### ISF and correction range guardrails and UI change
-
-Loop v2.0 also brings about the first time master branch has the useful scroll wheel to set values of ISF and correction range. This helps mitigate an old bug where backwards entered correction range values would crash Loop app. Also less prone to fat-finger mistakes on entry.
-
-### Simulator pump and CGM
-
-If you don't have compatible gear yet and just want to test Loop app, the new ability to add a simulated pump and/or CGM is a great new feature.
-
-### New style of Dexcom transmitters supported
-
-Dexcom launched a new style of transmitters this summer. The new transmitters took some work by Loop developer (PETE! YEAH!) to get them working in offline Looping, but the fix was pushed into all branches shortly thereafter in August 2019. If you haven't updated your Loop since August 2019 and use a Dexcom G6, you should update now.
-
-
-## Remove Apps with Shared App Group
-
-The storage of data with Loop 3 is not backward compatible. In other words, if you attempt to build Loop 2.2.x (or FreeAPS) on a phone which has been upgraded to Loop 3, you will not be able to run that app. You can successfully build the app, which will overwrite Loop 3 on the phone, but the app will crash and you will not be able to Loop.
-
-At this point, you can restore your Loop 3 build on your phone and continue using Loop 3 or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
-
-If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to [Review Provisioning Profiles](https://www.loopandlearn.org/loop-expiration-date) and then delete the profiles for all the apps by using the - sign. 
-
-You do not need to delete Loop Follow, so if you use Loop Follow - do not delete that provisioning profile.
-
