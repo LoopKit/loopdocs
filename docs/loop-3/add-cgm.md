@@ -155,7 +155,7 @@ sequenceDiagram
     activate      dexcom
     Note over     dexcom:   Switching sensors... ⏱️
     user     -->> user:     Remove old Sensor
-    user     ->>  dexcom:   Enter new Sensor Code
+    user     ->>  dexcom:   Enter/Scan new Sensor Code
     user     -->> user:     Insert new Sensor
     user     ->>  dexcom:   Pair then Start new Sensor
     deactivate    dexcom

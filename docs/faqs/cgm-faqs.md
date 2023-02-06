@@ -58,7 +58,7 @@ sequenceDiagram
     Note over     dexcom:   Switching sensors and transmitters... ⏱️
     user     -->> user:     Remove old Sensor and old Transmitter
     user     ->>  dexcom:   Enter new Transmitter Serial Number
-    user     ->>  dexcom:   Enter new Sensor Code
+    user     ->>  dexcom:   Enter/Scan new Sensor Code
     user     -->> user:     Insert new Sensor then attach new transmitter
     user     ->>  dexcom:   Pair then Start new Sensor
     deactivate    dexcom
