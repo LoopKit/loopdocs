@@ -897,6 +897,7 @@ To make it easy when configuring the identifiers, go through and delete as many 
 
 * Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
 * Use the graphic below as a guide to removing identifiers
+* Keep repeating the steps until you've removed all the identifiers you can (or want to) delete
 * It is OK to delete an identifier even if it does have your correct TEAMID
     * If you try to delete the Loop identifier with your TEAMID, it will refuse, don't worry, just keep going
 * Note - this graphic indicates where on this page you can find your TEAMID
