@@ -744,8 +744,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#update-secrets-with-new-github-token" class="md-nav__link">
-    Update Secrets with New GitHub Token
+  <a href="#update-secrets" class="md-nav__link">
+    Update Secrets
   </a>
   
 </li>
@@ -2326,8 +2326,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#update-secrets-with-new-github-token" class="md-nav__link">
-    Update Secrets with New GitHub Token
+  <a href="#update-secrets" class="md-nav__link">
+    Update Secrets
   </a>
   
 </li>
@@ -2472,7 +2472,7 @@
 <p align="center"><img alt="regenerate fastlane access token on github" src="../img/gh-token-set-90-days.png" width="600" /></p>
 <p>Copy the token using the copy icon and save it along with your other secret settings. The next step is to update GH_PAT in your LoopWorkspace Repository <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>.</p>
 <p align="center"><img alt="regenerate fastlane access token on github" src="../img/gh-token-updated.png" width="600" /></p>
-<p>Skip ahead to <a href="#update-secrets-with-new-github-token">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> with New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a>.</p>
+<p>Skip ahead to <a href="#update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>.</p>
 <h3 id="github-token-email"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token Email<a class="headerlink" href="#github-token-email" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You will get an email from <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> when your Personal Access token is getting close to expiration.</p>
 <p>This token is used as GH_PAT in your <abbr title="contains project files and each file's revision history">repository</abbr> secrets when you initiate the Build Loop action. You will need to regenerate a new one and update the secret with the new token.</p>
@@ -2481,11 +2481,12 @@
 <p>Email warning:</p>
 <p align="center"><img alt="email warning github token will expire" src="../img/gh-pat-expiring-email.png" width="300" /></p>
 <p>Click on the "regenerate" link to be taken to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account (you might need to follow 2-factor authentication to get access). If your Expiration is set at 30 days, as shown, you should select 90 days to match the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration rhythm. That's how often you need to rebuild Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> actions. The email acts as a handy reminder. Click on the green Regenerate token button.</p>
-<p>As soon as you regenerate, you cannot build again until you <a href="#update-secrets-with-new-github-token">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> with New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a>. Your current app in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is <strong>not</strong> affected, but might may be close to expiring. So finish the job while you are thinking about it.</p>
+<p>As soon as you regenerate, you cannot build again until you <a href="#update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>. Your current app in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is <strong>not</strong> affected, but might may be close to expiring. So finish the job while you are thinking about it.</p>
 <p align="center"><img alt="phone screen instructing me to renew" src="../img/regenerate-token-screen.png" width="300" /></p>
 <p>The next screen appears with your token (mine is not shown for security reasons - it's above the portion displayed). Copy your token by clicking on the copy button.</p>
 <p align="center"><img alt="phone screen after hitting the regenerate button" src="../img/after-regeneration.png" width="300" /></p>
-<h3 id="update-secrets-with-new-github-token">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> with New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token<a class="headerlink" href="#update-secrets-with-new-github-token" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#update-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This example is for updating GH_PAT in the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for your <abbr title="contains project files and each file's revision history">repository</abbr>, but the same method can be applied when changing any Secret.</p>
 <p>This can be done with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token still in your paste buffer - but to be safe, save the token with your other secret settings. If you lose track, just <a href="#regenerate-github-token">Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a> again.</p>
 <p>The graphics and instructions in this section are using a phone.</p>
 <p>Scroll all the way up to the top of the window to see the hamburger menu, click on it and choose your name and icon (near bottom of the list). Scroll down to the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> and tap on the link.</p>
