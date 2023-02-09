@@ -41,9 +41,13 @@ When you change transmitters (prior to Dexcom G7), you will need to update the t
 
 If you don't update your transmitter ID when you change active transmitters, and you included your Dexcom share credentials, then Loop uses your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID. It's best not to enter Share Credentials. This makes it really obvious that you need to update the CGM settings in Loop at transmitter change time.
 
-With G7, Loop automatically picks up the active sensor/transmitter pair from the Dexcom G7 app on the phone.
+### Dexcom G7
 
-The below diagram illustrates **how to switch transmitters on Dexcom G5, G6, and ONE** (not G7).
+With Dexcom G7, Loop automatically picks up the active sensor/transmitter pair from the Dexcom G7 app on the phone. Once Dexcom G7 is added to Loop as the CGM, the Looper does not need to do anything to Loop after selecting the new sensor/transmitter pair in the Dexcom G7 app.
+
+### Dexcom G5, G6 and ONE
+
+The diagram below illustrates the steps needed to **switch transmitters on Dexcom G5, G6, and ONE**. This typically needs to be done every three months when a new transmitter is started.
 
 ```mermaid
 sequenceDiagram
@@ -57,7 +61,7 @@ sequenceDiagram
     activate      dexcom
     Note over     dexcom:   Switching sensors and transmitters... ⏱️
     user     -->> user:     Remove old Sensor and old Transmitter
-    user     ->>  dexcom:   Enter new Transmitter Serial Number
+    user     ->>  dexcom:   Enter/Scan new Transmitter ID
     user     ->>  dexcom:   Enter/Scan new Sensor Code
     user     -->> user:     Insert new Sensor then attach new transmitter
     user     ->>  dexcom:   Pair then Start new Sensor
