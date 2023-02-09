@@ -41,7 +41,6 @@ extra_css:
     - stylesheets/extra.css
     - stylesheets/primary-color.css
 
-
 markdown_extensions:
     - meta
     - abbr
@@ -51,7 +50,12 @@ markdown_extensions:
           generic: true
     - pymdownx.highlight
     - pymdownx.inlinehilite
-    - pymdownx.superfences
+    - pymdownx.superfences:
+        # make exceptions to highlighting of code:
+        custom_fences:
+          - name:  mermaid
+            class: mermaid
+            format: !!python/name:mermaid2.fence_mermaid
     - pymdownx.snippets:
         auto_append:
             - includes/tooltip-list.txt
@@ -63,11 +67,12 @@ markdown_extensions:
 extra_javascript:
     - javascripts/mathjax.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6
+    - https://unpkg.com/mermaid/dist/mermaid.min.js
     - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
     - search
-
+    - mermaid2
 nav:
 - Home: 'index.md'
 - Intro:

@@ -1,6 +1,6 @@
 ## CGM Choices
 
-A CGM can be added from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
+A CGM can be added from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen ⚙️.
 
 The HUD will look like the graphic below if no CGM or Pump is connected with Loop:
 
@@ -24,7 +24,7 @@ Loop can be connected to the following CGMs:
 
 ## Add CGM
 
-To add a CGM, go to the Settings screen, tap on add CGM and tap on your CGM.
+To add a CGM, go to the Settings screen ⚙️, tap on `Add CGM`, and tap on your CGM.
 
 ![graphic showing some of the CGMs available with Loop 3](img/loop-3-setting-add-cgm.svg){width="500"}
 {align="center"}
@@ -33,13 +33,13 @@ To add a CGM, go to the Settings screen, tap on add CGM and tap on your CGM.
 
 To use the Dexcom G5, G6 or ONE:
 
-* Select Dexcom model, use G6 for either G6 or ONE
+* Select Dexcom model, use `Dexcom G6` for either  G6 or ONE
 * Dexcom app must be running on the Loop iPhone and paired to an active transmitter
 * User must enter that active transmitter ID in the location indicated by the red rectangle in the graphic below
-* Do not enter your Share Credentials
+* Do **not** enter your `Share Credentials`
     * The graphic below shows `Tap to set`
     * Do not tap, leave it alone
-* Only add the transmitter ID to Loop after it is paired with the Dexcom app on your phone
+* Only add the **transmitter ID** to Loop **after** it is paired with the *Dexcom app* on your phone
 
 ![interface to add transmitter ID for Dexcom](img/loop-3-setting-add-dexcom.svg){width="300"}
 {align="center"}
@@ -53,6 +53,7 @@ To use the Dexcom G5, G6 or ONE:
     Follow the instructions here: [What do I do when I switch Dexcom transmitters?](../faqs/cgm-faqs.md#what-do-i-do-when-i-switch-dexcom-transmitters).
 
     The Dexcom G7 is handled differently - Loop automatically detects when a new sensor/transmitter pair is added to the Dexcom G7 app.
+
 
 #### About Dexcom Share credentials
 
@@ -123,15 +124,31 @@ The user must enter both the URL and API_SECRET for their site to ensure the sec
 ![Nightscout Remote CGM entry screen](img/nightscout-cgm-entry.svg){width="350"}
 {align="center"}
 
-When using Nightscout Remote CGM, if the user needs to change credentials or switch to a different CGM, the user must go through the Loop->Settings->CGM menu.
+When using Nightscout Remote CGM, if the user needs to change credentials or switch to a different CGM, the user must go through the Loop->Settings ⚙️->CGM menu.
 
 
 ## Change CGM
 
 To change CGMs, delete your existing CGM and then add a new CGM.
 
-* For Dexcom G5, G6, ONE or Share, access `Delete CGM` by tapping on the CGM Icon in the HUD or by tapping on Loop Settings and selecting CGM and scrolling down.
+### Change a Nightscout Remote CGM
 
-* For Nightscout Remote CGM, the Nightscout URL is opened when tapping on the CGM icon in the HUD, while the credential sections with the `Delete CGM` row is shown when tapping on Loop Settings and selecting CGM.
+For **Nightscout Remote CGM**, the Nightscout URL is opened when tapping on the CGM icon in the Heads-Up Display, while the credential sections with the `Delete CGM` row are shown when tapping on Loop `Settings` ⚙️, and selecting CGM.
 
-After deleting a CGM, the [Head-Up-Display](#cgm-choices) at the top of the Loop main screen will show the add CGM icon.
+After deleting a CGM, the [Head-Up-Display](#cgm-choices) at the top of the Loop main screen will show the `Add CGM` icon.
+
+### Change Other CGM
+
+Other CGM, you can tap on the CGM from either the Heads-Up Display or tap on `Settings` ⚙️, and select your CGM.
+
+Scroll to the bottom of the screen and select `Delete CGM`.
+
+For some CGM that can be added to Loop 3 with a patch, the words may be different, but the steps are the same.
+
+### Dexcom G5, G6 and One (not G7)
+
+For older Dexcom sensors, the transmitter is replaced separately about once every three months. In order to enter a new transmitter number, you must first delete the CGM and then add the CGM.
+
+Detailed instructions are found at [CGM FAQs: What do I do when I switch Dexcom transmitters?](../faqs/cgm-faqs.md#what-do-i-do-when-i-switch-dexcom-transmitters).
+
+Once the Dexcom G7 has been added to Loop, the user only needs to let the Dexcom G7 app know when to use the new sensor. The Loop app automatically switches to the new sensor with no additional steps required by the Looper.
