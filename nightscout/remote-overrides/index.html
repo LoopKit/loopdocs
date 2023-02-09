@@ -1,2448 +1,1037 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-      <link rel="icon" href="../../loop-logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.3.6">
-    
-    
-      
-        <title>Remote Commands - LoopDocs</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
-        
-      
-    
-    
-    
-      
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
-      
-    
-    
-    
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
-    
-    
-      
+<!DOCTYPE html>
 
-
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
-  
-    
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-    
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#set-up-remote-for-nightscout" class="md-skip">
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../loop-logo.png" rel="icon"/>
+<meta content="mkdocs-1.3.0, mkdocs-material-7.3.6" name="generator"/>
+<title>Remote Commands - LoopDocs</title>
+<link href="../../assets/stylesheets/main.a57b2b03.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../stylesheets/primary-color.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="" dir="ltr">
+<script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#set-up-remote-for-nightscout">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-      
-
-  
-
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
-      
-  <img src="../../loop-logo.png" alt="logo">
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="LoopDocs" class="md-header__button md-logo" data-md-component="logo" href="../.." title="LoopDocs">
+<img alt="logo" src="../../loop-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             LoopDocs
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               Remote Commands
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
-          
-            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
-            </label>
-          
-        
-      </form>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="" data-md-color-scheme="" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_3" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="" data-md-color-scheme="default" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_3" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
 <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list"></ol>
 </div>
-    
-    
-  </nav>
-  
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
       Home
     </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../intro/overview-intro/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../intro/overview-intro/">
         Intro
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../gh-actions/gh-overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../gh-actions/gh-overview/">
         Browser Build
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../build/overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../build/overview/">
         Mac Build
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../loop-3/loop-3-overview/">
         Set Up
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../operation/loop/open-loop/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../operation/loop/open-loop/">
         Operate
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../troubleshooting/overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../troubleshooting/overview/">
         Troubleshoot
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../version/overview-version/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../version/overview-version/">
         Version
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../overview/" class="md-tabs__link md-tabs__link--active">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../overview/">
         Nightscout
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../faqs/overview-faqs/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../faqs/overview-faqs/">
         FAQs
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../translate/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../translate/">
       Translation
     </a>
-  </li>
-
-      
-    </ul>
-  </div>
+</li>
+</ul>
+</div>
 </nav>
-    
-  
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
-      
-  <img src="../../loop-logo.png" alt="logo">
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="LoopDocs" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="LoopDocs">
+<img alt="logo" src="../../loop-logo.png"/>
+</a>
     LoopDocs
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
         Home
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
           Intro
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Intro" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Intro" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
           Intro
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../intro/overview-intro/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../intro/overview-intro/">
         LoopDocs Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../intro/loopdocs-how-to/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../intro/loopdocs-how-to/">
         LoopDocs How-to
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../intro/requirements/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../intro/requirements/">
         Requirements
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step2/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step2/">
         Compatible iPhone/iPod
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step3/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step3/">
         Compatible Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step4/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step4/">
         Compatible CGM
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step5/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step5/">
         RileyLink
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step6/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step6/">
         Apple Developer Program
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step10/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step10/">
         Test Settings
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step11/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step11/">
         Loop Data
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step12/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step12/">
         Meet the Community
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
           Browser Build
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Browser Build" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Browser Build" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
           Browser Build
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gh-actions/gh-overview/">
         GitHub Build Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gh-actions/gh-first-time/">
         GitHub First-Time
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gh-actions/gh-deploy/">
         GitHub Deploy
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-update/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gh-actions/gh-update/">
         GitHub Update
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-errors/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gh-actions/gh-errors/">
         GitHub Errors
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gh-actions/gh-other-apps/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../gh-actions/gh-other-apps/">
         Other Apps
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
           Mac Build
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Mac Build" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Mac Build" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
           Mac Build
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/overview/">
         Mac Build Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step1/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step1/">
         Compatible Computer
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step8/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step8/">
         Download Xcode
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step9/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step9/">
         Xcode Preferences
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/step14/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/step14/">
         Build Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/build_errors/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/build_errors/">
         Oh dear! Build errors?
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/updating/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/updating/">
         Updating/Rebuilding
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/build-free-loop/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/build-free-loop/">
         Build Free Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/testflight-xcode/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/testflight-xcode/">
         TestFlight from Xcode
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
           Set Up
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Set Up" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Set Up" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
           Set Up
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/loop-3-overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/loop-3-overview/">
         Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/onboarding/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/onboarding/">
         Onboarding
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/add-cgm/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/add-cgm/">
         Add CGM
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/add-pump/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/add-pump/">
         Add Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/displays_v3/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/displays_v3/">
         Displays
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/alert-notify/" class="md-nav__link">
-        Alerts & Notifications
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/alert-notify/">
+        Alerts &amp; Notifications
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/settings/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/settings/">
         Settings
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/therapy-settings/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/therapy-settings/">
         Therapy Settings
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/services/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop-settings/services/">
         Optional: Services
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop-settings/rileylink/">
         RileyLink Display
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/omnipod/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/omnipod/">
         Omnipod Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/medtronic/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/medtronic/">
         Medtronic Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-3/features/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-3/features/">
         Features
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" type="checkbox" id="__nav_5_14" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5_14">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" id="__nav_5_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_14">
           Loop 2: Set Up App
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Loop 2: Set Up App" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_14">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Loop 2: Set Up App" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_14">
+<span class="md-nav__icon md-icon"></span>
           Loop 2: Set Up App
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/overview/">
         Loop 2 Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/health/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/health/">
         Loop 2 Health Permissions
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_3" type="checkbox" id="__nav_5_14_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5_14_3">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_3" id="__nav_5_14_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_14_3">
           Loop 2 Add Pump
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Loop 2 Add Pump" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_14_3">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Loop 2 Add Pump" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_5_14_3">
+<span class="md-nav__icon md-icon"></span>
           Loop 2 Add Pump
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop-settings/mdt-pump/">
         Loop 2 Add Medtronic
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop-settings/omnipod-pump/">
         Loop 2 Add Omnipod
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop-settings/cgm/">
         Loop 2 Add CGM
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop-settings/configurations/">
         Loop 2 Configuration
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/displays/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop-settings/displays/">
         Loop 2 Displays
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop-settings/pump-commands/">
         Loop 2 Pump Settings
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
           Operate
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Operate" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Operate" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
           Operate
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop/open-loop/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop/open-loop/">
         Open Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop/close-loop/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop/close-loop/">
         Closed Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/features/carbs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/features/carbs/">
         Meal Entries
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/features/bolus/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/features/bolus/">
         Bolus
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/features/workout/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/features/workout/">
         Overrides
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/features/watch/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/features/watch/">
         Apple Watch
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/features/notifications/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/features/notifications/">
         Loop Notifications
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/features/premeal/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/features/premeal/">
         Pre-meal target
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/features/ice/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/features/ice/">
         Using ICE info
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/features/widget/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/features/widget/">
         iPhone widget
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/loop/looptips/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/loop/looptips/">
         Loop Tips
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" type="checkbox" id="__nav_6_12" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6_12">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" id="__nav_6_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_12">
           Algorithm
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Algorithm" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_12">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Algorithm" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_12">
+<span class="md-nav__icon md-icon"></span>
           Algorithm
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/algorithm/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/algorithm/overview/">
         Algorithm Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/algorithm/bolus/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/algorithm/bolus/">
         Bolus Recommendations
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/algorithm/prediction/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/algorithm/prediction/">
         Glucose Prediction
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/algorithm/temp-basal/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/algorithm/temp-basal/">
         Automated Adjustments
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
           Troubleshoot
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Troubleshoot" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Troubleshoot" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
           Troubleshoot
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../troubleshooting/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../troubleshooting/overview/">
         Troubleshooting Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../troubleshooting/loop-crashing/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../troubleshooting/loop-crashing/">
         Loop App crashes
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../troubleshooting/yellow-red-loop/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../troubleshooting/yellow-red-loop/">
         Red Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../troubleshooting/pod-pairing/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../troubleshooting/pod-pairing/">
         Pod Pairing Failures
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../troubleshooting/omnipod-faults/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../troubleshooting/omnipod-faults/">
         Omnipod Faults
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../troubleshooting/pump-errors/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../troubleshooting/pump-errors/">
         MDT Pump Errors
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operation/features/battery/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../operation/features/battery/">
         MDT Pump Battery
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_8">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8">
           Version
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Version" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Version" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
           Version
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../version/overview-version/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../version/overview-version/">
         Version Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../version/releases/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../version/releases/">
         Loop Releases
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/code_customization/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/code_customization/">
         Customize your Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../version/simulator/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../version/simulator/">
         Simulator Build
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../version/development/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../version/development/">
         Loop Development
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../build/build-select-dev/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../build/build-select-dev/">
         Build Loop Dev
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../version/loopworkspace/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../version/loopworkspace/">
         LoopWorkspace
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_9">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9">
           Nightscout
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Nightscout" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nightscout" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
           Nightscout
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../overview/">
         Nightscout Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../new_user/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../new_user/">
         New Nightscout
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../update_user/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../update_user/">
         Nightscout with Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troublehoot/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../troublehoot/">
         Nightscout Troubleshooting
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
           Remote Commands
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Remote Commands
       </a>
-      
-        
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+<nav aria-label="Headers on this Page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#set-up-remote-for-nightscout" class="md-nav__link">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set-up-remote-for-nightscout">
     Set Up Remote for Nightscout
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-update-the-loopers-iphone-settings" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-1-update-the-loopers-iphone-settings">
     Step 1: Update the Looper's iPhone settings
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-apple-push-notifications" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-apple-push-notifications">
     Step 2: Apple Push Notifications
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-add-apn-to-nightscout" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-add-apn-to-nightscout">
     Step 3: Add APN to Nightscout
   </a>
-  
-    <nav class="md-nav" aria-label="Step 3: Add APN to Nightscout">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#update-nightscout-site" class="md-nav__link">
+<nav aria-label="Step 3: Add APN to Nightscout" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#update-nightscout-site">
     Update Nightscout Site
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#add-apn-variables-to-nightscout" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-apn-variables-to-nightscout">
     Add APN Variables to Nightscout
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#faqs-on-remote-overrides" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#faqs-on-remote-overrides">
     FAQs on Remote Overrides
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#warnings-for-remote-commands" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#warnings-for-remote-commands">
     Warnings for Remote Commands
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#using-remote-commands" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-remote-commands">
     Using Remote Commands
   </a>
-  
-    <nav class="md-nav" aria-label="Using Remote Commands">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#loopcaregiver" class="md-nav__link">
+<nav aria-label="Using Remote Commands" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#loopcaregiver">
     LoopCaregiver
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#nightscout-careportal" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nightscout-careportal">
     Nightscout Careportal
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#shortcuts" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#shortcuts">
     Shortcuts
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ifttt" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ifttt">
     IFTTT
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#known-issues" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#known-issues">
     Known Issues
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#common-errors" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-errors">
     Common Errors
   </a>
-  
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ns_crossref/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ns_crossref/">
         Nightscout Cross Ref
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_10">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10">
           FAQs
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="FAQs" data-md-level="1">
-        <label class="md-nav__title" for="__nav_10">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="FAQs" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
           FAQs
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faqs/overview-faqs/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../faqs/overview-faqs/">
         FAQs Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faqs/safety-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../faqs/safety-faqs/">
         Safety Tips
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faqs/FAQs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../faqs/FAQs/">
         Loop FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../troubleshooting/time-change/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../troubleshooting/time-change/">
         Time Change FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faqs/omnipod-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../faqs/omnipod-faqs/">
         Omnipod FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faqs/cgm-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../faqs/cgm-faqs/">
         CGM FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faqs/update-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../faqs/update-faqs/">
         Update/Rebuild Loop FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faqs/rileylink-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../faqs/rileylink-faqs/">
         RileyLink FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faqs/algorithm-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../faqs/algorithm-faqs/">
         Algorithm FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faqs/apple-health-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../faqs/apple-health-faqs/">
         Apple Health FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faqs/glossary/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../faqs/glossary/">
         Glossary
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../translate/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../translate/">
         Translation
       </a>
-    </li>
-  
-
-    
-  </ul>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Headers on this Page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#set-up-remote-for-nightscout" class="md-nav__link">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set-up-remote-for-nightscout">
     Set Up Remote for Nightscout
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-update-the-loopers-iphone-settings" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-1-update-the-loopers-iphone-settings">
     Step 1: Update the Looper's iPhone settings
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-apple-push-notifications" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-apple-push-notifications">
     Step 2: Apple Push Notifications
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-add-apn-to-nightscout" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-add-apn-to-nightscout">
     Step 3: Add APN to Nightscout
   </a>
-  
-    <nav class="md-nav" aria-label="Step 3: Add APN to Nightscout">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#update-nightscout-site" class="md-nav__link">
+<nav aria-label="Step 3: Add APN to Nightscout" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#update-nightscout-site">
     Update Nightscout Site
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#add-apn-variables-to-nightscout" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-apn-variables-to-nightscout">
     Add APN Variables to Nightscout
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#faqs-on-remote-overrides" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#faqs-on-remote-overrides">
     FAQs on Remote Overrides
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#warnings-for-remote-commands" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#warnings-for-remote-commands">
     Warnings for Remote Commands
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#using-remote-commands" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-remote-commands">
     Using Remote Commands
   </a>
-  
-    <nav class="md-nav" aria-label="Using Remote Commands">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#loopcaregiver" class="md-nav__link">
+<nav aria-label="Using Remote Commands" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#loopcaregiver">
     LoopCaregiver
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#nightscout-careportal" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nightscout-careportal">
     Nightscout Careportal
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#shortcuts" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#shortcuts">
     Shortcuts
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ifttt" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ifttt">
     IFTTT
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#known-issues" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#known-issues">
     Known Issues
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#common-errors" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-errors">
     Common Errors
   </a>
-  
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                  <h1>Remote Commands</h1>
-                
-                <h2 id="set-up-remote-for-nightscout">Set Up Remote for Nightscout<a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Remote Commands</h1>
+<h2 id="set-up-remote-for-nightscout">Set Up Remote for Nightscout<a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>You can use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop.</p>
 <p>If you are using <abbr title="Latest release with major updates">Loop 3</abbr>, then you can also send remote commands to add carbs and command a bolus.</p>
 <div class="admonition warning">
@@ -2511,7 +1100,7 @@
 </ul>
 <p>The expanded capabilities for remote commands in <abbr title="Latest release with major updates">Loop 3</abbr> are currently documented in this <a href="https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM">Remote Carb/Bolus Guide</a>. That information will be incorporated into LoopDocs soon.</p>
 </div>
-<h2 id="step-1-update-the-loopers-iphone-settings">Step 1: Update the Looper's iPhone settings<a class="headerlink" href="#step-1-update-the-loopers-iphone-settings" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="step-1-update-the-loopers-iphone-settings">Step 1: Update the Looper's iPhone settings<a class="headerlink" href="#step-1-update-the-loopers-iphone-settings" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>For remote commands to successfully deploy to a Looper's iPhone, they will need to have two settings on the iPhone enabled.</p>
 <ol>
 <li>The slider in iPhone -&gt; Settings -&gt; Loop -&gt; Notifications needs to be turned to Allow Notifications</li>
@@ -2522,46 +1111,46 @@
 <li>Without notifications, the person trying to set a remote override will see a message about "no deviceToken" and no remote override will actually enact</li>
 <li>If Background app refresh is not enabled, the remote overrides will only enact if the Loop app is open and the phone is unlocked.</li>
 </ul>
-<h2 id="step-2-apple-push-notifications">Step 2: Apple Push Notifications<a class="headerlink" href="#step-2-apple-push-notifications" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="step-2-apple-push-notifications">Step 2: Apple Push Notifications<a class="headerlink" href="#step-2-apple-push-notifications" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it. (Reminder - this only works with the paid Apple Developer ID.)</p>
 <ol>
 <li>Login to your <a href="https://developer.apple.com/account/">Apple developer account</a> with the Apple ID associated with your developer team that you used to sign your Loop app.</li>
-<li>Click on "Certificates, Indentifiers &amp; Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" <strong>OR</strong> the &plus; icon to add a new key.</li>
+<li>Click on "Certificates, Indentifiers &amp; Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" <strong>OR</strong> the + icon to add a new key.</li>
 </ol>
-<p><img alt="img/apns-add-key.png" src="../img/apns-add-key.png" /></p>
+<p><img alt="img/apns-add-key.png" src="../img/apns-add-key.png"/></p>
 <ol>
 <li>In the form that appears, click the checkbox for enabling "Apple Push Notifications service (APNs)" and enter a name for the key such as "Nightscout". Then click the "Continue" button in the upper right of the screen.</li>
 </ol>
-<p><img alt="img/key-apns.png" src="../img/key-apns.png" /></p>
+<p><img alt="img/key-apns.png" src="../img/key-apns.png"/></p>
 <ol>
 <li>In the screen that follows, click the blue "Register" button.</li>
 </ol>
-<p><img alt="img/apns-register.png" src="../img/apns-register.png" /></p>
+<p><img alt="img/apns-register.png" src="../img/apns-register.png"/></p>
 <ol>
 <li>In the screen that follows, click the blue "Download" button. This step will download a file with a name that starts with "AuthKey" and ends with ".p8".</li>
 </ol>
-<p><img alt="img/apns-download.png" src="../img/apns-download.png" /></p>
+<p><img alt="img/apns-download.png" src="../img/apns-download.png"/></p>
 <ol>
 <li>Find your AuthKey download in your downloads folder. Double-click to open it and you will be presented a message asking how you'd like to open it. Click on "Choose Application..." and then select "TextEdit" as your application to open it with.</li>
 </ol>
-<p><img alt="img/apns-open.png" src="../img/apns-open.png" /></p>
-<p><img alt="img/apns-textedit.png" src="../img/apns-textedit.png" /></p>
+<p><img alt="img/apns-open.png" src="../img/apns-open.png"/></p>
+<p><img alt="img/apns-textedit.png" src="../img/apns-textedit.png"/></p>
 <ol>
 <li>When the file opens, it will look similar to the screenshot below. In a few minutes, after we do a few other steps first, we will need to highlight <strong>ALL OF THE CONTENTS</strong> of that file and copy it because we will be pasting it in Heroku. Yes, allllll of the contents. So, easiest way is to click inside that file and then press <code>command-a</code> to highlight all the text and then <code>command-c</code> to copy it all to the clipboard. You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.</li>
 </ol>
-<p><img alt="img/apns-copy-key.png" src="../img/apns-copy-key.png" /></p>
-<h2 id="step-3-add-apn-to-nightscout">Step 3: Add APN to Nightscout<a class="headerlink" href="#step-3-add-apn-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h3 id="update-nightscout-site">Update Nightscout Site<a class="headerlink" href="#update-nightscout-site" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><img alt="img/apns-copy-key.png" src="../img/apns-copy-key.png"/></p>
+<h2 id="step-3-add-apn-to-nightscout">Step 3: Add APN to Nightscout<a class="headerlink" href="#step-3-add-apn-to-nightscout" title="Anchor link to this Header on this Page">¶</a></h2>
+<h3 id="update-nightscout-site">Update Nightscout Site<a class="headerlink" href="#update-nightscout-site" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>You'll need to make sure your Nightscout site version is at version 13.0.1 or newer for remote overrides and version 14.2.6 or newer for access to all the remote command features. You can check your version number by looking at the bottom of your NS site's settings (tap on the hamburger menu - three horizontal lines at the upper right), near where the authentication button is located.</p>
 <p>This link should be used if you want to <a href="https://nightscout.github.io/update/update/">Nightscout: Update</a> your Nightscout site.</p>
 <p>Note - for Google Cloud users, the <a href="https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html">Xdrip: Google Cloud Nightscout</a> instructions include information about updating your site. Scroll down to the line (on that page) that says <code>Update Nightscout</code>.</p>
-<h3 id="add-apn-variables-to-nightscout">Add APN Variables to Nightscout<a class="headerlink" href="#add-apn-variables-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="add-apn-variables-to-nightscout">Add APN Variables to Nightscout<a class="headerlink" href="#add-apn-variables-to-nightscout" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>In order to use remote overrides, you must add a couple of new variables. If you don't know how to update your Nightscout Configuration, review <a href="https://nightscout.github.io/nightscout/setup_variables/">Nightscout: Setup Variables</a> and then come back.</p>
 <p>The instructions in this section show Heroku images. If you are using a different method, you should be able to "translate" the steps.</p>
 <p>Go to the <code>Settings</code> tab near the top of the screen on your Heroku app and then click on <code>Reveal Config Vars</code>.</p>
-<p align="center"><img alt="img/heroku5.png" src="../img/heroku5.png" width="650" /></p>
+<p align="center"><img alt="img/heroku5.png" src="../img/heroku5.png" width="650"/></p>
 <p>Scroll down the bottom of the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> lines until you find the last blank one.  You are going to add three new rows of config vars for remote overrides as shown below:</p>
-<p align="center"><img alt="img/add_vars.jpg" src="../img/add_vars.jpg" width="650" /></p>
+<p align="center"><img alt="img/add_vars.jpg" src="../img/add_vars.jpg" width="650"/></p>
 <table>
 <thead>
 <tr>
@@ -2572,15 +1161,15 @@
 <tbody>
 <tr>
 <td>LOOP_APNS_KEY</td>
-<td>enter ENTIRE contents of the downloaded .p8 file including the BEGIN and END lines. Here's where you can use the <code>command-a</code> and <code>command-c</code> to hightlight and copy all the text in that file so you can paste it into Heroku here for this new variable you are creating. <img alt="img/apns-copy-key2.png" src="../img/apns-copy-key2.png" /></td>
+<td>enter ENTIRE contents of the downloaded .p8 file including the BEGIN and END lines. Here's where you can use the <code>command-a</code> and <code>command-c</code> to hightlight and copy all the text in that file so you can paste it into Heroku here for this new variable you are creating. <img alt="img/apns-copy-key2.png" src="../img/apns-copy-key2.png"/></td>
 </tr>
 <tr>
 <td>LOOP_APNS_KEY_ID</td>
-<td>string of characters on the .p8 download file immediately following the underscore (  _  ) and not including the file extension ( .p8 ), or you can get it from your saved key in your developer account as shown next step, too <img alt="img/apns-open2.png" src="../img/apns-open2.png" /></td>
+<td>string of characters on the .p8 download file immediately following the underscore (  _  ) and not including the file extension ( .p8 ), or you can get it from your saved key in your developer account as shown next step, too <img alt="img/apns-open2.png" src="../img/apns-open2.png"/></td>
 </tr>
 <tr>
 <td>LOOP_DEVELOPER_TEAM_ID</td>
-<td>get this value from Loop app signing or in your developer account's top right corner under your name <img alt="img/apns-vars.png" src="../img/apns-vars.png" /></td>
+<td>get this value from Loop app signing or in your developer account's top right corner under your name <img alt="img/apns-vars.png" src="../img/apns-vars.png"/></td>
 </tr>
 <tr>
 <td>LOOP_PUSH_SERVER_ENVIRONMENT</td>
@@ -2588,11 +1177,11 @@
 </tr>
 </tbody>
 </table>
-<h4 id="remote-build-config-var-requirement">Remote Build Config Var Requirement<a class="headerlink" href="#remote-build-config-var-requirement" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="remote-build-config-var-requirement">Remote Build Config Var Requirement<a class="headerlink" href="#remote-build-config-var-requirement" title="Anchor link to this Header on this Page">¶</a></h4>
 <p>That last row of the table above is needed if you are using a remote build option such as <a href="../../gh-actions/gh-overview/">LoopDocs: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Actions</a> or downloaded an archived file via <a href="https://www.loopandlearn.org/remote-build/">Loop and Learn: Remote Build with Diawi</a>. If you later return to a direct <abbr title="program used to build an app">Xcode</abbr> build to your phone, you must remove that config var or remote commands will not work.</p>
 <p>When executed properly, you should have something that looks like this for your three new variables that you added:</p>
-<p><img alt="img/override_vars_complete.png" src="../img/override_vars_complete.png" /></p>
-<h2 id="faqs-on-remote-overrides">FAQs on Remote Overrides<a class="headerlink" href="#faqs-on-remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><img alt="img/override_vars_complete.png" src="../img/override_vars_complete.png"/></p>
+<h2 id="faqs-on-remote-overrides">FAQs on Remote Overrides<a class="headerlink" href="#faqs-on-remote-overrides" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>Don't forget to read <a href="../../operation/features/workout/">Loopdocs: Overrides</a>. For remote overrides in particular:</p>
 <ol>
 <li>
@@ -2623,7 +1212,7 @@
 <p><strong>Can I schedule a remote override ahead of time using Nightscout?</strong> No. When you set a remote override in Nightscout, it will begin immediately and last for whatever duration is programmed for that override in the Loop app. You can set an override for ahead of time using the Looping App only.</p>
 </li>
 </ol>
-<h2 id="warnings-for-remote-commands">Warnings for Remote Commands<a class="headerlink" href="#warnings-for-remote-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="warnings-for-remote-commands">Warnings for Remote Commands<a class="headerlink" href="#warnings-for-remote-commands" title="Anchor link to this Header on this Page">¶</a></h2>
 <div class="admonition danger">
 <p class="admonition-title"><strong>Duplicate Delivery Risk</strong></p>
 <p>We want to highlight a very important risk before you get started.</p>
@@ -2662,14 +1251,14 @@
 </ul>
 <p>Remember - you should pause at least 60 sec between remote commands or the One-Time-Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) will be rejected as having already been used.</p>
 </div>
-<h2 id="using-remote-commands">Using Remote Commands<a class="headerlink" href="#using-remote-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="using-remote-commands">Using Remote Commands<a class="headerlink" href="#using-remote-commands" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>There are four ways you can trigger your commands remotely; <a href="#loopcaregiver">LoopCaregiver</a> (under development), <a href="#nightscout-careportal">Nightscout Careportal</a>, <a href="#shortcuts">Shortcuts</a>, and <a href="#ifttt">IFTTT</a>.</p>
 <p>Config Var Reminder:</p>
 <ul>
 <li>If you used a remote method for your build of Loop, don't forget you must add LOOP_PUSH_SERVER_ENVIRONMENT config variable to your Nightcout site or remote commands will not work. <a href="#remote-build-config-var-requirement">LoopDocs: Remote Build Config Var Requirement</a></li>
 <li>If you then return to <abbr title="program used to build an app">Xcode</abbr> build, you must remove the LOOP_PUSH_SERVER_ENVIRONMENT config var.</li>
 </ul>
-<h3 id="loopcaregiver">LoopCaregiver   <img alt="icon for LoopCaregiver app" src="../img/lcg-icon.jpg" width="50" /><a class="headerlink" href="#loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="loopcaregiver">LoopCaregiver   <img alt="icon for LoopCaregiver app" src="../img/lcg-icon.jpg" width="50"/><a class="headerlink" href="#loopcaregiver" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>The LoopCaregiver app is under development to make remote commands easier to implement and monitor.</p>
 <div class="admonition danger">
 <p class="admonition-title">Configuration Breaking Change on 2023 January 24</p>
@@ -2716,10 +1305,10 @@
 </div>
 <p>If you plan to use LoopCaregiver, please join <a href="https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App">Loop Caregiver App</a> zulipchat stream.</p>
 <p><strong>As with all development code, monitor zulipchat for announcements, report any problems you experience, be prepared to build frequently, and pay attention.</strong></p>
-<h4 id="build-loopcaregiver">Build LoopCaregiver<a class="headerlink" href="#build-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="build-loopcaregiver">Build LoopCaregiver<a class="headerlink" href="#build-loopcaregiver" title="Anchor link to this Header on this Page">¶</a></h4>
 <p>A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built <abbr title="Latest release with major updates">Loop 3</abbr> using the script. You may also choose to build it with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method as documented on the Browser Build: <a href="../../gh-actions/gh-other-apps/">Other Apps</a> page.</p>
 <p>Open a terminal window. Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
-<div class="highlight"><span class="filename">Copy and Paste to start the BuildLoopCaregiver.sh script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopCaregiver.sh)&quot;
+<div class="highlight"><span class="filename">Copy and Paste to start the BuildLoopCaregiver.sh script</span><pre><span></span><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopCaregiver.sh)"
 </code></pre></div>
 <p>Paste the line into the <abbr title="interface for entering commands to the computer">Terminal</abbr> window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.</p>
 <div class="admonition warning">
@@ -2727,9 +1316,9 @@
 <p>The output you see in the <abbr title="interface for entering commands to the computer">Terminal</abbr> may look very similar to when you build <abbr title="Latest release with major updates">Loop 3</abbr> from a script.</p>
 <p>It is pulling down a <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> from a different location (LoopKit/LoopCaregiver). It uses some modules from Loop. The target and scheme are automatically selected for LoopCaregiver and if you follow directions for a paid Developer account, the signing is automatic.</p>
 </div>
-<h4 id="use-loopcaregiver">Use LoopCaregiver<a class="headerlink" href="#use-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="use-loopcaregiver">Use LoopCaregiver<a class="headerlink" href="#use-loopcaregiver" title="Anchor link to this Header on this Page">¶</a></h4>
 <p>Some limited directions for using the LoopCaregiver app are provided - please also read the zulipchat stream.</p>
-<h4 id="loopcaregiver-main-screen">LoopCaregiver Main Screen<a class="headerlink" href="#loopcaregiver-main-screen" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="loopcaregiver-main-screen">LoopCaregiver Main Screen<a class="headerlink" href="#loopcaregiver-main-screen" title="Anchor link to this Header on this Page">¶</a></h4>
 <p>LoopCaregiver uses a lot of features from Loop with some Nightscout-like features in the Timeline.</p>
 <p>The Timeline:</p>
 <ul>
@@ -2741,8 +1330,8 @@
 <li>A double-tap on the Timeline provides a factor of 2 expansion horizontally if at default</li>
 <li>A double-tap on the Timeline returns the display to default if expanded</li>
 </ul>
-<p><img alt="main screen of the LoopCaregiver app" src="../img/lcg-main.jpg" width="300" /></p>
-<h4 id="add-a-looper-to-loopcaregiver">Add a Looper to LoopCaregiver<a class="headerlink" href="#add-a-looper-to-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><img alt="main screen of the LoopCaregiver app" src="../img/lcg-main.jpg" width="300"/></p>
+<h4 id="add-a-looper-to-loopcaregiver">Add a Looper to LoopCaregiver<a class="headerlink" href="#add-a-looper-to-loopcaregiver" title="Anchor link to this Header on this Page">¶</a></h4>
 <p>You add each Looper under settings. (LoopCaregiver can monitor more than one Looper).</p>
 <ul>
 <li>On Looper Phone<ul>
@@ -2753,7 +1342,7 @@
 </li>
 <li>On LoopCaregiver Phone<ul>
 <li>Tap on  LoopCaregiver-&gt;Settings</li>
-<li>Tap on <strong>&plus;</strong> to add a Looper</li>
+<li>Tap on <strong>+</strong> to add a Looper</li>
 <li>Enter the name of the Looper, the Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> (use http<strong>s</strong>://) and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr></li>
 <li>Touch the QR code row - this opens the camera - point camera at QR code from Looper's phone</li>
 </ul>
@@ -2764,18 +1353,18 @@
 <li>Units used for glucose display: mg/dL or mmol/L</li>
 <li>Include the Loop Forecast display on the Timeline chart as well as the Glucose chart of the main display (graphic above has <code>Show Prediction</code> turned off)</li>
 </ul>
-<h4 id="issue-remote-commands-with-loopcaregiver"><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Remote Commands with LoopCaregiver<a class="headerlink" href="#issue-remote-commands-with-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="issue-remote-commands-with-loopcaregiver"><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Remote Commands with LoopCaregiver<a class="headerlink" href="#issue-remote-commands-with-loopcaregiver" title="Anchor link to this Header on this Page">¶</a></h4>
 <p>You issue override, carb and bolus commands using a toolbar similar to the one seen on Loop. In the example graphic above, the carb and bolus entries visible were issued remotely. (Note that Adam 6 is a test phone.)</p>
 <p>Carb and bolus commands each require authorization before they are accepted. The authorization (FaceID, Fingerprint or passcode) matches that required to unlock the LoopCaregiver's phone.</p>
 <p>The use of LoopCaregiver makes remote commands much easier and more reliable.</p>
 <p>Go back and read the warnings again before using the app. <a href="#warnings-for-remote-commands">Warnings for Remote Commands</a></p>
-<h3 id="nightscout-careportal">Nightscout Careportal<a class="headerlink" href="#nightscout-careportal" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>To use remote commands, I'm assuming you've setup your Nightscout site according to the directions <a href="../update_user/">here</a> in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your <a href="../update_user/#authenticate-site">site authenticated</a> so that your careportal is active to send remote overrides. Once authenticated by entering your <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>, then there will be a &plus; in the upper right corner of your site. That is your careportal. Tap the careportal &plus; and then scroll down in the "event type" menu to find "Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>". Within there, you will find all your Loop override presets already loaded for you.</p>
-<p><img alt="img/careportal-overrides.PNG" src="../img/careportal-overrides.PNG" /></p>
+<h3 id="nightscout-careportal">Nightscout Careportal<a class="headerlink" href="#nightscout-careportal" title="Anchor link to this Header on this Page">¶</a></h3>
+<p>To use remote commands, I'm assuming you've setup your Nightscout site according to the directions <a href="../update_user/">here</a> in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your <a href="../update_user/#authenticate-site">site authenticated</a> so that your careportal is active to send remote overrides. Once authenticated by entering your <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>, then there will be a + in the upper right corner of your site. That is your careportal. Tap the careportal + and then scroll down in the "event type" menu to find "Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>". Within there, you will find all your Loop override presets already loaded for you.</p>
+<p><img alt="img/careportal-overrides.PNG" src="../img/careportal-overrides.PNG"/></p>
 <p>The Looper will see a banner notification that an remote command has been sent with details about that command and whether it succeeded (or not).</p>
-<p><img alt="img/override_notification.jpg" src="../img/override_notification.jpg" /></p>
+<p><img alt="img/override_notification.jpg" src="../img/override_notification.jpg"/></p>
 <p>Canceling an override through Nightscout careportal is as simple as selecting the event type "Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Cancel" and submitting.</p>
-<h3 id="shortcuts">Shortcuts<a class="headerlink" href="#shortcuts" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="shortcuts">Shortcuts<a class="headerlink" href="#shortcuts" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple shortcuts for you that integrate Loop overrides with Nightscout.</p>
 <div class="admonition info">
 <p class="admonition-title">Important note</p>
@@ -2783,7 +1372,7 @@
 </div>
 <p>Click these links on your iPhone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser in iPhone):</p>
 <p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut">Comprehensive Loop Shortcut</a>
- <em>includes Set Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.</em></p>
+<em>includes Set Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.</em></p>
 <p>And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:</p>
 <p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop Remote Overrides.shortcut">Set Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
 <p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Cancel Override.shortcut">Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
@@ -2798,15 +1387,15 @@
 <li>When a remote override is set properly, you'll see an "ok" message displayed. If there is an error, you'll see an error message. Most errors will be that you have an <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> wrong (make sure there isn't a space at the end of you <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> that you don't see) or you failed to do the steps to setup NS and update your Loop app as described in steps 1-3 above.</li>
 <li>You can absolutely customize these bits and pieces within the shortcut. Change the text messages, change the links...totally up to you.</li>
 </ol>
-<h3 id="ifttt">IFTTT<a class="headerlink" href="#ifttt" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="ifttt">IFTTT<a class="headerlink" href="#ifttt" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by <a href="../ns_crossref/#IFTTT">setting up IFTTT</a>, too.</p>
-<h2 id="known-issues">Known Issues<a class="headerlink" href="#known-issues" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="known-issues">Known Issues<a class="headerlink" href="#known-issues" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>Just a brief mention so you are aware:</p>
 <ol>
 <li>The override <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> will display information about what override is currently active in the Looper's phone. BUT, there can be a slight delay as that information is only transmitted every 5 minutes at best (it is tied to Loop runs and Nightscout upload events in Loop). So, wait 5 minutes to see that the information has gone through a refresh cycle before assuming the override message failed to enact.</li>
 <li>When you add a new override preset in Loop, that preset has to be uploaded to Nightscout before it will be available as a remote override. To trigger that upload, you can simply enact that new override for a few seconds and turn it off again. that will get the Nightscout upload going.</li>
 </ol>
-<h2 id="common-errors">Common Errors<a class="headerlink" href="#common-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="common-errors">Common Errors<a class="headerlink" href="#common-errors" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>Once you've set up remote overrides, you may encounter errors when trying to run them via Nightscout or <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  Below are the most common and the typical solutions.</p>
 <ol>
 <li><strong>Error: Loop notification failed: Could not find deviceToken in loopSettings</strong> You might see this in either Nightscout or Shortcuts.  The error is most commonly caused by Loop not pointing to the right Nightscout instance or you haven't yet run an override locally (with the Loop app) before trying to run one remotely.  <strong>Solution:</strong> confirm the Loop app is pointing to the right Nightscout site (and there are not extra spaces or a slash (/) at the end, and always run an override for a few seconds in the Loop app before you try to run one remotely.</li>
@@ -2814,94 +1403,65 @@
 <li><strong>Error: {“status”:401,”message”:”Unauthorized”,”description”:Invalid\/Missing”}</strong> You might see this in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  This is caused by having the incorrect <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> in the Shortcut.  <strong>Solution:</strong> Double check the <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> is correct and that there are no spaces at the end.</li>
 <li><strong>Error: APNs delivery failed: InvalidProviderToken</strong> You might see this in either Nightscout or Shortcuts.  This is caused because your LOOP_APNS_KEY_ID and LOOP_DEVELOPER_TEAM_ID are swapped in Heroku.  <strong>Solution:</strong> Double check what's listed in your Apple Developer Account and compare to the config variables in Heroku. Your Team_ID is next to your name in the top right corner.  The other code is your Key_ID. Get the IDs in the correct location in Heroku to resolve the error.</li>
 </ol>
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
-        </div>
-        
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path></svg>
             Back to top
           </a>
-        
-      </main>
-      
-        
+</main>
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../troublehoot/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Nightscout Troubleshooting" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Nightscout Troubleshooting" class="md-footer__link md-footer__link--prev" href="../troublehoot/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
                 Previous
               </span>
               Nightscout Troubleshooting
             </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../ns_crossref/" class="md-footer__link md-footer__link--next" aria-label="Next: Nightscout Cross Ref" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
+</div>
+</a>
+<a aria-label="Next: Nightscout Cross Ref" class="md-footer__link md-footer__link--next" href="../ns_crossref/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
                 Next
               </span>
               Nightscout Cross Ref
             </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
         
         
           Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
             Material for MkDocs
           </a>
-        
-        
-      </div>
-      
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
-      
-        <script src="../../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-    
-  </body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
 </html>

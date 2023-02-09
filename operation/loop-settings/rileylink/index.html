@@ -1,2295 +1,932 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-      <link rel="icon" href="../../../loop-logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.3.6">
-    
-    
-      
-        <title>RileyLink Display - LoopDocs</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a57b2b03.min.css">
-      
-        
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
-        
-      
-    
-    
-    
-      
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
-      
-    
-    
-    
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../../stylesheets/primary-color.css">
-    
-    
-      
+<!DOCTYPE html>
 
-
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
-  
-    
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-    
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#rileylink" class="md-skip">
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../loop-logo.png" rel="icon"/>
+<meta content="mkdocs-1.3.0, mkdocs-material-7.3.6" name="generator"/>
+<title>RileyLink Display - LoopDocs</title>
+<link href="../../../assets/stylesheets/main.a57b2b03.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../stylesheets/primary-color.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="" dir="ltr">
+<script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#rileylink">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-      
-
-  
-
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
-      
-  <img src="../../../loop-logo.png" alt="logo">
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="LoopDocs" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="LoopDocs">
+<img alt="logo" src="../../../loop-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             LoopDocs
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               RileyLink Display
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
-          
-            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
-            </label>
-          
-        
-      </form>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="" data-md-color-scheme="" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_3" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="" data-md-color-scheme="default" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_3" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
 <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list"></ol>
 </div>
-    
-    
-  </nav>
-  
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
       Home
     </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../intro/overview-intro/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../intro/overview-intro/">
         Intro
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../gh-actions/gh-overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../gh-actions/gh-overview/">
         Browser Build
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../build/overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../build/overview/">
         Mac Build
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../loop-3/loop-3-overview/" class="md-tabs__link md-tabs__link--active">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../../../loop-3/loop-3-overview/">
         Set Up
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../loop/open-loop/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../loop/open-loop/">
         Operate
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../troubleshooting/overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../troubleshooting/overview/">
         Troubleshoot
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../version/overview-version/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../version/overview-version/">
         Version
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../nightscout/overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../nightscout/overview/">
         Nightscout
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../faqs/overview-faqs/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../faqs/overview-faqs/">
         FAQs
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../../translate/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../translate/">
       Translation
     </a>
-  </li>
-
-      
-    </ul>
-  </div>
+</li>
+</ul>
+</div>
 </nav>
-    
-  
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
-      
-  <img src="../../../loop-logo.png" alt="logo">
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="LoopDocs" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="LoopDocs">
+<img alt="logo" src="../../../loop-logo.png"/>
+</a>
     LoopDocs
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
         Home
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
           Intro
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Intro" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Intro" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
           Intro
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../intro/overview-intro/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../intro/overview-intro/">
         LoopDocs Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../intro/loopdocs-how-to/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../intro/loopdocs-how-to/">
         LoopDocs How-to
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../intro/requirements/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../intro/requirements/">
         Requirements
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step2/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step2/">
         Compatible iPhone/iPod
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step3/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step3/">
         Compatible Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step4/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step4/">
         Compatible CGM
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step5/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step5/">
         RileyLink
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step6/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step6/">
         Apple Developer Program
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step10/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step10/">
         Test Settings
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step11/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step11/">
         Loop Data
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step12/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step12/">
         Meet the Community
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
           Browser Build
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Browser Build" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Browser Build" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
           Browser Build
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-overview/">
         GitHub Build Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-first-time/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-first-time/">
         GitHub First-Time
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-deploy/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-deploy/">
         GitHub Deploy
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-update/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-update/">
         GitHub Update
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-errors/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-errors/">
         GitHub Errors
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-other-apps/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-other-apps/">
         Other Apps
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
           Mac Build
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Mac Build" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Mac Build" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
           Mac Build
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/overview/">
         Mac Build Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step1/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step1/">
         Compatible Computer
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step8/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step8/">
         Download Xcode
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step9/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step9/">
         Xcode Preferences
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step14/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step14/">
         Build Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/build_errors/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/build_errors/">
         Oh dear! Build errors?
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/updating/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/updating/">
         Updating/Rebuilding
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/build-free-loop/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/build-free-loop/">
         Build Free Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/testflight-xcode/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/testflight-xcode/">
         TestFlight from Xcode
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
           Set Up
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Set Up" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Set Up" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
           Set Up
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/loop-3-overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/loop-3-overview/">
         Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/onboarding/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/onboarding/">
         Onboarding
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/add-cgm/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/add-cgm/">
         Add CGM
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/add-pump/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/add-pump/">
         Add Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/displays_v3/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/displays_v3/">
         Displays
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/alert-notify/" class="md-nav__link">
-        Alerts & Notifications
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/alert-notify/">
+        Alerts &amp; Notifications
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/settings/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/settings/">
         Settings
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/therapy-settings/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/therapy-settings/">
         Therapy Settings
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../services/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../services/">
         Optional: Services
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
           RileyLink Display
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         RileyLink Display
       </a>
-      
-        
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+<nav aria-label="Headers on this Page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#rileylink" class="md-nav__link">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rileylink">
     RileyLink
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#signal-loss" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#signal-loss">
     Signal Loss
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#rileylink-status-and-commands" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rileylink-status-and-commands">
     RileyLink Status and Commands
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#device" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#device">
     Device
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#personalize-device" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#personalize-device">
     Personalize Device
   </a>
-  
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/omnipod/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/omnipod/">
         Omnipod Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/medtronic/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/medtronic/">
         Medtronic Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/features/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/features/">
         Features
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" type="checkbox" id="__nav_5_14" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5_14">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" id="__nav_5_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_14">
           Loop 2: Set Up App
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Loop 2: Set Up App" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_14">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Loop 2: Set Up App" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_14">
+<span class="md-nav__icon md-icon"></span>
           Loop 2: Set Up App
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../overview/">
         Loop 2 Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/health/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/health/">
         Loop 2 Health Permissions
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_3" type="checkbox" id="__nav_5_14_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5_14_3">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_3" id="__nav_5_14_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_14_3">
           Loop 2 Add Pump
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Loop 2 Add Pump" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_14_3">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Loop 2 Add Pump" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_5_14_3">
+<span class="md-nav__icon md-icon"></span>
           Loop 2 Add Pump
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mdt-pump/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mdt-pump/">
         Loop 2 Add Medtronic
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../omnipod-pump/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../omnipod-pump/">
         Loop 2 Add Omnipod
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cgm/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cgm/">
         Loop 2 Add CGM
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configurations/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../configurations/">
         Loop 2 Configuration
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../displays/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../displays/">
         Loop 2 Displays
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pump-commands/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pump-commands/">
         Loop 2 Pump Settings
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
           Operate
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Operate" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Operate" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
           Operate
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop/open-loop/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop/open-loop/">
         Open Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop/close-loop/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop/close-loop/">
         Closed Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/carbs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/carbs/">
         Meal Entries
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/bolus/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/bolus/">
         Bolus
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/workout/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/workout/">
         Overrides
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/watch/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/watch/">
         Apple Watch
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/notifications/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/notifications/">
         Loop Notifications
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/premeal/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/premeal/">
         Pre-meal target
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/ice/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/ice/">
         Using ICE info
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/widget/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/widget/">
         iPhone widget
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop/looptips/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop/looptips/">
         Loop Tips
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" type="checkbox" id="__nav_6_12" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6_12">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" id="__nav_6_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_12">
           Algorithm
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Algorithm" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_12">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Algorithm" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_12">
+<span class="md-nav__icon md-icon"></span>
           Algorithm
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../algorithm/overview/">
         Algorithm Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/bolus/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../algorithm/bolus/">
         Bolus Recommendations
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/prediction/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../algorithm/prediction/">
         Glucose Prediction
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/temp-basal/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../algorithm/temp-basal/">
         Automated Adjustments
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
           Troubleshoot
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Troubleshoot" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Troubleshoot" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
           Troubleshoot
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/overview/">
         Troubleshooting Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/loop-crashing/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/loop-crashing/">
         Loop App crashes
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/yellow-red-loop/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/yellow-red-loop/">
         Red Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/pod-pairing/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/pod-pairing/">
         Pod Pairing Failures
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/omnipod-faults/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/omnipod-faults/">
         Omnipod Faults
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/pump-errors/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/pump-errors/">
         MDT Pump Errors
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/battery/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/battery/">
         MDT Pump Battery
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_8">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8">
           Version
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Version" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Version" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
           Version
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../version/overview-version/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../version/overview-version/">
         Version Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../version/releases/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../version/releases/">
         Loop Releases
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/code_customization/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/code_customization/">
         Customize your Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../version/simulator/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../version/simulator/">
         Simulator Build
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../version/development/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../version/development/">
         Loop Development
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/build-select-dev/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/build-select-dev/">
         Build Loop Dev
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../version/loopworkspace/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../version/loopworkspace/">
         LoopWorkspace
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_9">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9">
           Nightscout
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Nightscout" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nightscout" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
           Nightscout
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/overview/">
         Nightscout Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/new_user/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/new_user/">
         New Nightscout
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/update_user/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/update_user/">
         Nightscout with Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/troublehoot/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/troublehoot/">
         Nightscout Troubleshooting
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/remote-overrides/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/remote-overrides/">
         Remote Commands
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/ns_crossref/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/ns_crossref/">
         Nightscout Cross Ref
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_10">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10">
           FAQs
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="FAQs" data-md-level="1">
-        <label class="md-nav__title" for="__nav_10">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="FAQs" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
           FAQs
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/overview-faqs/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/overview-faqs/">
         FAQs Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/safety-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/safety-faqs/">
         Safety Tips
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/FAQs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/FAQs/">
         Loop FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/time-change/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/time-change/">
         Time Change FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/omnipod-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/omnipod-faqs/">
         Omnipod FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/cgm-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/cgm-faqs/">
         CGM FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/update-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/update-faqs/">
         Update/Rebuild Loop FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/rileylink-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/rileylink-faqs/">
         RileyLink FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/algorithm-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/algorithm-faqs/">
         Algorithm FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/apple-health-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/apple-health-faqs/">
         Apple Health FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/glossary/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/glossary/">
         Glossary
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../translate/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../translate/">
         Translation
       </a>
-    </li>
-  
-
-    
-  </ul>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Headers on this Page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#rileylink" class="md-nav__link">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rileylink">
     RileyLink
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#signal-loss" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#signal-loss">
     Signal Loss
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#rileylink-status-and-commands" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rileylink-status-and-commands">
     RileyLink Status and Commands
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#device" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#device">
     Device
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#personalize-device" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#personalize-device">
     Personalize Device
   </a>
-  
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                  <h1>RileyLink Display</h1>
-                
-                <h2 id="rileylink"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr><a class="headerlink" href="#rileylink" title="Anchor link to this Header on this Page">&para;</a></h2>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>RileyLink Display</h1>
+<h2 id="rileylink"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr><a class="headerlink" href="#rileylink" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>The <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> (or compatible device) screen is accessed by clicking on the image of your connected pump in Loop settings or the pump icon in the Heads Up Display to bring up the associated pump screen. From that screen, scroll down to the section labeled <code>DEVICES</code> to view the list of connected <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device(s) and tap on the name with a green slider that you want to display. An example is shown in the graphic below.</p>
-<p align="center"><img alt="rileylink display with good comms" src="../img/pod-rl-comms-good.svg" width="300" /></p>
-<h2 id="signal-loss">Signal Loss<a class="headerlink" href="#signal-loss" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p align="center"><img alt="rileylink display with good comms" src="../img/pod-rl-comms-good.svg" width="300"/></p>
+<h2 id="signal-loss">Signal Loss<a class="headerlink" href="#signal-loss" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>If there is a problem communicating with that <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device, tapping on the line will show out-of-date or missing information. Go to <a href="../../../troubleshooting/yellow-red-loop/#rileylink-compatible-device">Troubleshoot: Red Loop: <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Section</a> for suggestions.</p>
 <p>With <abbr title="Latest release with major updates">Loop 3</abbr></p>
 <ul>
 <li>The Pump Devices display will show the signal loss icon instead of reporting dB as shown in the graphic below. </li>
 <li>If the problem persists, you'll start to see some <a href="../../../loop-3/displays_v3/#error-messages">Error Messages</a> as well.</li>
 </ul>
-<p align="center"><img alt="rileylink display with bad comms" src="../img/pod-rl-comms-bad.svg" width="300" /></p>
-<h2 id="rileylink-status-and-commands"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Status and Commands<a class="headerlink" href="#rileylink-status-and-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p align="center"><img alt="rileylink display with bad comms" src="../img/pod-rl-comms-bad.svg" width="300"/></p>
+<h2 id="rileylink-status-and-commands"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Status and Commands<a class="headerlink" href="#rileylink-status-and-commands" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>Tapping on a name with a green slider takes you to the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Status and Commands screen for that device.</p>
 <p>The name at the top center is whatever you <a href="#personalize-device">named your <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device</a>. The <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> screen is the same regardless of the pump you are using.</p>
 <ul>
@@ -2297,7 +934,7 @@
 <li>For Loop 2.2.x - the displays are almost identical when the patch mentioned below the graphic is applied.</li>
 <li>The <a href="../../../faqs/rileylink-faqs/#firmware-version">firmware</a> displayed is specific to each device. </li>
 </ul>
-<p align="center"><img alt="example rileylink screens for riley, ema, orange for loop 3" src="../img/rl-comp-loop-3.svg" width="600" /></p>
+<p align="center"><img alt="example rileylink screens for riley, ema, orange for loop 3" src="../img/rl-comp-loop-3.svg" width="600"/></p>
 <div class="admonition warning">
 <p class="admonition-title">Patch Required for Loop 2.2.x</p>
 <p>Some devices have features not available with other devices.  With Loop 2.2.6 some features were added to the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">OrangeLink</abbr>, but there is a mismatch of reported hardware for some versions of <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">OrangeLink</abbr> firmware which prevents the Find Device row from showing up for OL Pro. The <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">EmaLink</abbr> extra features did not make it into the Loop v2.2.6 release.</p>
@@ -2305,7 +942,7 @@
 <li>With Loop 2.2.x, to see the displays shown in the graphics below, please follow instructions in the <a href="../../../faqs/rileylink-faqs/#emalink-and-orangelink-features"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">EmaLink</abbr> and <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">OrangeLink</abbr> Feature and Patch sections</a>.</li>
 </ul>
 </div>
-<h2 id="device">Device<a class="headerlink" href="#device" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="device">Device<a class="headerlink" href="#device" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>The lines under the Device section provide information on the device. The two most important lines are the Connection Status and Signal Strength.</p>
 <ul>
 <li>
@@ -2315,11 +952,11 @@
 <p>The Signal Strength is the strength of the Bluetooth signal between the iPhone and the device.  It is <strong>not</strong> the signal strength of the radio communications with the pump/pod.  </p>
 </li>
 <li>
-<p>The phone to device Signal Strenth is reported as a negative number so a -50&nbsp;dB signal is stronger than -80&nbsp;dB. As you move the device and iPhone closer/farther apart, you will be able to see the signal strength change. In a pinch, this can be used to help locate a lost device in the house or at the park after dark.</p>
+<p>The phone to device Signal Strenth is reported as a negative number so a -50 dB signal is stronger than -80 dB. As you move the device and iPhone closer/farther apart, you will be able to see the signal strength change. In a pinch, this can be used to help locate a lost device in the house or at the park after dark.</p>
 </li>
 </ul>
-<p align="center"><img alt="img/RL_bt.jpg" src="../img/RL_bt.jpg" width="350" /></p>
-<h2 id="personalize-device">Personalize Device<a class="headerlink" href="#personalize-device" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p align="center"><img alt="img/RL_bt.jpg" src="../img/RL_bt.jpg" width="350"/></p>
+<h2 id="personalize-device">Personalize Device<a class="headerlink" href="#personalize-device" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>As soon as you connect the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device initially - it is strongly encouraged that you rename it from the default name for that device, e.g., <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> or <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">OrangeLink</abbr> or <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">EmaLink</abbr>.</p>
 <p>Once you display the <a href="#rileylink-status-and-commands"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Status and Commands</a> screen:</p>
 <ul>
@@ -2332,94 +969,65 @@
 </ul>
 </li>
 </ul>
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
-        </div>
-        
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path></svg>
             Back to top
           </a>
-        
-      </main>
-      
-        
+</main>
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../services/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Optional: Services" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Optional: Services" class="md-footer__link md-footer__link--prev" href="../services/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
                 Previous
               </span>
               Optional: Services
             </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../../loop-3/omnipod/" class="md-footer__link md-footer__link--next" aria-label="Next: Omnipod Pump" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
+</div>
+</a>
+<a aria-label="Next: Omnipod Pump" class="md-footer__link md-footer__link--next" href="../../../loop-3/omnipod/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
                 Next
               </span>
               Omnipod Pump
             </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
         
         
           Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
             Material for MkDocs
           </a>
-        
-        
-      </div>
-      
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
-    
-    
-      <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
-      
-        <script src="../../../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-    
-  </body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
+<script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
 </html>

@@ -1,2549 +1,1124 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-      <link rel="icon" href="../../../loop-logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.3.6">
-    
-    
-      
-        <title>Glucose Prediction - LoopDocs</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a57b2b03.min.css">
-      
-        
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
-        
-      
-    
-    
-    
-      
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
-      
-    
-    
-    
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
-    
-      <link rel="stylesheet" href="../../../stylesheets/primary-color.css">
-    
-    
-      
+<!DOCTYPE html>
 
-
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
-  
-    
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-    
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#blood-glucose-prediction" class="md-skip">
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../loop-logo.png" rel="icon"/>
+<meta content="mkdocs-1.3.0, mkdocs-material-7.3.6" name="generator"/>
+<title>Glucose Prediction - LoopDocs</title>
+<link href="../../../assets/stylesheets/main.a57b2b03.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../stylesheets/primary-color.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="" dir="ltr">
+<script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#blood-glucose-prediction">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-      
-
-  
-
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
-      
-  <img src="../../../loop-logo.png" alt="logo">
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="LoopDocs" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="LoopDocs">
+<img alt="logo" src="../../../loop-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             LoopDocs
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               Glucose Prediction
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
-          
-            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
-            </label>
-          
-        
-      </form>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="" data-md-color-scheme="" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_3" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="" data-md-color-scheme="default" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_3" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
 <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list"></ol>
 </div>
-    
-    
-  </nav>
-  
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
       Home
     </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../intro/overview-intro/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../intro/overview-intro/">
         Intro
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../gh-actions/gh-overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../gh-actions/gh-overview/">
         Browser Build
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../build/overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../build/overview/">
         Mac Build
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../loop-3/loop-3-overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../loop-3/loop-3-overview/">
         Set Up
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../loop/open-loop/" class="md-tabs__link md-tabs__link--active">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../../loop/open-loop/">
         Operate
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../troubleshooting/overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../troubleshooting/overview/">
         Troubleshoot
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../version/overview-version/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../version/overview-version/">
         Version
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../nightscout/overview/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../nightscout/overview/">
         Nightscout
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../faqs/overview-faqs/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../faqs/overview-faqs/">
         FAQs
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../../translate/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../translate/">
       Translation
     </a>
-  </li>
-
-      
-    </ul>
-  </div>
+</li>
+</ul>
+</div>
 </nav>
-    
-  
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
-      
-  <img src="../../../loop-logo.png" alt="logo">
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="LoopDocs" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="LoopDocs">
+<img alt="logo" src="../../../loop-logo.png"/>
+</a>
     LoopDocs
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
         Home
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
           Intro
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Intro" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Intro" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
           Intro
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../intro/overview-intro/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../intro/overview-intro/">
         LoopDocs Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../intro/loopdocs-how-to/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../intro/loopdocs-how-to/">
         LoopDocs How-to
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../intro/requirements/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../intro/requirements/">
         Requirements
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step2/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step2/">
         Compatible iPhone/iPod
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step3/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step3/">
         Compatible Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step4/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step4/">
         Compatible CGM
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step5/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step5/">
         RileyLink
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step6/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step6/">
         Apple Developer Program
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step10/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step10/">
         Test Settings
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step11/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step11/">
         Loop Data
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step12/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step12/">
         Meet the Community
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
           Browser Build
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Browser Build" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Browser Build" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
           Browser Build
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-overview/">
         GitHub Build Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-first-time/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-first-time/">
         GitHub First-Time
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-deploy/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-deploy/">
         GitHub Deploy
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-update/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-update/">
         GitHub Update
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-errors/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-errors/">
         GitHub Errors
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../gh-actions/gh-other-apps/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../gh-actions/gh-other-apps/">
         Other Apps
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
           Mac Build
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Mac Build" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Mac Build" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
           Mac Build
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/overview/">
         Mac Build Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step1/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step1/">
         Compatible Computer
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step8/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step8/">
         Download Xcode
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step9/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step9/">
         Xcode Preferences
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/step14/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/step14/">
         Build Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/build_errors/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/build_errors/">
         Oh dear! Build errors?
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/updating/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/updating/">
         Updating/Rebuilding
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/build-free-loop/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/build-free-loop/">
         Build Free Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/testflight-xcode/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/testflight-xcode/">
         TestFlight from Xcode
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
           Set Up
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Set Up" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Set Up" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
           Set Up
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/loop-3-overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/loop-3-overview/">
         Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/onboarding/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/onboarding/">
         Onboarding
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/add-cgm/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/add-cgm/">
         Add CGM
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/add-pump/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/add-pump/">
         Add Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/displays_v3/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/displays_v3/">
         Displays
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/alert-notify/" class="md-nav__link">
-        Alerts & Notifications
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/alert-notify/">
+        Alerts &amp; Notifications
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/settings/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/settings/">
         Settings
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/therapy-settings/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/therapy-settings/">
         Therapy Settings
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-settings/services/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-settings/services/">
         Optional: Services
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-settings/rileylink/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-settings/rileylink/">
         RileyLink Display
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/omnipod/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/omnipod/">
         Omnipod Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/medtronic/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/medtronic/">
         Medtronic Pump
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../loop-3/features/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../loop-3/features/">
         Features
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" type="checkbox" id="__nav_5_14" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5_14">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" id="__nav_5_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_14">
           Loop 2: Set Up App
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Loop 2: Set Up App" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_14">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Loop 2: Set Up App" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_14">
+<span class="md-nav__icon md-icon"></span>
           Loop 2: Set Up App
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../overview/">
         Loop 2 Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/health/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/health/">
         Loop 2 Health Permissions
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_3" type="checkbox" id="__nav_5_14_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5_14_3">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_3" id="__nav_5_14_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_14_3">
           Loop 2 Add Pump
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Loop 2 Add Pump" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_14_3">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Loop 2 Add Pump" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_5_14_3">
+<span class="md-nav__icon md-icon"></span>
           Loop 2 Add Pump
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-settings/mdt-pump/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-settings/mdt-pump/">
         Loop 2 Add Medtronic
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-settings/omnipod-pump/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-settings/omnipod-pump/">
         Loop 2 Add Omnipod
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-settings/cgm/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-settings/cgm/">
         Loop 2 Add CGM
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-settings/configurations/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-settings/configurations/">
         Loop 2 Configuration
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-settings/displays/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-settings/displays/">
         Loop 2 Displays
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop-settings/pump-commands/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop-settings/pump-commands/">
         Loop 2 Pump Settings
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
           Operate
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Operate" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Operate" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
           Operate
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop/open-loop/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop/open-loop/">
         Open Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop/close-loop/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop/close-loop/">
         Closed Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/carbs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/carbs/">
         Meal Entries
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/bolus/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/bolus/">
         Bolus
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/workout/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/workout/">
         Overrides
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/watch/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/watch/">
         Apple Watch
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/notifications/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/notifications/">
         Loop Notifications
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/premeal/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/premeal/">
         Pre-meal target
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/ice/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/ice/">
         Using ICE info
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/widget/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/widget/">
         iPhone widget
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../loop/looptips/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../loop/looptips/">
         Loop Tips
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" type="checkbox" id="__nav_6_12" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6_12">
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" id="__nav_6_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_12">
           Algorithm
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Algorithm" data-md-level="2">
-        <label class="md-nav__title" for="__nav_6_12">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Algorithm" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_12">
+<span class="md-nav__icon md-icon"></span>
           Algorithm
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../overview/">
         Algorithm Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bolus/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../bolus/">
         Bolus Recommendations
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
           Glucose Prediction
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Glucose Prediction
       </a>
-      
-        
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+<nav aria-label="Headers on this Page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blood-glucose-prediction" class="md-nav__link">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blood-glucose-prediction">
     Blood Glucose Prediction
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
     Overview
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#insulin-effect" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insulin-effect">
     Insulin Effect
   </a>
-  
-    <nav class="md-nav" aria-label="Insulin Effect">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#insulin-effect-remaining" class="md-nav__link">
+<nav aria-label="Insulin Effect" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insulin-effect-remaining">
     Insulin Effect Remaining
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#active-insulin" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#active-insulin">
     Active Insulin
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#expected-change-in-blood-glucose" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#expected-change-in-blood-glucose">
     Expected Change in Blood Glucose
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#insulin-effect-on-blood-glucose" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insulin-effect-on-blood-glucose">
     Insulin Effect on Blood Glucose
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#scheduled-basal-rates" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#scheduled-basal-rates">
     Scheduled Basal Rates
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#total-insulin-effect-combining-boluses-and-temporary-basal-rates" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#total-insulin-effect-combining-boluses-and-temporary-basal-rates">
     Total Insulin Effect (combining boluses and temporary basal rates)
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#carbohydrate-effect" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#carbohydrate-effect">
     Carbohydrate Effect
   </a>
-  
-    <nav class="md-nav" aria-label="Carbohydrate Effect">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linear-carbohydrate-absorption" class="md-nav__link">
+<nav aria-label="Carbohydrate Effect" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-carbohydrate-absorption">
     Linear Carbohydrate Absorption
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamic-carbohydrate-absorption" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic-carbohydrate-absorption">
     Dynamic Carbohydrate Absorption
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#minimum-carbohydrate-absorption-rate" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#minimum-carbohydrate-absorption-rate">
     Minimum Carbohydrate Absorption Rate
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#modeling-remaining-active-carbohydrates" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modeling-remaining-active-carbohydrates">
     Modeling Remaining Active Carbohydrates
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#retrospective-correction-effect" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#retrospective-correction-effect">
     Retrospective Correction Effect
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#blood-glucose-momentum-effect" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blood-glucose-momentum-effect">
     Blood Glucose Momentum Effect
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#predicting-glucose" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#predicting-glucose">
     Predicting Glucose
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#algorithm-section-menu" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#algorithm-section-menu">
     Algorithm Section Menu
   </a>
-  
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../temp-basal/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../temp-basal/">
         Automated Adjustments
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
           Troubleshoot
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Troubleshoot" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Troubleshoot" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
           Troubleshoot
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/overview/">
         Troubleshooting Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/loop-crashing/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/loop-crashing/">
         Loop App crashes
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/yellow-red-loop/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/yellow-red-loop/">
         Red Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/pod-pairing/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/pod-pairing/">
         Pod Pairing Failures
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/omnipod-faults/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/omnipod-faults/">
         Omnipod Faults
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/pump-errors/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/pump-errors/">
         MDT Pump Errors
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../features/battery/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../features/battery/">
         MDT Pump Battery
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_8">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8">
           Version
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Version" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Version" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
           Version
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../version/overview-version/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../version/overview-version/">
         Version Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../version/releases/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../version/releases/">
         Loop Releases
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/code_customization/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/code_customization/">
         Customize your Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../version/simulator/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../version/simulator/">
         Simulator Build
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../version/development/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../version/development/">
         Loop Development
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../build/build-select-dev/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../build/build-select-dev/">
         Build Loop Dev
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../version/loopworkspace/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../version/loopworkspace/">
         LoopWorkspace
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_9">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9">
           Nightscout
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Nightscout" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nightscout" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
           Nightscout
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/overview/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/overview/">
         Nightscout Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/new_user/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/new_user/">
         New Nightscout
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/update_user/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/update_user/">
         Nightscout with Loop
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/troublehoot/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/troublehoot/">
         Nightscout Troubleshooting
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/remote-overrides/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/remote-overrides/">
         Remote Commands
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/ns_crossref/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../nightscout/ns_crossref/">
         Nightscout Cross Ref
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_10">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10">
           FAQs
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="FAQs" data-md-level="1">
-        <label class="md-nav__title" for="__nav_10">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="FAQs" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
           FAQs
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/overview-faqs/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/overview-faqs/">
         FAQs Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/safety-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/safety-faqs/">
         Safety Tips
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/FAQs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/FAQs/">
         Loop FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../troubleshooting/time-change/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../troubleshooting/time-change/">
         Time Change FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/omnipod-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/omnipod-faqs/">
         Omnipod FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/cgm-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/cgm-faqs/">
         CGM FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/update-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/update-faqs/">
         Update/Rebuild Loop FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/rileylink-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/rileylink-faqs/">
         RileyLink FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/algorithm-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/algorithm-faqs/">
         Algorithm FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/apple-health-faqs/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/apple-health-faqs/">
         Apple Health FAQs
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../faqs/glossary/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../faqs/glossary/">
         Glossary
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../translate/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../translate/">
         Translation
       </a>
-    </li>
-  
-
-    
-  </ul>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Headers on this Page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blood-glucose-prediction" class="md-nav__link">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blood-glucose-prediction">
     Blood Glucose Prediction
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
     Overview
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#insulin-effect" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insulin-effect">
     Insulin Effect
   </a>
-  
-    <nav class="md-nav" aria-label="Insulin Effect">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#insulin-effect-remaining" class="md-nav__link">
+<nav aria-label="Insulin Effect" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insulin-effect-remaining">
     Insulin Effect Remaining
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#active-insulin" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#active-insulin">
     Active Insulin
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#expected-change-in-blood-glucose" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#expected-change-in-blood-glucose">
     Expected Change in Blood Glucose
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#insulin-effect-on-blood-glucose" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#insulin-effect-on-blood-glucose">
     Insulin Effect on Blood Glucose
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#scheduled-basal-rates" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#scheduled-basal-rates">
     Scheduled Basal Rates
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#total-insulin-effect-combining-boluses-and-temporary-basal-rates" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#total-insulin-effect-combining-boluses-and-temporary-basal-rates">
     Total Insulin Effect (combining boluses and temporary basal rates)
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#carbohydrate-effect" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#carbohydrate-effect">
     Carbohydrate Effect
   </a>
-  
-    <nav class="md-nav" aria-label="Carbohydrate Effect">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linear-carbohydrate-absorption" class="md-nav__link">
+<nav aria-label="Carbohydrate Effect" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-carbohydrate-absorption">
     Linear Carbohydrate Absorption
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamic-carbohydrate-absorption" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic-carbohydrate-absorption">
     Dynamic Carbohydrate Absorption
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#minimum-carbohydrate-absorption-rate" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#minimum-carbohydrate-absorption-rate">
     Minimum Carbohydrate Absorption Rate
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#modeling-remaining-active-carbohydrates" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modeling-remaining-active-carbohydrates">
     Modeling Remaining Active Carbohydrates
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#retrospective-correction-effect" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#retrospective-correction-effect">
     Retrospective Correction Effect
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#blood-glucose-momentum-effect" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blood-glucose-momentum-effect">
     Blood Glucose Momentum Effect
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#predicting-glucose" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#predicting-glucose">
     Predicting Glucose
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#algorithm-section-menu" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#algorithm-section-menu">
     Algorithm Section Menu
   </a>
-  
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                  <h1>Glucose Prediction</h1>
-                
-                <h2 id="blood-glucose-prediction">Blood Glucose Prediction<a class="headerlink" href="#blood-glucose-prediction" title="Anchor link to this Header on this Page">&para;</a></h2>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Glucose Prediction</h1>
+<h2 id="blood-glucose-prediction">Blood Glucose Prediction<a class="headerlink" href="#blood-glucose-prediction" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>Loop uses an algorithm to maintain blood glucose in a correction range by predicting the contributions from four individual effects (insulin, carbohydrates, retrospective correction, and blood glucose momentum) at any time <em>t</em> to recommend temporary basal rate corrections and boluses.</p>
 <div class="arithmatex">\[ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] \]</div>
 <p>You can see the individual contributions of these effects by tapping on the predicted blood glucose chart on Loop's status screen. Loop updates this blood glucose prediction every five minutes when a new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value has been received and the pump's status has been updated.</p>
 <p>Just a note, this whole section is fairly technical. While perhaps not the most interesting topic for many readers, if you are seeking the detailed view of the Loop algorithm this discussion is quite useful. If you want a more surface understanding, the overview and temporary basal recommendations sections alone are probably sufficient.</p>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>Before we delve into each of the four individual effects, a general overview figure may be a helpful start. There are four effects summed together to produce Loop's final predicted blood glucose curve. Each individual effect, along with their combined effect, is illustrated in the figure below. Insulin, from boluses and temporary basals, will have a decreasing effect on the prediction. Carbohydrates will have an increasing effect on the prediction. Blood glucose momentum effect can have a positive or negative effect, depending on how blood glucose is trending in the most recent <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> values. As shown in the example below, blood glucose is trending slightly upwards at the time of the prediction. Therefore, the blood glucose momentum effect’s contribution is pulling up the overall prediction from the other three effects for a short time. Retrospective correction is having a decreasing effect on the prediction, indicating that the recent rise in blood glucose was not as large as had been previously predicted by Loop in the recent past.</p>
-<p><img alt="combined effects curve" src="../img/combined_effects.png" /></p>
+<p><img alt="combined effects curve" src="../img/combined_effects.png"/></p>
 <p>The sections below provide detailed information on each of the four contributions.</p>
-<h2 id="insulin-effect">Insulin Effect<a class="headerlink" href="#insulin-effect" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="insulin-effect">Insulin Effect<a class="headerlink" href="#insulin-effect" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>Most traditional pump users and caregivers are already familiar with the concept of an insulin activity curve, where the insulin’s effect is time-dependent. Insulin takes a little while to affect blood glucose. The insulin effect typically peaks around one hour after giving insulin and then gradually decays.</p>
-<p><img alt="insulin activity curve" src="../img/insulin_activity_curve.png" /></p>
+<p><img alt="insulin activity curve" src="../img/insulin_activity_curve.png"/></p>
 <p>Loop 2.x provides users with two different classes of insulin models (i.e., an exponential model and the Walsh model). All of the exponential models have an insulin activity duration of 6 hours, whereas the insulin activity duration is customizable for the Walsh model. The rapid-acting and Fiasp insulin activity curves are modeled as exponential curves that match the shape of the insulin activity curves from insulin labeling, and as observed in both adults and children.</p>
 <p><abbr title="Latest release with major updates">Loop 3</abbr> drops the Walsh model and, by default, does not include the concept of child versus adult for "rapid" acting insulin, i.e., Humalog, Novalog and Apidra. <abbr title="Latest release with major updates">Loop 3</abbr> adds the concept of non-pump insulin to account for injections or inhaled insulin. The Afrezza model is added as a non-pump insulin. The Insulin Type is selected in the Pump Settings screen. All insulin types are modeled by selecting parameters in the exponential model. See also <a href="../../../build/code_customization/#exponential-insulin-curve">Exponential Insulin Curve</a> on the Code Customization page.</p>
-<p><img alt="insulin models" src="../img/insulin_models.png" /></p>
+<p><img alt="insulin models" src="../img/insulin_models.png"/></p>
 <p>The amount of insulin effect remaining, or percent of remaining active insulin after an insulin bolus is delivered, is modeled mathematically in Loop with an exponential decay curve.</p>
-<h3 id="insulin-effect-remaining">Insulin Effect Remaining<a class="headerlink" href="#insulin-effect-remaining" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><img alt="insulin percent remaining" src="../img/insulin_percent_remaining.png" /></p>
+<h3 id="insulin-effect-remaining">Insulin Effect Remaining<a class="headerlink" href="#insulin-effect-remaining" title="Anchor link to this Header on this Page">¶</a></h3>
+<p><img alt="insulin percent remaining" src="../img/insulin_percent_remaining.png"/></p>
 <p>If a user’s insulin sensitivity factor (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr>) is 50 mg/dL per 1 unit of insulin and the user gives 2 units of insulin, then the user’s blood glucose would be expected to drop 100 mg/dL within the 6 hours following the insulin delivery. This insulin effect can be visualized in several different ways: the expected active insulin, expected drop in blood glucose every 5 minutes after delivery, and the expected cumulative drop in blood glucose. The figures below use the Rapid Acting - Adult insulin model in Loop.</p>
-<h3 id="active-insulin">Active Insulin<a class="headerlink" href="#active-insulin" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="active-insulin">Active Insulin<a class="headerlink" href="#active-insulin" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>This figure shows that 2 units of insulin are given initially, and the corresponding active insulin (i.e., insulin on board <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>) decays according to the curve below.</p>
-<p><img alt="insulin remaining example" src="../img/insulin_remaining_example.png" /></p>
+<p><img alt="insulin remaining example" src="../img/insulin_remaining_example.png"/></p>
 <p>The active insulin at any time is the product of original insulin delivered and the percent of insulin activity remaining. Knowing the expected active insulin over the next 6 hours, and the insulin sensitivity factor (50 mg/dL, in this case), Loop can calculate the expected drop in blood glucose from that dose of insulin as shown in the figure below.</p>
-<p><img alt="bg drop from 2 units" src="../img/bg_drop.png" /></p>
+<p><img alt="bg drop from 2 units" src="../img/bg_drop.png"/></p>
 <p>NOTE: <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> is also a function of time, which means if the user’s scheduled <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> changes during the insulin activity time, it will change the expected drop in blood glucose due to the insulin effect.</p>
-<h3 id="expected-change-in-blood-glucose">Expected Change in Blood Glucose<a class="headerlink" href="#expected-change-in-blood-glucose" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="expected-change-in-blood-glucose">Expected Change in Blood Glucose<a class="headerlink" href="#expected-change-in-blood-glucose" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>Lastly, taking the first derivative (i.e., the rate of change) of the cumulative drop in the blood glucose curve yields the expected change in blood glucose over the insulin activity duration. For each dose of insulin given, Loop calculates the expected discrete drop in blood glucose at each 5-minute period for the insulin activity duration, as shown below.</p>
-<p><img alt="rate of bg change" src="../img/derivative.png" /></p>
-<h3 id="insulin-effect-on-blood-glucose">Insulin Effect on Blood Glucose<a class="headerlink" href="#insulin-effect-on-blood-glucose" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><img alt="rate of bg change" src="../img/derivative.png"/></p>
+<h3 id="insulin-effect-on-blood-glucose">Insulin Effect on Blood Glucose<a class="headerlink" href="#insulin-effect-on-blood-glucose" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>For this example, assuming a user’s blood glucose was 205 mg/dL at the time of insulin delivery, Loop would predict a drop in blood glucose due to the two units delivered at 12 pm as shown in the figure below.</p>
-<p><img alt="two unit example" src="../img/two_units.png" /></p>
-<h3 id="scheduled-basal-rates">Scheduled Basal Rates<a class="headerlink" href="#scheduled-basal-rates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><img alt="two unit example" src="../img/two_units.png"/></p>
+<h3 id="scheduled-basal-rates">Scheduled Basal Rates<a class="headerlink" href="#scheduled-basal-rates" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>In traditional basal/bolus pump therapy, basal rates are set to accommodate the user's endogenous glucose production (EGP) that causes blood glucose to rise. If a user's basal settings were exactly right in traditional pump therapy, the user would have perfectly flat blood glucose all day, all other factors being equal.</p>
 <p>In reality, people with type 1 diabetes, and their caregivers, know that basal settings are never exactly right. Every day is a little different, and a myriad of factors that affect blood glucose (e.g., including stress, hormones, sleep, etc.) may affect insulin needs. Some people have different basal profiles to accommodate these variations. Some people regularly tune and adjust their basal rates, and/or do so at their endocrinology clinic visits.</p>
 <p>Since the Loop algorithm assumes that the user-set basal rates are correct, it calculates the effect of insulin relative to scheduled basal rates. If basal rates are not entirely correct, Loop can compensate a bit through the retrospective correction and blood glucose momentum effects, discussed later in this page.</p>
 <p>The insulin delivery chart below displays a bar-graph history of the temporary basal rates enacted by Loop. The display is relative to the scheduled basal rates entered in the Loop settings. A rate displayed in this chart as +0 would indicate that no temporary basal rate was set and that the basal rate being delivered was the scheduled basal rate. Positive values indicate a temporary basal rate was set above the scheduled basal rate (i.e., more insulin delivered), and negative values indicate that a temporary basal rate was set below the scheduled basal rate (i.e., less insulin delivered).</p>
-<p><img alt="Loop's temp basal chart" src="../img/temp_basal_chart.png" /></p>
+<p><img alt="Loop's temp basal chart" src="../img/temp_basal_chart.png"/></p>
 <p>For example, if the user’s scheduled basal rate is 1 U/hr, and Loop gives a temporary basal rate of 3 U/hr, then it will calculate the expected drop in blood glucose due to +2 U/hr of insulin.</p>
 <p>Similarly if Loop sets a temporary basal rate of 0 U/hr for 1 hour, then the insulin effect will also be relative to the current scheduled basal rate of 1 U/hr, and Loop would predict the user’s blood glucose to increase by the amount of change from -1 U/hr of insulin. If the user’s <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> is 50 mg/dL, then Loop would predict blood glucose to rise 50 mg/dL over the insulin activity duration (6 hours).</p>
 <p>Here is a real-world example where Loop is setting many temporary basal rates over the course of the day. The light orange bars are the temporary basal rates delivered and the solid orange line is the active insulin at any given time during the day.  </p>
-<p><img alt="Loop's temp basal chart over day" src="../img/temp_basal_day.png" /></p>
-<h3 id="total-insulin-effect-combining-boluses-and-temporary-basal-rates">Total Insulin Effect (combining boluses and temporary basal rates)<a class="headerlink" href="#total-insulin-effect-combining-boluses-and-temporary-basal-rates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><img alt="Loop's temp basal chart over day" src="../img/temp_basal_day.png"/></p>
+<h3 id="total-insulin-effect-combining-boluses-and-temporary-basal-rates">Total Insulin Effect (combining boluses and temporary basal rates)<a class="headerlink" href="#total-insulin-effect-combining-boluses-and-temporary-basal-rates" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>Loop will combine or stack the active insulin of all the discrete (individual) boluses and temporary basal rates over the past insulin activity duration (6 hours), to predict the active insulin for the next 6 hours. As demonstrated above, using the predicted active insulin Loop can predict the blood glucose drop over the next 6 hours.</p>
 <p>Lastly, the combined effect of bolus and basal insulin are visually represented for the user by Loop’s insulin charts:</p>
-<p><img alt="Loop's iob and temp basals" src="../img/insulin_delivery_iob.jpg" /></p>
+<p><img alt="Loop's iob and temp basals" src="../img/insulin_delivery_iob.jpg"/></p>
 <p>The insulin effect can be expressed mathematically:</p>
 <div class="arithmatex">\[ \Delta BG_{I}[t] = ISF[t] \times IA[t] \]</div>
 <p>where BG is the expected change in blood glucose with the units (mg/dL/5min), <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> is the insulin sensitivity factor (mg/dL/U) at time t, and IA is the insulin activity (U/5min) at time <em>t</em>. Insulin activity can also be thought of as a velocity or rate of change in blood glucose due to insulin. The insulin activity accounts for the EGP and any active insulin from basals and boluses.</p>
-<h2 id="carbohydrate-effect">Carbohydrate Effect<a class="headerlink" href="#carbohydrate-effect" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="carbohydrate-effect">Carbohydrate Effect<a class="headerlink" href="#carbohydrate-effect" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>Carbohydrates will raise blood glucose, but the speed and degree to which they impact blood glucose are dependent on the type of carbohydrates. High glycemic index (GI) carbohydrates will raise blood glucose quickly over a shorter time, whereas low GI foods will raise blood glucose more slowly over a longer period. Foods like candy, juice, and fruits tend to be high GI foods, while pizza, burritos, and quesadillas are usually lower GI foods. Digestion issues like gastroparesis may also contribute to variations in carbohydrate absorption.</p>
 <p>Because carbohydrate absorption can be quite variable, Loop has a model that dynamically adjusts the expected remaining time of carbohydrate absorption. To start with, Loop allows the user to input a rough guess of how long they think the food or drink will take to absorb. The user’s guess is used as a middle of the road estimate, and Loop’s algorithm will shorten or lengthen it based on observed blood glucose change.</p>
 <p>For all carbohydrate entries, Loop assumes carbohydrates will not start absorbing for 10 minutes, so there is a 10-minute period of no absorption that is modeled prior to the absorption modeled in the next sections.</p>
-<h3 id="linear-carbohydrate-absorption">Linear Carbohydrate Absorption<a class="headerlink" href="#linear-carbohydrate-absorption" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="linear-carbohydrate-absorption">Linear Carbohydrate Absorption<a class="headerlink" href="#linear-carbohydrate-absorption" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>Loop takes a conservative view of how fast the remaining carbohydrates will absorb.  Because it is safer to under-deliver insulin for long-duration meals, Loop starts out at a minimum rate of absorption based on extending the entered carbohydrate duration by 50%. Said another way, the minimum carbohydrate absorption rate is the total number of grams of carbohydrates over 150% of the entered duration.</p>
 <p>Using this initial minimum absorption rate, the remaining carbohydrates are modeled to absorb linearly. For example, if the user enters a 72g carbohydrate meal, and selects an estimated absorption time of 4 hours, then Loop will forecast a 12g/hr absorption rate for the next 6 hours. This rate can be termed the minimum absorption rate, which can be represented mathematically as:</p>
 <div class="arithmatex">\[ MAR[t] = \frac{CA[t]}{1.5 \times d} \]</div>
 <p>where MAR is the minimum absorption rate (g/hr), CA is the number of carbohydrates (g) and d is the expected duration (hr) it will take the carbohydrates to absorb.</p>
-<h3 id="dynamic-carbohydrate-absorption">Dynamic Carbohydrate Absorption<a class="headerlink" href="#dynamic-carbohydrate-absorption" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="dynamic-carbohydrate-absorption">Dynamic Carbohydrate Absorption<a class="headerlink" href="#dynamic-carbohydrate-absorption" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>The linear model above is modulated by an additional calculation that uses recently observed blood glucose data to estimate how fast carbohydrates have been absorbing. The expected change in blood glucose due to insulin effects alone is compared to the actual observed changes in blood glucose. This difference is termed the insulin counteraction effect (<abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr>):</p>
 <div class="arithmatex">\[ ICE[t] = OA[t] + IA[t] \]</div>
 <p>where, <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> (mg/dL/5 min) is the insulin counteraction effect, OA is the observed activity (mg/dL/5min) or observed change in blood glucose at time <em>t</em>, and IA is the insulin activity (mg/dL/5min).</p>
@@ -2555,7 +1130,7 @@
 <div class="arithmatex">\[ MAR[t = 12pm] = \frac{ 72g }{ 1.5 \times 4hr } = 12 \frac{ g }{ hr } = 1 \frac{ g }{ 5min } \]</div>
 <div class="arithmatex">\[ MAR[t = 3pm] = \frac{ 72g }{ 1.5 \times 2hr } = 6 \frac{ g }{ hr } = 0.5 \frac{ g }{ 5min } \]</div>
 <p>Examining just the simple linear carbohydrate effect of these two meals:</p>
-<p><img alt="combined meal entries" src="../img/mixed_meals.png" /></p>
+<p><img alt="combined meal entries" src="../img/mixed_meals.png"/></p>
 <p>If we further expand this example, by assuming the following at 4pm:</p>
 <ul>
 <li>that there are still carbohydrates left to be absorbed from both meals,</li>
@@ -2568,12 +1143,12 @@
 <div class="arithmatex">\[ \text{Proportion to Meal1} = \frac{MAR_{meal1}}{MAR_{meal1} + MAR_{meal2}} = \frac{12}{12+6}=\frac{2}{3} = 66.6\% \]</div>
 <div class="arithmatex">\[ \text{Proportion to Meal2} = \frac{MAR_{meal2}}{MAR_{meal1} + MAR_{meal2}} = \frac{6}{12+6}=\frac{1}{3} = 33.3\% \]</div>
 <p>resulting in 2g of absorption being attributed to Meal 1 and 1g attributed to Meal 2.</p>
-<h3 id="minimum-carbohydrate-absorption-rate">Minimum Carbohydrate Absorption Rate<a class="headerlink" href="#minimum-carbohydrate-absorption-rate" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="minimum-carbohydrate-absorption-rate">Minimum Carbohydrate Absorption Rate<a class="headerlink" href="#minimum-carbohydrate-absorption-rate" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>If the estimated carbohydrate absorption of a meal entry is less than what would have been absorbed using the minimum absorption rate, then the minimum absorption rate is used instead. This is to ensure that meal entries expire in a reasonable amount of time.</p>
-<h3 id="modeling-remaining-active-carbohydrates">Modeling Remaining Active Carbohydrates<a class="headerlink" href="#modeling-remaining-active-carbohydrates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="modeling-remaining-active-carbohydrates">Modeling Remaining Active Carbohydrates<a class="headerlink" href="#modeling-remaining-active-carbohydrates" title="Anchor link to this Header on this Page">¶</a></h3>
 <p>After the estimated absorbed carbohydrates have been subtracted from each meal entry, the remaining carbohydrates (for each entry) are then forecasted to decay or absorb using the minimum absorption rate. Loop uses this forecast to estimate the effect (active carbohydrates, or carbohydrate activity) of the remaining carbohydrates. The carbohydrate effect can be expressed mathematically using the terms described above:</p>
 <div class="arithmatex">\[ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t]}{CIR[t]} \]</div>
-<h2 id="retrospective-correction-effect">Retrospective Correction Effect<a class="headerlink" href="#retrospective-correction-effect" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="retrospective-correction-effect">Retrospective Correction Effect<a class="headerlink" href="#retrospective-correction-effect" title="Anchor link to this Header on this Page">¶</a></h2>
 <div class="admonition note">
 <p>The retrospective correction effect allows the Loop algorithm to account for effects that are not modeled with the insulin and carbohydrate effects, by comparing historical predictions to the actual blood glucose.</p>
 </div>
@@ -2657,8 +1232,8 @@
 </tbody>
 </table>
 <p>Here’s an example below that shows the retrospective correction effect when the BG<em>vel</em> over the past 30 minutes was -10mg/dL/5min.</p>
-<p><img alt="bg retrospective graph example" src="../img/bgrc_graphic.png" /></p>
-<h2 id="blood-glucose-momentum-effect">Blood Glucose Momentum Effect<a class="headerlink" href="#blood-glucose-momentum-effect" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><img alt="bg retrospective graph example" src="../img/bgrc_graphic.png"/></p>
+<h2 id="blood-glucose-momentum-effect">Blood Glucose Momentum Effect<a class="headerlink" href="#blood-glucose-momentum-effect" title="Anchor link to this Header on this Page">¶</a></h2>
 <div class="admonition note">
 <p>The blood glucose momentum effect incorporates a prediction component based on the assumption that recent blood glucose trends tend to persist for a short period of time. In other words, the best predictor of the future is the recent past.</p>
 </div>
@@ -2720,16 +1295,16 @@
 </tbody>
 </table>
 <p>This example is illustrated in the figure below.</p>
-<p><img alt="blood glucose momentum graphic" src="../img/momentum_graphic.png" /></p>
+<p><img alt="blood glucose momentum graphic" src="../img/momentum_graphic.png"/></p>
 <p>It is also worth noting that Loop will not calculate blood glucose momentum in instances where <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data is not continuous (i.e., must have at least three continuous <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings to draw the best-fit straight line trend). It also will not calculate blood glucose momentum when the last three <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings contain any calibration points, as those may not be representative of true blood glucose momentum trends.</p>
-<h2 id="predicting-glucose">Predicting Glucose<a class="headerlink" href="#predicting-glucose" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="predicting-glucose">Predicting Glucose<a class="headerlink" href="#predicting-glucose" title="Anchor link to this Header on this Page">¶</a></h2>
 <p>As described in the momentum effect section, the momentum effect is blended with the insulin, carbohydrate, and retrospective correction effects to predict the change in blood glucose:</p>
 <div class="arithmatex">\[ \Delta BG[t] = \Delta BG_{M}[t] + \left(\Delta BG_{I}[t] + \Delta BG_{C}[t]+ \Delta BG_{RC}[t] \right) \times min\left(\frac{t-5}{15}, 1\right) \]</div>
 <p>Lastly, the forecast or predicted blood glucose BG at time <em>t</em> is the current blood glucose BG plus the sum of all blood glucose effects BG over the time interval [t5, t]:</p>
 <div class="arithmatex">\[ \widehat{BG}[t] = BG[t_{o}] + \sum_{i=5}^{t} \Delta BG[t_{o+i}] \]</div>
 <p>Each individual effect along with the combined effects are illustrated in the figure below. As shown, blood glucose is trending slightly upwards at the time of the prediction. Therefore, the blood glucose momentum effect’s contribution is pulling up the overall prediction from the other three effects for a short time. Retrospective correction is having a dampening effect on the prediction, indicating that the recent rise in blood glucose was not as great as had been previously predicted in the recent past.</p>
-<p><img alt="combined effects curve" src="../img/combined_effects.png" /></p>
-<h2 id="algorithm-section-menu">Algorithm Section Menu<a class="headerlink" href="#algorithm-section-menu" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><img alt="combined effects curve" src="../img/combined_effects.png"/></p>
+<h2 id="algorithm-section-menu">Algorithm Section Menu<a class="headerlink" href="#algorithm-section-menu" title="Anchor link to this Header on this Page">¶</a></h2>
 <ul>
 <li><a href="../overview/">Algorithm Overview</a><ul>
 <li><a href="../bolus/">Bolus Recommendations</a></li>
@@ -2738,94 +1313,65 @@
 </ul>
 </li>
 </ul>
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
-        </div>
-        
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path></svg>
             Back to top
           </a>
-        
-      </main>
-      
-        
+</main>
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../bolus/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bolus Recommendations" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Bolus Recommendations" class="md-footer__link md-footer__link--prev" href="../bolus/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
                 Previous
               </span>
               Bolus Recommendations
             </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../temp-basal/" class="md-footer__link md-footer__link--next" aria-label="Next: Automated Adjustments" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
+</div>
+</a>
+<a aria-label="Next: Automated Adjustments" class="md-footer__link md-footer__link--next" href="../temp-basal/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
                 Next
               </span>
               Automated Adjustments
             </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
         
         
           Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
             Material for MkDocs
           </a>
-        
-        
-      </div>
-      
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
-    
-    
-      <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
-      
-        <script src="../../../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-    
-  </body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
+<script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
 </html>
