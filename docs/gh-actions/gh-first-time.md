@@ -47,6 +47,23 @@ This is only available with Loop 3 and Loop development branches.
 
 ## Prerequisites
 
+!!! tip "Read and Review"
+    Building with GitHub using a browser requires you to do a series of steps in order with no mistakes. But once you've done it once, subsequent builds are trivial.
+
+    At each point in the process
+
+    * Check to make sure what you are doing matches the instructions
+    * Check to make sure you did not skip a step
+    * Notice - the actions show up alphabetically but they have to be done in A, C, B order
+        * Add Identifiers (and do some more stuff), Create Certificates, Build Loop
+
+    Different people approach this differently. Choose your method to achieve success:
+
+    * Print the summary section above, go through the page sequentially doing each step and check off each step as you go
+    * Read this whole page, then review it and read the [Most Common Mistakes](gh-errors.md#most-common-mistakes) section, then start doing each step
+    * Figure out your method and use it
+
+
 **Loop 3 requires iOS 15.1 or higher, no reason not to update to latest iOS**
 
 ### Build Loop
@@ -876,7 +893,20 @@ When you have already built Loop with Xcode, the Identifier names will not match
 
 The identifier that is associated with the Loop identifier cannot be deleted if it is already in the App Store but all others can. If you attempt to delete the XC Loop identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. Same for other identifiers (if you build a bunch of Apps). If a Bundle ID has ever been associated with an app in the App store, you cannot delete the Identifer.
 
-To make it easy when configuring the identifiers, go through and delete as many as you can and then:
+To make it easy when configuring the identifiers, go through and delete as many as you can.
+
+* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
+* Use the graphic below as a guide to removing identifiers
+* It is OK to delete an identifier even if it does have your correct TEAMID
+    * If you try to delete the Loop identifier with your TEAMID, it will refuse, don't worry, just keep going
+* Note - this graphic indicates where on this page you can find your TEAMID
+    * If you notice an identifier has a value embedded in it that does not have your TEAMID, then delete it if you can and immediately [Update Secrets](gh-update.md#update-secrets) with your correct TEAMID
+
+![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
+{align="center"}
+
+
+After you have deleted identifiers, then follow these steps:
 
 * Run Action: [Add Identifiers](#add-identifiers) to add Identifiers with the documented short names
 * If you did not complete [Find Loop Identifier](#find-loop-identifier) step, do it now
