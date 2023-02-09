@@ -863,9 +863,9 @@ You are configuring a private capability for your family using an Internal Testi
 The [GitHub Deployment](gh-deploy.md) walks you through the steps to deploy to a phone.
 
 
-## Background Material
+## Extra Steps
 
-Most people won't need the information on the rest of this page. It is here as background material.
+Most people won't need the information on the rest of this page.
 
 ### Already Have LoopWorkspace
 
@@ -900,13 +900,15 @@ To make it easy when configuring the identifiers, go through and delete as many 
 * It is OK to delete an identifier even if it does have your correct TEAMID
     * If you try to delete the Loop identifier with your TEAMID, it will refuse, don't worry, just keep going
 * Note - this graphic indicates where on this page you can find your TEAMID
-    * If you notice an identifier has a value embedded in it that does not have your TEAMID, then delete it if you can and immediately [Update Secrets](gh-update.md#update-secrets) with your correct TEAMID
+    * If you notice an identifier with a value embedded in it that does not have your TEAMID, then delete it if you can and [Update Secrets](gh-update.md#update-secrets) with your correct TEAMID
+    * If you try to delete a Loop identifier that does not have your TEAMID, but you already added to the app store, it will refuse, don't worry, just keep going
 
 ![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
 {align="center"}
 
+If coming here from the GitHub Errors page because you enter the wrong TEAMID in Secrets - return to that page once you've deleted as many identifiers as you can: [Errors: Wrong TEAMID in Secrets](gh-errors.md#wrong-teamid-in-secrets).
 
-After you have deleted identifiers, then follow these steps:
+If you were just trying to clean up the identifiers, then follow these steps:
 
 * Run Action: [Add Identifiers](#add-identifiers) to add Identifiers with the documented short names
 * If you did not complete [Find Loop Identifier](#find-loop-identifier) step, do it now

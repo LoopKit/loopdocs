@@ -12,13 +12,13 @@ These are some of the most common errors to date.
     * Each secret must be spelled exactly the way it is presented in the instructions
 * Save your Secrets, as directed, but use a smart editor instead of a text-only editor
     * It only takes one letter to be changed from lower-case to upper-case by your smart editor to ruin your day
-    * The alpha-numeric values used for GH_PAT, FASTLANE_ISSUER_ID and FASTLANE_KEY are case sensitive
+    * The alpha-numeric values used for GH_PAT, FASTLANE_ISSUER_ID and FASTLANE_KEY contain both upper and lower-case characters and all the values are case-sensitive
 * When entering TEAMID, make a spelling error in the value - please copy and paste instead of typing what you think you see
     * If you type in your TEAMID as 0123498989 when it is really 012349B989, you may not notice
         * Hint: what should have been a "B", got typed as an "8"
     * The incorrect TEAMID will show up in your identifiers as the Bundle ID but . . .
-        * You will not be able to Build Loop because your TEAMID does not match the Bundle ID
-* Run the Actions in alphabetical order as they appear on the Actions screen instead of Add, Create, Build
+        * You will not be able to Create Certificates or Build Loop because your TEAMID does not match the Bundle ID
+* Run the Actions in alphabetical order as they appear on the Actions screen instead of Add, Create, Build - the build step will fail if you have not first successfully created the certificates
 
 ## Find Your Error
 
@@ -53,7 +53,7 @@ Click on the top link to view the highlighted display for that failure as shown 
     * Open the zip and look at the file called 1_ACTION.txt file, where ACTION is replaced with "identifiers", "certificates" or "build", depending on which action failed
 * Once you open the text file with a text editor, search for the string(s) listed below to see if it has been documented
     * If you identify the error, fix it and try again
-    * Sometimes you need to do all 3 steps again: Add Identifiers, (extra steps), Create Certificates and then Build Loop -> it does not hurt to repeat a step even if it was already successful
+    * Sometimes you need to do all 3 Actions again: Add Identifiers, (extra steps), Create Certificates and then Build Loop -> it does not hurt to repeat a step even if it was already successful
     * The extra steps between Add Identifiers and Create Certificate are required in some cases - so go on and review the identifiers to make sure they have the correct App Group with your TEAMID and that the Loop identifier has Time Sensititve Notifications enabled
 * Still stuck?
     * Post the downloaded zip file or txt file on zulipchat along with what you've tried so far
@@ -126,7 +126,7 @@ Follow these steps - best to open each link below in a separate tab so you can r
 
 1. Run Action: [First Time: Add Identifiers](gh-first-time.md#add-identifiers) again
 
-1. Follow all the steps in this section with the Correct TEAMID [First Time: Configure Identifiers for Loop](gh-first-time.md#configure-identifiers-for-loop) but when you get to the [First Time: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect), you need to take a slightly different action
+1. Follow all the steps in this section with the Correct TEAMID [First Time: Configure Identifiers for Loop](gh-first-time.md#configure-identifiers-for-loop) but when you get to the [First Time: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect), you need to return to this page and follow the instructions below to remove the app and add a new one.
 
 The first time through, you created an app with a `Bundle ID` that does NOT include your TEAMID.
 
