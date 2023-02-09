@@ -134,10 +134,10 @@ nav:
     - 'Meal Entries': 'operation/features/carbs.md'
     - 'Bolus': 'operation/features/bolus.md'
     - 'Overrides': 'operation/features/workout.md'
+    - 'Apple Watch': 'operation/features/watch.md'
     - 'Loop Notifications': 'operation/features/notifications.md'
     - 'Pre-meal target': 'operation/features/premeal.md'
     - 'Using ICE info': 'operation/features/ice.md'
-    - 'Apple Watch': 'operation/features/watch.md'
     - 'iPhone widget': 'operation/features/widget.md'
     - Loop Tips: 'operation/loop/looptips.md'
     - Algorithm:
