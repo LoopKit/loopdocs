@@ -78,7 +78,7 @@ Copy the token using the copy icon and save it along with your other secret sett
 ![regenerate fastlane access token on github](img/gh-token-updated.png){width="600"}
 {align="center"}
 
-Skip ahead to [Update Secrets with New GitHub Token](#update-secrets-with-new-github-token).
+Skip ahead to [Update Secrets](#update-secrets).
 
 ### GitHub Token Email
 
@@ -97,7 +97,7 @@ Email warning:
 
 Click on the "regenerate" link to be taken to your GitHub account (you might need to follow 2-factor authentication to get access). If your Expiration is set at 30 days, as shown, you should select 90 days to match the TestFlight expiration rhythm. That's how often you need to rebuild Loop using GitHub actions. The email acts as a handy reminder. Click on the green Regenerate token button.
 
-As soon as you regenerate, you cannot build again until you [Update Secrets with New GitHub Token](#update-secrets-with-new-github-token). Your current app in TestFlight is **not** affected, but might may be close to expiring. So finish the job while you are thinking about it.
+As soon as you regenerate, you cannot build again until you [Update Secrets](#update-secrets). Your current app in TestFlight is **not** affected, but might may be close to expiring. So finish the job while you are thinking about it.
 
 ![phone screen instructing me to renew](img/regenerate-token-screen.png){width="300"}
 {align="center"}
@@ -107,7 +107,9 @@ The next screen appears with your token (mine is not shown for security reasons 
 ![phone screen after hitting the regenerate button](img/after-regeneration.png){width="300"}
 {align="center"}
 
-### Update Secrets with New GitHub Token
+### Update Secrets
+
+This example is for updating GH_PAT in the Secrets for your repository, but the same method can be applied when changing any Secret.
 
 This can be done with the GitHub Personal Access Token still in your paste buffer - but to be safe, save the token with your other secret settings. If you lose track, just [Regenerate GitHub Token](#regenerate-github-token) again.
 
