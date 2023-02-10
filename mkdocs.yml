@@ -27,7 +27,7 @@ theme:
           scheme: slate
           toggle:
             icon: material/brightness-4
-            name: Switch to system preference
+            name: Switch to light mode
 
 # repo_url: https://github.com/LoopKit/Loop
 
@@ -63,10 +63,16 @@ extra_javascript:
     - https://polyfill.io/v3/polyfill.min.js?features=es6
     - https://unpkg.com/mermaid/dist/mermaid.min.js
     - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    - javascripts/refresh_on_toggle_dark_light.js
 
 plugins:
     - search
-    - mermaid2
+    - mermaid2:
+        arguments:
+          # for mkdocs-material <8.0.0
+          theme: |
+            ^(JSON.parse(window.localStorage.getItem(__prefix('__palette'))).index == 1) ? 'dark' : 'light'
+
 nav:
 - Home: 'index.md'
 - Intro:
