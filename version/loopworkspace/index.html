@@ -1,1081 +1,2524 @@
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../build/build-select-dev/">
+      
+      
+        <link rel="next" href="../../nightscout/overview/">
+      
+      <link rel="icon" href="../../loop-logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
+    
+    
+      
+        <title>LoopWorkspace - LoopDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
 
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="../../loop-logo.png" rel="icon"/>
-<meta content="mkdocs-1.3.0, mkdocs-material-7.3.6" name="generator"/>
-<title>LoopWorkspace - LoopDocs</title>
-<link href="../../assets/stylesheets/main.a57b2b03.min.css" rel="stylesheet"/>
-<link href="../../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
-<link href="../../stylesheets/extra.css" rel="stylesheet"/>
-<link href="../../stylesheets/primary-color.css" rel="stylesheet"/>
-</head>
-<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
-<script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" for="__drawer"></label>
-<div data-md-component="skip">
-<a class="md-skip" href="#loop-workspace">
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#loop-workspace" class="md-skip">
           Skip to content
         </a>
-</div>
-<div data-md-component="announce">
-</div>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
 <header class="md-header md-header--lifted" data-md-component="header">
-<nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="LoopDocs" class="md-header__button md-logo" data-md-component="logo" href="../.." title="LoopDocs">
-<img alt="logo" src="../../loop-logo.png"/>
-</a>
-<label class="md-header__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
-</label>
-<div class="md-header__title" data-md-component="header-title">
-<div class="md-header__ellipsis">
-<div class="md-header__topic">
-<span class="md-ellipsis">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+      
+  <img src="../../loop-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             LoopDocs
           </span>
-</div>
-<div class="md-header__topic" data-md-component="header-topic">
-<span class="md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               LoopWorkspace
             
           </span>
-</div>
-</div>
-</div>
-<form class="md-header__option" data-md-component="palette">
-<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
-<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"></path></svg>
-</label>
-<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
-<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"></path></svg>
-</label>
-</form>
-<label class="md-header__button md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
-</label>
-<div class="md-search" data-md-component="search" role="dialog">
-<label class="md-search__overlay" for="__search"></label>
-<div class="md-search__inner" role="search">
-<form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
-<label class="md-search__icon md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</label>
-<nav aria-label="Search" class="md-search__options">
-<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
-</button>
-</nav>
-<div class="md-search__suggest" data-md-component="search-suggest"></div>
-</form>
-<div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="">
-<div class="md-search-result" data-md-component="search-result">
-<div class="md-search-result__meta">
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
             Initializing search
           </div>
-<ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</nav>
-<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
-<div class="md-tabs__inner md-grid">
-<ul class="md-tabs__list">
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../..">
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../intro/overview-intro/">
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../intro/overview-intro/" class="md-tabs__link">
         Intro
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../gh-actions/gh-overview/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../gh-actions/gh-overview/" class="md-tabs__link">
         Browser Build
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../build/overview/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../build/overview/" class="md-tabs__link">
         Mac Build
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../loop-3/loop-3-overview/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
         Set Up
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../operation/loop/open-loop/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../operation/loop/open-loop/" class="md-tabs__link">
         Operate
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../troubleshooting/overview/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../troubleshooting/overview/" class="md-tabs__link">
         Troubleshoot
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../overview-version/">
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../overview-version/" class="md-tabs__link md-tabs__link--active">
         Version
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../nightscout/overview/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../nightscout/overview/" class="md-tabs__link">
         Nightscout
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../faqs/overview-faqs/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faqs/overview-faqs/" class="md-tabs__link">
         FAQs
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../translate/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../translate/" class="md-tabs__link">
       Translation
     </a>
-</li>
-</ul>
-</div>
+  </li>
+
+      
+    </ul>
+  </div>
 </nav>
+    
+  
 </header>
-<div class="md-container" data-md-component="container">
-<main class="md-main" data-md-component="main">
-<div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
-<label class="md-nav__title" for="__drawer">
-<a aria-label="LoopDocs" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="LoopDocs">
-<img alt="logo" src="../../loop-logo.png"/>
-</a>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+      
+  <img src="../../loop-logo.png" alt="logo">
+
+    </a>
     LoopDocs
   </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../..">
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
           Intro
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Intro" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_2">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
           Intro
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../intro/overview-intro/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/overview-intro/" class="md-nav__link">
         LoopDocs Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../intro/loopdocs-how-to/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/loopdocs-how-to/" class="md-nav__link">
         LoopDocs How-to
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../intro/requirements/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/requirements/" class="md-nav__link">
         Requirements
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step2/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step2/" class="md-nav__link">
         Compatible iPhone/iPod
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step3/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step3/" class="md-nav__link">
         Compatible Pump
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step4/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step4/" class="md-nav__link">
         Compatible CGM
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step5/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step5/" class="md-nav__link">
         RileyLink
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step6/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step6/" class="md-nav__link">
         Apple Developer Program
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step10/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step10/" class="md-nav__link">
         Test Settings
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step11/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step11/" class="md-nav__link">
         Loop Data
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step12/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step12/" class="md-nav__link">
         Meet the Community
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
           Browser Build
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Browser Build" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_3">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
           Browser Build
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-overview/" class="md-nav__link">
         GitHub Build Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-first-time/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
         GitHub First-Time
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-deploy/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
         GitHub Deploy
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-update/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-update/" class="md-nav__link">
         GitHub Update
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-errors/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-errors/" class="md-nav__link">
         GitHub Errors
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-other-apps/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-other-apps/" class="md-nav__link">
         Other Apps
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
           Mac Build
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Mac Build" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
           Mac Build
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/overview/" class="md-nav__link">
         Mac Build Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step1/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step1/" class="md-nav__link">
         Compatible Computer
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step8/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step8/" class="md-nav__link">
         Download Xcode
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step9/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step9/" class="md-nav__link">
         Xcode Preferences
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step14/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step14/" class="md-nav__link">
         Build Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/build_errors/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build_errors/" class="md-nav__link">
         Oh dear! Build errors?
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/updating/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/updating/" class="md-nav__link">
         Updating/Rebuilding
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/build-free-loop/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-free-loop/" class="md-nav__link">
         Build Free Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/testflight-xcode/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/testflight-xcode/" class="md-nav__link">
         TestFlight from Xcode
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
           Set Up
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Set Up" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_5">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
           Set Up
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/loop-3-overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-nav__link">
         Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/onboarding/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/onboarding/" class="md-nav__link">
         Onboarding
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/add-cgm/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-cgm/" class="md-nav__link">
         Add CGM
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/add-pump/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-pump/" class="md-nav__link">
         Add Pump
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/displays_v3/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/displays_v3/" class="md-nav__link">
         Displays
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/alert-notify/">
-        Alerts &amp; Notifications
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/alert-notify/" class="md-nav__link">
+        Alerts & Notifications
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/settings/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/settings/" class="md-nav__link">
         Settings
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/therapy-settings/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/therapy-settings/" class="md-nav__link">
         Therapy Settings
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/services/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/services/" class="md-nav__link">
         Optional: Services
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/rileylink/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
         RileyLink Display
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/omnipod/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/omnipod/" class="md-nav__link">
         Omnipod Pump
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/medtronic/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/medtronic/" class="md-nav__link">
         Medtronic Pump
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/features/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/features/" class="md-nav__link">
         Features
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" id="__nav_5_14" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_14">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_14" id="__nav_5_14_label" tabindex="0">
           Loop 2: Set Up App
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Loop 2: Set Up App" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_5_14">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_14">
+          <span class="md-nav__icon md-icon"></span>
           Loop 2: Set Up App
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/overview/" class="md-nav__link">
         Loop 2 Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/health/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/health/" class="md-nav__link">
         Loop 2 Health Permissions
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_3" id="__nav_5_14_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_14_3">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_14_3" id="__nav_5_14_3_label" tabindex="0">
           Loop 2 Add Pump
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Loop 2 Add Pump" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_5_14_3">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_14_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_14_3">
+          <span class="md-nav__icon md-icon"></span>
           Loop 2 Add Pump
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/mdt-pump/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
         Loop 2 Add Medtronic
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/omnipod-pump/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
         Loop 2 Add Omnipod
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/cgm/">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
         Loop 2 Add CGM
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/configurations/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
         Loop 2 Configuration
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/displays/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/displays/" class="md-nav__link">
         Loop 2 Displays
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/pump-commands/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
         Loop 2 Pump Settings
       </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
           Operate
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Operate" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_6">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
           Operate
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop/open-loop/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/open-loop/" class="md-nav__link">
         Open Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop/close-loop/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/close-loop/" class="md-nav__link">
         Closed Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/carbs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/carbs/" class="md-nav__link">
         Meal Entries
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/bolus/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/bolus/" class="md-nav__link">
         Bolus
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/workout/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/workout/" class="md-nav__link">
         Overrides
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/watch/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/watch/" class="md-nav__link">
         Apple Watch
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/notifications/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/notifications/" class="md-nav__link">
         Loop Notifications
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/premeal/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/premeal/" class="md-nav__link">
         Pre-meal target
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/ice/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/ice/" class="md-nav__link">
         Using ICE info
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/widget/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/widget/" class="md-nav__link">
         iPhone widget
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop/looptips/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/looptips/" class="md-nav__link">
         Loop Tips
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" id="__nav_6_12" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6_12">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_12" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_12" id="__nav_6_12_label" tabindex="0">
           Algorithm
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Algorithm" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_6_12">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_12">
+          <span class="md-nav__icon md-icon"></span>
           Algorithm
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/algorithm/overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/overview/" class="md-nav__link">
         Algorithm Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/algorithm/bolus/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/bolus/" class="md-nav__link">
         Bolus Recommendations
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/algorithm/prediction/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/prediction/" class="md-nav__link">
         Glucose Prediction
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/algorithm/temp-basal/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/temp-basal/" class="md-nav__link">
         Automated Adjustments
       </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
           Troubleshoot
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Troubleshoot" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_7">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
           Troubleshoot
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../troubleshooting/overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/overview/" class="md-nav__link">
         Troubleshooting Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../troubleshooting/loop-crashing/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/loop-crashing/" class="md-nav__link">
         Loop App crashes
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../troubleshooting/yellow-red-loop/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/yellow-red-loop/" class="md-nav__link">
         Red Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../troubleshooting/pod-pairing/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/pod-pairing/" class="md-nav__link">
         Pod Pairing Failures
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../troubleshooting/omnipod-faults/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/omnipod-faults/" class="md-nav__link">
         Omnipod Faults
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../troubleshooting/pump-errors/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/pump-errors/" class="md-nav__link">
         MDT Pump Errors
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/battery/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/battery/" class="md-nav__link">
         MDT Pump Battery
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
-<label class="md-nav__link" for="__nav_8">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
           Version
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Version" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_8">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
           Version
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../overview-version/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview-version/" class="md-nav__link">
         Version Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../releases/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releases/" class="md-nav__link">
         Loop Releases
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/code_customization/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/code_customization/" class="md-nav__link">
         Customize your Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../simulator/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simulator/" class="md-nav__link">
         Simulator Build
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../development/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
         Loop Development
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/build-select-dev/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-select-dev/" class="md-nav__link">
         Build Loop Dev
       </a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
           LoopWorkspace
           <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         LoopWorkspace
       </a>
-<nav aria-label="Headers on this Page" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#loop-workspace">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loop-workspace" class="md-nav__link">
     Loop Workspace
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#new-way-to-sign">
+      
+        <li class="md-nav__item">
+  <a href="#new-way-to-sign" class="md-nav__link">
     New Way to Sign
   </a>
-<nav aria-label="New Way to Sign" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#what-is-git">
+  
+    <nav class="md-nav" aria-label="New Way to Sign">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-git" class="md-nav__link">
     What is git?
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#what-is-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#what-is-loopworkspace" class="md-nav__link">
     What is LoopWorkspace?
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#clone-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#clone-loopworkspace" class="md-nav__link">
     Clone LoopWorkspace
   </a>
-<nav aria-label="Clone LoopWorkspace" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#start-xcode-using-command-line">
+  
+    <nav class="md-nav" aria-label="Clone LoopWorkspace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-xcode-using-command-line" class="md-nav__link">
     Start Xcode using command line
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#start-xcode-using-finder">
+        
+          <li class="md-nav__item">
+  <a href="#start-xcode-using-finder" class="md-nav__link">
     Start Xcode using Finder
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#building-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#building-loopworkspace" class="md-nav__link">
     Building LoopWorkspace
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#updating-loop-using-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#updating-loop-using-loopworkspace" class="md-nav__link">
     Updating Loop using LoopWorkspace
   </a>
-<nav aria-label="Updating Loop using LoopWorkspace" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#updating-loop-to-a-specific-loopworkspace-commit">
+  
+    <nav class="md-nav" aria-label="Updating Loop using LoopWorkspace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updating-loop-to-a-specific-loopworkspace-commit" class="md-nav__link">
     Updating Loop to a Specific LoopWorkspace commit
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#build-following-update">
+        
+          <li class="md-nav__item">
+  <a href="#build-following-update" class="md-nav__link">
     Build Following Update
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#compare-your-local-clone-to-loopworkspace">
+        
+          <li class="md-nav__item">
+  <a href="#compare-your-local-clone-to-loopworkspace" class="md-nav__link">
     Compare your local clone to LoopWorkspace
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#loopworkspace-unchanged">
+        
+          <li class="md-nav__item">
+  <a href="#loopworkspace-unchanged" class="md-nav__link">
     LoopWorkspace Unchanged
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#loopworkspace-updated">
+        
+          <li class="md-nav__item">
+  <a href="#loopworkspace-updated" class="md-nav__link">
     LoopWorkspace Updated
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update-locally">
+        
+          <li class="md-nav__item">
+  <a href="#update-locally" class="md-nav__link">
     Update Locally
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#local-modifications-conflict">
+        
+          <li class="md-nav__item">
+  <a href="#local-modifications-conflict" class="md-nav__link">
     Local Modifications Conflict
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#checking-out-different-branches-within-a-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#checking-out-different-branches-within-a-loopworkspace" class="md-nav__link">
     Checking out different branches within a LoopWorkspace
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#non-loopkit-clones">
+      
+        <li class="md-nav__item">
+  <a href="#non-loopkit-clones" class="md-nav__link">
     Non-LoopKit clones
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#pushing-commits-from-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#pushing-commits-from-loopworkspace" class="md-nav__link">
     Pushing commits from LoopWorkspace
   </a>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" id="__nav_9" type="checkbox"/>
-<label class="md-nav__link" for="__nav_9">
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
           Nightscout
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Nightscout" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_9">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
           Nightscout
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/overview/" class="md-nav__link">
         Nightscout Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/new_user/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/new_user/" class="md-nav__link">
         New Nightscout
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/update_user/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/update_user/" class="md-nav__link">
         Nightscout with Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/troublehoot/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/troublehoot/" class="md-nav__link">
         Nightscout Troubleshooting
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/remote-overrides/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-overrides/" class="md-nav__link">
         Remote Commands
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/ns_crossref/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/ns_crossref/" class="md-nav__link">
         Nightscout Cross Ref
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" id="__nav_10" type="checkbox"/>
-<label class="md-nav__link" for="__nav_10">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
           FAQs
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="FAQs" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_10">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
           FAQs
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/overview-faqs/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/overview-faqs/" class="md-nav__link">
         FAQs Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/safety-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/safety-faqs/" class="md-nav__link">
         Safety Tips
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/FAQs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/FAQs/" class="md-nav__link">
         Loop FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../troubleshooting/time-change/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/time-change/" class="md-nav__link">
         Time Change FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/omnipod-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/omnipod-faqs/" class="md-nav__link">
         Omnipod FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/cgm-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/cgm-faqs/" class="md-nav__link">
         CGM FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/update-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/update-faqs/" class="md-nav__link">
         Update/Rebuild Loop FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/rileylink-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/rileylink-faqs/" class="md-nav__link">
         RileyLink FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/algorithm-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/algorithm-faqs/" class="md-nav__link">
         Algorithm FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/apple-health-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/apple-health-faqs/" class="md-nav__link">
         Apple Health FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/glossary/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/glossary/" class="md-nav__link">
         Glossary
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../translate/">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../translate/" class="md-nav__link">
         Translation
       </a>
-</li>
-</ul>
+    </li>
+  
+
+    
+  </ul>
 </nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Headers on this Page" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#loop-workspace">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loop-workspace" class="md-nav__link">
     Loop Workspace
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#new-way-to-sign">
+      
+        <li class="md-nav__item">
+  <a href="#new-way-to-sign" class="md-nav__link">
     New Way to Sign
   </a>
-<nav aria-label="New Way to Sign" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#what-is-git">
+  
+    <nav class="md-nav" aria-label="New Way to Sign">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-git" class="md-nav__link">
     What is git?
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#what-is-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#what-is-loopworkspace" class="md-nav__link">
     What is LoopWorkspace?
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#clone-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#clone-loopworkspace" class="md-nav__link">
     Clone LoopWorkspace
   </a>
-<nav aria-label="Clone LoopWorkspace" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#start-xcode-using-command-line">
+  
+    <nav class="md-nav" aria-label="Clone LoopWorkspace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-xcode-using-command-line" class="md-nav__link">
     Start Xcode using command line
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#start-xcode-using-finder">
+        
+          <li class="md-nav__item">
+  <a href="#start-xcode-using-finder" class="md-nav__link">
     Start Xcode using Finder
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#building-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#building-loopworkspace" class="md-nav__link">
     Building LoopWorkspace
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#updating-loop-using-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#updating-loop-using-loopworkspace" class="md-nav__link">
     Updating Loop using LoopWorkspace
   </a>
-<nav aria-label="Updating Loop using LoopWorkspace" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#updating-loop-to-a-specific-loopworkspace-commit">
+  
+    <nav class="md-nav" aria-label="Updating Loop using LoopWorkspace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updating-loop-to-a-specific-loopworkspace-commit" class="md-nav__link">
     Updating Loop to a Specific LoopWorkspace commit
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#build-following-update">
+        
+          <li class="md-nav__item">
+  <a href="#build-following-update" class="md-nav__link">
     Build Following Update
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#compare-your-local-clone-to-loopworkspace">
+        
+          <li class="md-nav__item">
+  <a href="#compare-your-local-clone-to-loopworkspace" class="md-nav__link">
     Compare your local clone to LoopWorkspace
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#loopworkspace-unchanged">
+        
+          <li class="md-nav__item">
+  <a href="#loopworkspace-unchanged" class="md-nav__link">
     LoopWorkspace Unchanged
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#loopworkspace-updated">
+        
+          <li class="md-nav__item">
+  <a href="#loopworkspace-updated" class="md-nav__link">
     LoopWorkspace Updated
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#update-locally">
+        
+          <li class="md-nav__item">
+  <a href="#update-locally" class="md-nav__link">
     Update Locally
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#local-modifications-conflict">
+        
+          <li class="md-nav__item">
+  <a href="#local-modifications-conflict" class="md-nav__link">
     Local Modifications Conflict
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#checking-out-different-branches-within-a-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#checking-out-different-branches-within-a-loopworkspace" class="md-nav__link">
     Checking out different branches within a LoopWorkspace
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#non-loopkit-clones">
+      
+        <li class="md-nav__item">
+  <a href="#non-loopkit-clones" class="md-nav__link">
     Non-LoopKit clones
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#pushing-commits-from-loopworkspace">
+      
+        <li class="md-nav__item">
+  <a href="#pushing-commits-from-loopworkspace" class="md-nav__link">
     Pushing commits from LoopWorkspace
   </a>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</div>
-</div>
-</div>
-<div class="md-content" data-md-component="content">
-<article class="md-content__inner md-typeset">
-<h1>LoopWorkspace</h1>
-<h2 id="loop-workspace">Loop <abbr title="a grouping of several repositories into a complete package">Workspace</abbr><a class="headerlink" href="#loop-workspace" title="Anchor link to this Header on this Page">¶</a></h2>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>LoopWorkspace</h1>
+
+<h2 id="loop-workspace">Loop <abbr title="a grouping of several repositories into a complete package">Workspace</abbr><a class="headerlink" href="#loop-workspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This page is for the "advanced" user. It is a short introduction for folks interested in testing code before it is released, or contributing to that code.</p>
 <p>If you wandered over here meaning to build the latest Loop release, the rest of this page might be interesting but you should not follow any of the steps. Head back over to <a href="../../build/step14/">Build Loop App</a> when you are ready to build the app.</p>
 <div class="admonition info">
@@ -1091,9 +2534,9 @@
 </ul>
 </div>
 <p>The typical user who wants to build Loop does not need to know the level of detail on the rest of this page.</p>
-<h2 id="new-way-to-sign">New Way to Sign<a class="headerlink" href="#new-way-to-sign" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="new-way-to-sign">New Way to Sign<a class="headerlink" href="#new-way-to-sign" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>One of the recent changes to LoopWorkspace is the addition of the file: <code>LoopConfigOverride.xcconfig</code> to the LoopWorkspace folder. The contents of this file are shown in the graphic below.</p>
-<p align="center"><img alt="LoopConfigOverride file with two lines highlighted" src="../img/loopconfigoverride-file.svg" width="750"/></p>
+<p align="center"><img alt="LoopConfigOverride file with two lines highlighted" src="../img/loopconfigoverride-file.svg" width="750" /></p>
 <p>There are several ways to use this to sign the targets automatically.</p>
 <ol>
 <li>Edit the line highlighted by the red rectangle to remove the comment marks (<code>//</code>) from the beginning of the line and replace the indicated TeamID (UY678SP37Q) with your own <a href="#team-id">Team ID</a></li>
@@ -1106,16 +2549,16 @@
 </li>
 <li>For users of the <a href="../../build/step14/#build-select-script"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a>, the script automatically generates the copy of  <code>LoopConfigOverride.xcconfig</code> in the ~/Downloads/BuildLoop folder the first time the script is run, guides the user into adding their TeamID and then, in subsequent downloads, uses that previously created file</li>
 </ol>
-<p align="center"><img alt="Directory structure for multiple clones using a single LoopConfigOverride file" src="../img/loopconfigoverride-dir.svg" width="750"/></p>
-<h4 id="team-id">Team ID<a class="headerlink" href="#team-id" title="Anchor link to this Header on this Page">¶</a></h4>
+<p align="center"><img alt="Directory structure for multiple clones using a single LoopConfigOverride file" src="../img/loopconfigoverride-dir.svg" width="750" /></p>
+<h4 id="team-id">Team ID<a class="headerlink" href="#team-id" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Your Apple Developer ID is the 10-character Team ID
   found on the Membership page after logging into your account at:
    <a href="https://developer.apple.com/account/#!/membership">https://developer.apple.com/account/#!/membership</a>.</p>
-<h3 id="what-is-git">What is <abbr title="a tool for version control">git</abbr>?<a class="headerlink" href="#what-is-git" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="what-is-git">What is <abbr title="a tool for version control">git</abbr>?<a class="headerlink" href="#what-is-git" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Git is a system of "distributed version control" that allows remotely (as in not located in same place) collaborating people to work on one project and still track their changes to the same place. For example, if I sent 5 people one document to proof-read at the same time...it is quite possible that the edits I will get back from those 5 people would conflict with each other. Bob may have entirely deleted a sentence while Mary would have added words to that sentence. Git lets these remotely collaborating people deal with "resolving conflict" between versions more easily and merging suggestions (pull requests) into a coordinated space.</p>
 <p>So, in using <abbr title="a tool for version control">git</abbr>, we can do things with "<abbr title="a tool for version control">git</abbr> commands". Like "Hey <abbr title="a tool for version control">git</abbr>...make me an exact copy of that guy's work over there." or "Hey <abbr title="a tool for version control">git</abbr>, I'd like to compare my version of this page with Joe's version of the same page." Or using my old cookbook analogy..."Hey <abbr title="a tool for version control">git</abbr>, I'd like to start a new cookbook called Italian Desserts."</p>
 <p>But yes, <abbr title="a tool for version control">git</abbr> commands take awhile to properly use. And they are not plain english friendly. </p>
-<h2 id="what-is-loopworkspace">What is LoopWorkspace?<a class="headerlink" href="#what-is-loopworkspace" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="what-is-loopworkspace">What is LoopWorkspace?<a class="headerlink" href="#what-is-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is more information in <a href="../development/#what-are-branches">Loop Development</a> that is not repeated here.</p>
 <p>The important fact for this discussion on LoopWorkspace is that Loop developers own an account in <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> called <a href="https://github.com/LoopKit">LoopKit</a>.  Within that account, the developers have several "repositories" that support Loop in particular. A <abbr title="contains project files and each file's revision history">repository</abbr> is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop <abbr title="contains project files and each file's revision history">repository</abbr> code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.</p>
 <p>When you build Loop from LoopWorkspace, each of those repositories is downloaded to your computer.  This is slower than the old zip-download as far as downloading Loop - but it is much faster when you build Loop because all the files are already on your computer.</p>
@@ -1137,8 +2580,8 @@
 </ul>
 </div>
 <p>The <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for the LoopKit submodule is highlighted by the red rectangle in the graphic below. Advanced users testing the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> (or other branches or forks) need to know how to tell if their current download is up-to-date.</p>
-<p align="center"><img alt="LoopWorkspace repository showing the SHA-1 for each submodule" src="../img/loopworkspace-submodule-sha.svg" width="750"/></p>
-<h2 id="clone-loopworkspace">Clone LoopWorkspace<a class="headerlink" href="#clone-loopworkspace" title="Anchor link to this Header on this Page">¶</a></h2>
+<p align="center"><img alt="LoopWorkspace repository showing the SHA-1 for each submodule" src="../img/loopworkspace-submodule-sha.svg" width="750" /></p>
+<h2 id="clone-loopworkspace">Clone LoopWorkspace<a class="headerlink" href="#clone-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>To get that LoopWorkspace code to your computer, first open a terminal. Make sure your current path name does not have any embedded spaces.  If it does, you will get errors on your build.</p>
 <p>If you don't know how to open a terminal and navigate to a directory, reconsider whether you are ready for this page.</p>
 <p>You need to use a "<abbr title="a tool for version control">git</abbr> <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>" command LIKE THIS (but not exactly the same...you're going to edit the "<abbr title="version of code within a single repository or workspace repository">branch</abbr>-name" part in there):</p>
@@ -1147,20 +2590,20 @@
 <p>So, you will need to edit that "<abbr title="version of code within a single repository or workspace repository">branch</abbr>-name" before using the command so that you are getting started with the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want. If you want to <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> from a different <abbr title="a copy of code in a github repository other than the original">fork</abbr>, the LoopKit will be replaced with the name of the github site for the <abbr title="a copy of code in a github repository other than the original">fork</abbr>. For example, to test dev (which is under development and has some cool new architecture and features), you would copy/paste:</p>
 <div class="highlight"><pre><span></span><code>git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
 </code></pre></div>
-<h3 id="start-xcode-using-command-line">Start <abbr title="program used to build an app">Xcode</abbr> using command line<a class="headerlink" href="#start-xcode-using-command-line" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="start-xcode-using-command-line">Start <abbr title="program used to build an app">Xcode</abbr> using command line<a class="headerlink" href="#start-xcode-using-command-line" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want to start the build from the command line, enter the following 2 lines into the terminal and skip ahead to <a href="#building-loopworkspace">Building LoopWorkspace</a></p>
 <div class="highlight"><pre><span></span><code>cd LoopWorkspace
 xed .
 </code></pre></div>
 <p>Remember the warning - if you build dev on your phone from Loop master, it should work fine. Going backwards, please delete the app from you phone and enter all your settings again to return to master.</p>
-<h3 id="start-xcode-using-finder">Start <abbr title="program used to build an app">Xcode</abbr> using <abbr title="graphical folder and file display on Mac">Finder</abbr><a class="headerlink" href="#start-xcode-using-finder" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="start-xcode-using-finder">Start <abbr title="program used to build an app">Xcode</abbr> using <abbr title="graphical folder and file display on Mac">Finder</abbr><a class="headerlink" href="#start-xcode-using-finder" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The cloned version of the LoopWorkspace will go into the current directory in the <abbr title="interface for entering commands to the computer">Terminal</abbr> app when you executed the command. <abbr title="interface for entering commands to the computer">Terminal</abbr> app opens in your User account home directory by default when you first open it. Unless you changed to a different directory, check your home directory for the LoopWorkspace folder.</p>
 <p>How can you find your home directory?</p>
 <ol>
 <li>In <abbr title="interface for entering commands to the computer">Terminal</abbr>, if you use <code>cd</code> that will take you there automatically.</li>
 <li>In <abbr title="graphical folder and file display on Mac">Finder</abbr>, shift-command-H will open your "home" folder.</li>
 </ol>
-<p align="center"><img alt="img/root-finder.png" src="../img/root-finder.png" width="750"/></p>
+<p align="center"><img alt="img/root-finder.png" src="../img/root-finder.png" width="750" /></p>
 <p>There are a lot of cloned things in this home directory that involve Loop. You may have fewer...but be aware, you can always delete and reclone if you are in doubt or confused. You can also set up a special directory to hold the cloned code - just make sure there are no embedded spaces in the full path name.</p>
 <p>For this graphic, the cloned LoopWorkspace is in the home directory.</p>
 <ol>
@@ -1168,8 +2611,8 @@ xed .
 <li>Open the LoopWorkspace folder</li>
 <li>Search for and double-click on the <code>Loop.xcworkspace</code> folder - this automatically opens the <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> in <abbr title="program used to build an app">Xcode</abbr></li>
 </ol>
-<p align="center"><img alt="img/workspace-file.png" src="../img/workspace-file.png" width="550"/></p>
-<h2 id="building-loopworkspace">Building LoopWorkspace<a class="headerlink" href="#building-loopworkspace" title="Anchor link to this Header on this Page">¶</a></h2>
+<p align="center"><img alt="img/workspace-file.png" src="../img/workspace-file.png" width="550" /></p>
+<h2 id="building-loopworkspace">Building LoopWorkspace<a class="headerlink" href="#building-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Once <abbr title="program used to build an app">Xcode</abbr> is opened for the LoopWorkspace, everything is pretty similar to building master. You need to click on that blue Loop folder to see the signing targets, and you need to change the build scheme to the left of your phone to "Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)" in order to build properly.</p>
 <ul>
 <li>New for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopKit/LoopWorkspace<ul>
@@ -1178,8 +2621,8 @@ xed .
 </ul>
 </li>
 </ul>
-<p align="center"><img alt="img/workspace-use.png" src="../img/workspace-use.png" width="750"/></p>
-<h2 id="updating-loop-using-loopworkspace">Updating Loop using LoopWorkspace<a class="headerlink" href="#updating-loop-using-loopworkspace" title="Anchor link to this Header on this Page">¶</a></h2>
+<p align="center"><img alt="img/workspace-use.png" src="../img/workspace-use.png" width="750" /></p>
+<h2 id="updating-loop-using-loopworkspace">Updating Loop using LoopWorkspace<a class="headerlink" href="#updating-loop-using-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>When it's time to update the copy of LoopWorkspace on your computer - you have choices. You can use the method below or redo the whole cloning process.</p>
 <p>Be sure your terminal is in the correct location using <a href="../../build/code_customization/#open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder</a></p>
 <ol>
@@ -1195,8 +2638,8 @@ git pull --recurse
 </code></pre></div></li>
 </ol>
 <p>If you are testing the LoopKit dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you need to be on <a href="https://loop.zulipchat.com">zulipchat</a> and subscribe to at least the #development and #github streams. (It's a good idea to subscribe to all the streams.) When you see <abbr title="contains project files and each file's revision history">repository</abbr> updates similar to the graphic below, there may also be an announcement in the #development channel that LoopWorkspace is updated and ready to test. If not you can check the commits in LoopWorkspace and see if they've been updated. It's a good idea to wait 24 hours. My procedure is to build dev to my backup phone and then put it on my "real" phone. Otherwise, wait for someone else to do it and give the all-clear in zulipchat.</p>
-<p align="center"><img alt="there has been an update in three submodules" src="../img/zulipchat-github.svg" width="600"/></p>
-<h3 id="updating-loop-to-a-specific-loopworkspace-commit">Updating Loop to a Specific LoopWorkspace <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr><a class="headerlink" href="#updating-loop-to-a-specific-loopworkspace-commit" title="Anchor link to this Header on this Page">¶</a></h3>
+<p align="center"><img alt="there has been an update in three submodules" src="../img/zulipchat-github.svg" width="600" /></p>
+<h3 id="updating-loop-to-a-specific-loopworkspace-commit">Updating Loop to a Specific LoopWorkspace <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr><a class="headerlink" href="#updating-loop-to-a-specific-loopworkspace-commit" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Sometimes, you know a feature you want was added at a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number, but the <a href="../../build/build-select-dev/">Loop Dev Script</a> does not include that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. However, you know there are other changes later than that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> which you do not want to test. There is a solution.</p>
 <p>For example, suppose you want to checkout LoopWorkspace <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> bde44b5, but nothing later.</p>
 <p>Be sure your terminal is in the correct location using <a href="../../build/code_customization/#open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder</a>. First you have to bring down all the latest dev commits. Then you will back up to the one you want.</p>
@@ -1217,22 +2660,22 @@ git submodule update
 </code></pre></div></li>
 <li>Assuming there were no errors, see <a href="#local-modifications-conflict">Local Modifications Conflict</a>, in the process above, you can now build that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</li>
 </ol>
-<h3 id="build-following-update">Build Following Update<a class="headerlink" href="#build-following-update" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="build-following-update">Build Following Update<a class="headerlink" href="#build-following-update" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Sometimes there is a change to the <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> scheme in <abbr title="program used to build an app">Xcode</abbr> that interferes with building following an update to your local <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>. In those cases, these steps typically work. Try the first one, and if that doesn't work, try the first two, etc.  Only after trying all three should you post asking for help on zulipchat.</p>
 <ol>
 <li>In <abbr title="program used to build an app">Xcode</abbr> Menu, select Product-&gt;Clean Build Folder</li>
 <li>In <abbr title="program used to build an app">Xcode</abbr> Menu, select File-&gt;Close <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> and then File-&gt;Open Recent and select top line (one you just closed)</li>
 <li>Quit <abbr title="program used to build an app">Xcode</abbr> and <a href="#delete-derived-data">delete derived data</a>, then reopen <abbr title="program used to build an app">Xcode</abbr> (you may need to <a href="../../build/build_errors/#couldnt-get-revision-for-package-dependency">resolve package versions</a> again)</li>
 </ol>
-<h4 id="delete-derived-data">Delete Derived Data<a class="headerlink" href="#delete-derived-data" title="Anchor link to this Header on this Page">¶</a></h4>
+<h4 id="delete-derived-data">Delete Derived Data<a class="headerlink" href="#delete-derived-data" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This command deletes derived data stored across all workspaces and projects by <abbr title="program used to build an app">Xcode</abbr> on your computer. If you have multiple clones locally, it deletes derived data from all of them. The derived data will be regenerated next time you build with <abbr title="program used to build an app">Xcode</abbr> using that <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>.</p>
 <p>Copy and paste this command into a terminal window.</p>
 <div class="highlight"><span class="filename">Copy and Paste to Delete Derived Data</span><pre><span></span><code>rm -rf ~/Library/Developer/Xcode/DerivedData
 </code></pre></div>
-<h3 id="compare-your-local-clone-to-loopworkspace">Compare your local <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> to LoopWorkspace<a class="headerlink" href="#compare-your-local-clone-to-loopworkspace" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="compare-your-local-clone-to-loopworkspace">Compare your local <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> to LoopWorkspace<a class="headerlink" href="#compare-your-local-clone-to-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In an ideal world, LoopWorkspace has the most recent compatible submodule identifiers revised at the same time the <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> are updated.  You will notice the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> identifiers for the updated <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> are different from the ones you have locally.</p>
 <p>You can check your current <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> with the <code>git submodule status</code> command in the LoopWorkspace folder of your terminal:</p>
-<p align="center"><img alt="current submodules" src="../img/submodule-status.png" width="600"/></p>
+<p align="center"><img alt="current submodules" src="../img/submodule-status.png" width="600" /></p>
 <p>What are those super-long numbers?  Those are the actual <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> (remember - look it up) for the commits.  But the first 7 characters are sufficient to uniquely identify the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> you need for the <abbr title="contains project files and each file's revision history">repository</abbr> and <abbr title="version of code within a single repository or workspace repository">branch</abbr> identified in <code>.gitmodules</code>.  So compare the first 7 characters to the LoopKit / LoopWorkspace number and you know whether you need to update or not.</p>
 <p>To determine the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for a single submodule on your computer, use the following commands in the LoopWorkspace folder:</p>
 <div class="highlight"><pre><span></span><code>  cd &lt;submodule-name&gt;; git branch; cd ..
@@ -1245,7 +2688,7 @@ git submodule update
 </code></pre></div>
 <p>The asterick indicates the <abbr title="version of code within a single repository or workspace repository">branch</abbr> that is currently checked out (active).</p>
 <p>The phrase <code>* (HEAD detached at #)</code> allows you to compare your local version with the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> identifier on github.</p>
-<h3 id="loopworkspace-unchanged">LoopWorkspace Unchanged<a class="headerlink" href="#loopworkspace-unchanged" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="loopworkspace-unchanged">LoopWorkspace Unchanged<a class="headerlink" href="#loopworkspace-unchanged" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>What happens if you update (<code>git pull --recurse</code>) and there are no changes at the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>? There will be no change to your current <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> on your computer.</p>
 <ul>
 <li>You'll see a series of responses saying:<ul>
@@ -1254,7 +2697,7 @@ git submodule update
 </ul>
 </li>
 </ul>
-<h3 id="loopworkspace-updated">LoopWorkspace Updated<a class="headerlink" href="#loopworkspace-updated" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="loopworkspace-updated">LoopWorkspace Updated<a class="headerlink" href="#loopworkspace-updated" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>What happens if you update (<code>git pull --recurse</code>) and there are changes at the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>? The changes will be brought down to your <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> on your computer.</p>
 <p><strong>You'll need to build Loop again to get these changes incorporated in the app on your phone.</strong></p>
 <ul>
@@ -1267,7 +2710,7 @@ git submodule update
 </ul>
 </li>
 </ul>
-<h3 id="update-locally">Update Locally<a class="headerlink" href="#update-locally" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="update-locally">Update Locally<a class="headerlink" href="#update-locally" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>It has happened that you notice changes in one or more <abbr title="contains project files and each file's revision history">repository</abbr> (in the #github stream) followed by an announcement in the #development stream that changes have been committed and please test.  But you get the response shown in the <a href="#loopworkspace-unchanged">LoopWorkspace Unchanged</a> scenario. You can make a comment in zulipchat, saying please update LoopWorkspace and then wait, or you can download the appropriate <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. If you are a new tester - you probably want to wait.</p>
 <p>If you want to go on and test, you can update to the correct <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> without waiting for LoopWorkspace to get updated.</p>
 <p>First, in zulipchat, in the #github stream of the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>, click on the word <code>pushed</code> and that will take you to the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. For example, clicking on pushed in zulipchat from the graphic shown above, goes to this website:</p>
@@ -1276,7 +2719,7 @@ git submodule update
 <p>At this point, the commands to get that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> locally on your computer are as follows, starting from the LoopWorkspace folder:</p>
 <p><code>cd rileylink_ios; git fetch; git checkout 2541c1c; cd ..</code></p>
 <p>If you got a error message the # you requested <code>did not match any file(s) known to git</code>, you either typed it incorrectly or you forgot the <code>git fetch</code> command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.</p>
-<h3 id="local-modifications-conflict">Local Modifications Conflict<a class="headerlink" href="#local-modifications-conflict" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="local-modifications-conflict">Local Modifications Conflict<a class="headerlink" href="#local-modifications-conflict" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you have modified anything in a submodule folder on your computer, it might be in conflict with the latest <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
 <p>If you get a messages such as this:</p>
 <div class="highlight"><pre><span></span><code>  error: Your local changes to the following files would be overwritten by checkout:
@@ -1292,7 +2735,7 @@ git submodule update
 <div class="highlight"><pre><span></span><code>  cd Loop; git stash pop; cd ..
 </code></pre></div></p>
 <p>If you see errors indicating you cannot use <code>pop</code>, that means you need to manually add your customizations back.</p>
-<h2 id="checking-out-different-branches-within-a-loopworkspace">Checking out different branches within a LoopWorkspace<a class="headerlink" href="#checking-out-different-branches-within-a-loopworkspace" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="checking-out-different-branches-within-a-loopworkspace">Checking out different branches within a LoopWorkspace<a class="headerlink" href="#checking-out-different-branches-within-a-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>More advanced users...I'm not going to explain this in quite so much detail, but yes, you can individually change the branches in a LoopWorkspace.</p>
 <p>There are 2 main ways to do this.</p>
 <ol>
@@ -1303,8 +2746,8 @@ git submodule update
 <p>If you're not as familiar with <abbr title="a tool for version control">git</abbr>, if you edit your .gitmodules directory in LoopWorkspace, you can specify other repos to use (and add a line to specify branches, too). Then if you do a <code>git submodule sync</code> the workspace will sync to new <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>. Then <code>git submodule update --init --recursive --remote</code> will update all the <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> to the right branches and get HEADs detached correctly, etc. Note that the HEADs will be detached at the top of the <abbr title="version of code within a single repository or workspace repository">branch</abbr> (most recent <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>) based off of <code>.gitmodules</code>.</p>
 </li>
 </ol>
-<p align="center"><img alt="img/gitmodules.png" src="../img/gitmodules.png" width="750"/></p>
-<h2 id="non-loopkit-clones">Non-LoopKit clones<a class="headerlink" href="#non-loopkit-clones" title="Anchor link to this Header on this Page">¶</a></h2>
+<p align="center"><img alt="img/gitmodules.png" src="../img/gitmodules.png" width="750" /></p>
+<h2 id="non-loopkit-clones">Non-LoopKit clones<a class="headerlink" href="#non-loopkit-clones" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Average Loopers can skip this whole section...it's for Developers mostly</p>
 <p>This whole section about non-LoopKit workspace clones is something almost every Looper can totally skip over. I'm only writing up this section for people who are interested in dabbling in code collaborations/customizations that they would want to maintain separate from LoopKit proper.</p>
@@ -1315,72 +2758,103 @@ git submodule update
 You can't <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> mutliple "LoopWorkspaces" into the exact same home directory (because they will have the same name), so you may want to create a subdirectory to put them in. Like you could make a folder called "DeveloperBob" and then move into that directory in <abbr title="interface for entering commands to the computer">Terminal</abbr> before you <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> DeveloperBob's LoopWorkspace.</p>
 <p>How would you do that? Simple <code>cd &amp;&amp; mkdir DeveloperBob</code> would make the new folder in your home directory. And then <code>cd DeveloperBob</code> would move your <abbr title="interface for entering commands to the computer">Terminal</abbr> app to be working inside the new DeveloperBob folder. So if you wanted to <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> DeveloperBob's LoopWorkspace, that would be a good way to keep track of where the code came from.</p>
 <p>If you ever get in doubt and can't remember where your code was cloned from, you can <code>cd LoopWorkspace</code> to get into the directory and then use <code>git remote -v</code> to tell you where it came from.</p>
-<h2 id="pushing-commits-from-loopworkspace">Pushing commits from LoopWorkspace<a class="headerlink" href="#pushing-commits-from-loopworkspace" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="pushing-commits-from-loopworkspace">Pushing commits from LoopWorkspace<a class="headerlink" href="#pushing-commits-from-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>So you've got a great idea for a new feature, made those changes to your LoopWorkspace and want to get them into <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. Awesome!</p>
 <p>To understand how to do this, we'll need to understand a bit more about how <abbr title="a tool for version control">git</abbr> keeps track of changes. In <abbr title="a tool for version control">git</abbr>, developers can have different "branches" (see <a href="../development/#what-are-branches">What are Branches</a> on the Loop Development page for more details about what a <abbr title="version of code within a single repository or workspace repository">branch</abbr> is). There are two different types of branches: remote and local. If you were to <abbr title="a copy of code in a github repository other than the original">fork</abbr> Loop on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>, then the branches that you can see on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> are "remote" branches - they're hosted on the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> server. On the other hand, you can also create "local" branches that are stored directly on your computer by "checking out" the remote <abbr title="version of code within a single repository or workspace repository">branch</abbr>. You'll need to "<abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>" your changes to the local <abbr title="version of code within a single repository or workspace repository">branch</abbr>, then "push" those changes to the remote <abbr title="version of code within a single repository or workspace repository">branch</abbr> in order to be able to see them in <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. There are specific commands that you can type into the command line to do all of these actions, but I'm not going to go into detail because there are different ways and everyone has their own preference.</p>
 <p>It's a little easier to think about this with an analogy. Let's say you're working at a company that's creating a cookbook. There's a centralized, production-ready version of the cookbook on their website that all the employees can view. Think of the website version of this cookbook as being like the remote <abbr title="version of code within a single repository or workspace repository">branch</abbr>. You're assigned to change the pancake recipe in the cookbook. Since the company doesn't want employees to make changes directly to the version of the cookbook that the customers see, you need to make a copy of it on your computer so you can make your changes to the pancake recipe. When you make the personal copy on your computer, it's like "checking out" the remote <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Your copy is like the local <abbr title="version of code within a single repository or workspace repository">branch</abbr> - you can make whatever changes you want without having to worry about customers accidentally seeing them. When you make an important change to the recipe (like adding a photo or changing the ingredients), you might want to make a note in the edit history so that you can go back to that version of the recipe in case you accidentally make unintended changes - those notes you make would be "commits". Once you're happy with the recipe, you'll add it back into the production version of the cookbook on the website, which is similar to what you're doing when you "push" your changes.</p>
 <p>Where do the <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> fit in? Each submodule is actually a <abbr title="version of code within a single repository or workspace repository">branch</abbr>, so when you make changes to multiple <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>, you'll need to <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> those changes to their respective branches. Let's say you've made changes to Loop and LoopKit. You'll need to go into Loop and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> and push the changes, then go into LoopKit and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> and push the changes.</p>
 <p>There are a few different ways to keep track of all these different branches. Some people like using the command line (which is what you're using when you do commands like <code>git clone</code>) because it's very customizable and has the largest variety of commands. Others like to use graphical Git editors, which make it easier to see changes and be able to do a variety of common actions (like cloning, committing, and pushing) with the push of a button. Everyone has their own preferences, but some methods that Loop contributors have used in the past include the command line, <a href="https://www.gitkraken.com/">Gitkraken</a>, and <a href="https://www.sourcetreeapp.com/">SourceTree</a>.</p>
-</article>
-</div>
-</div>
-<a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path></svg>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
           </a>
-</main>
-<footer class="md-footer">
-<nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Build Loop Dev" class="md-footer__link md-footer__link--prev" href="../../build/build-select-dev/" rel="prev">
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</div>
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Previous
-              </span>
-              Build Loop Dev
-            </div>
-</div>
-</a>
-<a aria-label="Next: Nightscout Overview" class="md-footer__link md-footer__link--next" href="../../nightscout/overview/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Next
-              </span>
-              Nightscout Overview
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
-</div>
-</a>
-</nav>
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-footer-copyright">
         
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
-          Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
-            Material for MkDocs
+          
+          <a href="../../build/build-select-dev/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Build Loop Dev" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                Build Loop Dev
+              </div>
+            </div>
           </a>
+        
+        
+          
+          <a href="../../nightscout/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Nightscout Overview" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+                Nightscout Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-</div>
-</div>
+      
+    </div>
+  </div>
 </footer>
-</div>
-<div class="md-dialog" data-md-component="dialog">
-<div class="md-dialog__inner md-typeset"></div>
-</div>
-<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
-<script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
-<script src="../../javascripts/mathjax.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="../../javascripts/refresh_on_toggle_dark_light.js"></script>
-</body>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4b2c34cd.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
 </html>

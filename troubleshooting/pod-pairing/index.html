@@ -1,1026 +1,2437 @@
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../yellow-red-loop/">
+      
+      
+        <link rel="next" href="../omnipod-faults/">
+      
+      <link rel="icon" href="../../loop-logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
+    
+    
+      
+        <title>Pod Pairing Failures - LoopDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
 
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="../../loop-logo.png" rel="icon"/>
-<meta content="mkdocs-1.3.0, mkdocs-material-7.3.6" name="generator"/>
-<title>Pod Pairing Failures - LoopDocs</title>
-<link href="../../assets/stylesheets/main.a57b2b03.min.css" rel="stylesheet"/>
-<link href="../../assets/stylesheets/palette.3f5d1f46.min.css" rel="stylesheet"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
-<link href="../../stylesheets/extra.css" rel="stylesheet"/>
-<link href="../../stylesheets/primary-color.css" rel="stylesheet"/>
-</head>
-<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
-<script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
-<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" for="__drawer"></label>
-<div data-md-component="skip">
-<a class="md-skip" href="#pod-pairing-failures">
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pod-pairing-failures" class="md-skip">
           Skip to content
         </a>
-</div>
-<div data-md-component="announce">
-</div>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
 <header class="md-header md-header--lifted" data-md-component="header">
-<nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="LoopDocs" class="md-header__button md-logo" data-md-component="logo" href="../.." title="LoopDocs">
-<img alt="logo" src="../../loop-logo.png"/>
-</a>
-<label class="md-header__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
-</label>
-<div class="md-header__title" data-md-component="header-title">
-<div class="md-header__ellipsis">
-<div class="md-header__topic">
-<span class="md-ellipsis">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+      
+  <img src="../../loop-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             LoopDocs
           </span>
-</div>
-<div class="md-header__topic" data-md-component="header-topic">
-<span class="md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               Pod Pairing Failures
             
           </span>
-</div>
-</div>
-</div>
-<form class="md-header__option" data-md-component="palette">
-<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
-<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"></path></svg>
-</label>
-<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
-<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"></path></svg>
-</label>
-</form>
-<label class="md-header__button md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
-</label>
-<div class="md-search" data-md-component="search" role="dialog">
-<label class="md-search__overlay" for="__search"></label>
-<div class="md-search__inner" role="search">
-<form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
-<label class="md-search__icon md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</label>
-<nav aria-label="Search" class="md-search__options">
-<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
-</button>
-</nav>
-<div class="md-search__suggest" data-md-component="search-suggest"></div>
-</form>
-<div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="">
-<div class="md-search-result" data-md-component="search-result">
-<div class="md-search-result__meta">
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
             Initializing search
           </div>
-<ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</nav>
-<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
-<div class="md-tabs__inner md-grid">
-<ul class="md-tabs__list">
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../..">
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../intro/overview-intro/">
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../intro/overview-intro/" class="md-tabs__link">
         Intro
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../gh-actions/gh-overview/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../gh-actions/gh-overview/" class="md-tabs__link">
         Browser Build
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../build/overview/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../build/overview/" class="md-tabs__link">
         Mac Build
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../loop-3/loop-3-overview/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
         Set Up
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../operation/loop/open-loop/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../operation/loop/open-loop/" class="md-tabs__link">
         Operate
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../overview/">
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../overview/" class="md-tabs__link md-tabs__link--active">
         Troubleshoot
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../version/overview-version/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../version/overview-version/" class="md-tabs__link">
         Version
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../nightscout/overview/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../nightscout/overview/" class="md-tabs__link">
         Nightscout
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../faqs/overview-faqs/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faqs/overview-faqs/" class="md-tabs__link">
         FAQs
       </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../translate/">
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../translate/" class="md-tabs__link">
       Translation
     </a>
-</li>
-</ul>
-</div>
+  </li>
+
+      
+    </ul>
+  </div>
 </nav>
+    
+  
 </header>
-<div class="md-container" data-md-component="container">
-<main class="md-main" data-md-component="main">
-<div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
-<label class="md-nav__title" for="__drawer">
-<a aria-label="LoopDocs" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="LoopDocs">
-<img alt="logo" src="../../loop-logo.png"/>
-</a>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+      
+  <img src="../../loop-logo.png" alt="logo">
+
+    </a>
     LoopDocs
   </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../..">
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2">
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
           Intro
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Intro" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_2">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
           Intro
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../intro/overview-intro/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/overview-intro/" class="md-nav__link">
         LoopDocs Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../intro/loopdocs-how-to/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/loopdocs-how-to/" class="md-nav__link">
         LoopDocs How-to
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../intro/requirements/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/requirements/" class="md-nav__link">
         Requirements
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step2/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step2/" class="md-nav__link">
         Compatible iPhone/iPod
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step3/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step3/" class="md-nav__link">
         Compatible Pump
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step4/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step4/" class="md-nav__link">
         Compatible CGM
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step5/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step5/" class="md-nav__link">
         RileyLink
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step6/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step6/" class="md-nav__link">
         Apple Developer Program
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step10/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step10/" class="md-nav__link">
         Test Settings
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step11/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step11/" class="md-nav__link">
         Loop Data
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step12/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step12/" class="md-nav__link">
         Meet the Community
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
           Browser Build
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Browser Build" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_3">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
           Browser Build
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-overview/" class="md-nav__link">
         GitHub Build Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-first-time/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-first-time/" class="md-nav__link">
         GitHub First-Time
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-deploy/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-deploy/" class="md-nav__link">
         GitHub Deploy
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-update/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-update/" class="md-nav__link">
         GitHub Update
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-errors/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-errors/" class="md-nav__link">
         GitHub Errors
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gh-actions/gh-other-apps/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-other-apps/" class="md-nav__link">
         Other Apps
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
           Mac Build
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Mac Build" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
           Mac Build
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/overview/" class="md-nav__link">
         Mac Build Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step1/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step1/" class="md-nav__link">
         Compatible Computer
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step8/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step8/" class="md-nav__link">
         Download Xcode
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step9/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step9/" class="md-nav__link">
         Xcode Preferences
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/step14/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step14/" class="md-nav__link">
         Build Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/build_errors/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build_errors/" class="md-nav__link">
         Oh dear! Build errors?
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/updating/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/updating/" class="md-nav__link">
         Updating/Rebuilding
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/build-free-loop/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-free-loop/" class="md-nav__link">
         Build Free Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/testflight-xcode/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/testflight-xcode/" class="md-nav__link">
         TestFlight from Xcode
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
           Set Up
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Set Up" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_5">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
           Set Up
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/loop-3-overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-nav__link">
         Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/onboarding/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/onboarding/" class="md-nav__link">
         Onboarding
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/add-cgm/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-cgm/" class="md-nav__link">
         Add CGM
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/add-pump/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-pump/" class="md-nav__link">
         Add Pump
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/displays_v3/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/displays_v3/" class="md-nav__link">
         Displays
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/alert-notify/">
-        Alerts &amp; Notifications
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/alert-notify/" class="md-nav__link">
+        Alerts & Notifications
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/settings/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/settings/" class="md-nav__link">
         Settings
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/therapy-settings/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/therapy-settings/" class="md-nav__link">
         Therapy Settings
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/services/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/services/" class="md-nav__link">
         Optional: Services
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/rileylink/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
         RileyLink Display
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/omnipod/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/omnipod/" class="md-nav__link">
         Omnipod Pump
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/medtronic/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/medtronic/" class="md-nav__link">
         Medtronic Pump
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../loop-3/features/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/features/" class="md-nav__link">
         Features
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" id="__nav_5_14" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_14">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_14" id="__nav_5_14_label" tabindex="0">
           Loop 2: Set Up App
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Loop 2: Set Up App" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_5_14">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_14">
+          <span class="md-nav__icon md-icon"></span>
           Loop 2: Set Up App
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/overview/" class="md-nav__link">
         Loop 2 Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/health/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/health/" class="md-nav__link">
         Loop 2 Health Permissions
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_3" id="__nav_5_14_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_14_3">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_14_3" id="__nav_5_14_3_label" tabindex="0">
           Loop 2 Add Pump
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Loop 2 Add Pump" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_5_14_3">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_14_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_14_3">
+          <span class="md-nav__icon md-icon"></span>
           Loop 2 Add Pump
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/mdt-pump/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
         Loop 2 Add Medtronic
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/omnipod-pump/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
         Loop 2 Add Omnipod
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/cgm/">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
         Loop 2 Add CGM
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/configurations/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
         Loop 2 Configuration
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/displays/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/displays/" class="md-nav__link">
         Loop 2 Displays
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop-settings/pump-commands/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
         Loop 2 Pump Settings
       </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
           Operate
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Operate" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_6">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
           Operate
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop/open-loop/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/open-loop/" class="md-nav__link">
         Open Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop/close-loop/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/close-loop/" class="md-nav__link">
         Closed Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/carbs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/carbs/" class="md-nav__link">
         Meal Entries
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/bolus/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/bolus/" class="md-nav__link">
         Bolus
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/workout/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/workout/" class="md-nav__link">
         Overrides
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/watch/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/watch/" class="md-nav__link">
         Apple Watch
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/notifications/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/notifications/" class="md-nav__link">
         Loop Notifications
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/premeal/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/premeal/" class="md-nav__link">
         Pre-meal target
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/ice/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/ice/" class="md-nav__link">
         Using ICE info
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/widget/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/widget/" class="md-nav__link">
         iPhone widget
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/loop/looptips/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/looptips/" class="md-nav__link">
         Loop Tips
       </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_12" id="__nav_6_12" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6_12">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_12" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_12" id="__nav_6_12_label" tabindex="0">
           Algorithm
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Algorithm" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_6_12">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_12">
+          <span class="md-nav__icon md-icon"></span>
           Algorithm
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/algorithm/overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/overview/" class="md-nav__link">
         Algorithm Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/algorithm/bolus/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/bolus/" class="md-nav__link">
         Bolus Recommendations
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/algorithm/prediction/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/prediction/" class="md-nav__link">
         Glucose Prediction
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/algorithm/temp-basal/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/temp-basal/" class="md-nav__link">
         Automated Adjustments
       </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
           Troubleshoot
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Troubleshoot" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_7">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
           Troubleshoot
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
         Troubleshooting Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../loop-crashing/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop-crashing/" class="md-nav__link">
         Loop App crashes
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../yellow-red-loop/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yellow-red-loop/" class="md-nav__link">
         Red Loop
       </a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
           Pod Pairing Failures
           <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Pod Pairing Failures
       </a>
-<nav aria-label="Headers on this Page" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#pod-pairing-failures">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pod-pairing-failures" class="md-nav__link">
     Pod Pairing Failures
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#why-do-pod-pairings-fail">
+      
+        <li class="md-nav__item">
+  <a href="#why-do-pod-pairings-fail" class="md-nav__link">
     Why do pod pairings fail?
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-0-check-your-loop-version">
+      
+        <li class="md-nav__item">
+  <a href="#step-0-check-your-loop-version" class="md-nav__link">
     Step 0: Check your Loop version
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-1-verify-the-rileylink">
+      
+        <li class="md-nav__item">
+  <a href="#step-1-verify-the-rileylink" class="md-nav__link">
     Step 1: Verify the RileyLink
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-2-deactivate-old-pod">
+      
+        <li class="md-nav__item">
+  <a href="#step-2-deactivate-old-pod" class="md-nav__link">
     Step 2: Deactivate old Pod
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-3-start-new-pairing-process">
+      
+        <li class="md-nav__item">
+  <a href="#step-3-start-new-pairing-process" class="md-nav__link">
     Step 3: Start new pairing process
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-4-check-the-rileylink-and-pods-placement">
+      
+        <li class="md-nav__item">
+  <a href="#step-4-check-the-rileylink-and-pods-placement" class="md-nav__link">
     Step 4: Check the RileyLink and Pod's Placement
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-5-pod-pairing-recovery">
+      
+        <li class="md-nav__item">
+  <a href="#step-5-pod-pairing-recovery" class="md-nav__link">
     Step 5: Pod Pairing Recovery
   </a>
-<nav aria-label="Step 5: Pod Pairing Recovery" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-5a-switch-from-omnipod-pumps">
+  
+    <nav class="md-nav" aria-label="Step 5: Pod Pairing Recovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-5a-switch-from-omnipod-pumps" class="md-nav__link">
     Step 5A "Switch from Omnipod Pumps"
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-5b-deactivate-pod">
+        
+          <li class="md-nav__item">
+  <a href="#step-5b-deactivate-pod" class="md-nav__link">
     Step 5B "Deactivate pod"
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-6-help-improve-pod-pairing-process">
+      
+        <li class="md-nav__item">
+  <a href="#step-6-help-improve-pod-pairing-process" class="md-nav__link">
     Step 6: Help improve pod pairing process
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#what-about-other-pod-start-up-failures">
+      
+        <li class="md-nav__item">
+  <a href="#what-about-other-pod-start-up-failures" class="md-nav__link">
     What about other pod start-up failures?
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#what-about-that-insulin">
+      
+        <li class="md-nav__item">
+  <a href="#what-about-that-insulin" class="md-nav__link">
     What about that insulin?
   </a>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../omnipod-faults/">
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../omnipod-faults/" class="md-nav__link">
         Omnipod Faults
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../pump-errors/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pump-errors/" class="md-nav__link">
         MDT Pump Errors
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../operation/features/battery/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/battery/" class="md-nav__link">
         MDT Pump Battery
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
-<label class="md-nav__link" for="__nav_8">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
           Version
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Version" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_8">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
           Version
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../version/overview-version/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/overview-version/" class="md-nav__link">
         Version Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../version/releases/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/releases/" class="md-nav__link">
         Loop Releases
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/code_customization/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/code_customization/" class="md-nav__link">
         Customize your Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../version/simulator/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/simulator/" class="md-nav__link">
         Simulator Build
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../version/development/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/development/" class="md-nav__link">
         Loop Development
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../build/build-select-dev/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-select-dev/" class="md-nav__link">
         Build Loop Dev
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../version/loopworkspace/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/loopworkspace/" class="md-nav__link">
         LoopWorkspace
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" id="__nav_9" type="checkbox"/>
-<label class="md-nav__link" for="__nav_9">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
           Nightscout
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Nightscout" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_9">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
           Nightscout
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/overview/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/overview/" class="md-nav__link">
         Nightscout Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/new_user/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/new_user/" class="md-nav__link">
         New Nightscout
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/update_user/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/update_user/" class="md-nav__link">
         Nightscout with Loop
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/troublehoot/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/troublehoot/" class="md-nav__link">
         Nightscout Troubleshooting
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/remote-overrides/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-overrides/" class="md-nav__link">
         Remote Commands
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../nightscout/ns_crossref/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/ns_crossref/" class="md-nav__link">
         Nightscout Cross Ref
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" id="__nav_10" type="checkbox"/>
-<label class="md-nav__link" for="__nav_10">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
           FAQs
           <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="FAQs" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_10">
-<span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
           FAQs
         </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/overview-faqs/">
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/overview-faqs/" class="md-nav__link">
         FAQs Overview
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/safety-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/safety-faqs/" class="md-nav__link">
         Safety Tips
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/FAQs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/FAQs/" class="md-nav__link">
         Loop FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../time-change/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../time-change/" class="md-nav__link">
         Time Change FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/omnipod-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/omnipod-faqs/" class="md-nav__link">
         Omnipod FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/cgm-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/cgm-faqs/" class="md-nav__link">
         CGM FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/update-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/update-faqs/" class="md-nav__link">
         Update/Rebuild Loop FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/rileylink-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/rileylink-faqs/" class="md-nav__link">
         RileyLink FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/algorithm-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/algorithm-faqs/" class="md-nav__link">
         Algorithm FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/apple-health-faqs/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/apple-health-faqs/" class="md-nav__link">
         Apple Health FAQs
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../faqs/glossary/">
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/glossary/" class="md-nav__link">
         Glossary
       </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../translate/">
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../translate/" class="md-nav__link">
         Translation
       </a>
-</li>
-</ul>
+    </li>
+  
+
+    
+  </ul>
 </nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Headers on this Page" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Headers on this Page
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#pod-pairing-failures">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pod-pairing-failures" class="md-nav__link">
     Pod Pairing Failures
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#why-do-pod-pairings-fail">
+      
+        <li class="md-nav__item">
+  <a href="#why-do-pod-pairings-fail" class="md-nav__link">
     Why do pod pairings fail?
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-0-check-your-loop-version">
+      
+        <li class="md-nav__item">
+  <a href="#step-0-check-your-loop-version" class="md-nav__link">
     Step 0: Check your Loop version
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-1-verify-the-rileylink">
+      
+        <li class="md-nav__item">
+  <a href="#step-1-verify-the-rileylink" class="md-nav__link">
     Step 1: Verify the RileyLink
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-2-deactivate-old-pod">
+      
+        <li class="md-nav__item">
+  <a href="#step-2-deactivate-old-pod" class="md-nav__link">
     Step 2: Deactivate old Pod
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-3-start-new-pairing-process">
+      
+        <li class="md-nav__item">
+  <a href="#step-3-start-new-pairing-process" class="md-nav__link">
     Step 3: Start new pairing process
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-4-check-the-rileylink-and-pods-placement">
+      
+        <li class="md-nav__item">
+  <a href="#step-4-check-the-rileylink-and-pods-placement" class="md-nav__link">
     Step 4: Check the RileyLink and Pod's Placement
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-5-pod-pairing-recovery">
+      
+        <li class="md-nav__item">
+  <a href="#step-5-pod-pairing-recovery" class="md-nav__link">
     Step 5: Pod Pairing Recovery
   </a>
-<nav aria-label="Step 5: Pod Pairing Recovery" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-5a-switch-from-omnipod-pumps">
+  
+    <nav class="md-nav" aria-label="Step 5: Pod Pairing Recovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-5a-switch-from-omnipod-pumps" class="md-nav__link">
     Step 5A "Switch from Omnipod Pumps"
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-5b-deactivate-pod">
+        
+          <li class="md-nav__item">
+  <a href="#step-5b-deactivate-pod" class="md-nav__link">
     Step 5B "Deactivate pod"
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#step-6-help-improve-pod-pairing-process">
+      
+        <li class="md-nav__item">
+  <a href="#step-6-help-improve-pod-pairing-process" class="md-nav__link">
     Step 6: Help improve pod pairing process
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#what-about-other-pod-start-up-failures">
+      
+        <li class="md-nav__item">
+  <a href="#what-about-other-pod-start-up-failures" class="md-nav__link">
     What about other pod start-up failures?
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#what-about-that-insulin">
+      
+        <li class="md-nav__item">
+  <a href="#what-about-that-insulin" class="md-nav__link">
     What about that insulin?
   </a>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</div>
-</div>
-</div>
-<div class="md-content" data-md-component="content">
-<article class="md-content__inner md-typeset">
-<h1>Pod Pairing Failures</h1>
-<h2 id="pod-pairing-failures">Pod Pairing Failures<a class="headerlink" href="#pod-pairing-failures" title="Anchor link to this Header on this Page">¶</a></h2>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Pod Pairing Failures</h1>
+
+<h2 id="pod-pairing-failures">Pod Pairing Failures<a class="headerlink" href="#pod-pairing-failures" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Have you seen an error message during the pairing process for a new pod? The most common messages are "No response from pod" or "Pod sent ack instead of response", as shown below.</p>
-<p align="center"><img alt="img/pod-pair-fail.jpg" src="../img/pod-pair-fail.jpg" width="550"/></p>
+<p align="center"><img alt="img/pod-pair-fail.jpg" src="../img/pod-pair-fail.jpg" width="550" /></p>
 <p>There have been a large number of fixes and improvements to reduce various pairing problems and to automatically recover from them when they do occur. <strong>Make sure you stay on top of Loop updates to take advantage of these code improvements.</strong> It is <em>strongly</em> recommended to update to a modern stable version (i.e., the current Loop master release) when running any version of Loop prior to V2.2.4 with an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>. In particular, you should <em>never</em> run Loop V2.2.3 with an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> due to a severe UI bug that can result in a partially setup pod where the only possible recovery is an immediate Loop update to be able to complete the pod setup process.</p>
-<h2 id="why-do-pod-pairings-fail">Why do pod pairings fail?<a class="headerlink" href="#why-do-pod-pairings-fail" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="why-do-pod-pairings-fail">Why do pod pairings fail?<a class="headerlink" href="#why-do-pod-pairings-fail" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Assuming the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> is ok, the most common cause of a pod pairing failure is that Loop incorrectly partially pairs with the pod due to some problems during the fragile pairing process, perhaps aggravated by the placement of the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> and the pod, wireless communications interference, and/or incorrect handling of some fault and retry conditions in versions of Loop prior to V2.2.4 that can leave the pod in an apparent non-responding state. This page will help you walk through some easy troubleshooting steps to recover that pod into good working order.</p>
 <div class="admonition info">
 <p class="admonition-title">Move Logically</p>
 <p>Let's walk through the pod pairing/replacement process from the very beginning to make sure that we have all the important steps clearly identified even before you attempt to press that <strong>Pair</strong> button.</p>
 </div>
-<h2 id="step-0-check-your-loop-version">Step 0: Check your Loop version<a class="headerlink" href="#step-0-check-your-loop-version" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="step-0-check-your-loop-version">Step 0: Check your Loop version<a class="headerlink" href="#step-0-check-your-loop-version" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You can check which version of Loop you are running by pressing the gear in the bottom right hand corner of the Loop home screen and then looking at the line under the header. If you are running Loop V2.2.3, you should update <em>immediately</em> as this is the only way to recover from a number of pairing failure situations. If you are running a version of Loop prior to V2.2.4 (or its equivalent), it is recommended to update to the current Loop master release to prevent pairing difficulties.</p>
-<h2 id="step-1-verify-the-rileylink">Step 1: Verify the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr><a class="headerlink" href="#step-1-verify-the-rileylink" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="step-1-verify-the-rileylink">Step 1: Verify the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr><a class="headerlink" href="#step-1-verify-the-rileylink" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>First, let's make sure everything is ok as far as the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> goes:</p>
 <ol>
 <li><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> is charged and nearby, and</li>
 <li><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> has a green LED light lit (indicating a Bluetooth connection with your iPhone), and</li>
 <li>Try toggling the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> off/on at its physical switch if the green light is not on.</li>
 </ol>
-<h2 id="step-2-deactivate-old-pod">Step 2: Deactivate old Pod<a class="headerlink" href="#step-2-deactivate-old-pod" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="step-2-deactivate-old-pod">Step 2: Deactivate old Pod<a class="headerlink" href="#step-2-deactivate-old-pod" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Make sure you've deactivated your old pod. If you had issues deactivating your pod, you likely may have some <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> issues going on...so make sure to see the steps above. If you have a problem with deactivating a pod, go ahead and skip to Step 5 to get a new pod going. You should also remove that old pod (that would not deactivate) from your vicinity. Put it in a microwave or throw it over the fence into the neighbor's backyard (kidding, obviously...but outside trashcan is a good idea).</p>
-<h2 id="step-3-start-new-pairing-process">Step 3: Start new pairing process<a class="headerlink" href="#step-3-start-new-pairing-process" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="step-3-start-new-pairing-process">Step 3: Start new pairing process<a class="headerlink" href="#step-3-start-new-pairing-process" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You've deactivated your old pod successfully...great! As the first part of pairing a new pod, Loop will prompt you to fill the new pod with insulin. Once a new pod is powered-up by the insertion of at least 85 units of insulin, the pod will emit reminder beeps every 5 or 10 minutes until the entire pod pairing process has completed. This pairing process must be completed within 60 minutes of beeps starting, or the pod will give up and never pair. These activation reminder beeps do not actually indicate that any pod communication is being attempted, just that the activation has not yet been completed and your 60 minute timer is counting down.</p>
 <p>Hopefully, your pod pairing continues uneventfully at this point. You'll press the <strong>Pair</strong> button and the pod pairs, primes, and the cannula insertion is successful. BUT, if not...you'll want to keep reading Steps 4-5 to find out how to recover.</p>
 <div class="admonition danger">
@@ -1028,14 +2439,14 @@
 <p><strong>It is very important to not have two pods giving reminder beeps at the same time</strong> as this can cause even more confusion for you and for Loop. Continue to work with a single pod at a time, retrying the <strong>Pair</strong> attempts multiple times if needed as described in Step 4. </p>
 <p>If you cannot get the pairing to complete with the single beeping pod (after trying the procedures described below a few times with multiple <strong>Pair</strong> attempts during each try), then you should completely abandon that pod before attempting to use another pod. "Completely abandon" means move that failed-to-pair-no-matter-what-you-tried pod far, far away from you or put it in a not-turned-on-but-door-is-closed microwave. You do not want that beeping-but-not-pairing pod to be able to plague your next pod's communications with Loop during the fresh pairing process.</p>
 </div>
-<h2 id="step-4-check-the-rileylink-and-pods-placement">Step 4: Check the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> and Pod's Placement<a class="headerlink" href="#step-4-check-the-rileylink-and-pods-placement" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="step-4-check-the-rileylink-and-pods-placement">Step 4: Check the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> and Pod's Placement<a class="headerlink" href="#step-4-check-the-rileylink-and-pods-placement" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Pod pairing failed?</p>
 <p>Ok, so you've pressed that <strong>Pair</strong> button and received an error message like shown at the top of screen? It's time to start the stepwise process of seeing if we can get it to recover successfully.</p>
 </div>
 <p>The placement of the pod and the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> relative to each other is critical variable because the pod operates in a low power radio mode during pairing which can lead to a number of potential faulty and half-paired pod situations, particularly with earlier versions of Loop.</p>
 <p><strong>How close should they be?</strong> Most people assume "the closer the better", but it has been measured that if the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> and pod are <em>too close together</em>, the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> may not be able to pick up the pairing response. The current recommendation is for the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> to be placed a few inches to the side of the pod being paired.</p>
-<p align="center"><img alt="img/pod-rileylink-positioning.jpg" src="../img/pod-rileylink-positioning.jpg" width="600"/></p>
+<p align="center"><img alt="img/pod-rileylink-positioning.jpg" src="../img/pod-rileylink-positioning.jpg" width="600" /></p>
 <div class="admonition info">
 <p class="admonition-title">If <strong>Pair</strong> fails, move a bit and RETRY</p>
 <ul>
@@ -1044,7 +2455,7 @@
 <li>If you have another available <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>, you can also try pairing using that <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> instead.</li>
 </ul>
 </div>
-<h2 id="step-5-pod-pairing-recovery">Step 5: Pod Pairing Recovery<a class="headerlink" href="#step-5-pod-pairing-recovery" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="step-5-pod-pairing-recovery">Step 5: Pod Pairing Recovery<a class="headerlink" href="#step-5-pod-pairing-recovery" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>When you have a pod that continues to appear non-responsive or sending "ack" responses after several retried <strong>Pair</strong> attempts, it may be possible to recover by forcing Loop to start the pairing process from the beginning.</p>
 <p>To start we will have to press the <strong>Cancel</strong> button in the upper right corner of the pairing screen. Depending on which state the pod is stuck at in the pairing process...you'll see one of two screens after you select the <strong>Cancel</strong> button. Follow the directions (Step 5A vs Step 5B) for whichever screen corresponds to what you see after pressing <strong>Cancel</strong>.</p>
 <ul>
@@ -1055,17 +2466,17 @@
 <p>Step 5B "Deactivate": You press <strong>Cancel</strong> and Loop will display a screen giving the option to "Deactivate"</p>
 </li>
 </ul>
-<h3 id="step-5a-switch-from-omnipod-pumps">Step 5A "Switch from <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Pumps"<a class="headerlink" href="#step-5a-switch-from-omnipod-pumps" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="step-5a-switch-from-omnipod-pumps">Step 5A "Switch from <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Pumps"<a class="headerlink" href="#step-5a-switch-from-omnipod-pumps" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you press the <strong>Cancel</strong> button and see a screen like below, you're going to select <strong>Switch from <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Pumps</strong> in red. While this appears to confirm that you want to stop using the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>, we will be adding pods back soon. Don't worry.</p>
-<p align="center"><img alt="img/delete-omnipod-confirmation.png" src="../img/delete-omnipod-confirmation.png" width="400"/></p>
+<p align="center"><img alt="img/delete-omnipod-confirmation.png" src="../img/delete-omnipod-confirmation.png" width="400" /></p>
 <p>Don't fret. None of your Loop settings including the basal schedule and delivery limits, will be lost deleting the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> pump. Select <strong>Delete <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></strong> to proceed which will take you back to the Loop home screen.  From here, select the gear icon at the bottom right to go the Loop <code>Settings</code> page. Then select <strong>Add Pump</strong> in blue and then select <strong><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></strong> from the <code>Add Pump</code> list displayed.</p>
-<p align="center"><img alt="img/add-pump-list.png" src="../img/add-pump-list.png" width="400"/></p>
+<p align="center"><img alt="img/add-pump-list.png" src="../img/add-pump-list.png" width="400" /></p>
 <p>Verify that the green LED on the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> goes on and off as you touch the switch for <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> you are using indicating a successful Bluetooth connection between the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> and your iPhone. Leave the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> enabled with its green LED and slider turned on, and then touch the <strong>Continue</strong> button on the bottom. The Pod Settings screen should have the previous Basal Rates and <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr> in effect from your previous run which can be verified at this time. Once ready, select <strong>Continue</strong> on the bottom of the screen.</p>
-<p align="center"><img alt="img/pod-settings-delivery-limits.png" src="../img/pod-settings-delivery-limits.png" width="400"/></p>
+<p align="center"><img alt="img/pod-settings-delivery-limits.png" src="../img/pod-settings-delivery-limits.png" width="400" /></p>
 <p>Finally, you will be back to the <code>Pod Pairing</code> screen.</p>
-<p align="center"><img alt="img/pod-pairing.png" src="../img/pod-pairing.png" width="200"/></p>
+<p align="center"><img alt="img/pod-pairing.png" src="../img/pod-pairing.png" width="200" /></p>
 <p>Instead of filling a new pod with insulin, attempt to pair again using the original pod which was previously filled but unable to complete the pairing process successfully. That pod should still be occasionally giving reminder beeps. Place the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> a few inches to the side of the pod and press the <strong>Pair</strong> button at the bottom of the screen and hopefully Loop will be able to successfully pair this time after starting from a fresh slate. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.</p>
-<h3 id="step-5b-deactivate-pod">Step 5B "Deactivate pod"<a class="headerlink" href="#step-5b-deactivate-pod" title="Anchor link to this Header on this Page">¶</a></h3>
+<h3 id="step-5b-deactivate-pod">Step 5B "Deactivate pod"<a class="headerlink" href="#step-5b-deactivate-pod" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you press the <strong>Cancel</strong> button and see an option for "Deactivate pod", we're going to do a little differently than Step 5A.</p>
 <div class="admonition warning">
 <p class="admonition-title">You <em>might</em> lose your pod by attempting this procedure</p>
@@ -1082,77 +2493,108 @@
 </li>
 </ol>
 <p>Ok. Have the pod nice and ignorant? Good. Now press the "Deactivate Pod" button. It will take a few attempts, and you will see some failure messages about how the deactivation failed (of course it did...we hid the pod!) Eventually, you'll be given an "Continue" button that you'll want to use.</p>
-<p align="center"><img alt="img/deactivate-pod.png" src="../img/deactivate-pod.png" width="600"/></p>
+<p align="center"><img alt="img/deactivate-pod.png" src="../img/deactivate-pod.png" width="600" /></p>
 <p>Press the "Continue" button. The instructions start with "fill a new pod with insulin"...BUT DO NOT!  Instead, bring that beeping pod back to the hearing range. Turn that <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> back on if you turned it off. Once you get the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> on and the pod back in range, you'll just press the <strong>Pair</strong> button and hopefully you'll find success with the process. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.</p>
-<p align="center"><img alt="img/deactivate-pod2.png" src="../img/deactivate-pod2.png" width="600"/></p>
-<h2 id="step-6-help-improve-pod-pairing-process">Step 6: Help improve pod pairing process<a class="headerlink" href="#step-6-help-improve-pod-pairing-process" title="Anchor link to this Header on this Page">¶</a></h2>
+<p align="center"><img alt="img/deactivate-pod2.png" src="../img/deactivate-pod2.png" width="600" /></p>
+<h2 id="step-6-help-improve-pod-pairing-process">Step 6: Help improve pod pairing process<a class="headerlink" href="#step-6-help-improve-pod-pairing-process" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>To help fix pairing bugs, some improvements have also been made in our ability to save the communications between the pods and Loop app during the pairing process. So, please help us leverage these new improvements and better squash bugs.</p>
 <p>If you run into any pairing problems when running a version of Loop prior to V2.2.4, which required Step 5A or Step 5B to be able to pair, or you had a pod that had to be abandoned, it would be helpful to generate an "<abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report" after you finally get a pod paired (whether is was the original pod or if a different pod) and then post the resulting "Loop Report" on <a href="https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Omnipod.20Pairing.20Issues">Zulipchat here</a> with a short explanation of what happened.</p>
-<h2 id="what-about-other-pod-start-up-failures">What about other pod start-up failures?<a class="headerlink" href="#what-about-other-pod-start-up-failures" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="what-about-other-pod-start-up-failures">What about other pod start-up failures?<a class="headerlink" href="#what-about-other-pod-start-up-failures" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you have a pod that has already started the priming operation and then has problems either finishing the priming operation or the cannula insertion, then forcing a pod pairing recovery is not possible. If a pod fails during priming or cannula insertion, the pod is no good and it should be deactivated and disposed of properly.</p>
-<h2 id="what-about-that-insulin">What about that insulin?<a class="headerlink" href="#what-about-that-insulin" title="Anchor link to this Header on this Page">¶</a></h2>
+<h2 id="what-about-that-insulin">What about that insulin?<a class="headerlink" href="#what-about-that-insulin" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you have the misfortune of losing a pod during pairing, you can opt to not waste the insulin in that pod. Simply use the same syringe and same fill port on the pod to suck the insulin OUT of the loser pod.</p>
 <p>If you do that, good practice is to make sure that you get that loser pod far away from the process as you go forward. Mark a big "X" on the failed pod and put it in a microwave, or very far away from you, so that it can't interfere with subsequent pod pairing attempts.</p>
-</article>
-</div>
-</div>
-<a class="md-top md-icon" data-md-component="top" data-md-state="hidden" href="#">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path></svg>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
           </a>
-</main>
-<footer class="md-footer">
-<nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Red Loop" class="md-footer__link md-footer__link--prev" href="../yellow-red-loop/" rel="prev">
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</div>
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Previous
-              </span>
-              Red Loop
-            </div>
-</div>
-</a>
-<a aria-label="Next: Omnipod Faults" class="md-footer__link md-footer__link--next" href="../omnipod-faults/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Next
-              </span>
-              Omnipod Faults
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
-</div>
-</a>
-</nav>
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-footer-copyright">
         
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
-          Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
-            Material for MkDocs
+          
+          <a href="../yellow-red-loop/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Red Loop" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                Red Loop
+              </div>
+            </div>
           </a>
+        
+        
+          
+          <a href="../omnipod-faults/" class="md-footer__link md-footer__link--next" aria-label="Next: Omnipod Faults" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+                Omnipod Faults
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-</div>
-</div>
+      
+    </div>
+  </div>
 </footer>
-</div>
-<div class="md-dialog" data-md-component="dialog">
-<div class="md-dialog__inner md-typeset"></div>
-</div>
-<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
-<script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
-<script src="../../javascripts/mathjax.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="../../javascripts/refresh_on_toggle_dark_light.js"></script>
-</body>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4b2c34cd.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
 </html>
