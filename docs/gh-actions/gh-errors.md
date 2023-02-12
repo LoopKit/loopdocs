@@ -106,7 +106,7 @@ Use the [Examine the Error](#examine-the-error) instructions to find your error 
 
 Copy the words on the line below and paste it into the search function for your text editor.
 
-`error: No profile for team '***' matching 'match AppStore com.***.loopkit.Loop.xxx`
+`error: No profile for team '***' matching 'match AppStore`
 
 If that phrase is found, then:
 
@@ -205,7 +205,7 @@ If that phrase is found, then:
 
 Copy the words on the line below and paste it into the search function for your text editor.
 
-`error: Provisioning profile "match AppStore com`
+`error: Provisioning profile "match AppStore`
 
 If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your Loop App Group with one or more identifiers.
 
