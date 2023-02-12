@@ -1,9 +1,11 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: LoopDocs
 
 theme:
     name: material
     language: en
     features:
+        - navigation.footer
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.tracking
@@ -15,12 +17,6 @@ theme:
     logo: loop-logo.png
     favicon: loop-logo.png
     palette:
-        # Palette toggle for automatic mode
-        - media: "(prefers-color-scheme)"
-          toggle:
-            icon: material/brightness-auto
-            name: Switch to light mode
-
         # Palette toggle for light mode
         - media: "(prefers-color-scheme: light)"
           scheme: default
@@ -33,7 +29,7 @@ theme:
           scheme: slate
           toggle:
             icon: material/brightness-4
-            name: Switch to system preference
+            name: Switch to light mode
 
 # repo_url: https://github.com/LoopKit/Loop
 
@@ -55,7 +51,7 @@ markdown_extensions:
         custom_fences:
           - name:  mermaid
             class: mermaid
-            format: !!python/name:mermaid2.fence_mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
     - pymdownx.snippets:
         auto_append:
             - includes/tooltip-list.txt
@@ -67,12 +63,11 @@ markdown_extensions:
 extra_javascript:
     - javascripts/mathjax.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6
-    - https://unpkg.com/mermaid/dist/mermaid.min.js
     - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
     - search
-    - mermaid2
+
 nav:
 - Home: 'index.md'
 - Intro:
