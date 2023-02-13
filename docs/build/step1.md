@@ -40,11 +40,10 @@ If you have access to a computer with MacOS 12.5 or newer, you can skip ahead to
 
 ## Compatible Versions
 
-With the [release of Loop 3](../version/releases.md#loop-3-compatibility), this page is now very simple.
+With the [release of Loop 3](../version/releases.md#loop-3-compatibility):
 
-You must have at least iOS 15.1 on a phone to build Loop 3, but there is no reason not to have the latest operating system on your phone. And there are a lot of security reasons why keeping your iPhone up to date is a good idea.
-
-The Mac operating system must be at least Monterey, macOS 12.5 or higher. The current Mac operating system of Ventura, macOS 13.x is available and works fine to build Loop.
+* Minium Mac operating system is Monterey, macOS 12.5 or higher
+* Mac operating system of Ventura, macOS 13.x is available and works fine to build Loop.
 
 The [Loop and Learn Version Updates](https://www.loopandlearn.org/version-updates) page posts an update every time a new iOS is released and tested. That page is typically updated faster than LoopDocs and reports changes, if any, to the minimum Xcode or macOS.
 
