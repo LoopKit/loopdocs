@@ -2350,10 +2350,13 @@
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Summary</p>
-<p>There are two options: Paid ($99/year) or Free (re-build weekly)</p>
+<p>There are two options: Paid ($99/year) or Free (re-build weekly, <abbr title="program used to build an app">Xcode</abbr> only)</p>
 <ul>
 <li>Paid Developer Account: Go to the <a href="https://developer.apple.com/programs/enroll/">Apple Developer website</a> to enroll in an individual account.</li>
-<li>Free: No action required at this time.</li>
+<li>Free: No action required at this time.<ul>
+<li>Free requires you to use the Mac / <abbr title="program used to build an app">Xcode</abbr> build method</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="admonition question">
@@ -2373,7 +2376,7 @@
 <p>Sharing an Apple ID among two or more loopers can cause safety issues. You don't want Sally to be dosed for Joe's lunch in addition to her own and vice versa.</p>
 <ul>
 <li>The recommendation for Health Permissions for <a href="../health/#loop-permissions">Loop 2.2.x</a> has changed to no longer provide permission to read Carbohydrates from Apple Health</li>
-<li><abbr title="Latest release with major updates">Loop 3</abbr> does not read Carbohydrates from Apple Health</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> does not read Carbohydrates from Apple Health by default, but if you need that feature, you can <a href="../code_customization/#build-time-features">modify your feature flags</a>.</li>
 </ul>
 </div>
 <h2 id="developer-account">Developer Account<a class="headerlink" href="#developer-account" title="Anchor link to this Header on this Page">&para;</a></h2>
