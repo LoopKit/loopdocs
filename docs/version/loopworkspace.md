@@ -295,7 +295,7 @@ If you got a error message the # you requested `did not match any file(s) known 
 
 If you have modified anything in a submodule folder on your computer, it might be in conflict with the latest commit.
 
-If you get a messages such as this:
+If you get a message such as this:
 
 ```
   error: Your local changes to the following files would be overwritten by checkout:
@@ -336,7 +336,7 @@ There are 2 main ways to do this.
 
 !!! info "Average Loopers can skip this whole section...it's for Developers mostly"
 
-    This whole section about non-LoopKit workspace clones is something almost every Looper can totally skip over. I'm only writing up this section for people who are interested in dabbling in code collaborations/customizations that they would want to maintain separate from LoopKit proper.
+    This whole section about non-LoopKit workspace clones is something almost every Looper can totally skip over. I'm only writing up this section for people who are interested in dabbling in code collaborations/customizations that they would want to maintain separately from LoopKit proper.
 
 Scenario: You have a friend named DeveloperBob who has his own version of LoopWorkspace that he's customized. DeveloperBob wants you to look at his code customizations and collaborate with him. You need to change the "git clone" command to get DeveloperBob's version, not LoopKit's version. And, you'd want to make sure you specify the branch that the new feature is on, too. DeveloperBob should usually include the branch name when he posts/shares. So, the command line might be edited to something like:
 

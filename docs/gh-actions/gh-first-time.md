@@ -509,7 +509,7 @@ MATCH_PASSWORD
 Once all six secrets have been added to your LoopWorkspace, you are done with Settings. Your screen should look similar to the graphic below.
 
 * Take a moment to be sure all of your secrets are spelled correctly
-* If you notice a mistake, just delete the one that is not spelled correctly and add a `New respository secret` with the correct name
+* If you notice a mistake, just delete the one that is not spelled correctly and add a `New repository secret` with the correct name
 
 ![all secrets entered](img/gh-done-adding-secrets.png){width="700"}
 {align="center"}
@@ -641,7 +641,7 @@ If you modified settings for the Loop identifier, the Save button at the top rig
 
 If you did not need to make changes, the Save button will not be active.
 
-* Tap on the `< All Indentifiers` button at top left
+* Tap on the `< All Identifiers` button at top left
 
 The full list of Identifiers should be displayed again.
 
@@ -675,7 +675,7 @@ If you had to modify a given identifier, the Save button at the top right will b
 
 If you did not need to make changes, the Save button will not be active.
 
-* Tap on the `< All Indentifiers` button at top left
+* Tap on the `< All Identifiers` button at top left
 
 The full list of Identifiers should be displayed again.
 
