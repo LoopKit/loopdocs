@@ -589,7 +589,7 @@ If you never built using Xcode, then after successfully performing the Add Ident
 
 #### Previous Xcode Builders
 
-If you have built Loop using Xcode, then at least the Loop identifier will appear with the **NAME** `XC com.TEAMID.loopkit.Loop`. There may be other differences in the **NAME** column, but key off what you see under the **IDENTIFIER** column of the table. Only the six listed in the table below are of interest.
+If you have built Loop using Xcode, then at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **NAME** column. There may be other differences in the **NAME** column, but key off what you see under the **IDENTIFIER** column of the table. Only the six listed in the table below are of interest.
 
 #### Table with Name and Identifier for Loop 3
 
