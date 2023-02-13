@@ -1,15 +1,17 @@
 ## Compatible Computer
 
 !!! info "Time Estimate"
+    **If you are building with a Mac and Xcode:**
+
     - 5 minutes, if you have a Mac with Monterey (macOS 12.5) or higher
-        - As of Oct 2022, Ventura (macOS 13.x) works with Loop, is  available but not (yet) required
+        - Ventura (macOS 13.x) can be used to build Loop, but is not (yet) required
     - 30-60 minutes, if you need to install macOS updates
 
     Hint: OS stands for Operating System
 
 !!! danger "New Method (Loop 3):"
 
-    If you do not have a Mac, and you want to build [Loop 3](../gh-actions/gh-overview.md), you can do this with any browser
+    If you do not have a Mac, you can build Loop 3 with any computer using a browser. If you want to use that method, review this list and head over to [Browser Build](../gh-actions/gh-overview.md).
 
     - You need a paid ($99/year) [Apple Developer Account](step6.md)
     - You need an account (free) with [github](https://github.com)
@@ -17,7 +19,7 @@
     - You need a [compatible Pump](step3.md) and [CGM](step4.md) if you want to actually Loop (and not just explore the app)
 
 !!! abstract "Summary"
-    Your computer, iPhone and Xcode must have compatible versions to build Loop.
+    Your computer, iPhone and Xcode must have compatible versions to build Loop with the Mac / Xcode method.
 
     * A summary list of [Compatible Versions](#compatible-versions) is found on this page with more detail in a later page
 
@@ -25,10 +27,9 @@
 
 
 !!! question "FAQs"
-    - **"Do I need a Mac or Virtual Machine?."** Yes if you are building the released version of Loop. The next version of [Loop (currently under development)](build-select-dev.md), can be built without a computer using github.
-    - **"Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can. Please read this FAQ about using a [Virtual Machine](../faqs/FAQs.md#can-i-use-a-pc-or-windows-computer-to-build).
-    - **"Can I borrow someone else's Apple computer?"** Please see this FAQ about [Borrowing a Computer](../faqs/FAQs.md#do-i-need-to-own-my-own-apple-computer).
-    - **"How often do I need to use the computer?"** Computer access is required when
+    - **"Do I need a Mac or Virtual Machine?."** Not any more! You can build [Loop 3](../gh-actions/gh-overview.md) with any browser on any computer.
+    - **"I want to use the Mac / Xcode build method. Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can. Please read this FAQ about using a [Virtual Machine](../faqs/FAQs.md#can-i-use-a-pc-or-windows-computer-to-build).
+    - **"How often do I need to use the computer if I choose the Mac / Xcode build method?"** Computer access is required when
         * Initially installing the Loop app
         * Loop app expires (Annually for a paid account or weekly for a free account)
         * Updating to a newer Loop release
@@ -39,23 +40,22 @@ If you have access to a computer with MacOS 12.5 or newer, you can skip ahead to
 
 ## Compatible Versions
 
-The minimum macOS depends on the iOS of your iPhone/iPod.  Monterey is **required** to build on any iPhone with an iOS version starting with iOS 15.4 and can be used to build Loop for **any** of the phone iOS versions listed below. Higher values of iOS might trigger the need for an update to macOS or Xcode. Ventura is available and works to build Loop but is not required.
+With the [release of Loop 3](../version/releases.md#loop-3-compatibility), this page is now very simple.
+
+You must have at least iOS 15.1 on a phone to build Loop 3, but there is no reason not to have the latest operating system on your phone. And there are a lot of security reasons why keeping your iPhone up to date is a good idea.
+
+The Mac operating system must be at least Monterey, macOS 12.5 or higher. The current Mac operating system of Ventura, macOS 13.x is available and works fine to build Loop.
 
 The [Loop and Learn Version Updates](https://www.loopandlearn.org/version-updates) page posts an update every time a new iOS is released and tested. That page is typically updated faster than LoopDocs and reports changes, if any, to the minimum Xcode or macOS.
 
 * ** iOS 16 or newer**, the minimum macOS is Monterey (12.5)
-* ** iOS 15.4 or newer**, the minimum macOS is Monterey (12.0)
-* ** iOS 15 - 15.3.1**, the minimum macOS is Big Sur (11.3)
-* ** iOS 14.5**, the minimum macOS is Big Sur (11.0)
+* Loop 3, the minimum macOS is Monterey (12.5)
 
-If your macOS does not meet the minimum, check to see if you can [update your macOS](#check-your-macos-version)
-
-If you are an **existing Looper with an older macOS**, please click to [Read the Warning](#older-operating-system-warning) **before** you update your phone to iOS 15.
-
+If your macOS does not meet the minimum, check to see if you can [update your macOS](#check-your-macos-version) or consider using the [Browser Build](../gh-actions/gh-overview.md) method, which works on any computer.
 
 !!! warning "iOS Dictates Your Computer Needs"
 
-    The more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS needs to be to build Loop. A new build is required at least once a year. More information on iOS is in [Download Xcode](step8.md#download-xcode).
+    The more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS needs to be to build Loop with the Mac / Xcode build method. A new build is required at least once a year. More information on iOS is in [Download Xcode](step8.md#download-xcode).
 
 Do not use any of the beta macOS versions. (If you don't know what that means, you aren't using one.)
 
@@ -137,21 +137,11 @@ Several experienced Loopers have reported success using OpenCore-Legacy-Patcher 
 
 Or - look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no Mac computer required, no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required).
 
-## Older Operating System Warning
-
-!!! warning "Check before Upgrading iPhone"
-
-    If you built Loop with Catalina (macOS 10.15.x):
-    
-    - DO NOT UPGRADE your phone to iOS 15
-    - FIRST upgrade to at least Xcode 13, build the app on your phone
-    - THEN upgrade to iOS 15
-    - Otherwise you will get the dreaded ["Loop" is no longer available](updating.md#loop-is-no-longer-available) and need to rush through the updating Loop steps
-    
-    If this happens to you, your pod will continue delivering basal, but you will not be able to bolus.
-
 ## Next Step:
 
 If you already have an [Apple Developer ID](step6.md) or you are using a free ID, next step is [Download Xcode](step8.md).
+
+!!! warning "Free ID"
+    The free ID method only works when using the Mac / Xcode build method. The [Browser Build](../gh-actions/gh-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.
 
 
