@@ -95,7 +95,7 @@ Now...look carefully and notice two things...that command is getting (1) the ver
 
 So, you will need to edit that "branch-name" before using the command so that you are getting started with the branch you want. If you want to clone from a different fork, the LoopKit will be replaced with the name of the github site for the fork. For example, to test dev (which is under development and has some cool new architecture and features), you would copy/paste:
 
-```
+``` { .bash .copy }
 git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
 ```
 
@@ -104,7 +104,7 @@ git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorks
 
 If you want to start the build from the command line, enter the following 2 lines into the terminal and skip ahead to [Building LoopWorkspace](#building-loopworkspace)
 
-```
+``` { .bash .copy }
 cd LoopWorkspace
 xed .
 ```
@@ -155,15 +155,15 @@ When it's time to update the copy of LoopWorkspace on your computer - you have c
 Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../build/code_customization.md#open-a-terminal-in-loopworkspace-folder)
 
 1. Make sure you are in the correct branch using this git command:
-    ```
+    ``` { .bash .copy }
     git branch
     ```
 1. If you are not in the correct branch, for example `dev`, then issue this git command (suitably modified for the desired branch)
-    ```
+    ``` { .bash .copy }
     git checkout dev
     ```
 1. Use the following git commands in the LoopWorkspace folder of your terminal:
-    ```
+    ``` { .bash .copy }
     git fetch
     git pull --recurse
     ```
@@ -182,15 +182,15 @@ For example, suppose you want to checkout LoopWorkspace commit bde44b5, but noth
 Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../build/code_customization.md#open-a-terminal-in-loopworkspace-folder). First you have to bring down all the latest dev commits. Then you will back up to the one you want.
 
 1. Make sure you are in the correct branch using this git command:
-    ```
+    ``` { .bash .copy }
     git branch
     ```
 1. If you are not in the correct branch, for example `dev`, then issue this git command (suitably modified for the desired branch)
-    ```
+    ``` { .bash .copy }
     git checkout dev
     ```
 1. Use the following git commands to bring down all the newer commits to your copy:
-    ```
+    ``` { .bash .copy }
     git fetch
     git pull --recurse
     ```
@@ -215,7 +215,7 @@ This command deletes derived data stored across all workspaces and projects by X
 
 Copy and paste this command into a terminal window.
 
-``` title="Copy and Paste to Delete Derived Data"
+``` { .bash .copy title="Copy and Paste to Delete Derived Data" }
 rm -rf ~/Library/Developer/Xcode/DerivedData
 ```
 
@@ -312,7 +312,7 @@ The easiest fix is to type commands similar to the following, where you modify L
 ```
 
 After stashing and updating with no errors, you can try to restore your changes:
-```
+```  { .bash .copy }
   cd Loop; git stash pop; cd ..
 ```
 

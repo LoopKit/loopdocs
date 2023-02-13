@@ -483,22 +483,22 @@ Take a calming breath. This next part requires care.
     * If it is not, all will appear fine until you try to Build Loop and then you will get failures
 
 For each of the following secrets, follow the directions below - this list is configured with a copy button when you hover to the right of each word - this helps avoid spelling errors.
-```
+``` { .text .copy }
 TEAMID
 ```
-```
+``` { .text .copy }
 FASTLANE_ISSUER_ID
 ```
-```
+``` { .text .copy }
 FASTLANE_KEY_ID
 ```
-```
+``` { .text .copy }
 FASTLANE_KEY
 ```
-```
+``` { .text .copy }
 GH_PAT
 ```
-```
+``` { .text .copy }
 MATCH_PASSWORD
 ```
 
