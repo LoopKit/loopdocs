@@ -13,6 +13,7 @@ theme:
         - search.suggest
         - search.highlight
         - content.code.annotate
+        - content.code.copy
         - content.tooltips
     logo: loop-logo.png
     favicon: loop-logo.png
