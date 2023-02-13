@@ -1040,6 +1040,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#carb-ratios" class="md-nav__link">
+    Carb Ratios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#basal-rates" class="md-nav__link">
     Basal Rates
   </a>
@@ -1049,13 +1056,6 @@
           <li class="md-nav__item">
   <a href="#delivery-limits" class="md-nav__link">
     Delivery Limits
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#carb-ratios" class="md-nav__link">
-    Carb Ratios
   </a>
   
 </li>
@@ -2455,6 +2455,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#carb-ratios" class="md-nav__link">
+    Carb Ratios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#basal-rates" class="md-nav__link">
     Basal Rates
   </a>
@@ -2464,13 +2471,6 @@
           <li class="md-nav__item">
   <a href="#delivery-limits" class="md-nav__link">
     Delivery Limits
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#carb-ratios" class="md-nav__link">
-    Carb Ratios
   </a>
   
 </li>
@@ -2667,13 +2667,13 @@
 <li><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr></li>
 <li><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></li>
 <li><abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></li>
+<li>Carb Ratios</li>
 <li>Basal Rates</li>
 <li><abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr><ul>
 <li>Maximum Basal Rate</li>
 <li>Maximum Bolus</li>
 </ul>
 </li>
-<li>Carb Ratios</li>
 <li>Insulin Sensitivites</li>
 </ul>
 </li>
@@ -2721,6 +2721,12 @@
 <p class="admonition-title">Example</p>
 <p>If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you extra insulin to move you towards the lower range number before the meal. This early insulin brings you into the meal with a mini-<abbr title="take some or all of a meal bolus before eating">prebolus</abbr>. The pre-meal range, when activated by pressing on the <a href="../../operation/features/premeal/">pre-meal icon</a> in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.</p>
 </div>
+<h3 id="carb-ratios">Carb Ratios<a class="headerlink" href="#carb-ratios" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Your <a href="../therapy-settings/#carb-ratios">Carb Ratio</a> is the number of grams of carbohydrates covered by one unit of insulin.</p>
+<ul>
+<li>At least one carb ratio (<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>) must be entered</li>
+<li>A daily schedule with varying <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> can be entered</li>
+</ul>
 <h3 id="basal-rates">Basal Rates<a class="headerlink" href="#basal-rates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Only one <a href="../therapy-settings/#basal-rates">Basal Rate</a> schedule may be configured in the Loop app and the schedule must start at midnight.</p>
 <p>If you onboard basal rates before a pump is added, you are limited to increments of 0.05 U/hr for basal rates and 0.00 U/hr is not allowed. Enter values close to what you actually use because the values determine your maximum basal rate in the <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>.</p>
@@ -2748,12 +2754,6 @@
 <h4 id="maximum-bolus"><strong>Maximum Bolus</strong><a class="headerlink" href="#maximum-bolus" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p><a href="../therapy-settings/#maximum-bolus">Maximum Bolus</a> is the highest bolus amount Loop can recommend at one time to cover carbs or bring down high glucose.</p>
 <p>For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.</p>
-<h3 id="carb-ratios">Carb Ratios<a class="headerlink" href="#carb-ratios" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Your <a href="../therapy-settings/#carb-ratios">Carb Ratio</a> is the number of grams of carbohydrates covered by one unit of insulin.</p>
-<ul>
-<li>At least one carb ratio (<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>) must be entered</li>
-<li>A daily schedule with varying <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> can be entered</li>
-</ul>
 <h3 id="insulin-sensitivities">Insulin Sensitivities<a class="headerlink" href="#insulin-sensitivities" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Your <a href="../therapy-settings/#insulin-sensitivities">Insulin Sensitivity Factor</a> is the drop in glucose expected from one unit of insulin over the entire duration of insulin activity. It may be different than the correction factor used with shots or manual pumping. Loop uses your <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> every 5 minutes when calculating predicted glucose levels.</p>
 <ul>

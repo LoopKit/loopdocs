@@ -3427,8 +3427,7 @@
 <p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result.svg" width="700" /></p>
 <h2 id="configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop<a class="headerlink" href="#configure-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="create-app-group">Create <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr><a class="headerlink" href="#create-app-group" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> already exists if you previously built Loop using <abbr title="program used to build an app">Xcode</abbr> with this Apple Developer ID.</p>
-<p>If you built Loop via <abbr title="program used to build an app">Xcode</abbr>, skip ahead to <a href="#find-loop-identifier">Find Loop Identifier</a>.</p>
+<p>The Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> already exists if you previously built Loop using <abbr title="program used to build an app">Xcode</abbr> with this Apple Developer ID. If that is the case, skip ahead to <a href="#find-loop-identifier">Find Loop Identifier</a>.</p>
 <p>If you have never built Loop with <abbr title="program used to build an app">Xcode</abbr> using your TEAMID, you need to create an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> associated with your TEAMID.</p>
 <ol>
 <li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/">Register an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></a> on the apple developer site.</li>
@@ -3443,50 +3442,59 @@
 <h3 id="find-loop-identifier">Find Loop Identifier<a class="headerlink" href="#find-loop-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> on the apple developer site.</p>
 <h4 id="new-builders">New Builders<a class="headerlink" href="#new-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If you never built using <abbr title="program used to build an app">Xcode</abbr>, then after successfully performing the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Action, you will see these six items under <code>NAME</code>.</p>
-<ul>
-<li>Loop</li>
-<li>Loop Intent Extension</li>
-<li>Loop Status Extension</li>
-<li>Small Status Widget</li>
-<li>WatchApp</li>
-<li>WatchAppExtension</li>
-</ul>
-<h4 id="xcode-builders"><abbr title="program used to build an app">Xcode</abbr> Builders<a class="headerlink" href="#xcode-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>If you never built using <abbr title="program used to build an app">Xcode</abbr>, then after successfully performing the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Action, you will see the six items listed under <strong>NAME</strong> in the table below with the associated <strong>IDENTIFIER</strong> information, where your developer ID replaces the TEAMID in the identifier.</p>
+<h4 id="previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders<a class="headerlink" href="#previous-xcode-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>If you have built Loop using <abbr title="program used to build an app">Xcode</abbr>, then at least the Loop identifier will appear as <code>XC com.TEAMID.loopkit.Loop</code> under the <strong>NAME</strong> column. There may be other differences in the <strong>NAME</strong> column, but key off what you see under the <strong>IDENTIFIER</strong> column of the table. Only the six listed in the table below are of interest.</p>
+<h4 id="table-with-name-and-identifier-for-loop-3">Table with Name and Identifier for <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#table-with-name-and-identifier-for-loop-3" title="Anchor link to this Header on this Page">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>NAME</th>
+<th>IDENTIFIER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loop</td>
+<td>com.TEAMID.loopkit.Loop</td>
+</tr>
+<tr>
+<td>Loop Intent Extension</td>
+<td>com.TEAMID.loopkit.Loop.Loop-Intent-Extension</td>
+</tr>
+<tr>
+<td>Loop Status Extension</td>
+<td>com.TEAMID.loopkit.Loop.statuswidget</td>
+</tr>
+<tr>
+<td>Small Status Widget</td>
+<td>com.TEAMID.loopkit.Loop.SmallStatusWidget</td>
+</tr>
+<tr>
+<td>WatchApp</td>
+<td>com.TEAMID.loopkit.Loop.LoopWatch</td>
+</tr>
+<tr>
+<td>WatchAppExtension</td>
+<td>com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension</td>
+</tr>
+</tbody>
+</table>
 <div class="admonition warning">
 <p class="admonition-title">Loop 2 to <abbr title="Latest release with major updates">Loop 3</abbr> Builders</p>
 <p>Several people who built earlier versions of Loop with <abbr title="program used to build an app">Xcode</abbr> and are using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method say they can't find the identifier names.</p>
 <p>If that is happening to you, follow the <a href="#delete-identifiers">Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> instructions and then run Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> again. You might not be able to delete the "Loop" identifier, so it will still begin with XC, but the others will appear with the short names shown above.</p>
 </div>
-<p>If you have built Loop using <abbr title="program used to build an app">Xcode</abbr>, then at least the Loop identifier will appear with the name <code>XC com.TEAMID.loopkit.Loop</code>. There may be other names that start with XC and have other ending words; they can be ignored. Only the six listed above are of interest, and only the first four of those need to be associated with your unique <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>. If you are bothered by a lot of extra identifiers and want yours to look more like those in the list above, see <a href="#delete-identifiers">Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>. It is not necessary to delete them, your choice.</p>
-<ul>
-<li>The names you see if you previously built with <abbr title="program used to build an app">Xcode</abbr> depend on if you previously built Loop 2.2.x or an early version of <abbr title="Latest release with major updates">Loop 3</abbr> while it was still the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>While the exact name might be different from those seen by people who have never built, it is ok - the build should still work</li>
-<li>The directions with the Identifier names that do not start with XC are correct for people who have never built Loop with <abbr title="program used to build an app">Xcode</abbr></li>
-</ul>
-<h4 id="all-builders">All Builders<a class="headerlink" href="#all-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The graphic below shows the identifiers before (top portion) and after (lower portion) the Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> is executed for an individual who previously built Loop 2.2.9. The green rectangles highlight the four identifiers that need to be updated before moving on to the Create Certificates step.</p>
-<p align="center"><img alt="identifier before and after action if used xcode before" src="../img/app-group-id-xc-build.svg" width="600" /></p>
-<h4 id="new-builders_1">New Builders<a class="headerlink" href="#new-builders_1" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If you never built with <abbr title="program used to build an app">Xcode</abbr>, you will be associating the Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> you just created with the Loop identifier and adding Time Sensitive Notifications capability to the Loop identifier.</p>
-<h4 id="xcode-builders_1"><abbr title="program used to build an app">Xcode</abbr> Builders<a class="headerlink" href="#xcode-builders_1" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If you have built with <abbr title="program used to build an app">Xcode</abbr>, you will be verifying the Loop identifier is properly configured including the Time Sensitive Notifications. (For Loop v2.2.x, you may need to add this.)</p>
-<h4 id="all-builders_1">All Builders<a class="headerlink" href="#all-builders_1" title="Anchor link to this Header on this Page">&para;</a></h4>
-<div class="admonition tips">
-<p class="admonition-title">Look out for Other Apps</p>
-<p>There are other apps in the Loop universe that may show up with different App Groups. That's OK. Just make sure you select the Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> for Loop.</p>
-<p>Example: Loop Follow users may see more than one Option in the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> Assignment dialog box. For Loop, select the one with group.com.TEAMID.loopkit.LoopGroup that uses your TEAMID.</p>
-<p>NOTE: as of Jan 2023, this <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> has now been removed from Loop Follow - it is not needed.  See <a href="../gh-other-apps/">Other Apps</a> for instructions on building Loop Follow with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
-</div>
 <h3 id="add-or-review-configuration-for-loop-identifier">Add or Review Configuration for Loop Identifier<a class="headerlink" href="#add-or-review-configuration-for-loop-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Find and click on the Loop identifier row to see the <code>Edit Your App ID Configuration</code> screen. You will be taking two actions for this identifier.</p>
+<p>Find and click on the Loop identifier row on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</p>
+<p>The <code>Edit Your App ID Configuration</code> screen will open. You will be taking two actions for the Loop identifier.</p>
 <ol>
 <li>Looking at the App Services column, scroll down to the App Groups row<ul>
-<li>Ensure the check box under Capabilities is checked</li>
+<li>Ensure the check box under Capabilities for App Groups is checked</li>
 <li>(XC Loop) - If the word Edit shows up under NOTES, move on to step 2 below</li>
-<li>(Loop) - If the word Configure shows up, tap on it<ul>
+<li>If the word Configure shows up, tap on it<ul>
 <li>This opens the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> Assignment screen</li>
-<li>Check the box by group.com.TEAMID.loopkit.LoopGroup that uses your TEAMID and then Continue</li>
+<li>Check the box by Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> that uses your TEAMID in group.com.TEAMID.loopkit.LoopGroup and then Continue</li>
 </ul>
 </li>
 </ul>
@@ -3499,52 +3507,73 @@
 </ul>
 <p align="center"><img alt="time sensitive notification" src="../img/add-time-sensitive-to-loop.png" width="600" /></p>
 </li>
-</ol>
-<p>If you modify settings for the Loop identifier, the Save button at the top right will become active</p>
+<li>
+<p>Now scroll slowly back up to the top of the page. As you go, confirm that each of these is configured with a check mark; if any are missing, click to enable.</p>
 <ul>
-<li>Review your changes and then tap on Save</li>
+<li>Time Sensitive Notifications</li>
+<li>SiriKit</li>
+<li>Push Notifications</li>
+<li>HealthKit</li>
+<li>App Groups (enabled with group.com.TEAMID.loopkit.LoopGroup)</li>
+</ul>
+</li>
+</ol>
+<p>If you modified settings for the Loop identifier, the Save button at the top right will become active. Click on Save before leaving this page - otherwise the change does not take effect.</p>
+<ul>
+<li>Tap on Save</li>
 <li>This opens the Modify App Capabilities confirmation screen</li>
 <li>Click on Confirm</li>
 </ul>
 <p>If you did not need to make changes, the Save button will not be active.</p>
 <ul>
-<li>Review the configuration and then tap on the <code>&lt; All Indentifiers</code> button at top left</li>
+<li>Tap on the <code>&lt; All Indentifiers</code> button at top left</li>
 </ul>
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
 <h3 id="add-app-group-to-other-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-app-group-to-other-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This step depends on whether you previously built <abbr title="Latest release with major updates">Loop 3</abbr> (or if you built when it was the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but after the new status widget was added). If so, you can skip this step. To be cautious, confirm each identifier is properly associated with your <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>.</p>
-<ul>
-<li>If you never built Loop with <abbr title="program used to build an app">Xcode</abbr>, you will need to Configure each Identifier</li>
-<li>If you built Loop 2.2.x (or FreeAPS) with <abbr title="program used to build an app">Xcode</abbr>, you will need to Configure each Identifier</li>
-<li>If you built <abbr title="Latest release with major updates">Loop 3</abbr> with <abbr title="program used to build an app">Xcode</abbr>, make sure you see Edit (not Configure) for each Identifier; if one shows Configure, then you must configure that identifier as detailed below</li>
-</ul>
-<p>For the next three identifiers, make sure the associated <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> is group.com.TEAMID.loopkit.LoopGroup, with your TEAMID. This step will be repeated once for each of these identifiers.</p>
-<ul>
-<li>Loop Intent Extension</li>
-<li>Loop Status Extension</li>
-<li>Small Status Widget</li>
-</ul>
-<p>Find and click on the identifier row to see the <code>Edit Your App ID Configuration</code> screen.</p>
+<p>You will now be checking the status for 3 more identifiers to ensure the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> is configured to use the Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>. You must add or confirm the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> for these 3 identifiers:</p>
+<table>
+<thead>
+<tr>
+<th>NAME</th>
+<th>IDENTIFIER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loop Intent Extension</td>
+<td>com.TEAMID.loopkit.Loop.Loop-Intent-Extension</td>
+</tr>
+<tr>
+<td>Loop Status Extension</td>
+<td>com.TEAMID.loopkit.Loop.statuswidget</td>
+</tr>
+<tr>
+<td>Small Status Widget</td>
+<td>com.TEAMID.loopkit.Loop.SmallStatusWidget</td>
+</tr>
+</tbody>
+</table>
+<p>Find and click on a given identifier row on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</p>
+<p>The <code>Edit Your App ID Configuration</code> screen will open. You will be taking one actions for each of these three identifiers.</p>
 <p>Looking at the App Services column, scroll down to the App Groups row</p>
 <ul>
-<li>Ensure the check box under Capabilities is checked</li>
-<li>If you see the word Edit, you can return to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and move on the to next one</li>
-<li>If you see the word Configure, click on it<ul>
+<li>Ensure the check box under Capabilities for App Groups is checked</li>
+<li>If the word Edit shows up under NOTES, return to the identifiers list</li>
+<li>If the word Configure shows up, tap on it<ul>
 <li>This opens the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> Assignment screen</li>
-<li>Check the box by group.com.TEAMID.loopkit.LoopGroup, with your TEAMID</li>
-<li>Click on Continue</li>
+<li>Check the box by Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> that uses your TEAMID in group.com.TEAMID.loopkit.LoopGroup and then Continue</li>
 </ul>
 </li>
 </ul>
-<p>Once you have finished modifying a given identifier, the Save button at the top right will become active</p>
+<p>If you had to modify a given identifier, the Save button at the top right will become active</p>
 <ul>
-<li>Review your changes and then tap on Save</li>
+<li>Tap on Save</li>
 <li>This opens the Modify App Capabilities confirmation screen</li>
 <li>Click on Confirm</li>
 </ul>
 <p>If you did not need to make changes, the Save button will not be active.</p>
 <ul>
-<li>Review the configuration and then tap on the <code>&lt; All Indentifiers</code> button at top left</li>
+<li>Tap on the <code>&lt; All Indentifiers</code> button at top left</li>
 </ul>
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
 <h2 id="create-loop-app-in-app-store-connect">Create Loop App in App Store Connect<a class="headerlink" href="#create-loop-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
