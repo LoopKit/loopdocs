@@ -25,7 +25,7 @@ The RileyLink compatible device is required to allow your phone to talk to Compa
 !!! abstract "Details for RileyLink"
     The RileyLink compatible device is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by select Medtronic and Omnipod pumps.
 
-The development branch of Loop (currently being tested) has Omnipod DASH support, among other new features. When using Omnipod DASH, the RileyLink compatible device is not necessary.  If you are using Medtronic or Omnipod (Eros, not DASH), you still need the device regardless of which version of Loop you are running.
+[Loop 3](../version/releases.md#loop-3-compatibility) has Omnipod DASH support, among other new features. When using Omnipod DASH, the RileyLink compatible device is not necessary.  If you are using Medtronic or Omnipod (Eros, not DASH), you still need the device regardless of which version of Loop you are running.
 
 Medtronic and Omnipod Eros pumps require a RileyLink compatible device.
 
