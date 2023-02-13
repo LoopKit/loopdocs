@@ -1,6 +1,6 @@
 ## Using GitHub to Build Other Apps
 
-Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe are adding the same features.
+Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe began to add the same feature.
 
 The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your Apple Developer ID and your GitHub account. As other apps are updated, they will be added to this page and the list below will be updated.
 

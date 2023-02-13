@@ -568,9 +568,7 @@ The Add Identifier Action should complete (succeed or fail) in a few minutes as 
 
 ### Create App Group
 
-The Loop App Group already exists if you previously built Loop using Xcode with this Apple Developer ID.
-
-If you built Loop via Xcode, skip ahead to [Find Loop Identifier](#find-loop-identifier).
+The Loop App Group already exists if you previously built Loop using Xcode with this Apple Developer ID. If that is the case, skip ahead to [Find Loop Identifier](#find-loop-identifier).
 
 If you have never built Loop with Xcode using your TEAMID, you need to create an App Group associated with your TEAMID.
 
@@ -587,62 +585,40 @@ Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https:/
 
 #### New Builders
 
-If you never built using Xcode, then after successfully performing the Add Identifiers Action, you will see these six items under `NAME`.
+If you never built using Xcode, then after successfully performing the Add Identifiers Action, you will see the six items listed under **NAME** in the table below with the associated **IDENTIFIER** information, where your developer ID replaces the TEAMID in the identifier.
 
-* Loop
-* Loop Intent Extension
-* Loop Status Extension
-* Small Status Widget
-* WatchApp
-* WatchAppExtension
+#### Previous Xcode Builders
 
-#### Xcode Builders
+If you have built Loop using Xcode, then at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **NAME** column. There may be other differences in the **NAME** column, but key off what you see under the **IDENTIFIER** column of the table. Only the six listed in the table below are of interest.
+
+#### Table with Name and Identifier for Loop 3
+
+| NAME | IDENTIFIER |
+|-------|------------|
+| Loop | com.TEAMID.loopkit.Loop |
+| Loop Intent Extension | com.TEAMID.loopkit.Loop.Loop-Intent-Extension |
+| Loop Status Extension | com.TEAMID.loopkit.Loop.statuswidget |
+| Small Status Widget | com.TEAMID.loopkit.Loop.SmallStatusWidget |
+| WatchApp | com.TEAMID.loopkit.Loop.LoopWatch |
+| WatchAppExtension | com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension |
 
 !!! warning "Loop 2 to Loop 3 Builders"
     Several people who built earlier versions of Loop with Xcode and are using the GitHub method say they can't find the identifier names.
 
     If that is happening to you, follow the [Delete Identifiers](#delete-identifiers) instructions and then run Action: Add Identifiers again. You might not be able to delete the "Loop" identifier, so it will still begin with XC, but the others will appear with the short names shown above.
 
-If you have built Loop using Xcode, then at least the Loop identifier will appear with the name `XC com.TEAMID.loopkit.Loop`. There may be other names that start with XC and have other ending words; they can be ignored. Only the six listed above are of interest, and only the first four of those need to be associated with your unique App Group. If you are bothered by a lot of extra identifiers and want yours to look more like those in the list above, see [Delete Identifiers](#delete-identifiers). It is not necessary to delete them, your choice.
-
-* The names you see if you previously built with Xcode depend on if you previously built Loop 2.2.x or an early version of Loop 3 while it was still the dev branch
-* While the exact name might be different from those seen by people who have never built, it is ok - the build should still work
-* The directions with the Identifier names that do not start with XC are correct for people who have never built Loop with Xcode
-
-#### All Builders
-
-The graphic below shows the identifiers before (top portion) and after (lower portion) the Action: Add Identifiers is executed for an individual who previously built Loop 2.2.9. The green rectangles highlight the four identifiers that need to be updated before moving on to the Create Certificates step.
-
-![identifier before and after action if used xcode before](img/app-group-id-xc-build.svg){width="600"}
-{align="center"}
-
-#### New Builders
-
-If you never built with Xcode, you will be associating the Loop App Group you just created with the Loop identifier and adding Time Sensitive Notifications capability to the Loop identifier.
-
-#### Xcode Builders
-
-If you have built with Xcode, you will be verifying the Loop identifier is properly configured including the Time Sensitive Notifications. (For Loop v2.2.x, you may need to add this.)
-
-#### All Builders
-
-!!! tips "Look out for Other Apps"
-    There are other apps in the Loop universe that may show up with different App Groups. That's OK. Just make sure you select the Loop App Group for Loop.
-
-    Example: Loop Follow users may see more than one Option in the App Group Assignment dialog box. For Loop, select the one with group.com.TEAMID.loopkit.LoopGroup that uses your TEAMID.
-
-    NOTE: as of Jan 2023, this App Group has now been removed from Loop Follow - it is not needed.  See [Other Apps](gh-other-apps.md) for instructions on building Loop Follow with GitHub.
-
 ### Add or Review Configuration for Loop Identifier
 
-Find and click on the Loop identifier row to see the `Edit Your App ID Configuration` screen. You will be taking two actions for this identifier.
+Find and click on the Loop identifier row on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
+
+The `Edit Your App ID Configuration` screen will open. You will be taking two actions for the Loop identifier.
 
 1. Looking at the App Services column, scroll down to the App Groups row
-    * Ensure the check box under Capabilities is checked
+    * Ensure the check box under Capabilities for App Groups is checked
     * (XC Loop) - If the word Edit shows up under NOTES, move on to step 2 below
-    * (Loop) - If the word Configure shows up, tap on it
+    * If the word Configure shows up, tap on it
         * This opens the App Group Assignment screen
-        * Check the box by group.com.TEAMID.loopkit.LoopGroup that uses your TEAMID and then Continue
+        * Check the box by Loop App Group that uses your TEAMID in group.com.TEAMID.loopkit.LoopGroup and then Continue
 1. Continue scrolling down to the **Time Sensitive Notifications** row
     * Check, or confirm the box is checked, next to Time Sensitive Notifications as shown in the following graphic
     * This in only needed for the Loop identifier
@@ -650,53 +626,56 @@ Find and click on the Loop identifier row to see the `Edit Your App ID Configura
     ![time sensitive notification](img/add-time-sensitive-to-loop.png){width="600"}
     {align="center"}
 
+1. Now scroll slowly back up to the top of the page. As you go, confirm that each of these is configured with a check mark; if any are missing, click to enable.
+    * Time Sensitive Notifications
+    * SiriKit
+    * Push Notifications
+    * HealthKit
+    * App Groups (enabled with group.com.TEAMID.loopkit.LoopGroup)
 
-If you modify settings for the Loop identifier, the Save button at the top right will become active
+If you modified settings for the Loop identifier, the Save button at the top right will become active. Click on Save before leaving this page - otherwise the change does not take effect.
 
-* Review your changes and then tap on Save
+* Tap on Save
 * This opens the Modify App Capabilities confirmation screen
 * Click on Confirm
 
 If you did not need to make changes, the Save button will not be active.
 
-* Review the configuration and then tap on the `< All Indentifiers` button at top left
+* Tap on the `< All Indentifiers` button at top left
 
 The full list of Identifiers should be displayed again.
 
 ### Add App Group to Other Identifiers
 
-This step depends on whether you previously built Loop 3 (or if you built when it was the dev branch, but after the new status widget was added). If so, you can skip this step. To be cautious, confirm each identifier is properly associated with your App Group.
+You will now be checking the status for 3 more identifiers to ensure the App Group is configured to use the Loop App Group. You must add or confirm the App Group for these 3 identifiers:
 
-* If you never built Loop with Xcode, you will need to Configure each Identifier
-* If you built Loop 2.2.x (or FreeAPS) with Xcode, you will need to Configure each Identifier
-* If you built Loop 3 with Xcode, make sure you see Edit (not Configure) for each Identifier; if one shows Configure, then you must configure that identifier as detailed below
+| NAME | IDENTIFIER |
+|-------|------------|
+| Loop Intent Extension | com.TEAMID.loopkit.Loop.Loop-Intent-Extension |
+| Loop Status Extension | com.TEAMID.loopkit.Loop.statuswidget |
+| Small Status Widget | com.TEAMID.loopkit.Loop.SmallStatusWidget |
 
-For the next three identifiers, make sure the associated App Group is group.com.TEAMID.loopkit.LoopGroup, with your TEAMID. This step will be repeated once for each of these identifiers.
+Find and click on a given identifier row on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
 
-* Loop Intent Extension
-* Loop Status Extension
-* Small Status Widget
-
-Find and click on the identifier row to see the `Edit Your App ID Configuration` screen.
+The `Edit Your App ID Configuration` screen will open. You will be taking one actions for each of these three identifiers.
 
 Looking at the App Services column, scroll down to the App Groups row
 
-* Ensure the check box under Capabilities is checked
-* If you see the word Edit, you can return to Identifiers and move on the to next one
-* If you see the word Configure, click on it
+* Ensure the check box under Capabilities for App Groups is checked
+* If the word Edit shows up under NOTES, return to the identifiers list
+* If the word Configure shows up, tap on it
     * This opens the App Group Assignment screen
-    * Check the box by group.com.TEAMID.loopkit.LoopGroup, with your TEAMID
-    * Click on Continue
+    * Check the box by Loop App Group that uses your TEAMID in group.com.TEAMID.loopkit.LoopGroup and then Continue
 
-Once you have finished modifying a given identifier, the Save button at the top right will become active
+If you had to modify a given identifier, the Save button at the top right will become active
 
-* Review your changes and then tap on Save
+* Tap on Save
 * This opens the Modify App Capabilities confirmation screen
 * Click on Confirm
 
 If you did not need to make changes, the Save button will not be active.
 
-* Review the configuration and then tap on the `< All Indentifiers` button at top left
+* Tap on the `< All Indentifiers` button at top left
 
 The full list of Identifiers should be displayed again.
 

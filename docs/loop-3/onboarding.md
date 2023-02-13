@@ -108,11 +108,11 @@ The therapy settings are the heart of how Loop makes predictions. If your settin
         * Glucose Safety Limit
         * Correction Range
         * Pre-Meal Range
+        * Carb Ratios
         * Basal Rates
         * Delivery Limits
             * Maximum Basal Rate
             * Maximum Bolus
-        * Carb Ratios
         * Insulin Sensitivites
 
 #### Guardrails While Onboarding
@@ -166,6 +166,13 @@ The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, giv
 !!! abstract "Example"
     If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you extra insulin to move you towards the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
+### Carb Ratios
+
+Your [Carb Ratio](therapy-settings.md#carb-ratios) is the number of grams of carbohydrates covered by one unit of insulin.
+
+* At least one carb ratio (CR) must be entered
+* A daily schedule with varying CR can be entered
+
 ### Basal Rates
 
 Only one [Basal Rate](therapy-settings.md#basal-rates) schedule may be configured in the Loop app and the schedule must start at midnight.
@@ -210,13 +217,6 @@ Experienced loopers typically set their maximum basal rate around 3-4 times thei
 [Maximum Bolus](therapy-settings.md#maximum-bolus) is the highest bolus amount Loop can recommend at one time to cover carbs or bring down high glucose.
 
 For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.
-
-### Carb Ratios
-
-Your [Carb Ratio](therapy-settings.md#carb-ratios) is the number of grams of carbohydrates covered by one unit of insulin.
-
-* At least one carb ratio (CR) must be entered
-* A daily schedule with varying CR can be entered
 
 ### Insulin Sensitivities
 
