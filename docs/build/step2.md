@@ -101,12 +101,6 @@ When iOS updates are released, the [Loop and Learn Version Updates](https://www.
 
 Within a few days, the "All-Clear" or "WAIT there's a problem" will be posted.
 
-!!! warning "Older Builds"
-    Updating to iOS 15 immediately stops the Loop app if it was built with Xcode versions 12.4 or earlier and requires a rebuild to continue Looping**
-
-    - Look at an Issue Report to determine the [Xcode version](../faqs/update-faqs.md#how-can-i-confirm-xcode-version-i-used) used to build Loop on your phone
-
-
 ## Next Step: Compatible Pump
 
 Now you are ready to check if you have a [Compatible Insulin Pump](step3.md).

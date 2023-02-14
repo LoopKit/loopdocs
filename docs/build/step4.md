@@ -10,8 +10,8 @@
 
     - Dexcom G4 Share, G5, G6 or ONE CGM systems
         * Dexcom ONE is available in some countries
+    - Dexcom G7
     - Medtronic sensors connected to a Loop-compatible Medtronic pumps
-
 
 !!! question "FAQs"
 
