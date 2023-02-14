@@ -353,7 +353,7 @@ You must be logged into your GitHub account before starting this step. If you ar
 
 ### Create Match-Secrets
 
-Open your github.com URL (this is `https://github.com/username`) where you replace username with the name you chose above.
+Open your github.com URL (this is `https://github.com/username`) where you replace `username` with the name you chose above.
 
 Create a new private repository - you can either click on the link below, or follow the instructions with the first graphic:
 
@@ -368,9 +368,9 @@ or
 
 This shows you a screen similar to the following graphic which has 3 regions highlighted:
 
-* In Repository name, type Match-Secrets (use a hyphen between Match and Secrets)
+* In `Repository name`, type `Match-Secrets` (use a hyphen between Match and Secrets)
 * Be sure to check the box (red circle) to make the repository **private**
-* **Please confirm you selected Match-Secrets repository as private.**
+* **Please confirm you selected `Match-Secrets` repository as private.**
 * Scroll to the bottom of the pages and tap on "Create Repository"
 
 ![first screen for new repository](img/01-gh-create-match-secrets.png){width="600"}
@@ -502,8 +502,8 @@ GH_PAT
 MATCH_PASSWORD
 ```
 
-* For the FASTLANE_KEY value, copy the entire contents from<br>-----BEGIN PRIVATE KEY-----<br> through<br>-----END PRIVATE KEY-----<br>
-* For MATCH_PASSWORD value - make up a password for this and save it for later use
+* For the `FASTLANE_KEY` value, copy the entire contents from<br>-----BEGIN PRIVATE KEY-----<br> through<br>-----END PRIVATE KEY-----<br>
+* For `MATCH_PASSWORD` value - make up a password for this and save it for later use
     * The MATCH_PASSWORD must be the same for any repository using this method ([Other Apps](gh-other-apps.md))
 
 Once all six secrets have been added to your LoopWorkspace, you are done with Settings. Your screen should look similar to the graphic below.
