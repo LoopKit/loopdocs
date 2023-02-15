@@ -153,7 +153,7 @@ Depending on your iPhone preferences and model, you may have Face ID or Touch ID
 !!! warning "Loop 3"
     For Loop 3, this controls the authorization requirement to modify Therapy Settings as well as to confirm bolus delivery.
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 canEvaluatePolicy(.deviceOwnerAuthentication
 ```
 
@@ -196,7 +196,7 @@ _Code After Modification_
 
 Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in *Think Like A Pancreas* by Gary Scheiner.  With Loop 2.2.x, the lollipop (fast) icon is set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for Loop 3 to 30 minutes, 3 hours and 5 hours respectively.
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
 ```
 
@@ -234,7 +234,7 @@ With Loop 2.2.x, the end of the line has a comment `// %`, whereas with Loop 3, 
 
 **Change just the number and double check that the value is less than 1.**
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 let bolusPartialApplicationFactor
 ```
 
@@ -275,7 +275,7 @@ Any override more than a factor of 2 from 100% can cause Loop predictions to be 
 
 This example customization changes the lower bound for sensitivity to 50% (factor of 2 smaller than 100%) and provides 5% steps.
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 let allScaleFactorPercentages
 ```
 
@@ -298,7 +298,7 @@ _Code After Modification to 50% to 200% by steps of 5%_
 
 During the development of Loop 3, a warning screen was added to the carb entry interface when the entered meal is between 100 and 250 grams, inclusive. The variables that control when the warning screen is shown and that limit the overall maximum for carb entries are stored in the LoopConstants file, where they are used by both direct interaction with the Loop phone and by the remote carb entry checking code.
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 let warningCarbEntryQuantity =
 ```
 
@@ -337,7 +337,7 @@ Users of Loop 2.2.9 and earlier or FreeAPS must use the following method for mod
 Some people want to limit the maximum number of carbs that can be entered in one entry – especially for children or folks who eat lower carb. This helps prevent accidental typos, e.g., entry of 115 g instead of 15 g for a meal.
 
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 maxQuantity =
 ```
 
@@ -369,7 +369,7 @@ Note that Loop does not include the amount of insulin in the prime or insertion 
 
 This code change is found in one location for Eros Pods (called Omnipod throughout the app) and DASH Pods (called Omnipod Dash throughout the app). I tend to change both files, but if you're only using one kind of pod, that is really not necessary.
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 let cannulaInsertionUnitsExtra
 ```
 
@@ -398,7 +398,7 @@ The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-se
 If you build Loop 3 over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.
 
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 Guardrail(absoluteBounds:
 ```
 
@@ -422,7 +422,7 @@ Modify the 67 for suspendThreshold or 87 for correctionRange to the desired valu
 
 Loop 3 limits the future time change allowed to 1 hour.
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 cell.datePicker.maximumDate = date.addingTimeInterval
 ```
 
@@ -453,7 +453,7 @@ There are a number of places where you need to make changes (2 for sensitivity a
 ### Loop 2.2.x Sensitivity
 
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 let rotationsPerIncrement
 ```
 
@@ -464,7 +464,7 @@ let rotationsPerIncrement
 ![img/sensitivity1.png](img/sensitivity2.png){width="800"}
 {align="center"}
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 let rotationsPerValue
 ```
 
@@ -482,7 +482,7 @@ In order to reduce the amount the user has to spin the watch crown to confirm a 
 For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This `Key_Phrase` returns 3 lines, the second 2 of which are the ones in that file where the change is required:
 
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 abs(accumulatedRotation)
 ```
 
@@ -498,7 +498,7 @@ First - try it with no customization. Then make small changes.
 
 This key phrase will indicate three different files in the same folder as shown in the graphic below - you can adjust each in turn as you desire. When you click on the line, the quantity you change is a few lines below where you find the `Key_Phrase`, except for the CarbAndDateInput file.
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 .digitalCrownRotation
 ```
 
@@ -541,11 +541,11 @@ If you prefer a different notification time and frequency, there are two lines y
     * Line 16: modify how long before expiration you get the FIRST notification
     * Line 28: modify how frequently you will be notified
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 expirationAlertWindow: TimeInterval
 ```
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
  minimumTimeBetweenAlerts: TimeInterval
 ```
 
@@ -609,7 +609,7 @@ Please read the nitty-gritty discussion that went into the development of the "e
 
 If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices.
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 MARK: - Model generation
 ```
 

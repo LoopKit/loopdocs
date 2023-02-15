@@ -89,7 +89,7 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
     or more experienced folks may want to just paste this command into their terminal:
 
-    ``` title="Copy and Paste to remove Provisioning Profiles"
+    ``` { .sh .copy title="Copy and Paste to remove Provisioning Profiles" }
     rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
     ```
 
@@ -117,7 +117,7 @@ These instructions show each step needed to download Loop using the Build-Select
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say `Copy to Clipboard` when you hover over it). When you click the icon, a message that says `Copied to Clipboard` will appear on your screen.
 
-```title="Copy and Paste to start the BuildLoop.sh script"
+``` { .bash .copy title="Copy and Paste to start the BuildLoop.sh script" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
 ```

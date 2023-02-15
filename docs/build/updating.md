@@ -146,7 +146,7 @@ In order to ensure a full year of use for your Loop app, you need to delete any 
 
     If you are comfortable pasting commands into the terminal, you can delete the provisioning profiles by copying and pasting this command into a terminal window.
 
-    ``` title="Copy and Paste to remove Provisioning Profiles"
+    ``` { .sh .copy title="Copy and Paste to remove Provisioning Profiles" }
     rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
     ```
 
@@ -162,13 +162,13 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 #### Load the Paste Buffer
 
-Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
+Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say `Copy to Clipboard` when you hover over it). When you click the icon, a message that says `Copied to Clipboard` will appear on your screen.
 
-``` title="Run the Build Select script to Clean Profiles & Derived Data"
+``` { .sh .copy title="Run the Build Select script to Clean Profiles & Derived Data" }
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
 ```
 
-Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script.
+Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: ++command+"V"++; or ++control++ click and select from menu or `Edit`-`Paste` at top of Mac screen.) Once the line is pasted, hit return to execute the script.
 
 #### Utilities
 
