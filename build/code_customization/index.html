@@ -2882,7 +2882,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 <p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr></p>
 <p>For <abbr title="Latest release with major updates">Loop 3</abbr>, this controls the authorization requirement to modify <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> as well as to confirm bolus delivery.</p>
 </div>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>canEvaluatePolicy(.deviceOwnerAuthentication
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>canEvaluatePolicy(.deviceOwnerAuthentication
 </code></pre></div>
 <ul>
 <li>Loop 2.2.x<ul>
@@ -2915,7 +2915,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 <h2 id="default-carb-absorption-times">Default Carb Absorption Times<a class="headerlink" href="#default-carb-absorption-times" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p align="center"><img alt="img/carb_screen.png" src="../img/carb_screen.png" width="200" /></p>
 <p>Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <em>Think Like A Pancreas</em> by Gary Scheiner.  With Loop 2.2.x, the lollipop (fast) icon is set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for <abbr title="Latest release with major updates">Loop 3</abbr> to 30 minutes, 3 hours and 5 hours respectively.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
 </code></pre></div>
 <ul>
 <li>
@@ -2948,7 +2948,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 <p>This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modify it once and try it out for a while, it’s easy to go back and change it again.</p>
 <p>With Loop 2.2.x, the end of the line has a comment <code>// %</code>, whereas with <abbr title="Latest release with major updates">Loop 3</abbr>, there is an explanatory comment (line starting with <code>//</code>) before the line.</p>
 <p><strong>Change just the number and double check that the value is less than 1.</strong></p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let bolusPartialApplicationFactor
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let bolusPartialApplicationFactor
 </code></pre></div>
 <ul>
 <li>
@@ -2991,7 +2991,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 </div>
 <p>Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An <a href="../../operation/features/workout/">override</a> is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> for the duration of the override.)</p>
 <p>This example customization changes the lower bound for sensitivity to 50% (factor of 2 smaller than 100%) and provides 5% steps.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let allScaleFactorPercentages
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let allScaleFactorPercentages
 </code></pre></div>
 <ul>
 <li>Loop 2.2.x and <abbr title="Latest release with major updates">Loop 3</abbr><ul>
@@ -3009,7 +3009,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 <h2 id="modify-maximum-and-warning-carb-entry">Modify Maximum and Warning Carb Entry<a class="headerlink" href="#modify-maximum-and-warning-carb-entry" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="loop-3-carb-entry-variables"><abbr title="Latest release with major updates">Loop 3</abbr> Carb Entry Variables<a class="headerlink" href="#loop-3-carb-entry-variables" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>During the development of <abbr title="Latest release with major updates">Loop 3</abbr>, a warning screen was added to the carb entry interface when the entered meal is between 100 and 250 grams, inclusive. The variables that control when the warning screen is shown and that limit the overall maximum for carb entries are stored in the LoopConstants file, where they are used by both direct interaction with the Loop phone and by the remote carb entry checking code.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let warningCarbEntryQuantity =
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let warningCarbEntryQuantity =
 </code></pre></div>
 <p>If you do not find the Key Phrase <code>warningCarbEntryQuantity</code> in the code - you do not have <abbr title="Latest release with major updates">Loop 3</abbr> code. Use the <a href="#loop-22x-max-carb-entry">Loop 2.2.x Max Carb Entry</a> version.</p>
 <p>If you do find that Key Phrase in the code, you have the newer version of <abbr title="Latest release with major updates">Loop 3</abbr>. The max and warning values can be modified in LoopConstants. The variable <code>maxCarbEntryQuantity</code> is found in LoopConstants, two lines earlier than <code>warningCarbEntryQuantity</code>.</p>
@@ -3033,7 +3033,7 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <h3 id="loop-22x-max-carb-entry">Loop 2.2.x Max Carb Entry<a class="headerlink" href="#loop-22x-max-carb-entry" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Users of Loop 2.2.9 and earlier or FreeAPS must use the following method for modifying maximum carb entry:</p>
 <p>Some people want to limit the maximum number of carbs that can be entered in one entry – especially for children or folks who eat lower carb. This helps prevent accidental typos, e.g., entry of 115 g instead of 15 g for a meal.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>maxQuantity =
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>maxQuantity =
 </code></pre></div>
 <p>As shown in the graphic below, this phrase shows up in 2 places, only the first one should be modified.</p>
 <p align="center"><img alt="xcode display showing the key phrase found in 2 places" src="../img/xcode-modify-max-carb-entry.svg" width="700" /></p>
@@ -3054,7 +3054,7 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <p>The default value is 0.0 u of extra insulin.  If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Loop - be conservative.</p>
 <p>Note that Loop does not include the amount of insulin in the prime or insertion steps in your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. The pod reports every pulse that it delivers to Loop. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks.  Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.35 U to the "extra" value, you should get 0.35 / 0.05 = 7 extra clicks. In other words, 17 total clicks after you press insert.</p>
 <p>This code change is found in one location for Eros Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> throughout the app) and DASH Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Dash throughout the app). I tend to change both files, but if you're only using one kind of pod, that is really not necessary.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let cannulaInsertionUnitsExtra
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let cannulaInsertionUnitsExtra
 </code></pre></div>
 <ul>
 <li>Loop 2.2.x: Eros Pod (ones that require a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device)<ul>
@@ -3079,7 +3079,7 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <h2 id="modify-the-guardrails">Modify the <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#modify-the-guardrails" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <a href="../../loop-3/therapy-settings/#guardrails-for-settings">Therapy Setting <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></a> are for <abbr title="Latest release with major updates">Loop 3</abbr> only.</p>
 <p>If you build <abbr title="Latest release with major updates">Loop 3</abbr> over a version of Loop 2.2.x or FreeAPS where the <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>Guardrail(absoluteBounds:
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>Guardrail(absoluteBounds:
 </code></pre></div>
 <ul>
 <li><abbr title="Latest release with major updates">Loop 3</abbr> only<ul>
@@ -3099,7 +3099,7 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <p>Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).</p>
 <h2 id="adjust-future-carbs-time-interval">Adjust Future Carbs Time Interval<a class="headerlink" href="#adjust-future-carbs-time-interval" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><abbr title="Latest release with major updates">Loop 3</abbr> limits the future time change allowed to 1 hour.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval
 </code></pre></div>
 <ul>
 <li><abbr title="Latest release with major updates">Loop 3</abbr> only:<ul>
@@ -3124,7 +3124,7 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 <li>The <abbr title="Latest release with major updates">Loop 3</abbr> customization is provided from code inspection and one test - use with care.</li>
 </ul>
 <h3 id="loop-22x-sensitivity">Loop 2.2.x Sensitivity<a class="headerlink" href="#loop-22x-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let rotationsPerIncrement
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let rotationsPerIncrement
 </code></pre></div>
 <ul>
 <li>Folder: Loop/WatchApp Extension/Controllers</li>
@@ -3132,7 +3132,7 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 <li>Initial Value: 1/24; try 1/12 to increase change in picker value for a given motion</li>
 </ul>
 <p align="center"><img alt="img/sensitivity1.png" src="../img/sensitivity2.png" width="800" /></p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let rotationsPerValue
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let rotationsPerValue
 </code></pre></div>
 <ul>
 <li>Folder: Loop/WatchApp Extension/Controllers</li>
@@ -3143,7 +3143,7 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 <h3 id="loop-22x-bolus-confirmation">Loop 2.2.x Bolus Confirmation<a class="headerlink" href="#loop-22x-bolus-confirmation" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In order to reduce the amount the user has to spin the watch crown to confirm a bolus, there are 3 numbers on 2 lines that must be modified. You will be working in the same file you just used to modify the watch sensitivity to adjusting the bolus amount, BolusInterfaceController.swift.</p>
 <p>For example to change rotation required to 70% of the default, change 1.0 to 0.7 in 3 places on those 2 lines. This <code>Key_Phrase</code> returns 3 lines, the second 2 of which are the ones in that file where the change is required:</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>abs(accumulatedRotation)
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>abs(accumulatedRotation)
 </code></pre></div>
 <ul>
 <li>Folder: Loop/WatchApp Extension/Controllers</li>
@@ -3154,7 +3154,7 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 <p>These are new instructions and the user should take care - and please <a href="../../intro/loopdocs-how-to/#how-to-find-help">report back</a> if you have problems.</p>
 <p>First - try it with no customization. Then make small changes.</p>
 <p>This key phrase will indicate three different files in the same folder as shown in the graphic below - you can adjust each in turn as you desire. When you click on the line, the quantity you change is a few lines below where you find the <code>Key_Phrase</code>, except for the CarbAndDateInput file.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>.digitalCrownRotation
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>.digitalCrownRotation
 </code></pre></div>
 <ul>
 <li>Folder: Loop/WatchApp Extension/Views/Carb Entry &amp; Bolus</li>
@@ -3194,9 +3194,9 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 </ul>
 </li>
 </ul>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>expirationAlertWindow: TimeInterval
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>expirationAlertWindow: TimeInterval
 </code></pre></div>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code> minimumTimeBetweenAlerts: TimeInterval
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code> minimumTimeBetweenAlerts: TimeInterval
 </code></pre></div>
 <p align="center"><img alt="Profile expiration notification details" src="../img/expiration-custom.png" width="600" /></p>
 <p>Default code for line 16:
@@ -3242,7 +3242,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </ul>
 <p>Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this <a href="https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Comment</a>.</p>
 <p>If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices.</p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>MARK: - Model generation
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>MARK: - Model generation
 </code></pre></div>
 <ul>
 <li>Loop 2.2.x<ul>
