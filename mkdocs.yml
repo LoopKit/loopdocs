@@ -46,6 +46,7 @@ markdown_extensions:
           generic: true
     - pymdownx.highlight
     - pymdownx.inlinehilite
+    - pymdownx.keys
     - pymdownx.superfences:
         # make exceptions to highlighting of code:
         custom_fences:
