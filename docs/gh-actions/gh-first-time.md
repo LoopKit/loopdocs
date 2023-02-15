@@ -278,8 +278,8 @@ The Keys screen is seen again with the additional content similar to that shown 
 1. The contents of this file will be used for `FASTLANE_KEY`
 
     * Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines
-        * On a Mac, use CMD-A, then CMD-C to copy all the contents
-        * On a PC, use CTL-A, then CTL-C to copy all the contents
+        * On a **Mac**, use ++command+"A"++, then ++command+"C"++  to copy all the contents
+        * On a **PC**, use ++control+"A"++ , then ++control+"C"++ to copy all the contents
     * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY`
 
     ![img/apns-copy-key.png](../nightscout/img/apns-copy-key.png)

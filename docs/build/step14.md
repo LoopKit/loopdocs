@@ -89,7 +89,7 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
     or more experienced folks may want to just paste this command into their terminal:
 
-    ``` title="Copy and Paste to remove Provisioning Profiles"
+    ``` { .sh .copy title="Copy and Paste to remove Provisioning Profiles" }
     rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
     ```
 
@@ -115,16 +115,16 @@ These instructions show each step needed to download Loop using the Build-Select
  
      You do not need to know about these options to build Loop.
 
-Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
+Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say `Copy to Clipboard` when you hover over it). When you click the icon, a message that says `Copied to Clipboard` will appear on your screen.
 
-```title="Copy and Paste to start the BuildLoop.sh script"
+``` { .bash .copy title="Copy and Paste to start the BuildLoop.sh script" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
 ```
 
-Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.)
+Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: ++command+"V"++ ; or ++control++ click and select from menu or `Edit`-`Paste` at top of Mac screen.)
 
-Read the screen (shown below).  Type 1 and return if you understand the warning and agree.
+Read the screen (shown below).  Type `1` and return if you understand the warning and agree.
 
 * Please read what is on the screen as you progress.
 * Adjust font size as directed if you have difficulty seeing the directions.

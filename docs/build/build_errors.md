@@ -16,8 +16,8 @@ Sometimes, Xcode stops responding. You have to fix this before any of the other 
 
 This can happen sometimes. You just need to force quit Xcode. Sometimes rebooting the Mac may be required, but start with force quit. Then just open up Xcode again and keep going.
 
-* Hold down these 3 keys (Option (or Alt), Command, Esc (Escape)) until the Force Quit menu appears (should be fast)
-* Select Xcode and tap on the Force Quit button
+* Hold down these 3 keys ++option+command+escape++ (or ++alt+command+escape++),  until the `Force Quit` menu appears (should be fast)
+* Select `Xcode` and tap on the `Force Quit` button
 
 ![menu to select application to force quit](img/force-quit.png){width="300"}
 {align="center"}
@@ -25,7 +25,7 @@ This can happen sometimes. You just need to force quit Xcode. Sometimes rebootin
 ## Start with The Obvious Error Causes
 
 !!! info "New Loop Builders"
-    This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Review the "obvious" errors causes first. If that doesn't help, then, skim the page until you reach [Find Your Error Message](build_errors.md#find-your-error-messages) or search the page (Cmd-F) or search LoopDocs for your error. Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
+    This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Review the "obvious" errors causes first. If that doesn't help, then, skim the page until you reach [Find Your Error Message](build_errors.md#find-your-error-messages) or search the page (++command+"F"++) or search LoopDocs for your error. Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
 
 Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:
 
@@ -122,7 +122,7 @@ Therefore, try to resolve your build error yourself. Then, if you need to post f
 
 ## Screenshots
 
-Please take screenshots of your issue and use them in your posts. On an Apple computer, press `shift-command-4` keys at the same time followed by pressing the space bar and then click on the window of interest. The screenshot will be saved to your desktop with a file name starting with the name "Screen Shot". Use screenshots instead of cell phone images or words whenever possible. Screenshots are higher resolution and easier to read.
+Please take screenshots of your issue and use them in your posts. On an Apple computer, press ++shift+command+"4"++ keys at the same time followed by pressing the space bar ++space++ and then click on the window of interest. The screenshot will be saved to your desktop with a file name starting with the name "Screen Shot". Use screenshots instead of cell phone images or words whenever possible. Screenshots are higher resolution and easier to read.
 
 Use the whole Xcode window screenshot when posting for build help.
 
@@ -515,7 +515,7 @@ You can verify the iOS development certificates are working by clicking on "Mana
 {align="center"}
 
 4. Open your Loop project again in Xcode.
-5. In the main Xcode menu (grey menu bar at the very top of your Apple display area), select `Product` and then select the option for `Clean`. (Keyboard shortcut is shift-command-k)
+5. In the main Xcode menu (grey menu bar at the very top of your Apple display area), select `Product` and then select the option for `Clean`.  (Keyboard shortcut is ++shift+command+"K"++)
 6. Now try rebuilding your Loop app.  If you ever get prompted again to allow Xcode access to Keychain, make sure to click on the option to Always Allow.
 
 ### Unrecognized Arguments
