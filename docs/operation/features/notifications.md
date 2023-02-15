@@ -20,7 +20,7 @@ The expiration notification pattern is the same as for the Paid Loop App. You ma
 
 ## Loop App Expiration Date
 
-If you want to see the expiration date at any time, tap on Settings, then tap on Issue Report.  The expiration date is near the top of the report (to the right of ```profileExpiration```).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time is in GMT, so adjust to your own time zone if you procrastinated until the last minute.
+If you want to see the expiration date at any time, tap on Settings, then tap on Issue Report.  The expiration date is near the top of the report (to the right of `profileExpiration`).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time is in GMT, so adjust to your own time zone if you procrastinated until the last minute.
 
 ![Issue report displays Loop App expiration date](img/loop-app-expiration-issue-report.jpeg){width="250"}
 {align="center"}

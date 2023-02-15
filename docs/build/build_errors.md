@@ -259,9 +259,9 @@ Text in error:
 
 No need to quit Xcode. If your build script terminal is still open, use it. Otherwise, open a new terminal window.
 
-Copy the lines below that start with `ls -l` by hovering the mouse near the right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
+Copy the lines below that start with `ls -l` by hovering the mouse near the right side of the text and clicking the copy icon (should say `Copy to Clipboard` when you hover over it). When you click the icon, a message that says `Copied to Clipboard` will appear on your screen.
 
-```title="Copy and Paste to add read permissions to xcconfig file"
+``` { .sh .copy title="Copy and Paste to add read permissions to xcconfig file" }
 ls -l ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
 chmod +r ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig
 ls -l ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig

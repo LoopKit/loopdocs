@@ -353,7 +353,7 @@ You must be logged into your GitHub account before starting this step. If you ar
 
 ### Create Match-Secrets
 
-Open your github.com URL (this is `https://github.com/username`) where you replace username with the name you chose above.
+Open your github.com URL (this is `https://github.com/username`) where you replace `username` with the name you chose above.
 
 Create a new private repository - you can either click on the link below, or follow the instructions with the first graphic:
 
@@ -368,9 +368,9 @@ or
 
 This shows you a screen similar to the following graphic which has 3 regions highlighted:
 
-* In Repository name, type Match-Secrets (use a hyphen between Match and Secrets)
+* In `Repository name`, type `Match-Secrets` (use a hyphen between Match and Secrets)
 * Be sure to check the box (red circle) to make the repository **private**
-* **Please confirm you selected Match-Secrets repository as private.**
+* **Please confirm you selected `Match-Secrets` repository as private.**
 * Scroll to the bottom of the pages and tap on "Create Repository"
 
 ![first screen for new repository](img/01-gh-create-match-secrets.png){width="600"}
@@ -483,33 +483,33 @@ Take a calming breath. This next part requires care.
     * If it is not, all will appear fine until you try to Build Loop and then you will get failures
 
 For each of the following secrets, follow the directions below - this list is configured with a copy button when you hover to the right of each word - this helps avoid spelling errors.
-```
+``` { .text .copy }
 TEAMID
 ```
-```
+``` { .text .copy }
 FASTLANE_ISSUER_ID
 ```
-```
+``` { .text .copy }
 FASTLANE_KEY_ID
 ```
-```
+``` { .text .copy }
 FASTLANE_KEY
 ```
-```
+``` { .text .copy }
 GH_PAT
 ```
-```
+``` { .text .copy }
 MATCH_PASSWORD
 ```
 
-* For the FASTLANE_KEY value, copy the entire contents from<br>-----BEGIN PRIVATE KEY-----<br> through<br>-----END PRIVATE KEY-----<br>
-* For MATCH_PASSWORD value - make up a password for this and save it for later use
+* For the `FASTLANE_KEY` value, copy the entire contents from<br>-----BEGIN PRIVATE KEY-----<br> through<br>-----END PRIVATE KEY-----<br>
+* For `MATCH_PASSWORD` value - make up a password for this and save it for later use
     * The MATCH_PASSWORD must be the same for any repository using this method ([Other Apps](gh-other-apps.md))
 
 Once all six secrets have been added to your LoopWorkspace, you are done with Settings. Your screen should look similar to the graphic below.
 
 * Take a moment to be sure all of your secrets are spelled correctly
-* If you notice a mistake, just delete the one that is not spelled correctly and add a `New respository secret` with the correct name
+* If you notice a mistake, just delete the one that is not spelled correctly and add a `New repository secret` with the correct name
 
 ![all secrets entered](img/gh-done-adding-secrets.png){width="700"}
 {align="center"}
@@ -641,7 +641,7 @@ If you modified settings for the Loop identifier, the Save button at the top rig
 
 If you did not need to make changes, the Save button will not be active.
 
-* Tap on the `< All Indentifiers` button at top left
+* Tap on the `< All Identifiers` button at top left
 
 The full list of Identifiers should be displayed again.
 
@@ -675,7 +675,7 @@ If you had to modify a given identifier, the Save button at the top right will b
 
 If you did not need to make changes, the Save button will not be active.
 
-* Tap on the `< All Indentifiers` button at top left
+* Tap on the `< All Identifiers` button at top left
 
 The full list of Identifiers should be displayed again.
 
