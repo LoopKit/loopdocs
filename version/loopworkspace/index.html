@@ -2588,12 +2588,12 @@
 <p><code>git clone --branch=branch-name --recurse-submodules https://github.com/LoopKit/LoopWorkspace</code></p>
 <p>Now...look carefully and notice two things...that command is getting (1) the version of LoopWorkspace found in the LoopKit <abbr title="contains project files and each file's revision history">repository</abbr> and (2) selects the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want to start working with when the <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> is done.</p>
 <p>So, you will need to edit that "<abbr title="version of code within a single repository or workspace repository">branch</abbr>-name" before using the command so that you are getting started with the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want. If you want to <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> from a different <abbr title="a copy of code in a github repository other than the original">fork</abbr>, the LoopKit will be replaced with the name of the github site for the <abbr title="a copy of code in a github repository other than the original">fork</abbr>. For example, to test dev (which is under development and has some cool new architecture and features), you would copy/paste:</p>
-<div class="highlight"><pre><span></span><code>git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>--branch<span class="o">=</span>dev<span class="w"> </span>--recurse-submodules<span class="w"> </span>https://github.com/LoopKit/LoopWorkspace
 </code></pre></div>
 <h3 id="start-xcode-using-command-line">Start <abbr title="program used to build an app">Xcode</abbr> using command line<a class="headerlink" href="#start-xcode-using-command-line" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want to start the build from the command line, enter the following 2 lines into the terminal and skip ahead to <a href="#building-loopworkspace">Building LoopWorkspace</a></p>
-<div class="highlight"><pre><span></span><code>cd LoopWorkspace
-xed .
+<div class="copy highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>LoopWorkspace
+xed<span class="w"> </span>.
 </code></pre></div>
 <p>Remember the warning - if you build dev on your phone from Loop master, it should work fine. Going backwards, please delete the app from you phone and enter all your settings again to return to master.</p>
 <h3 id="start-xcode-using-finder">Start <abbr title="program used to build an app">Xcode</abbr> using <abbr title="graphical folder and file display on Mac">Finder</abbr><a class="headerlink" href="#start-xcode-using-finder" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2627,14 +2627,14 @@ xed .
 <p>Be sure your terminal is in the correct location using <a href="../../build/code_customization/#open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder</a></p>
 <ol>
 <li>Make sure you are in the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr> using this <abbr title="a tool for version control">git</abbr> command:
-    <div class="highlight"><pre><span></span><code>git branch
+    <div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>branch
 </code></pre></div></li>
 <li>If you are not in the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example <code>dev</code>, then issue this <abbr title="a tool for version control">git</abbr> command (suitably modified for the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr>)
-    <div class="highlight"><pre><span></span><code>git checkout dev
+    <div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>dev
 </code></pre></div></li>
 <li>Use the following <abbr title="a tool for version control">git</abbr> commands in the LoopWorkspace folder of your terminal:
-    <div class="highlight"><pre><span></span><code>git fetch
-git pull --recurse
+    <div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>fetch
+git<span class="w"> </span>pull<span class="w"> </span>--recurse
 </code></pre></div></li>
 </ol>
 <p>If you are testing the LoopKit dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you need to be on <a href="https://loop.zulipchat.com">zulipchat</a> and subscribe to at least the #development and #github streams. (It's a good idea to subscribe to all the streams.) When you see <abbr title="contains project files and each file's revision history">repository</abbr> updates similar to the graphic below, there may also be an announcement in the #development channel that LoopWorkspace is updated and ready to test. If not you can check the commits in LoopWorkspace and see if they've been updated. It's a good idea to wait 24 hours. My procedure is to build dev to my backup phone and then put it on my "real" phone. Otherwise, wait for someone else to do it and give the all-clear in zulipchat.</p>
@@ -2645,14 +2645,14 @@ git pull --recurse
 <p>Be sure your terminal is in the correct location using <a href="../../build/code_customization/#open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder</a>. First you have to bring down all the latest dev commits. Then you will back up to the one you want.</p>
 <ol>
 <li>Make sure you are in the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr> using this <abbr title="a tool for version control">git</abbr> command:
-    <div class="highlight"><pre><span></span><code>git branch
+    <div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>branch
 </code></pre></div></li>
 <li>If you are not in the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example <code>dev</code>, then issue this <abbr title="a tool for version control">git</abbr> command (suitably modified for the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr>)
-    <div class="highlight"><pre><span></span><code>git checkout dev
+    <div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>dev
 </code></pre></div></li>
 <li>Use the following <abbr title="a tool for version control">git</abbr> commands to bring down all the newer commits to your copy:
-    <div class="highlight"><pre><span></span><code>git fetch
-git pull --recurse
+    <div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>fetch
+git<span class="w"> </span>pull<span class="w"> </span>--recurse
 </code></pre></div></li>
 <li>Now you want to "backup" to the desired <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>:
     <div class="highlight"><pre><span></span><code>git checkout bde44b5
@@ -2670,7 +2670,7 @@ git submodule update
 <h4 id="delete-derived-data">Delete Derived Data<a class="headerlink" href="#delete-derived-data" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This command deletes derived data stored across all workspaces and projects by <abbr title="program used to build an app">Xcode</abbr> on your computer. If you have multiple clones locally, it deletes derived data from all of them. The derived data will be regenerated next time you build with <abbr title="program used to build an app">Xcode</abbr> using that <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>.</p>
 <p>Copy and paste this command into a terminal window.</p>
-<div class="highlight"><span class="filename">Copy and Paste to Delete Derived Data</span><pre><span></span><code>rm -rf ~/Library/Developer/Xcode/DerivedData
+<div class="copy highlight"><span class="filename">Copy and Paste to Delete Derived Data</span><pre><span></span><code>rm<span class="w"> </span>-rf<span class="w"> </span>~/Library/Developer/Xcode/DerivedData
 </code></pre></div>
 <h3 id="compare-your-local-clone-to-loopworkspace">Compare your local <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> to LoopWorkspace<a class="headerlink" href="#compare-your-local-clone-to-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In an ideal world, LoopWorkspace has the most recent compatible submodule identifiers revised at the same time the <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> are updated.  You will notice the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> identifiers for the updated <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> are different from the ones you have locally.</p>
@@ -2721,7 +2721,7 @@ git submodule update
 <p>If you got a error message the # you requested <code>did not match any file(s) known to git</code>, you either typed it incorrectly or you forgot the <code>git fetch</code> command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.</p>
 <h3 id="local-modifications-conflict">Local Modifications Conflict<a class="headerlink" href="#local-modifications-conflict" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you have modified anything in a submodule folder on your computer, it might be in conflict with the latest <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
-<p>If you get a messages such as this:</p>
+<p>If you get a message such as this:</p>
 <div class="highlight"><pre><span></span><code>  error: Your local changes to the following files would be overwritten by checkout:
     Loop/Models/LoopConstants.swift
   Please commit your changes or stash them before you switch branches.
@@ -2732,7 +2732,7 @@ git submodule update
   git submodule update
 </code></pre></div>
 <p>After stashing and updating with no errors, you can try to restore your changes:
-<div class="highlight"><pre><span></span><code>  cd Loop; git stash pop; cd ..
+<div class="copy highlight"><pre><span></span><code><span class="w">  </span><span class="nb">cd</span><span class="w"> </span>Loop<span class="p">;</span><span class="w"> </span>git<span class="w"> </span>stash<span class="w"> </span>pop<span class="p">;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
 </code></pre></div></p>
 <p>If you see errors indicating you cannot use <code>pop</code>, that means you need to manually add your customizations back.</p>
 <h2 id="checking-out-different-branches-within-a-loopworkspace">Checking out different branches within a LoopWorkspace<a class="headerlink" href="#checking-out-different-branches-within-a-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2750,7 +2750,7 @@ git submodule update
 <h2 id="non-loopkit-clones">Non-LoopKit clones<a class="headerlink" href="#non-loopkit-clones" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Average Loopers can skip this whole section...it's for Developers mostly</p>
-<p>This whole section about non-LoopKit workspace clones is something almost every Looper can totally skip over. I'm only writing up this section for people who are interested in dabbling in code collaborations/customizations that they would want to maintain separate from LoopKit proper.</p>
+<p>This whole section about non-LoopKit workspace clones is something almost every Looper can totally skip over. I'm only writing up this section for people who are interested in dabbling in code collaborations/customizations that they would want to maintain separately from LoopKit proper.</p>
 </div>
 <p>Scenario: You have a friend named DeveloperBob who has his own version of LoopWorkspace that he's customized. DeveloperBob wants you to look at his code customizations and collaborate with him. You need to change the "<abbr title="a tool for version control">git</abbr> <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>" command to get DeveloperBob's version, not LoopKit's version. And, you'd want to make sure you specify the <abbr title="version of code within a single repository or workspace repository">branch</abbr> that the new feature is on, too. DeveloperBob should usually include the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name when he posts/shares. So, the command line might be edited to something like:</p>
 <p><code>git clone --branch=new-features --recurse-submodules https://github.com/DeveloperBob/LoopWorkspace</code></p>
@@ -2844,7 +2844,7 @@ You can't <abbr title="create a copy of a repository on your computer including 
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.code.copy", "content.tooltips"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.4b2c34cd.min.js"></script>

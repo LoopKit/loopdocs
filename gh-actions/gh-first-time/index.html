@@ -3212,7 +3212,7 @@
 </li>
 </ol>
 <h3 id="create-match-secrets">Create <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr><a class="headerlink" href="#create-match-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Open your <abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr> <abbr title="website address (Uniform Resource Locator)">URL</abbr> (this is <code>https://github.com/username</code>) where you replace username with the name you chose above.</p>
+<p>Open your <abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr> <abbr title="website address (Uniform Resource Locator)">URL</abbr> (this is <code>https://github.com/username</code>) where you replace <code>username</code> with the name you chose above.</p>
 <p>Create a new private <abbr title="contains project files and each file's revision history">repository</abbr> - you can either click on the link below, or follow the instructions with the first graphic:</p>
 <ul>
 <li>Click on this link: <a href="https://github.com/new">(https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/new)</a></li>
@@ -3226,9 +3226,9 @@
 </ul>
 <p>This shows you a screen similar to the following graphic which has 3 regions highlighted:</p>
 <ul>
-<li>In Repository name, type <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> (use a hyphen between Match and <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>)</li>
+<li>In <code>Repository name</code>, type <code>Match-Secrets</code> (use a hyphen between Match and <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>)</li>
 <li>Be sure to check the box (red circle) to make the <abbr title="contains project files and each file's revision history">repository</abbr> <strong>private</strong></li>
-<li><strong>Please confirm you selected <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> as private.</strong></li>
+<li><strong>Please confirm you selected <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> as private.</strong></li>
 <li>Scroll to the bottom of the pages and tap on "Create Repository"</li>
 </ul>
 <p align="center"><img alt="first screen for new repository" src="../img/01-gh-create-match-secrets.png" width="600" /></p>
@@ -3353,21 +3353,21 @@
 </li>
 </ul>
 <p>For each of the following secrets, follow the directions below - this list is configured with a copy button when you hover to the right of each word - this helps avoid spelling errors.
-<div class="highlight"><pre><span></span><code>TEAMID
+<div class="copy highlight"><pre><span></span><code>TEAMID
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>FASTLANE_ISSUER_ID
+<div class="copy highlight"><pre><span></span><code>FASTLANE_ISSUER_ID
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>FASTLANE_KEY_ID
+<div class="copy highlight"><pre><span></span><code>FASTLANE_KEY_ID
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>FASTLANE_KEY
+<div class="copy highlight"><pre><span></span><code>FASTLANE_KEY
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>GH_PAT
+<div class="copy highlight"><pre><span></span><code>GH_PAT
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>MATCH_PASSWORD
+<div class="copy highlight"><pre><span></span><code>MATCH_PASSWORD
 </code></pre></div></p>
 <ul>
-<li>For the FASTLANE_KEY value, copy the entire contents from<br>-----BEGIN PRIVATE KEY-----<br> through<br>-----END PRIVATE KEY-----<br></li>
-<li>For MATCH_PASSWORD value - make up a password for this and save it for later use<ul>
+<li>For the <code>FASTLANE_KEY</code> value, copy the entire contents from<br>-----BEGIN PRIVATE KEY-----<br> through<br>-----END PRIVATE KEY-----<br></li>
+<li>For <code>MATCH_PASSWORD</code> value - make up a password for this and save it for later use<ul>
 <li>The MATCH_PASSWORD must be the same for any <abbr title="contains project files and each file's revision history">repository</abbr> using this method (<a href="../gh-other-apps/">Other Apps</a>)</li>
 </ul>
 </li>
@@ -3375,7 +3375,7 @@
 <p>Once all six secrets have been added to your LoopWorkspace, you are done with Settings. Your screen should look similar to the graphic below.</p>
 <ul>
 <li>Take a moment to be sure all of your secrets are spelled correctly</li>
-<li>If you notice a mistake, just delete the one that is not spelled correctly and add a <code>New respository secret</code> with the correct name</li>
+<li>If you notice a mistake, just delete the one that is not spelled correctly and add a <code>New repository secret</code> with the correct name</li>
 </ul>
 <p align="center"><img alt="all secrets entered" src="../img/gh-done-adding-secrets.png" width="700" /></p>
 <div class="admonition tip">
@@ -3526,7 +3526,7 @@
 </ul>
 <p>If you did not need to make changes, the Save button will not be active.</p>
 <ul>
-<li>Tap on the <code>&lt; All Indentifiers</code> button at top left</li>
+<li>Tap on the <code>&lt; All Identifiers</code> button at top left</li>
 </ul>
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
 <h3 id="add-app-group-to-other-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-app-group-to-other-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -3573,7 +3573,7 @@
 </ul>
 <p>If you did not need to make changes, the Save button will not be active.</p>
 <ul>
-<li>Tap on the <code>&lt; All Indentifiers</code> button at top left</li>
+<li>Tap on the <code>&lt; All Identifiers</code> button at top left</li>
 </ul>
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
 <h2 id="create-loop-app-in-app-store-connect">Create Loop App in App Store Connect<a class="headerlink" href="#create-loop-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3888,7 +3888,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.code.copy", "content.tooltips"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.4b2c34cd.min.js"></script>
