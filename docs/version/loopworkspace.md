@@ -119,7 +119,7 @@ The cloned version of the LoopWorkspace will go into the current directory in th
 How can you find your home directory?
 
 1. In Terminal, if you use `cd` that will take you there automatically.
-2. In Finder, shift-command-H will open your "home" folder.
+2. In Finder, ++shift+command+h++ will open your `home` folder.
 
 ![img/root-finder.png](img/root-finder.png){width="750"}
 {align="center"}

@@ -261,7 +261,7 @@ Open a terminal window. Copy the line below that starts with `/bin/bash` by hove
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopCaregiver.sh)"
 ```
 
-Paste the line into the Terminal window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: CMD-V; or CNTL-click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.
+Paste the line into the Terminal window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: ++command+v++; or ++control+++click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.
 
 !!! warning "Not Loop"
     The output you see in the Terminal may look very similar to when you build Loop 3 from a script.
