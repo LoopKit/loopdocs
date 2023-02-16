@@ -10,7 +10,7 @@
 
     - Paid Developer Account: Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual account.
     - Free: No action required at this time.
-        * Free requires you to use the Mac / Xcode build method
+        * Free requires you to use the Mac-Xcode build method
 
 !!! question "FAQs"
     - **"Can I use someone else's Apple Developer account?"** Please refer to this [Answer](../faqs/FAQs.md#can-i-use-someone-elses-apple-developer-account).
@@ -41,7 +41,7 @@ You have two options for an individual account: free or paid.
 
 If you decide to use a **FREE** developer account, here's what you need to know:
 
-1. You must use the Mac Build method to build Loop.
+1. You must use the [Mac-Xcode Build](../build/overview.md) method to build Loop.
 1. Loop apps signed with a free developer account will expire after 7 days.  On the 7th day, your Loop app will simply turn white when you open it and then immediately close. To rebuild the Loop app, you will have to find a computer and rebuild the app onto your iPhone again. You cannot rebuild the app on day 5 (when it is convenient, for example), hoping to reset the 7-day clock.  The app will still expire on the 7th day from when it was first signed and created.
 2. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app to sign it with the new paid account. Furthermore, switching from a [Free to a Paid](step6.md#switching-from-free-to-paid-memberships) account requires entering all the settings again (and starting a fresh pod).
 3. You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use [Remote Commands](../nightscout/remote-overrides.md) through Nightscout.
@@ -55,7 +55,7 @@ If you decide to use a **PAID** developer account, here's what you need to know:
 1. If you use the GitHub (Browser) Build method
     * You must [Update](../gh-actions/gh-update.md) the build once every 90 days
     * You must have a Paid Developer account
-1. If you use the Mac Build method
+1. If you use the Mac-Xcode Build method
     * If you have a paid developer account, you must build at least once a year
     * If you have a free account, you must build every 7 days
 

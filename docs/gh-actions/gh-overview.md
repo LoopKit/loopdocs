@@ -6,7 +6,7 @@ The new GitHub build method is available with the release of Loop 3, as well as 
 * This can be used by those who don't own a Mac but want to Loop
 * The GitHub build method can be used even if you do use a Mac - the two methods do not interfere with each other
 
-TestFlight is the only method available for installation to a phone when using the GitHub build method, but can also be used with the Mac/Xcode build method.
+TestFlight is the only method available for installation to a phone when using the GitHub build method, but can also be used with the Mac-Xcode build method.
 
 ## Pros and Cons
 
@@ -23,7 +23,7 @@ Developer quote: "This frees up the dependency of having the most recent Xcode t
 ### Cons
 
 * There are no instructions for applying customizations
-* Stick with Mac / Xcode build (for now) if you want to customize
+* Stick with Mac-Xcode build (for now) if you want to customize
 * Hint - when customization instructions are provided - you will be making more forks for every submodule you customize and you will be responsible for keeping those forks up to date
 
 ## Requirements

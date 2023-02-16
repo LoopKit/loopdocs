@@ -72,7 +72,7 @@ Loop does not directly support some CGM such as Libre, Eversense and Medtronic G
 
 * A [fork of Loop](https://www.loopandlearn.org/github-lnl-patches) is available with added Libre support
     * GitHub Build: Refer to the link above for instructions to build this fork
-    * Mac/Xcode Build: Select the Loop with Patches option in the [Build Select Script](step14.md)
+    * Mac-Xcode Build: Select the Loop with Patches option in the [Build Select Script](step14.md)
 
 With Loop 3.0 and later, any sensor that can be uploaded to Nightscout can be used with Loop if internet service is available.
 

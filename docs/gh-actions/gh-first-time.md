@@ -35,7 +35,7 @@ This is only available with Loop 3 and Loop development branches.
     - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
     - **Isn't it hard to build every 90 days?** The initial setup (this page) and deploy (next page) takes a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
     - **Can I use this for my child?** You, as the adult, can install using TestFlight on your child's phone. The explict steps are provided.
-    - **Can I still use my customizations?** This requires steps not yet documented. If you want customizations, stick with the Mac / Xcode build method for now.
+    - **Can I still use my customizations?** This requires steps not yet documented. If you want customizations, stick with the Mac-Xcode build method for now.
 
 **You must build Loop every 90 days when you use GitHub build method.**
 

@@ -1,19 +1,19 @@
 ## Code Customizations
 
-**The customizations on this page assume the [Mac Build](../build/overview.md) method**
+**The customizations on this page assume the [Mac-Xcode Build](../build/overview.md) method**
 
 **Detailed instructions for making your own customizations for GitHub [Browser Build](../gh-actions/gh-overview.md) are not included in LoopDocs.**
 
 * To make customizations with the GitHub method requires you to make your own fork for any module you want to modify, commit changes to your fork, and then point your fork of LoopWorkspace to the modified modules in your GitHub account
 * One set of commonly requested customizations is available as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
 
-Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself. If you are an experienced builder - you know what to do.
-
 ## Build then Customize
 
 For new builders, please build the code before you make any changes. Start with Open Loop and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using Xcode as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  
 
-When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../version/releases.md#current-release), you can skip the download and use the same folder as last time.  
+When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../version/releases.md#current-release), you can skip the download and use the same folder as last time.
+
+Based on Loop users’ experience, there are some common customizations documented on this page.  These customizations require you to build the Loop app onto your iPhone, they cannot be done from within the app itself.
 
 ### Find My Downloaded Loop Code
 
@@ -53,7 +53,11 @@ Be sure to read the [Instructions for Finding the Lines](code_customization.md#i
 
 Build-time features are not available with Loop 2.2.x.
 
-With Loop 3, some features are enabled or disabled by default but can be modified by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file. This is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.
+With Loop 3, some features are enabled or disabled by default but can be modified by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file.
+
+If you use the GitHub Build Method, these build-time features can be added to your copy of the LoopConfigOverride.xcconfig file. Use the pencil icon in that file on GitHub and then commit the change to your fork.
+
+If you use the Mac-Xcode Build Method, this is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.
 
 These flags are always upper case with underscore separating words for clarity. They are inserted anywhere after the word `$(inherited)` and before the `//`. The `//` indicates the flags to the right are not included. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space. Do not enter a return between selections - Xcode will word-wrap the line for clarity, but all values need to be on a single line.
 
@@ -85,14 +89,16 @@ List of some flags and what they do:
 
 ## Instructions for Finding the Lines
 
-There are other customizations where the user goes into a particular file and makes a specific change to the code.
+There are other customizations where the user goes into a particular file and makes a specific change to the code. The instructions on this page are for the Mac-Xcode method. GitHub Browser Build method instructions are not provided at this time.
 
 For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory.
 
 **For each change you make in Xcode - be sure to save the file - otherwise the modification does not get built into your app.**
 
-``` title="Key_Phrase"
+``` { .txt .copy title="Key_Phrase" }
 use the copy button at right, paste into search
+The copy button for this exampe is just for practice
+Do not paste the result anywhere
 ```
 
   * Folder: Loop/subfolder1/subfolder2/etc.
@@ -673,17 +679,16 @@ And now you'll be the proud new owner of a custom Loop icon.
 
 ## Additional Customizations for Loop 3
 
-If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (requires Mac/Xcode build) or use a prepared fork that already contains them.
+If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (requires Mac-Xcode build) or use a prepared fork that already contains them.
 
-These customizations:
+These customizations are only for Loop 3:
 
-* Only work with Loop 3 and, at the current time, the dev branch for Loop
-* Are already added to the released version of Loop in a fork of LoopWorkspace for your convenience, [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
+* Some are already added to the released version of Loop in a fork of LoopWorkspace for your convenience, [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
+* You may add one or more yourself
 
-If you want to add one or more of these customizations yourself to Loop 3 or the dev branch, then continue with this section for instructions.
+If you want to add one or more of these customizations yourself to Loop 3 or a Loop development branch, then continue with this section for instructions.
 
 * You should be comfortable typing commands in a terminal
-* You should be comfortable with manipulations (as directed) with Xcode
 * You will need to open a terminal in the LoopWorkspace folder of the code that you previously downloaded
     * The next section provides instructions on opening the terminal in the correct place
 
@@ -712,7 +717,9 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 ### Custom Type One LoopPatches
 
-Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop 3 (main branch). They might work with dev branch, but might require updates as dev progresses.
+Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop 3 (main branch).
+
+If you are using a development branch of Loop, you need the dev branch of LoopPatches. Note - even the dev branch of LoopPatches takes time to update for some changes to the Loop-dev code. [CustomTypeOne/LoopPatches for dev branch](https://github.com/CustomTypeOne/LoopPatches/tree/dev#readme)
 
 Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop 3.
 
