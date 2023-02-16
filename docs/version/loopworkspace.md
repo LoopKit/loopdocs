@@ -289,7 +289,7 @@ At this point, the commands to get that commit locally on your computer are as f
 
 `cd rileylink_ios; git fetch; git checkout 2541c1c; cd ..`
 
-If you got a error message the # you requested `did not match any file(s) known to git`, you either typed it incorrectly or you forgot the `git fetch` command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.
+If you got an error message the # you requested `did not match any file(s) known to git`, you either typed it incorrectly or you forgot the `git fetch` command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.
 
 ### Local Modifications Conflict
 
