@@ -1,6 +1,6 @@
-## Mac Build Requirements
+## Mac-Xcode Build Requirements
 
-The complete requirements for building Loop with a Mac are given in the next two sections. The first list contains the common requirements that are the same regardless of build method. The second list contains the additional requirements for building with a Mac and Xcode.
+The complete requirements for building Loop with a Mac and Xcode are given in the next two sections. The first list contains the common requirements that are the same regardless of build method. The second list contains the additional requirements for building with a Mac and Xcode.
 
 Each requirement in the list is linked to the LoopDocs pages with more information.
 
@@ -10,9 +10,9 @@ Each requirement in the list is linked to the LoopDocs pages with more informati
 1. [Compatible Pump](../build/step3.md)
 1. [Compatible CGM](../build/step4.md)
 1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
-1. [Apple Developer Membership](../build/step6.md) (not needed if you rebuild weekly using the Mac / Xcode method)
+1. [Apple Developer Membership](../build/step6.md) (not needed if you rebuild weekly using the Mac-Xcode method)
 
-### Mac Build Additional Requirements
+### Mac-Xcode Build Additional Requirements
 
 1. [Compatible Computer](../build/step1.md#macos)
 1. [Xcode](../build/step8.md) (a free Apple application)

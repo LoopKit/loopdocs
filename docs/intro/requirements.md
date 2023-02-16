@@ -6,7 +6,7 @@ The Build Steps have been split into two tabs:
 
 * [Browser Build](../gh-actions/gh-overview.md)
     * Build Loop using GitHub Actions (no computer required)
-* [Mac Build](../build/overview.md)
+* [Mac-Xcode Build](../build/overview.md)
     * Traditional, build Loop on a Mac with Xcode
 
 There are some common requirements and then some different requirements for the two methods.
@@ -27,9 +27,9 @@ These requirements are independent of how you build the Loop app:
 
 In addition to the paid Apple Developer account, you also need a free GitHub account. The instructions for the GitHub account are included in the [Browser Build](../gh-actions/gh-overview.md) instructions.
 
-### Added Requirements for Mac Build
+### Added Requirements for Mac-Xcode Build
 
-If you plan to build using the Mac Build instructions, you also need:
+If you plan to build using the Mac-Xcode Build instructions, you also need:
 
 1. [Compatible Computer](../build/step1.md#macos)
 1. [Xcode](../build/step8.md) (a free Apple application)
@@ -62,6 +62,6 @@ Before you start either build method, review the Common Requirements. First one 
 
 Click here if you want to build with GitHub Build Actions: [Browser Build](../gh-actions/gh-overview.md)
 
-### Mac Build:
+### Mac-Xcode Build:
 
-Click here if you want to build on a Mac using Xcode: [Mac Build](../build/overview.md)
+Click here if you want to build on a Mac using Xcode: [Mac-Xcode Build](../build/overview.md)

@@ -4,7 +4,7 @@ There are 2 main types of simulators users may want to build. Each of these requ
 
 Please, review all the Intro and Build pages, even if you will not complete them yet.
 
-## Mac Build to a Simulated iPhone
+## Mac-Xcode Build to a Simulated iPhone
 
 This simulator requires access to a Mac or virtual computer, see [Compatible Computer](../build/step1.md)
 
@@ -43,7 +43,7 @@ This simulator requires a compatible phone, see [Compatible iPhone/iPod](../buil
 * Complete the steps in Browser Build tab, starting with [GitHub Build Overview](../gh-actions/gh-overview.md)
 
 
-### Mac Build (Loop 2 or later)
+### Mac-Xcode Build (Loop 2 or later)
 
 * Need access to a mac or virtual computer, see [Compatible Computer](../build/step1.md)
 
