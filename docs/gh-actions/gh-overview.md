@@ -22,9 +22,15 @@ Developer quote: "This frees up the dependency of having the most recent Xcode t
 
 ### Cons
 
+The customization process is more involved. One set of commonly requested customizations is available, as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches).
+
+* Stick with Mac-Xcode build (for now) if you want to do your own customizations
+    * You can still use [TestFlight with your Mac-Xcode build](../build/testflight-xcode.md)
 * There are no instructions for applying customizations
-* Stick with Mac-Xcode build (for now) if you want to customize
-* Hint - when customization instructions are provided - you will be making more forks for every submodule you customize and you will be responsible for keeping those forks up to date
+    * Hint - when customization instructions are provided
+    * You will be making a forks for every submodule you want to customize
+    * You will need to update your LoopWorkspace Fork to point to your submodule forks
+    * You will be responsible for keeping those forks up to date
 
 ## Requirements
 
