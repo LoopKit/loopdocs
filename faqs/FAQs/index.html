@@ -236,7 +236,7 @@
   
     <li class="md-tabs__item">
       <a href="../../build/overview/" class="md-tabs__link">
-        Mac Build
+        Mac-Xcode Build
       </a>
     </li>
   
@@ -730,14 +730,14 @@
       
       
         <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-          Mac Build
+          Mac-Xcode Build
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Mac Build
+          Mac-Xcode Build
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -748,7 +748,7 @@
   
     <li class="md-nav__item">
       <a href="../../build/overview/" class="md-nav__link">
-        Mac Build Overview
+        Mac-Xcode Build Overview
       </a>
     </li>
   
@@ -2577,26 +2577,30 @@
 <li>With a paid developer account, you can build using the <a href="../../gh-actions/gh-overview/">Browser Build</a>; no Mac required</li>
 </ul>
 </li>
-<li>If you build on a Mac using <abbr title="program used to build an app">Xcode</abbr> <a href="../../build/overview/">Mac Build</a>, you need a Mac or a PC with Intel chips on which you include a virtual Mac</li>
+<li>If you build on a Mac using <abbr title="program used to build an app">Xcode</abbr> <a href="../../build/overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a>, you need a Mac or a PC with Intel chips on which you include a virtual Mac</li>
 </ul>
 <p>There are no other costs, ongoing or initial, to use Loop beyond what you already pay for your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, pump supplies and insulin.</p>
 <h2 id="rileylink-options"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Options<a class="headerlink" href="#rileylink-options" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is not required for DASH users.</p>
 <p>There are several options for the <a href="../../build/step5/#rileylink-compatible-devices"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Devices</a> at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a> offering to sell their <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> for a reduced cost.</p>
 <h2 id="free-developer-account-options">Free Developer Account Options<a class="headerlink" href="#free-developer-account-options" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days and you must use a computer with <abbr title="program used to build an app">Xcode</abbr>, <a href="../../build/overview/">Mac Build</a>. That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.</p>
+<p>The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days and you must use a computer with <abbr title="program used to build an app">Xcode</abbr>, <a href="../../build/overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a>. That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.</p>
 <h2 id="do-i-need-to-own-my-own-apple-computer">Do I need to own my own Apple computer?<a class="headerlink" href="#do-i-need-to-own-my-own-apple-computer" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You no longer need to own an Apple computer - see <a href="../../gh-actions/gh-overview/">Browser Build</a>.</p>
-<p>If you chose <a href="../../build/overview/">Mac Build</a>, then you still don't <strong>have</strong> to own an Apple computer, but you do need to at least borrow one. It would be really good to have longer term ability to borrow that computer again for <a href="../../build/updating/#when-to-update">updating Loop</a> later, when needed.</p>
-<p>If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone <a href="../../build/step1/#macos">Compatible Computer</a> and <a href="../../build/step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="program used to build an app">Xcode</abbr> Version</a></p>
+<p>If you chose <a href="../../build/overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a>, then you still don't <strong>have</strong> to own an Apple computer, but you do need to at least borrow one - or you can build using a virtual Mac if you have a PC with Intel chips (see next section).</p>
+<p>If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone <a href="../../build/step1/#macos">Compatible Computer</a> and <a href="../../build/step8/#how-do-all-the-minimum-versions-relate-to-each-other"><abbr title="program used to build an app">Xcode</abbr> Version</a>. It would be really good to have longer term ability to borrow that computer again for <a href="../../build/updating/#when-to-update">updating Loop</a> later, when needed.</p>
 <h2 id="can-i-use-a-pc-or-windows-computer-to-build">Can I use a PC or Windows computer to build?<a class="headerlink" href="#can-i-use-a-pc-or-windows-computer-to-build" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You can build Loop using just a browser on any device: <a href="../../gh-actions/gh-overview/">Browser Build</a>.</p>
-<p>If you want to use <a href="../../build/overview/">Mac Build</a>, there is a hacked way of installing <abbr title="operating system for Mac computer">macOS</abbr> on a Windows computer called a <strong>Virtual Machine</strong>. <a href="https://macosvmware.tech.blog/">This link</a> provides some helpful information. This <strong>Virtual Machine</strong> method will not work on PCs that have AMD processors, only Intel. Double check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a> who can assist.</p>
+<p>If you want to use <a href="../../build/overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a>, there is a hacked way of installing <abbr title="operating system for Mac computer">macOS</abbr> on a Windows computer called a <strong>Virtual Machine</strong>. <a href="https://macosvmware.tech.blog/">This link</a> provides some helpful information. This <strong>Virtual Machine</strong> method will not work on PCs that have AMD processors, only Intel. Double check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on <a href="https://www.facebook.com/groups/TheLoopedGroup">The Looped Facebook Group</a> who can assist.</p>
 <h2 id="how-often-do-i-need-to-get-on-the-computer-for-loop">How often do I need to get on the computer for Loop?<a class="headerlink" href="#how-often-do-i-need-to-get-on-the-computer-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When you use the Browser Build method, you need to access a browser at least once every 90 days to <a href="../../gh-actions/gh-update/">Update the Browser Build</a>. This is simple enough to do on your phone. Several people are already working on automated methods so that won't be required, but a manual Build Actions step is required for now.</p>
-<p>When you use Mac Build: the short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)</p>
+<p>When you use the Browser Build method, you need to access a browser at least once every 90 days to <a href="../../gh-actions/gh-update/">Update the Browser Build</a>. This is simple enough to do that you can do the steps on your phone in just a few minutes. Several people are already working on automated methods so that won't be required, but a manual Build Actions step is required for now.</p>
+<p>When you use Mac-<abbr title="program used to build an app">Xcode</abbr> Build: the short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)</p>
 <p>Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to a browser or an Apple computer again to update your Loop app.  </p>
-<p>Loop updates are not available through the iPhone's app store...instead you do the app update yourself with <a href="../../build/updating/">update instructions here</a> if using a Mac Build.</p>
+<p>Loop updates are <strong>not</strong> available through the iPhone's app store...instead you do the app update yourself</p>
+<ul>
+<li>If using Mac-<abbr title="program used to build an app">Xcode</abbr> build: use this link: <a href="../../build/updating/">update instructions</a></li>
+<li>If using Browser build: use this link: <a href="../gh-actions/gh-update/#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a> </li>
+</ul>
 <p>In general, there are updates to Loop released a few times a year - these can occur more frequently after a major release.</p>
 <h2 id="will-i-need-to-build-a-new-loop-if-i-switch-between-medtronic-and-omnipod">Will I need to build a new Loop if I switch between Medtronic and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>?<a class="headerlink" href="#will-i-need-to-build-a-new-loop-if-i-switch-between-medtronic-and-omnipod" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>No. Loop lets you move between different pump types from within the same Loop app.</p>
@@ -2661,7 +2665,7 @@
 <ul>
 <li>The customizations are described in <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a></li>
 <li>For Browser Build, use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> instructions in LoopDocs but <abbr title="a copy of code in a github repository other than the original">fork</abbr> from loopnlearn <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> instead of LoopKit as explained <a href="https://www.loopandlearn.org/github-lnl-patches/#github">Loop and Learn: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Loop with Patches</a></li>
-<li>For Mac / <abbr title="program used to build an app">Xcode</abbr> build, these customization were incorporated as an option in the <a href="../../build/step14/"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a>.</li>
+<li>For Mac-<abbr title="program used to build an app">Xcode</abbr> build, these customization were incorporated as an option in the <a href="../../build/step14/"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a>.</li>
 </ul>
 
 

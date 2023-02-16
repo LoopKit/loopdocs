@@ -236,7 +236,7 @@
   
     <li class="md-tabs__item">
       <a href="../overview/" class="md-tabs__link">
-        Mac Build
+        Mac-Xcode Build
       </a>
     </li>
   
@@ -730,14 +730,14 @@
       
       
         <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-          Mac Build
+          Mac-Xcode Build
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Mac Build
+          Mac-Xcode Build
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -748,7 +748,7 @@
   
     <li class="md-nav__item">
       <a href="../overview/" class="md-nav__link">
-        Mac Build Overview
+        Mac-Xcode Build Overview
       </a>
     </li>
   
@@ -2709,16 +2709,16 @@
   <h1>Customize your Loop</h1>
 
 <h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><strong>The customizations on this page assume the <a href="../overview/">Mac Build</a> method</strong></p>
+<p><strong>The customizations on this page assume the <a href="../overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a> method</strong></p>
 <p><strong>Detailed instructions for making your own customizations for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <a href="../../gh-actions/gh-overview/">Browser Build</a> are not included in LoopDocs.</strong></p>
 <ul>
 <li>To make customizations with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method requires you to make your own <abbr title="a copy of code in a github repository other than the original">fork</abbr> for any module you want to modify, <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> changes to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>, and then point your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace to the modified modules in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
 <li>One set of commonly requested customizations is available as explained at <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a></li>
 </ul>
-<p>Based on Loop users’ experience, there are some customizations that you may want to incorporate ahead of building your Loop app and Apple Watch app.  These customizations must be done prior to building the Loop app onto your iPhone, they cannot be done from within the app itself. If you are an experienced builder - you know what to do.</p>
 <h2 id="build-then-customize">Build then Customize<a class="headerlink" href="#build-then-customize" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For new builders, please build the code before you make any changes. Start with <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using <abbr title="program used to build an app">Xcode</abbr> as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  </p>
-<p>When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the <a href="../../version/releases/#current-release">Current Release</a>, you can skip the download and use the same folder as last time.  </p>
+<p>When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the <a href="../../version/releases/#current-release">Current Release</a>, you can skip the download and use the same folder as last time.</p>
+<p>Based on Loop users’ experience, there are some common customizations documented on this page.  These customizations require you to build the Loop app onto your iPhone, they cannot be done from within the app itself.</p>
 <h3 id="find-my-downloaded-loop-code">Find My Downloaded Loop Code<a class="headerlink" href="#find-my-downloaded-loop-code" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom.</p>
 <ul>
@@ -2761,7 +2761,9 @@
 </div>
 <h2 id="build-time-features">Build-Time Features<a class="headerlink" href="#build-time-features" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Build-time features are not available with Loop 2.2.x.</p>
-<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, some features are enabled or disabled by default but can be modified by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file. This is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the <abbr title="program used to build an app">Xcode</abbr> folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.</p>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, some features are enabled or disabled by default but can be modified by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file.</p>
+<p>If you use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Method, these build-time features can be added to your copy of the LoopConfigOverride.xcconfig file. Use the pencil icon in that file on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> and then <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> the change to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
+<p>If you use the Mac-<abbr title="program used to build an app">Xcode</abbr> Build Method, this is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the <abbr title="program used to build an app">Xcode</abbr> folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.</p>
 <p>These flags are always upper case with underscore separating words for clarity. They are inserted anywhere after the word <code>$(inherited)</code> and before the <code>//</code>. The <code>//</code> indicates the flags to the right are not included. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space. Do not enter a return between selections - <abbr title="program used to build an app">Xcode</abbr> will word-wrap the line for clarity, but all values need to be on a single line.</p>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>// Features
@@ -2804,10 +2806,12 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 </tbody>
 </table>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There are other customizations where the user goes into a particular file and makes a specific change to the code.</p>
+<p>There are other customizations where the user goes into a particular file and makes a specific change to the code. The instructions on this page are for the Mac-<abbr title="program used to build an app">Xcode</abbr> method. <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method instructions are not provided at this time.</p>
 <p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory.</p>
 <p><strong>For each change you make in <abbr title="program used to build an app">Xcode</abbr> - be sure to save the file - otherwise the modification does not get built into your app.</strong></p>
-<div class="highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
+The copy button for this exampe is just for practice
+Do not paste the result anywhere
 </code></pre></div>
 <ul>
 <li>Folder: Loop/subfolder1/subfolder2/etc.</li>
@@ -3337,16 +3341,15 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>You may see a yellow warning that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than Loop app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).</p>
 <p>And now you'll be the proud new owner of a custom Loop icon.</p>
 <h2 id="additional-customizations-for-loop-3">Additional Customizations for <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#additional-customizations-for-loop-3" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (requires Mac/<abbr title="program used to build an app">Xcode</abbr> build) or use a prepared <abbr title="a copy of code in a github repository other than the original">fork</abbr> that already contains them.</p>
-<p>These customizations:</p>
+<p>If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (requires Mac-<abbr title="program used to build an app">Xcode</abbr> build) or use a prepared <abbr title="a copy of code in a github repository other than the original">fork</abbr> that already contains them.</p>
+<p>These customizations are only for <abbr title="Latest release with major updates">Loop 3</abbr>:</p>
 <ul>
-<li>Only work with <abbr title="Latest release with major updates">Loop 3</abbr> and, at the current time, the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for Loop</li>
-<li>Are already added to the released version of Loop in a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace for your convenience, <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a></li>
+<li>Some are already added to the released version of Loop in a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace for your convenience, <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a></li>
+<li>You may add one or more yourself</li>
 </ul>
-<p>If you want to add one or more of these customizations yourself to <abbr title="Latest release with major updates">Loop 3</abbr> or the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, then continue with this section for instructions.</p>
+<p>If you want to add one or more of these customizations yourself to <abbr title="Latest release with major updates">Loop 3</abbr> or a Loop development <abbr title="version of code within a single repository or workspace repository">branch</abbr>, then continue with this section for instructions.</p>
 <ul>
 <li>You should be comfortable typing commands in a terminal</li>
-<li>You should be comfortable with manipulations (as directed) with <abbr title="program used to build an app">Xcode</abbr></li>
 <li>You will need to open a terminal in the LoopWorkspace folder of the code that you previously downloaded<ul>
 <li>The next section provides instructions on opening the terminal in the correct place</li>
 </ul>
@@ -3367,7 +3370,8 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p><code>/Users/marion/Downloads/BuildLoop/Loop-20220803-1145/LoopWorkspace</code></p>
 <p align="center"><img alt="how to use finder to find the correct download and open xcode" src="../img/finding-loopworkspace.svg" width="750" /></p>
 <h3 id="custom-type-one-looppatches">Custom Type One LoopPatches<a class="headerlink" href="#custom-type-one-looppatches" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Several items have been consolidated into a set of patches found at <a href="https://github.com/CustomTypeOne/LoopPatches#readme">CustomTypeOne/LoopPatches</a>. These patches only work with <abbr title="Latest release with major updates">Loop 3</abbr> (main <abbr title="version of code within a single repository or workspace repository">branch</abbr>). They might work with dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but might require updates as dev progresses.</p>
+<p>Several items have been consolidated into a set of patches found at <a href="https://github.com/CustomTypeOne/LoopPatches#readme">CustomTypeOne/LoopPatches</a>. These patches only work with <abbr title="Latest release with major updates">Loop 3</abbr> (main <abbr title="version of code within a single repository or workspace repository">branch</abbr>).</p>
+<p>If you are using a development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of Loop, you need the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopPatches. Note - even the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopPatches takes time to update for some changes to the Loop-dev code. <a href="https://github.com/CustomTypeOne/LoopPatches/tree/dev#readme">CustomTypeOne/LoopPatches for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></p>
 <p>Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <p>The CustomTypeOne LoopPatches are included in <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a>.</p>
 <h3 id="add-libre-app-to-loop-phone">Add Libre App to Loop Phone<a class="headerlink" href="#add-libre-app-to-loop-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
