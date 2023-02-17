@@ -2601,7 +2601,7 @@ xed<span class="w"> </span>.
 <p>How can you find your home directory?</p>
 <ol>
 <li>In <abbr title="interface for entering commands to the computer">Terminal</abbr>, if you use <code>cd</code> that will take you there automatically.</li>
-<li>In <abbr title="graphical folder and file display on Mac">Finder</abbr>, shift-command-H will open your "home" folder.</li>
+<li>In <abbr title="graphical folder and file display on Mac">Finder</abbr>, <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-h">H</kbd></span> will open your <code>home</code> folder.</li>
 </ol>
 <p align="center"><img alt="img/root-finder.png" src="../img/root-finder.png" width="750" /></p>
 <p>There are a lot of cloned things in this home directory that involve Loop. You may have fewer...but be aware, you can always delete and reclone if you are in doubt or confused. You can also set up a special directory to hold the cloned code - just make sure there are no embedded spaces in the full path name.</p>
@@ -2655,8 +2655,8 @@ git<span class="w"> </span>pull<span class="w"> </span>--recurse
 git<span class="w"> </span>pull<span class="w"> </span>--recurse
 </code></pre></div></li>
 <li>Now you want to "backup" to the desired <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>:
-    <div class="highlight"><pre><span></span><code>git checkout bde44b5
-git submodule update
+    <div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>bde44b5
+git<span class="w"> </span>submodule<span class="w"> </span>update
 </code></pre></div></li>
 <li>Assuming there were no errors, see <a href="#local-modifications-conflict">Local Modifications Conflict</a>, in the process above, you can now build that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</li>
 </ol>
@@ -2718,7 +2718,7 @@ git submodule update
 <p>This indicates the final <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> of that push for rileylink_ios is identified as <code>2541c1c</code>.</p>
 <p>At this point, the commands to get that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> locally on your computer are as follows, starting from the LoopWorkspace folder:</p>
 <p><code>cd rileylink_ios; git fetch; git checkout 2541c1c; cd ..</code></p>
-<p>If you got a error message the # you requested <code>did not match any file(s) known to git</code>, you either typed it incorrectly or you forgot the <code>git fetch</code> command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.</p>
+<p>If you got an error message the # you requested <code>did not match any file(s) known to git</code>, you either typed it incorrectly or you forgot the <code>git fetch</code> command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.</p>
 <h3 id="local-modifications-conflict">Local Modifications Conflict<a class="headerlink" href="#local-modifications-conflict" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you have modified anything in a submodule folder on your computer, it might be in conflict with the latest <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
 <p>If you get a message such as this:</p>
@@ -2728,8 +2728,8 @@ git submodule update
   Aborting
 </code></pre></div>
 <p>The easiest fix is to type commands similar to the following, where you modify Loop to be whichever folder(s) had the conflict. If more than one folder had a conflict, then issue the stash for each folder. The submodule update command will continue to show errors until you stash all local changes that interfere with the new code:</p>
-<div class="highlight"><pre><span></span><code>  cd Loop; git stash; cd ..
-  git submodule update
+<div class="copy highlight"><pre><span></span><code><span class="w">  </span><span class="nb">cd</span><span class="w"> </span>Loop<span class="p">;</span><span class="w"> </span>git<span class="w"> </span>stash<span class="p">;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
+<span class="w">  </span>git<span class="w"> </span>submodule<span class="w"> </span>update
 </code></pre></div>
 <p>After stashing and updating with no errors, you can try to restore your changes:
 <div class="copy highlight"><pre><span></span><code><span class="w">  </span><span class="nb">cd</span><span class="w"> </span>Loop<span class="p">;</span><span class="w"> </span>git<span class="w"> </span>stash<span class="w"> </span>pop<span class="p">;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
