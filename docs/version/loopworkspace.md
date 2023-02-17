@@ -119,7 +119,7 @@ The cloned version of the LoopWorkspace will go into the current directory in th
 How can you find your home directory?
 
 1. In Terminal, if you use `cd` that will take you there automatically.
-2. In Finder, shift-command-H will open your "home" folder.
+2. In Finder, ++shift+command+h++ will open your `home` folder.
 
 ![img/root-finder.png](img/root-finder.png){width="750"}
 {align="center"}
@@ -195,7 +195,7 @@ Be sure your terminal is in the correct location using [Open a Terminal in LoopW
     git pull --recurse
     ```
 1. Now you want to "backup" to the desired commit:
-    ```
+    ``` { .bash .copy }
     git checkout bde44b5
     git submodule update
     ```
@@ -289,7 +289,7 @@ At this point, the commands to get that commit locally on your computer are as f
 
 `cd rileylink_ios; git fetch; git checkout 2541c1c; cd ..`
 
-If you got a error message the # you requested `did not match any file(s) known to git`, you either typed it incorrectly or you forgot the `git fetch` command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.
+If you got an error message the # you requested `did not match any file(s) known to git`, you either typed it incorrectly or you forgot the `git fetch` command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.
 
 ### Local Modifications Conflict
 
@@ -306,7 +306,7 @@ If you get a message such as this:
 
 The easiest fix is to type commands similar to the following, where you modify Loop to be whichever folder(s) had the conflict. If more than one folder had a conflict, then issue the stash for each folder. The submodule update command will continue to show errors until you stash all local changes that interfere with the new code:
 
-```
+``` { .bash .copy }
   cd Loop; git stash; cd ..
   git submodule update
 ```
