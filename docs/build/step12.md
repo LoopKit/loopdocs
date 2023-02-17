@@ -81,7 +81,7 @@ If you are a new looper who got to these pages from the Set Up app page - congra
 
 Click here if you want to build with github build actions: [Browser Build](../gh-actions/gh-overview.md)
 
-### Mac Build:
+### Mac-Xcode Build:
 
-Click here if you want to build on a Mac using Xcode: [Mac Build](../build/overview.md)
+Click here if you want to build on a Mac using Xcode: [Mac-Xcode Build](../build/overview.md)
 

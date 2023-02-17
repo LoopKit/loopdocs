@@ -83,7 +83,7 @@ The list below contains the **minimum** versions of [macOS](step1.md#check-your-
 
 * Xcode 14.1 or higher is required
     * iOS 15.1 is minimum version for phone but 15.7.1 is better (for older phones)
-    * iOS 16.x is supported (turn on developer mode when using Mac / Xcode build)
+    * iOS 16.x is supported (turn on developer mode when using Mac-Xcode build)
 
 This older list is left in for those still using code based off Loop 2.2.x
 

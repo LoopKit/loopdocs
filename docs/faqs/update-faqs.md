@@ -4,28 +4,36 @@ First, please take a minute to understand what the words mean.
 
 * "Updating Loop" is the process of downloading a new version of Loop code 
 
-* "Rebuilding Loop" is the process of using your existing download of Loop code
+* "Rebuilding Loop" is the process of building the same version of Loop code
 
-In both cases, you build the code with Xcode to install over an existing app on your phone or onto a new device.
+In both cases, you build the code to install over an existing app on your phone or onto a new device.
 
-For the rest of this page, the word Update is used. For most people, it is simplest just the use the build select script which automatically downloads fresh code every time.
+* If you use the Mac-Xcode build method:
+    * First make sure your Mac operating system and Xcode version are compatible with your iPhone version, and then
+    * Easiest method is to use the build select script which automatically downloads the latest released version of the code every time
+    * See note below if your download speed or your Mac is very slow
+* If you use the GitHub Browser build method:
+    * Update your fork if needed to get the new released version
+    * Use the GitHub Action on your fork to Build Loop
+    * Within an hour that new build should be available via TestFlight to install on your phone
 
-If you have a very slow download speed or if you do a lot of customizations, it may be worth your time to decide if you need a new download.
+!!! note "Slow Download or Mac?"
+    If you have a very slow download speed or if you do a lot of customizations, it may be worth your time to decide if you need a new download.
 
-* Use Finder to check the date of your last download by looking in the Downloads/BuildLoop folder
-* Check the date of the last Loop release at [GitHub LoopKit/Loop release page](https://github.com/LoopKit/Loop/releases)
-* If the date in Finder is after the release date, follow [Find my Downloaded Loop Code](../build/code_customization.md#find-my-downloaded-loop-code)
-    * Double click on the Loop.xcworkspace file in that folder
-    * This opens Xcode and you can just plug in your phone and build with your existing download
+    * Use Finder to check the date of your last download by looking in the Downloads/BuildLoop folder
+    * Check the date of the last Loop release at [GitHub LoopKit/Loop release page](https://github.com/LoopKit/Loop/releases)
+    * If the date in Finder is after the release date, follow [Find my Downloaded Loop Code](../build/code_customization.md#find-my-downloaded-loop-code)
+        * Double click on the Loop.xcworkspace file in that folder
+        * This opens Xcode and you can just plug in your phone and build with your existing download
 
 ## When Should I Update?
 
 * **Best Practice**
     * Build if a serious bug-fix is reported
-    * Build, using the [Updating Instructons](../build/updating.md), two to four times a year so that it becomes easier and you are ready in case of an emergency
-    * Each time you build, the app expiration date is bumped out a full year from your build date
+    * Build, two to four times a year so that it becomes easier and you are ready in case of an emergency
+    * Each time you build, the app expiration date is bumped out a full year for Mac-Xcode build method and 90-days for GitHub Browser build
 * **Required**
-    * When your one-year expiration date forces you
+    * When your expiration date forces you
     * Do not wait until the app expires - it will stop working; see [Loop is No Longer Available](../build/updating.md#loop-is-no-longer-available)
     * Hint - start a few weeks early and take your time
 * **Optional**
@@ -50,10 +58,24 @@ Updating Loop is the same idea as what happens to your other apps on your iPhone
 
 ## Where should I start when I want to update my Loop?
 
-**ALWAYS start with the [Update Loop page](../build/updating.md) before any new build that you'd be doing.** That page is important because it will offer information on the updates you need to do before building, as well as information that might need to be considered.
+### Check your Developer Account
+
+Regardless of build method, always check your Apple Developer Account status.
+
+Apple updates its License Agreement for the Developer Program frequently. You need to login to your [developer account](https://developer.apple.com/account/) to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.
+
+![Screenshot: Account - Apple Developer](../build/img/license.png)
+
+
+#### Updates with the GitHub Browser build method:
+
+Go to [GitHub Update](../gh-actions/gh-update.md) and follow the instructions.
+
+#### Updates with the Mac-Xcode build method:
+
+**ALWAYS start with the [Update Loop page](../build/updating.md) before any new Mac-Xcode build that you'd be doing.** That page is important because it will offer information on the updates you may need for your Mac and Xcode before building.
 
 Do not simply build with your old downloaded folder from months ago. There is a high likelihood that your original code from awhile ago is outdated and might not build with the current phone iOS. Grab new code and you will get the compatible version that has all the latest and greatest features and bug fixes.
-
 
 ## Will I have to delete my old Loop app?
 

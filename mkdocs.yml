@@ -90,8 +90,8 @@ nav:
     - 'GitHub Update': gh-actions/gh-update.md
     - 'GitHub Errors': gh-actions/gh-errors.md
     - 'Other Apps': gh-actions/gh-other-apps.md
-- Mac Build:
-    - 'Mac Build Overview': 'build/overview.md'
+- Mac-Xcode Build:
+    - 'Mac-Xcode Build Overview': 'build/overview.md'
     - 'Compatible Computer': 'build/step1.md'
     - 'Download Xcode': 'build/step8.md'
     - 'Xcode Preferences': 'build/step9.md'

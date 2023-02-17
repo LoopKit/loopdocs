@@ -7,7 +7,7 @@ The LoopDocs website is organized as follows
     * [Requirements](requirements.md): What is needed regardless of build method
 * New with Loop 3: Two ways to build
     * [Browser Build](../gh-actions/gh-overview.md): Build Loop app using a browser (Mac computer not required)
-    * [Mac Build](../build/overview.md): Build Loop app with a Mac the first time, or [Update](../build/updating.md) next time
+    * [Mac-Xcode Build](../build/overview.md): Build Loop app with a Mac the first time, or [Update](../build/updating.md) next time
 * [Set Up](../operation/overview.md): How to set up your Loop app
 * [Operate](../operation/loop/open-loop.md): How to use the Loop app
 * [Troubleshoot](../troubleshooting/overview.md): What to do if you're having trouble with the Loop app
@@ -47,7 +47,7 @@ Please review [Simulator Build](../version/simulator.md) for more information.
 * Must have a paid Apple Developer ID ($99/year)
 * Must have a compatible phone
 
-#### Simulator using Mac Build:
+#### Simulator using Mac-Xcode Build:
 
 * Must have a Mac computer (or virtual machine, Intel chips only)
 * Can build the simulator with a free Apple Developer ID

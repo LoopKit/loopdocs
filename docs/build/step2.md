@@ -51,7 +51,7 @@ Your phone's iOS version can be found under the phone Settings -> General -> Abo
 
 Do not use any of the beta iOS versions. (Don't worry...if you don't know what that means, then you aren't using one.)
 
-### Developer Mode - Mac Build Only
+### Developer Mode - Mac-Xcode Build Only
 
 With iOS 16 and watchOS 9, Apple added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
