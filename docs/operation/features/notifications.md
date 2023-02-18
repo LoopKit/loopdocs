@@ -49,10 +49,20 @@ You can customize the way notifications of Loop are behaving in the Settings App
 ![img/iphone-settings-notifications.png](img/iphone-settings-notifications.png){width="250"}
 {align="center"}
 
-Settings of Loop:
+Loop Notifications Settings:
 
-![img/iphone-notifications-loop.png](img/iphone-notifications-loop.png){width="250"}
+![img/iphone-notifications-loop3.jpg](img/iphone-notifications-loop3.jpeg){width="250"}
 {align="center"}
+
+Mark Loop3 notifications as **time-sensitive** and ask for **immediate delivery**:
+
+- tick the **`Immediate Delivery`** so that notifications are delivered right away
+- enable the **`TimeSensistive Notifications`** checkbox 
+
+Make sure your **Focus mode** allows notifications from `Loop`.  Edit the focus mode to:
+
+- add `Loop` to the list of apps with allowed notifications
+- enable the `Time Sensitive Notifications` toggle button
 
 ## Loop Failure
 
