@@ -428,7 +428,7 @@ Modify the 67 for suspendThreshold or 87 for correctionRange to the desired valu
 
 ### Modify Guardrails for Insulin Sensitivity Factor (ISF)
 
-Similar to the instructions for glucose thresholds above, but use this `Key_Phrase` and modify the absoluteBounds row, next line.
+Similar to the instructions for glucose guardrails above, but use this `Key_Phrase` and modify the absoluteBounds row, next line.
 
 ``` { .txt .copy title="Key_Phrase" }
 static let insulinSensitivity = Guardrail(
@@ -439,7 +439,7 @@ static let insulinSensitivity = Guardrail(
 
 ### Modify Guardrails for Carb Ratio (CR)
 
-Similar to the instructions for glucose thresholds above, but use this `Key_Phrase` and modify the absoluteBounds row, next line.
+Similar to the instructions for glucose guardrails above, but use this `Key_Phrase` and modify the absoluteBounds row, next line.
 
 ``` { .txt .copy title="Key_Phrase" }
 static let carbRatio = Guardrail(
