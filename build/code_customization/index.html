@@ -1899,6 +1899,33 @@
     Modify the Guardrails
   </a>
   
+    <nav class="md-nav" aria-label="Modify the Guardrails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#glucose-guardrails" class="md-nav__link">
+    Glucose Guardrails
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-guardrails-for-insulin-sensitivity-factor-isf" class="md-nav__link">
+    Modify Guardrails for Insulin Sensitivity Factor (ISF)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-guardrails-for-carb-ratio-cr" class="md-nav__link">
+    Modify Guardrails for Carb Ratio (CR)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2565,6 +2592,33 @@
     Modify the Guardrails
   </a>
   
+    <nav class="md-nav" aria-label="Modify the Guardrails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#glucose-guardrails" class="md-nav__link">
+    Glucose Guardrails
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-guardrails-for-insulin-sensitivity-factor-isf" class="md-nav__link">
+    Modify Guardrails for Insulin Sensitivity Factor (ISF)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-guardrails-for-carb-ratio-cr" class="md-nav__link">
+    Modify Guardrails for Carb Ratio (CR)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2830,7 +2884,10 @@ Do not paste the result anywhere
 <ul>
 <li>A copy button is available when you hover your mouse in the right-hand side of the block below the title <code>Key_Phrase</code>;  click on it to copy the phrase</li>
 <li>In <abbr title="program used to build an app">Xcode</abbr>, tap the Find menu item and select <code>Find in Workspace</code></li>
-<li>Paste the text into the Find search-box that opens on upper left of <abbr title="program used to build an app">Xcode</abbr> screen and hit enter</li>
+<li>Paste the text into the Find search-box that opens on upper left of <abbr title="program used to build an app">Xcode</abbr> screen and hit enter<ul>
+<li>If you don't see the phrase in the box, hit backspace - your system may have copied an extra return</li>
+</ul>
+</li>
 <li>You should see a message <code>1 result in 1 file</code> (for most cases)<ul>
 <li>Some customizations will show more than one result, but that will be explained in the directions for that customization</li>
 </ul>
@@ -3081,18 +3138,16 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <div class="highlight"><pre><span></span><code>public static let cannulaInsertionUnitsExtra = 0.35 // edit to add a fixed additional amount of insulin during cannula insertion
 </code></pre></div>
 <h2 id="modify-the-guardrails">Modify the <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#modify-the-guardrails" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="glucose-guardrails">Glucose <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#glucose-guardrails" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The <a href="../../loop-3/therapy-settings/#guardrails-for-settings">Therapy Setting <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></a> are for <abbr title="Latest release with major updates">Loop 3</abbr> only.</p>
 <p>If you build <abbr title="Latest release with major updates">Loop 3</abbr> over a version of Loop 2.2.x or FreeAPS where the <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>Guardrail(absoluteBounds:
 </code></pre></div>
 <ul>
-<li><abbr title="Latest release with major updates">Loop 3</abbr> only<ul>
 <li>Folder: LoopKit/Extensions</li>
 <li>File: Guardrail+Settings.swift</li>
 <li>Line: 12 for suspendThreshold</li>
 <li>Line: 26 for correctionRange</li>
-</ul>
-</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>static let suspendThreshold = Guardrail(absoluteBounds: 67...110, recommendedBounds: 74...80, unit: .milligramsPerDeciliter, startingSuggestion: 80)
@@ -3101,6 +3156,22 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <div class="highlight"><pre><span></span><code>static let correctionRange = Guardrail(absoluteBounds: 87...180, recommendedBounds: 100...115, unit: .milligramsPerDeciliter, startingSuggestion: 100)
 </code></pre></div>
 <p>Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).</p>
+<h3 id="modify-guardrails-for-insulin-sensitivity-factor-isf">Modify <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Insulin Sensitivity Factor (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr>)<a class="headerlink" href="#modify-guardrails-for-insulin-sensitivity-factor-isf" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Similar to the instructions for glucose guardrails above, but use this <code>Key_Phrase</code> and modify the absoluteBounds row, next line.</p>
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>static let insulinSensitivity = Guardrail(
+</code></pre></div>
+<ul>
+<li>Folder: LoopKit/Extensions</li>
+<li>File: Guardrail+Settings.swift, line: 81</li>
+</ul>
+<h3 id="modify-guardrails-for-carb-ratio-cr">Modify <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Carb Ratio (<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>)<a class="headerlink" href="#modify-guardrails-for-carb-ratio-cr" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Similar to the instructions for glucose guardrails above, but use this <code>Key_Phrase</code> and modify the absoluteBounds row, next line.</p>
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>static let carbRatio = Guardrail(
+</code></pre></div>
+<ul>
+<li>Folder: LoopKit/Extensions</li>
+<li>File: Guardrail+Settings.swift, line: 88</li>
+</ul>
 <h2 id="adjust-future-carbs-time-interval">Adjust Future Carbs Time Interval<a class="headerlink" href="#adjust-future-carbs-time-interval" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><abbr title="Latest release with major updates">Loop 3</abbr> limits the future time change allowed to 1 hour.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval
