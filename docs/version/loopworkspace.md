@@ -119,7 +119,7 @@ The cloned version of the LoopWorkspace will go into the current directory in th
 How can you find your home directory?
 
 1. In Terminal, if you use `cd` that will take you there automatically.
-2. In Finder, shift-command-H will open your "home" folder.
+2. In Finder, ++shift+command+h++ will open your `home` folder.
 
 ![img/root-finder.png](img/root-finder.png){width="750"}
 {align="center"}
@@ -175,9 +175,7 @@ If you are testing the LoopKit dev branch, you need to be on [zulipchat](https:/
 
 ### Updating Loop to a Specific LoopWorkspace commit
 
-Sometimes, you know a feature you want was added at a specific commit number, but the [Loop Dev Script](../build/build-select-dev.md) does not include that commit. However, you know there are other changes later than that commit which you do not want to test. There is a solution.
-
-For example, suppose you want to checkout LoopWorkspace commit bde44b5, but nothing later.
+Sometimes, you know a feature you want was added at a specific commit number; however, you know there are other changes later than that commit which you do not want to test. There is a solution.
 
 Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../build/code_customization.md#open-a-terminal-in-loopworkspace-folder). First you have to bring down all the latest dev commits. Then you will back up to the one you want.
 
@@ -185,7 +183,7 @@ Be sure your terminal is in the correct location using [Open a Terminal in LoopW
     ``` { .bash .copy }
     git branch
     ```
-1. If you are not in the correct branch, for example `dev`, then issue this git command (suitably modified for the desired branch)
+1. If you are not in the correct branch, normally the desired branch is `dev`, then issue this git command (suitably modified for the desired branch)
     ``` { .bash .copy }
     git checkout dev
     ```
@@ -195,10 +193,19 @@ Be sure your terminal is in the correct location using [Open a Terminal in LoopW
     git pull --recurse
     ```
 1. Now you want to "backup" to the desired commit:
+
+    * You will need to figure out what that commit should be - there is no copy button here - you need to create this line yourself with the correct commit:
+
     ```
-    git checkout bde44b5
+    git checkout <desired commit here>
+    ```
+
+    * Once you have checked out the correct commit, assuming there were no errors, you need to update all the submodules to that commit with this command (which you can copy and paste)
+
+    ``` { .bash .copy }
     git submodule update
     ```
+
 1. Assuming there were no errors, see [Local Modifications Conflict](#local-modifications-conflict), in the process above, you can now build that commit.
 
 ### Build Following Update
@@ -289,7 +296,7 @@ At this point, the commands to get that commit locally on your computer are as f
 
 `cd rileylink_ios; git fetch; git checkout 2541c1c; cd ..`
 
-If you got a error message the # you requested `did not match any file(s) known to git`, you either typed it incorrectly or you forgot the `git fetch` command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.
+If you got an error message the # you requested `did not match any file(s) known to git`, you either typed it incorrectly or you forgot the `git fetch` command. The fetch command brings down information from github to your computer but doesn't make changes to what you have checked out.
 
 ### Local Modifications Conflict
 
@@ -306,7 +313,7 @@ If you get a message such as this:
 
 The easiest fix is to type commands similar to the following, where you modify Loop to be whichever folder(s) had the conflict. If more than one folder had a conflict, then issue the stash for each folder. The submodule update command will continue to show errors until you stash all local changes that interfere with the new code:
 
-```
+``` { .bash .copy }
   cd Loop; git stash; cd ..
   git submodule update
 ```
@@ -317,6 +324,8 @@ After stashing and updating with no errors, you can try to restore your changes:
 ```
 
 If you see errors indicating you cannot use `pop`, that means you need to manually add your customizations back.
+
+You will need to repeat this for each submodule that has a conflict. Use the lines above (for Loop submodule) as a template to resolve conflict(s) other submodule(s).
 
 
 ## Checking out different branches within a LoopWorkspace

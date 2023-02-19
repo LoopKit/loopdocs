@@ -117,6 +117,7 @@ To search using the `Key_Phrase` (see graphic below for clarification):
 * A copy button is available when you hover your mouse in the right-hand side of the block below the title `Key_Phrase`;  click on it to copy the phrase
 * In Xcode, tap the Find menu item and select `Find in Workspace`
 * Paste the text into the Find search-box that opens on upper left of Xcode screen and hit enter
+    * If you don't see the phrase in the box, hit backspace - your system may have copied an extra return
 * You should see a message `1 result in 1 file` (for most cases)
     * Some customizations will show more than one result, but that will be explained in the directions for that customization
 * The file in which the line is located is reported showing the line in that file containing the `Key_Phrase`
@@ -399,6 +400,8 @@ _Code After Modification to add 0.35 U_
 
 ## Modify the Guardrails
 
+### Glucose Guardrails
+
 The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-settings) are for Loop 3 only.
 
 If you build Loop 3 over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.
@@ -408,11 +411,10 @@ If you build Loop 3 over a version of Loop 2.2.x or FreeAPS where the Correction
 Guardrail(absoluteBounds:
 ```
 
-* Loop 3 only
-    * Folder: LoopKit/Extensions
-    * File: Guardrail+Settings.swift
-    * Line: 12 for suspendThreshold
-    * Line: 26 for correctionRange
+* Folder: LoopKit/Extensions
+* File: Guardrail+Settings.swift
+* Line: 12 for suspendThreshold
+* Line: 26 for correctionRange
 
 _Code Before Modification_
 
@@ -423,6 +425,29 @@ and
     static let correctionRange = Guardrail(absoluteBounds: 87...180, recommendedBounds: 100...115, unit: .milligramsPerDeciliter, startingSuggestion: 100)
 
 Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
+
+### Modify Guardrails for Insulin Sensitivity Factor (ISF)
+
+Similar to the instructions for glucose guardrails above, but use this `Key_Phrase` and modify the absoluteBounds row, next line.
+
+``` { .txt .copy title="Key_Phrase" }
+static let insulinSensitivity = Guardrail(
+```
+
+* Folder: LoopKit/Extensions
+* File: Guardrail+Settings.swift, line: 81
+
+### Modify Guardrails for Carb Ratio (CR)
+
+Similar to the instructions for glucose guardrails above, but use this `Key_Phrase` and modify the absoluteBounds row, next line.
+
+``` { .txt .copy title="Key_Phrase" }
+static let carbRatio = Guardrail(
+```
+
+* Folder: LoopKit/Extensions
+* File: Guardrail+Settings.swift, line: 88
+
 
 ## Adjust Future Carbs Time Interval
 
