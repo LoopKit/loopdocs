@@ -12,3 +12,7 @@ article ul ul {
 article ul ul ul {
         list-style-type:  square !important;
 }
+
+.mermaid { 
+   --md-mermaid-node-fg-color:  #18A0A0;
+}
