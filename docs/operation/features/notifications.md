@@ -49,10 +49,29 @@ You can customize the way notifications of Loop are behaving in the Settings App
 ![img/iphone-settings-notifications.png](img/iphone-settings-notifications.png){width="250"}
 {align="center"}
 
-Settings of Loop:
+Loop3 Notifications Settings:
 
-![img/iphone-notifications-loop.png](img/iphone-notifications-loop.png){width="250"}
+![Loop3 iPhone Notifications Settings](img/iphone-notifications-loop3.jpeg){width="250"}
 {align="center"}
+
+Mark **Loop3** notifications as **time-sensitive** and ask for **immediate delivery**:
+
+- tick the **`Immediate Delivery`** so that notifications are delivered right away
+- enable the **`TimeSensistive Notifications`** checkbox 
+
+!!! info  "Notification Delivery"
+
+    You will see the `Notification Delivery` section only if you previously toggled on `Settings / Notifications / Scheduled Summary` in order to receive a summary of notifications at a certain time of the day. If this is not what you want, simply ignore it.
+
+!!! info  "Announce Notifications"
+
+    The `Announce Notifications` section is displayed only if you previously turned on the toggle `Settings / Notifications / Announce Notifications`. Use it if you want Siri to read Loop's notifications out loud on CarPlay, and AirPods...
+
+Make sure **Loop notifications** are **allowed** in your **Focus mode**.
+Edit the focus mode to:
+
+- add `Loop` to the list of apps with allowed notifications
+- enable the `Time Sensitive Notifications` toggle button
 
 ## Loop Failure
 
