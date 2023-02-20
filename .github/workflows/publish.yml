@@ -21,7 +21,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: mkdocs build
 
-      - uses: JamesIves/github-pages-deploy-action@v4.2.5
+      - uses: JamesIves/github-pages-deploy-action@v4
         with:
-          BRANCH: gh-pages
-          FOLDER: site
+          branch: gh-pages
+          folder: site
