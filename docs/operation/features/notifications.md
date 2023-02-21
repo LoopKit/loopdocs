@@ -49,12 +49,12 @@ You can customize the way notifications of Loop are behaving in the Settings App
 ![img/iphone-settings-notifications.png](img/iphone-settings-notifications.png){width="250"}
 {align="center"}
 
-Loop3 Notifications Settings:
+Loop 3 Notifications Settings:
 
-![Loop3 iPhone Notifications Settings](img/iphone-notifications-loop3.jpeg){width="250"}
+![Loop 3 iPhone Notifications Settings](img/iphone-notifications-loop3.jpeg){width="250"}
 {align="center"}
 
-Mark **Loop3** notifications as **time-sensitive** and ask for **immediate delivery**:
+Mark **Loop 3** notifications as **time-sensitive** and ask for **immediate delivery**:
 
 - tick the **`Immediate Delivery`** so that notifications are delivered right away
 - enable the **`TimeSensistive Notifications`** checkbox 
