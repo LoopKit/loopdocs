@@ -4,6 +4,11 @@ The information and user interface for Omnipod (Eros) and DASH pods is the same,
 
 ## Pair Pod
 
+!!! danger "Max Fill is 200 Units"
+    When you fill the Pod do not exceed 200 units.
+
+    If you overfill the pods, you may get a pod fault right after priming.
+
 You'll be pairing a pod every 2 or 3 days (max pod life is 80 hours).
 
 You'll see this screen every time you ask Loop to `Pair New Pod`.
