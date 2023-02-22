@@ -1883,7 +1883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build/build-select-dev/" class="md-nav__link">
+      <a href="../../version/build-dev/" class="md-nav__link">
         Build Loop Dev
       </a>
     </li>
@@ -2346,18 +2346,17 @@
 <li>This can be used by those who don't own a Mac but want to Loop</li>
 <li>The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method can be used even if you do use a Mac - the two methods do not interfere with each other</li>
 </ul>
-<p><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is the only method available for installation to a phone when using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method, but can also be used with the Mac-<abbr title="program used to build an app">Xcode</abbr> build method.</p>
+<p><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is the only method available for installation to a phone when using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method, but it can also be used as a remote build option with the Mac-<abbr title="program used to build an app">Xcode</abbr> build method - see <a href="../../build/testflight-xcode/"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> from <abbr title="program used to build an app">Xcode</abbr></a>.</p>
 <h2 id="pros-and-cons">Pros and Cons<a class="headerlink" href="#pros-and-cons" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="advantages-of-github-build">Advantages of <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build<a class="headerlink" href="#advantages-of-github-build" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Developer quote: "This frees up the dependency of having the most recent <abbr title="program used to build an app">Xcode</abbr> to build to a [phone with a] new version of <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. <abbr title="program used to build an app">Xcode</abbr> only needs to support the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version on your phone when you are building directly to the phone."</p>
 <ul>
 <li>Mac computer is not required</li>
 <li>Most recent version of <abbr title="program used to build an app">Xcode</abbr> is not required<ul>
-<li>No more updating <abbr title="operating system for Mac computer">macOS</abbr> then updating <abbr title="program used to build an app">Xcode</abbr></li>
+<li>No more updating <abbr title="operating system for Mac computer">macOS</abbr> then updating <abbr title="program used to build an app">Xcode</abbr> for certain <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> upgrades</li>
 <li>The time required for the initial setup for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> may take less time than one <abbr title="operating system for Mac computer">macOS</abbr>/<abbr title="program used to build an app">Xcode</abbr> version update</li>
 </ul>
 </li>
-<li>Updates take a few minutes of your time to start and are ready to install on your phone in less than an hour</li>
+<li>Updates take a few minutes of your time to start and are ready to install on your phone in about an hour</li>
 </ul>
 <h3 id="cons">Cons<a class="headerlink" href="#cons" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The customization process is more involved. One set of commonly requested customizations is available, as explained at <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a>.</p>
@@ -2367,22 +2366,22 @@
 </ul>
 </li>
 <li>There are no instructions for applying customizations<ul>
-<li>Hint - when customization instructions are provided</li>
-<li>You will be making a forks for every submodule you want to customize</li>
-<li>You will need to update your LoopWorkspace Fork to point to your submodule forks</li>
-<li>You will be responsible for keeping those forks up to date</li>
+<li>Hints:</li>
+<li>You need to make a forks for every submodule you want to customize</li>
+<li>You need to update your LoopWorkspace Fork to point to your submodule forks</li>
+<li>You are responsible for keeping those forks up to date</li>
 </ul>
 </li>
 </ul>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><strong><abbr title="Latest release with major updates">Loop 3</abbr> requires <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 or higher</strong></p>
-<p>The requirements for building and using the Loop app with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Actions method are given below.</p>
+<p>The requirements for building and using the Loop app with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> method are given below.</p>
 <ol>
 <li><a href="../../build/step2/">Compatible iPhone/iPod Touch</a></li>
 <li><a href="../../build/step3/">Compatible Pump</a></li>
 <li><a href="../../build/step4/">Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a></li>
 <li><a href="../../build/step5/"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device</a> (not needed for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH)</li>
-<li>Free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account (instructions included in <a href="../gh-first-time/">First-Time with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Actions</a>)</li>
+<li>Free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account (instructions included in <a href="../gh-first-time/">First-Time with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></a>)</li>
 <li><a href="../../build/step6/">Apple Developer Membership</a><ul>
 <li>Must be a paid developer account</li>
 <li>If building for a family member, review this section:<ul>
@@ -2410,6 +2409,10 @@
 </li>
 <li>And of course, an errors page is under construction:<ul>
 <li><a href="../gh-errors/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Errors</a></li>
+</ul>
+</li>
+<li>For those testing the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> who want to use <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build:<ul>
+<li><a href="../gh-update/#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a></li>
 </ul>
 </li>
 </ul>

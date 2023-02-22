@@ -725,8 +725,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#most-common-errors" class="md-nav__link">
-    Most Common Errors
+  <a href="#most-common-mistakes" class="md-nav__link">
+    Most Common Mistakes
   </a>
   
 </li>
@@ -1957,7 +1957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build/build-select-dev/" class="md-nav__link">
+      <a href="../../version/build-dev/" class="md-nav__link">
         Build Loop Dev
       </a>
     </li>
@@ -2342,8 +2342,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#most-common-errors" class="md-nav__link">
-    Most Common Errors
+  <a href="#most-common-mistakes" class="md-nav__link">
+    Most Common Mistakes
   </a>
   
 </li>
@@ -2490,7 +2490,7 @@
 <h2 id="github-build-method-errors"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Method Errors<a class="headerlink" href="#github-build-method-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update LoopDocs to make it easier for the next person to succeed without errors.</p>
 <p>If you've been around Loop for a while, you know the mantra about screen shots. Well, for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Action Failures, screen shots are close to useless. If you get an error with an Action, you should download the error log and examine it for known diagnosis strings. If you are still stuck then post the zip or the 1_ACTION.txt file, where ACTION is replaced with "identifiers", "certificates" or "build", depending on which action failed. Please see <a href="#examine-the-error">Examine the Error</a> for instructions.</p>
-<h2 id="most-common-errors">Most Common Errors<a class="headerlink" href="#most-common-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="most-common-mistakes">Most Common Mistakes<a class="headerlink" href="#most-common-mistakes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>These are some of the most common errors to date.</p>
 <ul>
 <li>Make a spelling error when adding <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><ul>
@@ -2513,7 +2513,7 @@
 </li>
 </ul>
 </li>
-<li>Run the Actions in alphabetical order as they appear on the Actions screen instead of Add, Create, Build - the build step will fail if you have not first successfully created the certificates</li>
+<li>Run the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> in alphabetical order as they appear on the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> screen instead of Add, Create, Build - the build step will fail if you have not first successfully created the certificates</li>
 </ul>
 <h2 id="find-your-error">Find Your Error<a class="headerlink" href="#find-your-error" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is a separate section for each step in the process. First you must follow the <a href="#examine-the-error">Examine the Error</a> instructions to download the error log file. Then go to the section for the Action you were trying to complete to look for possible error strings that are in your log file.</p>
@@ -2541,7 +2541,7 @@
 </li>
 <li>Once you open the text file with a text editor, search for the string(s) listed below to see if it has been documented<ul>
 <li>If you identify the error, fix it and try again</li>
-<li>Sometimes you need to do all 3 Actions again: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, (extra steps), Create Certificates and then Build Loop -&gt; it does not hurt to repeat a step even if it was already successful</li>
+<li>Sometimes you need to do all 3 <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> again: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, (extra steps), Create Certificates and then Build Loop -&gt; it does not hurt to repeat a step even if it was already successful</li>
 <li>The extra steps between Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Create <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> are required in some cases - so go on and review the identifiers to make sure they have the correct <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with your TEAMID and that the Loop identifier has Time Sensititve Notifications enabled</li>
 </ul>
 </li>
@@ -2665,7 +2665,7 @@
 <li>
 <p>Make sure you completed the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a> Step</p>
 <ul>
-<li>Once you've resolved that step, run these Actions again:<ul>
+<li>Once you've resolved that step, run these <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> again:<ul>
 <li>Create Certificates</li>
 <li>Build Loop</li>
 </ul>
@@ -2739,7 +2739,7 @@
 </ol>
 <p>At this point, get your correct TEAMID, fix your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> file to have the correct TEAMID and then return to <a href="../gh-first-time/#configure-secrets">First-Time: Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>. This time you will be updating TEAMID in the <abbr title="contains project files and each file's revision history">repository</abbr> secret list.</p>
 <h2 id="repeat-build-loop-errors">Repeat Build Loop Errors<a class="headerlink" href="#repeat-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section is only for people who have successfully built using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Actions.</p>
+<p>This section is only for people who have successfully built using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>.</p>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
 <h3 id="could-not-install-wwdr-certificate">Could not install WWDR certificate<a class="headerlink" href="#could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Assuming you have successfully built using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method before:</p>

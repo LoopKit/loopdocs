@@ -799,6 +799,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#github-build-for-dev" class="md-nav__link">
+    GitHub Build for dev
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Build for dev">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-dev-actions" class="md-nav__link">
+    Loop dev Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1917,7 +1937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build/build-select-dev/" class="md-nav__link">
+      <a href="../../version/build-dev/" class="md-nav__link">
         Build Loop Dev
       </a>
     </li>
@@ -2390,6 +2410,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#github-build-for-dev" class="md-nav__link">
+    GitHub Build for dev
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Build for dev">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-dev-actions" class="md-nav__link">
+    Loop dev Actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2407,7 +2447,7 @@
 
   <h1>GitHub Update</h1>
 
-<h2 id="update-loop-using-github-actions">Update Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Actions<a class="headerlink" href="#update-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="update-loop-using-github-actions">Update Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><a class="headerlink" href="#update-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is only available with <abbr title="Latest release with major updates">Loop 3</abbr> and Loop development <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <div class="admonition info">
 <p class="admonition-title">Time Estimate</p>
@@ -2448,7 +2488,7 @@
 <li>Update your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> token (if needed)</li>
 <li>Go to your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>Update your <abbr title="a copy of code in a github repository other than the original">fork</abbr> (if needed)</li>
-<li>Select Actions: Build Loop</li>
+<li>Select <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>: Build Loop</li>
 <li>
 <p>After Build completes and is processed by <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> (about 30 to 45 minutes)</p>
 <ul>
@@ -2498,11 +2538,11 @@
 <p>The graphics and instructions in this section are using a phone.</p>
 <p>Scroll all the way up to the top of the window to see the hamburger menu, click on it and choose your name and icon (near bottom of the list). Scroll down to the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> and tap on the link.</p>
 <p>Do a horizontal scroll (required on your phone, probably not on a browser) on the row that starts with Code and ends in Settings and tap on Settings. If you don't see Settings (if last item on row is Insights), then you are <strong>not</strong> on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> or you need to sign in to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. You should see <code>username/LoopWorkspace</code> with forked from <code>LoopKit/LoopWorkspace</code> underneath.</p>
-<p>Review the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below that shows horizontal scroll to find and tap on Settings, then scroll down on the phone to reach <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, open the drop down indicator to see Actions.</p>
+<p>Review the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below that shows horizontal scroll to find and tap on Settings, then scroll down on the phone to reach <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, open the drop down indicator to see <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>.</p>
 <p align="center"><img alt="phone screens showing the repository settings, secrets and actions" src="../img/phone-with-settings.gif" width="300" /></p>
-<p>After tapping on Settings -&gt; <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> -&gt; Actions, keep scrolling on the same screen, past the Action secrets / New <abbr title="contains project files and each file's revision history">repository</abbr> secret row, until you see your Repository secrets list as shown in the next <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>.</p>
+<p>After tapping on Settings -&gt; <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> -&gt; <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>, keep scrolling on the same screen, past the Action secrets / New <abbr title="contains project files and each file's revision history">repository</abbr> secret row, until you see your Repository secrets list as shown in the next <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>.</p>
 <p align="center"><img alt="phone screen showing repository secrets list" src="../img/phone-secret-list.gif" width="300" /></p>
-<p>When you see the secret, GH_PAT, tap on the pencil and then scroll down until you see the Actions secrets / Update secret dialog as shown in the next graphic. Paste your new token into the Value section and tap Update Secret.</p>
+<p>When you see the secret, GH_PAT, tap on the pencil and then scroll down until you see the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> secrets / Update secret dialog as shown in the next graphic. Paste your new token into the Value section and tap Update Secret.</p>
 <p align="center"><img alt="update secret dialog" src="../img/update-secret-dialog.png" width="300" /></p>
 <p>Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the <a href="#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a> instructions to start a new build.</p>
 <h2 id="github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update<a class="headerlink" href="#github-build-update" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2521,7 +2561,7 @@
 <li>
 <p>Build Loop - refer to graphic below as you follow the steps</p>
 <ul>
-<li>Click on the 'Actions' tab</li>
+<li>Click on the '<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>' tab</li>
 <li>Select the 'Build Loop' <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> on the left</li>
 <li>Look on the right and click 'Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>'</li>
 <li>Make sure the desired Branch is selected</li>
@@ -2604,7 +2644,7 @@
 </ol>
 <p align="center"><img alt="access to branches display" src="../img/early-adopter-02.svg" width="700" /></p>
 <h3 id="set-default-branch">Set Default Branch<a class="headerlink" href="#set-default-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Whenever you tap on Actions: Build Loop, you have the chance to select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> before starting the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>. But it's really better that the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want, typically <code>main</code>, be the default. That way you won't forget when you start the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> (tell <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to start building).</p>
+<p>Whenever you tap on <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>: Build Loop, you have the chance to select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> before starting the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>. But it's really better that the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want, typically <code>main</code>, be the default. That way you won't forget when you start the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> (tell <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to start building).</p>
 <p>If your desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, these are the steps to modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. For this example, we show how to change from a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>dev</code> to a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>main</code>. Note - only the owner of the <abbr title="contains project files and each file's revision history">repository</abbr> can take this action and they must be logged in. Otherwise the Settings tab does not appear.</p>
 <p>For the numbered steps below, refer to the graphic found under each group of steps.</p>
 <ol>
@@ -2634,6 +2674,34 @@
 </li>
 </ol>
 <p>Your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> has been changed.</p>
+<h2 id="github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev<a class="headerlink" href="#github-build-for-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You can build Loop-dev using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method. This section is suitable if you have already built either dev or main <abbr title="version of code within a single repository or workspace repository">branch</abbr> using the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time</a> instructions.</p>
+<p><strong>No matter the method used to build Loop-dev: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> actions or <abbr title="a tool for version control">git</abbr> commands, you are testing development code. Please read this link now before continuing.</strong></p>
+<ul>
+<li><strong><a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></strong></li>
+</ul>
+<p>When building the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you may need to perform the steps listed in the <code>Early Adopter</code> section (linked later), but you will be making sure that your <abbr title="a copy of code in a github repository other than the original">fork</abbr> has the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>If you are building dev, it is assumed you can figure out the steps without explicit instructions.</p>
+<p>There are two steps:</p>
+<ol>
+<li>Connect your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> with the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, if it is not already connected</li>
+<li>Ensure your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> has the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ol>
+<p>Skip back to <a href="#return-to-your-loopworkspace-fork">Return to Your LoopWorkspace Fork</a> and follow the instructions to configure so the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is in sync with LoopKit and the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>When you go through the steps for building Loop, all the places where the instructions say the <abbr title="version of code within a single repository or workspace repository">branch</abbr> should be <code>main</code>, your <abbr title="a copy of code in a github repository other than the original">fork</abbr> should show the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> instead.</p>
+<h3 id="loop-dev-actions">Loop dev <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><a class="headerlink" href="#loop-dev-actions" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr>.1 Update</p>
+<p>The current dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, <abbr title="Latest release with major updates">Loop 3</abbr>.1.0, has an updated set of <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>.</p>
+<ul>
+<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> only shows the actions for the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>You must set the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> for your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to be the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> or you will not see the updated actions associated with the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ul>
+</div>
+<p>A new action was added with <abbr title="Latest release with major updates">Loop 3</abbr>.1 to provide better error messages if something is wrong with your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. In addition, the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are numbered to match the order in which they should be applied.</p>
+<p align="left"><img alt="actions shown for Loop 3.1 and newer versions" src="../img/gh-actions-3.1.png" width="200" /></p>
+<p>Some items were deliberately set to be incorrect in the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> list. Representative error messages are shown when running the validate secrets action.</p>
+<p align="center"><img alt="representative messages with deliberate errors when running validate secrets" src="../img/gh-validate-secrets.png" width="800" /></p>
 
 
 

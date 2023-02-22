@@ -2114,7 +2114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build/build-select-dev/" class="md-nav__link">
+      <a href="../../version/build-dev/" class="md-nav__link">
         Build Loop Dev
       </a>
     </li>
@@ -2801,8 +2801,8 @@
 
   <h1>GitHub First-Time</h1>
 
-<h2 id="build-loop-using-github-actions">Build Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Actions<a class="headerlink" href="#build-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This is only available with <abbr title="Latest release with major updates">Loop 3</abbr> and Loop development branches.</p>
+<h2 id="build-loop-using-github-actions">Build Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><a class="headerlink" href="#build-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>This is only available for <abbr title="Latest release with major updates">Loop 3</abbr> and greater versions and for Loop development branches.</p>
 <div class="admonition info">
 <p class="admonition-title">Time Estimate</p>
 <ul>
@@ -2873,7 +2873,7 @@
 <ul>
 <li>Check to make sure what you are doing matches the instructions</li>
 <li>Check to make sure you did not skip a step</li>
-<li>Notice - the actions show up alphabetically but they have to be done in A, C, B order<ul>
+<li>Notice - for <abbr title="Latest release with major updates">Loop 3</abbr>.0, the actions show up alphabetically but they have to be done in A, C, B order<ul>
 <li>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> (and do some more stuff), Create Certificates, Build Loop</li>
 </ul>
 </li>
@@ -2881,7 +2881,7 @@
 <p>Different people approach this differently. Choose your method to achieve success:</p>
 <ul>
 <li>Print the summary section above, go through the page sequentially doing each step and check off each step as you go</li>
-<li>Read this whole page, then review it and read the <a href="../gh-errors/#most-common-mistakes">Most Common Mistakes</a> section, then start doing each step</li>
+<li>Read this whole page, then review it and read the <a href="../gh-errors/#most-common-mistakes"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Errors: Most Common Mistakes</a> section, then return to this page and start doing each step</li>
 <li>Figure out your method and use it</li>
 </ul>
 </div>
@@ -2899,7 +2899,7 @@
 <p>For the initial steps, you'll be going back and forth between <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> and Apple Developer webpages. It is best to open each in a separate window or tab for your browser.</p>
 <h2 id="new-terms-with-github-build">New Terms with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build<a class="headerlink" href="#new-terms-with-github-build" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are a number of terms that may seem unfamiliar with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build. As you move through this page, there will be detailed instructions, but it helps to have the overview.</p>
-<p>Some of these terms have ToolTips, so hover your mouse over the item - or review in the <a href="../../faqs/glossary/">Glossary</a>. Others need an expanded explanation. If reading this first is confusing, finish reviewing the whole page and then come back.</p>
+<p>Some of these terms have ToolTips, so hover your mouse over the item - or review in the <a href="../../faqs/glossary/">Glossary</a>. Others need an expanded explanation. If reading about the new terms first is confusing, finish reviewing the whole page and then come back.</p>
 <ul>
 <li><abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr>: You won't see this term but the concept is important when explaining the other terms<ul>
 <li>The Loop code uses modules to handle different components of the entire app</li>
@@ -2907,18 +2907,20 @@
 <li>Others do not have this requirement</li>
 </ul>
 </li>
-<li><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>: The "<abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>" are the names of the <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> that must be available to build Loop with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr><ul>
-<li>There are 4 <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for LoopWorkspace that must be associated with your <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr><ul>
+<li><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>: The <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> refer to the <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> that must be available to build Loop with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr><ul>
+<li>There are 4 Identifier Names for LoopWorkspace that must be associated with your <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr><ul>
 <li>Loop, Loop Intent Extension, Loop Status Extension and Small Status Widget</li>
 </ul>
 </li>
-<li>There are 2 other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> that do not require that association<ul>
+<li>There are 2 other Identifier Names that must exist but do not require that association<ul>
 <li>WatchApp and WatchAppExtension</li>
 </ul>
 </li>
-<li>To further confuse users of the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method, the names you see depend on whether you previously build with <abbr title="program used to build an app">Xcode</abbr> and whether you previously built Loop 2.2.x or an early version of <abbr title="Latest release with major updates">Loop 3</abbr> while it was still the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>While the exact name might be different from those seen by people who have never built, it is ok - the build should still work</li>
-<li>The directions with the Identifier names that do not start with XC are correct for people who have never built Loop with <abbr title="program used to build an app">Xcode</abbr></li>
+<li>On the Identifier screen, there will be <strong>NAME</strong> and <strong>IDENTIFIER</strong> columns<ul>
+<li>The items you see under the <strong>NAME</strong> column depend on whether you previously built with <abbr title="program used to build an app">Xcode</abbr> and may start with XC</li>
+<li>The items under the <strong>IDENTIFIER</strong> column match the table in the documentation</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>: a method to securely embed personal information into your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace to enable <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to have access required to build Loop<ul>
@@ -2936,18 +2938,22 @@
 </li>
 </ul>
 </li>
+<li><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>: a custom application for the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> platform that performs a complex but frequently repeated task<ul>
+<li>With <abbr title="Latest release with major updates">Loop 3</abbr>, actions to Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, Create Certificates and Build Loop are provided to enable users to build the Loop app from a browser on any computer</li>
 </ul>
-<h2 id="configure-to-use-github-build-actions">Configure to use <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Actions<a class="headerlink" href="#configure-to-use-github-build-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
+</li>
+</ul>
+<h2 id="configure-to-use-github-build-actions">Configure to use <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><a class="headerlink" href="#configure-to-use-github-build-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Review the entire process before starting and then go through slowly and carefully.</p>
 <p>These instructions allow you to build Loop without having access to a Mac. They also allow you to easily install Loop on phones that are not connected to your computer.</p>
 <ul>
-<li>You can easily send Loop app updates to those you care for</li>
-<li>You can access and install Loop if you lose or damage your device</li>
+<li>You can send Loop app updates to those you care for</li>
+<li>You can access and install the Loop app via <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> if you lose or damage your device</li>
 <li>You do not need to worry about correct <abbr title="program used to build an app">Xcode</abbr>/<abbr title="operating system for Mac computer">macOS</abbr> versions</li>
 </ul>
 <p>The setup steps are somewhat involved, but nearly all are one-time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use. Use a <strong>text-only editor</strong> for this archive file for your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. People have gotten into difficulties when a lower-case character was "auto-corrected" to upper-case when pasting into their archive file.</p>
 <p><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a>.</p>
-<p>Your app must be updated once every 90 days, at the current time, but it's simple to make a new build and can be done from anywhere, see <a href="../gh-update/">Update Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Actions</a>.</p>
+<p>Your app must be updated once every 90 days, at the current time, but it's simple to make a new build and can be done from anywhere, see <a href="../gh-update/">Update Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></a>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Expect Updates</p>
 <p>Plans are in progress to configure the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> action to automatically build every 60 days. Once this is in place, then you won't need to worry about building every 90 days. But these are just plans right now.</p>
@@ -3020,7 +3026,7 @@
 <li>This link takes you straight to <a href="https://developer.apple.com">Apple Developer account</a> to sign up</li>
 </ul>
 <h3 id="generate-api-key">Generate API Key<a class="headerlink" href="#generate-api-key" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> steps but you will need to pause at <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>.</p>
+<p>You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> steps (see <a href="#new-github-account">New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Account</a> or <a href="#setup-github">Setup <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a>), but you will need to pause at <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>.</p>
 <p>This section will walk you through the steps required to gather or create these parameters.</p>
 <table>
 <thead>
@@ -3084,7 +3090,6 @@
 <li>
 <p>If you did not get routed through the "permission is required" screens click the blue &plus; sign</p>
 </li>
-<li>TO DO - update this graphic</li>
 </ul>
 <p align="center"><img alt="App Store Connect Key page" src="../img/api-key-initial-screen.svg" width="700" /></p>
 <ul>
@@ -3207,6 +3212,7 @@
 <ul>
 <li>Copy the token and record it - once you leave this screen you can't see it again</li>
 <li>You will use this for <code>GH_PAT</code> when you set up your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></li>
+<li>You can <a href="../gh-update/#regenerate-github-token">Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a> for <code>GH_PAT</code> whenever you need</li>
 </ul>
 </li>
 </ol>
@@ -3314,10 +3320,10 @@
 </ul>
 </li>
 <li>
-<p>On the left side, find the <code>Secrets and variables</code> dropdown and choose Actions</p>
+<p>On the left side, find the <code>Secrets and variables</code> dropdown and choose <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></p>
 <ul>
 <li>
-<p>After you select on Actions, your screen should look like the graphic below</p>
+<p>After you select on <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>, your screen should look like the graphic below</p>
 <p align="center"><img alt="action secrets and variables screen" src="../img/gh-actions-secrets.svg" width="700" /></p>
 </li>
 </ul>
@@ -3382,13 +3388,9 @@
 <p>This is a good place to pause if you need to. Just note where you are on the page so you can return later.</p>
 </div>
 <h2 id="add-identifiers-for-loop">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop<a class="headerlink" href="#add-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Early Adopters</p>
-<p>If you started using this method before <abbr title="Latest release with major updates">Loop 3</abbr> was released, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a>.</p>
-</div>
-<p>Near the top middle of your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>, there is an Actions tab. If you have used Actions on this <abbr title="contains project files and each file's revision history">repository</abbr> before, skip ahead to <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
-<h3 id="first-use-of-actions-tab">First Use of Actions Tab<a class="headerlink" href="#first-use-of-actions-tab" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<p>Near the top middle of your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>, there is an <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> tab. If you have used <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> on this <abbr title="contains project files and each file's revision history">repository</abbr> before, skip ahead to <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
+<h3 id="first-use-of-actions-tab">First Use of <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> Tab<a class="headerlink" href="#first-use-of-actions-tab" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
 <ul>
 <li>The first time you click on <code>Actions</code> with this <abbr title="contains project files and each file's revision history">repository</abbr> you'll be informed that <code>Workflows aren't being run on this forked repository</code> as shown in the graphic below</li>
 <li>
@@ -3396,16 +3398,16 @@
 <p align="center"><img alt="workflows disabled screen" src="../img/gh-workflows-disabled.png" width="700" /></p>
 </li>
 </ul>
-<p>The workflows are now displayed: look at the list on the left side as shown in the graphic below. (You can dismiss the Actions Enabled message using the X near the upper right side if it appears).</p>
+<p>The workflows are now displayed: look at the list on the left side as shown in the graphic below. (You can dismiss the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> Enabled message using the X near the upper right side if it appears).</p>
 <p align="center"><img alt="workflows displayed" src="../img/gh-workflows-enabled.png" width="700" /></p>
 <h3 id="add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
-<li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on "Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>"</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
 <li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
-<li>If you have additional branches, you can change the <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example, select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>If your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not <code>main</code>, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a></li>
 </ul>
 </li>
 <li>
@@ -3443,7 +3445,7 @@
 <h4 id="new-builders">New Builders<a class="headerlink" href="#new-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>If you never built using <abbr title="program used to build an app">Xcode</abbr>, then after successfully performing the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Action, you will see the six items listed under <strong>NAME</strong> in the table below with the associated <strong>IDENTIFIER</strong> information, where your developer ID replaces the TEAMID in the identifier.</p>
 <h4 id="previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders<a class="headerlink" href="#previous-xcode-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If you have built Loop using <abbr title="program used to build an app">Xcode</abbr>, then at least the Loop identifier will appear as <code>XC com.TEAMID.loopkit.Loop</code> under the <strong>NAME</strong> column. There may be other differences in the <strong>NAME</strong> column, but key off what you see under the <strong>IDENTIFIER</strong> column of the table. Only the six listed in the table below are of interest.</p>
+<p>If you have built Loop using <abbr title="program used to build an app">Xcode</abbr>, then at least the Loop identifier will appear as <code>XC com.TEAMID.loopkit.Loop</code> under the <strong>NAME</strong> column. There may be other differences in the <strong>NAME</strong> column, but key off what you see under the <strong>IDENTIFIER</strong> column of the table. Only the six listed in the table below are of interest when building Loop.</p>
 <h4 id="table-with-name-and-identifier-for-loop-3">Table with Name and Identifier for <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#table-with-name-and-identifier-for-loop-3" title="Anchor link to this Header on this Page">&para;</a></h4>
 <table>
 <thead>
@@ -3481,8 +3483,9 @@
 </table>
 <div class="admonition warning">
 <p class="admonition-title">Loop 2 to <abbr title="Latest release with major updates">Loop 3</abbr> Builders</p>
-<p>Several people who built earlier versions of Loop with <abbr title="program used to build an app">Xcode</abbr> and are using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method say they can't find the identifier names.</p>
-<p>If that is happening to you, follow the <a href="#delete-identifiers">Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> instructions and then run Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> again. You might not be able to delete the "Loop" identifier, so it will still begin with XC, but the others will appear with the short names shown above.</p>
+<p>Several people who built earlier versions of Loop with <abbr title="program used to build an app">Xcode</abbr> and are using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method say they can't find the identifier names. You can key off the <strong>IDENTIFIER</strong> instead of the <strong>NAME</strong> column in the table above.</p>
+<p>Or</p>
+<p>Follow the <a href="#delete-identifiers">Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> instructions and then run Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> again. You might not be able to delete the "Loop" identifier, so it will still begin with XC, but the others will appear with the short names shown above.</p>
 </div>
 <h3 id="add-or-review-configuration-for-loop-identifier">Add or Review Configuration for Loop Identifier<a class="headerlink" href="#add-or-review-configuration-for-loop-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Find and click on the Loop identifier row on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</p>
@@ -3577,7 +3580,7 @@
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
 <h2 id="create-loop-app-in-app-store-connect">Create Loop App in App Store Connect<a class="headerlink" href="#create-loop-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you have created a Loop app in App Store Connect before, you can skip this section.</p>
-<p>If have previously used some kind of remote build, like diawi, you may have your Loop in the App Store but can't see it. Don't worry - there are instructions for this case.</p>
+<p>If have previously used some kind of remote build, like diawi or <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, you may have your Loop in the App Store but can't see it. Don't worry - there are instructions for this case.</p>
 <ol>
 <li>
 <p>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed.</p>
@@ -3657,17 +3660,13 @@
 </li>
 </ul>
 <h2 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Early Adopters</p>
-<p>If you started using this method before <abbr title="Latest release with major updates">Loop 3</abbr> was released, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a>.</p>
-</div>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
-<li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on "Create Certificates"</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
 <li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
-<li>If you have additional branches, you can change the <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example, select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>If your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not <code>main</code>, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a></li>
 </ul>
 </li>
 <li>
@@ -3678,19 +3677,18 @@
 <p>Wait a minute or two for the action to finish</p>
 <ul>
 <li>If this action fails, head over to <a href="../gh-errors/#action-create-certificates-errors">Action: Create Certificates Errors</a></li>
-<li>Once you've resolved the error, repeat the Actions <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and then Create Certificates. (The Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> might not be required but it is fast and should be done as a matter of routine.)</li>
+<li>Once you've resolved the error, repeat the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and then Create Certificates. (The Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> might not be required but it is fast and should be done as a matter of routine.)</li>
 </ul>
 </li>
 </ol>
 <h2 id="build-loop_1">Build Loop<a class="headerlink" href="#build-loop_1" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Refer to the graphic below for the first four steps:</p>
 <ol>
-<li>Click on the "Actions" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
+<li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
 <li>On the left side, click on "Build Loop".</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
 <li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
 <li>If your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not <code>main</code>, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a></li>
-<li>If you have additional branches, you can change the <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example, select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ul>
 </li>
 <li>
