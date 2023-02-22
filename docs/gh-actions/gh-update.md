@@ -266,3 +266,42 @@ For the numbered steps below, refer to the graphic found under each group of ste
     {align="center"}
 
 Your default branch has been changed.
+
+## GitHub Build for dev
+
+You can build Loop-dev using GitHub build method. This section is suitable if you have already built either dev or main branch using the [GitHub First-Time](gh-first-time.md) instructions.
+
+**No matter the method used to build Loop-dev: GitHub actions or git commands, you are testing development code. Please read this link now before continuing.**
+
+* **[What's going on in the dev branch](../version/development.md#whats-going-on-in-the-dev-branch)**
+
+When building the dev branch, you may need to perform the steps listed in the `Early Adopter` section (linked later), but you will be making sure that your fork has the dev branch as the default branch.
+
+If you are building dev, it is assumed you can figure out the steps without explicit instructions.
+
+There are two steps:
+
+1. Connect your LoopWorkspace fork with the dev branch, if it is not already connected
+1. Ensure your LoopWorkspace fork has the dev branch as the default branch
+
+Skip back to [Return to Your LoopWorkspace Fork](#return-to-your-loopworkspace-fork) and follow the instructions to configure so the dev branch is in sync with LoopKit and the dev branch of your fork is your default branch.
+
+When you go through the steps for building Loop, all the places where the instructions say the branch should be `main`, your fork should show the `dev` branch instead.
+
+### Loop dev Actions
+
+!!! warning "Loop 3.1 Update"
+    The current dev branch, Loop 3.1.0, has an updated set of Actions.
+
+    * GitHub only shows the actions for the default branch
+    * You must set the `dev` branch for your fork to be the default branch or you will not see the updated actions associated with the `dev` branch
+
+A new action was added with Loop 3.1 to provide better error messages if something is wrong with your Secrets. In addition, the Actions are numbered to match the order in which they should be applied.
+
+![actions shown for Loop 3.1 and newer versions](img/gh-actions-3.1.png){width="200"}
+{align="left"}
+
+Some items were deliberately set to be incorrect in the Secrets list. Representative error messages are shown when running the validate secrets action.
+
+![representative messages with deliberate errors when running validate secrets](img/gh-validate-secrets.png){width="800"}
+{align="center"}

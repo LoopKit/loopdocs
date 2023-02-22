@@ -4,6 +4,22 @@ The information and user interface for Omnipod (Eros) and DASH pods is the same,
 
 ## Pair Pod
 
+!!! danger "Max Fill is 200 Units"
+    When you fill the Pod do not exceed 200 units.
+
+    If you overfill the pods, you may get a pod fault right after priming.
+
+!!! info "Pod Filling and Insertion"
+    The Pod filling and insertion instructions are the same with the Loop app as they are for the PDM.  These videos: [Filling a Pod with Insulin](https://youtu.be/qJBN6rlvn_Y) and [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI), may be useful.
+
+    For DASH Pods:
+
+    * You will use your phone instead of the PDM.  Be sure to keep the phone close to the pod during pairing and insertion because the Pod uses a low-power mode during these activities.
+
+    For Eros Pods:
+
+    * You will use your phone and RileyLink compatible device instead of the PDM.  Be sure to keep the phone and RileyLink close during pairing and insertion because the Pod uses a low-power mode during these activities.
+
 You'll be pairing a pod every 2 or 3 days (max pod life is 80 hours).
 
 You'll see this screen every time you ask Loop to `Pair New Pod`.
@@ -23,7 +39,7 @@ Graphic below shows the Pair Pod screen for Omnipod (left) and Omnipod DASH (rig
     Please watch the video to see the full process before pairing your first pod.
 
 
-A [video is found here for pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing). Once the pod starts priming in the video, you may want to skip forward (it takes about a minute to prime).
+A [video is found here for what shows on the Loop app screen when pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing). Once the pod starts priming in the video, you may want to skip forward (it takes about a minute to prime).
 
 !!! danger "Keep Gear Close"
     * Make sure phone (and RileyLink if using one) are close to the pod before you tap Pair Pod

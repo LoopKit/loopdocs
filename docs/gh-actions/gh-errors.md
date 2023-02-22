@@ -4,7 +4,7 @@ This method is fairly new so new errors are being captured as people use this me
 
 If you've been around Loop for a while, you know the mantra about screen shots. Well, for GitHub Build Action Failures, screen shots are close to useless. If you get an error with an Action, you should download the error log and examine it for known diagnosis strings. If you are still stuck then post the zip or the 1_ACTION.txt file, where ACTION is replaced with "identifiers", "certificates" or "build", depending on which action failed. Please see [Examine the Error](#examine-the-error) for instructions.
 
-## Most Common Errors
+## Most Common Mistakes
 
 These are some of the most common errors to date.
 
