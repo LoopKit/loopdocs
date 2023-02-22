@@ -15,7 +15,7 @@ Map to this section:
 * [Loop Development](../version/development.md)
     - Description of the development process for Loop
     - Information you need if you want to participate
-* [Build Dev](../build/build-select-dev.md)
+* [Build Dev](../version/build-dev.md)
     - Discussion of methods to build the dev branch
 * [LoopWorkspace](../version/loopworkspace.md)
     - If you are interested in development, this page goes into more detail

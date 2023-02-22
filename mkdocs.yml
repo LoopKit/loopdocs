@@ -155,7 +155,7 @@ nav:
     - 'Customize your Loop': 'build/code_customization.md'
     - 'Simulator Build': 'version/simulator.md'
     - 'Loop Development': 'version/development.md'
-    - 'Build Loop Dev': 'build/build-select-dev.md'
+    - 'Build Loop Dev': 'version/build-dev.md'
     - 'LoopWorkspace': 'version/loopworkspace.md'
 - Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'
