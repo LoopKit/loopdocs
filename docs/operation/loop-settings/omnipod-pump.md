@@ -47,10 +47,16 @@ The next screen will offer two areas where you will need to enter information:
 
 When you finish entering these values, press the blue `Continue` button on the bottom of the Pod Settings screen to continue with the next steps of Pod setup.
 
-!!! info "Pod Filling and Insertion"
-    The Pod filling and insertion instructions are the same with the Loop app as they are for the PDM.  These videos: [Filling a Pod with Insulin](https://youtu.be/qJBN6rlvn_Y) and [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI), may be useful.  You will use your phone and RileyLink compatible device instead of the PDM.  Be sure to keep the phone and RileyLink close during pairing and insertion because the Pod uses a low-power mode during these activities.
 
 ## Pair Pod
+
+!!! danger "Max Fill is 200 Units"
+    When you fill the Pod do not exceed 200 units.
+
+    If you overfill the pods, you may get a pod fault right after priming.
+
+!!! info "Pod Filling and Insertion"
+    The Pod filling and insertion instructions are the same with the Loop app as they are for the PDM.  These videos: [Filling a Pod with Insulin](https://youtu.be/qJBN6rlvn_Y) and [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI), may be useful.  You will use your phone and RileyLink compatible device instead of the PDM.  Be sure to keep the phone and RileyLink close during pairing and insertion because the Pod uses a low-power mode during these activities.
 
 1. Fill the Pod with insulin until it beeps (minimum fill is 80 units)
 1. Place the Pod about 6 inches from the RileyLink compatible device with the phone within a few feet
