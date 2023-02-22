@@ -133,9 +133,19 @@ When the phone is in portrait mode, so the HUD is visible:
 ![status row message when pump is suspended](img/status-row-pump-suspended.svg){width="300"}
 {align="center"}
 
+#### No Manual Bolus While Pod is Suspended
+
 If you request a manual bolus with Loop while a pod is suspended, Loop will send a notification that Bolus Failed with instructions that Pump is Suspended, Resume Delivery.  In other words, you must resume delivery before you will be allowed to bolus with pods.
 
-At the end of the reminder time, an alert beep is issued by the pod and a modal alert will be provided on the Loop app. You must acknowledge the modal alert on the phone to silence future pod alerts.
+#### Suspend Timer Reminder
+
+At the end of the reminder time, an alert beep is issued by the pod and a modal alert will be provided on the Loop app. You must acknowledge the modal alert on the phone to silence future pod alerts. 
+
+* If you do not acknowledge the modal alert, the pod will keep beeping
+* If you need a silent pod, consider using [Manual Temp Basal](#manual-temp-basal) of 0 U/hr instead of Suspend
+
+![reminder that insulin is suspended](img/loop-3-modal-alert-suspended.svg){width="300"}
+{align="center"}
 
 !!! danger "Manually Resume Insulin Delivery"
     The halt of all insulin delivery continues until you manually resume. There is no automatic resumption of basal insulin from a suspend command.
@@ -145,6 +155,7 @@ At the end of the reminder time, an alert beep is issued by the pod and a modal 
     * Basal Delivery automatically resumes at the end of the selected duration without need for Loop to command it
     * At the end of the duration, Loop will restore Closed Loop, if you were in closed loop when you issued the Manual Temp Basal command
     * There are no beeps on the pod to remind you to resume insulin delivery
+
 
 ### Manual Temp Basal
 

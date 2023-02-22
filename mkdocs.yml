@@ -106,7 +106,6 @@ nav:
     - 'Add CGM': 'loop-3/add-cgm.md'
     - 'Add Pump': 'loop-3/add-pump.md'
     - 'Displays': 'loop-3/displays_v3.md'
-    - 'Alerts & Notifications': 'loop-3/alert-notify.md'
     - 'Settings': loop-3/settings.md
     - 'Therapy Settings': 'loop-3/therapy-settings.md'
     - 'Optional: Services': 'operation/loop-settings/services.md'
