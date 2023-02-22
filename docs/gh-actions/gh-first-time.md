@@ -1,6 +1,6 @@
 ## Build Loop using GitHub Actions
 
-This is only available with Loop 3 and Loop development branches.
+This is only available for Loop 3 and greater versions and for Loop development branches.
 
 !!! info "Time Estimate"
     - If you have never built Loop (allow up to one week elapsed time)
@@ -54,13 +54,13 @@ This is only available with Loop 3 and Loop development branches.
 
     * Check to make sure what you are doing matches the instructions
     * Check to make sure you did not skip a step
-    * Notice - the actions show up alphabetically but they have to be done in A, C, B order
+    * Notice - for Loop 3.0, the actions show up alphabetically but they have to be done in A, C, B order
         * Add Identifiers (and do some more stuff), Create Certificates, Build Loop
 
     Different people approach this differently. Choose your method to achieve success:
 
     * Print the summary section above, go through the page sequentially doing each step and check off each step as you go
-    * Read this whole page, then review it and read the [Most Common Mistakes](gh-errors.md#most-common-mistakes) section, then start doing each step
+    * Read this whole page, then review it and read the [GitHub Errors: Most Common Mistakes](gh-errors.md#most-common-mistakes) section, then return to this page and start doing each step
     * Figure out your method and use it
 
 
@@ -87,20 +87,20 @@ For the initial steps, you'll be going back and forth between GitHub and Apple D
 
 There are a number of terms that may seem unfamiliar with the GitHub Build. As you move through this page, there will be detailed instructions, but it helps to have the overview.
 
-Some of these terms have ToolTips, so hover your mouse over the item - or review in the [Glossary](../faqs/glossary.md). Others need an expanded explanation. If reading this first is confusing, finish reviewing the whole page and then come back.
+Some of these terms have ToolTips, so hover your mouse over the item - or review in the [Glossary](../faqs/glossary.md). Others need an expanded explanation. If reading about the new terms first is confusing, finish reviewing the whole page and then come back.
 
 * Modules: You won't see this term but the concept is important when explaining the other terms
     * The Loop code uses modules to handle different components of the entire app
     * Some of these modules must be associated with your unique App Group
     * Others do not have this requirement
-* Identifiers: The "Identifiers" are the names of the Modules that must be available to build Loop with GitHub
-    * There are 4 Identifiers for LoopWorkspace that must be associated with your App Group
+* Identifiers: The Identifiers refer to the Modules that must be available to build Loop with GitHub
+    * There are 4 Identifier Names for LoopWorkspace that must be associated with your App Group
         * Loop, Loop Intent Extension, Loop Status Extension and Small Status Widget
-    * There are 2 other Identifiers that do not require that association
+    * There are 2 other Identifier Names that must exist but do not require that association
         * WatchApp and WatchAppExtension
-    * To further confuse users of the GitHub build method, the names you see depend on whether you previously build with Xcode and whether you previously built Loop 2.2.x or an early version of Loop 3 while it was still the dev branch
-    * While the exact name might be different from those seen by people who have never built, it is ok - the build should still work
-    * The directions with the Identifier names that do not start with XC are correct for people who have never built Loop with Xcode
+    * On the Identifier screen, there will be **NAME** and **IDENTIFIER** columns
+        * The items you see under the **NAME** column depend on whether you previously built with Xcode and may start with XC
+        * The items under the **IDENTIFIER** column match the table in the documentation
 * Secrets: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop
     * There are 6 Secrets that must be added to your fork of LoopWorkspace
     * These Secrets work for any branch in your fork (main or dev, for example)
@@ -110,6 +110,8 @@ Some of these terms have ToolTips, so hover your mouse over the item - or review
     * Most Loopers will not have an App on their page until using the GitHub build method
     * The name of an app must be unique across the entire App Store worldwide
         * You will need a unique name for your Loop App
+* Actions: a custom application for the GitHub Actions platform that performs a complex but frequently repeated task
+    * With Loop 3, actions to Add Identifiers, Create Certificates and Build Loop are provided to enable users to build the Loop app from a browser on any computer
 
 ## Configure to use GitHub Build Actions
 
@@ -117,8 +119,8 @@ Review the entire process before starting and then go through slowly and careful
 
 These instructions allow you to build Loop without having access to a Mac. They also allow you to easily install Loop on phones that are not connected to your computer.
 
-* You can easily send Loop app updates to those you care for
-* You can access and install Loop if you lose or damage your device
+* You can send Loop app updates to those you care for
+* You can access and install the Loop app via TestFlight if you lose or damage your device
 * You do not need to worry about correct Xcode/macOS versions
 
 The setup steps are somewhat involved, but nearly all are one-time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use. Use a **text-only editor** for this archive file for your Secrets. People have gotten into difficulties when a lower-case character was "auto-corrected" to upper-case when pasting into their archive file.
@@ -203,7 +205,7 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 
 ### Generate API Key
 
-You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps but you will need to pause at [Configure Secrets](#configure-secrets).
+You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps (see [New GitHub Account](#new-github-account) or [Setup GitHub](#setup-github)), but you will need to pause at [Configure Secrets](#configure-secrets).
 
 This section will walk you through the steps required to gather or create these parameters.
 
@@ -234,7 +236,6 @@ Each step has a link to take you to the specific page you need to do the next st
         * Once access is granted, click on the "Generate API Key" button
 
     * If you did not get routed through the "permission is required" screens click the blue &plus; sign
-    * TO DO - update this graphic
 
     ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
     {align="center"}
@@ -350,6 +351,7 @@ You must be logged into your GitHub account before starting this step. If you ar
 1. A new screen appears showing your access token
     * Copy the token and record it - once you leave this screen you can't see it again
     * You will use this for `GH_PAT` when you set up your Secrets
+    * You can [Regenerate GitHub Token](gh-update.md#regenerate-github-token) for `GH_PAT` whenever you need
 
 ### Create Match-Secrets
 
@@ -519,9 +521,6 @@ Once all six secrets have been added to your LoopWorkspace, you are done with Se
 
 ## Add Identifiers for Loop
 
-!!! warning "Early Adopters"
-    If you started using this method before Loop 3 was released, review [GitHub Early Adopters](gh-update.md#github-early-adopters).
-
 Near the top middle of your LoopWorkspace fork, there is an Actions tab. If you have used Actions on this repository before, skip ahead to [Add Identifiers](#add-identifiers).
 
 ### First Use of Actions Tab
@@ -547,7 +546,7 @@ Refer to the graphic below for the numbered steps:
 1. On the left side, click on "Add Identifiers"
 1. On the right side, click "Run Workflow" to show a drop-down menu
     * You will see your default branch (should be `main`)
-    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
+    * If your default branch is not `main`, review [GitHub Early Adopters](gh-update.md#github-early-adopters)
 1. Tap the green button that says "Run workflow".
 
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
@@ -589,7 +588,7 @@ If you never built using Xcode, then after successfully performing the Add Ident
 
 #### Previous Xcode Builders
 
-If you have built Loop using Xcode, then at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **NAME** column. There may be other differences in the **NAME** column, but key off what you see under the **IDENTIFIER** column of the table. Only the six listed in the table below are of interest.
+If you have built Loop using Xcode, then at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **NAME** column. There may be other differences in the **NAME** column, but key off what you see under the **IDENTIFIER** column of the table. Only the six listed in the table below are of interest when building Loop.
 
 #### Table with Name and Identifier for Loop 3
 
@@ -603,9 +602,11 @@ If you have built Loop using Xcode, then at least the Loop identifier will appea
 | WatchAppExtension | com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension |
 
 !!! warning "Loop 2 to Loop 3 Builders"
-    Several people who built earlier versions of Loop with Xcode and are using the GitHub method say they can't find the identifier names.
+    Several people who built earlier versions of Loop with Xcode and are using the GitHub method say they can't find the identifier names. You can key off the **IDENTIFIER** instead of the **NAME** column in the table above.
 
-    If that is happening to you, follow the [Delete Identifiers](#delete-identifiers) instructions and then run Action: Add Identifiers again. You might not be able to delete the "Loop" identifier, so it will still begin with XC, but the others will appear with the short names shown above.
+    Or
+
+    Follow the [Delete Identifiers](#delete-identifiers) instructions and then run Action: Add Identifiers again. You might not be able to delete the "Loop" identifier, so it will still begin with XC, but the others will appear with the short names shown above.
 
 ### Add or Review Configuration for Loop Identifier
 
@@ -683,7 +684,7 @@ The full list of Identifiers should be displayed again.
 
 If you have created a Loop app in App Store Connect before, you can skip this section.
 
-If have previously used some kind of remote build, like diawi, you may have your Loop in the App Store but can't see it. Don't worry - there are instructions for this case.
+If have previously used some kind of remote build, like diawi or TestFlight, you may have your Loop in the App Store but can't see it. Don't worry - there are instructions for this case.
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
     * If you have never added a app to App Store Connect, you will not see the icons inside the red rectangle and should keep going, although some people report the search icon shows up for them
@@ -758,16 +759,13 @@ You may have no memory of ever setting up Loop in App Store Connect. If you prev
 
 ## Create Certificates
 
-!!! warning "Early Adopters"
-    If you started using this method before Loop 3 was released, review [GitHub Early Adopters](gh-update.md#github-early-adopters).
-
 Refer to the graphic below for the numbered steps:
 
 1. Click on the "Actions" tab of your LoopWorkspace repository
 1. On the left side, click on "Create Certificates"
 1. On the right side, click "Run Workflow" to show a drop-down menu
     * You will see your default branch (should be `main`)
-    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
+    * If your default branch is not `main`, review [GitHub Early Adopters](gh-update.md#github-early-adopters)
 1. Tap the green button that says "Run workflow".
 
     ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
@@ -786,7 +784,6 @@ Refer to the graphic below for the first four steps:
 1. On the right side, click "Run Workflow" to show a drop-down menu
     * You will see your default branch (should be `main`)
     * If your default branch is not `main`, review [GitHub Early Adopters](gh-update.md#github-early-adopters)
-    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
 1. Tap the green button that says "Run workflow".
 
     ![build loop using github actions](img/action-04-build-loop.svg){width="700"}
