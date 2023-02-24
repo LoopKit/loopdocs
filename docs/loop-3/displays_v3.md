@@ -194,6 +194,19 @@ This table shows examples of Loop Status Icons and what each icon means.
 !!! info "Fun Fact"
     The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).
 
+#### Example Loop Status Modal Messages
+
+When you tap on the Loop Icon on the main screen, you will see a message similar to one of those shown below. The message content depends on:
+
+* Closed Loop enabled or disabled
+* How long since the last successful [Loop Cycle](#loop-cycle); <20 minutes, <4 hours, more than 4 hours
+
+On your phone, you should see the green, yellow or red icon in the background - the color is not captured when taking screen shots of the modal message.
+
+![example modal messages seen after tapping the loop icon on the main screen](img/loop-icon-modal-messages.jpg){width="750"}
+{align="center"}
+
+
 ### Glucose Status Icon
 
 The table below shows examples of the Glucose Status Icon and what each icon means. The [Glucose Color Code](#glucose-color-code) is provided below the table.
