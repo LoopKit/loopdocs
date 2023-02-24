@@ -66,19 +66,21 @@ You need to enable Health Permissions for Loop to work.
 
 You can review the permissions screen later. [FAQS: How Do I Modify Apple HealthKit Permissions](../faqs/apple-health-faqs.md#how-do-i-modify-apple-healthkit-permissions).
 
-### Data Sharing
+### Usage Data Sharing
 
-Next, you will be asked your preference for Data Sharing, with the default automatically set to `Share Version Only` as shown in the graphic below:
+!!! warning "iOS 15"
+    If you are running an iOS 15 device, this screen is shown in German regardless of the language you choose for Loop. That is an accident that will be fixed by the next release. The English version is shown below.
 
-![choose whether to share data with Loop 3](img/data-sharing.svg){width="350"}
+Next, you will be asked your preference for Usage Data Sharing, with the default automatically set to `Share Version Only` as shown in the graphic below:
+
+![choose whether to share usage data with Loop developers](img/data-sharing.svg){width="350"}
 {align="center"}
 
-If you choose to share data, it is collected anonymously. The choices are:
+If you choose to share usage data, it is collected anonymously. The choices are:
 
-* Do not share any data
+* Do not share any usage data
 * Share the Loop version number, phone type and iOS version number
 * Additionally share usage data in terms of events only - health data such as values for glucose, insulin and carbs is **not** collected
-
 
 ### Connect Loop to Nightscout
 
