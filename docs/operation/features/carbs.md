@@ -2,11 +2,7 @@
 
 This page was updated with information for Loop 3.
 
-### Loop 2 and 3 Differences
-
-Most of the information is the same for Loop 2.2.x and Loop 3. 
-
-Loop 3 Updates:
+### Loop 3 Updates:
 
 * [Time](#time): Loop 3 adds the +/- 15 minute buttons to adjust time for entry
 * [Food Type](#food-type): emoji keyboard
@@ -16,8 +12,10 @@ Loop 3 Updates:
     * Loop 3 uses 30 minutes, 3 hr, 5 hr
     * Loop 2.2.x uses 2 hr, 3 hr, 4 hr
 * [Meal Bolus](bolus.md#meal-bolus): Loop 3 fills in the Bolus row with Recommended Bolus
-* [Large Meal Warning (Loop 3 only)](#large-meal-warning-loop-3-only)
+* [Large Meal Warning](#large-meal-warning)
     * The warning limit of 99 g was chosen to assist in catching mistakes such as entering 115 grams instead of 15 grams
+* [Override Active Warning](#override-active-warning)
+    * A warning is presented when entering carbs while an override with sensitivity other than 100% is active
 
 ## Meal Entry - Fast Version
 
@@ -170,13 +168,19 @@ Experiment for yourself - how much does Loop recommend compared to a straight Ca
 
 Carbs are not saved in the **Add Carb Entry** screen until the Continue button is pressed and the user saves those carbs in the [**Meal Bolus**](bolus.md#meal-bolus)  screen, follow the link for details.
 
-### Large Meal Warning (Loop 3 only)
+### Large Meal Warning
 
 If the `Amount Consumed` row exceeds 99 grams when the Continue button is tapped, the user is provided with a modal alert from which they can proceed to the Meal Bolus screen, or return to edit `Amount Consumed` if that was not the intended amount.
 
 ![Large Meal Warning](img/loop-3-large-meal-warning.svg){width="400"}
 {align="center"}
 
+### Override Active Warning
+
+If you have an override active with insulin sensitivity value set to anything other than 100%, a warning message appears at the top of the Add Carb Entry screen.
+
+![Override Active Warning](img/override-active-warning.jpg){width="400"}
+{align="center"}
 
 ## Automatic Bolus
 
