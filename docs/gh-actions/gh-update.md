@@ -301,7 +301,7 @@ A new action was added with Loop 3.1 to provide better error messages if somethi
 ![actions shown for Loop 3.1 and newer versions](img/gh-actions-3.1.png){width="200"}
 {align="left"}
 
-Some items were deliberately set to be incorrect in the Secrets list. Representative error messages are shown when running the validate secrets action.
+To generate the graphic below, some items were deliberately set to be incorrect in the Secrets list. Representative error messages are shown when running the validate secrets action.
 
 ![representative messages with deliberate errors when running validate secrets](img/gh-validate-secrets.png){width="800"}
 {align="center"}
