@@ -978,20 +978,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../loop-3/alert-notify/" class="md-nav__link">
-        Alerts & Notifications
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../loop-3/settings/" class="md-nav__link">
         Settings
       </a>
@@ -1095,17 +1081,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" >
       
       
       
-        <label class="md-nav__link" for="__nav_5_14" id="__nav_5_14_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_5_13" id="__nav_5_13_label" tabindex="0">
           Loop 2: Set Up App
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_14">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_13">
           <span class="md-nav__icon md-icon"></span>
           Loop 2: Set Up App
         </label>
@@ -1150,17 +1136,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13_3" >
       
       
       
-        <label class="md-nav__link" for="__nav_5_14_3" id="__nav_5_14_3_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_5_13_3" id="__nav_5_13_3_label" tabindex="0">
           Loop 2 Add Pump
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_14_3_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_14_3">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_13_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_13_3">
           <span class="md-nav__icon md-icon"></span>
           Loop 2 Add Pump
         </label>
@@ -1457,8 +1443,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#omnipod" class="md-nav__link">
-    Omnipod
+  <a href="#omnipod-beeps" class="md-nav__link">
+    Omnipod Beeps
   </a>
   
 </li>
@@ -1494,13 +1480,6 @@
         <li class="md-nav__item">
   <a href="#empty-reservoir" class="md-nav__link">
     Empty Reservoir
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pod-expiration-omnipod" class="md-nav__link">
-    Pod Expiration (Omnipod)
   </a>
   
 </li>
@@ -2337,8 +2316,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#omnipod" class="md-nav__link">
-    Omnipod
+  <a href="#omnipod-beeps" class="md-nav__link">
+    Omnipod Beeps
   </a>
   
 </li>
@@ -2374,13 +2353,6 @@
         <li class="md-nav__item">
   <a href="#empty-reservoir" class="md-nav__link">
     Empty Reservoir
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pod-expiration-omnipod" class="md-nav__link">
-    Pod Expiration (Omnipod)
   </a>
   
 </li>
@@ -2426,7 +2398,7 @@
 <h2 id="loop-notifications">Loop Notifications<a class="headerlink" href="#loop-notifications" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop provides discrete notifications on the iPhone and Watch which will appear on the (locked) screen and vibrate, depending on your notification settings of Loop.</p>
 <h2 id="loop-app-expiration-notification">Loop App Expiration Notification<a class="headerlink" href="#loop-app-expiration-notification" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Profile expiration notification is a new feature.</p>
+<p>Profile expiration notification was added with Loop 2.2.5.</p>
 <p align="center"><img alt="Notification display when near the Loop App expiration date" src="../img/loop-app-expiration-warning.png" width="250" /></p>
 <ul>
 <li>When fewer than 20 days remain until profile expiration, you'll get a notification when you open the app but no more frequently than every 2 days</li>
@@ -2436,22 +2408,43 @@
 <h3 id="free-7-day-loop-app-expiration-notification">Free (7-day) Loop App Expiration Notification<a class="headerlink" href="#free-7-day-loop-app-expiration-notification" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The expiration notification pattern is the same as for the Paid Loop App. You may want to add an <a href="../../../build/code_customization/#expiration-notification-customization">Expiration Notification Customization</a> to modify the first appearance and frequency of the notification.</p>
 <h2 id="loop-app-expiration-date">Loop App <abbr title="your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date">Expiration Date</abbr><a class="headerlink" href="#loop-app-expiration-date" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you want to see the expiration date at any time, tap on Settings, then tap on <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report.  The expiration date is near the top of the report (to the right of <code>profileExpiration</code>).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report display. The time is in GMT, so adjust to your own time zone if you procrastinated until the last minute.</p>
-<p align="center"><img alt="Issue report displays Loop App expiration date" src="../img/loop-app-expiration-issue-report.jpeg" width="250" /></p>
-<p>If you are running Loop v2.2.4 or older, you might be surprised by a <a href="../../../troubleshooting/loop-crashing/#expired-app">"Loop" is No Longer Available</a> display when the app reaches its expiration date.  </p>
+<div class="admonition tip">
+<p class="admonition-title">Coming Soon</p>
+<p>Available in dev now; will be in the next release:</p>
 <ul>
-<li>Workaround is to add a notice to your calendar when you build the app initially so you know that the one year app lifetime is nearing the end</li>
-<li>This is still a good idea even with automated notifications to set your own desired alert window</li>
-<li>If you are running Loop v2.2.4 or older, you can use this method to determine <a href="https://www.loopandlearn.org/loop-expiration-date/">Loop Expiration date</a>.</li>
+<li>A new <strong>App Profile</strong> section was added to the bottom of the Loop Settings screen</li>
+<li>Valid for Mac-<abbr title="program used to build an app">Xcode</abbr> builds<ul>
+<li>Profile Expiration count-down in days, as well as expiration date and time</li>
+<li>Direct link to the LoopDocs How to Update page</li>
 </ul>
-<h2 id="omnipod"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr><a class="headerlink" href="#omnipod" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Most beep alarms are disabled for a much more discrete use of the omnipod. Only the following audible acknowledgments or alarms are currently used:</p>
+</li>
+</ul>
+</div>
+<h4 id="for-loop-225-through-loop-30">For Loop 2.2.5 through <abbr title="Latest release with major updates">Loop 3</abbr>.0<a class="headerlink" href="#for-loop-225-through-loop-30" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>If you want to see the expiration date at any time:</p>
+<ul>
+<li>Loop 2.2.5 through 2.2.9: tap on Settings, then tap on <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr>.0.0: tap on Settings, scroll down and tap on Support, then tap on <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report</li>
+</ul>
+<p>The expiration date is near the top of the report (to the right of <code>profileExpiration</code>).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report display. The time is in GMT, so adjust to your own time zone if you procrastinated until the last minute.</p>
+<p align="center"><img alt="Issue report displays Loop App expiration date" src="../img/loop-app-expiration-issue-report.jpeg" width="250" /></p>
+<h2 id="omnipod-beeps"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Beeps<a class="headerlink" href="#omnipod-beeps" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Most pod beep alarms are disabled for a more discrete use of pods than is available with the PDM. Only the following audible acknowledgments or alarms are used. Some can be configured in <a href="../../../loop-3/omnipod/#notification-settings"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>: Notification Settings</a>:</p>
 <ul>
 <li>Pod activated acknowledgment when filling the pod with enough insulin when pairing a new Pod.</li>
-<li>Pod expiration advisory alarm at 72 hours/3 days (which you can silence in the <a href="../../loop-settings/omnipod-pump/#status">pod status  settings</a>)</li>
-<li>Pod empty reservoir (which you can silence in the <a href="../../loop-settings/omnipod-pump/#status">pod status  settings</a>)</li>
+<li>Pod expiration advisory alarm, which you can configure between 48 and 72 hours (3 days)</li>
+<li>Pod low reservoir alert<ul>
+<li>Note that the pod may continue delivering after the reservoir reports 0 U</li>
+<li>The pod will continue until the pod runs out of insulin or 4 U is delivered, which ever comes first</li>
+<li>Loop will update the actual delivery amounts based on pod reported information</li>
+</ul>
+</li>
 <li>Pod deactivation acknowledgment</li>
-<li>Pod fault alarm (also called a screamer) when reaching the max life of the Pod: 80 hours (3 days + 8 hours) or a fault/occlusion happens. (which you can silence using the <a href="../../loop-settings/omnipod-pump/#pod-commands">replace pod</a>) command in the pod settings page)</li>
+<li>Pod fault alarm (also called a screamer) when reaching the max life of the Pod: 80 hours (3 days + 8 hours), running out of insulin or a fault/occlusion happens<ul>
+<li>Screamers are silenced using the <a href="../../../loop-3/omnipod/#replace-pod">Replace Pod</a> row on the pod settings page</li>
+<li>The one exception is if communications with the pod is lost and cannot be restored - in that case, you will be offered the chance to discard the pod from Loop but will still want to <a href="../../../faqs/omnipod-faqs/#what-do-you-do-to-stop-a-screaming-pod">Silence the Pod</a></li>
+</ul>
+</li>
 </ul>
 <h2 id="notification-settings-for-loop">Notification settings for Loop<a class="headerlink" href="#notification-settings-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You can customize the way notifications of Loop are behaving in the Settings App of the iPhone:</p>
@@ -2488,17 +2481,25 @@ This mostly happens when the connection is lost for a longer period of time betw
 <p><font color ="orange"><strong>Medtronic</strong></font><br />
 At 20% and 10% remaining reservoir volume, there is a Low Reservoir notification.</p>
 <p><font color ="orange"><strong><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></strong></font><br />
-At &lt;30U, &lt;20U, &lt;10U  </p>
+Select your desired notification level for low reservoir
+<a href="../../../loop-3/omnipod/#notification-settings"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>: Notification Settings</a> </p>
 <p align="center"><img alt="img/pod-reservoir-10U.png" src="../img/pod-reservoir-10U.png" width="250" /></p>
 <h2 id="empty-reservoir">Empty Reservoir<a class="headerlink" href="#empty-reservoir" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop will notify when the reservoir is empty. Loop will notify you every minute with this notification.</p>
-<p><font color ="orange"><strong><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></strong></font><br />
-Normally you will have 5-30 minutes to replace the pod, but do know the pod can <a href="https://soundcloud.com/eelke-jager/1f-nibble-f">scream</a> at any moment from this point on.</p>
+<ul>
+<li>Loop 2 will notify when the reservoir is empty.</li>
+</ul>
 <p align="center"><img alt="img/loop-reservoir-empty.png" src="../img/loop-reservoir-empty.png" width="250" /></p>
-<h2 id="pod-expiration-omnipod">Pod Expiration (<abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>)<a class="headerlink" href="#pod-expiration-omnipod" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You can customize the time of notification when to replace your pod any time from 1 hour up to 71 hours (3 days - 1 hour) <a href="../../loop-settings/omnipod-pump/#expiration-reminder">after staring a new pod</a> or you change the time later in the [pod configuration settings]../loop-settings/omnipod-pump.md#configuration).
-The expiry alarm will always sound when the pod reaches a running full 3 days (72 hours) which you can silence <a href="../../loop-settings/omnipod-pump/#status">in the pod status settings</a>.</p>
-<p align="center"><img alt="img/pod-expiration-notice.png" src="../img/pod-expiration-notice.png" width="300" /></p>
+<ul>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> reports No Insulin on the <a href="../../../loop-3/displays_v3/#pump-status-icon">Heads-Up-Display</a>.</li>
+</ul>
+<p align="center"><img alt="pump alert - red exclamation point with phrase no insulin" src="../../../loop-3/img/loop-3-pump-alert-no-insulin.svg" width="125" /></p>
+<p><font color ="orange"><strong><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></strong></font>
+After the reservoir reports 0 U, the pod attempts to deliver insulin when requested.</p>
+<ul>
+<li>After 4 U are delivered, the pod alarms and must be changed</li>
+<li>If during the attempt to deliver the 4 U (below zero), the pod runs out of insulin, the pod alarms and must be changed</li>
+<li>In both cases, the pod reports it is out-of-insulin</li>
+</ul>
 <h2 id="low-battery-medtronic">Low Battery (Medtronic)<a class="headerlink" href="#low-battery-medtronic" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Loop will notify when battery levels have approximately 8-10 hours of battery life remaining.</p>
 <h2 id="remote-notifications">Remote Notifications<a class="headerlink" href="#remote-notifications" title="Anchor link to this Header on this Page">&para;</a></h2>

@@ -980,20 +980,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../alert-notify/" class="md-nav__link">
-        Alerts & Notifications
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../settings/" class="md-nav__link">
         Settings
       </a>
@@ -1306,17 +1292,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" >
       
       
       
-        <label class="md-nav__link" for="__nav_5_14" id="__nav_5_14_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_5_13" id="__nav_5_13_label" tabindex="0">
           Loop 2: Set Up App
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_14">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_13">
           <span class="md-nav__icon md-icon"></span>
           Loop 2: Set Up App
         </label>
@@ -1361,17 +1347,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13_3" >
       
       
       
-        <label class="md-nav__link" for="__nav_5_14_3" id="__nav_5_14_3_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_5_13_3" id="__nav_5_13_3_label" tabindex="0">
           Loop 2 Add Pump
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_14_3_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_14_3">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_13_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_13_3">
           <span class="md-nav__icon md-icon"></span>
           Loop 2 Add Pump
         </label>
@@ -2718,8 +2704,15 @@
 <li>The <a href="../displays_v3/#hud-status-row"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Status Row</a> message can be tapped to resume delivery.</li>
 </ul>
 <p align="center"><img alt="status row message when pump is suspended" src="../img/status-row-pump-suspended.svg" width="300" /></p>
+<h4 id="no-manual-bolus-while-pod-is-suspended">No Manual Bolus While Pod is Suspended<a class="headerlink" href="#no-manual-bolus-while-pod-is-suspended" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>If you request a manual bolus with Loop while a pod is suspended, Loop will send a notification that Bolus Failed with instructions that Pump is Suspended, Resume Delivery.  In other words, you must resume delivery before you will be allowed to bolus with pods.</p>
-<p>At the end of the reminder time, an alert beep is issued by the pod and a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert will be provided on the Loop app. You must acknowledge the <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert on the phone to silence future pod alerts.</p>
+<h4 id="suspend-timer-reminder">Suspend Timer Reminder<a class="headerlink" href="#suspend-timer-reminder" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>At the end of the reminder time, an alert beep is issued by the pod and a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert will be provided on the Loop app. You must acknowledge the <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert on the phone to silence future pod alerts. </p>
+<ul>
+<li>If you do not acknowledge the <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert, the pod will keep beeping</li>
+<li>If you need a silent pod, consider using <a href="#manual-temp-basal">Manual Temp Basal</a> of 0 U/hr instead of Suspend</li>
+</ul>
+<p align="center"><img alt="reminder that insulin is suspended" src="../img/loop-3-modal-alert-suspended.svg" width="300" /></p>
 <div class="admonition danger">
 <p class="admonition-title">Manually Resume Insulin Delivery</p>
 <p>The halt of all insulin delivery continues until you manually resume. There is no automatic resumption of basal insulin from a suspend command.</p>
