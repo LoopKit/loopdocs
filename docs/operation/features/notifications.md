@@ -4,7 +4,7 @@ Loop provides discrete notifications on the iPhone and Watch which will appear o
 
 ## Loop App Expiration Notification
 
-Profile expiration notification is a new feature.
+Profile expiration notification was added with Loop 2.2.5.
 
 ![Notification display when near the Loop App expiration date](img/loop-app-expiration-warning.png){width="250"}
 {align="center"}
@@ -20,27 +20,40 @@ The expiration notification pattern is the same as for the Paid Loop App. You ma
 
 ## Loop App Expiration Date
 
-If you want to see the expiration date at any time, tap on Settings, then tap on Issue Report.  The expiration date is near the top of the report (to the right of `profileExpiration`).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time is in GMT, so adjust to your own time zone if you procrastinated until the last minute.
+!!! tip "Coming Soon"
+    Available in dev now; will be in the next release:
+
+    * A new **App Profile** section was added to the bottom of the Loop Settings screen
+    * Valid for Mac-Xcode builds
+        * Profile Expiration count-down in days, as well as expiration date and time
+        * Direct link to the LoopDocs How to Update page
+
+#### For Loop 2.2.5 through Loop 3.0
+
+If you want to see the expiration date at any time:
+
+* Loop 2.2.5 through 2.2.9: tap on Settings, then tap on Issue Report
+* Loop 3.0.0: tap on Settings, scroll down and tap on Support, then tap on Issue Report
+
+The expiration date is near the top of the report (to the right of `profileExpiration`).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time is in GMT, so adjust to your own time zone if you procrastinated until the last minute.
 
 ![Issue report displays Loop App expiration date](img/loop-app-expiration-issue-report.jpeg){width="250"}
 {align="center"}
 
-If you are running Loop v2.2.4 or older, you might be surprised by a ["Loop" is No Longer Available](../../troubleshooting/loop-crashing.md#expired-app) display when the app reaches its expiration date.  
+## Omnipod Beeps
 
-* Workaround is to add a notice to your calendar when you build the app initially so you know that the one year app lifetime is nearing the end
-* This is still a good idea even with automated notifications to set your own desired alert window
-* If you are running Loop v2.2.4 or older, you can use this method to determine [Loop Expiration date](https://www.loopandlearn.org/loop-expiration-date/).
-
-
-## Omnipod
-
-Most beep alarms are disabled for a much more discrete use of the omnipod. Only the following audible acknowledgments or alarms are currently used:
+Most pod beep alarms are disabled for a more discrete use of pods than is available with the PDM. Only the following audible acknowledgments or alarms are used. Some can be configured in [Omnipod: Notification Settings](../../loop-3/omnipod.md#notification-settings):
 
 - Pod activated acknowledgment when filling the pod with enough insulin when pairing a new Pod.
-- Pod expiration advisory alarm at 72 hours/3 days (which you can silence in the [pod status  settings](../loop-settings/omnipod-pump.md#status))
-- Pod empty reservoir (which you can silence in the [pod status  settings](../loop-settings/omnipod-pump.md#status))
+- Pod expiration advisory alarm, which you can configure between 48 and 72 hours (3 days)
+- Pod low reservoir alert
+    * Note that the pod may continue delivering after the reservoir reports 0 U
+    * The pod will continue until the pod runs out of insulin or 4 U is delivered, which ever comes first
+    * Loop will update the actual delivery amounts based on pod reported information
 - Pod deactivation acknowledgment
-- Pod fault alarm (also called a screamer) when reaching the max life of the Pod: 80 hours (3 days + 8 hours) or a fault/occlusion happens. (which you can silence using the [replace pod](../loop-settings/omnipod-pump.md#pod-commands)) command in the pod settings page)
+- Pod fault alarm (also called a screamer) when reaching the max life of the Pod: 80 hours (3 days + 8 hours), running out of insulin or a fault/occlusion happens
+    * Screamers are silenced using the [Replace Pod](../../loop-3/omnipod.md#replace-pod) row on the pod settings page
+    * The one exception is if communications with the pod is lost and cannot be restored - in that case, you will be offered the chance to discard the pod from Loop but will still want to [Silence the Pod](../../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod)
 
 ## Notification settings for Loop
 
@@ -94,28 +107,30 @@ If Loop detects that a bolus was not able to be delivered, it will provide a not
 At 20% and 10% remaining reservoir volume, there is a Low Reservoir notification.
 
 <font color ="orange">**Omnipod**</font>  
-At <30U, <20U, <10U  
+Select your desired notification level for low reservoir
+[Omnipod: Notification Settings](../../loop-3/omnipod.md#notification-settings) 
 
 ![img/pod-reservoir-10U.png](img/pod-reservoir-10U.png){width="250"}
 {align="center"}
 
 ## Empty Reservoir
 
-Loop will notify when the reservoir is empty. Loop will notify you every minute with this notification.
-
-<font color ="orange">**Omnipod**</font>  
-Normally you will have 5-30 minutes to replace the pod, but do know the pod can [scream](https://soundcloud.com/eelke-jager/1f-nibble-f) at any moment from this point on.
+* Loop 2 will notify when the reservoir is empty.
 
 ![img/loop-reservoir-empty.png](img/loop-reservoir-empty.png){width="250"}
 {align="center"}
 
-## Pod Expiration (Omnipod)
+* Loop 3 reports No Insulin on the [Heads-Up-Display](../../loop-3/displays_v3.md#pump-status-icon).
 
-You can customize the time of notification when to replace your pod any time from 1 hour up to 71 hours (3 days - 1 hour) [after staring a new pod](../loop-settings/omnipod-pump.md#expiration-reminder) or you change the time later in the [pod configuration settings]../loop-settings/omnipod-pump.md#configuration).
-The expiry alarm will always sound when the pod reaches a running full 3 days (72 hours) which you can silence [in the pod status settings](../loop-settings/omnipod-pump.md#status).
-
-![img/pod-expiration-notice.png](img/pod-expiration-notice.png){width="300"}
+![pump alert - red exclamation point with phrase no insulin](../../loop-3/img/loop-3-pump-alert-no-insulin.svg){width="125"}
 {align="center"}
+
+<font color ="orange">**Omnipod**</font>
+After the reservoir reports 0 U, the pod attempts to deliver insulin when requested.
+
+* After 4 U are delivered, the pod alarms and must be changed
+* If during the attempt to deliver the 4 U (below zero), the pod runs out of insulin, the pod alarms and must be changed
+* In both cases, the pod reports it is out-of-insulin
 
 ## Low Battery (Medtronic)
 

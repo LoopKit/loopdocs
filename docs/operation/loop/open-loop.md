@@ -13,23 +13,9 @@ Open Loop is the best place to start with Loop.
     * You can use Dexcom Share or Nightscout as a CGM to follow your own glucose.
     * You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
 
-#### Loop 2 - Open Loop
-
-!!! warning "Loop 2 SAFETY WARNING"
-    When you are operating in Open Loop mode, Loop 2.2.x offers recommendations for insulin delivery adjustment and displays them on the HUD.
-
-    * If you tap on the recommendation line, Loop applies that recommendation without asking for confirmation
-    * This is true for temp basal and automatic bolus
-    * To protect against accidental command of increased or decreased insulin dosing, make sure your phone is locked when not in use
-
-For safety reasons, these recommendations are no longer supplied with Loop 3. 
-
-* Tap on the bolus icon to see the recommendation if you think insulin is needed
-* Use a Manual Temp Basal to reduce delivery if you see a low prediction
-
 ### Glucose Prediction
 
-Pay attention to the prediction in the **Glucose Chart** [Loop 3](../../loop-3/displays_v3.md#glucose-chart) / [Loop 2](../loop-settings/displays.md#glucose-chart). Practice with the user interface while you manually control your insulin delivery. Compare the recommended insulin after entering carbs for a familiar meal. If you do not understand the predictions or recommendations, do not enable Closed Loop. You may need to adjust settings or learn more about how the app works. Loop tries to keep predicted glucose in the Correction Range and, more importantly, above your Glucose Safety Limit (suspend threshold in Loop 2.2.x).
+Pay attention to the prediction in the **[Glucose Chart](../../loop-3/displays_v3.md#glucose-chart)**. Practice with the user interface while you manually control your insulin delivery. Compare the recommended insulin after entering carbs for a familiar meal. If you do not understand the predictions or recommendations, do not enable Closed Loop. You may need to adjust settings or learn more about how the app works. Loop tries to keep predicted glucose in the Correction Range and, more importantly, above your Glucose Safety Limit.
 
 There's a lot to learn and understand. New loopers may need to adjust the following Therapy Settings, typically in this order:
 
@@ -41,7 +27,7 @@ Using an algorithm that updates glucose predictions and adjusts insulin delivery
 
 ### Eventual Glucose
 
-Watch the eventual glucose, current glucose and prediction curve in the **Glucose Chart** [Loop 3](../../loop-3/displays_v3.md#glucose-chart) / [Loop 2](../loop-settings/displays.md#glucose-chart) to understand Loop recommendations for insulin delivery adjustment.  Loop is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose.  Its current decisions are based on predicted, actual and eventual glucose.
+Watch the eventual glucose, current glucose and prediction curve in the **[Glucose Chart](../../loop-3/displays_v3.md#glucose-chart)** to understand Loop recommendations for insulin delivery adjustment.  Loop is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose.  Its current decisions are based on predicted, actual and eventual glucose.
 
 If there is a dip in the predicted glucose below the Glucose Safety Limit, Loop will not recommend insulin even if the eventual glucose is above your Correction Range.
 
@@ -98,3 +84,18 @@ Familiarize yourself with the ["Bolus May Have Failed"](../features/bolus.md#bol
 ## Caregiver training
 
 Caregivers for Loopers should learn how to use Loop. Consider giving caregivers an individualized quick info sheet on Loop. School staff or your child need to know how to handle a site change at school. Try to watch Nightscout while you get to know Loop so that you can become better at remote troubleshooting problems you might encounter.
+
+
+## Loop 2 - Open Loop
+
+!!! warning "Loop 2 SAFETY WARNING"
+    When you are operating in Open Loop mode, Loop 2.2.x offers recommendations for insulin delivery adjustment and displays them on the HUD.
+
+    * If you tap on the recommendation line, Loop applies that recommendation without asking for confirmation
+    * This is true for temp basal and automatic bolus
+    * To protect against accidental command of increased or decreased insulin dosing, make sure your phone is locked when not in use
+
+For safety reasons, these recommendations are no longer supplied with Loop 3. 
+
+* Tap on the bolus icon to see the recommendation if you think insulin is needed
+* Use a Manual Temp Basal to reduce delivery if you see a low prediction

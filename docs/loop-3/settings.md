@@ -108,6 +108,24 @@ If you want to use Loop in parallel with your current method of dosing insulin.
 * For best fidelity, use a real CGM (if available on the same phone) or set up the CGM to be from Dexcom Share or Nightscout
 * For every meal or correction, you can echo that meal or correction with Loop using the simulated pump - watch and learn from recommendations and predictions
 
+### Usage Data Sharing
+
+!!! warning "iOS 15"
+    If you are running an iOS 15 device, this screen is shown in German regardless of the language you choose for Loop. That is an accident that will be fixed by the next release. The English version is shown below.
+
+You can review and modify your preference for Usage Data Sharing as shown in the graphic below:
+
+![review or modify usage data sharing with Loop developers](img/data-sharing-revisit.svg){width="350"}
+{align="center"}
+
+If you change the check mark, it is immediately modified. Tap on Settings in upper left to return to the main Settings screen.
+
+If you choose to share usage data, it is collected anonymously. The choices are:
+
+* Do not share any usage data
+* Share the Loop version number, phone type and iOS version number
+* Additionally share usage data in terms of events only - health data such as values for glucose, insulin and carbs is **not** collected
+
 ### Pump
 
 The information about the pump section is detailed on several different pages. Follow the links below:

@@ -2,8 +2,6 @@
 
 As soon as your app builds on your phone, you are guided through the onboarding (set up) process. You will see information screens for each Therapy Setting and **must** acknowledge each screen. You can review those informational screens later by clicking the [Therapy Settings](therapy-settings.md) screen after a pump has been added.
 
-Click on this [Video of Onboarding](https://drive.google.com/file/d/1NkS-YGREFn1UBmBbOjsD2Yy0ZUyEYM1l/view?usp=sharing) link to watch the onboarding process for a pre-release version tested in March 2022.
-
 ### Entering and Editing Values
 
 This section explains how to enter and edit values with Loop 3.
@@ -63,10 +61,26 @@ Next, you need to give Loop permission to read and write to Apple Health. In the
 You need to enable Health Permissions for Loop to work.
 
 
-![setting up Apple Health permissions with Loop 3](img/health-loop-3.svg){width="600"}
+![setting up Apple Health permissions with Loop 3](img/health-loop-3.svg){width="750"}
 {align="center"}
 
 You can review the permissions screen later. [FAQS: How Do I Modify Apple HealthKit Permissions](../faqs/apple-health-faqs.md#how-do-i-modify-apple-healthkit-permissions).
+
+### Usage Data Sharing
+
+!!! warning "iOS 15"
+    If you are running an iOS 15 device, this screen is shown in German regardless of the language you choose for Loop. That is an accident that will be fixed by the next release. The English version is shown below.
+
+Next, you will be asked your preference for Usage Data Sharing, with the default automatically set to `Share Version Only` as shown in the graphic below:
+
+![choose whether to share usage data with Loop developers](img/data-sharing.svg){width="350"}
+{align="center"}
+
+If you choose to share usage data, it is collected anonymously. The choices are:
+
+* Do not share any usage data
+* Share the Loop version number, phone type and iOS version number
+* Additionally share usage data in terms of events only - health data such as values for glucose, insulin and carbs is **not** collected
 
 ### Connect Loop to Nightscout
 
@@ -75,6 +89,10 @@ The next screen, shown on the left of the graphic below, enables the user to bot
 !!! question "Nightscout"
     * [Nightscout](../nightscout/overview.md) is not required for Loop
     * It can be added later
+
+!!! warning "Loop 3 with Nightscout Requires API_SECRET"
+    * Even if you used Nightscout with Loop 2, you will neeed to add it again and you must include your API_SECRET
+
 
 * If you have do not have a Nightscout site, or choose not to use it, select `Setup Loop without Nightscout` and skip ahead to [Therapy Settings (Onboarding)](#therapy-settings-onboarding)
 
@@ -108,11 +126,11 @@ The therapy settings are the heart of how Loop makes predictions. If your settin
         * Glucose Safety Limit
         * Correction Range
         * Pre-Meal Range
-        * Carb Ratios
         * Basal Rates
         * Delivery Limits
             * Maximum Basal Rate
             * Maximum Bolus
+        * Carb Ratios
         * Insulin Sensitivites
 
 #### Guardrails While Onboarding
@@ -131,6 +149,9 @@ Take the yellow (and red) indications with a grain of salt. You will get an extr
 * Experienced loopers may choose to ignore warnings to be more aggressive
 
 A red limit cannot be exceeded without modifying the code itself. But values that show up as red can be saved - they are valid therapy selections.
+
+!!! danger "mmol/L"
+    People using mmol/L should avoid the red (the min or max end points) glucose values for their settings. They sometimes cause a crash.
 
 The [Guardrails for Settings](therapy-settings.md#guardrails-for-settings) are summarized on the Therapy Settings page.
 
@@ -166,16 +187,9 @@ The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, giv
 !!! abstract "Example"
     If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you extra insulin to move you towards the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
-### Carb Ratios
-
-Your [Carb Ratio](therapy-settings.md#carb-ratios) is the number of grams of carbohydrates covered by one unit of insulin.
-
-* At least one carb ratio (CR) must be entered
-* A daily schedule with varying CR can be entered
-
 ### Basal Rates
 
-Only one [Basal Rate](therapy-settings.md#basal-rates) schedule may be configured in the Loop app and the schedule must start at midnight.
+You must provide a [Basal Rate](therapy-settings.md#basal-rates) schedule and the schedule must start at midnight. Loop does not provide the option for having more than one profile saved that you can switch between.
 
 If you onboard basal rates before a pump is added, you are limited to increments of 0.05 U/hr for basal rates and 0.00 U/hr is not allowed. Enter values close to what you actually use because the values determine your maximum basal rate in the Delivery Limits.
 
@@ -217,6 +231,13 @@ Experienced loopers typically set their maximum basal rate around 3-4 times thei
 [Maximum Bolus](therapy-settings.md#maximum-bolus) is the highest bolus amount Loop can recommend at one time to cover carbs or bring down high glucose.
 
 For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.
+
+### Carb Ratios
+
+Your [Carb Ratio](therapy-settings.md#carb-ratios) is the number of grams of carbohydrates covered by one unit of insulin.
+
+* At least one carb ratio (CR) must be entered
+* A daily schedule with varying CR can be entered
 
 ### Insulin Sensitivities
 
@@ -322,6 +343,6 @@ If you used earlier versions of Loop, please be aware that absorption times have
 
 ### Carb Data Source
 
-Loop 3 does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, will be added to the documentation later. For now search in zulipchat.
+Loop 3 does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, see the [Customize: Build-Time Features](../build/code_customization.md#build-time-features) section.
 
 Users who build Loop 3 over Loop 2.2.x, may find a permission switch to give Loop permission to read carb data from health, but without making the customization mentioned above, changing permission does not change the behavior of Loop.
