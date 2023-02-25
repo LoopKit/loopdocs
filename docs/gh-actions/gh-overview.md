@@ -26,7 +26,7 @@ The customization process is more involved. One set of commonly requested custom
     * You can still use [TestFlight with your Mac-Xcode build](../build/testflight-xcode.md)
 * There are no instructions for applying customizations
     * Hints:
-    * You need to make a forks for every submodule you want to customize
+    * You need to make a fork for every submodule you want to customize
     * You need to update your LoopWorkspace Fork to point to your submodule forks
     * You are responsible for keeping those forks up to date
 
