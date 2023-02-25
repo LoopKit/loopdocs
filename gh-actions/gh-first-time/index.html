@@ -765,6 +765,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#do-not-confuse-your-keys" class="md-nav__link">
+    Do Not Confuse Your Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#done-with-apple-secrets" class="md-nav__link">
+    Done with Apple Secrets
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2567,6 +2581,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#do-not-confuse-your-keys" class="md-nav__link">
+    Do Not Confuse Your Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#done-with-apple-secrets" class="md-nav__link">
+    Done with Apple Secrets
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2809,7 +2837,7 @@
 <p class="admonition-title">Summary</p>
 <p>Once you have Apple Developer and <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> accounts</p>
 <ul>
-<li>Apple: Generate an API Key</li>
+<li>Apple: Generate an <abbr title="Application Programming Interface">API</abbr> Key</li>
 <li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>:<ul>
 <li>Create an access token (GH_PAT)</li>
 <li>Create a <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> private <abbr title="contains project files and each file's revision history">repository</abbr></li>
@@ -2924,6 +2952,10 @@
 </li>
 </ul>
 </li>
+<li><abbr title="Application Programming Interface">API</abbr> Key: Application Programming Interface Key<ul>
+<li>This key will be obtained by you from the Apple Developer website to enable your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account to interface with Apple to create your app</li>
+</ul>
+</li>
 <li><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>: a custom application for the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> platform that performs a complex but frequently repeated task<ul>
 <li>With <abbr title="Latest release with major updates">Loop 3</abbr>, actions to Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, Create Certificates and Build Loop are provided to enable users to build the Loop app from a browser on any computer</li>
 </ul>
@@ -2958,7 +2990,7 @@
 </div>
 <div class="admonition info">
 <p class="admonition-title">A Note about Capitalization and Spaces</p>
-<p>In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please use these names.</p>
+<p>In places you will be told to give something a name like: FastLane <abbr title="Application Programming Interface">API</abbr> Key or FastLane Access Token. Please use these names.</p>
 <p>The <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> that you will add later use names that are capitalized and use underscore instead of spaces. Be precise and careful.</p>
 <p>The relationship and creation of each item is explained step-by-step on this page.</p>
 </div>
@@ -3011,8 +3043,8 @@
 <li>LoopDocs has an <a href="../../build/step6/">Apple Developer Program</a> page that explains in detail how to sign up for an account</li>
 <li>This link takes you straight to <a href="https://developer.apple.com">Apple Developer account</a> to sign up</li>
 </ul>
-<h3 id="generate-api-key">Generate API Key<a class="headerlink" href="#generate-api-key" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> steps (see <a href="#new-github-account">New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Account</a> or <a href="#setup-github">Setup <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a>), but you will need to pause at <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>.</p>
+<h3 id="generate-api-key">Generate <abbr title="Application Programming Interface">API</abbr> Key<a class="headerlink" href="#generate-api-key" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You cannot generate the <abbr title="Application Programming Interface">API</abbr> Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> steps (see <a href="#new-github-account">New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Account</a> or <a href="#setup-github">Setup <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a>), but you will need to pause at <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>.</p>
 <p>This section will walk you through the steps required to gather or create these parameters.</p>
 <table>
 <thead>
@@ -3032,11 +3064,11 @@
 </tr>
 <tr>
 <td>FASTLANE_KEY_ID</td>
-<td>Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY</td>
+<td>Key ID provided when you create an <abbr title="Application Programming Interface">API</abbr> key in App Store Connect; it is associated with the FASTLANE_KEY</td>
 </tr>
 <tr>
 <td>FASTLANE_KEY</td>
-<td>Copy the full key from the text file you downloaded when generating the API key - Filename has FASTLANE_KEY_ID value embedded in it.<br>Include everthing in the file from<br>-----BEGIN PRIVATE KEY-----<br>and ending in <br>-----END PRIVATE KEY-----<br></td>
+<td>Copy the full key from the text file you downloaded when generating the <abbr title="Application Programming Interface">API</abbr> key - Filename has FASTLANE_KEY_ID value embedded in it.<br>Include everthing in the file from<br>-----BEGIN PRIVATE KEY-----<br>and ending in <br>-----END PRIVATE KEY-----<br></td>
 </tr>
 </tbody>
 </table>
@@ -3056,20 +3088,20 @@
 </ul>
 </li>
 <li>
-<p>Open this link: <a href="https://appstoreconnect.apple.com/access/api">App Store Connect/Access/API</a></p>
+<p>Open this link: <a href="https://appstoreconnect.apple.com/access/api">App Store Connect/Access/<abbr title="Application Programming Interface">API</abbr></a></p>
 <ul>
 <li>
 <p>Click the "Keys" tab</p>
 <ul>
 <li>
 <p>If this is your first time here, there will be a dialog for you to follow:</p>
-<p>"Permission is required to access the App Store Connect API. You can request access on behalf of your organization."</p>
+<p>"Permission is required to access the App Store Connect <abbr title="Application Programming Interface">API</abbr>. You can request access on behalf of your organization."</p>
 <ul>
 <li>Click on <code>Request Access</code> and follow directions until access is granted</li>
 </ul>
 </li>
 <li>
-<p>Once access is granted, click on the "Generate API Key" button</p>
+<p>Once access is granted, click on the "Generate <abbr title="Application Programming Interface">API</abbr> Key" button</p>
 </li>
 </ul>
 </li>
@@ -3079,16 +3111,16 @@
 </ul>
 <p align="center"><img alt="App Store Connect Key page" src="../img/api-key-initial-screen.svg" width="700" /></p>
 <ul>
-<li>A new "Generate API Key" dialog box will appear as shown in the graphic below</li>
+<li>A new "Generate <abbr title="Application Programming Interface">API</abbr> Key" dialog box will appear as shown in the graphic below</li>
 </ul>
 <p align="center"><img alt="generate api key dialog box" src="../img/dev-generate-key.png" width="500" /></p>
 <ul>
-<li>Enter the name of the key as "FastLane API Key" and choose "Admin" in the access drop down menu</li>
+<li>Enter the name of the key as "FastLane <abbr title="Application Programming Interface">API</abbr> Key" and choose "Admin" in the access drop down menu</li>
 <li>Confirm the name and that Admin is selected and then click on the "Generate" button.</li>
 </ul>
 </li>
 </ol>
-<h3 id="copy-api-key-secrets">Copy API Key <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#copy-api-key-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="copy-api-key-secrets">Copy <abbr title="Application Programming Interface">API</abbr> Key <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#copy-api-key-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The Keys screen is seen again with the additional content similar to that shown in the graphic below; the key information is blanked out for security.</p>
 <ul>
 <li>
@@ -3108,7 +3140,7 @@
 </ul>
 </li>
 <li>
-<p>Click on the Download API Key button - you will be warned you can only download this once.</p>
+<p>Click on the Download <abbr title="Application Programming Interface">API</abbr> Key button - you will be warned you can only download this once.</p>
 <p align="center"><img alt="download key only once" src="../img/dev-dl-key-once.png" width="700" /></p>
 </li>
 <li>
@@ -3132,6 +3164,17 @@
 <p><img alt="img/apns-copy-key.png" src="../../nightscout/img/apns-copy-key.png" /></p>
 </li>
 </ul>
+<h3 id="do-not-confuse-your-keys">Do Not Confuse Your Keys<a class="headerlink" href="#do-not-confuse-your-keys" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title"><abbr title="Application Programming Interface">API</abbr> Key vs <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> Key</p>
+<p>If you use <a href="../../nightscout/remote-overrides/">Remote Commands with Nightscout</a>, you may notice the Application Programming Interface (<abbr title="Application Programming Interface">API</abbr>) key has the same type of format as the Apple Push Notification (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>) key. The keys for both purposes are p8 keys, but should not be confused.</p>
+<p>The <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for building with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> use the <abbr title="Application Programming Interface">API</abbr> Key.</p>
+<p>The config vars for Nightscout use the <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> Key.</p>
+<ul>
+<li>If you are using remote commands with Nightscout and building with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build, you must also add the config var of LOOP_PUSH_SERVER_ENVIRONMENT with a value of <code>production</code> to your Nightscout site or the remote commands will not work.</li>
+</ul>
+</div>
+<h3 id="done-with-apple-secrets">Done with Apple <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#done-with-apple-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In summary, from this section, you have found or generated the following, and saved copies for later use</p>
 <ul>
 <li><code>TEAMID</code></li>
@@ -3146,8 +3189,8 @@
 <h4 id="lost-fastlane_key">Lost FASTLANE_KEY<a class="headerlink" href="#lost-fastlane_key" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition danger">
 <p class="admonition-title">I can't find my FASTLANE_KEY</p>
-<p>If you cannot find where you stored your information, you can get a new key. You cannot recover an old one. Return to <a href="#generate-api-key">Generate API Key</a>, but add this initial step.</p>
-<p>When you use the link in the Generate API Key step, you will see an Active key. You must first click Edit by the Active section, revoke your "FastLane API Key" and then follow the directions to generate a new one. You will have to update the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for every App <abbr title="contains project files and each file's revision history">repository</abbr> when you take this step.</p>
+<p>If you cannot find where you stored your information, you can get a new key. You cannot recover an old one. Return to <a href="#generate-api-key">Generate <abbr title="Application Programming Interface">API</abbr> Key</a>, but add this initial step.</p>
+<p>When you use the link in the Generate <abbr title="Application Programming Interface">API</abbr> Key step, you will see an Active key. You must first click Edit by the Active section, revoke your "FastLane <abbr title="Application Programming Interface">API</abbr> Key" and then follow the directions to generate a new one. You will have to update the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for every App <abbr title="contains project files and each file's revision history">repository</abbr> when you take this step.</p>
 <p>The FASTLANE_KEY_ID and FASTLANE_KEY must both be updated.</p>
 </div>
 <h2 id="new-github-account">New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Account<a class="headerlink" href="#new-github-account" title="Anchor link to this Header on this Page">&para;</a></h2>
