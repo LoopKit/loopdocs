@@ -27,9 +27,22 @@ If you swipe the Apple Watch Loop screen from right-to-left, a second screen, as
     * If the carb entry is present on the watch display, do **not** enter it again
     * If your phone is not in range of your watch, carbs entered on the watch will be added to the phone carb storage when you reconnect
 
+### Watch Graph Windows
+
+The windows for history and prediction available on the watch can be modified to suit your preference. The windows can be modified from 2 hours to 12 hours.
+
+* Double tap on the graph to increase the windows
+* Single tap on the graph to decrease the windows
+
+The selection for the window remains as selected until you change it.
+
 ### Loop Complication
 
 A loop complication exists to show glucose on the watch face but the update rate is limited by Apple. If you have a Loop complication installed in the watch face, you can simply tap the complication to open the Loop watch app.
+
+In some positions and with some watch faces, the complication includes a graph.
+
+* The windows for the Loop Complication history and prediction are fixed (not modified when you change the [Watch Graph Windows](#watch-graph-windows))
 
 ## Loop Watch Features
 

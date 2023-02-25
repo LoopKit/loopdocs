@@ -141,6 +141,18 @@ When executed properly, you should have something that looks like this for your 
 
 ![img/override_vars_complete.png](img/override_vars_complete.png)
 
+### Do Not Confuse Your Keys
+
+!!! danger "API Key vs APN Key"
+    If you build with the GitHub [Browser Build](../gh-actions/gh-overview.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both purposes are p8 keys, but should not be confused.
+
+    The Secrets for building with GitHub use the API Key.
+
+    The config vars for Nightscout use the APN Key.
+
+    * If you are using remote commands with Nightscout and building with the GitHub build, you must also add the config var of LOOP_PUSH_SERVER_ENVIRONMENT with a value of `production` to your Nightscout site or the remote commands will not work.
+    * If you are using the Mac-Xcode build method, do not have a config var of LOOP_PUSH_SERVER_ENVIRONMENT entered - remove it if it is present.
+
 ## FAQs on Remote Overrides
 
 Don't forget to read [Loopdocs: Overrides](../operation/features/workout.md). For remote overrides in particular:

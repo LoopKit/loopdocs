@@ -110,6 +110,8 @@ Some of these terms have ToolTips, so hover your mouse over the item - or review
     * Most Loopers will not have an App on their page until using the GitHub build method
     * The name of an app must be unique across the entire App Store worldwide
         * You will need a unique name for your Loop App
+* API Key: Application Programming Interface Key
+    * This key will be obtained by you from the Apple Developer website to enable your GitHub account to interface with Apple to create your app
 * Actions: a custom application for the GitHub Actions platform that performs a complex but frequently repeated task
     * With Loop 3, actions to Add Identifiers, Create Certificates and Build Loop are provided to enable users to build the Loop app from a browser on any computer
 
@@ -284,6 +286,19 @@ The Keys screen is seen again with the additional content similar to that shown 
     * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY`
 
     ![img/apns-copy-key.png](../nightscout/img/apns-copy-key.png)
+
+### Do Not Confuse Your Keys
+
+!!! danger "API Key vs APN Key"
+    If you use [Remote Commands with Nightscout](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both purposes are p8 keys, but should not be confused.
+
+    The Secrets for building with GitHub use the API Key.
+
+    The config vars for Nightscout use the APN Key.
+
+    * If you are using remote commands with Nightscout and building with the GitHub build, you must also add the config var of LOOP_PUSH_SERVER_ENVIRONMENT with a value of `production` to your Nightscout site or the remote commands will not work.
+
+### Done with Apple Secrets
 
 In summary, from this section, you have found or generated the following, and saved copies for later use
 
