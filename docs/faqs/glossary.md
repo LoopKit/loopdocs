@@ -15,6 +15,10 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **API_SECRET**: password (min 12 characters) needed to access Nightscout Site
 
+**API**: Application Programming Interface
+
+**APN**: Apple Push Notification service, required for issuing remote command via Nightscout
+
 **App Group**: a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup
 
 **Automatic Bolus**: provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)
