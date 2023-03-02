@@ -280,6 +280,11 @@ Some people want finer settings on the override sensitivity picker and may want 
 
 Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An [override](../operation/features/workout.md) is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in IOB for the duration of the override.)
 
+!!! danger "A Sensitivity of 0% is NOT Valid"
+    Do not set the lower level of the sensitivity range to be 0%.
+
+    If you configure to allow that and someone chooses it, they will be telling Loop to divide by zero in some of the calculations. They will see NaN (not a number) in Loop predictions until that override is removed and will continue to see that for the full duration of insulin action (6 hours).
+
 This example customization changes the lower bound for sensitivity to 50% (factor of 2 smaller than 100%) and provides 5% steps.
 
 ``` { .txt .copy title="Key_Phrase" }
