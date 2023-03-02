@@ -50,7 +50,6 @@ The first time you build Loop 3, the app takes you through the Onboarding proces
 These pages have a lot of detailed Loop information.
 
 * [Displays](displays_v3.md)
-* [Alerts & Notifications](alert-notify.md)
 * [Settings](settings.md)
 * [Therapy Settings](therapy-settings.md)
 * [Optional Services](../operation/loop-settings/services.md)
