@@ -804,3 +804,69 @@ Add LibreTransmitter to Loop as a plugin:
     * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
     * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/312259-Omnipod-DASH/topic/Libre.20support/near/279078872)
     * The required GetGlucoseFromRaw.swift file is not included in the repository due to legal concerns, so you have to get it from elsewhere
+
+## Limit Loop to 5-minute Cycle
+
+Loop 3 enables higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates.
+
+This modification limits the period for Loop cycles to 4.8 minutes or longer. The value of 4.8 minutes was chosen (over the 4.5 minutes that was present in Loop 2.2.x) because of the new HUD refreshTimer for pods (30 sec DASH, 60 sec Eros).
+
+``` { .txt .copy title="Key_Phrase" }
+let timeSinceLastLoop
+```
+
+* Folder: Loop/Loop/Managers/
+* File: LoopDataManager.swift, Line: 821 (main), 840 (dev)
+
+The Key_Phrase identifies the line where you will insert new code.
+
+_Code Before Modification_
+
+```
+if let lastLoopCompleted = self.lastLoopCompleted {
+```
+
+You can copy the lines below and replace the one line above with this new code.
+
+_Code After Modification_
+
+``` { .txt .copy }
+// Limit Loop frequency to 4.8 minutes
+if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(lastLoopCompleted) < TimeInterval(minutes: 4.8) {
+    self.logger.default("Skipping loop() attempt as last loop completed at %{public}@", String(describing: lastLoopCompleted))
+    return
+} else if let lastLoopCompleted = self.lastLoopCompleted {
+```
+
+## Limit Loop HUD Update
+
+Loop 3 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (HUD).
+
+When the app is open, the HUD is updated using this refresh timer:
+
+* Omnipod DASH: 30 second
+* Omnipod Eros: 60 second
+
+If you prefer to leave your app open with phone unlocked and plugged in over night, you might want to modify the refreshTimer selection for DASH pods. When modifying this value during testing, values greater than 60 seconds had no effect on the cadence of sending status update requests to the pod. Other code must be triggering the update to be a minimum 60 sec cadence when app is open. For that reason, no information is provided for Eros pods, which are already configured for 60 seconds.
+
+``` { .txt .copy title="Key_Phrase" }
+refreshTimer = Timer(timeInterval: .seconds(30)
+```
+
+* DASH Modification
+    * Folder: OmniBLE/OmniBLE/PumpManagerUI
+    * File: OmniBLEHUDProvider.swift, Line: 137
+
+_Code Before Modification (DASH)_
+
+```
+refreshTimer = Timer(timeInterval: .seconds(30) , repeats: true) { [weak self] _ in
+```
+
+_Code After Modification (DASH)_
+
+``` { .txt .copy }
+refreshTimer = Timer(timeInterval: .seconds(60) , repeats: true) { [weak self] _ in
+```
+
+This will limit the update refresh to 60 seconds for DASH pods. It might have no effect, but can be adjusted if DASH pods are ending with faults before the 80 hour pod life.
