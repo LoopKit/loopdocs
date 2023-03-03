@@ -351,7 +351,10 @@ You must be logged into your GitHub account before starting this step. If you ar
 
 1. You will be creating a new GitHub Personal Access token and giving it the name "FastLane Access Token"
 1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
-    * Referring to the graphic, type FastLane Access Token in the Note box
+    * Referring to the graphic
+        * Note that Tokens (classic) is highlighted
+        * You may be asked to choose between Fine-grained and classic (choose classic)
+        * Type FastLane Access Token in the Note box
     * The default Expiration time is 30 days - but you should select 90 days (use the drop down menu to select)
         * You get an email when this token is close to expiration
         * Since you must rebuild every 90 days, setting the Expiration time to 90 days acts as a convenient reminder
@@ -588,7 +591,7 @@ If you have never built Loop with Xcode using your TEAMID, you need to create an
 
 1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
 1. For Description, use "Loop App Group".
-1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`.
+1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", substituting your team id for `TEAMID`.
 1. Double check the spelling - your TEAMID must be correct and the Loop App Group must match the format shown in the previous step
     * A mistake here means you will not be able to build Loop until you fix it
 1. Click "Continue" and then "Register".
