@@ -41,6 +41,11 @@ The override only works when your Loop gear is with you. For example, if Loop se
 ![img/override-entry.jpeg](img/override-entry.jpeg){width="300"}
 {align="center"}
 
+The **target range** replaces the correction range target for the duration of the override.
+
+* If the target range is left blank, your scheduled correction range continues to be in effect
+* If the target range is specified, that range is used instead of your scheduled correction range
+
 The **overall insulin needs** is applied to your basal rates, insulin sensitivities and carb ratios for the duration of the override.
 
 * If the insulin needs is left at 100%, no change is made to basal rates, ISF or CR
@@ -50,12 +55,9 @@ The **overall insulin needs** is applied to your basal rates, insulin sensitivit
 * If you set an overall insulin needs adjustment _above_ 100%, you are telling Loop you are less insulin sensitive and need a heavier touch.
     * Loop uses basal rates increased from scheduled rates
     * Loop uses ISF and CR numbers decreased from settings
-* While the override is active, the modified basal rates, ISF and CR are applied for **every** correction and meal entry
-
-The **target range** replaces the correction range target for the duration of the override.
-
-* If the target range is left blank, your scheduled correction range continues to be in effect
-* If the target range is specified, that range is used instead of your scheduled correction range
+* While the override is active, the modified basal rates, ISF and CR are applied for **every** automated or manual insulin delivery (aside from the modified basal) and meal entry
+    * Those ISF and CR numbers are associated with the carbs and/or insulin delivered during the override
+    * As the carbs and/or insulin "ages" during their absorption-time/duration-of-action, Loop maintains the sensitivity value associate with those during-the-override entries
 
 For an override to be accepted:
 
@@ -68,7 +70,7 @@ For an override to be accepted:
 
 ### Future Override
 
-When an override is scheduled to start in the future, it can have an effect earlier than you might think. The closed loop suggested insulin increase or restriction at each cycle is calculated to map your predicted glucose to the desired target range over the duration of insulin action (6 hours).
+When an override is scheduled to start in the future, it can have an effect earlier than you might think. The closed loop automated insulin increase or restriction at each cycle is calculated to map your predicted glucose to the desired target range over the duration of insulin action (6 hours). If the future override has a higher target, that higher target is factored into the Loop calculations.
 
 Example:
 
