@@ -809,7 +809,15 @@ Add LibreTransmitter to Loop as a plugin:
 
 Loop 3 enables higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates.
 
-This modification limits the period for Loop cycles to 4.8 minutes or longer. The value of 4.8 minutes was chosen (over the 4.5 minutes that was present in Loop 2.2.x) because of the new HUD refreshTimer for pods (30 sec DASH, 60 sec Eros).
+This modification limits the period for Loop cycles to 4.8 minutes or longer.
+
+!!! warning "Meant for Libre Users"
+    This customization is suggested for Libre Users who need to limit how frequently Loop modifies dosing commands to preserve pod batteries.
+
+    The Loop 3 code was modified when adding support for DASH pods. The DASH pods have a 3-minute heartbeat and it was discovered that with Dexcom (5-minute update rate) and DASH, the Loop could switch to a DASH heartbeat and not be triggered by the next CGM reading. Loop works much better when each Loop cycle is triggered by the CGM.
+
+    The preferred solution is to have the CGM manager decide when to send updated glucose values to Loop.
+
 
 ``` { .txt .copy title="Key_Phrase" }
 let timeSinceLastLoop
