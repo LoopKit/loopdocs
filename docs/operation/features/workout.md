@@ -1,3 +1,23 @@
+## New Loopers - Please Read
+
+**Please do not use this feature until you understand it.**
+
+Many new Loopers interpret Loop Overrides as a one-for-one replacement for manual pump options where a temporary basal was applied for a particular activity. Although Loop Overrides can help in a situation where you previously used a temporary basal rate, overrides are more powerful.
+
+!!! danger "Changing Insulin Sensitivity is NOT like Manual Pump Temp Basal Change"
+    Loop Overrides are **not** the same as adjusting temp basal on a manual pump. The easiest way to restrict basal rates with an automated system is to raise your correction target temporarily. In some cases, you may need to also adjust sensitivity, but begin just by changing that target.
+
+    When you modify insulin sensitivity, you are affecting **basal rates**, **carb ratios** and **insulin sensitivity factors** for the duration of the override.
+
+    A common mistake is to think selecting a 10% override is like selecting 10% basal rate with a manual pump. THIS IS NOT TRUE. You have told your automatic control system to modify all your settings by a factor of 10!
+
+## Manual Temp Basal
+
+Sometimes you need to set a manual temp basal and you need it to keep working whether you are near your gear. There's a function for that with Loop 3.
+
+* Pods: use the [Manual Temp Basal](../../loop-3/omnipod.md#manual-temp-basal) setting
+* Medtronic: select Open Loop and use your Medtronic pump temp basal feature
+
 ## How Overrides Work
 
 Overrides let Loop know selected settings are modified for the duration of the override. The override can change either the correction range or the overall insulin needs or both. When you set an override on insulin needs, the override adjusts basal schedule, ISF, and CR together. Examples where this can be helpful include hormone cycles, steroid medications and/or exercise.
@@ -7,6 +27,8 @@ Override presets are (1) optional and (2) can be configured within Loop's workou
 ![img/toolbar.png](img/toolbar-override.svg){width="450"}
 {align="center"}
 
+### Features of an Override
+
 Overrides allow you to specify:
 
 * an overall insulin needs adjustment
@@ -14,10 +36,15 @@ Overrides allow you to specify:
 * a duration in 15 minute increments (or indefinite)
 * a start time
 
-The override requires your Loop gear be with you. For example, if Loop sets a zero temp basal rate based on an override and then you leave your gear behind; at the end of half an hour, your pump will resume scheduled insulin delivery.
+The override only works when your Loop gear is with you. For example, if Loop sets a zero temp basal rate based on an override and then you leave your gear behind; at the end of half an hour, your pump will resume scheduled insulin delivery.
 
 ![img/override-entry.jpeg](img/override-entry.jpeg){width="300"}
 {align="center"}
+
+The **target range** replaces the correction range target for the duration of the override.
+
+* If the target range is left blank, your scheduled correction range continues to be in effect
+* If the target range is specified, that range is used instead of your scheduled correction range
 
 The **overall insulin needs** is applied to your basal rates, insulin sensitivities and carb ratios for the duration of the override.
 
@@ -28,12 +55,9 @@ The **overall insulin needs** is applied to your basal rates, insulin sensitivit
 * If you set an overall insulin needs adjustment _above_ 100%, you are telling Loop you are less insulin sensitive and need a heavier touch.
     * Loop uses basal rates increased from scheduled rates
     * Loop uses ISF and CR numbers decreased from settings
-* While the override is active, the modified basal rates, ISF and CR are applied for **every** correction and meal entry
-
-The **target range** replaces the correction range target for the duration of the override.
-
-* If the target range is left blank, your scheduled correction range continues to be in effect
-* If the target range is specified, that range is used instead of your scheduled correction range
+* While the override is active, the modified basal rates, ISF and CR are applied for **every** automated or manual insulin delivery (aside from the modified basal) and meal entry
+    * Those ISF and CR numbers are associated with the carbs and/or insulin delivered during the override
+    * As the carbs and/or insulin "ages" during their absorption-time/duration-of-action, Loop maintains the sensitivity value associate with those during-the-override entries
 
 For an override to be accepted:
 
@@ -44,14 +68,24 @@ For an override to be accepted:
 * A Custom override is used only once
 * Any override can be edited while it is active
 
+### Future Override
+
+When an override is scheduled to start in the future, it can have an effect earlier than you might think. The closed loop automated insulin increase or restriction at each cycle is calculated to map your predicted glucose to the desired target range over the duration of insulin action (6 hours). If the future override has a higher target, that higher target is factored into the Loop calculations.
+
+Example:
+
+* At 10 pm, you set an override with a higher correction range target to start the following morning at 6 am
+* At approximately midnight, Loop will begin taking that future target into account in the dosing for each Loop cycle
+* By the time you awaken at 6 am, Loop should have your glucose in that higher target range
+* The sensitivity changes, if any, associated with that override do not affect the Loop prediction until the scheduled start time for the override
 
 ## How Overrides Do NOT Work
 
 Overrides will work while you are Looping. Sounds obvious, right? But, the thing to remember is that the adjustments (multipliers) that overrides make are not saved back to your Medtronic pump or Omnipod. They only exist in the Loop app.
 
-!!! danger "If you walk away from iPhone and/or RileyLink..."
+!!! warning "If you walk away from iPhone and/or RileyLink..."
 
-    If you stop Looping (i.e., walk away from your gear or glucose reading is stale), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates in your Therapy Settings. Your adjusted needs as set-up in any override will not continue if your Loop is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and RileyLink and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals.
+    If you stop Looping (i.e., walk away from your gear or glucose reading is stale), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates in your Therapy Settings. Your adjusted needs as set-up in any override will not continue if your Loop is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and RileyLink and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals or use a [Manual Temp Basal](../../loop-3/omnipod.md#manual-temp-basal) setting.
 
 ### Avoid Extreme Insulin Needs Setting
 
@@ -66,6 +100,7 @@ There have been users who select a 10% overall insulin need. This is NOT the sam
             - User stays high because ISF is also 10 times higher than Therapy Setting Value
                 - Automated corrections are 10% of typical corrections
                 - Basal supplied is 10% of Therapy Setting value
+        - OR
         - Loop suggests a tiny bolus and user manually boluses the amount they know the food needs
             - User glucose may be normal BUT
                 - Loop predicts a negative eventual glucose (prediction only - this will never happen)
@@ -74,10 +109,12 @@ There have been users who select a 10% overall insulin need. This is NOT the sam
 
 Instead of selecting 10%, raise your correction range with a moderate needs adjustment. Loop tends to suspend insulin delivery via temp basals with the next CGM reading.
 
-If you feel the need to immediately halt insulin delivery, consider a Manual Temp Basal (Loop 3 only) or suspend command to the pump and setting a reminder in your phone to resume insulin delivery later.
+With Loop 3, there is now a warning message in the meal entry screen when an override is active with an insulin sensitivity other than 100%. The user can decide whether to proceed with the meal entry with the override active.
+
+If you feel the need to immediately halt insulin delivery, consider a [Manual Temp Basal](../../loop-3/omnipod.md#manual-temp-basal) or suspend command to the pump. If you choose to suspend, be sure to pay attention to the reminder to resume insulin delivery later.
 
 !!! tip "Extreme Athletes"
-    Loopers should understand the extreme values and use them appropriately, typically for extreme or prolonged exercise.
+    There are athletes who do need those extreme sensitivity changes and know how to use them appropriately. This typically involves extreme or prolonged exercise.
 
 ## Create an Override Preset
 
@@ -128,7 +165,7 @@ The heart will be highlighted in a blue square while active and the [HUD Status 
 
 You can set up a future start time when selecting a saved override by tapping on the calendar icon to the right of the override. Adjust the "Start time" row. Tap the "Enable" button in the top right corner.
 
-A future override can be very helpful, for example, to set an exercise override the night before your workout. Set your exercise override to activate 2 hours before you wake up for your 5 am spin class. You'll wake up with less insulin on board and at your desired exercise targets, without needing to set an alarm even earlier.
+A [Future Override](#future-override) can be very helpful, for example, to set an exercise override the night before your workout. You'll wake up with less insulin on board and at your desired exercise targets.
 
 ## Deactivating an Override
 
