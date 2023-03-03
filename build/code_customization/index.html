@@ -2037,6 +2037,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#limit-loop-to-5-minute-cycle" class="md-nav__link">
+    Limit Loop to 5-minute Cycle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limit-loop-hud-update" class="md-nav__link">
+    Limit Loop HUD Update
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2730,6 +2744,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#limit-loop-to-5-minute-cycle" class="md-nav__link">
+    Limit Loop to 5-minute Cycle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limit-loop-hud-update" class="md-nav__link">
+    Limit Loop HUD Update
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3036,6 +3064,11 @@ Do not paste the result anywhere
 </ul>
 </div>
 <p>Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An <a href="../../operation/features/workout/">override</a> is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> for the duration of the override.)</p>
+<div class="admonition danger">
+<p class="admonition-title">A Sensitivity of 0% is NOT Valid</p>
+<p>Do not set the lower level of the sensitivity range to be 0%.</p>
+<p>If you configure to allow that and someone chooses it, they will be telling Loop to divide by zero in some of the calculations. They will see NaN (not a number) in Loop predictions until that override is removed and will continue to see that for the full duration of insulin action (6 hours).</p>
+</div>
 <p>This example customization changes the lower bound for sensitivity to 50% (factor of 2 smaller than 100%) and provides 5% steps.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let allScaleFactorPercentages
 </code></pre></div>
@@ -3483,6 +3516,51 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </ul>
 </li>
 </ul>
+<h2 id="limit-loop-to-5-minute-cycle">Limit Loop to 5-minute Cycle<a class="headerlink" href="#limit-loop-to-5-minute-cycle" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><abbr title="Latest release with major updates">Loop 3</abbr> enables higher rates of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates.</p>
+<p>This modification limits the period for Loop cycles to 4.8 minutes or longer. The value of 4.8 minutes was chosen (over the 4.5 minutes that was present in Loop 2.2.x) because of the new <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> refreshTimer for pods (30 sec DASH, 60 sec Eros).</p>
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let timeSinceLastLoop
+</code></pre></div>
+<ul>
+<li>Folder: Loop/Loop/Managers/</li>
+<li>File: LoopDataManager.swift, Line: 821 (main), 840 (dev)</li>
+</ul>
+<p>The Key_Phrase identifies the line where you will insert new code.</p>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>if let lastLoopCompleted = self.lastLoopCompleted {
+</code></pre></div>
+<p>You can copy the lines below and replace the one line above with this new code.</p>
+<p><em>Code After Modification</em></p>
+<div class="copy highlight"><pre><span></span><code>// Limit Loop frequency to 4.8 minutes
+if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(lastLoopCompleted) &lt; TimeInterval(minutes: 4.8) {
+    self.logger.default(&quot;Skipping loop() attempt as last loop completed at %{public}@&quot;, String(describing: lastLoopCompleted))
+    return
+} else if let lastLoopCompleted = self.lastLoopCompleted {
+</code></pre></div>
+<h2 id="limit-loop-hud-update">Limit Loop <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Update<a class="headerlink" href="#limit-loop-hud-update" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><abbr title="Latest release with major updates">Loop 3</abbr> has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (<abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>).</p>
+<p>When the app is open, the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> is updated using this refresh timer:</p>
+<ul>
+<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH: 30 second</li>
+<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Eros: 60 second</li>
+</ul>
+<p>If you prefer to leave your app open with phone unlocked and plugged in over night, you might want to modify the refreshTimer selection for DASH pods. When modifying this value during testing, values greater than 60 seconds had no effect on the cadence of sending status update requests to the pod. Other code must be triggering the update to be a minimum 60 sec cadence when app is open. For that reason, no information is provided for Eros pods, which are already configured for 60 seconds.</p>
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>refreshTimer = Timer(timeInterval: .seconds(30)
+</code></pre></div>
+<ul>
+<li>DASH Modification<ul>
+<li>Folder: OmniBLE/OmniBLE/PumpManagerUI</li>
+<li>File: OmniBLEHUDProvider.swift, Line: 137</li>
+</ul>
+</li>
+</ul>
+<p><em>Code Before Modification (DASH)</em></p>
+<div class="highlight"><pre><span></span><code>refreshTimer = Timer(timeInterval: .seconds(30) , repeats: true) { [weak self] _ in
+</code></pre></div>
+<p><em>Code After Modification (DASH)</em></p>
+<div class="copy highlight"><pre><span></span><code>refreshTimer = Timer(timeInterval: .seconds(60) , repeats: true) { [weak self] _ in
+</code></pre></div>
+<p>This will limit the update refresh to 60 seconds for DASH pods. It might have no effect, but can be adjusted if DASH pods are ending with faults before the 80 hour pod life.</p>
 
 
 
