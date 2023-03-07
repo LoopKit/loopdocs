@@ -779,6 +779,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#action-validate-secrets" class="md-nav__link">
+    Action: Validate Secrets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#action-add-identifiers" class="md-nav__link">
     Action: Add Identifiers
   </a>
@@ -2354,6 +2361,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#action-validate-secrets" class="md-nav__link">
+    Action: Validate Secrets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#action-add-identifiers" class="md-nav__link">
     Action: Add Identifiers
   </a>
@@ -2545,9 +2559,28 @@
 <p align="center"><img alt="dialog for entering a new secret" src="../img/repeat-secret-dialog.png" width="500" /></p>
 </li>
 </ol>
-<p>Once all six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are added, continue to add the identifiers.</p>
+<p>Once all six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are added, you will either continue to add the identifiers (LoopCaregiver) or use the updated method to first validate your secrets (Loop Follow).</p>
+<h2 id="action-validate-secrets">Action: Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#action-validate-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>When building Loop Follow, the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> has the new steps that are currently in <a href="../gh-update/#loop-dev-actions">Loop dev <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></a> and will be in the next release. The actions will look slightly different than when you built Loop.</p>
+<p align="left"><img alt="actions shown for Loop 3.1 and newer versions" src="../img/gh-actions-3.1.png" width="200" /></p>
+<p>When building LoopCaregiver, the new steps are not yet available, so you'll skip ahead to <a href="#action-add-identifiers">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
+<p>Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab.</p>
+<ul>
+<li>The first time you click on <code>Actions</code> with this <abbr title="contains project files and each file's revision history">repository</abbr> you'll be informed that <code>Workflows aren't being run on this forked repository</code></li>
+<li>Tap on the green button that says: <code>I understand my workflows, go ahead and enable them</code></li>
+</ul>
+<p>The workflows are now displayed: look at the list on the left side similar to that shown in the graphic below. (You can dismiss the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> Enabled message using the X near the upper right side if it appears).</p>
+<p>This step validates most of your six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and provides error messages if it detects an issue with one or more.</p>
+<ol>
+<li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> and enable workflows if needed</li>
+<li>On the left side, select "1. Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>".</li>
+<li>On the right side, click "Run Workflow", and tap the green <code>Run workflow</code> button.</li>
+<li>Wait, and within a minute or two you should see a green checkmark indicating the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> succeeded.</li>
+<li>The <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> will check if the required secrets are added and that they are correctly formatted. If errors are detected, please check the run log for details.</li>
+</ol>
+<p>Until LoopCaregiver is also updated, the instructions for the rest of this page won't include the numbers for the successive steps.</p>
 <h2 id="action-add-identifiers">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#action-add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab</p>
+<p>Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab.</p>
 <ul>
 <li>The first time you click on <code>Actions</code> with this <abbr title="contains project files and each file's revision history">repository</abbr> you'll be informed that <code>Workflows aren't being run on this forked repository</code></li>
 <li>Tap on the green button that says: <code>I understand my workflows, go ahead and enable them</code></li>

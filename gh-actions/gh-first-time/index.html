@@ -2958,6 +2958,7 @@
 </li>
 <li><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>: a custom application for the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> platform that performs a complex but frequently repeated task<ul>
 <li>With <abbr title="Latest release with major updates">Loop 3</abbr>, actions to Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, Create Certificates and Build Loop are provided to enable users to build the Loop app from a browser on any computer</li>
+<li>The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> system is maintained by Microsoft Corporation and they do a good job of keeping it running - however, if there is a problem, it will be reported at <a href="https://www.githubstatus.com/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Status</a></li>
 </ul>
 </li>
 </ul>
@@ -3224,7 +3225,12 @@
 <li>
 <p>Open this link: <a href="https://github.com/settings/tokens/new">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/settings/tokens/new</a></p>
 <ul>
-<li>Referring to the graphic, type FastLane Access Token in the Note box</li>
+<li>Referring to the graphic<ul>
+<li>Note that <abbr title="on Nightscout, configure access permissions using tokens">Tokens</abbr> (classic) is highlighted</li>
+<li>You may be asked to choose between Fine-grained and classic (choose classic)</li>
+<li>Type FastLane Access Token in the Note box</li>
+</ul>
+</li>
 <li>The default Expiration time is 30 days - but you should select 90 days (use the drop down menu to select)<ul>
 <li>You get an email when this token is close to expiration</li>
 <li>Since you must rebuild every 90 days, setting the Expiration time to 90 days acts as a convenient reminder</li>
@@ -3462,7 +3468,7 @@
 <ol>
 <li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/">Register an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></a> on the apple developer site.</li>
 <li>For Description, use "Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>".</li>
-<li>For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for <code>TEAMID</code>.</li>
+<li>For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", substituting your team id for <code>TEAMID</code>.</li>
 <li>Double check the spelling - your TEAMID must be correct and the Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> must match the format shown in the previous step<ul>
 <li>A mistake here means you will not be able to build Loop until you fix it</li>
 </ul>
