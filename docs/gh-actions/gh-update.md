@@ -70,6 +70,8 @@ After you click on `FastLane Access Token` your screen should be similar to the 
 
 Click on Regenerate token (red highlight in previous graphic) to see screen similar to next graphic. If your previous token expired in 30 days, be sure to change Expiration to 90 days to match the TestFlight expiration rhythm. Once happy with Expiration selection, click on the green `Regenerate Token` button (red highlight in following graphic).
 
+* You may be asked to choose between Fine-grained and classic (choose classic)
+
 ![regenerate fastlane access token on github](img/gh-token-set-90-days.png){width="600"}
 {align="center"}
 
