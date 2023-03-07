@@ -114,6 +114,7 @@ Some of these terms have ToolTips, so hover your mouse over the item - or review
     * This key will be obtained by you from the Apple Developer website to enable your GitHub account to interface with Apple to create your app
 * Actions: a custom application for the GitHub Actions platform that performs a complex but frequently repeated task
     * With Loop 3, actions to Add Identifiers, Create Certificates and Build Loop are provided to enable users to build the Loop app from a browser on any computer
+    * The GitHub system is maintained by Microsoft Corporation and they do a good job of keeping it running - however, if there is a problem, it will be reported at [GitHub Status](https://www.githubstatus.com/)
 
 ## Configure to use GitHub Build Actions
 
