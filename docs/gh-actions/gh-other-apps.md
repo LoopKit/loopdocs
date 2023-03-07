@@ -70,11 +70,37 @@ Open the text file in which you maintain a copy of your 6 Secrets so you can cop
     ![dialog for entering a new secret](img/repeat-secret-dialog.png){width="500"}
     {align="center"}
 
-Once all six Secrets are added, continue to add the identifiers.
+Once all six Secrets are added, you will either continue to add the identifiers (LoopCaregiver) or use the updated method to first validate your secrets (Loop Follow).
+
+## Action: Validate Secrets
+
+When building Loop Follow, the main branch has the new steps that are currently in [Loop dev Actions](gh-update.md#loop-dev-actions) and will be in the next release. The actions will look slightly different than when you built Loop.
+
+![actions shown for Loop 3.1 and newer versions](img/gh-actions-3.1.png){width="200"}
+{align="left"}
+
+When building LoopCaregiver, the new steps are not yet available, so you'll skip ahead to [Action: Add Identifiers](#action-add-identifiers).
+
+Near the top middle of your Repository fork, click on the "Actions" tab.
+
+* The first time you click on `Actions` with this repository you'll be informed that `Workflows aren't being run on this forked repository`
+* Tap on the green button that says: `I understand my workflows, go ahead and enable them`
+
+The workflows are now displayed: look at the list on the left side similar to that shown in the graphic below. (You can dismiss the Actions Enabled message using the X near the upper right side if it appears).
+
+This step validates most of your six Secrets and provides error messages if it detects an issue with one or more.
+
+1. Click on the "Actions" tab of your LoopWorkspace repository and enable workflows if needed
+1. On the left side, select "1. Validate Secrets".
+1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
+1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
+1. The workflow will check if the required secrets are added and that they are correctly formatted. If errors are detected, please check the run log for details.
+
+Until LoopCaregiver is also updated, the instructions for the rest of this page won't include the numbers for the successive steps.
 
 ## Action: Add Identifiers
 
-Near the top middle of your Repository fork, click on the "Actions" tab
+Near the top middle of your Repository fork, click on the "Actions" tab.
 
 * The first time you click on `Actions` with this repository you'll be informed that `Workflows aren't being run on this forked repository`
 * Tap on the green button that says: `I understand my workflows, go ahead and enable them`
