@@ -18,26 +18,25 @@ With Loop 2.2.x - clicking on the Loop icon on the main screen provides an error
 !!! warning "Medtronic Users"
     You must select Insulin Type on your pump settings screen after updating from Loop 2 to Loop 3 and completing the onboarding. Without an insulin type, closed loop will not work.
 
-A Red Loop icon means that Loop has not completed a cycle for 15-minutes or more and this is normally because of a communication break-down with one of the systems listed below. To find out which one, tap on the Red Loop icon, read the message and search this page for that message.
+A Red Loop icon means that Loop has not completed a cycle for 15-minutes or more and this is normally because of a communication break-down with one of the systems listed below.
 
 ## Typical Causes for Red Loop
 
 Some of the reasons listed below cause Loop to go Red and stay Red until you fix it.  Others will cause intermittent Red Loops that come and go.
 
-1. [RileyLink Compatible Device](#rileylink-compatible-device)
-    * With Omnipod DASH, click on the link above and follow the Bluetooth steps
+1. [Reset Loop-to-Pump Communications](#reset-loop-to-pump-communications)
 1. [Continuous Glucose Monitor (CGM)](#cgm-values-are-not-being-collected-by-loop)
 1. [Apple Health](#apple-health)
 1. [Background App Refresh](#background-app-refresh) is not enabled for Phone, Loop and/or CGM
 1. [Nightscout](#nightscout) (optional service)
 1. [Phone Storage is Full](#phone-storage-is-full)
-1. [Lost Pod Information](#lost-pod-information) **Read this section first**
+1. [Lost Pod Information](#lost-pod-information) **If running Loop 2.2.x, read this section first**
 
 ### Lost Pod Information
 
-We think this was fixed with Loop 3. If you are running Loop 2.2.x or FreeAPS, this can happen to you.
+We think this was fixed with Loop 3. If you are running Loop 2.2.x or FreeAPS:
 
-There is a new reason for a red loop that is not well understood.  Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored CGM information as well as the stored pump information.
+* Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored CGM information as well as the stored pump information.
 
 !!! warning "Be Careful with Phone Reboots with Loop 2 or FreeAPS"
 
@@ -46,9 +45,9 @@ There is a new reason for a red loop that is not well understood.  Before attemp
     This could happen to someone using a Medtronic pump, but the consequence is less of a concern because the pump information is not modified as frequently as for Omnipod users.
 
 
-### RileyLink Compatible Device
+### Reset Loop-to-Pump Communications
 
-If the indication is one of these (or something similar), it can probably be fixed by resetting the RileyLink compatible device communication with the phone and pump.
+If the indication is one of these (or something similar), it can probably be fixed by resetting the Loop-to-Pump communication. For DASH, this is Bluetooth only. For Eros or Medtronic, it is a combination of Bluetooth and the RileyLink compatible device.
 
 * pump history is too old
 * no rileylink could be found
@@ -58,7 +57,7 @@ Do these steps until one of them fixes the issue:
 
 * Turn off Bluetooth on your phone and then turn it right back on again.
 * Close your Loop app (upswiping it in the iPhone's app selector) and reopen it.
-* Turn your RileyLink off/on at its physical power switch located on the side of the RileyLink.
+* Eros or Medtronic: Turn your RileyLink off/on at its physical power switch located on the side of the RileyLink.
     * If you have a different device, make sure you know how to power-cycle the device.
     * For RileyLink (without wireless charging) use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a [screaming pod silencer tool](../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod).
 
@@ -66,13 +65,14 @@ Do these steps until one of them fixes the issue:
     ![img/riley-switch.png](img/riley-switch.png){width="300"}
     {align="center"}
 
-This should restore a green Loop within 5 minutes. If you're impatient, you can issue a "Read Pod Status" for Pod or "Change Time" for Medtronic (button press command is not available with v2.2.6). If this is successful, you've established pump communication again.
+This should restore a green Loop within 5 minutes. If you're impatient and are using pods, you can tap on [Play Beeps](../loop-3/omnipod.md#play-beeps). With Medtronic, you can attempt to suspend/resume the pump. If this is successful, you've established communication again.
 
 Last thing to try is:
 
 #### Power cycle your phone.
 
-* This suggestion is last because there has been an issue (with iOS 15) in which power cycling the phone does not load the latest version of Loop information
+* This suggestion is last because of a rare, intermittent issue (with iOS 15 and Loop 2.2.x) in which power cycling the phone does not load the latest version of Loop information
+* This was fixed with Loop 3
 * Click on the [Lost Pod Information](#lost-pod-information) link for more information
 
 If this was not successful, check out the [Pump is Not Responding](#pump-is-not-responding) section.
@@ -146,9 +146,13 @@ Solution: clear up space on your phone.
 
 ### Pump is Not Responding
 
-The obvious fix is to make sure the RileyLink compatible device is not so far away from the pump or pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps.
+The first step is to make sure the phone and if needed, the RileyLink compatible device, is not so far away from the pump or pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps.
 
-**Omnipod Loopers**: Following the steps to [reset the RileyLink / Phone](#rileylink-compatible-device) almost always fixes this issue. There has been one report over the last 3 years where the pod really had stopped communicating, but try everything else before burning another pod.
+**Omnipod Loopers**:
+
+If the pod is screaming, it should still be able to communicate with Loop, but sometimes you need to restore communication so you can deactivate the pod and quiet it. Follow the steps below, just do it with the added "noise".
+
+The [Reset Loop-to-Pump Communications](#reset-loop-to-pump-communications) steps almost always fix the issue. It is possible that the pod really had stopped communicating, but try everything else before burning another pod.
 
 **Medtronic Loopers**: If the pump is not responding with "decoding" errors or various other messages about pump responses. Try the following:
 

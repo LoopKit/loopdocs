@@ -5,10 +5,9 @@ The RileyLink (or compatible device) screen is accessed by clicking on the image
 ![rileylink display with good comms](img/pod-rl-comms-good.svg){width="300"}
 {align="center"}
 
-
 ## Signal Loss
 
-If there is a problem communicating with that RileyLink compatible device, tapping on the line will show out-of-date or missing information. Go to [Troubleshoot: Red Loop: RileyLink Section](../../troubleshooting/yellow-red-loop.md#rileylink-compatible-device) for suggestions.
+If there is a problem communicating with that RileyLink compatible device, tapping on the line will show out-of-date or missing information. Go to [Troubleshoot: Red Loop: Reset Loop-to-Pump Communications](../../troubleshooting/yellow-red-loop.md#reset-loop-to-pump-communications) for suggestions.
 
 With Loop 3
 
