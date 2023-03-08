@@ -64,7 +64,7 @@ The Pod Status screen is shown in the graphic below. The dashed green outline in
 
 ### Play Beeps
 
-If you want to make sure Loop can talk to your pod, click on the sound icon (highlighted by the red box) in the graphic above. If the icon is greyed out - that means Loop is having a communication issue reaching your pod. (More on this in the [Alert Screens](#alert-screens) section.)
+If you want to make sure Loop can talk to your pod, click on the sound icon (highlighted by the red box) in the graphic above. If the icon is greyed out - that means Loop is having a communication issue reaching your pod. Follow the usual [Troubleshoot: Pump is Not Responding](../troubleshooting/yellow-red-loop.md#pump-is-not-responding) steps to resolve this problem.
 
 !!! tip "Other Uses"
     * Find (or startle) your child
