@@ -7,7 +7,7 @@ The Loop user can directly enter carbs and boluses and turn on or off premeal or
 
 There are two screens in the Loop watch app, shown in the bottom half of the graphic above. By swiping left or right, the other screen is displayed. The eventual (predicted) glucose feature, shown on both screens in the graphic can be turned off as a feature in Loop 3, but requires the user to rebuild. It is on by default.
 
-The screen on the left side of the graphic shows Loop status, current glucose, trend arrow and eventual glucose with icons to enable carb entry, bolus entry, premeal and override selection. If necessary, use the crown (or swipe up and down) to see the full display.
+The screen on the left side of the graphic shows Loop status, current glucose, trend arrow and eventual glucose with icons to enable carb entry, bolus entry, pre-meal and override selection. If necessary, use the crown (or swipe up and down) to see the full display.
 
 ### Watch Carb / Bolus Overview
 

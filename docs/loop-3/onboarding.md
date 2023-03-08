@@ -182,7 +182,7 @@ If you ask Loop for a manual [Bolus](../operation/features/bolus.md) recommendat
 
 ### Pre-Meal Range
 
-The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, gives you a small amount of insulin before a meal to help control post-meal glucose spikes. The [pre-meal icon](../operation/features/premeal.md) is inactive if you choose not to enter a range.
+The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, gives you a small amount of insulin before a meal to help control post-meal glucose spikes. The [Pre-Meal icon](../operation/features/premeal.md) is inactive if you choose not to enter a range.
 
 !!! abstract "Example"
     If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you extra insulin to move you towards the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
