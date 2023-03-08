@@ -30,7 +30,7 @@ Some of the reasons listed below cause Loop to go Red and stay Red until you fix
 1. [Background App Refresh](#background-app-refresh) is not enabled for Phone, Loop and/or CGM
 1. [Nightscout](#nightscout) (optional service)
 1. [Phone Storage is Full](#phone-storage-is-full)
-1. [Lost Pod Information](#lost-pod-information) **If running Loop 2.2.x, read this section first**
+1. [Lost Pod Information](#lost-pod-information) **If running Loop 2.2.x or FreeAPS, read this section first**
 
 ### Lost Pod Information
 
