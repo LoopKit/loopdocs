@@ -1654,8 +1654,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rileylink-compatible-device" class="md-nav__link">
-    RileyLink Compatible Device
+  <a href="#reset-loop-to-pump-communications" class="md-nav__link">
+    Reset Loop-to-Pump Communications
   </a>
   
 </li>
@@ -2344,8 +2344,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rileylink-compatible-device" class="md-nav__link">
-    RileyLink Compatible Device
+  <a href="#reset-loop-to-pump-communications" class="md-nav__link">
+    Reset Loop-to-Pump Communications
   </a>
   
 </li>
@@ -2492,31 +2492,30 @@
 <p class="admonition-title">Medtronic Users</p>
 <p>You must select Insulin Type on your pump settings screen after updating from Loop 2 to <abbr title="Latest release with major updates">Loop 3</abbr> and completing the onboarding. Without an insulin type, closed loop will not work.</p>
 </div>
-<p>A Red Loop icon means that Loop has not completed a cycle for 15-minutes or more and this is normally because of a communication break-down with one of the systems listed below. To find out which one, tap on the Red Loop icon, read the message and search this page for that message.</p>
+<p>A Red Loop icon means that Loop has not completed a cycle for 15-minutes or more and this is normally because of a communication break-down with one of the systems listed below.</p>
 <h2 id="typical-causes-for-red-loop">Typical Causes for Red Loop<a class="headerlink" href="#typical-causes-for-red-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Some of the reasons listed below cause Loop to go Red and stay Red until you fix it.  Others will cause intermittent Red Loops that come and go.</p>
 <ol>
-<li><a href="#rileylink-compatible-device"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device</a><ul>
-<li>With <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH, click on the link above and follow the Bluetooth steps</li>
-</ul>
-</li>
+<li><a href="#reset-loop-to-pump-communications">Reset Loop-to-Pump Communications</a></li>
 <li><a href="#cgm-values-are-not-being-collected-by-loop">Continuous Glucose Monitor (<abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>)</a></li>
 <li><a href="#apple-health">Apple Health</a></li>
 <li><a href="#background-app-refresh">Background App Refresh</a> is not enabled for Phone, Loop and/or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></li>
 <li><a href="#nightscout">Nightscout</a> (optional service)</li>
 <li><a href="#phone-storage-is-full">Phone Storage is Full</a></li>
-<li><a href="#lost-pod-information">Lost Pod Information</a> <strong>Read this section first</strong></li>
+<li><a href="#lost-pod-information">Lost Pod Information</a> <strong>If running Loop 2.2.x or FreeAPS, read this section first</strong></li>
 </ol>
 <h3 id="lost-pod-information">Lost Pod Information<a class="headerlink" href="#lost-pod-information" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>We think this was fixed with <abbr title="Latest release with major updates">Loop 3</abbr>. If you are running Loop 2.2.x or FreeAPS, this can happen to you.</p>
-<p>There is a new reason for a red loop that is not well understood.  Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> information as well as the stored pump information.</p>
+<p>We think this was fixed with <abbr title="Latest release with major updates">Loop 3</abbr>. If you are running Loop 2.2.x or FreeAPS:</p>
+<ul>
+<li>Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> information as well as the stored pump information.</li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Be Careful with Phone Reboots with Loop 2 or FreeAPS</p>
 <p>If you are using an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>, then before rebooting the phone, make sure it is absolutely necessary - try all other methods first. Be prepared to check that the pod is still communicating with Loop following the reboot. If this rare event happens to you, please report it, save and post a Loop Report and be prepared to put on a new pod and possibly re-enter your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> information.</p>
 <p>This could happen to someone using a Medtronic pump, but the consequence is less of a concern because the pump information is not modified as frequently as for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> users.</p>
 </div>
-<h3 id="rileylink-compatible-device"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> Compatible Device<a class="headerlink" href="#rileylink-compatible-device" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If the indication is one of these (or something similar), it can probably be fixed by resetting the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device communication with the phone and pump.</p>
+<h3 id="reset-loop-to-pump-communications">Reset Loop-to-Pump Communications<a class="headerlink" href="#reset-loop-to-pump-communications" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If the indication is one of these (or something similar), it can probably be fixed by resetting the Loop-to-Pump communication. For DASH, this is Bluetooth only. For Eros or Medtronic, it is a combination of Bluetooth and the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device.</p>
 <ul>
 <li>pump history is too old</li>
 <li>no rileylink could be found</li>
@@ -2527,7 +2526,7 @@
 <li>Turn off Bluetooth on your phone and then turn it right back on again.</li>
 <li>Close your Loop app (upswiping it in the iPhone's app selector) and reopen it.</li>
 <li>
-<p>Turn your <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> off/on at its physical power switch located on the side of the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>.</p>
+<p>Eros or Medtronic: Turn your <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> off/on at its physical power switch located on the side of the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr>.</p>
 <ul>
 <li>If you have a different device, make sure you know how to power-cycle the device.</li>
 <li>For <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> (without wireless charging) use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a <a href="../../faqs/omnipod-faqs/#what-do-you-do-to-stop-a-screaming-pod">screaming pod silencer tool</a>.</li>
@@ -2535,11 +2534,12 @@
 <p align="center"><img alt="img/riley-switch.png" src="../img/riley-switch.png" width="300" /></p>
 </li>
 </ul>
-<p>This should restore a green Loop within 5 minutes. If you're impatient, you can issue a "Read Pod Status" for Pod or "Change Time" for Medtronic (button press command is not available with v2.2.6). If this is successful, you've established pump communication again.</p>
+<p>This should restore a green Loop within 5 minutes. If you're impatient and are using pods, you can tap on <a href="../../loop-3/omnipod/#play-beeps">Play Beeps</a>. With Medtronic, you can attempt to suspend/resume the pump. If this is successful, you've established communication again.</p>
 <p>Last thing to try is:</p>
 <h4 id="power-cycle-your-phone">Power cycle your phone.<a class="headerlink" href="#power-cycle-your-phone" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
-<li>This suggestion is last because there has been an issue (with <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15) in which power cycling the phone does not load the latest version of Loop information</li>
+<li>This suggestion is last because of a rare, intermittent issue (with <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 and Loop 2.2.x) in which power cycling the phone does not load the latest version of Loop information</li>
+<li>This was fixed with <abbr title="Latest release with major updates">Loop 3</abbr></li>
 <li>Click on the <a href="#lost-pod-information">Lost Pod Information</a> link for more information</li>
 </ul>
 <p>If this was not successful, check out the <a href="#pump-is-not-responding">Pump is Not Responding</a> section.</p>
@@ -2591,8 +2591,10 @@
 <p>Solution: clear up space on your phone.</p>
 <h2 id="other-reasons-for-red-loop">Other Reasons for Red Loop<a class="headerlink" href="#other-reasons-for-red-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="pump-is-not-responding">Pump is Not Responding<a class="headerlink" href="#pump-is-not-responding" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The obvious fix is to make sure the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device is not so far away from the pump or pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps.</p>
-<p><strong><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Loopers</strong>: Following the steps to <a href="#rileylink-compatible-device">reset the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> / Phone</a> almost always fixes this issue. There has been one report over the last 3 years where the pod really had stopped communicating, but try everything else before burning another pod.</p>
+<p>The first step is to make sure the phone and if needed, the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device, is not so far away from the pump or pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps.</p>
+<p><strong><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Loopers</strong>:</p>
+<p>If the pod is screaming, it should still be able to communicate with Loop, but sometimes you need to restore communication so you can deactivate the pod and quiet it. Follow the steps below, just do it with the added "noise".</p>
+<p>The <a href="#reset-loop-to-pump-communications">Reset Loop-to-Pump Communications</a> steps almost always fix the issue. It is possible that the pod really had stopped communicating, but try everything else before burning another pod.</p>
 <p><strong>Medtronic Loopers</strong>: If the pump is not responding with "decoding" errors or various other messages about pump responses. Try the following:</p>
 <ol>
 <li>Change pump battery. Low pump battery will cause radio communications to fail.</li>
