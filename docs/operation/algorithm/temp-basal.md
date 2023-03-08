@@ -16,7 +16,7 @@ If the Looper has selected Automatic Bolus Dosing Strategy and an increase in in
 
 If glucose is entirely below the correction range but above glucose safety level, no automatic increase in insulin delivery will be enacted. The Looper can tap on the manual bolus tool and get a recommendation, but no automatic bolus or high temp basal will be issued automatically until the glucose level is higher than the minimum value of the correction range.
 
-The premeal button or a named override can be configured with a correction range lower than the scheduled correction to assist in getting insulin delivered automatically after meals.
+The Pre-Meal button or a named override can be configured with a correction range lower than the scheduled correction to assist in getting insulin delivered automatically after meals.
 
 ## Four Possible Actions
 

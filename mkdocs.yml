@@ -44,6 +44,7 @@ markdown_extensions:
     - attr_list
     - pymdownx.arithmatex:
           generic: true
+    - pymdownx.emoji
     - pymdownx.highlight
     - pymdownx.inlinehilite
     - pymdownx.keys
@@ -130,9 +131,9 @@ nav:
     - 'Overrides': 'operation/features/workout.md'
     - 'Apple Watch': 'operation/features/watch.md'
     - 'Loop Notifications': 'operation/features/notifications.md'
-    - 'Pre-meal target': 'operation/features/premeal.md'
-    - 'Using ICE info': 'operation/features/ice.md'
-    - 'iPhone widget': 'operation/features/widget.md'
+    - 'Pre-Meal Target': 'operation/features/premeal.md'
+    - 'Using ICE Info': 'operation/features/ice.md'
+    - 'iPhone Widget': 'operation/features/widget.md'
     - Loop Tips: 'operation/loop/looptips.md'
     - Algorithm:
         - 'Algorithm Overview': 'operation/algorithm/overview.md'
@@ -141,7 +142,7 @@ nav:
         - 'Automated Adjustments': 'operation/algorithm/temp-basal.md'
 - Troubleshoot:
     - 'Troubleshooting Overview': 'troubleshooting/overview.md'
-    - 'Loop App crashes': 'troubleshooting/loop-crashing.md'
+    - 'Loop App Crashes': 'troubleshooting/loop-crashing.md'
     - 'Red Loop': 'troubleshooting/yellow-red-loop.md'
     - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
     - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
@@ -150,7 +151,7 @@ nav:
 - 'Version':
     - 'Version Overview': 'version/overview-version.md'
     - 'Loop Releases': 'version/releases.md'
-    - 'Customize your Loop': 'build/code_customization.md'
+    - 'Customize Your Loop': 'build/code_customization.md'
     - 'Simulator Build': 'version/simulator.md'
     - 'Loop Development': 'version/development.md'
     - 'Build Loop Dev': 'version/build-dev.md'

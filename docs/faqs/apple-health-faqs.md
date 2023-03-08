@@ -9,13 +9,13 @@ It is important that permissions for Loop be properly configured for the Health 
 
 To view the list of data stored in Health
 
-* Tap on the Health icon (red heart) to open the app
+* Tap on the Health :heart: icon to open the app
 * Tap on Blood Glucose, Carbohydrates or Insulin
 * Scroll all the way to the bottom
 * Tap on Show All Data
 
 !!! example "To Set Blood Glucose, Carbohydrates and Insulin as Favorites"
-    * Tap on the Health icon (red heart) to open the app
+    * Tap on the Health :heart: icon to open the app
     * There's a toolbar at the bottom of the screen (always visible in the app)
     * Tap on the Browse icon (bottom right of toolbar)
     * Tap on
@@ -130,7 +130,7 @@ If you have a [Tidepool](https://tidepool.org) account and use the Tidepool uplo
 
 You can review the Apple HealthKit permissions screen at any time.  
 
-Simply open the Apple Health app (the red heart)
+Simply open the Apple Health app (:heart: icon)
 
 * Find the toolbar at the bottom that says Sharing
 * Scroll to the bottom of Sharing
