@@ -2,14 +2,14 @@
 
 Yes.
 
-## Which pods will work with Loop?
+## Which pods work with Loop?
 
-You can use some Omnipod pumps with Loop. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
+You can use some Omnipod pods with Loop. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
 
 Check your app version by tapping on Loop settings and reading it from the top of the screen.
 
+* Version 2.3 or newer supports Omnipod Eros and DASH pumps (and some older Medtronic pumps)
 * Version 2.2.x or earlier supports Omnipod Eros pumps (and some older Medtronic pumps)
-* Version 2.3 or later supports Omnipod Eros and DASH pumps (and some older Medtronic pumps)
 
 DASH pumps do not require a RileyLink compatible device.
 
@@ -17,9 +17,14 @@ Omnipod 5 is not supported by any version of Loop.
 
 ## What about Tidepool Loop?
 
-Tidepool is working to bring [DIY Loop through the FDA regulatory process](https://tidepool.org/blog/tidepool-delivering-loop) and Insulet has been announced as the [first pump partner for that project](https://diatribe.org/omnipod-first-insulin-pump-partner-tidepool-loop). Tidepool Loop is being developed to work with a future version of the Omnipod system, no RileyLink required. Tidepool Loop was first [submitted to the FDA in December 2020](https://www.tidepool.org/blog/99-years-closer-about-our-fda-submission-of-tidepool-loop). 
+Tidepool Loop was approved by the FDA in Jan 2023, but at the current time there are no announced pump or CGM partners. What does this mean?
 
-If you would like to stay informed about Tidepool Loop progress, you can fill out an interest form [here](https://www.tidepool.org/loop-interest-form).
+Tidepool Loop, cleared by the FDA, is the first:
+
+* App that provides automated insulin dosing **and** is configured to be fully interoperable with pump and CGM partners
+* App that originated as a patient-led intiative
+
+With this approval, there is now an FDA approved pathway for independent selection of an app, a pump and a CGM. Stay tuned for updates at [https://tidepool.org/tidepool-loop](https://tidepool.org/tidepool-loop).
 
 ## Do I still need a PDM with Omnipod Loop?
 
@@ -29,7 +34,7 @@ No, pods are monogamous little creatures. They will pair with only one device at
 
 Yes, you can cancel a bolus in progress. In fact, because it is very easy to cancel, make sure your phone is locked prior to being put away to avoid inadvertently cancelling a bolus. (This behavior is very similar to the Insulet PDM - which also needs to be locked once a bolus has started.)
 
-As soon as a bolus is initiated, look at your phone in portrait orientation.  You will see a bolus message indicating the progress of the bolus. This message is highlighted with a red rectangle in the graphic below. If you tap on this part of the display, the bolus is immediately cancelled.  (This graphic of the Loop display is from Loop 3.  If you are on Loop v2.2.x, the bolus in progress message looks and behaves the same.)
+As soon as a bolus is initiated, look at your phone in portrait orientation.  You will see a bolus message indicating the progress of the bolus. This message is highlighted with a red rectangle in the graphic below. If you tap on this part of the display, the bolus is immediately cancelled.
 
 * The displayed amount `Bolused` is based on the time since the bolus was started
 * Loop will present that graphic for the entire time the bolus is in progress with the delivery amount updated based on time
@@ -38,33 +43,32 @@ As soon as a bolus is initiated, look at your phone in portrait orientation.  Yo
 ![graphic showing the bolus in progress - tap to cancel display](img/cancel-bolus.svg){width="300"}
 {align="center"}
 
-
 ## Can I cancel a temp basal?
+
+### Cancel Temp Basal with Loop 3
+
+With Loop 3, disabling the setting for Closed Loop immediately restores the basal rate on the pump to the scheduled basal rate, which effectively cancels the temp basal.
+
+You can tap on disable Closed Loop and then immediately tap on enable Closed Loop if all you want to do is cancel the current temp basal. If you do restore Closed Loop, then Loop will resume automatic insulin delivery adjustments within 5 minutes.
+
+!!! tip "Bolus in progress"
+    Even if a bolus is in progress, you can still switch to Open Loop and restore scheduled basal. The current bolus continues unless you separately cancel the bolus.
 
 ### Cancel Temp Basal with Loop v2.2.x
 
-If you are running Loop v2.2.x, the method for canceling a temp basal is to [suspend the pump and then resume delivery](../operation/loop-settings/pump-commands.md#suspend-delivery).
+If you are running Loop v2.2.x, the method for canceling a temp basal is to [suspend the pump and then resume delivery](../operation/loop-settings/pump-commands.md#suspend-delivery). This also interrupts any bolus that might be in progress.
 
-Be sure to follow the suspend with the resume command. Otherwise, all insulin delivery is stopped and remains stopped until the user either clicks on the "Tap to Resume" command from the main screen or the "resume delivery" command accessed in the pump settings display. The resume insulin delivery command returns insulin delivery to your scheduled basal rate. 
+Be sure to follow the suspend with the resume command. Otherwise, all insulin delivery is stopped and remains stopped until the user either clicks on the "Tap to Resume" command from the main screen or the "resume delivery" command accessed in the pump settings display. The resume insulin delivery command returns insulin delivery to your scheduled basal rate.
 
 If a bolus was interrupted, the bolus will not resume.
 
 As long as you are in closed loop mode, Loop will resume automatic insulin delivery adjustments within 5 minutes.
 
-### Cancel Temp Basal with Loop 3
+## Can I set my own temp basal on Loop?
 
-With Loop 3, disabling the setting for Closed Loop also changes the basal rate on the pump to the scheduled basal rate, which effectively cancels the temp basal.
+Loop 3 provides a [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) feature.
 
-!!! warning "Bolus in progress"
-    If a bolus is in progress when switching to Open Loop, any active Temp Basal continues until it would expire naturally, unless the user takes further action.
-
-## Can I prime or set my own temp basal on Loop?
-
-Loop 2.2.x does not allow you to pick your own temp basal rate or prime insulin (a Medtronic pump trick for adding extra insulin that Loop does not add to IOB).
-
-If you find yourself in a situation where you would like to specify an exact temp basal rate of your own, you would need to (1) change your scheduled basal rate for the time(s) that you'd like that basal rate, (2) cancel any currently running temp basal that Loop has running) and (3) disable Closed Loop in Loop Settings so that you are running in "open loop" mode for the duration of the time you want to use that specific basal rate.
-
-A [manual temp basal feature](../loop-3/omnipod.md#manual-temp-basal) will be available when the development branch is released as Loop 3.
+Loop 2.2.x does not allow you to pick your own temp basal rate.
 
 ## What if I lose my phone or RileyLink?
 
@@ -85,8 +89,8 @@ There is more communication between the pod and the controller (your Loop phone)
 * Keep your Loop app in the background or your phone locked when possible
     * This protects against accidentally issuing a command
     * When phone is unlocked and Loop is in the foreground:
+        * Loop 3 updates the pod state every 30 sec (DASH) or 60 sec (Eros) in the foreground, compared to every 3 (DASH) or 5 (Eros) minutes in the background
         * Loop 2.2.x updates the pod state when CGM updates (approximately 5 minutes) - same as when app is in the background
-        * Loop 3 updates the pod state every 30 sec in the foreground, every 3 to 5 minutes in the background
     * Use an alternate display method such as [Nightscout](../nightscout/overview.md) or [Loop Follow](../nightscout/ns_crossref.md#loop-follow) instead of keeping the Loopers phone unlocked with Loop app open
 
 ## What do I do if a pod fails to pair?
