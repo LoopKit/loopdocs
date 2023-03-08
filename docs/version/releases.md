@@ -21,18 +21,23 @@ Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your 
 
 The current released version for Loop main is v3.0.0. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
 
-!!! warning "Check Current Release Status"
+!!! warning "Apple Health Glitch"
+    With Loop 3.0.0 and iOS 16.2 or newer, some people experience the Loop app crashing following build or iOS update.
 
-    Release information is always found on the [GitHub LoopKit/Loop release page](https://github.com/LoopKit/Loop/releases). The information on this LoopDocs page is a summary of that information with a little extra explanation.
+    Follow directions at [Apple Health Glitch](../troubleshooting/loop-crashing.md#apple-health-glitch) to resolve the issue.
 
-    Be aware that updates to LoopDocs may take some time after a new release comes out.
+### What Version Do I Have?
+
+Tap on the Settings icon at the bottom of the Loop app main screen and look at the version information at upper left. This graphic was generated with an older version, Loop 2.2.8.
     
-!!! info "How do I Know What Version I Have?"
+![Determine current app version on app settings screen](img/app-version.svg){width="400"}
+{align="center"}
 
-    Tap on the Settings icon at the bottom of the Loop app main screen and look at the version information at upper left. This graphic was generated with an older version, Loop 2.2.8.
-    
-    ![Determine current app version on app settings screen](img/app-version.svg){width="400"}
-    {align="center"}
+### Is the Released Version Newer?
+
+Release information is always found on the [GitHub LoopKit/Loop release page](https://github.com/LoopKit/Loop/releases). The information on this LoopDocs page is a summary of that information with a little extra explanation.
+
+Be aware that updates to LoopDocs may take some time after a new release comes out.
 
 ## Loop 3 Version History
 
@@ -70,7 +75,6 @@ If you tried to delete "all" the apps and still have something causing an issue;
 
 You do not need to delete Loop Follow, so if you use Loop Follow - do not delete that provisioning profile.
 
-
 ## Loop 2 Version History
 
 ### Loop v2.2.9
@@ -78,7 +82,6 @@ You do not need to delete Loop Follow, so if you use Loop Follow - do not delete
 This release updates Loop to handle Dexcom Share server changes for how glucose trend is parsed. Dexcom used to provide integers that mapped to the meaning for the arrows.  They changed that to strings, like "Flat" or "FortyFiveUp".
 
 Loop v2.2.9 was released on April 4, 2022.
-
 
 ### Loop v2.2.8
 
@@ -103,7 +106,6 @@ The issue appears to be the result of a failure to write to Apple HealthKit, whi
 Thanks to all who helped with reporting, digging, and testing this quickly. It's great to have such a strong community of people eager to help.
 
 Loop v2.2.6 was released on September 6, 2021.
-
 
 ### Loop v2.2.5
 
@@ -163,7 +165,6 @@ Dexcom Non-US Share:
 
 For community support, please use one of the [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) help sites.
 
-
 ### Loop v2.2.4
 
 Released October 3, 2020 with "fixes" introduced without renumbering the version number. Last change was on January 19, 2021.
@@ -209,7 +210,6 @@ Released August 9, 2020
 * Minimed updates:
     * Detect temp basal cancellation performed on pump
 
-
 ### Loop v2.2
 
 Released April 17, 2020
@@ -245,8 +245,6 @@ Loop v2.0 has an option to upload your BG data to Nightscout directly. It is a n
 #### A fix for settings loss
 
 iOS 13 brought about a quirky little bug where you could suddenly lose settings in Loop. But, it wasn't just limited to Loop, sometimes people lost Dexcom app settings too. The issue is most common when the phone goes through a power cycle, but it has happened at other times, too. There's a fix for that new bug in Loop now...so that's a good reason to update. (If you encounter that bug before you have a chance to update your Loop app, simply restart the Loop app and your settings should reappear.)
-
-
 
 #### Confirmation beeps expanded
 
