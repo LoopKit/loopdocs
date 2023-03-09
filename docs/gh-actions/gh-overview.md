@@ -24,11 +24,8 @@ The customization process is more involved. One set of commonly requested custom
 
 * Stick with Mac-Xcode build (for now) if you want to do your own customizations
     * You can still use [TestFlight with your Mac-Xcode build](../build/testflight-xcode.md)
-* There are no instructions for applying customizations
-    * Hints:
-    * You need to make a fork for every submodule you want to customize
-    * You need to update your LoopWorkspace Fork to point to your submodule forks
-    * You are responsible for keeping those forks up to date
+* If you still want customizations and don't have a Mac/Xcode system that allows you to customize, there are now instructions at Browser Build  [Customize with GitHub](../gh-actions/gh-customize.md)
+    * These instructions are for released code
 
 ## Requirements
 

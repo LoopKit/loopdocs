@@ -2,7 +2,7 @@
 
 **The customizations on this page assume the [Mac-Xcode Build](../build/overview.md) method**
 
-**Detailed instructions for making your own customizations for GitHub [Browser Build](../gh-actions/gh-overview.md) are not included in LoopDocs.**
+**Detailed instructions for making your own customizations for Browser Build  [Customize with GitHub](../gh-actions/gh-customize.md) are on a different page in LoopDocs - you'll need to switch back and forth between the two pages.**
 
 * To make customizations with the GitHub method requires you to make your own fork for any module you want to modify, commit changes to your fork, and then point your fork of LoopWorkspace to the modified modules in your GitHub account
 * One set of commonly requested customizations is available as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)

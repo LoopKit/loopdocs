@@ -152,6 +152,7 @@ nav:
     - 'Version Overview': 'version/overview-version.md'
     - 'Loop Releases': 'version/releases.md'
     - 'Customize Your Loop': 'build/code_customization.md'
+    - 'Customize with GitHub': 'gh-actions/gh-customize.md'
     - 'Simulator Build': 'version/simulator.md'
     - 'Loop Development': 'version/development.md'
     - 'Build Loop Dev': 'version/build-dev.md'
