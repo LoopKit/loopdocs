@@ -156,7 +156,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 
 ### Omnipod Eros
 
-Eros pods were launched in 2013 and continue to be sold by Insulet. Insulet has announced they will stop providing Eros pods in the US in Decemeber 2023. As far as we know, there are no timelines announced for the discontinuation of Eros pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "omnipod system". For clarity, from [Insulet's webpage](https://www.myomnipod.com/about):
+Eros pods were launched in 2013 and continue to be sold by Insulet. Insulet has announced they will stop providing Eros pods in the US in December 2023. As far as we know, there are no timelines announced for the discontinuation of Eros pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "omnipod system". For clarity, from [Insulet's webpage](https://www.myomnipod.com/about):
 
 Eros system has a big PDM that does not look like a phone.
 
