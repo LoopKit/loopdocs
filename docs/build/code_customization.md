@@ -846,19 +846,60 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
 } else if let lastLoopCompleted = self.lastLoopCompleted {
 ```
 
+## Limit Loop to 5-minute Cycle
+
+Loop 3 enables higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates.
+
+This modification limits the period for Loop cycles to 4.8 minutes or longer.
+
+!!! warning "Meant for Libre Users"
+    This customization is suggested for Libre Users who need to limit how frequently Loop modifies dosing commands to preserve pod batteries.
+
+    The Loop 3 code was modified when adding support for DASH pods. The DASH pods have a 3-minute heartbeat and it was discovered that with Dexcom (5-minute update rate) and DASH, the Loop could switch to a DASH heartbeat and not be triggered by the next CGM reading. Loop works much better when each Loop cycle is triggered by the CGM.
+
+    The preferred solution is to have the CGM manager decide when to send updated glucose values to Loop.
+
+
+``` { .txt .copy title="Key_Phrase" }
+let timeSinceLastLoop
+```
+
+* Folder: Loop/Loop/Managers/
+* File: LoopDataManager.swift, Line: 821 (main), 840 (dev)
+
+The Key_Phrase identifies the line where you will insert new code.
+
+_Code Before Modification_
+
+```
+if let lastLoopCompleted = self.lastLoopCompleted {
+```
+
+You can copy the lines below and replace the one line above with this new code.
+
+_Code After Modification_
+
+``` { .txt .copy }
+// Limit Loop frequency to 4.8 minutes
+if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(lastLoopCompleted) < TimeInterval(minutes: 4.8) {
+    self.logger.default("Skipping loop() attempt as last loop completed at %{public}@", String(describing: lastLoopCompleted))
+    return
+} else if let lastLoopCompleted = self.lastLoopCompleted {
+```
+
 ## Limit Loop HUD Update
 
-Loop 3 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (HUD).
+Loop 3.0 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (HUD). This was removed after users reported an increase in pod faults. If you are running Loop 3.0 and want to limit the refresh rate, use this customization. This refresh timer will not be present in Loop 3.2, once that is released, and is not in the current version of Loop 3.1 (dev branch).
 
 When the app is open, the HUD is updated using this refresh timer:
 
 * Omnipod DASH: 30 second
 * Omnipod Eros: 60 second
 
-If you prefer to leave your app open with phone unlocked and plugged in over night, you might want to modify the refreshTimer selection for DASH pods. When modifying this value during testing, values greater than 60 seconds had no effect on the cadence of sending status update requests to the pod. Other code must be triggering the update to be a minimum 60 sec cadence when app is open. For that reason, no information is provided for Eros pods, which are already configured for 60 seconds.
+If you are running Loop 3.0.0 and prefer to leave your app open with phone unlocked and plugged in over night, you might want to modify the refreshTimer selection for your type of Omnipod.
 
 ``` { .txt .copy title="Key_Phrase" }
-refreshTimer = Timer(timeInterval: .seconds(30)
+refreshTimer = Timer(timeInterval: .seconds
 ```
 
 * DASH Modification
@@ -871,10 +912,14 @@ _Code Before Modification (DASH)_
 refreshTimer = Timer(timeInterval: .seconds(30) , repeats: true) { [weak self] _ in
 ```
 
-_Code After Modification (DASH)_
+* Eros Modification
+    * Folder: rileylink_ios/OmniKitUI/PumpManager
+    * File: OmnipodHUDProvider.swift, Line: 138
 
-``` { .txt .copy }
+_Code Before Modification (Eros)_
+
+```
 refreshTimer = Timer(timeInterval: .seconds(60) , repeats: true) { [weak self] _ in
 ```
 
-This will limit the update refresh to 60 seconds for DASH pods. It might have no effect, but can be adjusted if DASH pods are ending with faults before the 80 hour pod life.
+The value you enter in seconds is how frequently the HUD updates when the app is open. Note that values greater than 180 seconds for DASH or 300 seconds for Eros will have no effect. That is the minimum time between communication cycles for those pods.
