@@ -341,6 +341,19 @@ There are 2 main ways to do this.
 ![img/gitmodules.png](img/gitmodules.png){width="750"}
 {align="center"}
 
+### Branch Tutorial
+
+This tutorial is pretty nice.
+
+!!! tip "Git Tutorial"
+    When I first started using git, my adult son answered a my questions very politely then started sending me links to this tutorial instead.
+
+    [Learn Git Branching](https://learngitbranching.js.org/)
+
+    There's a section called `Main` which goes over commands in your local copy (clone) of the code. There's a section called `Remote` that goes over fetching, pulling and pushing to remote copies.
+
+    For Open Source Software, you might fetch and pull from the master copy, but you will only push to your copy of the fork.
+
 ## Non-LoopKit clones
 
 !!! info "Average Loopers can skip this whole section...it's for Developers mostly"
