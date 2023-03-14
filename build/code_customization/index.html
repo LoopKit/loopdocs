@@ -2038,15 +2038,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#limit-loop-to-5-minute-cycle" class="md-nav__link">
-    Limit Loop to 5-minute Cycle
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#limit-loop-to-5-minute-cycle_1" class="md-nav__link">
-    Limit Loop to 5-minute Cycle
+  <a href="#limit-loop-for-faster-cgm" class="md-nav__link">
+    Limit Loop for Faster CGM
   </a>
   
 </li>
@@ -2752,15 +2745,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#limit-loop-to-5-minute-cycle" class="md-nav__link">
-    Limit Loop to 5-minute Cycle
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#limit-loop-to-5-minute-cycle_1" class="md-nav__link">
-    Limit Loop to 5-minute Cycle
+  <a href="#limit-loop-for-faster-cgm" class="md-nav__link">
+    Limit Loop for Faster CGM
   </a>
   
 </li>
@@ -3530,34 +3516,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </ul>
 </li>
 </ul>
-<h2 id="limit-loop-to-5-minute-cycle">Limit Loop to 5-minute Cycle<a class="headerlink" href="#limit-loop-to-5-minute-cycle" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><abbr title="Latest release with major updates">Loop 3</abbr> enables higher rates of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates.</p>
-<p>This modification limits the period for Loop cycles to 4.8 minutes or longer.</p>
-<div class="admonition warning">
-<p class="admonition-title">Meant for Libre Users</p>
-<p>This customization is suggested for Libre Users who need to limit how frequently Loop modifies dosing commands to preserve pod batteries.</p>
-<p>The <abbr title="Latest release with major updates">Loop 3</abbr> code was modified when adding support for DASH pods. The DASH pods have a 3-minute heartbeat and it was discovered that with Dexcom (5-minute update rate) and DASH, the Loop could switch to a DASH heartbeat and not be triggered by the next <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading. Loop works much better when each Loop cycle is triggered by the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>.</p>
-<p>The preferred solution is to have the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> manager decide when to send updated glucose values to Loop.</p>
-</div>
-<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let timeSinceLastLoop
-</code></pre></div>
-<ul>
-<li>Folder: Loop/Loop/Managers/</li>
-<li>File: LoopDataManager.swift, Line: 821 (main), 840 (dev)</li>
-</ul>
-<p>The Key_Phrase identifies the line where you will insert new code.</p>
-<p><em>Code Before Modification</em></p>
-<div class="highlight"><pre><span></span><code>if let lastLoopCompleted = self.lastLoopCompleted {
-</code></pre></div>
-<p>You can copy the lines below and replace the one line above with this new code.</p>
-<p><em>Code After Modification</em></p>
-<div class="copy highlight"><pre><span></span><code>// Limit Loop frequency to 4.8 minutes
-if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(lastLoopCompleted) &lt; TimeInterval(minutes: 4.8) {
-    self.logger.default(&quot;Skipping loop() attempt as last loop completed at %{public}@&quot;, String(describing: lastLoopCompleted))
-    return
-} else if let lastLoopCompleted = self.lastLoopCompleted {
-</code></pre></div>
-<h2 id="limit-loop-to-5-minute-cycle_1">Limit Loop to 5-minute Cycle<a class="headerlink" href="#limit-loop-to-5-minute-cycle_1" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="limit-loop-for-faster-cgm">Limit Loop for Faster <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#limit-loop-for-faster-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><abbr title="Latest release with major updates">Loop 3</abbr> enables higher rates of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates.</p>
 <p>This modification limits the period for Loop cycles to 4.8 minutes or longer.</p>
 <div class="admonition warning">
