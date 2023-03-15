@@ -19,6 +19,11 @@ Based on Loop users’ experience, there are some common customizations document
 
 Refer to the graphic below.  The Downloads folder in Finder is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom.
 
+!!! success "Loop to LoopWorkspace in dev"
+    Note that the directory `Loop.xcworkspace` has been renamed to `LoopWorkspace.xcworkspace` in the dev branch. This change makes LoopWorkspace the default target to simplify the build process.
+
+    The words will be updated with the next release. It may take more time for the figures to be updated.
+
 * Open Finder
 * Navigate to Downloads/BuildLoop and look for your download by name and date
 * Open that folder, for example, Downloads/BuildLoop/Loop-220803-1145, and inside that folder open the LoopWorkspace folder
