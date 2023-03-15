@@ -1,12 +1,18 @@
 ## Code Customizations
 
-**The customizations on this page assume the [Mac-Xcode Build](../build/overview.md) method**
+### Mac/Xcode
 
-**Detailed instructions for making your own customizations for Browser Build  [Customize with GitHub](../gh-actions/gh-customize.md) are on a different page in LoopDocs - you'll need to switch back and forth between the two pages.**
+The customization instructions on this page were written for the [Mac-Xcode Build](../build/overview.md) method.
 
-* To make customizations with the GitHub method requires you to make your own fork for any module you want to modify, commit changes to your fork, and then point your fork of LoopWorkspace to the modified modules in your GitHub account
+### Browser Build
+
+The same `Key_Phrase` concept for finding lines to modify is used for the GitHub Browser Build method.
+
+* The instructions provided on the [Customize with GitHub](../gh-actions/gh-customize.md) page have you make your own fork for any module you want to modify, commit changes to your fork, and then point your fork of LoopWorkspace to the modified modules in your GitHub account
+    * There are several other ways to do customizations, but this method can be done using just a browser - no cloning of the LoopWorkspace is required
+    * You may want to have this page and that page open in two windows for easy reference
 * One set of commonly requested customizations is available as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
-* If you used the LnL patched code - you will need to use special instruction to add more customizations. That document is not available at this time.
+    * If you used the LnL patched code - and want to add more customizations with the GitHub build method, you will need to use special instructions. That document is not available at this time.
 
 ## Build then Customize
 
@@ -386,6 +392,7 @@ This code change is found in one location for Eros Pods (called Omnipod througho
 ``` { .txt .copy title="Key_Phrase" }
 let cannulaInsertionUnitsExtra
 ```
+
 * Module: OmniBLE (DASH) or rileylink_iod (Eros)
 * DASH or Eros Pod (Loop 3 only)
     * Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)
@@ -687,6 +694,9 @@ This Loop 3 table of default values is provided for convenience. The times are a
 
 ## Loop Logo
 
+!!! warning "Mac/Xcode Instructions"
+    This can be done with GitHub but the instructions might need to be adjusted for that case.
+
 If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/) or [appicon.co](https://appicon.co/) and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file
 
 Use Finder to Navigate to the LoopWorkspace folder. These instructions assume you used the Build Select Script - if your files are in a different folder, make the appropriate adjustment.
@@ -761,6 +771,9 @@ If you are using a development branch of Loop, you need the dev branch of LoopPa
 Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop 3.
 
 The CustomTypeOne LoopPatches are included in [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches).
+
+!!! warning "GitHub Browser Build"
+    Use the single curl line for Loop or LoopKit in the terminal window for Codespaces to apply this customization for a given module.
 
 ### Add Libre App to Loop Phone
 

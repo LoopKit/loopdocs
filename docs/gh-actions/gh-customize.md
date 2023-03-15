@@ -1,8 +1,33 @@
+## Overview
+
+!!! info "Time Estimate"
+    * About half an hour to an hour per Module
+        * Typically 1 or 2 Modules
+    * Ten minutes to configure your LoopWorkspace branch
+    * One minute to start the build
+    * An hour before the TestFlight build shows up on your phone
+
+!!! abstract "Summary"
+    * LoopDocs: Decide on Modules to modify [Code Customization](../build/code_customization.md)
+    * GitHub (each Module):
+        1. Fork Module (GitHub)
+        1. Modify Module (GitHub->Codespaces)
+        1. Save your new branch (Codespaces->GitHub)
+        1. Prepare command line and save
+    * All Module command lines prepared
+    * GitHub (build Loop)
+        1. Modify LoopWorkspace (GitHub->Codespaces)
+        1. Save your new branch (Codespaces->GitHub)
+        1. Action: Build Loop
+    * Phone: Install Loop with TestFlight
+
+!!! question "FAQs"
+    - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
+    - **Should I build without customizations first?** Yes. Make sure the build process works without customizations. You don't need to install the build on your phone, just make sure it builds without errors before you start modifying.
+
 ## How to Customize a GitHub Build
 
 These are bare-bones instructions for applying customizations.
-
-You do not need very many "git" commands (and I'll tell you which ones).
 
 You do not need a Mac, you can still do this using any browser - easiest to do this on a computer.
 
@@ -16,7 +41,7 @@ You will need a text editor to format a command line for each module you change.
 
 ## Decide Which Modules You Want to Modify
 
-If you have a [Code Customization](../build/code_customization.md) in mind, you will see that each item lists a folder name. You only need the Module name (first name before the first / character).
+Decide which [Code Customization](../build/code_customization.md) you want to make. Each customization lists a Module name. You will want a fork for each Module you wish to modify.
 
 This table lists all the modules referred to on the Code Customization page linked above:
 
@@ -28,7 +53,7 @@ This table lists all the modules referred to on the Code Customization page link
 | rileylink_ios/OmniKit/OmnipodCommon | rileylink_ios | [https://github.com/ps2/rileylink_ios](https://github.com/ps2/rileylink_ios) |
 
 !!! tip "Pro Tip"
-    Open 4 browser tabs or windows so you can click between locations.
+    Open 4 browser tabs or windows so you can easy flip between locations.
 
     * This page
     * [LoopDocs: Code Customization](../build/code_customization.md) 
@@ -58,24 +83,24 @@ When you fork a repository, the default branch is the one that is forked. That i
 
 The LoopWorkspace main branch is always the most recent released code.
 
-This page has instructions for applying customizations to released code, main branch of LoopWorkspace. Don't worry about the other repositories using dev as the default branch. Everything you need to update LoopWorkspace main is included in the dev branches of the lower level repositories (modules).
+This page has instructions for applying customizations to released code, main branch of LoopWorkspace. Don't worry about the other repositories using dev as the default branch. Everything you need to update LoopWorkspace main is included in the dev branches of the lower level repositories (Modules).
 
 !!! warning "Loop with LnL Patches"
-    Some Loop users build with the loopnlearn version of LoopWorkspace using the main_lnl_patches branch. If you are one of those users, do not use the URL table above. There is also an extra step to prepare your fork. The LnL instruction page is not yet available; but will be found on the LnL website (later).
+    Some Loop users build with the loopnlearn version of LoopWorkspace using the main_lnl_patches branch. If you are one of those users, do not use the URL table above. There is also an extra step required to prepare your fork. The LnL instruction page is not yet available; but will be found on the LnL website (later).
 
     If you want to deal with both released Loop (fork from LoopKit) and LnL with Patches, it is suggested you set up a second free GitHub account. The second account could have a name like username-lnl, where you insert your current username. If you do it this way, you use the same four Apple Secrets for both repositories and you can choose the same MATCH_PASSWORD, but the GH_PAT will be unique for each GitHub account.
 
 ## Open Module in Codespaces
 
-Now that the selected module fork exists in your GitHub account, you will open it in Codespaces. (If you are returning to change a customization you've already made, be sure to select the branch where you are already made the previous customization.)
+Now that the selected module fork exists in your GitHub account, you will open it in Codespaces. (If you are returning to change a customization you've already made, be sure to select the branch where you already made the previous customization; [Update Customization](#update-customization))
 
 1. Click on [Codespaces](https://github.com/codespaces)
     * Click on the green button on the right that says `New Codespace`
 1. On new screen
     * Click on Select a repository and choose your GitHub username/moduleName for the module you want to modify
     * You will see a message the `Codespace usage for this repository is paid for by username` - you get 60 free hours per month, so you can ignore this message
-    * First time - leave the branch alone (dev)
-    * Subsequent times - select your customized branch, e.g., main_3.0_custom
+        * First time - leave the branch alone (dev)
+        * Subsequent times - select your customized branch, e.g., main_3.0_custom
     * You do not need to modify the region or machine type
     * Click on the green button at the bottom that says `Create codespace`
 1. A message appears saying setting up your codespace; and then the Codespaces screen appears showing the README.md file (by default) for that repository
@@ -88,13 +113,20 @@ Now that the selected module fork exists in your GitHub account, you will open i
         * The URL includes the name of the machine that was assigned to you, for example: congenial space spork
         * There are 4 sections of the display you need to worry about - highlighted with numbered red rectangles
 
-1. Find the correct command list in the [Configure for Loop 3.0.0](#configure-for-loop-300) section below, click the copy button and then return to these instructions
+If you have already made a customization in this module and you are returning for another modification, skip to [Customize the Module](#customize-the-module).
+
+### First Time for this Module
+
 1. In the section indicated by the red rectangle labeled 4 (the terminal window), click to the right of the line where it says and paste the commands: 
     ```@username -> /workspaces/moduleName (dev) $```
+1. Find the correct command list in the [First Time for Loop 3.0.0](#first-time-for-loop-300) section below, click the copy button and then paste into the terminal window.
+1. If there were errors, read the steps to see what might be wrong and reach out for help - do not continue if you see errors.
 
-### Configure for Loop 3.0.0
+Skip ahead to [Customize the Module](#customize-the-module).
 
-These commands are used ONLY for Loop 3.0.0. Copy the indicated set of commands and paste into the terminal window.
+## First Time for Loop 3.0.0
+
+These commands are used ONLY for Loop 3.0.0 and only the first time you work with a given Module. Copy the indicated set of commands and paste into the terminal window. This takes the repository to the correct version for Loop 3.0.0 and creates a special branch where your customizations will live on your fork.
 
 #### Configure Loop Module
 
@@ -106,6 +138,8 @@ git checkout 743b8d7
 git checkout -b main_3.0_custom
 ```
 
+Copy and paste in the Codespaces terminal window, then skip ahead to [Customize the Module](#customize-the-module).
+
 #### Configure LoopKit Module
 
 * Do not use if you have already made modifications
@@ -115,6 +149,8 @@ git checkout -b main_3.0_custom
 git checkout 0d5929e
 git checkout -b main_3.0_custom
 ```
+
+Copy and paste in the Codespaces terminal window, then skip ahead to [Customize the Module](#customize-the-module).
 
 #### Configure OmniBLE Module
 
@@ -126,6 +162,9 @@ git checkout 6d9b57d
 git checkout -b main_3.0_custom
 ```
 
+Copy and paste in the Codespaces terminal window, then skip ahead to [Customize the Module](#customize-the-module).
+Module](#customize-the-module).
+
 #### Configure rileylink_ios Module
 
 * Do not use if you have already made modifications
@@ -136,32 +175,27 @@ git checkout 482ef4f
 git checkout -b main_3.0_custom
 ```
 
-### Configure for LnL Patched Version of Loop 3.0.0
+Copy and paste in the Codespaces terminal window, then skip ahead to [Customize the Module](#customize-the-module).
 
-If you built using the loopnlearn/LoopWorkspace, these 2 modules require a different set of configuration commands. These should ONLY be used if you forked your LoopWorkspace from loopnlearn/LoopWorkspace. Note that the new branch you create includes the information that these started with main_lnl_patches branch for 3.0.0.
+## Update Customization
 
-For these modules you must add a new branch, main_lnl_patches to your fork, before starting the Codespaces. And when you start code spaces, select main_lnl_patches as the branch before creating the code space.
+If you are returning to change a customization you've already made, follow these directions.
 
-#### Configure Loop Module for main_lnl_patches
+1. Click on [Codespaces](https://github.com/codespaces)
+    * Click on the green button on the right that says `New Codespace`
+1. On new screen
+    * Click on Select a repository and choose your GitHub username/moduleName for the module you want to modify
+    * You will see a message the `Codespace usage for this repository is paid for by username` - you get 60 free hours per month, so you can ignore this message
+    * Select your customized branch, e.g., main_3.0_custom
+    * You do not need to modify the region or machine type
+    * Click on the green button at the bottom that says `Create codespace`
+1. A message appears saying setting up your codespace; and then the Codespaces screen appears showing the README.md file (by default) for that repository
+1. In the section indicated by the red rectangle labeled 4 (the terminal window), you should see the line: 
+    ```@username -> /workspaces/moduleName (main_3.0_custom) $```
 
-* Do not use if you have already made modifications
-* Do not use these with released version
+Continue with [Customize the Module](#customize-the-module).
 
-``` { .sh .copy title="Loop: Copy and Paste into Terminal" }
-git checkout d41cf86
-git checkout -b main_lnl_patches_3.0_custom
-```
-
-#### Configure LoopKit Module for main_lnl_patches
-
-* Do not use if you have already made modifications
-* Do not use these with released version
-
-``` { .sh .copy title="LoopKit: Copy and Paste into Terminal" }
-git checkout 21816df
-git checkout -b main_lnl_patches_3.0_custom
-```
-
+### Customize the Module
 
 ## Background Information
 
