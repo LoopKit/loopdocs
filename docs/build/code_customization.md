@@ -10,9 +10,9 @@ The same `Key_Phrase` concept for finding lines to modify is used for the GitHub
 
 * The instructions provided on the [Customize with GitHub](../gh-actions/gh-customize.md) page have you make your own fork for any module you want to modify, commit changes to your fork, and then point your fork of LoopWorkspace to the modified modules in your GitHub account
     * There are several other ways to do customizations, but this method can be done using just a browser - no cloning of the LoopWorkspace is required
-    * You may want to have this page and that page open in two windows for easy reference
+    * You may want to have this page and the [Customize with GitHub](../gh-actions/gh-customize.md) page open in two windows for easy reference
 * One set of commonly requested customizations is available as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
-    * If you used the LnL patched code - and want to add more customizations with the GitHub build method, you will need to use special instructions. That document is not available at this time.
+    * If you used the LnL patched code - and want to add more customizations with the GitHub build method, you will need to use special instructions for configuring your forks. That document is not available at this time.
 
 ## Build then Customize
 
@@ -183,24 +183,6 @@ canEvaluatePolicy(.deviceOwnerAuthentication
 * Loop 3
     * Folder: LoopKit/LoopKitUI/Extensions/
     * File: Environment+Authenticate.swift, Line 20
-* Loop 2.2.x
-    * Folder: Loop/View Controllers
-    * File: BolusViewController.swift, Line 529
-
- The screenshot below was taken with Loop v2.0 when the line number was 201; with Loop 2.2.x versions, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
-
-![img/custom-id.png](img/custom-id.png){width="750"}
-{align="center"}
-
-#### Loop 2.2.x
-
-_Code Before Modification_
-
-    if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
-
-_Code After Modification_
-
-    if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
 
 #### Loop 3
 
@@ -211,6 +193,25 @@ _Code Before Modification_
 _Code After Modification_
 
     if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
+
+#### Loop 2.2.x
+
+* Loop 2.2.x
+    * Folder: Loop/View Controllers
+    * File: BolusViewController.swift, Line 529
+
+ The screenshot below was taken with Loop v2.0 when the line number was 201; with Loop 2.2.x versions, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
+
+![img/custom-id.png](img/custom-id.png){width="750"}
+{align="center"}
+
+_Code Before Modification_
+
+    if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+
+_Code After Modification_
+
+    if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
 
 ## Default Carb Absorption Times
 

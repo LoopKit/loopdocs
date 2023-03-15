@@ -76,10 +76,8 @@ The commit identifier for each submodule is important because that repository ca
 
 The commit for the LoopKit submodule is highlighted by the red rectangle in the graphic below. Advanced users testing the dev branch (or other branches or forks) need to know how to tell if their current download is up-to-date.
 
-
 ![LoopWorkspace repository showing the SHA-1 for each submodule](img/loopworkspace-submodule-sha.svg){width="750"}
 {align="center"}
-
 
 ## Clone LoopWorkspace
 
@@ -133,14 +131,12 @@ For this graphic, the cloned LoopWorkspace is in the home directory.
 
     The words will be updated with the next release. It may take more time for the figures to be updated.
 
-
 1. Open Finder and navigate to the location that has LoopWorkspace
 1. Open the LoopWorkspace folder
 1. Search for and double-click on the `Loop.xcworkspace` folder - this automatically opens the Workspace in Xcode
 
 ![img/workspace-file.png](img/workspace-file.png){width="550"}
 {align="center"}
-
 
 ## Building LoopWorkspace
 
