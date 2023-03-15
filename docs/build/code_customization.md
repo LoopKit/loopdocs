@@ -805,48 +805,7 @@ Add LibreTransmitter to Loop as a plugin:
     * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/312259-Omnipod-DASH/topic/Libre.20support/near/279078872)
     * The required GetGlucoseFromRaw.swift file is not included in the repository due to legal concerns, so you have to get it from elsewhere
 
-## Limit Loop to 5-minute Cycle
-
-Loop 3 enables higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates.
-
-This modification limits the period for Loop cycles to 4.8 minutes or longer.
-
-!!! warning "Meant for Libre Users"
-    This customization is suggested for Libre Users who need to limit how frequently Loop modifies dosing commands to preserve pod batteries.
-
-    The Loop 3 code was modified when adding support for DASH pods. The DASH pods have a 3-minute heartbeat and it was discovered that with Dexcom (5-minute update rate) and DASH, the Loop could switch to a DASH heartbeat and not be triggered by the next CGM reading. Loop works much better when each Loop cycle is triggered by the CGM.
-
-    The preferred solution is to have the CGM manager decide when to send updated glucose values to Loop.
-
-
-``` { .txt .copy title="Key_Phrase" }
-let timeSinceLastLoop
-```
-
-* Folder: Loop/Loop/Managers/
-* File: LoopDataManager.swift, Line: 821 (main), 840 (dev)
-
-The Key_Phrase identifies the line where you will insert new code.
-
-_Code Before Modification_
-
-```
-if let lastLoopCompleted = self.lastLoopCompleted {
-```
-
-You can copy the lines below and replace the one line above with this new code.
-
-_Code After Modification_
-
-``` { .txt .copy }
-// Limit Loop frequency to 4.8 minutes
-if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(lastLoopCompleted) < TimeInterval(minutes: 4.8) {
-    self.logger.default("Skipping loop() attempt as last loop completed at %{public}@", String(describing: lastLoopCompleted))
-    return
-} else if let lastLoopCompleted = self.lastLoopCompleted {
-```
-
-## Limit Loop to 5-minute Cycle
+## Limit Loop for Faster CGM
 
 Loop 3 enables higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates.
 
