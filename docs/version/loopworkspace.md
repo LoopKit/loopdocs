@@ -128,6 +128,12 @@ There are a lot of cloned things in this home directory that involve Loop. You m
 
 For this graphic, the cloned LoopWorkspace is in the home directory.
 
+!!! success "Loop to LoopWorkspace in dev"
+    Note that the directory `Loop.xcworkspace` has been renamed to `LoopWorkspace.xcworkspace` in the dev branch. This change makes LoopWorkspace the default target to simplify the build process.
+
+    The words will be updated with the next release. It may take more time for the figures to be updated.
+
+
 1. Open Finder and navigate to the location that has LoopWorkspace
 1. Open the LoopWorkspace folder
 1. Search for and double-click on the `Loop.xcworkspace` folder - this automatically opens the Workspace in Xcode
@@ -348,11 +354,13 @@ This tutorial is pretty nice.
 !!! tip "Git Tutorial"
     When I first started using git, my adult son answered a my questions very politely then started sending me links to this tutorial instead.
 
-    [Learn Git Branching](https://learngitbranching.js.org/)
+    * [Learn Git Branching](https://learngitbranching.js.org/)
 
     There's a section called `Main` which goes over commands in your local copy (clone) of the code. There's a section called `Remote` that goes over fetching, pulling and pushing to remote copies.
 
-    For Open Source Software, you might fetch and pull from the master copy, but you will only push to your copy of the fork.
+    For Open Source Software, you might fetch and pull from the LoopKit repositories, but you will only push to your fork.
+
+    * You may need to add `git remote add <name> <your-fork-repo>` and `git push --set-upstream <name> <branch>` to your vocabulary.
 
 ## Non-LoopKit clones
 
