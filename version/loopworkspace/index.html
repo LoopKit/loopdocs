@@ -1955,6 +1955,19 @@
     Checking out different branches within a LoopWorkspace
   </a>
   
+    <nav class="md-nav" aria-label="Checking out different branches within a LoopWorkspace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branch-tutorial" class="md-nav__link">
+    Branch Tutorial
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2470,6 +2483,19 @@
     Checking out different branches within a LoopWorkspace
   </a>
   
+    <nav class="md-nav" aria-label="Checking out different branches within a LoopWorkspace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branch-tutorial" class="md-nav__link">
+    Branch Tutorial
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2591,6 +2617,11 @@ xed<span class="w"> </span>.
 <p align="center"><img alt="img/root-finder.png" src="../img/root-finder.png" width="750" /></p>
 <p>There are a lot of cloned things in this home directory that involve Loop. You may have fewer...but be aware, you can always delete and reclone if you are in doubt or confused. You can also set up a special directory to hold the cloned code - just make sure there are no embedded spaces in the full path name.</p>
 <p>For this graphic, the cloned LoopWorkspace is in the home directory.</p>
+<div class="admonition success">
+<p class="admonition-title">Loop to LoopWorkspace in dev</p>
+<p>Note that the directory <code>Loop.xcworkspace</code> has been renamed to <code>LoopWorkspace.xcworkspace</code> in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. This change makes LoopWorkspace the default target to simplify the build process.</p>
+<p>The words will be updated with the next release. It may take more time for the figures to be updated.</p>
+</div>
 <ol>
 <li>Open <abbr title="graphical folder and file display on Mac">Finder</abbr> and navigate to the location that has LoopWorkspace</li>
 <li>Open the LoopWorkspace folder</li>
@@ -2743,6 +2774,20 @@ git<span class="w"> </span>pull<span class="w"> </span>--recurse
 </li>
 </ol>
 <p align="center"><img alt="img/gitmodules.png" src="../img/gitmodules.png" width="750" /></p>
+<h3 id="branch-tutorial">Branch Tutorial<a class="headerlink" href="#branch-tutorial" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This tutorial is pretty nice.</p>
+<div class="admonition tip">
+<p class="admonition-title">Git Tutorial</p>
+<p>When I first started using <abbr title="a tool for version control">git</abbr>, my adult son answered a my questions very politely then started sending me links to this tutorial instead.</p>
+<ul>
+<li><a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
+</ul>
+<p>There's a section called <code>Main</code> which goes over commands in your local copy (<abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>) of the code. There's a section called <code>Remote</code> that goes over fetching, pulling and pushing to remote copies.</p>
+<p>For Open Source Software, you might fetch and pull from the LoopKit repositories, but you will only push to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
+<ul>
+<li>You may need to add <code>git remote add &lt;name&gt; &lt;your-fork-repo&gt;</code> and <code>git push --set-upstream &lt;name&gt; &lt;branch&gt;</code> to your vocabulary.</li>
+</ul>
+</div>
 <h2 id="non-loopkit-clones">Non-LoopKit clones<a class="headerlink" href="#non-loopkit-clones" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Average Loopers can skip this whole section...it's for Developers mostly</p>
