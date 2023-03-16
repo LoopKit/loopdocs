@@ -1,11 +1,18 @@
 ## Code Customizations
 
-**The customizations on this page assume the [Mac-Xcode Build](../build/overview.md) method**
+### Mac/Xcode
 
-**Detailed instructions for making your own customizations for GitHub [Browser Build](../gh-actions/gh-overview.md) are not included in LoopDocs.**
+The customization instructions on this page were written for the [Mac-Xcode Build](../build/overview.md) method.
 
-* To make customizations with the GitHub method requires you to make your own fork for any module you want to modify, commit changes to your fork, and then point your fork of LoopWorkspace to the modified modules in your GitHub account
+### Browser Build
+
+The same `Key_Phrase` concept for finding lines to modify is used for the GitHub Browser Build method.
+
+* The instructions provided on the [Customize with GitHub](../gh-actions/gh-customize.md) page have you make your own fork for any module you want to modify, commit changes to your fork, and then point your fork of LoopWorkspace to the modified modules in your GitHub account
+    * There are several other ways to do customizations, but this method can be done using just a browser - no cloning of the LoopWorkspace is required
+    * You may want to have this page and the [Customize with GitHub](../gh-actions/gh-customize.md) page open in two windows for easy reference
 * One set of commonly requested customizations is available as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
+    * If you used the LnL patched code - and want to add more customizations with the GitHub build method, you will need to use special instructions for configuring your forks. That document is not available at this time.
 
 ## Build then Customize
 
@@ -94,9 +101,11 @@ List of some flags and what they do:
 
 ## Instructions for Finding the Lines
 
-There are other customizations where the user goes into a particular file and makes a specific change to the code. The instructions on this page are for the Mac-Xcode method. GitHub Browser Build method instructions are not provided at this time.
+There are other customizations where the user goes into a particular file and makes a specific change to the code. The instructions on this page are for the Mac-Xcode method. 
 
-For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory.
+GitHub Browser Build method instructions are similar, but each one is done for your fork of a given the module and then combined into your fork of LoopWorkspace using the instructions on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
+
+For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory. The first name in the folder structure is the name of the Module.
 
 **For each change you make in Xcode - be sure to save the file - otherwise the modification does not get built into your app.**
 
@@ -106,6 +115,7 @@ The copy button for this exampe is just for practice
 Do not paste the result anywhere
 ```
 
+  * Module: Loop
   * Folder: Loop/subfolder1/subfolder2/etc.
   * File: filename.swift, line number(s)
 
@@ -122,7 +132,7 @@ To search using the `Key_Phrase` (see graphic below for clarification):
 * A copy button is available when you hover your mouse in the right-hand side of the block below the title `Key_Phrase`;  click on it to copy the phrase
 * In Xcode, tap the Find menu item and select `Find in Workspace`
 * Paste the text into the Find search-box that opens on upper left of Xcode screen and hit enter
-    * If you don't see the phrase in the box, hit backspace - your system may have copied an extra return
+    * **If you don't see the phrase in the box, hit backspace - your system may have copied an extra return**
 * You should see a message `1 result in 1 file` (for most cases)
     * Some customizations will show more than one result, but that will be explained in the directions for that customization
 * The file in which the line is located is reported showing the line in that file containing the `Key_Phrase`
@@ -169,27 +179,10 @@ Depending on your iPhone preferences and model, you may have Face ID or Touch ID
 canEvaluatePolicy(.deviceOwnerAuthentication
 ```
 
-* Loop 2.2.x
-    * Folder: Loop/View Controllers
-    * File: BolusViewController.swift, Line 529
+* Module: LoopKit
 * Loop 3
     * Folder: LoopKit/LoopKitUI/Extensions/
     * File: Environment+Authenticate.swift, Line 20
-
- The screenshot below was taken with Loop v2.0 when the line number was 201; with Loop 2.2.x versions, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
-
-![img/custom-id.png](img/custom-id.png){width="750"}
-{align="center"}
-
-#### Loop 2.2.x
-
-_Code Before Modification_
-
-    if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
-
-_Code After Modification_
-
-    if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
 
 #### Loop 3
 
@@ -200,6 +193,25 @@ _Code Before Modification_
 _Code After Modification_
 
     if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
+
+#### Loop 2.2.x
+
+* Loop 2.2.x
+    * Folder: Loop/View Controllers
+    * File: BolusViewController.swift, Line 529
+
+ The screenshot below was taken with Loop v2.0 when the line number was 201; with Loop 2.2.x versions, that same code is found at line 529. Add the `false &&` as shown in the screenshot below:
+
+![img/custom-id.png](img/custom-id.png){width="750"}
+{align="center"}
+
+_Code Before Modification_
+
+    if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+
+_Code After Modification_
+
+    if false && context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
 
 ## Default Carb Absorption Times
 
@@ -212,15 +224,16 @@ Loop’s default carb absorption times are based on the high, medium, and low gl
 defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
 ```
 
-* Loop 2.2.x
-    * Folder: Loop/LoopCore
-    * File: LoopSettings.swift
-    * Line: 16 (2.2.4 master), 41 (2.2.4 AB), 50 (2.2.5 and later)
-
+* Module: Loop
 * Loop 3
     * Folder: Loop/LoopCore
     * File: LoopCoreConstants.swift
     * Line: 16
+
+* Loop 2.2.x
+    * Folder: Loop/LoopCore
+    * File: LoopSettings.swift
+    * Line: 16 (2.2.4 master), 41 (2.2.4 AB), 50 (2.2.5 and later)
 
 
 For example, if you wanted to modify Loop 2.2.9 so that lollipop represents a 30 minute absorption and pizza a 5 hour absorption, the edit would be as follows:
@@ -250,15 +263,15 @@ With Loop 2.2.x, the end of the line has a comment `// %`, whereas with Loop 3, 
 let bolusPartialApplicationFactor
 ```
 
-* Loop 2.2.x
-    * Folder: Loop/LoopCore
-    * File: LoopSettings.swift
-    * Line: 89 (2.2.5 and later)
-
+* Module: Loop
 * Loop 3
     * Folder: Loop/Loop/Models
     * File: LoopConstants.swift
     * Line: 44
+* Loop 2.2.x
+    * Folder: Loop/LoopCore
+    * File: LoopSettings.swift
+    * Line: 89 (2.2.5 and later)
 
 _Code Before Modification_
 
@@ -296,9 +309,9 @@ This example customization changes the lower bound for sensitivity to 50% (facto
 let allScaleFactorPercentages
 ```
 
-* Loop 2.2.x and Loop 3
-    * Folder: LoopKit/LoopKitUI/Views
-    * File: InsulinSensitivityScalingTableViewCell.swift, Line 19
+* Module: LoopKit
+* Folder: LoopKit/LoopKitUI/Views
+* File: InsulinSensitivityScalingTableViewCell.swift, Line 19
 
 _Code Before Modification_
 
@@ -313,15 +326,15 @@ _Code After Modification to 50% to 200% by steps of 5%_
 
 ### Loop 3 Carb Entry Variables
 
-During the development of Loop 3, a warning screen was added to the carb entry interface when the entered meal is between 100 and 250 grams, inclusive. The variables that control when the warning screen is shown and that limit the overall maximum for carb entries are stored in the LoopConstants file, where they are used by both direct interaction with the Loop phone and by the remote carb entry checking code.
+Loop 3 has both a maxCarbEntryQuantity and a warningCarbEntryQuantity, found adjacent to each other in the code. The warning value is the level at which you are asked if you really meant to enter that amount:
 
 ``` { .txt .copy title="Key_Phrase" }
-let warningCarbEntryQuantity =
+let maxCarbEntryQuantity =
 ```
 
-If you do not find the Key Phrase `warningCarbEntryQuantity` in the code - you do not have Loop 3 code. Use the [Loop 2.2.x Max Carb Entry](#loop-22x-max-carb-entry) version.
-
-If you do find that Key Phrase in the code, you have the newer version of Loop 3. The max and warning values can be modified in LoopConstants. The variable `maxCarbEntryQuantity` is found in LoopConstants, two lines earlier than `warningCarbEntryQuantity`.
+* Module: Loop
+* Folder: Loop/Loop/Models
+* File: LoopConstants.swift, line 18
 
 _Code Before Modification_
 
@@ -344,8 +357,6 @@ _Code After Modification to warn if entry is between 201 and 300g_
     static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 300) // cannot exceed this value
 
     static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200) // user is warned above this value
-
-
 
 ### Loop 2.2.x Max Carb Entry
 
@@ -376,8 +387,6 @@ _Code After Modification to limit carb entry to 99 g_
 
     var maxQuantity = HKQuantity(unit: .gram(), doubleValue: 99)
 
-
-
 ## Pods: Add Extra Insulin on Insertion
 
 The default value is 0.0 u of extra insulin.  If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Loop - be conservative.
@@ -390,13 +399,14 @@ This code change is found in one location for Eros Pods (called Omnipod througho
 let cannulaInsertionUnitsExtra
 ```
 
+* Module: OmniBLE (DASH) or rileylink_iod (Eros)
+* DASH or Eros Pod (Loop 3 only)
+    * Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)
+    * Folder: rileylink_ios/OmniKit/OmnipodCommon (Eros)
+    * File: Pod.swift, Line 82 (DASH); Line 87 (Eros); 
 * Loop 2.2.x: Eros Pod (ones that require a RileyLink compatible device)
     * Folder: rileylink_ios/OmniKit/Model
     * File: Pod.swift, Line 72 (Loop 2.2.x)
-* Eros or DASH Pod (Loop 3 only)
-    * Folder: rileylink_ios/OmniKit/OmnipodCommon (Eros)
-    * Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)
-    * File: Pod.swift, Line 87 (Eros); Line 82 (DASH)
     
 _When finding the file using the folder icons in Xcode, instead of using the `Key_Phrase` in `Find in Workspace`, the RileyLink icon represents the rileylink_ios folder name on the computer._
 
@@ -421,6 +431,7 @@ If you build Loop 3 over a version of Loop 2.2.x or FreeAPS where the Correction
 Guardrail(absoluteBounds:
 ```
 
+* Module: LoopKit
 * Folder: LoopKit/Extensions
 * File: Guardrail+Settings.swift
 * Line: 12 for suspendThreshold
@@ -444,6 +455,7 @@ Similar to the instructions for glucose guardrails above, but use this `Key_Phra
 static let insulinSensitivity = Guardrail(
 ```
 
+* Module: LoopKit
 * Folder: LoopKit/Extensions
 * File: Guardrail+Settings.swift, line: 81
 
@@ -455,6 +467,7 @@ Similar to the instructions for glucose guardrails above, but use this `Key_Phra
 static let carbRatio = Guardrail(
 ```
 
+* Module: LoopKit
 * Folder: LoopKit/Extensions
 * File: Guardrail+Settings.swift, line: 88
 
@@ -467,11 +480,11 @@ Loop 3 limits the future time change allowed to 1 hour.
 cell.datePicker.maximumDate = date.addingTimeInterval
 ```
 
-* Loop 3 only:
-    * Folder: Loop/Loop/View Controllers
-    * File:CarbEntryViewController.swift
-    * Line: 438
-    * Default shown below (for maximum and minimum):
+* Module: Loop
+* Folder: Loop/Loop/View Controllers
+* File:CarbEntryViewController.swift, Line 438
+
+Default shown below (for maximum and minimum):
 
 _Code Before Modification_
 
@@ -543,6 +556,7 @@ This key phrase will indicate three different files in the same folder as shown 
 .digitalCrownRotation
 ```
 
+* Module: Loop
 * Folder: Loop/WatchApp Extension/Views/Carb Entry & Bolus
 
 ![use a single Key_Phrase to identify all lines needed to customize sensitivity with loop 3](img/digital-crown-rotation.svg){width="800"}
@@ -576,9 +590,9 @@ An expiration notification feature has been added to Loop. You get a notificatio
 
 If you prefer a different notification time and frequency, there are two lines you can modify:
 
-* Loop 2.2.x and Loop 3
-    * Folder: Loop/Managers
-    * File: ProfileExpirationAlerter.swift
+* Module: Loop
+* Folder: Loop/Managers
+* File: ProfileExpirationAlerter.swift
     * Line 16: modify how long before expiration you get the FIRST notification
     * Line 28: modify how frequently you will be notified
 
@@ -654,13 +668,7 @@ If you wish to customize these values, please make sure you know what you are do
 MARK: - Model generation
 ```
 
-* Loop 2.2.x
-    * Folder: Loop/LoopCore/Insulin
-    * File: ExponentialInsulinModelPreset.swift
-    * Lines:
-        * actionDuration (20 to 29)
-        * peakActivity (31 to 40)
-        * effectDelay (42 to 51)
+* Module: LoopKit
 * Loop 3
     * Folder: LoopKit/LoopKit/Insulin/ << NOTE new location
     * File: ExponentialInsulinModelPreset.swift
@@ -668,6 +676,13 @@ MARK: - Model generation
         * actionDuration (19 to 32)
         * peakActivity (34 to 47)
         * delay (49 to 62)
+* Loop 2.2.x
+    * Folder: Loop/LoopCore/Insulin
+    * File: ExponentialInsulinModelPreset.swift
+    * Lines:
+        * actionDuration (20 to 29)
+        * peakActivity (31 to 40)
+        * effectDelay (42 to 51)
 
 ![img/exponential.png](img/exponential.png){width="750"}
 {align="center"}
@@ -684,6 +699,9 @@ This Loop 3 table of default values is provided for convenience. The times are a
 
 
 ## Loop Logo
+
+!!! warning "Mac/Xcode Instructions"
+    This can be done with GitHub but the instructions might need to be adjusted for that case.
 
 If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/) or [appicon.co](https://appicon.co/) and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file
 
@@ -759,6 +777,9 @@ If you are using a development branch of Loop, you need the dev branch of LoopPa
 Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop 3.
 
 The CustomTypeOne LoopPatches are included in [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches).
+
+!!! warning "GitHub Browser Build"
+    Use the single curl line for Loop or LoopKit in the terminal window for Codespaces to apply this customization for a given module.
 
 ### Add Libre App to Loop Phone
 
@@ -866,6 +887,7 @@ If you are running Loop 3.0.0 and prefer to leave your app open with phone unloc
 refreshTimer = Timer(timeInterval: .seconds
 ```
 
+* Module: OmniBLE
 * DASH Modification
     * Folder: OmniBLE/OmniBLE/PumpManagerUI
     * File: OmniBLEHUDProvider.swift, Line: 137
@@ -876,6 +898,7 @@ _Code Before Modification (DASH)_
 refreshTimer = Timer(timeInterval: .seconds(30) , repeats: true) { [weak self] _ in
 ```
 
+* Module: rileylink_ios
 * Eros Modification
     * Folder: rileylink_ios/OmniKitUI/PumpManager
     * File: OmnipodHUDProvider.swift, Line: 138
