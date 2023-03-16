@@ -309,7 +309,7 @@ This example customization changes the lower bound for sensitivity to 50% (facto
 let allScaleFactorPercentages
 ```
 
-* Module: Loop
+* Module: LoopKit
 * Folder: LoopKit/LoopKitUI/Views
 * File: InsulinSensitivityScalingTableViewCell.swift, Line 19
 
