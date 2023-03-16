@@ -45,17 +45,17 @@ Your Apple Developer ID is the 10-character Team ID
 
 ### What is git?
 
-Git is a system of "distributed version control" that allows remotely (as in not located in same place) collaborating people to work on one project and still track their changes to the same place. For example, if I sent 5 people one document to proof-read at the same time...it is quite possible that the edits I will get back from those 5 people would conflict with each other. Bob may have entirely deleted a sentence while Mary would have added words to that sentence. Git lets these remotely collaborating people deal with "resolving conflict" between versions more easily and merging suggestions (pull requests) into a coordinated space.
+Git is a system of "distributed version control" that allows remotely (as in not located in the same place) collaborating people to work on one project and still track their changes to the same place. For example, if I sent 5 people one document to proof-read at the same time...it is quite possible that the edits I will get back from those 5 people would conflict with each other. Bob may have entirely deleted a sentence while Mary would have added words to that sentence. Git lets these remotely collaborating people deal with "resolving conflict" between versions more easily and merging suggestions (pull requests) into a coordinated space.
 
 So, in using git, we can do things with "git commands". Like "Hey git...make me an exact copy of that guy's work over there." or "Hey git, I'd like to compare my version of this page with Joe's version of the same page." Or using my old cookbook analogy..."Hey git, I'd like to start a new cookbook called Italian Desserts."
 
-But yes, git commands take awhile to properly use. And they are not plain english friendly. 
+But yes, git commands take awhile to properly use. And they are not plain English-friendly.
 
 ## What is LoopWorkspace?
 
 There is more information in [Loop Development](../version/development.md#what-are-branches) that is not repeated here.
 
-The important fact for this discussion on LoopWorkspace is that Loop developers own an account in GitHub called [LoopKit](https://github.com/LoopKit).  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of the info about the app itself; the outward facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.
+The important fact for this discussion on LoopWorkspace is that Loop developers own an account in GitHub called [LoopKit](https://github.com/LoopKit).  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of info about the app itself; the outward-facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.
 
 When you build Loop from LoopWorkspace, each of those repositories is downloaded to your computer.  This is slower than the old zip-download as far as downloading Loop - but it is much faster when you build Loop because all the files are already on your computer.
 
@@ -348,11 +348,11 @@ There are 2 main ways to do this.
 This tutorial is pretty nice.
 
 !!! tip "Git Tutorial"
-    When I first started using git, my adult son answered a my questions very politely then started sending me links to this tutorial instead.
+    When I first started using git, my adult son answered all my questions very politely then started sending me links to this tutorial instead.
 
     * [Learn Git Branching](https://learngitbranching.js.org/)
 
-    There's a section called `Main` which goes over commands in your local copy (clone) of the code. There's a section called `Remote` that goes over fetching, pulling and pushing to remote copies.
+    There's a section called `Main` which goes over commands in your local copy (clone) of the code. There's a section called `Remote` that goes over fetching, pulling, and pushing to remote copies.
 
     For Open Source Software, you might fetch and pull from the LoopKit repositories, but you will only push to your fork.
 
