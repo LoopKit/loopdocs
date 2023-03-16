@@ -12,7 +12,7 @@
         <link rel="prev" href="../../version/releases/">
       
       
-        <link rel="next" href="../../version/simulator/">
+        <link rel="next" href="../../gh-actions/gh-customize/">
       
       <link rel="icon" href="../../loop-logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
@@ -1769,6 +1769,26 @@
     Code Customizations
   </a>
   
+    <nav class="md-nav" aria-label="Code Customizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macxcode" class="md-nav__link">
+    Mac/Xcode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browser-build" class="md-nav__link">
+    Browser Build
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2055,6 +2075,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gh-actions/gh-customize/" class="md-nav__link">
+        Customize with GitHub
+      </a>
     </li>
   
 
@@ -2476,6 +2510,26 @@
     Code Customizations
   </a>
   
+    <nav class="md-nav" aria-label="Code Customizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macxcode" class="md-nav__link">
+    Mac/Xcode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browser-build" class="md-nav__link">
+    Browser Build
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2776,11 +2830,20 @@
   <h1>Customize Your Loop</h1>
 
 <h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><strong>The customizations on this page assume the <a href="../overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a> method</strong></p>
-<p><strong>Detailed instructions for making your own customizations for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <a href="../../gh-actions/gh-overview/">Browser Build</a> are not included in LoopDocs.</strong></p>
+<h3 id="macxcode">Mac/<abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#macxcode" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The customization instructions on this page were written for the <a href="../overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a> method.</p>
+<h3 id="browser-build">Browser Build<a class="headerlink" href="#browser-build" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The same <code>Key_Phrase</code> concept for finding lines to modify is used for the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method.</p>
 <ul>
-<li>To make customizations with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method requires you to make your own <abbr title="a copy of code in a github repository other than the original">fork</abbr> for any module you want to modify, <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> changes to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>, and then point your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace to the modified modules in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
-<li>One set of commonly requested customizations is available as explained at <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a></li>
+<li>The instructions provided on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page have you make your own <abbr title="a copy of code in a github repository other than the original">fork</abbr> for any module you want to modify, <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> changes to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>, and then point your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace to the modified modules in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account<ul>
+<li>There are several other ways to do customizations, but this method can be done using just a browser - no cloning of the LoopWorkspace is required</li>
+<li>You may want to have this page and the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page open in two windows for easy reference</li>
+</ul>
+</li>
+<li>One set of commonly requested customizations is available as explained at <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a><ul>
+<li>If you used the LnL patched code - and want to add more customizations with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method, you will need to use special instructions for configuring your forks. That document is not available at this time.</li>
+</ul>
+</li>
 </ul>
 <h2 id="build-then-customize">Build then Customize<a class="headerlink" href="#build-then-customize" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For new builders, please build the code before you make any changes. Start with <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using <abbr title="program used to build an app">Xcode</abbr> as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  </p>
@@ -2878,14 +2941,16 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 </tbody>
 </table>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There are other customizations where the user goes into a particular file and makes a specific change to the code. The instructions on this page are for the Mac-<abbr title="program used to build an app">Xcode</abbr> method. <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method instructions are not provided at this time.</p>
-<p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory.</p>
+<p>There are other customizations where the user goes into a particular file and makes a specific change to the code. The instructions on this page are for the Mac-<abbr title="program used to build an app">Xcode</abbr> method. </p>
+<p><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method instructions are similar, but each one is done for your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of a given the module and then combined into your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace using the instructions on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page.</p>
+<p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory. The first name in the folder structure is the name of the Module.</p>
 <p><strong>For each change you make in <abbr title="program used to build an app">Xcode</abbr> - be sure to save the file - otherwise the modification does not get built into your app.</strong></p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
 The copy button for this exampe is just for practice
 Do not paste the result anywhere
 </code></pre></div>
 <ul>
+<li>Module: Loop</li>
 <li>Folder: Loop/subfolder1/subfolder2/etc.</li>
 <li>File: filename.swift, line number(s)</li>
 </ul>
@@ -2903,7 +2968,7 @@ Do not paste the result anywhere
 <li>A copy button is available when you hover your mouse in the right-hand side of the block below the title <code>Key_Phrase</code>;  click on it to copy the phrase</li>
 <li>In <abbr title="program used to build an app">Xcode</abbr>, tap the Find menu item and select <code>Find in Workspace</code></li>
 <li>Paste the text into the Find search-box that opens on upper left of <abbr title="program used to build an app">Xcode</abbr> screen and hit enter<ul>
-<li>If you don't see the phrase in the box, hit backspace - your system may have copied an extra return</li>
+<li><strong>If you don't see the phrase in the box, hit backspace - your system may have copied an extra return</strong></li>
 </ul>
 </li>
 <li>You should see a message <code>1 result in 1 file</code> (for most cases)<ul>
@@ -2964,26 +3029,13 @@ Do not paste the result anywhere
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>canEvaluatePolicy(.deviceOwnerAuthentication
 </code></pre></div>
 <ul>
-<li>Loop 2.2.x<ul>
-<li>Folder: Loop/View Controllers</li>
-<li>File: BolusViewController.swift, Line 529</li>
-</ul>
-</li>
+<li>Module: LoopKit</li>
 <li><abbr title="Latest release with major updates">Loop 3</abbr><ul>
 <li>Folder: LoopKit/LoopKitUI/Extensions/</li>
 <li>File: Environment+Authenticate.swift, Line 20</li>
 </ul>
 </li>
 </ul>
-<p>The screenshot below was taken with Loop v2.0 when the line number was 201; with Loop 2.2.x versions, that same code is found at line 529. Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
-<p align="center"><img alt="img/custom-id.png" src="../img/custom-id.png" width="750" /></p>
-<h4 id="loop-22x">Loop 2.2.x<a class="headerlink" href="#loop-22x" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p><em>Code Before Modification</em></p>
-<div class="highlight"><pre><span></span><code>if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
-</code></pre></div>
-<p><em>Code After Modification</em></p>
-<div class="highlight"><pre><span></span><code>if false &amp;&amp; context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
-</code></pre></div>
 <h4 id="loop-3"><abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#loop-3" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &amp;error) {
@@ -2991,26 +3043,43 @@ Do not paste the result anywhere
 <p><em>Code After Modification</em></p>
 <div class="highlight"><pre><span></span><code>if false &amp;&amp; context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &amp;error) {
 </code></pre></div>
+<h4 id="loop-22x">Loop 2.2.x<a class="headerlink" href="#loop-22x" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>Loop 2.2.x<ul>
+<li>Folder: Loop/View Controllers</li>
+<li>File: BolusViewController.swift, Line 529</li>
+</ul>
+</li>
+</ul>
+<p>The screenshot below was taken with Loop v2.0 when the line number was 201; with Loop 2.2.x versions, that same code is found at line 529. Add the <code>false &amp;&amp;</code> as shown in the screenshot below:</p>
+<p align="center"><img alt="img/custom-id.png" src="../img/custom-id.png" width="750" /></p>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+</code></pre></div>
+<p><em>Code After Modification</em></p>
+<div class="highlight"><pre><span></span><code>if false &amp;&amp; context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+</code></pre></div>
 <h2 id="default-carb-absorption-times">Default Carb Absorption Times<a class="headerlink" href="#default-carb-absorption-times" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p align="center"><img alt="img/carb_screen.png" src="../img/carb_screen.png" width="200" /></p>
 <p>Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in <em>Think Like A Pancreas</em> by Gary Scheiner.  With Loop 2.2.x, the lollipop (fast) icon is set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for <abbr title="Latest release with major updates">Loop 3</abbr> to 30 minutes, 3 hours and 5 hours respectively.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
 </code></pre></div>
 <ul>
-<li>
-<p>Loop 2.2.x</p>
-<ul>
-<li>Folder: Loop/LoopCore</li>
-<li>File: LoopSettings.swift</li>
-<li>Line: 16 (2.2.4 master), 41 (2.2.4 AB), 50 (2.2.5 and later)</li>
-</ul>
-</li>
+<li>Module: Loop</li>
 <li>
 <p><abbr title="Latest release with major updates">Loop 3</abbr></p>
 <ul>
 <li>Folder: Loop/LoopCore</li>
 <li>File: LoopCoreConstants.swift</li>
 <li>Line: 16</li>
+</ul>
+</li>
+<li>
+<p>Loop 2.2.x</p>
+<ul>
+<li>Folder: Loop/LoopCore</li>
+<li>File: LoopSettings.swift</li>
+<li>Line: 16 (2.2.4 master), 41 (2.2.4 AB), 50 (2.2.5 and later)</li>
 </ul>
 </li>
 </ul>
@@ -3030,20 +3099,17 @@ Do not paste the result anywhere
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let bolusPartialApplicationFactor
 </code></pre></div>
 <ul>
-<li>
-<p>Loop 2.2.x</p>
-<ul>
-<li>Folder: Loop/LoopCore</li>
-<li>File: LoopSettings.swift</li>
-<li>Line: 89 (2.2.5 and later)</li>
-</ul>
-</li>
-<li>
-<p><abbr title="Latest release with major updates">Loop 3</abbr></p>
-<ul>
+<li>Module: Loop</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr><ul>
 <li>Folder: Loop/Loop/Models</li>
 <li>File: LoopConstants.swift</li>
 <li>Line: 44</li>
+</ul>
+</li>
+<li>Loop 2.2.x<ul>
+<li>Folder: Loop/LoopCore</li>
+<li>File: LoopSettings.swift</li>
+<li>Line: 89 (2.2.5 and later)</li>
 </ul>
 </li>
 </ul>
@@ -3078,11 +3144,9 @@ Do not paste the result anywhere
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let allScaleFactorPercentages
 </code></pre></div>
 <ul>
-<li>Loop 2.2.x and <abbr title="Latest release with major updates">Loop 3</abbr><ul>
+<li>Module: LoopKit</li>
 <li>Folder: LoopKit/LoopKitUI/Views</li>
 <li>File: InsulinSensitivityScalingTableViewCell.swift, Line 19</li>
-</ul>
-</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>private let allScaleFactorPercentages = Array(stride(from: 10, through: 200, by: 10))
@@ -3092,11 +3156,14 @@ Do not paste the result anywhere
 </code></pre></div>
 <h2 id="modify-maximum-and-warning-carb-entry">Modify Maximum and Warning Carb Entry<a class="headerlink" href="#modify-maximum-and-warning-carb-entry" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="loop-3-carb-entry-variables"><abbr title="Latest release with major updates">Loop 3</abbr> Carb Entry Variables<a class="headerlink" href="#loop-3-carb-entry-variables" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>During the development of <abbr title="Latest release with major updates">Loop 3</abbr>, a warning screen was added to the carb entry interface when the entered meal is between 100 and 250 grams, inclusive. The variables that control when the warning screen is shown and that limit the overall maximum for carb entries are stored in the LoopConstants file, where they are used by both direct interaction with the Loop phone and by the remote carb entry checking code.</p>
-<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let warningCarbEntryQuantity =
+<p><abbr title="Latest release with major updates">Loop 3</abbr> has both a maxCarbEntryQuantity and a warningCarbEntryQuantity, found adjacent to each other in the code. The warning value is the level at which you are asked if you really meant to enter that amount:</p>
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let maxCarbEntryQuantity =
 </code></pre></div>
-<p>If you do not find the Key Phrase <code>warningCarbEntryQuantity</code> in the code - you do not have <abbr title="Latest release with major updates">Loop 3</abbr> code. Use the <a href="#loop-22x-max-carb-entry">Loop 2.2.x Max Carb Entry</a> version.</p>
-<p>If you do find that Key Phrase in the code, you have the newer version of <abbr title="Latest release with major updates">Loop 3</abbr>. The max and warning values can be modified in LoopConstants. The variable <code>maxCarbEntryQuantity</code> is found in LoopConstants, two lines earlier than <code>warningCarbEntryQuantity</code>.</p>
+<ul>
+<li>Module: Loop</li>
+<li>Folder: Loop/Loop/Models</li>
+<li>File: LoopConstants.swift, line 18</li>
+</ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 250) // cannot exceed this value
 
@@ -3141,15 +3208,16 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let cannulaInsertionUnitsExtra
 </code></pre></div>
 <ul>
+<li>Module: OmniBLE (DASH) or rileylink_iod (Eros)</li>
+<li>DASH or Eros Pod (<abbr title="Latest release with major updates">Loop 3</abbr> only)<ul>
+<li>Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)</li>
+<li>Folder: rileylink_ios/OmniKit/OmnipodCommon (Eros)</li>
+<li>File: Pod.swift, Line 82 (DASH); Line 87 (Eros); </li>
+</ul>
+</li>
 <li>Loop 2.2.x: Eros Pod (ones that require a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device)<ul>
 <li>Folder: rileylink_ios/OmniKit/Model</li>
 <li>File: Pod.swift, Line 72 (Loop 2.2.x)</li>
-</ul>
-</li>
-<li>Eros or DASH Pod (<abbr title="Latest release with major updates">Loop 3</abbr> only)<ul>
-<li>Folder: rileylink_ios/OmniKit/OmnipodCommon (Eros)</li>
-<li>Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)</li>
-<li>File: Pod.swift, Line 87 (Eros); Line 82 (DASH)</li>
 </ul>
 </li>
 </ul>
@@ -3167,6 +3235,7 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>Guardrail(absoluteBounds:
 </code></pre></div>
 <ul>
+<li>Module: LoopKit</li>
 <li>Folder: LoopKit/Extensions</li>
 <li>File: Guardrail+Settings.swift</li>
 <li>Line: 12 for suspendThreshold</li>
@@ -3184,6 +3253,7 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>static let insulinSensitivity = Guardrail(
 </code></pre></div>
 <ul>
+<li>Module: LoopKit</li>
 <li>Folder: LoopKit/Extensions</li>
 <li>File: Guardrail+Settings.swift, line: 81</li>
 </ul>
@@ -3192,6 +3262,7 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>static let carbRatio = Guardrail(
 </code></pre></div>
 <ul>
+<li>Module: LoopKit</li>
 <li>Folder: LoopKit/Extensions</li>
 <li>File: Guardrail+Settings.swift, line: 88</li>
 </ul>
@@ -3200,14 +3271,11 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval
 </code></pre></div>
 <ul>
-<li><abbr title="Latest release with major updates">Loop 3</abbr> only:<ul>
+<li>Module: Loop</li>
 <li>Folder: Loop/Loop/View Controllers</li>
-<li>File:CarbEntryViewController.swift</li>
-<li>Line: 438</li>
-<li>Default shown below (for maximum and minimum):</li>
+<li>File:CarbEntryViewController.swift, Line 438</li>
 </ul>
-</li>
-</ul>
+<p>Default shown below (for maximum and minimum):</p>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval(.hours(1))
 cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
@@ -3255,6 +3323,7 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>.digitalCrownRotation
 </code></pre></div>
 <ul>
+<li>Module: Loop</li>
 <li>Folder: Loop/WatchApp Extension/Views/Carb Entry &amp; Bolus</li>
 </ul>
 <p align="center"><img alt="use a single Key_Phrase to identify all lines needed to customize sensitivity with loop 3" src="../img/digital-crown-rotation.svg" width="800" /></p>
@@ -3284,9 +3353,9 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 </ul>
 <p>If you prefer a different notification time and frequency, there are two lines you can modify:</p>
 <ul>
-<li>Loop 2.2.x and <abbr title="Latest release with major updates">Loop 3</abbr><ul>
+<li>Module: Loop</li>
 <li>Folder: Loop/Managers</li>
-<li>File: ProfileExpirationAlerter.swift</li>
+<li>File: ProfileExpirationAlerter.swift<ul>
 <li>Line 16: modify how long before expiration you get the FIRST notification</li>
 <li>Line 28: modify how frequently you will be notified</li>
 </ul>
@@ -3343,17 +3412,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>MARK: - Model generation
 </code></pre></div>
 <ul>
-<li>Loop 2.2.x<ul>
-<li>Folder: Loop/LoopCore/Insulin</li>
-<li>File: ExponentialInsulinModelPreset.swift</li>
-<li>Lines:<ul>
-<li>actionDuration (20 to 29)</li>
-<li>peakActivity (31 to 40)</li>
-<li>effectDelay (42 to 51)</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>Module: LoopKit</li>
 <li><abbr title="Latest release with major updates">Loop 3</abbr><ul>
 <li>Folder: LoopKit/LoopKit/Insulin/ &lt;&lt; NOTE new location</li>
 <li>File: ExponentialInsulinModelPreset.swift</li>
@@ -3361,6 +3420,17 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>actionDuration (19 to 32)</li>
 <li>peakActivity (34 to 47)</li>
 <li>delay (49 to 62)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Loop 2.2.x<ul>
+<li>Folder: Loop/LoopCore/Insulin</li>
+<li>File: ExponentialInsulinModelPreset.swift</li>
+<li>Lines:<ul>
+<li>actionDuration (20 to 29)</li>
+<li>peakActivity (31 to 40)</li>
+<li>effectDelay (42 to 51)</li>
 </ul>
 </li>
 </ul>
@@ -3411,6 +3481,10 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </tbody>
 </table>
 <h2 id="loop-logo">Loop Logo<a class="headerlink" href="#loop-logo" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Mac/<abbr title="program used to build an app">Xcode</abbr> Instructions</p>
+<p>This can be done with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> but the instructions might need to be adjusted for that case.</p>
+</div>
 <p>If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
 <p>Use <abbr title="graphical folder and file display on Mac">Finder</abbr> to Navigate to the LoopWorkspace folder. These instructions assume you used the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> - if your files are in a different folder, make the appropriate adjustment.</p>
 <p>For Loop 2.2.x:</p>
@@ -3468,6 +3542,10 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>If you are using a development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of Loop, you need the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopPatches. Note - even the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopPatches takes time to update for some changes to the Loop-dev code. <a href="https://github.com/CustomTypeOne/LoopPatches/tree/dev#readme">CustomTypeOne/LoopPatches for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></p>
 <p>Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <p>The CustomTypeOne LoopPatches are included in <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</p>
+<p>Use the single curl line for Loop or LoopKit in the terminal window for Codespaces to apply this customization for a given module.</p>
+</div>
 <h3 id="add-libre-app-to-loop-phone">Add Libre App to Loop Phone<a class="headerlink" href="#add-libre-app-to-loop-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This method only works for <abbr title="Latest release with major updates">Loop 3</abbr> (main <abbr title="version of code within a single repository or workspace repository">branch</abbr>) and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone. This should work for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as well.</p>
 <p>There are several options for code that will read the raw Libre values and convert them into glucose readings. You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.</p>
@@ -3559,6 +3637,7 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>refreshTimer = Timer(timeInterval: .seconds
 </code></pre></div>
 <ul>
+<li>Module: OmniBLE</li>
 <li>DASH Modification<ul>
 <li>Folder: OmniBLE/OmniBLE/PumpManagerUI</li>
 <li>File: OmniBLEHUDProvider.swift, Line: 137</li>
@@ -3569,6 +3648,7 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
 <div class="highlight"><pre><span></span><code>refreshTimer = Timer(timeInterval: .seconds(30) , repeats: true) { [weak self] _ in
 </code></pre></div>
 <ul>
+<li>Module: rileylink_ios</li>
 <li>Eros Modification<ul>
 <li>Folder: rileylink_ios/OmniKitUI/PumpManager</li>
 <li>File: OmnipodHUDProvider.swift, Line: 138</li>
@@ -3621,13 +3701,13 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
         
         
           
-          <a href="../../version/simulator/" class="md-footer__link md-footer__link--next" aria-label="Next: Simulator Build" rel="next">
+          <a href="../../gh-actions/gh-customize/" class="md-footer__link md-footer__link--next" aria-label="Next: Customize with GitHub" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Simulator Build
+                Customize with GitHub
               </div>
             </div>
             <div class="md-footer__button md-icon">

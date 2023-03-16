@@ -1,0 +1,3114 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../build/code_customization/">
+      
+      
+        <link rel="next" href="../../version/simulator/">
+      
+      <link rel="icon" href="../../loop-logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+    
+    
+      
+        <title>Customize with GitHub - LoopDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ffa9267a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+      
+  <img src="../../loop-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LoopDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Customize with GitHub
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../intro/overview-intro/" class="md-tabs__link">
+        Intro
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../gh-overview/" class="md-tabs__link">
+        Browser Build
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../build/overview/" class="md-tabs__link">
+        Mac-Xcode Build
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
+        Set Up
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../operation/loop/open-loop/" class="md-tabs__link">
+        Operate
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../troubleshooting/overview/" class="md-tabs__link">
+        Troubleshoot
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../version/overview-version/" class="md-tabs__link md-tabs__link--active">
+        Version
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../nightscout/overview/" class="md-tabs__link">
+        Nightscout
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faqs/overview-faqs/" class="md-tabs__link">
+        FAQs
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../translate/" class="md-tabs__link">
+      Translation
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+      
+  <img src="../../loop-logo.png" alt="logo">
+
+    </a>
+    LoopDocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Intro
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Intro
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/overview-intro/" class="md-nav__link">
+        LoopDocs Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/loopdocs-how-to/" class="md-nav__link">
+        LoopDocs How-to
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/requirements/" class="md-nav__link">
+        Requirements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step2/" class="md-nav__link">
+        Compatible iPhone/iPod
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step3/" class="md-nav__link">
+        Compatible Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step4/" class="md-nav__link">
+        Compatible CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step5/" class="md-nav__link">
+        RileyLink
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step6/" class="md-nav__link">
+        Apple Developer Program
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step10/" class="md-nav__link">
+        Test Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step11/" class="md-nav__link">
+        Loop Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step12/" class="md-nav__link">
+        Meet the Community
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Browser Build
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Browser Build
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-overview/" class="md-nav__link">
+        GitHub Build Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-first-time/" class="md-nav__link">
+        GitHub First-Time
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-deploy/" class="md-nav__link">
+        GitHub Deploy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-update/" class="md-nav__link">
+        GitHub Update
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-errors/" class="md-nav__link">
+        GitHub Errors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-other-apps/" class="md-nav__link">
+        Other Apps
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Mac-Xcode Build
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Mac-Xcode Build
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/overview/" class="md-nav__link">
+        Mac-Xcode Build Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step1/" class="md-nav__link">
+        Compatible Computer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step8/" class="md-nav__link">
+        Download Xcode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step9/" class="md-nav__link">
+        Xcode Preferences
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/step14/" class="md-nav__link">
+        Build Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build_errors/" class="md-nav__link">
+        Oh dear! Build errors?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/updating/" class="md-nav__link">
+        Updating/Rebuilding
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-free-loop/" class="md-nav__link">
+        Build Free Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/testflight-xcode/" class="md-nav__link">
+        TestFlight from Xcode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Set Up
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Set Up
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/onboarding/" class="md-nav__link">
+        Onboarding
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-cgm/" class="md-nav__link">
+        Add CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-pump/" class="md-nav__link">
+        Add Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/displays_v3/" class="md-nav__link">
+        Displays
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/settings/" class="md-nav__link">
+        Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/therapy-settings/" class="md-nav__link">
+        Therapy Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/services/" class="md-nav__link">
+        Optional: Services
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
+        RileyLink Display
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/omnipod/" class="md-nav__link">
+        Omnipod Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/medtronic/" class="md-nav__link">
+        Medtronic Pump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/features/" class="md-nav__link">
+        Features
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_13" id="__nav_5_13_label" tabindex="0">
+          Loop 2: Set Up App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_13">
+          <span class="md-nav__icon md-icon"></span>
+          Loop 2: Set Up App
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/overview/" class="md-nav__link">
+        Loop 2 Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/health/" class="md-nav__link">
+        Loop 2 Health Permissions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_13_3" id="__nav_5_13_3_label" tabindex="0">
+          Loop 2 Add Pump
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_13_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_13_3">
+          <span class="md-nav__icon md-icon"></span>
+          Loop 2 Add Pump
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
+        Loop 2 Add Medtronic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
+        Loop 2 Add Omnipod
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
+        Loop 2 Add CGM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
+        Loop 2 Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/displays/" class="md-nav__link">
+        Loop 2 Displays
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
+        Loop 2 Pump Settings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Operate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Operate
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/open-loop/" class="md-nav__link">
+        Open Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/close-loop/" class="md-nav__link">
+        Closed Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/carbs/" class="md-nav__link">
+        Meal Entries
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/bolus/" class="md-nav__link">
+        Bolus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/workout/" class="md-nav__link">
+        Overrides
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/watch/" class="md-nav__link">
+        Apple Watch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/notifications/" class="md-nav__link">
+        Loop Notifications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/premeal/" class="md-nav__link">
+        Pre-Meal Target
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/ice/" class="md-nav__link">
+        Using ICE Info
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/widget/" class="md-nav__link">
+        iPhone Widget
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/looptips/" class="md-nav__link">
+        Loop Tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_12" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_12" id="__nav_6_12_label" tabindex="0">
+          Algorithm
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_12">
+          <span class="md-nav__icon md-icon"></span>
+          Algorithm
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/overview/" class="md-nav__link">
+        Algorithm Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/bolus/" class="md-nav__link">
+        Bolus Recommendations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/prediction/" class="md-nav__link">
+        Glucose Prediction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/temp-basal/" class="md-nav__link">
+        Automated Adjustments
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Troubleshoot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Troubleshoot
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/overview/" class="md-nav__link">
+        Troubleshooting Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/loop-crashing/" class="md-nav__link">
+        Loop App Crashes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/yellow-red-loop/" class="md-nav__link">
+        Red Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/pod-pairing/" class="md-nav__link">
+        Pod Pairing Failures
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/omnipod-faults/" class="md-nav__link">
+        Omnipod Faults
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/pump-errors/" class="md-nav__link">
+        MDT Pump Errors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/battery/" class="md-nav__link">
+        MDT Pump Battery
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Version
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Version
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/overview-version/" class="md-nav__link">
+        Version Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/releases/" class="md-nav__link">
+        Loop Releases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/code_customization/" class="md-nav__link">
+        Customize Your Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Customize with GitHub
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Customize with GitHub
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-customize-a-github-build" class="md-nav__link">
+    How to Customize a GitHub Build
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-code" class="md-nav__link">
+    Editing Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decide-which-modules-you-want-to-modify" class="md-nav__link">
+    Decide Which Modules You Want to Modify
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-fork-for-selected-module" class="md-nav__link">
+    Create a Fork for Selected Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-module-in-codespaces" class="md-nav__link">
+    Open Module in Codespaces
+  </a>
+  
+    <nav class="md-nav" aria-label="Open Module in Codespaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codespace-terminal" class="md-nav__link">
+    Codespace Terminal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-time-for-this-module" class="md-nav__link">
+    First Time for this Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-custom-branch" class="md-nav__link">
+    Create the Custom Branch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-customization" class="md-nav__link">
+    Update Customization
+  </a>
+  
+    <nav class="md-nav" aria-label="Update Customization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customize-the-module" class="md-nav__link">
+    Customize the Module
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-loopworkspace" class="md-nav__link">
+    Update LoopWorkspace
+  </a>
+  
+    <nav class="md-nav" aria-label="Update LoopWorkspace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-modification" class="md-nav__link">
+    First Modification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subsequent-modifications" class="md-nav__link">
+    Subsequent Modifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-loopworkspace" class="md-nav__link">
+    Modify LoopWorkspace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-cases" class="md-nav__link">
+    Special Cases
+  </a>
+  
+    <nav class="md-nav" aria-label="Special Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#existing-fork-for-module" class="md-nav__link">
+    Existing Fork for Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-topic-create-a-patch" class="md-nav__link">
+    Advanced Topic: Create a Patch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-information" class="md-nav__link">
+    Background Information
+  </a>
+  
+    <nav class="md-nav" aria-label="Background Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loopworkspace" class="md-nav__link">
+    LoopWorkspace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-are-branches-again" class="md-nav__link">
+    What are branches again?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/simulator/" class="md-nav__link">
+        Simulator Build
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/development/" class="md-nav__link">
+        Loop Development
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/build-dev/" class="md-nav__link">
+        Build Loop Dev
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/loopworkspace/" class="md-nav__link">
+        LoopWorkspace
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Nightscout
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Nightscout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/overview/" class="md-nav__link">
+        Nightscout Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/new_user/" class="md-nav__link">
+        New Nightscout
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/update_user/" class="md-nav__link">
+        Nightscout with Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/troublehoot/" class="md-nav__link">
+        Nightscout Troubleshooting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-overrides/" class="md-nav__link">
+        Remote Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/ns_crossref/" class="md-nav__link">
+        Nightscout Cross Ref
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          FAQs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          FAQs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/overview-faqs/" class="md-nav__link">
+        FAQs Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/safety-faqs/" class="md-nav__link">
+        Safety Tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/FAQs/" class="md-nav__link">
+        Loop FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/time-change/" class="md-nav__link">
+        Time Change FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/omnipod-faqs/" class="md-nav__link">
+        Omnipod FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/cgm-faqs/" class="md-nav__link">
+        CGM FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/update-faqs/" class="md-nav__link">
+        Update/Rebuild Loop FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/rileylink-faqs/" class="md-nav__link">
+        RileyLink FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/algorithm-faqs/" class="md-nav__link">
+        Algorithm FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/apple-health-faqs/" class="md-nav__link">
+        Apple Health FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../translate/" class="md-nav__link">
+        Translation
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-customize-a-github-build" class="md-nav__link">
+    How to Customize a GitHub Build
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-code" class="md-nav__link">
+    Editing Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decide-which-modules-you-want-to-modify" class="md-nav__link">
+    Decide Which Modules You Want to Modify
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-fork-for-selected-module" class="md-nav__link">
+    Create a Fork for Selected Module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-module-in-codespaces" class="md-nav__link">
+    Open Module in Codespaces
+  </a>
+  
+    <nav class="md-nav" aria-label="Open Module in Codespaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codespace-terminal" class="md-nav__link">
+    Codespace Terminal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-time-for-this-module" class="md-nav__link">
+    First Time for this Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-custom-branch" class="md-nav__link">
+    Create the Custom Branch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-customization" class="md-nav__link">
+    Update Customization
+  </a>
+  
+    <nav class="md-nav" aria-label="Update Customization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customize-the-module" class="md-nav__link">
+    Customize the Module
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-loopworkspace" class="md-nav__link">
+    Update LoopWorkspace
+  </a>
+  
+    <nav class="md-nav" aria-label="Update LoopWorkspace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-modification" class="md-nav__link">
+    First Modification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subsequent-modifications" class="md-nav__link">
+    Subsequent Modifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-loopworkspace" class="md-nav__link">
+    Modify LoopWorkspace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-cases" class="md-nav__link">
+    Special Cases
+  </a>
+  
+    <nav class="md-nav" aria-label="Special Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#existing-fork-for-module" class="md-nav__link">
+    Existing Fork for Module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-topic-create-a-patch" class="md-nav__link">
+    Advanced Topic: Create a Patch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-information" class="md-nav__link">
+    Background Information
+  </a>
+  
+    <nav class="md-nav" aria-label="Background Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loopworkspace" class="md-nav__link">
+    LoopWorkspace
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-are-branches-again" class="md-nav__link">
+    What are branches again?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Customize with GitHub</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">DRAFT</p>
+<p>This procedure is in DRAFT mode - only minimal graphics are provided.</p>
+<p>WARNING - After a recent release - wait for the release number to be updated on this page before using any of the copy/paste commands.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Time Estimate</p>
+<ul>
+<li>About half an hour to an hour per Module<ul>
+<li>Typically 1 or 2 <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr></li>
+</ul>
+</li>
+<li>Ten minutes to configure your LoopWorkspace <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>One minute to start the build</li>
+<li>An hour before the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> build shows up on your phone</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>LoopDocs: Decide on <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> to modify <a href="../../build/code_customization/">Code Customization</a></li>
+<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (each Module):<ol>
+<li>Fork Module (<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
+<li>Modify Module (<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>-&gt;Codespaces)</li>
+<li>Save your new <abbr title="version of code within a single repository or workspace repository">branch</abbr> (Codespaces-&gt;<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
+<li>Prepare command line and save</li>
+</ol>
+</li>
+<li>All Module command lines prepared</li>
+<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (build Loop)<ol>
+<li>Modify LoopWorkspace (<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>-&gt;Codespaces)</li>
+<li>Save your new <abbr title="version of code within a single repository or workspace repository">branch</abbr> (Codespaces-&gt;<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
+<li>Action: Build Loop</li>
+</ol>
+</li>
+<li>Phone: Install Loop with <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">FAQs</p>
+<ul>
+<li><strong>Do I need a Mac computer?</strong> No. This can be done on any browser, although it will be easier using a computer.</li>
+<li><strong>Should I build without customizations first?</strong> Yes. Make sure the build process works without customizations. You don't need to install the build on your phone, just make sure it builds without errors before you start modifying.</li>
+</ul>
+</div>
+<h2 id="how-to-customize-a-github-build">How to Customize a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build<a class="headerlink" href="#how-to-customize-a-github-build" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You do not need a Mac, you can still do this using any browser on a computer.</p>
+<p>There is some background information at the bottom of this page starting at <a href="#loopworkspace">LoopWorkspace</a> if you want to know what you are doing. Otherwise, just follow the steps like a cookbook.</p>
+<h2 id="editing-code">Editing Code<a class="headerlink" href="#editing-code" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You will be using the online tool associated with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> called Codespaces. Any <abbr title="contains project files and each file's revision history">repository</abbr> in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account can be opened with Codespaces.</p>
+<p>You will need a text editor to format a command line for each module you change. Use the same text editor you use for saving your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. You do not want characters like double hypen or quote symbols modified by a smart editor.</p>
+<h2 id="decide-which-modules-you-want-to-modify">Decide Which <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> You Want to Modify<a class="headerlink" href="#decide-which-modules-you-want-to-modify" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Decide which <a href="../../build/code_customization/">Code Customization</a> you want to make. Each customization lists a Module name. You will want a <abbr title="a copy of code in a github repository other than the original">fork</abbr> for each Module you wish to modify.</p>
+<p>This table lists all the modules referred to on the Code Customization page linked above:</p>
+<table>
+<thead>
+<tr>
+<th>Folder</th>
+<th>Module</th>
+<th>Fork From</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loop/LoopCore</td>
+<td>Loop</td>
+<td><a href="https://github.com/LoopKit/Loop">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/Loop</a></td>
+</tr>
+<tr>
+<td>LoopKit/LoopKitUI/Extensions</td>
+<td>LoopKit</td>
+<td><a href="https://github.com/LoopKit/LoopKit">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/LoopKit</a></td>
+</tr>
+<tr>
+<td>OmniBLE/OmniBLE/PumpManagerUI</td>
+<td>OmniBLE</td>
+<td><a href="https://github.com/LoopKit/OmniBLE">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/OmniBLE</a></td>
+</tr>
+<tr>
+<td>rileylink_ios/OmniKit/OmnipodCommon</td>
+<td>rileylink_ios</td>
+<td><a href="https://github.com/ps2/rileylink_ios">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/ps2/rileylink_ios</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Pro Tip</p>
+<p>Open 4 browser tabs or windows so you can click to switch locations.</p>
+<ul>
+<li>This page</li>
+<li><a href="../../build/code_customization/">LoopDocs: Code Customization</a> </li>
+<li>Your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
+<li>A new one that you'll use to open Codespaces</li>
+</ul>
+</div>
+<h2 id="create-a-fork-for-selected-module">Create a Fork for Selected Module<a class="headerlink" href="#create-a-fork-for-selected-module" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you want a modification that uses a particular module, you must <abbr title="a copy of code in a github repository other than the original">fork</abbr> that module to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. You will repeat the Fork and Modify steps for each module.</p>
+<ol>
+<li>Log into your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
+<li>Right click (or control click) on the <abbr title="website address (Uniform Resource Locator)">URL</abbr> in the table above</li>
+<li>This opens a new browser tab at the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of the <abbr title="contains project files and each file's revision history">repository</abbr> you need to <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+<li>Tap on Fork, your <abbr title="a copy of code in a github repository other than the original">fork</abbr> will show up in the tab</li>
+</ol>
+<p>Remember - you can only have a single <abbr title="a copy of code in a github repository other than the original">fork</abbr> of a given <abbr title="contains project files and each file's revision history">repository</abbr>. If you already have a <abbr title="a copy of code in a github repository other than the original">fork</abbr>, you don't need another one; but it must be a <abbr title="a copy of code in a github repository other than the original">fork</abbr> from the <abbr title="website address (Uniform Resource Locator)">URL</abbr> listed above.</p>
+<div class="admonition question">
+<p class="admonition-title">I already have a <abbr title="a copy of code in a github repository other than the original">fork</abbr></p>
+<p>Go to <a href="#existing-fork-for-module">Existing Fork for Module</a> and follow the directions there.</p>
+</div>
+<p>When you <abbr title="a copy of code in a github repository other than the original">fork</abbr> a <abbr title="contains project files and each file's revision history">repository</abbr>, the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the one that is forked. That is ok. Only include that default <abbr title="version of code within a single repository or workspace repository">branch</abbr> when forking.</p>
+<table>
+<thead>
+<tr>
+<th>username/Repository</th>
+<th>Default Branch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LoopKit/LoopWorkspace</td>
+<td>main</td>
+</tr>
+<tr>
+<td>LoopKit/Loop</td>
+<td>dev</td>
+</tr>
+<tr>
+<td>LoopKit/LoopKit</td>
+<td>dev</td>
+</tr>
+<tr>
+<td>LoopKit/OmniBLE</td>
+<td>dev</td>
+</tr>
+<tr>
+<td>ps2/rileylink_ios</td>
+<td>dev</td>
+</tr>
+</tbody>
+</table>
+<p>The LoopWorkspace main <abbr title="version of code within a single repository or workspace repository">branch</abbr> is always the most recent released code.</p>
+<div class="admonition tip">
+<p class="admonition-title">Pro Tip</p>
+<p>If you know you want to change more than one Module, go on and prepare the forks for each <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> you want to customize.</p>
+</div>
+<p>This page has instructions for applying customizations to released code, main <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. Don't worry about the other repositories using dev as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Everything you need to update LoopWorkspace main is included in the dev branches of the lower level repositories (<abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr>).</p>
+<div class="admonition warning">
+<p class="admonition-title">Loop with LnL Patches</p>
+<p>Some Loop users build with the loopnlearn version of LoopWorkspace using the main_lnl_patches <abbr title="version of code within a single repository or workspace repository">branch</abbr>. If you are one of those users, do not use the <abbr title="website address (Uniform Resource Locator)">URL</abbr> table above. There is also an extra step required to prepare your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. The LnL instruction page is not yet available; but will be found on the LnL website (later).</p>
+<p>If you want to deal with both released Loop (<abbr title="a copy of code in a github repository other than the original">fork</abbr> from LoopKit) and LnL with Patches, it is suggested you set up a second free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. The second account could have a name like username-lnl, where you insert your current username. If you do it this way, you use the same four Apple <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for both repositories and you can choose the same MATCH_PASSWORD, but the GH_PAT will be unique for each <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account.</p>
+</div>
+<h2 id="open-module-in-codespaces">Open Module in Codespaces<a class="headerlink" href="#open-module-in-codespaces" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Now that the selected module <abbr title="a copy of code in a github repository other than the original">fork</abbr> exists in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account, you will open it in Codespaces. (If you are returning to change a customization you've already made, be sure to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> where you already made the previous customization; <a href="#update-customization">Update Customization</a>).</p>
+<p>For this portion of the process, work with a single Module until you are done with the customization for that module. The final step will be to create and save a special command you will use when setting up the LoopWorkspace later.</p>
+<ol>
+<li>Right click (or control click) on <a href="https://github.com/codespaces">Codespaces</a><ul>
+<li>This opens a new tab in your browser</li>
+<li>Click on the green button on the right that says <code>New Codespace</code></li>
+</ul>
+</li>
+<li>On new screen<ul>
+<li>Click on Select a <abbr title="contains project files and each file's revision history">repository</abbr> and choose your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username/moduleName for the module you want to modify (you can start typing your username if there are too many choices)</li>
+<li>You will see a message the <code>Codespace usage for this repository is paid for by username</code> - you get 60 free hours per month, so you can ignore this message<ul>
+<li>First time - leave the <abbr title="version of code within a single repository or workspace repository">branch</abbr> alone (dev)</li>
+<li>Subsequent times - select your customized <abbr title="version of code within a single repository or workspace repository">branch</abbr>, e.g., main_3.0_custom</li>
+</ul>
+</li>
+<li>You do not need to modify the region or machine type</li>
+<li>Click on the green button at the bottom that says <code>Create codespace</code></li>
+</ul>
+</li>
+<li>A message appears saying setting up your codespace; and then the Codespaces screen appears showing the README.md file (by default) for that <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>
+<p>Your screen will be similar to that shown below</p>
+<p align="center"><img alt="Codespaces screen for newly opened codespace" src="../img/codespace-initial.png" width="500" /></p>
+<ul>
+<li>Note:<ul>
+<li>That image shown above is from <a href="https://docs.github.com/en/codespaces/developing-in-codespaces/developing-in-a-codespace#working-in-a-codespace-in-the-browser"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Docs: Working in a codespace in the browser</a></li>
+<li>You can click on that link for more information if desired, or just follow instructions below.</li>
+<li>There are 5 sections of the display labeled with numbers inside red circles</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>If you have already made a customization in this module and you are returning for another modification, skip to <a href="#customize-the-module">Customize the Module</a>.</p>
+<h3 id="codespace-terminal">Codespace <abbr title="interface for entering commands to the computer">Terminal</abbr><a class="headerlink" href="#codespace-terminal" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ol>
+<li>The terminal window should be showing in the panel section (indicated by the number 4)</li>
+<li>You should see::<br>
+    <code>@username -&gt; /workspaces/moduleName (dev) $</code><ul>
+<li>where your username is after the @ symbol</li>
+<li>and the current Module replaces moduleName</li>
+<li>this is where you will paste the command you're about to copy</li>
+</ul>
+</li>
+</ol>
+<p>The commands you paste depend on whether this is the first time you've worked with the Module or if you have already started customizing it and thus already have a main_3.0_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> created.</p>
+<h3 id="first-time-for-this-module">First Time for this Module<a class="headerlink" href="#first-time-for-this-module" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>These commands are used ONLY for released version of Loop and only the first time you work with a given Module. </p>
+<p>This process has two steps:</p>
+<ul>
+<li>Step 1: Copy the indicated first command (Prepare xxx Module) and paste into the terminal window<ul>
+<li>When you try to paste - it will ask if you want to allow or block input</li>
+<li>Allow the paste</li>
+<li>Check for an error - do not continue if you see an error</li>
+</ul>
+</li>
+<li>Step 2: If no error was seen, follow the instructions in <a href="#create-new-branch">Create New Branch</a></li>
+</ul>
+<p>After these two steps are completed, then you will continue to <a href="#customize-the-module">Customize the Module</a>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Alerts</p>
+<ul>
+<li>Skip ahead to <a href="#update-customization">Update Customization</a> if you have already made modifications</li>
+<li>Do not use if you built the LnL Patched Version of Loop</li>
+<li>After you paste the Prepare xxx Module command (below), STOP if you get an error</li>
+<li>If you do not get an error, continue to <a href="#create-new-branch">Create New Branch</a> which is the same for all modules.</li>
+</ul>
+</div>
+<p>Copy the selected line for the current module into the terminal. If you see an error STOP. </p>
+<ul>
+<li>Did you copy the correct line for the current Module?</li>
+<li>Is your Module dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> up to date?</li>
+</ul>
+<h4 id="prepare-loop-module-loop-300">Prepare Loop Module (<abbr title="Latest release with major updates">Loop 3</abbr>.0.0)<a class="headerlink" href="#prepare-loop-module-loop-300" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>743b8d73c4e8c7c74ce0aa22ce767ae8178a4c64
+</code></pre></div>
+<h4 id="prepare-loopkit-module-loop-300">Prepare LoopKit Module (<abbr title="Latest release with major updates">Loop 3</abbr>.0.0)<a class="headerlink" href="#prepare-loopkit-module-loop-300" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>0d5929e677e8fa6526860ba9538f1317067f7802
+</code></pre></div>
+<h4 id="prepare-omnible-module-loop-300">Prepare OmniBLE Module (<abbr title="Latest release with major updates">Loop 3</abbr>.0.0)<a class="headerlink" href="#prepare-omnible-module-loop-300" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>6d9b57d6491449c691f42c1a33d40300e985a714
+</code></pre></div>
+<h4 id="prepare-rileylink_ios-module-loop-300">Prepare rileylink_ios Module (<abbr title="Latest release with major updates">Loop 3</abbr>.0.0)<a class="headerlink" href="#prepare-rileylink_ios-module-loop-300" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>482ef4fb972e1d5456f66990434d1069e5cba223
+</code></pre></div>
+<h3 id="create-the-custom-branch">Create the Custom Branch<a class="headerlink" href="#create-the-custom-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy and paste the next command to create a special <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> that matches the released code for this Module.</p>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>main_3.0
+</code></pre></div>
+<p>You should see the response: <code>Switched to a new branch 'main_3.0'</code></p>
+<p>Assuming no error, copy and paste these commands next. You will see a popup asking you if you want to paste multiple lines. Say yes and check the box to not ask again.</p>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main_3.0
+git<span class="w"> </span>pull
+git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>main_3.0_custom
+git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main_3.0_custom
+</code></pre></div>
+<p>You should see the items you pasted in the terminal followed by responses talking about the <code>remote</code> (your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="contains project files and each file's revision history">repository</abbr>) and how to create a pull request; that you are already up to date; that you switched to a new <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then another <code>remote</code> message. Your screen should be similar to the graphic below.</p>
+<p align="center"><img alt="Codespaces screen after setting up branches" src="../img/codespace-new-branches-loop.png" width="750" /></p>
+<div class="admonition success">
+<p class="admonition-title">What did those steps accomplish?</p>
+<p>You now have 3 branches in your Codespace (local) and your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (remote) versions of your <abbr title="contains project files and each file's revision history">repository</abbr> for this Module:</p>
+<ul>
+<li>dev</li>
+<li>main_3.0</li>
+<li>main_3.0_custom</li>
+</ul>
+<p>Right now main_3.0 and main_3.0_custom are identical and match the released copy for that Module.</p>
+<p>Next step, you will modify main_3.0_custom.</p>
+</div>
+<p>Skip ahead to <a href="#customize-the-module">Customize the Module</a> and make the changes to this <abbr title="version of code within a single repository or workspace repository">branch</abbr> that you want for your Module.</p>
+<h2 id="update-customization">Update Customization<a class="headerlink" href="#update-customization" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you are returning to change a customization you've already made, follow these directions.</p>
+<ol>
+<li>Right click (or control click) on <a href="https://github.com/codespaces">Codespaces</a><ul>
+<li>This opens a new tab in your browser</li>
+</ul>
+</li>
+<li>Click on the Codespace tab at the top center<ol>
+<li>If your Codespace for this Module already exists (list at bottom of browser window), you just need to open it (click on 3 dots and choose open in browser)</li>
+<li>If your Codespace for this Module does not exist:<ul>
+<li>Click on the green button on the right that says <code>New Codespace</code></li>
+<li>Click on Select a <abbr title="contains project files and each file's revision history">repository</abbr> and choose your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username/moduleName for the Module you want to modify</li>
+<li>Select your customized <abbr title="version of code within a single repository or workspace repository">branch</abbr>, e.g., main_3.0_custom</li>
+<li>You do not need to modify the region or machine type</li>
+<li>Click on the green button at the bottom that says <code>Create codespace</code></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>A message appears saying setting up your codespace; and then the Codespaces screen appears showing the README.md file (by default) for that <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>In the terminal window, you should see the line: 
+    <code>@username -&gt; /workspaces/moduleName (main_3.0_custom) $</code></li>
+</ol>
+<p>Continue with <a href="#customize-the-module">Customize the Module</a>.</p>
+<h3 id="customize-the-module">Customize the Module<a class="headerlink" href="#customize-the-module" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You will be using the <a href="../../build/code_customization/">Code Customization</a> page. Best to open that in a separate browser window so you can go back and forth.</p>
+<p>For each modification, there is a <code>Key_Phrase</code> to help you find the line of code.</p>
+<p>Click on the codespaces magnifying glass, paste the <code>Key_Phrase</code> into the search bar. If you use the copy icon and paste the <code>Key_Phrase</code>, you'll need to hit backspace to remove the extra return.</p>
+<p>TO DO - put in a <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> showing making changes.</p>
+<p>Make the change and save the file.</p>
+<p>The source control icon now has a number showing. The number is how many different files in this Module that you have modified.</p>
+<p>This "cookbook" has you modify all the items in the Module at once and then save that to your <abbr title="contains project files and each file's revision history">repository</abbr>. There are many ways to do this. If you want to save (<abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>) each change separately, that is fine.</p>
+<p>Repeat this process for all items you wish to change in this Module. Note that some customizations change the same file, so in that case, the number by the source control icon will not increase each time you make a change.</p>
+<p>The graphic below shows 2 files ready to <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>:</p>
+<p align="center"><img alt="GitHub screen after modifying the custom branch" src="../img/codespace-ready-to-stage.png" width="750" /></p>
+<p>When you are done with the changes for this Module, you will need to:</p>
+<ol>
+<li>Stage the modified file(s)<ul>
+<li>Tap the + icon to right of each file</li>
+</ul>
+</li>
+<li>Add a <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> message (not required but good practice)</li>
+<li>Commit the change (to your local copy in Codespaces)</li>
+<li>Sync the change (to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a copy of code in a github repository other than the original">fork</abbr>)</li>
+</ol>
+<p>You will see a warning <code>This action will pull and push commits from and to "origin/main_3.0_custom".</code></p>
+<p>Select `OK, don't show again'</p>
+<p>If you see message: <code>Do you want to periodically run git fetch</code> - say No</p>
+<p>You are done with this module. </p>
+<p>Click the Codespaces icon at bottom left.
+Choose Stop Codespace from the menu. Don't worry about the changes won't be saved message - you just saved the changes with the sync command above.</p>
+<p>The screen will then show the Codespace is stopped message. You can close the tab.</p>
+<p>Return to your github account and look at the <abbr title="contains project files and each file's revision history">repository</abbr> for the Module you just changed. It should be similar to the graphic below.</p>
+<p align="center"><img alt="GitHub screen after modifying the custom branch" src="../img/github-custom-branch-loop.png" width="750" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Advanced Method</p>
+<p>If you want to create a patch for this modification that you might be able to use again with the next release, there are instructions under <a href="#advanced-topic-create-a-patch">Advanced Topic: Create a Patch</a></p>
+</div>
+<p>Move on to the next module, repeating all these steps in <a href="#open-module-in-codespaces">Open Module in Codespaces</a>.</p>
+<h2 id="update-loopworkspace">Update LoopWorkspace<a class="headerlink" href="#update-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The final step is to update your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> to use these commits instead of the ones the released code uses.</p>
+<p>This "cookbook" tells you one method to do that. There are other ways.</p>
+<p>Open your text-only editor (you could do this in the same file where you save your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> if you want).</p>
+<p>Create one line for each module.</p>
+<ul>
+<li>The beginning of the line is: <code>git update-index --cacheinfo 160000</code></li>
+<li>The middle of the line is: <code>the full SHA-1 (instructions below)</code></li>
+<li>The end of the line is the cased-sensitive moduleName in double quotes: <code>"moduleName"</code></li>
+</ul>
+<p>In other words you will have 1 or more lines in your text file (these examples have nonsense <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> that you must replace with your actual values):</p>
+<div class="copy highlight"><span class="filename">Example lines to copy and paste and then modify</span><pre><span></span><code>git<span class="w"> </span>update-index<span class="w"> </span>--cacheinfo<span class="w"> </span><span class="m">160000</span><span class="w"> </span>0123456789abcdef0123456789abcdef01234567<span class="w"> </span><span class="s2">&quot;Loop&quot;</span>
+git<span class="w"> </span>update-index<span class="w"> </span>--cacheinfo<span class="w"> </span><span class="m">160000</span><span class="w"> </span>0123456789abcdef0123456789abcdef01234567<span class="w"> </span><span class="s2">&quot;LoopKit&quot;</span>
+git<span class="w"> </span>update-index<span class="w"> </span>--cacheinfo<span class="w"> </span><span class="m">160000</span><span class="w"> </span>0123456789abcdef0123456789abcdef01234567<span class="w"> </span><span class="s2">&quot;OmniBLE&quot;</span>
+git<span class="w"> </span>update-index<span class="w"> </span>--cacheinfo<span class="w"> </span><span class="m">160000</span><span class="w"> </span>0123456789abcdef0123456789abcdef01234567<span class="w"> </span><span class="s2">&quot;rileylink_ios&quot;</span>
+</code></pre></div>
+<p>For each Module you customized, return to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a copy of code in a github repository other than the original">fork</abbr> for that Module (<code>https://github.com/username/moduleName</code>) to get the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for that Module.</p>
+<ul>
+<li>Click on the <abbr title="version of code within a single repository or workspace repository">branch</abbr> and choose main_3.0_custom</li>
+<li>Click on the clock item to the right<ul>
+<li>This brings up the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history screen</li>
+<li>Your last <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> should be the top one</li>
+<li>Click on the copy full <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> icon</li>
+<li>Replace the nonsense <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for the Module with this real one in your text file where you are preparing the commands</li>
+</ul>
+</li>
+</ul>
+<p>Prepare the commands for each Module customization you want for this build in your text file.</p>
+<h3 id="first-modification">First Modification<a class="headerlink" href="#first-modification" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Only use this section if you have not previously created the main_3.0_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> for LoopWorkspace.</p>
+<p>Open the Codespace and select your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace <strong>main</strong> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>Copy and paste the following lines into your terminal:</p>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>main_3.0_custom
+git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main_3.0_custom
+</code></pre></div>
+<p>Then skip ahead to <a href="#modify-loopworkspace">Modify LoopWorkspace</a>.</p>
+<h3 id="subsequent-modifications">Subsequent Modifications<a class="headerlink" href="#subsequent-modifications" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Only use this section if you have created the main_3.0_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> for LoopWorkspace; but want to add a new modification.</p>
+<p>Open (or reopen) the Codespace and select your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace <strong>main_3.0_custom</strong> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<h3 id="modify-loopworkspace">Modify LoopWorkspace<a class="headerlink" href="#modify-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy and paste your prepared lines into the terminal.</p>
+<p>Click on the source control icon - your changes are already staged. </p>
+<p>Type a message in the comment and click Commit.</p>
+<p>Click on sync changes.</p>
+<p>Return to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> window for LoopWorkspaces.</p>
+<ul>
+<li>Modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> to be main_3.0_custom</li>
+<li>Click on Action: Build Loop</li>
+</ul>
+<p>In about 1 hour, your customized Loop will be available for installation on your phone via <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
+<h2 id="special-cases">Special Cases<a class="headerlink" href="#special-cases" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="existing-fork-for-module">Existing Fork for Module<a class="headerlink" href="#existing-fork-for-module" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>What if you already have a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of one of the modules?</p>
+<h4 id="situation-1">Situation 1<a class="headerlink" href="#situation-1" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><strong>Your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is from using this page earlier and you already have a main_#.#_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr></strong></p>
+<ul>
+<li>Option A: You want to add a new customization to your existing main_#.#_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr><ul>
+<li>Go to <a href="#update-customization">Update Customization</a></li>
+</ul>
+</li>
+<li>Option B: You want to throw away your existing main_#.#_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> and start over<ul>
+<li>Follow the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Instructions to delete a <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></li>
+<li>Click on Code, make sure you are at the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> and sync the <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+<li>Go to <a href="#open-module-in-codespaces">Open Module in Codespaces</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="situation-2">Situation 2<a class="headerlink" href="#situation-2" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><strong>Your existing <abbr title="a copy of code in a github repository other than the original">fork</abbr> is from the correct location (LoopKit or ps2)</strong></p>
+<ul>
+<li>Option A: Your existing <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr><ul>
+<li>Tap on sync <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+<li>Go to <a href="#open-module-in-codespaces">Open Module in Codespaces</a></li>
+</ul>
+</li>
+<li>Option B: You probably know what to do or this would not be your situation - ask for help if you are confused</li>
+</ul>
+<h4 id="situation-3">Situation 3<a class="headerlink" href="#situation-3" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><strong>Your existing <abbr title="a copy of code in a github repository other than the original">fork</abbr> is from a username other than (LoopKit or ps2)</strong></p>
+<p>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is from loopnlearn then you need to follow the directions (that are not written yet) on the loopandlearn dot org website.</p>
+<p>If you know this is a <abbr title="a copy of code in a github repository other than the original">fork</abbr> you do not care about, you can delete the <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<ul>
+<li>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Docs</a></li>
+</ul>
+<p>Once deleted, go to <a href="#create-a-fork-for-selected-module">Create a Fork for Selected Module</a>.</p>
+<h3 id="advanced-topic-create-a-patch">Advanced Topic: Create a Patch<a class="headerlink" href="#advanced-topic-create-a-patch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you want to create a text file with a patch for your customization, you will take a few extra steps. Refer to the figure and the steps below it.</p>
+<p align="center"><img alt="GitHub screen after modifying the custom branch" src="../img/github-custom-branch-loop.png" width="750" /></p>
+<p>If you don't see the green <code>Compare &amp; pull request</code> icon, modify the following <abbr title="website address (Uniform Resource Locator)">URL</abbr> with your username and the desired Module name and click on the <code>Create pull request</code> icon instead:</p>
+<div class="highlight"><pre><span></span><code>https://github.com/loopdocs-tester/Loop/compare/main...main_3.0_custom
+</code></pre></div>
+<ul>
+<li>Click on the green <code>Compare &amp; pull request</code> icon<ul>
+<li>Change the LoopKit (or ps2) username to your username</li>
+<li>Change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> from dev to main_3.0</li>
+<li>Scroll down to review the changes you just made</li>
+</ul>
+</li>
+<li>Then click the green Create pull request button</li>
+<li><strong>DO NOT MERGE</strong> the pull request</li>
+<li>Click in the <abbr title="website address (Uniform Resource Locator)">URL</abbr> for the browser</li>
+<li>At the end of the <abbr title="website address (Uniform Resource Locator)">URL</abbr>, add <code>.patch</code> and hit return</li>
+</ul>
+<p>You now have a "patch" text file. Download and save this file on your computer.</p>
+<p>The default name when you select File-&gt;Save Page As, is 1.patch.txt. It's a good idea to revise this. For the graphic below, the filename was modified to <code>Loop_main_3.0_custom_1.patch.txt</code> and a folder called <code>patches</code> in Downloads was used for storage.</p>
+<p align="center"><img alt="browser screen for saving the patch" src="../img/patch-saved-for-loop.png" width="750" /></p>
+<h2 id="background-information">Background Information<a class="headerlink" href="#background-information" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="loopworkspace">LoopWorkspace<a class="headerlink" href="#loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> is the umbrella organization holding all the pieces needed to build the Loop app. Part of what LoopWorkspace provides is a list of pointers to a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for each module used in the workspace.</p>
+<ul>
+<li>A <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is a specific version of code in a <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>A workspace is a grouping of several repositories (modules) into a complete package</li>
+<li>The workspace includes a list of the specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for each <abbr title="contains project files and each file's revision history">repository</abbr> (module)</li>
+</ul>
+<p>The steps given earlier on this page modifies the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for the module that you change used by LoopWorkspace when it builds.</p>
+<ul>
+<li>A <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to a module can be made without affecting the workspace</li>
+<li>To update the workspace to use the new <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for a module, the list containing the specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for that <abbr title="contains project files and each file's revision history">repository</abbr> (module) must also be updated<ul>
+<li>This update is itself a <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to the workspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
+</ul>
+</li>
+</ul>
+<p>This allows a given module, say Loop, to be updated with a new <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>; but that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> doesn't affect the Loop app that you build using LoopWorkspace. Once you change the LoopWorkspace to point to the new <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> in Loop, then the Loop app you build </p>
+<h3 id="what-are-branches-again">What are branches again?<a class="headerlink" href="#what-are-branches-again" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Branches indicate different version of code - this tutorial is pretty nice.</p>
+<ul>
+<li>The history required for the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> (released code) is also present in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for the <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr></li>
+<li>The commands listed earlier on this page are to assist you in creating your own <abbr title="version of code within a single repository or workspace repository">branch</abbr> and you will customize that <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>If you later want to modify your customization, start with the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you already created and edit it</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../build/code_customization/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Customize Your Loop" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                Customize Your Loop
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../version/simulator/" class="md-footer__link md-footer__link--next" aria-label="Next: Simulator Build" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+                Simulator Build
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
