@@ -210,10 +210,10 @@ git push -q --set-upstream origin main_3.0_custom
 
 You should see the items you pasted in the terminal followed by responses talking about the `remote` (your GitHub repository) and how to create a pull request; that you are already up to date; that you switched to a new branch and then another `remote` message. Your screen should be similar to the graphic below.
 
-![Codespaces screen after setting up branches](img/codespace-new-branches-loop.png){width="500"}
+![Codespaces screen after setting up branches](img/codespace-new-branches-loop.png){width="750"}
 {align="center"}
 
-!!! success "What Happened?"
+!!! success "What did those steps accomplish?"
     You now have 3 branches in your Codespace (local) and your GitHub (remote) versions of your repository for this Module:
 
     * dev
