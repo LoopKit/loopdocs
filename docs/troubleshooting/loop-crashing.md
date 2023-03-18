@@ -4,6 +4,7 @@ If your Loop app crashes immediately upon opening, you have a problem that needs
 
 * If you just built Loop 3.0.0 or just updated the iOS while running Loop 3.0.0
     * The most likely cause is the "[Apple Health Glitch](#apple-health-glitch)"
+    * This problem was fixed in Loop 3.2.0
 * If you are running Loop 2.2.x:
     * The most likely cause of this is your [Loop App Expired](#loop-app-expired)
 
@@ -13,7 +14,9 @@ With Loop version 3.0.0, there is a known glitch that is fixed in the developmen
 
 ### Solution
 
-If the Loop app crashes following a update to version 3.0.0 or an iOS update:
+Long term solution, build Loop 3.2.0 or newer version.
+
+Short term solution if the Loop app crashes following a update to version 3.0.0 or an iOS update:
 
 1. Turn **off** Apple Health permissions for Loop
     * Tap on iOS Settings

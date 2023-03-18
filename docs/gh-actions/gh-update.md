@@ -143,7 +143,8 @@ Scroll all the way to the top of the screen and tap on your LoopWorkspace link. 
 1. Sign in to GitHub and select your LoopWorkspace repository from your repositories list
 1. Look to see if your fork is up to date
     * The dropdown in this graphic shows the dev branch.
-    * To build Loop 3.0, you will want main, which should be the default. For a specific release, such as 3.1.2 (which does not exist - so don't look for it), it will be that specific release.
+    * To build Loop 3.2, you will want main
+    * If you previously build Loop 3.0 with this method - don't forget to update your branch
     * If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}}` - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3
     * If your fork shows a message such as `This branch is 3 commits behind LoopKit:dev` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch`
 
@@ -196,7 +197,7 @@ In the Loop app, once installed on your phone, tap on Settings -> Support -> Iss
 
 ## GitHub Early Adopters
 
-This section is for people who used the GitHub build method before Loop 3.0.0 was released and want to keep using it.
+This section was written for people who used the GitHub build method before Loop 3.0.0 was released and want to keep using it. It needs to be updated because there are some useful instructions here.
 
 There are two steps
 

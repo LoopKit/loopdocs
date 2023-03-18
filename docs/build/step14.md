@@ -95,6 +95,16 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 ### Build Select Script
 
+!!! bug "Loop 3.2 Release"
+    The release of Loop 3.2 makes building even easier. The same build script is used. It always points to the latest version (main branch).
+
+    The LoopWorkspace target pops up automatically
+    
+    * Wait for Xcode to finish preparing
+    * Choose your phone and hit build
+
+    Updated graphics will be updated later.
+
 * With the release of Loop 3, the build process is different and simpler
     * Please read each step as if you are a new builder
     * Don't assume you know what you are doing
@@ -112,6 +122,7 @@ These instructions show each step needed to download Loop using the Build-Select
  
      * Information about [Loop Follow](https://github.com/jonfawcett/LoopFollow#readme)
      * Information about [Loop with Patches](https://www.loopandlearn.org/build-select/)
+        * Warning, the Loop with Patches is updated **after** the main Loop is released. Typically it is updated within a day, but don't assume. Check that link for updates.
  
      You do not need to know about these options to build Loop.
 

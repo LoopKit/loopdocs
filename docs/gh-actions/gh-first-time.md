@@ -56,6 +56,7 @@ This is only available for Loop 3 and greater versions and for Loop development 
     * Check to make sure you did not skip a step
     * Notice - for Loop 3.0, the actions show up alphabetically but they have to be done in A, C, B order
         * Add Identifiers (and do some more stuff), Create Certificates, Build Loop
+    * Loop 3.2 adds a Verify Secrets step and all the steps are numbered so the order makes more sense. Graphics will be updated later.
 
     Different people approach this differently. Choose your method to achieve success:
 
@@ -538,6 +539,12 @@ Once all six secrets have been added to your LoopWorkspace, you are done with Se
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
+## Verify Secrets
+
+This step, new with Loop 3.2.0 checks that the Secrets you added are correct. Some things cannot be verified yet, but most can and a relatively clear error message is provided.
+
+This will be updated soon, but for now - follow the instructions under Add Identifiers for Loop, but do the first action: 1 Verify Secrets.
+
 ## Add Identifiers for Loop
 
 Near the top middle of your LoopWorkspace fork, there is an Actions tab. If you have used Actions on this repository before, skip ahead to [Add Identifiers](#add-identifiers).
@@ -562,7 +569,7 @@ The workflows are now displayed: look at the list on the left side as shown in t
 Refer to the graphic below for the numbered steps:
 
 1. Click on the "Actions" tab of your LoopWorkspace repository
-1. On the left side, click on "Add Identifiers"
+1. On the left side, click on "2. Add Identifiers"
 1. On the right side, click "Run Workflow" to show a drop-down menu
     * You will see your default branch (should be `main`)
     * If your default branch is not `main`, review [GitHub Early Adopters](gh-update.md#github-early-adopters)
@@ -791,7 +798,7 @@ Refer to the graphic below for the numbered steps:
     {align="center"}
 
 1. Wait a minute or two for the action to finish
-    * If this action fails, head over to [Action: Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
+    * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
     * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then Create Certificates. (The Add Identifiers might not be required but it is fast and should be done as a matter of routine.)
 
 ## Build Loop
@@ -799,7 +806,7 @@ Refer to the graphic below for the numbered steps:
 Refer to the graphic below for the first four steps:
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
-1. On the left side, click on "Build Loop".
+1. On the left side, click on "4. Build Loop".
 1. On the right side, click "Run Workflow" to show a drop-down menu
     * You will see your default branch (should be `main`)
     * If your default branch is not `main`, review [GitHub Early Adopters](gh-update.md#github-early-adopters)

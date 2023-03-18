@@ -79,7 +79,7 @@ The list below contains the **minimum** versions of [macOS](step1.md#check-your-
 
 **Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade. Xcode 14.1 is listed instead of 14.0 because that version had a lot of bugs in it.**
 
-**With the release of Loop 3.0.0, this list is pretty simple.**
+**With the release of Loop 3.0.0 and Loop 3.2.0, this list is pretty simple.**
 
 * Xcode 14.1 or higher is required
     * iOS 15.1 is minimum version for phone but 15.7.1 is better (for older phones)
