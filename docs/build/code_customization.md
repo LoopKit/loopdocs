@@ -874,39 +874,4 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
 
 ## Limit Loop HUD Update
 
-Loop 3.0 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (HUD). This was removed after users reported an increase in pod faults. If you are running Loop 3.0 and want to limit the refresh rate, use this customization. This refresh timer will not be present in Loop 3.2, once that is released, and is not in the current version of Loop 3.1 (dev branch).
-
-When the app is open, the HUD is updated using this refresh timer:
-
-* Omnipod DASH: 30 second
-* Omnipod Eros: 60 second
-
-If you are running Loop 3.0.0 and prefer to leave your app open with phone unlocked and plugged in over night, you might want to modify the refreshTimer selection for your type of Omnipod.
-
-``` { .txt .copy title="Key_Phrase" }
-refreshTimer = Timer(timeInterval: .seconds
-```
-
-* Module: OmniBLE
-* DASH Modification
-    * Folder: OmniBLE/OmniBLE/PumpManagerUI
-    * File: OmniBLEHUDProvider.swift, Line: 137
-
-_Code Before Modification (DASH)_
-
-```
-refreshTimer = Timer(timeInterval: .seconds(30) , repeats: true) { [weak self] _ in
-```
-
-* Module: rileylink_ios
-* Eros Modification
-    * Folder: rileylink_ios/OmniKitUI/PumpManager
-    * File: OmnipodHUDProvider.swift, Line: 138
-
-_Code Before Modification (Eros)_
-
-```
-refreshTimer = Timer(timeInterval: .seconds(60) , repeats: true) { [weak self] _ in
-```
-
-The value you enter in seconds is how frequently the HUD updates when the app is open. Note that values greater than 180 seconds for DASH or 300 seconds for Eros will have no effect. That is the minimum time between communication cycles for those pods.
+Loop 3.0 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (HUD). This was removed after users reported an increase in pod faults. If you are running Loop 3.0 and having frequent pod faults, you should build Loop 3.2. The customization that was here has been removed with the release of 3.2.

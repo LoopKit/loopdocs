@@ -35,7 +35,7 @@ After much testing and tweaking, eventually the recipes get the flavors right (b
 
 ## What's going on in the dev branch?
 
-The dev branch, currently v2.3.0, is where the next version of Loop is being developed and tested.
+The dev branch, currently v3.3.0, is where the next version of Loop is being developed and tested.
 
 If you choose to come into a dev branch build, you need to be aware that dev may update code frequently and unannounced in the traditional sense that most users in Looped group or Instagram would see. Developers are not helped by people being in a dev branch if those users are mistakenly thinking of it as a stable master branch with lots of detailed docs to go with it. People should only use a dev branch build if they EDUCATE themselves on the expectations and how to properly manage dev information and updates. People using dev branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.
 

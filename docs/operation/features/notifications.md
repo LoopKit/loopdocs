@@ -28,12 +28,12 @@ The expiration notification pattern is the same as for the Paid Loop App. You ma
         * Profile Expiration count-down in days, as well as expiration date and time
         * Direct link to the LoopDocs How to Update page
 
-#### For Loop 2.2.5 through Loop 3.0
+#### For Loop 2.2.5 through Loop 3.2
 
 If you want to see the expiration date at any time:
 
 * Loop 2.2.5 through 2.2.9: tap on Settings, then tap on Issue Report
-* Loop 3.0.0: tap on Settings, scroll down and tap on Support, then tap on Issue Report
+* Loop 3.x.x: tap on Settings, scroll down and tap on Support, then tap on Issue Report
 
 The expiration date is near the top of the report (to the right of `profileExpiration`).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time is in GMT, so adjust to your own time zone if you procrastinated until the last minute.
 

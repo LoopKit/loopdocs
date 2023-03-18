@@ -19,12 +19,7 @@ Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your 
 
 ## Current Release
 
-The current released version for Loop main is v3.0.0. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
-
-!!! warning "Apple Health Glitch"
-    With Loop 3.0.0 and iOS 16.2 or newer, some people experience the Loop app crashing following build or iOS update.
-
-    Follow directions at [Apple Health Glitch](../troubleshooting/loop-crashing.md#apple-health-glitch) to resolve the issue.
+The current released version for Loop main is v3.2.0. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -40,6 +35,37 @@ Release information is always found on the [GitHub LoopKit/Loop release page](ht
 Be aware that updates to LoopDocs may take some time after a new release comes out.
 
 ## Loop 3 Version History
+
+### Loop v3.2.0
+
+Loop v3.2.0 was released on March 17, 2023.
+
+There are some important bug fixes and new features, so please rebuild to this version as soon as possible.
+
+Pete's announcment:
+
+Loop 3.2 Is released! This contains some very important bug fixes for everyone. If you are running latest dev, you do not need to update, but everyone else running older 3.x versions of Loop should consider upgrading as soon as you can.
+
+[https://github.com/LoopKit/Loop/releases/tag/v3.2.0](https://github.com/LoopKit/Loop/releases/tag/v3.2.0)
+
+Bug Fixes (Please update ASAP):
+
+* Omnipod bolus tracking issue fixed: [link](https://github.com/LoopKit/Loop/issues/1941)
+* Medtronic temp basal tracking issue fixed: [link](https://github.com/ps2/rileylink_ios/pull/775)
+* Crashes caused by large updates from Apple Health fixed
+* Automatic refresh timers for Omnipod (both Dash and Eros) have been removed, to reduce load on pods and reduce frequency of failed pods.
+
+Updates and new Features:
+
+* Missed Meal Notifications. If you want, Loop will detect situations where it looks like you may have consumed carbs but did not enter them into Loop, and will notify you with an easy option to enter the amount, and the time of eating already estimated for you. Find this option in the Alert Management section of Loop settings.
+* Tidepool Service added. This lets you upload your diabetes data from Loop to Tidepool! It is in early stages, so there may be issues. Please report any issues you have with this integration on DIY Loop forums, like Zulip, GitHub, or the Looped group.
+* Translations! Loop now has very good coverage for several languages, including German, Spanish, Italian, French, Danish, Polish, Dutch, Norwegian, Russian, Turkish, and Romanian!
+    * Warning - a few items got overwritten by Spanish - if you can't figure it out, try Google translate
+* A new safeguard restricts automatic dosing to keep your IOB below a limit of 2 times your max bolus. Manual dosing can still be delivered to put your IOB above this amount. [link](https://github.com/LoopKit/Loop/pull/1871)
+* Add missing X-Large watch complications. [link](https://github.com/LoopKit/Loop/pull/1901)
+* “Deactivate Pod” button on some screens changed to not be so alarming, as it doesn’t actually deactivate the pod, but takes you to a screen where you can, and has an option to cancel: [link](https://github.com/LoopKit/OmniBLE/pull/76)
+
+
 
 ### Loop v3.0.0
 

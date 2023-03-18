@@ -14,9 +14,9 @@ Several methods to build Loop-dev are mentioned on this page:
 ## Build Loop dev with a Script
 
 !!! danger "No Script for dev"
-    There was interim script that was provided for users in the time just before the release of Loop 3.0.0. It helped build a lightly-tested version of the dev branch.
+    There was interim script that was provided for users in the time just before the release of Loop 3. It helped build a lightly-tested version of the dev branch.
 
-    * With the release of Loop 3.0.0, this script is no longer available
+    * After the release of Loop 3, this script is no longer available
     * It was provided as a convenience for users who wanted DASH but were not comfortable with the requirements of building a dev branch
     * People should either be on the released version of Loop or know how to build dev without a script using either the GitHub or Mac-Xcode method
 
@@ -64,10 +64,10 @@ With the release of Loop 3, the numbering for Loop-dev has a new pattern of even
 
 For example:
 
-* Loop 3.0.0 is the released version
+* Loop 3.0.0 was the first released version of Loop 3
     * If minor updates are required before the next release, they will be numbered Loop 3.0.1, etc.
-* Loop 3.1.0 is the development version
-* Loop 3.2.0 will be the next released version
+* Loop 3.1.0 was the development version before Loop 3.2.0 was released
+* Loop 3.2.0 is the next released version
 
 ### Identify Loop-dev Version
 
