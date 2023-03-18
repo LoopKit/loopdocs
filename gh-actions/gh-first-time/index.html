@@ -840,6 +840,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#verify-secrets" class="md-nav__link">
+    Verify Secrets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#add-identifiers-for-loop" class="md-nav__link">
     Add Identifiers for Loop
   </a>
@@ -2670,6 +2677,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#verify-secrets" class="md-nav__link">
+    Verify Secrets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#add-identifiers-for-loop" class="md-nav__link">
     Add Identifiers for Loop
   </a>
@@ -2905,6 +2919,7 @@
 <li>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> (and do some more stuff), Create Certificates, Build Loop</li>
 </ul>
 </li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr>.2 adds a Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> step and all the steps are numbered so the order makes more sense. Graphics will be updated later.</li>
 </ul>
 <p>Different people approach this differently. Choose your method to achieve success:</p>
 <ul>
@@ -3436,6 +3451,9 @@
 <p class="admonition-title">Time for a Break?</p>
 <p>This is a good place to pause if you need to. Just note where you are on the page so you can return later.</p>
 </div>
+<h2 id="verify-secrets">Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#verify-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>This step, new with <abbr title="Latest release with major updates">Loop 3</abbr>.2.0 checks that the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> you added are correct. Some things cannot be verified yet, but most can and a relatively clear error message is provided.</p>
+<p>This will be updated soon, but for now - follow the instructions under Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop, but do the first action: 1 Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>.</p>
 <h2 id="add-identifiers-for-loop">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop<a class="headerlink" href="#add-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Near the top middle of your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>, there is an <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> tab. If you have used <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> on this <abbr title="contains project files and each file's revision history">repository</abbr> before, skip ahead to <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
 <h3 id="first-use-of-actions-tab">First Use of <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> Tab<a class="headerlink" href="#first-use-of-actions-tab" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -3453,7 +3471,7 @@
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
-<li>On the left side, click on "Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>"</li>
+<li>On the left side, click on "2. Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>"</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
 <li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
 <li>If your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not <code>main</code>, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a></li>
@@ -3725,7 +3743,7 @@
 <li>
 <p>Wait a minute or two for the action to finish</p>
 <ul>
-<li>If this action fails, head over to <a href="../gh-errors/#action-create-certificates-errors">Action: Create Certificates Errors</a></li>
+<li>If this action fails, head over to <a href="../gh-errors/#action-create-certificates-errors">Action: 3. Create Certificates Errors</a></li>
 <li>Once you've resolved the error, repeat the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and then Create Certificates. (The Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> might not be required but it is fast and should be done as a matter of routine.)</li>
 </ul>
 </li>
@@ -3734,7 +3752,7 @@
 <p>Refer to the graphic below for the first four steps:</p>
 <ol>
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
-<li>On the left side, click on "Build Loop".</li>
+<li>On the left side, click on "4. Build Loop".</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
 <li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
 <li>If your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not <code>main</code>, review <a href="../gh-update/#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a></li>

@@ -3627,38 +3627,7 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
 } else if let lastLoopCompleted = self.lastLoopCompleted {
 </code></pre></div>
 <h2 id="limit-loop-hud-update">Limit Loop <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Update<a class="headerlink" href="#limit-loop-hud-update" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><abbr title="Latest release with major updates">Loop 3</abbr>.0 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (<abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>). This was removed after users reported an increase in pod faults. If you are running <abbr title="Latest release with major updates">Loop 3</abbr>.0 and want to limit the refresh rate, use this customization. This refresh timer will not be present in <abbr title="Latest release with major updates">Loop 3</abbr>.2, once that is released, and is not in the current version of <abbr title="Latest release with major updates">Loop 3</abbr>.1 (dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>).</p>
-<p>When the app is open, the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> is updated using this refresh timer:</p>
-<ul>
-<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH: 30 second</li>
-<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Eros: 60 second</li>
-</ul>
-<p>If you are running <abbr title="Latest release with major updates">Loop 3</abbr>.0.0 and prefer to leave your app open with phone unlocked and plugged in over night, you might want to modify the refreshTimer selection for your type of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr>.</p>
-<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>refreshTimer = Timer(timeInterval: .seconds
-</code></pre></div>
-<ul>
-<li>Module: OmniBLE</li>
-<li>DASH Modification<ul>
-<li>Folder: OmniBLE/OmniBLE/PumpManagerUI</li>
-<li>File: OmniBLEHUDProvider.swift, Line: 137</li>
-</ul>
-</li>
-</ul>
-<p><em>Code Before Modification (DASH)</em></p>
-<div class="highlight"><pre><span></span><code>refreshTimer = Timer(timeInterval: .seconds(30) , repeats: true) { [weak self] _ in
-</code></pre></div>
-<ul>
-<li>Module: rileylink_ios</li>
-<li>Eros Modification<ul>
-<li>Folder: rileylink_ios/OmniKitUI/PumpManager</li>
-<li>File: OmnipodHUDProvider.swift, Line: 138</li>
-</ul>
-</li>
-</ul>
-<p><em>Code Before Modification (Eros)</em></p>
-<div class="highlight"><pre><span></span><code>refreshTimer = Timer(timeInterval: .seconds(60) , repeats: true) { [weak self] _ in
-</code></pre></div>
-<p>The value you enter in seconds is how frequently the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> updates when the app is open. Note that values greater than 180 seconds for DASH or 300 seconds for Eros will have no effect. That is the minimum time between communication cycles for those pods.</p>
+<p><abbr title="Latest release with major updates">Loop 3</abbr>.0 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (<abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>). This was removed after users reported an increase in pod faults. If you are running <abbr title="Latest release with major updates">Loop 3</abbr>.0 and having frequent pod faults, you should build <abbr title="Latest release with major updates">Loop 3</abbr>.2. The customization that was here has been removed with the release of 3.2.</p>
 
 
 

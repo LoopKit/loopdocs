@@ -1800,6 +1800,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-v320" class="md-nav__link">
+    Loop v3.2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loop-v300" class="md-nav__link">
     Loop v3.0.0
   </a>
@@ -2406,6 +2413,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-v320" class="md-nav__link">
+    Loop v3.2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loop-v300" class="md-nav__link">
     Loop v3.0.0
   </a>
@@ -2550,12 +2564,7 @@
 </li>
 </ul>
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for Loop main is v3.0.0. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).</p>
-<div class="admonition warning">
-<p class="admonition-title">Apple Health Glitch</p>
-<p>With <abbr title="Latest release with major updates">Loop 3</abbr>.0.0 and <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16.2 or newer, some people experience the Loop app crashing following build or <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> update.</p>
-<p>Follow directions at <a href="../../troubleshooting/loop-crashing/#apple-health-glitch">Apple Health Glitch</a> to resolve the issue.</p>
-</div>
+<p>The current released version for Loop main is v3.2.0. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the Settings icon at the bottom of the Loop app main screen and look at the version information at upper left. This graphic was generated with an older version, Loop 2.2.8.</p>
 <p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.svg" width="400" /></p>
@@ -2563,6 +2572,31 @@
 <p>Release information is always found on the <a href="https://github.com/LoopKit/Loop/releases"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> LoopKit/Loop release page</a>. The information on this LoopDocs page is a summary of that information with a little extra explanation.</p>
 <p>Be aware that updates to LoopDocs may take some time after a new release comes out.</p>
 <h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="loop-v320">Loop v3.2.0<a class="headerlink" href="#loop-v320" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Loop v3.2.0 was released on March 17, 2023.</p>
+<p>There are some important bug fixes and new features, so please rebuild to this version as soon as possible.</p>
+<p>Pete's announcment:</p>
+<p><abbr title="Latest release with major updates">Loop 3</abbr>.2 Is released! This contains some very important bug fixes for everyone. If you are running latest dev, you do not need to update, but everyone else running older 3.x versions of Loop should consider upgrading as soon as you can.</p>
+<p><a href="https://github.com/LoopKit/Loop/releases/tag/v3.2.0">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/Loop/releases/tag/v3.2.0</a></p>
+<p>Bug Fixes (Please update ASAP):</p>
+<ul>
+<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> bolus tracking issue fixed: <a href="https://github.com/LoopKit/Loop/issues/1941">link</a></li>
+<li>Medtronic temp basal tracking issue fixed: <a href="https://github.com/ps2/rileylink_ios/pull/775">link</a></li>
+<li>Crashes caused by large updates from Apple Health fixed</li>
+<li>Automatic refresh timers for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> (both Dash and Eros) have been removed, to reduce load on pods and reduce frequency of failed pods.</li>
+</ul>
+<p>Updates and new Features:</p>
+<ul>
+<li>Missed Meal Notifications. If you want, Loop will detect situations where it looks like you may have consumed carbs but did not enter them into Loop, and will notify you with an easy option to enter the amount, and the time of eating already estimated for you. Find this option in the Alert Management section of Loop settings.</li>
+<li>Tidepool Service added. This lets you upload your diabetes data from Loop to Tidepool! It is in early stages, so there may be issues. Please report any issues you have with this integration on <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> Loop forums, like Zulip, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>, or the Looped group.</li>
+<li>Translations! Loop now has very good coverage for several languages, including German, Spanish, Italian, French, Danish, Polish, Dutch, Norwegian, Russian, Turkish, and Romanian!<ul>
+<li>Warning - a few items got overwritten by Spanish - if you can't figure it out, try Google translate</li>
+</ul>
+</li>
+<li>A new safeguard restricts automatic dosing to keep your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> below a limit of 2 times your max bolus. Manual dosing can still be delivered to put your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> above this amount. <a href="https://github.com/LoopKit/Loop/pull/1871">link</a></li>
+<li>Add missing X-Large watch complications. <a href="https://github.com/LoopKit/Loop/pull/1901">link</a></li>
+<li>“Deactivate Pod” button on some screens changed to not be so alarming, as it doesn’t actually deactivate the pod, but takes you to a screen where you can, and has an option to cancel: <a href="https://github.com/LoopKit/OmniBLE/pull/76">link</a></li>
+</ul>
 <h3 id="loop-v300">Loop v3.0.0<a class="headerlink" href="#loop-v300" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>After several years of development and a lot of testing, <abbr title="Latest release with major updates">Loop 3</abbr> is here!</p>
 <p>Loop v3.0.0 was released on January 14, 2023.</p>
