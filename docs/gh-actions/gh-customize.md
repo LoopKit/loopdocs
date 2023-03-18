@@ -112,7 +112,7 @@ For this portion of the process, work with a single Module until you are done wi
     * Click on Select a repository and choose your GitHub username/moduleName for the module you want to modify (you can start typing your username if there are too many choices)
     * You will see a message the `Codespace usage for this repository is paid for by username` - you get 60 free hours per month, so you can ignore this message
         * First time - leave the branch alone (dev)
-        * Subsequent times - select your customized branch, e.g., main_3.0_custom
+        * Subsequent times - select your customized branch, e.g., main_3.2_custom
     * You do not need to modify the region or machine type
     * Click on the green button at the bottom that says `Create codespace`
 1. A message appears saying setting up your codespace; and then the Codespaces screen appears showing the README.md file (by default) for that repository
@@ -138,7 +138,7 @@ If you have already made a customization in this module and you are returning fo
     * and the current Module replaces moduleName
     * this is where you will paste the command you're about to copy
 
-The commands you paste depend on whether this is the first time you've worked with the Module or if you have already started customizing it and thus already have a main_3.0_custom branch created.
+The commands you paste depend on whether this is the first time you've worked with the Module or if you have already started customizing it and thus already have a main_3.2_custom branch created.
 
 ### First Time for this Module
 
@@ -165,28 +165,28 @@ Copy the selected line for the current module into the terminal. If you see an e
 * Did you copy the correct line for the current Module?
 * Is your Module dev branch up to date?
 
-#### Prepare Loop Module (Loop 3.0.0)
+#### Prepare Loop Module (Loop 3.2.0)
 
 ``` { .sh .copy }
-git checkout -q 743b8d73c4e8c7c74ce0aa22ce767ae8178a4c64
+git checkout -q a1fb919703987bf5daad390f589fec3481953c33
 ```
 
-#### Prepare LoopKit Module (Loop 3.0.0)
+#### Prepare LoopKit Module (Loop 3.2.0)
 
 ``` { .sh .copy }
-git checkout -q 0d5929e677e8fa6526860ba9538f1317067f7802
+git checkout -q 6073eb1f4adaaeeb449589c21f251db2138b2c89
 ```
 
-#### Prepare OmniBLE Module (Loop 3.0.0)
+#### Prepare OmniBLE Module (Loop 3.2.0)
 
 ``` { .sh .copy }
-git checkout -q 6d9b57d6491449c691f42c1a33d40300e985a714
+git checkout -q 41bd40f4f0a074e60e0f9a763358a99519e43dcb
 ```
 
-#### Prepare rileylink_ios Module (Loop 3.0.0)
+#### Prepare rileylink_ios Module (Loop 3.2.0)
 
 ``` { .sh .copy }
-git checkout -q 482ef4fb972e1d5456f66990434d1069e5cba223
+git checkout -q 8a68c41e2ce05e47e1a5707d0c4ad05309bd3861
 ```
 
 ### Create the Custom Branch
@@ -194,21 +194,21 @@ git checkout -q 482ef4fb972e1d5456f66990434d1069e5cba223
 Copy and paste the next command to create a special branch in your fork that matches the released code for this Module.
 
 ``` { .sh .copy }
-git switch -c main_3.0
+git switch -c main_3.2
 ```
 
-You should see the response: `Switched to a new branch 'main_3.0'`
+You should see the response: `Switched to a new branch 'main_3.2'`
 
 Assuming no error, copy and paste these commands next. You will see a popup asking you if you want to paste multiple lines. Say yes and check the box to not ask again.
 
 ``` { .sh .copy }
-git push -q --set-upstream origin main_3.0
+git push -q --set-upstream origin main_3.2
 git pull
-git switch -c main_3.0_custom
-git push -q --set-upstream origin main_3.0_custom
+git switch -c main_3.2_custom
+git push -q --set-upstream origin main_3.2_custom
 ```
 
-You should see the items you pasted in the terminal followed by responses talking about the `remote` (your GitHub repository) and how to create a pull request; that you are already up to date; that you switched to a new branch and then another `remote` message. Your screen should be similar to the graphic below.
+You should see the items you pasted in the terminal followed by responses talking about the `remote` (your GitHub repository) and how to create a pull request; that you are already up to date; that you switched to a new branch and then another `remote` message. Your screen should be similar to the graphic below. (Note: this graphic was prepared for Loop 3.0.0. Now that Loop 3.2.0 is released, your terminal will show the SHA-1 for Loop 3.2.0.)
 
 ![Codespaces screen after setting up branches](img/codespace-new-branches-loop.png){width="750"}
 {align="center"}
@@ -217,12 +217,12 @@ You should see the items you pasted in the terminal followed by responses talkin
     You now have 3 branches in your Codespace (local) and your GitHub (remote) versions of your repository for this Module:
 
     * dev
-    * main_3.0
-    * main_3.0_custom
+    * main_3.2
+    * main_3.2_custom
 
-    Right now main_3.0 and main_3.0_custom are identical and match the released copy for that Module.
+    Right now main_3.2 and main_3.2_custom are identical and match the released copy for that Module.
     
-    Next step, you will modify main_3.0_custom.
+    Next step, you will modify main_3.2_custom.
 
 Skip ahead to [Customize the Module](#customize-the-module) and make the changes to this branch that you want for your Module.
 
@@ -237,12 +237,12 @@ If you are returning to change a customization you've already made, follow these
     1. If your Codespace for this Module does not exist:
         * Click on the green button on the right that says `New Codespace`
         * Click on Select a repository and choose your GitHub username/moduleName for the Module you want to modify
-        * Select your customized branch, e.g., main_3.0_custom
+        * Select your customized branch, e.g., main_3.2_custom
         * You do not need to modify the region or machine type
         * Click on the green button at the bottom that says `Create codespace`
 1. A message appears saying setting up your codespace; and then the Codespaces screen appears showing the README.md file (by default) for that repository
 1. In the terminal window, you should see the line: 
-    ```@username -> /workspaces/moduleName (main_3.0_custom) $```
+    ```@username -> /workspaces/moduleName (main_3.2_custom) $```
 
 Continue with [Customize the Module](#customize-the-module).
 
@@ -277,7 +277,7 @@ When you are done with the changes for this Module, you will need to:
 1. Commit the change (to your local copy in Codespaces)
 1. Sync the change (to your GitHub fork)
 
-You will see a warning `This action will pull and push commits from and to "origin/main_3.0_custom".`
+You will see a warning `This action will pull and push commits from and to "origin/main_3.2_custom".`
 
 Select `OK, don't show again'
 
@@ -325,7 +325,7 @@ git update-index --cacheinfo 160000 0123456789abcdef0123456789abcdef01234567 "ri
 
 For each Module you customized, return to your GitHub fork for that Module (`https://github.com/username/moduleName`) to get the SHA-1 for that Module.
 
-* Click on the branch and choose main_3.0_custom
+* Click on the branch and choose main_3.2_custom
 * Click on the clock item to the right
     * This brings up the commit history screen
     * Your last commit should be the top one
@@ -336,24 +336,24 @@ Prepare the commands for each Module customization you want for this build in yo
 
 ### First Modification
 
-Only use this section if you have not previously created the main_3.0_custom branch for LoopWorkspace.
+Only use this section if you have not previously created the main_3.2_custom branch for LoopWorkspace.
 
 Open the Codespace and select your fork of LoopWorkspace **main** branch.
 
 Copy and paste the following lines into your terminal:
 
 ``` { .sh .copy }
-git switch -c main_3.0_custom
-git push -q --set-upstream origin main_3.0_custom
+git switch -c main_3.2_custom
+git push -q --set-upstream origin main_3.2_custom
 ```
 
 Then skip ahead to [Modify LoopWorkspace](#modify-loopworkspace).
 
 ### Subsequent Modifications
 
-Only use this section if you have created the main_3.0_custom branch for LoopWorkspace; but want to add a new modification.
+Only use this section if you have created the main_3.2_custom branch for LoopWorkspace; but want to add a new modification.
 
-Open (or reopen) the Codespace and select your fork of LoopWorkspace **main_3.0_custom** branch.
+Open (or reopen) the Codespace and select your fork of LoopWorkspace **main_3.2_custom** branch.
 
 ### Modify LoopWorkspace
 
@@ -367,7 +367,7 @@ Click on sync changes.
 
 Return to your GitHub window for LoopWorkspaces.
 
-* Modify the default branch to be main_3.0_custom
+* Modify the default branch to be main_3.2_custom
 * Click on Action: Build Loop
 
 In about 1 hour, your customized Loop will be available for installation on your phone via TestFlight.
@@ -420,12 +420,12 @@ If you want to create a text file with a patch for your customization, you will 
 If you don't see the green `Compare & pull request` icon, modify the following URL with your username and the desired Module name and click on the `Create pull request` icon instead:
 
 ```
-https://github.com/loopdocs-tester/Loop/compare/main...main_3.0_custom
+https://github.com/loopdocs-tester/Loop/compare/main...main_3.2_custom
 ```
 
 * Click on the green `Compare & pull request` icon
     * Change the LoopKit (or ps2) username to your username
-    * Change the branch from dev to main_3.0
+    * Change the branch from dev to main_3.2
     * Scroll down to review the changes you just made
 * Then click the green Create pull request button
 * **DO NOT MERGE** the pull request
@@ -434,7 +434,7 @@ https://github.com/loopdocs-tester/Loop/compare/main...main_3.0_custom
 
 You now have a "patch" text file. Download and save this file on your computer.
 
-The default name when you select File->Save Page As, is 1.patch.txt. It's a good idea to revise this. For the graphic below, the filename was modified to `Loop_main_3.0_custom_1.patch.txt` and a folder called `patches` in Downloads was used for storage.
+The default name when you select File->Save Page As, is 1.patch.txt. It's a good idea to revise this. For the graphic below, the filename was modified to `Loop_main_3.2_custom_1.patch.txt` and a folder called `patches` in Downloads was used for storage.
 
 ![browser screen for saving the patch](img/patch-saved-for-loop.png){width="750"}
 {align="center"}
