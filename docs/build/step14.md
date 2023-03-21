@@ -95,7 +95,7 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 ### Build Select Script
 
-!!! bug "Loop 3.2 Release"
+!!! info "Loop 3.2 Release"
     The release of Loop 3.2 makes building even easier. The same build script is used. It always points to the latest version (main branch).
 
     The LoopWorkspace target pops up automatically
