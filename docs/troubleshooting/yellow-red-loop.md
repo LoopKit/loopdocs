@@ -52,6 +52,7 @@ If the indication is one of these (or something similar), it can probably be fix
 * pump history is too old
 * no rileylink could be found
 * pod cannot be reached
+* the `Unable to Reach Pump` modal screen is visible
 
 Do these steps until one of them fixes the issue:
 

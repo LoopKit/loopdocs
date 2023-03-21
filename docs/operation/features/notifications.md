@@ -2,6 +2,20 @@
 
 Loop provides discrete notifications on the iPhone and Watch which will appear on the (locked) screen and vibrate, depending on your notification settings of Loop.
 
+## Loop Alert - Unable to Reach Pump
+
+With Loop 3, there is a new modal alert that halts all Loop activity until pump communication can be restored.
+
+![alert that pump communication was lost at a critical time](img/alert-unable-to-reach-pump.png){width="500"}
+{align="center"}
+
+When you tap on the Learn More button, another screen appears. The only option allowed on the second screen is to give up and discard the pump (or pod) or continue to wait. The second screen is there if you need to tell Loop you will not be able to restore communication and it should treat the last attempt to send a command as uncertain. Loop will then allow you to add a new pod or new Medtronic pump or switch to a different insulin delivery device. 
+
+**Only do this if bringing your phone and pump into close proximity, waiting a few minutes and then trying the [Reset Loop-to-Pump Communications](../../troubleshooting/yellow-red-loop.md#reset-loop-to-pump-communications) suggestions are not successful.**
+
+!!! info "Why Stop all Activity?"
+    When communication is interrupted at a critical moment in the communication cycle, Loop cannot provide a reliable calculation for IOB. When that happens a warning screen similar to the graphic above appears on your device. You cannot do anything but wait for Loop to restore communications or give up on that device.
+
 ## Loop App Expiration Notification
 
 Profile expiration notification was added with Loop 2.2.5.
@@ -20,15 +34,11 @@ The expiration notification pattern is the same as for the Paid Loop App. You ma
 
 ## Loop App Expiration Date
 
-!!! tip "Coming Soon"
-    Available in dev now; will be in the next release:
+#### For Loop 3.2.x and newer versions
 
-    * A new **App Profile** section was added to the bottom of the Loop Settings screen
-    * Valid for Mac-Xcode builds
-        * Profile Expiration count-down in days, as well as expiration date and time
-        * Direct link to the LoopDocs How to Update page
+The expiration date is found in the [App Profile](../../loop-3/settings.md#app-profile) section at the bottom of the Loop Settings screen.
 
-#### For Loop 2.2.5 through Loop 3.2
+#### For Loop 2.2.5 through Loop 3.0
 
 If you want to see the expiration date at any time:
 

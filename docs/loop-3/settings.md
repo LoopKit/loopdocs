@@ -1,6 +1,6 @@
 ## Loop Settings Screen
 
-The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the [Toolbar](displays_v3.md#toolbar) on the app [home screen](displays_v3.md#main-loop-screen).
+The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the [Toolbar](displays_v3.md#toolbar) on the [Main Loop Screen](displays_v3.md#main-loop-screen).
 
 ![settings screen for loop 3](img/loop-3-settings.svg){width="250"}
 {align="center"}
@@ -146,7 +146,7 @@ Please refer to the [Optional: Service](../operation/loop-settings/services.md) 
 
 ## Support
 
-The Support section enables the user to provide output data about the app. This information can be very helpful to folks trying to assist with problem reports.
+The Support section enables the user to provide output data ([Loop Report](#issue-report) and/or [Critical Logs](#export-critical-event-logs)) about the app. This information can be very helpful to folks trying to assist with problem reports.
 
 The graphic below shows the screen provided when you tap on the Support row at the bottom of the Settings screen.
 
@@ -155,7 +155,7 @@ The graphic below shows the screen provided when you tap on the Support row at t
 
 ### `Issue Report`
 
-Tap on the `Issue Report` row, on the graphic above, to create a Loop Report text file with a lot of useful information for the mentors or developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to send it to yourself.
+Tap on the `Issue Report` row, on the graphic above, to create a Loop Report text file with a lot of useful information for the mentors or developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to save the report.
 
 !!! note "Issue vs `Issue Report`"
     Be aware:
@@ -164,6 +164,11 @@ Tap on the `Issue Report` row, on the graphic above, to create a Loop Report tex
     * `Issue Report` is an action in Loop app to provide information you may need when you ask for help: refer to [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
 
 It's a good idea to use the `Issue Report` button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
+
+!!! tip "Pro Tip"
+    The Loop Reports can be saved in the Files section on your iPhone. I have a folder on my phone Files named Loop Reports.
+
+    You can upload them to zulipchat from your phone (new feature) using the paperclip in the zulipchat app. (Don't see a paperclip - update your app.)
 
 ### Submit Bug Report
 
@@ -186,4 +191,40 @@ In either case, the first action should be to add a term or phrase to the search
 
 ### Export Critical Event Logs
 
-The last row creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting. Once the compressed file is created, you can then send it to yourself and later share it with the developers if they request it.  You can always discard these if you resolve the problem on your own.
+The last row under Support creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting. Once the compressed file is created, you can save it and later share it with the developers if they request it.  You can always discard these if you resolve the problem on your own.
+
+!!! tip "Pro Tip"
+    The Critical Logs zip file can be saved in the Files section on your iPhone. I have a folder on my phone Files named Critical Logs.
+
+    You can upload them to zulipchat from your phone (new feature) using the paperclip in the zulipchat app. (Don't see a paperclip - update your app.)
+
+#### Critical Log Format
+
+The critical logs use a JSON (JavaScript Object Notation) format.
+
+Each day (in user's local time) has the following files:
+
+* Alerts.json
+* Carbs.json
+* DeviceLog.json
+* Doses.json
+* DosingDecisions.json
+* Glucoses.json
+* Settings.json
+
+The JSON file for each day are zipped into one file for that day and then the zip files are again zipped into a single file that you can save. The current day (up to the current time) is combined with the previous day's data.
+
+The time stamps within the JSON files are GMT.
+
+## App Profile
+
+The Profile Expiration is reported at the bottom of the Settings display along with the number of days remaining before Loop stops working.
+
+The link for `How to update (LoopDocs)` is provided for Mac/Xcode build.
+
+In fine print, the exact date and time of the expiration is reported.
+
+![display of profile expiration appropriate for mac/xcode build method](img/app-profile.png){width="350"}
+{align="center"}
+
+The Profile Expiration is different for GitHub Browser Build method. A feature request is in place (but not yet added to the code) to report the TestFlight expiration for that build method.

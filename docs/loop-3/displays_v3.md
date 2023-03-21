@@ -75,7 +75,17 @@ The graph at the top of this view will match your Glucose Chart. Below this char
 ![Plot of insulin on board (IOB); active amount above or below basal using insulin type](../operation/loop-settings/img/active_insulin.jpg){width="400"}
 {align="center"}
 
-The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive or negative.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the (for Medtronic) pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered). The opposite is true for Omnipods. If a message is sent from Loop, it assumes the pod got the message and enacted it - even if the acknowledgement is not received.  Later, when communication is restored, if a command was not enacted by the pod, the Event History is updated.
+The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive or negative.  Negative IOB results from the suspension of normally scheduled basals.
+
+The active insulin displayed in the upper right corner of the chart updates as soon as Loop issues a command to your pump.
+
+It may later be modified and the Event History updated if:
+
+* The command does not go through and Loop is sure it did not go through
+* The user cancels a bolus
+* The user cancels a temp basal
+
+There are some times when communication is interrupted at a critical moment in the communication cycle. When that happens the [Loop Alert - Unable to Reach Pump](../operation/features/notifications.md#loop-alert-unable-to-reach-pump) modal screen appears on your device. Typically, this resolves by itself. Click the link above for more information.
 
 **Medtronic Only**: So long as you have Event History as the Preferred Data Source in Loop settings, primed insulin deliveries (e.g., cannula fills or manual primes) will not be counted towards IOB.
 

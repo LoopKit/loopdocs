@@ -109,6 +109,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Issue**: On github - a formal method to report a problem, either code behavior or documentation
 
+**JSON**: JavaScript Object Notation; a standard data interchange format that is text-based and human readable
+
 **macOS**: operating system for Mac computer
 
 **Lock your Phone**: click the button on the side of the phone to lock it - prevent accidental touch, i.e., accidental Loop command
