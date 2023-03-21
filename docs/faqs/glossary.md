@@ -91,6 +91,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Glucose Safety Limit**: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold
 
+**GMT**: Greenwich Mean Time is mean (average) solar time at 0 degrees longitude, see UTC
+
 **Guardrails**: limits in the code for user selected settings, recommended and absolute limits are provided
 
 **Hamburger Menu**: three parallel lines that, when tapped, open a new menu
@@ -190,6 +192,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **Tooltip**: brief definitions provided for important terms and abbreviations on the website
 
 **URL**: website address (Uniform Resource Locator)
+
+**UTC**: Coordinated Universal Time is a time standard for civil time and time zones worldwide
 
 **Ventura**: operating system for Mac, macOS 13.x
 

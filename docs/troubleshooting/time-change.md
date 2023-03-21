@@ -30,7 +30,7 @@ One added improvement with Loop 3 is it very aggressive at warning you if you ma
 
 The rest of this page is about changing time zones.
 
-This happens safely with Loop because Loop keeps track of everything in GMT.
+This happens safely with Loop because Loop keeps track of everything using UTC.
 
 ## Time Zones, Daylight Savings Time, Summer Time
 
@@ -75,7 +75,7 @@ That offset is stored by Loop the first time the pump ID is changed, and every t
 
 ## Dexcom CGM
 
-No particular input is needed on your part for Loop to work with Dexcom CGM data. All times are UTC.  However for Dexcom receiver users, at time changes you may want to manually change your receiver's time setting just so the time visually appears correct when you are viewing the screen.
+No particular input is needed on your part for Loop to work with Dexcom CGM data. All times use UTC.  However for Dexcom receiver users, at time changes you may want to manually change your receiver's time setting just so the time visually appears correct when you are viewing the screen.
 
 ## Airports
 

@@ -9,7 +9,7 @@ With Loop 3, there is a new modal alert that halts all Loop activity until pump 
 ![alert that pump communication was lost at a critical time](img/alert-unable-to-reach-pump.svg){width="350"}
 {align="center"}
 
-When you tap on the Learn More button, another screen appears. The only option allowed on the second screen is to give up and discard the pump (or pod) or continue to wait. The second screen is there if you need to tell Loop you will not be able to restore communication and it should treat the last attempt to send a command as uncertain. Loop will then allow you to add a new pod or new Medtronic pump or switch to a different insulin delivery device. 
+When you tap on the Learn More button, another screen appears. The only option allowed on the second screen is to give up and discard the pump (or pod) or continue to wait - tap the Back button. The second screen is there if you need to tell Loop you will not be able to restore communication and it should treat the last attempt to send a command as uncertain. Loop will then allow you to add a new pod or new Medtronic pump or switch to a different insulin delivery device. 
 
 **Only do this if bringing your phone and pump into close proximity, waiting a few minutes and then trying the [Reset Loop-to-Pump Communications](../../troubleshooting/yellow-red-loop.md#reset-loop-to-pump-communications) suggestions are not successful.**
 
@@ -45,7 +45,7 @@ If you want to see the expiration date at any time:
 * Loop 2.2.5 through 2.2.9: tap on Settings, then tap on Issue Report
 * Loop 3.x.x: tap on Settings, scroll down and tap on Support, then tap on Issue Report
 
-The expiration date is near the top of the report (to the right of `profileExpiration`).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time is in GMT, so adjust to your own time zone if you procrastinated until the last minute.
+The expiration date is near the top of the report (to the right of `profileExpiration`).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time uses UTC, so adjust to your time zone if you procrastinated until the last minute.
 
 ![Issue report displays Loop App expiration date](img/loop-app-expiration-issue-report.jpeg){width="250"}
 {align="center"}

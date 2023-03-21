@@ -214,7 +214,7 @@ Each day (in user's local time) has the following files:
 
 The JSON file for each day are zipped into one file for that day and then the zip files are again zipped into a single file that you can save. The current day (up to the current time) is combined with the previous day's data.
 
-The time stamps within the JSON files are GMT.
+The time stamps within the JSON files use UTC.
 
 ## App Profile
 
@@ -222,7 +222,7 @@ The Profile Expiration is reported at the bottom of the Settings display along w
 
 The link for `How to update (LoopDocs)` is provided for Mac/Xcode build.
 
-In fine print, the exact date and time of the expiration is reported.
+In fine print, the exact date and time of the expiration is reported in your local time zone.
 
 ![display of profile expiration appropriate for mac/xcode build method](img/app-profile.png){width="350"}
 {align="center"}

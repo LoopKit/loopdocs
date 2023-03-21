@@ -3,6 +3,8 @@
 !!! danger "DRAFT"
     This procedure is in DRAFT mode - only minimal graphics are provided.
 
+    The entire procedure may change without warning, so be prepared for updates.
+
     WARNING - After a recent release - wait for the release number to be updated on this page before using any of the copy/paste commands.
 
     This page has not been updated for Loop 3.2.1.
