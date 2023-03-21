@@ -539,11 +539,11 @@ Once all six secrets have been added to your LoopWorkspace, you are done with Se
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
-## Verify Secrets
+## Validate Secrets
 
-This step, new with Loop 3.2.0 checks that the Secrets you added are correct. Some things cannot be verified yet, but most can and a relatively clear error message is provided.
+This step, new with Loop 3.2.x checks that the Secrets you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
 
-This will be updated soon, but for now - follow the instructions under Add Identifiers for Loop, but do the first action: 1 Verify Secrets.
+This will be updated soon, but for now - follow the instructions under Add Identifiers for Loop, but do the first action: 1 Validate Secrets.
 
 ## Add Identifiers for Loop
 

@@ -5,6 +5,9 @@
 
     WARNING - After a recent release - wait for the release number to be updated on this page before using any of the copy/paste commands.
 
+    This page has not been updated for Loop 3.2.1.
+    Please be patient - the location for customization for Eros pods has changed and will be updated on this page and [Code Customization](../build/code_customization.md) page - but later.
+
 !!! info "Time Estimate"
     * About half an hour to an hour per Module
         * Typically 1 or 2 Modules
@@ -160,7 +163,7 @@ After these two steps are completed, then you will continue to [Customize the Mo
     * After you paste the Prepare xxx Module command (below), STOP if you get an error
     * If you do not get an error, continue to [Create New Branch](#create-new-branch) which is the same for all modules.
 
-Copy the selected line for the current module into the terminal. If you see an error STOP. 
+Copy the selected line for the current module into the terminal. If you see an error STOP.
 
 * Did you copy the correct line for the current Module?
 * Is your Module dev branch up to date?

@@ -142,14 +142,15 @@ Scroll all the way to the top of the screen and tap on your LoopWorkspace link. 
 
 1. Sign in to GitHub and select your LoopWorkspace repository from your repositories list
 1. Look to see if your fork is up to date
-    * The dropdown in this graphic shows the dev branch.
-    * To build Loop 3.2, you will want main
-    * If you previously build Loop 3.0 with this method - don't forget to update your branch
-    * If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}}` - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3
-    * If your fork shows a message such as `This branch is 3 commits behind LoopKit:dev` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch`
+    * When you go to your fork to do the update, simply sync the branch if it says there are updates and you get the latest release (details below graphic)
+        * The dropdown in this graphic shows the dev branch (graphic to be updated later)
+        * Yours should show the main branch
 
     ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
     {align="center"}
+
+    * If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}}` - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3
+    * If your fork shows a message such as `This branch is 3 commits behind LoopKit:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch`
 
 1. Build Loop - refer to graphic below as you follow the steps
     * Click on the 'Actions' tab
@@ -168,6 +169,8 @@ Scroll all the way to the top of the screen and tap on your LoopWorkspace link. 
         * Click on the most recent Build job with the red x by it
         * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)", make sure your developer account is in good standing and that there are no agreements that need to be accepted
         * Repeat the build (previous step) and it should be fine the next time
+    * If you get an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that
+        * As long as you get the TestFlight updated app, you can ignore that email
 1. The updated Loop app will show up in your TestFlight app
     * But wait until you see "Expires in 90 days"
     * The app is in TestFlight from your prior build
@@ -180,6 +183,8 @@ Scroll all the way to the top of the screen and tap on your LoopWorkspace link. 
 
     ![install Loop from TestFlight](img/testflight-install-loop.gif){width="300"}
     {align="center"}
+
+1. If you are building for a child, follow the [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child) instructions again
 
 ## GitHub Build Details
 
