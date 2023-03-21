@@ -2554,13 +2554,17 @@
 <li>
 <p>Look to see if your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date</p>
 <ul>
-<li>The dropdown in this graphic shows the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</li>
-<li>To build <abbr title="Latest release with major updates">Loop 3</abbr>.2, you will want main</li>
-<li>If you previously build <abbr title="Latest release with major updates">Loop 3</abbr>.0 with this method - don't forget to update your <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date with LoopKit version for that <code>{branch}</code>, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}}</code> - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3</li>
-<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows a message such as <code>This branch is 3 commits behind LoopKit:dev</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on <code>Update branch</code></li>
+<li>When you go to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to do the update, simply sync the <abbr title="version of code within a single repository or workspace repository">branch</abbr> if it says there are updates and you get the latest release (details below graphic)<ul>
+<li>The dropdown in this graphic shows the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> (graphic to be updated later)</li>
+<li>Yours should show the main <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ul>
+</li>
 </ul>
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
+<ul>
+<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date with LoopKit version for that <code>{branch}</code>, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}}</code> - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3</li>
+<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows a message such as <code>This branch is 3 commits behind LoopKit:main</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on <code>Update branch</code></li>
+</ul>
 </li>
 <li>
 <p>Build Loop - refer to graphic below as you follow the steps</p>
@@ -2583,6 +2587,10 @@
 <li>Repeat the build (previous step) and it should be fine the next time</li>
 </ul>
 </li>
+<li>If you get an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that<ul>
+<li>As long as you get the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> updated app, you can ignore that email</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>The updated Loop app will show up in your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app<ul>
@@ -2600,6 +2608,9 @@
 <li>If you have automatic updates enabled in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, the app should have installed automatically, in which case the message should say <code>Open</code>.</li>
 </ul>
 <p align="center"><img alt="install Loop from TestFlight" src="../img/testflight-install-loop.gif" width="300" /></p>
+</li>
+<li>
+<p>If you are building for a child, follow the <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a> instructions again</p>
 </li>
 </ol>
 <h2 id="github-build-details"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Details<a class="headerlink" href="#github-build-details" title="Anchor link to this Header on this Page">&para;</a></h2>

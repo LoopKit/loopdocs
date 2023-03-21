@@ -2469,7 +2469,7 @@
 <p>The main Loop screen contains a Heads-Up Display (<a href="#heads-up-display"><abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr></a>) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom.</p>
 <p align="center"><img alt="main loop screen when running nominally with annotation for heads-up-display, charts and toolbar" src="../img/loop-3-main-annotated.svg" width="450" /></p>
 <h4 id="landscape">Landscape<a class="headerlink" href="#landscape" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>When the device is in landscape mode, the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> is no longer visible, but the chart history is increased.  In landscape, each chart displays the last 8 hours of history along with the next 6 hours of glucose prediction. The toolbar is always visible while the chart display can be scrolled up and down to view charts of interest.</p>
+<p>When the device is in landscape mode, the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> is no longer visible, but the chart history is increased.  In landscape, the exact number of hours varies by phone, but on my test phone, each chart displays the last 8 hours of history along with the next 6 hours of glucose prediction. The toolbar is always visible while the chart display can be scrolled up and down to view charts of interest.</p>
 <h2 id="heads-up-display">Heads-Up Display<a class="headerlink" href="#heads-up-display" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The Heads-Up Display (<abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>) shows 3 icons:</p>
 <ul>
@@ -2491,7 +2491,7 @@
 <p>The horizontal axis is set to go forward from the current time through your <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> (insulin duration), so you can see what Loop thinks glucose will be eventually. It then goes back in time as far as there is room, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.</p>
 <p>The glucose <a href="../therapy-settings/#correction-range"><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></a> is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar indicates the correction range during that override.</p>
 <div class="admonition warning">
-<p class="admonition-title">Negative Glucose Predition</p>
+<p class="admonition-title">Negative Glucose Prediction</p>
 <p>If you have a crazy negative glucose prediction - it is likely that you set an <a href="../../operation/features/workout/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> with a tiny sensitivity.</p>
 <ul>
 <li>Do not panic - this is a prediction only; not reality.</li>
@@ -2518,7 +2518,15 @@
 </div>
 <h3 id="active-insulin-chart">Active Insulin Chart<a class="headerlink" href="#active-insulin-chart" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p align="center"><img alt="Plot of insulin on board (IOB); active amount above or below basal using insulin type" src="../../operation/loop-settings/img/active_insulin.jpg" width="400" /></p>
-<p>The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> can be either positive or negative.  Negative <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the (for Medtronic) pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered). The opposite is true for Omnipods. If a message is sent from Loop, it assumes the pod got the message and enacted it - even if the acknowledgement is not received.  Later, when communication is restored, if a command was not enacted by the pod, the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> is updated.</p>
+<p>The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> can be either positive or negative.  Negative <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> results from the suspension of normally scheduled basals.</p>
+<p>The active insulin displayed in the upper right corner of the chart updates as soon as Loop issues a command to your pump.</p>
+<p>It may later be modified and the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> updated if:</p>
+<ul>
+<li>The command does not go through and Loop is sure it did not go through</li>
+<li>The user cancels a bolus</li>
+<li>The user cancels a temp basal</li>
+</ul>
+<p>There are some times when communication is interrupted at a critical moment in the communication cycle. When that happens the <a href="../../operation/features/notifications/#loop-alert-unable-to-reach-pump">Loop Alert - Unable to Reach Pump</a> <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screen appears on your device. Typically, this resolves by itself. Click the link above for more information.</p>
 <p><strong>Medtronic Only</strong>: So long as you have <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> as the Preferred Data Source in Loop settings, primed insulin deliveries (e.g., cannula fills or manual primes) will not be counted towards <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>.</p>
 <h3 id="insulin-delivery-chart">Insulin Delivery Chart<a class="headerlink" href="#insulin-delivery-chart" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p align="center"><img alt="Plot of insulin delivery shown as bolus triangles and relative temp basal settings" src="../../operation/loop-settings/img/insulin_delivery.jpg" width="400" /></p>
@@ -2545,8 +2553,8 @@
 <div class="admonition abstract">
 <p class="admonition-title">Previous Pod Insulin History</p>
 <p>For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this can be done in Apple Health.</p>
-<p>Before attempting that modification, please read this entire section on <a href="../../faqs/algorithm-faqs/#how-does-loop-use-apple-healthkit">How does Loop use Apple HealthKit</a> in detail.</p>
-<p>Pay special attention to <a href="../../faqs/algorithm-faqs/#insulin-and-apple-healthkit">Insulin and Apple HealthKit</a> section.</p>
+<p>Before attempting that modification, please read this entire section on <a href="../../faqs/apple-health-faqs/#how-does-loop-use-apple-healthkit">How does Loop use Apple HealthKit</a> in detail.</p>
+<p>Pay special attention to <a href="../../faqs/apple-health-faqs/#insulin-and-apple-healthkit">Insulin and Apple HealthKit</a> section.</p>
 </div>
 <h3 id="active-carbohydrates-chart">Active Carbohydrates Chart<a class="headerlink" href="#active-carbohydrates-chart" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p align="center"><img alt="Active carbohydrate chart showing measured rise and fall based on entries and settings" src="../../operation/loop-settings/img/carb_graph.jpg" width="400" /></p>
@@ -2755,7 +2763,7 @@
 </tr>
 <tr>
 <td><img alt="scheduled basal indicator for partially full mdt reservoir" src="../img/loop-3-nominal-mdt-scheduled.svg" width="175" /></td>
-<td>This nominal pump status graphic is for a Medtronic pump running scheduled basal rate and with a half-full reservoir.</td>
+<td>This nominal pump status graphic is for a Medtronic pump running scheduled basal rate and with a half-full reservoir.<br><br>For a Pod, the reservoir shows full until pod estimates reservoir is below 50 U remaining.</td>
 </tr>
 <tr>
 <td><img alt="high temp basal indicator with reservoir above notification level" src="../img/loop-3-nominal-pump-high-temp-reservoir.svg" width="175" /></td>
@@ -2805,7 +2813,7 @@
 <li>
 <p>The scheduled rates for basal, correction range, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> follow  the pump time</p>
 <ul>
-<li>This is true even when your phone updates because of a new time zones (travel) or because of daylight savings (summer) time</li>
+<li>This is true even when your phone updates because of a new time zone (travel) or because of daylight savings (summer) time</li>
 <li>This is true across pod changes</li>
 </ul>
 </li>
@@ -2825,7 +2833,7 @@
 <p>The display to modify time zone is slightly different for Loop 2.2.x and <abbr title="Latest release with major updates">Loop 3</abbr> (links below):</p>
 <ul>
 <li><a href="../omnipod/#pump-time"><abbr title="Latest release with major updates">Loop 3</abbr> <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr></a></li>
-<li><a href="../../operation/loop-settings/pump-commands/#change-time-zone"><abbr title="Latest release with major updates">Loop 3</abbr> Medtronic</a></li>
+<li><a href="../medtronic/#change-time-zone"><abbr title="Latest release with major updates">Loop 3</abbr> Medtronic</a></li>
 <li><a href="../../operation/loop-settings/pump-commands/#change-time-zone">Loop 2.2.x</a></li>
 </ul>
 <p>You can choose to leave the pump and phone time zones different; the pump icon on the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> (<abbr title="Latest release with major updates">Loop 3</abbr> only) will show the clock icon to remind you. Many people do this for short trips.</p>

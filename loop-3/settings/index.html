@@ -1140,6 +1140,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#app-profile" class="md-nav__link">
+    App Profile
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2456,6 +2463,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#app-profile" class="md-nav__link">
+    App Profile
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2474,7 +2488,7 @@
   <h1>Settings</h1>
 
 <h2 id="loop-settings-screen">Loop Settings Screen<a class="headerlink" href="#loop-settings-screen" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the <a href="../displays_v3/#toolbar">Toolbar</a> on the app <a href="../displays_v3/#main-loop-screen">home screen</a>.</p>
+<p>The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the <a href="../displays_v3/#toolbar">Toolbar</a> on the <a href="../displays_v3/#main-loop-screen">Main Loop Screen</a>.</p>
 <p align="center"><img alt="settings screen for loop 3" src="../img/loop-3-settings.svg" width="250" /></p>
 <p>Each section and row on the Settings screen is described below.</p>
 <h2 id="closed-loop"><abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr><a class="headerlink" href="#closed-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2580,11 +2594,11 @@ Loop will automatically bolus when insulin needs are above scheduled basal, and 
 <p>The Services section allows additions of other services such Nightscout, Loggly and Amplitude.</p>
 <p>Please refer to the <a href="../../operation/loop-settings/services/">Optional: Service</a> page.</p>
 <h2 id="support">Support<a class="headerlink" href="#support" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Support section enables the user to provide output data about the app. This information can be very helpful to folks trying to assist with problem reports.</p>
+<p>The Support section enables the user to provide output data (<a href="#issue-report">Loop Report</a> and/or <a href="#export-critical-event-logs">Critical Logs</a>) about the app. This information can be very helpful to folks trying to assist with problem reports.</p>
 <p>The graphic below shows the screen provided when you tap on the Support row at the bottom of the Settings screen.</p>
 <p align="center"><img alt="settings support screen" src="../img/loop-3-setting-support.svg" width="250" /></p>
 <h3 id="issue-report"><code>Issue Report</code><a class="headerlink" href="#issue-report" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Tap on the <code>Issue Report</code> row, on the graphic above, to create a Loop Report text file with a lot of useful information for the mentors or developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to send it to yourself.</p>
+<p>Tap on the <code>Issue Report</code> row, on the graphic above, to create a Loop Report text file with a lot of useful information for the mentors or developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> or <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to save the report.</p>
 <div class="admonition note">
 <p class="admonition-title"><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> vs <code>Issue Report</code></p>
 <p>Be aware:</p>
@@ -2594,6 +2608,11 @@ Loop will automatically bolus when insulin needs are above scheduled basal, and 
 </ul>
 </div>
 <p>It's a good idea to use the <code>Issue Report</code> button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.</p>
+<div class="admonition tip">
+<p class="admonition-title">Pro Tip</p>
+<p>The Loop Reports can be saved in the Files section on your iPhone. I have a folder on my phone Files named Loop Reports.</p>
+<p>You can upload them to zulipchat from your phone (new feature) using the paperclip in the zulipchat app. (Don't see a paperclip - update your app.)</p>
+</div>
 <h3 id="submit-bug-report">Submit Bug Report<a class="headerlink" href="#submit-bug-report" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the <code>Submit Bug Report</code> row to bring up one of the two views shown in the graphic below.  The left view is if you do not have a github account (or the phone is not signed in to your account). The right view is if your github credentials are available.</p>
 <p>In either case, the first action should be to add a term or phrase to the search box (red rectangle) to see if your issue has already been reported and to read the status if it has been reported.  Please refer to the <a href="../../troubleshooting/overview/#github-issues"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Issues</a> section for more information.</p>
@@ -2613,7 +2632,32 @@ Loop will automatically bolus when insulin needs are above scheduled basal, and 
 </ul>
 </div>
 <h3 id="export-critical-event-logs">Export Critical Event Logs<a class="headerlink" href="#export-critical-event-logs" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The last row creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting. Once the compressed file is created, you can then send it to yourself and later share it with the developers if they request it.  You can always discard these if you resolve the problem on your own.</p>
+<p>The last row under Support creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting. Once the compressed file is created, you can save it and later share it with the developers if they request it.  You can always discard these if you resolve the problem on your own.</p>
+<div class="admonition tip">
+<p class="admonition-title">Pro Tip</p>
+<p>The Critical Logs zip file can be saved in the Files section on your iPhone. I have a folder on my phone Files named Critical Logs.</p>
+<p>You can upload them to zulipchat from your phone (new feature) using the paperclip in the zulipchat app. (Don't see a paperclip - update your app.)</p>
+</div>
+<h4 id="critical-log-format">Critical Log Format<a class="headerlink" href="#critical-log-format" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The critical logs use a <abbr title="JavaScript Object Notation; a standard data interchange format that is text-based and human readable">JSON</abbr> (JavaScript Object Notation) format.</p>
+<p>Each day (in user's local time) has the following files:</p>
+<ul>
+<li>Alerts.json</li>
+<li>Carbs.json</li>
+<li>DeviceLog.json</li>
+<li>Doses.json</li>
+<li>DosingDecisions.json</li>
+<li>Glucoses.json</li>
+<li>Settings.json</li>
+</ul>
+<p>The <abbr title="JavaScript Object Notation; a standard data interchange format that is text-based and human readable">JSON</abbr> file for each day are zipped into one file for that day and then the zip files are again zipped into a single file that you can save. The current day (up to the current time) is combined with the previous day's data.</p>
+<p>The time stamps within the <abbr title="JavaScript Object Notation; a standard data interchange format that is text-based and human readable">JSON</abbr> files use <abbr title="Universal Coordinated Time is a time standard for civil time and time zones worldwide">UTC</abbr>.</p>
+<h2 id="app-profile">App Profile<a class="headerlink" href="#app-profile" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The Profile Expiration is reported at the bottom of the Settings display along with the number of days remaining before Loop stops working.</p>
+<p>The link for <code>How to update (LoopDocs)</code> is provided for Mac/<abbr title="program used to build an app">Xcode</abbr> build.</p>
+<p>In fine print, the exact date and time of the expiration is reported in your local time zone.</p>
+<p align="center"><img alt="display of profile expiration appropriate for mac/xcode build method" src="../img/app-profile.png" width="350" /></p>
+<p>The Profile Expiration is different for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method. A feature request is in place (but not yet added to the code) to report the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration for that build method.</p>
 
 
 
