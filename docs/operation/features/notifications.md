@@ -6,7 +6,7 @@ Loop provides discrete notifications on the iPhone and Watch which will appear o
 
 With Loop 3, there is a new modal alert that halts all Loop activity until pump communication can be restored.
 
-![alert that pump communication was lost at a critical time](img/alert-unable-to-reach-pump.png){width="500"}
+![alert that pump communication was lost at a critical time](img/alert-unable-to-reach-pump.svg){width="350"}
 {align="center"}
 
 When you tap on the Learn More button, another screen appears. The only option allowed on the second screen is to give up and discard the pump (or pod) or continue to wait. The second screen is there if you need to tell Loop you will not be able to restore communication and it should treat the last attempt to send a command as uncertain. Loop will then allow you to add a new pod or new Medtronic pump or switch to a different insulin delivery device. 
@@ -20,7 +20,7 @@ When you tap on the Learn More button, another screen appears. The only option a
 
 Profile expiration notification was added with Loop 2.2.5.
 
-![Notification display when near the Loop App expiration date](img/loop-app-expiration-warning.png){width="250"}
+![Notification display when near the Loop App expiration date](img/loop-app-expiration-warning.png){width="350"}
 {align="center"}
 
 * When fewer than 20 days remain until profile expiration, you'll get a notification when you open the app but no more frequently than every 2 days
@@ -95,6 +95,14 @@ Edit the focus mode to:
 
 - add `Loop` to the list of apps with allowed notifications
 - enable the `Time Sensitive Notifications` toggle button
+
+### Taking a Loop Break
+
+If you want to take a break from using Loop but want to keep the app on your phone, you'll want to disable Loop Notifications while you are not using Loop. Otherwise, the [Loop Failure](#loop-failure) messages will drive you crazy. 
+
+When you are ready to resume using Loop, the main screen will remind you to turn those notifications back on.
+
+Another time you might want to disable notifications is if you are testing with a simulated pump. When the app is closed or phone is locked, the simulated pump is inactive and you would get the Loop Failure notifications.
 
 ## Loop Failure
 
