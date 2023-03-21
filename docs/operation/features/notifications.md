@@ -2,11 +2,25 @@
 
 Loop provides discrete notifications on the iPhone and Watch which will appear on the (locked) screen and vibrate, depending on your notification settings of Loop.
 
+## Loop Alert - Unable to Reach Pump
+
+With Loop 3, there is a new modal alert that halts all Loop activity until pump communication can be restored.
+
+![alert that pump communication was lost at a critical time](img/alert-unable-to-reach-pump.svg){width="350"}
+{align="center"}
+
+When you tap on the Learn More button, another screen appears. The only option allowed on the second screen is to give up and discard the pump (or pod) or continue to wait - tap the Back button. The second screen is there if you need to tell Loop you will not be able to restore communication and it should treat the last attempt to send a command as uncertain. Loop will then allow you to add a new pod or new Medtronic pump or switch to a different insulin delivery device. 
+
+**Only do this if bringing your phone and pump into close proximity, waiting a few minutes and then trying the [Reset Loop-to-Pump Communications](../../troubleshooting/yellow-red-loop.md#reset-loop-to-pump-communications) suggestions are not successful.**
+
+!!! info "Why Stop all Activity?"
+    When communication is interrupted at a critical moment in the communication cycle, Loop cannot provide a reliable calculation for IOB. When that happens a warning screen similar to the graphic above appears on your device. You cannot do anything but wait for Loop to restore communications or give up on that device.
+
 ## Loop App Expiration Notification
 
 Profile expiration notification was added with Loop 2.2.5.
 
-![Notification display when near the Loop App expiration date](img/loop-app-expiration-warning.png){width="250"}
+![Notification display when near the Loop App expiration date](img/loop-app-expiration-warning.png){width="350"}
 {align="center"}
 
 * When fewer than 20 days remain until profile expiration, you'll get a notification when you open the app but no more frequently than every 2 days
@@ -20,22 +34,18 @@ The expiration notification pattern is the same as for the Paid Loop App. You ma
 
 ## Loop App Expiration Date
 
-!!! tip "Coming Soon"
-    Available in dev now; will be in the next release:
+#### For Loop 3.2.x and newer versions
 
-    * A new **App Profile** section was added to the bottom of the Loop Settings screen
-    * Valid for Mac-Xcode builds
-        * Profile Expiration count-down in days, as well as expiration date and time
-        * Direct link to the LoopDocs How to Update page
+The expiration date is found in the [App Profile](../../loop-3/settings.md#app-profile) section at the bottom of the Loop Settings screen.
 
-#### For Loop 2.2.5 through Loop 3.2
+#### For Loop 2.2.5 through Loop 3.0
 
 If you want to see the expiration date at any time:
 
 * Loop 2.2.5 through 2.2.9: tap on Settings, then tap on Issue Report
 * Loop 3.x.x: tap on Settings, scroll down and tap on Support, then tap on Issue Report
 
-The expiration date is near the top of the report (to the right of `profileExpiration`).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time is in GMT, so adjust to your own time zone if you procrastinated until the last minute.
+The expiration date is near the top of the report (to the right of `profileExpiration`).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time uses UTC, so adjust to your time zone if you procrastinated until the last minute.
 
 ![Issue report displays Loop App expiration date](img/loop-app-expiration-issue-report.jpeg){width="250"}
 {align="center"}
@@ -85,6 +95,14 @@ Edit the focus mode to:
 
 - add `Loop` to the list of apps with allowed notifications
 - enable the `Time Sensitive Notifications` toggle button
+
+### Taking a Loop Break
+
+If you want to take a break from using Loop but want to keep the app on your phone, you'll want to disable Loop Notifications while you are not using Loop. Otherwise, the [Loop Failure](#loop-failure) messages will drive you crazy. 
+
+When you are ready to resume using Loop, the main screen will remind you to turn those notifications back on.
+
+Another time you might want to disable notifications is if you are testing with a simulated pump. When the app is closed or phone is locked, the simulated pump is inactive and you would get the Loop Failure notifications.
 
 ## Loop Failure
 

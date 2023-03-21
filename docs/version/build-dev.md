@@ -67,7 +67,9 @@ For example:
 * Loop 3.0.0 was the first released version of Loop 3
     * If minor updates are required before the next release, they will be numbered Loop 3.0.1, etc.
 * Loop 3.1.0 was the development version before Loop 3.2.0 was released
-* Loop 3.2.0 is the next released version
+* Loop 3.2.0 was the next released version
+* Loop 3.2.1 is a minor release
+* Loop 3.3.0 is the current development version
 
 ### Identify Loop-dev Version
 

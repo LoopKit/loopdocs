@@ -11,8 +11,7 @@ The main Loop screen contains a Heads-Up Display ([HUD](#heads-up-display)) at t
 
 #### Landscape
 
-When the device is in landscape mode, the HUD is no longer visible, but the chart history is increased.  In landscape, each chart displays the last 8 hours of history along with the next 6 hours of glucose prediction. The toolbar is always visible while the chart display can be scrolled up and down to view charts of interest.
-
+When the device is in landscape mode, the HUD is no longer visible, but the chart history is increased.  In landscape, the exact number of hours varies by phone, but on my test phone, each chart displays the last 8 hours of history along with the next 6 hours of glucose prediction. The toolbar is always visible while the chart display can be scrolled up and down to view charts of interest.
 
 ## Heads-Up Display
 
@@ -44,7 +43,7 @@ The horizontal axis is set to go forward from the current time through your DIA 
 
 The glucose [Correction Range](therapy-settings.md#correction-range) is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar indicates the correction range during that override.
 
-!!! warning "Negative Glucose Predition"
+!!! warning "Negative Glucose Prediction"
     If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/workout.md) with a tiny sensitivity.
 
     * Do not panic - this is a prediction only; not reality.
@@ -76,7 +75,17 @@ The graph at the top of this view will match your Glucose Chart. Below this char
 ![Plot of insulin on board (IOB); active amount above or below basal using insulin type](../operation/loop-settings/img/active_insulin.jpg){width="400"}
 {align="center"}
 
-The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive or negative.  Negative IOB results from the suspension of normally scheduled basals.  The active insulin displayed in the upper right corner of the chart does NOT include insulin contributions from a recently enacted temp basal or bolus until the (for Medtronic) pump’s reservoir volume is read and confirms a drop in reservoir volume (confirming the insulin has actually been delivered). The opposite is true for Omnipods. If a message is sent from Loop, it assumes the pod got the message and enacted it - even if the acknowledgement is not received.  Later, when communication is restored, if a command was not enacted by the pod, the Event History is updated.
+The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive or negative.  Negative IOB results from the suspension of normally scheduled basals.
+
+The active insulin displayed in the upper right corner of the chart updates as soon as Loop issues a command to your pump.
+
+It may later be modified and the Event History updated if:
+
+* The command does not go through and Loop is sure it did not go through
+* The user cancels a bolus
+* The user cancels a temp basal
+
+There are some times when communication is interrupted at a critical moment in the communication cycle. When that happens the [Loop Alert - Unable to Reach Pump](../operation/features/notifications.md#loop-alert-unable-to-reach-pump) modal screen appears on your device. Typically, this resolves by itself. Click the link above for more information.
 
 **Medtronic Only**: So long as you have Event History as the Preferred Data Source in Loop settings, primed insulin deliveries (e.g., cannula fills or manual primes) will not be counted towards IOB.
 
@@ -108,9 +117,9 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 !!! abstract "Previous Pod Insulin History"
     For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this can be done in Apple Health.
 
-    Before attempting that modification, please read this entire section on [How does Loop use Apple HealthKit](../faqs/algorithm-faqs.md#how-does-loop-use-apple-healthkit) in detail.
+    Before attempting that modification, please read this entire section on [How does Loop use Apple HealthKit](../faqs/apple-health-faqs.md#how-does-loop-use-apple-healthkit) in detail.
 
-    Pay special attention to [Insulin and Apple HealthKit](../faqs/algorithm-faqs.md#insulin-and-apple-healthkit) section.
+    Pay special attention to [Insulin and Apple HealthKit](../faqs/apple-health-faqs.md#insulin-and-apple-healthkit) section.
 
 
 ### Active Carbohydrates Chart
@@ -263,7 +272,7 @@ The table below shows examples for a few nominal Pump Status Icons and Alert mes
 | <div style="width:55px"></div> Icon | Meaning |
 |---|---|
 |![low temp basal indicator plus pod reservoir above 50 U](img/loop-3-nominal-pod-low-temp.svg){width="175"}|This nominal pump status graphic is for a Pod with temp basal less than scheduled basal rate and no reported reservoir level.|
-|![scheduled basal indicator for partially full mdt reservoir](img/loop-3-nominal-mdt-scheduled.svg){width="175"}|This nominal pump status graphic is for a Medtronic pump running scheduled basal rate and with a half-full reservoir.|
+|![scheduled basal indicator for partially full mdt reservoir](img/loop-3-nominal-mdt-scheduled.svg){width="175"}|This nominal pump status graphic is for a Medtronic pump running scheduled basal rate and with a half-full reservoir.<br><br>For a Pod, the reservoir shows full until pod estimates reservoir is below 50 U remaining.|
 |![high temp basal indicator with reservoir above notification level](img/loop-3-nominal-pump-high-temp-reservoir.svg){width="175"}|This nominal pump status graphic is for a pump running a high temp basal rate with the reservoir level reported. <br><br>When the reservoir level is above the notification level, the reservoir graphic is orange.|
 |![high temp basal indicator with reservoir level below alert and clock icon](img/loop-3-pump-alert-reservoir-tz.svg){width="175"}|This pump status graphic indicates 2 alerts: (1) the 15 U reservoir level is less than the notification level of 20 U selected by this user and (2) a small clock icon is added to the display to indicate the phone time zone and pump time zone do not match. <br><br>When the reservoir level is below the notification level, the reservoir graphic is yellow.<br><br>Follow the link for [time zone](#time-zone) information.|
 |![pump alert - red exclamation point with phrase no insulin](img/loop-3-pump-alert-no-insulin.svg){width="175"}|This alert message indicates the reservoir reports 0 U. Although  pumps will continue to deliver some insulin after this point (max of 4 U for pods, or until all insulin is gone for both pods and Medtronic), the user should be aware that insulin delivery could stop at any moment.<br><br>Note that if you see a display of 0 U in yellow, that means there is 0.5 U or less reported by the pump.|
@@ -284,7 +293,7 @@ Loop allows your pump to have a different time zone from your phone.
 Your daily schedule for basal rates, correction ranges, insulin sensitivity factors and carb ratios is displayed with respect to midnight on "pump time". When you first [Add Pump](add-pump.md#add-pump) to Loop, the pump and phone are in the same time zone, but it's important to understand what happens when the time zone changes on the phone.
 
 * The scheduled rates for basal, correction range, ISF and CR follow  the pump time
-    * This is true even when your phone updates because of a new time zones (travel) or because of daylight savings (summer) time
+    * This is true even when your phone updates because of a new time zone (travel) or because of daylight savings (summer) time
     * This is true across pod changes
 
 * To change the pump time zone to match your phone, select the Pump Settings display
@@ -297,7 +306,7 @@ Your daily schedule for basal rates, correction ranges, insulin sensitivity fact
 The display to modify time zone is slightly different for Loop 2.2.x and Loop 3 (links below):
 
 * [Loop 3 Omnipod](omnipod.md#pump-time)
-* [Loop 3 Medtronic](../operation/loop-settings/pump-commands.md#change-time-zone)
+* [Loop 3 Medtronic](medtronic.md#change-time-zone)
 * [Loop 2.2.x](../operation/loop-settings/pump-commands.md#change-time-zone)
 
 You can choose to leave the pump and phone time zones different; the pump icon on the HUD (Loop 3 only) will show the clock icon to remind you. Many people do this for short trips.

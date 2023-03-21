@@ -8,11 +8,11 @@ Every tooltip definition is also found in the [Glossary](../faqs/glossary.md) - 
 
 Volunteers generously provide support for Loop via online platforms. You have a number of options for joining conversations on loop and asking for help.  Links to the main platforms are listed below.  Non-US Loop users in Italy, Australia, and several other countries have also formed Facebook (FB) groups.
 
-  * The [Looped Group](https://www.facebook.com/groups/TheLoopedGroup) on Facebook. Looped Group is the original FB group for DIY looping systems. There are lot of active members there with an excellent history of helping people.
-  * Loop and Learn is a community that provides Loop-centric information, a T1D Speaker Series covering many topics of general diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
-      * [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
-      * [LoopandLearn Website](https://www.loopandlearn.org)
-      * [LoopandLearn YouTube Channel](https://youtube.com/loopandlearn)
+* The [Looped Group](https://www.facebook.com/groups/TheLoopedGroup) on Facebook. Looped Group is the original FB group for DIY looping systems. There are lot of active members there with an excellent history of helping people.
+* Loop and Learn is a community that provides Loop-centric information, a T1D Speaker Series covering many topics of general diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
+    * [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
+    * [LoopandLearn Website](https://www.loopandlearn.org)
+    * [LoopandLearn YouTube Channel](https://youtube.com/loopandlearn)
 * The [LoopTips](https://loopkit.github.io/looptips/) website provides non-build information that is helpful once you are looping, e.g., how to print endo reports, find Loop data, deal with therapy settings changes, etc.
 * Many Loopers use a companion app called Nightscout. Nightscout help can be found in the [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud) Facebook group.
 * For those interested in what is coming next for Loop and those who prefer not to use Facebook, join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the streams or you'll miss some interesting conversations.

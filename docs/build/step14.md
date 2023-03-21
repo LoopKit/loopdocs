@@ -310,7 +310,8 @@ First select Loop (Workspace) and confirm your phone is selected. Refer to the G
 * Frame 1:  Xcode screen opened by the script after a fresh download
     * **Fresh Download? Wait for indexing to begin**
         * If you see messages about fetching symbols or resolving packages, please wait until you see the Indexing message as shown in the GIF below just to the left of the dashed-blue rectangle
-    * **Loop 3.2.0** not longer requires you to select Loop (Workspace) - it is now the default
+    * **With Loop 3.2.x and newer**, you do not need to select Loop (Workspace) - it is now the default and shows up as LoopWorkspace
+        * The graphics still show the old selection process
     * The red rectangle indicates where you will change Loop to Loop (Workspace)
     * The red x in the dashed-blue rectangle region indicates you need to fix a problem before building
 * Frame 2: Inset shows the action needed to select Loop (Workspace)

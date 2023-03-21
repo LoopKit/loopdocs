@@ -1,5 +1,10 @@
 ## Code Customizations
 
+!!! danger "Version 3.2.1"
+    With the release of Loop 3.2.1, the location for the Eros pod customizations has moved.
+
+    LoopDocs will be updated later. The Key_Phrase search should still work for Mac/Xcode folks.
+
 ### Mac/Xcode
 
 The customization instructions on this page were written for the [Mac-Xcode Build](../build/overview.md) method.

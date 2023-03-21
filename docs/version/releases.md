@@ -14,12 +14,12 @@ Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your 
 
 * Be prepared to enter all your settings again and start a new pod
 * If you use Loop Follow, you do **not** need to delete Loop Follow
-* When downgrading to an older version of Loop from Loop 3, you have to delete all apps with a shared app group id
+* When downgrading to an older version of Loop from Loop 3, you have to delete all apps with a shared app group ID
     * For more information, click on [Remove Apps with Shared App Group](#remove-apps-with-shared-app-group)
 
 ## Current Release
 
-The current released version for Loop main is v3.2.0. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for Loop main is v3.2.1. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -35,6 +35,16 @@ Release information is always found on the [GitHub LoopKit/Loop release page](ht
 Be aware that updates to LoopDocs may take some time after a new release comes out.
 
 ## Loop 3 Version History
+
+### Loop v3.2.1
+
+Loop v3.2.1 was released on March 20, 2023.
+
+This is a minor release primarily dealing with localization updates.
+
+* G7 Plugin localization fixed: was defaulting to Spanish in some cases.
+* Updated translations from translators on Lokalise.
+* Many behind-the-scenes fixes for how strings are tracked in the various frameworks that Loop uses, fixing a large number of broken/missing translations.
 
 ### Loop v3.2.0
 
