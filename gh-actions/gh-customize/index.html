@@ -1896,6 +1896,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#build-loop-with-your-customizations" class="md-nav__link">
+    Build Loop with Your Customizations
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2493,6 +2500,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#build-loop-with-your-customizations" class="md-nav__link">
+    Build Loop with Your Customizations
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2597,15 +2611,15 @@
 <li>LoopDocs: Decide on <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> to modify <a href="../../build/code_customization/">Code Customization</a></li>
 <li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (each Module):<ol>
 <li>Fork Module (<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
-<li>Modify Module (<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>-&gt;Codespaces)</li>
-<li>Save your new <abbr title="version of code within a single repository or workspace repository">branch</abbr> (Codespaces-&gt;<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
+<li>Modify Module (<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to Codespaces)</li>
+<li>Save your new <abbr title="version of code within a single repository or workspace repository">branch</abbr> (Codespaces to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
 <li>Prepare command line and save</li>
 </ol>
 </li>
 <li>All Module command lines prepared</li>
 <li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (build Loop)<ol>
-<li>Modify LoopWorkspace (<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>-&gt;Codespaces)</li>
-<li>Save your new <abbr title="version of code within a single repository or workspace repository">branch</abbr> (Codespaces-&gt;<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
+<li>Modify LoopWorkspace (<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to Codespaces)</li>
+<li>Save your new <abbr title="version of code within a single repository or workspace repository">branch</abbr> (Codespaces to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
 <li>Action: Build Loop</li>
 </ol>
 </li>
@@ -2795,9 +2809,9 @@
 </ul>
 </li>
 </ol>
-<p>The commands you paste depend on whether this is the first time you've worked with the Module or if you have already started customizing it and thus already have a main_3.2.1_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> created.</p>
+<p>The commands you paste depend on whether this is the first time you've worked with the Module for release 3.2.1 or if you have already started customizing it and thus already have a main_3.2.1_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> created.</p>
 <h3 id="first-time-for-this-module">First Time for this Module<a class="headerlink" href="#first-time-for-this-module" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>These commands are used ONLY for released version of Loop and only the first time you work with a given Module. This page is configured for released version 3.2.1.</p>
+<p>These commands are used ONLY for released version of Loop and only the first time you work with a given Module for release 3.2.1. This page is configured for released version 3.2.1.</p>
 <p>This process has two steps:</p>
 <ul>
 <li>Step 1: Copy the indicated first command (Prepare xxx Module) and paste into the terminal window<ul>
@@ -2951,6 +2965,10 @@ git<span class="w"> </span>update-index<span class="w"> </span>--cacheinfo<span 
 <p>Prepare the commands for each Module customization you want for this build in your text file.</p>
 <h3 id="first-modification">First Modification<a class="headerlink" href="#first-modification" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Only use this section if you have not previously created the main_3.2.1_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> for LoopWorkspace.</p>
+<ul>
+<li>Be sure to sync the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to LoopKit/LoopWorkspace main <abbr title="version of code within a single repository or workspace repository">branch</abbr> BEFORE opening the Codespace</li>
+<li>If you followed the original directions to build without customization first, you will have already synced - but just in case you skipped that step, sync it now</li>
+</ul>
 <p>Open the Codespace and select your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace <strong>main</strong> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>Copy and paste the following lines into your terminal:</p>
 <div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>main_3.2.1_custom
@@ -2965,10 +2983,15 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 <p>Click on the source control icon - your changes are already staged. </p>
 <p>Type a message in the comment and click Commit.</p>
 <p>Click on sync changes.</p>
+<h3 id="build-loop-with-your-customizations">Build Loop with Your Customizations<a class="headerlink" href="#build-loop-with-your-customizations" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Return to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> window for LoopWorkspaces.</p>
 <ul>
-<li>Modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> to be main_3.2.1_custom</li>
-<li>Click on Action: Build Loop</li>
+<li>Click on Action: Build Loop<ul>
+<li>When you Click on Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> to see the dropdown</li>
+<li>You must select your main_3.2.1_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Then click on the green Run Workflow button</li>
+</ul>
+</li>
 </ul>
 <p>In about 1 hour, your customized Loop will be available for installation on your phone via <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 <h2 id="special-cases">Special Cases<a class="headerlink" href="#special-cases" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3025,6 +3048,7 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 <li>At the end of the <abbr title="website address (Uniform Resource Locator)">URL</abbr>, add <code>.patch</code> and hit return</li>
 </ul>
 <p>You now have a "patch" text file. Download and save this file on your computer.</p>
+<p>No instructions are available yet, but you might be able to reuse that patch for subsequent releases. We are still working on steps and methods to simplify the process.</p>
 <p>The default name when you select File-&gt;Save Page As, is 1.patch.txt. It's a good idea to revise this. For the graphic below, the filename was modified to <code>Loop_main_3.2.1_custom_1.patch.txt</code> and a folder called <code>patches</code> in Downloads was used for storage.</p>
 <p align="center"><img alt="browser screen for saving the patch" src="../img/patch-saved-for-loop.png" width="750" /></p>
 <h2 id="background-information">Background Information<a class="headerlink" href="#background-information" title="Anchor link to this Header on this Page">&para;</a></h2>
