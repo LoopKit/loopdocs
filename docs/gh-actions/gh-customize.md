@@ -374,7 +374,8 @@ Prepare the commands for each Module customization you want for this build in yo
 
 Only use this section if you have not previously created the main_3.2.1_custom branch for LoopWorkspace.
 
-* Be sure to sync the main branch to LoopKit main branch BEFORE opening the Codespace
+* Be sure to sync the main branch of your fork to LoopKit/LoopWorkspace main branch BEFORE opening the Codespace
+* If you followed the original directions to build without customization first, you will have already synced - but just in case you skipped that step, sync it now
 
 Open the Codespace and select your fork of LoopWorkspace **main** branch.
 
@@ -402,6 +403,8 @@ Click on the source control icon - your changes are already staged.
 Type a message in the comment and click Commit.
 
 Click on sync changes.
+
+### Build Loop with Your Customizations
 
 Return to your GitHub window for LoopWorkspaces.
 
