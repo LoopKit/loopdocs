@@ -24,13 +24,13 @@
     * LoopDocs: Decide on Modules to modify [Code Customization](../build/code_customization.md)
     * GitHub (each Module):
         1. Fork Module (GitHub)
-        1. Modify Module (GitHub->Codespaces)
-        1. Save your new branch (Codespaces->GitHub)
+        1. Modify Module (GitHub to Codespaces)
+        1. Save your new branch (Codespaces to GitHub)
         1. Prepare command line and save
     * All Module command lines prepared
     * GitHub (build Loop)
-        1. Modify LoopWorkspace (GitHub->Codespaces)
-        1. Save your new branch (Codespaces->GitHub)
+        1. Modify LoopWorkspace (GitHub to Codespaces)
+        1. Save your new branch (Codespaces to GitHub)
         1. Action: Build Loop
     * Phone: Install Loop with TestFlight
 
@@ -170,11 +170,11 @@ If you have already made a customization in this module and you are returning fo
     * the branch is the default branch for this Module (dev or main)
     * this is where you will paste the command you're about to copy
 
-The commands you paste depend on whether this is the first time you've worked with the Module or if you have already started customizing it and thus already have a main_3.2.1_custom branch created.
+The commands you paste depend on whether this is the first time you've worked with the Module for release 3.2.1 or if you have already started customizing it and thus already have a main_3.2.1_custom branch created.
 
 ### First Time for this Module
 
-These commands are used ONLY for released version of Loop and only the first time you work with a given Module. This page is configured for released version 3.2.1.
+These commands are used ONLY for released version of Loop and only the first time you work with a given Module for release 3.2.1. This page is configured for released version 3.2.1.
 
 This process has two steps:
 
@@ -374,6 +374,8 @@ Prepare the commands for each Module customization you want for this build in yo
 
 Only use this section if you have not previously created the main_3.2.1_custom branch for LoopWorkspace.
 
+* Be sure to sync the main branch to LoopKit main branch BEFORE opening the Codespace
+
 Open the Codespace and select your fork of LoopWorkspace **main** branch.
 
 Copy and paste the following lines into your terminal:
@@ -403,8 +405,10 @@ Click on sync changes.
 
 Return to your GitHub window for LoopWorkspaces.
 
-* Modify the default branch to be main_3.2.1_custom
 * Click on Action: Build Loop
+    * When you Click on Run workflow to see the dropdown
+    * You must select your main_3.2.1_custom branch
+    * Then click on the green Run Workflow button
 
 In about 1 hour, your customized Loop will be available for installation on your phone via TestFlight.
 
@@ -469,6 +473,8 @@ https://github.com/loopdocs-tester/Loop/compare/main...main_3.2.1_custom
 * At the end of the URL, add `.patch` and hit return
 
 You now have a "patch" text file. Download and save this file on your computer.
+
+No instructions are available yet, but you might be able to reuse that patch for subsequent releases. We are still working on steps and methods to simplify the process.
 
 The default name when you select File->Save Page As, is 1.patch.txt. It's a good idea to revise this. For the graphic below, the filename was modified to `Loop_main_3.2.1_custom_1.patch.txt` and a folder called `patches` in Downloads was used for storage.
 
