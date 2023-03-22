@@ -400,7 +400,7 @@ let cannulaInsertionUnitsExtra
     * Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)
     * Folder: OmniKit/OmniKit/OmnipodCommon (Eros)
     * File: Pod.swift, Line 82 (DASH); Line 87 (Eros); 
-* Loop 2.2.x: Eros Pod (still configured in rileylink_iod - use Key_Phrase)
+* Loop 2.2.x: Eros Pod (still configured in rileylink_ios - use Key_Phrase)
 
 _Code Before Modification_
 
