@@ -2574,9 +2574,10 @@
 <p class="admonition-title">DRAFT</p>
 <p>This procedure is in DRAFT mode - only minimal graphics are provided.</p>
 <p>The entire procedure may change without warning, so be prepared for updates.</p>
+<p>Right now - you have to repeat the customization for each new release - we are working on an easier process.</p>
 <p>WARNING - After a recent release - wait for the release number to be updated on this page before using any of the copy/paste commands.</p>
-<p>This page has not been updated for <abbr title="Latest release with major updates">Loop 3</abbr>.2.1.
-Please be patient - the location for customization for Eros pods has changed and will be updated on this page and <a href="../../build/code_customization/">Code Customization</a> page - but later.</p>
+<p>This page was updated for <abbr title="Latest release with major updates">Loop 3</abbr>.2.1 on 22-March-2023.</p>
+<p><strong>NOTE</strong> The location for customization for Eros pods has changed. It is now in the OmniKit module. (DASH = OmniBLE, Eros = OmniKit). Expect more changes in the future.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Time Estimate</p>
@@ -2626,35 +2627,34 @@ Please be patient - the location for customization for Eros pods has changed and
 <p>You will need a text editor to format a command line for each module you change. Use the same text editor you use for saving your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. You do not want characters like double hypen or quote symbols modified by a smart editor.</p>
 <h2 id="decide-which-modules-you-want-to-modify">Decide Which <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> You Want to Modify<a class="headerlink" href="#decide-which-modules-you-want-to-modify" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Decide which <a href="../../build/code_customization/">Code Customization</a> you want to make. Each customization lists a Module name. You will want a <abbr title="a copy of code in a github repository other than the original">fork</abbr> for each Module you wish to modify.</p>
+<ul>
+<li>DASH Pods: Use OmniBLE</li>
+<li>Eros Pods: Use OmniKit</li>
+</ul>
 <p>This table lists all the modules referred to on the Code Customization page linked above:</p>
 <table>
 <thead>
 <tr>
-<th>Folder</th>
 <th>Module</th>
 <th>Fork From</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Loop/LoopCore</td>
 <td>Loop</td>
 <td><a href="https://github.com/LoopKit/Loop">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/Loop</a></td>
 </tr>
 <tr>
-<td>LoopKit/LoopKitUI/Extensions</td>
 <td>LoopKit</td>
 <td><a href="https://github.com/LoopKit/LoopKit">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/LoopKit</a></td>
 </tr>
 <tr>
-<td>OmniBLE/OmniBLE/PumpManagerUI</td>
 <td>OmniBLE</td>
 <td><a href="https://github.com/LoopKit/OmniBLE">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/OmniBLE</a></td>
 </tr>
 <tr>
-<td>rileylink_ios/OmniKit/OmnipodCommon</td>
-<td>rileylink_ios</td>
-<td><a href="https://github.com/ps2/rileylink_ios">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/ps2/rileylink_ios</a></td>
+<td>OmniKit</td>
+<td><a href="https://github.com/LoopKit/OmniKit">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/OmniKit</a></td>
 </tr>
 </tbody>
 </table>
@@ -2669,6 +2669,15 @@ Please be patient - the location for customization for Eros pods has changed and
 </ul>
 </div>
 <h2 id="create-a-fork-for-selected-module">Create a Fork for Selected Module<a class="headerlink" href="#create-a-fork-for-selected-module" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">New Release</p>
+<p>If you have previously used this process for a prior release, use the same <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> you already forked.</p>
+<ol>
+<li>Go to the <abbr title="version of code within a single repository or workspace repository">branch</abbr> for each Module (dev or main) that is the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the table above.</li>
+<li>Sync that <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ol>
+<p>Skip ahead to <a href="#open-module-in-codespaces">Open Module in Codespaces</a>.</p>
+</div>
 <p>If you want a modification that uses a particular module, you must <abbr title="a copy of code in a github repository other than the original">fork</abbr> that module to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. You will repeat the Fork and Modify steps for each module.</p>
 <ol>
 <li>Log into your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
@@ -2707,12 +2716,19 @@ Please be patient - the location for customization for Eros pods has changed and
 <td>dev</td>
 </tr>
 <tr>
-<td>ps2/rileylink_ios</td>
-<td>dev</td>
+<td>LoopKit/OmniKit</td>
+<td>main</td>
 </tr>
 </tbody>
 </table>
 <p>The LoopWorkspace main <abbr title="version of code within a single repository or workspace repository">branch</abbr> is always the most recent released code.</p>
+<ul>
+<li>WARNING - After a recent release<ul>
+<li>Wait for the release number to be updated on this page before using any of the copy/paste commands</li>
+<li>Check the top of this page for the release message</li>
+</ul>
+</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Pro Tip</p>
 <p>If you know you want to change more than one Module, go on and prepare the forks for each <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> you want to customize.</p>
@@ -2724,8 +2740,17 @@ Please be patient - the location for customization for Eros pods has changed and
 <p>If you want to deal with both released Loop (<abbr title="a copy of code in a github repository other than the original">fork</abbr> from LoopKit) and LnL with Patches, it is suggested you set up a second free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. The second account could have a name like username-lnl, where you insert your current username. If you do it this way, you use the same four Apple <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for both repositories and you can choose the same MATCH_PASSWORD, but the GH_PAT will be unique for each <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account.</p>
 </div>
 <h2 id="open-module-in-codespaces">Open Module in Codespaces<a class="headerlink" href="#open-module-in-codespaces" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Now that the selected module <abbr title="a copy of code in a github repository other than the original">fork</abbr> exists in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account, you will open it in Codespaces. (If you are returning to change a customization you've already made, be sure to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> where you already made the previous customization; <a href="#update-customization">Update Customization</a>).</p>
-<p>For this portion of the process, work with a single Module until you are done with the customization for that module. The final step will be to create and save a special command you will use when setting up the LoopWorkspace later.</p>
+<div class="admonition warning">
+<p class="admonition-title">New Release</p>
+<p>If you have previously used this process for a prior release, use the same <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> you already forked. Make sure you sync each Module to LoopKit.</p>
+<p>You need to repeat this section to create the main_3.2.1 branches for each Module you want to customize.</p>
+</div>
+<p>Now that the selected module <abbr title="a copy of code in a github repository other than the original">fork</abbr> exists in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account, you will open it in Codespaces.</p>
+<ul>
+<li>If you are returning to change a customization you've already made to version 3.2.1, be sure to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> where you already made the previous customization; <a href="#update-customization">Update Customization</a></li>
+<li>If you are returning to add customization to an updated version of Loop, you must complete this section</li>
+</ul>
+<p>For this portion of the process, work with a single Module until you are done with the customization for that module. Repeat this for all <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> and then move on to setting up the LoopWorkspace.</p>
 <ol>
 <li>Right click (or control click) on <a href="https://github.com/codespaces">Codespaces</a><ul>
 <li>This opens a new tab in your browser</li>
@@ -2735,8 +2760,8 @@ Please be patient - the location for customization for Eros pods has changed and
 <li>On new screen<ul>
 <li>Click on Select a <abbr title="contains project files and each file's revision history">repository</abbr> and choose your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username/moduleName for the module you want to modify (you can start typing your username if there are too many choices)</li>
 <li>You will see a message the <code>Codespace usage for this repository is paid for by username</code> - you get 60 free hours per month, so you can ignore this message<ul>
-<li>First time - leave the <abbr title="version of code within a single repository or workspace repository">branch</abbr> alone (dev)</li>
-<li>Subsequent times - select your customized <abbr title="version of code within a single repository or workspace repository">branch</abbr>, e.g., main_3.2_custom</li>
+<li>First time - leave the <abbr title="version of code within a single repository or workspace repository">branch</abbr> alone (dev or main depending on Module)</li>
+<li>Subsequent times - select your customized <abbr title="version of code within a single repository or workspace repository">branch</abbr>, e.g., main_3.2.1_custom</li>
 </ul>
 </li>
 <li>You do not need to modify the region or machine type</li>
@@ -2762,16 +2787,17 @@ Please be patient - the location for customization for Eros pods has changed and
 <ol>
 <li>The terminal window should be showing in the panel section (indicated by the number 4)</li>
 <li>You should see::<br>
-    <code>@username -&gt; /workspaces/moduleName (dev) $</code><ul>
+    <code>@username -&gt; /workspaces/moduleName (branch) $</code><ul>
 <li>where your username is after the @ symbol</li>
 <li>and the current Module replaces moduleName</li>
+<li>the <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> for this Module (dev or main)</li>
 <li>this is where you will paste the command you're about to copy</li>
 </ul>
 </li>
 </ol>
-<p>The commands you paste depend on whether this is the first time you've worked with the Module or if you have already started customizing it and thus already have a main_3.2_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> created.</p>
+<p>The commands you paste depend on whether this is the first time you've worked with the Module or if you have already started customizing it and thus already have a main_3.2.1_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> created.</p>
 <h3 id="first-time-for-this-module">First Time for this Module<a class="headerlink" href="#first-time-for-this-module" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>These commands are used ONLY for released version of Loop and only the first time you work with a given Module. </p>
+<p>These commands are used ONLY for released version of Loop and only the first time you work with a given Module. This page is configured for released version 3.2.1.</p>
 <p>This process has two steps:</p>
 <ul>
 <li>Step 1: Copy the indicated first command (Prepare xxx Module) and paste into the terminal window<ul>
@@ -2795,43 +2821,45 @@ Please be patient - the location for customization for Eros pods has changed and
 <p>Copy the selected line for the current module into the terminal. If you see an error STOP.</p>
 <ul>
 <li>Did you copy the correct line for the current Module?</li>
-<li>Is your Module dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> up to date?</li>
+<li>Is your Module <abbr title="version of code within a single repository or workspace repository">branch</abbr> (dev or main) up to date?</li>
 </ul>
-<h4 id="prepare-loop-module-loop-320">Prepare Loop Module (<abbr title="Latest release with major updates">Loop 3</abbr>.2.0)<a class="headerlink" href="#prepare-loop-module-loop-320" title="Anchor link to this Header on this Page">&para;</a></h4>
-<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>a1fb919703987bf5daad390f589fec3481953c33
+<h4 id="prepare-loop-module-loop-321">Prepare Loop Module (<abbr title="Latest release with major updates">Loop 3</abbr>.2.1)<a class="headerlink" href="#prepare-loop-module-loop-321" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>01eb87693ffb832aa8fb92692438a986ec7270e9
 </code></pre></div>
-<h4 id="prepare-loopkit-module-loop-320">Prepare LoopKit Module (<abbr title="Latest release with major updates">Loop 3</abbr>.2.0)<a class="headerlink" href="#prepare-loopkit-module-loop-320" title="Anchor link to this Header on this Page">&para;</a></h4>
-<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>6073eb1f4adaaeeb449589c21f251db2138b2c89
+<h4 id="prepare-loopkit-module-loop-321">Prepare LoopKit Module (<abbr title="Latest release with major updates">Loop 3</abbr>.2.1)<a class="headerlink" href="#prepare-loopkit-module-loop-321" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>9835a29f1bac9f75023f39c376479a2e6a6c8ccd
 </code></pre></div>
-<h4 id="prepare-omnible-module-loop-320">Prepare OmniBLE Module (<abbr title="Latest release with major updates">Loop 3</abbr>.2.0)<a class="headerlink" href="#prepare-omnible-module-loop-320" title="Anchor link to this Header on this Page">&para;</a></h4>
-<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>41bd40f4f0a074e60e0f9a763358a99519e43dcb
+<h4 id="prepare-omnible-module-loop-321">Prepare OmniBLE Module (<abbr title="Latest release with major updates">Loop 3</abbr>.2.1)<a class="headerlink" href="#prepare-omnible-module-loop-321" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>(DASH)</p>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>f21360781c0b8eee26c531d20f1b0aa192a227f2
 </code></pre></div>
-<h4 id="prepare-rileylink_ios-module-loop-320">Prepare rileylink_ios Module (<abbr title="Latest release with major updates">Loop 3</abbr>.2.0)<a class="headerlink" href="#prepare-rileylink_ios-module-loop-320" title="Anchor link to this Header on this Page">&para;</a></h4>
-<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>8a68c41e2ce05e47e1a5707d0c4ad05309bd3861
+<h4 id="prepare-omnikit-module-loop-321">Prepare OmniKit Module (<abbr title="Latest release with major updates">Loop 3</abbr>.2.1)<a class="headerlink" href="#prepare-omnikit-module-loop-321" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>(Eros)</p>
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-q<span class="w"> </span>c1e0d395975c93d15b3f84ac21097e40b7d5d93f
 </code></pre></div>
 <h3 id="create-the-custom-branch">Create the Custom Branch<a class="headerlink" href="#create-the-custom-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy and paste the next command to create a special <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> that matches the released code for this Module.</p>
-<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>main_3.2
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>main_3.2.1
 </code></pre></div>
-<p>You should see the response: <code>Switched to a new branch 'main_3.2'</code></p>
+<p>You should see the response: <code>Switched to a new branch 'main_3.2.1'</code></p>
 <p>Assuming no error, copy and paste these commands next. You will see a popup asking you if you want to paste multiple lines. Say yes and check the box to not ask again.</p>
-<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main_3.2
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main_3.2.1
 git<span class="w"> </span>pull
-git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>main_3.2_custom
-git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main_3.2_custom
+git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>main_3.2.1_custom
+git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main_3.2.1_custom
 </code></pre></div>
-<p>You should see the items you pasted in the terminal followed by responses talking about the <code>remote</code> (your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="contains project files and each file's revision history">repository</abbr>) and how to create a pull request; that you are already up to date; that you switched to a new <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then another <code>remote</code> message. Your screen should be similar to the graphic below. (Note: this graphic was prepared for <abbr title="Latest release with major updates">Loop 3</abbr>.0.0. Now that <abbr title="Latest release with major updates">Loop 3</abbr>.2.0 is released, your terminal will show the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for <abbr title="Latest release with major updates">Loop 3</abbr>.2.0.)</p>
+<p>You should see the items you pasted in the terminal followed by responses talking about the <code>remote</code> (your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="contains project files and each file's revision history">repository</abbr>) and how to create a pull request; that you are already up to date; that you switched to a new <abbr title="version of code within a single repository or workspace repository">branch</abbr> and then another <code>remote</code> message. Your screen should be similar to the graphic below. (Note: this graphic was prepared for <abbr title="Latest release with major updates">Loop 3</abbr>.0.0. Now that <abbr title="Latest release with major updates">Loop 3</abbr>.2.1 is released, your terminal will show the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for <abbr title="Latest release with major updates">Loop 3</abbr>.2.1.)</p>
 <p align="center"><img alt="Codespaces screen after setting up branches" src="../img/codespace-new-branches-loop.png" width="750" /></p>
 <div class="admonition success">
 <p class="admonition-title">What did those steps accomplish?</p>
 <p>You now have 3 branches in your Codespace (local) and your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (remote) versions of your <abbr title="contains project files and each file's revision history">repository</abbr> for this Module:</p>
 <ul>
-<li>dev</li>
-<li>main_3.2</li>
-<li>main_3.2_custom</li>
+<li>dev or main (depending on Module)</li>
+<li>main_3.2.1</li>
+<li>main_3.2.1_custom</li>
 </ul>
-<p>Right now main_3.2 and main_3.2_custom are identical and match the released copy for that Module.</p>
-<p>Next step, you will modify main_3.2_custom.</p>
+<p>Right now main_3.2.1 and main_3.2.1_custom are identical and match the released copy for that Module.</p>
+<p>Next step, you will modify main_3.2.1_custom.</p>
 </div>
 <p>Skip ahead to <a href="#customize-the-module">Customize the Module</a> and make the changes to this <abbr title="version of code within a single repository or workspace repository">branch</abbr> that you want for your Module.</p>
 <h2 id="update-customization">Update Customization<a class="headerlink" href="#update-customization" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2846,7 +2874,7 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 <li>If your Codespace for this Module does not exist:<ul>
 <li>Click on the green button on the right that says <code>New Codespace</code></li>
 <li>Click on Select a <abbr title="contains project files and each file's revision history">repository</abbr> and choose your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username/moduleName for the Module you want to modify</li>
-<li>Select your customized <abbr title="version of code within a single repository or workspace repository">branch</abbr>, e.g., main_3.2_custom</li>
+<li>Select your customized <abbr title="version of code within a single repository or workspace repository">branch</abbr>, e.g., main_3.2.1_custom</li>
 <li>You do not need to modify the region or machine type</li>
 <li>Click on the green button at the bottom that says <code>Create codespace</code></li>
 </ul>
@@ -2855,7 +2883,7 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 </li>
 <li>A message appears saying setting up your codespace; and then the Codespaces screen appears showing the README.md file (by default) for that <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>In the terminal window, you should see the line: 
-    <code>@username -&gt; /workspaces/moduleName (main_3.2_custom) $</code></li>
+    <code>@username -&gt; /workspaces/moduleName (main_3.2.1_custom) $</code></li>
 </ol>
 <p>Continue with <a href="#customize-the-module">Customize the Module</a>.</p>
 <h3 id="customize-the-module">Customize the Module<a class="headerlink" href="#customize-the-module" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2879,7 +2907,7 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 <li>Commit the change (to your local copy in Codespaces)</li>
 <li>Sync the change (to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a copy of code in a github repository other than the original">fork</abbr>)</li>
 </ol>
-<p>You will see a warning <code>This action will pull and push commits from and to "origin/main_3.2_custom".</code></p>
+<p>You will see a warning <code>This action will pull and push commits from and to "origin/main_3.2.1_custom".</code></p>
 <p>Select `OK, don't show again'</p>
 <p>If you see message: <code>Do you want to periodically run git fetch</code> - say No</p>
 <p>You are done with this module. </p>
@@ -2911,7 +2939,7 @@ git<span class="w"> </span>update-index<span class="w"> </span>--cacheinfo<span 
 </code></pre></div>
 <p>For each Module you customized, return to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a copy of code in a github repository other than the original">fork</abbr> for that Module (<code>https://github.com/username/moduleName</code>) to get the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for that Module.</p>
 <ul>
-<li>Click on the <abbr title="version of code within a single repository or workspace repository">branch</abbr> and choose main_3.2_custom</li>
+<li>Click on the <abbr title="version of code within a single repository or workspace repository">branch</abbr> and choose main_3.2.1_custom</li>
 <li>Click on the clock item to the right<ul>
 <li>This brings up the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history screen</li>
 <li>Your last <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> should be the top one</li>
@@ -2922,16 +2950,16 @@ git<span class="w"> </span>update-index<span class="w"> </span>--cacheinfo<span 
 </ul>
 <p>Prepare the commands for each Module customization you want for this build in your text file.</p>
 <h3 id="first-modification">First Modification<a class="headerlink" href="#first-modification" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Only use this section if you have not previously created the main_3.2_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> for LoopWorkspace.</p>
+<p>Only use this section if you have not previously created the main_3.2.1_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> for LoopWorkspace.</p>
 <p>Open the Codespace and select your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace <strong>main</strong> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>Copy and paste the following lines into your terminal:</p>
-<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>main_3.2_custom
-git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main_3.2_custom
+<div class="copy highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>main_3.2.1_custom
+git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main_3.2.1_custom
 </code></pre></div>
 <p>Then skip ahead to <a href="#modify-loopworkspace">Modify LoopWorkspace</a>.</p>
 <h3 id="subsequent-modifications">Subsequent Modifications<a class="headerlink" href="#subsequent-modifications" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Only use this section if you have created the main_3.2_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> for LoopWorkspace; but want to add a new modification.</p>
-<p>Open (or reopen) the Codespace and select your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace <strong>main_3.2_custom</strong> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>Only use this section if you have created the main_3.2.1_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> for LoopWorkspace; but want to add a new modification.</p>
+<p>Open (or reopen) the Codespace and select your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace <strong>main_3.2.1_custom</strong> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <h3 id="modify-loopworkspace">Modify LoopWorkspace<a class="headerlink" href="#modify-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy and paste your prepared lines into the terminal.</p>
 <p>Click on the source control icon - your changes are already staged. </p>
@@ -2939,7 +2967,7 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 <p>Click on sync changes.</p>
 <p>Return to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> window for LoopWorkspaces.</p>
 <ul>
-<li>Modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> to be main_3.2_custom</li>
+<li>Modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> to be main_3.2.1_custom</li>
 <li>Click on Action: Build Loop</li>
 </ul>
 <p>In about 1 hour, your customized Loop will be available for installation on your phone via <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
@@ -2982,12 +3010,12 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 <p>If you want to create a text file with a patch for your customization, you will take a few extra steps. Refer to the figure and the steps below it.</p>
 <p align="center"><img alt="GitHub screen after modifying the custom branch" src="../img/github-custom-branch-loop.png" width="750" /></p>
 <p>If you don't see the green <code>Compare &amp; pull request</code> icon, modify the following <abbr title="website address (Uniform Resource Locator)">URL</abbr> with your username and the desired Module name and click on the <code>Create pull request</code> icon instead:</p>
-<div class="highlight"><pre><span></span><code>https://github.com/loopdocs-tester/Loop/compare/main...main_3.2_custom
+<div class="highlight"><pre><span></span><code>https://github.com/loopdocs-tester/Loop/compare/main...main_3.2.1_custom
 </code></pre></div>
 <ul>
 <li>Click on the green <code>Compare &amp; pull request</code> icon<ul>
 <li>Change the LoopKit (or ps2) username to your username</li>
-<li>Change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> from dev to main_3.2</li>
+<li>Change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> from dev to main_3.2.1</li>
 <li>Scroll down to review the changes you just made</li>
 </ul>
 </li>
@@ -2997,7 +3025,7 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 <li>At the end of the <abbr title="website address (Uniform Resource Locator)">URL</abbr>, add <code>.patch</code> and hit return</li>
 </ul>
 <p>You now have a "patch" text file. Download and save this file on your computer.</p>
-<p>The default name when you select File-&gt;Save Page As, is 1.patch.txt. It's a good idea to revise this. For the graphic below, the filename was modified to <code>Loop_main_3.2_custom_1.patch.txt</code> and a folder called <code>patches</code> in Downloads was used for storage.</p>
+<p>The default name when you select File-&gt;Save Page As, is 1.patch.txt. It's a good idea to revise this. For the graphic below, the filename was modified to <code>Loop_main_3.2.1_custom_1.patch.txt</code> and a folder called <code>patches</code> in Downloads was used for storage.</p>
 <p align="center"><img alt="browser screen for saving the patch" src="../img/patch-saved-for-loop.png" width="750" /></p>
 <h2 id="background-information">Background Information<a class="headerlink" href="#background-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="loopworkspace">LoopWorkspace<a class="headerlink" href="#loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>

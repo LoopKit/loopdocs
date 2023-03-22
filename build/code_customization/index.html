@@ -2830,10 +2830,9 @@
   <h1>Customize Your Loop</h1>
 
 <h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition danger">
+<div class="admonition warning">
 <p class="admonition-title">Version 3.2.1</p>
 <p>With the release of <abbr title="Latest release with major updates">Loop 3</abbr>.2.1, the location for the Eros pod customizations has moved.</p>
-<p>LoopDocs will be updated later. The Key_Phrase search should still work for Mac/<abbr title="program used to build an app">Xcode</abbr> folks.</p>
 </div>
 <h3 id="macxcode">Mac/<abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#macxcode" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The customization instructions on this page were written for the <a href="../overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a> method.</p>
@@ -2893,6 +2892,7 @@
 <li><abbr title="Latest release with major updates">Loop 3</abbr> has been released but there are still many people using older code.</li>
 <li>The labels below indicate Loop 2.2.x or <abbr title="Latest release with major updates">Loop 3</abbr>, if they are different</li>
 <li>Users of Loop 2.2.9 (or earlier) or FreeAPS should refer to the Loop 2.2.x examples.</li>
+<li>Some 2.2.x customizations will be removed as time goes on</li>
 <li>Users of <abbr title="Latest release with major updates">Loop 3</abbr> should refer to the <abbr title="Latest release with major updates">Loop 3</abbr> examples.<ul>
 <li>Note that some changes are in a different file for <abbr title="Latest release with major updates">Loop 3</abbr> (part of the architecture upgrade for the app).</li>
 </ul>
@@ -3099,7 +3099,6 @@ Do not paste the result anywhere
 <h2 id="adjust-percent-bolus-for-automatic-bolus">Adjust Percent Bolus for <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr><a class="headerlink" href="#adjust-percent-bolus-for-automatic-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you are mostly happy with the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> of <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> but wish it delivered more or less insulin during every Loop interval, then this customization is for you.</p>
 <p>This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modify it once and try it out for a while, it’s easy to go back and change it again.</p>
-<p>With Loop 2.2.x, the end of the line has a comment <code>// %</code>, whereas with <abbr title="Latest release with major updates">Loop 3</abbr>, there is an explanatory comment (line starting with <code>//</code>) before the line.</p>
 <p><strong>Change just the number and double check that the value is less than 1.</strong></p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let bolusPartialApplicationFactor
 </code></pre></div>
@@ -3108,21 +3107,15 @@ Do not paste the result anywhere
 <li><abbr title="Latest release with major updates">Loop 3</abbr><ul>
 <li>Folder: Loop/Loop/Models</li>
 <li>File: LoopConstants.swift</li>
-<li>Line: 44</li>
-</ul>
-</li>
-<li>Loop 2.2.x<ul>
-<li>Folder: Loop/LoopCore</li>
-<li>File: LoopSettings.swift</li>
-<li>Line: 89 (2.2.5 and later)</li>
+<li>Line: 53</li>
 </ul>
 </li>
 </ul>
 <p><em>Code Before Modification</em></p>
-<div class="highlight"><pre><span></span><code>public let bolusPartialApplicationFactor = 0.4
+<div class="highlight"><pre><span></span><code>static let bolusPartialApplicationFactor = 0.4
 </code></pre></div>
 <p><em>Code After Modification to 50% of recommended insulin</em></p>
-<div class="highlight"><pre><span></span><code>public let bolusPartialApplicationFactor = 0.5
+<div class="highlight"><pre><span></span><code>static let bolusPartialApplicationFactor = 0.5
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Do not exceed 1.0</p>
@@ -3194,9 +3187,9 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <p>As shown in the graphic below, this phrase shows up in 2 places, only the first one should be modified.</p>
 <p align="center"><img alt="xcode display showing the key phrase found in 2 places" src="../img/xcode-modify-max-carb-entry.svg" width="700" /></p>
 <ul>
-<li>Loop 2.2.x and <abbr title="Latest release with major updates">Loop 3</abbr><ul>
+<li>Loop 2.2.x<ul>
 <li>Folder: Loop/Loop/View Controllers</li>
-<li>File: CarbEntryViewController.swift, Line 33 (Loop 2.2.x) or 36 (<abbr title="Latest release with major updates">Loop 3</abbr>)</li>
+<li>File: CarbEntryViewController.swift, Line 33 (Loop 2.2.x)</li>
 </ul>
 </li>
 </ul>
@@ -3207,26 +3200,21 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <div class="highlight"><pre><span></span><code>var maxQuantity = HKQuantity(unit: .gram(), doubleValue: 99)
 </code></pre></div>
 <h2 id="pods-add-extra-insulin-on-insertion">Pods: Add Extra Insulin on Insertion<a class="headerlink" href="#pods-add-extra-insulin-on-insertion" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The default value is 0.0 u of extra insulin.  If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Loop - be conservative.</p>
+<p>The default value is 0.0 U of extra insulin.  If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Loop - be conservative.</p>
 <p>Note that Loop does not include the amount of insulin in the prime or insertion steps in your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. The pod reports every pulse that it delivers to Loop. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks.  Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.35 U to the "extra" value, you should get 0.35 / 0.05 = 7 extra clicks. In other words, 17 total clicks after you press insert.</p>
 <p>This code change is found in one location for Eros Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> throughout the app) and DASH Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Dash throughout the app). I tend to change both files, but if you're only using one kind of pod, that is really not necessary.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let cannulaInsertionUnitsExtra
 </code></pre></div>
 <ul>
-<li>Module: OmniBLE (DASH) or rileylink_iod (Eros)</li>
+<li>Module: OmniBLE (DASH) or OmniKit (Eros)</li>
 <li>DASH or Eros Pod (<abbr title="Latest release with major updates">Loop 3</abbr> only)<ul>
 <li>Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)</li>
-<li>Folder: rileylink_ios/OmniKit/OmnipodCommon (Eros)</li>
+<li>Folder: OmniKit/OmniKit/OmnipodCommon (Eros)</li>
 <li>File: Pod.swift, Line 82 (DASH); Line 87 (Eros); </li>
 </ul>
 </li>
-<li>Loop 2.2.x: Eros Pod (ones that require a <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> compatible device)<ul>
-<li>Folder: rileylink_ios/OmniKit/Model</li>
-<li>File: Pod.swift, Line 72 (Loop 2.2.x)</li>
+<li>Loop 2.2.x: Eros Pod (still configured in rileylink_ios - use Key_Phrase)</li>
 </ul>
-</li>
-</ul>
-<p><em>When finding the file using the folder icons in <abbr title="program used to build an app">Xcode</abbr>, instead of using the <code>Key_Phrase</code> in <code>Find in Workspace</code>, the <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> icon represents the rileylink_ios folder name on the computer.</em></p>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>public static let cannulaInsertionUnitsExtra = 0.0 // edit to add a fixed additional amount of insulin during cannula insertion
 </code></pre></div>
@@ -3234,8 +3222,8 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <div class="highlight"><pre><span></span><code>public static let cannulaInsertionUnitsExtra = 0.35 // edit to add a fixed additional amount of insulin during cannula insertion
 </code></pre></div>
 <h2 id="modify-the-guardrails">Modify the <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#modify-the-guardrails" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h3 id="glucose-guardrails">Glucose <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#glucose-guardrails" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The <a href="../../loop-3/therapy-settings/#guardrails-for-settings">Therapy Setting <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></a> are for <abbr title="Latest release with major updates">Loop 3</abbr> only.</p>
+<h3 id="glucose-guardrails">Glucose <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr><a class="headerlink" href="#glucose-guardrails" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you build <abbr title="Latest release with major updates">Loop 3</abbr> over a version of Loop 2.2.x or FreeAPS where the <abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr> is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>Guardrail(absoluteBounds:
 </code></pre></div>
