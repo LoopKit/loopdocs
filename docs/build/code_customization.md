@@ -1,9 +1,7 @@
 ## Code Customizations
 
-!!! danger "Version 3.2.1"
+!!! warning "Version 3.2.1"
     With the release of Loop 3.2.1, the location for the Eros pod customizations has moved.
-
-    LoopDocs will be updated later. The Key_Phrase search should still work for Mac/Xcode folks.
 
 ### Mac/Xcode
 
@@ -63,6 +61,7 @@ Be sure to read the [Instructions for Finding the Lines](code_customization.md#i
     * Loop 3 has been released but there are still many people using older code.
     * The labels below indicate Loop 2.2.x or Loop 3, if they are different
     * Users of Loop 2.2.9 (or earlier) or FreeAPS should refer to the Loop 2.2.x examples.
+    * Some 2.2.x customizations will be removed as time goes on
     * Users of Loop 3 should refer to the Loop 3 examples.
         * Note that some changes are in a different file for Loop 3 (part of the architecture upgrade for the app).
 
@@ -260,8 +259,6 @@ If you are mostly happy with the Dosing Strategy of Automatic Bolus but wish it 
 
 This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modify it once and try it out for a while, it’s easy to go back and change it again.
 
-With Loop 2.2.x, the end of the line has a comment `// %`, whereas with Loop 3, there is an explanatory comment (line starting with `//`) before the line.
-
 **Change just the number and double check that the value is less than 1.**
 
 ``` { .txt .copy title="Key_Phrase" }
@@ -272,20 +269,15 @@ let bolusPartialApplicationFactor
 * Loop 3
     * Folder: Loop/Loop/Models
     * File: LoopConstants.swift
-    * Line: 44
-* Loop 2.2.x
-    * Folder: Loop/LoopCore
-    * File: LoopSettings.swift
-    * Line: 89 (2.2.5 and later)
+    * Line: 53
 
 _Code Before Modification_
 
-    public let bolusPartialApplicationFactor = 0.4
+    static let bolusPartialApplicationFactor = 0.4
 
 _Code After Modification to 50% of recommended insulin_
 
-    public let bolusPartialApplicationFactor = 0.5
-
+    static let bolusPartialApplicationFactor = 0.5
 
 !!! warning "Do not exceed 1.0"
     This number should never be bigger than 1 (you’d be getting more than Loop recommends). If you think you need more than 1, consider your settings and meal entries.
@@ -369,7 +361,6 @@ Users of Loop 2.2.9 and earlier or FreeAPS must use the following method for mod
 
 Some people want to limit the maximum number of carbs that can be entered in one entry – especially for children or folks who eat lower carb. This helps prevent accidental typos, e.g., entry of 115 g instead of 15 g for a meal.
 
-
 ``` { .txt .copy title="Key_Phrase" }
 maxQuantity =
 ```
@@ -380,9 +371,9 @@ As shown in the graphic below, this phrase shows up in 2 places, only the first 
 {align="center"}
 
 
-* Loop 2.2.x and Loop 3
+* Loop 2.2.x
     * Folder: Loop/Loop/View Controllers
-    * File: CarbEntryViewController.swift, Line 33 (Loop 2.2.x) or 36 (Loop 3)
+    * File: CarbEntryViewController.swift, Line 33 (Loop 2.2.x)
 
 _Code Before Modification_
 
@@ -394,7 +385,7 @@ _Code After Modification to limit carb entry to 99 g_
 
 ## Pods: Add Extra Insulin on Insertion
 
-The default value is 0.0 u of extra insulin.  If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Loop - be conservative.
+The default value is 0.0 U of extra insulin.  If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Loop - be conservative.
 
 Note that Loop does not include the amount of insulin in the prime or insertion steps in your IOB. The pod reports every pulse that it delivers to Loop. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks.  Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.35 U to the "extra" value, you should get 0.35 / 0.05 = 7 extra clicks. In other words, 17 total clicks after you press insert.
 
@@ -404,16 +395,12 @@ This code change is found in one location for Eros Pods (called Omnipod througho
 let cannulaInsertionUnitsExtra
 ```
 
-* Module: OmniBLE (DASH) or rileylink_iod (Eros)
+* Module: OmniBLE (DASH) or OmniKit (Eros)
 * DASH or Eros Pod (Loop 3 only)
     * Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)
-    * Folder: rileylink_ios/OmniKit/OmnipodCommon (Eros)
+    * Folder: OmniKit/OmniKit/OmnipodCommon (Eros)
     * File: Pod.swift, Line 82 (DASH); Line 87 (Eros); 
-* Loop 2.2.x: Eros Pod (ones that require a RileyLink compatible device)
-    * Folder: rileylink_ios/OmniKit/Model
-    * File: Pod.swift, Line 72 (Loop 2.2.x)
-    
-_When finding the file using the folder icons in Xcode, instead of using the `Key_Phrase` in `Find in Workspace`, the RileyLink icon represents the rileylink_ios folder name on the computer._
+* Loop 2.2.x: Eros Pod (still configured in rileylink_iod - use Key_Phrase)
 
 _Code Before Modification_
 
@@ -425,12 +412,11 @@ _Code After Modification to add 0.35 U_
 
 ## Modify the Guardrails
 
-### Glucose Guardrails
-
 The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-settings) are for Loop 3 only.
 
-If you build Loop 3 over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.
+### Glucose Guardrails
 
+If you build Loop 3 over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.
 
 ``` { .txt .copy title="Key_Phrase" }
 Guardrail(absoluteBounds:
