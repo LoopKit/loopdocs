@@ -636,7 +636,7 @@ If you have built Loop using Xcode, then at least the Loop identifier will appea
 
 ### Add or Review Configuration for Loop Identifier
 
-Find and click on the Loop identifier row on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
+Find and click on the Loop identifier row (i.e. the one with IDENTIFIER set to com.TEAMID.loopkit.Loop) on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
 
 The `Edit Your App ID Configuration` screen will open. You will be taking two actions for the Loop identifier.
 
