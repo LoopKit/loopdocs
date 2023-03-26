@@ -648,7 +648,7 @@ The `Edit Your App ID Configuration` screen will open. You will be taking two ac
         * Check the box by Loop App Group that uses your TEAMID in group.com.TEAMID.loopkit.LoopGroup and then Continue
 1. Continue scrolling down to the **Time Sensitive Notifications** row
     * Check, or confirm the box is checked, next to Time Sensitive Notifications as shown in the following graphic
-    * This in only needed for the Loop identifier
+    * This is only needed for the Loop identifier
 
     ![time sensitive notification](img/add-time-sensitive-to-loop.png){width="600"}
     {align="center"}
