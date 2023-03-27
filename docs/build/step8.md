@@ -7,7 +7,7 @@
     - Check iPhone/iPod iOS version
         - The iOS version determines minimum Xcode version
         - The minimum Xcode version determines minimum macOS version
-            - To make it even more fun, the minimum macOS depends on whether your Mac uses M1 or is Intel-based (Mac or VM)
+            - To make it even more fun, the minimum macOS depends on whether your Mac uses M1, M2, or is Intel-based (Mac or VM)
         - If necessary, update [macOS](step1.md#check-your-macos-version) first and then return to this step
     - Download Xcode from your computer's App Store application
 
