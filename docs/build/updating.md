@@ -27,7 +27,7 @@
     - **"Do I delete my old Loop app first?"** Definitely **not**! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
     - **"Do I need to start a new pod when I update?"** No. Your existing pod session will continue seamlessly if you are using the same Developer Account to sign the Loop app targets as you did the last time you built.
     - **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account used when your existing app was built (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
-    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check that your new computer has the required compatible versions and then build your app. This will include installing Xcode, configuring Xcode preferences, and adding your Developer ID to Xcode: refer to [What about a New Computer?](#what-about-a-new-computer). There is no need to delete provisioning profiles on a brand new computer, but no harm comes from following the instruction. And if your computer uses an M1 or M2 chip, follow the instructions [Configure Terminal App for Rosetta](step1.md#configure-terminal-app-for-rosetta).
+    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check that your new computer has the required compatible versions and then build your app. This will include installing Xcode, configuring Xcode preferences, and adding your Developer ID to Xcode: refer to [What about a New Computer?](#what-about-a-new-computer). There is no need to delete provisioning profiles on a brand new computer, but no harm comes from following the instruction.
 
 ## When to Update Loop
 
@@ -113,8 +113,6 @@ Advanced users: If you are finding installation of Xcode from the App Store incr
 #### What about a New Computer?
 
 Make sure your new computer has the macOS and Xcode required by your phone iOS. Be sure Xcode [Command Line Tools](step9.md#command-line-tools) are installed and that you [Add Apple ID](step9.md#add-apple-id) to Xcode.
-
-If your computer uses an M1 or M2 chip, follow the instructions [Configure Terminal App for Rosetta](step1.md#configure-terminal-app-for-rosetta).
 
 #### Missing Xcode or Command Line Tools
 

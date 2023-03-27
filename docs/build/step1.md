@@ -82,25 +82,6 @@ You need to have 50 GB free space in order to install Xcode in [Download Xcode](
 
 If you are evaluating a used computer, it's best to have at least 256 GB total disk space (more is better).
 
-## Configure Terminal App for Rosetta
-
-This step is only if your Mac uses an M1 or M2 chip. It is not needed for Macs that use an Intel chip. If you don't know if you have an M1, M2 or Intel chip, go back to the [Check Your macOS Version](#check-your-macos-version) section, and read the Chip line.
-
-!!! abstract "New Apple M1/M2 chip users: IMPORTANT STEP"
-
-    If you purchased an Apple computer with an M1 or M2 chip, you will need to do this step (one time only) to open the Terminal app using a "converter" app, called Rosetta.
-
-    Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app but do not double click it to open a Terminal window. Instead, hold down the Control Key on the keyboard and single click on Terminal. This will bring up a menu of choices, select the "Get Info" option.
-
-    ![menu tree for get info on terminal app](img/get-info.png){width="650"}
-
-    Now in the informational window that appears...you'll see a checkbox that says "Open using Rosetta". Check that box...that will allow Terminal app to open using Rosetta when you double click on terminal in the future. You can close that informational window, after you check the box for "Open using Rosetta", and proceed with the rest of the directions just like normal.
-
-    ![terminal app selection for using rosetta](img/rosetta.png){width="450"}
-
-Click on this link for more information from Apple about [Rosetta](https://support.apple.com/en-in/HT211861).
-
-
 ## Which Macs Are Compatible with macOS Ventura?
 
 Ventura will eventually be required for building Loop with the Mac-Xcode method. You can install Ventura on the following:
