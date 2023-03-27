@@ -150,33 +150,6 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ## Specific Error Messages
 
-### MinimedKit Command PhaseScriptExecution failed
-
-**Error Message:** _The error message by itself, `Command PhaseScriptExecution failed with nonzero exit code`, doesn't mean much._
-
-It's the location - under Copy Frameworks with Carthage - that indicates you need to install Rosetta. 
-
-**Solution:** _Install Rosetta_
-
-The easiest way to do this is to follow these directions: [Configure Terminal App for Rosetta](step1.md#configure-terminal-app-for-rosetta).
-
-You may first see a build error screen similar to this graphic:
-
-![initial xcode build error with no rosetta](img/need-rosetta-1.jpg){width="750"}
-{align="center"}
-
-Look for more details as shown in this graphic:
-
-![detailed xcode build error with no rosetta](img/need-rosetta-2.jpg){width="750"}
-{align="center"}
-
-**More Details**
-
-Experienced Loop builders may say - but I thought we did not use carthage anymore.
-
-* When building Loop 3, carthage is no longer used and Loop will build without installing Rosetta
-* When building Loop v2.2.9, carthage is still used but the required carthage version is included in the download; so the user does not need to separately install a particular version of carthage 
-
 ### Run Destination is Not Valid; Failed to Prepare the Device
 
 **Error Message:**
