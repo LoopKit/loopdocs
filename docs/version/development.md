@@ -89,17 +89,6 @@ Do not confuse this with reporting an issue with Loop.  That is done by logging 
 
 This 6-minute long, classic Katie DiSimone video shows how to [capture debugging logs](https://youtu.be/Ac4MguvUO7M). If you are testing a new branch, this is a valuable skill to assist developers in identifying problems. In addition to showing you how to generate and save the debug text information, the video explains a method in which you create a gist of the debug information using your GitHub account and file an official Issue on the Loop GitHub repository. This may be required in some cases.  But start by chatting directly on [zulipchat](https://loop.zulipchat.com) with the developer. What you are experiencing may already be known. If the developers need a new Issue opened, they will say so on zulipchat.
 
-## LoopDashboard.org
-
-You can always check out the [LoopDashboard](https://www.loopdashboard.org) which summarize all the GitHub activities in Loops 7 different repositories for dev and master branches. Here you can always see the latest "news" and  the history of Loop.
-
-On the first page of loopdashboard you can see all the activities in one list, but you can also go to other pages (click on the < or > at bottom of the page) to see more details about commits, issues and pull requests. There are also stats about who is doing the pull requests and commits.
-
-The dashboard is automatically updated every 12 hours.
-
-![img/loopdashboard.png](img/loopdashboard.png){width="550"}
-{align="center"}
-
 ## What is expected in the future?
 
 The dev branch is where a lot of user interface and setting safety work has been developed with some cross-talk with the open source modifications available from [Tidepool Loop](https://www.tidepool.org/automated-insulin-dosing).
