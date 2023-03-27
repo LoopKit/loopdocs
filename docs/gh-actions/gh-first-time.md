@@ -688,7 +688,7 @@ The `Edit Your App ID Configuration` screen will open. You will be taking one ac
 
 Looking at the App Services column, scroll down to the App Groups row
 
-* Ensure the check box under Capabilities for App Groups is checked
+* Ensure the check box (under the Capabilities column) for App Groups is checked
 * If the word Edit shows up under NOTES, return to the identifiers list
 * If the word Configure shows up, tap on it
     * This opens the App Group Assignment screen
