@@ -77,7 +77,6 @@
 *[Quit the Loop App]: quit out of the app - different from closing the app - typically you swipe up in the app switcher
 *[repository]: contains project files and each file's revision history
 *[RileyLink]: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
-*[Rosetta]: allows apps built for older Macs (Intel chips) to run on newer Macs (M1 and M2 chips)
 *[SAGE]: sensor age on Nightscout site
 *[Secrets]: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop
 *[SHA-1]: Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)
@@ -91,7 +90,7 @@
 *[Tokens]: on Nightscout, configure access permissions using tokens
 *[Tooltip]: brief definitions provided for important terms and abbreviations on the website
 *[URL]: website address (Uniform Resource Locator)
-*[UTC]: Universal Coordinated Time is a time standard for civil time and time zones worldwide
+*[UTC]: Coordinated Universal Time is a time standard for civil time and time zones worldwide
 *[Ventura]: operating system for Mac, macOS 13.x
 *[watchOS]: Apple watch operating system; must be compatible with phone iOS
 *[workflow]: a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository

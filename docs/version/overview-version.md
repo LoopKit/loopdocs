@@ -10,6 +10,8 @@ Map to this section:
 * [Code Customization](../build/code_customization.md)
     - Instructions for customizing your DIY code
     - Think of this as your personalized version
+* [Customize with GitHub](../gh-actions/gh-customize.md)
+    - Instructions for customizing using just a browser
 * [Simulator Build](simulator.md)
     - Instructions for building to a simulator
 * [Loop Development](../version/development.md)
