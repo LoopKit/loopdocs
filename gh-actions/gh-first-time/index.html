@@ -3555,11 +3555,25 @@
 <p>Follow the <a href="#delete-identifiers">Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> instructions and then run Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> again. You might not be able to delete the "Loop" identifier, so it will still begin with XC, but the others will appear with the short names shown above.</p>
 </div>
 <h3 id="add-or-review-configuration-for-loop-identifier">Add or Review Configuration for Loop Identifier<a class="headerlink" href="#add-or-review-configuration-for-loop-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Find and click on the Loop identifier row on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</p>
+<p>Find and click on the row for the Loop identifier on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page. Look in the <strong>IDENTIFIER</strong> column to find <code>com.TEAMID.loopkit.Loop</code>. The name in the <strong>NAME</strong> column may be different than Loop. </p>
+<table>
+<thead>
+<tr>
+<th>NAME</th>
+<th>IDENTIFIER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loop</td>
+<td>com.TEAMID.loopkit.Loop</td>
+</tr>
+</tbody>
+</table>
 <p>The <code>Edit Your App ID Configuration</code> screen will open. You will be taking two actions for the Loop identifier.</p>
 <ol>
 <li>Looking at the App Services column, scroll down to the App Groups row<ul>
-<li>Ensure the check box under Capabilities for App Groups is checked</li>
+<li>Ensure the check box (under the Capabilities column) for App Groups is checked</li>
 <li>(XC Loop) - If the word Edit shows up under NOTES, move on to step 2 below</li>
 <li>If the word Configure shows up, tap on it<ul>
 <li>This opens the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> Assignment screen</li>
