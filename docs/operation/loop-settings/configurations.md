@@ -175,7 +175,7 @@ Incorrectly set ISF is the most common cause of roller coaster glucose for new L
 
 You are not required to use services, although many Loopers use Nightscout. If you do not yet have Nightscout configured and want to add it later, just return to this page when you are ready. This can be added at any time. The same is true for the other services.
 
-The page describing services is the same for Loop 3 and Loop 2. Use this link for the [Services](services.md) documentation.
+The page describing services is the same for Loop 3 and Loop 2. Use this link for the [Services](services_v2.md) documentation.
 
 ![img/overview-services.jpg](../img/overview-services.jpg){width="250"}
 {align="center"}

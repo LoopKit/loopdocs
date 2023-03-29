@@ -42,7 +42,7 @@ There are a few Loop-specific variables you should configure to get the most out
 
 ## Add Nightscout to Loop
 
-Once you finish setting up your new Nightscout site, don't forget to enter your website URL and API_SECRET into your Loop settings, [LoopDocs: Services - Nightscout](../operation/loop-settings/services.md#nightscout). This way Loop will have access to your Nightscout site to upload all the wonderful data.
+Once you finish setting up your new Nightscout site, don't forget to enter your website URL and API_SECRET into your Loop settings, [LoopDocs: Services - Nightscout](../loop-3/services.md#nightscout). This way Loop will have access to your Nightscout site to upload all the wonderful data.
 
 ## Nightscout Troubleshooting
 

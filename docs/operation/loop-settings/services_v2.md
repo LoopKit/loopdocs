@@ -8,7 +8,7 @@ Near the bottom of your Loop settings screen is a section called "Services".
 
 * For Loop 2.2.x, the services listed in the graphic below can be added by clicking on the `Tap to set` arrow.
 
-* For Loop 3, the services are added by tapping on the &plus; sign and choosing the service from the list.
+* Click for [Loop 3 Services](../../loop-3/services.md)
 
 
 ![img/services.JPG](img/services.JPG){width="350"}
