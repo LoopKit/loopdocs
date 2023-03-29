@@ -28,7 +28,7 @@ The two most common errors in filling out this section are:
 
 ## Tidepool
 
-With Loop 3.2.x and newer versions, data can be directly uploaded from Loop to Tidepool. However, you might want to wait on turning that on. There are more updates coming - keep reading.
+With Loop 3.2.x and newer versions, data can be directly uploaded from Loop to Tidepool. However, you might want to wait on turning that on, unless you want to help the developers work through some known issues (with duplicate data). There are more updates coming - keep reading.
 
 Please refer to the [LoopTips: Data: Tidepool](https://loopkit.github.io/looptips/data/tidepool/) page for more information about Tidepool. The Tidepool display browser is undergoing some updates; the information on these pages will be updated after changes happen.
 
