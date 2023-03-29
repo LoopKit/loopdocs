@@ -105,10 +105,10 @@ nav:
     - 'Onboarding': 'loop-3/onboarding.md'
     - 'Add CGM': 'loop-3/add-cgm.md'
     - 'Add Pump': 'loop-3/add-pump.md'
-    - 'Displays': 'loop-3/displays_v3.md'
     - 'Settings': loop-3/settings.md
     - 'Therapy Settings': 'loop-3/therapy-settings.md'
-    - 'Optional: Services': 'operation/loop-settings/services.md'
+    - 'Optional: Services': 'loop-3/services.md'
+    - 'Displays': 'loop-3/displays_v3.md'
     - 'RileyLink Display': 'operation/loop-settings/rileylink.md'
     - 'Omnipod Pump': loop-3/omnipod.md
     - 'Medtronic Pump': loop-3/medtronic.md
@@ -121,6 +121,7 @@ nav:
             - 'Loop 2 Add Omnipod': 'operation/loop-settings/omnipod-pump.md'
         - 'Loop 2 Add CGM': 'operation/loop-settings/cgm.md'
         - 'Loop 2 Configuration': 'operation/loop-settings/configurations.md'
+        - 'Loop 2 Services': 'operation/loop-settings/services_v2.md'
         - 'Loop 2 Displays': 'operation/loop-settings/displays.md'
         - 'Loop 2 Pump Settings': 'operation/loop-settings/pump-commands.md'
 - Operate:

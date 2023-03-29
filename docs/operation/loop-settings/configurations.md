@@ -1,6 +1,6 @@
 ## Configuration
 
-This page will cover two general parts of the Loop app settings, circled in red in the screenshot below. The headings will match the flow of the screen, top to bottom.
+This page will cover two general parts of the Loop app settings for Loop 2.2.x versions. The sections documented are circled in red in the screenshot below. The headings will match the flow of the screen, top to bottom.
 
 * The first circled section covers closed/open loop status and how to issue a Loop Report.
 
@@ -173,9 +173,7 @@ Incorrectly set ISF is the most common cause of roller coaster glucose for new L
 
 ## Loop 2 Services (Optional)
 
-You are not required to use services, although many Loopers use Nightscout. If you do not yet have Nightscout configured and want to add it later, just return to this page when you are ready. This can be added at any time. The same is true for the other services.
-
-The page describing services is the same for Loop 3 and Loop 2. Use this link for the [Services](services.md) documentation.
+You are not required to use services, although many Loopers use Nightscout. If you do not yet have Nightscout configured and want to add it later, just return to this page when you are ready. This can be added at any time. The same is true for the other services. For more details, click on [Loop 2 Services](services_v2.md).
 
 ![img/overview-services.jpg](../img/overview-services.jpg){width="250"}
 {align="center"}
