@@ -5,7 +5,7 @@ Near the bottom of your Loop settings screen is a section called "Services".
 !!! question "Sevices are Optional"
     * Loop will work whether you use these or not.
     * Nightscout is highly recommended by experienced Loopers but can be added later - you don't need it to get started.
-    * If you are running Loop 2.2.x, see [Loop 2 Services](../operation/loop-settings/services.md)
+    * If you are running Loop 2.2.x, see [Loop 2 Services](../operation/loop-settings/services_v2.md)
 
 The services are added by tapping on the &plus; sign and choosing the service from the list. Services are shown alphabetically. The most common services are [Nightscout](#nightscout) and [Tidepool](#tidepool).
 
@@ -14,7 +14,7 @@ The services are added by tapping on the &plus; sign and choosing the service fr
 
 ## Nightscout
 
-There is a whole section in LoopDocs about Nightscout. Please follow this link to the [Using Nightscout with Loop](../../nightscout/overview.md) section of LoopDocs. That also has the links you might need to the official [Nightscout Documentation](https://nightscout.github.io/) (different website).
+There is a whole section in LoopDocs about Nightscout. Please follow this link to the [Using Nightscout with Loop](../nightscout/overview.md) section of LoopDocs. That also has the links you might need to the official [Nightscout Documentation](https://nightscout.github.io/) (different website).
 
 If you have an existing Nightscout site, it's still a good idea to review that section, but here's the quick summary of how to add your Site URL and API_SECRET to have your Loop data transmitted to your Nightscout site. If you can’t remember your API_SECRET, it can be found under Settings, Reveal Config Vars for Heroku sites (or Application Settings, Connection Strings for Azure sites).
 
@@ -35,7 +35,7 @@ Please refer to the [LoopTips: Data: Tidepool](https://loopkit.github.io/looptip
 The Tidepool Mobile app serves 2 purposes:
 
 1.  Allow notes to be recorded with associated glucose, carbs and insulin record for a snap shot in time
-1.  Upload Loop data stored in Apple Health to the Tidepool database for display in their browser tool; when the Connect to Health feature is enabled
+1.  Upload Loop data stored in Health to the Tidepool database for display in their browser tool; when the Connect to Health feature is enabled
 
 With the new Loop Service to upload to Tidepool, additional information that is not stored in Health can be made available to Tidepool. However, this is a work in progress.
 
@@ -50,7 +50,7 @@ When you add the Tidepool Service to Loop, be sure to disable Tidepool Mobile ab
 ![img/services.JPG](img/loop-3-tidepool-mobile.png){width="350"}
 {align="center"}
 
-* Warning: Even when you turn off the access to Apple Health on the Tidepool Mobile app on the day that you turn on Loop Tidepool service, you will still get 7 days of overlap because Loop stores 7 days of data.
+* Warning: Even when you turn off the access to Health on the Tidepool Mobile app on the day that you turn on Loop Tidepool service, you will still get 7 days of overlap because Loop stores 7 days of data.
 
 You can still use the note taking feature with Tidepool Mobile when Health is not connected, although you must have internet connectivity for this to work.
 
@@ -72,8 +72,8 @@ You can still use the note taking feature with Tidepool Mobile when Health is no
 
 Great job, almost finished! Now that you have completed your services, let's move onto understanding your Loop Displays.
 
-* Loop 2.2.x - click on this link for [Displays](displays.md)
+* Loop 2.2.x - click on this link for [Displays](../operation/loop-settings/displays.md)
 
-* Loop 3 - click on this link for [Displays](../../loop-3/displays_v3.md). 
+* Loop 3 - click on this link for [Displays](displays_v3.md). 
 
 Loop displays is a valuable tool for understanding your Loop and a great page to review when troubleshooting.

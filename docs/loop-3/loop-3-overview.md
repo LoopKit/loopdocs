@@ -49,10 +49,10 @@ The first time you build Loop 3, the app takes you through the Onboarding proces
 
 These pages have a lot of detailed Loop information.
 
-* [Displays](displays_v3.md)
 * [Settings](settings.md)
 * [Therapy Settings](therapy-settings.md)
 * [Optional Services](services.md)
+* [Displays](displays_v3.md)
 
 And a lot of detailed information about Status and Commands for:
 
