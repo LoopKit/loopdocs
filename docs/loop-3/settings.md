@@ -140,7 +140,7 @@ The information about the CGM is found on the [Add or Modify CGM](add-cgm.md) pa
 
 ## Services
 
-The Services section allows additions of other services such Nightscout, Loggly and Amplitude.
+The Services section allows additions of other services such Nightscout, Tidepool, Loggly and Amplitude.
 
 Please refer to the [Optional: Service](services.md) page.
 
