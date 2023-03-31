@@ -82,24 +82,12 @@ The list below contains the **minimum** versions of [macOS](step1.md#check-your-
 * Xcode 14.3 or higher is required for
     * iOS 16.4 and newer
 * Xcode 14.2 or higher is required for
-    * iOS 16.2 and 16.3.x
+    * iOS 16.2 through 16.3.x
 * Xcode 14.1 or higher is required
     * iOS 15.1 is minimum version for phone but 15.7.1 is better (for older phones)
     * iOS 16.0 through 16.1.x is supported
 
 When using a Mac-Xcode build and an iOS 16 device, you must turn on developer mode for both the phone, and if paired, the watch.
-
-This older list is left in for those still using code based off Loop 2.2.x. If you are running Loop 3, you must use the list above.
-
-* For iOS 16 or greater, minimum [macOS](step1.md#check-your-macos-version) is 12.5
-    * Minimum Xcode version is 14
-* For iOS 15.4 to 15.7, minimum [macOS](step1.md#check-your-macos-version) is 12.0
-    * For iOS 15.5 to 15.7, minimum Xcode version is 13.4.x
-        * **WARNING:** A first build to a phone newly updated to iOS 15.7 cannot use Xcode 14.0; Xcode 13.4.1 and 14.0.1 (or greater) are fine
-    * For iOS 15.4.x, minimum Xcode version is 13.3
-* For iOS 15.1 to 15.3.x, minimum [macOS](step1.md#check-your-macos-version) is 11.3
-    * For iOS 15.2.x to iOS 15.3.x, minimum Xcode version is 13.2
-    * For iOS 15.1.x, minimum Xcode version is 13.0
 
 ### Wikipedia Chart for Apple Versions
 
