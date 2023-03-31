@@ -24,7 +24,7 @@ The customization process is more involved. One set of commonly requested custom
 
 * Stick with Mac-Xcode build (for now) if you want to do your own customizations
     * You can still use [TestFlight with your Mac-Xcode build](../build/testflight-xcode.md)
-* If you still want customizations and don't have a Mac/Xcode system that allows you to customize, there are now instructions at Browser Build  [Customize with GitHub](../gh-actions/gh-customize.md)
+* If you still want customizations and don't have a Mac-Xcode system that allows you to customize, there are now instructions at Browser Build  [Customize with GitHub](../gh-actions/gh-customize.md)
     * These instructions are for released code
 
 ## Requirements
