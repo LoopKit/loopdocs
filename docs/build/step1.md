@@ -42,7 +42,7 @@ If you have access to a computer with MacOS 13.0 or newer, you can skip ahead to
 With the [release of Loop 3](../version/releases.md#loop-3-compatibility):
 
 * Mac operating system of Ventura, macOS 13.x must be used if running on a phone with iOS 16.4 or newer
-* Minium Mac operating system is Monterey, macOS 12.5 or higher for phones running iOS 15.x or 16.3.1 or older
+* Minimum Mac operating system is Monterey, macOS 12.5 or higher for phones running iOS 15.x or 16.3.1 or older
 
 The [Loop and Learn Version Updates](https://www.loopandlearn.org/version-updates) page posts an update every time a new iOS is released and tested. That page is typically updated faster than LoopDocs and reports changes, if any, to the minimum Xcode or macOS.
 
