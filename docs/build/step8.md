@@ -2,14 +2,14 @@
 
 !!! info "Time Estimate"
     - 45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.
+    - 0 minutes if you decide to use the GitHub [Browser Build](../gh-actions/gh-overview.md) method to build Loop
 
 !!! abstract "Summary"
     - Check iPhone/iPod iOS version
         - The iOS version determines minimum Xcode version
         - The minimum Xcode version determines minimum macOS version
-            - To make it even more fun, the minimum macOS depends on whether your Mac uses M1, M2, or is Intel-based (Mac or VM)
         - If necessary, update [macOS](step1.md#check-your-macos-version) first and then return to this step
-    - Download Xcode from your computer's App Store application
+    - Download (or update) Xcode from your computer's App Store application
 
 !!! question "FAQs"
     - **"Why isn't my Xcode installing?"**  
@@ -77,19 +77,19 @@ After any update of [macOS](step1.md#check-your-macos-version) or Xcode, it is a
 
 The list below contains the **minimum** versions of [macOS](step1.md#check-your-macos-version) and Xcode you'll need based on your iOS version. The highlighted sections, coordinated by `color` and `linestyle` in the graphic below, tie together the operating system nomenclature in the following bullets. The graphic is not updated as frequently as the words.
 
-**Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade. Xcode 14.1 is listed instead of 14.0 because that version had a lot of bugs in it.**
+**Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade.**
 
-**With the release of Loop 3, this list is pretty simple.**
-
+* Xcode 14.3 or higher is required for
+    * iOS 16.4 and newer
 * Xcode 14.2 or higher is required for
-    * iOS 16.2 and newer
+    * iOS 16.2 and 16.3.x
 * Xcode 14.1 or higher is required
     * iOS 15.1 is minimum version for phone but 15.7.1 is better (for older phones)
     * iOS 16.0 through 16.1.x is supported
 
-When using a Mac/Xcode build and an iOS 16 device, you must turn on developer mode for both the phone, and if paired, the watch.
+When using a Mac-Xcode build and an iOS 16 device, you must turn on developer mode for both the phone, and if paired, the watch.
 
-This older list is left in for those still using code based off Loop 2.2.x
+This older list is left in for those still using code based off Loop 2.2.x. If you are running Loop 3, you must use the list above.
 
 * For iOS 16 or greater, minimum [macOS](step1.md#check-your-macos-version) is 12.5
     * Minimum Xcode version is 14
@@ -103,24 +103,23 @@ This older list is left in for those still using code based off Loop 2.2.x
 
 ### Wikipedia Chart for Apple Versions
 
-This graphic (copied from Wikipedia and last updated March 2022) is not updated with every iOS update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the [Minimum Version List](#how-do-all-the-minimum-versions-relate-to-each-other) promptly - that's much easier than updating a graphic.
+This graphic (copied from Wikipedia and last updated March 2023) is not updated with every iOS update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the [Minimum Version List](#how-do-all-the-minimum-versions-relate-to-each-other) promptly - that's much easier than updating a graphic.
 
 Follow this link to [Wikipedia](https://en.wikipedia.org/wiki/Xcode) and scroll down to the the current version of this figure - the graphic shown below is a map of how to read the current version of this figure at Wikipedia.
 
-
-![Screenshot: Wikipedia Xcode example; Clip from Wiki with 12.x - 13.x showing relationship for iOS, Xcode, macOS; highlights how to read current graphic](img/xcode_vs_12-13.svg){width="750"}
+![Screenshot: Wikipedia Xcode example; Clip from Wiki with Xcode versions 13.x - 14.x showing relationship for iOS, Xcode, macOS; highlights how to read current graphic](img/xcode_vs_13-14.svg){width="750"}
 {align="center"}
 
 ## What happens if you try using too old of Xcode?
 
-It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
+It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." With newer versions of Xcode, the message will include words like "Could not prepare the device". That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
 
 ![Screenshot: Xcode, error message when Xcode too old for iOS or missing simulators](img/device-support-files.jpg){width="750"}
 {align="center"}
 
 So, if you see that error message, realize you may have to update your macOS to be able to see the newest Xcode version that you will need. Make sure to check that chart to see what your minimum versions are for the iOS you are running on your iPhone.
 
-With Loop 3, there is a new error when the Xcode version does not support the phone iOS. You will see [Package.resolved file corrupted or malformed](build_errors.md#packageresolved-file-corrupted-or-malformed)
+With Loop 3, you may see another error when the Xcode version does not support the phone iOS. You may see [Package.resolved file corrupted or malformed](build_errors.md#packageresolved-file-corrupted-or-malformed)
 
 ## Next Step: Xcode Preferences
 
