@@ -3,7 +3,7 @@
 !!! warning "Version 3.2.1"
     With the release of Loop 3.2.1, the location for the Eros pod customizations has moved.
 
-### Mac/Xcode
+### Mac-Xcode
 
 The customization instructions on this page were written for the [Mac-Xcode Build](../build/overview.md) method.
 
@@ -691,7 +691,7 @@ This Loop 3 table of default values is provided for convenience. The times are a
 
 ## Loop Logo
 
-!!! warning "Mac/Xcode Instructions"
+!!! warning "Mac-Xcode Instructions"
     This can be done with GitHub but the instructions might need to be adjusted for that case.
 
 If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/) or [appicon.co](https://appicon.co/) and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file

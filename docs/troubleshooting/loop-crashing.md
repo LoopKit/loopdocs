@@ -2,7 +2,7 @@
 
 If your Loop app crashes immediately upon opening, you have a problem that needs to be fixed. What do I mean by "crashes"? Your Loop app immediately turns to a white (light mode) or black (dark mode) screen and then shuts itself down, landing you back at your iPhone's main screen. No amount of tapping will let you keep your Loop app open.
 
-* If you just built Loop 3.0.0 or just updated the iOS while running Loop 3.0.0
+* If you built Loop 3.0.0 or just updated the iOS while running Loop 3.0.0
     * The most likely cause is the "[Apple Health Glitch](#apple-health-glitch)"
     * This problem was fixed in Loop 3.2.0 so update as soon as possible
 * If you are running Loop 2.2.x:
@@ -40,7 +40,7 @@ Loop 3 has a data store that contains all Looping information for 7 full days. S
 
     Starting with iOS 16.2, the Apple Health Glitch with Loop was observed by some users. The anchor that Loop uses to correlate an item in its data store with that same item stored Apple Health was sometimes "lost". The way Loop handled that "took too long" to resolve and the app would be closed by the operating system. The work-around shown above fixes this for Loop 3.0.0.
 
-    Later versions of Loop use a modification for the handling of anchors, so this will be transparent to the user.
+    Starting with Loop 3.2.0, a modification for handling of anchors was added, so the process is transparent to the user.
 
 ## Loop App Expired
 

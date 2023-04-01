@@ -1,9 +1,9 @@
 ## Hot Topics
 
 !!! tip "Pro Tip"
-    You can also use this same method to create a set of personal patches. You can use (and re-use) your patches with Mac/Xcode builds so you don't have to repeat the customization with every update.
+    You can also use this same method to create a set of personal patches. You can use (and re-use) your patches with Mac-Xcode builds so you don't have to repeat the customization with every update.
 
-    * If you are building with Mac/Xcode method, you will use the same lines found in the [Prepare the Patches](#prepare-the-patches) section, but will paste them in your terminal to customize your code
+    * If you are building with Mac-Xcode method, you will use the same lines found in the [Prepare the Patches](#prepare-the-patches) section, but will paste them in your terminal to customize your code
 
 !!! danger "DRAFT"
     This procedure is in DRAFT mode - only minimal graphics are provided.
