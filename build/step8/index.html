@@ -2384,6 +2384,7 @@
 <p class="admonition-title">Time Estimate</p>
 <ul>
 <li>45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.</li>
+<li>0 minutes if you decide to use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <a href="../../gh-actions/gh-overview/">Browser Build</a> method to build Loop</li>
 </ul>
 </div>
 <div class="admonition abstract">
@@ -2391,14 +2392,11 @@
 <ul>
 <li>Check iPhone/iPod <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version<ul>
 <li>The <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version determines minimum <abbr title="program used to build an app">Xcode</abbr> version</li>
-<li>The minimum <abbr title="program used to build an app">Xcode</abbr> version determines minimum <abbr title="operating system for Mac computer">macOS</abbr> version<ul>
-<li>To make it even more fun, the minimum <abbr title="operating system for Mac computer">macOS</abbr> depends on whether your Mac uses M1, M2, or is Intel-based (Mac or VM)</li>
-</ul>
-</li>
+<li>The minimum <abbr title="program used to build an app">Xcode</abbr> version determines minimum <abbr title="operating system for Mac computer">macOS</abbr> version</li>
 <li>If necessary, update <a href="../step1/#check-your-macos-version"><abbr title="operating system for Mac computer">macOS</abbr></a> first and then return to this step</li>
 </ul>
 </li>
-<li>Download <abbr title="program used to build an app">Xcode</abbr> from your computer's App Store application</li>
+<li>Download (or update) <abbr title="program used to build an app">Xcode</abbr> from your computer's App Store application</li>
 </ul>
 </div>
 <div class="admonition question">
@@ -2462,11 +2460,14 @@ Which version of <abbr title="program used to build an app">Xcode</abbr> you ins
 <p>After any update of <a href="../step1/#check-your-macos-version"><abbr title="operating system for Mac computer">macOS</abbr></a> or <abbr title="program used to build an app">Xcode</abbr>, it is always a good idea to reboot your computer.</p>
 <h2 id="how-do-all-the-minimum-versions-relate-to-each-other">How do all the minimum versions relate to each other?<a class="headerlink" href="#how-do-all-the-minimum-versions-relate-to-each-other" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The list below contains the <strong>minimum</strong> versions of <a href="../step1/#check-your-macos-version"><abbr title="operating system for Mac computer">macOS</abbr></a> and <abbr title="program used to build an app">Xcode</abbr> you'll need based on your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version. The highlighted sections, coordinated by <code>color</code> and <code>linestyle</code> in the graphic below, tie together the operating system nomenclature in the following bullets. The graphic is not updated as frequently as the words.</p>
-<p><strong>Newer versions of <abbr title="program used to build an app">Xcode</abbr> are always OK and should be used if your computer will accept the upgrade. <abbr title="program used to build an app">Xcode</abbr> 14.1 is listed instead of 14.0 because that version had a lot of bugs in it.</strong></p>
-<p><strong>With the release of <abbr title="Latest release with major updates">Loop 3</abbr>, this list is pretty simple.</strong></p>
+<p><strong>Newer versions of <abbr title="program used to build an app">Xcode</abbr> are always OK and should be used if your computer will accept the upgrade.</strong></p>
 <ul>
+<li><abbr title="program used to build an app">Xcode</abbr> 14.3 or higher and <abbr title="operating system for Mac, macOS 13.x">Ventura</abbr> (<abbr title="operating system for Mac computer">macOS</abbr> 13.0 or higher) is required for<ul>
+<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16.4 and newer</li>
+</ul>
+</li>
 <li><abbr title="program used to build an app">Xcode</abbr> 14.2 or higher is required for<ul>
-<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16.2 and newer</li>
+<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16.2 through 16.3.x</li>
 </ul>
 </li>
 <li><abbr title="program used to build an app">Xcode</abbr> 14.1 or higher is required<ul>
@@ -2475,36 +2476,16 @@ Which version of <abbr title="program used to build an app">Xcode</abbr> you ins
 </ul>
 </li>
 </ul>
-<p>When using a Mac/<abbr title="program used to build an app">Xcode</abbr> build and an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 device, you must turn on developer mode for both the phone, and if paired, the watch.</p>
-<p>This older list is left in for those still using code based off Loop 2.2.x</p>
-<ul>
-<li>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 or greater, minimum <a href="../step1/#check-your-macos-version"><abbr title="operating system for Mac computer">macOS</abbr></a> is 12.5<ul>
-<li>Minimum <abbr title="program used to build an app">Xcode</abbr> version is 14</li>
-</ul>
-</li>
-<li>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.4 to 15.7, minimum <a href="../step1/#check-your-macos-version"><abbr title="operating system for Mac computer">macOS</abbr></a> is 12.0<ul>
-<li>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.5 to 15.7, minimum <abbr title="program used to build an app">Xcode</abbr> version is 13.4.x<ul>
-<li><strong>WARNING:</strong> A first build to a phone newly updated to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.7 cannot use <abbr title="program used to build an app">Xcode</abbr> 14.0; <abbr title="program used to build an app">Xcode</abbr> 13.4.1 and 14.0.1 (or greater) are fine</li>
-</ul>
-</li>
-<li>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.4.x, minimum <abbr title="program used to build an app">Xcode</abbr> version is 13.3</li>
-</ul>
-</li>
-<li>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 to 15.3.x, minimum <a href="../step1/#check-your-macos-version"><abbr title="operating system for Mac computer">macOS</abbr></a> is 11.3<ul>
-<li>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.2.x to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.3.x, minimum <abbr title="program used to build an app">Xcode</abbr> version is 13.2</li>
-<li>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1.x, minimum <abbr title="program used to build an app">Xcode</abbr> version is 13.0</li>
-</ul>
-</li>
-</ul>
+<p>When using a Mac-<abbr title="program used to build an app">Xcode</abbr> build and an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 device, you must turn on developer mode for both the phone, and if paired, the watch.</p>
 <h3 id="wikipedia-chart-for-apple-versions">Wikipedia Chart for Apple Versions<a class="headerlink" href="#wikipedia-chart-for-apple-versions" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This graphic (copied from Wikipedia and last updated March 2022) is not updated with every <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the <a href="#how-do-all-the-minimum-versions-relate-to-each-other">Minimum Version List</a> promptly - that's much easier than updating a graphic.</p>
+<p>This graphic (copied from Wikipedia and last updated March 2023) is not updated with every <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the <a href="#how-do-all-the-minimum-versions-relate-to-each-other">Minimum Version List</a> promptly - that's much easier than updating a graphic.</p>
 <p>Follow this link to <a href="https://en.wikipedia.org/wiki/Xcode">Wikipedia</a> and scroll down to the the current version of this figure - the graphic shown below is a map of how to read the current version of this figure at Wikipedia.</p>
-<p align="center"><img alt="Screenshot: Wikipedia Xcode example; Clip from Wiki with 12.x - 13.x showing relationship for iOS, Xcode, macOS; highlights how to read current graphic" src="../img/xcode_vs_12-13.svg" width="750" /></p>
+<p align="center"><img alt="Screenshot: Wikipedia Xcode example; Clip from Wiki with Xcode versions 13.x - 14.x showing relationship for iOS, Xcode, macOS; highlights how to read current graphic" src="../img/xcode_vs_13-14.svg" width="750" /></p>
 <h2 id="what-happens-if-you-try-using-too-old-of-xcode">What happens if you try using too old of <abbr title="program used to build an app">Xcode</abbr>?<a class="headerlink" href="#what-happens-if-you-try-using-too-old-of-xcode" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>It isn't some catastrophic failure if you try to build with an outdated <abbr title="program used to build an app">Xcode</abbr> without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." That messages is telling you that your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> on the phone requires you to get a newer version of <abbr title="program used to build an app">Xcode</abbr> to be able to build Loop onto that phone.</p>
+<p>It isn't some catastrophic failure if you try to build with an outdated <abbr title="program used to build an app">Xcode</abbr> without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." With newer versions of <abbr title="program used to build an app">Xcode</abbr>, the message will include words like "Could not prepare the device". That messages is telling you that your <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> on the phone requires you to get a newer version of <abbr title="program used to build an app">Xcode</abbr> to be able to build Loop onto that phone.</p>
 <p align="center"><img alt="Screenshot: Xcode, error message when Xcode too old for iOS or missing simulators" src="../img/device-support-files.jpg" width="750" /></p>
 <p>So, if you see that error message, realize you may have to update your <abbr title="operating system for Mac computer">macOS</abbr> to be able to see the newest <abbr title="program used to build an app">Xcode</abbr> version that you will need. Make sure to check that chart to see what your minimum versions are for the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> you are running on your iPhone.</p>
-<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, there is a new error when the <abbr title="program used to build an app">Xcode</abbr> version does not support the phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. You will see <a href="../build_errors/#packageresolved-file-corrupted-or-malformed">Package.resolved file corrupted or malformed</a></p>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, you may see another error when the <abbr title="program used to build an app">Xcode</abbr> version does not support the phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>. You may see <a href="../build_errors/#packageresolved-file-corrupted-or-malformed">Package.resolved file corrupted or malformed</a></p>
 <h2 id="next-step-xcode-preferences">Next Step: <abbr title="older name for Xcode Settings">Xcode Preferences</abbr><a class="headerlink" href="#next-step-xcode-preferences" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Now you are ready to set up <a href="../step9/"><abbr title="older name for Xcode Settings">Xcode Preferences</abbr></a>.</p>
 
