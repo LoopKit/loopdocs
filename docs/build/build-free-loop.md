@@ -21,36 +21,31 @@ As shown in the GIF below:
 
 * Frame 1: This is what the Xcode screen looks the very first time it is opened after a fresh download
     * You need to click on the indicated Loop folder icon two times
-* Frame 2: After the 2 clicks, the middle pane of the Xcode window is populated as shown
+* Frame 2: After the 2 clicks, the middle pane of the Xcode window should be similar (for Loop 3.2.x and newer, the top middle bar will show LoopWorkspace, not Loop)
 
 ![initial xcode display, click on loop to populate middle pane](img/build-229-01.gif){width="750"}
 {align="center"}
 
 
-### Select Loop (Workspace) and Your Phone
+### Select Your Phone
 
 If this is the **First Time** your phone or watch has been connected to Xcode, you will need to tell the phone and watch to "Trust this Computer".
 
-The GIF below shows:
+The GIF (not updated for Loop 3.2.x) below shows:
 
 * Frame 1: Same as end of previous GIF
     * There's a red rectangle around the dropdown menus
-    * The menu on the left says "Loop"
+    * The menu on the left says "LoopWorkspace" for 3.2.x and newer
 * Frame 2: Same as Frame 1 with a zoomed inset of the red rectangle
+    * Ignore Frame 2 and 3 for Loop 3.2.x and newer which already shows LoopWorkspace
     * You can see Loop has a check mark beside it
     * Loop (Workspace) is one line below
     * Select Loop (Workspace)
 * Frame 3: Zoomed inset after selecting Loop (Workspace)
-* Frame 4: Desired result of selecting Loop (Workspace) showing your phone
+* Frame 4: Desired result should show LoopWorkspace and your phone
 
 ![select loop workspace and confirm phone](img/build-229-02.gif){width="600"}
 {align="center"}
-
-!!! warning "Most Common Mistake"
-
-    - The most common mistake in this step is:
-        - not selecting Loop (Workspace)
-        - not selecting your actual phone as shown in the screenshot below
 
 ![img/your_device.png](img/your_device.png){width="650"}
 {align="center"}
@@ -69,11 +64,9 @@ If you want to build to a simulator, follow the directions in this section and s
 * Simply choose one of the iOS Simulators instead of a phone and build to it
     * The iOS simulator you choose does not need to be the same model as your phone
 * With a simulator, you do not need to sign targets:
-    * You must select Loop (Workspace) and complete the build:
-        * If there is a red x at the top right of your Xcode window, you need to fix the [Package Dependency Error](step14.md#package-dependency-error) and continue on to Start Build
-        * If there is not a red x at the top right of your Xcode window, follow the link to [Start Build](step14.md#start-build)
+    * If there is a red x at the top right of your Xcode window, you need to perform the fix for [Couldn't Get Revision for Package Dependency](build_errors.md#couldnt-get-revision-for-package-dependency) and continue on to Start Build
+    * If there is not a red x at the top right of your Xcode window, follow the link to [Start Build](step14.md#start-build)
 * After a successful build, a simulated phone will appear on your computer and you can interact with the app on that simulated phone
-
 
 ### Select Signing & Capabilities Tab
 
@@ -119,8 +112,9 @@ Some features of Loop are not available with the Free option, so as you sign, yo
     * **Watch App Extension Target:** Siri
 1. Add the keyword `SIRI_DISABLED` to the LoopConfigOverride.xcconfig file
     * Click on the filename in the left pane of Xcode and view it in the Xcode editor
-    * Examine the file and find the line that starts with `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
+    * Examine the file and find the line that starts with<br> `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
     * Insert the new keyword (separated by a space) anywhere after `$(inherited)` and before the slashes near the end of the line
+    * When done, that line should be similar to:<br>`SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED`
 
 Details about removing unsupported capabilities:
 
@@ -135,7 +129,7 @@ Details about removing unsupported capabilities:
 
 ### End of Free Account Steps
 
-Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The targets that must be signed prior to building are **Loop**, **Loop Status Extension**, **Watch App**, and **WatchApp Extension** for Loop 2.2.x with the addition of **Loop Intent Extension** for Loop 3.
+Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The targets that must be signed prior to building are **Loop**, **Loop Status Extension**, **Watch App**, and **WatchApp Extension** for Loop 2.2.x, with the addition of **Loop Intent Extension** for Loop 3.
 
 ![Xcode window showing the targets that must be signed](img/success.png){width="750"}
 {align="center"}
@@ -148,7 +142,4 @@ After signing the targets, click on the Loop icon under the `PROJECTS` heading. 
 
 ## Signing Complete
 
-Now that you have signed your app, return to the Build Loop page:
-
-* If there is a red x at the top right of your Xcode window, you need to fix the [Package Dependency Error](step14.md#package-dependency-error)
-* If there is not a red x at the top right of your Xcode window, you can return to the [Start Build](step14.md#start-build)
+Now that you have signed your app, return to the Build Loop page at [Start Build](step14.md#start-build).

@@ -305,51 +305,36 @@ The final script message informs you that you can close the terminal window.
 
     *   Tap on [New with Xcode 14](../build/build_errors.md#new-with-xcode-14) for more information
 
-First select Loop (Workspace) and confirm your phone is selected. Refer to the GIF below and follow the directions:
+First confirm your phone is selected. Refer to the GIF below (warning, GIF not updated to show LoopWorkspace is selected by default) and follow the directions:
 
 * Frame 1:  Xcode screen opened by the script after a fresh download
     * **Fresh Download? Wait for indexing to begin**
         * If you see messages about fetching symbols or resolving packages, please wait until you see the Indexing message as shown in the GIF below just to the left of the dashed-blue rectangle
     * **With Loop 3.2.x and newer**, you do not need to select Loop (Workspace) - it is now the default and shows up as LoopWorkspace
         * The graphics still show the old selection process
-    * The red rectangle indicates where you will change Loop to Loop (Workspace)
+    * The red rectangle indicates where you used to change Loop to Loop (Workspace), it now defaults to LoopWorkspace
     * The red x in the dashed-blue rectangle region indicates you need to fix a problem before building
-* Frame 2: Inset shows the action needed to select Loop (Workspace)
-* Frame 3: Loop (Workspace) selected but there's a red x in the dashed-blue rectangle region
+* Frame 2: Not needed as of Loop 3.2.x: Inset shows the action needed to select Loop (Workspace)
+* Frame 3: This error does not happen with Xcode 14.1 or newer versions. There's a red x in the dashed-blue rectangle region
 
 ![gif showing the initial xcode screens following fresh download](img/xcode-build-loop3-a.gif){width="750"}
 {align="center"}
 
-!!! warning "Most Common Mistake"
+### Start Build
 
-    - The most common mistake in this step is:
-        - not selecting Loop (Workspace)
-        - not selecting your actual phone
+If there is a red x in the dashed-blue rectange region on your Xcode screen you need to click over to the build errors link listed below.
 
-### Package Dependency Error
-
-If there is no red x in the dashed-blue rectange region on your Xcode screen, skip ahead to [Start Build](#start-build) on this page.
-
-Otherwise, tap on the red x in the dashed-blue rectange region:
-
-* If your screen is similar to the figure below, perform the [Fix for Package Dependency](#fix-for-package-dependency) (instructions are repeated on this page for convenience; duplicated on Build Errors page)
+* If your screen is similar to the figure below, perform the fix for [Couldn't Get Revision for Package Dependency](build_errors.md#couldnt-get-revision-for-package-dependency)
 * If you have a different error, search the [Build Error](build_errors.md) page
 
 ![gif showing the xcode screens with dependency error](img/xcode-build-loop3-b.svg){width="750"}
 {align="center"}
 
-### Fix for Package Dependency
+#### First Time
 
-1. Click on the folder icon (indicated by red square)
-1. Hold down the Control-Key and click the `Package Dependency` row to display the dropdown menu (shown in the inset)
-1. Select Resolve Package Versions from the dropdown menu
-1. Once that completes, the red x should resolve and you can build as soon as the Indexing message appears
+The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word **First-Time**. Do not get confused when you are asked to enter your password multiple times, see [Codesign / Keychain Access](#codesign--keychain-access). Be sure to enter your Mac login password and select Always Allow.
 
-![package dependency solution](img/xcode-package-dependency-solution.svg){width="600"}
-
-### Start Build
-
-The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word **First-Time**.
+#### All Builds
 
 Refer to the GIF below:
 
@@ -515,10 +500,11 @@ To add custom configurations to your Loop or Loop Apple Watch apps, follow the s
 
 ### Apple Watch
 
-**Existing Apple Watch users**: Please update your watchOS prior to building the Loop app.  The current version of Loop requires watchOS 4.1 or newer.
+**Existing Apple Watch users**: Please update your watchOS prior to building the Loop app. The minimum iOS for Loop 3 is iOS 15.1, which means watchOS 8.1. When running iOS 16.x, you will need a watchOS of 9.x.
 
 **New Apple Watch users**: If you have an Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build.
 
+For more information, please see [Operate: Apple Watch](../operation/features/watch.md)
 
 ### Build Again with this Download
 
