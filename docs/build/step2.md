@@ -16,6 +16,7 @@
     - **"Can I use an android?"** No. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
     - **"Can I use an iPad?"** No. iPads do not support Apple Health and Loop uses Apple Health.
     - **"Does my iPhone need a cell plan?"** No. Loop works using communication on your phone with your CGM and your pump; no internet connection required. However, if access to Dexcom Follow or Nightscout monitoring of Loop is a priority, then a cell plan may be desired.
+    - **What watches work with Loop?** Only Apple watches work with Loop. With Loop 3, some of the older Apple watch series are no longer compatible. See: [Watch Hardware and OS Requirements](../operation/features/watch.md#watch-hardware-and-os-requirements)
 
 ## Which Devices Are Compatible?
 

@@ -34,7 +34,6 @@
         * Updating to a newer Loop release
         * You do NOT need access to an Apple computer to update your phone iOS, troubleshoot or change Loop settings
 
-
 If you have access to a computer with MacOS 13.0 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
 
 ## Compatible Versions
@@ -98,7 +97,7 @@ Ventura is required for building Loop on a phone running iOS 16.4 or higher with
 
 ## Which Macs Are Compatible with macOS Monterey?
 
-Monterey can be used for building Loop with the Mac-Xcode method when building to a phone at iOS 16.3.1 or lower. You can install Monterey on the following:
+Monterey can be used for building Loop with the Mac-Xcode method when building to a phone at iOS 16.3.1 or older. You can install Monterey on the following:
 
 * MacBook Pro, early 2015 or newer
 * MacBook Air, early 2015 or newer

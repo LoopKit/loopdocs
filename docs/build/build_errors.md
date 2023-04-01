@@ -163,7 +163,7 @@ _The run destination for name's phone is not valid for running the scheme "Loop 
 
 Follow the link for the [Unpair and Reboot](#unpair-and-reboot) procedure.
 
-If you are running iOS 16 on your phone, make sure developer mode is turned on.
+If you are running iOS 16 or newer on your phone, make sure developer mode is turned on.
 
 ### Package.resolved file corrupted or malformed
 
